@@ -25,11 +25,18 @@ pipeline after independent review.
 **Runners:**
 [`scripts/frontier_s3_cone_cap_pl_s3_native_reproof.py`](./../scripts/frontier_s3_cone_cap_pl_s3_native_reproof.py)
 (explicit combinatorial-3-sphere check on the glued complex; default
-`R = 2..6`, criterion verified through `R = 10`) and the all-`R`
-hypothesis cross-check
+`R = 2..6`, criterion verified through `R = 10`); the **a-priori L1(b)
+collapsibility** runner
+[`scripts/frontier_s3_L1b_apriori_collapsibility.py`](./../scripts/frontier_s3_L1b_apriori_collapsibility.py)
+(the uniform to-origin discrete Morse matching: valid + single-critical
+`{origin}` + acyclic, verified EXACTLY on `K(B_R)` `R = 2..N` **and** on
+hundreds of arbitrary star-shaped cubical downsets, with the single-cube
+a-priori universe and non-vacuity guards -- this is the certificate that
+removes the L1(b) freeze); and the all-`R` hypothesis cross-check
 [`scripts/frontier_s3_partb_allr_lemmas.py`](./../scripts/frontier_s3_partb_allr_lemmas.py)
-(confirms the `R`-free hypotheses L1/L2/L3 rest on; all checks PASS, all
-EXACT).
+(confirms the remaining `R`-free hypotheses L1/L2/L3 rest on, and retains the
+two prior freeze-based collapse certificates as cited comparators; all checks
+PASS, all EXACT).
 
 ---
 
@@ -166,77 +173,113 @@ origin."
 collapses (`R`-free).** This is the load-bearing all-`R` step, and it is proven
 **without** the open "star-shaped => collapsible" direction (Goodrick's
 conjecture, open; Bing--Goodrick built non-collapsible balls; and `B_R` is
-non-convex for `R >= 3`, so convex-ball collapse results do not apply). We give
-**two independent `R`-free certificates**, each a finite local enumeration on
-the **specific** Kuhn complex (sidestepping the open general conjecture); either
-alone proves collapsibility.
+non-convex for `R >= 3`, so convex-ball collapse results do not apply).
+Collapsibility comes from the **explicit discrete Morse matching** below with a
+single critical cell and a strictly-monotone global key, **not** from "it is a
+ball": star-shaped / contractible does **not** imply collapsible in general
+(the Bing house), so the matching must genuinely have one critical cell for
+every downset, which is what is established here.
 
-*Primary certificate -- radial shelling (build-up collapse).* Order the cubes
-of `D` by the strict radial key `key(c) = (sum_i near(c_i), #{i : c_i = -1})`
-(with `near(t) = max(0, t, -(t+1))`), which strictly decreases under every
-toward-origin step; any linear extension lists the cubes **nearest-first**.
-Build `D` up cube by cube in increasing `key`. When a cube `c` is added to the
-current downset `D'` (all of smaller key), its **attachment region**
-`A_c = Kuhn(c) ∩ K(D')` is the union of the faces of `c` shared with the earlier
-cubes -- exactly the "inner" faces of `c` toward the origin (the "outer" faces,
-toward absent larger-key neighbors, are free). The key `R`-free fact:
-**`Kuhn(c)` collapses onto `A_c` removing only cells interior to `c`** (each an
-elementary free-face collapse whose free face and its unique coface are interior
-to `c`). Because the removed cells are interior to `c`, each elementary collapse
-lifts verbatim to the full complex (its coface lies only in `Kuhn(c)`), so
-`K(D' u {c}) ↘ K(D')`. Running this in reverse (peel cubes in **decreasing**
-key) collapses `K(B_R)` down to `K(`central 8 cubes`)`; the 8 central cubes
-`{0,-1}^3` form a single combinatorial 3-cube (the `2 x 2 x 2` block) that
-Kuhn-collapses to a point. This is a **shelling** of `K(B_R)`: shellable =>
-collapsible => PL 3-ball (cited comparator: Bing). It **chains correctly by
-construction** -- which corrects the naive "peel the outermost cube onto its
-attachment to the remaining set" order, which does **not** chain (a heavily
-surrounded cube cannot be peeled by interior-only collapses). The attachment
-region `A_c` is a function of the **finite local pattern** of which smaller-key
-neighbors (offsets in `{-1,0,1}^3`) are present; the attachment-types form a
-finite set that **freezes**, and every type is verified to collapse, so the
-per-cube step holds for every cube and every `R`.
+*A-priori closure -- the to-origin discrete Morse matching (uniform in `D`).*
+Fix **one** rule, defined identically for every finite star-shaped toward-origin
+cubical downset `D` (no per-`D` enumeration, no freeze). Let
+`kappa(c) = (sum_i near(c_i), #{i : c_i = -1}, c)` with
+`near(t) = max(0, t, -(t+1))` be the strict radial **cube** key (`near(0) =
+near(-1) = 0`); `kappa` is a strict total order on cubes whose **unique** minimum
+on any downset is the central cube `c0 = (0,0,0)`. For a simplex `sigma` of
+`K(D)`, let `intro(sigma)` be the `kappa`-minimum present cube whose closed cube
+contains `sigma` (the first cube to carry `sigma` as cubes are added in
+increasing `kappa`); the fibers `F_c = intro^{-1}(c)` **partition** the cells.
+On the fiber of each cube `c` the matching `mu` is the elementary-collapse
+matching of the **relative collapse** `Kuhn(c) ↘ A_c`, where
+`A_c = Kuhn(c) ∩ K(D_{<c})` is the **attachment** (the cells of `c` already
+introduced by an earlier cube). The global matching is
+`mu(D) = ∪_c mu_c`. Three properties hold, each **uniform in `D`**:
 
-*Second certificate -- single-critical discrete Morse field.* Fix the radial
-vertex order `vkey(v) = (|v|^2, v)`; the origin `(0,0,0)` is the **unique global
-minimum**. The canonical **matching along the minimal vertex** (a cell `s`,
-`dim >= 1`, paired with `s \ {min(s)}` when consistent) is (M-acyclic) acyclic
--- a property of the vertex order alone, holding on **any** complex and every
-`R` (cited comparator: Forman; reproven by direct cycle-detection, including on
-a non-collapsible control) -- and (M-single-critical) has **exactly one**
-critical cell, the origin `{(0,0,0)}`. Criticality is a **local closed rule**:
-a cell `c` is critical iff (i) no vertex `w` with `vkey(w) < vkey(min c)` has
-`c u {w}` a simplex (not matched up), and (ii) `c \ {min c}` has a
-smaller-vertex completion other than `min c` (not matched down) -- both
-referencing only the **link of `min(c)`**, which is determined by the present
-subset of the (at most 8) incident cubes (**locality**). The cells with minimum
-vertex `v` form the 0-cell `{v}` together with the cone `v * dlk(v)` over the
-**descending link** `dlk(v) = { faces of lk(v) whose vertices all precede v }`;
-the apex `v` absorbs `dlk(v)`'s collapse, so `v` contributes no critical cell
-precisely when `dlk(v)` is non-empty and collapsible. The origin has empty
-`dlk`, leaving `{origin}` the sole critical cell; every other vertex has a
-non-empty, collapsible `dlk`, contributing zero. The descending-link types form
-a set that **freezes** (a fixed finite universe), every non-origin type is
-verified collapsible, and the global single-critical count is confirmed directly
-per vertex by the closed rule. By Forman's theorem, a discrete Morse function
-with a **single** critical cell (a vertex) implies the complex is
-**collapsible** -- Forman applied in the **correct** direction (single critical
-cell => collapsible), single-criticality established by the finite local
-enumeration, **not** assumed from star-shapedness.
+- **(Valid).** `mu` is a valid partial matching (an involution `cell <->
+  matched partner`; dimensions differ by exactly one). Immediate from the
+  per-fiber relative collapses, which pair disjoint free faces with their unique
+  cofaces.
+- **(Single-critical = origin).** The fiber decomposition gives
+  `critical(mu) = ∪_c critical(mu_c)`. For `c != c0`, `A_c` is a **nonempty**
+  subcomplex that **contains `c`'s toward-origin corner** and onto which
+  `Kuhn(c)` **relatively collapses**, consuming **all** of `F_c` -- **zero**
+  critical cells in that fiber. (`A_c` is the union of the closed Kuhn faces of
+  `c` shared with smaller-`kappa` present neighbours, all meeting the
+  toward-corner -- a cone toward that corner; it need not be a union of *full
+  square* facets, but it is always nonempty and `Kuhn(c)` collapses onto it,
+  which is the load-bearing fact, verified below over the closed single-cube
+  family.) The **unique** attachment-free cube is `c0 = (0,0,0)` (the only cube
+  whose `kappa` is minimal and which has no forced toward-origin facet, and it
+  lies in every nonempty downset); `mu_{c0}` collapses `Kuhn(c0)` onto its
+  toward-origin corner, the lattice **origin** `(0,0,0)`, leaving exactly that
+  one critical 0-cell. Total critical count `= 1` (`c0`) `+ 0` (every later
+  cube) `= 1`, the origin.
+- **(Acyclic, by a strictly-monotone global key -- one line, no enumeration).**
+  The global key is `f(sigma) = kappa(intro(sigma))`. Along any gradient
+  (`V`-path) step: **(H1)** matched pairs share `intro` (the relative collapse
+  pairs only cells of one fiber), so `f` is **constant** on matched up-steps;
+  **(M)** a regular (unmatched) down-step `sigma > tau` (`tau` a facet of
+  `sigma`) never **raises** `f`, because the set of present cubes whose closed
+  cube contains `tau` is a **superset** of those containing `sigma` (every cube
+  containing `sigma` contains its face `tau`), so its `kappa`-minimum is no
+  larger: `kappa(intro(tau)) <= kappa(intro(sigma))`. Hence along any `V`-path
+  `f` never increases **and** matched steps never leave a fiber; a **closed**
+  `V`-path can neither raise `f` nor cross fibers, so it lives inside a single
+  fiber `F_c` -- but `mu_c` is an honest elementary-collapse sequence, which is
+  acyclic. A closed `V`-path would force the strictly-decreasing key to return
+  to its start: impossible. This is exactly the requested one-line
+  strictly-monotone-global-function argument (cited comparators: the Cluster /
+  Patchwork Lemma, Jonsson 2008 Lemma 4.2, cf. Hersh; the linear-extension
+  matching, Chari 2000), holding on the explicit complex for **every** `D`.
 
-Either certificate gives: `K(D)` collapses for every toward-origin cubical
-downset `D`, in particular `K(B_R)` at every `R`. (The explicit greedy free-face
-collapse the explicit-complex runner exhibits at small `R` is a **cross-check**
-of these general certificates, not their basis.)
+**Single-criticality is a-priori, not a freeze.** The only step that looks
+local-finite -- "`A_c` is a nonempty cone toward `c`'s toward-origin corner that
+`Kuhn(c)` collapses onto" -- reduces to a **closed single-cube fact** about ONE
+unit cube's 26-neighbour
+shell, generated by **abstract** local downset rules (one family per cube
+sign-class, **translation-invariant** in the actual coordinate), **not** by
+enumerating realized attachments at growing radius. The companion runner
+enumerates that finite abstract family exhaustively and verifies that on every
+member `Kuhn(c)` relatively collapses onto `A_c` with zero extra critical cells
+(and the attachment-free member collapses to the toward-corner); it then
+verifies **reverse inclusion** -- every attachment realized by an actual downset
+lies in the abstract family -- so the family **covers reality without sampling
+it**. There is no "the type set stabilizes at `R_0`" step: the universe is the
+unit cube's finite face lattice, an `R`-free constant. By Forman's theorem, an
+acyclic matching with a **single** critical cell collapses the complex to a
+point, so `K(D)` is **collapsible** for every toward-origin cubical downset `D`,
+in particular `K(B_R)` at every `R`.
+
+*Two prior `R`-free certificates (now cited comparators whose completeness
+follows).* The earlier radial **shelling** (build-up collapse: order cubes by
+`kappa`, each new cube `Kuhn(c)` collapses onto its smaller-key attachment
+removing only interior cells, so `K(D' u {c}) ↘ K(D')`; the `2 x 2 x 2` central
+block Kuhn-collapses to a point) and the earlier **min-vertex discrete Morse
+field** (radial vertex order `vkey(v) = (|v|^2, v)`; the apex `v` absorbs its
+descending link `dlk(v)`) both reach the same conclusion. Each was originally
+completed by a **type-set freeze** (attachment-types freeze; descending-link
+types freeze at `R_0 = 9`). Those certificates remain valid and are retained as
+**cited comparators** in the cross-check runner, but their completeness now
+**follows** from the a-priori closure above and no longer carries the all-`R`
+force: the single-cube universe + reverse inclusion discharge "every cube's
+attachment collapses" structurally, and the explicit greedy free-face collapse
+the explicit-complex runner exhibits at small `R` is a **cross-check** of the
+general matching, not its basis.
 
 **Assembling L1.** `K(B_R)` is a finite PL 3-manifold-with-boundary (existing
 exact certificate: no triangle in more than two tetrahedra; interior-vertex
 links are combinatorial `S^2`; boundary-vertex links are 2-disks -- the latter
-all-`R` via the companion boundary-link disk theorem). A collapsible compact
-PL 3-manifold-with-boundary is a PL 3-ball (cited comparator: J.H.C.
-Whitehead; cf. Rourke and Sanderson, *Introduction to Piecewise-Linear
-Topology* -- the conclusion is supplied here by the explicit collapse, not by
-invoking the theorem). The argument is **forward**: it collapses `B_R` from its
+all-`R` via the companion boundary-link disk theorem, whose effective status
+(`s3_boundary_link_theorem_note`) is owned by the audit lane). A collapsible
+compact PL 3-manifold-with-boundary that is **full-dimensional** is a PL 3-ball
+(cited comparator: J.H.C. Whitehead; cf. Rourke and Sanderson, *Introduction to
+Piecewise-Linear Topology* -- the conclusion is supplied here by the explicit
+a-priori collapse, not by invoking the theorem). Every `B_R` is
+full-dimensional, so the gate is met; the L1(b) collapse itself holds for any
+toward-origin downset (a thin / degenerate downset would still collapse to
+`{origin}` but to a lower-dimensional ball -- correctly, since it is not a
+3-manifold). The argument is **forward**: it collapses `B_R` from its
 interior downset structure and **never references `boundary(B_R)`'s
 sphericity**, so it does **not consume the hard PL Schoenflies** direction
 (which is what "`boundary(B_R)` is a PL 2-sphere => `B_R` is a PL 3-ball" would
@@ -361,18 +404,26 @@ force; the only `R`-dependence anywhere is the inert threshold `R^2` in `(MEM)`.
 
 This is a **native reproof, not an import**. The runners reprove the three
 lemmas from the simplicial structure of the explicit complexes -- the Kuhn
-triangulation, the separable membership predicate, the radial shelling
-(build-up collapse) and the single-critical discrete Morse field, the
-simplicial join link identities, the two-ball gluing identities, and the
-combinatorial-3-sphere criterion -- using only exact integer / combinatorial
-operations. Newman, Alexander, Moise, Perelman, Bing, and the Forman /
+triangulation, the separable membership predicate, the **to-origin discrete
+Morse matching** (uniform in `D`; valid + single-critical `{origin}` + acyclic
+by a strictly-monotone global key), the simplicial join link identities, the
+two-ball gluing identities, and the combinatorial-3-sphere criterion -- using
+only exact integer / combinatorial operations. Newman, Alexander, Moise,
+Perelman, Bing, Chari, Jonsson, Adiprasito--Benedetti, and the Forman /
 Whitehead PL facts are named **cited as comparator** literature theorems that
 the explicit construction instantiates; none is consumed as a derivation input.
 In particular the open "star-shaped => collapsible" (Goodrick) direction is
-structurally **avoided** -- L1(b) obtains collapsibility from explicit
-certificates (a shelling and a single-critical discrete Morse field) justified
-by finite local enumerations on the specific Kuhn complex, not from the open
-conjecture. The construction is `S^3` **by construction** (a union of two PL
+structurally **avoided** -- L1(b) obtains collapsibility from the explicit
+matching above, whose single-criticality is reduced to a **closed single-cube
+fact** (the unit cube's finite face lattice, generated by abstract local downset
+rules and shown by reverse inclusion to cover every realized attachment) rather
+than from any radius-stabilising freeze, and whose acyclicity is the one-line
+strictly-monotone-global-key argument; not from the open conjecture, and not
+from "it is a ball" (the Bing house shows star-shaped does not imply
+collapsible, so the explicit single-critical matching does the work). The two
+earlier freeze-based collapse certificates (the radial shelling and the
+min-vertex discrete Morse field) are retained as cited comparators whose
+completeness now follows. The construction is `S^3` **by construction** (a union of two PL
 3-balls along their common boundary PL 2-sphere), and the runner verifies it
 genuinely meets the combinatorial-3-sphere criterion -- not merely a
 closed-3-manifold property.
@@ -388,9 +439,29 @@ simplicial / PL primitives, with the runners as cross-checks.
 
 ## How the runner is recast (cross-check, not basis)
 
-The all-`R` claim now rests on L1 + L2 + L3 (each `R`-independent). The runners
-are demoted to **cross-check / non-vacuity confirmation**:
+The all-`R` claim now rests on L1 + L2 + L3 (each `R`-independent). L1(b) is
+discharged a-priori by the to-origin discrete Morse matching; the other runners
+are **cross-check / non-vacuity confirmation**:
 
+- **L1(b) a-priori collapsibility runner**
+  [`scripts/frontier_s3_L1b_apriori_collapsibility.py`](./../scripts/frontier_s3_L1b_apriori_collapsibility.py)
+  is the basis of L1(b) (not a cross-check): it builds the uniform matching
+  `mu(D)` and verifies, EXACTLY, **(V1)** it is a valid partial matching,
+  **(V2)** it has exactly one critical cell `= {origin}`, **(V3)** it is acyclic
+  by direct modified-Hasse cycle detection, **(V4)+(V5)** the global key
+  `f = kappa o intro` is constant on matched pairs and never raised by a regular
+  down-step, and **(V6)** the a-priori core `cubes(tau) superset cubes(sigma)`
+  that makes `(M)` a theorem -- on `K(B_R)` for `R = 2..N` **and** on hundreds of
+  arbitrary star-shaped cubical downsets (most demonstrably not metric balls)
+  plus hand-built adversarial extremes. The **single-cube a-priori universe**
+  checks **(U1)** translation-invariance, **(U2)+(U3)** that on every member of
+  the abstract attachment family `Kuhn(c)` relatively collapses onto `A_c` with
+  zero extra criticals (and the attachment-free member to the toward-corner),
+  **(U4)** reverse inclusion (every realized attachment is in the abstract
+  family), and **(U5)** that the unique attachment-free cube in any downset is
+  the origin. Non-vacuity guards: the same rule on a hollow shell (cavity) and a
+  square-annulus prism (loop) each yields **more than one** critical cell, and
+  the cycle scanner correctly flags a hand-built rotational 3-cycle.
 - **Explicit-complex runner**
   [`scripts/frontier_s3_cone_cap_pl_s3_native_reproof.py`](./../scripts/frontier_s3_cone_cap_pl_s3_native_reproof.py)
   verifies the explicit combinatorial-3-sphere criterion on the glued complex
@@ -399,24 +470,22 @@ are demoted to **cross-check / non-vacuity confirmation**:
   `R`, the same per-class outcomes the structural argument forces for all `R`.
 - **All-`R` hypothesis cross-check**
   [`scripts/frontier_s3_partb_allr_lemmas.py`](./../scripts/frontier_s3_partb_allr_lemmas.py)
-  confirms the `R`-free **hypotheses** the general proof rests on:
+  confirms the remaining `R`-free **hypotheses** the general proof rests on:
   `(MEM)` reproduces `cubical_ball` exactly; `(MONO)` holds (`|t| <= 2000`, only
-  flat step `t = -1`); the toward-origin downset corollary (L1(a)); for the
-  **shelling** certificate, the `2 x 2 x 2` base block Kuhn-collapses to a
-  point, every cube collapses onto its smaller-key attachment (the build-up
-  step), and the attachment-types **freeze** (L1(b) primary); for the discrete
-  Morse certificate, the min-vertex matching has **exactly one** critical cell
-  `= {origin}` with zero elsewhere and is acyclic, the descending link is
-  determined by the 8 incident cubes (**locality**), the descending-link type
-  set **freezes** (finite `R`-free universe, `R_0 = 9`), every non-origin type
-  is **collapsible**, and the origin's link is **empty** (L1(b) second); the
+  flat step `t = -1`); the toward-origin downset corollary (L1(a)); the
   cone-over-cycle wheel atom has `chi = 1` for a wide `n`-range (L2); and the
   two-ball gluing identities `st(a) = cone`, `lk(a) = base`,
-  `M - int st(a) = K(B_R)`, `K1 ∩ K2 = boundary(B_R)` hold (L3). Two
-  non-vacuity guards discriminate: the same min-vertex matching on a
-  non-collapsible annulus yields **more than one** critical cell, and the
-  single-critical conclusion still holds on arbitrary **non-ball** toward-origin
-  downsets.
+  `M - int st(a) = K(B_R)`, `K1 ∩ K2 = boundary(B_R)` hold (L3). It also retains
+  the **two prior freeze-based L1(b) collapse certificates as cited
+  comparators** (the radial shelling: `2 x 2 x 2` base block to a point,
+  per-cube collapse onto the smaller-key attachment; the min-vertex discrete
+  Morse field: exactly one critical cell `= {origin}`, acyclic, descending-link
+  locality), whose completeness now **follows** from the a-priori closure and no
+  longer carries the all-`R` force; their freeze checks remain as comparator
+  artifacts only. Two non-vacuity guards discriminate there too: the same
+  min-vertex matching on a non-collapsible annulus yields **more than one**
+  critical cell, and the single-critical conclusion still holds on arbitrary
+  **non-ball** toward-origin downsets.
 
 Both runners are EXACT (integer / combinatorial; no floating point). Their
 finite passes confirm the `R`-free mechanism fires as proven; the all-`R`
@@ -434,14 +503,17 @@ The recognizers and the discrete Morse field genuinely discriminate.
   (`chi = 0`, integer `H_1 = Z^2`, orientable, a genuine closed surface) is
   **rejected** as not-`S^2` by both recognizers. This shows `chi = 0` alone is
   not sphere-determining; the (C-link) test is a real, falsifiable test.
-- **Single-critical field.** The **same** min-vertex matching on a
-  non-collapsible square-annulus control yields **more than one** critical
-  cell, so single-criticality is a genuine, falsifiable property that uses the
-  toward-origin downset structure, not an artifact of the matching rule.
-- **Downset-generality.** The single-critical conclusion holds on arbitrary
-  toward-origin cubical downsets that are demonstrably **not** the metric balls
-  `B_R` (not `O_h`-symmetric), confirming the L1(b) mechanism is a property of
-  the downset, not of the metric ball.
+- **Single-critical field.** The **same** to-origin discrete Morse matching on
+  a hollow shell (cavity, `H_2 != 0`) and on a square-annulus prism (loop,
+  `H_1 != 0`) -- both **not** downsets -- yields **more than one** critical cell,
+  so single-criticality is a genuine, falsifiable property that uses the
+  toward-origin downset structure, not an artifact of the matching rule. The
+  modified-Hasse cycle scanner is itself non-vacuous: it correctly flags a
+  hand-built rotational 3-cycle.
+- **Downset-generality.** The single-critical conclusion holds on hundreds of
+  arbitrary toward-origin cubical downsets that are demonstrably **not** the
+  metric balls `B_R` (not `O_h`-symmetric), confirming the L1(b) mechanism is a
+  property of the downset, not of the metric ball.
 
 ---
 
@@ -485,10 +557,12 @@ interpretation are out of scope.
 ## Reproducibility
 
 ```text
-python3 scripts/frontier_s3_cone_cap_pl_s3_native_reproof.py        # R = 2..6
-python3 scripts/frontier_s3_cone_cap_pl_s3_native_reproof.py 10     # R = 2..10
-python3 scripts/frontier_s3_partb_allr_lemmas.py                    # R = 2..11 (hypotheses)
-python3 scripts/frontier_s3_partb_allr_lemmas.py 14                 # R = 2..14 (wider freeze)
+python3 scripts/frontier_s3_cone_cap_pl_s3_native_reproof.py          # R = 2..6
+python3 scripts/frontier_s3_cone_cap_pl_s3_native_reproof.py 10       # R = 2..10
+python3 scripts/frontier_s3_L1b_apriori_collapsibility.py             # R = 2..8, 200 downsets (L1(b))
+python3 scripts/frontier_s3_L1b_apriori_collapsibility.py 11 300      # R = 2..11, 300 downsets
+python3 scripts/frontier_s3_partb_allr_lemmas.py                      # R = 2..11 (other hypotheses)
+python3 scripts/frontier_s3_partb_allr_lemmas.py 14                   # R = 2..14 (comparators)
 ```
 
 Expected: all checks PASS, all EXACT. The explicit-complex runner reproves, for
@@ -501,14 +575,22 @@ the glued complex `M_R` (every 2-face in exactly two tetrahedra; every vertex
 link a combinatorial `S^2` with the interior / boundary / apex three-class
 breakdown; strong connectivity; `chi = 0`). The combinatorial 3-sphere is
 verified for `R = 2..6` by default and through `R = 10` on request (`R = 10`:
-22,896 tetrahedra, 4,140 vertex links all `S^2`). The hypothesis cross-check
-runner confirms the `R`-free hypotheses of L1/L2/L3 (membership closed form,
-scalar monotonicity, downset; the radial shelling -- `2 x 2 x 2` base block to a
-point, per-cube collapse onto the smaller-key attachment, attachment-types
-freeze; the single-critical discrete Morse field with the local criticality
-rule, descending-link locality + freeze + collapsibility; cone-over-cycle wheel
-atom; two-ball gluing identities), with non-vacuity guards (non-collapsible
-annulus -> more than one critical cell; arbitrary non-ball downsets -> still one
-critical cell). Both runners reuse `cubical_ball`,
-`classify_vertices`, and `analyze_2complex` from
+22,896 tetrahedra, 4,140 vertex links all `S^2`). The L1(b) a-priori runner
+builds the to-origin discrete Morse matching and confirms, EXACTLY, that it is a
+valid partial matching with exactly one critical cell `= {origin}`, acyclic by
+both the strictly-monotone global key (`(H1)`+`(M)`+the `cubes(tau) superset
+cubes(sigma)` core) and direct cycle detection, on `K(B_R)` `R = 2..N` **and** on
+hundreds of arbitrary star-shaped cubical downsets plus adversarial extremes,
+together with the single-cube a-priori universe (translation-invariance, the
+per-member relative-collapse fact, reverse inclusion, attachment-free
+uniqueness) and the non-vacuity guards (hollow shell and annulus prism -> more
+than one critical cell; cycle scanner flags a hand-built 3-cycle). The
+hypothesis cross-check runner confirms the remaining `R`-free hypotheses of
+L1/L2/L3 (membership closed form, scalar monotonicity, downset; cone-over-cycle
+wheel atom; two-ball gluing identities) and retains the two prior freeze-based
+collapse certificates (radial shelling; min-vertex discrete Morse field) as
+cited comparators, with its own non-vacuity guards (non-collapsible annulus ->
+more than one critical cell; arbitrary non-ball downsets -> still one critical
+cell). All three runners reuse `cubical_ball` (and, for the cross-checks,
+`classify_vertices` and `analyze_2complex`) from
 `scripts/frontier_s3_boundary_link_theorem.py` as a single source of truth.

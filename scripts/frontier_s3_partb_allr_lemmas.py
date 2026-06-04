@@ -17,26 +17,35 @@ PURPOSE (sharpens Part B from "verified to R=10" to "PROVEN for all R"):
               Phi(c) = g(c1)+g(c2)+g(c3) <= R^2 with g(t)=max(t^2,(t+1)^2)
               and the scalar monotonicity g(t - sign t) <= g(t));
         L1(b) the Kuhn triangulation of ANY toward-origin cubical downset
-              COLLAPSES, proven R-FREE by TWO independent certificates, neither
-              using the open "star-shaped => collapsible" (Goodrick) direction:
+              COLLAPSES.  This is now CLOSED A-PRIORI (uniform in D, no freeze)
+              by the to-origin discrete Morse matching in the dedicated runner
+              scripts/frontier_s3_L1b_apriori_collapsibility.py (valid +
+              single-critical {origin} + acyclic by a strictly-monotone global
+              key; single-criticality reduced to a CLOSED single-cube universe +
+              reverse inclusion, not a type-set freeze).  This file RETAINS the
+              two PRIOR R-free certificates as CITED COMPARATORS, whose
+              completeness now FOLLOWS from that a-priori closure and no longer
+              carries the all-R force (their freeze checks below are comparator
+              artifacts only):
               PRIMARY -- a radial SHELLING (build cubes in increasing radial
               key; each new cube's Kuhn complex COLLAPSES onto its attachment to
               the earlier smaller-key cubes, removing only interior cells, so
-              K(D u {c}) collapses to K(D); the attachment is a function of the
-              finite local present-neighbor pattern, the attachment-types FREEZE,
-              every type collapses, and the base 2x2x2 central block collapses to
-              a point; shellable => collapsible => PL 3-ball, Bing comparator;
-              this CHAINS correctly by construction, fixing the naive
+              K(D u {c}) collapses to K(D); the base 2x2x2 central block
+              collapses to a point; shellable => collapsible => PL 3-ball, Bing
+              comparator; this CHAINS correctly by construction, fixing the naive
               peel-outermost order which does NOT chain);
               SECOND -- a single-critical discrete Morse field: the canonical
               MIN-VERTEX matching (radial order) is acyclic and has exactly one
               critical cell {origin}; criticality is a LOCAL closed rule on the
               link of a cell's minimum vertex, that link is determined by the
-              present subset of the 8 incident cubes (LOCALITY), the descending-
-              link types FREEZE, and the apex absorbs every non-empty collapsible
-              descending link (=> zero critical cells off the origin), with
-              Forman applied in the CORRECT direction (single critical cell
-              => collapsible).
+              present subset of the 8 incident cubes (LOCALITY), and the apex
+              absorbs every non-empty collapsible descending link (=> zero
+              critical cells off the origin), with Forman applied in the CORRECT
+              direction (single critical cell => collapsible).
+              [The "attachment-types FREEZE" (S1) and "descending-link types
+              FREEZE at R_0 = 9" (B4) checks below are these comparators'
+              original completeness witnesses; the a-priori runner supersedes
+              them as the load-bearing all-R argument.]
     L2  cone(boundary B_R) is a PL 3-ball for all R (simplicial join on a PL
         S^2 base; ball BY CONSTRUCTION).  R-free; depends ONLY on the abstract
         "base is a PL S^2" hypothesis (verified base-agnostic on
@@ -563,8 +572,9 @@ def attachment_type(cube, smaller_present) -> frozenset:
 
 
 def check_L1b_shelling(radii) -> None:
-    print("\n=== L1(b) PRIMARY: radial SHELLING (build-up collapse; "
-          "shellable => collapsible => PL 3-ball; Bing comparator) ===")
+    print("\n=== L1(b) COMPARATOR (completeness now follows from the a-priori "
+          "runner): radial SHELLING (build-up collapse; shellable => "
+          "collapsible => PL 3-ball; Bing comparator) ===")
 
     central = set((a, b, c) for a in (0, -1) for b in (0, -1)
                   for c in (0, -1))
@@ -612,7 +622,9 @@ def check_L1b_shelling(radii) -> None:
     tail = [n for (R, n) in counts if R >= R0]
     rmax = counts[-1][0] if counts else 0
     froze = (rmax >= R0 + 1 and len(set(tail)) == 1)
-    check("L1(b) (S1) attachment-type set FREEZES (finite R-free universe)",
+    check("L1(b) (S1) [COMPARATOR ARTIFACT; superseded by the a-priori "
+          "single-cube universe] attachment-type set FREEZES (finite R-free "
+          "universe)",
           froze, "cumulative=" + ",".join(f"R{R}:{n}" for R, n in counts)
           + (f" [need max R >= {R0 + 1}; have {rmax}]"
              if rmax < R0 + 1 else ""))
@@ -654,8 +666,9 @@ def _greedy_collapse_count(cells) -> int:
 
 
 def check_L1b_single_critical(radii) -> None:
-    print("\n=== L1(b) SECOND certificate: single-critical discrete Morse "
-          "field (Forman; single critical cell => collapsible) ===")
+    print("\n=== L1(b) COMPARATOR (completeness now follows from the a-priori "
+          "runner): single-critical discrete Morse field (Forman; single "
+          "critical cell => collapsible) ===")
 
     # (B1) The closed-rule criticality gives EXACTLY ONE critical cell = the
     # origin, with ZERO at every other vertex, for every checked R.
@@ -736,7 +749,8 @@ def check_L1b_single_critical(radii) -> None:
     tail = [n for (R, n) in counts if R >= R0]
     rmax = counts[-1][0] if counts else 0
     froze = (rmax >= R0 + 2 and len(set(tail)) == 1)
-    check("L1(b) (B4) descending-link TYPE set FREEZES at R_0 = 9 "
+    check("L1(b) (B4) [COMPARATOR ARTIFACT; superseded by the a-priori "
+          "single-cube universe] descending-link TYPE set FREEZES at R_0 = 9 "
           "(finite R-free universe; constant across R = 9..max)", froze,
           "cumulative=" + ",".join(f"R{R}:{n}" for R, n in counts)
           + (f" [need max R >= {R0 + 2}; have {rmax}]"

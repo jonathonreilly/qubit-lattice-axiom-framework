@@ -25080,6 +25080,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_tensor_block_closure_test.py"
     },
+    "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": {
+      "assert_count": 0,
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_tensor_composition_requires_local_tomography_exact.py"
+    },
     "tensor_matching_completion_theorem_note": {
       "assert_count": 1,
       "counts": {
@@ -30758,6 +30770,21 @@
         "D": 0
       },
       "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_tensor_composition_requires_local_tomography_exact.py": {
+      "assert_count": 0,
+      "claims": [
+        "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
       "dominant_class": "A",
       "exists": true
     },
@@ -62211,14 +62238,14 @@
   "stats": {
     "decoration_candidates": 375,
     "dominant_class_distribution": {
-      "A": 290,
+      "A": 291,
       "B": 307,
       "C": 862,
       "D": 324,
       "none": 465
     },
-    "runners_classified": 2248,
+    "runners_classified": 2249,
     "runners_with_C": 1123,
-    "runners_with_D": 655
+    "runners_with_D": 656
   }
 }

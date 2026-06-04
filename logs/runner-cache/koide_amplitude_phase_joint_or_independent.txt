@@ -1,0 +1,117 @@
+===== runner cache v1 =====
+runner: scripts/koide_amplitude_phase_joint_or_independent.py
+runner_sha256: bdd8cbd892464fbe69bccf04ad309f1645fa5f13c15cf75b68c680b23aef1474
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+==============================================================================
+JOINT-OR-INDEPENDENT TEST: sqrt(2) amplitude vs delta=2/9 phase at N=3
+==============================================================================
+
+Targets: delta = 2/9 = 0.2222222222 rad (PHASE, admitted)
+         amplitude sqrt(2) = 1.4142135624  (cosine coeff = 2*beta, a=1)
+         beta/a = 1/sqrt(2) = 0.7071067812,  (beta/a)^2 = 0.5
+
+------------------------------------------------------------------------------
+SECTION A: Brannen operator A = a I + b R + c R^2 -- what carries delta?
+------------------------------------------------------------------------------
+  [PASS] b is a single complex number (modulus & argument both defined)  -- b=0.689719+0.155845j
+  [PASS] arg(b) = 2/9 by construction (the phase slot)  -- arg(b)=0.2222222222
+  [PASS] |b|/a = 1/sqrt(2) by construction (the amplitude slot)  -- |b|/a=0.7071067812
+  [PASS] eigenvalues real (Hermitian A)
+  [PASS] Q = 2/3 from this (amplitude) -- LCC realized  -- Q=0.6666666667
+  [PASS] eigenvalues match Brannen 1+sqrt2 cos(delta+...) form  -- v/a=[0.04034991 0.58021192 2.37943817]
+
+  KEY OBSERVATION: arg(b) and |b| are LOGICALLY INDEPENDENT real degrees of
+  freedom of one complex number. Constructing b with BOTH targets is a POSIT,
+  not a derivation: nothing here FORCES arg(b)=2/9 from |b|/a=1/sqrt2 or vice
+  versa. They are the two independent polar coordinates of b.
+
+------------------------------------------------------------------------------
+SECTION B: Each (N-1)/N^2 mechanism at N=3 -- is 2/9 a PHASE or a MODULUS?
+  For each, compute BOTH |.| and arg(.). Joint <=> arg=2/9 AND |.|^2=1/2.
+------------------------------------------------------------------------------
+  [PASS] APS eta(1,2;3) is REAL (imag ~ 0)  -- eta=2.222222e-01+7.401487e-17j
+  [PASS] APS eta(1,2;3) = 2/9 as a REAL number (modulus=2/9, arg=0)  -- |eta|=0.222222, arg=3.33e-16
+  [PASS] APS eta modulus is 2/9, NOT 1/sqrt(2) -- not the amplitude  -- |eta|=0.222222 vs 1/sqrt2=0.707107
+  per-block APS terms: 0.333333+0.000000j, 0.333333+0.000000j
+  [PASS] per-block APS terms are REAL = 1/3 each (no phase)  -- blocks=['0.3333+0.0000j', '0.3333+0.0000j']
+  [PASS] anomaly Tr[Y^3] = 2/9 is a REAL coefficient (arg=0)  -- =0.222222
+  [PASS] Bernoulli variance (1/3)(2/3) = 2/9 is REAL non-negative  -- =0.222222
+  [PASS] Bernoulli poly B_2(1/3) is REAL rational  -- B_2(1/3)=-1/18
+  [PASS] Hurwitz/Bernoulli 2/9 reading is REAL (no imaginary part / phase)  -- regularized zeta value is real
+  [PASS] Z_3 orbifold/character e^{i*2/9}: argument = 2/9  -- arg=0.222222
+  [PASS] Z_3 orbifold/character e^{i*2/9}: modulus = 1, NOT 1/sqrt(2)  -- |.|=1.000 vs 1/sqrt2=0.7071
+  [PASS] Burnside/K-theory 2/9 is a REAL rational class (arg=0)
+
+------------------------------------------------------------------------------
+SECTION B SUMMARY: modulus vs argument of each 2/9 object
+------------------------------------------------------------------------------
+  object                           2/9 is      modulus     argument
+  APS_eta(1,2;3)                  MODULUS     0.222222     0.000000
+  Tr[Y^3]=2/d^2                   MODULUS     0.222222     0.000000
+  Bernoulli var                   MODULUS     0.222222     0.000000
+  Bernoulli B_2/Hurwitz           MODULUS     0.222222     0.000000
+  Z_3 orbifold e^{i*2/9}              ARG     1.000000     0.222222
+  Burnside K-theory               MODULUS     0.222222     0.000000
+  [PASS] NO tested (N-1)/N^2 object has BOTH arg=2/9 AND modulus^2=1/2  -- joint candidates found = 0
+
+  WHY: every (N-1)/N^2 object that lands on 2/9 does so as a REAL number
+  (spectral asymmetry / anomaly / variance / regularized zeta / index).
+  For those, 2/9 is the MODULUS (with arg=0), and the modulus is 2/9 -- NOT
+  1/sqrt(2). The only object with argument=2/9 (the orbifold/character phase
+  e^{i*2/9}) has modulus EXACTLY 1 by unitarity -- NOT 1/sqrt(2).
+  No tested object in this class delivers argument=2/9 and modulus=1/sqrt(2)
+  jointly.
+
+------------------------------------------------------------------------------
+SECTION C: Could a SUM over the Z_3 orbit give modulus sqrt(2)?
+  (task hint: a sum over the orbit, or regularized eta with Re+Im, might
+   give modulus sqrt(2) and argument 2/9 together.)
+------------------------------------------------------------------------------
+  [PASS] orbit sum sum_g e^{i(delta+2pi g/3)} = 0 (NOT sqrt2)  -- |S|=4.00e-16
+  [PASS] partial orbit sum |e^{i d}+e^{i(d+2pi/3)}| = 1 (geometry of 120deg), not sqrt2  -- |S2|=1.000000
+  [PASS] DFT coeff c_1 of eigenvalue vector: |c_1|=beta INDEPENDENT of phase phi  -- modulus and phase decouple in the natural Z_3 Fourier object
+  [PASS] scan of APS eta over p<=12, all weight pairs: NO eta with arg=2/9 AND |.|=sqrt2 or 1/sqrt2  -- no native eta object realizes the joint condition
+
+------------------------------------------------------------------------------
+SECTION D: COMPLEMENTARY framing -- amplitude=POLAR, phase=AZIMUTH
+  (Fisher-Rao: cos^2(theta_p)=1/(3Q); theta_p=pi/4 <=> Q=2/3.
+   delta = azimuth of same sqrt(m) point. Orthogonal coordinates.)
+------------------------------------------------------------------------------
+  [PASS] vary phase delta at fixed sqrt2 amplitude: polar angle theta_p CONSTANT = pi/4  -- theta_p range=[0.785398,0.785398], pi/4=0.785398
+  [PASS] vary amplitude at fixed delta: polar angle theta_p VARIES (Q changes with amplitude)  -- theta_p range=[0.4012,0.9049]
+  [PASS] amplitude (polar, Q) and phase (azimuth, delta) are ORTHOGONAL sphere coords => INDEPENDENT  -- polar fixed by amplitude alone; azimuth free => two independent real DOF
+
+------------------------------------------------------------------------------
+SECTION E: Q-Delta linking relation -- delta = Q/d, not modulus/arg of one Z
+------------------------------------------------------------------------------
+  [PASS] Delta_3 = Q_3 / 3  (phase = value/d, a real-ratio link, not arg(Z) vs |Z|)  -- 2/9 == 2/3/3 = 2/9
+  [PASS] amplitude lives in Q=2/3 (the VALUE); phase lives in 2/9=Q/3 -- linked by d, not by one complex Z
+
+  The cleanest native link between value and phase is the REAL ratio
+  delta = Q/d  (= (2/3)/3 = 2/9). This is a relation between two REAL numbers
+  via the integer d=3 -- NOT the statement that delta=arg(Z), sqrt2~|Z| for one Z.
+  It does NOT source sqrt(2) from 2/9: it relates 2/9 to 2/3 (the Q value),
+  while sqrt2 is the AMPLITUDE realizing Q=2/3, a step removed.
+
+==============================================================================
+VERDICT
+==============================================================================
+  TESTED-CLASS INDEPENDENT, not joint. The sqrt(2) amplitude (beta/a=1/sqrt2, (beta/a)^2=1/2,
+  = polar/colatitude = Q=2/3) and the phase delta=2/9 (= azimuth) are ORTHOGONAL
+  data on the Fisher-Rao sqrt(m) sphere. Every tested native (N-1)/N^2 object delivers
+  2/9 as a REAL value (modulus 2/9, arg 0) -- not as an argument paired with
+  modulus 1/sqrt2; the only argument=2/9 object (orbifold character) has modulus
+  exactly 1 by unitarity. No orbit-sum, DFT coefficient, or regularized eta over
+  p<=12 realizes arg=2/9 AND modulus in {sqrt2,1/sqrt2}. Constructing one b with
+  both targets is a POSIT (independent polar coords), not a derivation. In these
+  tested classes, sourcing delta=2/9 therefore does NOT source beta/a=1/sqrt2
+  for free.
+
+SCORECARD: PASS=27 FAIL=0
+
+----- stderr -----
+

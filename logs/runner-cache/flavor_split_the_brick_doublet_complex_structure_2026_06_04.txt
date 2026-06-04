@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/flavor_split_the_brick_doublet_complex_structure_2026_06_04.py
+runner_sha256: 097fe7a143d3d839b56e6bf982602fc6928bd9cf1cd48f84d472508933261b27
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+[PASS] J=(C-C^T)/sqrt(3) is antisymmetric (J^T=-J) with eig(J)={0,+i,-i} (real parts ~0, imag {-1,0,1})
+       eig(J)=[ 0.+1.j  0.-1.j -0.+0.j]
+[PASS] J^2 = -I on the 2-dim doublet, 0 on the all-ones singlet (almost-contact: Reeb axis = all-ones)
+       eig(J^2)=[-1. -1.  0.]
+[PASS] J is C_3-equivariant: [J,C]=0
+[PASS] J COMMUTES with every circulant H ([J,H]=0) and does NOT anticommute ({J,H}!=0) => HOLOMORPHIC-READOUT object, not a chiral grading
+[PASS] Gamma_chi=(2/3)J_allones-I (eig {1,-1,-1}, Gamma^2=I) also COMMUTES with H (so it never graded H), and Gamma_chi != J
+       the 'brick' conflated commuting-J (exists) with a non-existent anticommuting grading
+[PASS] generation factor carries NO anticommuting chiral object for a circulant (comm(C) inter anticomm(Gamma_chi)={0})
+       orientation only; strong-CP remains a separate spacetime/field problem
+[PASS] RESIDUAL: J is necessary scaffolding but NOT sufficient -- the value is one DISCRETE bit (signed/det_C r=1/2,Q=2/3 vs unsigned/det_R r=1,Q=1)
+       the readout selector remains open; no baseline premise change is made here
+
+SCORECARD PASS=7 FAIL=0
+SPLIT-THE-BRICK: the commuting C_3-equivariant complex structure J=(C-C^T)/sqrt(3) EXISTS on the
+doublet (holomorphic-readout scaffolding, outside the odd-dim wall and the anticommuting no-go);
+it is DISTINCT from the conflated anticommuting grading. Strong-CP remains a separate
+spacetime/field problem; the sole open residual here is one discrete readout
+bit (signed/det_C vs unsigned/det_R). J necessary, not sufficient for Q=2/3. No audit status.
+
+----- stderr -----
+

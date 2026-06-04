@@ -35,25 +35,35 @@ RESULT: THE RULE BREAKS AT WEIGHT 11.
    was one orbit). At the LEADING order (10) all six orbits nevertheless share the
    IDENTICAL per-support 11-point cumulant 1/1190155742208 (two-engine confirmed:
    Fraction == sympy). So leading-order orbit-splitting alone does not yet break a
-   single-monomial form.
+   single-monomial form. At the HELD-OUT order (11) the orbits DIVERGE: 60 supports
+   (orbits of size 16,4,8,32) give per-support 11/14281868906496 while the other 6
+   supports (orbits of size 4,2) give 10/14281868906496 -- a genuine
+   sum-over-distinct-topologies, which a single monomial cannot represent.
 
 3. THE BREAK. The single-monomial rule REQUIRES per-support cumulant
    = 18 * [leading coeff of K''(K')^(W-1)]. This identity HOLDS at W=6 and W=10
    (verified here as controls) but FAILS at W=11:
        per-support (enum, two-engine) = 1/1190155742208
        18 * [K''(K')^10 leading]      = 1/3570467226624
-   differing by an exact factor of 3. Hence the enumerated class leading coefficient
-       66 * 1/1190155742208 = 11/198359290368
-   is EXACTLY 3x the predicted 11/595077871104. The held-out order 11 likewise
-   mismatches. The conjectured 1188 K''(K')^10 form is FALSIFIED: the geometry of a
-   SURVIVING (coeff-2) shared face is a different cumulant structure than the cube /
-   cancelling-face clusters, so the universal-marked-face single-monomial law does
-   not extend to weight 11. The class is NOT (#configs)*18*K''(K')^(W-1).
+   differing by an exact factor of 3. The enumerated class coefficients are
+       order 10 = 66 * 1/1190155742208               = 11/198359290368
+       order 11 = 60*11/14281868906496 + 6*10/...    = 5/99179645184
+   versus the predicted 11/595077871104 at BOTH orders, i.e. enum/pred = 3 at order
+   10 and 30/11 at order 11. The conjectured 1188 K''(K')^10 form is FALSIFIED on
+   three independent counts: (i) the leading coefficient is off by an exact factor
+   3; (ii) the held-out order 11 is off by 30/11; (iii) the prediction's signature
+   "order 10 == order 11" coincidence is NOT reproduced by the enumeration (its two
+   coefficients are unequal, and have different ratios to the prediction). The
+   geometry of a SURVIVING (coeff-2) shared face is a different cumulant structure
+   than the cube / cancelling-face clusters, so the universal-marked-face
+   single-monomial law does not extend to weight 11. The class is NOT
+   (#configs)*18*K''(K')^(W-1).
 
    (The closed-form predictions are themselves internally CONSISTENT -- 1188
    K''(K')^10 really does Taylor-expand to 11/595077871104, 11/595077871104,
-   715/85691213438976 at orders 10/11/12, reproduced in V4. The break is between
-   that closed form and the DIRECT enumeration, not within the closed form.)
+   715/85691213438976 at orders 10/11/12, reproduced in V4 and re-verified at J
+   truncations N=16/20/25. The break is between that closed form and the DIRECT
+   enumeration, not within the closed form.)
 
 MEMORY / SCOPE. Fraction engine; streamed enumeration; orbit-exploited (one
 representative cumulant per orbit, never all 66). Order 10 peaks at link incidence 3
@@ -421,9 +431,10 @@ def main():
         print(f"     order {n} [{tag}]: enum = {classcoeff[n]}  vs  prediction = "
               f"{supplied[n]}  MATCH={m}  (enum/pred = {ratio})")
     check("FALSIFICATION VERDICT: the direct weight-11 enumeration does NOT match "
-          "1188 K''(K')^10 (mismatch by an exact factor of 3 at the leading order, "
-          "and at the held-out order) => the cube-cluster single-monomial rule "
-          "BREAKS at weight 11",
+          "1188 K''(K')^10 (enum/pred = 3 at leading order 10, 30/11 at held-out "
+          "order 11; the two enum coeffs are UNEQUAL so the prediction's order10 == "
+          "order11 coincidence is not reproduced) => the cube-cluster single-monomial "
+          "rule BREAKS at weight 11",
           verdict_break,
           f"orders tested {sorted(classcoeff)}; all mismatched = "
           f"{all(classcoeff[n] != supplied[n] for n in classcoeff)}")
@@ -462,7 +473,9 @@ def main():
               f"enum/pred = {r}")
     print("   order 12: WALLED (incidence-5 (5,5) wall)")
     print("VERDICT: the single-monomial cube-cluster rule (#)*18*K''(K')^(W-1) "
-          "BREAKS at weight 11 (enum = 3x the 1188 K''(K')^10 prediction).")
+          "BREAKS at weight 11 (enum/pred = 3 at order 10, 30/11 at order 11; the "
+          "two enum coeffs are unequal so the predicted order10==order11 coincidence "
+          "fails; and the 66 supports form 6 orbits that DIVERGE at order 11).")
     print("=" * 78)
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}   ({time.time()-t0:.1f}s)")
     print("=" * 78)

@@ -248,74 +248,176 @@ second-quantized graded-locality route remain open; this note localizes the
 residual to the matter-attachment pin and identifies the precise group-theoretic
 reason the abelian-framing family cannot reach it.
 
-## 6. No-Go Discipline Gate
+## 6. No-Go Discipline Gate (N1-N8)
 
-**N1 -- Alternative route enumeration.**
+**Status:** PASS for the narrow scoped no-go only. The claim being closed is
+**not** "fermionic statistics is impossible on the `Z^3` lattice" and **not** a
+rejection of the matter-attachment or second-quantized graded routes. It is the
+single, exactly-computed statement that the **`R^3`-embedding normal-bundle
+framing** (`SO(2)`/`Z`-valued writhe, the A7-hypothesis transverse plane) is
+**decoupled** from the `2`-torsion fermionic swap class `t in H_1(UD_2(Z^3); Z)`,
+so the embedding-framing **cannot supply** the swap sign and the residual
+**relocates** to the `SU(2)` matter-attachment rather than dissolving into A1+A2.
+Every negative below is scoped to the abelian (`SO(2)`/`U(1)`) framing sector and
+to the A7 embedding-framing route; the non-abelian `SU(2)` matter-attachment is
+named as the live relocation target, never as closed.
 
-| route | attempted forcing of the swap sign onto `t` | why it fails (this scoped claim) |
-|---|---|---|
-| R1 | `R^3` normal-bundle **writhe** (integer self-linking). | `SO(2)`-valued => an integer cocycle `phi_Z`; `t` is `2`-torsion => `2 phi_Z(t) = phi_Z(2t) = 0 => phi_Z(t) = 0`. Verified, basis pairing, on `Z^3` slab. |
-| R2 | A flat **`U(1)`/`SO(2)` framing connection** (real holonomy). | `t = 0` in `H_1(;R)` => holonomy `+1` for any flat `A`. A non-flat `A` is not a homotopy invariant (ill-defined statistics sign). |
-| R3 | The flat **`Z_2`** form of the framing (a base-edge connection). | The prior `eta`-holonomy no-go: `P(t) = 0 mod 2 => Hol_eta(t) = +1`. (The `Z_2`-shadow of R1/R2.) |
-| R4 | Transport the on-site `2O` `2pi = -1` sign through the embedding's `O(3)` frame. | The vector/**adjoint** frame sees `2pi` as `+I` (`Ad(-I) = I_3`); the `-1` is only in the spin-`1/2` rep, not the embedding's vector frame. |
-| R5 | Identify the embedding frame's `SU(2)` lift with the qubit `C^2` (spin-`1/2`). | This **does** carry `-1`, but it is the **matter-attachment** (qubit `C^2` = matter-spinor STATE law), which `per_site_su2_spin_half` withholds at the state level and which reduces to the **unaudited** Kawamoto-Smit reconstruction. This is the relocation, not a derivation from A1+A2. |
+### N1 - Alternative route enumeration
 
-**N2 -- Wall-independence audit.** R1/R2/R3 (abelian-framing blindness: writhe,
-real connection, `Z_2` connection) and R4 (vector/adjoint frame sees `+1`) are
-independent witnesses of **one** wall: the swap is a `2`-torsion / `SU(2)`
-double-cover class orthogonal to the entire abelian (`SO(2)`/`U(1)`) framing
-sector. R5 names the single object that does carry it (the `SU(2)`
-matter-attachment) and shows it is the relocation target, not a closure. Not
-separate admissions to count.
+The `marker` column records the runner's disposition of each route: `PRUNED` =
+the route was computed and shown blind to / non-sourcing of `t` (a negative the
+note owns); `RELOCATED` = the route does carry `-1` but only via the tiered
+matter-attachment pin (not a derivation from A1+A2); `OUT-OF-SCOPE-OPEN` = a route
+that is **not** addressed by this note and is explicitly left open. The first five
+rows are the abelian/embedding-framing routes this no-go actually prunes; the last
+two are the open relocation/derivation routes the note refuses to close.
 
-**N3 -- Hidden-wall scan.** Framework inputs used: A2's `Z^3 subset R^3` standard
-cubic realization (the embedding), the retained graph-braid `Z_2` exchange class,
-the standard Abrams cube complex, and the `Cl(3,0)`/spin-`1/2` content of A1.
-`per_site_su2_spin_half` is used **only** for what it proves (operator-frame
-adjoint covariance) and its explicit C3 withholding of the state-law upgrade. The
-Kawamoto-Smit and matter-attachment-reduction rows are named with their
-**unaudited** tier and are **not** load-bearing. CAR, `sign(beta)`-as-exchange,
-and `Q = 2/3` are **not** assumed -- they are the objects under test. No PDG
-value, scale, coupling, `g_bare`, or fitted input.
+| route | what it would attempt | why it fails for this scoped no-go | marker |
+|---|---|---|---|
+| R1 writhe | Source the swap sign from the `R^3` normal-bundle **Calugareanu writhe** (integer self-linking, `Lk = Tw + Wr`). | The writhe is an `SO(2)` class, i.e. an integer `1`-cocycle `phi_Z`; `t` is `2`-torsion (`2t in im d2`), so `2 phi_Z(t) = phi_Z(2t) = 0 => phi_Z(t) = 0`. Verified by an explicit integral-cocycle **basis** pairing on the genuine `3x3x2` `Z^3` slab (`dim 168`). | PRUNED |
+| R2 flat real conn. | Use a flat **`U(1)`/`SO(2)` framing connection** on the embedding, statistics sign `= exp(i<A,t>)`. | `2t in im d2 => t = 0` in `H_1(UD_2; R)`, so `<A, t> = 0` and holonomy `= +1` for **every** flat real `A`. A non-flat `A` is not a homotopy invariant, hence not a well-defined statistics sign. | PRUNED |
+| R3 flat `Z_2` form | Use the flat **`Z_2`** (base-edge) form of the framing connection. | The prior `eta`-holonomy no-go: base-edge projection `P(t) = 0 mod 2 => Hol_eta(t) = +1`. This is exactly the `Z_2`-coefficient **shadow** of R1/R2 (`t` `2`-torsion), recovered here as a special case. | PRUNED |
+| R4 adjoint transport | Transport the on-site `2O` `2pi = -1` sign out through the embedding's `O(3)` **vector/adjoint** frame. | The vector frame is the adjoint rep: `Ad(-I) = I_3`, so it sees the `2pi` exchange rotation as `+I`. The `-1` lives only in the spin-`1/2` rep, which the embedding's `O(3)` frame is **not**. | PRUNED |
+| R5 Bockstein cocycle | Detect `t` with the genuine non-fibered `GF(2)` cocycle `phi`, `phi(t) = 1`, and lift it to an integral (`SO(2)`-framing) class. | `phi` exists and is non-fibered (depends on the **parked** token, not just the moving edge), but it is `2`-torsion / Bockstein data and is **not** the mod-`2` reduction of any integral writhe class. So it is real, but it is **not** an `SO(2)` embedding-framing. | PRUNED |
+| R6 `SU(2)` lift | Identify the embedding frame's `SU(2)` **lift** with the per-site qubit `C^2` (spin-`1/2`), which does carry `-1`. | This is the **matter-attachment** (qubit `C^2` = matter-spinor STATE law). `per_site_su2_spin_half` (retained) proves only the operator/adjoint frame and explicitly withholds the state-law upgrade; the upgrade reduces to the **unaudited** Kawamoto-Smit `Omega(x)`. So `-1` is reached only by the tiered pin, not by A1+A2. | RELOCATED |
+| R7 graded second-quant. | Supply the swap from a retained graded-locality / fermion-parity-superselection (CAR) principle on the second-quantized field. | Not addressed by this note: this is a separate object on a different surface (operator algebra, not configuration-space cohomology). Left explicitly open as a future positive route. | OUT-OF-SCOPE-OPEN |
 
-**N4 -- Residual matching.** The residual attacked is exactly the A7 hypothesis
-("the `R^3` embedding supplies the transverse plane the abstract-graph analysis
-discarded"). The result: the transverse plane is real but is `SO(2)` (`Z`-valued
-writhe), and the `2`-torsion swap is orthogonal to all abelian framings. This
-matches and sharpens the prior `eta`-holonomy no-go (whose `P(t) = 0` is the
-`Z_2`-shadow) and the matter-attachment review's "no transverse plane" remark
-(corrected to "a transverse plane exists, but it is the wrong group").
+### N2 - Wall-independence audit
 
-**N5 -- Rhetoric audit.** Every negative is scoped to "the abelian (`SO(2)`/`U(1)`)
-embedding-framing has holonomy `+1` on the swap" and "the swap sign needs the
-`SU(2)` matter-attachment". It is **not** a claim that fermions are impossible on
-the lattice, **not** a claim that the matter-attachment / second-quantized routes
-are closed, and **not** a finite-enumeration of the search space. No
-"only/last/closes/exhausted" framing is used.
+The collapsed wall set for this scoped no-go has **one** wall: the fermionic swap
+`t` is a `2`-torsion / `SU(2)`-double-cover class, orthogonal to the **entire**
+abelian (`SO(2)`/`U(1)`) framing sector. R1 (writhe), R2 (flat real connection),
+R3 (`Z_2` base-edge connection), R4 (adjoint/vector frame) and R5 (non-fibered
+Bockstein cocycle has no integral lift) are **not** five independent walls -- they
+are five witnesses of the same single homological fact (`2t in im d2`, plus
+`Ad(-I) = I_3` for R4). They cannot fail independently: any framing that is
+abelian-valued factors through `H_1(;Z)`/`H_1(;R)` on which `t` is torsion/zero,
+and R3 is literally the `Z_2`-reduction of R1/R2. R6 names the single distinct
+object (`SU(2)` fundamental) that **does** detect `t`; it is the relocation target,
+not a second wall. Promoting any one of the `unaudited` Kawamoto-Smit rows would
+move R6 from `RELOCATED` to a derivation, but would leave the R1-R5 abelian-framing
+fact (this note's actual content) **untouched** -- confirming the wall is a single,
+group-theoretic one and is independent of the tier of the relocation target.
 
-**N6 -- Partial-closure path scan.** Two named, **open** routes could supply the
-residual without overturning anything here: (a) the `SU(2)` matter-attachment
-(qubit `C^2` = matter-spinor state law) via the Kawamoto-Smit reconstruction, if
-the repo promotes the relevant rows from `unaudited`; (b) a retained
-graded-locality / fermion-parity-superselection principle. Either is a legitimate
-future path if derived from retained inputs.
+### N3 - Hidden-wall scan
 
-**N7 -- Steelman.** A hostile reader argues the `R^3` embedding "obviously"
-frames the lattice, so the framing must reach the swap. The steelman fails at the
-**group**: the embedding frames the normal `SO(2)` `2`-plane (`Z`-valued writhe),
-and the runner proves every such `Z` / `U(1)` class is blind to the `2`-torsion
-swap. The swap needs the non-abelian `SU(2)` double cover (spin-`1/2`), which is
-the matter-attachment, not the embedding. The reader has correctly identified
-that a transverse plane exists; they have mis-identified its structure group.
+The load-bearing inputs for the negative are made fully explicit so that no broad
+word ("framework", "embedding", "transverse plane", "native") smuggles in a hidden
+retained premise:
 
-**N8 -- Cross-cycle echo.** The same matter-attachment / `SU(2)`-spinor wall
-appears in the operator-merger route
-(`koide_matter_attachment_reduces_to_ks_audit`), the FS rotation-exchange route,
-and the on-site adjoint-quotient route. This note reaches it by a **fourth**,
-independent method (configuration-space cohomology + Calugareanu framing), and
-lands only the refined localization -- the group-theoretic reason the abelian
-embedding-framing family cannot reach the swap, and the convergence on the
-Kawamoto-Smit matter-attachment pin.
+- A2's `Z^3 subset R^3` standard cubic realization (the embedding) -- used only to
+  exhibit the rank-`2` normal bundle and its `SO(2)` structure group;
+- the **retained_bounded** graph-braid `Z_2` exchange class
+  (`graph_braid_z3_anyon_exclusion_dichotomy`) -- consumed for `H_1(UD_2(Z^3)) =
+  Z^{b1} (+) Z_2` only; the torsion **classification** is not redone here;
+- the standard Abrams cube complex `UD_2(Gamma)` and **integer/rational linear
+  algebra** (integral Smith normal form, exact over `Z`) -- the `2`-torsion of `t`
+  and the basis cocycle pairings;
+- A1's `Cl(3,0)`/spin-`1/2` content and standard `SU(2)`/`SO(3)` representation
+  theory -- the `Ad(-I) = I_3` vs spin-`1/2` `= -I_2` separation.
+
+`per_site_su2_spin_half` (`retained`) is used **only** for what it proves
+(operator-frame adjoint covariance) and for its explicit C3 withholding of the
+matter-state law -- it is **not** stretched into supplying the swap. The
+Kawamoto-Smit reconstruction and the matter-attachment-reduction note are named
+with their **unaudited** tier and are **not** load-bearing on the negative. CAR,
+`sign(beta)`-as-exchange, and `Q = 2/3` are **objects under test**, never assumed.
+No PDG observed value, mass scale, coupling, `g_bare`, fitted selector, or unit
+convention is consumed. The numerics are exact (the runner's Smith-normal-form
+backend operates on integer `numpy.int64` matrices over `Z`, not floats), so no
+floating-point threshold is a hidden input.
+
+### N4 - Residual matching
+
+The residual attacked must be the **exact** A7-hypothesis residual named by the
+parent notes -- not a weaker paraphrase. The table pins each cited witness's
+residual against the residual closed here.
+
+| cited witness | residual it left open | residual attacked here | match? |
+|---|---|---|---|
+| `koide_graph_braid_exchange_eta_holonomy_decoupling_2026_06_02` (**unaudited**) | The swap sign exists only as a **non-fibered** `H^1(UD_2(Z^3); Z_2)` class, not the lift of any base-edge connection (`P(t) = 0 mod 2`). | Generalized to: the swap is `2`-torsion, so **no** abelian (`SO(2)`/`U(1)`) framing -- base-edge **or** transverse normal-bundle, flat **or** real-holonomy -- detects it. `P(t)=0` is recovered as the `Z_2`-shadow. | yes (strict generalization) |
+| `FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md` (`retained_no_go`) | The continuum rotation-exchange route is pruned; the **lattice-native / framing** routes are named as open. | The **embedding-framing** form of that open route (the A7 transverse plane) is pruned; the parent's torsion class is not overturned. | yes (prunes a named-open sub-route) |
+| `koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02` (**unaudited**) §C | "A `1`-complex has no transverse plane to frame" (the scoping the A7 hypothesis challenges). | Corrected to: a transverse plane **does** exist (the `SO(2)` normal `2`-plane), but it is the **wrong group** -- abelian `Z`-writhe, orthogonal to the torsion swap. | yes (corrects + sharpens) |
+| `per_site_su2_spin_half_theorem_note_2026-05-02` (`retained`) | C3: does not derive the rotation generator on multi-site **states** (operator/adjoint frame only). | The same operator-vs-state boundary, reached **independently** by configuration-space cohomology, is identified as the relocation target. | yes (independent re-derivation of the same boundary) |
+
+No non-matching witness is used as load-bearing proof. The match is a strict
+generalization/sharpening in every row; nowhere is a broader residual substituted
+for the A7 one.
+
+### N5 - Rhetoric audit
+
+Scope-loaded words in this note are audited against the actual computed content:
+
+- **"decouple" / "decoupled"** is the precise group-theoretic statement
+  `SO(2) (Z-writhe)` vs `SU(2)/SO(3) (Z_2 double cover)` with no canonical map
+  carrying writhe onto the torsion swap on `t` -- not a vague "unrelated".
+- **"wrong `Z_2`" / "wrong group"** is exact: the framing datum is `pi_1(SO(2)) =
+  Z` (integer writhe), the swap sign is `pi_1(SO(3)) = Z_2` (order `2`); these are
+  literally different homotopy groups, verified by `Ad(-I) = I_3` vs spin-`1/2`
+  `= -I_2`.
+- **"not foreign" / "relocates"** is scoped to: the residual moves to two
+  **framework-native** objects (`SO(2)` embedding-framing + `SU(2)`
+  matter-attachment), the second of which is the **unaudited** Kawamoto-Smit pin --
+  it is **not** a claim that the residual is dissolved into A1+A2 (verdict is
+  (c)+(b), explicitly **not** (a)).
+
+The note makes **no** "only / last / closes / exhausts / wall-blocked /
+finite-enumeration" claim about the search space. "Cannot supply", "blind to", and
+"orthogonal" are each pinned to the abelian-framing sector on the class `t`, not to
+all possible mechanisms.
+
+### N6 - Partial-closure path scan
+
+Two named, **open**, non-axiom partial-closure paths remain and are not called
+closed or new axioms by this note:
+
+- **(P1) the `SU(2)` matter-attachment** -- identifying the per-site qubit `C^2`
+  with the matter-spinor STATE law via the Kawamoto-Smit reconstruction
+  `Omega(x) = sigma_1^{x_1} sigma_2^{x_2} sigma_3^{x_3}`. This **does** carry the
+  `-1` (R6); it becomes a derivation only if the repo **independently audits and
+  promotes** the relevant `unaudited` Kawamoto-Smit / matter-attachment-reduction
+  rows (and clears any Tier-A admission with explicit user approval). This note
+  neither promotes nor consumes those rows.
+- **(P2) a retained graded-locality / fermion-parity-superselection (CAR)
+  principle** on the second-quantized field (R7), if derived from retained inputs.
+
+Either path could supply the swap sign without overturning anything proved here;
+the present `SO(2)`-vs-`SU(2)` decoupling fact is invariant under both.
+
+### N7 - Steelman
+
+The strongest objection: "the `R^3` embedding **obviously** frames the lattice
+worldlines, so the framing it supplies must be able to see a two-particle
+exchange." The steelman is **granted** its premise -- a transverse plane really
+does exist; the abstract-1-complex scoping of the prior notes was genuinely
+incomplete. It nonetheless fails at the **structure group**: the embedding frames
+the **normal `SO(2)` `2`-plane**, whose framing invariant is the integer writhe
+(`pi_1(SO(2)) = Z`), and the runner proves on a genuine non-planar `Z^3` slab that
+**every** integer cocycle and **every** flat real connection pairs to `0`/`+1`
+with the `2`-torsion exchange class. The exchange sign `-1` is `pi_1(SO(3)) = Z_2`
+double-cover data, visible only in the spin-`1/2` rep -- the matter-attachment, not
+the embedding. So the steelman correctly identifies that a transverse plane exists
+and **mis-identifies its structure group**; granting the premise in full does not
+break the scoped no-go, it sharpens *why* the embedding-framing cannot reach the
+swap.
+
+### N8 - Cross-cycle echo
+
+The recurring failure mode this note guards against is the framework's pattern of
+declaring a "native derivation" of a fermionic/chiral structure (the swap sign,
+the `Z_2` records class) by exhibiting *some* real geometric datum (here the
+embedding's transverse plane) and asserting it must carry the class -- a
+group-blind over-claim. This note refuses that echo by **computing** the group
+(`SO(2)`, `Z`-writhe) and the obstruction (`t` `2`-torsion) rather than asserting
+sufficiency. The convergence is itself a cross-cycle check: the same
+matter-attachment / `SU(2)`-spinor wall is independently hit by the operator-merger
+route (`koide_matter_attachment_reduces_to_ks_audit`), the FS rotation-exchange
+route (`FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY...`), and the on-site
+adjoint-quotient route (`koide_adjoint_map_quotients_spinor_z2`); this note reaches
+it by a **fourth**, disjoint method (configuration-space cohomology + Calugareanu
+framing). Four independent methods landing on the **same** unaudited Kawamoto-Smit
+pin is corroboration that the residual is genuinely localized there, not an
+artifact of one route's framing -- the opposite of a single-expression over-close.
 
 ## 7. Cited authorities
 

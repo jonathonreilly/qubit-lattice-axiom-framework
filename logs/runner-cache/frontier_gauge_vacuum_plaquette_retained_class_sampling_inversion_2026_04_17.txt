@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py
-runner_sha256: 47edfb6c99326fe19a417b43935227d32c2d6a135034092f9635894efa843b63
+runner_sha256: 1c10505013301caca0727840d2ece5d1fb83704185865c133de2100eab644721
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -28,7 +28,7 @@ Underdetermined sub-sampling witness
 
   [PASS] [SUPPORT] Compressed rim-evaluation note already fixes the retained boundary law as Z_beta^env(W)=<K(W), v_beta>
   [PASS] [SUPPORT] Compressed rim-functional uniqueness note already fixes the retained left boundary functional as universal and unique
-  [PASS] [SUPPORT] Scalar-value insufficiency note already records that one scalar sample does not determine the retained coefficient vector
+  [PASS] [SUPPORT] Scalar-value insufficiency note already records that one scalar value cannot determine the full class-sector vector
   [PASS] [THEOREM] A retained finite-sector sample set defines an exact linear system for the retained coefficient vector
          shape(E)=(4, 4)
   [PASS] [THEOREM] A generic full retained sample set is invertible on the witness sector

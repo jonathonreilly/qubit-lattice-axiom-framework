@@ -1,0 +1,23 @@
+slug: gauge-sampling-inversion-repair-20260604
+branch: physics-loop/gauge-sampling-inversion-repair-20260604
+base: origin/main
+started: 2026-06-04
+target_status: exact-support
+active_route: scalar-value support-check sync
+hard_residual: >
+  The audited conditional row requests updating the sampling-inversion runner's
+  scalar support check to match the repaired scalar-value insufficiency note
+  and refreshing the runner cache.
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md
+  - scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.txt
+  - .claude/science/physics-loops/gauge-sampling-inversion-repair-20260604/
+trace_gate_classification: direct_blocker_closure
+current_surface_status: exact-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: >
+  Independent reviewer/auditor should re-audit the same finite-inversion row
+  after the runner support check and cache are synchronized with the repaired
+  scalar-value insufficiency source note.

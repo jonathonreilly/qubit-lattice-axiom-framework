@@ -53,7 +53,7 @@ CERTIFICATES:
      unknown) polynomial-coefficient ODE of order R and coefficient
      degree D, a candidate operator L of order r and coefficient degree
      d satisfies "L . f = 0 identically" if and only if [beta^N] L . f = 0
-     for N = 0, 1, ..., M_0, where M_0 = (r + 1)(d + 1) + R + d. This
+     for N = 0, 1, ..., M_0, where M_0 = (r + 1)(d + 1) + R + D. This
      is the standard finite-window-sufficient principle for D-finite
      power-series identities (Bostan, "Algorithms for D-finite power
      series", Lecture Notes 2010; Salvy-Zimmermann 1994).
@@ -412,7 +412,7 @@ def certificate_T3_bostan_schost_threshold(
     operator L of order r and coefficient degree d satisfies
     "L . f = 0 identically" if and only if
         [beta^N] L . f = 0    for N = 0, 1, ..., M_0
-    where M_0 = (r + 1)(d + 1) + R + d (a sufficient threshold; see
+    where M_0 = (r + 1)(d + 1) + R + D (a sufficient threshold; see
     Bostan 2010 lecture notes; Salvy-Zimmermann 1994; Mallinger 1996
     thesis Sec. 2.2).
 

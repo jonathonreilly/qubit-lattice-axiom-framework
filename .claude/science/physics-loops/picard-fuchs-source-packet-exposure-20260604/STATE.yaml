@@ -1,0 +1,34 @@
+loop_slug: picard-fuchs-source-packet-exposure-20260604
+branch: physics-loop/picard-fuchs-source-packet-exposure-20260604
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2613
+base_ref: origin/main
+target_claim_id: plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+blocker_text: "missing_bridge_theorem: provide a non-circular all-degree creative-telescoping/minimal-annihilator certificate, or a theorem bounding any lower-order annihilator's coefficient degree, together with complete untruncated primary and helper runner sources."
+files_touched:
+  - docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md
+  - scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
+  - scripts/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.py
+  - logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt
+  - logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.txt
+  - logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.txt
+  - logs/runner-cache/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.txt
+  - outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json
+  - outputs/su3_v1_picard_fuchs_minimality_2026_05_06.json
+  - outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json
+  - outputs/su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.json
+open_imports:
+  - Independent audit must decide whether the all-order certificate is enough for this row.
+  - Scope remains V=1 single-plaquette only.
+review_findings:
+  local_disposition: exact-support_reaudit_ready
+  retained_grade_proposal_allowed: false
+next_exact_action: "Continue scanning conditional rows for the next source-side unblock."
+stop_condition: "Only stop after refreshed backlog has no tractable source-side blockers."

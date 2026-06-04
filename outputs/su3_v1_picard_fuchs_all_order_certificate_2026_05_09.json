@@ -14,7 +14,7 @@
         "B0 B2^2": 6
       },
       "D0_holonomic_annihilator_order": 20,
-      "construction_elapsed_sec": 61.62,
+      "construction_elapsed_sec": 27.56,
       "safe_residual_degree_window": 58,
       "holonomic_annihilator_kills_closed_form_to_safe_degree": true
     }

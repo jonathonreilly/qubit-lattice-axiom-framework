@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/koide_signed_readout_is_not_chirality.py
+runner_sha256: 44cf1a9ad4cd37930a5b383143737867f91156dfc96c695a314c002c746504fa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.87
+status: ok
+----- stdout -----
+==============================================================================
+PART 0 -- The two operator classes on the generation R^3 factor
+==============================================================================
+[PASS] R^3 = I
+[PASS] Gamma_chi^2 = I
+[PASS] Gamma_chi spectrum = {+1,-1,-1} (with multiplicity)  -- got [-1, -1, 1]
+[PASS] Gamma_chi is a circulant (-1/3,2/3,2/3)
+[PASS] [Gamma_chi, R] = 0 (Gamma_chi in circulant algebra)
+
+==============================================================================
+PART 1 -- Native circulant operator H_circ = aI + bC + bbar C^2 (= iD), COMMUTES with Gamma_chi
+  Sub-question (2): does the native operator anticommute, or commute?
+==============================================================================
+[PASS] H_circ is Hermitian
+[PASS] [H_circ, Gamma_chi] = 0  (native operator COMMUTES with chirality grading)
+[PASS] {H_circ, Gamma_chi} != 0  (native operator does NOT anticommute)
+
+  -- signed spectrum of the native operator (parametrize a=1, |b|=sqrt(r)) --
+     r=1/2, theta=0: spectrum = [2.4142, 0.2929, 0.2929]   has_negative = False
+     r=1/2, theta=0.9 (rad): spectrum = [1.8791, -0.3989, 1.5198]   has_negative = True
+     r=1/2, theta=pi/3: spectrum = [1.7071, -0.4142, 1.7071]   has_negative = True
+[PASS] native signed spectrum has a NEGATIVE eigenvalue at r=1/2, theta=0.9 (signable)  -- [1.879, -0.399, 1.52]
+
+==============================================================================
+PART 2 -- EIGENVALUE (Brannen/signed det_R) readout of the COMMUTING circulant -> Q=2/3 at r=1/2
+==============================================================================
+[PASS] Q(signed eigenvalue readout) = (1+2r)/3, theta-independent  -- Q(signed) = 2*r/3 + 1/3
+[PASS] Q(signed) at r=1/2 = 2/3 (comparator match)  -- Q(signed)|_{r=1/2} = 2/3
+[PASS] Q(singular-value) at theta=0 = 2/3 (sign-homogeneous)  -- 2/3
+[PASS] Q(singular-value) at theta=pi/3 != 2/3 (sign flip)  -- 54/49 - 24*sqrt(2)/49
+[PASS] Q(singular-value) < 2/3 at theta=pi/3  -- 0.409364785776443
+[PASS] Q(singular-value) theta-DEPENDENT (pi/3 != pi/2)  -- pi/3->0.4094, pi/2->0.5042
+
+==============================================================================
+PART 3 -- The ANTICOMMUTING operator H_anti: spectrum {-l,0,+l}, EIGENVALUE readout -> Q=infinity
+  Sub-question (1): does anticommutation force the Brannen eigenvalue sign pattern giving 2/3?
+==============================================================================
+[PASS] H_anti Hermitian
+[PASS] {H_anti, Gamma_chi} = 0  (genuinely anticommutes)
+[PASS] [H_anti, Gamma_chi] != 0  (does NOT commute -> NOT a circulant)
+[PASS] [H_anti, R] != 0  (anticommuting op is NOT Z3-equivariant / not circulant)
+   H_anti spectrum (h=(1,-1,0)) = [-sqrt(6)/3, 0, sqrt(6)/3]
+[PASS] H_anti spectrum is sign-symmetric {-l,0,+l} (sum = 0)  -- sum = 0
+[PASS] EIGENVALUE readout of anticommuting H gives Q = infinity (denominator (sum l)^2 = 0)  -- sum l = 0, sum l^2 = 4/3  => Q = (nonzero)/0
+[PASS] EIGENVECTOR readout of anticommuting H: nonzero-eigval eigenvectors give Q(v)=2/3  -- [('-sqrt(6)/3', '2/3'), ('sqrt(6)/3', '2/3')]
+
+==============================================================================
+PART 4 -- THE CORE DISCRIMINATOR: signed-eigenvalue readout (giving 2/3) lives on the
+           COMMUTING circulant; anticommutation gives 2/3 only via EIGENVECTORS, and its
+           own eigenVALUE readout is infinite, NOT the Brannen 2/3.
+           => 'signed eigenvalue readout = chirality (anticommutation)' is FALSE.
+==============================================================================
+[PASS] A: the Q(signed-eigenvalue)=2/3 operator (circulant) COMMUTES with Gamma_chi
+[PASS] B: the anticommuting operator's EIGENVALUE readout is Q=infinity, NOT 2/3
+[PASS] real Hermitian circulant requires b=c (symmetric)
+[PASS] C: NO nonzero Hermitian circulant anticommutes with Gamma_chi (comm(R) ∩ anticomm(Gamma_chi) = {0}, retained no-go)  -- Brannen-Q circulant class and anticommuting class are DISJOINT except at 0
+
+  => The signed-eigenvalue Brannen readout (Q=2/3 at r=1/2) is the readout of the
+     operator that COMMUTES with Gamma_chi. Chirality (anticommutation) is a DIFFERENT,
+     same-factor operator-class mechanism. Brannen signed-Q readout != chirality.
+
+==============================================================================
+PART 5 -- Does the SIGN PATTERN of the commuting circulant carry Gamma_chi-grading info?
+  (steelman: maybe #negative eigenvalues is a chirality index even without anticommutation)
+==============================================================================
+   theta=pi   (grade, sign of lambda) per character k=0,1,2: [(1, -1), (-1, 1), (-1, 1)]
+   theta=0.9  (grade, sign of lambda) per character k=0,1,2: [(1, 1), (-1, -1), (-1, 1)]
+[PASS] sign of an eigenvalue is NOT locked to its Gamma_chi grade (singlet negative at theta=pi; doublet member negative at theta=0.9)  -- the negative sign roams across grades as theta varies -> not a chirality index
+[PASS] signed readout Q=2/3 is theta-INDEPENDENT, so it carries NO grade-resolved sign data
+
+==============================================================================
+PART 6 -- Sub-question (3): is 'feed signed lambda_k, not |lambda_k|' FORCED by H=iD Hermitian,
+           or an unforced readout choice?  (the derive-vs-posit test)
+==============================================================================
+[PASS] both signed and singular readouts are real-valued maps of the SAME real Hermitian spectrum
+[PASS] masses m_k=lambda_k^2 identical for signed and singular readouts (Hermiticity fixes masses, NOT the sqrt sign)  -- |signed-readout m - singular-readout m| = 0.00e+00
+[PASS] yet Q differs: Q(signed)=2/3 vs Q(singular)<2/3 -- the sqrt-sign is an EXTRA, value-changing choice  -- Q(signed)=0.666667, Q(singular)=0.415985
+
+  => Hermiticity (iD) makes a signed real spectrum available (real eigenvalues
+     carry signs) and comparator-compatible. But Hermiticity does NOT by itself
+     FORCE the map sqrt(m_k) := lambda_k over sqrt(m_k) := |lambda_k|; that selection
+     ('use det_R / the signed eigenvalue') is an extra identification = the readout posit.
+     This matches the unaudited koide_readout_lane_demarcation 'native readout is signed'
+     claim being an internal identification, not yet a retained theorem.
+
+==============================================================================
+PART 7 -- Cross-check: the 4D chirality analogy is the ANTICOMMUTING (massless) case, NOT
+           the signed-massive-spectrum case.
+==============================================================================
+[PASS] 4D-analog chirality (anticommuting) = {-l,0,+l} pattern = the Q=infinity eigenvalue case, NOT the signed Q=2/3 case
+[PASS] circulant Q=2/3 operator is the Gamma_chi-COMMUTING (non-chiral on this factor)
+
+==============================================================================
+SCORECARD: PASS=33 FAIL=0
+==============================================================================
+
+----- stderr -----
+

@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 413,
     "high": 496,
-    "leaf": 1179,
+    "leaf": 1180,
     "medium": 681
   },
   "flagship_signal_used": false,
-  "node_count": 2769,
+  "node_count": 2770,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -43,8 +43,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 42.666,
-      "transitive_descendants": 1148
+      "load_bearing_score": 43.167,
+      "transitive_descendants": 1149
     },
     {
       "claim_id": "anomaly_forces_time_theorem",

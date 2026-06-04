@@ -1,0 +1,177 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_record_axiom_invariance_2026_06_04.py
+runner_sha256: 6460741e382c5c89282adca89827537ad4b62e6b0ffdf0507dea1b10348c4e30
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+DM-Neutrino K00 Bosonic-Normalization Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-dm-neutrino-k00-invariance/wt
+Parent note: /private/tmp/cl3-dm-neutrino-k00-invariance/wt/docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md
+Companion source note: docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's runner-checked algebraic content
+      is invariant under the 2026-06-04 Record-axiom adoption
+      (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+Note: this companion does NOT close the parent's two named conditional
+      load-bearing upstream premises (observable-principle premise;
+      source-amplitude premise). Those remain conditional exactly as
+      in the prior `audited_renaming` verdict and the parent's 2026-05-16
+      honest-demotion edit.
+
+========================================================================
+BLOCK 1: K00 closed-form polynomial = Tr(H F00), F00 = J3/3
+========================================================================
+  Two random numerical fills of the breaking triplet (delta, rho, gamma).
+  PASS k00_a_matches_closed_form :: K00 = 1.966666666667
+  PASS k00_b_matches_closed_form :: K00 = 1.966666666667
+  PASS k00_a_matches_frobenius_pairing :: Tr(H F00) = 1.966666666667
+  PASS k00_b_matches_frobenius_pairing :: Tr(H F00) = 1.966666666667
+
+========================================================================
+BLOCK 2: Rank-one projector spectra of F00 and FROW
+========================================================================
+  PASS F00_spectrum_0_0_1 :: eig(F00) = [0. 0. 1.]
+  PASS FROW_spectrum_0_1 :: eig(FROW) = [0. 1.]
+  PASS F00_is_rank_one_projector :: F00^2 = F00 within 1e-12
+  PASS FROW_is_rank_one_projector :: FROW^2 = FROW within 1e-12
+
+========================================================================
+BLOCK 3: F00 and FROW share nonzero spectrum {+1}
+========================================================================
+  PASS F00_has_exactly_one_nonzero_eigenvalue :: nonzero eig(F00) = [1.0000000000000002]
+  PASS FROW_has_exactly_one_nonzero_eigenvalue :: nonzero eig(FROW) = [1.0]
+  PASS isospectral_nonzero_spectra_equal :: both nonzero eigenvalues = +1
+
+========================================================================
+BLOCK 4: Identical log|det| response of F00 and FROW across 8 source values
+========================================================================
+  Note: the log|det| evaluator is the parent's observable-principle
+        premise (imported conditional input), NOT the Record axiom.
+        This block evaluates the numerical equality; the auditable
+        observation is that the two evaluations agree, not that
+        the observable principle holds.
+    j=-0.3500 -> |target - source| = 3.33e-16
+    j=-0.2500 -> |target - source| = 0.00e+00
+    j=-0.1500 -> |target - source| = 4.44e-16
+    j=-0.0500 -> |target - source| = 2.22e-16
+    j=+0.0500 -> |target - source| = 2.22e-16
+    j=+0.1500 -> |target - source| = 2.22e-16
+    j=+0.2500 -> |target - source| = 2.22e-16
+    j=+0.3500 -> |target - source| = 6.66e-16
+  PASS log_det_match_all_8_samples_machine_precision :: max diff over 8 samples = 6.66e-16
+
+========================================================================
+BLOCK 5: Coefficient-law arithmetic K00 = 2 tau_+
+========================================================================
+  Auditable observation: arithmetic only.
+  The coefficient law K00 = 2 tau_+ itself is the parent's
+  observable-principle premise (imported conditional input),
+  NOT a Record-axiom statement.
+  PASS k00_eq_2_tau_plus_linear_arithmetic :: max |K00 - 2 tau_+| over 3 samples = 0.00e+00
+
+========================================================================
+BLOCK 6: tau_+ = tau_E + tau_T = 1; K00 = 2 arithmetic
+========================================================================
+  Auditable observation: arithmetic on the parent's hard-coded source
+  amplitudes. The source-amplitude branch values tau_E = tau_T = 1/2
+  are the parent's source-amplitude premise (imported conditional
+  input), NOT a Record-axiom statement.
+  PASS tau_E_equals_one_half :: tau_E = 0.500000
+  PASS tau_T_equals_one_half :: tau_T = 0.500000
+  PASS tau_plus_equals_one :: tau_+ = 1.000000
+  PASS k00_equals_two :: K00 = 2.000000
+
+========================================================================
+BLOCK 7: K00 independence from (delta, rho, gamma)
+========================================================================
+  PASS k00_independent_sample_0 :: (d,r,g)=(-0.712,-0.913,+0.233) K00 = 1.966666666667
+  PASS k00_independent_sample_1 :: (d,r,g)=(+0.351,-0.005,-0.902) K00 = 1.966666666667
+  PASS k00_independent_sample_2 :: (d,r,g)=(-0.402,+0.664,-0.030) K00 = 1.966666666667
+  PASS k00_independent_sample_3 :: (d,r,g)=(+0.437,-0.729,-0.678) K00 = 1.966666666667
+  PASS k00_independent_sample_4 :: (d,r,g)=(+0.987,+0.490,-0.146) K00 = 1.966666666667
+  PASS k00_independent_sample_5 :: (d,r,g)=(+0.074,-0.522,-0.399) K00 = 1.966666666667
+  PASS k00_independent_sample_6 :: (d,r,g)=(-0.109,-0.729,-0.368) K00 = 1.966666666667
+  PASS k00_independent_sample_7 :: (d,r,g)=(+0.508,-0.882,+0.561) K00 = 1.966666666667
+  PASS k00_independence_max_diff_machine_precision :: max diff over 8 samples = 4.44e-16
+
+========================================================================
+BLOCK 8: Heavy-basis [0,0] entry matches closed-form K00 polynomial
+========================================================================
+  PASS mass_basis_reconstruction_sample_0 :: heavy[0,0] = 1.152231702805, poly = 1.152231702805
+  PASS mass_basis_reconstruction_sample_1 :: heavy[0,0] = 0.207658995081, poly = 0.207658995081
+  PASS mass_basis_reconstruction_sample_2 :: heavy[0,0] = 2.949998891806, poly = 2.949998891806
+  PASS mass_basis_reconstruction_sample_3 :: heavy[0,0] = 1.889244803458, poly = 1.889244803458
+  PASS mass_basis_reconstruction_sample_4 :: heavy[0,0] = 0.372445280107, poly = 0.372445280107
+
+========================================================================
+BLOCK 9: Parent note Record-axiom usage scan (load-bearing section)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-dm-neutrino-k00-invariance/wt/docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md
+  PASS load_bearing_section_start_found :: start index = 5421
+  PASS load_bearing_section_end_found :: end index = 7228
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+  PASS quantum_lattice_content_present_in_load_bearing_section :: matches >= 3 of 5 anchor tokens: ['J3', 'J2', 'F00', 'K00']
+
+========================================================================
+BLOCK 10: Record-axiom counterfactual identical numeric output
+========================================================================
+  PASS counterfactual_k00_direct_from_kernel_identical :: with=1.966666666666667 without=1.966666666666667 diff=0.00e+00
+  PASS counterfactual_log_det_target_F00_identical :: with=0.114566564565549 without=0.114566564565549 diff=0.00e+00
+  PASS counterfactual_log_det_source_FROW_identical :: with=0.114566564565549 without=0.114566564565549 diff=0.00e+00
+  PASS counterfactual_k00_eq_2_tau_plus_identical :: with=2.000000000000000 without=2.000000000000000 diff=0.00e+00
+  PASS counterfactual_all_four_identical :: all four scopes match within machine precision
+
+========================================================================
+BLOCK 11: Quantum and Lattice content preserved across 2026-05-20 and 2026-06-04 minimal-axioms memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-dm-neutrino-k00-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-dm-neutrino-k00-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_local_algebra_content :: historical qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_log_det_source_action_observable :: Record axiom's own scope statement excludes the bridges the parent's conditional premises supply
+
+========================================================================
+BLOCK 12: Parent-runner hard-coded numerical inputs cross-check (no Record-axiom dependency)
+========================================================================
+  PASS parent_runner_present :: /private/tmp/cl3-dm-neutrino-k00-invariance/wt/scripts/frontier_dm_neutrino_k00_bosonic_normalization_theorem.py
+  PASS parent_runner_hard_codes_tau_E_one_half :: parent runner Part 4: tau_E = 0.5
+  PASS parent_runner_hard_codes_tau_T_one_half :: parent runner Part 4: tau_T = 0.5
+  PASS parent_runner_hard_codes_mass_1_73 :: parent runner Part 3: mass = 1.73
+  PASS parent_runner_hard_codes_tau_plus_one :: parent runner Part 3: tau_plus = 1.0
+  PASS parent_runner_uses_k00_eq_2_tau_plus_formula :: parent runner: k00 = 2.0 * tau_plus
+  PASS zero_record_axiom_tokens_in_parent_runner :: matches = []
+
+========================================================================
+TOTAL PASS: 56
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The runner-checked algebraic content of DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md
+  uses ONLY Lattice + Quantum axiom content plus standard finite-
+  dimensional matrix algebra (rank-one projector spectra, log|det|
+  evaluation on small numerical matrices, linear arithmetic).
+  The Record axiom (additive scalar record-readout functional) is
+  neither used nor invoked. Numeric output is identical under both
+  'Record axiom asserted' and 'Record axiom not asserted' outer
+  scopes. This runner does not re-apply the prior audit verdict;
+  it records that the algebra checked here is unchanged by
+  the 2026-06-04 axiom-set adoption.
+
+The parent's two conditional load-bearing upstream premises remain
+conditional load-bearing premises; the audit lane decides whether
+to honor or re-test the prior `audited_renaming` verdict on the new
+minimal_axioms premise hash.
+
+----- stderr -----
+

@@ -169,35 +169,144 @@ operations are not the missing source; the source requires a frame import.
 
 ---
 
-## 6. Scope and what this does NOT close (no-go discipline)
+## 6. No-go discipline gate (N1–N8)
 
-- **N1 alternative routes (open):** frame-broken constructions; momentum-forced
-  carriers (`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31`); dynamical /
-  emergent-time selection; operator-algebraic sector-factorization on the
-  framework's `M₂(ℂ)`-per-site + `ℝ[C₃]` algebra (the FIND_J "next lever"); larger
-  Hilbert-space / staggered-taste routes. **None addressed here.**
-- **N2 wall independence:** the wall is exactly "frame-free Spin(3)-equivariance of
-  an *ambient Clifford operation*." Drop equivariance (choose a frame) and an
-  anticommuting operator exists (§3.3) — the no-go does not assert independence from
-  that frame choice; it *names it* as the import.
-- **N3 hidden walls:** no physical species/PMNS/mass/closure reading consumed;
-  Q=2/3 is a check target only.
-- **N4 residual matching:** the residual is the `[1,1,1]`-axis + free-`h` frame
-  import = the `r=1/2` pin, identical to the residual on main.
-- **N5 rhetoric:** "no frame-free ambient Clifford source" — NOT "no source"; NOT
-  "route closed." Frame-broken/dynamical routes remain live.
-- **N6 partial closure:** Hodge/pseudoscalar and even-subalgebra structure are
-  *tested and found scalar* on grade-1; they remain available only via a frame.
-- **N7 steelman:** a reviewer may object that a later framework structure could
-  *canonically* select the `[1,1,1]` axis and an `h` (e.g. from the lattice cube
-  body-diagonal or a momentum eigendirection). That would defeat this narrow no-go
-  by supplying the frame non-arbitrarily — and is exactly the open route, not
-  touched here.
-- **N8 cross-cycle echo:** consistent with the adjoint-map quotient note (the
-  natural equivariant map kills the relevant Z₂ / cannot transport the structure
-  without a hand-chosen frame) and the binary-octahedral spinor-sign note (central
-  element acts trivially on vector reps). This is the *grade-endomorphism* version
-  of the same equivariance obstruction.
+**Status:** PASS for the narrow *frame-free ambient Cl(3,0) operation* source class
+only. The claim being closed is not "no operator sources the chiral grading" and is
+not "Q=2/3 is excluded" — Q=1 (non-chiral default) and Q=2/3 (chiral) coexist as
+different operator classes. It is the single structural statement that **no
+Spin(3)/Pin(3)-equivariant ambient Clifford datum** (grade involution, reversion,
+Clifford conjugation, ω-conjugation, Hodge star, or `Cl⁺≅ℍ` adjoint) induces a
+grade-1 endomorphism that anticommutes with `Γ_χ`; the anticommuting circulance-
+breaking operator that gives Q=2/3 exists but needs a *chosen* `[1,1,1]` axis and a
+*free* doublet `h` — a non-equivariant frame import, not a Clifford-forced map.
+
+### N1 — Alternative route enumeration
+
+| route | what it would attempt | why it fails for this scoped no-go | marker |
+|---|---|---|---|
+| Grade-sign route (α, reversion, Clifford conjugation, ω-conjugation) | Source the anticommutation from one of the four grade-graded involutions of Cl(3,0). | Each acts on the *single* grade-1 space as a scalar `±I₃` (§3.1); `{cI,Γ_χ}=2cΓ_χ≠0` for `c≠0` — a scalar cannot anticommute. | CLOSED (this note) |
+| Hodge / pseudoscalar route `ω·` | Use the "unexploited" pseudoscalar structure to map `σ_k↦b_k` and supply a non-scalar grade-1 operator. | The star is the **index identity** on the su(2) index (equivariant iso of the two vector copies), hence scalar; no anticommutation (§3.1). | CLOSED (this note) |
+| Even-subalgebra `Cl⁺(3,0)≅ℍ` adjoint route | Conjugate grade-1 by the unit quaternion `U_gc=−i(σ₁+σ₂+σ₃)/√3` (the `Γ_χ` quaternion) to build the grading. | Conjugation by `U_gc` reproduces `Γ_χ` *itself* (circulant) — it **commutes** with `Γ_χ`; falls under the retained `comm(R)∩anticomm(Γ_χ)={0}` z3 wall. | CLOSED (this note) |
+| Bivector-adjoint route `ad_{b_k}=[b_k,·]` | Use the antisymmetric rotation generators as the anticommuting datum. | The `[1,1,1]`-axis generator rotates *about* `Γ_χ`'s own axis ⟹ commutes; generic `{antisymmetric, symmetric Γ_χ}≠0` but is a rotation generator, not an involutive grading. | CLOSED (this note) |
+| One-vector equivariant build `aI+b·vv^T` | Build the operator equivariantly from the single available axis `v=[1,1,1]`. | Any function of `vv^T` commutes with `Γ_χ=2vv^T−I` (§3.3, verified); produces no anticommuting datum. | CLOSED (this note) |
+| Chosen-frame L4 family `H=(1/3)(𝟙h^T+h𝟙^T)`, `Σh=0` | Supply the anticommuting, circulance-breaking operator that gives Q=2/3. | It **works** — but references a *chosen* `[1,1,1]` axis **and** a *free* doublet `h` (2-real-param), neither forced by Cl(3,0). This is the import, not a closure. | OPEN (import) |
+| Frame-broken / momentum-forced / dynamical / sector-factorization routes | Supply the `[1,1,1]` axis and `h` *canonically* from A2 lattice geometry (Z³ cube body-diagonal) or an emergent momentum eigendirection. | Not addressed here. The Schur obstruction is *equivariance*; a canonical frame would defeat this narrow no-go by construction. | OPEN (untouched) |
+
+The combinatorial space of future frame-broken / dynamical constructions is not
+exhaustive in principle. Within the *frame-free ambient Clifford* class tested here,
+every named datum lands on a scalar or a `Γ_χ`-commuting generator; the only
+anticommuting datum (L4) is reached solely by adding an external frame.
+
+### N2 — Wall-independence audit
+
+The collapsed wall set for this no-go has **one** wall: *frame-free Spin(3)/Pin(3)-
+equivariance of an ambient Clifford operation*, enforced by Schur (§3.2). The seven
+named operations of §3.1 are not seven independent walls — they are alternate
+instances funnelling through the single equivariance ⟹ scalar/rotation-generator
+fact (the 1-dimensional commutant `[M,L_k]=0 ⟹ M=cI₃`). The retained z3 wall
+`koide_z3_equivariant_anticommuting_no_go` (`comm(R)∩anticomm(Γ_χ)={0}`) is the
+*C₃-scoped* sub-case; this note's Spin(3)-equivariance is **strictly stronger**
+(Spin(3) ⊃ C₃), so the present negative does not load-bear on the z3 wall and would
+survive even if the z3 wall were re-scoped. Dropping equivariance (choosing a frame)
+makes an anticommuting operator exist (§3.3); the no-go does **not** assert
+independence from that frame choice — it *names* the frame as the import.
+
+### N3 — Hidden-wall scan (explicit load-bearing inputs)
+
+The words "ambient", "frame-free", "natural", and "Clifford" are **not** used as
+hidden retained inputs for the negative. The load-bearing inputs are explicit and
+exhausted by:
+
+1. **A1** — per-site qubit `ℂ²=Cl(3,0)`, `e_i=σ_i`, with grade-1 = the real-
+   irreducible vector/spin-1 rep of Spin(3).
+2. **Schur's lemma** on a real-irreducible compact-type rep ⟹ commutant `=ℝ`
+   (proved *exactly* in the runner by solving `[M,L_k]=0`, not cited).
+3. The explicit `Γ_χ=(2/3)J−I` matrix and `{cI,Γ_χ}=2cΓ_χ`.
+4. The bridge identification grade-1 ≙ generation triplet — adopted **only as a test
+   hypothesis** (`KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE`, bounded), *never* asserted.
+
+No physical species/PMNS/mass/charged-lepton/closure reading is consumed. `Q=2/3`
+enters **only** as a downstream check target (non-circular: the forward content is
+the negative + the existence-via-frame). The retained L4 derivation theorem is cited
+for the existence direction only, not to inject Q=2/3 into the proof of the negative.
+
+### N4 — Residual matching
+
+| cited witness | residual attacked | residual here | match? |
+|---|---|---|---|
+| `KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NO_GO_2026-06-02` | the only z-carrying glue is a hand-chosen non-equivariant `spinor-axis↔[1,1,1]` identification (a posited import, not reality-canonical). | the only anticommuting datum needs a hand-chosen `[1,1,1]` axis + free `h` (non-equivariant frame import). | **yes** (same `[1,1,1]`-frame import) |
+| `FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02` | `r=1/2` is the single named block-count *measure* input; framework defaults to det_R/Q=1. | the L4 frame choice reproduces Q=2/3 ⟺ `r=1/2`, which is *permitted not forced*; the negative does not exclude the Q=1 default. | **yes** (same `r=1/2` pin) |
+| `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` (retained_bounded) | C₃-circulant operators cannot anticommute with `Γ_χ`. | Spin(3)-equivariant ambient operators cannot anticommute with `Γ_χ` (the super-set wall). | partial (strict super-set, not identity) |
+| `koide_anticommuting_operator_derivation_theorem_2026-05-10` (retained) | positive: `{H,Γ_χ}=0, Hv=λv, λ≠0 ⟹ Q=2/3`. | used only for the *existence* direction (§3.3), to show the L4 datum is reachable **with** a frame. | no (positive input, not a residual) |
+
+The residual closed by this note is exactly the `[1,1,1]`-axis + free-`h` frame
+import = the `r=1/2` pin **already on `origin/main`**; no new residual is created and
+no non-matching witness is used as load-bearing proof of the negative.
+
+### N5 — Rhetoric audit
+
+The three strong phrases are scoped at point of use:
+
+- **"no ambient operation sources [the chiral grading]"** — scoped to the *frame-
+  free / Spin(3)-equivariant* ambient Cl(3,0) operations enumerated in §3.1; it does
+  **not** claim no operator whatsoever sources it (the L4 operator does, with a
+  frame), and does **not** claim a route is closed.
+- **"Schur scalar"** — scoped to the *real-irreducible vector rep* grade-1; the
+  scalar verdict is `M=cI₃` from the 1-dimensional commutant, **not** a claim that
+  every Cl(3,0) map is scalar (frame-broken maps are not equivariant and escape
+  Schur).
+- **"cannot anticommute"** — scoped to *nonzero scalars vs the nonzero `Γ_χ`*
+  (`{cI,Γ_χ}=2cΓ_χ≠0`); it is a statement about the scalar image of the equivariant
+  operations, **not** about the whole `End(ℝ³)` (which of course contains
+  anticommuting elements — the L4 family).
+
+Crucially the note does **not** claim Q=2/3 is excluded or that the framework picks
+Q=1: it states Q=1 and Q=2/3 **coexist** as non-chiral vs chiral operator classes,
+and the no-go only removes the *ambient-Clifford* sourcing of the chiral one. No
+"closes the route", "only route", "exhausted", or finite-enumeration language is
+used; frame-broken / dynamical routes are repeatedly affirmed live.
+
+### N6 — Partial-closure path scan
+
+The Hodge/pseudoscalar structure and the even-subalgebra `Cl⁺≅ℍ` adjoint were
+**tested and found scalar / `Γ_χ`-commuting** on grade-1 (§3.1, §3.3) — this is a
+genuine partial result (it removes the two most-cited "unexploited ambient
+structure" candidates), not a deferral. Two non-axiom partial-closure paths remain
+open and are **not** called new axioms: (i) a *canonical-frame* construction in which
+A2's Z³ lattice body-diagonal `[1,1,1]` supplies the axis non-arbitrarily, and (ii) a
+momentum/dynamics eigendirection supplying both axis and `h` (the FIND_J / momentum-
+forced-carrier "next lever"). Each *adds* a frame the ambient algebra cannot; neither
+is the *frame-free ambient* derivation closed here.
+
+### N7 — Steelman
+
+The strongest objection: a *later* framework structure could **canonically** select
+the `[1,1,1]` axis and a doublet `h` — e.g. the Z³ cube body-diagonal is a literal
+`[1,1,1]`, or an emergent momentum eigendirection could fix both — making the §3.3
+"frame import" a *derived selection* rather than a hand choice. If such a canonical,
+non-arbitrary frame is exhibited, this narrow no-go is **defeated by construction**:
+it never claims the frame is unsupplyable, only that *the ambient Clifford algebra
+of A1, acting equivariantly, does not supply it*. This steelman blocks any broader
+reading ("the grading can never be sourced") and is precisely the open route (N1 row
+7, N6 path i–ii) — untouched here. It does not break the scoped negative, because
+the Schur computation forecloses the *equivariant ambient* class regardless of
+whether a frame is later supplied elsewhere.
+
+### N8 — Cross-cycle echo
+
+Prior negative-claim overclaims in this lane failed by testing one operator and
+declaring the whole chirality gate closed. This note avoids that echo by (a) keeping
+the claim boundary at the *frame-free ambient Clifford* class and (b) cross-checking
+against two independent cycles that landed the **same** residual:
+`KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2` (the natural rotation-equivariant Bloch/Hopf
+map *quotients* the spinor Z₂; the only z-glue is a hand-chosen `[1,1,1]` frame
+import) and `BINARY_OCTAHEDRAL_DISCRETE_SPINOR_SIGN` (the central spinor element acts
+**+1** on integer-spin/vector reps). The present result is the *grade-endomorphism*
+instance of the identical equivariance obstruction: equivariance kills the relevant
+structure on the vector rep, and only a non-equivariant frame restores it. Three
+independent angles (adjoint map, spinor sign, grade endomorphism) converge on the
+one `[1,1,1]`-axis + `r=1/2` import — strengthening, not echoing, the narrow verdict.
 
 ---
 

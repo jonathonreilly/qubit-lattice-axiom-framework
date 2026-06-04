@@ -185,3 +185,34 @@ next_exact_action: >
   substep-4 mass gate (does it make the generation Yukawa fluctuation chiral -> r=1/2 derived?) is the
   natural NEXT campaign -- MAJOR, hold for owner greenlight. Do NOT force-attack the gate overnight. Wake
   periodically to check reviewer status; otherwise the campaign's clean-science arc is COMPLETE.
+
+# ---- checkpoint 6 (2026-06-04): FRONTIER CORRECTION ----
+cycle_count: 7
+block_count: 6
+owner_directive: "do not assume the framework has all the science - do frontier science"
+cycle7_result: >
+  Did real frontier science (2 web/literature research agents + my sympy+numpy) and REFUTED my own
+  block-4/5 lead. Block 6 (#2624): the fluctuation MODULUS that sets magnitude r is Tr log(M^dag M) ~ |b|^2
+  (Coleman-Weinberg), doublet Hessian RANK 2 -> 2 real modes -> r=1 ROBUSTLY, chiral/Kahler-Dirac included
+  (Alvarez-Gaume: Re W = 1/2 Dirac modulus + Im W = eta phase). Chirality moves ONLY the determinant PHASE
+  (eta-invariant) -> delta=arg(b), NOT the magnitude r. Holomorphy (r=1/2) needs a SUSY superpotential the
+  framework LACKS (Seiberg). So blocks 4/5 'chiral->r=1/2' REFUTED. Blocks 1-3 STRENGTHENED (r=1 now real-
+  QFT-backed -> partial falsification ROBUST). Literature (Agent 1): NO mechanism derives Q=2/3 in 45 yrs;
+  |b|/a=1/sqrt2 'not from first principles' (Rivero-Gsponer); obstacle=pole-vs-running (Koide 2018); Sumino
+  only PROTECTS + needs continuous U(3) family symmetry the framework (discrete C3) LACKS. THE FRAMEWORK
+  DOES NOT SOLVE KOIDE.
+shipped_block_6: {pr: 2624, runner_pass: "5/5", role: "frontier correction, retracts 4/5"}
+koide_problem_splits:
+  magnitude_r: "set by determinant MODULUS -> r=1 robustly; r=1/2 is the 45-yr open problem (vacuum
+    alignment or Sumino protection); framework gives r=1 -> genuine tension/partial-falsification"
+  phase_delta: "set by determinant PHASE = eta-invariant; the chiral structure's true home; NEW untried
+    direction (does the framework's eta fix delta~0.222 rad?)"
+campaign_status: "FRONTIER-CORRECTED. Framework does NOT solve Koide (robust, real-QFT-backed). My chiral
+  lead refuted. 7 PRs. Two genuine open directions: phase-delta via eta (tractable-ish, new); magnitude
+  r=1/2 (45-yr open, needs new physics / framework extension)."
+next_exact_action: >
+  Frontier mode (owner directive). Options: (i) phase-delta via the eta-invariant/chiral determinant phase
+  -- the genuinely-new positive direction, partly gated; (ii) the magnitude r=1/2 as the real 45-yr problem
+  (needs a vacuum-alignment principle or a family-gauge extension the framework lacks -- real new physics);
+  (iii) backward synthesis once #2624 lands. Report the honest frontier verdict to the owner and take
+  direction on which fork. Do NOT cite 'chiral->r=1/2' (refuted #2624).

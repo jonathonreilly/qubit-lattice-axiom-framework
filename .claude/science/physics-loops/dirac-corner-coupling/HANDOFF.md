@@ -32,48 +32,61 @@ characterized **headline open lead**.
   "uniform complex rescaling preserves (1,2)" objection. **Reduces the whole Koide r on the clean
   lepton lane to ONE gated bit:** `r=1/2 ⟺ chiral` Yukawa, `r=1 ⟺ vector`. (7/7)
 
-## Verdict
+- **#2624 (block 6, FRONTIER CORRECTION)** — real-QFT review (2 web-research agents + sympy/numpy)
+  **REFUTES blocks 4/5**. The modulus `Tr log(M†M)⊃|b|²` (Coleman-Weinberg) has a rank-2 doublet
+  Hessian → 2 real modes → **r=1 robustly**, chiral/Kähler-Dirac included (Alvarez-Gaumé: Re W=½·Dirac,
+  Im W=η-phase). Chirality moves only the determinant **phase** (η) → δ=arg(b), **not** r. Holomorphy
+  (r=1/2) needs a SUSY superpotential the framework lacks (Seiberg). (5/5)
 
-`Koide r=1/2` is **not** a theorem of the clean **trace/vector** dynamics — all five
-trace-based routes give the `(1,2)` real-dimension weighting `κ=1` (r=1, Q=1), exhaustively
-established. On the trace side, `r=1/2` is the irreducible `(1,1)` multiplicity admission
-(= BAE). This is the exact, now-exhaustive content of Probe 29's partial falsification:
-**the framework predicts `κ=1` for a clean color-singlet C3-triplet, in tension with the
-empirical leptons `κ=2`.**
+## Verdict (corrected by block 6)
 
-**The one escape, and it is genuinely promising:** the chirality-graded **supertrace/index**
-route (block 4). It is flavor-blind, framework-present (`ε=(−1)^{x+y+z}`, `{ε,D}=0`), and the
-Record axiom is neutral between trace and supertrace. If the generation fermion's fluctuation
-determinant is the **chiral (holomorphic)** one — counting `b` once — then the weighting is
-`(1,1)` → **r=1/2 → Q=2/3, derived**.
+`Koide r=1/2` is **not** a theorem of the clean dynamics — all five trace/vector routes give `(1,2)`,
+`κ=1`, **r=1**. **Block 6 strengthens this with real QFT:** the magnitude `r` is set by the
+fluctuation-determinant **modulus** (`|b|²`-type, 2 doublet modes), which gives **r=1 robustly** — for
+chiral and Kähler-Dirac fermions too. So the framework's `Q=1` prediction (vs empirical `Q=2/3`) is a
+**real-physics-backed, robust partial falsification**, not a measure artifact.
 
-## What is GATED (the next campaign)
+**The chiral lead (blocks 4/5) is REFUTED.** Chirality affects only the determinant **phase**
+(η-invariant) → the Koide **phase** `δ=arg(b)≈2/9`, **not** the magnitude `r`. The "gated bit" was
+mis-assigned: `r` is `1` regardless of chirality.
 
-Resolving the headline lead requires the **staggered-Dirac mass/Yukawa** structure (kinetic-only
-on main; mass at the open **substep-4** gate). The sharp binary:
+**THE FRAMEWORK DOES NOT SOLVE KOIDE.** `r=1/2` (Q=2/3) is the genuine 45-year open problem — external
+literature confirms `|b|/a=1/√2` is "not from first principles" (Rivero-Gsponer); the real obstacle is
+pole-vs-running mass (Koide 2018); Sumino's family gauge boson only **protects** an assumed 2/3 and needs
+a **continuous** U(3) family symmetry the framework (discrete C3) **lacks**.
 
-> **r=1/2 ⟺ the generation Yukawa fluctuation determinant is chiral/holomorphic (counts `b`
-> once); r=1 ⟺ it is vector/real (counts `Re b, Im b` separately).**
+## The two genuine open directions (post-correction, real physics)
 
-**Which way the bit likely falls (not proven):** all three arrows point to *chiral* → r=1/2 —
-(i) the framework already carries the chirality grading `ε` with `{ε,D}=0` (kinetic, on main);
-(ii) the generation triplet is forced by the *chiral* staggered/Kawamoto-Smit operator (per
-`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED`); (iii) the empirical charged leptons sit at r=1/2.
-So the chiral resolution is the natural one — but it is **gated**, not derived, until the
-substep-4 mass structure is shown to make the Yukawa fluctuation holomorphic.
+The Koide problem cleanly **splits into two parameters with different physical origins** (block 6):
 
-## Next exact actions (priority order)
+1. **Magnitude `r = |b|²/a²` (the Q=2/3 condition).** Set by the determinant **modulus** → `r=1`
+   robustly. Getting `r=1/2` is the **45-year open problem**; per the real literature it needs
+   **either** a vacuum-alignment principle forcing `|b|/a=1/√2` (none exists) **or** Sumino-type
+   radiative protection (continuous U(3) family gauge boson — framework has only discrete C3). The
+   framework's lattice (no continuum, mass at the lattice scale) may reframe the pole-vs-running
+   obstacle, but cleanly gives `r=1` — so this is a **genuine tension/falsification**, not a gap a
+   gate will close.
+2. **Phase `δ = arg(b)` (Brannen ≈ 2/9 rad).** This is where the chiral structure actually lives:
+   the determinant **phase** = the η-invariant. New, untried direction — compute whether the
+   framework's η-invariant / chiral measure phase fixes `δ`. (Caveat: external review flags `2/9`
+   itself as a possible numerical coincidence; the real target is "does the chiral structure fix δ
+   at all," matching ~0.222 rad.)
 
-- **(A)** Strengthen #2614 with the **Frobenius-Schur** sharpening: trivial irrep is real-type
-  (FS=+1 → `a` is one real param), doublet is complex-type (FS=0 → `b` is one complex param);
-  the (1,1) count is FS-type-respecting, which resolves the "uniform rescaling preserves (1,2)"
-  objection. Fold into #2614 or ship as block 5.
-- **(B)** Conditional chiral-vs-vector determinant: compute both for the corner b-mode and show
-  r=1/2 ⟺ chiral, r=1 ⟺ vector — reduces the whole question to the sharp gate binary.
-- **(C)** Once #2591/#2601/#2607/#2611/#2614 land on main (reviewer cherry-picks), write the
-  **backward** campaign-synthesis note (repo-canonical vocab; meta-framings-land-backward rule).
-- **(D)** Pivot to the **staggered-Dirac gate** itself (substep 4) — the deeper problem
-  everything is conditional on. Major; recommend owner greenlight before launching.
+## Next actions (priority order, corrected)
+
+- **(C)** The 6 narrow blocks are on main (#2591/#2601/#2607/#2611/#2614/#2617 landed; #2624
+  correction in flight). Once #2624 lands, the surface is consistent; a backward synthesis note
+  (repo-canonical vocab) can record: *framework robustly predicts Q=1; r=1/2 is the irreducible
+  BAE admission; chirality → δ not r.*
+- **(Phase-δ)** Frontier-compute the η-invariant / chiral determinant phase of the corner sector
+  and test whether it fixes `δ=arg(b)` near the empirical lepton value. Partly gated (needs the
+  chiral/non-Hermitian mass), but the most tractable genuinely-new positive direction.
+- **(Magnitude r=1/2)** The 45-yr open problem. A real contribution must derive `|b|/a=1/√2` from a
+  vacuum-alignment or dynamical principle (not a reverse-engineered potential) AND address
+  pole-vs-running. The framework lacks Sumino's continuous family symmetry — so either extend it
+  (new structure) or accept the tension. Hold for owner direction; this is real new physics.
+- **(D)** The staggered-Dirac substep-4 mass gate is still the framework's deeper structural gate
+  (governs the phase-δ computation), but per block 6 it does **not** change the magnitude `r`.
 
 ## Discipline notes for the next session
 - All blocks are CONDITIONAL on the open staggered-Dirac gate; none is bare `retained`.

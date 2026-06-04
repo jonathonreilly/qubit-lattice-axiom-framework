@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_r_reduces_to_chiral_vs_vector_yukawa_binary_exact.py
+runner_sha256: 51ab57a256c8a828d8a4c58e82e350f22eff2070319568f8a1845969eac3be20
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+PASS - (0) C3 root identities
+PASS - (1) FS(trivial)=+1 and FS(omega)=FS(omega-bar)=0
+PASS - (2) vector count (1,2)->r=1; chiral count (1,1)->r=1/2
+PASS - (3) singlet mode fixed; doublet changes from 2 real modes to 1 holomorphic mode
+PASS - (4) uniform complex count (1/2,1) preserves r=1, not r=1/2
+PASS - (5) source note keeps open-gate and no-status-promotion boundary
+PASS - (6) source note exposes parent/dependency links
+
+7 PASS, 0 FAIL
+
+OPEN GATE: FS(C3) makes the asymmetry precise. The trivial isotype is real, so a
+stays one mode; the nontrivial conjugate pair is complex, so b is two real modes under
+a vector readout and one holomorphic mode under a chiral readout. This verifies the
+conditional map only: vector -> r=1, chiral -> r=1/2. The chiral readout remains gated.
+
+----- stderr -----
+

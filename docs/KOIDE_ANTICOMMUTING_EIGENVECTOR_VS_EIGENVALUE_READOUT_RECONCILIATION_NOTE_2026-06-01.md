@@ -1,7 +1,10 @@
 # Koide Anticommuting Eigenvector and Circulant Eigenvalue Readouts Are Consistent
 
 **Date:** 2026-06-01
+**Date of load-bearing authority repair:** 2026-06-04
 **Claim type:** bounded_theorem
+**Actual current-surface status:** bounded-support; effective status is set
+only by the independent audit lane.
 **Claim boundary:** finite three-dimensional `C_3` readout reconciliation. This note
 distinguishes eigenvector and eigenvalue Koide readouts; it does not choose which readout
 is physical.
@@ -45,8 +48,16 @@ The note reconciles a readout-category confusion. It does not make anticommutati
 necessary for `Q=2/3`, and it does not select eigenvectors or eigenvalues as the physical
 charged-lepton readout. The remaining question is the readout-class selector.
 
+## 2026-06-04 Load-Bearing Authority Repair
+
+The reconciliation proof below does not use the CPT exact real anti-Hermitian
+`D` packet. It uses only the anticommuting operator route and the circulant
+eigenvalue route, both checked directly by the paired runner. The CPT packet is
+therefore removed from this note's load-bearing authority list. Any independent
+CPT spectral-sign correction should be handled in that source packet, not as a
+premise of this finite readout-category reconciliation.
+
 ## Load-Bearing Authorities
 
 [KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md](KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md)
 [KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
-[CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md](CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md)

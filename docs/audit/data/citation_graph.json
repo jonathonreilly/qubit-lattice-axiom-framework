@@ -15205,10 +15205,6 @@
       "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
     },
     {
-      "from": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
-      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
-    },
-    {
       "from": "koide_aps_block_by_block_forcing_note_2026-04-21",
       "to": "s3_cap_uniqueness_note"
     },
@@ -63899,11 +63895,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b82deec905f5bc3a1447c8609e03cbec99c75bd9965ba875e672338cc8c38ac5",
+      "note_hash": "0ffb4deb4906308ab4357383a4a453c834c76c1cdd8e52357cc917a00d4ce162",
       "path": "docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md",
       "runner_path": "scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py",
       "title": "Koide Anticommuting Eigenvector and Circulant Eigenvalue Readouts Are Consistent"
@@ -91852,7 +91847,7 @@
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10448,
+    "edge_count": 10447,
     "leaf_count": 900,
     "node_count": 2768,
     "root_count": 942,

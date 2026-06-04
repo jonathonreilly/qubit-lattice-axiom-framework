@@ -36,7 +36,54 @@ finding.
 ## Artifact chain
 
 - [`scripts/lensing_analytical_finite_path.py`](../scripts/lensing_analytical_finite_path.py)
+- [`logs/runner-cache/lensing_analytical_finite_path.txt`](../logs/runner-cache/lensing_analytical_finite_path.txt)
 - [`logs/2026-04-07-lensing-analytical-finite-path.txt`](../logs/2026-04-07-lensing-analytical-finite-path.txt)
+- [`docs/LENSING_LONG_PATH_TEST_NOTE.md`](LENSING_LONG_PATH_TEST_NOTE.md)
+- [`scripts/lensing_long_path_test.py`](../scripts/lensing_long_path_test.py)
+- [`logs/runner-cache/lensing_long_path_test.txt`](../logs/runner-cache/lensing_long_path_test.txt)
+- [`logs/2026-04-07-lensing-long-path-test.txt`](../logs/2026-04-07-lensing-long-path-test.txt)
+- [`scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py`](../scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py)
+- [`logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt`](../logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt)
+- [`outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json`](../outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json)
+
+## 2026-06-04 Source Packet Re-audit Repair
+
+This repair supplies the restricted-packet materials named by the previous
+audit blocker. It does not promote this row or change the open-gate claim
+boundary; independent audit owns any ledger/status movement.
+
+The packet now exposes both load-bearing computations:
+
+1. The finite-path analytical runner/cache for the centered surrogate,
+   literal full-path static-mass reductions, regularized `r+0.1`
+   reduction, and detector-shift proxy:
+   [`scripts/lensing_analytical_finite_path.py`](../scripts/lensing_analytical_finite_path.py)
+   and
+   [`logs/runner-cache/lensing_analytical_finite_path.txt`](../logs/runner-cache/lensing_analytical_finite_path.txt).
+2. The Lane L++ long/short-path runner/cache for the `T_phys=7.5`
+   and `T_phys=45` tests:
+   [`scripts/lensing_long_path_test.py`](../scripts/lensing_long_path_test.py)
+   and
+   [`logs/runner-cache/lensing_long_path_test.txt`](../logs/runner-cache/lensing_long_path_test.txt).
+
+The new manifest runner
+[`scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py`](../scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py)
+checks that these source/cache paths are named here, that the cache
+headers are SHA-fresh against the current runner sources, and that the
+cache stdout contains the detector-centroid comparison facts:
+
+- measured fine-lane slope `-1.4335`
+- centered surrogate slope `-1.4188`
+- literal regularized full-path slope `-1.2425`
+- shift-weighted detector proxy slope `-1.3400`
+- short-path `T_phys=7.5`, `H=0.25` measured slope `-1.4356`
+- short-path finite-path formula prediction `-1.7336`
+
+That closes the packet-completeness part of the blocker: the long-path
+runner/output and the detector-centroid proxy checks are now exposed in
+one restricted packet. The remaining science boundary is unchanged:
+there is still no retained layer-weighted analytical derivation from
+the literal harness geometry to the detector-centroid observable.
 
 ## Question
 

@@ -1,0 +1,19 @@
+loop_slug: lensing-finite-path-centroid-20260604
+target_claim_id: lensing_finite_path_explanation_note
+target_status: exact-support
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: restricted-packet exposure for long-path runner/cache and detector-centroid proxy
+runtime_mode: campaign checkpoint
+files_touched:
+  - docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+  - scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py
+  - logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt
+  - outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json
+open_imports:
+  - retained layer-weighted analytical derivation from literal harness geometry to detector-centroid observable
+status_boundary: packet-completeness repair only; independent audit owns any ledger movement
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2620
+next_exact_action: reviewer should re-audit the row against the expanded restricted packet
+stop_condition: source/artifact repair for this row is complete; remaining closure requires new layer-weighted science

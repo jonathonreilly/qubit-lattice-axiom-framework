@@ -1,0 +1,306 @@
+{
+  "claim_id": "lensing_finite_path_explanation_note",
+  "note": "docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md",
+  "manifest": {
+    "finite_path_note": "docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md",
+    "long_path_note": "docs/LENSING_LONG_PATH_TEST_NOTE.md",
+    "finite_path_runner": "scripts/lensing_analytical_finite_path.py",
+    "long_path_runner": "scripts/lensing_long_path_test.py",
+    "finite_path_cache": "logs/runner-cache/lensing_analytical_finite_path.txt",
+    "long_path_cache": "logs/runner-cache/lensing_long_path_test.txt",
+    "finite_path_legacy_log": "logs/2026-04-07-lensing-analytical-finite-path.txt",
+    "long_path_legacy_log": "logs/2026-04-07-lensing-long-path-test.txt"
+  },
+  "summary": {
+    "pass": 57,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "manifest_path_exists:finite_path_note",
+      "pass": true,
+      "detail": "docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:long_path_note",
+      "pass": true,
+      "detail": "docs/LENSING_LONG_PATH_TEST_NOTE.md"
+    },
+    {
+      "name": "finite_path_note_names_manifest_path:long_path_note",
+      "pass": true,
+      "detail": "docs/LENSING_LONG_PATH_TEST_NOTE.md is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:finite_path_runner",
+      "pass": true,
+      "detail": "scripts/lensing_analytical_finite_path.py"
+    },
+    {
+      "name": "finite_path_note_names_manifest_path:finite_path_runner",
+      "pass": true,
+      "detail": "scripts/lensing_analytical_finite_path.py is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:long_path_runner",
+      "pass": true,
+      "detail": "scripts/lensing_long_path_test.py"
+    },
+    {
+      "name": "finite_path_note_names_manifest_path:long_path_runner",
+      "pass": true,
+      "detail": "scripts/lensing_long_path_test.py is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:finite_path_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/lensing_analytical_finite_path.txt"
+    },
+    {
+      "name": "finite_path_note_names_manifest_path:finite_path_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/lensing_analytical_finite_path.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:long_path_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/lensing_long_path_test.txt"
+    },
+    {
+      "name": "finite_path_note_names_manifest_path:long_path_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/lensing_long_path_test.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:finite_path_legacy_log",
+      "pass": true,
+      "detail": "logs/2026-04-07-lensing-analytical-finite-path.txt"
+    },
+    {
+      "name": "finite_path_note_names_manifest_path:finite_path_legacy_log",
+      "pass": true,
+      "detail": "logs/2026-04-07-lensing-analytical-finite-path.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "manifest_path_exists:long_path_legacy_log",
+      "pass": true,
+      "detail": "logs/2026-04-07-lensing-long-path-test.txt"
+    },
+    {
+      "name": "finite_path_note_names_manifest_path:long_path_legacy_log",
+      "pass": true,
+      "detail": "logs/2026-04-07-lensing-long-path-test.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "finite_path_note_names_manifest_artifact:manifest_runner",
+      "pass": true,
+      "detail": "scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "finite_path_note_names_manifest_artifact:manifest_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "finite_path_note_names_manifest_artifact:manifest_json",
+      "pass": true,
+      "detail": "outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+    },
+    {
+      "name": "long_path_note_points_back_to_finite_path_note",
+      "pass": true,
+      "detail": "long-path note names finite-path note as falsified target"
+    },
+    {
+      "name": "source_untruncated:finite_path_runner",
+      "pass": true,
+      "detail": "scripts/lensing_analytical_finite_path.py has 6340 bytes"
+    },
+    {
+      "name": "source_marker:finite_path_runner:def alpha_centered_surrogate",
+      "pass": true,
+      "detail": "def alpha_centered_surrogate present in scripts/lensing_analytical_finite_path.py"
+    },
+    {
+      "name": "source_marker:finite_path_runner:def alpha_full_path_reg",
+      "pass": true,
+      "detail": "def alpha_full_path_reg present in scripts/lensing_analytical_finite_path.py"
+    },
+    {
+      "name": "source_marker:finite_path_runner:def shift_weighted_reg",
+      "pass": true,
+      "detail": "def shift_weighted_reg present in scripts/lensing_analytical_finite_path.py"
+    },
+    {
+      "name": "source_marker:finite_path_runner:MEASUREMENTS =",
+      "pass": true,
+      "detail": "MEASUREMENTS = present in scripts/lensing_analytical_finite_path.py"
+    },
+    {
+      "name": "source_marker:finite_path_runner:x_src = 5.0",
+      "pass": true,
+      "detail": "x_src = 5.0 present in scripts/lensing_analytical_finite_path.py"
+    },
+    {
+      "name": "source_marker:finite_path_runner:x_det = 14.75",
+      "pass": true,
+      "detail": "x_det = 14.75 present in scripts/lensing_analytical_finite_path.py"
+    },
+    {
+      "name": "source_marker:finite_path_runner:detector-shift proxy",
+      "pass": true,
+      "detail": "detector-shift proxy present in scripts/lensing_analytical_finite_path.py"
+    },
+    {
+      "name": "source_untruncated:long_path_runner",
+      "pass": true,
+      "detail": "scripts/lensing_long_path_test.py has 9802 bytes"
+    },
+    {
+      "name": "source_marker:long_path_runner:AUDIT_TIMEOUT_SEC = 1800",
+      "pass": true,
+      "detail": "AUDIT_TIMEOUT_SEC = 1800 present in scripts/lensing_long_path_test.py"
+    },
+    {
+      "name": "source_marker:long_path_runner:from kubo_continuum_limit import",
+      "pass": true,
+      "detail": "from kubo_continuum_limit import present in scripts/lensing_long_path_test.py"
+    },
+    {
+      "name": "source_marker:long_path_runner:T_PHYS_LONG = 45.0",
+      "pass": true,
+      "detail": "T_PHYS_LONG = 45.0 present in scripts/lensing_long_path_test.py"
+    },
+    {
+      "name": "source_marker:long_path_runner:T_PHYS_SHORT = 7.5",
+      "pass": true,
+      "detail": "T_PHYS_SHORT = 7.5 present in scripts/lensing_long_path_test.py"
+    },
+    {
+      "name": "source_marker:long_path_runner:B_VALUES = [3.0, 4.0, 5.0, 6.0]",
+      "pass": true,
+      "detail": "B_VALUES = [3.0, 4.0, 5.0, 6.0] present in scripts/lensing_long_path_test.py"
+    },
+    {
+      "name": "source_marker:long_path_runner:def measure_at",
+      "pass": true,
+      "detail": "def measure_at present in scripts/lensing_long_path_test.py"
+    },
+    {
+      "name": "source_marker:long_path_runner:true_kubo_at_H",
+      "pass": true,
+      "detail": "true_kubo_at_H present in scripts/lensing_long_path_test.py"
+    },
+    {
+      "name": "cache_runner_matches:finite_path_cache",
+      "pass": true,
+      "detail": "scripts/lensing_analytical_finite_path.py == scripts/lensing_analytical_finite_path.py"
+    },
+    {
+      "name": "cache_sha_fresh:finite_path_cache",
+      "pass": true,
+      "detail": "cache sha c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1 current sha c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1"
+    },
+    {
+      "name": "cache_exit_ok:finite_path_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_contains:finite_path_cache:status: ok",
+      "pass": true,
+      "detail": "status: ok"
+    },
+    {
+      "name": "cache_contains:finite_path_cache:measured H=0.25                 -1.4335",
+      "pass": true,
+      "detail": "measured H=0.25                 -1.4335"
+    },
+    {
+      "name": "cache_contains:finite_path_cache:centered L=10 surrogate         -1.4188",
+      "pass": true,
+      "detail": "centered L=10 surrogate         -1.4188"
+    },
+    {
+      "name": "cache_contains:finite_path_cache:actual full path (+0.1)         -1.2425",
+      "pass": true,
+      "detail": "actual full path (+0.1)         -1.2425"
+    },
+    {
+      "name": "cache_contains:finite_path_cache:shift-weighted full path        -1.3400",
+      "pass": true,
+      "detail": "shift-weighted full path        -1.3400"
+    },
+    {
+      "name": "cache_contains:finite_path_cache:The actual static-mass full-path",
+      "pass": true,
+      "detail": "The actual static-mass full-path"
+    },
+    {
+      "name": "cache_runner_matches:long_path_cache",
+      "pass": true,
+      "detail": "scripts/lensing_long_path_test.py == scripts/lensing_long_path_test.py"
+    },
+    {
+      "name": "cache_sha_fresh:long_path_cache",
+      "pass": true,
+      "detail": "cache sha 6c97ab1fe30b85a83357e7cea950013ff286e3a1765a4daa3bdea9a667d6583b current sha 6c97ab1fe30b85a83357e7cea950013ff286e3a1765a4daa3bdea9a667d6583b"
+    },
+    {
+      "name": "cache_exit_ok:long_path_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_contains:long_path_cache:status: ok",
+      "pass": true,
+      "detail": "status: ok"
+    },
+    {
+      "name": "cache_contains:long_path_cache:T_phys = 45.0",
+      "pass": true,
+      "detail": "T_phys = 45.0"
+    },
+    {
+      "name": "cache_contains:long_path_cache:T_phys = 7.5",
+      "pass": true,
+      "detail": "T_phys = 7.5"
+    },
+    {
+      "name": "cache_contains:long_path_cache:H=0.25 kubo_true:        slope = -1.4356",
+      "pass": true,
+      "detail": "H=0.25 kubo_true:        slope = -1.4356"
+    },
+    {
+      "name": "cache_contains:long_path_cache:analytical (no fit):    slope = -1.7336",
+      "pass": true,
+      "detail": "analytical (no fit):    slope = -1.7336"
+    },
+    {
+      "name": "cache_contains:long_path_cache:H=0.5 kubo_true:        slope = -1.8128",
+      "pass": true,
+      "detail": "H=0.5 kubo_true:        slope = -1.8128"
+    },
+    {
+      "name": "cache_contains:long_path_cache:POOR MATCH",
+      "pass": true,
+      "detail": "POOR MATCH"
+    },
+    {
+      "name": "note_has_source_packet_reaudit_section",
+      "pass": true,
+      "detail": "finite-path note has the 2026-06-04 repair section"
+    },
+    {
+      "name": "note_preserves_open_gate_boundary",
+      "pass": true,
+      "detail": "repair section states that status movement remains audit-owned"
+    },
+    {
+      "name": "note_names_remaining_centroid_bridge",
+      "pass": true,
+      "detail": "note keeps the centroid/layer-weighted bridge visible"
+    }
+  ],
+  "status_boundary": "open_gate packet-completeness repair only; independent audit owns any ledger/status movement"
+}

@@ -1,0 +1,19 @@
+loop_slug: dm-neutrino-bosonic-scalar-scope-repair-20260604
+branch: physics-loop/dm-neutrino-bosonic-scalar-scope-repair-20260604
+target_claim_id: dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16
+target_status: bounded-support
+cycle_count: 1
+active_route: scalar-baseline narrowing
+hard_residual: "real-D determinant response along Γ_1 remains unproved and is now outside the repaired theorem."
+files_touched:
+  - docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py
+  - logs/runner-cache/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.txt
+open_imports:
+  - "Any future physical y_nu/g_weak readout requires a separate bridge."
+  - "Any future real-D determinant response requires a separate theorem."
+trace_gate_classification: direct_blocker_closure
+review_findings: []
+pr_status: pending
+next_exact_action: "Run py_compile, diff check, commit, push, and open a ready PR."
+stop_condition: "PR opened and verified, then pivot to the next audited-conditional target."

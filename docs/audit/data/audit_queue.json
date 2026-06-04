@@ -137,17 +137,17 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 91,
+      "direct_in_degree": 92,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 55.049,
+      "load_bearing_score": 55.551,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
-      "transitive_descendants": 748
+      "transitive_descendants": 749
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

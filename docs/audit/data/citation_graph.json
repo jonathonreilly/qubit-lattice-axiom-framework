@@ -24349,6 +24349,14 @@
       "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
     },
     {
+      "from": "record_p1_dependency_audit_note_2026-06-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "record_p1_dependency_audit_note_2026-06-04",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
       "from": "reproduction_audit_note",
       "to": "canonical_harness_index"
     },
@@ -79279,6 +79287,21 @@
       "runner_path": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py",
       "title": "R_conn Vertex-Color Singlet Projection Bounded Narrow Theorem"
     },
+    "record_p1_dependency_audit_note_2026-06-04": {
+      "claim_id": "record_p1_dependency_audit_note_2026-06-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "minimal_axioms",
+        "observable_principle_from_axiom_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e1514f2258552145ef7e2388e99f20cea802beb7b37db1db0404c83bb20c617d",
+      "path": "docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md",
+      "runner_path": "scripts/frontier_record_p1_dependency_audit_verifier.py",
+      "title": "Record/P1 Dependency Audit (2026-06-04)"
+    },
     "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": {
       "claim_id": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -91717,7 +91740,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 823,
       "decoration": 1,
-      "meta": 202,
+      "meta": 203,
       "no_go": 95,
       "none": 1404,
       "open_gate": 62,
@@ -91726,16 +91749,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1224,
       "decoration": 1,
-      "meta": 202,
+      "meta": 203,
       "no_go": 198,
       "none": 423,
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10437,
-    "leaf_count": 899,
-    "node_count": 2763,
+    "edge_count": 10439,
+    "leaf_count": 900,
+    "node_count": 2764,
     "root_count": 940,
-    "runners_with_path": 2348
+    "runners_with_path": 2349
   }
 }

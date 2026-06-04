@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_p1_dependency_audit_verifier.py
+runner_sha256: 90fad320927fcdc56f06753df5032121965cb759601f5d58904ca8c419bef2b0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+Record/P1 dependency audit re-derivation check
+audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
+
+[PASS] audit note exists
+[PASS] MINIMAL_AXIOMS_2026-06-04.md exists on disk
+[PASS] OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md exists on disk
+[PASS] audit ledger exists
+[PASS] axiom-premise registry exists
+[PASS] live direct-dependent count includes this meta report (92)  (observed=92)
+[PASS] audited pre-existing direct-dependent count matches audit claim (91)  (observed=91)
+[PASS] all direct dependents have note_path entries  (paths=91, dependents=91)
+[PASS] effective_status=unaudited count matches audit (81)  (observed=81)
+[PASS] claim_type=meta count matches audit (10)  (observed=10)
+[PASS] effective_status=retained among direct dependents is 0  (observed=0)
+[PASS] effective_status=retained_bounded among direct dependents is 0  (observed=0)
+[PASS] effective_status=audited_clean among direct dependents is 0  (observed=0)
+[PASS] observable_principle_from_axiom_note NOT in axiom-premise registry  (axiom_ids_sample=['minimal_axioms', 'scale_reference_primitive'])
+[PASS] observable_principle_from_axiom_note NOT aliased to minimal_axioms
+[PASS] audit note declares no source-citation rewrites
+[PASS] audit note declares no source-note text modifications
+[PASS] audit note declares no audit_status edits
+[PASS] audit note declares apply_audit.py was not run
+[PASS] report exposes all seven blocking categories  (observed=['Dynamics', 'Measurement/Born/decoherence', 'Normalization/scale', 'Observable bridge', 'P2/modulus', 'Source/action', 'log-det generator'])
+[PASS] report category path counts match heading/table counts  (log-det generator=59/59, Observable bridge=18/18, P2/modulus=5/5, Source/action=4/4, Dynamics=3/3, Measurement/Born/decoherence=2/2, Normalization/scale=0/0)
+[PASS] per-category path list has no duplicates  (duplicates=0)
+[PASS] per-category lists cover every live direct dependent  (missing=[])
+[PASS] per-category lists contain no non-dependent paths  (extra=[])
+[PASS] REWRITE + SPLIT + LEAVE = 91 (total direct dependents)  (REWRITE=0, SPLIT=0, LEAVE=91, total=91, n_direct=91)
+[PASS] blocking-content categories sum to LEAVE count (91)  (sum=91, LEAVE=91)
+[PASS] audit note records 'log-det generator' category (59 rows)  (expected substring='log-det generator' in audit note)
+[PASS] audit note records 'Observable bridge' category (18 rows)  (expected substring='Observable bridge' in audit note)
+[PASS] audit note records 'P2/modulus' category (5 rows)  (expected substring='P2/modulus' in audit note)
+[PASS] audit note records 'Source/action' category (4 rows)  (expected substring='Source/action' in audit note)
+[PASS] audit note records 'Dynamics' category (3 rows)  (expected substring='Dynamics' in audit note)
+[PASS] audit note records 'Measurement/Born/decoherence' category (2 rows)  (expected substring='Measurement/Born/decoherence' in audit note)
+[PASS] audit note is claim_type=meta
+[PASS] audit note does NOT declare an effective_status value
+[PASS] audit note declares status authority is audit lane
+[PASS] audit note cites MINIMAL_AXIOMS_2026-06-04
+[PASS] audit note cites OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE
+[PASS] audit note cites AXIOM_MINIMALITY_POLICY
+[PASS] audit note explicitly prohibits aliasing old to minimal_axioms
+[PASS] audit note explicitly prohibits adding old to axiom_premise_nodes
+[PASS] audit note explicitly states 'no row was broadened'
+
+TOTAL: PASS=41 FAIL=0
+Record/P1 dependency audit verifier passed: 91 direct dependents enumerated, all classified LEAVE, no source citations rewritten, no aliasing, no axiom-premise insertion, no audit_status edits, blocking-content categories sum to 91, status authority preserved.
+
+----- stderr -----
+

@@ -24497,14 +24497,6 @@
       "to": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
     },
     {
-      "from": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
-    },
-    {
-      "from": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-      "to": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
-    },
-    {
       "from": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
       "to": "minimal_axioms"
     },
@@ -79750,12 +79742,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "15308af74f9d4bbb76cb36142106b960eed0a1e5ff147a24ff51780b9b7d02cc",
+      "note_hash": "a66a40e0658bdefd40fd67ae63d9247f666ce5cd12a617d97d83f4d2aedac8ad",
       "path": "docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
       "runner_path": "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py",
       "title": "Fixed-Gauge RP Transfer Positivity + Standalone Relabeling Invariance"
@@ -91542,6 +91531,7 @@
     "restricted_strong_field_closure_note",
     "retardation_discriminator_note",
     "retarded_field_compact_refinement_note",
+    "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
     "s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10",
     "s3_boundary_link_theorem_note",
     "s3_mass_matrix_no_go_note",
@@ -91806,10 +91796,10 @@
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10444,
+    "edge_count": 10442,
     "leaf_count": 899,
     "node_count": 2766,
-    "root_count": 941,
+    "root_count": 942,
     "runners_with_path": 2351
   }
 }

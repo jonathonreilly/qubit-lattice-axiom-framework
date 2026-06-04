@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 626 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1240 |
+| unaudited | 1241 |
 | meta | 241 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 79 |
+| ~~audited_conditional~~ | 78 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 954 |
-| `audited_conditional` | 79 |
+| `audited_conditional` | 78 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1481 |
+| `unaudited` | 1482 |
 
 | claim_type | count |
 |---|---:|
@@ -1150,7 +1150,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -12536,21 +12535,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given PSD T_gauge and block fermion core oplus_U B[U]^dag B[U], T_full = (T_gauge^{1/2} x I)(oplus_U B[U]^dag B[U])(T_gauge^{1/2} x I) = W^dag W, so <Omega|O_hat^dag T_full O_hat|Omega> = ||W(O_hat Omega)||^2 >= 0.  _(class `A`)_
 - **chain closes:** True — The narrowed algebraic claim closes in finite-dimensional linear algebra: PSD T_gauge supplies a self-adjoint square root and the block fermion core is explicitly B^dag B, hence T_full is W^dag W and represented Gram matrices are PSD. This does not audit Wilson-boundary compact-group positivity or the mixed OS transfer representation, which remain scoped as hypotheses.
 - **rationale:** The load-bearing W^dag W step is a valid class-A algebraic closure under the source note's explicit supplied-premise scope, and the runner source constructs finite T_full and mixed Grams rather than merely printing constants. However the packet is not clean as written under the formula-inventory rule: the note's cached-run table is stale relative to the supplied cache for several Route T/C eigenvalue and Hermiticity entries, and the U(1) Wilson-kernel Fourier coefficient omits the overall e^{-beta} factor. These defects do not refute the narrowed lemma, but they require source repair before a clean verdict.
-- **auditor confidence:** high
-
-### `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`
-
-- **Note:** [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](../../docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Fixed-background staggered two-step transfer positivity from the anti-Hermitian spatial-hop modal reduction, plus finite det/spec/Z invariance under hw=1 permutation conjugation.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260530-222034-9a96a2ed-rp_p2_gauge_extension_an`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Because the fixed-background spatial hop h[U] is anti-Hermitian, it diagonalizes with eigenvalues i lambda_j, so the two-step transfer reduces to 2 x 2 blocks with positive eigenvalues exp(+/-2 asinh(sqrt(m^2+lambda_j^2))); relabeling invariance is then ordinary unitary-conjugation invariance of determinant, spectrum, and trace.  _(class `A`)_
-- **chain closes:** False — The finite linear-algebra parts close for the static fixed-background transfer construction and for permutation relabeling. The U-integrated RP reduction does not close from the packet because the cited gauge-half authority is only an abstract symmetric-involution norm-square lemma and explicitly does not establish the Wilson-plaquette gauge-half application or temporal-gauge boundary bridge.
-- **rationale:** The runner source performs real finite computations rather than merely printing constants: it builds the spatial hop, transfer blocks, random SU(3)/U(1) backgrounds, many-body diagonal Gamma exhibits, and permutation conjugations, with SCORECARD PASS=7 FAIL=0. The displayed modal 2 x 2 formula, determinant-one/positive-eigenvalue calculation, determinant lower bound from the cited Case A note, and unitary-conjugation invariance checks are algebraically sound within their finite fixed-background scope. However, the source also states a U-integrated RP reduction with a Wilson gauge-half factor, while the retained_bounded gauge-half citation only proves an abstract Cauchy-Schwarz identity under explicit symmetry hypotheses and says it does not establish the generic Wilson plaquette half-action theorem. That missing application bridge prevents a clean verdict for the source claim as written.
-- **open / conditional deps cited:**
-  - `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`

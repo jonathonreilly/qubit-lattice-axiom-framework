@@ -29,9 +29,10 @@ Two bounded results; neither closes a gate or removes an admission.
   is self-adjoint and bounded below by `0`. The free `U = 1` case (the
   reflection-positivity row's in-repo construction) is the translation-invariant
   specialization; this is the genuine nontrivial-background extension. The
-  `U`-integrated RP inequality then follows as a product of three non-negative
-  factors (this per-config fermion factor, the retained determinant weight, the
-  retained_bounded gauge-half norm-square).
+  dynamical `U`-integrated RP inequality is **not** claimed in this source row:
+  it would require a separate source bridge applying the abstract gauge-half
+  norm-square hypotheses to the Wilson plaquette gauge-half / temporal-gauge
+  boundary setup, with status assigned only by the audit lane.
 
 - **(B) Standalone relabeling invariance.** Under any permutation/relabeling
   of the selected `hw = 1` corner-triplet staggered modes (conjugation by a
@@ -183,37 +184,40 @@ case is the translation-invariant specialization (free-case bridge reproduces it
 the genuine extension of the reflection-positivity row's free-case
 construction.
 
-### U-Integrated RP Reduction
+### U-Integrated RP Boundary (Not Claimed Here)
 
 With per-config fermion-sector positivity in hand at fixed gauge background,
-the `U`-integrated RP inequality factorizes into three non-negative pieces:
+the natural full dynamical-gauge RP route would need a separate theorem
+applying the determinant weight and gauge-half norm-square to the Wilson
+plaquette / temporal-gauge boundary setup:
 
 ```text
-    <Theta(F) F> = int dU (Haar . positive Wilson plaquette weight)
-                      x (per-config fermion two-step positivity)     [A, this note]
-                      x (det(M_KS + m I) >= m^n > 0 config-by-config) [retained dep]
-                      x (gauge-half Cauchy-Schwarz norm-square)       [retained_bounded dep]
-                  >= 0,
+    candidate full route =
+        (per-config fermion two-step positivity)       [A, this note]
+      x (det(M_KS + m I) >= m^n > 0 config-by-config) [separate source row]
+      x (gauge-half Cauchy-Schwarz norm-square)        [separate abstract row]
 ```
 
-each factor non-negative:
+This note supplies only the first factor. It does not prove the Wilson
+plaquette gauge-half application bridge, does not prove a generic bosonic
+half-action theorem, and does not assert the integrated inequality
+`<Theta(F)F> >= 0` for the full dynamical-gauge theory.
 
 - the **per-config fermion two-step positivity** is the new result (A) of this
   note, now established at fixed nontrivial `SU(3)` background, not only `U = 1`;
-- the **positive determinant weight** is the retained Case A determinant note
-  [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md),
+- the **positive determinant weight** is a separate Case A determinant
+  row, `STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`,
   `det(M_KS + m I) = prod_i (m^2 + sigma_i^2) >= m^n > 0` config-by-config on
-  every `SU(3)` background (the runner reproduces its surface: in the matching
+  every `SU(3)` background (the runner reproduces only its finite surface: in the matching
   periodic even/balanced convention `{eps, M_KS} = 0` exactly and
   `det(M_KS + m I)` is real-positive);
-- the **gauge/bosonic-half norm-square** is the retained_bounded note
-  [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md),
-  the abstract symmetric-involution Cauchy-Schwarz norm-square identity.
+- the **gauge/bosonic-half norm-square** is a separate
+  abstract symmetric-involution Cauchy-Schwarz identity,
+  `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`;
+  this note does not apply it to Wilson plaquette half-actions.
 
-This note supplies the per-config fermion factor at nontrivial fixed
-background. It does **not** re-derive the determinant weight or the gauge-half
-norm-square (cited deps), and it does **not** claim a from-scratch full
-interacting `SU(3)` RP proof beyond this explicitly scoped product reduction.
+The determinant and gauge-half rows are therefore downstream/full-route context
+only in this narrowed packet, not load-bearing premises for results (A) or (B).
 
 ## Standalone Relabeling Invariance
 
@@ -265,24 +269,24 @@ row may cite after independent audit.
 
 - **Downstream P2 / realization residuals remain untouched.** This note does
   not claim any narrowing of P2 phase-blindness, substeps (1)+(2), or
-  `AC_phi_lambda`; those rows require their own retained authorities.
+  `AC_phi_lambda`; those rows require their own independently reviewed source
+  authorities.
 - **Scalar additivity stays Tier-A.** Scalar additivity on independent subsystems is
   untouched; this note makes no claim about it and does not derive it.
-- **Full interacting `SU(3)` RP from scratch is not claimed.** Result (A) is a
-  per-config (fixed-background) positivity plus the named three-factor
-  `U`-integrated reduction. The determinant weight and gauge-half norm-square
-  are cited retained/retained_bounded deps, not re-derived. Continuum / OS
-  reconstruction is out of scope.
+- **Full interacting `SU(3)` RP is not claimed.** Result (A) is only
+  per-config fixed-background positivity. The determinant weight, Wilson
+  plaquette gauge-half bridge, and continuum / OS reconstruction are out of
+  scope.
 
 ## Admitted-context inputs
 
 | Input | Role | Status |
 |---|---|---|
-| One-qubit operator algebra / physical `Cl(3,0)` local algebra + `Z^3` spatial substrate | repo baseline (setup) | repo baseline surface (see `MINIMAL_AXIOMS_2026-05-20.md`) |
+| Lattice / Quantum / Record baseline, including the `Z^3` lattice and physical `Cl(3,0)` local algebra | repo baseline (setup) | repo baseline surface (see `MINIMAL_AXIOMS_2026-06-04.md`) |
 | Staggered KS operator `M_KS`, phases `eta_0 = 1`, `eta_1(t) = (-1)^t`, `m > 0` | construction surface (Tasks A, B) | definitional (parent reflection-positivity conventions) |
 | Temporal gauge `U_0 = 1` (residual spatial links `U_i`) | gauge-extension setup | standard lattice-gauge gauge fixing |
-| `det(M_KS + m I) >= m^n > 0` config-by-config | RP `U`-integrated weight | retained dep (Case A determinant note) |
-| Gauge-half Cauchy-Schwarz norm-square identity | RP `U`-integrated weight | retained_bounded dep (gauge-half note) |
+| `det(M_KS + m I) >= m^n > 0` config-by-config | downstream full-route context only | separate source row; not a premise of this narrowed fixed-background theorem |
+| Gauge-half Cauchy-Schwarz norm-square identity | downstream full-route context only | separate abstract source row; Wilson plaquette application not claimed here |
 | Second quantization `Gamma(t1)` of a free quadratic transfer kernel | many-body two-step transfer | standard free-fermion functorial relation |
 
 No fitted values, observed targets, empirical comparators, new unit
@@ -316,8 +320,8 @@ What this can support if audit passes:
 - the reflection-positivity row's gauge-case text can cite this note for the
   per-config positivity at nontrivial fixed `SU(3)` background, upgrading its
   "reduction target" gauge text from `U = 1`-only to fixed-background
-  config-by-config (the `U`-integrated reduction still rests on the two named
-  retained/retained_bounded deps);
+  config-by-config. Any full `U`-integrated route still needs a separate
+  Wilson plaquette gauge-half application bridge;
 - downstream rows may cite this note only for the finite `det/spec/Z`
   relabeling-invariance facts, not for a P2 or `AC_phi_lambda` conclusion.
 
@@ -327,28 +331,29 @@ What this does not support:
 - any derivation, removal, weakening, or irrelevance claim for `AC_phi_lambda`;
 - any P2 phase-blindness residual narrowing;
 - any derivation of scalar additivity;
-- a from-scratch full interacting `SU(3)` RP proof beyond the named three-factor
-  reduction;
+- a full interacting `SU(3)` RP proof or Wilson plaquette gauge-half bridge;
 - continuum-limit / OS-reconstruction RP from this lattice setup alone.
 
-## Dependencies (load-bearing markdown-link edges)
+## Dependencies
 
-- [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md)
-  -- retained positive determinant weight `det(M_KS + m I) >= m^n > 0`
-  config-by-config; the `U`-integrated RP reduction consumes it.
-- [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md)
-  -- retained_bounded gauge-half norm-square identity; the `U`-integrated RP
-  reduction consumes it.
+None load-bearing. The fixed-background transfer positivity and finite
+relabeling-invariance statements are proved directly in this packet from the
+staggered transfer construction, anti-Hermitian spatial hop, and unitary
+conjugation invariance.
 
 ## Citation-graph note
 
-The two dependencies above are load-bearing and written as markdown links so
-the citation-graph builder records them as upstream edges. The
-realization-gate parent, substep notes, and P2 bridge note below are
-**downstream context, not upstream load-bearing premises of this narrowed
-note**; they are written as plain-text backtick filenames so the citation-graph
-builder does not parse them as upstream dependency edges:
+The determinant, gauge-half, realization-gate parent, substep notes, and P2
+bridge note below are **downstream context, not upstream load-bearing premises
+of this narrowed note**; they are written as plain-text backtick filenames so
+the citation-graph builder does not parse them as upstream dependency edges:
 
+- `STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md` -- separate
+  determinant-weight row for any future full dynamical-gauge route; not consumed
+  by this narrowed fixed-background theorem.
+- `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`
+  -- separate abstract gauge-half norm-square row. This packet does not apply
+  it to Wilson plaquette half-actions.
 - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` -- context row
   whose free `U = 1` two-step transfer positivity motivated this fixed-gauge
   extension. This note restates the finite transfer construction it needs and
@@ -368,8 +373,8 @@ builder does not parse them as upstream dependency edges:
   downstream P2 phase-blindness bridge. Referenced informationally; this
   narrowed note is a standalone transfer/invariance extension that does not
   modify it.
-- `MINIMAL_AXIOMS_2026-05-20.md` -- repo baseline surface, named as setup
-  context only.
+- `MINIMAL_AXIOMS_2026-06-04.md` -- repo Lattice / Quantum / Record baseline
+  surface, named as setup context only.
 
 ## Validation
 

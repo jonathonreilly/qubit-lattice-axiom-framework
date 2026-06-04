@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/flavor_logdet_factor_2_record_readout_realization_2026_06_04.py
+runner_sha256: cd6b12f6f0c9f2c3e6bb98679a4327aea576cb0c808d0abe36cb814fe04fef5f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+[PASS] (S1) finite declared site set
+       |Lambda| = 8
+[PASS] (S6) empty component product has F(empty)=1
+       F(empty) = (1+0j)
+[PASS] (S4) determinant is a finite scalar and matches Leibniz/Berezin expansion
+       det=5.42173-2.63653j; |det-Leibniz|=3.77e-15
+[PASS] (S5) declared disconnected components multiply
+       |F_union - F_a*F_b|=0.00e+00
+[PASS] log readout is additive on nonzero disconnected products
+       |I_union-(I_a+I_b)|=8.88e-16
+[PASS] block-diagonal determinant equals product over declared components
+       |det(blockdiag)-product|=2.86e-14
+[PASS] hostile check: coupled principal determinant need not be multiplicative
+       |det(union principal)-det(L1)det(L2)|=496
+[PASS] decoupled principal determinant multiplicativity sanity
+       |det(decoupled union)-product|=3.90e-14
+[PASS] non-Hermitian finite blocks still define finite disconnected products
+       ||D-D^dagger||_F=17.6; F=20338+33765.7j
+[PASS] real-matrix finite blocks also define finite disconnected products
+       F_real=338.611+0j
+[PASS] hostile check: trace surface fails multiplicativity
+       |Tr(union)-Tr(L1)Tr(L2)|=9.06
+[PASS] hostile check: non-finite operator is outside the finite-scalar precondition
+       F_bad=(nan+nanj)
+[PASS] cite-check: load-bearing source paths exist
+       missing: none
+
+SCORECARD PASS=13 FAIL=0
+FACTOR 2 DISCONNECTED-BLOCK LEMMA: declared block-diagonal Grassmann
+determinant products realize a multiplicative finite scalar record-readout surface.
+The coupled KS principal determinant does not factor automatically; full Factor 2 remains open.
+Record is baseline semantics, not a status source. No audit status.
+
+----- stderr -----
+

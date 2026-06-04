@@ -1,0 +1,27 @@
+loop: grown-transfer-basin-targeted-repair-20260604
+target_claim_id: grown_transfer_basin_note
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+current_block: block01
+files_touched:
+  - scripts/GROWN_TRANSFER_BASIN_SWEEP.py
+  - scripts/GROWN_TRANSFER_BASIN_TARGETED.py
+  - logs/runner-cache/GROWN_TRANSFER_BASIN_SWEEP.txt
+  - logs/runner-cache/GROWN_TRANSFER_BASIN_TARGETED.txt
+  - docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md
+verification:
+  - "python3 -m py_compile scripts/GROWN_TRANSFER_BASIN_SWEEP.py scripts/GROWN_TRANSFER_BASIN_TARGETED.py scripts/GROWN_TRANSFER_BASIN_DIAG.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/GROWN_TRANSFER_BASIN_TARGETED.py,scripts/GROWN_TRANSFER_BASIN_SWEEP.py --force --push-mode=none --allow-non-main --concurrency 2"
+result_summary:
+  targeted_same_row_survivors: "4/4"
+  sweep_same_row_survivors: "9/9"
+  cache_status: ok
+next_exact_action: "Submit review PR; independent auditor decides whether this repaired packet can replace or supersede the archived failed row."
+stop_condition: "Review PR opened."
+

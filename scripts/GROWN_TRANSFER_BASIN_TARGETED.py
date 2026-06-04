@@ -21,6 +21,11 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 from scripts.GROWN_TRANSFER_BASIN_SWEEP import _score_row
+from scripts.GROWN_TRANSFER_BASIN_SWEEP import complex_action_survives
+from scripts.GROWN_TRANSFER_BASIN_SWEEP import signed_source_survives
+
+
+AUDIT_TIMEOUT_SEC = 2400
 
 
 ROWS = [
@@ -40,33 +45,27 @@ def main() -> None:
     print()
     print(
         f"{'drift':>5s} {'restore':>7s} {'zero':>12s} {'neutral':>12s} "
-        f"{'plus':>12s} {'exp':>7s} {'g0':>12s} {'F0':>6s} {'F05':>6s} {'toward':>11s}"
+        f"{'plus':>12s} {'exp':>7s} {'g0':>12s} {'F0':>6s} {'F05':>6s} "
+        f"{'toward':>11s} {'signed':>7s} {'complex':>7s} {'both':>5s}"
     )
-    print("-" * 104)
+    print("-" * 128)
 
     survivors = 0
     for drift, restore in ROWS:
         row = _score_row(drift, restore)
+        signed_ok = signed_source_survives(row)
+        complex_ok = complex_action_survives(row)
+        both_ok = signed_ok and complex_ok
         print(
             f"{drift:5.2f} {restore:7.2f} "
             f"{row.signed_zero:+12.3e} {row.signed_neutral:+12.3e} "
             f"{row.signed_single:+12.3e} {row.signed_exponent:7.3f} "
             f"{row.action_gamma0:+12.3e} {row.action_fm0:6.3f} "
-            f"{row.action_fm05:6.3f} {row.action_toward!s:>11s}"
+            f"{row.action_fm05:6.3f} {row.action_toward!s:>11s} "
+            f"{str(signed_ok):>7s} {str(complex_ok):>7s} {str(both_ok):>5s}"
         )
 
-        signed_ok = (
-            abs(row.signed_zero) < 1e-12
-            and abs(row.signed_neutral) < 1e-12
-            and row.signed_single != 0.0
-            and abs(row.signed_exponent - 1.0) < 0.05
-        )
-        complex_ok = (
-            abs(row.action_gamma0) < 1e-12
-            and row.action_fm0 > 0.99
-            and row.action_fm05 > 0.99
-        )
-        if signed_ok and complex_ok:
+        if both_ok:
             survivors += 1
 
     print()

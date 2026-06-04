@@ -31,6 +31,8 @@ if ROOT not in sys.path:
 from scripts.gate_b_grown_joint_package import grow
 
 
+AUDIT_TIMEOUT_SEC = 3600
+
 H = 0.5
 K = 5.0
 BETA = 0.8
@@ -294,6 +296,24 @@ def _score_row(drift: float, restore: float):
     )
 
 
+def signed_source_survives(row: BasinRow) -> bool:
+    return (
+        abs(row.signed_zero) < 1e-12
+        and abs(row.signed_neutral) < 1e-12
+        and row.signed_single != 0.0
+        and abs(row.signed_exponent - 1.0) < 0.05
+    )
+
+
+def complex_action_survives(row: BasinRow) -> bool:
+    return (
+        row.action_toward[0] > 0
+        and row.action_toward[1] == 0
+        and row.action_fm0 > 0.99
+        and row.action_fm05 > 0.99
+    )
+
+
 def main() -> None:
     print("=" * 100)
     print("GROWN TRANSFER BASIN SWEEP")
@@ -323,25 +343,24 @@ def main() -> None:
     # Compact verdicts.
     signed_survivors = [
         row for row in rows
-        if abs(row.signed_zero) < 1e-12
-        and abs(row.signed_neutral) < 1e-12
-        and row.signed_single != 0.0
-        and abs(row.signed_exponent - 1.0) < 0.05
+        if signed_source_survives(row)
     ]
     complex_survivors = [
         row for row in rows
-        if row.action_toward[0] > 0
-        and row.action_toward[1] == 0
-        and row.action_fm0 > 0.99
-        and row.action_fm05 > 0.99
+        if complex_action_survives(row)
+    ]
+    same_row_survivors = [
+        row for row in rows
+        if signed_source_survives(row) and complex_action_survives(row)
     ]
 
     print()
     print("SAFE READ")
     print(f"  signed-source survivors: {len(signed_survivors)}/{len(rows)}")
     print(f"  complex-action survivors: {len(complex_survivors)}/{len(rows)}")
-    if signed_survivors and complex_survivors:
-        print("  narrow basin survives both rows on at least one nearby family")
+    print(f"  same-row survivors: {len(same_row_survivors)}/{len(rows)}")
+    if same_row_survivors:
+        print("  narrow basin has rows surviving both observables")
     else:
         print("  basin is selective; one or both observables drop off quickly off-center")
 

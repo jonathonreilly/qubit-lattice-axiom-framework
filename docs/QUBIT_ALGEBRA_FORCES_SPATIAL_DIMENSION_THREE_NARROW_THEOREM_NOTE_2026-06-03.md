@@ -6,12 +6,14 @@
 qubit operator algebra `M_2(C)` — equivalently `Cl(3,0)` (axiom A1) —
 intrinsically carries **exactly** a 3-dimensional Euclidean vector grade,
 so that the spatial-dimension count `d_s = 3` is **forced** and **unique**
-from A1 alone, once spatial directions are identified with the
-mutually-anticommuting Hermitian directions of the local algebra. The
-single premise that carries the word "spatial" — `(GR)` below, "spatial
-directions are the vector grade of the local algebra" — is offered as the
-**replacement** for the current independent stipulation in axiom A2 (`the
-sites form Z^3`). The pure-algebra content (P1)–(P5) is unconditional; the
+from A1 alone, once a spatial direction is identified with an independent
+observable of the local qubit (a mutually-anticommuting Hermitian
+measurement axis — a Bloch axis). The single premise that carries the word
+"spatial" — `(GR)` below, "a spatial direction is an independent qubit
+observable" — is offered as the **replacement** for the current independent
+stipulation in axiom A2 (`the sites form Z^3`). It is an identity, not a
+projection: the spatial directions **are** the qubit's observables, and a
+two-state system has exactly `2^2 - 1 = 3` of them. The pure-algebra content (P1)–(P5) is unconditional; the
 spatial-dimension reading (T) is conditional on (GR). This is the
 **axiom-only route**: it uses no empirical input. No anomaly content, no
 staggered realization, no gauge group, no lattice numerics, and no
@@ -79,17 +81,19 @@ members pairwise anticommute (`{v_a, v_b} = 0` for `a != b`). Then:
    input; here it is a corollary, not the forcing mechanism.
 
 6. (**T — spatial-dimension forcing, conditional on (GR).**) Adopt the
-   geometric-realization premise
+   operational premise
 
    ```text
-   (GR)  spatial directions are the orthogonal unit directions
-         (the vector grade) of the local algebra A.
+   (GR)  a spatial direction is an independent observable of the
+         local qubit -- a mutually-anticommuting Hermitian
+         measurement axis (a Bloch axis).
    ```
 
-   Then, using the full qubit algebra (A1), all three unit directions
-   `s_1, s_2, s_3` are realized (they span the traceless observables, so
-   none can be omitted without losing part of `A`), and by (P2) there is
-   no fourth. Therefore the spatial-dimension count is
+   This is an identity, not a projection: there is no separate space the
+   algebra "reflects into"; what we call the spatial directions **are** the
+   qubit's independent observables. A two-state system has exactly
+   `2^2 - 1 = 3` of them (the Bloch axes `s_1, s_2, s_3`), and by (P2) no
+   fourth exists. Therefore the spatial-dimension count is
 
    ```text
    d_s = 3,   forced and unique.                                   (T)
@@ -268,8 +272,8 @@ A2 (`Z^3`), is now a single theorem on the complex-qubit algebra; A2 is
 reduced to a dimension-free locality/lattice statement plus the open
 discreteness target. The premise (GR) is the framework's standing
 "space emerges from the qubit" reading made precise: if space is built
-from the local relations, its directions can only be the algebra's own
-vector grade.
+from the local relations, its directions can only be the qubit's own
+independent observables — there is nothing else for a direction to be.
 
 ## Honest open items
 

@@ -1,0 +1,13 @@
+loop: bell-cache-recert-20260604
+date: 2026-06-04
+target_claim_id: bell_inequality_derived_note
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: completed declared-timeout cache recertification
+files_touched:
+  - docs/BELL_INEQUALITY_DERIVED_NOTE.md
+  - logs/runner-cache/frontier_bell_inequality.txt
+remaining_blocker: "Scientific status remains bounded model-surface; no framework-native physical Bell theorem is claimed."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

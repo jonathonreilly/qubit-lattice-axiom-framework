@@ -1,0 +1,23 @@
+loop: flavor-so2-readout-algebra-scope-repair-20260604
+date: 2026-06-04
+mode: run
+target_status: bounded-support
+cycle_count: 1
+active_route: narrow overbroad readout-selector conclusion to finite S1-S4 algebra
+hard_residual: no exhaustiveness theorem for admissible readout/measure normalizations
+files_touched:
+  - docs/FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md
+  - scripts/flavor_so2_readout_false_binary_2026_05_30.py
+  - logs/runner-cache/flavor_so2_readout_false_binary_2026_05_30.txt
+open_imports:
+  - exhaustive admissible readout/measure normalization theorem
+  - selector theorem deciding det_R versus block-product counting
+  - charged-lepton physical readout bridge
+no_go_routes:
+  - Do not claim global undetermined status from the finite determinant algebra alone.
+  - Do not claim both readings are native physical readouts without a selector/admissibility theorem.
+trace_gate_classification: direct_blocker_closure
+review_findings: pending independent reviewer
+pr_status: pending
+next_exact_action: open review PR from this branch
+stop_condition: branch packaged with runner pass and cache refresh

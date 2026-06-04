@@ -1,25 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_so2_readout_false_binary_2026_05_30.py
-runner_sha256: 34a70e129e8325761573e4ca29a39811f4bf33c864f5b17352a0d91961ef56a5
+runner_sha256: a8eb4339da795c844e11b5404207f33743a503b44f53d50bbbd0081bc47a5bb1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
-[PASS] S1 U(1)_b not an algebra symmetry: C->e^{ia}C compatible with C^3=I only at a in {0,2pi/3,4pi/3}
-       both 'gauge' and 'physical-symmetry' horns collapse -- false binary
-[PASS] S2 delta physical for spectrum (hierarchy moves) but delta-BLIND in Q (dQ/ddelta=0)
-       Q(delta) const=0.66667; masses delta-dependent
-[PASS] S3 det_R(aPs+bPd)=a*b^2 (doublet real-dim 2 ->(1,2)->Q=1); det_C=a*b (1 complex slot ->(1,1)->Q=2/3)
-       differ only by quotienting the SO(2) doublet-frame before det_R
-[PASS] S4 NEW_PARITY correction: full degeneracy at every delta=m*pi/3 (6 loci), not just sin(delta)=0
-       nondegeneracy <=> delta not a multiple of pi/3
+[PASS] S1 continuous C rephase obstruction: C->exp(i alpha)C preserves C^3=I only at cube-root phases
+       this checks the finite C3 obstruction; it is not a global readout-selector theorem
+[PASS] S2 delta moves the spectrum but is blind in Q for the supplied circulant family
+       Q(delta)=0.66667; sorted spectra at delta=0.3 and 1.1 differ
+[PASS] S3 real determinant and stipulated singlet/doublet block-counting product differ
+       det_R=50.0=alpha beta^2; block product=10.0=alpha beta
+[PASS] S4 full degeneracy occurs at every delta=m*pi/3, not only sin(delta)=0
+       nondegeneracy in this family is delta not a multiple of pi/3
 
 SCORECARD PASS=4 FAIL=0
-VERDICT: the SO(2)/U(1)_b 'gauge vs physical' framing MIS-LOCATES the gate (false binary). The
-real gate is the complex-vs-real MEASURE-COUNTING of the doublet, delta-independent in both
-readings, UNDETERMINED by framework baseline+retained. Both native (det_C via native J_cs), neither forced.
-Converges: this session's Build C + the parallel K-theory reframe + PR #2412 + the J_cs correction.
+VERDICT: BOUNDED-SUPPORT finite algebra only. The runner verifies the C3 rephase obstruction,
+delta-blind Q for the supplied circulant family, the det_R versus block-product counting
+formulas, and the delta=m*pi/3 degeneracy locus. It does not prove an exhaustive
+readout-normalization theorem or decide which counting a framework rule selects.
 
 ----- stderr -----
 

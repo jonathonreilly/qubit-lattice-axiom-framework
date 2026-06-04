@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 651 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1155 |
+| unaudited | 1156 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 107 |
+| ~~audited_conditional~~ | 106 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 996 |
-| `audited_conditional` | 107 |
+| `audited_conditional` | 106 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1394 |
+| `unaudited` | 1395 |
 
 | claim_type | count |
 |---|---:|
@@ -103,24 +103,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1006 | 56.48 | `audited_clean` | **retained** |
+| 1 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1007 | 56.48 | `audited_clean` | **retained** |
 | 2 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 747 | 55.05 | `audited_conditional` | ~~audited_conditional~~ |
 | 3 | `minimal_axioms_2026-05-03` | meta | critical | 991 | 49.95 | `unaudited` | meta |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1134 | 49.15 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1135 | 49.15 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms` | meta | critical | 1142 | 43.66 | `unaudited` | meta |
-| 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1014 | 40.49 | `audited_clean` | **retained_bounded** |
+| 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1015 | 40.49 | `audited_clean` | **retained_bounded** |
 | 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 931 | 39.86 | `unaudited` | unaudited |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 198 | 39.14 | `unaudited` | unaudited |
 | 9 | `alpha_s_derived_note` | bounded_theorem | critical | 871 | 38.27 | `unaudited` | unaudited |
 | 10 | `yt_ew_color_projection_theorem` | no_go | critical | 783 | 38.12 | `audited_clean` | **retained_no_go** |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1105 | 38.11 | `audited_clean` | **retained** |
-| 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1022 | 37.00 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1106 | 38.11 | `audited_clean` | **retained** |
+| 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1023 | 37.00 | `audited_clean` | **retained** |
 | 13 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 747 | 35.55 | `unaudited` | unaudited |
 | 14 | `plaquette_self_consistency_note` | bounded_theorem | critical | 905 | 33.82 | `audited_clean` | **retained_bounded** |
 | 15 | `three_generation_structure_note` | bounded_theorem | critical | 888 | 33.80 | `audited_clean` | **retained_bounded** |
 | 16 | `cpt_exact_note` | positive_theorem | critical | 1011 | 33.48 | `audited_clean` | **retained** |
 | 17 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 784 | 32.62 | `unaudited` | unaudited |
-| 18 | `minimal_axioms_2026-04-11` | meta | critical | 1006 | 32.48 | `unaudited` | meta |
+| 18 | `minimal_axioms_2026-04-11` | meta | critical | 1007 | 32.48 | `unaudited` | meta |
 | 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 993 | 32.46 | `audited_renaming` | ~~audited_renaming~~ |
 | 20 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 782 | 31.61 | `unaudited` | unaudited |
 | 21 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 747 | 31.55 | `unaudited` | unaudited |
@@ -1195,7 +1195,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_k0_real_block_equivalence_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9273,23 +9272,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the C_3-circulant generation algebra, M = aI + bR + cR^2 commutes with every algebra element A = alpha I + beta R + gamma R^2, so [D, pi(A)] = 0.  _(class `A`)_
 - **chain closes:** True — The algebra generated by one matrix R is commutative, so M, A, and the transpose/adjoint block used in D are all polynomials in R and commute. Therefore the inner commutator vanishes identically, making the order-one residual zero for all parameter choices in this route.
 - **rationale:** The runner source actually constructs the symbolic C_3-circulant matrices and verifies the commutator identity; it is not merely printing expected passes or importing the contested r=1/2 value. The six numerical r witnesses are supplementary, while the symbolic identity is the load-bearing algebraic closure. The conclusion is explicitly bounded to this circulant route and does not overclaim a global NCG no-go.
-- **auditor confidence:** high
-
-### `koide_p1_collapses_frame_residuals_note_2026-06-01`
-
-- **Note:** [`KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded localization claim: faithful spin-1/2 plus positive-energy quantization conditionally selects CAR over soft Bose occupation, while retained inputs do not exclude hard-core bosons and microcausality/RP/positive-energy constraints do not force faithfulness over the scalar.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260603-102818-25e9443e-koide_p1_collapses_frame`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given a faithful spin-1/2 carrier, Bose occupation of the negative-energy Dirac branch is unbounded below while CAR is bounded, but retained cardinality is blind to hard-core bosons and the scalar J=K=0 is admitted, so the residual collapse is conditional and never reaches zero.  _(class `A`)_
-- **chain closes:** False — The retained packet supports the bounded caveat that hard-core bosons evade the cardinality argument and that the scalar is not excluded by the tested constraints. The stronger reusable CAR-over-hard-core collapse depends on unaudited spin-statistics/OS reconstruction or exchange-sign forcing, so the retained-only chain does not close.
-- **rationale:** The runner source performs actual finite checks for the sigma-plus hard-core/CAR identities, the finite-dimensional trace obstruction, the negative-energy Bose occupation trend, a scalar RP kernel PSD sample, and a two-site JW spectrum comparison. Those checks support the source note's own retained-tier caveat, but they do not prove the unaudited spin-statistics/OS bridge needed to make CAR-over-hard-core-boson load-bearing. Because the note's one-posit collapse is explicitly modulo those rows, the scientifically correct result is conditional rather than clean.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`
-  - `free_field_os_wightman_reconstruction`
-  - `free_sector_spin_statistics_level1`
 - **auditor confidence:** high
 
 ### `koide_pointed_origin_exhaustion_theorem_note_2026-04-24`

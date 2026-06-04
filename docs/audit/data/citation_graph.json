@@ -16853,6 +16853,10 @@
       "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
     },
     {
+      "from": "koide_p1_collapses_frame_residuals_note_2026-06-01",
+      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
+    },
+    {
       "from": "koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23",
       "to": "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
     },
@@ -65497,10 +65501,11 @@
         "free_dirac_poincare_representation_bounded_note_2026-05-30",
         "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "axiom_first_spin_statistics_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3b083a1f0702425e3c05a67a3169cfa5c61be337efc67f543770f9be44317241",
+      "note_hash": "ceff2f90052c93e7ffcab3ac88a12cd8f51d1e456c01cf90e25bbcc1e12d0e54",
       "path": "docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md",
       "runner_path": "scripts/frontier_koide_p1_collapses_frame_residuals.py",
       "title": "Microcausality/Reflection-Positivity Localizes Carrier-Frame Residuals Without Forcing Faithfulness"
@@ -91676,7 +91681,7 @@
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10431,
+    "edge_count": 10432,
     "leaf_count": 898,
     "node_count": 2761,
     "root_count": 939,

@@ -114,3 +114,9 @@ Non-load-bearing audit targets named above remain plain text:
 `axiom_first_spin_statistics_theorem`,
 `free_field_os_wightman_reconstruction`, and
 `free_sector_spin_statistics_level1`.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [axiom_first_spin_statistics_theorem_note_2026-04-29](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md)

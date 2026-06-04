@@ -28,7 +28,8 @@ verification:
       symbolic substitution;
   (d) verifies the Hermitian-lift commutator [Theta_H, H] = 0 with
       Theta_H = P K;
-  (e) verifies (C3) Theta^2 is a scalar +I or -I;
+  (e) verifies the conditional C3 square check on the chosen instances,
+      where the extra C,P commutation/anticommutation algebra is explicit;
   (f) verifies the counterfactual: a generic anti-Hermitian operator
       with a non-real component does NOT satisfy (3), so the theorem's
       premise chain is unavailable even if a special example happens to
@@ -214,6 +215,23 @@ def main() -> int:
         matrix_eq(lhs3, rhs3),
     )
 
+    # R2 correction check: T is anti-linear. If D v = lambda v, then
+    # D(T v) = lambda^* T v, not -lambda^* T v. For real anti-Hermitian
+    # D, lambda is imaginary, so lambda^* = -lambda.
+    v_plus = Matrix([1, sym_I])
+    lambda_plus = sym_I * a
+    Tv_plus = conjugate_matrix(v_plus)
+    check(
+        "(R2) D v = lambda v for lambda = i a on instance (i)",
+        matrix_eq(D_abs * v_plus, lambda_plus * v_plus),
+    )
+    check(
+        "(R2) T v carries lambda^* (not -lambda^*)",
+        matrix_eq(D_abs * Tv_plus, sympy.conjugate(lambda_plus) * Tv_plus)
+        and matrix_neq(D_abs * Tv_plus, -sympy.conjugate(lambda_plus) * Tv_plus),
+        detail="complex conjugation maps i a to -i a on the real anti-Hermitian block",
+    )
+
     # =========================================================================
     section("Part 3: (C1) Theta D Theta^{-1} == D from (1),(2),(3) on (i)")
     # =========================================================================
@@ -288,13 +306,14 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 5: (C3) Theta^2 == scalar (=+/-I) on instance (i)")
+    section("Part 5: conditional C3 square check on instance (i)")
     # =========================================================================
     # Theta = C P T. On vectors: Theta v = C P (v^*). Theta^2 v = C P (Theta v)^*
     # = C P (C P v^*)^* = C P C^* P^* v = C P C P v (real C, P).
     # = (CP)^2 v
-    # The note's claim is that Theta^2 = s I with s in {+1, -1}, depending on
-    # whether [C, P] = 0 or {C, P} = 0.
+    # The note's conditional corollary says Theta^2 = s I with s in
+    # {+1, -1} only after the extra C,P commutation or anticommutation
+    # algebra is supplied.
     CP = C_abs * P_abs
     Theta_squared = CP * CP
     # Instance (i) uses C = sigma_x, P = sigma_z. These satisfy {C, P} = 0.
@@ -418,7 +437,7 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 10: (C3) Theta^2 == scalar on framework instance (ii)")
+    section("Part 10: conditional C3 square check on framework instance (ii)")
     # =========================================================================
     # On instance (ii): C = diag((-1)^x), P = mirror inversion. [C, P] on
     # site x: C P sends x -> L-1-x with eps(x), P C sends x -> L-1-x with
@@ -510,7 +529,7 @@ def main() -> int:
     print("    (C1) Theta D Theta^{-1} = D on both instances")
     print("    Step-by-step substitution chain matches proof in note")
     print("    (C2) Hermitian-lift commutator [Theta_H, H] = 0 on both instances")
-    print("    (C3) Theta^2 is a scalar (+I or -I) on both instances")
+    print("    Conditional C3 square checks close on both instances with explicit C,P algebra")
     print("    Counterfactual: non-real D breaks premise (3); composite invariance is not inferable from the theorem")
 
     print()

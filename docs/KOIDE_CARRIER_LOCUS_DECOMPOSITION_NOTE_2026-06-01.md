@@ -77,10 +77,13 @@ object (the reconstruction `R`); **the carrier locus adds no separate import.**
 
 Beyond M, the only remaining discrete DOF is a **single global Z₂ Hodge-orientation
 bit**: `hw=1` (1-forms / vector) vs `hw=2` (2-forms / pseudovector) — both S₃-triplets,
-**Hodge-dual** in `d=3` (the Hodge star is charge-conjugation there). It equals
-`sign(Pfaffian of the doublet block) = sign(β)`, left **free** by CPT-exactness
-([`CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`](CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md),
-retained-bounded), and no cited no-go blocks it. Records-growth (the pointer-vacuum
+**Hodge-dual** in `d=3` (the Hodge star is charge-conjugation there). On the
+oriented two-state doublet block `D_β = [[0, β], [-β, 0]]`, this bit is exactly
+`sign(Pfaffian(D_β)) = sign(β)`; the runner now checks this directly, including
+the orientation flip that sends `β -> -β`. The cited CPT-exact note is used only
+for its narrowed C1/C2 algebraic invariance surface; it does **not** select this
+Pfaffian sign and its non-load-bearing R2 spectrum-conjugation corollary is
+reconciled separately. No cited no-go blocks the sign. Records-growth (the pointer-vacuum
 `|000⟩`'s Hamming-shell-1 *is* hw=1) is a candidate source, but the
 `{records-pointer Z₂ = sign(β)}` bridge is open, not a theorem.
 

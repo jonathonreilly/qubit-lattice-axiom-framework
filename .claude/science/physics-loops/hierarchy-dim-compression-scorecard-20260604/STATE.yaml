@@ -1,0 +1,12 @@
+loop: hierarchy-dim-compression-scorecard-20260604
+date: 2026-06-04
+target_claim_id: hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: stale scorecard text repair
+files_touched:
+  - docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md
+remaining_blocker: "Retained Bridge 2 / effective-potential-density theorem remains open."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

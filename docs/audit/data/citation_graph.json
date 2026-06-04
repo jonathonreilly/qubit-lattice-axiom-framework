@@ -16849,10 +16849,6 @@
       "to": "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
     },
     {
-      "from": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
-      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
-    },
-    {
       "from": "koide_oplocality_brannen_plancherel_callan_harvey_honest_residual_composition_note_2026-05-25",
       "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
     },
@@ -65572,11 +65568,10 @@
         "per_site_su2_spin_half_theorem_note_2026-05-02",
         "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
         "no_per_site_chirality_theorem_note_2026-05-02",
-        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fc4ac3641091bed9f8393e05cb547f8a2a30f41c4de12db8771069436094b95a",
+      "note_hash": "32599e4299856274395ccecb89b58b8ca70c97b6af45c2bc415ffadc47d732b4",
       "path": "docs/KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01.md",
       "runner_path": "scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py",
       "title": "On-Site Weyl-Boost Generator Algebra From Single-Site Bivectors"
@@ -91862,7 +91857,7 @@
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10450,
+    "edge_count": 10449,
     "leaf_count": 900,
     "node_count": 2768,
     "root_count": 942,

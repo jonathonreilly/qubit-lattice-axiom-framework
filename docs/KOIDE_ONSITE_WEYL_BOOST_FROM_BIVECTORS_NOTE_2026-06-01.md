@@ -11,7 +11,7 @@ signature, close spin-statistics, or set an audit verdict.
 `scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py`
 with cache
 `logs/runner-cache/frontier_koide_onsite_weyl_boost_from_bivectors.txt`
-(13/13 checks).
+(15/15 checks).
 
 ## The boost-embedding gap
 
@@ -81,11 +81,15 @@ The gap is **sharpened** from "construct a multi-site spinor index" to a **singl
 binary selection** (faithful vs trivial) plus two attached binaries (chirality,
 signature). And the circularity is **broken in kind**: the Grassmann crutch posits
 the *fermionic frame* (the very thing spin-statistics must force), whereas the bivector
-soldering posits no statistics. The native real anti-Hermitian
-`D = iH`
-([`CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`](CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md),
-cited bounded authority) supplies the time/space-mixing dynamics, but spin-blindly
-(§E) — so it does not yet select the faithful rep.
+soldering posits no statistics. In the direct runner the native
+single-component staggered operator `D` is real anti-Hermitian and the
+Hamiltonian convention is
+```text
+H = i D,    equivalently    D = -i H.
+```
+That `H` acts on the lattice factor and is spin-blind (§E), so it does not yet
+select the faithful rep. No separate anti-Hermitian-`D` authority is
+load-bearing for this onsite boost algebra or for the spin-blindness check.
 
 ## Non-circularity and scope
 
@@ -111,7 +115,6 @@ which is *why* the selection is not yet forced).
 [INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md](INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md),
 [PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md](PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md),
 [CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md](CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md),
-[CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md](CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md),
 and
 [NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md](NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md).
 

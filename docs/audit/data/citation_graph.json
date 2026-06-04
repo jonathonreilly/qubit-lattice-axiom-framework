@@ -10369,6 +10369,22 @@
       "to": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"
     },
     {
+      "from": "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
+      "to": "flavor_logdet_generator_three_factor_provenance_2026-06-04"
+    },
+    {
+      "from": "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
+      "to": "flavor_logdet_form_under_record_axiom_2026-06-04"
+    },
+    {
+      "from": "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
+      "to": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28"
+    },
+    {
       "from": "flavor_logdet_form_under_record_axiom_2026-06-04",
       "to": "minimal_axioms"
     },
@@ -57350,6 +57366,23 @@
       "runner_path": "scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py",
       "title": "Flavor \u2014 no native latitude-quantizer (4 mechanisms); the RP \"self-dual\" lead is REFUTED (circular); reframed to the operator-algebra trace-vs-center question"
     },
+    "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04": {
+      "claim_id": "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem (finite-matrix calculus identity).",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "flavor_logdet_generator_three_factor_provenance_2026-06-04",
+        "flavor_logdet_form_under_record_axiom_2026-06-04",
+        "minimal_axioms",
+        "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "51bd7722ceaf932c26e7aceba7aec735d0c04e3be498844e3c2b00e5f721c46f",
+      "path": "docs/FLAVOR_LOGDET_FACTOR_4B_JACOBI_DERIVATIVE_NARROW_THEOREM_NOTE_2026-06-04.md",
+      "runner_path": "scripts/flavor_logdet_factor_4b_jacobi_derivative_2026_06_04.py",
+      "title": "Flavor - log-det generator Factor 4b: finite-block Jacobi derivative identity (narrow positive theorem)"
+    },
     "flavor_logdet_form_under_record_axiom_2026-06-04": {
       "claim_id": "flavor_logdet_form_under_record_axiom_2026-06-04",
       "claim_type_author_hint": null,
@@ -91854,7 +91887,7 @@
       "no_go": 96,
       "none": 1406,
       "open_gate": 62,
-      "positive_theorem": 176
+      "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1226,
@@ -91863,12 +91896,12 @@
       "no_go": 199,
       "none": 425,
       "open_gate": 137,
-      "positive_theorem": 578
+      "positive_theorem": 579
     },
-    "edge_count": 10448,
+    "edge_count": 10452,
     "leaf_count": 901,
-    "node_count": 2769,
+    "node_count": 2770,
     "root_count": 942,
-    "runners_with_path": 2354
+    "runners_with_path": 2355
   }
 }

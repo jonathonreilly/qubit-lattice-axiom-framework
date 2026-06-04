@@ -1,15 +1,16 @@
 # Koide kappa = 2 Orbit-Dimension Factorization
 
 **Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-19
+**Date:** 2026-04-19; 2026-06-04 dependency/Q-convention repair
 **Scope:** Structural factorization of the charged-lepton identity
 `kappa = g_0^2 / |g_1|^2 = 2` into (i) an axiom-native integer piece
 (the Z_3 orbit-dimension ratio on `Herm(3)` circulants) and (ii) the
-Koide cone normalization condition, which is the content of the MRU
-theorem at `d = 3`.
+formal Koide cone normalization condition supplied by the retained-bounded
+MRU reduced two-slot theorem. This note does not derive the physical
+SO(2) quotient/readout bridge that the MRU theorem itself excludes.
 **Primary runner:**
 `scripts/frontier_koide_kappa_two_orbit_dimension_factorization.py`
-(PASS=26 FAIL=0)
+(PASS=31 FAIL=0)
 
 ## Summary
 
@@ -39,8 +40,8 @@ pieces:
   versus the trivial orbit size (`{I}`, size 1). Z_3 is the unique
   cyclic group with this real-irrep dimension ratio `2 : 1`.
 
-- **(ii) The Koide cone normalization `alpha:beta = 2:-1` (the MRU
-  condition).** The most general Z_3-invariant quadratic functional of
+- **(ii) The Koide cone normalization `alpha:beta = 2:-1` (the formal
+  MRU condition).** The most general Z_3-invariant quadratic functional of
   the responses `(r_0, r_1, r_2)` is
 
   ```text
@@ -50,16 +51,17 @@ pieces:
   with `gamma = delta = epsilon = 0` forced on the cross-terms by the
   doublet rotation `(r_1, r_2) -> R(2 pi / 3) (r_1, r_2)`. The Koide
   cone is the leaf `alpha : beta = 2 : -1` (giving `kappa = 2`); other
-  leaves are equally Z_3-invariant. The specific leaf is pinned by the
-  Moment-Ratio Uniformity theorem on `Cl(d)/Z_d`:
+  leaves are equally Z_3-invariant. The specific leaf is supplied, as a
+  one-hop retained-bounded formal authority, by
+  [`KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`](KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md):
 
   ```text
-  Var(sqrt(m_k))  ==  <sqrt(m_k)>^2,   equivalently  CoV(sqrt(m_k)) = 1.
+  rho_plus^2 = rho_perp^2,   kappa := 2 rho_plus^2 / rho_perp^2 = 2.
   ```
 
-  See `docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`
-  for the full derivation of MRU at `d = 3` and its equivalence to
-  `kappa = 2`.
+  This is a formal reduced-carrier identity. It is not cited here as a
+  physical derivation of the SO(2) quotient, charged-lepton scalar
+  observables, or operator-side kappa closure.
 
 ## Derivation
 
@@ -109,19 +111,30 @@ Q(G)  =  alpha r_0^2 + beta (r_1^2 + r_2^2)
       =  9 alpha g_0^2 + 36 beta |g_1|^2.
 ```
 
-Setting `Q = 0` gives `kappa = -4 beta / alpha`. The MRU theorem picks
-the leaf `alpha : beta = 2 : -1` (equivalently `kappa = 2`) by
-requiring Frobenius-normalized cyclic responses to be uniform across
-Z_3 isotypes.
+Setting `Q = 0` gives `kappa = -4 beta / alpha`. Z_3 invariance alone
+leaves the scalar `alpha/beta` free. The linked MRU theorem supplies the
+formal reduced two-slot extremum, which is equivalent to selecting the
+leaf `alpha : beta = 2 : -1` and hence `kappa = 2`, but only within the
+formal reduced-carrier scope stated by that theorem.
 
 ### Equivalent phrasings of the cone normalization
 
-- **Brannen–Rivero CoV form.** `CoV(sqrt(m_k)) := sqrt(Var)/ <.> = 1`.
-- **Circulant-Fourier form.** `Var(sqrt(m_k)) = 2 |g_1|^2`,
-  `<sqrt(m_k)> = g_0`. Koide cone `<=>  2 |g_1|^2 = g_0^2`, which after
-  the orbit "2" from (i) is exactly `<sqrt(m_k)>^2 = Var(sqrt(m_k))`.
-- **Koide Q form.** The sum-square ratio
-  `Q = (sum sqrt(m_k))^2 / (3 sum m_k)` equals `2/3` iff `CoV = 1`.
+- **Brannen–Rivero CoV form.** For `y_k = sqrt(m_k)` with population
+  mean `mu` and population variance `Var`, `CoV(y) := sqrt(Var)/mu = 1`.
+- **Circulant-Fourier form.** In the convention
+  `y_k = g_0 + g_1 omega^k + g_1^* omega^{-k}`, the population variance
+  is `Var(y) = 2 |g_1|^2` and `mu = g_0`. Thus
+  `kappa = g_0^2 / |g_1|^2 = 2` is equivalent to
+  `Var(y) = mu^2`, hence `CoV(y) = 1`.
+- **Standard Koide-ratio form.** With
+  `K_std := (sum m_k) / (sum sqrt(m_k))^2`, one has
+  `K_std = (1 + CoV^2) / 3`, so `CoV = 1` is equivalent to
+  `K_std = 2/3`.
+- **Inverse sum-square ratio.** The inverse normalized ratio
+  `Q_inv := (sum sqrt(m_k))^2 / (3 sum m_k)` is
+  `Q_inv = 1 / (1 + CoV^2)`, so at `CoV = 1` it equals `1/2`, not
+  `2/3`. This note uses `kappa` and `K_std` for the load-bearing
+  convention.
 
 ## Falsification checks (runner, all PASS)
 
@@ -142,17 +155,19 @@ Z_3 isotypes.
    Fourier eigenvalues of `G`, not axis-basis diagonalization.
 9. Group-theoretic uniqueness: `Z_3` is the unique cyclic group with
    the real-irrep dimension ratio `2:1`.
-10. Observational (flagged separately): PDG charged-lepton masses give
+10. MRU one-hop authority and Q/CoV convention checks.
+11. Observational (flagged separately): PDG charged-lepton masses give
     `a^2 / |b|^2 = 2.00004` (sub-percent); not a derivation.
 
 ## Interpretation
 
-The one-scalar obstruction theorem of 2026-04-18 reduces Koide on the
-retained surface to the single real equation `kappa = 2`. This note
-factors that equation into the two structurally independent pieces
-above: the integer "2" is the Z_3 orbit-dimension ratio (axiom-native);
-the normalization `=` is the MRU condition. With MRU now a retained
-theorem, both pieces close inside A0–A3.
+The one-scalar obstruction theorem of 2026-04-18 reduces the formal
+kappa target to the single real equation `kappa = 2`. This note factors
+that equation into two structurally independent pieces: the integer "2"
+is the Z_3 orbit-dimension ratio (axiom-native), while the normalization
+leaf is supplied by the retained-bounded MRU reduced two-slot theorem.
+The resulting closure is a formal kappa factorization, not a physical
+charged-lepton scalar-lane closure.
 
 ## Scope
 
@@ -164,13 +179,18 @@ theorem, both pieces close inside A0–A3.
 2. The coefficient is stable under orthonormal rotations of the doublet
    bundle `(B_1, B_2)` and unstable under non-orthonormal rescalings.
 3. The Koide cone normalization `alpha : beta = 2 : -1` is not forced
-   by Z_3-invariance alone; it is forced by the MRU theorem at `d = 3`.
+   by Z_3-invariance alone; it is supplied as formal reduced-carrier
+   support by the linked retained-bounded MRU theorem.
 
 ### What is not established
 
 - No statement about the doublet phase (that is the Berry-phase theorem;
   see `docs/KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md`).
 - No statement about the quark or neutrino sectors.
+- No derivation that charged-lepton scalar observables physically factor
+  through the SO(2) doublet-radius quotient.
+- No operator-side kappa closure beyond the formal reduced-carrier scope
+  of the linked MRU theorem.
 
 ## Reproduction
 
@@ -178,17 +198,17 @@ theorem, both pieces close inside A0–A3.
 PYTHONPATH=scripts python3 scripts/frontier_koide_kappa_two_orbit_dimension_factorization.py
 ```
 
-Expected: final line emits `PASS=26 FAIL=0`.
+Expected: final line emits `PASS=31 FAIL=0`.
 
 ## Citations
 
-- `docs/KOIDE_ONE_SCALAR_OBSTRUCTION_TRIANGULATION_THEOREM_NOTE_2026-04-18.md`
-- `docs/KOIDE_Z3_SCALAR_POTENTIAL_SUPPORT_NOTE_2026-04-19.md`
-- `docs/KOIDE_POSITIVE_PARENT_AXIS_OBSTRUCTION_NOTE_2026-04-18.md`
-- `docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`
-- `docs/KOIDE_SELECTED_SLICE_FROZEN_BANK_DECOMPOSITION_NOTE_2026-04-18.md`
-- `docs/PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md`
+- [`KOIDE_ONE_SCALAR_OBSTRUCTION_TRIANGULATION_THEOREM_NOTE_2026-04-18.md`](KOIDE_ONE_SCALAR_OBSTRUCTION_TRIANGULATION_THEOREM_NOTE_2026-04-18.md)
+- [`KOIDE_Z3_SCALAR_POTENTIAL_SUPPORT_NOTE_2026-04-19.md`](KOIDE_Z3_SCALAR_POTENTIAL_SUPPORT_NOTE_2026-04-19.md)
+- [`KOIDE_POSITIVE_PARENT_AXIS_OBSTRUCTION_NOTE_2026-04-18.md`](KOIDE_POSITIVE_PARENT_AXIS_OBSTRUCTION_NOTE_2026-04-18.md)
+- [`KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md)
+- [`KOIDE_SELECTED_SLICE_FROZEN_BANK_DECOMPOSITION_NOTE_2026-04-18.md`](KOIDE_SELECTED_SLICE_FROZEN_BANK_DECOMPOSITION_NOTE_2026-04-18.md)
+- [`PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md`](PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md)
 - Companion notes:
-  - `docs/KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md`
-  - `docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`
-  - `docs/KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md`
+  - [`KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md`](KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md)
+  - [`KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`](KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)
+  - [`KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md`](KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md)

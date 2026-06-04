@@ -2744,7 +2744,7 @@ drive.
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
 
-_6 rows in this category._
+_7 rows in this category._
 
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`
@@ -2921,11 +2921,40 @@ drive.
 ```
 
 
+### `three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26`
+
+**Note:** [docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md](docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md)  |  **Descendants:** 0  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Abstract C^3 algebraic bridge from retained diagonal translation-character projectors and a retained order-3 cycle to absence of nonzero proper invariant subspaces.
+
+Auditor's verdict_rationale:
+All cited authorities are retained-grade, and the intended linear-algebra composition is class A over those inputs. However the claim is too broad as written because the zero subspace is proper and invariant under both the projectors and sigma. The displayed matrix-unit generation sentence is also false/inconsistent with the retained Burnside formula; the correct family is of the form E_ij = P_i sigma^k P_j with k = i-j mod 3, up to the note's indexing convention. Runner PASS does not repair these source-text defects.
+
+Auditor-quoted load-bearing step:
+The projectors P_{X_i} obtained from the retained translation characters together with the cyclic permutation sigma generate M_3(C), so any invariant subspace is only 0 or C^3.
+
+Auditor's repair target (canonical class + action):
+scope_too_broad: revise the claim and B8/runner verdict text to say no nonzero proper invariant subspace, and replace the matrix-unit formula sentence with the retained Burnside formula using consistent indices.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
 ## audited_conditional_missing_bridge_theorem
 
 Auditor judged that the chain needs a new theorem for a physical carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge. To close: derive the missing bridge from retained primitives so the audited claim no longer asserts it.
 
-_54 rows in this category._
+_56 rows in this category._
 
 
 ### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
@@ -4262,6 +4291,35 @@ drive.
 ```
 
 
+### `koide_records_objectivity_conditional_note_2026-05-31`
+
+**Note:** [docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md](docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md)  |  **Descendants:** 0  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Conditional two-block algebra: assuming equal-block (1,1) weighting and a records/objectivity maximization principle, the capacity extremum is r=1/2 and Q=2/3; dephasing/trace comparison is separated as the dimension-weighted r=1 channel.
+
+Auditor's verdict_rationale:
+The load-bearing calculation is class-A algebra: maximizing the weighted two-block log functional gives r*=w_p/(2 w_s), with equal weights yielding r=1/2 and Q=2/3. The same calculation distinguishes the dimension-weighted counterfactual at r=1, so the conditional is non-circular on its own terms. However, the source expressly imports the equal-block metric and objectivity maximization principle, and the cited Koide authorities identify equal-block/weight selection as open or bounded rather than retained as a physical selector. The runner's F5 unforced-premise check is a hard-coded citation/prose assertion rather than an independent computation, and a formula-inventory pass found a non-load-bearing parity typo in the kappa authority validation line: sign = d mod 2 should be 1 for even d and 0 for odd d.
+
+Auditor-quoted load-bearing step:
+For general weights w_s log E_+ + w_p log E_perp, the maximum occurs at r*=w_p/(2 w_s), so equal weights give r=1/2 and Q=(1+2r)/3=2/3.
+
+Auditor's repair target (canonical class + action):
+missing_bridge_theorem: land a retained derivation or explicit accepted admission for the equal-block (1,1) metric and the records/objectivity-maximization selector; also correct the cited kappa authority's non-load-bearing sign-count typo before any clean re-audit.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
 ### `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17`
 
 **Note:** [docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md](docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md)  |  **Descendants:** 0  |  **Class:** A
@@ -4457,6 +4515,35 @@ The empirically implied light-Dirac Yukawa y_nu ~ 10^-13 to 10^-12 lies many ord
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: add retained or explicitly accepted bridges for the empirical small-m_nu premise, the Gamma/H thermalization criterion, and the M_R >> T_census Majorana-branch condition, or narrow the note to those assumptions; also correct the 100 GeV margin and replace the O(1)-only phrasing with y_nu >= y_thr.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`
+
+**Note:** [docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md](docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md)  |  **Descendants:** 0  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Bounded audit of the R-MATTER reduction for the g_* census: the 15 gauge-charged Weyl multiplicity per generation and the 106.75 versus 112 nu_R fork, while leaving named residuals I12, R-SPIN, and the neutral-singlet branch convention.
+
+Auditor's verdict_rationale:
+The primary runner performs exact rational arithmetic and source/ledger bookkeeping, but it also reports a completed FAIL: the source expects the per-site spin-1/2 carrier to be audited_conditional while the restricted authority and ledger status in the packet read retained. More substantively, the cited spin-statistics cardinality theorem proves finite-dimensional CAR occupation/cardinality facts, not the relativistic Weyl particle/antiparticle thermal degree count used as the factor 2. The per-site spin-half authority is retained but explicitly does not identify the local Pauli action with the physical spin generator of every matter excitation, so R-SPIN remains a missing bridge rather than a closed retained input.
+
+Auditor-quoted load-bearing step:
+The thermalized per-generation matter count is 30 = 15 gauge-charged Weyl fermions times a 2-dof-per-Weyl particle/antiparticle cardinality, with the 15 multiplicity sourced from retained or decoration-under-retained authorities.
+
+Auditor's repair target (canonical class + action):
+missing_bridge_theorem: add or cite a retained authority deriving the Weyl particle/antiparticle thermal dof factor and physical spin-1/2 matter identification from the restricted inputs, and update the per-site spin-1/2 status bookkeeping to match the retained authority.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

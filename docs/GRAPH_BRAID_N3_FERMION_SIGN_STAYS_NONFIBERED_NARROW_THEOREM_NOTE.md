@@ -93,44 +93,165 @@ traversal counts. The decisive measurement is the **codimension of the fibered
 subspace** in `H^1(UD_N; Z_2)`: codim 1 (the exchange) means the fermion sign is
 non-fibered.
 
-## No-Go Discipline Gate
+## No-go discipline gate (N1–N8)
 
-This note ships a positive narrowing plus a negative answer to the
-fibered-enrichment escape; the discipline check is recorded.
+**Status:** PASS for the narrow N = 3 graph-braid persistence claim only. The
+proposition being recorded is *not* a repo-wide impossibility of fermion-sign
+emergence and *not* a claim that the graph-braid program is dead. It is the
+single computed statement that, at the physical three-particle (N = 3,
+three-generation) level, the configuration-space exchange `Z_2` of
+`H_1(UD_3(Z^3))` stays order-2 with base-edge (worldline-direction) projection
+`P(t) = 0` — non-fibered, the same as N = 2 — so the first-quantized graph-braid
+route does **not** spontaneously supply the CAR sign as a fibered geometric
+class. "Non-fibered" is the precise codim-1-of-`H^1(UD_N; Z_2)` statement of the
+"### What 'fibered' means here" section: the exchange class is **not** in the
+`GF(2)`-span of the base-edge link-sign cochains `{w_e}`.
 
-- **N1 alternative routes the escape could take:** (1) richer torsion at N = 3
-  (`Z_3` / `Z_4` -> anyon/parastatistics) — refuted: torsion stays `Z_2`;
-  (2) the exchange class becoming a base-edge link-sign (fibered) class at N = 3 —
-  refuted: codim-1 non-fibered complement at N = 3 too; (3) a coarse-graph
-  artifact — refuted by subdivision stability; (4) a feature of `K_5`/`K_{3,3}`
-  not of `Z^3` — refuted on the genuine `Z^3`-cube `K_{3,3}` witness.
-- **N2 wall independence:** the *exchange-sign-is-non-fibered* fact and the
-  *boson-vs-fermion sign selection* are distinct. This note settles the former at
-  N = 3; it does not select the sign.
-- **N3 hidden-wall scan:** the only framework input is the `Z^3` site graph shape
-  (and, for the surviving-statistics framing, the retained per-site dim-2 result,
-  cited only contextually). Everything else is exact integral / `GF(2)` linear
-  algebra and `networkx` graph algorithms.
-- **N4 residual matching:** the FS no-go §7 asked whether a lattice-native
-  `UD_N` graph-braid structure makes the exchange sign fibered/coupled. This note
-  attacks the **N = 3** instance of that residual and shows the exchange stays a
-  non-fibered codim-1 `Z_2`.
-- **N5 rhetoric audit:** "stays non-fibered at N = 3" means "the exchange `Z_2`
-  is not in the `GF(2)`-span of base-edge link-sign cochains for N in {2, 3} on
-  the tested non-planar graphs including the `Z^3` witness." It does **not** claim
-  fermions are derived, nor that every `N` or every second-quantized lift has been
-  settled.
-- **N6 partial-closure scan:** a graded-locality / fermion-parity-superselection
-  principle, or a second-quantized field-theoretic bridge, could still supply the
-  cross-site CAR sign by a different route; this note does not foreclose those.
-- **N7 steelman:** a reviewer may expect the three-generation many-body sector to
-  carry richer braid torsion (parastatistics) that fibers over the lattice. The
-  steelman fails: the integral `H_1(UD_3)` torsion is computed to be a single
-  `Z_2`, and the fibered subspace's codimension is computed to be exactly 1 — the
-  same as N = 2 — including on a genuine subgraph of `Z^3`.
-- **N8 cross-cycle echo:** consistent with the N = 2 dichotomy note (anyons
-  excluded, `Z_2` exchange) and the FS no-go (exchange decoupled from single-edge
-  data). This is the many-body (N = 3) extension confirming no fibered enrichment.
+### N1 — Alternative route enumeration
+
+The four routes by which the N = 3 sector could have *escaped* this persistence
+claim (i.e. by which going from two tokens to the physical three could have made
+the exchange sign richer than `Z_2`, or fibered over a base-lattice edge so that
+it couples to a worldline-direction `sign(beta)`). Each is evaluated by the
+runner at exact precision; none survives.
+
+| route | what it would attempt | why it fails for this scoped claim | marker |
+|---|---|---|---|
+| Richer-torsion (parastatistics) | At N = 3 obtain `Z_3`/`Z_4` (or higher) torsion in `H_1(UD_3)`, giving an anyon/parastatistics phase beyond `{+1,-1}`. | Smith normal form of `d2` on the clean integral witness `K_5` returns `H_1(UD_3) = Z^6 (+) Z_2`: all torsion is order 2, no `Z_3`/`Z_4`. `Hom(Z_2, U(1)) = {+1,-1}` stays boson/fermion. | REFUTED (runner Part A) |
+| Fibered-exchange | At N = 3 the exchange class falls into the `GF(2)`-span of base-edge link-sign cochains `{w_e}`, so its holonomy becomes a product of base-edge `sign(beta)` link-signs (a base-graph pullback). | The fibered subspace `span{[w_e]}` has codimension **exactly 1** in `H^1(UD_N; Z_2)` at N = 3 (and N = 2), and the 1-dim complement *is* the exchange class — `P(t) = 0` on every base edge. | REFUTED (runner Part B) |
+| Coarse-graph artifact | The codim-1 complement is an artifact of an under-subdivided witness graph and dissolves once the graph is subdivided to satisfy Abrams' length condition. | Subdividing `K_{3,3}` (`k = 1 -> k = 2`, sufficient for N = 3) leaves `(dim H^1, dim fibered, codim)` unchanged: the structure is topological, not combinatorial coarseness. | REFUTED (runner Part C) |
+| Witness-not-lattice | The non-fibered codim-1 holds for abstract Kuratowski graphs `K_5`/`K_{3,3}` but *not* for the framework's actual `Z^3` site graph. | The fibered test returns codim 1 on the genuine `K_{3,3}` subdivision *extracted from the real `Z^3` cube* `L = 3` (`V = 14, E = 17`, a subgraph of the lattice), not only on abstract `K_5`/`K_{3,3}`. | REFUTED (runner Part B, `Z^3`-cube witness) |
+| Higher-N continuation | The claim is asserted for all `N >= 4` / the full infinite `Z^3`, over-reaching beyond what is computed. | NOT attempted as a closure; `N >= 4` and the infinite lattice are explicitly flagged as *expected* (Ko-Park/HKRS structure) but **untested**, and are left as a next path, not part of the persistence claim. | OUT OF SCOPE (deliberately not closed) |
+
+### N2 — Wall-independence audit
+
+The collapsed wall set for this persistence claim has a single load-bearing
+wall: *the exchange `Z_2` lies in the codim-1 complement of the base-edge
+link-sign subspace of `H^1(UD_N; Z_2)`* (equivalently `P(t) = 0` on every base
+edge). The two refuted alternative-route walls are not independent walls — the
+"richer-torsion" route is foreclosed by the integral `H_1` computation and the
+"fibered-exchange" route by the `GF(2)` codimension computation, but both reduce
+to the same Abrams cube-complex boundary maps `(d1, d2)` on the same witness; no
+*second*, separately-retained obstruction is invoked. Crucially, this wall is
+**independent of the boson/fermion sign-selection wall**: choosing the `-1`
+(fermionic) value of the free 1D-rep on the codim-1 class is a *different*
+question that this note does not touch (see N5). Closing a future *second-quantized*
+graded-locality route would not move this first-quantized homology wall at all;
+it lives on a different axis (field-algebra grading, not configuration-space
+topology).
+
+### N3 — Hidden-wall scan
+
+The load-bearing inputs are explicit and finite; "fibered", "non-fibered",
+"three generations", and "CAR" are *not* used as hidden retained inputs for the
+result:
+
+- the `Z^3` site-graph shape (used only to extract the genuine `K_{3,3}`
+  subdivision witness via `networkx` planarity; `K_5`/`K_{3,3}` are the abstract
+  cross-checks);
+- the Abrams discretized unordered-`N`-particle cube complex `UD_N(Γ)`
+  (0-cells = closure-disjoint vertex `N`-sets; 1-cells = vertex + non-incident
+  edge; 2-cells = vertex-disjoint edge pairs) with the **Koszul-signed** cubical
+  boundary from edge-atom ordering;
+- exact integer Smith normal form over `ℤ` (integral `H_1` torsion);
+- `GF(2)` linear algebra: cocycles `Z^1 = ker D2^T`, coboundaries `B^1 = im D1`,
+  and the base-edge link-sign cochains `{w_e}` reduced mod `B^1`.
+
+No retained tier of any other note is consumed for the homology facts. The
+"three generations" identification of `N = 3` is *interpretive framing*, not a
+load-bearing premise: the computation is performed for unordered `N = 3` tokens
+regardless of the generation reading. The retained per-site dim-2 result
+(`cl3_per_site_hilbert_dim_two`) enters **contextually only**, for the
+surviving-statistics narrative, and is not used to derive the codimension.
+
+### N4 — Residual matching
+
+| cited witness | residual attacked | residual here | match? |
+|---|---|---|---|
+| `FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28` §7 path 1 (lattice-native graph-braid `π_1`, the "A10" escape) | Whether a lattice-native `UD_N` graph-braid structure manufactures a `Z_2` exchange that **couples to** the on-site `2O` `2π = -1` sign via a base-edge (fibered) `sign(beta)`. | The N = 3 instance of exactly that residual: the exchange `Z_2` is computed to be non-fibered (codim-1, `P(t) = 0`), so it does **not** couple to a base-edge `sign(beta)`. | yes (the N = 3 case of the open §7-path-1 escape) |
+| `GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29` (`retained_bounded`) | The N = 2 facts `H_1(UD_2) = Z^{β_1} (+) Z_2` (anyons excluded, exchange `Z_2`). | The same construction extended to N = 3, re-deriving the N = 2 facts (`K_5 -> Z^6 (+) Z_2`, etc.) as cross-validation before the N = 3 computation. | yes (positive input, recomputed) |
+| `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25` (`retained_no_go`) | The open **second-quantized** field-algebra-grading bridge that would supply the cross-site CAR sign. | NOT attacked here; the second-quantized graded-locality axis is a *different* route (§7 path 2), left open. | no (orthogonal open route, not this note's residual) |
+| `BINARY_OCTAHEDRAL_DISCRETE_SPINOR_SIGN_NARROW_THEOREM_NOTE_2026-05-28` (`retained_bounded`) | The on-site `2O` spinor `2π = -1` sign (the spinor-`Z_2` ingredient). | Cited only to identify *what* a fibered class would have had to couple to; the spinor sign is a finite-group fact, not used to derive the codimension. | no (context for the corroboration, not load-bearing) |
+
+Non-matching witnesses are not used as load-bearing proof of this persistence
+claim.
+
+### N5 — Rhetoric audit
+
+Scope-flagged phrases are bounded to the computed object:
+
+- **"stays non-fibered at N = 3"** / **"non-fibered class"** means precisely: the
+  exchange `Z_2` is **not** in the `GF(2)`-span of the base-edge link-sign
+  cochains `{w_e}` of `H^1(UD_N; Z_2)`, i.e. it has base-edge projection
+  `P(t) = 0`, for N ∈ {2, 3} on every tested non-planar witness including the
+  genuine `Z^3`-cube subdivision. It does **not** mean "fibered enrichment is
+  impossible for all `N`" — `N >= 4` and the infinite lattice are untested
+  (N1, last row).
+- **"N-stable from 2 to the physical 3"** means the three measured integers
+  `(dim H^1, dim fibered, codim)` and the integral torsion are computed to be
+  *identical* at N = 2 and N = 3 on the same witnesses; it does **not** assert
+  stability at higher `N`.
+- **"does not supply the CAR sign as a fibered geometric class"** means the
+  first-quantized configuration-space topology does not *spontaneously* hand over
+  a base-edge-fibered fermion sign; it does **not** claim fermions are *derived*,
+  nor that the cross-site CAR sign cannot arise by the *second-quantized*
+  graded-locality route (N6). The boson/fermion *value* on the codim-1 class
+  remains a free 1D-rep choice, explicitly unselected here.
+
+### N6 — Partial-closure path scan
+
+Two non-axiom partial-closure paths remain open and are **not** called new
+axioms by this note:
+
+1. **Second-quantized graded-locality / fermion-parity superselection** (the
+   retained statistics-agnostic no-go's surviving axis, §7 path 2 of the FS
+   no-go). A retained `Z_2`-grading that imposes graded locality could supply the
+   cross-site CAR sign by a *field-algebra* mechanism — orthogonal to
+   configuration-space topology, hence untouched here.
+2. **Sign-selection on the codim-1 class.** Whether a *further* framework
+   structure (a fermion-parity superselection rule, or the on-site `2O`
+   `2π = -1` sign coupling through a graded principle rather than a fibered
+   base-edge class) selects the `-1` (fermionic) value of the free 1D-rep on the
+   non-fibered exchange class is the open sign question; this note shows only
+   that the carrier is **not** a base-edge `sign(beta)` coupling.
+
+Neither path is the same computation as the N = 3 first-quantized homology
+settled here.
+
+### N7 — Steelman
+
+The strongest objection is that the **physical three-particle** sector is exactly
+where genuine many-body braiding should turn on: the three-generation
+configuration space could carry richer braid torsion (parastatistics) that, by
+sheer many-body interaction, fibers over the base lattice and finally couples the
+exchange phase to a worldline-direction `sign(beta)` — making N = 3 qualitatively
+unlike the merely-pairwise N = 2 case. This steelman is the natural physical
+expectation and it **fails on computation**: the integral `H_1(UD_3)` torsion on
+the clean witness `K_5` is a *single* `Z_2` (no `Z_3`/`Z_4`), and the base-edge
+link-sign subspace has codimension *exactly 1* in `H^1(UD_3; Z_2)` — the same two
+facts as N = 2 — including on a genuine subgraph of the real `Z^3` lattice and
+stably under Abrams subdivision. The many-body sector does not manufacture the
+fibering; the steelman blocks only the *broader* claim that no mechanism on any
+axis (e.g. second-quantized grading, N6) can ever supply the CAR sign, which this
+note does not make.
+
+### N8 — Cross-cycle echo
+
+Prior negative/persistence overclaims in this repo characteristically failed by
+testing one representative case (here: N = 2, or a single abstract graph) and
+then declaring the whole many-body lane closed. This note avoids that echo three
+ways: (i) it *extends* rather than extrapolates — the physical N = 3 is computed
+directly, not inferred from N = 2; (ii) it tests the genuine `Z^3`-cube witness
+and Abrams subdivision-stability, not only abstract `K_5`/`K_{3,3}`; and (iii) it
+holds the persistence claim to the first-quantized configuration-space axis,
+explicitly leaving the second-quantized graded-locality route and the
+boson/fermion sign-selection open. It is consistent with — and the many-body
+extension of — the N = 2 anyon-exclusion dichotomy (`Z_2` exchange, anyons
+excluded) and the FS no-go (exchange decoupled from single-edge data), and it
+corroborates the SO(2)-writhe-vs-spinor-`Z_2` decoupling from the
+configuration-space side: the worldline-direction (writhe-type base-edge) data
+and the exchange/spinor `Z_2` remain on orthogonal classes at the physical
+three-particle level.
 
 ## Verified tiers (origin/main audit ledger)
 

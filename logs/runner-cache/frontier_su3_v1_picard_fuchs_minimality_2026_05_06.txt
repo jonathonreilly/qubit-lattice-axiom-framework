@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py
-runner_sha256: 0c8217ebdce80e05d82697c257af4ac11609415421b2f489d061cec908bdd0ef
+runner_sha256: 48ac95fca09d98a968eefee0465fb117ae4f76e88ad4aa3b4fe76c03ed64155c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.91
+elapsed_sec: 0.90
 status: ok
 ----- stdout -----
 ==============================================================================
-V=1 SU(3) Wilson Picard-Fuchs ODE: Minimality Certificate
+V=1 SU(3) Wilson Picard-Fuchs ODE: Finite-Window Certificate
 ==============================================================================
 
 Candidate ODE (from PR #541):
@@ -22,8 +22,8 @@ Building Bessel-determinant Taylor series of J(β) to order 40...
 [D] Recurrence consistency certificate:
     Recurrence verified for N = 2 to 39: ALL HOLD EXACTLY
 
-[B] Lower-order exclusion certificate (no order ≤ 2 ODE with deg ≤ 12):
-    Lower-order exclusion certificate: ALL (r <= 2, d <= 12) EXCLUDED
+[B] Lower-order exclusion certificate (checked finite window):
+    Lower-order exclusion certificate: ALL CHECKED CELLS EXCLUDED; SKIPPED r=2,d=12 (not enough Taylor coeffs)
     r=1,d=0: unknowns=2, equations=10, rank=2, kernel_dim=0 -> OK: no annihilator
     r=1,d=1: unknowns=4, equations=12, rank=4, kernel_dim=0 -> OK: no annihilator
     r=1,d=2: unknowns=6, equations=14, rank=6, kernel_dim=0 -> OK: no annihilator
@@ -49,6 +49,7 @@ Building Bessel-determinant Taylor series of J(β) to order 40...
     r=2,d=9: unknowns=30, equations=36, rank=30, kernel_dim=0 -> OK: no annihilator
     r=2,d=10: unknowns=33, equations=36, rank=33, kernel_dim=0 -> OK: no annihilator
     r=2,d=11: unknowns=36, equations=36, rank=36, kernel_dim=0 -> OK: no annihilator
+    r=2,d=12: skipped (not enough Taylor coeffs)
 
 [C] Uniqueness at (r=3, d=2) certificate:
     Uniqueness at (r=3, d=2): kernel = 1D, matches published ODE
@@ -66,9 +67,9 @@ Building Bessel-determinant Taylor series of J(β) to order 40...
 SUMMARY: CERTIFICATE PASS=5 FAIL=0
 ==============================================================================
 
-Exact finite certificates passed. All-order minimality remains conditioned
-on the external holonomicity/rank and creative-telescoping inputs named
-in the companion note; audit status is set only by the independent lane.
+Exact finite certificates passed. All-order minimality remains out of
+scope without external holonomicity/rank and creative-telescoping
+inputs accepted by the independent audit lane.
 Output written: outputs/su3_v1_picard_fuchs_minimality_2026_05_06.json
 
 ----- stderr -----

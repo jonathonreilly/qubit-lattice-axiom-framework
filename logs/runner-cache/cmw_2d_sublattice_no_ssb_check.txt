@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cmw_2d_sublattice_no_ssb_check.py
-runner_sha256: 2042403c3cd95bf6fd704a68a9ab6bd685a3ee68b6aa229953927a5e894ddf6c
+runner_sha256: f58bb2cd32d8c1f60250afc60050d6db8dcd3d9af306d984910ff2fe7b643615
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
@@ -63,14 +63,15 @@ TEST 4: I_d / appropriate-divergence is constant for d ≤ 2
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 5: divergent I_d for d ≤ 2 → Bogoliubov bound forces ⟨q⟩ = 0
+TEST 5: W1-W4 Ward bridge + divergent I_d forces m_L -> 0
 ------------------------------------------------------------------------
-  Bogoliubov inequality: |⟨q⟩|² ≤ const / I_d in CMW setup.
-  As L → ∞, I_d → ∞ for d ≤ 2 ⇒ |⟨q⟩| → 0.
+  Bridge theorem: |m_L|^2 <= beta*C_A*C_H/(2*c_W^2*I_d).
+  As L grows, I_d diverges for d <= 2, so the W1-W4 bridge
+  forces m_L -> 0 on Ward-normalized order/charge pairs.
 
-  d=1: |⟨q⟩| upper bound for L=[4, 8, 16, 32, 64, 128]:
+  d=1: |m_L| upper bound for L=[4, 8, 16, 32, 64, 128]:
         [1.7889, 1.2344, 0.8677, 0.6127, 0.4331, 0.3062]
-  d=2: |⟨q⟩| upper bound for L=[4, 8, 16, 32, 48]:
+  d=2: |m_L| upper bound for L=[4, 8, 16, 32, 48]:
         [1.9308, 1.6237, 1.4287, 1.2906, 1.2264]
   d=1 bound decreasing with L: True
   d=2 bound decreasing with L: True
@@ -83,7 +84,9 @@ SUMMARY
   Test 2 (I_2 ~ log L logarithmic divergence):  PASS
   Test 3 (I_3 finite as L → ∞):                 PASS
   Test 4 (divergence ratios stable):            PASS
-  Test 5 (Bogoliubov bound forces ⟨q⟩ = 0):     PASS
+  Test 5 (W1-W4 bridge forces m_L -> 0):        PASS
+  WARD_NORMALIZED_BRIDGE_HYPOTHESES_EXPLICIT=TRUE
+  WATSON_LIMIT_COMMENT_REPAIRED=TRUE
 
   OVERALL: PASS
 

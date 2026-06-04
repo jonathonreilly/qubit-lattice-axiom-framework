@@ -1,0 +1,128 @@
+{
+  "claim_id": "cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04",
+  "note": "docs/CMW_WARD_NORMALIZED_BOGOLIUBOV_BRIDGE_THEOREM_NOTE_2026-06-04.md",
+  "summary": {
+    "pass": 17,
+    "fail": 0
+  },
+  "constants": {
+    "beta": 0.8,
+    "C_A": 3.0,
+    "C_H": 2.0,
+    "c_W": 0.5
+  },
+  "ir_sums": {
+    "d1": {
+      "8": 0.65625,
+      "16": 1.3281249999999984,
+      "32": 2.6640624999999925,
+      "64": 5.332031250000023,
+      "128": 10.666015625000082,
+      "256": 21.333007812501307
+    },
+    "d2": {
+      "8": 0.37929468662464993,
+      "16": 0.4899244945961485,
+      "32": 0.600326193678944,
+      "64": 0.7106653018865116,
+      "96": 0.7752010383876904,
+      "128": 0.820988449414492
+    },
+    "d3": {
+      "6": 0.21536512612901543,
+      "8": 0.22460562539027729,
+      "10": 0.23019975126275488,
+      "12": 0.23394212427744207,
+      "16": 0.23863031860501663,
+      "20": 0.2414472526274121
+    }
+  },
+  "results": [
+    {
+      "name": "note_marker:W1. Ward/commutator lower bound",
+      "pass": true,
+      "detail": "W1. Ward/commutator lower bound"
+    },
+    {
+      "name": "note_marker:W2. Susceptibility/onsite anticommutator bound",
+      "pass": true,
+      "detail": "W2. Susceptibility/onsite anticommutator bound"
+    },
+    {
+      "name": "note_marker:W3. Local double-commutator bound",
+      "pass": true,
+      "detail": "W3. Local double-commutator bound"
+    },
+    {
+      "name": "note_marker:W4. Finite Gibbs-state Bogoliubov inequality",
+      "pass": true,
+      "detail": "W4. Finite Gibbs-state Bogoliubov inequality"
+    },
+    {
+      "name": "note_marker:|m_L|^2 <= (beta C_A C_H) / (2 c_W^2 I_d(L))",
+      "pass": true,
+      "detail": "|m_L|^2 <= (beta C_A C_H) / (2 c_W^2 I_d(L))"
+    },
+    {
+      "name": "note_marker:every Hamiltonian",
+      "pass": true,
+      "detail": "every Hamiltonian"
+    },
+    {
+      "name": "d1_exact_ir_identity",
+      "pass": true,
+      "detail": "I_1(L) exact identity holds"
+    },
+    {
+      "name": "d1_ir_sum_monotone",
+      "pass": true,
+      "detail": "I_1 values [0.65625, 1.328125, 2.664062, 5.332031, 10.666016, 21.333008]"
+    },
+    {
+      "name": "d1_linear_coefficient",
+      "pass": true,
+      "detail": "I_1/L at L=256 is 0.08333206"
+    },
+    {
+      "name": "d2_ir_sum_monotone",
+      "pass": true,
+      "detail": "I_2 values [0.379295, 0.489924, 0.600326, 0.710665, 0.775201, 0.820988]"
+    },
+    {
+      "name": "d2_log_ratio_stable",
+      "pass": true,
+      "detail": "I_2/log(L) last ratios [0.170879, 0.169838, 0.169205]"
+    },
+    {
+      "name": "d3_finite_window_under_watson_half_convention",
+      "pass": true,
+      "detail": "I_3 max on window 0.241447253"
+    },
+    {
+      "name": "d3_finite_window_converging",
+      "pass": true,
+      "detail": "final relative change 1.180459e-02"
+    },
+    {
+      "name": "d1_order_bound_decreases",
+      "pass": true,
+      "detail": "d=1 |m_L| bounds [3.824732, 2.688538, 1.898294, 1.341805, 0.948712, 0.670826]"
+    },
+    {
+      "name": "d2_order_bound_decreases",
+      "pass": true,
+      "detail": "d=2 |m_L| bounds [5.030918, 4.426608, 3.998913, 3.675387, 3.519074, 3.419535]"
+    },
+    {
+      "name": "d3_bound_not_forced_to_zero_on_window",
+      "pass": true,
+      "detail": "d=3 final |m_L| bound 6.305572"
+    },
+    {
+      "name": "symbolic_bound_rearrangement",
+      "pass": true,
+      "detail": "C_A=3.000000000000; rearranged RHS=3.000000000000"
+    }
+  ],
+  "status_boundary": "independent audit lane only"
+}

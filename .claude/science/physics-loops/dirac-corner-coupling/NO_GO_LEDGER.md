@@ -14,14 +14,17 @@ OPERATOR / MEASURE / SYMMETRY class. DEAD routes (do not re-run):
 - **Symmetry protection of r=1/2** -> just-shipped #2591: S3 forces degeneracy, C3 leaves r free, 1-vs-2-dim
   irreps cannot be swapped. r=1/2 is a NORM-BALANCE, not symmetry-protected. [no_go, shipped this campaign]
 - **Static Z3 scalar potential minimum** V=(1/2)Tr K^2 + (1/6)Tr K^3 -> minimum at κ≈-0.76, NOT r=1/2. [grounding 3]
+  CONFIRMED by the framework's OWN Section 5 concession: V_eff min m_V≈-0.433 != physical m_*≈-1.16.
 - **Free Gaussian measure on Herm_circ(3)** -> (1,2)/F3/κ=1. [Probe 25, robust]
+- **Corner fermion determinant det(M)** on the hw=1 corners -> shape-stationary at r=1 (det=0) and r=4,
+  boundaries; NOT r=1/2. Full one-loop CW V_ferm=-log det(M) same; scale-only scalar can't fix it.
+  [Cycle 1+2, RULED OUT, shipped PR #2601 — was the ledger's #1 OPEN lead]
 
 OPEN / UN-ATTACKED (the dynamical class — my campaign target):
-1. **Staggered corner-coupling mass term in the lattice functional integral** — does the FERMION
-   DETERMINANT det(D+M) on the hw=1 corners re-weight the isotype blocks to F1 (κ=2)? [ledger's #1 open lead]
+1. ~~Staggered corner fermion determinant~~ -> **RULED OUT, Cycle 1+2, PR #2601** (r=1, r=4, not 1/2).
 2. **Taste-breaking scalar action normalization** effect on the block-total Frobenius weighting when
-   integrated out. [open]
-3. **Multi-factor Connes-Lott** (Yukawa D on R^3, chirality on separate H_L⊕H_R). [open, escape hatch (II)]
+   integrated out. [OPEN — Cycle 3 NEXT: does Z_doublet/Z_singlet from the eta-phase staggering = 1/2?]
+3. **Multi-factor Connes-Lott** (Yukawa D on R^3, chirality on separate H_L⊕H_R). [open, escape hatch (II) — Cycle 4]
 
 REFRAME (FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED, retained): r=1/2 is the max-sector-entropy
 STATIONARY point (dS/dr=0, S=log2), the "balanced lane"; r→0 (degenerate, Q=1/3) and r→1 (hierarchy, Q=1)

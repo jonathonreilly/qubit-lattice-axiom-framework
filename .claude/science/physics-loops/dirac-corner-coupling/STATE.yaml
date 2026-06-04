@@ -54,3 +54,33 @@ next_exact_action: >
   If r=1/2 -> close Koide (conditional on the staggered-Dirac gate). If r=1 -> sharpen the partial
   falsification into a coherent block (apply N1-N8 no-go discipline before any no-go claim) and ship a PR.
   Then Cycle 3+: taste-breaking scalar normalization; multi-factor Connes-Lott (the other open dynamical routes).
+
+# ---- checkpoint 2 (2026-06-04) ----
+cycle_count: 2
+block_count: 1
+cycle2_result: >
+  CONCLUSIVE (full one-loop effective potential, upgrading Cycle 1's preliminary single criterion):
+  fermion CW V_ferm=-log det(M) has the SAME shape-stationary points as det(M) (monotonic): r=1, r=4,
+  boundaries -- NOT r=1/2. Any scale-only scalar addition is x-flat on the fixed-Frobenius-scale slice,
+  so combined V_eff has no r=1/2 vacuum. The framework's actual trace-mode V(m=Tr K) is a DIFFERENT
+  coordinate (frozen-bank slice K_frozen+m*T_m), handled by citing its own Section 5 concession
+  (V_eff min m_V~-0.433 != physical m_*~-1.16). So the THREE leading dynamical ingredients (free measure
+  kappa=1; fermion det r=1/4; Z3 scalar V_eff min!=phys) all FAIL to select the lepton r=1/2.
+shipped_block_1:
+  pr: 2601
+  branch: physics-loop/dirac-corner-coupling-block01-20260604
+  title: "corner fermion determinant does not select r=1/2 (dynamical-route pruning)"
+  runner: scripts/audit_companion_corner_fermion_determinant_not_r_half_exact.py  # 10/10 exact
+  note: docs/CORNER_FERMION_DETERMINANT_DOES_NOT_SELECT_KOIDE_R_HALF_NARROW_OBSTRUCTION_NOTE_2026-06-04.md
+  claim_type: "no_go (narrow route-pruning); conditional on staggered-Dirac gate"
+no_go_ledger_update: "fermion-determinant route MOVED from OPEN #1 -> RULED OUT. 2 dynamical routes remain OPEN."
+active_route: "B: taste-breaking scalar action normalization (Cycle 3) -> then C: multi-factor Connes-Lott (Cycle 4)"
+next_exact_action: >
+  Cycle 3 (OPEN route #2): taste-breaking scalar action normalization. The staggered eta-phases
+  eta_2=(-1)^x1, eta_3=(-1)^(x1+x2) break the corner-cube symmetry; when the taste-breaking scalar is
+  integrated out, does its NORMALIZATION re-weight the C3 isotype blocks (singlet vs doublet) to F1
+  (kappa=2, r=1/2)? Concretely: compute the corner-mode scalar kinetic normalization Z_singlet vs
+  Z_doublet induced by the eta-phase staggering; if Z_doublet/Z_singlet = 1/2 the block-total Frobenius
+  weight shifts singlet:doublet 3a^2 : 6|b|^2 -> the balanced 1:1 (r=1/2). Reprove from the eta-phases
+  (Kawamoto-Smit comparator only). If it gives r=1/2 -> close (conditional); else prune route #2 and go
+  to Cycle 4 (multi-factor Connes-Lott: Yukawa D on R^3, chirality on separate H_L+H_R). Same N1-N8 gate.

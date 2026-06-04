@@ -65230,7 +65230,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c06a0f4ebdafa6e5c92412ffd62fd008d807b6de183df99fe8137041271492c0",
+      "note_hash": "f8d9971cab35a3695cd65791da3c343663b99ebbb14ebdafdcb6d2ab56cd5654",
       "path": "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py",
       "title": "Koide kappa Block-Total Frobenius Algebraic Narrow Theorem"

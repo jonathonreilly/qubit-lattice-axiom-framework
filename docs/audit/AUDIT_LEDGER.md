@@ -18,16 +18,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 162 |
+| **retained** | 161 |
 | **retained_no_go** | 173 |
-| **retained_bounded** | 621 |
+| **retained_bounded** | 620 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1258 |
+| unaudited | 1262 |
 | meta | 241 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 70 |
+| ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 948 |
-| `audited_conditional` | 70 |
+| `audited_clean` | 946 |
+| `audited_conditional` | 68 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1499 |
+| `unaudited` | 1503 |
 
 | claim_type | count |
 |---|---:|
@@ -567,10 +567,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kahler_dirac_silent_on_measure_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1120,8 +1118,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
-| `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_records_pointer_grounds_block_channel_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8453,19 +8449,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The load-bearing steps are class A algebraic closures over retained-grade inputs: zero grade-diagonal D_KD blocks, det(M)=(a+2b)(a-b)^2, det(M tensor eps)=det(M)^2, Jcs^2=-P_doublet, and the one-dimensional C3-equivariant antisymmetric direction. The runner source actually constructs the matrices and symbolic determinants rather than hard-coding the contested conclusions, and independent finite checks confirm the displayed target identities. No external comparator, tuned numerical input, or closed Koide-measure claim is imported; the no-go language is bounded to the checked routes and leaves the bilinear route open.
 - **auditor confidence:** high
 
-### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-koide_kappa_block_total_-011`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The Frobenius expansion gives E_+(H)=3a^2 and E_perp(H)=6|b|^2, so the equal-weight constrained log extremum E_+=E_perp is equivalent to a^2=2|b|^2, while the Herm_circ(d) real-irrep counts are (1, floor((d-1)/2), 1_{d even}).  _(class `A`)_
-- **chain closes:** True — The conclusions follow from direct finite-dimensional matrix algebra, trace orthogonality, a two-variable Lagrange multiplier calculation, and elementary cyclic real-irrep counting. No cited authority, fitted input, physical identification, or external comparator is load-bearing.
-- **rationale:** The source note is explicitly scoped to standalone algebra and does not claim the equal-weight functional is the canonical physical selector. The runner source genuinely constructs the matrices and symbolic variables, checks the Frobenius identities and Lagrange equations with sympy, and enumerates the stated multiplicity patterns; it does not import helper modules, external values, or a contested premise. Because there is no upstream parent dependency in the load-bearing chain, this is not merely algebraic decoration of a cited theorem.
-- **auditor confidence:** high
-
 ### `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`
 
 - **Note:** [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
@@ -8503,19 +8486,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the Z_3 eigenvalue parametrization v_g = a + 2β cos(φ + 2πg/3), the sums give Q(v) = (3a² + 6β²)/(9a²) = 1/3 + (2/3)(β/a)², so Q = 2/3 iff a² = 2β² = |b|² + |c|².  _(class `A`)_
 - **chain closes:** True — The proof closes as a direct finite Fourier/circulant algebra identity. No empirical mass values, external comparators, or unprovided upstream premises are needed for the stated equivalence.
 - **rationale:** The load-bearing step is a genuine algebraic identity check: cosine orthogonality gives the sums, and the Koide equation reduces exactly to the LCC residual. The runner source symbolically verifies the same identities rather than importing measured values or hard-coding a contested physical premise. The broader speculative Lane 6 mechanisms are explicitly non-load-bearing and are not part of the audited theorem.
-- **auditor confidence:** high
-
-### `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`
-
-- **Note:** [`KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Formal two-variable reduced-carrier algebra only: for positive rho_+, rho_perp with rho_+^2+rho_perp^2=E_tot, the symmetric log-volume extremum has rho_+^2=rho_perp^2=E_tot/2; under E_i=rho_i^2 and the retained Frobenius identities E_+=3a^2 and E_perp=6|b|^2 this gives a^2=2|b|^2, kappa=2, and S_E=2S_rho. This excludes physical SO(2) quotient derivation, charged-lepton scalar-lane readout, mass identification, Standard Model matching, observed lepton masses, and parent physical Koide closure.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-gpt-5.5-xhigh-fresh-koide-mru-reduced-carrier-2026-05-28`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Maximize S_rho=log rho_+ + log rho_perp under rho_+^2+rho_perp^2=E_tot, then substitute E_i=rho_i^2 and retained E_+=3a^2, E_perp=6|b|^2 to obtain a^2=2|b|^2 and kappa=2, with S_E=2S_rho.  _(class `A`)_
-- **chain closes:** True — The reduced-carrier extremum closes by elementary AM-GM/Lagrange algebra, and the retained Frobenius identities supply the post-quotient substitution; no physical Koide bridge is consumed.
-- **rationale:** The bounded formal chain closes: the symmetric two-slot log extremum is unique, the positive change of variables E_i=rho_i^2 is monotone, and the retained Frobenius identities convert E_+=E_perp into a^2=2|b|^2 and kappa=2. The result is not decoration because no single parent carries both the reduced rho-carrier extremum and the Frobenius post-quotient substitution; the source combines two retained algebraic inputs. The clean verdict is strictly formal and does not ratify a physical charged-lepton carrier, mass/readout identification, observed Koide match, or parent physical Koide lane.
 - **auditor confidence:** high
 
 ### `koide_moment_ratio_uniformity_theorem_note_2026-04-19`
@@ -8687,19 +8657,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The bounded claim is a direct algebraic closure from the explicitly defined map and its computed matrix L = [[1,0,0,0],[0,1,0,0],[0,0,1,0]]. The runner source does instantiate the relevant projectors and Γ_1 action to check the stated single-slot images, then verifies the kernel, quotient fibers, covariance, and invariant quadratic family. The note cleanly separates the unproved admissibility-implies-constancy statement as conditional, so that open extension does not contaminate the bounded theorem.
 - **auditor confidence:** high
 
-### `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25`
-
-- **Note:** [`KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Assuming the retained C3 circulant Fourier identities and the scoped equal-weight Frobenius extremum a^2 = 2 |b|^2, the signed ratio Q_alg(lambda) equals 2/3 whenever the denominator is nonzero; positive Koide interpretation is chamber-limited.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260603-104231-f346fe34-koide_q_two_thirds_frobe`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** At the scoped equal-weight Frobenius extremum a^2 = 2 |b|^2, the Fourier identities give Q_alg(lambda) = (3a^2 + 6|b|^2)/(3a)^2 = 2/3.  _(class `A`)_
-- **chain closes:** True — From the cited C3 identities, sum lambda_k = 3a and sum lambda_k^2 = 3a^2 + 6|b|^2, so Q_alg = (3a^2 + 6|b|^2)/(9a^2). With the cited scoped extremum a^2 = 2|b|^2 and nonzero denominator, this reduces to 2/3.
-- **rationale:** The bounded algebraic bridge itself is a class-A substitution over retained inputs, and the primary runner checks the exact rational ratio plus positive/non-positive chamber boundaries without external comparators. However, the restricted packet is not clean under the formula-inventory guard: the cited kappa authority's validation section displays the Herm_circ(d) sign-irrep count as d mod 2, contradicting its own statement, proof, and table where the sign count is 1 for even d and 0 for odd d. That upstream displayed parity formula must be repaired before this packet can receive audited_clean.
-- **auditor confidence:** high
-
 ### `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10`
 
 - **Note:** [`KOIDE_Q_TWO_THIRDS_Z3_CHARACTER_NORM_SPLIT_RECASTING_THEOREM_NOTE_2026-05-10.md`](../../docs/KOIDE_Q_TWO_THIRDS_Z3_CHARACTER_NORM_SPLIT_RECASTING_THEOREM_NOTE_2026-05-10.md)
@@ -8711,21 +8668,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the unit-normalized Z_3 Fourier transform, Plancherel gives sum |c_k|^2 = sum v_i^2 and |c_0|^2 = (sum v_i)^2/3, so Q(v)=2/3 is equivalent to |c_0|^2 = |c_1|^2 + |c_2|^2.  _(class `A`)_
 - **chain closes:** True — The equivalence follows directly from the unitary DFT/Plancherel identity and the trivial-character norm formula. The note explicitly limits itself to a change of basis and excludes any physical Koide closure or operator-level derivation.
 - **rationale:** The theorem is a self-contained algebraic equivalence over a positive real 3-vector. The live runner verifies Plancherel, the c_0 norm, proportionality of the Koide and NSC residuals, the Foot angle form, and symbolic sufficiency examples with PASS=8 and FAIL=0. Residual risk is downstream scope drift: this audit does not derive Q=2/3 from Cl(3)/Z^3, construct a lepton mass operator, or prove NSC for physics.
-- **auditor confidence:** high
-
-### `koide_records_pointer_grounds_block_channel_note_2026-05-31`
-
-- **Note:** [`KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md`](../../docs/KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite C3 pointer/trace bookkeeping: S resolves singlet versus doublet blocks, commutes with Gamma_chi, Jcs squares to -P_doublet, trace weights the doublet by dimension 2, and the stated log-functionals have extrema r=1/2 and r=1.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260603-105318-fc96a8f0-koide_records_pointer_gr`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The finite C3 algebra splits into a pointer-style singlet/doublet readout via S=C+C^2 and a trace-style readout that weights the doublet by dimension 2, yielding equal-weight r=1/2 and dimension-weighted r=1 extrema.  _(class `A`)_
-- **chain closes:** True — The selected finite-algebra bookkeeping claims follow by direct matrix algebra and elementary constrained-log optimization. The note correctly preserves the records/objectivity and equal-weight-selection question as out of scope.
-- **rationale:** The selected claim's own load-bearing algebra closes, and the runner performs genuine finite matrix and symbolic optimization checks rather than merely printing constants. However, the strict formula-inventory pass finds a false displayed quantitative formula in the cited KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS authority: its validation bullet states the sign multiplicity as d mod 2, while the note's own table/proof require sign multiplicity 1 for even d and 0 for odd d. Because that false displayed formula is in the restricted source packet, the row should not be marked audited_clean until the formula family is repaired and re-audited.
-- **open / conditional deps cited:**
-  - `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16`

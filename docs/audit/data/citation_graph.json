@@ -16126,10 +16126,6 @@
     },
     {
       "from": "koide_carrier_locus_decomposition_note_2026-06-01",
-      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "koide_carrier_locus_decomposition_note_2026-06-01",
       "to": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23"
     },
     {
@@ -16143,6 +16139,10 @@
     {
       "from": "koide_carrier_locus_decomposition_note_2026-06-01",
       "to": "fermion_parity_z2_grading_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
@@ -49713,7 +49713,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "7f04a2c646c496184afe6b6857ccfca7e8a2994d2c3713bc56073c81984d185c",
+      "note_hash": "60ae2423e8c4ef453453664bb628ed5e86df12ac30fd4101acf8f4fe47ae45ba",
       "path": "docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
       "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem (C1+C2 only, post-2026-05-12 narrowing)"
@@ -64554,14 +64554,14 @@
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
         "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
         "gauge_wilson_isotropy_boundary_note_2026-05-04",
         "q_integer_spectrum_theorem_note_2026-05-02",
-        "fermion_parity_z2_grading_theorem_note_2026-05-02"
+        "fermion_parity_z2_grading_theorem_note_2026-05-02",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5bbb070e0a20b93d85bc19e183002264b3ef8b0f2417890243f6cc2d0a042d42",
+      "note_hash": "83d9ae65d64cb632a23194e89ec061912a5b7578299c4ce5dbc13bea0a3878b4",
       "path": "docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md",
       "runner_path": "scripts/frontier_koide_carrier_locus_decomposition.py",
       "title": "Carrier-Locus Decomposition: matter operator import localized; Hamming-weight-1 locus labels are native"

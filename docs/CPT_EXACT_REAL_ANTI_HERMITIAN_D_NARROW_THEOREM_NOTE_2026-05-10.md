@@ -188,13 +188,13 @@ conditional corollary scope.
 alone send `D -> -D`; neither is a symmetry of `D`. The combination
 `Theta = C P T` is.
 
-**(R2) Spectrum reality.** From (3), `T D T = D`. Hence the spectrum
-of `D` is closed under complex conjugation: if `lambda` is an
-eigenvalue with eigenvector `v`, then `-lambda^*` is an eigenvalue
-with eigenvector `T v` (using anti-Hermiticity `D^dagger = -D` and
-`T linear-conjugate`). For purely imaginary eigenvalues `lambda = i mu`
-with `mu real`, this gives `mu -> mu`, consistent with real
-anti-Hermitian spectrum.
+**(R2) Spectrum conjugation.** From (3), `T D T = D`. Hence if
+`D v = lambda v`, then `D(T v) = lambda^* (T v)` because `T` is
+anti-linear. Thus `T v` carries the conjugate eigenvalue `lambda^*`,
+not `-lambda^*`. Separately, anti-Hermiticity gives
+`lambda = -lambda^*`, so for the real anti-Hermitian case the
+conjugate eigenvalue is the opposite point on the imaginary axis. This
+corollary is not load-bearing for (C1) or (C2).
 
 Both follow algebraically from the premise identities.
 
@@ -301,7 +301,9 @@ verifies, at exact sympy precision:
    framework-specific 8-site (`L = 4`) staggered hopping model. The
    runner additionally exercises the (C3-cond) conditional-corollary
    instances for traceability; these checks are **not** load-bearing.
-2. The two corollaries (R1, R2) follow.
+2. The two corollaries (R1, R2) follow; R2 is checked in its corrected
+   anti-linear form, namely `T v` carries `lambda^*`, not
+   `-lambda^*`.
 3. The framework-specific staggered Cl(3) operator at `L = 4`
    satisfies premises (1)-(3) and therefore inherits (C1)-(C2). The
    `L = 4` instance also happens to satisfy `[C, P] = 0`, so the

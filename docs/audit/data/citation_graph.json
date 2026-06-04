@@ -10325,6 +10325,10 @@
       "to": "physical_lattice_necessity_note"
     },
     {
+      "from": "flavor_det_character_selection_audit_ready_2026-06-04",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
       "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
     },
@@ -57134,6 +57138,20 @@
       "runner_path": "scripts/flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31.py",
       "title": "Flavor Chirality Gate: Finite Algebra Scope Repair"
     },
+    "flavor_det_character_selection_audit_ready_2026-06-04": {
+      "claim_id": "flavor_det_character_selection_audit_ready_2026-06-04",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "an audit-ready verification companion \u2014 supplies the checked computational backbone and proof sketch for the det multiplicative-character form-selection step (factor 2 of the log-det generator), with the honest two-premise bound. Not a value derivation; does not retag any row.",
+      "claim_type_seed_hint": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "1073e1148c7602ee7bf3bb20979177eed8216991ec87f7df28b58bf35012b253",
+      "path": "docs/FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md",
+      "runner_path": "scripts/flavor_det_character_selection_audit_ready_2026_06_04.py",
+      "title": "Flavor \u2014 audit-ready verification of the det multiplicative-character selection (log-det factor 2): det generates the algebraic composition characters and regular additive positive-amplitude readouts give W = c\u00b7log|det|; the residual is the fermionic origin of Z=det, not the det-selection math"
+    },
     "flavor_detr_default_full_exercise_note_2026-05-30": {
       "claim_id": "flavor_detr_default_full_exercise_note_2026-05-30",
       "claim_type_author_hint": "bounded_theorem",
@@ -91852,7 +91870,7 @@
       "decoration": 1,
       "meta": 203,
       "no_go": 96,
-      "none": 1406,
+      "none": 1407,
       "open_gate": 62,
       "positive_theorem": 176
     },
@@ -91861,14 +91879,14 @@
       "decoration": 1,
       "meta": 203,
       "no_go": 199,
-      "none": 425,
+      "none": 426,
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10448,
-    "leaf_count": 901,
-    "node_count": 2769,
+    "edge_count": 10449,
+    "leaf_count": 902,
+    "node_count": 2770,
     "root_count": 942,
-    "runners_with_path": 2354
+    "runners_with_path": 2355
   }
 }

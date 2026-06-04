@@ -8484,6 +8484,18 @@
       "dominant_class": "C",
       "runner": "scripts/flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31.py"
     },
+    "flavor_det_character_selection_audit_ready_2026-06-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 17,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_det_character_selection_audit_ready_2026_06_04.py"
+    },
     "flavor_detr_default_full_exercise_note_2026-05-30": {
       "assert_count": 1,
       "counts": {
@@ -34435,6 +34447,21 @@
         "A": 0,
         "B": 0,
         "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_det_character_selection_audit_ready_2026_06_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_det_character_selection_audit_ready_2026-06-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 17,
         "D": 0
       },
       "decoration_candidate": false,
@@ -62240,12 +62267,12 @@
     "dominant_class_distribution": {
       "A": 291,
       "B": 307,
-      "C": 862,
+      "C": 863,
       "D": 324,
       "none": 465
     },
-    "runners_classified": 2249,
-    "runners_with_C": 1123,
+    "runners_classified": 2250,
+    "runners_with_C": 1124,
     "runners_with_D": 656
   }
 }

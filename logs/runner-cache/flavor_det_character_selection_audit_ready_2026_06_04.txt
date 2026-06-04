@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/flavor_det_character_selection_audit_ready_2026_06_04.py
+runner_sha256: aa37b202baa7a7f911810939ac8b9ce40734259a3f797966f4fa0eb7a1e3c02d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+[PASS] det is multiplicative under COMPOSITION: det(A.S)=det(A)det(S)
+[PASS] tr FAILS composition-multiplicativity: tr(A.S) != tr(A)tr(S) (so tr is EXCLUDED on this axis)
+[PASS] power-trace tr(M^2) FAILS composition-multiplicativity (excluded)
+[PASS] elementary symmetric e_2 FAILS composition-multiplicativity (excluded)
+[PASS] integer powers det^m obey composition-multiplicativity (regular GL(n) characters)
+[PASS] fractional complex branches such as det^(1/2) are NOT global composition characters
+       sqrt(det(F.F))=(1+0j), sqrt(det F)sqrt(det F)=(-1+1.2246467991473532e-16j)
+[PASS] PATTERN L (honest bound): tr IS additive over direct sums (tr(A(+)B)=tr(A)+tr(B)) -- so additivity ALONE cannot exclude tr; the COMPOSITION premise is required
+[PASS] Z=|det| multiplies over patches; regular additive readout is W=c log|det| (Record axis + regularity)
+
+SCORECARD PASS=8 FAIL=0
+AUDIT-READY TARGET: det-selection on the COMPOSITION axis is clean GL(n)-abelianization math
+(integer det powers; tr/power-trace/elementary-symmetric excluded; fractional complex branches
+are not global characters). Additive-of-multiplicative plus regularity fixes W=c*log|det|.
+HONEST BOUND: additivity alone can't exclude tr (Pattern L); the composition premise (M) is
+the residual fermionic/Berezin origin of Z=det, not the det-selection math. Sets no audit
+status; edits no existing row.
+
+----- stderr -----
+

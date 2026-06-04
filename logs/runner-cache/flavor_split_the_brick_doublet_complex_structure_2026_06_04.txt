@@ -1,0 +1,19 @@
+[PASS] J=(C-C^T)/sqrt(3) is antisymmetric (J^T=-J) with eig(J)={0,+i,-i} (real parts ~0, imag {-1,0,1})
+       eig(J)=[ 0.+1.j  0.-1.j -0.+0.j]
+[PASS] J^2 = -I on the 2-dim doublet, 0 on the all-ones singlet (almost-contact: Reeb axis = all-ones)
+       eig(J^2)=[-1. -1.  0.]
+[PASS] J is C_3-equivariant: [J,C]=0
+[PASS] J COMMUTES with every circulant H ([J,H]=0) and does NOT anticommute ({J,H}!=0) => HOLOMORPHIC-READOUT object, not a chiral grading
+[PASS] no-go's Gamma_chi=(2/3)J_allones-I (eig {1,-1,-1}, Gamma^2=I) also COMMUTES with H (so it never graded H), and Gamma_chi != J
+       the 'brick' conflated commuting-J (exists) with a non-existent anticommuting grading
+[PASS] generation factor carries NO anticommuting chiral object for a circulant (comm(C) inter anticomm(Gamma_chi)={0}) => strong-CP antiunitary is NOT here (it is the spacetime-eps object)
+       strong-CP decouples to spacetime+fields; only Koide + gen-ID touch the generation factor
+[PASS] RESIDUAL: J is necessary scaffolding but NOT sufficient -- the value is one DISCRETE bit (signed/det_C r=1/2,Q=2/3 vs unsigned/det_R r=1,Q=1)
+       the sole genuinely-open value-forcer; next target = is the RECORD readout sign-sensitive?
+
+SCORECARD PASS=7 FAIL=0
+SPLIT-THE-BRICK: the commuting C_3-equivariant complex structure J=(C-C^T)/sqrt(3) EXISTS on the
+doublet (holomorphic-readout scaffolding, outside the odd-dim wall and the anticommuting no-go);
+it is DISTINCT from the conflated anticommuting grading; strong-CP DECOUPLES to a spacetime-eps
+object. The three-gate 'brick' is THREE objects; the sole open residual is one discrete readout
+bit (signed/det_C vs unsigned/det_R). J necessary, not sufficient for Q=2/3. No audit status.

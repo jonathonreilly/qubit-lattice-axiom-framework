@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/native_arrow_resolution.py
+runner_sha256: 060d4ff2019586e2116377dfbf5ce9566f0aca9b7659477a39b1b3eb9e683864
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.69
+status: ok
+----- stdout -----
+[PASS] master line  Q = 1/3 + (2/3) r  (from C3 spectrum (a+2b,a-b,a-b))  -- Q = (a**2 + 2*b**2)/(3*a**2)
+[PASS] Koide Q=2/3  <=>  r = |b|^2/a^2 = 1/2  (retained lightcone primitive)  -- r-solutions = [1/2]
+[PASS] g o S = id   (sqrt(S/2) = r)
+[PASS] S o g = id   (2 g^2 = r)  -- => the thermalizing map is exactly the time-reverse of the sharpening map
+[PASS] sharpening fixed points = {0, 1/2}  -- [0, 1/2]
+[PASS] sharpening multiplier at r=0  is 0  (<1 -> STABLE: r=0, Q=1/3)
+[PASS] sharpening multiplier at r=1/2 is 2  (>1 -> UNSTABLE separatrix: Q=2/3)  -- r>1/2 runs away to r->1 (Q=1)
+[PASS] thermalizing fixed points = {0, 1/2}  -- [0, 1/2]
+[PASS] thermalizing multiplier at r=1/2 is 1/2 (<1 -> STABLE attractor: Q=2/3)  -- => repeller<->attractor flip at the IDENTICAL fixed point r=1/2 (pure arrow reversal)
+[PASS] sharpening: seed 0.49 -> 0 (singlet collapse, Q=1/3 basin)  -- -> 0.00e+00
+[PASS] sharpening: seed 0.51 -> runs UP past 1 (Q=1 / hierarchy direction)  -- -> inf (r=1/2 is the repelling watershed)
+[PASS] thermalizing: seeds 0.02 and 5.0 both -> 1/2 (global attractor)  -- 0.500000, 0.500000
+[PASS] native heat-kernel/blocking flow r(t)=tanh^4 t ; beta_r = 4 tanh^3 t sech^2 t
+[PASS] native beta_r = dr/dt > 0 for ALL finite t>0 (r strictly increasing 0->1)
+[PASS] native UV fixed point  r(0) = 0  (Q=1/3)
+[PASS] native IR fixed point  r(inf) = 1  (Q=1)
+[PASS] native flow at r=1/2 has beta_r != 0 (TRANSIT, not a fixed point)  -- t=1.2242, beta_r=0.6966
+[PASS] native arrow at r=1/2 pushes r UPWARD (toward r=1, Q=1) -- the SHARPENING sense  -- thermalizing map would instead pull a perturbed r BACK to 1/2; native does the opposite
+[PASS] r=0 spectrum (1,1,1): 1 distinct value -> FULL S3 (enhanced) -> native fixed point
+[PASS] r=1 spectrum (3,0,0): two ZERO eigenvalues -> rank-1 (enhanced) -> native fixed point
+[PASS] r=1/2 spectrum: generic doublet+singlet (same multiplicity pattern as generic r) -> NO symmetry enhancement -> NOT a native fixed point
+[PASS] singlet block rank 1, doublet block rank 2 (Tr P0=1, Tr P1=2)
+[PASS] Born/tracial state rho=I/3 weights blocks by DIMENSION (1:2) -> equilibrium r=1 (Q=1), NOT r=1/2  -- r=1/2 is the SEPARATE equal-power-per-block (det_C) point, not the Born/second-law attractor
+[PASS] => native second-law/Born endpoint (r=1) AGREES with the native heat-kernel IR fixed point (r=1)
+
+==============================================================================
+VERDICT: the NATIVE emergent-time arrow is the SHARPENING / imaginary-time
+contraction branch (single-clock Stone T^n=exp(-n tau H_gen); heat-kernel
+blocking r(t)=tanh^4 t, beta_r>0). It drives r 0->1, i.e. AWAY from r=1/2
+toward r=1 (Q=1). The Born/second-law equilibrium INDEPENDENTLY gives r=1.
+Therefore Q=2/3 (r=1/2) is ANTI-FAVORED by the native dynamics: r=1/2 is the
+UNSTABLE separatrix / balanced stationary point, reachable only by PLACING the
+system there via the separate Tier-A admitted input AC_phi_lambda (det_C /
+block-counting selector), NOT by flowing to it. The 'thermalizing -> r=1/2'
+note ran the NON-native (entropy-increasing toward a block-counting measure)
+arrow; the native blocking/records arrow is the opposite.
+==============================================================================
+SCORECARD: PASS=24 FAIL=0
+
+----- stderr -----
+

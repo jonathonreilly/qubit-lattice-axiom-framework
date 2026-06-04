@@ -9,7 +9,7 @@ audit pipeline after independent review.
 audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py`](../scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py)
-(SCORECARD: PASS=53, FAIL=0)
+(SCORECARD: PASS=54, FAIL=0)
 **Cached runner output:** [`logs/runner-cache/frontier_lorentz_boost_free_staggered_fermion_2point_so4.txt`](../logs/runner-cache/frontier_lorentz_boost_free_staggered_fermion_2point_so4.txt)
 
 This note is the **matter-sector (fermion) analogue** of the existing
@@ -28,7 +28,11 @@ On the free (`U = 1`) staggered (Kogut-Susskind) Euclidean lattice over the
 framework's canonical phases `η_0 = 1`,
 `η_μ(n) = (-1)^{n_0 + ... + n_{μ-1}}`, the **continuum-limit** spin⊗taste
 form of the free staggered Dirac operator in the spin-diagonal
-(Kähler-Dirac) basis is
+(Kähler-Dirac) basis is written below in physical momentum/mass units
+with lattice spacing `a`. Equivalently, the lattice-unit action uses
+dimensionless mass `M = ma` and dimensionless momentum `k_μ = p_μ a`;
+its operator is `D_lat(k) = M 1 + i Σ_μ γ_μ sin k_μ`, and the physical
+operator is the normalization `D_phys(p) = a^{-1} D_lat(pa)`:
 
 ```text
     D~(p) = m (1_spin ⊗ 1_taste)
@@ -113,17 +117,31 @@ free 2-point function is well-defined and the SO(4) statement is
 
 ### Free staggered operator and the Kähler-Dirac spin/taste structure
 
-The framework's free staggered action (`U = 1`) is
+The framework's free staggered action in lattice units (`U = 1`, unit
+lattice spacing in the difference term) is
 
 ```text
-    S = Σ_{n} χ̄(n) [ m χ(n)
+    S_lat = Σ_{n} χ̄(n) [ M χ(n)
           + (1/2) Σ_μ η_μ(n) ( χ(n + ê_μ) - χ(n - ê_μ) ) ],
+    M = m a,
     η_0 = 1,   η_μ(n) = (-1)^{n_0 + ... + n_{μ-1}},
 ```
 
 the same single-Grassmann-component-per-site staggered action used in
 the framework's reflection-positivity and dispersion notes (see
-Dependencies). The position-dependent phases `η_μ(n)` are removed by the
+Dependencies). The physical-unit first-order operator used in the
+momentum-space theorem is the normalized matrix
+
+```text
+    D_phys = a^{-1} D_lat,
+    (D_phys χ)(n) = m χ(n)
+        + (1/(2a)) Σ_μ η_μ(n) ( χ(n + ê_μ) - χ(n - ê_μ) ).
+```
+
+Thus the displayed `sin(p_μ a)/a` operator is not an imported convention:
+it is the lattice-unit action with `M = ma`, `k_μ = p_μ a`, multiplied by
+the physical normalization `a^{-1}`. The position-dependent phases
+`η_μ(n)` are removed by the
 standard spin-diagonalisation `χ(n) = Ω(n) ψ(n)`,
 `Ω(n) = γ_0^{n_0} γ_1^{n_1} γ_2^{n_2} γ_3^{n_3}`, which carries the one
 component per site of a `2×2×2×2` hypercube into a Dirac spinor index
@@ -158,8 +176,9 @@ runner reconstructs the reduced-Brillouin-zone operator directly from
 the canonical free action and phases as follows.
 
 Write each lattice site as `n = 2y + b`, with hypercube label
-`b ∈ {0,1}^4`, and Fourier transform only the coarse label `y`, so the
-coarse momentum is `K_μ = 2 p_μ a`. For one direction `μ`, the
+`b ∈ {0,1}^4`, and Fourier transform only the coarse label `y`. With
+`k_μ = p_μ a`, the coarse momentum is `K_μ = 2k_μ = 2 p_μ a`. For one
+direction `μ`, the
 forward/backward difference acts on the 16 hypercube components by
 flipping `b_μ`. Boundary-crossing hops carry exactly the phases
 `exp(±i K_μ)`. The momentum-local rephasing
@@ -171,14 +190,16 @@ flipping `b_μ`. Boundary-crossing hops carry exactly the phases
 removes those boundary phases and leaves the exact reduced operator
 
 ```text
-    D_red(p) = m I_16 + i Σ_μ α_μ sin(p_μ a)/a,
+    D_lat(k) = M I_16 + i Σ_μ α_μ sin k_μ,
+    D_red(p) = D_phys(p) = a^{-1} D_lat(pa)
+             = m I_16 + i Σ_μ α_μ sin(p_μ a)/a,
     (α_μ)_{b⊕e_μ,b} = η_μ(b) = (-1)^{Σ_{ν<μ} b_ν}.
 ```
 
-The runner verifies this equality by constructing the blocked
-finite-difference matrices before and after the rephasing; the maximum
-residual is at machine precision. No continuum approximation enters this
-step.
+The runner verifies both the `D_phys = a^{-1}D_lat` normalization bridge
+and this blocked finite-difference equality by constructing the matrices
+before and after the rephasing; the maximum residual is at machine
+precision. No continuum approximation enters this step.
 
 The matrices `α_μ` are Hermitian involutions and satisfy
 
@@ -343,16 +364,16 @@ position-space SO(4) scalar Schwinger kernel is the same
 
 ```bash
 python3 scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py
-# SCORECARD: PASS=53  FAIL=0
+# SCORECARD: PASS=54  FAIL=0
 # Exit code: 0
 ```
 
-The 53 checks span 9 parts (self-contained: numpy + scipy.special +
+The 54 checks span 9 parts (self-contained: numpy + scipy.special +
 optional sympy):
 
 | Part | Coverage                                                            | PASS |
 |------|--------------------------------------------------------------------|------|
-| 0    | Canonical staggered phase/blocking derivation to `γ_μ ⊗ 1_taste`    | 6    |
+| 0    | Action-normalization bridge plus canonical staggered phase/blocking derivation to `γ_μ ⊗ 1_taste` | 7 |
 | 1    | Euclidean Clifford algebra + staggered operator + closed-form inverse | 5  |
 | 1a   | Exact finite-a scalar spectrum Δ(p) + 4-fold taste multiplicity (position-space staggered operator) | 7 |
 | 2    | Continuum limit → SO(4) Euclidean Dirac propagator, D~ block (O(a²) of the displayed taste-spectator block) | 5    |
@@ -362,7 +383,7 @@ optional sympy):
 | 6    | Position-space SO(4) isotropy of the lattice trace 2-point (even sublattice) | 4 |
 | 7    | Combined SO(4)/SO(3,1) statement + relation to the scalar note     | 9    |
 
-Total: 53/53 PASS.
+Total: 54/54 PASS.
 
 A noted structural feature (Part 6): the trace (taste-summed) 2-point
 `tr G~ = 4m/Δ(p)` is invariant under the staggered taste shift

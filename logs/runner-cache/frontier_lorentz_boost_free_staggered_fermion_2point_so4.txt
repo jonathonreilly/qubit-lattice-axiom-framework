@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py
-runner_sha256: 51381e75f0b0a91eae33b759ca2b312beab1245d95c70bef2cb6bab24347932d
+runner_sha256: c5caa0e09a30f24e369d89a9dda5038114ab105e014003c94f422a57bd136699
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 26.57
+elapsed_sec: 18.30
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -18,6 +18,7 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
 
 === Part 0: canonical staggered phases -> reduced-BZ spin/taste operator ===
 
+  [PASS] Action-normalization bridge: a^-1 D_lat(pa,ma)=D~(p) with 1/(2a) kinetic term  (max operator residual=1.1e-16, Delta residual=2.2e-16)
   [PASS] Canonical eta flip matrices alpha_mu obey Cl(4): {alpha_mu,alpha_nu}=2delta  (herm=0.0e+00, square=0.0e+00, anti=0.0e+00)
   [PASS] Blocked free staggered difference reduces exactly to i sin(p_mu a)/a * alpha_mu  (max residual after exp(iap.b) rephasing = 4.7e-16)
   [PASS] Full blocked action is m I_16 + i sum_mu alpha_mu sin(p_mu a)/a  (max full-operator residual = 1.1e-16)
@@ -45,7 +46,7 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
   [PASS] L=2: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)  (max|eig - Delta(p)| = 0.0e+00 (taste NOT in eigenvalue))
   [PASS] L=2: all spectral multiplicities divisible by 4 (4-fold taste)  (1 distinct eigenvalues, multiplicities [16])
   [PASS] L=4: M^dag M Hermitian (free staggered, position space)  (max|MdM - MdM^dag| = 0.0e+00)
-  [PASS] L=4: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)  (max|eig - Delta(p)| = 8.4e-15 (taste NOT in eigenvalue))
+  [PASS] L=4: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)  (max|eig - Delta(p)| = 9.8e-15 (taste NOT in eigenvalue))
   [PASS] L=4: all spectral multiplicities divisible by 4 (4-fold taste)  (5 distinct eigenvalues, multiplicities [16, 64, 96, 64, 16])
   [PASS] Finite-a dof count: 16*(L/2)^4 = L^4 (taste lives on block lattice 2a)  (16*(2)^4 = 256 = L^4 = 256 (so a single-spacing 16-comp taste-flat identity is forbidden))
 
@@ -110,7 +111,7 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
   [PASS] Unconditional for the FREE 2-point function (free theory limit exists)  (NOT interacting, NOT n-point, NOT OS reconstruction, NOT FS)
 
 ==============================================================================
-SCORECARD: PASS=53  FAIL=0
+SCORECARD: PASS=54  FAIL=0
 ==============================================================================
 
 All checks passed. The FREE staggered-Dirac 2-point Schwinger

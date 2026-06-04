@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_twocube_closedform_2026_06_04.py
+runner_sha256: 9c56a5b8aebcca15fc4bf9153cfa49cf6e48743a45102a9dbcd8e889846ea25d
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 58.15
+status: ok
+----- stdout -----
+==============================================================================
+BETA=6 LANE 2: bounded validation of the weight-10 two-cube candidate
+==============================================================================
+
+V0. cube-sector closed form 72 K''(K')^5 reproduces d_5..d_8 (reproven, cited)
+  [PASS] cube closed form 72 K''(K')^5 reproduces the direct-engine d_5..d_8 exactly
+         d_5=1/472392; d_6=7/5668704; d_7=5/17006112; d_8=5/272097792
+  [PASS] cube prefactor 72 = (4 cubes through p0) * 18 (universal marked-face weight 1/<X_p0^2>)
+         72 = 4*18; <X_p0^2> = 1/18
+
+V1. weight-10 two-cube supports (streamed) + configuration count
+  [PASS] 60 distinct weight-10 supports (one orbit), STABLE radius2 == radius3; and 60 = #weight-10 two-cube configs through p0 (forces the prefactor)
+         radius2=60, radius3=60, configs=60 (36096 pair-combos streamed)
+
+V2. exact weight-10 class at orders 9..10 (orbit collapse, 1 orbit representative/order)
+  [PASS] order 9: 1 orbit representative gives per-support cumulant 1/198359290368 -> class = 60*per = 5/16529940864
+         weight-10[9] = 5/16529940864 = 3.02481421e-10 (walled=False, 0.5s)
+  [PASS] order 10: 1 orbit representative gives per-support cumulant 11/2380311484416 -> class = 60*per = 55/198359290368
+         weight-10[10] = 55/198359290368 = 2.77274636e-10 (walled=False, 25.0s)
+  [PASS] d_9 weight-10 class = +5/16529940864 (REGRESSION vs the d_9 note's new-support part)
+         W[9] = 5/16529940864
+
+V3. zero-parameter candidate 1080 K''(K')^9 = (60 configs)*18*K''(K')^(F-1)
+  [PASS] the candidate constant fixed by the LEADING (order-9) coefficient equals 1080 = 60 configs * 18 marked-face weight
+         A(order-9) = 1080; forced value 60*18 = 1080; matches = True
+     order 9 [DERIVED(A)]: 1080*K''(K')^9 = 5/16529940864  vs  exact = 5/16529940864  MATCH=True
+     order 10 [OUT-OF-SAMPLE]: 1080*K''(K')^9 = 55/198359290368  vs  exact = 55/198359290368  MATCH=True
+  [PASS] candidate 1080 K''(K')^9 reproduces held-out orders [10] OUT-OF-SAMPLE (neither used to fix the constant)
+         out-of-sample held-out orders [10] all match = True
+
+V4. discrimination control: the naive (K'')^2(K')^9 has the wrong exponents
+  [PASS] the wrong candidate 19440 (K'')^2(K')^9 matches order 9 (by construction) but misses order 10 by ratio 11/13
+         19440*(K'')^2(K')^9 order-10 pred = 65/198359290368, exact = 55/198359290368, actual/pred = 11/13 (!=1)
+
+V5. two-engine cross-check (sympy == Fraction) on a weight-10 cumulant (order 9)
+  [PASS] sympy joint_cumulant == Fraction joint_cumulant = 1/198359290368 (order-9 weight-10 word)
+         Fraction = 1/198359290368, sympy = 1/198359290368
+
+V6. beta=6 candidate readout + backbone update (NOT a closure)
+  [PASS] the candidate expression converges at beta=6 (J-zero |beta|=8.2052 > 6; K',K'' rational in J): value stable across J truncations N=50,75,100
+         1080 K''(K')^9 at beta=6 = 0.03007958721 (N=50: 0.03007958721, N=100: 0.03007958721)
+     P_1plaq(6) = K'(6) = 0.42253174  (established 0.422532)
+     Delta_cube(6) = 72 K''(K')^5 = 0.062913415  (established 0.062913)
+     candidate weight-10 two-cube 1080 K''(K')^9 at beta=6 = 0.030079587
+     non-cube remainder 0.10796 -> 0.07788041 (shrunk by the candidate expression)
+     <P>-model(6): 0.485445 -> 0.51552459 ; gap to 0.5934 comparator: 0.107955 -> 0.0778754 (0.594 is a comparator, NOT input)
+
+==============================================================================
+WEIGHT-10 TWO-CUBE CLASS -- EXACT COEFFICIENTS + ZERO-PARAM CANDIDATE:
+   weight-10[9] = 5/16529940864 = 3.02481421e-10  (= 1080 K''(K')^9 [b^9])
+   weight-10[10] = 55/198359290368 = 2.77274636e-10  (= 1080 K''(K')^9 [b^10])
+   candidate: Delta_2cube^(w10)(beta) = 1080 K''(K')^9 = (60 configs)*18*K''(K')^(F-1), F=10
+   beta=6 value = 0.030079587  (converges; J-zero 8.2052 > 6)
+==============================================================================
+SCORECARD: PASS=11 FAIL=0   (57.4s)
+==============================================================================
+This is bounded finite-order support for a zero-parameter candidate.
+It is NOT an all-order proof or a beta=6 closure: weights 11, 12 and higher
+clusters remain, and the retained infinite-hierarchy obstruction stands.
+0.594 is a Monte-Carlo comparator, never a derivation input.
+
+----- stderr -----
+

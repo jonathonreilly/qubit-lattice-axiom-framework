@@ -57439,6 +57439,18 @@
       "runner_path": "scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py",
       "title": "Flavor \u2014 no native latitude-quantizer (4 mechanisms); the RP \"self-dual\" lead is REFUTED (circular); reframed to the operator-algebra trace-vs-center question"
     },
+    "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04": {
+      "claim_id": "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem (finite-matrix calculus identity).",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "1ca4c1c466a6b424a41a22ce55fd35a5ab4c6a8707b59b33d89fcc1ae89796b5",
+      "path": "docs/FLAVOR_LOGDET_FACTOR_4B_JACOBI_DERIVATIVE_NARROW_THEOREM_NOTE_2026-06-04.md",
+      "runner_path": "scripts/flavor_logdet_factor_4b_jacobi_derivative_2026_06_04.py",
+      "title": "Flavor - log-det generator Factor 4b: finite-block Jacobi derivative identity (narrow positive theorem)"
+    },
     "flavor_logdet_form_under_record_axiom_2026-06-04": {
       "claim_id": "flavor_logdet_form_under_record_axiom_2026-06-04",
       "claim_type_author_hint": null,
@@ -91326,6 +91338,7 @@
     "flavor_interacting_matter_build_note_2026-05-30",
     "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31",
     "flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30",
+    "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
     "flavor_measure_positivity_agnostic_note_2026-05-31",
     "flavor_missing_axiom_carrier_measure_note_2026-05-30",
     "flavor_native_beta_no_half_attractor_note_2026-05-30",
@@ -91943,7 +91956,7 @@
       "no_go": 97,
       "none": 1407,
       "open_gate": 62,
-      "positive_theorem": 176
+      "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1227,
@@ -91952,12 +91965,12 @@
       "no_go": 200,
       "none": 426,
       "open_gate": 137,
-      "positive_theorem": 578
+      "positive_theorem": 579
     },
     "edge_count": 10458,
-    "leaf_count": 902,
-    "node_count": 2772,
-    "root_count": 942,
-    "runners_with_path": 2357
+    "leaf_count": 903,
+    "node_count": 2773,
+    "root_count": 943,
+    "runners_with_path": 2358
   }
 }

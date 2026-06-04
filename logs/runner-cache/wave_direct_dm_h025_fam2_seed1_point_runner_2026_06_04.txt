@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+runner_sha256: 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 117.71
+status: ok
+----- stdout -----
+PASS family is fixed to Fam2
+PASS seed is fixed to 1
+PASS H is fixed to 0.25
+PASS source strength is fixed to 0.004
+PASS drift fixture matches Fam2
+PASS restore fixture matches Fam2
+PASS d_early matches archived target log
+PASS d_late matches archived target log
+PASS delta_hist matches archived target log
+PASS r_hist matches archived target log
+PASS NL matches archived target log
+PASS PW matches archived target log
+PASS src_layer matches archived target log
+PASS iz_start_real matches archived target log
+PASS iz_end_real matches archived target log
+PASS late gain equals -delta_hist
+PASS late gain is on the seed-1 coarse scale
+PASS normalized response is not a stable amplitude-law promotion
+PASS artifact present: scripts/wave_direct_dm_h025_point_runner.py
+PASS artifact present: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+PASS artifact present: logs/2026-04-08-wave-direct-dm-h025-fam2-seed1.txt
+PASS artifact present: docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+PASS artifact present: docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md
+PASS artifact present: docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md
+PASS artifact present: docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md
+PASS artifact present: docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md
+PASS artifact present: docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md
+WAVE DIRECT-DM H025 FAM2 SEED1 TARGET CERTIFICATE
+family=Fam2 drift=0.05 restore=0.30
+seed=1
+H=0.250 strength=0.004000
+dM(early)  = +0.003777
+dM(late)   = +0.005814
+delta_hist = -0.002037
+R_hist     = -35.03%
+late_gain  = +0.002037
+OUTPUT_JSON=outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json
+SUMMARY: WAVE H025 FAM2 SEED1 PASS=27 FAIL=0
+
+----- stderr -----
+

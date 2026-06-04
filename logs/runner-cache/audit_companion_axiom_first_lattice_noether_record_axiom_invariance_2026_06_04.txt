@@ -1,0 +1,133 @@
+Axiom-First Lattice Noether Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-lattice-noether-invariance/wt
+Parent note: /private/tmp/cl3-lattice-noether-invariance/wt/docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+Companion source note: docs/AXIOM_FIRST_LATTICE_NOETHER_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing lattice Noether identity
+      chain is invariant under the 2026-06-04 Record-axiom adoption
+      (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: KS phase periodicity eta_mu(x + 2 rho-hat) = eta_mu(x)
+========================================================================
+  Lattice axiom + KS-phase-form admission (parent Step 4b).
+  PASS KS_phase_periodic_under_2rho_shifts_all_sites_dirs :: checked 576 (site, mu, rho) triples; violations = 0
+
+========================================================================
+BLOCK 2: One-site shift breaks staggered symmetry (parent Step 5)
+========================================================================
+  PASS one_site_shifts_exhibit_KS_phase_flip :: violations = 192 / 576; e.g. ['x=(0, 0, 0), mu=1, shift_dir=0: eta=1.0, eta_shifted=-1.0', 'x=(0, 0, 0), mu=2, shift_dir=0: eta=1.0, eta_shifted=-1.0', 'x=(0, 0, 0), mu=2, shift_dir=1: eta=1.0, eta_shifted=-1.0']
+
+========================================================================
+BLOCK 3: [T=iI, M] = 0 (U(1) phase symmetry condition (6))
+========================================================================
+  PASS U1_phase_symmetry_condition_commutator_zero :: L=3, N=27, max|[T, M]| = 0.000e+00
+
+========================================================================
+BLOCK 4: [M_KS, S^(2 mu)] = 0 (parent Step 4b commutator)
+========================================================================
+  PASS two_step_shift_commutes_with_MKS_mu_0 :: L=4, mu=0, max|[M_KS, S^(2 mu)]| = 0.000e+00
+  PASS two_step_shift_commutes_with_MKS_mu_1 :: L=4, mu=1, max|[M_KS, S^(2 mu)]| = 0.000e+00
+  PASS two_step_shift_commutes_with_MKS_mu_2 :: L=4, mu=2, max|[M_KS, S^(2 mu)]| = 0.000e+00
+
+========================================================================
+BLOCK 5: D^(2 rho) skew-adjoint AND [M_KS, D^(2 rho)] = 0
+========================================================================
+  PASS D_2rho_skew_adjoint_rho_0 :: L=4, rho=0, max|D + D^†| = 0.000e+00
+  PASS D_2rho_commutes_with_MKS_rho_0 :: L=4, rho=0, max|[M_KS, D]| = 0.000e+00
+  PASS D_2rho_skew_adjoint_rho_1 :: L=4, rho=1, max|D + D^†| = 0.000e+00
+  PASS D_2rho_commutes_with_MKS_rho_1 :: L=4, rho=1, max|[M_KS, D]| = 0.000e+00
+  PASS D_2rho_skew_adjoint_rho_2 :: L=4, rho=2, max|D + D^†| = 0.000e+00
+  PASS D_2rho_commutes_with_MKS_rho_2 :: L=4, rho=2, max|[M_KS, D]| = 0.000e+00
+
+========================================================================
+BLOCK 6: Bilateral (5) specializes to fermion-number (4) under U(1)
+========================================================================
+  T^hat = iI applied to (5): J^{mu,A}_x = (1/2) eta_mu(x)
+  [chi-bar_x T^hat chi_{x+mu} + chi-bar_{x+mu} T^hat chi_x]
+  Convention -i applied gives (4): -(1/2) eta_mu(x) [chi-bar_x chi_{x+mu} + chi-bar_{x+mu} chi_x]
+  PASS bilateral_5_specializes_to_fermion_number_4_under_U1 :: checked 81 (site, mu) pairs; coefficient mismatches = 0
+
+========================================================================
+BLOCK 7: On-shell divergence ∂^L_µ J^µ_x = 0 on free carrier
+========================================================================
+  PASS fermion_number_current_on_shell_divergence_zero :: L=4, mass=0.5, max |div J|_x = 2.637e-16
+
+========================================================================
+BLOCK 8: Localized two-step Ward identity (3a) on sampled fields
+========================================================================
+  Nullspace found (n_null=8); max|M chi| & max|chi-bar M| = 1.082e-15
+  PASS two_step_Ward_identity_on_shell_RHS_zero :: L=4, |RHS of (3a)| on on-shell fields = 0.000e+00
+
+========================================================================
+BLOCK 9: Parent note Record-axiom usage scan
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-lattice-noether-invariance/wt/docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+  PASS load_bearing_section_start_found :: start index = 7955
+  PASS load_bearing_section_end_found :: end index = 23736
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+  PASS lattice_quantum_content_present_in_load_bearing_section :: matches >= 3: ['Cl(3', 'Z^3', '(2Z)^3', 'MINIMAL_AXIOMS_2026-05-20', 'qubit']
+
+========================================================================
+BLOCK 10: Record-axiom counterfactual: identical numeric output
+========================================================================
+  PASS counterfactual_T_M_commutator_identical :: with=0.000e+00, without=0.000e+00
+  PASS counterfactual_D_skew_identical :: with=0.000e+00, without=0.000e+00
+  PASS counterfactual_D_M_commutator_identical :: with=0.000e+00, without=0.000e+00
+  PASS counterfactual_5_to_4_specialization_identical :: both report match
+  PASS with_record_axiom_T_M_commutator_zero :: = 0.000e+00
+  PASS without_record_axiom_T_M_commutator_zero :: = 0.000e+00
+
+========================================================================
+BLOCK 11: Quantum and Lattice content preserved across memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-lattice-noether-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-lattice-noether-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical one-qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom = additive scalar functional
+  PASS new_memo_Record_scope_excludes_dynamics_and_action :: Record axiom's own scope statement explicitly excludes the load-bearing bridges (log-det, source/action, etc.)
+
+========================================================================
+BLOCK 12: Hypothesis-set parity across the axiom-set change
+========================================================================
+  PASS retained_substep1_grassmann_note_present :: /private/tmp/cl3-lattice-noether-invariance/wt/docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md
+  PASS parent_note_present_for_parity_check :: /private/tmp/cl3-lattice-noether-invariance/wt/docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+  PASS parent_admitted_inputs_present_unchanged :: missing tokens = []
+  PASS parent_cites_2026_05_20_memo_for_lattice_quantum_content :: parent cites the 2026-05-20 memo for the Lattice + Quantum content that the 2026-06-04 memo preserves
+
+========================================================================
+BLOCK 13: 3-way independent recomputation of (5) -> (4) closure
+========================================================================
+  PASS route_a_symbolic_identity_holds :: symbolic (5)|U(1)*-i = -(4)
+  PASS route_b_numeric_on_random_field :: max | (-i*(5)|U1) - (-(4)) | = 0.000e+00
+  PASS route_c_coefficient_level_match :: c_5|U1*-i = 0.500000-0.000000j, -c_4 = 0.500000
+  PASS all_three_routes_agree :: symbolic + numeric + coefficient all consistent
+
+========================================================================
+TOTAL PASS: 42
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing lattice Noether identity chain of
+  AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md uses ONLY
+  Lattice + Quantum axiom content (preserved across the 2026-05-20
+  -> 2026-06-04 axiom-set change) + the retained substep-1 Grassmann
+  narrow theorem + named admitted carrier inputs that are unchanged
+  across the axiom-set change. The Record axiom (additive scalar
+  record-readout functional) is neither used nor invoked. Numeric
+  output of the load-bearing identity checks is identical under
+  'Record axiom asserted' and 'Record axiom not asserted' outer
+  scopes. This runner does not re-apply the prior audit verdict;
+  it records that the arithmetic checked here is unchanged by the
+  2026-06-04 axiom-set adoption.
+
+The audit lane decides whether to honor or re-test the prior
+verdict on the new minimal_axioms premise hash.

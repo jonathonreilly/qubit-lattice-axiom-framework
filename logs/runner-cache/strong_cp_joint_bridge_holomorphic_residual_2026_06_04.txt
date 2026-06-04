@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/strong_cp_joint_bridge_holomorphic_residual_2026_06_04.py
+runner_sha256: bcd000a50b3ce7951bcb3c9ade34257653bf03c4464ea61f1e7e3d4f88fda347
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[PASS] (1) theta_bar anomaly-invariant bookkeeping: arg det M shifts by +n*alpha and theta_QCD by -n*alpha
+       d(arg det)=1.1100=n*alpha=1.1100; theta_bar fixed under paired shifts
+[PASS] (2a) pure-K makes the tested density ODD: conj(i(C-C^2)) = -i(C-C^2)
+[PASS] (2b) reflection-composed P makes it EVEN: P conj(G) P = +G
+[PASS] (2c) pure-K unavailable for non-real b in this Hermitian circulant class; P maps b to conj(b)
+[PASS] (3) sector-disjoint: gauge reflection and generation parity act on different factors
+[PASS] (4) residual marker: pure-K is available only after changing the coupling class or landing on a real boundary
+       current non-real-b Hermitian class needs the reflection-composed P relation
+
+SCORECARD PASS=6 FAIL=0
+FINDING: the tested joint-basis bridge does not force theta_bar to zero.
+Gauge reflection and generation parity are sector-disjoint in this model;
+the generation density is odd under pure K but even under reflection-composed P;
+and theta_bar is invariant under the paired anomaly bookkeeping shifts.
+A holomorphic/chiral generation structure remains an open residual lead,
+not a theorem established by this runner. No audit status.
+
+----- stderr -----
+

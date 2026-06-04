@@ -1,0 +1,23 @@
+loop: flavor-retention-law-conditional-algebra-repair-20260604
+date: 2026-06-04
+mode: run
+target_status: bounded-support
+cycle_count: 1
+active_route: remove hard-coded A2/source-locality assertion and narrow to finite conditional algebra
+hard_residual: A2-to-source-locality bridge remains unproved
+files_touched:
+  - docs/FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md
+  - scripts/flavor_retention_law_is_A2plus_2026_05_31.py
+  - logs/runner-cache/flavor_retention_law_is_A2plus_2026_05_31.txt
+open_imports:
+  - retained or accepted A2-to-source-locality bridge
+  - physical charged-lepton mass-source readout premise
+  - substrate-necessity bridge if used to derive source-locality
+no_go_routes:
+  - Do not claim A2 entails source-locality from this packet.
+  - Do not claim charged-lepton Q=2/3 effective status from conditional algebra alone.
+trace_gate_classification: direct_blocker_closure
+review_findings: pending independent reviewer
+pr_status: pending
+next_exact_action: open review PR from this branch
+stop_condition: branch packaged with runner pass and cache refresh

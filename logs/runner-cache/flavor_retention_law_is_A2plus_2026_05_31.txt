@@ -1,26 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_retention_law_is_A2plus_2026_05_31.py
-runner_sha256: 969f1d41987b761538a1c51feb8bf6f7d0d138fc8030356f13b10e09be2b73fc
+runner_sha256: bf2d4873d70b93a2e6b6e9ef077185f48f059907c8ef2fb2efb8efc1a1a8e752
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.23
 status: ok
 ----- stdout -----
-[PASS] R2 C3 forces J_site=s*I (a=b=c); Q(z)=2/(3(1+z)): Q(0)=2/3, Q(-1/3)=1
-       Q(0)=2/3, Q(-1/3)=1
-[PASS] R2b Z=2P+-I (Z^2=I); S_Q1=I-Z/3 diag 10/9 offdiag -2/9 = -2/d^2 at d=3
-[PASS] R3 generation operator (circulant) lives OFF-DIAGONAL (domain 2); onsite descent discards b -> scalar
-       off-diag b={np.float64(0.6)} nonzero; onsite descent = 1.0*I (b discarded). D∩circulant=span{I}
-[PASS] R1 A2 = structure-locality (Z^3 + adjacency) only; source/observable-locality is NOT axiom content
-       retention law = source-locality = Axiom 2-plus, logically independent of A2
+[PASS] R2a C3-invariant onsite diagonal sources are scalar; supplied Q gives Q(0)=2/3 and Q(-1/3)=1
+       solve -> {a: c, b: c}; Q(0)=2/3, Q(-1/3)=1
+[PASS] R2b Z=2P_+-I and S_Q1=I-Z/3 have the displayed d=3 coefficients
+       diag(S_Q1)=10/9 and offdiag(S_Q1)=-2/9=-2/d^2
+[PASS] R3a onsite diagonal algebra intersects the C3 circulant algebra only in scalars
+       D intersect circulant solve -> {x: z, y: z}
+[PASS] R3b sample circulant mass splitting is off-diagonal and onsite descent erases it to a scalar
+       offdiag entries include [0.6]; descent=1.0*I
 
 SCORECARD PASS=4 FAIL=0
-VERDICT: Axiom 2-plus. Q=2/3 is a CONDITIONAL positive -- derived modulo ONE named source-locality
-half-axiom ('physical mass-sources are onsite-local'), which is NOT entailed by A2 (structure-
-locality only), is currently unsupplied (bridge leans on a narrowed-out sec9, no retained authority),
-and is in TENSION with the off-diagonal circulant mass mechanism it would discard. Honest, not circular
-(the descent theorem openly conditions on the missing law). NEXT: derive source-locality from a
-retained substrate-necessity bridge (single_axiom_hilbert/information) to upgrade Axiom 2-plus -> A2.
+VERDICT: BOUNDED-SUPPORT finite conditional algebra only. If an extra source-locality/readout
+premise selects onsite diagonal sources, the displayed algebra gives Q=2/3; the projected
+z=-1/3 domain gives Q=1. The runner does not prove A2-to-source-locality and does not claim
+that the missing source-locality bridge is accepted.
 
 ----- stderr -----
 

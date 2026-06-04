@@ -1,0 +1,18 @@
+loop_slug: positivity-orientation-sign-scope-repair-20260604
+branch: physics-loop/positivity-orientation-sign-scope-repair-20260604
+target_claim_id: positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23
+target_status: bounded-support
+cycle_count: 1
+active_route: one-dimensional character scope narrowing
+hard_residual: "A framework-forced physical handedness/orientation-sign positivity remains open."
+files_touched:
+  - docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md
+  - scripts/frontier_positivity_bridge_orientation_sign_discriminator.py
+  - logs/runner-cache/frontier_positivity_bridge_orientation_sign_discriminator.txt
+open_imports:
+  - "Physical derivation of orientation-sign handedness positivity remains separate."
+trace_gate_classification: direct_blocker_closure
+review_findings: []
+pr_status: pending
+next_exact_action: "Run py_compile, runner, diff check, commit, push, and open a ready PR."
+stop_condition: "PR opened and verified, then pivot to the next audited-conditional target."

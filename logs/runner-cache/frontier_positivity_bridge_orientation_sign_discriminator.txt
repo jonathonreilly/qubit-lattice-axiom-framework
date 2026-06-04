@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_positivity_bridge_orientation_sign_discriminator.py
-runner_sha256: d92af88cce7d0a97cbc91cde6bbd03e73d702c5548200098dbb6cbe106bc8ab3
+runner_sha256: 0445b016748e42274b8514aacba80a22ae2c1aa8216d6b8d83c7f20ec39b08a3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ============================================================================
@@ -27,6 +27,7 @@ WHICH POSITIVITY BREAKS S_3 -> C_3:  det-magnitude vs orientation-sign
   [PASS] sgn = -1 on the three transpositions
   [PASS] orientation-positive subset {sgn=+1} is EXACTLY C_3 = A_3  ([(0, 1, 2), (1, 2, 0), (2, 0, 1)])
   [PASS] trivial rep (det-magnitude 'is positive') is constant on S_3 -> selects all S_3
+  [PASS] scope guard: identity-class binary selector is outside one-dimensional character scope  (identity_class=[(0, 1, 2)])
 
 ============================================================================
 VERDICT
@@ -50,7 +51,6 @@ VERDICT
   route is closed.
 
 ============================================================================
-PASS=10 FAIL=0
+PASS=11 FAIL=0
 
 ----- stderr -----
-

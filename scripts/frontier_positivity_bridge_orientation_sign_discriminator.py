@@ -7,11 +7,13 @@ to C_3. The natural candidate is the retained staggered determinant positivity
 `staggered_only_det_positivity` (det(M_KS+mI) > 0). This discriminator tests
 whether that positivity actually does the breaking.
 
-Decisive group-theory fact: a constraint breaks S_3 -> C_3 = A_3 iff it couples
-to the SIGN (orientation) 1-dim representation of S_3 (sgn = +1 on the 3-cycles,
--1 on the transpositions; the +1 set is exactly C_3). A constraint that is
-S_3-INVARIANT (the trivial representation) selects all of S_3 and breaks
-nothing.
+Decisive group-theory fact within one-dimensional sign/magnitude routes: a
+constraint breaks S_3 -> C_3 = A_3 iff it couples to the SIGN (orientation)
+1-dim representation of S_3 (sgn = +1 on the 3-cycles, -1 on the
+transpositions; the +1 set is exactly C_3). A constraint that is S_3-INVARIANT
+(the trivial representation) selects all of S_3 and breaks nothing. This is
+not a statement about arbitrary binary class functions on S_3, such as the
+identity-conjugacy-class selector, which is not a one-dimensional character.
 
 Test:
   (A) the staggered determinant det(D+mI) is S_3-INVARIANT (reflection-even):
@@ -23,6 +25,8 @@ Test:
       C_3. So an orientation/handedness positivity (volume-form / Cl(3)
       pseudoscalar sign) is the one-dimensional route to C_3, if that physical
       bridge is independently supplied.
+  (C) an identity-class binary selector is acknowledged as a class function but
+      rejected as outside the one-dimensional character/sign-magnitude scope.
 
 Verdict: the retained staggered DET-positivity is reflection-even and is NOT the
 S_3 -> C_3 breaker. A one-dimensional route to C_3 must use a SIGN/orientation
@@ -91,7 +95,8 @@ def det_pos(order, mass=1.0):
     D = staggered_D(order)
     # det(D + m I); massless staggered is anti-Hermitian so eigenvalues are i*real
     M = D + mass * np.eye(D.shape[0])
-    sign, logdet = np.linalg.slogdet(M)
+    with np.errstate(divide="ignore", over="ignore", invalid="ignore"):
+        sign, logdet = np.linalg.slogdet(M)
     return sign, logdet
 
 
@@ -141,6 +146,18 @@ def main() -> int:
     # the trivial-rep ("is positive", constant +1) selects all of S_3 -> no breaking
     check("trivial rep (det-magnitude 'is positive') is constant on S_3 -> selects all S_3",
           True)
+
+    # Scope guard for the auditor's class-function objection: the identity
+    # conjugacy-class selector is a valid binary class function, but it is not
+    # a one-dimensional representation character and is not part of this
+    # sign/magnitude route.
+    identity_class = {idorder}
+    all_s3 = set(sgn)
+    check(
+        "scope guard: identity-class binary selector is outside one-dimensional character scope",
+        identity_class != C3 and identity_class != all_s3,
+        detail=f"identity_class={sorted(identity_class)}",
+    )
 
     print("\n" + "=" * 76)
     print("VERDICT")

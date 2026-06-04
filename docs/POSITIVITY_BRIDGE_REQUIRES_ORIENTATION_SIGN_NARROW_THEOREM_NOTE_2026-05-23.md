@@ -26,11 +26,16 @@ handedness positivity — the sign of the volume form / `Cl(3)` pseudoscalar —
 is the representation-theoretic route that has `C_3` as its positive level set.
 This note does not derive that physical positivity bridge.
 
-## Theorem (representation-theoretic obstruction + selection)
+## Theorem (one-dimensional character obstruction + selection)
 
 `S_3` has exactly two one-dimensional representations: the trivial rep and the
-sign rep `sgn`. A binary ("positive/negative") constraint that is a class
-function on `S_3` can preserve only a union of `sgn`-level sets.
+sign rep `sgn`. Therefore a one-dimensional representation-valued
+sign/magnitude constraint has only two possible representation characters:
+trivial, whose positive level set is all of `S_3`, or `sgn`, whose positive
+level set is `A_3=C_3`. This is not a statement about arbitrary binary class
+functions on `S_3`: for example, the identity-conjugacy-class selector is a
+binary class function but is not a one-dimensional character and is outside
+this note's sign/magnitude route.
 
 **(A) Determinant-magnitude positivity is the trivial rep.** The massless
 staggered Dirac operator `D` is anti-Hermitian, so `det(D + mI) = ∏_i(m² + σ_i²)

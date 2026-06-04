@@ -66599,7 +66599,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "32d9cfc4199ac31163c2116d239850c93b08fb076e1c4045e1b6406aec920eb5",
+      "note_hash": "b5f9783c02832fa832e8345c52ba0e0344ff09052be38b45952f460eab4032fb",
       "path": "docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md",
       "runner_path": "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py",
       "title": "Koide Signed-Eigenvalue vs Singular-Value Readout Narrow Theorem"

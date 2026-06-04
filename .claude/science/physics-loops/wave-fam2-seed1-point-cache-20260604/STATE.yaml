@@ -1,0 +1,17 @@
+loop: wave-fam2-seed1-point-cache-20260604
+date: 2026-06-04
+target_claim_id: wave_direct_dm_h025_fam2_seed1_followup_note
+mode: run
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: target-specific runner/cache binding
+files_touched:
+  - docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+  - scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+  - outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json
+  - logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt
+remaining_blocker: "Audit must decide whether the controlled pair/batch surface is enough; this PR does not promote the row."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Review PR, then re-audit the target row against the exact Fam2 seed1 runner/cache and bounded pair-synthesis language."

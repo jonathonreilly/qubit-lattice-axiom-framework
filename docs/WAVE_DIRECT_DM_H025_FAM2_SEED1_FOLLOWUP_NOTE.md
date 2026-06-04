@@ -1,7 +1,8 @@
 # Wave Direct-dM H=0.25 Fam2 Seed1 Follow-Up Note
 
 **Date:** 2026-04-08
-**Status:** proposed_retained narrow family-pair follow-up on the second-family seed-`1` replay
+**Status:** bounded target replay feeding the controlled `Fam2` fine-`H`
+pair surface; not an independent retained theorem or portability promotion
 
 This note records the complementary second-family follow-up after the first
 extra-family `Fam2`, seed-`0` boundary on the direct-`dM` matched-history
@@ -47,11 +48,13 @@ Runtime / memory for the `H = 0.25` replay:
 
 So the honest conclusion is:
 
-> The second-family seed-`1` replay is a **retained** family-pair follow-up:
-> on `Fam2`, the `H = 0.25` seed-conditioned late-gain asymmetry survives and
-> the cross-seed ordering flips the same way it did on `Fam1`. But the
-> normalized amplitude band is still not refinement-stable, so this is not an
-> `H = 0.25` portability or amplitude-law promotion.
+> The second-family seed-`1` replay is a bounded target datapoint for the
+> controlled `Fam2` fine-`H` pair: on `Fam2`, the `H = 0.25`
+> seed-conditioned late-gain asymmetry survives at the archived point and is
+> consistent with the controlled pair synthesis. But this selected
+> one-strength replay is not an independent retained theorem, not a
+> cross-family theorem, and not an `H = 0.25` portability or amplitude-law
+> promotion.
 
 ## What this changes
 
@@ -79,9 +82,32 @@ So the honest conclusion is:
   retained `Fam1` pair before any `Fam3`, third-seed, or weaker-strength
   widening.
 
+## 2026-06-04 target-specific runner repair
+
+The previous registered runner for this note was the reusable point runner,
+whose defaults are `Fam1`, seed `0`.  The row-specific repair now adds
+[`scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py`](../scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py),
+which fixes exactly the target invocation:
+
+- family: `Fam2`
+- seed: `1`
+- `H = 0.25`
+- `S = 0.004`
+
+The runner recomputes the replay and checks the archived values:
+`dM(early)=+0.003777`, `dM(late)=+0.005814`,
+`delta_hist=-0.002037`, `R_hist=-35.03%`, and late gain `+0.002037`.
+It also records the dependency surface used for re-audit: the `Fam2`
+seed-`0`/seed-`1` control notes, the `Fam2` pair synthesis, the `Fam1`
+fine-pair synthesis, and the coarse portability batch.  This repair is a
+cache/scope repair only; audit retains authority over any effective status.
+
 ## Artifact chain
 
 - [`scripts/wave_direct_dm_h025_point_runner.py`](../scripts/wave_direct_dm_h025_point_runner.py)
+- [`scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py`](../scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py)
+- [`logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt`](../logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt)
+- [`outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json`](../outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json)
 - [`logs/2026-04-08-wave-direct-dm-h025-fam2-seed1.txt`](../logs/2026-04-08-wave-direct-dm-h025-fam2-seed1.txt)
 - [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md)
 - `docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`

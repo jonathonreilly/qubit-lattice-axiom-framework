@@ -1,0 +1,20 @@
+{
+  "claim_boundary": "Exact Fam2 seed1 H=0.25 replay feeding controlled pair/batch surface; not an independent retained theorem or portability law.",
+  "claim_id": "wave_direct_dm_h025_fam2_seed1_followup_note",
+  "drift": 0.05,
+  "fail_count": 0,
+  "family": "Fam2",
+  "h": 0.25,
+  "observables": {
+    "R_hist": -0.35029817956467096,
+    "dM_early": 0.003777365488491209,
+    "dM_late": 0.005813998621644936,
+    "delta_hist": -0.002036633133153727,
+    "late_gain": 0.002036633133153727
+  },
+  "pass_count": 27,
+  "restore": 0.3,
+  "runner_role": "target-specific exact invocation cache",
+  "seed": 1,
+  "strength": 0.004
+}

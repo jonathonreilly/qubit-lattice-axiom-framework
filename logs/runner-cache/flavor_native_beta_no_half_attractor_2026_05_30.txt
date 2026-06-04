@@ -1,25 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_native_beta_no_half_attractor_2026_05_30.py
-runner_sha256: 3d8c8e67093b418cc1b0b219fb103db0d4a74f45c8c95f43e775868fcf636337
+runner_sha256: 645ceb453ca94758d683469525c7eae378ae765d593a7f5ef6f8bb648bb37067
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
-native heat-kernel flow r(t)=tanh^4(t): beta_r = dr/dt
-  t=0.5000: r=0.0456, beta_r=+0.3104
-  t=1.2242: r=0.5000, beta_r=+0.6966  <- r=1/2, beta_r!=0 (transit, not fixed)
-  t=2.5000: r=0.9475, beta_r=+0.1022
-  t=5.0000: r=0.9996, beta_r=+0.0007
-  fixed points: r=0 (t=0, UV) and r=1 (t=inf, IR).
+============================================================================
+Flavor supplied tanh^4 flow transit check
+============================================================================
+Claim boundary: supplied r(t)=tanh^4(t) path only; no native-beta exhaustion.
 
-symmetry of spectrum (a+2b,a-b,a-b): r=0 -> all-equal (full S3, enhanced);
-  r=1 -> rank-1 (enhanced); r=1/2 -> 2 distinct = GENERIC C3 (NOT enhanced).
-  => RG fixed points (= enhanced couplings) are r=0,1; r=1/2 is not a fixed point.
+  [PASS] r(0) = 0  (r(0)=0.000000000000)
+  [PASS] r(t) approaches 1 at large t  (r(20)=1.000000000000)
+  [PASS] beta_r(t)>0 at sample finite t=0.5  (beta=0.310446047891)
+  [PASS] beta_r(t)>0 at sample finite t=2.5  (beta=0.102154360791)
+  [PASS] t_star solves r(t_star)=1/2  (t_star=1.224226223839)
+  [PASS] beta_r(t_star)>0, so r=1/2 is transit not fixed  (beta_star=0.696621399498)
 
-VERDICT: NO native 1/2-attractor. r=1/2 = continuous non-enhanced modulus = the
-generation chiral grading (Gamma_chi-null) = the one irreducible chiral pin.
-Framework reduces all charged-lepton flavor to that ONE chiral input + Planck.
+============================================================================
+PASS=6 FAIL=0
+============================================================================
 
 ----- stderr -----
-

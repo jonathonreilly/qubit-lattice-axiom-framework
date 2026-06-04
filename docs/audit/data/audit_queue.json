@@ -3,7 +3,7 @@
     "critical": 269,
     "high": 303,
     "leaf": 376,
-    "medium": 329
+    "medium": 330
   },
   "cycle_break_target_count": 1,
   "cycle_break_targets": [
@@ -26834,6 +26834,41 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "beta6_delta_analytic_class_frontier_note_2026-05-30",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
+        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+        "su3_wigner_l3_treewidth_infeasible_2026-05-04",
+        "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+        "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09",
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+        "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
+        "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
+        "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
+        "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+        "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_beta6_delta_analytic_class_2026_05_30.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "charged_lepton_y_tau_m3_premise_self_correction_note_2026-04-28",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -27508,6 +27543,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su3_wigner_l3_treewidth_infeasible_2026-05-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
+        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.5,
+      "note_path": "docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py",
+      "transitive_descendants": 3
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -27550,31 +27610,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": null,
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "su3_wigner_l3_treewidth_infeasible_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
-        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py",
       "transitive_descendants": 2
     },
     {
@@ -28466,6 +28501,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+        "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
+        "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.822,
+      "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py",
+      "transitive_descendants": 4
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "reproduction_audit_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -28715,7 +28777,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06",
+      "claim_id": "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -28724,18 +28786,19 @@
       "cross_confirmation_status": null,
       "deps": [
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
-        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
-        "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
+        "plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06",
         "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06"
       ],
       "direct_in_degree": 1,
       "effective_status": "unaudited",
-      "helper_runner_paths": [],
+      "helper_runner_paths": [
+        "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py"
+      ],
       "load_bearing_score": 2.5,
-      "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md",
+      "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py",
+      "runner_path": "scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py",
       "transitive_descendants": 3
     },
     {
@@ -29115,34 +29178,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_tensor_variational_transplant_obstruction.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
-        "plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06",
-        "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py"
-      ],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py",
       "transitive_descendants": 2
     },
     {
@@ -29660,7 +29695,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "beta6_delta_analytic_class_frontier_note_2026-05-30",
+      "claim_id": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -29668,27 +29703,22 @@
       "criticality_rank": 0,
       "cross_confirmation_status": null,
       "deps": [
-        "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "su3_wigner_l3_treewidth_infeasible_2026-05-04",
-        "gauge_vacuum_plaquette_reduction_existence_theorem_note",
-        "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09",
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
-        "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
-        "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
+        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
         "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
+        "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note",
+        "beta6_delta_analytic_class_frontier_note_2026-05-30",
+        "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
+        "beta6_plaquette_closure_note_2026-05-29"
       ],
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 1.5,
-      "note_path": "docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md",
+      "note_path": "docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": "scripts/frontier_beta6_delta_analytic_class_2026_05_30.py",
+      "runner_path": "scripts/frontier_beta6_d9_coefficient_2026_06_04.py",
       "transitive_descendants": 1
     },
     {
@@ -31707,7 +31737,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "claim_id": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -31715,22 +31745,18 @@
       "criticality_rank": 0,
       "cross_confirmation_status": null,
       "deps": [
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-        "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
-        "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note",
         "beta6_delta_analytic_class_frontier_note_2026-05-30",
-        "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
-        "beta6_plaquette_closure_note_2026-05-29"
+        "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+        "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
       ],
       "direct_in_degree": 0,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 0.0,
-      "note_path": "docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md",
+      "note_path": "docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": "scripts/frontier_beta6_d9_coefficient_2026_06_04.py",
+      "runner_path": "scripts/frontier_beta6_twocube_closedform_2026_06_04.py",
       "transitive_descendants": 0
     },
     {
@@ -38444,5 +38470,5 @@
     }
   ],
   "ready_count": 62,
-  "total_pending": 1277
+  "total_pending": 1278
 }

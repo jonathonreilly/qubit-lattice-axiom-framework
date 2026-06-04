@@ -2125,6 +2125,18 @@
       "to": "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
     },
     {
+      "from": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+      "to": "beta6_delta_analytic_class_frontier_note_2026-05-30"
+    },
+    {
+      "from": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+      "to": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04"
+    },
+    {
+      "from": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+      "to": "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
+    },
+    {
       "from": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
       "to": "beta6_plaquette_closure_note_2026-05-29"
     },
@@ -45514,6 +45526,22 @@
       "path": "docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md",
       "runner_path": "scripts/frontier_beta6_multicube_resummation_relocation.py",
       "title": "Beta=6 SU(3) Plaquette \u2014 Multi-Cube K-Built Boundary Open Gate"
+    },
+    "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04": {
+      "claim_id": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "beta6_delta_analytic_class_frontier_note_2026-05-30",
+        "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+        "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "1389d35e790a494f9cc5dc4e008ba3df9c131c4dd4edc051a329b37211338105",
+      "path": "docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md",
+      "runner_path": "scripts/frontier_beta6_twocube_closedform_2026_06_04.py",
+      "title": "Beta=6 SU(3) Plaquette Weight-10 Two-Cube Candidate: Bounded Finite-Order Validation"
     },
     "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30": {
       "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
@@ -91866,7 +91894,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 825,
+      "bounded_theorem": 826,
       "decoration": 1,
       "meta": 203,
       "no_go": 96,
@@ -91875,7 +91903,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1226,
+      "bounded_theorem": 1227,
       "decoration": 1,
       "meta": 203,
       "no_go": 199,
@@ -91883,10 +91911,10 @@
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10449,
+    "edge_count": 10452,
     "leaf_count": 902,
-    "node_count": 2770,
+    "node_count": 2771,
     "root_count": 942,
-    "runners_with_path": 2355
+    "runners_with_path": 2356
   }
 }

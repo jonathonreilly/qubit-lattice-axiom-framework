@@ -1524,6 +1524,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_beta6_multicube_resummation_relocation.py"
     },
+    "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 6
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_beta6_twocube_closedform_2026_06_04.py"
+    },
     "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30": {
       "assert_count": 1,
       "counts": {
@@ -35969,6 +35981,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_beta6_twocube_closedform_2026_06_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 6
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_beta_gbare_rescaling_abstract_identity_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -62268,11 +62295,11 @@
       "A": 291,
       "B": 307,
       "C": 863,
-      "D": 324,
+      "D": 325,
       "none": 465
     },
-    "runners_classified": 2250,
-    "runners_with_C": 1124,
-    "runners_with_D": 656
+    "runners_classified": 2251,
+    "runners_with_C": 1125,
+    "runners_with_D": 657
   }
 }

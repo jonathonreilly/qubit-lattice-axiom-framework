@@ -82,8 +82,8 @@
       "criticality_counts": {
         "critical": 116,
         "high": 148,
-        "leaf": 380,
-        "medium": 251
+        "leaf": 379,
+        "medium": 252
       },
       "cross_confirmation_agreement_rate": 0.763,
       "cross_confirmation_outcomes": {

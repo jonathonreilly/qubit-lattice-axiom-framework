@@ -14,7 +14,8 @@ This note records two finite facts about the symmetric corner-coupling form
 Y = a I + b (J - I)
 ```
 
-on the three generation labels. It does not derive the physical value of `b/a`.
+on the three generation labels, plus the in-packet derivation of the symmetric
+form's spectral Koide readout. It does not derive the physical value of `b/a`.
 
 ## 1. Positivity Bound
 
@@ -67,15 +68,46 @@ Q = 1/3 + (2/3)(b/a)^2,
 Hilbert-Schmidt equipartition gives `Q=2/3`. This is a characterization of the
 ratio, not a derivation that the framework chooses the Hilbert-Schmidt measure.
 
-## 3. What This Claims
+## 3. Symmetric-Form Q Derivation
+
+For this finite packet, `Q` is the spectral Koide ratio of the three eigenvalues
+of `Y`:
+
+```text
+Q(Y) = ((a+2b)^2 + 2(a-b)^2) / ((a+2b) + 2(a-b))^2 .
+```
+
+Expanding the numerator and denominator gives
+
+```text
+(a+2b)^2 + 2(a-b)^2
+= a^2 + 4ab + 4b^2 + 2a^2 - 4ab + 2b^2
+= 3a^2 + 6b^2,
+
+((a+2b) + 2(a-b))^2 = (3a)^2 = 9a^2.
+```
+
+Hence, for `a != 0`,
+
+```text
+Q(Y) = (3a^2 + 6b^2)/(9a^2)
+     = 1/3 + (2/3)(b/a)^2.
+```
+
+This is the missing in-packet bridge for the displayed symmetric-form identity.
+It is an algebraic readout definition for this two-parameter form, not a proof
+that the physical matter-sector measure must be Hilbert-Schmidt.
+
+## 4. What This Claims
 
 - Positive semidefiniteness of `aI+b(J-I)` with `a>0` bounds
   `b/a` to `[-1/2, 1]`.
 - Hilbert-Schmidt equipartition between the diagonal and off-diagonal basis
   directions is equivalent to `(b/a)^2 = 1/2`.
-- Inside the symmetric two-parameter form, that ratio is equivalent to `Q=2/3`.
+- Inside the symmetric two-parameter form, the spectral Koide readout satisfies
+  `Q=1/3+(2/3)(b/a)^2`; therefore that ratio is equivalent to `Q=2/3`.
 
-## 4. What This Does Not Claim
+## 5. What This Does Not Claim
 
 - It does not prove the physical measure is Hilbert-Schmidt.
 - It does not derive the charged-lepton Koide value.
@@ -83,10 +115,10 @@ ratio, not a derivation that the framework chooses the Hilbert-Schmidt measure.
 - It does not decide between Hilbert-Schmidt, dimension-weighted, or dynamical
   weighting in the actual matter-sector measure.
 
-## 5. Runner
+## 6. Runner
 
 ```bash
 python3 scripts/flavor_ba_ratio_bound_hs_equipartition_2026_05_30.py
 ```
 
-Expected result: `SCORECARD PASS=4 FAIL=0`.
+Expected result: `SCORECARD PASS=5 FAIL=0`.

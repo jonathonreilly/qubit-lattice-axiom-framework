@@ -8379,13 +8379,13 @@
     "flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30": {
       "assert_count": 1,
       "counts": {
-        "A": 0,
+        "A": 2,
         "B": 0,
         "C": 1,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "A",
       "runner": "scripts/flavor_ba_ratio_bound_hs_equipartition_2026_05_30.py"
     },
     "flavor_block_count_native_via_jcs_note_2026-05-30": {
@@ -34207,13 +34207,13 @@
         "flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30"
       ],
       "counts": {
-        "A": 0,
+        "A": 2,
         "B": 0,
         "C": 1,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/flavor_block_count_native_via_Jcs_2026_05_30.py": {
@@ -62103,9 +62103,9 @@
   "stats": {
     "decoration_candidates": 373,
     "dominant_class_distribution": {
-      "A": 287,
+      "A": 288,
       "B": 307,
-      "C": 861,
+      "C": 860,
       "D": 324,
       "none": 465
     },

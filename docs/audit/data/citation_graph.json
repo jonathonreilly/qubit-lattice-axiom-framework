@@ -56987,7 +56987,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "2ae89703c26499bc30f96ad4fcf42476f915a66ecc30a49407b0d9d90fa9665c",
+      "note_hash": "ffb041e6b1fb73c803bb6b7cb3882d65b86457946caa7f3a86d6bb0c22caa772",
       "path": "docs/FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_ba_ratio_bound_hs_equipartition_2026_05_30.py",
       "title": "Flavor Corner-Coupling Ratio Bound and Hilbert-Schmidt Characterization"

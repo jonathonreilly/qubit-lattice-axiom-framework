@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 626 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1228 |
+| unaudited | 1229 |
 | meta | 241 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 89 |
+| ~~audited_conditional~~ | 88 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 954 |
-| `audited_conditional` | 89 |
+| `audited_conditional` | 88 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1469 |
+| `unaudited` | 1470 |
 
 | claim_type | count |
 |---|---:|
@@ -1102,7 +1102,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_a1prime_debt_and_data_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_asymmetry_identification_principled_not_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5187,19 +5186,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The single-fixed-point local density 2/9 is the only intensive/type-consistent survivor among the three native index objects, but promoting that contribution to the charged-lepton asymmetry observable requires the undischarged generation-space bridge.  _(class `A`)_
 - **chain closes:** False — The local Lefschetz arithmetic checks, but the physical identification does not close. The missing step is the theorem that the physical charged-lepton generation space is the single C3[111] fixed locus whose local density the observable reads.
 - **rationale:** The displayed local-density formula independently simplifies to L_3(1,2)=2/9, and the L=4,6 extensive sums follow arithmetically. However, the runner asserts the type-filter and bridge status largely as prose/True checks, and the source note explicitly states that the contribution-to-observable identification is undischarged. The claim is therefore correctly bounded, but it remains conditional rather than a closed topological prediction.
-- **auditor confidence:** high
-
-### `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30`
-
-- **Note:** [`FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md`](../../docs/FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** PSD of Y=aI+b(J-I), Hilbert-Schmidt equipartition of I and J-I, and the stated conversion to Q=2/3.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260531-155310-9fa2dd48-flavor_ba_ratio_bound_hs`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Equal Hilbert-Schmidt contribution from aI and b(J-I) gives 3a^2 = 6b^2, hence (b/a)^2 = 1/2; the later Q step uses Q = 1/3 + (2/3)(b/a)^2.  _(class `A`)_
-- **chain closes:** False — The eigenvalue bound, Hilbert-Schmidt norms, equipartition ratio, and formal Gaussian variance ratio close by finite matrix algebra. The displayed Q = 1/3 + (2/3)(b/a)^2 identity is not defined or derived in the restricted packet, and the runner only re-encodes that formula.
-- **rationale:** The finite matrix calculations are correct: eigenvalues are a+2b and a-b, PSD with a>0 gives -1/2 <= b/a <= 1, Tr(I^2)=3, Tr((J-I)^2)=6, and HS equipartition gives (b/a)^2=1/2. The source also claims the symmetric-form identity Q = 1/3 + (2/3)(b/a)^2 and Q=2/3, but the restricted packet gives no definition or derivation of Q from the symmetric form. The runner's koide_q_from_ratio function hard-codes the displayed Q formula, so it does not independently close that displayed identity.
 - **auditor confidence:** high
 
 ### `flavor_block_count_native_via_jcs_note_2026-05-30`

@@ -141,6 +141,23 @@ def main() -> int:
         and "P1" in note,
     )
     check(
+        "reclassification is explicitly PROVISIONAL pending possible axiom updates",
+        "provisional" in note.lower()
+        and "axiom update" in note.lower(),
+    )
+    check(
+        "axiom-update path explicitly leaves derivability open",
+        "may become derivable" in note.lower()
+        or ("become derivable" in note.lower() and "axiom" in note.lower()),
+    )
+    check(
+        "current-axiom-surface qualifier present on closure framing",
+        "current `A1+A2`" in note
+        or "current A1+A2" in note
+        or "on the current surface" in note.lower()
+        or "current axiom surface" in note.lower(),
+    )
+    check(
         "Tier-A registry cited explicitly",
         "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23" in note,
     )

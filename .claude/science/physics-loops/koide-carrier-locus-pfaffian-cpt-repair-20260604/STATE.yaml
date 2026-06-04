@@ -1,0 +1,35 @@
+loop_slug: koide-carrier-locus-pfaffian-cpt-repair-20260604
+branch: physics-loop/koide-carrier-locus-pfaffian-cpt-repair-20260604
+base: origin/main
+base_commit: 9ef1cdd32
+mode: science_fix
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: koide_carrier_locus_decomposition_note_2026-06-01
+blocker_source: audit_ledger
+blocker_text: "missing_bridge_theorem: supply a retained bridge for sign(Pfaffian doublet block)=sign(beta) and CPT-freedom of that Z2 bit, and reconcile the CPT R2 spectrum-sign corollary before requesting clean re-audit."
+summary: "Adds a direct doublet-block Pfaffian/beta sign check, corrects the CPT R2 anti-linear spectrum corollary, and firewalls CPT C1/C2 from sign selection."
+files_touched:
+  - docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md
+  - docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md
+  - scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py
+  - scripts/frontier_koide_carrier_locus_decomposition.py
+  - logs/runner-cache/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.txt
+  - logs/runner-cache/frontier_koide_carrier_locus_decomposition.txt
+checks:
+  - "PYTHONPATH=scripts python3 scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_koide_carrier_locus_decomposition.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_koide_carrier_locus_decomposition.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_koide_carrier_locus_decomposition.py"
+  - "python3 -m py_compile scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py scripts/frontier_koide_carrier_locus_decomposition.py"
+  - "git diff --check"
+check_result: pass
+review_loop_disposition: delegated_to_external_reviewer
+audit_required_before_effective_status_change: true
+audit_ledger_edits: false
+next_exact_action: "Reviewer/audit lane should verify that the Pfaffian bridge is now direct and that CPT R2 no longer supplies an incorrect sign selection."
+stop_condition: "coherent repair block packaged for PR; remaining records-pointer sign-selection bridge stays open."

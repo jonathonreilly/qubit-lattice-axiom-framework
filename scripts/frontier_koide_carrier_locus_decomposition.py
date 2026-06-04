@@ -107,8 +107,44 @@ section("Lone residual: ONE Z_2 Hodge-orientation bit -- hw=1 (1-forms) vs hw=2 
 # ----------------------------------------------------------------------
 record("hw=1 and hw=2 are both S_3-triplets (orbit-3), Hodge-DUAL (1-forms <-> 2-forms in d=3)",
        len(shells[1])==3 and len(shells[2])==3)
-record("the hw=1-vs-hw=2 choice = sign(Pfaffian of the doublet block) = sign(beta), FREE per cpt_exact; blocked by NO no-go",
-       True, "Hodge star = charge-conjugation in d=3; records-growth (pointer-vacuum |000> Hamming-shell-1 = hw=1) a candidate-but-unclosed source")
+
+def pfaffian_2x2_real_antisym(A):
+    return A[0, 1]
+
+pfaffian_cases_ok = True
+orientation_cases_ok = True
+orientation_flip = np.diag([1.0, -1.0])
+case_details = []
+for beta in [2.0, -3.0]:
+    D_beta = np.array([[0.0, beta], [-beta, 0.0]])
+    pf = pfaffian_2x2_real_antisym(D_beta)
+    reflected = orientation_flip @ D_beta @ orientation_flip.T
+    pf_reflected = pfaffian_2x2_real_antisym(reflected)
+    pfaffian_cases_ok = pfaffian_cases_ok and np.isclose(pf, beta) and np.sign(pf) == np.sign(beta)
+    orientation_cases_ok = (
+        orientation_cases_ok
+        and np.allclose(reflected, -D_beta)
+        and np.isclose(pf_reflected, -pf)
+    )
+    case_details.append((float(beta), float(pf), float(pf_reflected)))
+
+record("doublet block Pfaffian sign is exactly sign(beta)",
+       pfaffian_cases_ok, f"cases (beta, pf, reflected_pf) = {case_details}")
+record("orientation/Hodge flip sends D_beta -> -D_beta and flips the Pfaffian sign",
+       orientation_cases_ok, "the Z_2 sign is an orientation bit unless a separate records-pointer bridge selects it")
+
+# CPT R2 sign firewall: the cited CPT-exact note supplies C1/C2 invariance only.
+# Its spectrum-conjugation corollary is lambda -> lambda^* under K, not a sign
+# selection for beta.
+D_sample = np.array([[0.0, 2.0], [-2.0, 0.0]], dtype=complex)
+v = np.array([1.0, 1.0j])
+lam = 2.0j
+Kv = np.conjugate(v)
+record("CPT R2 firewall: K maps D eigenvalue lambda to lambda_conj, not a beta-sign selector",
+       np.allclose(D_sample @ v, lam * v)
+       and np.allclose(D_sample @ Kv, np.conjugate(lam) * Kv)
+       and not np.allclose(D_sample @ Kv, -np.conjugate(lam) * Kv),
+       "the carrier-locus sign(Pfaffian)=sign(beta) bridge is proved directly above, not imported from CPT")
 
 # ----------------------------------------------------------------------
 section("RESULT")
@@ -119,5 +155,6 @@ print("L1 STATISTICS (hard-core boson vs fermion) + L3 RANGE (first-order vs Wil
 print("of the cross-site hopping c_x^dag c_y = the user's R. Frontier mislabels CORRECTED: staggered keeps")
 print("ALL 8 corners massless (no spectral hw=1 selection); hw=1 named by S_3-INVARIANT labels (no axis");
 print("anisotropy); gauge_wilson_isotropy is the wrong wall. L2 count + L4 hw=1-naming + L3a {eps,D}=0 are")
-print("mislabel-native. Lone residual = one Z_2 Hodge-orientation bit = sign(beta), free per cpt_exact.")
+print("mislabel-native. Lone residual = one Z_2 Hodge-orientation bit = sign(Pfaffian)=sign(beta),")
+print("proved directly on the doublet block; CPT C1/C2 invariance does not select that sign.")
 import sys; sys.exit(0 if p_==n_ else 1)

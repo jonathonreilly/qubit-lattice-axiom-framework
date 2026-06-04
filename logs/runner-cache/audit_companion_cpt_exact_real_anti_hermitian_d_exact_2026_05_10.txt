@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py
-runner_sha256: 745f3d99379ebfbed01866228bd3b167e5631368750acdc5864b251519cc01c1
+runner_sha256: 2c391b1b56d31d483623fa98580531676eeae4cdc1209806d274c23b403f164f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.33
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -27,6 +27,8 @@ Part 2: premise identities (1), (2), (3) on instance (i)
   [PASS (A)] (1) premise: C D C == -D on instance (i)  (C D C = [[0, -a], [a, 0]], -D = [[0, -a], [a, 0]])
   [PASS (A)] (2) premise: P D P == -D on instance (i)  (P D P = [[0, -a], [a, 0]], -D = [[0, -a], [a, 0]])
   [PASS (A)] (3) premise: T D T == D on instance (i)
+  [PASS (A)] (R2) D v = lambda v for lambda = i a on instance (i)
+  [PASS (A)] (R2) T v carries lambda^* (not -lambda^*)  (complex conjugation maps i a to -i a on the real anti-Hermitian block)
 
 ----------------------------------------------------------------------------------------
 Part 3: (C1) Theta D Theta^{-1} == D from (1),(2),(3) on (i)
@@ -103,7 +105,7 @@ Summary
     Counterfactual: non-real D breaks premise (3); composite invariance is not inferable from the theorem
 
 ========================================================================================
-TOTAL: PASS=33, FAIL=0
+TOTAL: PASS=35, FAIL=0
 ========================================================================================
 
 ----- stderr -----

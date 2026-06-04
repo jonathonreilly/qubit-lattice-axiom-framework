@@ -214,6 +214,23 @@ def main() -> int:
         matrix_eq(lhs3, rhs3),
     )
 
+    # R2 correction check: T is anti-linear. If D v = lambda v, then
+    # D(T v) = lambda^* T v, not -lambda^* T v. For real anti-Hermitian
+    # D, lambda is imaginary, so lambda^* = -lambda.
+    v_plus = Matrix([1, sym_I])
+    lambda_plus = sym_I * a
+    Tv_plus = conjugate_matrix(v_plus)
+    check(
+        "(R2) D v = lambda v for lambda = i a on instance (i)",
+        matrix_eq(D_abs * v_plus, lambda_plus * v_plus),
+    )
+    check(
+        "(R2) T v carries lambda^* (not -lambda^*)",
+        matrix_eq(D_abs * Tv_plus, sympy.conjugate(lambda_plus) * Tv_plus)
+        and matrix_neq(D_abs * Tv_plus, -sympy.conjugate(lambda_plus) * Tv_plus),
+        detail="complex conjugation maps i a to -i a on the real anti-Hermitian block",
+    )
+
     # =========================================================================
     section("Part 3: (C1) Theta D Theta^{-1} == D from (1),(2),(3) on (i)")
     # =========================================================================

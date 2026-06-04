@@ -108,9 +108,10 @@ def current_deps_are_ratified(row: dict, rows: dict[str, dict]) -> bool:
     if not deps:
         return False
     # Accepted premises count as satisfied without being retained-grade,
-    # matching compute_effective_status / audit_lint. Axioms are unbounded;
-    # Tier-A derivation targets satisfy the chain only at the bounded tier.
-    # Textbook results must still be ordinary retained-grade rows.
+    # matching compute_effective_status / audit_lint. Axioms and approved
+    # primitives are unbounded; Tier-A derivation targets satisfy the chain
+    # only at the bounded tier. Textbook results must still be ordinary
+    # retained-grade rows.
     return all(
         dep_effective_status(dep_id, rows) in RATIFIED_DEP_STATUSES
         or premise_nodes.is_accepted_premise_dep(dep_id)

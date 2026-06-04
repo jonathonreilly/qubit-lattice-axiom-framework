@@ -189,10 +189,11 @@ Definitions you must use:
     Retained status does not propagate through an open identification.
     **Accepted-premise carve-out.** A cited authority flagged
     `axiom_premise: true` or `accepted_premise: true` does **not** count
-    toward the "not-retained-grade authority" downgrade. Axiom premises are
-    accepted framework primitives (you do not audit axioms), so a class (C)
-    derivation whose only non-retained-grade upstream is the axiom premise,
-    and whose load-bearing step genuinely closes from the axiom content plus
+    toward the "not-retained-grade authority" downgrade. Axiom and explicitly
+    approved primitive premises are accepted framework premises (you do not
+    audit the premise itself), so a class (C) derivation whose only
+    non-retained-grade upstream is the axiom/primitive premise, and whose
+    load-bearing step genuinely closes from that premise content plus
     retained-grade inputs, is eligible for `audited_clean`.
     Tier-A admitted derivation targets are different: they are accepted
     non-axiom premises only at the bounded tier. A clean row depending on a

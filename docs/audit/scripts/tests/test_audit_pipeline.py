@@ -522,6 +522,60 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
         new_rows, _cycles = m.compute_effective(rows)
         self.assertEqual(new_rows["child"]["effective_status"], "retained_pending_chain")
 
+    def test_axiom_and_primitive_premises_do_not_bound_positive_theorem(self):
+        """Axioms and explicitly approved framework primitives satisfy chain
+        closure without forcing retained_bounded. Tier-A derivation targets are
+        the only accepted premises that bound an otherwise clean positive
+        theorem."""
+        m = _import("compute_effective_status")
+        rows = {
+            "uses_minimal_axioms": {
+                "claim_id": "uses_minimal_axioms",
+                "deps": ["minimal_axioms"],
+                "audit_status": "audited_clean",
+                "claim_type": "positive_theorem",
+            },
+            "uses_scale_reference_primitive": {
+                "claim_id": "uses_scale_reference_primitive",
+                "deps": ["scale_reference_primitive"],
+                "audit_status": "audited_clean",
+                "claim_type": "positive_theorem",
+            },
+            "uses_tier_a_admission": {
+                "claim_id": "uses_tier_a_admission",
+                "deps": ["observable_principle_from_axiom_note"],
+                "audit_status": "audited_clean",
+                "claim_type": "positive_theorem",
+            },
+        }
+        with mock.patch.object(
+            m.premise_nodes,
+            "is_axiom_premise",
+            side_effect=lambda dep_id: dep_id
+            in {"minimal_axioms", "scale_reference_primitive"},
+        ), mock.patch.object(
+            m.premise_nodes,
+            "is_admitted_derivation_target",
+            side_effect=lambda dep_id: dep_id
+            == "observable_principle_from_axiom_note",
+        ):
+            new_rows, _cycles = m.compute_effective(rows)
+        self.assertEqual(
+            new_rows["uses_minimal_axioms"]["effective_status"], "retained"
+        )
+        self.assertEqual(
+            new_rows["uses_scale_reference_primitive"]["effective_status"],
+            "retained",
+        )
+        self.assertEqual(
+            new_rows["uses_tier_a_admission"]["effective_status"],
+            "retained_bounded",
+        )
+        self.assertEqual(
+            new_rows["uses_tier_a_admission"]["effective_status_reason"],
+            "bounded_by_tier_a_admitted_derivation_target",
+        )
+
     def test_criticality_bump_soft_reset_propagates_as_retained(self):
         """A row in the criticality-bump soft-reset state (audit_in_progress
         + awaiting_cross_confirmation + first_audit on file) keeps its

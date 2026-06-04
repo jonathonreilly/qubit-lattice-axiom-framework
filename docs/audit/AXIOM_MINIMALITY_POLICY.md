@@ -50,3 +50,39 @@ Do not add the axiom and proceed.
 This policy applies until the full repo audit is complete. After the audit,
 axiom extension may be revisited as a separate decision. Until then, `A_min`
 is fixed.
+
+## 6. Explicit Owner Approval For Axioms And Primitives
+
+Review-loop, physics-loop, audit-loop, and audit-pipeline consumers must not
+add or amend repo-wide axioms, framework primitives, or equivalent
+foundational premises without explicit owner approval. Approval must be
+recorded in this policy and in the relevant machine registry before the new
+premise can chain-satisfy downstream claims.
+
+Framework primitives are distinct from Tier-A admitted derivation targets:
+
+- **Axioms and approved primitives** are foundational framework premises. They
+  are tracked in `docs/audit/data/axiom_premise_nodes.json`, chain-satisfy
+  dependencies without bounding downstream status, and are guarded by
+  `check_axiom_premise_clean.py`.
+- **Tier-A admitted derivation targets** are non-axiom inputs with no-go
+  portfolios. They are tracked in `docs/audit/data/tier_a_admissions.json` and
+  chain-satisfy only at `retained_bounded` until retired by a retained
+  derivation.
+
+Recorded explicitly approved primitive:
+
+- **2026-06-04 -- scale-reference primitive.** The single dimensionful scale
+  reference `a^{-1}` is accepted as a framework primitive and registered as
+  `scale_reference_primitive` with source
+  `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md`.
+  - **Why it is admissible.** The framework baseline carries no dimensionful
+    number, so one scale reference is irreducible by dimensional analysis. This
+    is a units conversion, not a physics axiom or a dimensionless import.
+  - **No laundering.** The primitive carries no mass ratio, coupling, mixing
+    angle, phase, selector, readout bridge, or empirical fit. Depending on this
+    primitive cannot supply dimensionless physics, and the purity guard must
+    keep the source note inside that boundary.
+  - **Scope.** The minimal framework baseline remains fixed. This decision does
+    not assert `a/l_P = 1`; the self-consistency that the natural unit equals
+    the Planck length remains a separate open gravity derivation.

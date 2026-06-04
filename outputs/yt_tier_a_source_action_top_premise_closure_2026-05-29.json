@@ -16,7 +16,7 @@
     "P-cal/P1 derivation from A1+A2",
     "strict same-source top/W pole-response certificate"
   ],
-  "pass_count": 71,
+  "pass_count": 74,
   "planck_scope": {
     "planck_role": "dimensionful scale/source-unit analogy only",
     "yt_dimensionless_proof_input": "not Planck"
@@ -35,14 +35,13 @@
       "source_scale_boundary": "unaudited",
       "unit_source_nogo": "unaudited"
     },
-    "not_a_node_S": {
-      "label": "absolute scale",
-      "no_go_portfolio": [
-        "planck_finite_response_no_go_note_2026-04-24",
-        "planck_parent_source_hidden_character_no_go_note_2026-04-24",
-        "planck_boundary_orientation_incidence_no_go_note_2026-04-30"
+    "scale_reference_primitive": {
+      "aliased_paths": [
+        "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md"
       ],
-      "statement": "one empirical scale-setting number (match a single observable to fix a); the unit choice itself is vacuous, and S is pervasive with no single citeable parent row, so it is tracked descriptively in the registry note and is NOT a premise-node here"
+      "current_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "legacy_claim_ids": [],
+      "note": "Explicitly approved framework primitive for the single dimensionful scale reference a^{-1}. Units conversion only: carries no dimensionless content and does not assert a/l_P=1. Dependencies on this primitive chain-satisfy without bounding downstream rows."
     },
     "tier_a_p1": {
       "class": "extensivity principle (mild)",

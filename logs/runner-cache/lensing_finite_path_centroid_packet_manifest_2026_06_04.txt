@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py
+runner_sha256: 934e007cc2acdfef286eb578e04c51ace6d964e7fcea37c1bf14ba6ce93ffa09
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+LENSING FINITE-PATH: RESTRICTED SOURCE PACKET MANIFEST
+==============================================================================
+[PASS] manifest_path_exists:finite_path_note: docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] manifest_path_exists:long_path_note: docs/LENSING_LONG_PATH_TEST_NOTE.md
+[PASS] finite_path_note_names_manifest_path:long_path_note: docs/LENSING_LONG_PATH_TEST_NOTE.md is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] manifest_path_exists:finite_path_runner: scripts/lensing_analytical_finite_path.py
+[PASS] finite_path_note_names_manifest_path:finite_path_runner: scripts/lensing_analytical_finite_path.py is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] manifest_path_exists:long_path_runner: scripts/lensing_long_path_test.py
+[PASS] finite_path_note_names_manifest_path:long_path_runner: scripts/lensing_long_path_test.py is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] manifest_path_exists:finite_path_cache: logs/runner-cache/lensing_analytical_finite_path.txt
+[PASS] finite_path_note_names_manifest_path:finite_path_cache: logs/runner-cache/lensing_analytical_finite_path.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] manifest_path_exists:long_path_cache: logs/runner-cache/lensing_long_path_test.txt
+[PASS] finite_path_note_names_manifest_path:long_path_cache: logs/runner-cache/lensing_long_path_test.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] manifest_path_exists:finite_path_legacy_log: logs/2026-04-07-lensing-analytical-finite-path.txt
+[PASS] finite_path_note_names_manifest_path:finite_path_legacy_log: logs/2026-04-07-lensing-analytical-finite-path.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] manifest_path_exists:long_path_legacy_log: logs/2026-04-07-lensing-long-path-test.txt
+[PASS] finite_path_note_names_manifest_path:long_path_legacy_log: logs/2026-04-07-lensing-long-path-test.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] finite_path_note_names_manifest_artifact:manifest_runner: scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] finite_path_note_names_manifest_artifact:manifest_cache: logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] finite_path_note_names_manifest_artifact:manifest_json: outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+[PASS] long_path_note_points_back_to_finite_path_note: long-path note names finite-path note as falsified target
+[PASS] source_untruncated:finite_path_runner: scripts/lensing_analytical_finite_path.py has 6340 bytes
+[PASS] source_marker:finite_path_runner:def alpha_centered_surrogate: def alpha_centered_surrogate present in scripts/lensing_analytical_finite_path.py
+[PASS] source_marker:finite_path_runner:def alpha_full_path_reg: def alpha_full_path_reg present in scripts/lensing_analytical_finite_path.py
+[PASS] source_marker:finite_path_runner:def shift_weighted_reg: def shift_weighted_reg present in scripts/lensing_analytical_finite_path.py
+[PASS] source_marker:finite_path_runner:MEASUREMENTS =: MEASUREMENTS = present in scripts/lensing_analytical_finite_path.py
+[PASS] source_marker:finite_path_runner:x_src = 5.0: x_src = 5.0 present in scripts/lensing_analytical_finite_path.py
+[PASS] source_marker:finite_path_runner:x_det = 14.75: x_det = 14.75 present in scripts/lensing_analytical_finite_path.py
+[PASS] source_marker:finite_path_runner:detector-shift proxy: detector-shift proxy present in scripts/lensing_analytical_finite_path.py
+[PASS] source_untruncated:long_path_runner: scripts/lensing_long_path_test.py has 9802 bytes
+[PASS] source_marker:long_path_runner:AUDIT_TIMEOUT_SEC = 1800: AUDIT_TIMEOUT_SEC = 1800 present in scripts/lensing_long_path_test.py
+[PASS] source_marker:long_path_runner:from kubo_continuum_limit import: from kubo_continuum_limit import present in scripts/lensing_long_path_test.py
+[PASS] source_marker:long_path_runner:T_PHYS_LONG = 45.0: T_PHYS_LONG = 45.0 present in scripts/lensing_long_path_test.py
+[PASS] source_marker:long_path_runner:T_PHYS_SHORT = 7.5: T_PHYS_SHORT = 7.5 present in scripts/lensing_long_path_test.py
+[PASS] source_marker:long_path_runner:B_VALUES = [3.0, 4.0, 5.0, 6.0]: B_VALUES = [3.0, 4.0, 5.0, 6.0] present in scripts/lensing_long_path_test.py
+[PASS] source_marker:long_path_runner:def measure_at: def measure_at present in scripts/lensing_long_path_test.py
+[PASS] source_marker:long_path_runner:true_kubo_at_H: true_kubo_at_H present in scripts/lensing_long_path_test.py
+[PASS] cache_runner_matches:finite_path_cache: scripts/lensing_analytical_finite_path.py == scripts/lensing_analytical_finite_path.py
+[PASS] cache_sha_fresh:finite_path_cache: cache sha c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1 current sha c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1
+[PASS] cache_exit_ok:finite_path_cache: exit_code=0 status=ok
+[PASS] cache_contains:finite_path_cache:status: ok: status: ok
+[PASS] cache_contains:finite_path_cache:measured H=0.25                 -1.4335: measured H=0.25                 -1.4335
+[PASS] cache_contains:finite_path_cache:centered L=10 surrogate         -1.4188: centered L=10 surrogate         -1.4188
+[PASS] cache_contains:finite_path_cache:actual full path (+0.1)         -1.2425: actual full path (+0.1)         -1.2425
+[PASS] cache_contains:finite_path_cache:shift-weighted full path        -1.3400: shift-weighted full path        -1.3400
+[PASS] cache_contains:finite_path_cache:The actual static-mass full-path: The actual static-mass full-path
+[PASS] cache_runner_matches:long_path_cache: scripts/lensing_long_path_test.py == scripts/lensing_long_path_test.py
+[PASS] cache_sha_fresh:long_path_cache: cache sha 6c97ab1fe30b85a83357e7cea950013ff286e3a1765a4daa3bdea9a667d6583b current sha 6c97ab1fe30b85a83357e7cea950013ff286e3a1765a4daa3bdea9a667d6583b
+[PASS] cache_exit_ok:long_path_cache: exit_code=0 status=ok
+[PASS] cache_contains:long_path_cache:status: ok: status: ok
+[PASS] cache_contains:long_path_cache:T_phys = 45.0: T_phys = 45.0
+[PASS] cache_contains:long_path_cache:T_phys = 7.5: T_phys = 7.5
+[PASS] cache_contains:long_path_cache:H=0.25 kubo_true:        slope = -1.4356: H=0.25 kubo_true:        slope = -1.4356
+[PASS] cache_contains:long_path_cache:analytical (no fit):    slope = -1.7336: analytical (no fit):    slope = -1.7336
+[PASS] cache_contains:long_path_cache:H=0.5 kubo_true:        slope = -1.8128: H=0.5 kubo_true:        slope = -1.8128
+[PASS] cache_contains:long_path_cache:POOR MATCH: POOR MATCH
+[PASS] note_has_source_packet_reaudit_section: finite-path note has the 2026-06-04 repair section
+[PASS] note_preserves_open_gate_boundary: repair section states that status movement remains audit-owned
+[PASS] note_names_remaining_centroid_bridge: note keeps the centroid/layer-weighted bridge visible
+==============================================================================
+SUMMARY: LENSING SOURCE PACKET PASS=57 FAIL=0
+==============================================================================
+Output written: outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json
+
+----- stderr -----
+

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 626 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1230 |
+| unaudited | 1231 |
 | meta | 241 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 87 |
+| ~~audited_conditional~~ | 86 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 954 |
-| `audited_conditional` | 87 |
+| `audited_conditional` | 86 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1471 |
+| `unaudited` | 1472 |
 
 | claim_type | count |
 |---|---:|
@@ -1125,7 +1125,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5620,19 +5619,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The note's operative step is that asserting the physical observable to be the intensive C3 Atiyah-Bott density on intrinsic R3 at the z=0 zero-section, rather than the Gamma5-graded extensive lattice index, is simultaneously the carrier identification and the zero-section pick.  _(class `F`)_
 - **chain closes:** False — The displayed C3, transverse determinant, J_cs, and L3 arithmetic checks close, but they do not derive the physical readout identification. The missing step is an independent bridge theorem forcing the intensive intrinsic-R3 z=0 readout as the physical observable rather than naming that choice as the carrier/basepoint gate.
 - **rationale:** The runner genuinely checks the finite C3 algebra and J_cs commutation facts, and an independent formula pass did not expose a sign, factor, or normalization error in those displayed identities. Those facts support the negative that J_cs does not select the r parameter and show that both intensive and extensive readouts remain available. The conclusion equating the readout gate, carrier identification, and zero-section pick is a symbol-identity assertion over existing choices, not a first-principles derivation from the restricted packet.
-- **auditor confidence:** high
-
-### `flavor_so2_readout_false_binary_note_2026-05-30`
-
-- **Note:** [`FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md`](../../docs/FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the supplied C3 singlet/doublet algebra showing the U(1)_b obstruction, δ-blind Q invariants, real-vs-complex determinant counts, and the corrected δ=mπ/3 degeneracy locus; not a closed audit of a global framework rule excluding a forced readout choice.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260603-034926-7985a82a-flavor_so2_readout_false`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The real gate is the δ-independent choice between det_R(αP_s+βP_d)=αβ², counting the doublet as two real dimensions, and det_C=αβ, counting it as one complex slot, with neither counting fixed by the framework baseline+retained inputs.  _(class `A`)_
-- **chain closes:** False — The displayed algebraic identities check out under the note and runner definitions. The missing step is an explicit retained bridge theorem or axiom-level rule proving that the framework baseline has no readout/measure normalization selecting det_R or det_C.
-- **rationale:** The independent formula inventory verifies S1-S4 under the runner's C, Ps, Pd, and λ definitions: the C→e^{iα}C obstruction, δ-independent Q traces, det_R=αβ² versus block det_C=αβ, and degeneracy at every δ=mπ/3. The runner does compute these algebraic checks rather than merely printing constants. However, the central conclusion that the framework baseline+retained inputs leave the count undetermined and that neither native reading is forced is broader than those checks and depends on an absent admissibility/exhaustiveness bridge.
 - **auditor confidence:** high
 
 ### `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31`

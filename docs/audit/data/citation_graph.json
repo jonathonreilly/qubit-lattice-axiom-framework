@@ -57463,10 +57463,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "9e3dd3e8630847dd6968168b3716fd466f18e6057d3c7f08344c865ca32cafb5",
+      "note_hash": "123135e45e624479186f929111337334591b4141da2da9f39115cffd1f2c07c0",
       "path": "docs/FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_so2_readout_false_binary_2026_05_30.py",
-      "title": "Flavor \u2014 the SO(2)/U(1)_b readout crux: \"gauge vs physical\" is a false binary; the gate is a \u03b4-independent measure-counting, undetermined, both readings native"
+      "title": "Flavor SO(2) Readout: Finite Determinant Algebra Scope Repair"
     },
     "flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31": {
       "claim_id": "flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31",

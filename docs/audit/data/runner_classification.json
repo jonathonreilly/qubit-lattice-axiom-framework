@@ -1500,6 +1500,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py"
     },
+    "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04": {
+      "assert_count": 4,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 49,
+        "D": 8
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_beta6_d9_coefficient_2026_06_04.py"
+    },
     "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31": {
       "assert_count": 1,
       "counts": {
@@ -35801,6 +35813,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_beta6_d9_coefficient_2026_06_04.py": {
+      "assert_count": 4,
+      "claims": [
+        "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 49,
+        "D": 8
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_beta6_delta_analytic_class_2026_05_30.py": {
       "assert_count": 2,
       "claims": [
@@ -62159,12 +62186,12 @@
     "dominant_class_distribution": {
       "A": 288,
       "B": 307,
-      "C": 862,
+      "C": 863,
       "D": 324,
       "none": 465
     },
-    "runners_classified": 2246,
-    "runners_with_C": 1122,
-    "runners_with_D": 654
+    "runners_classified": 2247,
+    "runners_with_C": 1123,
+    "runners_with_D": 655
   }
 }

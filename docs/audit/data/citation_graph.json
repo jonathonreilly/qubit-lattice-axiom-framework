@@ -2089,6 +2089,34 @@
       "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
     },
     {
+      "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "to": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+    },
+    {
+      "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "to": "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
+    },
+    {
+      "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "to": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30"
+    },
+    {
+      "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "to": "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
+    },
+    {
+      "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "to": "beta6_delta_analytic_class_frontier_note_2026-05-30"
+    },
+    {
+      "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "to": "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30"
+    },
+    {
+      "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "to": "beta6_plaquette_closure_note_2026-05-29"
+    },
+    {
       "from": "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
       "to": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
     },
@@ -45451,6 +45479,26 @@
       "path": "docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md",
       "runner_path": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
       "title": "Beta=6 SU(3) Plaquette D7 Coefficient and Geometric-Ratio Verdict"
+    },
+    "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04": {
+      "claim_id": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+        "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+        "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note",
+        "beta6_delta_analytic_class_frontier_note_2026-05-30",
+        "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
+        "beta6_plaquette_closure_note_2026-05-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "228746b2c8a4ec70b7350b8a36991c222f0052e8b88014bd5beea463236639b8",
+      "path": "docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md",
+      "runner_path": "scripts/frontier_beta6_d9_coefficient_2026_06_04.py",
+      "title": "Beta=6 SU(3) Plaquette D9 Coefficient and Distinct-Support Reopening"
     },
     "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31": {
       "claim_id": "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
@@ -91779,7 +91827,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 823,
+      "bounded_theorem": 824,
       "decoration": 1,
       "meta": 203,
       "no_go": 95,
@@ -91788,7 +91836,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1224,
+      "bounded_theorem": 1225,
       "decoration": 1,
       "meta": 203,
       "no_go": 198,
@@ -91796,10 +91844,10 @@
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10442,
+    "edge_count": 10449,
     "leaf_count": 899,
-    "node_count": 2766,
+    "node_count": 2767,
     "root_count": 942,
-    "runners_with_path": 2351
+    "runners_with_path": 2352
   }
 }

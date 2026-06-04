@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_supertrace_index_route_to_koide_multiplicity_open_lead_exact.py
+runner_sha256: f28fa4bdff58b1ddabd7f4bbec55c5fe68f3509d4eb537e37b829bca6bc5fa36
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+PASS - (1) irrep multiplicities in W = 1 each (regular rep) -> multiplicity weighting (singlet,doublet)=(1,1)
+PASS - (2) dimension/trace weighting -> r=1 (Q=1, kappa=1); multiplicity/index weighting -> r=1/2 (Q=2/3, kappa=2)
+PASS - (3) doublet = 1 complex param b = 2 real params (Re b, Im b): holomorphic count 1 vs real count 2
+PASS - (4) C3-trivial factors commute with C3 and preserve vector weighting (1,2) -> r=1
+PASS - (5) uniform complex rescaling preserves r=1; holomorphic doublet count gives r=1/2
+PASS - (6) source note keeps open-gate / no-status-promotion boundary
+
+6 PASS, 0 FAIL
+
+OPEN GATE: the algebraic candidate is exact. The real/vector count gives (1,2) and r=1;
+a holomorphic/chiral count of the complex doublet mode gives (1,1) and r=1/2. The runner
+does not select the chiral readout and does not derive Koide r=1/2; that remains gated by
+the staggered-Dirac mass/Yukawa realization and future audit.
+
+----- stderr -----
+

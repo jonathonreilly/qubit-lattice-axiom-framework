@@ -1,0 +1,15 @@
+[PASS] Berezin (Grassmann) Gaussian = det(M); bosonic Gaussian ~ 1/det(M). fermionic<->det^{+1}, bosonic<->det^{-1}
+       berezin=4.971000 = det=4.971000; bosonic gives 1/det=0.201167
+[PASS] native cross-site is BOSONIC: bare ladder ops commute [a1,a2]=0 (the default Quantum+Lattice tensor product)
+[PASS] fermionic frame requires a Jordan-Wigner string c2=s3(x)sp: then {c1,c2}=0 (CAR) -- NOT the native product
+[PASS] dim-2 is BLIND to fermion-vs-hard-core-boson: (sp)^2=0 (dim-2) AND commuting cross-site -> grassmann_forcing_bridge excludes only the FREE boson
+[PASS] the selector is STATISTICS: det (signed, fermionic) != permanent (unsigned, bosonic); axioms fix neither
+       det=4.9710 != perm=5.9470
+[PASS] Koide chiral grading Gamma_chi=(2/3)J-I (eig {-1,-1,1}) is circulant and COMMUTES with C3-equivariant H -> distinct atom on the generation factor
+
+SCORECARD PASS=6 FAIL=0
+FINDING: Z=det reduces to ONE fermionic-statistics admission FS ('matter is fermionic, not bosonic'),
+NOT forced (hard-core-boson disproof: dim-2 blind to fermion-vs-hardcore-boson; native cross-site is
+bosonic). FS FULLY discharges Z=det/det^{+1} (with retained Berezin+grassmann-bridge+det-positivity)
+gating ~59 log-det rows; PARTIALLY serves Koide (graded category only -- the generation chiral grading
+is a distinct atom, circulant Gamma_chi commutes with H, blocked by the retained no-go). No audit status.

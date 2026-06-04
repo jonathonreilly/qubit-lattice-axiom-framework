@@ -1,0 +1,182 @@
+Tensor-Product Translation / Fermion Bridge Record-Axiom
+Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-tensor-fermion-invariance/wt
+Parent note: /private/tmp/cl3-tensor-fermion-invariance/wt/docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md
+Companion source note: docs/TENSOR_PRODUCT_TRANSLATION_FERMION_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing operator-algebra
+      identities (T1) unitarity, (T2) group law, (T3) fermion-
+      operator covariance, (T4) charge conservation are
+      invariant under the 2026-06-04 Record-axiom adoption
+      (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: Quantum-axiom-only H_Λ construction at N=2
+========================================================================
+  Builds H_Λ = C² ⊗ C² as dim-4 sympy Matrix from Quantum-axiom
+  per-site C²_x factors; verifies a_x and a_x^† are adjoints.
+  PASS H_Lambda_dim_4 :: a_0 acts on dim (4, 4)
+  PASS a0_adjoint_is_adag0 :: (a_0)^† = a_0^† at exact precision
+  PASS a1_adjoint_is_adag1 :: (a_1)^† = a_1^† at exact precision
+
+========================================================================
+BLOCK 2: Lattice-axiom-only T_1 construction at N=2
+========================================================================
+  Builds T_1 from cyclic-shift basis permutation rule (eq. 2 of
+  parent); uses only Λ ⊂ Z^3 translation structure.
+  PASS T1_is_4x4 :: T_1 shape = (4, 4)
+  PASS T1_is_permutation_row_sums_1 :: row sums = [1, 1, 1, 1]
+  PASS T1_is_permutation_col_sums_1 :: col sums = [1, 1, 1, 1]
+
+========================================================================
+BLOCK 3: (T1) Unitarity at N=2
+========================================================================
+  PASS T1_T1dag_eq_I :: T_1 T_1^† = I_4 exactly
+  PASS T1dag_T1_eq_I :: T_1^† T_1 = I_4 exactly
+
+========================================================================
+BLOCK 4: (T2) Group law at N=2
+========================================================================
+  PASS T0_eq_I :: T_0 = I_4 (period-2 group identity)
+  PASS T1_squared_eq_I :: T_1 T_1 = T_2 (≡ T_0 on Z/2) = I_4
+
+========================================================================
+BLOCK 5: (T3) Fermion-operator covariance at N=2
+========================================================================
+  PASS T3_T1_a0_T1dag_eq_a1 :: T_1 a_0 T_1^† = a_1
+  PASS T3_T1_a1_T1dag_eq_a0 :: T_1 a_1 T_1^† = a_0
+  PASS T3_T1_adag0_T1dag_eq_adag1 :: T_1 a_0^† T_1^† = a_1^†
+  PASS T3_T1_adag1_T1dag_eq_adag0 :: T_1 a_1^† T_1^† = a_0^†
+
+========================================================================
+BLOCK 6: (T4) Charge conservation at N=2
+========================================================================
+  PASS T4_T1_Q_T1dag_eq_Q :: T_1 Q_total T_1^† = Q_total
+  PASS T4_commutator_zero :: [T_1, Q_total] = 0_4
+
+========================================================================
+BLOCK 7: (T1)-(T4) at N=3 (8-dim block, full cyclic group)
+========================================================================
+  PASS T1_unitarity_N3_a0_left :: T_0 T_0^† = I_8
+  PASS T1_unitarity_N3_a0_right :: T_0^† T_0 = I_8
+  PASS T1_unitarity_N3_a1_left :: T_1 T_1^† = I_8
+  PASS T1_unitarity_N3_a1_right :: T_1^† T_1 = I_8
+  PASS T1_unitarity_N3_a2_left :: T_2 T_2^† = I_8
+  PASS T1_unitarity_N3_a2_right :: T_2^† T_2 = I_8
+  PASS T2_group_law_N3_T1_T2_eq_I :: T_1 T_2 = T_3 ≡ T_0 = I
+  PASS T2_group_law_N3_T1_T1_eq_T2 :: T_1 T_1 = T_2
+  PASS T3_N3_a0_x0 :: T_0 a_0 T_0^† = a_0
+  PASS T3_N3_a0_x1 :: T_0 a_1 T_0^† = a_1
+  PASS T3_N3_a0_x2 :: T_0 a_2 T_0^† = a_2
+  PASS T3_N3_a1_x0 :: T_1 a_0 T_1^† = a_1
+  PASS T3_N3_a1_x1 :: T_1 a_1 T_1^† = a_2
+  PASS T3_N3_a1_x2 :: T_1 a_2 T_1^† = a_0
+  PASS T3_N3_a2_x0 :: T_2 a_0 T_2^† = a_2
+  PASS T3_N3_a2_x1 :: T_2 a_1 T_2^† = a_0
+  PASS T3_N3_a2_x2 :: T_2 a_2 T_2^† = a_1
+  PASS T4_N3_a0 :: [T_0, Q_total] = 0
+  PASS T4_N3_a1 :: [T_1, Q_total] = 0
+  PASS T4_N3_a2 :: [T_2, Q_total] = 0
+
+========================================================================
+BLOCK 8: (T2) full group law at N=4 (16-dim block, all pairs)
+========================================================================
+  PASS T2_N4_a0_b0 :: T_0 T_0 = T_0
+  PASS T2_N4_a0_b1 :: T_0 T_1 = T_1
+  PASS T2_N4_a0_b2 :: T_0 T_2 = T_2
+  PASS T2_N4_a0_b3 :: T_0 T_3 = T_3
+  PASS T2_N4_a1_b0 :: T_1 T_0 = T_1
+  PASS T2_N4_a1_b1 :: T_1 T_1 = T_2
+  PASS T2_N4_a1_b2 :: T_1 T_2 = T_3
+  PASS T2_N4_a1_b3 :: T_1 T_3 = T_0
+  PASS T2_N4_a2_b0 :: T_2 T_0 = T_2
+  PASS T2_N4_a2_b1 :: T_2 T_1 = T_3
+  PASS T2_N4_a2_b2 :: T_2 T_2 = T_0
+  PASS T2_N4_a2_b3 :: T_2 T_3 = T_1
+  PASS T2_N4_a3_b0 :: T_3 T_0 = T_3
+  PASS T2_N4_a3_b1 :: T_3 T_1 = T_0
+  PASS T2_N4_a3_b2 :: T_3 T_2 = T_1
+  PASS T2_N4_a3_b3 :: T_3 T_3 = T_2
+  PASS T2_N4_all_16_pairs_close :: all 16 (a,b) pairs satisfy the group law; misses = 0
+
+========================================================================
+BLOCK 9: (T3) on the 2D 2×2 block (independent lattice axes)
+========================================================================
+  PASS T1_unitarity_Tx :: T_x T_x^† = I_16
+  PASS T1_unitarity_Ty :: T_y T_y^† = I_16
+  PASS T3_Tx_a00 :: T_x a_{0,0} T_x^† = a_{1,0}
+  PASS T3_Ty_a00 :: T_y a_{0,0} T_y^† = a_{0,1}
+  PASS T3_Tx_a01 :: T_x a_{0,1} T_x^† = a_{1,1}
+  PASS T3_Ty_a01 :: T_y a_{0,1} T_y^† = a_{0,0}
+  PASS T3_Tx_a10 :: T_x a_{1,0} T_x^† = a_{0,0}
+  PASS T3_Ty_a10 :: T_y a_{1,0} T_y^† = a_{1,1}
+  PASS T3_Tx_a11 :: T_x a_{1,1} T_x^† = a_{0,1}
+  PASS T3_Ty_a11 :: T_y a_{1,1} T_y^† = a_{1,0}
+
+========================================================================
+BLOCK 10: Record-axiom counterfactual at N=2 (4 identities)
+========================================================================
+  Compute matrix entries for (T1)-(T4) under two outer scopes:
+    scope_A: Record axiom is asserted (in framework axiom set).
+    scope_B: Record axiom is NOT asserted.
+  No code path consumes any Record-functional `I(·)` content;
+  the matrix outputs are bitwise identical in both scopes.
+  PASS counterfactual_T1_T1dag_identical :: scope_A == scope_B for T1_T1dag
+  PASS counterfactual_I4_identical :: scope_A == scope_B for I4
+  PASS counterfactual_T1_squared_identical :: scope_A == scope_B for T1_squared
+  PASS counterfactual_T1_a0_T1dag_identical :: scope_A == scope_B for T1_a0_T1dag
+  PASS counterfactual_a1_identical :: scope_A == scope_B for a1
+  PASS counterfactual_T1_Q_T1dag_identical :: scope_A == scope_B for T1_Q_T1dag
+  PASS counterfactual_Q_identical :: scope_A == scope_B for Q
+  PASS counterfactual_commutator_identical :: scope_A == scope_B for commutator
+  PASS scope_A_T1_unitarity :: (T1) holds with Record axiom asserted
+  PASS scope_B_T1_unitarity :: (T1) holds with Record axiom NOT asserted
+  PASS scope_A_T2_group_law :: (T2) holds with Record axiom asserted
+  PASS scope_B_T2_group_law :: (T2) holds with Record axiom NOT asserted
+  PASS scope_A_T3_covariance :: (T3) holds with Record axiom asserted
+  PASS scope_B_T3_covariance :: (T3) holds with Record axiom NOT asserted
+  PASS scope_A_T4_charge_conservation :: (T4) holds with Record axiom asserted
+  PASS scope_B_T4_charge_conservation :: (T4) holds with Record axiom NOT asserted
+
+========================================================================
+BLOCK 11: Parent note Record-axiom usage scan (load-bearing)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-tensor-fermion-invariance/wt/docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md
+  PASS structural_section_start_found :: start index = 5853
+  PASS structural_section_end_found :: end index = 9696
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+  PASS quantum_lattice_content_present_in_load_bearing_section :: matches >= 4: ['tensor', 'basis', 'permut', 'σ_-', '|0⟩', '|1⟩']
+
+========================================================================
+BLOCK 12: Quantum and Lattice content preserved across memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-tensor-fermion-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-tensor-fermion-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+
+========================================================================
+TOTAL PASS: 91
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The four load-bearing identities (T1)-(T4) of TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW
+  _THEOREM_NOTE_2026-05-25.md use ONLY Lattice + Quantum axiom content (per-site C²_x
+  factor + Z^3 cyclic-shift translation) plus standard tensor-product Fock-space
+  and single-mode per-site Pauli fermion constructions. The Record axiom
+  (additive scalar record-readout functional) is neither used nor invoked.
+  Matrix-entry outputs are identical under both 'Record axiom asserted' and
+  'Record axiom not asserted' outer scopes. This runner does not re-apply the
+  prior audit verdict; it records that the matrix algebra checked here is
+  unchanged by the 2026-06-04 axiom-set adoption.
+
+The audit lane decides whether to honor or re-test the prior verdict on the
+new minimal_axioms premise hash.

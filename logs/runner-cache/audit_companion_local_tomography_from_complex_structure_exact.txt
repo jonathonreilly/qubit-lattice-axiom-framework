@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_local_tomography_from_complex_structure_exact.py
+runner_sha256: 2ea17e302885ab3b6fcb97c7e572a85060553894abc355361ee31c8cfc06adb2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+PASS - M1 dim_R(M_n(C)_sa) = n^2 = dim_C(M_n(C)) for n=2,3,4
+PASS - M1b M = H1 + i H2 with H1,H2 self-adjoint
+PASS - M2 ordinary complex two-qubit tensor product has local-tomography dimension 16 = 4*4
+PASS - M3 ordinary real rebit tensor product fails local tomography: 9 != 10
+PASS - M4 shared scalar i: (iI2) tensor I2 = I2 tensor (iI2) = iI4
+PASS - M5 Pauli products span M_4(C): 16 products, rank 16
+PASS - M6 sigma1 sigma2 sigma3 = i I2
+
+7 PASS, 0 FAIL
+Conditional result: ordinary shared-scalar complex matrix tensor products are locally tomographic by dimension count. The runner does not derive the composition premise from Lattice, Quantum, or Record.
+
+----- stderr -----
+

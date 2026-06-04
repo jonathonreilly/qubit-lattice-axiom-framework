@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/koide_infogeom_foot45_native.py
+runner_sha256: ee2d2402ff4b7a96c444fa267417aa06111bbeebb3cc9a93d01f9526def53f24
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+==============================================================================
+KOIDE info-geometry + Foot-45 native test  (native C3 circulant class)
+==============================================================================
+[PASS] C is order 3 (C^3 = I)
+[PASS] Fourier modes diagonalize C
+
+--- A. cited Koide identity Q = 1/3 + (2/3) r ---
+[PASS] symbolic sum v = 3a  -- sum v = 3*a
+[PASS] symbolic Q = 1/3 + (2/3)(beta/a)^2 (phi-independent)  -- Q = (a**2 + 2*beta**2)/(3*a**2)
+[PASS] numeric Q(r=0.0) = 0.3333 (phase-blind)  -- Q=0.333333333333
+[PASS] numeric Q(r=0.5) = 0.6667 (phase-blind)  -- Q=0.666666666667
+[PASS] numeric Q(r=1.0) = 1.0000 (phase-blind)  -- Q=1.000000000000
+
+--- B. Foot 45deg / Fisher-Rao polar identity cos^2(theta_p)=1/(3Q) ---
+[PASS] cos^2(theta_p) = 1/(3Q) at r=0.0  -- cos^2=1.000000, 1/(3Q)=1.000000
+[PASS] cos^2(theta_p) = 1/(3Q) at r=0.5  -- cos^2=0.500000, 1/(3Q)=0.500000
+[PASS] cos^2(theta_p) = 1/(3Q) at r=0.3  -- cos^2=0.625000, 1/(3Q)=0.625000
+[PASS] Foot 45deg (cos^2=1/2) <=> Q=2/3 <=> r=1/2  -- cos^2=0.500000, Q=0.666667
+
+--- C. PRONG 1: quantum geometric tensor (FS metric + Berry) == 0 ---
+[PASS] eigenvectors are b-independent Fourier modes (eigenvector rigidity)
+[PASS] quantum geometric tensor (FS metric + Berry curvature) == 0 over b-plane  -- max|QGT component| = 1.89e-20
+[PASS] EXACT: fixed DFT basis F diagonalizes every circulant H (b-constant projectors)  -- max offdiag=2.34e-16, recon err=6.66e-16
+    => Re QGT (Fubini-Study metric) = 0  AND  Im QGT (Berry) = 0, EXACTLY:
+       spectral projectors |psi_k><psi_k| are b-constant (DFT diagonalizes all circulants);
+       the eigenstate bundle is FLAT in b; no quantum-metric extremum exists in b.
+       (Caveat: at the measure-zero phase delta=0 stratum the doublet eigenvalues
+        coincide and the in-doublet basis is ambiguous; the b-constant 2-dim doublet
+        PROJECTOR P_doublet=I-P_singlet is still exact, so the non-abelian QGT also vanishes.)
+       PRONG 1 (quantum/Bures/FS route) does NOT reach r=1/2 -- the metric wall holds.
+
+--- D. PRONG 1 classical Fisher-Rao: azimuth Killing; natural points != 1/2 ---
+[PASS] Fisher-Rao g_{phi phi}=sin^2 theta is phi-independent (azimuth Killing)
+[PASS] classical-Fisher sector-balance lands r = 17/2 - 6 sqrt(2) (~0.0147), NOT 1/2  -- r_Fisher = 0.0147186
+[PASS] Bures/SLD sector-balance lands r = 1/16, NOT 1/2 (and r=1/4 falsified)
+[PASS] spectral purity extremizes at endpoints (r->0 or r->1), not interior r=1/2  -- argmax r=1.000, argmin r=0.000
+
+--- E. PRONG 2: native measure fork (1,1) vs (1,2) on R[Z_3]=R(+)C ---
+[PASS] Tr(I^2)=3 (singlet/scalar block HS norm^2)
+[PASS] Tr((J-I)^2)=6 (doublet block HS norm^2)
+[PASS] I and (J-I) are HS-orthogonal (Tr(I(J-I))=0)
+[PASS] equal-real-block (1,1) count: 3a^2=6b^2 -> r=1/2 -> Q=2/3 (= Foot 45deg)
+[PASS] central idempotents: rank(e0)=1, rank(e1)=2 (dimension split 1:2)
+[PASS] dimension/per-DOF (det_R) count: equal power per real mode -> r=1 -> Q=1
+[PASS] Z_3 Frobenius-Schur indicators = (1,0,0) -> R[Z_3]=R(+)C, two real blocks  -- FS = [1.0, np.float64(-0.0), np.float64(0.0)]
+
+--- F. CRUX: (1,1) vs (1,2) both admissible-but-unforced (cited dependency) ---
+[PASS] isotype family: trace point (alpha=1,beta_F=0) is PD -> r=1 member
+[PASS] isotype family: an equal-block point (alpha=1,beta_F=1) is PD -> r=1/2 member
+[PASS] Frobenius isotype dependency: PD+Ad-inv+orthogonality force NEITHER weight  -- cited dependency: koide_frobenius_isotype_split_uniqueness
+    => r=1/2 (Foot 45deg / equal-block / center-state / det_C) is ADMISSIBLE
+       but NOT FORCED; r=1 (trace / dimension / det_R) equally admissible.
+       The (1,1) 45deg reading is a POSIT (block-count measure), not a derivation.
+
+--- G. import-flag audit ---
+[PASS] no measured masses / PDG values used (algebra only)
+[PASS] Foot-45 / quantum-metric / Fisher-Rao used as geometry, not as new axioms or primitives
+[PASS] the ONLY non-derived ingredient is the (1,1) block-weight POSIT (flagged)
+
+==============================================================================
+SCORECARD: PASS=31 FAIL=0
+==============================================================================
+
+VERDICT: NO for the tested native circulant metric/counting shortcuts.
+Neither prong DERIVES r=1/2 (Q=2/3).
+ - PRONG 1 (info-geometry): the quantum geometric tensor (Fubini-Study metric AND
+   Berry curvature) of the native circulant eigenstate bundle is IDENTICALLY ZERO in b
+   (eigenvector rigidity). The classical Fisher-Rao / Bures metrics on the eigenvalue
+   simplex are azimuthally symmetric and land at r in {0, ~0.0147, 1/16, 1}, never 1/2.
+   => Information geometry does NOT escape the metric wall.
+ - PRONG 2 (Foot 45deg native): 45deg = the (1,1) equal-real-Wedderburn-block reading,
+   which is ADMISSIBLE but not forced by the cited isotype-weight family. The native
+   dimension/trace reading gives (1,2) -> r=1 -> Q=1.
+ Both prongs reduce to the SAME single unforced bit: (1,1) block-count vs (1,2) dimension.
+ r=1/2 remains admissible-but-unforced on the cited surface; selecting it is a POSIT,
+ not a derivation from the current native circulant metric/counting data.
+
+
+----- stderr -----
+

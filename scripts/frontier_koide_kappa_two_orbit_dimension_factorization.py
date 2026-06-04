@@ -6,12 +6,13 @@ Companion to
 
 Certifies that the integer "2" in the Koide master identity
     2 r_0^2 - (r_1^2 + r_2^2)  =  18 (g_0^2 - 2 |g_1|^2)                      (*)
-is axiom-native (Z_3 orbit-dimension ratio), while the Koide cone
-normalization alpha:beta = 2:-1 itself is not forced by Z_3-invariance
-alone.
+is a finite circulant representation-theoretic fact (Z_3 orbit-dimension
+ratio), while the Koide cone normalization alpha:beta = 2:-1 itself is
+not forced by Z_3-invariance alone; it is supplied only by the linked
+formal MRU reduced-carrier authority.
 
 Demonstrations:
-  - Tr(B_0^2)/Tr(B_1^2) == 1/2 symbolically (sympy).
+  - Tr(B_1^2)/Tr(B_0^2) == 2 symbolically (sympy).
   - Master identity (*) verified symbolically with sympy.
   - Master identity invariant under SO(2) rotation of (B_1, B_2).
   - Master identity fails under non-orthonormal rescaling of (B_1, B_2).
@@ -22,6 +23,9 @@ Demonstrations:
   - Group-theoretic uniqueness: Z_3 is the only cyclic group with real
     irrep dimension pattern {1, 2} (summing to |Z_n|); Z_4 has {1, 1, 2};
     Z_2 has {1, 1}.
+  - MRU one-hop authority is present, and Q/CoV convention algebra is
+    checked: K_std = sum(m)/(sum(sqrt(m)))^2 = 2/3 at CoV=1, while the
+    inverse normalized sum-square ratio is 1/2, not 2/3.
   - Observational PDG check flagged separately.
 """
 
@@ -29,6 +33,7 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
@@ -339,12 +344,56 @@ check(
 
 
 # ---------------------------------------------------------------------------
-# Section 7 - Observational consistency (FLAGGED, not a derivation)
+# Section 7 - MRU one-hop authority and Q/CoV convention repair
 # ---------------------------------------------------------------------------
 
 print()
 print("=" * 72)
-print("Section 7 - Observational PDG check (flagged; not axiom-native)")
+print("Section 7 - MRU authority and Koide Q/CoV convention")
+print("=" * 72)
+
+repo_root = Path(__file__).resolve().parents[1]
+mru_path = repo_root / "docs" / "KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md"
+mru_text = mru_path.read_text(encoding="utf-8") if mru_path.exists() else ""
+check(
+    "MRU one-hop authority note exists in restricted packet",
+    mru_path.exists(),
+    str(mru_path.relative_to(repo_root)) if mru_path.exists() else "missing",
+)
+check(
+    "MRU note contains the formal reduced-carrier kappa definition",
+    "kappa := 2 rho_plus^2 / rho_perp^2" in mru_text
+    and "rho_plus^2 = rho_perp^2" in mru_text,
+    "formal two-slot scope only",
+)
+
+mu, var = sp.symbols("mu var", positive=True)
+cov2 = var / mu**2
+K_std = sp.simplify((1 + cov2) / 3)
+Q_inv = sp.simplify(1 / (1 + cov2))
+check(
+    "Standard Koide ratio K_std=(sum m)/(sum sqrt(m))^2 equals 2/3 at CoV=1",
+    sp.simplify(K_std.subs(var, mu**2) - sp.Rational(2, 3)) == 0,
+    f"K_std(CoV=1)={sp.simplify(K_std.subs(var, mu**2))}",
+)
+check(
+    "Inverse normalized sum-square ratio equals 1/2 at CoV=1, not 2/3",
+    sp.simplify(Q_inv.subs(var, mu**2) - sp.Rational(1, 2)) == 0,
+    f"Q_inv(CoV=1)={sp.simplify(Q_inv.subs(var, mu**2))}",
+)
+check(
+    "MRU leaf alpha:beta=2:-1 gives kappa=-4 beta/alpha = 2",
+    sp.simplify(-4 * sp.Rational(-1, 1) / sp.Rational(2, 1) - 2) == 0,
+)
+
+
+# ---------------------------------------------------------------------------
+# Section 8 - Observational consistency (FLAGGED, not a derivation)
+# ---------------------------------------------------------------------------
+
+print()
+print("=" * 72)
+print("Section 8 - Observational PDG check (flagged; not a derivation)")
 print("=" * 72)
 
 m_e = 0.5109989
@@ -378,15 +427,16 @@ print("kappa=2 Orbit-Dimension Factorization - certification summary")
 print("=" * 72)
 print(
     "\n"
-    "Piece (i) AXIOM-NATIVE:  Tr(B_1^2)/Tr(B_0^2) = 6/3 = 2, forced by Z_3\n"
-    "orbit-dimension ratio dim_R(non-triv)/dim_R(triv) = 2/1.\n"
+    "Piece (i) FINITE-REPRESENTATION FACT:  Tr(B_1^2)/Tr(B_0^2) = 6/3 = 2,\n"
+    "forced by Z_3 orbit-dimension ratio dim_R(non-triv)/dim_R(triv) = 2/1.\n"
     "\n"
-    "Piece (ii) OPEN:  Koide cone normalization alpha:beta = 2:-1 not forced\n"
-    "by Z_3-invariance alone. Surviving 1-parameter family:\n"
+    "Piece (ii) MRU-SOURCED:  Koide cone normalization alpha:beta = 2:-1\n"
+    "is not forced by Z_3-invariance alone. Surviving Z_3 family:\n"
     "   Q(G) = alpha r_0^2 + beta (r_1^2 + r_2^2),  kappa = -4 beta/alpha.\n"
     "\n"
-    "Residual open scalar: derive CoV(sqrt(m_k)) = 1 from A0-A3, equivalently\n"
-    "Var(sqrt(m_k)) = <sqrt(m_k)>^2, equivalently alpha/beta = -2.\n"
+    "The linked MRU reduced two-slot theorem supplies the formal leaf kappa=2.\n"
+    "Residual open physics: the MRU theorem does not derive the physical SO(2)\n"
+    "quotient/readout or operator-side charged-lepton closure.\n"
 )
 print(f"PASS={PASS} FAIL={FAIL}")
 sys.exit(0 if FAIL == 0 else 1)

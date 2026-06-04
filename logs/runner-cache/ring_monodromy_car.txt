@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/ring_monodromy_car.py
+runner_sha256: 7fe0f0f582e963049d1606dbd4d59fccff1ec9b5714c0231532f9c323fa183db
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+[PASS] 0a on-site nilpotent a^dag^2=0 (both frames)  
+[PASS] 0b HCB cross-site COMMUTES [b0,b1]=0  
+[PASS] 0c CAR cross-site ANTICOMMUTES {c0,c1}=0 and {c0,c1^dag}=0  
+[PASS] 0d F=(-1)^Q identical operator in both frames (shared n_x); F^2=I, F^dag=F  
+[PASS] 0e single-site ladder is F-ODD in BOTH frames  F a_x F = -a_x  
+[PASS] 0f RING spectra DIFFER between HCB and CAR (sign is physical on the loop)  (HCB gs=-1.4142, CAR gs=-1.0000)
+[PASS] 1a BOTH ring theories give POSITIVE transfer operator (bare T-positivity NEUTRAL)  (T min eig HCB=0.4931, CAR=0.6065)
+[PASS] 1b => bare T-positivity does NOT reject HCB on the ring (matches #2537 §9)  (positivity certifies BOTH; the new ingredient must be monodromy/single-valuedness)
+[PASS] 2a CAR seam bond = (JW string sites 0..L-2) x HCB-pattern seam bond  (the wrap bond is where the parity string becomes physical)
+[PASS] 2b hopping seam BOND is F-EVEN in both frames (bilinear) -> conserves parity, stays local-or-graded-local; the F-ODD object is the bare ladder, not the bond  (the dynamics-carrying bond is parity-even; the sign is confined to the odd/charged sector)
+[PASS] 3a both ring Hamiltonians conserve parity [H,F]=0  
+[PASS] 3b sector spectra: HCB and CAR differ in EVEN and/or ODD sector  (HCB even gs=-1.4142 odd gs=-1.0000 | CAR even gs=-1.0000 odd gs=-1.0000)
+[PASS] 3c RP/T-positivity holds in BOTH parity sectors for BOTH frames  (min eig HCB even=0.4931 odd=0.6065 | CAR even=0.6065 odd=0.6065)
+[PASS] 3d => parity superselection ALONE does NOT let positivity reject HCB  (both frames T-positive in each superselected sector)
+[PASS] 4a HCB seam bond is strictly 2-local (acts only on sites {L-1,0})  (HCB wrap bond is a genuine local operator)
+[PASS] 4b CAR seam bond is NOT 2-local (carries the JW string on interior sites)  (the CAR wrap bond is a NON-LOCAL operator in the qubit tensor frame)
+[PASS] 5a NO A1+A2+RP datum tested rejects the HCB ring (positivity, sectors, parity all neutral)  (RP certifies both in every parity sector; ordinary locality favours HCB)
+[PASS] 5b selecting CAR REQUIRES positing the GRADED tensor product (single-valuedness under (-1)^Q-twisted transport) = positing FS  IMPORT: graded locality / FS is the missing INPUT, not an RP consequence
+[PASS] 6a across L in {3,4,5,6}: BOTH frames stay T-positive (overall & per sector)  (L=3:Tpos_both=True,spec_differ=True; L=4:Tpos_both=True,spec_differ=True; L=5:Tpos_both=True,spec_differ=True; L=6:Tpos_both=True,spec_differ=True)
+[PASS] 6b under continuous boundary FLUX twist: BOTH frames stay T-positive  (theta=0.00:Tpos_both=True; theta=0.50:Tpos_both=True; theta=1.00:Tpos_both=True; theta=1.57:Tpos_both=True)
+[PASS] 7a ring GROUND STATES land in DIFFERENT parity sectors (spectral flow; strongest forcing candidate)  (HCB <F>=+1.0000, CAR <F>=-1.0000)
+[PASS] 7b RP certifies the sector of EACH frame's vacuum (HCB-even AND CAR-odd both T-positive) -> RP does NOT pick which vacuum is physical  (HCB even-sector Tpos=True, CAR odd-sector Tpos=True)
+[PASS] 7c spectral-flow selection of CAR is DOWNSTREAM of imposing FS (the (-1)^Q superselection + graded loop BC), NOT a derivation of FS from A1+A2+RP  IMPORT: FS superselection rule must be posited to read spectral flow as a selector
+[PASS] 8a lattice cyclic shift U is unitary with U^L=I (translation closes, single-valued)  
+[PASS] 8b HCB ring is a CONSISTENT QM operator (Hermitian, complete orthonormal eigenbasis, real spectrum) -> NOT self-inconsistent  (the HCB ring is a perfectly good theory, no monodromy anomaly)
+[PASS] 8c CAR ring is likewise consistent (both are good theories, neither pathological)  
+[PASS] 8d HCB ring conserves total charge ([H,F]=0) -> closed single-valued sectors, no charge non-conservation anomaly  
+[PASS] 8e STEELMAN DEFUSED: HCB ring fully consistent -> consistency does NOT force CAR; the fermion sign remains a POSIT (statistics_agnostic stands)  (only the graded/FS boundary condition selects CAR = import)
+[PASS] 8f the two ring theories are genuinely DIFFERENT (not a relabeling) -> the choice between them is a real physical INPUT the framework must supply  (HCB gs=-1.4142, CAR gs=-1.0000)
+
+========================================================================
+SCORECARD: PASS=29 FAIL=0
+
+----- stderr -----
+

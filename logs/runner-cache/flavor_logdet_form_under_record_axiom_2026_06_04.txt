@@ -1,0 +1,13 @@
+[PASS] det is a multiplicative character: det(AB)=det(A)det(B); Tr(AB) != Tr(A)Tr(B)
+[PASS] the multiplicative-character family is det^k (det(AB)^k = det(A)^k det(B)^k for all k)
+[PASS] det(A (+) B) = det(A) det(B): the det character is multiplicative over disjoint blocks
+[PASS] |det|^p multiplies over the direct sum for every p; ONLY log|det| is additive (the Record-axiom image)
+[PASS] Record additivity over disjoint blocks + det character fixes W = c*log|det| (verified over 3 disjoint blocks)
+       form fixed; scale c set by the additive-baseline convention
+[PASS] log|det H| = sum_modes log|lambda_mode| (the additive functional over the disjoint mode/record collection)
+
+SCORECARD PASS=6 FAIL=0
+FORM THEOREM: Record axiom (additivity over disjoint collections) + det multiplicative-character
+uniqueness => observable generator FORM W = c*log|det| (scale c = additive-baseline convention).
+Record closes the ADDITIVITY factor; det-character closes the MULTIPLICATIVE-form factor. The
+source/action coupling (D+J) is a SEPARATE residual the Record axiom does not supply. No audit status.

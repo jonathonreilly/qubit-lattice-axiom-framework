@@ -10349,6 +10349,34 @@
       "to": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"
     },
     {
+      "from": "flavor_logdet_form_under_record_axiom_2026-06-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "flavor_logdet_form_under_record_axiom_2026-06-04",
+      "to": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28"
+    },
+    {
+      "from": "flavor_logdet_form_under_record_axiom_2026-06-04",
+      "to": "record_p1_dependency_audit_note_2026-06-04"
+    },
+    {
+      "from": "flavor_logdet_generator_three_factor_provenance_2026-06-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "flavor_logdet_generator_three_factor_provenance_2026-06-04",
+      "to": "flavor_logdet_form_under_record_axiom_2026-06-04"
+    },
+    {
+      "from": "flavor_logdet_generator_three_factor_provenance_2026-06-04",
+      "to": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28"
+    },
+    {
+      "from": "flavor_logdet_generator_three_factor_provenance_2026-06-04",
+      "to": "record_p1_dependency_audit_note_2026-06-04"
+    },
+    {
       "from": "flavor_r_half_assumptions_audit_note_2026-05-30",
       "to": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02"
     },
@@ -57297,6 +57325,39 @@
       "runner_path": "scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py",
       "title": "Flavor \u2014 no native latitude-quantizer (4 mechanisms); the RP \"self-dual\" lead is REFUTED (circular); reframed to the operator-algebra trace-vs-center question"
     },
+    "flavor_logdet_form_under_record_axiom_2026-06-04": {
+      "claim_id": "flavor_logdet_form_under_record_axiom_2026-06-04",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "conditional form theorem / roadmap. This is not an audit",
+      "claim_type_seed_hint": null,
+      "deps": [
+        "minimal_axioms",
+        "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+        "record_p1_dependency_audit_note_2026-06-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9dce2394c9c3c30a51e9416815c7b74ebd2dce24e4dd7dbe1d7a562b7d8e4b4d",
+      "path": "docs/FLAVOR_LOGDET_FORM_UNDER_RECORD_AXIOM_2026-06-04.md",
+      "runner_path": "scripts/flavor_logdet_form_under_record_axiom_2026_06_04.py",
+      "title": "Flavor - conditional log-det form from Record-compatible additivity plus a separate det-character authority"
+    },
+    "flavor_logdet_generator_three_factor_provenance_2026-06-04": {
+      "claim_id": "flavor_logdet_generator_three_factor_provenance_2026-06-04",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "provenance decomposition / roadmap. This is not a value",
+      "claim_type_seed_hint": null,
+      "deps": [
+        "minimal_axioms",
+        "flavor_logdet_form_under_record_axiom_2026-06-04",
+        "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+        "record_p1_dependency_audit_note_2026-06-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6c0c654f205d9851fde1776161bed0f7857931dd2f2c1fedaf4a7bbd6d9b7f7c",
+      "path": "docs/FLAVOR_LOGDET_GENERATOR_THREE_FACTOR_PROVENANCE_2026-06-04.md",
+      "runner_path": "scripts/flavor_logdet_generator_three_factor_provenance_2026_06_04.py",
+      "title": "Flavor - log-det generator provenance after the Record axiom"
+    },
     "flavor_measure_positivity_agnostic_note_2026-05-31": {
       "claim_id": "flavor_measure_positivity_agnostic_note_2026-05-31",
       "claim_type_author_hint": "bounded_theorem",
@@ -91742,7 +91803,7 @@
       "decoration": 1,
       "meta": 203,
       "no_go": 95,
-      "none": 1404,
+      "none": 1406,
       "open_gate": 62,
       "positive_theorem": 176
     },
@@ -91751,14 +91812,14 @@
       "decoration": 1,
       "meta": 203,
       "no_go": 198,
-      "none": 423,
+      "none": 425,
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10439,
-    "leaf_count": 900,
-    "node_count": 2764,
+    "edge_count": 10446,
+    "leaf_count": 899,
+    "node_count": 2766,
     "root_count": 940,
-    "runners_with_path": 2349
+    "runners_with_path": 2351
   }
 }

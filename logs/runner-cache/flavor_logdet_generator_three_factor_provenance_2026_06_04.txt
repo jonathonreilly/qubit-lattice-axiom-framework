@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/flavor_logdet_generator_three_factor_provenance_2026_06_04.py
+runner_sha256: d48bfeb2eb2ead5d949c6506d0d51a75850d89c3e839c02262d62e516ba2c055
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+[PASS] finite identity: log |det K| = sum_modes log |lambda|
+       W=13.204763
+[PASS] finite identity: block-diagonal log-det adds over disjoint blocks
+[PASS] det is multiplicative in the sampled character test; trace is not
+[PASS] finite identity: dW/dj_x = Re Tr[(D+J)^-1 P_x] against numeric derivative
+       max|analytic - numeric| = 7.11e-10; this source/action factor is not from Record
+[PASS] residual after Record additivity remains non-empty
+       record-readout realization, det-character authority, source/action coupling
+
+SCORECARD PASS=5 FAIL=0
+PROVENANCE: Record additivity is only factor 1. The log-det generator still needs
+record-readout realization, det-character authority, and source/action coupling.
+No existing row is re-cited or promoted; no audit status is set.
+
+----- stderr -----
+

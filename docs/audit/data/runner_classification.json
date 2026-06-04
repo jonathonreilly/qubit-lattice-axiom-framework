@@ -8676,6 +8676,30 @@
       "dominant_class": null,
       "runner": "scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py"
     },
+    "flavor_logdet_form_under_record_axiom_2026-06-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 19,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_logdet_form_under_record_axiom_2026_06_04.py"
+    },
+    "flavor_logdet_generator_three_factor_provenance_2026-06-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_logdet_generator_three_factor_provenance_2026_06_04.py"
+    },
     "flavor_measure_positivity_agnostic_note_2026-05-31": {
       "assert_count": 1,
       "counts": {
@@ -34604,6 +34628,36 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_logdet_form_under_record_axiom_2026_06_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_logdet_form_under_record_axiom_2026-06-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 19,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_logdet_generator_three_factor_provenance_2026_06_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_logdet_generator_three_factor_provenance_2026-06-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/flavor_measure_positivity_agnostic_2026_05_31.py": {
@@ -62105,12 +62159,12 @@
     "dominant_class_distribution": {
       "A": 288,
       "B": 307,
-      "C": 860,
+      "C": 862,
       "D": 324,
       "none": 465
     },
-    "runners_classified": 2244,
-    "runners_with_C": 1120,
+    "runners_classified": 2246,
+    "runners_with_C": 1122,
     "runners_with_D": 654
   }
 }

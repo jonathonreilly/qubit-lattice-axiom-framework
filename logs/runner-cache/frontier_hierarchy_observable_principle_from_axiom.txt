@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_observable_principle_from_axiom.py
-runner_sha256: 5aff6ed06b57dfe74eadb42bf80357b8f90ff835c468443d6230dcc0ea15bc08
+runner_sha256: 5c13716db601282a475d9040750b0711e7259409ef8a37c7cbcd988df05f794f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Hierarchy observable principle from the lattice axiom
@@ -87,9 +87,9 @@ PART 5: OUT-OF-SCOPE HIERARCHY COMPARATOR (INFORMATIONAL ONLY)
   INFO: comparator only; not counted as a theorem PASS check.
 
 ==============================================================================
-PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-05-25 P1+P2 NARROWING)
+PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-06-04 RECORD/P1+P2 REPAIR)
 ==============================================================================
-  [PASS] P1 (additivity) holds for the candidate generator W = log|det(D+J)|
+  [PASS] Record/P1 additivity holds for the candidate generator W = log|det(D+J)|
          max additivity error = 7.11e-15
   [PASS] P2 consistency: selected phase-blind candidate is source-even, W(j) = W(-j)
          max evenness error = 0.00e+00
@@ -97,9 +97,9 @@ PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-05-25 P1+P2 NARROWING)
          max relative quadratic-coefficient consistency = 7.28e-06
   [PASS] baseline convention is implemented by zero-source subtraction
          max zero-source baseline error = 0.00e+00
-  [PASS] P1 is non-vacuous: raw |Z| violates additivity (so P1 is a real filter)
+  [PASS] Record/P1 is non-vacuous: raw |Z| violates additivity
          raw |Z| additivity violation = 0.9999
-  Note: this part verifies the CONDITIONAL SHAPE only (P1+P2 plus the canonical c=1 convention select the candidate W). It does NOT derive P1 or P2 from retained-grade primitives; that path is explicitly out of scope per the audit-named conditional scope (see docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md §'Audit-named conditional scope').
+  Note: this part verifies the CONDITIONAL SHAPE only (Record/P1+P2 plus the canonical c=1 convention select the candidate W). It does NOT derive P2 from retained-grade primitives; that path is explicitly out of scope per the audit-named conditional scope (see docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md §'Audit-named conditional scope').
 
 ==============================================================================
 PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE
@@ -129,11 +129,11 @@ PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE
   [PASS] baseline convention checked: source-derivative observables invariant under additive constant in W
          max |dW_native - dW_alt| = 8.88e-11
 
-  Summary: the selected P1+P2 candidate passes source-evenness,
+  Summary: the selected Record/P1+P2 candidate passes source-evenness,
   finite-block regularity, and additive-baseline invariance checks.
   The c=1 scale is a representative normalization, not a derived
-  physical scale. These checks do not derive the P1+P2 scalar-selection
-  surface or promote any cited upstream row.
+  physical scale. These checks do not derive the residual P2
+  scalar-selection surface or promote any cited upstream row.
 
 ==============================================================================
 SCORECARD: 25 pass, 0 fail out of 25

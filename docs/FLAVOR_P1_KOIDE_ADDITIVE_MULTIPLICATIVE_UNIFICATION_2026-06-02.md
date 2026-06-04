@@ -58,6 +58,23 @@ Shannon `−log p`).
   block-count reading is algebraically native via `J_cs` (`flavor_block_count_native_via_jcs`,
   retained_bounded) — but it is not currently a theorem.
 
+## Update (2026-06-04): the additive side is now an axiom (Record), but only the form, not the weight
+The framework adopted a narrow **Record** axiom (`minimal_axioms`,
+`docs/MINIMAL_AXIOMS_2026-06-04.md`): the scalar record functional is additive over disjoint
+collections, `I(R₁⊔R₂)=I(R₁)+I(R₂)`. This **axiomatizes the additive side of the fork** — so for the
+P1 **form** (additive `log` over the multiplicative `|Z|^p` family), the "go additive" half is no longer
+a posit; it is the Record axiom. Rows whose load-bearing step is *finite scalar record additivity* may
+cite `minimal_axioms`.
+
+This does **not** close the Koide **value**. The Record axiom explicitly excludes Born weights,
+log-det, and `AC_φλ`; the Koide r=1/2 is the within-C³ singlet:doublet **weight**, not the additive
+**form**. So the unification's standing under the axiom is: the **form half is now axiom-backed**, while
+the **weight half (r=1/2 vs r=1) remains the honest posit** (the reference-state choice of
+`FLAVOR_QD_OBJECTIVITY_FIXES_BASIS_NOT_WEIGHT` / `pre_record_reference_state_tracial`). This is
+consistent with the 2026-06-04 dependency audit (`RECORD_P1_DEPENDENCY_AUDIT_NOTE`): the Record axiom
+moves form/additivity content, never the broader log-det / weight content. Status authority remains the
+independent audit lane.
+
 ## What this buys (the wall moved)
 The Koide value gap and the P1 residual were two separate open problems treated as arbitrary measure
 choices. They are now **one** precisely-stated physical posit shared across both — "the observable is

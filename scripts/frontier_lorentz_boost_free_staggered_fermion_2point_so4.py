@@ -27,6 +27,12 @@ THEOREM (free staggered-Dirac 2-point SO(4) covariance):
       D~(p) = m * (1_spin (x) 1_taste)
               + (i/a) * sum_mu (gamma_mu (x) 1_taste) sin(p_mu a),
 
+  This runner uses physical momentum/mass units for D~. The source action is
+  the dimensionless lattice-unit action with M = m*a and k_mu = p_mu*a:
+      D_lat(k) = M * 1 + i * sum_mu gamma_mu sin(k_mu),
+  and the physical operator is D_phys(p) = a^{-1} D_lat(p*a). Part 0 verifies
+  this normalization bridge explicitly before using the sin(p_mu a)/a form.
+
   with Euclidean gamma_mu Hermitian, {gamma_mu, gamma_nu} = 2 delta_mu_nu.
   The clean 1_taste spin(x)taste factorisation is the a -> 0 form, NOT an
   exact finite-a reduced-BZ lattice-operator identity: at finite a the honest
@@ -172,6 +178,19 @@ def D_tilde(p_vec, a, m):
     D = m * np.eye(4, dtype=complex)
     for mu in range(4):
         D = D + (1j / a) * GAMMAS[mu] * np.sin(p[mu] * a)
+    return D
+
+
+def D_lat_dimensionless(k_vec, M):
+    """Dimensionless lattice-unit staggered Dirac operator.
+
+    D_lat(k) = M 1 + i sum_mu gamma_mu sin(k_mu), with M = m*a and
+    k_mu = p_mu*a. The physical operator is D~(p) = a^{-1}D_lat(p*a).
+    """
+    k = np.asarray(k_vec, dtype=float)
+    D = M * np.eye(4, dtype=complex)
+    for mu in range(4):
+        D = D + 1j * GAMMAS[mu] * np.sin(k[mu])
     return D
 
 
@@ -334,6 +353,23 @@ def rotation_from_spin(S):
 def test_part0_canonical_staggered_to_spin_taste():
     print("\n=== Part 0: canonical staggered phases -> reduced-BZ spin/taste operator ===\n")
 
+    # 0.0 Normalization bridge from the dimensionless lattice-unit action to the
+    #     physical operator used in the theorem. With M=m*a and k=p*a,
+    #     D_phys(p)=a^{-1}D_lat(k), hence the physical kinetic term has 1/(2a).
+    p_norm = np.array([0.31, -0.27, 0.19, 0.42])
+    a_norm = 0.37
+    m_norm = 0.8
+    M_norm = m_norm * a_norm
+    D_from_lat_units = D_lat_dimensionless(a_norm * p_norm, M_norm) / a_norm
+    D_phys = D_tilde(p_norm, a_norm, m_norm)
+    bridge_resid = np.max(np.abs(D_from_lat_units - D_phys))
+    Delta_from_lat_units = (M_norm * M_norm + np.sum(np.sin(a_norm * p_norm) ** 2)) / (a_norm * a_norm)
+    Delta_phys = Delta_lat(p_norm, a_norm, m_norm)
+    delta_resid = abs(Delta_from_lat_units - Delta_phys)
+    check("Action-normalization bridge: a^-1 D_lat(pa,ma)=D~(p) with 1/(2a) kinetic term",
+          bridge_resid < 1e-13 and delta_resid < 1e-13,
+          f"max operator residual={bridge_resid:.1e}, Delta residual={delta_resid:.1e}")
+
     # 0.1 The eta-weighted hypercube flips are Hermitian Clifford generators.
     max_herm = 0.0
     max_square = 0.0
@@ -495,6 +531,9 @@ def staggered_M_position(L, m, d=4):
 
         S = sum_n chibar(n)[ m chi(n)
               + (1/2) sum_mu eta_mu(n) (chi(n+e_mu) - chi(n-e_mu)) ].
+
+    Here the helper's parameter m is the dimensionless lattice-unit mass M
+    because a=1 in this finite-volume spectrum check.
 
     One Grassmann component per site (no spin/taste indices imposed by hand):
     M is N x N with N = L^d. This is the honest finite-a object; its taste

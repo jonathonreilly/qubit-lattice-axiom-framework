@@ -21180,6 +21180,18 @@
       "dominant_class": "B",
       "runner": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py"
     },
+    "record_p1_dependency_audit_note_2026-06-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 6
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_record_p1_dependency_audit_verifier.py"
+    },
     "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -50742,6 +50754,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_record_p1_dependency_audit_verifier.py": {
+      "assert_count": 1,
+      "claims": [
+        "record_p1_dependency_audit_note_2026-06-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 6
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_restricted_strong_field_closure_packet.py": {
       "assert_count": 3,
       "claims": [
@@ -62052,11 +62079,11 @@
       "A": 286,
       "B": 307,
       "C": 861,
-      "D": 323,
+      "D": 324,
       "none": 465
     },
-    "runners_classified": 2242,
+    "runners_classified": 2243,
     "runners_with_C": 1120,
-    "runners_with_D": 653
+    "runners_with_D": 654
   }
 }

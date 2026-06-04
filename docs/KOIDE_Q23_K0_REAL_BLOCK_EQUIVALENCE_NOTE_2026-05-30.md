@@ -1,7 +1,10 @@
 # Koide Q=2/3 as Real-Wedderburn Block Count; Trace/Dimension Gives Q=1
 
 **Date:** 2026-05-30
+**Date of load-bearing authority repair:** 2026-06-04
 **Claim type:** bounded_theorem
+**Actual current-surface status:** bounded-support; effective status is set
+only by the independent audit lane.
 **Claim boundary:** bounded equivalence/localization for the `Z_3` generation carrier. It
 compares two allowed measure conventions and does not choose the physical convention.
 **Primary runner:**
@@ -77,10 +80,20 @@ physical measure slot.
 real-block/per-block measure, or force the trace/`K0`-complex reading? Either would close
 the slot.
 
+## 2026-06-04 Load-Bearing Authority Repair
+
+The finite K0-real/K0-complex equivalence characterized here does not use the
+CPT exact real anti-Hermitian `D` packet. The paired runner checks the
+Frobenius-Schur/Wedderburn block count, the qubit pseudoscalar's generation-
+scalar action, coherent-state completeness, the circulant `Q` calculation, and
+the `C^3=I` versus Schur-complex-structure distinction directly. The CPT packet
+is therefore removed from this note's load-bearing authority list. Any
+independent CPT spectral-sign correction belongs in that separate source packet,
+not as a premise of this bounded Koide block-equivalence note.
+
 ## Load-bearing authorities
 
 [CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
-[CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md](CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md)
 [KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md](KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md)
 [KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
 [STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md](STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)

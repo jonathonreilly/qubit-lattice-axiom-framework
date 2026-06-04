@@ -57451,10 +57451,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "b7e67ef6f6dd8a5d733a9638624856d5d76099c0274336cd89d56270e5c24a88",
+      "note_hash": "304af5afba845296e15c32b00d51277ea1238f3626a03d58c1a1d8e2f9698b0d",
       "path": "docs/FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md",
       "runner_path": "scripts/flavor_retention_law_is_A2plus_2026_05_31.py",
-      "title": "Flavor \u2014 Q=2/3 closes modulo ONE named half-axiom (source-locality), which is Axiom 2-plus, not A2"
+      "title": "Flavor Retention Law: Conditional Algebra Scope Repair"
     },
     "flavor_so2_readout_false_binary_note_2026-05-30": {
       "claim_id": "flavor_so2_readout_false_binary_note_2026-05-30",

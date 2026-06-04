@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.py
+runner_sha256: 4e916279b815807faab18f12cc182d833a386d29763d74020547249241292d72
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================================
+STAGGERED BACKREACTION LIVE GREEN: SOURCE PACKET MANIFEST
+========================================================================================
+[PASS] manifest_path_exists:packet_checker: scripts/staggered_backreaction_live_green_packet_check.py
+[PASS] note_links_manifest_path:packet_checker: scripts/staggered_backreaction_live_green_packet_check.py
+[PASS] manifest_path_exists:green_closure_source: scripts/frontier_staggered_backreaction_green_closure.py
+[PASS] note_links_manifest_path:green_closure_source: scripts/frontier_staggered_backreaction_green_closure.py
+[PASS] manifest_path_exists:prototype_helper_source: scripts/frontier_staggered_backreaction_prototype.py
+[PASS] note_links_manifest_path:prototype_helper_source: scripts/frontier_staggered_backreaction_prototype.py
+[PASS] manifest_path_exists:packet_cache: logs/runner-cache/staggered_backreaction_live_green_packet_check.txt
+[PASS] note_links_manifest_path:packet_cache: logs/runner-cache/staggered_backreaction_live_green_packet_check.txt
+[PASS] manifest_path_exists:green_closure_cache: logs/runner-cache/frontier_staggered_backreaction_green_closure.txt
+[PASS] note_links_manifest_path:green_closure_cache: logs/runner-cache/frontier_staggered_backreaction_green_closure.txt
+[PASS] manifest_path_exists:prototype_helper_cache: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
+[PASS] note_links_manifest_path:prototype_helper_cache: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
+[PASS] source_untruncated:packet_checker: scripts/staggered_backreaction_live_green_packet_check.py has 3640 bytes
+[PASS] source_marker:packet_checker:import frontier_staggered_backreaction_green_closure as green: import frontier_staggered_backreaction_green_closure as green present
+[PASS] source_marker:packet_checker:def _compute: def _compute present
+[PASS] source_marker:packet_checker:ASSERTIONS:: ASSERTIONS: present
+[PASS] source_untruncated:green_closure_source: scripts/frontier_staggered_backreaction_green_closure.py has 13612 bytes
+[PASS] source_marker:green_closure_source:import frontier_staggered_backreaction_prototype as base: import frontier_staggered_backreaction_prototype as base present
+[PASS] source_marker:green_closure_source:def _make_mappings: def _make_mappings present
+[PASS] source_marker:green_closure_source:def _measure_family: def _measure_family present
+[PASS] source_marker:green_closure_source:def _fit_gain: def _fit_gain present
+[PASS] source_marker:green_closure_source:class MapSummary: class MapSummary present
+[PASS] source_untruncated:prototype_helper_source: scripts/frontier_staggered_backreaction_prototype.py has 20482 bytes
+[PASS] source_marker:prototype_helper_source:class GraphFamily: class GraphFamily present
+[PASS] source_marker:prototype_helper_source:def _make_graphs: def _make_graphs present
+[PASS] source_marker:prototype_helper_source:def _solve_phi: def _solve_phi present
+[PASS] source_marker:prototype_helper_source:def _build_hamiltonian: def _build_hamiltonian present
+[PASS] source_marker:prototype_helper_source:def _evolve_cn: def _evolve_cn present
+[PASS] cache_runner_matches:packet_cache: scripts/staggered_backreaction_live_green_packet_check.py == scripts/staggered_backreaction_live_green_packet_check.py
+[PASS] cache_sha_fresh:packet_cache: 4c20010a749979ac43fc543f11d37a557eb011fbfa628401001c8e139336dec8 == 4c20010a749979ac43fc543f11d37a557eb011fbfa628401001c8e139336dec8
+[PASS] cache_exit_ok:packet_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:packet_cache: ASSERTIONS: PASS
+[PASS] cache_runner_matches:green_closure_cache: scripts/frontier_staggered_backreaction_green_closure.py == scripts/frontier_staggered_backreaction_green_closure.py
+[PASS] cache_sha_fresh:green_closure_cache: eee3b3adb0ee477f2df71e27988dfb0a051a7b68fbb725060ac53491d5e943f8 == eee3b3adb0ee477f2df71e27988dfb0a051a7b68fbb725060ac53491d5e943f8
+[PASS] cache_exit_ok:green_closure_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:green_closure_cache: raw improvement factor: 2.81x
+[PASS] cache_runner_matches:prototype_helper_cache: scripts/frontier_staggered_backreaction_prototype.py == scripts/frontier_staggered_backreaction_prototype.py
+[PASS] cache_sha_fresh:prototype_helper_cache: 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975 == 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975
+[PASS] cache_exit_ok:prototype_helper_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:prototype_helper_cache: STAGGERED SOURCE-GENERATED BACKREACTION PROTOTYPE
+========================================================================================
+SUMMARY: STAGGERED GREEN SOURCE PACKET PASS=40 FAIL=0
+========================================================================================
+Output written: outputs/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.json
+
+----- stderr -----
+

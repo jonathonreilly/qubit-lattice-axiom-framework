@@ -1,0 +1,219 @@
+{
+  "claim_id": "staggered_backreaction_live_green_packet_note_2026-05-29",
+  "note": "docs/STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md",
+  "manifest": {
+    "packet_checker": "scripts/staggered_backreaction_live_green_packet_check.py",
+    "green_closure_source": "scripts/frontier_staggered_backreaction_green_closure.py",
+    "prototype_helper_source": "scripts/frontier_staggered_backreaction_prototype.py",
+    "packet_cache": "logs/runner-cache/staggered_backreaction_live_green_packet_check.txt",
+    "green_closure_cache": "logs/runner-cache/frontier_staggered_backreaction_green_closure.txt",
+    "prototype_helper_cache": "logs/runner-cache/frontier_staggered_backreaction_prototype.txt"
+  },
+  "summary": {
+    "pass": 40,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "manifest_path_exists:packet_checker",
+      "pass": true,
+      "detail": "scripts/staggered_backreaction_live_green_packet_check.py"
+    },
+    {
+      "name": "note_links_manifest_path:packet_checker",
+      "pass": true,
+      "detail": "scripts/staggered_backreaction_live_green_packet_check.py"
+    },
+    {
+      "name": "manifest_path_exists:green_closure_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_green_closure.py"
+    },
+    {
+      "name": "note_links_manifest_path:green_closure_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_green_closure.py"
+    },
+    {
+      "name": "manifest_path_exists:prototype_helper_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_prototype.py"
+    },
+    {
+      "name": "note_links_manifest_path:prototype_helper_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_prototype.py"
+    },
+    {
+      "name": "manifest_path_exists:packet_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/staggered_backreaction_live_green_packet_check.txt"
+    },
+    {
+      "name": "note_links_manifest_path:packet_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/staggered_backreaction_live_green_packet_check.txt"
+    },
+    {
+      "name": "manifest_path_exists:green_closure_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_backreaction_green_closure.txt"
+    },
+    {
+      "name": "note_links_manifest_path:green_closure_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_backreaction_green_closure.txt"
+    },
+    {
+      "name": "manifest_path_exists:prototype_helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_backreaction_prototype.txt"
+    },
+    {
+      "name": "note_links_manifest_path:prototype_helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/frontier_staggered_backreaction_prototype.txt"
+    },
+    {
+      "name": "source_untruncated:packet_checker",
+      "pass": true,
+      "detail": "scripts/staggered_backreaction_live_green_packet_check.py has 3640 bytes"
+    },
+    {
+      "name": "source_marker:packet_checker:import frontier_staggered_backreaction_green_closure as green",
+      "pass": true,
+      "detail": "import frontier_staggered_backreaction_green_closure as green present"
+    },
+    {
+      "name": "source_marker:packet_checker:def _compute",
+      "pass": true,
+      "detail": "def _compute present"
+    },
+    {
+      "name": "source_marker:packet_checker:ASSERTIONS:",
+      "pass": true,
+      "detail": "ASSERTIONS: present"
+    },
+    {
+      "name": "source_untruncated:green_closure_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_green_closure.py has 13612 bytes"
+    },
+    {
+      "name": "source_marker:green_closure_source:import frontier_staggered_backreaction_prototype as base",
+      "pass": true,
+      "detail": "import frontier_staggered_backreaction_prototype as base present"
+    },
+    {
+      "name": "source_marker:green_closure_source:def _make_mappings",
+      "pass": true,
+      "detail": "def _make_mappings present"
+    },
+    {
+      "name": "source_marker:green_closure_source:def _measure_family",
+      "pass": true,
+      "detail": "def _measure_family present"
+    },
+    {
+      "name": "source_marker:green_closure_source:def _fit_gain",
+      "pass": true,
+      "detail": "def _fit_gain present"
+    },
+    {
+      "name": "source_marker:green_closure_source:class MapSummary",
+      "pass": true,
+      "detail": "class MapSummary present"
+    },
+    {
+      "name": "source_untruncated:prototype_helper_source",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_prototype.py has 20482 bytes"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:class GraphFamily",
+      "pass": true,
+      "detail": "class GraphFamily present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _make_graphs",
+      "pass": true,
+      "detail": "def _make_graphs present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _solve_phi",
+      "pass": true,
+      "detail": "def _solve_phi present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _build_hamiltonian",
+      "pass": true,
+      "detail": "def _build_hamiltonian present"
+    },
+    {
+      "name": "source_marker:prototype_helper_source:def _evolve_cn",
+      "pass": true,
+      "detail": "def _evolve_cn present"
+    },
+    {
+      "name": "cache_runner_matches:packet_cache",
+      "pass": true,
+      "detail": "scripts/staggered_backreaction_live_green_packet_check.py == scripts/staggered_backreaction_live_green_packet_check.py"
+    },
+    {
+      "name": "cache_sha_fresh:packet_cache",
+      "pass": true,
+      "detail": "4c20010a749979ac43fc543f11d37a557eb011fbfa628401001c8e139336dec8 == 4c20010a749979ac43fc543f11d37a557eb011fbfa628401001c8e139336dec8"
+    },
+    {
+      "name": "cache_exit_ok:packet_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:packet_cache",
+      "pass": true,
+      "detail": "ASSERTIONS: PASS"
+    },
+    {
+      "name": "cache_runner_matches:green_closure_cache",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_green_closure.py == scripts/frontier_staggered_backreaction_green_closure.py"
+    },
+    {
+      "name": "cache_sha_fresh:green_closure_cache",
+      "pass": true,
+      "detail": "eee3b3adb0ee477f2df71e27988dfb0a051a7b68fbb725060ac53491d5e943f8 == eee3b3adb0ee477f2df71e27988dfb0a051a7b68fbb725060ac53491d5e943f8"
+    },
+    {
+      "name": "cache_exit_ok:green_closure_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:green_closure_cache",
+      "pass": true,
+      "detail": "raw improvement factor: 2.81x"
+    },
+    {
+      "name": "cache_runner_matches:prototype_helper_cache",
+      "pass": true,
+      "detail": "scripts/frontier_staggered_backreaction_prototype.py == scripts/frontier_staggered_backreaction_prototype.py"
+    },
+    {
+      "name": "cache_sha_fresh:prototype_helper_cache",
+      "pass": true,
+      "detail": "24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975 == 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975"
+    },
+    {
+      "name": "cache_exit_ok:prototype_helper_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:prototype_helper_cache",
+      "pass": true,
+      "detail": "STAGGERED SOURCE-GENERATED BACKREACTION PROTOTYPE"
+    }
+  ],
+  "audit_status_authority": "independent audit lane only"
+}

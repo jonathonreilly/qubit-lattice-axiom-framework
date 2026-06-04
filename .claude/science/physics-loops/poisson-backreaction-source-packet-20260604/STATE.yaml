@@ -23,5 +23,5 @@ result_summary:
   manifest: "SUMMARY: POISSON BACKREACTION SOURCE PACKET PASS=27 FAIL=0"
   cache_status: fresh
 next_exact_action: "Submit review PR; independent auditor decides whether source-packet completeness closes the conditional blocker."
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2636"
 stop_condition: "Review PR opened."
-

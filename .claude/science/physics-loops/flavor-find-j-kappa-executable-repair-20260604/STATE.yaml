@@ -1,0 +1,29 @@
+loop_slug: flavor-find-j-kappa-executable-repair-20260604
+branch: physics-loop/flavor-find-j-kappa-executable-repair-20260604
+base: origin/main
+base_commit: 9ef1cdd32
+mode: science_fix
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: flavor_find_j_consolidation_kappa_is_the_input_2026-06-02
+blocker_source: audit_ledger
+blocker_text: "missing_dependency_edge: include the one-hop retained authorities/runners for rounds 1-3 and the cited anchors, and replace R4-2/R4-3 hard-coded True checks with executable algebraic checks before re-audit."
+summary: "Replaces R4-2/R4-3 hard-coded checks with executable C3 projector, Plancherel-rank, K0-block, and invariant-metric-family checks; leaves R1-R3 authority coverage open."
+files_touched:
+  - docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md
+  - scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py
+  - logs/runner-cache/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.txt
+checks:
+  - "PYTHONPATH=scripts python3 scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py"
+  - "python3 -m py_compile scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py"
+  - "git diff --check"
+check_result: pass
+review_loop_disposition: delegated_to_external_reviewer
+audit_required_before_effective_status_change: true
+audit_ledger_edits: false
+next_exact_action: "Repair/audit rounds 1-3 or keep this row narrowed to round-4 executable measure support."
+stop_condition: "partial blocker repair packaged for PR; full four-round clean audit remains blocked by R1-R3 authority coverage."

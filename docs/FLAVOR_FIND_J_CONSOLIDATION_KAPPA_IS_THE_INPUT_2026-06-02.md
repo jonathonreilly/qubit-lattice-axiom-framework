@@ -71,3 +71,17 @@ operator-algebraic sector-factorization would be the next attempt.)
 - Anchors: `koide_frobenius_isotype_split_uniqueness` (retained_no_go), `action_normalization` (retained_no_go), `koide_z3_equivariant_anticommuting_no_go` (retained_bounded), `koide_kappa_two_orbit_dimension_factorization` (retained_bounded). Unaudited probe-notes (plancherel/maxent/block-total-measure) flagged, not load-bearing.
 - Attribution: Koide & Nishiura Z₃ parametrization (arXiv:1301.4143) leaves the per-sector ratio a free fit.
 - Does not load-bear on `closure_c_staggered_dirac_gate` / `koide_phase_aps_eta_parity_route`.
+
+## 2026-06-04 executable-check repair boundary
+
+The audit row flagged that R4-2 and R4-3 were hard-coded `True` checks.
+The paired runner now computes the real regular `C3` central projectors,
+verifies their ranks `(1,2)`, and checks that the same two K-theory/Wedderburn
+blocks admit a family of positive `C3`-invariant metrics with different
+trivial:standard energy ratios. Thus the Plancherel `(1,2)` / per-DOF default
+and the "K0 counts blocks but does not weight energies" statement are runner
+checked rather than asserted.
+
+This repair does not claim the full four-round consolidation is audit-clean:
+rounds 1-3 still need their own one-hop retained authority coverage before a
+clean four-lever no-forcing theorem should be requested.

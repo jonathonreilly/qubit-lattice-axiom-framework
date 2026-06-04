@@ -1,26 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py
-runner_sha256: 483c698d1911a951eb0b61657ed43ab787840fc507549c914ad14e1942f7a2bf
+runner_sha256: f215d62e975f92eeb4bb42b66a19248a28241337c0ad9d8d2affd481eff0a656
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 [PASS] R4-1 equipartition (per-DOF) under exp(-beta(3a^2+6|b|^2)): <a^2>=<|b|^2> -> r=1 -> Q=1 (analytic + MC)
        analytic r=1.000, MC r=1.000; the classic equipartition theorem gives the det_R default
 [PASS] R4-2 Plancherel/character measure weights irreps by DIMENSION (trivial:standard=1:2) -> per-DOF -> r=1 (not equal-per-irrep)
-       the canonical harmonic-analysis measure ALSO gives (1,2)/r=1, not the equal-block r=1/2
+       central projector ranks=(1, 2); per-DOF r=1.0, equal-block r=0.5
 [PASS] R4-3 K_0(R[C_3])=K_0(R(+)C)=Z^2 counts the 2 blocks (fixes gen COUNT=3) but is metric-free/amplitude-constant -> cannot force per-block ENERGY weighting
-       the strongest selector candidate fails: K_0 answers 'how many blocks'(=2), not 'how to weight block energies'
+       K0 block rank=2; same central idempotents admit positive C3-invariant metric ratios [1.0, 2.0, 0.3]
 [PASS] R4-4 det_C (equal-block 3a^2=6|b|^2) -> r=1/2 -> Q=2/3 (observed); det_R (per-DOF 3a^2=3|b|^2) -> r=1 -> Q=1 (over-determined default)
        3 independent principles (equipartition, Plancherel, trace) converge on det_R/r=1; det_C/r=1/2 forced by none
 
 SCORECARD PASS=4 FAIL=0
-VERDICT (J-hunt round 4 CONSOLIDATION, wf_702357cd): kappa_is_the_irreducible_input. Per-DOF / det_R /
+VERDICT (J-hunt round 4 executable support, wf_702357cd): kappa_is_the_round4_input. Per-DOF / det_R /
 r=1 / Q=1 is the OVER-DETERMINED default (equipartition theorem + Plancherel measure + trace energy
 functional all converge). The K-theory/Wedderburn selector FAILS (K_0=Z^2 counts blocks=gen-count,
-metric-free, can't weight energies). 4-ROUND J-HUNT: det_C/r=1/2/Q=2/3 is NOT forcible by any of the
-4 levers (static complex structure / fermionic Berezin / Dirac reality / block-count measure). The
+metric-free, can't weight energies). ROUND-4 RESULT: det_C/r=1/2/Q=2/3 is NOT forced by the
+block-count measure route. The broader four-round no-forcing synthesis still needs round-1 through
+round-3 one-hop authority coverage before clean audit should be requested. The
 single residual = the per-irrep(det_C,r=1/2) vs per-DOF(det_R,r=1) counting MEASURE on the C_3 isotype
 split -- = the freedom the retained_no_go frobenius_isotype_split_uniqueness + action_normalization
 decline to fix, matching Koide's free per-sector fit. Framework DEFAULTS to det_R/Q=1; observed Q=2/3

@@ -82731,7 +82731,7 @@
         "scripts/frontier_staggered_cycle_battery.py",
         "scripts/frontier_staggered_layered_backreaction.py"
       ],
-      "note_hash": "40206f4031923ba4dab1cd39ef3776d4b612a308a75b4e8383a7f1e5286c2873",
+      "note_hash": "6e52ac24fca5e8aa8c87f0a771caa08f76e35e5521a195749904d8cd067a2eaf",
       "path": "docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md",
       "runner_path": "scripts/staggered_backreaction_live_capture_packet_check.py",
       "title": "Staggered Backreaction Live Capture Packet"

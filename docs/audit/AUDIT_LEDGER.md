@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 620 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1263 |
+| unaudited | 1264 |
 | meta | 241 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 67 |
+| ~~audited_conditional~~ | 66 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 946 |
-| `audited_conditional` | 67 |
+| `audited_conditional` | 66 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1504 |
+| `unaudited` | 1505 |
 
 | claim_type | count |
 |---|---:|
@@ -1135,7 +1135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_propagating_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `staggered_backreaction_live_capture_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_wigner_l3_treewidth_infeasible_2026-05-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -13507,19 +13506,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `STAGGERED_BACKREACTION_NOTE.md`
   - `STAGGERED_LAYERED_BACKREACTION_NOTE.md`
-- **auditor confidence:** high
-
-### `staggered_backreaction_live_capture_packet_note_2026-05-29`
-
-- **Note:** [`STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md`](../../docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite bounded comparison for the current staggered capture-closure runner on the two cycle-bearing graphs and the specified layered holdout.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260601-210155-00670d76-staggered_backreaction_l`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The current live runner computes 9/9 cycle battery scores, improves the cycle mean gap from 9.828e-01 to 4.734e-01, improves the layered holdout gap from 9.191e-01 to 4.559e-01, and passes the stated guardrails.  _(class `C`)_
-- **chain closes:** False — The runner and helper code genuinely compute the finite harness metrics rather than printing constants. However, the source note's displayed live readout reports two-body max=2.478e-16 while the provided completed runner output computes two-body max=1.702e-16, so the quantitative packet does not close as written.
-- **rationale:** The primary runner imports the capture-closure harness, constructs fixed graph families and a layered holdout, solves the graph-field/evolution problem, and asserts the bounded thresholds without hard-coded expected result constants. The formula inventory pass finds source-runner drift in the displayed live readout: the source note's two-body maximum is 2.478e-16, but the completed runner output and detailed B3 rows give a maximum of 1.702e-16. Because every displayed quantitative entry must be correct for a clean audit, the claim is conditional on reconciling that stale numerical entry.
 - **auditor confidence:** high
 
 ### `staggered_backreaction_live_green_packet_note_2026-05-29`

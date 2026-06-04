@@ -60681,7 +60681,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "de08a2f0a988b1dd65aa31002c77cb8372949fd8479077514adb1c37b9a533a3",
+      "note_hash": "d5b9d373b5c24673fb33ebf8c7d24124b0c7748920f6097086c8c630fb8ff918",
       "path": "docs/GRAVITATIONAL_WAVE_PROBE_NOTE.md",
       "runner_path": "scripts/frontier_grav_wave_post_newtonian.py",
       "title": "Gravitational Wave / Action-Form Sensitivity Probe"

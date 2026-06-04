@@ -11017,10 +11017,10 @@
       "runner": "scripts/frontier_gravitational_memory.py"
     },
     "gravitational_wave_probe_note": {
-      "assert_count": 16,
+      "assert_count": 18,
       "counts": {
         "A": 1,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0
       },
@@ -43293,13 +43293,13 @@
       "exists": true
     },
     "scripts/frontier_grav_wave_post_newtonian.py": {
-      "assert_count": 16,
+      "assert_count": 18,
       "claims": [
         "gravitational_wave_probe_note"
       ],
       "counts": {
         "A": 1,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0
       },

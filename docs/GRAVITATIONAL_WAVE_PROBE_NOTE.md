@@ -82,7 +82,12 @@ The primary runner source includes the full implementations of:
 - Test D: `test_action_forms`
 
 The runner exits successfully and performs assertion checks on the returned
-finite-runner data structures.
+finite-runner data structures. As of the 2026-06-04 source-completeness
+repair, the runner also executes `source_completeness_witness()`, which reads
+its own source and asserts that Test B and Test C contain executable loop
+bodies, quantitative table headers, append/return paths, and no omitted-body
+markers. This is meant to make the prior restricted-packet artifact blocker
+auditable from source rather than from stdout trust.
 
 Observed output includes:
 

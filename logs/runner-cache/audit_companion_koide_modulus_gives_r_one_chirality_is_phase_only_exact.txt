@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_modulus_gives_r_one_chirality_is_phase_only_exact.py
+runner_sha256: 64fbcec2c100d279a05a68673f83b6376b62be6add1d9effef5d7dca8cb91ed0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+PASS - (1) M = aI+bC+bbar C^2 is Hermitian (vector mass -> determinant real)
+PASS - (2) modulus doublet Hessian on (Re b, Im b) has RANK 2 -> two real modes (non-holomorphic) -> (1,2) weighting
+PASS - (3) fixed-scale determinant branch has stationary ratio r=1 (not 1/2)
+PASS - (4) Hermitian M: det is real (im part ~0); phase/eta is separate from this modulus ratio
+PASS - (5) rank-1 holomorphic counting is not supplied by the tested rank-2 modulus
+
+5 PASS, 0 FAIL
+
+ROUTE-SPECIFIC CORRECTION: the tested fluctuation-determinant modulus is an
+|b|^2-type function with a rank-2 doublet Hessian, so this modulus route counts
+two real doublet modes and does not supply the prior chiral/holomorphic r=1/2
+mechanism. The tested fixed-scale determinant branch has stationary ratio r=1,
+not r=1/2. A phase/eta or holomorphic determinant construction would be a
+separate open route, not established by this runner.
+
+----- stderr -----
+

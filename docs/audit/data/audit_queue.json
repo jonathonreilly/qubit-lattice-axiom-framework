@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 269,
-    "high": 301,
+    "high": 303,
     "leaf": 375,
     "medium": 329
   },
@@ -7717,6 +7717,58 @@
       "ready": true,
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "transitive_descendants": 244
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "source_resolved_exact_green_pocket_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_source_driven_field_probe_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/minimal_source_driven_field_probe.py"
+      ],
+      "load_bearing_score": 8.728,
+      "note_path": "docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/source_resolved_exact_green_pocket.py",
+      "transitive_descendants": 105
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "source_resolved_propagating_green_pocket_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_source_driven_field_probe_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/minimal_source_driven_field_probe.py"
+      ],
+      "load_bearing_score": 7.187,
+      "note_path": "docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/source_resolved_propagating_green_pocket.py",
+      "transitive_descendants": 102
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17122,7 +17174,7 @@
       "claim_id": "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -18392,7 +18444,7 @@
       "claim_id": "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
       "claim_scope": null,
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -19485,7 +19537,7 @@
       "claim_id": "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
       "claim_scope": null,
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -38367,6 +38419,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 59,
-  "total_pending": 1274
+  "ready_count": 61,
+  "total_pending": 1276
 }

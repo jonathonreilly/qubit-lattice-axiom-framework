@@ -82117,7 +82117,7 @@
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "note_hash": "8f021392a3837759c4b21fc27db0a5882079e66f94e504632a589897ebac0776",
+      "note_hash": "6d5ab1de119836f72813564c3753fffeacbd3338cf5820c31061e8bcc54bdc81",
       "path": "docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md",
       "runner_path": "scripts/source_resolved_exact_green_pocket.py",
       "title": "Source-Resolved Exact Green Pocket"
@@ -82371,7 +82371,7 @@
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "note_hash": "d118020890ccf784da74831766a6a98de8699ae433dcb9e152910b5eb24e4308",
+      "note_hash": "1112941c1280033c0786be1fbd4b652907c390179c9b184967260267eb1571a3",
       "path": "docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md",
       "runner_path": "scripts/source_resolved_propagating_green_pocket.py",
       "title": "Source-Resolved Propagating Green Pocket"

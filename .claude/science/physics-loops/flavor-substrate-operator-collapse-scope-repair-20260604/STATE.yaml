@@ -1,0 +1,19 @@
+loop_slug: flavor-substrate-operator-collapse-scope-repair-20260604
+branch: physics-loop/flavor-substrate-operator-collapse-scope-repair-20260604
+target_claim_id: flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31
+target_status: bounded-support
+cycle_count: 1
+active_route: finite operator-collapse narrowing
+hard_residual: "Source-domain carrier/readout bridge remains unproved."
+files_touched:
+  - docs/FLAVOR_SUBSTRATE_BRIDGE_FAILS_SOURCE_OPERATOR_ASYMMETRY_NOTE_2026-05-31.md
+  - scripts/flavor_substrate_bridge_fails_source_operator_asymmetry_2026_05_31.py
+  - logs/runner-cache/flavor_substrate_bridge_fails_source_operator_asymmetry_2026_05_31.txt
+open_imports:
+  - "Retained source-domain carrier/readout bridge."
+  - "One-hop authority for single_axiom_hilbert_note / single_axiom_information_note if they are reused physically."
+trace_gate_classification: direct_blocker_closure
+review_findings: []
+pr_status: pending
+next_exact_action: "Run py_compile, runner, diff check, commit, push, and open a ready PR."
+stop_condition: "PR opened and verified, then pivot to next audited-conditional target."

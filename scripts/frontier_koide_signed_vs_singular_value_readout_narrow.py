@@ -391,7 +391,8 @@ def main() -> int:
     # =====================================================================
     # On the region with exactly one negative eigenvalue lambda_min < 0:
     #   sum|lambda| = sum lambda - 2 lambda_min = 3a - 2 lambda_min,
-    # so Q_sv = (3 a^2 + 6|b|^2) / (3a - 2 lambda_min)^2 > [denominator] > 9 a^2 => < 2/3.
+    # so Q_sv = (3 a^2 + 6|b|^2) / (3a - 2 lambda_min)^2 < Q_signed.
+    # The stronger comparison Q_sv < 2/3 is only valid at r = 1/2.
     for th_val in (pi / 3, pi / 2):
         L = signed_eigs(a0, b0, th_val)
         negs = [x for x in L if N(x) < 0]
@@ -403,6 +404,21 @@ def main() -> int:
             simplify(closed - direct) == 0 and len(negs) == 1,
             detail=f"closed = {closed}, direct = {direct}",
         )
+    r_ctr = Rational(51, 100)
+    a_ctr = Rational(1)
+    b_ctr = sqrt(r_ctr)
+    th_ctr = Rational(46, 25)
+    L_ctr = signed_eigs(a_ctr, b_ctr, th_ctr)
+    negs_ctr = [x for x in L_ctr if N(x) < 0]
+    qsv_ctr = simplify(sum(l**2 for l in L_ctr) / (sum(Abs(l) for l in L_ctr)) ** 2)
+    qs_ctr = (1 + 2 * r_ctr) / 3
+    check(
+        "non-r=1/2 one-negative regression: Q_sv can exceed 2/3 but remains below Q_signed=(1+2r)/3",
+        len(negs_ctr) == 1
+        and N(qsv_ctr) > N(Rational(2, 3))
+        and N(qsv_ctr) < N(qs_ctr),
+        detail=f"r=51/100, theta=46/25, Q_sv={N(qsv_ctr, 8)}, Q_signed={N(qs_ctr, 8)}",
+    )
 
     # =====================================================================
     section("Part 9: forbidden-imports / comparator-only sanity")
@@ -428,7 +444,7 @@ def main() -> int:
     print("  Verified at exact sympy precision:")
     print("    (Lemma A) signed readout Q_signed = (1+2r)/3, theta-independent; 2/3 at r=1/2")
     print("    (Lemma B) numerator invariance sum|lambda|^2 = sum lambda^2 (masses shared)")
-    print("    (Core)    Q_sv = sum lambda^2/(sum|lambda|)^2 <= 2/3, equality iff sign-homogeneous")
+    print("    (Core)    Q_sv = sum lambda^2/(sum|lambda|)^2 <= Q_signed; at r=1/2, Q_signed=2/3")
     print("    (Non-const) Q_sv in {2/3, 6/(9+4 sqrt2), 6/(7+2 sqrt6)} at theta in {0, pi/3, pi/2}")
     print("    (Samples)  theta=0.4 -> 0.566, theta=0.9 -> 0.416 (both < 2/3); Q_signed stays 2/3")
     print("    (Boundary) one eigenvalue = 0 at theta = pi/12; Q_sv = 2/3 EQUALITY still holds there")
@@ -436,6 +452,7 @@ def main() -> int:
     print("               Q_sv=2/3 equality region is the CLOSED set |theta mod 2pi/3| <= pi/12")
     print("    (Masses)   both readouts give identical m_k = lambda_k^2; only sqrt(m) signs differ")
     print("    (Corollary) one-negative closed form Q_sv = (3a^2+6|b|^2)/(3a - 2 lambda_min)^2")
+    print("                general comparison is Q_sv < Q_signed=(1+2r)/3; Q_sv < 2/3 only at r=1/2")
     print()
     print("  CONSEQUENCE: the Brannen Q = 2/3 signed-readout claim relies on sqrt(m_k) being a")
     print("  SIGNED real vector. Singular values (>= 0) destroy that sign structure, so reading")

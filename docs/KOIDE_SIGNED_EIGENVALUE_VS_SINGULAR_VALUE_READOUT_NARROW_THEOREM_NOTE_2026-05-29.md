@@ -118,6 +118,17 @@ negative eigenvalue `λ_min < 0`,
 Q(V)  =  (3a² + 6|b|²) / (3a − 2λ_min)²   <  2/3   (since 3a − 2λ_min > 3a).
 ```
 
+The final `< 2/3` comparison in (C2) is part of the `r = 1/2` specialization.
+In general, the one-negative conclusion is the sharper inequality
+
+```text
+Q(V)  =  (3a² + 6|b|²) / (3a − 2λ_min)²  <  Q(S) = (1 + 2r)/3.
+```
+
+For non-`r = 1/2` values, `Q(V)` need not be below `2/3`; the paired runner
+checks `r = 51/100`, `θ = 46/25`, where exactly one eigenvalue is negative and
+`2/3 < Q(V) < Q(S)`.
+
 **Corollary C3 (sign is the only difference).** By (B), `S` and `V` produce the
 *identical* mass triple `m_k = λ_k²`; they differ **only** in the sign of the
 `√m_k` components. `Q` is sensitive to that sign solely through the
@@ -243,7 +254,8 @@ Q(V) at r=1/2      ∈  {2/3, 6/(9+4√2), 6/(7+2√6), …}   (non-constant in 
 strict +pos window =  |θ mod 2π/3| < π/12     (open; all λ_k > 0)
 Q(V)=2/3 equality  =  |θ mod 2π/3| ≤ π/12     (closed; equality holds at θ=π/12, one λ_k=0)
 Q(V) < 2/3 region  =  |θ mod 2π/3| > π/12     (some λ_min < 0)
-one-flip form      Q(V) = (3a²+6|b|²)/(3a − 2λ_min)²  <  2/3
+one-flip form      Q(V) = (3a²+6|b|²)/(3a − 2λ_min)²  <  Q(S) = (1+2r)/3
+one-flip at r=1/2  Q(V) < 2/3
 ```
 
 ## What this claims
@@ -299,7 +311,7 @@ Primary runner:
 [`scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py`](./../scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py)
 verifies, at exact sympy precision (cached at
 `logs/runner-cache/frontier_koide_signed_vs_singular_value_readout_narrow.txt`,
-`PASS=29, FAIL=0`):
+`PASS=30, FAIL=0`):
 
 1. `H` is Hermitian; the `C_3` character vectors are its eigenvectors with
    eigenvalue `a + bω^k + b̄ω^{-k}`; and the polar form
@@ -319,7 +331,9 @@ verifies, at exact sympy precision (cached at
    equality region is the closed set `|θ mod 2π/3| ≤ π/12` (Part 6).
 7. (C3) the mass triple `m_k = λ_k²` is identical for both readouts while the
    `√m` sign vectors differ (Part 7); (C2) the one-negative closed form matches
-   the direct `Q(V)` at `θ = π/3, π/2` (Part 8).
+   the direct `Q(V)` at `θ = π/3, π/2`, and a non-`r=1/2` one-negative
+   regression shows the general comparison is `Q(V) < Q(S)`, not `Q(V) < 2/3`
+   (Part 8).
 8. Forbidden-imports / comparator-only sanity: all proof inputs are abstract
    (`a > 0`, `|b| > 0`, `θ` real); `2/3` is comparator-only; `r = 1/2` is a
    hypothesis (Part 9).

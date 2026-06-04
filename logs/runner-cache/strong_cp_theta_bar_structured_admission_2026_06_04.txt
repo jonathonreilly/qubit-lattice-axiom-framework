@@ -1,0 +1,19 @@
+[PASS] PRONG A: no bare F^F (4-form) slot at fundamental dim-3 (C(3,4)=0); the slot exists only on dim-4 (C(4,4)=1)
+       the theta term's Euclidean 4-form writing has no components on Z^3 space
+[PASS] PRONG A: O_h pseudoscalar law R R R eps = det(R) eps on all 48 signed perms => theta-slot is O_h-ODD (an O_h-EVEN measure forbids it)
+       verified on 48 O_h elements; but 'measure is O_h-even' is the undelivered premise (pseudoscalar loophole)
+[PASS] PRONG B: K-real C_3 circulant H=aI+bC+conj(b)C^2 has REAL det => arg det M in {0,pi} (continuous O(1) -> discrete Z_2)
+       max|Im det| = 1.54e-16 over sampled (a,b)
+[PASS] PRONG B subtlety: axial rotation shifts arg det by 2*n*alpha=6*alpha and breaks Hermiticity => arg det M is chiral-basis-dependent; only theta_bar is invariant
+       shift=1.8600 = 6*alpha=1.8600; Mrot non-Hermitian => 'arg det=0' is the removable part
+[PASS] CONNECTION: arg det M reduces to AC_phi_lambda (same C_3 circulant); Im det = 0 around the full coupling circle
+       max|Im det| over circle = 3.56e-17; theta's mass half == AC_phi_lambda's gate
+[PASS] the reduction NEEDS conjugate-symmetry: a complex c != conj(b) gives surviving arg det != 0 (AC_phi_lambda's open BAE gate)
+       Im det = -1.2320 != 0 when c != conj(b)
+
+SCORECARD PASS=6 FAIL=0
+FINDING: theta_bar=0 is a GENUINE ADMISSION (not forced; shared with the SM), sharpened into a
+two-prong admission. NEW verified sub-results: (A) form-degree 'no bare 4-form slot at dim-3';
+(B) K-reality collapses arg det M to discrete {0,pi}. But A doesn't kill the canonical pi_3
+theta-vacuum and B is only the chiral-removable part (joint-basis bridge unbuilt). The arg-det-M
+half REDUCES to AC_phi_lambda (partial Tier-A consolidation, pending audit). No audit status.

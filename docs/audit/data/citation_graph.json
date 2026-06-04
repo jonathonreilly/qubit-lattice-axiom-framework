@@ -75277,7 +75277,7 @@
         "no_per_site_chirality_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a69b18c71788362dae4db0c933428c593a03557c96c9ccd5f1ff8e7b0f190501",
+      "note_hash": "939fb4951b6a68ab29cfaeaae7caa20ba363a7a2dae3898231434c81aef13fe9",
       "path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
       "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
       "title": "Det-Magnitude Positivity Does Not Break S_3; Orientation-Sign Is the C_3 Route"

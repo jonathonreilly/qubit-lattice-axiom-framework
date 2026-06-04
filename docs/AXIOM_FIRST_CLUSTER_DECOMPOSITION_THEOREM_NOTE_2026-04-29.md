@@ -3,7 +3,9 @@
 **Date:** 2026-04-29 (originally); 2026-05-09 (mass-gap bridge repair);
 2026-05-18 (claim_type narrow to bounded_theorem matching the honest
 post-bridge L1/L3/L4 + conditional-L2 scope per audit verdict
-boundary instruction).
+boundary instruction); 2026-06-04 (parent-source repair of the
+Lieb-Robinson interaction norm and removal of the false equation (8)
+imaginary-time commutator identity).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing claims of
 this note are **L1 (Lieb-Robinson commutator bound)**, **L3 (lattice
@@ -129,10 +131,11 @@ This note records, on the current `A_min`
 (`docs/MINIMAL_AXIOMS_2026-04-11.md`), an axiom-first proof that any
 finite-range Hamiltonian built from the Cl(3) site algebra on `Z^3`
 satisfies a Lieb–Robinson bound, with explicit constants determined
-by the Cl(3) local operator norm and the lattice coordination
-number. The earlier unconditional exponential-clustering corollary is
-not retained by this note: connected-correlator clustering requires the
-separate gap/spatial-decay inputs recorded below.
+by the Cl(3) local operator norm, the per-site interaction norm, and
+the finite interaction adjacency degree. The earlier unconditional
+exponential-clustering corollary is not retained by this note:
+connected-correlator clustering requires the separate
+gap/spatial-decay inputs recorded below.
 
 After this note, package lanes that quote "exponential clustering of
 correlators at spacelike separation" must cite this row only as a
@@ -162,11 +165,21 @@ the Hamiltonian.
 
 Let `H = Σ_X h_X` be a Hermitian Hamiltonian on the finite block `Λ
 ⊂ Z^3` with each `h_X` supported on a region of diameter ≤ `R_int`
-and with operator norm `‖h_X‖ ≤ J`. Let `Z_lat = 6` be the cubic
-lattice coordination number, and let
+and with operator norm `‖h_X‖ ≤ J`. Define the per-site interaction
+norm and finite interaction adjacency degree by
 
 ```text
-    v_LR  =  2 · e · J · R_int · Z_lat                                (1)
+    J_*    :=  max_{z ∈ Λ}  Σ_{X ∋ z} ‖h_X‖
+    D_int  :=  max_{z ∈ Λ} |{w ∈ Λ : w ≠ z and some X contains z,w with h_X ≠ 0}|.
+```
+
+For nearest-neighbour cubic interactions, `D_int = Z_lat = 6`. For
+general finite-range interactions on a finite cubic block, `D_int`
+is finite and bounded by the size of the cubic ball of radius
+`R_int`. Let
+
+```text
+    v_LR  =  2 · e · J_* · R_int · D_int                               (1)
 ```
 
 be the Lieb–Robinson velocity. For any local Cl(3) operators `A` at
@@ -180,27 +193,33 @@ site `x` and `B` at site `y`, with `d(x,y) > v_LR |t|`:
 
 with `ξ` an `O(R_int)` length scale fixed by the lattice geometry.
 
-**(L2) Cluster decomposition / exponential clustering.** For any two
-local Cl(3) operators `A_x, B_y` and the canonical thermal state
-`ρ = Z⁻¹ exp(-βH)` at any inverse temperature `β`,
+**(L2) Conditional cluster decomposition / exponential clustering.**
+For any two local Cl(3) operators `A_x, B_y` and a canonical
+finite-block state `ρ`, the following bound is claimed here only
+under a separately retained transfer-gap or spatial-slab clustering
+authority for that state:
 
 ```text
     | ⟨ A_x B_y ⟩_ρ - ⟨A_x⟩_ρ ⟨B_y⟩_ρ |   ≤   C · ‖A_x‖ · ‖B_y‖ · exp(-d(x,y) / ξ_β) (3)
 ```
 
-with `ξ_β = max(ξ, 1/β·m_gap)` and `C` a constant independent of
-`A_x, B_y, x, y` (only depending on `J, R_int, Z_lat, β`).
+with `ξ_β` set by the retained transfer gap or slab gap and `C` a
+constant independent of `A_x, B_y, x, y` (only depending on the stated
+interaction constants, the finite block, and the gap/transfer
+hypotheses supplying L2). This parent does not derive the required
+gap.
 
 **(L3) Lattice light cone.** The information theoretic lattice
 "light cone" is the region `d(x,y) ≤ v_LR |t|`. Outside it, two
 local observables commute up to exponentially small terms: the
 lattice analogue of microcausality.
 
-**(L4) Cl(3)-specific constant.** The factor `J` in (1) is bounded by
-the supremum operator norm of any Hermitian element of the Cl(3)
-local algebra at canonical normalization, which is finite and
-explicit (the operator norm of any Hermitian element of a finite-dim
-Clifford algebra is bounded by its spectral radius).
+**(L4) Cl(3)-specific constant.** The factor `J_*` in (1) is finite
+on the canonical finite-range surface: each local term is a finite
+Hermitian Cl(3) tensor with bounded operator norm at canonical
+normalization, and each site is touched by finitely many nonzero
+terms. If at most `N_touch` local terms touch any site, then
+`J_* ≤ N_touch J`.
 
 ## Proof
 
@@ -221,18 +240,28 @@ equation
                           + 2 ‖B‖ · Σ_Z  Λ(t) · ‖[h_Z, A]‖_∞                (4)
 ```
 
-obtained from Duhamel's formula. Iterating gives a series in powers
-of `J · t`, where each term is supported on increasingly larger
-regions. The `n`-th term has support extending at most `n · R_int`
-sites away from the original support of `A`.
+obtained from Duhamel's formula. The operator-norm estimate at each
+iteration uses the per-site sum, not only the single largest local
+term:
+
+```text
+    Σ_{Z : Z ∩ supp(A_s) ≠ ∅} ‖[h_Z, A_s]‖
+      ≤  2 ‖A_s‖ Σ_{Z : Z ∩ supp(A_s) ≠ ∅} ‖h_Z‖
+      ≤  2 ‖A_s‖ |supp(A_s)| J_* .                              (4a)
+```
+
+Thus iterating gives a series in powers of `J_* · t`. The `n`-th
+term has support extending at most `n · R_int` sites away from the
+original support of `A`.
 
 ### Step 2 — Combinatorial cubic-lattice bound
 
-For `Z^3` with coordination `Z_lat = 6`, the number of paths of
-length `n` between sites `x` and `y` is bounded by
+For a finite-range interaction graph with degree `D_int`, the number
+of interaction paths of length `n` between sites `x` and `y` is
+bounded by
 
 ```text
-    N_paths(x, y, n)  ≤  Z_lat^n  =  6^n   for d(x,y) ≤ n              (5)
+    N_paths(x, y, n)  ≤  D_int^n   for d(x,y) ≤ n R_int              (5)
 ```
 
 while `N_paths(x, y, n) = 0` for `n < d(x,y) / R_int` (no path of
@@ -243,8 +272,9 @@ fewer than `d(x,y) / R_int` interaction "hops" can connect them).
 Combining (4) and (5):
 
 ```text
-    ‖ [A(t), B] ‖   ≤   2 ‖A‖ ‖B‖ · Σ_{n ≥ d(x,y)/R_int}  (J · Z_lat · t · R_int)^n / n!     (6)
-                    ≤   2 ‖A‖ ‖B‖ · exp( J Z_lat R_int |t| ) · ( e J Z_lat R_int |t| / d(x,y) )^{d(x,y)/R_int}
+    ‖ [A(t), B] ‖   ≤   2 ‖A‖ ‖B‖ · Σ_{n ≥ d(x,y)/R_int}  (J_* · D_int · |t| · R_int)^n / n!     (6)
+                    ≤   2 ‖A‖ ‖B‖ · exp( J_* D_int R_int |t| )
+                         · ( e J_* D_int R_int |t| / d(x,y) )^{d(x,y)/R_int}
 ```
 
 By the elementary inequality `(a/n)^n ≤ exp(-n) · exp(n log(a/n))`,
@@ -254,29 +284,39 @@ expanding around `n = d(x,y) / R_int` gives the Lieb–Robinson bound
     ‖ [A(t), B] ‖   ≤   2 ‖A‖ ‖B‖ · exp( -(d(x,y) - v_LR |t|) / ξ )    (7)
 ```
 
-with `v_LR = 2 e J Z_lat R_int` and `ξ = R_int`. This is (L1) with
-the constants in (1).
+with `v_LR = 2 e J_* D_int R_int` and `ξ = R_int`. This is (L1) with
+the constants in (1). The previous source text used the per-term max
+`J` and the bare cubic coordination in this slot; the corrected
+parent-source constant is the per-site interaction norm `J_*` times
+the interaction adjacency degree.
 
 ### Step 4 — Cluster decomposition (L2)
 
-For any thermal expectation with finite `β`:
+No identity of the form
 
 ```text
-    ⟨A_x B_y⟩_ρ - ⟨A_x⟩_ρ ⟨B_y⟩_ρ
-        =  -∫_0^β  dτ  ⟨ [A_x , B_y(iτ)] ⟩_ρ                            (8)
+    connected correlator = -∫ imaginary-time commutator
 ```
 
-(Kubo identity for connected correlators in imaginary time). The
-Heisenberg-evolved operator `B_y(iτ)` is the analytic continuation
-of `B_y(t)` to imaginary time; the LR series of step 1 converges in
-a strip of imaginary time `|Im t| < 1/v_LR`, so for `β > 0` we can
-bound (8) by the LR bound (7) applied in the imaginary-time
-direction. Standard Hastings–Koma manipulation yields (3) with
-`ξ_β = max(R_int, 1/(β · m_gap))`. (For zero temperature in a gapped
-phase, `ξ_β` is determined by the spectral gap; for ungapped systems
-the cluster decay can be polynomial. The `A_min` package's gauge
-sector is gapped — `SU(3)` confinement — so `m_gap > 0` is the
-generic case here.)
+is used here. That equality is false for general finite-dimensional
+thermal states: for example `H = 0` and `A = B = σ_z` give connected
+variance `1` while the commutator integral is `0`. The companion
+`CLUSTER_DECOMPOSITION_PARENT_EQ8_REPAIR_NARROW_NOTE_2026-06-02.md`
+records the explicit counterexamples and the same `J_*` correction,
+but this parent-source repair removes the bad equation from the
+audited artifact itself.
+
+The only L2 statement retained in this parent is conditional. If a
+positive Hermitian transfer matrix or spatial slab transfer operator
+for the stated canonical finite-block surface has a nondegenerate
+top eigenvalue and spectral gap (`Δ_T > 0` in the temporal route or
+`Δ_x > 0` in the spatial route), then the corresponding finite-block
+spectral decomposition gives exponential decay of connected
+correlators along that transfer direction. This is the scope supplied
+by the mass-gap bridge note already linked above and by the spatial
+slab bridge family recorded in the dependency-wiring section. The LR
+bound L1 supplies finite-speed commutator control; it does not by
+itself prove static spatial cluster decomposition or a transfer gap.
 
 ### Step 5 — Lattice light cone (L3)
 
@@ -292,20 +332,21 @@ complex spinor module (dim 2), the operator norm equals the spectral
 radius. Cl(3) has 8 real generators, so any finite-coefficient
 Hermitian element `h = Σ_α c_α γ^α` has operator norm bounded by
 `(Σ_α |c_α|² · ‖γ^α‖²)^{1/2}` with each `‖γ^α‖ = 1` for the
-canonical orthonormal generators. Hence `J` in (1) is bounded by
-the canonical-normalisation supremum of the matter / gauge
-interaction coefficients, which is `O(1)` on the `g_bare = 1`
-surface. ∎
+canonical orthonormal generators. Thus the single-term bound `J` is
+finite at canonical normalization. Since the finite-range local rule
+has finite `N_touch`, `J_* ≤ N_touch J` is finite as well. ∎
 
 ## Hypothesis set used
 
 The proof uses:
 - A1 only via finite-dim Cl(3) operator norm bound;
 - A2 only via lattice graph distance, coordination number `Z_lat = 6`,
-  and finite-range support of `h_X`;
+  finite interaction adjacency degree `D_int`, and finite-range
+  support of `h_X`;
 - A3 only via Hermiticity of `H` and finiteness of the per-site
   algebra;
-- A4 only via `O(1)` bound on `J` at canonical normalisation.
+- A4 only via the finite canonical bound on the single-term norm `J`
+  and hence on the per-site norm `J_*`.
 
 No imports from the forbidden list. The standard Lieb–Robinson
 1972 argument is the *technique*, not a primitive import: the
@@ -314,16 +355,17 @@ finite-lattice manipulations.
 
 ## Corollaries (downstream tools)
 
-C1. *Mass-gap exponential decay.* In any gapped phase on `A_min`
-(such as the canonical SU(3) confining phase at `g_bare = 1`),
-zero-temperature ground-state correlators decay exponentially
-in spatial separation, with decay length bounded by `1 / m_gap`.
+C1. *Mass-gap exponential decay.* In any separately retained gapped
+finite-block transfer direction on `A_min`, connected correlators
+decay exponentially along that transfer direction, with decay length
+controlled by the corresponding spectral gap. This note does not
+derive the gap.
 
-C2. *Confinement-area-law lane.* The connected Wilson-loop /
-plaquette correlators decay exponentially at spacelike separation,
-which is the structural assumption underlying the `T = 0`
-confinement / `√σ ≈ 465 MeV` row of
-`docs/ASSUMPTION_DERIVATION_LEDGER.md`.
+C2. *Confinement-area-law lane.* Any connected Wilson-loop /
+plaquette correlator statement that uses exponential spacelike decay
+must cite a retained gap/spatial-clustering authority in addition to
+this LR source. This parent supplies only finite-speed LR control and
+conditional transfer-gap routing.
 
 C3. *Microcausality on `A_min`.* The lattice light-cone (L3) is the
 substrate analogue of relativistic microcausality. Continuum
@@ -332,33 +374,37 @@ question); only the finite-`v_LR` light-cone structure of the
 lattice itself is.
 
 C4. *Compatibility with reflection positivity (R2).* The
-combination of RP (R2) and LR/clustering (R3) is the lattice
-substitute for the Wightman positivity-of-energy + cluster-
-decomposition pair. Cycle 2 + Cycle 3 jointly supply the structural
-content underlying any "physical Hilbert space + spectrum
-condition + clustering" sentence in the package.
+combination of RP (R2), finite-speed LR control (R3), and separately
+retained transfer-gap clustering is the lattice substitute for the
+Wightman positivity-of-energy + cluster-decomposition pair. This note
+does not let downstream rows cite clustering without that separate
+gap/clustering authority.
 
 ## Honest status (post-bridge-repair)
 
 **Branch-local theorem with sector-dependent support level.**
 
 - **(L1) Lieb–Robinson commutator bound.** Proved on `A_min` by
-  the classical Lieb–Robinson argument with explicit cubic-lattice
-  constants. The runner exhibits the exponential envelope on a
-  small free-fermion lattice. **Closed-form support, pending
+  the finite-range Lieb–Robinson argument with the corrected per-site
+  interaction norm `J_*` and finite interaction degree `D_int`. The
+  runner exhibits the exponential envelope on a small free-fermion
+  lattice. **Closed-form support, pending
   independent audit.**
 - **(L3) Lattice light cone.** Direct contrapositive of (L1).
   **Closed-form support, pending independent audit.**
-- **(L4) Cl(3)-specific constant.** Bound on `J` by spectral radius
-  of finite-dim Cl(3) Hermitian elements. **Closed-form
+- **(L4) Cl(3)-specific constant.** Bound on the single-term `J` by
+  spectral radius of finite-dim Cl(3) Hermitian elements, and
+  therefore `J_* ≤ N_touch J` for a finite-range local rule.
+  **Closed-form
   support, pending independent audit.**
 - **(L2) Exponential clustering.** Conditional on a transfer-matrix
   spectral gap `Δ_T > 0`, supplied by the bridge note
   [`CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`](CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md).
   The bridge is a closed finite-block temporal spectral lemma; the gap
-  input is still open. **The unconditional L2 form ("for any canonical
-  thermal state") is not proved, and the spatial clustering step is not
-  closed by the bridge alone.**
+  input is still open. The false parent equation (8) has been removed
+  and is not a load-bearing route. **The unconditional L2 form ("for
+  any canonical thermal state") is not proved, and the spatial
+  clustering step is not closed by the bridge alone.**
 
 **What this rules out.**
 
@@ -395,11 +441,10 @@ promoting the parent L2 statement.
 
 **Not in scope.**
 
-- Tight constants in (1) and (7). The proof gives `v_LR = 2 e J Z_lat
-  R_int` with constants matching Lieb–Robinson 1972; tighter
-  constants (Hastings 2010, Bravyi–Hastings 2011) give the same
-  exponential structure with smaller prefactors and are not needed
-  for the structural exhibit.
+- Tight constants in (1) and (7). The proof uses the conservative
+  `v_LR = 2 e J_* D_int R_int` envelope; sharper constants give the
+  same exponential structure with smaller prefactors and are not
+  needed for the structural exhibit.
 - Continuum-limit clustering / Lorentz-invariant light cone. (L3)
   is the lattice light cone; the continuum / Lorentz limit is a
   separate program question.

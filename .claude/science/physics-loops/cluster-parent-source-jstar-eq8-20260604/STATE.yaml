@@ -1,0 +1,20 @@
+loop: cluster-parent-source-jstar-eq8-20260604
+branch: physics-loop/cluster-parent-source-jstar-eq8-20260604
+base: origin/main
+target_claim_id: axiom_first_cluster_decomposition_theorem_note_2026-04-29
+mode: campaign_block
+actual_current_surface_status: proposed_promoted
+conditional_surface_status: bounded_theorem_source_repair_pending_audit
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_cluster_decomposition_check.py
+  - logs/runner-cache/axiom_first_cluster_decomposition_check.txt
+  - outputs/axiom_first_cluster_decomposition_check_2026-04-29.txt
+  - .claude/science/physics-loops/cluster-parent-source-jstar-eq8-20260604/
+open_imports:
+  - L2 still requires retained transfer-gap or spatial slab clustering authority.
+  - This block does not derive Delta_T > 0 or Delta_x > 0.
+next_exact_action: reviewer extraction and independent re-audit of the repaired parent source
+stop_condition: PR opened for this science block; campaign should pivot to the next live conditional row

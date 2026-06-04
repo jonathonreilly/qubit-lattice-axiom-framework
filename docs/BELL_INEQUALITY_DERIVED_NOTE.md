@@ -7,6 +7,14 @@
 
 **Audit-lane runner update (2026-05-09):** The primary runner `scripts/frontier_bell_inequality.py` previously timed out under the audit-lane 120s default budget; already had AUDIT_TIMEOUT_SEC=1800; cache refreshed against the declared budget. The runner's pass/fail semantics are unchanged; this update only ensures the audit-lane sees a complete cache instead of a TIMEOUT row.
 
+**Audit-lane cache recertification (2026-06-04):** The SHA-pinned cache
+[`logs/runner-cache/frontier_bell_inequality.txt`](../logs/runner-cache/frontier_bell_inequality.txt)
+was refreshed through `scripts/cached_runner_output.py --refresh` so the cache
+header now records the runner-declared `timeout_sec: 1800` rather than the
+older `600`-second header. The runner source hash and pass/fail semantics are
+unchanged, and the row remains a bounded reproducible model-surface CHSH result,
+not a tier-ratifiable framework-native or physical gravitational Bell theorem.
+
 ## Claim
 
 CHSH Bell violation on a tensor product Hilbert space C^N ⊗ C^N with:

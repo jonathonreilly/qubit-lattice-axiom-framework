@@ -1,0 +1,14 @@
+[PASS] det is multiplicative under COMPOSITION: det(A.S)=det(A)det(S)
+[PASS] tr FAILS composition-multiplicativity: tr(A.S) != tr(A)tr(S) (so tr is EXCLUDED on this axis)
+[PASS] power-trace tr(M^2) FAILS composition-multiplicativity (excluded)
+[PASS] elementary symmetric e_2 FAILS composition-multiplicativity (excluded)
+[PASS] det^k is the full multiplicative-composition character family (det(A.S)^k = det(A)^k det(S)^k)
+[PASS] PATTERN L (honest bound): tr IS additive over direct sums (tr(A(+)B)=tr(A)+tr(B)) -- so additivity ALONE cannot exclude tr; the COMPOSITION premise is required
+[PASS] Z=det multiplies over patches: |det(A(+)B)| = |det A||det B|; only W=log|det| ADDS (Record axis) => W=c log|det|
+
+SCORECARD PASS=7 FAIL=0
+AUDIT-READY: det-selection on the COMPOSITION axis is clean GL(n)-abelianization math (det^k;
+tr/power-trace/elementary-symmetric excluded). Additive-of-multiplicative (Record axis) fixes
+W=c*log|det|. HONEST BOUND: additivity alone can't exclude tr (Pattern L); the composition
+premise (M) comes from the fermionic Berezin amplitude Z=det -- the residual is the fermionic
+frame origin of Z, not the det-selection math. Sets no audit status; edits no existing row.

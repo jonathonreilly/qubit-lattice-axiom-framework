@@ -152,6 +152,19 @@ This companion note does **not**:
   selected by best-match-to-`C_obs`;
 - extend the audited scope beyond what the parent already declares.
 
+## 2026-06-04 scorecard text repair
+
+The live runner and SHA-pinned cache now expose five within-scope PASS gates,
+not the older two-gate scorecard text previously shown here. The extra gates
+are source-scope guards: D=4 versus D=16 non-degeneracy, the D=4-specific identity
+`1/D = 4/2^D`, failure of that identity at neighboring dimensions, and an
+explicit audit-transparency gate that the observed electroweak target values
+are printed only after the PASS conditions.
+
+This repair does not close the missing effective-potential-density bridge and
+does not promote the row. It only aligns the note's verification section with
+the current runner/cache so re-audit is not blocked by stale scorecard prose.
+
 ## Verification
 
 Run:
@@ -160,10 +173,10 @@ Run:
 PYTHONPATH=scripts python3 scripts/frontier_hierarchy_dimensional_compression.py
 ```
 
-Expected (unchanged from parent):
+Expected current runner scorecard:
 
 ```text
-SCORECARD: 2 pass, 0 fail out of 2
+SCORECARD: 5 pass, 0 fail out of 5
 ```
 
 The runner is the same one cited by the parent note. This narrowing

@@ -268,6 +268,127 @@ This rigorization does **not**:
 - promote audit status. The audit ledger is not modified; status descriptor
   alignment to `unaudited` matches the live audit ledger entry.
 
+## No-go discipline gate (N1–N8)
+
+**Status:** PASS for the narrow simple-fiber-class bound only. The claim being
+closed is `c_Widom <= 1/6 < 1/4` for the simple-fiber Widom class (every flat
+free-fermion cut whose `k_x`-fiber is empty, full, or a single interval for
+a.e. transverse momentum, plus its additive Schur/species descendants). It is
+NOT a claim that no entanglement carrier on `Cl(3)/Z^3` can ever produce `1/4`,
+and NOT a claim that the action-side `c_cell = 1/4` is wrong.
+
+### N1 - Alternative route enumeration
+
+| route | what it would attempt | why it fails for this scoped no-go | marker |
+|---|---|---|---|
+| Single-band NN filling sweep | Tune the half-filled NN diamond/cubic filling to push the average crossing number past 2 toward 3. | A one-band single-interval fiber crosses the `k_x` circle at most twice, so `I_x <= 2(2*pi)^{d-1}` and `c_Widom <= 1/6` for every filling; `1/4` needs crossing number 3. | ATTEMPTED |
+| Schur / species stacking | Direct-sum many simple-fiber blocks and read off the combined boundary coefficient. | `c_total` is the `w_alpha = log chi_alpha`-weighted convex average of the per-block `c_alpha <= 1/6`, so it stays `<= 1/6` (matches the `BH_ENTROPY_DERIVED_NOTE` species-universality check). | ATTEMPTED |
+| Per-direction / area re-normalization | Reweight the boundary area or pick a non-primitive cut to inflate `I_x` relative to the face count. | `c_Widom = I_x / (12(2*pi)^{d-1})` is taken at unit rescaled boundary area with the same face-counting convention; rescaling cancels in numerator and denominator and cannot lift the crossing-number ceiling. | ATTEMPTED |
+| Multi-pocket / multi-interval Fermi geometry | Use a dispersion whose `k_x`-fiber has two or more occupied intervals on positive transverse measure (crossing number 3). | This LEAVES the simple-fiber hypothesis (2) and is explicitly outside the no-go's scope; it is left open as a positive target, not closed. | OUT OF SCOPE |
+| Self-dual half-zone parity gate | Activate a second edge orbital on a `Z_2` low-Laplacian sheet of measure `1/2`, giving `<N_x> = 2 + 2*(1/2) = 3`. | Same exit: it leaves the single-interval class (the gated channel adds a second interval on half the transverse measure). Realized by `AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`; this note does not foreclose it. | OUT OF SCOPE |
+| Gapped horizon / topological edge carrier | Replace the gapless Widom asymptotics with a strict area law whose per-face coefficient is fixed by a separate microscopic input. | The Widom-Gioev-Klich theorem is not the asymptotic theorem for a gapped or topological-sector carrier; that carrier is governed by a different (separately derived) coefficient and is left as a residual positive target. | OUT OF SCOPE |
+
+### N2 - Wall-independence audit
+
+The collapsed wall set for this no-go has ONE wall: the single-interval
+crossing-number ceiling `N_Γ(q) <= 2` a.e. (hypothesis 2). Everything else is
+arithmetic on top of it — the coarea identity converts `<= 2` into
+`I_x <= 2(2*pi)^{d-1}`, and the division by `12(2*pi)^{d-1}` converts that into
+`c_Widom <= 1/6`. The Schur/direct-sum descendant bound is not a second
+independent wall; it is the convexity image of the same per-block ceiling.
+What could change the verdict is exactly removal of that one wall (a fiber with
+crossing number 3, i.e. a multi-interval or parity-gated occupied set), which
+is precisely the open route N1 marks OUT OF SCOPE.
+
+### N3 - Hidden-wall scan
+
+The phrases "broader", "class statement", "simple-fiber", and "cannot match"
+are not used as hidden retained inputs. The EXPLICIT load-bearing inputs are:
+(i) the admitted Widom-Gioev-Klich coefficient formula
+`c_Widom = I_x / (12(2*pi)^{d-1})` with `I_x = ∫_{∂Γ} |n_k · e_x| dS_k`
+(imported physics, not re-derived here); (ii) the coarea fiber-count identity
+`I_x = ∫_{T^{d-1}} N_Γ(q) dq`; (iii) the single-interval hypothesis (2)
+yielding `N_Γ(q) <= 2` a.e.; (iv) additivity of leading entropy and of the
+maximal boundary-rank normalization under direct sums, with positive weights
+`w_alpha = log chi_alpha`, yielding the convex average. The action-side
+`c_cell = 1/4` is imported context, NOT a premise of the entanglement-side
+bound — the note states the bound is "agnostic to the bridge premise" and holds
+whether or not the action-side `1/4` is retained.
+
+### N4 - Residual matching
+
+| cited witness | residual attacked | residual here | match? |
+|---|---|---|---|
+| `BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md` (`retained_bounded`) | The single-carrier `c_Widom < 1/4` gap for one diamond / one cubic Fermi surface. | The same gap, generalized to every simple-fiber carrier and its Schur descendants via the crossing-number ceiling. | yes |
+| `BH_ENTROPY_DERIVED_NOTE.md` (`retained_bounded`) | The RT-ratio invariance under consistent boundary-rank counting (species universality). | The convex-average step uses exactly that invariance to bound Schur/direct-sum descendants by `1/6`. | yes |
+| `PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md` (`audited_conditional`) | The derivation of the action-side target `c_cell = 1/4`. | Imported only to NAME the `1/4` target the class cannot reach; it is not a premise of the `<= 1/6` entanglement bound. | no |
+| `PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md` (`audited_conditional`) | The additive finite-patch extension and `A/(4 G)` carrier-share matching. | Context for the action-side surface only; supplies the face-counting convention, not the negative bound. | no |
+
+Non-matching witnesses (the two Planck action-side notes) are not load-bearing
+for this no-go; they fix the target value and the area convention but the
+`c_Widom <= 1/6` inequality is proved without them.
+
+### N5 - Rhetoric audit
+
+The broad phrases — "broader no-go", "quarter", "cannot produce", "closed
+negatively", "no carrier in this class" — are scoped strictly to the
+simple-fiber Widom class defined by hypotheses (1)-(3): flat primitive cut,
+single occupied `k_x`-interval per transverse fiber, additive Schur/species
+normalization. "Quarter" refers only to the inability to reach the *value*
+`1/4` within that class, not to any claim about the Planck `c_cell = 1/4`
+itself. The over-broad reading "no entanglement carrier on `Cl(3)/Z^3` can ever
+produce `1/4`" is explicitly disclaimed in the note's "Unsafe wording" block
+and is NOT asserted here.
+
+### N6 - Partial-closure path scan
+
+The following non-axiom partial-closure paths remain OPEN (the note's "What
+remains outside the no-go" list), and none is a new axiom:
+
+- a multi-pocket / multi-band free fermion whose `k_x`-fiber has more than one
+  occupied interval on positive transverse measure (crossing number 3);
+- a physically selected NNN or longer-range dispersion with projected crossing
+  multiplicity exactly 3 in the Widom integral;
+- a self-dual `Z_2` half-zone parity gate supplying the second occupied
+  interval on measure `1/2` (already constructed in
+  `AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`, whose
+  selector is a residual primitive involution, not a fitted parameter);
+- a gapped horizon/edge carrier with a strict area law and a separately derived
+  entropy-per-face coefficient;
+- a topological sector whose leading edge Hilbert-space dimension is fixed by an
+  additional microscopic input.
+
+Each of these is a positive structural target requiring more structure than the
+simple-fiber free-fermion / Schur-block lane; the no-go does not relabel any of
+them as a forbidden axiom.
+
+### N7 - Steelman
+
+The strongest objection is that the `1/6` ceiling looks like an artifact of the
+single-interval hypothesis (2): a generic translation-invariant Fermi sea need
+not have single-interval fibers, so a physically natural dispersion could
+already sit at crossing number 3 and reach `1/4` without any exotic input. This
+objection is correct AS STATED — and it is exactly why the note scopes the
+claim to the simple-fiber class rather than to all free fermions. It does not
+break the scoped no-go: within hypothesis (2) the coarea bound `N_Γ(q) <= 2` is
+exact, so `c_Widom <= 1/6` is unconditional there. The objection instead
+identifies the door out (multi-interval geometry), which the note already lists
+as the residual positive route and which the parity-gate carrier note walks
+through.
+
+### N8 - Cross-cycle echo
+
+A recurrent repo overclaim failure mode is to test one representative carrier
+(here, the half-filled NN diamond) and then declare the entire entanglement-to-
+`1/4` program closed. This note avoids that echo in two ways: (a) it states
+explicitly that it "does not say that no entanglement carrier can ever produce
+`1/4`" and brands the universal reading "Unsafe wording"; and (b) it keeps the
+claim boundary at the simple-fiber crossing-number ceiling, enumerating the
+multi-pocket, parity-gate, gapped-horizon, and topological routes as still
+open. The downstream `AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`
+in fact realizes one of those routes (crossing count 3 → `c_Widom = 1/4`),
+which is consistent with — not a contradiction of — this scoped no-go.
+
 ## Literature anchor
 
 The logic here uses the free-fermion Widom coefficient from Gioev-Klich and

@@ -3,29 +3,32 @@
 `DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`.
 
 The narrow theorem's load-bearing content is the finite-block
-raw-to-Hermitian-completion bridge statement that, given the upstream
-source notes
-(X1) `OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10`
-and (X2) `CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10`,
-the canonical Frobenius bridge ratio on the finite-dimensional bridge
+raw-to-Hermitian-completion bridge statement. The upstream real-D
+observable-principle notes are context only in this repaired packet; this
+runner does not prove that replacing a real-D block by a scalar baseline
+mI is legitimate. It therefore treats determinant formulas on mI as
+scalar-baseline diagnostics, not as real-D W-response closure.
+
+The canonical Frobenius bridge ratio on the finite-dimensional bridge
 algebra on C^16 with Y = P_R Γ_1 P_L is
 
   sqrt(Tr(Y^† Y) / Tr(Γ_1^† Γ_1))  =  sqrt(8 / 16)  =  1 / sqrt(2),
 
-where Γ_1 = Y + Y^† is the real-symmetric Hermitian-completed source
-direction. The active-space ratio 1 is recorded only as a trace
-comparator. The runner does not apply (X1) directly to the non-Hermitian
-raw bridge Y and does not certify a physical y_nu/g_weak readout.
+where Γ_1 = Y + Y^† is the Hermitian completion. The active-space ratio
+1 is recorded only as a trace comparator. The runner does not apply any
+real-D observable-principle source-domain theorem to Y or Γ_1 in this
+repaired scope and does not certify a physical y_nu/g_weak readout.
 
 The proof steps verified at exact sympy precision are:
 
-  (X3.N)  Y^2 = 0 on C^16.
-  (X3.H)  Y + Y^† = Γ_1 on C^16.
-  (X3.T1) Tr(Γ_1^† Γ_1) = 16.
-  (X3.T2) Tr(Y^† Y) = 8.
+  (F.N)   Y^2 = 0 on C^16.
+  (F.H)   Y + Y^† = Γ_1 on C^16.
+  (F.T1)  Tr(Γ_1^† Γ_1) = 16.
+  (F.T2)  Tr(Y^† Y) = 8.
   (DZ)    det(m I_{16} + j Y) = m^{16} identically in j (Y nilpotent).
   (DG)    det(m I_{16} + j Γ_1) = (m^2 - j^2)^8.
-  (WG)    W[j Γ_1] = 8 log|1 - j^2/m^2| (closed-form match at exact rationals).
+  (WG)    scalar-baseline diagnostic log determinant
+          W_scalar[j Γ_1] = 8 log|1 - j^2/m^2| at exact rationals.
   (R)     sqrt(Tr Y^† Y / Tr Γ_1^† Γ_1) = 1/sqrt(2).
   (R1)    Active-space ratio Tr Y^† Y / Tr P_L = 1; flagged as a
           comparator because P_L is not the Hermitian-completed source
@@ -33,15 +36,13 @@ The proof steps verified at exact sympy precision are:
   (R2)    Pseudoscalar companion i(Y - Y^†) is Hermitian, has the same
           trace norm, and is trace-orthogonal to Γ_1.
 
-Counterfactual: a candidate Γ̃_1 with [γ_5, Γ̃_1] ≠ 0 breaks (X3.H),
+Counterfactual: a candidate Γ̃_1 with [γ_5, Γ̃_1] ≠ 0 breaks (F.H),
 confirming the anticommutation {γ_5, Γ_1} = 0 is load-bearing.
 
 Companion role: not a new claim row beyond the source note; this script
 provides audit-friendly evidence that the narrow theorem's load-bearing
 algebra holds at exact symbolic precision on the canonical C^16
-representation. (X1) and (X2) are imported from upstream rows; this
-runner does not re-derive them but verifies the
-bridge identities used by the narrowed source note.
+representation.
 """
 
 from __future__ import annotations
@@ -147,7 +148,7 @@ def main() -> int:
         matrix_eq(G1, G1.H),
     )
     check(
-        "G1 is real symmetric, hence in the X1 real-symmetric source class",
+        "G1 is real symmetric (finite Hermitian-completion diagnostic)",
         matrix_eq(G1, G1.T) and all(entry.is_real for entry in G1),
     )
     check(
@@ -198,25 +199,25 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 1: bridge definition Y = P_R Γ_1 P_L and identities (X3.N), (X3.H)")
+    section("Part 1: bridge definition Y = P_R Γ_1 P_L and identities (F.N), (F.H)")
     # =========================================================================
 
     Y = P_R * G1 * P_L
     Y_dag = Y.H
 
-    # (X3.N): Y^2 = 0
+    # (F.N): Y^2 = 0
     check(
-        "(X3.N) Y^2 = 0 on C^16",
+        "(F.N) Y^2 = 0 on C^16",
         matrix_eq(Y * Y, zeros(16, 16)),
     )
     check(
-        "Y is not Hermitian, so the runner does not treat Y as an X1 source direction",
+        "Y is not Hermitian, so the runner treats it only as finite bridge data",
         not matrix_eq(Y, Y.H),
     )
 
-    # (X3.H): Y + Y^† = Γ_1
+    # (F.H): Y + Y^† = Γ_1
     check(
-        "(X3.H) Y + Y^† = Γ_1 on C^16",
+        "(F.H) Y + Y^† = Γ_1 on C^16",
         matrix_eq(Y + Y_dag, G1),
     )
 
@@ -228,19 +229,19 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 2: trace ratios (X3.T1), (X3.T2)")
+    section("Part 2: trace ratios (F.T1), (F.T2)")
     # =========================================================================
 
     tr_G1G1 = sympy.simplify((G1.H * G1).trace())
     tr_YdagY = sympy.simplify((Y_dag * Y).trace())
 
     check(
-        "(X3.T1) Tr(Γ_1^† Γ_1) = 16",
+        "(F.T1) Tr(Γ_1^† Γ_1) = 16",
         sympy.simplify(tr_G1G1 - 16) == 0,
         detail=f"Tr(Γ_1^† Γ_1) = {tr_G1G1}",
     )
     check(
-        "(X3.T2) Tr(Y^† Y) = 8",
+        "(F.T2) Tr(Y^† Y) = 8",
         sympy.simplify(tr_YdagY - 8) == 0,
         detail=f"Tr(Y^† Y) = {tr_YdagY}",
     )
@@ -304,7 +305,7 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 4: (WG) W[j Γ_1] = 8 log|1 - j^2/m^2| at exact rationals")
+    section("Part 4: scalar-baseline diagnostic for Γ_1 at exact rationals")
     # =========================================================================
 
     # Choose m = 1 and a few exact rational j; compare W against closed form.
@@ -313,19 +314,19 @@ def main() -> int:
         W_val = sympy.simplify(sympy.log(sympy.Abs(det_at)))
         target = sympy.simplify(8 * sympy.log(sympy.Abs(1 - j_val**2)))
         check(
-            f"(WG) W[j Γ_1] = 8 log|1 - j^2/m^2| at (m, j) = (1, {j_val})",
+            f"(WG) scalar-baseline W_scalar[j Γ_1] = 8 log|1 - j^2/m^2| at (m, j) = (1, {j_val})",
             sympy.simplify(W_val - target) == 0,
             detail=f"W={W_val}, target={target}",
         )
 
-    # And the W[j Y] = 0 identity:
+    # And the W_scalar[j Y] = 0 identity:
     for j_val in (Rational(1, 10), Rational(1, 4), Rational(1, 3)):
         det_Y_at = sympy.simplify(det_mIjY.subs({m_sym: 1, j_sym: j_val}))
         W_Y_val = sympy.simplify(sympy.log(sympy.Abs(det_Y_at)))
         check(
-            f"(WZ) W[j Y] = 0 at (m, j) = (1, {j_val})",
+            f"(WZ) W_scalar[j Y] = 0 at (m, j) = (1, {j_val})",
             sympy.simplify(W_Y_val) == 0,
-            detail=f"W[jY] = {W_Y_val}",
+            detail=f"W_scalar[jY] = {W_Y_val}",
         )
 
     # =========================================================================
@@ -350,12 +351,12 @@ def main() -> int:
     )
 
     # The active-space comparator is a trace comparator, not the
-    # source-direction ratio. W[jY]=0 remains a nilpotent diagnostic, but
-    # X1 is not applied to Y because Y is non-Hermitian.
+    # Hermitian-completion ratio. W_scalar[jY]=0 remains a scalar-baseline
+    # nilpotent diagnostic; no real-D response is asserted here.
     check(
-        "(R1) active-space ratio is comparator-only; Y is outside the X1 source-domain use",
+        "(R1) active-space ratio is comparator-only; Y is outside the Hermitian-completion denominator",
         len(nonzero_coeffs_above_zero) == 0 and not matrix_eq(Y, Y.H),
-        detail="W[jY] is nilpotent diagnostic; Γ_1 is the real-symmetric source direction",
+        detail="W_scalar[jY] is scalar-baseline nilpotent diagnostic; Γ_1 is the Hermitian completion",
     )
 
     # =========================================================================
@@ -392,14 +393,14 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 7: counterfactual — non-anticommuting Γ̃_1 breaks (X3.H)")
+    section("Part 7: counterfactual — non-anticommuting Γ̃_1 breaks (F.H)")
     # =========================================================================
 
     # Construct a candidate Γ̃_1 = γ_5 itself, which COMMUTES with γ_5 instead
     # of anticommuting. Then Y_tilde = P_R γ_5 P_L = P_R (P_L - P_R) P_L = 0
     # because γ_5 = P_L - P_R and P_R P_L = P_L P_R = 0.
     # So Y_tilde is identically zero on C^16; Y_tilde + Y_tilde^† = 0 ≠ γ_5
-    # for γ_5 nonzero. This confirms (X3.H) requires the anticommutation.
+    # for γ_5 nonzero. This confirms (F.H) requires the anticommutation.
 
     G1_tilde = GAMMA5  # commutes with γ_5 (in fact equals it)
     Y_tilde = P_R * G1_tilde * P_L
@@ -412,7 +413,7 @@ def main() -> int:
         matrix_eq(Y_tilde, zeros(16, 16)),
     )
     check(
-        "(cf.c) (Y_tilde + Y_tilde^†) ≠ γ_5: (X3.H) breaks without anticommutation",
+        "(cf.c) (Y_tilde + Y_tilde^†) ≠ γ_5: (F.H) breaks without anticommutation",
         not matrix_eq(Y_tilde + Y_tilde.H, GAMMA5),
         detail="confirms {γ_5, Γ_1} = 0 is load-bearing for the bridge identity",
     )
@@ -427,13 +428,11 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 8: cross-check — source-derivative diagnostics on Γ_1 and Y")
+    section("Part 8: cross-check — scalar-baseline derivative diagnostics on Γ_1 and Y")
     # =========================================================================
     #
-    # The (X1) uniqueness statement applies to Γ_1 and implies that
-    # ∂_j W[j Γ_1] at j=0 equals
-    # c * d/dj [8 log|1 - j^2|] evaluated at j=0 = 0, and ∂^2_j W[j Γ_1] at j=0
-    # equals c * d^2/dj^2 [8 log|1 - j^2|] at j=0 = -16. Verify symbolically.
+    # Scalar-baseline diagnostics for Γ_1. These derivatives belong to the
+    # mI baseline log-determinant only; no real-D response is asserted.
 
     # Use real m = 1 for definiteness.
     W_sym = 8 * sympy.log(sympy.Abs(m_sym**2 - j_sym**2)) - 16 * sympy.log(sympy.Abs(m_sym))
@@ -444,44 +443,44 @@ def main() -> int:
     d2W_at0 = sympy.simplify(d2W_dj2.subs({m_sym: 1, j_sym: 0}))
 
     check(
-        "∂_j W[j Γ_1] at (m, j) = (1, 0) = 0 (parity)",
+        "∂_j W_scalar[j Γ_1] at (m, j) = (1, 0) = 0 (parity diagnostic)",
         sympy.simplify(dW_at0) == 0,
         detail=f"∂_j W = {dW_at0}",
     )
     check(
-        "∂²_j W[j Γ_1] at (m, j) = (1, 0) = -16 (curvature consistent with (DG))",
+        "∂²_j W_scalar[j Γ_1] at (m, j) = (1, 0) = -16 (scalar diagnostic)",
         sympy.simplify(d2W_at0 - (-16)) == 0,
         detail=f"∂²_j W = {d2W_at0}",
     )
 
-    # And ∂^2_j W[j Y] at j=0 = 0 because W[jY] ≡ 0. This is a
-    # diagnostic nilpotency check, not an application of X1 to Y.
+    # And ∂^2_j W_scalar[j Y] at j=0 = 0 because W_scalar[jY] is
+    # identically zero. This is a scalar-baseline nilpotency check.
     check(
-        "∂²_j W[j Y] at j = 0 = 0 (nilpotent diagnostic; not an X1 source-domain claim)",
+        "∂²_j W_scalar[j Y] at j = 0 = 0 (nilpotent scalar diagnostic)",
         len(nonzero_coeffs_above_zero) == 0,
-        detail="follows from W[jY] ≡ 0 identically in j",
+        detail="follows from W_scalar[jY] ≡ 0 identically in j",
     )
 
     # =========================================================================
     section("Summary")
     # =========================================================================
     print("  Verified at exact sympy precision on the canonical C^16 representation:")
-    print("    (X3.N) Y^2 = 0 (chiral nilpotency)")
-    print("    (X3.H) Y + Y^† = Γ_1 (Hermitian completion via anticommutation)")
-    print("    (X3.T1) Tr(Γ_1^† Γ_1) = 16")
-    print("    (X3.T2) Tr(Y^† Y) = 8 (= Tr P_L)")
+    print("    (F.N) Y^2 = 0 (chiral nilpotency)")
+    print("    (F.H) Y + Y^† = Γ_1 (Hermitian completion via anticommutation)")
+    print("    (F.T1) Tr(Γ_1^† Γ_1) = 16")
+    print("    (F.T2) Tr(Y^† Y) = 8 (= Tr P_L)")
     print("    (DZ) det(m I + j Y) = m^{16} identically in j (Y nilpotent)")
     print("    (DG) det(m I + j Γ_1) = (m^2 - j^2)^8 (Hermitian involution)")
-    print("    (WG) W[j Γ_1] = 8 log|1 - j^2/m^2| at exact rationals")
-    print("    (WZ) W[j Y] = 0 at exact rationals")
+    print("    (WG) scalar-baseline W_scalar[j Γ_1] = 8 log|1 - j^2/m^2| at exact rationals")
+    print("    (WZ) W_scalar[j Y] = 0 at exact rationals")
     print("    (R)  sqrt(Tr Y^† Y / Tr Γ_1^† Γ_1) = 1/sqrt(2)")
     print("    (R1) active-space comparator = 1 is comparator-only;")
-    print("         Γ_1, not Y or P_L, is the real-symmetric source direction")
+    print("         Γ_1, not Y or P_L, is the Hermitian-completion denominator")
     print("    (R2) pseudoscalar companion is Hermitian and trace-orthogonal;")
     print("         trace-orthogonal to Γ_1 and same magnitude")
     print("    Counterfactual: candidate Γ̃_1 commuting with γ_5 forces Y_tilde = 0")
-    print("                     and (X3.H) breaks — anticommutation is load-bearing")
-    print("    Source diagnostics: ∂²_j W[j Γ_1]|_0 = -16, ∂²_j W[j Y]|_0 = 0")
+    print("                     and (F.H) breaks — anticommutation is load-bearing")
+    print("    Scalar diagnostics: ∂²_j W_scalar[j Γ_1]|_0 = -16, ∂²_j W_scalar[j Y]|_0 = 0")
 
     print()
     print("=" * 88)

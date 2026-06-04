@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 620 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1266 |
+| unaudited | 1267 |
 | meta | 241 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 65 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 946 |
-| `audited_conditional` | 65 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1507 |
+| `unaudited` | 1508 |
 
 | claim_type | count |
 |---|---:|
@@ -1136,7 +1136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_propagating_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `su3_wigner_l3_treewidth_infeasible_2026-05-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -14383,19 +14382,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The runner performs 5000 Haar SU(3) samples on the L_s=3 PBC cube and finds all nontrivial integrand means within about 1.20 standard errors, with the induced P_cube(L=3 PBC, MC)=0.1076 treated as noise-dominated rather than a derived physical value.  _(class `C`)_
 - **chain closes:** True — The supplied runner source genuinely samples Haar-projected SU(3) links, builds the stated L_s=3 Wilson plaquettes, evaluates the listed SU(3) characters, accumulates the MC means/errors, and computes the reported Perron value. The cached stdout matches the note's finite measurement claims, while the broader 1e-100/1e200 interpretation is explicitly marked non-load-bearing.
 - **rationale:** For the narrowed load-bearing claim, the chain closes as a bounded finite computation: the code does not merely print constants, and the cached run reports the advertised 81-plaquette geometry, seven character-normalization checks, nonsignificant nontrivial MC means, and P_cube=0.1075862340. The cited authorities are retained-grade, and the claim does not rely on them for an unclosed bridge promotion. The hard-coded bridge target and epsilon values are used only for comparator context, not to derive the audited finite Haar-MC negative result. The quantitative sample-complexity story remains non-binding and is not part of this clean verdict.
-- **auditor confidence:** high
-
-### `su3_wigner_l3_treewidth_infeasible_2026-05-04`
-
-- **Note:** [`SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md`](../../docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the finite L_s=3 PBC link-adjacency graph construction, its 81-node/324-edge/8-regular counts, and the two implemented min-degree/min-fill heuristic upper bounds; this does not audit a global treewidth lower bound or all possible contraction optimizers.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260531-141227-48e02440-su3_wigner_l3_treewidth_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The runner builds the L_s=3 PBC cube link adjacency graph and both min-degree and min-fill eliminations return max clique size 30, i.e. treewidth upper bound 29, giving a naive 8^30 intermediate far above the 4 GB budget.  _(class `C`)_
-- **chain closes:** False — The runner-supported heuristic treewidth diagnostic itself closes from the supplied source and cache. The source note as written does not pass the strict quantitative inventory because the displayed truncation threshold `(4 × 10^9 / 16)^(1/30) ≈ 1.8` should be about 1.91, with associated GB/GiB labels needing consistency.
-- **rationale:** The runner source genuinely constructs the L_s=3 geometry and link adjacency graph, then computes min-degree and min-fill eliminations rather than merely printing the contested value; an independent recomputation matches 81 nodes, 324 edges, degree 8, and max clique size 30 for both heuristics. The cited authorities in the packet are retained_bounded, and the negative rhetoric is mostly scoped to the two tested heuristics rather than an absolute no-go. However, the binding formula-inventory pass blocks audited_clean because the source note's displayed truncation-dimension arithmetic is numerically off as written, even though the qualitative integer conclusion remains unchanged.
 - **auditor confidence:** high
 
 ### `su3_wilson_closed_form_fanout_theorem_note_2026-05-04`

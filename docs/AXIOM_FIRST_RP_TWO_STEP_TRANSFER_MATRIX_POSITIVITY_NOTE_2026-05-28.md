@@ -26,8 +26,10 @@ canonical staggered phases `eta_0 = 1` and `eta_1(t) = (-1)^t`:
 
 - **(P1) The single-step transfer operator is NOT positive.** The action-derived
   single-step classical transfer matrices `T_even`, `T_odd` have genuinely
-  complex spectra for spatial momentum `p != 0`. A single-step transfer
-  operator with complex single-particle spectrum is not a positive operator.
+  complex spectra for spatial momenta with `sin(p) != 0`; at the real-spectrum
+  exceptional modes `sin(p)=0` they have one negative eigenvalue. A single-step
+  transfer operator with complex spectrum, or with a negative real eigenvalue,
+  is not a positive operator.
   This independently reproduces, on the transfer-matrix side, the single-step
   spin-basis Lagrangian no-go of the reflection-positivity row (Gram min
   eigenvalue `-0.80`).
@@ -47,16 +49,22 @@ treats the free case explicitly and decisively. The fixed-`SU(3)` gauge
 extension is the separate retained_bounded note named above; it is not
 re-derived here.
 
-Numbers (primary runner, `PASS=5 FAIL=0` at `m = 0.5`): 2-step decaying
+Numbers (primary runner, `PASS=6 FAIL=0` at `m = 0.5`): 2-step decaying
 eigenvalue matches `e^{-2 E(p)}` over the Brillouin zone to max residual
-`3.4e-16` (C1, faithfulness); single-step `max |Im eig(T_even/T_odd)| = 1.62`
-(C2, non-positive); `T_hat^2` positive Hermitian with `min eig > 0` and exact
+`3.4e-16` (C1, faithfulness); single-step spectra over `sin(p) != 0` have
+`min |Im eig(T_even/T_odd)| = 0.562` and the `sin(p)=0` modes have eigenvalues
+`{-1.618, +0.618}` at `m=0.5` (C2, non-positive); `T_hat^2` positive Hermitian
+with `min eig > 0` and exact
 `B^dag B` reconstruction `||T_hat^2 - B^dag B|| ~ 6e-17` for
 `L_s in {2, 3, 4, 6}` (C3); operator-picture 2-step Osterwalder-Schrader Gram
 Hermitian and PSD (`min eig = 0`) where the single-step naive Lagrangian Gram
 was `-0.80` (C4, cross-check); and the second-quantization functor verified
 in-repo from its defining creation-operator intertwiner, with
-`Gamma(t1^(2)) = exp(-2 a_tau H_hat)` to `~1e-16` (C5, functor check). Faithfulness and 2-step positivity persist over
+`Gamma(t1^(2)) = exp(-2 a_tau H_hat)` to `~1e-16` (C5, functor check). The
+runner also verifies the finite spectral projectors of the action-derived
+`T_odd T_even`, selects the forward contraction channel `0<e^{-2E(p)}<=1`,
+and checks its exterior/Gamma image is positive `=B^dag B` (C6, decaying
+bridge). Faithfulness and 2-step positivity persist over
 the mass range `m in {0.05, 0.1, 0.5, 1.0, 2.0, 5.0}` (max dispersion residual
 `4.1e-16`; `min eig(T_hat^2) > 0` throughout).
 
@@ -100,12 +108,16 @@ single-step classical transfer matrix on the amplitude 2-vector
 
 ### Step 2 — single-step non-positivity (consistent with the no-go)
 
-For `p != 0`, `spec(T_even)` and `spec(T_odd)` are genuinely complex (off the
-positive real axis); the runner reports `max |Im eig(T_even/T_odd)| = 1.62` at
-`m = 0.5`. A single-step transfer operator with complex single-particle
-spectrum is not a positive operator. This independently reproduces the
-single-step no-go on the transfer-matrix side, and is the precise statement that
-the single-step (not the 2-step) object fails positivity.
+For `sin(p) != 0`, `spec(T_even)` and `spec(T_odd)` are genuinely complex (off
+the positive real axis); the runner reports `min |Im eig(T_even/T_odd)| =
+0.562` over the non-exceptional Brillouin-zone modes at `m = 0.5`. At the
+real-spectrum exceptional modes `sin(p)=0` (`p=0`, and also `p=π` on even
+lattices), the one-step matrix is real symmetric with eigenvalues
+`-m-sqrt(m^2+1)<0` and `-m+sqrt(m^2+1)>0`; at `m=0.5` this is
+`{-1.618, +0.618}`. Thus the exceptional one-step channel is still
+non-positive. This independently reproduces the single-step no-go on the
+transfer-matrix side, and is the precise statement that the single-step (not
+the 2-step) object fails positivity.
 
 ### Step 3 — dispersion anchor (faithfulness)
 
@@ -123,6 +135,43 @@ dispersion is the proof that the construction is faithful to the staggered
 action, not an artifact: the 2-step block is the physical object whose spectrum
 is the staggered energy.
 
+### Step 3b — decaying-channel bridge to the one-particle kernel
+
+The passage from the action-derived classical monodromy to the one-particle
+positive-time transfer kernel is finite dimensional. For `m>0`, the two
+eigenvalues of `T2cl(p)` are reciprocal positive real numbers
+
+```text
+    lambda_-(p) = e^{-2E(p)} in (0,1],
+    lambda_+(p) = e^{+2E(p)} >= 1.
+```
+
+Their spectral projectors are explicit:
+
+```text
+    P_-(p) = (T2cl(p) - lambda_+(p) I) / (lambda_-(p) - lambda_+(p)),
+    P_+(p) = (T2cl(p) - lambda_-(p) I) / (lambda_+(p) - lambda_-(p)),
+```
+
+with `P_-^2=P_-`, `P_+^2=P_+`, `P_-P_+=0`, `P_-+P_+=I`, and
+`T2cl P_- = lambda_- P_-`. The positive-time coherent-state transfer is the
+stable half-line channel on `P_-`: a forward solution with any `P_+`
+component grows like `lambda_+^N` over `N` two-step blocks, so finite-action /
+finite-norm positive-time propagation sets that coefficient to zero. In the
+diagonal one-particle basis the forward kernel is therefore
+`K_2(p)=lambda_-(p)`. The growing reciprocal channel is the inverse
+backward-time solution, not the forward transfer kernel.
+
+For a one-mode coherent-state kernel
+`<bar z'|T_2|z> = exp(bar z' lambda_- z)`, the induced operator on the
+finite exterior algebra is exactly `diag(1,lambda_-)`; across momenta this is
+the wedge product `Gamma(K_2)`. The runner verifies the projector identities,
+the residual `T2cl P_- - lambda_- P_-`, the projector split/orthogonality, the
+finite exterior construction, the creation-operator intertwiner, and the
+`B^dag B` factorization at machine precision (C6). Thus
+`t1^(2)(p)=e^{-2E(p)}` is the action-derived decaying spectral channel, not a
+separate convention.
+
 ### Step 4 — many-body 2-step positivity
 
 For a free (quadratic) fermion theory the many-body transfer operator is the
@@ -138,7 +187,7 @@ relation `Gamma(t1) = B^dag B` is **derived/checked in-repo, not asserted**.
 **The functor for a diagonal kernel (explicit, finite-dimensional).** The free
 theory factorizes across spatial momenta `p`, and the single-particle 2-step
 kernel `t1^(2)` is diagonal in those modes with eigenvalues
-`lambda_p = t1^(2)(p) = e^{-2 E(p)}` (real, positive, from Step 3). The defining
+`lambda_p = t1^(2)(p) = e^{-2 E(p)}` (real, positive, from Step 3b). The defining
 property of the second-quantization functor `Gamma` is that it carries a
 one-particle operator `K` (here diagonal, `K e_p = lambda_p e_p`) to the
 many-body operator `Gamma(K)` on the Fock space `H = tensor_p {|0>, |1>}` that
@@ -169,8 +218,8 @@ Jordan-Wigner number operators (C5, `||Gamma - exp(-2 a_tau H_hat)|| ~ 1e-15`).
 So the functor relation `Gamma(t1) = B^dag B` is verified in-repo from the
 functor's defining intertwiner, not imported as a theorem.
 
-The single-particle 2-step kernel is the action-derived decaying eigenvalue
-`t1^(2)(p) = e^{-2 E(p)}` from Step 3, real and positive, so on the Fock space
+The single-particle 2-step kernel is the action-derived decaying spectral
+channel `t1^(2)(p) = e^{-2 E(p)}` from Step 3b, real and positive, so on the Fock space
 `H = tensor_p {|0>, |1>}` (dimension `2^{L_s}`)
 
 ```text
@@ -213,12 +262,13 @@ The runner reports a PASS/FAIL scorecard; PASS overall requires (free case):
 | Check | Surface | Pass condition | Result |
 |---|---|---|---|
 | C1 dispersion anchor | 2-step decaying eigenvalue vs `e^{-2 E(p)}` over the BZ | max residual `< 1e-9` | `3.4e-16` |
-| C2 single-step non-PSD | `spec(T_even/T_odd)` for `p != 0` | `max |Im eig| > 1e-3` | `1.62` |
+| C2 single-step non-PSD | `spec(T_even/T_odd)` for `sin(p) != 0`; exceptional `sin(p)=0` modes | `min |Im eig| > 1e-3` off the exceptional set; negative eigenvalue at `sin(p)=0` | `0.562`; `{-1.618,+0.618}` |
 | C3 2-step positivity | `T_hat^2` positive Hermitian `= B^dag B`, `L_s in {2,3,4,6}` | `min eig > 0`, `||T_hat^2 - B^dag B|| < 1e-10` | `min eig > 0`, `~6e-17` |
 | C4 R2 OS Gram PSD | operator-picture 2-step OS Gram | Hermitian, `min eig >= -1e-10` | `min eig = 0`, PSD |
 | C5 functor identity | `Gamma(t1^(2))` from the defining intertwiner `= exp(-2 a_tau H_hat)`, `L_s in {2,3,4,6}` | intertwiner err `< 1e-12`, `||Gamma - exp(-2 a_tau H_hat)|| < 1e-10` | intertwiner `~1e-17`, `~1e-16` |
+| C6 decaying-channel bridge | spectral projector of action-derived `T_odd T_even` plus finite exterior/Gamma image | projector identities/residuals `<1e-10`; `0<lambda_-<=1<=lambda_+`; `Gamma=B^dag B` | projector residual `~3e-15`, `B^dag B` `~6e-17` |
 
-Overall: `PASS=5 FAIL=0`. The free 2-step blocked transfer matrix `T_hat^2` is
+Overall: `PASS=6 FAIL=0`. The free 2-step blocked transfer matrix `T_hat^2` is
 positive Hermitian; the single-step `T_hat` is non-positive; both are derived
 from the staggered action.
 
@@ -289,11 +339,12 @@ the faithfulness anchor.
 
 Source-surface in-repo derivation. The free staggered 2-step blocked transfer
 matrix `T_hat^2` is **derived from the staggered action** (Steps 1-4 plus the
-finite exterior-algebra bridge) and shown positive Hermitian
+finite decaying-projector/exterior-algebra bridge) and shown positive Hermitian
 (`T_hat^2 = B^dag B`, `H_hat = -log(T_hat^2)/(2 a_tau) >= 0`), anchored to the
 exact free staggered dispersion `sinh^2 E = m^2 + sin^2 p`, with the single-step
-transfer operator non-positive in the same construction. The three checks
-(transfer matrix, finite `Gamma(K)` bridge, OS Gram) agree (`PASS=5 FAIL=0`).
+transfer operator non-positive in the same construction. The transfer matrix,
+finite decaying-projector/`Gamma(K)` bridge, and OS Gram checks agree
+(`PASS=6 FAIL=0`).
 This replaces the prior citation-only treatment of the 2-step positivity in the
 reflection-positivity row's 2-step formulation. This note does not set or
 predict an audit outcome; it is not an author-applied audit promotion, and
@@ -352,8 +403,9 @@ verifies, with `numpy` linear algebra on finite carriers:
   Brillouin zone (max residual `< 1e-9`) — faithfulness to the free staggered
   dispersion;
 - **C2 single-step non-positivity** — `spec(T_even)`, `spec(T_odd)` are
-  genuinely complex for `p != 0` (`max |Im eig| > 1e-3`), so the single-step
-  `T_hat` is not a positive operator;
+  genuinely complex for `sin(p) != 0` (`min |Im eig| > 1e-3`), while the
+  exceptional `sin(p)=0` modes have a negative real eigenvalue, so the
+  single-step `T_hat` is not a positive operator;
 - **C3 two-step positivity** — the many-body `T_hat^2 = Gamma(t1^(2))` built
   from the action-derived single-particle kernel is positive Hermitian with the
   exact `B^dag B` reconstruction for `L_s in {2, 3, 4, 6}`;
@@ -367,6 +419,10 @@ verifies, with `numpy` linear algebra on finite carriers:
   `H_hat = sum_p E(p) a_p^dag a_p` (Jordan-Wigner number operators), for
   `L_s in {2, 3, 4, 6}` — the free-fermion functor relation `Gamma(t1) = B^dag B`
   verified in-repo from the functor's defining property, not asserted.
+- **C6 decaying-channel bridge** — the spectral projector of the action-derived
+  `T_odd T_even` selects the forward contraction eigenvalue `0<e^{-2E(p)}<=1`;
+  the runner verifies the projector identities, finite exterior/Gamma image,
+  creation-operator intertwiner, and `B^dag B` factorization.
 
 Reproduction:
 
@@ -374,4 +430,4 @@ Reproduction:
 python3 scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
 ```
 
-Expected scorecard: `PASS=5 FAIL=0`.
+Expected scorecard: `PASS=6 FAIL=0`.

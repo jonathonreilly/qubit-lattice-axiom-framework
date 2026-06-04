@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/strong_cp_theta_bar_structured_admission_2026_06_04.py
+runner_sha256: 2260355ca229bfbca07062d2f667497e99260a4ffd0d2927a63bb16be2123bb4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+[PASS] form-degree check: C(3,4)=0 and C(4,4)=1
+       bare four-form writing has no components on a three-dimensional slice
+[PASS] O_h pseudoscalar law: R R R epsilon = det(R) epsilon
+       verified on 48 signed-permutation matrices; full gauge-measure premise is not derived
+[PASS] K-real C_3 circulant determinant is real in the tested samples
+       max|Im det| = 1.54e-16
+[PASS] axial rotation shifts arg det by 2*n*alpha and breaks Hermiticity
+       shift=1.8600; expected=1.8600
+[PASS] AC_phi_lambda overlap: same conjugate-symmetric C_3 circulant has Im det = 0
+       max|Im det| over coupling circle = 3.56e-17
+[PASS] holomorphic gate is real: c != conj(b) gives nonzero Im det in this sample
+       Im det = -1.2320
+
+SCORECARD PASS=6 FAIL=0
+FINDING: the runner supports a structured open gate for theta_bar.
+It verifies finite form-degree, O_h pseudoscalar, and C_3 circulant facts;
+it does not retire the Strong-CP Tier-A admission, change registry counts,
+or establish a Strong-CP solution. No audit status.
+
+----- stderr -----
+

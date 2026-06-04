@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py
-runner_sha256: f1322a344c4286352fb51057fa909ecc971ef825a72baff9012dc8696245a776
+runner_sha256: 3ffe6155d9e2e43f28dbf4283f1604205b9060ea430cd7f83ffcd08417eb2995
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -36,6 +36,8 @@ D. Faithful-Lorentz on C^2 = Weyl (rep-uniqueness); only non-faithful alt = triv
 E. The dynamics lever FAILS to force faithful-over-scalar (H=iD is spin-blind)
 ========================================================================
 [PASS] NO nonzero 2x2 G anticommutes with all three Paulis (no on-site gamma^0) -- least-squares {G,sigma_i}=0 has only G=0 -> no on-site boost-SPIN part
+[PASS] single-component staggered D is real anti-Hermitian: D^dagger = -D -- direct finite-lattice construction
+[PASS] Hamiltonian convention H=iD is Hermitian (equivalently D=-iH) -- fixes the D/H sign convention used below
 [PASS] native H=iD (single-component, lattice factor) is SPIN-BLIND: [H (x) I_2, I (x) B_i] = 0 -- the dynamics generates only the spin-blind ORBITAL boost -> cannot select the faithful spinor rep
 
 ========================================================================
@@ -48,7 +50,7 @@ F. Grassmann-free + non-circular
 RESULT
 ========================================================================
 
-13/13 checks passed.
+15/15 checks passed.
 The emergent so(3,1) BOOSTS are carried on the single-site C^2 by the DERIVED Cl(3,0) bivector
 B_i=i sigma_i/2 (Grassmann-FREE): {J_i,B_i} close so(3,1) exactly (incl the non-compact [K,K]=-ieJ),
 anti-Hermiticity is forced by the Lorentzian sign, and faithful-Lorentz-on-C^2 = Weyl is unique. So

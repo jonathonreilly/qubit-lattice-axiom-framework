@@ -1,0 +1,25 @@
+loop_slug: koide-onsite-weyl-boost-repair-20260604
+branch: physics-loop/koide-onsite-weyl-boost-repair-20260604
+base: origin/main
+started_at: 2026-06-04
+target_claim_id: koide_onsite_weyl_boost_from_bivectors_note_2026-06-01
+actual_current_surface_status: bounded-support repair proposal
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: "repair D/H sign drift and remove non-load-bearing CPT packet from restricted source"
+files_touched:
+  - docs/KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01.md
+  - scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py
+  - logs/runner-cache/frontier_koide_onsite_weyl_boost_from_bivectors.txt
+open_imports:
+  - "Independent audit must decide whether this repaired packet can move from audited_conditional."
+checks:
+  - "PYTHONPATH=scripts python3 scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py"
+  - "if rg -n \"D\\s*=\\s*iH|D=iH|CPT_EXACT_REAL_ANTI|CPT|13/13\" docs/KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01.md scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py logs/runner-cache/frontier_koide_onsite_weyl_boost_from_bivectors.txt -S; then exit 1; else exit 0; fi"
+  - "python3 -m py_compile scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py"
+  - "git diff --check"
+pr_status: pending
+next_exact_action: "Commit, push, and open review PR."
+stop_condition: "PR opened and verified."

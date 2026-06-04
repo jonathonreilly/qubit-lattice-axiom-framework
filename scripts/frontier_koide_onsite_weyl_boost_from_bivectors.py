@@ -127,6 +127,10 @@ for ss in sites:
         sp=list(ss); sp[mu]=(ss[mu]+1)%L; sm=list(ss); sm[mu]=(ss[mu]-1)%L
         D[idx[ss],idx[tuple(sp)]] += eta(ss,mu)/2; D[idx[ss],idx[tuple(sm)]] -= eta(ss,mu)/2
 Hlat = 1j*D                                   # H=iD on the lattice factor (single-component, no spinor index)
+record("single-component staggered D is real anti-Hermitian: D^dagger = -D",
+       np.allclose(D.conj().T, -D), "direct finite-lattice construction")
+record("Hamiltonian convention H=iD is Hermitian (equivalently D=-iH)",
+       np.allclose(Hlat.conj().T, Hlat), "fixes the D/H sign convention used below")
 # [H (x) I_2 , I_n (x) B_i] = 0 trivially (different tensor factors) -> H=iD is spin-blind
 spinblind = all(np.allclose(np.kron(Hlat,I2)@np.kron(np.eye(n),b) - np.kron(np.eye(n),b)@np.kron(Hlat,I2), 0)
                 for b in B)

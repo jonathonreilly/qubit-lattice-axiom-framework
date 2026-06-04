@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_multifactor_cannot_cleanly_give_koide_multiplicity_exact.py
+runner_sha256: 6d97f77a20d20a6bfcb1ce6a7d80d774005969237fb0f77bfece6becde5c8feb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+PASS - (1) C3 isotype real-dim weights are singlet 1 and doublet 2
+PASS - (2) Frobenius split is 3a^2 on singlet and 6|b|^2 on doublet
+PASS - (3 n=1) flavor-blind tensor gives isotype dims (1,2), ratio 1:2
+PASS - (3 n=2) flavor-blind tensor gives isotype dims (2,4), ratio 1:2
+PASS - (3 n=3) flavor-blind tensor gives isotype dims (3,6), ratio 1:2
+PASS - (3 n=4) flavor-blind tensor gives isotype dims (4,8), ratio 1:2
+PASS - (3 n=5) flavor-blind tensor gives isotype dims (5,10), ratio 1:2
+PASS - (3 n=6) flavor-blind tensor gives isotype dims (6,12), ratio 1:2
+PASS - (4 copies=2) flavor-blind direct sum gives dims (2,4), ratio 1:2
+PASS - (4 copies=3) flavor-blind direct sum gives dims (3,6), ratio 1:2
+PASS - (5) KO/real-structure doubling modeled flavor-blindly gives dims (2,4), ratio 1:2
+PASS - (6) W=P_+ +(1/2)P_doublet is C3-equivariant but isotype-distinguishing
+PASS - (7) per-dimension balance gives r=1; per-block balance gives r=1/2
+
+13 PASS, 0 FAIL
+
+PRUNED (flavor-blind multi-factor route): C3-trivial extra factors multiply singlet and
+doublet isotypes equally, preserving the (1,2) real-dimension ratio (legacy F3, kappa=1,
+r=1). The (1,1) multiplicity weighting (legacy F1, kappa=2, r=1/2) requires the
+isotype-distinguishing operator W=P_+ +(1/2)P_doublet. That is a flavor-structured input
+unless a separate retained derivation supplies it. This is not a universal no-go against
+NCG or two-factor models; it prunes the flavor-blind route only.
+
+----- stderr -----
+

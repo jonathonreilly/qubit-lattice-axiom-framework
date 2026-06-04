@@ -17,8 +17,8 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| high | `unaudited` | 170 |
-| critical | `unaudited` | 164 |
+| high | `unaudited` | 169 |
+| critical | `unaudited` | 165 |
 | medium | `unaudited` | 98 |
 | high | `audited_numerical_match` | 4 |
 | critical | `open_gate` | 3 |
@@ -103,6 +103,7 @@ publication tables phrase it.
 | critical | `higgs_vacuum_explicit_systematic_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
 | critical | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `koide_berry_phase_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `koide_circulant_character_derivation_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `koide_cl3_selector_gap_note_2026-04-19` | `open_gate` | `audited_clean` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
@@ -299,7 +300,6 @@ publication tables phrase it.
 | high | `koide_aps_block_by_block_forcing_note_2026-04-21` | `audited_conditional` | `audited_conditional` | RESULTS_INDEX.md |
 | high | `koide_axiom_native_support_batch_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `koide_berry_bundle_obstruction_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| high | `koide_berry_phase_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `koide_brannen_callan_harvey_candidate_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `koide_brannen_geometry_dirac_support_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `koide_circulant_character_bridge_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

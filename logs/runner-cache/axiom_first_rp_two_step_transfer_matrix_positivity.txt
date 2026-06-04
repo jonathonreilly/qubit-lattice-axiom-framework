@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
-runner_sha256: 7e714d192a5359f15ba4528b7e81e9d720adbfbefc57b9581056fd8338c69b05
+runner_sha256: ab9b895f7b232af4ea3f2a933154108091ce9d61a94b11c8487cae27b543145c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -31,13 +31,16 @@ C1  DISPERSION ANCHOR (faithfulness): 2-step decaying eigenvalue == e^{-2E(p)}
     C1 = PASS
 
 ------------------------------------------------------------------------------
-C2  SINGLE-STEP NON-POSITIVITY: spec(T_even), spec(T_odd) genuinely complex
+C2  SINGLE-STEP NON-POSITIVITY: complex when sin(p)!=0; negative mode when sin(p)=0
     => single-step T_hat NOT a positive operator (consistent with the no-go)
 ------------------------------------------------------------------------------
     p= 0.393: eig(T_even) = [-1.5657-0.5622j, +0.5657-0.2031j]
     p= 0.785: eig(T_even) = [-1.4436-1.0818j, +0.4436-0.3324j]
     p= 1.178: eig(T_even) = [-1.3372-1.4756j, +0.3372-0.3721j]
-    max |Im eig(T_even/T_odd)| over p!=0 = 1.6248  (must exceed 1e-3)
+    sin(p)=0 mode p= 0.000: eig(T_even) = [-1.6180, +0.6180], Im err=0.0e+00 (negative eigenvalue => non-positive)
+    sin(p)=0 mode p= 3.142: eig(T_even) = [-1.6180, +0.6180], Im err=1.8e-16 (negative eigenvalue => non-positive)
+    min |Im eig(T_even/T_odd)| over sin(p)!=0 = 0.5622  (must exceed 1e-3)
+    max |Im eig(T_even/T_odd)| over sin(p)!=0 = 1.6248
     C2 = PASS
 
 ------------------------------------------------------------------------------
@@ -72,33 +75,44 @@ C5  SECOND-QUANTIZATION FUNCTOR (in-repo): Gamma(t1^(2)) from its defining
     C5 = PASS  (functor relation Gamma=B^dag B verified in-repo)
 
 ------------------------------------------------------------------------------
+C6  DECAYING-CHANNEL BRIDGE: spectral projector of action-derived T_odd T_even
+    selects the forward contraction kernel; finite exterior/Gamma image is positive = B^dag B
+------------------------------------------------------------------------------
+    L_s=2: lambda_dec in [3.819660e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 2.618034e+00], proj idem=5.6e-16, T2P-lambdaP=1.2e-15, split=3.0e-95, orth=5.5e-16, Gamma tensor err=0.0e+00, BdagB err=5.6e-17
+    L_s=3: lambda_dec in [1.715729e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 5.828427e+00], proj idem=6.1e-16, T2P-lambdaP=3.4e-15, split=0.0e+00, orth=6.1e-16, Gamma tensor err=0.0e+00, BdagB err=5.6e-17
+    L_s=4: lambda_dec in [1.458980e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 6.854102e+00], proj idem=5.6e-16, T2P-lambdaP=2.9e-15, split=3.0e-95, orth=5.5e-16, Gamma tensor err=3.5e-18, BdagB err=5.6e-17
+    L_s=6: lambda_dec in [1.715729e-01, 3.819660e-01], lambda_grow in [2.618034e+00, 5.828427e+00], proj idem=6.1e-16, T2P-lambdaP=3.4e-15, split=1.5e-33, orth=6.1e-16, Gamma tensor err=3.5e-18, BdagB err=5.6e-17
+    C6 = PASS  (decaying spectral channel derives the Fock kernel)
+
+------------------------------------------------------------------------------
 GAUGE CASE REDUCTION TARGET (NOT re-derived here)
 ------------------------------------------------------------------------------
-    intended SU(3)-gauged staggered 2-step RP closure target =
-      (fermion-sector 2-step transfer positivity -- THIS runner, C1-C4, NEW)
-    x (det(M_KS + m I) >= m^n > 0 config-by-config -- retained dep:
+    possible SU(3)-gauged staggered 2-step RP route would need
+      (fermion-sector 2-step transfer positivity -- THIS runner, C1-C6, NEW)
+    x (det(M_KS + m I) >= m^n > 0 config-by-config -- separate source row:
        STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)
-    x (gauge-half Cauchy-Schwarz norm-square -- retained_bounded dep:
+    x (gauge-half Cauchy-Schwarz norm-square -- separate source row:
        REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)
     Newly supplied in-repo: the free fermion-sector 2-step transfer positivity.
-    Interacting gauge closure is scoped to this reduction target.
+    Interacting gauge closure and U-integrated RP are not claimed by this runner.
 
 ==============================================================================
 SUMMARY
 ==============================================================================
   C1 dispersion anchor   : PASS  (max residual 3.38e-16)
-  C2 single-step non-PSD : PASS  (max |Im eig| 1.625)
+  C2 single-step non-PSD : PASS  (min |Im eig| for sin(p)!=0 0.562; sin(p)=0 negative mode YES)
   C3 2-step positivity   : PASS  (T_hat^2 positive Hermitian = B^dag B)
   C4 R2 OS Gram PSD      : PASS  (2-step OS Gram Hermitian PSD)
   C5 functor identity    : PASS  (Gamma=B^dag B verified in-repo)
+  C6 decaying bridge     : PASS  (spectral projector -> Fock kernel)
 
-PASS=5 FAIL=0
+PASS=6 FAIL=0
 
   PASS -- the free staggered 2-step blocked transfer matrix T_hat^2 is
   POSITIVE HERMITIAN (T_hat^2 = B^dag B, H_hat = -log(T_hat^2)/(2 a_tau) >= 0),
   derived from the staggered action and anchored to the exact free staggered
   dispersion sinh^2 E = m^2 + sin^2 p. The single-step T_hat is non-positive
-  (complex single-particle spectrum), consistent with the single-step no-go
+  (complex/negative one-step spectrum), consistent with the single-step no-go
   runner. The interacting gauge case is only recorded as the named
   reduction target; it is not re-derived by this free-case runner.
 

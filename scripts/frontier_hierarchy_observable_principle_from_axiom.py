@@ -8,12 +8,12 @@ Goal:
 
       Z[J] = det(D + J)
 
-  Given P1 (scalar additivity on independent subsystems) and P2 (continuous
-  phase-blind scalar-generator selection), |Z| is multiplicative, so the
-  additive scalar generator is fixed up to W = c log|Z| + const. With the
-  canonical c=1 generator normalization and zero-source baseline, local scalar
-  observables are therefore the source-response coefficients of log|Z|
-  (equivalently Re log Z).
+  Given Record/P1 finite scalar additivity on independent disjoint record
+  collections and P2 (continuous phase-blind scalar-generator selection), |Z|
+  is multiplicative, so the additive scalar generator is fixed up to
+  W(r) = c log r. With the canonical c=1 generator normalization and
+  zero-source baseline, local scalar observables are therefore the
+  source-response coefficients of log|Z| (equivalently Re log Z).
 
   On the minimal hierarchy block this reproduces the exact dimension-4
   effective-potential coefficient A(L_t), and the resulting temporal kernel is
@@ -30,6 +30,9 @@ import numpy as np
 from canonical_plaquette_surface import CANONICAL_ALPHA_LM, CANONICAL_PLAQUETTE, CANONICAL_U0
 
 np.set_printoptions(precision=10, linewidth=120, suppress=True)
+# Determinant products in the comparison checks can transiently under/overflow;
+# the explicit pass/fail tolerances below are the authoritative gates.
+np.seterr(over="ignore", under="ignore", divide="ignore", invalid="ignore")
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -382,13 +385,15 @@ def test_hierarchy_value_from_internal_observable_principle():
 
 
 def test_conditional_scope_shape():
-    """Part 6 -- conditional-scope verification (2026-05-25 P1+P2 narrowing).
+    """Part 6 -- conditional-scope verification (2026-06-04 Record repair).
 
-    Per the 2026-05-25 scope narrowing recorded in
+    Per the 2026-06-04 Record repair recorded in
     `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the load-bearing claim
-    of the parent note is conditional on the P1+P2 scalar-selection surface:
+    of the parent note is conditional on the Record/P1+P2 scalar-selection
+    surface:
 
-      P1: scalar additivity on independent subsystems
+      Record/P1: finite scalar additivity on independent disjoint record
+          collections
           (W[J_1 (+) J_2] = W[J_1] + W[J_2])
       P2: continuous phase-blind scalar-generator selection
           (the scalar bosonic generator is a continuous function of |Z| alone)
@@ -402,21 +407,22 @@ def test_conditional_scope_shape():
     Dirac operator*, that:
 
       - if the candidate generator W = log|det(D+J)| - log|det D| is adopted
-        under P1+P2, it is additive on direct sums, source-even, regular near
-        zero source, and implements the baseline convention W(0) = 0;
+        under Record/P1+P2, it is additive on direct sums, source-even,
+        regular near zero source, and implements the baseline convention
+        W(0) = 0;
 
-      - any candidate that violates P1 (e.g. raw |Z|) fails to be a unique
-        additive scalar generator, confirming P1 is a load-bearing selection
-        filter rather than a redundant assumption.
+      - any candidate that violates Record/P1 additivity (e.g. raw |Z|)
+        fails to be a unique additive scalar generator, confirming additivity
+        is a load-bearing filter rather than a redundant assumption.
 
-    This part does NOT attempt to derive P1 or P2 from retained primitives;
-    that is explicitly out of scope per the audit-named conditional scope.
-    It only verifies the conditional shape on the runner's block so
-    reviewers can independently check that the runner's PASS count matches
-    the conditional load-bearing statement of the parent note.
+    This part does NOT attempt to derive P2 from retained bridge theorems; that
+    is explicitly out of scope per the audit-named conditional scope. It only
+    verifies the conditional shape on the runner's block so reviewers can
+    independently check that the runner's PASS count matches the conditional
+    load-bearing statement of the parent note.
     """
     print("\n" + "=" * 78)
-    print("PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-05-25 P1+P2 NARROWING)")
+    print("PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-06-04 RECORD/P1+P2 REPAIR)")
     print("=" * 78)
 
     u0 = 0.9
@@ -472,7 +478,7 @@ def test_conditional_scope_shape():
         raw_violation = max(raw_violation, abs(z_tot - (z2 + z4)) / z_tot)
 
     check(
-        "P1 (additivity) holds for the candidate generator W = log|det(D+J)|",
+        "Record/P1 additivity holds for the candidate generator W = log|det(D+J)|",
         p1_max_err < 1e-12,
         f"max additivity error = {p1_max_err:.2e}",
     )
@@ -492,14 +498,14 @@ def test_conditional_scope_shape():
         f"max zero-source baseline error = {p4_baseline_err:.2e}",
     )
     check(
-        "P1 is non-vacuous: raw |Z| violates additivity (so P1 is a real filter)",
+        "Record/P1 is non-vacuous: raw |Z| violates additivity",
         raw_violation > 0.1,
         f"raw |Z| additivity violation = {raw_violation:.4f}",
     )
     print(
         "  Note: this part verifies the CONDITIONAL SHAPE only "
-        "(P1+P2 plus the canonical c=1 convention select the candidate W). It does NOT derive "
-        "P1 or P2 from retained-grade primitives; that path is explicitly out of "
+        "(Record/P1+P2 plus the canonical c=1 convention select the candidate W). It does NOT derive "
+        "P2 from retained bridge theorems; that path is explicitly out of "
         "scope per the audit-named conditional scope (see "
         "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md §'Audit-named "
         "conditional scope')."
@@ -528,8 +534,10 @@ def test_candidate_consistency_checks():
         zero-source subtraction enforces `W(0) = 0`, and additive shifts do
         not change source-derivative observables.
 
-    P1 and P2 remain admitted scalar-selection premises. This part does not
-    promote `CPT_EXACT_NOTE` or any cited upstream row; it only checks the
+    Record/P1 is supplied by the Record axiom only in the narrow finite
+    scalar-additivity sense; that premise support is not a bounded-status
+    source. P2 remains an admitted scalar-selection premise. This part does not
+    promote `CPT_EXACT_NOTE`, P2, or any cited upstream row; it only checks the
     candidate selected under the conditional surface.
     """
     print("\n" + "=" * 78)
@@ -704,11 +712,11 @@ def test_candidate_consistency_checks():
     )
 
     print(
-        "\n  Summary: the selected P1+P2 candidate passes source-evenness,\n"
+        "\n  Summary: the selected Record/P1+P2 candidate passes source-evenness,\n"
         "  finite-block regularity, and additive-baseline invariance checks.\n"
         "  The c=1 scale is a representative normalization, not a derived\n"
-        "  physical scale. These checks do not derive the P1+P2 scalar-selection\n"
-        "  surface or promote any cited upstream row."
+        "  physical scale. These checks do not derive the residual P2\n"
+        "  scalar-selection surface or promote any cited upstream row."
     )
 
 

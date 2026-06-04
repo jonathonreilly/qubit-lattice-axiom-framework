@@ -21190,7 +21190,7 @@
     },
     {
       "from": "observable_principle_from_axiom_note",
-      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+      "to": "minimal_axioms"
     },
     {
       "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
@@ -71961,12 +71961,12 @@
       "claim_type_author_hint_raw": "bounded_theorem (finite-algebra `log|det(D+J)|` generator on",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "admitted_input_registry_tier_a_note_2026-05-23"
+        "minimal_axioms"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "7dabc0f172f9f77c5ecf4439417205e1f05815786ca4b423cb14628df64bfaff",
+      "note_hash": "d9ff67409edf34d3aa046ba8fbffe2597e8f80881b717a95cdfca9267fa317c8",
       "path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"

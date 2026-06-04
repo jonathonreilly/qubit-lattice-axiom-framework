@@ -1,0 +1,113 @@
+===== runner cache v1 =====
+runner: scripts/cl3_chiral_body_diagonal_source.py
+runner_sha256: 69a47b83ddd079a4f18dd18a01321f015732181674a58d786764eaf548bb008d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+[PASS] Gamma_chi eigenvalues {+1,-1,-1}  :: eigs=[np.float64(-1.0), np.float64(-1.0), np.float64(1.0)]
+[PASS] Gamma_chi^2 = I
+[PASS] P S_mu P^T = 0 (single bit flip vanishes on hw=1)
+[PASS] P (SySz+SzSx+SxSy) P^T = J - I (symmetric double-shift)  :: DS=
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+[PASS] R^3 = I
+[PASS] Gamma_chi is circulant (commutes with R)
+[PASS] comm(R) ∩ anticomm(Gamma) = {0}  (circulant trap, rank=6 over sym basis)  :: constraint rank=6 of 6 -> nullspace dim=0
+[PASS] L4: u=(1,1,1) axis + ANY doublet-h  ->  {H,Gamma_chi}=0 (anticommutes)  :: the body-diagonal axis IS the singlet direction; h doublet
+[PASS] non-body-diagonal axis u=e1 + doublet h does NOT anticommute  :: ||{H,Gamma}||=1.6330
+[PASS] anticomm(Gamma) over sym(3) is exactly 2-dimensional (the doublet h)  :: nullspace dim=2
+[PASS] every anticommuting H sends singlet (1,1,1) entirely into the doublet plane  :: => singlet axis is FORCED to be (1,1,1); doublet vector h is the free 2-dof
+[PASS] native symmetric object [double-shift sum (J-I)] non-degenerate eigvec = body-diagonal (1,1,1)
+[PASS] native symmetric object [all-ones J] non-degenerate eigvec = body-diagonal (1,1,1)
+[PASS] identity I is fully degenerate (no axis singled out) — excluded from eigvec test
+[PASS] native symmetric object [double-shift sum (J-I)] doublet block is degenerate (no preferred h)  :: doublet block=
+[[-1. -0.]
+ [-0. -1.]]
+[PASS] native symmetric object [all-ones J] doublet block is degenerate (no preferred h)  :: doublet block=
+[[0. 0.]
+ [0. 0.]]
+[PASS] native symmetric object [identity I] doublet block is degenerate (no preferred h)  :: doublet block=
+[[1. 0.]
+ [0. 1.]]
+
+--- Section 4: body-diagonal sign vectors on the triplet ---
+  diagonal [1 1 1]: singlet_comp=1.7321, doublet_part=[-0. -0. -0.], |h|=0.0000
+  diagonal [ 1  1 -1]: singlet_comp=0.5774, doublet_part=[ 0.6667  0.6667 -1.3333], |h|=1.6330
+  diagonal [ 1 -1  1]: singlet_comp=0.5774, doublet_part=[ 0.6667 -1.3333  0.6667], |h|=1.6330
+  diagonal [-1  1  1]: singlet_comp=0.5774, doublet_part=[-1.3333  0.6667  0.6667], |h|=1.6330
+  -- anticommuting test for H built from each off-diagonal's doublet part --
+     d=[ 1  1 -1]: ||{H,Gamma}||=4.892e-16 (anticommutes=True)
+     d=[ 1 -1  1]: ||{H,Gamma}||=4.649e-16 (anticommutes=True)
+     d=[-1  1  1]: ||{H,Gamma}||=3.706e-16 (anticommutes=True)
+[PASS] each off-body-diagonal's doublet part h gives an anticommuting H  :: so a SINGLE chosen off-diagonal WOULD source the chiral op
+
+  -- C3 orbit structure of the 3 off-diagonals --
+[PASS] the 3 off-body-diagonals form a single C3 orbit (R permutes them transitively)  :: orbit=[(np.int64(1), np.int64(1), np.int64(-1)), (np.int64(-1), np.int64(1), np.int64(1)), (np.int64(1), np.int64(-1), np.int64(1))]
+[PASS] => no C3-symmetric cube structure selects ONE off-diagonal: picking h breaks C3 (an import)  :: the choice of which diagonal = the unsourced C3-breaking
+
+--- Section 5: GENUINE KS staggered double-shift on the triplet ---
+  order (0, 1, 2): commutes_with_R=True, ||{M,Gamma}||=0.0000
+     M_sym=
+[[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+  order (0, 2, 1): commutes_with_R=True, ||{M,Gamma}||=0.0000
+     M_sym=
+[[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+  order (1, 0, 2): commutes_with_R=True, ||{M,Gamma}||=0.0000
+     M_sym=
+[[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+  order (1, 2, 0): commutes_with_R=True, ||{M,Gamma}||=0.0000
+     M_sym=
+[[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+  order (2, 0, 1): commutes_with_R=True, ||{M,Gamma}||=0.0000
+     M_sym=
+[[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+  order (2, 1, 0): commutes_with_R=True, ||{M,Gamma}||=0.0000
+     M_sym=
+[[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+[PASS] staggered double-shift stays circulant on the triplet for every ordering  :: 0 of 6 orderings non-circulant
+[PASS] NO genuine KS staggered double-shift Hermitian operator anticommutes with Gamma_chi  :: staggering attaches diagonal +-1 phases to a SYMMETRIC (singlet-eigenvector) hop; the result keeps (1,1,1) as an eigenvector -> stays on the commuting/diagonal side of Gamma_chi, never the singlet<->doublet-mixing class L4 requires
+[PASS] genuine KS staggered double-shift = antisymmetric circulant (R^T - R) = (R^2 - R)  :: staggering maps (J-I) -> +-(R - R^T); both are circulant (commute with R)
+[PASS] (R - R^T) commutes with Gamma_chi (block-diagonal, Q-non-chiral side) — matches retained L4 §6.1 / koide_z3_equivariant_anticommuting_no_go  :: ||[R-R^T, Gamma]||=0.0000e+00
+[PASS] (R-R^T)/i fixes the (1,1,1) singlet (eigenvalue 0) — does not mix singlet/doublet  :: (R-R^T)/i @ (1,1,1) = [0.+0.j 0.+0.j 0.+0.j]
+
+--- Section 5b: distinguished-axis (emergent-arrow) anisotropy on triplet ---
+  distinguished axis 0: doublet_block diag=(1.500,1.167), ||{D,Gamma}||=4.714, induced h=[1.23 0.23 0.23]
+  distinguished axis 1: doublet_block diag=(1.500,1.167), ||{D,Gamma}||=4.714, induced h=[0.23 1.23 0.23]
+  distinguished axis 2: doublet_block diag=(1.000,1.667), ||{D,Gamma}||=4.714, induced h=[0.23 0.23 1.23]
+[PASS] a single distinguished spatial axis breaks C3->S2 and induces a doublet h  :: but it is DIAGONAL (wrong mixing class) AND which-axis is a C3-orbit choice (import)
+[PASS] distinguished-axis operator is the WRONG class (diagonal and not anticommuting)  :: {D,Gamma} norm=4.7140
+  diag(1,1,2): [D,Gamma] norm=1.3333, {D,Gamma} norm=4.7140
+[PASS] a real-diagonal anisotropy can NEVER anticommute with Gamma_chi (needs off-diagonal singlet<->doublet mixing)
+[PASS] J_cs = (C - C^2)/sqrt3 equals the normalized staggered double-shift operator  :: the genuine KS staggered hop on the triplet IS the native complex structure J_cs (up to sign)
+[PASS] J_cs is C3-equivariant ([J_cs, C]=0)
+[PASS] J_cs COMMUTES with Gamma_chi (block-count route stays on the C3-equivariant side)  :: ||[J_cs,Gamma]||=4.4240e-17
+[PASS] J_cs eigenvalues {0, +i, -i} (singlet real, doublet one complex line)  :: eigs=[ 0.+1.j  0.-1.j -0.+0.j]
+[PASS] CONCLUSION: chiral/anticommuting route (needs off-C3 import) is DISTINCT from the native C3-equivariant J_cs block-count route — the native object reaches Q=2/3 via a reality-structure MEASURE choice, not via an anticommuting operator
+[PASS] Reynolds-average over C3 of ANY symmetric seed -> isotropic doublet block (no h)  :: doublet block of C3-average=
+[[-0.908874 -0.      ]
+ [-0.       -0.908874]]
+[PASS] FORCED: the singlet axis (1,1,1) is native (cube body-diagonal = triplet singlet)
+[PASS] NOT FORCED: the doublet h is C3-orbit-valued; native C3-symmetry leaves it isotropic
+[PASS] POSIT FLAG: selecting a single off-diagonal / axis-ordering to fix h breaks C3 = an import
+
+========================================================================
+SCORECARD: PASS=37 FAIL=0
+========================================================================
+
+----- stderr -----
+

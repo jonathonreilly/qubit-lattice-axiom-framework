@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 265,
     "high": 300,
-    "leaf": 349,
+    "leaf": 350,
     "medium": 319
   },
   "cycle_break_target_count": 1,
@@ -27282,6 +27282,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/FLAVOR_CHIRALITY_GATE_NARROWS_TO_ONE_SPIN_STATISTICS_IMPORT_2026-05-31.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "flavor_retention_law_is_a2plus_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37360,6 +37382,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 34,
-  "total_pending": 1233
+  "ready_count": 35,
+  "total_pending": 1234
 }

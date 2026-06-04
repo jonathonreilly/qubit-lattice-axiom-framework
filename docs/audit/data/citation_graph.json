@@ -57076,10 +57076,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a4863963ad7205e1f6d98e126c3742ae96d48a332ee2602e1e7290cf20310877",
+      "note_hash": "d5fbb74961381c17883291107591821c9b18e815fc36d86b36bf5b00e63e46fe",
       "path": "docs/FLAVOR_CHIRALITY_GATE_NARROWS_TO_ONE_SPIN_STATISTICS_IMPORT_2026-05-31.md",
       "runner_path": "scripts/flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31.py",
-      "title": "Flavor \u2014 the chirality gate narrows to ONE import: the fermionic matter FRAME (spin-statistics) on the Z\u00b3 qubit lattice; everything else (P2, hw=1 locus, count 3, Q=2/3 chiral structure) follows"
+      "title": "Flavor Chirality Gate: Finite Algebra Scope Repair"
     },
     "flavor_detr_default_full_exercise_note_2026-05-30": {
       "claim_id": "flavor_detr_default_full_exercise_note_2026-05-30",

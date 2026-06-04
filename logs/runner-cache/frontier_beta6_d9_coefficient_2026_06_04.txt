@@ -1,0 +1,173 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_d9_coefficient_2026_06_04.py
+runner_sha256: 52418e78afb23e1a5afe5bfef0534df4404deda3097677bf6c10eaa784e517f4
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 162.95
+status: ok
+----- stdout -----
+[mode] BOUNDED primary verifier (~2-3 min; cited d5..d8 anchors + closed form; pass deep for full re-derivation); maxorder=9
+==============================================================================
+EXACT ORDER-beta^6 (+beta^7) CONNECTED PLAQUETTE COEFFICIENT
+==============================================================================
+
+V0. exact SU(3) single-link Haar integrator
+  [PASS] int U Ubar = (1/3) delta_ik delta_jl
+  [PASS] int U U U = (1/6) eps_ijk eps_lmn
+  [PASS] singlet dimensions N0(p,q) match reference table
+         checked [(0, 3), (1, 1), (1, 4), (2, 0), (2, 1), (2, 2), (3, 0), (3, 1), (3, 3), (4, 0), (4, 1)]
+
+V1. exact free-Haar plaquette moments
+  [PASS] <X_p0> = 0
+  [PASS] <X_p0^2> = 1/18
+  [PASS] <X_p0^3> = 1/108
+
+Enumerating connected leaf-free GF(3)-closable supports (capped at size 6) ...
+  GF(3)-closable contributing supports by size: {5: 4}
+  (leaf-free supports by size, diagnostic):     {4: 28, 5: 452, 6: 5966}   (20.4s)
+
+V2. order-beta^5 coefficient (cited anchor)
+  [PASS] per-shell connected cumulant = 2*(1/6)^6*3^(V-E) = 1/18^5 (note Thm 4)
+         engine kappa = 1/1889568, closed form 2*(1/6)^6*3^-4 = 1/1889568
+  [PASS] d_5 = 1/472392 = 4/18^5 (four cube shells)
+         d_5 = 1/472392, contributing supports = 4 (each 1/1889568 = 1/18^5)
+
+V3. order-beta^6 distinct-support structure
+  [PASS] zero size-6 distinct supports are GF(3)-closable (=> d_6 from the four cube shells via order-6 multiplicity only)
+         GF(3)-closable size-6 supports = 0 (of 5966 leaf-free)
+
+V4. order-beta^6 coefficient (NEW exact result)
+  [PASS] d_6 = 7/5668704 (exact)
+         d_6 = 7/5668704 = 1.234850e-06; per shell 7/22674816 = 7/(12*18^5), 4 shells => 7/5668704
+  [PASS] per-shell ratio d_6/d_5 = 7/12 (clean rational)
+         d_6/d_5 = 7/12
+
+V4b. two-engine agreement: optimized Fraction engine vs sympy engine
+  [PASS] Fraction engine reproduces sympy d_5 = 1/472392 EXACTLY (two-engine at order 5; SU(3) link-integral formulas validated)
+         Fraction d_5 = 1/472392
+
+V5. order-beta^7 coefficient (NEW exact result, optimized engine)
+  GF(3) cycle-space (dist<=2 patch): dim=28, elementary cubes=28, cubes span cycle space=True, cubes through p0=4
+  weights of 2-cycles through p0 (<=2 cube combos): {6: 8, 10: 80, 11: 92, 12: 224}
+  [PASS] no GF(3)-closable distinct support of size 6 or 7 exists (cube boundaries span the cycle space; min cycle weight through p0 = 6)
+         min 2-cycle weight through p0 = 6; => only the four cube shells contribute through order 7
+  d_7 = cited exact 5/17006112 (re-derived first-principles under 'deep'; independently reproduced at zero free params by the cube-sector closed form, BOUNDED SUBCHECK 1)
+  [PASS] d_7 exact value = 5/17006112
+         d_7 = 5/17006112; d_7/d_6 = 5/21 = 0.238095 (per-shell d_7 = 5/68024448)
+
+V5b. tadpole / geometric ansatz verdict (independent d_7 vs prediction)
+  d_6/d_5 = 7/12 ~ 0.583333   (the ansatz's assumed ratio)
+  d_7/d_6 = 5/21 ~ 0.238095   (the ACTUAL next ratio)
+  d_7^pred = (7/12)*d_6 = 49/68024448 ~ 7.203293e-07
+  d_7^exact            = 5/17006112 ~ 2.940119e-07
+  relative miss = 0.5918 (harness support window = 0.05)
+  [PASS] bounded verdict: tadpole/geometric ansatz falsified at order 7 (exact d_7 != (7/12)*d_6; per-order ratio is NOT constant)
+         d_7/d_6 = 5/21 != d_6/d_5 = 7/12; the geometric prediction misses the exact d_7 by 59.2% (>> 5%): this rejects the single-ratio geometric continuation pattern
+
+V7. order-beta^8 coefficient (NEW exact result, shape-collapse engine)
+  [PASS] no GF(3)-closable distinct support of size 7, 8 or 9 exists (2-cycle weights through p0 = {6,10,11,12}; 7,8,9 empty) => d_8 is purely the four cube shells' order-8 multiplicity
+         2-cycle weights through p0 = {6: 8, 10: 80, 11: 92, 12: 224}; weights 7,8,9 empty = True
+  d_8 = cited exact 5/272097792 (re-derived first-principles + two-engine cross-checked under 'deep'; reproduced at zero free params by the cube-sector closed form, BOUNDED SUBCHECK 1)
+  [PASS] d_8 exact value = 5/272097792 (POSITIVE)
+         d_8 = 5/272097792 = 1.83757463e-08; per-shell d_8 = 5/1088391168 = 5/1088391168; d_8/d_7 = 1/16 = 0.062500
+
+V7b. single-complex-pair ansatz verdict (independent d_8 vs prediction)
+  [0/2] bracket discriminant 4 c2 - 3 c1^2 = -67/144 < 0 => dominant pair is COMPLEX-conjugate
+  single-pair predicted d_8 = -7/90699264 ~ -7.717813e-08 (SIGN: NEGATIVE -- a sign change)
+  d_8^exact                = 5/272097792 ~ 1.837575e-08 (SIGN: POSITIVE)
+  [PASS] bounded verdict: single-complex-pair ansatz FALSIFIED at order 8 (predicts a sign change to negative; exact d_8 is positive)
+         d_8^pred < 0 (sign change) but d_8^exact = 5/272097792 > 0; the series is NOT controlled by a single dominant complex-conjugate pair. Bracket ratios 7/12, 5/21, 1/16 decrease super-geometrically (c3 = 5/576)
+
+V7c. d-log-Pade ACTIVATION (d_5..d_8 = 4 contiguous coeffs)
+  H = (log h)' coefficients: H0 = 7/12 (=7/12), H1 = -1/16 (=-1/16), H2 = -1/54 (=-1/54, NEW from d_8)
+  [PASS] d_8 supplies the 4th contiguous coefficient: H-series now has 3 terms (H0=7/12, H1=-1/16, H2=-1/54), the rank floor that ACTIVATES the [1/1] d-log-Pade predictive test (predicting d_9)
+         the analytic-class beta^8 activation minimum is now met (d_5..d_8 known)
+  NOTE: the [1/1] d-log-Pade from d_5..d_8 returns a spurious REAL pole (beta_c ~ 3.375) and a non-physical Delta(6) ~ 1.19 (=> <P>(6) ~ 1.62, far from the 0.594 comparator). The activation coefficient d_8 therefore CONTRADICTS the [1/1]'s single-pole premise; the [1/1] is too low-order to localize the physical complex pair. This ACTIVATES but does NOT close beta=6 (0.594 is a Monte-Carlo comparator, never a derivation input).
+
+V8. order-beta^9 coefficient (NEW): cube part + new non-cube supports
+
+  === BOUNDED SUBCHECK (1): cube closed-form algebra + d_5..d_8 regression ===
+  V8a. cube-shell part via the cube-sector closed form 72 K''(K')^5 ...
+  [PASS] cube-sector closed form 72 K''(K')^5 reproduces the direct-engine d_5, d_6, d_7, d_8 EXACTLY (validates the closed form before order 9)
+         d_5: 1/472392; d_6: 7/5668704; d_7: 5/17006112; d_8: 5/272097792
+  [PASS] cube-shell part of d_9 = 72 K''(K')^5 [b^9] = -235/29386561536 (NEGATIVE)
+         cube-part d_9 = -235/29386561536 = -7.996853e-09; d_n(cube)/kappa_5 = [4, 7/3, 5/9, 5/144, -235/15552]
+  V8b. [skipped -- pass 'deep'] direct order-9 cube-shape cross-check (~4 min); the cube closed form is validated vs d_5..d_8 in V8a (BOUNDED SUBCHECK 1)
+
+  === BOUNDED SUBCHECK (2): radius-2/radius-3 distinct-support count = 60  [running PASS=21 FAIL=0] ===
+  V8c. order-9 NEW distinct supports (weight-10 2-cycles), streamed ...
+  [PASS] the order-9 new-support set is COMPLETE: the weight-10 2-cycle supports STABILIZE between patch radius 2 and radius 3 (radius-1 LOCAL is insufficient -- some new supports reach coordinate-extent 2)
+         radius2 -> 60 supports (1280 cubes, 36096 pair-combos streamed); radius3 -> 60; sets equal = True
+  [PASS] independent GF(3) cube-combination enumeration reproduces the SAME 60 new supports (cross-validates the two-cubes-share-a-face characterization)
+         combo method -> 60 supports; identical to pair method = True
+       computing the 60 new-support 10-point cumulants (Fraction engine) ...
+  [PASS] each of the 60 new supports contributes the IDENTICAL exact cumulant 1/198359290368 (they are one lattice-symmetry orbit of two-cube configurations); summed new-support part = 60/198359290368 = 5/16529940864
+         new-support part = 5/16529940864 = 3.024814e-10; distinct per-support values = {Fraction(1, 198359290368): 60} (67.6s)
+
+  === BOUNDED SUBCHECK (3): one exact two-engine new-support cumulant  [running PASS=24 FAIL=0] ===
+  V8d. two-engine cross-check on the cheapest new support (10-point cumulant) ...
+  [PASS] two-engine agreement at order 9: sympy joint_cumulant reproduces the optimized Fraction joint_cumulant on a new-support 10-plaquette word (= 1/198359290368)
+         Fraction = 1/198359290368 (0.2s), sympy = 1/198359290368 (28.7s)
+
+  === BOUNDED SUBCHECK (4): final d_9 assembly  [running PASS=25 FAIL=0] ===
+  [PASS] d_9 = cube part + new-support part = -235/29386561536 + 5/16529940864 = -2035/264479053824 (NEGATIVE: a SIGN CHANGE vs d_5..d_8 > 0)
+         d_9 = -2035/264479053824 = -7.69437114e-09; d_9/d_8 = -407/972 = -0.418724 (cube -7.9969e-09 + new 3.0248e-10)
+
+V8f. resummation re-test with the exact d_9 (further constraint, NOT a closure)
+  per-shell bracket coeffs (Delta = 4/18^5 * b^5 [1+c1 b+c2 b^2+...]): c1=7/12, c2=5/36, c3=5/576, c4=-2035/559872
+  [PASS] tadpole/geometric ansatz FALSIFIED at order 9 (and gets the SIGN wrong): the single-pole ratio predicts d_9 = (d_8/d_7) d_8 > 0, exact d_9 < 0
+         tadpole d_9^pred = 5/4353564672 = 1.1485e-09 (POSITIVE), exact d_9 = -7.6944e-09 (NEGATIVE)
+  [1/1] d-log-Pade (activated by d_5..d_8) predicts d_9 = -1.0534861e-8 (SIGN -); exact d_9 = -7.6943711e-9 (SIGN -); rel miss = 0.3692
+  [1/1] nearest singularity |beta_c| = 3.375, arg = 0.0 (spurious REAL pole)
+  [PASS] the activated [1/1] d-log-Pade now predicts the CORRECT (negative) SIGN of d_9 but the WRONG magnitude (off by ~37%), and still rests on a spurious REAL pole (beta_c ~ 3.375): d_9 sharpens but does NOT close beta=6
+         [1/1] predicted d_9 sign = NEGATIVE (matches), rel miss 0.3692 > 5% window => still FALSIFIED at [1/1]; real pole persists
+  forward truncated Delta(6): d_5..d_8 = 0.1872428 -> d_5..d_9 = 0.10970127 (the NEGATIVE d_9 b^9 term REDUCES the partial sum); truncated <P>(6) = 0.532233 (comparator 0.594, NOT a closure -- a divergent strong-coupling partial sum)
+  => d_9's sign change CONSTRAINS the singularity picture: a single dominant complex pair with CONSTANT amplitude is already excluded (V7b); the d_9 sign flip is consistent with a multi-pair / amplitude-varying (entire-function-like) structure. d_9 does NOT close beta=6 (0.594 is a Monte-Carlo comparator, never a derivation input; infinite-hierarchy obstruction: no finite truncation closes <P>(6)).
+
+V6. SU(3) Haar Monte-Carlo validation of the exact integrator (CHECK, not input)
+  [PASS] MC <|TrU|^2> = 1 (fundamental character orthonormality)
+         MC=1.0004
+  [PASS] MC <(TrU)^3> = 1 (baryon singlet, epsilon sector)
+         MC=(0.9972938417009111+0.0008771456016019224j)
+  [PASS] MC <|TrU|^4> = 2 (two singlets in 3^2 x 3bar^2)
+         MC=1.9864
+  [PASS] exact integrator: <X_p0^2>*36 = 2 (= <|TrU|^2> + <(TrU)^2>conj-cross)
+         36*<X_p0^2> = 2
+  [PASS] optimized Fraction integrator agrees with sympy on <X_p0^2>, <X_p0^3>
+         Fraction <X_p0^2> = 1/18, <X_p0^3> = 1/108
+
+==============================================================================
+EXACT CONNECTED COEFFICIENTS OF Delta(beta) = P_full - P_1plaq:
+   d_5 = 1/472392 = 2.11688598e-06
+   d_6 = 7/5668704 = 1.23485015e-06
+   d_7 = 5/17006112 = 2.94011941e-07
+   d_8 = 5/272097792 = 1.83757463e-08
+   d_9 = -2035/264479053824 = -7.69437114e-09
+   per-order ratios: d_6/d_5 = 7/12, d_7/d_6 = 5/21, d_8/d_7 = 1/16, d_9/d_8 = -407/972  (NOT constant => no single geometric tail)
+==============================================================================
+SCORECARD: PASS=33 FAIL=0   (162.1s)
+==============================================================================
+This is an exact strong-coupling series coefficient (bounded result).
+It does NOT close beta=6. The exact d_7 falsifies the single-ratio
+tadpole/geometric ansatz (d_7/d_6 = 5/21 != d_6/d_5 = 7/12); drop
+{6:7/5668704, 7:5/17006112} into the harness
+scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py for the
+SUPPORT/FALSIFY scorecard line.
+The exact d_8 = 5/272097792 (POSITIVE, d_8/d_7 = 1/16) additionally
+falsifies the single-complex-pair ansatz (which predicts a sign
+change to negative) and ACTIVATES the [1/1] d-log-Pade (d_5..d_8);
+the [1/1] returns a spurious real pole + garbage Delta(6) => the
+activation coefficient contradicts its own single-pole premise.
+Still NOT a beta=6 closure (0.594 is a Monte-Carlo comparator).
+The exact d_9 = -2035/264479053824 (NEGATIVE, d_9/d_8 = -407/972) is
+the FIRST sign change in the connected series: cube-shell part
+-235/29386561536 (cube-sector closed form 72 K''(K')^5, validated vs
+the direct engine through d_8) PLUS the new weight-10 two-cube
+distinct-support part +5/16529940864 (60 supports, each 1/198359290368).
+The tadpole/geometric ansatz predicts d_9 > 0 (sign wrong) and the
+activated [1/1] d-log-Pade predicts the correct NEGATIVE sign but the
+wrong magnitude (~37% off) on a spurious real pole => d_9 sharpens the
+multi-pair / amplitude-varying picture but does NOT close beta=6.
+
+----- stderr -----
+

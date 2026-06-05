@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 165 |
+| **retained** | 166 |
 | **retained_no_go** | 175 |
 | **retained_bounded** | 629 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1350 |
+| unaudited | 1349 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 958 |
+| `audited_clean` | 959 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1634 |
+| `unaudited` | 1633 |
 
 | claim_type | count |
 |---|---:|
@@ -454,6 +454,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6482,6 +6483,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner computes rho_(p,q)(6) = c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) from the Schur-Weyl Bessel-determinant formula and inserts those computed values as the diagonal R_6^packet in exp(3J) D_6^loc R_6^packet exp(3J), replacing the prior witness.  _(class `C`)_
 - **chain closes:** True — For the narrowed finite packet, the runner source genuinely computes the coefficient table and then verifies the stated finite diagonal action, symmetry, positivity, and Perron-readout checks. The actual residual spatial-environment identification is not audited because the note explicitly excludes it from the claim scope.
 - **rationale:** Within the bounded scope, the load-bearing coefficient packet is computed in the runner rather than hard-coded or imported from the retired witness. The matrix checks then close over those computed coefficients and retained bounded upstream coefficient authority. The broader equality between the stripped residual source-sector operator and the compressed unmarked spatial Wilson environment remains open, but that equality is explicitly outside this narrowed claim.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For a fixed finite retained marked class sector, compressed boundary samples satisfy Z=Ec and determine the retained coefficients exactly for any full-rank N x N marked-holonomy evaluation matrix; fewer than N samples remain underdetermined.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-174439-c53949362f-gauge_vacuum_plaquette_retai`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Whenever the chosen marked holonomies are generic enough that E is invertible, the retained coefficient vector is recovered exactly: c = E^(-1) Z.  _(class `A`)_
+- **chain closes:** True — The retained Peter-Weyl evaluation law supplied by the cited retained-grade inputs gives the finite linear system with entries E_(i,lambda)=d_lambda chi_lambda(W_i). Once the stated full-rank condition holds, invertible-matrix algebra gives uniqueness and recovery, while m<N is non-injective by dimension.
+- **rationale:** The load-bearing step is a standard finite-dimensional algebraic consequence of the retained Peter-Weyl evaluation law. The runner verifies the cited support text and a concrete four-weight SU(3) witness for invertibility, recovery, and underdetermination; it does not import a tuned external comparator or hard-code the recovered coefficients as an asserted result. The note explicitly excludes full rim maps, explicit same-surface sample values, and infinite-sector data, so those open items do not block the scoped finite-sector theorem.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`

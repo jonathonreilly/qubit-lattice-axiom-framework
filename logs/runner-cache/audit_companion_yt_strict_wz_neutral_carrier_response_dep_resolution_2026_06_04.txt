@@ -1,0 +1,115 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yt_strict_wz_neutral_carrier_response_dep_resolution_2026_06_04.py
+runner_sha256: b6b7eb006329bd6d11be60574b1b209204dd932f549055b50ca665927c9e746a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.62
+status: ok
+----- stdout -----
+========================================================================
+Y_T Strict W/Z Neutral-Carrier Response Packet
+Dep-Resolution Hygiene Companion Runner (2026-06-04)
+========================================================================
+
+Repo root: /private/tmp/cl3-yt-strict-wz-neutral/wt
+Parent note: /private/tmp/cl3-yt-strict-wz-neutral/wt/docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md
+Parent runner: /private/tmp/cl3-yt-strict-wz-neutral/wt/scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py
+Dep note: /private/tmp/cl3-yt-strict-wz-neutral/wt/docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md
+Companion source note: docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing substantive content does
+      not load-bear on the *audit grade* of its dep
+      `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`
+      (which was downgraded from retained_bounded to unaudited).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no audit-status content asserted.
+
+========================================================================
+BLOCK 1: Re-execute parent runner on current head; expect PASS=47 FAIL=0
+========================================================================
+  PASS parent_runner_exit_zero :: returncode=0
+  PASS parent_runner_emits_expected_summary :: 'SUMMARY: PASS=47 FAIL=0' present in stdout: True
+  PASS parent_runner_zero_fails :: looking for ' FAIL=0' in stdout
+  PASS parent_runner_no_stderr_errors :: stderr length=0
+
+========================================================================
+BLOCK 2: Re-verify neutral-ray finite-Pauli/projector algebra directly
+========================================================================
+  PASS sympy_importable :: imported sympy
+  PASS P_plus_is_projector :: P_+^2 = P_+
+  PASS P_minus_is_projector :: P_-^2 = P_-
+  PASS P_plus_P_minus_orthogonal :: P_+ P_- = 0
+  PASS P_plus_plus_P_minus_completeness :: P_+ + P_- = I
+  PASS sigma_z_equals_P_plus_minus_P_minus :: sigma_z = P_+ - P_-
+  PASS sigma_z_equals_I_minus_2_P_minus :: sigma_z = I - 2 P_-
+  PASS P_minus_fixes_H0 :: P_- H_0 = H_0 on (0, v/sqrt(2))
+  PASS P_plus_kills_H0 :: P_+ H_0 = 0
+  PASS Q_annihilates_H0 :: Q H_0 = 0 (neutral)
+  PASS Q_acts_as_identity_on_upper :: upper-component is charged: Q (1,0)^T = (1,0)^T
+  PASS H_s_on_P_minus_ray :: P_- H(s) = H(s) for H(s) = (0, v(s)/sqrt(2))
+  PASS dH_ds_on_P_minus_ray :: P_- dH/ds = dH/ds
+  PASS dH_ds_is_Q_neutral :: Q dH/ds = 0
+
+========================================================================
+BLOCK 3: Parent runner does not read the weakened dep's ledger row
+========================================================================
+  PASS parent_runner_no_ledger_read_of_weakened_dep :: no ledger_row(yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25) call
+  PASS parent_runner_dep_claim_id_only_in_path_constants :: 0 occurrences of 'yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25' in parent runner (none in grade-read context)
+  PASS parent_runner_audit_token_retained_bounded_present_but_not_dep_gated :: 'retained_bounded' may appear but is not weakened-dep-gated
+
+========================================================================
+BLOCK 4: Parent note contains no claim of dep-grade dependency
+========================================================================
+  PASS parent_note_no_phrase_load_bears_on_the_dep_s_audit :: 'load-bears on the dep's audit' absent from parent note
+  PASS parent_note_no_phrase_depends_on_the_dep_s_audit_grade :: 'depends on the dep's audit grade' absent from parent note
+  PASS parent_note_no_phrase_requires_the_dep_to_be_retained :: 'requires the dep to be retained' absent from parent note
+  PASS parent_note_no_phrase_requires_retained_bounded :: 'requires retained_bounded' absent from parent note
+  PASS parent_note_no_phrase_requires_audited_clean :: 'requires audited_clean' absent from parent note
+  PASS parent_note_no_phrase_conditional_on_the_dep_s_audit :: 'conditional on the dep's audit' absent from parent note
+  PASS parent_note_no_phrase_conditional_on_the_dep_being :: 'conditional on the dep being' absent from parent note
+  PASS parent_note_load_bearing_step_present :: parent note still contains the 'Strict W/Z Response Rows' section
+  PASS parent_note_response_ratio_present :: parent note still contains the W/Z response ratio formula
+
+========================================================================
+BLOCK 5: Counterfactual re-execution without dep-grade consultation
+========================================================================
+  PASS counterfactual_runner_exit_zero :: returncode=0
+  PASS counterfactual_runner_summary_unchanged :: SUMMARY: PASS=47 FAIL=0 identical to Block 1 (substance-unchanged)
+  PASS counterfactual_runner_no_failures :: PASS count unchanged from Block 1
+
+========================================================================
+BLOCK 6: Strict W/Z response rows (algebraic self-check)
+========================================================================
+  PASS dMW_ds_matches_expected :: dM_W/ds = (g_2 / 2) v'(s)
+  PASS dMZ_ds_matches_expected :: dM_Z/ds = (sqrt(g_2^2 + g_Y^2) / 2) v'(s)
+  PASS wz_response_ratio_cancels_jacobian :: ratio = g_2 / sqrt(g_2^2 + g_Y^2) (Jacobian cancels)
+  PASS absolute_W_response_recovers_jacobian :: v'(s) = 2 (dM_W/ds) / g_2 if g_2 is known
+
+========================================================================
+BLOCK 7: Source-coordinate reparameterization invariance (s = f(r))
+========================================================================
+  PASS wz_ratio_invariant_under_reparameterization :: ratio = g_2 / sqrt(g_2^2 + g_Y^2) under any local s = f(r)
+  PASS wz_ratio_invariant_under_second_reparameterization :: ratio still cancels under a second arbitrary s = g(r)
+  PASS wz_ratio_invariant_under_common_multiplier :: common multiplier alpha(r) cancels in the W/Z ratio
+
+========================================================================
+BLOCK 8: Forbidden-overclaim absences preserved in parent note
+========================================================================
+  PASS forbidden_overclaim_absent_status_retained :: 'Status:** retained' absent from parent note
+  PASS forbidden_overclaim_absent_proposed_retained :: 'proposed_retained' absent from parent note
+  PASS forbidden_overclaim_absent_this_packet_derives_y_t :: 'This packet derives `y_t`' absent from parent note
+  PASS forbidden_overclaim_absent_positive_y_t_closure_has_been_obtained :: 'positive Y_T closure has been obtained' absent from parent note
+  PASS forbidden_overclaim_absent_coefficient_certified_top_response_rows_are_present :: 'coefficient-certified top response rows are present' absent from parent note
+  PASS forbidden_overclaim_absent_physical_scale_g_2_v_is_retained :: 'physical-scale `g_2(v)` is retained' absent from parent note
+  PASS companion_disclaims_status_promotion :: companion explicitly disclaims status promotion
+  PASS companion_metadata_declares_meta :: companion metadata declares Type: meta
+  PASS companion_metadata_declares_companion_only :: companion metadata declares status: companion-only
+
+========================================================================
+SUMMARY: PASS=49 FAIL=0
+========================================================================
+FINAL_TAG: YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_DEP_RESOLUTION_HYGIENE_OK
+
+----- stderr -----
+

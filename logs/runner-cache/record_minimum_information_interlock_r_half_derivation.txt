@@ -1,0 +1,120 @@
+RECORD MINIMUM-INFORMATION + IRREVERSIBILITY INTERLOCK -> r=1/2 DERIVATION TEST
+==============================================================================
+PART A -- THE INTERLOCK SETUP (irreversibility restricts recordable content to sectors)
+------------------------------------------------------------------------------
+[PASS] A1a E0,E1 are orthogonal idempotents (real central projectors) :: E0^2=E0, E1^2=E1, E0E1=0
+[PASS] A1b sector dimensions are (1,2) [singlet rank1, doublet rank2] :: (tr E0, tr E1)=(1,2)
+[PASS] A2a center(M2(C)) is trivial (scalars only) -> no finer-than-block frozen fact in a block :: center-dim(M2)=1
+[PASS] A2b within a FULL M3(C) the center is also scalars (microstates reversibly connected) :: center-dim(full M3)=1
+[PASS] A3a a within-doublet ray projector is NOT central ([P_ray,C]!=0) :: ||[P_ray,C]||=1.2247
+[PASS] A3b the doublet's own internal unitary MOVES the ray (microstate reversibly connected) :: ||U P U* - P||=1.3244
+[PASS] A3c the BLOCK projectors E0,E1 are INVARIANT under that internal unitary (frozen/central) :: E0,E1 fixed by the internal unitary
+  => irreversibility (sister branch) fixes the recordable sigma-ALGEBRA = {E0,E1} = the
+     2 sector labels; microstate (within-block) info is reversibly connected hence
+     non-frozen hence NOT faithfully recordable. Minimum-information now operates on the
+     2-SECTOR label content ONLY. (The von-Neumann/microstate reading is excluded by A3,
+     not by fiat: there is no frozen microstate fact to be noncommittal about.)
+
+PART B -- THE DECISIVE TEST: do SECTOR-RESTRICTED minimum-information readings converge?
+------------------------------------------------------------------------------
+  Each reading is RESTRICTED to the 2 sectors {singlet(dim1), doublet(dim2)} and yields a
+  weight pair (w_singlet, w_doublet). TYPE=(1,1)->r=1/2 ; TOKEN=(1,2)->r=1.
+
+[PASS] B-M1a uniform (1/2,1/2) is the MAX-entropy distribution on the 2 sector labels :: H(unif)=1.0000 bit > H(1/3,2/3)=0.9183 bit
+        M1-Shannon: (w_s,w_d)=(1.0000,1.0000) -> TYPE  -> r=0.5000 -> Q=0.6667   (max-ent over 2 labels)
+[PASS] B-M2a MDL code length is identical for the 2 labels & dimension-INDEPENDENT (1 bit each) :: L(singlet)=1.000=L(doublet)=1.000 bit
+            M2-MDL: (w_s,w_d)=(1.0000,1.0000) -> TYPE  -> r=0.5000 -> Q=0.6667   (equal label code length)
+[PASS] B-M3a Landauer cost of the LABEL register is dimension-INDEPENDENT (same for both) :: C_erase(singlet)=C_erase(doublet)=0.6931 kT
+       M3-Landauer: (w_s,w_d)=(1.0000,1.0000) -> TYPE  -> r=0.5000 -> Q=0.6667   (label-register erasure, dim-independent)
+[PASS] B-M3b the DIMENSION-erasure reading is DEGENERATE, not token: singlet cost = ln(1) = 0 :: ln(d): singlet=0.0000, doublet=0.6931 -> weight (0,ln2) is degenerate (r=inf), NOT the Born token (1,2)
+[PASS] B-M3c the dimension-erasure weight (0,ln2) is NOT the Born token weight (1,2) :: ws=0 makes r=wd/(2ws)=inf (degenerate), distinct from token r=1
+[PASS] B-M4a Jeffreys prior over the 2-label multinomial is Beta(1/2,1/2), SYMMETRIC in labels :: alpha=beta=1/2; mean=(0.500,0.500) -> label-symmetric
+       M4-Jeffreys: (w_s,w_d)=(1.0000,1.0000) -> TYPE  -> r=0.5000 -> Q=0.6667   (Beta(1/2,1/2), label-symmetric)
+[PASS] B-M4b the dimension-weighting Jeffreys is the QUANTUM (Bures) prior over MICROSTATES, :: excluded by irreversibility (microstates non-recordable); the SECTOR Jeffreys is classical Beta(1/2,1/2)
+[PASS] B-M5a minimal program to output 'sector k' has dimension-INDEPENDENT length (label only) :: K('singlet')=K('doublet') (naming a block does not enumerate its microstates)
+     M5-Kolmogorov: (w_s,w_d)=(1.0000,1.0000) -> TYPE  -> r=0.5000 -> Q=0.6667   (equal label program length)
+[PASS] B-M6a minimal sufficient statistic for the frozen sector is the 2-valued LABEL (1 unit each) :: the minimal sufficient statistic is the central-idempotent index, dimension-independent
+       M6-SuffStat: (w_s,w_d)=(1.0000,1.0000) -> TYPE  -> r=0.5000 -> Q=0.6667   (label is minimal sufficient statistic)
+    T0-pushforward: (w_s,w_d)=(0.6667,1.3333) -> TOKEN -> r=1.0000 -> Q=1.0000   (microstate I/3 marginal -- the TOKEN foil)
+[PASS] B-T0a the microstate-pushforward (I/3 marginal) gives (1/3,2/3) ~ (1,2) = TOKEN -> r=1 :: p=(0.333,0.667) -> token, r=1.000
+[PASS] B-T0b TOKEN (1/3,2/3) has STRICTLY LESS Shannon entropy on the 2-label space than uniform :: H(token)=0.9183 < H(type)=1.0000 bit => token is MORE committed => NOT min-info on the recordable (label) content
+[PASS] B-T0c (R-faithful) reading: a faithful record of the recordable LABEL content (no microstate prior) gives 1 unit per label -> TYPE (token needs the excluded I/3 prior) :: faithful-to-the-label = dim-free = (1,1); (1/3,2/3) re-imports the non-recordable I/3 marginal
+[PASS] B-T0d BOTH readings of 'minimum information' (max-ent-content AND min-excess-over-source) give TYPE once irreversibility excludes the microstate prior :: (R-maxent): uniform max-ent on labels -> type ; (R-faithful, label-only source): dim-free -> type
+[PASS] B-CONV1 ALL SIX sector-restricted min-info readings (M1-M6) give TYPE (1,1) -> r=1/2 :: M1=type; M2=type; M3=type; M4=type; M5=type; M6=type
+[PASS] B-CONV2 NO sector-restricted min-info reading gives TOKEN (token requires the EXCLUDED microstate space, T0) :: the only token reading is the microstate-pushforward T0, which is NOT sector-restricted
+[PASS] B-CONV3 all six give the IDENTICAL r=1/2 (spread 0) => structural convergence :: r in [0.5000,0.5000]
+[PASS] B-DST1 explicit Brannen circulant at r=1/2 (a=1,b=1/sqrt2) has EQUAL block energies :: E_+=3.0000=E_perp=3.0000, r=0.5000
+[PASS] B-DST2 and spectrum Q=2/3 at that point :: Q=0.666667
+
+  -- adversarial break attempts: can ANY sector-restricted reading sneak token back? --
+[PASS] B-BR1 max-Renyi/Tsallis entropy on the 2 labels (ALL orders q) is UNIFORM -> type, never token :: Aczel-Daroczy family: uniform maximizes every Renyi order on an unconstrained label set
+[PASS] B-BR2 to reach token (1/3,2/3) by max-ent on labels you must IMPOSE a dimension-encoding constraint (f_doublet - f_singlet = ln2) :: tilted dist=[0.667 0.333] -- the tilt is the (excluded) dimension input, not label-intrinsic
+[PASS] B-BR2b with NO label-intrinsic constraint, max-ent is uniform (token needs the dimension constraint = the smuggled microstate premise) :: uniform is the unconstrained max-ent; token is constrained -> not minimum-information
+[PASS] B-BR3 #FROZEN recordable propositions = #blocks = 2 (NOT sum-of-dims = 3); the steelman 'doublet = 2 things' counts non-recordable microstates :: min-info records 1 proposition per block; the 2 doublet microstates are not 2 frozen facts
+[PASS] B-BR4 the classical 2-outcome Fisher volume (-> Jeffreys) is label-EXCHANGE symmetric -> type; only the QUANTUM/dimension volume breaks it (microstate route) :: 1/sqrt(p(1-p)) is symmetric under p<->1-p -> no dimension bias on the labels
+[PASS] B-BR5 the six readings are SIX DISTINCT constructions (distinct signatures) that CONVERGE on type -> 'no coincidences': structural, not a relabel :: M1:argmax H over label simplex; M2:min prefix-code length over labels; M3:kT ln2 per label bit ; ...
+
+PART C -- FORCED vs RESTATEMENT, and the two-principle (axiom-native vs posit) status
+------------------------------------------------------------------------------
+[PASS] C1a per-LABEL faithful register (TYPE) is strictly SMALLER than per-DIMENSION (TOKEN) :: size(type)=2 < size(token)=3
+[PASS] C1b => minimum-information (store the LEAST faithful record) SELECTS type over token :: the dimension-many register is faithful-but-NOT-minimal; min-info excludes it
+[PASS] C2a additivity (LINEAR) does NOT order presence-vs-dimension (both additive over blocks) :: Tr (token) and label-count (type) are BOTH additive over disjoint blocks (Pattern-L)
+[PASS] C2b irreversibility does NOT order presence-vs-dimension (sister-branch: both monotone) :: the tracial-pushforward token record is equally monotone/irreversible
+[PASS] C2c minimum-information ADDS the strictly-new ordering 'smaller faithful register wins' -> it does REAL work (not a relabel of additivity or irreversibility) :: the ordering content is what selects type
+[PASS] C3a the only token reading (T0) is microstate-based -> EXCLUDED by irreversibility (Part A) :: T0 needs the non-recordable microstate space
+[PASS] C3b the only token reading is also NOT min-info on the LABEL space (lower entropy, B-T0b) -> doubly excluded :: token excluded on TWO independent grounds: non-recordable AND non-minimal-on-labels
+[PASS] C4a IRREVERSIBILITY is a POSIT (the Record axiom scope EXCLUDES persistence/arrow) :: records-can't-unform is outside additive-readout content
+[PASS] C4b MINIMUM-INFORMATION is a POSIT (an added optimization beyond additive readout) :: 'store the least' is not in I(R1 u R2)=I(R1)+I(R2); it is MDL/parsimony
+[PASS] C4c neither posit is exotic: irreversibility ~ records-are-frozen; min-info ~ MDL/parsimony/Landauer-efficiency -> both are STANDARD physical/inferential principles :: natural, but beyond bare axiom -> verdict is FORCED-MODULO-TWO-POSITS, not axiom-native
+[PASS] C5a the (alpha,beta) PD cone retains many beta!=0 points (no-go UNWEAKENED algebraically) :: 7 PD points with beta!=0 survive (cone not collapsed)
+[PASS] C5b min-info is a measure-SELECTION (picks beta=0 as the minimal-register point), NOT an algebraic collapse of the cone :: Frobenius beta=0 is selected as a POINT; the cone itself is unchanged
+
+PART D -- law-invariance + category-mismatch closeout
+------------------------------------------------------------------------------
+[PASS] D1a TYPE weight ratio is INDEPENDENT of the decay-law parameter (spread 0) -> law-invariant :: type ratio constant = 1.000
+[PASS] D1b a DISTANCE weighting IS law-dependent (positive control: ratio sweeps) :: dist ratio spread = 0.645 (varies with law)
+[PASS] D1c so sector-restricted min-info CLEARS the wall the three geometry attacks hit :: discrete label content => law-invariant, unlike adjacency geometry
+[PASS] D2a irreversibility delivers a SET-level object (the 2-label sigma-algebra) :: Boolean/superselection partition {E0,E1}
+[PASS] D2b min-info delivers the MEASURE on that set UNIQUELY (Part-B: all readings -> type) :: the label-vs-microstate bit is supplied by 'minimal faithful register = per-label'
+[PASS] D2c => the PAIR CLOSES the bit (does not relocate to 'min-of-which-measure'): the sector-restricted readings CONVERGE :: if the readings had diverged it would relocate; they converge -> closed (modulo the 2 posits)
+
+PART E -- bonus: do the two principles touch the chirality / color gates? (honest probe)
+------------------------------------------------------------------------------
+[PASS] E1a Gamma_chi=(2/3)J - I is circulant (commutes with C) -> chirality no-go applies :: ||[Gamma,C]||=0.00e+00
+[PASS] E1b the min-info per-sector weight operator is circulant (commutes with C), supplies NO orbit-splitting -> chirality gate does NOT move :: min-info fixes a NORMALIZATION, not a chiral grading; gate stays where prior tests left it
+[PASS] E2a the sector COUNT (1 singlet + 1 doublet) is the retained R[Z3]=R(+)C structure, not set by min-info -> color/sector-structure gate does NOT move :: min-info weights a GIVEN decomposition; it does not create or merge sectors
+  Honest negative: minimum-information bears ONLY on the r=1/2 measure bit; the chirality
+  and color/sector-structure gates stay exactly where the prior tests left them.
+
+==============================================================================
+VERDICT
+------------------------------------------------------------------------------
+  >>> FORCED-MODULO-TWO-POSITS.
+      The SIX sector-restricted minimum-information readings (M1 Shannon, M2 MDL,
+      M3 Landauer, M4 Jeffreys, M5 Kolmogorov, M6 sufficient-statistic) ALL give the
+      TYPE weight (1,1) -> r=1/2 -> Q=2/3. They CONVERGE (spread 0).
+      The ONE token reading (Born, (1,2) -> r=1) is the microstate-pushforward of the
+      maximally-mixed state I/3 -- and it is EXCLUDED on TWO independent grounds:
+        (i)  irreversibility makes microstate content non-frozen hence NON-RECORDABLE;
+        (ii) the token distribution (1/3,2/3) is NOT minimum-information ON THE LABEL
+             space (it has strictly LESS entropy than uniform; it is more committed).
+      Hence IRREVERSIBILITY (fixes the recordable sigma-algebra = the 2 sector labels)
+      + MINIMUM-INFORMATION (minimal faithful register = 1 unit per label) TOGETHER
+      FORCE r=1/2. Neither alone suffices (irreversibility leaves the type/token bit
+      open; min-info on microstates would give token). The forcing is genuine: min-info
+      adds a strictly-new ordering (smaller faithful register wins) that neither
+      additivity (linear) nor irreversibility (sign of dN/dt) supplies.
+      BOTH principles are POSITS (the Record axiom's scope excludes arrow/persistence
+      AND any store-the-least optimization) -> the result is a clean closure-MODULO-
+      TWO-NAMED-PHYSICAL-PRINCIPLES (records irreversible + records minimal), NOT
+      bare-axiom-native. AC_phi_lambda for the charged-lepton sector reduces to these
+      two named principles.
+
+  Retained no-gos UNWEAKENED: koide_frobenius_isotype_split_uniqueness (retained_no_go,
+  the (alpha,beta) PD cone is selected-at-a-point, not algebraically collapsed);
+  koide_z3_equivariant_anticommuting_no_go (retained_bounded, chirality -- Part E confirms
+  min-info supplies no orbit-splitting). r=1/2 remains Tier-A AC_phi_lambda; compared
+  structurally only (no PDG value consumed).
+==============================================================================
+COMPUTED VERDICT: FORCED-MODULO-TWO-POSITS
+SUMMARY: PASS=52 FAIL=0

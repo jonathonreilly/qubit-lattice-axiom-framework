@@ -4,6 +4,10 @@
 repair.
 **Claim type:** bounded_theorem
 **Primary runner:** `scripts/frontier_dimension_selection_lower_bound_parent_repair.py`
+**Cached runner output:** `logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt`
+**Source packet verifier:** `scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py`
+**Source packet verifier cache:** `logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt`
+**Source packet verifier JSON:** `outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json`
 
 ## 2026-05-27 Scope Repair
 
@@ -26,6 +30,29 @@ supplies the runner-specific lower-bound sign. It differentiates the actual
 layer-normalized finite-k propagator used by `scripts/frontier_dimension_selection.py`,
 rather than importing WKB/eikonal ray reasoning as the load-bearing sign
 argument.
+
+## 2026-06-05 Source Packet Exposure Repair
+
+The current audit blocker is a packet/runner-artifact gap: the parent repair
+runner verifies the narrowed prose and finite-k sign replay, but the displayed
+`beta` and `I_3` entries come from the original dimension-selection runner, and
+the parent runner imports the bridge through a dynamic import. This repair makes
+the full packet explicit:
+
+- Parent repair runner: `scripts/frontier_dimension_selection_lower_bound_parent_repair.py`
+- Parent repair cache: `logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt`
+- Original dimension runner: `scripts/frontier_dimension_selection.py`
+- Original dimension cache: `logs/runner-cache/frontier_dimension_selection.txt`
+- Finite-k bridge note: `docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md`
+- Finite-k bridge source: `scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py`
+- Finite-k bridge cache: `logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt`
+- Finite-k bridge JSON: `outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json`
+
+The source packet verifier above checks that these paths are linked from this
+note, that the bridge and original runner sources are present and untruncated,
+that the original runner cache contains the displayed `beta`/`I_3` lower-bound
+table, that the bridge cache reports `SUMMARY: PASS=56 FAIL=0`, and that all
+runner caches match the current source SHA. This does not set an audit verdict.
 
 ## Answer
 
@@ -118,10 +145,12 @@ Run:
 
 ```bash
 python3 scripts/frontier_dimension_selection_lower_bound_parent_repair.py
+python3 scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
 ```
 
 Expected summary:
 
 ```text
 SUMMARY: PASS=26 FAIL=0
+SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=... FAIL=0
 ```

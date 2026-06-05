@@ -73,7 +73,7 @@
   ],
   "status": "bounded support: exact finite-k runner sign bridge",
   "upstream_statuses": {
-    "lower_bound_v2_status": "audited_conditional",
+    "lower_bound_v2_status": "decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
     "parent_status": "audited_conditional"
   }
 }

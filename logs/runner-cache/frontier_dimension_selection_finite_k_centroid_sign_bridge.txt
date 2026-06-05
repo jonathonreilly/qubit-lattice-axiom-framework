@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+runner_sha256: 4cfdafce89788e0d0744f6eb2032dd9a88679d075b2852cfd1ef4fa8135a44c3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+========================================================================================
+DIMENSION SELECTION FINITE-K CENTROID-SIGN BRIDGE
+========================================================================================
+
+Part 1: anchors and audit boundary
+[PASS] docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md exists
+[PASS] docs/DIMENSION_SELECTION_NOTE.md exists
+[PASS] docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md exists
+[PASS] docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] scripts/frontier_dimension_selection.py exists
+[PASS] note contains required section: Exact Finite-k Derivative
+[PASS] note contains required section: Result
+[PASS] note contains required section: What This Closes
+[PASS] note contains required section: What Remains Open
+[PASS] note contains required section: Non-Claims
+[PASS] lower-bound V2 is currently non-clean/decorated under the finite-k bridge: decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25
+[PASS] parent dimension-selection row is currently conditional: audited_conditional
+[PASS] audit blocker names finite-k/eikonal bridge
+
+Part 2: exact finite-k first derivative
+[PASS] d=1 derivative has expected sign: -6178.064177806486
+[PASS] d=1 probability normalization derivative vanishes: -1.5766354985019588e-13
+[PASS] d=1 free centroid remains centered: 30.0000000001367
+[PASS] d=2 derivative has expected sign: -693.5367985302938
+[PASS] d=2 probability normalization derivative vanishes: -2.5372616588483375e-15
+[PASS] d=2 free centroid remains centered: 30.0000000001367
+[PASS] d=3 derivative has expected sign: 137.43355955069325
+[PASS] d=3 probability normalization derivative vanishes: -1.2383822590349145e-17
+[PASS] d=3 free centroid remains centered: 30.0000000001367
+[PASS] d=4 derivative has expected sign: 119.62276629484603
+[PASS] d=4 probability normalization derivative vanishes: -5.467182645959942e-16
+[PASS] d=4 free centroid remains centered: 30.0000000001367
+[PASS] d=5 derivative has expected sign: 145.12754503252833
+[PASS] d=5 probability normalization derivative vanishes: 5.219442981527536e-16
+[PASS] d=5 free centroid remains centered: 30.0000000001367
+[PASS] minimum derivative sign margin is large: 119.62276629484603
+
+Part 3: central finite-difference cross-check
+[PASS] d=1 finite difference matches exact derivative: {'fd': -6177.98825517409, 'exact': -6178.064177806486, 'rel': 1.228906502281919e-05}
+[PASS] d=2 finite difference matches exact derivative: {'fd': -693.5363018865104, 'exact': -693.5367985302938, 'rel': 7.161030020151245e-07}
+[PASS] d=3 finite difference matches exact derivative: {'fd': 137.4340736403449, 'exact': 137.43355955069325, 'rel': 3.740641320358931e-06}
+[PASS] d=4 finite difference matches exact derivative: {'fd': 119.62308497892593, 'exact': 119.62276629484603, 'rel': 2.664075491406293e-06}
+[PASS] d=5 finite difference matches exact derivative: {'fd': 145.1264870103349, 'exact': 145.12754503252833, 'rel': 7.290292088908248e-06}
+
+Part 4: parent finite-M runner sign
+[PASS] d=1 parent raw_delta sign matches lower-bound sign: -3.8672175352803855
+[PASS] d=1 direct finite-M replay matches parent raw_delta: {'direct': -3.867217535256593, 'parent': -3.8672175352803855}
+[PASS] d=2 parent raw_delta sign matches lower-bound sign: -2.151826031186392
+[PASS] d=2 direct finite-M replay matches parent raw_delta: {'direct': -2.151826032696981, 'parent': -2.151826031186392}
+[PASS] d=3 parent raw_delta sign matches lower-bound sign: 0.7271976977843124
+[PASS] d=3 direct finite-M replay matches parent raw_delta: {'direct': 0.727197696589517, 'parent': 0.7271976977843124}
+[PASS] d=4 parent raw_delta sign matches lower-bound sign: 0.6596476488010232
+[PASS] d=4 direct finite-M replay matches parent raw_delta: {'direct': 0.6596476486924026, 'parent': 0.6596476488010232}
+[PASS] d=5 parent raw_delta sign matches lower-bound sign: 0.8307846758016488
+[PASS] d=5 direct finite-M replay matches parent raw_delta: {'direct': 0.8307846749345735, 'parent': 0.8307846758016488}
+
+Part 5: claim-status firewalls
+[PASS] boundary phrase present: no repo-wide dimension-axiom rewrite
+[PASS] boundary phrase present: no repo-wide axiom rewrite
+[PASS] boundary phrase present: does not authorize changing
+[PASS] boundary phrase present: not full retained dimension selection
+[PASS] boundary phrase present: use WKB, Fermat, stationary phase, or ray optics as the load-bearing
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: A2 is now derived
+[PASS] forbidden overclaim absent: Z^3 has been derived from A1 alone
+[PASS] forbidden overclaim absent: full retained spatial d = 3 closure
+[PASS] forbidden overclaim absent: repo-wide axiom rewrite is authorized
+
+wrote outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
+SUMMARY: PASS=56 FAIL=0
+
+----- stderr -----
+

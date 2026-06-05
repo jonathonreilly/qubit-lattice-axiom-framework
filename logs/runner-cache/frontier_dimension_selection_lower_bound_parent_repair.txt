@@ -3,7 +3,7 @@ runner: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
 runner_sha256: 97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 # Dimension-selection parent lower-bound repair

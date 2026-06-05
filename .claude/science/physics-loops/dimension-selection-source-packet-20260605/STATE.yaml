@@ -1,0 +1,24 @@
+loop: dimension-selection-source-packet-20260605
+target_claim_id: dimension_selection_note
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+current_block: block01
+base: origin/main@093db2403
+files_touched:
+  - docs/DIMENSION_SELECTION_NOTE.md
+  - scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+  - scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+  - logs/runner-cache/frontier_dimension_selection.txt
+  - logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt
+  - logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt
+  - logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt
+  - outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
+  - outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
+result_summary:
+  parent_repair_cache: "SUMMARY: PASS=26 FAIL=0"
+  finite_k_bridge_cache: "SUMMARY: PASS=56 FAIL=0"
+  source_manifest: "SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=55 FAIL=0"
+next_exact_action: "Open review PR; independent auditor decides whether this retires the runner-artifact packet gap."

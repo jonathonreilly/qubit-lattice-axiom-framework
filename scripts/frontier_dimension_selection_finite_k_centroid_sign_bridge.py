@@ -201,7 +201,15 @@ def part1_anchors() -> dict[str, Any]:
 
     lower_row = ledger_row("dimension_selection_lower_bound_bridge_v2_2026-05-20")
     parent_row = ledger_row("dimension_selection_note")
-    check("lower-bound V2 is currently conditional", lower_row.get("effective_status") == "audited_conditional", lower_row.get("effective_status"))
+    lower_status = lower_row.get("effective_status")
+    check(
+        "lower-bound V2 is currently non-clean/decorated under the finite-k bridge",
+        lower_status in {
+            "audited_conditional",
+            "decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
+        },
+        lower_status,
+    )
     check("parent dimension-selection row is currently conditional", parent_row.get("effective_status") == "audited_conditional", parent_row.get("effective_status"))
     check("audit blocker names finite-k/eikonal bridge", "finite-k sign proof" in json.dumps(lower_row) or "discrete-to-eikonal" in json.dumps(lower_row))
     return {

@@ -1,0 +1,117 @@
+
+========================================================================================
+PART 0: baseline reproduction of the chain's headline number
+========================================================================================
+  u_0          = 0.877681
+  alpha_LM     = 0.090668
+  alpha_s(v)   = 0.103304
+  v            = 246.285 GeV   (obs 246.22, dev +0.026%)
+  g_lattice    = 1.067411
+  y_t(M_Pl)    = 0.435769
+  y_t(v)       = 0.973392
+  m_t          = 169.516 GeV   (dev vs pole 172.69: -1.838%)
+  [PASS] baseline m_t reproduces chain headline 169.5 +-1 GeV  (m_t=169.516)
+  [PASS] baseline y_t(M_Pl) reproduces 0.4358 +-0.001  (yt_pl=0.435769)
+  [PASS] baseline lands in QFP-no-go 'special UV near 0.5' window, not generic basin  (QFP no-go: generic UV(>1) -> m_t~218; near-0.5 -> target)
+
+========================================================================================
+PART 1: look-elsewhere on the Ward Clebsch 1/sqrt(C)
+========================================================================================
+  The note derives C = 2*N_c = 6 (color 3 x isospin 2). Test which O(1)
+  integer denominators land a 'top-like' m_t in [150,200] GeV.
+     C   1/sqrt(C)   y_t(M_Pl)   m_t [GeV]  top-like?
+     1     1.00000     1.06741     209.864      False
+     2     0.70711     0.75477     199.445       True
+     3     0.57735     0.61627     190.484       True
+     4     0.50000     0.53371     182.648       True
+     5     0.44721     0.47736     175.714       True
+     6     0.40825     0.43577     169.516       True
+     7     0.37796     0.40344     163.932       True
+     8     0.35355     0.37739     158.865       True
+     9     0.33333     0.35580     154.240       True
+    10     0.31623     0.33754     149.996      False
+    12     0.28868     0.30813     142.461      False
+  [PASS] C=6 lands top-like
+  ==> 8 of 11 tested O(1) denominators give a top-like m_t.
+  ==> Look-elsewhere factor is MODEST: the QFP focusing compresses a broad
+      UV range, so several C give 150-200 GeV. C=6 is NOT uniquely forced by
+      the target; it IS forced by the sqrt(2 N_c) group theory. Distinguish:
+      the VALUE is group-theoretic; its AGREEMENT is not a sharp discriminator.
+
+========================================================================================
+PART 2: pole vs MSbar -- what IS the 169.5 number?
+========================================================================================
+  m_t = y_t(v)*v/sqrt(2) is the tree relation at scale mu=v, i.e. a
+  RUNNING (MSbar-like) top mass near v, NOT the pole mass. The chain
+  compares it directly to the POLE mass 172.69. Standard QCD pole/MSbar:
+    m_pole = m_MSbar(m_t) * (1 + 4/3 * alpha_s/pi + ...)  ~ +6% at top.
+  m_t(running, at v) = 169.52 GeV
+  one-loop QCD pole shift factor ~ 1.0568
+  => if 169.5 is treated as MSbar(v): pole ~ 179.14 GeV (dev vs 172.69: +3.73%)
+  => if 169.5 is treated as the pole already: dev -1.84%
+  => vs MSbar m_t(m_t)~162.5: dev +4.32%
+  [PASS] pole-vs-MSbar scheme ambiguity is >= the quoted 1.8% deviation  (scheme choice moves m_t by several %)
+
+========================================================================================
+PART 3: honest error band over input variation
+========================================================================================
+  variant                                        y_t(M_Pl)  m_t[GeV]    dev%
+  baseline (2-loop, <P>=0.5934, alpha_bare=1/4pi, C=6)   0.43577   169.516   -1.84
+  1-loop RGE instead of 2-loop                     0.43577   165.482   -4.17
+  <P> low 0.5928 (-1 sigma MC)                     0.43582   170.242   -1.42
+  <P> high 0.5940 (+1 sigma MC)                    0.43571   168.794   -2.26
+  <P> = analytic 0.593531 (closes gap)             0.43576   169.358   -1.93
+  alpha_bare 1/(4pi)*1.02 (+2% UV coupling)        0.44010   235.062   36.12
+  alpha_bare 1/(4pi)*0.98 (-2% UV coupling)        0.43139   121.441  -29.68
+
+  Band A -- LOCAL systematic (alpha_bare fixed at derived 1/4pi; vary
+            <P> within MC sigma, 1-vs-2 loop):  [165.48, 170.24] GeV
+            => m_t = 169.5  +0.7/-4.0 GeV (+0.43/-2.38%)
+  Band B -- SCHEME axis (is 169.5 the pole or a running mass?):
+            [169.52, 179.14] GeV  (treat-as-pole vs MSbar->pole)
+  Axis C -- alpha_bare HYPERSENSITIVITY (structural, NOT a free input):
+            a +-2% move in alpha_bare swings m_t to [121.4, 235.1] GeV
+            because v ~ alpha_LM^16. m_t INHERITS the hierarchy magnitude;
+            the alpha_LM-magnitude open gate is therefore load-bearing for m_t.
+
+  HONEST HEADLINE BAND (local syst + scheme) = [165.5, 179.1] GeV
+  observed pole m_t = 172.69 GeV lies INSIDE this band.
+  [PASS] observed pole m_t inside the (local-syst + scheme) band  ([165.5,179.1] vs 172.69)
+  [PASS] the -1.84% headline is scheme-dependent (not robust to pole-vs-running)  (flipping scheme moves the central deviation by >2%)
+  [PASS] m_t is hypersensitive to alpha_bare via the v ~ alpha_LM^16 hierarchy  (+-2% alpha_bare -> >+-30% m_t; the hierarchy gate is load-bearing)
+
+========================================================================================
+PART 4: QFP insensitivity -- does the UV Ward boundary even matter?
+========================================================================================
+  Vary y_t(M_Pl) by hand (decouple from the chain) and read off m_t,
+  to test the chain's claim that a 10% UV change -> <0.5% IR change.
+   y_t(M_Pl)    y_t(v)  m_t[GeV]
+      0.3000   0.80513   140.214
+      0.4000   0.93766   163.292
+      0.4358   0.97342   169.521
+      0.5000   1.02603   178.683
+      0.7000   1.12771   196.390
+      1.0000   1.19614   208.307
+      2.0000   1.25499   218.555
+      5.0000   1.27456   221.964
+  Near baseline: a 23% UV change moves m_t by 9.08% (15.39 GeV).
+  [PASS] UV Ward boundary IS load-bearing at y_t~0.44 (not washed out)  (at low y_t the QFP does NOT fully attract; UV value matters)
+  KEY: the IR quasi-FP only fully attracts for LARGE UV y_t (>~1), which
+  lands m_t~218 (the no-go band). At the framework's UV value ~0.44 the
+  result is SENSITIVE to the UV boundary -> the prediction genuinely rests
+  on y_t(M_Pl)=g_lattice/sqrt(6), i.e. on the Ward boundary being derived.
+
+========================================================================================
+SUMMARY
+========================================================================================
+  baseline m_t              = 169.52 GeV  (-1.84% vs pole, scheme-naive)
+  local systematic band     = [165.5, 170.2] GeV  (alpha_bare fixed; <P>+/-MC, 1-vs-2 loop)
+  pole-vs-running scheme    = central dev flips -1.84% (treat-as-pole) -> +3.7% (MSbar->pole)
+  honest headline band      = [165.5, 179.1] GeV  (contains observed 172.69)
+  alpha_bare hypersensitivity= +-2% alpha_bare -> [121,235] GeV via v~alpha_LM^16
+  Ward Clebsch C=6          = group-theoretic sqrt(2 N_c); 8/11 O(1) denominators land top-like
+  UV boundary load-bearing? = YES at y_t~0.44 (QFP does NOT wash it out here)
+
+========================================================================================
+TOTAL: PASS=9, FAIL=0
+========================================================================================

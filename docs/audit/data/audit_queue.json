@@ -3,7 +3,7 @@
     "critical": 269,
     "high": 284,
     "leaf": 433,
-    "medium": 339
+    "medium": 338
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16722,34 +16722,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "per_site_su2_spin_half_theorem_note_2026-05-02",
-        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-        "cpt_exact_note",
-        "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
-        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
-      "note_path": "docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
-      "transitive_descendants": 7
     },
     {
       "audit_independence_required": "any_non_self",
@@ -39691,6 +39663,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 116,
-  "total_pending": 1325
+  "ready_count": 115,
+  "total_pending": 1324
 }

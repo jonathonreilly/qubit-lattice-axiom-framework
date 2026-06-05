@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 637 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1323 |
+| unaudited | 1322 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 976 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1607 |
+| `unaudited` | 1606 |
 
 | claim_type | count |
 |---|---:|
@@ -1115,6 +1115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -3792,6 +3793,25 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** "The weaker-coupling sweep does not show a strength-driven rescue of the remaining periodic Dirac gravity failures" because cross-strength sign-stability counts are unchanged and the signed delta-law fit never becomes available.  _(class `A`)_
 - **chain closes:** True — The note's numerical summaries match the supplied completed runner stdout, and the bounded negative conclusion follows directly from the unchanged 6/12 stable-row and 2/12 positive-stable counts across all strengths. The claim does not close as a general physics theorem beyond this scan grid, so the audited scope must remain bounded to the supplied harness and outputs.
 - **rationale:** The load-bearing claim is a bounded arithmetic summary of the completed runner output, not a first-principles derivation or external comparator. The stdout supports the stated cross-strength invariance, absence of signed delta-law fits, and lambda-dependent |bias| fit improvement. Clean status applies only to the reported scan-grid conclusion, not to any broader Dirac-gravity theorem or unsupplied v4 helper implementation.
+- **auditor confidence:** high
+
+### `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`
+
+- **Note:** [`DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional admission bridge reconstructing Dirac = 4 and Weyl = 2 thermal degrees of freedom from R1-R4 plus admitted Q1 Cl(3,1) and Q2 on-shell counting for the parent P4 premise.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-184353-9b5cf2942d-dirac_weyl_fermion_dof_from_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Dirac on-shell thermal dof = 2 (spin, from R1) * 2 (particle-antiparticle, from R3) = 4, and Weyl on-shell thermal dof = dof_Dirac / 2 via the R2 chirality projector.  _(class `A`)_
+- **chain closes:** False — The rational arithmetic closes once the factors are granted, but the restricted packet does not derive the physical-identification steps from R1's per-site Pauli module to on-shell Dirac spin degeneracy or from R3's CPT Hamiltonian identity to a distinct particle-antiparticle thermal label. Q1 and Q2 also remain explicit admissions.
+- **rationale:** Independent formula checking agrees with the displayed arithmetic: 2*2=4, (4*2)/2=4, and a rank-2 chirality split gives Weyl=2 once Q1/Q2 and the spin/CPT labels are granted. The runner has useful algebraic checks, but its load-bearing thermal factors are assigned as constants labelled R1/R3 and it does not prove the physical identification of those labels. R1 explicitly limits itself away from identifying the Pauli action with every matter excitation's physical spin, and the narrowed CPT note does not by itself establish a particle-antiparticle thermal degeneracy. Since Q1/Q2 are admissions as well, the row is conditional rather than clean.
+- **open / conditional deps cited:**
+  - `PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`
+  - `CPT_EXACT_NOTE.md`
+  - `CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md`
+  - `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`
+  - `DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md#Q2`
 - **auditor confidence:** high
 
 ### `directional_b_density_stencil_note`

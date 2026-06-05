@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 177 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 667 |
+| **retained_bounded** | 668 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1241 |
+| unaudited | 1240 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1029 |
+| `audited_clean` | 1030 |
 | `audited_conditional` | 78 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1525 |
+| `unaudited` | 1524 |
 
 | claim_type | count |
 |---|---:|
@@ -642,6 +642,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9785,6 +9786,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the unit-normalized Z_3 Fourier transform, Plancherel gives sum |c_k|^2 = sum v_i^2 and |c_0|^2 = (sum v_i)^2/3, so Q(v)=2/3 is equivalent to |c_0|^2 = |c_1|^2 + |c_2|^2.  _(class `A`)_
 - **chain closes:** True — The equivalence follows directly from the unitary DFT/Plancherel identity and the trivial-character norm formula. The note explicitly limits itself to a change of basis and excludes any physical Koide closure or operator-level derivation.
 - **rationale:** The theorem is a self-contained algebraic equivalence over a positive real 3-vector. The live runner verifies Plancherel, the c_0 norm, proportionality of the Koide and NSC residuals, the Foot angle form, and symbolic sufficiency examples with PASS=8 and FAIL=0. Residual risk is downstream scope drift: this audit does not derive Q=2/3 from Cl(3)/Z^3, construct a lepton mass operator, or prove NSC for physics.
+- **auditor confidence:** high
+
+### `koide_readout_channel_map_note_2026-05-31`
+
+- **Note:** [`KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md`](../../docs/KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3 circulant bookkeeping identities for trace decomposition, Koide-form Q values, the cited L_3(1,2) spectral-asymmetry weight, and phase independence, excluding physical charged-lepton readout closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-234615-21fdab6cb4-koide_readout_channel_map_no`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For H=aI+bC+conj(b)C^2, the trace projections recover a and b, Q=(1+2|b|^2/a^2)/3 gives Q=1/3 at b=0 and Q=2/3 at r=1/2, L_3(1,2)=2/9, and Q is independent of the phase of b.  _(class `A`)_
+- **chain closes:** True — The displayed identities follow by trace orthogonality of the C3 circulant basis, the root-of-unity cosine sums, and the cited retained-grade L_3(1,2)=2/9 calculation. The note explicitly leaves the physical interaction or record mechanism outside scope.
+- **rationale:** Independent algebra checks reproduce a=Tr(H)/3, b=Tr(C^{-1}H)/3, Q=(3a^2+6|b|^2)/(3a)^2=(1+2r)/3, the r=0 and r=1/2 values, phase independence, and L_3(1,2)=2/9. The runner performs finite algebraic checks rather than merely printing constants, although it is not a first-principles framework computation. All cited authorities are retained-grade for the bounded algebra used here, and the source does not claim charged-lepton channel closure.
 - **auditor confidence:** high
 
 ### `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 652 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1282 |
+| unaudited | 1281 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1002 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1566 |
+| `unaudited` | 1565 |
 
 | claim_type | count |
 |---|---:|
@@ -1149,6 +1149,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_a1prime_debt_and_data_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5389,6 +5390,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The supplied runner actually constructs fields from sources, propagates amplitudes on the grown graph, computes detector centroids, and reproduces the frozen sign, zero-control, and linearity outputs. The cited grown-geometry companion is retained_bounded and is used only to support the narrow retained-row context, not to broaden the result.
 - **rationale:** The load-bearing result is a live numerical computation over the runner-defined grown row, not a printed constant, renaming, or imported external comparator. The zero-source and neutral same-point cancellations are algebraic/numerical controls, while the signed single-source, pair, dipole, and double-source cases are computed by the propagation code. The claim is narrow enough to match the evidence: it does not assert geometry-generic electromagnetism or continuum closure.
 - **auditor confidence:** high
+
+### `flavor_a1prime_debt_and_data_note_2026-05-30`
+
+- **Note:** [`FLAVOR_A1PRIME_DEBT_AND_DATA_NOTE_2026-05-30.md`](../../docs/FLAVOR_A1PRIME_DEBT_AND_DATA_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded negative claim that the candidate carrier-measure axiom does not derive r=1/2 from the inherited real tracial Z3 measure, and that its universality prediction fails the embedded sector-mass and angle checks.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-202150-21986b9982-flavor_a1prime_debt_and_data`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the inherited tracial real ONB on R[Z3], J-I=g+g^2 has two real-mode support, so r=1/2 requires regrouping those two modes as one complex det_C/U(1) doublet rather than following from the inherited C^3=I carrier measure.  _(class `A`)_
+- **chain closes:** False — The displayed matrix identities, Brannen phase cancellation, and embedded numerical comparisons check internally. The stronger inference that det_C complex counting is incompatible with C^3=I, and the normalization bridge from real-mode counting to r and Q, are not closed inside the restricted packet.
+- **rationale:** The runner is not a trivial printout: it computes the Gram matrix, coefficient vector, phase counterexample, symbolic dQ/ddelta result, and the quoted numerical comparisons. However, the load-bearing conclusion depends on bridge content not supplied here: definitions/normalizations tying the support count to r=1 versus r=1/2, and a proof that complex doublet counting necessarily imports an inadmissible continuous U(1) rather than a permissible complex representation of the order-three carrier. Build B also uses embedded external mass, splitting, and angle inputs, so its data-falsification checks are class D comparators rather than framework-internal closure.
+- **auditor confidence:** medium
 
 ### `flavor_block_count_native_via_jcs_note_2026-05-30`
 

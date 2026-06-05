@@ -1,0 +1,158 @@
+==============================================================================
+Record-formation dynamics constraint -- explicit S + E_1..E_n test
+temporal sequel to the timeless gauge-structure corollary (#2667)
+==============================================================================
+
+------------------------------------------------------------------------------
+Part 0: framework anchors and pointer observable
+------------------------------------------------------------------------------
+PASS Quantum: per-site carrier is a qubit (2-dim), Pi_S = sigma_z(S)
+PASS system starts in a generic off-axis state: H(Pi_S) nontrivial in (0,1) :: H(Pi_S)=0.5224 bits (the record a perfect copy carries)
+PASS before any U step no fragment carries pointer info (no record yet) :: max I_pre=0.00e+00
+
+------------------------------------------------------------------------------
+Part 1: NON-DEMOLITION coupling -- [H_int, Pi_S] = 0
+------------------------------------------------------------------------------
+PASS non-demolition: [H_int, Pi_S] = 0 exactly :: ||[H,Pi_S]||=0.00e+00
+PASS non-demolition: every single E_k carries the full pointer record H_S :: per-fragment I = [0.5224, 0.5224, 0.5224, 0.5224] (H_S=0.5224)
+PASS non-demolition: system pointer populations preserved by recording :: pops=[0.8824 0.1176] (init [0.8824 0.1176])
+
+------------------------------------------------------------------------------
+Part 2: ADDITIVITY of the record readout over disjoint fragments
+------------------------------------------------------------------------------
+PASS Record axiom additivity (record-mass): I(F1 U F2) = I(F1) + I(F2) :: 2.0894 = 1.0447 + 1.0447
+PASS additivity is consistent: recovered pointer info saturates at H_S (no super-additivity) despite redundant copies :: I(S:F1F2)=0.5224=H_S, record-mass=2.0894=4*H_S
+PASS objectivity: every pair of fragments shares exactly the pointer record H_S (one consistent value) :: pairwise I = [0.5224, 0.5224, 0.5224, 0.5224, 0.5224, 0.5224] (H_S=0.5224)
+
+------------------------------------------------------------------------------
+Part 3: REDUNDANCY R_delta (quantum Darwinism plateau)
+------------------------------------------------------------------------------
+PASS non-demolition: redundancy R_delta = n_env (every fragment informative) :: R_(delta=0.1) = 4 of 4
+PASS non-demolition: classical plateau I(S:F) = H_S for all fragment sizes :: plateau = [0.5224, 0.5224, 0.5224, 0.5224] (H_S=0.5224)
+
+------------------------------------------------------------------------------
+Part 4: PERSISTENCE under continued evolution
+------------------------------------------------------------------------------
+PASS persistence (4a): non-demolition freezes system pointer populations for ALL times (recorded value never changes) :: pops stay [0.8824 0.1176]
+PASS persistence (4b): in a fresh-fragment chain, an idle finished fragment keeps its full bit while later fragments record :: I(S:E_1) after each later record = [0.5224, 0.5224, 0.5224, 0.5224]
+PASS persistence (4b): redundancy accumulates to R = n_env along the chain :: final R = 4 of 4
+
+------------------------------------------------------------------------------
+Part 5: DEMOLITION CONTROL -- [H_int, Pi_S] != 0
+------------------------------------------------------------------------------
+PASS demolition control: [H_int, Pi_S] != 0 (handle is sigma_x(S)) :: ||[H,Pi_S]||=22.627
+PASS demolition control: fragments fail to carry the pointer record H_S (at the same t_rec where non-demolition is perfect) :: per-fragment z-pointer I = [-0.0, -0.0, -0.0, -0.0] (H_S=0.5224)
+PASS demolition control: redundancy collapses (R_delta < n_env) :: R_(delta=0.1) = 0 of 4
+PASS demolition control: system pointer populations DRIFT in time (recorded value is not frozen => record is non-persistent) :: max |Delta pop_0| over steps = 0.3824 (vs 0 for non-demolition)
+PASS demolition control: would-be recorded value (pop_0) oscillates in time (non-monotone => no stable copy possible) :: up=4, down=3, pop_0 trace=[0.5, 0.882, 0.5, 0.882, 0.5, 0.882, 0.5, 0.882]
+PASS demolition control: records the WRONG observable -- full I(S:E_1)>0 but z-pointer info ~0 (record is in a non-pointer basis) :: full I(S:E_1)=0.8810, z-pointer info=-0.0000
+PASS demolition control: fragments do NOT objectively agree on Pi_S :: pairwise I = [0.881, 0.881, 0.881, 0.881, 0.881, 0.881] (vs H_S=0.5224)
+
+------------------------------------------------------------------------------
+Part 6: MONOTONE LINK -- redundancy vs the non-demolition norm
+------------------------------------------------------------------------------
+PASS sweep: theta=0 (non-demolition) maximizes objective-record quality :: quality(theta=0)=0.5224, max=0.5224
+PASS sweep: objective-record quality decreases as ||[H,Pi_S]|| grows :: q=[0.522, 0.371, 0.244, 0.175, 0.138, 0.104, 0.061, 0.02, 0.0] vs ||c||=[0.0, 4.414, 8.659, 12.571, 16.0, 18.814, 20.905, 22.193, 22.627]
+PASS sweep: only the zero-commutator endpoint gives a perfect record (quality = H_S at theta=0, degraded elsewhere) :: q[0]=0.5224=H_S, q[-1]=0.0000
+
+------------------------------------------------------------------------------
+Part 6b: NECESSITY + SUFFICIENCY of [H,Pi_S]=0 (random-H theorem)
+------------------------------------------------------------------------------
+PASS sufficiency: any random H with [H,Pi_S]=0 conserves the pointer (it is the commutation property, not a special operator) :: failures = 0/60
+PASS necessity: every random H with [H,Pi_S]!=0 has a state that instantaneously moves the pointer (d<P_0>/dt = i<[H,P_0]> != 0) :: detected 60/60 non-commuting samples
+
+------------------------------------------------------------------------------
+Part 7: FORCED-CLASS structure -- conserved pointer + locality
+------------------------------------------------------------------------------
+PASS forced class (conserved pointer): U^dag Pi_S U = Pi_S for non-demolition
+PASS forced class: demolition U does NOT conserve Pi_S
+PASS locality (local baseline): fragments are independent copies, dephased I(E_a:E_b) = H_S (only the shared pointer, no excess) :: pairwise I = [0.5224, 0.5224, 0.5224, 0.5224, 0.5224, 0.5224] (H_S=0.5224)
+PASS locality probe: non-local env-env gate still commutes with Pi_S
+PASS locality probe: non-local env-env coupling injects EXCESS pairwise correlation I(E_1:E_2) > H_S (fragments stop being independent copies) :: I(E_1:E_2) = 1.4776 > H_S=0.5224 (excess=0.9553)
+
+------------------------------------------------------------------------------
+Part 8: does the framework's transfer matrix T lie in the class?
+------------------------------------------------------------------------------
+PASS framework T: hopping (XX+YY) conserves total charge Q_total on the bond :: ||[H_T,Q_tot]||=0.00e+00
+PASS framework T: Euclidean transfer e^{-H} is positive (reflection-positive class) :: min eig = 0.3679
+PASS framework T: commutes with the conserved charge => lies in the forced class :: ||[T,Q_tot]||=0.00e+00
+
+------------------------------------------------------------------------------
+Part 9: NOT pinned -- coupling strength / action magnitude / beta
+------------------------------------------------------------------------------
+PASS NOT pinned: any coupling g>0 forms an equally good record (form, not magnitude) :: record quality across g = [0.5224, 0.5224, 0.5224, 0.5224, 0.5224] (all=H_S)
+
+------------------------------------------------------------------------------
+Part 10: source-note firewall (scope claims present in the note)
+------------------------------------------------------------------------------
+PASS source-note firewall present: It does not derive a dynamics, an action, gauge ...
+PASS source-note firewall present: It does not pin the coupling strength...
+PASS source-note firewall present: says **nothing** about `beta = 6`...
+PASS source-note firewall present: does not derive the quantum-Darwinism bridge...
+PASS source-note firewall present: does not establish the lattice/continuum or inte...
+
+------------------------------------------------------------------------------
+VERDICT (honest)
+------------------------------------------------------------------------------
+
+GENUINE CONSTRAINT, with explicit scope:
+
+  On this explicit S + E_1..E_n model, additive + redundant + persistent +
+  objective record formation by a local evolution is EQUIVALENT to
+  pointer-non-demolition [H_int, Pi_S] = 0:
+    - [H,Pi_S]=0  =>  perfect redundant additive persistent objective record
+                      (Parts 1-4): R_delta = n_env, plateau = H_S, persistent,
+                      fragments objectively agree.
+    - [H,Pi_S]!=0 =>  record fails on every count (Part 5): records the WRONG
+                      (non-pointer) observable, redundancy collapses, the
+                      recorded value oscillates (non-persistent), no objective
+                      pointer consensus.
+    - The interpolation (Part 6) shows record quality degrades MONOTONICALLY
+      and a perfect objective record exists ONLY at the zero-commutator point.
+    - NECESSITY is exact (Part 6b), not just illustrative: by the Heisenberg
+      equation d<P_k>/dt = i<[H,P_k]>, the pointer populations are frozen for
+      ALL states and ALL times IFF [H,Pi_S]=0. Verified over random H (60/60
+      sufficiency, 60/60 necessity). So persistence <=> [H,Pi_S]=0 is a
+      THEOREM about the COMMUTATION property, not the special operator.
+
+  Forced CLASS on U/T (Part 7-8):
+    (a) a CONSERVED pointer/charge observable [U,Pi_S]=0 (preferred basis),
+    (b) LOCALITY: a sum of finite-range fragment couplings -- locality is what
+        gives conditional independence of fragments given the pointer (clean
+        independent redundant copies); a non-local env-env coupling injects
+        EXCESS pairwise correlation I(E_a:E_b) > H_S and destroys it,
+    (c) the framework's number-conserving reflection-positive OS transfer T
+        = e^{-H} with [T,Q]=0 LIES IN this class.
+
+  This ADDS a temporal/FORMATION constraint to the timeless #2667 corollary:
+  #2667 fixes which ALGEBRA is observable (gauge-invariant) at fixed time;
+  this fixes a FEATURE of the time step U/T that builds the record -- a
+  conserved pointer and locality.
+
+HONEST LIMITS (no over-claim):
+  - This is RELOCATION-RESISTANT but NOT a from-nothing derivation of dynamics.
+    The result is an EQUIVALENCE THEOREM on the explicit model, conditional on
+    modelling 'record' as a redundantly-imprinted, objective, persistent system
+    observable (the quantum-Darwinism bridge). That bridge is an ADMITTED
+    identification: {Quantum, Lattice, Record} give the qubits, the locality,
+    and the ADDITIVITY of the readout, but they do NOT by themselves assert
+    that a record is a redundant imprint of a system observable. The constraint
+    is forced GIVEN that bridge.
+  - The pointer Pi_S is NOT an extra free input: einselection runs the other
+    way -- given H, the pointer is whatever observable H conserves; given the
+    demand for a persistent objective record, H must possess such a conserved
+    observable. (ii) is therefore self-consistency, not a second admission.
+  - It does NOT derive the action, the coupling g (Part 9: any g works), the
+    transfer-matrix magnitude, or beta=6. Only the FORM [H,Pi_S]=0 + locality.
+  - 'Non-demolition is necessary AND sufficient for an objective persistent
+    record' is a THEOREM on this finite model (Part 6b makes necessity exact via
+    the Heisenberg equation); the lattice/continuum and interacting
+    generalization is NOT established here.
+  - We do NOT claim 'derived the action' or 'derived the dynamics'. We claim a
+    structural FORM constraint (conserved pointer + locality) is forced by the
+    record-FORMATION requirements, on the explicit system, given the Darwinism
+    bridge.
+
+==============================================================================
+SUMMARY: PASS=40 FAIL=0
+==============================================================================

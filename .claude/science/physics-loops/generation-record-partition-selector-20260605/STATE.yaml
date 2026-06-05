@@ -1,0 +1,47 @@
+loop_slug: generation-record-partition-selector-20260605
+date: 2026-06-05
+branch: physics-loop/generation-record-partition-selector-20260605
+goal: |
+  Attack the generation partition gate: prove that, given the supplied C3
+  generation carrier and fixed K/CPT readout context, Record selects the
+  singlet/doublet central partition P0|P1 rather than three complex character
+  letters.
+target_status: bounded_theorem
+runtime_used: single-turn
+cycles_completed: 1
+active_route: real central idempotent / K-orbit selector
+hard_residual_attacked: |
+  The dynamics program needs the charged-lepton/generation record partition to
+  be native P0|P1, not an arbitrary choice between two-sector and three-mode
+  resolutions. This block proves the K/CPT record context selects P0|P1 and
+  that splitting the doublet requires a K-odd orientation import.
+files_touched:
+  - docs/GENERATION_RECORD_PARTITION_SELECTOR_2026-06-05.md
+  - scripts/generation_record_partition_selector_2026_06_05.py
+  - logs/runner-cache/generation_record_partition_selector_2026_06_05.txt
+  - .claude/science/physics-loops/generation-record-partition-selector-20260605/*
+open_imports:
+  - supplied hw=1 C3 generation carrier
+  - supplied fixed K/CPT conjugation in the readout context
+  - Record axiom orbit-readout rule
+no_go_routes:
+  - Record/K-real central readout resolves three complex character letters
+  - faithful doublet has a proper K-stable central sub-idempotent
+  - partition selector determines weights or dynamics
+runner_result: partition_selector PASS=25 FAIL=0; record_generation_readout_two_sectors PASS=32 FAIL=0
+review_findings: self-review clean; independent audit required
+pr_status: pending
+next_exact_action: |
+  Push branch and open review PR. If audited clean, use it as the partition
+  half of the dynamics gate; next attack should target the arrow/measure gate.
+stop_condition: |
+  Partition selector proved as bounded theorem; physical arrow and measure
+  selection remain open.
+status_fields:
+  actual_current_surface_status: open
+  target_claim_type: bounded_theorem
+  conditional_surface_status: bounded-support
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

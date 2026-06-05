@@ -21,5 +21,5 @@ result_summary:
   fit_rows: "random_geometric_s10, growing_n64, layered_cycle_8x8"
   degenerate_rows: "random_geometric_s8, causal_dag_10x6, causal_dag_8x8"
 next_exact_action: "Submit review PR; independent auditor decides whether this live scout packet supersedes the archived stale row."
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2641"
 stop_condition: "Review PR opened."
-

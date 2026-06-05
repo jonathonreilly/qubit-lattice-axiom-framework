@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 175 |
 | **retained_no_go** | 181 |
-| **retained_bounded** | 654 |
+| **retained_bounded** | 655 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 31 |
-| unaudited | 1286 |
+| unaudited | 1285 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1001 |
+| `audited_clean` | 1002 |
 | `audited_conditional` | 63 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1570 |
+| `unaudited` | 1569 |
 
 | claim_type | count |
 |---|---:|
@@ -606,6 +606,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9030,6 +9031,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The displayed identities independently reduce to exact finite algebra under the note's own definitions. No cited authorities, fitted data, external comparators, or physical bridge identifications are used.
 - **rationale:** The source is explicitly scoped to a bounded defined route object, and the claimed consequences are algebraic identities inside that object. Independent formula checks confirm the zero-source Q calculation, the real Z3 commutant and idempotents, the absence of commuting real rank-one projectors, the based endpoint c=0, the finite sum eta_Z3=2/9, and delta_open=2/9. The runner source computes the load-bearing symbolic quantities directly with no helper imports, calibrated constants, or physical target import; its prose-only boundary checks do not carry the algebraic conclusion.
 - **auditor confidence:** high
+
+### `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02`
+
+- **Note:** [`KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md`](../../docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Pauli/Cl(3,0) construction of a chiral Weyl boost carrier on C^2, covariance of p0 + p.sigma, faithful-over-scalar selection for spin-1/2 content, and reduction of the massive Dirac closure to the named partner-chirality residual.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-221610-2dbc6b91b6-koide_onsite_boost_reconstru`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The spin-1/2 one-particle/kernel content must restrict to j=1/2 under the rest-frame SO(3) little group, so the Pauli carrier with J^2 = 3/4 hosts it while the scalar carrier J=K=0 has J^2 = 0 and cannot.  _(class `A`)_
+- **chain closes:** True — The bounded qubit-surface claim closes by Pauli matrix algebra, SL(2,C) Weyl covariance, and the SO(3) Casimir distinction between j=1/2 and j=0 carriers. The massive positive-energy Dirac field and CAR forcing are explicitly left outside the closed scope as the partner-chirality/doubling residual.
+- **rationale:** Independent sign and factor checks match the packet: K_i = i sigma_i/2 gives [K_i,K_j] = -i epsilon_ijk J_k, the N/Ntilde Casimirs give one Weyl chirality, and exp(eta.sigma/2) implements the stated p0 + p.sigma covariance. The scalar alternative fails because its rotation Casimir is zero and it cannot covariantly transport the Pauli-valued kernel. All provided one-hop authorities are retained-grade, and the source does not claim the open massive partner-chirality field realization is closed.
+- **auditor confidence:** medium
 
 ### `koide_order_one_circulant_diagnostic_note_2026-05-29`
 

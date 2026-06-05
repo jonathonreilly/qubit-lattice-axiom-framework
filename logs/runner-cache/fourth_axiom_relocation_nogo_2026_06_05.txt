@@ -1,0 +1,67 @@
+==============================================================================
+4th-axiom dichotomy: relocation no-go vs loophole (meta / scoping)
+==============================================================================
+Claim boundary: derives nothing, imports no axiom. Observed moduli are
+OBSERVATIONAL COMPARISON ONLY. Genuinely hunts the loophole first.
+
+[A] Modulus algebra (pure, no inputs)
+  [PASS] Q(r=0)=1/3
+  [PASS] Q(r=1/2)=2/3
+  [PASS] Q(r=1)=1
+  [PASS] r_of_Q inverts Q_of_r
+
+[B] OBSERVED moduli (OBSERVATIONAL COMPARISON ONLY)
+      charged_lepton  Q=0.6667  r=(3Q-1)/2=0.5000  -> DISTINGUISHED (r=1/2: chiral-grading null <v|Gamma_chi|v>=0, Q=2/3)
+      up_quark        Q=0.8488  r=(3Q-1)/2=0.7732  -> GENERIC (plain C3 doublet+singlet, no symmetry enhancement)
+      down_quark      Q=0.7313  r=(3Q-1)/2=0.5969  -> GENERIC (plain C3 doublet+singlet, no symmetry enhancement)
+      neutrino_NO     Q=0.4920  r=(3Q-1)/2=0.2381  -> GENERIC (plain C3 doublet+singlet, no symmetry enhancement)
+  [PASS] charged lepton sits at the DISTINGUISHED r=1/2  (r_lep=0.5000)
+  [PASS] up-quark modulus is GENERIC (not in {0,1/2,1}, gap>0.2 to nearest)  (r_up=0.7732, nearest special gap=0.227)
+  [PASS] down-quark modulus is GENERIC (not at any special point)  (r_down=0.5969)
+
+[C] Loophole route 1: parameter-free Z^3 Green function vs moduli
+  [PASS] Watson constant G(0) reproduced (parameter-free lattice number)  (G(0)=0.251862 vs 0.2527310)
+      Parameter-free Green ratios are dimensionless numbers in (0,1).
+      Ratios landing in the modulus window (0.4, 0.9): 42
+      Window span=0.50, count=42, mean gap=0.0119.
+      Canonical (a-priori) first-shell ratios:
+        G(100)/G(000)   =0.33826   nearest r_lep (|d|=0.1617)
+        G(110)/G(100)   =0.63762   nearest r_down (|d|=0.0407)
+        G(111)/G(110)   =0.78622   nearest r_up (|d|=0.0130)
+        G(111)/G(100)   =0.50131   nearest r_lep (|d|=0.0013)
+        G(200)/G(100)   =0.49322   nearest r_lep (|d|=0.0068)
+      Best-match vs density-expected (the look-elsewhere control):
+        r_up: best |d|=0.0003 via G(200)/G(110) ; density-expected~0.0060  -> EXPECTED (no signal)
+        r_down: best |d|=0.0048 via G(221)/G(111) ; density-expected~0.0060  -> EXPECTED (no signal)
+        r_lep: best |d|=0.0005 via G(220)/G(110) ; density-expected~0.0060  -> EXPECTED (no signal)
+  [PASS] each modulus' best Green-ratio match is within ~density expectation (=> matches are LOOK-ELSEWHERE artifacts, not a mechanism)  (dense window forces a sub-1% hit for any target; not evidence)
+  [PASS] no SINGLE canonical pre-specified Green quantity equals a modulus to <1e-3 (the bar for 'parameter-free derivation')  (closest canonical ratios miss the moduli at the % level)
+
+[D] Loophole route 2: simple exact cross-sector relations
+      relation                  value    nearest   rel.err   drift(+4% mid mass)
+        r_up/r_lep   vs 3/2      1.54641  1.50000   3.09%     0.0072
+        r_down/r_lep vs 6/5      1.19388  1.20000   0.51%     0.0090
+        r_up/r_down  vs 13/10    1.29528  1.30000   0.36%     0.0038
+        (r_up+r_down)/2 vs 2/3   0.68506  0.66667   2.76%     0.0041
+        r_up+r_down  vs 4/3      1.37012  1.33333   2.76%     0.0081
+        r_up*r_down  vs 4/9      0.46154  0.44444   3.85%     0.0056
+  [PASS] no simple cross-sector relation is BOTH tight (<0.2%) and precision-stable (=> all near-misses are fit coincidences; no input reduction)  (best near-miss r_up/r_down~13/10 is 0.36% and drifts ~ its own gap)
+      [obs] Q(c,b,t)=0.6692 (~2/3: heavy triplet near lepton point); Q(all 6 quarks)=0.6363 (~7/11=0.6364)
+  [PASS] heavy-triplet Q(c,b,t)~2/3 is a SELECTIVE coincidence (re-grouping species), it does NOT predict the up/down moduli  (Q(s,c,b) far from 2/3 => triplet-Koide is not a sector law)
+
+[E] Dichotomy structural statement
+  [PASS] all symmetry-enhanced / chiral-distinguished dial points are special {0, 1/2, 1}
+  [PASS] the GENERIC observed quark moduli avoid every distinguished point (so EXTREMUM-type dynamics gives the WRONG value for quarks)  (extremum/fixed-point/equilibrium dynamics -> special -> quark-falsified)
+  [PASS] a generic r is the squared free-amplitude ratio |b|^2/a^2: selecting it needs a continuous coupling => RELOCATION
+
+==============================================================================
+RESULT: PASS=15 FAIL=0
+Verdict: RELOCATION-NO-GO-HOLDS. No parameter-free lattice/spectral
+quantity equals a generic modulus (Green-ratio hits are look-elsewhere
+artifacts of a densely-filled window); no simple exact cross-sector
+relation reduces the input (near-misses are precision-sensitive); the
+dial's only distinguished points are {0,1/2,1}, so extremum dynamics
+gives special (quark-falsified) values while generic output needs a
+free amplitude. The kinematic floor (one continuous modulus per sector)
+is the honest endpoint -- with two openings flagged in the note.
+==============================================================================

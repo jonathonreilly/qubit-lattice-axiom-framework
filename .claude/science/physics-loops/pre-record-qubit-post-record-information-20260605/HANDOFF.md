@@ -11,6 +11,8 @@ information interpretation:
 
 The runner passes with `PASS=29 FAIL=0`.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2708
+
 ## Meaning
 
 The qubit is typed as the pre-record carrier of possible outcomes. The durable
@@ -37,5 +39,5 @@ post-record atom.
 
 ## Next exact action
 
-Commit, push, open a physics-loop PR, then use this artifact as upstream support
-for the generation-prior stability runner.
+Use this artifact as upstream support for the generation-prior stability
+runner.

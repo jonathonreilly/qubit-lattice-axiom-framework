@@ -23,6 +23,7 @@ open_imports:
   - generation/Koide prior-selection stability rule
   - audit decision whether durable registration already includes re-readability
 review_disposition: local_self_review_pass
-pr_status: not_opened_yet
-next_exact_action: commit, push, open a physics-loop PR
+pr_status: opened
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2708
+next_exact_action: use this artifact as upstream support for a generation-prior stability runner
 stop_condition: one coherent bounded-support block completed

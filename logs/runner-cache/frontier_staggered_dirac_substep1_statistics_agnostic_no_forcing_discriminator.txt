@@ -1,0 +1,95 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py
+runner_sha256: 861a8cb2edb607f055982eefa1cc96c6478f329de8b4c4f69af90dadc2aab9ee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.05
+status: ok
+----- stdout -----
+==============================================================================
+SUBSTEP-1 STATISTICS: is the Grassmann/fermion reading FORCED or COMPATIBLE?
+==============================================================================
+
+------------------------------------------------------------------------------
+(A) bare per-site qubit ladders at distinct sites COMMUTE (not anticommute)
+------------------------------------------------------------------------------
+  [PASS] [a_0, a_1] = 0 (commute)
+  [PASS] [a_0, a_1^dag] = 0 (commute)
+  [PASS] {a_0, a_1} != 0 (do NOT anticommute)
+  [PASS] [a_0, a_2] = 0 (commute)
+  [PASS] [a_0, a_2^dag] = 0 (commute)
+  [PASS] {a_0, a_2} != 0 (do NOT anticommute)
+  [PASS] [a_1, a_2] = 0 (commute)
+  [PASS] [a_1, a_2^dag] = 0 (commute)
+  [PASS] {a_1, a_2} != 0 (do NOT anticommute)
+  [PASS] on-site nilpotent: (a_x)^2 = 0
+
+------------------------------------------------------------------------------
+(B) Jordan-Wigner operators c_x = (prod_{y<x} sigma_3) . a_x satisfy cross-site CAR
+------------------------------------------------------------------------------
+  [PASS] {c_0, c_1} = 0
+  [PASS] {c_0, c_1^dag} = 0 (x != y)
+  [PASS] {c_0, c_2} = 0
+  [PASS] {c_0, c_2^dag} = 0 (x != y)
+  [PASS] {c_1, c_2} = 0
+  [PASS] {c_1, c_2^dag} = 0 (x != y)
+  [PASS] on-site {c_x, c_x^dag} = I
+  [PASS] on-site (c_x)^2 = 0
+
+------------------------------------------------------------------------------
+(C) qubit-ladder algebra and JW-fermion algebra are the SAME M_{2^N}(C)
+------------------------------------------------------------------------------
+  [PASS] N=2: qubit-ladder algebra spans full M_4 (dim 16)  (got 16)
+  [PASS] N=2: JW-fermion algebra spans full M_4 (dim 16)  (got 16)
+  [PASS] N=2: same algebra => statistics is a FRAME choice, not forced
+  [PASS] N=3: qubit-ladder algebra spans full M_8 (dim 64)  (got 64)
+  [PASS] N=3: JW-fermion algebra spans full M_8 (dim 64)  (got 64)
+  [PASS] N=3: same algebra => statistics is a FRAME choice, not forced
+
+------------------------------------------------------------------------------
+(D) per-site Fock dim: fermion = hard-core boson = 2; only FREE boson is infinite
+------------------------------------------------------------------------------
+  [PASS] hard-core boson / fermion per-site dim = 2 (a^dag^2|0> = 0)
+  [PASS] free-boson per-site Fock dim grows without bound (excluded by dim-2)  (truncated dims [2, 3, 6, 11, 101])
+  [PASS] => dim-2 readout excludes FREE boson but NOT hard-core boson vs fermion
+
+------------------------------------------------------------------------------
+(E) locality horn: lex JW string spans L^2-1 sites for slow-axis nn pairs
+------------------------------------------------------------------------------
+  [PASS] L=3: z-direction nn JW string length = 8 (= L^2-1, non-local)
+  [PASS] L=3: x-direction nn JW string length = 0 (local along fast axis)
+  [PASS] L=4: z-direction nn JW string length = 15 (= L^2-1, non-local)
+  [PASS] L=4: x-direction nn JW string length = 0 (local along fast axis)
+  [PASS] L=5: z-direction nn JW string length = 24 (= L^2-1, non-local)
+  [PASS] L=5: x-direction nn JW string length = 0 (local along fast axis)
+  [PASS] brute-forced bandwidth of the 2x2x2 grid graph > 1 (no ordering makes every neighbour adjacent => no fully-local JW frame)  (min-bandwidth = 4)
+
+==============================================================================
+VERDICT
+==============================================================================
+  SUBSTEP-1 IS A COMPATIBILITY, NOT A FORCING.
+  (A) The bare qubit-ladder operators COMMUTE across sites: the
+      hard-core-boson reading remains dim-2 per site.
+  (B) A Jordan-Wigner string turns them into cross-site CAR (fermions),
+  (C) but the qubit-ladder algebra and the JW-fermion algebra are the
+      SAME full matrix algebra M_{2^N}; JW is an invertible change of
+      generators, so the checked ungraded algebra/dimension data leave
+      'fermion' vs 'qubit' as a FRAME choice, not forced.
+  (D) Per-site dim 2 holds for fermion AND hard-core boson alike; the
+      retained dim-2 readout only excludes the FREE boson (dim inf).
+  (E) The fermionic frame is NON-LOCAL in 3D (JW string ~ L^2 for some
+      nn pairs in checked/supporting senses), so it is not locally
+      selected by the qubit lattice either.
+
+  Honest consequence: the Axiom 1 / Axiom 2 baseline does not DERIVE
+  Grassmann/fermionic statistics by these operator-algebra and dimension
+  facts; it leaves a statistics-selection candidate on equal footing with
+  the hard-core-boson reading. This corrects the unaudited broad
+  grassmann_forcing_theorem, whose Grassmann-vs-free-boson dichotomy
+  omits the hard-core boson.
+
+==============================================================================
+PASS=34 FAIL=0
+
+----- stderr -----
+

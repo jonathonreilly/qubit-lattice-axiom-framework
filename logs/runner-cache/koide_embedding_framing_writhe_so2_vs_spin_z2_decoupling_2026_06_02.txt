@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py
+runner_sha256: 0a70edb7166d1a828d856c5dbda7c13d8c08e7224ad269635abf68ff2f7162cd
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 0.36
+status: nonzero_exit
+----- stdout -----
+Traceback (most recent call last):
+  File "/private/tmp/cl3-audit-ready.qjyQha/repo/scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py", line 39, in <module>
+    import numpy as np, sympy, networkx as nx
+ModuleNotFoundError: No module named 'networkx'
+
+----- stderr -----
+

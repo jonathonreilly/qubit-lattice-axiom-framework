@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 174 |
+| **retained** | 175 |
 | **retained_no_go** | 180 |
 | **retained_bounded** | 647 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1297 |
+| unaudited | 1296 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 991 |
+| `audited_clean` | 992 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1581 |
+| `unaudited` | 1580 |
 
 | claim_type | count |
 |---|---:|
@@ -820,6 +820,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_mechanism_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -12240,6 +12241,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The det=+1 elements of the S_3 permutation representation are exactly A_3 = C_3 = {id, (012), (021)}, while the transpositions have det=-1.  _(class `A`)_
 - **chain closes:** True — The determinant signs, subgroup closure, and generic degeneracy lift are standard finite-group and linear-algebra facts and are directly checked by the runner. The physical bridge from the framework's positivity principle to this orientation criterion is explicitly excluded from the audited claim.
 - **rationale:** The runner genuinely computes permutation matrices, restricted E-block determinants, subgroup closure, and a C_3-averaged Hermitian example rather than merely printing constants. The audited claim is conditional and bounded: it proves selection by an admitted determinant-orientation criterion, not that the framework's positivity principle supplies that criterion. Within that stated scope, the chain closes by algebraic identity checks and contains no external numerical comparator, fitted input, or hidden upstream authority.
+- **auditor confidence:** high
+
+### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Unique tracial C*-state on the qubit-lattice quasi-local algebra tensor_{x in Z^3} M_2(C), with finite-region restrictions equal to normalized matrix trace; excludes the separate no-extra-structure/global density-matrix identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-194748-2f5c3544b2-powers_uhf_tracial_uniquenes`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Any tracial state restricts on each finite matrix algebra A_Lambda to the unique normalized trace, so it agrees with tau_infty on the dense local subalgebra and norm-continuity extends equality to all of A.  _(class `A`)_
+- **chain closes:** True — The finite tensor algebras are full matrix algebras with unique normalized trace, and the displayed tensor-normalization compatibility is correct. The compatible local trace extends to the inductive-limit state, while density of A_loc and boundedness of states extend both uniqueness and the tracial identity to the quasi-local closure.
+- **rationale:** The cited minimal-axiom authority is flagged as an accepted axiom premise and supplies the Z^3 site set and one-qubit local algebra needed for the construction. The load-bearing argument is an algebraic/standard C*-closure: finite-dimensional trace uniqueness, correct tensor trace compatibility, inductive-limit extension, and norm-continuity on a dense local subalgebra. No runner is needed to judge this theorem, and no external comparator or tuned numerical input enters. The clean verdict is only for the narrow C*-algebraic unique-trace theorem and finite-region rho_ref agreement, not for any broader philosophical identification.
 - **auditor confidence:** high
 
 ### `pre_record_reference_state_tracial_derivation_note_2026-05-20`

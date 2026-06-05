@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 664 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 32 |
-| unaudited | 1255 |
+| unaudited | 1254 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 72 |
+| ~~audited_conditional~~ | 73 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1022 |
-| `audited_conditional` | 72 |
+| `audited_conditional` | 73 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1539 |
+| `unaudited` | 1538 |
 
 | claim_type | count |
 |---|---:|
@@ -1200,6 +1200,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7778,6 +7779,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The live replay asserts the archived scaffolded 7/9 free_coh result against the old 6/9 two-property rule, while the source note's 2026-04-07 update and dependency restrict that result to scaffold-specific historical evidence.  _(class `C`)_
 - **chain closes:** True — The primary runner completes and asserts the bounded archived scaffolded numbers, and the direct dependency is retained-bounded for the off-scaffold reversal. The clean scope excludes any generator-agnostic predictor or simple-classifier exhaustion theorem.
 - **rationale:** The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here.
+- **auditor confidence:** high
+
+### `graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note`
+
+- **Note:** [`GRAPH_BRAID_N3_FERMION_SIGN_STAYS_NONFIBERED_NARROW_THEOREM_NOTE.md`](../../docs/GRAPH_BRAID_N3_FERMION_SIGN_STAYS_NONFIBERED_NARROW_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite N=3 graph-braid witnesses only: K_5, K_{3,3}, a Z^3-cube K_{3,3} subdivision witness, and stated subdivision-stability checks for the non-fibered codim-1 exchange class.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-232213-55422ec7b1-graph_braid_n3_fermion_sign_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner-computed integral H_1 and GF(2) cohomology/fibered-subspace tests show H_1(UD_3(K_5)) = Z^6 (+) Z_2 and codimension exactly 1 for the base-edge link-sign span at N=2 and N=3, so the exchange class remains non-fibered.  _(class `C`)_
+- **chain closes:** False — The restricted packet contains no completed load-bearing run: the cached runner exits nonzero immediately because networkx is unavailable. The included source appears intended to perform first-principles finite chain-complex and GF(2) computations, but the asserted numerical results are not produced in the packet.
+- **rationale:** The note's conclusion depends on exact Smith normal form and GF(2) cohomology dimensions, including the codim-1 fibered-complement claim. The runner source is not just printing constants, but the actual cached execution failed before any scientific checks ran, so the claimed SCORECARD PASS=26 is not available in this restricted audit packet. This is an artifact/compute packaging blocker rather than a derivation, renaming, or numerical-match issue.
 - **auditor confidence:** high
 
 ### `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29`

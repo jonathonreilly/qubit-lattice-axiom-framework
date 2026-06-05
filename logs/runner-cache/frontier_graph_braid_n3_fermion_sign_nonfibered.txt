@@ -1,0 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py
+runner_sha256: a8ea94f089cc85ce13e818b4e05c71e7478cd57767a80f2ac4967b75344d992b
+timeout_sec: 180
+exit_code: 1
+elapsed_sec: 0.14
+status: nonzero_exit
+----- stdout -----
+FAIL: networkx not available: No module named 'networkx'
+
+----- stderr -----
+

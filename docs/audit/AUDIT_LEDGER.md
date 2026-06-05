@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 175 |
-| **retained_no_go** | 181 |
+| **retained_no_go** | 182 |
 | **retained_bounded** | 647 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1290 |
+| unaudited | 1289 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 994 |
+| `audited_clean` | 995 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1574 |
+| `unaudited` | 1573 |
 
 | claim_type | count |
 |---|---:|
@@ -208,6 +208,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2511,6 +2512,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The dual group of Z^3 is T^3 realized as [-π,π]^3, so its Haar-probability measure in d^3k coordinates is d^3k/(2π)^3 because vol([-π,π]^3)=(2π)^3.  _(class `A`)_
 - **chain closes:** True — The chain closes from the accepted Lattice axiom Z^3 plus standard Pontryagin duality and Haar normalization. Independently, the character pairing n·k with k mod 2π gives dual torus (R/2πZ)^3, whose coordinate fundamental-domain volume is (2π)^3, so normalized Haar density is exactly 1/(2π)^3.
 - **rationale:** The load-bearing step is an algebraic closure over the accepted Z^3 substrate and standard harmonic-analysis facts, not a fitted numerical comparison or symbol renaming. The continuum Fourier convention is used only after the substrate-side (2π)^3 has already been obtained, so it is non-load-bearing. The runner source performs exact symbolic volume and normalization checks plus bounded numerical sanity checks; its PASS output is consistent with the independent derivation, though some runner checks are only illustrative rather than theorem-proving.
+- **auditor confidence:** high
+
+### `car_from_positivity_neutrality_note_2026-06-02`
+
+- **Note:** [`CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md`](../../docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-local audit: finite transfer-operator positivity, the associated Stone spectrum, and the explicitly tested two-slice reflected Gram witness do not select cross-site CAR over the hard-core-boson frame in the constructed finite qubit hopping models.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-f4a919436a-car_from_positivity_neutrali`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the open L = 4 chain the HCB and Jordan-Wigner nearest-neighbor hopping Hamiltonians are identical matrices, while on the closed ring the spectra differ but both Hermitian bounded Hamiltonians still give positive transfer operators.  _(class `C`)_
+- **chain closes:** True — The runner source genuinely constructs the HCB and JW ladder operators, transfer operators, Gram matrices, open-chain Hamiltonians, and ring Hamiltonians from finite one-qubit tensor products, rather than importing or hard-coding the contested conclusion. The conclusion is correctly narrowed to the tested positivity route and does not claim a global no-go against fermions or full reflection-positive fermion measures.
+- **rationale:** The only cited upstream authority is the minimal-axiom memo, explicitly flagged as an accepted axiom premise, so it does not trigger the conditional downgrade. The runner performs finite matrix construction and spectral/PSD checks from the one-qubit algebra and finite lattice adjacency, and its source supports the stdout claims. The no-go discipline gate is satisfied only in the route-local sense: alternative selectors such as graded locality, fermion-parity superselection, boundary data, or continuum spin-statistics are explicitly left open.
 - **auditor confidence:** high
 
 ### `carrier_orbit_invariance_note_2026-05-03`

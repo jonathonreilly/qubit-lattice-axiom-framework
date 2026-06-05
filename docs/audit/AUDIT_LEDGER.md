@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 174 |
 | **retained_no_go** | 181 |
-| **retained_bounded** | 652 |
+| **retained_bounded** | 653 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1291 |
+| unaudited | 1290 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 997 |
+| `audited_clean` | 998 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1575 |
+| `unaudited` | 1574 |
 
 | claim_type | count |
 |---|---:|
@@ -590,6 +590,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dkd_berry_spectator_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_fisher_rao_spherical_reorganization_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8777,6 +8778,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** P M(a,b) P = M(a,conj(b)), and for transpose-preserving extensions O(a,conj(b)) = O(a,b)^T so the spectrum is unchanged under b -> conj(b).  _(class `A`)_
 - **chain closes:** True — The identity follows by linearity from P C P = C^2 and P C^2 P = C. Similarity and transpose preserve the characteristic polynomial, and the displayed spectral one-form is exact as d sum_k G(lambda_k) with G' = g.
 - **rationale:** The load-bearing statement is a finite algebraic identity, not a renaming or a numerical fit. The runner source genuinely performs symbolic, eigenvalue, curl, and finite-matrix checks, with no opaque helper imports or hard-coded contested premise. The claim is explicitly bounded to spectrum-only functionals and transpose-preserving real extensions, so the open future routes listed in the note are outside the audited conclusion rather than hidden dependencies.
+- **auditor confidence:** high
+
+### `koide_fisher_rao_spherical_reorganization_note_2026-06-01`
+
+- **Note:** [`KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md`](../../docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the Fisher-Rao spherical coordinate identity for positive masses and the bounded azimuth no-selection statement; PDG masses and tau tuning are observational comparator checks, not derivations.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-220210-0a70f25d63-koide_fisher_rao_spherical_r`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For x_k=sqrt(m_k), cos^2(theta_p)=(sum x_k)^2/(3 sum x_k^2)=1/(3Q), and the round Fisher-Rao metric has g_phi_phi=sin^2(theta) independent of phi, so d/dphi is a Killing direction and the metric alone cannot select 2/9.  _(class `A`)_
+- **chain closes:** True — The polar identity follows directly from the dot product with (1,1,1)/sqrt(3) and Q=sum x_k^2/(sum x_k)^2. The azimuth no-selection follows from the phi-independent round metric; no additional source functional selecting longitude is supplied or claimed.
+- **rationale:** An independent algebraic check confirms the displayed polar-angle/Q identity and the spherical-metric phi-isometry. The runner source actually computes the symbolic identity, the metric derivative, the Brannen-coordinate recovery, drift, and comparator quantities rather than merely printing pass lines. The PDG and tuned-tau checks are comparator checks, but the note explicitly scopes them as non-load-bearing, so they do not downgrade the bounded theorem. All cited authorities in the restricted packet are retained-grade for the purposes consumed here.
 - **auditor confidence:** high
 
 ### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`

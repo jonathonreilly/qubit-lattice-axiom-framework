@@ -1,0 +1,118 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_d10_coefficient_2026_06_04.py
+runner_sha256: 2050c35228ec586ba8f9292967cf9973373bfba1a24857d37d61ecd2675fcb82
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 128.54
+status: ok
+----- stdout -----
+================================================================================
+EXACT order-beta^10 connected coefficient d_10 + radius-of-convergence evidence
+================================================================================
+
+V0. cube-sector closed form 72 K''(K')^5 reproduces d_5..d_8 (reproven, cited)
+  [PASS] cube closed form 72 K''(K')^5 reproduces the direct-engine d_5..d_8 EXACTLY (validates the closed form before its order-9/10 coefficients are used)
+         d_5=1/472392; d_6=7/5668704; d_7=5/17006112; d_8=5/272097792
+  [PASS] cube(9) = 72 K''(K')^5 [b^9] = -235/29386561536 (NEGATIVE; regression vs d_9 note)
+         cube(9) = -235/29386561536 = -7.996853e-09
+  [PASS] cube(10) = 72 K''(K')^5 [b^10] = -4081/1763193692160 (NEGATIVE)
+         cube(10) = -4081/1763193692160 = -2.314550e-09
+
+V1. order-10 contributing classes (GF(3) cycle-space weight spectrum)
+  [PASS] GF(3) 2-cycle weight spectrum through p0 = {6,10,11,12}; cubes span the cycle space; 4 cubes through p0. At order 10 only weights 6 (cube), 10, 11 contribute (weight 12 first contributes at order 11: a = 11 action faces)
+         weights(<=2 cubes) = {6: 8, 10: 80, 11: 92, 12: 224}; span=True, cubes_thru_p0=4
+
+  weight-10 supports (60, reused from the d_9 engine) ...
+  [PASS] weight-10: 60 supports, STABLE radius-2 == radius-3 (one orbit; validated d_9)
+         radius2=60, radius3=60
+  weight-11 supports (NEW at order 10), streamed ...
+  [PASS] weight-11: 66 supports, STABLE radius-2 == radius-3 (completeness by patch stabilization)
+         radius2=66 (36096 pair-combos streamed), radius3=66
+  [PASS] independent GF(3) cube-combination enumeration (up to 3 cubes) reproduces the SAME 66 weight-11 supports => no 3-cube-only or epsilon-irreducible cycle; every weight-11 2-cycle is exactly two cubes sharing one face (6+6-1=11)
+         combo(<=3 cubes) -> 66 supports; identical to pair = True
+  [PASS] weight-11 supports all have per-link max incidence 3 (the incidence-3 links are where the epsilon (3,0)/(0,3) BARYON-singlet closure first activates at order 10) -- one geometric orbit
+         max-incidence distribution across the 66 supports: {3: 66}
+
+V2. baryon / epsilon (det) sector: N0(3,0)=1 closure opens at order 10
+  [PASS] the SU(3) epsilon baryon-singlet sector is in the engine: projector(3,0) and projector(0,3) each have exactly N0=1 invariant; the (3,0) link integral is eps_i eps_j / 6 (e.g. T[(012),(012)] = 1/6)
+         N0(3,0)=1, N0(0,3)=1, T30[(012),(012)]=1/6
+  [PASS] a weight-11 word genuinely EXERCISES the baryon closure: over its 2^11 orientations it produces pure (3,0) and pure (0,3) links (the det/epsilon channel) -- so the baryon sector opens at order 10 as expected, but as a per-link invariant-sector effect INSIDE weight-11, not a separate support
+         pure-(3,0) link occurrences = 1024, pure-(0,3) = 1024 (across orientations)
+
+V3. exact order-10 class values (orbit collapse) + order-9 regression
+  V3a. REGRESSION: weight-10 class at order 9 = +5/16529940864 (d_9 new part)
+  [PASS] weight-10 class @ order 9 = 5/16529940864 (REGRESSION vs d_9 note; orbit collapse reproduces the d_9 new-support part)
+         weight-10@9 = 5/16529940864
+  [PASS] d_9 REGRESSION = cube(9) + weight-10@9 = -235/29386561536 + 5/16529940864 = -2035/264479053824 (reproduces the on-main d_9 EXACTLY)
+         d_9 (regression) = -2035/264479053824 = -7.69437114e-09
+  V3b. weight-10 class @ order 10 (orbit collapse) ...
+  [PASS] weight-10 class @ order 10 = 55/198359290368 (= 60 * 11/2380311484416; one orbit) -- cross-checks the landed closed form 1080 K''(K')^9 [b^10]
+         weight-10@10 = 55/198359290368 = 2.772746e-10
+  V3c. weight-11 class @ order 10 (orbit collapse; the NEW + baryon-active class) ...
+  [PASS] weight-11 class @ order 10 = 11/198359290368 (= 66 * 1/1190155742208; one orbit; 1190155742208 = 6*18^9) -- NEW at d_10, the baryon/epsilon-active class
+         weight-11@10 = 11/198359290368 = 5.545493e-11
+  [PASS] closed-form cross-check: weight-10@10 == 1080 K''(K')^9 [b^10] (the landed two-cube closed form, frontier_beta6_twocube_closedform)
+         1080 K''(K')^9 [b^10] = 55/198359290368 == engine 55/198359290368
+
+V4. assemble d_10 = cube(10) + weight-10@10 + weight-11@10
+  [PASS] d_10 = -4081/1763193692160 + 55/198359290368 + 11/198359290368 = -10483/5289581076480 (NEGATIVE; same sign as d_9)
+         d_10 = -10483/5289581076480 = -1.98182046e-09; d_10/d_9 = 953/3700 = 0.257568 (cube -2.3146e-09 + w10 2.7727e-10 + w11 5.5455e-11)
+
+V5. radius of convergence evidence from d_5..d_10 (d-log Pade + first-order DA)
+  successive ratios d_n/d_{n-1}: d6/d5=7/12, d7/d6=5/21, d8/d7=1/16, d9/d8=-407/972, d10/d9=953/3700
+  [PASS] the successive ratios are non-monotone and CHANGE SIGN (d_9/d_8 < 0): the signature of a dominant COMPLEX-CONJUGATE singularity pair (a Fisher/Lee-Yang zero), NOT a single real pole -- so naive ratio extrapolation is invalid here
+         ratios [0.5833333333333334, 0.23809523809523808, 0.0625, -0.41872427983539096, 0.25756756756756755]; sign changes = 2
+
+  d-log Pade nearest singularities (d_5..d_10; [2/2] is ACTIVATED by d_10):
+     [0/1]   |x_c| =   9.333333  arg =    3.1416  REAL (spurious)
+     [0/2]   |x_c| =   4.809826  arg =   -1.8314  COMPLEX pair
+     [0/3]   |x_c| =   4.402051  arg =     1.455  COMPLEX pair
+     [0/4]   |x_c| =   4.538552  arg =   -1.2754  COMPLEX pair
+     [1/1]   |x_c| =      3.375  arg =       0.0  REAL (spurious)
+     [1/2]   |x_c| =   6.621701  arg =   -1.2909  COMPLEX pair
+     [1/3]   |x_c| =   5.497743  arg =   -1.3011  COMPLEX pair
+     [2/1]   |x_c| =   154.7463  arg =       0.0  REAL (spurious)
+     [2/2]   |x_c| =    5.38609  arg =   -1.2337  COMPLEX pair
+     [3/1]   |x_c| =  0.1918854  arg =    3.1416  REAL (spurious)
+
+  first-order differential approximants (singularity = nearest zero of Q_L):
+     DA[Q2/R1/T0]: |x_c| = 5.881337  arg = -1.3616  COMPLEX pair
+     DA[Q2/R2/T0]: |x_c| = 4.936659  arg = -1.0983  COMPLEX pair
+     DA[Q2/R1/T1]: |x_c| = 4.811929  arg = -1.3431  COMPLEX pair
+     DA[Q2/R0/T1]: |x_c| = 3.725359  arg = -1.3056  COMPLEX pair
+
+  HEADLINE [2/2] d-log Pade (activated by d_10): x_c = (1.781234 - 5.083028j), R = |x_c| = 5.38609, arg = -70.688 deg
+  [PASS] the d_10-ACTIVATED [2/2] d-log Pade (balanced diagonal; the strongest 6-coefficient estimator) finds a COMPLEX-CONJUGATE pair with R = |x_c| ~ 5.4 (x_c ~ 1.78 +/- 5.08 i), i.e. R < 6
+         R[2/2] = 5.38609 < 6 (complex pair (1.78123 - 5.08303j))
+  [PASS] EVIDENCE: across all complex-pair-resolving approximants R clusters BELOW 6 (median ~5; the majority < 6), supporting Delta(beta) divergence at beta = 6. This favors the literature Fisher-zero |beta_c| ~ 5.7 (< 6) over the earlier 5-coefficient ratio estimate R ~ 8
+         complex-pair |x_c| set = [3.73, 4.4, 4.54, 4.81, 4.81, 4.94, 5.39, 5.5, 5.88, 6.62]; median = 4.874; below 6 = 9/10
+
+  forward truncated Delta(6) [d_5..d_10] = -0.01013184; P_1plaq(6)=K'(6)=0.42253174; truncated <P>(6)=0.4123999 (comparator 0.594, NEVER an input). The R<6 evidence says to treat this as a divergent-or-borderline strong-coupling partial sum, not as a closure route.
+
+================================================================================
+EXACT CONNECTED COEFFICIENTS d_5..d_10 of Delta(beta):
+   d_5 = 1/472392 = 2.11688598e-06
+   d_6 = 7/5668704 = 1.23485015e-06
+   d_7 = 5/17006112 = 2.94011941e-07
+   d_8 = 5/272097792 = 1.83757463e-08
+   d_9 = -2035/264479053824 = -7.69437114e-09
+   d_10 = -10483/5289581076480 = -1.98182046e-09
+--------------------------------------------------------------------------------
+   d_10 PIECES: cube(10) = -4081/1763193692160 = -2.314550e-09
+                weight-10@10 = 55/198359290368 = 2.772746e-10
+                weight-11@10 = 11/198359290368 = 5.545493e-11 (NEW; baryon/eps-active)
+                baryon/epsilon = folded into weight-11@10 (+ w10@10 inc-3 vectors), NOT separate
+   d_10 = -10483/5289581076480 = -1.98182046e-09  (NEGATIVE; d_10/d_9 = 953/3700)
+   RADIUS: complex-conjugate pair, [2/2] x_c ~ (1.78123 - 5.08303j), R ~ 5.3861 < 6
+           => supports Delta divergence at beta=6 (consistent with literature Fisher-zero ~5.7; earlier R~8 disfavored)
+================================================================================
+SCORECARD: PASS=19 FAIL=0   (128.0s, peak RSS 0.50 GB)
+================================================================================
+d_10 is an EXACT strong-coupling coefficient (bounded result). The radius
+evidence for R<6 is a 6-coefficient differential-approximant ESTIMATE: the complex-
+pair structure + R<6 are robust; the precise R~5.4 carries ~+/-1 uncertainty.
+This is NOT a beta=6 closure -- the infinite-hierarchy obstruction stands.
+0.594 is a Monte-Carlo comparator, never a derivation input.
+
+----- stderr -----
+

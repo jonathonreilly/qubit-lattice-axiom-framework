@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 617 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1385 |
+| unaudited | 1384 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 23 |
-| ~~audited_conditional~~ | 29 |
+| ~~audited_conditional~~ | 30 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 940 |
-| `audited_conditional` | 29 |
+| `audited_conditional` | 30 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1669 |
+| `unaudited` | 1668 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 215 | 39.26 | `unaudited` | unaudited |
 | 8 | `native_gauge_closure_note` | positive_theorem | critical | 1137 | 38.15 | `audited_clean` | **retained** |
 | 9 | `alpha_s_derived_note` | bounded_theorem | critical | 767 | 38.09 | `unaudited` | unaudited |
-| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1034 | 38.02 | `unaudited` | unaudited |
+| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1034 | 38.02 | `audited_conditional` | ~~audited_conditional~~ |
 | 11 | `yt_ew_color_projection_theorem` | no_go | critical | 601 | 37.73 | `audited_clean` | **retained_no_go** |
 | 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1027 | 37.51 | `audited_clean` | **retained** |
 | 13 | `key_terminology` | meta | critical | 1032 | 36.51 | `unaudited` | meta |
@@ -1098,6 +1098,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -15734,6 +15735,22 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yt_ward_identity_derivation_theorem`
+
+- **Note:** [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Only the unit-normalized H_unit scalar-singlet matrix element on a chosen Q_L = (2,3) basis component at the canonical bare surface; no SM Yukawa, Planck-surface ratio, tadpole transport, NLO, or physical readout claim is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-160551-0879b034da-yt_ward_identity_derivation_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Eq. (3.8): from H_unit = (1/sqrt(N_c N_iso)) sum_{alpha,a} psi-bar psi, the top-basis matrix element is (1/sqrt(6)) * 1 = 1/sqrt(6), written as g_bare/sqrt(6) on the g_bare = 1 canonical surface.  _(class `C`)_
+- **chain closes:** False — The finite-dimensional normalization math closes once the six-component Q_L block, H_unit definition, and canonical fermion/scalar normalizations are granted. The restricted packet does not close the stated open gates for the staggered-Dirac/canonical bare-action surface or the g_bare = 1 convention used to write the result as g_bare/sqrt(6).
+- **rationale:** Independently, a unit vector uniformly spread over six orthonormal Q_L basis-pair components has overlap 1/sqrt(6) with any one component, so the narrowed matrix-element arithmetic is sound. The runner source contains real index-contraction, Fierz, and singlet-state computations, while the plaquette helper enters only non-load-bearing context. However, the source note explicitly conditions on open/admitted staggered-Dirac/canonical-surface and g_bare = 1 inputs, and the provided 2026-06-04 minimal axiom memo keeps those outside the axioms. Those gates are not closed by the restricted packet, so the theorem is conditional rather than clean.
+- **open / conditional deps cited:**
+  - `G_BARE_DERIVATION_NOTE.md`
+  - `MINIMAL_AXIOMS_2026-06-04.md`
 - **auditor confidence:** high
 
 ### `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17`

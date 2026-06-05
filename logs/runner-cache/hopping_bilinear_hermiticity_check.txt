@@ -1,14 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/hopping_bilinear_hermiticity_check.py
-runner_sha256: fdc06cbf93d09194af7056d95872d53720555f68421e5bd08bf7fa9e349ed13b
+runner_sha256: 63e51a548221054e35980475401535c2896e740103c4500df3bfb75ce4b31e08
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ========================================================================
 HOPPING BILINEAR H_{xy} = a_x^† a_y + h.c. — Hermitian + translation-covariant
 ========================================================================
+
+------------------------------------------------------------------------
+TEST 0: load-bearing tensor-product bridge is retained-grade
+------------------------------------------------------------------------
+  tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25
+  bridge ledger effective-status field: retained
+  STATUS: PASS
 
   Toy model: 4×4×4 = 64 sites; dim Fock = 2^64 = ... (too big)
   Use 1D toy: N = 4 sites, dim = 16
@@ -63,6 +70,7 @@ TEST 7: Full Hamiltonian H = Σ_⟨xy⟩ H_{xy} (over nearest-neighbor links)
   STATUS: PASS
 
 ========================================================================
+  Test 0 (bridge retained-grade):                    PASS
   Test 1 (H_{xy} Hermitian):                       PASS
   Test 2 (T H_{xy} T^† = H_{x+1, y+1} cov):        PASS
   Test 3 ([T, H_total] = 0 (sum is invariant)):     PASS

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 271,
     "high": 281,
-    "leaf": 385,
+    "leaf": 384,
     "medium": 325
   },
   "cycle_break_target_count": 0,
@@ -27011,31 +27011,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "free_dirac_poincare_representation_bounded_note_2026-05-30",
-        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38146,6 +38121,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 56,
-  "total_pending": 1262
+  "ready_count": 55,
+  "total_pending": 1261
 }

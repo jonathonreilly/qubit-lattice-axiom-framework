@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yt_microscopic_schur_class_admissibility_criticality_bump_hygiene_2026_06_04.py
+runner_sha256: aaaa61539717207341d4831db713c7a3268eff165acfdcf681588acf3d598374
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.02
+status: ok
+----- stdout -----
+========================================================================
+YT microscopic Schur-class admissibility criticality-bump hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/YT_MICROSCOPIC_SCHUR_CLASS_ADMISSIBILITY_NOTE.md
+Parent runner: scripts/frontier_yt_microscopic_schur_class_admissibility.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS ledger_exists
+PASS parent_row_claim_type_expected
+PASS parent_runner_path_expected
+PASS parent_current_criticality_expected
+PASS parent_current_load_expected :: load=6.615
+PASS parent_hash_matches_expected
+PASS parent_hash_matches_ledger
+PASS parent_deps_exact :: count=2
+PASS parent_helper_runners_exact :: count=2
+PASS parent_helper_modules_match_deps
+PASS parent_runner_imports_expected_helpers :: imports=['frontier_yt_exact_coarse_grained_bridge_operator', 'frontier_yt_exact_schur_normal_form_uniqueness']
+PASS parent_runner_imports_match_helper_modules
+PASS upstream_row_present_yt_exact_coarse_grained_bridge_operator_note
+PASS upstream_row_unresolved_yt_exact_coarse_grained_bridge_operator_note
+PASS upstream_row_present_yt_exact_schur_normal_form_uniqueness_note
+PASS upstream_row_unresolved_yt_exact_schur_normal_form_uniqueness_note
+PASS all_upstream_rows_unresolved
+PASS prior_positive_verdict_snapshot_present
+PASS prior_snapshot_criticality_matches_current
+PASS prior_snapshot_load_matches_expected :: snapshot_load=5.587
+PASS prior_invalidation_was_priority_bump
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_tally_present
+PASS parent_runner_pass_count_five :: pass_count=5
+PASS parent_runner_fail_count_zero :: fail_count=0
+PASS parent_runner_operator_count_expected :: value=576
+PASS parent_runner_coarse_count_expected :: value=576
+PASS parent_runner_response_gap_expected :: value=5.144895e-03
+PASS parent_runner_budget_expected :: value=1.214751e-02
+PASS parent_runner_gap_inside_budget
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_verdict_change
+PASS companion_keeps_dependencies_unresolved
+PASS companion_disclaims_endpoint_closure
+========================================================================
+SUMMARY: PASS=37 FAIL=0
+========================================================================
+
+----- stderr -----
+

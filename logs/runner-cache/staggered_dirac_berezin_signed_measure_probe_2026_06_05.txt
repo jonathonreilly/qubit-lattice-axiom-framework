@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_berezin_signed_measure_probe_2026_06_05.py
+runner_sha256: 3d052a7b78d7ddd14f9f5b11f67e7e87781d357aa7b4ef370c31dadfe04b8ad3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+==========================================================================
+Staggered-Dirac Berezin signed-measure probe (2026-06-05)
+==========================================================================
+Scope: open-gate / meta probe. No new axiom, no closed no-go verdict.
+
+--- PART 0: C3 circulant H = aI + bC + b̄C² and the Koide lever ---
+PASS H_is_hermitian
+PASS eigenvalues_real
+PASS sum_eigenvalues_equals_3a
+PASS sum_sq_eigenvalues_equals_3a2_plus_6bmod2
+PASS signed_readout_Q_equals_(1+2r)/3 :: Q(S) = (1+2r)/3, theta-independent
+
+--- PART 1: AXIS 1 -- Dirac (complex Grassmann) Berezin = det(H) ---
+PASS berezin_partition_equals_det_H :: Z_F = det(H) (Dirac/complex Grassmann measure)
+PASS det_H_equals_product_signed_eigenvalues :: det = prod lambda_k (signed, real)
+
+    [CRUX] Does the determinant/Dirac measure FIX r = 1/2?  -> NO.
+PASS signed_Q_at_r=1/5_is_(1+2r)/3 :: Q=7/15 (det/signed gives this for ALL r)
+PASS signed_Q_at_r=1/2_is_(1+2r)/3 :: Q=2/3 (det/signed gives this for ALL r)
+PASS signed_Q_at_r=3/4_is_(1+2r)/3 :: Q=5/6 (det/signed gives this for ALL r)
+PASS signed_Q_at_r=1_is_(1+2r)/3 :: Q=1 (det/signed gives this for ALL r)
+PASS signed_Q_varies_with_r_so_determinant_does_not_fix_r :: Q(S) is a nonconstant function of r -> det/Dirac alone does not select r=1/2
+
+--- PART 2: AXIS 1 -- Majorana (real antisym) Berezin = Pfaffian ---
+PASS majorana_berezin_equals_pfaffian :: Pf(A) is the real-field Berezin integral
+PASS pfaffian_square_equals_determinant :: Pf^2 = det >= 0 (sign-square: democratic/unsigned branch)
+PASS majorana_det_nonnegative :: real antisym det = Pf^2 >= 0
+PASS odd_real_antisymmetric_is_singular :: det(3x3 real antisym) = 0 -> Majorana generation op singular (Pf=0)
+PASS C3_hermitian_mass_op_not_majorana_class :: H diagonal = a != 0 -> H is not real-antisymmetric -> Dirac/Majorana for H is not a free relabel; it changes the operator class entirely
+
+--- PART 3: AXIS 3 -- doublet complex-counting fixes r (not statistics) ---
+PASS complex_polarization_gives_r_half_q_two_thirds
+PASS real_polarization_gives_r_one_q_one
+PASS statistics_row_NOT_decisive :: Gaussian vs Berezin (det vs Pfaffian) does not flip r
+PASS polarization_column_IS_decisive :: real-slot vs complex-slot DOES flip r -- this is the actual selector
+PASS det_vs_pfaffian_alone_does_not_set_r :: both are Berezin/determinant-class; the difference is polarization, not statistics
+
+--- PART 4: is the complex-counting (Dirac-nature) DERIVED? charge test ---
+PASS gauge_U1_is_scalar_on_generation_triplet
+PASS gauge_U1_commutes_with_C_so_leaves_b_untouched :: generation-blind: cannot rephase b -> e^{i theta} b
+PASS gauge_U1_leaves_H_invariant_b_unchanged :: no action on the doublet coordinate b -> cannot select complex-counting
+PASS C_cubed_is_identity
+PASS rephased_C_cubed_is_phase_times_identity :: (e^{i a}C)^3 = e^{3 i a} I
+PASS U1b_quantized_to_discrete_C3_by_C_cubed_identity :: only alpha in {0,2pi/3,4pi/3} survive -> NO continuous U(1)_b -> complex-counting not derived
+
+--- PART 5: AXIS 2 (sign of sqrt m) is NOT AXIS 3 (value of r) ---
+PASS at_r_half_signed_Q_is_two_thirds_theta_independent :: AXIS 2: signed readout = 2/3 at r=1/2 even with a negative eigenvalue
+PASS at_r_half_singular_Q_is_not_two_thirds :: AXIS 2: singular readout = 54/49 - 24*sqrt(2)/49 != 2/3 (theta-dependent)
+PASS axis2_presupposes_r_already_half :: signed readout = 2/3 ONLY at r=1/2 -> AXIS 2 needs AXIS 3 first
+
+==========================================================================
+HONEST VERDICT (computed): RELOCATES-TO-DIRAC-NATURE-IMPORT,
+sharpened to the DOUBLET COMPLEX-COUNTING / U(1)_b import.
+--------------------------------------------------------------------------
+AXIS 1 (Berezin det vs bosonic det^-1/2): the Dirac measure IS det(H).
+        FORCED by Cl(3) dim-2 (retained substep-1 D4). Derived.
+AXIS 2 (signed lambda vs |lambda|): native class Hermitian -> signed side.
+        Gives Q=2/3 at r=1/2 (retained 2026-05-29). But presupposes r=1/2.
+AXIS 3 (complex 1-slot vs real 2-slot counting): SETS r via Q=(1+2r)/3.
+        NOT forced: continuous U(1)_b incompatible with C^3=I; gauge
+        U(1)s generation-blind (commute with C); quarks refute charge rule.
+--------------------------------------------------------------------------
+=> The determinant/Dirac NATURE of the measure (AXIS 1+2) does NOT fix
+   r=1/2. det(H) and signed Q give (1+2r)/3 for EVERY r. The r=1/2
+   selection lives entirely on AXIS 3 (complex-counting / U(1)_b), which
+   is a genuine, precisely-characterized IMPORT, not derived. Majorana
+   Berezin (a Pfaffian) lands r=1; Dirac Berezin (a det) lands r=1/2 only
+   via complex-counting -- so 'det vs Pfaffian fixes r' is FALSE.
+   NOT a closure; NO new axiom adopted; promotion-routes remain open.
+==========================================================================
+SCORECARD: PASS=31 FAIL=0
+==========================================================================
+
+----- stderr -----
+

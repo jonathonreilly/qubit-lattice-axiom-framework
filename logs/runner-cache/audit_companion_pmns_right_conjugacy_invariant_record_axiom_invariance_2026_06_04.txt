@@ -1,0 +1,198 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_pmns_right_conjugacy_invariant_record_axiom_invariance_2026_06_04.py
+runner_sha256: 6f045492523d77563983302401a2e49b803af48c508ddc91b06d9261146858d4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+PMNS Right-Conjugacy-Invariant No-Go Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-review-open-20260604
+Parent note: docs/PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md
+Companion source note: docs/PMNS_RIGHT_CONJUGACY_INVARIANT_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing right-conjugacy-orbit no-go
+      is invariant under the 2026-06-04 Record-axiom adoption
+      (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: Hermitian-conjugation algebra (Y U^dag)^dag (Y U^dag) = U K U^dag
+========================================================================
+  Pure matrix algebra; no axiom content. Verifies the parent's
+  one-line algebraic identity for random Y, U.
+  PASS hermitian_conjugation_identity_sample_1 :: max|LHS - RHS| = 1.845e-15
+  PASS hermitian_conjugation_identity_sample_2 :: max|LHS - RHS| = 8.882e-16
+  PASS hermitian_conjugation_identity_sample_3 :: max|LHS - RHS| = 1.831e-15
+  PASS hermitian_conjugation_identity_sample_4 :: max|LHS - RHS| = 1.776e-15
+  PASS hermitian_conjugation_identity_sample_5 :: max|LHS - RHS| = 9.155e-16
+  PASS hermitian_conjugation_identity_sample_6 :: max|LHS - RHS| = 9.305e-16
+  PASS hermitian_conjugation_identity_overall :: max over 6 samples = 1.845e-15
+
+========================================================================
+BLOCK 2: Right-orbit preserves spectral signature of K = Y^dag Y
+========================================================================
+  Reproduces the parent runner's Part 1 spectral-signature witness.
+  PASS canonical_Y_witness_spectral_preserved :: ||sig - sig_rot|| = 8.243e-15
+  PASS monomial_Y_witness_spectral_preserved :: ||sig - sig_rot|| = 1.293e-16
+
+========================================================================
+BLOCK 3: Every conjugacy invariant F(K) is orbit-constant
+========================================================================
+  F_1(K) = Tr(K); F_2(K) = Tr(K^2); F_3(K) = det(K).
+  All three are polynomial invariants of K; F(U K U^dag) = F(K).
+  PASS Tr_K_invariant_sample_1 :: |F_1(K) - F_1(K_rot)| = 0.000e+00
+  PASS Tr_K_squared_invariant_sample_1 :: |F_2(K) - F_2(K_rot)| = 0.000e+00
+  PASS det_K_invariant_sample_1 :: |F_3(K) - F_3(K_rot)| = 2.132e-14
+  PASS Tr_K_invariant_sample_2 :: |F_1(K) - F_1(K_rot)| = 0.000e+00
+  PASS Tr_K_squared_invariant_sample_2 :: |F_2(K) - F_2(K_rot)| = 0.000e+00
+  PASS det_K_invariant_sample_2 :: |F_3(K) - F_3(K_rot)| = 3.331e-14
+  PASS Tr_K_invariant_sample_3 :: |F_1(K) - F_1(K_rot)| = 3.553e-15
+  PASS Tr_K_squared_invariant_sample_3 :: |F_2(K) - F_2(K_rot)| = 1.137e-13
+  PASS det_K_invariant_sample_3 :: |F_3(K) - F_3(K_rot)| = 3.197e-14
+  PASS Tr_K_invariant_sample_4 :: |F_1(K) - F_1(K_rot)| = 0.000e+00
+  PASS Tr_K_squared_invariant_sample_4 :: |F_2(K) - F_2(K_rot)| = 7.105e-15
+  PASS det_K_invariant_sample_4 :: |F_3(K) - F_3(K_rot)| = 0.000e+00
+  PASS Tr_K_invariant_sample_5 :: |F_1(K) - F_1(K_rot)| = 3.553e-15
+  PASS Tr_K_squared_invariant_sample_5 :: |F_2(K) - F_2(K_rot)| = 8.527e-14
+  PASS det_K_invariant_sample_5 :: |F_3(K) - F_3(K_rot)| = 0.000e+00
+  PASS all_three_invariants_orbit_constant :: max errs = ['3.553e-15', '1.137e-13', '3.331e-14']
+
+========================================================================
+BLOCK 4: m_R(Y) (right_score) varies along the orbit
+========================================================================
+  Witness: monomial Y with right_score = 0; DFT-rotated Y with
+  right_score = 3; spectral signature preserved.
+  PASS monomial_Y_right_score_zero :: right_score(Y_mono) = 0
+  PASS dft_rotated_Y_right_score_three :: right_score(Y_mono_rot) = 3
+  PASS spectral_signature_preserved_under_dft_rotation :: ||sig - sig_rot|| = 1.293e-16
+  PASS m_R_varies_while_spectral_constant :: selector datum changed on orbit; spectral data preserved
+
+========================================================================
+BLOCK 5: |K_{12}| varies along the orbit
+========================================================================
+  Witness: canonical Y with rotation12(theta) right-frame rotation;
+  |K_{12}| changes by >= 1e-3; spectral signature preserved.
+  PASS canonical_K_12_changes_under_rotation12 :: |K_12| = 0.660000 -> 0.151678; diff = 0.508322
+  PASS canonical_spectral_signature_preserved :: ||sig - sig_rot|| = 1.466e-14
+  PASS sheet_datum_varies_while_spectral_constant :: sheet datum changed on orbit; spectral data preserved
+
+========================================================================
+BLOCK 6: Combined no-go conclusion check
+========================================================================
+  Premise A (Block 3): every conjugacy invariant F(K) is orbit-
+                       constant.
+  Premise B (Block 4): m_R(Y) takes distinct values on the orbit.
+  Premise C (Block 5): |K_12| takes distinct values on the orbit.
+  Conclusion: no right-conjugacy-invariant observable I(Y) = F(K)
+              can equal either admitted datum on the orbit.
+  PASS premise_A_orbit_constancy_of_invariants :: representative spectral err = 8.243e-15
+  PASS premise_B_m_R_orbit_variance :: scores=(0, 3); spectral err = 1.293e-16
+  PASS premise_C_K_12_orbit_variance :: sheet diff = 0.508322; spectral err = 1.466e-14
+  PASS no_right_conjugacy_invariant_observable_intrinsicizes_route :: contraposition of Block 3 against Blocks 4 / 5
+
+========================================================================
+BLOCK 7: Parent runner reproduction (all four parts)
+========================================================================
+  Re-runs the parent runner's four parts via direct function-style
+  calls and confirms each part's load-bearing checks pass.
+  PASS parent_part1_spectral_signature_preserved :: ||sig - sig_rot|| = 8.243e-15
+  PASS parent_part2_m_R_witness :: scores=(0, 3)
+  PASS parent_part2_K_12_witness :: |K_12| values=(0.660000, 0.151678)
+  PASS parent_part3_scalar_bridge_note_present :: /private/tmp/cl3-review-open-20260604/docs/PMNS_SCALAR_BRIDGE_NONREALIZATION_NOTE.md
+  PASS parent_part3_observable_principle_note_present :: /private/tmp/cl3-review-open-20260604/docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  PASS parent_part3_scalar_bridge_string_match :: either 'does not realize the missing PMNS' or 'does not generate a mixed scalar bridge' found
+  PASS parent_part3_observable_principle_string_match :: W[J] = log|det(D+J)| - log|det D| (or spaced variant) found
+  PASS parent_part4_note_present :: /private/tmp/cl3-review-open-20260604/docs/PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md
+  PASS parent_part4_atlas_present :: /private/tmp/cl3-review-open-20260604/docs/publication/ci3_z3/DERIVATION_ATLAS.md
+  PASS parent_part4_note_identifies_missing_object :: tokens 'non-conjugacy-invariant' and 'right-frame law' present in note
+  PASS parent_part4_atlas_carries_row :: atlas row literal found
+
+========================================================================
+BLOCK 8: Parent note Record-axiom usage scan (load-bearing surface)
+========================================================================
+  PASS parent_note_file_present :: /private/tmp/cl3-review-open-20260604/docs/PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md
+  PASS parent_note_load_bearing_surface_nonempty :: load-bearing surface length = 2961 chars
+  PASS parent_note_zero_record_axiom_tokens_in_load_bearing_surface :: matches = []
+  PASS parent_note_matrix_algebra_tokens_present :: matches >= 3: ['Y^dag', 'U(3)', 'right orbit', 'spectral', 'conjugacy-invariant']
+
+========================================================================
+BLOCK 9: Parent runner Record-axiom usage scan
+========================================================================
+  PASS parent_runner_file_present :: /private/tmp/cl3-review-open-20260604/scripts/frontier_pmns_right_conjugacy_invariant_nogo.py
+  PASS parent_runner_zero_record_axiom_tokens :: matches = []
+  PASS parent_runner_matrix_algebra_functions_present :: matches >= 5: ['spectral_signature', 'right_score', 'rotation12', 'dft3', 'canonical_y', 'monomial_y', 'np.linalg.eigvalsh']
+
+========================================================================
+BLOCK 10: Record-axiom counterfactual (identical conclusion with / without)
+========================================================================
+  PASS with_record_axiom_no_go_holds :: sig_err=8.243e-15; sheet_diff=0.508322
+  PASS without_record_axiom_no_go_holds :: sig_err=8.243e-15; sheet_diff=0.508322
+  PASS counterfactual_outputs_identical :: max diff across ['sig_err_canonical', 'score_mono', 'score_mono_rot', 'sheet_diff'] = 0.000e+00
+
+========================================================================
+BLOCK 11: Quantum and Lattice content preserved across memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional present
+  PASS new_memo_Record_scope_excludes_bridge_content :: Record axiom scope statement explicitly excludes log-det / source-action / observable bridges
+
+========================================================================
+BLOCK 12: Hypothesis-set parity check (no Record-axiom use in load-bearing chain)
+========================================================================
+  Re-derives the parent's load-bearing matrix-algebra steps
+  WITHOUT any reference to the Record axiom, confirming that
+  the parent's premise set is strictly smaller than the full
+  {Lattice, Quantum, Record} = {Lattice, Quantum} + standard
+  finite-dimensional matrix algebra.
+  PASS hermitian_conjugation_no_axiom_needed :: max err = 9.930e-16
+  PASS spectral_preservation_no_axiom_needed :: ||sig - sig_rot|| = 5.273e-15
+  PASS witness_construction_no_axiom_needed :: scores=(0, 3)
+  PASS hypothesis_set_subset_lattice_quantum :: matrix-algebra recomputation closes without a Record-axiom state variable
+
+========================================================================
+BLOCK 13: Upstream-naming surface scan
+========================================================================
+  The parent's Part 3 evidence is a string-match against the two
+  named upstream notes. This block confirms those string matches
+  are still present on origin/main after the upstream Record-axiom
+  repair. This is a graph-bookkeeping continuity check, not a
+  Record-axiom argument.
+  PASS upstream_scalar_bridge_note_present :: /private/tmp/cl3-review-open-20260604/docs/PMNS_SCALAR_BRIDGE_NONREALIZATION_NOTE.md
+  PASS upstream_observable_principle_note_present :: /private/tmp/cl3-review-open-20260604/docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  PASS scalar_bridge_string_match_at_least_one_variant :: v1=True; v2=True
+  PASS observable_principle_string_match_at_least_one_variant :: v1=True; v2=False
+
+========================================================================
+TOTAL PASS: 73
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing chain of PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md
+  (right-orbit invariance of K's spectral signature + explicit
+  parent-runner witnesses showing m_R and |K_12| vary on the orbit
+  + direct contraposition) uses ONLY finite-dimensional matrix
+  algebra over C (Hermitian conjugation, U(3) action, spectral
+  invariants) plus the Lattice + Quantum axiom context.
+  The Record axiom (additive scalar record-readout functional) is
+  neither used nor invoked. The numeric outputs of the load-bearing
+  chain are identical under both 'Record axiom asserted' and
+  'Record axiom not asserted' outer scopes.
+
+The audit lane decides whether this evidence is sufficient to
+re-honor the prior judicial verdict pattern (algebra-clean
+conditional on upstream-naming inputs) on the new premise hash,
+or whether a fresh per-claim audit is warranted. This companion
+supplies machine-checkable evidence; it does not set status.
+
+----- stderr -----
+

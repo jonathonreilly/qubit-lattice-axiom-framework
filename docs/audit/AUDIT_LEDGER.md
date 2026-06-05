@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 658 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1273 |
+| unaudited | 1272 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 67 |
+| ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1010 |
-| `audited_conditional` | 67 |
+| `audited_conditional` | 68 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1557 |
+| `unaudited` | 1556 |
 
 | claim_type | count |
 |---|---:|
@@ -1176,6 +1176,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5818,6 +5819,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Equal Hilbert-Schmidt weight on the two trace-orthogonal C3-isotypic generator channels gives 3a^2 = 6b^2, equivalently r = ||I||^2/||J-I||^2 = 1/(N-1) = 1/2 at N=3.  _(class `A`)_
 - **chain closes:** False — The algebraic consequences of the proposed measure/partition close, but the restricted packet does not derive or retain the premise that the framework selects the tracial HS generator-channel scoring over the idempotent or per-mode alternatives. The missing step is a bridge theorem or accepted axiom selecting that carrier metric and partition.
 - **rationale:** The runner does real algebra for the HS norms, three-way fork, N-family formula, Kahler identity, and commuting check, and its displayed identities are internally consistent. However, the note itself states that the present framework has not selected the generator-channel HS measure and that the candidate Axiom 1 revision is not landed. The PDG/PT line is an external comparator check and does not close the framework-internal measure-selection gap.
+- **auditor confidence:** high
+
+### `flavor_native_action_predicts_q1_2026-06-02`
+
+- **Note:** [`FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md`](../../docs/FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the C3 ansatz H=aI+b(C+C^2), the displayed HS block and equal-block identities, the five cutoff scans at the runner's implicit scale, and the HS orthogonality check.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-224127-22bf52c22d-flavor_native_action_predict`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For H=aI+b(C+C^2), the C3 spectrum is {a+2b,a-b,a-b}; the tested spectral-action cutoffs have extrema near |b|/a=1 rather than 1/sqrt2, and HS orthogonality of I and C+C^2 prevents a single quadratic norm from fixing the a:|b| ratio.  _(class `C`)_
+- **chain closes:** False — The finite matrix algebra and five displayed cutoff scans close for the restricted ansatz. The full source claim does not close because it needs a proof or retained authority for the all-monotone/native-action extension, the Casimir/HK range, the Wilson/HK/Manton quadratic-degeneracy premise, and the implicit Lambda/a normalization.
+- **rationale:** The runner genuinely instantiates the C3 cycle matrix and computes traces, eigenvalues, and five cutoff scans; independent diagonalization confirms the HS identities and that the listed maximizers are near b/a=1 rather than 1/sqrt2. That supports the narrow finite-scan statement but not the broader claim that every monotone-decreasing cutoff or native action gives exact r=1/Q=1, since the cutoff scale is implicit and b/a=1 is generally a collapse landmark rather than an exact stationary point for finite smooth cutoffs. The packet also does not derive the Casimir/HK r in [0,1/4] assertion or include the upstream action-form degeneracy theorem referenced in the note.
+- **open / conditional deps cited:**
+  - `BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md`
 - **auditor confidence:** high
 
 ### `flavor_native_double_shift_corner_coupling_note_2026-05-30`

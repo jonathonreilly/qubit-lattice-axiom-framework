@@ -1,0 +1,30 @@
+==============================================================================
+PART A -- algebraic core of the chirality gate
+==============================================================================
+[PASS] A1 Gamma_chi involution, signature (1,2)  ::  eigs=[-1.0, -1.0, 1.0]
+[PASS] A2 [Gamma_chi, R] = 0 (Gamma_chi is circulant)
+[PASS] A3 {H,Gamma_chi}=0 => <v|Gamma_chi|v>=0 and Q(v)=2/3  ::  <v|G|v>=[-0.0, -0.0] Q=[0.666666667, 0.666666667]
+[PASS] A4 circulant trap: nonzero circulant H => HGamma_chi != 0 (so trap forces H=0)  ::  only a=b=0 satisfies {circ,Gamma_chi}=0
+[PASS] A5 anticommuting H is purely OFF-block (singlet<->doublet intertwiner)  ::  ||block-diag part||=1.58e-16
+[PASS] A6 C3-equivariant default never lands Q=2/3 (diag=>Q=1, circulant-singlet=>Q=1/3)  ::  Q_diag=1.0 Q_circ_singlet=0.333333333 (neither = 2/3)
+[PASS] A6b circulant route: r=1/2 COMMUTING circulant gives Q=2/3 (distinct from anticommuting H)  ::  [Y,G]=0, {Y,G}_norm=4.899, Q=0.666666667
+[PASS] A7 inert hatch: {G(x)sigma1, I(x)sigma3}=0 for every G (zero generation constraint)
+
+==============================================================================
+PART B -- audit-ledger cross-check (committed origin/main snapshot)
+==============================================================================
+[PASS] B koide_anticommuting_operator_derivation_theorem_note_2026-05-10  ::  effective_status=retained
+[PASS] B koide_z3_equivariant_anticommuting_no_go_note_2026-05-16  ::  effective_status=retained_bounded
+[PASS] B flavor_emergent_chirality_no_transport_note_2026-05-30  ::  effective_status=audited_conditional
+[PASS] B flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31  ::  effective_status=audited_conditional
+[PASS] B flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31  ::  effective_status=retained_bounded
+[PASS] B staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23  ::  effective_status=retained_bounded
+[PASS] B parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23  ::  effective_status=retained_bounded
+[PASS] B staggered_dirac_realization_gate_note_2026-05-03  ::  effective_status=audited_renaming
+[PASS] B closure_c_staggered_dirac_gate_note_2026-05-10_cstaggered  ::  effective_status=unaudited
+[PASS] B flavor_hw1_staggered_projection_democratic_r0_2026-06-02  ::  effective_status=unaudited
+[PASS] B koide_factor_split_does_not_force_carrier_value_bridge_no_go_note_2026-06-02  ::  effective_status=unaudited
+[PASS] B lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26  ::  effective_status=open_gate
+[PASS] B koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29  ::  effective_status=retained
+
+SCORECARD: PART_A=PASS PART_B=PASS OVERALL=PASS

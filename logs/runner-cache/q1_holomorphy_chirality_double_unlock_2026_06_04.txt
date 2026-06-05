@@ -1,0 +1,73 @@
+==============================================================================
+Q1 angle C: does holomorphy supply a generation chirality grading?
+==============================================================================
+
+--- block 0: generation factor isotype structure ---
+[PASS] C is the Z_3 cyclic shift with C^3 = I
+[PASS] singlet projector P_s rank 1, doublet projector P_d rank 2
+       tr P_s=1.0000, tr P_d=2.0000
+[PASS] P_s + P_d = I and P_s P_d = 0 (orthogonal isotype split)
+[PASS] u, Ju are an orthonormal real basis of the doublet
+[PASS] DEFINITION non-vacuous: a Hermitian object can be ON-BLOCK; an anticommuting Q=2/3 grading must be HERMITIAN + involution + OFF-BLOCK
+       three requirements are the testable target of this runner
+
+--- block 1: candidate (J) doublet complex structure (the det_C object) ---
+[PASS] J=(C-C^T)/sqrt(3): eig(J) = {0, +i, -i} (the holomorphic structure)
+       eig(J)=[ 0.+1.j  0.-1.j -0.+0.j]
+[PASS] J^2 = -P_d on the doublet, 0 on the singlet (almost-contact, NOT J^2=I)
+[PASS] REQ-Hermitian FAILS for J: J is ANTI-Hermitian (J^T = -J)
+[PASS] REQ-involution FAILS for J: J^2 != I (J^2 = -P_d)
+[PASS] REQ-off-block FAILS for J: J is BLOCK-DIAGONAL (commutes with P_s, P_d)
+[PASS] => J fails ALL THREE Gamma_chi requirements; the det_C object is NOT a chirality grading
+
+--- block 2: candidate (K) complex-conjugation / anti-holomorphic CPT involution ---
+[PASS] K = complex conjugation on the doublet (fix singlet + Re-axis, flip Im-axis)
+[PASS] REQ-involution HOLDS for K: K^2 = I
+[PASS] REQ-Hermitian HOLDS for K: K is real symmetric (a real orthogonal reflection)
+[PASS] K spectrum {+1,+1,-1}, det(K) = -1 (a reflection WITHIN the doublet plane)
+[PASS] REQ-off-block FAILS for K: K is BLOCK-DIAGONAL (P_s K P_d = 0, commutes with P_s)
+       K reflects inside the doublet; it does NOT mix singlet<->doublet
+[PASS] real-symmetric anticommutant of K is exactly 2-dimensional (nonzero, so K could be graded)
+[PASS] every H with {H,K}=0 is TRACELESS => eigenvalue/Brannen Q = infinity, NOT 2/3
+       same {-lam,0,+lam} failure as the anticommuting-readout reconciliation note
+[PASS] every H with {H,K}=0 BREAKS C_3 ([H,C] != 0) => not in the retained circulant Koide mass class
+[PASS] => K is Hermitian+involution but ON-BLOCK, and its anticommutant gives Q=inf: K is NOT a Q=2/3 generation chirality grading
+
+--- block 3: candidate (sgn det_C) the signed-vs-unsigned readout Z_2 ---
+[PASS] a circulant mass operator H is Hermitian with all-real spectrum (the Koide class)
+       eig(H)=[0.10718 1.49282 2.3    ]
+[PASS] sgn(det_C) / arg(det_C) is a property of a SCALAR (a single determinant value), dim 1 -- it is NOT a 3x3 operator
+       det_C-type scalar = 0.2465
+[PASS] REQ-Hermitian/off-block UNDEFINED for sgn det_C: a Z_2 sign on a scalar has no singlet<->doublet block action (wrong category for a grading operator)
+       operator-grading space is 9-dim Hermitian; scalar sign is 1-dim -- categorically distinct
+[PASS] the signed (Brannen) vs unsigned (singular-value) readout changes the sqrt(m) SIGN, i.e. it is a readout-class bit, not an operator that grades H
+[PASS] => sgn det_C cannot be a Hermitian off-block grading: it is the value/readout bit, not a chirality operator
+
+--- block 4: off-block Hermitian involutions EXIST (non-vacuous) but are NOT holomorphic ---
+[PASS] explicit G_off swaps singlet<->doublet (G_off v0 = u): it is GENUINELY off-block
+[PASS] G_off is Hermitian and an involution (so off-block Hermitian gradings DO exist)
+       eig(G_off)=[-1.  1.  1.]
+[PASS] but G_off is NOT holomorphic: [J, G_off] != 0 (the complex structure does not produce it)
+[PASS] NO holomorphy object (J, K, sgn det_C) equals or generates G_off => the off-block requirement is real and UNMET by holomorphy
+
+--- block 5: Connes-Lott separate-factor inertness (reconciles with PT-C) ---
+[PASS] Connes-Lott gamma_CL = I3 (x) sigma_3 anticommutes with G (x) sigma_1 for EVERY generation G => INERT on the generation factor (matches PT-C: reduces to on-block)
+[PASS] so chirality living on the L/R doubling factor places ZERO constraint on the generation operator -- it is NOT the generation-factor off-block grading either
+
+--- block 6: the holomorphy VALUE fork is independent of chirality and is real ---
+[PASS] det_R reading (doublet = 2 real slots): r = 1 => Q = 1
+[PASS] det_C reading (doublet = 1 complex slot): r = 1/2 => Q = 2/3
+[PASS] the value fork is carried by J / det_C (a COMMUTING on-block object) and a SCALAR sign -- neither of which is the off-block chirality grading
+[PASS] therefore the r=1/2 (holomorphy) bit and the chirality (off-block) bit are SEPARATE handles
+
+--- block 7: verdict ---
+[PASS] no holomorphy object is simultaneously Hermitian + involution + off-block + Q=2/3-anticommuting
+[PASS] VERDICT = HOLOMORPHY-AND-CHIRALITY-SEPARATE
+       holomorphy supplies the r=1/2 value bit only; chirality (off-block grading) is a SEPARATE gate
+[PASS] => coverage-audit 'same binary' claim is CORRECTED: Q1 closes the r=1/2 half, the off-block chirality grading remains a distinct open handle
+
+==============================================================================
+SCORECARD: 38/38 PASS, 0 FAIL
+VERDICT: HOLOMORPHY-AND-CHIRALITY-SEPARATE
+holomorphy involution Hermitian-and-off-block? NO (J anti-Herm+on-block; K Herm+involution but ON-BLOCK; sgn det_C is a scalar)
+==============================================================================

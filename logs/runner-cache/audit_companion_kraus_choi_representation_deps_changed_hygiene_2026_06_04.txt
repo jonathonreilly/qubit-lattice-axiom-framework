@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_kraus_choi_representation_deps_changed_hygiene_2026_06_04.py
+runner_sha256: 7b155a25416241ccb176aa39b64105d372b3efeb217c062ac25a7b4650d91b01
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+========================================================================
+Kraus-Choi dependency-rewire hygiene companion
+========================================================================
+Repo root: <repo>
+Parent note: docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+Companion note: docs/KRAUS_CHOI_REPRESENTATION_DEPS_CHANGED_HYGIENE_COMPANION_NOTE_2026-06-04.md
+Scope: meta evidence only; no theorem claim, no audit verdict, no direct status change.
+PASS parent_load_surface_present :: chars=5321
+PASS parent_load_surface_contains_Kraus
+PASS parent_load_surface_contains_Choi
+PASS parent_load_surface_contains_M_2
+PASS parent_load_surface_contains_Z^3
+PASS parent_load_surface_contains_finite
+PASS parent_load_surface_contains_operator-sum
+PASS parent_load_surface_has_no_record_readout_terms :: {'I(R_1': 0, 'I(R)': 0, 'scalar record': 0, 'record functional': 0, 'record-readout': 0, 'additive scalar record': 0}
+PASS parent_pointer_surface_present :: chars=494
+PASS parent_pointer_surface_marks_not_load_bearing
+PASS parent_pointer_surface_lists_BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20
+PASS parent_pointer_surface_lists_PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20
+PASS parent_pointer_surface_lists_PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE
+PASS old_axioms_have_qubit_content
+PASS new_axioms_have_quantum_content
+PASS old_axioms_have_lattice_content
+PASS new_axioms_have_lattice_content
+PASS new_axioms_have_separate_record_content
+PASS old_axioms_lack_record_additivity_formula
+PASS dephasing_kraus_trace_preserving
+PASS dephasing_choi_is_psd
+PASS depolarizing_kraus_trace_preserving
+PASS depolarizing_choi_is_psd
+PASS unitary_kraus_trace_preserving
+PASS unitary_choi_is_psd
+PASS transpose_map_choi_has_negative_eigenvalue
+PASS finite_region_tensor_dim_size_1
+PASS finite_region_tensor_dim_size_2
+PASS finite_region_tensor_dim_size_3
+PASS finite_region_tensor_dim_size_4
+PASS finite_region_tensor_dims_match_parent_formula
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_direct_status_change
+PASS companion_keeps_record_non_load_bearing
+========================================================================
+SUMMARY: PASS=35 FAIL=0
+========================================================================
+
+----- stderr -----
+

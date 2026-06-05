@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 169 |
 | **retained_no_go** | 176 |
-| **retained_bounded** | 630 |
+| **retained_bounded** | 631 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1338 |
+| unaudited | 1337 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 964 |
+| `audited_clean` | 965 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1622 |
+| `unaudited` | 1621 |
 
 | claim_type | count |
 |---|---:|
@@ -379,6 +379,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_qubit_berry_holonomy_probe_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
@@ -5281,6 +5282,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The sector-power entropy S(r) with p_singlet=1/(1+2r) and p_doublet=2r/(1+2r) is maximized at r=1/2, equivalently the singlet-doublet imbalance is zero there.  _(class `A`)_
 - **chain closes:** True — The entropy statement reduces to the binary entropy maximum at equal sector weights, which gives 1/(1+2r)=2r/(1+2r) and hence r=1/2. The Q-table entries and imbalance/fixed-point claims are direct algebraic substitutions; the broader lane-assignment dynamics is explicitly outside the audited scope.
 - **rationale:** The displayed closed-form identities check out under the note's own definitions: S(r) has its unique interior maximum at r=1/2, the imbalance |3-6r| vanishes there, and the listed Q values follow by substitution. The per-DOF caveat is also consistent with equal per-DOF weights giving r=1. This is a bounded algebraic/calculus closure, not a derivation of the physical lane assignment or charged-lepton sector selection.
+- **auditor confidence:** high
+
+### `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02`
+
+- **Note:** [`FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md`](../../docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded algebraic claim that r=1/2 is stable for the explicitly supplied two-sector map g(r)=sqrt(r/2), with HS 2-sector equipartition and endpoint checks as stated; no physical-arrow selection was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-180813-e609c1d098-flavor_r_half_stable_under_t`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the supplied map g(r)=sqrt(r/2), r=1/2 is a fixed point with g'(1/2)=1/2<1, so the prior repeller under S(r)=2r^2 becomes stable for this named reverse map.  _(class `A`)_
+- **chain closes:** True — The bounded map claim closes algebraically: g(1/2)=1/2 and g'(r)=1/(2*sqrt(2r)) gives g'(1/2)=1/2. The note explicitly leaves the physical identification of charged-lepton evolution with this map outside the theorem.
+- **rationale:** The source and runner prove a scoped mathematical statement about a supplied map, not a framework-derived thermalizing arrow. Independent checks of the displayed formulas agree: S'(1/2)=2, g'(1/2)=1/2, HS equipartition gives 3a^2=6|b|^2 iff |b|^2/a^2=1/2, endpoint spectra match, and Q=1/3+(2/3)r gives Q=2/3 at r=1/2. Because the physical-arrow and partition-selection gates are explicitly excluded from the claim scope, they do not prevent the bounded theorem from closing.
 - **auditor confidence:** high
 
 ### `flavor_readout_gate_equals_carrier_identification_2026-05-31`

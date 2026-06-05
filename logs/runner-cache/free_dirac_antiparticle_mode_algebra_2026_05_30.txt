@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py
+runner_sha256: 3aeaab6804d21d255864a5572b2ea718875f7f4a583aefaf41c2e13808a500ba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+[PASS] C1_inverse_and_pole_continuation
+[PASS] C2_dirac_spectrum_pmE_double
+[PASS] C3_uv_completeness_norms_relative_sign
+[PASS] C4_car_positive_fock_relabeling
+[PASS] C5_raw_negative_branch_diagnostic
+SCORECARD PASS=5 FAIL=0
+
+----- stderr -----
+

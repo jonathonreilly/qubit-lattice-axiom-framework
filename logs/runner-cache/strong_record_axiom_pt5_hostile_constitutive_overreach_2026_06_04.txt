@@ -1,0 +1,127 @@
+
+========================================================================================
+PT5 HOSTILE: is the strong Record axiom constitutive, or AC_phi_lambda renamed?
+========================================================================================
+
+========================================================================================
+FRONT 0 -- the ADOPTED Record axiom is WEAK (additivity only; disclaims the measure)
+========================================================================================
+[PASS] F0.1 adopted Record axiom = additive scalar readout I(R1 sqcup R2)=I(R1)+I(R2), I(empty)=0; it EXPLICITLY disclaims Born weights and AC_phi_lambda
+       docs/MINIMAL_AXIOMS_2026-06-04.md Record section: 'does not supply ... Born weights ... AC_phi_lambda ... or arbitrary observable identification.'
+[PASS] F0.2 the CANDIDATE adds 3 clauses on top: (which real classical alt) + (alts = real Wedderburn blocks, each ONE) + (count, DIMENSION-BLIND)
+       Only the 3rd clause ('dimension-blind count') goes beyond the adopted axiom; fronts below test whether that clause is constitutive or the measure renamed.
+
+========================================================================================
+FRONT 1 -- CONSTITUTIVE vs RESTATEMENT (strip the axiom to operational clauses)
+========================================================================================
+[PASS] F1.1 ADDITIVITY clause has independent content but does NOT pick (1,1): both (1,1) and (1,2) are additive scalar set-functions over the 2 sectors
+       additivity is a measurement-theory fact true of EVERY atomic measure; it constrains the FORM (a measure) not the WEIGHTS.
+[PASS] F1.2 WHICH-ONE clause has independent content but does NOT pick (1,1): both (1,1) and (1,2) register/separate both sectors
+       'records which alternative' = the readout distinguishes the sectors; satisfied by ANY strictly positive weight, not just equal weight.
+[PASS] F1.3 'each block is ONE alternative' fixes the ATOM COUNT (2 sectors), matching the 2-term capacity functional -- but the weight ratio is still free (r* = w_p/(2 w_s), continuous)
+       this is the 'pointer fixes #channels not the weight' fact, reproduced in F5.3.
+[PASS] F1.4 *** LOAD-BEARING CLAUSE *** 'count, DIMENSION-BLIND' = w=(1,1) exactly = the block-count / equal-power / AC_phi_lambda measure RENAMED
+       dimension-blind <=> ignore the rank-2 of the doublet <=> weight it as 1 not 2 <=> the (1,1) measure. The rename is the whole content of clause 3.
+[PASS] F1.4b non-circularity granted but non-decisive: NO clause forward-references 2/3, and Q=2/3 is a true downstream output of (1,1) -- but 'computing a value from an assumed measure' is precisely a restatement; constitutiveness needs the MEASURE forced, not just the value computed
+       Q(from assumed (1,1)) = 0.6667. Output-not-input is necessary but NOT sufficient for constitutive.
+[PASS] F1.5 VERDICT FRONT 1 = RESTATEMENT (on the load-bearing clause). Clauses 1-2 (additive/which-one/atom=block) are genuine measurement-theory content but are (1,1)-(1,2)-NEUTRAL; clause 3 ('dimension-blind') has no measurement-theory justification independent of choosing the (1,1) measure
+       constitutive would require clause 3 to follow from 'what a record is'; it does not -- objective records carry the rank/Born weight (Front 5), not the count.
+
+========================================================================================
+FRONT 2 -- OVERREACH: does sector-universal block-count FALSIFY the quark sectors?
+========================================================================================
+[PASS] F2.1 charged leptons: empirical Koide Q = 2/3 (the block-count VALUE)
+       Q_lep = 0.6667 (target 0.6667)
+[PASS] F2.2 up-type quarks: empirical Koide Q is NOT 2/3 (robust)
+       Q_up = 0.8491 (|Q_up - 2/3| = 0.182)
+[PASS] F2.3 down-type quarks: empirical Koide Q is NOT 2/3 (robust)
+       Q_dn = 0.7313 (|Q_dn - 2/3| = 0.065)
+[PASS] F2.4 *** FATAL OVERREACH IF UNIVERSAL *** the 3 sectors do NOT share one Q, so a sector-universal 'records count blocks -> Q=2/3' law is EMPIRICALLY FALSIFIED
+       Q_lep=0.667, Q_up=0.849, Q_dn=0.731; a universal block-count would force all three to 2/3.
+[PASS] F2.5 the ONLY survival is sector-contingency: quarks do not live on the same circulant (QUARK_BAE_ANALOG_BOUNDED_OBSTRUCTION), so block-count is NOT a sector-universal law -- which CONCEDES Front 1 (it is a per-sector measure choice, not a constitutive record law)
+       if 'real-block count' were what a record IS, it could not give 2/3 for leptons and 0.849/0.731 for quarks; the difference must come from extra (non-record) structure -> block-count is not constitutive.
+[PASS] F2.6 forcing the circulant form onto quarks needs r_up, r_dn != 1/2 (the weight is sector-dependent), i.e. the 'dimension-blind count' clause is sector-violated
+       r_lep=0.500 (=1/2), r_up=0.774, r_dn=0.597 -- only leptons sit at the (1,1) point.
+[PASS] F2.7 NEUTRINO sector also off (1,1): the Foot-Brannen Q_nu ~ 1/3 implies r_nu = 0 (the degenerate/zero-doublet end), the OPPOSITE of r=1/2; a universal block-count (1,1) -> Q=2/3 contradicts the neutrino data too
+       Q_nu(lit) = 0.333 => r_nu = 0.000; NEWPHYSICS_NP_NEUTRINO_PMNS: Q_nu != Q_e forces rho_nu != 1/2.
+[PASS] F2.8 *** THREE-SECTOR SUMMARY *** only the charged-lepton sector sits at the block-count point r=1/2; quarks (r_up, r_dn) and neutrinos (r_nu) do not. A constitutive 'records count blocks' law would have to hold in ALL sectors and does not -> the axiom is NOT a sector-universal record law
+       r: lepton=0.50, up=0.77, down=0.60, nu=0.00. Only one of four sits at 1/2.
+
+========================================================================================
+FRONT 3 -- COHERENCE: is 'real classical alternative' well-defined on M_n(C)?
+========================================================================================
+[PASS] F3.1 the block COUNT is K0-dependent: K0-real(R[Z_3])=2, K0-complex(C[Z_3])=3; 'record registers a real alternative' does not by itself select K0-real
+       choosing real-Wedderburn IS choosing K0-real -- a structural CHOICE, the same free convention slot KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE leaves open.
+[PASS] F3.2 on a SIMPLE block M_n(C): central-idempotent count = real-block count = 1, but the Born/trace reading weights it by n -- so 'count alternatives' is well-defined ONLY after fixing dimension-blindness (the disputed clause)
+       M_4(C): #idempotents=1, real-blocks=1, Born-weight=4. 'real classical alternative' = which of these?
+[PASS] F3.3 the forced Cl(3) pseudoscalar acts as the generation SCALAR i*I_3, NOT the doublet Schur structure diag(0,+i,-i); so it does not pin K0-real on generations -- well-definedness of 'real block' is a free slot, not forced
+       KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE: qubit i is a generation scalar; the doublet measure is a free convention slot.
+
+========================================================================================
+FRONT 4 -- MINIMALITY: does any weaker clause already yield (1,1)?
+========================================================================================
+[PASS] F4.1 'CPT-even/real' alone does NOT yield (1,1): the CPT reflection Theta acts WITHIN the rank-2 doublet (det -1) and does not merge its 2 dims to one slot; reality buys only a Z2 sign (KOIDE_..._SHRINKS_IMPORT_TO_SIGN)
+       det(Theta) = -1.0; rank(P_doublet) = 2 (stays 2). Reflection != dimension collapse.
+[PASS] F4.2 'registers a classical outcome' alone yields the BORN/rank weight (1/3,2/3) => r=1 => Q=1 (NOT (1,1)); so the classical-outcome clause alone gives the OPPOSITE of the candidate
+       tracial I/3 pushed through (P_s,P_d) = [0.3333 0.6667] = (1/3,2/3).
+[PASS] F4.3 VERDICT FRONT 4: the MINIMAL clause that produces (1,1) is precisely 'dimension-blind count' = the measure; every weaker clause (CPT-even, classical-outcome) gives (1,2)/Q=1. So the axiom is NOT minimal-with-independent-content: its only working clause IS the measure (consistent with Front 1).
+       minimality cuts AGAINST it: the sufficient core is the disputed clause, and the removable clauses point to Q=1.
+
+========================================================================================
+FRONT 5 -- BORN COLLISION: count-for-masses vs Born-weight-for-probability
+========================================================================================
+[PASS] F5.1 objective/Born records on the SAME 2 sectors give weight (1/3,2/3) -> r=1 -> Q=1 (the dimension/trace channel), NOT the candidate's (1,1)/Q=2/3
+       r_Born = 1.000, Q_Born = 1.000. Born and count are DIFFERENT measures on the SAME sectors.
+[PASS] F5.2 the candidate's count measure gives r=1/2 -> Q=2/3 on those SAME sectors
+       Q_count = 0.6667. Two functionals, one sector pair: count(1,1) vs Born(1,2).
+[PASS] F5.3 a DUAL readout is FORMALLY possible: the space of additive weightings on 2 atoms is 2-dimensional, so count(1,1) and Born(1,2) are two distinct legitimate functionals; nothing forbids two different readouts of one record
+       the 2-block pointer fixes #channels=2; the weight is a free 1-parameter ray (r* = w_p/(2 w_s)), so distinct mass- and probability-functionals can coexist.
+[PASS] F5.4 *** OVERREACH *** the axiom WORDS 'record readout counts alternatives, dimension-blind' as THE (singular) record functional -> it asserts I=count, which CONTRADICTS the Born weight the same objective records carry. Taken at its word, the strong axiom overreaches into the probability readout.
+       (1,1) and (1,2) are different rays; a single readout cannot be both. The WEAK adopted axiom avoids this by saying only 'additive', leaving the weight open.
+[PASS] F5.5 the coherent repair (count for masses, Born for probability) is exactly the WEAK axiom + an EXTRA named mass-readout convention; it is NOT what 'a record is' and it does NOT make (1,1) constitutive -- it re-imports the measure as a 2nd functional, conceding Fronts 1 and 4
+       dual-readout coherence rescues consistency but at the cost of the axiom's constitutive claim: the count becomes an added convention, not record-meaning.
+[PASS] F5.6 the WEAK adopted axiom does NOT collide with Born: 'additive' is satisfied by the Born weight (1,2) itself, so no contradiction -- the collision is created ONLY by the strong axiom's extra 'dimension-blind count' clause
+       additivity holds for (1,2) as well as (1,1); the weak axiom leaves the weight ray free, so it is the STRONG clause that overreaches, not record-additivity.
+[PASS] F5.7 count(1,1) and Born(1/3,2/3) are NON-PROPORTIONAL rays (cos<1), so no normalization makes a single readout both -- the collision is structural, not a units artifact
+       cos(angle) between (1,1) and (1/3,2/3) = 0.9487 < 1 (distinct rays).
+
+========================================================================================
+SANITY -- signed-Q circulant agrees with Q=(1+2r)/3 at r=1/2 and r=1
+========================================================================================
+[PASS] S.1 r=1/2 -> signed Q = 2/3 (block-count point)
+       Q(r=1/2) = 0.666667, spec=[0.2929 0.2929 2.4142]
+[PASS] S.2 r=1 -> signed Q = 1 ... only if spectrum sign-homogeneous; check value
+       Q(r=1) = 1.000000, spec=[-0.  0.  3.] (signed readout; dimension channel reference is Q=1 via the (1,2) weight, see F5.1)
+[PASS] S.3 dimension weight (1,2) -> r=1 -> Q=1 exactly (the Born/trace channel)
+       Q_dim = 1.0000
+
+========================================================================================
+SUMMARY -- per-front verdicts
+========================================================================================
+  FRONT 1 (constitutive vs restatement): RESTATEMENT on the load-bearing clause.
+           additive/which-one/atom=block are real but (1,1)-(1,2)-NEUTRAL;
+           'dimension-blind count' = the (1,1)/AC_phi_lambda measure renamed.
+  FRONT 2 (quark overreach): FATAL IF UNIVERSAL. Q_up=0.849, Q_dn=0.731 != 2/3;
+           a sector-universal block-count law is empirically falsified; survival
+           requires sector-contingency, which concedes Front 1.
+  FRONT 3 (coherence): UNDER-DEFINED. 'real block count' is K0-dependent
+           (K0-real=2 vs K0-complex=3) and ambiguous on M_n(C); needs the
+           disputed dimension-blind choice to be well-defined.
+  FRONT 4 (minimality): cuts AGAINST. The minimal sufficient clause IS the
+           measure; weaker clauses (CPT-even, classical-outcome) give Q=1.
+  FRONT 5 (Born collision): OVERREACH. Objective records carry Born (1/3,2/3)=Q=1;
+           the axiom words the single readout as the count (1,1)=Q=2/3, colliding
+           with Born. A dual readout is formally possible but re-imports the
+           measure as an extra convention, conceding constitutiveness.
+
+  TWO KEY FINDINGS:
+   (1) CONSTITUTIVE? NO -- RESTATEMENT. The only clause that yields r=1/2 is the
+       block-count measure renamed; the genuinely constitutive clauses are
+       (1,1)/(1,2)-neutral.
+   (2) OVERREACH? YES -- (a) quark-sector falsification if read as universal,
+       and (b) Born collision on the same sectors. The non-overreaching content
+       is exactly the WEAK adopted axiom, which does NOT force r=1/2.
+
+  SCORECARD: 32/32 checks passed
+
+ALL CHECKS PASSED

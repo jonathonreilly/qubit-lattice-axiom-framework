@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 176 |
 | **retained_bounded** | 632 |
 | _retained_pending_chain_ | 9 |
-| open_gate | 29 |
-| unaudited | 1336 |
+| open_gate | 30 |
+| unaudited | 1335 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 966 |
+| `audited_clean` | 967 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1620 |
+| `unaudited` | 1619 |
 
 | claim_type | count |
 |---|---:|
@@ -632,6 +632,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_beta_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9267,6 +9268,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The bounded table reports a total slope range of about 2.02, from +0.58 to -1.43, across the enumerated kH sweep, so the fitted internal slope is strongly k-dependent on this setup.  _(class `C`)_
 - **chain closes:** True — The current cache is SHA-pinned to the runner, completed with exit_code=0, and its stdout reproduces the source slope table and kH=5.0 fit failures. The runner computes the finite DAG propagation/Kubo values and log-log fits over the enumerated grid rather than importing the reported slopes; closure is only for that bounded internal numerical sweep.
 - **rationale:** The finite numerical artifact closes: the source table matches the completed cache, and the runner source constructs the Fam1 DAGs, sweeps kH/seeds/b, computes Kubo responses, and fits slopes without hard-coding the table values. I count the runner as a C-style bounded computation rather than the mechanical D label because the scoped claim is internal runner output, not an external comparator match. Clean status is granted only under the narrowed scope; the source's mechanism, periodicity, eikonal, and physical gravitational-response language remains outside the audited claim.
+- **auditor confidence:** high
+
+### `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26`
+
+- **Note:** [`LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md`](../../docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited only the conditional delta=2/9 Brannen-BAE ratio computation and its PDG charged-lepton comparator, not any derivation of the phase, sqrt(2) coefficient, or mass scale.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-181000-6cbba886c8-lepton_brannen_bae_delta_two`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At the stipulated trial phase delta = 2/9, the Brannen-BAE ratios are positive and their sorted values are close to PDG charged-lepton square-root ratios, with delta_PDG - 2/9 = 0.000048265... radians.  _(class `D`)_
+- **chain closes:** True — The restricted packet supports the stated open-gate/comparator claim: the retained algebraic authorities cover the Brannen/Koide identities, while the runner independently computes the delta=2/9 ratios and PDG comparator arithmetic. The physical derivations of delta=2/9, sqrt(2), and the dimensionful scale are explicitly outside scope and remain open.
+- **rationale:** As an open_gate claim, the note does not overclaim a retained lepton-mass theorem or a framework derivation of the phase, BAE coefficient, or scale. The cited retained algebraic authorities are sufficient for the conditional Koide/Brannen identities, and the runner source actually computes the trial ratios, Q checks, PDG-normalized square-root ratios, scale residual, and phase gap rather than merely printing PASS. The load-bearing empirical closeness is class D, but it is presented as an observational comparator only, so the audited claim closes within its stated scope.
 - **auditor confidence:** high
 
 ### `lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26`

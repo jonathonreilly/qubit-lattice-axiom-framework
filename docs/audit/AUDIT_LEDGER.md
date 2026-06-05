@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 639 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1319 |
+| unaudited | 1318 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 49 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 978 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 49 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1603 |
+| `unaudited` | 1602 |
 
 | claim_type | count |
 |---|---:|
@@ -1117,6 +1117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3345,6 +3346,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The narrowed comparison infers from the supplied retained authorities that signed-source transfer survives on multiple alt/third/fourth family slices with near-linear weak-field response, while complex action is confined to narrow original/second anchor rows and supplied alt/second boundary failures.  _(class `B`)_
 - **chain closes:** True — For the narrowed scope, the load-bearing entries are directly supplied by retained-grade one-hop authorities: second-family complex retention and boundary, alt signed-source/FM/complex failure, third and fourth signed-source basins, and the original complex companion. The runner is a hard-coded renderer, so it is not treated as first-principles evidence.
 - **rationale:** The quantitative/table inventory for the narrowed claim matches the cited retained-grade notes, including F~M = 1.000, F~M = 0.999994, charge exponent 0.999842, and the supplied no-crossover/AWAY boundary statements. The runner source only serializes the comparison table, so the audit rests on cross-note verification rather than runner computation. Read within the explicit narrowed scope, the retained inputs support the bounded selectivity split without an additional missing bridge. This verdict does not ratify the archived original grown-basin signed-source/F~M row.
+- **auditor confidence:** high
+
+### `complex_selectivity_predictor_note`
+
+- **Note:** [`COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md`](../../docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite comparison over the listed structured-family cards: the retained complex-positive rows coincide with exact gamma=0 plus an anchor-local TOWARD -> AWAY crossover, while the diagnosed boundary rows fail that crossover.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-185617-6b9eb45a09-complex_selectivity_predicto`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The smallest stable discriminator found is the anchor-local crossover: exact gamma=0 baseline plus TOWARD -> AWAY on the retained anchor row.  _(class `B`)_
+- **chain closes:** True — The previously named missing one-hop authorities for the original grown-basin complex-positive row and the second-family tighter boundary window are present in this restricted packet, and the remaining rows are backed by retained-grade cited authorities. The conclusion closes only as a finite cross-note comparison, not as an independently computed predictor theorem.
+- **rationale:** All six table rows are supported at retained-grade or retained-bounded grade by the supplied one-hop authorities, including the original grown-row crossover and the second-family boundary-window loss. However, the primary runner does not independently compute any row; it hard-codes the comparison table and summary. Because the load-bearing step is class B cross-note input verification rather than class C first-principles compute or class A algebraic closure, the claim should remain conditional on the cited family-card authorities and the finite comparison scope.
 - **auditor confidence:** high
 
 ### `connectivity_family_v2_elliptical_duplicate_note`

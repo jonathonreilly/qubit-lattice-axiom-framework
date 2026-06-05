@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 174 |
 | **retained_no_go** | 181 |
-| **retained_bounded** | 651 |
+| **retained_bounded** | 652 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1292 |
+| unaudited | 1291 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 996 |
+| `audited_clean` | 997 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1576 |
+| `unaudited` | 1575 |
 
 | claim_type | count |
 |---|---:|
@@ -206,6 +206,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2485,6 +2486,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For any |Λ| ≥ 1, dim H_Λ = 2^|Λ| ≥ 2, so Busch's POVM-extension theorem applies and gives m(E)=Tr(σE) for a unique density matrix σ.  _(class `B`)_
 - **chain closes:** False — The application to H_Λ follows from the Quantum axiom plus the stated Busch theorem, but Busch 2003/CFMR 2004 is only named in the note and not provided as a cited authority in the restricted packet. The missing step is the actual upstream theorem statement/proof authority establishing the POVM-additive representation for all complex Hilbert spaces with dim ≥ 2.
 - **rationale:** The restricted packet supplies the minimal qubit-on-Z^3 axiom authority, which is accepted as an axiom premise and correctly supports H_Λ = tensor_x C^2 with dim 2^|Λ|. The load-bearing mathematical content, however, is an imported named Busch/CFMR POVM-Gleason theorem that is not included as a cited authority in full, so the audit cannot verify the theorem from the permitted inputs. The note is honest about not re-proving Busch, but that makes the chain conditional on a missing standard-math import rather than clean within this packet.
+- **auditor confidence:** high
+
+### `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the narrow identification that the Brillouin-zone Haar normalization for the Z^3 substrate gives the factor (2π)^3 in d^3k/(2π)^3, with the continuum Fourier convention used only as a numerical comparison.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-220117-865e1a6f87-bz_volume_two_pi_cubed_subst`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Haar-probability measure on the Pontryagin dual T^3 of Z^3, written on the [-π,π]^3 coordinate fundamental domain, is d^3k/(2π)^3 because vol([-π,π]^3)=(2π)^3.  _(class `A`)_
+- **chain closes:** True — The cited axiom supplies the Z^3 substrate, and the remaining steps are standard Pontryagin-dual/Haar-normalization facts plus product-measure arithmetic on [-π,π]^3. The continuum d^3k/(2π)^3 convention is not used to derive the substrate normalization.
+- **rationale:** The load-bearing computation is an algebraic and measure-normalization closure over the accepted Z^3 lattice premise plus textbook Pontryagin/Haar facts explicitly admitted by the claim. Independent checking of the displayed formulae confirms that the dual coordinate period is 2π, the product volume is (2π)^3=8π^3, and normalizing Haar measure to total mass one gives density 1/(2π)^3. The runner supports this but is not the sole basis for the verdict; its source performs arithmetic and finite character-factorization checks rather than merely printing a verdict. No open upstream authority is load-bearing in the restricted packet.
 - **auditor confidence:** high
 
 ### `carrier_orbit_invariance_note_2026-05-03`

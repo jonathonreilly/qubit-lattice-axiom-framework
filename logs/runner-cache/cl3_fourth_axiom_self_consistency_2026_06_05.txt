@@ -1,0 +1,108 @@
+
+================================================================================
+Part 0: dictionary sanity -- r is a power RATIO, not a scale
+================================================================================
+  [PASS] closed-form Fourier eigenvalues match Hermitian matrix (3000 draws)
+  [PASS] r = |b|^2/a^2 = (doublet Frobenius power)/(2*singlet power) (3000 draws)  (r is the power-balance ratio across the two C_3 isotype blocks)
+  [PASS] r is degree-0 homogeneous in (a,b): a pure RATIO, invariant under common scale  (=> any dynamics that fixes only |Y| (the scale) cannot fix r)
+
+  observed moduli (comparison only, never an input): {'lep': 0.5, 'down': 0.597, 'up': 0.772, 'nu_upper': 0.5}
+
+================================================================================
+Part 1: symbolic -- C_3-equivariant gap equation diagonalizes per mode
+================================================================================
+  [PASS] C_3-equivariant Sigma is diagonal in the Z_3 Fourier basis (symbolic)  (=> gap equation decouples into 3 independent scalar eqns lam_k = G g(lam_k))
+  [PASS] diagonal entry 0 equals a + 2 Re(b) (closed-form Fourier eigenvalue)
+
+================================================================================
+Part 2: MODE-BLIND NJL dynamics -- generates SCALE, but forces r=0
+================================================================================
+  [PASS] mode-blind NJL: nontrivial mass SCALE generated (dynamical transmutation)  (lam* = 0.285180 (a scale set by the coupling G=50.0))
+  [PASS] mode-blind NJL: all 3 Fourier modes get the SAME root => b=0
+  [PASS] mode-blind NJL: modulus r=0 (degenerate spectrum [1,1,1], Q=1/3) -- NOT observed  (r=0.000e+00; Q=0.3333; observed r_lep~0.5)
+
+  dynamical transmutation: generated SCALE tracks the coupling (mode-blind):
+    G=  30.0 -> subcritical (trivial root lam=0)
+    G=  50.0 -> lam*=0.285180   (r stays 0 for every G)
+    G=  80.0 -> lam*=0.640450   (r stays 0 for every G)
+    G= 120.0 -> lam*=0.945163   (r stays 0 for every G)
+
+================================================================================
+Part 3: MODE-DEPENDENT NJL -- reaches ANY r, but via per-mode coupling
+================================================================================
+
+  per-mode coupling fits to each OBSERVED modulus (RELOCATION demo):
+    lep  target r=0.500 -> G1=G2=  40.119 (G0=60) => r=0.5000 OK
+    down target r=0.597 -> G1=G2=  39.859 (G0=60) => r=0.5970 OK
+    up   target r=0.772 -> G1=G2=  39.590 (G0=60) => r=0.7720 OK
+    nu   target r=0.300 -> G1=G2=  41.157 (G0=60) => r=0.3000 OK
+  [PASS] mode-dependent NJL reproduces EACH observed modulus via a tuned per-mode coupling  (=> r is FITTED through the per-mode coupling pattern, NOT predicted (RELOCATION))
+
+================================================================================
+Part 4: input/output ledger (BAR 2)
+================================================================================
+  [PASS] mode-blind ledger: 1 coupling -> 1 scale; modulus is NOT an output (r=0 forced)  (1 input, 1 output (the scale); r not produced)
+  [PASS] mode-dependent ledger: independent per-mode dials (3) == flavor dof produced (3)  (G_0,G_1,G_2 <-> {scale,|b|,delta}; relocation is exact, no net derivation)
+
+================================================================================
+Part 5: BAR 1 -- can a *natural* un-tuned kernel pin a generic r?
+================================================================================
+
+  (W-dim) isotype (1,2) loop weighting at G=60.0, Lam=1.0:
+    lam_singlet=0.42835, lam_doublet=0.94516 => r=0.0497
+    (observed r_lep~0.5, r_down~0.597, r_up~0.772)
+  [PASS] (W-dim) natural isotype weighting yields a coupling-DEPENDENT r (not a pure number)  (r(G=60)=0.0497 vs r(G=120)=0.0222)
+  [PASS] (W-dim) one fixed weighting gives ONE r -> cannot match three distinct sector moduli  (lep != down != up requires 3 different weightings -> per-sector input again)
+  [PASS] BAR 1: no natural un-tuned kernel reproduces the generic observed moduli  (self-consistent r is either 0 (mode-blind) or coupling-dependent + non-universal)
+
+================================================================================
+Part 6: decisive identity -- gap eqs fix |Y|; the RATIO r is orthogonal
+================================================================================
+  [PASS] common coupling rescaling leaves every ratio x_k = lam_k/s INVARIANT (symbolic)  (=> the overall coupling fixes |Y| (the scale) only; r is set by coupling SPREAD)
+  [PASS] modulus r is degree-0 homogeneous in (lam_0,lam_1,lam_2) (symbolic)  (r is a pure RATIO: invariant under any common scale -> dynamics fixing |Y| cannot fix r)
+
+================================================================================
+VERDICT
+================================================================================
+
+  A self-consistency / gap-equation (NJL / Schwinger-Dyson / fixed-point)
+  dynamics on the C_3-equivariant generation Yukawa Y = aI + bC + conj(b)C^2:
+
+    * DIAGONALIZES per Fourier mode (C_3 equivariance) into 3 decoupled scalar
+      gap equations lam_k = G_k g(lam_k).
+    * MODE-BLIND (genuinely C_3-symmetric) kernel: generates an overall mass
+      SCALE by dynamical transmutation but forces lam_0=lam_1=lam_2 => b=0
+      => r=0 => spectrum [1,1,1], Q=1/3. Fixes |Y|; forces the modulus to its
+      degenerate value -- NOT the observed r.
+    * MODE-DEPENDENT kernel: reaches ANY r (incl. each observed value) only by
+      supplying independent per-mode couplings G_k -- as many new dials as the
+      flavor dof produced. RELOCATES r to the per-mode coupling pattern.
+    * r is degree-0 homogeneous in the eigenvalues / the Frobenius power-balance
+      ratio across the two C_3 isotypes: a pure RATIO, invariant under the common
+      scale the dynamics actually fixes.
+
+  HONESTY BARS:
+    BAR 1 (generic values): a self-consistent r is either 0 (mode-blind) or
+      coupling-dependent and non-sector-universal (mode-dependent). No natural
+      un-tuned kernel reproduces r_lep, r_down, r_up simultaneously.
+    BAR 2 (relocation): mode-blind = 1 coupling -> 1 scale (r forced 0);
+      mode-dependent = 3 couplings -> {scale, |b|, delta}. Inputs == outputs.
+
+  CLASSIFICATION:  FIXES-SCALE-NOT-MODULUS (mode-blind) / RELOCATES-to-coupling
+  (mode-dependent). A 4th self-consistency axiom of NJL/gap-equation type
+  supplies the missing mass SCALE (dynamical transmutation) but does NOT, on its
+  own, fix the generation flavor MODULUS r. The modulus stays free under
+  dynamical mass generation unless a NEW per-mode (flavor) input is adjoined.
+  This is consistent with the retained no-go that the singlet:doublet isotype
+  ratio is free (KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS).
+
+  NEXT PATHS THIS OPENS (not a closure): the residual is precisely a principle
+  that FIXES the per-mode coupling SPREAD (equivalently the doublet/singlet power
+  ratio) -- e.g. an equipartition / max-entropy / records-separatrix selector on
+  the two isotype blocks. Those are the live r=1/2 bridge candidates (L9 lane);
+  the gap-equation axiom is orthogonal to them (it supplies the scale they leave
+  open, and leaves open the ratio they address).
+
+================================================================================
+RESULT: 16 passed, 0 failed   (note: FOURTH_AXIOM_SELF_CONSISTENCY_DYNAMICS_SCOPING_2026-06-05.md)
+================================================================================

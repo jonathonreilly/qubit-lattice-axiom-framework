@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 662 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 32 |
-| unaudited | 1262 |
+| unaudited | 1261 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 69 |
+| ~~audited_conditional~~ | 70 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1019 |
-| `audited_conditional` | 69 |
+| `audited_conditional` | 70 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1546 |
+| `unaudited` | 1545 |
 
 | claim_type | count |
 |---|---:|
@@ -1191,6 +1191,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_trace_vs_center_dissolves_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6119,6 +6120,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** With the signed/Hermitian readout and doublet multiplicity 2, Q=((a+2b)^2+2(a-b)^2)/((a+2b)+2(a-b))^2=(a^2+2b^2)/(3a^2)=1/3+(2/3)r, so Q=2/3 iff r=1/2.  _(class `A`)_
 - **chain closes:** False — The signed trace identity itself closes algebraically. The broader note does not close from the restricted packet because the center/block-count functional, the Bures/SLD r=1/16 entry, and the heat-trace r=0 or 1 entry are not derived, and the runner verifies eigenvalue-as-mass r≈0.916 rather than a distinct singular-value readout claim.
 - **rationale:** The runner performs simple algebra/numerical solves and supports the central signed trace identity. It does not instantiate the framework baseline or derive the physical readout, center-state weighting, Bures/SLD sector balance, or heat-trace extremization from axioms. Under the formula-inventory rule, those displayed quantitative entries and the eigenvalue-as-mass versus singular-value drift prevent a clean verdict even though the main trace identity is correct.
+- **auditor confidence:** high
+
+### `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`
+
+- **Note:** [`FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the assumed finite real R[Z3] = R (+) C generation carrier, the tracial/product/modular reference does not choose the equal-block state giving Q=2/3; it gives dimension weights (1,2).
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-b754ef7ddd-flavor_tracial_reference_doe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The tracial state on the three-dimensional generation carrier is rho = I_3/3, so Tr(rho e0):Tr(rho e1) = 1/3:2/3 = 1:2 rather than the equal-block 1:1 needed for Q=2/3.  _(class `A`)_
+- **chain closes:** False — The finite-matrix trace and projector calculation closes as an algebraic statement once the R[Z3] generation carrier and Koide block readout are assumed. The restricted packet does not supply a retained or accepted premise deriving or admitting that carrier/readout from the Minimal Axioms.
+- **rationale:** The central matrix calculation is correct: the projectors have ranks 1 and 2, the normalized trace gives block weights 1/3 and 2/3, and the trace has trivial modular flow. The no-go is also properly scoped: it does not rule out Q=2/3 through a non-tracial, chiral, finite-gap, or admitted block-measure selector. However, the only cited authority is the Minimal Axioms memo, which explicitly does not supply a generation carrier, readout context, sector-generation rule, weighting, or normalization. Therefore the result is a conditional finite-matrix no-go, not a closed derivation from the cited framework baseline.
 - **auditor confidence:** high
 
 ### `flavor_value_campaign_capstone_four_channel_2026-05-31`

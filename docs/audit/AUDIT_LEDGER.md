@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 658 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1274 |
+| unaudited | 1273 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 66 |
+| ~~audited_conditional~~ | 67 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1010 |
-| `audited_conditional` | 66 |
+| `audited_conditional` | 67 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1558 |
+| `unaudited` | 1557 |
 
 | claim_type | count |
 |---|---:|
@@ -1172,6 +1172,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_kreal_instrument_two_letter_phase_orthogonal_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5739,6 +5740,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Interacting dynamics allegedly generates b!=0 while the r values in the three contact builds are set by an unsupplied matter-action coupling ratio, with C3-symmetric and epsilon channels unable to supply the required generation-specific chiral splitting.  _(class `E`)_
 - **chain closes:** False — The runner independently checks only elementary epsilon-channel algebra and Q(r) conversions. It does not instantiate the interacting kernels, solve the self-consistent b!=0 branch, derive the r table, or prove the C3-symmetric anticommuting-operator no-go.
 - **rationale:** The displayed epsilon values, hw=1 to hw=2 shift, Q(0)=1/3, Q(2/5)=3/5, Q(0.535)≈0.69, Q(1/2)=2/3, and Tr(I^2)/Tr((J-I)^2)=3/6 check algebraically. But the load-bearing interacting-dynamics and no-go claims are printed as stipulated constants/prose: the runner does not compute the three builds, the critical coupling, the continuous r(g) dependence, or the asserted C3 operator obstruction. Under the runner-source rule, this is not class C first-principles computation; the submitted chain reduces to asserted summary definitions rather than a derivation.
+- **auditor confidence:** high
+
+### `flavor_kreal_instrument_two_letter_phase_orthogonal_2026-06-02`
+
+- **Note:** [`FLAVOR_KREAL_INSTRUMENT_TWO_LETTER_PHASE_ORTHOGONAL_2026-06-02.md`](../../docs/FLAVOR_KREAL_INSTRUMENT_TWO_LETTER_PHASE_ORTHOGONAL_2026-06-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the finite algebraic localization that S=C+C^2 is K-even with singlet/doublet spectrum, J=i(C-C^2) is K-odd and commuting, and the phase direction is orthogonal to the K-even two-sector record under an assumed K-real instrument.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-224031-a534d84aa7-flavor_kreal_instrument_two_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the specified K-real, conjugation-even instrument, the record alphabet is the K-even two-sector split while the Brannen phase lies in the orthogonal K-odd channel.  _(class `A`)_
+- **chain closes:** False — The displayed matrix identities and entropy/weight arithmetic close algebraically, but the K-real conjugation-even measurement instrument and its readout rule are explicit assumed structure rather than derived from cited retained inputs. The missing step is a bridge theorem deriving or justifying that instrument/readout from the baseline axioms.
+- **rationale:** The runner source genuinely computes the finite matrix checks rather than merely printing constants: S is Hermitian with spectrum {-1,-1,2}, J is Hermitian and conjugation-odd with spectrum {-sqrt(3),0,sqrt(3)}, [S,J]=0, and H=aI+bC+conjugate(b)C^2 equals aI+Re(b)S+Im(b)J. The entropy gap and the two r-values are also straightforward arithmetic consequences of the displayed weights. However, the scientific conclusion depends on an assumed K-real conjugation-even instrument and a record/readout restriction that are not derived inside the restricted packet, and the note itself marks that instrument and the measure choice as not supplied.
 - **auditor confidence:** high
 
 ### `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31`

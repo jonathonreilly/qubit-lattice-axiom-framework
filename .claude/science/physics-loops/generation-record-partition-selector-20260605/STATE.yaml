@@ -30,7 +30,7 @@ no_go_routes:
   - partition selector determines weights or dynamics
 runner_result: partition_selector PASS=25 FAIL=0; record_generation_readout_two_sectors PASS=32 FAIL=0
 review_findings: self-review clean; independent audit required
-pr_status: pending
+pr_status: opened https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2703
 next_exact_action: |
   Push branch and open review PR. If audited clean, use it as the partition
   half of the dynamics gate; next attack should target the arrow/measure gate.

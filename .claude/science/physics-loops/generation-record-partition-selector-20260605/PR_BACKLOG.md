@@ -1,10 +1,13 @@
-# PR Backlog
+# PR Status
 
-## Candidate title
+Opened and verified:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2703
+
+## Title
 
 [physics-loop] generation record partition selector bounded-support
 
-## Candidate body
+## Body summary
 
 Adds a bounded theorem for the generation partition gate. Given the supplied
 C3 generation carrier and fixed K/CPT readout context, the native

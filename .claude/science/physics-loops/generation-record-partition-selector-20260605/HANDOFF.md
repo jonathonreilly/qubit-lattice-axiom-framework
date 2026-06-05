@@ -28,6 +28,9 @@ orientation operator `i(C-C^2)`.
 - `python3 scripts/record_generation_readout_two_sectors_2026_06_05.py`
   -> PASS=32 FAIL=0.
 
+Review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2703
+
 ## Meaning
 
 The partition half of the dynamics gate is now a positive bounded theorem

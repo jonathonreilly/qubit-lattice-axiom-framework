@@ -16,3 +16,8 @@ Independent audit should verify:
 - K/CPT orbit interpretation;
 - K-odd status of the doublet-splitting operator;
 - no promotion from partition selection to value selection.
+
+## PR
+
+Review PR opened and verified:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2703

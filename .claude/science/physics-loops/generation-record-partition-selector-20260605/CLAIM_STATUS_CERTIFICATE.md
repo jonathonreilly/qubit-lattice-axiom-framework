@@ -3,6 +3,7 @@
 **Loop slug:** `generation-record-partition-selector-20260605`  
 **Date:** 2026-06-05  
 **Branch:** `physics-loop/generation-record-partition-selector-20260605`  
+**Review PR:** https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2703  
 **Runner:** `scripts/generation_record_partition_selector_2026_06_05.py` -> PASS=25 FAIL=0  
 **Cross-check:** `scripts/record_generation_readout_two_sectors_2026_06_05.py` -> PASS=32 FAIL=0
 

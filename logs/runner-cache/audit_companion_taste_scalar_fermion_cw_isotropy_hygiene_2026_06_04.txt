@@ -1,0 +1,170 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_taste_scalar_fermion_cw_isotropy_hygiene_2026_06_04.py
+runner_sha256: 013ff3ec60e6ae1449465c06c1cd35aba61f089180e26030922cf437bedf0451
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+
+========================================================================================
+  Block 1: eigenvalue formula lambda_s(phi) = Sum_i phi_i (-1)^{s_i}
+========================================================================================
+  [PASS] eigenvalues match for phi = (Fraction(1, 1), Fraction(2, 1), Fraction(3, 1)) -- len(expected) = 8, all equal = True
+  [PASS] eigenvalues match for phi = (Fraction(2, 1), Fraction(0, 1), Fraction(0, 1)) -- len(expected) = 8, all equal = True
+  [PASS] eigenvalues match for phi = (Fraction(-1, 3), Fraction(7, 11), Fraction(0, 1)) -- len(expected) = 8, all equal = True
+  [PASS] eigenvalues match for phi = (Fraction(5, 7), Fraction(-3, 13), Fraction(11, 17)) -- len(expected) = 8, all equal = True
+
+========================================================================================
+  Block 2: binary Fourier orthogonality on (Z/2Z)^3 -> 8 delta_ij
+========================================================================================
+  [PASS] Sum_s (-1)^{s_1}(-1)^{s_1} = 8 -- observed = 8
+  [PASS] Sum_s (-1)^{s_1}(-1)^{s_2} = 0 -- observed = 0
+  [PASS] Sum_s (-1)^{s_1}(-1)^{s_3} = 0 -- observed = 0
+  [PASS] Sum_s (-1)^{s_2}(-1)^{s_1} = 0 -- observed = 0
+  [PASS] Sum_s (-1)^{s_2}(-1)^{s_2} = 8 -- observed = 8
+  [PASS] Sum_s (-1)^{s_2}(-1)^{s_3} = 0 -- observed = 0
+  [PASS] Sum_s (-1)^{s_3}(-1)^{s_1} = 0 -- observed = 0
+  [PASS] Sum_s (-1)^{s_3}(-1)^{s_2} = 0 -- observed = 0
+  [PASS] Sum_s (-1)^{s_3}(-1)^{s_3} = 8 -- observed = 8
+
+========================================================================================
+  Block 3: squared eigenvalue uniformity at phi = (v, 0, 0)
+========================================================================================
+  [PASS] lambda_s(v, 0, 0)^2 = v^2 = 1 uniformly for v = 1 -- observed set = {Fraction(1, 1)}
+  [PASS] lambda_s(v, 0, 0)^2 = v^2 = 4 uniformly for v = 2 -- observed set = {Fraction(4, 1)}
+  [PASS] lambda_s(v, 0, 0)^2 = v^2 = 9 uniformly for v = -3 -- observed set = {Fraction(9, 1)}
+  [PASS] lambda_s(v, 0, 0)^2 = v^2 = 49/121 uniformly for v = 7/11 -- observed set = {Fraction(49, 121)}
+  [PASS] lambda_s(v, 0, 0)^2 = v^2 = 25/169 uniformly for v = -5/13 -- observed set = {Fraction(25, 169)}
+  [PASS] lambda_s(v, 0, 0)^2 = v^2 = 121/361 uniformly for v = 11/19 -- observed set = {Fraction(121, 361)}
+
+========================================================================================
+  Block 4: fermion CW Hessian diagonality H_{ij}(v) = delta_ij * C(v)
+========================================================================================
+  [PASS] H_{ij}(v=1) = delta_ij * C(v) for f(x) = x -- diag = 16, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=2) = delta_ij * C(v) for f(x) = x -- diag = 16, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=3) = delta_ij * C(v) for f(x) = x -- diag = 16, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=1) = delta_ij * C(v) for f(x) = x^2 -- diag = 96, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=2) = delta_ij * C(v) for f(x) = x^2 -- diag = 384, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=3) = delta_ij * C(v) for f(x) = x^2 -- diag = 864, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=1) = delta_ij * C(v) for f(x) = x^3 -- diag = 240, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=2) = delta_ij * C(v) for f(x) = x^3 -- diag = 3840, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=3) = delta_ij * C(v) for f(x) = x^3 -- diag = 19440, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=1) = delta_ij * C(v) for f(x) = x + x^2 / 3 -- diag = 48, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=2) = delta_ij * C(v) for f(x) = x + x^2 / 3 -- diag = 144, all_diag_equal = True, all_off_diag_zero = True
+  [PASS] H_{ij}(v=3) = delta_ij * C(v) for f(x) = x + x^2 / 3 -- diag = 304, all_diag_equal = True, all_off_diag_zero = True
+
+========================================================================================
+  Block 5: Hessian common coefficient C(v) = 8 (2 f'(v^2) + 4 v^2 f''(v^2))
+========================================================================================
+  [PASS] H_{11}(v=1) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x -- H_11 = 16, expected C(v) = 16
+  [PASS] H_{11}(v=2) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x -- H_11 = 16, expected C(v) = 16
+  [PASS] H_{11}(v=3) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x -- H_11 = 16, expected C(v) = 16
+  [PASS] H_{11}(v=1) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x^2 -- H_11 = 96, expected C(v) = 96
+  [PASS] H_{11}(v=2) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x^2 -- H_11 = 384, expected C(v) = 384
+  [PASS] H_{11}(v=3) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x^2 -- H_11 = 864, expected C(v) = 864
+  [PASS] H_{11}(v=1) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x^3 -- H_11 = 240, expected C(v) = 240
+  [PASS] H_{11}(v=2) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x^3 -- H_11 = 3840, expected C(v) = 3840
+  [PASS] H_{11}(v=3) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x^3 -- H_11 = 19440, expected C(v) = 19440
+  [PASS] H_{11}(v=1) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x + x^2 / 3 -- H_11 = 48, expected C(v) = 48
+  [PASS] H_{11}(v=2) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x + x^2 / 3 -- H_11 = 144, expected C(v) = 144
+  [PASS] H_{11}(v=3) = 8 (2 f'(v^2) + 4 v^2 f''(v^2)) for f(x) = x + x^2 / 3 -- H_11 = 304, expected C(v) = 304
+
+========================================================================================
+  Block 6: denser scan: H_{ij}(v) = 16 delta_ij for f(x) = x
+========================================================================================
+  [PASS] H_{11}(v=1) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{12}(v=1) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{13}(v=1) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{21}(v=1) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{22}(v=1) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{23}(v=1) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{31}(v=1) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{32}(v=1) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{33}(v=1) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{11}(v=2) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{12}(v=2) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{13}(v=2) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{21}(v=2) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{22}(v=2) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{23}(v=2) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{31}(v=2) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{32}(v=2) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{33}(v=2) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{11}(v=3) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{12}(v=3) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{13}(v=3) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{21}(v=3) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{22}(v=3) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{23}(v=3) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{31}(v=3) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{32}(v=3) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{33}(v=3) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{11}(v=4) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{12}(v=4) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{13}(v=4) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{21}(v=4) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{22}(v=4) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{23}(v=4) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{31}(v=4) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{32}(v=4) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{33}(v=4) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{11}(v=5) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{12}(v=5) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{13}(v=5) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{21}(v=5) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{22}(v=5) = 16 for f(x) = x -- observed = 16
+  [PASS] H_{23}(v=5) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{31}(v=5) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{32}(v=5) = 0 for f(x) = x -- observed = 0
+  [PASS] H_{33}(v=5) = 16 for f(x) = x -- observed = 16
+
+========================================================================================
+  Block 7: dependency-edge restoration recorded in audit ledger
+========================================================================================
+  [PASS] audit_ledger.json row exists for parent claim -- PARENT_CLAIM_ID = taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02
+  [PASS] parent row deps contain staggered_dirac_realization_gate_note_2026-05-03 -- deps = ['minimal_axioms_2026-05-03', 'staggered_dirac_realization_gate_note_2026-05-03']
+  [PASS] parent row deps contain minimal_axioms_2026-05-03 -- deps = ['minimal_axioms_2026-05-03', 'staggered_dirac_realization_gate_note_2026-05-03']
+  [PASS] parent row deps contain both expected entries (and only them) -- deps = ['minimal_axioms_2026-05-03', 'staggered_dirac_realization_gate_note_2026-05-03']
+  [PASS] parent row direct_in_degree >= 2 -- direct_in_degree = 2
+
+========================================================================================
+  Block 8: parent note text contains both expected dep-link citations
+========================================================================================
+  [PASS] parent note contains STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md citation -- markdown link to staggered-Dirac realization gate
+  [PASS] parent note contains MINIMAL_AXIOMS_2026-05-03.md citation -- markdown link to minimal axioms memo
+  [PASS] parent note contains 'Audit dependency repair links' section header -- explicit dep-edge-restoration section header
+
+========================================================================================
+  Block 9: parent note records the axiom-reset retag wording
+========================================================================================
+  [PASS] parent note Type field marks bounded_theorem with axiom-reset retag -- post-retag bounded_theorem wording
+  [PASS] parent note target_claim_type proposal is bounded_theorem -- post-retag target_claim_type proposal
+
+========================================================================================
+  Block 10: parent runner Part-1 stale assertions are still present (observable; not repaired in this PR)
+========================================================================================
+  [PASS] parent runner Part-1 asserts 'Type:** positive_theorem' (stale post-retag) -- stale assertion still present in scripts/...narrow.py
+  [PASS] parent runner Part-1 asserts 'target_claim_type: positive_theorem' (stale) -- stale assertion still present in scripts/...narrow.py
+
+========================================================================================
+  Block 11: parent runner Part-7 deps-bookkeeping assertion is still present (observable; not repaired in this PR)
+========================================================================================
+  [PASS] parent runner Part-7 asserts 'has no declared dependency edges' (stale) -- stale assertion still present in scripts/...narrow.py
+  [PASS] parent runner Part-7 asserts 'not claim_deps' (stale post-dep-restoration) -- stale assertion still present in scripts/...narrow.py
+
+========================================================================================
+  Block 12: audit ledger row records the historical audit dispositions
+========================================================================================
+  [PASS] parent row records at least two previous_audits entries -- previous_audits count = 2
+  [PASS] previous_audits contains an 'audited_clean' disposition -- statuses = ['audited_clean', 'audited_conditional']
+  [PASS] previous_audits contains an 'audited_conditional' disposition -- statuses = ['audited_clean', 'audited_conditional']
+  [PASS] audited_conditional entry exists -- for blocker inspection
+  [PASS] audited_conditional notes_for_re_audit_if_any begins with 'missing_dependency_edge:' -- notes_for_re_audit_if_any = 'missing_dependency_edge: add the admitted staggered-Dirac realization gate as a direct dependency, o'
+
+========================================================================================
+  TOTAL: PASS=107, FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 165 |
 | **retained_no_go** | 175 |
-| **retained_bounded** | 628 |
+| **retained_bounded** | 629 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1352 |
+| unaudited | 1351 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 957 |
+| `audited_clean` | 958 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1636 |
+| `unaudited` | 1635 |
 
 | claim_type | count |
 |---|---:|
@@ -436,6 +436,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_bridge_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -6147,6 +6148,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The bounded packet closes the six finite local/scalar ingredients: local source-response, additivity, Bessel/Weyl one-plaquette agreement, the retained scalar ratio, four-link scaling, and the 3+1 incidence factor, with the beta=6 candidate kept support-only.  _(class `A`)_
 - **chain closes:** True — Within the narrowed scope, the six exact ingredients follow as algebraic or finite numerical checks plus retained upstream scalar-ratio input. The support comparator is correctly labeled support-only and is not used to prove the full interacting plaquette law.
 - **rationale:** The source note is carefully narrowed to runner-backed local/scalar ingredients and explicitly excludes the open physical Wilson-environment solve. The runner genuinely computes the SU(3) one-plaquette Bessel/Weyl/source checks and the four-link scaling check; it imports the scalar completion ratio from a retained upstream helper and imports the canonical plaquette only for a support comparator. No cited authority in the load-bearing bounded packet is non-retained, and the retained no-go authority is used only to keep the full constant-lift bridge out of scope.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite marked class-sector evaluation only: given retained finite character coefficients, the projected boundary class function evaluates by the canonical Peter-Weyl/Riesz kernel; full B_beta(W), physical untruncated Wilson environment, and beta-dependent coefficient derivation are outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-173954-0404f6320a-gauge_vacuum_plaquette_compr`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the finite character expansion Z_beta^env(W)=sum_(p,q) d_(p,q) z_(p,q)^env(beta) chi_(p,q)(W), defining v_beta=sum z_(p,q)^env chi_(p,q) and K(W)=sum d_(p,q) conj(chi_(p,q)(W)) chi_(p,q) gives Z_beta^env(W)=<K(W),v_beta>.  _(class `A`)_
+- **chain closes:** True — On the retained finite orthonormal character sector, <K(W),v_beta> expands directly to sum d_(p,q) z_(p,q)^env(beta) chi_(p,q)(W). This closes only the bounded evaluation-map identity, not the physical full-slice rim functional or the derivation of the coefficient vector.
+- **rationale:** The load-bearing step is a finite-dimensional Peter-Weyl algebraic identity over retained-bounded packet inputs. The runner performs finite linear-system and sampling/inversion checks, plus three note-string support checks; it does not compute physical beta-side coefficients, but the source explicitly scopes those coefficients as remaining input data. Because the 2026-05-26 rescope excludes the full Wilson-environment and full local rim identifications, the open physical bridges in the cited authorities are not needed for this bounded claim.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_connected_hierarchy_theorem_note`

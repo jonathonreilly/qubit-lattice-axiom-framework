@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_two_endpoint_gauss_law_invariance_profile_bounded_2026_06_05.py
+runner_sha256: 317d6bf12ee7a0d9398e6d9cf2e4acea1c0b03b0edca3c1d244d0df8b950faee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.06
+status: ok
+----- stdout -----
+========================================================================
+Two-endpoint Gauss-law invariance profile bounded checks
+========================================================================
+PASS U1 bare link-end transport is variant at both endpoints
+PASS U1 half-dressed transport is invariant only at endpoint A
+PASS U1 fully dressed Wilson-type line is invariant at both endpoints
+PASS U1 endpoint-invariance count is monotone 0 to 1 to 2
+PASS U1 bare operator is not zero
+PASS U1 half-dressed operator is not zero
+PASS U1 fully dressed operator is not zero
+PASS U1 invariant algebra is the commutant of the endpoint generators
+PASS U1 invariant algebra dimension is 36 :: dim=36
+PASS U1 invariant algebra is a proper subalgebra of the full four-qubit algebra
+PASS SU2 bare link-end transport is variant at both endpoints
+PASS SU2 double-singlet Wilson-type observable is invariant at both endpoints
+PASS SU2 double-singlet observable is nonzero
+PASS source-note firewall present: does not derive gauge invariance of observables from the Record axiom
+PASS source-note firewall present: does not identify all gauge-invariant algebra elements with physical observables
+PASS source-note firewall present: does not derive the endpoint Gauss generators from Lattice + Quantum +
+PASS source-note firewall present: does not derive gauge dynamics
+PASS source-note firewall present: does not require or establish a repo-wide quantum-link ontology
+========================================================================
+SUMMARY: PASS=18 FAIL=0
+========================================================================
+
+----- stderr -----
+

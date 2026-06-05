@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 174 |
 | **retained_no_go** | 181 |
-| **retained_bounded** | 649 |
+| **retained_bounded** | 650 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1295 |
+| unaudited | 1294 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 994 |
+| `audited_clean` | 995 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1579 |
+| `unaudited` | 1578 |
 
 | claim_type | count |
 |---|---:|
@@ -177,6 +177,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1991,6 +1992,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner is not a trivial printout: E1-E7 perform finite-matrix algebra checks, and E7 substantively supports the narrowed two-step Ward identity. However, E5 does not independently verify the claimed algebraic sign in (5)->(4); it evaluates a propagator surface where the symmetric link bilinear cancels, so the sign error is invisible. In addition, the theorem remains bounded on the explicit KS-phase-form admission, and N3's local-alpha derivation is justified only for onsite/internal generators unless an extra argument handles arbitrary site-mixing T_xy.
 - **open / conditional deps cited:**
   - `KS-phase-form (residual structural admission; no retained authority path supplied in packet)`
+- **auditor confidence:** high
+
+### `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite even L in {4,6} periodic Z4 staggered-Dirac trace identity on the free, seeded random U(1), and explicit one-principal-flux U(1) backgrounds exercised by the runner; no ABJ, continuum, nonzero-index, nonabelian, or cohomology claim audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-215711-9aa668e2c7-axiom_first_lattice_wz_fujik`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the finite anti-Hermitian staggered Dirac matrix anticommutes with epsilon, D^dag D commutes with epsilon and D bijects the positive-eigenvalue epsilon=+ and epsilon=- subspaces, so Tr(epsilon exp(-t D^dag D)) equals n_+ - n_- and is t-independent/integer-valued.  _(class `A`)_
+- **chain closes:** True — The core identity closes by finite-dimensional linear algebra: even periodicity makes epsilon flip on every nearest-neighbor hop, anti-Hermiticity gives a normal D, and D pairs all nonzero D^dag D eigenspaces across epsilon signs. The gauge-invariance and explicit-background checks are direct finite matrix/U(1) computations in the supplied runner source.
+- **rationale:** The cited minimal-axiom authority is explicitly flagged as an accepted axiom premise, and the retained cited authorities are not used for any open SME/anomaly identification. The runner source actually constructs the finite matrices, U(1) links, heat kernels, spectra, plaquettes, and Polyakov loops; it does not hard-code the contested trace values or compare to an external calibrated source. The source note is correctly narrowed to bounded finite trace support, with observed index zero and no claimed ABJ/cohomology/continuum bridge.
 - **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_theorem_note_2026-04-29`

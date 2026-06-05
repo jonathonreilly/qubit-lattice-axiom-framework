@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 177 |
-| **retained_no_go** | 187 |
+| **retained_no_go** | 188 |
 | **retained_bounded** | 664 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 32 |
-| unaudited | 1256 |
+| unaudited | 1255 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1021 |
+| `audited_clean` | 1022 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1540 |
+| `unaudited` | 1539 |
 
 | claim_type | count |
 |---|---:|
@@ -514,6 +514,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -7687,6 +7688,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The audited claim closes as standard finite-group representation algebra over the retained S3 and Z2 anchors, with the C3 and trivial rows following directly from subgroup restrictions. The false S3-locus formula identified inside the cited Z2 authority is a real upstream defect, but it is not load-bearing for this note’s Z2 row or minimal-breaking conclusion. The current claim uses the Z2 authority for the five-parameter generically nondegenerate family, not for that displayed S3-locus identity.
 - **rationale:** Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The audited claim closes as standard finite-group representation algebra over the retained S3 and Z2 anchors, with the C3 and trivial rows following directly from subgroup restrictions. The false S3-locus formula identified inside the cited Z2 authority is a real upstream defect, but it is not load-bearing for this note’s Z2 row or minimal-breaking conclusion. The current claim uses the Z2 authority for the five-parameter generically nondegenerate family, not for that displayed S3-locus identity.
 - **auditor confidence:** judicial
+
+### `generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note`
+
+- **Note:** [`GENERATION_TRIPLET_DIMENSION_PARITY_NO_FAITHFUL_Z_NARROW_NO_GO_NOTE.md`](../../docs/GENERATION_TRIPLET_DIMENSION_PARITY_NO_FAITHFUL_Z_NARROW_NO_GO_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** No 3-dimensional SU(2) rotation carrier made entirely of half-integer-spin, uniform z=-1 blocks can realize the spinor-center/CAR sign on the whole carrier; the 3-dimensional irreducible carrier is spin 1 with z=+1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-5f23feb174-generation_triplet_dimension`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On a spin-j irreducible SU(2) block, z=-1 acts as (-1)^(2j)I, so z=-1 blocks are exactly half-integer-spin blocks of even dimension and no direct sum of such blocks has total dimension 3.  _(class `A`)_
+- **chain closes:** True — The SU(2) irrep classification gives dimensions 2j+1 and central character (-1)^(2j); hence every uniform z=-1 summand has even dimension, so a 3-dimensional all-spinorial carrier is impossible. This closes only the scoped representation-theory route, not mixed reducible or non-representation-theoretic pairings.
+- **rationale:** An independent representation-theory check confirms the parity obstruction: half-integer-spin irreps have even dimensions and z=-1, while the 3-dimensional irrep is spin 1 and has z=+1. The runner's quaternion, central-character, partition, and finite tensor checks are consistent with that algebraic proof, though the universal statement comes from the irrep classification rather than the finite sweep. The no-go discipline gate is satisfied only in the narrow sense stated by the note: it does not close non-representation pairings or other routes outside a single three-dimensional SU(2) carrier with uniform spinorial center action.
+- **auditor confidence:** high
 
 ### `geometry_lane_head_to_head_note`
 

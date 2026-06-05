@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_internal_external_su2_merger_record_invariance_2026_06_04.py
+runner_sha256: 20f70f2e5ed24777572bb047c5af704bfc52fbc0a13e4f75f2fc7b8d5c5059c3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.79
+status: ok
+----- stdout -----
+========================================================================
+Internal-external SU(2) merger record-invariance hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md
+Parent runner: scripts/internal_external_su2_merger_runner.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS parent_claim_type_expected
+PASS parent_runner_path_expected
+PASS parent_current_criticality_expected
+PASS parent_current_load_expected :: load=7.407
+PASS parent_note_hash_expected
+PASS parent_note_hash_matches_ledger
+PASS parent_deps_exact :: count=5
+PASS parent_current_row_unresolved
+PASS parent_load_bearing_block_present
+PASS parent_load_bearing_contains_operator_phrase_0
+PASS parent_load_bearing_contains_operator_phrase_1
+PASS parent_load_bearing_contains_operator_phrase_2
+PASS parent_load_bearing_contains_operator_phrase_3
+PASS parent_load_bearing_contains_operator_phrase_4
+PASS parent_load_bearing_contains_operator_phrase_5
+PASS parent_load_bearing_contains_operator_phrase_6
+PASS parent_load_bearing_contains_operator_phrase_7
+PASS parent_load_bearing_omits_record_axiom_terms
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_total_present
+PASS parent_runner_pass_count_two_hundred_seventy_three :: pass_count=273
+PASS parent_runner_fail_count_zero :: fail_count=0
+PASS record_marker_true_exit_zero :: returncode=0
+PASS record_marker_does_not_change_parent_output
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_verdict_change
+PASS companion_disclaims_scale_or_translation_use
+PASS companion_marks_axioms_not_support
+========================================================================
+SUMMARY: PASS=31 FAIL=0
+========================================================================
+
+----- stderr -----
+

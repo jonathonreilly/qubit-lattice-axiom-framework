@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 176 |
 | **retained_no_go** | 187 |
-| **retained_bounded** | 659 |
+| **retained_bounded** | 660 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 32 |
-| unaudited | 1266 |
+| unaudited | 1265 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1015 |
+| `audited_clean` | 1016 |
 | `audited_conditional` | 69 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1550 |
+| `unaudited` | 1549 |
 
 | claim_type | count |
 |---|---:|
@@ -412,6 +412,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
@@ -6022,6 +6023,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** If an additional physical source-locality/readout premise selects onsite diagonal sources, then C3 invariance makes the onsite diagonal source scalar and the supplied Q(z)=2/(3(1+z)) gives Q(0)=2/3.  _(class `A`)_
 - **chain closes:** False — The displayed finite algebra closes on its own terms: C3-invariant diagonals are scalar, Q(0)=2/3, Q(-1/3)=1, Z^2=I, S_Q1 has 10/9 diagonal and -2/9 off-diagonal entries, and the diagonal-circulant intersection is scalar. The chain to a physical source-domain retention/readout conclusion does not close because the onsite source-locality/readout premise is explicitly left as an extra undischarged premise.
 - **rationale:** The runner source performs actual finite symbolic and matrix checks rather than merely printing constants, and the displayed identities independently check out. However, the load-bearing result is algebra over supplied definitions, not a first-principles derivation from A2 or any accepted baseline. The note correctly narrows away the older hard-coded R1 assertion, but it still depends on an additional source-locality/readout premise to select onsite diagonal sources for the physical Q=2/3 reading.
+- **auditor confidence:** high
+
+### `flavor_so2_readout_false_binary_note_2026-05-30`
+
+- **Note:** [`FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md`](../../docs/FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebraic support for the supplied C3 circulant and singlet/doublet family only, with no global readout-normalization or selector theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-225553-1334baa931-flavor_so2_readout_false_bin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The supplied finite algebra verifies the C3 rephase obstruction, delta-blind Koide trace ratio for the stated circulant family, det_R(alpha P_s+beta P_d)=alpha beta^2 versus block product alpha beta, and degeneracy at delta=m*pi/3.  _(class `A`)_
+- **chain closes:** True — The displayed identities close by direct finite algebra on the matrices and spectra supplied in the packet. Independent checks give (exp(i alpha)C)^3=I iff exp(3i alpha)=1, Q=(3a^2+6|b|^2)/(3a)^2 independent of delta, eigenvalues alpha,beta,beta for alpha P_s+beta P_d, and pairwise spectral degeneracy exactly at delta=m*pi/3 for |b|>0.
+- **rationale:** The narrowed note no longer claims framework-wide exhaustiveness or a physical selector result; it claims only finite algebra for the supplied family. The runner source performs actual matrix and spectrum checks rather than merely printing constants, and the same formulas are independently confirmed by elementary algebra. There are no cited non-retained authorities or external comparator inputs in the restricted packet.
 - **auditor confidence:** high
 
 ### `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31`

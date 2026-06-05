@@ -27,6 +27,7 @@ open_imports:
   - selector/measure theorem remains open for the 13 touched audited-conditional rows
   - physical dynamics theorem remains open for record-production/decoherence/arrow rows
 review_disposition: local_self_review_pass
-pr_status: not_opened_yet
-next_exact_action: local review, commit, push, open stacked PR
+pr_status: opened
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2710
+next_exact_action: attack the record-prior stability selector theorem
 stop_condition: one coherent dispatch-map block completed

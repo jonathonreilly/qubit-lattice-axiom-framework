@@ -10,6 +10,8 @@ Added a runner-backed audit dispatch map:
 
 Runner result: `PASS=8 FAIL=0`.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2710
+
 ## Main finding
 
 The exact Record typing theorem touches 177 of 1304 bounded/conditional scoped
@@ -19,5 +21,4 @@ science target is not more type-firewall work; it is record-prior stability.
 
 ## Next exact action
 
-Commit, push, and open a stacked PR based on PR 2708's branch. Then start a new
-block for the record-prior stability selector.
+Start a new block for the record-prior stability selector.

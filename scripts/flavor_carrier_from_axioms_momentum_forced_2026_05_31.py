@@ -23,15 +23,16 @@ TWO LAYERS (the synthesis' clean split, verified here):
     1,3,3,1); a Wilson/second-difference operator puts its distinguished massless mode at hw=0 (mass
     staircase 0,2r,4r,6r), NOT hw=1. Singling out the hw=1 C_3 triplet requires the staggered/
     Kawamoto-Smit FIRST-ORDER CHIRAL operator = single-mode Grassmann fermionization of the M_2(C)
-    qubit + chiral anticommutation {epsilon=(-1)^(x+y+z), D}=0. A1 gives a BOSONIC qubit; these are
+    qubit + chiral anticommutation {epsilon=(-1)^(x+y+z), D}=0. The current qubit substrate supplies a BOSONIC qubit; these are
     PREMISES (genuine import). This import COINCIDES with the framework's already-identified generation-
-    ID / Koide-Q=2/3 chirality gate (the C_3-orbit-splitting chiral grading) -- so the carrier locus is
-    NOT a new independent input; it collapses into the one recurring chirality import.
+    ID / Koide-Q=2/3 chirality gate family (the C_3-orbit-splitting chiral grading) -- so the carrier
+    locus aligns with the recurring chirality import rather than adding a separate independent gate.
 
   BASEPOINT r=|b|^2/a^2=1/2: separate continuous Yukawa input, untouched by the discrete pole structure.
 """
 import itertools
 import numpy as np
+import sympy as sp
 
 W = np.exp(2j * np.pi / 3)
 
@@ -118,8 +119,21 @@ def main():
         "C1 delta=L_3(1,2)=2/9 (equivariant-eta/Atiyah-Bott density), distinct from the bare doublet character omega+omega^2=-1",
         abs(L12 - 2.0 / 9.0) < 1e-12 and abs((W + W ** 2) + 1) < 1e-12,
         f"L_3(1,2)={L12.real:.6f}; bare char={float((W+W**2).real):.1f}"))
+
+    a_sym, b_sym = sp.symbols("a_sym b_sym", positive=True, real=True)
+    J3 = sp.ones(3)
+    F = a_sym * sp.eye(3) + b_sym * (J3 - sp.eye(3))
+    tr_F = sp.simplify(sp.trace(F))
+    tr_F2 = sp.simplify(sp.trace(F * F))
+    Q_F = sp.simplify(tr_F2 / (tr_F ** 2))
     passed.append(check(
-        "D1 basepoint r=|b|^2/a^2 is FREE in F=aI+b(J-I): Q=1/3+(2/3)r; r=1/2->Q=2/3, r=1->Q=1; unconstrained by corner kinematics",
+        "D1 derive Q(F)=Tr(F^2)/Tr(F)^2 = 1/3 + (2/3)|b|^2/a^2 from F=aI+b(J-I)",
+        tr_F == 3 * a_sym
+        and tr_F2 == 3 * a_sym ** 2 + 6 * b_sym ** 2
+        and sp.simplify(Q_F - (sp.Rational(1, 3) + sp.Rational(2, 3) * (b_sym ** 2 / a_sym ** 2))) == 0,
+        f"Tr F={tr_F}, Tr F^2={tr_F2}, Q={Q_F}"))
+    passed.append(check(
+        "D2 basepoint r=|b|^2/a^2 is FREE: r=1/2->Q=2/3, r=1->Q=1; unconstrained by corner kinematics",
         abs((1 / 3 + 2 / 3 * 0.5) - 2 / 3) < 1e-12 and abs((1 / 3 + 2 / 3 * 1.0) - 1.0) < 1e-12,
         "discrete pole/corner structure fixes delta=2/9 only; the continuous Yukawa modulus r is a separate input"))
 
@@ -131,10 +145,12 @@ def main():
     print("momentum carrier question is dissolved as a theorem of A2. LAYER B (which LOCUS = hw=1 triplet) is")
     print("NOT forced by framework baseline: the dispersion zero locus is all 8 corners and a Wilson operator prefers hw=0;")
     print("the hw=1 C_3 triplet needs the staggered/Kawamoto-Smit first-order CHIRAL operator (single-mode")
-    print("Grassmann + {epsilon,D}=0) -- a genuine import that COINCIDES with the framework's recurring")
-    print("generation-ID / Koide-Q=2/3 chirality gate. So the carrier locus is NOT a new independent input;")
-    print("it collapses into the one chirality import. BASEPOINT r=1/2 remains a separate continuous Yukawa input.")
-    print("Source: STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE premise table (BlockT1 + {epsilon,D}=0).")
+    print("Grassmann + {epsilon,D}=0) -- a genuine import that aligns with the framework's named")
+    print("generation-ID / Koide-Q=2/3 chirality gate family. This is gate alignment, not closure of")
+    print("the physical generation bridge. BASEPOINT r=1/2 remains a separate continuous Yukawa input.")
+    print("Sources: STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md")
+    print("(BlockT1 + {epsilon,D}=0), KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md,")
+    print("and KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md.")
     return 0 if all(passed) else 1
 
 

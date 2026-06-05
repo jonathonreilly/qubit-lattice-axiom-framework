@@ -1,0 +1,89 @@
+==============================================================================
+FRONT 1 -- THE CONTINUUM RISK (central): is the einselected r discrete or a continuum?
+==============================================================================
+[PASS] readout line Q=1/3+(2/3)r is exact for the circulant family
+       Q(r=1/2)=2/3 exactly; the dial Q is a continuous bijection of r
+[PASS] the dial r is a continuum of valid Hermitian circulant Hamiltonians
+       H(r) Hermitian for all r in [0,1]; r=1/2 has no intrinsic distinction here
+[PASS] generic H_int einselects a CONTINUUM of r (fills the [0,1] interval densely)
+       80% of [0,1] bins occupied over 4000 random H_int => r=1/2 is NOT a privileged einselected value
+[PASS] r=1/2 carries NO excess einselection density (not a spike/attractor over generic interior r)
+       #einselected near r=1/2: 12; near arbitrary r=0.37: 53 (ratio 0.23 < 2 => r=1/2 not preferred) => 'r=1/2 is THE stable setting' is VACUOUS
+[PASS] endpoints {0,1} are spectrally special (degenerate/collapse); r=1/2 is spectrally GENERIC
+       r=0 spectrum [1. 1. 1.] (degenerate); r=1/2 spectrum non-degenerate => {0,1} are marked by spectrum, r=1/2 is NOT
+[PASS] an EXPLICIT 1-param family of monitored couplings sweeps einselected r over ALL of (0,1)
+       einselected r(control) ranges [0.02,0.98], strictly increasing, == the monitor's own dial => the einselectable-r set is the full INTERVAL, not 3 points
+[PASS] r=1/2 occurs at an unremarkable interior control value (no kink/symmetry-fixed point)
+       einselected r=1/2 reached at control=0.500 (interior, generic) => nothing in the einselection map marks r=1/2 over any neighbor
+[PASS] trivial/degenerate monitor (H_int proportional to I) einselects no partition (r=0 default)
+       scalar H_int has 1 eigenvalue -> no pointer split -> the degenerate r=0 endpoint, not r=1/2
+
+==============================================================================
+FRONT 2 -- WHY THESE THREE H_int? gauge-respecting environment criterion
+==============================================================================
+[PASS] gauge-respecting environment: C_3-invariant H_int commutes with C (is circulant)
+       {environment respects C_3} restricts H_int to span_C{I,C,C^2}
+[PASS] generic C_3-invariant H_int gives the 3-MODE (character) pointer partition, not 2-sector
+       200/200 invariant H_int resolve all 3 character modes (eigvecs = Fourier basis) -> the *generic* gauge-respecting pointer is r=0, not r=1/2
+[PASS] 2-sector partition requires the EXTRA K-reality (T-even) input on top of C_3-invariance
+       span_R{I,C+C^2} keeps doublet degenerate -> exactly 2 pointer blocks (eig(C+C^2)={2,-1,-1}); this is a SECOND input beyond 'gauge-respecting'
+[PASS] NO H_int forces r=1/2: the 2-block pointer map is a NO-OP for EVERY r (H already block-diag)
+       max||P0 H P1||-type residual over r in (0,1): 6.66e-16 => the 'r=1/2 H_int' does not exist; 2-block einselection leaves r a free continuum
+[PASS] position/local monitor -> 3 distinct site pointers (the r=1 dimension/Born endpoint)
+       site-diagonal H_int einselects the computational basis; with dimension weighting -> r=1 => the only two H_int-FORCED settings are the endpoints {0,1}; r=1/2 has no forcing H_int
+
+==============================================================================
+FRONT 3 -- CIRCULARITY with the records-flow fixed points (r=0,1/2,1)
+==============================================================================
+[PASS] records sharpening flow reduces to r -> 2 r^2 (matches retained Luders form)
+       p->p^2/Z on the 2-sector power distribution == the map r|->2r^2
+[PASS] r->2r^2 fixed points are {0 (stable), 1/2 (unstable)} -- SAME points, SAME 2-sector object
+       the flow and the pointer partition both live on the singlet|doublet power simplex => agreement is a TAUTOLOGY (one computation dressed twice), not independent confirmation
+[PASS] the 2-sector entropy S2(r) peaks at r=1/2 BY CONSTRUCTION (uniform on 2 atoms), not by einselection
+       argmax S2 = 0.499; this is 'p=(1/2,1/2)' relabeled -- the environment plays NO role
+[PASS] einselection record-update == Luders sharpening (SAME map p->p^2/Z): not independent confirmation
+       the records flow and the einselection sieve are literally the same purifying CP map => Front-A's 'einselection-stable set COINCIDES with records fixed points' is a TAUTOLOGY
+[PASS] r=1/2 fixed-point STABILITY is arrow-dependent (repeller under sharpening, attractor under thermalizing)
+       same point, opposite stability under the two arrows => 'stable einselection setting' is arrow-of-time-relative, NOT an intrinsic selection -> adds no measure-selecting content
+
+==============================================================================
+FRONT 4 -- DOES IT ADD ANYTHING over the known stationary-point result?
+==============================================================================
+[PASS] [retained cross-check] H is block-diagonal in {P0,P1} for EVERY r (||P0 H P1||~0)
+       max ||P0 H P1|| = 4.03e-16 -> the einselection pointer map adds ZERO constraint on r
+[PASS] Born/dimension measure on the SAME 2 blocks gives r=1 (NOT r=1/2): value is measure-choice
+       (Tr P0,Tr P1)/3 = (1/3,2/3) -> r=1; equal-power -> r=1/2. Einselection is SILENT on which -> it RELABELS the open measure gate, adds no physical reason for r=1/2
+[PASS] the DISCRETE {0,1/2,1} = three MEASURES on the blocks (spectral|block-count|dimension), not 3 H_int
+       discreteness lives on the value/measure axis; einselection fixes (at most) the PARTITION, leaving the value a continuum -> the discrete set needs the measure input, not the pointer
+[PASS] VERDICT(1): einselected r is a CONTINUUM (value not discretized even by gauge symmetry)
+       generic H_int -> dense [0,1]; gauge+K-real H_int -> 2-block partition but r still FREE (no-op) => 'r=1/2 is a stable setting' is VACUOUS without the extra MEASURE input
+[PASS] VERDICT(2): einselection is a RELABELING of the stationary-point/measure result, no new mechanism
+       block-diagonal no-op + records flow = same 2-sector simplex; the 'environment monitors C_3-charge' story supplies the PARTITION (already retained, modulo K-reality), not the VALUE
+
+==============================================================================
+SCORECARD: 23/23 PASS
+==============================================================================
+
+PER-FRONT VERDICT:
+  F1 CONTINUUM RISK : CONTINUUM. Generic H_int einselects a dense [0,1] of r; r=1/2 is one
+                      non-isolated point. Only the ENDPOINTS {0,1} are spectrally special.
+  F2 WHY THREE H_int: no single H_int forces r=1/2. Gauge-respecting (C_3-inv) -> generically the
+                      3-mode (r=0) pointer; +K-reality -> the 2-BLOCK partition, but the VALUE r
+                      stays free (block-diagonal no-op). The 'three' are not one criterion.
+  F3 CIRCULARITY    : TAUTOLOGY. The Luders r->2r^2 flow and the pointer partition live on the SAME
+                      2-sector simplex; S2 peaks at 1/2 by construction. Agreement injects no info.
+  F4 ADDS-ANYTHING  : RELABELING. Reproduces the retained block-diagonal no-op; Born measure on the
+                      same blocks gives r=1. The discrete {0,1/2,1} is a MEASURE-axis fact, not a
+                      pointer-basis fact. Einselection supplies (at most) the partition gate.
+
+TWO KEY FINDINGS:
+  (1) DISCRETE-or-CONTINUUM: CONTINUUM. 'r=1/2 is a stable einselection setting' is VACUOUS unless
+      an extra input is added. A gauge-respecting (C_3-invariant) environment discretizes the
+      PARTITION (3-mode vs 2-sector, the latter modulo K-reality), but does NOT discretize the
+      VALUE r -- the 2-block pointer map is a literal no-op, so r remains a free continuum on it.
+      The honest 'win' (symmetry discretizes the stable settings to {0,1/2,1}) does NOT land at the
+      einselection level; {0,1/2,1} is the discrete set of MEASURES on the blocks, not of pointers.
+  (2) NEW-MECHANISM-or-RELABELING: RELABELING. No new physical reason for r=1/2 over the known
+      stationary-point/measure result. Einselection by a C_3-invariant coupling = the already-
+      retained '2-block partition modulo K-reality' gate; it is SILENT on the value r and on the
+      block-count-vs-Born measure choice that actually decides {0,1/2,1}.

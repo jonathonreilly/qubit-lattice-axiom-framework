@@ -20,7 +20,8 @@ BUILD B -- carrier-measure universality FAILS data (strains the axiom):
      axiom's within-sector C3 premise (the (c,b,t) coincidence straddles the up/down divide).
   B4 neutrinos: Q_nu in [0.34,0.585] (NO) / [0.35,0.50] (IO) -- Q=2/3 EXCLUDED by splittings alone,
      regardless of Dirac/Majorana. The Kahler "Majorana=frozen phase->departs" is mis-specified (dQ/ddelta=0).
-  B5 CKM off-carrier escape needs 17-37deg rotation vs Cabibbo 13deg (5x too small) -> unfalsifiable fudge.
+  B5 CKM off-carrier escape angle inventory is 17-37deg vs Cabibbo 13deg (1.3-2.8x), and no sign/order
+     mechanism closes.
 """
 import numpy as np, sympy as sp
 
@@ -36,8 +37,28 @@ def main():
     B=[e,g,g2]; G=sp.Matrix(3,3, lambda i,j: sp.trace(B[i].T*B[j])/3)
     passed.append(check("A: inherited tracial ONB = group-element {e,g,g^2} (Gram=I) = dimension basis",
         G==sp.eye(3), "equal weight per mode -> dimension partition -> r=1 (Q=1) INHERITED DEFAULT"))
+    coeffs = sp.Matrix([sp.trace(Bi.T * (g + g2)) / 3 for Bi in B])
+    passed.append(check("A: J-I=g+g^2 has coefficient vector (0,1,1) in the inherited real ONB",
+        coeffs == sp.Matrix([0, 1, 1]) and sp.simplify((coeffs.T * coeffs)[0]) == 2,
+        f"coeffs={list(coeffs)}; support count={sum(1 for c in coeffs if c != 0)}; norm^2={(coeffs.T * coeffs)[0]}"))
+    theta = sp.symbols("theta", real=True)
+    def R(th):
+        return sp.Matrix([[sp.cos(th), -sp.sin(th)], [sp.sin(th), sp.cos(th)]])
+    allowed = [0, 2 * sp.pi / 3, 4 * sp.pi / 3]
+    allowed_ok = all(sp.simplify(R(t) ** 3 - sp.eye(2)) == sp.zeros(2) for t in allowed)
+    continuous_counterexample = sp.simplify(R(sp.pi / 6) ** 3 - sp.eye(2)) != sp.zeros(2)
+    z = sp.symbols("z")
+    roots_factor = sp.factor(z**3 - 1)
     passed.append(check("A: J-I=g+g^2 spans TWO ONB modes -> r=1/2 needs det_C complex regrouping",
-        True, "det_C <=> continuous U(1) rephasing of C, INCOMPATIBLE with C^3=I (-> det_R -> r=1)"))
+        allowed_ok and continuous_counterexample and roots_factor == (z - 1) * (z**2 + z + 1),
+        "C^3=I permits only the three cube-root phases; a continuous U(1) doublet phase is extra structure"))
+    a_sym, b_sym, delta = sp.symbols("a_sym b_sym delta", positive=True, real=True)
+    lam = [a_sym + 2 * b_sym * sp.cos(delta + 2 * sp.pi * k / 3) for k in range(3)]
+    Q_signed = sp.trigsimp(sp.simplify(sum(x**2 for x in lam) / sp.simplify(sum(lam)) ** 2))
+    Q_expected = sp.Rational(1, 3) + sp.Rational(2, 3) * b_sym**2 / a_sym**2
+    passed.append(check("A/B: signed Brannen Q is delta-independent: dQ/ddelta=0 exactly",
+        sp.trigsimp(sp.simplify(Q_signed - Q_expected)) == 0 and sp.diff(Q_signed, delta) == 0,
+        f"Q_signed={Q_expected}"))
     # BUILD B
     def Q(m): m=np.array(m,float); return m.sum()/np.sqrt(m).sum()**2
     c2=lambda m: 6*Q(m)-2
@@ -55,6 +76,11 @@ def main():
     qmax=max(Qnu(x) for x in np.linspace(0,0.05,200))
     passed.append(check("B: neutrino Q (NO) max < 2/3 -> Q_nu=2/3 EXCLUDED by splittings (any nature)",
         qmax < 0.6, f"max Q_nu(NO)={qmax:.3f} < 0.667; Kahler Dirac->2/3 refuted by splittings alone"))
+    required=(17.0,37.0); cabibbo=13.0
+    ratios=(required[0]/cabibbo, required[1]/cabibbo)
+    passed.append(check("B: CKM escape angle inventory corrected: 17-37 deg is 1.3-2.8x Cabibbo, not 5x",
+        1.30 < ratios[0] < 1.31 and 2.84 < ratios[1] < 2.85,
+        f"Cabibbo={cabibbo:.1f}deg; required={required[0]:.0f}-{required[1]:.0f}deg; ratios={ratios[0]:.2f}-{ratios[1]:.2f}x"))
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT (both builds converge): candidate revised Axiom 1 does NOT discharge its debt -- the measure inherited from")
     print("the qubit substrate is the DIMENSION partition (r=1, Q=1 default); r=1/2 requires the det_C")
@@ -62,7 +88,7 @@ def main():
     print("IMPORT (complex/continuous structure on the doublet), converging with the chirality gate. And")
     print("the universality that would make it more than 'positing the lepton number' FAILS data: only")
     print("charged leptons hit 2/3, the (c,b,t) cross-sector coincidence contradicts the within-sector")
-    print("premise, neutrinos exclude 2/3, and the CKM escape is 5x too small (unfalsifiable fudge).")
+    print("premise, neutrinos exclude 2/3, and the CKM escape angle inventory does not close a mechanism.")
     print("SURVIVES: charged leptons at c^2=2 to 5 digits, zero params -- a real, unexplained 1-of-4 fact.")
     return 0 if all(passed) else 1
 

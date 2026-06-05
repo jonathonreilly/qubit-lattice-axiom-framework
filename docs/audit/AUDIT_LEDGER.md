@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 162 |
 | **retained_no_go** | 174 |
-| **retained_bounded** | 622 |
+| **retained_bounded** | 623 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1368 |
+| unaudited | 1367 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 947 |
+| `audited_clean` | 948 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1652 |
+| `unaudited` | 1651 |
 
 | claim_type | count |
 |---|---:|
@@ -178,6 +178,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -2011,6 +2012,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** If T: B -> B is a bounded linear operator with ||T||_op <= kappa and 0 <= kappa < 1, then ||T^N x0|| <= kappa^N ||x0||; similarly compositions multiply operator-norm bounds, Banach contraction iterates satisfy d(T^N x0,x_*) <= kappa^N d(x0,x_*), and sum_{k>=N} kappa^k = kappa^N/(1-kappa).  _(class `A`)_
 - **chain closes:** True — The scoped result is standard functional analysis and elementary algebra: submultiplicativity of operator norm gives the iterate and composition bounds, Banach's contraction theorem gives the fixed-point estimate, and the tail formula is the ordinary geometric series identity. The note explicitly excludes framework blocking/coarse-graining, project couplings, hierarchy formulae, physical scales, and observational comparisons, so no CL3 or physics bridge is required for this narrow claim.
 - **rationale:** The claim closes exactly within the stated external-mathematics boundary. There are no hidden project-specific imports, no renaming of physical quantities, and no assertion that a BBS/RG hypothesis holds for any framework map. The BBS/Brydges-Slade material is only cited as context where such estimates are used, not as a load-bearing bridge claim.
+- **auditor confidence:** high
+
+### `bell_inequality_derived_note`
+
+- **Note:** [`BELL_INEQUALITY_DERIVED_NOTE.md`](../../docs/BELL_INEQUALITY_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-model CHSH violation on the stated small periodic lattices, with the listed selected G couplings, two distinguishable C^N tensor factors, periodic-Poisson density coupling, and explicit Cl(3) taste-operator checks.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-170356-8e35764148-bell_inequality_derived_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the explicitly defined finite Hamiltonian H = H1⊗I + I⊗H1 + G Σ_ij V(i,j)|i><i|⊗|j><j|, the Horodecki CHSH computation gives |S| > 2 at the listed nonzero G values and |S| = 2 at G = 0.  _(class `C`)_
+- **chain closes:** True — The packet defines the finite lattice operators, Poisson pseudoinverse, tensor-product Hamiltonian, and CHSH/taste operators directly, and the runner source computes the displayed values rather than reading or hard-coding them. The closure is only for the bounded model surface, not for physical gravitational normalization or framework-native registration of the two-species/D5 interpretation.
+- **rationale:** The load-bearing step is class C for the narrowed finite model: the runner constructs the lattice, Clifford/taste operators, Poisson kernel, Hamiltonian, eigenstates, and CHSH matrix from the stated inputs. The displayed taste identities follow algebraically from x_mu = 2X_mu + eta_mu, and independent spot recomputation reproduces representative 1D, 2D, and 3D CHSH entries. The selected G values are part of the bounded model claim rather than an imported calibrated external comparator, so this is not class G on the audited scope. No broader physical or framework-native Bell theorem is ratified here.
 - **auditor confidence:** high
 
 ### `bertrand_stable_orbit_upper_bound_support_note_2026-05-20`

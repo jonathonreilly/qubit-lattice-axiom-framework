@@ -3,7 +3,7 @@
     "critical": 269,
     "high": 284,
     "leaf": 433,
-    "medium": 349
+    "medium": 348
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16727,32 +16727,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_source_action_support_packet_note_2026-05-22",
-        "yt_color_projection_correction_note",
-        "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.585,
-      "note_path": "docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py",
-      "transitive_descendants": 11
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -16849,6 +16823,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py",
+      "transitive_descendants": 8
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_source_covariance_normalization_support_note_2026-05-24",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "yt_source_action_support_packet_note_2026-05-22",
+        "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.67,
+      "note_path": "docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_source_covariance_normalization_support.py",
       "transitive_descendants": 8
     },
     {
@@ -24480,31 +24479,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
-      "transitive_descendants": 8
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_source_covariance_normalization_support_note_2026-05-24",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_source_action_support_packet_note_2026-05-22",
-        "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.67,
-      "note_path": "docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_source_covariance_normalization_support.py",
       "transitive_descendants": 8
     },
     {
@@ -39946,5 +39920,5 @@
     }
   ],
   "ready_count": 123,
-  "total_pending": 1335
+  "total_pending": 1334
 }

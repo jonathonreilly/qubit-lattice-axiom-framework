@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 169 |
-| **retained_no_go** | 177 |
+| **retained_no_go** | 178 |
 | **retained_bounded** | 633 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1333 |
+| unaudited | 1332 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 969 |
+| `audited_clean` | 970 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1617 |
+| `unaudited` | 1616 |
 
 | claim_type | count |
 |---|---:|
@@ -1097,6 +1097,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -16467,6 +16468,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** The common v'(h) factor in dM_t/dh=(y_t/sqrt(2))v'(h) and dM_W/dh=(g_2/2)v'(h) cancels, so y_t=(g_2/sqrt(2))(dM_t/dh)/(dM_W/dh), and the same cancellation holds under h=f(s).  _(class `A`)_
 - **chain closes:** True — The formula is an exact symbolic quotient: differentiating both masses with respect to the same local source coordinate gives a shared Jacobian, and a reparameterization h=f(s) multiplies both derivatives by the same chain-rule factor. Independent symbolic recomputation reproduces sqrt(2)*y_t/g_2 and recovered y_t.
 - **rationale:** Clean under the exact coordinate-invariance support scope. The source note does not rename the signed-record source as the Higgs; it proves that once a later retained same-surface EW radial source is supplied, the top/W derivative ratio is independent of the local coordinate normalization. The runner's symbolic checks and firewall/status checks pass, but they correctly leave the top transfer-response theorem, coefficient-certified rows, retained numerical g_2 authority, and physical-scale Y_T closure outside this row.
+- **auditor confidence:** high
+
+### `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23`
+
+- **Note:** [`YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md`](../../docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow algebraic no-go that strict single-pole C_ss/C_sH/C_HH Gram purity and mass extraction alone cannot fix absolute source/Higgs normalization or select kappa_Y=0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-ef51181c43-yt_source_higgs_pole_row_nor`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under s -> mu s and H -> lambda H, the residues scale as mu^2, mu lambda, and lambda^2 while Gram purity and the effective-mass ratio remain invariant, so the K_Y(1)/K_Y(0)=9/8 factor can be absorbed by lambda^2=9/8.  _(class `A`)_
+- **chain closes:** True — The rescaling witness gives indistinguishable pole-row purity and mass data with different absolute normalizations. Since the connected/full K_Y difference is exactly a squared normalization factor, the pole-row data alone lack information to choose kappa_Y.
+- **rationale:** The displayed identities close directly: C_sH^2 equals C_ss C_HH, both sides pick up the same mu^2 lambda^2 factor under rescaling, C(t)/C(t+1) is amplitude-blind, and K_Y(1)/K_Y(0)=9/8. The runner source performs exact fraction arithmetic and boundary-phrase checks rather than merely printing constants, with no external comparator or fitted input. The cited K_Y family is retained, and the support/LSZ material is used to delimit missing normalization rather than as a hidden positive premise. N1-N8 stress testing keeps the no-go narrow: it rules out the pole-row-purity shortcut only and leaves canonical O_H/LSZ, W/Z response, direct correlator, and future same-surface routes open.
 - **auditor confidence:** high
 
 ### `yt_ssb_matching_gap_analysis_note_2026-04-18`

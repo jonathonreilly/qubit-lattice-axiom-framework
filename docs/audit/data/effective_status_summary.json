@@ -46,10 +46,10 @@
     "retained": 176,
     "retained_bounded": 655,
     "retained_no_go": 181,
-    "retained_pending_chain": 9,
-    "unaudited": 1284
+    "retained_pending_chain": 10,
+    "unaudited": 1283
   },
-  "retained_pending_chain_count": 9,
+  "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [
     "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
@@ -59,6 +59,7 @@
     "lattice_3d_nyquist_diffraction_note",
     "linear_response_second_order_kubo_note",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
+    "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
   ]
 }

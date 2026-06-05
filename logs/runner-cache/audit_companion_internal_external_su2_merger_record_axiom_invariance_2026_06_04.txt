@@ -1,0 +1,195 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_internal_external_su2_merger_record_axiom_invariance_2026_06_04.py
+runner_sha256: 36160eef388aca300e0666f91a8bbacaa962a717527a014a31ae8f4e21b3f2f1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.31
+status: ok
+----- stdout -----
+Internal-External SU(2) Merger Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-su2-merger-invariance/wt
+Parent note: /private/tmp/cl3-su2-merger-invariance/wt/docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md
+Companion source note: docs/INTERNAL_EXTERNAL_SU2_MERGER_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing operator-identification
+      claims (B_i = i S_i; [S_i, S_j] = i epsilon_ijk S_k;
+      U(R) sigma_i U^* = (R sigma)_i for proper R in O_h;
+      phi_R(sigma_i) = (R sigma)_i for improper R as signed
+      Clifford action) are invariant under the 2026-06-04
+      Record-axiom adoption (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim, no
+       status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: Per-site H_x = C^2 dim and Pauli realization of Cl(3,0)
+========================================================================
+  Quantum-axiom content: per-site algebra A_x ~= M_2(C) ~= Cl(3,0).
+  PASS Hx_dim_equals_2 :: I_2 shape = (2, 2)
+  PASS three_pauli_generators_present :: |gamma_i| = 3
+  PASS gamma_1_is_2x2 :: gamma_1 shape = (2, 2)
+  PASS gamma_2_is_2x2 :: gamma_2 shape = (2, 2)
+  PASS gamma_3_is_2x2 :: gamma_3 shape = (2, 2)
+  PASS gamma_1_hermitian :: gamma_1 = (gamma_1)^*
+  PASS gamma_2_hermitian :: gamma_2 = (gamma_2)^*
+  PASS gamma_3_hermitian :: gamma_3 = (gamma_3)^*
+
+========================================================================
+BLOCK 2: {sigma_i, sigma_j} = 2 delta_ij I and sigma_1 sigma_2 sigma_3 = i I
+========================================================================
+  PASS anticommutator_1_1 :: {sigma_1, sigma_1} == 2 delta I
+  PASS anticommutator_1_2 :: {sigma_1, sigma_2} == 2 delta I
+  PASS anticommutator_1_3 :: {sigma_1, sigma_3} == 2 delta I
+  PASS anticommutator_2_1 :: {sigma_2, sigma_1} == 2 delta I
+  PASS anticommutator_2_2 :: {sigma_2, sigma_2} == 2 delta I
+  PASS anticommutator_2_3 :: {sigma_2, sigma_3} == 2 delta I
+  PASS anticommutator_3_1 :: {sigma_3, sigma_1} == 2 delta I
+  PASS anticommutator_3_2 :: {sigma_3, sigma_2} == 2 delta I
+  PASS anticommutator_3_3 :: {sigma_3, sigma_3} == 2 delta I
+  PASS pseudoscalar_omega_eq_iI :: sigma_1 sigma_2 sigma_3 == i * I_2
+
+========================================================================
+BLOCK 3: B_i = (i/2) sigma_i and [B_i, B_j] = -epsilon_ijk B_k
+========================================================================
+  PASS bivector_B_1_equals_i_half_sigma_1 :: B_1 = (1/2) sigma_2 sigma_3 == (i/2) sigma_1
+  PASS bivector_B_2_equals_i_half_sigma_2 :: B_2 = (1/2) sigma_3 sigma_1 == (i/2) sigma_2
+  PASS bivector_B_3_equals_i_half_sigma_3 :: B_3 = (1/2) sigma_1 sigma_2 == (i/2) sigma_3
+  PASS bivector_comm_1_1 :: [B_1, B_1] == -epsilon_{11k} B_k
+  PASS bivector_comm_1_2 :: [B_1, B_2] == -epsilon_{12k} B_k
+  PASS bivector_comm_1_3 :: [B_1, B_3] == -epsilon_{13k} B_k
+  PASS bivector_comm_2_1 :: [B_2, B_1] == -epsilon_{21k} B_k
+  PASS bivector_comm_2_2 :: [B_2, B_2] == -epsilon_{22k} B_k
+  PASS bivector_comm_2_3 :: [B_2, B_3] == -epsilon_{23k} B_k
+  PASS bivector_comm_3_1 :: [B_3, B_1] == -epsilon_{31k} B_k
+  PASS bivector_comm_3_2 :: [B_3, B_2] == -epsilon_{32k} B_k
+  PASS bivector_comm_3_3 :: [B_3, B_3] == -epsilon_{33k} B_k
+
+========================================================================
+BLOCK 4: [S_i, S_j] = i epsilon_ijk S_k with S_i = sigma_i / 2 = -i B_i
+========================================================================
+  PASS S_1_eq_half_sigma_1 :: S_1 == sigma_1 / 2
+  PASS S_1_eq_minus_i_B_1 :: S_1 == -i B_1
+  PASS S_2_eq_half_sigma_2 :: S_2 == sigma_2 / 2
+  PASS S_2_eq_minus_i_B_2 :: S_2 == -i B_2
+  PASS S_3_eq_half_sigma_3 :: S_3 == sigma_3 / 2
+  PASS S_3_eq_minus_i_B_3 :: S_3 == -i B_3
+  PASS su2_comm_1_1 :: [S_1, S_1] == i epsilon_{11k} S_k
+  PASS su2_comm_1_2 :: [S_1, S_2] == i epsilon_{12k} S_k
+  PASS su2_comm_1_3 :: [S_1, S_3] == i epsilon_{13k} S_k
+  PASS su2_comm_2_1 :: [S_2, S_1] == i epsilon_{21k} S_k
+  PASS su2_comm_2_2 :: [S_2, S_2] == i epsilon_{22k} S_k
+  PASS su2_comm_2_3 :: [S_2, S_3] == i epsilon_{23k} S_k
+  PASS su2_comm_3_1 :: [S_3, S_1] == i epsilon_{31k} S_k
+  PASS su2_comm_3_2 :: [S_3, S_2] == i epsilon_{32k} S_k
+  PASS su2_comm_3_3 :: [S_3, S_3] == i epsilon_{33k} S_k
+
+========================================================================
+BLOCK 5: phi_R(B_i) = sum_j (cof R)_ij B_j for all 48 R in O_h
+========================================================================
+  PASS count_O_h_total_48 :: |O_h| = 48
+  PASS count_O_h_proper_24 :: |SO(3) ∩ O_h| = 24
+  PASS count_O_h_improper_24 :: |O_h \ SO(3)| = 24
+  PASS cofactor_rep_on_bivectors_all_48 :: phi_R(B_i) = (cof(R) . B)_i for all 48 R, all 3 i; misses = 0
+
+========================================================================
+BLOCK 6: U(R) sigma_i U^* = sum_j R_ij sigma_j for 24 proper R in O_h
+========================================================================
+  PASS double_cover_all_24_proper :: U(R) sigma_i U^* = (R sigma)_i for all 24 proper R; misses = 0
+  PASS double_cover_identity_U_eq_I2 :: U(I_3) = I_2
+
+========================================================================
+BLOCK 7: improper R signed action phi_R(sigma_i) = -U(-R) sigma_i U(-R)^*
+========================================================================
+  PASS signed_clifford_action_all_24_improper :: phi_R(sigma_i) = -U(-R) sigma_i U(-R)^* for all 24 improper R; misses = 0
+
+========================================================================
+BLOCK 8: [S_i, sigma_a] = i epsilon_iab sigma_b and B_i = i S_i
+========================================================================
+  PASS infinitesimal_action_1_1 :: [S_1, sigma_1] == i epsilon_{11b} sigma_b
+  PASS infinitesimal_action_1_2 :: [S_1, sigma_2] == i epsilon_{12b} sigma_b
+  PASS infinitesimal_action_1_3 :: [S_1, sigma_3] == i epsilon_{13b} sigma_b
+  PASS infinitesimal_action_2_1 :: [S_2, sigma_1] == i epsilon_{21b} sigma_b
+  PASS infinitesimal_action_2_2 :: [S_2, sigma_2] == i epsilon_{22b} sigma_b
+  PASS infinitesimal_action_2_3 :: [S_2, sigma_3] == i epsilon_{23b} sigma_b
+  PASS infinitesimal_action_3_1 :: [S_3, sigma_1] == i epsilon_{31b} sigma_b
+  PASS infinitesimal_action_3_2 :: [S_3, sigma_2] == i epsilon_{32b} sigma_b
+  PASS infinitesimal_action_3_3 :: [S_3, sigma_3] == i epsilon_{33b} sigma_b
+  PASS B_1_eq_i_S_1 :: B_1 == i S_1 (operator-level identification)
+  PASS B_2_eq_i_S_2 :: B_2 == i S_2 (operator-level identification)
+  PASS B_3_eq_i_S_3 :: B_3 == i S_3 (operator-level identification)
+
+========================================================================
+BLOCK 9: Parent note Record-axiom usage scan (load-bearing section)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-su2-merger-invariance/wt/docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md
+  PASS load_bearing_section_start_found :: start index = 328
+  PASS load_bearing_section_end_found :: end index = 3295
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+  PASS quantum_content_present_in_load_bearing_section :: matches >= 3: ['Cl(3,0)', 'Pauli', 'sigma_i', 'S_i', 'B_i', 'Spin(3)']
+
+========================================================================
+BLOCK 10: Record-axiom counterfactual: identical operator output
+========================================================================
+  PASS counterfactual_B_1_identical_in_both_scopes :: with-record == without-record for B_1
+  PASS counterfactual_i_S_1_identical_in_both_scopes :: with-record == without-record for i_S_1
+  PASS counterfactual_U_rotates_sigma_2_identical_in_both_scopes :: with-record == without-record for U_rotates_sigma_2
+  PASS with_record_B1_eq_iS1 :: B_1 == i S_1 (Record axiom asserted scope)
+  PASS without_record_B1_eq_iS1 :: B_1 == i S_1 (Record axiom not-asserted scope)
+  PASS with_record_U_rotates_sigma_2_to_sigma_3 :: U sigma_2 U^* == sigma_3 (Record axiom asserted scope)
+  PASS without_record_U_rotates_sigma_2_to_sigma_3 :: U sigma_2 U^* == sigma_3 (Record axiom not-asserted scope)
+
+========================================================================
+BLOCK 11: Quantum content preserved across 2026-05-20 and 2026-06-04 memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-su2-merger-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-su2-merger-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical qubit / one-qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 / cubic lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_structural_bridges :: Record axiom's own scope statement excludes structural bridges that would have been needed if it were used here
+
+========================================================================
+BLOCK 12: operator-identification core via five independent routes
+========================================================================
+  PASS route_a_direct_bivector_product :: route_a_direct_bivector_product == (i/2) sigma_1
+  PASS route_b_i_half_sigma_1 :: route_b_i_half_sigma_1 == (i/2) sigma_1
+  PASS route_c_i_S_1_from_block8_identification :: route_c_i_S_1_from_block8_identification == (i/2) sigma_1
+  PASS route_d_commutator_S2_S3 :: route_d_commutator_S2_S3 == (i/2) sigma_1
+  PASS route_e_infinitesimal_rotation_generator :: route_e_infinitesimal_rotation_generator == (i/2) sigma_1
+  PASS pairwise_agreement_a_b :: route_a == route_b
+  PASS pairwise_agreement_a_c :: route_a == route_c
+  PASS pairwise_agreement_a_d :: route_a == route_d
+  PASS pairwise_agreement_a_e :: route_a == route_e
+  PASS pairwise_agreement_b_c :: route_b == route_c
+  PASS pairwise_agreement_b_d :: route_b == route_d
+  PASS pairwise_agreement_b_e :: route_b == route_e
+  PASS pairwise_agreement_c_d :: route_c == route_d
+  PASS pairwise_agreement_c_e :: route_c == route_e
+  PASS pairwise_agreement_d_e :: route_d == route_e
+
+========================================================================
+TOTAL PASS: 99
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing operator identifications of INTERNAL_EXTERNAL_SU2_MERGER_
+  FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md use ONLY
+  Quantum-axiom content (per-site Cl(3,0) Pauli realization on
+  H_x = C^2) plus standard finite-dimensional Clifford/Lie/signed-
+  permutation algebra. The Record axiom (additive scalar record-
+  readout functional) is neither used nor invoked. Operator-
+  identification output is identical under both 'Record axiom
+  asserted' and 'Record axiom not asserted' outer scopes. This
+  runner does not re-apply any prior audit verdict; it records that
+  the algebra checked here is unchanged by the 2026-06-04 axiom-
+  set adoption.
+
+The audit lane decides whether to honor or re-test the prior
+verdict on the new minimal_axioms premise hash.
+
+----- stderr -----
+

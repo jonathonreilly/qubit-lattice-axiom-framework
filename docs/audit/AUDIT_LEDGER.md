@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 170 |
 | **retained_no_go** | 179 |
-| **retained_bounded** | 636 |
+| **retained_bounded** | 637 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1325 |
+| unaudited | 1324 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 975 |
+| `audited_clean` | 976 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1609 |
+| `unaudited` | 1608 |
 
 | claim_type | count |
 |---|---:|
@@ -525,6 +525,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7570,6 +7571,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current Higgs runner shows that the framework has nontrivial quantitative Higgs behavior once the lattice Coleman-Weinberg mechanism is active.  _(class `C`)_
 - **chain closes:** True — For this bounded scope, the note does not claim an exact Higgs-mass derivation; it claims only that the runner exhibits nontrivial CW Higgs behavior and supports bounded studies. The completed runner computes CW potential/SSB scans and ballpark mass-ratio behavior, while its failed exact-coupling/crossing checks are consistent with the note's explicit boundary.
 - **rationale:** The source note is narrowly scoped: it is a support note for bounded Higgs quantitative behavior and explicitly excludes standalone exact m_H authority. The runner is not clean for exact Higgs closure, but that is not the claim under audit; the two completed failures show missing exact coupling/crossing closure and reinforce the boundary. Within the bounded scope, the source note and completed runner evidence close without promoting an exact Higgs-mass derivation.
+- **auditor confidence:** high
+
+### `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure lattice-side algebraic identity in the stated tadpole mean-field truncation: with N_taste=16 and Clifford eigenvalue magnitude 2, R_lattice=4/(u_0^2 N_taste)=1/(4u_0^2), excluding any physical Higgs-mass identification or numerical u_0 value.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-183959-19b090f3f7-higgs_lattice_eigenvalue_rat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At mean field, W(J) = (N_tot/2) log(J^2 + 4 u_0^2), so W''(0)/N_tot = 1/(4 u_0^2), matching R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) at N_taste = 16.  _(class `A`)_
+- **chain closes:** True — The displayed differentiation is correct: for one paired eigenvalue term, d^2/dJ^2 of (1/2)log(J^2+4u_0^2) at J=0 is 1/(4u_0^2), and division by N_tot gives the same value. The result closes only within the explicitly named mean-field truncation and does not require the excluded physical matching step.
+- **rationale:** The load-bearing step is an algebraic identity over the stated inputs, not a physical matching, numerical comparator, or renaming. The runner source performs real symbolic and matrix checks rather than merely printing constants, and an independent differentiation confirms the curvature factor. The cited one-hop authorities supplied in the packet are retained-grade or retained_bounded, and the note’s conclusion is bounded to the formal mean-field hypothesis it states.
 - **auditor confidence:** high
 
 ### `higgs_mass_from_axiom_note`

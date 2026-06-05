@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 665 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1249 |
+| unaudited | 1248 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 75 |
+| ~~audited_conditional~~ | 76 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1024 |
-| `audited_conditional` | 75 |
+| `audited_conditional` | 76 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1533 |
+| `unaudited` | 1532 |
 
 | claim_type | count |
 |---|---:|
@@ -1210,6 +1210,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9258,6 +9259,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The stated finite formulas give Q(0,1/4)=8/9, Q(0,-1/4)=8/15 and endpoint countermodels delta=0, 1/9, and 1/3, so the finite two-channel plus endpoint algebra does not force full dimensionless closure without additional physical selection of z=0 and selected-line/local/basepoint endpoint data.  _(class `A`)_
 - **chain closes:** True — The source note has no one-hop dependencies, and its conclusion follows by exact fraction arithmetic from its own definitions of Q(s,z) and delta. The closure is only a finite-algebra non-implication, leaving physical source/readout selection, charged-lepton scale closure, and future axioms outside the audited scope.
 - **rationale:** The narrowed no-go closes because explicit countermodels are sufficient for the fixed finite-algebra non-implication being claimed. N1 does not expose an untested in-scope route: attacks would need to show that the finite algebra itself forbids z, makes Q z-invariant, forbids spectator endpoint support, forbids endpoint_shift, or already derives selected-line/basepoint data, and the note/runner either gives exact countermodels or marks the needed selection as external. N2-N8 do not block clean status: the residuals are scoped boundaries rather than an inflated wall list, there are no cited prior residual witnesses to mismatch, the rhetoric is narrowed to the finite two-channel plus endpoint formulas, and the steelman/partial-closure route of a future physical source/readout law is expressly left open. The runner source performs exact Fraction checks and reports PASS=38 FAIL=0, with the single B-class check being non-load-bearing metadata.
+
+### `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic identities (T1)-(T9) inside the explicitly admitted two-channel toy and admitted APS scalar; no retained-grade derivation of admissions (A1)-(A5) or parent no-go labels.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-233207-20e4bf3179-koide_dimensionless_objectio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the named admissions (A1)-(A5), substituting into Q(s,z) and delta(s_chi,c)=eta_APS*(1-s_chi)+c with eta_APS=2/9 yields (T1)-(T9) by exact rational arithmetic.  _(class `A`)_
+- **chain closes:** True — Within the stated conditional scope, the displayed Q, Z, projector, dimension, and delta identities close by direct rational or finite-dimensional algebra. The admissions (A1)-(A5) themselves are not derived, so closure is conditional only.
+- **rationale:** The note and runner correctly verify the in-toy algebraic consequences of the admitted definitions using exact rational arithmetic. The runner hard-codes eta_APS=2/9 as an admitted scalar, which matches the note's conditional scope rather than constituting a retained derivation. Because the carrier, Z grammar, endpoint selections, based section, and APS scalar are explicit admissions with no cited retained authority in the restricted packet, the result cannot be audited_clean.
+- **auditor confidence:** high
 
 ### `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25`
 

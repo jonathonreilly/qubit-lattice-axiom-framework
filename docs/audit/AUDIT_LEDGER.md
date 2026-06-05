@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 653 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1280 |
+| unaudited | 1279 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 61 |
+| ~~audited_conditional~~ | 62 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1003 |
-| `audited_conditional` | 61 |
+| `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1564 |
+| `unaudited` | 1563 |
 
 | claim_type | count |
 |---|---:|
@@ -1151,6 +1151,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_a1prime_debt_and_data_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_asymmetry_identification_principled_not_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5416,6 +5417,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** At the retained C3 d=3 carrier, the regular representation splits as singlet plus trace-free transverse doublet with weights {1,2}, and the local density L3(1,2) evaluates to 2/9.  _(class `A`)_
 - **chain closes:** True — The cited d=3 carrier and finite-KS local-density authorities are retained-grade for this bounded surface, and the remaining weight step is standard C3 representation algebra. The physical readout bridge does not close, but the source explicitly excludes that promotion from the audited conclusion.
 - **rationale:** The load-bearing math is algebraic rather than a first-principles framework computation: the nontrivial C3 character pair on the trace-free complement is {1,2}, and direct evaluation gives L3(1,2)=2/9 while the degenerate pairs give 1/9. The primary runner checks only the arithmetic and guise-separation facts, not the finite-KS operator bridge, but that bridge is supplied by a retained_bounded cited authority. The clean verdict is therefore limited to forced local density on the bounded operator surface and does not ratify the open charged-lepton physical readout identification.
+- **auditor confidence:** high
+
+### `flavor_asymmetry_identification_principled_not_forced_2026-05-31`
+
+- **Note:** [`FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md`](../../docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the finite C3 staggered-packet readout distinction between global eta 0, extensive global sum L*(2/9), and single-fixed-point local density 2/9, including whether the charged-lepton physical readout is closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-202811-fa65814327-flavor_asymmetry_identificat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's decisive step is that the Koide asymmetry's intensive, scale-invariant type eliminates the global eta readout 0 and the extensive sum L*(2/9), leaving the single-fixed-point local density 2/9, while promoting that summand to the physical observable requires the generation-space bridge.  _(class `A`)_
+- **chain closes:** False — The local-density arithmetic and the extensive-versus-intensive distinction check out within the packet, but the physical identification does not close. The missing step is a retained theorem identifying charged-lepton generation space with the single C3[111] fixed locus and justifying reading one local summand rather than a global invariant; the zero readout is also not excluded by intensiveness alone without a nonzero-observable premise.
+- **rationale:** The primary runner verifies the displayed 2/9 local-density formula and a toy Gamma5 pairing, but its type-filter and bridge-status checks are prose assertions rather than a closure of the physical readout. The cited local-density authority explicitly states that the single-summand charged-lepton observable identification remains open. Thus the note is honest about being derived modulo a named bridge, but it is not eligible for audited_clean because retained status does not propagate through that open identification.
+- **open / conditional deps cited:**
+  - `FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md`
 - **auditor confidence:** high
 
 ### `flavor_block_count_native_via_jcs_note_2026-05-30`

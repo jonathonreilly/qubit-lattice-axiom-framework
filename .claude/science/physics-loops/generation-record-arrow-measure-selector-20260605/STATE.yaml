@@ -1,0 +1,47 @@
+loop_slug: generation-record-arrow-measure-selector-20260605
+date: 2026-06-05
+branch: physics-loop/generation-record-arrow-measure-selector-20260605
+goal: |
+  Attack the arrow/measure gate after the Record reset: prove that a supplied
+  dim^gamma prior on the two-letter generation Record alphabet stabilizes the
+  generation dial at s=gamma, making gamma=0 the Koide/block-count endpoint
+  and gamma=1 the Born/dimension endpoint.
+target_status: bounded_theorem
+runtime_used: single-turn
+cycles_completed: 1
+active_route: relative-entropy prior classifier on the two-letter Record alphabet
+hard_residual_attacked: |
+  After the partition selector, the remaining charged-lepton dynamics gate is
+  why the physical arrow should use equal record-letter/block-count prior
+  rather than Hilbert-dimension/Born prior. This block reduces that gate to an
+  explicit prior exponent gamma.
+files_touched:
+  - docs/GENERATION_RECORD_ARROW_MEASURE_SELECTOR_2026-06-05.md
+  - scripts/generation_record_arrow_measure_selector_2026_06_05.py
+  - logs/runner-cache/generation_record_arrow_measure_selector_2026_06_05.txt
+  - .claude/science/physics-loops/generation-record-arrow-measure-selector-20260605/*
+open_imports:
+  - two-letter generation Record alphabet
+  - exact generation dial r(s)=2^(s-1)
+  - supplied dim^gamma prior / arrow choice
+no_go_routes:
+  - relative-entropy arrow derives gamma=0 from Record alone
+  - Born/dimension endpoint is inconsistent
+  - objectivity or traciality alone selects equal record-letter weights
+runner_result: arrow_measure_selector PASS=21 FAIL=0
+review_findings: self-review clean; independent audit required
+pr_status: pending
+next_exact_action: |
+  Push branch and open review PR. If audited clean, the remaining value gate is
+  the physical derivation of gamma=0 rather than gamma=1.
+stop_condition: |
+  Arrow/measure classifier proved as bounded theorem; physical gamma selection
+  remains open.
+status_fields:
+  actual_current_surface_status: open
+  target_claim_type: bounded_theorem
+  conditional_surface_status: bounded-support
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

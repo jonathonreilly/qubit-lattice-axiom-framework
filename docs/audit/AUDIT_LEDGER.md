@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 176 |
 | **retained_no_go** | 183 |
-| **retained_bounded** | 651 |
+| **retained_bounded** | 652 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1283 |
+| unaudited | 1282 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1001 |
+| `audited_clean` | 1002 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1567 |
+| `unaudited` | 1566 |
 
 | claim_type | count |
 |---|---:|
@@ -335,6 +335,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4589,6 +4590,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** This note synthesises all derived results for dark matter candidates and  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 9 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional C^16 matrix-algebra claim that Y=P_R Γ_1 P_L has raw-to-Hermitian-completion Frobenius ratio sqrt(Tr(Y^†Y)/Tr(Γ_1^†Γ_1))=1/sqrt(2), with scalar-baseline determinant formulas only as diagnostics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-202026-c5c26ebfeb-dm_neutrino_bosonic_normaliz`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Step 6: Y^†Y = P_L, so Tr(Y^†Y)=Tr(P_L)=8 while Tr(Γ_1^†Γ_1)=16, giving sqrt(8/16)=1/sqrt(2).  _(class `A`)_
+- **chain closes:** True — The conclusion follows from the stated Hermitian involution, chirality anticommutation, projector algebra, and dim V=16. Independently, anticommutation gives Tr γ_5=0, hence Tr P_L=8, Y^†Y=P_L, and Γ_1^†Γ_1=I_16.
+- **rationale:** The load-bearing result is a genuine algebraic closure over the finite matrix setup, not a renaming or calibrated numerical match. The determinant identities, trace norms, nilpotency, Hermitian-completion identity, active-space comparator, and pseudoscalar companion formulas all check by direct algebra independent of the runner implementation. The note explicitly firewalls the scalar-baseline diagnostics from real-D observable-principle or physical readout claims, so no missing upstream physical bridge is required for the audited scope.
 - **auditor confidence:** high
 
 ### `dm_neutrino_cascade_geometry_note_2026-04-14`

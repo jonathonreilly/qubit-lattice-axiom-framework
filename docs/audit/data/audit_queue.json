@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 269,
     "high": 284,
-    "leaf": 407,
+    "leaf": 406,
     "medium": 325
   },
   "cycle_break_target_count": 0,
@@ -27008,28 +27008,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "fifth_family_radial_repaired_positive_packet_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38653,6 +38631,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 83,
-  "total_pending": 1285
+  "ready_count": 82,
+  "total_pending": 1284
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 170 |
 | **retained_no_go** | 179 |
-| **retained_bounded** | 637 |
+| **retained_bounded** | 638 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1322 |
+| unaudited | 1321 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 976 |
+| `audited_clean` | 977 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1606 |
+| `unaudited` | 1605 |
 
 | claim_type | count |
 |---|---:|
@@ -263,6 +263,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `connectivity_family_v2_elliptical_duplicate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3317,6 +3318,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** No equation in this packet fixes gamma, derives i * gamma * L * f, or maps the centroid/escape proxy to a horizon observable; therefore the packet cannot support a retained gravity-horizon unification theorem.  _(class `A`)_
 - **chain closes:** True — The source note and runner both treat gamma as an input parameter in the imposed kernel, with gamma=0 reducing to the real-action propagator and gamma changes altering the imposed amplitude factor. Because the no-go is scoped only to this packet, the absent gamma law and absent horizon-observable bridge are sufficient to block the stronger theorem without ruling out future repaired routes.
 - **rationale:** N1 identifies more than five rescue routes as outside this packet rather than globally impossible: gamma law, imaginary-action derivation, horizon-observable map, photon-sphere/Schwarzschild/Hawking/causal-horizon behavior, continuum theorem/full unification, and new axiom/audit claim. N2-N6 do not block because the residuals are explicit rather than hidden or inflated: gamma fixing and horizon bridging are distinct, no prior-witness residuals are imported, no broad all-resolution rhetoric is used, and no convention or new-axiom closure is asserted. N7-N8 leave the honest steelman and residual boundary intact: a later retained bridge fixing gamma and mapping the finite proxy to a horizon observable could reopen the route, but that is not present in this packet.
+
+### `complex_selectivity_compare_note`
+
+- **Note:** [`COMPLEX_SELECTIVITY_COMPARE_NOTE.md`](../../docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrowed bounded selectivity comparison over the supplied one-hop retained authorities, excluding the original grown-basin signed-source/F~M half-row that the note marks out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-184805-6c0388cdc9-complex_selectivity_compare_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The narrowed comparison infers from the supplied retained authorities that signed-source transfer survives on multiple alt/third/fourth family slices with near-linear weak-field response, while complex action is confined to narrow original/second anchor rows and supplied alt/second boundary failures.  _(class `B`)_
+- **chain closes:** True — For the narrowed scope, the load-bearing entries are directly supplied by retained-grade one-hop authorities: second-family complex retention and boundary, alt signed-source/FM/complex failure, third and fourth signed-source basins, and the original complex companion. The runner is a hard-coded renderer, so it is not treated as first-principles evidence.
+- **rationale:** The quantitative/table inventory for the narrowed claim matches the cited retained-grade notes, including F~M = 1.000, F~M = 0.999994, charge exponent 0.999842, and the supplied no-crossover/AWAY boundary statements. The runner source only serializes the comparison table, so the audit rests on cross-note verification rather than runner computation. Read within the explicit narrowed scope, the retained inputs support the bounded selectivity split without an additional missing bridge. This verdict does not ratify the archived original grown-basin signed-source/F~M row.
+- **auditor confidence:** high
 
 ### `connectivity_family_v2_elliptical_duplicate_note`
 

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 166 |
+| **retained** | 167 |
 | **retained_no_go** | 175 |
 | **retained_bounded** | 629 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1349 |
+| unaudited | 1348 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 959 |
+| `audited_clean` | 960 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1633 |
+| `unaudited` | 1632 |
 
 | claim_type | count |
 |---|---:|
@@ -438,6 +438,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_bridge_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -6178,6 +6179,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The claim follows by finite-dimensional Hilbert-space coordinate uniqueness once the retained compressed evaluation formula is accepted. The full local slice lift remains open but is explicitly outside the audited scope.
 - **rationale:** The note's load-bearing work is standard algebra over an orthonormal retained character basis. The only load-bearing parent is the retained_bounded compressed rim-evaluation theorem; the scalar insufficiency note is contextual and not needed for uniqueness. This is an algebraic corollary of the parent within the finite retained sector, not an independent derivation of the full rim map.
 - **decoration parent:** `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17`
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_CONJUGATION_SYMMETRIC_RETAINED_SAMPLING_REDUCTION_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_CONJUGATION_SYMMETRIC_RETAINED_SAMPLING_REDUCTION_NOTE_2026-04-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Algebraic orbit-basis reduction of a finite conjugation-closed retained sector, assuming the retained coefficient vector is conjugation-symmetric and the reduced orbit-evaluation matrix is full rank.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-174647-96a559271d-gauge_vacuum_plaquette_conju`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the retained coefficients satisfy c_(p,q)=c_(q,p), every vector on a conjugation-closed finite sector has a unique expansion in the orbit basis Phi_O, so the independent sampling dimension is |Lambda / ~|.  _(class `A`)_
+- **chain closes:** True — The orbit-basis dimension count and reduced linear system follow by elementary linear algebra from the stated conjugation symmetry and the retained finite-sampling inversion theorem. The conclusion is conditional on the explicitly stated full-rank/generic-sample hypothesis, not on a missing runner.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: one cited authority supplies conjugation symmetry on the retained coefficient packet, and the other supplies finite sampling inversion. For a conjugation-closed Lambda, symmetric vectors are exactly parametrized by one coefficient per orbit, with singleton diagonal orbits and two-element off-diagonal orbits as written. The four-weight witness reduction from 4 to 3 is also just the listed orbit count. No runner source is available, but the theorem does not require first-principles computation to judge the algebraic reduction.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_connected_hierarchy_theorem_note`

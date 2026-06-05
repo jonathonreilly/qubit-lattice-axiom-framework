@@ -60,6 +60,9 @@ def part1_anchors() -> dict[str, Any]:
         check(f"{path.relative_to(ROOT)} exists", path.exists())
 
     note = read(NOTE)
+    check("note claim type is bounded support note", "**Claim type:** bounded support note" in note)
+    check("note type is conditional / support", "**Type:** conditional / support" in note)
+    check("old bounded_theorem header is absent", "**Claim type:** bounded_theorem" not in note and "**Type:** bounded_theorem" not in note)
     for phrase in (
         "Axiom-First Fork",
         "Exact Democratic Source",
@@ -173,7 +176,7 @@ def main() -> int:
     part5_firewalls()
 
     result = {
-        "status": "exact support: signed-linear democratic source tangent gives 1/sqrt(6); physical top-response bridge remains open",
+        "status": "conditional exact support: signed-linear democratic source tangent gives 1/sqrt(6); physical top-response bridge remains open",
         "proposal_allowed": False,
         "proposal_allowed_reason": (
             "The finite-dimensional signed-linear source tangent is exact, but the packet "

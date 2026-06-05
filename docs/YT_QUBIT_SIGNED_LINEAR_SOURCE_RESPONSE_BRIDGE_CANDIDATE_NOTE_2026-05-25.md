@@ -1,19 +1,15 @@
 ---
 claim_id: yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25
-claim_type_author_hint: bounded_theorem
-status_authority: independent_audit_lane_only
-direct_effective_status_change_allowed_from_this_note: false
+claim_type_author_hint: bounded_support_note
 ---
 
 # Y_T Qubit Signed-Linear Source Response Bridge Candidate
 
-**Claim type:** bounded_theorem
-**Role:** exact support / bridge candidate.
+**Claim type:** bounded support note
+**Role:** conditional exact support / bridge candidate.
 **Status:** candidate support; no positive Y_T closure.
 **Primary runner:** `scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py`
-**Generated output:** `outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json`
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
+**Type:** conditional / support
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 

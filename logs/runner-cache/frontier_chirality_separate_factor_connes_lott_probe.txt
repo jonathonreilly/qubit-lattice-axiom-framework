@@ -1,0 +1,155 @@
+
+========================================================================
+PART 0 — established single-factor wall: no off-block grading anticommutes at finite a
+========================================================================
+  [PASS] Gamma_chi is circulant (C_3-equivariant): [Gamma_chi, C] = 0
+  [PASS] [H, Gamma_chi] = 0 (circulant grading commutes with circulant H)
+  [PASS] {H, Gamma_chi} != 0 for finite a (so anticommute fails on C^3)
+    solve {H,Gamma_chi}=0 -> [{a: 0, b_i: 0, b_r: 0}]
+  [PASS] on C^3 the anticommutation forces a = 0 (chiral/massless limit)
+
+========================================================================
+PART 1 — Connes-Lott axioms for D=[[0,Y],[Y^dag,0]], gamma=diag(+I3,-I3)  [generic Y]
+========================================================================
+  [PASS] [generic Y] gamma^2 = I_6
+  [PASS] [generic Y] gamma Hermitian
+  [PASS] [generic Y] D Hermitian (self-adjoint)
+  [PASS] [generic Y] {D, gamma} = 0 on full C^6 (CHIRAL, automatic for any Y)
+
+========================================================================
+PART 2 — physical reduction to the generation factor  [generic Y]
+========================================================================
+  [PASS] [generic Y] gamma's L-sector reduces to I_3 on generation (P_L|gen = I3)
+  [PASS] [generic Y] gamma's R-sector reduces to I_3 on generation (P_R|gen = I3)
+    => gamma = I_3 (x) sigma_3 carries NO generation content;
+       its generation-reduced image is the SCALAR I_3.
+  [PASS] [generic Y] Y^dag Y is Hermitian (a genuine generation operator)
+  [PASS] [generic Y] {induced_gen_grading=I3, M2_L} = 2 M2_L != 0 unless massless
+    => the L/R grading induces only the SCALAR I_3 on generation;
+       it does NOT anticommute with the generation mass operator
+       (which would need a genuine off-block generation grading).
+
+========================================================================
+PART 3 — Q1/Q2: the wrong-tensor-factor wall  [structural]
+========================================================================
+  [PASS] [structural] {G3(x)I2, I3(x)sig3} = 2 (G3 (x) sig3)  (NOT zero unless G3=0)
+  [PASS] [structural] a nonzero generation grading G3(x)I2 does NOT anticommute with gamma (wrong factor)
+    => CRUX: the L/R chirality grading gamma and a generation
+       grading G3 live in DISTINCT tensor factors. They anti-
+       commute ONLY through the chirality factor, leaving the
+       generation factor UNGRADED. This is the wrong-tensor-
+       factor wall -- the SAME collapse as PT-C, now shown to
+       be structural (independent of whether Y = I_3 or generic).
+
+========================================================================
+PART 3b — ADVERSARIAL: the MOST GENERAL Hermitian O with {O, gamma}=0  [adversarial]
+========================================================================
+  [PASS] [adversarial] every off-diagonal O=[[0,W],[W^dag,0]] anticommutes with gamma
+  [PASS] [adversarial] O's L-sector generation block O_LL = 0 (no within-sector generation operator)
+  [PASS] [adversarial] O's R-sector generation block O_RR = 0 (no within-sector generation operator)
+  [PASS] [adversarial] any within-generation block-diagonal grading COMMUTES with gamma (never anticommutes)
+    => AIRTIGHT wrong-tensor-factor wall: the ONLY operators
+       anticommuting with gamma=I3(x)sig3 are L/R-off-diagonal
+       (D-like); they have ZERO within-generation block, so they
+       are NOT generation gradings. Conversely every generation
+       grading is L/R-block-diagonal and COMMUTES with gamma. No
+       separate-factor chirality grading can grade generation.
+
+========================================================================
+PART 4 — generic off-diagonal Y: induced generation operator + Q  [circulant Y]
+========================================================================
+  [PASS] [circulant Y] {D, gamma} = 0 with Y = circulant generation op (genuine, != I_3)
+  [PASS] [circulant Y] Fourier diagonalizes circulant Y
+    eigenvalues of Y: L0=a + 2*b_r, L1=a + sqrt(3)*b_i - b_r, L2=a - sqrt(3)*b_i - b_r
+  [PASS] [circulant Y] SIGNED (det_R) Q = 2/3 at r=1/2 for ALL phases (theta-independent)
+    at r=1/2, theta=180 (b real <0): signed eigenvalues L_k/a = [1 - sqrt(2), sqrt(2)/2 + 1, sqrt(2)/2 + 1]
+    signs = [-1, 1, 1]  (sign-INHOMOGENEOUS)
+  [PASS] [circulant Y] r=1/2 has sign-INHOMOGENEOUS phases (e.g. theta=180)
+    SINGULAR (Yukawa) Q at theta=180 = 54/49 - 24*sqrt(2)/49 ~ 0.409365
+  [PASS] [circulant Y] SINGULAR (Yukawa) Q < 2/3 at the sign-inhomogeneous phase (theta=180)
+  [PASS] [circulant Y] SINGULAR Q != SIGNED Q at theta=180 (the two readouts DIVERGE off sign-homogeneity)
+    => the spectral-triple mass readout (singular values of Y) is
+       the SINGULAR/Yukawa readout: it agrees with the signed
+       Q=2/3 ONLY on sign-homogeneous phases and drops below 2/3
+       off them. gamma = I_3 (x) sigma_3 supplies NO generation
+       sign data, so it cannot pin the signed Q=2/3 across phases.
+
+========================================================================
+PART 5 — is the H_L (+) H_R doubling NATIVE or IMPORTED?  [provenance]
+========================================================================
+  [PASS] [provenance] corner cube dim = 8 = (C^2)^3
+  [PASS] [provenance] hw=1 generation slice dim = 3 (C(3,1)) -- NO leftover L/R 2-fold
+  [PASS] [provenance] native parity (-1)^hw is CONSTANT (= -1) on the hw=1 orbit (NO native L/R split)
+    => the native (Z_2)^3 cube gives NO L/R doubling on the
+       generation orbit: parity is uniform on hw=1. The
+       independent H_L (+) H_R factor is an EXTRA 2-dim space
+       POSTULATED by the Connes-Lott construction, NOT derived
+       from A1+A2+A3. The doubling is IMPORTED.
+
+========================================================================
+PART 6 — independent floating-point cross-check  [numpy]
+========================================================================
+  [PASS] [numpy] 200 random Y: {D,gamma}=0 on C^6 AND no generation grading G3(x)I2 anticommutes with gamma
+
+========================================================================
+PART 7 — VERDICT
+========================================================================
+
+  Q1  Does gamma=I3(x)sig3 + off-diagonal Y induce a genuine OFF-BLOCK
+      C_3-orbit-splitting grading on the GENERATION factor (unlike PT-C)?
+      ANSWER: NO. gamma = I_3 (x) sigma_3 acts as the IDENTITY on the
+      generation factor; its generation-reduced image is the SCALAR I_3.
+      The off-diagonal Y supplies generation DYNAMICS (the masses are the
+      singular values of Y) but NOT a generation GRADING.
+
+  Q2  Does the genuine off-diagonal Y leave a non-trivial generation
+      grading, or COLLAPSE like PT-C?
+      ANSWER: It COLLAPSES -- and the collapse is now shown to be
+      STRUCTURAL (Part 3), not an artifact of PT-C's Y = I_3. A generation
+      grading G3 (x) I_2 and the chirality grading I_3 (x) sigma_3 live in
+      DISTINCT tensor factors; {G3(x)I2, I3(x)sig3} = 2 (G3 (x) sig3) != 0
+      for any nonzero G3. The chirality factor cannot grade the generation
+      factor. THE WRONG-TENSOR-FACTOR WALL HOLDS even with a genuine
+      doubling and a genuine off-diagonal Y.
+
+  Q3  Does any Y give Gamma_chi-anticommutation + Q=2/3, or must the
+      doubling be IMPORTED?
+      ANSWER: The doubling H_L (+) H_R is IMPORTED (Part 5). The native
+      (Z_2)^3 corner cube gives NO L/R 2-fold on the generation orbit:
+      parity (-1)^hw is uniform (= -1) on hw=1. The extra 2-dim chirality
+      space is POSTULATED by Connes-Lott, not derived from A1+A2+A3. Even
+      granting the import, the spectral-triple mass readout is the
+      SINGULAR-VALUE (Yukawa) readout, which differs from the SIGNED Q=2/3
+      unless sign-homogeneous; gamma supplies no generation sign data
+      (Part 4).
+
+  HONEST VERDICT: REQUIRES-IMPORTED-DOUBLING (and even then COLLAPSES on
+  the generation factor via the wrong-tensor-factor wall). The separate-
+  factor Connes-Lott route does NOT produce a native off-block C_3-orbit-
+  splitting generation grading. It relocates the chirality import to an
+  imported L/R doubling factor, and that factor -- being on a DISTINCT
+  tensor leg from the generation R^3 -- cannot grade the generation factor.
+
+  This OPENS the next path: a construction where the chirality grading and
+  the generation operator share the SAME tensor factor (e.g. a genuinely
+  generation-internal Z_2 with a Ginsparg-Wilson-type {D, Gamma} = 2 D R
+  defect, or a non-product spectral triple where the doubling is FIBERED
+  over generation rather than tensored) -- NOT the separate-factor product
+  triple, which is now mapped to the wrong-tensor-factor wall.
+
+
+========================================================================
+SUMMARY
+========================================================================
+  PASS=28 FAIL=0
+
+  VERDICT: REQUIRES-IMPORTED-DOUBLING / COLLAPSES-LIKE-PT-C.
+  The separate-factor Connes-Lott triple with an independent
+  H_L (+) H_R doubling and a genuine off-diagonal Y acting on
+  generation does NOT induce a native off-block C_3-orbit-
+  splitting generation grading. The L/R chirality grading and the
+  generation grading live in DISTINCT tensor factors (wrong-
+  tensor-factor wall); the doubling factor is IMPORTED (not in
+  A1+A2+A3); and the triple's mass readout is the singular-value
+  (Yukawa) readout, not the signed Q=2/3. The import is RELOCATED,
+  not removed.

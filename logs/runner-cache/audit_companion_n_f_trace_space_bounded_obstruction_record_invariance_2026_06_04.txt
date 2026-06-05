@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_n_f_trace_space_bounded_obstruction_record_invariance_2026_06_04.py
+runner_sha256: 253da42c0fa05caaaac4183e95ddf662c77aa2d2628ff51a69f5bca6fb87d8e6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.75
+status: ok
+----- stdout -----
+========================================================================
+N_F trace-space bounded obstruction record-invariance hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/N_F_TRACE_SPACE_BOUNDED_OBSTRUCTION_NOTE_2026-05-07_w2binary.md
+Parent runner: scripts/cl3_n_f_v3_trace_check_2026-05-07_w2binary.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS parent_claim_type_expected
+PASS parent_runner_path_expected
+PASS parent_current_criticality_expected
+PASS parent_current_load_expected :: load=10.179
+PASS parent_note_hash_expected
+PASS parent_note_hash_matches_ledger
+PASS parent_runner_hash_expected
+PASS parent_deps_exact :: count=7
+PASS parent_current_row_unresolved
+PASS parent_has_previous_review_snapshot
+PASS previous_invalidation_was_dependency_state_change
+PASS parent_dependency_surface_still_not_closed
+PASS parent_load_bearing_block_present
+PASS parent_load_bearing_contains_obstruction_phrase_0
+PASS parent_load_bearing_contains_obstruction_phrase_1
+PASS parent_load_bearing_contains_obstruction_phrase_2
+PASS parent_load_bearing_contains_obstruction_phrase_3
+PASS parent_load_bearing_contains_obstruction_phrase_4
+PASS parent_load_bearing_contains_obstruction_phrase_5
+PASS parent_load_bearing_omits_record_axiom_terms
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_total_present
+PASS parent_runner_pass_count_twenty_nine :: pass_count=29
+PASS parent_runner_fail_count_zero :: fail_count=0
+PASS record_marker_true_exit_zero :: returncode=0
+PASS record_marker_does_not_change_parent_output
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_verdict_change
+PASS companion_keeps_dependency_boundary
+PASS companion_marks_axioms_not_support
+========================================================================
+SUMMARY: PASS=33 FAIL=0
+========================================================================
+
+----- stderr -----
+

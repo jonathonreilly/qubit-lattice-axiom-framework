@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 176 |
 | **retained_no_go** | 183 |
-| **retained_bounded** | 653 |
+| **retained_bounded** | 654 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1279 |
+| unaudited | 1278 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1003 |
+| `audited_clean` | 1004 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1563 |
+| `unaudited` | 1562 |
 
 | claim_type | count |
 |---|---:|
@@ -391,6 +391,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_field_family_unification_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5432,6 +5433,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The primary runner verifies the displayed 2/9 local-density formula and a toy Gamma5 pairing, but its type-filter and bridge-status checks are prose assertions rather than a closure of the physical readout. The cited local-density authority explicitly states that the single-summand charged-lepton observable identification remains open. Thus the note is honest about being derived modulo a named bridge, but it is not eligible for audited_clean because retained status does not propagate through that open identification.
 - **open / conditional deps cited:**
   - `FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md`
+- **auditor confidence:** high
+
+### `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30`
+
+- **Note:** [`FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md`](../../docs/FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebraic audit of the three-generation symmetric corner-coupling form, its PSD ratio bound, Hilbert-Schmidt equipartition ratio, formal Gaussian variance ratio, and spectral Koide readout.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-203058-421b99a50b-flavor_ba_ratio_bound_hs_equ`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For Y=aI+b(J-I), the eigenvalues a+2b and a-b imply the PSD window -1/2 <= b/a <= 1, HS norms Tr(I^2)=3 and Tr((J-I)^2)=6 imply (b/a)^2=1/2, and the spectral readout gives Q=1/3+(2/3)(b/a)^2.  _(class `A`)_
+- **chain closes:** True — The displayed identities follow directly from the 3x3 matrices I and J-I: J-I has eigenvalues 2,-1,-1, Hilbert-Schmidt norm squared 6, and is HS-orthogonal to I. Substitution into the stated spectral Koide readout gives Q=(3a^2+6b^2)/(9a^2)=1/3+(2/3)(b/a)^2, so the bounded conclusion closes within the packet.
+- **rationale:** The claim is a bounded algebraic theorem about a finite two-parameter matrix family, not a physical derivation of the measured charged-lepton value. Independent checking confirms the eigenvalue signs, positivity interval, Hilbert-Schmidt norms, equipartition equation, Gaussian variance ratio, and Q identity as stated. The runner source performs genuine finite numerical and symbolic checks of these same algebraic facts and does not import external measurements or hidden premises.
 - **auditor confidence:** high
 
 ### `flavor_block_count_native_via_jcs_note_2026-05-30`

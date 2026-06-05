@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 619 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1374 |
+| unaudited | 1373 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 23 |
 | ~~audited_conditional~~ | 35 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
@@ -61,10 +61,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 944 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 47 |
-| `audited_failed` | 47 |
+| `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1658 |
+| `unaudited` | 1657 |
 
 | claim_type | count |
 |---|---:|
@@ -1158,6 +1158,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
@@ -1890,6 +1891,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Near k=0, E_k ~ |k|^2, so I_d(L) has the continuum scaling proxy integral_{1/L}^1 r^{d-3} dr, giving linear/log divergences for d=1,2 and finite behavior for d>=3.  _(class `A`)_
 - **chain closes:** True — The small-k expansion 2(1-cos k_mu) ~ k_mu^2 and the radial integral test give the stated threshold. The finite table entries are actually computed by the runner and independently match the displayed values; no Ward normalization, no-SSB theorem, D9 kernel authority, or substrate-minimality conclusion is imported.
 - **rationale:** The narrowed claim is a mathematical IR-sum scaling statement from the displayed lattice dispersion and standard integral comparison, not an external Coleman-Mermin-Wagner theorem. The runner source enumerates the lattice sums rather than printing constants, and its E0-E3 checks all pass. The formula inventory check finds the displayed small-k scaling, radial exponent, divergence classes, and quantitative table entries consistent with the note's definitions. The explicit non-claims prevent the earlier Ward/SSB/D9/substrate-minimality gaps from being load-bearing here.
+- **auditor confidence:** high
+
+### `axiom_first_lattice_noether_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded lattice Noether statement on the admitted finite Grassmann/Kawamoto-Smit staggered carrier: U(1) bilateral current closure plus exact two-step (2Z)^3 Ward identity, with the old momentum density (3) support-only.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-164920-dc5bcc7668-axiom_first_lattice_noether_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Step 4a asserts that substituting the U(1) generator T_hat = iI into the bilateral current (5) and applying the convention J_real := -i J_imag gives the stated fermion-number current (4), J = -(1/2) eta_mu(x)[chibar_x chi_{x+mu}+chibar_{x+mu} chi_x].  _(class `A`)_
+- **chain closes:** False — The two-step Ward identity (3a) is algebraically consistent on the admitted carrier, but the U(1) specialization does not close as written: -i*(i/2)=+1/2, not -1/2. Thus the asserted algebraic route from (5) to the displayed current (4) has a sign error.
+- **rationale:** The runner source performs real computations for E1-E7, but E5 does not establish the contested symbolic sign: it compares propagator expectation values on a small free block where the tested symmetric nearest-neighbor bilinear is effectively zero, so the sign defect is not exposed. An independent algebraic check of the displayed U(1) specialization shows the stated convention factor gives the opposite sign from (4). Separately, the KS-phase-form remains an explicit admitted structural input, so a repaired version would still need that admission handled according to bounded-tier rules.
+- **open / conditional deps cited:**
+  - `KS-phase-form`
 - **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_theorem_note_2026-04-29`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 655 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1280 |
+| unaudited | 1279 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 64 |
+| ~~audited_conditional~~ | 65 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1006 |
-| `audited_conditional` | 64 |
+| `audited_conditional` | 65 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1564 |
+| `unaudited` | 1563 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1289 |
+| `bounded_theorem` | 1290 |
 | `decoration` | 52 |
 | `meta` | 288 |
 | `no_go` | 297 |
 | `open_gate` | 135 |
-| `positive_theorem` | 714 |
+| `positive_theorem` | 713 |
 
 | criticality | count |
 |---|---:|
@@ -1159,6 +1159,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_det_character_selection_audit_ready_2026-06-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_detr_default_full_exercise_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_emergent_chirality_no_transport_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5510,6 +5511,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The native two-qubit tensor product leaves the bare qubit ladder frame and Jordan-Wigner CAR frame as the same ungraded M4(C) algebra with different tensor-support bookkeeping, while the graph Laplacian gives an A2-local symmetric non-chiral alternative to the supplied first-order parity-reversing operator.  _(class `A`)_
 - **chain closes:** True — The restricted conclusion follows from explicit finite matrix identities and support checks in the packet. The note excludes the downstream Dirac-Kahler, generation, Koide, spin-statistics, and flavor-sector bridge claims, so no missing bridge is load-bearing for the narrowed theorem.
 - **rationale:** The runner source actually constructs the Pauli matrices, two-qubit tensor operators, Jordan-Wigner dressed ladders, finite Z2^3 hopping matrix, epsilon parity, and graph Laplacian rather than merely printing constants. An independent formula pass confirms the relevant signs and identities: sigma_+^2=0, bare cross-site ladders commute, the JW pair anticommutes, both generated algebras span dimension 16, c2=Z tensor sigma_- is not of form I tensor B, the Pauli anticommutator cancels cross terms in the supplied symbol square, nearest-neighbor hopping flips epsilon, and L=deg I-hop is symmetric/A2-local while neither commuting nor anticommuting with epsilon. There are no cited non-retained authorities or external comparator imports in the restricted packet. The audited result is bounded finite-algebra support only, not any excluded downstream physics bridge.
+- **auditor confidence:** high
+
+### `flavor_det_character_selection_audit_ready_2026-06-04`
+
+- **Note:** [`FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md`](../../docs/FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded mathematical factor-2 claim: determinant powers are the regular composition characters on GL_n(C), non-determinant examples fail that axis, and regular additive readouts of positive multiplicative amplitudes are logarithmic, while Z=det(D+J) is not derived.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-222917-7ad42dcf3f-flavor_det_character_selecti`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Regular algebraic characters of GL_n(C) factor through det as integer powers, and a continuous/smooth additive readout on a positive multiplicative amplitude has form W=c·log Z; the actual identification Z=det(D+J) remains a separate fermionic/Berezin premise.  _(class `A`)_
+- **chain closes:** False — The algebraic determinant-character and logarithm-form steps close as standard mathematics, but the restricted packet does not derive the residual premise that the relevant partition amplitude is the Berezin/Grassmann determinant Z=det(D+J). It also assumes continuity/smoothness for the scalar readout rather than deriving it from Record.
+- **rationale:** The runner performs genuine finite algebraic sanity checks rather than merely printing constants, and its checks support the displayed determinant multiplicativity, counterexamples, direct-sum trace additivity, and log additivity claims. The broader conclusion is explicitly conditional on extra regularity and on the fermionic/Berezin amplitude identification, neither of which is supplied by the cited Record axiom. The cited Minimal Axioms authority is an accepted premise and does not by itself downgrade the row, but it also does not close those added premises.
 - **auditor confidence:** high
 
 ### `flavor_detr_default_full_exercise_note_2026-05-30`

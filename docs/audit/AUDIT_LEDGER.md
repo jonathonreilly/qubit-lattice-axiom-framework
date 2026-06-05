@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 174 |
 | **retained_no_go** | 181 |
-| **retained_bounded** | 650 |
+| **retained_bounded** | 651 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1294 |
+| unaudited | 1293 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 995 |
+| `audited_clean` | 996 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1578 |
+| `unaudited` | 1577 |
 
 | claim_type | count |
 |---|---:|
@@ -270,6 +270,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
+| `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `connectivity_family_v2_elliptical_duplicate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3468,6 +3469,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The supplied retained one-hop family notes jointly show a bounded selectivity split: signed-source transfer survives across the listed retained family slices, while complex-action support is limited to narrow anchor/local rows and fails or is not retained on other supplied slices.  _(class `B`)_
 - **chain closes:** True — The cited retained-grade authorities support the narrowed split: multiple signed-source retained_bounded positives with near-linear weak-field behavior, one retained narrow complex positive, one retained_no_go alt complex failure, and one retained_bounded second-family boundary diagnosis. The original grown-basin signed-source/F~M entry is explicitly excluded from the narrowed audited scope.
 - **rationale:** The primary runner is only a hard-coded comparison renderer, so it does not provide first-principles computation; the load-bearing support comes from cross-note verification of the supplied retained-grade authorities. Within the narrowed scope, each necessary entry is present in the restricted packet and retained-grade, including retained_no_go support for the alt complex failure. The claim is bounded and comparative, not a universal family theorem or an independent derivation of the underlying rows.
+- **auditor confidence:** high
+
+### `complex_selectivity_predictor_note`
+
+- **Note:** [`COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md`](../../docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded comparison over the listed structured-family cards, asking whether retained complex-action rows coincide with exact gamma=0 plus an anchor-local TOWARD->AWAY crossover while diagnosed boundary rows fail that crossover.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-215929-3e23ea17f8-complex_selectivity_predicto`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The smallest stable discriminator is the anchor-local crossover: exact gamma=0 baseline plus TOWARD -> AWAY on the retained anchor row.  _(class `B`)_
+- **chain closes:** True — The previously flagged original grown-basin complex-positive authority and second-family boundary authority are included in this restricted packet, and the retained/boundary rows cited here support the finite discriminator table. The runner itself only hard-codes the table, so closure comes from cross-note comparison, not independent computation.
+- **rationale:** All load-bearing cited authorities in the restricted packet are retained-grade or accepted meta premises, including the two dependencies the note identifies as needed for repair. The finite table's retained-positive rows have exact gamma=0 plus local crossover, while the diagnosed boundary rows retain gamma=0/control structure but fail the same crossover in the cited notes. The primary runner is not a derivation because it renders hard-coded rows; nevertheless the claim is a bounded cross-note comparison and that comparison closes from the supplied authorities.
 - **auditor confidence:** high
 
 ### `connectivity_family_v2_elliptical_duplicate_note`

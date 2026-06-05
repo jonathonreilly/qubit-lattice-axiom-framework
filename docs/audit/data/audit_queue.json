@@ -3,7 +3,7 @@
     "critical": 271,
     "high": 281,
     "leaf": 414,
-    "medium": 330
+    "medium": 329
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16695,37 +16695,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
-      "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "complex_selectivity_predictor_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "second_grown_family_complex_note",
-        "alt_connectivity_family_complex_failure_note",
-        "third_grown_family_complex_boundary_note",
-        "fourth_family_complex_boundary_note",
-        "fifth_family_complex_boundary_note",
-        "claude_complex_action_grown_companion_note",
-        "second_grown_family_complex_boundary_note",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.585,
-      "note_path": "docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/COMPLEX_SELECTIVITY_PREDICTOR_SCAN.py",
       "transitive_descendants": 5
     },
     {
@@ -38974,6 +38943,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 88,
-  "total_pending": 1296
+  "ready_count": 87,
+  "total_pending": 1295
 }

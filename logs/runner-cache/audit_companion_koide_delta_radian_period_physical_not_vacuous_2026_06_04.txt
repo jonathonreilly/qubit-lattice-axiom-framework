@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_delta_radian_period_physical_not_vacuous_2026_06_04.py
+runner_sha256: 78ed124a6e8a7f4be0dfdfe3d746fe85047b7a7b836afa1bcaa3fef9f253c5b5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+
+=== Part A: {q*pi : q in Q} cap Q = {0}; 2/9 is a Type-B rational, not a Type-A radian ===
+[PASS] (2/9)*pi is irrational (Type-A periodic angle is not the rational 2/9)  [(2/9)*pi = 2*pi/9 ~= 0.698132]
+[PASS] 2/9 is a pure rational (Type-B count), and 2/9 != (2/9)*pi  [disjoint away from 0: a nonzero rational is not a rational multiple of pi]
+[PASS] natural lane angles (2/9)pi and 2pi(2/9) both differ from 2/9  [(2/9)pi~=0.6981, 2pi(2/9)~=1.3963, 2/9~=0.2222]
+
+=== Part B: the radian-period choice changes the charged-lepton mass ratios by ~100x (PDG = comparator only) ===
+[PASS] Koide Q = 2/3 for every delta (period choice invisible to Q)  [Q values: [0.666667, 0.666667, 0.666667, 0.666667]]
+[PASS] PDG comparator sanity: period-1 ratios are within <1e-3 of observed ratios  [model (tau/e,mu/e)=(3477.47,206.770) vs PDG (3477.23,206.768); relerr=8.02e-05]
+[PASS] period-2pi reading changes both mass ratios relative to period-1  [period-1=(3477.47,206.770); period-2pi=(40.12,14.340)]
+[PASS] period-pi reading changes both mass ratios relative to period-1  [period-1=(3477.47,206.770); period-pi=(40.12,14.340)]
+[PASS] the mass-ratio observable changes under the period choice (non-vacuous)  [|period-1 - period-2pi| / period-1 = 0.99 (tau/e)]
+[PASS] Q stays invariant while mass ratios change  [period choice is invisible to Q but visible to individual ratio observables]
+[INFO] PDG comparator only: period-1 vs PDG relerr=8.02e-05; period-2pi tau/e=40.12; period-pi tau/e=40.12
+
+=== Part C: a vacuous rescaling convention leaves ratio observables INVARIANT (unlike the radian period) ===
+[PASS] vacuous rescaling m_k -> lambda m_k leaves ratio m_i/m_j invariant (d/dlambda = 0)  [g_bare/Y0 are rescalings: they cancel in ratio observables]
+[PASS] radian period enters as cos(delta): NOT an overall scale, d/ddelta != 0  [cos(delta) has nonzero derivative; the period choice does not cancel]
+
+=== Part D: classification -- radian-period residual is a PHYSICAL admission, not a vacuous convention ===
+[PASS] RADIAN_PERIOD_CLASSIFICATION = physical under Brannen mass-ratio test  [Q is invariant, but mass ratios change through cos(delta)]
+[PASS] VACUOUS_RECLASSIFICATION_ROUTE = closed by failed invariance criterion  [vacuous rescalings cancel; the radian-period choice does not]
+[INFO] This runner does not derive delta, change the Tier-A registry, or set any audit status.
+
+======================================================================
+TOTAL: 13 PASS / 0 FAIL  (out of 13 checks)
+======================================================================
+
+All checks passed: under the Brannen parameterization, the radian-period choice changes charged-lepton mass ratios through cos(delta) and therefore fails the vacuous-convention invariance test. This does not derive delta, change the admitted-input registry, or set any audit status.
+
+----- stderr -----
+

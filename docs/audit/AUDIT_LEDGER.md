@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 169 |
+| **retained** | 170 |
 | **retained_no_go** | 176 |
 | **retained_bounded** | 641 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
 | unaudited | 1325 |
-| audit_in_progress | 1 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 976 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 977 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 47 |
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1004,6 +1002,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -15080,6 +15079,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The load-bearing content is the four finite runner-verified computational gates, with the AdS/CFT, RT, MERA, continuum, and holographic-gravity bridge explicitly excluded as non-load-bearing.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the transfer matrices, tight-binding Hamiltonians, correlation matrices, entropies, SVDs, and fits directly rather than printing constants or importing the contested premise. The cached output matches the source note's rounded quantitative claims, and the note narrows away the unsupported holographic bridge.
 - **rationale:** The surviving claim is bounded to finite sampled computations and the supplied runner genuinely computes the reported quantities from its stated toy lattice definitions. The displayed coefficients and fit qualities in the note match the runner output to the stated rounding: c=1.0855, area-law R^2=0.999613, center chi 8 to 7 at f=20, inverse-coupling R^2=0.6465, and linear R^2=0.9745. There are no cited non-retained authorities, and the note explicitly rejects treating the finite sweep as an RT or holographic derivation.
+- **auditor confidence:** high
+
+### `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
+
+- **Note:** [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^† a_x.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-204814-f04dec8823-tensor_product_translation_f`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On a tensor-product basis vector, applying T_a^† shifts the site content to y+a, a_x lowers the content originally at x+a, and T_a shifts back, giving exactly the action of a_{x+a}.  _(class `C`)_
+- **chain closes:** True — The Lattice and Quantum axioms supply the site translation structure and one-site C^2/M_2(C) carrier, while the finite tensor product, local ladder operators, and periodic identification are explicit scoped definitions. The displayed basis-vector computation proves the covariance identity, and unitarity, group law, and charge conservation follow by permutation algebra and relabeling.
+- **rationale:** The proof does not import a physical Hamiltonian, Noether theorem, fitted value, external comparator, or Jordan-Wigner anticommutation premise. An independent check of the translation convention confirms the sign: T_a a_x T_a^† lowers the bit at x+a, matching a_{x+a}, and the adjoint and Q_total identities follow algebraically. The runner source genuinely constructs exact sympy permutation and local-operator matrices and verifies the stated identities, rather than printing hard-coded expected passes.
 - **auditor confidence:** high
 
 ### `tensor_support_center_excess_law_note`

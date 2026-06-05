@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_hubble_lane5_two_gate_dependency_firewall_criticality_bump_hygiene_2026_06_04.py
+runner_sha256: b89618cf4839d39c459ff3335fe98bc431c0c00b7b34d1e05334daa0d6b770f3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
+========================================================================
+Hubble Lane 5 two-gate dependency firewall criticality-bump hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md
+Parent runner: scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS parent_claim_type_expected
+PASS parent_runner_path_expected
+PASS parent_current_criticality_expected
+PASS parent_current_load_expected :: load=9.644
+PASS parent_note_hash_expected
+PASS parent_note_hash_matches_ledger
+PASS parent_runner_hash_expected
+PASS parent_deps_exact :: count=6
+PASS parent_has_no_helper_runners
+PASS upstream_row_present_cosmology_open_number_reduction_theorem_note_2026-04-26
+PASS upstream_row_unresolved_cosmology_open_number_reduction_theorem_note_2026-04-26
+PASS upstream_row_present_hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27
+PASS upstream_row_unresolved_hubble_lane5_c3_vacuum_topology_no_active_route_note_2026-04-27
+PASS upstream_row_present_hubble_lane5_eta_retirement_gate_audit_note_2026-04-26
+PASS upstream_row_unresolved_hubble_lane5_eta_retirement_gate_audit_note_2026-04-26
+PASS upstream_row_present_hubble_lane5_planck_c1_gate_audit_note_2026-04-26
+PASS upstream_row_unresolved_hubble_lane5_planck_c1_gate_audit_note_2026-04-26
+PASS upstream_row_present_hubble_tension_structural_lock_theorem_note_2026-04-26
+PASS upstream_row_unresolved_hubble_tension_structural_lock_theorem_note_2026-04-26
+PASS upstream_row_present_omega_lambda_matter_bridge_theorem_note_2026-04-22
+PASS upstream_row_unresolved_omega_lambda_matter_bridge_theorem_note_2026-04-22
+PASS all_upstream_rows_unresolved
+PASS prior_medium_positive_snapshot_present
+PASS prior_snapshot_load_expected
+PASS prior_invalidation_was_priority_bump
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_tally_present
+PASS parent_runner_pass_count_eighteen :: pass_count=18
+PASS parent_runner_fail_count_zero :: fail_count=0
+PASS parent_runner_transcript_contains_core_phrase_0
+PASS parent_runner_transcript_contains_core_phrase_1
+PASS parent_runner_transcript_contains_core_phrase_2
+PASS parent_runner_transcript_contains_core_phrase_3
+PASS parent_runner_transcript_contains_core_phrase_4
+PASS parent_text_two_gate_identity_present
+PASS parent_text_c1_only_block_present
+PASS parent_text_c2_c3_only_block_present
+PASS parent_text_structural_lock_boundary_present
+PASS parent_text_no_observed_h0_input_present
+PASS parent_import_section_names_dep_0
+PASS parent_import_section_names_dep_1
+PASS parent_import_section_names_dep_2
+PASS parent_import_section_names_dep_3
+PASS parent_import_section_names_dep_4
+PASS parent_import_section_names_dep_5
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_verdict_change
+PASS companion_keeps_dependencies_unresolved
+PASS companion_disclaims_h0_derivation
+========================================================================
+SUMMARY: PASS=52 FAIL=0
+========================================================================
+
+----- stderr -----
+

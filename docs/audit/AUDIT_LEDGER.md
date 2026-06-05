@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 176 |
 | **retained_no_go** | 183 |
-| **retained_bounded** | 649 |
+| **retained_bounded** | 650 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1285 |
+| unaudited | 1284 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 999 |
+| `audited_clean` | 1000 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1569 |
+| `unaudited` | 1568 |
 
 | claim_type | count |
 |---|---:|
@@ -285,6 +285,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_exact_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `critical_exponents_topology_live_scout_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cross_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -3751,6 +3752,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Closes by pure algebra from cpt_exact_note's retained inputs ((CP)^2 = I and reality of C, P giving (CP)*=CP) plus standard antiunitary commutation T*U = U**T and complex-conjugation involution K^2 = I. Runner constructs C, P from first principles and verifies (CP)^2=I, T^2=I, and (CPT)^2 psi = psi on 1 generic and 5 random complex states at residual 0.000e+00 each.
 - **rationale:** The load-bearing step is class (A): a pure algebraic identity check over inputs taken from a single retained parent claim (cpt_exact_note: (CP)^2=I and reality of CP) plus universal mathematics (antiunitary commutation T*U=U**T, K^2=I). The runner contains zero (D) external-comparator checks, and the chain reduces to one parent claim. By the audit rubric's tiebreaker (zero (D) checks AND single-parent reduction => audited_decoration), and consistent with ALGEBRAIC_DECORATION_POLICY section 1 (algebraic dependence, no new comparator, no compression -- expansion of cpt_exact_note's CP and T properties into a derived (CPT)^2 identity), this is decoration of cpt_exact_note. The derivation is correct on its own terms; the verdict reflects the rubric's classification of single-parent zero-D algebraic corollaries, not a defect in the math.
 - **decoration parent:** `cpt_exact_note`
+- **auditor confidence:** high
+
+### `critical_exponents_topology_live_scout_note_2026-06-04`
+
+- **Note:** [`CRITICAL_EXPONENTS_TOPOLOGY_LIVE_SCOUT_NOTE_2026-06-04.md`](../../docs/CRITICAL_EXPONENTS_TOPOLOGY_LIVE_SCOUT_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A bounded finite-size scout over six configured graph representatives, auditing only the reported admissible fits, degenerate rows, R^2 threshold, finite saturation readouts, and beta-spread statement, with no asymptotic universality or multi-seed robustness claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-201830-d6981135ff-critical_exponents_topology_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In this finite configured scout, three graph representatives have admissible onset fits with fitted beta values 0.7328, 0.3675, and 0.3348, while three representatives are degenerate; the fitted beta spread is evidence that topology affects this finite-size onset diagnostic.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the six graph representatives, evolves the stated finite diagnostic, fits onset curves from computed arrays, labels rows by finite R^2 criteria, and checks the reported bounded assertions. Independently from the runner assertions, the displayed fit betas have spread 0.7328 - 0.3348 = 0.3980, exceeding 0.35, and the three degenerate rows show non-finite beta and R^2 as claimed.
+- **rationale:** The restricted packet contains the source note, cached output, and full primary runner source, with no missing helper imports or cited upstream dependencies. The code is not a trivial printout: it builds graph families, solves the finite evolution and field equations, performs curve fits, and computes the table values before checking the bounded assertion surface. The hard-coded expected label sets are used as regression assertions against computed rows, not as the source of the fitted beta values. The audited conclusion is limited to topology-dependent finite-size onset behavior in this configured scout, so it closes without importing an asymptotic exponent, universality class, or external comparator.
 - **auditor confidence:** high
 
 ### `critical_exponents_topology_note_2026-04-10`

@@ -1,0 +1,82 @@
+==============================================================================
+CALIBRATION: Z3-circulant 2-block algebra (the object under attack)
+==============================================================================
+[PASS] CAL-1 r=1/2 setting gives Q=2/3 (Koide value)  |  Q=0.6666666667
+[PASS] CAL-2 r=1 setting gives Q=1 (max hierarchy)  |  Q=1.0000000000
+[PASS] CAL-3 exact line Q = 1/3 + (2/3) r over a scan  |  verified for r in {0.1,0.25,0.5,0.75,1.3,2.0}
+[PASS] CAL-4 real Wedderburn blocks: singlet rank 1, doublet rank 2  |  dim singlet=1, dim doublet=2
+[PASS] CAL-5 H is block-diagonal in {P_singlet,P_doublet} for ALL r (so a pointer map is a no-op on r)  |  ||P0 H P1||~1e-16 for every r (C3-invariance)
+[PASS] CAL-6 Born/dimension weights blocks (1:2)->r=1; block-count (1:1)->r=1/2 [the dial's two named ends]  |  Born=(1,2) dim-counted; count=(1,1) block-counted
+
+==============================================================================
+FRONT 1 — Darwinian redundancy: can redundant partition-records
+           reconstruct within-block DIMENSION (-> Born -> r=1)?
+==============================================================================
+[PASS] F1.1 N=  1 redundant partition-copies still generate a dim-2 (2-outcome) algebra  |  generated algebra dim = 2 (not enlarged by redundancy)
+[PASS] F1.1 N=  3 redundant partition-copies still generate a dim-2 (2-outcome) algebra  |  generated algebra dim = 2 (not enlarged by redundancy)
+[PASS] F1.1 N= 10 redundant partition-copies still generate a dim-2 (2-outcome) algebra  |  generated algebra dim = 2 (not enlarged by redundancy)
+[PASS] F1.1 N=100 redundant partition-copies still generate a dim-2 (2-outcome) algebra  |  generated algebra dim = 2 (not enlarged by redundancy)
+[PASS] F1.2 [DECISIVE] redundant partition-records CANNOT distinguish two orthogonal WITHIN-doublet states  |  both within-doublet states -> (p0,p1)=[-0.  1.] = [0. 1.] for ANY # copies -> dimension NOT reconstructed
+[PASS] F1.3 the dimension NUMBER (rank P1 = 2) is a structural attribute of the projector, fixed from ONE copy; redundancy adds nothing to it  |  rank(P_doublet)=2 from 1 copy = 2 from N copies
+[PASS] F1.4 [DECISIVE] the partition record KNOWS the block dimensions (Tr P0=1, Tr P1=2) -> the Born/dimension weighting (->r=1) is reachable from partition data alone  |  dim-ratio 2:1 (Born->r=1) and count-ratio 1:1 (->r=1/2) are BOTH built from projector ranks the record sees -> 'partition-only forces block-count' is FALSE
+[PASS] F1.5 STEELMAN granted: a SINGLE bare outcome-label ('singlet'/'doublet') carries no rank, so from one label the dimension is not directly readable  |  we concede the mechanism's strongest premise: one label != one rank
+[PASS] F1.6 [DECISIVE — the Darwinism kill] redundant outcome-LABELS reconstruct the block DIMENSION via Born frequencies: Haar-averaged singlet:doublet frequency -> Tr P0:Tr P1 = 1:2 (the dimension) from labels alone  |  reconstructed doublet:singlet frequency ratio = 2.0118 ~ 2.0 = dimension ratio -> Born/dimension (r=1) recovered from redundant records; 'partition-only' premise FAILS even at the label level
+
+==============================================================================
+FRONT 2 — dimension-vs-state: is block DIMENSION knowable without
+           resolving the within-block STATE?
+==============================================================================
+[PASS] F2.1 within-block STATE is unrecorded (within-doublet rotation commutes with the partition; record is blind to it) — this half of the cut is SOUND  |  U_within unitary and [U_within, P0]=[U_within, P1]=0
+[PASS] F2.2 block DIMENSION (rank=2) is invariant under within-block unitaries -> it is structural data NOT contained in the within-block state  |  rank stays 2 and P_doublet fixed by within-block rotation
+[PASS] F2.3 [DECISIVE] Born measure is a function of DIMENSIONS only (knowable, F2.2), not of within-block STATE (unknowable, F2.1) -> the cut does NOT force block-counting; r=1 (dimension) is reachable  |  Born uses Tr P0:Tr P1 = 1:2 -> r=1, all on the record's side of the cut
+
+==============================================================================
+FRONT 3 — real-vs-complex slot: does the cut resolve C-unit vs 2 R-dims,
+           or just rename it?
+==============================================================================
+[PASS] F3.1 the doublet is one C-irrep: dim_C=1 (count once -> r=1/2) AND dim_R=2 (count dimension -> r=1) — both true of the SAME block  |  dim_C(doublet)=1, dim_R(doublet)=2: the unforced real-vs-complex slot
+[PASS] F3.2 [DECISIVE] the cut's 'doublet' outcome is the SAME operator whether read as one C-unit or two R-dims -> the cut carries NO scalar-field tag -> it does NOT resolve the slot  |  P_doublet identical under both readings; the C-vs-R choice is external to the cut
+[PASS] F3.3 restriction-of-scalars: the C-doublet carries a faithful REAL 2x2 rep (rotation by 2pi/3) -> det_R (r=1) is equally well-defined on the same block -> the cut does not escape the det_R/det_C slot  |  real 2x2 rotation rep is faithful (det=1, no fixed vector) -> det_R available
+
+==============================================================================
+FRONT 4 — overreach: is the charged-lepton-only restriction principled?
+==============================================================================
+[PASS] F4.1 observed sectors do NOT all sit at r=1/2 (only charged leptons do) -> a universal 'classical-record -> r=1/2' would be FALSIFIED  |  r: leptons=0.500, up=0.745, down=0.595
+[PASS] F4.2 the GENERATION-block structure (1+2) is identical for every fermion sector (same C3 triplet) -> no generation-level record property singles out charged leptons; the offered color-singlet distinction acts on a DIFFERENT factor  |  all sectors share the same 1+2 generation blocks; color != generation partition
+[PASS] F4.3 [DECISIVE] the 'only charged leptons' restriction is EXTERNAL to the cut mechanism (the cut sees identical generation blocks everywhere) -> the multi-lane escape is post-hoc w.r.t. the mechanism, not principled by it  |  cut mechanism is sector-blind on generations; sector selection is an added input
+
+==============================================================================
+SYNTHESIS
+==============================================================================
+[PASS] SYN-1 [CRUCIAL] measure-from-the-cut is NOT a sound new forcing mechanism: the partition record holds the block DIMENSIONS, so Born/dimension (r=1) is reachable -> 'partition-only forces block-count (r=1/2)' FAILS (same family as the broken minimum-info / Darwinian-redundancy objection)  |  block dimensions are on the record's side of the cut -> r=1 not excluded
+[PASS] SYN-2 [CRUCIAL] the cut RENAMES the real-vs-complex / dimension slot (it is operator-agnostic between one-C-unit and two-R-dims, and det_R stays canonical) -> it does NOT resolve the slot; r=1/2 remains the unforced block-counting CONVENTION, a stable setting on the dial, not forced by the cut  |  cut carries no scalar-field tag; det_C(r=1/2) vs det_R(r=1) stays a free reading
+[PASS] SYN-3 frame-consistent: r=1/2 stays a distinguished STABLE SETTING (block-count / 2-sector equipartition) and r=1 the Born/dimension setting; the cut leaves BOTH on the dial (mechanism neither forces nor excludes r=1/2)  |  both settings reachable from partition+dimension data; cut does not select
+
+==============================================================================
+SCORECARD: PASS=27  FAIL=0  TOTAL=27
+==============================================================================
+
+PER-FRONT VERDICT:
+  F1 Darwinian redundancy: redundancy does NOT enlarge the resolvable
+     algebra (F1.1) and cannot resolve within-block states (F1.2) — BUT the
+     block DIMENSION is a single-copy structural fact (F1.3) the record holds,
+     so Born/dimension (r=1) is reachable from partition data (F1.4).
+     => 'partition-only forces block-count' FAILS.
+  F2 dimension-vs-state: within-block STATE unrecorded (sound, F2.1), but
+     block DIMENSION is invariant structural data on the record's side (F2.2),
+     and Born uses dimensions only (F2.3) => r=1 reachable; cut does not force
+     block-counting.
+  F3 real-vs-complex slot: the cut's outcome is operator-agnostic between
+     one-C-unit and two-R-dims (F3.2) and det_R stays canonical (F3.3)
+     => the cut RENAMES the slot, does not resolve it.
+  F4 overreach: generation blocks identical across sectors (F4.2); a universal
+     mechanism would give r=1/2 everywhere (falsified, F4.1) => the
+     charged-lepton-only restriction is EXTERNAL/post-hoc to the cut (F4.3).
+
+HONEST VERDICT: REPACKAGED-BROKEN-ARGUMENT (front 1) + RENAMES-THE-SLOT (front 3).
+The 'measure-from-the-cut' mechanism is NOT a sound new forcing mechanism: the
+record holds the block dimensions, so Born (r=1) is not excluded, and the cut
+carries no scalar-field tag to pick det_C over det_R. r=1/2 stays a distinguished
+STABLE SETTING (block-count / 2-sector equipartition), NOT the record-FORCED
+measure — exactly the unforced det_C convention, consistent with the campaign's
+standing (Born/dimension -> r=1; r=1/2 = the separate block-counting input).

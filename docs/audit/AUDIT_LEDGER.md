@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 629 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1347 |
+| unaudited | 1346 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 961 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1631 |
+| `unaudited` | 1630 |
 
 | claim_type | count |
 |---|---:|
@@ -1117,6 +1117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_trace_vs_center_dissolves_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6341,6 +6342,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** Issue: the note declares an exact runner and expected PASS=6, but the runner path is missing, so the two-extension underdetermination construction is not reproducible from the allowed artifacts. Why this blocks: the theorem requires verifying exact agreement on the retained packet and triple while showing different Perron states and Perron/Jacobi packets; prose alone does not establish those equalities and separations. Repair target: restore the runner or replace it with a current executable proof that constructs the zero extension and positive decaying tail extension, checks retained-packet/triple equality, and prints the Perron/Perron-Jacobi separation checks. Claim boundary until fixed: safely claim only that tail completion is posed as the remaining framework-point seam; do not claim a retained underdetermination theorem or explicit inequivalent extension pair.
 - **open / conditional deps cited:**
   - `scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py`
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_EXACT_RADICAL_RECONSTRUCTION_MAP_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_EXACT_RADICAL_RECONSTRUCTION_MAP_NOTE_2026-04-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the exact radical three-sample matrix and inverse reconstruction map on the first symmetric retained witness sector, including the note's claimed beta=6 PF-seam interpretation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-174949-d24ab317cb-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the standard pi/16 radical identities, the three-sample matrix is F = [[1,a,0],[1,b,c],[1,d,e]] with the stated radical entries, and its inverse is the displayed Delta^{-1} adjugate map from [Z_A,Z_B,Z_C]^T to the coefficient triple.  _(class `A`)_
+- **chain closes:** False — The radical entries, Delta determinant, inverse matrix, W_A annihilation, and c/e sign separation check out as algebraic consequences of the displayed holonomies and character identities. The broader beta=6 PF-seam framing does not close, because the cited evaluation-seam authority is only a formal/conditional retained_bounded lemma and explicitly leaves the physical Wilson/Haar beta=6 identification to four unsupplied bridge authorities.
+- **rationale:** The reconstruction map itself is a genuine class-A algebraic closure: independently expanding the pi/16 character evaluations gives the stated a,b,c,d,e, det(F)=Delta, and the displayed inverse is the adjugate of F. The runner's mathematical checks are consistent with that, while its support checks are mostly cross-note string checks and its current summary differs from the source note's expected PASS count. The positive theorem nevertheless overreaches when it says the first retained beta=6 seam is purely evaluative, since the supplied beta6 reduction authority expressly scopes the physical bridge out of its retained claim.
+- **open / conditional deps cited:**
+  - `GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17`

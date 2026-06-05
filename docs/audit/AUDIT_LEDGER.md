@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 170 |
+| **retained** | 171 |
 | **retained_no_go** | 179 |
 | **retained_bounded** | 639 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1318 |
+| unaudited | 1317 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 978 |
+| `audited_clean` | 979 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1602 |
+| `unaudited` | 1601 |
 
 | claim_type | count |
 |---|---:|
@@ -205,6 +205,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2400,6 +2401,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The bounded damage ladder does not crown p = 1 as the most robust action power on this family: p = 1 is cleanest on exponent drift when it survives, while p = 2 survives more signed damage cases.  _(class `C`)_
 - **chain closes:** True — The included runner and helper source instantiate the lattice, damaged offset masks, propagator, field, Born diagnostic, gravity sign, F~M fits, and summary counts rather than printing constants. The audited conclusion is limited to the bounded replay result and does not require a universal graph theorem.
 - **rationale:** The runner output directly supports the note's negative robustness summary: p=0.5 and p=1.0 are TOWARD on 3/6 damaged cases, while p=2.0 is TOWARD on 5/6, and p=1.0 has the smallest mean |F~M-p| among finite surviving fits. The primary and helper source show an actual bounded numerical replay from the stated lattice/action setup, with no hard-coded expected summary values or external comparator calibration. The cited authorities are retained_bounded and are used only to bound the family and neighboring action-power context, so the narrowed claim closes as a bounded theorem.
+- **auditor confidence:** high
+
+### `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-region qubit-lattice effect algebra E(H_Λ) for |Λ| ≥ 1, with Busch's dim ≥ 2 POVM theorem applied to obtain the unique density-matrix Born form.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-185711-3519161492-busch_povm_extension_on_qubi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any |Λ| ≥ 1, dim H_Λ = 2^|Λ| ≥ 2, so Busch's POVM theorem applies and gives m(E) = Tr(σE) for all E ∈ E(H_Λ).  _(class `A`)_
+- **chain closes:** True — The packet's accepted axiom authority supplies the lattice and one-site qubit carrier, and the note's finite-region setup gives dim H_Λ = 2^|Λ| ≥ 2. With Busch's POVM theorem used as the stated standard-math input, the conclusion follows by direct theorem instantiation and finite-dimensional trace duality.
+- **rationale:** The displayed quantitative identities are internally consistent: tensoring |Λ| one-qubit sites gives dimension 2^|Λ|, hence the Busch dim ≥ 2 hypothesis holds for every |Λ| ≥ 1. The measure assumptions are exactly the POVM effect-algebra additivity hypothesis quoted for Busch's theorem, and the trace representation is unique in finite dimension by nondegeneracy of the trace pairing. No runner is present, but no compute is needed for this finite-dimensional theorem application.
 - **auditor confidence:** high
 
 ### `carrier_orbit_invariance_note_2026-05-03`

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Critical Exponents vs Graph Topology — Retained Probe
-=======================================================
+Critical Exponents vs Graph Topology - Bounded Scout
+====================================================
 Does the self-gravity phase transition have topology-dependent exponents?
-If β differs across graph families, that's a new universality class.
+If beta differs across graph families, that is finite-size evidence that
+topology matters. It is not by itself a universality-class proof.
 
 Tests: random geometric, growing, layered cycle, causal DAG.
 This is a topology-dependent finite-size scout, not a universal critical-law proof.
@@ -183,15 +184,58 @@ if __name__=='__main__':
 
     print(f"{'Family':<25s} {'base':<18s} {'n':>5s} {'G_crit':>8s} {'beta':>8s} {'R^2':>8s} {'phi_sat':>8s} {'status':>12s}")
     print("-"*70)
+    rows = []
     for label,name,pos,col,adj in families:
         G_c,beta,r2,phi_s,n=measure_transition(name,pos,col,adj)
         ok = np.isfinite(beta) and np.isfinite(r2) and r2 >= 0.75
         beta_text = f"{beta:8.4f}" if np.isfinite(beta) else f"{'nan':>8s}"
         r2_text = f"{r2:8.4f}" if np.isfinite(r2) else f"{'nan':>8s}"
         status = "fit" if ok else "degenerate"
+        rows.append(
+            {
+                "label": label,
+                "base": name,
+                "n": n,
+                "G_crit": G_c,
+                "beta": beta,
+                "r2": r2,
+                "phi_sat": phi_s,
+                "status": status,
+            }
+        )
         print(f"{label:<25s} {name:<18s} {n:5d} {G_c:8.1f} {beta_text} {r2_text} {phi_s:8.4f} {status:>12s}")
 
     print(f"\nTime: {time.time()-t0:.1f}s")
     print("\nInterpretation:")
     print("  - differing fitted beta across admissible families is evidence for topology-dependent finite-size onset behavior")
     print("  - rows marked 'degenerate' should not be used as positive universality evidence without a stronger fit")
+
+    expected_fit = {"random_geometric_s10", "growing_n64", "layered_cycle_8x8"}
+    expected_degenerate = {"random_geometric_s8", "causal_dag_10x6", "causal_dag_8x8"}
+    fit_rows = [row for row in rows if row["status"] == "fit"]
+    degenerate_rows = [row for row in rows if row["status"] == "degenerate"]
+    fit_labels = {row["label"] for row in fit_rows}
+    degenerate_labels = {row["label"] for row in degenerate_rows}
+    fit_betas = [row["beta"] for row in fit_rows]
+    fit_r2s = [row["r2"] for row in fit_rows]
+
+    checks = [
+        ("six configured families were evaluated", len(rows) == 6),
+        ("fit labels match the live finite scout set", fit_labels == expected_fit),
+        ("degenerate labels match the live finite scout set", degenerate_labels == expected_degenerate),
+        ("all fitted rows have R^2 >= 0.90", all(r2 >= 0.90 for r2 in fit_r2s)),
+        ("fitted beta spread exceeds 0.35", max(fit_betas) - min(fit_betas) > 0.35),
+        ("all degenerate rows have non-finite beta and R^2", all(not np.isfinite(row["beta"]) and not np.isfinite(row["r2"]) for row in degenerate_rows)),
+        ("all saturation readouts are finite", all(np.isfinite(row["phi_sat"]) for row in rows)),
+    ]
+    assertions_ok = all(ok for _, ok in checks)
+
+    print()
+    print("SAFE READ")
+    for name, ok in checks:
+        status = "PASS" if ok else "FAIL"
+        print(f"  [{status}] {name}")
+    print("  finite-size scout only: no universality class or asymptotic exponent claim")
+    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
+    if not assertions_ok:
+        raise SystemExit(1)

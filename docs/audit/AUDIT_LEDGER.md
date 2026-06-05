@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 623 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1364 |
+| unaudited | 1363 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -46,6 +46,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
+| `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
@@ -60,16 +61,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 949 |
 | `audited_conditional` | 37 |
-| `audited_decoration` | 47 |
+| `audited_decoration` | 48 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1648 |
+| `unaudited` | 1647 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1288 |
-| `decoration` | 48 |
+| `bounded_theorem` | 1287 |
+| `decoration` | 49 |
 | `meta` | 288 |
 | `no_go` | 297 |
 | `open_gate` | 134 |
@@ -1147,6 +1148,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lorentz_kernel_positive_closure_note` | decoration | ~~audited_decoration~~ | `decoration_under_emergent_lorentz_invariance_note` | cross_family | codex-gpt-5.5 | A | `emergent_lorentz_invariance_note` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -10373,6 +10375,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Step 6: strengthened block-additivity and universality give f(r_A r_B)=f(r_A)+f(r_B) on a dense realized subset of R_+ x R_+, continuity extends this to all of R_+ x R_+, and Cauchy-Erdos forces f(r)=c log r.  _(class `A`)_
 - **chain closes:** True — The determinant factorization gives r_AB=r_A r_B on no-bond sums, so the strengthened admissibility hypotheses reduce the problem to the standard continuous multiplicative-to-additive Cauchy equation. The cited real-D authority is retained-grade, and X2/X3 are explicit bounded-theorem hypotheses rather than hidden imports.
 - **rationale:** The load-bearing argument is a genuine algebraic and real-analysis closure over the stated bounded hypotheses: real determinants, block determinant multiplication, dense realized ratios, continuity, and the standard Cauchy classifier. Independent checking of the displayed determinant-ratio branches confirms that the 2x2 real-skew block realizes (0,1), 1, and (1,infty), so two factors realize a dense, in fact full, R_+ x R_+ image in the stated strengthened class. The runner output is consistent with class-A symbolic checks and does not import numerical comparators or tuned values. The conclusion is clean only in the stated up-to-scale bounded scope; X2 itself is not derived.
+- **auditor confidence:** high
+
+### `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic corollary of the retained real-D block uniqueness theorem: on the X2 class where F = cW, nonzero overall scale does not affect normalized source-derivative ratios, and positive rescalings preserve derivative signs.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-171429-d382c63ac7-observable_principle_scale_i`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting F = c · W into the normalized source-response ratio gives (c · ∂²W_zw)/(c · ∂²W_xy), so c cancels when c != 0 and the denominator is nonzero.  _(class `A`)_
+- **chain closes:** True — The cited retained_bounded authority supplies the only substantive input, U1: F = cW on the admissibility class. Linearity of differentiation then gives ∂^k(cW) = c∂^kW, so ratios with nonzero denominator cancel c and the sign statement follows from sign(c).
+- **rationale:** The displayed ratio, sign, additive-constant, and higher-derivative identities are standard algebraic consequences of F = cW and differentiability. The runner source performs exact symbolic checks rather than merely printing constants, and no external comparator or fitted value is used. Because the claim reduces to one retained upstream theorem plus standard calculus, with zero class-D checks, the rubric classifies it as decoration rather than an independent bounded theorem.
+- **decoration parent:** `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
 
 ### `oh_schur_boundary_action_note`

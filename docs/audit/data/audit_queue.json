@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 269,
-    "high": 297,
+    "high": 296,
     "leaf": 433,
     "medium": 367
   },
@@ -7745,30 +7745,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.426,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_observable_principle_scale_invariant_source_response_exact_2026_05_16.py",
-      "transitive_descendants": 42
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17335,6 +17311,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "yt_source_action_support_packet_note_2026-05-22",
+        "yt_color_projection_correction_note",
+        "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.585,
+      "note_path": "docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py",
+      "transitive_descendants": 11
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -24785,32 +24787,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_observable_principle_p1_campaign_closure_synthesis_2026_05_18.py",
       "transitive_descendants": 12
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_source_action_support_packet_note_2026-05-22",
-        "yt_color_projection_correction_note",
-        "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.585,
-      "note_path": "docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py",
-      "transitive_descendants": 11
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40709,5 +40685,5 @@
     }
   ],
   "ready_count": 127,
-  "total_pending": 1366
+  "total_pending": 1365
 }

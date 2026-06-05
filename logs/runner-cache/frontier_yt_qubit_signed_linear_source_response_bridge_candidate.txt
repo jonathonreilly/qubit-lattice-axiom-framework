@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py
-runner_sha256: 727799c3a642636fea15539719b8adfa48f457b8243eecd5704ea135adafee21
+runner_sha256: 4500c08bbac07c1d24f8a66320d49a5153f3b2926bf00009e418a598018e01f8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -16,6 +16,9 @@ Part 1: anchors
 [PASS] docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md exists
 [PASS] docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md exists
 [PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note claim type is bounded support note
+[PASS] note type is conditional / support
+[PASS] old bounded_theorem header is absent
 [PASS] note contains required section: Axiom-First Fork
 [PASS] note contains required section: Exact Democratic Source
 [PASS] note contains required section: Projective Probability Versus Signed Linear Response
@@ -68,7 +71,7 @@ Part 5: firewalls
 [PASS] forbidden overclaim absent: full retained closure
 
 wrote outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json
-SUMMARY: PASS=47 FAIL=0
+SUMMARY: PASS=50 FAIL=0
 
 ----- stderr -----
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 175 |
 | **retained_no_go** | 182 |
-| **retained_bounded** | 647 |
+| **retained_bounded** | 648 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1289 |
+| unaudited | 1288 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 995 |
+| `audited_clean` | 996 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1573 |
+| `unaudited` | 1572 |
 
 | claim_type | count |
 |---|---:|
@@ -216,6 +216,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_impact_parameter_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `causal_propagating_field_live_packet_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_source_placement_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_born_dense_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
@@ -2614,6 +2615,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The primary runner defines a finite center-grown-family impact-parameter sweep, computes zero-control and causal-field detector centroid shifts under instantaneous, forward-only, and finite-cone variants, fits runner-defined log-log alpha/R2 values, and the source note reports the same finite diagnostic without deriving or importing a physical carrier/metric/growth theorem.  _(class `C`)_
 - **chain closes:** True — The source note is exactly mirrored by the primary runner output. The runner exits cleanly and reports the same zero-control values, alpha/R2/toward table, and conclusion; the helper only supplies runner-defined finite growth and propagation machinery.
 - **rationale:** The note closes as a bounded finite diagnostic. Its numerical claims match the runner output, and its conclusion is negative/boundary-scoped rather than a broad physical or portability theorem. The potentially loaded wording around the retained center family is acceptable here as runner-defined setup because the audited scope is restricted to the configured finite harness and does not use the retained center-family result as an independent theorem.
+- **auditor confidence:** high
+
+### `causal_propagating_field_live_packet_note_2026-06-05`
+
+- **Note:** [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite replay of scripts/causal_propagating_field.py for drift=0.20, restore=0.70, seeds 0-5, source_layer=8, strengths 1e-5/5e-5/1e-4, and zero/instantaneous/forward/dynamic c=1.0/c=0.5 field cases.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-200838-d0d78f680b-causal_propagating_field_liv`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In this configured center-family runner, finite cone fields produce stable strength-independent proxy ratios, and the archived 0.45 dynamic row is stale.  _(class `C`)_
+- **chain closes:** True — The included primary and helper sources compute the seeded geometry, field masks, propagation amplitudes, detector centroids, and ratios from configured constants rather than printing a preloaded table. An independent reimplementation of the displayed formulas reproduces the runner table to the printed precision within the bounded finite scope.
+- **rationale:** The runner is not a definition substitution or hard-coded numerical match: it constructs the finite families, applies the field definitions, propagates amplitudes, and measures centroid shifts. The cached stdout matches the source note, and an independent formula-level recomputation reproduces the means, standard-error convention, strength scaling, and ratios. The note explicitly excludes physical wave-speed, carrier, retarded-field, geometry-independence, and portability claims, so the audited clean result is only the configured finite replay.
 - **auditor confidence:** high
 
 ### `causal_propagating_field_note`

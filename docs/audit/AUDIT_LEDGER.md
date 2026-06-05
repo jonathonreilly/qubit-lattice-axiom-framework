@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 172 |
+| **retained** | 173 |
 | **retained_no_go** | 180 |
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1304 |
+| unaudited | 1303 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 985 |
+| `audited_clean` | 986 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1588 |
+| `unaudited` | 1587 |
 
 | claim_type | count |
 |---|---:|
@@ -265,6 +265,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -3377,6 +3378,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The estimate (S.14) bounds the excited-eigenstate sum by (lambda_1/M_x)^d ||A_p|| ||B_q|| = exp(-d Delta_x) ||A_p|| ||B_q||, with the finite-temperature bound then following by trace-distance control.  _(class `A`)_
 - **chain closes:** True — Given H1 and H2, the spectral decomposition, Cauchy-Schwarz step, and trace-distance estimate close the stated finite-block bounds. The packet does not construct T_x from the canonical Hamiltonian or prove Delta_x > 0, so no unconditional spatial clustering claim closes.
 - **rationale:** The load-bearing derivation is class A finite-dimensional algebra over an assumed positive Hermitian transfer operator with a nonzero spectral gap. The runner source genuinely samples finite positive Hermitian matrices and checks the stated identities, inequalities, thermal error term, and no-gap counterexample; it does not hard-code a contested physical gap. However, H1 and H2 are explicit open inputs not supplied by a retained one-hop authority, so the canonical-Hamiltonian spatial clustering bridge remains conditional.
+- **auditor confidence:** high
+
+### `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04`
+
+- **Note:** [`CMW_WARD_NORMALIZED_BOGOLIUBOV_BRIDGE_THEOREM_NOTE_2026-06-04.md`](../../docs/CMW_WARD_NORMALIZED_BOGOLIUBOV_BRIDGE_THEOREM_NOTE_2026-06-04.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-volume algebraic bridge under explicit W1-W4 hypotheses from the divergent Z^d lattice IR sum I_d(L) to the bound |m_L|^2 <= beta C_A C_H/(2 c_W^2 I_d(L)) and hence m_L -> 0 when I_d(L) diverges.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-192949-3b1d9ea87a-cmw_ward_normalized_bogoliub`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Averaging the per-momentum Bogoliubov lower bound and using W2 gives C_A >= (2 c_W^2 |m_L|^2/(beta C_H)) I_d(L), hence |m_L|^2 <= beta C_A C_H/(2 c_W^2 I_d(L)).  _(class `A`)_
+- **chain closes:** True — Within the stated W1-W4 hypotheses, W1, W3, and W4 give the per-mode lower bound on the anticommutator, and W2 turns the nonzero-momentum average into the displayed theorem bound. The d=1, d=2, and d>=3 IR threshold is covered by the retained_bounded cited authorities and matches the independent small-k comparison E_k ~ |k|^2.
+- **rationale:** The load-bearing step is a direct algebraic rearrangement of the four explicit finite-volume hypotheses with the stated unnormalized Fourier volume factors. The runner is not merely printing constants: it recomputes the finite lattice sums, checks the d=1 identity, monotonic/log behavior, bound monotonicity, and the symbolic rearrangement. The note explicitly excludes the broader claim that arbitrary continuous-symmetry Hamiltonians satisfy W1-W4, so the missing operator-construction theorem is outside this audited scope rather than a hidden dependency.
 - **auditor confidence:** high
 
 ### `coarse_grained_exterior_law_helper_note_2026-04-14`

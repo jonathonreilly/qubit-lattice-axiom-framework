@@ -1,0 +1,166 @@
+{
+  "claim_id": "causal_propagating_field_note",
+  "note": "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md",
+  "manifest": {
+    "packet_runner": "scripts/causal_propagating_field.py",
+    "helper_source": "scripts/evolving_network_prototype_v6.py",
+    "packet_cache": "logs/runner-cache/causal_propagating_field.txt",
+    "helper_cache": "logs/runner-cache/evolving_network_prototype_v6.txt"
+  },
+  "summary": {
+    "pass": 30,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "manifest_path_exists:packet_runner",
+      "pass": true,
+      "detail": "scripts/causal_propagating_field.py"
+    },
+    {
+      "name": "note_links_manifest_path:packet_runner",
+      "pass": true,
+      "detail": "scripts/causal_propagating_field.py"
+    },
+    {
+      "name": "manifest_path_exists:helper_source",
+      "pass": true,
+      "detail": "scripts/evolving_network_prototype_v6.py"
+    },
+    {
+      "name": "note_links_manifest_path:helper_source",
+      "pass": true,
+      "detail": "scripts/evolving_network_prototype_v6.py"
+    },
+    {
+      "name": "manifest_path_exists:packet_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/causal_propagating_field.txt"
+    },
+    {
+      "name": "note_links_manifest_path:packet_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/causal_propagating_field.txt"
+    },
+    {
+      "name": "manifest_path_exists:helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/evolving_network_prototype_v6.txt"
+    },
+    {
+      "name": "note_links_manifest_path:helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/evolving_network_prototype_v6.txt"
+    },
+    {
+      "name": "note_links_manifest_path:manifest_runner",
+      "pass": true,
+      "detail": "scripts/causal_propagating_field_source_packet_manifest_2026_06_05.py"
+    },
+    {
+      "name": "note_links_manifest_path:manifest_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/causal_propagating_field_source_packet_manifest_2026_06_05.txt"
+    },
+    {
+      "name": "note_links_manifest_path:manifest_json",
+      "pass": true,
+      "detail": "outputs/causal_propagating_field_source_packet_manifest_2026_06_05.json"
+    },
+    {
+      "name": "source_untruncated:packet_runner",
+      "pass": true,
+      "detail": "scripts/causal_propagating_field.py has 12039 bytes"
+    },
+    {
+      "name": "source_marker:packet_runner:from evolving_network_prototype_v6 import build_structured_growth, centroid_y, propagate",
+      "pass": true,
+      "detail": "from evolving_network_prototype_v6 import build_structured_growth, centroid_y, propagate present"
+    },
+    {
+      "name": "source_marker:packet_runner:def _instantaneous_field",
+      "pass": true,
+      "detail": "def _instantaneous_field present"
+    },
+    {
+      "name": "source_marker:packet_runner:def _forward_only_field",
+      "pass": true,
+      "detail": "def _forward_only_field present"
+    },
+    {
+      "name": "source_marker:packet_runner:def _dynamic_field",
+      "pass": true,
+      "detail": "def _dynamic_field present"
+    },
+    {
+      "name": "source_marker:packet_runner:ASSERTIONS:",
+      "pass": true,
+      "detail": "ASSERTIONS: present"
+    },
+    {
+      "name": "source_untruncated:helper_source",
+      "pass": true,
+      "detail": "scripts/evolving_network_prototype_v6.py has 11640 bytes"
+    },
+    {
+      "name": "source_marker:helper_source:def build_structured_growth",
+      "pass": true,
+      "detail": "def build_structured_growth present"
+    },
+    {
+      "name": "source_marker:helper_source:def propagate",
+      "pass": true,
+      "detail": "def propagate present"
+    },
+    {
+      "name": "source_marker:helper_source:def centroid_y",
+      "pass": true,
+      "detail": "def centroid_y present"
+    },
+    {
+      "name": "source_marker:helper_source:class Family",
+      "pass": true,
+      "detail": "class Family present"
+    },
+    {
+      "name": "cache_runner_matches:packet_cache",
+      "pass": true,
+      "detail": "scripts/causal_propagating_field.py == scripts/causal_propagating_field.py"
+    },
+    {
+      "name": "cache_sha_fresh:packet_cache",
+      "pass": true,
+      "detail": "1b776f25ed7192464cb1e60f80ec4865d48565ff0b4f85b50aa489bcea64252b == 1b776f25ed7192464cb1e60f80ec4865d48565ff0b4f85b50aa489bcea64252b"
+    },
+    {
+      "name": "cache_exit_ok:packet_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:packet_cache",
+      "pass": true,
+      "detail": "ASSERTIONS: PASS"
+    },
+    {
+      "name": "cache_runner_matches:helper_cache",
+      "pass": true,
+      "detail": "scripts/evolving_network_prototype_v6.py == scripts/evolving_network_prototype_v6.py"
+    },
+    {
+      "name": "cache_sha_fresh:helper_cache",
+      "pass": true,
+      "detail": "5394010a8162963ce6c88171582c53ccb226a2c524439e6287eae9858bf45c7f == 5394010a8162963ce6c88171582c53ccb226a2c524439e6287eae9858bf45c7f"
+    },
+    {
+      "name": "cache_exit_ok:helper_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:helper_cache",
+      "pass": true,
+      "detail": "EVOLVING NETWORK PROTOTYPE V6"
+    }
+  ]
+}

@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 161 |
+| **retained** | 162 |
 | **retained_no_go** | 173 |
 | **retained_bounded** | 619 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
 | unaudited | 1379 |
-| audit_in_progress | 1 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 23 |
@@ -57,8 +56,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 942 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 943 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
@@ -98,7 +97,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1226 | 62.76 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1226 | 66.76 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1011 | 57.98 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 774 | 56.60 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1166 | 49.19 | `audited_clean` | **retained** |
@@ -131,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -971,6 +969,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -14254,6 +14253,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The load-bearing content is the four finite runner-verified computational gates, with the AdS/CFT, RT, MERA, continuum, and holographic-gravity bridge explicitly excluded as non-load-bearing.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the transfer matrices, tight-binding Hamiltonians, correlation matrices, entropies, SVDs, and fits directly rather than printing constants or importing the contested premise. The cached output matches the source note's rounded quantitative claims, and the note narrows away the unsupported holographic bridge.
 - **rationale:** The surviving claim is bounded to finite sampled computations and the supplied runner genuinely computes the reported quantities from its stated toy lattice definitions. The displayed coefficients and fit qualities in the note match the runner output to the stated rounding: c=1.0855, area-law R^2=0.999613, center chi 8 to 7 at f=20, inverse-coupling R^2=0.6465, and linear R^2=0.9745. There are no cited non-retained authorities, and the note explicitly rejects treating the finite sweep as an RT or holographic derivation.
+- **auditor confidence:** high
+
+### `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
+
+- **Note:** [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For finite periodic lattice blocks, the tensor-factor permutation translation T_a on H_Lambda = tensor_x C^2_x is unitary, obeys the translation group law, covariantly shifts the defined per-site Pauli ladder operators a_x and a_x^dagger, and commutes with Q_total = sum_x a_x^dagger a_x.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-162952-57ca763e66-tensor_product_translation_f`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** After T_a^† moves the content b_{y+a} into factor y, a_x lowers the x factor, and applying T_a moves that lowered factor to x+a, giving T_a a_x T_a^† = a_{x+a}; the adjoint and Q_total identities then follow by adjointing and relabeling the finite periodic sum.  _(class `C`)_
+- **chain closes:** True — The accepted axiom premise supplies the Z^3 translation structure and one-site M_2(C) qubit algebra; the finite tensor product, ladder matrices, and periodic quotient are explicit scoped definitions. Direct basis-state permutation algebra proves T1-T4 without importing external numerics, dynamics, Noether input, or CAR anticommutation.
+- **rationale:** The displayed matrix conventions are internally consistent: sigma_minus lowers |1> to |0>, sigma_plus raises |0> to |1>, and sigma_plus sigma_minus is the local number projector. Independently of the runner, the definition T_a|b>_x = |b_{x-a}>_x makes T_a a basis permutation, gives T_a T_b = T_{a+b}, and moves any local operator at x to x+a under conjugation. The runner source genuinely constructs exact sympy permutation and tensor-product matrices and checks the asserted identities, with no hard-coded measured constants or opaque helper imports.
 - **auditor confidence:** high
 
 ### `tensor_support_center_excess_law_note`

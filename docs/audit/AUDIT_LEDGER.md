@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 621 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1371 |
+| unaudited | 1370 |
 | meta | 284 |
-| ~~audited_numerical_match~~ | 14 |
+| ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 23 |
 | ~~audited_conditional~~ | 35 |
 | ~~audited_failed~~ | 4 |
@@ -62,9 +62,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 35 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 48 |
-| `audited_numerical_match` | 14 |
+| `audited_numerical_match` | 15 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1655 |
+| `unaudited` | 1654 |
 
 | claim_type | count |
 |---|---:|
@@ -1218,6 +1218,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | judicial_review | codex-gpt-5.5 | G | - |
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -12544,6 +12545,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The standard exponential formula for set partitions says that the generating function for connected components is the logarithm: K[J] = log M[J].  _(class `A`)_
 - **chain closes:** True — The Mobius cumulant formula, the log moment-generating function identity, the n=3 cumulant formula, independence cancellation, and the p-scale two-point normalization all close algebraically. The downstream physical identification of the scalar P-cal response with connected source response is explicitly outside this scoped theorem.
 - **rationale:** The load-bearing step is a standard algebraic Mobius/exponential-formula identity, not a numerical fit, external comparator, or symbol renaming. The runner source materially computes the partition-lattice n=3 Mobius formula, verifies independence cancellation, differentiates log moment generators, and checks the p-scale normalization; it does not import a contested constant or hidden comparator. The displayed closed-form formulas in the packet are consistent under the note's finite-record cumulant conventions. The clean verdict applies only to the bounded exact-support theorem, not to unbounded retained Y_T closure or the physical connected-response identification.
+- **auditor confidence:** high
+
+### `source_resolved_exact_green_pocket_note`
+
+- **Note:** [`SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded numerical observation for the declared small exact-lattice family, source cluster, source-strength ladder, Green-kernel parameters, and calibrated gain, with no size-transfer, continuum, or field-theoretic derivation claim.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-170016-176265350b-source_resolved_exact_green_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the declared h=0.5, W=3, L=20 exact lattice with the runner-selected Green-like kernel and calibrated gain, the runner computes zero-source reduction, 4/4 TOWARD sign, green F~M exponent 1.00, and mean |green/inst| ratio 1.235 within hard-bar thresholds.  _(class `G`)_
+- **chain closes:** False — The runner computes the stated table and hard-bar checks from included code, but the Green-kernel form, eps/mu parameters, boundary-clipped source cluster, and amplitude gain are explicitly runner-selected modeling inputs rather than derived from retained framework primitives. The one-hop foundational authority is retained_bounded, so the chain closes only as a tuned bounded numerical pocket, not as a retained theorem-grade derivation.
+- **rationale:** The primary and helper runner sources are present, and the primary runner genuinely constructs the small lattice, Green-like field, propagation calls, centroid readouts, fit, ratios, and hard-bar assertions rather than merely printing constants. However, the load-bearing result depends on a hand-selected kernel and an explicit calibration gain fixed to FIELD_TARGET_MAX/max|f_ref| on the chosen family, so the positive observation is at a tuned input scale. The source note also discloses that these modeling inputs are not derived from the repo baseline, preventing audited_clean closure.
+- **open / conditional deps cited:**
+  - `MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md`
 - **auditor confidence:** high
 
 ### `source_resolved_exact_green_scaling_note`

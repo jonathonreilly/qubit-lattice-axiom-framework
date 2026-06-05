@@ -3,7 +3,7 @@
     "critical": 271,
     "high": 281,
     "leaf": 414,
-    "medium": 332
+    "medium": 331
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16696,30 +16696,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.307,
-      "note_path": "docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_source_measure_sharp_record_tangent_space.py",
-      "transitive_descendants": 6
     },
     {
       "audit_independence_required": "any_non_self",
@@ -39024,6 +39000,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 90,
-  "total_pending": 1298
+  "ready_count": 89,
+  "total_pending": 1297
 }

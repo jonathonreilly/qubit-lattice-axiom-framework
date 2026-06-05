@@ -29,3 +29,5 @@ git diff --check
 This PR does not edit `docs/audit/**`, does not restore the archived `0.45`
 dynamic-ratio claim, and does not assign an effective audit status. It queues
 a live bounded packet for review.
+
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2666

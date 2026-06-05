@@ -1,0 +1,52 @@
+loop_slug: record-dynamics-classifier-20260605
+date: 2026-06-05
+branch: physics-loop/record-dynamics-classifier-20260605
+goal: |
+  Reframe the post-Record dynamics push as record-function stability and
+  admissibility classification on the exact generation dial, with Koide
+  treated as a stable setting under named dynamics classes rather than as a
+  universally forced endpoint.
+target_status: bounded_theorem
+runtime_used: single-turn
+cycles_completed: 1
+active_route: D (dial-coordinate stability classifier)
+hard_residual_attacked: |
+  The old charged-lepton dynamics target tried to force r=1/2. The corrected
+  target is to show which dynamics classes stabilize s=0/r=1/2 on the exact
+  dial and which classes stabilize other settings or repel it.
+files_touched:
+  - docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md
+  - docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md
+  - docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md
+  - scripts/record_function_finite_sector_algebra_2026_06_05.py
+  - scripts/generation_dial_local_stability_grammar_2026_06_05.py
+  - scripts/generation_dial_dynamics_stability_classifier_2026_06_05.py
+  - logs/runner-cache/record_function_finite_sector_algebra_2026_06_05.txt
+  - logs/runner-cache/generation_dial_local_stability_grammar_2026_06_05.txt
+  - logs/runner-cache/generation_dial_dynamics_stability_classifier_2026_06_05.txt
+  - .claude/science/physics-loops/record-dynamics-classifier-20260605/*
+open_imports:
+  - two-sector generation readout context
+  - exact generation dial r(s)=2^(s-1)
+  - supplied dynamics classes/maps for stability classification
+no_go_routes:
+  - Record alone forces probability/dynamics/value selection
+  - Lueders sharpening stabilizes s=0
+  - heat-kernel transit is an attractor at s=0
+runner_result: record_algebra PASS=18 FAIL=0; stability_grammar PASS=13 FAIL=0; dynamics_classifier PASS=26 FAIL=0
+review_findings: self-review clean; independent audit required
+pr_status: not_opened
+next_exact_action: |
+  Audit the three bounded scaffold rows, then target the remaining physical
+  partition/arrow gate.
+stop_condition: |
+  Classifier note and runner landed with PASS=26/0; physical value selection
+  remains bounded until a native arrow/partition gate is proven.
+status_fields:
+  actual_current_surface_status: open
+  target_claim_type: bounded_theorem
+  conditional_surface_status: bounded-support
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

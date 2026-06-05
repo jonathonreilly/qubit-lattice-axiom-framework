@@ -7,8 +7,8 @@ Companion to:
   docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md
 
 PARENT CONTEXT:
-  The strong-CP theta-zero parent row is audited_conditional with many
-  descendants. The audit verdict identified that the two load-bearing pieces
+  The strong-CP theta-zero parent row has a conditional parent verdict with
+  many descendants. The audit verdict identified that the two load-bearing pieces
   (no admissible CP-odd slot, real positive quark-mass orientation) were taken
   as action-class definitions rather than derivations. This runner is support
   for that route, not a load-bearing dependency on the parent row.
@@ -33,7 +33,7 @@ WHAT THIS RUNNER DOES:
   V5 — Mass orientation: Hermiticity-spectral selection
   V6 — Mass orientation: reflection-positivity precondition
   V7 — CP-odd single-plaquette slot explicit construction + rejection
-  V8 — Composition with Leg A retained primitive
+  V8 — Composition with Leg A determinant input
 
   PASS = 8, FAIL = 0 expected.
 
@@ -46,7 +46,7 @@ WHAT THIS RUNNER DOES:
 
 ANTI-OVERCLAIM:
   - Does NOT claim dynamical theta-selection in non-canonical-normalization.
-  - Does NOT claim axion-model exclusion beyond the retained surface.
+  - Does NOT claim axion-model exclusion beyond the selected surface.
   - Operator-theoretic content is bounded to the supplied single-plaquette
     Wilson / real-positive-measure surface; no black-box
     Vafa-Witten / Leutwyler-Smilga / Osterwalder-Schrader citations as proof
@@ -57,9 +57,11 @@ from __future__ import annotations
 
 import sys
 import time
+import warnings
 import numpy as np
 
 np.set_printoptions(precision=8, linewidth=140, suppress=False)
+warnings.filterwarnings("ignore", category=RuntimeWarning, message=".*det")
 
 
 # ---------------------------------------------------------------------------
@@ -648,7 +650,7 @@ def test_V5_mass_orientation_two_constraints():
 
     # (C-class) — scalar/pseudoscalar decomposition of each candidate via
     #   M = M_S * I + M_P * eps,   M_S = (1/N) Tr M,   M_P = (1/N) Tr(M eps)
-    # On the retained scalar-mass action class, M_P = 0 required.
+    # On the scalar-mass action class, M_P = 0 required.
     eps_mat = epsilon_matrix_4d(L_s, L_t)
     N = eps_mat.shape[0]
     I = np.eye(N, dtype=complex)
@@ -800,8 +802,9 @@ def test_V7_forbidden_slot_construction_rejection():
     N_cfgs = 5
 
     # Construct the bounded CP-odd single-plaquette candidate
-    # S_theta = -theta * sum_P Im Tr U_P.
-    # Then form the complex Boltzmann factor BF = exp(-S_W) * exp(-i theta Q_lat[U])
+    # Q_lat = sum_P Im Tr U_P and S_theta = i*theta*Q_lat.
+    # Then form the complex Boltzmann factor BF = exp(-S_W - S_theta)
+    # = exp(-S_W) * exp(-i theta Q_lat[U]).
     # Show BF.imag != 0 for theta != 0.
 
     rejected_count = 0
@@ -823,7 +826,7 @@ def test_V7_forbidden_slot_construction_rejection():
 
     max_rel_im = max(bf_im_samples)
     check(
-        "V7.1  CP-odd single-plaquette slot S_theta = -theta * sum_P Im Tr U_P generates complex Boltzmann factor",
+        "V7.1  CP-odd single-plaquette slot S_theta = i theta sum_P Im Tr U_P generates complex Boltzmann factor",
         rejected_count == N_cfgs,
         f"{rejected_count}/{N_cfgs} configs show |Im BF|/|BF| > 1e-12 (max rel Im = {max_rel_im:.4e})",
     )
@@ -868,12 +871,16 @@ def test_V8_composition_with_legA():
     L_s, L_t = 2, 2
     N_cfgs = 30
     m = 1.0
+    m_u = 1.0
+    m_d = 0.72
     alpha = np.pi / 4
 
     legA_realpos_count = 0
     complex_mass_fail_count = 0
+    two_flavor_mass_phase_count = 0
     legA_phases = []
     complex_phases = []
+    two_flavor_phases = []
 
     for cfg in range(N_cfgs):
         U = random_gauge_config_4d(L_s, L_t, rng)
@@ -881,7 +888,7 @@ def test_V8_composition_with_legA():
         N = D.shape[0]
         I = np.eye(N, dtype=complex)
 
-        # (i) Leg A retained behavior: det(D + m I) > 0 real-positive.
+        # (i) Leg A determinant behavior: det(D + m I) > 0 real-positive.
         det_real = np.linalg.det(D + m * I)
         legA_phases.append(abs(np.angle(det_real)))
         if abs(np.angle(det_real)) < 1e-9 and det_real.real > 0:
@@ -894,8 +901,19 @@ def test_V8_composition_with_legA():
         if abs(np.angle(det_complex)) > 0.01:
             complex_mass_fail_count += 1
 
+        # Correct two-flavor mass-orientation object:
+        # arg[det(D + m_u I) det(D + m_d I)], not a free-standing
+        # arg det(M_u M_d) shorthand unless that shorthand is explicitly
+        # defined as this product of Dirac determinants.
+        det_u = np.linalg.det(D + m_u * I)
+        det_d = np.linalg.det(D + m_d * I)
+        det_ud = det_u * det_d
+        two_flavor_phases.append(abs(np.angle(det_ud)))
+        if abs(np.angle(det_ud)) < 1e-9 and det_ud.real > 0:
+            two_flavor_mass_phase_count += 1
+
     check(
-        "V8.1  Leg A retained primitive: det(D + m I) > 0 real-positive on all sampled configs",
+        "V8.1  Leg A determinant input: det(D + m I) > 0 real-positive on all sampled configs",
         legA_realpos_count == N_cfgs,
         f"{legA_realpos_count}/{N_cfgs} configs pass.  max|phase| = {max(legA_phases):.2e}",
     )
@@ -904,11 +922,16 @@ def test_V8_composition_with_legA():
         complex_mass_fail_count == N_cfgs,
         f"{complex_mass_fail_count}/{N_cfgs} configs reject.  max|phase| = {max(complex_phases):.4f}",
     )
+    check(
+        "V8.3  Two-flavor mass orientation: arg[det(D+m_u I) det(D+m_d I)] = 0 on real scalar masses",
+        two_flavor_mass_phase_count == N_cfgs,
+        f"{two_flavor_mass_phase_count}/{N_cfgs} configs pass.  max|phase| = {max(two_flavor_phases):.2e}",
+    )
 
     check(
         "V8   Composition Theorem 3.4 + Leg A: real-mass is admissible; complex-mass (alpha=pi/4) is excluded",
-        legA_realpos_count == N_cfgs and complex_mass_fail_count == N_cfgs,
-        "Leg A retained primitive holds AND M-complex (alpha=pi/4) is rejected on all 30 SU(3) configs",
+        legA_realpos_count == N_cfgs and complex_mass_fail_count == N_cfgs and two_flavor_mass_phase_count == N_cfgs,
+        "Leg A determinant input holds, M-complex is rejected, and the two-flavor determinant-product phase is zero",
     )
 
 

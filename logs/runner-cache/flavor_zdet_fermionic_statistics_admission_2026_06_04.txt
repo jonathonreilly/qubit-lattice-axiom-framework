@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py
+runner_sha256: b213a39fa933f566f443def77ae72faea60f1e2f2d3234bce0df75d8804e8fd7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 [PASS] Berezin finite Gaussian gives det(M) once Grassmann variables are supplied
        berezin=4.971000; det=4.971000
 [PASS] ordinary cross-site qubit ladders commute
@@ -12,3 +20,6 @@ SCORECARD PASS=6 FAIL=0
 FINDING: the determinant-amplitude gate localizes to FS, an owner-approved cross-site fermionic-statistics admission.
 The three baseline axioms do not force FS in these finite checks; approved axioms and primitives are dependency premises, not grade sources.
 Koide generation chirality remains a separate internal-factor residual.
+
+----- stderr -----
+

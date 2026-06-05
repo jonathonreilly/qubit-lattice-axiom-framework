@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 163 |
 | **retained_no_go** | 174 |
-| **retained_bounded** | 625 |
+| **retained_bounded** | 626 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1359 |
+| unaudited | 1358 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 951 |
+| `audited_clean` | 952 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1643 |
+| `unaudited` | 1642 |
 
 | claim_type | count |
 |---|---:|
@@ -787,6 +787,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_mechanism_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -11510,6 +11511,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The det=+1 elements of the S_3 permutation representation are exactly A_3 = C_3 = {id, (012), (021)}, while the transpositions have det=-1.  _(class `A`)_
 - **chain closes:** True — The determinant signs, subgroup closure, and generic degeneracy lift are standard finite-group and linear-algebra facts and are directly checked by the runner. The physical bridge from the framework's positivity principle to this orientation criterion is explicitly excluded from the audited claim.
 - **rationale:** The runner genuinely computes permutation matrices, restricted E-block determinants, subgroup closure, and a C_3-averaged Hermitian example rather than merely printing constants. The audited claim is conditional and bounded: it proves selection by an admitted determinant-orientation criterion, not that the framework's positivity principle supplies that criterion. Within that stated scope, the chain closes by algebraic identity checks and contains no external numerical comparator, fitted input, or hidden upstream authority.
+- **auditor confidence:** high
+
+### `pre_record_reference_state_tracial_derivation_note_2026-05-20`
+
+- **Note:** [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Unique tracial-state characterization for the quasi-local one-qubit M_2(C) algebra on the Z^3 lattice with finite-region restrictions rho_Lambda = I/2^|Lambda|; the pre-record reference-state identification is excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-172648-f7b6e79cc0-pre_record_reference_state_t`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The UHF C*-algebra of type 2^infty admits a unique tracial state, obtained as the inductive limit of the finite normalized traces.  _(class `A`)_
+- **chain closes:** True — Each finite local algebra is a full matrix algebra and hence has the unique normalized trace; any tracial state on the quasi-local UHF algebra restricts to those finite traces and is therefore fixed on the dense local union. The maximum-entropy and inner-automorphism characterizations agree with that finite-region normalized trace, while Step 5 is explicitly non-load-bearing.
+- **rationale:** The runner source performs genuine finite-region matrix, Pauli-basis, unitary-invariance, and entropy checks rather than merely printing constants, though it correctly leaves the infinite UHF uniqueness theorem as a named standard-math import. Independently of the runner, uniqueness follows by restriction of any tracial state to every finite full matrix subalgebra and density of the local union. The only cited framework authority is flagged as an accepted axiom premise, so the rubric carve-out prevents an automatic dependency downgrade. The demoted pre-record identification remains open but is outside the audited claim scope.
 - **auditor confidence:** high
 
 ### `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality`

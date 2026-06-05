@@ -1,0 +1,109 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_signed_gravity_tensor_source_transport_retention_dep_resolution_2026_06_04.py
+runner_sha256: 276a6f382e94484d7daf63acba916c7735e5ef9eb77ff8ec0f8cc662e92660f1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 18.25
+status: ok
+----- stdout -----
+========================================================================
+Signed Gravity Tensor-Source Transport Retention
+Dep-Resolution Hygiene Companion Runner (2026-06-04)
+========================================================================
+
+Repo root: /private/tmp/cl3-review-open-20260604
+Parent note: /private/tmp/cl3-review-open-20260604/docs/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md
+Parent runner: /private/tmp/cl3-review-open-20260604/scripts/signed_gravity_tensor_source_transport_retention.py
+Dep runner: /private/tmp/cl3-review-open-20260604/scripts/frontier_tensor_source_map_eta.py
+Companion source note: docs/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing substantive content does
+      not load-bear on the *audit grade* of its dep
+      `tensor_source_map_eta_note` (which was downgraded from
+      retained_bounded to unaudited).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no audit-status content asserted.
+
+========================================================================
+BLOCK 1: Re-execute parent runner on current head; expect PASS=6 FAIL=0
+========================================================================
+  PASS parent_runner_exit_zero :: returncode=0
+  PASS parent_runner_emits_expected_final_tag :: FINAL_TAG present in stdout: True
+  PASS parent_runner_summary_six_pass_zero_fail :: looking for 'SUMMARY: PASS=6 FAIL=0' in stdout
+  PASS parent_runner_no_stderr_errors :: stderr length=0
+
+========================================================================
+BLOCK 2: Re-verify rank-2 carrier on both restricted classes directly
+========================================================================
+  PASS dep_runner_importable :: imported scripts.frontier_tensor_source_map_eta.{response_matrix, tm}
+  PASS carrier_rank_two_O_h :: det=1.629e-04 min_sv=4.440e-03
+  PASS carrier_scalar_blind_O_h :: scalar_blind=True
+  PASS carrier_mixed_additive_O_h :: mixed_add_ti=3.1e-08 mixed_add_tf=8.0e-18
+  PASS carrier_nonscalar_block_O_h :: eta[0,0]=4.442e-03 eta[1,1]=3.667e-02
+  PASS carrier_rank_two_finite_rank :: det=2.014e-04 min_sv=4.049e-03
+  PASS carrier_scalar_blind_finite_rank :: scalar_blind=True
+  PASS carrier_mixed_additive_finite_rank :: mixed_add_ti=6.9e-08 mixed_add_tf=6.2e-11
+  PASS carrier_nonscalar_block_finite_rank :: eta[0,0]=4.049e-03 eta[1,1]=4.973e-02
+
+========================================================================
+BLOCK 3: Parent runner contains zero audit-status references
+========================================================================
+  PASS parent_runner_no_token_audit_status :: 'audit_status' absent from parent runner source
+  PASS parent_runner_no_token_effective_status :: 'effective_status' absent from parent runner source
+  PASS parent_runner_no_token_intrinsic_status :: 'intrinsic_status' absent from parent runner source
+  PASS parent_runner_no_token_retained_bounded :: 'retained_bounded' absent from parent runner source
+  PASS parent_runner_no_token_audited_clean :: 'audited_clean' absent from parent runner source
+  PASS parent_runner_no_token_audited_conditional :: 'audited_conditional' absent from parent runner source
+  PASS parent_runner_no_token_retained_no_go :: 'retained_no_go' absent from parent runner source
+  PASS parent_runner_no_token_audit_ledger :: 'audit_ledger' absent from parent runner source
+  PASS parent_runner_no_token_audit_grade :: 'audit_grade' absent from parent runner source
+
+========================================================================
+BLOCK 4: Parent note contains no claim of dep-grade dependency
+========================================================================
+  PASS parent_note_no_phrase_load_bears_on_the_dep_s_audit :: 'load-bears on the dep's audit' absent from parent note
+  PASS parent_note_no_phrase_depends_on_the_dep_s_audit_grade :: 'depends on the dep's audit grade' absent from parent note
+  PASS parent_note_no_phrase_requires_the_dep_to_be_retained :: 'requires the dep to be retained' absent from parent note
+  PASS parent_note_no_phrase_requires_retained_bounded :: 'requires retained_bounded' absent from parent note
+  PASS parent_note_no_phrase_requires_audited_clean :: 'requires audited_clean' absent from parent note
+  PASS parent_note_load_bearing_step_present :: parent note mentions 'locally constant' (structural step)
+
+========================================================================
+BLOCK 5: Counterfactual re-execution without dep-grade consultation
+========================================================================
+  PASS counterfactual_runner_exit_zero :: returncode=0
+  PASS counterfactual_runner_final_tag_unchanged :: FINAL_TAG identical to Block 1 (substance-unchanged)
+  PASS counterfactual_runner_six_pass_zero_fail :: PASS count unchanged from Block 1
+
+========================================================================
+BLOCK 6: Locally-constant orientation line: chi commutes with linear transport
+========================================================================
+  PASS scalar_commutes_with_linear_transport :: max_resid=0.0e+00 (chi*R = R*chi on a locally-constant sign)
+  PASS scalar_commutes_with_projective_pushforward :: max_resid_proj=0.0e+00 (chi*P = P*chi)
+
+========================================================================
+BLOCK 7: Nonlinear-gate calibration consistency (independent self-check)
+========================================================================
+  PASS linear_operator_is_odd :: ||K(-h) + K(h)||=0.0e+00
+  PASS quadratic_backreaction_is_even :: ||Q(h,h) - Q(-h,-h)||=0.0e+00
+  PASS nonlinear_even_jet_calibration :: E(-h) + E(h) = 2 alpha Q(h,h) within tol
+
+========================================================================
+BLOCK 8: No-claim gate preservation across re-runs
+========================================================================
+  PASS no_claim_phrase_negative_inertial_mass_false :: 'negative_inertial_mass=False' present in parent runner stdout
+  PASS no_claim_phrase_shielding_false :: 'shielding=False' present in parent runner stdout
+  PASS no_claim_phrase_propulsion_false :: 'propulsion=False' present in parent runner stdout
+  PASS no_claim_phrase_reactionless_force_false :: 'reactionless_force=False' present in parent runner stdout
+  PASS no_claim_phrase_physical_signed_gravity_prediction_false :: 'physical_signed_gravity_prediction=False' present in parent runner stdout
+  PASS companion_disclaims_status_promotion :: companion explicitly disclaims status promotion
+  PASS companion_metadata_declares_meta :: companion metadata declares Type: meta
+
+========================================================================
+SUMMARY: PASS=43 FAIL=0
+========================================================================
+FINAL_TAG: SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_DEP_RESOLUTION_HYGIENE_OK
+
+----- stderr -----
+

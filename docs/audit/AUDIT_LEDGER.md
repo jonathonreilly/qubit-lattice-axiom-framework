@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 177 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 669 |
+| **retained_bounded** | 670 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 34 |
-| unaudited | 1238 |
+| unaudited | 1237 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1032 |
+| `audited_clean` | 1033 |
 | `audited_conditional` | 78 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1522 |
+| `unaudited` | 1521 |
 
 | claim_type | count |
 |---|---:|
@@ -649,6 +649,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_three_measures_three_observables_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_transport_gap_constant_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_y_l1_ratios_wilson_integer_diff_note_2026-05-08_probey_l1_ratios` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
 | `koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9879,6 +9880,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For real eigenvalues, Q(V) = (3a²+6|b|²)/(Σ|λ_k|)² and Σ|λ_k| ≥ Σλ_k = 3a, with equality exactly when no eigenvalue is negative; at r=1/2 this makes Q(S)=2/3 while Q(V) varies with θ once a sign flip occurs.  _(class `A`)_
 - **chain closes:** True — The displayed identities follow from the C3 root-of-unity/trigonometric sums, real-spectrum numerator equality |λ_k|²=λ_k², and the triangle inequality for the denominator. The r=1/2 specialization is explicitly a hypothesis, and the exact sample angles independently establish nonconstancy of Q(V).
 - **rationale:** The claim is a genuine algebraic closure over the restricted packet with no load-bearing cited authority or external comparator. Independent formula checking confirms the factors 3a, 3a²+6|b|², Q(S)=(1+2r)/3, the r=1/2 value 2/3, the closed equality window including θ=π/12, and the one-negative denominator 3a−2λ_min. The runner source actually computes the symbolic identities and exact samples rather than merely printing constants, and its PASS=30/FAIL=0 is consistent with the note.
+- **auditor confidence:** high
+
+### `koide_three_measures_three_observables_note_2026-05-31`
+
+- **Note:** [`KOIDE_THREE_MEASURES_THREE_OBSERVABLES_NOTE_2026-05-31.md`](../../docs/KOIDE_THREE_MEASURES_THREE_OBSERVABLES_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite C3 algebraic readout table Q=(1+2r)/3 with r*=nu/(2mu), plus the finite spectral-asymmetry identity L_3(1,2)=2/9=(3-1)/3^2; no charged-lepton selector or physical source for r=1/2 was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-235249-8ad15af16b-koide_three_measures_three_o`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite C3 bookkeeping separates count-once block readout Q=2/3 at r=1/2 from count-twice dimension readouts Q=1 and L_3(1,2)=2/9.  _(class `A`)_
+- **chain closes:** True — The Q table follows by direct substitution of r*=nu/(2mu) into Q=(1+2r)/3 for (1,0), (1,1), and (1,2). Independently, with omega^3=1 and 1+omega+omega^2=0, (omega-1)(omega^2-1)=3, so L_3(1,2)=(1/3)(1/3+1/3)=2/9.
+- **rationale:** The load-bearing content is finite algebraic bookkeeping over retained-grade cited inputs, not a first-principles framework derivation. The runner source computes the displayed Q table and L_3(1,2) formula rather than importing external comparators, and the independent manual check confirms the factors and normalizations. The note explicitly preserves the open selector/source problem for r=1/2, so the audited claim does not overreach into charged-lepton phenomenology.
 - **auditor confidence:** high
 
 ### `koide_tracial_standard_form_carrier_narrow_note_2026-06-02`

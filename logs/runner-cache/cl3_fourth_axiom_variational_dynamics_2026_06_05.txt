@@ -1,0 +1,66 @@
+====================================================================================================
+FOURTH-AXIOM VARIATIONAL-DYNAMICS SCOPING -- does a ground-state dynamics select the generation moduli r?
+====================================================================================================
+[PASS] C0 retained backbone: Var(sqrt m)/mean^2 = 2 r exactly, and Q = sum lam^2/(sum lam)^2 = 1/3+(2/3)r; Q(1/2)=2/3
+       Var/mean^2=1.000000=2r=1.000000; Q_direct=0.666667=Q(r)=0.666667; Q(1/2)=0.666667
+
+--- OBSERVED moduli recovered from PDG sqrt-mass ratios (ANCHOR-ONLY, never a minimization input) ---
+    r_lep  (e,mu,tau) = 0.5000   -> Q = 0.6667   (expect ~0.500 / Q~2/3)
+    r_down (d,s,b)    = 0.5971   -> Q = 0.7314
+    r_up   (u,c,t)    = 0.7734   -> Q = 0.8489
+[PASS] C1 observed moduli are GENERIC: r_lep~1/2 (special) but r_down~0.60, r_up~0.77 are NON-special (strictly between 1/2 and 1, away from every special point)
+       r_lep=0.5000 (~1/2), r_down=0.5971, r_up=0.7734 -- the quarks sit at GENERIC interior points; min distance to {0,1/2,1}: down=0.097, up=0.227
+[PASS] C2 single-trace Tr H^2 (at fixed a) is MONOTONE in r -> minimizer at the boundary r=0 (special, degenerate)
+       argmin r=0.0001; E=3+6r is monotone increasing -> r=0 [1,1,1] democratic endpoint. WRONG-VALUES.
+[PASS] C3 single-trace Tr H^4 at FIXED Tr H^2: extremizer lands on a SPECIAL point, NOT on the generic quark values
+       argmin r=0.0001, argmax r=1.0000 -> special. Single-trace invariants cannot reach r_up~0.77 or r_down~0.60.
+[PASS] C4 entropy functionals land on SPECIAL points only: 2-sector entropy MAX at r=1/2, spectral entropy MAX at r=0
+       2-sector argmax r=0.5000 (=1/2), spectral argmax r=0.0001 (=0). Neither reaches the quark moduli.
+[PASS] C5 BAR-1: even a 2-coupling single-trace MIX (c3 Tr H^3 + c4 Tr H^4) has its minima CLUSTER on the special points; it does NOT freely reach the generic quark moduli
+       distinct minimizers over the (c3,c4) scan: [np.float64(0.0), np.float64(1.0), np.float64(3.0)]; near r_up=False, near r_down=False. Single-trace dynamics is special-point-locked even with 2 knobs.
+[PASS] C6 BAR-2 (relocation): a quadratic target potential E=(Tr H^2 - tau)^2 has min at r*=(tau-3)/6 -- the minimizer is dialed by the single coupling tau, so it reaches ANY r (incl. generic quark r) by FITTING tau to the modulus. 1 coupling in -> 1 modulus out: RELOCATES, never reduces.
+       (r_goal -> tau -> r*): [(np.float64(0.597), np.float64(6.58), np.float64(0.597)), (np.float64(0.773), np.float64(7.64), np.float64(0.773)), (0.5, 6.0, np.float64(0.5)), (1.0, 9.0, np.float64(1.0))]; every generic r reachable by choosing tau. Couplings re-encode the moduli.
+[PASS] C7 BAR-2 (relocation): the nearest-neighbour qubit-ring Hamiltonian's ground state gives r = J^2/h^2 -- the modulus IS the (free) coupling ratio; the ground-state energy does not pin J/h
+       r(J/h): ['0.250', '0.500', '0.774', '0.770'] for J/h in ['0.500', '0.707', '0.880', '0.877'] -- r is dialed by J/h. RELOCATES.
+    single-trace Tr H^n at fixed Tr H^2, untuned -> (argmin r, argmax r) [E-spread over grid]:
+        n=1: argmin=3.0000, argmax=0.0001   [spread=1.87e+00]
+        n=2: argmin=1.1073, argmax=0.3821   [spread=3.11e-15]  <-- CONSTANT (degenerate, excluded)
+        n=3: argmin=0.0001, argmax=1.0000   [spread=2.20e+00]
+        n=4: argmin=0.0001, argmax=1.0000   [spread=6.00e+00]
+        n=5: argmin=0.0001, argmax=1.0000   [spread=1.26e+01]
+        n=6: argmin=0.0001, argmax=1.0000   [spread=2.40e+01]
+[PASS] C8 BAR-1: every NON-degenerate single-trace shape invariant Tr H^n (n=3..6) extremizes at a boundary/special point (r in {0,1/2,1}); NONE of n=1..6 lands at the generic quark moduli
+       confirms (from the variational side) the audit finding: the framework's natural single-trace functionals reach ENDPOINTS / special points, never the continuous generic modulus. WRONG-VALUES for quarks.
+
+--- PARAMETER LEDGER (BAR-2: parameters-in vs moduli-out) ---
+    [0 free param] single-trace Tr H^2 / Tr H^n (untuned)                  -> special point only   WRONG-VALUES
+    [2 free param] single-trace mix c3 Tr H^3 + c4 Tr H^4                  -> any r (per sector)   RELOCATES (2 in / 1 out)
+    [3 free param] Landau-Ginzburg alpha(Tr H^2)^2+beta Tr H^4+gamma Tr H^2 -> any r (per sector)   RELOCATES
+    [2 free param] nearest-neighbour qubit ring (J hopping, h on-site)     -> r=J^2/h^2            RELOCATES (ratio = modulus)
+    [0 free param] 2-sector / spectral entropy                             -> r in {0,1/2}         WRONG-VALUES for quarks
+    moduli to explain (4 sectors): 4
+[PASS] C9 BAR-2: no candidate functional has STRICTLY FEWER free parameters than moduli explained while reproducing generic values; parameter-free functionals give special points; generic-capable ones relocate
+       0-param functionals -> special points (falsified by quarks); generic-reaching functionals carry >=1 coupling per modulus -> relocation, not derivation.
+
+====================================================================================================
+VERDICT (per the two honesty bars):
+  BAR-1 (generic values): FAILED by all PARAMETER-FREE / minimal functionals -- their minima land on
+    the special points r in {0, 1/2, 1} (Tr H^2 -> 0; sector entropy -> 1/2; spectral entropy -> 0;
+    single-trace Tr H^n -> special). The GENERIC quark moduli r_up~0.77, r_down~0.60 are NEVER an
+    untuned minimum. => the minimal/parameter-free dynamics is WRONG-VALUES (falsified by quarks).
+  BAR-2 (relocation): any functional flexible enough to reach the generic moduli (LG quartic; qubit-ring
+    ground state; 2-coupling single-trace mix) carries >=1 free coupling per modulus; the minimizer is a
+    smooth function of the coupling ratio, so the flavor input merely RELOCATES from r to the couplings
+    (parameters-in >= values-out). No candidate reduces the parameter count.
+  ==> OVERALL VERDICT: PARTIAL, leaning RELOCATES/WRONG-VALUES.
+      * For r_lep=1/2 ONLY: the (parameter-free) 2-sector balance/entropy functional has a genuine
+        stationary point at r=1/2 -- a real PARTIAL success for the charged-lepton lane (matches the
+        existing retained 'r=1/2 stationary point' result), but it is a SPECIAL point, so it cannot
+        explain the quarks and is not by itself a derivation of the lepton value either (det_C vs det_R
+        sector-vs-DOF measure choice still floats, per the chain-of-custody note).
+      * For the GENERIC sectors (quarks, nu): no minimal dynamics tested DERIVES r. Minimal => special
+        (WRONG-VALUES); generic-capable => coupling-encoded (RELOCATES).
+====================================================================================================
+
+SCORECARD: 10/10 PASS
+ALL CHECKS PASS

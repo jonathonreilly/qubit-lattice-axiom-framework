@@ -1,47 +1,7 @@
 {
-  "cycle_count": 1,
-  "cycles": [
-    {
-      "cycle_id": "cycle-0001",
-      "decision": null,
-      "edges": [
-        {
-          "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
-          "to": "admitted_input_registry_tier_a_note_2026-05-23"
-        },
-        {
-          "from": "admitted_input_registry_tier_a_note_2026-05-23",
-          "to": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 26,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
-          "title": "Charged-Lepton Koide Value \u2014 Full Chain of Custody (framework baseline -> Q=2/3): structure derived; value modulo one Tier-A admitted input",
-          "transitive_descendants": 26
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "admitted_input_registry_tier_a_note_2026-05-23",
-          "claim_type": "meta",
-          "effective_status": "meta",
-          "note_path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
-          "title": "Admitted-Input Registry \u2014 Tier A (Central Index of Named Non-Axiom Admissions)",
-          "transitive_descendants": 26
-        }
-      ],
-      "requires_lemma_extraction": false
-    }
-  ],
-  "length_counts": {
-    "2": 1
-  },
+  "cycle_count": 0,
+  "cycles": [],
+  "length_counts": {},
   "sort": [
     "max_transitive_descendants descending",
     "length ascending",

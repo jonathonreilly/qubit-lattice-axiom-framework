@@ -771,9 +771,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -787,7 +787,8 @@
       "deps": [
         "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
         "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
-        "strong_cp_theta_zero_note"
+        "strong_cp_theta_zero_note",
+        "minimal_axioms"
       ],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",

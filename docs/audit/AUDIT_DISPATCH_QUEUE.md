@@ -21,7 +21,7 @@ Source sidecars:
 
 | # | ready | group | claim_id | current | source note | audit question | ready_blocker |
 |---:|:---:|---|---|---|---|---|---|
-| 1 |  | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? | blocked_by_dependency:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:unaudited,lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:audited_conditional |
+| 1 |  | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? | blocked_by_dependency:lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:audited_conditional |
 
 ## Resolved By Post-Manifest Re-Audit
 

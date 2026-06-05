@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/flavor_kreal_instrument_two_letter_phase_orthogonal_2026_06_02.py
+runner_sha256: f1657b2f18667fdf9a8ce3d80a6c990aa637e5cf6b8ef08f216502de799fb4ef
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 [PASS] S=C+C^2 is K-even Hermitian with spectrum {2,-1,-1}
        spec(S)=[-1. -1.  2.]
 [PASS] J=i(C-C^2) is K-odd Hermitian with spectrum {-sqrt3,0,sqrt3}
@@ -12,3 +20,6 @@
 SCORECARD PASS=7 FAIL=0
 FINDING: under a K-real instrument, the record alphabet is the K-even two-sector split while the Brannen phase lies in the K-odd channel.
 The remaining value question is the measure on that two-sector record.
+
+----- stderr -----
+

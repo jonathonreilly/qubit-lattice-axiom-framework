@@ -1,0 +1,104 @@
+========================================================================================
+AUDIT COMPANION: TELEPORTATION RESOURCE FROM POISSON
+CRITICALITY-BUMP AUDIT-READINESS HYGIENE (open_gate parent)
+========================================================================================
+
+Companion target:
+  teleportation_resource_from_poisson_note
+
+Question:
+  Has the parent note's substance changed since the prior
+  audited_clean verdict, or is the criticality-bump invalidation
+  a queue-priority signal only?
+
+Answer:
+  The substance is unchanged. The invalidation is a
+  queue-priority bump (criticality_increased: leaf -> medium),
+  not a content-change flag. The open_gate admission
+  (native preparation/readout theorem selecting the last KS
+  taste bit as a deterministic physical carrier) is unchanged
+  and remains admitted, not-derived.
+
+----------------------------------------------------------------------------------------
+(R1) Presence checks for parent note and parent runner
+----------------------------------------------------------------------------------------
+  [PASS] parent note file exists on disk  (path=docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)
+  [PASS] parent runner file exists on disk  (path=scripts/frontier_teleportation_resource_from_poisson.py)
+
+----------------------------------------------------------------------------------------
+(R2) Note-hash invariance against current ledger row
+----------------------------------------------------------------------------------------
+  [PASS] ledger row recorded expected note_hash  (ledger=5d3b09ce4191... expected=5d3b09ce4191...)
+  [PASS] on-disk note hash matches ledger note_hash  (on_disk=5d3b09ce4191... ledger=5d3b09ce4191...)
+  [PASS] on-disk note hash matches the expected substance-unchanged hash  (on_disk=5d3b09ce4191... expected=5d3b09ce4191...)
+
+----------------------------------------------------------------------------------------
+(R3) Parent runner execution and banner presence
+----------------------------------------------------------------------------------------
+  [PASS] parent runner exits with status 0  (returncode=0)
+  [PASS] parent runner stdout contains banner: 'Case: 1d_null'
+  [PASS] parent runner stdout contains banner: 'Case: 1d_poisson_chsh'
+  [PASS] parent runner stdout contains banner: 'Case: 2d_poisson_chsh'
+  [PASS] parent runner stdout contains banner: 'Conclusion:'
+
+----------------------------------------------------------------------------------------
+(R4) Parent runner numerical-surface invariance
+----------------------------------------------------------------------------------------
+  [PASS] parent runner stdout contains fingerprint: '0.9999999999999996'
+  [PASS] parent runner stdout contains fingerprint: '0.9999999999999991'
+  [PASS] parent runner stdout contains fingerprint: '5.551e-16'
+  [PASS] parent runner stdout contains fingerprint: 'best Bell overlap=0.500000 (Psi+)'
+  [PASS] parent runner stdout contains fingerprint: 'CHSH=2.000000'
+  [PASS] parent runner stdout contains fingerprint: 'negativity=0.000000'
+  [PASS] parent runner stdout contains fingerprint: 'mean fidelity=0.669817'
+  [PASS] parent runner stdout contains fingerprint: 'best Bell overlap=0.997963 (Phi+)'
+  [PASS] parent runner stdout contains fingerprint: 'CHSH=2.822668'
+  [PASS] parent runner stdout contains fingerprint: 'negativity=0.497963'
+  [PASS] parent runner stdout contains fingerprint: 'mean fidelity=0.998621'
+  [PASS] parent runner stdout contains fingerprint: 'best Bell overlap=0.970283 (Phi+)'
+  [PASS] parent runner stdout contains fingerprint: 'negativity=0.470283'
+  [PASS] parent runner stdout contains fingerprint: 'mean fidelity=0.979360'
+  [PASS] parent runner verdict for 1d_null is NO
+  [PASS] parent runner verdict for two Poisson cases is YES
+
+----------------------------------------------------------------------------------------
+(R5) Load-bearing-content static checks on parent note prose
+----------------------------------------------------------------------------------------
+  [PASS] parent note declares **Type:** open_gate
+  [PASS] parent note declares **Claim type:** open_gate
+  [PASS] parent note contains '2026-05-28 Audit Repair' section heading
+  [PASS] parent note contains 'Load-bearing (in scope)' split bullet
+  [PASS] parent note contains 'NON-load-bearing (split off / admitted)' split bullet
+  [PASS] parent note contains 'Scope Repair Boundary (2026-05-27)' section
+  [PASS] parent note contains 'Citation Chain And Repair Path (2026-05-10)' section
+  [PASS] parent note explicitly states 'no new axiom is introduced'
+  [PASS] parent note explicitly promises last-taste-bit non-derivation
+  [PASS] parent note cites MINIMAL_AXIOMS_2026-05-20.md as A1+A2 premise
+  [PASS] parent note cites adjacent Poisson sweep note in citation table
+  [PASS] parent note cites adjacent resource fidelity note in citation table
+  [PASS] parent note cites adjacent measurement-record note in citation table
+  [PASS] parent note cites adjacent apparatus-dynamics-closure note in citation table
+  [PASS] parent note explicitly excludes matter teleportation / FTL claims
+
+----------------------------------------------------------------------------------------
+(R6) Invalidation-reason structure on ledger row
+----------------------------------------------------------------------------------------
+  [PASS] ledger row has at least one previous_audits entry  (len(previous_audits)=5)
+  [PASS] most-recent previous audit was audited_clean  (audit_status='audited_clean')
+  [PASS] most-recent invalidation_reason begins with criticality_increased  (invalidation_reason='criticality_increased:leaf->medium')
+  [PASS] prior runner_check_breakdown total_pass == 5  (total_pass=5)
+  [PASS] prior runner_check_breakdown class A == 0  (A=0)
+  [PASS] prior runner_check_breakdown class B == 1  (B=1)
+  [PASS] prior runner_check_breakdown class C == 4  (C=4)
+  [PASS] prior runner_check_breakdown class D == 0  (D=0)
+  [PASS] current ledger row claim_type is open_gate  (claim_type='open_gate')
+
+----------------------------------------------------------------------------------------
+(R7) Helper-runner presence
+----------------------------------------------------------------------------------------
+  [PASS] helper runner exists on disk: scripts/frontier_bell_inequality.py  (path=scripts/frontier_bell_inequality.py)
+  [PASS] helper runner exists on disk: scripts/frontier_teleportation_poisson_resource_scope_repair.py  (path=scripts/frontier_teleportation_poisson_resource_scope_repair.py)
+
+========================================================================================
+PASS=52 FAIL=0
+========================================================================================

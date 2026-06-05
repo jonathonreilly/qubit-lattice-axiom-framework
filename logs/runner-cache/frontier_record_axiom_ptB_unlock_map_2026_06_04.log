@@ -1,0 +1,40 @@
+[PASS] A.center(M_2(C)) is 1-dim (scalars)  -- dim=1
+[PASS] A.center(M_2(C)) element is the identity
+[PASS] A.center(M_3(C)) is 1-dim (scalars)  -- dim=1
+[PASS] A.center(M_3(C)) element is the identity
+[PASS] A.center(M_4(C)) is 1-dim (scalars)  -- dim=1
+[PASS] A.center(M_4(C)) element is the identity
+[PASS] B.C3 generator cubes to identity
+[PASS] B.C[Z3] splits into 3 complex sectors (3 distinct eigenvalues)  -- distinct=3
+[PASS] B.K-real observable C+C^2 is real symmetric
+[PASS] B.eig(C+C^2) = {-1,-1,2} (singlet + degenerate doublet)  -- eig=[-1.0, -1.0, 2.0]
+[PASS] B.real/CPT-even observable resolves exactly 2 sectors (not 3)  -- resolved sectors=2
+[PASS] B.i(C-C^2) is K-odd (T-violating: conj = -itself)
+[PASS] B.K-odd observable splits into 3 distinct levels (resolves omega vs omega^2)  -- eig=[-1.732051, 0.0, 1.732051]
+[PASS] B.real commutant of regular C3 rep has dim 3 (= dim R[Z3])  -- dim=3
+[PASS] C.D is real
+[PASS] C.D is anti-Hermitian (D^dag = -D)
+[PASS] C.D real  =>  T D T = D  (T = complex conjugation)
+[PASS] C.counterfactual: complex Dc is anti-Hermitian
+[PASS] C.counterfactual: complex Dc breaks T Dc T = Dc (so CPT-even fails)
+[PASS] D.sector distribution normalizes
+[PASS] D.Born/tracial (dimension) weight gives r = 1  -- r_born=[1]
+[PASS] D.block-counting (equal-per-sector) weight gives r = 1/2  -- r_count=[1/2]
+[PASS] D.Born weight (r=1) != block-count weight (r=1/2)
+[PASS] D.records-sharpening map r->2r^2 has unique finite positive fixed point r=1/2  -- fixed points=[1/2]
+[PASS] D.that fixed point is UNSTABLE (|f'(1/2)|=2>1, a separatrix)  -- f'(1/2)=2
+[PASS] D.r=0 (singlet-collapse) is the stable fixed point  -- f'(0)=0
+[PASS] D.Born point r=1 is NOT a fixed point of the records map  -- f(1)=2
+[PASS] D.power-family readout is multiplicative for every exponent q (never additive)
+[PASS] D.additive scalar coordinate is c*log p (homomorphism), i.e. the log is INSERTED
+[PASS] E.record count is non-decreasing under irreversible accumulation
+[PASS] E.reversing the index reverses monotonicity (direction is supplied, not the index)
+[PASS] E.formation order is a total preorder pulled back from the pre-given index
+[PASS] F.exactly the CUT and its corollary (multi-lane) are genuine unlocks  -- genuine=['CUT', 'MULTI_LANE']
+[PASS] F.CPT is ASSUMES (real = axiom qualifier, not derived)
+[PASS] F.Born is TOUCHES-CONSTRAINS (dial != Born)
+[PASS] F.Time-arrow is TOUCHES-CONSTRAINS (direction supplied, index co-assumed)
+[PASS] F.genuine-distinct-mechanism count from the one statement is 1 (the cut)
+[PASS] F.headline unification (4-from-1) is NOT supported  -- 1 genuine unlock + 1 partial + 2 co-assumed
+
+SCORECARD: 38 PASS / 0 FAIL

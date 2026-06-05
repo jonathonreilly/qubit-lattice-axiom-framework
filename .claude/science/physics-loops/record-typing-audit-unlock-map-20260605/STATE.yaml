@@ -1,0 +1,32 @@
+loop_slug: record-typing-audit-unlock-map-20260605
+branch: physics-loop/record-typing-audit-unlock-map-20260605
+base_branch: physics-loop/pre-record-qubit-post-record-info-dynamics-20260605
+started_at: 2026-06-05
+mode: run
+target_status: bounded-support
+active_route: record-typing-audit-unlock-dispatch
+cycle_count: 1
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+artifact_role: tooling
+files_touched:
+  - docs/RECORD_TYPING_AUDIT_UNLOCK_MAP_2026-06-05.md
+  - scripts/frontier_record_typing_audit_unlock_map_2026_06_05.py
+  - logs/runner-cache/frontier_record_typing_audit_unlock_map_2026_06_05.txt
+  - .claude/science/physics-loops/record-typing-audit-unlock-map-20260605/
+verification:
+  - command: python3 scripts/frontier_record_typing_audit_unlock_map_2026_06_05.py
+    result: PASS=8 FAIL=0
+  - command: python3 -m py_compile scripts/frontier_record_typing_audit_unlock_map_2026_06_05.py
+    result: pass
+  - command: git diff --check
+    result: pass
+open_imports:
+  - exact Record typing theorem from PR 2708 must be retained before this dispatch can be used for authority-surface re-audits
+  - selector/measure theorem remains open for the 13 touched audited-conditional rows
+  - physical dynamics theorem remains open for record-production/decoherence/arrow rows
+review_disposition: local_self_review_pass
+pr_status: not_opened_yet
+next_exact_action: local review, commit, push, open stacked PR
+stop_condition: one coherent dispatch-map block completed

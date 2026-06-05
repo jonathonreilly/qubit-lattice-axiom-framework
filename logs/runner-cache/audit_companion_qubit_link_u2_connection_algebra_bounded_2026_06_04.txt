@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_qubit_link_u2_connection_algebra_bounded_2026_06_04.py
+runner_sha256: 7e670a677e06ba6069f903979b4ee6f1ef2c88f0118707a072bd542f381fcf13
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+========================================================================
+Qubit-link U(2) connection algebra bounded checks
+========================================================================
+PASS Pauli matrices are Hermitian
+PASS Pauli matrices satisfy Cl(3) anticommutation
+PASS S_i = sigma_i/2 closes as su(2)
+PASS central phase generator commutes with every S_i
+PASS central phase generator is anti-Hermitian
+PASS i sigma_i generators are anti-Hermitian
+PASS anti-Hermitian C^2 endomorphism basis has real rank 4
+PASS u(2) dimension decomposes as 3 + 1
+PASS central u(1) line is independent from su(2) generators
+PASS traceless Hermitian M_2(C) space has real rank 3
+PASS traceless Hermitian M_2(C) is dimension-obstructed from su(3) dimension 8
+PASS full u(2) is dimension-obstructed from faithful su(3) embedding
+PASS spin-half Casimir is 3/4 I_2
+PASS C^2 carrier dimension is 2, not the color fundamental dimension 3
+PASS source-note firewall present: does not derive a physical Standard Model gauge group
+PASS source-note firewall present: does not identify the central `u(1)` with hypercharge assignments
+PASS source-note firewall present: does not derive the chiral `SU(2)_L` restriction
+PASS source-note firewall present: does not derive gauge invariance of observables
+PASS source-note firewall present: does not derive color
+========================================================================
+SUMMARY: PASS=19 FAIL=0
+========================================================================
+
+----- stderr -----
+

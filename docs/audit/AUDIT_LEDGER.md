@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1306 |
+| unaudited | 1305 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 55 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 984 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 55 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1590 |
+| `unaudited` | 1589 |
 
 | claim_type | count |
 |---|---:|
@@ -1122,6 +1122,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -2374,6 +2375,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The one-hop dependencies are now retained-grade and support the bounded 2-body branch-entanglement interpretation and corrected 3-body W-type interpretation. The current source note and runner output close the scoped robustness claim without relying on full BMV witness status or an external comparator.
 - **rationale:** The clean verdict applies only to the bounded numerical protocol theorem stated in the note. The load-bearing runner output gives positive 2-body delta_S across all audited sweeps and confirms the corrected 3-body W-type, non-GHZ interpretation with tau_3 = 0 and positive bipartite entropies. The prior dependency block is resolved because both cited one-hop dependencies now have retained-grade status. Plot generation failed due to missing matplotlib, but that does not affect the load-bearing numerical checks.
 - **auditor confidence:** medium
+
+### `brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31`
+
+- **Note:** [`BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md`](../../docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Bounded audit of the C3 weight/angle comparison: L3(1,2)=2/9, the PDG mass reduction is only an observational comparator, and the tested Plancherel, eta, Berry, and N-family routes do not identify the dimensionless rational with a bare-radian phase.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-192444-6d9dfd1842-brannen_delta_spectral_asymm`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite angle objects already in the lane do not equal the bare-radian comparator: the Plancherel-step angle is (2/9)pi, the eta-holonomy angle is 2pi(2/9), the spin-Dirac eta for (1,2) is zero, the tested finite eta is integer-valued, and the circulant H(theta) has fixed Fourier eigenvectors with zero Berry connection.  _(class `A`)_
+- **chain closes:** False — The finite route-pruning comparisons close algebraically, but the Type-B rational-to-bare-radian map does not. A retained period-1-radian normalization convention or separate source theorem is still missing.
+- **rationale:** The C3 local weight computation independently gives L3(1,2)=2/9, and the listed Plancherel, eta, Berry, and family comparisons are algebraic checks rather than first-principles bridge derivations. The PDG charged-lepton mass reduction is an external comparator check and is correctly marked non-load-bearing. Because both this note and the cited radian-bridge authorities leave the period-normalization bridge open, the packet supports the open-gate boundary but not a clean derivation of delta=2/9 rad.
+- **open / conditional deps cited:**
+  - `KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md`
+  - `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`
+- **auditor confidence:** high
 
 ### `broad_gravity_derivation_note`
 

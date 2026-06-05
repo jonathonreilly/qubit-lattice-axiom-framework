@@ -3948,6 +3948,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_coarse_grained_exterior_law.py"
     },
+    "color_generation_independent_z3_structures_2026-06-05": {
+      "assert_count": 7,
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/color_generation_z3_identification_no_go_2026_06_05.py"
+    },
     "complete_prediction_chain_2026_04_15": {
       "assert_count": 0,
       "counts": {
@@ -11364,6 +11376,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_generation_degeneracy_minimal_breaking_discriminator.py"
     },
+    "generation_koide_single_modulus_reduction_2026-06-05": {
+      "assert_count": 1,
+      "counts": {
+        "A": 28,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/generation_dial_occupancy_free_input_2026_06_05.py"
+    },
     "generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note": {
       "assert_count": 1,
       "counts": {
@@ -11375,6 +11399,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_generation_triplet_dimension_parity_no_faithful_z.py"
+    },
+    "generation_weight_dial_structure_2026-06-05": {
+      "assert_count": 0,
+      "counts": {
+        "A": 55,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/generation_weight_dial_structure_2026_06_05.py"
     },
     "geometry_lane_head_to_head_note": {
       "assert_count": 0,
@@ -14099,6 +14135,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py"
+    },
+    "koide_circulant_value_derivation_2026-06-05": {
+      "assert_count": 1,
+      "counts": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/koide_circulant_value_derivation_2026_06_05.py"
     },
     "koide_circulant_wilson_target_note_2026-04-18": {
       "assert_count": 1,
@@ -22283,6 +22331,18 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py"
+    },
+    "record_generation_readout_two_sectors_2026-06-05": {
+      "assert_count": 1,
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/record_generation_readout_two_sectors_2026_06_05.py"
     },
     "record_p1_dependency_audit_note_2026-06-04": {
       "assert_count": 1,
@@ -35894,6 +35954,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/color_generation_z3_identification_no_go_2026_06_05.py": {
+      "assert_count": 7,
+      "claims": [
+        "color_generation_independent_z3_structures_2026-06-05"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/complex_action_grown_companion.py": {
@@ -59792,6 +59867,36 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/generation_dial_occupancy_free_input_2026_06_05.py": {
+      "assert_count": 1,
+      "claims": [
+        "generation_koide_single_modulus_reduction_2026-06-05"
+      ],
+      "counts": {
+        "A": 28,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/generation_weight_dial_structure_2026_06_05.py": {
+      "assert_count": 0,
+      "claims": [
+        "generation_weight_dial_structure_2026-06-05"
+      ],
+      "counts": {
+        "A": 55,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/geometry_lane_head_to_head.py": {
       "assert_count": 0,
       "claims": [
@@ -60303,6 +60408,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/koide_circulant_value_derivation_2026_06_05.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_circulant_value_derivation_2026-06-05"
+      ],
+      "counts": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py": {
@@ -62974,6 +63094,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/record_generation_readout_two_sectors_2026_06_05.py": {
+      "assert_count": 1,
+      "claims": [
+        "record_generation_readout_two_sectors_2026-06-05"
+      ],
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/render_controlled_vocabulary.py": {
       "assert_count": 0,
       "claims": [
@@ -65300,16 +65435,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 405,
+    "decoration_candidates": 408,
     "dominant_class_distribution": {
-      "A": 316,
+      "A": 320,
       "B": 339,
-      "C": 906,
+      "C": 907,
       "D": 337,
       "none": 464
     },
-    "runners_classified": 2362,
-    "runners_with_C": 1195,
+    "runners_classified": 2367,
+    "runners_with_C": 1197,
     "runners_with_D": 688
   }
 }

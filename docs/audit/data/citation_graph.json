@@ -5865,6 +5865,14 @@
       "to": "finite_rank_gravity_residual_helper_note_2026-04-14"
     },
     {
+      "from": "color_generation_independent_z3_structures_2026-06-05",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "color_generation_independent_z3_structures_2026-06-05",
+      "to": "cl3_taste_generation_theorem"
+    },
+    {
       "from": "complete_prediction_chain_2026_04_15",
       "to": "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24"
     },
@@ -11777,6 +11785,42 @@
       "to": "z2_hw1_mass_matrix_parametrization_note"
     },
     {
+      "from": "generation_koide_single_modulus_reduction_2026-06-05",
+      "to": "koide_circulant_value_derivation_2026-06-05"
+    },
+    {
+      "from": "generation_koide_single_modulus_reduction_2026-06-05",
+      "to": "record_generation_readout_two_sectors_2026-06-05"
+    },
+    {
+      "from": "generation_koide_single_modulus_reduction_2026-06-05",
+      "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+    },
+    {
+      "from": "generation_koide_single_modulus_reduction_2026-06-05",
+      "to": "action_normalization_note"
+    },
+    {
+      "from": "generation_weight_dial_structure_2026-06-05",
+      "to": "flavor_doublet_metric_default_is_detr_2026-06-02"
+    },
+    {
+      "from": "generation_weight_dial_structure_2026-06-05",
+      "to": "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+    },
+    {
+      "from": "generation_weight_dial_structure_2026-06-05",
+      "to": "record_generation_readout_two_sectors_2026-06-05"
+    },
+    {
+      "from": "generation_weight_dial_structure_2026-06-05",
+      "to": "charged_lepton_koide_note_2026-04-18"
+    },
+    {
+      "from": "generation_weight_dial_structure_2026-06-05",
+      "to": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02"
+    },
+    {
       "from": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
       "to": "minimal_axioms"
     },
@@ -16763,6 +16807,18 @@
     {
       "from": "koide_circulant_character_derivation_note_2026-04-18",
       "to": "koide_positive_paths_first_principles_note_2026-04-18"
+    },
+    {
+      "from": "koide_circulant_value_derivation_2026-06-05",
+      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "koide_circulant_value_derivation_2026-06-05",
+      "to": "cl3_taste_generation_theorem"
+    },
+    {
+      "from": "koide_circulant_value_derivation_2026-06-05",
+      "to": "record_generation_readout_two_sectors_2026-06-05"
     },
     {
       "from": "koide_circulant_wilson_target_note_2026-04-18",
@@ -25451,6 +25507,22 @@
     {
       "from": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
       "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
+    },
+    {
+      "from": "record_generation_readout_two_sectors_2026-06-05",
+      "to": "cl3_taste_generation_theorem"
+    },
+    {
+      "from": "record_generation_readout_two_sectors_2026-06-05",
+      "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
+    },
+    {
+      "from": "record_generation_readout_two_sectors_2026-06-05",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "record_generation_readout_two_sectors_2026-06-05",
+      "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
     },
     {
       "from": "record_p1_dependency_audit_note_2026-06-04",
@@ -50840,6 +50912,21 @@
       "runner_path": "scripts/frontier_coarse_grained_exterior_law.py",
       "title": "Coarse-Grained Exterior Law Helper Module"
     },
+    "color_generation_independent_z3_structures_2026-06-05": {
+      "claim_id": "color_generation_independent_z3_structures_2026-06-05",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "derivation",
+      "claim_type_seed_hint": null,
+      "deps": [
+        "cl3_color_automorphism_theorem",
+        "cl3_taste_generation_theorem"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9aa2deed0da01be8e83a26d5ff7cfb6fb541379d93a0f2ee6d37eaf398468f6f",
+      "path": "docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md",
+      "runner_path": "scripts/color_generation_z3_identification_no_go_2026_06_05.py",
+      "title": "Color and generation are derived as independent Z3 structures"
+    },
     "complete_prediction_chain_2026_04_15": {
       "claim_id": "complete_prediction_chain_2026_04_15",
       "claim_type_author_hint": null,
@@ -62556,6 +62643,23 @@
       "runner_path": "scripts/frontier_generation_degeneracy_minimal_breaking_discriminator.py",
       "title": "Generation Mass-Degeneracy Minimal-Symmetry-Breaking Narrow Theorem"
     },
+    "generation_koide_single_modulus_reduction_2026-06-05": {
+      "claim_id": "generation_koide_single_modulus_reduction_2026-06-05",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "derivation",
+      "claim_type_seed_hint": null,
+      "deps": [
+        "koide_circulant_value_derivation_2026-06-05",
+        "record_generation_readout_two_sectors_2026-06-05",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "action_normalization_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d4f21e2e51a0737d481f57a8adff57aa1e33616cf008950f334c63e7da6676ce",
+      "path": "docs/GENERATION_KOIDE_SINGLE_MODULUS_REDUCTION_2026-06-05.md",
+      "runner_path": "scripts/generation_dial_occupancy_free_input_2026_06_05.py",
+      "title": "Generation Koide data reduces to a single derived modulus per sector"
+    },
     "generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note": {
       "claim_id": "generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note",
       "claim_type_author_hint": "no_go",
@@ -62567,6 +62671,24 @@
       "path": "docs/GENERATION_TRIPLET_DIMENSION_PARITY_NO_FAITHFUL_Z_NARROW_NO_GO_NOTE.md",
       "runner_path": "scripts/frontier_generation_triplet_dimension_parity_no_faithful_z.py",
       "title": "No Three-Dimensional SU(2) Rotation Carrier Has Faithful Center Action"
+    },
+    "generation_weight_dial_structure_2026-06-05": {
+      "claim_id": "generation_weight_dial_structure_2026-06-05",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "theorem",
+      "claim_type_seed_hint": null,
+      "deps": [
+        "flavor_doublet_metric_default_is_detr_2026-06-02",
+        "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+        "record_generation_readout_two_sectors_2026-06-05",
+        "charged_lepton_koide_note_2026-04-18",
+        "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "feb9dc3af2b2ff20d20b4728ba935331f7d76623d8829f98758eed9cca1f3f37",
+      "path": "docs/GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md",
+      "runner_path": "scripts/generation_weight_dial_structure_2026_06_05.py",
+      "title": "GENERATION_WEIGHT_DIAL_STRUCTURE \u2014 the two-sector weight is a one-parameter dial r(s)=2^(s-1) with block-count and Born endpoints"
     },
     "geometry_lane_head_to_head_note": {
       "claim_id": "geometry_lane_head_to_head_note",
@@ -67005,6 +67127,22 @@
       "path": "docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py",
       "title": "Koide Q = 2/3 Circulant Algebraic Narrow Theorem"
+    },
+    "koide_circulant_value_derivation_2026-06-05": {
+      "claim_id": "koide_circulant_value_derivation_2026-06-05",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "derivation",
+      "claim_type_seed_hint": null,
+      "deps": [
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+        "cl3_taste_generation_theorem",
+        "record_generation_readout_two_sectors_2026-06-05"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c2fdd35fd21a36465c249cdc381a84c5fdf146de9616da3aa82dc4960f1a8f30",
+      "path": "docs/KOIDE_CIRCULANT_VALUE_DERIVATION_2026-06-05.md",
+      "runner_path": "scripts/koide_circulant_value_derivation_2026_06_05.py",
+      "title": "Koide value of a C3-equivariant generation mass operator"
     },
     "koide_circulant_wilson_target_note_2026-04-18": {
       "claim_id": "koide_circulant_wilson_target_note_2026-04-18",
@@ -82236,6 +82374,23 @@
       "runner_path": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py",
       "title": "R_conn Vertex-Color Singlet Projection Bounded Narrow Theorem"
     },
+    "record_generation_readout_two_sectors_2026-06-05": {
+      "claim_id": "record_generation_readout_two_sectors_2026-06-05",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "theorem (conditional on the supplied readout context \u2014 see Scope).",
+      "claim_type_seed_hint": null,
+      "deps": [
+        "cl3_taste_generation_theorem",
+        "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+        "minimal_axioms",
+        "koide_q23_k0_real_block_equivalence_note_2026-05-30"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6ac057f3c9d68e87663ed251b97d135687cc7a04f33718eaed12984f273e1f5c",
+      "path": "docs/RECORD_GENERATION_READOUT_TWO_SECTORS_2026-06-05.md",
+      "runner_path": "scripts/record_generation_readout_two_sectors_2026_06_05.py",
+      "title": "Record Generation Readout Resolves Two K/CPT-Orbit Sectors (Singlet + Doublet)"
+    },
     "record_p1_dependency_audit_note_2026-06-04": {
       "claim_id": "record_p1_dependency_audit_note_2026-06-04",
       "claim_type_author_hint": "meta",
@@ -95173,7 +95328,7 @@
       "decoration": 1,
       "meta": 246,
       "no_go": 124,
-      "none": 1411,
+      "none": 1416,
       "open_gate": 75,
       "positive_theorem": 181
     },
@@ -95182,14 +95337,14 @@
       "decoration": 1,
       "meta": 246,
       "no_go": 227,
-      "none": 430,
+      "none": 435,
       "open_gate": 150,
       "positive_theorem": 583
     },
-    "edge_count": 10810,
+    "edge_count": 10828,
     "leaf_count": 968,
-    "node_count": 2884,
+    "node_count": 2889,
     "root_count": 959,
-    "runners_with_path": 2468
+    "runners_with_path": 2473
   }
 }

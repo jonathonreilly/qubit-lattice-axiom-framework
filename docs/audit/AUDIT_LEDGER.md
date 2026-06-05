@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 176 |
-| **retained_no_go** | 186 |
+| **retained_no_go** | 187 |
 | **retained_bounded** | 659 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1269 |
+| unaudited | 1268 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1013 |
+| `audited_clean` | 1014 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1553 |
+| `unaudited` | 1552 |
 
 | claim_type | count |
 |---|---:|
@@ -410,6 +410,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
@@ -5980,6 +5981,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The note's operative step is that asserting the physical observable to be the intensive C3 Atiyah-Bott density on intrinsic R3 at the z=0 zero-section, rather than the Gamma5-graded extensive lattice index, is simultaneously the carrier identification and the zero-section pick.  _(class `F`)_
 - **chain closes:** False — The displayed C3, transverse determinant, J_cs, and L3 arithmetic checks close, but they do not derive the physical readout identification. The missing step is an independent bridge theorem forcing the intensive intrinsic-R3 z=0 readout as the physical observable rather than naming that choice as the carrier/basepoint gate.
 - **rationale:** The runner genuinely checks the finite C3 algebra and J_cs commutation facts, and an independent formula pass did not expose a sign, factor, or normalization error in those displayed identities. Those facts support the negative that J_cs does not select the r parameter and show that both intensive and extensive readouts remain available. The conclusion equating the readout gate, carrier identification, and zero-section pick is a symbol-identity assertion over existing choices, not a first-principles derivation from the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02`
+
+- **Note:** [`FLAVOR_RECORD_DYNAMICS_SHARPENS_ARROW_STABILIZER_FAILS_2026-06-02.md`](../../docs/FLAVOR_RECORD_DYNAMICS_SHARPENS_ARROW_STABILIZER_FAILS_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The tested Lüders self-composition, reverse-map, C3 block-einselection, and I/3 thermalization channels do not make r=1/2 a record-forming dynamical attractor.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-2892cc004d-flavor_record_dynamics_sharp`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the tested two-sector record map, Lüders self-composition sharpens r -> 2 r^2, so r=1/2 has multiplier 2 and is unstable.  _(class `A`)_
+- **chain closes:** True — Manual differentiation gives f(1/2)=1/2 and f'(1/2)=2>1, so the displayed sharpening map repels from r=1/2; for r=0.49 the iterates monotonically decrease toward 0 because f(r)/r=2r<1. The reverse map is the inverse of f on nonnegative r with derivative 1/2 at r=1/2, the C3 projector off-block terms vanish algebraically, and the I/3 trace weights give (1/3,2/3) and r=1.
+- **rationale:** The runner hard-codes the tested maps rather than deriving record dynamics from baseline axioms, so the clean result is only the source note's narrow route closure. Independently checking the displayed formulas confirms the fixed-point multiplier, inverse-map stability, C3 block diagonalization in the stated projectors, and dimension-weight normalization. The no-go discipline gate is satisfied because the note explicitly leaves other dynamics and measure/reference choices open instead of claiming an absolute no-go on r=1/2.
 - **auditor confidence:** high
 
 ### `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31`

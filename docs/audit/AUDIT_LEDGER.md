@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 617 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1386 |
+| unaudited | 1385 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 14 |
-| ~~audited_renaming~~ | 22 |
+| ~~audited_renaming~~ | 23 |
 | ~~audited_conditional~~ | 29 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -62,8 +62,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
-| `audited_renaming` | 22 |
-| `unaudited` | 1670 |
+| `audited_renaming` | 23 |
+| `unaudited` | 1669 |
 
 | claim_type | count |
 |---|---:|
@@ -1228,6 +1228,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -14569,6 +14570,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The conclusion follows by substituting the retained K4 dimensional readout dim_C V = 2 into the stated tadpole convention. The proof does not require any numerical plaquette value or downstream running input.
 - **rationale:** The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Alias-level audit of identifying the former U4 k=1 per-site Cl(3) bridge with the accepted one-qubit-per-site axiom plus retained Cl(3,0) ~= M_2(C) algebra.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-160340-9224911414-u4_closes_under_qubit_refram`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the qubit-per-site baseline, the conditional in C1 (if k = 1) is no longer required: the baseline specifies a single qubit per site, which is precisely the single-faithful-complex-irrep selection.  _(class `F`)_
+- **chain closes:** True — The accepted Quantum axiom supplies one qubit per site, and the retained Cl(3) authority supplies the M_2(C) ~= Cl(3,0) and two-dimensional irrep algebra. The row closes only as an identification of U4 with that axiom content, not as an independent derivation.
+- **rationale:** The load-bearing move is not a pure class-A algebraic corollary of cl3_complexification_split, because the one-qubit-per-site axiom is load-bearing. It is also not class C: the note explicitly says the result is the content of the qubit baseline, and it identifies U4 with the already accepted k=1 qubit-per-site reading. Therefore audited_decoration under the Cl3 parent is not the right category; the row is a renaming/alias surface for the axiom content plus retained algebra.
 - **auditor confidence:** high
 
 ### `unification_basin_failure_note`

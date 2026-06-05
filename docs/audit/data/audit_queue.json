@@ -3,7 +3,7 @@
     "critical": 269,
     "high": 284,
     "leaf": 433,
-    "medium": 337
+    "medium": 336
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16722,32 +16722,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "no_per_site_chirality_theorem_note_2026-05-02",
-        "cpt_exact_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.807,
-      "note_path": "docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py",
-      "transitive_descendants": 6
     },
     {
       "audit_independence_required": "any_non_self",
@@ -39631,6 +39605,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 114,
-  "total_pending": 1323
+  "ready_count": 113,
+  "total_pending": 1322
 }

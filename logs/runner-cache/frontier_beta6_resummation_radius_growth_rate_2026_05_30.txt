@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py
-runner_sha256: 2218bb7b4d4ce4198b72c6b9e8ed5b0fb99ed274e06124579c13c7ca67f6abb7
+runner_sha256: 9b81ce8127845f0ff864bc4e5221cbb6c801671cab68135750151f7c8a7a4eb6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.92
+elapsed_sec: 2.90
 status: ok
 ----- stdout -----
-=== [A] J Taylor coefficients from the retained Picard-Fuchs recurrence ===
+=== [A] J Taylor coefficients from the Picard-Fuchs recurrence ===
 [PASS] recurrence seed a_2 = 1/36
 [PASS] P_1plaq(6)=J'/J = 0.4225317396 (recurrence)  ::  P1=0.42253173965
 [PASS] recurrence J(6) == Bars J(6) (comparator)
@@ -39,25 +39,33 @@ status: ok
 [PASS] selected truncation sequence migrates upward and crosses 6 by T=4  ::  5.74<...<8.205, crosses 6 by T=4
 [PASS] high-truncation cube-sector root witness is > 6
 
-=== [E] Euler-weighted proliferation balance -> growth-product threshold ===
-[PASS] single cube: F=6 -> Euler weight 18^(1-6)=18^-5 (matches d5 prefactor 1/18^5)
-[PASS] two-cube box: share 1 face -> F=10 -> 18^(1-10)=18^-9 (on-main beta^9 box term)
-[PASS] K-built regime per-cube increment dF = dn = 4 (tree/box gluing, links<=2-face)
-    g_K=1.0:  R_Euler = 18/g_K^(1/4) = 18.0
-    g_K=7.0:  R_Euler = 18/g_K^(1/4) = 11.0662
-    g_K=81.0:  R_Euler = 18/g_K^(1/4) = 6.0
-[PASS] critical growth product for R=6: g_crit = (18/6)^4 = 81  ::  g_crit = 81.0
-[PASS] illustrative self-avoiding-chain normalization g_K=7 gives R_Euler > 6  ::  R_Euler(7)=11.0662
-[PASS] if an external lambda_K <= 7 bound were supplied, rho_crit would be 81/7  ::  rho_crit(lambda_K=7) = 11.5714
+=== [E] K-built tree-sector bound + compact-deficit obstruction ===
+    single cube: k=1, shared=0, excess=0, F=6, n=F-1=5, max_link_incidence=2
+    two-cube box: k=2, shared=1, excess=0, F=10, n=F-1=9, max_link_incidence=2
+    four-cube tree chain: k=4, shared=3, excess=0, F=18, n=F-1=17, max_link_incidence=2
+    four-cube 2x2x1 block: k=4, shared=4, excess=1, F=16, n=F-1=15, max_link_incidence=2
+[PASS] single cube: F=6, n=5, Euler weight 18^(1-F)=18^-5
+[PASS] two-cube tree box: F=10, n=9, Euler weight 18^-9
+[PASS] tree chain obeys F=4k+2 and n=4k+1
+[PASS] compact 2x2x1 block is still closed K-built: every boundary link has incidence two
+[PASS] compact K-built block falsifies all-cluster fixed increment F=4k+2
+[PASS] shared-face formula holds: F = 4k+2-2c, n = 4k+1-2c
+[PASS] Euler exponent correction: tree sector uses 18^{-(4k+1)}, not 18^{-(4k+2)}
+[PASS] at beta=6, one face-deficit unit weakens Euler suppression by factor 9
+    g_tree=1.0:  R_tree = 18/g_tree^(1/4) = 18.0
+    g_tree=7.0:  R_tree = 18/g_tree^(1/4) = 11.0662
+    g_tree=81.0:  R_tree = 18/g_tree^(1/4) = 6.0
+[PASS] tree-sector critical growth product for R=6: g_crit = (18/6)^4 = 81  ::  g_crit = 81.0
+[PASS] illustrative self-avoiding-chain normalization g_tree=7 gives R_tree > 6  ::  R_tree(7)=11.0662
+[PASS] if an external lambda_tree <= 7 bound were supplied, rho_crit would be 81/7  ::  rho_crit(lambda_tree=7) = 11.5714
 
     cube-sector (single-cube) radius (J-zero)      = 8.2052
-    Euler-regime illustrative bound (g_K=7)         = 11.0662
+    tree-sector illustrative bound (g_tree=7)       = 11.0662
+    compact K-built deficit factor at beta=6        = 9^c per excess shared face
     Fisher/Lee-Yang thermodynamic comparator       ~ 5.54 (CITED, lattice-QCD)
+[PASS] VERDICT: tree K-built radius > 6 for g_tree < 81, but all K-built needs a deficit-growth bound  ::  The fixed-increment bridge is false for compact K-built clusters; do not promote the all-K-built sector from g_tree alone.
 
-    g_crit (Euler-regime radius hits 6 here)       = 81.0
-[PASS] VERDICT: Euler-18 sector radius > 6 for all g_K < 81  ::  K-built sector radius > 6 only under the explicit growth-product condition g_K < 81; the full radius is min(K-built, >=3-face baryon channel), and the baryon channel is open)
-
-SCORECARD: PASS=23 FAIL=0
+SCORECARD: PASS=28 FAIL=0
 
 ----- stderr -----
 

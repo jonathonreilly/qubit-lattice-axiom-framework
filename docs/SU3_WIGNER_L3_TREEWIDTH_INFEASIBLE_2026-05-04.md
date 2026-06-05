@@ -47,14 +47,14 @@ The link adjacency graph is denser and has higher treewidth than the 3D lattice 
 
 ## 2. Why even truncation doesn't trivially help
 
-The `8^30 = 1.2 × 10^27` entries (~ `2 × 10^19` GiB) figure is for **exact** contraction with full bond dimension 8. To make this fit the 4 GiB budget would require:
+The `8^30 = 1.2 × 10^27` entries (~ `1.84 × 10^19` GiB) figure is for **exact** contraction with full bond dimension 8. To make this fit the 4 GiB budget would require:
 
 ```text
-truncation_dim^30 × 16 bytes ≤ 4 GiB
-truncation_dim ≤ (4 × 1024^3 / 16)^(1/30) ≈ 1.91
+truncation_dim^30 × 16 bytes ≤ 4 GiB = 4 × 2^30 bytes
+truncation_dim ≤ ((4 × 2^30) / 16)^(1/30) ≈ 1.91
 ```
 
-i.e., integer bond dimension ≤ 1, which is the trivial sector only. Even bond dimension 2 gives `2^30 × 16 = 16 GiB`, still over budget.
+i.e., integer bond dimension ≤ 1, which is the trivial sector only. Even bond dimension 2 gives `2^30 × 16 bytes = 16 GiB`, still over budget.
 
 So truncation to small bond dimension would discard nearly all of the (1,1) sector content.
 
@@ -91,7 +91,7 @@ contraction (81 nodes, 324 edges, 8-regular). Both min-degree and
 min-fill elimination heuristics return treewidth upper bound **29**.
 
 The corresponding worst-case intermediate size for naive exact
-contraction is `8^30 ≈ 1.2 × 10^27` complex entries (~ `1.8 × 10^19` GiB),
+contraction is `8^30 ≈ 1.2 × 10^27` complex entries (~ `1.84 × 10^19` GiB),
 exceeding the 4 GiB budget by about `4.6 × 10^18`.
 
 This empirically refutes PR #507's estimate that treewidth-based

@@ -26,16 +26,14 @@ handedness positivity — the sign of the volume form / `Cl(3)` pseudoscalar —
 is the representation-theoretic route that has `C_3` as its positive level set.
 This note does not derive that physical positivity bridge.
 
-## Theorem (one-dimensional character obstruction + selection)
+## Theorem (representation-theoretic obstruction + selection)
 
 `S_3` has exactly two one-dimensional representations: the trivial rep and the
-sign rep `sgn`. Therefore a one-dimensional representation-valued
-sign/magnitude constraint has only two possible representation characters:
-trivial, whose positive level set is all of `S_3`, or `sgn`, whose positive
-level set is `A_3=C_3`. This is not a statement about arbitrary binary class
-functions on `S_3`: for example, the identity-conjugacy-class selector is a
-binary class function but is not a one-dimensional character and is outside
-this note's sign/magnitude route.
+sign rep `sgn`. This note only classifies **one-dimensional character /
+sign-magnitude constraints** on the finite `S_3` axis-ordering surface. Such a
+constraint can either be trivial on all of `S_3` or couple to the sign
+character. It does not classify higher-dimensional selectors, arbitrary class
+functions, or non-character lattice observables.
 
 **(A) Determinant-magnitude positivity is the trivial rep.** The massless
 staggered Dirac operator `D` is anti-Hermitian, so `det(D + mI) = ∏_i(m² + σ_i²)
@@ -66,8 +64,8 @@ of such a handedness constraint remains a separate open bridge. ∎
   under identity, transposition, and 3-cycle orderings.
 - Therefore determinant-magnitude positivity cannot break `S_3 → C_3`.
 - The orientation sign is the sign rep, whose positive level set is exactly
-  `C_3`; any one-dimensional positivity route to `C_3` must be an
-  orientation-sign (handedness) route.
+  `C_3`; any one-dimensional character/sign-magnitude positivity route to
+  `C_3` must be an orientation-sign (handedness) route.
 
 ## What this does NOT claim
 
@@ -170,7 +168,7 @@ python3 scripts/frontier_positivity_bridge_orientation_sign_discriminator.py
 Expected result:
 
 ```text
-PASS=10 FAIL=0
+PASS=15 FAIL=0
 ```
 
 The runner builds the massless staggered `D` on `L^3`, confirms `det(D + mI)` is

@@ -7,13 +7,13 @@ to C_3. The natural candidate is the retained staggered determinant positivity
 `staggered_only_det_positivity` (det(M_KS+mI) > 0). This discriminator tests
 whether that positivity actually does the breaking.
 
-Decisive group-theory fact within one-dimensional sign/magnitude routes: a
-constraint breaks S_3 -> C_3 = A_3 iff it couples to the SIGN (orientation)
-1-dim representation of S_3 (sgn = +1 on the 3-cycles, -1 on the
-transpositions; the +1 set is exactly C_3). A constraint that is S_3-INVARIANT
-(the trivial representation) selects all of S_3 and breaks nothing. This is
-not a statement about arbitrary binary class functions on S_3, such as the
-identity-conjugacy-class selector, which is not a one-dimensional character.
+Narrow group-theory fact: among one-dimensional character/sign-magnitude
+constraints on the finite S_3 axis-ordering surface, the only nontrivial route
+whose positive level set is C_3 = A_3 couples to the SIGN (orientation)
+representation of S_3 (sgn = +1 on the 3-cycles, -1 on the transpositions). A
+constraint that is S_3-INVARIANT (the trivial representation) selects all of
+S_3 and breaks nothing. This runner does not classify higher-dimensional
+selectors or arbitrary class functions.
 
 Test:
   (A) the staggered determinant det(D+mI) is S_3-INVARIANT (reflection-even):
@@ -41,12 +41,15 @@ mass-value input. Asserts no audit status.
 from __future__ import annotations
 
 import itertools
+from pathlib import Path
 
 import numpy as np
 
 PASS = 0
 FAIL = 0
 L = 4  # even periodic lattice
+REPO_ROOT = Path(__file__).resolve().parent.parent
+SOURCE_NOTE = REPO_ROOT / "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md"
 
 
 def check(name, cond, detail=""):
@@ -100,10 +103,33 @@ def det_pos(order, mass=1.0):
     return sign, logdet
 
 
+def source_scope_check():
+    text = SOURCE_NOTE.read_text(encoding="utf-8")
+    required = [
+        "one-dimensional character /",
+        "sign-magnitude constraints",
+        "does not classify higher-dimensional selectors, arbitrary class",
+    ]
+    banned = [
+        ("broad binary-class-function sentence", "A binary (\"positive/negative\") constraint"),
+    ]
+    print("\n" + "-" * 76)
+    print("SOURCE SCOPE CHECK: one-dimensional sign/magnitude only")
+    print("-" * 76)
+    ok = True
+    for needle in required:
+        ok = check(f"source contains scope phrase: {needle}", needle in text) and ok
+    for label, needle in banned:
+        ok = check(f"source excludes {label}", needle not in text) and ok
+    return ok
+
+
 def main() -> int:
     print("=" * 76)
     print("WHICH POSITIVITY BREAKS S_3 -> C_3:  det-magnitude vs orientation-sign")
     print("=" * 76)
+
+    source_scope_check()
 
     idorder = (0, 1, 2)
     transposition = (1, 0, 2)

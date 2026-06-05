@@ -1,23 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py
-runner_sha256: 95fac2ee75109eaaef0b3978fc9c40ad85562001379b46285bee4fba21fbfac0
+runner_sha256: dcabcdea8f065195b0ca42b38022ae3314ea613361212e26f216d625157a67f7
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.08
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
 Part 1: note structure and scope discipline
 ----------------------------------------------------------------------------------------
   [PASS (A)] contains: 'Taste-Scalar Fermion Coleman-Weinberg Isotropy'  ()
-  [FAIL (A)] contains: 'Type:** positive_theorem'  ()
+  [PASS (A)] contains: 'Type:** bounded_theorem'  ()
   [PASS (A)] contains: 'δ_{ij} · C(v)'  ()
   [PASS (A)] contains: 'axis-aligned point'  ()
   [PASS (A)] contains: '8 · δ_{ij}'  ()
   [PASS (A)] contains: 'out of scope'  ()
   [PASS (A)] contains: 'class (A)'  ()
-  [FAIL (A)] contains: 'target_claim_type: positive_theorem'  ()
+  [PASS (A)] contains: 'target_claim_type: bounded_theorem'  ()
 
 ----------------------------------------------------------------------------------------
 Part 2: binary orthogonality sum Σ_s (-1)^{s_i}(-1)^{s_j} = 8 δ_{ij}
@@ -60,14 +60,14 @@ Part 6: closure factor 8 is exact independent of f
   [PASS (A)] for f(x) = x at v = 1: H_ii = 16 = 8 · 2 (closure factor)  (H_00 = 16)
 
 ----------------------------------------------------------------------------------------
-Part 7: self-contained audit row remains unaudited before audit
+Part 7: audit row has restored dependencies and remains unaudited
 ----------------------------------------------------------------------------------------
   [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 seeded by audit pipeline  (run docs/audit/scripts/run_pipeline.sh after editing the note)
-  [FAIL (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 has no declared dependency edges  (deps=['minimal_axioms_2026-05-03', 'staggered_dirac_realization_gate_note_2026-05-03'])
+  [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 has restored dependency edges  (deps=['minimal_axioms_2026-05-03', 'staggered_dirac_realization_gate_note_2026-05-03'])
   [PASS (A)] taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02 remains effective-unaudited before independent audit  (effective_status='unaudited')
 
 ========================================================================================
-  TOTAL: PASS=28, FAIL=3
+  TOTAL: PASS=31, FAIL=0
 ========================================================================================
 
 ----- stderr -----

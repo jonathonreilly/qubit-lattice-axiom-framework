@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 176 |
 | **retained_no_go** | 183 |
-| **retained_bounded** | 655 |
+| **retained_bounded** | 656 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1279 |
+| unaudited | 1278 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1006 |
+| `audited_clean` | 1007 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1563 |
+| `unaudited` | 1562 |
 
 | claim_type | count |
 |---|---:|
@@ -394,6 +394,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -5550,6 +5551,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** A1's HS trace pairing presents the doublet as two independent real Hermitian directions, with no A1-supplied complex structure fusing them, so equal power per real dimension gives |b|^2 = a^2, r = 1, and Q = 1.  _(class `C`)_
 - **chain closes:** False — The metric computation and the conditional r calculations close. The missing step is a bridge theorem showing that A1+HS+Hermiticity rules out any admissible complex structure on the doublet field space, not just continuous rephasing of C or complex-linearity of H_lin into the complexified operator algebra.
 - **rationale:** The runner genuinely checks the HS metric and several algebraic consequences, and the displayed numeric identities in those checks are consistent. However, the load-bearing default-mode-count claim depends on an unproved exclusion of non-U(1) or discrete/field-space complex structures on the doublet. Runner M6 hard-codes the broad obstruction as True, and M2 tests a narrower operator-symbol complex-linearity condition that the note itself admits does not settle the kinetic-metric binary.
+- **auditor confidence:** high
+
+### `flavor_doublet_rotation_exhaustive_note_2026-05-30`
+
+- **Note:** [`FLAVOR_DOUBLET_ROTATION_EXHAUSTIVE_NOTE_2026-05-30.md`](../../docs/FLAVOR_DOUBLET_ROTATION_EXHAUSTIVE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the finite signed-permutation/O_h, elementary bit-flip, central iI3, and real C3-circulant packet, the audited result is only the stated finite hw=1 action counts and ±J_cs uniqueness up to sign.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-223011-f87cb1013f-flavor_doublet_rotation_exha`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Direct finite enumeration of the signed-permutation/bit-flip actions on the hw=1 vertices, together with solving X*1=0 and X^2=-P_doublet for X=aI+bC+cC^2, yields six S3 hw=1 actions, no order-4 or bit-flip intra-doublet action, and only X=±J_cs.  _(class `C`)_
+- **chain closes:** True — No cited upstream authority is required for the restricted claim. Independent finite counting and algebraic checking verify the enumerated actions, the bit-flip boundary, iI3 versus J_cs distinctness, and the real circulant ±J_cs solve within the stated scope.
+- **rationale:** The finite counts check out independently: preserving hw=1 forces the flip vector to be zero, leaving 3!=6 coordinate permutations, and the 12 order-4 signed-permutation elements come from transpositions with odd flip parity, so none preserve hw=1. One-bit flips send a weight-one vertex to weight 0 or 2. For the circulant packet, I+C+C^2=11^T, so P_doublet=I-(I+C+C^2)/3 and (C-C^2)^2/3=-P_doublet; the real circulant equations force a+b+c=0 and b=-c=±1/sqrt(3), giving exactly ±J_cs. The note does not claim the broader anti-unitary, projective, coin, induced, cohomological, measure-orientation, or det_C/det_R classifications, so no hidden bridge is needed for the audited bounded statement.
 - **auditor confidence:** high
 
 ### `flavor_einselection_2sector_modulo_kreality_2026-06-02`

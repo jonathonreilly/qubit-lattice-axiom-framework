@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 627 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1355 |
+| unaudited | 1354 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 955 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1639 |
+| `unaudited` | 1638 |
 
 | claim_type | count |
 |---|---:|
@@ -1114,6 +1114,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9371,6 +9372,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Substituting the canonical dilation U_int(|psi>⊗|0>) = Σ_r (P_r|psi>)⊗|r> into K_r = <r|_A U_int (I⊗|0>_A) gives K_r = P_r.  _(class `A`)_
 - **chain closes:** False — The canonical K_r=P_r calculation itself closes by direct finite-dimensional algebra. As written, however, Step 3 overstates the apparatus-unitary twist: for arbitrary V_A with the same readout basis, K_r = U_sys Σ_s <r|V_A|s> P_s and K_r†K_r = Σ_s |<r|V_A|s>|^2 P_s, not generally P_r.
 - **rationale:** The core canonical-frame derivation is a valid class-A algebraic substitution after the explicit isometry construction. The restricted packet also contains a math-bearing overbroad claim that (U_sys⊗V_A)U_int is still a dilation of the same first-outcome POVM for arbitrary apparatus unitary V_A; that is false unless the readout frame is correspondingly updated or V_A is restricted so it does not mix the projective outcome labels. Therefore the note is not clean as written, though the narrower V_A=I system-unitary twist and the canonical K_P=P result are sound.
+- **auditor confidence:** high
+
+### `luders_rule_from_composition_consistency_note_2026-05-20`
+
+- **Note:** [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the conditional algebraic derivation of the Lüders posterior σ|_P=PσP/Tr(PσP) on finite M_2(C)-tensor-product local algebras, assuming the standard trace/effect pairing and standard sequential-effect composition M_{P,E}=PEP.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-173515-ac7d23f2f1-luders_rule_from_composition`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The derivation sets the joint sequential effect for recording P then measuring E_i to M_{P,E_i}=P E_i P, so Bayes consistency forces Tr(σ|_P E_i)=Tr(PσP E_i)/Tr(σP) for all effects.  _(class `A`)_
+- **chain closes:** False — The displayed trace algebra from M_{P,E}=PEP to the Lüders formula is correct for nonzero outcome probability. The restricted packet does not derive or retain the load-bearing bridge M_{P,E}=PEP, and the note explicitly admits that this standard sequential-effect composition remains an input.
+- **rationale:** The formula inventory checks: cyclicity gives Tr(σPEP)=Tr(PσPE), Tr(σP)=Tr(PσP) for projections, equality against all effects fixes σ|_P, and the two-step update composes to the Kraus update for K=P_2P_1. However, the unique-update claim depends on importing the sequential-effect composition M_{P,E}=PEP and the trace/effect probability representation, neither of which is closed by the cited minimal axioms. The note itself flags the sequential composition as admitted, so the result is conditional rather than clean.
 - **auditor confidence:** high
 
 ### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`

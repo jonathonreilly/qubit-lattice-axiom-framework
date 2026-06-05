@@ -3,6 +3,7 @@
 **Loop slug:** `record-dynamics-classifier-20260605`  
 **Date:** 2026-06-05  
 **Branch:** `physics-loop/record-dynamics-classifier-20260605`  
+**Review PR:** https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2700  
 **Runners:**
 
 - `scripts/record_function_finite_sector_algebra_2026_06_05.py` -> PASS=18 FAIL=0

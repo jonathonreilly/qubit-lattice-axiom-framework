@@ -35,7 +35,7 @@ no_go_routes:
   - heat-kernel transit is an attractor at s=0
 runner_result: record_algebra PASS=18 FAIL=0; stability_grammar PASS=13 FAIL=0; dynamics_classifier PASS=26 FAIL=0
 review_findings: self-review clean; independent audit required
-pr_status: not_opened
+pr_status: opened https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2700
 next_exact_action: |
   Audit the three bounded scaffold rows, then target the remaining physical
   partition/arrow gate.

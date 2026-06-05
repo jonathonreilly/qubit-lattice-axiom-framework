@@ -20,3 +20,8 @@ Independent audit should verify:
 - the exact entropy derivatives and local stability calculations;
 - the dependency trace to the landed Record/generation/Koide dial rows;
 - the no-laundering boundary around physical value selection.
+
+## PR
+
+Review PR opened and verified:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2700

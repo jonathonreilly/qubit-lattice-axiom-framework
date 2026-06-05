@@ -28,6 +28,9 @@ Runner results:
 - Local stability grammar: PASS=13 FAIL=0.
 - Dynamics classifier: PASS=26 FAIL=0.
 
+Review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2700
+
 Main content:
 
 - Exact dial: `r(s)=2^(s-1)`, `Q(s)=1/3+(2/3)r(s)`.

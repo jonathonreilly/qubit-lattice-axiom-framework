@@ -1,10 +1,13 @@
-# PR Backlog
+# PR Status
 
-## Candidate title
+Opened and verified:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2700
+
+## Title
 
 Dynamics classifier for generation dial stable settings
 
-## Candidate body
+## Body summary
 
 Adds bounded scaffold/proposal artifacts for the post-Record dynamics push:
 

@@ -1,0 +1,80 @@
+##########################################################################
+# Q1 KEYSTONE ANGLE A: division-algebra forcing of holomorphic readout
+##########################################################################
+==========================================================================
+PART 1  R[Z_3] = R (+) C; Frobenius-Schur indicators; doublet = C
+==========================================================================
+PASS cyclic_generator_order_three
+PASS fs_indicator_singlet_is_plus_one :: nu(chi_0)=1+0j
+PASS fs_indicator_doublet_char1_is_zero :: nu(chi_1)=-1.85e-17+1.11e-16j
+PASS fs_indicator_doublet_char2_is_zero :: nu(chi_2)=1.48e-16+1.11e-16j
+PASS char1_char2_are_complex_conjugate_pair
+PASS real_idempotents_recovered
+PASS real_projectors_resolve_identity
+PASS singlet_real_dimension_one
+PASS doublet_real_dimension_two
+PASS projectors_orthogonal_idempotent
+PASS doublet_complex_structure_is_real_operator
+PASS J_supported_on_doublet
+PASS J_squares_to_minus_doublet_projector
+PASS J_commutes_with_group_action
+PASS J_is_native_division_algebra_element_not_imported :: J in centralizer with J^2=-P_d  =>  the doublet block's End-ring is C
+PASS Pd_J_real_linearly_independent :: rank{P_d,J}=2
+PASS doublet_commutant_real_dimension_two :: dim_R End(doublet)=2  (C as a real algebra), rank=2
+==========================================================================
+PART 2  det_C (1 complex slot) vs det_R (2 real slots) -> r, Q
+==========================================================================
+PASS koide_lever_r_half_gives_two_thirds
+PASS koide_lever_r_one_gives_one
+PASS koide_q_identity_numeric
+PASS det_R_counts_doublet_twice
+PASS det_C_counts_doublet_once
+PASS det_C_block_count_gives_r_half
+PASS det_R_dim_count_gives_r_one
+PASS det_C_block_count_gives_Q_two_thirds
+PASS det_R_dim_count_gives_Q_one
+PASS hermitian_spectrum_real
+PASS signed_spectrum_can_be_negative_at_r_half :: lam=[-0.399  1.52   1.879]
+PASS signed_readout_Q_two_thirds_theta_independent :: Q_signed=0.666667
+PASS singular_readout_theta_dependent_below_two_thirds :: Q_singular=0.415985
+PASS both_readouts_same_masses
+PASS readouts_differ_only_in_sqrt_m_sign
+==========================================================================
+PART 3  THE FORCING QUESTION: is read-by-native-field FORCED?
+==========================================================================
+PASS C_as_real_algebra_has_real_dimension_two :: dim_R(C)=2: restriction of scalars Res^C_R is a standard functor
+PASS det_R_equals_modulus_det_C_squared :: det_R(M)=|det_C(M)|^2 on the doublet (max dev 4.4e-15)
+PASS two_determinants_are_genuinely_distinct_functionals :: det_R = |det_C|^2  =>  distinct; choosing det_C is choosing a measure
+PASS doublet_supports_faithful_real_reading_two_modes
+PASS doublet_supports_faithful_complex_reading_one_mode
+PASS both_readings_internally_consistent :: Wedderburn fixes the block; it does NOT privilege one module structure
+PASS read_by_native_field_is_natural
+PASS read_by_native_field_is_NOT_uniquely_forced :: restriction-of-scalars is an equally-valid faithful reading
+PASS verdict_is_natural_not_forced :: verdict=NATURAL-NOT-FORCED
+
+>>> PART 3 VERDICT: det_C/holomorphic reading is NATURAL-NOT-FORCED.
+
+==========================================================================
+PART 4  Does the Record axiom's 'real' adjective ENTAIL det_C?
+==========================================================================
+PASS doublet_has_two_real_pointer_directions
+PASS pointer_directions_real
+PASS real_record_projectors_resolve_doublet
+PASS J_rotates_pointer_B1_into_B2 :: <B2|J|B1>=1.000, <B1|J|B1>=2.8e-17
+PASS real_record_breaks_complex_structure :: [P_B1, J] != 0  =>  registering which REAL alternative breaks J
+PASS record_counts_two_real_alternatives
+PASS record_real_adjective_gives_r_one
+PASS record_real_adjective_gives_Q_one
+PASS record_real_adjective_does_NOT_entail_holomorphic :: a real record breaks J => 'real alternatives' => det_R, not det_C
+PASS both_senses_of_real_converge_on_detR
+PASS detC_requires_counting_complex_alternatives :: the 'real' adjective is precisely what blocks det_C
+==========================================================================
+SUMMARY
+==========================================================================
+  Forcing verdict (read-by-native-field): NATURAL-NOT-FORCED
+  Record axiom 'real' adjective entails holomorphic (det_C)? NO
+  => Holomorphy (det_C, r=1/2) is a CHOICE (Stance H) independent of
+     the 'real records' Stance R; the 'real' adjective points to det_R (r=1).
+==========================================================================
+SCORECARD: PASS=52 FAIL=0
+==========================================================================

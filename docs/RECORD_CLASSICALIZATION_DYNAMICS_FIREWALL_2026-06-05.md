@@ -2,10 +2,16 @@
 
 **Theorem name:** `RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL`
 **Date:** 2026-06-05
-**Claim type:** bounded support theorem / frontier derivation.
+**Claim type:** exact support theorem for Record typing, with bounded dynamics
+corollaries.
 **Status authority:** independent audit lane only. This source note does not set,
 predict, or assert an audit verdict and does not claim package-status promotion.
-**Primary runner:**
+**Primary exact runner:**
+[`scripts/frontier_record_typing_firewall_exact_2026_06_05.py`](../scripts/frontier_record_typing_firewall_exact_2026_06_05.py)
+with cache
+[`logs/runner-cache/frontier_record_typing_firewall_exact_2026_06_05.txt`](../logs/runner-cache/frontier_record_typing_firewall_exact_2026_06_05.txt).
+
+**Supporting dynamics runner:**
 [`scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py`](../scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py)
 with cache
 [`logs/runner-cache/frontier_record_classicalization_dynamics_firewall_2026_06_05.txt`](../logs/runner-cache/frontier_record_classicalization_dynamics_firewall_2026_06_05.txt).
@@ -15,11 +21,22 @@ with cache
 ## Statement
 
 Given the current three-premise framework
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md), a one-site
-qubit is the **pre-record carrier**: it supplies a state in `M_2(C)` whose
-instrument outcomes have predictive weights. A durable post-record site is not
-that predictive probability vector. It is the realized readout value in the
-finite record alphabet: a label, orbit, one-hot atom, or additive count.
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md), the exact
+Record-typing theorem is:
+
+> Once a readout context supplies a finite central-sector decomposition and a
+> fixed `K`/CPT conjugation, the post-record object supplied by Record is the
+> realized `K`/CPT orbit of the realized central sector. It is therefore an
+> atom/value in the finite record alphabet. A probability is a separate
+> normalized state on the event algebra over possible record atoms. Record
+> supplies the former and explicitly does not supply the latter.
+
+In the quantum interface, a one-site qubit is the **pre-record carrier**: it
+supplies a state in `M_2(C)` whose instrument outcomes can have predictive
+weights once an instrument/readout context is supplied. A durable post-record
+site is not that predictive probability vector. It is the realized readout
+value in the finite record alphabet: a label, orbit, one-hot atom, or additive
+count.
 
 Equivalently, the dynamics has three typed surfaces:
 
@@ -49,14 +66,60 @@ The Record axiom already says:
 - Record supplies no probability, weighting, normalization, or dynamics.
 
 Those clauses already type the post-record object as a realized readout value
-rather than a probability distribution. The only extra operational reading used
-here is that durable registration is re-readable as the same realized outcome.
-If audit decides that re-readability is not already contained in "durable
-registration", the minimal repair is a one-line clarification inside Record:
-"durable registration is stable under re-read of the same realized outcome."
-It is not a new "post-record information" axiom.
+rather than a probability distribution. The exact core theorem below does not
+need a physical measurement dynamics, a decoherence model, Born-frequency
+typicality, or a no-cloning/no-broadcasting theorem. Those are relevant to
+later dynamics, but not load-bearing for the Record typing result.
 
-## Proof sketch
+If audit later wants a stronger operational reading of durability, such as
+explicit re-read stability, that is a possible clarification of Record. It is
+not a fourth "post-record information" axiom.
+
+## Exact proof
+
+Let `S` be the finite central-sector set supplied by a readout context, and let
+`K:S -> S` be the fixed `K`/CPT involution supplied by that context. The Record
+axiom says the realized outcome is the `K`/CPT orbit of the realized central
+sector. Therefore the record alphabet is the finite quotient/orbit set
+
+```text
+O = S / <K>.
+```
+
+If the realized central sector is `s in S`, the post-record value is the orbit
+
+```text
+[s] = {s, K s} in O
+```
+
+with the obvious singleton reduction when `K s = s`.
+
+The event algebra over possible records is the Boolean algebra `P(O)`. A
+realized record atom is a singleton event `{[s]}` or, equivalently after a basis
+choice, a one-hot atom `e_[s]`.
+
+By contrast, a probability on possible records is a normalized positive
+additive state
+
+```text
+mu : P(O) -> [0,1],
+mu(empty)=0,     mu(O)=1,
+mu(A union B)=mu(A)+mu(B) for disjoint A,B.
+```
+
+This is a map on events, not an event/atom itself. The Record axiom gives finite
+scalar additivity for the readout `I`, and it explicitly says Record supplies
+no weighting, normalization, or probability. Therefore the realized
+post-record value and a probability state over possible record values are
+different object types on the current axiom surface.
+
+For the supplied generation readout context, this is exactly the distinction
+between the two atom alphabet `{singlet, doublet}` and probability states over
+that alphabet such as `(1/2,1/2)` or `(1/3,2/3)`. The atom alphabet is exact
+once the context is supplied; the choice of state over it is not supplied by
+Record. ∎
+
+## Quantum-interface proof sketch
 
 ### 1. The pre-record qubit is a state over possible records
 
@@ -71,7 +134,7 @@ p_r = Tr(P_r rho).
 Those weights are numbers attached to possible record outcomes before the
 registration is selected or when an ensemble summary is kept.
 
-### 2. A durable record must live in a stable pointer/readout alphabet
+### 2. A durable record has a stable pointer/readout model
 
 The Record premise says the record is the realized `K`/CPT orbit of the realized
 central sector, fixed once registered. Such values form a finite disjoint
@@ -81,16 +144,18 @@ readout alphabet. In the simplest two-outcome case the post-record atoms are
 e_0 = (1,0),      e_1 = (0,1).
 ```
 
-They are orthogonal, distinguishable, and idempotent under re-read. They can be
-copied as labels. By contrast, a generic qubit superposition cannot be copied
-by the same stable label-copying operation; applying the classical copier to
-`a|0> + b|1>` produces entanglement `a|00> + b|11>`, not two independent copies
-of the input state. Thus the stable post-record object is the pointer/readout
-atom, while the conditional quantum state is a separate branch state.
+They are orthogonal and distinguishable. If one adds the ordinary operational
+reading that durability supports repeat readout, they are also idempotent under
+re-read and can be copied as labels. By contrast, a generic qubit superposition
+cannot be copied by the same stable label-copying operation; applying the
+classical copier to `a|0> + b|1>` produces entanglement `a|00> + b|11>`, not two
+independent copies of the input state. Thus the stable post-record object is the
+pointer/readout atom, while the conditional quantum state is a separate branch
+state.
 
 This is the finite-matrix version of the usual no-cloning/no-broadcasting
-boundary: durable re-readable records select a commuting readout algebra, not
-the full noncommuting qubit state space.
+boundary. It is supporting dynamics intuition, not an extra premise for the
+exact Record-typing theorem above.
 
 ### 3. Probability is a state on the record algebra, not the atom itself
 
@@ -147,7 +212,7 @@ not either realized history update. This is the practical firewall:
 1. **Cleaner dynamics.** Quantum dynamics, record formation, and post-record
    information flow no longer compete for the same type slot.
 
-2. **A stable route to unbounded retained history.** The record sector can grow
+2. **A stable route to unbounded recorded history.** The record sector can grow
    by additive count/history updates without requiring the entire history to
    remain as one coherent qubit state.
 
@@ -179,8 +244,8 @@ pre-record predictive or ensemble prior.
 ## What remains open
 
 - The physical record-production dynamics is still outside the Record axiom.
-  This note only types the surfaces once a finite instrument/readout context is
-  supplied.
+  The exact core only types the readout surface once a finite readout context is
+  supplied; the supporting quantum example additionally supplies an instrument.
 - The Born operational frequency identification remains separate from the
   algebraic probability functional, consistent with the adjacent
   `BORN_QUANTUM_RECORD_UNCONDITIONAL_FORM_VS_OPERATIONAL_RESIDUAL` branch.
@@ -191,7 +256,21 @@ pre-record predictive or ensemble prior.
 
 ## Verification
 
-The runner verifies the finite example with exact `sympy` arithmetic:
+The primary exact runner verifies the finite-set Record theorem:
+
+| Block | Content |
+|---|---|
+| C1-C4 | finite central-sector set, fixed `K`/CPT involution, orbit alphabet |
+| E1-E3 | event algebra `P(O)` over record atoms |
+| R1-R3 | finite Record readout additivity without normalization |
+| P1-P5 | multiple probability states over the same alphabet; no unique measure supplied |
+| T1-T4 | realized atom and probability state have different types |
+| H1-H2 | finite post-record counts add componentwise |
+
+Expected scorecard: `PASS=27 FAIL=0`.
+
+The supporting dynamics runner verifies the finite qubit example with exact
+`sympy` arithmetic:
 
 | Block | Content |
 |---|---|

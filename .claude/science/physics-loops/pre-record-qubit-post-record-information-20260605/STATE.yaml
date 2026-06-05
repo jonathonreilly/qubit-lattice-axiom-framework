@@ -2,28 +2,31 @@ loop_slug: pre-record-qubit-post-record-information-20260605
 branch: physics-loop/pre-record-qubit-post-record-info-dynamics-20260605
 started_at: 2026-06-05
 mode: run
-target_status: bounded-support
+target_status: exact-support
 active_route: record-classicalization-dynamics-firewall
 cycle_count: 1
-actual_current_surface_status: bounded-support
-trace_class: frontier_discovery
-reachability_to_target: unknown_frontier
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
 artifact_role: theorem
 files_touched:
   - docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md
+  - scripts/frontier_record_typing_firewall_exact_2026_06_05.py
+  - logs/runner-cache/frontier_record_typing_firewall_exact_2026_06_05.txt
   - scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py
   - logs/runner-cache/frontier_record_classicalization_dynamics_firewall_2026_06_05.txt
   - .claude/science/physics-loops/pre-record-qubit-post-record-information-20260605/
 verification:
+  - command: python3 scripts/frontier_record_typing_firewall_exact_2026_06_05.py
+    result: PASS=27 FAIL=0
   - command: python3 scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py
     result: PASS=29 FAIL=0
 open_imports:
-  - physical record-production dynamics
-  - operational frequency/typicality identification for Born weights
-  - generation/Koide prior-selection stability rule
-  - audit decision whether durable registration already includes re-readability
+  - physical record-production dynamics remains open for downstream dynamics, not for the exact Record typing theorem
+  - operational frequency/typicality identification remains open for Born-frequency interpretation, not for the exact Record typing theorem
+  - generation/Koide prior-selection stability rule remains open
 review_disposition: local_self_review_pass
 pr_status: opened
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2708
 next_exact_action: use this artifact as upstream support for a generation-prior stability runner
-stop_condition: one coherent bounded-support block completed
+stop_condition: one coherent exact-support block completed

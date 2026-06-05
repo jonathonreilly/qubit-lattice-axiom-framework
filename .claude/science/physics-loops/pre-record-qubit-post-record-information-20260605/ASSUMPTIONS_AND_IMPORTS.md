@@ -22,8 +22,13 @@
 - Operational frequency/typicality identification for Born weights.
 - Equal-letter generation prior or Koide value.
 
-## Possible audit-sensitive premise
+## Exact theorem premise boundary
 
-The source note reads "durable registration" as including re-readability of the
-same realized outcome. If audit decides this is not already implied by Record,
-the proposed minimal clarification is inside Record itself, not a fourth axiom.
+The exact Record-typing theorem does not require a physical instrument,
+decoherence model, re-readability theorem, or Born-frequency typicality. It uses
+only the current Record wording that the realized outcome is a `K`/CPT orbit in
+a supplied finite readout context and that Record supplies no probability,
+weighting, or normalization.
+
+Repeat-read/copyability remains useful dynamics intuition, but it is not a
+load-bearing premise for the exact type separation.

@@ -1,0 +1,153 @@
+===== runner cache v1 =====
+runner: scripts/frontier_chirality_under_record_axiom_probe.py
+runner_sha256: 140cfddb0171c7d469e5d553a405cb5ef9810ffce46a5be1605d8440195b91ea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.15
+status: ok
+----- stdout -----
+
+==========================================================================
+PART 0: SETUP -- H, Fourier diagonalization, the WALL entrywise rule
+==========================================================================
+  [PASS] [A] C^3 = I
+  [PASS] [A] F unitary (F^dag F = I)
+  H eigenvalues (Fourier): L0 = a + 2*b_r
+                           L1 = a + sqrt(3)*b_i - b_r
+                           L2 = a - sqrt(3)*b_i - b_r
+  [PASS] [A] H is diagonal in the Fourier basis (circulant)
+  [PASS] [A] mean of eigenvalues = a  (L0+L1+L2 = 3a)
+  [PASS] [A] WALL: {Gamma,H}_{jk} = (L_j+L_k) Gamma_{jk}  (all 9 entries)
+  => anticommuting Gamma is supported only where L_j + L_k = 0 (and
+     L_m = 0 on the diagonal): the origin-reflection / chiral locus.
+
+==========================================================================
+PART 1: Q1a -- the static K (complex conjugation / real structure)
+==========================================================================
+  Static K (linear part on the real basis) = I3.
+  [PASS] [P1] static K Hermitian
+  [PASS] [P2] static K involution (K^2 = I)
+  [PASS] [P3-FAIL] static K is ON-BLOCK in Fourier (diagonal) => NOT off-block
+  [PASS] [P4-FAIL] static K is CIRCULANT ([K,C]=0) => NOT orbit-splitting
+  [PASS] [P5-FAIL] {H, K} = 2H != 0 => K does NOT anticommute with H
+  static K trace = 3 (traceless-fails); as a grading <v|K|v> = 1 != 0
+  => imposes no Koide cone; CONFIRMS prior 'static K on-block, Q ill' finding.
+
+==========================================================================
+PART 2: Q1b -- the K-odd Hermitian operator i(C - C^2)
+==========================================================================
+  Kodd = i(C - C^2):
+⎡0   -ⅈ  ⅈ ⎤
+⎢          ⎥
+⎢ⅈ   0   -ⅈ⎥
+⎢          ⎥
+⎣-ⅈ  ⅈ   0 ⎦
+  [PASS] [P1] Kodd Hermitian
+  spec(Kodd) = {-sqrt(3): 1, sqrt(3): 1, 0: 1}
+  [PASS] [A] spec(Kodd) = {0, -sqrt3, +sqrt3}
+  [PASS] [P2-FAIL] Kodd is NOT an involution (Kodd^2 = 3 P_doub != I; has a 0 eig)
+  Kodd in Fourier basis = diag(0, sqrt(3), -sqrt(3))
+  [PASS] [P3-FAIL] Kodd is ON-BLOCK (diagonal in Fourier) => NOT off-block
+  [PASS] [P4-FAIL] Kodd is CIRCULANT ([Kodd,C]=0) => NOT orbit-splitting
+  [PASS] [P5-FAIL] [H, Kodd] = 0: Kodd COMMUTES with H (does NOT anticommute)
+  [PASS] [A] {H, Kodd} = 2 H Kodd != 0 (so anticommutation fails unless H Kodd=0)
+  spec(Kodd/sqrt3) = {0, -1, +1} -- still has a 0, still NOT an involution
+  [PASS] [P2-FAIL] Kodd/sqrt3 still not an involution (0 eigenvalue)
+  eigenvalue Koide of spec(Kodd) (sum=0): Q = oo  (NOT 2/3)
+  [PASS] [A] Kodd own-spectrum Koide Q = oo (sum of eigenvalues = 0)
+  NOTE: Kodd = i*sqrt3*J where J=(C-C^T)/sqrt3 is the pt3 doublet complex
+  structure; this is its Hermitian partner, still circulant/on-block.
+
+==========================================================================
+PART 3: Q2 -- the orbit-distinguishing operator (chi_1 vs chi_2)
+==========================================================================
+  Orbit-distinguisher O_dist (site basis) = F diag(0,+1,-1) F^dag:
+⎡        -√3⋅ⅈ    √3⋅ⅈ ⎤
+⎢  0     ──────   ──── ⎥
+⎢          3       3   ⎥
+⎢                      ⎥
+⎢ √3⋅ⅈ           -√3⋅ⅈ ⎥
+⎢ ────     0     ──────⎥
+⎢  3               3   ⎥
+⎢                      ⎥
+⎢-√3⋅ⅈ    √3⋅ⅈ         ⎥
+⎢──────   ────     0   ⎥
+⎣  3       3           ⎦
+  [PASS] [P1] O_dist Hermitian
+  [PASS] [A] O_dist eigenvalues {0,+1,-1} (distinguishes chi_1 from chi_2)
+  [PASS] [P2-FAIL] O_dist NOT an involution (0 eigenvalue on singlet)
+  [PASS] [P3-FAIL] O_dist is ON-BLOCK (diagonal in Fourier) => NOT off-block
+  [PASS] [P4-FAIL] O_dist is CIRCULANT ([O_dist,C]=0) => NOT orbit-SPLITTING off-block
+  [PASS] [P5-FAIL] [H, O_dist] = 0: COMMUTES with H (does NOT anticommute)
+  The within-orbit distinguisher lives in the SAME (Fourier-diagonal /
+  circulant) algebra as H: it separates the two doublet characters but
+  does NOT mix singlet<->doublet. It is on-block. CONFIRMS the wall.
+
+==========================================================================
+PART 4: Q3 -- does the arrow (durable registration) orient a chirality?
+==========================================================================
+  arrow orientation +Kodd: [Op,C]=0 ? True;  [H,Op]=0 ? True
+  arrow orientation -Kodd: [Op,C]=0 ? True;  [H,Op]=0 ? True
+  [PASS] [A] +Kodd and -Kodd are BOTH on-block circulant (orientation inert)
+  [PASS] [A] +Kodd and -Kodd BOTH commute with H (neither anticommutes)
+  The arrow orients an operator that is on-block and commutes with H;
+  orienting a non-anticommuting operator changes no anticommutation
+  content and no Koide readout. CONFIRMS pt3 'CPT orientation inert'.
+
+==========================================================================
+PART 5: Q4 DECISIVE -- real/CPT-even (det_R) defaults to r=1 (NON-chiral)
+==========================================================================
+  L0 + L1 = 2*a + sqrt(3)*b_i + b_r
+  L0 + L2 = 2*a - sqrt(3)*b_i + b_r
+  An off-block g01 entry is allowed on surface S01: a = -sqrt(3)*b_i/2 - b_r/2  (FINITE, not a=0)
+  -- so a single off-block entry does NOT immediately force a=0. The
+     constraint comes from completing Gamma to an INVOLUTION on all 3 modes:
+  CASE A (mode 2 decoupled, g22=+-1): involution needs L2=0 on S01
+          => [{a: 0, b_r: -sqrt(3)*b_i}]  => a = [0]
+  [PASS] [A] CASE A: off-block involution with mode 2 decoupled FORCES a = 0 (chiral limit)
+  CASE B (mode 2 off-block too): L0+L1=L0+L2=L1+L2=0 => [{a: 0, b_i: 0, b_r: 0}]
+  [PASS] [A] CASE B: mode 2 off-block forces a = b = 0 (trivial H = 0)
+  CASE C (diagonal involution): no singlet<->doublet mixing => ON-BLOCK,
+          fails the off-block requirement P3 by construction.
+  [PASS] [A] EXHAUSTIVE: no off-block, finite-a, Hermitian INVOLUTION anticommutes with H
+  => at FINITE a != 0 NO off-block Hermitian INVOLUTION anticommutes with H.
+     A single off-block entry can sit at finite a, but completing it to a
+     Z_2 grading on the odd 3rd mode forces a = 0. Candidate-independent WALL.
+  at a=0: eigenvalues [2*b_r, sqrt(3)*b_i - b_r, -sqrt(3)*b_i - b_r], sum = 0
+  [PASS] [A] at a=0 (where off-block grading exists) eigenvalue Koide Q = oo (sum=0)
+  [PASS] [A] Gamma_chi = (2/3)J - I is Hermitian involution, spectrum {+1,-1,-1}
+  [PASS] [A] Gamma_chi is CIRCULANT ([Gamma_chi, C] = 0) => COMMUTES with H (det_R/non-chiral)
+  The canonical singlet/doublet Hermitian involution Gamma_chi COMMUTES
+  with H: {H,Gamma_chi} = 2 H Gamma_chi != 0. So the real/CPT-even side
+  carries the COMMUTING grading -> NO chirality -> the NON-chiral default.
+  det_R eigenvalue readout at r=1/2 (theta=0): eigs=[2.41421, 0.292893, 0.292893]
+  Q(det_R) = 2/3  (= 2/3 by the retained circulant theorem, NO chirality)
+  [PASS] [A] det_R eigenvalue readout at r=1/2 gives Q = 2/3 with the COMMUTING grading
+
+  CRUX (Q4): the Record axiom's REAL / CPT-even stance carries the
+  COMMUTING circulant grading Gamma_chi (non-chiral default), and ANY
+  off-block anticommuting (chiral / K-odd) grading is forced to a = 0
+  where the eigenvalue readout diverges. The new K/CPT structure
+  DEFAULTS AWAY from chirality; it does NOT supply an off-block, finite-a,
+  Gamma_chi. It CONFIRMS / STRENGTHENS the established no-go.
+
+==========================================================================
+SCORECARD
+==========================================================================
+  PASS = 34
+  FAIL = 0
+
+  VERDICT: NEW-AXIOM-CONFIRMS-OR-STRENGTHENS-NO-GO.
+  Every K/CPT-native operator the Record axiom makes available --
+  static K, the K-odd i(C-C^2), the orbit-distinguisher diag(0,+1,-1),
+  and both arrow orientations -- is ON-BLOCK / CIRCULANT and COMMUTES
+  with H (fails P3,P4,P5). The real/CPT-even (det_R) readout defaults to
+  the COMMUTING grading (non-chiral, Q=2/3 value WITHOUT chirality, or
+  Q=1 on the block/dimension default), while the off-block anticommuting
+  chiral grading is forced to the a=0 chiral limit (Q=oo). No off-block,
+  finite-a, C_3-orbit-splitting Hermitian involution Gamma_chi is produced.
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_octahedral_overconstrains_value_bit.py
+runner_sha256: ad77563b62cac365d4a4d9353553e120791b193da3cb5a0dd8d10c74a00868b1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+SECTION 1.  Group orders and basic structure
+==============================================================================
+[PASS] O_h has 48 elements (full octahedral, signed permutations)  --  |O_h|=48
+[PASS] C_3 has 3 elements (body-diagonal cyclic)  --  |C_3|=3
+[PASS] C_3 subset O_h (every cyclic perm is a signed perm)
+[PASS] O_h strictly richer than C_3
+
+==============================================================================
+SECTION 2.  Invariant inner products (weight forms) on generation R^3
+==============================================================================
+[PASS] C_3-invariant symmetric forms span 2 dimensions  (this IS the weight freedom)  --  dim=2: span{I, J-I}
+[PASS] O_h-invariant symmetric forms span exactly 1 dimension  (FREEDOM COLLAPSES)  --  dim=1
+[PASS] the unique O_h-invariant inner product is the ROUND metric lambda*I  --  O_h forces the isotropic Euclidean metric
+
+==============================================================================
+SECTION 3.  O_h is IRREDUCIBLE on R^3: it erases the trivial/doublet split
+==============================================================================
+[PASS] democratic direction (1,1,1) IS C_3-invariant
+[PASS] democratic direction (1,1,1) is NOT O_h-invariant (sign flips move it)  --  36 of 48 O_h elements move +-(1,1,1)
+[PASS] O_h-average of democratic projector P0 = (1/3) I  (R^3 is O_h-irreducible T_1u)  --  no O_h-invariant trivial/doublet decomposition exists
+
+==============================================================================
+SECTION 4.  Round metric does not select Q (Q is a spectrum ratio)
+==============================================================================
+[PASS] democratic spectrum (1,1,1): A^2:D^2 = 1:0 -> Q = 1/3  --  Q=0.333333
+[PASS] equal-block spectrum (A^2 = D^2) -> Q = 2/3  (THE OBSERVED VALUE)  --  Q=0.666667, A^2=1.0000, D^2=1.0000
+[PASS] per-dimension spectrum (A^2:D^2 = 1:2) -> Q = 1  --  Q=1.000000
+[PASS] round (scalar) re-metricization leaves Q invariant (so O_h-roundness can't pin Q)  --  Q(lambda*s)=Q(s); the bit is the A^2:D^2 split, untouched by a round metric
+
+==============================================================================
+SECTION 5.  O_h-equivariant mass operator is forced scalar (degenerate)
+==============================================================================
+[PASS] C_3-equivariant operators: 3-parameter (circulant a,b,c) -> rich spectrum possible  --  dim=3
+[PASS] O_h-equivariant operators: 1-parameter, forced SCALAR lambda*I  --  Schur on the irreducible T_1u rep
+[PASS] => O_h-equivariant mass operator has a DEGENERATE spectrum (m1=m2=m3): no generation hierarchy  --  no nondegenerate generation mass operator is O_h-equivariant
+
+==============================================================================
+SECTION 6.  O_h-equivariant chiral (anticommuting) operator is forced to 0
+==============================================================================
+[PASS] Gamma_chi = (2/3)J - I has eigenvalues {+1,-1,-1}  --  eig=[-1. -1.  1.]
+[PASS] the only O_h-equivariant H is scalar; {H, Gamma_chi}=0 forces H=0  --  scalar H cannot anticommute with the nonzero Gamma_chi unless H=0
+[PASS] a NON-circulant anticommuting witness exists ({H,Gamma}=0, [H,R]!=0) -- not O_h-equivariant  --  so the bit is not vacuous; O_h removes it by over-constraint, not by selection
+[PASS] the anticommuting witness is NOT O_h-invariant (consistent with O_h over-constraint)
+
+==============================================================================
+SECTION 7.  On Herm(3) the Frobenius (alpha,beta) family survives O_h
+==============================================================================
+[PASS] Frobenius form Tr(XY) on Herm(3) is O_h-invariant
+[PASS] scalar form tr(X)tr(Y) on Herm(3) is O_h-invariant
+[PASS] => on Herm(3) the (alpha,beta) Frobenius family is NOT collapsed by O_h (scalar/traceless ratio stays free)  --  the Section-2 collapse is specific to the generation R^3 metric, not Herm(3)
+
+==============================================================================
+SECTION 8.  Dichotomy: preserve-the-split XOR pin-the-ratio
+==============================================================================
+[PASS] largest O_h-subgroup fixing the democratic direction (1,1,1) is order 6 (C_3v)  --  |stab(1,1,1)|=6
+[PASS] that split-preserving subgroup STILL leaves a 2-dim weight freedom (bit FREE)  --  invariant-form dim=2
+[PASS] its commutant is only 2-dim (still admits nondegenerate operators, unlike O_h's scalar)  --  commutant dim=2
+[PASS] => DICHOTOMY: a group preserves the trivial/doublet split (bit defined, but FREE) OR enlarges to sign-flips (bit pinned-by-erasure). Never both.  --  no intermediate group simultaneously defines and pins the value bit
+
+==============================================================================
+VERDICT
+==============================================================================
+O_h OVER-CONSTRAINS the charged-lepton Koide value bit.
+ - It DOES collapse the C_3 isotype-weight freedom on R^3 (2 -> 1; unique round metric),
+   confirming that full O_h is strictly stronger than C_3 on this carrier.
+ - But (i) a round metric does not select the A^2:D^2 block split that sets Q;
+       (ii) O_h is irreducible on R^3, ERASING the trivial/doublet split the bit lives on;
+       (iii) any O_h-equivariant mass operator is forced scalar (degenerate, no hierarchy),
+             and any O_h-equivariant chiral operator is forced to 0.
+ - Therefore O_h neither derives r=1/2/Q=2/3 nor leaves it free: it removes the carrier.
+   This is the structural reason the affine chart is only +-I-covariant under O_h
+   (koide_q23_oh_covariance_nogo): a genuine generation spectrum cannot be O_h-equivariant.
+ - The surviving route is a C_3-level split-preserving selection principle or
+   another structure that keeps the nondegenerate carrier intact, not full O_h
+   enlargement on the generation-axis carrier.
+
+SCORECARD: PASS=28  FAIL=0
+ALL CHECKS PASS
+
+----- stderr -----
+

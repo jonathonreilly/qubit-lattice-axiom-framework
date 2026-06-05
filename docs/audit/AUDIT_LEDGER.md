@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 177 |
-| **retained_no_go** | 189 |
+| **retained_no_go** | 190 |
 | **retained_bounded** | 666 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1245 |
+| unaudited | 1244 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1026 |
+| `audited_clean` | 1027 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1529 |
+| `unaudited` | 1528 |
 
 | claim_type | count |
 |---|---:|
@@ -628,6 +628,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_octahedral_overconstrains_value_bit_narrow_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -9573,6 +9574,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Solving the defined real Z3 commutant/idempotent equations and substituting z=0, selected=1, c=0, and eta_Z3=2/9 into the route laws yields Q=2/3, no native spectator projector, and delta_open=2/9.  _(class `A`)_
 - **chain closes:** True — The displayed identities independently reduce to exact finite algebra under the note's own definitions. No cited authorities, fitted data, external comparators, or physical bridge identifications are used.
 - **rationale:** The source is explicitly scoped to a bounded defined route object, and the claimed consequences are algebraic identities inside that object. Independent formula checks confirm the zero-source Q calculation, the real Z3 commutant and idempotents, the absence of commuting real rank-one projectors, the based endpoint c=0, the finite sum eta_Z3=2/9, and delta_open=2/9. The runner source computes the load-bearing symbolic quantities directly with no helper imports, calibrated constants, or physical target import; its prose-only boundary checks do not carry the algebraic conclusion.
+- **auditor confidence:** high
+
+### `koide_octahedral_overconstrains_value_bit_narrow_note_2026-06-02`
+
+- **Note:** [`KOIDE_OCTAHEDRAL_OVERCONSTRAINS_VALUE_BIT_NARROW_NOTE_2026-06-02.md`](../../docs/KOIDE_OCTAHEDRAL_OVERCONSTRAINS_VALUE_BIT_NARROW_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Scoped no-go: full O_h equivariance on the three-dimensional generation-axis carrier R^3 cannot derive or host the C_3 Koide value-bit split; it collapses the metric to round form and forces degenerate scalar equivariant mass operators.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-febfb8c2dd-koide_octahedral_overconstra`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Full signed-permutation O_h equivariance on the R^3 generation carrier forces invariant symmetric forms and equivariant operators to be scalar while moving the democratic direction, so the C_3 trivial/doublet value-bit carrier is erased rather than selected.  _(class `A`)_
+- **chain closes:** True — The restricted packet gives the full finite-group action and runner source, and the core statements follow from standard linear algebra for signed permutations: diagonal sign flips kill off-diagonal invariant form entries and permutations equalize diagonal entries, while the commutant is scalar. This proves the scoped O_h-carrier obstruction without importing an external physical identification.
+- **rationale:** The runner is not a print-only or tuned-value check: it explicitly constructs O_h and C_3, averages forms/operators over the group, verifies invariant dimensions, and checks the projector and commutant claims. Independent formula inventory agrees with the load-bearing identities: |O_h|=2^3*3!=48, the C_3 symmetric-form space is span{I,J-I}, O_h-invariant forms are lambda I, the O_h average of vv^T/||v||^2 is I/3, and scalar H anticommutes with Gamma only at H=0. The no-go is properly scoped and leaves C_3-level or other split-preserving routes open, so it is a closed obstruction only to full O_h equivariance on R^3.
 - **auditor confidence:** high
 
 ### `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02`

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 647 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1306 |
+| unaudited | 1305 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -51,7 +51,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
-| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 1 |
+| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 2 |
 | `decoration_under_three_generation_observable_theorem_note` | 1 |
 | `decoration_under_wide_lattice_h2t_distance_law_note` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
@@ -62,20 +62,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 988 |
 | `audited_conditional` | 58 |
-| `audited_decoration` | 49 |
+| `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1590 |
+| `unaudited` | 1589 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1289 |
-| `decoration` | 50 |
+| `decoration` | 51 |
 | `meta` | 288 |
 | `no_go` | 297 |
 | `open_gate` | 135 |
-| `positive_theorem` | 716 |
+| `positive_theorem` | 715 |
 
 | criticality | count |
 |---|---:|
@@ -1209,6 +1209,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lorentz_kernel_positive_closure_note` | decoration | ~~audited_decoration~~ | `decoration_under_emergent_lorentz_invariance_note` | cross_family | codex-gpt-5.5 | A | `emergent_lorentz_invariance_note` |
+| `momentum_charge_commute_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
@@ -10476,6 +10477,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The reflected Berezin/Wick 2-step block metric for each staggered fermion mode has its single positive eigenvalue equal to c_block * e^{-2E_j} with c_block = 2, and the same finite-carrier equality holds for the tested fixed U(1)/SU(3) backgrounds and position-basis Gram.  _(class `C`)_
 - **chain closes:** True — Within the bounded finite-carrier scope, the runner instantiates the staggered Dirac matrix, performs Wick contractions with M^{-1}, separately computes the spatial-hop energies and Fock/operator transfer blocks, and compares them to numerical precision. The source explicitly excludes the full mixed gauge-fermion representation, determinant/Haar measure, compact-group gauge positivity, and continuum OS reconstruction.
 - **rationale:** The load-bearing comparison is not a definition or external numerical match: the Berezin side is computed from the finite Grassmann propagator while the operator side is computed from the spatial-hop spectrum and Fock transfer construction. The runner output covers the displayed finite-carrier quantitative claims in scope, including c_block = 2, the e^{-2E} decay anchor, and the single-step indefinite negative control. CHECK 3 is correctly scoped as a shared-wrapper per-config fermion equality, not as an independent mixed-observable gauge-fermion test.
+- **auditor confidence:** high
+
+### `momentum_charge_commute_theorem_note_2026-05-02`
+
+- **Note:** [`MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md`](../../docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** On the retained finite periodic tensor-product translation surface, Q_total commutes with tensor-permutation translations and with finite-branch spectral generators of axial translations.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-213552-70899da0d1-momentum_charge_commute_theo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained bridge gives [T_a,Q_total]=0, and because T_{e_mu} is finite-dimensional normal, Q_total commutes with its spectral projectors, hence with K_mu = sum_theta theta Pi_theta.  _(class `A`)_
+- **chain closes:** True — The sole cited authority is explicitly retained and supplies the same-surface identity [T_a,Q_total]=0. The K_mu and common-label conclusions follow by finite-dimensional spectral calculus and simultaneous diagonalization of commuting Hermitian operators.
+- **rationale:** The note adds no independent physical identification beyond the retained tensor-product translation bridge. Its substantive work is an algebraic corollary: spectral projectors and real finite-branch functions of a commuting finite-dimensional unitary also commute with Q_total. The runner source performs real finite-matrix checks rather than printing constants, and it contains no external comparator or tuned numerical input. Because the chain reduces to one retained parent plus standard mathematics, the conservative verdict is decoration rather than an independent positive theorem.
+- **decoration parent:** `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
 - **auditor confidence:** high
 
 ### `moonshot_other_testables_note`

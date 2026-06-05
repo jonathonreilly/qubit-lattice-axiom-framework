@@ -1,0 +1,74 @@
+==============================================================================
+STAGGERED-DIRAC SAME-LEG SPIN-TASTE CHIRALITY PROBE
+d=3+1 taste cube C^8=(C^2)^{(x)3}; hw=1 generation orbit; spin-taste
+gamma5 = (-1)^{hw}.  Does same-leg chirality split the generation
+orbit (-> r=1/2) or wash out to the S_3-uniform scalar?
+==============================================================================
+
+PART 1 -- cube C^8 = (C^2)^{(x)3}, hw grading, S_3, hw=1 orbit
+  [PASS] hw multiplicities (1,3,3,1) sum to 8 [class-A]  (counts=[1, 3, 3, 1])
+  [PASS] S_3 characters on C^8: chi(e)=8, chi(transp)=4, chi(3cyc)=2 [class-A]  ((8,4,2))
+  [PASS] C^8 = 4 A1 + 0 A2 + 2 E (retained s3_taste_cube_decomposition) [class-A]  ((A1,A2,E)=(4,0,2))
+  [PASS] hw=1 generation orbit has 3 states {e1,e2,e3} [class-A]  (idx=[1, 2, 4])
+  [PASS] Z_3 3-cycle permutes the hw=1 orbit cyclically [class-A]  (e1->2 e2->1 e3->4)
+
+PART 2 -- same-leg structure is real (chirality + taste share C^8)
+  [PASS] Gamma_ST = sigma3^{(x)3} equals native Gamma_KS = (-1)^{hw} on C^8 [class-A]  (spin-taste gamma5 IS the staggered phase on the cube)
+  [PASS] cube dim 8 is not 3 * 2 (no clean generation(x)chirality split) [class-A]  (the generation triple lives INSIDE C^8, not as a tensor leg)
+  [PASS] Gamma_KS is Hermitian involution (Gamma^2 = I, Gamma = Gamma^T) [class-A]
+
+PART 3 -- Gamma_KS restricted to hw=1 generation orbit
+  [PASS] Gamma_KS|hw=1 is exactly -I_3 (every gen state has hw=1, sign -1) [class-A]  (block diag = [-1, -1, -1])
+  [PASS] Gamma_KS|hw=1 commutes with ALL 200 random Hermitian gen ops [class-A]  (scalar -> central -> cannot grade the generation orbit)
+  [PASS] {Gamma_KS|hw=1, H} = -2H != 0 for nonzero H (no anticommuting grade) [class-A]
+
+PART 4 -- spin-taste gamma5 (x) xi5 analog -> identical hw=1 scalar
+  [PASS] spin-taste gamma5 (x) xi5 (cube analog)|hw=1 = -I_3 (scalar) [class-A]
+  [PASS] global chirality grades cube: 4 even-hw vs 4 odd-hw corners [class-A]  (even(hw 0,2)=[0, 3, 5, 6] odd(hw 1,3)=[1, 2, 4, 7])
+  [PASS] entire hw=1 generation orbit lies in ONE chirality sector (odd) [class-A]  (chirality is constant across the orbit -> cannot split it)
+
+PART 5 -- CRUX: same-leg chirality induces NO off-block gen grading
+  [PASS] {scalar Gamma, H} = 2*(-1)*H entrywise (no off-diagonal mixing) [class-A]
+  [PASS] {scalar Gamma, H} = 0 forces a=b=0 (H=0) -- no anticommuting H [class-A]  (sol=[{a: 0, b_i: 0, b_r: 0}])
+  [PASS] entrywise rule {Gamma,H}_{jk} = (L_j+L_k) Gamma_{jk} (all 9 entries) [class-A]  (off-block grading needs Gamma_{jk}!=0 (j!=k); scalar -I has none)
+
+PART 6 -- distinct-factor I_3 (x) sigma_3: within-gen block scalar too
+  [PASS] I_3 (x) sigma_3 within +chirality copy = +I_3 (scalar on gen) [class-A]  (distinct-factor gamma is central within a generation copy)
+  [PASS] I_3 (x) sigma_3 commutes with ALL generation ops A (x) I_2 [class-A]  (reproduces separate-factor finding: within-gen gradings COMMUTE)
+  [PASS] same-leg and distinct-factor BOTH -> scalar on generation orbit [class-A]  (S_3-uniform wall reached by both routes)
+
+PART 7 -- a genuine off-block anticommuting GRADE (involution) forces a=0
+  [PASS] off-block GRADE (involution) anticommuting w/ H forces a = 0 [class-A]  (L0+L1=0 & L2=0 => [{a: 0, b_r: sqrt(3)*b_i}])
+  [PASS] (scoping) L0+L1=0 ALONE does NOT force a=0 (only a full grade does) [class-A]  (weak: a=[sqrt(3)*b_i/2 - b_r/2] (rank-2, not involution))
+  [PASS] on a=0 surface spectrum is {+lam,-lam,0}, sum L=0 -> Q diverges (NOT 2/3) [class-A]  (spectrum=[(3.4641+0j), (-3.4641+0j), -0j]; same origin-reflection wall)
+  [PASS] at r=1/2 (a=1,b=1/sqrt(2)) Q=2/3 but a!=0 -> no off-block grade here [class-A]  (Q=0.666667, a=1.0 (finite-mass Koide point unreachable by the grade))
+
+PART 8 -- C_3-orbit-splitting grading requires breaking cubic S_3
+  [PASS] S_3-equivariant Hermitian grade = c1 P_A1 + cE P_E commutes w/ S_3 [class-A]
+  [PASS] S_3-equivariant grade has ZERO singlet(A1)<->doublet(E) off-block [class-A]  (anticommuting orbit-split needs A1<->E mixing -> must break S_3)
+  [PASS] a preferred-axis grade diag(1,-1,-1) is NOT S_3-invariant [class-A]  (orbit-splitting => breaks cubic symmetry (preferred site))
+
+PART 9 -- steelman: full hw-mixing Kahler-Dirac D_KD does NOT open escape
+  [PASS] {gamma5, D_KD} = 0 (Kahler-Dirac reverses form parity, anticommutes) [class-A]  (genuine same-leg spin-taste gamma5 anticommutes with the KS Dirac)
+  [PASS] i*D_KD Hermitian (D_KD antisymmetric) [class-A]
+  [PASS] D_KD has ZERO hw1->hw1 block (generations not mass eigenstates) [class-A]  (hw-mixing dynamics -- the strongest escape candidate)
+  [PASS] gamma5 STILL = -I_3 on the generation orbit (escape does NOT open) [class-A]  (chirality value fixed at -1 by hw=1, independent of dynamics)
+
+==============================================================================
+SUMMARY: 31 PASS / 0 FAIL
+Class-A pattern hits: 31
+==============================================================================
+
+VERDICT:
+  COLLAPSES-TO-S3-UNIFORM.
+  The same-leg spin-taste chirality Gamma_KS = (-1)^{hw} = gamma5(x)xi5
+  restricts on the hw=1 generation orbit to the SCALAR -I_3
+  (S_3-invariant: the whole orbit sits in one chirality sector).
+  It induces NO off-block singlet<->doublet generation grading and
+  does NOT reach r=1/2.  Same-leg and distinct-factor routes hit the
+  SAME S_3-uniform wall by different doors.  A genuine off-block
+  anticommuting grade forces a=0 (chiral limit, r->inf, NOT r=1/2);
+  splitting the C_3 orbit requires BREAKING the cubic S_3 symmetry
+  (a preferred axis/site), which is not native to the cube.
+  => the same-leg structure REDUCES to the S_3 wall; it does not evade it.
+  dominant_class: A (31 class-A pattern hits)

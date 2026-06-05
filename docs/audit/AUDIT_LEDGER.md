@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 177 |
-| **retained_no_go** | 191 |
+| **retained_no_go** | 192 |
 | **retained_bounded** | 670 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 34 |
-| unaudited | 1237 |
+| unaudited | 1236 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1033 |
+| `audited_clean` | 1034 |
 | `audited_conditional` | 78 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1521 |
+| `unaudited` | 1520 |
 
 | claim_type | count |
 |---|---:|
@@ -656,6 +656,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_z3_joint_projector_identity_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9997,6 +9998,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The qubit-lattice algebra A_Lambda = tensor_x M_2(C) is isomorphic to M_d(C) with d = 2^|Lambda|, so the finite-dimensional Kraus and Choi theorems apply directly.  _(class `A`)_
 - **chain closes:** False — The finite-region application would close algebraically from the Quantum/Lattice axiom content plus the cited standard finite-dimensional theorems. As written, however, the Choi-Jamiolkowski formula family has an unresolved normalization mismatch: the note uses both unnormalized and normalized |Omega> conventions, and the displayed inverse formula is missing a factor d under the normalized convention.
 - **rationale:** No completed runner or runner source is provided, but the load-bearing finite-dimensional algebra step can be judged without compute. The algebra A_Lambda ~= M_{2^|Lambda|}(C) is correctly supplied by the accepted minimal axiom content, and the narrow Kraus/Choi application is otherwise standard finite-dimensional mathematics. The source is not clean as written because its Choi normalization conventions conflict: the theorem statement defines |Omega> without 1/sqrt(d), Step 1 defines it with 1/sqrt(d), and the displayed inverse map lacks the corresponding factor d for the normalized convention.
+- **auditor confidence:** high
+
+### `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02`
+
+- **Note:** [`KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md`](../../docs/KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the route-local claim that Kogut-Susskind staggered eta signs plus ungraded lattice locality do not force cross-site CAR over the hard-core-boson frame.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-2b55512afc-ks_eta_vs_jw_string_car_loca`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The decisive counterfactuals are: keep eta and drop the string, so CAR fails; drop eta and keep the string, so CAR holds.  _(class `C`)_
+- **chain closes:** True — The finite-qubit construction supplies an explicit local nilpotent hard-core-boson realization with the same eta coefficients but without cross-site CAR, while the JW realization has CAR only from the operator string. This closes the narrow eta-versus-string route and does not claim an absolute no-go against fermions or graded-locality selectors.
+- **rationale:** The runner source genuinely instantiates Pauli/qubit operators on a finite Z^3 patch, computes the HCB and JW operator relations, checks the eta counterfactuals, and does not import an external fitted premise. The cited minimal-axiom authority is explicitly flagged as an accepted axiom premise, so it does not trigger the dependency downgrade. Independent algebra checks confirm that eta_mu(x) is a c-number link sign, bare tensor-site ladders commute across sites, and JW strings are the source of CAR. The no-go discipline gate is satisfied only for the stated route-local obstruction, with graded locality and other statistics principles left open.
 - **auditor confidence:** high
 
 ### `kubo_continuum_limit_families_note`

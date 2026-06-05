@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/ks_eta_vs_jw_string_car_locality.py
+runner_sha256: c408dac49226d6d3958c270110cbbea2b44b4b02b7192f3771d7dba7ecef9e6e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+[setup] L=2  N=8 sites  dim H = 256  nearest-neighbour links = 12
+[setup] lexicographic order pi: [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
+
+C1  eta_mu(x) = Kawamoto-Smit phases (c-number Dirac-structure signs)
+  PASS  eta_from_spin_diag yields pure +-1 signs for every (mu,x)
+  PASS  eta closed form matches canonical KS sign table (sample)
+  PASS  eta_mu(x) is a c-number (int), carries NO operator content / no statistics
+
+C3  bare matter ladders b_x = sigma_+^(x): local, nilpotent, but CROSS-SITE COMMUTING
+  PASS  b_x^2 = 0 (single occupancy / nilpotent)
+  PASS  [b_x, b_y] = 0 for x != y (hard-core BOSON, ungraded)
+  PASS  {b_x, b_y} != 0 for some x != y (NOT fermionic)
+  PASS  each b_x is single-site supported (maximally local)
+
+C4  JW-dressed c_x = S_x sigma_+^(x): cross-site CAR (the string supplies it)
+  PASS  c_x^2 = 0
+  PASS  {c_x, c_y} = 0 for ALL x != y (CAR)
+  PASS  {c_x, c_x^dag} = I for every x
+  PASS  {c_x, c_y^dag} = 0 for x != y
+
+C2  staggered KS hopping carries eta in BOTH realizations; both nearest-neighbour LOCAL
+  PASS  HCB staggered hopping: every link term supported on its 2 endpoints (local)
+  PASS  HCB and JW staggered operators use the IDENTICAL eta sign on every link
+  PASS  H_hcb != H_jw (they differ ONLY by the JW string, not by eta)
+
+C5  DECISIVE: the CAR sign rides the STRING, not eta (orthogonal objects)
+  PASS  drop string, KEEP eta  ->  cross-site CAR FAILS (eta cannot supply CAR)
+  PASS  drop eta, KEEP string   ->  cross-site CAR STILL HOLDS (eta is not the CAR source)
+  PASS  the matter operator c_x is independent of eta (eta lives in the kinetic coefficient, the string lives in the operator)
+
+C6  HCB and JW generators span the SAME M_{2^N}(C) on a three-site subpatch
+  PASS  HCB algebra dim = 64 = 4^3 = 64 (full matrix algebra)
+  PASS  JW  algebra dim = 64 = 4^3 = 64 (same full matrix algebra)
+  PASS  on the subpatch, both frames generate the SAME ungraded algebra => operator-algebra data cannot select statistics
+
+C7  locality horn: JW string is genuinely NON-local on Z^3 (2x2x2 bandwidth > 1)
+  PASS  min grid-graph bandwidth over ALL orderings = 4 > 1 (no total order makes every NN link string-free)
+  PASS  lexicographic slow-axis NN link (0, 0, 0)-(1, 0, 0) spans 4 positions => string non-trivial over intermediate sites [(0, 0, 1), (0, 1, 0), (0, 1, 1)]
+  PASS  a maximally-local matter operator (single-site b_x) carries NO string => locality does NOT force the JW string / CAR
+
+========================================================================
+SCORECARD: PASS=23 FAIL=0
+========================================================================
+
+----- stderr -----
+

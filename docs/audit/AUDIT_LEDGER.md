@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 177 |
-| **retained_no_go** | 188 |
+| **retained_no_go** | 189 |
 | **retained_bounded** | 665 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1247 |
+| unaudited | 1246 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1024 |
+| `audited_clean` | 1025 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1531 |
+| `unaudited` | 1530 |
 
 | claim_type | count |
 |---|---:|
@@ -613,6 +613,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dkd_berry_spectator_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_factor_split_does_not_force_carrier_value_bridge_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_fisher_rao_spherical_reorganization_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -9337,6 +9338,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** P M(a,b) P = M(a,conj(b)), and for transpose-preserving extensions O(a,conj(b)) = O(a,b)^T so the spectrum is unchanged under b -> conj(b).  _(class `A`)_
 - **chain closes:** True — The identity follows by linearity from P C P = C^2 and P C^2 P = C. Similarity and transpose preserve the characteristic polynomial, and the displayed spectral one-form is exact as d sum_k G(lambda_k) with G' = g.
 - **rationale:** The load-bearing statement is a finite algebraic identity, not a renaming or a numerical fit. The runner source genuinely performs symbolic, eigenvalue, curl, and finite-matrix checks, with no opaque helper imports or hard-coded contested premise. The claim is explicitly bounded to spectrum-only functionals and transpose-preserving real extensions, so the open future routes listed in the note are outside the audited conclusion rather than hidden dependencies.
+- **auditor confidence:** high
+
+### `koide_factor_split_does_not_force_carrier_value_bridge_no_go_note_2026-06-02`
+
+- **Note:** [`KOIDE_FACTOR_SPLIT_DOES_NOT_FORCE_CARRIER_VALUE_BRIDGE_NO_GO_NOTE_2026-06-02.md`](../../docs/KOIDE_FACTOR_SPLIT_DOES_NOT_FORCE_CARRIER_VALUE_BRIDGE_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bare factorization and commuting tensor-factor algebra on C^3 tensor C^2 tensor C^2 do not force the value-side Z_2 sign to equal, or equal minus, the carrier-side exchange Z_2 sign.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-055464e4b5-koide_factor_split_does_not_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The value and carrier axes commute but have all four joint sign sectors nonempty, so neither equality nor sign-reversed equality follows from the product algebra.  _(class `A`)_
+- **chain closes:** True — Independently, the value involution has eigenspace dimensions 1 and 2, while the carrier swap has eigenspace dimensions 3 and 1, giving joint dimensions {(1,1):3,(1,-1):1,(-1,1):6,(-1,-1):2}. The mixed sectors are counterexamples to any forced equality or sign-reversed equality within the scoped product model.
+- **rationale:** The runner source is self-contained and computes finite matrix identities rather than printing a hard-coded verdict. The load-bearing calculation is an algebraic identity check: tensor-embedded involutions commute, are not equal up to sign, and have nonempty mixed eigensectors. The note's no-go is properly scoped to the bare product-factor route and explicitly leaves later physical welding theorems or admissions open.
 - **auditor confidence:** high
 
 ### `koide_fisher_rao_spherical_reorganization_note_2026-06-01`

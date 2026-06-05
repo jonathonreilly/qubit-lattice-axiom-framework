@@ -50,9 +50,10 @@ the full packet explicit:
 The source packet verifier above checks that these paths are linked from this
 note, that the bridge and original runner sources are present and untruncated,
 that the original runner cache contains the displayed `beta`/`I_3` lower-bound
-table, that the bridge cache reports `SUMMARY: PASS=56 FAIL=0`, and that all
-runner caches match the current source SHA. This does not set an audit verdict;
-its generated JSON is a disposable runner output.
+table and printed `alpha` values, that the bridge cache reports
+`SUMMARY: PASS=56 FAIL=0`, and that all runner caches match the current source
+SHA. This does not set an audit verdict; its generated JSON is a disposable
+runner output.
 
 ## Answer
 
@@ -85,13 +86,13 @@ the detector-centroid response at the baseline geometry.
 
 The runner output reports:
 
-| d | attractive? | beta approx | `I_3` | lower-bound read |
-|---|---|---:|---|---|
-| 1 | no | 0.18 | `<1e-10` | fails |
-| 2 | no | 0.27 | `<1e-10` | fails |
-| 3 | yes | 1.01 | `<1e-10` | passes |
-| 4 | yes | 1.05 | `<1e-10` | passes |
-| 5 | yes | 1.03 | `<1e-10` | passes |
+| d | attractive? | beta approx | alpha approx | `I_3` | lower-bound read |
+|---|---|---:|---:|---|---|
+| 1 | no | 0.18 | 0.42 | `<1e-10` | fails |
+| 2 | no | 0.27 | -0.17 | `<1e-10` | fails |
+| 3 | yes | 1.01 | 1.32 | `<1e-10` | passes |
+| 4 | yes | 1.05 | 3.30 | `<1e-10` | passes |
+| 5 | yes | 1.03 | 5.01 | `<1e-10` | passes |
 
 The finite-k derivative bridge independently certifies the same sign
 transition for the runner's baseline centroid observable:

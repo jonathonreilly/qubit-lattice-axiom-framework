@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 175 |
+| **retained** | 176 |
 | **retained_no_go** | 183 |
 | **retained_bounded** | 649 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1286 |
+| unaudited | 1285 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 998 |
+| `audited_clean` | 999 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1570 |
+| `unaudited` | 1569 |
 
 | claim_type | count |
 |---|---:|
@@ -270,6 +270,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3488,6 +3489,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The estimate (S.14) bounds the excited-eigenstate sum by (lambda_1/M_x)^d ||A_p|| ||B_q|| = exp(-d Delta_x) ||A_p|| ||B_q||, with the finite-temperature bound then following by trace-distance control.  _(class `A`)_
 - **chain closes:** True — Given H1 and H2, the spectral decomposition, Cauchy-Schwarz step, and trace-distance estimate close the stated finite-block bounds. The packet does not construct T_x from the canonical Hamiltonian or prove Delta_x > 0, so no unconditional spatial clustering claim closes.
 - **rationale:** The load-bearing derivation is class A finite-dimensional algebra over an assumed positive Hermitian transfer operator with a nonzero spectral gap. The runner source genuinely samples finite positive Hermitian matrices and checks the stated identities, inequalities, thermal error term, and no-gap counterexample; it does not hard-code a contested physical gap. However, H1 and H2 are explicit open inputs not supplied by a retained one-hop authority, so the canonical-Hamiltonian spatial clustering bridge remains conditional.
+- **auditor confidence:** high
+
+### `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02`
+
+- **Note:** [`CMW_2D_SUBLATTICE_NO_SSB_THEOREM_NOTE_2026-05-02.md`](../../docs/CMW_2D_SUBLATTICE_NO_SSB_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For coordinate-aligned Z^1 or Z^2 sublattices with finite-temperature translation-invariant local/short-range Hamiltonians and L-independent W1-W4 Ward-normalized order/charge pairs, the associated continuous-symmetry order parameter vanishes in the thermodynamic limit.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-201554-b553f4504d-cmw_2d_sublattice_no_ssb_the`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The W1-W4 bridge gives |m_L|^2 <= (beta C_A C_H)/(2 c_W^2 I_d(L)), and since I_d(L) diverges for d=1 and d=2, the sublattice order parameter m_L tends to zero.  _(class `A`)_
+- **chain closes:** True — The retained bridge supplies the finite-volume inequality and the implication from divergent I_d(L) to m_L -> 0 under W1-W4. The retained-bounded IR authority supplies the d=1 linear and d=2 logarithmic divergence, while the sublattice-to-Z^d identification is structural.
+- **rationale:** The load-bearing math is an algebraic application of the cited W1-W4 bridge plus the cited IR-sum threshold. Independently checking the volume factors in W1-W4 reproduces the displayed bound, and the small-k scaling E_k ~ |k|^2 gives the stated integral behavior int r^{d-3} dr: divergent for d=1,2 and finite at the origin for d>=3. The runner performs finite lattice-sum checks rather than hard-coding the contested conclusion, but it is corroborative; the theorem closes only on the explicit W1-W4 surface, not for arbitrary continuous-symmetry Hamiltonians without that normalization.
 - **auditor confidence:** high
 
 ### `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04`

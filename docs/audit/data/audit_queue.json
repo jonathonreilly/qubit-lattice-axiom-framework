@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 269,
     "high": 284,
-    "leaf": 410,
+    "leaf": 409,
     "medium": 325
   },
   "cycle_break_target_count": 0,
@@ -27008,32 +27008,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04",
-        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
-        "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CMW_2D_SUBLATTICE_NO_SSB_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/cmw_2d_sublattice_no_ssb_check.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "critical_exponents_topology_live_scout_note_2026-06-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38726,6 +38700,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 86,
-  "total_pending": 1288
+  "ready_count": 85,
+  "total_pending": 1287
 }

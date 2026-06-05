@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.py
+runner_sha256: bcce9283b573900c63d2288ee8823138d045ffa54f824929ec4f56baa81b8afc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+========================================================================
+DM SELECTOR FIRST-SHOULDER-EXIT THRESHOLD SUPPORT — CRITICALITY-BUMP HYGIENE COMPANION
+========================================================================
+Companion source note:
+  docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_CRITICALITY_BUMP_HYGIENE_COMPANION_NOTE_2026-06-04.md
+Parent ledger row: dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21
+Parent note path : docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md
+Parent runner    : scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py
+Ledger snapshot  : docs/audit/data/audit_ledger.json
+Repo root        : <repo-root>
+
+NOTE: This companion does NOT assert the open gate has closed.
+The parent's claim_type is `open_gate` and stays `open_gate`.
+The parent's explicit disavowal of tau_phys = tau_b,min is preserved.
+
+
+========================================================================
+  PASS H1.1 parent note exists at canonical path :: path=docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md
+  PASS H1.2 parent note content sha256 matches current canonical hash :: observed=5ed33df184be15fff3b1847497c16fc22e2948a64fb996aace768651c8b57f5d, expected=5ed33df184be15fff3b1847497c16fc22e2948a64fb996aace768651c8b57f5d
+
+========================================================================
+  PASS H2.1 parent runner exists at canonical path :: path=scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py
+  PASS H2.2 parent runner content sha256 matches previous_audits[1].audit_state_snapshot.runner_hash :: observed=08c7ae1063e4b211cf34086b6c94614358c4dd7ce9b5b0e4bc0155b474f18b86, expected=08c7ae1063e4b211cf34086b6c94614358c4dd7ce9b5b0e4bc0155b474f18b86
+  PASS H2.3 parent runner is compile-only importable :: py_compile.compile succeeded
+
+========================================================================
+  exec: <python> scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py
+  PASS H3.1 parent runner exits with status 0 :: returncode=0; stderr_tail=''
+  PASS H3.2 parent runner stdout reports `SUMMARY: PASS=11 FAIL=0` :: observed SUMMARY: PASS=11 FAIL=0
+  PASS H3.3 parent runner stdout reports PASS line: PART 1 unique earliest middle-branch threshold :: fragment='The earliest middle-branch threshold is unique and belongs to the preferred recovered lift'
+  PASS H3.4 parent runner stdout reports PASS line: PART 2 above-tau_star :: fragment='The earliest middle-branch threshold lies strictly above tau_star'
+  PASS H3.5 parent runner stdout reports PASS line: PART 2 below-next-zero :: fragment='The earliest middle-branch threshold also lies strictly below the next zero-volume tie'
+  PASS H3.6 parent runner stdout reports PASS line: PART 3 unique-minimizer-at-tau_b,min :: fragment='the preferred recovered lift is already the unique minimizer of the exact threshold-volume family'
+  PASS H3.7 parent runner stdout reports PASS line: PART 4 open-gate-not-promoted :: fragment='This theorem narrows the positive selector burden further without promoting closure'
+
+========================================================================
+  PASS H4.1 ledger row exists for `dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21` :: ledger=docs/audit/data/audit_ledger.json
+  PASS H4.2 ledger row generated audit status is `unaudited` :: observed='unaudited'
+  PASS H4.3 ledger row generated effective status is `unaudited` :: observed='unaudited'
+  PASS H4.4 ledger row effective_status_reason is `awaiting_audit` :: observed='awaiting_audit'
+  PASS H4.5 ledger row previous_audits is non-empty :: len=2
+  PASS H4.6 there exists a prior clean snapshot invalidated by `^criticality_increased:` with pre-bump criticality `leaf` :: matched: invalidation_reason='criticality_increased:leaf->critical', snapshot.criticality='leaf', audit_date='2026-05-02T18:00:00+00:00'
+  PASS H4.7 there exists a prior open_gate clean snapshot with cross-confirmation confirmed and runner total_pass == 11 :: matched: audit_date='2026-05-05T10:15:40.179538+00:00', auditor='codex-fresh-second-dm_selector_first_shoulder_exit_threshold_support_note-20260505'
+  PASS H4.8 ledger row claim_type == 'open_gate' (audit-decided current type preserved; gate stays open) :: observed='open_gate'
+  PASS H4.9 ledger row runner_path AND note_path point to canonical parent paths :: runner_path observed='scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py' (expected='scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py'); note_path observed='docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md' (expected='docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md')
+  PASS H4.10 ledger row deps includes both declared upstream rows (nonrealization and stabilization) :: observed deps=['dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization_note_2026-04-18', 'dm_selector_threshold_stabilization_support_theorem_note_2026-04-21']; expected to include all of ['dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization_note_2026-04-18', 'dm_selector_threshold_stabilization_support_theorem_note_2026-04-21']
+
+------------------------------------------------------------------------
+FINAL TALLY: 22 PASS / 0 FAIL  (elapsed 0.61 s)
+------------------------------------------------------------------------
+
+----- stderr -----
+

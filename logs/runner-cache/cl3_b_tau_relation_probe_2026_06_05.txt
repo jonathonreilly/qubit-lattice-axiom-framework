@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/cl3_b_tau_relation_probe_2026_06_05.py
+runner_sha256: 406d26c2a5dbb5ad1faa4a19de8c269ed065a6f94452a4a7e9eb2b0fe7ac24fd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.29
+status: ok
+----- stdout -----
+======================================================================
+b-tau Relation Probe -- 1-loop SM RGE running of an IMPORTED
+y_b = y_tau (SU(5)) boundary condition
+======================================================================
+
+[seeds at M_Z = 91.1876 GeV]
+  g1(GUT-norm)=0.4614  g2=0.6517  g3=1.2182
+  yt=0.9371  yb=0.01638  ytau=0.01021
+  (yb/ytau)(M_Z) = 1.6040
+
+[step 1] SM-only gauge running (g2 = g3 crossing as GUT-ish scale)
+  g2 = g3 at mu ~ 9.822e+16 GeV
+  there: g1=0.5873 g2=0.5169 g3=0.5169  (g1 != g2,g3: SM doesn't unify)
+
+  [PASS] g2=g3 crossing exists in [M_Z, 1e17]  (SM-only; not true 3-way unification)
+  [PASS] SM does NOT exhibit exact 3-coupling unification  (|g1-g3| at g2=g3 crossing = 0.070 (would be 0 for real GUT))
+[step 2] b-tau test: y_b(M_GUT)=y_tau(M_GUT), SM running down to M_Z
+  M_GUT=1.0e+16 :  (yb/ytau)(M_Z) = m_b(M_Z)/m_tau = 2.589
+  M_GUT=2.0e+16 :  (yb/ytau)(M_Z) = m_b(M_Z)/m_tau = 2.610
+  M_GUT=5.0e+16 :  (yb/ytau)(M_Z) = m_b(M_Z)/m_tau = 2.637
+  M_GUT=1.0e+17 :  (yb/ytau)(M_Z) = m_b(M_Z)/m_tau = 2.657
+
+[step 3] PDG comparison (M_GUT = 2e16, SM-only running)
+  predicted (yb/ytau)(M_Z)          = 2.610
+  -> predicted m_b(m_b)/m_tau (MSbar) = 3.828
+  PDG          m_b(m_b)/m_tau          = 2.352
+  ratio pred/PDG                       = 1.627
+  => SM-only b-tau OVERSHOOTS the observed ratio
+
+  [PASS] y_b enhanced over y_tau at low scale (color -8 g3^2 drives it)  ((yb/ytau)(M_Z) = 2.610 > 1 from -8 g3^2 in beta_yb)
+  [PASS] SM-only b-tau OVERSHOOTS PDG m_b/m_tau (the known SUSY-vs-SM issue)  (pred 3.83 vs PDG 2.35 (factor 1.63 over))
+  [PASS] exact b-tau needs SUSY thresholds / tuned alpha_s, not SM-only  (SM gives the right ORDER (O(1), correct sign) but not the value)
+  [PASS] color asymmetry verified: beta_ytau has NO 8 g3^2 term  (leptons color-singlet => only y_b feels strong coupling)
+[step 4] structural audit: is y_b = y_tau DERIVED or IMPORTED?
+  [PASS] SU(5) embedding note DERIVES only rep-theory (5bar+10+1, Y_GUT norm)  (embedding-consistency theorem present)
+  [PASS] SU(5) note EXPLICITLY disclaims coupling unification  (Section 2: 'Does not claim coupling unification')
+  [PASS] SU(5) note EXPLICITLY disclaims deriving the GUT scale  (Section 2: 'Does not derive the GUT scale')
+  [PASS] SU(5) note makes NO Yukawa-sector claim  (y_b=y_tau is a Yukawa statement; absent from the embedding theorem)
+  [PASS] framework Yukawa sector is bounded-obstructed (cannot break C_3)  (A3_ROUTE1 Higgs/Yukawa C_3-breaking bounded obstruction present)
+  [PASS] framework has a charged-lepton Yukawa NO-GO on the retained surface  (CHARGED_LEPTON_DIRECT_WARD_FREE_YUKAWA_NO_GO present)
+  [PASS] framework already records flat Yukawa-unif BC fails on m_b by ~33x  (YT_BOTTOM_YUKAWA_RETENTION: M_Pl flat-unif overshoots m_b by 33x)
+
+  VERDICT: IMPORTED-GUT-ASSUMPTION
+  Reason: the framework DERIVES SU(5) *embedding consistency* + the
+  Y_GUT = sqrt(3/5) Y_SM hypercharge normalization (rep theory), but
+  EXPLICITLY does NOT derive coupling unification, the GUT scale, or
+  any Yukawa-sector relation. The down-type/lepton Yukawa structure is
+  a WALL of bounded obstructions + no-go's; the retained surface cannot
+  even break C_3 to generate a hierarchical y_b. Therefore y_b=y_tau is
+  an IMPORTED SU(5) boundary, NOT a framework derivation. It does NOT
+  honestly reduce the framework free-scale count: {m_b, m_tau} remain
+  TWO independent observational pins on the retained surface.
+
+  [PASS] VERDICT recorded in note (IMPORTED-GUT-ASSUMPTION)  (note carries the honest verdict)
+  [PASS] note records that b-tau does NOT reduce the free-scale count  (scale-count claim corrected)
+  [PASS] note states framework derives EMBEDDING-CONSISTENCY only, not unification  (rep-theory vs dynamics distinction preserved)
+  [PASS] no PDG value used as input to STRUCTURAL verdict (falsifiability only)  (PDG enters only the quantitative comparison, not the audit logic)
+
+======================================================================
+TOTAL: PASS=17 FAIL=0
+======================================================================
+QUANTITATIVE: y_b(M_GUT)=y_tau(M_GUT) + SM 1-loop running gives
+  m_b/m_tau ~ 3.83 vs PDG 2.35  =>  SM-only OVERSHOOTS (~63% high);
+  right ORDER + correct sign (color -8 g3^2), exact value wants SUSY.
+STRUCTURAL: y_b=y_tau boundary is IMPORTED (SU(5)), not framework-derived.
+SCALE COUNT: b-tau does NOT tie {m_b, m_tau} within the framework;
+  both remain independent pins. Honest free-scale count is HIGHER than
+  the scale-axis agent claimed.
+VERDICT: IMPORTED-GUT-ASSUMPTION
+
+----- stderr -----
+

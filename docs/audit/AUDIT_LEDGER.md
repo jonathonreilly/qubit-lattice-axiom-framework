@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 651 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1293 |
+| unaudited | 1292 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 61 |
+| ~~audited_conditional~~ | 62 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 996 |
-| `audited_conditional` | 61 |
+| `audited_conditional` | 62 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1577 |
+| `unaudited` | 1576 |
 
 | claim_type | count |
 |---|---:|
@@ -1137,6 +1137,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2471,6 +2472,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The bounded damage ladder does not crown p = 1 as the most robust action power on this family: p = 1 is cleanest on exponent drift when it survives, while p = 2 survives more signed damage cases.  _(class `C`)_
 - **chain closes:** True — The included runner and helper source instantiate the lattice, damaged offset masks, propagator, field, Born diagnostic, gravity sign, F~M fits, and summary counts rather than printing constants. The audited conclusion is limited to the bounded replay result and does not require a universal graph theorem.
 - **rationale:** The runner output directly supports the note's negative robustness summary: p=0.5 and p=1.0 are TOWARD on 3/6 damaged cases, while p=2.0 is TOWARD on 5/6, and p=1.0 has the smallest mean |F~M-p| among finite surviving fits. The primary and helper source show an actual bounded numerical replay from the stated lattice/action setup, with no hard-coded expected summary values or external comparator calibration. The cited authorities are retained_bounded and are used only to bound the family and neighboring action-power context, so the narrowed claim closes as a bounded theorem.
+- **auditor confidence:** high
+
+### `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-region qubit-lattice POVM effect algebra E(H_Λ) with |Λ| ≥ 1, conditional on the cited Busch 2003/CFMR 2004 POVM-Gleason theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-220022-f758fe26db-busch_povm_extension_on_qubi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any |Λ| ≥ 1, dim H_Λ = 2^|Λ| ≥ 2, so Busch's POVM-extension theorem applies and gives m(E)=Tr(σE) for a unique density matrix σ.  _(class `B`)_
+- **chain closes:** False — The application to H_Λ follows from the Quantum axiom plus the stated Busch theorem, but Busch 2003/CFMR 2004 is only named in the note and not provided as a cited authority in the restricted packet. The missing step is the actual upstream theorem statement/proof authority establishing the POVM-additive representation for all complex Hilbert spaces with dim ≥ 2.
+- **rationale:** The restricted packet supplies the minimal qubit-on-Z^3 axiom authority, which is accepted as an axiom premise and correctly supports H_Λ = tensor_x C^2 with dim 2^|Λ|. The load-bearing mathematical content, however, is an imported named Busch/CFMR POVM-Gleason theorem that is not included as a cited authority in full, so the audit cannot verify the theorem from the permitted inputs. The note is honest about not re-proving Busch, but that makes the chain conditional on a missing standard-math import rather than clean within this packet.
 - **auditor confidence:** high
 
 ### `carrier_orbit_invariance_note_2026-05-03`

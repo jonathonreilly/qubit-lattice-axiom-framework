@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_higgs_lattice_eigenvalue_ratio_dep_resolution_2026_06_04.py
+runner_sha256: 122e2a94111983ef55080d526d07d2e4c9bb67c319fe1ea6732e671d9838a274
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.18
+status: ok
+----- stdout -----
+========================================================================
+Higgs lattice eigenvalue-ratio dependency-surface hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md
+Parent runner: scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py
+Companion note: docs/HIGGS_LATTICE_EIGENVALUE_RATIO_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+Scope: meta evidence only; no theorem claim, no audit verdict, no direct status change.
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_total_line_present
+PASS parent_runner_pass_count_forty :: pass_count=40
+PASS parent_runner_fail_count_zero :: fail_count=0
+PASS parent_runner_transcript_contains_D_taste
+PASS parent_runner_transcript_contains_D_taste_d
+PASS parent_runner_transcript_contains_N_taste_N_sites_16
+PASS parent_runner_transcript_contains_R_lattice_4
+PASS parent_runner_transcript_contains_per_taste_curvature
+PASS algebraic_blocks_no_grade_field_token_0
+PASS algebraic_blocks_no_grade_field_token_1
+PASS algebraic_blocks_no_grade_field_token_2
+PASS algebraic_blocks_no_grade_field_token_3
+PASS algebraic_blocks_no_grade_field_token_4
+PASS algebraic_blocks_no_grade_field_token_5
+PASS algebraic_blocks_no_grade_field_token_6
+PASS deprecated_dependency_absent_from_current_parent_deps
+PASS current_repaired_dependency_set_present :: present=5
+PASS current_dependency_set_has_expected_size :: size=5
+PASS current_deps_all_present_in_ledger :: missing=0
+PASS current_deps_have_four_retained_grade_entries :: count=4
+PASS current_deps_have_one_pending_chain_entry :: count=1
+PASS pending_chain_not_counted_as_retained_grade
+PASS symbolic_lattice_ratio_reduces_to_expected
+PASS parent_note_disclaims_physical_higgs_match
+PASS parent_note_names_pending_chain_boundary
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_direct_status_change
+PASS companion_disclaims_dependency_closure
+PASS companion_disclaims_physical_matching
+========================================================================
+SUMMARY: PASS=31 FAIL=0
+========================================================================
+
+----- stderr -----
+

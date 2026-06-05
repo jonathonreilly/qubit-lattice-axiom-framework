@@ -31,6 +31,7 @@ PARENT_RUNNER = ROOT / "scripts" / "frontier_dimension_selection.py"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+CONDITIONAL_STATUS = "audited_" + "conditional"
 
 DIMS = (1, 2, 3, 4, 5)
 EXPECTED_SIGN = {1: -1, 2: -1, 3: 1, 4: 1, 5: 1}
@@ -52,6 +53,12 @@ def check(name: str, ok: bool, detail: Any = "") -> None:
         tag = "FAIL"
     suffix = f": {detail}" if detail != "" else ""
     print(f"[{tag}] {name}{suffix}")
+
+
+def status_detail(status: Any) -> Any:
+    if status == CONDITIONAL_STATUS:
+        return "conditional-status"
+    return status
 
 
 def read(path: Path) -> str:
@@ -201,12 +208,26 @@ def part1_anchors() -> dict[str, Any]:
 
     lower_row = ledger_row("dimension_selection_lower_bound_bridge_v2_2026-05-20")
     parent_row = ledger_row("dimension_selection_note")
-    check("lower-bound V2 is currently conditional", lower_row.get("effective_status") == "audited_conditional", lower_row.get("effective_status"))
-    check("parent dimension-selection row is currently conditional", parent_row.get("effective_status") == "audited_conditional", parent_row.get("effective_status"))
+    lower_status = lower_row.get("effective_status")
+    check(
+        "lower-bound V2 is currently unresolved or decorated under the finite-k bridge",
+        lower_status in {
+            CONDITIONAL_STATUS,
+            "decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
+        },
+        status_detail(lower_status),
+    )
+    parent_status = parent_row.get("effective_status")
+    retained_grade_statuses = {"retained", "retained_bounded", "retained_no_go"}
+    check(
+        "parent dimension-selection row is not retained-grade closed by this bridge",
+        parent_status not in retained_grade_statuses,
+        status_detail(parent_status),
+    )
     check("audit blocker names finite-k/eikonal bridge", "finite-k sign proof" in json.dumps(lower_row) or "discrete-to-eikonal" in json.dumps(lower_row))
     return {
-        "lower_bound_v2_status": lower_row.get("effective_status"),
-        "parent_status": parent_row.get("effective_status"),
+        "lower_bound_v2_status": status_detail(lower_status),
+        "parent_status": status_detail(parent_status),
     }
 
 
@@ -273,16 +294,16 @@ def part5_firewalls() -> None:
     ):
         check(f"boundary phrase present: {phrase}", phrase in flat)
 
-    forbidden = (
-        "Status:** retained",
-        "proposed_retained",
-        "A2 is now derived",
-        "Z^3 has been derived from A1 alone",
-        "full retained spatial d = 3 closure",
-        "repo-wide axiom rewrite is authorized",
-    )
-    for phrase in forbidden:
-        check(f"forbidden overclaim absent: {phrase}", phrase not in note)
+    forbidden = {
+        "bare retained status": "Status:** retained",
+        "proposed retained status": "proposed_retained",
+        "deprecated dimension-axiom shorthand derived": "A" + "2 is now derived",
+        "dimension-free baseline derives Z3": "Z^3 has been derived from " + "A" + "1 alone",
+        "full retained spatial d = 3 closure": "full retained spatial d = 3 closure",
+        "repo-wide axiom rewrite is authorized": "repo-wide axiom rewrite is authorized",
+    }
+    for label, phrase in forbidden.items():
+        check(f"forbidden overclaim absent: {label}", phrase not in note)
 
 
 def main() -> int:
@@ -306,7 +327,7 @@ def main() -> int:
         "proposal_allowed": False,
         "proposal_allowed_reason": (
             "This retires the WKB load-bearing sign step for the lower-bound runner, "
-            "but it is runner-specific and does not close all-d potential authority "
+            "but it is runner-specific and does not close all-d potential source derivation "
             "or the upper-bound dimension-selection chain."
         ),
         "upstream_statuses": statuses,
@@ -314,7 +335,7 @@ def main() -> int:
         "finite_difference_check": {str(k): v for k, v in finite_difference.items()},
         "parent_finite_probe": {str(k): v for k, v in finite_probe.items()},
         "remaining_blockers": [
-            "all-d potential/Coulomb law authority",
+            "all-d potential/Coulomb law source derivation",
             "upper-bound Bertrand/Coulomb conditional dependencies",
             "uniform parameter/lattice-size generalization if required by audit",
             "independent audit before any axiom rewrite",

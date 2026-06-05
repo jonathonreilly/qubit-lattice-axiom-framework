@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 619 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1381 |
+| unaudited | 1380 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 23 |
-| ~~audited_conditional~~ | 31 |
+| ~~audited_conditional~~ | 32 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 942 |
-| `audited_conditional` | 31 |
+| `audited_conditional` | 32 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1665 |
+| `unaudited` | 1664 |
 
 | claim_type | count |
 |---|---:|
@@ -120,7 +120,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 617 | 31.27 | `unaudited` | unaudited |
 | 22 | `left_handed_charge_matching_note` | decoration | critical | 744 | 31.04 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 263 | 30.04 | `unaudited` | unaudited |
-| 24 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 967 | 29.92 | `unaudited` | unaudited |
+| 24 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 967 | 29.92 | `audited_conditional` | ~~audited_conditional~~ |
 | 25 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 224 | 29.31 | `unaudited` | unaudited |
 
 
@@ -1072,6 +1072,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1865,6 +1866,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Near k=0, E_k ~ |k|^2, so I_d(L) has the continuum scaling proxy integral_{1/L}^1 r^{d-3} dr, giving linear/log divergences for d=1,2 and finite behavior for d>=3.  _(class `A`)_
 - **chain closes:** True — The small-k expansion 2(1-cos k_mu) ~ k_mu^2 and the radial integral test give the stated threshold. The finite table entries are actually computed by the runner and independently match the displayed values; no Ward normalization, no-SSB theorem, D9 kernel authority, or substrate-minimality conclusion is imported.
 - **rationale:** The narrowed claim is a mathematical IR-sum scaling statement from the displayed lattice dispersion and standard integral comparison, not an external Coleman-Mermin-Wagner theorem. The runner source enumerates the lattice sums rather than printing constants, and its E0-E3 checks all pass. The formula inventory check finds the displayed small-k scaling, radial exponent, divergence classes, and quantitative table entries consistent with the note's definitions. The explicit non-claims prevent the earlier Ward/SSB/D9/substrate-minimality gaps from being load-bearing here.
+- **auditor confidence:** high
+
+### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Staggered-only two-step transfer-matrix positivity, with the free and fixed-background fermion sectors checked, and the full SU(3) Haar/Wilson-plaquette RP surface only asserted as a three-factor reduction target.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-162406-40f3436081-axiom_first_reflection_posit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The SU(3)-gauged staggered 2-step RP route is reduced to (fermion-sector 2-step transfer positivity) x (positive determinant weight det(M_KS + m I) > 0) x (gauge-half Cauchy-Schwarz norm-square).  _(class `A`)_
+- **chain closes:** False — The free/fixed-background transfer-matrix algebra closes: independently, T_odd T_even has trace 2+4(m^2+lambda^2), determinant 1, and eigenvalues exp(+/-2E), giving a positive decaying Gamma kernel. The full gauge-integrated RP reduction does not close because the packet lacks a bridge applying the abstract gauge-half norm-square lemma to the Wilson-plaquette temporal-gauge boundary setup and combining it with the fermion determinant/transfer factors for all A_+^(2) observables.
+- **rationale:** The primary runner is substantive rather than a constant-printer: it constructs the action-derived transfer matrices, checks the dispersion, verifies single-step non-positivity, builds Gamma(t1^(2)), and checks B^dag B and OS-Gram positivity. The displayed transfer formulas also pass an independent algebraic check. The conditional blocker is scope: the cited gauge-half authority is only an abstract symmetric-involution Cauchy-Schwarz identity and explicitly does not prove the Wilson-plaquette boundary application needed for the full SU(3) Haar RP surface.
+- **open / conditional deps cited:**
+  - `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`

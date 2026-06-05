@@ -1,0 +1,149 @@
+
+========================================================================
+PART 1 — circulant H = a I + b C + conj(b) C^2, eigenvalues, r
+========================================================================
+  [PASS] H is Hermitian (H = H^dagger)
+  [PASS] all three eigenvalues real
+    L0 = a + 2*b_r
+    L1 = a - sqrt(3)*b_i - b_r
+    L2 = a + sqrt(3)*b_i - b_r
+  [PASS] mean(eigenvalues) = a  (trace direction = chiral origin)
+  [PASS] variance(eigenvalues) = 2 |b|^2
+    index-of-dispersion var/mean^2 = 2*(b_i**2 + b_r**2)/a**2  ( = 2 r, r=|b|^2/a^2 )
+
+========================================================================
+PART 2 — circulant grading Gamma_chi = (2/3) J - I COMMUTES with H
+========================================================================
+  [PASS] Gamma_chi^2 = I
+  [PASS] Gamma_chi = diag(+1,-1,-1) in Fourier basis (singlet +, doublet -)
+  [PASS] [H, Gamma_chi(circulant)] = 0  (so {.,.}=2 H Gamma != 0 generically)
+  [PASS] {H, Gamma_chi(circulant)} != 0 for generic a,b (anticommute fails)
+    => the circulant grading is the WRONG class for anticommutation.
+
+========================================================================
+PART 3 — affine anticommutation: Gamma_{jk} != 0 REQUIRES L_j + L_k = 0
+========================================================================
+  [PASS] {Gamma,H}_{jk} = (L_j + L_k) Gamma_{jk}  (exact, all entries)
+    Pairwise eigenvalue sums (must vanish where Gamma is supported):
+      L0+L0 = 2*a + 4*b_r
+      L0+L1 = 2*a - sqrt(3)*b_i + b_r
+      L0+L2 = 2*a + sqrt(3)*b_i + b_r
+      L1+L1 = 2*a - 2*sqrt(3)*b_i - 2*b_r
+      L1+L2 = 2*a - 2*b_r
+      L2+L2 = 2*a + 2*sqrt(3)*b_i - 2*b_r
+
+========================================================================
+PART 4 — construct candidate AFFINE Gamma_chi anticommuting with H
+========================================================================
+  [PASS] F^dagger H F is diagonal (Fourier diagonalizes H)
+
+   -- candidate: singlet sign s = 1, doublet-swap pairing --
+  [PASS]   Hermitian
+  [PASS]   involution Gamma^2 = I
+     L1 + L2 = 2*a - 2*b_r  (must be 0 for swap to anticommute)
+     2 L0    = 2*a + 4*b_r  (must be 0 for s-diagonal to anticommute)
+  [PASS]   candidate does NOT anticommute for generic a,b (expected)
+  [PASS]   candidate is NOT off-block (pairs doublet 1<->2, fixes singlet) — fails P3
+
+   -- candidate: singlet sign s = -1, doublet-swap pairing --
+  [PASS]   Hermitian
+  [PASS]   involution Gamma^2 = I
+     L1 + L2 = 2*a - 2*b_r  (must be 0 for swap to anticommute)
+     2 L0    = 2*a + 4*b_r  (must be 0 for s-diagonal to anticommute)
+  [PASS]   candidate does NOT anticommute for generic a,b (expected)
+  [PASS]   candidate is NOT off-block (pairs doublet 1<->2, fixes singlet) — fails P3
+
+========================================================================
+PART 4b — FORCE off-block: pair singlet(mode0) with doublet(mode1)
+========================================================================
+
+   -- off-block candidate: fixed-mode sign t = 1, pairing 0<->1 --
+  [PASS]   Hermitian
+  [PASS]   involution
+     L0 + L1 = 2*a - sqrt(3)*b_i + b_r  (must be 0 for 0<->1 swap)
+     2 L2    = 2*a + 2*sqrt(3)*b_i - 2*b_r  (must be 0 for t-diagonal)
+  [PASS]   off-block candidate does NOT anticommute for generic a,b (expected)
+
+   -- off-block candidate: fixed-mode sign t = -1, pairing 0<->1 --
+  [PASS]   Hermitian
+  [PASS]   involution
+     L0 + L1 = 2*a - sqrt(3)*b_i + b_r  (must be 0 for 0<->1 swap)
+     2 L2    = 2*a + 2*sqrt(3)*b_i - 2*b_r  (must be 0 for t-diagonal)
+  [PASS]   off-block candidate does NOT anticommute for generic a,b (expected)
+
+========================================================================
+PART 5a — ADVERSARIAL: most general Hermitian grading vs generic H
+========================================================================
+  [PASS] general Hermitian {Gamma,H}_{jk} = (L_j+L_k) Gamma_{jk} (all 9)
+    At generic eigenvalues every coefficient (L_j+L_k) is invertible
+    => forces every Gamma entry to 0 => Gamma = 0 (no grading at all).
+    A NONZERO anticommuting Hermitian grading REQUIRES some
+    L_j + L_k = 0 or L_j = 0 — the origin-reflection constraint.
+  [PASS] no nonzero Hermitian grading anticommutes at GENERIC eigenvalues (origin reflection forced)
+
+========================================================================
+PART 5 — when does an OFF-BLOCK affine involution anticommute?
+========================================================================
+  Off-block (singlet<->doublet) anticommuting involution requires
+  BOTH:  L0 = -L_j (paired)  AND  L_m = 0 (fixed third mode).
+
+  Solve [L0+L1=0, L2=0]:  solutions = [{a: 0, b_r: sqrt(3)*b_i}]
+  Solve [L0+L2=0, L1=0]:  solutions = [{a: 0, b_r: -sqrt(3)*b_i}]
+  [PASS] every off-block anticommuting solution forces a = 0 (the chiral limit)
+    => r = |b|^2/a^2 DIVERGES on the entire anticommuting locus;
+       the affine grading lives only where r is undefined (a=0),
+       never at the finite r = 1/2 Koide point.
+
+  Fixed-mode condition L2 = 0 alone -> [{b_i: sqrt(3)*(-a + b_r)/3}]
+
+========================================================================
+PART 6 — resulting Q + C_3-native / orbit-splitting audit
+========================================================================
+  spectrum on constraint surface = {+l, -l, 0}
+  eigenvalue readout: (sum L^2)/(sum L)^2 = 2*lambda**2/0 -> infinite (sum=0)
+  [PASS] eigenvalue-readout Q is INFINITE on the anticommuting surface (NOT 2/3)
+  [PASS] explicit L4 H = (1/3)(1 h^T + h 1^T) anticommutes with Gamma_chi
+    nonzero-eigenvalue eigenvector Q values = [2/3, 2/3]
+  [PASS] EIGENVECTOR readout of L4 H gives Q = 2/3 (the established route)
+  [PASS] off-block Gamma_aff is NOT C_3-native ([Gamma_aff, C] != 0) (expected)
+    => Gamma_aff BREAKS C_3-equivariance. It is NOT C_3-native;
+       it singles out Fourier modes (0,1) vs 2, i.e. picks a
+       preferred pairing not invariant under cyclic relabeling.
+
+========================================================================
+PART 7 — reduction map to the established no-go
+========================================================================
+  CASE (A) C_3-equivariant Gamma  -> forces H = 0  [no-go WALL 1]
+  CASE (B) off-block affine Gamma -> spectrum {+l,-l,0}:
+       * eigenvalue/affine-r readout  -> Q = INFINITE (not 2/3)
+       * to get 2/3 must switch to EIGENVECTOR readout = the
+         established anticommuting (L4) route, NOT C_3-native.
+
+  [PASS] NO off-block Gamma anticommutes for GENERIC a,b (only on constraint surface)
+  [PASS] on the anticommuting surface, affine-r/eigenvalue Q is NOT 2/3 (it is infinite)
+  [PASS] constructed off-block affine Gamma is NOT C_3-native
+
+  VERDICT: REDUCES-TO-ESTABLISHED-NO-GO.
+    The affine framing does EVADE 'comm(S) ∩ anticomm(Gamma)={0}'
+    in the sense that the off-block Gamma need not commute with C —
+    but it then lands on the {+l,-l,0} spectrum where the AFFINE
+    ratio readout (the very r the framing is about) gives Q=inf, and
+    the 2/3 value returns only through the EIGENVECTOR readout of the
+    pre-existing non-C_3-native anticommuting class. No NEW C_3-native
+    Hermitian off-block orbit-splitting grading giving the affine-r
+    Q=2/3 is produced. Wall: the same origin-reflection {+l,-l,0}
+    spectral obstruction, now seen as a readout-class fork.
+
+========================================================================
+SUMMARY
+========================================================================
+  Affine chiral-limit probe: the chiral-origin (a=0) anticommutation
+  condition {Gamma, H} = 0 forces, in the Fourier basis, the support
+  rule (L_j + L_k) Gamma_{jk} = 0. A C_3-equivariant Gamma -> H=0
+  (WALL 1). An off-block affine Gamma exists ONLY on the constraint
+  surface L_j=-L_k, L_m=0, giving spectrum {+l,-l,0}; there the AFFINE
+  ratio r / eigenvalue Koide readout is INFINITE, and Q=2/3 returns
+  only via the established (non-C_3-native) eigenvector route (WALL 2).
+
+  VERDICT: REDUCES-TO-ESTABLISHED-NO-GO (origin-reflection {+l,-l,0} spectral wall, surfaced as a
+  readout-class fork; no new C_3-native off-block Hermitian grading).

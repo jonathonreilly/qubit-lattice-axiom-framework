@@ -1,0 +1,112 @@
+========================================================================
+Graph-Braid Z^3 Anyon-Exclusion Dichotomy
+Dep-Resolution Hygiene Companion Runner (2026-06-04)
+========================================================================
+
+Repo root: /private/tmp/cl3-graph-braid-z3-anyon/wt
+Parent note: /private/tmp/cl3-graph-braid-z3-anyon/wt/docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md
+Parent runner: /private/tmp/cl3-graph-braid-z3-anyon/wt/scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py
+Weakened dep note: /private/tmp/cl3-graph-braid-z3-anyon/wt/docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md
+Companion source note: docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing substantive content does
+      not load-bear on the *audit grade* (nor on the content) of
+      `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`
+      (which moved from retained_no_go to unaudited).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no audit-status content asserted.
+
+========================================================================
+BLOCK 1: Re-execute parent runner on current head; expect PASS=25 FAIL=0
+========================================================================
+  PASS parent_runner_exit_zero :: returncode=0
+  PASS parent_runner_emits_expected_scorecard :: 'SCORECARD: PASS=25 FAIL=0' present in stdout: True
+  PASS parent_runner_verdict_anyons_excluded :: 'continuous ANYONS EXCLUDED' present in stdout
+  PASS parent_runner_dichotomy_phrase_present :: '{boson, fermion}' present in stdout
+  PASS parent_runner_no_stderr_errors :: stderr length=0
+
+========================================================================
+BLOCK 2: Re-verify H_1(UD_2) on K_5 / K_{3,3} directly via sympy SNF
+========================================================================
+  PASS sympy_numpy_importable_block2 :: numpy + sympy available
+  PASS k5_beta1_eq_6 :: beta_1(K_5) = 6 (expected 6)
+  PASS k5_torsion_eq_Z2 :: torsion(K_5) = [2] (expected [2])
+  PASS k33_beta1_eq_4 :: beta_1(K_{3,3}) = 4 (expected 4)
+  PASS k33_torsion_eq_Z2 :: torsion(K_{3,3}) = [2] (expected [2])
+  PASS c4_planar_torsion_free :: beta_1(C_4) = 1, torsion = [] (expected 1, [])
+
+========================================================================
+BLOCK 3: Parent runner contains zero audit-status or weakened-dep references
+========================================================================
+  PASS parent_runner_no_token_audit_status :: 'audit_status' absent from parent runner source
+  PASS parent_runner_no_token_effective_status :: 'effective_status' absent from parent runner source
+  PASS parent_runner_no_token_intrinsic_status :: 'intrinsic_status' absent from parent runner source
+  PASS parent_runner_no_token_retained_bounded :: 'retained_bounded' absent from parent runner source
+  PASS parent_runner_no_token_audited_clean :: 'audited_clean' absent from parent runner source
+  PASS parent_runner_no_token_audited_conditional :: 'audited_conditional' absent from parent runner source
+  PASS parent_runner_no_token_retained_no_go :: 'retained_no_go' absent from parent runner source
+  PASS parent_runner_no_token_audit_ledger :: 'audit_ledger' absent from parent runner source
+  PASS parent_runner_no_token_audit_grade :: 'audit_grade' absent from parent runner source
+  PASS parent_runner_no_weakened_dep_stem :: 'staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25' absent from parent runner source
+  PASS parent_runner_no_weakened_dep_filename :: weakened dep note filename absent from parent runner source
+
+========================================================================
+BLOCK 4: Parent note classifies weakened dep as Non-Load-Bearing Context
+========================================================================
+  PASS parent_note_has_non_load_bearing_context_section :: header 'Non-Load-Bearing Context' present
+  PASS parent_note_mentions_weakened_dep_for_scope :: weakened dep is named in parent note (scope-boundary citation)
+  PASS weakened_dep_listed_inside_non_load_bearing_section :: section_idx=11462, listed_in_section=True
+  PASS parent_note_explicit_no_tier_dependency_disclaimer :: 'nothing here depends on its tier or claims to close it' present in parent note (whitespace-normalized)
+  PASS parent_note_sole_load_bearing_dep_dim2 :: parent note identifies CL3 per-site dim-2 as the sole load-bearing framework dep
+  PASS parent_note_has_load_bearing_deps_section :: header 'Load-Bearing Dependencies' present
+  PASS weakened_dep_absent_from_load_bearing_block :: weakened dep not listed in Load-Bearing Dependencies section
+
+========================================================================
+BLOCK 5: Counterfactual re-execution without dep-grade or dep-content consultation
+========================================================================
+  PASS counterfactual_runner_exit_zero :: returncode=0
+  PASS counterfactual_runner_scorecard_unchanged :: SCORECARD identical to Block 1 (substance-unchanged)
+  PASS counterfactual_runner_anyons_excluded_unchanged :: VERDICT 'continuous ANYONS EXCLUDED' unchanged from Block 1
+
+========================================================================
+BLOCK 6: Dense unit-circle sweep on x^2 = 1; only +-1 solutions
+========================================================================
+  PASS unit_circle_sweep_finds_plus_one :: #points near +1: 1
+  PASS unit_circle_sweep_finds_minus_one :: #points near -1: 1
+  PASS unit_circle_sweep_no_continuum_solutions :: min |x^2 - 1| off +-1 bands = 9.204e-03
+  PASS hom_image_square_equals_one_1 :: image=+1: |image^2 - 1| = 0e+00
+  PASS hom_image_square_equals_one_-1 :: image=-1: |image^2 - 1| = 0e+00
+
+========================================================================
+BLOCK 7: Z^3 cubes L in {3, 4} are non-planar and 3-connected; Q_3 (L=2) is planar
+========================================================================
+  PASS z3_cube_L2_planarity_match :: L=2: planar=True (expected True); V=8, E=12
+  PASS z3_cube_L3_planarity_match :: L=3: planar=False (expected False); V=27, E=54
+  PASS z3_cube_L3_kuratowski_counterexample_present :: L=3: Kuratowski subgraph V=14, E=17
+  PASS z3_cube_L3_node_connectivity_eq_3 :: L=3: node_connectivity=3 (expected 3)
+  PASS z3_cube_L4_planarity_match :: L=4: planar=False (expected False); V=64, E=144
+  PASS z3_cube_L4_kuratowski_counterexample_present :: L=4: Kuratowski subgraph V=14, E=17
+  PASS z3_cube_L4_node_connectivity_eq_3 :: L=4: node_connectivity=3 (expected 3)
+
+========================================================================
+BLOCK 8: d1 . d2 = 0 on K_5 / K_{3,3} carriers; independent Z_2 re-derivation
+========================================================================
+  PASS k5_d1_d2_zero :: |d1 . d2| on K_5: max abs = 0
+  PASS k33_d1_d2_zero :: |d1 . d2| on K_{3,3}: max abs = 0
+  PASS k33_snf_has_single_two_invariant :: K_{3,3} SNF invariant factors: ones=17, twos=1, all=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2]
+  PASS c5_planar_no_two_invariant :: C_5 SNF invariant factors: [1, 1, 1, 1, 1] (no Z_2 expected)
+
+========================================================================
+BLOCK 9: Parent runner still emits scope-language sentences verbatim
+========================================================================
+  PASS scope_phrase_does_not_select_boson_vs_fermion :: 'does NOT select boson vs fermion' present in parent runner stdout (scope language preserved)
+  PASS scope_phrase_does_not_settle_the_open_second_quantized_gauge_coupled_bridge :: 'does NOT settle the open second-quantized gauge-coupled bridge' present in parent runner stdout (scope language preserved)
+  PASS companion_disclaims_status_promotion :: companion explicitly disclaims status promotion
+  PASS companion_metadata_declares_meta :: companion metadata declares Type: meta
+  PASS companion_explicitly_no_new_theorem :: companion explicitly disclaims new theorem claim
+
+========================================================================
+SUMMARY: PASS=53 FAIL=0
+========================================================================
+FINAL_TAG: GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_DEP_RESOLUTION_HYGIENE_OK

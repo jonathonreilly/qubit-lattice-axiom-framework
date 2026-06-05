@@ -1,0 +1,321 @@
+
+========================================================================
+CONTEXT — the three framework axioms used (MINIMAL_AXIOMS_2026-06-05)
+========================================================================
+
+  QUANTUM : per-site primitive d.o.f. is one qubit; one-site algebra M_2(C).
+            Supplies the Hilbert/operator carrier. Supplies NO Born rule,
+            measurement instrument, or measure.
+  LATTICE : sites form Z^3 (not load-bearing for this small-system test).
+  RECORD  : a record is the DURABLE registration of the realized outcome.
+            Given a readout context with a finite central-sector decomposition
+            and a fixed K/CPT conjugation, the realized outcome is the K/CPT
+            orbit of the realized central sector; for any finite pairwise-
+            DISJOINT collection of records the scalar readout I is FINITELY
+            ADDITIVE with I(empty)=0.
+            A record supplies NO weighting, normalization, PROBABILITY,
+            measurement/decoherence dynamics, or within-sector data.
+
+  ==> CRITICAL for the circularity audit: the Record axiom, as written, does
+      NOT contain a probability, a measure, a normalization, or a rule
+      "equal amplitudes => equal probability". It gives (i) a discrete realized
+      alphabet (K/CPT orbits of central sectors) and (ii) finite ADDITIVITY of a
+      scalar readout I over DISJOINT records. Nothing else.
+
+
+========================================================================
+ROUTE 1 / STEP 1 — the record state (Schmidt form, redundant environment)
+========================================================================
+
+  System S (a qubit, d_S=2) imprinted redundantly on an environment of two
+  fragment qubits E = E1 E2 (so each pointer value s_k is copied onto BOTH
+  fragments -> 'redundant records'). With pointer basis {|0>,|1>} on S:
+
+      |psi> = a_0 |0>_S |00>_E + a_1 |1>_S |11>_E
+
+  This is a GHZ-type state. The environment records are |E_0>=|00>, |E_1>=|11>,
+  orthonormal (<E_0|E_1>=0) and redundant (the value is recoverable from either
+  fragment alone after the other is traced). The pointer outcomes {s_0,s_1} are
+  the framework's records (K/CPT orbits of the central sectors of the pointer
+  observable). We work in C^2 (S) tensor C^4 (E), total 3 qubits.
+
+[PASS] E records orthonormal <E0|E1>=0  ::  <E0|E1>=0+0j
+[PASS] E0 normalized
+[PASS] E1 normalized
+
+========================================================================
+ROUTE 1 / STEP 2 — EQUAL-amplitude envariance (the swaps + invariance)
+========================================================================
+
+  EQUAL case a_0 = a_1 = 1/sqrt(2). Build:
+    U_S : the system bit-flip swap |0>_S <-> |1>_S   (Pauli-X on S)
+    U_E : the environment swap |E_0>=|00> <-> |E_1>=|11>
+  Claim (Zurek envariance): U_S alone changes |psi>, U_E alone changes |psi>,
+  but the COMPOSITE (U_S kron U_E)|psi> = |psi>. The system swap's effect on the
+  GLOBAL state is exactly UNDONE by an environment-only operation.
+
+[PASS] equal-case |psi> normalized
+[PASS] U_S alone CHANGES |psi> (not a state symmetry by itself)  ::  system swap alone moves the global state
+[PASS] U_E alone CHANGES |psi> (not a state symmetry by itself)  ::  environment swap alone moves the global state
+[PASS] ENVARIANCE: (U_S kron U_E)|psi> == |psi>  (equal case)  ::  max|delta|=0.00e+00
+[PASS] U_S unitary
+[PASS] U_E unitary
+
+  PHYSICAL CONTENT (what envariance actually licenses):
+  The environment swap U_E acts ONLY on E. So if a quantity Q_S that the SYSTEM
+  alone determines depends only on S (i.e. is computed from the system's record
+  state / reduced description), then U_E cannot change Q_S. But the equal-case
+  identity says (U_S)|psi> and |psi> differ ONLY by the environment-only U_E^{-1}.
+  Hence U_S leaves invariant any system-determined Q_S. In particular the swap
+  s_0<->s_1 is a symmetry of every system-determined quantity. We verify this
+  operationally three ways below.
+
+[PASS] equal case: reduced rho_S is X-swap invariant (rho_S = I/2)  ::  rho_S diag=[0.5 0.5]
+[PASS] env-only U_E leaves rho_S unchanged (E-action invisible to S)
+[PASS] global symmetry maps branch projector P0 -> P1 (US P0 US^-1 = P1)
+[PASS] and V=(US kron UE) fixes |psi> while swapping the branches
+
+========================================================================
+ROUTE 1 / STEP 3 — GENERAL case via fine-graining: |a|^2=(2/3,1/3) -> 2/3,1/3
+========================================================================
+
+  UNEQUAL case |a_0|^2 = 2/3, |a_1|^2 = 1/3. Strategy (Zurek's counting):
+  enlarge the environment with an ancilla C that fine-grains each branch into
+  N_k equally-weighted sub-records, with N_0 : N_1 = 2 : 1 (common denominator
+  3). Coherently split:
+
+      |0>_S|E_0>  ->  sqrt(1/2)(|0>_S|E_0>|c_1> + |0>_S|E_0>|c_2>)   [2 sub-recs]
+      |1>_S|E_1>  ->            |1>_S|E_1>|c_3>                       [1 sub-rec]
+
+  with {|c_1>,|c_2>,|c_3>} ORTHONORMAL ancilla records. After the split EVERY
+  sub-branch carries the SAME amplitude sqrt(1/3): the enlarged state is a
+  uniform superposition over 3 orthonormal fine-grained records. The equal-case
+  envariance of STEP 2 applies to ALL 3 sub-records (they are pairwise swap-
+  symmetric). 'Counting fine-grained equiprobable sub-records' assigns 1/3 each;
+  the coarse outcome s_0 collects N_0=2 of them -> 2/3; s_1 collects N_1=1 -> 1/3.
+
+[PASS] unequal coarse state: reduced rho_S diag = (2/3,1/3)  ::  diag=[0.666667 0.333333]
+[PASS] fine-grained |psi_fg> normalized
+[PASS] all 3 fine-grained sub-records carry EQUAL amplitude sqrt(1/3)  ::  |amp|^2=[0.333333 0.333333 0.333333]
+[PASS] the 3 fine-grained records are orthonormal (Gram = I_3)
+
+  Now apply the EQUAL-case envariance argument to the 3 equiprobable sub-records.
+  For any pair (m,n) of sub-records there is a system-side swap U_S^(mn) of the
+  fine-grained labels whose effect is undone by an environment+ancilla swap
+  U_{EC}^(mn): the enlarged state is invariant. We verify a representative pair
+  swap explicitly (swap sub-records 1 and 3, i.e. (s0,c1)<->(s1,c3)).
+
+[PASS] EQUAL sub-amplitudes => basis swap of records 1,3 leaves |psi_fg> invariant  ::  this is the envariance that fails for UNEQUAL amplitudes (see next check)
+[PASS] CONTRAST: swapping UNEQUAL coarse branches s0,s1 does NOT fix |psi> (no envariance)  ::  unequal amplitudes are not swap-symmetric -> cannot conclude equal prob
+
+  COUNTING STEP (the inference under audit, made explicit):
+    - All 3 fine-grained records are pairwise swap-symmetric (envariant) =>
+      by the equal-case argument each is assigned the SAME probability => 1/3.
+    - The coarse pointer outcome s_0 is the DISJOINT union of fine-grained
+      records {(s0,c1),(s0,c2)}; s_1 = {(s1,c3)}.
+    - RECORD additivity over DISJOINT records: I/probability of a coarse record
+      = sum over the fine-grained sub-records it contains.
+        p(s_0) = 1/3 + 1/3 = 2/3,   p(s_1) = 1/3.
+    - These equal |a_0|^2 = 2/3 and |a_1|^2 = 1/3.  Born rule recovered.
+
+[PASS] counting: p(s0)=2/3 = |a0|^2
+[PASS] counting: p(s1)=1/3 = |a1|^2
+[PASS] counting: probabilities sum to 1
+[PASS] general rational (3/4,1/4) recovered by equal sub-record counting  ::  N0:N1=3:1 over N=4
+[PASS] general rational (2/5,3/5) recovered by equal sub-record counting  ::  N0:N1=2:3 over N=5
+
+========================================================================
+ROUTE 1 / STEP 4 — CIRCULARITY AUDIT (the decisive part)
+========================================================================
+
+  We isolate EVERY premise the chain 'global state unchanged => equal
+  probability => counting => |a|^2' actually uses, and tag each as either
+  (PHYS) physical invariance only, (REC) supplied by the Record axiom as written,
+  or (SMUGGLE) a probability assumption NOT contained in {Quantum, Record}.
+
+  PREMISE LEDGER
+  --------------
+  A1 [PHYS]  Unitary invariance: (U_S kron U_E)|psi>=|psi> in the equal case.
+             VERIFIED above. Pure linear algebra. No probability used.
+
+  A2 [PHYS]  Locality of the undo: U_E acts only on E; an environment-only
+             unitary cannot change any quantity that is a function of the
+             SYSTEM's reduced description. VERIFIED (rho_S invariant under U_E).
+
+  A3 [????]  STATE-FUNCTIONALITY ('non-contextuality of probability'):
+             the probability of a system outcome s_k is a FUNCTION of the
+             system's record state (equivalently of the global state via the
+             reduced description) and of nothing else (not of the environment
+             basis labels, not of a hidden ordering).
+             --> Is this in {Quantum, Record}? The Record axiom names the
+             realized alphabet (K/CPT orbits) and asserts ADDITIVITY of a scalar
+             over disjoint records. It does NOT assert that a probability exists,
+             nor that it is a function of the state. So A3 introduces the very
+             object (a probability functional p(.|state)) whose VALUE we are
+             trying to derive. A3 is the existence-and-state-functionality of a
+             probability measure. THIS IS AN ADMISSION beyond the two axioms.
+
+  A4 [????]  SYMMETRY->EQUALITY: if a state symmetry maps outcome i to outcome j
+             (P_i -> P_j) while fixing the state, then p_i = p_j.
+             --> Given A3, A4 is the statement that the probability functional is
+             INVARIANT under state-symmetries. This is a genuine, non-trivial use
+             of A1+A2: the environment-undo makes the symmetry a SYSTEM-side
+             relabel, so IF probability is state-determined (A3) it must be equal.
+             So A4 = A1 + A2 + A3. It is NOT an independent smuggle on top of A3;
+             the physics (A1,A2) does the work ONCE A3 grants a state-functional
+             probability. (This is exactly the content Zurek claims is non-
+             circular, and exactly the gap Schlosshauer-Fine 2005 / Barnum 2003
+             point to: the load is entirely in A3.)
+
+  A5 [REC ]  Coarse = disjoint union of fine-grained records, and the coarse
+             score is the SUM over sub-records (additivity over DISJOINT
+             records). THIS IS the Record axiom (finite additivity, I(empty)=0).
+             Legitimately supplied. (It is additivity over orthogonal/disjoint
+             records, NOT the multiplicative-branch homomorphism the no-go bars.)
+
+  A6 [PHYS]  Fine-graining is a physical unitary embedding into an enlarged
+             environment that leaves the coarse reduced state and the coarse
+             records intact. VERIFIED (psi_fg normalized; sub-records ON; coarse
+             reduced state still (2/3,1/3)). No probability used.
+
+  VERDICT OF THE AUDIT
+  --------------------
+  The ONLY premise not contained in {Quantum, Record} is A3: the EXISTENCE of a
+  probability measure that is a FUNCTION OF THE STATE. Everything else (A1,A2,A6
+  physical; A5 = Record additivity; A4 = A1+A2+A3) is either physical invariance
+  or the Record axiom.
+
+  Therefore the envariance derivation is GENUINELY NON-CIRCULAR about the VALUE:
+  it does NOT assume 'equal amplitudes => equal probability' (that is DERIVED from
+  the state-symmetry A1+A2 once A3 is granted; we verified the unequal contrast
+  shows equal amplitude is the actual hinge, not an input). But it is CONDITIONAL
+  on A3 (a probability measure exists and is state-functional). A3 is the same
+  premise the Schlosshauer-Fine critique flags. {Quantum, Record} as written do
+  NOT supply A3: Record gives a discrete realized alphabet + additivity, not the
+  existence of a probability functional over outcomes.
+
+  ==> Route 1 status: CONDITIONAL. Given A3 (probability exists and is a function
+      of the record/quantum state), envariance forces p_k=|a_k|^2 NON-circularly.
+      Without A3 it does not even get started. A3 is NOT 'equal amp=>equal prob';
+      it is the weaker-looking but still-extra 'state-functional probability
+      exists'. {Quantum,Record} do not contain A3. So Route 1 SMUGGLES A3.
+
+[PASS] audit ledger: EXACTLY ONE smuggled premise identified (A3)  ::  smuggled = ['A3 state-functional probability EXISTS']
+[PASS] audit ledger: the smuggle is 'state-functional probability exists', NOT 'equal amp=>equal prob'
+[PASS] audit: 'equal amp => equal prob' is DERIVED (unequal contrast verified), not assumed  ::  the unequal-branch swap is NOT a symmetry => equality is not an input
+[PASS] audit: Record additivity (A5) legitimately supplies the disjoint-union sum
+
+========================================================================
+ROUTE 2 / STEP 5 — Gleason / Busch backstop (the theorem route)
+========================================================================
+
+  Record additivity over DISJOINT/commuting records is exactly a (finitely- or
+  countably-) additive measure m on the projection lattice P(H) (resp. effect
+  algebra E(H)). The framework's records form a PVM (sharp pointer projectors,
+  orthogonal -> commuting) and, for the qubit, a POVM/PVM on C^2.
+
+  GLEASON (1957): on complex H with dim H >= 3, every frame function /
+  countably-additive measure on P(H) has the form m(P)=Tr(rho P) for a unique
+  density matrix rho.  [Repo: GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE...]
+  Hypotheses for the framework: H_Lambda = (C^2)^{tensor |Lambda|}, dim=2^|Lambda|>=4
+  for |Lambda|>=2  -> dim>=3 MET.
+
+  BUSCH (2003) / CFMR (2004): on complex H with dim H >= 2, every POVM-additive
+  measure on the effect algebra E(H) has the form m(E)=Tr(rho E) for a unique
+  density matrix rho.  [Repo: BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE...]
+  Hypotheses: covers the SINGLE-QUBIT dim-2 case (|Lambda|=1) that Gleason misses.
+
+  We numerically CONFIRM both the theorem's claim (uniqueness of rho given the
+  measure) and that the framework's record projectors satisfy the hypotheses, on
+  small systems. We do NOT re-prove Gleason/Busch (standard math; cited).
+
+[PASS] Gleason dim hypothesis: |Lambda|=2 qubits -> dim=4 >= 3
+[PASS] Busch dim hypothesis: |Lambda|=1 qubit -> dim=2 >= 2
+[PASS] record PVM: P_up+P_dn = I_2
+[PASS] record PVM: orthogonal P_up P_dn = 0
+[PASS] record PVM: commute [P_up,P_dn]=0
+[PASS] Gleason/Busch FORM: Tr(rho P_|0>) = |<|0>|psi>|^2  ::  0.300000
+[PASS] Gleason/Busch FORM: Tr(rho P_|1>) = |<|1>|psi>|^2  ::  0.700000
+[PASS] Gleason/Busch FORM: Tr(rho P_|+>) = |<|+>|psi>|^2  ::  0.958258
+[PASS] Gleason/Busch uniqueness: distinct rho separated by a projector
+
+  OUTSIDE THE NO-GO?  YES. The no-go bars deriving the BRANCH measure from the
+  multiplicative-to-additive homomorphism (R_+,x)->(R,+) on independent branches
+  (which yields -c log p, not which measure). Gleason/Busch additivity is over
+  ORTHOGONAL projectors / POVM partitions of a SINGLE measurement (a frame
+  function), NOT over independent-branch products. Different structure ->
+  different theorem -> no contradiction. We confirm the distinction explicitly.
+
+[PASS] Gleason additivity is over ORTHOGONAL projectors of ONE measurement (P0+P1=I)
+[PASS] no-go object is the MULTIPLICATIVE independent-branch law p_AB=p_A p_B (different structure)  ::  orthogonal-sum additivity != independent-branch product => Gleason is outside the no-go
+
+  WHAT GLEASON/BUSCH FORCES vs LEAVES OPEN:
+    FORCES: the measure has the form m(.) = Tr(rho .). (the FORM)
+    LEAVES OPEN (in this framework): WHICH rho. The Born VALUE p_k=|a_k|^2 for a
+      pure input |psi> requires rho = |psi><psi|, i.e. identifying the
+      record-conditioned state. In the repo's chain this is the CONDITIONAL
+      'pre-record reference = unique tracial state I/d' bridge
+      (PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE; open admission) plus a
+      projective (Lueders) update. So Route 2 forces the FORM unconditionally but
+      the VALUE only conditionally on the rho-identification.
+
+
+========================================================================
+CROSS-ROUTE COMPARISON + NO-GO INTACT
+========================================================================
+
+  ROUTE 1 (envariance): forces the VALUE p_k=|a_k|^2 directly (counting), but is
+    CONDITIONAL on A3 = 'a state-functional probability exists'. {Quantum,Record}
+    do not contain A3 (Record gives a discrete realized alphabet + additivity,
+    not a probability functional). NON-circular about the value GIVEN A3.
+
+  ROUTE 2 (Gleason/Busch): forces the FORM Tr(rho .) unconditionally (hypotheses
+    met: dim>=3 multi-site Gleason, dim>=2 qubit Busch), but the VALUE rides on a
+    CONDITIONAL rho-identification (pre-record reference = I/d, open admission).
+
+  Neither route yields an UNCONDITIONAL Born=|amplitude|^2 from {Quantum,Record}
+  alone. They are COMPLEMENTARY: Route 1 needs 'probability exists & is state-
+  functional' (A3); Route 2 needs 'the state is rho=|psi><psi|' (rho-id). Both
+  missing ingredients are about CONNECTING the formal apparatus to a probability,
+  which the Record axiom (a TIMELESS additive scalar readout, explicitly NO
+  probability) does not provide.
+
+  NO-GO INTACT: the narrow additivity no-go
+  (OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO) bars ONLY
+  'Record additivity alone => the branch measure' via the multiplicative->additive
+  branch homomorphism. We never used that step. Route 1 uses state-symmetry +
+  additivity over DISJOINT records (+A3). Route 2 uses frame-function additivity
+  over ORTHOGONAL projectors. Both are outside the barred route. The no-go stands.
+
+[PASS] NO-GO INTACT: we did not derive the branch measure from additivity ALONE
+[PASS] NO-GO INTACT: Route 1 used state-symmetry + disjoint-additivity + A3 (not the homomorphism)
+[PASS] NO-GO INTACT: Route 2 used orthogonal-projector additivity (frame fn), not branch homomorphism
+
+========================================================================
+SYMPY EXACT CROSS-CHECK of the load-bearing equal-case envariance
+========================================================================
+[PASS] sympy EXACT: (U_S kron U_E)|psi> - |psi> = 0 (equal case)
+[PASS] sympy EXACT: coarse swap on UNEQUAL (2/3,1/3) is NOT a symmetry
+
+========================================================================
+RESULT
+========================================================================
+
+  ENVARIANCE (Route 1): equal-case envariance VERIFIED (the swaps + invariance,
+    exact). General case reduced to equal sub-records by fine-graining and the
+    Born values |a|^2=(2/3,1/3) RECOVERED by counting + Record additivity.
+  CIRCULARITY: the chain is non-circular about the VALUE (equal-amp=>equal-prob
+    is derived, not assumed) but CONDITIONAL on A3 = 'a state-functional
+    probability EXISTS'. {Quantum,Record} do NOT contain A3 -> Route 1 SMUGGLES
+    A3 (the Schlosshauer-Fine premise). VERDICT: conditional (genuine given A3).
+  GLEASON/BUSCH (Route 2): hypotheses MET (dim>=3 multi-site / dim>=2 qubit);
+    forces the FORM Tr(rho .) ; OUTSIDE the no-go (orthogonal-projector additivity,
+    not the branch homomorphism). VALUE conditional on the rho-identification.
+  NO-GO: INTACT (neither route used 'additivity alone => branch measure').
+
+  PEAK working dim used: 24 (S x E x C = 2 x 4 x 3); all exact / small.
+
+
+SELF-CHECK: PASS=44 FAIL=0  ->  OK
+
+PASS=44 FAIL=0

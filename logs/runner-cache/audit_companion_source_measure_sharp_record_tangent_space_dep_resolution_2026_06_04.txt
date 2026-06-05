@@ -1,0 +1,121 @@
+========================================================================
+Source/Measure Sharp-Record Tangent-Space
+Dep-Resolution Hygiene Companion Runner (2026-06-04)
+========================================================================
+
+Repo root: /private/tmp/cl3-sharp-record-tangent/wt
+Parent note: /private/tmp/cl3-sharp-record-tangent/wt/docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
+Parent runner: /private/tmp/cl3-sharp-record-tangent/wt/scripts/frontier_source_measure_sharp_record_tangent_space.py
+Dep note: /private/tmp/cl3-sharp-record-tangent/wt/docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md
+Companion source note: docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing substantive content does
+      not load-bear on the *audit grade* of its dep
+      `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`
+      (which was downgraded from retained_bounded to unaudited).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no audit-status content asserted.
+
+========================================================================
+BLOCK 1: Re-execute parent runner on current head; expect PASS=38 FAIL=0
+========================================================================
+  PASS parent_runner_exit_zero :: returncode=0
+  PASS parent_runner_summary_thirty_eight_pass_zero_fail :: looking for 'SUMMARY: PASS=38 FAIL=0' in stdout
+  PASS parent_runner_no_stderr_errors :: stderr length=0
+  PASS parent_runner_wrote_outputs_json :: outputs JSON exists at outputs/source_measure_sharp_record_tangent_space_2026-05-30.json
+
+========================================================================
+BLOCK 2: Re-verify load-bearing finite-probability algebra directly
+========================================================================
+  PASS sympy_importable :: imported sympy
+  PASS probability_tangent_sums_to_zero :: sum(dp)=0
+  PASS rn_score_zero_reference_mean :: E_0[s]=0
+  PASS fisher_norm_generic_two_outcome_is_4a_squared :: E_0[s^2]=4*a**2
+  PASS primitive_score_is_signed_record :: score_prim=[1, -1]
+  PASS primitive_dp_sums_to_zero :: sum(dp_prim)=0
+  PASS primitive_signed_record_fisher_norm_one :: E_0[s^2]=1
+  PASS lambda_scaled_fisher_norm_is_lambda_squared :: fisher_lam=lambda**2
+  PASS unit_fisher_condition_selects_lambda_one :: lambda solves to [1]
+
+========================================================================
+BLOCK 3: Parent runner contains zero audit-status references
+========================================================================
+  PASS parent_runner_no_token_audit_status :: 'audit_status' absent from parent runner source
+  PASS parent_runner_no_token_effective_status :: 'effective_status' absent from parent runner source
+  PASS parent_runner_no_token_intrinsic_status :: 'intrinsic_status' absent from parent runner source
+  PASS parent_runner_no_token_retained_bounded :: 'retained_bounded' absent from parent runner source
+  PASS parent_runner_no_token_audited_clean :: 'audited_clean' absent from parent runner source
+  PASS parent_runner_no_token_audited_conditional :: 'audited_conditional' absent from parent runner source
+  PASS parent_runner_no_token_retained_no_go :: 'retained_no_go' absent from parent runner source
+  PASS parent_runner_no_token_audit_ledger :: 'audit_ledger' absent from parent runner source
+  PASS parent_runner_no_token_audit_grade :: 'audit_grade' absent from parent runner source
+
+========================================================================
+BLOCK 4: Parent note contains no claim of dep-grade dependency
+========================================================================
+  PASS parent_note_no_phrase_load_bears_on_the_dep_s_audit :: 'load-bears on the dep's audit' absent from parent note
+  PASS parent_note_no_phrase_depends_on_the_dep_s_audit_grade :: 'depends on the dep's audit grade' absent from parent note
+  PASS parent_note_no_phrase_requires_the_dep_to_be_retained :: 'requires the dep to be retained' absent from parent note
+  PASS parent_note_no_phrase_requires_retained_bounded :: 'requires retained_bounded' absent from parent note
+  PASS parent_note_no_phrase_requires_audited_clean :: 'requires audited_clean' absent from parent note
+  PASS parent_note_load_bearing_scope_finite_sharp_record :: parent note frames scope as 'finite sharp-record'
+  PASS parent_note_load_bearing_rn_score_present :: parent note mentions Radon-Nikodym / RN score (load-bearing primitive)
+  PASS parent_note_status_boundary_present :: parent note has a Status boundary section
+  PASS parent_note_marks_exact_support :: parent note carries actual_current_surface_status: exact-support marker
+  PASS parent_note_forbids_bare_retained :: parent note forbids bare retained promotion
+
+========================================================================
+BLOCK 5: Counterfactual re-execution under dep at current unaudited grade
+========================================================================
+  PASS counterfactual_runner_exit_zero :: returncode=0
+  PASS counterfactual_runner_summary_unchanged :: PASS count identical to Block 1 (substance-unchanged)
+  PASS dep_note_path_still_exists :: dep note present at docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md
+  PASS parent_note_path_still_exists :: parent note present at docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
+
+========================================================================
+BLOCK 6: Exponential chart W(h) = log cosh(h) forced by E_0[R_h] = 1
+========================================================================
+  PASS exponential_chart_normalizes_path :: sum_e p0[e] R[e]=1
+  PASS exponential_chart_score_retrieval_plus :: d log R_+1 / dh |_0 = 1
+  PASS exponential_chart_score_retrieval_minus :: d log R_-1 / dh |_0 = -1
+  PASS exponential_chart_W_equals_log_cosh_h :: W=log(cosh(h))
+  PASS log_mgf_W_vanishes_at_origin :: W(0)=0
+  PASS log_mgf_W_prime_vanishes_at_origin :: W'(0)=0
+
+========================================================================
+BLOCK 7: Y_T six-component top tangent has Fisher norm one
+========================================================================
+  PASS six_component_top_fisher_norm_one :: ||u||^2 = 1
+  PASS lambda_scaled_top_fisher_norm_lambda_squared :: ||lambda u||^2 = lambda**2
+  PASS unit_top_tangent_selects_lambda_one :: lambda solves to [1]
+  PASS top_component_coefficient_is_one_over_sqrt_six :: u[0]=sqrt(6)/6
+  PASS top_components_equal_weight :: u[i] == u[0] for i in 0..5 (equal-weight normalized top)
+
+========================================================================
+BLOCK 8: Status-boundary preservation and companion-disclaim
+========================================================================
+  PASS parent_note_firewall_names_h_unit :: 'H_unit' named in parent note firewall section
+  PASS parent_note_firewall_names_yt_ward_identity :: 'yt_ward_identity' named in parent note firewall section
+  PASS parent_note_firewall_names_y_t_bare :: 'y_t_bare' named in parent note firewall section
+  PASS parent_note_firewall_names_pdg :: 'PDG' named in parent note firewall section
+  PASS parent_note_firewall_names_alpha_lm :: 'alpha_LM' named in parent note firewall section
+  PASS parent_note_firewall_names_plaquette :: 'plaquette' named in parent note firewall section
+  PASS parent_note_firewall_names_fitted_selector :: 'fitted selector' named in parent note firewall section
+  PASS parent_note_no_overclaim_status_retained :: 'Status: retained' absent from parent note
+  PASS parent_note_no_overclaim_unbounded_retained_y_t_closure_is_claimed :: 'unbounded retained Y_T closure is claimed' absent from parent note
+  PASS parent_note_no_overclaim_audit_clean_retained :: 'audit-clean retained' absent from parent note
+  PASS parent_note_status_key_present_actual_current_surface_status_exact_support :: 'actual_current_surface_status: exact-support' present in parent note Status boundary
+  PASS parent_note_status_key_present_trace_class_direct_blocker_closure_candidate :: 'trace_class: direct_blocker_closure_candidate' present in parent note Status boundary
+  PASS parent_note_status_key_present_proposal_allowed_false :: 'proposal_allowed: false' present in parent note Status boundary
+  PASS parent_note_status_key_present_bare_retained_allowed_false :: 'bare_retained_allowed: false' present in parent note Status boundary
+  PASS parent_note_status_key_present_audit_required_before_effective_retained_true :: 'audit_required_before_effective_retained: true' present in parent note Status boundary
+  PASS companion_disclaims_status_promotion :: companion explicitly disclaims status promotion
+  PASS companion_metadata_declares_meta :: companion metadata declares Type: meta
+  PASS companion_disclaims_new_theorem :: companion explicitly disclaims new theorem claim
+  PASS companion_disclaims_parent_edits :: companion explicitly disclaims parent edits
+
+========================================================================
+SUMMARY: PASS=66 FAIL=0
+========================================================================
+FINAL_TAG: SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_DEP_RESOLUTION_HYGIENE_OK

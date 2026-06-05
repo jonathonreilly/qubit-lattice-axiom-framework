@@ -1,30 +1,24 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1267,
-    "decoration": 48,
-    "meta": 245,
-    "no_go": 270,
-    "open_gate": 121,
-    "positive_theorem": 708
+    "bounded_theorem": 1282,
+    "decoration": 47,
+    "meta": 287,
+    "no_go": 290,
+    "open_gate": 131,
+    "positive_theorem": 711
   },
-  "cycle_examples": [
-    [
-      "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
-      "admitted_input_registry_tier_a_note_2026-05-23"
-    ]
-  ],
-  "cycles_detected": 1,
+  "cycle_examples": [],
+  "cycles_detected": 0,
   "effective_status_counts": {
-    "audited_conditional": 59,
+    "audited_conditional": 40,
     "audited_failed": 3,
-    "audited_numerical_match": 18,
+    "audited_numerical_match": 14,
     "audited_renaming": 22,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cl3_color_automorphism_theorem": 6,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 5,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_cpt_exact_note": 4,
-    "decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": 1,
     "decoration_under_emergent_lorentz_invariance_note": 1,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
@@ -44,22 +38,19 @@
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 241,
+    "meta": 283,
     "open_gate": 29,
     "retained": 161,
-    "retained_bounded": 619,
+    "retained_bounded": 618,
     "retained_no_go": 173,
-    "retained_pending_chain": 12,
-    "unaudited": 1278
+    "retained_pending_chain": 9,
+    "unaudited": 1353
   },
-  "retained_pending_chain_count": 12,
+  "retained_pending_chain_count": 9,
   "retained_pending_chain_examples": [
     "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
-    "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
-    "complex_selectivity_compare_note",
-    "complex_selectivity_predictor_note",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
     "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
     "lattice_3d_nyquist_diffraction_note",

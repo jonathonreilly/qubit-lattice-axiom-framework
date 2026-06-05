@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 641 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1314 |
+| unaudited | 1313 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 981 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1598 |
+| `unaudited` | 1597 |
 
 | claim_type | count |
 |---|---:|
@@ -1121,6 +1121,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3775,6 +3776,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Differentiating the finite layer-normalized propagator gives an exact centroid derivative at M=0 whose sign is negative for d <= 2 and positive for d >= 3 in the specified runner geometry.  _(class `C`)_
 - **chain closes:** True — The displayed derivative identities are correct finite-dimensional differentiations of A_x(M) and z/||z||, and an independent dense-matrix recomputation confirms the derivative and finite-probe sign table. The closure is bounded to the stated runner geometry only.
 - **rationale:** The runner source computes the finite-k derivative from the stated lattice propagator and does not hard-code the derivative table values. The normalization derivative, probability derivative, centroid derivative, and table signs check out independently by dense matrix construction rather than the runner's slice-based implementation. The note's non-claims correctly prevent promotion to full retained dimension selection, uniform-M control, all-parameter control, or axiom rewrite.
+- **auditor confidence:** high
+
+### `dimension_selection_note`
+
+- **Note:** [`DIMENSION_SELECTION_NOTE.md`](../../docs/DIMENSION_SELECTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-runner lower-bound support for the stated d = 1..5 propagator-plus-Poisson runner surface: d = 1,2 fail and d = 3,4,5 pass the runner criteria; no unique-d = 3 theorem or framework-baseline rewrite.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-190518-99660e015c-dimension_selection_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bounded result asserts that d <= 2 fail the runner's attractive-gravity / beta~1 lower-bound criteria while d = 3,4,5 pass, with the finite-k bridge certifying the same d <= 2 away and d >= 3 toward sign transition.  _(class `B`)_
+- **chain closes:** False — The prose scope is properly narrowed and the parent runner reports a sign replay, but the restricted packet does not include the dynamically imported bridge runner source or the original dimension runner/cache/source-packet verifier needed to inspect the beta, I_3, and finite-k computations. The missing step is an independently inspectable runner-source or derivation chain for the displayed table and sign computations.
+- **rationale:** The cited finite-k bridge note is retained_bounded for the narrow sign statement, and the source note correctly avoids the prior unique-d = 3 overclaim. However, the parent runner source dynamically loads computational bridge code that is not shown in the restricted packet, and the original dimension runner/cache/source-packet verifier that allegedly support the displayed beta and I_3 entries are also absent. The load-bearing table therefore remains cross-artifact verification rather than an independently checkable first-principles compute or algebraic closure.
 - **auditor confidence:** high
 
 ### `dimensional_gravity_table`

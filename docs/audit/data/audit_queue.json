@@ -3,7 +3,7 @@
     "critical": 269,
     "high": 284,
     "leaf": 433,
-    "medium": 330
+    "medium": 329
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16722,30 +16722,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dimension_selection_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/DIMENSION_SELECTION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py",
-      "transitive_descendants": 2
     },
     {
       "audit_independence_required": "any_non_self",
@@ -39455,6 +39431,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 109,
-  "total_pending": 1316
+  "ready_count": 108,
+  "total_pending": 1315
 }

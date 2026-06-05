@@ -1,0 +1,134 @@
+======================================================================
+Baseline. Brannen circulant Y = a I + b C + bbar C^2; r = |b|^2/a^2
+======================================================================
+[PASS] Baseline: closed-form circulant eigenvalues match numerics
+[PASS] Baseline: r = 1/2  <=>  |b|/a = 1/sqrt(2)  ((1/sqrt2)^2 = 0.500000)
+[PASS] Baseline: ||aI||^2 = 3 a^2 (HS norm of the stay block)  (5.0700 = 3*1.3^2)
+[PASS] Baseline: ||bC+bbar C^2||^2 = 6 |b|^2 (TWO nontrivial Z3 sectors)  (1.3350 = 6*|b|^2)
+[PASS] Baseline: HS-equipartition (3a^2 = 6|b|^2) gives r = 1/2 = 1/(#sectors)  (the factor 2 here is the SECTOR COUNT |Z3|-1=2, a DISCRETE datum)
+  NOTE: the equipartition '2' (sector count) and the length '2' = (sqrt2)^2
+        are NUMERICALLY equal but STRUCTURALLY distinct origins of r=1/2.
+
+======================================================================
+F1. Gaussian overlap  b/a = exp(-d_b^2/2s^2) / exp(-d_a^2/2s^2)
+======================================================================
+  on-site reference: tuned sigma^2 = 2/ln2 = 2.885390  -> b/a = 0.707107
+  NN reference     : tuned sigma^2 = 1/ln2 = 1.442695  -> b/a = 0.707107
+[PASS] F1: a Gaussian width sigma EXISTS that gives b/a = 1/sqrt2 (on-site ref)
+[PASS] F1: a Gaussian width sigma EXISTS that gives b/a = 1/sqrt2 (NN ref)
+[PASS] F1: b/a varies continuously with sigma (1/sqrt2 NOT a distinguished value)  (sigma is a FREE parameter tuned to the target)
+  VERDICT F1: NATURAL (a tuned width reproduces 1/sqrt2; sigma not forced).
+
+======================================================================
+F2. Inverse-distance power  b ~ 1/d^p  (on-site d=0 diverges)
+======================================================================
+  on-site (d=0) reference diverges for any p>0; the natural reference is NN (d=1).
+    p=1: b/a = 2^(-p/2) = 0.707107 -> r = 0.500000  <== r=1/2
+    p=2: b/a = 2^(-p/2) = 0.500000 -> r = 0.250000
+    p=3: b/a = 2^(-p/2) = 0.353553 -> r = 0.125000
+    p=4: b/a = 2^(-p/2) = 0.250000 -> r = 0.062500
+[PASS] F2: p=1 (the 1/r law) gives b/a = 1/sqrt2 EXACTLY -> r = 1/2
+[PASS] F2: only p=1 hits r=1/2; p in {2,3,4} do not
+  VERDICT F2: NATURAL (p=1/inverse-FIRST-power gives 1/sqrt2, but the power
+              p is a CHOICE; the lattice does not select it).
+
+======================================================================
+F3. Z^3 NN lattice Green function ratios (PARAMETER-FREE)
+======================================================================
+  on-site   G(0,0,0)  = 0.2527311   (exact Watson 0.2527310)
+  NN d=1    G(1,0,0)  = 0.0860644
+  facediag  G(1,1,0)  = 0.0551915   (distance sqrt2)
+  bodydiag  G(1,1,1)  = 0.0435784   (distance sqrt3)
+[PASS] F3: extrapolated G(0,0,0) matches exact Watson value (method validated)  (|diff| = 4.16e-08)
+[PASS] F3: extrapolated G(1,0,0) matches exact recurrence G(0)-1/6 (method validated)  (G1=0.0860644 vs G(0)-1/6=0.0860643)
+[PASS] F3: facediag Green value converges monotonically in N (clean extrapolation)  (vals=[0.05345, 0.05403, 0.05432, 0.0545])
+  ratio facediag/NN     = 0.641281   (target 1/sqrt2 = 0.707107)
+  ratio facediag/onsite = 0.218380
+  ratio NN/onsite       = 0.340537
+[PASS] F3: facediag/NN is NOT 1/sqrt2 (the propagator does not force sqrt2)  (facediag/NN = 0.6413 vs 1/sqrt2 = 0.7071)
+[PASS] F3: facediag/onsite is NOT 1/sqrt2  (0.2184)
+[PASS] F3: NN/onsite is NOT 1/sqrt2  (0.3405)
+[PASS] F3: the propagator-implied r (facediag/NN)^2 is NOT 1/2  (r_implied = 0.4112)
+  ratio bodydiag/NN     = 0.506346   (sqrt3 reference 1/sqrt3 = 0.577350)
+[PASS] F3: bodydiag/NN is NOT 1/sqrt3 either (no clean length law in the propagator)  (0.5063 vs 1/sqrt3=0.5774)
+  VERDICT F3: NO-SQRT2. The unique PARAMETER-FREE candidate gives
+              facediag/NN ~ 0.641, not 1/sqrt2 ~ 0.707. The actual
+              lattice propagator does NOT force the sqrt(2) weight.
+
+======================================================================
+F4. Geometric multiplicity (cubes sharing an edge vs a face-diagonal)
+======================================================================
+  cubes sharing an NN edge        = 4
+  cubes sharing a face-diagonal   = 2
+  intensity ratio fd/NN           = 0.500000  (= 1/2)
+  amplitude ratio sqrt(fd/NN)     = 0.707107  (= 1/sqrt2)
+[PASS] F4: intensity (multiplicity) ratio fd/NN = 1/2 (gives r=1/4, not 1/2)
+[PASS] F4: amplitude = sqrt(multiplicity) gives fd/NN = 1/sqrt2 -> r = 1/2
+  VERDICT F4: NATURAL. sqrt(2) appears ONLY under the amplitude=sqrt(intensity)
+              convention; the square-root step is the (conventional) choice.
+
+======================================================================
+F5. Spectral weighting: shift operator C vs identity I
+======================================================================
+  ||I||_F = 1.732051   ||C||_F = 1.732051
+  ||I||_op = 1.000000   ||C||_op = 1.000000
+[PASS] F5: ||C||_F = ||I||_F (shift and identity have equal HS norm)
+[PASS] F5: ||C||_op = ||I||_op = 1 (C is unitary)
+[PASS] F5: equal-norm weighting gives b/a = 1 -> r = 1 (Born default), NOT 1/sqrt2
+  VERDICT F5: NO-SQRT2. The bare spectral/operator norm of the shift equals
+              that of the identity -> r = 1 (the maximal-hierarchy lane),
+              not r = 1/2.
+
+======================================================================
+F6. Qubit-link u(2)/Clifford connection norm on a face-diagonal
+======================================================================
+  ||gamma(1,0,0)||_F = 1.414214   ||gamma(1,1,0)||_F = 2.000000
+[PASS] F6: gamma(1,1,0)^2 = 2 I (Clifford recovers squared length 2 = (sqrt2)^2)
+[PASS] F6: gamma(1,0,0)^2 = 1 I (NN squared length 1)
+[PASS] F6: ||gamma(facediag)|| / ||gamma(NN)|| = sqrt2 (face-diagonal is LARGER)
+[PASS] F6: connection-norm reading gives b/a = sqrt2 -> r = 2 (wrong direction)  (to get r=1/2 the length must enter INVERSELY (a decay, i.e. F1/F2))
+[PASS] F6: the Clifford length equals the Euclidean length (no new datum)  (sqrt(gamma^2)=sqrt2=1.414214)
+  VERDICT F6: gives sqrt(2) only by RE-ENCODING the Euclidean metric, and
+              with the WRONG sign (b/a = sqrt2 -> r = 2). Not an independent
+              forcing of the 1/sqrt2 weight. Classify: NO-SQRT2 (as a forcing).
+
+======================================================================
+Category-mismatch defeat test: is the continuous wall genuinely broken?
+======================================================================
+    f(d)=d^-1 (inverse length)                      : b/a = 0.707107 -> r = 0.500000  hit=True
+    f(d)=exp(-(ln2/2) d^2) (Gaussian)               : b/a = 0.707107 -> r = 0.500000  hit=True
+    f(d)=exp(-c d), c=ln2/(2(sqrt2-1)) (exp decay)  : b/a = 0.707107 -> r = 0.500000  hit=True
+[PASS] CM-1: at least three DISTINCT lattice-native length-weightings give r=1/2  (the lattice supplies the LENGTHS, not the function f -> f is the continuous input)
+[PASS] CM-2: pure discrete sector counting (|Z3|-1=2) already gives r = 1/2  (r = 1/2 reachable with ZERO continuous input -> sqrt2 is not THE bridge)
+[PASS] CM-3: (sqrt2)^2 = 2 equals the sector count |Z3|-1 = 2 (a NUMERICAL coincidence)  (same value 1/2, two structurally distinct origins (length vs counting))
+  => CATEGORY MISMATCH NOT DEFEATED. The continuous datum sqrt2 is real, but
+     (a) the CHOICE of length-weighting f (and its power) is the continuous
+         input, supplied by hand, not by the lattice; and
+     (b) r = 1/2 is ALREADY reachable by pure discrete sector counting, so
+         sqrt2 is a second, length-based coincidence with the same value,
+         not the unique continuous bridge the wall demanded.
+
+======================================================================
+Per-candidate verdict table
+======================================================================
+  F1: NATURAL
+  F2: NATURAL
+  F3: NO-SQRT2
+  F4: NATURAL
+  F5: NO-SQRT2
+  F6: NO-SQRT2
+  totals: FORCED=0  NATURAL=3  NO-SQRT2=3
+[PASS] VERDICT: NO candidate FORCES sqrt2 parameter-free in the right direction  (overall MIXED, leaning NATURAL)
+[PASS] VERDICT: the parameter-free candidate (F3 Green function) does NOT give sqrt2
+[PASS] VERDICT: candidates that DO yield 1/sqrt2 (F1,F2,F4) all need a tuned choice
+
+======================================================================
+SUMMARY: PASS=34 FAIL=0
+======================================================================
+Honest verdict: r = 1/2 via the face-diagonal length sqrt(2) is
+NATURAL-but-NOT-FORCED. The discrete lattice genuinely supplies the
+continuous datum sqrt(2), but it does NOT supply the weighting RULE that
+turns sqrt(2) into 1/sqrt(2); and the same r=1/2 is already reachable by
+pure discrete sector counting (|Z3|-1=2). The category mismatch therefore
+reappears one level up (the choice to weight-by-length, and to what power).
+Outcome: r=1/2 becomes a BETTER-MOTIVATED convention, not a closure.

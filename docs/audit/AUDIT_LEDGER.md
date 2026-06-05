@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 162 |
 | **retained_no_go** | 174 |
-| **retained_bounded** | 621 |
+| **retained_bounded** | 622 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1370 |
+| unaudited | 1369 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 23 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 946 |
+| `audited_clean` | 947 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1654 |
+| `unaudited` | 1653 |
 
 | claim_type | count |
 |---|---:|
@@ -870,6 +870,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_generated_wavefield_transfer_v2_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_geometry_rule_repair_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_propagating_generated_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `source_resolved_propagating_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_radical_geometry_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_retarded_green_corrected_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_self_consistent_generated_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -12755,6 +12756,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the compact generated DAG family, the propagating Green architecture preserves exact zero-source reduction but remains 0/4 TOWARD with F~M = 0.33, so it does not transfer the exact-lattice weak-field pocket.  _(class `C`)_
 - **chain closes:** True — The runner reproduces the note's zero-source reduction, 0/4 TOWARD count, fitted exponents, and mean |prop/inst| ratio. The note is correctly bounded as a generated-family transfer no-go rather than a positive closure claim.
 - **rationale:** The current runner output matches the frozen result: all zero-source shifts are 0, the instantaneous exponent is 0.43, the propagating Green exponent is 0.33, propagating means are 0/4 TOWARD, and mean |prop/inst| is 2.119. This closes the bounded no-go for this causal-memory transfer on the retained compact generated family. Residual risk is limited to the chosen generated family and MEMORY_MIX=0.9 architecture under test.
+- **auditor confidence:** high
+
+### `source_resolved_propagating_green_pocket_note`
+
+- **Note:** [`SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md`](../../docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited scope is the declared finite exact-lattice computation at h=0.5, W=3, L=20, clipped four-node source cluster, source strengths {0.001,0.002,0.004,0.008}, softened Green kernel, calibration target max |f|=0.02, and same-site memory mix=0.9.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-170111-f93ca0d298-source_resolved_propagating_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The asserted exact-lattice run passes the finite gates: zero-source dynamic shift 0.0, TOWARD rows 4/4, propagating F~M exponent 1.00, mean |prop/inst| 1.420, mean |prop/green| 1.149, and positive mean prop - green offset.  _(class `C`)_
+- **chain closes:** True — Within the declared-run scope, the primary runner constructs the lattice fields and propagates amplitudes rather than printing frozen constants, and the displayed ratios, exponent class, signs, and prop-green offset are consistent with the reported table. The chain does not claim a derivation of the softened Green kernel or memory recurrence from deeper retained dynamics, so that broader claim is outside the audited scope.
+- **rationale:** The runner source includes the load-bearing computation path and its helper source: lattice construction, instantaneous field, static source-resolved Green field, same-site recurrence, propagation, centroid readout, power fits, and gate assertions. The contested numerical rows are not hard-coded expected values, and independent arithmetic on the table confirms the reported mean ratios and memory observable. The sole cited authority is retained_bounded and is used only within the bounded declared-run computation, not as an unresolved bridge to a full propagating-field theory.
 - **auditor confidence:** high
 
 ### `source_resolved_radical_geometry_probe_note`

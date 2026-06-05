@@ -41,6 +41,7 @@ PStack experiment: grav-wave-post-newtonian
 from __future__ import annotations
 
 import math
+from pathlib import Path
 import time
 import inspect
 import sys
@@ -62,6 +63,7 @@ except ImportError:
 BETA = 0.8
 K = 5.0
 MAX_D_PHYS = 3
+SOURCE_PATH = Path(__file__).resolve()
 
 
 class Lattice3D:
@@ -842,6 +844,29 @@ def main():
     print("GRAVITATIONAL WAVE / ACTION-FORM SENSITIVITY PROBE")
     print("Bounded finite-lattice toy-model comparisons")
     print("=" * 72)
+    print()
+
+    source_text = SOURCE_PATH.read_text(encoding="utf-8")
+    source_checks = {
+        "Test B function body present": "def test_post_newtonian_moving_source" in source_text
+        and "MOVING SOURCE — instantaneous vs retarded field" in source_text
+        and "Retardation correction fit" in source_text,
+        "Test C function body present": "def test_wave_vs_laplace" in source_text
+        and "Localized field perturbation test" in source_text
+        and "Sensitivity profile slope" in source_text,
+        "quantitative table generation present": "d_instant" in source_text
+        and "d_retarded" in source_text
+        and "diff%" in source_text
+        and "VL delta_z" in source_text
+        and "PN delta_z" in source_text,
+        "source appears untruncated": len(source_text.splitlines()) > 900
+        and "def test_action_forms" in source_text
+        and "if __name__" in source_text,
+    }
+    print("ARTIFACT SOURCE CHECKS")
+    for name, ok in source_checks.items():
+        print(f"  [{'PASS' if ok else 'FAIL'}] {name}")
+        assert ok, name
     print()
 
     N = 20  # Side length — small enough for speed, large enough for physics

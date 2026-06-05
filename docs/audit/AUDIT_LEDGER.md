@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 619 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1379 |
+| unaudited | 1378 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 23 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 943 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1663 |
+| `unaudited` | 1662 |
 
 | claim_type | count |
 |---|---:|
@@ -1073,6 +1073,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1854,6 +1855,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The central idempotents e_+ = (1 - i omega)/2 and e_- = (1 + i omega)/2 split Cl(3,0) tensor_R C into two M_2(C) summands labelled by omega = +i and omega = -i, and Artin-Wedderburn/Schur gives the unique 2-dimensional simple module in each summand plus finite direct-sum decomposition.  _(class `A`)_
 - **chain closes:** True — Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted packet closes the narrowed claim as exact finite-dimensional Clifford/Wedderburn algebra: omega^2 = -1 and centrality give the idempotent split, the Pauli realization supplies the real-algebra identification Cl(3,0) ~= M_2(C), and semisimplicity of M_2(C) plus M_2(C) gives the two 2-dimensional chirality irreps and finite direct-sum decomposition. The runner corroborates the algebraic identities, but random probes are not load-bearing proof. No physical Hilbert-space carrier identification, Grassmann/staggered realization, chirality-selection rule, or spin-statistics interpretation is in the ratified scope.
 - **rationale:** Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted packet closes the narrowed claim as exact finite-dimensional Clifford/Wedderburn algebra: omega^2 = -1 and centrality give the idempotent split, the Pauli realization supplies the real-algebra identification Cl(3,0) ~= M_2(C), and semisimplicity of M_2(C) plus M_2(C) gives the two 2-dimensional chirality irreps and finite direct-sum decomposition. The runner corroborates the algebraic identities, but random probes are not load-bearing proof. No physical Hilbert-space carrier identification, Grassmann/staggered realization, chirality-selection rule, or spin-statistics interpretation is in the ratified scope.
+- **auditor confidence:** high
+
+### `axiom_first_cluster_decomposition_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-range Hermitian Cl(3) lattice Hamiltonians on finite Z^3 blocks satisfy the stated bounded Lieb-Robinson/light-cone/J_* claims; exponential clustering is audited only as conditional and not spatially closed here.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-163213-94e46c0d0f-axiom_first_cluster_decompos`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Iterating the Duhamel commutator estimate and bounding length-n interaction paths by D_int^n gives the Lieb-Robinson envelope with v_LR = 2 e J_* R_int D_int, while L2 is left conditional on a separate gap/spatial-clustering authority.  _(class `A`)_
+- **chain closes:** False — The finite-range LR, light-cone, and finite-J_* portions close as standard finite-lattice operator-norm inequalities. The L2 bound does not close because the packet supplies only a conditional temporal transfer-gap bridge and no retained spatial cluster-decomposition theorem or target-state gap authority for equation (3).
+- **rationale:** The runner genuinely computes finite free-fermion exhibits and the source-side J_* correction, but those exhibits are representative rather than a proof of the 3D spatial clustering statement. The LR/L3/L4 part is a bounded theorem over finite-range interactions and accepted lattice/quantum premises. However, L2 still imports an explicit open gap/spatial-clustering bridge: the mass-gap bridge proves temporal decay only conditional on Delta_T > 0, and the finite-Lambda operator note does not provide the missing spatial or full canonical staggered+Wilson closure. Therefore the audited row remains conditional rather than clean.
+- **open / conditional deps cited:**
+  - `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
+  - `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
+  - `STRONG_CP_THETA_ZERO_NOTE.md`
 - **auditor confidence:** high
 
 ### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`

@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_generation_triplet_dimension_parity_no_faithful_z.py
+runner_sha256: aaadfa14913e7e786aeaf6f568ebc6b639885be5bc01aa98630e0f39f9560458
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+========================================================================
+DIMENSION-PARITY: no 3-dim SU(2) carrier carries z faithfully
+Question: can faithful left-regular/multi-site z action live on dimension 3?
+Result: z=(-1)^{2j}; spinorial (z=-1) => EVEN dim; 3 is ODD => z=+1 forced
+        (the unique 3-dim carrier is the vector/adjoint, grade-1, z=+1).
+========================================================================
+------------------------------------------------------------------------
+(1) Faithful-left check: left-mult carries z faithfully (z=-1) but on C^2
+    (even dim, the SPINOR), while the adjoint quotients z on R^3.
+------------------------------------------------------------------------
+[PASS] (1) left-mult L_z = -I_4 on H  (z acts as -1: FAITHFUL on the center)  L_{-1} = -Id
+[PASS] (1) the faithful-z left module is C^2 = spin-1/2 (dim_C = 2, EVEN)  left-SU(2) on H is the 2-dim spinor irrep; z=-1 lives there, not on C^3
+[PASS] (1) adjoint(z) = I_3 on R^3  (z acts as +1: QUOTIENTED on the vector)  conjugation by -1 is the identity rotation
+------------------------------------------------------------------------
+(2) Central character z = exp(2 pi i J_z) = (-1)^{2j} * I on spin j.
+    Half-integer spin (spinorial) => z=-1; integer spin (vector) => z=+1.
+------------------------------------------------------------------------
+[PASS] (2) spin j=0/2 (dim 1): z = +1  [vector/tensor (z=+1)]  dim 1 is ODD
+[PASS] (2) parity link j=0/2: (z=-1) <=> (dim even)
+[PASS] (2) spin j=1/2 (dim 2): z = -1  [SPINORIAL (z=-1)]  dim 2 is EVEN
+[PASS] (2) parity link j=1/2: (z=-1) <=> (dim even)
+[PASS] (2) spin j=2/2 (dim 3): z = +1  [vector/tensor (z=+1)]  dim 3 is ODD
+[PASS] (2) parity link j=2/2: (z=-1) <=> (dim even)
+[PASS] (2) spin j=3/2 (dim 4): z = -1  [SPINORIAL (z=-1)]  dim 4 is EVEN
+[PASS] (2) parity link j=3/2: (z=-1) <=> (dim even)
+[PASS] (2) spin j=4/2 (dim 5): z = +1  [vector/tensor (z=+1)]  dim 5 is ODD
+[PASS] (2) parity link j=4/2: (z=-1) <=> (dim even)
+------------------------------------------------------------------------
+(3) No 3-dim rep carries z=-1: spinorial blocks are even-dim, and no
+    sum of even numbers equals 3. Unique 3-dim carrier = spin-1, z=+1.
+------------------------------------------------------------------------
+[PASS] (3) NO purely-spinorial (z=-1) decomposition of dim 3 exists (sum of evens != 3)  spinorial partitions of 3 = []
+[PASS] (3) even dim 2: a spinorial (z=-1) carrier DOES exist  e.g. block dims (2,)
+[PASS] (3) even dim 4: a spinorial (z=-1) carrier DOES exist  e.g. block dims (2, 2)
+[PASS] (3) even dim 6: a spinorial (z=-1) carrier DOES exist  e.g. block dims (2, 2, 2)
+[PASS] (3) the target carrier dimension 3 is ODD (the obstruction)
+[PASS] (3) unique 3-dim irrep is spin-1 = vector = grade-1 = ADJOINT, z=+1  spin-1 (3-dim) has z=(-1)^2=+1: z is quotiented
+------------------------------------------------------------------------
+(4) Multi-site steelman: (spin-1/2)^{(x)N}, z=(-1)^N. A 3-dim (spin-1)
+    block exists only for N even (z=+1); N odd (z=-1) is purely
+    half-integer => no 3-dim block. No multi-site z=-1 3-dim carrier.
+------------------------------------------------------------------------
+[PASS] (4) N=1: z=(-1)^N=-1 (global 2pi check -1); 3-dim spin-1 block present=False  spin content (2j:mult) = {1: 1}
+[PASS] (4) N=1: (3-dim block) AND (z=-1) is FALSE  3-dim block => N even => z=+1 (the adjoint/vector again)
+[PASS] (4) N=2: z=(-1)^N=+1 (global 2pi check +1); 3-dim spin-1 block present=True  spin content (2j:mult) = {0: 1, 2: 1}
+[PASS] (4) N=2: (3-dim block) AND (z=-1) is FALSE  3-dim block => N even => z=+1 (the adjoint/vector again)
+[PASS] (4) N=3: z=(-1)^N=-1 (global 2pi check -1); 3-dim spin-1 block present=False  spin content (2j:mult) = {1: 2, 3: 1}
+[PASS] (4) N=3: (3-dim block) AND (z=-1) is FALSE  3-dim block => N even => z=+1 (the adjoint/vector again)
+[PASS] (4) N=4: z=(-1)^N=+1 (global 2pi check +1); 3-dim spin-1 block present=True  spin content (2j:mult) = {0: 2, 2: 3, 4: 1}
+[PASS] (4) N=4: (3-dim block) AND (z=-1) is FALSE  3-dim block => N even => z=+1 (the adjoint/vector again)
+[PASS] (4) N=5: z=(-1)^N=-1 (global 2pi check -1); 3-dim spin-1 block present=False  spin content (2j:mult) = {1: 5, 3: 4, 5: 1}
+[PASS] (4) N=5: (3-dim block) AND (z=-1) is FALSE  3-dim block => N even => z=+1 (the adjoint/vector again)
+[PASS] (4) N=6: z=(-1)^N=+1 (global 2pi check +1); 3-dim spin-1 block present=True  spin content (2j:mult) = {0: 5, 2: 9, 4: 5, 6: 1}
+[PASS] (4) N=6: (3-dim block) AND (z=-1) is FALSE  3-dim block => N even => z=+1 (the adjoint/vector again)
+========================================================================
+SCORECARD: PASS=31 FAIL=0
+VERDICT: the faithful-center three-dimensional carrier route fails. Left multiplication does carry z=-1 faithfully, but on the EVEN-dimensional (C^2) spinor module, not on C^3. Since z is central, z=(-1)^{2j} on every rep; z=-1 (faithful on the center) forces a sum of half-integer spin blocks, each of EVEN dimension, and no sum of even numbers equals the ODD number 3. So no 3-dim carrier of the physical rotation -- single, left-regular slice, or N-fold multi-site tensor -- carries z faithfully; the unique 3-dim carrier is spin-1 = vector/adjoint, with z=+1 (quotiented). This does not close non-representation-theoretic pairing routes.
+========================================================================
+
+----- stderr -----
+

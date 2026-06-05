@@ -1,0 +1,152 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yt_source_covariance_normalization_support_dep_resolution_2026_06_04.py
+runner_sha256: 34ee868d6a8c6ac34726914038d36d4cdf415c908ec76a527fb37565e6c2a011
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+audit_companion_yt_source_covariance_normalization_support_dep_resolution_2026_06_04
+parent runner   : scripts/frontier_yt_source_covariance_normalization_support.py
+parent note     : docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md
+companion       : docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_RUNNER_HASH_HYGIENE_COMPANION_NOTE_2026-06-04.md
+no-go dep       : yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23
+source-pkt dep  : yt_source_action_support_packet_note_2026-05-22
+expected runner SHA-256: 2874560a7d1ba1cbce2cc9fd0085dcbe8e8f3bdc9bf4a1a2f4f23d0aadf91c5b
+
+================================================================================
+Block 1: Re-execute parent runner
+================================================================================
+[PASS] parent runner exists
+[PASS] parent runner subprocess returns nonempty stdout
+[PASS] parent runner reports PASS=33 (matches both prior clean snapshots): 33
+[PASS] parent runner reports FAIL=0 (no ledger-grade watcher exists): 0
+[PASS] parent runner subprocess returns exit code 0: 0
+[PASS] parent runner RESULT line is exactly PASS=33 FAIL=0
+
+================================================================================
+Block 2: Independent FH covariance identity check
+================================================================================
+[PASS] independent gradient: d log Z / dh equals source expectation: 1.5474260761649816e-11
+[PASS] independent Hessian: d2 log Z / dhdh equals connected covariance: 9.739623219040539e-09
+[PASS] independent covariance matrix is symmetric: 0.0
+[PASS] independent diagonal connected variances are strictly positive
+[PASS] independent covariance respects Cauchy-Schwarz off-diagonals: 0.0
+[PASS] centered second-moment identity matches connected covariance: 1.1102230246251565e-16
+
+================================================================================
+Block 3: Uniform-origin zero-mean + origin score (no dep grade)
+================================================================================
+[PASS] uniform reference has zero signed-record mean per site: 0.0
+[PASS] site 0 origin score equals epsilon for every record: 0.0
+[PASS] site 1 origin score equals epsilon for every record: 0.0
+[PASS] site 2 origin score equals epsilon for every record: 0.0
+[PASS] uniform-origin connected covariance equals identity: 0.0
+
+================================================================================
+Block 4: Source-rescaling boundary (no dep grade)
+================================================================================
+[PASS] test rescaling lambda is nontrivial: 1.7
+[PASS] rescaled insertion changes fixed-h origin score (nontrivial): [0.7, 0.7, 0.7, 0.7]
+[PASS] source rescaling absorbable into h-coordinate redefinition: 0.0
+[PASS] joint substitution invariance for record (-1, -1): 0.0
+[PASS] joint substitution invariance for record (-1, 1): 0.0
+[PASS] joint substitution invariance for record (1, -1): 0.0
+[PASS] joint substitution invariance for record (1, 1): 0.0
+
+================================================================================
+Block 5: Static scan of parent runner for grade-field reads
+================================================================================
+[PASS] parent runner has zero matches for ledger-read pattern 1: 0
+[PASS] parent runner has zero matches for ledger-read pattern 2: 0
+[PASS] parent runner has zero matches for ledger-read pattern 3: 0
+[PASS] parent runner has zero matches for ledger-read pattern 4: 0
+[PASS] parent runner has zero matches for ledger-read pattern 5: 0
+[PASS] parent runner has zero matches for ledger-read pattern 6: 0
+[PASS] parent runner has zero matches for ledger-read pattern 7: 0
+[PASS] parent runner has zero matches for ledger-read pattern 8: 0
+[PASS] parent runner has no ledger row access for grade field audit_state_field: 0
+[PASS] parent runner has no ledger row access for grade field effective_state_field: 0
+[PASS] parent runner has no ledger row access for grade field intrinsic_state_field: 0
+[PASS] parent runner has no ledger row access for grade field bounded_grade_field: 0
+[PASS] parent runner has no ledger row access for grade field clean_verdict_field: 0
+[PASS] parent runner has no ledger row access for grade field conditional_verdict_field: 0
+[PASS] parent runner LEDGER references confined to a single Path anchor (+ one assignment): 2
+[PASS] parent runner uses LEDGER only via path-existence check
+
+================================================================================
+Block 6: Static scan of parent note for grade-dependence claims
+================================================================================
+[PASS] parent note absent of grade-dependence pattern: because_dep_clean_grade
+[PASS] parent note absent of grade-dependence pattern: because_bounded_grade
+[PASS] parent note absent of grade-dependence pattern: because_no_go_grade
+[PASS] parent note absent of grade-dependence pattern: depends_on_dep_audit_grade
+[PASS] parent note absent of grade-dependence pattern: load_bears_on_dep_audit_grade
+[PASS] parent note absent of grade-dependence pattern: requires_dep_clean_grade
+[PASS] parent note absent of grade-dependence pattern: requires_clean_verdict
+[PASS] parent note absent of grade-dependence pattern: requires_dep_grade
+[PASS] parent note absent of grade-dependence pattern: theorem_load_bears_on_grade
+[PASS] parent note declares no direct generated-status change
+[PASS] parent note declares independent status boundary
+
+================================================================================
+Block 7: Counterfactual independence of substantive blocks
+================================================================================
+[PASS] no-ledger: uniform reference has zero mean: 0.0
+[PASS] no-ledger: connected covariance has strictly positive diagonal
+[PASS] no-ledger: source rescaling absorbs into h-coordinate redefinition: 0.0
+[PASS] no-ledger: connected covariance invariant across simulated grade values: 0.0
+
+================================================================================
+Block 8: Firewall preservation across the dep weakening
+================================================================================
+[PASS] required boundary phrase present: canonical_operator_open
+[PASS] required boundary phrase present: scalar_lsz_open
+[PASS] required boundary phrase present: kappa_y_open
+[PASS] required boundary phrase present: mass_yukawa_open
+[PASS] required boundary phrase present: bounded_author_hint
+[PASS] required boundary phrase present: independent_status_boundary
+[PASS] required boundary phrase present: no_direct_generated_status_change
+[PASS] forbidden overclaim absent: status_clean_grade
+[PASS] forbidden overclaim absent: positive_clean_grade_closure
+[PASS] forbidden overclaim absent: kappa_y_derived
+[PASS] forbidden overclaim absent: derive_y_t
+[PASS] forbidden overclaim absent: y_t_value
+[PASS] forbidden overclaim absent: m_t_value
+[PASS] forbidden overclaim absent: sqrt_import_overclaim
+
+================================================================================
+Block 9: Runner-hash continuity since last clean archived snapshot
+================================================================================
+[PASS] current parent runner SHA-256 matches expected archived runner snapshot: current=2874560a7d1ba1cb expected=2874560a7d1ba1cb
+[PASS] current runner hash is NOT the earlier superseded hash: current=2874560a7d1ba1cb superseded=442eeaa8519a7c8d
+[PASS] parent ledger row has >= 2 previous_audits entries (matches event chain): 2
+[PASS] most-recent archived runner snapshot has runner_hash recorded: 2874560a7d1ba1cb
+[PASS] current runner hash matches most-recent archived runner hash: current=2874560a7d1ba1cb snap=2874560a7d1ba1cb
+[PASS] most-recent invalidation reason is a dep_weakened event: present
+[PASS] most-recent invalidation names the no-go dep: present
+
+================================================================================
+Block 10: Companion non-self-promotion check
+================================================================================
+[PASS] companion absent of promotion phrase: status_clean_grade
+[PASS] companion absent of promotion phrase: promoted_clean_grade
+[PASS] companion absent of promotion phrase: promote_parent
+[PASS] companion absent of promotion phrase: promotes_parent_effective_state
+[PASS] companion absent of promotion phrase: note_promotes
+[PASS] companion absent of promotion phrase: companion_promotes
+[PASS] companion contains required disclaimer: meta_type
+[PASS] companion contains required disclaimer: companion_only
+[PASS] companion contains required disclaimer: not_new_theorem
+[PASS] companion contains required disclaimer: not_direct_status_change
+[PASS] companion contains required disclaimer: does_not_change_status
+[PASS] companion does not assert current parent grade other than ledger record
+[PASS] companion runner exists
+[PASS] companion note registers this companion runner
+
+================================================================================
+RESULT: PASS=90 FAIL=0
+================================================================================
+
+----- stderr -----
+

@@ -1,0 +1,107 @@
+========================================================================
+Alpha Convention I2 Accepted-Premise Bridge
+Dep-Resolution Hygiene Companion Runner (2026-06-04)
+========================================================================
+
+Repo root: /private/tmp/cl3-alpha-convention-i2/wt
+Parent note: docs/ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md
+Parent runner: scripts/alpha_convention_i2_accepted_premise_runner.py
+Dep note: docs/G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+Companion source note: docs/ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing substantive content does
+      not load-bear on the *audit grade* of its dep
+      `g_bare_two_ward_h_unit_residue_accepted_premise_bridge_
+      bounded_note_2026-05-26` (downgraded retained_bounded ->
+      retained_pending_chain; now unaudited on origin/main).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no audit-status content asserted.
+
+========================================================================
+BLOCK 1: Re-execute parent runner on current head; expect TOTAL PASS=61 FAIL=0
+========================================================================
+  PASS parent_runner_exit_zero :: returncode=0
+  PASS parent_runner_emits_expected_verdict_line :: VERDICT line present in stdout: True
+  PASS parent_runner_total_61_pass_zero_fail :: looking for 'TOTAL   : PASS = 61, FAIL = 0' in stdout
+  PASS parent_runner_exact_pass_count :: expect 'EXACT   : PASS = 56, FAIL = 0'
+  PASS parent_runner_bounded_pass_count :: expect 'BOUNDED : PASS = 5, FAIL = 0'
+  PASS parent_runner_no_stderr_errors :: stderr length=0
+
+========================================================================
+BLOCK 2: Re-verify load-bearing substitution alpha(g_bare=1) = 1/(4 pi)
+========================================================================
+  PASS substitution_g_bare_eq_1_gives_one_over_four_pi :: alpha(g_bare=1) = 1/(4*pi) == 1/(4 pi)
+  PASS substitution_is_pure_sympy_no_io :: subs is a pure symbolic operation on Q[g_bare] (no audit-ledger I/O)
+  PASS numerical_value_matches_one_over_four_pi :: numerical alpha(1) = 0.0795774715459477
+
+========================================================================
+BLOCK 3: Parent runner contains zero EXECUTABLE audit-status references
+========================================================================
+  PASS parent_runner_no_token_audit_status :: 'audit_status' absent from parent runner source (no executable read)
+  PASS parent_runner_no_token_intrinsic_status :: 'intrinsic_status' absent from parent runner source (no executable read)
+  PASS parent_runner_no_token_audited_clean :: 'audited_clean' absent from parent runner source (no executable read)
+  PASS parent_runner_no_token_retained_no_go :: 'retained_no_go' absent from parent runner source (no executable read)
+  PASS parent_runner_no_token_audit_ledger :: 'audit_ledger' absent from parent runner source (no executable read)
+  PASS parent_runner_no_token_audit_grade :: 'audit_grade' absent from parent runner source (no executable read)
+  PASS parent_runner_token_effective_status_eq_is_in_exclusion_list :: line 114: '"effective_status =",...' is a string literal in exclusion context
+  PASS parent_runner_token_retained_bounded_is_in_exclusion_list :: line 115: '"retained_bounded",...' is a string literal in exclusion context
+  PASS parent_runner_token_audited_conditional_is_in_exclusion_list :: line 113: '"audited_conditional",...' is a string literal in exclusion context
+  PASS parent_runner_no_dep_claim_id_grade_read :: parent runner does not reference dep claim_id 'g_bare_two_ward_h_unit_residue_accepted_...'
+
+========================================================================
+BLOCK 4: Parent note contains no claim of dep-grade dependency
+========================================================================
+  PASS parent_note_no_phrase_load_bears_on_the_dep_s_audit :: 'load-bears on the dep's audit' absent from parent note
+  PASS parent_note_no_phrase_depends_on_the_dep_s_audit_grade :: 'depends on the dep's audit grade' absent from parent note
+  PASS parent_note_no_phrase_requires_the_dep_to_be_retained :: 'requires the dep to be retained' absent from parent note
+  PASS parent_note_no_phrase_requires_retained_bounded :: 'requires retained_bounded' absent from parent note
+  PASS parent_note_no_phrase_requires_audited_clean :: 'requires audited_clean' absent from parent note
+  PASS parent_note_no_phrase_load_bears_on_g_bare_two_ward :: 'load-bears on g_bare_two_ward' absent from parent note
+  PASS parent_note_conditional_phrasing_present :: parent note phrases (B1) as conditional algebraic substitution
+  PASS parent_note_authority_disclaimer_present :: parent note carries the 'independent audit lane only' disclaimer
+
+========================================================================
+BLOCK 5: Counterfactual re-execution with dep at 'unaudited' on origin/main
+========================================================================
+  PASS counterfactual_runner_exit_zero :: returncode=0
+  PASS counterfactual_runner_verdict_line_unchanged :: VERDICT line identical to Block 1 (substance-unchanged)
+  PASS counterfactual_runner_total_pass_count_unchanged :: TOTAL PASS count unchanged from Block 1
+
+========================================================================
+BLOCK 6: Functional-form self-check: (P1) = 1/(4 pi) * g_bare^2 (degree-2 monomial)
+========================================================================
+  PASS functional_form_degree_two :: deg_{g_bare} = 2
+  PASS functional_form_coefficient_sequence :: coeffs = [1, 0, 0]
+  PASS functional_form_no_constant_term :: alpha(0) = 0
+  PASS functional_form_no_linear_term :: d alpha / d g_bare |_{g_bare=0} = 0
+  PASS functional_form_second_derivative_at_zero :: second derivative = 1/(2*pi), expected 1/(2 pi)
+  PASS functional_form_value_at_one :: alpha(1) = 1/(4*pi), expected 1/(4 pi)
+  PASS functional_form_uniqueness_under_p1 :: k=2 rescaling differs from (P1) (k=1 unique)
+
+========================================================================
+BLOCK 7: alpha_LM composition self-check: alpha_LM^2 / alpha_s = alpha_bare
+========================================================================
+  PASS alpha_LM_identity_holds_algebraically :: alpha_LM^2 = alpha_bare * alpha_s (from definitions)
+  PASS alpha_LM_squared_over_alpha_s_equals_alpha_bare :: alpha_LM^2 / alpha_s = alpha_bare, expected alpha_bare
+  PASS alpha_LM_substitution_consistent_with_P1 :: after (P1) substitution: alpha_LM^2/alpha_s = g_bare^2/(4 pi)
+  PASS alpha_LM_substitution_at_g_bare_one :: at g_bare=1: alpha_LM^2/alpha_s = 1/(4*pi), expected 1/(4 pi)
+  PASS composition_is_pure_sympy_no_io :: composition uses sympy ring substitution only (no audit-ledger I/O)
+
+========================================================================
+BLOCK 8: Authority disclaimer preserved; companion declares Type: meta
+========================================================================
+  PASS parent_note_status_authority_disclaimer :: parent note: 'Status authority: independent audit lane only'
+  PASS parent_note_not_predict_audit_outcome :: parent note disclaims setting/predicting audit outcome
+  PASS parent_note_claim_boundary_only :: parent note: source-side claim-boundary declaration only
+  PASS companion_metadata_declares_meta :: companion metadata declares Type: meta
+  PASS companion_disclaims_status_promotion :: companion explicitly disclaims status promotion
+  PASS companion_disclaims_theorem_claim :: companion explicitly disclaims new-theorem claim
+  PASS companion_audit_lane_handoff_section_present :: companion contains audit-lane handoff section
+  PASS companion_references_invalidation_reason :: companion records exact invalidation reason from ledger
+  PASS companion_substance_vs_grade_vocabulary :: companion uses substance-vs-grade vocabulary
+
+========================================================================
+SUMMARY: PASS=51 FAIL=0
+========================================================================
+FINAL_TAG: ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_DEP_RESOLUTION_HYGIENE_OK

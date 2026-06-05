@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py
+runner_sha256: d36a6bacf2b17b0d482cce81ddd408fecb486e8f36917696ad2c2287504b51c4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+========================================================================
+Koide Record sign route diagnosis
+========================================================================
+Scope: open-gate route diagnosis; no readout rule adopted.
+PASS tested_functionals_add_over_direct_sum
+PASS squaring_erases_single_sign
+PASS eta_count_does_not_fix_q :: eta=3 for both; q_a=0.3333, q_b=0.5000
+PASS charged_lepton_comparator_sign_homogeneous :: q_signed=q_unsigned=0.666661
+PASS r_half_maps_to_q_two_thirds
+========================================================================
+SCORECARD: PASS=5 FAIL=0
+========================================================================
+
+----- stderr -----
+

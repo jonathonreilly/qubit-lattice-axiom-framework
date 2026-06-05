@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 176 |
-| **retained_no_go** | 183 |
+| **retained_no_go** | 184 |
 | **retained_bounded** | 658 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1276 |
+| unaudited | 1275 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1009 |
+| `audited_clean` | 1010 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1560 |
+| `unaudited` | 1559 |
 
 | claim_type | count |
 |---|---:|
@@ -399,6 +399,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5685,6 +5686,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner computes the 2/9 local-density arithmetic and several consistency checks, but it deliberately does not discharge the observable-promotion step. The source note relies on named ledger rows and prior structures that are not supplied as cited authorities in the restricted packet, especially the open gate lepton_brannen_bae_delta_two_ninths. Under the formula inventory pass, the global-invariant family is not clean as written: the note says the global Lefschetz sum vanishes while also displaying global=L*(2/9), with L=3 -> 2/3 and L=8 -> 16/9; runner D2 checks a separate toy eta pairing, not that cancellation.
 - **open / conditional deps cited:**
   - `lepton_brannen_bae_delta_two_ninths`
+- **auditor confidence:** high
+
+### `flavor_hw1_staggered_projection_democratic_r0_2026-06-02`
+
+- **Note:** [`FLAVOR_HW1_STAGGERED_PROJECTION_DEMOCRATIC_R0_2026-06-02.md`](../../docs/FLAVOR_HW1_STAGGERED_PROJECTION_DEMOCRATIC_R0_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For K = sigma_x tensor I tensor I + sigma_z tensor sigma_x tensor I + sigma_z tensor sigma_z tensor sigma_x on C^8, restricted and Schur-reduced to span{|100>, |010>, |001>}, the induced generation hopping is zero and this projection route gives r=0 rather than r=1/2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-84552991b3-flavor_hw1_staggered_project`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Schur-complement induced hw=1 off-diagonal generation hopping cancels exactly for the specified staggered single-bit-flip operator, leaving b=0 while the diagonal term is nonzero, hence r=|b|^2/a^2=0.  _(class `C`)_
+- **chain closes:** True — The packet supplies the operator, sector, runner output, and runner source; the source explicitly constructs the matrices and computes the direct block and Schur complement rather than importing or printing the contested result. An independent sign-path check agrees: each hw=1 off-diagonal coupling has paired second-order paths through vacuum and a double-excitation state with opposite staggered signs, so the induced hopping cancels for this operator.
+- **rationale:** The load-bearing step is a finite first-principles computation from the displayed one-qubit operator algebra and the specified hw=1 projection. No upstream authorities, empirical comparators, fitted values, or open bridges are used. The no-go is narrow: it closes only this staggered single-bit-flip projection route and explicitly leaves other action, bivector, dynamical, and sector-factorized routes open.
 - **auditor confidence:** high
 
 ### `flavor_idempotent_u1_collapses_note_2026-05-30`

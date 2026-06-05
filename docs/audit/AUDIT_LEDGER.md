@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 191 |
 | **retained_bounded** | 669 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 33 |
-| unaudited | 1239 |
+| open_gate | 34 |
+| unaudited | 1238 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1031 |
+| `audited_clean` | 1032 |
 | `audited_conditional` | 78 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1523 |
+| `unaudited` | 1522 |
 
 | claim_type | count |
 |---|---:|
@@ -644,6 +644,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_reality_type_permitted_not_forced_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_record_sign_agnostic_eta_refuted_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9813,6 +9814,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** A single real anti-Hermitian `D=Jcs` on an explicitly complex space supports both the real antisymmetric bilinear `u^T D v` and the Hermitian sesquilinear `conj(u)^T(iD)v`, so real-matrix reality does not select the Wick face.  _(class `A`)_
 - **chain closes:** True — The bounded no-selector claim closes: elementary transpose/adjoint algebra gives both bilinear structures for the same real anti-Hermitian `D`, and the `C_3` centralizer, doublet complex-structure, Pfaffian-degree, determinant-degree, and `Q=(1+2r)/3` checks are finite algebra. The missing physical Wick-face/measure selector is explicitly outside the claim rather than a premise needed for it.
 - **rationale:** The load-bearing inference is a genuine algebraic closure, not a definition or fitted numerical match. Independently of the runner path, `D^T=-D` and real entries imply `u^T D v` is antisymmetric and `(iD)†=iD`; the cyclic centralizer in real antisymmetric matrices is `span(C-C^2)`, and on the doublet `Jcs^2=-I`. The runner source performs finite matrix and symbolic degree computations rather than importing a contested selector. The open selector is correctly retained as the residual boundary.
+- **auditor confidence:** high
+
+### `koide_record_sign_agnostic_eta_refuted_2026-06-04`
+
+- **Note:** [`KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md`](../../docs/KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the narrow route diagnosis that four tested scalar/sign readouts are additive or sign-erasing as stated, eta is too coarse for Q, and the charged-lepton square-root comparator is sign-homogeneous, without adopting a Koide readout rule or deriving Q = 2/3 physically.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-235156-20764bdbb7-koide_record_sign_agnostic_e`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Record additivity alone does not distinguish the tested additive sign-sensitive and sign-blind functionals, and the eta sign count is insufficient to reconstruct the signed Koide denominator.  _(class `A`)_
+- **chain closes:** True — The stated diagnostic facts follow from elementary finite-spectrum algebra and the retained narrow Koide algebra identity only as a boundary reference. The note does not claim a physical readout derivation, so no missing bridge is needed for its stated open-gate scope.
+- **rationale:** The runner source computes the advertised finite-dimensional checks rather than merely printing constants: direct-sum additivity for four scalar functionals, sign erasure under squaring, eta counterexamples with different Q, and the r=1/2 algebraic map to 2/3. The PDG-mass comparator check is external, but it is explicitly scoped as a comparator-only sign-homogeneity observation and not used to derive the framework claim. The cited minimal axiom is an accepted premise, and the retained Koide algebra note is used only to bound the route rather than to import an open physical identification.
 - **auditor confidence:** high
 
 ### `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16`

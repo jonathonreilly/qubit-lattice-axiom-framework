@@ -1,0 +1,151 @@
+Busch POVM Extension deps-changed Hygiene Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-busch-povm-hygiene/wt
+Parent note: /private/tmp/cl3-busch-povm-hygiene/wt/docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+Companion source note: docs/BUSCH_POVM_EXTENSION_DEPS_CHANGED_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing chain
+      m(E) = Tr(sigma * E) on E(H_Lambda) = { 0 <= E <= I }
+      is invariant under the 2026-06-04 minimal_axioms premise
+      hash bump 1d36a556->b8848fc8 (Record-axiom adoption).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: dim H_Lambda = 2^|Lambda| (Quantum + Lattice content)
+========================================================================
+  Per-site qubit (Quantum axiom): A_x ~= M_2(C), H_x = C^2.
+  Finite Lambda subset Z^3 (Lattice axiom).
+  Standard tensor product: H_Lambda = tensor_x C^2.
+  PASS dim_H_Lambda_equals_2_pow_L_for_L_in_1_2_3 :: checked |Lambda|=1,2,3: dim H matches 2^|Lambda|
+  PASS load_bearing_single_site_dim_2 :: |Lambda|=1: dim H = 2 (Gleason-gap-bearing case)
+  PASS A_Lambda_is_M_2_pow_L_C_for_L_in_1_2 :: A_Lambda = M_{2^|Lambda|}(C) on the downstream test sizes
+
+========================================================================
+BLOCK 2: Effect algebra E(H_Lambda) = { E : 0 <= E <= I }
+========================================================================
+  Standard POVM-effect-algebra definition (textbook).
+  PASS effect_membership_L1 :: |Lambda|=1: 0 <= E <= I, E in M_2(C)
+  PASS effect_membership_L2 :: |Lambda|=2: 0 <= E <= I, E in M_4(C)
+
+========================================================================
+BLOCK 3: POVM partition Sigma_i E_i = I
+========================================================================
+  Standard POVM definition (textbook quantum measurement).
+  PASS povm_pauli_z_eigenprojectors_sum_to_I :: |Sigma E_i - I|_max = 0.000e+00
+  PASS povm_pauli_x_eigenprojectors_sum_to_I :: |Sigma E_i - I|_max = 2.220e-16
+  PASS povm_sic_dim2_sum_to_I :: |Sigma E_i - I|_max = 0.000e+00
+  PASS povm_sic_dim2_all_elements_in_effect_algebra :: every SIC element satisfies 0 <= E <= I
+  PASS povm_uniform_dim4_standard_basis_sum_to_I :: |Sigma E_i - I|_max = 0.000e+00
+
+========================================================================
+BLOCK 4: m(E) = Tr(sigma * E) in [0, 1] for random sigma, E
+========================================================================
+  Density-matrix induced probability measure (forward direction).
+  PASS m_E_in_unit_interval_L1 :: |Lambda|=1: m(E) = 0.180907091693
+  PASS m_E_in_unit_interval_L2 :: |Lambda|=2: m(E) = 0.496371866500
+
+========================================================================
+BLOCK 5: m(I) = Tr(sigma) = 1  (axiom M2)
+========================================================================
+  PASS m_identity_equals_1_L1 :: |Lambda|=1: Tr(sigma*I) = 1.000000000000000
+  PASS m_identity_equals_1_L2 :: |Lambda|=2: Tr(sigma*I) = 1.000000000000000
+
+========================================================================
+BLOCK 6: m(0) = Tr(sigma * 0) = 0  (axiom M1)
+========================================================================
+  PASS m_zero_effect_equals_0_L1 :: |Lambda|=1: |Tr(sigma*0)| = 0.000e+00
+  PASS m_zero_effect_equals_0_L2 :: |Lambda|=2: |Tr(sigma*0)| = 0.000e+00
+
+========================================================================
+BLOCK 7: POVM-additivity: Sigma_i Tr(sigma * E_i) = 1  (axiom M3)
+========================================================================
+  PASS povm_partition_closes_L1_n2 :: |Lambda|=1 n=2: |Sigma E_i - I|_max = 4.442e-16
+  PASS povm_additivity_sum_to_1_L1_n2 :: |Lambda|=1 n=2: Sigma m(E_i) = 1.000000000000
+  PASS povm_partition_closes_L1_n3 :: |Lambda|=1 n=3: |Sigma E_i - I|_max = 1.003e-15
+  PASS povm_additivity_sum_to_1_L1_n3 :: |Lambda|=1 n=3: Sigma m(E_i) = 1.000000000000
+  PASS povm_partition_closes_L2_n2 :: |Lambda|=2 n=2: |Sigma E_i - I|_max = 2.116e-15
+  PASS povm_additivity_sum_to_1_L2_n2 :: |Lambda|=2 n=2: Sigma m(E_i) = 1.000000000000
+  PASS povm_partition_closes_L2_n3 :: |Lambda|=2 n=3: |Sigma E_i - I|_max = 1.118e-15
+  PASS povm_additivity_sum_to_1_L2_n3 :: |Lambda|=2 n=3: Sigma m(E_i) = 1.000000000000
+
+========================================================================
+BLOCK 8: Riesz representation: sigma recovered via Hilbert-Schmidt inner product
+========================================================================
+  Inverse direction of Busch: positive linear functional on
+  M_d(C)_sa is Tr(sigma * .) for unique density matrix sigma.
+  PASS pauli_string_basis_orthogonal_L1 :: |Lambda|=1: <B_a, B_b>_HS = d * delta_ab
+  PASS sigma_recovered_from_pauli_basis_L1 :: |Lambda|=1: |sigma_rec - sigma|_max = 0.000e+00
+  PASS sigma_recovered_positive_L1 :: |Lambda|=1: min eig = 2.051e-01
+  PASS sigma_recovered_unit_trace_L1 :: |Lambda|=1: Tr = 1.000000000000
+  PASS pauli_string_basis_orthogonal_L2 :: |Lambda|=2: <B_a, B_b>_HS = d * delta_ab
+  PASS sigma_recovered_from_pauli_basis_L2 :: |Lambda|=2: |sigma_rec - sigma|_max = 2.776e-17
+  PASS sigma_recovered_positive_L2 :: |Lambda|=2: min eig = 7.589e-04
+  PASS sigma_recovered_unit_trace_L2 :: |Lambda|=2: Tr = 1.000000000000
+
+========================================================================
+BLOCK 9: Parent note Record-axiom usage scan (load-bearing sections)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-busch-povm-hygiene/wt/docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+  PASS structural_section_start_found :: ## Claim start index = 994
+  PASS structural_section_end_found :: ## What this can close after audit end index = 6638
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+  PASS lattice_quantum_povm_content_present_in_load_bearing_section :: matches >= 4: ['Z^3', 'M_2(ℂ)', 'ℂ²', 'POVM', 'Tr(σ', 'E(H_Λ)']
+
+========================================================================
+BLOCK 10: Record-axiom counterfactual: identical numeric output
+========================================================================
+  The load-bearing arithmetic uses neither the Record axiom's
+  scalar functional I(.) nor a record-readout surface; therefore
+  re-running with/without an asserted Record axiom must give
+  bit-identical results.
+  PASS counterfactual_m_E_identical :: with=0.369700054911127  without=0.369700054911127  |diff|=0.000e+00
+  PASS counterfactual_m_I_minus_E_identical :: with=0.630299945088873  without=0.630299945088873  |diff|=0.000e+00
+  PASS counterfactual_m_identity_identical :: with=1.000000000000000  without=1.000000000000000  |diff|=0.000e+00
+  PASS counterfactual_m_zero_identical :: with=0.000000000000000  without=0.000000000000000  |diff|=0.000e+00
+  PASS counterfactual_povm_partition_sum_to_1_with :: with: m_E + m_(I-E) = 1.000000000000000
+  PASS counterfactual_povm_partition_sum_to_1_without :: without: m_E + m_(I-E) = 1.000000000000000
+
+========================================================================
+BLOCK 11: Lattice + Quantum content preserved across memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-busch-povm-hygiene/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-busch-povm-hygiene/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical per-site qubit content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_Born_etc :: Record axiom's own scope statement excludes Born / measurement / log-det bridges (the parent's load-bearing surface is therefore not touched by Record)
+
+========================================================================
+BLOCK 12: m(E) = Tr(sigma * E) computed four independent ways
+========================================================================
+  PASS route1_direct_trace :: route1 = Tr(sigma E) = 0.369700054911127
+  PASS route2_eigendecomposition :: route2 = Sigma p_a <a|E|a> = 0.369700054911128
+  PASS route3_pauli_string_basis :: route3 = (1/d) c(sigma).c(E) = 0.369700054911128
+  PASS route4_povm_partition_complement :: route4 = 1 - Tr(sigma (I-E)) = 0.369700054911127
+  PASS all_four_routes_agree :: max pairwise diff = 1.110e-16
+
+========================================================================
+TOTAL PASS: 56
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing chain of
+  BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+  (m(E) = Tr(sigma * E) on the qubit-lattice effect algebra
+  E(H_Lambda)) uses ONLY Lattice + Quantum axiom content plus the
+  cited Busch 2003 / CFMR 2004 textbook POVM-additive extension
+  theorem and finite-dim Riesz representation.
+  The Record axiom (additive scalar record-readout functional)
+  is neither used nor invoked. Numeric output is identical under
+  both 'Record axiom asserted' and 'Record axiom not asserted'
+  outer scopes. This runner does not re-apply the prior audit
+  verdict; it records that the arithmetic checked here is
+  unchanged by the 2026-06-04 axiom-set adoption.
+
+The audit lane decides whether to honor or re-test the prior
+verdict on the new minimal_axioms premise hash.

@@ -1,0 +1,95 @@
+================================================================================
+RECORD-AXIOM PRESSURE-TEST C: CHIRALITY VIA RECORD-FLOW LINEARIZATION AT r=1/2
+================================================================================
+Companion to docs/RECORD_AXIOM_PTC_CHIRALITY_LINEARIZATION_NOTE_2026-06-04.md
+
+================================================================================
+PART 1: SETUP -- Gamma_chi = diag(+1,-1,-1) (singlet | doublet), Gamma^2 = I
+================================================================================
+  [PASS] Gamma_chi^2 = I (Z_2 involution / grading)
+  [PASS] Gamma_chi spectrum = {+1 (singlet), -1, -1 (doublet)}  (eigvals = {1: 1, -1: 2})
+  [PASS] standard-basis (2/3)J - I has the SAME spectrum {+1,-1,-1}  (isotype basis is a rotation of the retained Gamma_chi=(2/3)J-I)
+
+================================================================================
+PART 2: THE RECORD (LUEDERS) FLOW AND THE r=1/2 FIXED POINT
+================================================================================
+  [PASS] Lueders sharpening on the 2-sector dial reduces to r -> 2 r^2 (retained separatrix note)
+  [PASS] r=1/2 is a fixed point of r -> 2 r^2; f'(r)=4r so f'(1/2)=2 > 1 (UNSTABLE separatrix)
+  [PASS] 2-sector entropy S2(r) is stationary exactly at r=1/2  (stat=[1/2])
+  [PASS] S2''(1/2) < 0 (the dial fixed point is a 1-D entropy MAX)  (S2''(1/2)=-1)
+
+================================================================================
+PART 3: LIFT A -- HESSIAN OF 2-SECTOR ENTROPY ON THE FULL 3-GEN WEIGHT SPACE
+================================================================================
+  [PASS] LIFT-A Hessian is REAL SYMMETRIC (HERMITIAN) -- the prompt's structural insight holds
+  [PASS] BUT it is DEGENERATE: spectrum {-3/4, 0, 0} (rank 1) -- NOT a Z_2 grading (needs +-1)  (eigvals={-3/4: 1, 0: 2})
+  [PASS] its non-trivial eigenvector is the singlet-vs-doublet CONTRAST (-1,1,1)  (nontrivial eigenvector = [[-1, 1, 1]])
+  [PASS] LIFT-A Hessian does NOT anticommute with Gamma_chi
+  [PASS] LIFT-A Hessian does NOT commute with Gamma_chi either (it is rank-1, off the algebra)  (the 2-sector grouping is blind to the doublet's internal structure)
+
+================================================================================
+PART 4: LIFT B -- GENUINE 3-GEN LUEDERS MAP HAS NO r=1/2 FIXED POINT
+================================================================================
+  [PASS] the r=1/2 point (1/2,1/4,1/4) is NOT a fixed point of the genuine 3-gen map  (T(1/2,1/4,1/4) = [2/3, 1/6, 1/6] (keeps sharpening toward the singlet vertex))
+  [PASS] the genuine C_3-symmetric fixed point is the DEMOCRATIC center (1/3,1/3,1/3)
+  [PASS] => 'linearize at r=1/2' lives only in the REDUCED 1-D dial; its Jacobian is the SCALAR f'(1/2)=2  (a 1x1 object, not a grading on the 3-gen space)
+
+================================================================================
+PART 5: LIFT B' -- GENUINE-FLOW JACOBIAN AT THE DEMOCRATIC CENTER COMMUTES WITH Gamma
+================================================================================
+  [PASS] genuine-flow Jacobian at center is C_3-symmetric circulant
+  [PASS] its spectrum is {0 (singlet), 2, 2 (doublet)} = 2 * (doublet projector)  (eigvals={2: 2, 0: 1})
+  [PASS] => the unstable manifold is the WHOLE doublet (C_3-symmetric); it COMMUTES with Gamma_chi (G_std)  (a singlet-vs-doublet contrast, not a sign WITHIN the doublet)
+  [PASS] and it does NOT anticommute with Gamma_chi (G_std)
+
+================================================================================
+PART 6: LIFT C -- DOUBLET OPERATOR FLOW rho -> rho^2/Tr rho^2 IS ISOTROPIC AT rho=I/2
+================================================================================
+  [PASS] doublet operator-flow linearization at rho=I/2 is 2 * Identity on the tangent (isotropic)  (no preferred Z_2 direction within the doublet => no Gamma_chi)
+
+================================================================================
+PART 7: THE ARROW -- ORIENTS THE SINGLET/DOUBLET AXIS, COMMUTES WITH Gamma
+================================================================================
+  [PASS] the flow-arrow contrast operator diag(2,-1,-1) is traceless Hermitian
+  [PASS] the arrow contrast COMMUTES with Gamma_chi (block-diagonal singlet|doublet)  (the arrow can orient the singlet/doublet AXIS but not a sign WITHIN the doublet)
+  [PASS] => the arrow does NOT anticommute with Gamma_chi
+
+================================================================================
+PART 8: DECISIVE OBSTRUCTION -- FLOW OPERATORS ARE BLOCK-DIAGONAL, HENCE COMMUTE
+================================================================================
+  [PASS] ANY operator block-diagonal in singlet|doublet COMMUTES with Gamma_chi (symbolic, all params)
+  [PASS] conversely {H,Gamma_chi}=0 FORCES H purely OFF-block (zero singlet & doublet diagonal blocks)  (anticommuting needs singlet<->doublet coupling the 2-sector dial cannot produce)
+  [PASS] STRUCTURAL CONCLUSION: the 2-sector record flow lives in the COMMUTANT of Gamma_chi, never its anticommutant -- the retained circulant no-go, from the dynamical side  (Hermiticity was never the obstruction; BLOCK-STRUCTURE is)
+
+================================================================================
+PART 9: KOIDE Q OF THE LINEARIZATION-GRADING -- gives Q in {1/3, inf}, NEVER 2/3
+================================================================================
+  [PASS] contrast-grading eigenvectors give Koide Q in {1/3 (singlet), inf (doublet collapse)}, NEVER 2/3  (Q(eigenvectors) = ['inf', 'inf', 0.3333])
+  [PASS] the LIFT-A Hessian eigenvector (-1,1,1) does NOT satisfy the lightcone <v|G_std|v>=0  (<v|G_std|v> = -2.3333 (=> not on the Koide cone, Q != 2/3))
+  [PASS] Q((-1,1,1)) = 3 != 2/3 (the flow-grading eigenvector is OFF the Koide cone)  (Q = 3.0)
+
+================================================================================
+PART 10: CONTROL -- A GENUINE OFF-BLOCK ANTICOMMUTING H DOES GIVE Q=2/3
+================================================================================
+  [PASS] control H is real symmetric (Hermitian)
+  [PASS] control H ANTICOMMUTES with G_std (it is OFF-block singlet<->doublet)
+  [PASS] control H spectrum is {-lam, 0, +lam} (forced by anticommutation)  (spectrum = [-1.0, 0.0, 1.0])
+  [PASS] control H non-zero-eigenvalue eigenvectors satisfy <v|G_std|v>=0 (lightcone) and give Q=2/3  (Q = [0.666667, 0.666667], <v|G|v> = [-0.0, -0.0])
+  [PASS] CONCLUSION: the target (Q=2/3 grading) is REAL but needs OFF-BLOCK coupling the flow lacks  (the flow's failure is specifically the missing singlet<->doublet off-block part)
+
+================================================================================
+SUMMARY: 34 PASS / 0 FAIL
+================================================================================
+
+VERDICT: NOT-UNLOCKS-CHIRALITY.
+  The record-flow linearization at r=1/2 IS Hermitian (the prompt's key structural
+  insight is correct -- Hessians are symmetric where the complex structure J was
+  anti-Hermitian). But it FAILS the chirality test on every axis:
+   (a) it lives in the COMMUTANT of Gamma_chi (block-diagonal singlet|doublet),
+       never the anticommutant -- the retained circulant no-go, dynamical side;
+   (b) the genuine 3-gen flow has NO r=1/2 fixed point (only the reduced 1-D dial
+       does, whose Jacobian is the scalar f'(1/2)=2, not a grading);
+   (c) the lift-A Hessian is DEGENERATE (rank 1, spectrum {-3/4,0,0}) -- not a Z_2
+       involution; (d) its grading gives Koide Q in {1/3, inf}, NEVER 2/3.
+  The double-unlock does NOT close. Chirality remains an independent import:
+  the off-block singlet<->doublet coupling, which the flow cannot supply.

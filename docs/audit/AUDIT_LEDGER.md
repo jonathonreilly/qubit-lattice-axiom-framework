@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 175 |
 | **retained_no_go** | 180 |
 | **retained_bounded** | 647 |
-| _retained_pending_chain_ | 9 |
+| _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1295 |
+| unaudited | 1294 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 992 |
+| `audited_clean` | 993 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1579 |
+| `unaudited` | 1578 |
 
 | claim_type | count |
 |---|---:|
@@ -84,7 +84,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 676 |
 | `leaf` | 1178 |
 
-- **Retained pending chain closure:** 9
+- **Retained pending chain closure:** 10
 - **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
@@ -841,6 +841,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12579,6 +12580,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the fixed h=0.5, W=8, L=6 ordered-lattice segment, broad square-window and top-N compressed relaunch states preserve downstream free and weak-field profiles within the reported TV and relative-delta errors, while sharper localization fails.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the fixed lattice, propagates the point packet, compresses the detector-layer state, relaunches it, and computes TV distances and field-response deltas rather than printing hard-coded results. The conclusion is limited to the reported fixed-family bounded surrogate behavior.
 - **rationale:** Within the narrow audited scope, the load-bearing step is a first-principles numerical computation on the provided ordered-lattice harness, not a renaming or imported numerical match. The cited authorities are retained_bounded and are used only as bounded context, while the primary runner directly supplies the controlling metrics for this note. The note explicitly avoids upgrading the result to persistent mass, inertial closure, or family-generic behavior, so the bounded conclusion follows on its own terms.
+- **auditor confidence:** high
+
+### `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04`
+
+- **Note:** [`QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md`](../../docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional on the unitary-link convention for C^2 qubit fibers, the Pauli-frame connection algebra is u(2)=su(2)+u(1), and a single qubit fiber has no faithful native su(3) color algebra.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:key_terminology`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-195233-9af4004569-qubit_link_u2_connection_alg`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Conditioned on unitary link maps between two C^2 qubit fibers, the anti-Hermitian endomorphism algebra is u(2)=su(2)+u(1), with Pauli su(2) and central iI_2, while dim_R u(2)=4 obstructs any faithful native su(3) embedding on a single qubit fiber.  _(class `A`)_
+- **chain closes:** True — The retained C^2/Pauli inputs and the explicit unitary-link convention reduce the claim to finite-dimensional linear algebra: u(2) splits into traceless anti-Hermitian plus central phase line, and su(3) cannot inject into a 4-real-dimensional Lie algebra. The Pauli S_i convention matches the anti-Hermitian u(2) basis by the standard multiplication-by-i generator convention.
+- **rationale:** The cited non-axiom dependencies are retained-grade, and the minimal-axiom authority is explicitly flagged as an accepted framework premise. Independent algebra agrees with the runner: the Pauli spin triple closes as su(2), iI_2 is central, the anti-Hermitian endomorphism algebra has real dimension 4, and an 8-dimensional faithful su(3) algebra cannot embed natively on one C^2 fiber. The bounded unitary-link convention is stated in the claim scope rather than smuggled in as a physical gauge derivation, and the note explicitly excludes hypercharge, chirality, dynamics, gauge invariance, and color derivation.
 - **auditor confidence:** high
 
 ### `r_base_group_theory_derivation_theorem_note_2026-04-24`

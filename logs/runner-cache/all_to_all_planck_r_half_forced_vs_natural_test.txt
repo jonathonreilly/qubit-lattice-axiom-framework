@@ -1,0 +1,224 @@
+========================================================================
+Baseline. Brannen circulant + the two competing isotype measures
+========================================================================
+[PASS] Baseline: closed-form circulant eigenvalues match numerics
+[PASS] Baseline: r = 1/2  <=>  |b|/a = 1/sqrt(2)  ((1/sqrt2)^2 = 0.500000)
+[PASS] Baseline: singlet power ||aI||^2 = 3 a^2  (5.0700)
+[PASS] Baseline: doublet power ||bC+bbarC^2||^2 = 6|b|^2 = 2*(3|b|^2)  (the factor 2 is the SECTOR COUNT |Z3|-1=2 (a discrete datum))
+[PASS] Baseline: EQUAL-POWER measure (3a^2=6|b|^2) => r = 1/2
+[PASS] Baseline: BORN/DIMENSION measure (a=|b|, equal per-mode amp) => r = 1
+  KEY: r is a *ratio of measures*. r=1/2 <=> EQUAL POWER on the two
+       isotypes; r=1 <=> EQUAL PER-MODE AMPLITUDE (dimension/Born).
+       The decisive question (Part B) is which one the all-to-all SUM picks.
+
+========================================================================
+Part A. Build the all-to-all sum + C_3 projection; (a,b); convergence
+========================================================================
+  Reference law: w(d) = 1/d (inverse-first-power), Planck cutoff = 1.
+
+  -- P-onsite (literal generation-triangle = diagonal-worker F2 object) --
+     a = w(1) = 1.000000   b = w(sqrt2) = 0.707107
+     b/a = 0.707107   r = 0.500000
+[PASS] A/P-onsite: 1/d gives b/a = 1/sqrt2 exactly -> r = 1/2 (= diagonal F2 p=1)
+
+  -- P-alltoall, W-delta (delta slots = bare rho-orbit = P-onsite check) --
+     a=M[0,0]=1.000000  b=M[0,1]=0.707107  b/a=0.707107  r=0.500000
+[PASS] A/P-alltoall W-delta: delta-slot generation circulant reproduces P-onsite (M[0,1]=w(sqrt2), M[0,0]=w(1)) -> r=1/2 at 1/d (bare orbit IS F2)
+
+  -- P-alltoall, W-spread (smeared C_3-orbit slots = genuine all-to-all) --
+     spread=0.4: a=1.60008  b=1.12330  b/a=0.70203  r=0.49284
+     spread=0.7: a=10.15008  b=8.10927  b/a=0.79894  r=0.63830
+     spread=1.0: a=22.64454  b=19.70781  b/a=0.87031  r=0.75744
+     spread=1.5: a=39.01827  b=35.63204  b/a=0.91321  r=0.83396
+     spread=2.0: a=44.85111  b=41.46675  b/a=0.92454  r=0.85478
+[PASS] A/P-alltoall W-spread: smearing the generation slots over the lattice MOVES r (it is not pinned by the all-to-all structure) -> the all-to-all sum does not converge to a forced r independent of the smear convention  (r ranges 0.4928..0.8548)
+  Canonical (delta-slot) all-to-all r (1/d law) = 0.50000
+
+========================================================================
+Part B. WHICH MEASURE does the all-to-all sum realize? (the heart)
+========================================================================
+  The r=1/2 value can come from TWO structurally different sources:
+    (i)  EQUAL-POWER / block-counting (det_C): equal HS power on the
+         singlet and doublet isotypes -> 3a^2 = 6|b|^2 -> r=1/2.
+    (ii) a TUNED weighting law that happens to hit 1/2 on the
+         dimension/Born (det_R) measure -> r=1 generically.
+  We decompose the sum's (a,b) against BOTH and see which it matches.
+
+  [P-onsite, 1/d]  singlet power 3a^2 = 3.00000, doublet power 6|b|^2 = 3.00000, ratio = 1.00000
+[PASS] B1: at 1/d the singlet/doublet powers happen to be EQUAL (ratio 1) <=> r=1/2 -- but this equality is a CONSEQUENCE of b/a=1/sqrt2, not a cause: the sum did not WEIGHT the isotypes equally, it just landed there  (equal power here is the DEFINITION of r=1/2, tested for forcing below)
+
+  [P-onsite] singlet/doublet power ratio across laws (equal-power measure
+   would hold this at 1.0 for ALL laws; a tuned law holds it only at one):
+     inv1   : doublet/singlet power ratio = 1.00000  (r = 0.50000)
+     inv2   : doublet/singlet power ratio = 0.50000  (r = 0.25000)
+     exp    : doublet/singlet power ratio = 0.87347  (r = 0.43674)
+     gauss  : doublet/singlet power ratio = 0.73576  (r = 0.36788)
+     yukawa : doublet/singlet power ratio = 0.66086  (r = 0.33043)
+[PASS] B2 (DECISIVE): the singlet/doublet POWER RATIO is LAW-DEPENDENT (varies widely across laws) -> the sum does NOT realize the law-invariant equal-power measure; it realizes whatever the law dictates  (ratio spread across 5 laws = 0.500 (equal-power would give 0))
+
+  [P-alltoall W-spread=1, 1/d]  singlet power = 1538.32505, doublet power = 2330.38652, doublet/singlet = 1.51489
+[PASS] B3: the smeared all-to-all C_3 projection does NOT distribute equal isotype power either (the smear convention sets the ratio, not structure)  (doublet/singlet = 1.5149 -- not pinned to 1 by structure)
+
+  [structural] equal-power (det_C) = count BLOCKS (1 each) -> r=1/2;
+               Born (det_R)        = count DIMENSIONS (1,2) -> r=1.
+               A distance-weighted sum is NEITHER block-count NOR
+               dimension-count; it is a third thing whose value is set
+               by the LAW, and only coincides with one of them at a
+               tuned parameter.
+[PASS] B4: the all-to-all sum is a LAW-set amplitude ratio, structurally distinct from BOTH the block-count (det_C) and dimension-count (det_R) measures; nearby laws STRADDLE 1/2 (r>1/2 and r<1/2), so the sum does not SIT at the equal-power fixed point -- it only COINCIDES at a tuned law  (p=0.5 -> r=0.707 (>1/2); p=2 -> r=0.250 (<1/2))
+
+========================================================================
+Part C. Universality sweep: r vs weighting law (plateau? or crossing?)
+========================================================================
+  FORCED  <=> r=1/2 is a FLAT PLATEAU across a wide class of laws.
+  TUNED   <=> r=1/2 is a SINGLE CROSSING (one law/parameter hits it).
+
+  -- P-onsite (literal generation triangle): r = (w(sqrt2)/w(cutoff))^2 --
+   power laws w=1/d^p (Planck cutoff=1):
+     p=0.5: r = 0.70711
+     p=1.0: r = 0.50000  <== r=1/2
+     p=1.5: r = 0.35355
+     p=2.0: r = 0.25000
+     p=3.0: r = 0.12500
+   exponential laws w=exp(-d/lambda):
+     lambda=0.5: r = 0.19074
+     lambda=1.0: r = 0.43674
+     lambda=2.0: r = 0.66086
+     lambda=5.0: r = 0.84731
+   Gaussian laws w=exp(-d^2/2 sigma^2):
+     sigma=0.5: r = 0.01832
+     sigma=1.0: r = 0.36788
+     sigma=1.2: r = 0.49935  <== r=1/2
+     sigma=2.0: r = 0.77880
+   Yukawa laws w=exp(-m d)/d:
+     m=0.0: r = 0.50000  <== r=1/2
+     m=0.5: r = 0.33043
+     m=1.0: r = 0.21837
+     m=2.0: r = 0.09537
+
+   r ranges over [0.0183, 0.8473] across the sweep;
+   exactly 3 of 17 law-points hit r=1/2.
+[PASS] C (DECISIVE): r is NOT a plateau at 1/2 -- it varies widely with the law (spread > 0.4), so r=1/2 is NOT forced/universal  (r spread = 0.829)
+[PASS] C: r=1/2 is a SINGLE-CROSSING (tuned) feature: only the inverse-first-power / its few law-equivalents hit it, not a wide class  (3/17 points hit 1/2 -- isolated crossings, not a plateau)
+
+  -- P-alltoall W-spread=1 (smeared lattice slots), r vs law --
+     1/d     : r = 0.75744
+     1/d^2   : r = 0.60690
+     1/d^3   : r = 0.52147
+     exp/1   : r = 0.61217
+     exp/2   : r = 0.74288
+     gauss/1 : r = 0.51536
+     yuk/0.5 : r = 0.60892
+[PASS] C/P-alltoall: the smeared all-to-all r ALSO varies with the law (no plateau at 1/2) -> the all-to-all sum does not force a universal r either  (all-to-all r spread = 0.242)
+
+========================================================================
+Part D. The Planck-minimum role: measure data, or mere regulator?
+========================================================================
+  Vary the cutoff (Planck-min in lattice units). If r is cutoff-INVARIANT
+  the cutoff is not doing the forcing (the law is). If r forces 1/2 at
+  EXACTLY cutoff=lattice-spacing, that would be a genuine cutoff-forcing.
+
+  -- P-onsite, law = 1/d, vary cutoff (the regularized stay distance) --
+     cutoff=0.25: a=w(0.25)=4.0000 b=w(sqrt2)=0.7071 r=0.03125
+     cutoff=0.50: a=w(0.50)=2.0000 b=w(sqrt2)=0.7071 r=0.12500
+     cutoff=1.00: a=w(1.00)=1.0000 b=w(sqrt2)=0.7071 r=0.50000  <== r=1/2
+     cutoff=1.50: a=w(1.50)=0.6667 b=w(sqrt2)=0.6667 r=1.00000
+     cutoff=2.00: a=w(2.00)=0.5000 b=w(sqrt2)=0.5000 r=1.00000
+     cutoff=5.00: a=w(5.00)=0.2000 b=w(sqrt2)=0.2000 r=1.00000
+[PASS] D: for the 1/d law, r DEPENDS on the cutoff (r=(cutoff/sqrt2)^2 in range) -- so the cutoff is NOT a passive regulator, it co-determines r with the law  (r is cutoff-DEPENDENT for 1/d)
+[PASS] D: r=1/2 occurs at cutoff=1=lattice-spacing FOR THE 1/d LAW ONLY -- this is the same single tuned coincidence (1/d at unit cutoff), not an independent cutoff-forcing (a different law misses 1/2 at cutoff=1)  (cutoff=1 + 1/d => r=1/2, but BOTH must be chosen)
+[PASS] D: at cutoff=1, a different law (1/d^2) gives r != 1/2 -> the cutoff does NOT supply the forcing; the LAW does  (1/d^2 at cutoff=1 gives r = 0.2500)
+
+  -- P-alltoall W-delta, law=1/d, vary cutoff --
+     cutoff=0.50: r = 0.12500
+     cutoff=1.00: r = 0.50000
+     cutoff=2.00: r = 1.00000
+[PASS] D/P-alltoall: the cutoff shifts the all-to-all r too; at cutoff>=sqrt2 the hop floors to the stay value so r->1; it does not pin r=1/2 by itself  (cutoff modulates r, does not force 1/2)
+
+========================================================================
+Part E. Category-mismatch hostile check (reuse diagonal CM-1/CM-2)
+========================================================================
+  CM-1: does the all-to-all SUM supply the weighting FUNCTION, or is the
+        law still a free input one level up?
+        The lattice hands a discrete length SET {0,1,sqrt2,sqrt3,2,...};
+        forming b/a = w(sqrt2)/w(1) STILL requires choosing w. Infinitely
+        many lattice-native w give r=1/2:
+     1/d           : r = 0.50000
+     gauss(tuned)  : r = 0.50000
+     exp(tuned)    : r = 0.50000
+[PASS] E/CM-1: infinitely many DISTINCT lattice-native laws hit r=1/2 (1/d, a Gaussian, an exponential) -> the all-to-all sum does NOT pick the law; the law is the free continuous input one level up (mismatch NOT defeated)  (3 distinct laws, all give r=1/2, all chosen by hand)
+
+  CM-2: r=1/2 is ALREADY reachable by pure discrete sector counting
+        (|Z3|-1 = 2 nontrivial Fourier sectors), with NO length and NO law:
+[PASS] E/CM-2: pure sector counting gives r = 1/(|Z3|-1) = 1/2 with zero continuous input (no length, no weighting law)  (1/(|Z3|-1) = 0.5)
+[PASS] E/CM-2: the all-to-all 1/2 (at the tuned 1/d law) is NUMERICALLY the same sector-count 1/2, reached via a tuned law -> a SECOND coincidence with the discrete value, not a new continuous bridge to the equal-power measure  (all-to-all(1/d)=0.5000 == sector-count=0.5000)
+
+  CM-3 (parameter-free anchor): the UNIQUE parameter-free all-to-all
+        coupling is the lattice Green function itself (no decay law
+        chosen). Re-run the diagonal F3 routine for the apples-to-apples
+        check:
+     G(0,0,0)=0.2527311 (Watson 0.2527310)  G(1,0,0)=0.0860644  G(1,1,0)=0.0551915
+[PASS] E/CM-3: lattice Green method validated (G0 matches exact Watson value)  (|diff|=4.2e-08)
+     facediag/NN propagator ratio = 0.64128 (target 1/sqrt2=0.70711); implied r = 0.41124
+[PASS] E/CM-3 (DECISIVE parameter-free): the all-to-all coupling WITHOUT a chosen law (= lattice propagator) gives facediag/NN = 0.641, NOT 1/sqrt2=0.707 -> implied r = 0.411, NOT 1/2. The parameter-free all-to-all sum does NOT force r=1/2 (same verdict as diagonal F3)  (facediag/NN=0.6413, r_implied=0.4112)
+
+========================================================================
+Part F. Structural verification of the C_3 projection
+========================================================================
+  -- rho is an order-3 lattice isometry; |r| is rho-invariant --
+[PASS] F-a: rho preserves Euclidean length for all r (so w(|r|) is rho-invariant)  (rho is a length-preserving lattice automorphism)
+[PASS] F-a: rho^3 = identity (genuine C_3 action)
+[PASS] F-a: rho cycles the generation corners e1->e2->e3->e1
+
+  -- the generation coupling matrix M is exactly circulant --
+[PASS] F-b (delta slots): M is exactly circulant (a=M[0,0], b=M[0,1]=M[0,2])  (M[0,0]=1.0000, M[0,1]=0.7071, M[0,2]=0.7071)
+[PASS] F-b (delta slots): the two off-diagonal hops are equal (real-symmetric circulant, b is real here -> delta=0)
+[PASS] F-b (spread slots): M is exactly circulant (a=M[0,0], b=M[0,1]=M[0,2])  (M[0,0]=22.6445, M[0,1]=19.7078, M[0,2]=19.7078)
+[PASS] F-b (spread slots): the two off-diagonal hops are equal (real-symmetric circulant, b is real here -> delta=0)
+
+[PASS] F-c: the smeared all-to-all hop b is NONZERO (the hop survives smearing) but is set by the smear+law, not pinned to the equal-power value  (spread=1: b=19.708, r=0.7574 (not 1/2))
+
+  -- direct det_C (block-count) vs det_R (dimension) measure values --
+[PASS] F-d: det_C (block-count, weights (1,1)) gives r = 1/2 (equal-power)  (weights (1.0, 1.0))
+[PASS] F-d: det_R (dimension, weights (1,2)) gives r = 1 (Born default)  (weights (1.0, 2.0))
+[PASS] F-d: the parameter-free all-to-all r ~ 0.41 matches NEITHER det_C (0.5) NOR det_R (1.0) -- it is a third, geometry-set value, confirming the sum does not realize the equal-power measure
+
+========================================================================
+VERDICT
+========================================================================
+  Three honest outcomes were possible:
+   FORCED-EQUAL-POWER : r=1/2 universal across laws AND the sum
+                        structurally realizes the equal-power measure.
+   TUNED-LAW          : r=1/2 only for a specific law/parameter.
+   BORN-NOT-EQUAL-POWER: the sum gives r=1 (Born/dimension) for natural
+                        laws.
+
+  - universality: r spans spread 0.829 across the law sweep, with
+    3 isolated crossings at 1/2 -> NOT a plateau (forced=False).
+  - measure decomposition (Part B): the singlet/doublet power ratio is
+    LAW-DEPENDENT (spread 0.500); the sum does NOT
+    hold equal isotype power independent of the law, so it does NOT
+    structurally realize the equal-power (det_C) measure.
+  - parameter-free anchor (Part E/CM-3): the law-free all-to-all coupling
+    (lattice propagator) gives facediag/NN=0.641 -> r=0.411,
+    NOT 1/2 and NOT cleanly 1 -- the geometry's parameter-free answer
+    misses BOTH idealized measures, landing nearest the Born side (r<1/2).
+
+[PASS] VERDICT: r=1/2 is NOT forced (no plateau; single tuned crossing at 1/d + unit cutoff)
+[PASS] VERDICT: the all-to-all sum does NOT structurally realize the equal-power (det_C) measure (its isotype-power ratio is law-dependent, not the law-invariant block-count)
+[PASS] VERDICT: the parameter-free all-to-all coupling (lattice propagator) gives r_implied ~ 0.41, corroborating the diagonal workers' 'geometry gives the wrong measure' finding (nearer Born than equal-power)
+[PASS] VERDICT (overall): TUNED-LAW. The 'all-to-all forces r=1/2' claim is the same natural-vs-forced conflation the diagonal workers flagged, now at the all-to-all level: r=1/2 appears only at the tuned inverse-first-power law with unit (=lattice-spacing) cutoff; the parameter-free sum misses it.
+
+  FINAL VERDICT: TUNED-LAW (with a BORN-leaning parameter-free anchor).
+  The all-to-all + Planck-min model does NOT force the equal-power measure.
+  It reproduces r=1/2 ONLY for the tuned w=1/d law at cutoff=1; the unique
+  parameter-free object (the lattice propagator) gives r~0.41, missing 1/2.
+  The singlet/doublet power ratio the sum distributes is LAW-DEPENDENT, so
+  the sum does not realize the law-invariant equal-power/block-count
+  measure -- it merely COINCIDES with its value 1/2 at one tuned law,
+  numerically re-landing the already-discrete sector-count |Z3|-1=2.
+  Both diagonal workers and this adjudication CONVERGE.
+
+========================================================================
+SUMMARY: PASS=40 FAIL=0
+========================================================================

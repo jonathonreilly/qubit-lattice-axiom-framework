@@ -4,6 +4,9 @@
 **Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/lattice_3d_dense_z2_z6_endpoint_check.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_check.py)
+**Cached runner output:** [`logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt`](../logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt)
+**Source packet verifier:** [`scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py)
+(SUMMARY: DENSE ENDPOINT SOURCE PACKET PASS=28 FAIL=0)
 
 ## Purpose
 
@@ -17,6 +20,23 @@ checks the previously omitted `z=6` row alongside `z=2..5`.
 
 No new axiom, observed target value, fitted selector, or external comparator is
 introduced. The scope is the finite dense spent-delay harness only.
+
+## 2026-06-05 Source Packet Exposure Repair
+
+The current blocker asks for the load-bearing helper source imported by the
+endpoint runner. The source packet is now explicit:
+
+- Endpoint checker: [`scripts/lattice_3d_dense_z2_z6_endpoint_check.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_check.py)
+- Endpoint checker cache: [`logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt`](../logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt)
+- Dense helper source: [`scripts/lattice_3d_dense_10prop.py`](../scripts/lattice_3d_dense_10prop.py)
+- Dense helper cache: [`logs/runner-cache/lattice_3d_dense_10prop.txt`](../logs/runner-cache/lattice_3d_dense_10prop.txt)
+
+The source packet verifier above checks that every path is linked from this
+note, that the endpoint checker imports the dense helper, that the load-bearing
+generation, propagation, field, and sign-classification functions are present
+in the untruncated helper source, and that both caches are SHA-fresh. This does
+not set a verdict; it makes the bounded packet reviewable with the missing
+helper source exposed.
 
 ## Live Endpoint Runner
 

@@ -3,7 +3,7 @@
     "critical": 269,
     "high": 284,
     "leaf": 433,
-    "medium": 345
+    "medium": 344
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16722,31 +16722,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.67,
-      "note_path": "docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py",
-      "transitive_descendants": 8
     },
     {
       "audit_independence_required": "any_non_self",
@@ -39842,6 +39817,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 121,
-  "total_pending": 1331
+  "ready_count": 120,
+  "total_pending": 1330
 }

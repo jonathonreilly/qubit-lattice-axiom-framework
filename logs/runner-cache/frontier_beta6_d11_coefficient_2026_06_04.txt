@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_d11_coefficient_2026_06_04.py
+runner_sha256: 51b9a0eb5b3319f5730f1c002e4d48becc2f5effdeebab64df19238d4b801538
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 144.58
+status: ok
+----- stdout -----
+==============================================================================
+EXACT beta=6 SU(3) plaquette d_11  +  sharpened Pade continuation
+==============================================================================
+
+PIECE 1. cube (weight 6) sector: 72 K''(K')^5, regression on d_5..d_8
+  [PASS] cube closed form 72 K''(K')^5 reproduces d_5,d_6,d_7,d_8 EXACTLY (zero free parameters) -- validates it before order 11
+         d_5=1/472392; d_6=7/5668704; d_7=5/17006112; d_8=5/272097792
+  [PASS] cube(11) = 72 K''(K')^5 [b^11] = -221/1322395269120
+         cube(11) = -221/1322395269120 = -1.671210e-10
+
+PIECE 2. weight-10 class at order 11 (landed closed form 1080 K''(K')^9; o9,o10 validated, o11 directly corroborated on the budget-reachable orbit; full direct cross-check WALLS at 5 GB)
+  [PASS] weight-10 closed form 1080 K''(K')^9 reproduces its order 9,10 (the landed two-cube finite-order validation)
+         o9=5/16529940864, o10=55/198359290368
+  [PASS] weight10(11) = 1080 K''(K')^9 [b^11] = 5/44079842304
+         weight10(11) = 5/44079842304 = 1.134305e-10
+
+PIECE 3. weight-11 class at order 11 -- DIRECT orbit-exploit (monomial closed form 1188 K''(K')^10 is FALSIFIED here, so direct only)
+  [PASS] weight11(11) = 5/99179645184 (cited from the landed weight-11 falsification test; run 'deep' to re-derive). The FALSIFIED monomial 1188 K''(K')^10 would give a different value (enum/pred=30/11)
+         weight11(11) = 5/99179645184; falsified monomial = 11/595077871104; enum/pred = 30/11
+
+PIECE 4. weight-12 class at order 11 (LEADING) -- two DISJOINT cubes
+  [PASS] weight-12 supports: 240, STABLE radius2 == radius3; 8 lattice-symmetry orbits sizes {16,16,16,32,32,32,32,64}; every order-11 word's worst link is a BALANCED (2,2) (incidence 4) -- cheap, far from the (5,5) wall
+         radius2=240, radius3=240, orbits [16, 16, 16, 32, 32, 32, 32, 64], order-11 max-incidence dist {4: 240}
+   evaluating the 8 weight-12 orbit representatives directly (each ~7s, (2,2)-max) -- this is the full orbit-exploited class
+       weight 12 order 11 orbit(size 16): per-support 0 (9.0s, walled=False)
+       weight 12 order 11 orbit(size 16): per-support 0 (9.6s, walled=False)
+       weight 12 order 11 orbit(size 32): per-support 0 (9.4s, walled=False)
+       weight 12 order 11 orbit(size 64): per-support 0 (9.0s, walled=False)
+       weight 12 order 11 orbit(size 32): per-support 0 (10.2s, walled=False)
+       weight 12 order 11 orbit(size 16): per-support 0 (9.6s, walled=False)
+       weight 12 order 11 orbit(size 32): per-support 0 (9.4s, walled=False)
+       weight 12 order 11 orbit(size 32): per-support 0 (9.0s, walled=False)
+  [PASS] weight12(11) = 0 EXACTLY (8 orbit reps, each cumulant zero) -- two DISJOINT cubes do not couple at the leading order; the weight-12 class first contributes at order 12
+         per-orbit all zero = True; class coeff = 0
+
+ASSEMBLE d_11 = cube(11) + weight10(11) + weight11(11) + weight12(11)
+   cube(11)     = -221/1322395269120
+   weight10(11) = 5/44079842304
+   weight11(11) = 5/99179645184
+   weight12(11) = 0
+   ----
+   d_11         = -13/3967185807360 = -3.27688206e-12
+   sign(d_11) = -;  d_11/d_10 = 52/31449 = 0.001653
+
+REGRESSION: reproduce d_5..d_10 from the same class decomposition
+   d_5: decomposition 1/472392  known 1/472392  match=True
+   d_6: decomposition 7/5668704  known 7/5668704  match=True
+   d_7: decomposition 5/17006112  known 5/17006112  match=True
+   d_8: decomposition 5/272097792  known 5/272097792  match=True
+   d_9: decomposition -2035/264479053824  known -2035/264479053824  match=True
+   d_10: decomposition -10483/5289581076480  known -10483/5289581076480  match=True
+  [PASS] REGRESSION: the class decomposition reproduces d_5..d_10 EXACTLY (cube for 5-8; +weight10 at 9; +weight11-leading at 10)
+
+SHARPENED Pade / conformal continuation with d_5..d_11 (7 coeffs)
+   P_1plaq(6) = 0.42253173965
+   normalized B coeffs b_0..b_6 = ['1.0', '0.5833333', '0.1388889', '0.008680556', '-0.003634759', '-0.0009361961', '-1.547973e-6']
+
+   Pade [L/M] of B(beta), <P>(6) = P1_6 + d_5*6^5*B(6):
+     (d_5..d_10) [2/3]: <P>(6) = 0.589858289
+     (d_5..d_10) [3/2]: <P>(6) = 0.519085411
+     ---- with d_11 (NEW high-order approximants) ----
+     [3/3] Pade: <P>(6) = 0.537903703   (B(6)=7.008847)
+     [2/4] Pade: <P>(6) = 0.514032403   (B(6)=5.558665)
+     [4/2] Pade: <P>(6) = 0.528316217   (B(6)=6.426407)
+     [3/2] Pade: <P>(6) = 0.519085411   (B(6)=5.865636)
+     [2/3] Pade: <P>(6) = 0.589858289   (B(6)=10.16509)
+
+   full d_5..d_11 Pade span [3/3],[2/4],[4/2],[3/2],[2/3]: [0.5140, 0.5899] (width 0.0758)
+   new HIGHEST-order [3/3],[2/4],[4/2] span: [0.5140, 0.5379] -- these sit BELOW the d_5..d_10 [2/3]=0.590, so d_11 pulls the estimate DOWN; the continuation is AMBIGUOUS, NOT a clean convergence to 0.5934
+   the spread does NOT include the 0.5934 lattice comparator
+  [PASS] the d_5..d_11 Pade approximants all return real, finite <P>(6) in the physical window [0.40,0.70] (a regular analytic continuation under the estimated R<6 off-real-axis branch-pair evidence). HONEST: they do NOT converge cleanly onto 0.5934 -- adding d_11 pulls the new high-order values down to ~0.51-0.54 (the d_5..d_10 [2/3] was ~0.59), so the continuation spread is AMBIGUOUS and NOT a closure
+         values ['0.5379037', '0.5140324', '0.5283162', '0.5190854', '0.5898583']
+
+   d-log-Pade complex-pair locator (nearest singularity of Delta):
+     [2/2] (d_5..d_10): R=5.38609, arg=-1.23374 rad, root=1.78123-5.08303i
+     [2/3] (d_5..d_11, NEW): R=5.527986, arg=0.0 rad, root=5.52799+0.0i
+     [3/2] (d_5..d_11, NEW): R=5.352041, arg=-1.03465 rad, root=2.73397-4.60106i
+
+==============================================================================
+d_11 = -13/3967185807360 = -3.27688206e-12  (sign -, d_11/d_10 = 52/31449)
+PIECES: cube(11) = -221/1322395269120 ; weight10(11) = 5/44079842304 ; weight11(11) = 5/99179645184 ; weight12(11) = 0
+0.5934 is a Monte-Carlo comparator, NEVER a derivation input.
+==============================================================================
+SCORECARD: PASS=9 FAIL=0   (143.6s)
+==============================================================================
+
+----- stderr -----
+

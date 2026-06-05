@@ -1,0 +1,119 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_hubble_lane5_c1_a4_parity_gate_note_hash_drift_hygiene_2026_06_04.py
+runner_sha256: ea142e9f2aa7827cdc9f9d320d39b3b328f0f89766e7a85122a05dd2c95a2224
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.59
+status: ok
+----- stdout -----
+
+========================================================================
+Audit companion runner: Hubble Lane 5 (C1) A4 parity-gate no-go note-hash-drift hygiene
+========================================================================
+Parent note: docs/HUBBLE_LANE5_C1_A4_PARITY_GATE_NO_GO_NOTE_2026-04-28.md
+Parent runner: scripts/frontier_hubble_c1_a4_parity_gate_no_go.py
+Prior snapshot note_hash: b4b29e402ea765bf1edbafad89ebd2595b8f3f18e9e5e4d92851973a2fd667fc
+Current head note_hash:   88879a378fe6ef8494b6e91211c4ac6a2cc13316bc4b0e8a4031fe7629e9b923
+Note hashes differ: True (drift detected; companion documents the cause)
+Companion note: docs/HUBBLE_LANE5_C1_A4_PARITY_GATE_NO_GO_NOTE_HASH_DRIFT_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+
+========================================================================
+Block 1 : Re-execute the parent runner; confirm PASS=19 FAIL=0
+========================================================================
+  PASS parent runner exits with code 0 :: exit=0
+  PASS parent runner emits SUMMARY line :: PASS=19 FAIL=0
+  PASS parent runner PASS count matches archived snapshot (19) :: got PASS=19, expected 19
+  PASS parent runner FAIL count is zero :: got FAIL=0, expected 0
+
+========================================================================
+Block 2 : Static source scan of the parent runner: byte-stable
+========================================================================
+  PASS parent runner exists on disk :: scripts/frontier_hubble_c1_a4_parity_gate_no_go.py
+  PASS git log accessible for parent runner :: exit=0
+  PASS parent runner has exactly one commit on origin/main (file creation only) :: commits=1 (expected 1: file creation)
+  PASS parent runner's only commit is the file-creation salvage commit :: top commit = 5fd2c65a7 audit: capture yt pr230 lsp readout runner output
+
+========================================================================
+Block 3 : Parent note load-bearing Sections 0-6, 8 are byte-stable across the edit
+========================================================================
+  PASS current Section 7 bullet appears in current head exactly once :: count=1
+  PASS reconstructed prior text contains the pre-edit bullet exactly once :: count=1
+  PASS reconstructed prior text does NOT contain the post-edit bullet :: post-edit bullet absent from prior reconstruction
+  PASS reconstructed prior text hashes to the archived audited snapshot hash :: recon=b4b29e402ea765bf... vs snap=b4b29e402ea765bf...
+  PASS current head exposes all load-bearing Sections 0-6, 8 :: got 8 of expected 8
+  PASS Section '0. Context' is byte-identical across edit :: byte-equal
+  PASS Section '1. Setup' is byte-identical across edit :: byte-equal
+  PASS Section '2. Theorem (no-go)' is byte-identical across edit :: byte-equal
+  PASS Section '3. Numerical verification' is byte-identical across edit :: byte-equal
+  PASS Section '4. What this no-go closes' is byte-identical across edit :: byte-equal
+  PASS Section '5. What this no-go does not close' is byte-identical across edit :: byte-equal
+  PASS Section '6. Implication for Cycle ordering' is byte-identical across edit :: byte-equal
+  PASS Section '8. Boundary' is byte-identical across edit :: byte-equal
+  PASS current head exposes a Section 7. Cross-references :: ## 7. Cross-references
+  PASS Section 7 (Cross-references) IS modified by the edit :: expected: Section 7 differs across edit (the intended hygiene change)
+
+========================================================================
+Block 4 : Section 7 edit does not add any new claim or target
+========================================================================
+  PASS Section 7 target filename appears in the note :: AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md
+  PASS Section 7 target filename appears 5 times on current head (4 prose + link label/href) :: count=5 (expected 5 = 3 prose + 2 in Section 7 markdown link)
+  PASS Section 7 edit introduces exactly the documented parenthetical label :: count=1
+  PASS Section 7 edit does NOT introduce 'Theorem (A4 hygiene)' :: absent
+  PASS Section 7 edit does NOT introduce 'Corollary (A4 hygiene)' :: absent
+  PASS Section 7 edit does NOT introduce 'Lemma (A4 hygiene)' :: absent
+  PASS Section 7 edit does NOT introduce '= 1/2 hygiene' :: absent
+  PASS Section 7 edit does NOT introduce '= 1/3 hygiene' :: absent
+
+========================================================================
+Block 5 : Section 7 edit's parenthetical matches the prior conditional verdict's 'add as cited authority' repair target
+========================================================================
+  PASS Section 7 contains the 'load-bearing one-hop authority' label :: phrase present
+  PASS Section 7 cites the parity-gate carrier theorem authority via markdown link :: backticked markdown link to authority target present
+  PASS Section 7 anchor pointer survives the edit (target filename present in note) :: anchor present
+
+========================================================================
+Block 6 : Re-verify finite-algebra parity signatures (CAR, two-qubit, ququart) -> (2, 2)
+========================================================================
+  PASS CAR parity (-1)^N is a Z_2 involution on the rank-four block :: ||P^2 - I|| = 0.00e+00
+  PASS CAR parity signature is (2, 2) :: (plus, minus) = (2, 2)
+  PASS two-qubit Z (x) Z parity is a Z_2 involution :: ||P^2 - I|| = 0.00e+00
+  PASS two-qubit Z (x) Z parity signature is (2, 2) :: (plus, minus) = (2, 2)
+  PASS ququart Z_4^2 parity is a Z_2 involution :: ||P^2 - I|| = 9.16e-16
+  PASS ququart Z_4^2 parity signature is (2, 2) :: (plus, minus) = (2, 2)
+  PASS all three semantics share signature (2, 2) -> half-zone measure 1/2 :: (2, 2) shared across CAR / two-qubit / ququart
+
+========================================================================
+Block 7 : CAR Majorana anticommutator vs two-qubit commutator
+========================================================================
+  PASS CAR Majorana generators anticommute: ||{gamma_0, gamma_1}|| ~ 0 :: ||{gamma_0, gamma_1}|| = 0.00e+00
+  PASS two-qubit X (x) I and I (x) X commute (not anticommute) :: ||[X(x)I, I(x)X]|| = 0.00e+00
+  PASS two-qubit X (x) I and I (x) X have nonzero anticommutator (4) :: ||{X(x)I, I(x)X}|| = 4.00e+00
+
+========================================================================
+Block 8 : tau(q) = q + pi involution partition on a 64^n grid
+========================================================================
+  PASS 1D tau-involution gives equal-count low/high partition :: n_low=31, n_high=31, n_boundary=2
+  PASS 1D tau-involution partition matches archived snapshot counts :: got (31, 31, 2), expected (31, 31, 2)
+  PASS 2D tau-involution gives equal-count low/high partition :: n_low=1985, n_high=1985, n_boundary=126
+  PASS 2D tau-involution partition matches archived snapshot counts :: got (1985, 1985, 126), expected (1985, 1985, 126)
+
+========================================================================
+Block 9 : No-claim gate preservation across runs
+========================================================================
+  PASS parent runner emits the A4 no-go verdict :: no-go verdict present
+  PASS parent runner does NOT claim (G1) closed :: no (G1) closure claim
+  PASS parent runner does NOT claim (G2) closed :: no (G2) closure claim
+  PASS parent runner does NOT claim (C1) closed :: no (C1) closure claim
+  PASS parent note explicitly states (G1) remains open :: open-gate language present in Section 5
+  PASS parent note explicitly states (C1) remains open :: open-gate language present in Section 5
+
+========================================================================
+Summary
+========================================================================
+TOTAL: PASS=54, FAIL=0
+
+VERDICT: parent's load-bearing Sections 0-6, 8 and 19-check runner output are unchanged across the single 2026-05-09 Section 7 citation-hygiene edit that drove the b4b29e40 -> 88879a37 note_hash drift; the audit lane decides handling.
+
+----- stderr -----
+

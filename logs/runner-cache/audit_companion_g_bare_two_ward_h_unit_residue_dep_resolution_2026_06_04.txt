@@ -1,0 +1,138 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_g_bare_two_ward_h_unit_residue_dep_resolution_2026_06_04.py
+runner_sha256: 7c2422a65b5a3e1709717b075b0b1c4a37582ddb8b1c7c62cf2416daab71cd6d
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.58
+status: ok
+----- stdout -----
+========================================================================
+Two-Ward g_bare H_unit-Residue Bridge
+Dep-Resolution Hygiene Companion Runner (2026-06-04)
+========================================================================
+
+Repo root: /private/tmp/cl3-g-bare-two-ward-h-unit/wt
+Parent note: /private/tmp/cl3-g-bare-two-ward-h-unit/wt/docs/G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+Parent runner: /private/tmp/cl3-g-bare-two-ward-h-unit/wt/scripts/g_bare_two_ward_h_unit_residue_accepted_premise_runner.py
+Weakened dep note: /private/tmp/cl3-g-bare-two-ward-h-unit/wt/docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md
+W1 retained-authority note: /private/tmp/cl3-g-bare-two-ward-h-unit/wt/docs/G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md
+Companion source note: docs/G_BARE_TWO_WARD_H_UNIT_RESIDUE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing substantive content does not load-bear on the audit grade of the weakened dep 'g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19'.
+
+========================================================================
+BLOCK 1: Re-execute parent runner on current head; expect TOTAL: PASS=67 FAIL=0
+========================================================================
+  PASS parent_runner_exit_zero :: returncode=0
+  PASS parent_runner_emits_expected_total :: 'TOTAL: PASS=67 FAIL=0' present: True
+  PASS parent_runner_zero_fails_marker :: looking for ' FAIL=0' in stdout
+  PASS parent_runner_emits_final_verdict_line :: looking for canonical VERDICT line
+  PASS parent_runner_no_stderr_errors :: stderr length=0
+
+========================================================================
+BLOCK 2: Independently re-derive (M1) -> (B3) -> (B4) on companion side
+========================================================================
+  PASS sympy_importable :: imported sympy
+  PASS (B1) coef_A at N_c=3 reduces to -g_bare^2/6 :: coef_A=-g_bare**2/6
+  PASS (M1) F_Htt^2 = g_bare^2/(2 N_c) derived from coef_A = coef_B :: solved F_Htt^2 = [g_bare**2/6]
+  PASS (M1) explicit substitution: F_Htt^2 - g_bare^2/(2 N_c) = 0 :: F = +g_bare/sqrt(2 N_c) satisfies (M1)
+  PASS (W1) F_Htt^(0) = 1/sqrt(6); squared = 1/6 :: F_W1^2 = 1/6
+  PASS (B3) substitute W1 + N_c=3 gives 1/6 = g_bare^2/6 hence g_bare^2 = 1 :: solved g_bare^2 = [1]
+  PASS (B3) univariate polynomial g_bare^2 - 1 = 0 over Q has roots {-1, +1} :: roots = [-1, 1]
+  PASS (B4) positive branch g_bare = +1 :: positive root = 1
+  PASS (B4) negative branch g_bare = -1 excluded by sign convention :: negative root = -1
+  PASS forward-chain: g_bare=1 + (M1) at N_c=3 reproduces F_Htt^2 = 1/6 :: F2_forward = 1/6
+  PASS closure identity 2 N_c * F_Htt^2 = 1 at the bridge values :: 2*N_c*F^2 = 1
+
+========================================================================
+BLOCK 3: parent runner source: zero audit-grade / weakened-dep claim-id reads
+========================================================================
+  PASS parent_runner_present :: /private/tmp/cl3-g-bare-two-ward-h-unit/wt/scripts/g_bare_two_ward_h_unit_residue_accepted_premise_runner.py
+  PASS parent_runner_does_not_mention_weakened_dep_claim_id :: claim_id='g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19'
+  PASS parent_runner_does_not_read_grade_string 'audit_status' :: present_in_source=False
+  PASS parent_runner_does_not_read_grade_string 'effective_status' :: present_in_source=False
+  PASS parent_runner_does_not_read_grade_string 'retained_bounded' :: present_in_source=False
+  PASS parent_runner_does_not_read_grade_string 'retained_pending_chain' :: present_in_source=False
+  PASS parent_runner_does_not_read_grade_string 'audited_clean' :: present_in_source=False
+  PASS parent_runner_does_not_read_grade_string 'audited_conditional' :: present_in_source=False
+  PASS parent_runner_does_not_read_grade_string 'unaudited' :: present_in_source=False
+  PASS parent_runner_does_not_read_grade_string 'intrinsic_status' :: present_in_source=False
+  PASS parent_runner_does_not_read_grade_string 'max_descendant_status' :: present_in_source=False
+  PASS parent_runner_does_not_read_grade_string 'audit_ledger' :: present_in_source=False
+
+========================================================================
+BLOCK 4: parent note: zero dep-grade-dependency clauses against weakened dep
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-g-bare-two-ward-h-unit/wt/docs/G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+  PASS parent_note_does_not_assert_clause 'uses dep at retained_bounded' :: present=False
+  PASS parent_note_does_not_assert_clause 'requires dep at retained_bounded' :: present=False
+  PASS parent_note_does_not_assert_clause 'requires dep to be retained_bounded' :: present=False
+  PASS parent_note_does_not_assert_clause 'load-bears on dep at retained_bounded' :: present=False
+  PASS parent_note_does_not_assert_clause 'load-bears on the audit status of' :: present=False
+  PASS parent_note_does_not_assert_clause 'requires audit_status' :: present=False
+  PASS parent_note_does_not_assert_clause 'requires effective_status' :: present=False
+  PASS parent_note_does_not_assert_clause 'depends on audit_status of' :: present=False
+  PASS parent_note_does_not_assert_clause 'depends on effective_status of' :: present=False
+  PASS parent_note_declares_source_side_bounded_theorem_hint :: looking for source-side claim-boundary marker
+  PASS parent_note_declares_audit_lane_authority_marker :: looking for Status authority audit-lane marker
+
+========================================================================
+BLOCK 5: counterfactual on current head (dep at unaudited): pass count + VERDICT identical
+========================================================================
+  PASS counterfactual_run_exit_zero :: returncode=0
+  PASS counterfactual_run_emits_expected_total :: 'TOTAL: PASS=67 FAIL=0' present: True
+  PASS counterfactual_total_line_matches_first_run :: first_TOTAL='TOTAL: PASS=67 FAIL=0' second_TOTAL='TOTAL: PASS=67 FAIL=0'
+  PASS counterfactual_verdict_line_matches_first_run :: first_VERDICT_len=240 second_VERDICT_len=240
+
+========================================================================
+BLOCK 6: independently reproduce SU(3) color-Fierz -1/(2 N_c) + Clifford c_S=+1
+========================================================================
+  PASS sympy_importable :: imported sympy
+  PASS SU(3) generators normalized Tr(T^a T^b) = (1/2) delta_{ab}
+  PASS SU(3) completeness sum_a (T^a)_{ij}(T^a)_{kl} verified on all index quadruples
+  PASS color-Fierz coefficient -1/(2 N_c) at N_c=3 = -1/6 :: coef=-1/6
+  PASS Dirac identity Tr(I_4) = 4 in M_4(C) :: Tr I_4 = 4
+  PASS Dirac identity Tr(gamma^0 gamma^0) = 4 (signature (+---)) :: Tr(g0 g0)=4
+  PASS Clifford scalar-channel coefficient c_S = +1 :: c_S=1
+
+========================================================================
+BLOCK 7: companion discipline gates
+========================================================================
+  PASS companion_note_present :: /private/tmp/cl3-g-bare-two-ward-h-unit/wt/docs/G_BARE_TWO_WARD_H_UNIT_RESIDUE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+  PASS companion_note_contains '**Claim type:** meta' :: present=True
+  PASS companion_note_contains 'Status authority' :: present=True
+  PASS companion_note_contains 'independent audit lane only' :: present=True
+  PASS companion_note_contains 'Companion scope' :: present=True
+  PASS companion_note_contains 'dep_weakened:g_bare_two_ward_same_1pi_pinning_th' :: present=True
+  PASS companion_note_contains 'Prong A' :: present=True
+  PASS companion_note_contains 'Prong B' :: present=True
+  PASS companion_note_contains 'What this companion is **not**' :: present=True
+  PASS companion_note_contains 'not a re-audit' :: present=True
+  PASS companion_note_contains 'not a status promotion' :: present=True
+  PASS companion_note_contains 'not a new theorem' :: present=True
+  PASS companion_note_contains 'not a new axiom or import' :: present=True
+  PASS companion_note_contains 'claim_type = meta' :: present=True
+  PASS companion_note_contains 'no parent edits' :: present=True
+  PASS companion_note_contains 'no dep edits' :: present=True
+  PASS companion_note_excludes 'we hereby promote' :: present=False
+  PASS companion_note_excludes 'this companion sets effective_status' :: present=False
+  PASS companion_note_excludes 'this companion declares the parent retained' :: present=False
+  PASS companion_note_excludes 'this companion overrides the audit lane' :: present=False
+
+========================================================================
+BLOCK 8: no-edit gates against origin/main
+========================================================================
+  PASS parent_note_origin_main_fetched :: main_bytes=11469
+  PASS parent_note_byte_identical_to_origin_main :: local_bytes=11469 main_bytes=11469
+  PASS parent_runner_origin_main_fetched :: main_bytes=22514
+  PASS parent_runner_byte_identical_to_origin_main :: local_bytes=22514 main_bytes=22514
+  PASS dep_note_origin_main_fetched :: main_bytes=11942
+  PASS dep_note_byte_identical_to_origin_main :: local_bytes=11942 main_bytes=11942
+  PASS W1_note_origin_main_fetched :: main_bytes=3485
+  PASS W1_note_byte_identical_to_origin_main :: local_bytes=3485 main_bytes=3485
+
+========================================================================
+SUMMARY: PASS=79 FAIL=0
+FINAL_TAG: G_BARE_TWO_WARD_H_UNIT_RESIDUE_DEP_RESOLUTION_HYGIENE_OK
+----- stderr -----
+

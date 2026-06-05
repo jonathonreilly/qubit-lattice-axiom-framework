@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 641 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1322 |
+| unaudited | 1321 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 55 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 978 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1606 |
+| `unaudited` | 1605 |
 
 | claim_type | count |
 |---|---:|
@@ -102,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1231 | 67.27 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1015 | 57.99 | `audited_clean` | **retained** |
-| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 775 | 56.60 | `unaudited` | unaudited |
+| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 775 | 56.60 | `audited_conditional` | ~~audited_conditional~~ |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1171 | 49.20 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 984 | 48.94 | `unaudited` | meta |
 | 6 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 923 | 39.85 | `unaudited` | unaudited |
@@ -1153,6 +1153,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10829,6 +10830,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On Fraction-coefficient formal power series, finite partial sums, scalar powers, Cauchy products, geometric truncation errors, and the toy truncated Langevin update close order-by-order in Fraction arithmetic.  _(class `A`)_
 - **chain closes:** True — The narrowed conclusion follows from standard finite Fraction arithmetic and polynomial/Cauchy-product algebra as exercised by the runner. The note explicitly excludes the physics claims that would require external NSPT or lattice-gauge authorities.
 - **rationale:** The operative claim is narrowed to elementary algebra over rational formal series, not a physical NSPT computation. The runner source performs finite Fraction arithmetic, Cauchy products, a geometric truncation calculation, and boundary-text checks; it does not import contested external constants or rely on a calibrated numerical match. Hard-coded expected values are used only as elementary algebraic test expectations for worked examples, not as imported premises for a broader physical conclusion.
+- **auditor confidence:** high
+
+### `observable_principle_from_axiom_note`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-algebra runner-block theorem: given Record/P1 finite scalar additivity and admitted P2 continuous phase-blind scalar-generator selection, the c=1 zero-baseline log|det(D+J)| generator has the stated source-derivative, Matsubara-kernel, and Lt=4 orbit identities.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-205800-cdfba53eb8-observable_principle_from_ax`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given Record/P1 additivity and P2 phase-blind continuity, the scalar generator must solve W(r1 r2)=W(r1)+W(r2), so continuity fixes W(r)=c log r and with c=1 plus zero-source baseline gives W[J]=log|det(D+J)|-log|det D|.  _(class `A`)_
+- **chain closes:** True — On the stated conditional surface, the determinant factorization, Cauchy functional equation, finite-matrix source derivatives, Matsubara coefficient, and Klein-four orbit selector close. The packet does not derive P2; it only verifies the algebra after P2 is assumed.
+- **rationale:** The runner source performs real finite-matrix determinant, direct-sum, source-response, Matsubara, and orbit checks rather than merely printing constants; the helper's hard-coded plaquette values are used only in the out-of-scope comparator section and do not contribute PASS gates. The load-bearing step is a valid algebraic closure after importing P2, not a derivation of P2 from the minimal axiom memo. The cited Record axiom is accepted for finite scalar additivity, but the same axiom memo explicitly leaves P2/modulus/log-det/source-action bridges outside axiom content, so the row remains conditional rather than clean.
+- **open / conditional deps cited:**
+  - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21`

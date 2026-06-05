@@ -302,7 +302,12 @@ The companion runner [`scripts/frontier_wilson_action_surface_selector_real_posi
 - **V4 — Bounded-below check on real Wilson slot.** Compute `S_W = (β/N_c) Σ_P (N_c − Re Tr U_P)` on `N = 50` random SU(3) configurations. PASS = all `S_W ≥ 0` with margin (verifies (P5) on the scoped Wilson slot).
 - **V5 — Sign-changing imaginary-plaquette proxy check.** Compute the real proxy `θ · Σ_P Im Tr U_P` on `N = 50` random configurations. PASS = the proxy samples both signs, showing it is not the positive Wilson kinetic slot. This is not used as a global bounded-below proof; finite compact-lattice real candidates can be bounded below.
 - **V6 — Canonical ansatz enumeration.** Build candidate single-plaquette functionals `{Re Tr U_P, Im Tr U_P, (Re Tr U_P)², |Tr U_P|², (Tr U_P)², Re((Tr U_P)²), Im((Tr U_P)²)}` and check (P1)-(P5) systematically for each. PASS = only `Re Tr U_P` satisfies canonical normalization (P3) while remaining real-valued and bounded in the enumerated leading-`β` surface; the higher-order real candidates are outside this bounded ansatz rather than impossible action terms.
-- **V7 — Explicit forbidden-slot construction + rejection.** Construct the F̃F-proxy term `S_F̃F = i θ · Σ_P (Tr U_P − Tr U_P^†)/2` for `θ = 0.5`. Verify it violates (P4) on `N = 20` random configurations (nonzero `Im S`). PASS = rejection criterion (`Im S ≠ 0`) triggers on at least 95% of configurations (allowing for the measure-zero coincidence where `Σ_P Im Tr U_P = 0`).
+- **V7 — Explicit forbidden-slot construction + rejection.** Construct the real proxy
+  `Q = Σ_P Im Tr U_P`, equivalently `(θ/2)Σ_P(Tr U_P − Tr U_P^†)=iθQ` for the imaginary action slot, and
+  test the candidate action `S = S_W + iθQ` at `θ = 0.5`. Verify it violates (P4) on `N = 20` random
+  configurations (nonzero `Im S`). PASS = rejection criterion (`Im S ≠ 0`) triggers on at least 95% of
+  configurations (allowing for the measure-zero coincidence where `Σ_P Im Tr U_P = 0`). The extra-`i`
+  expression `iθ(Tr U_P − Tr U_P^†)/2 = −θ Im Tr U_P` is real-valued and is not the rejected V7 slot.
 - **V8 — Scoped beta-matching consistency.** Compute the leading-`a` continuum-limit relation for the canonical Wilson action under the scoped premises `N_c = 3`, `β = 6`, and `g_bare² = 2 N_c / β = 1`. PASS = `β = 6` is internally consistent with the leading-order `F^a F^a / (4 g²)` matching on this bounded surface; no retained authority for Wilson matching is imported.
 
 Hard assertion gates. Target: PASS = 8 FAIL = 0. NumPy + sympy. Runtime < 5 min.

@@ -616,44 +616,14 @@ def test_V7_FFtilde_proxy_construction_rejection():
     N_cfgs = 20
     theta = 0.5
 
-    # Construct S_FFtilde = i theta * sum_P (Tr U_P - Tr U_P^dag) / 2 = -theta * sum_P Im Tr U_P * (-1)
-    # = theta * sum_P Im Tr U_P (taking the imaginary part directly: (z - z*)/(2i) = Im z, so (z - z*)/2 = i Im z;
-    #   then i * theta * (i Im z) = -theta Im z. Sign convention doesn't matter for the rejection test;
-    #   what matters is that Im S != 0.)
-    # We compute the candidate explicitly and check Im S.
-
-    rejected = 0
-    im_S_values = []
-    for cfg in range(N_cfgs):
-        U = random_gauge_config_4d(L_s, L_t, rng)
-        # Sum over plaquettes of (Tr U_P - Tr U_P^dag) / 2
-        S_FFtilde_complex = 0.0 + 0.0j
-        dims = (L_t, L_s, L_s, L_s)
-        for coords in np.ndindex(*dims):
-            for mu in range(4):
-                for nu in range(mu + 1, 4):
-                    P = plaquette_4d(U, dims, coords, mu, nu)
-                    tr_P = np.trace(P)
-                    tr_P_dag = np.trace(P.conj().T)
-                    S_FFtilde_complex += 1j * theta * (tr_P - tr_P_dag) / 2.0
-        im_S = abs(S_FFtilde_complex.imag)
-        im_S_values.append(im_S)
-        if im_S < 1e-9:
-            # Special note: (Tr U_P - Tr U_P^dag) / 2 = i Im Tr U_P (purely imaginary scalar),
-            # so i * theta * (i Im) = -theta Im (real). So S_FFtilde_complex is actually real (Im S = 0).
-            # The action-functional-level (P4) violation comes from rewriting as theta * Im Tr U_P NOT being
-            # the same as the topological-charge i theta Q_lat WITH the explicit i factor in front in the Boltzmann.
-            # We'll check the actual Boltzmann-factor-level violation in the second test below.
-            pass
-        rejected += 1
-
-    # Actually the candidate i theta (Tr U_P - Tr U_P^dag)/2 simplifies to:
-    #   i theta * (2i Im Tr U_P) / 2 = -theta Im Tr U_P   (real-valued action contribution!)
-    # So at the *raw scalar* level this term is real. The (P4) violation comes when this term
-    # is added to the partition function as a CP-odd phase. The canonical "topological term"
-    # in the path integral is written iθQ where Q = (1/(16 pi^2)) sum F~F is real-valued —
-    # and "iθQ" added to S means Im S = θQ != 0.
-    # Let's check directly: the candidate action is S = S_W + iθQ where Q = sum_P Im Tr U_P (a real-valued lattice proxy).
+    # Formula guard:
+    #   (theta/2) * (Tr U_P - Tr U_P^dag) = i theta Im Tr U_P
+    # is the imaginary action slot rejected by (P4).
+    # By contrast,
+    #   i * theta * (Tr U_P - Tr U_P^dag) / 2 = -theta Im Tr U_P
+    # is real-valued and is not the V7 rejection target.  V7 therefore tests
+    # the real topological-density proxy Q = sum_P Im Tr U_P inserted as
+    # S = S_W + i theta Q.
 
     rng2 = np.random.default_rng(2026052507)
     rejected_v2 = 0

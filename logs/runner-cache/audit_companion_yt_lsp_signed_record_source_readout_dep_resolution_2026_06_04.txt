@@ -1,0 +1,133 @@
+audit_companion_yt_lsp_signed_record_source_readout_dep_resolution_2026_06_04
+parent_runner=scripts/frontier_yt_lsp_signed_record_source_readout_support.py
+parent_note=docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md
+companion_note=docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_RUNNER_HASH_HYGIENE_COMPANION_NOTE_2026-06-04.md
+parent_runner_pass_count=49
+parent_runner_fail_count=1
+companion_total_PASS=75
+companion_total_FAIL=0
+audit_companion_yt_lsp_signed_record_source_readout_dep_resolution_2026_06_04
+parent runner: scripts/frontier_yt_lsp_signed_record_source_readout_support.py
+parent note  : docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md
+companion    : docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_RUNNER_HASH_HYGIENE_COMPANION_NOTE_2026-06-04.md
+dep claim id : lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22
+expected parent-runner SHA-256: a796ff28b71099137ffcc59118f2b240cabdfad5f6b54b5730b3963ce026ad01
+
+================================================================================
+Block 1: Re-run parent runner on current head
+================================================================================
+[PASS] parent runner subprocess returns nonempty stdout
+[PASS] parent runner PASS=49 (substantive content unchanged): 49
+[PASS] parent runner FAIL=1 (single FAIL = procedural ledger-status watcher): 1
+[PASS] exactly one FAIL line: 1
+[PASS] FAIL line names the LSP dep: [FAIL] lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22: retained-grade support status: unaudited
+[PASS] FAIL line reports unaudited status (the weakened grade): [FAIL] lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22: retained-grade support status: unaudited
+
+================================================================================
+Block 2: Re-verify Pauli algebra independent of any dep grade
+================================================================================
+[PASS] P_+ idempotent
+[PASS] P_- idempotent
+[PASS] P_+ and P_- orthogonal
+[PASS] P_+ + P_- = I (completeness)
+[PASS] signed observable P_+ - P_- = sigma_z
+[PASS] signed spectrum is {-1,+1}: [-1.0, 1.0]
+
+================================================================================
+Block 3: RN origin-score identity independent of any dep grade
+================================================================================
+[PASS] site 0: d log R / dh_x at h=0 equals epsilon_x: 8.22666379463044e-11
+[PASS] site 1: d log R / dh_x at h=0 equals epsilon_x: 8.22666379463044e-11
+[PASS] site 2: d log R / dh_x at h=0 equals epsilon_x: 8.22666379463044e-11
+[PASS] all three sites within tolerance: 8.22666379463044e-11
+
+================================================================================
+Block 4: Source-family uniqueness independent of any dep grade
+================================================================================
+[PASS] normalized source composition implements h+k addition: 2.7755575615628914e-17
+[PASS] log-odds are linear with coefficients epsilon - epsilon^0: 1.1102230246251565e-16
+[PASS] uniquely-reconstructed family equals product RN: 0.0
+
+================================================================================
+Block 5: Static scan of parent runner for ledger grade-field reads
+================================================================================
+[PASS] parent runner contains Part 2 ledger-status function
+[PASS] ledger-read pattern 'row\\.get\\("effective_status"\\)' confined to Part 2 (or absent): 2/2 in Part 2
+[PASS] ledger-read pattern 'row\\.get\\("audit_status"\\)' confined to Part 2 (or absent): 0/0 in Part 2
+[PASS] ledger-read pattern 'row\\.get\\("intrinsic_status"\\)' confined to Part 2 (or absent): 0/0 in Part 2
+[PASS] ledger-read pattern 'rows\\[.+\\]\\["effective_status"\\]' confined to Part 2 (or absent): 0/0 in Part 2
+[PASS] ledger-read pattern 'rows\\.get\\(.+\\)\\.get\\("effective_status"\\)' confined to Part 2 (or absent): 0/0 in Part 2
+[PASS] ledger-read pattern 'rows\\.get\\(.+\\)\\.get\\("audit_status"\\)' confined to Part 2 (or absent): 0/0 in Part 2
+[PASS] outside Part 2: no ledger row access for 'audit_status': 0
+[PASS] outside Part 2: no ledger row access for 'effective_status': 0
+[PASS] outside Part 2: no ledger row access for 'intrinsic_status': 0
+[PASS] outside Part 2: no ledger row access for 'retained_bounded': 0
+[PASS] outside Part 2: no ledger row access for 'audited_clean': 0
+[PASS] outside Part 2: no ledger row access for 'audited_conditional': 0
+
+================================================================================
+Block 6: Static scan of parent note for grade-dependence claims
+================================================================================
+[PASS] parent note absent of grade-dependence pattern: 'because the dep is retained'
+[PASS] parent note absent of grade-dependence pattern: 'because.*retained_bounded'
+[PASS] parent note absent of grade-dependence pattern: "depends on the dep'?s audit grade"
+[PASS] parent note absent of grade-dependence pattern: "load-bears on the dep'?s audit grade"
+[PASS] parent note absent of grade-dependence pattern: 'requires the dep to be retained'
+[PASS] parent note absent of grade-dependence pattern: 'requires.*audited_clean'
+[PASS] parent note absent of grade-dependence pattern: 'requires the dep grade'
+[PASS] parent note declares direct_effective_status_change_allowed_from_this_note: false
+[PASS] parent note declares audit_required_before_effective_status_change: true
+
+================================================================================
+Block 7: Counterfactual independence of substantive blocks
+================================================================================
+[PASS] no-ledger Pauli: signed observable identical
+[PASS] no-ledger RN origin-score at site 0 within tolerance: 8.22666379463044e-11
+[PASS] no-ledger two-site readouts commute
+[PASS] no-ledger two-site readouts square to identity
+
+================================================================================
+Block 8: Firewall preservation across the dep weakening
+================================================================================
+[PASS] required boundary phrase present: does not accept the source-coupled action convention
+[PASS] required boundary phrase present: does not derive canonical `O_H`
+[PASS] required boundary phrase present: does not fix scalar LSZ normalization
+[PASS] required boundary phrase present: does not select `kappa_Y = 0`
+[PASS] required boundary phrase present: does not derive `y_t`
+[PASS] required boundary phrase present: claim_type_author_hint: bounded_theorem
+[PASS] required boundary phrase present: direct_effective_status_change_allowed_from_this_note: false
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: positive retained Y_T closure
+[PASS] forbidden overclaim absent: kappa_Y = 0 is derived
+[PASS] forbidden overclaim absent: derive y_t
+[PASS] forbidden overclaim absent: y_t = 
+[PASS] forbidden overclaim absent: m_t = 
+[PASS] forbidden overclaim absent: sqrt(8/9) as an unconditional
+
+================================================================================
+Block 9: Runner-hash continuity since last audited_clean snapshot
+================================================================================
+[PASS] current parent runner SHA-256 matches last audited_clean snapshot: current=a796ff28b7109913 expected=a796ff28b7109913
+[PASS] parent ledger row has previous_audits entries: 2
+[PASS] most-recent audited_clean snapshot has runner_hash recorded: a796ff28b7109913
+[PASS] current runner hash matches most-recent audited_clean snapshot's runner_hash: current=a796ff28b7109913 snap=a796ff28b7109913
+
+================================================================================
+Block 10: Companion non-self-promotion check
+================================================================================
+[PASS] companion absent of promotion phrase: Status: retained
+[PASS] companion absent of promotion phrase: promoted to retained
+[PASS] companion absent of promotion phrase: we promote the parent
+[PASS] companion absent of promotion phrase: promotes the parent's effective_status
+[PASS] companion absent of promotion phrase: this note promotes
+[PASS] companion absent of promotion phrase: this companion promotes
+[PASS] companion contains required disclaimer: Type:** meta
+[PASS] companion contains required disclaimer: companion-only
+[PASS] companion contains required disclaimer: not a new theorem claim
+[PASS] companion contains required disclaimer: not a status promotion
+[PASS] companion contains required disclaimer: does not promote status
+[PASS] companion does not assert current parent grade other than ledger record
+
+================================================================================
+RESULT: PASS=75 FAIL=0
+================================================================================

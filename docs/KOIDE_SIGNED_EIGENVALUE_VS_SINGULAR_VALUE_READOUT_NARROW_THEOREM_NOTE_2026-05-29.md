@@ -115,19 +115,14 @@ negative eigenvalue `λ_min < 0`,
 
 ```text
 Σ_k |λ_k|  =  Σ_k λ_k − 2λ_min  =  3a − 2λ_min,
-Q(V)  =  (3a² + 6|b|²) / (3a − 2λ_min)²   <  2/3   (since 3a − 2λ_min > 3a).
+Q(V)  =  (3a² + 6|b|²) / (3a − 2λ_min)²   <  Q(S) = (1 + 2r)/3.
 ```
 
-The final `< 2/3` comparison in (C2) is part of the `r = 1/2` specialization.
-In general, the one-negative conclusion is the sharper inequality
-
-```text
-Q(V)  =  (3a² + 6|b|²) / (3a − 2λ_min)²  <  Q(S) = (1 + 2r)/3.
-```
-
-For non-`r = 1/2` values, `Q(V)` need not be below `2/3`; the paired runner
-checks `r = 51/100`, `θ = 46/25`, where exactly one eigenvalue is negative and
-`2/3 < Q(V) < Q(S)`.
+At the Koide point `r = 1/2`, this specializes to `Q(V) < 2/3`. Without the
+`r = 1/2` specialization, the unqualified inequality `Q(V) < 2/3` is false in
+general: for `a = 1` and `b = 19/20 − i√3/20`, the valid `C_3` spectrum is
+`(29/10, 1/5, −1/10)`, with exactly one negative eigenvalue, and
+`Q(V) = 423/512 > 2/3` while `Q(S) = 47/50`.
 
 **Corollary C3 (sign is the only difference).** By (B), `S` and `V` produce the
 *identical* mass triple `m_k = λ_k²`; they differ **only** in the sign of the
@@ -188,8 +183,10 @@ inequivalent. ∎
 **Corollaries.** C1: at `r = 1/2`, `λ_k = a(1 + √2 cos(θ + 2πk/3)) = 0 ⇔
 cos(θ + 2πk/3) = −1/√2 ⇔ θ + 2πk/3 ≡ ±3π/4`; the angle set `{θ + 2πk/3}` is
 invariant under `θ → θ + 2π/3`, giving the stated window. C2 is the triangle-sum
-specialized to one sign flip. C3 restates (B) and the denominator computation in
-the proof of (T-ii). ∎
+specialized to one sign flip: since `3a − 2λ_min > 3a`, it gives the strict
+general bound `Q(V) < Q(S)`, and only after imposing `r = 1/2` does this become
+`Q(V) < 2/3`. C3 restates (B) and the denominator computation in the proof of
+(T-ii). ∎
 
 ## The new fact, and why it is a positive constraint
 
@@ -265,8 +262,9 @@ one-flip at r=1/2  Q(V) < 2/3
 - The inequivalence theorem (T-i)–(T-iv): the singular-value readout `Q(V)` is
   `θ`-dependent, bounded above by `Q(S)`, equal to it only when the spectrum is
   sign-homogeneous, and in particular non-constant (hence `≠ 2/3`) at `r = 1/2`.
-- Corollaries C1–C3 (sign-flip boundary, one-negative closed form, "sign is the
-  only difference").
+- Corollaries C1–C3 (sign-flip boundary, one-negative closed form with the
+  general `Q(V) < Q(S)` bound and the `r = 1/2` specialization, "sign is the only
+  difference").
 
 ## What this does NOT claim
 
@@ -331,9 +329,9 @@ verifies, at exact sympy precision (cached at
    equality region is the closed set `|θ mod 2π/3| ≤ π/12` (Part 6).
 7. (C3) the mass triple `m_k = λ_k²` is identical for both readouts while the
    `√m` sign vectors differ (Part 7); (C2) the one-negative closed form matches
-   the direct `Q(V)` at `θ = π/3, π/2`, and a non-`r=1/2` one-negative
-   regression shows the general comparison is `Q(V) < Q(S)`, not `Q(V) < 2/3`
-   (Part 8).
+   the direct `Q(V)` at `θ = π/3, π/2`, and a valid general-`r` one-negative
+   counterexample verifies that the unqualified `Q(V) < 2/3` claim is false
+   outside the `r = 1/2` specialization (Part 8).
 8. Forbidden-imports / comparator-only sanity: all proof inputs are abstract
    (`a > 0`, `|b| > 0`, `θ` real); `2/3` is comparator-only; `r = 1/2` is a
    hypothesis (Part 9).

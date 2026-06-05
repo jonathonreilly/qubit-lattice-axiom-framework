@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_tensor_product_translation_fermion_operator_bridge_record_invariance_2026_06_04.py
+runner_sha256: 41a9a5f924101ea118b17aa9533d4f24c7d0224ca1b9558bd11584246af1b00a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.12
+status: ok
+----- stdout -----
+========================================================================
+Tensor-product translation fermion operator bridge record-invariance hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md
+Parent runner: scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS parent_claim_type_expected
+PASS parent_runner_path_expected
+PASS parent_current_criticality_expected
+PASS parent_current_load_expected :: load=11.869
+PASS parent_note_hash_expected
+PASS parent_note_hash_matches_ledger
+PASS parent_deps_exact :: count=1
+PASS parent_current_row_unresolved
+PASS parent_load_bearing_block_present
+PASS parent_load_bearing_contains_tensor_phrase_0
+PASS parent_load_bearing_contains_tensor_phrase_1
+PASS parent_load_bearing_contains_tensor_phrase_2
+PASS parent_load_bearing_contains_tensor_phrase_3
+PASS parent_load_bearing_contains_tensor_phrase_4
+PASS parent_load_bearing_contains_tensor_phrase_5
+PASS parent_load_bearing_contains_tensor_phrase_6
+PASS parent_load_bearing_contains_tensor_phrase_7
+PASS parent_load_bearing_contains_tensor_phrase_8
+PASS parent_load_bearing_contains_tensor_phrase_9
+PASS parent_load_bearing_omits_record_axiom_terms
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_summary_present
+PASS parent_runner_pass_count_one_thirty_one :: pass_count=131
+PASS parent_runner_fail_count_zero :: fail_count=0
+PASS record_marker_true_exit_zero :: returncode=0
+PASS record_marker_does_not_change_parent_output
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_verdict_change
+PASS companion_keeps_dependency_boundary
+PASS companion_marks_axioms_not_support
+========================================================================
+SUMMARY: PASS=33 FAIL=0
+========================================================================
+
+----- stderr -----
+

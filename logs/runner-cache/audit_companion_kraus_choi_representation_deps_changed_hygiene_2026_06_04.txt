@@ -1,0 +1,206 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_kraus_choi_representation_deps_changed_hygiene_2026_06_04.py
+runner_sha256: 922727147c6f29cf59abf736afb2282292a80ef1cb30af3e0a9776e7d51b3198
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.16
+status: ok
+----- stdout -----
+Kraus-Choi Representation on Qubit Lattice
+Deps-Changed (minimal_axioms) Hygiene Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-kraus-choi-hygiene/wt
+Parent note: docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+Companion source note: docs/KRAUS_CHOI_REPRESENTATION_DEPS_CHANGED_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing finite-region Kraus/Choi
+      representation chain does not depend on Record-axiom content
+      after the 2026-06-04 deps-changed rewire
+      (minimal_axioms_2026-05-20 -> minimal_axioms).
+
+Scope: pure audit-companion evidence; no theorem claim, no
+       status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: Parent-note static scan (load-bearing surface)
+========================================================================
+  Counts Record-axiom usage tokens in parent's load-bearing
+  surface (Honest scope, Claim, Setup, Steps 1-3, Admitted
+  inputs); verifies zero hits. Step 4 / pointer / 'what this
+  does not close' mentions are downward pointers, not inputs.
+  PASS parent_load_bearing_surface_zero_record_axiom_tokens :: total = 0 across tokens = {'I(R_1': 0, 'I(R)': 0, 'scalar record': 0, 'record functional': 0, 'record-readout': 0, 'record readout': 0, 'additive record': 0, 'additive scalar record': 0, 'Record axiom': 0, 'MINIMAL_AXIOMS_2026-06-04': 0}
+  PASS parent_surface_contains_Kraus
+  PASS parent_surface_contains_Choi
+  PASS parent_surface_contains_M_2
+  PASS parent_surface_contains_Z^3
+  PASS parent_surface_contains_finite
+  PASS parent_surface_contains_operator-sum
+  PASS parent_has_step4_consistency_with_record_lane
+  PASS parent_has_what_this_does_not_close
+  PASS parent_has_plain_text_pointer_references_label
+
+========================================================================
+BLOCK 2: Kraus operator-sum CP verification
+========================================================================
+  Standard Kraus rep Phi(X) = sum_r K_r X K_r^dag is CP and TP
+  for unitary, depolarizing, dephasing, amplitude-damping
+  channels on 1 qubit. Pure standard matrix algebra; no axiom
+  content.
+  PASS kraus_TP_unitary_random_seed_1 :: |sum_r K_r^dag K_r - I| = 2.220e-16
+  PASS kraus_CP_choi_psd_unitary_random_seed_1 :: min eig(C_Phi) = -5.522e-17
+  PASS kraus_hermitian_preservation_unitary_random_seed_1 :: |Phi(rho) - Phi(rho)^dag| = 6.206e-17
+  PASS kraus_TP_depolarizing_p_0.3 :: |sum_r K_r^dag K_r - I| = 1.110e-16
+  PASS kraus_CP_choi_psd_depolarizing_p_0.3 :: min eig(C_Phi) = 1.500e-01
+  PASS kraus_hermitian_preservation_depolarizing_p_0.3 :: |Phi(rho) - Phi(rho)^dag| = 0.000e+00
+  PASS kraus_TP_dephasing_p_0.4 :: |sum_r K_r^dag K_r - I| = 0.000e+00
+  PASS kraus_CP_choi_psd_dephasing_p_0.4 :: min eig(C_Phi) = 0.000e+00
+  PASS kraus_hermitian_preservation_dephasing_p_0.4 :: |Phi(rho) - Phi(rho)^dag| = 0.000e+00
+  PASS kraus_TP_amplitude_damping_gamma_0.2 :: |sum_r K_r^dag K_r - I| = 1.110e-16
+  PASS kraus_CP_choi_psd_amplitude_damping_gamma_0.2 :: min eig(C_Phi) = -4.811e-17
+  PASS kraus_hermitian_preservation_amplitude_damping_gamma_0.2 :: |Phi(rho) - Phi(rho)^dag| = 0.000e+00
+
+========================================================================
+BLOCK 3: Choi-positivity CP characterization
+========================================================================
+  CP -> Choi PSD; non-CP -> Choi has negative eigenvalue
+  (witness: transpose map, positive but not CP).
+  PASS cp_witness_unitary_2qubit_choi_psd :: min eig(C) = -2.142e-16
+  PASS non_cp_witness_transpose_choi_has_negative_eig :: min eig(C_transpose) = -1.000e+00
+  PASS non_cp_witness_transpose_M3_choi_has_negative_eig :: min eig(C_transpose, d=3) = -1.000e+00
+  PASS cp_witness_dephasing_choi_psd :: min eig(C) = 0.000e+00
+
+========================================================================
+BLOCK 4: Record-axiom counterfactual
+========================================================================
+  Re-runs Kraus/Choi checks under 'Record axiom asserted'
+  and 'Record axiom not asserted' outer scopes; verifies
+  identical conclusions in both runs.
+  PASS cp_witness_identical_under_record_axiom_asserted_vs_not :: asserted = (0.12499999999999999, 1.1102230246251565e-16), not_asserted = (0.12499999999999999, 1.1102230246251565e-16)
+  PASS noncp_witness_identical_under_record_axiom_asserted_vs_not :: asserted = -1.0, not_asserted = -1.0
+  PASS conclusion_choi_psd_iff_cp_identical_in_both_scopes :: CP/non-CP truth values identical across scopes
+
+========================================================================
+BLOCK 5: Quantum / Lattice cross-memo content preservation
+========================================================================
+  MINIMAL_AXIOMS_2026-05-20.md and MINIMAL_AXIOMS_2026-06-04.md
+  both supply the per-site M_2(C) algebra and Z^3 lattice; the
+  new memo adds Record as a non-overlapping third axiom.
+  PASS quantum_per_site_M2_present_in_old_memo
+  PASS quantum_qubit_language_present_in_old_memo
+  PASS quantum_per_site_M2_present_in_new_memo
+  PASS quantum_qubit_language_present_in_new_memo
+  PASS lattice_Z3_present_in_old_memo
+  PASS lattice_Z3_present_in_new_memo
+  PASS record_axiom_named_in_new_memo
+  PASS record_axiom_NOT_in_old_memo :: confirms old memo does not assert Record axiom
+  PASS new_memo_names_lattice_quantum_record
+
+========================================================================
+BLOCK 6: Hypothesis-set parity
+========================================================================
+  Re-derives parent's load-bearing matrix-algebra steps using
+  ONLY {Lattice, Quantum} premise content; confirms strict
+  subset relation Premises(Parent) subsetneq {Lattice, Quantum,
+  Record}.
+  PASS step1_per_site_M2C_constructible
+  PASS step2_lattice_finite_Lambda_size_1_constructible
+  PASS step2_lattice_finite_Lambda_size_2_constructible
+  PASS step2_lattice_finite_Lambda_size_3_constructible
+  PASS step2_lattice_finite_Lambda_size_4_constructible
+  PASS step3_tensor_product_dim_match_Lambda_1 :: A_L.shape = (2, 2), expected = (2,2)
+  PASS step3_tensor_product_dim_match_Lambda_2 :: A_L.shape = (4, 4), expected = (4,4)
+  PASS step3_tensor_product_dim_match_Lambda_3 :: A_L.shape = (8, 8), expected = (8,8)
+  PASS step3_tensor_product_dim_match_Lambda_4 :: A_L.shape = (16, 16), expected = (16,16)
+  PASS step4_kraus_satisfied_on_d4_unitary :: min eig(C) = -7.845e-16
+  PASS premises_parent_is_strict_subset_of_full_axioms
+
+========================================================================
+BLOCK 7: Standard Kraus / Choi import-content invariance
+========================================================================
+  The standard Kraus 1971 and Choi 1975 theorems quoted in the
+  parent are finite-dim C*-algebra content. Their hypotheses
+  (M_d(C), finite d) are met by Quantum + Lattice; they make
+  no reference to record additivity or any other axiom.
+  PASS kraus_normalized_TP_d_4 :: |sum_r K_r^dag K_r - I| = 2.220e-16
+  PASS kraus_normalized_CP_choi_psd_d_4 :: min eig(C) = -2.211e-16
+  PASS kraus_normalized_TP_d_8 :: |sum_r K_r^dag K_r - I| = 4.441e-16
+  PASS kraus_normalized_CP_choi_psd_d_8 :: min eig(C) = -1.091e-15
+
+========================================================================
+BLOCK 8: Finite-region tensor-product structure
+========================================================================
+  A_Lambda is isomorphic to M_d(C) with d = 2^|Lambda| for
+  |Lambda| in {1, 2, 3, 4}, by direct tensor product of M_2(C).
+  PASS tensor_product_unitary_shape_size_1 :: shape = (2, 2)
+  PASS tensor_product_unitary_unitary_size_1 :: |UU^dag - I| = 2.220e-16
+  PASS tensor_product_unitary_shape_size_2 :: shape = (4, 4)
+  PASS tensor_product_unitary_unitary_size_2 :: |UU^dag - I| = 4.441e-16
+  PASS tensor_product_unitary_shape_size_3 :: shape = (8, 8)
+  PASS tensor_product_unitary_unitary_size_3 :: |UU^dag - I| = 4.441e-16
+  PASS tensor_product_unitary_shape_size_4 :: shape = (16, 16)
+  PASS tensor_product_unitary_unitary_size_4 :: |UU^dag - I| = 6.661e-16
+
+========================================================================
+BLOCK 9: Choi-Jamiolkowski isomorphism inverse-map check
+========================================================================
+  Verifies Phi(X) = Tr_1[(X^T (tensor) I) C_Phi] on dephasing
+  channel on 1 qubit and depolarizing channel on 1 qubit.
+  PASS choi_inverse_map_agrees_with_kraus_dephasing_p_0.3 :: |Phi_X_direct - Phi_X_choi| = 2.777e-17
+  PASS choi_inverse_map_agrees_with_kraus_depolarizing_p_0.2 :: |Phi_X_direct - Phi_X_choi| = 5.551e-17
+  PASS choi_inverse_map_agrees_with_kraus_amplitude_damping_gamma_0.15 :: |Phi_X_direct - Phi_X_choi| = 2.220e-16
+
+========================================================================
+BLOCK 10: Trace-preservation characterization
+========================================================================
+  sum_r K_r^dag K_r = I for TP channels; demonstrates that
+  Kraus + TP <-> CPTP characterization on small algebras.
+  PASS TP_check_unitary_2 :: |sum K^dag K - I| = 2.220e-16
+  PASS TP_check_dephasing_0.5 :: |sum K^dag K - I| = 2.220e-16
+  PASS TP_check_depolarizing_0.5 :: |sum K^dag K - I| = 2.220e-16
+  PASS TP_check_amplitude_damping_0.3 :: |sum K^dag K - I| = 0.000e+00
+  PASS non_TP_check_scaled_depolarizing_flagged :: |sum K^dag K - I| = 7.500e-01 (expected non-zero)
+
+========================================================================
+BLOCK 11: Parent-note pointer-section scan
+========================================================================
+  Verifies the parent's 'Plain-text pointer references (NOT
+  load-bearing deps)' subsection lists the record-lane pointers
+  under the explicit 'NOT load-bearing deps' label.
+  PASS parent_has_pointer_subsection :: len(pointer_section) = 494
+  PASS pointer_subsection_labeled_NOT_load_bearing
+  PASS pointer_subsection_lists_BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20
+  PASS pointer_subsection_lists_PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20
+  PASS pointer_subsection_lists_PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE
+
+========================================================================
+BLOCK 12: Axiom-memo content delta scan
+========================================================================
+  MINIMAL_AXIOMS_2026-05-20.md -> MINIMAL_AXIOMS_2026-06-04.md
+  preserves per-site M_2(C) and Z^3 content; delta is Record-
+  axiom addition + ancillary metadata. No change to Quantum
+  or Lattice content of relevance to the parent.
+  PASS both_memos_have_qubit_language
+  PASS both_memos_have_cl3_language
+  PASS new_memo_names_three_axioms
+  PASS new_memo_contains_record_additivity_statement
+  PASS old_memo_does_not_contain_record_additivity
+
+========================================================================
+BLOCK 13: Companion runner self-scan
+========================================================================
+  Confirms the companion runner's load-bearing computational
+  core (Block executions section onward) uses zero Record-axiom
+  USAGE tokens beyond documentation block-plan comments,
+  static-scan token lists, and counterfactual scope-tag
+  surrogates. The companion's algebra itself never invokes
+  the Record axiom.
+  PASS companion_runner_split_marker_found
+  PASS companion_runner_core_zero_substantive_record_axiom_arithmetic :: substantive usage counts = {'I_R\\s*=': 0, 'I\\(R_\\d+\\)\\s*\\+\\s*I\\(R_\\d+\\)': 0, 'record_additivity\\s*=': 0, 'additive_record_check\\s*=': 0, 'scalar_record_functional\\s*=': 0}
+  PASS companion_runner_core_uses_np_kron :: np.kron present in computational core
+  PASS companion_runner_core_uses_np_linalg :: np.linalg present in computational core
+  PASS companion_runner_core_uses_np_eye :: np.eye present in computational core
+  PASS companion_runner_core_uses_np_zeros :: np.zeros present in computational core
+
+========================================================================
+SUMMARY: PASS=85 FAIL=0
+========================================================================

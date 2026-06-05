@@ -69,9 +69,9 @@ statistics from the **operator-algebra / dimension** side:
   which by the dimensional half of substep 1
   (`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`,
   retained_bounded) excludes only the **free** boson; and
-- the statistics-agnostic no-go
-  (`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`,
-  retained_no_go) shows that operator-algebra and dimension data alone do
+- the statistics-agnostic no-go, named here as plain-text context
+  (`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`),
+  shows that operator-algebra and dimension data alone do
   **not** force fermion vs hard-core boson.
 
 This note adds the **independent, topological** constraint that the prior
@@ -178,8 +178,8 @@ excluded) at **that** level only.
   first-quantized particles. The bridge from first-quantized graph-braid
   exchange statistics to second-quantized field **graded locality** is a
   **separate, open** question. In particular,
-  [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md)
-  (retained_no_go) shows that the operator-algebra / dimension baseline
+  `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`
+  is the context note showing that the operator-algebra / dimension baseline
   does **not** force the fermionic frame over the hard-core-boson frame at
   the field-algebra level. This note does **not** resolve that no-go: the
   anyon-exclusion argument lives on the configuration-space `Z^3`
@@ -209,12 +209,11 @@ excluded) at **that** level only.
 
 ## Non-Load-Bearing Context
 
-- [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md)
+- `STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`
   — the open second-quantized bridge this note does **not** resolve: it
   shows operator-algebra / dimension data do not force fermion vs hard-core
   boson at the field-algebra level. Cited so the scope boundary is explicit;
-  it is `retained_no_go` on `origin/main` and nothing here depends on its
-  tier or claims to close it.
+  nothing here depends on its tier or claims to close it.
 - `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
   — the dimensional half of substep 1 (excludes only the **free** boson;
   `retained_bounded` on `origin/main`). Plain-text context only: it is

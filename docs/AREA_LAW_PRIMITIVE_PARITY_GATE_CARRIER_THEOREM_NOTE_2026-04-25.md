@@ -1,8 +1,9 @@
 # Area-Law Primitive Parity-Gate Carrier Theorem Note
 
 **Date:** 2026-04-25
-**Status:** audited_conditional positive Target 2 carrier theorem conditional on
-the primitive two-orbital Gaussian/CAR edge carrier
+**Status:** conditional positive Target 2 carrier theorem on the primitive
+two-orbital Gaussian/CAR edge carrier. Audit and effective status are
+ledger-derived, not source-prose claims.
 **Runner:** `scripts/frontier_area_law_primitive_parity_gate_carrier.py`
 
 ## Cited authorities (one-hop deps)
@@ -14,15 +15,15 @@ the primitive two-orbital Gaussian/CAR edge carrier
   forced. This is the audited authority for the carrier identification used
   here.
 - [`AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md`](AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md)
-  — `audited_conditional`. The simple-fiber-class Widom no-go this carrier
+  — simple-fiber-class Widom no-go support. The no-go this carrier
   evades by leaving the simple-fiber class with a self-dual primitive
   half-zone selector (average crossing count exactly 3, not 2).
 - [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
-  — `audited_conditional`. Source of the action-side primitive coefficient
+  — conditional Planck support. Source of the action-side primitive coefficient
   `c_cell = Tr((I_16/16) P_A) = 4/16 = 1/4` and the rank-four primitive
   boundary block `P_A H_cell` with which this carrier identifies.
 - [`PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md`](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md)
-  — `audited_conditional`. Records the additive finite-boundary extension of
+  — conditional Planck support. Records the additive finite-boundary extension of
   the action-side `c_cell = 1/4` and the conditional carrier-share matching
   with `A/(4 G_Newton,lat)`. This is the action-side counterpart that this
   carrier theorem matches on the entanglement side under the carrier
@@ -328,8 +329,8 @@ This rigorization does **not**:
   which is the audited authority for (CIP). That row's audit verdict is
   inherited here verbatim and the bridge premise (CIP) remains conditional on
   it.
-- promote audit status. The audit ledger is not modified; the status descriptor
-  alignment to `audited_conditional` matches the live audit ledger entry.
+- set audit or effective status. The audit ledger is not modified; the audit
+  system owns those fields.
 - duplicate the action-side `c_cell = 1/4` derivation; that derivation now
   lives in the cited primitive-coframe theorem and its boundary-density
   extension.

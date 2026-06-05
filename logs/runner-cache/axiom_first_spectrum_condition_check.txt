@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_spectrum_condition_check.py
-runner_sha256: 584e8d642799d8f25402780a8673b7668672d1ad1ecc49f3f62504d815ea5944
+runner_sha256: 498185d3654731a502f85bfd1c765c2894f25a67a6c54fbb6b25048e44b472f9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.72
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 ========================================================================
@@ -46,7 +46,12 @@ status: ok
 
    PASSED: 4/4
 
- verdict: spectrum condition (SC1)–(SC4) exhibited on Cl(3) on Z^d.
+SCORECARD: PASS=4 FAIL=0
+
+ verdict: SC1-SC3 content (T positive Hermitian; H self-adjoint,
+          H >= 0, E_0 = 0; positive gap on this finite carrier)
+          exhibited on the finite free-staggered surface.
+          SC4 is a conditional corollary in the note, not exhibited here.
 
 ----- stderr -----
 

@@ -1,0 +1,219 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_n_f_trace_space_bounded_obstruction_record_axiom_invariance_2026_06_04.py
+runner_sha256: afbf63177e72302c689e8bb0844a862d8ad9abb11e6885c09d3ffdc9657b049b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+N_F Trace-Space Obstruction Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-nf-trace-invariance/wt
+Parent note: /private/tmp/cl3-nf-trace-invariance/wt/docs/N_F_TRACE_SPACE_BOUNDED_OBSTRUCTION_NOTE_2026-05-07_w2binary.md
+Companion source note: docs/N_F_TRACE_SPACE_BOUNDED_OBSTRUCTION_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing obstruction-localization
+      content (eight-vector enumeration + V8 bridge-step
+      obstruction localization) is invariant under the
+      2026-06-04 Record-axiom adoption (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted,
+       no closure of N_F binary admission to N_F = 1/2.
+
+Honest scoping: parent's latest archived invalidation reason
+       is dep_weakened (not axiom_premise_changed); this
+       companion is narrower than the standard axiom-
+       invalidation-cohort companion (e.g. PR #2616) and is
+       narrow Record-axiom-invariance evidence only.
+
+========================================================================
+BLOCK 1: V_3 canonical Gell-Mann trace Tr_{V_3}(T_a T_b) = (1/2) delta_{ab}
+========================================================================
+  Quantum axiom + Cl(3) color identification (cited from
+  CL3_COLOR_AUTOMORPHISM_THEOREM) + standard Lie algebra.
+  PASS Gram_V3_equals_half_identity :: max|Gram_V3 - 1/2 I| = 1.110e-16
+  PASS diag_Tr_V3_T1_squared_equals_half :: diag = 0.500000000000000
+  PASS diag_Tr_V3_T2_squared_equals_half :: diag = 0.500000000000000
+  PASS diag_Tr_V3_T3_squared_equals_half :: diag = 0.500000000000000
+  PASS diag_Tr_V3_T4_squared_equals_half :: diag = 0.500000000000000
+  PASS diag_Tr_V3_T5_squared_equals_half :: diag = 0.500000000000000
+  PASS diag_Tr_V3_T6_squared_equals_half :: diag = 0.500000000000000
+  PASS diag_Tr_V3_T7_squared_equals_half :: diag = 0.500000000000000
+  PASS diag_Tr_V3_T8_squared_equals_half :: diag = 0.500000000000000
+  PASS off_diag_Tr_V3_zero_for_a_neq_b :: max|off-diag| = 0.000e+00
+
+========================================================================
+BLOCK 2: V full-taste trace Tr_V(T_a^V T_b^V) = delta_{ab}
+========================================================================
+  V = C^4_base (x) C^2_fiber = C^8; T_a^V = T_a (x) I_2 + 0_antisym.
+  Pure index counting (Lattice + Quantum axiom content).
+  PASS Gram_V_equals_identity :: max|Gram_V - I| = 2.220e-16
+  PASS diag_Tr_V_T1_squared_equals_one :: diag = 1.000000000000000
+  PASS diag_Tr_V_T2_squared_equals_one :: diag = 1.000000000000000
+  PASS diag_Tr_V_T3_squared_equals_one :: diag = 1.000000000000000
+  PASS diag_Tr_V_T4_squared_equals_one :: diag = 1.000000000000000
+  PASS diag_Tr_V_T5_squared_equals_one :: diag = 1.000000000000000
+  PASS diag_Tr_V_T6_squared_equals_one :: diag = 1.000000000000000
+  PASS diag_Tr_V_T7_squared_equals_one :: diag = 1.000000000000000
+  PASS diag_Tr_V_T8_squared_equals_one :: diag = 1.000000000000000
+
+========================================================================
+BLOCK 3: Fiber-multiplicity ratio Tr_V / Tr_{V_3} = 2 = dim(V_fiber)
+========================================================================
+  PASS fiber_ratio_T1_equals_2 :: trV/trV3 = 2.000000000000000
+  PASS fiber_ratio_T2_equals_2 :: trV/trV3 = 2.000000000000000
+  PASS fiber_ratio_T3_equals_2 :: trV/trV3 = 2.000000000000000
+  PASS fiber_ratio_T4_equals_2 :: trV/trV3 = 2.000000000000000
+  PASS fiber_ratio_T5_equals_2 :: trV/trV3 = 2.000000000000000
+  PASS fiber_ratio_T6_equals_2 :: trV/trV3 = 2.000000000000000
+  PASS fiber_ratio_T7_equals_2 :: trV/trV3 = 2.000000000000000
+  PASS fiber_ratio_T8_equals_2 :: trV/trV3 = 2.000000000000000
+  PASS dim_V_fiber_equals_2 :: V_fiber = C^2 (per-site fiber) by Quantum-axiom content
+
+========================================================================
+BLOCK 4: Projector algebra and structural identity T_a^V . P_lepton = 0
+========================================================================
+  PASS P_color_plus_P_lepton_equals_I_V :: max|P_color + P_lepton - I| = 0.000e+00
+  PASS P_color_idempotent
+  PASS P_lepton_idempotent
+  PASS P_color_P_lepton_orthogonal
+  PASS Tr_P_color_equals_6 :: Tr(P_color) = 6.000000
+  PASS Tr_P_lepton_equals_2 :: Tr(P_lepton) = 2.000000
+  PASS T_a_V_dot_P_lepton_equals_zero_for_all_a :: max||T_a^V . P_lepton|| = 0.000e+00
+  PASS P_lepton_dot_T_a_V_equals_zero_for_all_a :: max||P_lepton . T_a^V|| = 0.000e+00
+
+========================================================================
+BLOCK 5: Anti-fundamental distinguishability (V_3 not self-dual)
+========================================================================
+  SU(3) is complex. 3-bar generators -T_a^* differ from 3 generators T_a.
+  PASS at_least_one_T_a_differs_from_minus_T_a_conj :: distinct-generator count = 5
+  PASS max_difference_norm_positive :: max||bar - T_a|| = 1.414214
+  PASS V_3_complex_rep_marked_distinct_from_3bar :: operational test: d-symbol nonvanishing in Block 6
+
+========================================================================
+BLOCK 6: d-symbol fiber inflation d_V = 2 . d_{V_3}
+========================================================================
+  PASS d_118_V3_equals_one_over_sqrt3 :: d^118_V3 = 0.5773502692 (expected 0.5773502692)
+  PASS d_146_V3_equals_one_half :: d^146_V3 = 0.5000000000 (expected 0.5000000000)
+  PASS ratio_d_V_over_d_V3_equals_2_at_118 :: ratio = 2.0000000000
+  PASS all_d_V_equals_2_d_V3_at_nonzero_entries :: max|d_V/d_V3 - 2| = 0.000e+00
+
+========================================================================
+BLOCK 7: Per-site Cl(3) bivector half-Pauli trace = (1/2) delta_{ab}
+========================================================================
+  T_k = sigma_k / 2 on per-site C^2 (Cl(3) bivector irrep).
+  This is the per-site Cl(3) side of the parent's V8 bridge step.
+  PASS Tr_C2_T_a_T_b_equals_half_delta_ab :: max|gram_C2 - 1/2 I_3| = 0.000e+00
+  PASS diag_Tr_C2_T1_squared_equals_half :: diag = 0.500000000000000
+  PASS diag_Tr_C2_T2_squared_equals_half :: diag = 0.500000000000000
+  PASS diag_Tr_C2_T3_squared_equals_half :: diag = 0.500000000000000
+  PASS Cl3_bivector_half_Pauli_anticommutation :: max||{T_i,T_j} - 1/2 delta_ij I|| = 0.000e+00
+
+========================================================================
+BLOCK 8: SU(2) sub of color-SU(3) on V_3 block trace
+========================================================================
+  (T_1, T_2, T_3) of color-SU(3) generate an SU(2) on the
+  (1,2)-block of V_3; trace on that 2-dim block matches per-site C^2.
+  PASS Tr_V3_12block_T_a_T_b_equals_half_delta_ab :: max|Gram_sub - 1/2 I_3| = 0.000e+00
+  PASS V3_12block_restrictions_equal_per_site_half_Pauli :: matching count = 3/3
+
+========================================================================
+BLOCK 9: V8 bridge-step obstruction localization (parent's open gate)
+========================================================================
+  Blocks 7 and 8 give numerically matching half-trace values:
+    Block 7: Tr_{per-site C^2}(T_a T_b) = (1/2) delta_{ab}
+    Block 8: Tr_{(1,2)-block of V_3}(T_a T_b) = (1/2) delta_{ab}
+  But they act on ALGEBRAICALLY DISTINCT C^2 spaces:
+    per-site C^2: Cl(3) irrep (Quantum axiom on a single site)
+    (1,2)-block of V_3: 2-dim subspace of V_3 (color-SU(3) acting on
+                         the symmetric base subspace of the C^4 base
+                         of V = C^4_base (x) C^2_fiber)
+
+  The parent leaves the structural identification
+    per-site C^2 = (1,2)-block of V_3
+  as an OPEN STRUCTURAL BRIDGE not derived from Cl(3) + Z^3 alone.
+  This runner reproduces the numerical matching (V8 trace agreement)
+  but DOES NOT derive the identification.
+  PASS per_site_and_V3_12block_traces_match_numerically :: both give (1/2) delta_{ab}; structural identification still open
+  PASS per_site_dim_equals_2 :: sigma_x shape = (2, 2)
+  PASS V3_12block_dim_equals_2 :: (1,2)-block of V_3 is the upper-left 2x2 of T_a 3x3 matrices
+  PASS V8_bridge_step_still_open :: per-site C^2 = (1,2)-block-of-V_3 NOT derived here; this is the parent's explicitly-open gate
+
+========================================================================
+BLOCK 10: Parent note Record-axiom usage scan (load-bearing sections)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-nf-trace-invariance/wt/docs/N_F_TRACE_SPACE_BOUNDED_OBSTRUCTION_NOTE_2026-05-07_w2binary.md
+  PASS structural_section_start_found :: start index = 1695
+  PASS structural_section_end_found :: end index = 5633
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+  PASS quantum_lattice_content_present_in_load_bearing_section :: matches >= 3: ['Cl(3)', 'Z^3', 'V_3', 'T_a', 'Gell-Mann']
+
+========================================================================
+BLOCK 11: Record-axiom counterfactual: identical numeric outputs
+========================================================================
+  PASS with_record_axiom_Tr_V3_T1_T1_well_defined :: value = 0.500000000000000
+  PASS without_record_axiom_Tr_V3_T1_T1_well_defined :: value = 0.500000000000000
+  PASS counterfactual_outputs_identical_Tr_V3_T1_T1 :: |with - without| = 0.000e+00
+  PASS with_record_axiom_Tr_V_T1_T1_well_defined :: value = 1.000000000000000
+  PASS without_record_axiom_Tr_V_T1_T1_well_defined :: value = 1.000000000000000
+  PASS counterfactual_outputs_identical_Tr_V_T1_T1 :: |with - without| = 0.000e+00
+  PASS with_record_axiom_ratio_V_over_V3_T1_well_defined :: value = 2.000000000000000
+  PASS without_record_axiom_ratio_V_over_V3_T1_well_defined :: value = 2.000000000000000
+  PASS counterfactual_outputs_identical_ratio_V_over_V3_T1 :: |with - without| = 0.000e+00
+  PASS with_record_axiom_Tr_C2_T1_T1_well_defined :: value = 0.500000000000000
+  PASS without_record_axiom_Tr_C2_T1_T1_well_defined :: value = 0.500000000000000
+  PASS counterfactual_outputs_identical_Tr_C2_T1_T1 :: |with - without| = 0.000e+00
+  PASS with_record_axiom_Tr_C2_T2_T2_well_defined :: value = 0.500000000000000
+  PASS without_record_axiom_Tr_C2_T2_T2_well_defined :: value = 0.500000000000000
+  PASS counterfactual_outputs_identical_Tr_C2_T2_T2 :: |with - without| = 0.000e+00
+  PASS with_record_axiom_Tr_C2_T3_T3_well_defined :: value = 0.500000000000000
+  PASS without_record_axiom_Tr_C2_T3_T3_well_defined :: value = 0.500000000000000
+  PASS counterfactual_outputs_identical_Tr_C2_T3_T3 :: |with - without| = 0.000e+00
+  PASS with_record_axiom_V3_12block_Tr_T1_T1_well_defined :: value = 0.500000000000000
+  PASS without_record_axiom_V3_12block_Tr_T1_T1_well_defined :: value = 0.500000000000000
+  PASS counterfactual_outputs_identical_V3_12block_Tr_T1_T1 :: |with - without| = 0.000e+00
+  PASS with_record_axiom_V3_12block_Tr_T3_T3_well_defined :: value = 0.500000000000000
+  PASS without_record_axiom_V3_12block_Tr_T3_T3_well_defined :: value = 0.500000000000000
+  PASS counterfactual_outputs_identical_V3_12block_Tr_T3_T3 :: |with - without| = 0.000e+00
+  PASS Tr_V3_T1_T1_equals_half_under_both_scopes :: = 0.500000000000000
+  PASS Tr_V_T1_T1_equals_one_under_both_scopes :: = 1.000000000000000
+  PASS ratio_equals_2_under_both_scopes :: = 2.000000000000000
+  PASS Tr_C2_T1_T1_equals_half_under_both_scopes :: = 0.500000000000000
+
+========================================================================
+BLOCK 12: Quantum and Lattice content preserved across memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-nf-trace-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-nf-trace-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_log_det_etc :: Record axiom's own scope statement excludes the bridges the parent would have needed if it used Record content
+
+========================================================================
+TOTAL PASS: 95
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing content of N_F_TRACE_SPACE_BOUNDED_OBSTRUCTION_NOTE_2026-05-07_w2binary.md
+  (eight attack vectors + V8 bridge-step obstruction localization)
+  uses ONLY Lattice + Quantum axiom content plus standard finite-
+  dimensional group/Clifford algebra. The Record axiom (additive
+  scalar record-readout functional) is neither used nor invoked.
+  Numeric outputs are identical under both 'Record axiom asserted'
+  and 'Record axiom not asserted' outer scopes. This runner does
+  not re-apply the prior audit verdict; it records that the
+  arithmetic and structural content checked here is unchanged by
+  the 2026-06-04 axiom-set adoption.
+
+The audit lane decides whether (C1) plus the now-re-promoted dep
+(cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02:
+ effective_status=retained) is sufficient to re-honor the prior
+verdict or whether a fresh per-site audit is warranted.
+
+----- stderr -----
+

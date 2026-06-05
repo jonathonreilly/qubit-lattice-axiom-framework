@@ -1,0 +1,98 @@
+runner: scripts/q1_holomorphy_hostile_restatement_2026_06_04.py
+cached: 2026-06-04 (deterministic; numpy linear algebra only, no RNG)
+SCORECARD PASS=22 FAIL=0
+VERDICT: holomorphic det_C forcing is a RESTATEMENT of the equal-block (AC_phi_lambda) measure,
+not a genuine forcing; even granting holomorphy, avoiding overreach needs a SECOND input
+(sector-discriminator) -> TWO inputs, not one. Q1 does NOT close r=1/2.
+==========================================================================================
+
+
+--- GROUND TRUTH: det_R vs det_C readings on the SAME operator H ---
+[PASS] GT0 HS metric is reading-NEUTRAL: <I,I>=<C,C>=<C^2,C^2>=3, all cross terms 0 -> doublet block = 6 (dReb^2+dImb^2)
+       gram(I,C,C^2)=
+[[3. 0. 0.]
+ [0. 3. 0.]
+ [0. 0. 3.]]  -> doublet metric block = 6*I_2 (simultaneously 'two real modes' and 'one complex mode')
+[PASS] GT1 det_R (realified / restriction-of-scalars) reading: equal power per REAL dim -> r=1 -> Q=1
+       |b|^2=1.0000, r=1.0000, Q=1.000000 (maximal hierarchy {3,0,0}-type)
+[PASS] GT2 det_C (holomorphic / doublet counted ONCE) reading: equal power per BLOCK -> r=1/2 -> Q=2/3
+       |b|^2=0.5000, r=0.5000, Q=0.666667 (the observed charged-lepton value)
+[PASS] GT3 retained Brannen functional Q=(sum lam^2)/(sum lam)^2 matches closed form (1+2r)/3 AND is phase-independent (r=1/2 -> 2/3 for any delta)
+       Q_eig=[0.454, 0.66667, 0.66667, 0.56] == Q_closed=[0.454, 0.66667, 0.66667, 0.56]; r=1/2 at two phases -> [0.666667, 0.666667] (delta drops out -> the COUNT r is the whole question)
+
+--- FRONT 1: is 'read by native division algebra' INDEPENDENT content, or AC_phi_lambda renamed? ---
+[PASS] F1a Wedderburn: R[Z_3] = R (+) C -- P_S (dim 1, EndR=R) and P_D (dim 2, EndR=C) are the 2 isotypic blocks
+       2 minimal central idempotents -> 2 blocks; the doublet block's commutant (endomorphism ring) is C (the 'native division algebra')
+[PASS] F1b 'det_C' == equal-BLOCK reading (doublet counted ONCE) -> r=1/2 -> Q=2/3 ; 'det_R' == per-real-dimension reading (doublet counted TWICE) -> r=1 -> Q=1
+       det_C: r=0.5 Q=0.6667 (=equal-block/AC_phi_lambda RENAMED); det_R: r=1.0 Q=1.0000; the ONLY difference is the mode-count of the doublet
+[PASS] F1c the algebra furnishes BOTH canonical per-block invariants: block-count (1,1) AND R-dimension (1,2); neither is privileged
+       'read by native division algebra' must ADD a rule (count blocks vs count real dims) to pick (1,1); that added rule IS the AC_phi_lambda choice -> no independent content
+[PASS] F1d circular: every C_3-/division-algebra-/HS-metric invariant computed is reading-NEUTRAL (same gram diag(3,6,6) under both readings) -> deriving r=1/2 presupposes the block-count choice
+       no computed invariant separates (1,1) from (1,2); 'det_C forced' must therefore import the choice it claims to derive
+
+--- FRONT 2: is restriction-of-scalars (det_R) an EQUALLY-canonical reading? (the strongest break) ---
+[PASS] F2a the complex block IS a real 2-space (restriction of scalars C->R^2): J_b^2=-I, so (R^2, J_b) is exactly the C-line; det_R reading just FORGETS J_b
+       Hom_R(block) (realified) and Hom_C(block) (holomorphic) are BOTH standard rep-theory readings of the same block
+[PASS] F2b J_cs is measure-NEUTRAL: exp(theta J_cs)=SO(2) preserves the real measure (det g) AND has det=1 -- it preserves det_R AND det_C; existence of J does NOT force det_C
+       a complex structure is an automorphism of BOTH its real-plane Lebesgue measure and the holomorphic volume; it cannot distinguish the two readings (matches retained find_J round 1)
+[PASS] F2c C_3 admits BOTH invariant bilinears -- symmetric I (-> det_R) and antisymmetric A=C-C^2 (-> det_C); pairing into one complex mode (det_C) is an UNFORCED choice
+       choosing the antisymmetric/symplectic pairing = choosing det_C = choosing AC_phi_lambda; the symmetric pairing (det_R) is equally C_3-invariant
+[PASS] F2d A1's NATIVE pairing is REAL (HS trace): the two doublet Hermitian directions are independent, equal-norm(=6), HS-orthogonal -> det_R default -> r=1 (det_C needs an ADDED holomorphic pairing)
+       ||C+C^2||^2=6.000, ||i(C-C^2)||^2=6.000, cross=0.00e+00; two real modes, not one complex -- the default is det_R
+[PASS] F2e VERDICT: restriction-of-scalars (det_R) is well-defined, canonical, and the A1 default -> det_C is NOT forced -> holomorphy = AC_phi_lambda convention slot RENAMED (fatal to 'genuine forcing')
+       both readings standard; J_cs preserves both; A1's native pairing is real -> det_C is the equal-block CHOICE, not a derivation
+
+--- FRONT 3: does universal holomorphy overreach, and does avoiding it require a 2nd input? ---
+[PASS] F3a universal holomorphy OVERREACHES: it predicts Q=2/3 for ALL sectors, but quarks sit at Q_down=0.731, Q_up=0.849 (far from 2/3)
+       det_C-for-all would force every sector to 2/3; observed quark Q's refute it -> holomorphy cannot be universal/forced
+[PASS] F3b the sectors form a monotone ladder det_C(2/3) -> det_R(1): leptons 0.667 < down 0.731 < up 0.849 < rank-1 democratic 1.0
+       so the det_C/det_R axis is a one-parameter family; 'which end a sector sits at' is an EXTRA datum, not fixed by Q1
+[PASS] F3c avoiding overreach REQUIRES a sector-discriminator (Dirac-vs-Majorana/chirality); so Q1 alone does NOT close r=1/2 -- the honest count is TWO inputs
+       input count: 'holomorphy forced' = 1 input but FALSIFIED by quarks; 'holomorphy + sector-discriminator' = 2 inputs (the discriminator is the chirality/Dirac-Majorana gate, NOT supplied by Q1)
+[PASS] F3d the obvious 2nd-input candidate (electric charge) is generation-BLIND: U(1) acts as scalar e^{i chi} I on the triplet, [U1,C]=0 -> cannot select det_C (and quarks carry charge yet miss 2/3)
+       the sector-discriminator must be a non-gauge structure (Dirac-vs-Majorana reality); it is a genuine SECOND import, leaving Q1 short of closure
+
+--- FRONT 4: does 'native division algebra' escape the panel's real-vs-complex convention slot? ---
+[PASS] F4a 'read by native division algebra' RESOLVES the real-vs-complex slot ONLY IF restriction-of-scalars is INVALID; but F2 showed it is valid -> the slot stays OPEN
+       the division-algebra reading is canonical iff r-of-s 'provably forgets structure' and is disallowed; it does not -- r-of-s is a standard functor -> wall (i) unbroken
+[PASS] F4b the holomorphy framing speaks to neither the faithfulness-target wall nor the quantum-Darwinism record-redundancy wall -> it does not beat the panel; same walls, new name
+       holomorphy addresses only wall (i) and fails it (F4a); walls (ii)/(iii) are orthogonal and untouched
+
+--- CONSISTENCY GUARDS ---
+[PASS] G1 Koide Q=(1+2r)/3 is monotone in r: Q(0)=1/3, Q(1/2)=2/3, Q(1)=1 (so r=1/2 vs r=1 is a genuine physical fork, not a parametrization artifact)
+       the fork det_C(r=1/2)/det_R(r=1) maps to distinct observable Q -> the choice is physically load-bearing, confirming it must be DERIVED, not assumed
+[PASS] G2 det_R end (r=1, b=a real) gives the rank-1/democratic spectrum {3,0,0} -- a DISTINCT physical mass matrix from the det_C end (3 distinct masses)
+       eigs at r=1: [-0.0, -0.0, 3.0] (one heavy + two massless) vs det_C: 3 distinct -> the two readings are physically inequivalent, not relabelings of one spectrum
+[PASS] G3 (documented) the residual det_C-vs-det_R == equal-block-vs-dimension is exactly koide_frobenius_isotype_split_uniqueness (retained_no_go): rep theory ranks NEITHER weight
+       this runner's FRONT 1/2 reproduce that residual from scratch; consistent with the retained no-go -> holomorphy cannot rank the weight rep theory leaves unranked
+
+==========================================================================================
+SCORECARD: 22/22 PASS
+==========================================================================================
+
+VERDICT PER FRONT
+  F1 RESTATEMENT : 'read by native division algebra' has NO independent content -- it == 'count the C
+                   block once' == equal-block (AC_phi_lambda) weight. The algebra furnishes BOTH a
+                   block-count (1,1) and an R-dimension (1,2) per block; picking (1,1) IS the choice,
+                   not a consequence. RESTATEMENT.
+  F2 RESTRICTION : restriction-of-scalars (det_R) is well-defined, canonical, and the A1 DEFAULT (real
+     OF SCALARS    HS pairing). The Schur complex structure J_cs preserves BOTH measures, so its
+     (FATAL)       existence does not force det_C. => det_C is a CHOICE = the equal-power choice =
+                   AC_phi_lambda. The holomorphy IS the convention slot renamed. FATAL HOLE confirmed.
+  F3 OVERREACH   : universal holomorphy predicts Q=2/3 for ALL sectors -> falsified by quarks
+                   (0.731, 0.849). Avoiding overreach REQUIRES a sector-discriminator (Dirac-vs-
+                   Majorana/chirality), which Q1 does not supply and electric charge cannot be
+                   (generation-blind). HONEST INPUT COUNT = TWO (holomorphy + discriminator), not one.
+  F4 PANEL       : 'native division algebra' = the real-vs-complex convention slot the panel flagged,
+                   renamed. restriction-of-scalars keeps the slot OPEN. Walls (ii)/(iii) untouched.
+                   Does NOT beat the panel.
+
+TWO KEY FINDINGS
+  (1) GENUINE-or-RESTATEMENT: RESTATEMENT. Restriction-of-scalars is an equally-canonical (indeed the
+      default) reading, so det_C is a choice == AC_phi_lambda renamed; Q1 does NOT close r=1/2.
+  (2) ONE-INPUT-or-TWO: TWO. Holomorphy alone overreaches (falsified by quarks); avoiding overreach
+      needs a sector-discriminator (Dirac-vs-Majorana). So even granting holomorphy, Q1 needs a second
+      independent input -- it is not a one-input closure.
+
+(claim_type=meta; sets no audit status. Verdict labels are conclusions from the arithmetic above.)
+

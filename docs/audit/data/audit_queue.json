@@ -3,7 +3,7 @@
     "critical": 269,
     "high": 284,
     "leaf": 433,
-    "medium": 347
+    "medium": 346
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16722,32 +16722,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-        "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
-        "gauge_vacuum_plaquette_distinct_shell_theorem_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.322,
-      "note_path": "docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
-      "transitive_descendants": 9
     },
     {
       "audit_independence_required": "any_non_self",
@@ -39892,6 +39866,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 122,
-  "total_pending": 1333
+  "ready_count": 121,
+  "total_pending": 1332
 }

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
-runner_sha256: e536150e66fdd3d041cd023d8ed1d807484a65a65314994ee34b9f71b49d2f8f
+runner_sha256: acb3a6171eb01408654809217d2606f5cfe1c8a6050d0ec2fb7c646c483b6185
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 108.04
+elapsed_sec: 100.74
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -23,7 +23,7 @@ V1. exact free-Haar plaquette moments
 
 Enumerating connected leaf-free GF(3)-closable supports (capped at size 6) ...
   GF(3)-closable contributing supports by size: {5: 4}
-  (leaf-free supports by size, diagnostic):     {4: 28, 5: 452, 6: 5966}   (19.8s)
+  (leaf-free supports by size, diagnostic):     {4: 28, 5: 452, 6: 5966}   (18.2s)
 
 V2. order-beta^5 coefficient (cited anchor)
   [PASS] per-shell connected cumulant = 2*(1/6)^6*3^(V-E) = 1/18^5 (note Thm 4)
@@ -64,12 +64,11 @@ EXACT CONNECTED COEFFICIENTS OF Delta(beta) = P_full - P_1plaq:
    d_5 = 1/472392 = 2.11688598e-06
    d_6 = 7/5668704 = 1.23485015e-06
 ==============================================================================
-SCORECARD: PASS=18 FAIL=0   (107.6s)
+SCORECARD: PASS=18 FAIL=0   (100.3s)
 ==============================================================================
 This is an exact strong-coupling series coefficient (bounded result).
-It does NOT close beta=6. The exact d_7 (optimized engine) falsifies
-the single-ratio tadpole/geometric ansatz
-(d_7/d_6 = 5/21 != d_6/d_5 = 7/12); drop
+It does NOT close beta=6. The exact d_7 falsifies the single-ratio
+tadpole/geometric ansatz (d_7/d_6 = 5/21 != d_6/d_5 = 7/12); drop
 {6:7/5668704, 7:5/17006112} into the harness
 scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py for the
 SUPPORT/FALSIFY scorecard line.

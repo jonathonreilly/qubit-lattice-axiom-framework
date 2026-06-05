@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 633 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1331 |
+| unaudited | 1330 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 970 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1615 |
+| `unaudited` | 1614 |
 
 | claim_type | count |
 |---|---:|
@@ -1107,6 +1107,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2090,6 +2091,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The displayed Green-kernel normalization, flux calculation, effective-potential derivatives, L^2 elimination, and integer sign classification are algebraically consistent under the note's stated conventions. The conclusion is bounded to the continuum potential/effective-potential setup and does not claim a framework-internal gravity derivation or full Bertrand theorem closure.
 - **rationale:** The load-bearing stability step is a genuine algebraic closure over the in-packet continuum Green-kernel and effective-potential setup, not a renaming or numerical fit. Independent formula inventory confirms the radial Laplacian power law, S_{d-1} normalization, unit -grad flux, attractive potential shape, derivative signs, second-derivative reduction, and d=3/d=4/d>=5 sign classification. The runner source performs finite algebraic checks rather than merely printing constants, and no cited authority is missing or non-retained because the claim is scoped as a bounded continuum calculation.
 - **auditor confidence:** high
+
+### `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact order-beta^6 coefficient d_6 = 7/5668704 for Delta(beta), plus the claimed GF(3) reduction of the order-beta^7 distinct-support search to four cube-shell multiplicity terms.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-182245-8c97b37c93-beta6_plaquette_connected_be`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's load-bearing step is that GF(3) support enumeration/cycle-space certification leaves only the four cube shells, and exact connected-cumulant multiplicity evaluation gives per shell d_6 = 7/22674816, hence d_6 = 7/5668704.  _(class `C`)_
+- **chain closes:** False — The d_6 arithmetic and completed V0-V4/V4b runner checks are internally consistent. The full scoped claim also needs the Section 3c order-beta^7 GF(3) cycle-space certificate, but the supplied completed stdout is a default maxorder=6 run without V5, and the runner source packet is truncated/source-drifted around later d_7/d_8 claims.
+- **rationale:** The displayed rational arithmetic checks out: 18^5 = 1889568, four shells give d_5 = 1/472392, and four times 7/(12*18^5) gives d_6 = 7/5668704 with ratio d_6/d_5 = 7/12. The runner output supports the order-6 coefficient path through exact Haar-integrator validations, size-6 support exclusion, and two-engine d_6 agreement. However, the source note's second load-bearing claim is the order-7 support reduction, and the provided completed run does not execute the V5 cycle-space certificate needed for that claim. The runner artifact also contains source/output drift about exact d_7 and d_8 values while the note says no d_7 value is certified, so the full bounded theorem should not be marked clean from this packet.
+- **auditor confidence:** medium
 
 ### `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31`
 

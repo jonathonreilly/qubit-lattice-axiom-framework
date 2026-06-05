@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 164 |
 | **retained_no_go** | 175 |
-| **retained_bounded** | 627 |
+| **retained_bounded** | 628 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1354 |
+| unaudited | 1353 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 955 |
+| `audited_clean` | 956 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1638 |
+| `unaudited` | 1637 |
 
 | claim_type | count |
 |---|---:|
@@ -1084,6 +1084,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16185,6 +16186,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25`
+
+- **Note:** [`YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md`](../../docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact denominator-side W/Z response rows on the neutral one-Higgs carrier ray, including source-reparameterization invariance and explicit radial-Jacobian recovery, with no top, y_t, physical-scale g_2(v), or positive Y_T closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-173634-3e09d04237-yt_strict_wz_neutral_carrier`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Differentiating the retained EW formulas M_W(s)=g_2 v(s)/2 and M_Z(s)=sqrt(g_2^2+g_Y^2) v(s)/2 gives dM_W/ds=(g_2/2)v'(s), dM_Z/ds=(sqrt(g_2^2+g_Y^2)/2)v'(s), and W/Z response ratio g_2/sqrt(g_2^2+g_Y^2).  _(class `A`)_
+- **chain closes:** True — The audited W/Z denominator result follows by ordinary differentiation and cancellation from the retained EW mass formulas once the neutral carrier-ray surface is supplied. The open top coefficient, top carrier/hypercharge, and physical-scale g_2 issues are outside this bounded claim and are explicitly excluded.
+- **rationale:** The load-bearing math is a genuine class A algebraic closure over retained-grade inputs: the EW theorem supplies the mass formulas and the carrier-ray authority supplies the neutral radial surface. Independent checking confirms the derivative factors, W/Z ratio, source-coordinate chain-rule invariance, projector signs, and Q-neutral tangent. The runner source performs symbolic differentiation/projection checks plus artifact and scope checks; it does not rely on numerical tuning, observed masses, or a hard-coded contested value. The clean verdict is limited to the bounded W/Z denominator support row.
 - **auditor confidence:** high
 
 ### `yt_ward_identity_derivation_theorem`

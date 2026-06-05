@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | high | `unaudited` | 165 |
 | critical | `unaudited` | 163 |
-| medium | `unaudited` | 96 |
+| medium | `unaudited` | 95 |
 | critical | `audited_conditional` | 4 |
 | critical | `open_gate` | 3 |
 | high | `audited_conditional` | 3 |
@@ -30,7 +30,7 @@ publication tables phrase it.
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 445
+**Total non-retained-grade rows in publication tables:** 444
 
 ## Per-row breakdown
 
@@ -445,7 +445,6 @@ publication tables phrase it.
 | medium | `pmns_chart_constants_retention_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `pmns_graph_commutant_cycle_value_boundary_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `pmns_right_polar_section_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
-| medium | `q_integer_spectrum_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `quark_bimodule_norm_naturality_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

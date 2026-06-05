@@ -1,9 +1,18 @@
 # P1 I_S Lattice-PT Citation and Bound Note (Composite H_unit Scalar-Bilinear Matching)
 
 **Date:** 2026-04-17
-**Status:** proposed_retained citation-and-bound layer on top of the prior P1 symbolic decomposition. The framework-specific value of the 1-loop Brillouin-zone integral `I_S` for the composite scalar bilinear `H_unit = (1/sqrt(N_c N_iso)) Σ ψ̄ψ` on the tadpole-improved Wilson-plaquette + staggered-Dirac canonical surface is not re-derived here. Its published-literature range for the closest analogue (tadpole-improved staggered scalar density on Wilson plaquette action at `β ≃ 6`) is cited, the associated framework-specific P1 contribution is recomputed at `α_LM = 0.0907`, and the outcome is compared to the packaged `1.92%` nominal that the obstruction budget currently carries.
+**Claim type:** bounded support note
+**Type:** conditional / support
 **Runner:** `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`
-**Log:** `logs/retained/yt_p1_i_s_lattice_pt_citation_2026-04-17.log`
+
+This is a conditional citation/support layer on top of the prior P1 symbolic
+decomposition. The framework-specific value of the 1-loop Brillouin-zone
+integral `I_S` for the composite scalar bilinear
+`H_unit = (1/sqrt(N_c N_iso)) Σ ψ̄ψ` on the tadpole-improved Wilson-plaquette +
+staggered-Dirac canonical surface is not re-derived here. Its
+published-literature range for the closest analogue is cited, the associated
+P1 contribution is recomputed at `α_LM = 0.0907`, and the outcome is compared
+to the packaged `1.92%` nominal that the obstruction budget currently carries.
 
 ## Authority notice
 
@@ -228,7 +237,7 @@ between references by `O(1)` because of differing conventions on:
 - whether the plaquette `β = 6` or a slightly different value (`β = 6.0` vs `β = 6.2`, etc.)
   is used as the tadpole reference.
 
-**Citation confidence.** This note treats the range `I_S ∈ [4, 10]` as the **retained cited
+**Citation confidence.** This note treats the range `I_S ∈ [4, 10]` as the **conditional cited
 bracket** for the tadpole-improved surface closest to the framework canonical surface, with
 a **central estimate** `I_S ≃ 6`. The precise per-reference number is **not** claimed; what
 is claimed is the **bracket** and the qualitative fact that the composite-`H_unit` matching

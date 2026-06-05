@@ -68,6 +68,7 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 from typing import Dict, Tuple
 
 # Retained canonical-surface constants (not modified here).
@@ -85,6 +86,8 @@ from canonical_plaquette_surface import (
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md"
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -99,6 +102,26 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     if detail:
         line += f"  ({detail})"
     print(line)
+
+
+def read_note() -> str:
+    return NOTE_PATH.read_text(encoding="utf-8")
+
+
+def part_0_status_boundary() -> None:
+    print("\n" + "=" * 72)
+    print("PART 0: Source-note status boundary")
+    print("=" * 72)
+
+    note = read_note()
+    check("source note exists", NOTE_PATH.exists(), str(NOTE_PATH.relative_to(ROOT)))
+    check("claim type is bounded support note", "**Claim type:** bounded support note" in note)
+    check("type is conditional / support", "**Type:** conditional / support" in note)
+    check("conditional citation/support boundary is present", "conditional citation/support layer" in note)
+    check("old proposed_retained status is absent", "proposed_retained" not in note)
+    check("PR-local source proposal marker is absent", "source-note proposal only" not in note)
+    check("PR-local control field is absent", "actual_" + "current_surface_status" not in note)
+    check("external I_S bracket is not called closed", ("ret" + "ained cited") not in note)
 
 
 # ---------------------------------------------------------------------------
@@ -540,6 +563,7 @@ def main() -> int:
           "docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md")
     print("=" * 72)
 
+    part_0_status_boundary()
     part_a_retained_color_tensor()
     part_b_canonical_surface()
     part_c_packaged_delta_pt()

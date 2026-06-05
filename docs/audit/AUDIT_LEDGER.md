@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 179 |
-| **retained_bounded** | 639 |
+| **retained_bounded** | 640 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 979 |
+| `audited_clean` | 980 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1601 |
+| `unaudited` | 1600 |
 
 | claim_type | count |
 |---|---:|
@@ -288,6 +288,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3746,6 +3747,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The arithmetic budget follows from the cited retained_bounded moving-source rows by taking nonzero absolute minima and dividing by three. The note also correctly leaves the absolute lab NV budget open because the proxy-to-readout transfer coefficient is missing.
 - **rationale:** The runner hard-codes the retained upstream geometry and scaling rows, then performs only standard arithmetic reductions: nonzero minima, maxima, and division by three. There is no first-principles compute and no external comparator check. Because the chain reduces to a single retained_bounded parent claim plus algebraic processing, the appropriate conservative verdict is audited_decoration rather than audited_clean.
 - **decoration parent:** `moving_source_retarded_portability_note`
+- **auditor confidence:** high
+
+### `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25`
+
+- **Note:** [`DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md`](../../docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the specified finite-k runner geometry k=6.0, L_x=40, L_y=60, source at y_mid, and mass offset +7, the exact normalized centroid derivative at M=0 has signs negative for d=1,2 and positive for d=3,4,5, with the M=0.005 probe showing the same sign pattern.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-190008-52b8601938-dimension_selection_finite_k`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Differentiating the finite layer-normalized propagator gives an exact centroid derivative at M=0 whose sign is negative for d <= 2 and positive for d >= 3 in the specified runner geometry.  _(class `C`)_
+- **chain closes:** True — The displayed derivative identities are correct finite-dimensional differentiations of A_x(M) and z/||z||, and an independent dense-matrix recomputation confirms the derivative and finite-probe sign table. The closure is bounded to the stated runner geometry only.
+- **rationale:** The runner source computes the finite-k derivative from the stated lattice propagator and does not hard-code the derivative table values. The normalization derivative, probability derivative, centroid derivative, and table signs check out independently by dense matrix construction rather than the runner's slice-based implementation. The note's non-claims correctly prevent promotion to full retained dimension selection, uniform-M control, all-parameter control, or axiom rewrite.
 - **auditor confidence:** high
 
 ### `dimensional_gravity_table`

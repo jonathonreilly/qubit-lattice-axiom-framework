@@ -66,9 +66,9 @@ Run the repo-native physics review loop from:
   such as `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` as theorem/lane
   names, table labels, claim scopes, runner headlines, or review findings.
   Use names such as `Quantum` / `one-qubit operator algebra` (the local algebra
-  fixed by `MINIMAL_AXIOMS_2026-06-04.md`, equivalently
+  fixed by `MINIMAL_AXIOMS_2026-06-05.md`, equivalently
   `physical Cl(3,0) ≅ M_2(ℂ)`), `Lattice` / `Z^3 lattice`,
-  `Record` / finite scalar record additivity,
+  `Record` / durable realized-outcome readout,
   `Koide Frobenius-equipartition condition`, or `Lie type A_1`; the
   `M_2(ℂ)` / `Cl(3,0)` / qubit names are co-equal labels for the
   same retained algebra-isomorphism class. Keep shorthand only as a
@@ -97,12 +97,13 @@ Run the repo-native physics review loop from:
   Whole-file checkout is allowed only for new paths or paths proven unchanged
   on current `main` since the PR base.
 - The repo baseline is the three named axioms in
-  `MINIMAL_AXIOMS_2026-06-04.md`: Lattice (`Z^3` with nearest-neighbor
+  `MINIMAL_AXIOMS_2026-06-05.md`: Lattice (`Z^3` with nearest-neighbor
   cubic adjacency), Quantum (one-qubit operator algebra
-  `M_2(ℂ) ≅ Cl(3,0)` at each site), and Record (additive finite scalar record
-  readout). Name them explicitly; do not compress them to bare `A1` / `A2` /
-  `A3` labels. Do not classify that baseline as a new axiom, new admitted
-  premise, regulator interpretation, or optional theory language. Do not let
+  `M_2(ℂ) ≅ Cl(3,0)` at each site), and Record (durable realized-outcome
+  readout with finite scalar additivity). Name them explicitly; do not compress
+  them to bare `A1` / `A2` / `A3` labels. Do not classify that baseline as a
+  new axiom, new admitted premise, regulator interpretation, or optional
+  theory language. Do not let
   that baseline silently promote separate species identifications, selectors,
   P2/modulus, log-det structure, source/action bridges, empirical matches, or
   parent theorem/status surfaces.

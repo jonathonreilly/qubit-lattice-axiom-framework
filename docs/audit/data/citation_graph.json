@@ -43859,7 +43859,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "3682c8685f585eeb4e6c184bbe7e58726ee0fae74ca4b286e6d95e5ecb982907",
+      "note_hash": "1c099d23dae3ae4bd8536234c9218a0121e54bdbb33d6173711e5c98e7f7954b",
       "path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
       "runner_path": null,
       "title": "Admitted-Input Registry \u2014 Tier A (Central Index of Named Non-Axiom Admissions)"
@@ -44924,7 +44924,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5294ace28d87c75e9b4f2a3c18854269b9aafb1f3b5a884d7ba2cb9187934d92",
+      "note_hash": "60e37f60f84f2e440fafb837a385bd197bce799a8de656bd3219396c95f78082",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -45055,7 +45055,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "86d55f5443060903f0df3d96ab74746fe279a23b7cb0d76e8098d92564434b20",
+      "note_hash": "9fdaee17e36ece6f57beb6431b63790a92688a11c83a374e1f90f261bc059c5b",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -45070,7 +45070,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "924b9042cdd8afeff337c729a1c90725c89b694e47b08ad2c6b97974ce2d91d8",
+      "note_hash": "25e351be6f0ff436ea56cc9064b794a7608d0c71fe644c5d7c39119e90c75ea5",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -65514,7 +65514,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "57abeb139f5dc4e94889e5da22c15870ae9e1fdf8aef375017c79bb5a57c6750",
+      "note_hash": "2a8f4dd986a3b7263876082f2f06fcd64fbc58aa2ce9814741a87c219bc6307f",
       "path": "docs/KEY_TERMINOLOGY.md",
       "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology"
@@ -72310,8 +72310,8 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802",
-      "path": "docs/MINIMAL_AXIOMS_2026-06-04.md",
+      "note_hash": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-05.md",
       "runner_path": "scripts/audit_companion_three_axiom_clean_base_exact.py",
       "title": "Minimal Framework Axioms (Lattice, Quantum, Record)"
     },
@@ -82314,7 +82314,7 @@
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "57f44311998066b96dd22076d9eadd8a291ef1cbe0a34d96f7d3ca14fa9d563f",
+      "note_hash": "3d331036b7c2647f093d3b69c2b9c361298addc8471dc7f6dfabdc83605a7a77",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"

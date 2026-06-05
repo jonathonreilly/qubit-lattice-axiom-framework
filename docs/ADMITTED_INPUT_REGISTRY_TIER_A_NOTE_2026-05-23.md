@@ -24,10 +24,10 @@ needs a yet-to-be-found mechanism). This is deliberately **separate** from:
   auditing/re-grounding, not a new mechanism). That backlog is the
   conditional-dependency frontier (see Appendix), not an admission.
 
-Current registry basis (2026-06-04): Record/P1 scalar additivity is no longer a
-Tier-A admission. It is included in the explicitly approved three-axiom
-`minimal_axioms` node, with the narrow Record boundary stated in
-`docs/MINIMAL_AXIOMS_2026-06-04.md`. The older
+Current registry basis (2026-06-05): Record is no longer a Tier-A admission.
+It is included in the explicitly approved three-axiom `minimal_axioms` node,
+with the durable realized-outcome boundary stated in
+`docs/MINIMAL_AXIOMS_2026-06-05.md`. The older
 `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not promoted: it remains a broader
 conditional parent carrying readout/log-det/modulus material beyond Record.
 
@@ -48,14 +48,17 @@ AC_φλ naming, explicitly **not** counted as admitted inputs (see
 | **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1); also unsolved in the Standard Model |
 
 Notes:
-- **Record/P1 scalar additivity retired from Tier A (2026-06-04).** The
-  owner-approved Record axiom states only that a finite scalar record
-  functional is additive over disjoint record collections, with an explicit
-  additive-baseline convention. It does not import P2/modulus, log-det,
-  source/action, measurement, Born weights, dynamics, normalization, scale, or
-  arbitrary observable identification. The old P1 parent note is therefore not
-  an axiom authority; rows that need only Record should cite
-  `MINIMAL_AXIOMS_2026-06-04.md`, while rows that need the older parent's
+- **Record retired from Tier A (2026-06-05).** The owner-approved Record axiom
+  is durable registration of the realized outcome in a supplied readout
+  context; the realized outcome is the `K`/CPT orbit of the realized central
+  sector, and scalar readout is finitely additive over finite pairwise-disjoint
+  record collections. It does not supply the readout context, decomposition,
+  `K`/CPT structure, sector-generation rule, weighting, normalization,
+  probability, measurement/decoherence dynamics, time metric, within-sector
+  data, occupancy rule, P2/modulus, log-det, source/action, scale, or arbitrary
+  observable identification. The old P1 parent note is therefore not an axiom
+  authority; rows that need only Record should cite
+  `MINIMAL_AXIOMS_2026-06-05.md`, while rows that need the older parent's
   additional readout/log-det content must cite separate retained authorities or
   remain bounded/pending.
 - **AC_φλ — de-named (the labeling itself is not an input).** The gate states
@@ -134,10 +137,10 @@ correct move is to drop *both* as vacuous conventions, not merge them.)
 
 Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
 
-- **Record/P1 scalar additivity:** retired from Tier A and included in the
-  approved `minimal_axioms` node as the narrow Record axiom. This retirement
-  does not promote the old `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` parent,
-  which contains additional non-axiom material.
+- **Record:** retired from Tier A and included in the approved
+  `minimal_axioms` node as the narrow durable realized-outcome axiom. This
+  retirement does not promote the old `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
+  parent, which contains additional non-axiom material.
 - **θ and AC_φλ:** stand as genuine admitted derivation targets (θ shared with
   the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
 - **Scale reference:** removed from Tier A and registered as the
@@ -152,8 +155,8 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   θ=0 remains a genuine admission (shared with the SM).
 
 Net stratified by character: **two dimensionless Tier-A admissions** —
-AC_φλ (framework-specific physics) and θ (an SM-shared problem). Record/P1
-scalar additivity is axiom content only in its narrow finite-readout form. The
+AC_φλ (framework-specific physics) and θ (an SM-shared problem). Record is
+axiom content only in its narrow durable realized-outcome form. The
 scale-reference primitive is the single scale-setting every physical theory
 takes, orthogonal to all of them, and cannot supply any dimensionless number.
 
@@ -218,7 +221,7 @@ not irreducible admissions, and must not be conflated with the Tier-A registry.
 
 - `docs/audit/data/axiom_premise_nodes.json` — the existing axiom-premise
   registry this Tier-A registry parallels.
-- `MINIMAL_AXIOMS_2026-06-04.md` (Lattice, Quantum, Record),
+- `MINIMAL_AXIOMS_2026-06-05.md` (Lattice, Quantum, Record),
   `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` (older conditional P1 parent, not
   an axiom-premise node), `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   (AC_φλ parent),

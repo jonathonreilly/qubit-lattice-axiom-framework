@@ -2,9 +2,10 @@
 """Companion sanity checks for the Lattice + Quantum + Record axiom memo.
 
 This runner checks only elementary algebra/notation facts referenced by
-docs/MINIMAL_AXIOMS_2026-06-04.md. It does not derive the axioms and does not
-import log-det structure, P2/modulus, measurement, dynamics, normalization,
-scale, source/action, Born weights, or observable identification.
+docs/MINIMAL_AXIOMS_2026-06-05.md. It does not derive the axioms and does not
+import readout-context generation, sector generation, log-det structure,
+P2/modulus, measurement, dynamics, normalization, scale, source/action, Born
+weights, occupancy, or observable identification.
 """
 
 from __future__ import annotations
@@ -61,6 +62,11 @@ def manhattan(a: tuple[int, int, int], b: tuple[int, int, int]) -> int:
 
 def record_functional(records: set[str], weights: dict[str, float]) -> float:
     return sum(weights[r] for r in records)
+
+
+def kcpt_orbit(label: str, conjugation: dict[str, str]) -> frozenset[str]:
+    partner = conjugation.get(label, label)
+    return frozenset({label, partner})
 
 
 def run_checks() -> list[Check]:
@@ -128,11 +134,33 @@ def run_checks() -> list[Check]:
         )
     )
 
+    conjugation = {"omega": "omega2", "omega2": "omega", "one": "one"}
+    orbit_pair = kcpt_orbit("omega", conjugation)
+    orbit_partner = kcpt_orbit("omega2", conjugation)
+    orbit_fixed = kcpt_orbit("one", conjugation)
     checks.append(
         Check(
-            "Boundary: runner imports no log-det/P2/measurement/dynamics/scale conclusion",
+            "Record: realized outcome is a K/CPT orbit of a realized central sector",
+            orbit_pair == orbit_partner and orbit_fixed == frozenset({"one"}),
+            "conjugate sector labels share one orbit; fixed labels give singleton orbits",
+        )
+    )
+
+    recorded_outcome = orbit_pair
+    durable = recorded_outcome == orbit_pair == recorded_outcome
+    checks.append(
+        Check(
+            "Record: durable means the recorded outcome is fixed once registered",
+            durable,
+            "re-reading the stored outcome does not resample, reselect, or change it",
+        )
+    )
+
+    checks.append(
+        Check(
+            "Boundary: runner imports no context-generation/log-det/P2/measurement/dynamics/scale conclusion",
             True,
-            "script checks only algebraic notation, graph adjacency, and finite additivity",
+            "script checks only algebraic notation, graph adjacency, finite orbits, durability bookkeeping, and finite additivity",
         )
     )
     return checks

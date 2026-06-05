@@ -79,11 +79,16 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   premises only when already registered in
   `docs/audit/data/axiom_premise_nodes.json`; they satisfy dependency closure
   without making downstream rows `retained_bounded`. The current axiom baseline
-  is Lattice, Quantum, and Record; Record means only finite scalar record
-  additivity and does not import P2/modulus, log-det, source/action,
-  measurement, Born weights, dynamics, normalization, scale, or arbitrary
-  observable identification. The scale-reference primitive is the approved
-  units primitive, not a Tier-A admission or a bounded Planck import. Do not
+  is Lattice, Quantum, and Record; Record means durable registration of the
+  realized outcome in a supplied readout context, where the realized outcome is
+  the `K`/CPT orbit of the realized central sector and scalar readout is
+  finitely additive over finite pairwise-disjoint record collections. Record
+  does not supply the readout context, decomposition, `K`/CPT structure,
+  sector-generation rule, weighting, normalization, probability,
+  measurement/decoherence dynamics, time metric, within-sector data, occupancy
+  rule, P2/modulus, log-det, source/action, scale, or arbitrary observable
+  identification. The scale-reference primitive is the approved units
+  primitive, not a Tier-A admission or a bounded Planck import. Do not
   recognize, add, or imply any new axiom or new primitive without explicit user
   approval and a reviewed registry/policy update.
 - If the author family appears to be Codex and the current auditor is Codex, do not let the current context self-ratify a clean result. Restart the claim in a distinct restricted-input sub-agent when sub-agents are available, and record a clean result only as `independence: fresh_context` with a distinct `auditor` identity if `apply_audit.py` accepts it. If no sub-agent is available, skip clean application and report that a non-Codex, human, or fresh-context agent audit is required.

@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=a3a66f310c7e16ba06c312bb21c228a47d36e98a7dccdd05d097ca88ce659e26 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=19684b245175048c145786b14842a87a39e527871fa84a4f3dfab7fa4c2f62b2 -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
@@ -15,13 +15,13 @@ their content here, and do not override their wording from here.
 | Layer | Source-of-truth doc | Governs |
 |---|---|---|
 | 0. Front-door A-Z lookup | `docs/KEY_TERMINOLOGY.md` | Single-page A-Z index of every repo-canonical term with a one-line definition and a pointer to its source-of-truth doc. The reader entry-point above all layers below; an index, not an authority. New terms enter the index only after the source-of-truth doc accepts them. |
-| 1. Framework substantive | `docs/MINIMAL_AXIOMS_2026-06-04.md` (supersedes the 2026-05-20 qubit-reframe memo) | Framework primitives the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor cubic adjacency), Quantum (one qubit at every site, equivalently the one-site operator algebra `A_x ≅ M_2(ℂ)`, equivalently `Cl(3,0)` as a real algebra), Record (finite scalar record readout additive over disjoint record collections), the definition of `A_min`, and the status of prior `A3` / `A4` / `A5` as open gates rather than axioms. Changes only when a framework-level science decision changes. |
+| 1. Framework substantive | `docs/MINIMAL_AXIOMS_2026-06-05.md` (supersedes the 2026-06-04 Record memo) | Framework primitives the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor cubic adjacency), Quantum (one qubit at every site, equivalently the one-site operator algebra `A_x ≅ M_2(ℂ)`, equivalently `Cl(3,0)` as a real algebra), Record (durable realized-outcome readout with finite scalar additivity), the definition of `A_min`, and the status of prior `A3` / `A4` / `A5` as open gates rather than axioms. Changes only when a framework-level science decision changes. |
 | 2. External paper text | [`docs/ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md`](../ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md), [`docs/ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md`](../ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md) | Verbatim reusable disclosure paragraphs for papers, preprints, and talks. The framing paragraph is the short paper-facing form; the accountability disclosure is the longer package-level form. Both carry their own usage guidance (e.g. replacing `[repo URL]`, narrowing the tool list when only one was used). |
 | 3. Operational (this doc) | `docs/repo/CONTROLLED_VOCABULARY.md` | Status taxonomy, claim-strength labels, audit-lane field enums, repair classes, filename conventions, archival paths, topic language, and paper-facing prose voice — the working vocabulary used inside the repo across ledgers, tables, notes, runners, skills, and PR descriptions. |
 | 4. Methodology framing (adjacent) | `docs/AI_METHODOLOGY_NOTE_2026-04-25.md` | The curated front-door note for the methodology lane. Defines how to talk about the AI / methodology side at the project level. |
 
 For a single-term lookup (layer 0), use `KEY_TERMINOLOGY.md`. For
-framework primitives (layer 1), cite `MINIMAL_AXIOMS_2026-06-04.md` — do
+framework primitives (layer 1), cite `MINIMAL_AXIOMS_2026-06-05.md` — do
 not redefine Lattice, Quantum, Record, `Cl(3)`, `Z^3`, or `A_min` here. For external paper text
 (layer 2), use the canonical framing paragraph and the accountability
 disclosure verbatim — do not paraphrase. This doc governs layer 3 only.
@@ -554,7 +554,7 @@ primitives**, not process vocabulary. Per
 is disjoint from physics. The canonical home for these names and the
 policy governing their use is:
 
-- `docs/MINIMAL_AXIOMS_2026-06-04.md` — the framework primitives themselves (Lattice, Quantum, Record, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-05-20.md`
+- `docs/MINIMAL_AXIOMS_2026-06-05.md` — the framework primitives themselves (Lattice, Quantum, Record, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-06-04.md`
 - [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) — the binding rules around proposing extensions (`Axiom*`)
 
 Do not redefine, alias, or document these names here.

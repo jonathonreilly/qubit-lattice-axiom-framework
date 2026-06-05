@@ -1,0 +1,156 @@
+Hadron Lane 1 Confinement-To-Mass Firewall: Record-Axiom Invariance
+Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-hadron-lane1-invariance/wt
+Parent note: /private/tmp/cl3-hadron-lane1-invariance/wt/docs/HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_NOTE_2026-04-27.md
+Companion source note: docs/HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing structural firewall content
+      (channel-coefficient separation, GMOR dependency structure,
+       nucleon-gate dependency list, import-class accounting) is
+      invariant under the 2026-06-04 Record-axiom adoption.
+
+Scope: pure audit-companion evidence; no theorem claim, no status
+       promotion, no Record-axiom content asserted.
+  PASS parent_note_present :: /private/tmp/cl3-hadron-lane1-invariance/wt/docs/HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_NOTE_2026-04-27.md
+
+========================================================================
+BLOCK 1: Channel coefficient c_pi = m_pi / sqrt(sigma) ~= 0.29
+========================================================================
+  PASS c_pi_value_at_2sf :: c_pi = 0.290280 (parent target ~= 0.29)
+  PASS c_pi_positive_and_dimensionless :: c_pi in (0, 1) as expected
+  PASS c_pi_uses_only_PDG_comparator_and_bounded_scale :: no Record-axiom content used in the ratio computation
+
+========================================================================
+BLOCK 2: Channel coefficient c_p = m_p / sqrt(sigma) ~= 2.02
+========================================================================
+  PASS c_p_value_at_2sf :: c_p = 2.017785 (parent target ~= 2.02)
+  PASS c_p_positive_and_above_unity :: c_p > 1 (proton mass is several confinement scales)
+  PASS c_p_uses_only_PDG_comparator_and_bounded_scale :: no Record-axiom content used in the ratio computation
+
+========================================================================
+BLOCK 3: Channel coefficient separation c_p / c_pi >> 1
+========================================================================
+  PASS ratio_above_threshold_5 :: c_p / c_pi = 6.9512 (>> 1, channel-dependent)
+  PASS ratio_matches_proton_pion_observed :: ratio = m_p/m_pi = 6.951178 (sqrt(sigma) cancels exactly)
+  PASS coefficient_separation_proves_firewall_premise :: confinement alone cannot supply both channel coefficients
+
+========================================================================
+BLOCK 4: GMOR identity m_pi^2 f_pi^2 = (m_u + m_d) Sigma
+========================================================================
+  GMOR variables: {m_pi, f_pi, (m_u+m_d), Sigma}
+  4-variable linear equation; knowledge of any 3 leaves the
+  4th underdetermined absent external input.
+  PASS gmor_4_variables :: variable count = 4
+  PASS gmor_invertible_in_4th_variable :: Sigma_solved = 2.203e+07 (algebraic check only)
+  PASS framework_retains_zero_chiral_SB_inputs :: no retained {m_u, m_d, f_pi, Sigma} in current ledger
+  PASS gmor_dep_f_pi_independent :: not derivable from confinement + sqrt(sigma)
+  PASS gmor_dep_m_u+m_d_independent :: Lane 3 firewall blocks retention
+  PASS gmor_dep_Sigma_independent :: chiral condensate; Lane 1 target, unretained
+
+========================================================================
+BLOCK 5: Nucleon-gate dependency enumeration (4 items)
+========================================================================
+  PASS nucleon_gate_token_present_Lane_3 :: 'Lane 3' present in parent note
+  PASS nucleon_gate_token_present_running_matching :: 'running/matching' present in parent note
+  PASS nucleon_gate_token_present_correlator_extraction :: 'correlator extraction' present in parent note
+  PASS nucleon_gate_token_present_spectral_coefficient :: 'spectral coefficient' present in parent note
+  PASS nucleon_gate_all_4_tokens_found :: 4 / 4 dependency tokens present
+
+========================================================================
+BLOCK 6: Inputs And Import Roles table import-class tokens
+========================================================================
+  PASS import_class_token_retained_structural_theorem :: 'retained structural theorem' present in parent's import-role table
+  PASS import_class_token_bounded_bridge :: 'bounded bridge' present in parent's import-role table
+  PASS import_class_token_retained_quantitative_lane :: 'retained quantitative lane' present in parent's import-role table
+  PASS import_class_token_open_dependency :: 'open dependency' present in parent's import-role table
+  PASS import_class_token_comparator :: 'comparator' present in parent's import-role table
+  PASS import_class_all_5_tokens_found :: 5 / 5 import-class tokens present
+
+========================================================================
+BLOCK 7: 'What This Retires' three retired implications
+========================================================================
+  PASS retired_implication_confinement :: 'confinement => retained hadron masses' present in parent note
+  PASS retired_implication_bounded_sqrt(sigma) :: 'bounded sqrt(sigma) => retained m_pi or m_p' present in parent note
+  PASS retired_implication_standard_lattice-QCD_methodology_ex :: 'standard lattice-QCD methodology exists => framework has derived m_p' present in parent note
+  PASS retired_implications_all_3_present :: 3 / 3 retired implications present
+
+========================================================================
+BLOCK 8: Safe-wording: 'Can claim' + 'Cannot claim' lists
+========================================================================
+  PASS safe_wording_section_present :: '## Safe Wording' section present
+  PASS can_claim_marker_present :: 'Can claim:' marker present
+  PASS cannot_claim_marker_present :: 'Cannot claim:' marker present
+  PASS can_claim_has_at_least_4_items :: can_items = 4
+  PASS cannot_claim_has_at_least_4_items :: cannot_items = 4
+
+========================================================================
+BLOCK 9: Static-source scan: zero Record-axiom tokens in load-bearing sections
+========================================================================
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+  PASS firewall_content_present_in_load_bearing_section :: firewall tokens >= 4: ['confinement', 'sqrt(sigma)', 'c_pi', 'c_p', 'GMOR']
+
+========================================================================
+BLOCK 10: Record-axiom counterfactual: identical numeric output
+========================================================================
+  PASS counterfactual_c_pi_identical :: |c_pi_with - c_pi_without| = 0.000e+00
+  PASS counterfactual_c_p_identical :: |c_p_with - c_p_without| = 0.000e+00
+  PASS with_record_axiom_c_pi_at_target :: c_pi_with = 0.290280
+  PASS with_record_axiom_c_p_at_target :: c_p_with = 2.017785
+  PASS without_record_axiom_c_pi_at_target :: c_pi_without = 0.290280
+  PASS without_record_axiom_c_p_at_target :: c_p_without = 2.017785
+
+========================================================================
+BLOCK 11: Quantum and Lattice content preserved across memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-hadron-lane1-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-hadron-lane1-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical qubit / Cl(3,0) local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_firewall_bridges :: Record axiom's own scope statement excludes the bridges that would be needed to discharge the firewall's open premises
+
+========================================================================
+BLOCK 12: Channel-coefficient rounding stability on sqrt(sigma)
+========================================================================
+  PASS c_pi_at_sqrt_sigma_460 :: c_pi = 0.293435 at sqrt(sigma) = 460.0
+  PASS c_p_at_sqrt_sigma_460 :: c_p = 2.039717 at sqrt(sigma) = 460.0
+  PASS c_pi_at_sqrt_sigma_465 :: c_pi = 0.290280 at sqrt(sigma) = 465.0
+  PASS c_p_at_sqrt_sigma_465 :: c_p = 2.017785 at sqrt(sigma) = 465.0
+  PASS c_pi_at_sqrt_sigma_470 :: c_pi = 0.287191 at sqrt(sigma) = 470.0
+  PASS c_p_at_sqrt_sigma_470 :: c_p = 1.996319 at sqrt(sigma) = 470.0
+  PASS ratio_invariant_under_sqrt_sigma_rounding :: ratios = [6.951177952289227, 6.951177952289228, 6.951177952289229]
+
+========================================================================
+TOTAL PASS: 59
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The structural firewall content of HADRON_LANE1_CONFINEMENT_TO_MASS_FIREWALL_NOTE_2026-04-27.md
+  (channel-coefficient separation m_H = c_H * sqrt(sigma); the
+  illustrative c_pi ~= 0.29, c_p ~= 2.02; the GMOR dependency
+  structure; the nucleon-gate dependency enumeration; the
+  import-class accounting table) uses ONLY the Lattice + Quantum
+  axiom content (preserved verbatim across the 2026-05-20 and
+  2026-06-04 memos) plus standard finite-precision arithmetic
+  and standard ledger reading. The Record axiom (additive scalar
+  record-readout functional) is neither used nor invoked.
+  Numeric output is identical under both 'Record axiom asserted'
+  and 'Record axiom not asserted' outer scopes. This runner does
+  not re-apply any prior audit verdict; it records that the
+  arithmetic and structural-scan checks here are unchanged by
+  the 2026-06-04 axiom-set adoption.
+
+  The three upstream open dependencies the parent explicitly
+  names (Lane 3 light-quark masses; hadronic-scale running /
+  matching and correlator extraction; per-channel dimensionless
+  spectral coefficients c_H) remain open exactly as in the
+  parent note. The parent's two 'Hypothesis set used' open gates
+  (staggered-Dirac realization, g_bare = 1) are unchanged by
+  this companion.
+
+The audit lane decides whether to honor or re-test prior verdicts
+on the new minimal_axioms premise hash.

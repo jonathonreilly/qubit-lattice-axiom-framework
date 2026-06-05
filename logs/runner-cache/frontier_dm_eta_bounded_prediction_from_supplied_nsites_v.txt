@@ -1,21 +1,29 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py
-runner_sha256: 03d7dc7ec15f12c0772000bff73caed916a521e598a8db2ac481c11bdc6735be
+runner_sha256: ea70be3efbe95b445112a5dc3972029c70f8469120cec88bcdfce471a43496c6
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================
-DM eta bounded prediction from supplied N_sites · v premise
+DM eta conditional support from supplied N_sites · v premise
 ========================================================================
 
 Section 1: chain authority audits
 ------------------------------------------------------------------------
 [PASS] Note exists at expected path  --  DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md
-[PASS] Note claim type is bounded_theorem
+[PASS] Note claim type is bounded support note
+[PASS] Note type is conditional / support
+[PASS] Old bounded_theorem header is absent
 [PASS] Note status authority is independent audit lane only
-[PASS] Note proposal_allowed: false
+[PASS] Note records conditional support over supplied premise packet
+[PASS] Note omits source-side status control phrase: source-note proposal only
+[PASS] Note omits source-side status control phrase: actual_current_surface_status
+[PASS] Note omits source-side status control phrase: conditional_surface_status
+[PASS] Note omits source-side status control phrase: proposal_allowed
+[PASS] Note omits source-side status control phrase: audit_required_before_effective_retained
+[PASS] Note omits source-side status control phrase: bare_retained_allowed
 [PASS] R_base authority exists  --  R_BASE_GROUP_THEORY_DERIVATION authority
 [PASS] R_base = 31/9 stated in authority
 [PASS] eta_188 authority exists  --  ETA_188_STRUCTURAL_ORIGIN authority
@@ -103,14 +111,17 @@ Section 9: note-text records audit-companion vs load-bearing classification
 
 Section 10: status discipline
 ------------------------------------------------------------------------
-[PASS] Note's YAML status declaration is narrow_bounded_theorem
-[PASS] Note declares bare_retained_allowed: false
-[PASS] Note declares audit_required_before_effective_retained: true
+[PASS] Note keeps source-side status control absent: source-note proposal only
+[PASS] Note keeps source-side status control absent: actual_current_surface_status
+[PASS] Note keeps source-side status control absent: conditional_surface_status
+[PASS] Note keeps source-side status control absent: proposal_allowed
+[PASS] Note keeps source-side status control absent: audit_required_before_effective_retained
+[PASS] Note keeps source-side status control absent: bare_retained_allowed
 [PASS] Note does NOT use bare 'proposed_retained' or 'retained:' status language
 
 ========================================================================
-TOTAL: PASS=68 FAIL=0
-VERDICT: bounded prediction passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
+TOTAL: PASS=79 FAIL=0
+VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
 
 ----- stderr -----
 

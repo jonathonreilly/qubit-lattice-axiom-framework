@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 177 |
 | **retained_no_go** | 187 |
-| **retained_bounded** | 663 |
+| **retained_bounded** | 664 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 32 |
-| unaudited | 1257 |
+| unaudited | 1256 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1020 |
+| `audited_clean` | 1021 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1541 |
+| `unaudited` | 1540 |
 
 | claim_type | count |
 |---|---:|
@@ -470,6 +470,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_strong_field_observable_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_weak_connectivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -6943,6 +6944,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cached runner completes and matches the source frozen result: exact grid and no-restore label-NN are 12/12 TOWARD with F~M=1.00, while no-restore KNN+floor is 0/12 with F~M=0.00. Current ledger deps are retained-bounded; older dependency-status prose in the source is historical and not status authority.
 - **rationale:** The row closes as a bounded finite-harness certificate. The runner constructs the three families, swaps the connectivity rule, propagates amplitudes, and computes the centroid/F~M readout rather than merely printing constants. The verdict is limited to sharpening the connectivity bottleneck on this declared comparison; it does not ratify primitive-to-gravity readout or full Gate-B package survival.
 - **auditor confidence:** medium
+
+### `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure-gauge Wilson plaquette action in temporal gauge U_0=I with Θ(t,x)=(-1-t,x): the P_+/P_-/P_mixed decomposition, S_+ reality and Θ-invariance on C_sym, and reflection-Hermiticity for symmetrized OS observables.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-231611-5e672d360d-gauge_os_step1_wilson_plaque`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By the disjoint plaquette partition and the Θ-bijection of the two half-spaces, S_W[U] = S_+(U) + Θ(S_+)(U) + S_mixed(U).  _(class `A`)_
+- **chain closes:** True — Within the stated temporal-gauge bounded scope, the plaquette partition is disjoint and exhaustive, and Θ maps P_+ to P_- up to orientation reversal, which leaves Re Tr unchanged. The only load-bearing cited authority for mixed-plaquette temporal-gauge factorization is retained.
+- **rationale:** The load-bearing decomposition is a genuine algebraic closure from the Wilson action definition, the Θ action, and retained mixed-kernel temporal-gauge factorization. D2 follows from Re Tr being real and from restricting to Θ-fixed configurations; D3 follows by the explicit symmetrization F(U)=f(U)+conj(f(ΘU)) and Θ²=id. The runner source performs nontrivial finite SU(3) enumeration and link-matrix checks rather than printing constants, and the independent formula check finds no hidden numerical tuning or renaming step.
+- **auditor confidence:** high
 
 ### `gauge_scalar_temporal_completion_theorem_note`
 

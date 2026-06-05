@@ -1,0 +1,14 @@
+[PASS] Berezin finite Gaussian gives det(M) once Grassmann variables are supplied
+       berezin=4.971000; det=4.971000
+[PASS] ordinary cross-site qubit ladders commute
+[PASS] Jordan-Wigner dressing realizes cross-site CAR as a generator change
+[PASS] local dimension two is shared by fermions and hard-core bosons
+[PASS] signed determinant and unsigned permanent are distinct statistics choices
+       det=4.971000; permanent=5.947000
+[PASS] Gamma_chi is an internal-generation object distinct from spatial CAR
+       Gamma_chi commutes with the tested C3-equivariant mass operator
+
+SCORECARD PASS=6 FAIL=0
+FINDING: the determinant-amplitude gate localizes to FS, an owner-approved cross-site fermionic-statistics admission.
+The three baseline axioms do not force FS in these finite checks; approved axioms and primitives are dependency premises, not grade sources.
+Koide generation chirality remains a separate internal-factor residual.

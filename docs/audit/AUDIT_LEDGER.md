@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 664 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1252 |
+| unaudited | 1251 |
 | meta | 284 |
-| ~~audited_numerical_match~~ | 15 |
+| ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
 | ~~audited_conditional~~ | 74 |
 | ~~audited_failed~~ | 4 |
@@ -64,9 +64,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
-| `audited_numerical_match` | 15 |
+| `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1536 |
+| `unaudited` | 1535 |
 
 | claim_type | count |
 |---|---:|
@@ -1335,6 +1335,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
+| `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -8314,6 +8315,22 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The massless staggered chirality operator anticommutes with the Hermitian staggered Dirac matrix on the stated finite bulk surface, pairing every nonzero eigenvalue lambda with -lambda so sum sign(lambda)=0; separately, 2^(1-d)=1/(2d)=1-eta(d)/zeta(d) is equivalent to 2^(d-2)=d and has the unique integer solution d=4.  _(class `A`)_
 - **chain closes:** True — Manual check: anticommutation {Gamma5,D}=0 implies +/- eigenvalue pairing, and the stated L_t=2,4 spectra have nonzero uniform |lambda|^2, so the signed eta sum vanishes. The rational identity check reduces A=B=C to 2^(d-2)=d, with d=2,3 nonzero residuals and monotonic positivity for d>=5. The no-go discipline gate does not block because the verdict ratifies only this exact bare-bulk obstruction and leaves the five alternative APS routes open.
 - **rationale:** The row closes as a bounded scoping theorem, not as an APS no-go. The exact finite bulk surface has +/- spectral pairing, so the bare APS eta signed sum is zero and cannot supply eta_APS/2=1/8 there. The 1/8 rational identities are not independent witnesses because their equality reduces to the already retained d=4 integer-alignment theorem. The source's N1-N8 discipline is adequate for the audited scope: Wilson/domain-wall mass, nontrivial gauge backgrounds, boundary geometry, spectral flow, and residue corrections are explicitly left open rather than foreclosed.
+- **auditor confidence:** high
+
+### `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`
+
+- **Note:** [`HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded numerical diagnostic that the finite APBC Dirac runner computes R ~= 1.154690 at chosen lattice parameters, verifies the displayed root/structural arithmetic, and shows R^(-1/4) is much closer than R^(-1/16) to the imported C_obs.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-232552-3dd0b06097-hierarchy_dimensional_compre`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Among the two compression candidates probed, the dimension-4 fourth-root R^(-1/4) is in the few-percent range of the imported C_obs, while the direct sixteenth-root R^(-1/16) is too small.  _(class `G`)_
+- **chain closes:** False — The displayed arithmetic checks out: the finite-matrix ratio gives the stated roots, and the endpoint identities in the cited authority are internally consistent. The chain does not close as theorem-grade physics because the effective-potential-density / det-to-v insertion bridge fixing sign, placement, and exponent remains open, and C_obs is an imported comparator.
+- **rationale:** The runner source genuinely builds and inverts the finite staggered Dirac operator rather than printing the condensate ratio, and its five PASS gates are intra-framework arithmetic or code-transparency guards with no observed-target PASS condition. However, the note's load-bearing conclusion is still a numerical ordering/closeness statement at selected inputs against an imported electroweak prefactor. The cited endpoint note also explicitly leaves Bridge 2, the physical dimension-4 insertion into the electroweak scale map, open. This supports audited_numerical_match, not audited_clean.
+- **open / conditional deps cited:**
+  - `HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
+  - `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`
 - **auditor confidence:** high
 
 ### `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`

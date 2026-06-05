@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 269,
-    "high": 293,
+    "high": 292,
     "leaf": 433,
     "medium": 367
   },
@@ -7745,31 +7745,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.585,
-      "note_path": "docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py",
-      "transitive_descendants": 23
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17704,6 +17679,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
+        "koide_q_readout_factorization_theorem_2026-04-22",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_fisher_rao_spherical_reorganization.py",
       "transitive_descendants": 2
     },
     {
@@ -27872,34 +27875,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
-        "koide_q_readout_factorization_theorem_2026-04-22",
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_fisher_rao_spherical_reorganization.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -28371,6 +28346,34 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "koide_q_readout_factorization_theorem_2026-04-22",
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py",
+      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -29768,6 +29771,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_readout_channel_map_note_2026-05-31",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_readout_channel_map_2026_05_31.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "koide_reality_type_permitted_not_forced_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -29817,6 +29846,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_three_measures_three_observables_note_2026-05-31",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/KOIDE_THREE_MEASURES_THREE_OBSERVABLES_NOTE_2026-05-31.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_three_measures_three_observables_2026_05_31.py",
       "transitive_descendants": 0
     },
     {
@@ -30493,6 +30548,35 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
+        "three_generation_observable_theorem_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_z_n_spectral_asymmetry_physical_identification.py",
       "transitive_descendants": 0
     },
     {
@@ -31876,34 +31960,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_bougerol_lacroix_staggered_blocking_submult_tautological_bound.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
-        "koide_q_readout_factorization_theorem_2026-04-22",
-        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py",
       "transitive_descendants": 1
     },
     {
@@ -36643,32 +36699,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_readout_channel_map_note_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_readout_channel_map_2026_05_31.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_records_objectivity_conditional_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36862,32 +36892,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_koide_berry_phase_theorem.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_three_measures_three_observables_note_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_THREE_MEASURES_THREE_OBSERVABLES_NOTE_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_three_measures_three_observables_2026_05_31.py",
       "transitive_descendants": 0
     },
     {
@@ -40579,37 +40583,8 @@
       "ready": false,
       "runner_path": "scripts/frontier_z_n_asymmetry_finite_vs_continuum_separation.py",
       "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
-        "three_generation_observable_theorem_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_z_n_spectral_asymmetry_physical_identification.py",
-      "transitive_descendants": 0
     }
   ],
-  "ready_count": 129,
-  "total_pending": 1362
+  "ready_count": 133,
+  "total_pending": 1361
 }

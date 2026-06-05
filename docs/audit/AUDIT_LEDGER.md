@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 163 |
 | **retained_no_go** | 174 |
-| **retained_bounded** | 624 |
+| **retained_bounded** | 625 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1360 |
+| unaudited | 1359 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 950 |
+| `audited_clean` | 951 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1644 |
+| `unaudited` | 1643 |
 
 | claim_type | count |
 |---|---:|
@@ -177,6 +177,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1964,6 +1965,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
 - **auditor confidence:** medium
+
+### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-dimensional Z_N equivariant spectral-asymmetry well-definedness/path invariance and the finite admissible local cyclotomic weight-sum evaluation, especially L_3(1,2)=2/9 with repeated-weight alternatives 1/9.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-172555-1eaf3fac01-axiom_first_z_n_equivariant_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For N=3 and admissible weights (1,2), (omega - 1)(omega^2 - 1)=3, so L_3(1,2)=(1/3)(1/3+1/3)=2/9.  _(class `A`)_
+- **chain closes:** True — The finite eta statement follows from simultaneous invariant finite eigenspaces and finite character traces in Z[zeta_N]. The N=3 local weight calculation closes by the cyclotomic identity 1+omega+omega^2=0 and the stated admissibility condition prevents denominator zeros.
+- **rationale:** The load-bearing step is a genuine finite algebraic identity, not a definition, renaming, tuned numerical match, or external comparator. The admissible-weight repair correctly excludes composite-N nonunit denominator singularities, and for N=3 all nonzero weights are units. The cited minimal axiom memo is flagged as an accepted premise and is not load-bearing for the cyclotomic evaluation; the C3 parent is retained_bounded and only supports the selected weight pattern, not an open physical identification.
+- **auditor confidence:** high
 
 ### `background_independence_note`
 

@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_scalar_trace_tensor_record_invariance_2026_06_04.py
+runner_sha256: c235b4e3038e2a545f49be3ecf9dc19faa8aa1da15d8cc1a4029a734a6dd55b8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.80
+status: ok
+----- stdout -----
+========================================================================
+Scalar-trace tensor record-invariance hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md
+Parent runner: scripts/frontier_scalar_trace_tensor_nogo.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS parent_claim_type_expected
+PASS parent_runner_path_expected
+PASS parent_current_criticality_expected
+PASS parent_current_load_expected :: load=7.172
+PASS parent_note_hash_expected
+PASS parent_note_hash_matches_ledger
+PASS parent_runner_hash_expected
+PASS parent_deps_exact :: count=3
+PASS parent_helper_loader_declared
+PASS parent_current_row_unresolved
+PASS parent_load_bearing_block_present
+PASS parent_load_bearing_contains_witness_phrase_0
+PASS parent_load_bearing_contains_witness_phrase_1
+PASS parent_load_bearing_contains_witness_phrase_2
+PASS parent_load_bearing_contains_witness_phrase_3
+PASS parent_load_bearing_contains_witness_phrase_4
+PASS parent_load_bearing_omits_record_axiom_terms
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_tally_present
+PASS parent_runner_pass_count_six :: pass_count=6
+PASS parent_runner_fail_count_zero :: fail_count=0
+PASS parent_runner_total_count_six :: total=6
+PASS record_marker_true_exit_zero :: returncode=0
+PASS record_marker_does_not_change_parent_output
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_verdict_change
+PASS companion_keeps_helper_boundary
+PASS companion_marks_axioms_not_support
+========================================================================
+SUMMARY: PASS=31 FAIL=0
+========================================================================
+
+----- stderr -----
+

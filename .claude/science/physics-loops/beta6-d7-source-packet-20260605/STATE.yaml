@@ -19,4 +19,5 @@ result_summary:
   d7: "5/17006112"
   d7_over_d6: "5/21"
   manifest: "SUMMARY: BETA6 D7 SOURCE PACKET PASS=38 FAIL=0"
-next_exact_action: "Open review PR; independent auditor decides whether the source packet retires the runner-artifact blocker."
+review_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2674"
+next_exact_action: "Independent auditor decides whether the source packet retires the runner-artifact blocker."

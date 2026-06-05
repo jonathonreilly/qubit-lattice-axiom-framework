@@ -1,0 +1,70 @@
+==============================================================================
+Q1 KEYSTONE, ANGLE B -- holomorphy: sector-dependent or overreach?
+==============================================================================
+
+[A] Signed/det_R readout identity Q(r) = (1+2r)/3
+[PASS] A1 Q = (1+2r)/3 exactly (symbolic)
+[PASS] A2 Q=2/3 <=> r=1/2 (det_C point)
+[PASS] A3 Q=1 <=> r=1 (det_R default)
+[PASS] A4 numeric signed Q matches (1+2r)/3
+       max err = 2.22e-16
+[PASS] A5 singular-value readout breaks the identity off the sign-homog window
+
+[O] Overreach test: J_cs exists for EVERY sector but does not force det_C
+[PASS] O1 J_cs is a complex structure, [J_cs,C]=0, unique up to sign (Schur)
+[PASS] O2 exp(theta J_cs)=SO(2) preserves BOTH det_R and det_C measures
+       |det-1|=1.11e-15, |[U,J]|=1.11e-16
+[PASS] O3 'J_cs-existence forces det_C' would force r=1/2 for ALL sectors (falsified)
+
+[D/M] Dirac vs Majorana discriminator -- generation-blind
+[PASS] DM1 Dirac 'i' restricts to central i*I_3 on generation index (spectator)
+[PASS] DM2 continuous Dirac centralizer commutes with C -> cancels in r
+       r unchanged from 0.1538
+[PASS] DM3 C3 admits BOTH symmetric (det_R) and antisymmetric (Pfaffian) invariant bilinears -> reality structure is an INPUT, not C3-forced
+[PASS] DM4 Dirac/Majorana reality op factorizes as (spin/Nambu) (x) I_gen -> does NOT set the generation-doublet measure
+
+[chi] Chirality discriminator -- orthogonal to holomorphy, NOT the same binary
+[PASS] chi1 det_C generator G_U1 COMMUTES with Gamma_chi (on-block)
+       |[G,Gamma]|=3.13e-17
+[PASS] chi2 G_U1 is C3-equivariant ([G,C]=0)
+       |[G,C]|=0.00e+00
+[PASS] chi3 chiral orbit-splitting grading is OFF-block (has anticommutant) -- a distinct object from G_U1
+[PASS] chi4 holomorphy bit and chirality bit are INDEPENDENT (coverage-audit 'same binary' claim refuted)
+
+[color] Color / weak-isospin discriminator -- generation-blind
+[PASS] color1 color factor U_c (x) I_gen leaves generation r fixed
+       r=0.2257
+[PASS] color2 quark r set by the Fourier modulus, not by color; only r moves Q (monotone)
+
+[N] No-overreach / sector-distinctness
+[PASS] N1 Q(r)=(1+2r)/3 strictly monotone -> distinct r give distinct Q
+[PASS] N2 three sectors land at distinct dial points; leptons exactly r=1/2
+       (r_lep,r_up,r_nu)=(0.500,0.528,0.100)
+[PASS] N3 overreach (universal r=1/2) excluded by distinctness
+[PASS] N4 det_C/det_R is a TWO-POINT question on a continuum: quarks sit strictly between (not det_R), neutrinos below; only leptons on r=1/2
+
+--- SIDECAR S2 (illustrative, NOT load-bearing) ---
+Sector readouts under the signed Q = sum(m)/(sum sqrt m)^2 form;
+r = (3Q - 1)/2.  PDG masses used only to show DISTINCT dial points.
+   charged leptons : Q ~ 0.6667   r = (3Q-1)/2 ~ 0.5000
+   up quarks       : Q ~ 0.8489   r = (3Q-1)/2 ~ 0.7734
+   down quarks     : Q ~ 0.7316   r = (3Q-1)/2 ~ 0.5974
+   (neutrinos: Q depends on hierarchy/absolute scale; Q<2/3 i.e. r<1/2 in
+    normal-ordering fits -- distinct dial point, not r=1/2.)
+   --> three+ DISTINCT dial points; no universal r. (sidecar only)
+
+[PASS] S2 sidecar empirical readout shows >=3 distinct dial points (illustrative)
+==============================================================================
+SCORECARD 23/23 PASS
+==============================================================================
+
+VERDICT: NOT-CLEANLY-SECTOR-DEPENDENT and NOT-OVERREACHING.
+ - The holomorphic (det_C, r=1/2) reading is NOT forced by J_cs's existence
+   (which is sector-INDEPENDENT and measure-neutral), so it does not overreach
+   to predict r=1/2 in every sector.
+ - None of {Dirac/Majorana, chirality, color} cleanly sets the GENERATION-index
+   readout: Dirac/Majorana and color factorize as (.) (x) I_gen (generation-blind);
+   chirality COMMUTES with the holomorphy generator (independent binary).
+ - The per-sector dial value r is therefore a SEPARATE per-sector modulus input
+   (the same free modulus the charged-lepton lane already isolates), not a
+   consequence of a clean Dirac/chirality/color discriminator.

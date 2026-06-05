@@ -616,20 +616,39 @@ def test_V7_FFtilde_proxy_construction_rejection():
     N_cfgs = 20
     theta = 0.5
 
-    # Formula guard:
-    #   (theta/2) * (Tr U_P - Tr U_P^dag) = i theta Im Tr U_P
-    # is the imaginary action slot rejected by (P4).
-    # By contrast,
-    #   i * theta * (Tr U_P - Tr U_P^dag) / 2 = -theta Im Tr U_P
-    # is real-valued and is not the V7 rejection target.  V7 therefore tests
-    # the real topological-density proxy Q = sum_P Im Tr U_P inserted as
-    # S = S_W + i theta Q.
+    # Correct convention, fixed here and in the note:
+    #   Q_lat = sum_P (Tr U_P - Tr U_P^dag)/(2i) = sum_P Im Tr U_P  (real)
+    #   S_theta = i * theta * Q_lat                                 (imaginary)
+    # The previous drift i*theta*(Tr U_P - Tr U_P^dag)/2 is the real term
+    # -theta*Im Tr U_P, so this gate explicitly guards against that mistake.
+    max_form_dev = 0.0
+    min_buggy_gap = np.inf
+    for _ in range(20):
+        z = np.trace(random_su3(rng))
+        q_density = (z - np.conj(z)) / (2j)
+        s_correct_a = 1j * theta * z.imag
+        s_correct_b = 1j * theta * q_density
+        s_correct_c = theta * (z - np.conj(z)) / 2.0
+        s_buggy = 1j * theta * (z - np.conj(z)) / 2.0
+        max_form_dev = max(
+            max_form_dev,
+            abs(q_density.imag),
+            abs(s_correct_a - s_correct_b),
+            abs(s_correct_a - s_correct_c),
+            abs(s_correct_a.real),
+        )
+        min_buggy_gap = min(min_buggy_gap, abs(s_correct_a - s_buggy))
 
-    rng2 = np.random.default_rng(2026052507)
+    check(
+        "V7.0  convention guard: Q=(Tr U-Tr U^dag)/(2i), S_theta=i theta Q; extra-i drift differs",
+        max_form_dev < 1e-12 and min_buggy_gap > 1e-6,
+        f"max form deviation = {max_form_dev:.2e}; min gap to buggy extra-i form = {min_buggy_gap:.4e}",
+    )
+
     rejected_v2 = 0
     im_S_v2 = []
     for cfg in range(N_cfgs):
-        U = random_gauge_config_4d(L_s, L_t, rng2)
+        U = random_gauge_config_4d(L_s, L_t, rng)
         Q = sum_im_tr_plaquettes(U, L_s, L_t)  # real
         S_iThetaQ = 1j * theta * Q  # imaginary
         im_S = abs(S_iThetaQ.imag)
@@ -679,8 +698,12 @@ def test_V7_FFtilde_proxy_construction_rejection():
 
     check(
         "V7   F~F-proxy term iθQ rejected at action-functional + Boltzmann-factor levels",
-        rejected_v2 >= int(0.95 * N_cfgs) and bf_rejected >= int(0.95 * N_cfgs) and real_count == N_cfgs,
-        "Triple confirmation: Im S != 0, Im BF != 0, theta=0 control",
+        max_form_dev < 1e-12
+        and min_buggy_gap > 1e-6
+        and rejected_v2 >= int(0.95 * N_cfgs)
+        and bf_rejected >= int(0.95 * N_cfgs)
+        and real_count == N_cfgs,
+        "Convention guard plus triple confirmation: Im S != 0, Im BF != 0, theta=0 control",
     )
 
 
@@ -745,12 +768,12 @@ def test_V8_compose_with_g_bare_rescaling():
     )
 
     # Confirm: the scoped matching premise produces beta = 6 as the canonical Wilson coefficient.
-    # This is not a retained-authority import; it is the explicit boundary of this bounded packet.
+    # This is not a status import; it is the explicit boundary of this bounded packet.
 
     check(
         "V8   Scoped beta-matching consistency: beta = 6 from N_c = 3",
         T_gram_max_dev < 1e-12 and abs(beta_derived - 6.0) < 1e-12,
-        "Canonical Wilson coefficient checked as a scoped premise, not imported retained authority",
+        "Canonical Wilson coefficient checked as a scoped premise, not imported status",
     )
 
 
@@ -770,7 +793,7 @@ def main() -> int:
         " Companion runner to:\n"
         "   docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md\n"
         " Parent target: docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md\n"
-        " (audited_conditional, judicial-panel verdict; first of two missing bridges)\n"
+        " (conditional parent verdict; first of two missing bridges)\n"
         "\n"
         " 8 verification gates exhibiting canonical ansatz selection on SU(3).\n"
     )

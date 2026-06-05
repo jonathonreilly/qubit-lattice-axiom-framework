@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/GROWN_TRANSFER_BASIN_TARGETED.py
+runner_sha256: 19089808bd7da4858df99b4c6bb5a5cfd0065b6baf10f1cb480cf90add364bf8
+timeout_sec: 2400
+exit_code: 0
+elapsed_sec: 901.90
+status: ok
+----- stdout -----
+============================================================================================
+GROWN TRANSFER BASIN TARGETED
+  narrow neighborhood around the prior grown-row positives
+============================================================================================
+rows: [(0.15, 0.6), (0.2, 0.6), (0.2, 0.7), (0.25, 0.8)]
+
+drift restore         zero      neutral         plus     exp           g0     F0    F05      toward  signed complex  both
+--------------------------------------------------------------------------------------------------------------------------------
+ 0.15    0.60   +0.000e+00   +0.000e+00   -1.918e-04   1.000   +1.918e-04  1.000  1.000      (3, 0)    True    True  True
+ 0.20    0.60   +0.000e+00   +0.000e+00   -1.919e-04   1.000   +1.920e-04  1.000  1.000      (3, 0)    True    True  True
+ 0.20    0.70   +0.000e+00   +0.000e+00   -1.913e-04   1.000   +1.913e-04  1.000  1.000      (3, 0)    True    True  True
+ 0.25    0.80   +0.000e+00   +0.000e+00   -1.875e-04   1.000   +1.875e-04  1.000  1.000      (3, 0)    True    True  True
+
+SAFE READ
+  nearby rows surviving both observables: 4/4
+  the prior grown-row positives survive on a narrow nearby basin
+
+----- stderr -----
+

@@ -1,0 +1,157 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_dm_abcc_five_basin_record_axiom_invariance_2026_06_04.py
+runner_sha256: e4550a4d8b3b3098be30f1ea187fc27e5eab47ae831b062b52abef3d6726cdaf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+DM A-BCC Five-Basin Chamber+DPLE Support Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-dm-abcc-invariance/wt
+Parent note: /private/tmp/cl3-dm-abcc-invariance/wt/docs/DM_ABCC_FIVE_BASIN_CHAMBER_DPLE_SUPPORT_THEOREM_NOTE_2026-04-21.md
+Companion source note: docs/DM_ABCC_FIVE_BASIN_CHAMBER_DPLE_SUPPORT_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing finite arithmetic
+      (corrected chamber survivors, F_4 selector on all five
+      basins, and chamber ∩ F_4 = {Basin 1}) is invariant
+      under the 2026-06-04 Record-axiom adoption.
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: Parent data fingerprint (basin tuples, H_BASE, T's, GAMMA)
+========================================================================
+  PASS five_basins_present :: basins = ['Basin 1', 'Basin 2', 'Basin N', 'Basin P', 'Basin X']
+  PASS GAMMA_equals_one_half :: GAMMA = 0.5
+  PASS chamber_threshold_sqrt_8_over_3 :: E1 = sqrt(8/3) = 1.632993161855
+  PASS H_BASE_hermitian :: max|H_BASE - H_BASE^dagger| = 0.000e+00
+  PASS H_BASE_det_finite :: det(H_BASE) = +5.028315
+  PASS T_M_real :: max|Im T_M| = 0.000e+00
+  PASS T_D_real :: max|Im T_D| = 0.000e+00
+  PASS T_Q_real :: max|Im T_Q| = 0.000e+00
+  PASS det_Basin_1_matches_parent_table :: computed = +0.9592, parent table = +0.9590, ratio = 1.0002
+  PASS det_Basin_N_matches_parent_table :: computed = +0.5669, parent table = +0.5670, ratio = 0.9998
+  PASS det_Basin_P_matches_parent_table :: computed = -9.8609, parent table = -9.8610, ratio = 1.0000
+  PASS det_Basin_2_matches_parent_table :: computed = -70538.6038, parent table = -70538.6000, ratio = 1.0000
+  PASS det_Basin_X_matches_parent_table :: computed = -20296.1065, parent table = -20296.1000, ratio = 1.0000
+
+========================================================================
+BLOCK 2: Chamber filter q_+ + delta >= sqrt(8/3) on five basins
+========================================================================
+  PASS chamber_Basin_1 :: q+delta = 1.648848 vs threshold 1.632993 -> IN
+  PASS chamber_Basin_N :: q+delta = 1.279459 vs threshold 1.632993 -> OUT
+  PASS chamber_Basin_P :: q+delta = 0.103471 vs threshold 1.632993 -> OUT
+  PASS chamber_Basin_X :: q+delta = 14.769263 vs threshold 1.632993 -> IN
+  PASS chamber_Basin_2 :: q+delta = 25.734000 vs threshold 1.632993 -> IN
+  PASS chamber_survivor_set_equals_corrected_three :: survivors = ['Basin 1', 'Basin 2', 'Basin X'], expected = ['Basin 1', 'Basin 2', 'Basin X']
+
+========================================================================
+BLOCK 3: Cubic coefficient reconstruction p(t) = det(H_BASE + t J_B)
+========================================================================
+  PASS cubic_reconstruction_Basin_1 :: max |p(t) - sum c_k t^k| = 5.551e-15 (scale 3.932e+01)
+  PASS cubic_reconstruction_Basin_N :: max |p(t) - sum c_k t^k| = 7.994e-15 (scale 2.841e+01)
+  PASS cubic_reconstruction_Basin_P :: max |p(t) - sum c_k t^k| = 8.882e-15 (scale 3.765e+01)
+  PASS cubic_reconstruction_Basin_X :: max |p(t) - sum c_k t^k| = 2.910e-11 (scale 2.694e+04)
+  PASS cubic_reconstruction_Basin_2 :: max |p(t) - sum c_k t^k| = 1.746e-10 (scale 8.586e+04)
+
+========================================================================
+BLOCK 4: Basin 2 DPLE discriminant negativity
+========================================================================
+  PASS basin_2_discriminant_negative :: Delta_2 = c_2^2 - 3 c_1 c_3 = -1.939245e+07
+  PASS basin_2_discriminant_within_1pct_of_parent_quoted :: Delta_2 = -1.939245e+07, parent quoted = -1.9392452885e7
+  PASS basin_2_pprime_has_no_real_roots :: disc(p') = 4(c_2^2 - 3 c_1 c_3) = -7.756981e+07
+  PASS basin_2_F4_closed_form_is_FALSE :: F_4(Basin 2) closed-form = False
+
+========================================================================
+BLOCK 5: F_4 on all five basins via 3 routes (closed-form / Newton / sampled)
+========================================================================
+  PASS F4_closed_form_Basin_1 :: closed-form = True, parent reference = True
+  PASS F4_newton_Basin_1 :: Newton = True, parent reference = True
+  PASS F4_sampled_Basin_1 :: sampled = True, parent reference = True
+  PASS F4_closed_form_Basin_N :: closed-form = False, parent reference = False
+  PASS F4_newton_Basin_N :: Newton = False, parent reference = False
+  PASS F4_sampled_Basin_N :: sampled = False, parent reference = False
+  PASS F4_closed_form_Basin_P :: closed-form = False, parent reference = False
+  PASS F4_newton_Basin_P :: Newton = False, parent reference = False
+  PASS F4_sampled_Basin_P :: sampled = False, parent reference = False
+  PASS F4_closed_form_Basin_X :: closed-form = False, parent reference = False
+  PASS F4_newton_Basin_X :: Newton = False, parent reference = False
+  PASS F4_sampled_Basin_X :: sampled = False, parent reference = False
+  PASS F4_closed_form_Basin_2 :: closed-form = False, parent reference = False
+  PASS F4_newton_Basin_2 :: Newton = False, parent reference = False
+  PASS F4_sampled_Basin_2 :: sampled = False, parent reference = False
+  PASS F4_three_routes_agree_Basin_1 :: cf = True, nw = True, sm = True
+  PASS F4_three_routes_agree_Basin_N :: cf = False, nw = False, sm = False
+  PASS F4_three_routes_agree_Basin_P :: cf = False, nw = False, sm = False
+  PASS F4_three_routes_agree_Basin_X :: cf = False, nw = False, sm = False
+  PASS F4_three_routes_agree_Basin_2 :: cf = False, nw = False, sm = False
+
+========================================================================
+BLOCK 6: Corrected composition chamber ∩ F_4 = {Basin 1}
+========================================================================
+  PASS composition_yields_basin_1 :: chamber = ['Basin 1', 'Basin 2', 'Basin X'], F_4 = ['Basin 1'], intersection = ['Basin 1']
+  PASS composition_yields_basin_1_runtime_F4 :: runtime intersection = ['Basin 1']
+
+========================================================================
+BLOCK 7: Parent-note Record-axiom usage scan (load-bearing sections)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-dm-abcc-invariance/wt/docs/DM_ABCC_FIVE_BASIN_CHAMBER_DPLE_SUPPORT_THEOREM_NOTE_2026-04-21.md
+  PASS load_bearing_start_found :: start index = 950
+  PASS load_bearing_end_found :: end index = 4355
+  PASS zero_record_axiom_tokens_in_load_bearing_core :: matches = []
+  PASS structural_tokens_present_in_load_bearing_core :: matches >= 5: ['chamber', 'F_4', 'sqrt(8/3)', 'Basin 1', 'Basin 2', 'discriminant']
+
+========================================================================
+BLOCK 8: Record-axiom counterfactual: identical numeric output
+========================================================================
+  PASS chamber_survivors_invariant_under_record_axiom :: with = ['Basin 1', 'Basin 2', 'Basin X'], without = ['Basin 1', 'Basin 2', 'Basin X']
+  PASS F4_passers_invariant_under_record_axiom :: with = ['Basin 1'], without = ['Basin 1']
+  PASS composition_invariant_under_record_axiom :: with = ['Basin 1'], without = ['Basin 1']
+
+========================================================================
+BLOCK 9: Quantum/Lattice preserved; Record scope-disclaimer excludes load-bearing classes
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-dm-abcc-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-dm-abcc-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional present
+  PASS new_memo_Record_scope_excludes_relevant_classes :: Record axiom's own scope statement excludes log-det / source-action / record production
+  PASS parent_arithmetic_does_not_invoke_excluded_classes :: verified content-wise by Blocks 2-6, 8
+
+========================================================================
+BLOCK 10: Composition unique in 3 independent routings of F_4
+========================================================================
+  PASS composition_closed_form_route_basin_1 :: closed-form composition = ['Basin 1']
+  PASS composition_newton_route_basin_1 :: Newton composition = ['Basin 1']
+  PASS composition_sampled_route_basin_1 :: sampled composition = ['Basin 1']
+  PASS composition_all_three_routes_agree :: all three routes yield the same closure set
+
+========================================================================
+TOTAL PASS: 71
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing finite arithmetic of
+  DM_ABCC_FIVE_BASIN_CHAMBER_DPLE_SUPPORT_THEOREM_NOTE_2026-04-21.md
+  (corrected chamber survivors {Basin 1, Basin 2, Basin X},
+  F_4 passers {Basin 1}, composition {Basin 1}) uses ONLY
+  explicitly tabulated finite data plus standard finite-
+  dimensional linear algebra. The Record axiom (additive
+  scalar record-readout functional) is neither used nor
+  invoked. Numeric output is identical under both 'Record
+  axiom asserted' and 'Record axiom not asserted' outer
+  scopes. This runner does not re-apply the prior audit
+  verdict; it records that the arithmetic checked here is
+  unchanged by the 2026-06-04 axiom-set adoption.
+
+The audit lane decides whether to honor or re-test the prior
+verdict on the new minimal_axioms premise hash.
+
+----- stderr -----
+

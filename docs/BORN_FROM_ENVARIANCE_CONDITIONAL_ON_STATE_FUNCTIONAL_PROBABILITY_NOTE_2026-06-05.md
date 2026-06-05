@@ -135,6 +135,23 @@ plus additivity over **disjoint** records (+ A3); Route 2 uses frame-function
 additivity over **orthogonal projectors**. Both are different structures from the
 barred homomorphism. The no-go is unaffected.
 
+## Relation to the prior Quantum-Darwinism basis-not-weight result (no contradiction)
+
+[`FLAVOR_QD_OBJECTIVITY_FIXES_BASIS_NOT_WEIGHT_2026-06-02.md`](FLAVOR_QD_OBJECTIVITY_FIXES_BASIS_NOT_WEIGHT_2026-06-02.md)
+showed that the **redundancy / objectivity** machinery of quantum Darwinism
+(plateau, mutual-information redundancy `R_delta`) fixes the pointer **basis** but
+**not** the sector **weight**. This note does **not** contradict it: envariance is a
+distinct mechanism — a **state-swap symmetry**, not a redundancy/plateau argument —
+and it bears on the **weight**, not the basis. The two results are complementary:
+the redundancy route (and the pointer-non-demolition record-formation result) fix
+the **basis**; envariance fixes the **weight** `|a_k|^2`, but only after `A3`. The
+"measure-selection gap" flagged by
+[`FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_2026-05-30.md`](FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_2026-05-30.md)
+is, on the envariance route, **exactly `A3`** — now pinned to a single named premise
+(a state-functional probability exists) rather than left as an open gap. So the
+weight is not obtained from redundancy/objectivity (consistent with the prior
+no-go); it is obtained from swap-symmetry + Record-additivity + `A3`.
+
 ## Forbidden-imports check
 
 - No PDG observed values, literature numerical comparators, or fitted selectors

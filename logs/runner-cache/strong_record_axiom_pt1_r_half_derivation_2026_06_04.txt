@@ -1,0 +1,112 @@
+
+==============================================================================
+STEP 0  -  R[Z_3] from the regular representation (the generation algebra)
+==============================================================================
+[PASS] 0a  C is a permutation matrix (3-cycle): C^3 = I
+[PASS] 0b  C != I and C^2 != I  (faithful 3-cycle, order exactly 3)
+[PASS] 0c  R[Z_3] = span_R{I, C, C^2} is commutative
+[PASS] 0d  {I, C, C^2} are R-linearly independent  (dim_R R[Z_3] = 3)
+
+==============================================================================
+STEP 1a  -  COMPLEX Wedderburn: C[Z_3] = C x C x C  (THREE blocks)
+==============================================================================
+[PASS] 1a-i  eig(C) over C = {1, omega, omega^2} (cube roots of unity)
+[PASS] 1a-ii  each complex eigenvalue is simple (multiplicity 1)
+[PASS] 1a-iii  C[Z_3] has THREE 1-dim complex blocks -> K0-complex = Z^3 (rank 3)
+
+==============================================================================
+STEP 1b  -  REAL Wedderburn: R[Z_3] = R (+) C  (TWO real blocks)
+==============================================================================
+[PASS] 1b-i  P_sing, P_doub are REAL (rational entries)
+[PASS] 1b-ii  they are orthogonal idempotents summing to I (a real 2-block split)
+[PASS] 1b-iii  singlet block is 1-dim, doublet block is 2-dim (real dims 1 + 2 = 3)
+[PASS] 1b-iv  both blocks are CENTRAL: [P_sing, C] = [P_doub, C] = 0 (true Wedderburn blocks)
+[PASS] 1b-v  R[Z_3] has TWO real blocks -> K0-real = Z^2 (rank 2), vs Z^3 over C
+
+==============================================================================
+STEP 1c  -  The doublet block is ONE real simple block = the field C
+==============================================================================
+[PASS] 1c-i  J_cs = (C - C^2)/sqrt(3) is real and antisymmetric (J_cs^T = -J_cs)
+[PASS] 1c-ii  J_cs^2 = -P_doub  (a complex structure ON the doublet, 0 on singlet)
+[PASS] 1c-iii  J_cs vanishes on the singlet: J_cs * u = 0 with u = (1,1,1)^T
+[PASS] 1c-iv  J_cs is C_3-equivariant: [J_cs, C] = 0 (lives inside the block algebra)
+[PASS] 1c-v  span_R{P_doub, J_cs} ~ C  (P_doub acts as 1, J_cs as i; closed, P_doub^2=P_doub)
+[PASS] 1c-vi  Frobenius-Schur indicator of the doublet = 0 (COMPLEX type => End_R = C, ONE real block)
+
+==============================================================================
+STEP 2  -  The axiom's count: real sectors, dimension-blind = (1,1)
+==============================================================================
+[PASS] 2a  AXIOM (real, counted, dimension-blind) -> isotype weight (1, 1)
+[PASS] 2b  CONTRAST complex/K0-complex block count -> (1, 2)
+[PASS] 2c  CONTRAST dimension/Born (weight = real dim) -> (1, 2)
+[PASS] 2d  the complex-count and dimension/Born readings COINCIDE at (1,2) (the two non-axiom rivals)
+
+==============================================================================
+STEP 3  -  The map  isotype weight -> r -> Q  (a,b circulant)
+==============================================================================
+[PASS] 3a  H * u = (a+2b) u  (singlet eigenvalue on the all-ones vector)
+[PASS] 3b  H * v_d = (a - b) v_d on a doublet vector (doubly degenerate doublet eigenvalue)
+[PASS] 3c  E_+ = ||a I||_F^2 = 3 a^2 (singlet-channel Frobenius energy)
+[PASS] 3d  E_perp = ||b C + b C^2||_F^2 = 6 b^2 (doublet-channel Frobenius energy)
+[PASS] 3e  singlet and doublet channels are FROBENIUS-ORTHOGONAL (cross term = 0)
+[PASS] 3f  Q(a,b) = (sum lambda^2)/(sum lambda)^2 reduces to Q = (1 + 2 r)/3, r = b^2/a^2
+[PASS] 3g  AXIOM (1,1) as EQUAL CHANNEL ENERGY: 3a^2 = 6b^2  =>  r = b^2/a^2 = 1/2
+[PASS] 3h  => Q = 2/3  at r = 1/2
+[PASS] 3i  CONTRAST (1,2) as equal energy-per-dimension: E_+/1 = E_perp/2 => 3a^2 = 3b^2 => r = 1
+[PASS] 3j  => Q = 1  at r = 1 (the dimension/Born endpoint)
+[PASS] 3k  numeric: a=1.4142, b=1.0 -> r=0.5000 ~ 0.5, Q=0.666667 ~ 0.666667
+[PASS] 3k  numeric: a=1.0000, b=1.0 -> r=1.0000 ~ 1.0, Q=1.000000 ~ 1.000000
+
+==============================================================================
+STEP 4  -  Does the axiom pick (1,1) UNIQUELY vs the two rivals?
+==============================================================================
+[PASS] 4a  axiom (real=T, count=T) -> (1,1)  [UNIQUE among the four cells]
+[PASS] 4b  drop COUNT (real=T, dim) -> (1,2)  [reverts to r=1]
+[PASS] 4c  drop REAL (complex, count=T) -> (1,2)  [reverts to r=1]
+[PASS] 4d  drop BOTH (complex, dim) -> (1,2)  [reverts to r=1]
+[PASS] 4e  (1,1) is reached ONLY by the full conjunction real & count (& blind) -> UNIQUE selection
+[PASS] 4f  given REAL+COUNT, BLIND is entailed (the doublet IS one real block, Step 1c) -- not a free 3rd dial
+
+==============================================================================
+STEP 5  -  Residual R1: the count->ENERGY bridge (the honest gap)
+==============================================================================
+[PASS] 5a  F-energy (equal Frobenius channel energy per real block): root r = 1/2
+[PASS] 5b  F-ampl (equal bare amplitude per real block, a = b): root r = 1 (Q=1) -- DIFFERENT from 1/2
+[PASS] 5c  F-eig (equal eigenvalue magnitude per real block): NO positive-interior root (yet another 'one value per block' reading -> different locus)
+[PASS] 5d  RESIDUAL R1 EXPOSED: 'equal count per real block' admits >= 2 inequivalent readout loci (energy->1/2, amplitude->1); only the Frobenius-ENERGY reading gives 1/2
+
+==============================================================================
+STEP 6  -  Residual R2: is 'classical = REAL' substantive (not contradicted)?
+==============================================================================
+[PASS] 6a  the generation algebra R[Z_3] has REAL (rational) structure constants -- a manifestly real carrier
+[PASS] 6b  the forced qubit pseudoscalar acts on generations as the SCALAR i*I_3 (singlet AND doublet alike)
+[PASS] 6c  i*I_3 (scalar) != J_cs (doublet complex structure with eig {0,+i,-i}) -- qubit i does NOT supply the doublet complexification
+[PASS] 6d  eig(i*I_3) = {i} (scalar) vs eig(J_cs) = {0, +i, -i} -- different operators, confirming 6c
+[PASS] 6e  RESIDUAL R2 STATUS: 'classical = real' is substantive & uncontradicted (framework leaves the generation factor real) -- the axiom legitimately STIPULATES it
+
+==============================================================================
+STEP 7  -  Verdict bookkeeping
+==============================================================================
+[PASS] 7a  GRANTED the axiom (real + count + blind + weight:=Frobenius energy): uniquely (1,1) -> r=1/2 -> Q=2/3   [STEPS 2,3,4]
+[PASS] 7b  the (1,2) rivals (complex-count, dimension/Born) both give r=1 -> Q=1, and the axiom's REAL+COUNT clauses exclude them   [STEP 4]
+[PASS] 7c  RESIDUAL R1 (count->energy bridge) is REAL: the bare count needs the extra 'weight := Frobenius channel energy' identification to land r=1/2 (not r=1)   [STEP 5]
+[PASS] 7d  RESIDUAL R2 (classical=real) is DISCHARGED-BY-STIPULATION: substantive & uncontradicted, legitimately fixed by the axiom itself   [STEP 6]
+
+==============================================================================
+SCORECARD
+==============================================================================
+
+SCORECARD: 53 PASS / 0 FAIL  (of 53 checks)
+
+VERDICT: DERIVES-WITH-RESIDUAL
+  - The axiom UNIQUELY selects the isotype weight (1,1) over both (1,2) rivals
+    (real Wedderburn => 2 blocks; counted => not dimension; blind is entailed).
+  - (1,1) under the Frobenius-channel-energy reading => r = 1/2 => Q = 2/3.
+  - RESIDUAL R1 (real): 'one unit per real block' is a COUNT; pinning r=1/2 needs
+    the extra identification 'record-weight per sector := Frobenius channel energy'.
+    A bare-amplitude 'equal per block' reading gives r=1 instead. The axiom as
+    worded fixes the COUNT but not, by itself, that the count is realized as
+    SQUARED-AMPLITUDE channel energy.
+  - RESIDUAL R2 (discharged): 'classical = real' is substantive and uncontradicted
+    (the framework leaves the generation factor real), so the axiom may legitimately
+    stipulate it.

@@ -1,0 +1,88 @@
+
+========================================================================
+S0. Framing: what the structural core can and cannot carry
+========================================================================
+[PASS] S0.1 structural core carries exactly one dimensionful primitive (a=[L])
+        Cl(3)-on-Z^3 + qubit ops are dimensionless; a is the sole [L] input. Any G the lattice yields is therefore dimensionless * a^n (Buckingham-Pi).
+[PASS] S0.2 a second independent dimensionful number cannot be emitted by the core
+        To pin a in SI you need exactly one dimensional anchor (PLANCK_MASS_CONVENTIONAL_ANCHOR_META_NOTE_2026-05-27, meta).
+
+========================================================================
+S1. Route A — G from lattice dynamics, then demand G = G_observed
+========================================================================
+[PASS] S1.1 lattice gravity coupling is DIMENSIONLESS (G_lat=1/(4pi) or 1)
+        G_lat(bare Green)=0.079577, G_lat(carrier-normalized)=1.0; GRAVITY_CLEAN_DERIVATION_NOTE claim_scope: 'in lattice units'.
+[PASS] S1.2 exhaustive [-3,3]^4 search finds the canonical carry hbar*c*M^-2
+        4 integer-power carries have G-dimensions; canonical (a,c,M,hbar)=(0, 1, -2, 1) present. All reduce to G~hbar*c/M_lat^2.
+[PASS] S1.3 every G-dim carry references the lattice scale (a^p or M_lat^r); none is built from c,hbar alone
+        candidates=[(-1, 0, -3, 2), (0, 1, -2, 1), (1, 2, -1, 0), (2, 3, 0, -1)]; the 'massless' carry (2,3,0,-1)=a^2 c^3/hbar still uses a^2. A scale (a or M_lat=1/a) is unavoidable; c,hbar alone cannot make G-dimensions.
+[PASS] S1.4 [CHECK-ONLY] demanding G_lat*hbar*c/M_lat^2 = G returns M_lat ~ M_Pl
+        M_lat=2.176434e-08 kg vs M_Pl=2.176434e-08 kg, rel_err=1.57e-07 (carrier surface G_lat=1).
+[PASS] S1.5 Route A is CIRCULAR: solving for a^{-1} just renames the imported G
+        G_lat dimensionless => the only way G_SI acquires a value is by importing one dimensionful number (G, or equivalently M_Pl, or l_P). Setting a^{-1}=sqrt(hbar c/G) is the DEFINITION M_lat:=M_Pl, not an independent second constraint. dof count: 1 dimensionful unknown (a), 0 dimensionful equations from the (dimensionless) lattice => underdetermined.
+[PASS] S1.6 Route A verdict: does NOT close self-consistency (a=l_P assumed)
+        Route A needs one dimensionful import (G/M_Pl/l_P). With it, a^{-1}=M_Pl by definition; without it, a is unfixed. => OPEN (assumed).
+
+========================================================================
+S2. Route B — Bekenstein-Hawking horizon-density match (framework's actual BP route)
+========================================================================
+[PASS] S2.1 derived dimensionless cell coefficient c_cell = rank(P_A)/16 = 1/4
+        P_A rank 4 on C^16 => c_cell = 0.25 (exact, dimensionless).
+[PASS] S2.2 same-surface density match gives a^2/l_P^2 = 4*c_cell = 1, so a/l_P=1
+        a^2/l_P^2 = 4*c_cell = 1.0. With c_cell=1/4 exactly => a=l_P.
+[PASS] S2.3 the dimensionful input l_P enters via the imported BH area law (premise BP)
+        RHS 1/(4 l_P^2) is the Bekenstein-Hawking density; l_P^2=hbar G/c^3 is the import. The DERIVED part is only the dimensionless c_cell=1/4; the dimensionful l_P is carried in by the gravitational-density identification.
+[PASS] S2.4 'a/l_P=1' is JOINT: derived c_cell=1/4 AND open premise BP (carrier id)
+        a/l_P = sqrt(4 c_cell): the value 1 needs BOTH c_cell=1/4 (derived) and the BH-carrier identification BP (open). BP supplies the dimensionful l_P.
+[PASS] S2.5 Route B verdict: CONDITIONAL closure (BP=>a/l_P=1); BP is the import
+        Route B is a genuine self-consistency RELATION, but conditional on premise BP which imports the dimensionful BH law. => OPEN until BP is derived.
+
+========================================================================
+S3. Ledger cross-check — status of every note the routes lean on
+========================================================================
+[PASS] S3.1 the ENTIRE BP=>a/l_P=1 forward chain is `unaudited` on origin/main
+        rows: planck_scale_conditional_completion, planck_boundary_density_extension_theorem, planck_primitive_coframe_boundary_carrier_theorem, planck_link_local_first_variation_p_a_forcing_theorem, planck_source_unit_normalization_support_theorem, planck_primitive_clifford_majorana_edge_derivation_theorem, bh_quarter_wald_noether_framework_carrier_theorem
+[PASS] S3.2 retained_bounded gravity rows exist but close only to LATTICE units
+        These derive G_lat (dimensionless) + 1/r law in lattice units; none carries a dimensionful scale, so none pins a in SI.
+[PASS] S3.3 three retained_no_go rows: scale/carrier NOT forced by symmetry alone
+        Consistent with: the dimensionful scale behaves as an anchor, not a theorem.
+
+========================================================================
+S4. Synthesis verdict
+========================================================================
+
+Both candidate routes to 'a = l_Planck' require importing exactly ONE
+dimensionful fact that the dimensionless Cl(3)-on-Z^3 core cannot emit:
+
+  Route A (G-from-lattice):   G_lat is dimensionless; demanding G_SI=G_observed
+                              just sets a^{-1}=sqrt(hbar c/G)=:M_Pl by
+                              DEFINITION (circular). No second dimensionful
+                              equation pins a.  -> OPEN.
+
+  Route B (BH-density match): a genuine conditional theorem (BP)=>a/l_P=1 with
+                              the DERIVED dimensionless input c_cell=1/4, but
+                              the dimensionful l_P enters via the IMPORTED
+                              Bekenstein-Hawking area law under the open
+                              carrier-identification premise BP. The entire
+                              forward chain is `unaudited` on origin/main.
+                              -> OPEN (conditional; closes IFF BP is derived).
+
+Neither route closes self-consistency from the framework's own content WITHOUT
+an extra dimensionful import. Per the HONESTY GUARD this is OPEN, not derived.
+
+VERDICT: OPEN-SELF-CONSISTENCY (a = l_P is assumed/anchored, not derived).
+
+This is a verification of the existing posture
+(ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23 item S; PLANCK_SCALE_LANE_
+STATUS_NOTE_2026-04-23): 'the Planck-mass anchor is taken, not yet derived';
+the closure a/l_P=1 is the open gravity lane, conditional theorem only.
+The one positive, derived ingredient is the dimensionless c_cell=1/4 (Route B);
+the missing ingredient is purely the dimensionful carrier identification (BP),
+which is exactly one dimensionful import.
+
+
+========================================================================
+SUMMARY
+========================================================================
+Total: 16 PASS / 0 FAIL
+VERDICT: OPEN-SELF-CONSISTENCY (a=l_P assumed; not derived from framework content).

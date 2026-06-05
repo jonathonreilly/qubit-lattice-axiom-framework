@@ -85,10 +85,13 @@ Notes:
   measure gives `r=1`. The *structure* (carrier, exact `Q=1/3+(2/3)r`, channels,
   topological `2/9`, endpoint exclusion, `r=1/2` as the 2-sector-equipartition
   stationary point) is derived; only this two-pronged selection is admitted.
-  No-go portfolio sharpened this session: [KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md](KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)
-  (retained_no_go — singlet:doublet ratio free), [KOIDE_Q_DELTA_RESIDUAL_COHOMOLOGY_OBSTRUCTION_NO_GO_NOTE_2026-04-24.md](KOIDE_Q_DELTA_RESIDUAL_COHOMOLOGY_OBSTRUCTION_NO_GO_NOTE_2026-04-24.md)
-  (retained_no_go — no canonical zero-section), [KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
-  (retained_bounded); and the records/decoherence flow makes `r=1/2` the *unstable
+  No-go portfolio sharpened this session:
+  `KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`
+  (singlet:doublet ratio free),
+  `KOIDE_Q_DELTA_RESIDUAL_COHOMOLOGY_OBSTRUCTION_NO_GO_NOTE_2026-04-24.md`
+  (no canonical zero-section), and
+  `KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`
+  (generation-chirality separation); and the records/decoherence flow makes `r=1/2` the *unstable
   separatrix* of the (entropy-decreasing) sharpening map `r→2r²` while the
   entropy-increasing thermalizing flow makes it the *stable* 2-sector-entropy
   attractor — so the admission is precisely "which coarse-graining + which arrow."
@@ -98,7 +101,7 @@ Notes:
   reference fixing the physical scale of the lattice spacing `a` is now an
   explicitly approved framework primitive, registered as `scale_reference_primitive`
   in `docs/audit/data/axiom_premise_nodes.json` with source
-  [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md). It is
+  `SCALE_REFERENCE_PRIMITIVE_NOTE.md`. It is
   irreducible by dimensional analysis: the named Lattice, Quantum, and Record
   axioms carry zero dimensionful content, so every derived quantity is
   dimensionless or carries `[a]^n`, and exactly one dimensionful

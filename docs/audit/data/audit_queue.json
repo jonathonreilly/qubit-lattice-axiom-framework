@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 271,
     "high": 281,
-    "leaf": 367,
+    "leaf": 366,
     "medium": 325
   },
   "cycle_break_target_count": 0,
@@ -27033,28 +27033,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_koide_phase_delta_is_also_an_admission_exact.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_readout_channel_map_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37708,6 +37686,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 38,
-  "total_pending": 1244
+  "ready_count": 37,
+  "total_pending": 1243
 }

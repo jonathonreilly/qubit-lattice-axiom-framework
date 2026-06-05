@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 177 |
-| **retained_no_go** | 190 |
+| **retained_no_go** | 191 |
 | **retained_bounded** | 667 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1242 |
+| unaudited | 1241 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1028 |
+| `audited_clean` | 1029 |
 | `audited_conditional` | 78 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1526 |
+| `unaudited` | 1525 |
 
 | claim_type | count |
 |---|---:|
@@ -632,6 +632,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_k0_real_block_equivalence_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9641,6 +9642,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The existence of omega alone does not choose between the one-mode and two-mode readings; the choice is whether b is a first-order field amplitude or a static coupling.  _(class `A`)_
 - **chain closes:** False — The local algebraic checks close: the displayed signs, factors, traces, projections, and degree-block statements are consistent under an independent check. The positive one-mode Koide route does not close because the packet does not supply the bridge identifying the circulant coefficient b with a first-order Kähler-Dirac field amplitude on the same doublet component.
 - **rationale:** The runner source genuinely computes the stated local linear-algebra identities rather than merely printing a pass log, and the quantitative formulas in the restricted packet check out independently. However, the note explicitly leaves the B-coupling to B-field identification unbuilt, and retained status cannot propagate through that open bridge. The result is a valid open-gate characterization, not a closed derivation of the charged-lepton Koide value or of the one-mode reading.
+- **auditor confidence:** high
+
+### `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04`
+
+- **Note:** [`KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md`](../../docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional on the stated C3-circulant lepton Yukawa and modulus-only objective V_mod = log|det M|, the clean determinant-modulus route does not select the non-degenerate physical phase δ≈2/9; its stationary candidates are δ=kπ/3 and are degenerate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-704726f502-koide_phase_delta_is_also_an`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the C3-circulant Yukawa, det M = a^3 - 3a|b|^2 + 2|b|^3 cos(3δ), so the modulus potential is stationary only when sin(3δ)=0, and those stationary phases give a twofold-degenerate spectrum.  _(class `A`)_
+- **chain closes:** True — The determinant formula follows algebraically from the C3-circulant eigenvalues a+2|b|cos(δ+2πk/3), and differentiating log|det M| away from det M=0 gives stationary points only when sin(3δ)=0. At those phases two cosine eigenvalues coincide, so the stated narrow modulus-only no-go closes while the CP-odd η/θ route remains explicitly outside scope.
+- **rationale:** The load-bearing result is a direct algebraic identity and derivative check over the stated circulant ansatz, not a definition, relabeling, or tuned numerical match. The runner source mostly verifies the same algebra and contains no helper imports or hidden upstream premises; its use of δ=2/9 is only as a comparator for nonstationarity, not as an input to derive a value. The no-go is properly narrow: it closes only the determinant-modulus selector and explicitly leaves the CP-odd η/θ value-selector residual open.
 - **auditor confidence:** high
 
 ### `koide_pointed_origin_exhaustion_theorem_note_2026-04-24`

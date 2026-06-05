@@ -336,6 +336,10 @@ same-point +/- q_bare sum: 0
 same-point +/- inertial mass sum: positive
 ```
 
+The 2026-06-03 boundary repair runner checks these displayed control numbers
+against the current harness. It does not change the open-gate status or derive
+the missing `S_int = - chi_eta M_phys <rho, Phi>` source term.
+
 The branch sign does not alter Born linearity, unitary norm preservation, or
 positive inertial mass in the fixed-sector harness.
 

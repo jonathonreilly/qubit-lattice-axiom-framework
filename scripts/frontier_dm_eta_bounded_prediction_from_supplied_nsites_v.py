@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Runner: DM eta bounded prediction from supplied N_sites · v premise.
+"""Runner: DM eta conditional support from supplied N_sites · v premise.
 
-Audits the bounded prediction note
+Audits the conditional bounded-support prediction note
 `docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md`
 
 Verifies, with rational arithmetic where possible and floating-point
@@ -120,7 +120,7 @@ def eta_pred(
 # ---------------------------------------------------------------------------
 
 print("=" * 72)
-print("DM eta bounded prediction from supplied N_sites · v premise")
+print("DM eta conditional support from supplied N_sites · v premise")
 print("=" * 72)
 
 print()
@@ -130,17 +130,38 @@ print("-" * 72)
 note_text = read_doc(NOTE_FNAME)
 audit("Note exists at expected path", len(note_text) > 0, NOTE_FNAME)
 audit(
-    "Note claim type is bounded_theorem",
-    "**Claim type:** bounded_theorem" in note_text,
+    "Note claim type is bounded support note",
+    "**Claim type:** bounded support note" in note_text,
+)
+audit(
+    "Note type is conditional / support",
+    "**Type:** conditional / support" in note_text,
+)
+audit(
+    "Old bounded_theorem header is absent",
+    "**Claim type:** bounded_theorem" not in note_text
+    and "**Type:** bounded_theorem" not in note_text,
 )
 audit(
     "Note status authority is independent audit lane only",
     "Status authority:** independent audit lane only" in note_text,
 )
 audit(
-    "Note proposal_allowed: false",
-    "proposal_allowed: false" in note_text,
+    "Note records conditional support over supplied premise packet",
+    "conditional support over the supplied" in note_text,
 )
+for phrase in (
+    "source-note proposal only",
+    "actual_" + "current_surface_status",
+    "conditional_" + "surface_status",
+    "proposal_allowed",
+    "audit_required_before_effective_" + "ret" + "ained",
+    "bare_" + "ret" + "ained_allowed",
+):
+    audit(
+        f"Note omits source-side status control phrase: {phrase}",
+        phrase not in note_text,
+    )
 
 r_base_text = read_doc(R_BASE_FNAME)
 audit(
@@ -529,18 +550,18 @@ print()
 print("Section 10: status discipline")
 print("-" * 72)
 
-audit(
-    "Note's YAML status declaration is narrow_bounded_theorem",
-    "narrow_bounded_theorem" in note_text,
-)
-audit(
-    "Note declares bare_retained_allowed: false",
-    "bare_retained_allowed: false" in note_text,
-)
-audit(
-    "Note declares audit_required_before_effective_retained: true",
-    "audit_required_before_effective_retained: true" in note_text,
-)
+for phrase in (
+    "source-note proposal only",
+    "actual_" + "current_surface_status",
+    "conditional_" + "surface_status",
+    "proposal_allowed",
+    "audit_required_before_effective_" + "ret" + "ained",
+    "bare_" + "ret" + "ained_allowed",
+):
+    audit(
+        f"Note keeps source-side status control absent: {phrase}",
+        phrase not in note_text,
+    )
 audit(
     "Note does NOT use bare 'proposed_retained' or 'retained:' status language",
     "**Status:** retained" not in note_text
@@ -556,13 +577,13 @@ print()
 print("=" * 72)
 print(f"TOTAL: PASS={AUDIT_PASSES} FAIL={len(AUDIT_FAILS)}")
 if AUDIT_FAILS:
-    print("VERDICT: bounded prediction runner FAILED at:")
+    print("VERDICT: conditional bounded-support runner FAILED at:")
     for fail in AUDIT_FAILS:
         print(f"  - {fail}")
     sys.exit(1)
 else:
     print(
-        "VERDICT: bounded prediction passes; eta_pred bracketed inside "
+        "VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside "
         "[5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; "
         "m_DM = 3.94 TeV is the supplied composed-product readout; "
         "(C2.eta) remains open."

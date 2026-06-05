@@ -1,0 +1,85 @@
+RECORD-IRREVERSIBILITY -> BLOCK-COUNTING -> r=1/2 DERIVATION TEST
+==============================================================================
+
+=== PART A: THE CRUX -- irreversible/frozen record info = center = blocks? ===
+[PASS] A1 C^3 = I (order-3 generation shift)
+[PASS] A1b <I,C,C^2> is the 3-dim commutative circulant algebra (image of R[Z3]) :: algebra-dim=3, abelian
+[PASS] A2a center of M_2(C) (full simple block) = scalars only (center-dim 1) :: algebra-dim=4, center-dim=1
+[PASS] A2b center of M_3(C) (full simple block) = scalars only (center-dim 1) :: algebra-dim=9, center-dim=1
+    => within a simple matrix block there is NO nontrivial frozen/superselected observable: all states are reversibly connected by unitaries (one orbit).
+[PASS] A3a R[Z3] has exactly 2 minimal REAL central idempotents (singlet rank1 + doublet rank2) :: the center (frozen/classical sigma-algebra) = span{E0,E1} = block labels
+[PASS] A3b over C: 3 minimal central idempotents rank (1,1,1); the conjugate pair fuses to the real rank-2 doublet (the frozen/T-real block) :: real-Wedderburn (frozen) blocks = singlet (1) + doublet (2)
+[PASS] A4a a within-doublet RAY projector is NOT central (does not commute with C): ||[Pray,C]|| > 0 :: ||[Pray,C]||=1.2247
+[PASS] A4b the doublet's internal unitary MOVES the ray (reversibly connected -> NOT a frozen fact): ||U Pray U^dagger - Pray|| > 0 :: moved=1.3244
+[PASS] A4c by contrast the BLOCK projectors E0,E1 ARE invariant under the internal unitary (frozen/central)
+    => FALSIFICATION FAILS: no finer-than-block frozen record exists. A within-block distinction is reversibly connected, hence not classical/irreversible.
+[PASS] A5 CRUX (step 3): the sigma-algebra of irreversible/frozen facts = the center = the blocks, with NO finer frozen distinction -- VERIFIED :: irreversible-record information is block-level; this much the superselection argument DELIVERS
+[PASS] A6a COUNTING measure on the center (each block once) = (1,1) -> r=1/2 :: weights=(1.0, 1.0), r=0.5
+[PASS] A6b TRACIAL pushforward (I/3 through the SAME frozen blocks) = (1/3,2/3) -> r=1 :: weights=(0.3333, 0.6667), r=1.0000
+[PASS] A6c BOTH measures use ONLY the frozen center (no finer-than-block fact) yet give DIFFERENT r -> 'no finer frozen fact' does NOT fix the measure :: the dimension/Born weight is the tracial STATE pushed through the blocks, NOT a within-block frozen fact -- so superselection does not exclude it
+
+=== PART B: block-count -> r=1/2; dimension-count -> r=1; structural law-invariance ===
+[PASS] B1 block-energy identities E_+=3a^2, E_perp=6|b|^2 (Frobenius decomposition)
+[PASS] B2 BLOCK-count (1,1) -> r=1/2 -> Q=2/3 :: r=0.5 Q=0.6667
+[PASS] B2b r=1/2 Brannen circulant: block energies EQUAL (E_+=E_perp) AND spectrum Q=2/3 :: E_+=3.0000 E_perp=3.0000 Q=0.6667
+[PASS] B3 DIMENSION-count (1,2) -> r=1 -> Q=1 (Born) :: weights=(1.0,2.0) r=1.0 Q=1.0000
+[PASS] B3b r=1 Brannen circulant: E_perp = 2 E_+ (dimension/Born balance) AND spectrum Q=1 :: E_+=3.0000 E_perp=6.0000 ratio=2.000 Q=1.0000
+[PASS] B4a BLOCK-count is law-invariant (ratio spread 0 across a fictitious continuous law)
+[PASS] B4b DIMENSION-count is ALSO law-invariant (ratio spread 0)
+[PASS] B4c positive control: distance-weighting IS law-DEPENDENT (spread > 0.4) -- the wall the block-count CLEARS but that no longer discriminates the 2 measures :: geometry spread=0.882 vs discrete-count spread 0
+[PASS] B4d block-count clears the law-invariance wall (necessary) but does NOT pick (1,1) over (1,2) (not sufficient): both discrete counts pass it
+
+=== PART C: FORCED vs RESTATEMENT; axiom-native vs posit (the discipline crux) ===
+[PASS] C1 PATTERN-L: Tr (dimension count) is ALSO additive over orthogonal idempotents -> bare additivity does NOT force (1,1)
+[PASS] C2a TOKEN-count (tracial-driven formation frequency) -> ~(1/3,2/3) -> r~1 (Born); monotone & irreversible :: token ratio=(np.float64(0.333), np.float64(0.667)) r~1.002
+[PASS] C2b TYPE-count (each block-record once) -> (1,1) -> r=1/2; ALSO monotone & irreversible
+[PASS] C2c MONOTONICITY ('can't unform') is satisfied by BOTH -> irreversibility does NOT select TYPE-count over TOKEN-count :: 'can't unform' constrains the SIGN of dN/dt, not the per-block WEIGHT
+[PASS] C3a retained tracial state I/3 weights each minimal projection equally = 1/3 (PER-DIMENSION) -> block weight = dimension = Born (1,2)
+[PASS] C3b => block-count (1,1) = indifference over LABELS; Born (1,2) = indifference over MICROSTATES (the tracial pushforward). Irreversibility makes labels classical but does NOT pick label- over microstate-indifference :: THIS is the single unsupplied bit, now named precisely
+[PASS] C4 NOT FORCED: the dimension/Born weight is the tracial pushforward through the frozen blocks -- it needs no finer-than-block fact and is itself irreversibly realizable
+[PASS] C5 retained_no_go (alpha,beta) PD cone UNWEAKENED: many beta!=0 block functionals remain irreversibility-compatible :: 9 sampled PD points incl beta!=0
+[PASS] C6a Record axiom supplies additivity only (I additive over disjoint record collections)
+[PASS] C6b Record axiom does NOT supply irreversibility/persistence/arrow (its scope sentence excludes record-production, persistence, decoherence, time arrow) -> irreversibility is a POSIT
+[PASS] C6c Record axiom EXPLICITLY lists AC_phi_lambda as OUTSIDE axiom content (open gate)
+[PASS] C6d => even the FORCED part would be POSIT-conditional (irreversibility is not bare-axiom content)
+
+=== PART D: time-arrow -> chirality C3-breaking probe (corroboration) ===
+[PASS] D1 Gamma_chi is a circulant (lies in <I,C,C^2>): [Gamma,C]=0
+[PASS] D2a formation-arrow operator A=i(C-C^2) is circulant (commutes with C)
+[PASS] D2b the formation-arrow A does NOT anticommute with Gamma ({A,Gamma} != 0): the arrow lives in the circulant algebra, can't leave it :: ||{A,Gamma}||=4.8990
+[PASS] D3a a formation-order ranking diag(3,2,1) breaks C3 (not circulant)
+[PASS] D3b but it is site-diagonal -> does NOT anticommute with the circulant Gamma (wrong basis, as the record-binary Z2)
+[PASS] D3c heterogeneous formation weight induces a NON-circulant H -> Brannen Q=1/3+(2/3)r structure breaks (same conflict as the record-binary heterogeneous pattern)
+[PASS] D4 consistent with retained no-go: comm(C) ∩ anticomm(Gamma) = {0}; the time-arrow does NOT reach Q=2/3 chirality (no-go robust to the arrow) :: HONEST: the formation-order C3-breaking is in the wrong (site-diagonal) basis, like the record-binary Z2; it does not close the chirality gate
+
+=== PART E: hostile / category-mismatch closeout + 3-generation cross-check ===
+[PASS] E1 block-count via the frozen center is discrete & law-invariant (clears the geometry wall)
+[PASS] E2a R[Z3] = R (+) C: the singlet+doublet block decomposition is the standard unique real-irreducible decomposition (retained 3-generation structure) :: count 3 = dim regular rep = 1(singlet)+2(doublet)
+[PASS] E2b the C3 that yields the count 3 forces H circulant ([H,C]=0); the dimension/Born weight (1,2) tracks that dimension, while block-count (1,1) does not -> the tension is structural, not resolved by irreversibility
+[PASS] E3 category check: frozen-sigma-algebra (set/Boolean, blocks) vs Koide weight (quadratic form on operators) -- the former is forced, the latter needs the label-vs-microstate bit :: what remains open: (i) label-vs-microstate indifference (the measure bit); (ii) the time-arrow->chirality bridge (Part D); (iii) the color gate (untouched)
+
+=== VERDICT (computed) ===
+[PASS] VERDICT.crux_holds is True (irreversible/frozen record info is block-level; NO finer frozen fact -- Part A delivers step 3)
+[PASS] VERDICT.forced is False (the dimension/Born weight = tracial pushforward through the frozen blocks; needs no finer fact; monotone-realizable -> irreversibility does not exclude it)
+[PASS] VERDICT.axiom_native is False (irreversibility/persistence/arrow are outside the Record axiom's scope -> a posit)
+[PASS] VERDICT == RESTATEMENT (crux holds at the sigma-algebra level, but block-count is not FORCED: it needs the label-vs-microstate indifference bit, which irreversibility does not supply) :: verdict=RESTATEMENT
+
+  >>> RECORD-IRREVERSIBILITY VERDICT: RESTATEMENT
+  >>> Part A (CRUX): irreversible/frozen record info = the center = the BLOCKS, with
+      NO finer-than-block frozen fact (center of M_n is scalars; a within-doublet ray
+      is not central and is reversibly moved). Step 3 HOLDS; the falsification FAILED.
+  >>> BUT 'no finer frozen fact' fixes the frozen SIGMA-ALGEBRA (the blocks), NOT the
+      MEASURE on it. Two block-level measures use ONLY the frozen center: counting
+      (label-indifference) -> (1,1) -> r=1/2, and the tracial pushforward (microstate-
+      indifference, I/3) -> (1/3,2/3) -> r=1. Monotone irreversible formation realizes
+      BOTH; irreversibility constrains dN/dt's SIGN, not the per-block weight.
+  >>> Part C: NOT FORCED (the dimension weight needs no finer frozen fact) and NOT
+      axiom-native (irreversibility is outside the Record axiom). The unlock SHARPENS
+      the missing bit to a single named choice: indifference over superselection
+      LABELS (block-count) vs over MICROSTATES (tracial/Born). RESTATEMENT, sharpened.
+  >>> Part D: the time-arrow / formation-order does NOT supply the chirality C3-
+      breaking (still circulant, or site-diagonal in the wrong basis); no-go robust.
+  >>> retained_no_go koide_frobenius_isotype_split_uniqueness is UNWEAKENED.
+
+==============================================================================
+SUMMARY: PASS=49 FAIL=0

@@ -1,0 +1,191 @@
+DM sigma_hier H-Intrinsic No-Go Criticality-Bump Hygiene Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-dm-sigma-hier/wt
+Parent note: /private/tmp/cl3-dm-sigma-hier/wt/docs/DM_SIGMA_HIER_H_INTRINSIC_NO_GO_THEOREM_NOTE_2026-04-20.md
+Parent runner: /private/tmp/cl3-dm-sigma-hier/wt/scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20.py
+Companion source note: docs/DM_SIGMA_HIER_H_INTRINSIC_NO_GO_CRITICALITY_BUMP_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's substance and runner output are invariant under
+      the 2026-05-03 / 2026-05-04 criticality_increased invalidation
+      events, and self-contained-re-derive the load-bearing pair-pin fact.
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no parent edits.
+
+========================================================================
+BLOCK 1: parent note SHA-256 matches the ledger note_hash
+========================================================================
+  PASS parent_note_sha_matches_ledger_note_hash :: now=425a54457357..., ledger=425a54457357...
+
+========================================================================
+BLOCK 2: parent note contains the verbatim load-bearing equalities
+========================================================================
+  PASS parent_contains_verbatim::'P_+ = P_(2,0,1) = S_(mu tau) P_-' :: found
+  PASS parent_contains_verbatim::'P_- = P_(2,1,0),' :: found
+  PASS parent_contains_verbatim::'P_(2,0,1) = S_(mu tau) P_(2,1,0)' :: found
+  PASS parent_contains_verbatim::'sin(delta_CP)(2,0,1) = - sin(delta_CP)(2' :: found
+
+========================================================================
+BLOCK 3: parent Theorem section names the load-bearing premises
+========================================================================
+  PASS theorem_section_nonempty :: len=1864
+  PASS theorem_names_premise::'H_pin' :: found
+  PASS theorem_names_premise::'ascending eigenvalue order' :: found
+  PASS theorem_names_premise::'rowperm_sigma(V)' :: found
+  PASS theorem_names_premise::'(2,0,1)' :: found
+  PASS theorem_names_premise::'(2,1,0)' :: found
+
+========================================================================
+BLOCK 4: parent runner SHA-256 matches the 2026-05-05 snapshot runner_hash
+========================================================================
+  PASS parent_runner_sha_matches_2026_05_05_snapshot :: now=80b8678ae0bd..., snapshot=80b8678ae0bd...
+
+========================================================================
+BLOCK 5: parent runner exits with PASS=11 FAIL=0
+========================================================================
+  PASS parent_runner_pass_11_fail_0_terminal_line :: last_line='PASS=11 FAIL=0', exit=0
+  PASS parent_runner_exit_code_zero :: exit_code=0
+
+========================================================================
+BLOCK 6: parent runner emits the published check labels
+========================================================================
+  PASS parent_runner_emits::'sigma=(2,0,1) passes all 9 magnitude bands' :: present
+  PASS parent_runner_emits::'sigma=(2,1,0) passes all 9 magnitude bands' :: present
+  PASS parent_runner_emits::'The two surviving PMNS candidates differ only by t' :: present
+  PASS parent_runner_emits::'trace(H_pin) is fixed independently of sigma_hier' :: present
+  PASS parent_runner_emits::'trace(H_pin^2) is fixed independently of sigma_hie' :: present
+  PASS parent_runner_emits::'det(H_pin) is fixed independently of sigma_hier' :: present
+  PASS parent_runner_emits::'The eigenvalue spectrum is common to both sigma ch' :: present
+  PASS parent_runner_emits::'mu<->tau-even magnitude data (unordered row multis' :: present
+  PASS parent_runner_emits::'The row-labeled magnitude matrices are not identic' :: present
+  PASS parent_runner_emits::'The Jarlskog sign flips across the surviving pair' :: present
+  PASS parent_runner_emits::'The two surviving values are numerically +/-0.987' :: present
+
+========================================================================
+BLOCK 7: self-contained pair-pin construction reproduces {(2,0,1), (2,1,0)}
+========================================================================
+  PASS h_pin_is_hermitian :: max_dev=0.000e+00
+  PASS self_contained_survivors_set_eq_expected :: survivors=[(2, 0, 1), (2, 1, 0)]
+  PASS self_contained_survivors_count_eq_two :: count=2
+
+========================================================================
+BLOCK 8: self-contained mu<->tau row-swap identity P_+ = S_mutau * P_-
+========================================================================
+  PASS self_contained_p_plus_equals_s_mutau_p_minus :: max_dev=0.000e+00
+
+========================================================================
+BLOCK 9: self-contained Jarlskog sign-flip identity
+========================================================================
+  PASS self_contained_jarlskog_sign_flips :: sin_+=+0.9873607592, sin_-=-0.9873607592
+  PASS self_contained_jarlskog_magnitude_0_987 :: |sin|+=0.9873607592, |sin|-=0.9873607592
+
+========================================================================
+BLOCK 10: H-intrinsic invariance (tr, tr^2, det) under row permutation
+========================================================================
+  PASS h_pin_trace_is_invariant :: tr_pre=(0.657061+0j), tr_post=(0.657061+0j)
+  PASS h_pin_trace2_is_invariant :: tr2_pre=7.044894050731, tr2_post=7.044894050731
+  PASS h_pin_det_is_invariant :: det_pre=0.959173586493, det_post=0.959173586493
+  PASS h_pin_eigenvalue_spectrum_common_to_both_permutations :: eigs=[-1.3090941538119647, -0.32043373926198065, 2.2865888930739455]
+
+========================================================================
+BLOCK 11: mu<->tau-even-scalar invariance: unordered |P| rows match
+========================================================================
+  PASS mu_tau_even_unordered_rows_match :: unordered_multiset_eq
+  PASS mu_tau_odd_row_labeled_rows_differ :: row_labeled_differs
+
+========================================================================
+BLOCK 12: parent note contains zero ledger-criticality tokens in load-bearing
+========================================================================
+  PASS load_bearing_text_nonempty :: len=3502
+  PASS load_bearing_zero_token::'criticality' :: absent
+  PASS load_bearing_zero_token::'transitive descendants' :: absent
+  PASS load_bearing_zero_token::'load_bearing_score' :: absent
+  PASS load_bearing_zero_token::'audit_ledger' :: absent
+  PASS load_bearing_zero_token::'in_degree' :: absent
+  PASS load_bearing_zero_token::'fan-out' :: absent
+  PASS load_bearing_zero_token::'fanout' :: absent
+
+========================================================================
+BLOCK 13: parent note contains zero Record-axiom usage tokens (supplementary)
+========================================================================
+  PASS load_bearing_zero_record_token::'I(R_1' :: absent
+  PASS load_bearing_zero_record_token::'I(R)' :: absent
+  PASS load_bearing_zero_record_token::'scalar record' :: absent
+  PASS load_bearing_zero_record_token::'record functional' :: absent
+  PASS load_bearing_zero_record_token::'record-readout' :: absent
+  PASS load_bearing_zero_record_token::'additive record' :: absent
+  PASS load_bearing_zero_record_token::'additive scalar record' :: absent
+  PASS load_bearing_zero_record_token::'MINIMAL_AXIOMS_2026-06-04' :: absent
+
+========================================================================
+BLOCK 14: chamber-pin numerical preservation
+========================================================================
+  PASS chamber_pin_m_star_value :: M_STAR=0.657061
+  PASS chamber_pin_delta_star_value :: DELTA_STAR=0.933806
+  PASS chamber_pin_q_plus_star_value :: Q_PLUS_STAR=0.715042
+  PASS parent_note_quotes_chamber_pin_value_tuple :: present
+
+========================================================================
+BLOCK 15: criticality-bump counterfactual: identical algebra under any
+           criticality marker
+========================================================================
+  PASS criticality_counterfactual_eigs_identical :: eigs=(np.float64(-1.309094153812), np.float64(-0.320433739262), np.float64(2.286588893074))
+  PASS criticality_counterfactual_sin_plus_identical :: sin_plus=0.98736075921
+  PASS criticality_counterfactual_sin_minus_identical :: sin_minus=-0.98736075921
+  PASS criticality_counterfactual_abs_p_plus_identical :: abs_p_plus bit-identical
+  PASS criticality_counterfactual_abs_p_minus_identical :: abs_p_minus bit-identical
+
+========================================================================
+BLOCK 16: audit-snapshot consistency check (previous_audits[] surface)
+========================================================================
+  PASS ledger_row_present :: present
+  PASS previous_audits_count_three :: len=3
+  PASS previous_audits_invalidations_contain_both_bumps :: seen=['criticality_increased:leaf->medium', 'criticality_increased:medium->critical']
+  PASS previous_audits[0]_has_verdict_rationale :: len=466
+  PASS previous_audits[0]_has_chain_closes_field :: value=True
+  PASS previous_audits[1]_has_verdict_rationale :: len=524
+  PASS previous_audits[1]_has_chain_closes_field :: value=True
+  PASS previous_audits[2]_has_verdict_rationale :: len=605
+  PASS previous_audits[2]_has_chain_closes_field :: value=False
+
+========================================================================
+BLOCK 17: companion runner imports no frontier_sigma_hier_uniqueness symbol
+========================================================================
+  PASS companion_does_not_import::frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20 :: absent_from_executable_imports
+  PASS companion_does_not_import::frontier_sigma_hier_uniqueness_theorem :: absent_from_executable_imports
+  PASS companion_executable_imports_only_safe_stdlib_and_numpy :: imports=['__future__', 'hashlib', 'itertools', 'json', 'math', 'numpy', 'pathlib', 're', 'subprocess', 'sys']
+
+========================================================================
+BLOCK 18: Blocks 7-11 all reproduce parent algebra with no upstream import
+========================================================================
+  PASS fresh_block_survivors_set_eq_expected :: survivors=[(2, 0, 1), (2, 1, 0)]
+  PASS fresh_block_row_swap_match :: match=True
+  PASS fresh_block_jarlskog_sign_flip :: flip=True
+
+========================================================================
+BLOCK 19: numerical robustness of the surviving pair
+========================================================================
+  PASS robustness_survivors_under_ordering::'lexicographic' :: survivors=[(2, 0, 1), (2, 1, 0)]
+  PASS robustness_survivors_under_ordering::'reverse' :: survivors=[(2, 0, 1), (2, 1, 0)]
+  PASS robustness_survivors_under_ordering::'by_sum_then_diff' :: survivors=[(2, 0, 1), (2, 1, 0)]
+
+========================================================================
+BLOCK 20: surviving-pair complementarity / row-swap parity chain
+========================================================================
+  PASS s_mutau_is_odd_permutation :: det(S_mutau)=(-1+0j)
+  PASS jarlskog_top_block_imag_signs_opposite_for_pair :: J+=+3.275452e-02, J-=-3.275452e-02
+  PASS row_swap_parity_chain_consistent_with_runner_outputs :: sin_+=+0.9873607592, sin_-=-0.9873607592
+
+========================================================================
+Interpretation:
+  The parent narrow no-go theorem's substance, runner output, and
+  load-bearing algebraic content are unchanged across the 2026-05-03
+  / 2026-05-04 criticality_increased invalidation events. The
+  load-bearing pair-pin fact is re-derived self-containedly inside
+  this companion runner (Blocks 7-11) from numpy.linalg.eigh and
+  the inlined chamber-pin numerical values, with no frontier-runner
+  symbol imported (Block 17). The audit lane retains independent
+  authority to re-honor or re-test the prior verdicts on the bumped
+  medium-criticality tier.
+
+PASS=83 FAIL=0

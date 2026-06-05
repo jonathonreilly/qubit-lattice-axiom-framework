@@ -1,0 +1,184 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_g_bare_forced_by_ward_rep_b_record_axiom_invariance_2026_06_04.py
+runner_sha256: 783a4d51da138450e4834d4170aac1d064df271ef68e146ed022fd776b9b9b8c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+g_bare Forced (Ward Rep-B + Same-1PI) Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-gbare-ward-invariance/wt
+Parent note: /private/tmp/cl3-gbare-ward-invariance/wt/docs/G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-05-09.md
+Companion source note: docs/G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing class-A algebraic step
+      g_bare = 1 (from (W1)^2 = (W2) at N_c = 3, positive branch)
+      is invariant under the 2026-06-04 Record-axiom adoption
+      (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: (W1)^2 = 1/6 exact rational
+========================================================================
+  W1 (retained Ward Rep-B form-factor identity):
+    F_Htt^(0)(g_bare) = 1 / sqrt(6) for all g_bare
+  Squared value as exact rational:
+    F_Htt^(0)^2 = 1/6
+  PASS W1_squared_equals_one_sixth :: F^2 = 1/6 == 1/6
+  PASS W1_float_check_squared_close_to_one_sixth :: float (1/sqrt(6))^2 = 0.166666666666666713, 1/6 = 0.166666666666666657
+
+========================================================================
+BLOCK 2: (W2) LHS = RHS at (g_bare, N_c) = (1, 3)
+========================================================================
+  W2 (same-1PI candidate coefficient identity):
+    F_Htt^(0)(g_bare)^2 = g_bare^2 / (2 N_c)
+  At (g_bare, N_c) = (1, 3):
+    RHS = 1^2 / (2 * 3) = 1/6
+  PASS W2_rhs_at_g1_Nc3_equals_one_sixth :: g_bare^2 / (2 N_c) = 1/6 == 1/6
+  PASS W2_LHS_equals_RHS_at_g1_Nc3 :: (W1)^2 = 1/6 == RHS = 1/6
+
+========================================================================
+BLOCK 3: Class-A substitution (W1)^2 = (W2) on Q_L block
+========================================================================
+  Inputs:
+    (W1)^2 = 1/6
+    (NC)   = 3
+  Substitute (W1)^2 for the LHS of (W2):
+    1/6 = g_bare^2 / (2 N_c)
+    1/6 = g_bare^2 / 6
+    g_bare^2 = 6 * 1/6 = 1
+  PASS substitution_yields_g_bare_squared_equals_1 :: g_bare^2 = 2 N_c * F^2 = 6 * 1/6 = 1
+  PASS substitution_uses_only_cited_rationals :: no Record-axiom content; pure Fraction arithmetic
+
+========================================================================
+BLOCK 4: Positive square-root branch g_bare = +1
+========================================================================
+  From Block 3: g_bare^2 = 1.
+  Real square-root branches: {+1, -1}.
+  Parent selects positive branch on physical bare-coupling grounds.
+  PASS positive_branch_squared_equals_g_bare_squared :: (+1)^2 = 1 == 1
+  PASS negative_branch_squared_equals_g_bare_squared :: (-1)^2 = 1 == 1
+  PASS positive_branch_is_positive :: positive_branch = 1 > 0
+  PASS parent_FD_equals_positive_branch :: parent's forced-determination output g_bare = 1 matches positive-branch selection
+
+========================================================================
+BLOCK 5: g_bare-grid uniqueness (matches parent runner Section 6)
+========================================================================
+  For each g_bare on the parent runner's grid, check whether
+  the same-1PI identity g_bare^2 / (2 N_c) = 1/6 holds at N_c = 3.
+  Expectation: holds iff g_bare^2 = 1, i.e., g_bare in {-1, +1}.
+  PASS grid_g_bare_1/2__holds_iff_squared_is_one :: g_bare=1/2, g_bare^2=1/4, g_bare^2/(2 N_c)=1/24, holds=False
+  PASS grid_g_bare_1__holds_iff_squared_is_one :: g_bare=1, g_bare^2=1, g_bare^2/(2 N_c)=1/6, holds=True
+  PASS grid_g_bare_2__holds_iff_squared_is_one :: g_bare=2, g_bare^2=4, g_bare^2/(2 N_c)=2/3, holds=False
+  PASS grid_g_bare_3__holds_iff_squared_is_one :: g_bare=3, g_bare^2=9, g_bare^2/(2 N_c)=3/2, holds=False
+  PASS grid_g_bare_7/11__holds_iff_squared_is_one :: g_bare=7/11, g_bare^2=49/121, g_bare^2/(2 N_c)=49/726, holds=False
+  PASS grid_unique_positive_match_is_g_bare_equals_one :: matches = [Fraction(1, 1)] (expected [1])
+
+========================================================================
+BLOCK 6: Rep-B independence of (W1) on g_bare grid
+========================================================================
+  The retained Ward Rep-B-independence theorem proves
+  F_Htt^(0)(g_bare)^2 = 1/6 for ALL g_bare. The runner records
+  the grid sample only.
+  PASS W1_squared_at_g_bare_1/2_equals_one_sixth :: F^2(g_bare=1/2) = 1/6
+  PASS W1_squared_at_g_bare_1_equals_one_sixth :: F^2(g_bare=1) = 1/6
+  PASS W1_squared_at_g_bare_2_equals_one_sixth :: F^2(g_bare=2) = 1/6
+  PASS W1_squared_at_g_bare_3_equals_one_sixth :: F^2(g_bare=3) = 1/6
+  PASS W1_squared_at_g_bare_7/11_equals_one_sixth :: F^2(g_bare=7/11) = 1/6
+
+========================================================================
+BLOCK 7: Counterfactual contradictions for g_bare != 1
+========================================================================
+  For each g_bare != 1 in the grid, verify that (W2) at N_c=3
+  would require F^2 = g_bare^2 / 6 != 1/6, contradicting (W1).
+  PASS counterfactual_g_bare_1/2_requires_F2_neq_one_sixth :: g_bare=1/2, required F^2 = 1/24 != 1/6
+  PASS counterfactual_g_bare_2_requires_F2_neq_one_sixth :: g_bare=2, required F^2 = 2/3 != 1/6
+  PASS counterfactual_g_bare_3_requires_F2_neq_one_sixth :: g_bare=3, required F^2 = 3/2 != 1/6
+  PASS counterfactual_g_bare_7/11_requires_F2_neq_one_sixth :: g_bare=7/11, required F^2 = 49/726 != 1/6
+  PASS counterfactual_set_nonempty :: |grid \ {1}| = 4
+
+========================================================================
+BLOCK 8: Parent note Record-axiom usage scan (load-bearing section)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-gbare-ward-invariance/wt/docs/G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-05-09.md
+  PASS structural_section_start_found :: start index = 6653
+  PASS structural_section_end_found :: end index = 7779
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+  PASS expected_load_bearing_tokens_present :: expected matches = ['(W1)', '(W2)', 'F_Htt', 'g_bare', 'N_c', 'class A']
+
+========================================================================
+BLOCK 9: Record-axiom counterfactual: identical exact-rational output
+========================================================================
+  Compute g_bare under both outer scopes and verify equality.
+  PASS with_record_axiom_g_bare_equals_one :: = 1
+  PASS without_record_axiom_g_bare_equals_one :: = 1
+  PASS counterfactual_outputs_exact_identical :: |with - without| = 0 == 0
+
+========================================================================
+BLOCK 10: Quantum and Lattice content preserved across memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-gbare-ward-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-gbare-ward-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_log_det_etc :: Record axiom's own scope statement excludes the load-bearing bridges (log-det, source/action, observable identification)
+  PASS new_memo_g_bare_excluded_from_axiom_content :: g_bare convention handling explicitly out of axiom content
+
+========================================================================
+BLOCK 11: Cited-row status verification on current audit ledger
+========================================================================
+  PASS ledger_present :: /private/tmp/cl3-gbare-ward-invariance/wt/docs/audit/data/audit_ledger.json
+  PASS W1_row_present :: g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19
+  PASS W1_audit_status_is_audited_clean :: audit_status = 'audited_clean'
+  PASS W1_effective_status_is_retained_bounded :: effective_status = 'retained_bounded'
+  PASS W1_last_invalidation_NOT_axiom_premise_changed :: last reason = 'criticality_increased:high->critical'
+  PASS W2_row_present :: g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19
+  PASS W2_current_status_documented :: audit_status = 'unaudited'
+  PASS parent_row_present :: g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09
+  PASS parent_previous_audit_status_is_audited_clean :: last prior audit_status = 'audited_clean'
+  PASS parent_load_bearing_step_class_A :: load_bearing_step_class = 'A'
+  PASS parent_prior_runner_total_pass_is_54 :: runner_check_breakdown.total_pass = 54
+  PASS parent_last_invalidation_is_dep_weakened :: last invalidation reason = 'dep_weakened:g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19:retained_bounded->retained_pending_chain'
+
+========================================================================
+BLOCK 12: Four-route exact cross-check on g_bare = +1
+========================================================================
+  PASS route1_via_2NcF2 :: route1 = positive_sqrt(1) = 1
+  PASS route2_via_W2_solved_for_g_squared :: route2 = positive_sqrt(1) = 1
+  PASS route3_grid_unique_non_contradicting_g_is_one :: non-contradicting grid points = [Fraction(1, 1)]
+  PASS route3_value_equals_one :: route3 = 1
+  PASS route4_via_rearrangement :: route4 = positive_sqrt(1) = 1
+  PASS all_four_routes_agree_exactly :: max pairwise diff = 0 (exact rational)
+
+========================================================================
+TOTAL PASS: 61
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing step of G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-05-09.md
+  (class-A rational substitution yielding g_bare = 1) uses ONLY
+  the cited rational data (W1)^2 = 1/6, (W2), and N_c = 3 plus
+  closed-field algebra (positive square-root branch selection).
+  The Record axiom (additive scalar record-readout functional)
+  is neither used nor invoked. Numeric output is identical under
+  both 'Record axiom asserted' and 'Record axiom not asserted'
+  outer scopes. This runner does not re-apply the prior
+  audited_clean verdict; it records that the arithmetic checked
+  here is unchanged by the 2026-06-04 axiom-set adoption.
+
+The audit lane decides whether to honor or re-test the prior
+verdict on the new minimal_axioms premise hash, once the
+cascade-upstream rows yt_ward_identity_derivation_theorem and
+g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19
+themselves recover retained-grade status under their own
+Record-axiom-invariance companions or fresh audits.
+
+----- stderr -----
+

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1312 |
+| unaudited | 1311 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 982 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1596 |
+| `unaudited` | 1595 |
 
 | claim_type | count |
 |---|---:|
@@ -1148,6 +1148,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8274,6 +8275,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** False — Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: Issue: the arithmetic is a valid class-A algebraic closure only after importing stipulated topological and ABSS applicability inputs. Why: the packet explicitly says the one-hop cone-cap authorities do not establish the Cl(3)/Z^3 -> PL S^3 x R bridge or global ABSS route, and the rubric downgrades imported open premises to audited_conditional. Repair: provide a retained bridge theorem for the route, fixed-locus weights, and ABSS applicability. Boundary: retain only the conditional eta=2/9 algebraic certificate.
 - **rationale:** Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: Issue: the arithmetic is a valid class-A algebraic closure only after importing stipulated topological and ABSS applicability inputs. Why: the packet explicitly says the one-hop cone-cap authorities do not establish the Cl(3)/Z^3 -> PL S^3 x R bridge or global ABSS route, and the rubric downgrades imported open premises to audited_conditional. Repair: provide a retained bridge theorem for the route, fixed-locus weights, and ABSS applicability. Boundary: retain only the conditional eta=2/9 algebraic certificate.
 - **auditor confidence:** judicial
+
+### `koide_berry_monopole_bridge_reduction_note_2026-05-31`
+
+- **Note:** [`KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`](../../docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Restricted source-side algebra: C3 Fourier projection, fixed-eigenvector/zero-Berry behavior of native circulants, Pauli two-band Berry comparison, and native commutation with Gamma_chi; not a derivation of a framework chiral coupling or physical Q=2/3 selection.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-191055-da622120cb-koide_berry_monopole_bridge_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The native circulant mass has b-independent Fourier eigenvectors and zero Berry curvature, so it is assigned to the second-order/per-dimension Q=1 branch while Q=2/3 is assigned to a separate Gamma_chi-anticommuting/nonzero-Berry branch.  _(class `A`)_
+- **chain closes:** False — The finite-matrix identities close, but the packet does not derive the bridge from zero/nonzero Berry or effective-action order to the r=1 versus r=1/2 block-weight selection. That branch assignment is imported as a criterion from an explicitly open bounded frontier rather than closed here.
+- **rationale:** The runner genuinely computes the C3 projection, circulant eigenvector rigidity, plaquette Berry checks, Pauli anticommutation checks, native commutator, and Q(r) algebra; these are class-A finite matrix checks, not mere printed constants. However, the load-bearing arrow from native zero Berry/non-chirality to the physical second-order/per-dimension Q=1 branch, and from chiral/nonzero Berry to the Q=2/3 per-block branch, is not independently derived in the restricted packet. The cited block-weight frontier itself states that the equal-block physical selection remains open, so the bridge reduction is support-localizing rather than terminally clean.
+- **open / conditional deps cited:**
+  - `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`
+- **auditor confidence:** high
 
 ### `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29`
 

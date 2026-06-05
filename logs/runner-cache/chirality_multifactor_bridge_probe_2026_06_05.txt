@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/chirality_multifactor_bridge_probe_2026_06_05.py
+runner_sha256: 6920be044f1663bc7b6d83ef436e9025aee9b6431516a6a8f4ed02a18daf9c3c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+==============================================================================
+CHIRALITY MULTI-FACTOR BRIDGE PROBE -- native Cl(3) joint grading on generation
+Targets escape-hatch (II) of KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO
+==============================================================================
+
+[1] Native on-site Cl(3,0) chirality source: volume element is a CENTRAL SCALAR
+------------------------------------------------------------------------------
+  [PASS] Cl(3) volume omega = g1 g2 g3 = i*I2 (scalar, central at odd n=3)
+         omega = [[1j, 0j], [0j, 1j]]  (clifford_volume_chirality, retained)
+  [PASS] no on-site bivector anticommutes with all 3 generators (each misses one)
+         consistent with no_per_site_chirality_theorem (retained_no_go)
+
+[2] Staggered lock: taste-C3 = generation-C3 (the lattice coupling)
+------------------------------------------------------------------------------
+  [PASS] axis-rotation U(123)|hw=1 == generation shift R (taste-C3 locked to gen-C3)
+         (staggered_taste_is_qubit / cl3_taste_generation context)
+  [PASS] staggered free-Dirac symbol sin(k_mu)=0 at all corner momenta {0,pi} (hw=1 kinetic zero)
+         no chiral grading is supplied by the kinetic Dirac on hw=1 (corner_fermion_determinant)
+
+[3] JOINT multi-factor grading: on-site Cl(3) grading coupled to corner axis
+------------------------------------------------------------------------------
+  [PASS] joint grading Gamma_J = sum_mu g_mu (x) Pi_mu is Hermitian
+  [PASS] reduced joint grading is BLOCK-DIAGONAL in generation (no gen-off-diagonal coupling)
+         off-diagonal entries link only DIFFERENT qubit states at the SAME generation corner
+  [PASS] partial-trace over qubit -> PURE GENERATION operator is ZERO (no induced gen grading)
+         gen_op = [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+[4] INERT LEMMA (PT-C, reproven for native grading): generation reduction vanishes
+------------------------------------------------------------------------------
+  [PASS] tr_qubit{D,Gamma_joint} = tr(A*gamma_q) * {X,Gamma_g}  (exact, 400 random draws)
+  [PASS] species-uniform spinor trace: tr(I2 * gamma_q) = 0 for every traceless on-site grading
+         => the joint anticommutation imposes ZERO constraint on the generation factor (INERT)
+  [PASS] end-to-end: induced generation constraint tr_qubit{D, s3 (x) Gamma_chi} = 0
+         the native Cl(3) qubit grading is INERT on generation -- PT-C wall, native variant
+  [PASS] STRONGEST ADVERSARY: off-diagonal corner-shift (J-I) joint grading -> gen constraint = 0
+         even the genuine off-block double-shift coupling is INERT on generation after the qubit/species trace
+
+[5] DISCRIMINATOR vs Hamming no-go: the volume-element variant is a SCALAR on hw=1
+------------------------------------------------------------------------------
+  [PASS] Hamming parity eps=(-1)^hw restricts to -I3 on the generation orbit (S3-uniform)
+  [PASS] Cl(3) volume omega is site-local i*I -> i*I3 on hw=1: a SCALAR on the generation orbit
+  [PASS] omega_hw1 commutes with R and does NOT anticommute with Gamma_chi (scalar -> cannot grade)
+         Cl(3) volume route REDUCES-TO-HAMMING-NO-GO (scalar on orbit) -- distinct reason (centrality), same consequence
+
+[6] Sanity on Q: the only operator that DOES break C3 gives Q != 2/3 (signed divergent / sv 1/2)
+------------------------------------------------------------------------------
+  [PASS] the C3-breaking anticommuting operator has spectrum {-lam,0,+lam}, singular-value Q=1/2 (NOT 2/3)
+         eig=[-0.707, -0.0, 0.707], Q_singular=0.5000; signed-Q divergent (trace 0)
+
+==============================================================================
+SCORECARD PASS=15 FAIL=0
+==============================================================================
+VERDICT: COLLAPSES-TO-ON-BLOCK (PT-C wall) for the native Cl(3) joint grading.
+  - [3] the joint grading g_mu (x) Pi_mu is block-diagonal in generation; its gen
+        partial trace is ZERO (no off-block generation grading induced).
+  - [4] inert lemma (native variant): species-uniform spinor trace tr(I2*gamma_q)=0
+        makes the joint anticommutation impose ZERO constraint on the generation factor;
+        a nonzero induced grading needs tr(A*gamma_q)!=0, i.e. the Dirac entangles the
+        two factors into one combined index -> the grading is no longer a SEPARATE
+        generation grading (it is Gamma_chi itself read through the lock) -> begs r=1/2.
+  - [5] the Cl(3) VOLUME-element variant lands as a SCALAR on hw=1 (omega=iI per site),
+        a REDUCES-TO-HAMMING-NO-GO collapse (distinct reason = odd-dim centrality, same
+        consequence as the S3-uniform Hamming parity eps=-I3).
+  No off-block generation grading; no Q=2/3. The single unsupplied import remains the
+  C3-orbit-splitting chiral grading on R^3_gen -- the native on-site Cl(3) source does
+  not transport across the tensor factor, exactly as PT-C found for spacetime gamma_CL.
+
+----- stderr -----
+

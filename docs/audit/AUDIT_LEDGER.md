@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 176 |
+| **retained** | 177 |
 | **retained_no_go** | 187 |
 | **retained_bounded** | 660 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 32 |
-| unaudited | 1265 |
+| unaudited | 1264 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1016 |
+| `audited_clean` | 1017 |
 | `audited_conditional` | 69 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1549 |
+| `unaudited` | 1548 |
 
 | claim_type | count |
 |---|---:|
@@ -413,6 +413,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_split_the_brick_doublet_complex_structure_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
@@ -6051,6 +6052,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner does perform finite algebraic checks for the CAR/CACR spectra, the constructed spectator taste block, the statistics-blind kernel identity, two-site statistics agnosticism, and the Pauli Casimir. Those checks support the stated partial picture, but they do not derive R or the boost-sector Poincare representation from the framework baseline. The note explicitly says R is unaudited/partial and currently presupposes the antiparticle sign structure it must produce, so the forcing claim remains conditional rather than closed.
 - **open / conditional deps cited:**
   - `FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION.md`
+- **auditor confidence:** high
+
+### `flavor_split_the_brick_doublet_complex_structure_2026-06-04`
+
+- **Note:** [`FLAVOR_SPLIT_THE_BRICK_DOUBLET_COMPLEX_STRUCTURE_2026-06-04.md`](../../docs/FLAVOR_SPLIT_THE_BRICK_DOUBLET_COMPLEX_STRUCTURE_2026-06-04.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited only the finite-dimensional algebraic claim that J=(C-C^T)/sqrt(3) is a C3-equivariant antisymmetric complex structure on the two-dimensional doublet of R[Z3], vanishes on the all-ones singlet, commutes with circulants, and is distinct from Gamma_chi.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-225729-be58aa6e52-flavor_split_the_brick_doubl`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For C^3=I with C^T=C^2, J=(C-C^T)/sqrt(3) is antisymmetric, satisfies J^2=-(I-P_singlet), commutes with C and hence with every circulant H=aI+bC+conj(b)C^2.  _(class `A`)_
+- **chain closes:** True — The identities follow directly from C^3=I, C^T=C^2, I+C+C^2=3P_singlet, and polynomial commutativity in C. The source note explicitly excludes value selection and strong-CP closure, so those are not part of the audited conclusion.
+- **rationale:** The load-bearing step is a genuine class-A algebraic closure: (C-C^2)^2=C^2-2I+C=-(3I-(I+C+C^2))=-3(I-P_singlet), so J^2=-(I-P_singlet), and J annihilates the singlet. Since J is a polynomial in C, it commutes with C and all circulants; since Gamma_chi=(2/3)(I+C+C^2)-I is symmetric with square I while J is antisymmetric with doublet square -I, the objects are distinct. The cited no-go authority is retained_bounded and is used consistently only for the anticommuting-obstruction orientation, not as an open bridge for the positive theorem.
 - **auditor confidence:** high
 
 ### `flavor_substrate_parent_separate_note_2026-05-30`

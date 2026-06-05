@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 173 |
+| **retained** | 174 |
 | **retained_no_go** | 180 |
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1302 |
+| unaudited | 1301 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 986 |
+| `audited_clean` | 987 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1586 |
+| `unaudited` | 1585 |
 
 | claim_type | count |
 |---|---:|
@@ -384,6 +384,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_qubit_berry_holonomy_probe_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5448,6 +5449,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** All four named native mechanisms fail to force r=|b|^2/a^2=1/2, and the RP edge-swap only selects r=1/2 after discarding the signed b structure.  _(class `A`)_
 - **chain closes:** False — The RP sign and arithmetic corrections close algebraically, but the broad four-mechanism negative does not: the self-consistency and information-functional bullets are asserted without their equations or extrema derivations. The trace-vs-center reframe also does not close under the packet's own A=R[Z3]=R⊕C abelian-center description.
 - **rationale:** The runner has five PASS lines, all algebraic or asserted algebraic sanity checks, but it does not implement the N2 gap-equation claim or the N3 entanglement/Fisher-extremum claim. More importantly, the source's displayed operator-algebra reframe is false or at least convention-incomplete as written: for A=R[Z3]=R⊕C with abelian center, an equal-weight center state is tracial, and a unique faithful trace is not forced without specifying a canonical Plancherel/regular trace. Therefore the bounded theorem plus surviving reframe does not close from the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04`
+
+- **Note:** [`FLAVOR_LOGDET_FACTOR_4B_JACOBI_DERIVATIVE_NARROW_THEOREM_NOTE_2026-06-04.md`](../../docs/FLAVOR_LOGDET_FACTOR_4B_JACOBI_DERIVATIVE_NARROW_THEOREM_NOTE_2026-06-04.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-n identity for an invertible complex matrix family M(j)=D+diag(j): ∂W/∂j_x = Re Tr[M(j)^(-1)P_x] = Re[M(j)^(-1)]_{xx} for W=log|det M(j)|.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-193555-40ccb6bf53-flavor_logdet_factor_4b_jaco`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Applying d log|f| = Re(df/f) to f = det M(j), Jacobi's formula gives ∂_x log|det M(j)| = Re Tr[M(j)^(-1) ∂M/∂j_x], and for M(j)=D+diag(j), ∂M/∂j_x=P_x.  _(class `A`)_
+- **chain closes:** True — The proof closes by standard finite-dimensional calculus: Jacobi's determinant formula, d log|f| = Re(df/f) for nonzero complex f, and the elementary derivative ∂(D+diag j)/∂j_x=P_x. The trace/projector identity Tr[A P_x]=A_xx is correct with the stated matrix convention.
+- **rationale:** The audited claim is narrow and finite-dimensional, with no dependence on the Record axiom or on the cited physics residuals. The displayed identities, absolute-value convention, real-part convention, projector normalization, and trace/index contraction are internally consistent. The runner performs genuine numerical sanity checks of the finite algebra rather than printing constants or importing the contested premise; it is corroborative but not needed for the proof closure.
 - **auditor confidence:** high
 
 ### `flavor_measure_positivity_agnostic_note_2026-05-31`

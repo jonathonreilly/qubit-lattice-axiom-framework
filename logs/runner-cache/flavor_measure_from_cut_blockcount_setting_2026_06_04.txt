@@ -1,0 +1,71 @@
+==============================================================================
+MEASURE-FROM-THE-CUT: block-count = record-natural (partition-only) measure?
+r=1/2 as CLASSICAL-RECORD setting, r=1 as WITHIN-BLOCK setting -- TWO settings, NOT forced
+==============================================================================
+
+=== SECTION 1: the cut (T2) -- recordable algebra = center = block labels ===
+[PASS] 1.1 central idempotents e0 (rank1, singlet) + e1 (rank2, doublet): idempotent, orthogonal, complete
+       Tr e0=1, Tr e1=2; e0+e1=I
+[PASS] 1.2 einselected (C_3-commutant) algebra = circulants span{I,C,C^2}; its center has exactly 2 atoms {e0,e1}
+       the classical record resolves these 2 central atoms (which block); within-block is the commutant interior
+[PASS] 1.3 center(M_n)=scalars: within a simple block there is NO further recordable central label (generic M in M_2 commuting with all generators must be scalar)
+       => T2: within-block (simple-factor interior) carries no classical record; only the block label is recordable
+[PASS] 1.4 recordable partition = {singlet block, doublet block}: exactly 2 cells (the classical record's range)
+       the record's alphabet is the 2 block labels; the masses split as scale(singlet) vs ratio(doublet)
+[PASS] 1.5 Wedderburn type R[Z3]=R(+)C: singlet=M_1(R) real-dim1; doublet=FS-complex block with native complex structure J_cs (real, C_3-equivariant, J_cs^2=-e1)
+       the doublet's real-dim 2 = (1 line) x (the J_cs complex structure) -- the within-block datum
+
+=== SECTION 2: block-count = unique partition-only measure (record additivity) -> r=1/2 ===
+[PASS] 2.1 partition-only + additivity + label-permutation-symmetry => UNIQUE measure = counting (1,1)
+       no within-cell structure exists to break the singlet<->doublet label symmetry => equal per block
+[PASS] 2.2 the (1,2) weighting is label-ASYMMETRIC -> NOT definable from the bare partition (needs a size/dimension input external to 'which block')
+       (1,2) breaks the singlet<->doublet symmetry of the label set; counting (1,1) does not
+[PASS] 2.2b uniqueness sweep: only symmetric weights (w0==w1, i.e. counting up to scale) are partition-only-definable; all w0!=w1 (incl. Born's (1,2)) require an extra label-distinguishing input
+       3 symmetric survivors, 6 asymmetric require external dim input
+[PASS] 2.3 block-count (equal power PER BLOCK: 3a^2 = 6|b|^2) -> r = 1/2
+       ||aI||^2=3, ||bC+bC^2||^2=6|b|^2 -> r=|b|^2/a^2=0.5000
+[PASS] 2.4 r=1/2 -> Q = 2/3 (the observed charged-lepton value)
+       Q(1/2)=0.666667
+[PASS] 2.5 r=1/2 is the EQUAL 2-block power fractions point (1/2,1/2) = max 2-cell Shannon entropy = the partition-only record's MaxEnt setting
+       block power fractions at r=1/2 = [0.5 0.5] (entropy ln2, the 2-label maximum)
+
+=== SECTION 3: Born/dimension needs within-block state-count -> r=1 ===
+[PASS] 3.1 Born/tracial state rho=I/3 weights blocks by DIMENSION: (Tr e0, Tr e1) populations = (1/3, 2/3)
+       populations = (0.3333, 0.6667) = rank/dimension weighting (1,2)
+[PASS] 3.2 Born/dimension (equal power PER WITHIN-BLOCK STATE: 3a^2/1 = 6|b|^2/2) -> r = 1
+       divides the doublet power by its 2 within-block states -> r=1.0000
+[PASS] 3.3 r=1 -> Q = 1 (the framework thermal/dimension default)
+       Q(1)=1.000000
+[PASS] 3.4 the (1,2) Born weights = the RANKS of the central idempotents (within-block state counts), an operator attribute beyond the bare 'which block' label
+       rank(e0)=1, rank(e1)=2; Born reads these ranks, block-count does not
+
+=== SECTION 4: operational distinction -- center-as-atoms is dimension-blind ===
+[PASS] 4.1 two algebras, SAME center-as-atoms (2 labels) but DIFFERENT block dims -> identical label-record, different Born weights
+       labels identical ('blk0', 'blk1'); dims (1, 2) vs (1, 1)
+[PASS] 4.2 block-count is dimension-INVARIANT (same on both algebras); Born is dimension-DEPENDENT (differs) => a partition-only record can realize block-count but provably NOT Born
+       block-count (1, 1)==(1, 1); Born (1, 2)!=(1, 1)
+[PASS] 4.3 RESIDUAL HOLE (verified, not hidden): central idempotent-as-PROJECTOR exposes its rank = block dim => projector-valued record sees Born (1,2); label-valued record sees block-count (1,1)
+       the open bit = does the classical record carry the central idempotent's RANK or only its LABEL
+[PASS] 4.4 SETTINGS NOT FORCING: r=1/2 (beta=0->w_s=w_d, equal block) and r=1 (w_s=2w_d, dimension) are both points of the retained FREE cone (isotype ratio free) -> neither forced
+       cone r-values for sample (alpha,beta) = [0.5, 1.0, 0.2] -> contains both 1/2 and 1
+[PASS] 4.5 the label-vs-rank record bit = the det_C/det_R fork: label->doublet=1 complex mode (block-count, r=1/2); projector-rank->doublet=2 real modes (Born/dimension, r=1)
+       relocates the standing det_C/det_R datum onto the record's label-vs-rank reading of the center
+[PASS] 4.6 block-count is a GENUINELY DIFFERENT measure from Born (not a relabeling): they differ whenever some block has dim>1, which holds here (doublet dim 2)
+       (1,1) != (1,2): the two settings are distinct points, not the same point renamed
+
+=== SECTION 5: honesty -- residual named; dial stays open (no all-sector collapse) ===
+[PASS] 5.1 dial is multi-valued: r in {0,1/2,1} -> Q in {1/3, 2/3, 1} all distinct (settings, not a unique value)
+       Q values [0.3333, 0.6667, 1.0]
+[PASS] 5.2 NO all-sector collapse: mechanism is per-sector (record bit), silent on quarks/neutrinos (observed r_up~0.77, r_nu~0.00 != 1/2) -> dial OPEN, mechanism not overreaching
+       r_lepton=0.500 (=1/2, record setting); r_up=0.775; r_nu=0.000 -> not all 1/2
+[PASS] 5.3 VERDICT: TWO-SETTINGS-FROM-CUT; partition-only->block-count AIRTIGHT for a LABEL-valued record, modulo the ONE named residual (label vs projector-rank reading of T2's recordable center)
+       r=1/2 = record-natural (classical/label) setting; r=1 = within-block (projector-rank/quantum) setting
+[PASS] 5.4 consistent with prior consolidated status (det_C/block-count<->det_R/Born is one open bit): this note RELOCATES that bit to the record's label-vs-projector-rank reading; does not over-close
+       no new axiom, no import; a sharper localization of the existing free isotype-ratio datum
+
+==============================================================================
+SCORECARD: 25/25 PASS, 0 FAIL
+VERDICT: TWO-SETTINGS-FROM-CUT (partition-only->block-count AIRTIGHT for a label-valued record,
+         modulo ONE named residual: label vs projector-rank reading of T2's recordable center).
+         r=1/2 = record-natural setting; r=1 = within-block setting. NOT forced; dial stays OPEN.
+==============================================================================

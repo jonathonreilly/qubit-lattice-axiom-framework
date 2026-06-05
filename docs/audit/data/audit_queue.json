@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 269,
     "high": 284,
-    "leaf": 424,
+    "leaf": 423,
     "medium": 325
   },
   "cycle_break_target_count": 0,
@@ -27008,31 +27008,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39082,6 +39057,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 99,
-  "total_pending": 1302
+  "ready_count": 98,
+  "total_pending": 1301
 }

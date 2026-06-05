@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 624 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1361 |
+| unaudited | 1360 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 950 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1645 |
+| `unaudited` | 1644 |
 
 | claim_type | count |
 |---|---:|
@@ -1108,6 +1108,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9327,6 +9328,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — Within the stated scope and accepted standard lattice normalization, the Taylor expansion, parity-even no-odd-power conclusion, O_h invariance, Planck suppression estimate, and corrected normalized cubic-harmonic identity close from the provided note and runner. Experimental-bound comparisons are treated as contextual bounded-status checks rather than independently audited external facts.
 - **rationale:** The load-bearing step is not a definition or tuned numerical match: the runner implements the standard lattice dispersion, expands it, computes the Planck-scale coefficient, constructs the O_h/cubic angular structure, and verifies the corrected normalized spherical-harmonic identity. No upstream cited authority is non-retained or open, and no helper import is missing from the restricted packet. The clean verdict is limited to the bounded derivation from the cubic lattice plus standard kinetic normalization, not to an independent audit of real-world experimental bounds or the broader physical premise that nature uses this lattice.
 - **auditor confidence:** medium
+
+### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional projective measurement in the stated canonical Naimark/Luders construction, including the claimed unitary-twist/frame-covariance discussion.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-172345-fa1c72ddd0-lsp_projective_derivation_fr`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the canonical dilation U_int(|psi>⊗|0>) = Σ_r (P_r|psi>)⊗|r> into K_r = <r|_A U_int (I⊗|0>_A) gives K_r = P_r.  _(class `A`)_
+- **chain closes:** False — The canonical K_r=P_r calculation itself closes by direct finite-dimensional algebra. As written, however, Step 3 overstates the apparatus-unitary twist: for arbitrary V_A with the same readout basis, K_r = U_sys Σ_s <r|V_A|s> P_s and K_r†K_r = Σ_s |<r|V_A|s>|^2 P_s, not generally P_r.
+- **rationale:** The core canonical-frame derivation is a valid class-A algebraic substitution after the explicit isometry construction. The restricted packet also contains a math-bearing overbroad claim that (U_sys⊗V_A)U_int is still a dilation of the same first-outcome POVM for arbitrary apparatus unitary V_A; that is false unless the readout frame is correspondingly updated or V_A is restricted so it does not mix the projective outcome labels. Therefore the note is not clean as written, though the narrower V_A=I system-unitary twist and the canonical K_P=P result are sound.
+- **auditor confidence:** high
 
 ### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`
 

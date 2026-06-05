@@ -1,0 +1,148 @@
+BZ Volume (2π)^3 Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-bz-volume-invariance/wt
+Parent note: /private/tmp/cl3-bz-volume-invariance/wt/docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md
+Companion source note: docs/BZ_VOLUME_TWO_PI_CUBED_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing substrate-internal identification
+      vol_Lebesgue([-π, π]^3) = (2π)^3,  mu_Haar(dk) = d^3k / (2π)^3
+      is invariant under the 2026-06-04 Record-axiom adoption
+      (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: vol_Lebesgue([-π, π]) = 2π  (parent step B4-1D)
+========================================================================
+  T^1 = R / 2πZ has fundamental domain [-π, π].
+  Standard 1D Lebesgue measure: vol = π - (-π) = 2π.
+  PASS vol_1D_closed_equals_2pi :: vol_closed = 6.283185307179586, expected = 6.283185307179586
+  PASS vol_1D_riemann_equals_2pi :: vol_riemann (N=4096) = 6.283185307179586
+
+========================================================================
+BLOCK 2: vol_Lebesgue([-π, π]^2) = (2π)^2  (parent step B4-2D)
+========================================================================
+  T^2 = (R/2πZ)^2 has fundamental domain [-π, π]^2.
+  Lebesgue product measure: vol = (2π) × (2π) = (2π)^2.
+  PASS vol_2D_closed_equals_2pi_squared :: vol_closed = 39.478417604357432, expected = 39.478417604357432
+  PASS vol_2D_riemann_equals_2pi_squared :: vol_riemann (N=256) = 39.478417604357432
+
+========================================================================
+BLOCK 3: vol_Lebesgue([-π, π]^3) = (2π)^3  (load-bearing BZ volume, parent T2/B4-3D)
+========================================================================
+  T^3 = (R/2πZ)^3 has fundamental domain [-π, π]^3.
+  Lebesgue product measure: vol = (2π) × (2π) × (2π) = (2π)^3.
+  PASS vol_3D_closed_equals_2pi_cubed :: vol_closed = 248.050213442398530, expected = 248.050213442398530
+  PASS vol_3D_riemann_equals_2pi_cubed :: vol_riemann (N=128) = 248.050213442398530
+  PASS vol_3D_matches_parent_certificate :: (2π)^3 = 248.0502134424 vs parent certificate 248.0502134
+
+========================================================================
+BLOCK 4: mu_Haar(dk) = d^3k / (2π)^3, ∫_{[-π,π]^3} mu_Haar = 1  (parent T3/B6/H)
+========================================================================
+  Haar density: 1/(2π)^3 ≈ 0.00403144...
+  Probability normalization: ∫_{[-π, π]^3} 1/(2π)^3 d^3k = 1.
+  PASS haar_density_value :: 1/(2π)^3 = 0.004031441804149937
+  PASS haar_probability_normalization_N16 :: ∫ mu_Haar (N=16) = 1.000000000000000
+  PASS haar_probability_normalization_N32 :: ∫ mu_Haar (N=32) = 1.000000000000000
+  PASS haar_probability_normalization_N64 :: ∫ mu_Haar (N=64) = 1.000000000000000
+  PASS haar_probability_normalization_N128 :: ∫ mu_Haar (N=128) = 1.000000000000000
+  PASS haar_probability_via_product_measure :: ((1/2π) × 2π)^3 = 1.000000000000000
+
+========================================================================
+BLOCK 5: substrate-internal (2π)^3 matches continuum R^3 Fourier convention (parent B7, non-load-bearing)
+========================================================================
+  Continuum 3D Fourier convention on R^3 uses constant (2π)^3
+  in the d^3k / (2π)^3 inverse-transform denominator.
+  Both inherit the same Fourier pairing e^{i k · x}.
+  PASS continuum_match_numerical :: substrate (2π)^3 = 248.050213442398530, continuum (2π)^3 = 248.050213442398530
+  PASS continuum_match_bitwise_identical :: diff bits = 0.0
+
+========================================================================
+BLOCK 6: Pontryagin-dual functoriality on Z^3 -> T^3 (parent steps B1-B3)
+========================================================================
+  Characters χ_k(n) = exp(i k·n), k ∈ [-π,π]^3, n ∈ Z^3.
+  Periodicity in k with period 2π per coordinate;
+  orthogonality of distinct integer characters.
+  PASS characters_periodic_with_period_2pi :: checked 48 (k, n, axis) triples; fails = 0
+    <χ_(0, 0, 0), χ_(0, 0, 0)> ≈ +1.000000 + +0.000000i (expected 1.0)
+    <χ_(1, 0, 0), χ_(1, 0, 0)> ≈ +1.000000 + +0.000000i (expected 1.0)
+    <χ_(1, 0, 0), χ_(0, 0, 0)> ≈ +0.000000 + +0.000000i (expected 0.0)
+    <χ_(1, 1, 0), χ_(0, 1, 0)> ≈ +0.000000 + +0.000000i (expected 0.0)
+    <χ_(2, -1, 3), χ_(2, -1, 3)> ≈ +1.000000 + +0.000000i (expected 1.0)
+  PASS character_orthogonality_riemann_check :: checked 5 pairs; misses = 0
+
+========================================================================
+BLOCK 7: Haar measure translation-invariance on T^3 (parent T3/B5)
+========================================================================
+  For any τ ∈ T^3, ∫_{T^3} f(k - τ) mu_Haar(dk) = ∫ f(k) mu_Haar(dk).
+  Verified via Riemann-sum on a smooth periodic test function.
+    τ = (0.5, 0.0, 0.0): |∫ f(k-τ) - ∫ f(k)| = 3.100e-19
+    τ = (1.7, -0.4, 0.9): |∫ f(k-τ) - ∫ f(k)| = 3.628e-19
+    τ = (1.0471975511965976, 0.6283185307179586, -0.4487989505128276): |∫ f(k-τ) - ∫ f(k)| = 2.137e-19
+  PASS haar_translation_invariance_riemann :: max diff over 3 shifts = 3.628e-19
+
+========================================================================
+BLOCK 8: Parent note Record-axiom usage scan (load-bearing sections)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-bz-volume-invariance/wt/docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md
+  PASS structural_section_start_found :: ## Theorem found at offset 3221
+  PASS structural_section_end_found :: ## Honest assessment found at offset 10510
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+
+========================================================================
+BLOCK 9: Parent note's load-bearing sections cite Lattice content
+========================================================================
+  PASS parent_load_bearing_lattice_content_present :: found tokens (need >= 4): ['Z³', 'T³', '[-π, π]³', 'Pontryagin', 'Haar']
+
+========================================================================
+BLOCK 10: Record-axiom counterfactual: identical numeric output
+========================================================================
+  Compute (2π)^3 and 1/(2π)^3 under explicit 'Record asserted'
+  and 'Record not asserted' outer scopes; verify identity.
+  PASS with_record_axiom_bz_vol_equals_2pi_cubed :: = 248.050213442398530
+  PASS without_record_axiom_bz_vol_equals_2pi_cubed :: = 248.050213442398530
+  PASS counterfactual_bz_vol_identical :: |with - without| = 0.000e+00
+  PASS with_record_axiom_haar_density :: = 0.004031441804149937
+  PASS without_record_axiom_haar_density :: = 0.004031441804149937
+  PASS counterfactual_haar_identical :: |with - without| = 0.000e+00
+
+========================================================================
+BLOCK 11: Lattice content preserved across the two memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-bz-volume-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-bz-volume-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Lattice_axiom_content :: new Lattice axiom (Z^3) preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_load_bearing_bridges :: Record axiom's scope statement excludes log-det / source-action / etc., none of which the BZ-volume identification uses anyway
+
+========================================================================
+BLOCK 12: (2π)^3 computed four independent ways
+========================================================================
+  PASS route1_lebesgue_product :: route1 = 248.050213442398530
+  PASS route2_cube_of_2pi :: route2 = 248.050213442398530
+  PASS route3_haar_denominator :: route3 = 248.050213442398530
+  PASS route4_direct_riemann_sum :: route4 = 248.050213442398530
+  PASS all_four_routes_agree :: max pairwise diff small
+
+========================================================================
+TOTAL PASS: 40
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing chain of BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_
+  NARROW_THEOREM_NOTE_2026-05-26.md uses ONLY Lattice axiom
+  content (Z^3 site set) plus standard textbook abelian-
+  harmonic-analysis and real-analytic identities (Pontryagin
+  duality, Lebesgue product measure, Haar uniqueness). The
+  Record axiom (additive scalar record-readout functional) is
+  neither used nor invoked. Numeric output is identical under
+  both 'Record axiom asserted' and 'Record axiom not asserted'
+  outer scopes. This runner does not re-apply the prior audit
+  verdict; it records that the arithmetic checked here is
+  unchanged by the 2026-06-04 axiom-set adoption.
+
+The audit lane decides whether to honor or re-test the prior
+verdict on the new minimal_axioms premise hash.

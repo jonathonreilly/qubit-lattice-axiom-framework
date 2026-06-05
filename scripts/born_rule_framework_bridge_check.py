@@ -129,6 +129,10 @@ def test_source_firewall() -> None:
     section("T7: source-note dependency and firewall wording")
     text = NOTE.read_text(encoding="utf-8")
     required = [
+        "Claim type:** bounded support note",
+        "Type:** conditional / support",
+        "identification `tau = rho_ref` treated as the open conditional bridge",
+        "physical pre-record identification remains open",
         "Framework-Dependency Repair",
         "GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
         "BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
@@ -141,6 +145,8 @@ def test_source_firewall() -> None:
         "arbitrary unsharp-instrument uniqueness",
     ]
     forbidden = [
+        "Claim type:** bounded_theorem",
+        "Type:** bounded_theorem",
         "Status" + ":",
         "effective " + "status",
         "".join(["audi", "ted_"]),

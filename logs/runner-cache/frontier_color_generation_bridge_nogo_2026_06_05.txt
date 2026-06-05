@@ -1,0 +1,115 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_generation_bridge_nogo_2026_06_05.py
+runner_sha256: af3d7bbbf7b7a708bed67ba7fd75f06c6a550f7e74744dcb28517314af8c6b09
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+==============================================================================
+COLOR/GENERATION Z_3 BRIDGE NO-GO DIAGNOSTIC
+==============================================================================
+Re-derives whether SU(3)_c center (3,3w,3w^2) reconciles with the
+generation regular (3,0,0). Tests every native bridge route.
+
+==============================================================================
+R0: BASELINE CHARACTERS (center scalar vs regular permutation)
+==============================================================================
+  [PASS] P^3 = I, det P = 1 (axis-cycle is a proper order-3 rotation)
+  [PASS] Generation regular character is (3, 0, 0)  ((3, 0, 0))
+  [PASS] Center scalar z^3 = I
+  [PASS] Color center character is (3, 3w, 3w^2)  (chi_center=(3, 3w, 3w^2) numerically (-1.500+2.598j, -1.500-2.598j))
+  [PASS] Regular rep = chi_0 + chi_w + chi_w2 (each multiplicity 1)  ({'chi_0': '1', 'chi_w': '1', 'chi_w2': '1'})
+  [PASS] Center rep = 3*chi_w (chi_0,chi_w2 absent)  ({'chi_0': '0', 'chi_w': '3', 'chi_w2': '0'})
+  [PASS] Characters DIFFER => reps are INEQUIVALENT as Z_3 reps
+
+==============================================================================
+RA: DIRECT INTERTWINER (identify both Z_3's, solve T P = Z T)
+==============================================================================
+  [PASS] Hom_{Z3}(regular, scalar) has dimension = 3 (= 1*3 on shared chi_w)  (dim=3)
+  [PASS] Every equivariant map regular->scalar has rank <= 1 (NOT invertible)  (max rank over Hom = 1)
+  [PASS] => NO Z_3-equivariant isomorphism (Schur: inequivalent irreps)
+  [PASS] Z_3 generator relabel g->g^2 maps center to (3,3w^2,3w) != (3,0,0)
+
+==============================================================================
+RB: FOURIER/DFT TWIST (diagonalize axis-cycle, compare to center)
+==============================================================================
+  [PASS] DFT diagonalizes axis-cycle: spectrum {1, w, w^2}  (diag=[ 1. +0.j    -0.5+0.866j -0.5-0.866j])
+  [PASS] Center scalar spectrum is {w, w, w} (degenerate)
+  [PASS] Eigenvalue multisets DIFFER {1,w,w^2} vs {w,w,w}
+  [PASS] => NO Fourier/character twist (similarity) reconciles them
+  [PASS] Reconciliation needs an INDEPENDENT diag(w,1,w^2) twist (a 2nd Z_3)  (diag(w,1,w^2)*diag(1,w,w^2) = w*I -> twist is extra structure)
+
+==============================================================================
+RC: MULTI-SITE COMPOSITE (tensor powers of regular rep)
+==============================================================================
+  [PASS]   regular^{x1} has EQUAL irrep multiplicities [np.float64(1.0), np.float64(1.0), np.float64(1.0)]  (3^{1-1}=1)
+  [PASS]   regular^{x2} has EQUAL irrep multiplicities [np.float64(3.0), np.float64(3.0), np.float64(3.0)]  (3^{2-1}=3)
+  [PASS]   regular^{x3} has EQUAL irrep multiplicities [np.float64(9.0), np.float64(9.0), np.float64(9.0)]  (3^{3-1}=9)
+  [PASS]   regular^{x4} has EQUAL irrep multiplicities [np.float64(27.0), np.float64(27.0), np.float64(27.0)]  (3^{4-1}=27)
+  [PASS] Tensor powers of regular rep keep chi_0=chi_w=chi_w2 (cannot isolate chi_w)
+  [PASS] Single regular rep has chi_w multiplicity 1, cannot supply 3*chi_w  (3*chi_w needs mult-3 of one nontrivial irrep + zero of others)
+
+==============================================================================
+RD: Cl(3) GRADING TWIST (regular (x) chi_k for each k)
+==============================================================================
+  [PASS]   regular (x) chi_0 = regular (twist leaves (3,0,0) fixed)  (twisted=((3+0j), 0j, 0j))
+  [PASS]   regular (x) chi_w = regular (twist leaves (3,0,0) fixed)  (twisted=((3+0j), 0j, 0j))
+  [PASS]   regular (x) chi_w2 = regular (twist leaves (3,0,0) fixed)  (twisted=((3+0j), 0j, 0j))
+  [PASS] No Cl(3)/Z_3 grading twist of the regular rep yields (3,3w,3w^2)
+
+==============================================================================
+RE: CARRIER SEPARATION IN C^8 (B_sym vs hw=1; single-generator test)
+==============================================================================
+  [PASS] Color carrier B_sym is 3-dimensional  (dim=3)
+  [PASS] Generation carrier hw=1 is 3-dimensional  (dim=3)
+  [PASS] B_sym ∩ hw=1 has dimension exactly 1 (genuinely different carriers)  (intersection dim=1)
+  [PASS] Shared line = symmetric (e1+e2)/sqrt2, in BOTH carriers
+  [PASS] Axis-cycle restricted to hw=1 has character (3,0,0)  (chi=(3,0,0))
+  [PASS] Axis-cycle does NOT preserve B_sym (maps it out of the color carrier)  (max leakage=1.000)
+  [PASS] On the shared line, axis-cycle image != w * (shared vector)  (P (e1+e2)/sqrt2 = (e2+e3)/sqrt2 != w*(e1+e2)/sqrt2)
+  [PASS] => NO single Z_3 generator realizes BOTH center-scalar AND axis-cycle
+
+==============================================================================
+RF: NATIVE ORDER-3 UNITARIES (scalar-on-color vs cycle-on-gen)
+==============================================================================
+  [PASS] |trace| invariant: scalar center |tr|=3, axis-cycle |tr|=0
+  [PASS] Trace is similarity-invariant => obstruction is basis-independent  (no native map changes a class function)
+  [PASS] Distinct-eigenvalue count: center=1, axis-cycle=3 (invariant)  (center=1, cycle=3)
+  [PASS] NAMED IMPORT 'scalar-generation-action' WOULD match center (trivially)  (but it discards the native axis-cycle => an IMPORT, not a derivation)
+
+==============================================================================
+RG: NATIVE SUBREP TEST (does 3*chi_w live inside C^8 under axis-cycle?)
+==============================================================================
+  [PASS] C^8 axis-cycle character is (8, 2, 2)  (chi=(np.float64(8.0), np.float64(2.0), np.float64(2.0)))
+  [PASS] C^8 decomposes as 4*chi_0 + 2*chi_w + 2*chi_w2 under axis-cycle  ({'chi_0': np.float64(4.0), 'chi_w': np.float64(2.0), 'chi_w2': np.float64(2.0)})
+  [PASS] Native chi_w multiplicity in C^8 is 2 < 3 (cannot host 3*chi_w)
+  [PASS] Any native 3D Z_3-subspace mixes chi_0/chi_w/chi_w2 (never pure 3*chi_w)  (=> SU(3)_c center scalar is NOT a native axis-cycle subrep)
+  [PASS] Center scalar realized as 8D op acts as w*I on B_sym
+  [PASS] Center-scalar 8D op != I, axis-cycle, or its square (distinct traces)  (tr center-op=3.50+2.60j, axis-cycle traces=[np.float64(8.0), np.float64(2.0), np.float64(2.0)])
+
+==============================================================================
+RH: PROJECTIVE / PHASE-TWIST BRIDGE (does any global phase match them?)
+==============================================================================
+  [PASS] No global phase e^{i t} makes axis-cycle spectrum = center spectrum  ({1,w,w^2}*e^{it} never collapses to {w,w,w})
+  [PASS] det(axis-cycle)=1 and det(center)=w^3=1 (equal det, still inequivalent)  (equal determinant is necessary, not sufficient)
+
+==============================================================================
+SUMMARY
+==============================================================================
+  [PASS] center=3*chi_w, regular=chi_0+chi_w+chi_w2 (class-A)
+
+==============================================================================
+COLOR/GENERATION BRIDGE NO-GO: PASS=46 FAIL=0
+VERDICT: GENUINE-NO-GO modulo named import 'scalar-generation-action'
+  (the center scalar rep 3*chi_w and the regular permutation rep
+   chi_0+chi_w+chi_w2 are inequivalent Z_3 reps; trace/eigenvalue
+   invariance kills every native intertwiner, Fourier twist,
+   tensor-composite, grading twist, and single-generator map; the
+   carriers B_sym and hw=1 meet in dim 1, so internal color =
+   generation is a category error unless one IMPORTS a non-native
+   scalar Z_3 action on the hw=1 orbit.)
+==============================================================================
+
+----- stderr -----
+

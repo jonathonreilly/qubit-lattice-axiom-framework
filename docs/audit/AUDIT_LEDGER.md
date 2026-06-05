@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 177 |
 | **retained_no_go** | 187 |
-| **retained_bounded** | 661 |
+| **retained_bounded** | 662 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 32 |
-| unaudited | 1263 |
+| unaudited | 1262 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1018 |
+| `audited_clean` | 1019 |
 | `audited_conditional` | 69 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1547 |
+| `unaudited` | 1546 |
 
 | claim_type | count |
 |---|---:|
@@ -415,6 +415,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_split_the_brick_doublet_complex_structure_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
@@ -6092,6 +6093,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The only way a C3-equivariant parent folds to a chiral on-block operator is if the qubit carries an order-3 charge diag(1,ω), which is the same complex/order-3 det_C structure as the value import.  _(class `A`)_
 - **chain closes:** False — The displayed matrix identities checked by the runner close as algebraic facts. The broader uniqueness/non-native/common-root conclusion requires an unprovided bridge proving that diag(1,ω) is the only C3-equivariant folding channel and is the same non-native det_C import under the Z2 spin-factor reading.
 - **rationale:** The runner genuinely computes the finite parity, commutator, anticommutator, and determinant/order identities, and the displayed closed-form formulas in that finite algebra are consistent. However, the runner does not prove the stated 'only way' folding theorem or the non-native status of diag(1,ω) inside complex M2(C); the source note itself flags that as the full det_C crux. With no cited authority supplied for that bridge, the bounded theorem is conditional rather than clean.
+- **auditor confidence:** high
+
+### `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04`
+
+- **Note:** [`FLAVOR_SUPPLIED_HEAT_KERNEL_ARROW_R_HALF_STABILITY_BOUNDED_NOTE_2026-06-04.md`](../../docs/FLAVOR_SUPPLIED_HEAT_KERNEL_ARROW_R_HALF_STABILITY_BOUNDED_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional on the displayed maps sharpen(r)=2r^2, thermalize(r)=sqrt(r/2), and the supplied path r(t)=tanh(t)^4, r=1/2 is an inverse-branch stability boundary and a transit value of the supplied path, not an attractor.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-225920-a74fd76903-flavor_supplied_heat_kernel_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the supplied path r(t)=tanh(t)^4, dr/dt=4 tanh(t)^3 sech(t)^2>0 for finite t>0, so r=1/2 is crossed as a transit value rather than selected as an attractor.  _(class `A`)_
+- **chain closes:** True — The retained Koide lightcone authority supplies Q=2/3 iff r=1/2 on the stated positive C3-circulant line, and the map/path claims reduce to direct algebra and calculus. The physical/native arrow-selection bridge is not closed, but the note explicitly excludes that broader claim from scope.
+- **rationale:** The load-bearing math is a genuine algebraic/calculus closure over the supplied maps and path: the inverse identities, fixed points, derivatives, monotonicity, endpoint limits, and r=1/2 crossing all check independently. The runner source performs actual symbolic and numerical checks rather than merely printing pass constants, and it does not import the contested native-beta premise as a derived result. The verdict is clean only for the narrowed bounded route-pruning statement; it does not promote r(t)=tanh(t)^4 to a framework-native beta law or decide the physical arrow.
 - **auditor confidence:** high
 
 ### `flavor_trace_vs_center_dissolves_note_2026-05-30`

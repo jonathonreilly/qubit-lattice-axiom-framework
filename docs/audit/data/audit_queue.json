@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 271,
     "high": 281,
-    "leaf": 388,
+    "leaf": 387,
     "medium": 325
   },
   "cycle_break_target_count": 0,
@@ -27011,30 +27011,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_lightcone_primitive_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FLAVOR_SUPPLIED_HEAT_KERNEL_ARROW_R_HALF_STABILITY_BOUNDED_NOTE_2026-06-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/native_arrow_resolution.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -38216,6 +38192,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 59,
-  "total_pending": 1265
+  "ready_count": 58,
+  "total_pending": 1264
 }

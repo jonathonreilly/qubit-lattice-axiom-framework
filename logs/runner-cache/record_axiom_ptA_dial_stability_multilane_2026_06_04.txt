@@ -1,0 +1,80 @@
+[PASS] 1.1 dial identity Q(r)=1/3+(2/3)r is exact and monotone increasing on [0,inf)
+       Koide-cone biconditional Q=2/3<=>r=1/2 is RETAINED on origin/main
+[PASS] 1.2 reference point r=0 -> Q=1/3 (pure singlet / democratic; p_s=1, p_d=0)
+       isotype weight (singlet:doublet) = (1:0); spectrum [1,1,1] S_3-degenerate
+[PASS] 1.3 reference point r=1/2 -> Q=2/3 (equipartition / charged leptons; p_s=p_d=1/2)
+       isotype weight (singlet:doublet) = (1:1) EQUAL BLOCK POWER; the symmetric point
+[PASS] 1.4 reference point r=1 -> Q=1 (Born/dimension / one-dominant; p_s=1/3, p_d=2/3)
+       isotype weight (singlet:doublet) = (1:2) DIMENSION/Plancherel; spectrum [3,0,0] two massless
+[PASS] 1.5 the three reference Q's are exactly {1/3, 2/3, 1} and strictly ordered
+       1/3 (degenerate) < 2/3 (balanced) < 1 (hierarchy) -- three distinct lanes, not competing answers
+[PASS] 2.1 the singlet<->doublet power-block swap acts on the dial as r -> 1/(4r) and IS an involution
+       swap o swap = identity; p_d/p_s=2r -> 1/(2r) under p_s<->p_d
+[PASS] 2.2 r -> 1/(4r) exactly exchanges the singlet and doublet power fractions p_s<->p_d
+       it is genuinely the block-exchange symmetry, not a relabeling of r
+[PASS] 2.3 r=1/2 is the UNIQUE fixed point of the block-swap r=1/(4r) on (0,inf) (r^2=1/4 => r=1/2)
+       the equipartition point p_s=p_d=1/2 is the swap-symmetric configuration
+[PASS] 2.4 the 2-sector entropy S2 is EXACTLY invariant under the block-swap r -> 1/(4r)
+       S2 is the symmetry-respecting potential; r=1/2 is its symmetric stationary point
+[PASS] 2.5 S2 is stationary (dS2/dr=0) and MAXIMIZED (=ln2) at the symmetric point r=1/2
+       argmax S2 at r=0.5004; dS2/dr(1/2)=0.0e+00; S2(1/2)=ln2=0.69315
+[PASS] 2.6 HONESTY: the prior candidate involution r<->1-r is NOT a dial symmetry (it changes Tr H^2)
+       Tr H^2(0.3)=4.80 != Tr H^2(0.7)=7.20; the GENUINE symmetry is r->1/(4r), not r->1-r
+[PASS] 2.7 both maps fix r=1/2 but the block-swap (genuine) and r->1-r (bogus) disagree away from 1/2
+       r=1/2 is special under BOTH; only r->1/(4r) is an actual symmetry of the structure
+[PASS] 3.1 SHARPENING r->2r^2: fixed points r=0 and r=1/2
+       the records/Lueders (observer / entropy-decreasing) arrow
+[PASS] 3.2 SHARPENING: r=0 STABLE (f'=0<1), r=1/2 UNSTABLE separatrix (f'=2>1)
+       f'(0)=0.0, f'(1/2)=2.0 -> r=1/2 is the repelling watershed under sharpening
+[PASS] 3.3 SHARPENING: r slightly >1/2 runs away to doublet-collapse (Q->1); r<1/2 collapses to r=0 (Q=1/3)
+       the separatrix divides the degenerate (r=0) basin from the hierarchy (r->large) basin
+[PASS] 3.4 THERMALIZING g(r)=sqrt(r/2): r=1/2 is a fixed point with g'(1/2)=1/2<1 (STABLE)
+       the closed-system (second-law / entropy-increasing) arrow -- the time-reverse of sharpening
+[PASS] 3.5 THERMALIZING: every seed in (0,inf) flows to r=1/2 (global attractor)
+       reversing the entropy arrow flips repeller<->attractor at the SAME fixed point r=1/2
+[PASS] 3.6 HONEST VERDICT: r=1/2 is UNCONDITIONALLY the symmetry-fixed point; its STABILITY is arrow-dependent
+       unstable under sharpening, stable under thermalizing -> label SYMMETRIC-STATIONARY, not bare 'stable'
+[PASS] 4.1 INPUT-labelled: per-sector r=(3Q-1)/2 computed from OBSERVED Koide Q (no value DERIVED)
+       round-trip r=(3Q-1)/2 then Q(r) reproduces the input Q -- consistency check, not a fit
+[PASS] 4.2 charged leptons sit AT the symmetric point r=1/2 (|r-1/2| < 1e-4)
+       charged-lepton r=0.49999 -> the unique sector on the equipartition fixed point
+[PASS] 4.3 up quarks at a BROKEN point on the hierarchy side (r>1/2), NOT at r=1/2
+       up-quark r=0.7720 (Q=0.848) -> off-symmetric toward r=1 (hierarchy)
+[PASS] 4.4 down quarks at a BROKEN point on the hierarchy side (r>1/2), NOT at r=1/2
+       down-quark r=0.5965 (Q=0.731) -> off-symmetric toward r=1 (hierarchy)
+[PASS] 4.5 neutrinos occupy a BROKEN range on the DEGENERATE side: r in [0, ~0.378], entirely below r=1/2
+       neutrino r in [0.000, 0.377] (Q in [1/3,0.585]) -> off-symmetric toward r=0 (degenerate)
+[PASS] 4.6 DECISIVE no-overreach: NO non-charged sector lands at r=1/2 (Q=2/3)
+       the falsified FORCING version put EVERY sector at Q=2/3; the multi-lane version does NOT -- no overreach
+[PASS] 4.7 charged leptons are UNIQUELY at the symmetric point; all other sectors are off-symmetric
+       exactly one sector occupies r=1/2 -> consistent multi-lane occupancy
+[PASS] 4.8 cross-sector grounding: neutrino note eq B3 Q_nu=(1+2rho)/3 is the IDENTICAL dial 1/3+(2/3)rho
+       NEWPHYSICS_NP_NEUTRINO_PMNS_NOTE -- one dial r/rho governs all four sectors (not four separate ansaetze)
+[PASS] 4.9 every sector's r=(3Q-1)/2 is real and >=0 (on the physical dial [0,inf)); ordering matches Q ordering
+       neutrino(low) < charged < down < up on the dial -- a clean monotone spread, no pathologies
+[PASS] 4.10 breaking is sector-correlated (CONSISTENCY narrative): colored quarks -> r>1/2; nu (Majorana) -> r<1/2
+       color/QCD dresses the doublet block (push to hierarchy r>1/2); nu seesaw pushes to degenerate r<1/2 -- a sensible symmetry-content reading; NOT claimed as derived
+[PASS] 5.1 SCOPE: r=1/2 is a SYMMETRIC stationary point, not a FORCED value (the dial is free; lanes coexist)
+       three lanes are distinguished points of one dial; the axiom posits which sector sits where, not a unique r
+[PASS] 5.2 SCOPE: the observed Q's enter ONLY as inputs; Q=2/3 is never used to DERIVE any sector's r here
+       consistency comparison (allowed), not a fitted derivation; no value is forced from the axiom
+[PASS] 5.3 PRIOR-ART CONSISTENCY: matches retained cone biconditional + both arrow notes (separatrix / thermalizing)
+       no contradiction with origin/main; new content = the genuine block-swap symmetry + multi-lane table
+
+SCORECARD PASS=31 FAIL=0
+====================================================================================================
+VERDICT 1 (is r=1/2 a genuine distinguished/symmetric point?):  SYMMETRIC-STATIONARY
+  r=1/2 is the UNIQUE fixed point of the genuine dial symmetry -- the singlet<->doublet power-block
+  swap r->1/(4r) (a true involution that exactly exchanges p_s<->p_d and leaves the 2-sector entropy
+  S2 invariant; r=1/2 is S2's symmetric maximum). Its STABILITY is ARROW-DEPENDENT: UNSTABLE under the
+  records/Lueders sharpening arrow (r->2r^2, f'=2), STABLE global attractor under the closed-system
+  thermalizing arrow (g'=1/2). So the honest label is SYMMETRIC-STATIONARY (distinguished by symmetry
+  unconditionally; 'stable' only under the second-law arrow). HONESTY: this corrects the prior note's
+  r<->1-r candidate, which is NOT a symmetry (it changes Tr H^2); the block-swap r->1/(4r) is.
+VERDICT 2 (is the multi-lane reading consistent without overreach?):  CONSISTENT-MULTILANE
+  Per-sector r=(3Q-1)/2 from observed Q (INPUTS): charged leptons r~0.49999 (AT the symmetric point);
+  up r~0.77, down r~0.60 (broken, hierarchy side r>1/2); neutrinos r in [0,~0.378] (broken, degenerate
+  side r<1/2). NO non-charged sector hits r=1/2 -- the falsified FORCING version (all at Q=2/3) is
+  avoided; the multi-lane occupancy is CONSISTENT and does NOT overreach. One dial governs all four
+  sectors (neutrino eq B3 is the identical formula). This is consistency, NOT a derivation.
+====================================================================================================

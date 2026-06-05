@@ -75,7 +75,7 @@ Notes:
   choice; the irreducible content is "the δ-pattern + the species bridge."
 - **AC_φλ — charged-lepton sharpening (2026-06-02).** For the charged-lepton
   sector specifically, the "mass pattern" admission decomposes (verified, see
-  [CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md](CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)) into **two named,
+  `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`) into **two named,
   equivalent selectors**, both shown to be the operative inputs and neither
   derivable on the current surface: **(i) K-reality** (time-reversal-reality of
   the generation-monitored coupling / δ=0 / transpose-symmetry `b=c̄`) — selects

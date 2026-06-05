@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 177 |
 | **retained_no_go** | 187 |
-| **retained_bounded** | 662 |
+| **retained_bounded** | 663 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 32 |
-| unaudited | 1259 |
+| unaudited | 1258 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1019 |
+| `audited_clean` | 1020 |
 | `audited_conditional` | 71 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1543 |
+| `unaudited` | 1542 |
 
 | claim_type | count |
 |---|---:|
@@ -424,6 +424,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6298,6 +6299,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The explicit free massive Dirac/Poincare generators satisfy the stated Lorentz and Poincare commutators, preserve the positive mass shell and invariant measure, and give the CAR-relabelled finite-mode Fock Hamiltonian a lower bound.  _(class `A`)_
 - **chain closes:** True — Within the note's bounded scope, the displayed identities reduce to explicit matrix and differential-operator algebra over definitions given in the packet. The note explicitly excludes OS reconstruction, essential self-adjointness, spin-statistics, and lattice-derived Lorentz symmetry, so no missing downstream bridge is needed for the audited claim.
 - **rationale:** The load-bearing content is a genuine class A algebraic closure check, not a definition, renaming, tuned numerical match, or external comparator. The runner output reports all eight checks passing, and the provided source implements substantive gamma-matrix, finite-representation, mass-shell, measure, spectrum, and boost-covariance computations rather than printing fixed results. The displayed signs and normalizations in the source note are consistent with the stated mostly-minus conventions. The clean verdict is limited to the bounded textbook free-field packet and does not promote any excluded reconstruction or lattice-origin claim.
+- **auditor confidence:** high
+
+### `free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30`
+
+- **Note:** [`FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md`](../../docs/FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For fixed m > 0 and Schwartz spinor tests, the cited free staggered-Dirac covariance converges to the continuum free Dirac covariance in the smeared sense, and fixed finite fermionic quasi-free Schwinger functions converge as polynomial/Pfaffian functions of that covariance.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-231000-6428c4ef9f-free_field_lattice_to_contin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since ||S_a(p)||_F^2 = 4/Delta_a(p) and Delta_a(p) >= m^2, the smeared integrand is dominated by (2/m)|f(p)||g(p)|, so dominated convergence upgrades pointwise covariance convergence to smeared covariance convergence, after which fixed quasi-free Schwinger functions converge by Pfaffian polynomial continuity.  _(class `A`)_
+- **chain closes:** True — The one-hop cited authority is retained-grade and supplies the covariance formula, pointwise continuum limit, and taste multiplicity. The remaining steps are standard algebraic/analytic closure: S_a S_a^dagger = Delta_a^{-1} I_4 gives the Frobenius factor 4 and the m > 0 dominating function, while Pfaffian Wick expansion is polynomial in covariance entries.
+- **rationale:** The load-bearing math closes from the retained_bounded covariance packet plus standard quasi-free Gaussian and dominated-convergence facts. Independent formula checks confirm the signs and normalizations in S_a S_a^dagger = Delta_a^{-1}I_4, ||S_a||_F^2 = 4/Delta_a, the 2/m envelope, and the central-zone Jordan refinement. The runner is not merely printing constants; its checks cover Pfaffian rigidity, smeared convergence, the envelope, a nonconverging control, and one first-principles Clifford/taste multiplicity computation. The note stays within its bounded scope and does not import the transfer-matrix bridge, OS reconstruction, spin-statistics, or interacting-theory claims.
 - **auditor confidence:** high
 
 ### `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28`

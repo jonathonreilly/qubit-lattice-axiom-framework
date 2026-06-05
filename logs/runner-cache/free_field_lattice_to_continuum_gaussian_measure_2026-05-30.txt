@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/free_field_lattice_to_continuum_gaussian_measure_2026-05-30.py
+runner_sha256: e3e28736cbf9ff58b6b42323448e8980ef91989121ddb41449710138c5f868a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.22
+status: ok
+----- stdout -----
+[PASS] F1_freefermion_npoint_is_pfaffian_of_2point
+[PASS] F2_gaussian_char_functional_rigidity
+[PASS] F3_smeared_convergence_drives_functional_and_moments
+[PASS] F4_taste_fourfold_multiplicity_in_limit
+[PASS] F5_nonconverging_covariance_control
+[PASS] F6_dominated_convergence_envelope
+SCORECARD PASS=6 FAIL=0
+
+----- stderr -----
+

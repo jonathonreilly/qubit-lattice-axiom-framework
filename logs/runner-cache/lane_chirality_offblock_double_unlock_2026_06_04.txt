@@ -1,0 +1,90 @@
+
+=== PART A: standard Connes-Lott fermion structure ===
+[PASS] A1 chiral Dirac D=[[0,Y],[Y^dag,0]] on R^3(x)(H_L(+)H_R) is Hermitian (6x6)
+[PASS] A2 chirality grading gamma_CL = sigma_3 (x) I_3 is an involution (gamma^2=I), Hermitian, traceless
+[PASS] A3 generation grading Gamma_chi (x) I_2 is an involution, Hermitian; eigvals {+1 x2, -1 x4}
+       eigs(Gamma_chi)=[-1.0, -1.0, 1.0] (+1 singlet, -1,-1 doublet)
+[PASS] A4 gamma_CL (chirality factor) and Gamma_chi(x)I_2 (generation factor) are DISTINCT operators
+       this is the crux: the chiral grading and the Z3 character grading live in different tensor factors
+
+=== PART B: the chiral Dirac IS an off-block generator -- in the CHIRALITY factor ===
+[PASS] B1 {D, gamma_CL} = 0 holds IDENTICALLY (chiral Dirac anticommutes with the chirality grading)
+       this is the standard 'D anticommutes with gamma_5' fact -- TRUE for any Yukawa
+[PASS] B2 {D,gamma_CL}=0 for ALL 25 random Yukawas (off-block-in-chirality is generic, not tuned)
+       25/25 random Yukawas anticommute with gamma_CL
+[PASS] B3 D is OFF-BLOCK in chirality: the L-L and R-R chirality-diagonal blocks are exactly zero
+       the whole off-block structure lives between L and R -- the CHIRALITY (sigma_3) factor
+
+=== PART C: DECISIVE TEST -- does chiral off-block-ness transport to the GENERATION grading? ===
+[PASS] C1 {D, Gamma_chi(x)I_2} reduces EXACTLY to {Y, Gamma_chi} in the L-R block (algebraic transport law)
+       because D is chirality-off-block & Gamma_chi(x)I_2 is chirality-identity, the anticommutator collapses to the GENERATION-factor (anti)commutator of Y -- NOT a new structure
+[PASS] C2 a C3-equivariant (circulant) Yukawa COMMUTES with Gamma_chi ([Y,Gamma_chi]=0, on-block)
+       circulant Y lies in the commutant of R; Gamma_chi is itself circulant => they commute -> ON-BLOCK
+[PASS] C3 hence {Y_circ, Gamma_chi} = 2 Y_circ Gamma_chi != 0  -> chiral Dirac with circulant Y does NOT anticommute with the generation grading
+       the chiral LH<->RH off-block-ness does NOT make {D, Gamma_chi(x)I_2}=0 for the framework-primitive Y
+[PASS] C4 explicit: {D_circ, Gamma_chi(x)I_2} != 0 (the generation grading is NOT anticommuted)
+       yet {D_circ, gamma_CL}=0 still holds -- off-block in chirality, on-block in generation
+[PASS] C5 ... while {D_circ, gamma_CL}=0 STILL holds (the wrong-factor anticommutation persists)
+[PASS] C6 [symbolic] NO nonzero circulant Yukawa anticommutes with Gamma_chi: {Y_circ, Gamma_chi}=0 forces a=b=c=0 (reproduces comm(R) ∩ anticomm(Gamma_chi) = {0})
+       so no C3-equivariant chiral Yukawa can supply the generation-factor chirality grading
+
+=== PART D: project the chiral Dirac onto the GENERATION factor ===
+[PASS] D1 partial trace over the chirality factor Tr_chi(D) = D_LL + D_RR = 0 (chiral Dirac is chirality-off-block, so it leaves NO generation operator under the trace)
+       the chiral structure carries NO chirality-diagonal piece to push onto the generation factor
+[PASS] D2 the induced generation operator |D|^2 -> Y^dag Y is CIRCULANT (C3-equivariant) -> ON-BLOCK (commutes with the cyclic shift R)
+       restricting the chiral Dirac to one chirality gives a C3-equivariant generation operator, NOT an off-block singlet<->doublet one
+[PASS] D3 ... hence Y^dag Y COMMUTES with Gamma_chi (on-block), so it canNOT supply chirality on the generation factor
+       [Y^dag Y, Gamma_chi]=0 -- the projection lands squarely in the on-block (no-go) class
+
+=== PART E: what Koide Q does the chiral Dirac structure give? ===
+[PASS] E1 singlet Fourier mode (1,1,1): Q = 1/3 (the r=0 degenerate lane)
+       Q(singlet) = 0.333333
+[PASS] E2 the C3-equivariant (on-block) chiral Dirac lands on the DIMENSION/det_R lane r=1 -> Q=1 (NOT the det_C lane r=1/2 -> Q=2/3)
+       a circulant generation operator commutes with Gamma_chi (on-block) -> it sits on the dimension-count lane (two real doublet modes), giving Q=1 -- the SAME conclusion as the records-flow analysis
+[PASS] E3 the GENUINE off-block generator H=(1/3)(1(x)h+h(x)1), Sigma h=0 DOES anticommute with Gamma_chi and its nonzero eigenvectors give Q=2/3 -- but this H is NOT supplied by the chiral Dirac structure
+       Q(nonzero eigvecs) = [0.666667, 0.666667] = 2/3; off-block H is the unsupplied pin
+[PASS] E4 the off-block H is NOT circulant (it genuinely mixes singlet<->doublet) -- exactly what the chiral Dirac with C3-equivariant Yukawa fails to produce on the generation factor
+       [H,R]!=0: H is OUTSIDE the commutant of R, the off-block direction the no-go isolated
+
+=== PART F: Dirac vs Majorana -- where does the charged/neutral distinction live? ===
+[PASS] F1 Dirac (chirality-OFF-diagonal Y) vs Majorana (chirality-DIAGONAL mass) differ in the CHIRALITY block pattern, with IDENTICAL (circulant) GENERATION content
+       the Dirac/Majorana distinction is a CHIRALITY-factor property, NOT a generation-factor property
+[PASS] F2 both Dirac and Majorana induce the SAME (circulant, ON-BLOCK) generation operator -> the charged/neutral distinction does NOT produce a generation-factor sector split
+       so the chiral/Majorana difference can't tie chirality to the generation-factor lane assignment
+[PASS] F3 lane primitive (det_C: doublet=1 complex mode -> r=1/2  vs  det_R: doublet=2 real modes -> r=1) is a GENERATION-factor mode-count, untouched by the Dirac/Majorana CHIRALITY-factor distinction
+       => the chiral structure does NOT supply the lane discriminator either; Gate 1 and Gate 2 are NOT double-unlocked by it
+
+=== PART G: reproduce the on-block failure comm(R) ∩ anticomm(Gamma_chi) = {0} ===
+[PASS] G1 [symbolic] every circulant H=aI+bR+cR^2 with {H,Gamma_chi}=0 forces a=b=c=0  (comm(R) ∩ anticomm(Gamma_chi) = {0})
+       the SAME wall the chiral Dirac runs into: a C3-equivariant generation operator can never anticommute with the Z3 character grading
+[PASS] G2 Gamma_chi is itself CIRCULANT (= -1/3 I + 2/3 R + 2/3 R^2), so it commutes with all circulants -> anticommutation needs an OFF-circulant (off-block) generator
+       this is exactly why the records flow (on-block) AND the chiral-Dirac-with-circulant-Yukawa (on-block in the generation factor) both fail to supply chirality
+
+SCORECARD PASS=25 FAIL=0
+====================================================================================================
+VERDICT: OFF-BLOCK-BUT-WRONG-TENSOR-FACTOR  (NO double-unlock).
+----------------------------------------------------------------------------------------------------
+The chiral Dirac mass structure D=[[0,Y],[Y^dag,0]] IS a genuine OFF-BLOCK generator and DOES
+anticommute with a chirality grading -- but off-block in the CHIRALITY (sigma_3) factor, NOT the
+GENERATION factor that Gamma_chi grades. The textbook {D, gamma_CL}=0 (Part B) does NOT transport
+to {D, Gamma_chi(x)I_2}=0: that anticommutator collapses ALGEBRAICALLY to {Y, Gamma_chi} on the
+generation factor (Part C1), which a C3-equivariant (framework-primitive, circulant) Yukawa makes
+NONZERO because a circulant COMMUTES with Gamma_chi (Parts C2-C6, G). Projecting the chiral Dirac
+to the generation factor returns a circulant (ON-BLOCK) operator Y^dag Y (Part D), landing on the
+DIMENSION/det_R lane r=1 -> Q=1, NOT r=1/2 -> Q=2/3 (Part E). To get Q=2/3 one STILL needs the
+unsupplied off-block family H=(1/3)(1(x)h+h(x)1), Sigma h=0 (Part E3-E4). And the Dirac/Majorana
+distinction lives in the CHIRALITY factor with identical generation content (Part F), so it neither
+supplies the generation-factor chirality grading NOR the det_C-vs-det_R lane discriminator.
+
+Q the chiral-Dirac sector-structure gives (with the framework-primitive C3-equivariant Yukawa):
+   Q = 1   (dimension / det_R lane, r=1)   --   NOT 2/3.
+
+CONCLUSION: this is the SAME 'wrong tensor factor' wall flagged as escape-hatch (II) in
+KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO (2026-05-16): gamma_CL and Gamma_chi live in distinct
+tensor factors, and the chiral structure's off-block-ness is in the chirality factor. Gate 1 (lane
+assignment, det_C vs det_R) and Gate 2 (off-block generation chirality) remain TWO distinct
+unsupplied pins. NEXT PATH (not closing): a genuine generation-factor off-block generator must come
+from a structure that breaks C3-equivariance ON THE GENERATION FACTOR -- e.g. a multi-factor
+spectral triple whose Dirac off-diagonal acts within R^3 (no-go escape II), or the holomorphic/
+Kahler (det_C) measure that the lane panel isolated as the honest det_C survivor.
+====================================================================================================

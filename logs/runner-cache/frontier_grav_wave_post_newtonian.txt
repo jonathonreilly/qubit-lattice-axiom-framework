@@ -1,15 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_grav_wave_post_newtonian.py
-runner_sha256: 26837998201791b35779edb3547c7886db71a33577e6d6b39d119ffcc885a8ab
+runner_sha256: 9dc8398ac93de4d0c31aeae0e1b5e10a9994a22c54e880f482ece9b70f1c537f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 10.74
+elapsed_sec: 14.39
 status: ok
 ----- stdout -----
 ========================================================================
 GRAVITATIONAL WAVE / ACTION-FORM SENSITIVITY PROBE
 Bounded finite-lattice toy-model comparisons
 ========================================================================
+
+ARTIFACT SOURCE CHECKS
+  [PASS] Test B function body present
+  [PASS] Test C function body present
+  [PASS] quantitative table generation present
+  [PASS] source appears untruncated
 
 Lattice: 20x20x20 = 8000 nodes
 k = 5.0, beta = 0.8
@@ -26,7 +32,7 @@ SOURCE COMPLETENESS WITNESS
 TEST A: GRAVITATIONAL WAVE PROPAGATION
 ========================================================================
 
-  Poisson solve time: 0.06s
+  Poisson solve time: 0.08s
 
   Field profile along z-axis from source:
       r         f(r)    1/(4pi*r)    ratio
@@ -55,7 +61,7 @@ TEST A: GRAVITATIONAL WAVE PROPAGATION
   90% of full deflection reached at R=6
   -> Beam samples field only near its path
   -> Field at large R from beam path is irrelevant
-  [Test A time: 1.6s]
+  [Test A time: 2.1s]
 
 ========================================================================
 TEST B: IMPOSED RETARDED SOURCE SAMPLING
@@ -86,7 +92,7 @@ TEST B: IMPOSED RETARDED SOURCE SAMPLING
   RESULT: Retarded-vs-instantaneous difference grows with velocity.
   The finite toy model distinguishes the imposed retarded
   source rule from instantaneous Poisson sampling.
-  [Test B time: 3.1s]
+  [Test B time: 4.1s]
 
 ========================================================================
 TEST C: LAYER-ORDER SENSITIVITY OF FIELD-AMPLITUDE COUPLING
@@ -120,7 +126,7 @@ TEST C: LAYER-ORDER SENSITIVITY OF FIELD-AMPLITUDE COUPLING
   Beam density center of mass: (18.8, 9.9, 9.9)
   Beam density max: 2.452245e+09
   Beam spread: sigma_x=0.55, sigma_y=3.97, sigma_z=3.98
-  [Test C time: 2.2s]
+  [Test C time: 2.9s]
 
 ========================================================================
 TEST D: VALLEY-LINEAR vs IMPOSED f^2 ACTION
@@ -138,7 +144,7 @@ TEST D: VALLEY-LINEAR vs IMPOSED f^2 ACTION
   f^2 correction exceeds 1% at strength s = 0.0500 (max f = 0.01218)
   diff% vs max_f slope: -14.30%/unit-field
   (diagnostic only; no physical PN coefficient is derived)
-  [Test D time: 3.7s]
+  [Test D time: 4.9s]
 
 ========================================================================
 SYNTHESIS: BOUNDED TOY-MODEL SENSITIVITY
@@ -184,7 +190,7 @@ This runner does not derive GR, physical gravitational waves, a
 post-Newtonian observable, c_lattice normalization, or an f^2
 coefficient from retained framework primitives.
 
-Total runtime: 10.6s
+Total runtime: 14.0s
 
 ----- stderr -----
 

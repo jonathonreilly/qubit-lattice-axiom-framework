@@ -1,0 +1,98 @@
+========================================================================================
+DIAL OCCUPANCY IRREDUCIBILITY -- meta verdict made computational
+========================================================================================
+
+----------------------------------------------------------------------------------------
+(A) The dial is a faithful reparametrization of the ONE derived family
+----------------------------------------------------------------------------------------
+  [PASS] s=0  ->  r = 1/2 (charged-lepton separatrix)   (r(0)=1/2)
+  [PASS] r=1/2 -> Q = 2/3 on the derived family Q=1/3+(2/3)r   (Q=2/3)
+  [PASS] dial r(s)=2^(s-1) strictly increasing (faithful: distinct s -> distinct r)   (dr/ds = ln2 * 2^(s-1) > 0)
+      neutrino         s=-0.61  r=2^(s-1)=0.3276  Q=1/3+(2/3)r=0.5517
+      charged_lepton   s=+0.00  r=2^(s-1)=0.5000  Q=1/3+(2/3)r=0.6667
+      down             s=+0.26  r=2^(s-1)=0.5987  Q=1/3+(2/3)r=0.7325
+      up               s=+0.63  r=2^(s-1)=0.7738  Q=1/3+(2/3)r=0.8492
+  [PASS] four sectors -> four DISTINCT r values (no two coincide)
+  [PASS] four sectors -> four DISTINCT Q values
+  [PASS] charged-lepton dial Q matches comparator 2/3 to 1e-9 (comparator-only)
+  [PASS] distinguished setting r=0 -> Q=1/3 (degenerate lane)
+  [PASS] distinguished setting r=1 -> Q=1 (hierarchy lane)
+  [PASS] r=1 endpoint sits at dial setting s=1   (s=[1])
+
+----------------------------------------------------------------------------------------
+(B1) Born / tracial dimension weight selects r=1 (s=1), NOT the sectors
+----------------------------------------------------------------------------------------
+  [PASS] Born/dimension weight (doublet:singlet = 2:1) forces r=1 -> Q=1   (r_Born=[1])
+  [PASS] Born selector lands at s=1 (hierarchy ENDPOINT), not at any sector s in {-.61,0,.26,.63}
+  [PASS] equal-power-per-block (det_C) gives r=1/2; DIFFERENT measure from Born   (r_eqpow=[1/2])
+  [PASS] Born (r=1) and block-counting (r=1/2) DISAGREE -> measure is the free choice
+
+----------------------------------------------------------------------------------------
+(B2) SU(3)_c center Z_3 character bridge is absent (color-generation no-go)
+----------------------------------------------------------------------------------------
+  [PASS] generation permutation/regular character = (3, 0, 0)   (chi_perm=[3, 0, 0])
+  [PASS] SU(3)_c center character on the fundamental = (3, 3w, 3w^2)   (chi_color=(3,3w,3w^2))
+  [PASS] color character INEQUIVALENT to generation regular character (no Z_3 iso)   (chi_color - chi_perm = [0, -3/2 + 3*sqrt(3)*I/2, -3/2 - 3*sqrt(3)*I/2])
+  [PASS] color rep decomposes as 3 copies of ONE irrep (not the regular rep)   (mult_color=[0, 3, 0])
+  [PASS] generation rep decomposes as the REGULAR rep (each irrep once)   (mult_perm=[1, 1, 1])
+  [PASS] center-action decomposition != regular-rep decomposition (bridge absent)
+      => no center-character map carries color structure onto the generation r;
+         the color-generation bridge that could derive occupancy is ABSENT.
+
+----------------------------------------------------------------------------------------
+(B3) signed-vs-singular readout class fixes the SIGN, NOT r
+----------------------------------------------------------------------------------------
+  [PASS] signed readout Q_signed = (1+2r)/3 for ALL r (theta-independent)   (Q_signed=2*r/3 + 1/3)
+  [PASS] Q_signed is a non-constant function of r (so readout class != occupancy selector)
+  [PASS] singular-value readout theta-dependent at r=1/2 (sign-sensitive, not r)   (Q_sv(0)=0.6667, Q_sv(pi/3)=0.4094)
+
+----------------------------------------------------------------------------------------
+(B4) Frobenius/isotype split leaves r FREE (retained_no_go) -- the core
+----------------------------------------------------------------------------------------
+  [PASS] (a,|b|) |-> r=|b|^2/a^2 is ONTO [0,inf): every sector r (and 0,1/2,1) realized
+  [PASS] isotype split fixes BLOCK STRUCTURE (1 singlet + 1 doublet), not the ratio r   (frobenius_isotype_split_uniqueness = retained_no_go on origin/main)
+  [PASS] dial s = 1 + log2(r) is a bijection r>0 <-> s in R (same freedom, relabelled)   (s(r)=log(r)/log(2) + 1)
+
+----------------------------------------------------------------------------------------
+(C) Identification gate vs occupancy: distinct sub-questions, one label
+----------------------------------------------------------------------------------------
+  [PASS] identification obstruction (character mismatch) is DISCRETE (labelling)
+  [PASS] occupancy datum r is CONTINUOUS and free (independent of labelling)
+  [PASS] => identification gate and dial occupancy are DISTINCT problems
+  [PASS] => but both bundled under one admitted input AC_phi_lambda (staggered_dirac_realization_gate)   (abstract-sector to physical-species bridge; audited_conditional on origin/main)
+
+----------------------------------------------------------------------------------------
+(D) Closure of the meta verdict
+----------------------------------------------------------------------------------------
+  [PASS] STRUCTURE (family + count + distinguished settings) is DERIVED
+  [PASS] NO tested native selector pins the per-sector s (color no-go + non-color flat/endpoint)
+  [PASS] => dial OCCUPANCY s is the IRREDUCIBLE per-sector Yukawa-texture input
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified (exact / numeric):
+   (A) dial r(s)=2^(s-1) is a FAITHFUL relabelling of the derived family
+       Q=1/3+(2/3)r; s=0 <-> r=1/2 <-> Q=2/3; 4 sectors -> 4 distinct r/Q;
+       distinguished settings r in {0,1/2,1} = {Q=1/3, 2/3, 1} lanes.
+   (B) candidate occupancy selectors all FAIL to pin s:
+       B1 Born/dimension -> r=1 (ENDPOINT s=1), block-counting -> r=1/2 (free choice);
+       B2 SU(3)_c center char (3,3w,3w^2) != regular (3,0,0): color bridge ABSENT;
+       B3 signed-vs-singular fixes the SIGN of sqrt(m), Q_signed=(1+2r)/3 for all r;
+       B4 Frobenius isotype split (retained_no_go): (a,|b|)->r ONTO [0,inf), r FREE.
+   (C) identification gate (DISCRETE labelling, char mismatch) and occupancy
+       (CONTINUOUS free r) are DISTINCT sub-questions sharing one label AC_phi_lambda.
+   (D) STRUCTURE derived; NO native selector pins s.
+
+  VERDICT (meta): the dial occupancy s is IRREDUCIBLE-PER-SECTOR-INPUT.
+  It is NOT derivable via the color-generation bridge (no-go), NOT via any
+  non-color native selector tested (each is flat in s or picks an endpoint),
+  and is already the single highest-leverage admitted input AC_phi_lambda in
+  the framework's own audit registry. The framework derives the dial STRUCTURE
+  and its distinguished settings; the per-sector POSITION is the Yukawa input.
+  That is the honest floor (and standard: the SM leaves the Yukawas free too).
+
+========================================================================================
+TOTAL: PASS=32, FAIL=0
+========================================================================================
+PASS=32 FAIL=0

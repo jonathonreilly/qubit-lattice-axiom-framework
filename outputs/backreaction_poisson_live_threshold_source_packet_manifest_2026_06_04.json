@@ -1,0 +1,152 @@
+{
+  "claim_id": "poisson_backreaction_live_threshold_packet_note_2026-05-29",
+  "note": "docs/POISSON_BACKREACTION_LIVE_THRESHOLD_PACKET_NOTE_2026-05-29.md",
+  "manifest": {
+    "packet_checker": "scripts/backreaction_poisson_live_threshold_check.py",
+    "poisson_helper_source": "scripts/backreaction_poisson.py",
+    "packet_cache": "logs/runner-cache/backreaction_poisson_live_threshold_check.txt",
+    "poisson_helper_cache": "logs/runner-cache/backreaction_poisson.txt"
+  },
+  "summary": {
+    "pass": 27,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "manifest_path_exists:packet_checker",
+      "pass": true,
+      "detail": "scripts/backreaction_poisson_live_threshold_check.py"
+    },
+    {
+      "name": "note_links_manifest_path:packet_checker",
+      "pass": true,
+      "detail": "scripts/backreaction_poisson_live_threshold_check.py"
+    },
+    {
+      "name": "manifest_path_exists:poisson_helper_source",
+      "pass": true,
+      "detail": "scripts/backreaction_poisson.py"
+    },
+    {
+      "name": "note_links_manifest_path:poisson_helper_source",
+      "pass": true,
+      "detail": "scripts/backreaction_poisson.py"
+    },
+    {
+      "name": "manifest_path_exists:packet_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/backreaction_poisson_live_threshold_check.txt"
+    },
+    {
+      "name": "note_links_manifest_path:packet_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/backreaction_poisson_live_threshold_check.txt"
+    },
+    {
+      "name": "manifest_path_exists:poisson_helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/backreaction_poisson.txt"
+    },
+    {
+      "name": "note_links_manifest_path:poisson_helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/backreaction_poisson.txt"
+    },
+    {
+      "name": "source_untruncated:packet_checker",
+      "pass": true,
+      "detail": "scripts/backreaction_poisson_live_threshold_check.py has 4397 bytes"
+    },
+    {
+      "name": "source_marker:packet_checker:from scripts import backreaction_poisson as bp",
+      "pass": true,
+      "detail": "from scripts import backreaction_poisson as bp present"
+    },
+    {
+      "name": "source_marker:packet_checker:def _run_grid",
+      "pass": true,
+      "detail": "def _run_grid present"
+    },
+    {
+      "name": "source_marker:packet_checker:G_GRID =",
+      "pass": true,
+      "detail": "G_GRID = present"
+    },
+    {
+      "name": "source_marker:packet_checker:ASSERTIONS:",
+      "pass": true,
+      "detail": "ASSERTIONS: present"
+    },
+    {
+      "name": "source_untruncated:poisson_helper_source",
+      "pass": true,
+      "detail": "scripts/backreaction_poisson.py has 7378 bytes"
+    },
+    {
+      "name": "source_marker:poisson_helper_source:def _build",
+      "pass": true,
+      "detail": "def _build present"
+    },
+    {
+      "name": "source_marker:poisson_helper_source:def _ext_field",
+      "pass": true,
+      "detail": "def _ext_field present"
+    },
+    {
+      "name": "source_marker:poisson_helper_source:def _self_field_from_amplitude",
+      "pass": true,
+      "detail": "def _self_field_from_amplitude present"
+    },
+    {
+      "name": "source_marker:poisson_helper_source:def _propagate",
+      "pass": true,
+      "detail": "def _propagate present"
+    },
+    {
+      "name": "source_marker:poisson_helper_source:EXT_STRENGTH = 0.004",
+      "pass": true,
+      "detail": "EXT_STRENGTH = 0.004 present"
+    },
+    {
+      "name": "cache_runner_matches:packet_cache",
+      "pass": true,
+      "detail": "scripts/backreaction_poisson_live_threshold_check.py == scripts/backreaction_poisson_live_threshold_check.py"
+    },
+    {
+      "name": "cache_sha_fresh:packet_cache",
+      "pass": true,
+      "detail": "6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925 == 6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925"
+    },
+    {
+      "name": "cache_exit_ok:packet_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:packet_cache",
+      "pass": true,
+      "detail": "ASSERTIONS: PASS"
+    },
+    {
+      "name": "cache_runner_matches:poisson_helper_cache",
+      "pass": true,
+      "detail": "scripts/backreaction_poisson.py == scripts/backreaction_poisson.py"
+    },
+    {
+      "name": "cache_sha_fresh:poisson_helper_cache",
+      "pass": true,
+      "detail": "17244ab7bd6fd3a37f01f805f4f63eb772ace7a3013e3b750772b13a242beb16 == 17244ab7bd6fd3a37f01f805f4f63eb772ace7a3013e3b750772b13a242beb16"
+    },
+    {
+      "name": "cache_exit_ok:poisson_helper_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:poisson_helper_cache",
+      "pass": true,
+      "detail": "POISSON SELF-GRAVITY: |psi|^2 generates 1/r field"
+    }
+  ],
+  "audit_status_authority": "independent audit lane only"
+}

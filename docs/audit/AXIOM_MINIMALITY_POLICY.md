@@ -6,7 +6,7 @@
 repo audit.
 
 `A_min` is fixed for ordinary audit work as the three named framework axioms
-in `docs/MINIMAL_AXIOMS_2026-06-04.md`: Lattice, Quantum, and Record. Approved
+in `docs/MINIMAL_AXIOMS_2026-06-05.md`: Lattice, Quantum, and Record. Approved
 framework primitives are tracked separately in
 `docs/audit/data/axiom_premise_nodes.json`. Lane closure must close from the
 current approved premise surface by derivation, identification, bounded
@@ -74,7 +74,29 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
   chain-satisfy only at `retained_bounded` until retired by a retained
   derivation.
 
-Recorded explicitly approved axiom update:
+Recorded explicitly approved axiom updates:
+
+- **2026-06-05 -- Record axiom refinement.** The framework axiom set remains
+  the three named axioms Lattice, Quantum, and Record, with source
+  `docs/MINIMAL_AXIOMS_2026-06-05.md` and stable registry id
+  `minimal_axioms`.
+  - **Why it is admissible.** The Record axiom now states durable
+    realized-outcome registration in a supplied readout context: the realized
+    outcome is the `K`/CPT orbit of the realized central sector, and scalar
+    readout remains finitely additive over finite pairwise-disjoint record
+    collections. This is a premise about what counts as a record once the
+    readout context is supplied, not a mechanism that produces the context or
+    the record.
+  - **No laundering.** Record does not supply the readout context, central
+    decomposition, `K`/CPT structure, sector-generation rule, weighting,
+    normalization, probability, measurement/decoherence dynamics, time metric,
+    within-sector data, occupancy rule, P2/modulus, log-det, source/action,
+    scale, or arbitrary observable identification.
+  - **Scope.** Dependencies on the three framework axioms chain-satisfy without
+    bounding downstream rows. This refinement invalidates prior direct
+    `minimal_axioms` audits through the axiom-premise hash guard and must be
+    re-audited by the independent audit lane where relevant. It does not itself
+    promote any downstream theory surface or apply any audit verdict.
 
 - **2026-06-04 -- Record axiom.** The framework axiom set is updated to the
   three named axioms Lattice, Quantum, and Record, with source

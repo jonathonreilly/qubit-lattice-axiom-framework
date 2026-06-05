@@ -284,12 +284,17 @@ bounded imports. They must already be recorded in
 `docs/audit/data/axiom_premise_nodes.json`, where they chain-satisfy
 dependencies without bounding downstream rows. Tier-A admitted derivation
 targets live in `docs/audit/data/tier_a_admissions.json` and remain bounded
-until retired. Record/P1 scalar additivity is in the approved axiom baseline
-only in its narrow finite-readout form; it does not import P2/modulus, log-det,
-source/action, measurement, Born weights, dynamics, normalization, scale, or
-arbitrary observable identification. The scale-reference primitive is the
-approved units primitive; do not describe it as a Tier-A admission or a bounded
-Planck import.
+until retired. Record is in the approved axiom baseline only in its narrow
+durable-realized-outcome form: it supplies durable registration of the realized
+outcome in a supplied readout context, identifies that outcome as the `K`/CPT
+orbit of the realized central sector, and keeps scalar readout finitely
+additive over finite pairwise-disjoint record collections. It does not supply
+the readout context, decomposition, `K`/CPT structure, sector-generation rule,
+weighting, normalization, probability, measurement/decoherence dynamics, time
+metric, within-sector data, occupancy rule, P2/modulus, log-det,
+source/action, scale, or arbitrary observable identification. The
+scale-reference primitive is the approved units primitive; do not describe it
+as a Tier-A admission or a bounded Planck import.
 
 Required status fields for major artifacts:
 

@@ -2,8 +2,9 @@
 
 This repository contains the public scientific package for a three-axiom
 discrete-physics program: Lattice (`Z^3` with nearest-neighbor cubic
-adjacency), Quantum (one qubit at every site), and Record (additive finite
-scalar record readout). The equivalent `Cl(3,0)` local-algebra reading is used
+adjacency), Quantum (one qubit at every site), and Record (durable realized
+outcome readout with finite scalar additivity). The equivalent `Cl(3,0)`
+local-algebra reading is used
 throughout the theorem stack where it is the derived or audit-stable
 mathematical language.
 
@@ -226,7 +227,7 @@ should be read as proposed until the audit ledger marks them clean.
 ## Scientific Boundaries
 
 - package boundary:
-  [docs/MINIMAL_AXIOMS_2026-06-04.md](docs/MINIMAL_AXIOMS_2026-06-04.md)
+  [docs/MINIMAL_AXIOMS_2026-06-05.md](docs/MINIMAL_AXIOMS_2026-06-05.md)
 - optional compression / reduction context:
   [docs/SINGLE_AXIOM_INFORMATION_NOTE.md](docs/SINGLE_AXIOM_INFORMATION_NOTE.md)
   and [docs/SINGLE_AXIOM_HILBERT_NOTE.md](docs/SINGLE_AXIOM_HILBERT_NOTE.md)

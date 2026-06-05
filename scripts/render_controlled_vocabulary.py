@@ -73,8 +73,8 @@ def render_vocab_hierarchy_table(data: dict) -> str:
         ),
         (
             "1. Framework substantive",
-            "`docs/MINIMAL_AXIOMS_2026-06-04.md` (supersedes the 2026-05-20 qubit-reframe memo)",
-            "Framework primitives the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor cubic adjacency), Quantum (one qubit at every site, equivalently the one-site operator algebra `A_x ≅ M_2(ℂ)`, equivalently `Cl(3,0)` as a real algebra), Record (finite scalar record readout additive over disjoint record collections), the definition of `A_min`, and the status of prior `A3` / `A4` / `A5` as open gates rather than axioms. Changes only when a framework-level science decision changes.",
+            "`docs/MINIMAL_AXIOMS_2026-06-05.md` (supersedes the 2026-06-04 Record memo)",
+            "Framework primitives the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor cubic adjacency), Quantum (one qubit at every site, equivalently the one-site operator algebra `A_x ≅ M_2(ℂ)`, equivalently `Cl(3,0)` as a real algebra), Record (durable realized-outcome readout with finite scalar additivity), the definition of `A_min`, and the status of prior `A3` / `A4` / `A5` as open gates rather than axioms. Changes only when a framework-level science decision changes.",
         ),
         (
             "2. External paper text",

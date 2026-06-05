@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 647 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1292 |
+| unaudited | 1291 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 994 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1576 |
+| `unaudited` | 1575 |
 
 | claim_type | count |
 |---|---:|
@@ -1132,6 +1132,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -2193,6 +2194,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** With only d_5=1/472392 known, neither ansatz makes a falsifiable physical prediction; the runner instead verifies the d-log-Pade/geometric prediction machinery, activation thresholds, proxy behavior, and SUPPORT/FALSIFY drop-in path for future exact coefficients.  _(class `A`)_
 - **chain closes:** True — The scoped harness claim closes: the algorithmic thresholds, null result from d_5 alone, proxy checks, and synthetic SUPPORT/FALSIFY checks follow from the supplied formulas and runner logic. This does not close the physical beta=6 plaquette value or prove the ansaetze; exact d_6 and later coefficients remain outside the audited scope.
 - **rationale:** The note is carefully scoped as a test harness, not a beta=6 closure, and the load-bearing claims are algorithmic/algebraic checks over retained inputs. The Monte-Carlo value 0.594 is used only as a comparator for gap reporting, not as a fitted derivation input. The runner source shown implements real recurrence, Pade/geometric, fixed-point, proxy, and synthetic-coefficient checks rather than merely printing PASS; no helper imports are missing. The broader treewidth and physical-analyticity obstructions are context and are not promoted as a new closure theorem in this row.
+- **auditor confidence:** high
+
+### `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional tree-like K-built radius threshold under an assumed exponential growth product g_tree = lambda_tree rho_tree, plus the finite 2x2x1 compact K-built counterexample to the all-K-built fixed-increment bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-200159-3db4bc56c6-beta6_resummation_radius_gro`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The tree-sector contribution is bounded by g_tree^k * 18^{-(4k+1)} * |beta|^{4k+1}, so the k-sum converges when g_tree * 18^{-4} * |beta|^4 < 1, giving R_tree(g_tree) = 18 / g_tree^{1/4} and the beta=6 threshold g_tree < 81.  _(class `A`)_
+- **chain closes:** False — The algebraic threshold, cubical face counts, exponent correction, and compact-deficit factor check out. The actual tree-sector convergence claim still needs an external asymptotic theorem controlling the tree cluster-count/cumulant growth product g_tree, and no proof of g_tree < 81 is supplied.
+- **rationale:** The independent formula check confirms the displayed cumulants, cube-sector coefficients d5 through d9, F = 6k - 2s, the tree exponent 18^{-(4k+1)}, g_crit = 81, and the compact-deficit weakening factor 9. The runner performs substantive finite algebra/incidence checks; because the required JSON has no E bucket, D includes both the zero-evidence block and the cubical/threshold block. However, the load-bearing control of actual tree-sector proliferation is an explicit unproved asymptotic input, and compact-deficit plus baryon sectors remain outside the bound. The packet supports a conditional reduction and finite obstruction, not a closed beta=6 radius theorem.
 - **auditor confidence:** high
 
 ### `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`

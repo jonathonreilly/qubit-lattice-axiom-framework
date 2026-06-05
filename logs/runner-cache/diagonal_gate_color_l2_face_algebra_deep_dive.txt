@@ -1,0 +1,111 @@
+DIAGONAL GATE-COLOR L2 FACE-ALGEBRA DEEP DIVE
+(deepens scout S2 of the sqrt2-centered foundation)
+
+======================================================================
+Part A. NN-only adjacency on the hw=1 generation triplet
+======================================================================
+  pair (gen0,gen1): dist^2 = 2 (face-diagonal)
+  pair (gen0,gen2): dist^2 = 2 (face-diagonal)
+  pair (gen1,gen2): dist^2 = 2 (face-diagonal)
+[PASS] A1: NN adjacency connects ZERO hw=1 pairs  (0 NN-adjacent pairs among the 3)
+[PASS] A2: all three hw=1 pairs are face-diagonal (dist^2=2)
+  NN-connection algebra generators: 3 (3 site-phases + 0 pair-block)
+  NN-connection algebra real dimension: 3
+[PASS] A3: NN-connection algebra on hw=1 is u(1)^3 (real dim 3)  (dim=3)
+[PASS] A4: NN-connection algebra is STRICTLY smaller than u(3) (dim 9)  (3 < 9)
+[PASS] A5: NN-connection algebra is abelian (diagonal commutant)
+  => NN cannot build the three off-diagonal pair-generators because
+     the three generation pairs are not adjacent. Color obstructed.
+
+======================================================================
+Part B. Face-diagonal pair-connections close to u(3)
+======================================================================
+  generators from 3 face-diagonal pairs: 12 (4 each)
+  Lie algebra real dimension: 9
+[PASS] B1: face-diagonal pairwise u(2) closes to u(3) (real dim 9)  (dim=9)
+[PASS] B2: u(3) contains the central u(1) phase iI
+[PASS] B3: traceless part is su(3) (real dim 8)  (su_dim=8)
+[PASS] B4: u(3) = su(3) + u(1) is a Lie-algebra DIRECT SUM (center commutes)
+  (foundation 'coarse proxy' trace-free count on this ortho basis: 7)
+[PASS] B5: rigorous su(3) dim (8) is basis-independent, unlike the coarse trace-free proxy
+  => once the three generation pairs are simultaneously connected
+     (face-diagonal supplies that), pairwise u(2) closes to u(3).
+
+======================================================================
+Part C. su(3) certification of the face-diagonal traceless part
+======================================================================
+[PASS] C1: su(3) structure constants are real
+[PASS] C2: f^{abc} totally antisymmetric (compact simple)
+[PASS] C3: Killing form is negative-definite (compact real form)  (eig range [-3.00,-3.00])
+[PASS] C4: Killing form proportional to identity (simple algebra)  (K_00=-3.00)
+[PASS] C5: rank 2 -- T^3 and T^8 commute (2-dim Cartan)
+[PASS] C6: canonical su(3) anti-Herm basis closes to dim 8  (dim=8)
+[PASS] C7: every su(3) generator lies in the face-diagonal algebra
+  => the face-diagonal traceless part IS su(3) (compact, simple,
+     rank 2), not merely an 8-dim coincidence.
+
+======================================================================
+Part D. Generation-vs-color carrier + Z_3 character probe
+======================================================================
+  dim(hw=1 generation carrier) = 3
+  dim(symmetric-base color carrier) = 3
+  rank[gen | color] = 5  =>  dim(intersection) = 1
+[PASS] D1: generation carrier and color carrier are DIFFERENT subspaces  (intersection dim 1 < 3)
+[PASS] D1b: the two carriers are not even equal as sets of basis vectors  (union rank 5 > 3)
+  generation permutation Z_3 character: ((3+0j), 0j, 0j)
+  SU(3)_c center Z_3 character (fundamental): ((3+0j), (-1.5+2.598076j), (-1.5-2.598076j))
+[PASS] D2: generation perm character is the REGULAR rep (3,0,0)
+[PASS] D2b: SU(3)_c center character is (3,3w,3w^2), NOT regular
+[PASS] D2c: the two Z_3 characters DIFFER (center is not the bridge)
+[PASS] D3: under a COMMON imposed cyclic action both 3-spaces are Z_3-isomorphic
+[PASS] D3b: the common action is an EXTRA assumption (native center action != generation permutation)
+[PASS] D4: the 1D carrier overlap is exactly the symmetric vector (|100>+|010>)/sqrt2
+[PASS] D4b: the generation pseudoscalar/full triplet is NOT inside the color carrier (carriers are genuinely distinct)
+[PASS] D5: the face-diagonal algebra is u(3)=su(3)+u(1); selecting su(3) as 'color' discards the central u(1) (an extra choice)
+  => face-diagonal u(3) acts on the GENERATION carrier; the
+     framework's COLOR su(3) lives on the DISTINCT symmetric-base
+     carrier. Matching them is the still-open color/generation
+     identification gate, not a consequence of face-diagonal.
+
+======================================================================
+Part E. Body-diagonal connections and the hw=1 triplet
+======================================================================
+[PASS] E1: there are 4 body-diagonals (dist^2=3) on the cube  (4 found)
+  body-diagonal endpoint Hamming weights:
+    (0, 0, 0) (hw=0) <-> (1, 1, 1) (hw=3)
+    (0, 0, 1) (hw=1) <-> (1, 1, 0) (hw=2)
+    (0, 1, 0) (hw=1) <-> (1, 0, 1) (hw=2)
+    (0, 1, 1) (hw=2) <-> (1, 0, 0) (hw=1)
+[PASS] E2: NO body-diagonal connects two hw=1 sites  (0 within-hw1 body-diagonals)
+[PASS] E3: every hw=1 body-diagonal endpoint pairs with an hw=2 site (C-conjugate orbit)
+[PASS] E4: the 3 hw=1<->hw=2 body-diagonals exist (cross-parity, not within-generation)  (3 found)
+  => body-diagonals act between hw=1 and hw=2 (the C-conjugate
+     generation orbit); within the hw=1 triplet they add NOTHING.
+     No 4th generation; the u(3) on hw=1 is unchanged.
+
+======================================================================
+Part F. Honest verdict consistency
+======================================================================
+[PASS] F1: NN gives strictly-smaller algebra (dim 3) than face (dim 9)
+[PASS] F2: face-diagonal algebra dimension MATCHES color u(3) dimension 9
+[PASS] F3: but the carriers DIFFER (gen vs color intersection < 3) -- a dimension match is NOT a color identification
+[PASS] F4: face-diagonal su(3) is GENERATION-space; color identification remains the open Z3-character gate
+  VERDICT: PARTIAL. Face-diagonal adjacency genuinely supplies an
+  su(3)+u(1) on the 3-generation factor (the NN obstruction is real
+  and is lifted). But that su(3) acts on GENERATION space, which is
+  a DIFFERENT subspace of C^8 than the framework's symmetric-base
+  COLOR carrier, and the Z_3 characters differ. Identifying the two
+  is exactly the still-open color/generation bridge. So face-
+  diagonal does NOT by itself close GATE-COLOR; it relocates the
+  obstruction from 'no su(3) algebra at all' to 'su(3) present on
+  generation space, color identification still required.'
+
+======================================================================
+SUMMARY: PASS=35 FAIL=0
+======================================================================
+Face-diagonal adjacency lifts the REAL NN obstruction (u(1)^3 -> 
+u(3)) on the generation triplet, but the resulting su(3) is a
+GENERATION-space algebra on a carrier distinct from the framework's
+symmetric-base color carrier, with a mismatched Z_3 character.
+GATE-COLOR is PARTIAL, not closed: the color/generation
+identification remains the open bridge.

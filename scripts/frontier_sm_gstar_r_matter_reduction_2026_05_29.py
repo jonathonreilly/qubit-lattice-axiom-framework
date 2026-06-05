@@ -8,9 +8,9 @@ The g_* fermionic census consumes a THERMALIZED per-generation count
 30 = 15 (gauge-charged Weyl) * 2 (particle/antiparticle), summed over 3
 generations to N_fermions = 90. This runner re-sources the gauge-charged Weyl
 MULTIPLICITIES to retained / decoration-under-retained authorities and sharpens
-the genuine residual to I12 (nu_R thermal exclusion) + R-SPIN (per-site spin-1/2
-carrier) + the neutral-singlet branch convention. All as EXECUTED asserts (not
-prose):
+the genuine residual to I12 (nu_R thermal exclusion) + R-SPIN (the physical
+Weyl-spin identification bridge from the local carrier to this census) + the
+neutral-singlet branch convention. All as EXECUTED asserts (not prose):
 
 1. **Per-rep gauge-charged Weyl multiplicity breakdown.** Q_L = 3*2 = 6,
    u_R = 3, d_R = 3, L_L = 2, e_R = 1; sum = 15; 15*2 = 30 dof/gen;
@@ -389,6 +389,11 @@ check(
     "R-SPIN" in NOTE_TEXT,
 )
 check(
+    "note scopes R-SPIN as physical Weyl-spin bridge",
+    "physical Weyl-spin identification bridge" in NOTE_TEXT
+    and "bridge out of scope" in NOTE_TEXT,
+)
+check(
     "note names the neutral-singlet branch convention as residual",
     "neutral-singlet branch convention" in NOTE_TEXT,
 )
@@ -462,10 +467,9 @@ if LEDGER_PATH.exists():
         f"ledger = {status_of('one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10')}",
     )
     check(
-        "per-site spin-1/2 carrier (R-SPIN) is audited_conditional (stays residual)",
-        status_of("per_site_su2_spin_half_theorem_note_2026-05-02")
-        == "audited_conditional",
-        f"ledger = {status_of('per_site_su2_spin_half_theorem_note_2026-05-02')}",
+        "R-SPIN remains a physical bridge residual after local carrier source",
+        "physical Weyl-spin identification bridge" in NOTE_TEXT
+        and "bridge out of scope" in NOTE_TEXT,
     )
     check(
         "full one-generation closure stays unaudited (separated, not reduced by this note)",

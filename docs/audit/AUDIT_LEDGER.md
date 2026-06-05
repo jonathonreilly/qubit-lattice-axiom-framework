@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 617 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1384 |
+| unaudited | 1383 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 23 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 940 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1668 |
+| `unaudited` | 1667 |
 
 | claim_type | count |
 |---|---:|
@@ -110,7 +110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `yt_ew_color_projection_theorem` | no_go | critical | 601 | 37.73 | `audited_clean` | **retained_no_go** |
 | 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1027 | 37.51 | `audited_clean` | **retained** |
 | 13 | `key_terminology` | meta | critical | 1032 | 36.51 | `unaudited` | meta |
-| 14 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 998 | 35.96 | `unaudited` | unaudited |
+| 14 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 998 | 35.96 | `audited_conditional` | ~~audited_conditional~~ |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 217 | 34.27 | `unaudited` | unaudited |
 | 16 | `cpt_exact_note` | positive_theorem | critical | 1011 | 33.98 | `audited_clean` | **retained** |
 | 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 812 | 33.67 | `audited_clean` | **retained_bounded** |
@@ -1095,6 +1095,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -12957,6 +12958,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The staggered force-first lane is not confined to periodic cubic lattices; it survives a narrow layered acyclic template with forward-depth bias, machine-clean norm/Born, and stable inward proxy response under the prescribed attractive sign, even though the live transport operator is still symmetrized rather than truly directed.  _(class `C`)_
 - **chain closes:** True — The runner directly evaluates the three layered DAG-derived configurations and reproduces the load-bearing 6/6 score surface, TOWARD forces, N-stability, Born linearity, forward-depth fraction, and state-family robustness. The small norm-row roundoff difference remains at machine precision and does not affect the bounded compatibility claim.
 - **rationale:** The source note is narrowly framed as a compatibility control, not a proof of truly directed DAG Hamiltonian transport. The current runner gives 6/6 on all three configurations, with TOWARD force, 14/14 N-stability, machine-clean norm/Born behavior, forward-depth fraction 0.1266, and 3/3 state families. Residual risk is limited to the symmetrized-adjacency scope boundary, which the note states explicitly.
+- **auditor confidence:** high
+
+### `staggered_dirac_realization_gate_note_2026-05-03`
+
+- **Note:** [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](../../docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate parent identity for the staggered-Dirac realization target on the one-qubit Z^3 baseline.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-160957-51c156dbe7-staggered_dirac_realization_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's load-bearing content is only the assignment of a canonical open-gate parent identity.  _(class `E`)_
+- **chain closes:** False — The packet does not derive Grassmann forcing, staggered kinetic structure, BZ-corner structure, or the hw=1 triplet to SM-generation identification. It explicitly says closure requires a proof packet or retained theorem chain for substeps (1)-(4).
+- **rationale:** The source note is explicit that it does not close the staggered-Dirac realization gate and supplies no new mathematical content. The only cited authority, the minimal-axioms memo, is an accepted premise but explicitly excludes dynamics, Grassmann realization, species identification, and AC_phi_lambda. No runner or cited proof packet closes the missing substeps, so the realization claim remains open from the restricted packet.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`

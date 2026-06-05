@@ -1,28 +1,40 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_grav_decoherence_derived.py
-runner_sha256: ce7726e04cb894ff44ce9c0544d04c8bc252fc9ac4ba9afaa7f57550b3f3ba91
+runner_sha256: c0bd1c975107b78430da1e13085a52d101df7aa9913c94a5d3c5a8edcda6ddbf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 21.12
+elapsed_sec: 6.26
 status: ok
 ----- stdout -----
 ==============================================================================
-GRAVITATIONAL DECOHERENCE RATE -- DERIVED FROM FRAMEWORK AXIOMS
+GRAVITATIONAL DECOHERENCE RATE -- CONDITIONAL PENROSE-DIOSI/BMV COMPANION
 ==============================================================================
 
 ==============================================================================
-SECTION 1: AXIOM -> POISSON EQUATION -> GREEN'S FUNCTION
+SOURCE BOUNDARY CHECKS
+==============================================================================
+  [PASS] source requires: **Claim type:** bounded support note: 
+  [PASS] source requires: **Type:** conditional / support: 
+  [PASS] source requires: not a framework-only derivation: 
+  [PASS] source requires: Penrose-Diosi/BMV model: 
+  [PASS] source requires: external inputs for this companion surface: 
+  [PASS] source requires: Open Inputs That Remain Load-Bearing: 
+  [PASS] source excludes old title overclaim: 
+  [PASS] source excludes old single-axiom overclaim: 
+  [PASS] source excludes old beta prediction overclaim: 
+
+==============================================================================
+SECTION 1: SUPPLIED POISSON KERNEL -> GREEN'S FUNCTION DIAGNOSTIC
 ==============================================================================
 
-  Axiom: Cl(3) algebra on Z^3 lattice.
-  => Staggered scalar field phi with equation of motion:
+  Conditional input: formal lattice-Poisson equation
        (-Delta_lat) phi = rho
-  This IS the Poisson equation on the lattice.
+  This runner treats that equation as supplied for the companion packet.
 
   The lattice Green's function G_lat(r) satisfies:
     G_lat(r) = 1/(4 pi |r|) + Delta(r)
   where Delta(r) -> 0 as |r| -> infinity.
-  [Maradudin et al. 1971; confirmed in frontier_newton_derived.py]
+  This is checked here as a finite-grid form-factor diagnostic.
 
   Verification: G_lat(r) on-axis
      r           G_lat       1/(4pi r)           Delta      F=G/Gc
@@ -40,7 +52,7 @@ SECTION 1: AXIOM -> POISSON EQUATION -> GREEN'S FUNCTION
 SECTION 2: SUPERPOSED MASS -> FIELD DISTINGUISHABILITY
 ==============================================================================
 
-  A mass m at position x sources phi(r) = -G_N m G_lat(r - x).
+  Supplied mass-source/readout: phi(r) = -G_N m G_lat(r - x).
   In superposition of x_1, x_2 (separation delta_x):
     Branch 1: phi_1(r) = -G_N m G_lat(r - x_1)
     Branch 2: phi_2(r) = -G_N m G_lat(r - x_2)
@@ -51,7 +63,7 @@ SECTION 2: SUPERPOSED MASS -> FIELD DISTINGUISHABILITY
 
   The decoherence rate:
     gamma = E_G / hbar = G_N m^2 / (hbar delta_x)
-  This is the Penrose-Diosi rate.
+  This is a supplied Penrose-Diosi bridge, not proven by this runner.
 
 ==============================================================================
 SECTION 3: LATTICE FORM FACTOR F(delta_x / a)
@@ -117,7 +129,7 @@ SECTION 3: LATTICE FORM FACTOR F(delta_x / a)
   Delta(20) / Delta(30) = 2.3590, effective exponent = 2.12
 
 ==============================================================================
-SECTION 4: PHYSICAL DECOHERENCE RATES
+SECTION 4: CONDITIONAL PHYSICAL DECOHERENCE RATES
 ==============================================================================
 
   Diamond microsphere: m = 1e-14 kg, rho = 3500 kg/m^3
@@ -132,7 +144,7 @@ SECTION 4: PHYSICAL DECOHERENCE RATES
   Optimistic next-dec        6.3289e+09     7.8984e+08     7.5859e+09    1.3182e-10    5.0652e+07
 
 ==============================================================================
-SECTION 5: VERIFICATION OF gamma = 52.6 Hz (m=10pg, dx=1um)
+SECTION 5: CONDITIONAL READOUT gamma = 52.6 Hz (m=10pg, dx=1um)
 ==============================================================================
 
   Penrose-Diosi (point particles):
@@ -163,7 +175,8 @@ SECTION 5: VERIFICATION OF gamma = 52.6 Hz (m=10pg, dx=1um)
 SECTION 6: LATTICE FORM FACTOR AT PHYSICAL SEPARATIONS
 ==============================================================================
 
-  The form factor F(delta_x / a) deviates from 1 only when
+  Conditional on the supplied physical lattice pin,
+  the form factor F(delta_x / a) deviates from 1 only when
   delta_x is comparable to the lattice spacing a.
 
   For a = l_Planck = 1.616e-35 m:
@@ -176,7 +189,7 @@ SECTION 6: LATTICE FORM FACTOR AT PHYSICAL SEPARATIONS
   The lattice correction to gamma at delta_x = 1 um:
     |F - 1| ~ (a / delta_x)^2 = (1.62e-35 / 1e-06)^2
             = 2.61e-58
-  This is entirely undetectable.
+  This is undetectable within the supplied companion model.
 
   Extrapolation from numerical form factors:
     At r = 20: |F - 1| = 6.1784e-03
@@ -188,7 +201,7 @@ SECTION 6: LATTICE FORM FACTOR AT PHYSICAL SEPARATIONS
   [PASS] lattice correction negligible: computed=6.455909e-58, ref=0.000000e+00, err=6.46e-58 (tol=1e-40) lattice form factor correction at delta_x = 1 um
 
 ==============================================================================
-SECTION 7: BMV PARAMETERS -- THE DETECTABLE PREDICTION
+SECTION 7: BMV PARAMETERS -- CONDITIONAL READOUT
 ==============================================================================
 
   BMV parameters: m = 1e-14 kg, dx = 250 um, d = 200 um, T = 2 s
@@ -201,10 +214,10 @@ SECTION 7: BMV PARAMETERS -- THE DETECTABLE PREDICTION
 
   Saturated Gaussian rate (dx >> sigma):
     gamma_sat = G m^2 / (sqrt(pi) sigma hbar) = 7.141421e+01 Hz
-    (but we use the PD rate for the physical prediction since it gives
-     the rate due to distinguishability at the actual separation dx)
+    (within this companion model, use the PD rate because it gives
+     the supplied rate due to distinguishability at separation dx)
 
-  Physical decoherence rate (BMV): gamma = 2.5316e-01 Hz
+  Conditional decoherence rate (BMV): gamma = 2.5316e-01 Hz
   Decoherence time: tau = 3.9501e+00 s
 
   Entanglement phase:
@@ -216,7 +229,7 @@ SECTION 7: BMV PARAMETERS -- THE DETECTABLE PREDICTION
   [PASS] gamma_BMV ~ 0.25 Hz: computed=2.531568e-01, ref=2.530000e-01, err=6.20e-04 (tol=2e-02) BMV decoherence rate
   [PASS] Phi_BMV ~ 12.4 rad: computed=1.237655e+01, ref=1.240000e+01, err=1.89e-03 (tol=1e-01) BMV entanglement phase
 
-  Feasibility:
+  Conditional feasibility:
     Decoherence budget: gamma_total < 1/T = 0.50 Hz
     Gravitational rate: gamma_grav = 0.2532 Hz
     Ratio gamma_grav / gamma_budget = 0.5063
@@ -224,11 +237,11 @@ SECTION 7: BMV PARAMETERS -- THE DETECTABLE PREDICTION
     => 12.4 rad of entanglement phase: STRONGLY DETECTABLE
 
 ==============================================================================
-SECTION 8: BORN RULE CONNECTION
+SECTION 8: BORN-RULE CROSS-CONSTRAINT STATUS
 ==============================================================================
 
-  The lattice form factor F is derived from the same linear propagator
-  that guarantees the Born rule (I_3 = 0).
+  The beta-to-gamma relation is preserved as conditional
+  phenomenology. This runner does not derive that bridge.
 
   If the propagator has a nonlinear perturbation (beta != 1):
     gamma(beta) = gamma_0 * [1 + (beta - 1) + O((beta-1)^2)]
@@ -241,47 +254,46 @@ SECTION 8: BORN RULE CONNECTION
     |beta - 1| < 10^{-5} (Eot-Wash, gravity sector)
     => delta_gamma / gamma < 10^{-5}
 
-  A measurement of gamma_grav that disagrees with the Penrose-Diosi
-  prediction by more than 10^{-5} would:
+  In the supplied model, a measurement of gamma_grav that disagrees
+  with the Penrose-Diosi readout by more than 10^{-5} would:
     (a) Constrain the lattice form factor (new physics at short distances)
     (b) Constrain the Born rule parameter (propagator nonlinearity)
-    (c) Potentially falsify the framework
+    (c) Flag an open framework/bridge consistency problem
 
 
 ==============================================================================
-DERIVATION SUMMARY
+CONDITIONAL SUPPORT SUMMARY
 ==============================================================================
 
-  Chain of derivation:
-    Cl(3) on Z^3
-      -> Poisson equation (-Delta_lat) phi = rho
-      -> Lattice Green's function G_lat(r) = 1/(4 pi r) + Delta(r)
-      -> Two branches of superposed mass source distinguishable fields
-      -> E_G = G m^2 / delta_x * F(delta_x / a)
-      -> gamma = E_G / hbar = (G m^2)/(hbar delta_x) * F
+  Conditional chain:
+    supplied lattice-Poisson kernel
+      -> finite-grid lattice Green diagnostic
+      -> supplied superposed-mass source/readout
+      -> supplied E_G = G m^2 / delta_x * F(delta_x / a)
+      -> supplied gamma = E_G / hbar = (G m^2)/(hbar delta_x) * F
 
   Form factor F:
     F -> 1 for delta_x >> a (continuum limit)
     |F - 1| ~ (a/delta_x)^2 ~ 10^{-58} at delta_x = 1 um
     Undetectable lattice correction.
 
-  Key predictions:
+  Key conditional readouts:
     Conservative NV (m=10pg, dx=1um): gamma = 52.6 Hz
     BMV original (m=10pg, dx=250um):  gamma = 0.2532 Hz
     BMV entanglement phase:           Phi = 12.4 rad
 
-  The BMV experiment is strongly feasible:
+  The supplied BMV model is feasible by these diagnostics:
     gamma_grav = 0.25 Hz < 0.5 Hz decoherence budget
     Phi_ent = 12.4 rad >> 1 (strong signal)
 
-  Born rule connection:
-    delta_gamma / gamma = (beta - 1) links decoherence to I_3 test.
-    A disagreement constrains the framework.
+  Born-rule cross-constraint:
+    delta_gamma / gamma = (beta - 1) is kept here only as supplied
+    companion phenomenology.
 
-PASS=7  FAIL=0  (of 7 checks)
-Runtime: 21.0s
+PASS=16  FAIL=0  (of 16 checks)
+Runtime: 6.1s
 
-Log written to logs/2026-05-04-grav_decoherence_derived.txt
+Log written to logs/2026-06-05-grav_decoherence_derived.txt
 
 ----- stderr -----
 

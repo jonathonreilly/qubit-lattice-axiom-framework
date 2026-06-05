@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 176 |
 | **retained_no_go** | 183 |
-| **retained_bounded** | 656 |
+| **retained_bounded** | 657 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1278 |
+| unaudited | 1277 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1007 |
+| `audited_clean` | 1008 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1562 |
+| `unaudited` | 1561 |
 
 | claim_type | count |
 |---|---:|
@@ -397,6 +397,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5603,6 +5604,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On R^3 the C3 commutant is forced to be circulant with comm(R)∩anticomm(Γχ)={0}, while on R^3⊗C^2 the chiral tensor-coin sector has ±-symmetric spectrum, so η vanishes where breaking is possible.  _(class `C`)_
 - **chain closes:** True — The restricted packet supplies the relevant finite matrices, and independent algebra confirms the commutant/anticommutant, graded index, tensor-coin commutation, and ± spectrum claims. The quantitative 2/9 entries also check within the stated finite cyclotomic/rational scope.
 - **rationale:** The load-bearing complementarity is a first-principles finite operator computation, not a renaming or tuned numerical match. The runner does instantiate the matrices and verifies the core algebraic facts; the independently checked formulas include L3(1,2)=2/9, (N−1)/N^2=2/9 at N=3, Q(r=1/2)=2/3, and 2/9 not being an algebraic integer. The clean verdict is bounded to the eta/index route in these native finite sectors and does not ratify the speculative Berry-holonomy next path or external literature survey language.
+- **auditor confidence:** high
+
+### `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md`](../../docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the finite real regular C3 isotype packet, the checked Gaussian, Plancherel, and K0/block-count alternatives do not force equal-block det_C/r=1/2; the block-vs-DOF weighting remains an input outside this round-4 check.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-223248-9c34685cc0-flavor_find_j_consolidation_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The same central idempotents admit positive C3-invariant metric families with different trivial:standard energy ratios, so K0 counts the two blocks but does not by itself select an energy weighting.  _(class `A`)_
+- **chain closes:** True — The finite algebra closes: the real regular C3 representation splits into rank-1 and rank-2 central projectors, R[C3] is R(+)C with K0 rank 2, and G=w_triv P_triv+w_std P_std is positive and C3-invariant for arbitrary positive weights. The stated Gaussian also gives <a^2>=<|b|^2>, while equal-block weighting is a separate imposed constraint.
+- **rationale:** The bounded claim is a finite algebraic statement inside the stated real regular C3 packet, not a closure of rounds 1-3. Independent checks confirm the projector ranks, the standard R[C3]=R(+)C / K0=Z^2 block count, and the existence of invariant positive metric families with nonunique sector ratios. That is sufficient to show the tested block-count route does not force det_C/r=1/2. The runner states some constants, but the load-bearing non-forcing result is independently closed by the restricted finite algebra.
 - **auditor confidence:** high
 
 ### `flavor_find_j_round1_jcs_measure_neutral_2026-06-02`

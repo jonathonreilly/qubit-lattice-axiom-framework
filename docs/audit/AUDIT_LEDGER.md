@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 658 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1275 |
+| unaudited | 1274 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 65 |
+| ~~audited_conditional~~ | 66 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1010 |
-| `audited_conditional` | 65 |
+| `audited_conditional` | 66 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1559 |
+| `unaudited` | 1558 |
 
 | claim_type | count |
 |---|---:|
@@ -1170,6 +1170,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
+| `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5699,6 +5700,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Schur-complement induced hw=1 off-diagonal generation hopping cancels exactly for the specified staggered single-bit-flip operator, leaving b=0 while the diagonal term is nonzero, hence r=|b|^2/a^2=0.  _(class `C`)_
 - **chain closes:** True — The packet supplies the operator, sector, runner output, and runner source; the source explicitly constructs the matrices and computes the direct block and Schur complement rather than importing or printing the contested result. An independent sign-path check agrees: each hw=1 off-diagonal coupling has paired second-order paths through vacuum and a double-excitation state with opposite staggered signs, so the induced hopping cancels for this operator.
 - **rationale:** The load-bearing step is a finite first-principles computation from the displayed one-qubit operator algebra and the specified hw=1 projection. No upstream authorities, empirical comparators, fitted values, or open bridges are used. The no-go is narrow: it closes only this staggered single-bit-flip projection route and explicitly leaves other action, bivector, dynamical, and sector-factorized routes open.
+- **auditor confidence:** high
+
+### `flavor_hw_clifford_does_not_constrain_r_2026-06-02`
+
+- **Note:** [`FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md`](../../docs/FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The note's symmetry-axis package: H is not Fourier-fixed at r=1/2, F-covariance of G forces only b=c, and the accompanying Clifford-landmark quantitative statements are included in the source packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-223708-1e878aefdb-flavor_hw_clifford_does_not_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Fourier conjugation sends the pure-shift H to the clock line and makes G fixed iff b=c with a free, so HW/Fourier covariance does not relate a to |b| and cannot select r=1/2.  _(class `A`)_
+- **chain closes:** False — The core Fourier-conjugation algebra closes. The broader source packet does not close because its r=1 Clifford-landmark claims are not derived in the restricted inputs, and the displayed det(K) landmark needs an unstated branch or positivity restriction.
+- **rationale:** The matrix-conjugation checks are valid algebraic closures: independently, FZF†=X², so K is fixed for all g, G is fixed iff b=c, and H is fixed only at b=0; the r=1/2 distance is sqrt(6)≈2.449 for a=1, b=1/sqrt(2). However, for K with a=1, det(I+gS)=1-6g²+4g³, so g²=1/4 is not a unique determinant landmark unless an extra branch or positivity condition is imposed. The Wigner/PSD/full-orbit r=1 statements are also not proved by the runner or cited authorities, so the narrow no-go is supported but the note is too broad for audited_clean.
 - **auditor confidence:** high
 
 ### `flavor_idempotent_u1_collapses_note_2026-05-30`

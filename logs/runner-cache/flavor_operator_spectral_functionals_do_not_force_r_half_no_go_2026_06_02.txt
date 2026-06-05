@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/flavor_operator_spectral_functionals_do_not_force_r_half_no_go_2026_06_02.py
+runner_sha256: 8d5cd0c89ceab8ec61f0c2f4ac11a048443c8a4a3cea2891d3f5b16142d3fb96
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.82
+status: ok
+----- stdout -----
+[PASS] 0a. Tr H^2 = 3 a^2 + 6 b^2 (HS norms 3,6)  -- TrH2=3*a**2 + 6*b**2
+[PASS] 0b. Q(r) = 1/3 + (2/3) r exactly  -- Q(r)=2*r/3 + 1/3
+[PASS] 0c. r=1/2 <=> 3a^2=6b^2 (equal-HS-energy) <=> Q=2/3
+[PASS] 1a. Spectral entropy S3 (3 eigenvalues) peaks at r->0, NOT 1/2  -- argmax~0.0001
+[PASS] 1b. vN entropy of rho=H^2/TrH^2 peaks at r->0, NOT 1/2
+[PASS] 1c. vN entropy of rho=e^{-H}/Z peaks at r->0, NOT 1/2  -- argmax~0.0001
+[PASS] 1d. Rel.entropy S(rho_spec||I/3) min at r->0, NOT 1/2  -- argmin~0.0001
+[PASS] 1e. Purity Tr(rho_spec^2) min (most mixed) at r->0, NOT 1/2  -- argmin~0.0001
+[PASS] 2a. {I,C,C^2} are HS-orthogonal, each norm^2=3 (canonical, forced metric)  -- diag=[3. 3. 3.]
+[PASS] 2b. Real channels: ||I||^2=3, ||J-I||^2=6 (UNEQUAL) -> dimension count weights C,C^2 separately -> r=1
+[PASS] 2c. Cl(3) grade-1 canonical metric is isotropic delta_ij (says nothing about I-vs-(J-I) weight)
+[PASS] 3a. Sector-power entropy S2 has unique crit pt r=1/2 (a MAX, S=log2)
+[PASS] 3b. 2-sector imbalance (p_I-p_off)^2 has unique min at r=1/2
+[PASS] 4a. Ad-invariant metric energy B(H,H)=(3a+9b)a^2 + 6a b^2; 'channel-balance' needs alpha=3 beta (a free curve)
+[PASS] 4b. r=1/2 (3a^2=6b^2 channel-energy balance) corresponds to Frobenius beta=0 -- a single UNFORCED point of the PD cone
+[PASS] 4c. PD cone contains beta!=0 (alpha=beta=1: PD, Ad-invariant, != Frobenius) -> beta=0 not forced
+[PASS] 5. RP/T-positivity (e^{-tH} PD) holds on the WHOLE admissible r-line -> inequality, pins no interior r
+
+SCORECARD: PASS=17 FAIL=0
+
+----- stderr -----
+

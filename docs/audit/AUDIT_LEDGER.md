@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 177 |
 | **retained_no_go** | 189 |
-| **retained_bounded** | 665 |
+| **retained_bounded** | 666 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1246 |
+| unaudited | 1245 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1025 |
+| `audited_clean` | 1026 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1530 |
+| `unaudited` | 1529 |
 
 | claim_type | count |
 |---|---:|
@@ -614,6 +614,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_factor_split_does_not_force_carrier_value_bridge_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_faithfulness_rotation_scalar_excluded_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_fisher_rao_spherical_reorganization_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -9351,6 +9352,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The value and carrier axes commute but have all four joint sign sectors nonempty, so neither equality nor sign-reversed equality follows from the product algebra.  _(class `A`)_
 - **chain closes:** True — Independently, the value involution has eigenspace dimensions 1 and 2, while the carrier swap has eigenspace dimensions 3 and 1, giving joint dimensions {(1,1):3,(1,-1):1,(-1,1):6,(-1,-1):2}. The mixed sectors are counterexamples to any forced equality or sign-reversed equality within the scoped product model.
 - **rationale:** The runner source is self-contained and computes finite matrix identities rather than printing a hard-coded verdict. The load-bearing calculation is an algebraic identity check: tensor-embedded involutions commute, are not equal up to sign, and have nonempty mixed eigensectors. The note's no-go is properly scoped to the bare product-factor route and explicitly leaves later physical welding theorems or admissions open.
+- **auditor confidence:** high
+
+### `koide_faithfulness_rotation_scalar_excluded_note_2026-06-01`
+
+- **Note:** [`KOIDE_FAITHFULNESS_ROTATION_SCALAR_EXCLUDED_NOTE_2026-06-01.md`](../../docs/KOIDE_FAITHFULNESS_ROTATION_SCALAR_EXCLUDED_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded operator-frame statement: once the retained spatial Spin(3) action gives J_i=σ_i/2 on the per-site C^2 algebra, the K=0 scalar branch is excluded for both so(3,1) and so(4); matter-field attachment remains outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-233650-be92f8b20e-koide_faithfulness_rotation_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With J_i = σ_i/2 ≠ 0, K_i = 0 makes [K_i,K_j] = 0 while the so(3,1) or so(4) bracket requires [K_i,K_j] = ± i ε_ijk J_k, so K=0 is not a completion.  _(class `A`)_
+- **chain closes:** True — The retained merger supplies the operator-frame spatial rotation generators J_i=σ_i/2, and the Lie-bracket contradiction for K=0 is immediate. The chain does not close full matter faithfulness; the missing step is the matter-field-index attachment bridge, which the note explicitly disclaims.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: for any off-diagonal pair, ε_ijk J_k is nonzero, so K=0 cannot satisfy either sign of the [K,K] bracket. An independent algebra check also gives the listed same-carrier completions K_i=aJ_i with a^2=-1 for so(3,1) and a^2=+1 for so(4). The runner's section E uses hard-coded scope assertions, so those are not treated as proof; the clean verdict rests on the bracket algebra and the cited operator-frame merger only.
 - **auditor confidence:** high
 
 ### `koide_fisher_rao_spherical_reorganization_note_2026-06-01`

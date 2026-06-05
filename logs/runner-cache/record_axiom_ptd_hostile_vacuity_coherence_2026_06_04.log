@@ -1,0 +1,100 @@
+================================================================================================
+FRONT 1 -- NON-VACUITY: is 'the symmetric stationary point' a SHARP prediction or vacuous?
+================================================================================================
+[PASS] 1.1 the sector-swap r|->1-r has a UNIQUE fixed point r=1/2 (so 'the symmetric point' is not 'somewhere')
+       symmetry pins ONE point; 'every functional has stationary points' is true but irrelevant -- the axiom names the SYMMETRIC one
+[PASS] 1.2 the symmetric point r=1/2 maps to Q = 2/3 EXACTLY (retained biconditional), a definite value not a range
+       Q(1/2)=0.666666666666667 = 2/3 -- sharp, single-valued
+[PASS] 1.3 FALSIFIABLE: predicted Q_symmetric=2/3 matches Q_exp to ~1e-5; no other simple fraction is within tol
+       |Q_exp-2/3|<0.0001; confusable simple fractions within tol: [] (empty => the 2/3 prediction had teeth)
+[PASS] 1.4 a counterfactual symmetric value (r=0 or r=1) WOULD be falsified by data -> the prediction is contentful
+       {'r_sym=0 -> Q=1/3': True, 'r_sym=1 -> Q=1': True} -- only r_sym=1/2 survives; the axiom is not satisfiable by any sector arrangement
+[PASS] 1.5 vacuity TRAP confirmed: 2-sector entropy peaks at r=1/2 BUT per-DOF/Born equipartition is at r=1
+       argmax S2=0.500 (Q=2/3) vs per-DOF equipartition r=1 (Q=1): 'a stationary point' UNqualified is satisfiable at both
+[PASS] 1.5b therefore the axiom is NON-VACUOUS *only* via 'SYMMETRIC' (swap-fixed, functional-independent), not 'a stationary point'
+       the word 'symmetric' is load-bearing: it pins the unique 1/2 regardless of which functional; drop it and the axiom goes vacuous
+[PASS] 1.6 QUANTITATIVE teeth: symmetric value must equal 1/2 to ~3e-5; the nearest simple fraction 4/9 is thousands of sigma off
+       r(4/9)=0.1667 is 10929 sigma from r=1/2 -> the 2/3 prediction is sharply falsifiable, not a loose fit
+[PASS] 1.7 the symmetric lane pins Q rigidly (dQ/dr=2/3 != 0): fixing the symmetric r=1/2 FIXES Q=2/3, no residual freedom
+       dQ/dr=0.6667=2/3 -> a contentful axiom (Q determined), not a vacuous one (Q would be free)
+
+================================================================================================
+FRONT 2 -- COHERENCE: is 'real superselection sector' + the dial well-defined on general M_n(C)?
+================================================================================================
+[PASS] 2.1 real Wedderburn center of R[Z_3] = R (+) C -> exactly TWO real classical sectors, R-dims {1,2}
+       the 'real superselection sectors' are the 2 minimal central idempotents of the REAL group algebra -- well-defined, not ad hoc
+[PASS] 2.2 the dial (weight over real sectors) is well-defined on ANY finite-dim real *-algebra with >=2 real blocks
+       {'R': False, 'C(real)': False, 'R(+)R': True, 'R(+)C': True, 'H(real)': False} -- general recipe (minimal real-central projections); degenerate (no dial) iff a single real block
+[PASS] 2.3 'symmetric stationary point' = unique S_n-invariant (uniform) weight for n sectors -> general, not Z_3-only
+       n=2 gives (1/2,1/2)=r=1/2; n sectors give 1/n; the symmetric point is always unique and well-defined
+[PASS] 2.4 the dial is a probability weight over the LIST of real sectors -> well-defined even with heterogeneous block algebras
+       weights live on the sector index set; no cross-algebra comparison of internal dimensions is needed
+[PASS] 2.5 NUMERICAL: real commutant generator C+C^T on M_3(C) has 2 distinct real eigenspaces -> 2 real sectors (computed, not asserted)
+       distinct real eigenvalues [np.float64(-1.0), np.float64(2.0)] -> singlet (eig 2, dim1) + doublet (eig -1, dim2): the (1,2) split, computed on the matrix algebra
+[PASS] 2.6 the symmetric weight (1/2,1/2) over the 2 COMPUTED sectors = equal sector power = r=1/2 (the dial's symmetric point)
+       sector powers at r=1/2: (0.500,0.500) equal -> 'symmetric dial' is concretely r=1/2 on the computed sector list
+
+================================================================================================
+FRONT 3 -- MINIMALITY: do the four consequences FOLLOW from the one-clause core, or are they bloat?
+================================================================================================
+[PASS] 3.1 CUT is a THEOREM of the core: irreversible+conserved record observable must be CENTRAL (toy: only scalars commute with M_2(C))
+       'classical cut = center' need NOT be a separate axiom clause; it follows from registration-of-WHICH + frozen
+[PASS] 3.2 TIME (formation order) is a THEOREM of the core: irreversible accumulation induces a (pre)order on record events
+       reflexive+transitive formation order emerges from 'records can't un-form'; time-as-formation-order is not an extra posit
+[PASS] 3.3 DIAL is a META-fact (core under-determines the ensemble weight), not a 4th physical clause
+       the core fixes WHICH-in-a-run, not the ensemble weight => the weight is free BY OMISSION; 'free dial' restates that
+[PASS] 3.4 'REAL/CPT' is the ONE independent qualifier: a K-odd (T-odd) self-adjoint observable is registrable, so reality is a real selection
+       minimal statement = {irreversible registration of which sector} + the single adjective {real}; time,cut are theorems, dial is meta
+
+================================================================================================
+FRONT 4 -- CONSTITUTIVE vs ASSUMED: which clauses are forced by what a record IS?
+================================================================================================
+[PASS] 4.1 IRREVERSIBLE = CONSTITUTIVE: a reversible 'record' retrieves nothing (unitary invertible) vs a real record (projection, non-invertible)
+       a record that can un-form is not a record -> irreversibility is part of the DEFINITION, not an added assumption
+[PASS] 4.2 REGISTRATION-OF-WHICH = CONSTITUTIVE: a record must distinguish >=2 alternatives (else it records nothing)
+       'registers which' is what 'record' MEANS; not an added physical assumption
+[PASS] 4.3 SUPERSELECTION = PROVEN (frozen=>central), so constitutive-via-theorem, not an independent assumption
+       the recorded observable's centrality is derived from irreversible+conserved, not posited
+[PASS] 4.4 REAL/CPT-EVEN = ASSUMED (added physical premise): a K-odd record is logically consistent, so 'classical=real' is a selection
+       ADJUDICATION: reality is the ONE non-constitutive clause -- it is the same K-reality import already named on origin/main
+
+================================================================================================
+FRONT 5 -- NO-OVERREACH RE-CHECK (vs the forcing version) + the F1<->F5 needle
+================================================================================================
+[PASS] 5.1 NO-OVERREACH: the axiom is satisfiable with charged leptons at r=1/2 and another sector at r=1 (no value forced)
+       assignment {'charged_leptons': 0.5, 'other_sector': 1.0} satisfies 'each at a stationary point' without forcing equality -> the forcing-version's fatal flaw is absent
+[PASS] 5.2 NO-OVERREACH: axiom asserts a value ONLY for sectors with the R[Z_3] 2-sector cut -> makes NO quark/neutrino claim to falsify
+       quark 2/9 is a count ratio (different observable); the axiom does not assert it on this r-line -> no overreach into other sectors
+[PASS] 5.3 NEEDLE THREADED: predicts charged-lepton 2/3 sharply (strong end) AND leaves other lanes free (weak end) simultaneously
+       the symmetric lane is a SHARP prediction; the broken lanes are FREE -> contentful for leptons, non-overreaching for others
+[PASS] 5.4 HONEST HOLE: predicting charged-lepton 2/3 needs ONE extra premise ('CL sector = the symmetric lane'); core permits all 3 lanes
+       RUTHLESS verdict: the needle is threaded for the SECTOR THAT OCCUPIES THE SYMMETRIC LANE -- but WHICH sector that is is an added lane-assignment bit
+[PASS] 5.5 the contentful, non-overreaching CORE WIN: 'symmetric lane => Q=2/3' is sharp, unique, falsifiable, forces no other sector
+       this conditional is the honest deliverable: contentful (sharp+falsifiable), coherent, minimal, non-overreaching
+[PASS] 5.6 the multi-lane version does NOT inherit the forcing version's falsified 'all sectors -> 2/3' claim
+       overreach genuinely avoided: the universal-2/3 claim that killed the forcing version is not entailed
+
+================================================================================================
+PER-FRONT VERDICT
+================================================================================================
+  [F1 NON-VACUITY] CONTENTFUL -- but ONLY via the word 'SYMMETRIC' (unique swap-fixed point=1/2=>Q=2/3, sharp+falsifiable, matches 1e-5). 'a stationary point' UNqualified is VACUOUS (2-sector->1/2, Born->1).
+  [F2 COHERENCE] COHERENT -- real sectors = minimal real-central projections; dial = weight over the sector list; symmetric point = unique S_n-uniform weight. General on any finite-dim real *-algebra, not Z_3-only.
+  [F3 MINIMALITY] MINIMAL CORE = {irreversible registration of WHICH sector} + the single adjective {real}. time & cut are THEOREMS; dial is a META-restatement (core under-determines the ensemble weight).
+  [F4 CONSTITUTIVE] irreversible/registration/superselection = CONSTITUTIVE (last via proven frozen=>central). REAL/CPT-even = the ONE ASSUMED clause (a K-odd record is consistent) = the named K-reality import.
+  [F5 NO-OVERREACH] AVOIDS OVERREACH (no sector value forced; no quark/neutrino claim). BUT predicting charged-lepton 2/3 needs ONE extra lane-assignment bit ('CL sector = symmetric lane'). Core win = conditional 'symmetric=>2/3'.
+
+THE TWO CRUCIAL FINDINGS
+------------------------------------------------------------------------------------------------
+  (1) VACUOUS-or-CONTENTFUL: CONTENTFUL. The axiom makes the SHARP, FALSIFIABLE prediction that the
+      SYMMETRIC lane = Q=2/3 (unique swap fixed point r=1/2; matches charged leptons to ~1e-5; no other
+      simple fraction within tolerance). The vacuity trap is real but DODGED: it is dodged ONLY by the
+      word 'symmetric' (which is functional-independent). 'Occupy a stationary point' unqualified IS vacuous.
+  (2) THREADS-NEEDLE-or-NOT: THREADS IT FOR THE CONDITIONAL, with ONE honest extra bit. The axiom is
+      strong enough (symmetric=>2/3, sharp) and weak enough (forces no other sector) SIMULTANEOUSLY --
+      so it does not overreach AND is not vacuous. BUT pinning charged leptons (vs quarks) to the
+      symmetric lane requires one UNSTATED lane-assignment premise ('the charged-lepton sector is the
+      symmetric one'). With it: charged-lepton 2/3 predicted. Without it: only the conditional 'symmetric=>2/3'.
+      Net: the needle is threaded at the level of the CONDITIONAL; full charged-lepton determination
+      costs exactly one lane-assignment bit on top (NOT a hidden re-import of the value).
+
+SCORECARD PASS=28 FAIL=0

@@ -1,0 +1,79 @@
+[PASS] 1.1 dim^s endpoint s=0 (BLOCK-COUNT, partition-only record) gives r=1/2, Q=2/3
+       r(0)=0.500000, Q(0)=0.666667 -- the 'measure-from-the-cut' classical setting
+[PASS] 1.2 dim^s endpoint s=1 (DIMENSION/Born, within-block) gives r=1, Q=1
+       r(1)=1.000000, Q(1)=1.000000 -- the full-quantum / within-block setting
+[PASS] 1.3 r(s) is strictly monotone INCREASING in s (more within-block weight -> larger r/Q)
+       dr/ds = 2^(s-1)*ln2 > 0 everywhere; dr/ds|_0 = 0.346574
+[PASS] 1.4 Q(s) strictly increasing; Q(0)=2/3 < Q(0.5)=0.8047 < Q(1)=1
+       Q(0)=0.6667, Q(0.5)=0.8047, Q(1)=1.0000
+[PASS] 1.5 r(s)=2^(s-1) DERIVED from per-block(s=0)<->per-dim(s=1) isotype balance, not fitted
+       doublet weight 3*2^(1-s): s=0 -> 6 (per-block), s=1 -> 3 (per-dim); r = 3/w_doublet
+[PASS] 1.6 endpoints reproduce the two canonical retained readouts: (1,1)->Q=2/3, (1,2)->Q=1
+       block-count (1,1) and dimension/Plancherel (1,2) are the s=0 and s=1 faces of one family
+[PASS] 1.7 the dial is genuinely CONTINUOUS: distinct s -> distinct r (injective r(s))
+       r(0.0)=0.5000 != r(0.6)=0.7579; r(s) strictly monotone => injective
+[PASS] 1.8 s_of_r inverts r_of_s exactly (s = 1 + log2 r)
+       lets us read off the s each sector's observed r demands
+       [obs] charged_lepton   Q=0.6667  r=(3Q-1)/2=0.5000  s_required=-0.0000
+       [obs] up_quark         Q=0.8490  r=(3Q-1)/2=0.7735  s_required=0.6294
+       [obs] down_quark       Q=0.7314  r=(3Q-1)/2=0.5971  s_required=0.2561
+       [obs] neutrino_NO      Q=0.5512  r=(3Q-1)/2=0.3268  s_required=-0.6137
+[PASS] 2.1 charged leptons (colorless) sit at s=0 EXACTLY: r=1/2, Q=2/3 (pure-partition record)
+       Q_obs=0.66666 ~ 2/3; s_required=-0.0000 ~ 0
+[PASS] 2.2 up quarks (colored) sit at s>0: partial within-block access, toward Born (r in (1/2,1))
+       r_obs=0.7735 in (1/2,1); s_required=0.6294 > 0
+[PASS] 2.3 down quarks (colored) sit at s>0: partial within-block (r in (1/2,1))
+       r_obs=0.5971 in (1/2,1); s_required=0.2561 > 0
+[PASS] 2.4 neutrinos (neutral/Majorana) sit BELOW the block-count point: s<0, r<1/2
+       r_obs=0.3268 < 1/2; s_required=-0.6137 < 0
+[PASS] 2.5 sector ordering s_nu < s_charged(=0) < s_down < s_up is MONOTONE (a genuine spread)
+       s = neutrino_NO:-0.614, charged_lepton:-0.000, down_quark:+0.256, up_quark:+0.629
+[PASS] 2.6 COLOR DIRECTION confirmed: colorless s=0; colored s>0 for BOTH quark sectors (sign holds)
+       color = a within-block DOF the mass-record partially resolves => pushes s up toward Born
+[PASS] 2.7 color sets DIRECTION not MAGNITUDE: up (s=0.63) != down (s=0.26) despite identical N_c=3
+       magnitude needs more than color (EW up/down asymmetry, Yukawa hierarchy) -- a per-sector input
+[PASS] 2.8 quark s is PARTIAL within-block: 0 < s_up,s_down < 1 (not the full-Born s=1)
+       color partially -- not fully -- resolves the within-block dimension
+[PASS] 3.1 NO-OVERREACH: a universal s=0 mechanism (all sectors r=1/2) is FALSIFIED by the data
+       non-lepton sectors deviate from r=1/2 by ['0.273', '0.097', '0.173'] -- not all at the cut
+[PASS] 3.2 four sectors occupy four DISTINCT dial settings (spread > 1 in s) -- multi-valued dial
+       s spread = 1.243 over [-0.614, 0.629]
+[PASS] 3.3 r=1/2 is the COLORLESS/partition-only setting (s=0) -- occupied by exactly ONE sector
+       only ['charged_lepton'] sits at r=1/2; quarks/neutrinos do NOT -- r=1/2 is NOT universal
+[PASS] 3.4 GUARD: dim^s family does NOT force a universal r (s free per sector) -> NOT an overreach
+       overreach <=> all sectors forced to one r; here the per-sector s differ -> dial survives
+[PASS] 3.5 guard correctly FLAGS the overreaching rule (s=0 for all 4 sectors) as a failure
+       the guard is not vacuous: it rejects any universal-setting mechanism
+[PASS] 3.6 r=1/2 is still a DISTINGUISHED extremum (max 2-sector entropy) -- a natural dial point
+       argmax S2 at r=0.500, S2(1/2)=log2 -- charged leptons sit at this extremum (s=0)
+[PASS] 4.1 observed Q ordering == dial Q(s) ordering across all four sectors (Q monotone in s)
+       order (low->high Q): ['neutrino_NO', 'charged_lepton', 'down_quark', 'up_quark']
+[PASS] 4.2 read-off consistency: Q(s_required) reproduces each observed Q exactly
+       the s-assignment is the exact inverse of the observed Q -- no slack introduced
+[PASS] 4.3 HONEST split: color gives the DIRECTION (sign) of s; the MAGNITUDE is a per-sector input
+       colorless->s=0, colored->s>0 is structural; the actual s value (up vs down) needs the open color-generation bridge + EW up/down asymmetry -- NOT yet derived
+[PASS] 4.4 HONEST: 'color = within-block DOF' invokes the OPEN color-generation bridge; the GUARD (dial survives multi-lane) is independent of that bridge and stands on the data
+       the no-overreach/multi-lane fact is observational; only the s-MECHANISM needs the open bridge
+[PASS] 4.5 NET: DIAL-SURVIVES-NO-OVERREACH (structure+direction) AND NEEDS-COLOR-BRIDGE (magnitude)
+       r=1/2 = colorless/pure-partition setting (s=0), NOT universal; sector->s direction derivable, magnitude input
+
+SCORECARD PASS=27 FAIL=0
+==============================================================================
+VERDICT: DIAL-SURVIVES-NO-OVERREACH (+ NEEDS-COLOR-BRIDGE for the magnitude).
+- The dim^s isotype-block measure interpolates BLOCK-COUNT (s=0, r=1/2, Q=2/3) <-> 
+  DIMENSION/BORN (s=1, r=1, Q=1) via r(s)=2^(s-1), monotone increasing. s = how much the
+  mass-record weighs WITHIN-BLOCK (quantum/dimension) vs only the 2-sector PARTITION (the cut).
+- WHAT SETS A SECTOR'S POSITION: its classical-record-vs-within-block character. Colorless
+  charged leptons -> record resolves only the partition -> s=0 -> r=1/2 (the cut). Colored
+  quarks -> color is a within-block DOF the record partially resolves -> s>0 -> r in (1/2,1).
+  Neutral/Majorana neutrinos -> below the cut -> s<0 -> r<1/2. Observed s ordering is monotone:
+  nu < charged(=0) < down < up.
+- NO-OVERREACH CONFIRMED: a universal-s mechanism (all sectors r=1/2) is FALSIFIED; the four
+  sectors occupy four DISTINCT settings (s spread ~1.24). r=1/2 is the COLORLESS/pure-partition
+  setting (s=0), NOT a universal value. Exactly one sector (charged leptons) sits at the cut.
+- HONEST: the sector->s DIRECTION (colorless 0, colored >0) follows from color as a within-
+  block DOF; the MAGNITUDE (up vs down, exact values) is a per-sector INPUT needing the OPEN
+  color-generation bridge (Z3_CHARACTER_ISOMORPHISM_..._OPEN_GATE) + EW up/down asymmetry.
+  The GUARD itself (dial survives multi-lane) is an observational fact, independent of that
+  bridge. Nothing here forces r=1/2; it is a distinguished (colorless, max-sector-entropy)
+  point on a genuinely multi-valued dial.

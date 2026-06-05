@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 161 |
 | **retained_no_go** | 173 |
-| **retained_bounded** | 617 |
+| **retained_bounded** | 618 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
 | unaudited | 1382 |
-| audit_in_progress | 1 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 23 |
@@ -57,8 +56,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 940 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 941 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 46 |
 | `audited_failed` | 47 |
@@ -129,7 +128,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -176,6 +174,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1865,6 +1864,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Near k=0, E_k ~ |k|^2, so I_d(L) has the continuum scaling proxy integral_{1/L}^1 r^{d-3} dr, giving linear/log divergences for d=1,2 and finite behavior for d>=3.  _(class `A`)_
 - **chain closes:** True — The small-k expansion 2(1-cos k_mu) ~ k_mu^2 and the radial integral test give the stated threshold. The finite table entries are actually computed by the runner and independently match the displayed values; no Ward normalization, no-SSB theorem, D9 kernel authority, or substrate-minimality conclusion is imported.
 - **rationale:** The narrowed claim is a mathematical IR-sum scaling statement from the displayed lattice dispersion and standard integral comparison, not an external Coleman-Mermin-Wagner theorem. The runner source enumerates the lattice sums rather than printing constants, and its E0-E3 checks all pass. The formula inventory check finds the displayed small-k scaling, radial exponent, divergence classes, and quantitative table entries consistent with the note's definitions. The explicit non-claims prevent the earlier Ward/SSB/D9/substrate-minimality gaps from being load-bearing here.
+- **auditor confidence:** high
+
+### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
+
+- **Note:** [`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`](../../docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 staggered fermions in 1+1d, finite periodic L_s, m>0: the single-step transfer object is non-positive, while the two-step blocked Fock transfer matrix built from the decaying action-derived channel is positive Hermitian.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-161602-e47cb67992-axiom_first_rp_two_step_tran`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The action-derived two-step matrix T_odd(p) T_even(p) has reciprocal positive eigenvalues e^{+2E(p)} and e^{-2E(p)}, and the finite positive-time decaying channel lambda_p=e^{-2E(p)} second-quantizes to Gamma(t1^(2))=tensor_p diag(1,lambda_p)=B^dag B.  _(class `C`)_
+- **chain closes:** True — Independent algebra gives T_odd T_even = [[1+4r,-2(m-i sin p)],[-2(m+i sin p),1]] with r=m^2+sin^2 p, determinant 1 and trace 2+4r=2 cosh(2E), so its eigenvalues are e^{±2E}. The finite exterior/Fock construction of the decaying channel lambda_p=e^{-2E(p)} is tensor_p diag(1,lambda_p), hence Hermitian positive and equal to B^dag B.
+- **rationale:** The restricted packet supplies the staggered action, the one-step matrices, the two-step spectral calculation, the decaying-channel projector bridge, and the finite diagonal second-quantization construction. The displayed signs, factors of 1/2 and 2, exceptional-mode eigenvalues, reciprocal eigenvalues, projector formula, and B^dag B identity check out independently. The claim is properly bounded to the free fermion-sector two-step transfer matrix and does not claim the gauge-integrated RP theorem.
 - **auditor confidence:** high
 
 ### `background_independence_note`

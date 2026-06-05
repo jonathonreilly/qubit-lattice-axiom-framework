@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/cl3_lepton_masses_from_pinned_shape_2026_06_05.py
+runner_sha256: a55940ed74ef658aecc30f082b5b3f0d5ce97c755dce485398d0a079870b7794
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.28
+status: ok
+----- stdout -----
+========================================================================
+Charged-lepton masses from the pinned shape (r=1/2, theta=2/9)
+========================================================================
+Pins (NOT fitted): r = 1/2  (2 sqrt(r) = sqrt(2) = 1.414213562373)
+                   theta = 2/9 = 0.222222222222 rad = (N-1)/N^2|_(N=3)
+
+Dimensionless spectrum  m_e : m_mu : m_tau  (normalized to electron):
+   model (r=1/2,theta=2/9): 1 : 206.770316 : 3477.472837
+   PDG 2024              : 1 : 206.768285 : 3477.228307
+   per-slot rel dev      : mu 9.825e-06   tau 7.032e-05   (max 7.032e-05)
+   Koide Q (model)       : 0.666666666667   (exactly 2/3)
+
+Honest theta residual (T1b):
+   best-fit Brannen phase from PDG : 0.22222963 rad
+   2/9                             : 0.22222222 rad
+   residual theta_fit - 2/9        : +7.409e-06 rad   (3.33e-05 relative)
+   => 2/9 is NOT exactly the best-fit phase, but within ~8e-6 rad.
+
+Scale (T2):
+   free real numbers for full spectrum : 1  (overall a)
+   a^2 from PDG (a = mean sqrt-mass)    : 313.841127 MeV
+   pinnable?  NO -- units-only primitive; no b-tau / lepton-top relation on tree
+
+Honest input count (T3):
+   3 charged-lepton masses  =  1 free number  +  2 named imports
+   imports: I1 chirality -> r=1/2 ; I2 radian-bridge -> theta=2/9
+
+------------------------------------------------------------------------
+[PASS] T0.coeff: 2*sqrt(1/2) = sqrt(2)  (coeff=1.414213562373095)
+[PASS] T0.theta_dimratio: 2/9 = (N-1)/N^2 at N=3  ((N-1)/N^2|_{N=3} = 2/9)
+[PASS] T1.three_positive_lambda  (lambda=[2.379438, 0.04035, 0.580212])
+[PASS] T1.ratio_mu_over_e_exact  (model mu/e = 206.770315973)
+[PASS] T1.ratio_tau_over_e_exact  (model tau/e = 3477.472837105)
+[PASS] T1.pdg_ratio_match_below_1e-4  (max per-slot rel dev = 7.032e-05 (mu=9.825e-06, tau=7.032e-05))
+[PASS] T1.koide_Q_two_thirds_exact  (Q = 0.666666666666667)
+[PASS] T1b.theta_fit_near_2_9  (theta_fit = 0.22222963, theta_fit - 2/9 = +7.409e-06 rad)
+[PASS] T1b.theta_not_exactly_2_9  (|theta_fit - 2/9| = 7.409e-06 rad > 0 (2/9 is NOT exact best fit))
+[PASS] T1b.theta_resid_relative_small  (relative residual = 3.334e-05)
+[PASS] T1b.koide_Q_pdg_residual_tiny  (Q_PDG = 0.666660511544, Q_PDG - 2/3 = -6.155e-06)
+[PASS] T2.scale_is_single_overall_DOF  (ratios invariant under a; only overall a^2 changes)
+[PASS] T2.free_scale_count_is_one  (3 masses - 2 shape-fixed ratios = 1 free scale)
+[PASS] T2.registry_scale_is_units_primitive  (scale a^-1 = framework primitive, units conversion only, not derived)
+[PASS] T2.no_btau_unification_note_present  (b-tau unification source notes found: none)
+[PASS] T2.scale_acknowledged_separate_open  (two-gate note: absolute scale is a separate residual, not closed here)
+[PASS] T2.scale_is_free_not_pinned  (one residual DOF; no framework relation pins it; = units-only primitive)
+[PASS] T3.free_numbers_is_one  (one free real number (overall scale a))
+[PASS] T3.named_imports_is_two  (chirality -> r=1/2 ; radian-bridge -> theta=2/9)
+[PASS] T3.three_masses_from_one_plus_two  (3 charged-lepton masses from 1 free number + 2 named imports)
+[PASS] H1.shape_independent_of_PDG  (shape ratios from (r,theta) alone; PDG only a comparator)
+[PASS] H2.honest_residual_nonzero  (max ratio rel dev 7.032e-05 is nonzero (honest: shape != PDG exactly))
+[PASS] H3.no_tier_a_promotion  (runner reads registry; sets/promotes nothing)
+[PASS] H4.scale_not_silently_pinned  (scale remains 1 free residual (units-only primitive), not derived)
+------------------------------------------------------------------------
+PASS=24 FAIL=0

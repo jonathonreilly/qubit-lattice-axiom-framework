@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 619 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1377 |
+| unaudited | 1376 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 23 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 943 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1661 |
+| `unaudited` | 1660 |
 
 | claim_type | count |
 |---|---:|
@@ -1076,6 +1076,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_spectrum_condition_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1916,6 +1917,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Independent algebra gives T_odd T_even = [[1+4r,-2(m-i sin p)],[-2(m+i sin p),1]] with r=m^2+sin^2 p, determinant 1 and trace 2+4r=2 cosh(2E), so its eigenvalues are e^{±2E}. The finite exterior/Fock construction of the decaying channel lambda_p=e^{-2E(p)} is tensor_p diag(1,lambda_p), hence Hermitian positive and equal to B^dag B.
 - **rationale:** The restricted packet supplies the staggered action, the one-step matrices, the two-step spectral calculation, the decaying-channel projector bridge, and the finite diagonal second-quantization construction. The displayed signs, factors of 1/2 and 2, exceptional-mode eigenvalues, reciprocal eigenvalues, projector formula, and B^dag B identity check out independently. The claim is properly bounded to the free fermion-sector two-step transfer matrix and does not claim the gauge-integrated RP theorem.
 - **auditor confidence:** high
+
+### `axiom_first_spectrum_condition_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-dimensional staggered-only free/fixed-background two-step transfer surface: given a strictly positive Hermitian T = T_hat^2 on H_phys, the normalized logarithm is self-adjoint/non-negative, with SC3 and SC4 only conditional on a non-degenerate top eigenvalue/gap and the temporal bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-163719-0dd12519d3-axiom_first_spectrum_conditi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because spec(T) subset (0, M_T], finite-dimensional functional calculus makes log(T / M_T) self-adjoint with non-positive spectrum, hence H := -(1/a_tau) log(T / M_T) is self-adjoint and non-negative.  _(class `A`)_
+- **chain closes:** False — The spectral-calculus part closes from the retained-grade positivity inputs. The exact mass-gap and temporal-rate normalization does not close as written because the cited two-step authorities define H_hat = -log(T_hat^2)/(2 a_tau), while this note and runner use 1/a_tau without a blocked-time-spacing bridge.
+- **rationale:** The core SC1-SC2 argument is genuine finite-dimensional algebra over positive Hermitian T, not a renaming or numerical comparator. SC3 is correctly conditional on top-eigenvalue non-degeneracy, and SC4 is correctly framed as conditional on a gap. The remaining blocker is the unclosed factor-of-two/time-spacing normalization for T = T_hat^2, and the runner mirrors that normalization while constructing T = exp(-a_tau H_lat) rather than the cited two-step transfer object.
+- **open / conditional deps cited:**
+  - `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
+- **auditor confidence:** medium
 
 ### `background_independence_note`
 

@@ -1,0 +1,28 @@
+loop_slug: pre-record-qubit-post-record-information-20260605
+branch: physics-loop/pre-record-qubit-post-record-info-dynamics-20260605
+started_at: 2026-06-05
+mode: run
+target_status: bounded-support
+active_route: record-classicalization-dynamics-firewall
+cycle_count: 1
+actual_current_surface_status: bounded-support
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+files_touched:
+  - docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md
+  - scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py
+  - logs/runner-cache/frontier_record_classicalization_dynamics_firewall_2026_06_05.txt
+  - .claude/science/physics-loops/pre-record-qubit-post-record-information-20260605/
+verification:
+  - command: python3 scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py
+    result: PASS=29 FAIL=0
+open_imports:
+  - physical record-production dynamics
+  - operational frequency/typicality identification for Born weights
+  - generation/Koide prior-selection stability rule
+  - audit decision whether durable registration already includes re-readability
+review_disposition: local_self_review_pass
+pr_status: not_opened_yet
+next_exact_action: commit, push, open a physics-loop PR
+stop_condition: one coherent bounded-support block completed

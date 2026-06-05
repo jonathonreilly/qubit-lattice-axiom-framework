@@ -94,6 +94,35 @@ Recorded explicitly approved axiom update:
     Tier-A; the remaining Tier-A derivation targets are non-axiom admissions
     and continue to bound dependents until retired by retained derivations.
 
+- **2026-06-05 -- Record axiom v0.4 update.** The Record axiom is updated from
+  the 2026-06-04 additivity-only form to v0.4: *a record is the irreversible
+  registration of which real (CPT-even) superselection sector is realized*, with
+  unchanged additivity. Source `docs/MINIMAL_AXIOMS_2026-06-05.md` (supersedes
+  `docs/MINIMAL_AXIOMS_2026-06-04.md`); logic
+  `docs/RECORD_AXIOM_V04_UPDATE_LOGIC_NOTE_2026-06-05.md`; stable registry id
+  remains `minimal_axioms`.
+  - **Why it is admissible.** The update introduces exactly one new assumption,
+    the reality (CPT-even) adjective (= the already-named K-reality stance); the
+    other added clauses (irreversibility, registration of *which* sector) are
+    constitutive of recordhood, and "sector = center" is derived
+    (`center(M_n)=scalars`). This is an explicit owner-approved Section 6
+    amendment, not a lane-internal rewording of the kind Section 1 forbids.
+  - **What it adds.** The classical/quantum cut as derived content (the recorded
+    structure is the real Wedderburn center; reality fixes 2 generation blocks)
+    and the measure dial `r(s)=2^(s-1)` with its two symmetry-distinguished
+    settings `r=1/2` (block-count) and `r=1` (Born/dimension).
+  - **No laundering, and the binding non-overreach frame.** The update does NOT
+    supply within-sector/Born weights, per-sector dial occupancy, a time metric,
+    measurement/decoherence dynamics, log-det/modulus, source/action,
+    `AC_phi_lambda` value, theta, or arbitrary observable identification. It does
+    **not** force any generation modulus: in particular `r=1/2` is a stable
+    symmetry-distinguished *setting* the charged-lepton sector occupies, not a
+    forced or exclusive value (the framework default is `r=1`; a universal-`s`
+    rule is falsified by the inter-sector Koide spread).
+  - **Scope.** The audit lane updates the `minimal_axioms` source pointer to the
+    2026-06-05 memo only after independent review of the v0.4 language and logic.
+    No downstream row is promoted, bounded, or re-statused by this approval.
+
 Recorded explicitly approved primitive:
 
 - **2026-06-04 -- scale-reference primitive.** The single dimensionful scale

@@ -1,0 +1,31 @@
+PASS: T2a center(M_2(C)) is 1-dimensional (scalars only)
+PASS: T2a center(M_3(C)) is 1-dimensional (scalars only)
+PASS: T2a center(M_4(C)) is 1-dimensional (scalars only)
+PASS: T2b FS indicators of Z_3 are [+1, 0, 0]
+PASS: T2b reality => R[Z_3] has exactly 2 real Wedderburn blocks (singlet + doublet)
+PASS: T2b without reality C[Z_3] has 3 blocks (reality clause is load-bearing)
+PASS: T3 dial endpoint: s=0 -> r=1/2 (block-count / equipartition setting)
+PASS: T3 dial endpoint: s=0 -> Q=2/3 (charged-lepton setting)
+PASS: T3 dial endpoint: s=1 -> r=1 (Born / dimension default setting)
+PASS: T3 dial endpoint: s=1 -> Q=1 (framework default)
+PASS: T3 dial r(s) is strictly monotone increasing in s
+PASS: T3 block-swap r -> 1/(4r) is an involution
+PASS: T3 block-swap fixed point is exactly r=1/2
+PASS: T3 at r=1/2 the two real blocks carry equal power (p_s = p_d = 1/2)
+PASS: T3 2-sector entropy at r=1/2 equals ln 2 (maximal)
+PASS: T3 dS2/dr = 0 at r=1/2 (stationary)
+PASS: T3 d2S2/dr2 < 0 at r=1/2 (concave maximum -> symmetric setting)
+PASS: T3 2-sector entropy is invariant under the block swap r -> 1/(4r)
+PASS: additivity I(R1 ⊔ R2) = I(R1) + I(R2) for disjoint records
+PASS: additive baseline I(empty) = 0
+PASS: non-overreach: charged leptons sit at the symmetric setting r=1/2 (s~0)
+PASS: non-overreach: the sectors occupy DISTINCT settings (s spread > 0.3)
+PASS: non-overreach: a universal-s rule (all at r=1/2) is FALSIFIED
+PASS: non-overreach: r=1 (Born) is a genuine alternative setting, not excluded
+
+--- per-sector dial occupancy (observational comparison only) ---
+  charged_leptons   Q=0.6667  r=0.5000  s=-0.000
+  down_quarks       Q=0.7310  r=0.5965  s=+0.255
+  up_quarks         Q=0.8480  r=0.7720  s=+0.627
+
+SUMMARY: PASS=24 FAIL=0

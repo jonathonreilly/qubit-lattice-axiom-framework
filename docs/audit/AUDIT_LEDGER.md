@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 629 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1344 |
+| unaudited | 1343 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 43 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 962 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1628 |
+| `unaudited` | 1627 |
 
 | claim_type | count |
 |---|---:|
@@ -1123,6 +1123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9192,6 +9193,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** At H=0.25 on b ∈ {3,4,5,6}, kubo_true follows a clean log-log power law with slope ≈ -1.43 and R² = 0.998, so the retained result is a non-standard power law rather than 1/b lensing.  _(class `A`)_
 - **chain closes:** True — The bounded arithmetic claim closes from the supplied per-b values and runner fit. This does not establish continuum stability, a generated-from-first-principles H=0.25 replay, other families, larger-b asymptotics, or standard 1/b lensing.
 - **rationale:** The runner parses/checks the cached H=0.25 values and performs the log-log slope/R² calculation; the reported slope, R², and non-1/b margin follow arithmetically from those fixed inputs. The runner is not a first-principles recomputation of the fine H=0.25 model values, but the note and selector firewall explicitly restrict the retained claim to the bounded cached slope-fit certificate. Residual risk is confined to any broader reading that treats four selected cached points as a continuum-stable physical law.
+- **auditor confidence:** high
+
+### `lensing_finite_path_explanation_note`
+
+- **Note:** [`LENSING_FINITE_PATH_EXPLANATION_NOTE.md`](../../docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the note's open-gate claim that the centered finite-path surrogate is not a closed explanation of the fine-lane detector-centroid slope, because literal-geometry reductions are shallower and the quoted short-path Lane L++ result does not follow the surrogate transition prediction.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-175622-c9b7c9572b-lensing_finite_path_explanat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At T_phys = 7.5 the finite-path surrogate predicts a slope near -1.73, but the Lane L++ H=0.25 measurement is about -1.44, essentially unchanged from T_phys=15, so the finite-path regime-transition explanation is falsified.  _(class `B`)_
+- **chain closes:** False — The analytical runner supports the literal-geometry narrowing and verifies the centered-vs-full-path slope comparison, but the decisive second-T_phys falsification imports the Lane L++ short-path measurement and prediction without the long-path runner/cache source in the restricted packet. The missing step is an independently checkable computation of the T_phys=7.5 measured slope and finite-path prediction.
+- **rationale:** The provided runner genuinely computes the displayed centered surrogate and literal full-path proxy slopes from hard-coded measurement inputs and analytical/numerical reductions, and its output is consistent with the note's narrower claim that the centered L=10 match is not the literal harness geometry. However, the note's headline falsification depends on the quoted Lane L++ T_phys=7.5 result and prediction, while the restricted packet here does not include the long-path runner/cache that would let the auditor verify those values from source. The claim is therefore not clean from the provided inputs, but it is not failed on its own terms; it remains conditional on the missing long-path computation artifact.
+- **open / conditional deps cited:**
+  - `LENSING_LONG_PATH_TEST_NOTE.md`
 - **auditor confidence:** high
 
 ### `lensing_k_sweep_note`

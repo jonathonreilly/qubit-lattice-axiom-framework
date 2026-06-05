@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/causal_propagating_field_source_packet_manifest_2026_06_05.py
+runner_sha256: c7bee4786a3225b5573e282c566c17fe4d7621642692a1132f6753c15de741d7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================================
+CAUSAL PROPAGATING FIELD: SOURCE PACKET MANIFEST
+========================================================================================
+[PASS] manifest_path_exists:packet_runner: scripts/causal_propagating_field.py
+[PASS] note_links_manifest_path:packet_runner: scripts/causal_propagating_field.py
+[PASS] manifest_path_exists:helper_source: scripts/evolving_network_prototype_v6.py
+[PASS] note_links_manifest_path:helper_source: scripts/evolving_network_prototype_v6.py
+[PASS] manifest_path_exists:packet_cache: logs/runner-cache/causal_propagating_field.txt
+[PASS] note_links_manifest_path:packet_cache: logs/runner-cache/causal_propagating_field.txt
+[PASS] manifest_path_exists:helper_cache: logs/runner-cache/evolving_network_prototype_v6.txt
+[PASS] note_links_manifest_path:helper_cache: logs/runner-cache/evolving_network_prototype_v6.txt
+[PASS] note_links_manifest_path:manifest_runner: scripts/causal_propagating_field_source_packet_manifest_2026_06_05.py
+[PASS] note_links_manifest_path:manifest_cache: logs/runner-cache/causal_propagating_field_source_packet_manifest_2026_06_05.txt
+[PASS] note_links_manifest_path:manifest_json: outputs/causal_propagating_field_source_packet_manifest_2026_06_05.json
+[PASS] source_untruncated:packet_runner: scripts/causal_propagating_field.py has 12039 bytes
+[PASS] source_marker:packet_runner:from evolving_network_prototype_v6 import build_structured_growth, centroid_y, propagate: from evolving_network_prototype_v6 import build_structured_growth, centroid_y, propagate present
+[PASS] source_marker:packet_runner:def _instantaneous_field: def _instantaneous_field present
+[PASS] source_marker:packet_runner:def _forward_only_field: def _forward_only_field present
+[PASS] source_marker:packet_runner:def _dynamic_field: def _dynamic_field present
+[PASS] source_marker:packet_runner:ASSERTIONS:: ASSERTIONS: present
+[PASS] source_untruncated:helper_source: scripts/evolving_network_prototype_v6.py has 11640 bytes
+[PASS] source_marker:helper_source:def build_structured_growth: def build_structured_growth present
+[PASS] source_marker:helper_source:def propagate: def propagate present
+[PASS] source_marker:helper_source:def centroid_y: def centroid_y present
+[PASS] source_marker:helper_source:class Family: class Family present
+[PASS] cache_runner_matches:packet_cache: scripts/causal_propagating_field.py == scripts/causal_propagating_field.py
+[PASS] cache_sha_fresh:packet_cache: 1b776f25ed7192464cb1e60f80ec4865d48565ff0b4f85b50aa489bcea64252b == 1b776f25ed7192464cb1e60f80ec4865d48565ff0b4f85b50aa489bcea64252b
+[PASS] cache_exit_ok:packet_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:packet_cache: ASSERTIONS: PASS
+[PASS] cache_runner_matches:helper_cache: scripts/evolving_network_prototype_v6.py == scripts/evolving_network_prototype_v6.py
+[PASS] cache_sha_fresh:helper_cache: 5394010a8162963ce6c88171582c53ccb226a2c524439e6287eae9858bf45c7f == 5394010a8162963ce6c88171582c53ccb226a2c524439e6287eae9858bf45c7f
+[PASS] cache_exit_ok:helper_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:helper_cache: EVOLVING NETWORK PROTOTYPE V6
+========================================================================================
+SUMMARY: CAUSAL PROPAGATING FIELD SOURCE PACKET PASS=30 FAIL=0
+========================================================================================
+Output written: outputs/causal_propagating_field_source_packet_manifest_2026_06_05.json
+
+----- stderr -----
+

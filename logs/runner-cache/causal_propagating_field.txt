@@ -1,11 +1,47 @@
 ===== runner cache v1 =====
 runner: scripts/causal_propagating_field.py
-runner_sha256: c429d9946c38ec8d1e959a8107a971f1974366c8449e24fb715dd785fed3bbfd
+runner_sha256: 1b776f25ed7192464cb1e60f80ec4865d48565ff0b4f85b50aa489bcea64252b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
+================================================================================================
+CAUSAL PROPAGATING FIELD LIVE PACKET
+  center grown family; exact-null, forward-only, and dynamic-cone replay
+================================================================================================
+family: drift=0.20, restore=0.70
+seeds=(0, 1, 2, 3, 4, 5), source_layer=8, K=5.0, H=0.5, N_LAYERS=13
+source anchor target: (y, z)=(0.0, 3.0)
+field strengths=(1e-05, 5e-05, 0.0001), field eps=0.1
+
+ZERO-NUL CONTROL
+  max |delta_y| = 0.000e+00
+  max |field| = 0.000e+00
+
+   strength     inst delta        forward   fwd/inst  dyn1/inst  dyn0.5/inst                toward counts
+----------------------------------------------------------------------------------------------------------------
+    1.0e-05 +5.841e-08+/-1.4e-07 +3.902e-08+/-3.6e-08      0.668      1.456        0.939 {'instantaneous': 4, 'forward': 4, 'dynamic_c_1': 5, 'dynamic_c_0.5': 3}
+    5.0e-05 +2.921e-07+/-6.8e-07 +1.951e-07+/-1.8e-07      0.668      1.456        0.938 {'instantaneous': 4, 'forward': 4, 'dynamic_c_1': 5, 'dynamic_c_0.5': 3}
+    1.0e-04 +5.845e-07+/-1.4e-06 +3.903e-07+/-3.6e-07      0.668      1.456        0.938 {'instantaneous': 4, 'forward': 4, 'dynamic_c_1': 5, 'dynamic_c_0.5': 3}
+
+SAFE READ
+  [PASS] exact zero-source control
+  [PASS] instantaneous response scales with 5x strength
+  [PASS] instantaneous response scales with 2x strength
+  [PASS] forward ratio is stable across strengths
+  [PASS] dynamic c=1 ratio is stable across strengths
+  [PASS] dynamic c=0.5 ratio is stable across strengths
+  [PASS] forward-only center ratio remains near 2/3
+  [PASS] dynamic c=1 is distinct from forward-only
+  [PASS] dynamic c=0.5 is not the archived 0.45 row
+  [PASS] dynamic c=1 response exceeds dynamic c=0.5
+  current live c=1 ratio: 1.456
+  current live c=0.5 ratio: 0.938
+  current live forward ratio: 0.668
+  finite-cone proxy only: no physical wave-speed or carrier derivation
+  archived 0.63/0.45 positive table is not reproduced
+ASSERTIONS: PASS
 
 ----- stderr -----
 

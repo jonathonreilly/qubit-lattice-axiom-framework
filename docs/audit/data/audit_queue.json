@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 269,
     "high": 284,
-    "leaf": 433,
+    "leaf": 432,
     "medium": 325
   },
   "cycle_break_target_count": 0,
@@ -27008,30 +27008,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_only_det_positivity_case_a_note_2026-05-17"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.822,
-      "note_path": "docs/STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/staggered_scalar_mass_class_bounded_premise_runner.py",
-      "transitive_descendants": 4
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39316,6 +39292,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 106,
-  "total_pending": 1311
+  "ready_count": 105,
+  "total_pending": 1310
 }

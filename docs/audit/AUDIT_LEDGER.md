@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1309 |
+| unaudited | 1308 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
-| ~~audited_renaming~~ | 24 |
+| ~~audited_renaming~~ | 25 |
 | ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -65,8 +65,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
-| `audited_renaming` | 24 |
-| `unaudited` | 1593 |
+| `audited_renaming` | 25 |
+| `unaudited` | 1592 |
 
 | claim_type | count |
 |---|---:|
@@ -1305,6 +1305,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -14267,6 +14268,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Equation (16) and (18): det(M)=∏_{i=1}^{n/2}(m²+σ_i²)>0 after the det(γ₅)=(-1)^{n/2} sign cancels the sign in det(γ₅M).  _(class `A`)_
 - **chain closes:** True — Given the stated off-diagonal anti-Hermitian block form M_KS=[[0,K],[-K†,0]] with equal ε-sublattice dimensions, the SVD of K reduces γ₅M to independent 2x2 blocks. The determinant sign from γ₅ is explicitly counted and cancels, leaving a strictly positive product because m>0 and σ_i²≥0.
 - **rationale:** The proof is a genuine closed-form algebraic determinant factorization over the stated staggered block decomposition, not a renaming or numerical fit. The runner source actually constructs finite canonical staggered SU(3) operators and recomputes the block structure, γ₅-Hermiticity, sign reconciliation, and positivity scan; it does not hard-code the contested determinant value or import an opaque helper. The finite runner is only supporting evidence; the audit verdict rests on the exact SVD/block determinant argument.
+- **auditor confidence:** high
+
+### `staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03`
+
+- **Note:** [`STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md`](../../docs/STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the row-local bounded-premise bridge that explicitly restricts the staggered mass action class to real positive scalar masses M=mI with zero epsilon component, plus its stated determinant-phase consequences on that premise.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-191906-1111ce553f-staggered_scalar_mass_class_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The row-local bounded premise fixes the reviewed mass action class to the real scalar line M = m I with m > 0 and M_epsilon = 0 in the {I, epsilon} basis.  _(class `E`)_
+- **chain closes:** True — The note is explicit that the scalar-mass-only class is an assumed row-local bounded premise, not derived from the baseline. Given that premise and the retained staggered-only determinant positivity authority, the stated exclusions and determinant-phase checks follow within the audited scope.
+- **rationale:** The load-bearing move is the introduction of the bounded scalar-mass action class itself: M=mI, m>0, M_epsilon=0. The runner verifies algebraic decompositions and sampled determinant consequences, and the cited determinant-positivity authority is retained, but the scalar-class wall is not derived from those inputs. Because the bridge's essential content is a bounded premise definition rather than a derivation of the mass class from retained framework inputs, the audit class is E and the rubric maps it to audited_renaming.
 - **auditor confidence:** high
 
 ### `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16`

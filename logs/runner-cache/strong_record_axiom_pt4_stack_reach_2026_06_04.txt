@@ -1,0 +1,48 @@
+PASS  C_3 FS indicators (+1,0,0)  [fs=[np.float64(1.0), np.float64(-0.0), np.float64(0.0)]]
+PASS  C_3 real-block COUNT = 2 (rank K0_real = 2)  [blocks=[(1, 1, 'real'), (2, 2, 'complex')]]
+PASS  C_3 complex-irrep count = 3 (rank K0_complex = 3)
+PASS  C_3 real dims per block = [1,2], sum=3  [real_dims=[1, 2]]
+PASS  COUNTING (real-block) measure -> Koide Q=2/3, theta-independent  [Q in [0.666667,0.666667]]
+PASS  TRACE/DIM measure -> Koide Q=1 (r=1)  [Q=1.000000]
+PASS  axiom job: selects block-count weight (Q=2/3) not trace (Q=1)
+PASS  real central idempotents: P_s^2=P_s, P_d^2=P_d
+PASS  real central idempotents orthogonal & complete
+PASS  they commute with C (central)
+PASS  COUNT is Born-blind: same block support, different Born weights (50 draws)  [COUNT sees alternatives; Born weight is independent data]
+PASS  Born-rule reach = TOUCHES-CONSTRAINS (fixes partition, not weights)
+PASS  generation Z_3 character = regular/permutation: chi=(3,0,0)  [chi_perm=[np.float64(3.0), np.float64(0.0), np.float64(0.0)]]
+PASS  color Z_3(center) character = central scalar: chi=(3, 3w, 3w^2)  [phase character, not permutation]
+PASS  generation vs color Z_3 characters differ (real perm vs complex scalar)
+PASS  generation decomposes as 1*triv + 1*w + 1*wbar (regular rep)  [mult=[np.complex128(1+0j), np.complex128(1+0j), np.complex128(1+0j)]]
+PASS  color triplet under center = 3 copies of ONE character (k=1), NOT regular  [mult=[np.complex128(-0+0j), np.complex128(3+0j), np.complex128(-0-0j)]]
+PASS  real fusion leaves generation character (3,0,0) -- still permutation
+PASS  real fusion does NOT produce color's central-scalar character
+PASS  color center is scalar (commutes with all M_3)
+PASS  generation C is NOT scalar (fails to commute with generic M_3)
+PASS  color reach = ORTHOGONAL (real fusion is a counting move, not a character-type bridge)
+PASS  D is real anti-Hermitian (D^T=-D, real)
+PASS  H=iD is Hermitian
+PASS  CPT (=PK) commutes with H on the real generator (C1/C2 forward holds)  [reality of generator => discrete CPT-invariance of dynamics]
+PASS  Theta^2 = P^2 (= I here) but is NOT forced scalar by realness alone  [C3 (Theta^2 scalar) needs extra (C,P) algebra; not from records-realness]
+PASS  CPT reach = TOUCHES-CONSTRAINS (records-realness restates CPT-real generator; does not derive the spacetime CPT theorem)
+PASS  record sharpening decreases entropy (defines an arrow direction)  [S0=1.0297 -> S1=0.8536]
+PASS  record sharpening is non-invertible (Jacobian singular at fixed pts)  [r->2r^2 has |f'|=2 at r=1/2: expanding, no inverse branch pick]
+PASS  COUNT (block #) is invariant forward/back -> axiom does not ORIENT time
+PASS  arrow/(3,1) reach = TOUCHES-CONSTRAINS (supplies arrow CARRIER + favors real/CPT-even dynamics; reaches discrete count, not continuous signature)
+PASS  SIGNED (det_C) readout -> Q=2/3 theta-independent at r=1/2  [signed Q in [0.666667,0.666667]]
+PASS  SINGULAR-VALUE readout -> theta-DEPENDENT, <= 2/3  [singular Q in [0.409365,0.666667]]
+PASS  at r=1/2, theta=0.9 the signed spectrum HAS a sign flip (min eig <0)  [spectrum(theta=0.9)=[-0.3989  1.5198  1.8791]]
+PASS  where the sign flips, singular readout < signed: the sign is load-bearing  [Q_singular=0.415985 < Q_signed=0.666667]
+PASS  det_C reach = TOUCHES-AND-UNLOCKS (axiom's real-block-with-sign picks the signed readout, the Q=2/3 one)
+
+  [Section G table: N, #real-blocks(K0_real), Q_blockcount, Q_trace]
+    N=3: #real_blocks=2, orbit_size(#gens)=3, real_dims=[1, 2]
+    N=5: #real_blocks=3, orbit_size(#gens)=5, real_dims=[1, 2, 2]
+    N=7: #real_blocks=4, orbit_size(#gens)=7, real_dims=[1, 2, 2, 2]
+PASS  count(#generations=orbit) is supplied by lattice, not the axiom; axiom supplies the MEASURE on them
+PASS  three-generations reach = ORTHOGONAL to COUNT, supplies MEASURE
+PASS  axiom's block-count (2) != generation count (3): axiom is not source of 3
+PASS  COUNT is additive over direct sum (records count alternatives additively)  [=5]
+PASS  COUNT is dimension-blind (independent of per-block real_dim)
+
+SCORECARD PASS=41/41  FAIL=0

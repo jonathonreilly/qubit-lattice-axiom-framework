@@ -1,0 +1,24 @@
+loop: beta6-kbuilt-deficit-bridge-20260605
+target_claim_id: beta6_resummation_radius_growth_rate_bounded_note_2026-05-30
+actual_current_surface_status: demotion
+tree_subclaim_status: bounded-support
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+current_block: block01
+base: origin/main@54e71e79f
+files_touched:
+  - docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md
+  - scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py
+  - logs/runner-cache/frontier_beta6_resummation_radius_growth_rate_2026_05_30.txt
+result_summary:
+  runner_cache: "SCORECARD: PASS=28 FAIL=0"
+  tree_threshold: "g_tree < 81"
+  exponent_repair: "tree sector uses 18^{-(4k+1)}, not 18^{-(4k+2)}"
+  obstruction: "closed K-built 2x2x1 four-cube block has F=16, n=15, not F=18, n=17"
+open_residuals:
+  - "tree-sector cluster-expansion/product bound g_tree < 81"
+  - "compact K-built face-deficit/area-growth bound"
+  - ">=3-face baryon/epsilon sector bound"
+next_exact_action: "Open review PR; independent auditor decides whether this repairs the conditional row wording and blocker."

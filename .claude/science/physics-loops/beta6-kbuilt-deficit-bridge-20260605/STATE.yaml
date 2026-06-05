@@ -17,8 +17,9 @@ result_summary:
   tree_threshold: "g_tree < 81"
   exponent_repair: "tree sector uses 18^{-(4k+1)}, not 18^{-(4k+2)}"
   obstruction: "closed K-built 2x2x1 four-cube block has F=16, n=15, not F=18, n=17"
+review_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2681"
 open_residuals:
   - "tree-sector cluster-expansion/product bound g_tree < 81"
   - "compact K-built face-deficit/area-growth bound"
   - ">=3-face baryon/epsilon sector bound"
-next_exact_action: "Open review PR; independent auditor decides whether this repairs the conditional row wording and blocker."
+next_exact_action: "Independent auditor decides whether this repairs the conditional row wording and blocker."

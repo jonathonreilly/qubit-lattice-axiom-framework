@@ -3,6 +3,8 @@
 This block repairs the beta6 resummation row by refusing a false bridge rather
 than preserving it.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2681
+
 The updated primary runner now reports `SCORECARD: PASS=28 FAIL=0` and includes
 the finite cubical-incidence counterexample:
 

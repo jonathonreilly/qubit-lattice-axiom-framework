@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_dm_abcc_five_basin_record_invariance_2026_06_04.py
+runner_sha256: bcdeda9b24090c6e05a4d323821b31d96712fc6c69cb70ecfa5159953ad4a1f6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.01
+status: ok
+----- stdout -----
+========================================================================
+DM A-BCC five-basin chamber-DPLE record-invariance hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/DM_ABCC_FIVE_BASIN_CHAMBER_DPLE_SUPPORT_THEOREM_NOTE_2026-04-21.md
+Parent runner: scripts/frontier_dm_abcc_five_basin_chamber_dple_support_2026_04_21.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS parent_claim_type_expected
+PASS parent_runner_path_expected
+PASS parent_current_criticality_expected
+PASS parent_current_load_expected :: load=6.7
+PASS parent_note_hash_expected
+PASS parent_note_hash_matches_ledger
+PASS parent_deps_exact :: count=4
+PASS parent_current_row_unresolved
+PASS parent_load_bearing_block_present
+PASS parent_load_bearing_contains_five_basin_phrase_0
+PASS parent_load_bearing_contains_five_basin_phrase_1
+PASS parent_load_bearing_contains_five_basin_phrase_2
+PASS parent_load_bearing_contains_five_basin_phrase_3
+PASS parent_load_bearing_contains_five_basin_phrase_4
+PASS parent_load_bearing_contains_five_basin_phrase_5
+PASS parent_load_bearing_contains_five_basin_phrase_6
+PASS parent_load_bearing_contains_five_basin_phrase_7
+PASS parent_load_bearing_omits_record_axiom_terms
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_total_present
+PASS parent_runner_pass_count_twenty_four :: pass_count=24
+PASS parent_runner_fail_count_zero :: fail_count=0
+PASS record_marker_true_exit_zero :: returncode=0
+PASS record_marker_does_not_change_parent_output
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_verdict_change
+PASS companion_keeps_dependency_boundary
+PASS companion_marks_axioms_not_support
+========================================================================
+SUMMARY: PASS=31 FAIL=0
+========================================================================
+
+----- stderr -----
+

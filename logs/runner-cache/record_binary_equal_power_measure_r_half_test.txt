@@ -1,0 +1,68 @@
+RECORD-BINARY EQUAL-POWER MEASURE r=1/2 TEST
+======================================================================
+
+=== PART A: build the record-binary model + a/b convention ===
+[PASS] A1 C^3 = I (order-3 generation shift)
+[PASS] A2 hw=1 triangle pairwise squared distance = 2 (face-diagonal) :: sqdist=[2, 2, 2]
+[PASS] A3 exact Koide Q=1/3+(2/3)r on Brannen circulant spectrum (3 sample (a,b)) :: Q=sum(lam^2)/(sum lam)^2; Q=2/3 <=> r=1/2
+[PASS] A4 homogeneous all-record triangle: qulink classes collapse to (diag,off-diag)=(1,1) amplitudes :: => circulant (a,b) split; a,b free until a weight rule is supplied (NOT hand-picked to 1/2)
+[PASS] A5 each Z^3 site has exactly 6 nearest neighbors (3 dims x 2)
+[PASS] A5b hw=1 generation corners are NOT mutual nearest-neighbors (face-diagonal, not 6-NN edges) :: the generation sites are related by record-classification, not by NN adjacency
+
+=== PART B: DECISIVE -- record-additivity isotype weights + law-invariance ===
+[PASS] B1 R[Z_3] has 2 minimal real central idempotents (singlet rank1 + doublet rank2)
+[PASS] B1b block-energy identities E_+=3a^2, E_perp=6|b|^2 (Frobenius projector decomposition)
+[PASS] B2 BLOCK-count (1,1) -> r=1/2 -> Q=2/3 :: (ws,wd)=(1.0,1.0) r=0.5 Q=0.6667
+[PASS] B2b r=1/2 Brannen circulant: block energies EQUAL (E_+=E_perp) AND spectrum Q=2/3 :: E_+=3.0000 E_perp=3.0000 Q=0.6667
+[PASS] B3 DIMENSION-count (1,2) -> r=1 -> Q=1 (Born) :: (ws,wd)=(1.0,2.0) r=1.0 Q=1.0000
+[PASS] B3b r=1 Brannen circulant: E_perp = 2 E_+ (dimension/Born balance) AND spectrum Q=1 :: E_+=3.0000 E_perp=6.0000 ratio=2.000 Q=1.0000
+[PASS] B4a BLOCK-count is law-invariant (ratio spread 0 across laws)
+[PASS] B4b DIMENSION-count is law-invariant (ratio spread 0 across laws)
+[PASS] B5 law-invariance does NOT pick (1,1) over (1,2): BOTH discrete record counts pass it :: necessary-not-sufficient; record model passes the test geometry failed, but the test no longer discriminates the two measures
+[PASS] B6 positive control: distance-weighting IS law-DEPENDENT (spread > 0.4) :: geometry doublet/singlet spread=0.882 (contrast discrete count spread 0)
+[PASS] B7 record-count lands on a clean rational with NO knob (vs geometry's tuned/off-target ~0.41) :: geometry parameter-free anchor r~0.4112 (Born side); record block-count r=1/2 exactly, no tuning
+[PASS] B8 Part-B answer: record-additivity does NOT realize equal-power in a DISCRIMINATING way :: law-invariance is necessary (record passes it, geometry failed it) but NOT sufficient: it does not pick (1,1) over (1,2)
+
+=== PART C: FORCED vs RESTATEMENT -- which decomposition does the record binary supply? ===
+[PASS] C1 site basis carries regular character (3,0,0) (record binary is per-site) :: chi_reg=[3.0, 0.0, 0.0]
+[PASS] C2 isotype split is NOT site-diagonal (block regrouping needs C_3 rep theory, not record content) :: the record binary is BLIND to the omega-phase that defines singlet vs doublet
+[PASS] C3 equal site-diagonals (trace-equipartition) hold for a CONTINUUM of r (does not fix r) :: r-values with equal diagonals: [0.0, 0.09, 0.5, 1.0, 2.25]
+[PASS] C4 uniform qulink weight a=b gives r=1 (Born endpoint), NOT r=1/2 :: eigs=[-0.  0.  3.] (one eig 3, two degenerate) r=1.0 Q=1.000
+[PASS] C5 PATTERN-L: Tr (dimension count) is ALSO additive over orthogonal idempotents :: Tr(e0)+Tr(e1)=Tr(e0+e1) -> additivity does NOT exclude the (1,2) Born weighting
+[PASS] C6 => 'additive counting IS block-counting' is FALSE; the (1,1)-vs-(1,2) choice survives :: RESTATEMENT: equal-power requires the EXTRA premise 'record = block/central-idempotent', which additivity does not supply
+[PASS] C7 record additivity (linear) cannot constrain the (alpha,beta) QUADRATIC weight cone :: PD cone retains 9 sampled points incl beta!=0 -> retained_no_go UNWEAKENED
+[PASS] C8 isotype dimensions (1,2) come from Tr(E0),Tr(E1) (Fourier idempotents), NOT from the record/site data :: the per-site record binary carries the regular character (3,0,0) and is blind to (1,2)
+[PASS] C9 heterogeneous record pattern s=(1,0,0): induced operator is NOT circulant (breaks C_3) :: the only non-trivial use of the 3-way class breaks the circulant structure the Koide relation requires
+
+=== PART D: corroboration -- chirality (D1) and color (D2) ===
+[PASS] D1a Gamma_chi = diag(+1,-1,-1) in the Fourier basis
+[PASS] D1b Gamma_chi is NOT site-diagonal (off-diag = 2/3); per-site record Z_2 cannot supply it
+[PASS] D1c homogeneous record Z_2 grading = +/-I (scalar): anticommutant is {0} (no chiral grading)
+[PASS] D1d site-diagonal record grading diag(+1,-1,+1): breaks C_3 AND gives a traceless, one-massless spectrum (not a charged-lepton Koide spectrum, not Q=2/3) :: eigs=[-1.221 -0.     1.221] sum=-6.66e-16 (sum-zero sqrt-mass + one massless) -- the diagonal worker's diag(+1,-1,+1) route; not the Q=2/3 charged-lepton spectrum
+[PASS] D1e consistent with retained no-go: comm(C) ∩ anticomm(Gamma_chi) = {0} :: no nonzero circulant anticommutes with Gamma_chi
+[PASS] D2a generation char (3,0,0) != color-center char (3,3w,3w^2) (worker-1 mismatch) :: reg=[3.0, 0.0, 0.0] color~(3,-1.5+2.6i,..)
+[PASS] D2b 3-way qulink classes = Sym^2(Z_2): 3 classes but NO Z_3 group structure (wrong color character) :: classes=[(0, 0), (0, 1), (1, 1)] -- Z_2-based, carries no Z_3 color-center character; '3 classes=3 colors' is a count coincidence
+
+=== PART E: no-import discipline -- axiom-native vs posit ===
+[PASS] E1 Record axiom supplies additivity (I additive over disjoint record collections)
+[PASS] E2 Record axiom does NOT supply a per-site record/not-record BINARY (it is a posit/extension) :: additivity is over abstract disjoint record collections; a per-site Z_2 presence label is an added structural model, not axiom content
+[PASS] E3 Record axiom does NOT supply the 3-way qulink classification (it is a posit/extension)
+[PASS] E4 Record axiom EXPLICITLY does not supply AC_φλ / Born weights / modulus (axiom scope sentence) :: MINIMAL_AXIOMS_2026-06-04 lists AC_φλ as OUTSIDE axiom content (open gate)
+[PASS] E5 'record = central idempotent/block' (the (1,1) route) is an ADDED premise, not axiom-native :: => any equal-power result here is POSIT-conditional at best, RESTATEMENT at worst
+
+=== VERDICT (computed) ===
+[PASS] VERDICT.forced is False (additivity does not exclude the dimension/Born count -- Pattern-L)
+[PASS] VERDICT.axiom_native is False (record binary + 3-way qulink are posits beyond the Record axiom)
+[PASS] VERDICT == RESTATEMENT (equal-power reachable only by CHOOSING 'record = block'; not forced, not axiom-native) :: verdict=RESTATEMENT
+
+  >>> RECORD-BINARY VERDICT: RESTATEMENT
+  >>> Part B: record-additivity does NOT realize the equal-power measure law-invariantly
+      in a DISCRIMINATING way: BOTH (1,1) and (1,2) are discrete + law-invariant, so the
+      law-invariance test (which killed geometry) no longer separates them.
+  >>> Part C: RESTATEMENT -- additive counting is NOT block-counting (Tr is additive too);
+      equal-power needs the extra premise 'record = central idempotent/block'.
+  >>> Part E: the per-site record binary + 3-way qulink are POSITS beyond the Record axiom.
+  >>> retained_no_go koide_frobenius_isotype_split_uniqueness is UNWEAKENED.
+
+======================================================================
+SUMMARY: PASS=42 FAIL=0

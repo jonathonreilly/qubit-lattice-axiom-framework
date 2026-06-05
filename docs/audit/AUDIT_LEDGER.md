@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 175 |
-| **retained_no_go** | 182 |
+| **retained_no_go** | 183 |
 | **retained_bounded** | 649 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1287 |
+| unaudited | 1286 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 997 |
+| `audited_clean` | 998 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1571 |
+| `unaudited` | 1570 |
 
 | claim_type | count |
 |---|---:|
@@ -258,6 +258,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_color_automorphism_theorem` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
@@ -3260,6 +3261,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 
 Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=2; ('second', 'audited_decoration', 'decoration', 'A')=3.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02`
+
+- **Note:** [`CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md`](../../docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The audited claim is only the narrow grade-1 Cl(3,0) statement: frame-free Spin(3)/Pin(3)-equivariant ambient Clifford operations, plus the named checked ambient operations, do not supply a nonzero grade-1 endomorphism anticommuting with Gamma_chi=(2/3)J-I; frame-broken L4/lattice/momentum/dynamics/sector routes remain open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-cbd0ff1f2c-cl3_frame_free_ambient_chira`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Solving [M,L_k]=0 for the three so(3) grade-1 generators gives M=cI_3, so every frame-free Spin(3)-equivariant grade-1 endomorphism is scalar and {cI_3,Gamma_chi}=2c Gamma_chi vanishes only for c=0.  _(class `A`)_
+- **chain closes:** True — The commutant calculation closes the frame-free equivariant case, and the named operations reduce to ±I, the identity index map, Gamma_chi itself, or checked rotation-generator actions that do not provide the scoped Hermitian L4 source. The L4 family exists but requires an additional chosen doublet vector h, which is explicitly outside the audited frame-free class.
+- **rationale:** The source and runner perform exact finite-dimensional algebra over the provided Cl(3,0)/Pauli and R^3 inputs; there is no external comparator, tuned numerical match, or definition-substitution step. The cited non-axiom authorities are retained-grade, while the minimal axiom memo is flagged as an accepted premise. The N1-N8 no-go gate passes only at the stated narrow resolution: the result prunes the frame-free ambient Clifford source, not all possible frame-supplying constructions.
 - **auditor confidence:** high
 
 ### `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10`

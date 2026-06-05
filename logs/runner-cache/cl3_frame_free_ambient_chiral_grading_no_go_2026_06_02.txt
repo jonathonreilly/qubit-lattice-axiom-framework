@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/cl3_frame_free_ambient_chiral_grading_no_go_2026_06_02.py
+runner_sha256: 2ad901ab32db61f5d28635903a6bb019fb2b908d57d752ec9e59e0e505cf52c2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+[PASS] Cl(3,0): e_i^2 = I
+[PASS] Cl(3,0): e_i e_j = -e_j e_i (i!=j)
+[PASS] pseudoscalar omega = e1 e2 e3 = i*I
+[PASS] omega^2 = -I
+[PASS] omega central in Cl(3,0): [omega, e_i] = 0
+[PASS] bivectors b_k = i*sigma_k (grade-2)
+[PASS] Gamma_chi=(2/3)J-I has eigenvalues {+1,-1,-1}
+[PASS] Gamma_chi^2 = I (real involution, not the anti-Hermitian J_cs)
+[PASS] Gamma_chi = 2 v v^T - I  (body-diagonal pi-rotation, det=+1)
+[PASS] Gamma_chi is itself circulant: [Gamma_chi, R] = 0
+[PASS] U_gc in even subalgebra, U_gc^2 = -I (the 2pi double-cover sign)
+[PASS] alpha acts as -I3 on grade-1
+[PASS] reversion acts as +I3 on grade-1
+[PASS] Clifford conjugation acts as -I3 on grade-1
+[PASS] omega-conjugation acts as +I3 on grade-1 (omega central)
+[PASS] conj by U_gc reproduces Gamma_chi itself (a circulant, commutes with R)
+[PASS] alpha does NOT anticommute with Gamma_chi
+[PASS] reversion does NOT anticommute with Gamma_chi
+[PASS] Clifford conjugation does NOT anticommute with Gamma_chi
+[PASS] omega-conjugation does NOT anticommute with Gamma_chi
+[PASS] conj by U_gc does NOT anticommute with Gamma_chi (it IS Gamma_chi)
+[PASS] Hodge star omega: sigma_k -> b_k is index-identity (k->k)
+[PASS] Hodge index-matrix = I3 -> commutes with Gamma_chi, cannot anticommute
+[PASS] ad_b1 is antisymmetric (rotation generator)
+[PASS] ad_b1 does NOT anticommute with the symmetric Gamma_chi
+[PASS] ad_b2 is antisymmetric (rotation generator)
+[PASS] ad_b2 does NOT anticommute with the symmetric Gamma_chi
+[PASS] ad_b3 is antisymmetric (rotation generator)
+[PASS] ad_b3 does NOT anticommute with the symmetric Gamma_chi
+[PASS] bivector about [1,1,1] generates rotation COMMUTING with Gamma_chi (own axis)
+[PASS] Schur: so(3)-commutant of R^3 is 1-dimensional
+[PASS] Schur: that commutant element is exactly a scalar multiple of I3
+[PASS] nonzero scalar c*I CANNOT anticommute with Gamma_chi ({cI,Gx}=2cGx, Gx!=0)
+[PASS] explicit H=(1 h^T + h 1^T)/3 anticommutes with Gamma_chi
+[PASS] ...and BREAKS circulance ([H,R] != 0) -> dodges the z3 no-go scope
+[PASS] anticommutation holds for the WHOLE 2-param family (sum h=0)
+[PASS] Q=2/3 forced on nonzero eigenvectors for all sampled free h (L4 family)
+[PASS] single-axis map a I + b v v^T ALWAYS commutes with Gamma_chi (cannot anticommute)
+[PASS] => the SECOND doublet vector h is FREE; no ambient op supplies it from v alone
+
+SCORECARD: PASS=39 FAIL=0
+
+----- stderr -----
+

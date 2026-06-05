@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 177 |
-| **retained_bounded** | 643 |
+| **retained_bounded** | 644 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 981 |
+| `audited_clean` | 982 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1600 |
+| `unaudited` | 1599 |
 
 | claim_type | count |
 |---|---:|
@@ -178,6 +178,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2014,6 +2015,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
 - **auditor confidence:** medium
+
+### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional Z_N-equivariant spectral-asymmetry well-definedness, no-zero-crossing invariance, admissible finite local weight-sum finiteness, and exact N=3 evaluations L_3(1,2)=2/9 and L_3(1,1)=L_3(2,2)=1/9.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-211405-726575277f-axiom_first_z_n_equivariant_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For admissible weights, no denominator zeta_N^(k a_j)-1 vanishes, and at N=3 the identity (omega - 1)(omega^2 - 1)=3 gives L_3(1,2)=(1/3)(1/3+1/3)=2/9.  _(class `A`)_
+- **chain closes:** True — The theorem reduces to finite spectral linear algebra and elementary cyclotomic arithmetic. The cited retained C3 authority is used only to motivate/select the admissible (1,2) weight pattern; no continuum APS fixed-point bridge or phenomenological identification is needed for the audited bounded statement.
+- **rationale:** The displayed algebra checks independently: for omega^3=1 and 1+omega+omega^2=0, (omega-1)(omega^2-1)=3, and the two k terms in L_3(1,2) are both 1/3. For repeated weights, direct reduction gives L_3(1,1)=L_3(2,2)=1/9. The admissibility restriction gcd(a_j,N)=1 exactly excludes composite-modulus denominator zeros. The runner source performs direct finite sums and symbolic/numeric checks rather than importing empirical constants or hard-coding a contested external comparator.
+- **auditor confidence:** high
 
 ### `background_independence_note`
 

@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 192 |
 | **retained_bounded** | 670 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 34 |
-| unaudited | 1236 |
+| open_gate | 35 |
+| unaudited | 1235 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1034 |
+| `audited_clean` | 1035 |
 | `audited_conditional` | 78 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1520 |
+| `unaudited` | 1519 |
 
 | claim_type | count |
 |---|---:|
@@ -659,6 +659,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_window_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -10037,6 +10038,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the specified Fam1 grown-DAG static 1/r-field harness, the runner computes kubo_true = 7.061910, 5.972756, 5.986043 at H = 0.50, 0.35, 0.25, so the medium-to-fine drift is 0.2% under the runner's 5% criterion.  _(class `C`)_
 - **chain closes:** True — The supplied runner source actually grows the lattice, propagates A and B, computes the centroid derivative, and prints the cached values without hard-coded expected results. This closes the bounded three-refinement numerical statement, but not a stronger general H to 0 continuum theorem.
 - **rationale:** The load-bearing bounded claim is a class C framework-internal computation: the runner instantiates the Fam1 grown-DAG harness and computes the Kubo coefficient values directly. The cached stdout matches the source note's table and the last-step drift calculation. The cited one-hop authorities are provided as retained_bounded, so there is no open dependency blocking this scoped result. This clean verdict is only for the bounded three-point Fam1 stabilization, not for a general asymptotic H to 0 theorem or family-portable continuum result.
+- **auditor confidence:** high
+
+### `kubo_fam2_non_convergence_note_2026-05-02`
+
+- **Note:** [`KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md`](../../docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the open-gate inventory claim that finite Fam2 Kubo samples at H in {0.50, 0.35, 0.25, 0.20} are non-monotone, do not support the simple near-term settling-to-Fam1/Fam3 reading, and motivate three non-exhaustive possible obstruction routes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-235649-0be7c3a012-kubo_fam2_non_convergence_no`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The recorded Fam2 refinement data are non-monotone over the sampled H schedule, so the simple reading that Fam2 only needs finer H to settle near the Fam1/Fam3 value is not supported.  _(class `A`)_
+- **chain closes:** True — The Fam2 sequence +6.6588 -> +6.3168 -> +7.0883 -> +4.5082 has step signs -, +, -, so it is non-monotone and not visibly settling near ~+5.97. The note labels O1-O3 only as possible, non-exhaustive routes, so no stronger mechanism theorem is required.
+- **rationale:** Both cited authorities are retained_bounded, which is retained-grade under the rubric. The primary runner is not a first-principles physics computation; it checks note boundaries, cache freshness, and consistency of the recorded finite data, with 57 class-A passes. Independent inspection of the displayed values supports the non-monotonicity and the rejection of the shallow settling interpretation within the sampled ladder. The note does not claim an exhaustive trichotomy, a no-go theorem, or a Fam2 continuum limit.
 - **auditor confidence:** high
 
 ### `kubo_fam2_refinement_note`

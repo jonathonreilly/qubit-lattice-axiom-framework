@@ -1,0 +1,65 @@
+========================================================================================
+AUDIT COMPANION: HUBBLE LANE 5 TWO-GATE FIREWALL
+CRITICALITY-BUMP AUDIT-READINESS HYGIENE
+========================================================================================
+
+Companion target:
+  hubble_lane5_two_gate_dependency_firewall_note_2026-04-27
+
+Question:
+  Has the parent note's substance changed since the prior
+  audited_clean verdict, or is the criticality-bump invalidation
+  a queue-priority signal only?
+
+Answer:
+  The substance is unchanged. The invalidation is a
+  queue-priority bump (criticality_increased: medium -> high),
+  not a content-change flag.
+
+----------------------------------------------------------------------------------------
+(R1) Presence checks for parent note and parent runner
+----------------------------------------------------------------------------------------
+  [PASS] parent note file exists on disk  (path=docs/HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md)
+  [PASS] parent runner file exists on disk  (path=scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py)
+
+----------------------------------------------------------------------------------------
+(R2) Note-hash invariance against current ledger row
+----------------------------------------------------------------------------------------
+  [PASS] ledger row recorded expected note_hash  (ledger=c370a34fb903... expected=c370a34fb903...)
+  [PASS] on-disk note hash matches ledger note_hash  (on_disk=c370a34fb903... ledger=c370a34fb903...)
+  [PASS] on-disk note hash matches the expected substance-unchanged hash  (on_disk=c370a34fb903... expected=c370a34fb903...)
+
+----------------------------------------------------------------------------------------
+(R3) Re-execution of parent runner
+----------------------------------------------------------------------------------------
+  [PASS] parent runner exits with status 0  (returncode=0)
+  [PASS] parent runner reports PASS=18 FAIL=0  (tail_line='PASS=18 FAIL=0')
+
+----------------------------------------------------------------------------------------
+(R4) Load-bearing-content static checks on parent note prose
+----------------------------------------------------------------------------------------
+  [PASS] bridge identity H_0 = H_inf / sqrt(L) present in parent prose
+  [PASS] blocked upgrade (C1) alone enumerated in parent prose
+  [PASS] blocked upgrade (C2)/(C3) alone enumerated in parent prose
+  [PASS] structural-lock-only blocked upgrade enumerated in parent prose
+  [PASS] two-gate firewall conclusion present in parent prose
+  [PASS] gate-inventory table contains C1 row
+  [PASS] gate-inventory table contains C2 row
+  [PASS] gate-inventory table contains C3 row
+
+----------------------------------------------------------------------------------------
+(R5) Invalidation-reason structure on ledger row
+----------------------------------------------------------------------------------------
+  [PASS] ledger row has at least one previous_audits entry  (len(previous_audits)=2)
+  [PASS] most-recent previous audit was audited_clean  (audit_status='audited_clean')
+  [PASS] most-recent invalidation_reason begins with criticality_increased  (invalidation_reason='criticality_increased:medium->high')
+
+----------------------------------------------------------------------------------------
+(R6) Input-table invariance on parent note
+----------------------------------------------------------------------------------------
+  [PASS] parent note contains '## Inputs And Import Roles' section  (section_idx=4517)
+  [PASS] all six expected input rows present in parent inputs section  (checked 6 keys)
+
+========================================================================================
+PASS=20 FAIL=0
+========================================================================================

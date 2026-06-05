@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_bz_volume_two_pi_cubed_record_invariance_2026_06_04.py
+runner_sha256: c117824d88bfce368de8adea36a6343ba6ac907ac30d11bcc3a999ea8bccf79c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.91
+status: ok
+----- stdout -----
+========================================================================
+BZ two-pi-cubed record-invariance hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md
+Parent runner: scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS parent_claim_type_expected
+PASS parent_runner_path_expected
+PASS parent_current_criticality_expected
+PASS parent_current_load_expected :: load=1.5
+PASS parent_note_hash_expected
+PASS parent_note_hash_matches_ledger
+PASS parent_runner_hash_expected
+PASS parent_has_only_minimal_axioms_dep
+PASS minimal_axioms_row_is_meta
+PASS parent_current_row_unresolved
+PASS prior_positive_snapshot_present
+PASS prior_invalidation_was_premise_update
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_total_present
+PASS parent_runner_pass_count_fifty_five :: pass_count=55
+PASS parent_runner_fail_count_zero :: fail_count=0
+PASS parent_load_bearing_block_present
+PASS parent_load_bearing_contains_lattice_haar_phrase_0
+PASS parent_load_bearing_contains_lattice_haar_phrase_1
+PASS parent_load_bearing_contains_lattice_haar_phrase_2
+PASS parent_load_bearing_contains_lattice_haar_phrase_3
+PASS parent_load_bearing_contains_lattice_haar_phrase_4
+PASS parent_load_bearing_omits_record_axiom_terms
+PASS direct_volume_exact
+PASS direct_haar_density_exact
+PASS direct_volume_numeric_expected
+PASS record_marker_does_not_change_volume
+PASS record_marker_does_not_change_density
+PASS record_marker_does_not_change_numeric_volume
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_verdict_change
+PASS companion_keeps_parent_unclosed
+PASS companion_marks_axioms_not_support
+========================================================================
+SUMMARY: PASS=36 FAIL=0
+========================================================================
+
+----- stderr -----
+

@@ -1,0 +1,204 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_fs_rotation_exchange_record_axiom_invariance_2026_06_04.py
+runner_sha256: fb567189ff84b855cff5ad738fc686789a78275793d0f6b38941e0472b047d7e
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.52
+status: ok
+----- stdout -----
+FS Rotation-Exchange Discrete-Insufficiency Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-fs-rotation-invariance/wt
+Parent note: /private/tmp/cl3-fs-rotation-invariance/wt/docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md
+Companion source note: docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing finite-dimensional facts
+      (F1)-(F5) are invariant under the 2026-06-04 Record-axiom
+      adoption (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: On-site U_2pi = exp(2 pi i sigma_3/2) = -I_2
+========================================================================
+  Inputs: Pauli sigma_3, S_3 = sigma_3/2 (Quantum axiom content).
+  No Record-axiom content used.
+  PASS U_2pi_is_scalar :: U_2pi = (-1)*I_2
+  PASS U_2pi_equals_minus_I2 :: scalar = -1 (expected -1)
+  PASS U_4pi_is_scalar :: U_4pi = (1)*I_2
+  PASS U_4pi_equals_plus_I2_double_cover :: scalar = 1 (expected +1; 4pi -> +I confirms 2O double-cover)
+
+========================================================================
+BLOCK 2: Two-site lifts U_2pi (x) I = I (x) U_2pi = -I_4
+========================================================================
+  Inputs: Lattice two-site tensor C^2 (x) C^2 (Lattice + Quantum).
+  No Record-axiom content used.
+  PASS U_2pi_kron_I_is_scalar :: U_2pi (x) I = (-1)*I_4
+  PASS U_2pi_kron_I_equals_minus_I4 :: scalar = -1
+  PASS I_kron_U_2pi_is_scalar :: I (x) U_2pi = (-1)*I_4
+  PASS I_kron_U_2pi_equals_minus_I4 :: scalar = -1
+  PASS two_site_lifts_equal_same_scalar :: U_2pi (x) I - I (x) U_2pi = 0 (same -I_4 on whole space)
+
+========================================================================
+BLOCK 3: Tensor swap P, P^2 = I_4, spectrum {+1 (3), -1 (1)}
+========================================================================
+  Inputs: tensor-product structure on C^2 (x) C^2.
+  No Record-axiom content used.
+  PASS P_squared_eq_I4 :: P^2 = I_4 (involution)
+  PASS P_eigenvalue_plus1_mult_3 :: mult(+1) = 3
+  PASS P_eigenvalue_minus1_mult_1 :: mult(-1) = 1
+  PASS P_is_not_scalar :: P has both +1 and -1 eigenvalues -> non-scalar
+
+========================================================================
+BLOCK 4: On-site 2pi acts as -1 on BOTH sym and antisym sectors
+========================================================================
+  Inputs: U_2pi (x) I, basis vectors of C^2 (x) C^2.
+  No Record-axiom content used.
+  PASS on_site_2pi_acts_as_minus1_on_symmetric :: (U_2pi (x) I) * (|01>+|10>) = -(|01>+|10>)
+  PASS on_site_2pi_acts_as_minus1_on_antisymmetric :: (U_2pi (x) I) * (|01>-|10>) = -(|01>-|10>)
+  PASS on_site_2pi_cannot_separate_sectors :: same -1 on both sectors -> cannot equal P
+
+========================================================================
+BLOCK 5: <U_2pi(x)I, I(x)U_2pi> = scalars only (complex dim 1)
+========================================================================
+  Inputs: unital *-algebra closure on M_4(C).
+  No Record-axiom content used.
+  PASS on_site_rotation_algebra_dim_equals_1 :: dim = 1
+  PASS P_not_in_on_site_rotation_algebra :: scalar (dim 1) algebra cannot reach non-scalar P
+
+========================================================================
+BLOCK 6: Bare ladders [sigma_+(x)I, I(x)sigma_+] = 0 (bosonic)
+========================================================================
+  Inputs: sigma_+, sigma_-, tensor product on C^4.
+  No Record-axiom content used.
+  PASS comm_a0_a1_zero :: [sigma_+(x)I, I(x)sigma_+] = 0 (ungraded; bosonic-type)
+  PASS comm_a0_a1dag_zero :: [sigma_+(x)I, I(x)sigma_-] = 0
+  PASS anticomm_a0_a1_nonzero :: {sigma_+(x)I, I(x)sigma_+} != 0 (not CAR)
+
+========================================================================
+BLOCK 7: On-site (sigma_+)^2 = 0 (per-site Fock dim 2)
+========================================================================
+  Inputs: sigma_+ on a single site.
+  No Record-axiom content used.
+  PASS sigma_plus_squared_zero :: (sigma_+)^2 = 0 (spin-1/2 + on-site nilpotency)
+  PASS hard_core_boson_has_same_on_site_2pi_sign :: hcb shares spin-1/2 + 2pi=-1 + on-site nilpotency premises
+
+========================================================================
+BLOCK 8: JW dressed ladders {c_0, c_1} = 0 (fermionic CAR)
+========================================================================
+  Inputs: c_0 = sigma_+ (x) I; c_1 = sigma_3 (x) sigma_+.
+  No Record-axiom content used.
+  PASS anticomm_c0_c1_zero :: {c_0, c_1} = 0 (cross-site CAR)
+  PASS anticomm_c0_c1dag_zero :: {c_0, c_1^dag} = 0 (x != y)
+  PASS anticomm_c1_c0dag_zero :: {c_1, c_0^dag} = 0 (x != y)
+  PASS anticomm_c0_c0dag_eq_I4 :: {c_0, c_0^dag} = I_4 (on-site CAR)
+  PASS c0_squared_zero :: (c_0)^2 = 0
+  PASS c1_squared_zero :: (c_1)^2 = 0
+
+========================================================================
+BLOCK 9: <hcb gens> = <JW gens> = M_4(C) (complex dim 16)
+========================================================================
+  Inputs: algebra closure of bosonic and fermionic generators on C^4.
+  No Record-axiom content used.
+  PASS hcb_algebra_dim_16 :: hcb dim = 16
+  PASS jw_algebra_dim_16 :: JW dim = 16
+  PASS same_algebra_M4C :: both frames -> full M_4(C); discriminator is cross-site relation
+
+========================================================================
+BLOCK 10: Parent note Record-axiom usage scan (load-bearing)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-fs-rotation-invariance/wt/docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md
+  PASS scope_section_1_found :: §1 indices [3767, 9237]
+  PASS proof_section_5_found :: §5 indices [13376, 16859]
+  PASS zero_record_axiom_tokens_in_load_bearing_sections :: matches = []
+  PASS quantum_lattice_content_present_in_load_bearing_sections :: matches (>=4 expected): ['one-qubit', 'Z^3', 'U_2pi', 'sigma_3', '(F1)', '(F4)', 'JW', 'Jordan-Wigner']
+
+========================================================================
+BLOCK 11: Record-axiom counterfactual: identical symbolic output
+========================================================================
+  Re-evaluating the core under 'Record axiom asserted' and 'not
+  asserted' outer scopes. The symbolic algebra makes no reference
+  to a record-readout functional I(.); the outer scope is a
+  decoration that does not enter any computation.
+  PASS with_record_axiom_U2pi_scalar_correct :: value = -1
+  PASS without_record_axiom_U2pi_scalar_correct :: value = -1
+  PASS counterfactual_identical_U2pi_scalar :: with == without
+  PASS with_record_axiom_UL_scalar_correct :: value = -1
+  PASS without_record_axiom_UL_scalar_correct :: value = -1
+  PASS counterfactual_identical_UL_scalar :: with == without
+  PASS with_record_axiom_UR_scalar_correct :: value = -1
+  PASS without_record_axiom_UR_scalar_correct :: value = -1
+  PASS counterfactual_identical_UR_scalar :: with == without
+  PASS with_record_axiom_P_squared_correct :: value = Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+  PASS without_record_axiom_P_squared_correct :: value = Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+  PASS counterfactual_identical_P_squared :: with == without
+  PASS with_record_axiom_P_eig_plus1_mult_correct :: value = 3
+  PASS without_record_axiom_P_eig_plus1_mult_correct :: value = 3
+  PASS counterfactual_identical_P_eig_plus1_mult :: with == without
+  PASS with_record_axiom_P_eig_minus1_mult_correct :: value = 1
+  PASS without_record_axiom_P_eig_minus1_mult_correct :: value = 1
+  PASS counterfactual_identical_P_eig_minus1_mult :: with == without
+  PASS with_record_axiom_rot_algebra_dim_correct :: value = 1
+  PASS without_record_axiom_rot_algebra_dim_correct :: value = 1
+  PASS counterfactual_identical_rot_algebra_dim :: with == without
+  PASS with_record_axiom_bare_comm_correct :: value = Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+  PASS without_record_axiom_bare_comm_correct :: value = Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+  PASS counterfactual_identical_bare_comm :: with == without
+  PASS with_record_axiom_jw_anticomm_c0_c1_correct :: value = Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+  PASS without_record_axiom_jw_anticomm_c0_c1_correct :: value = Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+  PASS counterfactual_identical_jw_anticomm_c0_c1 :: with == without
+  PASS with_record_axiom_jw_anticomm_c0_c0d_correct :: value = Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+  PASS without_record_axiom_jw_anticomm_c0_c0d_correct :: value = Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+  PASS counterfactual_identical_jw_anticomm_c0_c0d :: with == without
+  PASS with_record_axiom_sigma_plus_squared_correct :: value = Matrix([[0, 0], [0, 0]])
+  PASS without_record_axiom_sigma_plus_squared_correct :: value = Matrix([[0, 0], [0, 0]])
+  PASS counterfactual_identical_sigma_plus_squared :: with == without
+
+========================================================================
+BLOCK 12: Quantum/Lattice content preserved across memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-fs-rotation-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-fs-rotation-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_FS_bridges :: Record scope-exclusion list covers log-det/source-action/production-rule/Born/P2/modulus
+
+========================================================================
+BLOCK 13: Parent N1 walls R1-R6 remain valid
+========================================================================
+  Each wall is re-checked using only the finite-dim facts above.
+  No Record-axiom content used.
+  PASS R1_on_site_sign_not_exchange_sign :: on-site 2pi acts as -1 on both sectors; P is non-scalar
+  PASS R2_algebraic_generation_of_P_fails :: on-site algebra dim = 1; P non-scalar
+  PASS R3_R4_only_discrete_Z2_realized_by_on_site_rotation :: on-site 2pi powers realize only scalars in {1, -1}
+  PASS R5_retained_locality_is_ungraded_bosonic :: [a0, a1] = 0 (commute) and {a0, a1} != 0 (NOT CAR)
+  PASS R6_hcb_passes_all_three_premises_yet_bosonic :: spin-1/2 + 2pi=-1 + nilpotent + [a0,a1]=0 -> bosonic
+
+========================================================================
+TOTAL PASS: 83
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing finite-dimensional facts (F1)-(F5) of the parent
+  no-go use ONLY Quantum + Lattice axiom content plus standard
+  finite-dimensional complex linear algebra (Pauli, tensor
+  products, Jordan-Wigner, swap, M_4(C) dimension count).
+  The Record axiom (additive scalar record-readout functional)
+  is neither used nor invoked. All symbolic outputs are identical
+  under both 'Record axiom asserted' and 'Record axiom not
+  asserted' outer scopes. The parent's N1 walls R1-R6 remain
+  valid on the verified facts alone. This runner does not
+  re-apply any prior audit treatment; it records that the
+  arithmetic checked here is unchanged by the 2026-06-04
+  axiom-set adoption.
+
+The audit lane decides whether to honor or re-test the parent
+treatment on the new minimal_axioms premise hash.
+
+----- stderr -----
+

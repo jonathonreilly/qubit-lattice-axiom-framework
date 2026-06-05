@@ -6,6 +6,13 @@
 input, and no audit verdict. The independent audit lane sets audit and
 effective status.
 **Primary runner:** [`frontier_beta6_connected_coefficient_2026_05_30.py`](../scripts/frontier_beta6_connected_coefficient_2026_05_30.py)
+**Maxorder-7 packet runner:** [`frontier_beta6_d7_maxorder7_packet_2026_06_05.py`](../scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py)
+**Maxorder-7 packet cache:** [`frontier_beta6_d7_maxorder7_packet_2026_06_05.txt`](../logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt)
+**D9 cross-certificate runner:** [`frontier_beta6_d9_coefficient_2026_06_04.py`](../scripts/frontier_beta6_d9_coefficient_2026_06_04.py)
+**D9 cross-certificate cache:** [`frontier_beta6_d9_coefficient_2026_06_04.txt`](../logs/runner-cache/frontier_beta6_d9_coefficient_2026_06_04.txt)
+**Source-packet verifier:** [`frontier_beta6_d7_source_packet_manifest_2026_06_05.py`](../scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py)
+**Source-packet verifier cache:** [`frontier_beta6_d7_source_packet_manifest_2026_06_05.txt`](../logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt)
+**Source-packet verifier JSON:** [`frontier_beta6_d7_source_packet_manifest_2026_06_05.json`](../outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json)
 
 ## Scope
 
@@ -84,6 +91,20 @@ d_6 = 7/5668704
 d_7 = 5/17006112
 PASS=22 FAIL=0
 ```
+
+The `2026-06-05` source packet makes that path cache-addressable for the audit
+runner. The primary runner still accepts `maxorder` as an argv argument, while
+the cache system invokes runners without argv; therefore
+`scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py` delegates to
+`scripts/frontier_beta6_connected_coefficient_2026_05_30.py 7` and pins the
+completed output. The later `frontier_beta6_d9_coefficient_2026_06_04.py`
+cache is also linked as an independent cross-certificate: before its order-9
+work, it reproduces `d_7 = 5/17006112` and checks that the cube-sector closed
+form reproduces direct-engine `d_5`, `d_6`, `d_7`, and `d_8`.
+
+The source-packet verifier checks note links, primary-source markers, wrapper
+delegation markers, cache SHA freshness, and the required `d_7` snippets. It
+does not assign an audit verdict.
 
 ## Boundary
 

@@ -1,0 +1,196 @@
+{
+  "checks": [
+    {
+      "detail": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
+      "name": "path_exists:primary_runner",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
+      "name": "note_links:primary_runner",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py",
+      "name": "path_exists:maxorder7_runner",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py",
+      "name": "note_links:maxorder7_runner",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt",
+      "name": "path_exists:maxorder7_cache",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt",
+      "name": "note_links:maxorder7_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_d9_coefficient_2026_06_04.py",
+      "name": "path_exists:d9_runner",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_d9_coefficient_2026_06_04.py",
+      "name": "note_links:d9_runner",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/frontier_beta6_d9_coefficient_2026_06_04.txt",
+      "name": "path_exists:d9_cache",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/frontier_beta6_d9_coefficient_2026_06_04.txt",
+      "name": "note_links:d9_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py",
+      "name": "path_exists:manifest_runner",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py",
+      "name": "note_links:manifest_runner",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt",
+      "name": "note_links:manifest_cache",
+      "ok": true
+    },
+    {
+      "detail": "outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json",
+      "name": "note_links:manifest_json",
+      "ok": true
+    },
+    {
+      "detail": "def compute_dn_frac",
+      "name": "primary_source_marker:def compute_dn_frac",
+      "ok": true
+    },
+    {
+      "detail": "def cycle_space_certificate",
+      "name": "primary_source_marker:def cycle_space_certificate",
+      "ok": true
+    },
+    {
+      "detail": "def cube_shells_size5",
+      "name": "primary_source_marker:def cube_shells_size5",
+      "ok": true
+    },
+    {
+      "detail": "if maxorder >= 7",
+      "name": "primary_source_marker:if maxorder >= 7",
+      "ok": true
+    },
+    {
+      "detail": "d_7 exact value = 5/17006112",
+      "name": "primary_source_marker:d_7 exact value = 5/17006112",
+      "ok": true
+    },
+    {
+      "detail": "bounded verdict: tadpole/geometric ansatz falsified at order 7",
+      "name": "primary_source_marker:bounded verdict: tadpole/geometric ansatz falsified at order 7",
+      "ok": true
+    },
+    {
+      "detail": "AUDIT_TIMEOUT_SEC = 420",
+      "name": "maxorder7_wrapper_marker:AUDIT_TIMEOUT_SEC = 420",
+      "ok": true
+    },
+    {
+      "detail": "delegated_argv: 7",
+      "name": "maxorder7_wrapper_marker:delegated_argv: 7",
+      "ok": true
+    },
+    {
+      "detail": "frontier_beta6_connected_coefficient_2026_05_30",
+      "name": "maxorder7_wrapper_marker:frontier_beta6_connected_coefficient_2026_05_30",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py == scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py",
+      "name": "cache_runner_matches:maxorder7_cache",
+      "ok": true
+    },
+    {
+      "detail": "b98f4d2815471c5825f5ef2da6482779468b67c8d3db3e2d4bb0853002c17d7b == b98f4d2815471c5825f5ef2da6482779468b67c8d3db3e2d4bb0853002c17d7b",
+      "name": "cache_sha_fresh:maxorder7_cache",
+      "ok": true
+    },
+    {
+      "detail": "status=ok exit=0",
+      "name": "cache_status_ok:maxorder7_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_beta6_d9_coefficient_2026_06_04.py == scripts/frontier_beta6_d9_coefficient_2026_06_04.py",
+      "name": "cache_runner_matches:d9_cache",
+      "ok": true
+    },
+    {
+      "detail": "52418e78afb23e1a5afe5bfef0534df4404deda3097677bf6c10eaa784e517f4 == 52418e78afb23e1a5afe5bfef0534df4404deda3097677bf6c10eaa784e517f4",
+      "name": "cache_sha_fresh:d9_cache",
+      "ok": true
+    },
+    {
+      "detail": "status=ok exit=0",
+      "name": "cache_status_ok:d9_cache",
+      "ok": true
+    },
+    {
+      "detail": "delegated_argv: 7",
+      "name": "maxorder7_cache_snippet:delegated_argv: 7",
+      "ok": true
+    },
+    {
+      "detail": "V5. order-beta^7 coefficient",
+      "name": "maxorder7_cache_snippet:V5. order-beta^7 coefficient",
+      "ok": true
+    },
+    {
+      "detail": "d_7 exact value = 5/17006112",
+      "name": "maxorder7_cache_snippet:d_7 exact value = 5/17006112",
+      "ok": true
+    },
+    {
+      "detail": "d_7/d_6 = 5/21",
+      "name": "maxorder7_cache_snippet:d_7/d_6 = 5/21",
+      "ok": true
+    },
+    {
+      "detail": "SCORECARD:",
+      "name": "maxorder7_cache_snippet:SCORECARD:",
+      "ok": true
+    },
+    {
+      "detail": "FAIL=0",
+      "name": "maxorder7_cache_snippet:FAIL=0",
+      "ok": true
+    },
+    {
+      "detail": "d_7 = 5/17006112",
+      "name": "d9_cache_snippet:d_7 = 5/17006112",
+      "ok": true
+    },
+    {
+      "detail": "cube-sector closed form 72 K''(K')^5 reproduces the direct-engine d_5, d_6, d_7, d_8 EXACTLY",
+      "name": "d9_cache_snippet:cube-sector closed form 72 K''(K')^5 reproduces the direct-engine d_5, d_6, d_7, d_8 EXACTLY",
+      "ok": true
+    },
+    {
+      "detail": "SCORECARD: PASS=33 FAIL=0",
+      "name": "d9_cache_snippet:SCORECARD: PASS=33 FAIL=0",
+      "ok": true
+    }
+  ],
+  "fail": 0,
+  "pass": 38
+}

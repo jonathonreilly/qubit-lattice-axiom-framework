@@ -1,0 +1,22 @@
+loop: beta6-d7-source-packet-20260605
+target_claim_id: beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+current_block: block01
+files_touched:
+  - docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md
+  - scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py
+  - scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py
+  - logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt
+  - logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt
+  - outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json
+result_summary:
+  maxorder7_runner: "SCORECARD: PASS=22 FAIL=0"
+  maxorder7_elapsed_sec: "193.0"
+  d7: "5/17006112"
+  d7_over_d6: "5/21"
+  manifest: "SUMMARY: BETA6 D7 SOURCE PACKET PASS=38 FAIL=0"
+next_exact_action: "Open review PR; independent auditor decides whether the source packet retires the runner-artifact blocker."

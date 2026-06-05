@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_graph_braid_z3_anyon_exclusion_dichotomy_dep_resolution_2026_06_04.py
+runner_sha256: de5710734ae71422543090cb8f739c602f6e3f8bfbc5331da4276f68da7387be
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================
+Graph-braid Z3 anyon-exclusion dependency-surface hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md
+Parent runner: scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py
+Parent cache: logs/runner-cache/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.txt
+Scope: meta evidence only; no new no-go, no audit verdict, no direct status change.
+PASS load_bearing_section_present
+PASS non_load_bearing_section_present
+PASS weak_context_absent_from_load_bearing_section
+PASS weak_context_present_in_non_load_bearing_section
+PASS weak_context_not_markdown_linked
+PASS weak_context_plain_text_marker_present
+PASS non_load_bearing_tier_disclaimer_present
+PASS parent_cache_records_runner_hash
+PASS parent_cache_hash_matches_runner
+PASS parent_cache_exit_code_zero
+PASS parent_cache_status_ok
+PASS parent_cache_scorecard_pass_25_fail_0
+PASS parent_cache_contains_H_1_Z_6_Z_2
+PASS parent_cache_contains_H_1_Z_4_Z_2
+PASS parent_cache_contains_Z_3_cube_L_3_NON_PLANAR
+PASS parent_cache_contains_Z_3_cube_L_4_NON_PLANAR
+PASS parent_cache_contains_does_NOT_select_boson_vs_fermion
+PASS parent_cache_contains_does_NOT_settle_the_open_second_quantized
+PASS parent_runner_source_no_grade_token_0
+PASS parent_runner_source_no_grade_token_1
+PASS parent_runner_source_no_grade_token_2
+PASS parent_runner_source_no_grade_token_3
+PASS parent_runner_source_no_grade_token_4
+PASS parent_runner_source_no_grade_token_5
+PASS parent_runner_source_no_grade_token_6
+PASS parent_runner_source_no_weak_context_stem
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_no_go
+PASS companion_disclaims_direct_status_change
+PASS companion_explains_cache_reason
+========================================================================
+SUMMARY: PASS=30 FAIL=0
+========================================================================
+
+----- stderr -----
+

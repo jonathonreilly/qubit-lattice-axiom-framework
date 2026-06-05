@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 1287,
-    "decoration": 49,
+    "decoration": 50,
     "meta": 288,
     "no_go": 297,
     "open_gate": 134,
-    "positive_theorem": 715
+    "positive_theorem": 714
   },
   "cycle_examples": [],
   "cycles_detected": 0,
@@ -21,6 +21,7 @@
     "decoration_under_cpt_exact_note": 4,
     "decoration_under_emergent_lorentz_invariance_note": 1,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
+    "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
     "decoration_under_hierarchy_matsubara_decomposition_note": 1,
@@ -46,7 +47,7 @@
     "retained_bounded": 629,
     "retained_no_go": 175,
     "retained_pending_chain": 9,
-    "unaudited": 1351
+    "unaudited": 1350
   },
   "retained_pending_chain_count": 9,
   "retained_pending_chain_examples": [

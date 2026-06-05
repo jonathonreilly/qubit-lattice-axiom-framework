@@ -1,0 +1,15 @@
+[PASS] (A) additivity is SIGN-AGNOSTIC: signed Tr, unsigned sum|lam|, log|det|, AND eta are ALL additive over disjoint records
+       Tr/sum|lam|/log|det|/eta all add over the direct sum => Record axiom selects none
+[PASS] (B) Born kills the sign: |+x|^2 = |-x|^2 -- a post-Born record is sign-blind
+[PASS] (C) eta is REFUTED as a forcer: two spectra with eta=3 give DIFFERENT Q (1/3 vs 1/2) -- a Z-count cannot fix Q
+       eta(A)=eta(B)=3 but Q(A)=0.3333 != Q(B)=0.5000
+[PASS] (D) physical leptons SIGN-HOMOGENEOUS (all sqrt(m)>0): signed = unsigned = Q_PDG ~ 2/3 -- the sign dichotomy is NOT load-bearing on data
+       Q_signed=Q_unsigned=0.666661 ~ 2/3
+[PASS] CONSEQUENCE: Q=2/3 <=> r=1/2 is the EQUIPARTITION pin, unforced by any readout; the sign bit (if wanted) consolidates onto the staggered-Dirac admission H=iD
+
+SCORECARD PASS=5 FAIL=0
+FINDING: the RECORD axiom does NOT force the signed Koide readout (sign_is_free_import). Additivity
+is sign-agnostic; Born kills the sign; eta is too coarse to force it (refuted by counterexample);
+and the physical leptons are sign-homogeneous so signed=unsigned=2/3 (the dichotomy is moot on data).
+The genuine open gate is r=1/2 (equipartition), unforced by any readout; the signed reading, if
+wanted, reduces to the staggered-Dirac admission. No audit status.

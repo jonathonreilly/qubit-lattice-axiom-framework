@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 176 |
-| **retained_no_go** | 182 |
+| **retained_no_go** | 183 |
 | **retained_bounded** | 655 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1281 |
+| unaudited | 1280 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1005 |
+| `audited_clean` | 1006 |
 | `audited_conditional` | 64 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1565 |
+| `unaudited` | 1564 |
 
 | claim_type | count |
 |---|---:|
@@ -257,6 +257,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_color_automorphism_theorem` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
@@ -3268,6 +3269,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 
 Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=2; ('second', 'audited_decoration', 'decoration', 'A')=3.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02`
+
+- **Note:** [`CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md`](../../docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the grade-1 R^3 subspace of the one-site Cl(3,0) carrier, no nonzero frame-free Spin(3)/Pin(3)-equivariant induced grade-1 endomorphism, nor any named ambient Clifford operation checked, supplies an operator anticommuting with Gamma_chi; frame-chosen L4, lattice, momentum, dynamics, and sector-factorization routes remain outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-cba855775e-cl3_frame_free_ambient_chira`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Solving the Spin(3) grade-1 commutant gives M = c I_3, and {c I_3, Gamma_chi} = 2 c Gamma_chi vanishes only for c = 0.  _(class `A`)_
+- **chain closes:** True — Independently of the runner, any map commuting with all rotations sends each axis to itself, so linearity forces a scalar map; a nonzero scalar cannot anticommute with the involution Gamma_chi. The exhibited L4 anticommuting family requires a chosen singlet axis plus free doublet vector and is therefore outside the frame-free ambient class.
+- **rationale:** The load-bearing step is a finite algebraic commutant calculation over the accepted one-site Cl(3,0) carrier and retained-grade upstream context. The runner source performs exact symbolic matrix checks rather than importing external comparators, tuned values, or hard-coded contested premises; an independent representation-theoretic check confirms the scalar commutant and the L4 escape. The no-go discipline gate passes only in the narrow scoped form: it closes the frame-free ambient Clifford route, not frame-broken or lattice/dynamical routes.
 - **auditor confidence:** high
 
 ### `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10`

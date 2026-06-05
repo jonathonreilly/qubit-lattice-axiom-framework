@@ -1,0 +1,214 @@
+
+========================================================================
+FRONTIER: how much of Born is UNCONDITIONAL from {Quantum + Record}?
+========================================================================
+Date: 2026-06-05
+Axioms used: Quantum (M_2(C) C*-algebra) + Record (finite additivity
+of a scalar readout over disjoint records). Sharpening of #2702.
+
+========================================================================
+TASK 1 -- The algebraic-state fact for M_2(C) (the sharpening)
+========================================================================
+    A C*-algebra fact: a STATE is a positive, normalized LINEAR functional
+    omega: M_2(C) -> C.  Finite-dim structure theorem => omega(A)=Tr(rho A)
+    for a unique density matrix rho (positive, Tr rho = 1).
+[PASS] 1a.states_exist_have_Tr_form_omega(A)=Tr(rho A)  ::  linearity of omega <=> Tr(rho .) form (50 random rho)
+[PASS] 1a.omega(P)_in_[0,1]_for_all_projectors
+[PASS] 1a.omega_normalized_Tr_rho=1
+[PASS] 1a.omega_additive_over_orthogonal_P+Pperp=I  ::  additivity is AUTOMATIC from linearity of a C*-state
+
+========================================================================
+TASK 1b -- pure-state value omega(P_k) = |a_k|^2 (exact)
+========================================================================
+[PASS] 1b.omega(P0)=|a0|^2_exact  ::  omega(P0)=a0*conjugate(a0)
+[PASS] 1b.omega(P1)=|a1|^2_exact  ::  omega(P1)=a1*conjugate(a1)
+    => For a PURE state, the C*-algebraic state value omega(P_k) IS the
+       Born number |a_k|^2.  This is a THEOREM of M_2(C), i.e. INSIDE
+       the Quantum axiom -- *as a property of states of the algebra*.
+
+========================================================================
+TASK 1c -- Decomposing #2702's A3 = 'a state-functional probability exists'
+========================================================================
+    A3 (#2702) bundles TWO claims. Split them:
+      (a) EXISTENCE of a consistent additive [0,1] state-functional with
+          omega(P_k)=|a_k|^2 for pure states.
+          VERDICT: supplied by the algebra. Quantum gives the C*-STATE
+          (positive normalized LINEAR functional) => Tr(rho .) form +
+          pure-state value (1a,1b). Record gives the same additivity from
+          a DIFFERENT, weaker premise (frame additivity, Task 2).
+          The ONE genuine gap inside (a): the C*-state is assumed LINEAR;
+          Gleason/Busch is what UPGRADES mere frame-additivity to linear
+          => the existence-of-Tr-form is non-trivially earned, not free.
+      (b) the OPERATIONAL IDENTIFICATION: that this omega = the empirical
+          RELATIVE FREQUENCIES the experimenter records.
+          VERDICT: NOT in the algebra. M_2(C) never says the number
+          Tr(rho P) is a frequency. This is the genuine residual (Task 3).
+[PASS] 1c.A3_splits_into_(a)existence_in_algebra_and_(b)operational_residual  ::  existence: in {Quantum,Record}; identification: residual
+
+========================================================================
+TASK 2 -- Record additivity IS Gleason's frame-function additivity
+========================================================================
+    Gleason's frame function f on the unit sphere satisfies sum_i f(e_i)=1
+    on EVERY orthonormal basis (non-contextual additivity over ORTHOGONAL
+    projectors). The 2026-05-20 Gleason/Busch chain treats this additivity
+    as an INPUT ('standard probability axiom (M3), universal background').
+    Record says: I is finitely additive over DISJOINT records, I(empty)=0.
+    Disjoint realized outcomes <=> ORTHOGONAL projectors (commuting, sum<=I).
+    => Record additivity == Gleason/Busch non-contextual additivity (M3).
+[PASS] 2a.frame_function_sums_to_1_on_every_orthonormal_basis  ::  non-contextual additivity (M3) = the Record-additivity content
+
+========================================================================
+TASK 2b -- Busch dim 2: additive-on-effects => unique Tr(rho .) (qubit)
+========================================================================
+[PASS] 2b.qubit_POVM_resolves_identity_sum_Ei=I
+[PASS] 2b.measure_additive_over_POVM_sums_to_1  ::  sum m(E_i) = 1.000000
+[PASS] 2b.rho_uniquely_recovered_from_additive_effect_values  ::  additive [0,1] functional on the qubit effect algebra => unique Tr(rho.)
+
+========================================================================
+TASK 2c -- {Quantum+Record} -> Born form -> |a_k|^2 (pure qubit)
+========================================================================
+[PASS] 2c.f(P0)=|a0|^2  ::  f(P0)=0.666667
+[PASS] 2c.f(P1)=|a1|^2  ::  f(P1)=0.333333
+[PASS] 2c.frame_values_sum_to_1
+
+========================================================================
+TASK 2d -- The normalization gap (honest)
+========================================================================
+    Record gives an ADDITIVE scalar I over disjoint records with I(empty)=0:
+    that is a homomorphism into (R, +), NOT a [0,1]/sum=1 PROBABILITY.
+    Gleason/Busch need a frame function valued in [0,1] with sum_i f(e_i)=1.
+    The [0,1] bound + sum-to-1 NORMALIZATION is the extra content:
+      * [0,1] bound: 'a single outcome cannot be recorded more than once
+        and not negatively' -- positivity of a count (plausibly Record-
+        flavored, but Record-as-written only asserts additivity, I(empty)=0).
+      * sum-to-1: 'the COMPLETE measurement records exactly one outcome'
+        -- a UNIT/normalization convention, NOT in bare additivity.
+    => Normalization is a small SEPARATE input (positivity + unit-total).
+       It is far weaker than A3, but it is not literally inside Record's
+       '(R,+) additive, I(empty)=0' wording. Recorded as a normalization gap.
+[PASS] 2d.additive_scalar_need_not_normalize_(I(total)=5 possible)  ::  additivity alone does not force sum=1; normalization is extra
+
+========================================================================
+TASK 3 -- Frequency operator f_hat_P on N copies (Hartle/FGG)
+========================================================================
+    State |psi>=sqrt(2/3)|0>+sqrt(1/3)|1>; record P=|0><0|; target Tr(rho P)=0.666667
+[PASS] 3a.mean_<f_hat_P>=Tr(rho P)_for_N=1..8  ::  means=['0.6667', '0.6667', '0.6667', '0.6667', '0.6667', '0.6667', '0.6667', '0.6667'] all = 0.6667
+    MEAN is NON-circular: it is just LINEARITY of the expectation =
+    the algebraic-state value. It re-expresses Tr(rho P); proves nothing new.
+
+========================================================================
+TASK 3b -- Variance -> 0, and WHERE the Born norm enters
+========================================================================
+[PASS] 3b.variance=(p-p^2)/N_closed_form_N=1..8  ::  var=['0.2222', '0.1111', '0.0741', '0.0556', '0.0444', '0.0370', '0.0317', '0.0278']
+[PASS] 3b.variance_monotone_decreasing_toward_0  ::  1/N decay
+    HERE is the smuggle: 'variance -> 0 => state is ~eigenstate of f_hat_P
+    with eigenvalue Tr(rho P)' uses <psi^N| (f-<f>)^2 |psi^N>. That
+    expectation IS the Born inner product weighting the deviation subspace.
+
+========================================================================
+TASK 3c -- The deviation weight is literally the Born measure (circularity)
+========================================================================
+[PASS] 3c.frequency_weights_sum_to_1  ::  the weights ARE the binomial Born distribution
+[PASS] 3c.deviation_weight_is_binomial_with_success_prob=p_born  ::  the measure used to call deviations 'small' IS the Born measure p_born
+[PASS] 3c.UNIFORM_counting_measure_gives_freq->1/2_not_p_born  ::  counting-measure frequency mean = 0.5000 != p_born=0.6667
+    => The convergence 'recorded frequency -> |a_k|^2' is delivered by the
+       BORN norm of the deviation subspace, not by bare counting. The
+       record-COUNT (integers) is non-circular, but its CONVERGENCE to
+       |a_k|^2 (typicality) re-imports the Born measure. CIRCULAR for the
+       value; the mean (3a) is the only non-circular piece, and it is just
+       the algebraic-state number restated.
+
+========================================================================
+TASK 3d -- finite-N honesty: frequency is a DISTRIBUTION, not a value
+========================================================================
+    N=8: most-likely frequency = 0.750 (target 0.667),
+          but P(freq within +/-0 of target) = 0.2731290961743635
+[PASS] 3d.finite_N_has_substantial_off-target_weight  ::  P(|freq-p_born|>1/N) = 0.4537 at N=8 (no exact pinning at finite N)
+    So even granting the Born norm, finite records do NOT pin |a_k|^2;
+    only the N->oo measure-1 statement does -- and that IS the typicality
+    assumption. Record supplies the COUNT, not the limit measure.
+
+========================================================================
+TASK 4 -- No-go intact + distinct from the frequency route
+========================================================================
+[PASS] 4a.barred_homomorphism_is_c_log_p_(additive_over_products)  ::  this is the map the no-go BARS as a Born derivation
+    Frequency route object: count(target) = #{i <= N : outcome_i = target},
+    frequency = count/N. This is additivity over DISJOINT TRIALS i, i.e. it
+    uses Record additivity over disjoint records of SEPARATE copies.
+    It NEVER maps a single branch's probability p to a scalar via log.
+[PASS] 4b.counts_add_over_disjoint_trial_blocks_(R count, not log p)  ::  integer occurrence count: additive over trials, no (R_+,x)->(R,+) map
+
+========================================================================
+TASK 4c -- distinct from the free-monoid caveat
+========================================================================
+    No-go free-monoid caveat: encoding ONE branch of probability p into a
+    WORD LENGTH requires length = -log_b(p) (reintroduces log) OR is a bare
+    integer that is a DIFFERENT quantized observable not fixed by the axioms.
+    The frequency COUNT is NOT that: it does not encode a single branch's p
+    into a length. It tallies WHICH outcome occurred across N independent
+    trials. The integer it produces is count(target), and frequency=count/N
+    is an EMPIRICAL FREQUENCY (the operational identification target), not a
+    coding of p. So it sidesteps BOTH the barred homomorphism AND the caveat.
+[PASS] 4c.free_monoid_caveat_2^n=3_has_no_integer_solution  ::  encoding p=1/3 as a binary word length is impossible (caveat content)
+[PASS] 4c.frequency_count_is_a_DIFFERENT_object_than_branch_length_coding  ::  tally across trials != coding a single branch's p into a length
+[PASS] 4d.no_go_intact_and_distinct_from_frequency_route  ::  frequency route uses neither the barred map nor the length-coding
+
+========================================================================
+TASK 5 -- Typicality / circularity ledger and honest verdict
+========================================================================
+claim                                               in{Q,R}?                    circular? 
+----------------------------------------------------------------------------------------------------
+Existence of a [0,1] state-functional omega         YES (Quantum: C*-state)     no        
+    -> states of M_2(C) exist by the C*-axioms
+omega has the Tr(rho .) FORM                        YES (Quantum + Record)      no        
+    -> Gleason/Busch: Record additivity UPGRADES frame-add to linear Tr-form
+omega(P_k) = |a_k|^2 for PURE states (the VALUE)    YES (follows from form)     no        
+    -> algebraic identity once the Tr-form + pure state are granted
+Non-contextual additivity (Gleason M3 input)        YES (Record)                no        
+    -> Record discharges the 2026-05-20 'additivity is an input' residual
+[0,1] bound + sum-to-1 NORMALIZATION                PARTIAL (normalization gap) no        
+    -> additivity alone is (R,+); unit-total is a small extra input
+MEAN of recorded frequency = Tr(rho P)              YES (linearity)             no        
+    -> non-circular but merely RE-EXPRESSES the algebraic-state number
+Recorded frequency CONVERGES to |a_k|^2 (typicality)NO                          YES       
+    -> deviation 'small' uses the Born norm = the measure being derived
+Operational identification omega = empirical frequencyNO (the residual)           n/a       
+    -> the algebra never says Tr(rho P) is a frequency
+[PASS] 5.exactly_two_NO_rows_(typicality + identification, same residual)  ::  typicality is the mechanism; identification is the residual it fails to discharge
+
+========================================================================
+TASK 5 -- Reconcile with #2702's A3
+========================================================================
+    #2702 A3 = 'a probability measure EXISTS and is state-functional'.
+    SHARPENING RESULT: the EXISTENCE + state-functional + Tr-form + pure
+    value parts of A3 are INSIDE {Quantum, Record} (Tasks 1-2). So A3 does
+    NOT vanish, but it SHRINKS: from 'a state-functional probability exists'
+    down to JUST the OPERATIONAL IDENTIFICATION (omega = recorded frequency),
+    equivalently the TYPICALITY assumption that makes recorded frequency
+    converge to omega. The frequency-operator route does NOT discharge this
+    non-circularly (Task 3): it gives the mean for free (restating omega)
+    but the convergence re-imports the Born norm.
+
+========================================================================
+TASK 5 -- HONEST VERDICT
+========================================================================
+    UNCONDITIONAL from {Quantum + Record}:
+      * the Born FORM omega = Tr(rho .) (Gleason/Busch, Record=additivity),
+        modulo a small NORMALIZATION input (unit-total);
+      * the Born VALUE |a_k|^2 for pure states AS THE ALGEBRAIC-STATE NUMBER;
+      * the MEAN recorded frequency = that number (but this is a restatement).
+    STILL RESIDUAL (NOT unconditional):
+      * the OPERATIONAL IDENTIFICATION that this number is the EMPIRICAL
+        RELATIVE FREQUENCY -- discharged only CONDITIONAL ON TYPICALITY,
+        which the frequency route smuggles via the Born norm (circular).
+    VERDICT TAG: Born is unconditional AS A FORMAL PROBABILITY FUNCTIONAL;
+      the value-as-frequency is CONDITIONAL-ON-TYPICALITY, not unconditional.
+      We do NOT claim 'Born unconditional.'
+[PASS] 5.verdict_recorded_no_overclaim  ::  form+algebraic-value unconditional; frequency-identification conditional-on-typicality
+
+========================================================================
+SELF-CHECK SUMMARY
+========================================================================
+PASS = 29
+FAIL = 0
+PEAK RSS (MB) = 74.5

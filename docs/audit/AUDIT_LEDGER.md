@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 162 |
 | **retained_no_go** | 174 |
-| **retained_bounded** | 619 |
+| **retained_bounded** | 620 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
 | unaudited | 1372 |
-| audit_in_progress | 1 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 23 |
@@ -58,8 +57,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 944 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 945 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 48 |
@@ -130,7 +129,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -269,6 +267,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_exact_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cross_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -3342,6 +3341,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** `CPT * H * (CPT)^{-1} = C * P * H * P * C = C * (-H) * C = -(-H) = H`, hence the CPT/Theta_H-odd Hamiltonian-sector projection vanishes.  _(class `A`)_
 - **chain closes:** True — The retained finite-lattice statement follows algebraically from the explicitly constructed staggered C and P operators each flipping the hopping operator, while their product preserves it. The Hermitian lift is supplied by the retained_bounded bridge via Theta_H = P K; canonical SME coefficient identification is explicitly outside scope.
 - **rationale:** The primary runner constructs the staggered phases, finite lattice hopping operator, C/P operators, CPT transform, and odd projections directly, with no external comparator or hard-coded target constants in the load-bearing path. Its PASS=53 result supports the algebraic identities on the tested even lattices, and the note supplies the general algebraic closure for even periodic L. The runner stdout still contains stale canonical-SME wording, but the source note explicitly demotes that identification to admitted, non-retained bridge material.
+- **auditor confidence:** high
+
+### `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-165349-7ef2a50ce0-cpt_exact_real_anti_hermitia`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Using TDT=D, PDP=-D, and CDC=-D, the substitution Theta D Theta^{-1}=C P (TDT) P C=C(PDP)C=C(-D)C=D, and similarly PK(iD)K^{-1}P^{-1}=iD.  _(class `A`)_
+- **chain closes:** True — The C1 sign chain closes directly from the three premise identities without requiring C and P to commute. C2 closes independently from K(iD)K^{-1}=-iD and PDP=-D.
+- **rationale:** The load-bearing theorem is a class-A algebraic closure over explicit hypotheses, not a numerical match or definition substitution. The runner source performs exact symbolic matrix checks rather than merely printing expected PASS lines, and the manual sign audit independently reproduces C1 and C2. The clean scope is only the narrowed C1+C2 implication; the runner's constructed finite examples are supporting checks, not derivations of the parent Cl(3) premises or an unconditional Theta-square theorem.
 - **auditor confidence:** high
 
 ### `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02`

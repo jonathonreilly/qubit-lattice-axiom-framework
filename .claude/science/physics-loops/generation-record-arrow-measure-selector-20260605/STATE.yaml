@@ -30,7 +30,7 @@ no_go_routes:
   - objectivity or traciality alone selects equal record-letter weights
 runner_result: arrow_measure_selector PASS=21 FAIL=0
 review_findings: self-review clean; independent audit required
-pr_status: pending
+pr_status: opened https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2705
 next_exact_action: |
   Push branch and open review PR. If audited clean, the remaining value gate is
   the physical derivation of gamma=0 rather than gamma=1.

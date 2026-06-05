@@ -30,6 +30,9 @@ gamma=1 -> dimension/Born       -> s=1 -> r=1   -> Q=1
 - `python3 scripts/generation_record_arrow_measure_selector_2026_06_05.py`
   -> PASS=21 FAIL=0.
 
+Review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2705
+
 ## Meaning
 
 This is not a derivation of charged-lepton `Q=2/3`. It is a clean bounded

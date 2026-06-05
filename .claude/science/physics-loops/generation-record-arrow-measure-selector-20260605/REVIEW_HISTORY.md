@@ -15,3 +15,8 @@ Independent audit should verify:
 - the relative-entropy derivative and curvature;
 - endpoint mapping to `Q=2/3` and `Q=1`;
 - firewall between conditional stability and physical selection.
+
+## PR
+
+Review PR opened and verified:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2705

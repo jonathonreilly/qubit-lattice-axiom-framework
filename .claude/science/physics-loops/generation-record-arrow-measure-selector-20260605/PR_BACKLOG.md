@@ -1,10 +1,13 @@
-# PR Backlog
+# PR Status
 
-## Candidate title
+Opened and verified:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2705
+
+## Title
 
 [physics-loop] generation record arrow measure selector bounded-support
 
-## Candidate body
+## Body summary
 
 Adds a bounded theorem for the arrow/measure gate. On the two-letter
 generation Record alphabet with dimensions `(1,2)`, a supplied prior

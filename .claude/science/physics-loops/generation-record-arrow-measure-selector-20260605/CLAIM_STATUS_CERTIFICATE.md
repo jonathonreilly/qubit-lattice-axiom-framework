@@ -3,6 +3,7 @@
 **Loop slug:** `generation-record-arrow-measure-selector-20260605`  
 **Date:** 2026-06-05  
 **Branch:** `physics-loop/generation-record-arrow-measure-selector-20260605`  
+**Review PR:** https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2705  
 **Runner:** `scripts/generation_record_arrow_measure_selector_2026_06_05.py` -> PASS=21 FAIL=0
 
 ## Status fields

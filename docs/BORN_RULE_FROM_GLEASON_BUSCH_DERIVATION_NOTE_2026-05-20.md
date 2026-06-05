@@ -1,8 +1,9 @@
 # Born Rule From Finite Ideal Records
 
 **Date:** 2026-05-20
-**Claim type:** bounded_theorem
+**Claim type:** bounded support note
 **Primary runner:** `scripts/born_rule_framework_bridge_check.py`
+**Type:** conditional / support
 
 ## Scope
 
@@ -16,7 +17,8 @@ The binding surface is intentionally narrow:
 
 - finite qubit-lattice regions only;
 - POVM/effect probabilities represented as `p(E) = Tr(rho E)`;
-- pre-record reference state `rho_ref = I/d` on a finite region;
+- unique tracial state `tau = I/d` on a finite region, with the physical
+  identification `tau = rho_ref` treated as the open conditional bridge;
 - ideal unrefined sharp-projective records with update
   `rho -> P rho P / Tr(P rho P)`;
 - sequential projective effects of the form `P E P`;
@@ -42,7 +44,10 @@ claim through in-repo source rows:
 - [`LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`](LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md)
 
 Background textbook mathematics remains useful context, but the load-bearing
-finite-region steps above are sourced through these framework rows.
+finite-region steps above are sourced through these framework rows. The
+pre-record tracial source row supplies the unique normalized tracial state;
+it does not by itself supply the physical identification of that state with
+the pre-record reference.
 
 ## Claim
 
@@ -54,12 +59,16 @@ The finite effect-probability rows supply
 p(E) = Tr(rho E)
 ```
 
-for a unique density matrix `rho`. The pre-record reference row supplies the
-finite tracial reference
+for a unique density matrix `rho`. The pre-record tracial row supplies the
+finite tracial state
 
 ```text
-rho_ref = I_d / d.
+tau = I_d / d.
 ```
+
+This row conditionally sets `rho_ref = tau` for the finite ideal-record
+bridge. That physical pre-record identification remains open until a direct
+bridge supplies it.
 
 For an ideal sharp projective record `P`, the projective-record rows supply the
 canonical update
@@ -75,7 +84,8 @@ P then E  ->  P E P.
 ```
 
 If `P = |psi><psi|` is a complete rank-one projective record on a subsystem,
-then applying the update to the tracial reference gives
+then applying the update to the conditionally identified tracial reference
+gives
 
 ```text
 rho_ref | P = |psi><psi|.
@@ -95,8 +105,9 @@ This is the Born form on the finite ideal-record surface.
 1. The finite Gleason/Busch source rows give the trace-density form
    `p(E) = Tr(rho E)` for finite-region effects, including the single-site
    POVM case.
-2. The pre-record tracial-reference source row gives the finite reference
-   `rho_ref = I_d/d`.
+2. The pre-record tracial-reference source row gives the unique finite
+   tracial state `tau = I_d/d`; this row conditionally identifies
+   `rho_ref = tau` for the ideal-record bridge.
 3. For a rank-one projective record `P = |psi><psi|`, the projective update
    gives
 
@@ -130,6 +141,8 @@ This row does not claim:
 - that native apparatus dynamics have been reduced to the ideal projective
   record surface;
 - a repair of every failed gravitational-Hartree Born argument;
+- a closed physical identification of the unique tracial state with the
+  pre-record reference;
 - a numerical-prediction change.
 
 ## Validation

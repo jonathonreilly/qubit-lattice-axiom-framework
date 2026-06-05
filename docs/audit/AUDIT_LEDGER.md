@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 665 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1248 |
+| unaudited | 1247 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 76 |
+| ~~audited_conditional~~ | 77 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1024 |
-| `audited_conditional` | 76 |
+| `audited_conditional` | 77 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1532 |
+| `unaudited` | 1531 |
 
 | claim_type | count |
 |---|---:|
@@ -1211,6 +1211,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9310,6 +9311,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** H_e -> H_cyc := P_cyc(H_e), with P_cyc(X)=(1/3) sum_{k=0}^2 C^k X C^{-k}, has image span_R{B0,B1,B2} and is reconstructed from r0,r1,r2 by H_cyc=(r0/3)B0+(r1/6)B1+(r2/6)B2.  _(class `A`)_
 - **chain closes:** True — The audited scope is a finite-dimensional linear-algebra theorem: cyclic group averaging is a canonical projector, its image is the stated circulant Hermitian basis, and the trace responses reconstruct the projected component. This does not audit the upstream microscopic source law, Koide selector principle, or charged-lepton readout, which the note explicitly leaves open.
 - **rationale:** Within the bounded algebraic scope, the load-bearing step closes: the note states the projector, the basis-level action, the generic coefficient formula, and the response reconstruction, and the cached runner confirms all algebraic identities with PASS=11 FAIL=0. The two D-class checks are only witness/comparator checks for the observed amplitude target and are not needed to prove the compression theorem. This clean verdict must not be read as closing the microscopic source law for (r0,r1,r2), the selector principle, or the final charged-lepton readout, all of which remain explicitly outside this claim scope.
+- **auditor confidence:** high
+
+### `koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02`
+
+- **Note:** [`KOIDE_EMBEDDING_FRAMING_WRITHE_SO2_VS_SPIN_Z2_DECOUPLING_NARROW_NO_GO_NOTE_2026-06-02.md`](../../docs/KOIDE_EMBEDDING_FRAMING_WRITHE_SO2_VS_SPIN_Z2_DECOUPLING_NARROW_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Scoped no-go that abelian SO(2) normal-bundle framing/writhe or flat real U(1)/SO(2) holonomy on the tested UD_2 witnesses supplies the fermionic swap sign.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-166e031892-koide_embedding_framing_writ`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The swap class t is 2-torsion in H_1(UD_2(Gamma); Z), so every integer-valued 1-cocycle and every flat real U(1)/SO(2) connection pairs trivially with t, while the spinor -I sign is not supplied by the SO(2) vector framing.  _(class `C`)_
+- **chain closes:** False — The mathematical argument in the note is coherent on its own terms, but the provided completed runner output is a nonzero import failure rather than the claimed finite certificate. The missing completed run prevents confirming the tested-witness computation claimed in the note.
+- **rationale:** The source code, if run with dependencies, appears to construct the Abrams UD_2 chain complex and test Smith-normal-form torsion, integral cocycle pairings, GF(2) detection, and vector-versus-spinor 2pi rotation facts rather than merely printing constants. However the restricted packet's actual runner output exits before any check because networkx is missing, so the asserted PASS=24 FAIL=0 certificate is not present. The no-go is properly scoped to abelian embedding-framing data and leaves spinor-state and graded-locality routes open, but the finite witness computation still needs a successful cached run or equivalent certificate.
 - **auditor confidence:** high
 
 ### `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30`

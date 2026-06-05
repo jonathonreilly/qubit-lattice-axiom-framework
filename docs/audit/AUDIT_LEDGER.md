@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 623 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1366 |
+| unaudited | 1365 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 948 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1650 |
+| `unaudited` | 1649 |
 
 | claim_type | count |
 |---|---:|
@@ -1102,6 +1102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_trace_vs_center_dissolves_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -6763,6 +6764,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** This is the decisive result. The free modal laws are not the same theory.  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 9 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `grav_decoherence_derived_note`
+
+- **Note:** [`GRAV_DECOHERENCE_DERIVED_NOTE.md`](../../docs/GRAV_DECOHERENCE_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A bounded companion numerical packet for a supplied Penrose-Diosi/BMV gravitational-decoherence model, with lattice Green form-factor diagnostics only.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-171145-602588a628-grav_decoherence_derived_not`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Conditional on supplied mass-source/readout, SI constants, Penrose-Diosi rate law, BMV geometry, and Planck lattice pin, the runner evaluates gamma = (G_N m^2)/(hbar delta_x) * F(delta_x/a) and related BMV diagnostics.  _(class `A`)_
+- **chain closes:** False — The arithmetic and lattice diagnostic checks close once the supplied premises are granted. The restricted packet does not derive the physical mass-source/readout rule, G_N/SI normalization, Penrose-Diosi gamma = E_G/hbar bridge, BMV geometry/cutoff conventions, Planck lattice pin, or the stipulated L^{-1}=G_0 closure identity.
+- **rationale:** The source note correctly scopes itself as a bounded companion and repeatedly marks the physical decoherence bridge and BMV packet as supplied external inputs. The runner performs nontrivial arithmetic and lattice-form-factor diagnostics, but it operates downstream of those premises rather than deriving gravitational decoherence from the framework baseline. Both cited authorities are retained_bounded and contain explicit open physical-response or closure-identification gaps, so retained status does not propagate to an unbounded clean result.
+- **open / conditional deps cited:**
+  - `NEWTON_LAW_DERIVED_NOTE.md`
+  - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
 - **auditor confidence:** high
 
 ### `gravitational_entanglement_note`

@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 269,
-    "high": 299,
+    "high": 298,
     "leaf": 433,
     "medium": 367
   },
@@ -7745,31 +7745,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "grav_decoherence_derived_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "newton_law_derived_note",
-        "gravity_full_self_consistency_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.2,
-      "note_path": "docs/GRAV_DECOHERENCE_DERIVED_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_grav_decoherence_derived.py",
-      "transitive_descendants": 51
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -40758,6 +40733,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 125,
-  "total_pending": 1368
+  "ready_count": 124,
+  "total_pending": 1367
 }

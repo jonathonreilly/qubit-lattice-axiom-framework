@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 176 |
 | **retained_no_go** | 184 |
-| **retained_bounded** | 658 |
+| **retained_bounded** | 659 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1272 |
+| unaudited | 1271 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1010 |
+| `audited_clean` | 1011 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1556 |
+| `unaudited` | 1555 |
 
 | claim_type | count |
 |---|---:|
@@ -401,6 +401,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_native_beta_no_half_attractor_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_qubit_berry_holonomy_probe_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5834,6 +5835,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner genuinely instantiates the C3 cycle matrix and computes traces, eigenvalues, and five cutoff scans; independent diagonalization confirms the HS identities and that the listed maximizers are near b/a=1 rather than 1/sqrt2. That supports the narrow finite-scan statement but not the broader claim that every monotone-decreasing cutoff or native action gives exact r=1/Q=1, since the cutoff scale is implicit and b/a=1 is generally a collapse landmark rather than an exact stationary point for finite smooth cutoffs. The packet also does not derive the Casimir/HK r in [0,1/4] assertion or include the upstream action-form degeneracy theorem referenced in the note.
 - **open / conditional deps cited:**
   - `BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md`
+- **auditor confidence:** high
+
+### `flavor_native_beta_no_half_attractor_note_2026-05-30`
+
+- **Note:** [`FLAVOR_NATIVE_BETA_NO_HALF_ATTRACTOR_NOTE_2026-05-30.md`](../../docs/FLAVOR_NATIVE_BETA_NO_HALF_ATTRACTOR_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic audit only of the supplied path r(t)=tanh^4(t), showing r=1/2 is a finite-time transit value rather than a fixed point of that path.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-224507-168abb53de-flavor_native_beta_no_half_a`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Differentiating r(t)=tanh^4(t) gives beta_r(t)=4 tanh^3(t) sech^2(t), which is positive at the finite time t_*=atanh(2^(-1/4)) where r=1/2.  _(class `A`)_
+- **chain closes:** True — The derivative follows by the chain rule, tanh(t)>0 and sech^2(t)>0 for finite t>0, and solving tanh^4(t)=1/2 gives the stated t_* with positive derivative. No external authority or unprovided physics premise is needed within the stated boundary.
+- **rationale:** The claim is explicitly bounded to the supplied tanh^4 path, and the load-bearing step is a direct algebraic identity plus sign check. The displayed endpoint values, transit time, and beta_r(t_*) expression are consistent with tanh(0)=0, tanh(t)->1, sech^2(t)=1-tanh^2(t), and tanh(t_*)=2^(-1/4). The runner source performs actual evaluations of these algebraic checks and does not import a contested premise or merely print constants.
 - **auditor confidence:** high
 
 ### `flavor_native_double_shift_corner_coupling_note_2026-05-30`

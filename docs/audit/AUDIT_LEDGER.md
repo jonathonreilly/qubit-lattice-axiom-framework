@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 175 |
-| **retained_no_go** | 180 |
+| **retained_no_go** | 181 |
 | **retained_bounded** | 647 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1293 |
+| unaudited | 1292 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 993 |
+| `audited_clean` | 994 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1577 |
+| `unaudited` | 1576 |
 
 | claim_type | count |
 |---|---:|
@@ -184,6 +184,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -2154,6 +2155,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The d_6 arithmetic and completed V0-V4/V4b runner checks are internally consistent. The full scoped claim also needs the Section 3c order-beta^7 GF(3) cycle-space certificate, but the supplied completed stdout is a default maxorder=6 run without V5, and the runner source packet is truncated/source-drifted around later d_7/d_8 claims.
 - **rationale:** The displayed rational arithmetic checks out: 18^5 = 1889568, four shells give d_5 = 1/472392, and four times 7/(12*18^5) gives d_6 = 7/5668704 with ratio d_6/d_5 = 7/12. The runner output supports the order-6 coefficient path through exact Haar-integrator validations, size-6 support exclusion, and two-engine d_6 agreement. However, the source note's second load-bearing claim is the order-7 support reduction, and the provided completed run does not execute the V5 cycle-space certificate needed for that claim. The runner artifact also contains source/output drift about exact d_7 and d_8 values while the note says no d_7 value is certified, so the full bounded theorem should not be marked clean from this packet.
 - **auditor confidence:** medium
+
+### `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30`
+
+- **Note:** [`BETA6_PLAQUETTE_CUMULANT_MOMENT_POSITIVITY_NO_GO_NOTE_2026-05-30.md`](../../docs/BETA6_PLAQUETTE_CUMULANT_MOMENT_POSITIVITY_NO_GO_NOTE_2026-05-30.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Given the displayed coefficients d_5=1/472392, d_6=7/5668704, and d_7=5/17006112, the tail coefficient window cannot be moments of a positive real-axis measure; only that positive-measure/Stieltjes subfamily is ruled out.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-da4e28362e-beta6_plaquette_cumulant_mom`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The 2 by 2 Hankel determinant d_5 d_7 - d_6^2 equals -29/32134205039616, so the displayed coefficient window is not positive semidefinite.  _(class `A`)_
+- **chain closes:** True — Independently rescaling by 18^n gives m_5=4, m_6=42, m_7=180, and m_5 m_7 - m_6^2 = -1044, hence the original determinant is strictly negative. A positive Hamburger moment window requires the corresponding Hankel matrix to be positive semidefinite, and Stieltjes positivity is stronger.
+- **rationale:** The load-bearing step is a direct algebraic identity over the displayed rational inputs, not a renaming, external comparator, or tuned numerical match. The runner hard-codes the input coefficients but also performs the determinant and integer-witness checks; an independent integer-rescaling calculation gives the same negative sign and reduced fraction. The no-go discipline scope is satisfied only for the stated positive-measure real-axis branch, with non-Stieltjes continuations explicitly left open.
+- **auditor confidence:** high
 
 ### `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31`
 

@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_cumulant_moment_positivity.py
+runner_sha256: 48b2aa20913dbe20ef4ea4cc10cdd284f668f777d3242a065c7593cf2eea5f8e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+
+==============================================================================
+Exact connected-coefficient inputs
+==============================================================================
+[PASS] d_5 = 1/472392 = 4/18^5
+       1/472392
+[PASS] d_6 = 7/5668704 = 7/(3*18^5)
+       7/5668704
+[PASS] d_7 = 5/17006112 = 5/(9*18^5)
+       5/17006112
+
+==============================================================================
+Hankel minor
+==============================================================================
+[PASS] d_5*d_7 - d_6^2 = -29/32134205039616
+       -29/32134205039616
+[PASS] minor is strictly negative
+[PASS] sympy Rational reproduces the same negative minor
+       -29/32134205039616
+
+==============================================================================
+Integer witness
+==============================================================================
+[PASS] m_5 = d_5*18^5 = 4
+       4
+[PASS] m_6 = d_6*18^6 = 42
+       42
+[PASS] m_7 = d_7*18^7 = 180
+       180
+[PASS] geometric weights preserve the 2 by 2 sign
+[PASS] m_5*m_7 - m_6^2 = -1044
+       -1044
+[PASS] integer witness is negative
+[PASS] integer witness equals 18^12 times the rational minor
+       -1044
+
+==============================================================================
+Moment-problem consequence
+==============================================================================
+[PASS] Hamburger positive-measure condition fails
+[PASS] Stieltjes positive-measure condition fails a fortiori
+[PASS] alternating-sign convention preserves the offending determinant
+[PASS] scope guard: beta=6 value is not asserted
+
+SCORECARD: PASS=17 FAIL=0
+Verdict: the displayed coefficient window is not Hamburger/Stieltjes.
+Only the positive-measure real-axis continuation family is ruled out.
+
+----- stderr -----
+

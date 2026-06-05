@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 172 |
+| **retained** | 173 |
 | **retained_no_go** | 179 |
 | **retained_bounded** | 647 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1305 |
+| unaudited | 1304 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 988 |
+| `audited_clean` | 989 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1589 |
+| `unaudited` | 1588 |
 
 | claim_type | count |
 |---|---:|
@@ -1030,6 +1030,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `translation_abelian_composition_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -15629,6 +15630,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The runner checks the finite algebra and arithmetic after these conventions are fixed.  _(class `A`)_
 - **chain closes:** True — The bounded certificate closes only after the source's explicit Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula are fixed as standard inputs. It does not derive Yang-Mills topology from Cl(3)/Z3 or close global smooth-bundle/existence theorems.
 - **rationale:** Clean only as a bounded finite certificate, not as a derivation of Yang-Mills topology from Cl(3)/Z3. The note makes the Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula explicit fixed inputs rather than hidden imports. Fresh-context independent checks confirmed *^2=1 and the Bogomolny inequality algebra, the BPST substitution gives 2*pi^2 * 4 = 8*pi^2, and the listed twist examples give k/N as claimed.
+- **auditor confidence:** high
+
+### `translation_abelian_composition_theorem_note_2026-05-02`
+
+- **Note:** [`TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md`](../../docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Unitary abelian group law, adjoint inverse, identity, and finite-quotient faithfulness for tensor-permutation translations on the finite periodic tensor-product Fock space H_Lambda.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-213805-022c07342d-translation_abelian_composit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained tensor-permutation bridge gives T_a T_b = T_{a+b}, T_0 = I, and T_a^{-1} = T_{-a} = T_a^dag, while any nonzero finite-quotient shift sends a one-occupied-site basis vector to a distinct orthonormal basis vector.  _(class `A`)_
+- **chain closes:** True — The cited bridge is retained-grade and directly supplies the tensor-permutation unitarity, group law, identity, and inverse. Commutativity follows from abelian quotient addition, and faithfulness follows from the free translation action on site labels applied to one-site occupation basis states.
+- **rationale:** The load-bearing mathematics is algebraic closure over the retained tensor-product translation bridge plus finite quotient arithmetic. Independent checking of the formulas confirms the composition convention T_a T_b = T_{a+b}, the adjoint inverse, commutativity, and the one-site basis proof of quotient faithfulness. The runner source constructs actual permutation matrices and verifies the same finite identities on a 2x2x2 periodic block; it does not hard-code the contested algebraic conclusions, though its dependency-status test is bookkeeping rather than mathematics.
 - **auditor confidence:** high
 
 ### `triage_no_promotion_note`

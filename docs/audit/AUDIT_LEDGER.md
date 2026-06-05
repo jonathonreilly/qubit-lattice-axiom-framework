@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 670 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1235 |
+| unaudited | 1234 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 78 |
+| ~~audited_conditional~~ | 79 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1035 |
-| `audited_conditional` | 78 |
+| `audited_conditional` | 79 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1519 |
+| `unaudited` | 1518 |
 
 | claim_type | count |
 |---|---:|
@@ -1227,6 +1227,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10134,6 +10135,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
   - `z_equals_6_hierarchy_endpoint_missing_from_live_runner_and_log`
   - `runner_path_not_registered_in_audit_ledger`
   - `asymptotic_or_all_distance_attraction_theorem_not_provided`
+- **auditor confidence:** high
+
+### `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29`
+
+- **Note:** [`LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md`](../../docs/LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite z=2..6 endpoint scan in the specified 3D dense spent-delay harness, checking positivity of centroid shift, near-window probability gain, and mass-side channel bias, including z=6.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-235830-92c32c1e4b-lattice_3d_dense_spent_delay`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner computes detector-centroid shift, near-mass probability gain, and mass-side bias for z=2,3,4,5,6 in the existing dense L=12, W=6, h=1.0 spent-delay harness, with all tested points classified ATTRACTIVE.  _(class `C`)_
+- **chain closes:** False — The displayed table is internally consistent with the bounded sign claim: all five rows are positive on the three printed diagnostics, and the printed centroid log-log fit is consistent with the listed centroid values. However, the primary runner's load-bearing computation is delegated to scripts/lattice_3d_dense_10prop.py, whose source is not included in the helper-source section, so generation, propagation, field construction, and sign classification remain opaque.
+- **rationale:** Stdout alone is not authoritative, and the supplied primary runner imports scripts.lattice_3d_dense_10prop as dense for every load-bearing operation. The restricted packet says no helper imports were detected, but the primary source plainly imports that helper and the note itself identifies it as load-bearing. Without the helper source, the audit cannot verify that the cached PASS is a first-principles dense-lattice computation rather than hard-coded or otherwise imported behavior. This is a runner packet completeness defect, not a refutation of the finite endpoint numbers.
 - **auditor confidence:** high
 
 ### `lattice_3d_dense_window_extension_note`

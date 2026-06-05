@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 181 |
 | **retained_bounded** | 653 |
 | _retained_pending_chain_ | 9 |
-| open_gate | 30 |
-| unaudited | 1288 |
+| open_gate | 31 |
+| unaudited | 1287 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 999 |
+| `audited_clean` | 1000 |
 | `audited_conditional` | 63 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1572 |
+| `unaudited` | 1571 |
 
 | claim_type | count |
 |---|---:|
@@ -203,6 +203,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bound_state_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `boundary_law_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `branch_entanglement_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2438,6 +2439,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The one-hop dependencies are now retained-grade and support the bounded 2-body branch-entanglement interpretation and corrected 3-body W-type interpretation. The current source note and runner output close the scoped robustness claim without relying on full BMV witness status or an external comparator.
 - **rationale:** The clean verdict applies only to the bounded numerical protocol theorem stated in the note. The load-bearing runner output gives positive 2-body delta_S across all audited sweeps and confirms the corrected 3-body W-type, non-GHZ interpretation with tau_3 = 0 and positive bipartite entropies. The prior dependency block is resolved because both cited one-hop dependencies now have retained-grade status. Plot generation failed due to missing matplotlib, but that does not affect the load-bearing numerical checks.
 - **auditor confidence:** medium
+
+### `brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31`
+
+- **Note:** [`BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md`](../../docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite C3 doublet audit of L_3(1,2)=2/9, native angle/eta/Berry/family comparisons against bare 2/9 radians, and a PDG charged-lepton Brannen-angle comparator treated only as observational data.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-220952-a88c2707be-brannen_delta_spectral_asymm`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite angle objects already in the lane do not equal the bare-radian comparator, so the step from the dimensionless rational 2/9 to a bare-radian phase remains a convention/input boundary.  _(class `A`)_
+- **chain closes:** True — The chain closes for the stated open-gate scope: the finite rational 2/9 is supported, while the native angle objects are rational multiples of pi or otherwise fail to output bare 2/9. The missing period-1-radian normalization is explicitly left open rather than imported.
+- **rationale:** The load-bearing boundary is an algebraic comparison over retained-grade inputs, not a claimed derivation of delta = 2/9 rad. The PDG mass reduction is a class D comparator, but the source note marks it as observational and not a proof premise, so it does not make the conclusion a numerical-match claim. The runner actually computes the finite C3 weight, native angle comparisons, eta/Berry tests, and family comparison; these support only the narrow open-gate conclusion stated in the note.
+- **auditor confidence:** high
 
 ### `broad_gravity_derivation_note`
 

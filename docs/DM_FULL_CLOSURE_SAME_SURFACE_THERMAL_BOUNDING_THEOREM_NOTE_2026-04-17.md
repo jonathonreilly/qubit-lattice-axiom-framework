@@ -1,6 +1,8 @@
 # DM Full Closure Same-Surface Thermal Bounding Theorem
 
-**Status:** bounded-support supplied-premise interval theorem
+**Claim type:** bounded support note
+**Status:** conditional supplied-premise interval support
+**Type:** conditional / support
 **Date:** 2026-04-17  
 **Date of scope repair:** 2026-05-30
 **Branch:** `codex/dm-thermal-review-2026-04-17`  

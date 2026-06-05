@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 171 |
+| **retained** | 172 |
 | **retained_no_go** | 179 |
 | **retained_bounded** | 647 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1307 |
+| unaudited | 1306 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 987 |
+| `audited_clean` | 988 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1591 |
+| `unaudited` | 1590 |
 
 | claim_type | count |
 |---|---:|
@@ -820,6 +820,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
@@ -12231,6 +12232,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Net verdict: design-note records three candidate primitives; none is a clean single-primitive closure on the existing physical Cl(3)/Z^3 inputs.  _(class `A`)_
 - **chain closes:** True — The restricted packet supports the scoped open-gate claim: the note repeatedly disclaims theorem or primitive promotion, treats the three proposals as candidate imports, and states the same net no-closure conclusion in the comparative table, net design conclusion, and honest verdict. No direct ledger dependencies are listed, and the sibling probes are expressly contextual rather than load-bearing dependencies.
 - **rationale:** The audited claim is not that SM LH/RH content has been derived, but that the note honestly records three candidate substrate-side primitives and preserves the open-gate boundary. Within that scope the chain closes: P-LH-1 is conditional on importing NCG algebra/order-one structure, P-LH-2 is identified as circular/minimality-failing, and P-LH-3 is identified as insufficient alone. The runner output is consistent with this scoped status and reports 53 passing structural/procedural checks with no external comparator or numerical tuning.
+- **auditor confidence:** high
+
+### `q_integer_spectrum_theorem_note_2026-05-02`
+
+- **Note:** [`Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For any finite tensor product of N one-qubit local algebras with one chosen rank-one projection per site, Q_total = sum_x n_x has spectrum {0,...,N} with multiplicity C(N,k).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-213456-be1c5312f8-q_integer_spectrum_theorem_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since the embedded rank-one projections n_x commute on distinct tensor factors, they admit a joint binary eigenbasis and Q_total has eigenvalue sum_x nu_x on each binary string.  _(class `A`)_
+- **chain closes:** True — The Quantum axiom supplies A_x ~= M_2(C), and the remaining argument is finite-dimensional spectral algebra on the stipulated finite tensor product. Rank-one projections have eigenvalues 0 and 1, tensor embeddings commute, and binary-string counting gives the stated spectrum and multiplicities.
+- **rationale:** The proof does not identify the occupation count with physical charge or import a fitted numerical target. The only upstream authority is an accepted axiom premise supplying the one-site qubit algebra, and the audited conclusion follows by standard finite-dimensional linear algebra plus binomial counting. The runner source genuinely constructs representative matrices and tensor embeddings for N=4, but the theorem itself is established analytically rather than by relying on that finite sample.
 - **auditor confidence:** high
 
 ### `qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02`

@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yt_strict_wz_neutral_carrier_response_dep_resolution_2026_06_04.py
+runner_sha256: a7f0b1cbfcf0bb21f754dbfea1f35ea9fec517ab7906fa6cac8429cf0967f322
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.07
+status: ok
+----- stdout -----
+========================================================================
+YT strict W/Z neutral-carrier response dependency-surface hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md
+Parent runner: scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py
+Scope: meta evidence only; no theorem claim, no audit verdict, no direct status change.
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_summary_present
+PASS parent_runner_pass_count_forty_seven :: pass_count=47
+PASS parent_runner_fail_count_zero :: fail_count=0
+PASS parent_runner_transcript_contains_neutral_ray
+PASS parent_runner_transcript_contains_q_neutral_tangent
+PASS parent_runner_transcript_contains_wz_ratio_jacobian_cancel
+PASS parent_runner_transcript_contains_yt_closure_not_allowed
+PASS parent_runner_transcript_contains_top_response_absent
+PASS algebraic_blocks_no_grade_field_token_0
+PASS algebraic_blocks_no_grade_field_token_1
+PASS algebraic_blocks_no_grade_field_token_2
+PASS algebraic_blocks_no_grade_field_token_3
+PASS algebraic_blocks_no_grade_field_token_4
+PASS algebraic_blocks_no_grade_field_token_5
+PASS algebraic_blocks_no_grade_field_token_6
+PASS weak_dependency_still_declared
+PASS weak_dependency_still_pending
+PASS companion_does_not_claim_dep_closure
+PASS neutral_ray_projection_holds
+PASS neutral_tangent_projection_holds
+PASS neutral_tangent_q_charge_zero
+PASS wz_response_ratio_matches_expected
+PASS parent_note_disclaims_top_closure
+PASS parent_note_review_boundary_present
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_direct_status_change
+PASS companion_keeps_dependency_pending
+PASS companion_disclaims_physical_closure
+========================================================================
+SUMMARY: PASS=30 FAIL=0
+========================================================================
+
+----- stderr -----
+

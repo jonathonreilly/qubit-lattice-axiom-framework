@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 179 |
-| **retained_bounded** | 641 |
+| **retained_bounded** | 642 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1313 |
+| unaudited | 1312 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 981 |
+| `audited_clean` | 982 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1597 |
+| `unaudited` | 1596 |
 
 | claim_type | count |
 |---|---:|
@@ -383,6 +383,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_qubit_berry_holonomy_probe_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5416,6 +5417,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The symmetric sum of double bit flips on the Hamming-weight-1 triplet projects exactly to J-I, while single bit flips project to zero.  _(class `C`)_
 - **chain closes:** True — Direct finite enumeration of the eight cube corners shows that single flips leave the Hamming-weight-1 subspace, while the three double flips give the three off-diagonal edges and sum to J-I. The spectrum and Q formula then follow algebraically from the eigenvalues 2,-1,-1 of J-I.
 - **rationale:** The runner constructs the cube corners, shift matrices, and projection matrix directly, then checks the stated projection identities rather than importing another note or an external value. Independent formula inventory confirms the displayed projection, spectrum, and Koide-ratio identities under the note's definitions. The note stays within its bounded claim and explicitly does not claim to derive b/a=1/sqrt(2) or an observed-mass fit.
+- **auditor confidence:** high
+
+### `flavor_operator_realization_local_density_2026-05-31`
+
+- **Note:** [`FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md`](../../docs/FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite L=4,6 Kawamoto-Smit operator certificate: the raw cyclic axis permutation is repaired by a site-local Z2 gauge to an order-three symmetry commuting with D, and its fixed-site transverse tangent weights give local density 2/9; the physical single-summand readout is not audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-190731-7546b981e2-flavor_operator_realization_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For U_phys = S P, the finite staggered operator satisfies U_phys D U_phys^T = D and U_phys^3 = I, and the fixed-site tangent action splits as a singlet plus transverse C3 weights (1,2), giving L_3(1,2)=2/9.  _(class `C`)_
+- **chain closes:** True — Independently, the cyclic permutation F(x,y,z)=(y,z,x) changes the KS phases by the coboundary s(x,y,z)=(-1)^{z(x+y)}, so S P conjugates D to itself and (SP)^3=I; on diagonal fixed sites s=+1, leaving the tangent 3-cycle with transverse eigenvalues omega and omega^2. The density calculation gives (1/3)(1/3+1/3)=2/9, while the physical observable identification is explicitly outside scope.
+- **rationale:** All cited authorities are retained-grade on the portions used, and the runner source constructs the finite KS matrices, coordinate permutation, graph-solved sign gauge, spectra, and exact symbolic density rather than merely printing a pass. The density helper calls the (1,2) weights explicitly, but a separate symbolic tangent computation derives the same transverse weights from the actual cyclic action, and the independent coboundary check shows the gauge correction does not alter the fixed-site tangent or add a fixed-site sign. The result is clean only as the bounded L=4,6 operator-side certificate; the charged-lepton readout bridge is excluded rather than imported.
 - **auditor confidence:** high
 
 ### `flavor_q1_default_rests_on_prr_note_2026-05-30`

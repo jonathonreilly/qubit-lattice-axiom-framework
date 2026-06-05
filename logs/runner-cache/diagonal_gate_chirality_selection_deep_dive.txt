@@ -1,0 +1,116 @@
+======================================================================
+Part A. Operator-class decomposition of Hermitian H on R^3
+======================================================================
+[PASS] A: Sym(3,R) has dimension 6
+[PASS] A: circulant-symmetric subspace (real b) is 2-dim  (rank=2; basis {I, R+R^2})
+[PASS] A: circulant-symmetric basis element is circulant
+[PASS] A: circulant-symmetric basis element is circulant
+[PASS] A: Brannen circulant generator is circulant
+[PASS] A: Brannen circulant generator is circulant
+[PASS] A: Brannen circulant generator is circulant
+[PASS] A: Hermitian circulant Brannen family is 3-dim over R  (rank=3; basis {I, C+C^2, i(C-C^2)})
+[PASS] A: non-circulant symmetric complement is 4-dim (6 - 2)  (this is where a chirality grading can live)
+  Summary: Sym(3,R)=6 = circulant-sym(2) + non-circulant(4).
+           Brannen-Hermitian-circulant = 3 over R (adds the i(C-C^2) phase dir).
+
+======================================================================
+Part B. No-go re-confirmation (circulant domain) + complementarity
+======================================================================
+[PASS] B: Gamma_chi = (2/3)J - I has spectrum {+1,-1,-1}  ([-1.0, -1.0, 1.0])
+[PASS] B: Gamma_chi is itself circulant ([Gamma_chi, R] = 0)  (this is WHY circulant H commutes with it => anticomm reduces to product)
+[PASS] B: circulant (C3-equivariant) H cannot anticommute with Gamma_chi (NO-GO holds)  (min |{H,Gc}|/|H| = 2.0000 over 5000 circulant H)
+[PASS] B: Hermitian {H, Gamma_chi}=0 family is exactly 2-dim  (dim=2 (matches L4 theorem's sum-h=0 family))
+[PASS] B: every Gamma_chi-anticommuting H is NON-circulant (complementary to no-go)  (max circulant overlap = 2.81e-16)
+  => no-go (circulant cannot anticommute) and L4 (anticommuting => Q=2/3)
+     are two faces of one fact: the Q=2/3 operators are exactly the
+     non-circulant anticommuting ones; circulant ones never anticommute.
+
+======================================================================
+Part C. Chirality availability on the wider face-diagonal class (scout S3)
+======================================================================
+[PASS] C: single face-diagonal H admits a nontrivial Z2 grading with {H,G}=0  (grading = diag(1, -1, 1))
+[PASS] C: that grading squares to I (Z2 chirality)
+[PASS] C: that H is NOT C3-equivariant ([H,R] != 0)  (|[H,R]| = 2.000)
+[PASS] C: single face-diagonal H is non-circulant (outside no-go scope)
+  => the chirality grading is AVAILABLE on the face-diagonal class.
+     (This is exactly the foundation scout S3, re-verified.)
+
+======================================================================
+Part D. The readout subtlety: available grading != Gamma_chi
+======================================================================
+[PASS] D: the available grading diag(1,-1,1) is NOT Gamma_chi  (different operator, different spectrum)
+[PASS] D: diag(1,-1,1) has spectrum {+1,+1,-1}, NOT Gamma_chi's {+1,-1,-1}
+[PASS] D: single face-diagonal H does NOT anticommute with the canonical Gamma_chi  (|{H,Gamma_chi}|/|H| = 1.7638)
+[PASS] D: the nonzero eigenvector of the face-diagonal H has Koide Q = 1/2 (NOT 2/3)  (finite eigenvector Q values = [0.5])
+[PASS] D: every nonzero Gamma_chi-anticommuting (L4) H has nonzero diagonal content  (diag(H)=2h/3; pure-off-diagonal => h=0 => H=0)
+[PASS] D: pure face-diagonal couplings are off-diagonal, so none is in the L4 family  (no nonzero face-diagonal coupling anticommutes with Gamma_chi)
+  => the grading available from face-diagonals gives the WRONG Koide value
+     (1/2) via the eigenvector readout; the RIGHT value (2/3) needs Gamma_chi,
+     which no pure face-diagonal coupling can anticommute with.
+
+======================================================================
+Part E. The two Q=2/3 operators are mutually exclusive
+======================================================================
+[PASS] E: Brannen r=1/2 operator Y is circulant
+[PASS] E: Brannen Y COMMUTES with Gamma_chi (carries NO chirality)  (comm-norm = 0.00e+00)
+[PASS] E: Brannen Y does NOT anticommute with Gamma_chi  (anti-norm = 2.0000)
+[PASS] E: Brannen r=1/2 eigenvalue readout gives Koide Q = 2/3  (Q_eig = 0.666667, spectrum [0.2929, 0.2929, 2.4142])
+[PASS] E: L4 chirality operator is NON-circulant
+[PASS] E: L4 operator ANTICOMMUTES with Gamma_chi  (anti-norm = 1.01e-16)
+[PASS] E: L4 nonzero eigenvectors have Koide Q = 2/3 (expectation readout)  (eigenvector Q = [0.6667, 0.6667])
+[PASS] E: the two Q=2/3 operators are INCOMPATIBLE (one commutes, one anticommutes with the same Gamma_chi)
+  => 'Q=2/3 via r=1/2' and 'Q=2/3 via chirality' are DIFFERENT operators in
+     DIFFERENT classes. r=1/2 needs no chirality; chirality needs non-circulant.
+     Face-diagonal supplies r=1/2 (circulant, scout S4) but that is NOT the
+     chirality-admitting operator.
+
+======================================================================
+Part F. Four selection principles for the face-diagonal mass operator
+======================================================================
+  principle                      circ  Z2grad           antiGc  eigvecQ    eigvalQ 
+  P1 C3-symmetric sum            True  None               2.000 0.333      inf     
+  P2 single direction            False (1, -1, 1)         1.764 0.500      inf     
+  P3 parity-graded (2 pairs)     False (1, -1, 1)         1.886 11.657,0.343 inf     
+  S4 Brannen r=1/2 circulant     True  None               2.000 0.333      0.6667  
+[PASS] F-P1: C3-symmetric sum is circulant (back inside no-go scope)
+[PASS] F-P1: C3-symmetric sum commutes with Gamma_chi (no chirality)
+[PASS] F-P2: single direction is non-circulant (chirality available)
+[PASS] F-P2: single direction does NOT anticommute with Gamma_chi (Q!=2/3 route)
+[PASS] F-P3: parity-graded combo admits a Z2 grading but it is not Gamma_chi
+[PASS] F-P4: weak-parity epsilon=(-1)^(x+y+z) is UNIFORM on the hw=1 orbit  (epsilon on orbit = [-1, -1, -1])
+[PASS] F-P4: restricted to the generation triplet, weak-parity grading is proportional to I  (so it commutes with everything; cannot be a nontrivial chirality grading)
+[PASS] F-P4: the PR#2685 weak-parity grading does NOT transport to a generation-factor Gamma  ([G_weak, anything] = 0 since G_weak ~ I on the triplet)
+
+  --- forcing analysis ---
+[PASS] F: there are 12 face-diagonals per cube (O_h orbit)
+[PASS] F: cubic O_h permutes the 12 face-diagonal directions transitively (none preferred)  (C3/S3-breaking single-direction selection is a CHOICE, not lattice-forced)
+[PASS] F: body-diagonal (dist^2=3) does NOT connect the generation orbit (irrelevant to gate)  (all hw=1 pairs are face-diagonal (dist^2=2))
+[PASS] F: C3-symmetric (count-giving) operator is circulant => forbids chirality splitting
+[PASS] F: chirality-admitting operator must BREAK C3 (non-circulant)
+  => SAME counting-vs-splitting tension as prior attacks; face-diagonal relocates
+     it onto the hw=1 orbit but does NOT dissolve it. No native principle forces
+     the non-circulant selection.
+
+======================================================================
+VERDICT: AVAILABLE-NOT-FORCED
+======================================================================
+Face-diagonal adjacency widens the generation-factor operator class beyond
+the no-go's circulant scope, making a Z2 chirality grading AVAILABLE (scout
+S3, re-verified). But:
+  (1) no framework-native principle FORCES the non-circulant selection
+      (O_h permutes face-diagonals transitively; C3-symmetry selects circulant;
+       weak-parity is uniform on the generation orbit => -I, cannot grade it);
+  (2) the grading actually available (diag(1,-1,1)) is NOT the canonical
+      Gamma_chi the Koide Q=2/3 readout requires; its eigenvector gives Q=1/2;
+  (3) the operator that DOES give Brannen Q=2/3 (r=1/2, scout S4) is circulant,
+      COMMUTES with Gamma_chi, and carries no chirality at all;
+  (4) the counting-vs-splitting tension is unchanged: the C3 orbit giving the
+      generation count (3) forbids the chirality splitting.
+The selection gate is the SAME C3-orbit-splitting gate as prior attacks,
+precisely RELOCATED onto the face-diagonal class -- NOT closed. The retained
+no-go remains correct on its circulant scope; this finding is that the class
+is wider and the SELECTION remains open.
+
+======================================================================
+SUMMARY: PASS=45 FAIL=0
+======================================================================

@@ -2,6 +2,8 @@
 
 This block exposes the full runner packet for `dimension_selection_note`.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2684
+
 Key results:
 
 - Parent repair cache: `SUMMARY: PASS=26 FAIL=0`

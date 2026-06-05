@@ -21,4 +21,5 @@ result_summary:
   parent_repair_cache: "SUMMARY: PASS=26 FAIL=0"
   finite_k_bridge_cache: "SUMMARY: PASS=56 FAIL=0"
   source_manifest: "SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=55 FAIL=0"
-next_exact_action: "Open review PR; independent auditor decides whether this retires the runner-artifact packet gap."
+review_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2684"
+next_exact_action: "Independent auditor decides whether this retires the runner-artifact packet gap."

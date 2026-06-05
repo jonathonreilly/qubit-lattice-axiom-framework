@@ -42,13 +42,13 @@ section("Part 1: note structure and scope discipline")
 note_text = NOTE_PATH.read_text()
 required = [
     "Taste-Scalar Fermion Coleman-Weinberg Isotropy",
-    "Type:** positive_theorem",
+    "Type:** bounded_theorem",
     "δ_{ij} · C(v)",
     "axis-aligned point",
     "8 · δ_{ij}",
     "out of scope",
     "class (A)",
-    "target_claim_type: positive_theorem",
+    "target_claim_type: bounded_theorem",
 ]
 for s in required:
     check(f"contains: {s!r}", s in note_text)
@@ -170,7 +170,7 @@ check("for f(x) = x at v = 1: H_ii = 16 = 8 · 2 (closure factor)",
 
 
 # ============================================================================
-section("Part 7: self-contained audit row remains unaudited before audit")
+section("Part 7: audit row has restored dependencies and remains unaudited")
 # ============================================================================
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 ledger = json.loads(LEDGER.read_text())
@@ -181,8 +181,12 @@ check(f"{CLAIM_ID} seeded by audit pipeline",
       detail="run docs/audit/scripts/run_pipeline.sh after editing the note")
 if claim_row is not None:
     claim_deps = set(claim_row.get("deps", []))
-    check(f"{CLAIM_ID} has no declared dependency edges",
-          not claim_deps,
+    expected_deps = {
+        "minimal_axioms_2026-05-03",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+    }
+    check(f"{CLAIM_ID} has restored dependency edges",
+          expected_deps.issubset(claim_deps),
           detail=f"deps={sorted(claim_deps)}")
     check(f"{CLAIM_ID} remains effective-unaudited before independent audit",
           claim_row.get("effective_status") == "unaudited",

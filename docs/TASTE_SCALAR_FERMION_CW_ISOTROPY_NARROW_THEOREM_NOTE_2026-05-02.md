@@ -33,12 +33,16 @@ The narrow theorem **does not** claim:
 
 | Input | Status | Role |
 |---|---|---|
-| (none, formally) | — | The theorem is purely algebraic on the binary product space `ℂ⁸ = (ℂ²)^{⊗3}` with `σ_x` shift operators — no external authority is load-bearing. |
+| Binary product algebra `ℂ⁸ = (ℂ²)^{⊗3}` with `σ_x` shift operators | internal algebra setup | Load-bearing algebraic surface for the isotropy identity. |
+| [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) | open gate | Physical taste/fermion context dependency; not used to prove the binary orthogonality identity. |
+| [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | axiom memo | Historical axiom-set context dependency for the row; not a bounded-status source. |
 
 The note operates on the abstract Cl(3)/Z³ taste-cube structure. While
 this structure is the framework's setup, the load-bearing step does not
-depend on any specific cited authority — it's an algebraic identity on
-binary products of σ_x operators.
+depend on the physical realization gate — it is an algebraic identity on
+binary products of σ_x operators. The dependency edges above record the
+physical framing and historical axiom context so graph consumers do not
+treat the row as a no-deps theorem.
 
 ## Load-bearing step (class A)
 
@@ -72,7 +76,7 @@ f-derivatives.   ∎
 ```
 
 This is class (A) — algebraic identity on binary product structure.
-No external authority is load-bearing.
+No external source is load-bearing.
 
 ## Verification
 
@@ -106,11 +110,12 @@ proposed_load_bearing_step_class: A
 audit_required_before_effective_retained: true
 ```
 
-Audit status is set only by the independent audit lane. This note is safe to
-land as an unaudited, graph-visible bounded-theorem candidate with no
-declared dependency edges because the load-bearing identity is self-contained
-algebra on binary products. Retained-bounded effective status requires
-independent audit of this row.
+Audit status is set only by independent audit handling. This note is safe to
+land as a graph-visible bounded-theorem candidate whose physical framing has
+the two declared dependency edges above. The load-bearing identity is
+self-contained algebra on binary products, but the graph must keep the
+staggered-Dirac realization gate and historical axiom memo visible.
+Independent audit handling decides any later effective row state.
 
 ## What this theorem closes
 

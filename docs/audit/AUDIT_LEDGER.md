@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 174 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 646 |
+| **retained_bounded** | 647 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1298 |
+| unaudited | 1297 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 990 |
+| `audited_clean` | 991 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1582 |
+| `unaudited` | 1581 |
 
 | claim_type | count |
 |---|---:|
@@ -601,6 +601,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q23_k0_real_block_equivalence_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -8895,6 +8896,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With E_+ = 3a^2 and E_perp = 6|b|^2, Q = 1/3 + (2/3)|b|^2/a^2, so equal-block power p_+ = 1/2 gives Q = 2/3 while dimension/Plancherel power p_+ = 1/3 gives Q = 1.  _(class `A`)_
 - **chain closes:** True — The audited bounded claim closes from retained algebraic Koide recastings plus the retained_bounded C_3-equivariant anticommuting disjointness result. The physical selection of the equal-block rule remains an explicitly open downstream bridge and is not claimed here.
 - **rationale:** The displayed Q formulas, energy ratios, and table entries check out under the unnormalized character convention E_+=3a^2 and E_perp=6|b|^2, equivalent to the cited normalized Fourier statements. The runner source performs finite matrix and scalar algebra checks and does not hard-code or import a contested physical Koide selection as a premise. Because the audited scope is only the bounded algebra/frontier localization and not charged-lepton Koide closure, the retained and retained_bounded inputs suffice.
+- **auditor confidence:** high
+
+### `koide_q23_k0_real_block_equivalence_note_2026-05-30`
+
+- **Note:** [`KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic comparison of two measure conventions on the Z_3 generation carrier, plus the check that the qubit pseudoscalar does not select between them.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-194502-64d5ca3b91-koide_q23_k0_real_block_equi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With Q=(1+2r)/3, E_+=3a^2 and E_perp=6|b|^2, equal real-block weighting gives E_+=E_perp so r=1/2 and Q=2/3, while dimension weighting gives r=1 and Q=1; the Cl(3) pseudoscalar acts as iI_3 on generations rather than as the doublet Schur complex structure.  _(class `A`)_
+- **chain closes:** True — The FS/Wedderburn decomposition R[Z3]=R+C versus C[Z3]=C^3, together with the stated Q and block-energy formulas, algebraically yields the two claimed values. The Pauli pseudoscalar and scalar-on-generation comparison also closes as a finite-dimensional matrix identity.
+- **rationale:** Independent formula checks confirm the FS indicators, K0 ranks, r=1/2 versus r=1, Q values, Jcs^2=-P_doublet, and the e^{3i alpha}=1 symmetry restriction. The runner source performs direct symbolic and finite-matrix checks and imports no external comparator or fitted value. It encodes the two measure conventions, but the source claim is only an equivalence comparison and explicitly leaves physical measure selection open.
 - **auditor confidence:** high
 
 ### `koide_q23_oh_covariance_nogo_note_2026-04-22`

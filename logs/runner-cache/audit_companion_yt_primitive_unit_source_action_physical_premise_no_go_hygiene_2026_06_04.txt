@@ -1,0 +1,273 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yt_primitive_unit_source_action_physical_premise_no_go_hygiene_2026_06_04.py
+runner_sha256: 557d4ce08d6ec556e02d9a93d191edc79e75b746fda6672b61521de4ac6547c5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
+----- stdout -----
+========================================================================
+Audit-companion runner: yt_primitive_unit_source_action_physical_premise_no_go
+deps-changed hygiene companion (2026-06-04)
+========================================================================
+
+========================================================================
+Block 1: Parent runner re-execution
+========================================================================
+  PASS parent runner emitted SUMMARY line :: PASS/FAIL line present
+  PASS parent runner PASS == 51 :: observed PASS=51
+  PASS parent runner FAIL == 0 :: observed FAIL=0
+
+========================================================================
+Block 2: Exact lambda-counterfamily algebra
+========================================================================
+  PASS y_33(0.25) = lambda/sqrt(6) :: y_33=0.102062, lambda/sqrt(6)=0.102062
+  PASS signed-record readout ray unchanged at lambda=0.25
+  PASS S_6-democratic Q_L direction unchanged at lambda=0.25
+  PASS LSP component probability 1/6 unchanged at lambda=0.25
+  PASS normalized top trilinear tensor unchanged at lambda=0.25
+  PASS y_33(0.5) = lambda/sqrt(6) :: y_33=0.204124, lambda/sqrt(6)=0.204124
+  PASS signed-record readout ray unchanged at lambda=0.5
+  PASS S_6-democratic Q_L direction unchanged at lambda=0.5
+  PASS LSP component probability 1/6 unchanged at lambda=0.5
+  PASS normalized top trilinear tensor unchanged at lambda=0.5
+  PASS y_33(1) = lambda/sqrt(6) :: y_33=0.408248, lambda/sqrt(6)=0.408248
+  PASS signed-record readout ray unchanged at lambda=1
+  PASS S_6-democratic Q_L direction unchanged at lambda=1
+  PASS LSP component probability 1/6 unchanged at lambda=1
+  PASS normalized top trilinear tensor unchanged at lambda=1
+  PASS y_33(1.41421) = lambda/sqrt(6) :: y_33=0.57735, lambda/sqrt(6)=0.57735
+  PASS signed-record readout ray unchanged at lambda=1.41421
+  PASS S_6-democratic Q_L direction unchanged at lambda=1.41421
+  PASS LSP component probability 1/6 unchanged at lambda=1.41421
+  PASS normalized top trilinear tensor unchanged at lambda=1.41421
+  PASS y_33(2) = lambda/sqrt(6) :: y_33=0.816497, lambda/sqrt(6)=0.816497
+  PASS signed-record readout ray unchanged at lambda=2
+  PASS S_6-democratic Q_L direction unchanged at lambda=2
+  PASS LSP component probability 1/6 unchanged at lambda=2
+  PASS normalized top trilinear tensor unchanged at lambda=2
+  PASS y_33(3) = lambda/sqrt(6) :: y_33=1.22474, lambda/sqrt(6)=1.22474
+  PASS signed-record readout ray unchanged at lambda=3
+  PASS S_6-democratic Q_L direction unchanged at lambda=3
+  PASS LSP component probability 1/6 unchanged at lambda=3
+  PASS normalized top trilinear tensor unchanged at lambda=3
+  PASS y_33(0.408248) = lambda/sqrt(6) :: y_33=0.166667, lambda/sqrt(6)=0.166667
+  PASS signed-record readout ray unchanged at lambda=0.408248
+  PASS S_6-democratic Q_L direction unchanged at lambda=0.408248
+  PASS LSP component probability 1/6 unchanged at lambda=0.408248
+  PASS normalized top trilinear tensor unchanged at lambda=0.408248
+  PASS y_33(6) = lambda/sqrt(6) :: y_33=2.44949, lambda/sqrt(6)=2.44949
+  PASS signed-record readout ray unchanged at lambda=6
+  PASS S_6-democratic Q_L direction unchanged at lambda=6
+  PASS LSP component probability 1/6 unchanged at lambda=6
+  PASS normalized top trilinear tensor unchanged at lambda=6
+
+========================================================================
+Block 3: Eight-structure preservation under lambda-scaling
+========================================================================
+  PASS (1) qubit local algebra preserved at lambda=0.25
+  PASS (2) Z^3 locality preserved at lambda=0.25
+  PASS (3) signed-record projective readout ray preserved at lambda=0.25
+  PASS (4) S_6-democratic Q_L direction preserved at lambda=0.25
+  PASS (5) LSP component probability 1/6 preserved at lambda=0.25
+  PASS (6) normalized one-Higgs top trilinear tensor preserved at lambda=0.25
+  PASS (7) W/Z denominator rows preserved at lambda=0.25
+  PASS (8) symbolic top-row form preserved at lambda=0.25
+  PASS (1) qubit local algebra preserved at lambda=0.5
+  PASS (2) Z^3 locality preserved at lambda=0.5
+  PASS (3) signed-record projective readout ray preserved at lambda=0.5
+  PASS (4) S_6-democratic Q_L direction preserved at lambda=0.5
+  PASS (5) LSP component probability 1/6 preserved at lambda=0.5
+  PASS (6) normalized one-Higgs top trilinear tensor preserved at lambda=0.5
+  PASS (7) W/Z denominator rows preserved at lambda=0.5
+  PASS (8) symbolic top-row form preserved at lambda=0.5
+  PASS (1) qubit local algebra preserved at lambda=1
+  PASS (2) Z^3 locality preserved at lambda=1
+  PASS (3) signed-record projective readout ray preserved at lambda=1
+  PASS (4) S_6-democratic Q_L direction preserved at lambda=1
+  PASS (5) LSP component probability 1/6 preserved at lambda=1
+  PASS (6) normalized one-Higgs top trilinear tensor preserved at lambda=1
+  PASS (7) W/Z denominator rows preserved at lambda=1
+  PASS (8) symbolic top-row form preserved at lambda=1
+  PASS (1) qubit local algebra preserved at lambda=1.41421
+  PASS (2) Z^3 locality preserved at lambda=1.41421
+  PASS (3) signed-record projective readout ray preserved at lambda=1.41421
+  PASS (4) S_6-democratic Q_L direction preserved at lambda=1.41421
+  PASS (5) LSP component probability 1/6 preserved at lambda=1.41421
+  PASS (6) normalized one-Higgs top trilinear tensor preserved at lambda=1.41421
+  PASS (7) W/Z denominator rows preserved at lambda=1.41421
+  PASS (8) symbolic top-row form preserved at lambda=1.41421
+  PASS (1) qubit local algebra preserved at lambda=2
+  PASS (2) Z^3 locality preserved at lambda=2
+  PASS (3) signed-record projective readout ray preserved at lambda=2
+  PASS (4) S_6-democratic Q_L direction preserved at lambda=2
+  PASS (5) LSP component probability 1/6 preserved at lambda=2
+  PASS (6) normalized one-Higgs top trilinear tensor preserved at lambda=2
+  PASS (7) W/Z denominator rows preserved at lambda=2
+  PASS (8) symbolic top-row form preserved at lambda=2
+  PASS (1) qubit local algebra preserved at lambda=3
+  PASS (2) Z^3 locality preserved at lambda=3
+  PASS (3) signed-record projective readout ray preserved at lambda=3
+  PASS (4) S_6-democratic Q_L direction preserved at lambda=3
+  PASS (5) LSP component probability 1/6 preserved at lambda=3
+  PASS (6) normalized one-Higgs top trilinear tensor preserved at lambda=3
+  PASS (7) W/Z denominator rows preserved at lambda=3
+  PASS (8) symbolic top-row form preserved at lambda=3
+  PASS (1) qubit local algebra preserved at lambda=0.408248
+  PASS (2) Z^3 locality preserved at lambda=0.408248
+  PASS (3) signed-record projective readout ray preserved at lambda=0.408248
+  PASS (4) S_6-democratic Q_L direction preserved at lambda=0.408248
+  PASS (5) LSP component probability 1/6 preserved at lambda=0.408248
+  PASS (6) normalized one-Higgs top trilinear tensor preserved at lambda=0.408248
+  PASS (7) W/Z denominator rows preserved at lambda=0.408248
+  PASS (8) symbolic top-row form preserved at lambda=0.408248
+  PASS (1) qubit local algebra preserved at lambda=6
+  PASS (2) Z^3 locality preserved at lambda=6
+  PASS (3) signed-record projective readout ray preserved at lambda=6
+  PASS (4) S_6-democratic Q_L direction preserved at lambda=6
+  PASS (5) LSP component probability 1/6 preserved at lambda=6
+  PASS (6) normalized one-Higgs top trilinear tensor preserved at lambda=6
+  PASS (7) W/Z denominator rows preserved at lambda=6
+  PASS (8) symbolic top-row form preserved at lambda=6
+
+========================================================================
+Block 4: lambda=1 is not forced by any preserved structure
+========================================================================
+  PASS (3) readout ray identical across full lambda test set
+  PASS (3) lambda=1 in consistency set
+  PASS (3) lambda != 1 also in consistency set
+  PASS (4) Q_L direction identical across full lambda test set
+  PASS (5) LSP probability identical across full lambda test set
+  PASS (6) normalized top trilinear tensor identical across full lambda test set
+  PASS y_33(lambda) takes >= 2 distinct values across test set :: unique y_33 values: 8
+
+========================================================================
+Block 5: Record axiom counterfactual on lambda-counterfamily
+========================================================================
+  PASS counterfactual: y_vals identical under both Record scopes
+  PASS counterfactual: readout_ray_at_1 identical under both Record scopes
+  PASS counterfactual: qL_at_1 identical under both Record scopes
+  PASS counterfactual: ttt_at_1 identical under both Record scopes
+  PASS counterfactual: LSP probability 1/6 identical under both Record scopes
+  PASS counterfactual: both outputs are tagged with their scope
+
+========================================================================
+Block 6: Record additivity is a separate scalar functional
+========================================================================
+  PASS toy R_1, R_2 are disjoint
+  PASS Record additivity: I(R_1 sqcup R_2) = I(R_1) + I(R_2) (disjoint case) :: I(R1∪R2)=5, I(R1)+I(R2)=5
+  PASS Record sub-additivity: I(R_3 cup R_4) <= I(R_3) + I(R_4) (non-disjoint)
+  PASS Record axiom baseline: I(empty) = 0
+  PASS lambda-rescaling operates on a real scalar (y_33), Record on a set (I(R))
+  PASS y_33(lambda) and I(R) have different range types (float vs int) and disjoint domains :: float vs int; action-source tangent vs record-collection set
+  PASS y_33(lambda) unchanged whether Record additivity is asserted or not
+
+========================================================================
+Block 7: Record axiom scope-limit token check
+========================================================================
+  PASS MINIMAL_AXIOMS_2026-06-04.md contains the Record scope-limit opener
+  PASS Record scope-limit disclaims 'rule for record production'
+  PASS 'source/action identification' appears in the disclaimed list
+  PASS disclaimed item 'record production' present in Record scope-limit
+  PASS disclaimed item 'persistence' present in Record scope-limit
+  PASS disclaimed item 'log-det structure' present in Record scope-limit
+  PASS disclaimed item 'time arrow' present in Record scope-limit
+  PASS disclaimed item 'normalization/scale' present in Record scope-limit
+  PASS Record additivity equation I(R_1 sqcup R_2) = I(R_1) + I(R_2) present
+  PASS Record baseline I(empty)=0 present
+
+========================================================================
+Block 8: Lattice + Quantum content preservation across the two memos
+========================================================================
+  PASS old memo references 'Z^3' site set
+  PASS new memo references 'Z^3' site set
+  PASS old memo references qubit/M_2(C) per-site algebra
+  PASS new memo references qubit/M_2(C) per-site algebra
+  PASS Record axiom heading present in new memo
+  PASS Record axiom heading NOT present in old memo
+  PASS new memo flags 'Supersedes' the old memo
+
+========================================================================
+Block 9: Static-source scan of parent note: zero Record tokens
+========================================================================
+  PASS extracted load-bearing text is non-empty :: len=6525
+  PASS Record token 'I(R_1' absent in load-bearing chain
+  PASS Record token 'I(R)' absent in load-bearing chain
+  PASS Record token 'scalar record functional' absent in load-bearing chain
+  PASS Record token 'additive scalar record' absent in load-bearing chain
+  PASS Record token 'I(empty)' absent in load-bearing chain
+  PASS Record token 'additive-baseline convention' absent in load-bearing chain
+  PASS Record token 'disjoint record collections' absent in load-bearing chain
+  PASS Record token 'MINIMAL_AXIOMS_2026-06-04' absent in load-bearing chain
+  PASS load-bearing chain contains 'Reality is a qubit at every lattice site.'
+  PASS load-bearing chain contains 'The lattice sites form Z^3.'
+
+========================================================================
+Block 10: Parent prose explicitly references the three added support-packet deps
+========================================================================
+  PASS parent load-bearing prose references the source-coupled local-action convention
+  PASS parent load-bearing prose references signed-record projective readout ray
+  PASS parent load-bearing prose has 'A signed record gives a primitive outcome'
+  PASS parent load-bearing prose references normalized one-Higgs top trilinear tensor
+  PASS parent load-bearing prose references current W/Z denominator rows
+
+========================================================================
+Block 11: Parent runner static scan: zero Record tokens
+========================================================================
+  PASS parent runner: Record token 'I(R_1' absent
+  PASS parent runner: Record token 'I(R)' absent
+  PASS parent runner: Record token 'scalar record functional' absent
+  PASS parent runner: Record token 'additive scalar record' absent
+  PASS parent runner: Record token 'I(empty)' absent
+  PASS parent runner: Record token 'additive-baseline convention' absent
+  PASS parent runner: Record token 'disjoint record collections' absent
+  PASS parent runner: Record token 'MINIMAL_AXIOMS_2026-06-04' absent
+
+========================================================================
+Block 12: Companion runner self-scan: zero substantive Record arithmetic
+========================================================================
+  PASS y_33_of_lambda signature has exactly one parameter (lam) :: params=['lam']
+  PASS y_33_of_lambda source does not invoke I_record
+  PASS y_33_of_lambda source does not invoke any 'record_additivity_correction' style helper
+  PASS Block 2 function found
+  PASS Block 6 function found
+  PASS Block 2 body does not call I_record
+  PASS Block 5 body does not call I_record
+  PASS Block 6 body does call I_record (counterfactual demonstration)
+
+========================================================================
+Block 13: Dep-edge presence in parent's 'Audit dependency repair links' subsection
+========================================================================
+  PASS parent contains 'Audit dependency repair links' subsection heading
+  PASS parent labels subsection as graph-bookkeeping
+  PASS parent labels subsection as 'does not promote this note or change the audited claim scope'
+  PASS parent bookkeeping subsection contains dep 'observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21'
+  PASS parent bookkeeping subsection contains dep 'yt_lsp_signed_record_source_readout_support_note_2026-05-24'
+  PASS parent bookkeeping subsection contains dep 'yt_source_action_support_packet_note_2026-05-22'
+  PASS parent bookkeeping subsection contains dep 'minimal_axioms'
+
+========================================================================
+Block 14: Snapshot delta classification cross-check
+========================================================================
+  PASS audit_ledger.json contains the parent row 'yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25'
+  PASS current generated audit state is queued :: observed: unaudited
+  PASS current generated effective state is queued :: observed: unaudited
+  PASS current row.deps == 4-element expected list :: observed deps: ['minimal_axioms', 'observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21', 'yt_lsp_signed_record_source_readout_support_note_2026-05-24', 'yt_source_action_support_packet_note_2026-05-22']
+  PASS row has exactly 2 previous_audits entries :: observed len: 2
+  PASS snapshot[0].deps == [] (pre-repair) :: observed: []
+  PASS snapshot[1].deps == [] (pre-repair) :: observed: []
+  PASS snapshot[0] uses the expected clean verdict label
+  PASS snapshot[1] uses the expected conditional verdict label
+  PASS runner_hash unchanged since the conditional snapshot :: current=0d7472cc, snap1=0d7472cc
+  PASS snapshot[1] notes_for_re_audit_if_any flags 'missing_dependency_edge'
+  PASS snapshot[1] requests the source-action gate dep edge
+  PASS snapshot[1] requests the LSP source readout support dep edge
+  PASS snapshot[1] requests the Y_T source-action support packet dep edge
+  PASS snapshot[1] requests the MINIMAL_AXIOMS dep edge
+
+========================================================================
+SUMMARY: PASS=198 FAIL=0
+========================================================================
+
+----- stderr -----
+

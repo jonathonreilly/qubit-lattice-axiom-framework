@@ -1,0 +1,12 @@
+[PASS] additive record readout selects log form once multiplicative Z is supplied
+[PASS] genuine log|det H| counts the doublet with multiplicity two
+       log|det|=0.386622
+[PASS] block-count reading uses a distinct multiplicity-stripped functional
+       block=0.609766; logdet=0.386622
+[PASS] form and weight are independent gates
+       log form does not choose dimension count versus block count
+[PASS] pre-record normalized and post-record additive ledgers can coexist
+
+SCORECARD PASS=5 FAIL=0
+FINDING: Record readout supports additive/log form after Z is supplied, but it does not select the Koide sector weight.
+Genuine log|det| counts multiplicity 1:2; r=1/2 needs the separate block-count functional.

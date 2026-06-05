@@ -1,0 +1,11 @@
+[PASS] two K-real sectors give a rank-1/rank-2 pointer alphabet
+[PASS] objectivity plateau reports H(weights), not a selected weight
+       H(1/3,2/3)=0.918296; H(1/2,1/2)=1.000000
+[PASS] tracial I/3 gives sector weights (1/3,2/3), hence r=1
+       (p_triv,p_doublet)=(0.333333,0.666667); r=1.000000
+[PASS] I/3 is sampled U(3)-invariant while the uniform-sector state is not
+[PASS] conjugation fixes both real effects and gives no rank swap
+
+SCORECARD PASS=5 FAIL=0
+FINDING: QD objectivity fixes the two-sector pointer basis but does not select the sector weights.
+The uniform sector weight remains an extra measure/reference choice, not a consequence of redundant objectivity.

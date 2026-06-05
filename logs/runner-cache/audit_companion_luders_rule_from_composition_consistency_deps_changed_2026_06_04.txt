@@ -1,0 +1,291 @@
+Lüders Rule deps_changed:dep_added:minimal_axioms Hygiene Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-luders-rule-hygiene/wt
+Parent note: /private/tmp/cl3-luders-rule-hygiene/wt/docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+Companion source note: docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_DEPS_CHANGED_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing Lüders-rule derivation
+      σ → (P σ P) / Tr(P σ P)  (from (U1)-(U4) consistency)
+      is invariant under the 2026-06-04 Record-axiom adoption
+      (MINIMAL_AXIOMS_2026-06-04.md, deps_changed edge
+      re-resolution from minimal_axioms_2026-05-20 to canonical
+      minimal_axioms).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: Projection structure on M_2(C) (parent setup, single-qubit)
+========================================================================
+  Verify P^2 = P, P = P†, Tr(P) = rank.
+  PASS rank1_idempotent_theta_0.000_phi_0.000 :: ||P^2 - P|| = 0.000e+00
+  PASS rank1_self_adjoint_theta_0.000_phi_0.000 :: P = P†
+  PASS rank1_unit_trace_theta_0.000_phi_0.000 :: Tr(P) = 1.000000
+  PASS rank1_idempotent_theta_3.142_phi_0.000 :: ||P^2 - P|| = 0.000e+00
+  PASS rank1_self_adjoint_theta_3.142_phi_0.000 :: P = P†
+  PASS rank1_unit_trace_theta_3.142_phi_0.000 :: Tr(P) = 1.000000
+  PASS rank1_idempotent_theta_1.571_phi_0.000 :: ||P^2 - P|| = 0.000e+00
+  PASS rank1_self_adjoint_theta_1.571_phi_0.000 :: P = P†
+  PASS rank1_unit_trace_theta_1.571_phi_0.000 :: Tr(P) = 1.000000
+  PASS rank1_idempotent_theta_1.571_phi_1.571 :: ||P^2 - P|| = 1.398e-33
+  PASS rank1_self_adjoint_theta_1.571_phi_1.571 :: P = P†
+  PASS rank1_unit_trace_theta_1.571_phi_1.571 :: Tr(P) = 1.000000
+  PASS rank1_idempotent_theta_1.047_phi_0.785 :: ||P^2 - P|| = 1.144e-16
+  PASS rank1_self_adjoint_theta_1.047_phi_0.785 :: P = P†
+  PASS rank1_unit_trace_theta_1.047_phi_0.785 :: Tr(P) = 1.000000
+  PASS rank2_identity_idempotent :: I^2 = I on M_2(C)
+  PASS rank2_identity_trace_two :: Tr(I_2) = 2.0
+  PASS two_qubit_rank1_idempotent :: ||P^2 - P|| = 1.511e-16
+  PASS two_qubit_rank1_trace_one :: Tr(P) = 1.000000
+
+========================================================================
+BLOCK 2: Density operators on M_2(C) and M_2(C) ⊗ M_2(C)
+========================================================================
+  Verify σ ≥ 0, σ = σ†, Tr(σ) = 1.
+  PASS density_psd_|0><0| :: min eig = +0.000e+00
+  PASS density_hermitian_|0><0| :: σ = σ†
+  PASS density_unit_trace_|0><0| :: Tr(σ) = 1.000000
+  PASS density_psd_|1><1| :: min eig = +0.000e+00
+  PASS density_hermitian_|1><1| :: σ = σ†
+  PASS density_unit_trace_|1><1| :: Tr(σ) = 1.000000
+  PASS density_psd_max_mixed :: min eig = +5.000e-01
+  PASS density_hermitian_max_mixed :: σ = σ†
+  PASS density_unit_trace_max_mixed :: Tr(σ) = 1.000000
+  PASS density_psd_x_polarized_mixed :: min eig = +2.000e-01
+  PASS density_hermitian_x_polarized_mixed :: σ = σ†
+  PASS density_unit_trace_x_polarized_mixed :: Tr(σ) = 1.000000
+  PASS density_psd_tilted :: min eig = +1.464e-01
+  PASS density_hermitian_tilted :: σ = σ†
+  PASS density_unit_trace_tilted :: Tr(σ) = 1.000000
+  PASS density_psd_two_qubit_phi_plus :: min eig = +0.000e+00
+  PASS density_hermitian_two_qubit_phi_plus :: σ = σ†
+  PASS density_unit_trace_two_qubit_phi_plus :: Tr(σ) = 1.000000
+  PASS density_random_psd_d2_sample0 :: min eig = +3.240e-01
+  PASS density_random_trace_d2_sample0 :: Tr(σ) = 1.000000
+  PASS density_random_psd_d2_sample1 :: min eig = +4.193e-02
+  PASS density_random_trace_d2_sample1 :: Tr(σ) = 1.000000
+  PASS density_random_psd_d4_sample2 :: min eig = +2.356e-02
+  PASS density_random_trace_d4_sample2 :: Tr(σ) = 1.000000
+  PASS density_random_psd_d4_sample3 :: min eig = +1.633e-02
+  PASS density_random_trace_d4_sample3 :: Tr(σ) = 1.000000
+
+========================================================================
+BLOCK 3: Lüders sandwich P σ P ≥ 0  (parent Step 2, (U1) corollary)
+========================================================================
+  For all test (σ, P): P σ P is positive semi-definite.
+  PASS luders_sandwich_psd_d2_minEig :: min eig P σ P = +2.642e-17
+  PASS luders_sandwich_psd_d2_minEig :: min eig P σ P = -1.067e-17
+  PASS luders_sandwich_psd_d2_minEig :: min eig P σ P = -2.835e-17
+  PASS luders_sandwich_psd_d2_minEig :: min eig P σ P = -6.218e-19
+  PASS luders_sandwich_psd_d2_minEig :: min eig P σ P = -5.095e-17
+  PASS luders_sandwich_psd_d2_minEig :: min eig P σ P = -8.465e-18
+  PASS luders_sandwich_psd_d4_minEig :: min eig P σ P = -1.369e-17
+  PASS luders_sandwich_psd_d4_minEig :: min eig P σ P = -4.609e-17
+  PASS luders_sandwich_psd_d4_minEig :: min eig P σ P = -6.516e-18
+  PASS luders_sandwich_psd_d4_minEig :: min eig P σ P = -2.674e-17
+  PASS luders_sandwich_psd_plus_maxmix :: min eig = -6.163e-33
+  PASS luders_sandwich_trace_real :: Im Tr = 0.000e+00
+
+========================================================================
+BLOCK 4: Lüders sandwich normalization  (parent Step 2, (U2) corollary)
+========================================================================
+  σ|_P = (P σ P) / Tr(P σ P) has Tr(σ|_P) = 1 (when Tr(P σ P) > 0).
+  PASS luders_post_unit_trace_d2_case0 :: Tr(σ|_P) = 1.000000000000
+  PASS luders_post_psd_d2_case0 :: min eig = +4.518e-17
+  PASS luders_post_unit_trace_d2_case1 :: Tr(σ|_P) = 1.000000000000
+  PASS luders_post_psd_d2_case1 :: min eig = +8.696e-17
+  PASS luders_post_unit_trace_d2_case2 :: Tr(σ|_P) = 1.000000000000
+  PASS luders_post_psd_d2_case2 :: min eig = -1.634e-16
+  PASS luders_post_unit_trace_d2_case3 :: Tr(σ|_P) = 1.000000000000
+  PASS luders_post_psd_d2_case3 :: min eig = +1.309e-18
+  PASS luders_post_unit_trace_d2_case4 :: Tr(σ|_P) = 1.000000000000
+  PASS luders_post_psd_d2_case4 :: min eig = +1.365e-18
+  PASS luders_post_unit_trace_d2_case5 :: Tr(σ|_P) = 1.000000000000
+  PASS luders_post_psd_d2_case5 :: min eig = -6.826e-17
+  PASS luders_post_unit_trace_d2_case6 :: Tr(σ|_P) = 1.000000000000
+  PASS luders_post_psd_d2_case6 :: min eig = -2.804e-17
+  PASS luders_post_unit_trace_d2_case7 :: Tr(σ|_P) = 1.000000000000
+  PASS luders_post_psd_d2_case7 :: min eig = +9.990e-17
+
+========================================================================
+BLOCK 5: Lüders post-update state is self-adjoint
+========================================================================
+  σ|_P = (σ|_P)†.
+  PASS luders_post_hermitian_d2_case0 :: ||σ|_P - (σ|_P)†|| = 2.082e-16
+  PASS luders_post_hermitian_d4_case1 :: ||σ|_P - (σ|_P)†|| = 1.333e-16
+  PASS luders_post_hermitian_d4_case2 :: ||σ|_P - (σ|_P)†|| = 1.559e-16
+  PASS luders_post_hermitian_d4_case3 :: ||σ|_P - (σ|_P)†|| = 1.290e-16
+  PASS luders_post_hermitian_d2_case4 :: ||σ|_P - (σ|_P)†|| = 5.018e-17
+  PASS luders_post_hermitian_d2_case5 :: ||σ|_P - (σ|_P)†|| = 2.635e-16
+
+========================================================================
+BLOCK 6: Trace cyclicity identity  (parent Step 1, eq. (3))
+========================================================================
+  Tr(σ · P E P) = Tr(P σ P · E) for all (σ, P, E).
+  PASS trace_cyclicity_d4_case0 :: |LHS - RHS| = 1.571e-17, LHS = +0.039153+0.000e+00i
+  PASS trace_cyclicity_d2_case1 :: |LHS - RHS| = 1.301e-18, LHS = +0.259007+6.939e-18i
+  PASS trace_cyclicity_d4_case2 :: |LHS - RHS| = 1.084e-18, LHS = +0.064391+1.518e-18i
+  PASS trace_cyclicity_d4_case3 :: |LHS - RHS| = 7.961e-18, LHS = +0.025142-2.168e-18i
+  PASS trace_cyclicity_d2_case4 :: |LHS - RHS| = 1.388e-17, LHS = +0.523247+0.000e+00i
+  PASS trace_cyclicity_d4_case5 :: |LHS - RHS| = 1.388e-17, LHS = +0.095913+0.000e+00i
+  PASS trace_cyclicity_d2_case6 :: |LHS - RHS| = 5.551e-17, LHS = +0.327715+0.000e+00i
+  PASS trace_cyclicity_d4_case7 :: |LHS - RHS| = 7.411e-18, LHS = +0.062385-3.469e-18i
+  PASS trace_cyclicity_d4_case8 :: |LHS - RHS| = 3.469e-18, LHS = +0.132955+5.204e-18i
+  PASS trace_cyclicity_d2_case9 :: |LHS - RHS| = 0.000e+00, LHS = +0.000000+0.000e+00i
+
+========================================================================
+BLOCK 7: Bayes consistency identity  (parent Step 1, eq. (4))
+========================================================================
+  Tr(P σ P · E) = Tr(σ · P) · Tr(σ|_P · E)  (when Tr(σ · P) > 0).
+  PASS bayes_identity_d2_case0 :: |LHS - RHS| = 2.833e-17, LHS = +0.148056+0.000e+00i
+  PASS bayes_identity_d2_case1 :: |LHS - RHS| = 1.513e-18, LHS = +0.131865-1.388e-17i
+  PASS bayes_identity_d2_case2 :: |LHS - RHS| = 2.861e-17, LHS = +0.154760+6.939e-18i
+  PASS bayes_identity_d4_case3 :: |LHS - RHS| = 4.221e-17, LHS = +0.116131-6.939e-18i
+  PASS bayes_identity_d4_case4 :: |LHS - RHS| = 3.110e-18, LHS = +0.130039+1.301e-18i
+  PASS bayes_identity_d4_case5 :: |LHS - RHS| = 7.170e-18, LHS = +0.013352+3.469e-18i
+  PASS bayes_identity_d4_case6 :: |LHS - RHS| = 3.469e-18, LHS = +0.140404+3.469e-18i
+  PASS bayes_identity_d2_case7 :: |LHS - RHS| = 2.221e-16, LHS = +0.409620+1.388e-17i
+  PASS bayes_identity_d2_case8 :: |LHS - RHS| = 2.797e-17, LHS = +0.046347-3.469e-18i
+  PASS bayes_identity_d4_case9 :: |LHS - RHS| = 1.939e-18, LHS = +0.013364+8.674e-19i
+
+========================================================================
+BLOCK 8: (U4) compositional consistency  (parent Step 3, eq. (8))
+========================================================================
+  (σ|_{P_1})|_{P_2} = (P_2 P_1) σ (P_2 P_1)† / Tr((P_2 P_1) σ (P_2 P_1)†)
+  PASS u4_compositional_d2_case0 :: ||(σ|_P1)|_P2 - σ|_{P2 P1}|| = 2.481e-17
+  PASS u4_compositional_d2_case1 :: ||(σ|_P1)|_P2 - σ|_{P2 P1}|| = 1.893e-16
+  PASS u4_compositional_d4_case2 :: ||(σ|_P1)|_P2 - σ|_{P2 P1}|| = 4.932e-16
+  PASS u4_compositional_d4_case3 :: ||(σ|_P1)|_P2 - σ|_{P2 P1}|| = 2.679e-16
+  PASS u4_compositional_d2_case4 :: ||(σ|_P1)|_P2 - σ|_{P2 P1}|| = 2.238e-16
+  PASS u4_compositional_d2_case5 :: ||(σ|_P1)|_P2 - σ|_{P2 P1}|| = 1.281e-16
+  PASS u4_compositional_d2_case6 :: ||(σ|_P1)|_P2 - σ|_{P2 P1}|| = 1.594e-16
+  PASS u4_compositional_d2_case7 :: ||(σ|_P1)|_P2 - σ|_{P2 P1}|| = 6.833e-17
+
+========================================================================
+BLOCK 9: Generalized Kraus form (K σ K†) / Tr(K σ K†) is a density operator
+========================================================================
+  For random rank-1 Kraus operators K and densities σ.
+  PASS kraus_post_psd_d2_case0 :: min eig = +1.584e-17
+  PASS kraus_post_unit_trace_d2_case0 :: Tr = 1.000000000000
+  PASS kraus_post_hermitian_d2_case0 :: ||σ - σ†|| = 0.000e+00
+  PASS kraus_post_psd_d2_case1 :: min eig = +7.354e-18
+  PASS kraus_post_unit_trace_d2_case1 :: Tr = 1.000000000000
+  PASS kraus_post_hermitian_d2_case1 :: ||σ - σ†|| = 1.320e-16
+  PASS kraus_post_psd_d4_case2 :: min eig = -3.814e-17
+  PASS kraus_post_unit_trace_d4_case2 :: Tr = 1.000000000000
+  PASS kraus_post_hermitian_d4_case2 :: ||σ - σ†|| = 1.484e-16
+  PASS kraus_post_psd_d4_case3 :: min eig = -1.212e-17
+  PASS kraus_post_unit_trace_d4_case3 :: Tr = 1.000000000000
+  PASS kraus_post_hermitian_d4_case3 :: ||σ - σ†|| = 4.562e-17
+  PASS kraus_post_psd_d2_case4 :: min eig = -6.003e-17
+  PASS kraus_post_unit_trace_d2_case4 :: Tr = 1.000000000000
+  PASS kraus_post_hermitian_d2_case4 :: ||σ - σ†|| = 9.013e-17
+  PASS kraus_post_psd_d2_case5 :: min eig = -5.955e-17
+  PASS kraus_post_unit_trace_d2_case5 :: Tr = 1.000000000000
+  PASS kraus_post_hermitian_d2_case5 :: ||σ - σ†|| = 8.959e-17
+  PASS kraus_post_psd_d4_case6 :: min eig = -8.439e-17
+  PASS kraus_post_unit_trace_d4_case6 :: Tr = 1.000000000000
+  PASS kraus_post_hermitian_d4_case6 :: ||σ - σ†|| = 6.399e-17
+  PASS kraus_post_psd_d2_case7 :: min eig = +2.042e-16
+  PASS kraus_post_unit_trace_d2_case7 :: Tr = 1.000000000000
+  PASS kraus_post_hermitian_d2_case7 :: ||σ - σ†|| = 8.810e-17
+
+========================================================================
+BLOCK 10: Uniqueness via effect-basis equality  (parent Step 4)
+========================================================================
+  If Tr(ρ_1 · E) = Tr(ρ_target · E) for a complete effect basis,
+  then ρ_1 = ρ_target on finite-dimensional space.
+  PASS effect_basis_uniqueness_d2_case0 :: ||ρ_reconstructed - ρ_target|| = 0.000e+00
+  PASS effect_basis_uniqueness_d4_case1 :: ||ρ_reconstructed - ρ_target|| = 0.000e+00
+  PASS effect_basis_uniqueness_d4_case2 :: ||ρ_reconstructed - ρ_target|| = 0.000e+00
+  PASS effect_basis_uniqueness_d4_case3 :: ||ρ_reconstructed - ρ_target|| = 0.000e+00
+
+========================================================================
+BLOCK 11: Parent note Record-axiom usage scan (load-bearing sections)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-luders-rule-hygiene/wt/docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+  PASS structural_section_start_found :: ## Claim found at offset 484
+  PASS structural_section_end_found :: ## Citation-graph note found at offset 7991
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+
+========================================================================
+BLOCK 12: Parent note's load-bearing sections cite Quantum / Lattice axiom content
+========================================================================
+  PASS parent_load_bearing_substrate_content_present :: found tokens (need >= 3): ['M_2(ℂ)', 'Z^3', 'qubit', 'operator algebra']
+
+========================================================================
+BLOCK 13: Record-axiom counterfactual: identical numeric output
+========================================================================
+  Compute Lüders update, trace-cyclicity identity, Bayes
+  identity, and (U4) check under explicit 'Record asserted'
+  and 'Record not asserted' outer scopes; verify identity.
+  PASS counterfactual_inputs_identical_d2_case0 :: (σ, P, E) bit-identical
+  PASS counterfactual_luders_post_identical_d2_case0 :: ||with - without|| = 0.000e+00
+  PASS counterfactual_trace_cyclicity_identical_d2_case0 :: diff = 0.000e+00
+  PASS counterfactual_bayes_marginal_identical_d2_case0 :: diff = 0.000e+00
+  PASS counterfactual_inputs_identical_d2_case1 :: (σ, P, E) bit-identical
+  PASS counterfactual_luders_post_identical_d2_case1 :: ||with - without|| = 0.000e+00
+  PASS counterfactual_trace_cyclicity_identical_d2_case1 :: diff = 0.000e+00
+  PASS counterfactual_bayes_marginal_identical_d2_case1 :: diff = 0.000e+00
+  PASS counterfactual_inputs_identical_d2_case2 :: (σ, P, E) bit-identical
+  PASS counterfactual_luders_post_identical_d2_case2 :: ||with - without|| = 0.000e+00
+  PASS counterfactual_trace_cyclicity_identical_d2_case2 :: diff = 0.000e+00
+  PASS counterfactual_bayes_marginal_identical_d2_case2 :: diff = 0.000e+00
+  PASS counterfactual_inputs_identical_d4_case3 :: (σ, P, E) bit-identical
+  PASS counterfactual_luders_post_identical_d4_case3 :: ||with - without|| = 0.000e+00
+  PASS counterfactual_trace_cyclicity_identical_d4_case3 :: diff = 0.000e+00
+  PASS counterfactual_bayes_marginal_identical_d4_case3 :: diff = 0.000e+00
+  PASS counterfactual_inputs_identical_d4_case4 :: (σ, P, E) bit-identical
+  PASS counterfactual_luders_post_identical_d4_case4 :: ||with - without|| = 0.000e+00
+  PASS counterfactual_trace_cyclicity_identical_d4_case4 :: diff = 0.000e+00
+  PASS counterfactual_bayes_marginal_identical_d4_case4 :: diff = 0.000e+00
+
+========================================================================
+BLOCK 14: Quantum / Lattice content preserved across the two minimal-axioms memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-luders-rule-hygiene/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-luders-rule-hygiene/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_local_algebra_content :: historical M_2(C) / qubit content present
+  PASS new_memo_has_Quantum_axiom_content :: new Quantum axiom (qubit / M_2(C)) preserved
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Lattice_axiom_content :: new Lattice axiom (Z^3) preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_load_bearing_bridges :: Record axiom's scope statement excludes production / measurement / Born / log-det, none of which the Lüders derivation uses
+
+========================================================================
+BLOCK 15: Lüders post-update state computed three independent ways
+========================================================================
+  Route A: direct sandwich (P σ P)/Tr(P σ P).
+  Route B: spectral construction via projection onto +1 eigenspace.
+  Route C: repeated post-selection on a 2-qubit purification.
+  PASS route_A_density :: PsiP/Tr is density
+  PASS route_B_spectral_equals_projection :: spectral construction gives |ψ><ψ| = P
+  PASS route_B_alt_equals_route_A :: ||route_B_alt - route_A|| = 1.243e-16
+  PASS route_A_equals_route_B :: ||route_A - route_B|| = 1.243e-16
+  PASS purification_reduces_to_sigma :: ||rho_S - sigma|| = 2.289e-16
+  PASS route_C_purification_post_equals_route_A :: ||route_C - route_A|| = 1.242e-16
+
+========================================================================
+TOTAL PASS: 174
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing chain of LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_
+  NOTE_2026-05-20.md uses ONLY Quantum axiom content (per-site
+  qubit local algebra M_2(C)) and Lattice axiom content (Z^3
+  site set + standard C*-tensor product over finite regions)
+  plus standard textbook operator-algebraic identities (trace
+  cyclicity, positivity preservation under congruence, finite-
+  dimensional density/effect duality, Bayes rule, standard
+  sequential-effect composition M_{P,E} = P E P). The Record
+  axiom (additive scalar record-readout functional) is neither
+  used nor invoked. Numeric / algebraic output is identical
+  under both 'Record axiom asserted' and 'Record axiom not
+  asserted' outer scopes. This runner does not re-apply the
+  prior audit verdict; it records that the algebra checked
+  here is unchanged by the 2026-06-04 minimal-axioms edge
+  re-resolution.
+
+The audit lane decides whether to honor or re-test the prior
+verdict on the new minimal_axioms premise hash.

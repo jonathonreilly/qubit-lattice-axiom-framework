@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 659 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 32 |
-| unaudited | 1267 |
+| unaudited | 1266 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 68 |
+| ~~audited_conditional~~ | 69 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1015 |
-| `audited_conditional` | 68 |
+| `audited_conditional` | 69 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1551 |
+| `unaudited` | 1550 |
 
 | claim_type | count |
 |---|---:|
@@ -1183,6 +1183,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_trace_vs_center_dissolves_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6008,6 +6009,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Genuine log|det H| counts eigenvalue multiplicity, so the doublet contributes 2 log|lambda_doublet| while the r=1/2 block-count reading requires the distinct multiplicity-stripped functional log|lambda_triv lambda_doublet|.  _(class `A`)_
 - **chain closes:** True — The determinant multiplicity statement is standard finite-dimensional algebra: a two-dimensional degenerate doublet contributes twice to log|det H|. The block-count expression is therefore a different functional, so additive/log form alone does not determine the sector weight.
 - **rationale:** The audited claim is narrow and negative: it separates logarithmic form from Koide sector weighting. The displayed determinant identity and the distinction from the multiplicity-stripped block functional close by algebra, and the runner source actually computes a finite 3x3 example rather than merely printing constants. No external comparator, tuned numerical match, or cited open dependency is used.
+- **auditor confidence:** high
+
+### `flavor_retention_law_is_a2plus_note_2026-05-31`
+
+- **Note:** [`FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md`](../../docs/FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite conditional algebra for C3-invariant onsite diagonal sources, the supplied Q values, the Z/S_Q1 d=3 coefficients, and diagonal compression of a sample circulant mass operator.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-225407-54cd6c6cf5-flavor_retention_law_is_a2pl`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If an additional physical source-locality/readout premise selects onsite diagonal sources, then C3 invariance makes the onsite diagonal source scalar and the supplied Q(z)=2/(3(1+z)) gives Q(0)=2/3.  _(class `A`)_
+- **chain closes:** False — The displayed finite algebra closes on its own terms: C3-invariant diagonals are scalar, Q(0)=2/3, Q(-1/3)=1, Z^2=I, S_Q1 has 10/9 diagonal and -2/9 off-diagonal entries, and the diagonal-circulant intersection is scalar. The chain to a physical source-domain retention/readout conclusion does not close because the onsite source-locality/readout premise is explicitly left as an extra undischarged premise.
+- **rationale:** The runner source performs actual finite symbolic and matrix checks rather than merely printing constants, and the displayed identities independently check out. However, the load-bearing result is algebra over supplied definitions, not a first-principles derivation from A2 or any accepted baseline. The note correctly narrows away the older hard-coded R1 assertion, but it still depends on an additional source-locality/readout premise to select onsite diagonal sources for the physical Q=2/3 reading.
 - **auditor confidence:** high
 
 ### `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31`

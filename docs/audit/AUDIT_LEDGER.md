@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 640 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 980 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1600 |
+| `unaudited` | 1599 |
 
 | claim_type | count |
 |---|---:|
@@ -1134,6 +1134,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5361,6 +5362,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** OS RP, the qubit Bargmann complex structure, and the Hermitian/unitary readout checks are claimed to be agnostic to the det_C versus det_R counting, so positivity does not select r=1/2.  _(class `A`)_
 - **chain closes:** False — The displayed algebra checked by the runner closes for the modeled OS Gram, J_cs comparison, and Q=(1+2r)/3 identity. The broader conclusion imports unstated bridge authority for Bargmann descent, unitarity/GNS agnosticism, det_C/det_R-to-r counting, and prior symmetry-side exhaustion; the note also explicitly says the finite-enumeration framing is superseded and not a closed route.
 - **rationale:** The runner performs real algebraic checks rather than merely printing constants, and the displayed quantitative identities it executes are consistent. Those checks are class A, not class C first-principles closure, and they do not establish the exhaustive negative claim. With no cited authorities supplied, the load-bearing bridge from three modeled checks to 'both levers exhausted' is missing, especially given the source note's own supersession warning.
+- **auditor confidence:** high
+
+### `flavor_missing_axiom_carrier_measure_note_2026-05-30`
+
+- **Note:** [`FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md`](../../docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the conditional algebra that a tracial-standard-form R[Z3] carrier with generator-channel Hilbert-Schmidt scoring yields r=1/2 and that competing partitions yield different r values.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-190328-9d73e2c933-flavor_missing_axiom_carrier`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Equal Hilbert-Schmidt weight on the two trace-orthogonal C3-isotypic generator channels gives 3a^2 = 6b^2, equivalently r = ||I||^2/||J-I||^2 = 1/(N-1) = 1/2 at N=3.  _(class `A`)_
+- **chain closes:** False — The algebraic consequences of the proposed measure/partition close, but the restricted packet does not derive or retain the premise that the framework selects the tracial HS generator-channel scoring over the idempotent or per-mode alternatives. The missing step is a bridge theorem or accepted axiom selecting that carrier metric and partition.
+- **rationale:** The runner does real algebra for the HS norms, three-way fork, N-family formula, Kahler identity, and commuting check, and its displayed identities are internally consistent. However, the note itself states that the present framework has not selected the generator-channel HS measure and that the candidate Axiom 1 revision is not landed. The PDG/PT line is an external comparator check and does not close the framework-internal measure-selection gap.
 - **auditor confidence:** high
 
 ### `flavor_native_double_shift_corner_coupling_note_2026-05-30`

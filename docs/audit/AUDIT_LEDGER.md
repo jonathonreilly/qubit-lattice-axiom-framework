@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 188 |
 | **retained_bounded** | 664 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 32 |
-| unaudited | 1253 |
+| open_gate | 33 |
+| unaudited | 1252 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1022 |
+| `audited_clean` | 1023 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1537 |
+| `unaudited` | 1536 |
 
 | claim_type | count |
 |---|---:|
@@ -553,6 +553,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hard_geometry_gravity_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -8287,6 +8288,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Using K(i)=-i, KDK^{-1}=D, and P D P^{-1}=-D, the note computes Θ_H H Θ_H^{-1}=-i·PDP=-i·(-D)=iD=H.  _(class `A`)_
 - **chain closes:** True — The conclusion follows by algebra from the retained-grade C/P-on-D identities in CPT_EXACT_NOTE plus the immediate real-matrix conjugation rule for D and K(i)=-i. The SME-bilinear identification remains explicitly out of scope and is not needed for L1-L4.
 - **rationale:** The load-bearing step is a direct algebraic conjugation identity over retained-grade finite-lattice inputs, not a definition, renaming, external comparator, or tuned numerical match. The runner source builds the framework matrices directly and checks the claimed matrix identities with no helper imports or hidden constants. The cited bridge's open SME-dictionary issue is explicitly excluded from the audited scope, so it does not carry into this bounded theorem.
+- **auditor confidence:** high
+
+### `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`
+
+- **Note:** [`HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited only the note's stated delta-zero open-gate claim: the supplied determinant and condensate test forms contain u_0 but no explicit alpha_bare, while alpha_LM^16 carries alpha_bare^16 by algebraic relabeling.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-232500-6912981b87-hierarchy_alpha_lm_magnitude`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Thus the checked block observables do not by themselves supply the (4 pi)^-16 coupling-power magnitude, leaving the transport source for that magnitude open on the current delta = 0 baseline.  _(class `A`)_
+- **chain closes:** True — The restricted packet closes the narrow open-gate conclusion: alpha_bare^16 = (4 pi)^-16 follows algebraically from alpha_bare = 1/(4 pi), and the displayed block forms have no alpha_bare symbol. It does not close a hierarchy derivation, but the note explicitly does not claim one.
+- **rationale:** The claim under audit is an open-gate boundary claim, not a positive derivation of the hierarchy magnitude. Independent inspection of the displayed formulas agrees with the runner: (1/(4 pi))^16 is approximately 2.586e-18, alpha_bare, alpha_bare/u_0, and alpha_bare/u_0^2 form a constant-ratio progression, the inverse-alpha step ratio is u_0, and the provided determinant and condensate forms contain u_0 but no explicit alpha_bare. Since there are no cited upstream authorities and the conclusion is only that the transport source remains open in the checked delta-zero block, the audited scope closes on its own terms.
 - **auditor confidence:** high
 
 ### `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26`

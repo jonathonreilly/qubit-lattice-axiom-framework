@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py
+runner_sha256: 91634a73bfd9a9c42cd52136793f2a4e3867b8d82c0ea3c156b1b3c523748e18
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+
+================================================================================
+Note scope
+================================================================================
+[PASS] note contains marker: **Claim type:** open_gate
+[PASS] note contains marker: does not close the hierarchy lane
+[PASS] note contains marker: does not approve
+[PASS] note contains marker: transport source for that coupling-power magnitude on the current baseline: open
+[PASS] note contains marker: does not claim that every possible future mechanism is closed
+[PASS] note omits non-native marker: Generated with
+[PASS] note omits non-native marker: source-note proposal only
+[PASS] note omits non-native marker: actual_current_surface_status
+[PASS] note omits non-native marker: audit lane
+[PASS] note omits non-native marker: retained_bounded
+[PASS] note omits non-native marker: retained_no_go
+[PASS] note omits non-native marker: closure_proposal
+[PASS] note omits non-native marker: formal no-go
+
+================================================================================
+Coupling-power magnitude
+================================================================================
+[PASS] alpha_bare = 1/(4 pi)
+[PASS] alpha_bare^16 = (4 pi)^-16 ~= 2.586e-18  --  2.586081e-18
+
+================================================================================
+Geometric progression
+================================================================================
+[PASS] alpha_LM = alpha_bare/u0
+[PASS] alpha_s = alpha_bare/u0^2
+[PASS] alpha_LM/alpha_bare = 1/u0
+[PASS] alpha_s/alpha_LM = 1/u0
+[PASS] 1/alpha equal-step test gives Delta2/Delta1 = u0  --  u0
+
+================================================================================
+Block observable symbol support
+================================================================================
+[PASS] determinant factor contains u0
+[PASS] determinant factor has no explicit alpha_bare
+[PASS] condensate summand contains u0
+[PASS] condensate summand has no explicit alpha_bare
+
+================================================================================
+Delta-zero scope
+================================================================================
+[PASS] current baseline scope records delta = 0
+[PASS] no extra-dimensional tower is supplied by this runner
+
+TOTAL: PASS=26 FAIL=0
+VERDICT: hierarchy alpha_LM magnitude delta-zero open-gate checks pass.
+
+----- stderr -----
+

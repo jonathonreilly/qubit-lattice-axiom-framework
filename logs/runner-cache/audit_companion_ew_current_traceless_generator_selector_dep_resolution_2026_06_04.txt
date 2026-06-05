@@ -1,0 +1,127 @@
+========================================================================
+EW Current Traceless-Generator Selector
+Dep-Resolution Hygiene Companion Runner (2026-06-04)
+========================================================================
+
+Repo root: /private/tmp/cl3-ew-current-traceless/wt
+Parent note: /private/tmp/cl3-ew-current-traceless/wt/docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md
+Parent runner: /private/tmp/cl3-ew-current-traceless/wt/scripts/frontier_ew_current_traceless_generator_selector_no_go.py
+Dep note: /private/tmp/cl3-ew-current-traceless/wt/docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+Companion source note: docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing substantive content does
+      not load-bear on the *audit grade* of its dep
+      `axiom_first_lattice_noether_theorem_note_2026-04-29`
+      (which was downgraded from retained_bounded to unaudited).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no audit-status content asserted.
+
+========================================================================
+BLOCK 1: Re-execute parent runner on current head; expect PASS=29 FAIL=0
+========================================================================
+  PASS parent_runner_exit_zero :: returncode=0
+  PASS parent_runner_emits_expected_result_line :: 'RESULT: PASS=29 FAIL=0' present in stdout: True
+  PASS parent_runner_load_bearing_passes_traceless_ew_generator_has_tr_t3_0 :: PASS line for: traceless EW generator has Tr(T3)=0
+  PASS parent_runner_load_bearing_passes_same_generator_has_nonzero_quadratic_trace :: PASS line for: same generator has nonzero quadratic trace
+  PASS parent_runner_load_bearing_passes_tracelessness_kills_ordinary_wick_disconnected_one :: PASS line for: tracelessness kills ordinary Wick-disconnected one-current loops
+  PASS parent_runner_load_bearing_passes_connected_two_current_contraction_is_nonzero_for_m :: PASS line for: connected two-current contraction is nonzero for M=I_color
+  PASS parent_runner_load_bearing_passes_that_nonzero_contraction_is_entirely_the_color_fie :: PASS line for: that nonzero contraction is entirely the color Fierz singlet S
+  PASS parent_runner_load_bearing_passes_therefore_tr_q_ew_0_does_not_imply_kappa_ew_0 :: PASS line for: therefore Tr(Q_EW)=0 does not imply kappa_EW=0
+  PASS parent_runner_load_bearing_passes_connected_selector_would_give_k_ew_0_9_8 :: PASS line for: connected selector would give K_EW(0)=9/8
+  PASS parent_runner_load_bearing_passes_full_trace_readout_remains_algebraically_admissibl :: PASS line for: full-trace readout remains algebraically admissible at K_EW(1)=1
+  PASS parent_runner_load_bearing_passes_traceless_generator_route_cannot_distinguish_kappa :: PASS line for: traceless-generator route cannot distinguish kappa=0 from kappa=1
+  PASS parent_runner_no_stderr_errors :: stderr length=0
+
+========================================================================
+BLOCK 2: Re-verify the T_3 / I_color algebraic counterexample directly
+========================================================================
+  PASS indep_tr_t3_equals_zero :: Tr(T_3) = 0
+  PASS indep_tr_t3_squared_equals_one_half :: Tr(T_3^2) = 1/2
+  PASS indep_wick_disconnected_one_current_factor_zero :: (Tr T_3)^2 = 0
+  PASS indep_singlet_of_I_color_equals_Nc :: S(I_color) = 3
+  PASS indep_adjoint_of_I_color_equals_zero :: C(I_color) = 0
+  PASS indep_connected_singlet_weight_three_halves :: Tr(T_3^2) * S(I_color) = 3/2
+  PASS indep_implication_fails :: Tr(Q_EW)=0 coexists with non-zero color-singlet channel
+  PASS indep_color_traceless_pure_adjoint :: S=0, C=1/2
+
+========================================================================
+BLOCK 3: Parent runner contains zero audit-status references
+========================================================================
+  PASS parent_runner_no_token_audit_status :: 'audit_status' absent from parent runner source
+  PASS parent_runner_no_token_effective_status :: 'effective_status' absent from parent runner source
+  PASS parent_runner_no_token_intrinsic_status :: 'intrinsic_status' absent from parent runner source
+  PASS parent_runner_no_token_retained_bounded :: 'retained_bounded' absent from parent runner source
+  PASS parent_runner_no_token_audited_clean :: 'audited_clean' absent from parent runner source
+  PASS parent_runner_no_token_audited_conditional :: 'audited_conditional' absent from parent runner source
+  PASS parent_runner_no_token_retained_no_go :: 'retained_no_go' absent from parent runner source
+  PASS parent_runner_no_token_audit_ledger :: 'audit_ledger' absent from parent runner source
+  PASS parent_runner_no_token_audit_grade :: 'audit_grade' absent from parent runner source
+
+========================================================================
+BLOCK 4: Parent note contains no claim of dep-grade dependency
+========================================================================
+  PASS parent_note_no_phrase_load_bears_on_the_dep_s_audit :: 'load-bears on the dep's audit' absent from parent note
+  PASS parent_note_no_phrase_depends_on_the_dep_s_audit_grade :: 'depends on the dep's audit grade' absent from parent note
+  PASS parent_note_no_phrase_requires_the_dep_to_be_retained :: 'requires the dep to be retained' absent from parent note
+  PASS parent_note_no_phrase_requires_retained_bounded :: 'requires retained_bounded' absent from parent note
+  PASS parent_note_no_phrase_requires_audited_clean :: 'requires audited_clean' absent from parent note
+  PASS parent_note_no_phrase_depends_on_the_noether_note_being_retained :: 'depends on the Noether note being retained' absent from parent note
+  PASS parent_note_explicitly_demotes_noether_dep :: parent note phrase 'bounded current-form context' present
+  PASS parent_note_does_not_promote_dep :: parent note phrase 'does not promote it to repo-wide axiom authority' present
+  PASS parent_note_records_route_specific_no_go :: parent note declares claim_type=no_go
+  PASS parent_note_records_not_a_positive_closure :: parent note phrase 'not a positive closure' present
+
+========================================================================
+BLOCK 5: Counterfactual under dep at `unaudited` on origin/main
+========================================================================
+  PASS counterfactual_runner_exit_zero :: returncode=0
+  PASS counterfactual_runner_result_line_unchanged :: RESULT line identical to Block 1 (substance-unchanged)
+  PASS counterfactual_runner_no_extra_failures :: no FAIL lines present in counterfactual run
+
+========================================================================
+BLOCK 6: Algebraic selector separation K_EW(0)=9/8 vs K_EW(1)=1
+========================================================================
+  PASS k_ew_kappa_zero_is_nine_eighths :: K_EW(0) = 9/8
+  PASS k_ew_kappa_one_is_one :: K_EW(1) = 1
+  PASS k_ew_kappa_zero_neq_kappa_one :: K_EW(0)=9/8 vs K_EW(1)=1; traceless route cannot fix kappa_EW
+  PASS k_ew_closed_form_kappa_0_1 :: K_EW(0) = 9/8 == 9/8
+  PASS k_ew_closed_form_kappa_1_1 :: K_EW(1) = 1 == 1
+  PASS k_ew_closed_form_kappa_1_2 :: K_EW(1/2) = 18/17 == 18/17
+  PASS k_ew_closed_form_kappa_2_1 :: K_EW(2) = 9/10 == 9/10
+
+========================================================================
+BLOCK 7: (Tr T_3)^2 = 0 vs Tr(T_3^2) = 1/2 (substance of the no-go)
+========================================================================
+  PASS traceless_linear_T_3 :: Tr(T_3) = 0
+  PASS nonzero_quadratic_T_3 :: Tr(T_3^2) = 1/2
+  PASS distinct_lin_squared_vs_quad_T_3 :: (Tr T_3)^2 = 0 != Tr(T_3^2) = 1/2
+  PASS traceless_linear_Y_lep :: Tr(Y_lep) = 0
+  PASS nonzero_quadratic_Y_lep :: Tr(Y_lep^2) = 3/2
+  PASS distinct_lin_squared_vs_quad_Y_lep :: (Tr Y_lep)^2 = 0 != Tr(Y_lep^2) = 3/2
+  PASS traceless_linear_diag1m1 :: Tr(diag1m1) = 0
+  PASS nonzero_quadratic_diag1m1 :: Tr(diag1m1^2) = 2
+  PASS distinct_lin_squared_vs_quad_diag1m1 :: (Tr diag1m1)^2 = 0 != Tr(diag1m1^2) = 2
+  PASS traceless_linear_diag2m1m1 :: Tr(diag2m1m1) = 0
+  PASS nonzero_quadratic_diag2m1m1 :: Tr(diag2m1m1^2) = 6
+  PASS distinct_lin_squared_vs_quad_diag2m1m1 :: (Tr diag2m1m1)^2 = 0 != Tr(diag2m1m1^2) = 6
+  PASS traceless_linear_diag1m2_1 :: Tr(diag1m2_1) = 0
+  PASS nonzero_quadratic_diag1m2_1 :: Tr(diag1m2_1^2) = 6
+  PASS distinct_lin_squared_vs_quad_diag1m2_1 :: (Tr diag1m2_1)^2 = 0 != Tr(diag1m2_1^2) = 6
+
+========================================================================
+BLOCK 8: No-claim gate preservation; companion disclaims promotion
+========================================================================
+  PASS companion_declares_claim_type_meta :: companion declared claim_type=meta
+  PASS companion_disclaims_status_promotion :: companion explicitly disclaims status promotion
+  PASS companion_disclaims_new_theorem :: companion explicitly disclaims new theorem claim
+  PASS companion_disclaims_parent_edits :: companion explicitly disclaims parent edits
+  PASS companion_disclaims_dep_restoration :: companion explicitly disclaims dep grade restoration
+  PASS companion_names_invalidation_reason :: companion records the exact invalidation_reason string
+  PASS companion_names_parent_row :: companion names the parent ledger row
+  PASS companion_audit_lane_handoff_present :: companion includes audit-lane handoff section
+
+========================================================================
+SUMMARY: PASS=72 FAIL=0
+========================================================================
+FINAL_TAG: EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_DEP_RESOLUTION_HYGIENE_OK

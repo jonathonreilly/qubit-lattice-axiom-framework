@@ -1,0 +1,136 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yt_source_higgs_pole_row_normalization_no_go_hygiene_2026_06_04.py
+runner_sha256: 5d6b772b1e16f0b610d4d32d0b274cbc2f6241e88c9e7aac150f798935108e90
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+========================================================================
+Y_T Source-Higgs Pole-Row Normalization No-Go
+Dep-Resolution Hygiene Companion Runner (2026-06-04)
+========================================================================
+
+Repo root: <repo>
+Parent note: docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md
+Parent runner: scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py
+Companion source note: docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing substantive content does
+      not load-bear on the *audit grade* of its cited context dep
+      `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16`
+      (whose audit treatment changed in the graph).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no direct status change, no verdict content asserted.
+
+========================================================================
+BLOCK 1: Re-execute parent runner; expect RESULT: PASS=50 FAIL=0
+========================================================================
+  PASS parent_runner_exit_zero :: returncode=0
+  PASS parent_runner_result_line_present :: looking for 'RESULT: PASS=50 FAIL=0'
+  PASS parent_runner_no_stderr_errors :: stderr length=0
+
+========================================================================
+BLOCK 2: Gram determinant identically zero on rank-one row
+========================================================================
+  PASS gram_det_zero_(A_s=2,A_H=1) :: det=0
+  PASS gram_det_zero_(A_s=5/2,A_H=11/7) :: det=0
+  PASS gram_det_zero_(A_s=7/3,A_H=13/5) :: det=0
+
+========================================================================
+BLOCK 3: C(t)/C(t+1) = exp(m) amplitude-blind for all three rows
+========================================================================
+  PASS mass_ratio_amplitude_blind_t=0_m=1/4 :: expected=1.284025 got=(1.2840254166877414, 1.2840254166877414, 1.2840254166877414)
+  PASS mass_ratio_amplitude_blind_t=2_m=1/4 :: expected=1.284025 got=(1.2840254166877416, 1.2840254166877416, 1.2840254166877416)
+  PASS mass_ratio_amplitude_blind_t=0_m=1/2 :: expected=1.648721 got=(1.648721270700128, 1.6487212707001282, 1.6487212707001282)
+  PASS mass_ratio_amplitude_blind_t=2_m=1/2 :: expected=1.648721 got=(1.6487212707001282, 1.6487212707001284, 1.6487212707001282)
+  PASS mass_ratio_amplitude_blind_t=0_m=3/4 :: expected=2.117000 got=(2.117000016612675, 2.117000016612675, 2.117000016612675)
+  PASS mass_ratio_amplitude_blind_t=2_m=3/4 :: expected=2.117000 got=(2.117000016612675, 2.117000016612675, 2.117000016612675)
+
+========================================================================
+BLOCK 4: Gram determinant, mass, normalized residue ratio are rescaling-invariant
+========================================================================
+  PASS rescaled_gram_zero_(mu=2,lam=3/2) :: det_p=0
+  PASS rescaled_mass_ratio_unchanged_(mu=2,lam=3/2) :: ratio_ss=1.284025 expected=1.284025
+  PASS normalized_residue_ratio_unit_(mu=2,lam=3/2) :: norm_orig=1.000000000000 norm_resc=1.000000000000
+  PASS rescaled_gram_zero_(mu=7/4,lam=9/7) :: det_p=0
+  PASS rescaled_mass_ratio_unchanged_(mu=7/4,lam=9/7) :: ratio_ss=1.648721 expected=1.648721
+  PASS normalized_residue_ratio_unit_(mu=7/4,lam=9/7) :: norm_orig=1.000000000000 norm_resc=1.000000000000
+
+========================================================================
+BLOCK 5: K_Y(1)/K_Y(0) = 9/8 absorbed by lambda^2 = 9/8
+========================================================================
+  PASS k_y_kappa0_eq_8_over_9 :: k_y(0)=8/9
+  PASS k_y_kappa1_eq_1 :: k_y(1)=1
+  PASS k_y_ratio_eq_9_over_8 :: k_y(1)/k_y(0)=9/8
+  PASS k_y_absorption_lambda_sq_9_over_8 :: K_Y(1) * Res(C_HH) = 1; K_Y(0) * (9/8) * Res(C_HH) = 1
+
+========================================================================
+BLOCK 6: Parent runner contains zero generated-status or verdict references
+========================================================================
+  PASS parent_runner_no_forbidden_token::audit_state_token :: count=0
+  PASS parent_runner_no_forbidden_token::effective_state_token :: count=0
+  PASS parent_runner_no_forbidden_token::intrinsic_state_token :: count=0
+  PASS parent_runner_no_forbidden_token::bounded_grade_token :: count=0
+  PASS parent_runner_no_forbidden_token::clean_verdict_token :: count=0
+  PASS parent_runner_no_forbidden_token::conditional_verdict_token :: count=0
+  PASS parent_runner_no_forbidden_standalone::standalone_clean_grade_word :: count=0
+  PASS parent_runner_no_forbidden_standalone::standalone_unsettled_grade_word :: count=0
+
+========================================================================
+BLOCK 7: Parent note: Cited Context disclaimed; N8 framed as analogy
+========================================================================
+  PASS parent_note_disclaim_phrase_present :: phrase 'These context notes are not used to derive the no-go'
+  PASS parent_note_analogy_phrase_present :: phrase 'has the same shape as'
+  PASS parent_note_no_grade_dependence::'the no-go depends on the audit grade of' :: count=0
+  PASS parent_note_no_grade_dependence::'load-bears on the audit grade' :: count=0
+  PASS parent_note_no_grade_dependence::'load-bears on the dep audit grade' :: count=0
+  PASS parent_note_no_grade_dependence::'depends on the audit status of' :: count=0
+
+========================================================================
+BLOCK 8: Counterfactual re-execution: result independent of dep grade
+========================================================================
+  PASS parent_runner_idempotent_exit_code :: rc_baseline=0 rc2=0
+  PASS parent_runner_result_line_idempotent :: line1='RESULT: PASS=50 FAIL=0' line2='RESULT: PASS=50 FAIL=0'
+  PASS parent_runner_no_stderr_on_second_run :: stderr length=0
+
+========================================================================
+BLOCK 9: Parent note: five-route no-go discipline names preserved
+========================================================================
+  PASS parent_note_route_name::Gram-purity route :: phrase 'Gram-purity route'
+  PASS parent_note_route_name::Mass-extraction route :: phrase 'Mass-extraction route'
+  PASS parent_note_route_name::Residue-ratio route :: phrase 'Residue-ratio route'
+  PASS parent_note_route_name::kappa_Y absorption route :: phrase 'kappa_Y absorption route'
+  PASS parent_note_route_name::Absolute-residue route :: phrase 'Absolute-residue route'
+
+========================================================================
+BLOCK 10: Parent note: positive-closure path explicitly open
+========================================================================
+  PASS parent_note_positive_closure_phrase::canonical O_H :: phrase 'canonical O_H'
+  PASS parent_note_positive_closure_phrase::canonical scalar LSZ normalization :: phrase 'canonical scalar LSZ normalization'
+  PASS parent_note_positive_closure_phrase::source/action :: phrase 'source/action'
+  PASS parent_note_positive_closure_phrase::W/Z :: phrase 'W/Z'
+
+========================================================================
+BLOCK 11: Companion-only metadata sanity
+========================================================================
+  PASS companion_note_claim_type_meta :: looking for explicit claim_type meta declaration
+  PASS companion_note_type_is_meta_audit_companion :: looking for 'meta (audit-companion' framing
+  PASS companion_note_status_companion_only :: looking for 'companion-only' status framing
+  PASS companion_note_no_forbidden_status::audit_clean_field :: count=0
+  PASS companion_note_no_forbidden_status::audit_conditional_field :: count=0
+  PASS companion_note_no_forbidden_status::audit_clean_grade_field :: count=0
+  PASS companion_note_no_forbidden_status::audit_bounded_grade_field :: count=0
+  PASS companion_note_no_forbidden_status::effective_clean_grade_field :: count=0
+  PASS companion_note_no_forbidden_status::effective_bounded_grade_field :: count=0
+  PASS companion_note_no_forbidden_status::effective_clean_field :: count=0
+  PASS companion_runner_no_write_to::audit_ledger.json :: write-mention lines=0
+  PASS companion_runner_no_write_to::audit_queue.json :: write-mention lines=0
+
+========================================================================
+SUMMARY: PASS=60 FAIL=0
+========================================================================
+
+----- stderr -----
+

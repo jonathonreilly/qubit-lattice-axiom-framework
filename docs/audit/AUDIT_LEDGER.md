@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 168 |
+| **retained** | 169 |
 | **retained_no_go** | 176 |
 | **retained_bounded** | 641 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1329 |
+| unaudited | 1328 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 23 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 975 |
+| `audited_clean` | 976 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1613 |
+| `unaudited` | 1612 |
 
 | claim_type | count |
 |---|---:|
@@ -99,7 +99,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1231 | 63.27 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1231 | 67.27 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1015 | 57.99 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 775 | 56.60 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1171 | 49.20 | `audited_clean` | **retained** |
@@ -1024,6 +1024,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `unification_basin_failure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15439,6 +15440,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The conclusion follows by substituting the retained K4 dimensional readout dim_C V = 2 into the stated tadpole convention. The proof does not require any numerical plaquette value or downstream running input.
 - **rationale:** The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited that the accepted one-qubit-per-site Quantum axiom, together with the retained Cl(3,0) ~= M_2(C) algebra result and standard matrix-algebra representation theory, closes the former U4 per-site k=1 Hilbert-space bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-203917-c517461246-u4_closes_under_qubit_refram`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The qubit-per-site baseline directly specifies H_x = C^2 with A_x = M_2(C) acting irreducibly, so k(x)=1, and the retained Cl(3,0) ~= M_2(C) algebra result identifies this with the single faithful complex Cl(3) irrep.  _(class `C`)_
+- **chain closes:** True — The current axiom packet explicitly supplies one qubit as the primitive one-site physical degree of freedom, and the accepted-premise carve-out allows that axiom to support a class C closure. The retained Cl(3) authority supplies the M_2(C) ~= Cl(3,0) identification and two-dimensional faithful-irrep readout; no open staggered-Dirac bridge is needed for this narrow U4 statement.
+- **rationale:** This is not audited_decoration under cl3_complexification_split alone because the load-bearing physical k=1 selection comes from the accepted Quantum axiom's one-qubit-per-site clause, not merely from ordinary algebra applied to the retained Cl(3) parent. It is also not a bare renaming: the note uses the axiom's one-qubit physical carrier plus standard M_2(C) representation theory to close a previously open physical-Hilbert-space identification. The missing runner output is not load-bearing here because the closure is inspectable from the restricted text and cited authorities.
 - **auditor confidence:** high
 
 ### `unification_basin_failure_note`

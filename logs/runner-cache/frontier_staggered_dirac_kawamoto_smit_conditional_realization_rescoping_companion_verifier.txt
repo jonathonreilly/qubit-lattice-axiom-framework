@@ -1,0 +1,9 @@
+[PASS] epsilon flips on every checked nearest-neighbor link
+[PASS] omega(x)=epsilon(x) omega_global gives the required sign reversal across links
+[PASS] Kawamoto-Smit eta_1 is identically one
+[PASS] Kawamoto-Smit eta_2 is (-1)^x_1
+[PASS] Kawamoto-Smit eta_3 is (-1)^(x_1+x_2)
+[PASS] global phase gauge cancels in the chirality ratio
+
+SCORECARD PASS=6 FAIL=0
+FINDING: H_staggered_chirality is a clean conditional premise; given it, the checked Kawamoto-Smit phase surface is consistent.

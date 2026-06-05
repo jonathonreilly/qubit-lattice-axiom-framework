@@ -47,13 +47,17 @@ Equivalently, the PDG-extracted phase on the same Brannen-BAE chamber is
 
 ```text
 delta_PDG = 0.222270... radians,
-delta_PDG - 2/9 = 0.000047... radians.
+delta_PDG - 2/9 = 0.000048265... radians.
 ```
 
 This is useful downstream only if a future retained dynamics row derives
 or admits the phase `delta = 2/9` for the charged-lepton readout. Until
 then, the result is an open gate plus empirical comparator, not a
 retained lepton-mass theorem.
+
+The displayed phase gap is comparator arithmetic only. Correcting it does
+not derive `delta = 2/9`, the `sqrt(2)` Brannen/BAE coefficient, or the
+dimensionful charged-lepton scale.
 
 ## Algebraic Inputs
 

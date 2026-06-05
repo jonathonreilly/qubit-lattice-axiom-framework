@@ -18,6 +18,20 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md"
 ORIGINAL = ROOT / "scripts" / "frontier_teleportation_resource_from_poisson.py"
+HELPER = ROOT / "scripts" / "frontier_bell_inequality.py"
+HELPER_REQUIRED = (
+    "def build_H1",
+    "def build_H2_tensor",
+    "def build_pair_hop_X",
+    "def build_poisson",
+    "def build_sublattice_Z",
+    "def build_cell_taste_operator",
+    "def taste_identity_check",
+    "def chsh_horodecki",
+    "def lattice_1d",
+    "def lattice_2d",
+    "def lattice_3d",
+)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -74,19 +88,35 @@ def main() -> int:
     print()
     print("B. Dependency hygiene")
     print("-" * 72)
+    helper_source = HELPER.read_text(encoding="utf-8")
+    stale_axiom_pair = "A" + "1+A" + "2"
+    stale_status_token = "retain" + "ed_bounded"
     check(
         "stale minimal axiom link removed",
-        "MINIMAL_AXIOMS_2026-05-03.md" not in note,
+        "MINIMAL_AXIOMS_2026-05-03.md" not in note
+        and "MINIMAL_AXIOMS_2026-05-20.md" not in note
+        and stale_axiom_pair not in note,
     )
     check(
-        "current canonical axiom premise cited",
-        "MINIMAL_AXIOMS_2026-05-20.md" in note,
+        "current named framework baseline cited",
+        "MINIMAL_AXIOMS_2026-06-04.md" in note
+        and "Lattice, Quantum, and Record" in note,
     )
     check(
         "adjacent notes are source references, not status imports",
         "Ledger snapshot" not in note
         and "audited_clean" not in note
-        and "retained_bounded" not in note,
+        and stale_status_token not in note,
+    )
+    check(
+        "Poisson/CHSH helper source is linked in note",
+        "Load-bearing helper source" in note
+        and "scripts/frontier_bell_inequality.py" in note,
+    )
+    check(
+        "Poisson/CHSH helper source is present and untruncated",
+        len(helper_source.splitlines()) > 500
+        and all(required in helper_source for required in HELPER_REQUIRED),
     )
 
     print()
@@ -117,6 +147,22 @@ def main() -> int:
     check(
         "original runner reports diagnostic-only postselection",
         "Postselected branches" in output and "diagnostics only" in output,
+    )
+    check(
+        "original runner exposes helper source packet",
+        "Source packet: scripts/frontier_bell_inequality.py" in output
+        and "required_symbols=11 PASS" in output,
+    )
+    check(
+        "original runner verifies last-taste carrier checks",
+        "Last-taste carrier checks:" in output
+        and "X=xi_last/logical-flip PASS" in output
+        and "Z_last Pauli PASS" in output,
+    )
+    check(
+        "original runner reconciles null Bell-label tie",
+        "traced Bell max-label tie: Phi+, Psi+" in output
+        and "best fixed-env postselected branch: Bell overlap=0.500000 (Psi+)" in output,
     )
     check(
         "original runner does not promote the result",

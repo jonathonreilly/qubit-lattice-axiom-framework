@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 172 |
-| **retained_no_go** | 179 |
+| **retained_no_go** | 180 |
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1305 |
+| unaudited | 1304 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 984 |
+| `audited_clean` | 985 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1589 |
+| `unaudited` | 1588 |
 
 | claim_type | count |
 |---|---:|
@@ -250,6 +250,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_color_automorphism_theorem` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3087,6 +3088,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The separator, non-equivalence for opposite Schur scalars, and idempotent factorisation follow algebraically from the retained central pseudoscalar identity/split plus Schur's lemma and Artin-Wedderburn. No physical bridge, lattice carrier, fitted input, or external comparator is used.
 - **rationale:** The mathematical chain is internally correct and closes from the retained one-hop authority plus standard finite-dimensional complex representation theory. The primary runner performs exact symbolic Pauli/idempotent/intertwiner checks and reports PASS=42, FAIL=0, with no helper opacity. Under the rubric, however, every load-bearing step is class A, there are zero D checks, and the note reduces to an algebraic consequence of a single retained upstream split theorem rather than a new independent first-principles computation.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04`
+
+- **Note:** [`CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md`](../../docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the narrow algebraic claim on V=R^3 that the L4 anticommuting family forces the singlet axis to (1,1,1), while C3-symmetric native cube structures do not force the required doublet vector h; the tested C3-breaking candidates are orbit choices or wrong operator class, and J_cs is a separate commuting-side route.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-f493357e93-cl3_chiral_body_diagonal_axi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Against the singlet plus doublet split of Gamma_chi, symmetric anticommuting H has only singlet-doublet off-diagonal blocks, while every C3-equivariant symmetric native operator has scalar doublet block and therefore cannot select a doublet h.  _(class `A`)_
+- **chain closes:** True — The block decomposition of Gamma_chi gives the anticommuting family directly, and Schur/circulant algebra gives doublet isotropy for C3-equivariant symmetric content. The no-go is scoped narrowly to this axis-versus-h sourcing question and does not claim closure of the separate block-count or future chirality-sourcing routes.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: Gamma_chi = diag(+1,-1,-1) forces symmetric anticommuting H to be purely singlet-doublet mixing, and C3-equivariant symmetric operators remain scalar on the doublet plane. The runner source materially computes the relevant matrices rather than merely printing constants, and its outputs match the restricted proof. The no-go discipline boundary is respected: the result is not an absolute Koide no-go and explicitly leaves the J_cs block-count route and possible upstream C3-breaking mechanisms out of scope.
 - **auditor confidence:** high
 
 ### `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27`

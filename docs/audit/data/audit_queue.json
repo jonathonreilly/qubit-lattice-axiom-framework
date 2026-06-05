@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 269,
     "high": 284,
-    "leaf": 429,
+    "leaf": 428,
     "medium": 325
   },
   "cycle_break_target_count": 0,
@@ -27008,34 +27008,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
-        "flavor_native_double_shift_corner_coupling_note_2026-05-30",
-        "flavor_block_count_native_via_jcs_note_2026-05-30"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/cl3_chiral_body_diagonal_source.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -39214,6 +39186,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 102,
-  "total_pending": 1307
+  "ready_count": 101,
+  "total_pending": 1306
 }

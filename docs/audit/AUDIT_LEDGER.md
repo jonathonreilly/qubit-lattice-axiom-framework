@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 177 |
 | **retained_no_go** | 188 |
-| **retained_bounded** | 664 |
+| **retained_bounded** | 665 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1250 |
+| unaudited | 1249 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1023 |
+| `audited_clean` | 1024 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1534 |
+| `unaudited` | 1533 |
 
 | claim_type | count |
 |---|---:|
@@ -597,6 +597,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_carrier_locus_decomposition_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_wilson_target_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9088,6 +9089,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The conclusion follows from the stated `3 x 3` cyclic-shift algebra and the retained order-three generation surface by direct matrix identities. The negative scope is properly narrow: it closes only the scalar generator-rephasing route and explicitly leaves non-circulant or tensor-factor routes open.
 - **rationale:** The load-bearing step is a genuine algebraic identity, not a definition, numerical fit, or external comparator check. The displayed rotation formulas for `B1,B2`, the cube-root quantization, the commuting-centralizer claim, and the diagonal phase proportionality criterion all check under the note's conventions. The runner source performs the relevant finite-dimensional matrix computations rather than merely printing constants, and its extra Koide-context checks are not needed for the audited obstruction. The no-go discipline gate is satisfied at the narrow route level because the note does not claim a global absence of continuous doublet actions.
 - **auditor confidence:** high
+
+### `koide_carrier_locus_decomposition_note_2026-06-01`
+
+- **Note:** [`KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md`](../../docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded source decomposition localizing the remaining matter-operator import to M while verifying the staggered/Wilson corner correction, S3-invariant hw=1 labels, L2 single-mode count, L3a epsilon-oddness given range-1, and the residual Z2 Hodge-orientation bit.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-233013-f51dcd8ff6-koide_carrier_locus_decompos`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The statistics and range imports couple on the cross-site hopping bilinear, so the remaining non-native input is the scoped matter operator statement: M is the first-order, cross-site-anticommuting fermionic, chiral {epsilon,D}=0 staggered operator; the carrier locus adds no separate import.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade authorities plus finite algebra/combinatorics support the corrected mislabels and the native subclaims. The unclosed matter-frame and records-pointer selections are explicitly left as scoped imports or residuals, not claimed as derived.
+- **rationale:** The load-bearing step is an algebraic decomposition over retained-grade inputs, not an external numerical match or definition substitution. Independent checks confirm the displayed finite identities: staggered zeros at all eight corners, Wilson zero only at hw=0, hw-shell sizes and invariant label uniqueness, nearest-neighbor epsilon oddness, and the 2x2 Pfaffian sign behavior. The runner includes one narrative always-true check about gauge_wilson_isotropy being the wrong wall, but that is supported by the cited authority's scoped plaquette-coefficient boundary and is not the sole basis for closure. Open physical identifications in upstream notes are not propagated as closed because this note keeps them outside the audited claim boundary.
+- **auditor confidence:** medium
 
 ### `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`
 

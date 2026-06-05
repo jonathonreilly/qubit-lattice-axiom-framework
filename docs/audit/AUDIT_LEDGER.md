@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 623 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1363 |
+| unaudited | 1362 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 37 |
+| ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 949 |
-| `audited_conditional` | 37 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1647 |
+| `unaudited` | 1646 |
 
 | claim_type | count |
 |---|---:|
@@ -1106,6 +1106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8155,6 +8156,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since d raises form degree and delta lowers form degree, D_KD=d-delta has zero Lambda^k -> Lambda^k blocks, including the Lambda^1 candidate generation block, while the determinant/Pfaffian and Jcs checks only localize the remaining measure binary.  _(class `A`)_
 - **chain closes:** True — The grade-off-diagonal statement follows directly from the form-degree shifts d: Lambda^p -> Lambda^{p+1} and delta: Lambda^p -> Lambda^{p-1}; the determinant/Pfaffian and Jcs identities are exact finite matrix algebra. The note explicitly leaves the matter-action real-antisymmetric bilinear as an open binary, so that bridge is not required for the bounded conclusion.
 - **rationale:** The load-bearing steps are class A algebraic closures over retained-grade inputs: zero grade-diagonal D_KD blocks, det(M)=(a+2b)(a-b)^2, det(M tensor eps)=det(M)^2, Jcs^2=-P_doublet, and the one-dimensional C3-equivariant antisymmetric direction. The runner source actually constructs the matrices and symbolic determinants rather than hard-coding the contested conclusions, and independent finite checks confirm the displayed target identities. No external comparator, tuned numerical input, or closed Koide-measure claim is imported; the no-go language is bounded to the checked routes and leaves the bilinear route open.
+- **auditor confidence:** high
+
+### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The standalone Herm_circ(3) projector/Frobenius/equal-weight optimizer identities and the claimed d=3 uniqueness of the real-irrep multiplicity pattern among d in {2,3,4,5,6}, excluding physical weighting-selection claims.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-171647-178d23537c-koide_kappa_block_total_frob`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The b_k parametrization gives one real scalar at k=0, one real 2-dimensional doublet for each pair {k,d-k}, and one sign scalar when d is even; combined with C^dagger=C^2 and tr(C)=tr(C^2)=0 this yields the stated projector, Frobenius, optimizer, and multiplicity claims.  _(class `A`)_
+- **chain closes:** False — T1-T3 close by direct matrix algebra and the log-simplex optimization. T4 and the isotype labels require a specific nontrivial Z_d conjugation action on the circulant basis, but the packet never defines that action; conjugation by the explicitly defined cyclic shift would be trivial on Herm_circ(d).
+- **rationale:** The runner genuinely checks the T1-T3 symbolic identities, and its PASS output is consistent for those algebraic pieces. For T4, however, the runner only implements the stated coefficient-pair counting formula and expected table; it does not construct or verify the claimed Z_d conjugation representation. The source proof jumps from coefficient pairing to real-irrep multiplicities without defining the action, so the four-part theorem as scoped is conditional on that missing representation/action bridge.
 - **auditor confidence:** high
 
 ### `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`

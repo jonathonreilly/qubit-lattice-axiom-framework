@@ -1,0 +1,73 @@
+================================================================
+Part A. Unit-cube edge classes by squared Euclidean length
+================================================================
+  dist^2=1 (nearest-neighbor (edge)): 12 pairs
+  dist^2=2 (face-diagonal): 12 pairs
+  dist^2=3 (body-diagonal): 4 pairs
+[PASS] Part A: 12 NN edges per cube  (got 12)
+[PASS] Part A: 12 face-diagonals per cube  (got 12)
+[PASS] Part A: 4 body-diagonals per cube  (got 4)
+[PASS] Part A: 28 total vertex pairs = C(8,2)
+
+================================================================
+Part B. S1: hw=1 generation orbit geometry
+================================================================
+  (1, 0, 0) <-> (0, 1, 0): dist^2=2 (face-diagonal)
+  (1, 0, 0) <-> (0, 0, 1): dist^2=2 (face-diagonal)
+  (0, 1, 0) <-> (0, 0, 1): dist^2=2 (face-diagonal)
+[PASS] S1: all three hw=1 pairs are face-diagonal (dist^2=2)  (dist^2 set = {2})
+[PASS] S1: no hw=1 pair is NN (dist^2=1)  (NN adjacency does NOT connect the generation orbit)
+  => generation orbit is invisible to NN, visible to face-diagonal.
+
+================================================================
+Part C. S2: face-diagonal pair-connections generate u(3)
+================================================================
+  generators from 3 face-diagonal pairs: 12 (4 each)
+  Lie algebra dimension generated: 9
+[PASS] S2: pairwise u(2) closes to u(3) (dim 9)  (dim=9)
+[PASS] S2: u(3) contains the central u(1) phase iI
+  (orthonormalized basis trace-free count proxy: 7)
+  => color SU(3) is dimension-SUFFICIENT once the three generation
+     pairs are simultaneously connected (face-diagonal supplies that).
+
+================================================================
+Part D. S3: chirality grading on the wider face-diagonal class
+================================================================
+[PASS] S3: Gamma_chi spectrum is {+1,-1,-1}  ([-1.0, -1.0, 1.0])
+[PASS] S3: circulant (C3-equivariant) H cannot anticommute with Gamma_chi  (min |{H,G}|/|H| = 2.0000 (no-go confirmed))
+[PASS] S3: single face-diagonal H anticommutes with a Z2 grading  (|{H,Gamma}| = 0.00e+00)
+[PASS] S3: that grading squares to I (Z2 chirality)
+[PASS] S3: that H is NOT C3-equivariant ([H,R] != 0)
+  => face-diagonal coupling lies OUTSIDE the no-go's circulant scope;
+     chirality grading is AVAILABLE. (Selection of non-circulant vs
+     symmetric-circulant remains a separate open question.)
+
+================================================================
+Part E. S4: r = 1/2 from the face-diagonal length sqrt(2)
+================================================================
+  Brannen circulant Y = a I + b C + conj(b) C^2; r = |b|^2 / a^2.
+  r = 1/2  <=>  |b|/a = 1/sqrt(2) = 0.70710678...
+    geometric length 1/sqrt(2) (face-diag length sqrt2 vs NN length 1): |b|/a=0.707107 -> r=0.500000  <== r = 1/2
+    inverse-distance 1/dist = 1/sqrt(2)                           : |b|/a=0.707107 -> r=0.500000  <== r = 1/2
+    K0-real block ratio 1/sqrt(2) (1 singlet vs 2-real-dim doublet): |b|/a=0.707107 -> r=0.500000  <== r = 1/2
+    inverse-square-distance 1/dist^2 = 1/2                        : |b|/a=0.500000 -> r=0.250000
+    path-count 2 (two NN paths per face-diagonal)                 : |b|/a=2.000000 -> r=4.000000
+    equal weight b = a                                            : |b|/a=1.000000 -> r=1.000000
+[PASS] S4: |b|/a = 1/sqrt(2) gives r exactly 1/2
+[PASS] S4: at least three independent natural conventions give r=1/2  (3 of 6 conventions hit r=1/2)
+[PASS] S4: the geometric origin of 1/sqrt(2) is the face-diagonal length
+  => the discrete lattice supplies a CONTINUOUS geometric datum
+     (sqrt(2)) which, as the face-diagonal amplitude weight, lands
+     r = 1/2 exactly. This is the load-bearing claim of the build:
+     whether this weighting is FORCED (not merely natural) is the
+     open question the deep-dive phases must resolve.
+
+================================================================
+SUMMARY: PASS=16 FAIL=0
+================================================================
+Foundation established. All four scout questions reduce to finite
+linear-algebra facts that hold. The single structural change —
+face-diagonal adjacency with sqrt(2) length weighting — touches all
+three open gates (color, chirality, r=1/2). Deep-dive phases test
+whether each gate CLOSES or only REFRAMES, with the sqrt(2)-forcing
+question for r=1/2 as the load-bearing centerpiece.

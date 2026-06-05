@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 644 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 30 |
-| unaudited | 1315 |
+| unaudited | 1314 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
-| ~~audited_renaming~~ | 25 |
+| ~~audited_renaming~~ | 26 |
 | ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -65,8 +65,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
-| `audited_renaming` | 25 |
-| `unaudited` | 1599 |
+| `audited_renaming` | 26 |
+| `unaudited` | 1598 |
 
 | claim_type | count |
 |---|---:|
@@ -1307,6 +1307,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -16721,6 +16722,21 @@ Why this blocks: separate retained bounded status would duplicate a direct algeb
 Repair target: box this row under yt_ew_color_projection_theorem, or re-promote only if a future revision adds independent content beyond common-factor cancellation.
 Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero EW coupling rescaling is exact algebra, but it is decoration rather than an independent theorem.
 - **decoration parent:** `yt_ew_color_projection_theorem`
+- **auditor confidence:** high
+
+### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`
+
+- **Note:** [`YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic compatibility between the Y_T primitive signed source record/product RN score and a chosen local Pauli sharp-projective signed readout, excluding source/action EW-Higgs authority, O_H, LSZ, pole rows, kappa_Y, y_t, and matching.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-211501-cd6c02d552-yt_lsp_signed_record_source_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the qubit/LSP readout above, the RN score epsilon_x is identified with the signed spectral readout of the local projective measurement of sigma_z(x).  _(class `F`)_
+- **chain closes:** False — The finite Pauli projection identities, RN score identity, normalized multiplication law, and log-odds uniqueness argument check out. The missing step is a retained bridge that makes the already-defined Y_T primitive source record the outcome of the specified sigma_z projective readout rather than a label-identical carrier.
+- **rationale:** The displayed formulas independently check: P_+ and P_- are complementary projections, P_+ - P_- = sigma_z, d log R_h / d h_x at h=0 equals epsilon_x, and the smooth log-odds composition condition reconstructs the exponential RN family. The runner genuinely computes those finite algebraic checks and performs dependency/boundary string checks, with no external comparator or tuned numerical input. However, the headline equality between the Y_T source record and the Pauli readout is the load-bearing move, and the restricted packet does not derive that bridge from the cited authorities; it assigns the same signed label to two compatible concepts.
+- **open / conditional deps cited:**
+  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
 - **auditor confidence:** high
 
 ### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`

@@ -1,0 +1,99 @@
+[PASS] 1.1 exact dial Q=1/3+(2/3)r: Q(0)=1/3, Q(1/2)=2/3, Q(1)=1 (Koide line)
+       r=1/2 <=> Q=2/3 is the charged-lepton Koide point on this exact line
+[PASS] 1.2 operator cross-check: koide_Q(H(r)) matches 1/3+(2/3)r at r in {0,1/2,1}
+       spectra: r=0->[1,1,1] (Q=1/3), r=1/2->[2.41,.29,.29] (Q=2/3), r=1->[3,0,0] (Q=1)
+[PASS] 2.1 SHARPENING arrow = Lueders p->p^2/Z on 2-sector distribution = sharpen(r)=2r^2 EXACTLY
+       records-get-sharper = entropy-DECREASING (observer/collapse) flow on the dial
+[PASS] 2.2 sharpen fixed points {0,1/2}; |f'(0)|=0<1 STABLE, |f'(1/2)|=2>1 UNSTABLE separatrix
+       multipliers: f'(0)=0.0, f'(1/2)=2.0
+[PASS] 2.3 sharpen: seeds<1/2 -> 0 (singlet collapse), seeds>1/2 -> inf (projective doublet collapse)
+       r=1/2 is the repelling WATERSHED of the sharpening flow -> Q=2/3 a knife-edge under arrow (a)
+[PASS] 3.1 therm(r)=sqrt(r/2) is the EXACT INVERSE branch of sharpen: therm(sharpen(r))=r and back
+       => the stability 'contradiction' is NOT algebraic; it is purely an ARROW choice
+[PASS] 3.2 therm fixed points {0,1/2}; |g'(1/2)|=1/2<1 STABLE attractor (r=0 unstable, g'->inf)
+       g'(1/2)=0.5; reversing the sharpening arrow flips r=1/2 repeller->attractor
+[PASS] 3.3 therm: ALL positive seeds (0.05..5.0) converge to r=1/2 (global attractor of the reverse arrow)
+       under arrow (b1)=thermalize, r=1/2 (Q=2/3) is the unique stable interior setting
+[PASS] 4.1 H=aI+bC+conj(b)C^2 is ALREADY block-diagonal in {P0,P1} for EVERY (r,delta) (||P0 H P1||~0)
+       max off-block over (r,delta) grid = 6.3e-16 -- by C3-invariance, NOT a tuning
+[PASS] 4.2 EINSELECTION pointer map D(rho)=P0 rho P0+P1 rho P1 is a literal NO-OP on H-built states
+       EVERY r is a fixed point of the genuine pointer map -> einselection-as-dephasing is FLAT in r (multiplier 1, marginal): it neither stabilizes NOR destabilizes r=1/2
+[PASS] 4.3 r reconstructed from D(H)'s block content equals input r (multiplier=1, marginal) -- non-circular: reconstruction verified faithful
+       reconstruct_r faithful (=2r): True; d r_hat(D(H))/d r_hat(H) at 1/2 = 1.000000 -> the genuine pointer map gives a FLAT LINE of fixed points; r=1/2 is NOT an attractor of einselection-as-dephasing; the dephasing reading does NOT supply the relaxation toward 1/2
+[PASS] 5.1 Born/tracial max-entropy rho=I/3 weights blocks by DIMENSION (1/3,2/3) -> r=1 -> Q=1 (NOT r=1/2)
+       the genuine second-law/Born equilibrium of the open system is r=1, the maximal-hierarchy lane
+[PASS] 5.2 r=1/2 needs the equal-POWER-per-block (block-counting/det_C) weighting (1/2,1/2), a SEPARATE input
+       block-COUNTING measure -> r=1/2 (Q=2/3); block-DIMENSION (Born) measure -> r=1 (Q=1)
+[PASS] 5.3 2-sector entropy S2 peaks at r=1/2; 3-DOF/dimension entropy S3 peaks at r=1 (the partition gate)
+       argmax S2=0.500 (block-counting->1/2), argmax S3=1.000 (dimension/Born->1)
+[PASS] 6.1 SHARPENING makes 2-sector PURITY (distinguishability) monotone NON-DECREASING (records sharpen, can't unform)
+       => the LITERAL 'records can't unform / monotone accumulation' reading is the SHARPENING arrow (a)
+[PASS] 6.2 THERMALIZING makes 2-sector ENTROPY monotone NON-DECREASING (relaxation to equipartition = second law)
+       => the EINSELECTION-EQUILIBRATION reading is the THERMALIZING arrow (b1): entropy up, relax to 1/2
+[PASS] 6.3 the two irreversibility monotones DISAGREE at r=1/2: purity-monotone repels it, entropy-monotone attracts it
+       HONEST CRUX: 'records can't unform' literally = purity-up = sharpening = r=1/2 UNSTABLE; 'records relax to a stable persistent correlation' = entropy-up/einselection-equilibration = r=1/2 STABLE
+[PASS] 7.1 sharpening's STABLE ends are degenerate collapses (r=0->[1,1,1] Q=1/3; r->inf doublet collapse), NOT a balanced persistent record
+       max-sharpening DESTROYS the 3-distinct-record structure; a *persistent* balanced record is not a collapse end
+[PASS] 7.2 the THERMALIZING attractor r=1/2 is the balanced interior PERSISTENT setting (stable under continued relaxation)
+       IF 'record' = persistent stable correlation (einselection pointer state), the record-arrow is thermalizing/equilibration and r=1/2 is its attractor -- the STRONGER reading
+[PASS] 8.1 RECONCILIATION: same fixed point {0,1/2}, inverse branches; r=1/2 UNSTABLE under sharpen, STABLE under therm
+       multiplier product f'(1/2)*g'(1/2)=1.000=1 (inverse-branch identity) -> stability is reciprocal
+[PASS] 8.2 the einselection-DEPHASING map is the marginal (mult=1) midpoint: it does NOT by itself stabilize r=1/2
+       so 'einselection makes r=1/2 stable' holds ONLY in the EQUILIBRATION reading (relax-to-attractor=therm), NOT in the literal dephasing reading (which is flat)
+[PASS] 9.1 sharpening stable set = {0} only; thermalizing stable set = {1/2} only -- neither 1-D arrow makes {0,1/2,1} all stable
+       sharpen-stable=[0.0], therm-stable=[0.5]; r=1 is not even a finite fixed point of either map
+[PASS] 9.2 the 3 lanes are stable under 3 DISTINCT arrows/measures: r=0 (sharpening/spectral), r=1/2 (thermalizing/block-counting), r=1 (Born/dimension)
+       multi-stability holds ACROSS the measure/arrow choice (the partition gate), not within one fixed flow; 'records can't unform' picks ONE arrow -> ONE stable lane, not a coexisting triple
+[PASS] 10.1 along the dial, the 2-sector entropy S2 has S2''(1/2)<0 (a genuine MAX) -> r=1/2 IS a 1-D entropy attractor
+       S2''(1/2)=-1.0000<0; on the 1-D dial r=1/2 is a real entropy maximum (attractor of the 2-sector relaxation)
+[PASS] 10.2 r=1/2 = HS 2-sector EQUIPARTITION ||aI||^2=||bC+b̄C^2||^2 (3a^2=6|b|^2): the self-dual symmetric setting
+       r=1/2 is the DISTINGUISHED SYMMETRIC (block-balanced/self-dual) point regardless of arrow -- the reframe's 'distinguished symmetric setting'
+[PASS] 11.1 honesty guard: 3-mode spectral Lueders sharpening does NOT fix the r=1/2 spectrum (the dial fixed point is special to the 2-sector reduction)
+       ||spectral-sharpen(w_1/2) - w_1/2||=0.034>0 -> r=1/2 fixed point lives on the REDUCED 2-sector dial, consistent with commit d7c85611e axis (b)
+[PASS] 12.1 SYNTHESIS booleans consistent: therm-stable & sharpen-unstable & dephasing-marginal & Born->r=1
+       r=1/2 stability is arrow-dependent; honest net = SEPARATRIX-SADDLE under the literal 'records can't unform' (purity/sharpening) arrow, STABLE only under the equilibration (relax-to-pointer) reading
+
+SCORECARD PASS=27 FAIL=0
+==============================================================================
+VERDICT (einselection arrow, angle B):  SEPARATRIX-SADDLE-ONLY
+------------------------------------------------------------------------------
+WHICH ARROW does 'irreversible record-formation' pick?
+  * The LITERAL 'records can't unform / monotone accumulation' clause = the
+    monotone in which 2-sector PURITY (distinguishability) never decreases
+    = the SHARPENING arrow sharpen(r)=2r^2. Under it r=1/2 is the UNSTABLE
+    separatrix (multiplier 2): the natural reading of 'irreversible'.
+  * The EINSELECTION-EQUILIBRATION reading ('a record is a PERSISTENT stable
+    correlation; the system RELAXES to the einselection-stable pointer setting')
+    = the THERMALIZING arrow therm(r)=sqrt(r/2). Under it r=1/2 is the unique
+    interior ATTRACTOR (multiplier 1/2). This is the stronger 'record =
+    persistent stable correlation' reading -- but it is the entropy-UP arrow,
+    not the literal purity-UP 'can't unform' one.
+  * The GENUINE einselection pointer/DEPHASING map P0(.)P0+P1(.)P1 is a literal
+    NO-OP on the generation circulant (already block-diagonal): multiplier 1,
+    MARGINAL -- it neither stabilizes nor destabilizes r=1/2. So 'einselection
+    stabilizes r=1/2' is true ONLY in the relax-to-attractor (thermalizing)
+    reading, NOT in the literal dephasing reading.
+ATTRACTOR-OR-SADDLE:
+  * On the 1-D dial, r=1/2 IS a genuine 2-sector-ENTROPY maximum (S2''<0) and
+    the attractor of the thermalizing branch -- a real attractor of THAT arrow.
+  * On the full doublet density-operator space the records-flow Hessian is
+    rank-1, spectrum {-3/4,0,0} (degenerate): a SYMMETRIC saddle, not a generic
+    basin (commit d7c85611e).  And the genuine second-law/Born equilibrium is
+    r=1 (dimension weighting), NOT r=1/2 (block-counting weighting).
+MULTI-STABILITY:
+  * No single 1-D arrow makes {r=0, r=1/2, r=1} simultaneously stable. The three
+    Koide lanes are the attractors of THREE DISTINCT measures/arrows (spectral/
+    sharpening -> r=0; block-counting/thermalizing -> r=1/2; dimension/Born -> r=1).
+    The record axiom's irreversibility clause picks ONE arrow -> ONE stable lane;
+    multi-stability is realized ACROSS the measure choice (the standing partition
+    gate), not as a coexisting triple of one flow.
+------------------------------------------------------------------------------
+NET: r=1/2 is a DISTINGUISHED SYMMETRIC SETTING (HS 2-sector equipartition,
+self-dual, a 2-sector-entropy max). It is a TRUE ATTRACTOR of the thermalizing/
+equilibration arrow but only a SYMMETRIC SADDLE under the literal 'records can't
+unform' (purity-sharpening) arrow, and the literal einselection dephasing map is
+flat (marginal) in r. Honest verdict: SEPARATRIX-SADDLE-ONLY for the literal
+irreversible arrow; STABLE-UNDER-RECORD-ARROW only if 'record-formation' is read
+as einselection-equilibration. The arrow choice is the open object (= the
+standing block-counting-vs-Born partition gate), NOT closed here.
+==============================================================================

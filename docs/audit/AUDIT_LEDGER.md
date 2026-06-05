@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 175 |
 | **retained_no_go** | 182 |
-| **retained_bounded** | 648 |
+| **retained_bounded** | 649 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1288 |
+| unaudited | 1287 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 996 |
+| `audited_clean` | 997 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1572 |
+| `unaudited` | 1571 |
 
 | claim_type | count |
 |---|---:|
@@ -245,6 +245,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_layer_oscillation_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_split_mass_gravity_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `chsh_structural_bound_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -3010,6 +3011,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Landau identity S_op^2 = 4I - [Ã_0, Ã_1][B̃_0, B̃_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2√2.  _(class `A`)_
 - **chain closes:** True — The classical proof is a finite sign enumeration and the quantum proof is an exact operator identity plus standard norm inequalities under the stated tensor-product involution hypotheses. The runner source performs genuine symbolic and numerical checks rather than merely printing pass lines.
 - **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
+- **auditor confidence:** high
+
+### `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20`
+
+- **Note:** [`CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`](../../docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For two distinct Z^3 qubit sites with M_2(C) local algebras and dichotomic self-adjoint involution observables, the two-site CHSH operator has norm at most 2√2, with the standard Bell/Pauli witness saturating the bound.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-201211-c9d4dc22af-chsh_tsirelson_lattice_qubit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the Landau identity C^2 = 4I - [A_1,A_2] ⊗ [B_1,B_2] and the commutator bounds ||[A_1,A_2]||, ||[B_1,B_2]|| <= 2 gives ||C||^2 <= 8, hence ||C|| <= 2√2.  _(class `A`)_
+- **chain closes:** True — The cited minimal axiom premise supplies the qubit local algebra and lattice sites, while the retained/retained_bounded tensor-product authorities supply the two-site tensor surface and commuting distinct-site factors. The displayed square identity, norm estimate, and Bell-state saturation are finite-dimensional algebra and close within the restricted packet.
+- **rationale:** The load-bearing step is an algebraic operator-norm closure over accepted or retained-grade inputs, not a numerical match, definition, or external comparator. Independent sign checking of the plus/plus/plus/minus CHSH convention agrees with the note: the cross term is -[A_1,A_2]⊗[B_1,B_2]. The runner source performs actual Pauli/tensor computations and includes a negative-control sign check rather than merely printing constants.
 - **auditor confidence:** high
 
 ### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`

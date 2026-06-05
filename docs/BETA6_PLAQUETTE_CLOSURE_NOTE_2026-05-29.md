@@ -266,19 +266,18 @@ attempt. This section records the **most informative blocked route** and the
 ### 4a. Common obstruction
 
 Every route that needs the genuine multi-plaquette (thermodynamic, beta=6)
-content collides with one of two **retained-grade** foreclosures:
+content collides with one of two recorded foreclosures:
 
-- **Computational foreclosure of the exact multi-link data.** Any exact
+- **Computational foreclosure of the exact spatial-environment data.** Any exact
   evaluation of the unmarked 3D spatial Wilson environment at L_s>=3 is the
   treewidth-29-infeasible SU(3) tensor contraction (8^30 intermediate,
   `su3_wigner_l3_treewidth_infeasible_2026-05-04`), and naive Haar-MC is
   sign-problem-bound (`su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04`).
-  The exact high-order connected-coefficient data needed for a resummation is
-  the same wall: each connected cluster's exact SU(3) Haar integral is a 3nj
-  network contraction hitting the same treewidth barrier, and the connected
-  enumeration count itself grows like the lattice-animal constant (mu ~ 8, as
-  calibrated by the order-beta^5 mixed-cumulant audit's 37,176-candidate
-  classification).
+  The connected-coefficient frontier is separate: current source notes now
+  carry exact `d_5..d_9` data, with per-cluster link integrals handled by
+  small invariant-projector contractions and shape-collapse/cube-sector
+  certificates. That coefficient work sharpens the resummation route, but it
+  does not evaluate the missing spatial-environment Perron data.
 - **Algebraic underdetermination by local data.** Local character +
   intertwiner data + any 1-parameter rho-family do not select rho_{p,q}(6)
   (Theorem-3, `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`); the
@@ -306,15 +305,14 @@ of the connected-shell plaquette series**, for three reasons:
   1e-3 by ~[10/10] in a controlled proxy (complex-pair branch point at
   |beta_c| ~= 5.7, amplitude tuned to the physical Delta(6) ~ 0.171). The
   method is sound **if** the inputs and singularity structure cooperate.
-- Its blocking obstructions are sharply named and (in principle) separable
-  from the method: (i) the high-order exact connected-coefficient engine does
-  not exist beyond d_5 and collides with the treewidth wall; (ii) the
-  Borel-Leroy half is a category error for a finite-radius series and must be
-  replaced by direct beta-plane analytic continuation; (iii) the analyticity
-  premise (dominant singularity is a complex pair off the real axis, no real
-  branch point at beta_r < 6) is physically plausible for SU(3) pure-gauge
-  (smooth crossover near beta ~ 5.7, no genuine bulk transition) but is
-  unproven and uncertifiable by the route's self-consistency criterion alone.
+- Its blocking obstructions are sharply named and separable from the method:
+  (i) the old coefficient-engine shortfall is no longer the blocker because
+  exact source notes reach `d_9`; (ii) the Borel-Leroy half is a category error
+  for a finite-radius series and must be replaced by direct beta-plane analytic
+  continuation; (iii) the complex-pair / d-log-Pade premise is not established
+  by the now-known coefficients: the single-pair sign prediction fails at
+  `d_8`, and the activated `[1/1]` d-log-Pade from `d_5..d_8` predicts the
+  correct `d_9` sign but the wrong magnitude and a spurious real pole.
 
 The other four are less actionable: Route 2 (finite-volume holonomic
 continuation) is `infeasible` on three independent walls (data 10^36-10^72 supports;
@@ -340,7 +338,7 @@ row: route, lens, review fields (`closure_ready` / `already_blocked` /
 
 | # | Route (one line) | closure_ready | already_blocked | feasibility | Blocking obstruction (one line) |
 |---|---|---|---|---|---|
-| 1 | Conformally-mapped Borel-Pade / d-log-Pade resummation of the connected-shell (linked-cluster) plaquette series | false | false | long-shot | High-order exact connected-coefficient engine does not exist beyond d_5 (each cluster's SU(3) Haar integral hits the treewidth-29 wall; cluster count ~ mu^n, mu~8); Borel-Leroy is a category error for a finite-radius series. A useful kernel (beta-plane d-log Pade) remains, but rests on an unproven complex-pair analyticity premise. |
+| 1 | Conformally-mapped Borel-Pade / d-log-Pade resummation of the connected-shell (linked-cluster) plaquette series | false | false | long-shot | The blocker is not a missing coefficient engine: exact source notes now reach `d_9` (`d_5=1/472392`, `d_6=7/5668704`, `d_7=5/17006112`, `d_8=5/272097792`, `d_9=-2035/264479053824`). Per-cluster SU(3) link integrals stay small on this frontier; the treewidth-29 wall bites the `rho_{p,q}(6)` spatial-environment contraction object, not these coefficient checks. Borel-Leroy remains a category error for a finite-radius series. The surviving beta-plane d-log-Pade kernel is only an open diagnostic: the single-complex-pair prediction fails at `d_8`, while the activated `[1/1]` from `d_5..d_8` gets the `d_9` sign but not the magnitude and returns a spurious real pole. |
 | 2 | Finite-volume holonomic (Picard-Fuchs) continuation of L_s>=3 Z(beta) from strong coupling to beta=6, then 1/L^4 FSS | false | false | infeasible | Strong-coupling Taylor data for finite-volume Z_L at depth 40-80 needs ~10^36-10^72 connected supports (repo has computed exactly one nontrivial coefficient, beta^5); no a-priori D-finite (R,D) bound (closure bound R <= 3^81 ~ 10^232), so the ODE is a fit, not a certificate. |
 | 3 | Collective-field (Jevicki-Sakita) large-N_c saddle of the spatial-environment kernel, 1/N_c^2 fluctuation at N_c=3 | false | false | infeasible | Leading saddle lands on blocked values (flat strong-phase density -> rho=delta -> 0.4225; self-consistent -> Drouffe-Itzykson -> 0.8740); the coupled-resolvent core is the unsolved d>2 SU(N) master field; 1/N^2 continuation has wrong analytic structure across a large-N bulk transition. |
 | 4 | Transverse-slab self-consistent Perron closure for the source-sector eigenvalue sequence kappa_{p,q}(6) | false | true | infeasible | Dimensional collapse rests on an invalid axis-swap of the temporal-gauge linkwise factorization (proven only in temporal gauge; in-slab spatial plaquettes couple the crossing links). The rho=kappa/a^4 re-target is circular (now audited_renaming = packaging). Correct kernel is the treewidth-29-foreclosed 3D contraction. |
@@ -349,68 +347,57 @@ row: route, lens, review fields (`closure_ready` / `already_blocked` /
 ## 6. Most useful bounded next step and named obstruction
 
 Because no route is closure-ready, there is no closure attempt to rank. The
-**most promising next step** is the narrow, honest, runnable piece extracted
-from the most informative blocked route (Route 1) - it makes incremental,
-falsifiable
-progress on the lane's actual bottleneck (exact connected-coefficient data)
-without reusing any blocked route as a closure candidate and without claiming
-closure.
+previously recommended runnable increment - compute exact coefficients beyond
+`d_5` - has now been completed and extended through `d_9`. That source work is
+valuable because it falsifies several cheap resummation stories, but it is no
+longer the lane's next open step.
 
-### 6a. Concrete next step (a future cycle could run this)
+### 6a. Completed increment and updated next step
 
-**Compute the exact order-beta^6 (and, if reachable, beta^7) connected
-coefficient of the infinite-volume plaquette series Delta(beta) =
-P(beta) - P_1plaq(beta), via the retained mixed-cumulant / connected-hierarchy
-machinery.**
+Current exact connected coefficients for
+`Delta(beta) = P(beta) - P_1plaq(beta)` are:
 
-- Start from the retained
-  `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` (d/dbeta =
-  sum_r d/dJ_r) and the retained
-  `gauge_vacuum_plaquette_mixed_cumulant_audit_note` enumeration that produced
-  the order-5 coefficient 4/18^5 = 1/472392 from the four closed cube shells.
-- Extend `scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py`
-  one order: classify the order-6 leafless connected distinct-support
-  polyplaquette clusters through the marked plaquette, and evaluate each
-  cluster's exact connected SU(3) Haar weight. For clusters whose contraction
-  is a closed surface, the value collapses to the dimension count 3^(V-E); for
-  non-closed clusters it is a small explicit Wigner-Racah (3nj) network whose
-  contraction is tractable at this single low order (it does NOT yet hit the
-  treewidth wall, which bites only at large clusters / high order).
-- Deliverable: one or two exact rational coefficients (d_6, possibly d_7) of
-  Delta(beta), as a narrow bounded note mirroring the mixed-cumulant audit
-  template, with an audit-companion runner (PASS/FAIL on the exact rational
-  value and on internal consistency with the retained beta^5 onset).
+```text
+d_5 = 1/472392
+d_6 = 7/5668704
+d_7 = 5/17006112
+d_8 = 5/272097792
+d_9 = -2035/264479053824
+```
 
-**Why this is the right increment, not a closure attempt.** It directly
-targets the lane's binding constraint (the absence of any exact
-connected-coefficient data beyond d_5) at the one order where the computation
-is still feasible. Two consecutive exact coefficients are also the decisive
-**falsifier** for the Route-1 d-log-Pade kernel and the tadpole-boost ansatz:
-they either are, or are not, consistent with a single low-order closed
-continuation. Either outcome is a clean, audit-shippable result on retained
-primitives. It does NOT assert P(6), does NOT posit a closed boost form, and
-does NOT reuse any target-fit exponent.
+The coefficient frontier gives three useful negative diagnostics without
+claiming `P(6)`:
 
-### 6b. Named obstruction on the next step
+- the geometric/tadpole single-ratio story fails because
+  `d_7/d_6 = 5/21 != d_6/d_5 = 7/12`;
+- the constant-amplitude single complex-pair story fails because it predicts a
+  sign change at `d_8`, while exact `d_8` is positive;
+- the first activated `[1/1]` d-log-Pade from `d_5..d_8` predicts a negative
+  `d_9` but misses the magnitude and localizes a spurious real pole.
 
-**Combinatorial + contraction-cost growth.** The number of leafless connected
-distinct-support clusters grows like mu^n (lattice-animal constant mu ~ 8, per
-the order-5 audit's 37,176-candidate classification), and each non-closed
-cluster's exact SU(3) Haar weight is a 3nj contraction whose cost rises with
-cluster area. Order beta^6 is feasible; order beta^7-beta^8 is the practical
-ceiling, and any depth approaching the ~15-40 exact coefficients a genuine
-resummation would need collides with the retained treewidth-29 infeasibility
-(`su3_wigner_l3_treewidth_infeasible_2026-05-04`). The next step is therefore
-**explicitly bounded**: it advances the coefficient frontier by one or two
-orders and sharpens the obstruction; it does not, and cannot by itself, close
-beta=6. A genuine closure would still require either (i) a Munster-style
-graphical strong-coupling bookkeeping that organizes connected SU(3)
-contributions analytically rather than by brute cluster enumeration + 3nj
-contraction, or (ii) a rank-aware contractor that defeats the treewidth wall —
-both open multi-session research items with no guarantee of reaching the
-needed order, plus (iii) an independent proof that Delta(beta) is real-analytic
-on (0,6] with its dominant singularity a complex pair (no real branch point at
-beta_r < 6).
+The updated useful next step is therefore not "get coefficients past `d_5`."
+It is either (i) organize the connected series by a non-fitted analytic
+graphical/closed-form rule that survives the exact `d_5..d_9` checks, or
+(ii) attack the actual spatial-environment Perron data with a rank-aware
+contractor or new analytic compression. Either path must still keep the
+thermodynamic beta=6 value out of scope until the missing environment data are
+supplied.
+
+### 6b. Named obstruction after the coefficient frontier
+
+**Spatial-environment data plus analytic-class control.** Exact connected
+coefficients are now available through `d_9`, so the old "no data beyond `d_5`"
+obstruction is retired. The remaining obstruction has two parts. First, the
+source-sector value still needs the unmarked 3D spatial-environment Perron data
+`rho_{p,q}(6)`, whose direct exact contraction is the treewidth-29 object.
+Second, resumming the connected series into a beta=6 value would require an
+analytic-class theorem strong enough to justify the continuation; the exact
+`d_5..d_9` evidence currently breaks the simplest single-ratio and
+single-complex-pair stories instead of supporting them. A genuine closure would
+still require either a non-fitted analytic organization of the connected
+coefficients or a rank-aware contractor that defeats the spatial-environment
+wall, plus an independent analytic-continuation premise strong enough for the
+chosen resummation.
 
 ## 7. Self-consistency check of the two load-bearing constants
 

@@ -1,18 +1,25 @@
 """
 Audit companion (exact, numpy) for
-GAUGE_INVARIANCE_IS_THE_RECORD_AXIOM_ON_LINKS_CONDITIONAL_THEOREM_NOTE_2026-06-04.md
+GAUGE_INVARIANCE_OF_OBSERVABLES_COROLLARY_OF_THREE_AXIOMS_NARROW_THEOREM_NOTE_2026-06-04.md
 
-CONDITIONAL on the qulink ontology (each lattice LINK carries one constituent/"rishon" per endpoint,
-gauge-transforming with that endpoint's node-qubit). Claim: the Record axiom -- "the physical
-observable is the additive-log of the record; only FULLY-PINNED (both-endpoint-determined) quantities
-are observables" -- selects EXACTLY the gauge-invariant algebra (the commutant of the per-vertex
-Gauss-law generators). Hence local gauge invariance / the Gauss law is the Record axiom applied to links,
-NOT a separate postulate.
+Gauge invariance OF OBSERVABLES is a corollary of the three EXISTING axioms -- no new axiom, and in
+particular no quantum-link/"qulink" ontology, is required:
+  Quantum   : each site is its own qubit M_2(C), no canonical cross-site basis;
+  Locality  : no global frame is postulated (minimality) -> the relative frame (connection) between
+              adjacent sites is undetermined = gauge freedom; a local gauge transf = a free per-site basis;
+  Record    : an observable is a DETERMINED record -> a gauge-variant quantity depends on the unfixed
+              local frame, so it is not determined, not a record, not an observable.
+  => the observables are exactly the gauge-invariant (relational) quantities (the Gauss-law constraint).
 
-The lattice-gauge math (Gauss law, Wilson line, gauge-invariant = commutant) is STANDARD and is reproven
-here from Pauli primitives; the CONTRIBUTION is the bridge: record-count (0/1/2 endpoints) = gauge-
-invariance level. Scope: this is the gauge CONSTRAINT/kinematics, NOT the gauge dynamics (the coupling /
-Hamiltonian is untouched). Conditional on adopting qulinks (a genuine edge degree of freedom).
+This runner makes the chain finite-dimensional in the rishon realization (one link-constituent per
+endpoint) and verifies it; the gauge generator at a vertex is the per-site qubit's OWN su(2) acting on the
+site + its incident link-end (S^a = (sigma_site + sigma_rishon)/2) -- i.e. the gauge symmetry IS the
+intrinsic per-site frame rotation, not an added symmetry. The rishon model is an ILLUSTRATION, not a premise.
+
+The lattice-gauge math (Gauss law, Wilson line, gauge-invariant = commutant) is STANDARD, reproven from
+Pauli primitives. Scope: the gauge CONSTRAINT (which observables are physical) -- it grounds the standard
+"observables are gauge-invariant" postulate in the Record axiom. NOT the gauge DYNAMICS (the coupling /
+action / beta=6 is untouched). Does not address color SU(3). No PDG values; no fitted parameters.
 """
 import numpy as np, itertools
 I2 = np.eye(2); sx = np.array([[0,1],[1,0]]); sy = np.array([[0,-1j],[1j,0]]); sz = np.array([[1,0],[0,-1]])
@@ -71,11 +78,12 @@ for l, o in R: print(("PASS" if o else "FAIL"), "-", l)
 print("\n%d PASS, %d FAIL" % (P, F))
 if F: raise SystemExit(1)
 print(
-    "\nDERIVED (conditional on the qulink ontology): the Record axiom -- only fully-pinned (both-endpoint)\n"
-    "quantities are observables -- selects EXACTLY the gauge-invariant algebra (commutant of the per-vertex\n"
-    "Gauss-law generators). The record-count 0/1/2 = the gauge-invariance level (variant-at-both / variant-\n"
-    "at-one('lost half') / invariant). So local gauge invariance / the Gauss law is the Record axiom applied\n"
-    "to links, not a separate postulate. SCOPE: the gauge CONSTRAINT (kinematics) only -- the coupling/\n"
-    "dynamics (e.g. beta=6) is untouched. Standard lattice-gauge math reproven; the Record bridge is the\n"
-    "contribution. Conditional on adopting qulinks (a genuine new edge degree of freedom)."
+    "\nDERIVED from the EXISTING three axioms (no new axiom; no qulink ontology required): per-site qubits\n"
+    "(Quantum) with no global frame (Locality, minimality) make the relative frame = gauge freedom; the\n"
+    "Record axiom (observable = a determined record) then removes every gauge-variant quantity -> the\n"
+    "observables are EXACTLY the gauge-invariant algebra (commutant of the per-vertex Gauss-law generators).\n"
+    "The record-count 0/1/2 = the gauge-invariance level (variant-at-both / variant-at-one ('lost half') /\n"
+    "invariant). So 'observables are gauge-invariant' is a COROLLARY of the Record axiom, not a separate\n"
+    "postulate. The rishon model here is an ILLUSTRATION, not a premise. SCOPE: the gauge CONSTRAINT only --\n"
+    "the coupling / action / dynamics (e.g. beta=6) is untouched; color SU(3) not addressed."
 )

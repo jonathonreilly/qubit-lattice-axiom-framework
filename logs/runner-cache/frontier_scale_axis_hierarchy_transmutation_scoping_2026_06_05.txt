@@ -1,0 +1,129 @@
+===== runner cache v1 =====
+runner: scripts/frontier_scale_axis_hierarchy_transmutation_scoping_2026_06_05.py
+runner_sha256: 68d3dd884ea8945fbe55b0b0379d42d26dd0b8e2b45aaccac143d97727f7ddee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================
+SECTION 0: FRAMEWORK PRIMITIVES (only inputs)
+========================================================================
+  M_Pl (scale-reference primitive a^-1)   = 1.221e+19 GeV
+  g_bare^2 (lattice bare, O(1))            = 1.0000
+  alpha_bare = g_bare^2/(4 pi)             = 0.079577  (1/alpha = 12.57)
+  alpha_LM   = alpha_bare/u_0  (u_0=0.87768)  = 0.090668  (1/alpha = 11.03)
+  target depth log10(M_Pl/v_EW)            = 16.695
+  target depth log10(M_Pl/Lambda_QCD)      = 19.764
+========================================================================
+SECTION 1: FRAMEWORK-DERIVED 1-LOOP BETA COEFFICIENTS
+========================================================================
+  b_3 (SU(3)_c, full SM, N_quark=6)  = 7.000000   [= 7]
+  b_3 (SU(3)_c, pure gauge)          = 11.000000   [= 11]
+  b_2 (SU(2)_L)                      = 3.166667   [= 19/6 = 3.1667]
+  b_QED (U(1)_em catalog)            = 10.666667   [= 32/3 = 10.667]
+  (only SU(3)_c is physically asymptotically free; b_2, b_QED
+   catalog signs are convention/sector artifacts and are shown
+   only to scan the transmutation map, not as physical AF claims.)
+========================================================================
+SECTION 2: GAUGE TRANSMUTATION FROM M_Pl, FRAMEWORK O(1) COUPLING
+========================================================================
+  Lambda = M_Pl * exp( -2 pi / (b0 * alpha(M_Pl)) )
+
+  SU(3)_c full SM   b3=7       alpha_UV=alpha_LM=0.09067
+      exponent -2pi/(b0 a) = -9.900
+      Lambda =    6.127e+14 GeV   log10(Lambda/M_Pl) = -4.30
+
+  SU(3)_c full SM   b3=7       alpha_UV=alpha_bare=0.07958
+      exponent -2pi/(b0 a) = -11.280
+      Lambda =    1.542e+14 GeV   log10(Lambda/M_Pl) = -4.90
+
+  SU(3)_c pure gauge b3=11     alpha_UV=alpha_LM=0.09067
+      exponent -2pi/(b0 a) = -6.300
+      Lambda =    2.242e+16 GeV   log10(Lambda/M_Pl) = -2.74
+
+  SU(2)_L           b2=19/6    alpha_UV=alpha_bare=0.07958
+      exponent -2pi/(b0 a) = -24.934
+      Lambda =    1.812e+08 GeV   log10(Lambda/M_Pl) = -10.83
+
+  U(1)_em catalog   b=32/3     alpha_UV=alpha_bare=0.07958
+      exponent -2pi/(b0 a) = -7.402
+      Lambda =    7.447e+15 GeV   log10(Lambda/M_Pl) = -3.21
+
+========================================================================
+SECTION 3: WHAT UV COUPLING WOULD REACH Lambda_QCD / v? (the honest gap)
+========================================================================
+  target Lambda_QCD=210MeV: with b3=7 need 1/alpha(M_Pl) = 50.70  (alpha = 0.01972)
+  target v_EW=246GeV: with b3=7 need 1/alpha(M_Pl) = 42.83  (alpha = 0.02335)
+  target v_EW with b2=19/6:  need 1/alpha(M_Pl) = 19.37
+
+  framework HAS: 1/alpha_LM = 11.03,  1/alpha_bare = 12.57
+  physical SM check: alpha_s(M_Z)=0.1181 run UP to M_Pl (b3=7)
+      -> 1/alpha_s(M_Pl) = 52.40  (alpha = 0.01908)
+  => real QCD transmutes 17 orders because its Planck coupling is WEAK
+     (1/alpha~52); framework's is ~5x STRONGER (1/alpha~11), so naive
+     (DT) from M_Pl stops ~4 orders down, not 17.
+========================================================================
+SECTION 4: FRAMEWORK'S ACTUAL Lambda_QCD ROUTE (for contrast)
+========================================================================
+  framework Sommer-chain Lambda^(5)  = 227.5 MeV (comparator)
+  PDG Lambda_MS-bar^(5)              = 210 MeV (comparator, dev 8.3%)
+  HOW the framework gets 227 MeV: NOT naive (DT) at 1/alpha=11. It
+  starts from alpha_s(v)=0.1033 (tadpole/CMT: alpha_bare/u_0^2) and a
+  hierarchy-formula v, then runs DOWN with 2-loop SM RGE + quark
+  thresholds. The effective coupling at v is what makes Lambda land;
+  the Planck-scale coupling 1/alpha~11 is NOT directly transmuted.
+========================================================================
+SECTION 5: HIERARCHY-PROBLEM STRUCTURE (relevant vs marginal)
+========================================================================
+  SM hierarchy problem: m_H^2 is a RELEVANT operator (dim 2),
+  additively renormalized, delta m_H^2 ~ Lambda_UV^2 => tuned to
+  1 part in (M_Pl/v)^2 ~ 10^33.
+
+  Framework: NO fundamental scalar mass term in A1(Z^3)+A2(M2(C))+
+  A3(record). Single dimensionful primitive a^-1=M_Pl (a ruler, zero
+  dimensionless content). Any dynamically generated scale via (DT) is
+  a MARGINAL/log effect, Lambda/M_UV = exp(-2pi/(b0 alpha)),
+  radiatively STABLE (no additive quadratic sensitivity), like
+  Lambda_QCD. So the framework STRUCTURALLY LACKS the relevant tuned
+  operator that IS the hierarchy problem. This is a genuine structural
+  feature, not wishful: there is simply no m_H^2 counterterm to tune.
+
+  BUT 'no quadratic tuning' != 'v is pinned'. Whether the SPECIFIC
+  value v=246 GeV emerges = whether some marginal coupling's pole
+  lands at 246 GeV. Sec 2-3: with the framework's O(1) coupling the
+  gauge poles land at ~10^14-10^16 GeV, not at v or Lambda_QCD. The
+  landed v-route (v = M_Pl (7/8)^(1/4) alpha_LM^16) is a SEPARATE
+  bounded match (HIERARCHY_FORMULA_HONEST_STATUS, closure open):
+  algebraically exp(-c_eff/alpha_LM) with c_eff=16 alpha_LM
+  ln(1/alpha_LM) ~ 3.48, but c_eff is NOT a coupling-independent
+  group-theory rational, so it is NOT a textbook gauge-transmutation
+  constant (HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING is explicit).
+========================================================================
+SECTION 6: VERDICT INPUTS
+========================================================================
+  - O(1) UV coupling (not tuned to 10^-17)? YES: 1/alpha ~ 11-13.
+  - Marginal/log mechanism, radiatively stable? YES (transmutation).
+  - Relevant tuned scalar-mass operator present? NO (framework has none).
+  - Framework O(1) coupling transmutes ~17 orders to QCD/EW? NO
+      (1/alpha~11 gives ~4 orders -> 10^14 GeV; need 1/alpha~43-51).
+  - Any gauge pole lands AT v=246 GeV? NO.
+  - Framework's actual 227 MeV from naive Planck (DT)? NO (separate chain).
+
+  VERDICT: FRAMEWORK-AVOIDS-HIERARCHY-PROBLEM-BUT-SCALE-NOT-PINNED.
+  The framework has the right STRUCTURE for a natural hierarchy (O(1)
+  marginal coupling, log transmutation, no relevant m_H^2 operator to
+  fine-tune) -- it does NOT relocate the hierarchy into a tuned 10^-17
+  coupling. But its specific O(1) value (1/alpha~11) is ~4-5x too
+  STRONG to transmute the ~17 orders to Lambda_QCD or v by naive
+  Planck-scale gauge running; the SPECIFIC scales v and Lambda_QCD are
+  reached only via separate, still-open bounded chains, not pinned by a
+  clean gauge pole. The transmutation order-of-magnitude actually
+  delivered by the framework's own coupling+b3 is ~10^-4 (M_Pl ->
+  ~6.127e+14 GeV), short of the needed ~10^-17 by ~13 decades
+  of coupling strength.
+
+ALL STRUCTURAL ASSERTIONS PASS
+
+----- stderr -----
+

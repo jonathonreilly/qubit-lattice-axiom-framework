@@ -2,10 +2,10 @@
 
 This queue is generated from machine-readable dispatcher manifests. It is a target-selection surface only: dispatcher manifests must not be passed to auditors as evidence.
 
-**Live entries:** 2
-**Ready entries:** 1
+**Live entries:** 1
+**Ready entries:** 0
 **Resolved (post-manifest re-audit) entries:** 21
-**Resolved/invalid entries:** 38
+**Resolved/invalid entries:** 39
 **Retired entries:** 19
 
 Source sidecars:
@@ -21,8 +21,7 @@ Source sidecars:
 
 | # | ready | group | claim_id | current | source note | audit question | ready_blocker |
 |---:|:---:|---|---|---|---|---|---|
-| 1 | Y | `r1_substep1_chain` | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem / unaudited / unaudited | `docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md` | Under the ratified k=1 qubit-per-site clause now on the canonical axiom surface, does the U4 closure row qualify as audited_decoration under cl3_complexification_split (as the prior audit verdict explicitly named), or does it require a different category? |  |
-| 2 |  | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? | blocked_by_dependency:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:unaudited,lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:unaudited |
+| 1 |  | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? | blocked_by_dependency:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:unaudited,lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:unaudited |
 
 ## Resolved By Post-Manifest Re-Audit
 
@@ -85,15 +84,16 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 27 | resolved_or_superseded | `action_normalization_note` | no_go / audited_clean / retained_no_go |
 | 28 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
 | 29 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
-| 30 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded |
-| 31 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem / audited_clean / retained_bounded |
-| 32 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / retained_pending_chain |
-| 33 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 34 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
-| 35 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
-| 36 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 37 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
-| 38 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 30 | resolved_or_superseded | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem / audited_clean / retained |
+| 31 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded |
+| 32 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem / audited_clean / retained_bounded |
+| 33 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / retained_pending_chain |
+| 34 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 35 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
+| 36 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
+| 37 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 38 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 39 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
 
 ## Retired Dispatch Targets
 

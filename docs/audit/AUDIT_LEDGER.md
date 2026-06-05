@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 176 |
-| **retained_no_go** | 185 |
+| **retained_no_go** | 186 |
 | **retained_bounded** | 659 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1270 |
+| unaudited | 1269 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1012 |
+| `audited_clean` | 1013 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1554 |
+| `unaudited` | 1553 |
 
 | claim_type | count |
 |---|---:|
@@ -405,6 +405,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_qubit_berry_holonomy_probe_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5901,6 +5902,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** C3 invariance alone leaves a two-block reference-state cone open, including both the tracial 1:2 block weighting and the admissible non-tracial 1:1 weighting, while the retained Koide readout is a spectral invariant of H and does not use rho.  _(class `A`)_
 - **chain closes:** False — The matrix and readout algebra closes conditional on C3 being the complete native generation-factor symmetry. The missing step is a retained or accepted authority proving that framework baseline supplies no stronger generation-factor symmetry and that full-U(3)/PRR is not part of baseline.
 - **rationale:** The runner source performs real algebraic checks rather than merely printing pass constants, and the displayed projector, block-mass, eigenvalue, determinant, and Koide formulas check out under the packet definitions. Those checks establish the conditional counterexample that C3 invariance alone does not force the trace and that the reference state does not enter the retained Q functional. The broader conclusion that this exhausts the framework baseline, and that PRR/full-U(3) is only an unaudited external premise, imports repo-level status not supplied by any cited authority in the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02`
+
+- **Note:** [`FLAVOR_QD_OBJECTIVITY_FIXES_BASIS_NOT_WEIGHT_2026-06-02.md`](../../docs/FLAVOR_QD_OBJECTIVITY_FIXES_BASIS_NOT_WEIGHT_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the narrow claim that QD objectivity, understood as redundant broadcast of distinguishable pointer labels, does not force uniform sector weights over the rank-1/rank-2 K-real alphabet.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-2cb07e6e0f-flavor_qd_objectivity_fixes_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A spectrum-broadcast branching state has full redundant objectivity for any probability weights on the two-symbol alphabet; the plateau is H(weights), not a selector of those weights.  _(class `A`)_
+- **chain closes:** True — For a perfectly broadcast two-label record, arbitrary probabilities p and 1-p still give redundant distinguishable records, and the mutual-information plateau reports the Shannon entropy of the supplied distribution. Independently, trace(I/3 P_rank1)=1/3 and trace(I/3 P_rank2)=2/3, so r=((2/3)/(1/3))/2=1, while the uniform-sector density has eigenvalues 1/2, 1/4, 1/4 and is not U(3)-invariant.
+- **rationale:** The runner source performs finite matrix, trace, entropy, conjugation, and invariance checks from the displayed projectors and states, without importing external comparator values or another note. The hard-coded entropy targets are checks of elementary Shannon values for the two displayed distributions, not tuned empirical inputs. The no-go is clean only in the stated narrow sense: it closes the QD-objectivity route to uniform weighting and explicitly leaves additional measure, reference-state, or maximum-information principles open.
 - **auditor confidence:** high
 
 ### `flavor_qubit_berry_holonomy_probe_note_2026-05-30`

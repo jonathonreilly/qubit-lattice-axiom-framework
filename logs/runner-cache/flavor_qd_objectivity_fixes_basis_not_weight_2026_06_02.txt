@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/flavor_qd_objectivity_fixes_basis_not_weight_2026_06_02.py
+runner_sha256: 51af6170efa1090a3fbb009c5e7df63b6cca3136f34fc81f107432a4b4b3ce92
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
 [PASS] two K-real sectors give a rank-1/rank-2 pointer alphabet
 [PASS] objectivity plateau reports H(weights), not a selected weight
        H(1/3,2/3)=0.918296; H(1/2,1/2)=1.000000
@@ -9,3 +17,6 @@
 SCORECARD PASS=5 FAIL=0
 FINDING: QD objectivity fixes the two-sector pointer basis but does not select the sector weights.
 The uniform sector weight remains an extra measure/reference choice, not a consequence of redundant objectivity.
+
+----- stderr -----
+

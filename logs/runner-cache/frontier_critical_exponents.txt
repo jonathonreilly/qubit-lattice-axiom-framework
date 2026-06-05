@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_critical_exponents.py
-runner_sha256: 998e9f7f0e6e6e99caef7f6afe78d63653ba4016e098a9a8d0bf397a4981405b
+runner_sha256: bd3f2e905056c57e766cd8912deb88dda0f4f08f968102a178b7a6dac800b529
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 18.86
+elapsed_sec: 4.18
 status: ok
 ----- stdout -----
 ======================================================================
@@ -19,11 +19,22 @@ layered_cycle_8x8         layered_cycle         64      5.0   0.3348   0.9162   
 causal_dag_10x6           causal_dag            55      1.0      nan      nan   0.5438   degenerate
 causal_dag_8x8            causal_dag            57      1.0      nan      nan   0.6235   degenerate
 
-Time: 18.2s
+Time: 3.9s
 
 Interpretation:
   - differing fitted beta across admissible families is evidence for topology-dependent finite-size onset behavior
   - rows marked 'degenerate' should not be used as positive universality evidence without a stronger fit
+
+SAFE READ
+  [PASS] six configured families were evaluated
+  [PASS] fit labels match the live finite scout set
+  [PASS] degenerate labels match the live finite scout set
+  [PASS] all fitted rows have R^2 >= 0.90
+  [PASS] fitted beta spread exceeds 0.35
+  [PASS] all degenerate rows have non-finite beta and R^2
+  [PASS] all saturation readouts are finite
+  finite-size scout only: no universality class or asymptotic exponent claim
+ASSERTIONS: PASS
 
 ----- stderr -----
 

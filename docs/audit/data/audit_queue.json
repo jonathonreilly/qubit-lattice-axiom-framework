@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 271,
     "high": 281,
-    "leaf": 408,
+    "leaf": 407,
     "medium": 325
   },
   "cycle_break_target_count": 0,
@@ -26985,30 +26985,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "car_from_positivity_neutrality_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/car_from_positivity.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38675,6 +38651,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 79,
-  "total_pending": 1285
+  "ready_count": 78,
+  "total_pending": 1284
 }

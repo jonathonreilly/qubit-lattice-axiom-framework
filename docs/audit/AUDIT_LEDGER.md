@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 176 |
-| **retained_no_go** | 181 |
+| **retained_no_go** | 182 |
 | **retained_bounded** | 655 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1283 |
+| unaudited | 1282 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1004 |
+| `audited_clean` | 1005 |
 | `audited_conditional` | 63 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1567 |
+| `unaudited` | 1566 |
 
 | claim_type | count |
 |---|---:|
@@ -208,6 +208,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2520,6 +2521,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Haar-probability measure on the Pontryagin dual T^3 of Z^3, written on the [-π,π]^3 coordinate fundamental domain, is d^3k/(2π)^3 because vol([-π,π]^3)=(2π)^3.  _(class `A`)_
 - **chain closes:** True — The cited axiom supplies the Z^3 substrate, and the remaining steps are standard Pontryagin-dual/Haar-normalization facts plus product-measure arithmetic on [-π,π]^3. The continuum d^3k/(2π)^3 convention is not used to derive the substrate normalization.
 - **rationale:** The load-bearing computation is an algebraic and measure-normalization closure over the accepted Z^3 lattice premise plus textbook Pontryagin/Haar facts explicitly admitted by the claim. Independent checking of the displayed formulae confirms that the dual coordinate period is 2π, the product volume is (2π)^3=8π^3, and normalizing Haar measure to total mass one gives density 1/(2π)^3. The runner supports this but is not the sole basis for the verdict; its source performs arithmetic and finite character-factorization checks rather than merely printing a verdict. No open upstream authority is load-bearing in the restricted packet.
+- **auditor confidence:** high
+
+### `car_from_positivity_neutrality_note_2026-06-02`
+
+- **Note:** [`CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md`](../../docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-local audit of whether the finite transfer-operator positivity, Stone readout, and tested two-slice reflected Gram witness force CAR over the hard-core-boson frame in the finite qubit hopping models.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-87029159be-car_from_positivity_neutrali`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the tested finite hopping models, the open-chain hard-core-boson and Jordan-Wigner Hamiltonians are identical matrices, so the same positive transfer operator and Stone spectrum are obtained, while the closed-loop sign changes spectra without making either transfer operator non-positive.  _(class `C`)_
+- **chain closes:** True — The finite one-qubit tensor-product construction closes the scoped result: adjacent open-chain Jordan-Wigner strings cancel in the hopping Hamiltonian, so T=exp(-tau H) and the Stone spectrum cannot discriminate the frames. On the ring the uncancelled loop string changes the spectrum, but finite Hermitian Hamiltonians still give strictly positive transfer operators in both frames.
+- **rationale:** The runner source constructs the HCB and JW operators directly on finite qubit tensor products and computes commutators, ranks, Gram spectra, transfer spectra, correlators, and ring spectra rather than printing hard-coded conclusions. An independent algebra check agrees with the load-bearing signs: open nearest-neighbor JW strings cancel bond-by-bond, while the closed boundary string remains as a loop datum; positivity of exp(-tau H) follows for each finite Hermitian H. The cited minimal-axiom authority is an accepted premise, and the note explicitly limits the no-go to the tested finite positivity route rather than claiming a global spin-statistics or graded-locality obstruction.
 - **auditor confidence:** high
 
 ### `carrier_orbit_invariance_note_2026-05-03`

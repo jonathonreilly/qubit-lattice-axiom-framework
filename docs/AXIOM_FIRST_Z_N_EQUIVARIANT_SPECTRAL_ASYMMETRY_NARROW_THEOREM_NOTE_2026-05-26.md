@@ -9,7 +9,24 @@ pipeline-derived after independent audit and dependency closure.
 [`scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py`](../scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py)
 **Cached log:**
 [`logs/runner-cache/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.txt`](../logs/runner-cache/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.txt)
-(PASS=30 FAIL=0)
+(PASS=33 FAIL=0)
+
+## 2026-06-03 Scope Repair: admissible weights
+
+The local weight-sum statement is restricted to **admissible transverse
+weights**: each `a_j` is a unit modulo `N`, equivalently
+`gcd(a_j, N) = 1`. This is the exact condition that prevents a denominator
+`zeta_N^(k a_j) - 1` from vanishing for some `1 <= k <= N-1`.
+
+The earlier broad phrase "nonzero modulo `N`" is correct only when `N` is
+prime. For composite `N`, a nonzero nonunit weight can make the local
+expression singular; for example `N=4`, `a=2`, and `k=2` gives
+`zeta_4^(k a) = zeta_4^4 = 1`. Those non-admissible tuples are now explicitly
+outside this theorem's finite local-weight-sum claim.
+
+The load-bearing `N=3` calculation is unchanged: modulo 3, the
+nonzero weights `1` and `2` are units, so `(1,2)`, `(1,1)`, and `(2,2)` are
+all admissible.
 
 ## Review-Loop Boundary
 
@@ -52,8 +69,9 @@ Let `H` be finite-dimensional over C, let `g` be unitary with `g^N =
    is well-defined and lies in `Z[zeta_N]`.
 2. If a continuous self-adjoint path `T(s)` commutes with `g` and has
    no zero crossing, then `eta_g(T(s))` is constant along the path.
-3. For a specified transverse weight tuple `a = (a_1,...,a_n)`, define
-   the finite local weight sum
+3. For a specified admissible transverse weight tuple
+   `a = (a_1,...,a_n)` with every `gcd(a_j,N)=1`, define the finite local
+   weight sum
    `L_N(a) = (1/N) sum_{k=1}^{N-1} prod_j 1/(zeta_N^(k a_j)-1)`.
    This is a finite cyclotomic expression. This note evaluates it; it
    does not prove that every physical fixed-point problem reduces to it.
@@ -69,10 +87,15 @@ unity, hence an element of `Z[zeta_N]`; the sum defining `eta_g(T)` is
 finite. Along a path with no zero crossing, the sign of each spectral
 block cannot change, and the finite character trace is locally constant.
 
-For the local weight sum, the expression is finite for nontrivial
-weights because no denominator `zeta_N^(k a_j)-1` vanishes when
-`1 <= k <= N-1` and `a_j` is nonzero modulo `N`. At `N=3`, write
-`omega = zeta_3`. Then
+For the local weight sum, the expression is finite for admissible weights
+because no denominator `zeta_N^(k a_j)-1` vanishes when
+`1 <= k <= N-1` and `gcd(a_j,N)=1`: if `zeta_N^(k a_j)=1`, then
+`N` divides `k a_j`; since `a_j` is a unit modulo `N`, `N` divides `k`,
+contradicting `1 <= k <= N-1`. Conversely, if `a_j` is a nonzero nonunit
+modulo composite `N`, then `k=N/gcd(a_j,N)` gives `1 <= k <= N-1` and
+`N | k a_j`, so the corresponding denominator vanishes. Thus the finite
+local-weight claim is exactly the unit-weight/admissible case. At `N=3`,
+write `omega = zeta_3`. Then
 
 ```text
 (omega - 1)(omega^2 - 1)
@@ -101,6 +124,8 @@ SymPy is available, symbolically in `Q[omega]/(omega^2+omega+1)`.
   framework.
 - No proof is given that a concrete framework Dirac operator produces
   the local denominator `prod_j (zeta_N^(k a_j)-1)^(-1)`.
+- No finite local-weight claim is made for non-admissible/nonunit weights
+  modulo composite `N`; those tuples can have vanishing denominators.
 - No identification with `delta_Brannen`, Koide phases, masses, or
   phenomenology is claimed.
 - No existing audit row is edited, retired, or promoted by this note.

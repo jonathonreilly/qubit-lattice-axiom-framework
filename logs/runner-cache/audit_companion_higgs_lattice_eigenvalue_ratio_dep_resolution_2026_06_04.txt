@@ -1,0 +1,124 @@
+========================================================================================
+Audit-companion: higgs_lattice_eigenvalue_ratio dep-resolution hygiene
+Parent:   docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md
+Companion: docs/HIGGS_LATTICE_EIGENVALUE_RATIO_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+Companion type: claim_type=meta, audit_companion, no status promotion.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Block 1: parent runner re-executes on current head
+----------------------------------------------------------------------------------------
+  [PASS] parent runner exits 0  (returncode=0)
+  [PASS] parent runner emits TOTAL line  (grep 'TOTAL: PASS=' in stdout)
+  [PASS] parent runner FAIL=0  (parent_fail=0)
+  [PASS] parent runner PASS>=30 (matches prior audit snapshot range)  (parent_pass=40)
+  [PASS] parent runner emits PASS for: Part 3 Clifford identity  (searched for '[PASS (A)] Σ_μ γ_μ² = d·I = 4·I')
+  [PASS] parent runner emits PASS for: Part 4 generating-functional curvature  (searched for "[PASS (A)] W'' at J=0 = N_tot / (4 u_0²) = 12 / u_0²")
+  [PASS] parent runner emits PASS for: Part 5 R_lattice identity  (searched for '[PASS (A)] R_lattice = 4 / (u_0² · N_taste) at N_taste=16 = 1/(4 u_0²)')
+  [PASS] parent runner emits PASS for: Part 5 per-taste curvature  (searched for "[PASS (A)] per-taste curvature W''/N_tot = 1/(4 u_0²) matches R_lattice")
+  [PASS] parent runner emits no FAIL line  (grep '[FAIL ' in stdout)
+
+----------------------------------------------------------------------------------------
+Block 2: independent exact-symbolic re-derivation
+----------------------------------------------------------------------------------------
+  [PASS] N_c = 3
+  [PASS] d = 4 (Z^d spacetime; framework 3+1)
+  [PASS] N_sites = 2^d = 16
+  [PASS] N_taste = N_sites = 16
+  [PASS] N_tot = N_c * N_sites = 48
+  [PASS] W''(0) = N_tot / (4 u_0^2) = 12 / u_0^2 by exact symbolic differentiation  (W''(0) = 12/u0**2, expected 12/u0**2)
+  [PASS] R_lattice = 4 / (u_0^2 * N_taste) at N_taste=16 = 1 / (4 u_0^2)  (R_lattice = 1/(4*u0**2), expected 1/(4*u0**2))
+  [PASS] W''(0) / N_tot = 1 / (4 u_0^2) matches R_lattice  (W''/N_tot = 1/(4*u0**2), R_lattice = 1/(4*u0**2))
+  [PASS] mean-field eigenvalue magnitude |lambda_full| = 2 u_0 reproduces W(J)  (W = (N_tot/2) log(J^2 + (2 u_0)^2))
+  [PASS] exact-rational sanity: R_lattice = 1/4 at u_0=1, N_taste=16  (R_lattice|u_0=1 = 1/4)
+  [PASS] |lambda_full|^2 = 4 u_0^2  (|lambda|^2 = 4*u0**2)
+
+----------------------------------------------------------------------------------------
+Block 3: parent runner does not use dep audit-status as load-bearing input
+----------------------------------------------------------------------------------------
+  [PASS] parent runner mentions 'effective_status' at most 6 times (dep-existence detail strings and parent-row sanity check only, not dep-grade load-bearing inputs)  (count=5)
+  [PASS] parent runner mentions 'audited_conditional' at most once (parent-row scope-guard sanity check, not dep-grade load-bearing)  (count=1)
+  [PASS] parent runner contains no 'intrinsic_status' usage (no dep-grade load-bearing reference)  (absent from frontier_higgs_lattice_eigenvalue_ratio_narrow.py)
+  [PASS] parent runner contains no 'audit_status' usage (no dep-grade load-bearing reference)  (absent from frontier_higgs_lattice_eigenvalue_ratio_narrow.py)
+  [PASS] parent runner contains no 'retained_bounded' usage (no dep-grade load-bearing reference)  (absent from frontier_higgs_lattice_eigenvalue_ratio_narrow.py)
+  [PASS] parent runner contains no 'audited_clean' usage (no dep-grade load-bearing reference)  (absent from frontier_higgs_lattice_eigenvalue_ratio_narrow.py)
+  [PASS] parent runner contains no 'max_descendant_status' usage (no dep-grade load-bearing reference)  (absent from frontier_higgs_lattice_eigenvalue_ratio_narrow.py)
+  [PASS] parent runner Part 6 uses rows.get for dep-existence checks (not dep-grade reads)  (dep-existence pattern present)
+
+----------------------------------------------------------------------------------------
+Block 4: deprecated dep is not in parent's live ledger deps field
+----------------------------------------------------------------------------------------
+  [PASS] parent row 'higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02' is present in audit ledger  (ledger path = /private/tmp/cl3-higgs-eigenvalue-ratio/wt/docs/audit/data/audit_ledger.json)
+  [PASS] parent ledger row deps field is non-empty  (deps count = 5)
+  [PASS] deprecated dep 'g_bare_canonical_convention_narrow_theorem_note_2026-05-02' is NOT in parent deps  (parent deps = ['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
+  [PASS] current dep 'clifford_chirality_dimension_narrow_theorem_note_2026-05-10' is in parent deps
+  [PASS] current dep 'g_bare_constraint_vs_convention_theorem_note_2026-05-03' is in parent deps
+  [PASS] current dep 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03' is in parent deps
+  [PASS] current dep 'graph_first_su3_integration_note' is in parent deps
+  [PASS] current dep 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17' is in parent deps
+  [PASS] parent deps set equals the 5 current declared deps (no extras, no omissions)  (parent deps = ['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
+  [PASS] ledger previous_audits[*] confirms historical dep_weakened cited the deprecated dep  (prior_audits count = 6)
+
+----------------------------------------------------------------------------------------
+Block 5: parent note historical-pointer disclaimer for deprecated note
+----------------------------------------------------------------------------------------
+  [PASS] parent note mentions deprecated note basename 'G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md'  (historical reference expected (plain-text only))
+  [PASS] parent note carries disclaimer fragment: 'plain-text reader pointer, not a markdown-link load-bearing dependency'
+  [PASS] parent note carries disclaimer fragment: 'load-bearing g_bare content is now carried by the two retained 2026-05-03 sister theorems'
+  [PASS] deprecated note is NOT present as a markdown link in parent note (only plain-text pointer permitted)  (absence of markdown ](...) link to deprecated note)
+
+----------------------------------------------------------------------------------------
+Block 6: counterfactual under current dep surface — identical PASS count
+----------------------------------------------------------------------------------------
+  [PASS] counterfactual parent runner exits 0  (returncode=0)
+  [PASS] counterfactual PASS count matches Block 1  (block1 PASS=40, counterfactual PASS=40)
+  [PASS] counterfactual FAIL count is zero  (counterfactual FAIL=0)
+
+----------------------------------------------------------------------------------------
+Block 7: independent Clifford identity re-derivation (Cl(4))
+----------------------------------------------------------------------------------------
+  [PASS] constructed 4 Euclidean gamma matrices, each 4x4
+  [PASS] {gamma_a, gamma_b} = 2 delta_ab I by exact matrix algebra
+  [PASS] sum_a gamma_a^2 = d * I = 4 * I (derived)
+  [PASS] D_taste = sum_a gamma_a has D_taste^2 = d * I = 4 * I (derived)
+  [PASS] |lambda_taste| = sqrt(d) = 2 (lattice units)
+
+----------------------------------------------------------------------------------------
+Block 8: all 5 current declared deps are retained-grade
+----------------------------------------------------------------------------------------
+  [PASS] dep 'clifford_chirality_dimension_narrow_theorem_note_2026-05-10' present in audit ledger
+  [PASS] dep 'clifford_chirality_dimension_narrow_theorem_note_2026-05-10' effective_status is retained-grade (eff='retained_pending_chain')  (valid retained grades = ['retained', 'retained_bounded', 'retained_pending_chain'])
+  [PASS] dep 'g_bare_constraint_vs_convention_theorem_note_2026-05-03' present in audit ledger
+  [PASS] dep 'g_bare_constraint_vs_convention_theorem_note_2026-05-03' effective_status is retained-grade (eff='retained_bounded')  (valid retained grades = ['retained', 'retained_bounded', 'retained_pending_chain'])
+  [PASS] dep 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03' present in audit ledger
+  [PASS] dep 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03' effective_status is retained-grade (eff='retained_bounded')  (valid retained grades = ['retained', 'retained_bounded', 'retained_pending_chain'])
+  [PASS] dep 'graph_first_su3_integration_note' present in audit ledger
+  [PASS] dep 'graph_first_su3_integration_note' effective_status is retained-grade (eff='retained')  (valid retained grades = ['retained', 'retained_bounded', 'retained_pending_chain'])
+  [PASS] dep 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17' present in audit ledger
+  [PASS] dep 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17' effective_status is retained-grade (eff='retained_bounded')  (valid retained grades = ['retained', 'retained_bounded', 'retained_pending_chain'])
+
+----------------------------------------------------------------------------------------
+Block 9: companion declares claim_type=meta and disclaims status promotion
+----------------------------------------------------------------------------------------
+  [PASS] companion note carries: '**Type:** meta'
+  [PASS] companion note carries: 'audit-companion / dep-resolution hygiene evidence'
+  [PASS] companion note carries: 'not a status promotion'
+  [PASS] companion note carries: 'claim_type=meta'
+  [PASS] companion note carries: 'It is not a re-audit and does not promote status'
+  [PASS] companion note carries: 'physical Higgs-mass / SM matching'
+  [PASS] companion note carries: 'derive `m_H = v/(2 u_0)` (separate full theorem)'
+  [PASS] companion note carries: 'deprecated dep cited by the historical rounds 1-2'
+  [PASS] companion note carries: 'exact symbolic computation'
+  [PASS] companion note carries: 'audit_companion'
+  [PASS] companion note avoids forbidden claim: 'is hereby audited_clean'
+  [PASS] companion note avoids forbidden claim: 'promote to retained_bounded'
+  [PASS] companion note avoids forbidden claim: 'this companion changes audit_status'
+  [PASS] companion note avoids forbidden claim: 'Standard Model Higgs mass is established'
+  [PASS] companion note avoids forbidden claim: 'm_H = v/(2 u_0) is hereby derived'
+  [PASS] companion note avoids forbidden claim: '(m_H/v)^2 is identified'
+
+========================================================================================
+  TOTAL: PASS=76, FAIL=0
+========================================================================================
+
+FINAL_TAG: HIGGS_LATTICE_EIGENVALUE_RATIO_DEP_RESOLUTION_HYGIENE_OK

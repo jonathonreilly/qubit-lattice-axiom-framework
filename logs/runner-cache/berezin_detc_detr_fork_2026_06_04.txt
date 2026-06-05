@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/berezin_detc_detr_fork_2026_06_04.py
+runner_sha256: 41fad4799e007da3f30c9e39fa81bdcd90e3f171007fcaf12597641e1e295d0c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.03
+status: ok
+----- stdout -----
+[PASS] A1 C^3 = I (Z_3 order relation, A2 lattice generator)  C^3=I
+[PASS] A2 three orthogonal rank-1 complex idempotents (C[Z3]=C+C+C)  e_k^2=e_k, e_i e_j=0
+[PASS] A2b complex blocks have complex-dim (1,1,1)  tr e_k = 1 each
+[PASS] A3 real singlet projector P_s = e0 is real, rank 1 (R block, 1 real DOF)  P_s real, P_s^2=P_s, tr=1
+[PASS] A4 real doublet projector P_d = e1+e2 is real, rank 2 (C block = 2 real DOF)  P_d real, P_d^2=P_d, tr=2
+[PASS] A5 P_s + P_d = I (resolution of identity on R^3)
+[PASS] A6 complex structure J on doublet is real  J real
+[PASS] A7 J^2 = -P_d (J is a genuine complex structure on the doublet plane)  J^2 = -P_d
+[PASS] A8 det(J| doublet) = +1  (orientation-preserving, det != -1 reflection)  det(J|doublet)=1.000000
+[PASS] B1 retained identity Q=(1+2r)/3 holds for 200 random (a,b) [delta-independent]
+[PASS] B2 r=1/2  ->  Q=2/3
+[PASS] B3 r=1    ->  Q=1
+[PASS] B4 sym: sum_k x_k = 3 v0 (delta-independent)  sum x = 3*v0
+[PASS] B5 sym: sum_k x_k^2 = v0^2 (3 + 3 kappa/2) (delta-independent)  sum x^2 = 3*v0**2*(kappa + 2)/2
+[PASS] B6 sym: Q = (2 + kappa)/6  (so kappa=2 -> Q=2/3 ; kappa=1 -> Q=1/2; r-form below)  Q = kappa/6 + 1/3
+[PASS] B7 reconcile: with kappa=4r, (2+kappa)/6 = (1+2r)/3
+[PASS] C1 det_R(alpha P_s + beta P_d) = alpha * beta^2  [(1,2) real-DOF weighting]  det_R = alpha*beta**2
+[PASS] C2 real spectrum multiplicities are (singlet x1, doublet x2)  mult={alpha: 1, beta: 2}
+[PASS] C3 block-count det (doublet reduced to 1 complex slot) = alpha * beta  [(1,1)]
+[PASS] D1 real boson on doublet: Z=2pi/g, det_R(G2)=g^2 -> doublet log-weight = 2 log g  [(1,2)]
+[PASS] D2 holomorphic boson on doublet: ∫d^2z e^{-g|z|^2}=pi/g -> doublet log-weight=log g  [(1,1)]
+[PASS] D3 KEY: boson(2nd-order) gives BOTH (1,2) [real pol.] and (1,1) [holo pol.] => statistics alone does NOT fix the fork; polarization does.  real det_R=g^2 vs holo |.|^2=g
+[PASS] D4 numeric: real doublet Gaussian = 2pi/g  8.97598 vs 8.97598
+[PASS] D5 numeric: holomorphic doublet Gaussian = pi/g  4.48799 vs 4.48799
+[PASS] E1 holomorphic Berezin on doublet's complex slot = z (ONE pair) [(1,1) block-count]
+[PASS] E2 Berezin det_C derived from Grassmann algebra: ∫ Dpsibar Dpsi e^{-psibar A psi} = det_C A  (n=2,3, generic complex A)  signed-permutation sum = det
+[PASS] E3 Majorana (real Grassmann) doublet: Pf(A)=p, Pf^2=det_R(A)=p^2 (real-DOF flavored)  Pf=p, det=p**2
+[PASS] E4 Majorana=Pfaffian derived from Grassmann algebra; Pf(M)^2 = det_R(M) (n=2,4, generic real antisymmetric) -> first-order REAL action is det_R-flavored  matchings sum, Pf^2=det
+[PASS] F1 block-count rho=1  -> r=1/2 -> Q=2/3  r=1/2, Q=2/3
+[PASS] F2 dimension rho=1/2 -> r=1   -> Q=1  r=1, Q=1
+        real Gaussian (2nd-order boson, real pol.)         rho=1/2 r=1  Q=1  OK
+        Majorana Berezin (1st-order, REAL Grassmann)       rho=1/2 r=1  Q=1  OK
+        holomorphic Gaussian (2nd-order, holo pol.)        rho=1   r=1/2  Q=2/3  OK
+        holomorphic Berezin (1st-order, holo pol.)         rho=1   r=1/2  Q=2/3  OK
+[PASS] F3 each measure maps to its (r,Q) via rho
+[PASS] G1 holomorphic polarization => r=1/2 (block-count) for BOTH boson and fermion
+[PASS] G2 real polarization => r=1 (dimension) for BOTH boson and fermion
+[PASS] G3 first-order ROW alone is NOT decisive: Majorana->r=1, holomorphic->r=1/2
+[PASS] G4 VERDICT: det_C step requires a HOLOMORPHIC POLARIZATION (complex structure J), not first-order-ness alone. A Majorana (real) first-order action gives Pf ~ det_R.
+[PASS] G5 the required complex structure J equals the doublet J of Section A (J^2=-P_d, det|doublet=+1) -> matches block-count note's named pin
+[PASS] G6 a real reflection (CPT/real-structure, det=-1) anticommutes with J (kappa J kappa = -J): the holomorphic pairing is NOT fixed by the real structure  kappa J kappa = -J
+        FLAG: NO PDG values, NO fitted parameters, NO literature comparators consumed.
+        FLAG: RETAINED used: KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC (Q=(1+2r)/3) [retained on ledger].
+        FLAG: POSIT (flagged): the holomorphic polarization / complex structure J that turns the first-order action into det_C is an EXTRA choice beyond first-order-ness. It is the SO(2)/U(1)_b reduction the block-count note names; NOT derived here, NOT on A1+A2+retained.
+        FLAG: Majorana (real Grassmann) first-order action is the no-extra-posit default; it gives Pf ~ det_R -> (1,2) -> r=1 -> Q=1, matching the framework dimension/trace default.
+[PASS] H1 import-flag block present
+
+SCORECARD: PASS=38 FAIL=0
+
+----- stderr -----
+

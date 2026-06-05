@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 187 |
 | **retained_bounded** | 659 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 31 |
-| unaudited | 1268 |
+| open_gate | 32 |
+| unaudited | 1267 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1014 |
+| `audited_clean` | 1015 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1552 |
+| `unaudited` | 1551 |
 
 | claim_type | count |
 |---|---:|
@@ -411,6 +411,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
@@ -5994,6 +5995,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the tested two-sector record map, Lüders self-composition sharpens r -> 2 r^2, so r=1/2 has multiplier 2 and is unstable.  _(class `A`)_
 - **chain closes:** True — Manual differentiation gives f(1/2)=1/2 and f'(1/2)=2>1, so the displayed sharpening map repels from r=1/2; for r=0.49 the iterates monotonically decrease toward 0 because f(r)/r=2r<1. The reverse map is the inverse of f on nonnegative r with derivative 1/2 at r=1/2, the C3 projector off-block terms vanish algebraically, and the I/3 trace weights give (1/3,2/3) and r=1.
 - **rationale:** The runner hard-codes the tested maps rather than deriving record dynamics from baseline axioms, so the clean result is only the source note's narrow route closure. Independently checking the displayed formulas confirms the fixed-point multiplier, inverse-map stability, C3 block diagonalization in the stated projectors, and dimension-weight normalization. The no-go discipline gate is satisfied because the note explicitly leaves other dynamics and measure/reference choices open instead of claiming an absolute no-go on r=1/2.
+- **auditor confidence:** high
+
+### `flavor_record_readout_form_not_weight_2026-06-02`
+
+- **Note:** [`FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT_2026-06-02.md`](../../docs/FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT_2026-06-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Record additivity can support logarithmic readout form once a positive multiplicative amplitude is supplied, but it does not force the Koide sector-weight choice between dimension count (1:2) and block count (1:1).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-225314-aaaa214569-flavor_record_readout_form_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Genuine log|det H| counts eigenvalue multiplicity, so the doublet contributes 2 log|lambda_doublet| while the r=1/2 block-count reading requires the distinct multiplicity-stripped functional log|lambda_triv lambda_doublet|.  _(class `A`)_
+- **chain closes:** True — The determinant multiplicity statement is standard finite-dimensional algebra: a two-dimensional degenerate doublet contributes twice to log|det H|. The block-count expression is therefore a different functional, so additive/log form alone does not determine the sector weight.
+- **rationale:** The audited claim is narrow and negative: it separates logarithmic form from Koide sector weighting. The displayed determinant identity and the distinction from the multiplicity-stripped block functional close by algebra, and the runner source actually computes a finite 3x3 example rather than merely printing constants. No external comparator, tuned numerical match, or cited open dependency is used.
 - **auditor confidence:** high
 
 ### `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31`

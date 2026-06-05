@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/flavor_record_readout_form_not_weight_2026_06_02.py
+runner_sha256: e300fd23508ce1c9392bed29d9d1a571993f9771d574159267b811f419ea989a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 [PASS] additive record readout selects log form once multiplicative Z is supplied
 [PASS] genuine log|det H| counts the doublet with multiplicity two
        log|det|=0.386622
@@ -10,3 +18,6 @@
 SCORECARD PASS=5 FAIL=0
 FINDING: Record readout supports additive/log form after Z is supplied, but it does not select the Koide sector weight.
 Genuine log|det| counts multiplicity 1:2; r=1/2 needs the separate block-count functional.
+
+----- stderr -----
+

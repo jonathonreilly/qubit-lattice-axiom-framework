@@ -1,0 +1,67 @@
+[PASS] 0a C3 shift: C^3 = I (regular rep of Z_3 on the 3 generation sites)
+[PASS] 0b eig(C) = {1, w, w^2}: 3 distinct C3-charges (the Fourier modes / charge eigenbasis)
+[PASS] 0c S = C+C^2 = J-I is Hermitian, C3-invariant, with eig {+2,-1,-1} (singlet + doublet)
+[PASS] 0d S is K-EVEN (time-reversal real): conj(S) = +S
+[PASS] 0e A = i(C-C^2) is Hermitian, K-ODD (conj(A) = -A), eig {0, +-sqrt3} (resolves doublet)
+[PASS] 0f the K-real C3-respecting observable S resolves exactly the 2 isotype sectors: ranks (1,2)
+       singlet rank 1 + doublet rank 2 (the det_C 2-sector partition)
+[PASS] 1a PREDICTABILITY SIEVE: under K-real C3-respecting monitoring (resolve S), the C3-CHARGE eigenstates generate ZERO entropy (they survive) -> they are the POINTER states
+       per-state entropy gen (C3-charge) = [-0.0, 0.0, -0.0] ~ 0
+[PASS] 1b ... while the POSITION states generate POSITIVE entropy under the same monitoring (they are superpositions across sectors -> they decohere -> NOT pointer states)
+       per-state entropy gen (position) = [0.6365, 0.6365, 0.6365] > 0
+[PASS] 1c each C3-charge (Fourier) mode is an EXACT eigenstate of the sector observable S (residual ~ 0) -> the C3-charge basis aligns with the einselected 2-sector partition
+       max ||S v - lam v|| = 1.0e-15
+[PASS] 1d Zurek commutant criterion: the C3-charge observable C COMMUTES with the C3-respecting monitor S ([C,S]=0) -> C is an einselected pointer observable
+[PASS] 1e ... whereas the POSITION observable X does NOT commute with S ([X,S] != 0) -> position is not einselected by C3-respecting monitoring (consistent with 1b)
+[PASS] 1f ROBUSTNESS: the C3-charge basis stays the pointer (0 entropy gen) for a GENERIC C3-respecting H_int = g0 I + g1 S over 2000 random couplings -> STABLE, not fine-tuned
+       worst-case entropy gen over 2000 random C3-respecting H_int = 2.2e-15
+[PASS] 1g the C3-charge pointer SETTING is r=1/2: the 2-isotype-sector entropy S2(r) has a CONCAVE interior max at r=1/2 (S2''(1/2) < 0) -> a stable (non-marginal) pointer setting
+       argmax S2 = 0.500 (=1/2), S2''(1/2) = -1.0000 < 0, S2(1/2)=log2=0.6931
+[PASS] 1h VERDICT(setting r=1/2) = STABLE-SETTING: C3-charge eigenbasis is a robust einselection pointer basis under K-real C3-respecting monitoring (0 entropy gen, robust, concave max)
+[PASS] 2a under POSITION monitoring (resolve a site observable X, breaks C3) the POSITION states generate ZERO entropy -> the position basis is the pointer basis (framework default)
+       position-basis entropy gen = [-0.0, -0.0, -0.0] ~ 0
+[PASS] 2b ... while the C3-charge states decohere under position monitoring (positive entropy) -> position monitoring einselects a DIFFERENT (position) pointer basis
+       C3-charge entropy gen under position monitor = [1.0986, 1.0986, 1.0986] > 0
+[PASS] 2c the position / 3-real-DOF reading peaks at r=1: the 3-DOF (dimension-weighted) entropy S3(r) is maximized at r=1 -> position pointer SETTING is r=1 (Q=1)
+       argmax S3 = 1.000 (=1)
+[PASS] 2d VERDICT(setting r=1): position basis is ALSO a stable einselection pointer-basis setting (the framework Born/det_R default) -> r=1, Q=1
+[PASS] 3a DEGENERATE / scalar monitoring (resolve I, a C3-invariant scalar) leaves EVERY state invariant (0 entropy gen for all) -> no partition -> the 3 modes stay degenerate/democratic
+       entropy gen for arbitrary states under scalar monitoring = [0.0, -0.0, 0.0] ~ 0
+[PASS] 3b the degenerate / democratic reading is r=0 (Q=1/3): equal weights, no singlet/doublet imbalance
+       r=0 -> Q=1/3 (S3-degenerate enhanced-symmetry endpoint)
+[PASS] 3c VERDICT(setting r=0): the degenerate basis is a stable pointer-basis setting (enhanced-symmetry endpoint) -> r=0, Q=1/3
+[PASS] 4a the Koide map Q=(1+2r)/3 sends the three settings to {1/3, 2/3, 1}: distinct observable consequences
+       r in {0,1/2,1} -> Q in { 0.333, 0.667, 1.000 }
+[PASS] 4b MULTI-STABILITY: there are THREE DISTINCT stable einselection pointer-basis settings {r=0 degenerate, r=1/2 C3-charge, r=1 position} -- a discrete set on the dial
+[PASS] 4c NO OVERREACH: r=1/2 is stable BUT NOT EXCLUSIVE -- each setting is the einselection fixed point of its OWN respecting monitoring, and decoheres under the others' (1b,2b). No sector is forced onto r=1/2; different sectors einselect different stable bases
+       C3-charge<->S, position<->X, degenerate<->I; cross-class monitoring decoheres each
+[PASS] 4d r=1/2 is NOT forced and NOT unique: it is one of three; the lane-assignment (which monitoring class a sector's record realizes) is the standing physical input, NOT supplied here
+       = the det_C/det_R / K-reality / block-counting input mapped into einselection language
+[PASS] 5a records-flow r->2r^2 has fixed points r=0 and r=1/2 (FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX); r=1 is the doublet-collapse runaway endpoint
+       r=0 (stable), r=1/2 (separatrix), r>1/2 -> runaway to r=1 (doublet collapse)
+[PASS] 5b COINCIDENCE: the THREE einselection-stable pointer-basis settings {0, 1/2, 1} are exactly the THREE distinguished settings of the records-flow dial (its 2 fixed points + the doublet-collapse endpoint) -> the pointer-basis settings ARE the dial's distinguished settings
+[PASS] 5c the einselection (predictability-sieve) stability and the records-FLOW dynamical stability are ORTHOGONAL and CONSISTENT: r=1/2 is an einselection-ROBUST pointer SETTING (concave S2 max, 0 entropy gen) yet the unstable SADDLE of the FLOW r->2r^2 between settings
+       a setting can be a robust pointer basis while the flow BETWEEN settings repels from it
+[PASS] 6a HONESTY: the C3-charge basis is stable ONLY under K-real C3-respecting monitoring; under position monitoring it decoheres (1b/2b). So r=1/2 is conditional on the monitoring class
+[PASS] 6b HONESTY: K-reality is what kills the r=0 (3-mode) partition -- resolving the doublet needs the K-ODD A = i(C-C^2) (T-violating). A K-real coupling cannot resolve omega from omega^2
+[PASS] 6c HONESTY/structure: a coupling that resolves all 3 C3-charges (K-real S + K-odd A) makes the C3-charge states a FULL nondegenerate pointer basis (3-mode partition) -- the partition depends on K-reality; this is the standing partition input, recorded not hidden
+       3-mode resolution -> different (degenerate/r=0-type) reading; K-reality picks 2-sector
+[PASS] 6d NO OVERREACH (restated): this runner does NOT claim r=1/2 is forced or unique. It claims r=1/2 is ONE of three stable einselection pointer-basis settings; charged leptons sit there
+
+SCORECARD PASS=32 FAIL=0
+VERDICT (einselection / predictability sieve, angle A):
+  setting r=1/2 (C3-charge eigenbasis) = STABLE-SETTING. Under a K-real C3-respecting interaction the
+  C3-charge (Fourier / isotype-sector) eigenbasis is the einselected pointer basis: its states generate
+  ZERO entropy, it commutes with the monitor ([C,S]=0), and it is ROBUST over the entire C3-respecting
+  class (worst-case entropy gen ~1e-15 over 2000 random couplings) -- a concave/stable max of the
+  2-sector entropy (S2''(1/2)=-1<0), hence a robust (non-marginal) pointer SETTING -> r=1/2, Q=2/3.
+  {r=0, 1/2, 1} are a DISCRETE set of STABLE einselection pointer-basis settings (multi-stable, NO
+  overreach): degenerate(I-monitor)->r=0, C3-charge(K-real S-monitor)->r=1/2, position(X-monitor)->r=1;
+  each is the einselection fixed point of its OWN respecting monitoring and decoheres under the others'.
+  These COINCIDE with the records-flow dial's distinguished settings (r->2r^2 fixed points r=0, r=1/2 +
+  the r=1 doublet-collapse endpoint). r=1/2 is NOT forced and NOT exclusive: the lane assignment (which
+  monitoring class a sector's record realizes) is the standing physical input (= det_C/det_R / K-reality
+  / block-counting). The win: r=1/2 is one of three stable pointer-basis settings; charged leptons sit
+  there because their record monitors a C3-respecting (K-real) interaction. Predictability-sieve
+  stability is ORTHOGONAL to the records-FLOW saddle (both true): a robust pointer SETTING that the
+  inter-setting flow repels from.

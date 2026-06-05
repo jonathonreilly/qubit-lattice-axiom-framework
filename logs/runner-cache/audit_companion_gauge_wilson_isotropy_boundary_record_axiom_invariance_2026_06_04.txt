@@ -1,0 +1,199 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_gauge_wilson_isotropy_boundary_record_axiom_invariance_2026_06_04.py
+runner_sha256: 8a5a4215fed34da5dfd67d84c9c3e3cec030ad46a1c3337cb9d86bb36df0475f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+Gauge Wilson Isotropy Boundary Record Axiom Invariance Companion Runner
+========================================================================
+Repo root: <repo>
+Parent note: docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md
+Companion source note: docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify that the parent's two load-bearing route checks
+        (B1) Cl(3) pseudoscalar centrality / non-fourth-generator;
+        (B2) staggered eta plaquette orientation-blindness
+      are invariant under the 2026-06-04 Record axiom adoption
+      (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no promotion, no Record content asserted.
+
+========================================================================
+BLOCK 1: Pauli anticommutation {G_i, G_j} = 2 delta_{ij} I
+========================================================================
+  Verifies the Cl(3,0) Clifford anticommutation relations
+  in the Pauli irrep of the one-qubit local algebra.
+  PASS anticomm_sigma_1_sigma_2_zero :: max |{sigma_1, sigma_2}| = 0.000e+00
+  PASS anticomm_sigma_1_sigma_3_zero :: max |{sigma_1, sigma_3}| = 0.000e+00
+  PASS anticomm_sigma_2_sigma_3_zero :: max |{sigma_2, sigma_3}| = 0.000e+00
+
+========================================================================
+BLOCK 2: Pauli self-squares G_i^2 = I
+========================================================================
+  Verifies the Clifford diagonal i = j case in the Pauli irrep.
+  PASS sigma_1_squared_equals_I :: max |sigma_1^2 - I| = 0.000e+00
+  PASS sigma_2_squared_equals_I :: max |sigma_2^2 - I| = 0.000e+00
+  PASS sigma_3_squared_equals_I :: max |sigma_3^2 - I| = 0.000e+00
+
+========================================================================
+BLOCK 3: Volume element omega = G_1 G_2 G_3 in the Pauli irrep
+========================================================================
+  Verifies omega = sigma_1 sigma_2 sigma_3 = i I (Pauli irrep)
+  and the structural square omega^2 = -I.
+  PASS omega_equals_iI_in_pauli_irrep :: max |omega - iI| = 0.000e+00
+  PASS omega_squared_equals_minus_I :: max |omega^2 - (-I)| = 0.000e+00
+
+========================================================================
+BLOCK 4: Centrality [omega, G_i] = 0 in odd-dim Cl(3,0)
+========================================================================
+  Verifies the load-bearing centrality identity that
+  rules omega out as a fourth anticommuting Clifford generator.
+  PASS commutator_omega_sigma_1_zero :: max |[omega, sigma_1]| = 0.000e+00
+  PASS commutator_omega_sigma_2_zero :: max |[omega, sigma_2]| = 0.000e+00
+  PASS commutator_omega_sigma_3_zero :: max |[omega, sigma_3]| = 0.000e+00
+
+========================================================================
+BLOCK 5: Non-anticommutation {omega, G_i} = 2 omega G_i != 0
+========================================================================
+  Verifies that the candidate anticommutator is nonzero,
+  ruling out omega as a Cl(3,1)-style fourth generator T with
+  {T, G_i} = 0 for all three spatial generators.
+  PASS anticomm_omega_sigma_1_equals_2_omega_sigma_1 :: max |{omega, sigma_1} - 2*omega*sigma_1| = 0.000e+00
+  PASS anticomm_omega_sigma_1_nonzero :: max |{omega, sigma_1}| = 2.000e+00
+  PASS anticomm_omega_sigma_2_equals_2_omega_sigma_2 :: max |{omega, sigma_2} - 2*omega*sigma_2| = 0.000e+00
+  PASS anticomm_omega_sigma_2_nonzero :: max |{omega, sigma_2}| = 2.000e+00
+  PASS anticomm_omega_sigma_3_equals_2_omega_sigma_3 :: max |{omega, sigma_3} - 2*omega*sigma_3| = 0.000e+00
+  PASS anticomm_omega_sigma_3_nonzero :: max |{omega, sigma_3}| = 2.000e+00
+
+========================================================================
+BLOCK 6: Pseudoscalar-as-fourth-generator wall (combined)
+========================================================================
+  A fourth Clifford generator T with {T, G_i} = 0 (i = 1, 2, 3)
+  cannot equal omega, because [omega, G_i] = 0 (Block 4)
+  forces {omega, G_i} = 2 omega G_i != 0 (Block 5).
+  PASS pseudoscalar_not_fourth_clifford_generator :: violations across i = 1,2,3: 0
+
+========================================================================
+BLOCK 7: Standard staggered phases eta_mu(x) sign-check
+========================================================================
+  eta_0(x) = +1; for mu >= 1, eta_mu(x) = (-1)^{x_0 + ... + x_{mu-1}}.
+  PASS eta_definition_consistent_on_parity_cube :: checked 16 * 4 = 64 (site, mu) pairs; fails = 0
+
+========================================================================
+BLOCK 8: Staggered-phase squares eta_mu(x)^2 = 1
+========================================================================
+  Elementary identity used in the eta-product reduction.
+  PASS eta_squared_equals_one_on_parity_cube :: checked 16 * 4 = 64 (site, mu) pairs; fails = 0
+
+========================================================================
+BLOCK 9: Coordinate-shift identity for eta_mu(x + e_nu)
+========================================================================
+  eta_mu(x + e_nu) = eta_mu(x) when nu >= mu (eta_mu depends only
+  on x_0,...,x_{mu-1}); eta_mu(x + e_nu) = -eta_mu(x) when nu < mu.
+  PASS eta_mu_unchanged_when_nu_ge_mu :: violations across 16 * 4 * 4 = 256 triples: 0
+  PASS eta_mu_flips_when_nu_lt_mu :: violations across triples with nu < mu: 0
+
+========================================================================
+BLOCK 10: Staggered eta plaquette product = -1 on all 6 orientations
+========================================================================
+  E_{mu nu}(x) = eta_mu(x) eta_nu(x + e_mu) eta_mu(x + e_nu) eta_nu(x)
+  Six orientations: (mu, nu) with mu < nu in {0,1,2,3}.
+  PASS E_01_equals_minus_one_on_sample :: orientation (mu=0, nu=1): values seen = [-1]
+  PASS E_02_equals_minus_one_on_sample :: orientation (mu=0, nu=2): values seen = [-1]
+  PASS E_03_equals_minus_one_on_sample :: orientation (mu=0, nu=3): values seen = [-1]
+  PASS E_12_equals_minus_one_on_sample :: orientation (mu=1, nu=2): values seen = [-1]
+  PASS E_13_equals_minus_one_on_sample :: orientation (mu=1, nu=3): values seen = [-1]
+  PASS E_23_equals_minus_one_on_sample :: orientation (mu=2, nu=3): values seen = [-1]
+  PASS all_six_orientations_yield_minus_one :: fail orientations: []
+
+========================================================================
+BLOCK 11: Orientation-blindness boundary statement (combined)
+========================================================================
+  Every one of the six plaquette orientations yields the same
+  value E_{mu nu}(x) = -1, so the eta-product mechanism supplies
+  at most one common sign on all six orientations and cannot
+  produce a spatial/temporal plaquette-weight split.
+  PASS all_orientations_yield_single_common_value :: union of all values across all orientations and sites: [-1]
+  PASS common_value_is_minus_one :: single common value = -1
+  PASS no_orientation_dependent_split_possible_from_eta_mechanism :: exactly one distinct value seen across all six orientations
+
+========================================================================
+BLOCK 12: Parent note Record usage scan (load-bearing core)
+========================================================================
+  PASS parent_note_present :: docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md
+  PASS structural_section_start_found :: ## Closed Derivation found at offset 4271
+  PASS structural_section_end_found :: ## Relation To Existing Authority found at offset 7324
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+
+========================================================================
+BLOCK 13: Record axiom counterfactual: identical symbolic outputs
+========================================================================
+  Re-run the symbolic core under explicit 'Record asserted' and
+  'Record not asserted' outer scopes; verify identical outputs.
+  PASS with_record_omega_iI :: omega = iI under Record asserted
+  PASS without_record_omega_iI :: omega = iI under Record not asserted
+  PASS counterfactual_omega_identical :: bitwise identical
+  PASS with_record_omega_squared_minusI :: omega^2 = -I under Record asserted
+  PASS without_record_omega_squared_minusI :: omega^2 = -I under Record not asserted
+  PASS counterfactual_omega_squared_identical :: bitwise identical
+  PASS counterfactual_commutators_all_zero_with :: [omega, sigma_i] = 0 for all i under Record asserted
+  PASS counterfactual_commutators_all_zero_without :: [omega, sigma_i] = 0 for all i under Record not asserted
+  PASS counterfactual_commutators_identical :: bitwise identical across all three commutators
+  PASS counterfactual_anticomms_nonzero_with :: {omega, sigma_i} != 0 for all i under Record asserted
+  PASS counterfactual_anticomms_nonzero_without :: {omega, sigma_i} != 0 for all i under Record not asserted
+  PASS counterfactual_anticomms_identical :: bitwise identical across all three anticommutators
+  PASS counterfactual_plaquette_values_all_minus_one_with :: all 96 values = -1 under Record asserted
+  PASS counterfactual_plaquette_values_all_minus_one_without :: all 96 values = -1 under Record not asserted
+  PASS counterfactual_plaquette_values_identical_list :: list-equal across all (orientation, site) pairs
+
+========================================================================
+BLOCK 14: Quantum/Lattice content preserved across the two memos
+========================================================================
+  PASS old_memo_present :: docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_one_qubit_quantum_content :: historical one-qubit / Cl(3,0) content present
+  PASS new_memo_has_Quantum_axiom_content :: new Quantum axiom (one-qubit / M_2(C) / Cl(3,0)) preserved
+  PASS old_memo_has_lattice_content :: historical Z^3 / lattice content present
+  PASS new_memo_has_Lattice_axiom_content :: new Lattice axiom (Z^3 / cubic adjacency) preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar record-readout functional present
+  PASS new_memo_Record_scope_excludes_load_bearing_bridges :: Record axiom scope excludes log-det / source-action / record production; none of these enter the parent's two-route argument
+
+========================================================================
+BLOCK 15: Parent runner-output preservation
+========================================================================
+  The parent runner verifies the same finite-dimensional Pauli /
+  staggered-eta facts checked here. Its summary line is unchanged
+  by the minimal_axioms hash bump because none of those facts
+  consume Record content.
+  PASS parent_runner_present :: scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py
+  PASS parent_runner_cache_shows_pass_19_fail_0 :: expected SUMMARY: PASS=19 FAIL=0
+
+========================================================================
+TOTAL PASS: 61
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing two-route content of
+    GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md
+  uses ONLY Quantum axiom content (one-qubit M_2(C) ~= Cl(3,0)
+  Pauli algebra + volume element omega = sigma_1 sigma_2 sigma_3)
+  and Lattice axiom content (Z^d site set indexing standard
+  staggered phases eta_mu(x)), plus standard finite-dimensional
+  complex linear algebra and elementary binary-parity
+  combinatorics. The Record axiom (additive scalar record-readout
+  functional I(.)) is neither used nor invoked. Symbolic and
+  numeric outputs are identical under both 'Record axiom asserted'
+  and 'Record axiom not asserted' outer scopes. This runner does
+  not re-apply the prior audit verdict; it records that the
+  arithmetic checked here is unchanged by the 2026-06-04 axiom-set
+  adoption.
+
+Later independent audit handling decides whether to re-use or re-test the prior
+verdict on the new minimal_axioms premise hash.
+
+----- stderr -----
+

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 164 |
+| **retained** | 165 |
 | **retained_no_go** | 175 |
 | **retained_bounded** | 628 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 29 |
-| unaudited | 1353 |
+| unaudited | 1352 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 956 |
+| `audited_clean` | 957 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1637 |
+| `unaudited` | 1636 |
 
 | claim_type | count |
 |---|---:|
@@ -583,6 +583,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_transport_gap_constant_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_y_l1_ratios_wilson_integer_diff_note_2026-05-08_probey_l1_ratios` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
 | `koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -8451,6 +8452,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every local gauge-invariant scalar built from the selected-line packet is constant along the branch, while delta(m) is nonconstant and strict-monotone.  _(class `A`)_
 - **chain closes:** True — Within the restricted packet, the no-go follows from the constancy of the local packet and rho_delta together with strict variation of delta(m). The runner checks the relevant local-geometry identities, target placement, branch constancy, and two-point indistinguishability.
 - **rationale:** The load-bearing inference is an algebraic obstruction: a local packet that is constant on the branch cannot distinguish one interior point from another. The runner does more than print constants; it computes the Berry connection, FS density, curvature proxy, branch endpoints, rho_delta constancy, monotonicity, and same-packet/different-holonomy witness. No cited open authority is imported in the audit packet, and the conclusion is scoped to the stated local no-go rather than to a positive derivation of the physical value.
+- **auditor confidence:** high
+
+### `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure algebraic comparison of signed-eigenvalue and singular-value Koide readouts for the C3-circulant Hermitian H=aI+bC+b̄C², especially at r=|b|²/a²=1/2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-173826-bc961cc2a3-koide_signed_eigenvalue_vs_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For real eigenvalues, Q(V) = (3a²+6|b|²)/(Σ|λ_k|)² and Σ|λ_k| ≥ Σλ_k = 3a, with equality exactly when no eigenvalue is negative; at r=1/2 this makes Q(S)=2/3 while Q(V) varies with θ once a sign flip occurs.  _(class `A`)_
+- **chain closes:** True — The displayed identities follow from the C3 root-of-unity/trigonometric sums, real-spectrum numerator equality |λ_k|²=λ_k², and the triangle inequality for the denominator. The r=1/2 specialization is explicitly a hypothesis, and the exact sample angles independently establish nonconstancy of Q(V).
+- **rationale:** The claim is a genuine algebraic closure over the restricted packet with no load-bearing cited authority or external comparator. Independent formula checking confirms the factors 3a, 3a²+6|b|², Q(S)=(1+2r)/3, the r=1/2 value 2/3, the closed equality window including θ=π/12, and the one-negative denominator 3a−2λ_min. The runner source actually computes the symbolic identities and exact samples rather than merely printing constants, and its PASS=30/FAIL=0 is consistent with the note.
 - **auditor confidence:** high
 
 ### `koide_transport_gap_constant_no_go_note_2026-04-20`

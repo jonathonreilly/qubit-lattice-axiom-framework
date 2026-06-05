@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 647 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1294 |
+| unaudited | 1293 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 57 |
+| ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 993 |
-| `audited_conditional` | 57 |
+| `audited_conditional` | 58 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1578 |
+| `unaudited` | 1577 |
 
 | claim_type | count |
 |---|---:|
@@ -74,8 +74,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration` | 53 |
 | `meta` | 288 |
 | `no_go` | 297 |
-| `open_gate` | 134 |
-| `positive_theorem` | 710 |
+| `open_gate` | 135 |
+| `positive_theorem` | 709 |
 
 | criticality | count |
 |---|---:|
@@ -1181,6 +1181,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -16967,6 +16968,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **open / conditional deps cited:**
   - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
   - `YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`
+- **auditor confidence:** high
+
+### `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional finite C^6 support: an assumed S_6-democratic Q_L source has signed-linear component tangent 1/sqrt(6) and projective component weight 1/6; the physical top-Yukawa bridge is not proved.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-195545-7e50febf40-yt_qubit_signed_linear_sourc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the S_6-democratic source constraint the invariant unit vector is u_dem=(1,...,1)/sqrt(6), and the signed-linear source deformation S -> S + s sum_i u_i O_i has component tangent u_i=1/sqrt(6).  _(class `A`)_
+- **chain closes:** False — The algebraic core closes independently: equal S_6-invariant components plus unit normalization give 1/sqrt(6), and projective readout squares it to 1/6. The full physical chain does not close because no supplied authority proves that y_33/top Yukawa equals the signed-linear democratic source tangent.
+- **rationale:** Issue: the finite C^6 algebra is correct, but the note explicitly leaves open the bridge identifying the physical top Yukawa coefficient with the signed-linear democratic Q_L source tangent. Why this blocks: the runner checks normalization, projective weight 1/6, and linear tangent 1/sqrt(6), but it does not derive the source-action/LSP/democratic-source physical identification from supplied retained authorities. Repair target: prove a retained bridge theorem that the accepted source-action rule and LSP readout force y_33 to equal that signed-linear tangent. Claim boundary until fixed: exact conditional support for the democratic signed-linear source response, not positive Y_T closure.
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

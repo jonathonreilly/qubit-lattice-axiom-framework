@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_certified_backbone_2026_06_04.py
+runner_sha256: 31b40aa4ee8460ac4c6ef8003b4ae400a9adcc45882657d10b36a100f68408ed
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+
+BETA=6 CERTIFIED CONVERGENT BACKBONE
+========================================
+  [PASS] rigorous coefficient bound |a_n| <= 1/n! holds for all n<70
+  [PASS] seed a_0=1, a_1=0, a_2=1/36 (J(0)=1; E[ReTrU]=0; a_2=1/36)
+  [PASS] rigorous tails negligible (J tail < 1e-40)
+  [PASS] J(6) certified strictly > 0 (so K=log J safe; nearest J-zero |b|~8.205>6)
+
+CERTIFIED ENCLOSURES [lower, upper]:
+  P_1plaq(6)           in [0.4225317396499834681656808285, 0.4225317396499834681656808285]  (half-width 8.11e-47)
+  Delta_cube(6)        in [0.06291341532826614531950172152, 0.06291341532826614531950172152]  (half-width 1.02e-45)
+  Delta_2cube_w10(6)   in [0.03007958721337084363301808208, 0.03007958721337084363301808208]  (half-width 5.09e-46)
+  BACKBONE(6)          in [0.5155247421916204571182006321, 0.5155247421916204571182006321]  (half-width 1.61e-45)
+  [PASS] P_1plaq(6) encloses 0.42253173965 (matches d9 runner)
+  [PASS] Delta_cube(6) encloses 0.06291341533 (cube closed form)
+  [PASS] Delta_2cube_w10(6) encloses 0.03007958721 (#2598)
+  [PASS] BACKBONE(6) encloses 0.51552474219 (certified)
+  [PASS] backbone half-width < 1e-40 (certified to ~45 digits)
+
+CERTIFIED: backbone(6) >= [0.5155247421916204571182006320653268028342349392312536311, 0.5155247421916204571182006320653268028342349392312536311]
+  accounts for >= [86.87643110745204872231220627996744233809149633152213422, 86.87643110745204872231220627996744233809149633152247633]% of the 0.5934 Monte-Carlo comparator.
+  Remaining [13.12356889254795127768779372003255766190850366847752367, 13.12356889254795127768779372003255766190850366847786578]% = the non-cube rho_{p,q}(6) wall (open).
+
+SCORECARD: PASS=9 FAIL=0
+
+----- stderr -----
+

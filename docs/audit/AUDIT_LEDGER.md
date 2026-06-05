@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 176 |
 | **retained_no_go** | 183 |
-| **retained_bounded** | 657 |
+| **retained_bounded** | 658 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 31 |
-| unaudited | 1277 |
+| unaudited | 1276 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1008 |
+| `audited_clean` | 1009 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1561 |
+| `unaudited` | 1560 |
 
 | claim_type | count |
 |---|---:|
@@ -398,6 +398,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5643,6 +5644,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** C3 admits both invariant bilinears I and J=C-C^2, so choosing the antisymmetric J pairing that yields det_C is an unforced extra posit rather than a consequence of fermionic Berezin structure.  _(class `A`)_
 - **chain closes:** False — The packet closes the narrow algebraic non-selection of J, but the broader claim also imports the P1 carrier premise, Round-1 U(1)_b measure-neutrality, and the det_C/det_R-to-r/Q mapping without providing those authorities. R2-4 verifies only arithmetic after those mappings are assumed.
 - **rationale:** R2-1 through R2-3 are substantive algebraic checks: the determinant is a product functional, C3 preserves both I and J, and determinant exponent is separate from doublet count. The displayed eigenvalue and Frobenius block-total formulas are consistent under the runner's conventions. However, the full source-note conclusion that det_R/Q=1 stands and that the wall is Dirac-vs-Majorana relies on inherited mappings and prior U(1)_b/P1 authorities absent from the restricted packet, so the chain is not closed as written.
+- **auditor confidence:** high
+
+### `flavor_find_j_round3_dirac_generation_blind_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 3x3 C3-circulant algebra conditioned on U_gen=iI3; no physical charge-conjugation generation-action bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260605-223514-f96e279158-flavor_find_j_round3_dirac_g`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Conditional on the explicit input U_gen=iI3, the central generation scalar and C-eigenbasis phase centralizer leave the C3-circulant Hermitian family fixed, while generic C rephasing and nonzero Hermitian C3-circulant Gamma_chi anticommutants are excluded.  _(class `A`)_
+- **chain closes:** True — Within the stated finite packet, the identities close by direct matrix algebra: iI3 conjugation is trivial, the stated phase centralizer is diagonal in the C-eigenbasis and commutes with H, generic scalar rephasing violates C^3=I, and the anticommutator equations force a=x=y=0. The open physical bridge is explicitly outside the audited scope.
+- **rationale:** The runner source performs actual finite matrix and symbolic checks rather than printing constants, and the displayed claims can be verified independently from the given matrices. No cited upstream authority is imported, and no external comparator or tuned numerical input is used. The conclusion is clean only for the bounded conditional algebraic statement, not for any stronger Dirac/Majorana physical assignment.
 - **auditor confidence:** high
 
 ### `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02`

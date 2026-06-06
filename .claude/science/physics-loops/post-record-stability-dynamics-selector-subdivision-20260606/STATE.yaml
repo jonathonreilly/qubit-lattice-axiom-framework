@@ -38,18 +38,18 @@ no_go_routes:
   - "dynamics keyword => Record-derived physical arrow"
   - "sub-bucket => audit verdict"
 review_findings: "local review clean: runner PASS=25 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
-pr_status: pending
-pr_url: null
-pr_number: null
-cycle_status: local_review_clean
-mergeable: null
-merge_state_status: null
-checks: "runner PASS=25 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack count 13; git diff --check clean"
+pr_status: open
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2837"
+pr_number: 2837
+cycle_status: pr_open_unstable
+mergeable: MERGEABLE
+merge_state_status: UNSTABLE
+checks: "audit_pipeline queued at first verification"
 next_exact_action: |
-  Commit, push, and open a stacked PR against the selector/dial subdivision
-  branch.
+  Wait for GitHub audit-lane checks, then patch final clean/success PR status
+  if the latest head remains clean.
 stop_condition: |
-  Not satisfied: PR is not open yet.
+  Not satisfied: PR is open and mergeable, but audit_pipeline is queued.
 status_fields:
   actual_current_surface_status: exact-support
   trace_class: upstream_support

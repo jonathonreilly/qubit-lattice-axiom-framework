@@ -2,7 +2,7 @@ loop_slug: post-record-stable-kernel-frequency-interface-20260606
 branch: physics-loop/post-record-stable-kernel-frequency-interface-20260606
 base: origin/main
 campaign: dynamics lanes
-cycle_status: pr_open_initial_unstable_in_progress_check
+cycle_status: pr_open_clean
 target_status: exact-support
 actual_current_surface_status: exact-support
 trace_class: upstream_support
@@ -42,9 +42,9 @@ pr_status:
   base: main
   head: physics-loop/post-record-stable-kernel-frequency-interface-20260606
   mergeable: MERGEABLE
-  merge_state_status: UNSTABLE
-  checks: "audit_pipeline in progress at first verification"
-next_exact_action: "Commit and push PR status patch; recheck PR after audit_pipeline completes and patch final clean/dirty status."
-stop_condition: "Block closes when PR final GitHub state is recorded or PR backlog records exact failure."
+  merge_state_status: CLEAN
+  checks: "no remaining statusCheckRollup entries at final verification"
+next_exact_action: "Closed for campaign purposes; pivot to next independent dynamics lane."
+stop_condition: "Satisfied: PR is open, mergeable, and final clean status is recorded."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false

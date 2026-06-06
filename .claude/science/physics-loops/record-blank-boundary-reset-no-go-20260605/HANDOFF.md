@@ -4,6 +4,8 @@
 
 Exact negative-boundary block ready for stacked review.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2773
+
 ## Main Finding
 
 Clean broadcast from arbitrary old fragment states is many-to-one on the closed
@@ -18,6 +20,5 @@ must export old memory to an explicit sink/environment.
 
 ## Next Exact Action
 
-Open stacked PR against
-`physics-loop/record-pointer-broadcast-hamiltonian-20260605`, then patch this
-loop pack with the PR URL.
+Campaign pivot: select the next ranked science lane while #2773 receives
+review/checks.

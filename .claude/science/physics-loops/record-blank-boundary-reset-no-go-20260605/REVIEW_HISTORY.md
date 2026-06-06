@@ -11,3 +11,9 @@
 - Hygiene: `git diff --check` passed.
 - Wording: targeted blank/reset/Hamiltonian/rate/selector/status sweep returned
   no hits.
+- PR verification:
+  `gh pr view 2773 --json number,title,state,baseRefName,headRefName,url,mergeStateStatus,isDraft`
+  returned open PR #2773 with base
+  `physics-loop/record-pointer-broadcast-hamiltonian-20260605`, head
+  `physics-loop/record-blank-boundary-reset-no-go-20260605`, and
+  `mergeStateStatus: UNSTABLE`.

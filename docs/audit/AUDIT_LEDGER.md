@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 189 |
+| **retained** | 190 |
 | **retained_no_go** | 199 |
 | **retained_bounded** | 684 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1340 |
+| unaudited | 1339 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1069 |
+| `audited_clean` | 1070 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1647 |
+| `unaudited` | 1646 |
 
 | claim_type | count |
 |---|---:|
@@ -376,6 +376,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `evolving_network_prototype_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_v3_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
@@ -5165,6 +5166,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** eta/eta_obs = (516 / 53009) * Y0^2 * F_CP * kappa_axiom / eta_obs  _(class `A`)_
 - **chain closes:** True — The source note states a bounded decomposition rather than a full structural derivation of every factor. The runner completed with PASS=38 FAIL=0 and verifies the ABC rational cancellation, exact product reconstruction, candidate near-fit mismatch, and explicit isolation of Y0^2 as phenomenological.
 - **rationale:** The audited bounded claim closes as an algebraic decomposition of the existing transport chain: ABC reduces exactly to 516/53009, the reconstructed product matches the runner's eta/eta_obs value, and the four named near-fit candidates are not exact framework forms. The clean verdict is limited to this bounded scope and does not promote Y0^2, PMNS-chart constants, or the ODE transport functional to first-principles retained derivations beyond the note's admitted residual boundary.
+- **auditor confidence:** high
+
+### `eta_holonomy_base_flux_scope_boundary_note_2026-06-06`
+
+- **Note:** [`ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md`](../../docs/ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact algebraic support for the eta staggered phases as a spin-diagonal scalar Z_2 base connection on Z^3 with uniform plaquette curvature -1 and rectangular base-loop holonomy (-1)^area, while leaving the UD_2 braid-class bridge open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-175718-4928def7ca-eta_holonomy_base_flux_scope`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The staggered phases define a scalar Z_2 base connection whose coordinate plaquette curvature is uniformly F_{mu,nu}(x)=eta_mu(x) eta_nu(x+e_mu) eta_mu(x+e_nu) eta_nu(x)=-1, yielding Hol(rectangle a x b)=(-1)^(ab).  _(class `A`)_
+- **chain closes:** True — The displayed eta definitions directly give curvature -1 in each coordinate plane: the shifted eta factor changes sign exactly once around every coordinate plaquette. Multiplying plaquettes over an a by b rectangle cancels interior edges and gives (-1)^(ab); no UD_2 braid-class identification is asserted.
+- **rationale:** The runner source performs explicit Pauli-matrix multiplication, Z_2 curvature evaluation, gauge-transformed curvature checks, and rectangular loop holonomy checks; it is not merely printing constants or importing a contested premise. An independent algebra check of the displayed eta formulas confirms the signs: planes 12, 13, and 23 each acquire one parity flip around a unit plaquette, so curvature is -1 and rectangular holonomy is (-1)^area. The note also correctly scopes the topology boundary by refusing to identify detour swaps in B_2(Z^3) and by treating the graph as a 1-complex without an added plaquette 2-cell.
 - **auditor confidence:** high
 
 ### `evolving_network_prototype_note`

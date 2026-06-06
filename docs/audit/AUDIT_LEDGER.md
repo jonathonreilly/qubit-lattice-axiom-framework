@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 689 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1324 |
+| unaudited | 1323 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 61 |
+| ~~audited_conditional~~ | 62 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1080 |
-| `audited_conditional` | 61 |
+| `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1631 |
+| `unaudited` | 1630 |
 
 | claim_type | count |
 |---|---:|
@@ -1255,6 +1255,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10051,6 +10052,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Record additivity alone does not distinguish the tested additive sign-sensitive and sign-blind functionals, and the eta sign count is insufficient to reconstruct the signed Koide denominator.  _(class `A`)_
 - **chain closes:** True — The stated diagnostic facts follow from elementary finite-spectrum algebra and the retained narrow Koide algebra identity only as a boundary reference. The note does not claim a physical readout derivation, so no missing bridge is needed for its stated open-gate scope.
 - **rationale:** The runner source computes the advertised finite-dimensional checks rather than merely printing constants: direct-sum additivity for four scalar functionals, sign erasure under squaring, eta counterexamples with different Q, and the r=1/2 algebraic map to 2/3. The PDG-mass comparator check is external, but it is explicitly scoped as a comparator-only sign-homogeneity observation and not used to derive the framework claim. The cited minimal axiom is an accepted premise, and the retained Koide algebra note is used only to bound the route rather than to import an open physical identification.
+- **auditor confidence:** high
+
+### `koide_records_objectivity_conditional_note_2026-05-31`
+
+- **Note:** [`KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given an equal-block (1,1) metric and a records/objectivity maximization input, the two-block Koide algebra selects r=1/2 and hence Q=2/3; the packet also shows that pointer/dephasing alone does not force that weighting.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-183606-ad38b12f11-koide_records_objectivity_co`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For general weights w_s log E_+ + w_p log E_perp the maximum occurs at r*=w_p/(2 w_s), so equal weights give r=1/2 and Q=(1+2r)/3=2/3.  _(class `A`)_
+- **chain closes:** True — The algebraic optimization closes on its own terms: with E_+=1/(1+2r) and E_perp=2r/(1+2r), differentiating w_s log E_+ + w_p log E_perp gives r=w_p/(2w_s), hence r=1/2 for (1,1). The missing work is not inside the conditional algebra but in deriving or admitting the two named premises.
+- **rationale:** The displayed optimizer and Q(r) algebra are correct, and the runner source performs real symbolic/numeric checks rather than merely printing constants. However, the result explicitly depends on two unclosed inputs: equal-block weighting and records/objectivity maximization. The cited retained authorities support the surrounding algebra and the freedom/no-go boundaries, but they do not derive those premises.
 - **auditor confidence:** high
 
 ### `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16`

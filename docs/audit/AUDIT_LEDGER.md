@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 178 |
+| **retained** | 179 |
 | **retained_no_go** | 196 |
 | **retained_bounded** | 674 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1217 |
+| unaudited | 1216 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1044 |
+| `audited_clean` | 1045 |
 | `audited_conditional` | 84 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1501 |
+| `unaudited` | 1500 |
 
 | claim_type | count |
 |---|---:|
@@ -907,6 +907,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `s3_all_r_boundary_link_disk_theorem_note_2026-05-30` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `s3_cap_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_general_r_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13914,6 +13915,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** From the definitions n_pair = p, n_color = c, and A^2 := n_pair / n_color, the forced closed form is A^2 = p / c.  _(class `A`)_
 - **chain closes:** True — The chain closes inside the scoped assumptions: D1-D3 explicitly define the read-offs and product, and R1-R4 plus C1-C3 are immediate algebraic consequences. No excluded physical bridge, gauge identification, PDG comparator, or derivation of the framework instance (2, 3) is needed for this bounded claim.
 - **rationale:** The note is narrowly scoped as an implication from explicit operational definitions, not as a derivation of those definitions or of the framework values. The runner hard-codes the stipulated read-offs, but for this claim that is not a defect because those read-offs are the stated hypotheses; it then verifies the quotient, product, corollaries, and example substitutions at exact symbolic precision. Within that boundary, the algebra is closed and there are no open dependency edges.
+- **auditor confidence:** high
+
+### `s3_all_r_boundary_link_disk_theorem_note_2026-05-30`
+
+- **Note:** [`S3_ALL_R_BOUNDARY_LINK_DISK_THEOREM_NOTE_2026-05-30.md`](../../docs/S3_ALL_R_BOUNDARY_LINK_DISK_THEOREM_NOTE_2026-05-30.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** All-R boundary-vertex link disk theorem for the cubical ball B_R in Z^3: every boundary vertex link link(v,B_R) is a PL 2-disk; cone-cap and PL S^3 identification are out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-002912-a67097f3ee-s3_all_r_boundary_link_disk_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Lemma FORCED: for every integer v_a and eps in {+1,-1}, g(v_a+s_a^forced)=max(H(v_a),H(v_a+eps)), which makes the forced incident witness cube satisfy Phi(W) <= max_q B(q).  _(class `A`)_
+- **chain closes:** True — The independent algebra check confirms H(t), SITE, FORCED, and the product-corner maximum identity; hence any true-link simplex has a present incident witness cube and link(v,B_R)=K_simp(P). Combining that bridge with the retained Property 2/2a and Proposition Z gives the PL 2-disk conclusion.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the stated cube-corner membership primitives, not a definition, renaming, or numerical fit. The all-R bridge does not depend on finite type stabilization or finite-radius extrapolation; those runner checks are corroborative only. The cited upstream material needed for the final disk step is retained-grade within the packet: Property 2/2a and Proposition Z are used, while the formerly open bridge is supplied by this note.
 - **auditor confidence:** high
 
 ### `s3_boundary_link_theorem_note`

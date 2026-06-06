@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dynamics_nontriviality_selection_firewall_2026_06_06.py
+runner_sha256: 9c9fb63201e085dd2a451bc3504a5e720a2dc8d6c1ce49970d0f9ef892720d36
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -68,3 +76,6 @@ FORM_CLASS_SELECTS_NONZERO_DYNAMICS=FALSE
 FORM_CLASS_SELECTS_COUPLINGS_ACTION_OR_TRUNCATION=FALSE
 ALLOWED_CLASS_MEMBERSHIP_INTERFACE=TRUE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 188 |
+| **retained** | 189 |
 | **retained_no_go** | 197 |
 | **retained_bounded** | 683 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1347 |
+| unaudited | 1346 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1065 |
+| `audited_clean` | 1066 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1653 |
+| `unaudited` | 1652 |
 
 | claim_type | count |
 |---|---:|
@@ -913,6 +913,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
@@ -13592,6 +13593,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of the Hilbert-Schmidt projection onto the identity line is alpha = <I_color, M_color>_HS / <I_color, I_color>_HS = Tr_color M_color / N_c, giving rho_singlet = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].  _(class `A`)_
 - **chain closes:** True — The conclusion follows from ordinary finite-dimensional orthogonal projection and the supplied SU(N_c) generator normalization. The note explicitly does not identify this projection fraction with kappa_EW or any physical matching rule.
 - **rationale:** The load-bearing step is a direct Hilbert-Schmidt projection identity, not a definition, renaming, external comparator, or tuned numerical match. The only cited authority needed for P4 supplies the SU(N_c) normalization convention and is provided as retained-grade decoration under the rubric. The runner source performs exact rational arithmetic for the identity, traceless-generator witnesses, normalization checks, sum rule, trace-zero iff zero-singlet condition, and non-claim boundary, with no helper imports and no hard-coded contested physical coefficient.
+- **auditor confidence:** high
+
+### `record_classical_semigroup_boundary_2026-06-06`
+
+- **Note:** [`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md`](../../docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite post-record classical algebras C^O have only discrete permutation automorphisms and zero derivations; append/count updates are irreversible translations, while continuous Markov rates and stable points require supplied ensemble dynamics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-173520-857934c4b3-record_classical_semigroup_b`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For A = C^O with pointwise multiplication, unital algebra automorphisms are exactly pullbacks by bijections of O, and all derivations of A vanish.  _(class `A`)_
+- **chain closes:** True — The finite-algebra claims follow directly from the atom idempotent basis of C^O and the Leibniz rule; the append/count and two-state Markov examples are standard algebraic checks. No external authority or open bridge is needed for the stated finite boundary.
+- **rationale:** The source note's load-bearing step is a genuine algebraic closure over the supplied finite alphabet, not a renaming or numerical fit. Independent checking confirms that C^O automorphisms are permutations, derivations vanish by idempotent-component constraints, nonzero count translations on N^O are not surjective, and different supplied two-state generators have different stationary vectors. The runner source performs these finite checks rather than merely printing constants, and it imports no opaque helper or external calibrated input.
 - **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`

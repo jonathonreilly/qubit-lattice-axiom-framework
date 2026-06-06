@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 313,
     "high": 255,
-    "leaf": 353,
+    "leaf": 352,
     "medium": 354
   },
   "cycle_break_target_count": 6,
@@ -28346,30 +28346,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "record_production_kernel_boundary_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "record_classical_semigroup_boundary_2026-06-06"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/RECORD_PRODUCTION_KERNEL_BOUNDARY_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_record_production_kernel_boundary_2026_06_06.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_unbounded_finite_additivity_schema_2026-06-06",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -38689,6 +38665,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 15,
-  "total_pending": 1275
+  "ready_count": 14,
+  "total_pending": 1274
 }

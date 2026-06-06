@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_production_kernel_boundary_2026_06_06.py
+runner_sha256: d7aac1365c17096bc4bafa42052a985c4ec45438a1a1dd211c717264a1b32e0a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ========================================================================
 Post-record append/count layer is kernel-agnostic after atoms are supplied
@@ -67,3 +75,6 @@ Scorecard
 ========================================================================
 PASS=29 FAIL=0
 FINDING: post-record append/count dynamics consumes realized atoms. The production kernel, likelihood law, expected update, transition rate, and stable dial point are supplied dynamics inputs, not outputs of the finite record alphabet.
+
+----- stderr -----
+

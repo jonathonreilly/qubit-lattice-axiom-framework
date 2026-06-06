@@ -3,7 +3,7 @@
     "critical": 316,
     "high": 257,
     "leaf": 393,
-    "medium": 361
+    "medium": 360
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -9280,6 +9280,31 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 6,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.0,
+      "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
+      "transitive_descendants": 31
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "n_f_trace_space_bounded_obstruction_note_2026-05-07_w2binary",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -16149,31 +16174,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.0,
-      "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
-      "transitive_descendants": 31
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17408,30 +17408,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.044,
-      "note_path": "docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
-      "transitive_descendants": 32
     },
     {
       "audit_independence_required": "any_non_self",
@@ -39983,5 +39959,5 @@
     }
   ],
   "ready_count": 53,
-  "total_pending": 1327
+  "total_pending": 1326
 }

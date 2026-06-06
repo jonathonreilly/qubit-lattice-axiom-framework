@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 703 |
+| **retained_bounded** | 704 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1325 |
+| unaudited | 1324 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1113 |
+| `audited_clean` | 1114 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1632 |
+| `unaudited` | 1631 |
 
 | claim_type | count |
 |---|---:|
@@ -747,6 +747,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -10979,6 +10980,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Substituting the canonical dilation into the apparatus-basis Kraus formula gives K_r = sum_{r'} P_{r'} delta_{r,r'} = P_r.  _(class `A`)_
 - **chain closes:** True — The displayed construction defines an isometry from H_sys tensor |0> by orthogonal projectors, extends it to a finite-dimensional unitary, and the apparatus-basis contraction algebraically returns P_r. The twist discussion also correctly shows U P preserves the first POVM element while rotating later effects in sequential composition.
 - **rationale:** No runner was provided, so the audit is based on the note text. The load-bearing math is a direct finite-dimensional algebraic closure from the projective-measurement identities P_r P_{r'} = delta_{rr'} P_r, P_r^dagger = P_r, and sum_r P_r = I, plus the standard finite-dimensional isometry-extension fact. The cited minimal-axiom authority is flagged as an accepted axiom premise and does not create a retention downgrade; the theorem is explicitly scoped to the canonical frame and does not overclaim uniqueness of physical instruments.
+- **auditor confidence:** high
+
+### `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional matrix theorem: for an orthogonal projection P, effects E,F, projection Q, and density operator rho in M_d(C), PEP is a supported effect, satisfies the stated trace identity and boundary cases, and nested compression obeys P(QFQ)P = (QP)^*F(QP), with no measurement or probability interpretation audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-231926-ebd29318fd-luders_sequential_effect_com`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any vector v, <v, PEPv> = <Pv, EPv> >= 0 and P - PEP = P(I - E)P >= 0, while finite-dimensional trace cyclicity gives Tr(rho PEP) = Tr(P rho P E).  _(class `A`)_
+- **chain closes:** True — The positivity/order claims follow from quadratic forms and I-E >= 0; the trace identity follows from finite trace cyclicity; and the nested identity follows from P=P^* and Q=Q^*. No Lüders update, Born rule, or trace-probability bridge is used.
+- **rationale:** The load-bearing content is standard finite-dimensional algebra over the stated projection, effect, and density-matrix hypotheses. The runner source performs symbolic and randomized matrix checks of these identities and includes a guard against confusing PEP compression with Jordan symmetrization; it does not hard-code an imported contested premise. The only cited upstream authority is flagged as an accepted axiom premise and is used only for finite matrix-carrier context, so the accepted-premise carve-out applies. The note's explicit boundary language prevents importing the missing Lüders/Born/probability bridge into this audited claim.
 - **auditor confidence:** high
 
 ### `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`

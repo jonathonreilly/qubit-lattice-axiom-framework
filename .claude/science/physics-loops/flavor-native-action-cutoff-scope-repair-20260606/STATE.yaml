@@ -1,0 +1,13 @@
+loop_slug: flavor-native-action-cutoff-scope-repair-20260606
+target_claim_id: flavor_native_action_predicts_q1_2026-06-02
+branch: physics-loop/flavor-native-action-cutoff-scope-repair-20260606
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_status_change: true
+files_touched:
+  - docs/FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md
+  - scripts/flavor_native_action_predicts_q1_2026_06_02.py
+  - logs/runner-cache/flavor_native_action_predicts_q1_2026_06_02.txt
+blocker_closed_by_branch: "Claim restricted to five displayed cutoffs at runner normalization; runner/cache language aligned."
+next_exact_action: "Open PR for independent review/audit requeue."

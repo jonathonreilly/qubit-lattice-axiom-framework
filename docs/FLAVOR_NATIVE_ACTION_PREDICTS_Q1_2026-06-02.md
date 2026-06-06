@@ -1,28 +1,47 @@
-# Flavor — the native action axis predicts Q=1: the heat-kernel/Casimir/spectral action interior extremum is at r=1, and the {Wilson,HK,Manton} action-form degeneracy is r-irrelevant
+# Flavor — tested native action axis predicts Q=1: the displayed heat-kernel/Casimir/spectral-action cutoffs have their interior extremum at r=1, and the {Wilson,HK,Manton} action-form degeneracy is r-irrelevant
 
 **Date:** 2026-06-02
 **Claim type:** open_gate.
 **Review boundary:** source proposal for independent audit. No verdict or
 downstream grade is set here.
 **Runner:** `scripts/flavor_native_action_predicts_q1_2026_06_02.py` (SCORECARD 5/5).
+**Runner cache:** `logs/runner-cache/flavor_native_action_predicts_q1_2026_06_02.txt`
+
+## 2026-06-06 cutoff-scope repair
+
+The audit blocker correctly identified that the original wording was broader
+than the runner evidence. This note now claims only the five displayed
+spectral-action cutoff functions at the runner's normalization:
+
+```text
+exp(-x), exp(-x^2), (1+x)^-2, (1+x)^-4, (1+x)^-8.
+```
+
+It does not prove a theorem for arbitrary monotone-decreasing cutoffs, arbitrary
+Casimir/heat-kernel time conventions, or every future native action principle.
+The repaired result is a route-local action-axis boundary: within the tested
+cutoff family and the separate HS-orthogonality/action-form-degeneracy check,
+the route lands at `r=1`/`Q=1` and does not deliver the Koide `r=1/2` value.
 
 ## Question
 Does the framework's candidate **native** action (heat-kernel / Casimir / Connes spectral action,
 where the Wilson term is only an admitted import) geometrically fix the charged-lepton mass:kinetic
 weighting at `r=1/2` (`|b|/a = 1/√2`), or does it give the dimension default `r=1`, or leave it free?
 
-## Result — every native action gives r=1 (Q=1); r=1/2 is not a stationary point
+## Result — the tested native action family gives r=1 (Q=1); r=1/2 is not selected by this route
 For `H = aI + b(C+C²)` (δ=0; Q is δ-independent), eigenvalues `{a+2b, a−b, a−b}`:
 
 - The Connes spectral action `S(b) = Σ f(λᵢ²/Λ²)` has its interior extremum at **|b|/a ≈ 1 (r=1)** for
-  every monotone-decreasing cutoff — verified `exp(−x):1.00, exp(−x²):1.00, (1+x)⁻²:1.00, (1+x)⁻⁴:1.00,
+  the five displayed cutoff functions at the runner's implicit normalization — verified
+  `exp(−x):1.00, exp(−x²):1.00, (1+x)⁻²:1.00, (1+x)⁻⁴:1.00,
   (1+x)⁻⁸:1.00` — **never near the target 1/√2 = 0.707**. At `b/a=1` the spectrum is `[0,0,3a]` (the
   doublet eigenvalue collapses to zero, where any decaying `f` peaks); this is the `r=1`,
   dimension/Plancherel point, `Q=1`. (This interior point is a *maximum* of `Tr f`, so under the
-  Connes minimization principle it is degenerate/boundary-seeking — but either way `r=1/2` is provably
-  not a stationary point of any native action.)
-- The Casimir / heat-kernel variant (Z₃ cycle-graph Laplacian, Casimir-weighted `Tr(H²)`) slides
-  `r ∈ [0, 1/4]` with the free Brownian time `t` — crossing neither `1/2` nor the target.
+  Connes minimization principle it is degenerate/boundary-seeking — but either way the tested cutoff
+  family does not select `r=1/2`.)
+- The displayed Casimir / heat-kernel variant (Z₃ cycle-graph Laplacian, Casimir-weighted `Tr(H²)`)
+  slides `r ∈ [0, 1/4]` with the free Brownian time `t` — crossing neither `1/2` nor the target. This
+  statement is limited to that runner normalization and is not an all-convention theorem.
 
 ## The action-form degeneracy is r-irrelevant
 The `{Wilson, HK, Manton}` forms are continuum-degenerate (the repo's
@@ -34,12 +53,12 @@ amplitudes**. Therefore breaking the action-form degeneracy at `O(X⁴)` provabl
 native uniqueness/naturalness condition selects a form delivering `r=1/2`.
 
 ## Consequence
-**The framework's native action-sector prediction is Q=1.** `r=1/2` is reached only by the equal-block
-Hilbert–Schmidt partition `3a² = 6b²` of the single invariant `Tr(H²)` — a measure/reading
+Within the tested native action-axis family, the route points to `Q=1`. `r=1/2` is reached by the
+equal-block Hilbert–Schmidt partition `3a² = 6b²` of the single invariant `Tr(H²)` — a measure/reading
 prescription (equal-power-per-block), i.e. the Tier-A admitted input `AC_φλ`, not a stationarity
-condition any native action produces. This is the action axis joining the measure and structure axes:
-all three give `r=1`, and `r=1/2` is the one unforced block-count import (which is **native**, i.e. it
-does not depend on the Wilson import).
+condition supplied by the tested action family. This is the action-axis instance of the measure/structure
+split: the tested action route gives `r=1`, while `r=1/2` remains a block-count/readout input (which is
+**native**, i.e. it does not depend on the Wilson import).
 
 ## The next paths this opens (not closing)
 - The residual is one object — the trace/dimension (→ Q=1) vs sector/block-count (→ Q=2/3) weighting
@@ -57,8 +76,8 @@ axis tested here does not force the Koide `r=1/2` value.
 
 | Route | What it attempts | Result |
 | --- | --- | --- |
-| Spectral-action extremum | Use monotone cutoff extrema to choose `r`. | Interior extrema land near `r=1`, not `r=1/2`. |
-| Casimir / heat-kernel time | Use Brownian time to tune the ratio. | Slides in a different range and does not select the target. |
+| Spectral-action extremum | Use the five displayed cutoff extrema to choose `r`. | Interior extrema land near `r=1`, not `r=1/2`. |
+| Casimir / heat-kernel time | Use the displayed runner normalization of Brownian time to tune the ratio. | Slides in a different range and does not select the target. |
 | Equal-block Hilbert-Schmidt partition | Use equal sector power. | Gives `r=1/2`, but that is the extra block-count reading, not action stationarity. |
 | Action-form degeneracy | Break Wilson / heat-kernel / Manton degeneracy. | The split is set at quadratic order where the forms agree. |
 | Orthogonality route | Couple mass and hopping through one norm. | Hilbert-Schmidt cross term is zero, so one norm cannot fix the ratio. |
@@ -92,9 +111,10 @@ still close the value residual. This note does not foreclose those paths.
 
 ### N7 - Steelman
 
-A hostile reviewer can argue that the physically correct action is not one of
-the tested monotone spectral families. That is a real open route; it is why the
-claim is carried as an open gate rather than a universal no-go.
+A hostile reviewer can argue that the physically correct action or normalization
+is not one of the five tested spectral cutoffs / displayed Casimir-HK route.
+That is a real open route; it is why the claim is carried as an open gate rather
+than a universal no-go.
 
 ### N8 - Cross-Cycle Echo
 
@@ -105,7 +125,7 @@ choice. This note adds the action-axis instance of that split.
 **Gate result:** pass for the narrow action-axis boundary only.
 
 ## Provenance (verified 2026-06-02)
-- HS block norms; equal-block ⇔ r=1/2; spectral-action critical |b|/a ≈ 1 across five cutoffs;
+- HS block norms; equal-block ⇔ r=1/2; spectral-action critical |b|/a ≈ 1 across the five displayed cutoffs;
   spectrum `[0,0,3a]` at b/a=1 ⇒ Q=1; mass/hop HS-orthogonality: verified directly (runner 5/5). From
   the heat-kernel action-axis workflow (`wf_ccbf7f51`). Action-form degeneracy cross-checked against
   `origin/main:docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md`.

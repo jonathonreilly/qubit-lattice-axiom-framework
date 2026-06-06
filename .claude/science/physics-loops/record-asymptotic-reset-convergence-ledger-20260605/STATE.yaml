@@ -1,0 +1,31 @@
+loop_slug: record-asymptotic-reset-convergence-ledger-20260605
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 14
+current_goal: "Supply the asymptotic epsilon-reset convergence ledger after the finite-time semigroup no-go."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+active_route: "epsilon-reset residual accounting for repeated damping steps"
+hard_residual: "Physical p, clock map, bath/cost model, and exact finite endpoint remain open."
+branch: physics-loop/record-asymptotic-reset-convergence-ledger-20260605
+base_branch: physics-loop/record-finite-time-reset-semigroup-no-go-20260605
+stacked_on_pr: 2782
+files_touched:
+  - docs/RECORD_ASYMPTOTIC_RESET_CONVERGENCE_LEDGER_2026-06-05.md
+  - scripts/frontier_record_asymptotic_reset_convergence_ledger_2026_06_05.py
+  - logs/runner-cache/frontier_record_asymptotic_reset_convergence_ledger_2026_06_05.txt
+  - .claude/science/physics-loops/record-asymptotic-reset-convergence-ledger-20260605/
+open_imports:
+  - "Physical derivation of per-step reset probability p."
+  - "Clock map from step count to physical time."
+  - "Bath/cost model."
+  - "Exact finite reset endpoint."
+no_go_routes:
+  - "Asymptotic convergence gives exact finite reset."
+  - "Epsilon step count is a physical rate."
+  - "Convergence ledger fixes a dial location."
+trace_gate_classification: upstream_support
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

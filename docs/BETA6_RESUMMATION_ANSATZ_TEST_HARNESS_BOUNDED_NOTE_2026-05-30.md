@@ -1,219 +1,125 @@
-# Beta=6 SU(3) Wilson Single-Plaquette Resummation-Ansatz Test Harness
+# Beta=6 SU(3) Wilson Single-Plaquette Resummation-Ansatz Frontier Verdict
 
-**Date:** 2026-05-30
-**Claim type:** bounded_theorem (methodology / test harness)
+**Original date:** 2026-05-30
+**Current-frontier repair:** 2026-06-06
+**Claim type:** bounded_theorem (methodology / ansatz-verdict harness)
 **Status authority:** independent audit lane only. This source note does not
-set or predict an audit outcome for any cited claim_id; all statuses quoted
-below are read-offs from `docs/audit/data/audit_ledger.json`
-(`rows[<claim_id>]['effective_status']`) on the dates stated.
+set an audit verdict or effective status.
 **Primary runner:** [`scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py`](../scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py)
+**Cached runner output:** [`logs/runner-cache/frontier_beta6_resummation_ansatz_test_2026_05_30.txt`](../logs/runner-cache/frontier_beta6_resummation_ansatz_test_2026_05_30.txt)
 
-## 0. Scope and what this note is for
+## Scope
 
-This note documents a **test harness**, not a closure. It builds the
-machinery that will **test** the two remaining unproven analytic
-continuation ansaetze for the beta=6 SU(3) Wilson single-plaquette lane the
-moment the parallel exact-coefficient cycle supplies the connected
-coefficients beyond the retained order-`beta^5` term.
-
-The lane's open object and blocked-route catalog are recorded in the research
-map [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md).
-That note identifies exactly one not-yet-blocked (long-shot) analytic route -
-**d-log-Pade resummation of the connected-shell series** — and a tadpole /
-boosted-PT comparator, and names the binding constraint: there is no exact
-connected-coefficient data beyond the order-`beta^5` term, and producing more
-collides with the treewidth-29 infeasibility wall
-(`su3_wigner_l3_treewidth_infeasible_2026-05-04`, `audited_conditional`
-on 2026-05-29).
-
-This harness is **independent of** that exact-coefficient computation. It is
-the part that can be built now: a framework that, given the connected
-coefficient series of
+This note repairs the old 2026-05-30 test harness after the beta=6 exact
+coefficient frontier moved. The old note used a single-coefficient physical
+series and said the ansatz tests were waiting on exact `d_6`. That state is
+stale. The current source runner now consumes the exact coefficient frontier
+exposed by the current beta=6 packets:
 
 ```text
-Delta(beta) = P_full(beta) - P_1plaq(beta),    Delta(beta) = sum_{n>=5} d_n beta^n,
+d_5  = 1/472392
+d_6  = 7/5668704
+d_7  = 5/17006112
+d_8  = 5/272097792
+d_9  = -2035/264479053824
+d_10 = -10483/5289581076480
+d_11 = -13/3967185807360
 ```
 
-with `d_5 = 1/472392` retained and `d_6, d_7, ...` to-be-supplied, runs the
-two tests below and reports a clear PASS/FAIL scorecard.
+This remains a bounded methodology/result note. It does not close beta=6,
+derive `<P>(6)`, prove a physical value bound, repin `u_0` or `alpha_s`, or use
+the Monte-Carlo comparator as a derivation input.
 
-### What this note explicitly does NOT claim (honesty, non-negotiable)
+## Live Runner Result
 
-- It does **not** close beta=6 and must not be read as doing so.
-- `<P>(beta=6) ~= 0.594` (`plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05`,
-  `P_inf = 0.59400 +/- 0.00037`; also quoted as 0.5934) is a **Monte-Carlo
-  comparator**, **not** a derivation input. Nothing in the harness is fitted
-  to it. The harness **tests** whether an ansatz fixed by the **low-order
-  exact coefficients** independently reaches it — it does not tune to it.
-- The only exact connected coefficient currently in the repo is the retained
-  order-`beta^5` coefficient `d_5 = 1/472392`
-  (`gauge_vacuum_plaquette_mixed_cumulant_audit_note`). `d_6, d_7` enter the
-  harness only as parameters. Supplying them activates the test.
-
-## 1. The two ansaetze under test
-
-### 1a. d-log-Pade resummation
-
-Write `Delta(beta) = beta^5 * h(beta)` with `h` analytic and `h(0) = d_5`.
-Form the logarithmic-derivative series `H(beta) = (log h)'(beta)`, build the
-`[n/n]` Pade approximant of `H`, locate the nearest `beta`-plane singularity
-(root of the Pade denominator), and integrate `H` back from `0` to `beta` to
-recover `log h(beta) - log h(0)`, hence `Delta(beta)`. The route's conjectured
-analytic structure (research map Section 4b) is a dominant **complex-pair**
-branch point at `|beta_c| ~ 5.7` off the real axis — physically plausible for
-SU(3) pure-gauge (smooth crossover near `beta ~ 5.7`, no genuine bulk
-transition) but **unproven**.
-
-### 1b. Tadpole-improved / boosted perturbation theory
-
-The `u_0 = <P>^{1/4}` self-consistency (the `1/4` exponent is retained,
-`u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17`). The boosted
-coupling is `beta_eff = beta * u_0^4 = beta * <P>`. A boosted-coupling
-continuation with a single nearest real boosting singularity `beta*` maps the
-connected series onto a leading geometric tail, `d_{n+1}/d_n -> 1/beta*`.
-
-## 2. Forward test (implied `<P>(6)` under each ansatz)
-
-The harness computes `<P>(6) = P_1plaq(6) + Delta(6)` as a function of how many
-connected coefficients are supplied, and reports convergence toward the 0.594
-comparator and sensitivity to the next unknown coefficient.
-
-- **Baseline (recomputed for self-consistency).** `P_1plaq(6) = 0.4225317396`
-  via the retained order-3 dominant-weight recurrence
-  `6(N+1)(N+4)(N+5) a_{N+1} = N(N+1) a_N + 2(2N+3) a_{N-1} + a_{N-2}`,
-  `a_0=1, a_1=0, a_2=1/36`
-  (`gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`,
-  `plaquette_v1_picard_fuchs_ode_note_2026-05-05`). The comparator-implied
-  residual is `Delta(6)_target = 0.594 - 0.4225317396 ~= 0.1715` (a
-  comparator-derived target, **not** a fit). The implicit boosted coupling
-  that would reproduce the comparator is `beta_eff^can = P_1plaq^{-1}(0.5934)
-  = 9.32617` (matches research map Section 7; this is a **read-off, not a
-  derivation** of the value).
-
-- **One connected term only (`d_5`).** `Delta(6) ~ d_5 * 6^5 = 0.016461`, so
-  `<P>(6)_trunc ~= 0.43899` — about **10%** of the comparator gap. A single
-  low-order term **cannot** reach 0.594; this is expected and is not a closure.
-
-- **Tadpole / boosted-PT forward fixed points.** The self-consistent tadpole
-  fixed point of the **bare single-plaquette series** alone,
-  `u_0^4 = P_1plaq(beta * u_0^4)`, has only the **trivial** fixed point
-  `P = 0`. The over-boost convention `beta_eff = beta / <P>` converges to
-  `P = 0.6115` (in the crossover, convention-dependent — not a derivation of
-  0.594), and the `z = 6` mean-field / Drouffe-Itzykson self-consistent branch
-  reproduces the **already-blocked** `P_1plaq(31.5) = 0.8742` (research-map
-  ledger item M4). **Finding:** boosting the single-plaquette series alone does
-  **not** independently reach 0.594; a tadpole test outcome therefore lives in the
-  connected-coefficient **pattern** it implies, tested predictively (Section 3).
-
-## 3. Predictive falsification test (the decisive one)
-
-Given only the lower-order connected series, the harness computes what each
-ansatz **predicts** for the next connected coefficient, written as a one-line
-call so that comparing exact-vs-predicted is an immediate falsify-or-support
-the moment the parallel cycle drops in the exact coefficient.
-
-### 3a. Each ansatz's prediction from the currently-known series
-
-With only `d_5 = 1/472392` known, **neither** ansatz makes a falsifiable
-prediction for `d_6`. One connected coefficient cannot fix a non-trivial
-continuation (the tadpole geometric ratio needs two contiguous coefficients;
-a `[>=1/>=1]` d-log Pade re-expansion needs four). The harness reports this
-honest null rather than fabricating a value. This is itself a finding: **the
-exact `d_6` alone is not sufficient for the d-log-Pade predictive test**;
-the activation thresholds are
-
-| ansatz | contiguous exact coeffs needed | predicts |
-|---|---|---|
-| tadpole / geometric | 2 (`d_5, d_6`) | `d_7` |
-| d-log-Pade | 4 (`d_5 .. d_8`) | `d_9` |
-
-So the **first** new exact coefficient `d_6` immediately activates the
-**tadpole/geometric** predictive test (the cheapest decisive falsifier),
-while the **d-log-Pade** predictive test activates only after three further
-orders.
-
-### 3b. The one-line drop-in
-
-The runner exposes a single drop-in point (`EXACT_HIGHER = {6: ..., 7: ...}`).
-The moment the parallel cycle delivers an exact coefficient, add it, rerun,
-and read the `SUPPORT` / `FALSIFY` line. The runner self-tests this path on
-synthetic coefficients (Section 4c of the runner): it confirms the machinery
-returns `SUPPORT` for a coefficient consistent with a pure single-pole
-continuation (relative error ~`1e-61`) and `FALSIFY` for a coefficient that
-deviates 50% from the predicted value (relative error `0.33`, outside the 5%
-support window). The test path is therefore wired and demonstrably live before
-any physical coefficient lands.
-
-## 4. Convergence behavior (controlled complex-pair proxy)
-
-To certify the d-log-Pade **method** is sound when the singularity structure
-cooperates, the harness reproduces the research-map proxy: a function with a
-complex-conjugate-pair branch point at `beta = R e^{+-i theta}`,
-`R = 5.7, theta = 0.55`, amplitude tuned so the proxy's `Delta(6) = 0.171`
-(matching the physical `Delta(6) ~ 0.1715`). The closed form is the Gegenbauer
-(ultraspherical) generating function, so its Taylor coefficients are
-`C_n^{(1/2)}(cos theta) / R^n` in closed form, and `beta = 6` sits just
-**beyond** the singular radius `|beta_c| ~ 5.7` (the bare Taylor sum diverges;
-analytic continuation is mandatory — exactly the regime the resummation must
-handle). On this proxy:
-
-- The `[n/n]` d-log Pade **localizes the singularity**: `[10/10]` gives
-  `|beta_c| = 5.6989` (true 5.7), `arg = 0.5497` (true 0.55) — a genuine
-  off-axis complex pair.
-- The **forward** reconstruction of `Delta(6)` converges monotonically:
-  `[4/4] -> 8.2e-3`, `[6/6] -> 3.4e-3`, `[8/8] -> 1.4e-3`, `[10/10] -> 5.8e-4`
-  (reproduces the research-map claim of `~1e-3` by `~[10/10]`).
-- The **predictive** next-coefficient call sharpens with order: given `d_1..d_6`
-  it predicts `d_7` to relative error `3.1e-3`; given `d_1..d_8`, `d_9` to
-  `6.0e-4`; given `d_1..d_11`, `d_12` to `5.7e-7`.
-
-This certifies only that the **method works on a function of the conjectured
-analytic class**. It says nothing about whether the **physical** `Delta(beta)`
-is of that class — that analyticity premise is unproven (research map
-Section 4b) and is precisely what the predictive test against the exact
-coefficients will probe.
-
-## 5. Honest test status
-
-- The d-log-Pade method is sound on a controlled complex-pair proxy.
-- On the physical series, only **one** exact connected coefficient (`d_5`) is
-  known — too few for either ansatz to make a falsifiable prediction, and a
-  single term reaches only ~10% of the comparator gap. **Neither ansatz can be
-  said to reach 0.594 yet;** asserting so would be fitting to the comparator,
-  the exact circularity the no-go ledger warns against.
-- Tadpole / boosted-PT of the bare single-plaquette series does not reach
-  0.594 (it collapses to 0, or convention-dependent lands on the blocked
-  0.611 / 0.8740).
-- **Test status: PENDING** the exact `d_6` (and `d_7`, `d_8`). The
-  predictive falsification is wired as a one-line drop-in. **This harness
-  evaluates the route; it does not close beta=6.** `0.594` is a Monte-Carlo
-  comparator, never a derivation input.
-
-## 6. Reproduce
+The repaired runner recomputes the retained single-plaquette baseline
+`P_1plaq(6) = 0.42253173965`, validates the d-log-Pade machinery on a controlled
+complex-pair proxy, then performs live leave-one-out ansatz tests against
+`d_5..d_11`. The current cached scorecard is:
 
 ```text
-python3 scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
+SCORECARD: PASS=28 FAIL=0
 ```
 
-The runner prints a per-test PASS/FAIL scorecard (20 PASS / 0 FAIL at
-submission) covering: the recomputed retained constants; the proxy singularity
-localization and forward convergence; the proxy predictive next-coefficient
-sharpening; the honest single-coefficient null on the physical series; the
-tadpole fixed-point findings (trivial collapse and the blocked
-Drouffe-Itzykson branch); the synthetic-coefficient self-test of the
-SUPPORT/FALSIFY machinery; and the forward `<P>(6)` sensitivity band.
+The strong-coupling partial sum through `d_11` is diagnostic only:
 
-## 7. Key files
+```text
+Delta_{5..11}(6) = -0.0113206828227
+P_1plaq(6) + Delta_{5..11}(6) = 0.411211056827
+```
+
+This is not a closure and is not a physical value estimate.
+
+## Tadpole / Geometric Verdict
+
+The tadpole / boosted-PT single-ratio pattern is no longer waiting; it is
+falsified by the current exact coefficients. The consecutive ratios are:
+
+```text
+d_6/d_5   = 0.583333333333
+d_7/d_6   = 0.238095238095
+d_8/d_7   = 0.0625
+d_9/d_8   = -0.418724279835
+d_10/d_9  = 0.257567567568
+d_11/d_10 = 0.00165347069859
+```
+
+The runner's leave-one-out tests miss every target `d_7..d_11` outside the 5%
+support window. The decisive sign witness is `d_9`: the single-ratio prediction
+from `d_7,d_8` is positive, while exact `d_9` is negative.
+
+The bare single-plaquette tadpole fixed-point checks also remain non-closing:
+`beta_eff = beta * <P>` collapses to the trivial `P=0` branch, the over-boost
+convention lands at `P = 0.61152284`, and the `z=6` mean-field /
+Drouffe-Itzykson branch reproduces the blocked `P_1plaq(31.5) = 0.87418441`.
+
+## d-log-Pade Verdict
+
+The d-log-Pade predictive test is active, but not support-stable:
+
+```text
+d_5..d_8  -> predict d_9:  FALSIFY, rel = 0.3692
+d_5..d_9  -> predict d_10: SUPPORT, rel = 0.04514
+d_5..d_10 -> predict d_11: FALSIFY, rel = 4.578
+```
+
+The `[2/2]` d-log-Pade singularity diagnostic from `d_5..d_10` gives
+`|beta_c| = 5.38609`, `arg = -1.23374`, which remains useful complex-pair
+radius evidence. It is not a proof of the true analytic continuation or a
+beta=6 value theorem.
+
+## Current Padé Continuation Spread
+
+Using the seven exact coefficients in
+`B(beta) = Delta(beta) / (d_5 beta^5)`, the runner recomputes:
+
+```text
+[2/3] -> <P>(6) = 0.589858288711
+[3/2] -> <P>(6) = 0.519085410577
+[3/3] -> <P>(6) = 0.537903702672
+[2/4] -> <P>(6) = 0.514032402651
+[4/2] -> <P>(6) = 0.528316216587
+```
+
+The full spread is `0.5140324 .. 0.58985829`; the highest-order
+`[3/3],[2/4],[4/2]` cluster is `0.5140324 .. 0.5379037`. Therefore the
+seven-coefficient continuation is ambiguous and not converged to `0.5934`.
+
+## Boundaries
+
+- `0.594` / `0.5934` is a Monte-Carlo comparator only, never a fit or proof
+  input in this harness.
+- The current exact coefficients are consumed as the current beta=6 frontier
+  packet; their own independent audit status remains separate.
+- The runner evaluates and falsifies/support-tests ansaetze against the current
+  coefficient frontier; it does not derive a physical beta=6 plaquette value.
+- No new axiom, carrier convention, or hidden external physics premise is
+  introduced.
+
+## Key Files
 
 - [`scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py`](../scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py)
-- [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md)
-- [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
-- [`GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md)
-- [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md)
-- [`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md)
-- [`PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05.md`](PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05.md)
-- [`U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`](U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md)
-- [`SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md`](SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md)
-
-This note is a methodology / test harness and asserts no closure of the
-beta=6 lane.
+- [`BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md`](BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md)
+- [`BETA6_PLAQUETTE_D10_COEFFICIENT_AND_RADIUS_EVIDENCE_BOUNDED_NOTE_2026-06-04.md`](BETA6_PLAQUETTE_D10_COEFFICIENT_AND_RADIUS_EVIDENCE_BOUNDED_NOTE_2026-06-04.md)
+- [`BETA6_PLAQUETTE_D11_COEFFICIENT_AND_CONTINUATION_SPREAD_BOUNDED_NOTE_2026-06-04.md`](BETA6_PLAQUETTE_D11_COEFFICIENT_AND_CONTINUATION_SPREAD_BOUNDED_NOTE_2026-06-04.md)
+- [`BETA6_PLAQUETTE_CERTIFIED_CONVERGENT_BACKBONE_BOUNDED_NOTE_2026-06-04.md`](BETA6_PLAQUETTE_CERTIFIED_CONVERGENT_BACKBONE_BOUNDED_NOTE_2026-06-04.md)

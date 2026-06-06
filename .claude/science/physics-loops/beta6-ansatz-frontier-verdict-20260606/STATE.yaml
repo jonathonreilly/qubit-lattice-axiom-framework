@@ -1,0 +1,24 @@
+loop_slug: beta6-ansatz-frontier-verdict-20260606
+branch: physics-loop/beta6-ansatz-frontier-verdict-20260606
+base: origin/main
+started_utc: "2026-06-06"
+target_claim_id: beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: current exact coefficient frontier d5..d11 ansatz verdict
+files_touched:
+  - docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md
+  - scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
+  - logs/runner-cache/frontier_beta6_resummation_ansatz_test_2026_05_30.txt
+open_imports:
+  - Independent audit of the exact beta6 coefficient packets remains separate.
+  - The harness does not derive a beta=6 physical plaquette value.
+no_go_routes:
+  - Single-ratio tadpole/geometric continuation is falsified by current d7..d11 leave-one-out tests.
+  - d-log-Pade is active but not support-stable across d9,d10,d11.
+review_disposition: local_checks_pass_reviewer_required
+pr_status: pending
+next_exact_action: commit, push, and open a ready review PR
+stop_condition: PR opened for reviewer extraction

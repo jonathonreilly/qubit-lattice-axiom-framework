@@ -10,6 +10,27 @@ claim-boundary declaration, not an audit verdict.
 **Primary runner:**
 [`scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py`](../scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py)
 
+## 2026-06-06 sign and U(1) certificate repair
+
+This revision pins the Wilson sign convention used by the proof. Let `B` denote
+the nonconstant Wilson **Boltzmann exponent**:
+
+```text
+    S_W = -B + constant,       exp(-S_W) = constant * exp(B).
+```
+
+Thus the reflection-plane contribution used below is
+`B_0 = β Re Tr[U_+ U_-^†]`, the Wilson action contribution is
+`S_{W,0} = -B_0` up to the irrelevant constant, and the plane Boltzmann factor is
+`exp(-S_{W,0}) = exp(B_0)`. Earlier wording that paired
+`S_0 = +β Re Tr[...]` with `exp(-S_0)` is withdrawn.
+
+This revision also withdraws the claim that a dense finite angular grid gives an
+exact Haar evaluation for `U(1)`. The exact `U(1)` plane-kernel positivity is now
+certified by the positive-term Bessel series for `I_n(β)` with an explicit finite
+tail bound in the runner. The `U(1)` reflected-Gram grid remains only a numerical
+quadrature cross-check.
+
 ## Claim
 
 The reflection-positivity row's gauge-case reduction names a
@@ -33,17 +54,18 @@ explicit lattice.
 > `t=1` (so `Θ` swaps the two slices and complex-conjugates: `Θ(F)(U) = \overline{F(θU)}`).
 > Then:
 >
-> - **(W1) Reflection split.** The Wilson action splits as
->   `S = S_+ + S_- + S_0` with `S_- = Θ S_+` (the reflected positive-half spatial
->   action) and `S_0` the straddling temporal-plaquette coupling on the reflection
->   plane; `S_0` is real and invariant under the plane swap. (Reproved exactly,
+> - **(W1) Reflection split.** The Wilson Boltzmann exponent splits as
+>   `B = B_+ + B_- + B_0` with `B_- = Θ B_+` (the reflected positive-half spatial
+>   exponent) and `B_0` the straddling temporal-plaquette coupling on the reflection
+>   plane; `B_0` is real and invariant under the plane swap. Equivalently,
+>   `S_W = -B + constant` for the usual Wilson action convention. (Reproved exactly,
 >   runner Part A.)
 > - **(W2) Reflection-plane norm-square factorization.** In temporal gauge the
->   plane Boltzmann weight `exp(−S_0)` factorizes per straddling link into a
+>   plane Boltzmann factor `exp(-S_{W,0}) = exp(B_0)` factorizes per straddling link into a
 >   group-character sum `\sum_a c_a\,χ_a(U_+)\,\overline{χ_a(U_-)}` with **real
 >   nonnegative coefficients** `c_a ≥ 0` (for `Z_N`: the discrete Fourier
 >   coefficients of `exp(β\,\mathrm{Re}\,U)`; for `U(1)`: the modified Bessel
->   functions `I_n(β) ≥ 0`). This is the gauge-half note's norm-square/Schwarz
+>   functions `I_n(β) ≥ 0`, certified from their positive series). This is the gauge-half note's norm-square/Schwarz
 >   hypothesis realized on the Wilson plane. (Reproved exactly, runner Part B.)
 > - **(W3) Integrated three-factor RP form, PSD.** For a basis of `A_+^(2)`
 >   observables (plaquette / two-link monomials of character-degree `≤ 2`) on the
@@ -53,11 +75,13 @@ explicit lattice.
 >   and equals `\sum_a c_a\,W_I(a)\,\overline{W_J(a)}`, i.e. `G = W\,\mathrm{diag}(c)\,W^†`
 >   with `c_a ≥ 0`. Hence `G ⪰ 0`: the RP inequality `⟨Θ(F)·F⟩ ≥ 0` holds for the
 >   integrated pure-gauge theory. (Reproved exactly for `Z_N`, `N∈{2,3,4,5}`, and
->   `U(1)` by finite Haar sums; a numeric `SU(2)` sample is PSD within Monte Carlo
->   error — runner Parts C, D, E.)
+>   analytically for the `U(1)` plane kernel by Bessel positivity, with a `U(1)`
+>   quadrature Gram cross-check; a numeric `SU(2)` sample is PSD within Monte Carlo
+>   error - runner Parts C, D, E.)
 
-The result is the **pure-gauge (bosonic-half)** Wilson-plaquette RP bridge,
-reproved exactly on `Z_N`/`U(1)` and sampled on `SU(2)`. It does **not** by
+The result is the **pure-gauge (bosonic-half)** Wilson-plaquette RP bridge:
+finite-exact on `Z_N`, analytic for the `U(1)` plane-kernel coefficient
+positivity, and sampled on `SU(2)`. It does **not** by
 itself supply the fermion-sector transfer positivity or the full interacting
 `SU(N)` integrated proof; those are the other two factors of the row's reduction
 target and are out of scope here (see §"What this note does NOT claim"). It does
@@ -92,13 +116,15 @@ Osterwalder-Seiler lattice-gauge construction. Its contribution is to (i) carry
 the abstract `(G1)–(G3)` hypotheses of the retained gauge-half note onto the
 concrete Wilson-plaquette temporal-gauge data, (ii) identify the `A_+^(2)`
 observable basis the target row names, and (iii) **reprove** the integrated
-three-factor RP form as a positive-semidefinite Gram matrix at exact precision on
-tractable groups (`Z_N`, `U(1)`), with a numeric `SU(2)` cross-check. Every
+three-factor RP form as a positive-semidefinite Gram matrix at finite exact
+precision on `Z_N`, with analytic `U(1)` Bessel coefficient positivity and a
+numeric `U(1)`/`SU(2)` cross-check. Every
 positivity statement is reproven from numpy/sympy primitives; the published
 Osterwalder-Seiler / Montvay-Münster results are named only as comparator.
 
-The bridge is honest about gauge-group scope: the **exact** reprove is on
-`Z_N`/`U(1)`; the general `SU(N)` case is supported by the same link-reflection
+The bridge is honest about gauge-group scope: the finite-Haar exact reprove is
+on `Z_N`; the `U(1)` plane-kernel positivity is analytic by Bessel positive
+series; the general `SU(N)` case is supported by the same link-reflection
 structure (and a numeric `SU(2)` sample), and the fully-integrated interacting
 `SU(N)` form is left to the row's other reduction factors plus the structural
 argument of §4.
@@ -124,7 +150,7 @@ supported on the **positive half** (functions of the `t=1` links only) is the
 ordinary expectation
 
 ```text
-    ⟨ Θ(F_I) · F_J ⟩ = (1/Z) ∑_{cfg} e^{−S} \overline{F_I(θ\,cfg)}\, F_J(cfg),
+    ⟨ Θ(F_I) · F_J ⟩ = (1/Z) ∑_{cfg} e^{B} \overline{F_I(θ\,cfg)}\, F_J(cfg),
 ```
 
 with Haar measure on each link. Writing `c_1` for the positive-half (`t=1`) links
@@ -144,37 +170,43 @@ trace, and matrix entries of degree `≤ 2`.
 > the same kind of reflection-convention sensitivity the target row documents for
 > its single-step staggered Gram (its load-bearing non-PSD no-go runner).
 
-## 2. (W1) The reflection split S = S_+ + S_- + S_0 with S_- = Θ S_+
+## 2. (W1) The reflection split B = B_+ + B_- + B_0 with B_- = Θ B_+
 
-The pure-gauge Wilson action on this lattice is a sum of plaquette terms. Sorting
-them by their relation to the reflection plane:
+The nonconstant pure-gauge Wilson Boltzmann exponent on this lattice is a sum of
+plaquette terms. Additive constants in the usual `1 - Re Tr` Wilson action are
+irrelevant to the normalized expectation and are suppressed; with the convention
+of this note the Wilson action is `S_W = -B + constant` and the Boltzmann weight
+is `exp(B)`. Sorting the exponent terms by their relation to the reflection
+plane:
 
-- **Positive-half spatial action `S_+`.** Spatial plaquettes/loops built from the
+- **Positive-half spatial exponent `B_+`.** Spatial plaquettes/loops built from the
   `t=1` links only. On the explicit lattice (one spatial dimension, periodic) the
   smallest gauge-invariant positive-half loop is the closed spatial Wilson loop
-  `\mathrm{Re}\,\mathrm{Tr}\prod_k U_k(1)`; `S_+` is real and a function of the
+  `\mathrm{Re}\,\mathrm{Tr}\prod_k U_k(1)`; `B_+` is real and a function of the
   positive-half links alone.
-- **Reflected-half action `S_- = Θ S_+`.** The identical loop on the `t=0` links.
+- **Reflected-half exponent `B_- = Θ B_+`.** The identical loop on the `t=0` links.
   Because `θ` maps the `t=1` slice to the `t=0` slice with the same functional
-  form, `S_-(c_0) = (Θ S_+)(c_0)`. (Runner Part A, reflection-split check:
+  form, `B_-(c_0) = (Θ B_+)(c_0)`. (Runner Part A, reflection-split check:
   exact sympy.)
-- **Reflection-plane coupling `S_0`.** The straddling temporal plaquettes in the
+- **Reflection-plane exponent `B_0`.** The straddling temporal plaquettes in the
   `(0,k)` planes between `t=0` and `t=1`. In temporal gauge the time links are the
   identity, so a straddling temporal plaquette reduces to
 
   ```text
-      S_0 = β ∑_k \mathrm{Re}\,\mathrm{Tr}\big[ U_k(0)\, U_k(1)^† \big].
+      B_0 = β ∑_k \mathrm{Re}\,\mathrm{Tr}\big[ U_k(0)\, U_k(1)^† \big],
+      S_{W,0} = -B_0       (up to the usual Wilson-action constant).
   ```
 
-  `S_0` is real (`\mathrm{Re}\,\mathrm{Tr}`) and invariant under the
+  `B_0` is real (`\mathrm{Re}\,\mathrm{Tr}`) and invariant under the
   reflection-plane swap `U_k(0) ↔ U_k(1)`, since
   `\mathrm{Tr}[U_k(1) U_k(0)^†] = \overline{\mathrm{Tr}[U_k(0) U_k(1)^†]}` and the
   real part is symmetric. (Runner Part A, plane-symmetry checks: exact sympy and
   numeric over all `Z_N` configs.)
 
-Thus `S = S_+ + S_- + S_0` with `S_- = Θ S_+` and `S_0` real and plane-symmetric:
-exactly the symmetric structure the gauge-half note's `(X, μ, Θ, S_+)` hypotheses
-require, now realized on the Wilson-plaquette temporal-gauge boundary.
+Thus `B = B_+ + B_- + B_0` with `B_- = Θ B_+` and `B_0` real and plane-symmetric:
+exactly the symmetric Boltzmann-weight structure the gauge-half note's
+`(X, μ, Θ, S_+)` hypotheses require, now realized on the Wilson-plaquette
+temporal-gauge boundary after translating `S_W = -B + constant`.
 
 ## 3. (W2) The reflection-plane weight is a norm-square (Schwarz) kernel
 
@@ -196,15 +228,18 @@ on the gauge group has nonnegative coefficients:
   (Runner Part B: checks B1 real, B2 nonnegative, B3 exact reconstruction.)
 
 - **`U(1)`.** By the Jacobi-Anger expansion the coefficients are the modified
-  Bessel functions, `c_n = \tfrac{1}{2π}\int_0^{2π} e^{β\cos t} e^{−i n t}\,dt =
-  I_n(β) ≥ 0`, reproved here by direct **Haar character integration** (no
-  special-function import), with `c_n = c_{−n}`. (Runner Part B: checks B4 real,
-  B5 `I_n(β) ≥ 0`, B6 symmetry.)
+  Bessel functions,
+  `c_n = \tfrac{1}{2π}\int_0^{2π} e^{β\cos t} e^{−i n t}\,dt = I_n(β)`.
+  The runner certifies `I_n(β) > 0` without importing special-function values by
+  the positive series
+  `I_n(β) = \sum_{k≥0} (β/2)^{2k+|n|}/(k!(k+|n|)!)`, plus a finite positive tail
+  bound; the same absolute-index series gives `c_n = c_{−n}`. (Runner Part B:
+  checks B4 lower bounds, B5 tail intervals, B6 symmetry.)
 
 Because the joint plane kernel over the `L_s` straddling links is the tensor
 product of these per-link kernels, its coefficients are products of nonnegative
 numbers, hence nonnegative: the plane kernel is positive. Equivalently, the plane
-weight matrix `K(c_0, c_1) = \exp(−S_0)` (indexed by configurations) is a positive
+weight matrix `K(c_0, c_1) = \exp(B_0(c_0,c_1))` (indexed by configurations) is a positive
 semidefinite Hermitian kernel, `K = ∑_a κ_a\,φ_a(c_0)\,\overline{φ_a(c_1)}` with
 `κ_a ≥ 0` (runner Part D, check D1). This is precisely the
 `f_a(U_+)·(Θ f_a)(U_-)`/`‖·‖²` Schwarz form the gauge-half note posits — now a
@@ -216,15 +251,15 @@ Combining §2 and §3, the integrand of a reflected Gram entry factorizes into t
 three named factors:
 
 ```text
-    e^{−S}\,\overline{F_I(c_0)}\,F_J(c_1)
-      = \underbrace{e^{−S_+(c_0)}\overline{F_I(c_0)}}_{\text{reflected half}}
-        \;\underbrace{e^{−S_0(c_0,c_1)}}_{\text{plane positive kernel}}
-        \;\underbrace{e^{−S_+(c_1)}F_J(c_1)}_{\text{positive half}}.
+    e^{B}\,\overline{F_I(c_0)}\,F_J(c_1)
+      = \underbrace{e^{B_+(c_0)}\overline{F_I(c_0)}}_{\text{reflected half}}
+        \;\underbrace{e^{B_0(c_0,c_1)}}_{\text{plane positive kernel}}
+        \;\underbrace{e^{B_+(c_1)}F_J(c_1)}_{\text{positive half}}.
 ```
 
-Inserting the plane-kernel spectral decomposition `e^{−S_0} = ∑_a κ_a φ_a(c_0)
+Inserting the plane-kernel spectral decomposition `e^{B_0} = ∑_a κ_a φ_a(c_0)
 \overline{φ_a(c_1)}` and integrating over Haar measure gives, with
-`W_I(a) := ∫ dμ(c)\, e^{−S_+(c)}\,\overline{F_I(c)}\,φ_a(c)`,
+`W_I(a) := ∫ dμ(c)\, e^{B_+(c)}\,\overline{F_I(c)}\,φ_a(c)`,
 
 ```text
     G_{IJ} = ∑_a κ_a\, W_I(a)\,\overline{W_J(a)}   ⟺   G = W\,\mathrm{diag}(κ)\,W^†,
@@ -241,8 +276,9 @@ The runner reproves this two ways and stress-tests it:
 
 - **Exact finite-Haar PSD.** For `Z_N`, `N ∈ {2,3,4,5}`, and `β ∈ {0.3, 1.0, 2.5}`,
   the integrated reflected Gram is Hermitian with `\min\mathrm{eig} ≥ 0` (worst
-  `−4.8×10⁻¹⁶`, machine zero); same for `U(1)` by exact finite-Haar sums. (Runner
-  Part C: C1, C3.)
+  `−4.8×10⁻¹⁶`, machine zero). For `U(1)`, the exact plane-kernel positivity is
+  the Bessel positive-series certificate, and the reflected Gram is checked by
+  angular quadrature only. (Runner Part C: C1, C3.)
 - **Manifest `G = W\,\mathrm{diag}(κ)\,W^†`.** The explicit factorization holds to
   `1.7×10⁻¹³`, with `κ_a ≥ 0`, making PSD manifest. (Runner Part D: D2, D3.)
 - **Non-PSD control.** Dropping `Θ`'s conjugation (the wrong reflection) gives
@@ -259,26 +295,28 @@ positive class function in irreducible characters; for `\exp(β\,\mathrm{Re}\,
 modified-Bessel-type integrals). None of (a)–(c) is special to abelian groups,
 which is why the same link-reflection Gram structure carries to `SU(N)`. As an
 exhibit, the runner's numeric `SU(2)` Haar Monte Carlo sample gives a PSD Gram
-(`\min\mathrm{eig} = +0.032`, positive within Monte Carlo error). The **exact**
-reprove here is `Z_N`/`U(1)`; the `SU(N)` statement rests on the structural
-argument plus the `SU(2)` sample, and is stated as such, not as an exact finite
-computation.
+(`\min\mathrm{eig} = +0.032`, positive within Monte Carlo error). The finite-Haar
+exact reprove here is `Z_N`; the `U(1)` exact input is the analytic
+Bessel-series plane-kernel positivity. The `SU(N)` statement rests on the
+structural argument plus the `SU(2)` sample, and is stated as such, not as an
+exact finite computation.
 
 ## 5. Test plan / runner
 
 The companion runner
 [`scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py`](../scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py)
-verifies the following at exact `sympy`/finite-Haar precision (and a numeric
-`SU(2)` sample), **16 PASS / 0 FAIL**:
+verifies the following at exact `sympy`/finite-Haar precision for `Z_N`, by
+positive-series interval certificate for the `U(1)` plane kernel, and by numeric
+quadrature / Monte Carlo cross-checks where labeled, **16 PASS / 0 FAIL**:
 
-- **Part A (reflection split):** `S_- = Θ S_+` (exact sympy); `S_0` invariant
+- **Part A (reflection split):** `B_- = Θ B_+` (exact sympy); `B_0` invariant
   under the plane swap (exact sympy + numeric over all `Z_N` configs).
 - **Part B (plane norm-square):** `Z_N` plane-kernel character coefficients real,
-  nonnegative, and reconstructing `\exp(−S_0)`; `U(1)` coefficients `= I_n(β) ≥ 0`
-  by Haar character integration, symmetric `c_n = c_{−n}`.
+  nonnegative, and reconstructing `\exp(B_0)`; `U(1)` coefficients `= I_n(β) > 0`
+  by positive Bessel series with finite tail intervals, symmetric `c_n = c_{−n}`.
 - **Part C (integrated RP Gram PSD):** `Z_N` reflected Gram Hermitian PSD across
-  `N ∈ {2,3,4,5}`, `β ∈ {0.3,1,2.5}`; `U(1)` Gram PSD (exact finite-Haar); and a
-  non-PSD control when `Θ`'s conjugation is dropped.
+  `N ∈ {2,3,4,5}`, `β ∈ {0.3,1,2.5}`; `U(1)` Gram PSD quadrature cross-check; and
+  a non-PSD control when `Θ`'s conjugation is dropped.
 - **Part D (manifest factorization):** plane-kernel spectrum `κ ≥ 0`; explicit
   `G = W\,\mathrm{diag}(κ)\,W^†`; integrated three-factor Gram PSD.
 - **Part E (`SU(2)` sample):** numeric Haar Monte Carlo Gram PSD within MC error.
@@ -331,8 +369,10 @@ observables." This note supplies that bridge for the **bosonic half**:
   `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10`
   onto the Wilson-plaquette temporal-gauge boundary (W1, W2);
 - it proves the **integrated three-factor RP form** `G = W\,\mathrm{diag}(κ)\,W^†
-  ⪰ 0` for the named `A_+^(2)` observables (W3), reproven exactly on `Z_N`/`U(1)`
-  with a numeric `SU(2)` sample and a Peter-Weyl structural argument for `SU(N)`.
+  ⪰ 0` for the named `A_+^(2)` observables (W3), with finite-exact `Z_N`
+  evidence, analytic `U(1)` plane-kernel positivity, a `U(1)` quadrature
+  cross-check, a numeric `SU(2)` sample, and a Peter-Weyl structural argument for
+  `SU(N)`.
 
 Combined with the row's already-`retained`/`retained_bounded` factors — the
 positive determinant weight
@@ -352,7 +392,8 @@ no status and predicts none.
 The claim is not "full interacting `SU(N)` RP is proved" and not "the fermion
 sector is supplied here." It is: the gauge-half norm-square hypotheses, applied to
 the Wilson plaquette temporal-gauge boundary, yield the integrated three-factor RP
-form `G ⪰ 0` for the stated `A_+^(2)` observables, exactly on `Z_N`/`U(1)` and by
+form `G ⪰ 0` for the stated `A_+^(2)` observables, finite-exact on `Z_N`, with
+`U(1)` plane-kernel positivity certified by Bessel positive series, and by
 structure + `SU(2)` sample for `SU(N)`.
 
 ### N1 — Alternative route enumeration
@@ -360,7 +401,7 @@ structure + `SU(2)` sample for `SU(N)`.
 | route | what it would attempt | result for this scoped claim | marker |
 |---|---|---|---|
 | Abstract gauge-half identity alone | Use the retained `(G1)–(G3)` Cauchy-Schwarz identity directly. | Insufficient: that note explicitly disclaims the Wilson-plaquette boundary; the carrier `(X,μ,Θ,S_+)` must be the Wilson data. | ATTEMPTED |
-| Wilson temporal-gauge link reflection (this note) | Split `S = S_+ + Θ S_+ + S_0`, factor the plane weight, integrate. | Works on `Z_N`/`U(1)` exactly; `G = W\,\mathrm{diag}(κ)\,W^† ⪰ 0`. | ADOPTED |
+| Wilson temporal-gauge link reflection (this note) | Split `B = B_+ + Θ B_+ + B_0`, factor the plane weight, integrate. | `Z_N` finite-exact; `U(1)` plane kernel Bessel-certified with quadrature Gram cross-check; `G = W\,\mathrm{diag}(κ)\,W^† ⪰ 0`. | ADOPTED |
 | Drop `Θ`'s conjugation | Treat `Θ` as linear in the reflected factor. | Non-PSD control (`min eig = −0.48`): the correct antilinear `Θ` is load-bearing. | RULED OUT BY RUNNER |
 | Full interacting `SU(N)` finite reprove | Exact finite-Haar PSD on `SU(N)`. | Not performed; `SU(N)` rests on Peter-Weyl structure + `SU(2)` sample. | OUT OF SCOPE |
 | Fermion-sector inclusion | Add the staggered determinant weight + 2-step transfer here. | Out of scope: those are the row's other two (already retained) factors. | OUT OF SCOPE |
@@ -368,7 +409,7 @@ structure + `SU(2)` sample for `SU(N)`.
 ### N2 — Wall-independence audit
 
 The bounded result rests on three independent walls, each reproved: (i) the
-reflection symmetry `S_- = Θ S_+` and plane-symmetry of `S_0` (Part A); (ii) the
+reflection symmetry `B_- = Θ B_+` and plane-symmetry of `B_0` (Part A); (ii) the
 nonnegativity of the plane-kernel character coefficients (Part B); (iii) the
 spectral PSD of the integrated Gram `G = W\,\mathrm{diag}(κ)\,W^†` (Parts C, D).
 Settling any one does not entail the others: e.g. the symmetry split holds even
@@ -389,17 +430,18 @@ the positivity is reproven from numpy/sympy primitives.
 
 | target repair item | what this note supplies | match? |
 |---|---|---|
-| "apply gauge-half norm-square hypotheses to Wilson plaquette temporal-gauge boundary" | W1 (split `S_- = Θ S_+`, plane `S_0`) + W2 (plane kernel = norm-square) on the Wilson data | yes (bosonic half) |
-| "prove the integrated three-factor RP form for the stated `A_+^(2)` observables" | W3 (`G = W\,\mathrm{diag}(κ)\,W^† ⪰ 0`, exact `Z_N`/`U(1)`) | yes (bosonic half; `SU(N)` by structure + sample) |
+| "apply gauge-half norm-square hypotheses to Wilson plaquette temporal-gauge boundary" | W1 (split `B_- = Θ B_+`, plane `B_0`) + W2 (plane kernel = norm-square) on the Wilson data | yes (bosonic half) |
+| "prove the integrated three-factor RP form for the stated `A_+^(2)` observables" | W3 (`G = W\,\mathrm{diag}(κ)\,W^† ⪰ 0`; `Z_N` finite-exact, `U(1)` Bessel-certified plane kernel plus quadrature Gram check) | yes (bosonic half; `SU(N)` by structure + sample) |
 | fermion-sector transfer positivity / determinant weight | not here — the row's other (retained) factors | no; out of scope |
 
 ### N5 — Rhetoric audit
 
 "Integrated three-factor RP form is PSD" means the reflected Gram over `A_+^(2)`
 is positive semidefinite for the integrated **pure-gauge** theory on the explicit
-lattice, reproven exactly on `Z_N`/`U(1)`. It does **not** mean a full interacting
-`SU(N)` proof, does not include the fermion sector, and does not set the target
-row's status. "Norm-square" is the standard Schwarz/Gram form, not new vocabulary.
+lattice, finite-exact on `Z_N` and analytically Bessel-certified for the `U(1)`
+plane kernel. It does **not** mean a full interacting `SU(N)` proof, does not
+include the fermion sector, and does not set the target row's status.
+"Norm-square" is the standard Schwarz/Gram form, not new vocabulary.
 
 ### N6 — Partial-closure path scan
 
@@ -411,15 +453,17 @@ dependencies.
 
 ### N7 — Steelman
 
-The strongest objection is that the exact computation is abelian (`Z_N`/`U(1)`),
-so a hostile reviewer may withhold the unqualified `SU(N)` statement. That
-objection is correct against an unbounded "full interacting `SU(N)` RP" claim,
-which is why this note is bounded: the `SU(N)` case is stated as a structural
-Peter-Weyl argument plus a numeric `SU(2)` sample, and the exact theorem surface
-is `Z_N`/`U(1)`. The abelian reprove already carries the full mechanism (split +
-nonnegative character kernel + spectral Gram factorization); the residual is the
-nonabelian character-coefficient positivity, which is standard but not finitely
-recomputed here.
+The strongest objection is that the finite exact computation is abelian (`Z_N`)
+and the `U(1)` full reflected-Gram check is quadrature rather than a finite-Haar
+exact computation, so a hostile reviewer may withhold the unqualified `SU(N)`
+statement. That objection is correct against an unbounded "full interacting
+`SU(N)` RP" claim, which is why this note is bounded: the `SU(N)` case is stated
+as a structural Peter-Weyl argument plus a numeric `SU(2)` sample, and the exact
+theorem surface is `Z_N` finite-Haar plus `U(1)` Bessel plane-kernel positivity.
+The abelian reprove already carries the full mechanism (split + nonnegative
+character kernel + spectral Gram factorization); the residual is the nonabelian
+character-coefficient positivity, which is standard but not finitely recomputed
+here.
 
 ### N8 — Cross-cycle echo
 
@@ -477,9 +521,10 @@ two-time-slice lattice with periodic spatial direction and temporal gauge
 the retained gauge-half norm-square hypotheses
 `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10`,
 here realized on the Wilson data; (5) the standard compact-group character
-nonnegativity (Peter-Weyl / Jacobi-Anger; reproven on `Z_N`/`U(1)`). The exact
-reprove surface is `Z_N`/`U(1)`; `SU(N)` is supported by a structural argument and
-a numeric `SU(2)` sample, stated as such.
+nonnegativity (Peter-Weyl / Jacobi-Anger; finite-exact on `Z_N`, Bessel-certified
+on the `U(1)` plane kernel). The finite-Haar exact reprove surface is `Z_N`;
+`SU(N)` is supported by a structural argument and a numeric `SU(2)` sample,
+stated as such.
 
 **Forbidden-imports check:** this note introduces **no** new axiom, primitive, repo
 vocabulary, or class tag. It uses only standard mathematical terms ("reflection

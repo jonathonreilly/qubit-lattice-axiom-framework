@@ -1,0 +1,25 @@
+loop: rp-wilson-temporal-sign-bessel-repair-20260606
+date: 2026-06-06
+mode: science-fix
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+target_claim_id: axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05
+source_of_blocker_text: audit_ledger
+target_blocker_text: "Re-audit after reconciling the S_0/Boltzmann sign convention and replacing the U(1) finite-grid exactness claim with an analytic Bessel-series proof or a certified exact/truncated theorem."
+active_route: "Wilson sign convention repair plus U(1) Bessel positive-series certificate"
+files_touched:
+  - docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
+  - logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt
+runner:
+  command: "python3 scripts/cached_runner_output.py scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py --refresh --timeout-sec 240"
+  result: "16 PASS / 0 FAIL"
+  elapsed_sec: 95.90
+open_imports:
+  - "Full interacting SU(N) finite-Haar proof is not supplied by this branch."
+  - "Fermion-sector transfer positivity and determinant factors remain separate upstream dependencies."
+proposal_allowed: false
+audit_required_before_effective_status: true
+next_exact_action: "Hand to review-loop / independent audit for source-surface evaluation."
+stop_condition: "PR opened with source, runner, cache, and loop pack; no audit ledger edits."

@@ -51,15 +51,16 @@ review_findings: "local review clean: runner PASS=59 FAIL=0; py_compile clean; c
 pr_status: open
 pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2850"
 pr_number: 2850
-cycle_status: pr_open_initial_unstable
+cycle_status: pr_open_clean
 mergeable: MERGEABLE
-merge_state_status: UNSTABLE
-checks: "audit_pipeline in progress at initial verification"
+merge_state_status: CLEAN
+checks: "audit_pipeline completed SUCCESS at final verification"
 next_exact_action: |
-  Commit and push this PR-status checkpoint, then poll PR #2850 until the
-  latest head is CLEAN with audit_pipeline success or no remaining check rollup.
+  Closed for campaign purposes; pivot to a production-kernel selection firewall
+  for directed certificates while runtime remains.
 stop_condition: |
-  Not stopped. Campaign continues after PR verification while runtime remains.
+  Satisfied: stacked PR is open, mergeable, and final clean/success status is
+  recorded. Campaign continues while runtime remains.
 status_fields:
   actual_current_surface_status: exact-support
   trace_class: upstream_support

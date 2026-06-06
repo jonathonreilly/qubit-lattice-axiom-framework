@@ -41,9 +41,8 @@ because it is an example layer over PR #2839.
 
 ## Next exact action
 
-Commit and push this PR-status checkpoint, then poll PR #2850 until the latest
-head is clean/success. After the final PR status is recorded, continue the
-campaign while runtime remains.
+Closed for campaign purposes. Pivot to a production-kernel selection firewall
+for directed certificates while runtime remains.
 
 ## PR
 
@@ -54,6 +53,6 @@ initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline in progress at initial verification"
 final_mergeable: null
-final_merge_state_status: null
-final_checks: null
+final_merge_state_status: CLEAN
+final_checks: "audit_pipeline completed SUCCESS at final verification"
 ```

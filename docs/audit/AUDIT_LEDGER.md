@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1309 |
+| unaudited | 1308 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 64 |
+| ~~audited_conditional~~ | 65 |
 | ~~audited_failed~~ | 7 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,21 +62,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1090 |
-| `audited_conditional` | 64 |
+| `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 51 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1616 |
+| `unaudited` | 1615 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1326 |
 | `decoration` | 53 |
-| `meta` | 313 |
+| `meta` | 314 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 776 |
+| `positive_theorem` | 775 |
 
 | criticality | count |
 |---|---:|
@@ -1277,6 +1277,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_dynamics_authority_stack_map_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13649,6 +13650,25 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** With source mass only on A, two distinct row-stochastic kernels agree on the visited A row, differ on the unvisited B row, and induce the same length-2 law and directed certificate values.  _(class `A`)_
 - **chain closes:** True — The finite two-state witnesses close the underselection claim: the same law/certificate data admit distinct candidate kernels, and a single scalar certificate also admits distinct full-support candidates. Routes that recover a kernel require extra supplied assumptions such as a model class, sufficient statistics, or a selection rule, which the claim explicitly excludes.
 - **rationale:** The load-bearing step is an exact finite algebraic counterexample, not a definition, renaming, tuned numerical match, or external comparator check. Independent recomputation of the displayed fractions gives the runner's laws and certificate values: k1 and k2 share L(AA)=1/2 and L(AB)=1/2 while differing on the B row, and k3 and k4 share endpoint_AB=1/4 while other directed statistics separate them. The no-go is clean only in the scoped sense of no selection from directed certificates alone, not as a ban on separately supplied model-selection rules.
+- **auditor confidence:** high
+
+### `post_record_dynamics_authority_stack_map_2026-06-06`
+
+- **Note:** [`POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md`](../../docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only the restricted packet's read-only authority-stack mapping of five post-record dynamics layers into exact-support/no-go statuses and supplied/admitted/blocked authority classes.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-190407-2130510f93-post_record_dynamics_authori`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** This branch maps the current post-record dynamics stack into derived, supplied, admitted, and blocked authority classes.  _(class `E`)_
+- **chain closes:** False — The packet provides no cited authorities, and the runner hard-codes the five authority layers while checking snippets in upstream files that are not included as cited authorities. One cached-log check also fails, so the stated current-stack certificate does not close on its own packet.
+- **rationale:** The note is a meta synthesis map rather than a first-principles physics derivation. Its load-bearing mapping is asserted in the note and hard-coded in the runner, with support depending on upstream docs and cached logs outside the cited-authority section. The runner output reports SUMMARY: PASS=46 FAIL=1 because the directed-certificate examples cached log does not contain the expected SUMMARY: PASS=59 FAIL=0. This is not clean retained support until the upstream authority packet and stale or mismatched cache issue are repaired.
+- **open / conditional deps cited:**
+  - `POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`
+  - `POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md`
+  - `POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`
+  - `POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md`
+  - `POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

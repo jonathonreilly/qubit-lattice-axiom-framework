@@ -54,9 +54,20 @@ the democratic / `C_3`-singlet vector `W = (1,1,1)/sqrt(3)`. Let
 ```text
 S      = 2 |W><W| - I          (magic reflection; eig {+1,-1,-1}, S W = W)
 C      = cyclic shift (1 2 3) on the three corners
-H_dem  = C + C^dagger           (democratic C_3-symmetric coupling)
+H_dem  = C + C^dagger = J - I   (native double-shift corner coupling; J = all-ones)
 P_23   = the graph-first axis swap [[1,0,0],[0,0,1],[0,1,0]]
 ```
+
+Here the three generations are the `hw=1` Brillouin-zone corners of the
+`(Z_2)^3` unit cube (`THREE_GENERATION_STRUCTURE_NOTE`, `retained_bounded`), and
+`C` is the order-3 relabeling of those three corner patterns supplied by the
+Lattice axiom (not a hop along a 6-NN bond). The democratic coupling
+`H_dem = C + C^dagger = C + C^2 = J - I` is the **native second-order
+double-shift** corner coupling `P(sum_{a<b} S_a S_b)P^T = J - I`
+([`FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md`](FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md),
+`retained_bounded`): a single first-order shift annihilates the triplet
+(`P S_mu P^T = 0`), so the democratic coupling is genuinely the two-step object,
+not an imported Hamiltonian and not a (non-existent) diagonal lattice edge.
 
 **Theorem.**
 
@@ -111,8 +122,9 @@ is `-I_2`, which is not in the image of `S_3`'s standard rep (a dihedral
 group `D_3` of rotations by `0, +-120 deg` and three reflections — `180 deg`
 rotation is absent).
 
-**(2)** `H_dem = C + C^dagger` is the real circulant with first row `(0,1,1)`;
-its eigenvalues are `2 Re(omega^k)` for `omega = e^{2 pi i/3}`, i.e.
+**(2)** `H_dem = C + C^dagger = C + C^2 = J - I` is the real circulant with
+first row `(0,1,1)` (since `I + C + C^2 = J`); its eigenvalues are
+`2 Re(omega^k)` for `omega = e^{2 pi i/3}`, i.e.
 `{2, -1, -1}`, with the `+2` eigenvector `W`. By the spectral mapping,
 `exp(i t H_dem) = e^{2 i t} P_W + e^{-i t}(I - P_W)`. At `t = pi/3`:
 `e^{2 i pi/3} P_W + e^{-i pi/3}(I - P_W)`. Since `e^{-i pi/3} = -e^{2 i pi/3}`,
@@ -156,11 +168,13 @@ This note does **not**:
   content is retained and is basis-free, and the framework's stated readout is
   axis-diagonal, but the `U_e = I` readout itself is `unaudited` (separate
   authority).
-- **Claim that `H_dem = C + C^dagger` is "the" framework Hamiltonian.** Only
-  that `S` lies in the time-evolution closure of a **native** `C_3`-symmetric
-  Hermitian operator (the `C_3` symmetry of `H_dem` is native; the specific
-  coupling and the time `t = pi/3` are not selected here). See the Forbidden
-  imports check.
+- **Select the evolution time `t = pi/3`.** The coupling itself is native:
+  `H_dem = C + C^dagger = J - I` is the retained_bounded double-shift corner
+  coupling (not an imported Hamiltonian, not a diagonal edge — see Safe
+  statement). What is *not* selected here is the specific evolution time
+  `t = pi/3` that maps it to the magic reflection; item 2 is an existence
+  statement ("`S` lies in the native double-shift coupling's time-evolution
+  closure"). See the Forbidden imports check.
 
 ## No-Go Discipline Gate
 
@@ -234,12 +248,19 @@ it fits `theta_13`.
 ## Forbidden imports check
 
 No new axiom or imported structure is asserted. `C`, `P_23`, `S`, and `H_dem`
-are finite matrices on the existing `hw=1` carrier; the `C_3` symmetry of
-`H_dem` is native (the cube coordinate-cycle). The note does **not** import a
-specific neutrino Hamiltonian or dynamics — item 2 is an existence statement
-("`S` is in the time-evolution closure of a native `C_3`-symmetric operator"),
-and item 4 is conditional on an explicitly-undischarged `M_nu` residual. The
-charged-diagonal premise is flagged as a separate unaudited authority.
+are finite matrices on the existing `hw=1` carrier. `H_dem = C + C^dagger = J - I`
+is **not** an imported Hamiltonian: it is the retained_bounded native
+second-order double-shift corner coupling
+(`FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30`,
+`P(sum_{a<b} S_a S_b)P^T = J - I`), and the framework's lattice has **no**
+diagonal edges (6-NN cubic adjacency; a first-order single shift `P S_mu P^T = 0`
+annihilates the triplet), so `H_dem` is the genuine two-step object rather than
+a non-existent diagonal bond. The note does **not** import a specific neutrino
+dynamics — item 2 is an existence statement ("`S` is in the time-evolution
+closure of the native double-shift coupling"; only the time `t = pi/3` is not
+selected), and item 4 is conditional on an explicitly-undischarged `M_nu`
+residual. The charged-diagonal premise is flagged as a separate unaudited
+authority.
 
 ## Runner check breakdown
 

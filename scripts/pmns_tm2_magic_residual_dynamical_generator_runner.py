@@ -99,6 +99,12 @@ def main() -> int:
     check("S3 has no V4 subgroup (Lagrange: 4 does not divide 6)", (6 % 4) != 0)
 
     # ---- (B) S = exp(i pi/3 (C+Cdag)) up to global phase ----
+    # H_dem = C + Cdag = C + C^2 = J - I exactly: the native SECOND-ORDER double-shift
+    # corner coupling P(sum_{a<b} S_a S_b)P^T = J - I (retained_bounded), NOT a first-order
+    # edge -- a single shift P S_mu P^T = 0 vanishes on the hw=1 generation triplet.
+    Jall = np.ones((3, 3))
+    check("H_dem = C + Cdag equals J - I (native double-shift corner coupling)",
+          np.allclose(Hdem, Jall - np.eye(3)))
     hdem_eig = np.sort(np.linalg.eigvalsh(Hdem))
     check("H_dem=C+Cdag spectrum {-1,-1,+2} (W non-degenerate, complement degenerate)",
           np.allclose(hdem_eig, [-1, -1, 2]), detail=f"eig={np.round(hdem_eig,4).tolist()}")

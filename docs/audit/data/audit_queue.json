@@ -3,7 +3,7 @@
     "critical": 316,
     "high": 256,
     "leaf": 393,
-    "medium": 360
+    "medium": 359
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17388,7 +17388,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
+      "claim_id": "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -17397,19 +17397,49 @@
       "cross_confirmation_status": null,
       "deps": [
         "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-        "gauge_vacuum_plaquette_bridge_support_note",
-        "plaquette_self_consistency_note"
+        "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
+        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 4.7,
-      "note_path": "docs/SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md",
+      "load_bearing_score": 3.959,
+      "note_path": "docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py",
-      "transitive_descendants": 12
+      "runner_path": "scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
+      "transitive_descendants": 10
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "beta6_plaquette_closure_note_2026-05-29",
+        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+        "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+        "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+        "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
+        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
+        "su3_wilson_closed_form_fanout_theorem_note_2026-05-04"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.822,
+      "note_path": "docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py",
+      "transitive_descendants": 9
     },
     {
       "audit_independence_required": "any_non_self",
@@ -24838,32 +24868,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
-        "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.959,
-      "note_path": "docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
-      "transitive_descendants": 10
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "signed_gravity_nature_grade_closure_blocker_audit_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -24900,37 +24904,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/signed_gravity_nature_grade_closure_blockers.py",
-      "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "beta6_plaquette_closure_note_2026-05-29",
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-        "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
-        "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
-        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
-        "su3_wilson_closed_form_fanout_theorem_note_2026-05-04"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.822,
-      "note_path": "docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py",
       "transitive_descendants": 9
     },
     {
@@ -39933,6 +39906,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 52,
-  "total_pending": 1325
+  "ready_count": 53,
+  "total_pending": 1324
 }

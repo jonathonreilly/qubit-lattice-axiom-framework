@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 704 |
+| **retained_bounded** | 705 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1323 |
+| unaudited | 1322 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1114 |
+| `audited_clean` | 1115 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1630 |
+| `unaudited` | 1629 |
 
 | claim_type | count |
 |---|---:|
@@ -1102,6 +1102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block3_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `su3_wilson_closed_form_fanout_theorem_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `substrate_to_p_a_forcing_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `symmetry_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -16563,6 +16564,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Within the narrowed scope, the one-hop dependencies are retained-grade or retained_bounded and supply the SU(3) representation-theory and L_s=3 geometry inputs. The primary runner source visibly recomputes the coefficients and singlet basis rather than importing the disclaimed bridge constants or relying on the missing Block 5 runner.
 - **rationale:** The supplied runner is source-visible and does more than print cached constants: it evaluates the SU(3) Bessel-determinant coefficient sum, diagonalizes the 4096 x 4096 total Casimir to recover the rank-8 singlet basis, constructs the stated plaquette tensor, and reports the finite storage/intermediate arithmetic. The repaired note no longer load-bears on the L_s=2 Block 5 diagnostics or on the unaudited bridge/open-gate constants. The full L_s=3 contraction is expressly outside the audited claim, so its absence is not a blocker for this staging theorem.
 - **auditor confidence:** medium
+
+### `su3_wilson_closed_form_fanout_theorem_note_2026-05-04`
+
+- **Note:** [`SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md`](../../docs/SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded internal numerical record of the four named SU(3) Wilson plaquette closed-form estimates at beta = 6; the gap-to-MC table is audited only as conditional arithmetic using the imported MC and epsilon comparator values.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-232158-f3e6128f95-su3_wilson_closed_form_fanou`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner evaluates the four named closed-form approximations at beta = 6 and obtains (M1, M2, M4, M5) = (0.4225, 0.3333, 0.8740, 0.6667), with the MC gap statement explicitly conditional on imported comparator values.  _(class `C`)_
+- **chain closes:** True — The quartet closes from the displayed closed-form definitions and direct numerical evaluation: independent Weyl-torus Haar quadrature gives M1 = 0.42253173965 and the z = 6 fixed point M4 = 0.87404899494, while M2 and M5 reduce to 6/18 and 1 - 2/6. The MC and epsilon values are not used to derive the quartet and enter only the conditional gap arithmetic.
+- **rationale:** The source note has narrowed the theorem to the internally computed quartet and clearly marks the MC/epsilon comparison as comparator-conditional. The primary runner genuinely computes M1 and M4 from character-coefficient evaluation and a fixed-point solve, while M2 and M5 are algebraic evaluations of the displayed formulas; the MC comparator is not an input to those values. An independent Weyl-integral check, not sharing the runner's Bessel-determinant path, reproduces the nontrivial M1 and M4 values. The retained cited authorities are contextual and no open upstream is load-bearing for this narrowed numerical record.
+- **auditor confidence:** high
 
 ### `substrate_to_p_a_forcing_theorem_note_2026-04-30`
 

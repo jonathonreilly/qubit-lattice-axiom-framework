@@ -39,8 +39,8 @@ because it builds directly on the measure/weight subdivision companion.
 
 ## Next exact action
 
-Poll PR #2845 until `audit_pipeline` completes, then record the final clean PR
-state if the check succeeds.
+Continue campaign to the next ranked character/path/channel or directed
+certificate lane while runtime remains.
 
 ## PR
 
@@ -51,4 +51,8 @@ initial_head: "13feb634c15d13a765dfcafe59b4812b33486135"
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline IN_PROGRESS"
+final_head: "5cd9bce0e571790079bf265ce232a06b609739de"
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "no status check rollup reported"
 ```

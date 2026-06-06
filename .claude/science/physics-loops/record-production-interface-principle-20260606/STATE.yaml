@@ -1,0 +1,34 @@
+loop_slug: record-production-interface-principle-20260606
+branch: physics-loop/record-production-interface-principle-20260606
+base: origin/main
+mode: campaign
+runtime_request: 12h
+cycle_count_this_block: 1
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "This is a typing/interface principle, not a retained-grade record-production dynamics theorem."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: "Record pre-record/formation/post-record dynamics interface"
+hard_residual: "Deriving record-production dynamics or a normalized record-writing instrument from the three axioms remains open."
+files_touched:
+  - docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md
+  - scripts/frontier_record_production_interface_principle_2026_06_06.py
+  - logs/runner-cache/frontier_record_production_interface_principle_2026_06_06.txt
+  - .claude/science/physics-loops/record-production-interface-principle-20260606/
+open_imports:
+  - "Probability/Born rules remain separate pre-record or ensemble bridge content."
+  - "Record-writing isometry W or physical production dynamics remains a separate bridge."
+  - "Post-record stable dial locations remain permitted settings, not forced selections."
+no_go_routes:
+  - "Post-record counts alone cannot select probabilities, production rates, carriers, or generation dials."
+trace_gate_classification: upstream_support
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Run cache/checks, commit, push, open PR, verify PR, then pivot."
+stop_condition: "Do not stop after this block unless the 12-hour runtime is exhausted or every viable queued target is blocked."

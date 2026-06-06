@@ -1,0 +1,31 @@
+loop_slug: record-selective-instrument-atom-criterion-20260605
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 18
+current_goal: "Provide the selective instrument atom criterion for post-record history."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+active_route: "finite projective selective instrument branches and repeat-stable atom readout"
+hard_residual: "Outcome selection, Born frequencies, physical collapse, and clock/rate remain open."
+branch: physics-loop/record-selective-instrument-atom-criterion-20260605
+base_branch: physics-loop/record-dephasing-broadcast-interface-20260605
+stacked_on_pr: 2790
+files_touched:
+  - docs/RECORD_SELECTIVE_INSTRUMENT_ATOM_CRITERION_2026-06-05.md
+  - scripts/frontier_record_selective_instrument_atom_criterion_2026_06_05.py
+  - logs/runner-cache/frontier_record_selective_instrument_atom_criterion_2026_06_05.txt
+  - .claude/science/physics-loops/record-selective-instrument-atom-criterion-20260605/
+open_imports:
+  - "Outcome selection / realized branch."
+  - "Born-frequency derivation."
+  - "Physical collapse."
+  - "Clock/rate normalization."
+no_go_routes:
+  - "Nonselective instrument output is a post-record atom."
+  - "Probability weight is a realized record."
+  - "Branch normalization selects the outcome."
+trace_gate_classification: upstream_support
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

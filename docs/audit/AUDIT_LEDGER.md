@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 675 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1209 |
+| unaudited | 1208 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 88 |
+| ~~audited_conditional~~ | 89 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1048 |
-| `audited_conditional` | 88 |
+| `audited_conditional` | 89 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1493 |
+| `unaudited` | 1492 |
 
 | claim_type | count |
 |---|---:|
@@ -1265,6 +1265,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `wave_direct_dm_h025_fam2_seed1_followup_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17523,6 +17524,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The primary runner calls measure_dm over the stated strengths and prints values matching the note; the helper path shown instantiates the lattice growth, wave solve, beam propagation, and history comparison rather than importing the contested conclusion. Within the restricted packet, the stated null, sign pattern, and weak-field scaling summary follow from the completed runner output.
 - **rationale:** The source note's load-bearing numerical claim is supported by a completed runner with exit code 0, and the printed rows match the note's table and summary. The primary runner does not hard-code the contested output values; it delegates to measure_dm and computes null size, sign pattern, and scaled spread from returned rows. No cited upstream authority is needed for this bounded control-ladder claim, and the note explicitly avoids broader family-pair portability claims.
 - **auditor confidence:** medium
+
+### `wave_direct_dm_h025_fam2_seed1_followup_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact Fam2 seed 1, H=0.25, source-strength 0.004 direct-dM replay feeding the controlled Fam2 fine-H pair surface, without promotion to an independent theorem-grade surface or H=0.25 portability law.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-004744-f4319c76b4-wave_direct_dm_h025_fam2_see`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The target runner recomputes the exact Fam2 seed 1, H=0.25, S=0.004 replay and obtains dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03%, and late gain +0.002037, so the bounded seed-conditioned late-gain asymmetry survives at the archived point.  _(class `C`)_
+- **chain closes:** False — The displayed arithmetic closes from the supplied values: delta_hist=dM(early)-dM(late), R_hist uses max(|dM|), late gain=-delta_hist, and the control-ladder spreads match the tabulated ratios. The restricted packet does not fully expose the load-bearing helper implementation because scripts/wave_retardation_continuum_limit.py is truncated across the prop_beam/cz path, so the claimed first-principles replay cannot be verified from the packet alone.
+- **rationale:** The one-hop cited authorities are all retained-grade or retained-bounded, and the source note keeps the claim appropriately bounded. Independent arithmetic checks support the signs, ratios, late-gain comparison, and non-promotion language in the note. However, stdout plus the primary wrapper is not enough for audited_clean because the helper source is truncated in the load-bearing compute path used by measure_dm. This is a runner-packet completeness issue rather than evidence that the physics claim fails.
+- **auditor confidence:** high
 
 ### `wave_direct_dm_h025_fam2_two_point_synthesis_note`
 

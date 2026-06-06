@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 185 |
+| **retained** | 186 |
 | **retained_no_go** | 197 |
 | **retained_bounded** | 679 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 35 |
-| unaudited | 1362 |
+| unaudited | 1361 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1056 |
+| `audited_clean` | 1057 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1668 |
+| `unaudited` | 1667 |
 
 | claim_type | count |
 |---|---:|
@@ -492,6 +492,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7096,6 +7097,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Using the standard pi / 16 half-angle radical identities, the full three-sample matrix on the named first symmetric witness sector is explicit in radicals, and the inverse reconstruction map is an exact algebraic map.  _(class `A`)_
 - **chain closes:** True — Direct SU(3) character evaluation at the three named holonomies gives the displayed F entries, and the adjugate formula gives the displayed inverse with Delta=det(F) nonzero. The note explicitly excludes evaluation of Z_6^env(W_A), Z_6^env(W_B), and Z_6^env(W_C), so the missing beta-side physical evaluation is not part of the audited scope.
 - **rationale:** The load-bearing work is finite algebra over the already named sample holonomies and standard character identities, not a numerical fit or a definitional relabeling. Independent checking of the displayed radicals verifies the entries, c>0, e<0, and the inverse formula with Delta=det(F). The runner source performs substantive finite character and linear-algebra checks, while its text-reading support checks are not needed for the scoped radical reconstruction closure.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Algebraic positive-cone, inverse half-space, sample-order, and normalized-bracket statements on the named first symmetric retained three-sample sector, assuming the retained coefficient triple is nonnegative.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-165609-cc87ffdb44-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If Z = F a_vec with a_(0,0), a_(1,0), a_(1,1) >= 0, then Z lies in Cone(r_0,r_1,r_2), equivalently F^(-1)Z >= 0, and Z_B - Z_A = (b-a)a_(1,0) + c a_(1,1) >= 0.  _(class `A`)_
+- **chain closes:** True — The cone and order claims follow by linear algebra from the retained radical matrix F and the nonnegative retained coefficient premise. Independent inversion of the displayed numeric F reproduces the stated half-space rows, det(F) != 0, b-a > 0, c > 0, and a < 0 < b,c.
+- **rationale:** The load-bearing theorem is an algebraic closure over the two retained_bounded inputs: nonnegative retained character coefficients and the exact radical three-sample matrix. The displayed inverse coefficients and sign inequalities check independently from the numeric matrix, without relying on the runner PASS output. The clean scope does not include actual beta = 6 environment sample evaluation or the open full environment identification.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17`

@@ -1,0 +1,26 @@
+loop_slug: koide-berry-finite-matrix-scope-20260606
+goal: "Repair the audited conditional Koide/Berry scope by narrowing the source packet to finite matrix algebra."
+target_claim_id: koide_berry_monopole_bridge_reduction_note_2026-05-31
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+branch: physics-loop/koide-berry-finite-matrix-scope-20260606
+base: origin/main
+head_commit: pending
+cycle_count: 1
+active_route: source_scope_repair
+files_touched:
+  - docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md
+  - scripts/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.py
+  - logs/runner-cache/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.txt
+  - .claude/science/physics-loops/koide-berry-finite-matrix-scope-20260606/
+open_imports:
+  - "No retained Berry/chirality-to-r weighting-selection theorem."
+  - "No retained framework derivation of an off-generation anticommuting coupling."
+  - "No retained physical source/readout bridge selecting the Koide r weighting."
+trace_gate: direct_blocker_closure
+reachability: partially_closes
+review_disposition: local_self_review_pass_for_scope_repair
+independent_review_required: true
+audit_required_before_effective_status: true
+next_exact_action: "Hand to review-loop/auditor for re-audit of the narrowed finite-matrix packet."
+stop_condition: "This source-scope repair is complete; further promotion needs a new retained bridge theorem."

@@ -25,6 +25,7 @@ checks:
   - python3 -m py_compile scripts/lattice_3d_dense_z2_z6_endpoint_check.py scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py scripts/lattice_3d_dense_10prop.py
   - python3 scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py
   - python3 scripts/precompute_audit_runners.py --runners scripts/lattice_3d_dense_z2_z6_endpoint_check.py,scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py,scripts/lattice_3d_dense_10prop.py --force --push-mode=none --allow-non-main --concurrency 1
-pr_status: pending
-next_exact_action: run hygiene checks, commit, push, open PR
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2774
+next_exact_action: reviewer to inspect PR #2774; independent audit required before any status change
 stop_condition: not reached

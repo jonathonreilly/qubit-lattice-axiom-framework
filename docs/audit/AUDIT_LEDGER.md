@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 677 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1239 |
+| unaudited | 1238 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 86 |
+| ~~audited_conditional~~ | 87 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1051 |
-| `audited_conditional` | 86 |
+| `audited_conditional` | 87 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1542 |
+| `unaudited` | 1541 |
 
 | claim_type | count |
 |---|---:|
@@ -1254,6 +1254,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13529,6 +13530,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For arbitrary positive diagonal Yukawa singular-value matrices D_u and D_d and fixed CKM unitary V, the construction Y_u = D_u and Y_d = V D_d gives U_u^dag U_d = V while leaving the singular values equal to the freely chosen diagonal entries, so CKM mixing does not determine quark Yukawa eigenvalues.  _(class `A`)_
 - **chain closes:** True — The negative boundary closes as an exact linear-algebra obstruction: the allowed one-Higgs gauge skeleton admits arbitrary 3x3 Yukawa matrices, the top Ward normalization supplies no generation projector, and a fixed CKM matrix is compatible with independently varied Yukawa singular values. Therefore the listed support surface leaves the target non-top ratios unconstrained.
 - **rationale:** The proof is a clean no-go: it does not attempt to derive numerical masses, does not reuse the top Ward identity as a hidden species-uniform physical identification, and the runner checks the load-bearing CKM/singular-value witness plus the gauge-selection freedom and scope firewall.
+- **auditor confidence:** high
+
+### `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26`
+
+- **Note:** [`QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md`](../../docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Comparator-only open gate: for the stated central mass values and the C3 cosine parametrization, the quark-sector Koide Q values map algebraically to apparent |b|^2/a^2 values different from the charged-lepton BAE value, with quark mass scheme and scale left open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-112627-ae2d8e91e7-quark_mass_spectrum_koide_sc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the packet-local central-value comparator convention, the apparent Koide/Brannen amplitude ratios for the up- and down-type quark sectors are not the charged-lepton BAE value |b|^2/a^2 = 1/2.  _(class `D`)_
+- **chain closes:** True — The algebraic relation |b|^2/a^2 = (3Q - 1)/2 follows from the C3 cosine parametrization with nonzero mean, and independent recomputation reproduces the displayed comparator values. Closure is only at the stated comparator level; no quark mass derivation or scheme-native readout is supplied or claimed.
+- **rationale:** The cited algebraic authorities are retained and support the C3/Koide formulae used in the note. The load-bearing open-gate warning, however, rests on hard-coded external central-value mass comparators, not on a framework-internal quark-mass derivation. The note correctly limits its scope and preserves the scheme/scale caveat, so it does not fail on its own terms, but class D comparator evidence is not eligible for audited_clean.
 - **auditor confidence:** high
 
 ### `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`

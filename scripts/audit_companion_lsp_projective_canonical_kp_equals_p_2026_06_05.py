@@ -27,8 +27,10 @@ What is reproven (every load-bearing fact, sympy exact / numpy machine):
           phase V_A (K_r = e^{i phi_r} P_r, K_r^dag K_r = P_r); outcome-label
           permutation V_A (K_r^dag K_r = P_{pi^{-1}(r)}).
   Part E  necessity: a general label-mixing V_A gives
-          K_r^dag K_r = sum_s |<r|V_A|s>|^2 P_s != P_r  (the auditor's
-          formula), with weights forming a doubly stochastic |V_A|^2.
+          K_r^dag K_r = sum_s |<r|V_A|s>|^2 P_s != P_r on nonzero outcome
+          sectors (the auditor's formula), with weights forming a doubly
+          stochastic |V_A|^2. A zero-projector edge-case check demonstrates why
+          the nonzero-outcome convention is required.
   Part F  source-note boundary string checks.
 
 Literature (Naimark 1940; Stinespring 1955; Holevo; Watrous; Lueders 1951)
@@ -440,6 +442,83 @@ def test_part_E_necessity_numeric():
     _report("E'[all]: generic mixing V_A breaks K_P = P", breaks_all)
 
 
+def test_part_E_zero_projector_edge_case():
+    print("\n[Part E''] Zero-projector edge-case for the necessity clause")
+    ket = lambda i, d: np.eye(d, dtype=complex)[:, i:i + 1]
+
+    def kron(x, y):
+        return np.kron(x, y)
+
+    dS, dA = 2, 4
+    P0 = ket(0, 2) @ ket(0, 2).conj().T
+    P1 = ket(1, 2) @ ket(1, 2).conj().T
+    Z = np.zeros((2, 2), dtype=complex)
+    P = [P0, P1, Z, Z]
+
+    full = dS * dA
+    V = np.zeros((full, dS), dtype=complex)
+    for i in range(dS):
+        psi = ket(i, dS)
+        col = np.zeros((full, 1), dtype=complex)
+        for r in range(dA):
+            col = col + kron(P[r] @ psi, ket(r, dA))
+        V[:, i:i + 1] = col
+
+    def braA_np(r):
+        op = np.zeros((dS, full), dtype=complex)
+        for i in range(dS):
+            op[i, i * dA + r] = 1
+        return op
+
+    def rotate_labels(a, b, theta):
+        VA = np.eye(dA, dtype=complex)
+        c, s = np.cos(theta), np.sin(theta)
+        VA[a, a] = c
+        VA[a, b] = -s
+        VA[b, a] = s
+        VA[b, b] = c
+        return VA
+
+    def kdks_for(VA):
+        Vtw = kron(np.eye(dS), VA) @ V
+        return [(braA_np(r) @ Vtw).conj().T @ (braA_np(r) @ Vtw) for r in range(dA)]
+
+    # Old broad wording "any label mixing breaks K_P=P" is false if the mixing is
+    # purely among formal zero-effect bookkeeping labels.
+    VA_zero_zero = rotate_labels(2, 3, np.pi / 5)
+    zero_zero_kdks = kdks_for(VA_zero_zero)
+    zero_zero_preserves = all(np.allclose(zero_zero_kdks[r], P[r], atol=1e-12) for r in range(dA))
+    _report("E''[zero-zero mixing]: formal zero-label rotation leaves every K_r^dag K_r unchanged",
+            zero_zero_preserves)
+
+    # Mixing two nonzero sectors breaks the same-projective-measurement condition.
+    VA_nonzero_nonzero = rotate_labels(0, 1, np.pi / 5)
+    nz_kdks = kdks_for(VA_nonzero_nonzero)
+    nonzero_breaks = (
+        not np.allclose(nz_kdks[0], P0, atol=1e-12)
+        and not np.allclose(nz_kdks[1], P1, atol=1e-12)
+    )
+    _report("E''[nonzero-nonzero mixing]: nonzero sector mixing breaks K_r^dag K_r = P_r",
+            nonzero_breaks)
+
+    # Leaking a displayed nonzero sector into a zero label also breaks that
+    # nonzero sector, because the target coefficient falls below one.
+    VA_nonzero_zero = rotate_labels(0, 2, np.pi / 5)
+    nz_zero_kdks = kdks_for(VA_nonzero_zero)
+    nonzero_zero_breaks = (
+        not np.allclose(nz_zero_kdks[0], P0, atol=1e-12)
+        and not np.allclose(nz_zero_kdks[2], Z, atol=1e-12)
+    )
+    _report("E''[nonzero-zero mixing]: leaking a nonzero sector into a zero label still breaks",
+            nonzero_zero_breaks)
+
+    # After deleting formal zero labels, the physical outcome list is nonzero
+    # and the necessity statement has no zero-label exception.
+    nonzero_labels_only = all(np.linalg.norm(Q) > 0 for Q in [P0, P1])
+    _report("E''[nonzero convention]: displayed physical labels have P_r != 0",
+            nonzero_labels_only)
+
+
 def test_part_F_boundary_strings():
     print("\n[Part F] Source-note boundary string checks")
     note_path = Path(__file__).resolve().parent.parent / "docs" / (
@@ -453,6 +532,8 @@ def test_part_F_boundary_strings():
         "Status authority:** independent audit lane only",
         "restricted Step-3 scope",
         "K_P = P",
+        "P_r ≠ 0",
+        "zero-projector edge-case",
         "outcome-label",
         "necessary",
         "What this does NOT claim",
@@ -482,7 +563,7 @@ def main() -> int:
     print("Reproves K_r = P_r from the canonical Naimark/Lueders isometry, shows")
     print("the V_A = I / phase / permutation restriction is sufficient, and shows")
     print("a general label-mixing V_A breaks K_P = P (K_r^dag K_r = sum_s")
-    print("|<r|V_A|s>|^2 P_s != P_r). Literature is comparator only.")
+    print("|<r|V_A|s>|^2 P_s != P_r) on nonzero sectors. Literature is comparator only.")
     print()
     test_part_A_primitives()
     test_part_B_isometry()
@@ -491,6 +572,7 @@ def main() -> int:
     test_part_D_sufficiency()
     test_part_E_necessity_symbolic()
     test_part_E_necessity_numeric()
+    test_part_E_zero_projector_edge_case()
     test_part_F_boundary_strings()
     print()
     print("=" * 72)

@@ -1,0 +1,18 @@
+loop_slug: lsp-kp-nonzero-edge-20260606
+target_claim_id: lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05
+target_status: bounded-support
+branch: physics-loop/lsp-kp-nonzero-edge-20260606
+base: origin/main
+current_block: zero_projector_edge_repair
+trace_class: direct_blocker_closure
+artifact_role: theorem
+files_touched:
+  - docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py
+  - logs/runner-cache/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.txt
+open_imports: []
+checks:
+  - python3 scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py --check-only --allow-non-main
+audit_files_touched: false
+next_exact_action: "Open PR for reviewer extraction and independent re-audit queueing."

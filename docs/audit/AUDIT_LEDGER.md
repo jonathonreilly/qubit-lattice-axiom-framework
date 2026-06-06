@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 192 |
-| **retained_no_go** | 207 |
+| **retained_no_go** | 208 |
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1302 |
+| unaudited | 1301 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1094 |
+| `audited_clean` | 1095 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1609 |
+| `unaudited` | 1608 |
 
 | claim_type | count |
 |---|---:|
@@ -913,6 +913,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_finite_likelihood_score_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_null_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_target_kernel_stability_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13753,6 +13754,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For K_{pi,alpha}(i,j)=(1-alpha)delta_ij+alpha pi_j, pi K_{pi,alpha}=pi and pK_{pi,alpha}-pi=(1-alpha)(p-pi) for every row probability vector p.  _(class `A`)_
 - **chain closes:** True — The displayed identities follow by direct finite-sum algebra from the supplied definition of K_{pi,alpha}. The note explicitly limits the result to supplied pi and alpha and does not claim selection or physical derivation.
 - **rationale:** The load-bearing step is a genuine algebraic identity over explicitly supplied finite inputs: summing rows gives stochasticity, pi K equals pi by normalization, detailed balance reduces to pi_i[(1-alpha)delta_ij+alpha pi_j]=pi_j[(1-alpha)delta_ji+alpha pi_i], and pK-pi=(1-alpha)(p-pi). The runner source independently implements these finite rational checks rather than merely printing constants, though the audit judgment does not depend on the runner alone. There are no cited authorities and no imported open bridge needed for the bounded claim as stated.
+- **auditor confidence:** high
+
+### `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06`
+
+- **Note:** [`POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md`](../../docs/POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite post-record certificate data from a fixed finite window alone cannot determine a unique unbounded marker-density law; supplied family-lift inputs remain outside the no-go scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-c727336952-post_record_finite_to_unboun`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Two unbounded completions can agree on every bounded record visible to the finite certificate while disagreeing on the tail statistic or limiting law.  _(class `A`)_
+- **chain closes:** True — Independently, the zero-tail completion has length-n density 3/n for n>=4, hence limit 0, while the one-tail completion has density (n-1)/n, hence limit 1, despite sharing the full four-site prefix. Therefore any certificate depending only on that finite prefix cannot select a unique unbounded limiting law.
+- **rationale:** The source presents a direct finite-prefix counterexample, not a definition substitution or tuned numerical match. The displayed quantitative identities check out independently: prefix count 3, frequency 3/4, long-window densities 3/20 and 19/20, and limiting densities 0 and 1. The runner genuinely instantiates the two completions and verifies the finite indistinguishability and tail divergence; its hard-coded route-scope flags are not the load-bearing mathematical step. The no-go is correctly narrow and explicitly leaves supplied law, projective consistency, monotone exhaustion, direct-limit compatibility, and tightness/compactness routes open.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

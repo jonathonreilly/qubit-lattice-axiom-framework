@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py
+runner_sha256: 4134f72de660122eae0fad1a1aa163ae882f2193179c486dd81413c13aa2b9e5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Finite prefix indistinguishability
@@ -72,3 +80,6 @@ ONE_TAIL_LIMITING_DENSITY=1
 FINITE_CERTIFICATE_ALONE_DERIVES_UNBOUNDED_LAW=FALSE
 FAMILY_LIFT_REQUIRED=TRUE
 AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

@@ -3,7 +3,7 @@ runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
 runner_sha256: 11fd80b859715083b5d2faac04d4661858499b6b3691b7eb9ec917f2d128818f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 Plaquette beta=6 perturbative-derivation bounded-obstruction runner
@@ -252,7 +252,7 @@ T9: scope (no new axioms / primitives / vocabulary)
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
   [PASS] note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-         length = 18705 chars
+         length = 18820 chars
   [PASS] note declares Status authority: independent audit lane only
          audit-lane authority pattern present
   [PASS] note declares no new axioms / no new primitives

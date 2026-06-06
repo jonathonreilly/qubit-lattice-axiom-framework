@@ -1,0 +1,30 @@
+loop_slug: plaquette-beta6-tadpole-prose-repair-20260605
+created: 2026-06-05
+updated: 2026-06-05
+remote_base: origin/main
+branch: physics-loop/plaquette-beta6-tadpole-prose-repair-20260605
+target_claim_id: plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: supplied_coefficient_and_comparator_packet
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: demotion
+proposal_allowed: false
+proposal_allowed_reason: "The branch only repairs one false prose formula; the admitted coefficient/comparator packet remains open."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms: 0
+files_touched:
+  - docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md
+open_imports:
+  - "NSPT coefficient packet and MC/F2 comparators remain supplied premises for the bounded diagnostic."
+checks:
+  - "python3 scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py"
+  - "python3 -m py_compile scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py"
+review_disposition: pass
+pr_url: pending
+next_exact_action: "Commit, push, and open the review PR."
+stop_condition: "Block complete after PR creation and verification."

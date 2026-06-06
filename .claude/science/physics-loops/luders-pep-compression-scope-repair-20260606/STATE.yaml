@@ -1,0 +1,23 @@
+loop: luders-pep-compression-scope-repair-20260606
+created: 2026-06-06
+branch: physics-loop/luders-pep-compression-scope-repair-20260606
+base: origin/main
+target_claim_id: luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: "narrow to finite PEP projection-compression trace identity"
+files_touched:
+  - docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py
+  - logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt
+open_imports:
+  - "Lueders measurement update remains outside this row"
+  - "Born rule remains outside this row"
+  - "trace/effect probability interpretation remains outside this row"
+verification:
+  direct_runner: "python3 scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py -> SUMMARY: PASS=32 FAIL=0"
+  cache_refresh: "python3 scripts/cached_runner_output.py scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py --refresh -> status ok"
+  precompute_check: "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py --check-only -> fresh"
+next_exact_action: "open review PR; independent audit can re-run as a finite compression theorem"
+stop_condition: "block closed as source-side scope repair; no audit verdict applied"

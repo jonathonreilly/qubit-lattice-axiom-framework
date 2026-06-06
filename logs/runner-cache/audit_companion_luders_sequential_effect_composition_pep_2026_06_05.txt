@@ -1,82 +1,54 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py
-runner_sha256: 9513fc1960f7ce9afb0937ddd21823ba2cdd2cad6146cef0ff4ee7919ce6583e
+runner_sha256: d8abb4838954bf31606ef21e519ba6f45a5f58f6a6df0f8b03872cde52cc34c4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
+FINITE PEP PROJECTION-COMPRESSION TRACE IDENTITY
 
-=== Part 0: exact symbolic d=2 -- supplied two-step prob = Tr(rho PEP)/Tr(rho P) => M_{P,E} = P E P ===
-[PASS] d2_exact P is projection (P^2 = P, P† = P)  [rank-1 |psi><psi|, psi real]
-[PASS] d2_exact E is an effect (E† = E, spectrum in [0,1])  [spectrum = [1/4, 3/4]]
-[PASS] d2_exact rho is a state (rho† = rho, rho >= 0, Tr rho = 1)  [eigs = [1/2 - sqrt(61)/30, sqrt(61)/30 + 1/2]]
-[PASS] d2_exact: Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E) (M_{P,E}=PEP, EXACT)  [common value = 12163/16900]
-[PASS] d2_exact: Tr(rho PEP) = Tr(rho P) * Tr(rho|_P E) (factorized chain, EXACT)  [p(P then E) = p(P) * p(E|P)]
-[PASS] d2_exact: Tr(rho P E P) = Tr(P rho P E) (trace cyclicity, EXACT)  [cyclicity moves PEP -> P rho P]
-[PASS] d2_exact boundary: M_{P,I} = P E P|_{E=I} = P  [P I P = P^2 = P]
-[PASS] d2_exact boundary: M_{I,E} = I E I = E  [I E I = E]
-[PASS] d2_exact: P E P >= 0 (spectrum >= 0, EXACT)  [spectrum(PEP) = [0, 12163/16900]]
-[PASS] d2_exact: P - P E P = P(I-E)P >= 0  (so PEP <= P, EXACT)  [spectrum(P-PEP) = [0, 4737/16900]]
-[PASS] d2_exact: I - P >= 0  (P <= I, EXACT)  [spectrum(I-P) = [0, 1]]
+=== Part 0: source-note boundary ===
+[PASS] companion note exists  [docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md]
+[PASS] note declares bounded-support source theorem
+[PASS] note does not claim Lueders/Born derivation
+[PASS] note states PEP trace identity
+[PASS] note marks measurement rows downstream only
 
-=== Part 1: numeric d=2,3,4 -- two-step probability = Tr(rho PEP)/Tr(rho P) ===
-[PASS] d2: Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E) over 400 seeds  [max |LHS - RHS| = 5.55e-16]
-[PASS] d3: Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E) over 400 seeds  [max |LHS - RHS| = 2.44e-15]
-[PASS] d4: Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E) over 400 seeds  [max |LHS - RHS| = 4.44e-16]
+=== Part 1: exact d=2 compression identities ===
+[PASS] P is an orthogonal projection
+[PASS] E is an effect with spectrum in [0,1]
+[PASS] rho is a density matrix
+[PASS] PEP is Hermitian
+[PASS] PEP is positive
+[PASS] P - PEP is positive
+[PASS] I - P is positive
+[PASS] trace identity Tr(rho PEP) = Tr(P rho P E)
+[PASS] boundary PIP = P
+[PASS] boundary IEI = E
 
-=== Part 2: numeric d=2,3,4 -- 0 <= P E P <= P <= I (PEP is a valid effect) ===
-[PASS] d2: P E P >= 0 over 400 seeds  [min eig(PEP) = -2.48e-16]
-[PASS] d2: P - P E P = P(I-E)P (congruence identity) over 400 seeds  [max ||(P-PEP)-P(I-E)P|| = 1.20e-15]
-[PASS] d2: P E P <= P over 400 seeds  [min eig(P-PEP) = -9.52e-16]
-[PASS] d2: P <= I over 400 seeds  [min eig(I-P) = -9.82e-16]
-[PASS] d3: P E P >= 0 over 400 seeds  [min eig(PEP) = -3.26e-16]
-[PASS] d3: P - P E P = P(I-E)P (congruence identity) over 400 seeds  [max ||(P-PEP)-P(I-E)P|| = 1.25e-15]
-[PASS] d3: P E P <= P over 400 seeds  [min eig(P-PEP) = -1.22e-15]
-[PASS] d3: P <= I over 400 seeds  [min eig(I-P) = -1.01e-15]
-[PASS] d4: P E P >= 0 over 400 seeds  [min eig(PEP) = -2.85e-16]
-[PASS] d4: P - P E P = P(I-E)P (congruence identity) over 400 seeds  [max ||(P-PEP)-P(I-E)P|| = 1.85e-15]
-[PASS] d4: P E P <= P over 400 seeds  [min eig(P-PEP) = -1.43e-15]
-[PASS] d4: P <= I over 400 seeds  [min eig(I-P) = -1.83e-15]
+=== Part 2: numeric d=2,3,4 compression checks ===
+[PASS] d=2: trace identity over 300 seeds  [max err=2.78e-16]
+[PASS] d=2: PEP positive over 300 seeds  [min eig=-2.64e-16]
+[PASS] d=2: 0 <= PEP <= P <= I over 300 seeds  [min boundary eig=-9.90e-16]
+[PASS] d=2: nested compression identity over 300 seeds  [max err=4.51e-16]
+[PASS] d=3: trace identity over 300 seeds  [max err=2.22e-16]
+[PASS] d=3: PEP positive over 300 seeds  [min eig=-4.69e-16]
+[PASS] d=3: 0 <= PEP <= P <= I over 300 seeds  [min boundary eig=-1.09e-15]
+[PASS] d=3: nested compression identity over 300 seeds  [max err=4.51e-16]
+[PASS] d=4: trace identity over 300 seeds  [max err=2.22e-16]
+[PASS] d=4: PEP positive over 300 seeds  [min eig=-3.23e-16]
+[PASS] d=4: 0 <= PEP <= P <= I over 300 seeds  [min boundary eig=-1.71e-15]
+[PASS] d=4: nested compression identity over 300 seeds  [max err=4.75e-16]
 
-=== Part 3: numeric d=2,3,4 -- trace pairing rho -> Tr(rho E) is real-linear and maps states to [0,1] ===
-[PASS] d2: trace pairing is linear (Tr((a r1+(1-a)r2)E) = a Tr(r1 E)+(1-a)Tr(r2 E))  [max linearity residual = 2.22e-16]
-[PASS] d2: Tr(rho E) is real on states/effects  [max |Im Tr(rho E)| = 0.00e+00]
-[PASS] d2: 0 <= Tr(rho E) <= 1 on states/effects over 400 seeds  [range = [0.028108, 0.939185]]
-[PASS] d3: trace pairing is linear (Tr((a r1+(1-a)r2)E) = a Tr(r1 E)+(1-a)Tr(r2 E))  [max linearity residual = 2.22e-16]
-[PASS] d3: Tr(rho E) is real on states/effects  [max |Im Tr(rho E)| = 4.16e-17]
-[PASS] d3: 0 <= Tr(rho E) <= 1 on states/effects over 400 seeds  [range = [0.132591, 0.858519]]
-[PASS] d4: trace pairing is linear (Tr((a r1+(1-a)r2)E) = a Tr(r1 E)+(1-a)Tr(r2 E))  [max linearity residual = 2.22e-16]
-[PASS] d4: Tr(rho E) is real on states/effects  [max |Im Tr(rho E)| = 2.78e-17]
-[PASS] d4: 0 <= Tr(rho E) <= 1 on states/effects over 400 seeds  [range = [0.248297, 0.779145]]
+=== Part 3: exact nested compression and Jordan guard ===
+[PASS] exact nested identity P(QFQ)P = (QP)^*F(QP)
+[PASS] exact F=I boundary gives P Q P
+[PASS] nested compression is positive
+[PASS] Jordan symmetrization differs from compression
+[PASS] Jordan guard: trace scalar differs on rho
 
-=== Part 4: numeric d=2,3,4 -- associative-consistency: 'P then Q then F' effective operator = P (Q F Q) P = (QP)† F (QP) ===
-[PASS] d2: P(QFQ)P = (QP)† F (QP) (sequential = compositional) over 400 seeds  [max ||P(QFQ)P - (QP)†F(QP)|| = 3.51e-16]
-[PASS] d2: outer 'P then (QFQ)' stays a valid effect (0 <= . <= P)  [max boundary violation = 1.32e-15]
-[PASS] d2: composite at F=I gives P Q P (boundary-consistent) over 400 seeds  [max ||P Q I Q P - P Q P|| = 1.17e-15]
-[PASS] d3: P(QFQ)P = (QP)† F (QP) (sequential = compositional) over 400 seeds  [max ||P(QFQ)P - (QP)†F(QP)|| = 4.68e-16]
-[PASS] d3: outer 'P then (QFQ)' stays a valid effect (0 <= . <= P)  [max boundary violation = 1.07e-15]
-[PASS] d3: composite at F=I gives P Q P (boundary-consistent) over 400 seeds  [max ||P Q I Q P - P Q P|| = 1.72e-15]
-[PASS] d4: P(QFQ)P = (QP)† F (QP) (sequential = compositional) over 400 seeds  [max ||P(QFQ)P - (QP)†F(QP)|| = 4.35e-16]
-[PASS] d4: outer 'P then (QFQ)' stays a valid effect (0 <= . <= P)  [max boundary violation = 1.47e-15]
-[PASS] d4: composite at F=I gives P Q P (boundary-consistent) over 400 seeds  [max ||P Q I Q P - P Q P|| = 1.38e-15]
-
-=== Part 5: exact -- commuting/nested projections collapse PEP as expected ===
-[PASS] d3_exact: commuting projections [P1,P2] = 0  [diagonal => commute]
-[PASS] d3_exact: P1 E P1 = diag(1/2, 1/3, 0)  (supported on range P1)  [M_{P1,E} = (1/2, 1/3, 0)]
-[PASS] d3_exact: P1(P2 E P2)P1 = (P2 P1)† E (P2 P1) (sequential = compositional)  [common = diag (1/2, 0, 0)]
-[PASS] d3_exact: nested commuting product = diag(1/2, 0, 0) on range(P1∧P2)  [only common-support entry survives]
-
-=== Part 6: guard -- a non-PEP sequential candidate fails positivity and the supplied two-step identity ===
-[PASS] d2_exact: Jordan candidate satisfies boundaries M'_{P,I}=P, M'_{I,E}=E  [boundaries alone do not single out PEP vs Jordan]
-[PASS] d2_exact: Jordan candidate (PE+EP)/2 is INDEFINITE (some eig < 0)  [min eig(M') = -63/4225 < 0  => not a valid effect]
-[PASS] d2_exact: PEP reproduces two-step prob; Jordan candidate does NOT  [two-step=3969/4225, PEP=3969/4225, Jordan=17577/20449]
-
-========================================================================
-TOTAL: 51 PASS / 0 FAIL  (out of 51 checks)
-========================================================================
-
-All checks passed under the supplied measurement-side premises: M_{P,E} = P E P is the pre-update effect for the supplied two-step probability [Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E)], it is a valid effect [0 <= PEP <= P <= I], the supplied trace/effect pairing is real-linear and maps states/effects to [0,1], and the sequential product is associative-compatible with composition. The runner does not establish the Lueders update, Born rule, or trace/effect pairing as framework-native.
+SUMMARY: PASS=32 FAIL=0
 
 ----- stderr -----
 

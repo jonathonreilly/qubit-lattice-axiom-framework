@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1291 |
+| unaudited | 1290 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
 | ~~audited_conditional~~ | 67 |
-| ~~audited_failed~~ | 13 |
+| ~~audited_failed~~ | 14 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1097 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 57 |
+| `audited_failed` | 58 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1598 |
+| `unaudited` | 1597 |
 
 | claim_type | count |
 |---|---:|
@@ -1386,6 +1386,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_generation_koide_stable_location_index_2026-06-06` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `post_record_measure_weight_normalization_subdivision_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_dial_bucket_subdivision_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_source_measure_trace_normalization_prototype_2026-06-06` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -13907,6 +13908,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Supplying a finite tangent/readout carrier, a positive tangent metric or Hessian, nonnegative readout weights, and exact normalization/quadratic checks yields a finite readout/tangent weight certificate.  _(class `A`)_
 - **chain closes:** False — The independent arithmetic checks close for the supplied toy data: (1,3) normalizes to (1/4,3/4), the 2x2 metric has positive leading minor and determinant, the stated quadratic value is 9/2, and (1,15) normalizes to (1/16,15/16). The chain does not close as written because the packet/runner reports 7 current selector_tangent_readout_weight rows against the note and hard-coded expected count of 6, and the actual selector/readout/metric authority remains supplied rather than derived.
 - **rationale:** The finite supplied-weight arithmetic is exact, but it is an algebraic check over supplied carrier/metric/readout inputs rather than a Record-derived selector, readout primitive, metric, Born law, or physical measure. The completed runner exits nonzero because the current selector_tangent_readout_weight bucket has 7 rows while the note and runner expect 6. The runner also dynamically imports scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py for the row bucket, but that helper source is not included in the restricted packet despite being load-bearing for the failed coverage check.
+- **auditor confidence:** high
+
+### `post_record_source_measure_trace_normalization_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite supplied source and trace reference weights normalize exactly, admit an RN density on the same finite carrier under absolute continuity, satisfy the finite expectation identity, and compose densities by multiplication; no physical trace selection or Record-derived measure is audited.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-194101-25b371454a-post_record_source_measure_t`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supplied finite carrier plus supplied positive reference trace measure plus supplied nonnegative source weights with positive total plus exact Radon-Nikodym density imply a normalized source measure and trace/RN expectation identity.  _(class `A`)_
+- **chain closes:** False — The finite RN algebra closes, but the indexed row-count claim does not close in the completed runner output. The note claims 24 rows with 10 trace_normalization_reference rows, while the runner finds 21 total rows and 7 trace_normalization_reference rows.
+- **rationale:** The mathematical prototype is ordinary finite-measure algebra over supplied inputs, not a first-principles physics derivation. However, the source note’s explicit indexed coverage claim fails against the included runner output: two row-count checks fail, reporting 21 rows rather than 24 and 7 trace-normalization rows rather than 10. Because those counts are part of the stated result and runner certificate, the chain does not close on its own terms.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

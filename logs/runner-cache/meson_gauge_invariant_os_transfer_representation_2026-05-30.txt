@@ -1,0 +1,191 @@
+===== runner cache v1 =====
+runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+runner_sha256: ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+==============================================================================
+GAUGE-INVARIANT NUMBER-CONSERVING MESON OS TRANSFER REPRESENTATION (3+1 carrier)
+==============================================================================
+Meson observable: F = chibar(x) U(x,y) chi(y)  (number-conserving, gauge singlet).
+F|Omega> = 0 (vacuum annihilation); the OS object is the meson 2-pt <Theta(F)F>,
+a connected 4-fermion correlator = particle-hole intermediate-state sum >= 0.
+mass=0.5  c_block=2.0 (a-priori)  beta=0.9  NT_bulk=14
+
+==============================================================================
+CARRIER: U(1)  2x2x1 spatial sheet (4 sites, 4 modes)   [Lt=2 block; transfer runs in time]
+==============================================================================
+  spatial 2x2x1, N_c=1, n_modes=4, U-quadrature K=16
+  P_block : block pos eig vs C_BLOCK e^-2E       worst = 2.55e-15
+  P_block : Gf Berezin(M^-1) vs operator(e^-2H)  worst = 2.37e-13
+  P_block : full-spacetime M^-1 block spectrum vs operator worst = 5.55e-15
+  K1 VAC  : ||F|Omega>|| (MUST be ~0)            = 0.00e+00
+  K1 VAC  : min meson <Theta(F)F> (MUST be >0)   = 0.0638
+  P1      : per-config Berezin(4-ferm) == operator meson  worst = 3.12e-13
+  P0      : det-weighted avg Berezin == operator meson    worst = 2.75e-14
+  Ppos    : averaged meson Gram min eig (MUST >=0) = 0.0745
+  Ppos    : connected loop min over random V (>=0) = 1.4940
+  Pdet    : min det(M[U]) over quadrature        = 1.2742  (>0)
+  herm    : ||C - C^dag|| (reflection=adjoint)   = 1.39e-17
+  recon off-diagonal magnitude (mode-mixing)     = 0.2095  (MIXING)
+  K2 BREAK: per-mode-factorized Berezin gap      = 0.2168  (must be LARGE)
+  K3 DIFF : flat(no-det) vs det-weighted gap     = 0.0394  (must be LARGE)
+  K4 CTRL : single-step block-metric min eig     = -0.4555  (must be <0)
+  K5 GAUGE: ||<Theta(F)F> invariance|| under g   = 1.39e-16  (must be ~0)
+  K5 GAUGE: Wilson-line covariance residual      = 1.11e-16  (must be ~0)
+
+==============================================================================
+CARRIER: SU(3) 2x2x1 spatial sheet (4 sites, 12 modes)   [Lt=2 block; transfer runs in time]
+==============================================================================
+  spatial 2x2x1, N_c=3, n_modes=12, U-quadrature K=6
+  P_block : block pos eig vs C_BLOCK e^-2E       worst = 2.61e-12
+  P_block : Gf Berezin(M^-1) vs operator(e^-2H)  worst = 1.37e-12
+  P_block : full-spacetime M^-1 block spectrum vs operator worst = 2.61e-12
+  K1 VAC  : ||F|Omega>|| (MUST be ~0)            = 0.00e+00
+  K1 VAC  : min meson <Theta(F)F> (MUST be >0)   = 0.4092
+  P1      : per-config Berezin(4-ferm) == operator meson  worst = 2.64e-12
+  P0      : det-weighted avg Berezin == operator meson    worst = 6.18e-13
+  Ppos    : averaged meson Gram min eig (MUST >=0) = 0.3367
+  Ppos    : connected loop min over random V (>=0) = 42.3305
+  Pdet    : min det(M[U]) over quadrature        = 1.9951  (>0)
+  herm    : ||C - C^dag|| (reflection=adjoint)   = 2.78e-17
+  recon off-diagonal magnitude (mode-mixing)     = 0.1861  (MIXING)
+  K2 BREAK: per-mode-factorized Berezin gap      = 0.7345  (must be LARGE)
+  K3 DIFF : flat(no-det) vs det-weighted gap     = 0.0559  (must be LARGE)
+  K4 CTRL : single-step block-metric min eig     = -0.5491  (must be <0)
+  K5 GAUGE: ||<Theta(F)F> invariance|| under g   = 1.00e-15  (must be ~0)
+  K5 GAUGE: Wilson-line covariance residual      = 1.39e-16  (must be ~0)
+
+==============================================================================
+CARRIER: SU(3) 2x1x1 spatial (2 sites, 6 modes)   [Lt=2 block; transfer runs in time]
+==============================================================================
+  spatial 2x1x1, N_c=3, n_modes=6, U-quadrature K=8
+  P_block : block pos eig vs C_BLOCK e^-2E       worst = 2.34e-12
+  P_block : Gf Berezin(M^-1) vs operator(e^-2H)  worst = 3.13e-12
+  P_block : full-spacetime M^-1 block spectrum vs operator worst = 2.34e-12
+  K1 VAC  : ||F|Omega>|| (MUST be ~0)            = 0.00e+00
+  K1 VAC  : min meson <Theta(F)F> (MUST be >0)   = 0.8723
+  P1      : per-config Berezin(4-ferm) == operator meson  worst = 5.14e-12
+  P0      : det-weighted avg Berezin == operator meson    worst = 2.36e-12
+  Ppos    : averaged meson Gram min eig (MUST >=0) = 0.6593
+  Ppos    : connected loop min over random V (>=0) = 11.2422
+  Pdet    : min det(M[U]) over quadrature        = 0.3103  (>0)
+  herm    : ||C - C^dag|| (reflection=adjoint)   = 1.61e-17
+  recon off-diagonal magnitude (mode-mixing)     = 0.1393  (MIXING)
+  K2 BREAK: per-mode-factorized Berezin gap      = 0.0951  (must be LARGE)
+  K3 DIFF : flat(no-det) vs det-weighted gap     = 0.1165  (must be LARGE)
+  K4 CTRL : single-step block-metric min eig     = -0.5475  (must be <0)
+  K5 GAUGE: ||<Theta(F)F> invariance|| under g   = 4.47e-16  (must be ~0)
+  K5 GAUGE: Wilson-line covariance residual      = 2.29e-16  (must be ~0)
+
+==============================================================================
+CARRIER: U(1)  2x1x1 spatial (2 sites, minimal, degenerate)   [Lt=2 block; transfer runs in time]
+==============================================================================
+  spatial 2x1x1, N_c=1, n_modes=2, U-quadrature K=16
+  P_block : block pos eig vs C_BLOCK e^-2E       worst = 7.66e-13
+  P_block : Gf Berezin(M^-1) vs operator(e^-2H)  worst = 7.66e-13
+  P_block : full-spacetime M^-1 block spectrum vs operator worst = 7.66e-13
+  K1 VAC  : ||F|Omega>|| (MUST be ~0)            = 0.00e+00
+  K1 VAC  : min meson <Theta(F)F> (MUST be >0)   = 0.5242
+  P1      : per-config Berezin(4-ferm) == operator meson  worst = 1.11e-12
+  P0      : det-weighted avg Berezin == operator meson    worst = 5.32e-14
+  Ppos    : averaged meson Gram min eig (MUST >=0) = 0.1524
+  Ppos    : connected loop min over random V (>=0) = 0.8556
+  Pdet    : min det(M[U]) over quadrature        = 0.2820  (>0)
+  herm    : ||C - C^dag|| (reflection=adjoint)   = 3.66e-18
+  recon off-diagonal magnitude (mode-mixing)     = 0.0000  (DEGENERATE/no-mixing)
+  K2 n/a  : per-mode gap (degenerate)            = 5.34e-14  (must be ~0: prior-vacuity regime)
+  K3 DIFF : flat(no-det) vs det-weighted gap     = 0.0931  (must be LARGE)
+  K4 CTRL : single-step block-metric min eig     = -0.5316  (must be <0)
+  K5 GAUGE: ||<Theta(F)F> invariance|| under g   = 1.18e-16  (must be ~0)
+  K5 GAUGE: Wilson-line covariance residual      = 1.24e-16  (must be ~0)
+
+==============================================================================
+SUMMARY OF CHECKS
+==============================================================================
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): P_block eig  (2.55351295663786e-15)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): P_block Gf Berezin==operator  (2.3714363805993344e-13)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): P_block full-spacetime M^-1 spectrum==operator  (5.551115123125783e-15)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): K1 F|Omega>=0 (vac annih)  (0.0)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): K1 meson correlator NONZERO  (0.06382448404180725)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): P1 per-config meson dual  (3.122502256758253e-13)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): P0 det-weighted avg meson  (2.7533531015185508e-14)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): Ppos averaged Gram PSD  (0.07452626035758471)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): Ppos connected loop >=0 (random V)  (1.4939609107636413)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): Pdet det>0  (1.2741697570350077)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): herm  (1.3877787807814457e-17)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): K2 per-mode BREAKS (mixing)  (0.21683559407712752)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): K3 flat-det differs from det-target  (0.03938390506290082)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): K4 single-step indefinite  (-0.45554594689475625)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): K5 gauge-invariant correlator  (1.3877787807814457e-16)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): K5 Wilson-line covariance  (1.1102230246251565e-16)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): P_block eig  (2.6141311337823936e-12)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): P_block Gf Berezin==operator  (1.3713474800345483e-12)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): P_block full-spacetime M^-1 spectrum==operator  (2.6145752229922437e-12)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): K1 F|Omega>=0 (vac annih)  (0.0)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): K1 meson correlator NONZERO  (0.40920004283087597)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): P1 per-config meson dual  (2.6449953339315326e-12)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): P0 det-weighted avg meson  (6.178946243619522e-13)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): Ppos averaged Gram PSD  (0.33668711653635375)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): Ppos connected loop >=0 (random V)  (42.330488062495185)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): Pdet det>0  (1.9950638156412832)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): herm  (2.7755575615628914e-17)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): K2 per-mode BREAKS (mixing)  (0.7345041499407801)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): K3 flat-det differs from det-target  (0.055884985659423125)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): K4 single-step indefinite  (-0.5490661084402995)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): K5 gauge-invariant correlator  (9.995282819930494e-16)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): K5 Wilson-line covariance  (1.3877787807814457e-16)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P_block eig  (2.34123831432953e-12)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P_block Gf Berezin==operator  (3.1294966618138723e-12)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P_block full-spacetime M^-1 spectrum==operator  (2.3413493366319926e-12)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): K1 F|Omega>=0 (vac annih)  (0.0)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): K1 meson correlator NONZERO  (0.8722580207974404)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P1 per-config meson dual  (5.137335001901613e-12)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P0 det-weighted avg meson  (2.356448369777269e-12)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): Ppos averaged Gram PSD  (0.6593259710288489)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): Ppos connected loop >=0 (random V)  (11.242168371143043)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): Pdet det>0  (0.3102920828496131)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): herm  (1.6114762007900217e-17)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): K2 per-mode BREAKS (mixing)  (0.09507142746192199)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): K3 flat-det differs from det-target  (0.11647279923102993)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): K4 single-step indefinite  (-0.5474823181017244)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): K5 gauge-invariant correlator  (4.465070479587789e-16)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): K5 Wilson-line covariance  (2.2887833992611187e-16)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): P_block eig  (7.66275931596283e-13)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): P_block Gf Berezin==operator  (7.664979762012081e-13)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): P_block full-spacetime M^-1 spectrum==operator  (7.664979762012081e-13)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): K1 F|Omega>=0 (vac annih)  (0.0)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): K1 meson correlator NONZERO  (0.5242286970495814)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): P1 per-config meson dual  (1.1098899578744145e-12)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): P0 det-weighted avg meson  (5.323519403467959e-14)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): Ppos averaged Gram PSD  (0.1523519951599526)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): Ppos connected loop >=0 (random V)  (0.8556379082092993)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): Pdet det>0  (0.28204338743636953)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): herm  (3.6600812725510255e-18)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): K2 degenerate=>no-break (prior-vacuity)  (5.3373971918196413e-14)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): K3 flat-det differs from det-target  (0.09306333485074827)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): K4 single-step indefinite  (-0.531590130391979)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): K5 gauge-invariant correlator  (1.1807351962504608e-16)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): K5 Wilson-line covariance  (1.2412670766236366e-16)
+
+==============================================================================
+SCOPE
+==============================================================================
+This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator
+equality on a FINITE 3+1 carrier (transfer matrix in time; spatial lattice the
+regulator), ILLUSTRATING the cited transfer-matrix meson-spectroscopy
+construction (Luescher 1977; Osterwalder-Seiler 1978; Montvay-Munster Ch.3;
+Smit Sec.6).  The vacuum-annihilation obstruction (F|Omega>=0) is handled, NOT
+dodged: the OS object is the meson 2-pt <Theta(F)F>, a connected 4-fermion
+correlator = connected quark-line loop, NONZERO and OS-positive.
+NO continuum claim either way (the continuum step -- transfer-matrix -> Wightman
+reconstruction + spatial-continuum/Lorentz restoration -- is OUT OF SCOPE; the
+framework is 3+1).  The per-config fermion 2-step rung, the Wilson-boundary (H1)
+positivity, and any interacting-RP closure remain open.
+
+SCORECARD PASS=64 FAIL=0
+
+----- stderr -----
+

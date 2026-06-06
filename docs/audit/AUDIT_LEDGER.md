@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 671 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1231 |
+| unaudited | 1230 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 80 |
+| ~~audited_conditional~~ | 81 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1037 |
-| `audited_conditional` | 80 |
+| `audited_conditional` | 81 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1515 |
+| `unaudited` | 1514 |
 
 | claim_type | count |
 |---|---:|
@@ -1234,6 +1234,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -11099,6 +11100,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — For an open_gate row, the chain closes because the source keeps the regulator/twist/patching construction load-bearing and does not promote the external context to a retained theorem. The one-hop retained_bounded instanton infrastructure supplies the finite half-action arithmetic and twisted T4 k/N fractional-charge arithmetic used by this bounded gate.
 - **rationale:** Fresh-context audit agreed that the row cleanly records only an external open gate. The runner verifies the half-action algebra and boundary-disclaimer checks, and the note explicitly refuses standalone finite-action singular-meron status, framework substrate identification, hierarchy closure, alpha_LM^16 closure, and 4pi^2-to-ln(M_Pl/v) scale matching. This is clean as an open gate, not a retained positive theorem.
 - **auditor confidence:** high
+
+### `meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30`
+
+- **Note:** [`MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`](../../docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-carrier, det-weighted finite-sample/quadrature equality between the connected gauge-invariant number-conserving staggered meson Berezin two-point and the matching fermion-Fock transfer-matrix connected loop on the listed 3+1 U(1)/SU(3) carriers; no continuum, Lorentz, full interacting-RP, H1, or gauge-Hilbert-space operator-sandwich closure audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-000504-d396f60635-meson_gauge_invariant_os_tra`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The forward block-propagator identity `G_f^Berezin == G_f^operator`, checked from Grassmann temporal-chain/full-spacetime `M^{-1}` against the Fock `e^{-2Hhat}` construction, feeds the common connected meson loop `Tr[V^dag G_f V G_f]` and thereby gives the Berezin/operator meson equality.  _(class `C`)_
+- **chain closes:** False — The algebraic meson-loop Gram identity and the retained determinant-positivity dependency are consistent, and the supplied stdout reports the expected 64 passes. However the restricted packet exposes only a truncated primary runner source and the local runner file is absent, so the load-bearing Berezin/operator kernel implementation cannot be verified from source rather than from PASS output.
+- **rationale:** The finite equality is presented as a first-principles finite-matrix computation, not as a definition or external numerical match, so the claimed load-bearing class is C. The displayed identities `Tr[V^dag G_f V G_f] = ||G_f^{1/2} V G_f^{1/2}||_F^2`, the eigenbasis expansion, the OS sign role, and the gauge-singlet covariance are internally coherent at the algebraic level. Clean audit status nevertheless requires inspecting the complete runner functions that build `block_fwd_propagator_berezin`, `block_metric_per_mode`, `block_metric_spacetime_eigs`, and the full Berezin four-point path; stdout alone is explicitly not authoritative under the rubric.
+- **auditor confidence:** medium
 
 ### `mesoscopic_surrogate_alternate_family_scout_note`
 

@@ -15,6 +15,15 @@ merge_state_status: UNSTABLE
 checks: "audit_pipeline QUEUED"
 ```
 
+Final verification:
+
+```yaml
+head: "91498679aee73c16efba6ad46ae81e8803d85cb5"
+mergeable: MERGEABLE
+merge_state_status: CLEAN
+checks: "no status check rollup reported"
+```
+
 Recovery command:
 
 ```text

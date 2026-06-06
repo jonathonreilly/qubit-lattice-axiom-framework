@@ -38,8 +38,8 @@ prototype.
 
 ## Next exact action
 
-Poll PR #2847 until `audit_pipeline` completes, then record the final clean PR
-state if the check succeeds.
+Continue campaign to the next ranked directed-certificate lane while runtime
+remains.
 
 ## PR
 
@@ -50,4 +50,8 @@ initial_head: "57c7dd9a4f7754ebf5096cde1b031c12f405e436"
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline QUEUED"
+final_head: "91498679aee73c16efba6ad46ae81e8803d85cb5"
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "no status check rollup reported"
 ```

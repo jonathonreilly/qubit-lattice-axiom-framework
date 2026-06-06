@@ -39,5 +39,5 @@ initial_merge_state_status: UNSTABLE
 initial_status_check_rollup: "audit_pipeline queued at first verification"
 final_mergeable: MERGEABLE
 final_merge_state_status: CLEAN
-final_status_check_rollup: "no remaining statusCheckRollup entries at final verification"
+final_status_check_rollup: "audit_pipeline completed SUCCESS at final verification"
 ```

@@ -46,7 +46,7 @@ Final PR verification:
 pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2832"
 mergeable: MERGEABLE
 merge_state_status: CLEAN
-status_check_rollup: "no remaining statusCheckRollup entries at final verification"
+status_check_rollup: "audit_pipeline completed SUCCESS at final verification"
 ```
 
 Disposition: PR #2832 is open, mergeable, and clean. Block closed for campaign

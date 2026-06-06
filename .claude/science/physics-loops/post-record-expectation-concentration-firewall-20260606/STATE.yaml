@@ -35,7 +35,7 @@ pr_number: 2832
 cycle_status: pr_open_clean
 mergeable: MERGEABLE
 merge_state_status: CLEAN
-checks: "no remaining statusCheckRollup entries at final verification"
+checks: "audit_pipeline completed SUCCESS at final verification"
 next_exact_action: |
   Closed for campaign purposes; pivot to the next independent dynamics lane.
 stop_condition: |

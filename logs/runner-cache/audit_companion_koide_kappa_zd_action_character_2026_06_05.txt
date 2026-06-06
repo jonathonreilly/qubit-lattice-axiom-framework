@@ -1,0 +1,166 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py
+runner_sha256: 2d0ee93d16b72876b651dea3cb7852d5207e3bf72dc605197be6ebfec246a75f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.45
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+Z_d action on Herm_circ(d): explicit instantiation and character-k bridge
+----------------------------------------------------------------------------------------
+
+=== d = 3 ===
+  [PASS] [d=3] C^d = I  (cyclic shift cubes/etc to I)
+  [PASS] [d=3] C unitary (C^H C = I)  (permutation matrix is unitary)
+  [PASS] [d=3] tr(C^k) = 0 for 0 < k < d  (shifts are traceless)
+  [PASS] [d=3] Omega unitary  (diagonal unit-modulus entries)
+  [PASS] [d=3] Omega^d = I  (omega^{d}=1 on every diagonal entry)
+  [PASS] [d=3] shift-conjugation C M C^-1 = M is TRIVIAL on every C^k (eq (S))  (circulants commute with C -> no character structure)
+  [PASS] [d=3] rho(I) = I  (identity preserved)
+  [PASS] [d=3] rho(MN) = rho(M)rho(N) on all C^j, C^k  (conjugation is a homomorphism)
+  [PASS] [d=3] rho^d = id (order d)  (Omega^d = I)
+  [PASS] [d=3] rho(M^H) = rho(M)^H (Hermiticity-preserving)  (Omega unitary)
+  [PASS] [d=3] rho is NOT the identity (rho(C^1) = omega C^1 != C^1)  (distinct from shift-conjugation)
+  [PASS] [d=3] rho(C^k) = omega^k C^k for all k (character-k line) [C2]  (exact symbolic root-of-unity identity)
+  [PASS] [d=3] action matrix in C-power basis = diag(1, omega, ..., omega^{d-1})  (eigenvalues are the d characters)
+  [PASS] [d=3] B1^(k=1) = C^k + C^(d-k) Hermitian  (real symmetric)
+  [PASS] [d=3] B2^(k=1) = i(C^k - C^(d-k)) Hermitian  (pure-imaginary off-diagonals)
+  [PASS] [d=3] rho|_V_(k=1) is rotation by 2pi*1/3 (eq (6)) [C3]  (real 2-dim doublet irrep)
+  [PASS] [d=3] Hermitian pair a_k C^k + conj(a_k) C^(d-k) = p B1 + q B2 (in V_k)  (Hermiticity constraint = membership in V_k)
+  [PASS] [d=3] no sign irrep (d odd: no k with k = d-k mod d)  (odd d)
+  [PASS] [d=3] rho(I) = I (trivial irrep, k=0)  (omega^0 = 1)
+  [PASS] [d=3] 1 + 2*floor((d-1)/2) + [d even] = d  (1 + 2*1 + 0 = 3)
+  [PASS] [d=3] explicit real basis has d = 3 elements  (1 + 2*doublets + sign)
+  [PASS] [d=3] real basis is linearly independent over R (rank = d)  (rank = 3)
+  [PASS] [d=3] real-basis combination spans Hermitian circulants (Hermitian + circulant)  (generic element is Hermitian circulant)
+  [PASS] [d=3] numpy cross-check: Omega^-1 C^k Omega = omega^k C^k  (floating guard on the exact identity)
+
+=== d = 4 ===
+  [PASS] [d=4] C^d = I  (cyclic shift cubes/etc to I)
+  [PASS] [d=4] C unitary (C^H C = I)  (permutation matrix is unitary)
+  [PASS] [d=4] tr(C^k) = 0 for 0 < k < d  (shifts are traceless)
+  [PASS] [d=4] Omega unitary  (diagonal unit-modulus entries)
+  [PASS] [d=4] Omega^d = I  (omega^{d}=1 on every diagonal entry)
+  [PASS] [d=4] shift-conjugation C M C^-1 = M is TRIVIAL on every C^k (eq (S))  (circulants commute with C -> no character structure)
+  [PASS] [d=4] rho(I) = I  (identity preserved)
+  [PASS] [d=4] rho(MN) = rho(M)rho(N) on all C^j, C^k  (conjugation is a homomorphism)
+  [PASS] [d=4] rho^d = id (order d)  (Omega^d = I)
+  [PASS] [d=4] rho(M^H) = rho(M)^H (Hermiticity-preserving)  (Omega unitary)
+  [PASS] [d=4] rho is NOT the identity (rho(C^1) = omega C^1 != C^1)  (distinct from shift-conjugation)
+  [PASS] [d=4] rho(C^k) = omega^k C^k for all k (character-k line) [C2]  (exact symbolic root-of-unity identity)
+  [PASS] [d=4] action matrix in C-power basis = diag(1, omega, ..., omega^{d-1})  (eigenvalues are the d characters)
+  [PASS] [d=4] B1^(k=1) = C^k + C^(d-k) Hermitian  (real symmetric)
+  [PASS] [d=4] B2^(k=1) = i(C^k - C^(d-k)) Hermitian  (pure-imaginary off-diagonals)
+  [PASS] [d=4] rho|_V_(k=1) is rotation by 2pi*1/4 (eq (6)) [C3]  (real 2-dim doublet irrep)
+  [PASS] [d=4] Hermitian pair a_k C^k + conj(a_k) C^(d-k) = p B1 + q B2 (in V_k)  (Hermiticity constraint = membership in V_k)
+  [PASS] [d=4] rho(C^(d/2)) = -C^(d/2) (sign irrep, omega^(d/2) = -1) [C4]  (even d only)
+  [PASS] [d=4] C^(d/2) Hermitian and real  (real symmetric line)
+  [PASS] [d=4] rho(I) = I (trivial irrep, k=0)  (omega^0 = 1)
+  [PASS] [d=4] 1 + 2*floor((d-1)/2) + [d even] = d  (1 + 2*1 + 1 = 4)
+  [PASS] [d=4] explicit real basis has d = 4 elements  (1 + 2*doublets + sign)
+  [PASS] [d=4] real basis is linearly independent over R (rank = d)  (rank = 4)
+  [PASS] [d=4] real-basis combination spans Hermitian circulants (Hermitian + circulant)  (generic element is Hermitian circulant)
+  [PASS] [d=4] numpy cross-check: Omega^-1 C^k Omega = omega^k C^k  (floating guard on the exact identity)
+
+=== d = 5 ===
+  [PASS] [d=5] C^d = I  (cyclic shift cubes/etc to I)
+  [PASS] [d=5] C unitary (C^H C = I)  (permutation matrix is unitary)
+  [PASS] [d=5] tr(C^k) = 0 for 0 < k < d  (shifts are traceless)
+  [PASS] [d=5] Omega unitary  (diagonal unit-modulus entries)
+  [PASS] [d=5] Omega^d = I  (omega^{d}=1 on every diagonal entry)
+  [PASS] [d=5] shift-conjugation C M C^-1 = M is TRIVIAL on every C^k (eq (S))  (circulants commute with C -> no character structure)
+  [PASS] [d=5] rho(I) = I  (identity preserved)
+  [PASS] [d=5] rho(MN) = rho(M)rho(N) on all C^j, C^k  (conjugation is a homomorphism)
+  [PASS] [d=5] rho^d = id (order d)  (Omega^d = I)
+  [PASS] [d=5] rho(M^H) = rho(M)^H (Hermiticity-preserving)  (Omega unitary)
+  [PASS] [d=5] rho is NOT the identity (rho(C^1) = omega C^1 != C^1)  (distinct from shift-conjugation)
+  [PASS] [d=5] rho(C^k) = omega^k C^k for all k (character-k line) [C2]  (exact symbolic root-of-unity identity)
+  [PASS] [d=5] action matrix in C-power basis = diag(1, omega, ..., omega^{d-1})  (eigenvalues are the d characters)
+  [PASS] [d=5] B1^(k=1) = C^k + C^(d-k) Hermitian  (real symmetric)
+  [PASS] [d=5] B2^(k=1) = i(C^k - C^(d-k)) Hermitian  (pure-imaginary off-diagonals)
+  [PASS] [d=5] rho|_V_(k=1) is rotation by 2pi*1/5 (eq (6)) [C3]  (real 2-dim doublet irrep)
+  [PASS] [d=5] Hermitian pair a_k C^k + conj(a_k) C^(d-k) = p B1 + q B2 (in V_k)  (Hermiticity constraint = membership in V_k)
+  [PASS] [d=5] B1^(k=2) = C^k + C^(d-k) Hermitian  (real symmetric)
+  [PASS] [d=5] B2^(k=2) = i(C^k - C^(d-k)) Hermitian  (pure-imaginary off-diagonals)
+  [PASS] [d=5] rho|_V_(k=2) is rotation by 2pi*2/5 (eq (6)) [C3]  (real 2-dim doublet irrep)
+  [PASS] [d=5] Hermitian pair a_k C^k + conj(a_k) C^(d-k) = p B1 + q B2 (in V_k)  (Hermiticity constraint = membership in V_k)
+  [PASS] [d=5] no sign irrep (d odd: no k with k = d-k mod d)  (odd d)
+  [PASS] [d=5] rho(I) = I (trivial irrep, k=0)  (omega^0 = 1)
+  [PASS] [d=5] 1 + 2*floor((d-1)/2) + [d even] = d  (1 + 2*2 + 0 = 5)
+  [PASS] [d=5] explicit real basis has d = 5 elements  (1 + 2*doublets + sign)
+  [PASS] [d=5] real basis is linearly independent over R (rank = d)  (rank = 5)
+  [PASS] [d=5] real-basis combination spans Hermitian circulants (Hermitian + circulant)  (generic element is Hermitian circulant)
+  [PASS] [d=5] numpy cross-check: Omega^-1 C^k Omega = omega^k C^k  (floating guard on the exact identity)
+
+=== d = 6 ===
+  [PASS] [d=6] C^d = I  (cyclic shift cubes/etc to I)
+  [PASS] [d=6] C unitary (C^H C = I)  (permutation matrix is unitary)
+  [PASS] [d=6] tr(C^k) = 0 for 0 < k < d  (shifts are traceless)
+  [PASS] [d=6] Omega unitary  (diagonal unit-modulus entries)
+  [PASS] [d=6] Omega^d = I  (omega^{d}=1 on every diagonal entry)
+  [PASS] [d=6] shift-conjugation C M C^-1 = M is TRIVIAL on every C^k (eq (S))  (circulants commute with C -> no character structure)
+  [PASS] [d=6] rho(I) = I  (identity preserved)
+  [PASS] [d=6] rho(MN) = rho(M)rho(N) on all C^j, C^k  (conjugation is a homomorphism)
+  [PASS] [d=6] rho^d = id (order d)  (Omega^d = I)
+  [PASS] [d=6] rho(M^H) = rho(M)^H (Hermiticity-preserving)  (Omega unitary)
+  [PASS] [d=6] rho is NOT the identity (rho(C^1) = omega C^1 != C^1)  (distinct from shift-conjugation)
+  [PASS] [d=6] rho(C^k) = omega^k C^k for all k (character-k line) [C2]  (exact symbolic root-of-unity identity)
+  [PASS] [d=6] action matrix in C-power basis = diag(1, omega, ..., omega^{d-1})  (eigenvalues are the d characters)
+  [PASS] [d=6] B1^(k=1) = C^k + C^(d-k) Hermitian  (real symmetric)
+  [PASS] [d=6] B2^(k=1) = i(C^k - C^(d-k)) Hermitian  (pure-imaginary off-diagonals)
+  [PASS] [d=6] rho|_V_(k=1) is rotation by 2pi*1/6 (eq (6)) [C3]  (real 2-dim doublet irrep)
+  [PASS] [d=6] Hermitian pair a_k C^k + conj(a_k) C^(d-k) = p B1 + q B2 (in V_k)  (Hermiticity constraint = membership in V_k)
+  [PASS] [d=6] B1^(k=2) = C^k + C^(d-k) Hermitian  (real symmetric)
+  [PASS] [d=6] B2^(k=2) = i(C^k - C^(d-k)) Hermitian  (pure-imaginary off-diagonals)
+  [PASS] [d=6] rho|_V_(k=2) is rotation by 2pi*2/6 (eq (6)) [C3]  (real 2-dim doublet irrep)
+  [PASS] [d=6] Hermitian pair a_k C^k + conj(a_k) C^(d-k) = p B1 + q B2 (in V_k)  (Hermiticity constraint = membership in V_k)
+  [PASS] [d=6] rho(C^(d/2)) = -C^(d/2) (sign irrep, omega^(d/2) = -1) [C4]  (even d only)
+  [PASS] [d=6] C^(d/2) Hermitian and real  (real symmetric line)
+  [PASS] [d=6] rho(I) = I (trivial irrep, k=0)  (omega^0 = 1)
+  [PASS] [d=6] 1 + 2*floor((d-1)/2) + [d even] = d  (1 + 2*2 + 1 = 6)
+  [PASS] [d=6] explicit real basis has d = 6 elements  (1 + 2*doublets + sign)
+  [PASS] [d=6] real basis is linearly independent over R (rank = d)  (rank = 6)
+  [PASS] [d=6] real-basis combination spans Hermitian circulants (Hermitian + circulant)  (generic element is Hermitian circulant)
+  [PASS] [d=6] numpy cross-check: Omega^-1 C^k Omega = omega^k C^k  (floating guard on the exact identity)
+
+----------------------------------------------------------------------------------------
+Validation 10: multiplicity table for d = 2..6 and d=3 uniqueness of (1,(1,),0)
+----------------------------------------------------------------------------------------
+  [PASS] Herm_circ(d=2) multiplicity = (1, (), 1), dim = 2 = d  (got (1, (), 1))
+  [PASS] Herm_circ(d=3) multiplicity = (1, (1,), 0), dim = 3 = d  (got (1, (1,), 0))
+  [PASS] Herm_circ(d=4) multiplicity = (1, (1,), 1), dim = 4 = d  (got (1, (1,), 1))
+  [PASS] Herm_circ(d=5) multiplicity = (1, (1, 1), 0), dim = 5 = d  (got (1, (1, 1), 0))
+  [PASS] Herm_circ(d=6) multiplicity = (1, (1, 1), 1), dim = 6 = d  (got (1, (1, 1), 1))
+  [PASS] d = 3 is the unique d in {2,3,4,5,6} with pattern (1, (1,), 0)  (d's with (1,(1,),0): [3])
+
+----------------------------------------------------------------------------------------
+Narrow theorem summary
+----------------------------------------------------------------------------------------
+
+  Z_d action on Herm_circ(d): rho(M) = Omega^{-1} M Omega,
+  Omega = diag(1, omega, ..., omega^{d-1}), omega = exp(2 pi i / d).
+
+  Bridge facts proven (NOT just pair-counting):
+    (S)  Shift-conjugation C M C^{-1} = M is TRIVIAL on Herm_circ(d) -- the
+         trap the conditional verdict flagged; the genuine action is rho.
+    (C1) rho is a faithful non-trivial Z_d representation on Herm_circ(d).
+    (C2) rho(C^k) = omega^k C^k -- the C^k line carries character k.
+    (C3) Hermiticity (a_{d-k} = conj(a_k)) ties {k, d-k} into a 2-real-dim
+         doublet V_k; rho|_V_k = rotation by 2 pi k / d.
+    (C4) even d: rho(C^{d/2}) = -C^{d/2} (sign irrep); rho(I) = I (trivial).
+    (C5) multiplicities (1, floor((d-1)/2), [d even]); dimension 1 + 2*doublets
+         + [d even] = d; pattern (1, (1,), 0) realized uniquely at d = 3.
+
+  Repairs missing_bridge_theorem for
+  koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10.
+  No PDG / fitted / lattice-MC / beta=6 / g_bare inputs; no audit files written.
+
+
+========================================================================================
+  TOTAL: 112 PASS / 0 FAIL
+========================================================================================
+
+----- stderr -----
+

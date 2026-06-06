@@ -28,6 +28,6 @@ trace_gate_classification: negative_route_pruning
 trace_reachability: prunes
 claim_status: bounded-support
 review_findings: "local review pass; runner PASS=44 FAIL=0; py_compile pass; git diff --check pass; forbidden status/dial overclaim strings absent"
-pr_status: "pending"
-next_exact_action: "Commit, push, and open a stacked PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2742 (stacked on physics-loop/record-dynamics-layer-reconciliation-20260605; audit workflow initially in progress)"
+next_exact_action: "Continue campaign queue; likely next route is MR_color positive attempt or chirality/left-right residual depending on queue refresh."
 stop_condition: "Do not stop campaign after this block while runtime remains."

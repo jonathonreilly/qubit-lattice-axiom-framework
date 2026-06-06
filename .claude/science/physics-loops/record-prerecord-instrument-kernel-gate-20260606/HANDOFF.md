@@ -16,7 +16,12 @@ physics-loop/record-clock-rate-normalization-gate-20260606
 
 Parent PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2809
 
-PR for this block: pending.
+PR for this block: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2810
+
+GitHub verification: open PR, base
+`physics-loop/record-clock-rate-normalization-gate-20260606`, head
+`physics-loop/record-prerecord-instrument-kernel-gate-20260606`, mergeable
+`MERGEABLE`, merge state `UNSTABLE`.
 
 ## Result
 
@@ -36,5 +41,6 @@ updates are one-hot/count information.
 
 ## Next Action
 
-Commit, push, open the stacked PR, patch this pack with the PR URL, then
-continue the 12-hour campaign.
+Continue the 12-hour campaign. The immediate record follow-on is an
+IID/typicality firewall; the next non-record hard lane remains repo-owned
+finite SU(3), Wilson beta=6 reproduction.

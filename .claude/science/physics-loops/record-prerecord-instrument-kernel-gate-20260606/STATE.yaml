@@ -13,8 +13,8 @@ hard_residual: "Instrument, Born trace rule, IID/typicality, physical generator,
 branch: physics-loop/record-prerecord-instrument-kernel-gate-20260606
 base_branch: physics-loop/record-clock-rate-normalization-gate-20260606
 base_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2809"
-pr_url: null
-pr_status: not_created_yet
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2810"
+pr_status: "open; base physics-loop/record-clock-rate-normalization-gate-20260606; head physics-loop/record-prerecord-instrument-kernel-gate-20260606; mergeable MERGEABLE; mergeStateStatus UNSTABLE"
 files_touched:
   - docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md
   - scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py
@@ -34,5 +34,5 @@ review_disposition: pass
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-next_exact_action: "Commit, push, open stacked PR against physics-loop/record-clock-rate-normalization-gate-20260606, patch PR URL, then pivot."
+next_exact_action: "Pivot to the next campaign opportunity; likely IID/typicality firewall or a non-record hard lane."
 stop_condition: "Only the 12-hour runtime/global queue/tooling stop applies; this conditional-support block is a campaign checkpoint."

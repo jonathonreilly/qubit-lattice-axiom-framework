@@ -54,7 +54,7 @@ DOC_CHECKS = {
 
 LOG_CHECKS = {
     "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt": [
-        "SUMMARY: PASS=59 FAIL=0",
+        "SUMMARY: PASS=60 FAIL=0",
         "SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE",
     ],
     "logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt": [

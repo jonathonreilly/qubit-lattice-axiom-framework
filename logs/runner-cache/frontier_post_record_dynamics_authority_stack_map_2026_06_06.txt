@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py
+runner_sha256: 02595f56073f2b7763b456156f3d09df8d95020acf4b230af8b9b41bd6b8f77a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -25,7 +33,7 @@ PASS self note contains: post-record samples are realized information, not proba
 Cached log checks
 ------------------------------------------------------------------------------
 PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt exists
-PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: SUMMARY: PASS=59 FAIL=0
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: SUMMARY: PASS=60 FAIL=0
 PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE
 PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt exists
 PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt contains: SUMMARY: PASS=52 FAIL=0
@@ -78,3 +86,6 @@ GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

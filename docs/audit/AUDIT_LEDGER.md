@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 198 |
-| **retained_no_go** | 213 |
+| **retained_no_go** | 214 |
 | **retained_bounded** | 703 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1265 |
+| unaudited | 1264 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1112 |
+| `audited_clean` | 1113 |
 | `audited_conditional` | 73 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 61 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1572 |
+| `unaudited` | 1571 |
 
 | claim_type | count |
 |---|---:|
@@ -1038,6 +1038,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_transverse_green_corrected_boundary_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `spectral_closure_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `spectral_symmetry_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -16041,6 +16042,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
   - `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
   - `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
+- **auditor confidence:** high
+
+### `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`
+
+- **Note:** [`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Spatial O_h/cubic artifact checks on Z^3 x Z_tau do not by themselves force c_t=c_s or full SO(4) kinetic covariance; an explicit Euclidean normalization or 4D-hypercubic premise is needed for that stronger wording.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-263fdd9965-spatial_cubic_time_anisotrop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On a Z^3 x Z_tau surface with spatial signed-permutation O_h symmetry and time parity, the invariant quadratic kinetic form has two independent coefficients, Q(p)=c_t p_tau^2+c_s(p_x^2+p_y^2+p_z^2), so spatial cubic symmetry allows c_t != c_s.  _(class `A`)_
+- **chain closes:** True — The finite symmetry argument closes: spatial signed permutations act transitively only on the three spatial square coefficients and leave the time-square coefficient independent, while 4D signed permutations act transitively on all four. The explicit anisotropic witness 2 p_tau^2+|p_spatial|^2 is spatial-O_h invariant but fails a time-space swap and a 45-degree SO(4) rotation.
+- **rationale:** Independent checking gives |O_h|=3!*2^3=48, |B_4|=4!*2^4=384, invariant coefficient vectors [a,b,b,b] versus [a,a,a,a], and the displayed sample values 31, 34, 69/2, 33, 18, and 27. The runner source genuinely enumerates signed-permutation groups and performs exact symbolic invariance checks rather than printing constants or importing the contested premise. The no-go is scoped, not absolute: it leaves the Euclidean-normalization and 4D-hypercubic routes open, so the N1-N8 stress test does not expose overclaiming within the audited scope.
 - **auditor confidence:** high
 
 ### `spectral_closure_2026-04-09`

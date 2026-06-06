@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 193 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 697 |
+| **retained_bounded** | 698 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1289 |
+| unaudited | 1288 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,22 +61,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1097 |
+| `audited_clean` | 1098 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 59 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1596 |
+| `unaudited` | 1595 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1329 |
+| `bounded_theorem` | 1330 |
 | `decoration` | 53 |
 | `meta` | 321 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 765 |
+| `positive_theorem` | 764 |
 
 | criticality | count |
 |---|---:|
@@ -916,6 +916,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_model_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_stable_kernel_count_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13935,6 +13936,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the current ledger snapshot, the stability/dynamics selector bucket contains 77 rows, subdivided into 46 flow_or_thermal_stability rows and 31 arrow_or_dynamics_bridge rows.  _(class `A`)_
 - **chain closes:** False — The completed runner reports the current ledger snapshot has 87 stability/dynamics selector rows, with computed sub-bucket counts 53 and 34, not the note's 77, 46, and 31. The missing step is an updated ledger-snapshot certificate matching the current audit ledger.
 - **rationale:** This is not a timeout or missing-compute case: the provided runner completed and returned two substantive failures. Its computed current-snapshot row count and sub-bucket counts contradict the source note's load-bearing table. The runner also hard-codes the claimed 46 and 31 summary lines even after printing computed counts of 53 and 34, so the exact-support count claim is stale rather than closed.
+- **auditor confidence:** high
+
+### `post_record_stable_kernel_count_audit_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_STABLE_KERNEL_COUNT_AUDIT_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_STABLE_KERNEL_COUNT_AUDIT_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite calibration of a count-statistic p-value for a finite word under supplied p0, row-stochastic K, statistic, tail direction, and observed word.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-194336-c35c522c61-post_record_stable_kernel_co`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For supplied p0 and transition kernel K on a finite alphabet, the product law P(w)=p0(o_0)K(o_0,o_1)...K(o_{N-2},o_{N-1}) gives an exact finite null distribution for any count statistic by summing over O^N.  _(class `A`)_
+- **chain closes:** True — The chain closes as finite probability algebra: the product measure over all words normalizes by induction over the row-stochastic kernel, and the distribution of any finite count statistic is the pushforward of that measure. This does not close any physical derivation of p0, K, statistic, threshold, clock, or audit verdict.
+- **rationale:** The displayed formula inventory checks out: the Markov product law, finite pushforward over count fibers, and upper-tail p-value are exact finite identities under the supplied stochastic inputs. Independently, in the runner's length-4 two-state example the count masses are 27/64, 15/64, 13/64, 9/64, and 0, summing to 1 with expected counts 47/16 and 17/16 and p-value 27/64 for AAAA. The runner's source-anchor and hard-coded firewall flags do not establish a physical kernel or statistic, but the note explicitly excludes those broader claims, so the scoped conditional audit interface closes.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

@@ -37,8 +37,8 @@ because it consumes the `arrow_or_dynamics_bridge` implication from PR #2837.
 
 ## Next exact action
 
-Wait for GitHub audit-lane checks, then patch final clean/success PR status if
-the latest head remains clean.
+Closed for campaign purposes. Pivot to the next supplied dynamics bridge
+interface or production-dynamics map.
 
 ## PR
 
@@ -48,7 +48,7 @@ base: "physics-loop/post-record-stability-dynamics-selector-subdivision-20260606
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline queued at first verification"
-final_mergeable: null
-final_merge_state_status: null
-final_checks: null
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "audit_pipeline completed SUCCESS at final verification"
 ```

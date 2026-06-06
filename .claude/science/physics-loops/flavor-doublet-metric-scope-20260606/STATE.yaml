@@ -1,0 +1,32 @@
+loop_slug: flavor-doublet-metric-scope-20260606
+started: 2026-06-06
+branch: physics-loop/flavor-doublet-metric-scope-20260606
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle_count: 1
+active_route: doublet metric reading-neutral scope repair
+target_claim_id: flavor_doublet_metric_default_is_detr_2026-06-02
+blocker_source: audit_ledger
+blocker_text: "The metric computation and the conditional r calculations close. The missing step is a bridge theorem showing that A1+HS+Hermiticity rules out any admissible complex structure on the doublet field space, not just continuous rephasing of C or complex-linearity of H_lin into the complexified operator algebra."
+files_touched:
+  - docs/FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02.md
+  - scripts/flavor_doublet_metric_default_is_detR_2026_06_02.py
+  - logs/runner-cache/flavor_doublet_metric_default_is_detR_2026_06_02.txt
+  - .claude/science/physics-loops/flavor-doublet-metric-scope-20260606/
+open_imports:
+  - Physical doublet-count/readout selection.
+  - Exclusion of every admissible field-space complex structure.
+  - Framework selection of det_R or det_C.
+no_go_routes:
+  - HS metric value alone selects det_C.
+  - Operator-symbol complex-linearity descends a J on b.
+  - Continuous U(1)_b rephasing is compatible with C^3=I.
+trace_gate:
+  trace_class: negative_route_pruning
+  reachability_to_target: prunes
+  artifact_role: demotion
+review_findings: author verification only; independent review/audit pending
+pr_status: pending
+next_exact_action: open PR for reviewer extraction
+stop_condition: PR opened and next conditional candidate selected

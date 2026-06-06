@@ -5,6 +5,12 @@
 Checks passed. This block is based on `origin/main` and targets the active
 single-clock uniqueness negative gate.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2799
+
+GitHub verification: open PR, base `main`, head
+`physics-loop/single-clock-uniqueness-scope-boundary-20260606`, merge state
+`UNSTABLE`.
+
 ## Intended Result
 
 Finite Stone uniqueness is valid only relative to a supplied transfer and fixed
@@ -20,7 +26,7 @@ broad no-second-clock without extra premises.
 
 ## Next Action
 
-Commit, push, open PR, then continue campaign.
+Continue campaign: select next high-leverage dynamics/open-lane block.
 
 ## Verification
 

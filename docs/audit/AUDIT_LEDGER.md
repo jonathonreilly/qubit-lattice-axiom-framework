@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 184 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 682 |
+| **retained_bounded** | 683 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1225 |
+| unaudited | 1224 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1060 |
+| `audited_clean` | 1061 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1528 |
+| `unaudited` | 1527 |
 
 | claim_type | count |
 |---|---:|
@@ -697,6 +697,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_symmetry_unification_decision_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `lattice_total_momentum_conservation_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_weak_field_mass_scaling_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_weak_field_purity_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lensing_adjoint_kernel_reduced_model_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -10691,6 +10692,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The 36-row standard-strength tradeoff sweep has 36/36 Born-clean coexistence rows, 0/36 positive-gravity rows, and 0/36 retained one-family rows.  _(class `C`)_
 - **chain closes:** True — The current runner output matches the note's canonical table, distance-law read, tradeoff counts, beam-depletion diagnostic, and NEGATIVE decision. The conclusion is bounded to the tested dense symmetry window and standard-strength slice.
 - **rationale:** The runner computes the finite sweep and decision summary from the specified lattice setup rather than hard-coding a promoted result. The note keeps the claim bounded: it rules out promotion on the tested standard-strength slice, while preserving the two-harness status and later weak-field reopening as outside scope. Residual risk is limited to untested families outside the stated sweep.
+- **auditor confidence:** high
+
+### `lattice_total_momentum_conservation_theorem_note_2026-05-02`
+
+- **Note:** [`LATTICE_TOTAL_MOMENTUM_CONSERVATION_THEOREM_NOTE_2026-05-02.md`](../../docs/LATTICE_TOTAL_MOMENTUM_CONSERVATION_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite even periodic carriers with unitary two-step shifts: if a finite Hamiltonian/time-evolution generator H commutes with T_{2 rho}, then the T_{2 rho} cyclic spectral sectors are invariant and the two-step character identifies one-site momenta modulo pi; no canonical P_x divergence, full one-site momentum operator, or H_phys reconstruction is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-120533-9149eec418-lattice_total_momentum_conse`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since each Pi_{rho,k} is a polynomial in T_{2 rho}, [H,T_{2 rho}]=0 implies [H,Pi_{rho,k}]=0, so unitary time evolution preserves the corresponding two-step translation sector weights.  _(class `A`)_
+- **chain closes:** True — The cited authority is retained_bounded for the exact two-step translation symmetry, and the present conclusion follows by finite cyclic-group projector algebra from the explicit commutator hypothesis [H,T_{2 rho}]=0. The stronger canonical-density and one-site-momentum claims are explicitly excluded.
+- **rationale:** The formulas for the cyclic order, Fourier projectors, eigencharacters, and modulo-pi one-site ambiguity check out independently by finite cyclic-group algebra. The runner source performs real matrix constructions and algebraic residual checks rather than printing constants or importing the contested premise. The result is bounded to the two-step sector statement supplied by the retained_bounded Noether authority and does not rely on the retracted canonical momentum-density bridge.
 - **auditor confidence:** high
 
 ### `lattice_weak_field_mass_scaling_note`

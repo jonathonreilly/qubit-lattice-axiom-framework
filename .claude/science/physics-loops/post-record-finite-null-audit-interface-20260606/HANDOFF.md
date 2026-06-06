@@ -29,4 +29,19 @@ calculation under that model.
 
 ## PR
 
-Pending.
+Opened:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2824
+```
+
+Initial GitHub verification:
+
+- state: `OPEN`;
+- base/head: `main` / `physics-loop/post-record-finite-null-audit-interface-20260606`;
+- mergeable: `MERGEABLE`;
+- merge state: `UNSTABLE`;
+- checks: `audit_pipeline` queued.
+
+The initial unstable state is a queued-check state, not a content review
+finding. Recheck after the audit job completes and patch the final status.

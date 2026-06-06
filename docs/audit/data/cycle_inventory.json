@@ -1,7 +1,47 @@
 {
-  "cycle_count": 0,
-  "cycles": [],
-  "length_counts": {},
+  "cycle_count": 1,
+  "cycles": [
+    {
+      "cycle_id": "cycle-0001",
+      "decision": null,
+      "edges": [
+        {
+          "from": "generation_dial_dynamics_stability_classifier_2026-06-05",
+          "to": "generation_dial_local_stability_grammar_2026-06-05"
+        },
+        {
+          "from": "generation_dial_local_stability_grammar_2026-06-05",
+          "to": "generation_dial_dynamics_stability_classifier_2026-06-05"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "generation_dial_dynamics_stability_classifier_2026-06-05",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md",
+          "title": "Generation Dial Dynamics Stability Classifier",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "generation_dial_local_stability_grammar_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md",
+          "title": "Generation Dial Local Stability Grammar",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    }
+  ],
+  "length_counts": {
+    "2": 1
+  },
   "sort": [
     "max_transitive_descendants descending",
     "length ascending",

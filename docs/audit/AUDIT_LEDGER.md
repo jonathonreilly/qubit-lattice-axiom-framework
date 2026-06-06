@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 682 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1351 |
+| unaudited | 1350 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1063 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1657 |
+| `unaudited` | 1656 |
 
 | claim_type | count |
 |---|---:|
@@ -1214,6 +1214,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_emergent_chirality_no_transport_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5687,6 +5688,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The center-symmetric state is claimed to be reached by the discrete conditional expectation E(A)=e0Ae0+e1Ae1 onto the center, making the r=1/2 route C^3=I-compatible and not a U(1)_b obstruction.  _(class `A`)_
 - **chain closes:** False — The idempotent ranks and simple ratios check, but the displayed E(A)=e0Ae0+e1Ae1 map is only a block compression: for a general 3x3 input it need not land in the center/commutant, while on R[C3] it is just the identity. The packet also does not derive the trace-default, Frobenius beta-family, Q(r) normalization, or prior U(1)_b obstruction claims from supplied authorities.
 - **rationale:** The runner genuinely verifies the elementary central-idempotent arithmetic, but it does not compute the load-bearing framework conclusion. R5-5 is hard-coded as True, and the runner imports the trace-default and unforced-beta-family claims as narrative rather than deriving them. The strict formula inventory also blocks a clean verdict: E(A)=e0Ae0+e1Ae1 is not, as written, a conditional expectation onto the center that produces the equal central-block state. Therefore the presented derivation does not close on its own terms under the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31`
+
+- **Note:** [`FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md`](../../docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded gap-reduction: the C3 local-density algebra and no-go non-obstruction are checked, but the physical single-summand readout remains an explicit open promotion premise.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-172441-702e20a0d9-flavor_generation_space_brid`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The 2/9 value survives only by refusing the signed global sum and selecting one intensive fixed-point local density as the physical flavor-asymmetry observable, which the note identifies with the existing open_gate lepton_brannen_bae_delta_two_ninths.  _(class `F`)_
+- **chain closes:** False — The finite C3 character arithmetic, Gamma_chi eigenspace split, commutators, and cancellation examples are algebraically consistent. The missing step is a retained-grade bridge theorem that licenses one local Lefschetz summand, rather than the vanishing signed global invariant, as the charged-lepton flavor-asymmetry observable.
+- **rationale:** Independent formula checks agree that (omega-1)(omega^2-1)=3, L3(1,2)=2/9, L3(1,1)=1/9, Gamma_chi has eigenvalues {1,-1,-1}, and the listed commutator/cancellation arithmetic is consistent. The runner computes finite algebraic identities, but its global-index and readout checks use toy paired spectra/sign lists and do not derive the physical generation-space identification or single-summand observable readout from the restricted packet. Because the note explicitly leaves that readout as the open_gate lepton_brannen_bae_delta_two_ninths, the bridge is conditional rather than closed.
+- **open / conditional deps cited:**
+  - `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS.md`
 - **auditor confidence:** high
 
 ### `flavor_hw1_staggered_projection_democratic_r0_2026-06-02`

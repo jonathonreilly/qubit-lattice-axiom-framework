@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
-runner_sha256: be23ae997ddfb8f13c14a628044f1fc3451325b948a6e0b5c568739306b18060
+runner_sha256: 214ca2b1cc7739980de24090f9fc39eaf8351ef53d7388cc4e43b1e4636e6baf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.10
+elapsed_sec: 0.78
 status: ok
 ----- stdout -----
 
@@ -12,6 +12,7 @@ Source-anchor checks
 ------------------------------------------------------------------------------
 PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md exists
 PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: character_path_channel_weight
+PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: supplied-normalization witness
 PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: normalized finite path/channel/character weight packet
 PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: Does not derive a directional path parameter
 PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
@@ -53,7 +54,7 @@ PASS character/path/channel row count is current snapshot :: 9
 PASS representative row present: architecture_note_directional_measure
 PASS representative row present: dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02
 PASS representative row present: wilson_action_surface_selector_real_positive_theorem_note_2026-05-25
-PASS audit ledger hash is unchanged :: 2dbfb4a7aa9f515d133e1884491d9d9a885365bff78e167ac695f312cd9dca13
+PASS audit ledger hash is unchanged :: b03fdf51751507ec217fc0312494c428bb8262ddf887b6de3c01be50a89fba5b
 
 Character/path/channel rows:
   architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
@@ -81,7 +82,7 @@ PASS Record-derived Born law flag is false
 PASS production dynamics derived flag is false
 PASS Record-derived physical arrow flag is false
 
-SUMMARY: PASS=47 FAIL=0
+SUMMARY: PASS=48 FAIL=0
 CHARACTER_PATH_CHANNEL_WEIGHT_ROWS=9
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE

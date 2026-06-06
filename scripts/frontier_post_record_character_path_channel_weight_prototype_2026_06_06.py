@@ -100,6 +100,7 @@ def source_anchor_checks() -> None:
         "docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md",
         [
             "character_path_channel_weight",
+            "supplied-normalization witness",
             "normalized finite path/channel/character weight packet",
             "Does not derive a directional path parameter",
             "Does not select or force a generation/Koide dial location.",

@@ -1,0 +1,20 @@
+loop_slug: character-path-channel-weight-scope-repair-20260606
+target: post_record_character_path_channel_weight_prototype_2026-06-06
+mode: science-fix
+started_from: origin/main
+branch: physics-loop/character-path-channel-weight-scope-repair-20260606
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: "Demote the source-note status to a finite supplied-normalization witness while preserving the exact runner checks."
+files_touched:
+  - docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md
+  - scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.txt
+blocker_from_current_audit: "Provide a retained derivation of the finite carrier and path/channel/character weight rule or physical selector from Record; otherwise keep the row scoped to supplied finite normalization semantics."
+result: "The source note now presents bounded-support finite supplied normalization; runner exits PASS=48 FAIL=0."
+audit_data_edited: false
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can route this PR for re-audit of the character/path/channel weight row."
+stop_condition: "Block complete; continue campaign with remaining conditional rows."

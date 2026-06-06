@@ -18,7 +18,9 @@ source and its cache.
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2736
+
+Initial pushed commit: `3710da157`.
 
 ## Local Review
 

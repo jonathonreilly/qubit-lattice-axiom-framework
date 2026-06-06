@@ -1,0 +1,20 @@
+loop_slug: family-lift-interface-scope-repair-20260606
+target: post_record_supplied_family_lift_certificate_interface_2026-06-06
+mode: science-fix
+started_from: origin/main
+branch: physics-loop/family-lift-interface-scope-repair-20260606
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: "Demote supplied family-lift authority to finite projective-ladder compatibility."
+files_touched:
+  - docs/POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md
+  - scripts/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.txt
+blocker_from_current_audit: "Supply or cite a retained or explicitly accepted family-lift rule authorizing leading_marker_is_one to pass through the family."
+result: "No family-lift authority is applied; the branch now certifies only finite ladder compatibility. Runner exits PASS=39 FAIL=0."
+audit_data_edited: false
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can route this PR for re-audit of the supplied family-lift interface row as bounded finite ladder compatibility."
+stop_condition: "Block complete; remaining progress needs new bridge theorems or accepted authorities."

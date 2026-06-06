@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_classical_semigroup_boundary_2026_06_06.py
+runner_sha256: b891830b12262a53cc5fc6bb88dd814f9aafcb93da18582cf4be79673371e263
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
 
 ========================================================================
 A finite record algebra has only permutation automorphisms
@@ -62,3 +70,6 @@ Scorecard
 ========================================================================
 PASS=21 FAIL=0
 FINDING: finite post-record algebras have only discrete reversible permutations and zero derivations. Nontrivial continuous dynamics, transition rates, and dial attractors live on supplied Markov/ensemble or append/action layers, not in Record alone.
+
+----- stderr -----
+

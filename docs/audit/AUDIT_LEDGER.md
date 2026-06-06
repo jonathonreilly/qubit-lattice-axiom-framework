@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 708 |
+| **retained_bounded** | 709 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1318 |
+| unaudited | 1317 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1118 |
+| `audited_clean` | 1119 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1625 |
+| `unaudited` | 1624 |
 
 | claim_type | count |
 |---|---:|
@@ -182,6 +182,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -2162,6 +2163,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`
   - `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
+
+### `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure-gauge two-time-slice temporal-gauge Wilson-plane bridge: reflection split plus nonnegative plane character kernel yields PSD integrated A_+^(2) reflected Gram on the stated bounded surfaces, with exact finite Z_N checks, U(1) Bessel plane-kernel certificate, and only structural/numeric support for nonabelian SU(N).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-233720-31de4c1f2e-axiom_first_reflection_posit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Inserting the positive plane-kernel decomposition exp(B0)=sum_a kappa_a phi_a(c0) overline{phi_a(c1)} with kappa_a >= 0 into the reflected integral gives G_IJ=sum_a kappa_a W_I(a) overline{W_J(a)} = W diag(kappa) W^dag, hence G is PSD.  _(class `A`)_
+- **chain closes:** True — The PSD conclusion follows algebraically from the nonnegative plane-kernel character expansion and Haar integration; normalization by Z is a positive scalar and does not affect PSD. The packet does not close full interacting SU(N) RP or the fermion sector, but those are explicitly outside this bounded claim.
+- **rationale:** All cited authorities are retained-grade or retained_bounded, and the load-bearing step is a genuine algebraic Gram-factorization closure rather than a renaming or numerical match. The runner source computes the finite Z_N Haar sums, U(1) positive-series Bessel bounds, manifest W diag(kappa) W^dag factorization, and a labeled SU(2) numerical sample rather than merely printing expected constants. The clean verdict applies only to the note's bounded pure-gauge bridge surface, not to the explicitly excluded full interacting SU(N) or fermion-sector RP theorem.
+- **auditor confidence:** medium
 
 ### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
 

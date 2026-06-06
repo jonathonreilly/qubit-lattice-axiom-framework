@@ -19,3 +19,11 @@ mergeable: MERGEABLE
 merge_state_status: UNSTABLE
 checks: "audit_pipeline in progress"
 ```
+
+Clean verification:
+
+```yaml
+mergeable: MERGEABLE
+merge_state_status: CLEAN
+checks: "audit_pipeline completed SUCCESS"
+```

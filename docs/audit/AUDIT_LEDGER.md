@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 193 |
+| **retained** | 194 |
 | **retained_no_go** | 209 |
 | **retained_bounded** | 699 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1287 |
+| unaudited | 1286 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1099 |
+| `audited_clean` | 1100 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 59 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1594 |
+| `unaudited` | 1593 |
 
 | claim_type | count |
 |---|---:|
@@ -918,6 +918,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stable_kernel_count_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stable_kernel_expected_frequency_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_supplied_concentration_certificate_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13963,6 +13964,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For K(i,j)=(1-alpha)delta_ij+alpha pi_j, the iterates satisfy p_t=pi+(1-alpha)^t(p0-pi), hence E[f_N]=pi+((1-(1-alpha)^N)/(N alpha))(p0-pi).  _(class `A`)_
 - **chain closes:** True — The kernel sends any row-law p to (1-alpha)p+alpha pi, so subtracting pi gives pK-pi=(1-alpha)(p-pi), which proves the displayed iterate by induction. Averaging the geometric series over t=0,...,N-1 gives the finite-N expected frequency formula with the stated factor.
 - **rationale:** The audited statement is a conditional finite-state Markov-kernel algebra identity over supplied inputs, not a derivation of the target prior, kernel, clock, Born law, concentration, or physical dynamics. The displayed identities have the correct sign, normalization, and geometric-series factor: the row-stochastic reset kernel preserves normalization and contracts p-pi by 1-alpha each event step. The runner source genuinely computes the kernel, iterates it, compares against the closed form, checks target dependence, and separately verifies the firewall text; it does not hard-code the contested formula as its only support. Within the bounded scope stated in the note, the chain closes.
+- **auditor confidence:** high
+
+### `post_record_supplied_concentration_certificate_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite supplied-law certificate semantics: for N=4 two-letter word laws, exact enumeration verifies law-scoped event bounds and shows expectation/marginal data alone do not transport concentration certificates.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-194719-6d9c9d9573-post_record_supplied_concent`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For finite post-record words, a law-scoped concentration certificate can be verified by exact enumeration, and count-dependent event probabilities agree with the count-law pushforward.  _(class `A`)_
+- **chain closes:** True — The finite probability calculations close directly from the supplied iid and correlated laws: both normalize and share expected counts and one-time marginals, while the extreme-imbalance event has probabilities 1/8 and 1 respectively. The certificate validity is therefore law-scoped and is not implied by expectation-only data.
+- **rationale:** The load-bearing step is finite algebra/probability enumeration over explicitly supplied laws, not an imported empirical comparator or a symbol renaming. An independent check gives iid extreme imbalance probability 2/16 = 1/8 and correlated extreme imbalance probability 1, while both laws have expected counts (2,2) and one-time marginals (1/2,1/2). The runner source performs the relevant enumeration and certificate-scope checks rather than merely printing constants, and the note's boundaries correctly prevent deriving probability or concentration from Record itself.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

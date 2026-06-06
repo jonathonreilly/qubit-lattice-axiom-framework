@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_supplied_concentration_certificate_interface_2026_06_06.py
+runner_sha256: aa336be6aab6de2221428e05899976fb929b7014bcb1a5ddb982b05235cf4218
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -65,3 +73,6 @@ SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE=TRUE
 LAW_SCOPE_REQUIRED=TRUE
 EXPECTATION_ONLY_CERTIFICATE_ACCEPTED=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

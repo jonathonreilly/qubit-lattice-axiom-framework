@@ -1,0 +1,64 @@
+loop_slug: post-record-audit-evidence-ladder-row-bucketing-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 13
+date: 2026-06-06
+branch: physics-loop/post-record-audit-evidence-ladder-row-bucketing-20260606
+base: physics-loop/post-record-conditional-audit-evidence-ladder-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2834"
+goal: |
+  Apply the post-record conditional audit evidence ladder as a read-only
+  scanner over current bounded/conditional-scope audit ledger rows.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: read-only ledger bucketing with hash preservation
+hard_residual_attacked: |
+  The audit lanes need a concrete row queue after the evidence ladder. This
+  block classifies rows by missing evidence type without touching generated
+  audit data or applying verdicts.
+files_touched:
+  - docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md
+  - scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-audit-evidence-ladder-row-bucketing-20260606/*
+runner_summary: "SUMMARY: PASS=39 FAIL=0"
+ledger_scope:
+  ledger_rows: 2775
+  scoped_rows: 1313
+  touched_rows: 249
+  audit_ledger_written: false
+bucket_counts:
+  finite_law_or_certificate_needed: 10
+  not_record_ladder_relevant: 1064
+  production_dynamics_needed: 6
+  record_type_support_only: 1
+  selector_or_dial_needed: 210
+  simulation_support_only: 22
+open_imports:
+  - "row-specific review of keyword bucket assignments"
+  - "independent audit remains required for verdicts"
+  - "PR is stacked on the evidence-ladder interface"
+no_go_routes:
+  - "row bucket => audit verdict"
+  - "simulation_support_only => calibrated p-value"
+  - "selector_or_dial_needed => forced dial"
+  - "read-only companion => audit data edit"
+review_findings: "local review clean: runner PASS=39 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: verified_pending_pr
+next_exact_action: |
+  Commit, push, open stacked PR against the evidence-ladder branch, verify PR
+  status, then pivot.
+stop_condition: |
+  Stacked PR opened, mergeability/check state recorded on the latest head, and
+  campaign pivots while runtime remains.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "row buckets are read-only triage; audit status remains independent-audit owned"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch classifies ledger rows read-only and does not edit audit data."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

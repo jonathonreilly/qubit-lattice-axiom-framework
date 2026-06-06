@@ -4,6 +4,8 @@
 
 Bounded-support / negative route-pruning block ready for stacked review.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2761
+
 ## Main Finding
 
 Record histories supply order, length, counts, prefixes, and arbitrary finite
@@ -20,6 +22,5 @@ normalization.
 
 ## Next Exact Action
 
-Open stacked PR against
-`physics-loop/record-instrument-kernel-interface-20260605`, then patch this
-loop pack with the PR URL.
+Campaign pivot: select the next ranked science lane while #2761 receives
+review/checks.

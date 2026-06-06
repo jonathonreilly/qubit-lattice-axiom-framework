@@ -5,7 +5,11 @@
 This block is based on `origin/main` and targets the `g_bare` normalization
 dependency on the staggered-Dirac realization gate.
 
-PR: pending.
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2803
+
+GitHub verification: open PR, base `main`, head
+`physics-loop/staggered-gbare-normalization-bridge-20260606`, merge state
+`UNSTABLE`.
 
 ## Intended Result
 
@@ -22,7 +26,7 @@ bijection is not load-bearing for the trace normalization.
 
 ## Next Action
 
-Commit, push, open PR, then continue campaign.
+Continue campaign: select the next live lane from the opportunity queue.
 
 ## Verification
 

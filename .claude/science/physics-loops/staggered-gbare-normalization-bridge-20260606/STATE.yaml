@@ -24,6 +24,6 @@ no_go_routes:
   - "V_3 trace surface is already unconditional on the current source surface."
 trace_gate_classification: upstream_support
 review_disposition: pass
-pr_status: "pending"
-next_exact_action: "Commit, push, open PR, then continue campaign."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2803"
+next_exact_action: "Continue campaign: select the next live lane from the opportunity queue."
 stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1293 |
+| unaudited | 1292 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
 | ~~audited_conditional~~ | 66 |
-| ~~audited_failed~~ | 12 |
+| ~~audited_failed~~ | 13 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,19 +64,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1097 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 56 |
+| `audited_failed` | 57 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1600 |
+| `unaudited` | 1599 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1329 |
 | `decoration` | 53 |
-| `meta` | 319 |
+| `meta` | 320 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 767 |
+| `positive_theorem` | 766 |
 
 | criticality | count |
 |---|---:|
@@ -1384,6 +1384,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_generation_koide_stable_location_index_2026-06-06` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `post_record_measure_weight_normalization_subdivision_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_selector_dial_bucket_subdivision_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -13879,6 +13880,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The same rational target vector can select different kernels under different supplied weight choices, so the target vector and loss weights are supplied rule data rather than consequences of the post-record words alone.  _(class `A`)_
 - **chain closes:** False — The exact rational score computation is correct for the displayed supplied-rule example. The broader Record-alone no-go does not close from this restricted packet because no Record axiom content or retained selection-rule authority is provided, and the runner hard-codes the absence/blocking flags rather than deriving them from Record.
 - **rationale:** Independent recomputation confirms the runner's finite rational witness: k4 wins under endpoint-heavy weights and k3 wins under second-coordinate-heavy weights for the same target. That proves weight dependence inside the supplied scoring rule, but not that Record cannot derive targets or weights in general. The no-go discipline check leaves open routes through a Record axiom statement, a retained bridge theorem, a canonical weighting convention, or a narrowed interface theorem not present in the packet.
+- **auditor confidence:** high
+
+### `post_record_selector_dial_bucket_subdivision_2026-06-06`
+
+- **Note:** [`POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md`](../../docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only the read-only row-bucket subdivision counts and firewall claims stated in the provided note and runner packet.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-193731-a869285960-post_record_selector_dial_bu`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the current ledger snapshot, the selector/dial rows subdivide into 105 Koide/generation, 77 stability/dynamics, 44 measure/weight/normalization, and 1 generic selector-rule row, totaling 227.  _(class `A`)_
+- **chain closes:** False — The presented count chain does not close: the runner's computed output reports 233 selector/dial rows with sub-bucket counts 103, 86, 43, and 1, while the note claims 227 rows with counts 105, 77, 44, and 1.
+- **rationale:** The runner source genuinely reads the audit ledger and recomputes row buckets, so the relevant load-bearing check is an internal count/subdivision consistency check rather than a physics derivation. The completed runner output records FAIL=2 and its computed counts contradict the source note's table and status certificate. The source code also prints some summary sub-counts as constants, but the earlier computed bucket listing and SELECTOR_DIAL_ROWS=233 expose the mismatch. Firewall flags pass, but they do not repair the failed subdivision count claim.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

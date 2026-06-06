@@ -1,0 +1,31 @@
+loop_slug: luders-pep-native-routing-20260606
+date: 2026-06-06
+branch: physics-loop/luders-pep-native-routing-20260606
+target_claim_id: luders_rule_from_composition_consistency_note_2026-05-20
+target_status: proposed_retained
+actual_current_surface_status: proposed_retained
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: true
+proposal_allowed_reason: "The branch wires the parent row to a native finite operator-algebra PEP/trace bridge, refreshes its cache, and excludes zero-probability conditioning events."
+active_route: native_pep_trace_bridge_plus_zero_probability_domain_guard
+files_touched:
+  - docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+  - docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  - logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt
+  - .claude/science/physics-loops/luders-pep-native-routing-20260606/*
+open_imports:
+  - "The (U1)-(U4) consistency framing remains a source input."
+  - "General uniqueness theory for all sequential products on arbitrary effect algebras is not reproven."
+  - "Broader Born-chain inputs remain separate."
+verification:
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py --force --push-mode none --allow-non-main"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py --check-only --allow-non-main"
+  - "git diff -- docs/audit | wc -l"
+next_exact_action: "Independent review/audit should evaluate whether the PEP/trace bridge and zero-domain guard satisfy the conditional blocker."
+stop_condition: "PR opened for review."

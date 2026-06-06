@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/ckm_small_from_record_readout_context_runner.py
+runner_sha256: 820e1166c3ee219348c86ec311f69e6dd5e2354f5e0f242079b88866e2011a3d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+========================================================================
+CKM SMALL vs PMNS LARGE FROM THE RECORD READOUT CONTEXT  [class A]
+========================================================================
+  [PASS] both CIRCULANT (shared C3) -> CKM is a PERMUTATION (|V| in {0,1}) [retained no-go]
+  [PASS] both DETECTED (corner readout, U_up=U_dn=I) -> CKM = IDENTITY permutation (refines the no-go to the identity)
+  [PASS] small registered deviation -> SMALL Cabibbo CKM (near identity)  (|V_us|^2=0.0498)
+  [PASS] CKM has NO trimaximal column (structural opposite of PMNS)
+  [PASS] PMNS (charged corner vs neutrino C3-singlet) has a TRIMAXIMAL column  (col=[2])
+  [PASS] PMNS is LARGE (off-diagonal entries O(1)), unlike CKM
+  [PASS] SAME readout context (both detected/corner) -> aligned/small CKM; DIFFERENT (corner vs C3) -> large PMNS with trimaximal column
+========================================================================
+TOTAL: PASS=7 FAIL=0
+VERDICT: small-CKM-vs-large-PMNS follows from the readout context -- both quarks detected (corner-recorded -> aligned -> small CKM, no column); the neutrino propagates (C3-recorded -> singlet -> trimaximal column -> large PMNS). Angles registered. Respects/refines the both-circulant permutation no-go.
+
+----- stderr -----
+

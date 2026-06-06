@@ -24,6 +24,19 @@ supplied, admitted, and blocked authority classes.
 | Target-vector firewall | no-go | blocked Record-derived targets/weights |
 | Admitted sample vector | exact-support | admitted observation sample |
 
+## Cited authority/cache packet
+
+The stack map is only a synthesis over the following one-hop authorities and
+their cached runner outputs:
+
+| Layer | Authority note | Cached runner | Branch-local status |
+|---|---|---|---|
+| Directed certificate examples | [`docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt) | exact-support |
+| Kernel-selection firewall | [`docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt) | no-go |
+| Supplied kernel selection rule | [`docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`](POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt) | exact-support |
+| Target-vector firewall | [`docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md`](POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt) | no-go |
+| Admitted sample vector | [`docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md`](POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt) | exact-support |
+
 ## Meaning
 
 Post-record words, counts, and samples are realized information. The stack

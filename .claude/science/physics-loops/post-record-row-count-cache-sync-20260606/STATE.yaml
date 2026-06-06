@@ -1,0 +1,55 @@
+loop_slug: post-record-row-count-cache-sync-20260606
+created_at: 2026-06-06
+mode: campaign_block
+target_status: exact-support
+active_route: post_record_current_snapshot_count_and_cache_sync
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_ids:
+  - post_record_audit_evidence_ladder_row_bucketing_2026-06-06
+  - post_record_selector_dial_bucket_subdivision_2026-06-06
+  - post_record_measure_weight_normalization_subdivision_2026-06-06
+  - post_record_stability_dynamics_selector_subdivision_2026-06-06
+  - post_record_flow_thermal_stable_setting_certificate_2026-06-06
+  - post_record_directed_certificate_examples_2026-06-06
+  - post_record_selector_tangent_readout_weight_prototype_2026-06-06
+  - post_record_dynamics_authority_stack_map_2026-06-06
+  - post_record_dynamics_campaign_closeout_index_2026-06-06
+  - post_record_dynamics_family_lift_closeout_index_2026-06-06
+files_touched:
+  - docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md
+  - docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md
+  - docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+  - docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md
+  - docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md
+  - docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md
+  - docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md
+  - docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md
+  - scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py
+  - scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
+  - scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+  - scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
+  - scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py
+  - scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
+  - scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
+  - scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py
+  - scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
+  - scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.txt
+docs_audit_touched: false
+checks:
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py,scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py,scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py,scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py,scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py,scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py,scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py,scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py,scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py,scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py --check-only"
+  - "git diff --check"
+  - "git diff --name-only -- docs/audit"
+next_exact_action: "Open the review PR, then rescan the current conditional backlog from origin/main for independent science-fix targets."
+stop_condition: "Stop this block after PR creation; continue campaign on the next independent repair target."

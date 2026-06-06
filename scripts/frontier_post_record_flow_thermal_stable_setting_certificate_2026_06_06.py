@@ -42,12 +42,13 @@ GENERATION_KOIDE_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "bounded_obstruction_or_no_selection": 15,
-    "flow_or_records_stable_feature": 3,
+    "bounded_obstruction_or_no_selection": 17,
+    "flow_or_records_stable_feature": 4,
     "generation_or_koide_stable_feature": 3,
-    "generic_stable_feature": 8,
-    "thermal_or_score_stable_feature": 17,
+    "generic_stable_feature": 13,
+    "thermal_or_score_stable_feature": 19,
 }
+EXPECTED_FLOW_THERMAL_ROWS = sum(EXPECTED_LANE_COUNTS.values())
 
 
 @dataclass(frozen=True)
@@ -151,6 +152,7 @@ def source_anchor_checks() -> None:
             "Stable setting is not selected dial.",
             "stable location on the dial is",
             "Does not select or force a generation/Koide dial location",
+            "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
         ],
     )
     require_text(
@@ -164,9 +166,17 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "stability_or_dynamics_selector` | 77",
+            "stability_or_dynamics_selector` | 90",
             "stable settings into selected dials",
             "Does not turn stable settings into selected dials.",
+        ],
+    )
+    require_text(
+        "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
+        [
+            "def stability_subbucket",
+            "flow_or_thermal_stability",
+            "EXPECTED_SUBCOUNTS",
         ],
     )
     require_text(
@@ -259,7 +269,7 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
         buckets[stable_lane(row)].append(row)
     counts = Counter({lane: len(items) for lane, items in buckets.items()})
 
-    report("flow/thermal stability row count is current snapshot", len(rows) == 46, str(len(rows)))
+    report("flow/thermal stability row count is current snapshot", len(rows) == EXPECTED_FLOW_THERMAL_ROWS, str(len(rows)))
     report("stable lane counts match expected", dict(counts) == EXPECTED_LANE_COUNTS, str(counts))
     report("stable lane counts sum to row count", sum(counts.values()) == len(rows), str(counts))
 

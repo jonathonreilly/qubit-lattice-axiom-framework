@@ -54,7 +54,7 @@ DOC_CHECKS = {
 
 LOG_CHECKS = {
     "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt": [
-        "SUMMARY: PASS=59 FAIL=0",
+        "SUMMARY: PASS=64 FAIL=0",
         "SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE",
     ],
     "logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt": [
@@ -111,6 +111,11 @@ def source_anchor_checks() -> None:
         "supplied, admitted, and blocked authority classes",
         "stable location is not selected dial",
         "post-record samples are realized information, not probability laws",
+        "Cited authority/cache packet",
+        "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md",
+        "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt",
+        "docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md",
+        "logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt",
     ]:
         report(f"self note contains: {needle}", needle in require_self)
 

@@ -52,6 +52,17 @@ COUNT_RE = re.compile(
     re.IGNORECASE,
 )
 
+EXPECTED_LEDGER_ROWS = 2920
+EXPECTED_BUCKET_COUNTS = {
+    "append_count_ready": 0,
+    "finite_law_or_certificate_needed": 10,
+    "not_record_ladder_relevant": 1077,
+    "production_dynamics_needed": 6,
+    "record_type_support_only": 0,
+    "selector_or_dial_needed": 237,
+    "simulation_support_only": 23,
+}
+
 
 def report(label: str, ok: bool, detail: str = "") -> None:
     global PASS, FAIL
@@ -186,14 +197,16 @@ def ledger_checks() -> tuple[list[dict], Counter[str]]:
 
     counts = Counter({bucket: len(items) for bucket, items in buckets.items()})
     touched = sum(v for k, v in counts.items() if k != "not_record_ladder_relevant")
-    report("ledger row count matches current map", len(rows) == 2825, str(len(rows)))
+    expected_counts = Counter(EXPECTED_BUCKET_COUNTS)
+    report("ledger row count matches current map", len(rows) == EXPECTED_LEDGER_ROWS, str(len(rows)))
     report("bounded/conditional scope count is at least prior map", len(scoped_rows) >= 1304, str(len(scoped_rows)))
     report("each scoped row gets one bucket", sum(counts.values()) == len(scoped_rows), str(counts))
+    report("expected bucket counts match current snapshot", counts == expected_counts, str(counts))
     report("touched ladder rows are nonempty", touched > 0, str(touched))
     report("selector/dial bucket nonempty", counts["selector_or_dial_needed"] > 0, str(counts["selector_or_dial_needed"]))
     report("production/dynamics bucket nonempty", counts["production_dynamics_needed"] > 0, str(counts["production_dynamics_needed"]))
     report("finite-law/certificate bucket nonempty", counts["finite_law_or_certificate_needed"] > 0, str(counts["finite_law_or_certificate_needed"]))
-    report("append/count or record-type support bucket nonempty", (counts["append_count_ready"] + counts["record_type_support_only"]) > 0)
+    report("append/count and record-type support buckets are current zero snapshot", counts["append_count_ready"] == 0 and counts["record_type_support_only"] == 0)
 
     required_rows = {
         "selector_or_dial_needed": "architecture_note_directional_measure",
@@ -209,8 +222,8 @@ def ledger_checks() -> tuple[list[dict], Counter[str]]:
 
     print()
     print("Bucket counts:")
-    for bucket, count in sorted(counts.items()):
-        print(f"  {bucket}: {count}")
+    for bucket in sorted(EXPECTED_BUCKET_COUNTS):
+        print(f"  {bucket}: {counts[bucket]}")
     print()
     for bucket in [
         "append_count_ready",

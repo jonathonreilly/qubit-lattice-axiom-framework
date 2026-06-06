@@ -16,7 +16,7 @@ LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
 MEASURE_RUNNER = ROOT / "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
 PASS = 0
 FAIL = 0
-EXPECTED_ROWS = 6
+EXPECTED_ROWS = 7
 
 
 def load_module(name: str, path: Path):
@@ -98,13 +98,23 @@ def source_anchor_checks() -> None:
             "selector_tangent_readout_weight",
             "finite readout/tangent weight certificate",
             "Does not derive a selector, tangent metric, Hessian",
+            "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
         ],
     )
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
-            "`selector_tangent_readout_weight` | 6",
+            "`selector_tangent_readout_weight` | 7",
             "selector/tangent readout-weight rows need a supplied readout/tangent bridge",
+        ],
+    )
+    require_text(
+        "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
+        [
+            "def measure_rows",
+            "def measure_lane",
+            "selector_tangent_readout_weight",
+            "EXPECTED_LANE_COUNTS",
         ],
     )
     require_text(

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 212 |
-| **retained_bounded** | 702 |
+| **retained_bounded** | 703 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1271 |
+| unaudited | 1270 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1110 |
+| `audited_clean` | 1111 |
 | `audited_conditional` | 70 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1578 |
+| `unaudited` | 1577 |
 
 | claim_type | count |
 |---|---:|
@@ -971,6 +971,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ring_monodromy_does_not_force_car_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_all_r_boundary_link_disk_theorem_note_2026-05-30` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -14832,6 +14833,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Since h[U] is anti-Hermitian, it is unitarily diagonalizable with eigenvalues i lambda_j, so T_odd T_even splits into 2x2 Hermitian blocks with determinant 1, trace 2+4(m^2+lambda_j^2), and eigenvalues exp(±2 asinh(sqrt(m^2+lambda_j^2))); the relabeling part is unitary conjugation invariance of determinant, spectrum, and trace.  _(class `A`)_
 - **chain closes:** True — The finite linear-algebra chain closes: independent checking gives h^dag=-h, the displayed T2(lambda) block has the stated signs, determinant, trace, and positive eigenvalues, and second quantization of positive contraction eigenvalues gives a positive many-body transfer. The relabeling result follows exactly from similarity invariance under permutation unitaries.
 - **rationale:** The runner source performs actual finite matrix construction and numerical checks rather than printing constants, and its PASS=7 output matches the stated surfaces. The clean verdict does not rest on the random samples alone: the modal anti-Hermitian-hop reduction independently supplies the arbitrary fixed-background finite proof within the note's stated scope. The source also explicitly excludes the full dynamical-gauge RP bridge and downstream P2/AC_phi_lambda conclusions, so those open items are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20`
+
+- **Note:** [`RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md`](../../docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-volume Gibbs/Radon-Nikodym density relative to the normalized trace on A_Lambda ~= M_{2^|Lambda|}(C), excluding rho_ref and Wilson/RP carrier bridges.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-202003-5ba6f68fd6-rp_rho_ref_radon_nikodym_com`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For self-adjoint H in A_Lambda, D_H = e^{-H}/tau_Lambda(e^{-H}) is positive with tau_Lambda(D_H)=1, and omega_H(O)=tau_Lambda(D_H O) is the trace-relative Radon-Nikodym density representation.  _(class `A`)_
+- **chain closes:** True — Once the accepted qubit-lattice finite matrix algebra and normalized trace are in scope, the result follows from finite-dimensional spectral calculus, faithfulness of the trace, and trace cyclicity. The rho_ref and Wilson/RP clauses are explicitly conditional downstream applications and are not consumed by the audited theorem.
+- **rationale:** The displayed quantitative identities reduce to finite matrix algebra: e^{-H} is strictly positive for self-adjoint H, Z_H=tau_Lambda(e^{-H}) is positive, tau_Lambda(D_H)=1, and Tr(e^{-H}O)=Tr(e^{-H/2} O e^{-H/2}) >= 0 for O>=0. The cited minimal-axiom authority is flagged as an accepted axiom premise, so it does not trigger a dependency downgrade. The runner source performs consistent finite matrix sanity checks and contains no hidden rho_ref, Wilson/RP, external comparator, or tuned numerical import.
 - **auditor confidence:** high
 
 ### `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02`

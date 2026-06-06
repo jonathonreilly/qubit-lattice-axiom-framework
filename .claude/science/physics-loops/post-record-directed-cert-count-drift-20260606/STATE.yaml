@@ -1,0 +1,20 @@
+loop: post-record-directed-cert-count-drift-20260606
+date: 2026-06-06
+branch: physics-loop/post-record-directed-cert-count-drift-20260606
+base: origin/main
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: repair_stale_directed_certificate_bucket_counts
+files_touched:
+  - scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
+  - docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md
+  - logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-directed-cert-count-drift-20260606/
+open_imports: []
+new_axioms: []
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Open review PR; after review landing the directed-certificate examples packet is re-audit ready."
+stop_condition: "Source/runner drift repaired for this block; campaign should pivot after PR creation."

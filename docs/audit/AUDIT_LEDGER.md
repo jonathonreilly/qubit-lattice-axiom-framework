@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 693 |
+| **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1319 |
+| unaudited | 1318 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1084 |
+| `audited_clean` | 1085 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1626 |
+| `unaudited` | 1625 |
 
 | claim_type | count |
 |---|---:|
@@ -895,6 +895,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `poisson_3d_self_field_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `poisson_exhaustive_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_born_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -13357,6 +13358,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source genuinely computes the finite 3D Poisson stencil and propagates with the computed field; it does not hard-code the reported observables or import contested values from another note. The closed scope is the stated finite/static harness, not continuum convergence, retardation, or a self-gravity bridge.
 - **rationale:** The included runner computes the load-bearing 3D field from the local stencil and then recomputes the downstream observables from that field. The cited upstream authority is retained_no_go, which is retained-grade under the rubric and is not used as an open physical bridge. The stdout supports the scoped claims: derived axial falloff without an imposed longitudinal factor, TOWARD shifts in all three families, F~M near 1, machine-precision Born behavior, and exact s=0 null behavior. This verdict is limited to the finite static runner scope and does not certify larger-lattice convergence or time-dependent causal-cone closure.
 - **auditor confidence:** medium
+
+### `poisson_backreaction_live_threshold_packet_note_2026-05-29`
+
+- **Note:** [`POISSON_BACKREACTION_LIVE_THRESHOLD_PACKET_NOTE_2026-05-29.md`](../../docs/POISSON_BACKREACTION_LIVE_THRESHOLD_PACKET_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite live assertion for scripts/backreaction_poisson_live_threshold_check.py on the declared G grid only: positive final deflection for every listed G and first listed escape < 1 at G=0.050.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-184414-8c422a67bc-poisson_backreaction_live_th`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the current finite Poisson self-gravity harness, TOWARD deflection is preserved on the tested G grid and detector escape crosses below one between G=0.020 and G=0.050; the first sub-unit escape point in the declared grid is G=0.050.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the grid, calls the included Poisson helper functions to build fields and propagate amplitudes, and asserts the finite sign and escape inequalities reported in stdout. The helper source is included and does not import a contested threshold or hard-code the table values.
+- **rationale:** The audited claim is explicitly bounded to the current finite harness and declared G grid, not to the archived G_crit claim or a continuum physical threshold. The runner computes the rows from the included propagation and self-field routines, then checks positive delta, escape > 1 at 0.011, 0.012, and 0.020, escape < 1 at 0.050, and first_subunit == 0.050. The provided stdout matches those inequalities, and the code path is computational rather than a mere printout or cross-note value import. The conclusion therefore closes at the bounded harness level.
+- **auditor confidence:** high
 
 ### `poisson_exhaustive_uniqueness_note`
 

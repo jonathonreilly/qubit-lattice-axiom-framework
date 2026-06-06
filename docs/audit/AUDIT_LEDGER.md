@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 700 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1331 |
+| unaudited | 1330 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 45 |
+| ~~audited_conditional~~ | 46 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1109 |
-| `audited_conditional` | 45 |
+| `audited_conditional` | 46 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1638 |
+| `unaudited` | 1637 |
 
 | claim_type | count |
 |---|---:|
@@ -120,7 +120,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 18 | `cpt_exact_note` | positive_theorem | critical | 1079 | 34.08 | `audited_clean` | **retained** |
 | 19 | `minimal_axioms_2026-04-11` | meta | critical | 1073 | 32.57 | `unaudited` | meta |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 666 | 32.38 | `unaudited` | unaudited |
-| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1015 | 31.49 | `unaudited` | unaudited |
+| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1015 | 31.49 | `audited_conditional` | ~~audited_conditional~~ |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 664 | 31.38 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 788 | 31.12 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 301 | 30.24 | `unaudited` | unaudited |
@@ -1244,6 +1244,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2118,6 +2119,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Because the finite anti-Hermitian staggered Dirac matrix anticommutes with epsilon, D^dag D commutes with epsilon and D bijects the positive-eigenvalue epsilon=+ and epsilon=- subspaces, so Tr(epsilon exp(-t D^dag D)) equals n_+ - n_- and is t-independent/integer-valued.  _(class `A`)_
 - **chain closes:** True — The core identity closes by finite-dimensional linear algebra: even periodicity makes epsilon flip on every nearest-neighbor hop, anti-Hermiticity gives a normal D, and D pairs all nonzero D^dag D eigenspaces across epsilon signs. The gauge-invariance and explicit-background checks are direct finite matrix/U(1) computations in the supplied runner source.
 - **rationale:** The cited minimal-axiom authority is explicitly flagged as an accepted axiom premise, and the retained cited authorities are not used for any open SME/anomaly identification. The runner source actually constructs the finite matrices, U(1) links, heat kernels, spectra, plaquettes, and Polyakov loops; it does not hard-code the contested trace values or compare to an external calibrated source. The source note is correctly narrowed to bounded finite trace support, with observed index zero and no claimed ABJ/cohomology/continuum bridge.
+- **auditor confidence:** high
+
+### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite lattice staggered-only two-step blocked reflection-positivity on the factorized/linear-span surface, using retained free/fixed-background staggered transfer positivity, determinant positivity, mixed Wilson kernel factorization, and a gauge-half norm-square bridge; excluding single-step RP, Wilson fermions, continuum OS reconstruction, and off-surface observables.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-225334-3ccc96e739-axiom_first_reflection_posit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For factorized two-step generators, the reflected form decomposes into an integral of positive mixed-kernel, determinant, gauge norm-square, and fixed-background fermion-transfer factors, so finite linear combinations are claimed PSD by polarization.  _(class `A`)_
+- **chain closes:** False — The free and fixed-background fermion transfer pieces are supported by genuine finite transfer-matrix computations, and the determinant/mixed-kernel signs are retained inputs. The full gauge-half bridge does not close because the cited Wilson OS Step 1 companion explicitly proves S_+ Theta-invariance only on time-symmetric configurations and says it does not derive the full U-integrated reflection-positivity inequality required by the abstract Cauchy-Schwarz lemma.
+- **rationale:** The runner source for C1-C6 does real finite-dimensional work: it constructs action-derived one-step and two-step transfer matrices, checks the decaying spectral channel, builds the Fock-space Gamma image, and verifies PSD OS Gram matrices without merely printing constants. However C7 is only a source-string/sign guard and does not prove the Wilson gauge-half bridge. The restricted packet still lacks a theorem applying the retained Cauchy-Schwarz norm-square hypotheses to the full Wilson plaquette gauge integration beyond the time-symmetric subcase admitted by the OS Step 1 note.
+- **open / conditional deps cited:**
+  - `GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`
+  - `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_kz_su3_beta6_convention_split_2026_06_06.py
+runner_sha256: 906055772006dbad0e96d49aade15e2a9a0769339964ce5885d15f17af5d815b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 K-Z SU(3) beta=6 convention-split checker
 actual_current_surface_status: no-go
 trace_class: negative_route_pruning
@@ -30,3 +38,6 @@ D. boundary
 
 SCORECARD: PASS=13 FAIL=0
 VERDICT: W_lift ~= 0.05 is supported by the source figure at plotted lambda=3, but not by the same figure at Wilson beta=6 under the paper's action coefficient. The K-Z external-lift route needs an explicit convention bridge or a repo-owned beta=6 reproduction.
+
+----- stderr -----
+

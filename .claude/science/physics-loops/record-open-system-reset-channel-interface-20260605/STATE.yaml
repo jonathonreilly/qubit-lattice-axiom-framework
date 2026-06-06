@@ -1,0 +1,32 @@
+loop_slug: record-open-system-reset-channel-interface-20260605
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 12
+current_goal: "Supply the exact open-system reset channel interface after the blank-sink regress no-go."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+active_route: "Stinespring/Kraus reset channel with environment carrying old state"
+hard_residual: "Physical Hamiltonian, bath, thermodynamic cost, finite-time rate, and boundary preparation remain open."
+branch: physics-loop/record-open-system-reset-channel-interface-20260605
+base_branch: physics-loop/record-blank-sink-preparation-regress-20260605
+stacked_on_pr: 2780
+files_touched:
+  - docs/RECORD_OPEN_SYSTEM_RESET_CHANNEL_INTERFACE_2026-06-05.md
+  - scripts/frontier_record_open_system_reset_channel_interface_2026_06_05.py
+  - logs/runner-cache/frontier_record_open_system_reset_channel_interface_2026_06_05.txt
+  - .claude/science/physics-loops/record-open-system-reset-channel-interface-20260605/
+open_imports:
+  - "Physical implementation of the reset channel."
+  - "Thermodynamic cost / bath model."
+  - "Finite-time rate and clock normalization."
+  - "Low-record boundary or environment refresh."
+no_go_routes:
+  - "Closed finite blank-sink preparation from arbitrary state."
+  - "Open reset destroys old memory for free."
+  - "Finite-rate semigroup derives exact reset endpoint."
+  - "Reset channel fixes a dial location."
+trace_gate_classification: upstream_support
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

@@ -1,0 +1,25 @@
+loop_slug: record-prior-stability-selector-20260605
+current_goal: "Record-prior stability selector over the finite Record alphabet."
+target_status: exact-support
+cycle_count: 1
+active_route: "finite invariant-prior plus stable Markov reset theorem"
+hard_residual: "physical dynamics/invariance premise selecting the actual generation-sector dial position s"
+files_touched:
+  - docs/RECORD_PRIOR_STABILITY_SELECTOR_2026-06-05.md
+  - scripts/frontier_record_prior_stability_selector_2026_06_05.py
+  - logs/runner-cache/frontier_record_prior_stability_selector_2026_06_05.txt
+  - .claude/science/physics-loops/record-prior-stability-selector-20260605/
+open_imports:
+  - "Supplied two-sector generation readout with dimensions (1,2)."
+  - "Physical choice of post-record atom symmetry vs pre-record microstate symmetry remains open."
+  - "PR 2708 and PR 2710 are stacked dependencies until reviewed/merged."
+no_go_routes:
+  - "Record alone cannot select a prior because the minimal axiom explicitly supplies no weighting, normalization, probability, dynamics, or occupancy rule."
+  - "Bare stability cannot select the dial position because every fixed pi_s admits the same reset-stability form."
+trace_gate_classification: direct_blocker_closure
+trace_reachability: partially_closes
+claim_status: exact-support
+review_findings: "local review pass; no subagents spawned because tool policy requires explicit user request for delegated/parallel agents"
+pr_status: pending
+next_exact_action: "Run local review, commit, push, and open a stacked PR against physics-loop/record-typing-audit-unlock-map-20260605."
+stop_condition: "Stop after PR creation for this coherent science block unless the user requests a continued campaign."

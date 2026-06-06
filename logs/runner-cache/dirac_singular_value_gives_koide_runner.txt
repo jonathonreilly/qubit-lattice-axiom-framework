@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/dirac_singular_value_gives_koide_runner.py
+runner_sha256: ef17020274b8146c373cd35f01a22bf513efb04175bead9449c92e609421619f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+========================================================================
+DIRAC (SINGULAR-VALUE) OPERATOR GIVES Q=2/3 AT OBSERVED MASSES [class A]
+========================================================================
+  [PASS] observed sqrt(m) are all positive (singular values, sign-blind)  ([0.715, 10.279, 42.153])
+  [PASS] physical (singular-value) Koide reading of observed masses gives Q=2/3  (Q=0.66666)
+  [PASS] implied r = (Q-1/3)*3/2 = 1/2 (the registered lepton value)  (r=0.5000)
+  [PASS] C3 circulant at r=1/2, Brannen phase: eigenvalues ALL POSITIVE  ([2.3794, 0.0404, 0.5802])
+  [PASS] => signed readout == singular-value readout there (distinction MOOT): both Q=2/3
+  [PASS] at a different delta the circulant has a NEGATIVE eigenvalue  ([1.8791, -0.3989, 1.5198])
+  [PASS] there signed (Q=2/3) and singular-value (Q!=2/3) DIVERGE -> the steelman's 'some sqrt(m)<0 at r=1/2' is delta-dependent, NOT a property of the observed masses  (signed=0.6667 |.|=0.4160)
+  [PASS] NO signed reading needed: the physical Dirac/singular-value masses give Q=2/3 at the registered (r=1/2, Brannen-delta) point
+  [PASS] the steelman's '12 routes -> r=1' is the DERIVATION of r (Berry/det/modulus); register-not-read: r is registered at 1/2 (observed), not derived -> 12-routes CONFIRMS non-derivability, consistent with registered (no contradiction)
+========================================================================
+TOTAL: PASS=9 FAIL=0
+VERDICT: the framework's Dirac (singular-value) operator gives Q=2/3 at the observed masses (all-positive sqrt(m), r=1/2). The signed-vs-singular pin is moot for the physical masses; the steelman's r=1 is the derivation of r, which register-not-read dissolves (r registered at 1/2).
+
+----- stderr -----
+

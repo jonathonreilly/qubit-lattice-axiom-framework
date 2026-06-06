@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 703 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1326 |
+| unaudited | 1325 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1113 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1633 |
+| `unaudited` | 1632 |
 
 | claim_type | count |
 |---|---:|
@@ -1272,6 +1272,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8997,6 +8998,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using {H,Γχ}=0 and Hv=λv, the two evaluations give λ⟨v|Γχ|v⟩=-λ⟨v|Γχ|v⟩, so since λ≠0, ⟨v|Γχ|v⟩=0.  _(class `A`)_
 - **chain closes:** True — The implication follows directly from Hermiticity, anti-commutation, and the nonzero eigenvalue hypothesis. The conversion from zero Γχ expectation to Q=2/3 is an explicit quadratic identity, with no external physics input needed.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the hypotheses stated in the note. The runner source performs symbolic matrix checks and explicit eigenvector checks rather than importing empirical masses, calibrated constants, or prior contested premises. No cited authority is needed for the main implication, and the note correctly limits the framework-realization question as open rather than claiming closure.
+- **auditor confidence:** high
+
+### `koide_aps_block_by_block_forcing_note_2026-04-21`
+
+- **Note:** [`KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic certificate: given the retained-bounded fixed-locus input (p,a,b)=(3,1,2) and assuming global PL S^3 x R / ABSS applicability, the displayed ABSS/Lefschetz arithmetic evaluates exactly to eta=2/9; the global PL/ABSS bridge and physical readout are not closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-231714-be3f4103ad-koide_aps_block_by_block_for`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the ABSS fixed-point formula, the sourced local inputs p=3 and weights (1,2) give eta = (1/3)(1/3 + 1/3) = 2/9.  _(class `A`)_
+- **chain closes:** False — The algebraic eta sum closes under the explicit ABSS/global-route hypothesis. The full ambient APS chain does not close from the restricted packet because the Cl(3)/Z^3 -> PL S^3 x R identification and global ABSS applicability remain unproved inputs.
+- **rationale:** The load-bearing arithmetic is a genuine algebraic check: for a primitive cube root zeta, zeta+zeta^2=-1 gives (zeta-1)(zeta^2-1)=3, so the two nontrivial k-terms are each 1/3 and the p=3 average is 2/9. The runner substantively computes the local matrix, spectrum, weights, and eta arithmetic, while its PL/O and homology prerequisite checks are hard-coded standard-input checks rather than a derivation of the global route. The cited cone-cap authorities explicitly do not identify the compactification with PL S^3 or supply global ABSS applicability, and the fixed-locus bridge also leaves that bridge open. Therefore the row is conditional, not clean.
+- **open / conditional deps cited:**
+  - `S3_CAP_UNIQUENESS_NOTE.md`
+  - `PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`
+  - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`

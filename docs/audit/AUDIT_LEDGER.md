@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 189 |
-| **retained_no_go** | 198 |
+| **retained_no_go** | 199 |
 | **retained_bounded** | 684 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1341 |
+| unaudited | 1340 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1068 |
+| `audited_clean` | 1069 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1648 |
+| `unaudited` | 1647 |
 
 | claim_type | count |
 |---|---:|
@@ -359,6 +359,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `dynamics_coupling_residual_classifier_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `dynamics_nontriviality_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `edge_deletion_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `edge_deletion_boundary_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `eigenvalue_anderson_phase_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -4943,6 +4944,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Diagonal record-preserving Hamiltonians such as H(g)=gP1 and H(x,y)=xA+yB commute with the record atoms for arbitrary scalar coefficients, while T=exp(-aH(g)) depends only on the product ag.  _(class `A`)_
 - **chain closes:** True — The commutators vanish identically for arbitrary symbolic g,x,y, H=0 also satisfies the preservation equations, and exp(-a g) gives the stated rate/coupling degeneracy. These finite counterexamples close the scoped preservation-only no-go without requiring an external dependency.
 - **rationale:** The load-bearing work is exact finite linear algebra, not a definition substitution or tuned numerical match. The no-go is scoped to preservation equations alone and explicitly leaves action, variational, minimality, normalization, and clock premises outside the claim. One runner label overstates that the particular x/y swap changes the spectrum; the code only checks matrix inequality and the source claim only needs coefficient-ratio freedom, so this is non-load-bearing for the audited result.
+- **auditor confidence:** high
+
+### `dynamics_nontriviality_selection_firewall_2026-06-06`
+
+- **Note:** [`DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md`](../../docs/DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Branch-local firewall: gauge-invariant-local Hermitian class membership by itself does not select a nonzero or unique Hamiltonian/action, coupling tuple, or lowest-order truncation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-a9c1100cc3-dynamics_nontriviality_selec`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The class contains H = 0 and is closed under real linear combinations of allowed Hermitian terms, so class membership alone cannot choose a unique nonzero Hamiltonian, coefficients, action shape, or truncation.  _(class `A`)_
+- **chain closes:** True — Zero and real-linear closure follow algebraically from Hermiticity and commutation/gauge-invariance predicates. A predicate satisfied by zero and by multiple distinct nonzero members cannot by itself select coefficients or uniqueness; additional selectors are outside this scoped no-go.
+- **rationale:** The load-bearing step is algebraic/set-theoretic rather than definitional or a tuned numerical match: 0 is Hermitian and commutes with any generator, and real linear combinations preserve Hermiticity and commutation. The finite matrix runner verifies representative instances and multiple allowed coupling choices; its source-anchor checks are only text sanity checks, not the core proof. The no-go discipline gate is satisfied only in the narrow branch-local scope, since the note explicitly leaves nontriviality, rate, variational, renormalization, empirical, and source/action selectors open.
 - **auditor confidence:** high
 
 ### `edge_deletion_boundary_note`

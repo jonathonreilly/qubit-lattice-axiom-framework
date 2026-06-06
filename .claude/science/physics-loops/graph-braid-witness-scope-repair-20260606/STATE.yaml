@@ -1,0 +1,19 @@
+loop_slug: graph-braid-witness-scope-repair-20260606
+branch: physics-loop/graph-braid-witness-scope-repair-20260606
+base: origin/main
+target_claim_id: graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "narrow quantified graph-braid claim to directly computed witnesses"
+files_touched:
+  - docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md
+  - scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py
+  - logs/runner-cache/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.txt
+open_imports:
+  - "Full all-L/infinite Z^3 exchange-generator theorem remains open."
+no_go_routes:
+  - "The current runner cannot prove the quantified exchange-generator bridge."
+next_exact_action: "Submit PR; reviewer/auditor decides whether narrowed witness packet clears the blocker."
+stop_condition: "Source artifact is honest at runner-backed witness scope."

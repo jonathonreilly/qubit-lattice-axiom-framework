@@ -8,9 +8,11 @@ Runner paired with
 
 Source-only proposal. Status authority: independent audit lane only.
 
-FIRST-QUANTIZED configuration-space statistics on the framework's Z^3 site
-graph. This runner verifies the two exact mathematical facts behind the
-{boson, fermion} dichotomy (anyons excluded) at the first-quantized level:
+Bounded graph-braid witness packet for the framework's Z^3 site graph route.
+This runner verifies finite reference-graph homology checks, L=3,4 cubic-box
+planarity/connectivity witnesses, and the elementary order-2 phase consequence.
+It does not prove the quantified all-L or infinite-Z^3 exchange-generator
+theorem.
 
   (A) GRAPH-BRAID H_1 / TORSION CLASSIFICATION.
       For a finite graph Gamma, build the Abrams DISCRETIZED unordered
@@ -40,25 +42,23 @@ graph. This runner verifies the two exact mathematical facts behind the
       For cubes of side L in {3, 4} of the Z^3 lattice site graph, networkx
       verifies (Kuratowski) NON-PLANARITY -- exhibiting an explicit K_{3,3}
       subdivision as the planarity counterexample -- and node-connectivity = 3
-      (3-connected). By the Ko-Park / HKRS theorems this places Z^3 in the
-      non-planar 3-connected class: H_1(UD_2) carries Z_2 torsion and the
-      exchange is +-1 only. (The 2x2x2 cube Q_3 is planar, which is exactly
-      why the claim requires L >= 3; this is checked as a contrast.)
+      (3-connected). These are graph witnesses only. They do not by themselves
+      establish the order-2 exchange generator for every L>=3 cube or the
+      infinite lattice. (The 2x2x2 cube Q_3 is planar; this is checked as a
+      contrast.)
 
 The H_1 computation is exact integral linear algebra (Smith normal form over
 Z via sympy); the planarity / connectivity checks are exact graph algorithms
 (networkx). No PDG value, scale, coupling, or fitted input enters.
 
 SCOPE (honest):
-  * This is FIRST-QUANTIZED configuration-space statistics for indistinguishable
-    particles on the Z^3 graph. It establishes {boson, fermion} (anyons
-    excluded) at THAT level. It does NOT select the sign (boson vs fermion is a
-    free 1D-rep choice). It does NOT by itself govern the framework's actual
-    SECOND-QUANTIZED gauge-coupled matter sector; that bridge is a separate,
-    open question (the retained-no-go statistics-agnostic note).
-  * Combined with the framework's RETAINED per-site dim-2 result (which excludes
-    the free/infinite-tower boson), the surviving first-quantized options are
-    {hard-core boson, fermion}.
+  * This is bounded witness support, not a full Z^3 graph-braid statistics
+    theorem.
+  * If a separate retained theorem establishes that the exchange class is an
+    order-2 torsion generator for the relevant Z^3 configuration spaces, then
+    the checked Hom(Z_2,U(1)) algebra restricts the exchange phase to +-1.
+  * This runner does not select boson vs fermion and does not govern the
+    framework's second-quantized gauge-coupled matter sector.
 
 PASS/FAIL counted per-check; exits 0 iff PASS_COUNT > 0 and FAIL_COUNT == 0.
 """
@@ -288,10 +288,10 @@ def classify_kuratowski(ce):
 
 def run_part_B():
     print("-" * 72)
-    print("(B) Z^3 site graph (cube of side L): NON-PLANAR (Kuratowski) "
-          "and 3-CONNECTED")
-    print("    => non-planar 3-connected class (Ko-Park / HKRS): Z_2 torsion, "
-          "exchange +-1 only.")
+    print("(B) Z^3 cubic-box witnesses for side L in {3,4}: NON-PLANAR "
+          "(Kuratowski) and 3-CONNECTED")
+    print("    These checks do not prove the all-L or infinite-lattice "
+          "exchange-generator theorem.")
     print("-" * 72)
 
     for L in (3, 4):
@@ -317,13 +317,12 @@ def run_part_B():
             f"node_connectivity={conn}",
         )
 
-    # Contrast: the 2x2x2 cube graph Q_3 IS planar -- this is exactly why the
-    # claim requires L >= 3 (the framework's Z^3 is the infinite lattice / any
-    # cube of side >= 3, never the degenerate 2x2x2 box).
+    # Contrast: the 2x2x2 cube graph Q_3 IS planar. This prevents reading the
+    # finite witness checks as a blind all-cube theorem.
     Q3 = nx.hypercube_graph(3)
     planarQ, _ = nx.check_planarity(Q3)
     check(
-        "(B) contrast: 2x2x2 cube Q_3 IS planar (why L >= 3 is required)",
+        "(B) contrast: 2x2x2 cube Q_3 IS planar (finite witness boundary)",
         planarQ is True,
         f"planar={planarQ}, node_connectivity={nx.node_connectivity(Q3)}",
     )
@@ -335,13 +334,12 @@ def run_part_B():
 
 def main() -> int:
     print("=" * 72)
-    print("GRAPH-BRAID Z^3 ANYON-EXCLUSION DICHOTOMY (first-quantized)")
+    print("GRAPH-BRAID Z^3 ANYON-EXCLUSION WITNESS PACKET")
     print("Note: GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_"
           "NOTE_2026-05-29.md")
-    print("Claim: Z^3 site graph is non-planar 3-connected => H_1(UD_2) has "
-          "Z_2 torsion")
-    print("       => first-quantized exchange phase is +-1 only "
-          "{boson, fermion}; anyons EXCLUDED.")
+    print("Claim: finite graph-braid witnesses plus Hom(Z_2,U(1)) sign-phase "
+          "algebra")
+    print("       no all-L or infinite-Z^3 exchange-generator theorem is proven here.")
     print("=" * 72)
 
     run_part_A()
@@ -351,16 +349,12 @@ def main() -> int:
     print(f"SCORECARD: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     if FAIL_COUNT == 0 and PASS_COUNT > 0:
         print(
-            "VERDICT: At the FIRST-QUANTIZED configuration-space level, the Z^3 "
-            "site graph is non-planar and 3-connected, so its graph-braid "
-            "group B_2 abelianizes with a Z_2 torsion summand carrying the "
-            "two-particle exchange; abelian statistics Hom(H_1, U(1)) sends the "
-            "exchange to +-1 ONLY -> {boson, fermion}, continuous ANYONS "
-            "EXCLUDED. Combined with the retained per-site dim-2 result "
-            "(free/infinite-tower boson excluded), the surviving first-"
-            "quantized matter statistics is {hard-core boson, fermion}. This "
-            "does NOT select boson vs fermion and does NOT settle the open "
-            "second-quantized gauge-coupled bridge."
+            "VERDICT: bounded witness packet only. Exact UD_2 homology checks "
+            "show Z_2 torsion for K_5 and K_{3,3}; L=3,4 cubic boxes are "
+            "non-planar and 3-connected graph witnesses; Hom(Z_2,U(1)) gives "
+            "sign phases for an already-established order-2 class. This runner "
+            "does not prove the quantified all-L or infinite-Z^3 exchange-"
+            "generator theorem."
         )
         print("=" * 72)
         return 0

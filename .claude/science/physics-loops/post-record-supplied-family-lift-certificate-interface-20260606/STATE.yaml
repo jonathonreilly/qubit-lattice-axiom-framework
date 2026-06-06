@@ -1,0 +1,60 @@
+loop_slug: post-record-supplied-family-lift-certificate-interface-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 35
+date: 2026-06-06
+branch: physics-loop/post-record-supplied-family-lift-certificate-interface-20260606
+base: physics-loop/post-record-finite-to-unbounded-family-lift-nogo-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2874"
+goal: |
+  Provide the exact-support interface that reopens the finite-to-unbounded route
+  when a family-lift rule is supplied.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: supplied family-lift certificate interface
+files_touched:
+  - docs/POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md
+  - scripts/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-supplied-family-lift-certificate-interface-20260606/*
+runner_summary: "SUMMARY: PASS=38 FAIL=0"
+interface_results:
+  post_record_supplied_family_lift_certificate_interface: true
+  ladder_levels: 4
+  supplied_projections_commute: true
+  stable_predicate: leading_marker_is_one
+  density_used_as_stable_lift: false
+  supplied_family_lift_rule: true
+  family_lift_derived_from_record: false
+open_imports:
+  - "family-lift rule is supplied, not derived"
+  - "independent audit remains required before effective retained interpretation"
+no_go_routes:
+  - "family-lift rule derived from Record alone"
+  - "density limit smuggled through an unstable finite ladder"
+  - "unbounded retained authority applied inside this branch"
+review_findings: "local review clean: runner PASS=38 FAIL=0; py_compile clean; cached summary present; overclaim/firewall grep clean; loop pack has 13 files; git diff --check clean"
+pr_status: not_opened
+pr_url: null
+pr_number: null
+cycle_status: review_clean
+mergeable: null
+merge_state_status: null
+checks: null
+next_exact_action: |
+  Commit, push, open a stacked PR, and verify GitHub status.
+stop_condition: |
+  Satisfied when the stacked PR is open, mergeable/clean or settled with
+  recorded CI status, and the 12-hour campaign clock is exhausted or closeout is
+  complete.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "supplied family-lift rule admits a finite projective ladder certificate"
+  hypothetical_axiom_status: "a family-lift axiom could supply this rule but would still need audit"
+  admitted_observation_status: "finite ladder levels remain realized records, not a probability law"
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch checks a supplied family-lift interface and does not derive or apply unbounded retained authority."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

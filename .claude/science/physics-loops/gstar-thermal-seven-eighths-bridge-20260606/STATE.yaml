@@ -1,0 +1,34 @@
+loop_slug: gstar-thermal-seven-eighths-bridge-20260606
+date: 2026-06-06
+branch: physics-loop/gstar-thermal-seven-eighths-bridge-20260606
+target_claim_id: g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28
+target_status: proposed_retained
+actual_current_surface_status: proposed_retained
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: true
+proposal_allowed_reason: "The branch supplies the direct Stefan-Boltzmann 7/8 bridge, refreshes caches, and clarifies which SM counts are supplied premises."
+active_route: thermal_integral_fermion_boson_ratio_plus_inventory_premise_discipline
+files_touched:
+  - docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py
+  - docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
+  - scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py
+  - logs/runner-cache/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.txt
+  - logs/runner-cache/frontier_g_star_sm_content_from_supplied_thermal_inventory.txt
+  - .claude/science/physics-loops/gstar-thermal-seven-eighths-bridge-20260606/*
+open_imports:
+  - "Standard Model particle inventory remains supplied by P1-P5."
+  - "Thermal equilibrium, chemical-potential assumptions, and decoupling thresholds remain premise-surface inputs."
+  - "Downstream cosmology claims consuming g_* remain separate."
+verification:
+  - "python3 scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py,scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py --force --push-mode none --allow-non-main"
+next_exact_action: "Independent review/audit should decide whether the direct thermal 7/8 bridge and premise discipline satisfy the blocker."
+stop_condition: "PR opened for review."

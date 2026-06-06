@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 688 |
+| **retained_bounded** | 689 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1325 |
+| unaudited | 1324 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1079 |
+| `audited_clean` | 1080 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1632 |
+| `unaudited` | 1631 |
 
 | claim_type | count |
 |---|---:|
@@ -669,6 +669,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9972,6 +9973,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The readout map is exactly L(u,v,w,z)=diag(u,v,w), with the z slot mapped to zero.  _(class `A`)_
 - **chain closes:** True — Given the stated single-slot images, the rank, kernel, image, fiber, and quotient claims follow by elementary linear algebra. The broader selector-admissibility factorization is explicitly excluded from the theorem under audit.
 - **rationale:** The bounded claim is a direct algebraic closure from the explicitly defined map and its computed matrix L = [[1,0,0,0],[0,1,0,0],[0,0,1,0]]. The runner source does instantiate the relevant projectors and Γ_1 action to check the stated single-slot images, then verifies the kernel, quotient fibers, covariance, and invariant quadratic family. The note cleanly separates the unproved admissibility-implies-constancy statement as conditional, so that open extension does not contaminate the bounded theorem.
+- **auditor confidence:** high
+
+### `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25`
+
+- **Note:** [`KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Assuming the retained C_3 circulant eigenvalue algebra and the scoped equal-weight Frobenius extremum a^2 = 2 |b|^2, with nonzero denominator, the signed algebraic ratio Q_alg(lambda) equals 2/3; positive-vector Koide interpretation is only chamber-limited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-183421-023f7504d9-koide_q_two_thirds_frobenius`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At the scoped equal-weight Frobenius extremum a^2 = 2 |b|^2, the Fourier identities give lambda_0^2 + lambda_1^2 + lambda_2^2 = 6 a^2 and (lambda_0 + lambda_1 + lambda_2)^2 = 9 a^2, hence Q_alg(lambda) = 2/3.  _(class `A`)_
+- **chain closes:** True — The eigenvalue formula independently gives sum lambda_k = 3a and sum lambda_k^2 = 3a^2 + 6|b|^2 by root-of-unity cancellation. Substituting the retained scoped extremum a^2 = 2|b|^2 gives Q_alg = 6a^2/9a^2 = 2/3 for a != 0.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs, not a definition, renaming, numerical fit, or external comparator. The runner source computes the rational formula from the stated Fourier/Frobenius identities and includes non-extremal and positivity-boundary controls. The source note keeps the canonical physical Frobenius-weighting question, positive-spectrum readout, and charged-lepton identification outside the audited conclusion.
 - **auditor confidence:** high
 
 ### `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10`

@@ -2,7 +2,7 @@ loop_slug: post-record-model-selection-firewall-20260606
 branch: physics-loop/post-record-model-selection-firewall-20260606
 base: origin/main
 campaign: dynamics lanes
-cycle_status: verified_pending_pr
+cycle_status: pr_open_initial_unstable_queued_check
 target_status: no-go
 actual_current_surface_status: no-go
 trace_class: negative_route_pruning
@@ -35,11 +35,15 @@ trace_gate:
   artifact_role: no_go
 review_findings: "Local review found no overclaim: the branch is a negative route-pruning result and preserves conditional scoring under supplied selection rules."
 pr_status:
-  url: null
-  number: null
-  mergeable: null
-  checks: null
-next_exact_action: "Commit, push, open PR, and patch PR status."
-stop_condition: "Block closes when PR is open and verified or PR backlog records exact failure."
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2826
+  number: 2826
+  state: OPEN
+  base: main
+  head: physics-loop/post-record-model-selection-firewall-20260606
+  mergeable: MERGEABLE
+  merge_state_status: UNSTABLE
+  checks: "audit_pipeline queued at first verification"
+next_exact_action: "Commit and push PR status patch; recheck PR after audit_pipeline completes and patch final clean/dirty status."
+stop_condition: "Block closes when PR final GitHub state is recorded or PR backlog records exact failure."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false

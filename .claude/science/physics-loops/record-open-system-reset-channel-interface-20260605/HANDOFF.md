@@ -5,6 +5,8 @@
 Bounded-support / open-system reset channel interface block ready for stacked
 review. This block is stacked on PR #2780.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2781
+
 ## Intended Result
 
 The Stinespring map `V|x> = |0>|x>` is an isometry. Tracing the environment
@@ -27,5 +29,5 @@ Checks:
 
 ## Next Action
 
-Commit, push, open a stacked PR, and then decide whether to attempt physical
-implementation or pivot to another high-value lane.
+Attempt physical implementation/rate boundary or pivot to another high-value
+dynamics lane.

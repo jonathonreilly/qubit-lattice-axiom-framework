@@ -1,0 +1,31 @@
+loop_slug: record-history-count-audit-unlock-20260605
+campaign: "12h physics-loop campaign down framework lanes"
+campaign_started_utc: "2026-06-06T01:39:56Z"
+campaign_deadline_utc: "2026-06-06T13:39:56Z"
+current_goal: "History/count audit-unlock support map."
+target_status: bounded-support
+cycle_count: 2
+active_route: "row-by-row support classification for history/count/coarse-graining citations"
+hard_residual: "audit verdicts, probability/source-action/instrument gates, production dynamics, carrier dynamics, and dial selection remain outside scope"
+branch: physics-loop/record-history-count-audit-unlock-20260605
+base_branch: physics-loop/record-finite-alphabet-dynamics-20260605
+files_touched:
+  - docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md
+  - scripts/frontier_record_history_count_audit_unlock_scan_2026_06_05.py
+  - logs/runner-cache/frontier_record_history_count_audit_unlock_scan_2026_06_05.txt
+  - .claude/science/physics-loops/record-history-count-audit-unlock-20260605/
+open_imports:
+  - "Independent audit lane owns all verdict/status changes."
+  - "Rows needing probability/source-action/instrument or carrier dynamics remain blocked."
+  - "No old P1 direct-dependent migration is authorized by this support map."
+no_go_routes:
+  - "Do not edit docs/audit/data or apply audit verdicts."
+  - "Do not auto-promote rows that only become citation-ready."
+  - "Do not treat finite history/count support as record-production dynamics."
+trace_gate_classification: upstream_support
+trace_reachability: supports
+claim_status: bounded-support
+review_findings: "local review pass; runner PASS=67 FAIL=0; no audit data edits; status-language table label narrowed"
+pr_status: pending
+next_exact_action: "Run scan runner/checks, local review, commit, push, open stacked PR, then continue campaign queue."
+stop_condition: "Do not stop campaign after this block while runtime remains."

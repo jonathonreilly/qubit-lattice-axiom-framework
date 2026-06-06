@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_markov_generator_premise_classifier_2026_06_06.py
+runner_sha256: dd232cb1dc1d8de08a5bc1019a726b327420ec03d2b0203447d70f19b404c180
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
 Record Markov-generator premise classifier
 actual_current_surface_status: exact-support
 trace_class: direct_blocker_closure
@@ -35,3 +43,6 @@ C. boundary firewalls
 
 SCORECARD: PASS=22 FAIL=0
 VERDICT: exact support for a record-dynamics premise classifier. Post-record information, stochastic production kernels, Markov generators, clock intervals, rate units, and Born/IID bridges are separate gates.
+
+----- stderr -----
+

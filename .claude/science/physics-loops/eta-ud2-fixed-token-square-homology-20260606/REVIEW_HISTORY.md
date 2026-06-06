@@ -26,3 +26,16 @@ Findings:
 
 Disposition: branch-local exact-support / negative-route-pruning artifact is
 ready for stacked PR packaging.
+
+## PR Verification
+
+PR #2815:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2815
+```
+
+Verified open, base
+`physics-loop/eta-holonomy-base-flux-scope-boundary-20260606`, head
+`physics-loop/eta-ud2-fixed-token-square-homology-20260606`, mergeable
+`MERGEABLE`, merge state `UNSTABLE` with `audit_pipeline` queued.

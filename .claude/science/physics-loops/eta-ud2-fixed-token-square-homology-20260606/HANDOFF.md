@@ -16,7 +16,17 @@ physics-loop/eta-holonomy-base-flux-scope-boundary-20260606
 
 Parent PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2805
 
-PR for this block: pending.
+PR for this block:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2815
+```
+
+GitHub verification: open PR, base
+`physics-loop/eta-holonomy-base-flux-scope-boundary-20260606`, head
+`physics-loop/eta-ud2-fixed-token-square-homology-20260606`, mergeable
+`MERGEABLE`, merge state `UNSTABLE` with `audit_pipeline` queued at
+verification.
 
 ## Intended Result
 
@@ -32,5 +42,4 @@ null-homotopic in that model.
 
 ## Next Action
 
-Run verification, open a stacked PR, record PR state, then continue the
-campaign.
+Continue the campaign on the next ranked lane.

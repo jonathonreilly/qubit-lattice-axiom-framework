@@ -12,7 +12,7 @@ Files:
 
 Runner result: `PASS=51 FAIL=0`.
 
-Stacked PR: pending.
+Stacked PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2749
 
 ## Main finding
 
@@ -31,4 +31,5 @@ host a color `3` through `Sym^2(C^2)`, but the projection/constraint and
 
 ## Next exact action
 
-Commit, push, and open a stacked PR.
+Continue campaign queue; likely next route is graph-canonical two-qubit
+endpoint projection or chirality/left-right residual.

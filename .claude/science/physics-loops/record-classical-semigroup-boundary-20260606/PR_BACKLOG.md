@@ -1,8 +1,14 @@
 # PR Backlog
 
-PR not created yet.
+PR created and verified:
 
-Planned PR:
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2795
+- Base: `main`
+- Head: `physics-loop/record-classical-semigroup-boundary-20260606`
+- State: open
+- Merge state at verification: `UNSTABLE`
+
+Creation command:
 
 ```bash
 gh pr create \

@@ -5,6 +5,12 @@
 Checks passed. This block is based on `origin/main` and targets the finite
 post-record classical semigroup boundary.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2795
+
+GitHub verification: open PR, base `main`, head
+`physics-loop/record-classical-semigroup-boundary-20260606`, merge state
+`UNSTABLE`.
+
 ## Intended Result
 
 Finite post-record algebras have only permutation automorphisms and zero
@@ -19,7 +25,7 @@ Markov/rate/dial-attractor dynamics requires a supplied generator.
 
 ## Next Action
 
-Commit, push, open PR, then continue campaign.
+Continue campaign: select next high-leverage dynamics/open-lane block.
 
 ## Verification
 

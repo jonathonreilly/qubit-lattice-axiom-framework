@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 699 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1286 |
+| unaudited | 1285 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 67 |
+| ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,21 +62,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1100 |
-| `audited_conditional` | 67 |
+| `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 59 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1593 |
+| `unaudited` | 1592 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1331 |
 | `decoration` | 53 |
-| `meta` | 321 |
+| `meta` | 322 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 763 |
+| `positive_theorem` | 762 |
 
 | criticality | count |
 |---|---:|
@@ -1290,6 +1290,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_dynamics_authority_stack_map_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_selection_rule_target_vector_firewall_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_supplied_family_lift_certificate_interface_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13977,6 +13978,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For finite post-record words, a law-scoped concentration certificate can be verified by exact enumeration, and count-dependent event probabilities agree with the count-law pushforward.  _(class `A`)_
 - **chain closes:** True — The finite probability calculations close directly from the supplied iid and correlated laws: both normalize and share expected counts and one-time marginals, while the extreme-imbalance event has probabilities 1/8 and 1 respectively. The certificate validity is therefore law-scoped and is not implied by expectation-only data.
 - **rationale:** The load-bearing step is finite algebra/probability enumeration over explicitly supplied laws, not an imported empirical comparator or a symbol renaming. An independent check gives iid extreme imbalance probability 2/16 = 1/8 and correlated extreme imbalance probability 1, while both laws have expected counts (2,2) and one-time marginals (1/2,1/2). The runner source performs the relevant enumeration and certificate-scope checks rather than merely printing constants, and the note's boundaries correctly prevent deriving probability or concentration from Record itself.
+- **auditor confidence:** high
+
+### `post_record_supplied_family_lift_certificate_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Finite four-level binary ladder certificate under supplied truncation projections, with stable leading-marker predicate and nonconstant density, without unbounded retained authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-195201-47e39563f1-post_record_supplied_family_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under truncation projections pi_n(C_{n+1})=C_n, the supplied predicate leading_marker_is_one(C_n)=true is stable across C1 through C4 while prefix density is not stable.  _(class `A`)_
+- **chain closes:** False — The finite projection and predicate arithmetic closes on the displayed ladder. The family-lift rule itself is supplied and not derived or cited as a retained or accepted premise, so the broader lift authority remains missing.
+- **rationale:** Independent formula inventory confirms the displayed finite checks: truncating C2, C3, and C4 gives C1, C2, and C3; all four words have leading entry 1; the densities are 1, 1/2, 2/3, and 3/4 and are nonconstant. The runner source genuinely computes these finite checks on the hard-coded ladder rather than merely printing a pass summary. However, the family-lift rule is a hard-coded supplied premise with no cited retained authority or accepted axiom premise in the restricted packet, so the audit supports only the conditional finite interface.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

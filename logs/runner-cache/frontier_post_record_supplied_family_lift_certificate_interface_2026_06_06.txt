@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.py
+runner_sha256: 88c211aade32c14c7d403e3378149c5d2adaadf688c817ad4f6010cf6bb91428
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Ladder shape
@@ -67,3 +75,6 @@ SUPPLIED_FAMILY_LIFT_RULE=TRUE
 FAMILY_LIFT_DERIVED_FROM_RECORD=FALSE
 UNBOUNDED_RETAINED_AUTHORITY_APPLIED=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

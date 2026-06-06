@@ -77,6 +77,10 @@ def read(rel: str) -> str:
     raise FileNotFoundError(path)
 
 
+def compact(text: str) -> str:
+    return "".join(text.split())
+
+
 def part1_axiom_means_only_cl3_on_z3() -> None:
     print("\n" + "=" * 88)
     print("PART 1: FRAMEWORK AXIOM MEANS ONLY Cl(3) ON Z^3")
@@ -136,11 +140,14 @@ def part3_the_exact_source_carrier_closes_the_even_leg() -> None:
 
     v_even = np.array([0.7, -0.2], dtype=float)
     m = np.column_stack([v_even, v_even])
+    primitive_compact = compact(primitive)
 
     check(
         "The exact source carrier treats the two bright columns symmetrically as u_E and u_T",
-        "K_R(q) = [[u_E(q), u_T(q)], [delta_A1(q)u_E(q), delta_A1(q)u_T(q)]]".replace(" ", "")
-        in primitive.replace(" ", ""),
+        "K_R(q):=[[u_E(q),u_T(q)],[delta_A1(q)u_E(q),delta_A1(q)u_T(q)]]"
+        in primitive_compact
+        or "K_R(q)=[[u_E(q),u_T(q)],[delta_A1(q)u_E(q),delta_A1(q)u_T(q)]]"
+        in primitive_compact,
     )
     check(
         "The swap-reduction theorem records the exact common-column form M_even = v_even [1,1]",
@@ -162,7 +169,8 @@ def part3_the_exact_source_carrier_closes_the_even_leg() -> None:
     )
     check(
         "The source-side carrier still factors through the symmetric row mode only",
-        "bounded linear readout" in primitive and "exact carrier" in primitive,
+        "tau_+ = tau_E + tau_T" in reduction
+        and "M_even [1,-1]^T = 0" in reduction,
     )
 
 

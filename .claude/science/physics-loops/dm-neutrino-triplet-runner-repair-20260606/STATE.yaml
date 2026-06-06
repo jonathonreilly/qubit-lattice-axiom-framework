@@ -1,0 +1,20 @@
+loop_slug: dm-neutrino-triplet-runner-repair-20260606
+mode: campaign_block
+date: 2026-06-06
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: dm_neutrino_weak_triplet_coefficient_axiom_boundary_note_2026-04-15
+target_blocker_text: "replace stale absolute-path reads with repository-local retained dependencies and rerun the coefficient-normalization checks end to end"
+files_touched:
+  - archive_unlanded/dm-neutrino-stale-runners-2026-04-30/DM_NEUTRINO_WEAK_TRIPLET_COEFFICIENT_AXIOM_BOUNDARY_NOTE_2026-04-15.md
+  - scripts/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.py
+  - logs/runner-cache/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.txt
+open_imports:
+  - "Benchmark/source-amplitude closure remains open."
+  - "Archived note remains non-retained pending independent re-audit."
+review_disposition: pass_local_checks_reviewer_owned
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: "Open a review PR, then continue scanning the latest conditional/failed backlog."

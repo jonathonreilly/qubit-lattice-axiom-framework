@@ -46533,6 +46533,18 @@
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
     },
+    "ai_methodology.skills.exercise.skill": {
+      "claim_id": "ai_methodology.skills.exercise.skill",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": null,
+      "claim_type_seed_hint": null,
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "7b659670a6de206e885f770c2d5bdc5c221b12e90363dda00341640b1db41332",
+      "path": "docs/ai_methodology/skills/exercise/SKILL.md",
+      "runner_path": null,
+      "title": "Exercise"
+    },
     "ai_methodology.skills.methodology-paper-synthesizer.skill": {
       "claim_id": "ai_methodology.skills.methodology-paper-synthesizer.skill",
       "claim_type_author_hint": null,
@@ -98192,6 +98204,7 @@
     "ai_methodology.repo_trajectory_and_governance_evidence_2026-04-25",
     "ai_methodology.skills.ai-physics-lane-builder.skill",
     "ai_methodology.skills.audit-loop.references.nature-grade-rubric",
+    "ai_methodology.skills.exercise.skill",
     "ai_methodology.skills.methodology-paper-synthesizer.skill",
     "ai_methodology.skills.no-go-discipline.references.case-studies",
     "ai_methodology.skills.physics-claim-reviewer.skill",
@@ -99134,7 +99147,7 @@
       "decoration": 1,
       "meta": 269,
       "no_go": 132,
-      "none": 1487,
+      "none": 1488,
       "open_gate": 76,
       "positive_theorem": 190
     },
@@ -99143,14 +99156,14 @@
       "decoration": 1,
       "meta": 269,
       "no_go": 246,
-      "none": 458,
+      "none": 459,
       "open_gate": 151,
       "positive_theorem": 627
     },
     "edge_count": 11211,
-    "leaf_count": 1022,
-    "node_count": 3034,
-    "root_count": 1018,
+    "leaf_count": 1023,
+    "node_count": 3035,
+    "root_count": 1019,
     "runners_with_path": 2621
   }
 }

@@ -1,0 +1,68 @@
+loop_slug: post-record-admitted-sample-target-vector-interface-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 30
+date: 2026-06-06
+branch: physics-loop/post-record-admitted-sample-target-vector-interface-20260606
+base: physics-loop/post-record-selection-rule-target-vector-firewall-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2858"
+goal: |
+  Define the exact interface where an admitted finite post-record sample yields
+  an empirical target vector for a supplied statistic set.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: admitted sample target-vector interface
+hard_residual_attacked: |
+  The target-vector firewall blocks Record-derived target/weight authority.
+  This block gives the positive admitted-observation route: realized samples
+  yield exact empirical vectors while weights and rules remain supplied.
+files_touched:
+  - docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md
+  - scripts/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-admitted-sample-target-vector-interface-20260606/*
+runner_summary: "SUMMARY: PASS=30 FAIL=0"
+interface_results:
+  admitted_sample_target_vector_interface: true
+  admitted_sample_empirical_vector_exact: true
+  sample_is_probability_law: false
+  weights_derived_from_sample: false
+  selection_rule_derived_from_sample: false
+  production_kernel_selected_by_sample_alone: false
+  born_law_derived_from_record: false
+open_imports:
+  - "sample is admitted observation data"
+  - "supplied statistic set"
+  - "supplied selection weights/rules remain required for scoring"
+  - "independent audit remains required before effective retained interpretation"
+  - "PR is stacked on the target-vector firewall companion"
+no_go_routes:
+  - "sample is a probability law"
+  - "sample derives selection weights or rules"
+  - "sample alone selects production kernel"
+  - "stable setting becomes selected dial"
+review_findings: "local review clean: runner PASS=30 FAIL=0; py_compile clean; cached summary/firewalls present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: pending
+pr_url: null
+pr_number: null
+cycle_status: local_review_clean
+mergeable: null
+merge_state_status: null
+checks: null
+next_exact_action: |
+  Commit, push, open a stacked PR against
+  physics-loop/post-record-selection-rule-target-vector-firewall-20260606, then
+  record PR status.
+stop_condition: |
+  Not stopped. Campaign continues after PR verification while runtime remains.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "admitted finite post-record samples yield exact empirical vectors for supplied statistic sets"
+  hypothetical_axiom_status: null
+  admitted_observation_status: "sample is admitted observation data, not a derived probability law"
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch defines an admitted-sample interface and does not derive weights, rules, kernels, or audit verdicts."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

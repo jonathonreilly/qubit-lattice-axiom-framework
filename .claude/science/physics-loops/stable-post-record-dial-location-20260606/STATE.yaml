@@ -30,6 +30,7 @@ no_go_routes:
   - "Post-record count dynamics selects Koide."
 trace_gate_classification: upstream_support
 review_disposition: pass
-pr_status: pending
-next_exact_action: "Run cache/checks, commit, push, open PR, verify PR, then pivot."
+pr_status: open
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2818"
+next_exact_action: "Verify PR state, then pivot."
 stop_condition: "Do not stop after this block unless the 12-hour runtime is exhausted or every viable queued target is blocked."

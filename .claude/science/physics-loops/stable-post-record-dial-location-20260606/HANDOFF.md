@@ -17,11 +17,11 @@ Record, not selected by post-record counts, and not a Koide closure.
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2818
 
 ## Verification
 
-Planned before PR:
+Completed before PR:
 
 ```bash
 python3 scripts/frontier_stable_post_record_dial_location_certificate_2026_06_06.py
@@ -32,5 +32,5 @@ git diff --check
 
 ## Next Action
 
-After PR verification, pivot to the record-writing-isometry bridge stretch or
+Verify PR state, then pivot to the record-writing-isometry bridge stretch or
 the next ranked opportunity.

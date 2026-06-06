@@ -1,0 +1,30 @@
+loop_slug: flavor-kreal-instrument-no-go-20260606
+date: 2026-06-06
+mode: science_fix_loop
+target_status: best_honest_status
+active_route: K-real two-letter instrument route pruning
+target_claim_id: flavor_kreal_instrument_two_letter_phase_orthogonal_2026-06-02
+target_blocker_text: "finite algebra closes only after supplying a K-real generation readout/instrument; the baseline does not derive that instrument or the two-letter measure selector"
+source_of_blocker_text: audit_ledger
+actual_current_surface_status: no-go
+conditional_surface_status: bounded finite-algebra locator if a K-real readout context is supplied
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_gate_classification: negative_route_pruning
+reachability_to_target: prunes
+files_touched:
+  - docs/FLAVOR_KREAL_INSTRUMENT_TWO_LETTER_PHASE_ORTHOGONAL_2026-06-02.md
+  - scripts/flavor_kreal_instrument_two_letter_phase_orthogonal_2026_06_02.py
+  - logs/runner-cache/flavor_kreal_instrument_two_letter_phase_orthogonal_2026_06_02.txt
+  - .claude/science/physics-loops/flavor-kreal-instrument-no-go-20260606/
+open_imports:
+  - K-real generation readout/instrument theorem
+  - two-letter measure/selector theorem
+no_go_routes:
+  - Record axiom alone does not supply a readout instrument.
+  - K-odd Brannen phase is orthogonal to the K-even record alphabet and cannot select the two-letter measure.
+  - Dimension/tracial weights give r=1, not r=1/2.
+review_findings: []
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2904"
+next_exact_action: "Resume scanning for remaining source-side audit unlocks."
+stop_condition: "No further non-duplicate source-side conditional rows can be repaired, scoped, or pruned without new axioms/admissions or audit-ledger edits."

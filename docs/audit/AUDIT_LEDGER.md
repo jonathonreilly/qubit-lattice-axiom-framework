@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 702 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1280 |
+| unaudited | 1279 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
 | ~~audited_conditional~~ | 68 |
-| ~~audited_failed~~ | 15 |
+| ~~audited_failed~~ | 16 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1105 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 59 |
+| `audited_failed` | 60 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1587 |
+| `unaudited` | 1586 |
 
 | claim_type | count |
 |---|---:|
@@ -1397,6 +1397,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_selector_dial_bucket_subdivision_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stability_dynamics_selector_subdivision_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
+| `record_axiom_audit_application_map_2026-06-06` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -14515,6 +14516,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of the Hilbert-Schmidt projection onto the identity line is alpha = <I_color, M_color>_HS / <I_color, I_color>_HS = Tr_color M_color / N_c, giving rho_singlet = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].  _(class `A`)_
 - **chain closes:** True — The conclusion follows from ordinary finite-dimensional orthogonal projection and the supplied SU(N_c) generator normalization. The note explicitly does not identify this projection fraction with kappa_EW or any physical matching rule.
 - **rationale:** The load-bearing step is a direct Hilbert-Schmidt projection identity, not a definition, renaming, external comparator, or tuned numerical match. The only cited authority needed for P4 supplies the SU(N_c) normalization convention and is provided as retained-grade decoration under the rubric. The runner source performs exact rational arithmetic for the identity, traceless-generator witnesses, normalization checks, sum rule, trace-zero iff zero-singlet condition, and non-claim boundary, with no helper imports and no hard-coded contested physical coefficient.
+- **auditor confidence:** high
+
+### `record_axiom_audit_application_map_2026-06-06`
+
+- **Note:** [`RECORD_AXIOM_AUDIT_APPLICATION_MAP_2026-06-06.md`](../../docs/RECORD_AXIOM_AUDIT_APPLICATION_MAP_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite classification of which listed record-sensitive lane requirements are covered by the Record finite-additivity schema and which remain separate gates.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-200150-3160b2a79f-record_axiom_audit_applicati`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Record supports durable realized outcomes, finite additive scalar readout, arbitrary finite-prefix count/readout schemas, and post-record label consumption, while all non-Record structures remain separate gates.  _(class `A`)_
+- **chain closes:** False — The completed runner reports two failed anchor checks for the flavor_det_character_selection lane. The runner otherwise classifies by set intersection over hard-coded gate sets, so the restricted packet does not independently close the full application map after the anchor failure.
+- **rationale:** The source note's table is the load-bearing artifact, but the completed runner fails two source-anchor checks and ends with `VERDICT: record audit application map failed; do not use this artifact.` The runner source also hard-codes each lane's required gates and expected supported/missing sets, then only checks set intersection against a hard-coded Record support set. With no cited authority text in the packet that repairs the failed anchors, the finite map does not close on its own terms.
+- **open / conditional deps cited:**
+  - `FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md`
 - **auditor confidence:** high
 
 ### `record_classical_semigroup_boundary_2026-06-06`

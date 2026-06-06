@@ -7,6 +7,8 @@ ledger grade. This note adds no axiom and no import; it answers a finite
 many-body witness sub-question negatively (no base-edge fibered enrichment at
 N=3 on the tested graph-braid witnesses).
 **Primary runner:** `scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py` (SCORECARD PASS=26)
+**Completed runner cache:** `logs/runner-cache/frontier_graph_braid_n3_fermion_sign_nonfibered.txt`
+(`SCORECARD: PASS=26 FAIL=0`; rerun with `networkx` available)
 
 ## Context (the open sub-question / the attacked assumption)
 

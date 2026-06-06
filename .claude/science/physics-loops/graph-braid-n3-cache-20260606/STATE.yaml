@@ -1,0 +1,21 @@
+loop_slug: graph-braid-n3-cache-20260606
+branch: physics-loop/graph-braid-n3-cache-20260606
+base: origin/main@3ba784c50
+target_claim_id: graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note
+target_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_result_edits: false
+files_touched:
+  - docs/GRAPH_BRAID_N3_FERMION_SIGN_STAYS_NONFIBERED_NARROW_THEOREM_NOTE.md
+  - logs/runner-cache/frontier_graph_braid_n3_fermion_sign_nonfibered.txt
+  - .claude/science/physics-loops/graph-braid-n3-cache-20260606/
+checks:
+  - command: python3 scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py
+    result: SCORECARD PASS=26 FAIL=0
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py --force --allow-non-main --push-mode none
+    result: refreshed cache, ok
+remaining_blockers:
+  - reviewer/auditor must decide final ledger status
+next_exact_action: open review PR
+

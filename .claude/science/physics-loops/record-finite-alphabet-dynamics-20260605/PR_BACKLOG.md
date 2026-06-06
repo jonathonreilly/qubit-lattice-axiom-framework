@@ -1,7 +1,11 @@
 # PR Backlog
 
-PR creation pending for:
+No PR backlog.
 
-- branch: `physics-loop/record-finite-alphabet-dynamics-20260605`
-- base: `physics-loop/record-history-monoid-unbounded-retention-20260605`
-- intended title: `[physics-loop] record finite-alphabet post-record dynamics exact-support`
+Opened stacked PR:
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2733
+
+Base:
+
+- `physics-loop/record-history-monoid-unbounded-retention-20260605`

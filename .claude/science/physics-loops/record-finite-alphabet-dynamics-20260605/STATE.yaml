@@ -29,6 +29,6 @@ trace_gate_classification: upstream_support
 trace_reachability: supports
 claim_status: exact-support
 review_findings: "local review pass; wording scan found only explicit boundary/status uses; runner PASS=28 FAIL=0"
-pr_status: pending
-next_exact_action: "Run runner/checks, local review, commit, push, open stacked PR, then continue campaign queue."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2733"
+next_exact_action: "Continue campaign with the history/count audit unlock scan."
 stop_condition: "Do not stop campaign after this block while runtime remains."

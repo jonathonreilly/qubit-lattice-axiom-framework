@@ -12,6 +12,8 @@ Files:
 
 Runner result: `PASS=28 FAIL=0`.
 
+Stacked PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2733
+
 ## Main finding
 
 Finite suffixes act on post-record histories by append and on counts by
@@ -29,5 +31,4 @@ fiber-compatible readout.
 
 ## Next exact action
 
-Commit, push, open the stacked PR, then continue the campaign to the
-history/count audit unlock scan.
+Continue the campaign to the history/count audit unlock scan.

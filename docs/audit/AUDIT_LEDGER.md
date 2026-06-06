@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 201 |
-| **retained_bounded** | 686 |
+| **retained_bounded** | 687 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1328 |
+| unaudited | 1327 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1076 |
+| `audited_clean` | 1077 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1635 |
+| `unaudited` | 1634 |
 
 | claim_type | count |
 |---|---:|
@@ -618,6 +618,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_carrier_locus_decomposition_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9229,6 +9230,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** False — Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: Issue: the arithmetic is a valid class-A algebraic closure only after importing stipulated topological and ABSS applicability inputs. Why: the packet explicitly says the one-hop cone-cap authorities do not establish the Cl(3)/Z^3 -> PL S^3 x R bridge or global ABSS route, and the rubric downgrades imported open premises to audited_conditional. Repair: provide a retained bridge theorem for the route, fixed-locus weights, and ABSS applicability. Boundary: retain only the conditional eta=2/9 algebraic certificate.
 - **rationale:** Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: Issue: the arithmetic is a valid class-A algebraic closure only after importing stipulated topological and ABSS applicability inputs. Why: the packet explicitly says the one-hop cone-cap authorities do not establish the Cl(3)/Z^3 -> PL S^3 x R bridge or global ABSS route, and the rubric downgrades imported open premises to audited_conditional. Repair: provide a retained bridge theorem for the route, fixed-locus weights, and ABSS applicability. Boundary: retain only the conditional eta=2/9 algebraic certificate.
 - **auditor confidence:** judicial
+
+### `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow A/B only: given the C_3 generator as cyclic axis relabelling and the trace-free C_3-singlet complement carrier, the fixed locus is the body diagonal with transverse weights (1,2), and the local Lefschetz density formula evaluates to 2/9. Local/global ABSS applicability, PL S^3 x R identification, and physical single-summand readout are not audited as claims here.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-182813-535efac115-koide_aps_c3_fixed_locus_wei`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The C_3[111] cyclic permutation has transverse eigenvalues {omega, omega^2}, hence weights (1,2), and the unique trace-free pair gives L_3(1,2)=2/9 via (omega-1)(omega^2-1)=3.  _(class `A`)_
+- **chain closes:** True — Independently, the cyclic matrix sends e1->e2->e3->e1, has det(P-xI)=1-x^3, rank(P-I)=2, and transverse spectrum {omega, omega^2}. Among nontrivial weight pairs only (1,2)/(2,1) has determinant character 1, and the density sum gives two terms of 1/3 divided by 3, hence 2/9.
+- **rationale:** The load-bearing result is finite linear algebra and exact root-of-unity arithmetic over retained or retained_bounded inputs, not a numerical match or definition substitution. The runner source performs actual symbolic computations rather than printing constants, and an independent hand derivation checks the same determinant, rank, trace-free-pair, and density factors. The open PL/global ABSS and physical readout bridges are explicitly outside the narrowed A/B claim scope, so they do not block this bounded theorem verdict.
+- **auditor confidence:** high
 
 ### `koide_berry_monopole_bridge_reduction_note_2026-05-31`
 

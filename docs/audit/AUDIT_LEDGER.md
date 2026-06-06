@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1299 |
+| unaudited | 1298 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
 | ~~audited_conditional~~ | 65 |
-| ~~audited_failed~~ | 11 |
+| ~~audited_failed~~ | 12 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,19 +64,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1095 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 55 |
+| `audited_failed` | 56 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1606 |
+| `unaudited` | 1605 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1329 |
 | `decoration` | 53 |
-| `meta` | 316 |
+| `meta` | 317 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 770 |
+| `positive_theorem` | 769 |
 
 | criticality | count |
 |---|---:|
@@ -1380,6 +1380,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_dynamics_family_lift_closeout_index_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_generation_koide_stable_location_index_2026-06-06` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
+| `post_record_measure_weight_normalization_subdivision_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -13795,6 +13796,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** 105 koide_or_generation_selector rows + 3 generation_or_koide_stable_feature rows + supplied stable-setting certificate semantics => 108-row generation/Koide stable-location index.  _(class `B`)_
 - **chain closes:** False — The completed runner contradicts the note's current-row-map premise: it reports 103 selector rows and 106 total index rows, not 105 and 108. The missing step is an updated ledger scan or corrected source row map that actually supports the stated counts.
 - **rationale:** The displayed arithmetic in the note is internally consistent, and the finite formulas Q(1/2)=2/3, 2(1/2)^2=1/2, and r*=1/2 for equal weights check independently. But the completed runner reports FAIL=3 exactly on the current selector-row count, selector class counts, and 108-row combined index checks. Because the headline row map is stale against the supplied completed runner output, the claim does not close as written.
+- **auditor confidence:** high
+
+### `post_record_measure_weight_normalization_subdivision_2026-06-06`
+
+- **Note:** [`POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Read-only subdivision of measure_weight_normalization rows into measure/weight lanes, plus finite normalization of supplied nonnegative positive-total weights without selector authority.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-192133-13ef636dd2-post_record_measure_weight_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supplied finite carrier plus supplied nonnegative weights with exact positive total gives a normalized measure under that supplied weight rule, but the normalized measure is not a selected dial.  _(class `A`)_
+- **chain closes:** False — The finite normalization subclaim closes as standard algebra. The exact-support current-snapshot subdivision does not close because the completed runner reports 43 rows and different lane counts than the note's 44-row table.
+- **rationale:** The finite-weight normalization interface is mathematically valid for supplied finite nonnegative weights with positive total, and it does not by itself provide selector authority. However, the source note claims an exact current ledger snapshot of 44 rows with lane counts source=14, trace=10, character=9, selector=6, generic=5, while the completed runner reports 43 rows with trace=7, selector=7, generic=6, source=14, character=9. Those completed mismatches are substantive audit evidence, not compute noncompletion, so the exact-support subdivision claim fails as written. The runner source also dynamically imports the previous subdivision script, but that helper source is not included in the restricted packet.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

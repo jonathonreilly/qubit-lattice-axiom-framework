@@ -8,7 +8,9 @@ row now claims only the finite-runner lower-bound surface.
 
 from __future__ import annotations
 
+import hashlib
 import importlib.util
+import json
 from pathlib import Path
 from typing import Any
 
@@ -17,6 +19,46 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "DIMENSION_SELECTION_NOTE.md"
 BRIDGE_NOTE = ROOT / "docs" / "DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md"
 BRIDGE_RUNNER = ROOT / "scripts" / "frontier_dimension_selection_finite_k_centroid_sign_bridge.py"
+ORIGINAL_RUNNER = ROOT / "scripts" / "frontier_dimension_selection.py"
+SOURCE_PACKET_RUNNER = ROOT / "scripts" / "dimension_selection_parent_source_packet_manifest_2026_06_05.py"
+SOURCE_PACKET_JSON = ROOT / "outputs" / "dimension_selection_parent_source_packet_manifest_2026_06_05.json"
+
+PACKET_PATHS = [
+    "scripts/frontier_dimension_selection_lower_bound_parent_repair.py",
+    "logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt",
+    "scripts/frontier_dimension_selection.py",
+    "logs/runner-cache/frontier_dimension_selection.txt",
+    "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md",
+    "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py",
+    "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt",
+    "outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json",
+    "scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py",
+    "logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt",
+    "outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json",
+]
+
+CACHE_TO_RUNNER = {
+    "logs/runner-cache/frontier_dimension_selection.txt": "scripts/frontier_dimension_selection.py",
+    "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt": (
+        "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py"
+    ),
+}
+
+CACHE_SNIPPETS = {
+    "logs/runner-cache/frontier_dimension_selection.txt": [
+        "I_3/P = <1e-10",
+        "d <= 2: EXCLUDED",
+        "d >= 3: attractive gravity with beta ~ 1 and I_3 = 0",
+        "  3 |       Yes |    Yes |     Yes |    1.01",
+        "  4 |       Yes |    Yes |     Yes |    1.05",
+        "  5 |       Yes |    Yes |     Yes |    1.03",
+    ],
+    "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt": [
+        "SUMMARY: PASS=56 FAIL=0",
+        "d=1 derivative has expected sign",
+        "d=5 parent raw_delta sign matches lower-bound sign",
+    ],
+}
 
 PASS = 0
 FAIL = 0
@@ -40,6 +82,26 @@ def read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def parse_cache(path: Path) -> dict[str, str]:
+    text = path.read_text(encoding="utf-8", errors="replace")
+    header, _, _stdout = text.partition("----- stdout -----")
+    out = {"_text": text}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        out[key.strip()] = value.strip()
+    return out
+
+
 def one_line(text: str) -> str:
     return " ".join(text.split())
 
@@ -55,6 +117,82 @@ def load_bridge_runner():
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
+
+
+def check_source_packet(note: str) -> None:
+    print("\n# Inline source-packet exposure checks")
+    flat_note = one_line(note)
+
+    for rel_path in PACKET_PATHS:
+        check(f"packet path exists: {rel_path}", (ROOT / rel_path).exists())
+        check(f"parent note links packet path: {rel_path}", rel_path in flat_note)
+
+    source_fragments = {
+        ORIGINAL_RUNNER: [
+            "def measure_gravity_2d_with_d_potential",
+            "def measure_I3",
+            "SUMMARY TABLE",
+            "beta",
+            "I_3",
+        ],
+        BRIDGE_RUNNER: [
+            "def finite_k_centroid_derivative",
+            "def propagate_centroid_for_mass",
+            "def part3_finite_difference",
+            "SUMMARY: PASS=",
+        ],
+        SOURCE_PACKET_RUNNER: [
+            "finite_k_bridge_runner",
+            "original_cache",
+            "cache_sha_fresh",
+            "SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=",
+        ],
+    }
+    for source_path, fragments in source_fragments.items():
+        source = read(source_path)
+        for fragment in fragments:
+            check(f"source fragment present in {source_path.relative_to(ROOT)}: {fragment}", fragment in source)
+
+    for cache_rel, runner_rel in CACHE_TO_RUNNER.items():
+        cache_path = ROOT / cache_rel
+        runner_path = ROOT / runner_rel
+        cache = parse_cache(cache_path)
+        runner_sha = sha256_file(runner_path)
+        check(f"cache runner matches source: {cache_rel}", cache.get("runner") == runner_rel, cache.get("runner"))
+        check(
+            f"cache SHA fresh: {cache_rel}",
+            cache.get("runner_sha256") == runner_sha,
+            f"{cache.get('runner_sha256')} == {runner_sha}",
+        )
+        check(
+            f"cache exits cleanly: {cache_rel}",
+            cache.get("exit_code") == "0" and cache.get("status") == "ok",
+            f"exit_code={cache.get('exit_code')} status={cache.get('status')}",
+        )
+        for snippet in CACHE_SNIPPETS[cache_rel]:
+            check(f"cache snippet present in {cache_rel}: {snippet}", snippet in cache["_text"])
+
+    source_packet_cache = parse_cache(ROOT / "logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt")
+    check(
+        "source-packet cache belongs to verifier",
+        source_packet_cache.get("runner") == "scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py",
+        source_packet_cache.get("runner"),
+    )
+    check(
+        "source-packet cache exits cleanly",
+        source_packet_cache.get("exit_code") == "0" and source_packet_cache.get("status") == "ok",
+        f"exit_code={source_packet_cache.get('exit_code')} status={source_packet_cache.get('status')}",
+    )
+    check(
+        "source-packet cache reports zero failures",
+        "SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=57 FAIL=0" in source_packet_cache["_text"],
+    )
+    if SOURCE_PACKET_JSON.exists():
+        payload = json.loads(read(SOURCE_PACKET_JSON))
+    else:
+        payload = {}
+    check("source-packet JSON exists", SOURCE_PACKET_JSON.exists(), SOURCE_PACKET_JSON.relative_to(ROOT))
+    check("source-packet JSON reports zero failures", payload.get("summary", {}).get("fail") == 0, payload.get("summary"))
 
 
 def main() -> int:
@@ -108,6 +246,8 @@ def main() -> int:
     ]
     for phrase in forbidden:
         check(f"forbidden overclaim absent: {phrase}", phrase not in note)
+
+    check_source_packet(note)
 
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

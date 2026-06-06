@@ -47,9 +47,10 @@ REQUIRED_SOURCE_FRAGMENTS = {
 
 EXPECTED_CACHE_SNIPPETS = {
     "parent_cache": [
-        "SUMMARY: PASS=26 FAIL=0",
+        "SUMMARY: PASS=81 FAIL=0",
         "finite-k lower-bound pass set is d=3,4,5",
         "finite-k lower-bound fail set is d=1,2",
+        "Inline source-packet exposure checks",
     ],
     "original_cache": [
         "I_3/P = <1e-10",

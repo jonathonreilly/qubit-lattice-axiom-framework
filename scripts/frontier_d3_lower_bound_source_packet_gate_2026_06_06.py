@@ -130,7 +130,10 @@ def run_active_queue_and_status_checks(rows: dict[str, dict[str, Any]]) -> None:
     )
     check(
         "parent row does not claim unique d=3 or baseline rewrite",
-        "no unique-d = 3 theorem or framework-baseline rewrite" in str(parent.get("claim_scope", "")),
+        (
+            "no unique-d = 3 theorem or framework-baseline rewrite" in str(parent.get("claim_scope", ""))
+            or "no unique-d=3 or baseline-rewrite claim" in str(parent.get("claim_scope", ""))
+        ),
         parent.get("claim_scope", ""),
     )
 
@@ -186,7 +189,7 @@ def run_source_packet_checks() -> None:
         f"exit_code={cache.get('exit_code')} status={cache.get('status')}",
     )
     for snippet in (
-        "SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=56 FAIL=0",
+        "SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=57 FAIL=0",
         "cache_sha_fresh:original_cache",
         "cache_snippet_present:original_cache:I_3/P = <1e-10",
         "cache_snippet_present:finite_k_bridge_cache:SUMMARY: PASS=56 FAIL=0",

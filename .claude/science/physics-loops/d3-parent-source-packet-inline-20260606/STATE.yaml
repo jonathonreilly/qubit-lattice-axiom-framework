@@ -1,0 +1,29 @@
+loop_slug: d3-parent-source-packet-inline-20260606
+mode: science-fix
+started_from: origin/main@2fd9a3dac
+branch: physics-loop/d3-parent-source-packet-inline-20260606
+target_claim_id: dimension_selection_note
+target_status: best-honest-status
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+blocker_text: "runner_artifact_issue: include scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py, scripts/frontier_dimension_selection.py, logs/runner-cache/frontier_dimension_selection.txt, and the source-packet verifier/cache so the finite-k replay and displayed beta/I_3 table can be checked from code."
+files_touched:
+  - docs/DIMENSION_SELECTION_NOTE.md
+  - docs/D3_LOWER_BOUND_SOURCE_PACKET_GATE_NOTE_2026-06-06.md
+  - scripts/frontier_dimension_selection_lower_bound_parent_repair.py
+  - scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+  - scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py
+  - logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt
+  - logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt
+  - logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt
+  - outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
+current_result: "Primary parent runner now inlines source-packet exposure checks for the finite-k bridge, original dimension runner, caches, and source-packet JSON."
+remaining_blockers:
+  - "Independent audit must decide whether the repaired packet moves dimension_selection_note out of audited_conditional."
+  - "This does not prove unique d=3 dimension selection."
+  - "This does not derive the all-d potential family, uniform parameter control, or a framework-internal upper bound."
+next_exact_action: "Open review PR for source-packet inlining; reviewer/auditor can re-audit dimension_selection_note from the primary packet."
+stop_condition: "This block stops after PR creation; campaign should rescan conditionals for the next independent repair."

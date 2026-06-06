@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
-runner_sha256: 97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880
+runner_sha256: f8dd0cdb01a33526d46f3597280366f13eb864c9f5105da37d1a958d79d59b5b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 # Dimension-selection parent lower-bound repair
@@ -33,7 +33,64 @@ status: ok
 [PASS] forbidden overclaim absent: self-consistency uniquely selects d = 3
 [PASS] forbidden overclaim absent: the Z^3 spatial substrate has been derived
 [PASS] forbidden overclaim absent: repo-wide framework-baseline rewrite is authorized
-SUMMARY: PASS=26 FAIL=0
+
+# Inline source-packet exposure checks
+[PASS] packet path exists: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
+[PASS] parent note links packet path: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
+[PASS] packet path exists: logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt
+[PASS] parent note links packet path: logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt
+[PASS] packet path exists: scripts/frontier_dimension_selection.py
+[PASS] parent note links packet path: scripts/frontier_dimension_selection.py
+[PASS] packet path exists: logs/runner-cache/frontier_dimension_selection.txt
+[PASS] parent note links packet path: logs/runner-cache/frontier_dimension_selection.txt
+[PASS] packet path exists: docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md
+[PASS] parent note links packet path: docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md
+[PASS] packet path exists: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+[PASS] parent note links packet path: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+[PASS] packet path exists: logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt
+[PASS] parent note links packet path: logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt
+[PASS] packet path exists: outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
+[PASS] parent note links packet path: outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
+[PASS] packet path exists: scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+[PASS] parent note links packet path: scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+[PASS] packet path exists: logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt
+[PASS] parent note links packet path: logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt
+[PASS] packet path exists: outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
+[PASS] parent note links packet path: outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
+[PASS] source fragment present in scripts/frontier_dimension_selection.py: def measure_gravity_2d_with_d_potential
+[PASS] source fragment present in scripts/frontier_dimension_selection.py: def measure_I3
+[PASS] source fragment present in scripts/frontier_dimension_selection.py: SUMMARY TABLE
+[PASS] source fragment present in scripts/frontier_dimension_selection.py: beta
+[PASS] source fragment present in scripts/frontier_dimension_selection.py: I_3
+[PASS] source fragment present in scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py: def finite_k_centroid_derivative
+[PASS] source fragment present in scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py: def propagate_centroid_for_mass
+[PASS] source fragment present in scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py: def part3_finite_difference
+[PASS] source fragment present in scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py: SUMMARY: PASS=
+[PASS] source fragment present in scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py: finite_k_bridge_runner
+[PASS] source fragment present in scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py: original_cache
+[PASS] source fragment present in scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py: cache_sha_fresh
+[PASS] source fragment present in scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py: SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=
+[PASS] cache runner matches source: logs/runner-cache/frontier_dimension_selection.txt: scripts/frontier_dimension_selection.py
+[PASS] cache SHA fresh: logs/runner-cache/frontier_dimension_selection.txt: f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da == f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da
+[PASS] cache exits cleanly: logs/runner-cache/frontier_dimension_selection.txt: exit_code=0 status=ok
+[PASS] cache snippet present in logs/runner-cache/frontier_dimension_selection.txt: I_3/P = <1e-10
+[PASS] cache snippet present in logs/runner-cache/frontier_dimension_selection.txt: d <= 2: EXCLUDED
+[PASS] cache snippet present in logs/runner-cache/frontier_dimension_selection.txt: d >= 3: attractive gravity with beta ~ 1 and I_3 = 0
+[PASS] cache snippet present in logs/runner-cache/frontier_dimension_selection.txt:   3 |       Yes |    Yes |     Yes |    1.01
+[PASS] cache snippet present in logs/runner-cache/frontier_dimension_selection.txt:   4 |       Yes |    Yes |     Yes |    1.05
+[PASS] cache snippet present in logs/runner-cache/frontier_dimension_selection.txt:   5 |       Yes |    Yes |     Yes |    1.03
+[PASS] cache runner matches source: logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+[PASS] cache SHA fresh: logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt: a701ba7f7f598324ff1010d00b56e26067568e8e42ee9e3190ccd29d3e1a326e == a701ba7f7f598324ff1010d00b56e26067568e8e42ee9e3190ccd29d3e1a326e
+[PASS] cache exits cleanly: logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt: exit_code=0 status=ok
+[PASS] cache snippet present in logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt: SUMMARY: PASS=56 FAIL=0
+[PASS] cache snippet present in logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt: d=1 derivative has expected sign
+[PASS] cache snippet present in logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt: d=5 parent raw_delta sign matches lower-bound sign
+[PASS] source-packet cache belongs to verifier: scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+[PASS] source-packet cache exits cleanly: exit_code=0 status=ok
+[PASS] source-packet cache reports zero failures
+[PASS] source-packet JSON exists: outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
+[PASS] source-packet JSON reports zero failures: {'pass': 57, 'fail': 0}
+SUMMARY: PASS=81 FAIL=0
 
 ----- stderr -----
 

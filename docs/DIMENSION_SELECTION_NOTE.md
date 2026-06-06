@@ -57,6 +57,28 @@ table and printed `alpha` values, that the bridge cache reports
 SHA. This does not set an audit verdict; its generated JSON is a disposable
 runner output.
 
+## 2026-06-06 Primary-Runner Packet Inlining Repair
+
+The 2026-06-06 audit pass still treated this row as conditional because the
+restricted parent packet did not itself expose enough of the dynamically
+imported bridge and original runner evidence. The primary parent runner now
+checks the source-packet gate inline. In addition to the finite-k derivative
+and finite-M replay, it verifies:
+
+- all parent, original-runner, finite-k bridge, cache, and JSON packet paths
+  are linked from this note;
+- the original dimension runner and finite-k bridge source files contain the
+  load-bearing beta/I_3/sign routines;
+- the original-runner and bridge caches are SHA-fresh, clean-exit caches;
+- the original cache contains the displayed `beta`, lower-bound, and `I_3`
+  evidence;
+- the finite-k bridge cache contains `SUMMARY: PASS=56 FAIL=0`;
+- the source-packet verifier cache and JSON report zero failures.
+
+This is still a packet-completeness repair, not a stronger physics theorem.
+It does not claim unique `d=3`, does not derive the all-d potential family, and
+does not authorize a framework-baseline rewrite.
+
 ## Answer
 
 No. The current bounded result is narrower:
@@ -154,6 +176,6 @@ python3 scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
 Expected summary:
 
 ```text
-SUMMARY: PASS=26 FAIL=0
+SUMMARY: PASS=81 FAIL=0
 SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=... FAIL=0
 ```

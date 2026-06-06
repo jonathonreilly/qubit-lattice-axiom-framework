@@ -1,0 +1,22 @@
+loop: higgs-taste-wj-bounded-hypothesis-repair-20260606
+created: 2026-06-06
+branch: physics-loop/higgs-taste-wj-bounded-hypothesis-repair-20260606
+base: origin/main
+target_claim_id: higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "repair APBC finite-grid statement and make uniform paired spectrum an explicit bounded hypothesis"
+files_touched:
+  - docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py
+  - logs/runner-cache/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.txt
+open_imports:
+  - "actual mean-field operator uniform +/- i 2u_0 spectrum remains a bounded hypothesis"
+  - "physical Higgs mass / R_lattice identification remains outside this row"
+verification:
+  direct_runner: "python3 scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py -> TOTAL: 50 PASS / 0 FAIL"
+  cache_refresh: "python3 scripts/cached_runner_output.py scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py --refresh -> status ok"
+  precompute_check: "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py --check-only -> fresh"
+next_exact_action: "open review PR; independent audit can decide whether bounded hypothesis is acceptable for the bridge row"
+stop_condition: "block closed as source-side APBC/scope repair; no audit verdict applied"

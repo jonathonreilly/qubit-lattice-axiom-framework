@@ -36,10 +36,10 @@ flagged as scoped rather than reproven.
 >
 > **Bridge (2) — mean-field W(J) form.** The scalar source generator is the
 > finite Grassmann (Berezin) fermion determinant `W(J) = log det(D + J)`. With a
-> real source `J · I` and an anti-Hermitian lattice Dirac operator `D` whose
-> eigenvalues come in conjugate pairs `± i a` (here `a = 2 u_0`, from the
-> Clifford taste-square identity `D_taste^2 = d·I` at mean-link `u_0`), each pair
-> contributes `det = (J + i a)(J − i a) = J^2 + a^2`, so
+> real source `J · I` and the explicitly bounded paired-spectrum hypothesis that
+> the mean-field block decomposes into uniform conjugate pairs `± i a` with
+> `a = 2 u_0`, each pair contributes
+> `det = (J + i a)(J − i a) = J^2 + a^2`, so
 > `W(J) = (N_tot/2) · log(J^2 + 4 u_0^2)`. The eigenvalue-ratio curvature is the
 > second source-derivative `W''(0) = N_tot/(4 u_0^2)`, exactly the mean-field
 > form the ratio note consumes.
@@ -70,12 +70,12 @@ Two scope honesties are stated up front:
   enter the staggered species-reduction question (that is downstream of the open
   realization gate `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` and is
   out of scope here).
-- **The W(J) form is conditional on anti-Hermiticity and the named mean-field
-  factorization.** The conjugate-pair eigenvalue structure `± i a` that produces
-  the `J^2 + a^2` per-pair determinant is a property of an anti-Hermitian `D`; the
-  magnitude `a = 2 u_0` uses the Clifford identity `D_taste^2 = d·I` at the
-  mean-link `u_0`. Both are carried by retained rows cited below; this note does
-  not re-open them, it composes them into the `W(J)` form.
+- **The W(J) form is bounded by an explicit paired-spectrum hypothesis.** The
+  runner proves the determinant and curvature consequences of a real
+  anti-Hermitian paired spectrum and separately proves the Clifford magnitude
+  `sqrt(d)=2`. It does **not** prove that the actual mean-field operator has a
+  uniform `± i 2u_0` spectrum. That uniform spectrum is the stated bounded
+  hypothesis under which Bridge (2) is available.
 
 ## 1. Bridge (1) — d=4 naive taste count N_taste = 2^d = 16 (Class A)
 
@@ -118,11 +118,15 @@ operator symbol and a retained dimension input rather than declared.
 On a finite periodic (PBC) momentum grid `p_k = 2π k / L`, `k = 0,…,L−1`, the
 per-axis solutions of `sin(p_k) = 0` are `p = 0` and (once `L` is even) `p = π`,
 i.e. exactly two per axis, so the corner count is `2^d = 16` at `d = 4` for any
-even `L`. On a strictly anti-periodic (APBC) grid `p_k = π (2k+1)/L` no momentum
-lands on `{0, π}` for finite odd `L`, so the corner zeros appear in the `L → ∞`
-continuum Brillouin zone; the structural species count is the continuum-BZ corner
-count `2^d`, which is the count the ratio note uses. The runner verifies both the
-continuum-BZ corner enumeration and the even-`L` periodic-grid count.
+even `L`. On a strictly anti-periodic (APBC) grid `p_k = π (2k+1)/L`, even `L`
+has no exact `sin(p)=0` momentum. Odd `L` representatives can hit the boundary
+point `p = π`, but then there is only one exact zero per axis, not the full
+two-corner set `{0,π}` per axis. Thus finite APBC exact-zero counting is a
+regulator artifact and is not the structural `2^d` taste count. The structural
+species count used here is the continuum Brillouin-zone corner count `2^d`.
+The runner verifies the continuum-BZ corner enumeration, the even-`L`
+periodic-grid count, even-`L` APBC no-zero behavior, and odd-`L` APBC boundary
+behavior.
 
 ## 2. Bridge (2) — mean-field generating functional W(J) = log det(D + J) (Class A)
 
@@ -152,20 +156,17 @@ This is the standard generating-functional form; the runner reproves
 (reusing the cited Berezin harness) and `log det(D+J) = Σ_k log λ_k(D+J)` over
 eigenvalues.
 
-### 2.2 The mean-field per-pair determinant and curvature
+### 2.2 The bounded paired-spectrum determinant and curvature
 
-The free staggered lattice Dirac operator `M_KS` is **real antisymmetric** (real
-`η` phases × antisymmetric forward–backward difference), so its eigenvalues are
-purely imaginary and come in genuine conjugate pairs `± i a` — the `± i a`
-pairing requires this real / `ε`-graded structure (a generic *complex*
-anti-Hermitian matrix has unpaired imaginary eigenvalues and would not give a
-real determinant, the caveat recorded on the cited determinant-positivity
-sister row). The taste magnitude is fixed by the Clifford taste-square
-identity `D_taste² = d·I` (the symmetric taste-Dirac element `D_taste = Σ_μ γ_μ`,
-cross terms cancel by antisymmetry), giving `|λ_taste| = √d = 2`; at the tadpole
-mean-link factorization `U_{ab} → u_0 δ_{ab}` (scale `u_0` retained via the
-plaquette-quartic row) the full magnitude is `a = √d · u_0 = 2 u_0`. Each
-conjugate pair shifted by the real source contributes
+The runner verifies the matrix fact that real antisymmetric blocks have purely
+imaginary conjugate-pair eigenvalues `± i a`. It also verifies the Clifford
+taste-square identity `D_taste² = d·I`, giving `sqrt(d)=2` at `d=4`. The
+additional statement that the actual mean-field block is uniformly paired with
+the same magnitude `a = 2u_0` for all pairs is **not derived here**; it is the
+explicit bounded paired-spectrum hypothesis of Bridge (2).
+
+Under that bounded hypothesis, each conjugate pair shifted by the real source
+contributes
 
 ```text
 det over the pair = (J + i a)(J − i a) = J^2 + a^2 = J^2 + 4 u_0^2,
@@ -212,7 +213,7 @@ retained rows and explicit hypotheses rather than posited.
 |---|---|---|
 | (1) | naive symbol corner zeros `{0,π}^d`, count `2^d`, `=16` at `d=4` | A (counting/algebra) |
 | (2a) | Berezin `Z_F[M] = det(M)` ⇒ `W(J) = log det(D+J)` | A (finite Grassmann algebra; retained Berezin row) |
-| (2b) | anti-Hermitian conjugate pairs `±i a`, `a = 2u_0` ⇒ per-pair `J²+4u_0²` | A (matrix algebra; Clifford + mean-link retained) |
+| (2b) | bounded uniform paired-spectrum hypothesis `±i 2u_0` ⇒ per-pair `J²+4u_0²` | A under explicit bounded hypothesis |
 | (2c) | `W(J)=(N_tot/2)log(J²+4u_0²)`, `W''(0)=N_tot/(4u_0²)` | A (calculus) |
 
 All four are exact algebraic/counting/calculus facts; none consume a fitted,
@@ -245,13 +246,14 @@ final `TOTAL: N PASS / 0 FAIL` line:
 - **Part 1 (taste count):** the naive symbol `D†D = (Σ sin²(p_μ))·I` vanishes iff
   every `sin(p_μ) = 0`; the per-axis zero set on `(−π, π]` is `{0, π}`; the
   corner count is `2^d`; `2^4 = 16`; cross-check `d=1,2,3 → 2,4,8`; even-`L`
-  periodic-grid count `= 16` at `d = 4`.
+  periodic-grid count `= 16` at `d = 4`; finite APBC grids have no exact
+  corner zeros.
 - **Part 2 (Berezin ⇒ W(J)):** `Z_F[M] = det(M)` by Leibniz expansion for
   `N = 1..4`; `log det(D+J) = Σ log λ_k`.
-- **Part 3 (conjugate pairs):** random real-antisymmetric matrices (the `M_KS`
-  structure) have purely-imaginary conjugate-pair eigenvalues `±i a`; the
-  per-pair shifted determinant equals `J² + a²`; with `a = 2 u_0` it is
-  `J² + 4 u_0²`.
+- **Part 3 (conjugate pairs):** random real-antisymmetric matrices have
+  purely-imaginary conjugate-pair eigenvalues `±i a`; the per-pair shifted
+  determinant equals `J² + a²`; under the bounded uniform `a = 2 u_0` hypothesis
+  it is `J² + 4 u_0²`.
 - **Part 4 (Clifford magnitude):** `D_taste = Σ_μ γ_μ` with the explicit
   Euclidean `Cl(4)` matrices satisfies `D_taste² = 4·I`, so `|λ_taste| = 2` and
   `a = 2 u_0`.
@@ -275,8 +277,8 @@ bridge** for two inputs:
    retained Clifford/dimension row;
 2. the mean-field determinant `W(J)` form — supplied by Bridge (2), reproven as
    `W(J) = log det(D + J)` from the retained Berezin rows, with the per-pair
-   `J² + 4 u_0²` factor from anti-Hermiticity and the retained Clifford
-   magnitude/mean-link, and curvature `W''(0) = N_tot/(4 u_0²)` by differentiation.
+   `J² + 4 u_0²` factor under the explicit bounded uniform paired-spectrum
+   hypothesis, and curvature `W''(0) = N_tot/(4 u_0²)` by differentiation.
 
 Both bridges cite only retained / retained-bounded one-hop authorities (§4) and
 introduce no admission, no new axiom, and no import. The re-audit **case** is
@@ -302,6 +304,9 @@ the independent audit lane, not by this note.
 - It does **not** derive the numerical value of `u_0` (its tadpole definition is
   retained via the plaquette-quartic row; the number requires a separate
   plaquette evaluation, out of scope).
+- It does **not** derive the actual mean-field operator's uniform
+  `± i 2u_0` paired spectrum; that is an explicit bounded hypothesis of this
+  bridge.
 - It does **not** promote, demote, or set the audit status of the ratio note or
   any cited row. All status is set by the independent audit lane.
 

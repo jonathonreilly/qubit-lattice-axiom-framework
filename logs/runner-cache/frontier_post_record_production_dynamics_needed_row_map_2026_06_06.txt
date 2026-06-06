@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_production_dynamics_needed_row_map_2026_06_06.py
+runner_sha256: 61ff1d099131b1d602f61e30663c51310ab52013fad3054cb99cce047e463b70
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.93
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -45,7 +53,7 @@ PASS boundary bridge is represented
 PASS readout instrument bridge is represented
 PASS record-writing law bridge is represented
 PASS production time/barrier bridge is represented
-PASS audit ledger hash is unchanged :: 8f607fd1374a4ce70a55e37dab233caff8be55df4e18bcd2a61cf594cc1e5d44
+PASS audit ledger hash is unchanged :: c34509854f5e955f3925224c269e2114d29c35fe8df2c7925dab4722f4aec798
 
 Production-dynamics lane counts:
   boundary_phase_finite_scan: 1
@@ -112,3 +120,6 @@ PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
 CLOCK_OR_RATE_DERIVED=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

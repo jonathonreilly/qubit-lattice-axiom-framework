@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 192 |
-| **retained_no_go** | 206 |
+| **retained_no_go** | 207 |
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1306 |
+| unaudited | 1305 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1090 |
+| `audited_clean` | 1091 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1613 |
+| `unaudited` | 1612 |
 
 | claim_type | count |
 |---|---:|
@@ -909,6 +909,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_clock_rate_interface_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_directed_certificate_kernel_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_expectation_concentration_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13697,6 +13698,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner certificate says the index contains all 10 stack PR entries, has cached summaries for each stack layer, and has seven exact-support entries plus three no-go entries.  _(class `A`)_
 - **chain closes:** False — The table count and family-lift trio check manually, but the completed runner exits nonzero. Its cached-summary checks fail for PR #2850, #2864, and #2868, so the claimed all-layer cached-summary support is missing.
 - **rationale:** The quantitative inventory is the 10-row PR table, the seven exact-support versus three no-go count, the three family-lift extension rows, the boolean firewall flags, and the expected cached summary strings. The 7/3 table count is correct by direct inspection, but the runner source is a structural string/count checker and its completed output reports SUMMARY: PASS=68 FAIL=3. Because the source note claims cached summaries are present for every stack layer while the runner fails three such checks, the presented certificate does not close on its own terms.
+- **auditor confidence:** high
+
+### `post_record_expectation_concentration_firewall_2026-06-06`
+
+- **Note:** [`POST_RECORD_EXPECTATION_CONCENTRATION_FIREWALL_2026-06-06.md`](../../docs/POST_RECORD_EXPECTATION_CONCENTRATION_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Expected post-record frequencies, even with all one-time marginals fixed, do not determine finite tail probabilities or calibrated p-values without a supplied finite law or concentration theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-d8e57283a8-post_record_expectation_conc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Two finite laws on length-4 A/B words have the same expected counts and fair one-time marginals, but their extreme-imbalance probabilities are 1/8 and 1, respectively.  _(class `A`)_
+- **chain closes:** True — The supplied iid and perfectly correlated laws are explicit probability measures, and direct enumeration gives identical expectations and one-time marginals but different tail probabilities. This proves the stated route-pruning no-go, not an absolute obstruction to calibration from stronger assumptions.
+- **rationale:** The load-bearing step is an elementary finite counterexample over two explicitly supplied laws: iid fair has two all-equal words out of sixteen, so the extreme tail is 2/16 = 1/8, while the correlated law assigns probability 1/2 + 1/2 = 1 to the same extreme event. Both laws have E[count_A] = E[count_B] = 2 and fair one-time marginals at each of the four positions. The conclusion is scoped correctly as pruning the expectation-to-concentration route while leaving calibration conditional on stronger inputs, so the no-go closes on its own terms.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

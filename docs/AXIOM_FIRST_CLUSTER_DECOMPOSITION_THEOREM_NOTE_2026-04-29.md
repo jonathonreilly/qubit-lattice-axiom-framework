@@ -5,7 +5,13 @@
 post-bridge L1/L3/L4 + conditional-L2 scope per audit verdict
 boundary instruction); 2026-06-04 (parent-source repair of the
 Lieb-Robinson interaction norm and removal of the false equation (8)
-imaginary-time commutator identity).
+imaginary-time commutator identity);
+2026-06-06 (Step-3 runner upgrade: the L1/L3/L4 Lieb-Robinson exhibits
+are now computed on a **genuine interacting `Cl(3) = M_2(C)` spin
+chain** via exact `e^{iHt} A e^{-iHt}` operator-norm commutators —
+replacing the previous free-fermion single-particle propagator proxy —
+plus an explicit corrected-Poisson-tail exhibit (E8) and a
+false-inequality control (E9)).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing claims of
 this note are **L1 (Lieb-Robinson commutator bound)**, **L3 (lattice
@@ -310,6 +316,24 @@ the bare cubic coordination in this slot; the corrected parent-source
 constant is the per-site interaction norm `J_*` times the interaction
 adjacency degree.
 
+**Equivalent Poisson/Chernoff tail form.** The weighted-path bound
+(6)–(7) is equivalent to the standard exponential-series tail estimate.
+Writing `y = 2 J_* D_int |t|` and `n0 = ⌈d(x,y)/R_int⌉`, the truncated
+series in (6) (before the exponential weight) is `Σ_{n ≥ n0} y^n/n!`,
+and the *correct* Chernoff/Stirling tail bound is
+
+```text
+    Σ_{n ≥ n0} y^n / n!   ≤   ( e · y / n0 )^{n0}   for integer n0 ≥ y. (6b)
+```
+
+This is the estimate the deleted false inequality `(a/n)^n ≤
+exp(-n) exp(n log(a/n))` was meant to supply but did not: that display
+reduces to `(a/n)^n ≤ (a/n)^n · e^{-n}`, i.e. `e^{-n} ≥ 1`, false for
+every `n ≥ 1`. Substituting (6b) with `n0 = ⌈d/R_int⌉` reproduces the
+`(e v_LR |t| / d)^{d/R_int}`-type light-cone decay for `d > e v_LR |t|`,
+matching (7). The runner verifies (6b) directly (exhibit E8) and
+includes the false-inequality control (exhibit E9).
+
 ### Step 4 — Cluster decomposition (L2)
 
 No identity of the form
@@ -419,9 +443,13 @@ separate gap/clustering authority.
   baseline plus the finite-range Hamiltonian hypothesis by
   the finite-range Lieb–Robinson argument with the corrected per-site
   interaction norm `J_*` and finite interaction degree `D_int`. The
-  runner exhibits the exponential envelope on a small free-fermion
-  lattice. **Closed-form support, pending
-  independent audit.**
+  runner exhibits the exponential envelope on a **genuine interacting
+  `Cl(3) = M_2(C)` spin chain** (a 10-site, `2^{10}`-dimensional
+  Hilbert space with generic nearest-neighbour Hermitian two-site
+  terms plus single-site fields), computing
+  `‖[e^{iHt} A e^{-iHt}, B]‖` exactly via the matrix exponential and
+  the operator norm — not a free-fermion single-particle propagator
+  proxy. **Closed-form support, pending independent audit.**
 - **(L3) Lattice light cone.** Direct contrapositive of (L1).
   **Closed-form support, pending independent audit.**
 - **(L4) Cl(3)-specific constant.** Bound on the single-term `J` by

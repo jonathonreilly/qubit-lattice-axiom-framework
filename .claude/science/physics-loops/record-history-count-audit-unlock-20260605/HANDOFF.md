@@ -12,6 +12,8 @@ Files:
 
 Runner result: `PASS=67 FAIL=0`.
 
+Stacked PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2737
+
 ## Main finding
 
 The new history/count stack creates citation-ready support for finite
@@ -27,5 +29,4 @@ instrument, formation, and carrier-dynamics gates untouched.
 
 ## Next exact action
 
-Commit, push, and open the stacked PR, then continue the campaign to
-dynamics-form reconciliation.
+Continue the campaign to dynamics-form reconciliation.

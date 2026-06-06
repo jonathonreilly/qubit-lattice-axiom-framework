@@ -10,5 +10,5 @@
 
 - Run scan runner, `py_compile`, and `git diff --check`.
 - Commit on `physics-loop/record-history-count-audit-unlock-20260605`.
-- Push and open a stacked PR against
+- Opened stacked PR #2737 against
   `physics-loop/record-finite-alphabet-dynamics-20260605`.

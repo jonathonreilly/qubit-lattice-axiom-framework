@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 682 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1352 |
+| unaudited | 1351 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1063 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1658 |
+| `unaudited` | 1657 |
 
 | claim_type | count |
 |---|---:|
@@ -1201,6 +1201,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3544,6 +3545,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The excited spectral sum is bounded by (λ_1/M_T)^n via Cauchy-Schwarz as ‖A†|0⟩‖‖B|0⟩‖ ≤ ‖A‖‖B‖, giving exp(-nΔ_T)‖A‖‖B‖, with the thermal term then controlled by ‖ρ_β-P_0‖_1=2q_β.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the spectral decomposition, corrected Cauchy-Schwarz placement, and trace-distance estimate prove the displayed ground-state and thermal bounds. The open mass-gap and spatial-clustering problems are explicitly outside the audited conclusion.
 - **rationale:** The load-bearing proof is a finite-dimensional algebraic spectral argument over the theorem assumptions, not a numerical match or imported physical premise. The runner source genuinely tests the corrected adjoint placement, spectral identity, ground-state bound, thermal q_β bound, and no-gap counterexample rather than merely printing expected results. Independent formula checks found the displayed exponential factor, trace-norm identity, 6q_β thermal correction, and finite-D Boltzmann population bound consistent with the note's definitions. The clean verdict is limited to the conditional transfer-matrix lemma and does not certify Δ_T>0 on A_min or spatial cluster decomposition.
+- **auditor confidence:** high
+
+### `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17`
+
+- **Note:** [`CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`](../../docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional H1/H2 spatial transfer-matrix bridge and the claimed finite-Lambda pure-Wilson corollary via the 2026-06-02 axis-permutation note.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-172154-b8582398dd-cluster_decomposition_spatia`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given a positive Hermitian slab transfer operator T_x with unique top eigenvector and Delta_x = -log(lambda_1/M_x) > 0, the spectral expansion plus Cauchy-Schwarz gives the exponential connected-correlator bound, with finite-temperature control by trace distance.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional final inequality is standard, but the displayed proof is not correct as written: S.14 bounds the first Cauchy-Schwarz factor by ||A_p|0_x>|| instead of the required ||A_p^dagger|0_x>|| for arbitrary bounded A_p. The finite-Lambda pure-Wilson corollary also imports an L2(SU(3)^{E_perp}) compact transfer operator, not the finite-dimensional H_slab assumed by the bridge and by the D-dependent thermal estimate S.9.
+- **rationale:** The runner genuinely checks finite-matrix algebraic identities and inequalities, so it supports the conditional finite-dimensional bridge at class A, but it does not exercise the pure-Wilson L2(SU(3)^E) surface. The proof text contains an invalid adjoint placement in the load-bearing Cauchy-Schwarz line for arbitrary bounded observables. More importantly, the one-hop pure-Wilson authority supplies a compact trace-class operator on an infinite-dimensional Hilbert space, while the bridge is stated and thermally bounded on a finite-dimensional slab Hilbert space with D = dim H_slab. A separate compact-operator/thermal trace bridge or a narrower finite-dimensional scope is needed before the corollary closes as written.
 - **auditor confidence:** high
 
 ### `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02`

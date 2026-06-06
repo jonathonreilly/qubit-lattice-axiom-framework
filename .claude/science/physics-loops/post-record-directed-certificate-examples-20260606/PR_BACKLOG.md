@@ -1,9 +1,9 @@
 # PR Backlog
 
-No PR backlog yet.
+No PR backlog.
 
-Expected PR target:
+Opened PR:
 
 ```text
-physics-loop/post-record-supplied-orientation-bridge-interface-20260606
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2850
 ```

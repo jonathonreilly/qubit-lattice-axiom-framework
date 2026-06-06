@@ -35,7 +35,10 @@ PR #2815:
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2815
 ```
 
-Verified open, base
+Initial verification: open, base
 `physics-loop/eta-holonomy-base-flux-scope-boundary-20260606`, head
 `physics-loop/eta-ud2-fixed-token-square-homology-20260606`, mergeable
 `MERGEABLE`, merge state `UNSTABLE` with `audit_pipeline` queued.
+
+Latest verification after pushing PR-state bookkeeping: open, mergeable
+`MERGEABLE`, merge state `CLEAN`.

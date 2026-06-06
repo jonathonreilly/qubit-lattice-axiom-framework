@@ -27,6 +27,21 @@ loop-pack file count: 13
 git diff --check: clean
 ```
 
+## PR verification
+
+Initial PR verification:
+
+```yaml
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2836"
+base: "physics-loop/post-record-audit-evidence-ladder-row-bucketing-20260606"
+mergeable: MERGEABLE
+merge_state_status: UNSTABLE
+status_check_rollup: "audit_pipeline in progress at first verification"
+```
+
+Disposition: in-progress check state recorded; final state must be recorded
+after GitHub finishes the audit-lane check.
+
 ## Review constraints
 
 - Do not edit audit data.

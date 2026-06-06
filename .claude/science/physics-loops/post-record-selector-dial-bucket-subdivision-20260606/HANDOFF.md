@@ -36,5 +36,16 @@ because it subdivides the row-bucketing output from PR #2835.
 
 ## Next exact action
 
-Commit, push, open the stacked PR, record PR status, then pivot to the next
-campaign lane.
+Push the PR-status commit, re-check PR #2836 after `audit_pipeline` settles,
+record final clean/success status if clean, then pivot to the next campaign
+lane.
+
+## PR
+
+```yaml
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2836"
+base: "physics-loop/post-record-audit-evidence-ladder-row-bucketing-20260606"
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline in progress at first verification"
+```

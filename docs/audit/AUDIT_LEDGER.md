@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 181 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 679 |
+| **retained_bounded** | 680 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1234 |
+| unaudited | 1233 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1054 |
+| `audited_clean` | 1055 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1537 |
+| `unaudited` | 1536 |
 
 | claim_type | count |
 |---|---:|
@@ -178,6 +178,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | D | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
+| `axiom_first_cluster_decomposition_temporal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -2052,6 +2053,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The central idempotents e_+ = (1 - i omega)/2 and e_- = (1 + i omega)/2 split Cl(3,0) tensor_R C into two M_2(C) summands labelled by omega = +i and omega = -i, and Artin-Wedderburn/Schur gives the unique 2-dimensional simple module in each summand plus finite direct-sum decomposition.  _(class `A`)_
 - **chain closes:** True — Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted packet closes the narrowed claim as exact finite-dimensional Clifford/Wedderburn algebra: omega^2 = -1 and centrality give the idempotent split, the Pauli realization supplies the real-algebra identification Cl(3,0) ~= M_2(C), and semisimplicity of M_2(C) plus M_2(C) gives the two 2-dimensional chirality irreps and finite direct-sum decomposition. The runner corroborates the algebraic identities, but random probes are not load-bearing proof. No physical Hilbert-space carrier identification, Grassmann/staggered realization, chirality-selection rule, or spin-statistics interpretation is in the ratified scope.
 - **rationale:** Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted packet closes the narrowed claim as exact finite-dimensional Clifford/Wedderburn algebra: omega^2 = -1 and centrality give the idempotent split, the Pauli realization supplies the real-algebra identification Cl(3,0) ~= M_2(C), and semisimplicity of M_2(C) plus M_2(C) gives the two 2-dimensional chirality irreps and finite direct-sum decomposition. The runner corroborates the algebraic identities, but random probes are not load-bearing proof. No physical Hilbert-space carrier identification, Grassmann/staggered realization, chirality-selection rule, or spin-statistics interpretation is in the ratified scope.
+- **auditor confidence:** high
+
+### `axiom_first_cluster_decomposition_temporal_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_TEMPORAL_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_TEMPORAL_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The narrowed finite-block theorem proving L1 Lieb-Robinson control, L3 lattice light-cone suppression, and L4 finite Cl(3) local-term constants; spatial L2 cluster decomposition is explicitly out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-114122-a95f07bd06-axiom_first_cluster_decompos`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Combining the Duhamel expansion with the finite interaction-path bound gives the Lieb-Robinson estimate with finite velocity v_LR = 2 e J_* R_int D_int; L3 is its outside-light-cone corollary and L4 supplies finiteness of J_* via the repaired triangle norm bound.  _(class `C`)_
+- **chain closes:** True — For the scoped L1/L3/L4 statement, the chain closes from finite-dimensional local Cl(3) operator norms, finite-range Hermitian lattice interactions, Duhamel/path-count LR estimates, and the triangle inequality. The spatial connected-correlator clustering bridge is not used as a load-bearing step.
+- **rationale:** The source note correctly removes the parent spatial L2 claim and limits the theorem to L1/L3/L4. The repaired Cl(3) bound uses the valid l1 triangle inequality, fixes the explicit I + sigma_z counterexample to the prior Euclidean bound, and gives finite J_* and v_LR under the finite-range local-rule hypothesis. The LR/light-cone part is a standard finite-lattice Duhamel/path-count derivation with no external numerical comparator or tuned input; the temporal transfer-matrix material is presented only as a conditional exhibit and not as closure of spatial clustering.
 - **auditor confidence:** high
 
 ### `axiom_first_cluster_decomposition_theorem_note_2026-04-29`

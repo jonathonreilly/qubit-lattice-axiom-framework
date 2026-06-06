@@ -1,0 +1,30 @@
+loop_slug: post-record-source-measure-trace-count-sync-20260606
+status: ready_for_review
+created: 2026-06-06
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: post_record_source_measure_trace_normalization_prototype_2026-06-06
+target_blocker_text: "audited_failed because source-measure trace prototype source note/runner/cache used stale trace-normalization counts"
+stack_base: physics-loop/post-record-measure-weight-count-sync-20260606
+depends_on_prs:
+  - 2987
+  - 2989
+  - 2991
+files_touched:
+  - docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md
+  - scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-source-measure-trace-count-sync-20260606/
+verification:
+  - "python3 scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py -> SUMMARY: PASS=49 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py --tail-chars 4000 -> refreshed green cache"
+open_imports:
+  - "physical pre-record reference-state identification remains open"
+  - "source law, Born law, and selector authority remain open"
+audit_data_edited: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Review stacked after #2991, then re-run audit on the source-measure trace prototype row."
+stop_condition: "Source/trace count-drift blocker closed on this branch."

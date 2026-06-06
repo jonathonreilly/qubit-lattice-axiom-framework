@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 681 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1362 |
+| unaudited | 1361 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 48 |
-| ~~audited_failed~~ | 4 |
+| ~~audited_failed~~ | 5 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1056 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 48 |
+| `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1668 |
+| `unaudited` | 1667 |
 
 | claim_type | count |
 |---|---:|
@@ -1293,6 +1293,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -2029,6 +2030,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Combining the Duhamel expansion with the finite interaction-path bound gives the Lieb-Robinson estimate with finite velocity v_LR = 2 e J_* R_int D_int; L3 is its outside-light-cone corollary and L4 supplies finiteness of J_* via the repaired triangle norm bound.  _(class `C`)_
 - **chain closes:** True — For the scoped L1/L3/L4 statement, the chain closes from finite-dimensional local Cl(3) operator norms, finite-range Hermitian lattice interactions, Duhamel/path-count LR estimates, and the triangle inequality. The spatial connected-correlator clustering bridge is not used as a load-bearing step.
 - **rationale:** The source note correctly removes the parent spatial L2 claim and limits the theorem to L1/L3/L4. The repaired Cl(3) bound uses the valid l1 triangle inequality, fixes the explicit I + sigma_z counterexample to the prior Euclidean bound, and gives finite J_* and v_LR under the finite-range local-rule hypothesis. The LR/light-cone part is a standard finite-lattice Duhamel/path-count derivation with no external numerical comparator or tuned input; the temporal transfer-matrix material is presented only as a conditional exhibit and not as closure of spatial clustering.
+- **auditor confidence:** high
+
+### `axiom_first_cluster_decomposition_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-block finite-range Hermitian Hamiltonians on the Cl(3) site algebra over Z^3: L1/L3/L4 Lieb-Robinson/light-cone/Cl(3)-norm support, with L2 only as a gap-or-spatial-authority conditional statement.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-162635-e7092f4d07-axiom_first_cluster_decompos`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Combining the Duhamel/LR series with the finite interaction-path bound gives (6), and the tail estimate is asserted to imply (7) with v_LR = 2 e J_* D_int R_int and xi = R_int.  _(class `A`)_
+- **chain closes:** False — The L1 proof does not close as written because the Step 3 tail estimate contains a false displayed inequality and does not rigorously derive the stated constants for general R_int. L2 also remains dependent on a retained transfer-gap or spatial-clustering authority for the target state; the provided bridge is temporal and conditional.
+- **rationale:** The narrowed scope correctly retracts unconditional spatial clustering, and L4's triangle/Cauchy Cl(3) norm bound is sound. However the load-bearing LR constant derivation has a local proof break: `(a/n)^n <= exp(-n) * exp(n log(a/n))` is false, and the Poisson-tail-to-light-cone step is not supplied correctly for the stated constants. The runner is only an illustrative 1D free-fermion exhibit and uses a fermionic propagator proxy rather than proving the general Cl(3) spin-algebra commutator theorem, so it cannot repair the proof gap. The L2 part remains explicitly conditional/open beyond temporal finite-block transfer clustering.
+- **open / conditional deps cited:**
+  - `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
+  - `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
+  - `STRONG_CP_THETA_ZERO_NOTE.md`
 - **auditor confidence:** high
 
 ### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`

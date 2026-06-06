@@ -1,0 +1,22 @@
+loop_slug: atomic-companion-cache-repair-20260606
+mode: campaign_block
+date: 2026-06-06
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18
+target_blocker_text: "re-audit with the current axiom premise, a retained lattice-kinetic authority that actually derives -Delta_Z3 from Cl(3)/Z3, the Coulomb-kernel authority source/cache, complete Hartree/Jastrow runner sources and SHA-pinned cached stdout, and either remove or justify the d=3 finite-Rydberg-series bound-state statement."
+files_touched:
+  - docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md
+  - logs/runner-cache/frontier_atomic_helium_hartree_companion.txt
+  - logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt
+  - logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt
+open_imports:
+  - "Continuum/volume control remains open."
+  - "Exact helium and multi-electron extension remain open."
+  - "Absolute eV depends on electron-mass/charged-lepton lanes."
+review_disposition: pass_local_checks_reviewer_owned
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: "Open a review PR, then continue the audit-unblock scan."

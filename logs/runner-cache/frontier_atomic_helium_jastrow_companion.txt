@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/frontier_atomic_helium_jastrow_companion.py
+runner_sha256: fbc5df85c3554e5655c479ef78fd480cfcd620f44969ed14954d553c44b6c888
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 13.34
+status: ok
+----- stdout -----
+========================================================================
+HELIUM JASTROW COMPANION ON THE Cl(3)/Z³ SURFACE
+One-parameter correlation improvement on the retained two-electron kernel
+========================================================================
+
+Cusp condition derivation:
+  Near r₁₂ → 0: -2Δ_rel ψ + (g_EM/r₁₂) ψ = finite
+  -2 × (2/r₁₂) × ψ'(0) + (g_EM/r₁₂) × ψ(0) = 0
+  → ψ'(0)/ψ(0) = g_EM/4 = 0.1250  [DERIVED, same kernel as V_ee]
+
+Jastrow form: f_J(r) = exp(-(g_EM r_J / 4) exp(-r/r_J))
+  r_J: variational parameter (correlation length)
+  Satisfies: f_J'(0)/f_J(0) = g_EM/4  and  f_J(∞) = 1
+
+Computational parameters: N=20, g_EM=0.5, g_nuc=1.0
+
+────────────────────────────────────────────────────────────
+STEP 1: Hartree baseline at N=20
+────────────────────────────────────────────────────────────
+  E(He⁺)   = -0.236366
+  E_Hartree = -0.330401
+  |E(He)|/|E(He⁺)| = 1.39784  (Hartree target ~1.424)
+  Time: 1.6s
+
+────────────────────────────────────────────────────────────
+STEP 2: Jastrow VMC scan over r_J (correlation length)
+────────────────────────────────────────────────────────────
+
+  Fixed: cusp coefficient a = g_EM × r_J / 4 → u'(0) = g_EM/4 = 0.1250
+  Scan r_J ∈ {0.5, 1.0, 2.0, 3.0, 4.0, 6.0} lattice units
+  VMC: 3000 warmup + 40000 measurement steps per r_J
+
+    r_J         E_VMC           ±    |E|/|E(He⁺)|    vs Hartree   accept
+  ──────────────────────────────────────────────────────────────────────
+    0.5     -0.336010  ± 0.001764         1.42157        -1.70%    0.81  (2.0s)
+    1.0     -0.337108  ± 0.001548         1.42621        -2.03%    0.81  (2.0s)
+    2.0     -0.338696  ± 0.001192         1.43293        -2.51%    0.81  (1.9s)
+    3.0     -0.339355  ± 0.001017         1.43572        -2.71%    0.81  (2.0s)
+    4.0     -0.338308  ± 0.001043         1.43129        -2.39%    0.81  (1.9s)
+    6.0     -0.336073  ± 0.001403         1.42183        -1.72%    0.81  (1.7s)
+
+  Total scan time: 11.5s
+
+  Optimal r_J = 3.0  →  E_VMC = -0.339355 ± 0.001017
+
+────────────────────────────────────────────────────────────
+STEP 3: Correlation energy captured by Jastrow
+────────────────────────────────────────────────────────────
+
+  E(He⁺) lattice:              -0.236366
+  E_Hartree:                   -0.330401  ratio = 1.3978
+  E_Jastrow (opt r_J=3):    -0.339355  ratio = 1.4357
+  Full CI reference ratio:     1.4520  (historical checkpoint)
+
+  Correlation energy (CI - Hartree in ratio units): 0.0542
+  Correlation captured by Jastrow:   0.0379  (70% of total)
+
+========================================================================
+SUMMARY: HELIUM JASTROW COMPANION
+========================================================================
+
+                    Method    |E(He)|/|E(He⁺)|    Target  Notes
+  ──────────────────────────────────────────────────────────────────────
+         Hartree (product)             1.39784    1.4240  (-1.8%)  separable ansatz; Hartree target
+           Jastrow (r_J=3)             1.43572       n/a  cusp corr. from Z³ kernel
+                   Full CI             1.45200    1.4520  (+0.0%)  exact (historical checkpoint)
+
+  DERIVATION STATUS:
+  ✓ Cusp condition u'(0) = g_EM/4 derived from Z³ Green's function
+  ✓ Jastrow form f_J(r) = exp(-a exp(-r/r_J)) satisfies both conditions
+  ✓ VMC variational bound E_VMC ≥ E_exact (Rayleigh-Ritz on l²(Z³×Z³))
+  ✓ Parameter r_J optimized variationally — no new physics inputs
+
+  WHAT JASTROW CAPTURES:
+  The electron-electron correlation hole: electrons avoid each other
+  near contact. The cusp coefficient g_EM/4 is the SAME coupling that
+  enters V_ee — the correlation is driven by the same Z³ kernel.
+
+  WHAT REMAINS BEYOND JASTROW:
+  Three-body and higher correlations (higher-order Jastrow terms)
+  Backflow correlations (momentum-dependent Jastrow)
+  These would be derived from higher-order terms in the 1/Z expansion
+  of the two-body resolvent of H₂ on l²(Z³×Z³).
+
+  BLOCKED:
+  ✗ Absolute energy in eV still needs the electron-mass lane
+  ✗ Exact two-body result remains open; Jastrow/VMC is only a bounded companion
+========================================================================
+
+Log saved to: logs/2026-06-06-atomic_helium_jastrow_companion.txt
+
+----- stderr -----
+

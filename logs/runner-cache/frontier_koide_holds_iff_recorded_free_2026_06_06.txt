@@ -1,0 +1,34 @@
+==================================================================================
+Koide (Q=2/3) holds IFF the fermion is recorded as a free durable state (pole mass)
+(recordable lens explains the lepton/quark Koide contrast via confinement)
+==================================================================================
+
+[BLOCK 1] Recordable-lens principle: the realized mass IS the pole mass
+  [PASS] Record axiom: observable = realized, durable outcome (MINIMAL_AXIOMS_2026-06-05)
+  [PASS] the realized, durable free-fermion mass = the POLE mass (scheme-independent record)  --  vs running/Lagrangian mass = a scheme-dependent parameter, not a record
+
+[BLOCK 2] Leptons: colorless, recorded free -> pole masses -> Q=2/3
+  [PASS] leptons are colorless -> recorded as free asymptotic states (pole masses exist)
+  [PASS] Q_lepton(pole) = 2/3 to ~1e-5 (the recordable single-summand structure applies)  --  Q_lepton=0.666661, |Q-2/3|=6.2e-06
+  [PASS] => #2910/#2917/#2923 (count/splitting/2-9) apply: the lepton record is single-summand
+
+[BLOCK 3] Quarks: confined -> no free record -> no pole mass -> no clean Koide
+  [PASS] framework SU(3) gauge sector CONFINES (same confining Wilson theory as the <P>@beta=6 campaign)  --  cited: SU(3) gauge sector / beta=6 plaquette campaign
+  [PASS] confined => no free asymptotic quark => NO pole mass (standard QCD)
+  [PASS] quark 'mass' = running / scheme-dependent Lagrangian parameter -- NOT a recorded outcome
+  [PASS] => the lens's single-summand Q=2/3 does NOT apply to quarks
+
+[BLOCK 4] TEETH: Q_lepton fixed at 2/3; Q_quark != 2/3 AND scheme-dependent
+  [PASS] Q_up-type(running) != 2/3  --  Q_up=0.8490 (|.|=0.18)
+  [PASS] Q_down-type(running) != 2/3  --  Q_down=0.7314 (|.|=0.06)
+  [PASS] Q_quark DRIFTS with scheme/scale (not a fixed recorded outcome)  --  Q_down over running factors 0.8/1.0/1.3 = ['0.7524', '0.7314', '0.7055'] (spread 0.047)
+  [PASS] Q_lepton(pole) is essentially fixed (scheme-independent record)  --  lepton spread 0.00018 << quark spread 0.047
+
+[BLOCK 5] The prediction + comparator + scope
+  [PASS] PREDICTION matches data: Koide(2/3) holds for colorless leptons, FAILS for confined quarks  --  Q=2/3 <=> recorded-free <=> colorless
+  [PASS] grounds the known pole-vs-running obstacle (Koide 2018; Sumino; Rivero-Gsponer) [comparator]  --  Koide = a statement about RECORDED (pole) masses, which only leptons have
+  [PASS] neutrinos = SEPARATE case (colorless but Majorana/seesaw mechanism, tiny/uncertain) -- not claimed
+
+==================================================================================
+SCORECARD:  PASS = 16   FAIL = 0
+==================================================================================

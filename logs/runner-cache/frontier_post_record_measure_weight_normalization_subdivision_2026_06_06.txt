@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+runner_sha256: 0ddae83ae2c9a753274134159c7fa9ed6d7a47aaf6fe631298b331dca13139f9
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 1.03
+status: nonzero_exit
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -33,22 +41,22 @@ PASS selector rule is still needed for selected dial readiness
 ------------------------------------------------------------------------------
 Measure/weight row checks
 ------------------------------------------------------------------------------
-PASS measure/weight row count is current snapshot :: 44
-PASS measure lane counts match expected :: Counter({'source_measure_or_rn_bridge': 14, 'trace_normalization_reference': 10, 'character_path_channel_weight': 9, 'selector_tangent_readout_weight': 6, 'generic_measure_weight_import': 5})
-PASS measure lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 14, 'trace_normalization_reference': 10, 'character_path_channel_weight': 9, 'selector_tangent_readout_weight': 6, 'generic_measure_weight_import': 5})
+FAIL measure/weight row count is current snapshot :: 43
+FAIL measure lane counts match expected :: Counter({'source_measure_or_rn_bridge': 14, 'character_path_channel_weight': 9, 'trace_normalization_reference': 7, 'selector_tangent_readout_weight': 7, 'generic_measure_weight_import': 6})
+PASS measure lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 14, 'character_path_channel_weight': 9, 'trace_normalization_reference': 7, 'selector_tangent_readout_weight': 7, 'generic_measure_weight_import': 6})
 PASS representative row present in character_path_channel_weight :: architecture_note_directional_measure
 PASS representative row present in generic_measure_weight_import :: born_scattering_comparison_note
 PASS representative row present in selector_tangent_readout_weight :: yt_exact_hessian_selector_uniqueness_note
 PASS representative row present in source_measure_or_rn_bridge :: source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30
 PASS representative row present in trace_normalization_reference :: pre_record_reference_state_tracial_derivation_note_2026-05-20
-PASS audit ledger hash is unchanged :: b13455e925f8862055b350350f72ce59970275fdbbc376642b9355424d8eb737
+PASS audit ledger hash is unchanged :: 013de3f321a88d71ea6a2c491668d8fe9f8013821822eaeb00df6da5c3b020a9
 
 Measure/weight lane counts:
   character_path_channel_weight: 9
-  generic_measure_weight_import: 5
-  selector_tangent_readout_weight: 6
+  generic_measure_weight_import: 6
+  selector_tangent_readout_weight: 7
   source_measure_or_rn_bridge: 14
-  trace_normalization_reference: 10
+  trace_normalization_reference: 7
 
 [character_path_channel_weight]
   architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
@@ -65,13 +73,15 @@ Measure/weight lane counts:
   born_scattering_comparison_note | unaudited | unaudited | bounded_theorem | docs/BORN_SCATTERING_COMPARISON_NOTE.md
   central_band_born_dense_sweep_note | audited_clean | retained_bounded | bounded_theorem | docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md
   linear_response_second_order_kubo_note | audited_clean | retained_pending_chain | bounded_theorem | docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md
-  lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05 | audited_conditional | audited_conditional | bounded_theorem | docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md
+  luders_rule_from_composition_consistency_note_2026-05-20 | unaudited | unaudited | bounded_theorem | docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+  massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28 | audited_clean | retained_bounded | bounded_theorem | docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md
   persistent_record_instrument_construction_narrow_theorem_note_2026-05-22 | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md
 
 [selector_tangent_readout_weight]
   dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md
   hierarchy_bosonic_bilinear_selector_note | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md
   higgs_taste_singlet_projection_bounded_note_2026-05-09 | unaudited | unaudited | bounded_theorem | docs/HIGGS_TASTE_SINGLET_PROJECTION_BOUNDED_NOTE_2026-05-09.md
+  lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md
   observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md
   teleportation_preparation_readout_probe_note | unaudited | unaudited | bounded_theorem | docs/TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md
   yt_exact_hessian_selector_uniqueness_note | unaudited | unaudited | bounded_theorem | docs/YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md
@@ -90,15 +100,12 @@ Measure/weight lane counts:
 
 [trace_normalization_reference]
   busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
-  busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20 | audited_conditional | audited_conditional | positive_theorem | docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
   gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17 | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md
   gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md
   inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md
-  luders_rule_from_composition_consistency_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
   luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05 | audited_conditional | audited_conditional | bounded_theorem | docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
   observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21 | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_PRE_RECORD_TRACIAL_ROUTE_NARROW_NOTE_2026-05-21.md
   pre_record_reference_state_tracial_derivation_note_2026-05-20 | audited_clean | retained_bounded | bounded_theorem | docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md
-  rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md
 
 
 ------------------------------------------------------------------------------
@@ -114,13 +121,13 @@ PASS Record-derived measure/prior flag is false
 PASS Record-derived Born law flag is false
 PASS production dynamics derived flag is false
 
-SUMMARY: PASS=41 FAIL=0
-MEASURE_WEIGHT_NORMALIZATION_ROWS=44
+SUMMARY: PASS=39 FAIL=2
+MEASURE_WEIGHT_NORMALIZATION_ROWS=43
 CHARACTER_PATH_CHANNEL_WEIGHT_ROWS=9
-GENERIC_MEASURE_WEIGHT_IMPORT_ROWS=5
-SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=6
+GENERIC_MEASURE_WEIGHT_IMPORT_ROWS=6
+SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=7
 SOURCE_MEASURE_OR_RN_BRIDGE_ROWS=14
-TRACE_NORMALIZATION_REFERENCE_ROWS=10
+TRACE_NORMALIZATION_REFERENCE_ROWS=7
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
 NORMALIZED_MEASURE_SELECTS_DIAL=FALSE
@@ -129,3 +136,6 @@ STABLE_SETTING_SELECTS_DIAL=FALSE
 MEASURE_OR_PRIOR_DERIVED_FROM_RECORD=FALSE
 BORN_LAW_DERIVED_FROM_RECORD=FALSE
 PRODUCTION_DYNAMICS_DERIVED=FALSE
+
+----- stderr -----
+

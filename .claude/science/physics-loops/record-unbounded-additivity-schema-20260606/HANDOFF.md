@@ -14,7 +14,16 @@ Base:
 main
 ```
 
-PR for this block: pending.
+PR for this block:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2813
+```
+
+GitHub verification: open PR, base `main`, head
+`physics-loop/record-unbounded-additivity-schema-20260606`, mergeable
+`MERGEABLE`, merge state `UNSTABLE` with `audit_pipeline` queued at
+verification.
 
 ## Intended Result
 
@@ -32,4 +41,4 @@ each finite prefix remains exact and finite.
 
 ## Next Action
 
-Run verification, open the PR, record PR state, then continue the campaign.
+Continue the campaign on the next ranked lane.

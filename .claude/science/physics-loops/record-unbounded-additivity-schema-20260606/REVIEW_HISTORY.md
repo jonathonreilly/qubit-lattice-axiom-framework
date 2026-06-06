@@ -27,3 +27,15 @@ Findings:
 
 Disposition: branch-local conditional-support artifact is ready for PR
 packaging.
+
+## PR Verification
+
+PR #2813:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2813
+```
+
+Verified open, base `main`, head
+`physics-loop/record-unbounded-additivity-schema-20260606`, mergeable
+`MERGEABLE`, merge state `UNSTABLE` with `audit_pipeline` queued.

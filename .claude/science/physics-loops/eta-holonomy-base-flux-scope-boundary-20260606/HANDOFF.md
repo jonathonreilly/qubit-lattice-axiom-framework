@@ -13,5 +13,12 @@ Reviewer focus:
 - Confirm the remaining blocker is explicit: supply a retained-grade or
   packet-contained `UD_2(Z^3)` homotopy bridge, or keep eta scoped to base flux.
 
-PR URL: pending
+PR URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2805
 
+PR verification:
+
+- Base: `main`
+- Head: `physics-loop/eta-holonomy-base-flux-scope-boundary-20260606`
+- Mergeability: `MERGEABLE`
+- Merge state at verification: `UNSTABLE` because `audit_pipeline` was still
+  `IN_PROGRESS`, not because of a merge conflict.

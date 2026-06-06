@@ -285,6 +285,16 @@ space. The retained surface now carries:
   towers in pure-`Lambda` units, gives the structural ratio
   `m_TT(2)/m_vec(1) = sqrt(3)`, and keeps benchmark mass scales/GW comparisons
   conditional on the bounded particle-interpretation promotion
+- the graviton-mass **scale** is record-forced to `O(sqrt(Lambda))`: under
+  record-durability = positive mass-curvature, the locally-gauge graviton can be
+  pinned only by a record, and the only global record is the finite universe size
+  `R = sqrt(3/Lambda)`, so a graviton mass is forced to the cosmological scale
+  (not Planck, not zero), with the massless graviton the `R -> infinity`
+  no-global-record limit; this distinguishes the framework's definite nonzero
+  `m_g ~ 3.52 x 10^-33 eV` from GR's assumed-zero, near the current testability
+  frontier (LIGO `<~ 1.3e-23 eV`, cosmological `<~ 1e-32 eV`). The coefficient
+  `2` in `m_g^2 = 2 Lambda` is the inherited bounded Lichnerowicz `S^3` gap; the
+  record-forcing of the scale is the new structural content.
 - `R_base = 31/9` as an exact group-theory support identity inside the
   bounded DM/cosmology cascade; the Sommerfeld factor and full
   `Omega_DM/Omega_b` value remain bounded
@@ -332,6 +342,7 @@ Authority:
 - [COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md](../../COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md)
 - [DARK_ENERGY_EOS_NOTE.md](../../DARK_ENERGY_EOS_NOTE.md)
 - [GRAVITON_MASS_DERIVED_NOTE.md](../../GRAVITON_MASS_DERIVED_NOTE.md)
+- [GRAVITON_MASS_SCALE_IS_RECORD_FORCED_TO_LAMBDA_PREDICTION_NOTE_2026-06-06.md](../../GRAVITON_MASS_SCALE_IS_RECORD_FORCED_TO_LAMBDA_PREDICTION_NOTE_2026-06-06.md)
 
 ## Open predictive bridges
 

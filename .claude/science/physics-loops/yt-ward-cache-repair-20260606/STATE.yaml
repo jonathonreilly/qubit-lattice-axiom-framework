@@ -1,0 +1,23 @@
+loop: yt-ward-cache-repair-20260606
+goal: "Repair the YT Ward tadpole-cancellation conditional row's broken dependency citation and stale runner caches without editing audit results."
+target_status: best-honest-status
+actual_current_surface_status: conditional-support
+cycle_count: 1
+active_route: "source-packet citation repair plus cache refresh"
+hard_residual: "n_link(y_t) = n_link(g_s) remains a structural premise tied to the same-1PI / H_unit gate."
+files_touched:
+  - docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py
+  - logs/runner-cache/audit_companion_yt_ward_ratio_tadpole_cancellation.txt
+  - logs/runner-cache/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.txt
+  - logs/runner-cache/frontier_yt_tadpole_cancellation_premise_derivation_2026_06_06.txt
+open_imports:
+  - "Yukawa-side single-link dressing equality is named, not discharged."
+  - "Same-1PI / H_unit structural routing remains upstream."
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_findings: "Not yet run through external review-loop; branch-local checks pass."
+pr_status: pending
+next_exact_action: "Open review PR and let independent reviewer/audit decide whether the repaired packet is enough to rerun the row."
+stop_condition: "This block stops after PR creation; further promotion requires the same-1PI / H_unit equality or audit acceptance."
+

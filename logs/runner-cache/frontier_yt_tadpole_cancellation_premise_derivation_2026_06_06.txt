@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_tadpole_cancellation_premise_derivation_2026_06_06.py
+runner_sha256: d9585bcfb2259a294b416b635cec7fbf898b6429e248ef5bc144ea7bc6db6533
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
 ==============================================================================
 y_t/g_s TADPOLE-CANCELLATION: premise derivation + equal-dressing robustness
 (companion to yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17)
@@ -38,3 +46,6 @@ y_t/g_s TADPOLE-CANCELLATION: premise derivation + equal-dressing robustness
 ==============================================================================
 SCORECARD:  PASS = 22   FAIL = 0
 ==============================================================================
+
+----- stderr -----
+

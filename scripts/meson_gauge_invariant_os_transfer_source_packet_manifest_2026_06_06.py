@@ -30,7 +30,7 @@ NOTE_LINKS = {
     "manifest_json": "outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json",
 }
 
-REQUIRED_SOURCE_MARKERS = [
+REQUIRED_SOURCE_FRAGMENTS = [
     "def block_metric_per_mode",
     "def block_fwd_propagator_berezin",
     "def block_metric_spacetime_eigs",
@@ -107,15 +107,15 @@ def main() -> int:
     source = source_path.read_text(encoding="utf-8")
     check(
         len(source) > 30_000,
-        "source_untruncated:primary_runner",
+        "source_full_length:primary_runner",
         f"{MANIFEST['primary_runner']} has {len(source)} bytes",
         results,
     )
-    for marker in REQUIRED_SOURCE_MARKERS:
+    for fragment in REQUIRED_SOURCE_FRAGMENTS:
         check(
-            marker in source,
-            f"source_marker:primary_runner:{marker}",
-            f"{marker} present in {MANIFEST['primary_runner']}",
+            fragment in source,
+            f"source_contains:primary_runner:{fragment}",
+            f"{fragment} present in {MANIFEST['primary_runner']}",
             results,
         )
 

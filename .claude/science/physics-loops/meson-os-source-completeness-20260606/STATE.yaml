@@ -1,0 +1,20 @@
+loop_slug: meson-os-source-completeness-20260606
+target_claim_id: meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30
+mode: campaign_block
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+active_route: source_packet_completeness_repair
+files_touched:
+  - docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+  - scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py
+  - scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py
+  - logs/runner-cache/meson_os_transfer_source_packet_manifest_2026_06_06.txt
+  - logs/runner-cache/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.txt
+  - outputs/meson_os_transfer_source_packet_manifest_2026_06_06.json
+  - outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json
+open_imports:
+  - independent_audit_status_movement
+no_go_routes: []
+review_disposition: pending_reviewer
+next_exact_action: "Run final cache checks, commit, push, and open a review PR."
+stop_condition: "Do not stop campaign after this PR; rescan conditional backlog for next repair target."

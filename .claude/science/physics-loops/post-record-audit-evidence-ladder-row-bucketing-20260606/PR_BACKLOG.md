@@ -1,6 +1,6 @@
 # PR Backlog
 
-Status: pending PR creation.
+Status: PR created; initial queued check recorded.
 
 Intended title:
 
@@ -29,3 +29,13 @@ Body must include:
 - artifacts: note, runner, cached log, loop pack;
 - statement that no audit data, audit verdict, retained/promoted claim, or
   forced generation/Koide dial is involved.
+
+## Created PR
+
+```yaml
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2835"
+base: "physics-loop/post-record-conditional-audit-evidence-ladder-20260606"
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_status_check_rollup: "audit_pipeline queued at first verification"
+```

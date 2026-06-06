@@ -49,5 +49,16 @@ because it applies the evidence ladder from PR #2834.
 
 ## Next exact action
 
-Commit, push, open the stacked PR, record PR status, then pivot to the next
-campaign lane.
+Push the PR-status commit, re-check PR #2835 after `audit_pipeline` settles,
+record final clean/success status if clean, then pivot to the next campaign
+lane.
+
+## PR
+
+```yaml
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2835"
+base: "physics-loop/post-record-conditional-audit-evidence-ladder-20260606"
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline queued at first verification"
+```

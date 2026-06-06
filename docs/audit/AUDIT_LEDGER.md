@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1307 |
+| unaudited | 1306 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
 | ~~audited_conditional~~ | 65 |
-| ~~audited_failed~~ | 8 |
+| ~~audited_failed~~ | 9 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,19 +64,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1090 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 52 |
+| `audited_failed` | 53 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1614 |
+| `unaudited` | 1613 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1326 |
 | `decoration` | 53 |
-| `meta` | 315 |
+| `meta` | 316 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 774 |
+| `positive_theorem` | 773 |
 
 | criticality | count |
 |---|---:|
@@ -1372,6 +1372,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `post_record_audit_evidence_ladder_row_bucketing_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_dynamics_campaign_closeout_index_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | E | - |
+| `post_record_dynamics_family_lift_closeout_index_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -13683,6 +13684,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** This branch indexes the six-PR post-record dynamics stack built at the end of the campaign.  _(class `E`)_
 - **chain closes:** False — The index text and firewall flags mostly check out, but the completed runner reports two failed cached-summary checks for PR #2850 and PR #2864. The note asserts cached summaries are present for each stack layer, so the restricted packet does not close that claim on its own terms.
 - **rationale:** The load-bearing step is an index definition, not a first-principles derivation or algebraic closure. The runner source hard-codes the stack entries and expected summary strings, then performs text/cache presence checks rather than deriving any physics result. The completed runner exits nonzero with FAIL=2 because two required cached logs do not contain the expected summary strings. This is a substantive completed artifact mismatch, not a timeout or compute-budget case.
+- **auditor confidence:** high
+
+### `post_record_dynamics_family_lift_closeout_index_2026-06-06`
+
+- **Note:** [`POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md`](../../docs/POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** A branch-local closeout index of ten PR stack entries, their 7/3 status count, the three family-lift extension PRs, and non-promotion firewall flags.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-190644-58136cb499-post_record_dynamics_family_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner certificate says the index contains all 10 stack PR entries, has cached summaries for each stack layer, and has seven exact-support entries plus three no-go entries.  _(class `A`)_
+- **chain closes:** False — The table count and family-lift trio check manually, but the completed runner exits nonzero. Its cached-summary checks fail for PR #2850, #2864, and #2868, so the claimed all-layer cached-summary support is missing.
+- **rationale:** The quantitative inventory is the 10-row PR table, the seven exact-support versus three no-go count, the three family-lift extension rows, the boolean firewall flags, and the expected cached summary strings. The 7/3 table count is correct by direct inspection, but the runner source is a structural string/count checker and its completed output reports SUMMARY: PASS=68 FAIL=3. Because the source note claims cached summaries are present for every stack layer while the runner fails three such checks, the presented certificate does not close on its own terms.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

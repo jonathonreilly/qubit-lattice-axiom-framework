@@ -1,0 +1,25 @@
+loop_slug: ks-phase-cocycle-uniqueness-20260606
+branch: physics-loop/ks-phase-cocycle-uniqueness-20260606
+base: origin/main
+started_at: 2026-06-06
+target_claim_id: staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07
+target_note: docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
+target_runner: scripts/probe_kawamoto_smit_phase_forcing.py
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+downstream_blocker: "Noether and staggered-realization rows need retained-grade authority for the KS-phase-form staggered carrier."
+active_route: z2_cocycle_gauge_class_uniqueness
+files_touched:
+  - docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
+  - scripts/probe_kawamoto_smit_phase_forcing.py
+  - logs/runner-cache/probe_kawamoto_smit_phase_forcing.txt
+  - .claude/science/physics-loops/ks-phase-cocycle-uniqueness-20260606/
+status_summary: "Canonical Kawamoto-Smit phases now have an explicit Clifford -1 plaquette cocycle proof and gauge-class uniqueness argument; the runner certifies construction, cocycle, gauge recovery, scalarization, and invalid all-plus rejection."
+open_imports:
+  - "Independent audit is still required before downstream rows may consume this as effective authority."
+  - "Physical species-label identification AC_phi_lambda remains outside this substep-2 phase proof."
+review_findings: "local self-review passed; independent review/audit still required"
+pr_status: pending
+next_exact_action: "Commit, push, open a ready review PR, then continue the audit-unblock scan."
+stop_condition: "Stop only after the refreshed queue has no viable unblocked repair target."

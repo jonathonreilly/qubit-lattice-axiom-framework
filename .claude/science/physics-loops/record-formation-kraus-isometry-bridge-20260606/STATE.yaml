@@ -2,7 +2,7 @@ loop_slug: record-formation-kraus-isometry-bridge-20260606
 branch: physics-loop/record-formation-kraus-isometry-bridge-20260606
 base: origin/main
 campaign: dynamics lanes
-cycle_status: verified_pending_pr
+cycle_status: pr_open_verified
 target_status: exact-support
 actual_current_surface_status: exact-support
 trace_class: upstream_support
@@ -32,11 +32,15 @@ trace_gate:
   artifact_role: theorem
 review_findings: "Local review pass found no overclaim, no dial-selection claim, no probability-selection claim, and clean hygiene checks."
 pr_status:
-  url: null
-  number: null
-  mergeable: null
-  checks: null
-next_exact_action: "Commit, push, open PR, patch PR status."
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2819
+  number: 2819
+  state: OPEN
+  base: main
+  head: physics-loop/record-formation-kraus-isometry-bridge-20260606
+  mergeable: MERGEABLE
+  merge_state_status: UNSTABLE
+  checks: "audit_pipeline queued at initial PR verification"
+next_exact_action: "Push PR-status patch, reverify PR, then pivot to the next campaign lane."
 stop_condition: "Block closes when PR is open and verified or PR backlog records exact failure."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false

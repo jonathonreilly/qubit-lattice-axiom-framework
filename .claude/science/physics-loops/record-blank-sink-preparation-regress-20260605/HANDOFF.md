@@ -5,6 +5,8 @@
 No-go / finite capacity-ledger block ready for stacked review. This block is
 stacked on PR #2777 and targets the blank-sink preparation regress.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2780
+
 ## Intended Result
 
 Closed finite reversible dynamics cannot prepare blank sink workspace from an
@@ -28,5 +30,4 @@ Checks:
 
 ## Next Action
 
-Commit, push, open a stacked PR, and then decide whether to attempt physical
-open-system dynamics or pivot to another high-value lane.
+Attempt physical open-system dynamics or pivot to another high-value lane.

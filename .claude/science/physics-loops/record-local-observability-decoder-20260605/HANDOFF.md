@@ -4,6 +4,8 @@
 
 Bounded-support / finite decoder-criterion block ready for stacked review.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2766
+
 ## Main Finding
 
 Local observability is the existence of compatible local decoders on disjoint
@@ -19,6 +21,5 @@ encodings do not supply that family.
 
 ## Next Exact Action
 
-Open stacked PR against
-`physics-loop/record-production-residual-checklist-20260605`, then patch this
-loop pack with the PR URL.
+Campaign pivot: select the next ranked science lane while #2766 receives
+review/checks.

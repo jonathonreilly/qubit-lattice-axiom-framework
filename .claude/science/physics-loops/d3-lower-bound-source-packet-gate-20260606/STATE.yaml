@@ -1,0 +1,28 @@
+loop_slug: d3-lower-bound-source-packet-gate-20260606
+branch: physics-loop/d3-lower-bound-source-packet-gate-20260606
+base: origin/main
+mode: campaign
+cycle: d3_lower_bound_source_packet_gate
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_review_queue_item: 2026-05-20-d3-lower-bound-bridge-sign
+target_blocker: "The old sign-bridge issue is repaired; the current parent-row blocker asks for finite-k bridge runner source, original dimension runner source/cache, and source-packet verifier output."
+active_route: "Certify that current-main source-packet artifacts are present, linked, SHA-fresh, and cache-backed without retagging the audit ledger."
+files_touched:
+  - docs/D3_LOWER_BOUND_SOURCE_PACKET_GATE_NOTE_2026-06-06.md
+  - scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py
+  - logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt
+  - .claude/science/physics-loops/d3-lower-bound-source-packet-gate-20260606/
+checks:
+  runner: "PASS=53 FAIL=0"
+  py_compile: pass
+  diff_check: pass
+  ascii: pass
+  wording_sweep: pass
+review_loop_disposition: pass
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+pr_url: pending
+next_exact_action: "Commit, push, open PR, record PR URL, then pivot to the next campaign lane."

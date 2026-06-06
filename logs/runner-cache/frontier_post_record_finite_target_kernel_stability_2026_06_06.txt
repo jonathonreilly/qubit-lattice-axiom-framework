@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_finite_target_kernel_stability_2026_06_06.py
+runner_sha256: d2cf5b5cfa46e1a5f10eb3a461c3d36817b427aa86c515c4ffae73cab9d91fce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -58,3 +66,6 @@ SUPPLIED_TARGET_KERNEL_STABILITY=TRUE
 EVERY_SUPPLIED_TARGET_CAN_BE_STABILIZED=TRUE
 RECORD_DERIVES_TARGET_PRIOR=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

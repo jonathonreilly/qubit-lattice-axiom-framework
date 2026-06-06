@@ -1,0 +1,33 @@
+loop_slug: record-pointer-broadcast-circuit-20260605
+campaign: "12h physics-loop campaign down framework lanes"
+campaign_started_utc: "2026-06-06T01:39:56Z"
+campaign_deadline_utc: "2026-06-06T13:39:56Z"
+current_goal: "Provide a conditional finite pointer-broadcast circuit witness."
+target_status: bounded-support
+cycle_count: 14
+active_route: "pointer-basis CNOT fanout as finite local-observability production witness"
+hard_residual: "Pointer basis, blank fragments, physical Hamiltonian, production law, clock/rate normalization, probabilities, and dial selection remain open."
+branch: physics-loop/record-pointer-broadcast-circuit-20260605
+base_branch: physics-loop/record-local-observability-decoder-20260605
+files_touched:
+  - docs/RECORD_POINTER_BROADCAST_CIRCUIT_INTERFACE_2026-06-05.md
+  - scripts/frontier_record_pointer_broadcast_circuit_interface_2026_06_05.py
+  - logs/runner-cache/frontier_record_pointer_broadcast_circuit_interface_2026_06_05.txt
+  - .claude/science/physics-loops/record-pointer-broadcast-circuit-20260605/
+open_imports:
+  - "Pointer basis."
+  - "Blank fragment initial condition."
+  - "Physical Hamiltonian or production law implementing fanout."
+  - "Clock/rate normalization."
+  - "Probability weights before realization."
+no_go_routes:
+  - "Pointer broadcast does not clone pre-record qubits."
+  - "Local observability does not follow without blank fragments."
+  - "Finite unitary witness does not derive the physical Hamiltonian."
+trace_gate_classification: upstream_support
+trace_reachability: supports
+claim_status: bounded-support
+review_findings: "Local runner and wording review clean. Checks: SCORECARD PASS=35 FAIL=0; py_compile clean; git diff --check clean."
+pr_status: "pending"
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Do not stop campaign after this block while runtime remains."

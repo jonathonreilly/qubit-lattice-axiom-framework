@@ -1,0 +1,59 @@
+loop_slug: post-record-character-path-channel-weight-prototype-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 24
+date: 2026-06-06
+branch: physics-loop/post-record-character-path-channel-weight-prototype-20260606
+base: physics-loop/post-record-source-measure-trace-normalization-prototype-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2845"
+goal: |
+  Provide a finite supplied character/path/channel weight prototype for the
+  character_path_channel_weight rows without deriving the physical measure or
+  path/channel/character rule from Record.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: character/path/channel weight prototype
+hard_residual_attacked: |
+  The measure/weight subdivision exposed 10 character/path/channel weight rows.
+  This block supplies finite exact normalization and composition semantics for
+  those rows under supplied rules.
+files_touched:
+  - docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md
+  - scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-character-path-channel-weight-prototype-20260606/*
+runner_summary: "SUMMARY: PASS=47 FAIL=0"
+prototype_results:
+  character_path_channel_weight_rows: 10
+open_imports:
+  - "supplied directional path parameter or path rule"
+  - "supplied finite character packet or Wilson surface"
+  - "supplied channel rule"
+  - "supplied physical-measure selector where needed"
+  - "independent audit remains required for verdicts"
+no_go_routes:
+  - "normalization => physical measure selection"
+  - "Record => path/channel/character rule"
+  - "character/path/channel weight => Born law"
+review_findings: "local review pass: py_compile, cached summary, ASCII scan, overclaim scan, 13-file loop pack, git diff --check"
+pr_status: ready_for_pr
+pr_url: null
+pr_number: null
+cycle_status: ready_for_pr
+next_exact_action: |
+  Commit, push, then open a stacked PR against
+  physics-loop/post-record-source-measure-trace-normalization-prototype-20260606.
+stop_condition: |
+  Satisfied when the runner passes, local review is clean, the branch is pushed,
+  and the stacked PR is open and verified.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "character/path/channel rows get finite supplied weight semantics; physical selection and derivation remain open"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch supplies finite weight semantics and does not derive the path/channel/character rule or physical measure."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

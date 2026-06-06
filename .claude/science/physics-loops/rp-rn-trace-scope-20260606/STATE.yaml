@@ -1,0 +1,29 @@
+loop: rp-rn-trace-scope-20260606
+mode: science-fix
+date: 2026-06-06
+target_claim_id: rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20
+target_status: bounded-support
+active_route: trace-relative-scope-repair
+current_surface_status: bounded-support
+audit_effective_status_change_claimed: false
+files_touched:
+  - docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md
+  - scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py
+  - logs/runner-cache/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.txt
+  - .claude/science/physics-loops/rp-rn-trace-scope-20260606/
+closed_in_this_block:
+  - narrowed the load-bearing theorem to Gibbs/Radon-Nikodym density relative to tau_Lambda
+  - moved rho_ref and Wilson/RP compatibility to conditional downstream applications
+  - removed PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION as a markdown load-bearing dependency
+  - added a finite matrix certificate runner
+verification:
+  - python3 -m py_compile scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py
+  - python3 scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py --force --allow-non-main --push-mode none
+  - python3 scripts/precompute_audit_runners.py --runners scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py --check-only --allow-non-main --push-mode none
+  - git diff --check
+  - git diff -- docs/audit --exit-code
+runner_result: PASS=14 FAIL=0
+review_disposition: local_self_review_pass_pending_codex_reviewer
+pr_status: pending
+next_exact_action: commit, push, open review PR

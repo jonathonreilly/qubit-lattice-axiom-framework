@@ -1,0 +1,23 @@
+loop: source-measure-onb-diagonal-scope-repair-20260606
+created: 2026-06-06
+branch: physics-loop/source-measure-onb-diagonal-scope-repair-20260606
+base: origin/main
+target_claim_id: source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: "narrow the row to the pure E_ii diagonal component-response theorem"
+files_touched:
+  - docs/SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_source_measure_sharp_record_onb_2026_06_05.py
+  - logs/runner-cache/audit_companion_source_measure_sharp_record_onb_2026_06_05.txt
+open_imports:
+  - "physical Y_T/top/W response identification remains outside this row"
+  - "sharp-record probability intervention as complete physical source semantics remains outside this row"
+  - "g_bare/F_Htt/top-coefficient bridge remains outside this row"
+verification:
+  direct_runner: "python3 scripts/audit_companion_source_measure_sharp_record_onb_2026_06_05.py -> SUMMARY: PASS=37 FAIL=0"
+  cache_refresh: "python3 scripts/cached_runner_output.py scripts/audit_companion_source_measure_sharp_record_onb_2026_06_05.py --refresh -> status ok"
+  cache_check: "python3 scripts/cached_runner_output.py scripts/audit_companion_source_measure_sharp_record_onb_2026_06_05.py --check-only -> fresh"
+next_exact_action: "open review PR; independent audit can re-run the narrowed source row"
+stop_condition: "block closed as source-side scope repair; no audit verdict applied"

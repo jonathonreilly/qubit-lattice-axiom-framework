@@ -1,77 +1,70 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_source_measure_sharp_record_onb_2026_06_05.py
-runner_sha256: 227a8822552f73111fbec54327bcc73dec679a3631b4575caadc809455390a52
+runner_sha256: ff04dcbe0c19a648273860d1a6ec417802a854054431f95217e6434294387efb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 ================================================================================
-SAME-SOURCE ORTHONORMAL Y_T TOP/W RESPONSE BASIS — LOAD-BEARING REPROOF
+SIX DIAGONAL E_ii OPERATORS — FINITE ORTHONORMAL-BASIS REPROOF
 ================================================================================
 
-Part 1: anchor context (non-fatal; reproof does not depend on it)
-[INFO] anchor present: docs/SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md
-[INFO] anchor present: docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
-[INFO] anchor present: docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md
-[INFO] anchor present: docs/G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md
-[INFO] anchor present: docs/MINIMAL_AXIOMS_2026-06-05.md
-[INFO] note mentions: same-source orthonormal: True
-[INFO] note mentions: source-semantics: True
-[INFO] note mentions: Status authority: True
+Part 1: source-note boundary
+[PASS] companion note exists: docs/SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md
+[PASS] note declares pure diagonal component-response lemma
+[PASS] note says it is not a physical Y_T/top/W response theorem
+[PASS] note says it does not derive g_bare
+[PASS] old same-source Y_T/top/W basis phrase is absent
+[PASS] old top/W form-factor matching claim is absent
+[INFO] context target present: docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
 
-Part 2: same-source carrier dimension
-[PASS] weak-isospin multiplicity is 2: 2
-[PASS] color rank N_c is 3 (graph-first SU(3)): 3
-[PASS] Q_L color-isospin carrier dimension is 2*N_c = 6: 6
-[PASS] there are exactly six response operators O_i: 6
-[PASS] all six O_i act on the same C^6 carrier (shape 6x6)
-[PASS] the six O_i have distinct single-component supports on the shared carrier
+Part 2: fixed C^6 diagonal carrier
+[PASS] ambient vector space dimension is fixed to 6: 6
+[PASS] there are exactly six operators O_i: 6
+[PASS] all six O_i act on the same C^6 ambient space
+[PASS] each O_i is Hermitian
+[PASS] each O_i is idempotent
+[PASS] each O_i has exactly one nonzero diagonal entry: [((0, 0),), ((1, 1),), ((2, 2),), ((3, 3),), ((4, 4),), ((5, 5),)]
+[PASS] the six supports are distinct
 
-Part 3: Hilbert-Schmidt Gram = I (orthonormal), exact
-[PASS] HS Gram matrix equals the 6x6 identity (orthonormal): Matrix([[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1]])
-[PASS] each O_i has unit HS norm Tr(O_i^dag O_i) = 1
-[PASS] distinct O_i are HS-orthogonal Tr(O_i^dag O_j) = 0
-[PASS] vector realization O_i=e_i gives the same identity Gram: Matrix([[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1]])
+Part 3: Hilbert-Schmidt Gram = I_6
+[PASS] HS Gram matrix equals the 6x6 identity: Matrix([[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1]])
+[PASS] each O_i has unit HS norm
+[PASS] distinct O_i are HS-orthogonal
+[PASS] coordinate-vector realization gives the same identity Gram: Matrix([[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1]])
 
-Part 4: span / completeness (rank = 6)
-[PASS] the six O_i are linearly independent (rank 6): 6
-[PASS] the six O_i resolve the carrier: sum_i O_i = I_6: Matrix([[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1]])
-[PASS] any diagonal component-response is spanned: D = sum_i Tr(O_i^dag D) O_i
-[PASS] the recovered HS coefficients are the components d_i
+Part 4: diagonal completeness and reconstruction
+[PASS] the six O_i are linearly independent: 6
+[PASS] rank equals dim(D_6) = 6
+[PASS] the six O_i resolve the identity: sum_i O_i = I_6: Matrix([[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1]])
+[PASS] HS coefficients recover the diagonal entries d_i
+[PASS] every symbolic diagonal operator reconstructs exactly
 
-Part 5: democratic top response and the 1/sqrt(6) amplitude
-[PASS] O_top = (1/sqrt6) sum_i O_i has unit HS norm: 1
-[PASS] component 0 amplitude of O_top equals 1/sqrt(6): sqrt(6)/6
-[PASS] component 2 amplitude of O_top equals 1/sqrt(6): sqrt(6)/6
-[PASS] component 5 amplitude of O_top equals 1/sqrt(6): sqrt(6)/6
-[PASS] F_Htt^2 = g^2/(2 N_c) = 1/6 at g=1, N_c=3: 1/6
-[PASS] F_Htt = 1/sqrt(6) matches the O_top component amplitude
-[PASS] O_top invariant under adjacent component swap 0<->1
-[PASS] O_top invariant under adjacent component swap 1<->2
-[PASS] O_top invariant under adjacent component swap 2<->3
-[PASS] O_top invariant under adjacent component swap 3<->4
-[PASS] O_top invariant under adjacent component swap 4<->5
-[PASS] lambda*O_top has HS norm lambda^2: lambda**2
+Part 5: democratic diagonal unit
+[PASS] O_dem has unit HS norm: 1
+[PASS] all six components of O_dem equal 1/sqrt(6): [sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6]
+[PASS] component amplitude is 1/sqrt(6)
+[PASS] O_dem is invariant under adjacent coordinate swap 0<->1
+[PASS] O_dem is invariant under adjacent coordinate swap 1<->2
+[PASS] O_dem is invariant under adjacent coordinate swap 2<->3
+[PASS] O_dem is invariant under adjacent coordinate swap 3<->4
+[PASS] O_dem is invariant under adjacent coordinate swap 4<->5
+[PASS] adjacent-swap fixed subspace has nullity one: {'rank': 5, 'nullity': 1}
+[PASS] lambda*O_dem has HS norm lambda^2: lambda**2
 [PASS] unit-response condition selects lambda = 1
 
 Part 6: numpy cross-check
-[PASS] numpy HS Gram = I to 1e-12: 0.0
+[PASS] numpy HS Gram = I_6 to 1e-12: 0.0
 [PASS] numpy rank of the six O_i is 6: 6
-[PASS] numpy O_top component amplitude = 1/sqrt(6) to 1e-12: 0.0
-
-Part 7: source-semantics bookkeeping (interpretational, not a physics theorem)
-[PASS] dW/dJ_0|_0 = Tr(D^-1 O_0) (response along component 0): 1
-[PASS] dW/dJ_3|_0 = Tr(D^-1 O_3) (response along component 3): 1
-[PASS] dW/dJ_5|_0 = Tr(D^-1 O_5) (response along component 5): 1
-[INFO] Part 7 is the Record-axiom-grounded INTERPRETATION of the source handle
-[INFO] It is NOT a reproof that record interventions are THE physical source semantics
+[PASS] numpy identity resolution holds to 1e-12: 0.0
+[PASS] numpy diagonal reconstruction holds to 1e-12: 0.0
 
 wrote outputs/audit_companion_source_measure_sharp_record_onb_2026_06_05.json
 
 ================================================================================
-TOTAL: 33 PASS / 0 FAIL
-SUMMARY: PASS=33 FAIL=0
+TOTAL: 37 PASS / 0 FAIL
+SUMMARY: PASS=37 FAIL=0
 
 ----- stderr -----
 

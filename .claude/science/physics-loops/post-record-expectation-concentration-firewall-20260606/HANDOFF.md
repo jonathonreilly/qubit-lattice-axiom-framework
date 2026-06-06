@@ -41,9 +41,7 @@ the finite law needed for calibrated p-values or audit decisions.
 
 ## Next exact action
 
-Push the PR-status commit, re-check PR #2832 after `audit_pipeline` settles,
-record final clean status if clean, then pivot to the next independent dynamics
-lane.
+Closed for campaign purposes. Pivot to the next independent dynamics lane.
 
 ## PR
 
@@ -52,4 +50,7 @@ pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/28
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline queued at first verification"
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "no remaining statusCheckRollup entries at final verification"
 ```

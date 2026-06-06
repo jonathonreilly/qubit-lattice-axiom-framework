@@ -40,6 +40,18 @@ status_check_rollup: "audit_pipeline queued at first verification"
 Disposition: queued check state recorded; final clean/dirty state must be
 recorded after GitHub finishes the audit-lane check.
 
+Final PR verification:
+
+```yaml
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2832"
+mergeable: MERGEABLE
+merge_state_status: CLEAN
+status_check_rollup: "no remaining statusCheckRollup entries at final verification"
+```
+
+Disposition: PR #2832 is open, mergeable, and clean. Block closed for campaign
+purposes.
+
 ## Review constraints
 
 - Do not apply audit verdicts.

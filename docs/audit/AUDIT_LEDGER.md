@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1292 |
+| unaudited | 1291 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 66 |
+| ~~audited_conditional~~ | 67 |
 | ~~audited_failed~~ | 13 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1097 |
-| `audited_conditional` | 66 |
+| `audited_conditional` | 67 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 57 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1599 |
+| `unaudited` | 1598 |
 
 | claim_type | count |
 |---|---:|
@@ -1286,6 +1286,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_dynamics_authority_stack_map_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_selection_rule_target_vector_firewall_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13893,6 +13894,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the current ledger snapshot, the selector/dial rows subdivide into 105 Koide/generation, 77 stability/dynamics, 44 measure/weight/normalization, and 1 generic selector-rule row, totaling 227.  _(class `A`)_
 - **chain closes:** False — The presented count chain does not close: the runner's computed output reports 233 selector/dial rows with sub-bucket counts 103, 86, 43, and 1, while the note claims 227 rows with counts 105, 77, 44, and 1.
 - **rationale:** The runner source genuinely reads the audit ledger and recomputes row buckets, so the relevant load-bearing check is an internal count/subdivision consistency check rather than a physics derivation. The completed runner output records FAIL=2 and its computed counts contradict the source note's table and status certificate. The source code also prints some summary sub-counts as constants, but the earlier computed bucket listing and SELECTOR_DIAL_ROWS=233 expose the mismatch. Firewall flags pass, but they do not repair the failed subdivision count claim.
+- **auditor confidence:** high
+
+### `post_record_selector_tangent_readout_weight_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** A supplied finite selector/tangent/readout weight prototype and its claimed coverage of the selector_tangent_readout_weight row bucket, with selector authority and physical measure left open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-193827-2bbd9601a2-post_record_selector_tangent`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supplying a finite tangent/readout carrier, a positive tangent metric or Hessian, nonnegative readout weights, and exact normalization/quadratic checks yields a finite readout/tangent weight certificate.  _(class `A`)_
+- **chain closes:** False — The independent arithmetic checks close for the supplied toy data: (1,3) normalizes to (1/4,3/4), the 2x2 metric has positive leading minor and determinant, the stated quadratic value is 9/2, and (1,15) normalizes to (1/16,15/16). The chain does not close as written because the packet/runner reports 7 current selector_tangent_readout_weight rows against the note and hard-coded expected count of 6, and the actual selector/readout/metric authority remains supplied rather than derived.
+- **rationale:** The finite supplied-weight arithmetic is exact, but it is an algebraic check over supplied carrier/metric/readout inputs rather than a Record-derived selector, readout primitive, metric, Born law, or physical measure. The completed runner exits nonzero because the current selector_tangent_readout_weight bucket has 7 rows while the note and runner expect 6. The runner also dynamically imports scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py for the row bucket, but that helper source is not included in the restricted packet despite being load-bearing for the failed coverage check.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

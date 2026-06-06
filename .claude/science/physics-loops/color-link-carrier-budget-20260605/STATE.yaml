@@ -1,0 +1,33 @@
+loop_slug: color-link-carrier-budget-20260605
+campaign: "12h physics-loop campaign down framework lanes"
+campaign_started_utc: "2026-06-06T01:39:56Z"
+campaign_deadline_utc: "2026-06-06T13:39:56Z"
+current_goal: "Give an exact finite-dimensional carrier budget for base-SU(3) link-index routing."
+target_status: bounded-support
+cycle_count: 6
+active_route: "one-qubit link obstruction and two-qubit symmetric endpoint minimal carrier support"
+hard_residual: "Two-qubit symmetric endpoint can host the color 3, but projection/constraint, link-end convention, SU(3) transport, Gauss/Wilson observables, action/couplings/rates/time, and color-record readout remain open."
+branch: physics-loop/color-link-carrier-budget-20260605
+base_branch: physics-loop/color-mr-carrier-routing-split-20260605
+files_touched:
+  - docs/COLOR_LINK_INDEX_ROUTING_CARRIER_BUDGET_2026-06-05.md
+  - scripts/frontier_color_link_index_routing_carrier_budget_2026_06_05.py
+  - logs/runner-cache/frontier_color_link_index_routing_carrier_budget_2026_06_05.txt
+  - .claude/science/physics-loops/color-link-carrier-budget-20260605/
+open_imports:
+  - "Symmetric projection/constraint for two-qubit link endpoints."
+  - "Canonical link-end qubit pairing convention."
+  - "SU(3)-restricted parallel transport on the symmetric block."
+  - "Endpoint Gauss generators, Wilson observables, action/couplings/rates/time."
+  - "Color-record readout antecedent."
+no_go_routes:
+  - "One primitive qubit endpoint cannot carry the color fundamental."
+  - "Generic U(4) transport on two qubits is not the same as SU(3) color routing."
+  - "Post-record append/count does not supply link-index routing."
+trace_gate_classification: negative_route_pruning
+trace_reachability: prunes
+claim_status: bounded-support
+review_findings: "local review pass; runner PASS=51 FAIL=0; py_compile pass; git diff --check pass; overclaim wording sweep empty"
+pr_status: "pending"
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Do not stop campaign after this block while runtime remains."

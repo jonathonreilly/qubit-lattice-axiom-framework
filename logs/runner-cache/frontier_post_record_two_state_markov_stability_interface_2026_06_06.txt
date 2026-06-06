@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_two_state_markov_stability_interface_2026_06_06.py
+runner_sha256: 1976616be4df2da60cfedbea803826117be5c45d2016551cb64a5672f5c65082
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -60,3 +68,6 @@ SUPPLIED_TWO_STATE_MARKOV_STABILITY_INTERFACE=TRUE
 STATIONARY_LOCATION_EXACT=TRUE
 RECORD_DERIVES_KERNEL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

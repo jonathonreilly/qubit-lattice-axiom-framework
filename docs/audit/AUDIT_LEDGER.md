@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 701 |
+| **retained_bounded** | 702 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1281 |
+| unaudited | 1280 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,22 +61,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1104 |
+| `audited_clean` | 1105 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 59 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1588 |
+| `unaudited` | 1587 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1333 |
+| `bounded_theorem` | 1334 |
 | `decoration` | 53 |
 | `meta` | 322 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 760 |
+| `positive_theorem` | 759 |
 
 | criticality | count |
 |---|---:|
@@ -923,6 +923,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_supplied_orientation_bridge_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_selection_rule_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_transition_kernel_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_two_state_markov_stability_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -14047,6 +14048,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given a finite alphabet, an initial law, and a supplied row-stochastic kernel K, finite-history probabilities are mu_0(o_0) times the product of transition factors and the conditional next-count expectation is count(w)+K(o,-).  _(class `A`)_
 - **chain closes:** True — The audited claim is explicitly conditional on a supplied kernel; under that premise, normalization, product history probabilities, and count expectation follow by finite-sum algebra. The note does not claim to derive the kernel, Markov property, stationarity, clock, Born law, Hamiltonian, or generation/Koide setting.
 - **rationale:** The displayed formulas are standard finite Markov-chain and count-vector identities once the alphabet, initial law, and row-stochastic kernel are supplied. Independent inspection of the quantitative identities confirms that a row-stochastic kernel normalizes fixed-length history probabilities and that E[count(w next)|w]=count(w)+sum_o' K(o,o')e_o'=count(w)+K(o,-). The runner source performs actual finite enumeration and fraction arithmetic rather than merely printing constants, and its firewall checks keep the supplied-kernel premise separate from any claimed derivation of physical dynamics.
+- **auditor confidence:** high
+
+### `post_record_two_state_markov_stability_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For a supplied two-state kernel K(a,b) with 0<a,b<1, the stationary vector is pi=(b/(a+b),a/(a+b)) and first-coordinate deviations contract by 1-a-b, giving a stable stationary location for that supplied kernel.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-195932-a2c41c1cc1-post_record_two_state_markov`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any row probability vector p=(x,1-x), (pK)_0 - pi_0 = (1-a-b)(p_0 - pi_0), so |1-a-b|<1 gives attraction to pi.  _(class `A`)_
+- **chain closes:** True — Independently expanding gives (pK)_0=b+x(1-a-b) and pi_0=b/(a+b), hence the stated deviation identity; iteration gives contraction by powers of 1-a-b. The kernel, physical bridge, and dial selection are explicitly outside the audited scope.
+- **rationale:** The load-bearing step is a direct algebraic identity for a supplied finite Markov kernel, not a numerical fit or symbol renaming. Independent calculation confirms the stationary vector, normalization, equal-letter subcase, biased subcase, and contraction factor, including the runner's displayed sample values. The clean verdict is limited to the supplied-kernel stability interface and does not certify any derivation or physical selection of the kernel, bridge, clock, Born law, Hamiltonian, generation dial, or Koide dial.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

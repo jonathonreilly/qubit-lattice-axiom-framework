@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 275 | 22.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_hs_rigidity_narrow.py` |
+| 1 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | audit_in_progress | critical | 275 | 22.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_hs_rigidity_narrow.py` |
 | 2 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 1012 | 20.48 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_kawamoto_smit_phase_forcing.py` |
 | 3 | `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | unaudited | critical | 1003 | 11.97 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/microcausality_finite_range_h_bridge_2026_05_09.py` |
 | 4 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | positive_theorem | unaudited | critical | 1000 | 20.47 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_microcausality_check.py` |

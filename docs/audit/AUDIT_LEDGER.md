@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 184 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 681 |
+| **retained_bounded** | 682 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
 | unaudited | 1360 |
-| audit_in_progress | 1 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1057 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1058 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -186,6 +184,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2129,6 +2128,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Since the imported transfer operator is the two-step block T_hat^2 = exp(-2 a_tau H_hat), Hamiltonian and gap reconstruction must use the block time 2 a_tau: H = -(1/(2 a_tau)) log(T_hat^2 / M_T) and m_gap = -(1/(2 a_tau)) log(lambda_1 / M_T).  _(class `A`)_
 - **chain closes:** True — The cited retained_bounded authority supplies T_hat^2 positive Hermitian and T_hat^2 = exp(-2 a_tau H_hat). Standard finite-dimensional functional calculus then gives the corrected 1/(2 a_tau) normalization and shows the old 1/a_tau form is exactly twice the same excitation energies.
 - **rationale:** The load-bearing bridge is not a tuned numerical match or a renaming; it is spectral algebra over the retained_bounded two-step transfer authority. Independently, T_odd T_even has determinant 1 and trace 2 cosh(2E), so its decaying eigenvalue is e^(-2E), and applying -log with denominator 2 a_tau recovers E/a_tau while denominator a_tau gives 2E/a_tau. The runner source materially computes the single-step alternation, two-step eigenvalues, Fock-space positivity, functional-calculus Hamiltonian, and gap checks rather than merely printing constants. The clean verdict is bounded to the free finite staggered surface supported by the one-hop authority.
+- **auditor confidence:** high
+
+### `axiom_first_spectrum_condition_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional spectrum-condition statement for the staggered-only two-step blocked transfer matrix T := T_hat^2 on the free/fixed-background retained sector: SC1-SC2 from positive Hermitian T, SC3 conditional on a non-degenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-163650-fa946d7fbb-axiom_first_spectrum_conditi`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Because spec(T) is contained in (0,M_T], finite-dimensional functional calculus defines log(T/M_T), and H := -(1/(2 a_tau)) log(T/M_T) is self-adjoint with non-negative spectrum.  _(class `A`)_
+- **chain closes:** True — The spectral-calculus step is an elementary algebraic consequence of the retained-grade positive-Hermitian two-step transfer input and the retained blocked-time normalization bridge. The gap and temporal-decay statements are explicitly conditional and do not assert an independently derived universal gap or spatial cluster decomposition.
+- **rationale:** All load-bearing upstream authorities in the restricted packet are retained-grade or retained-bounded, and the theorem’s main step is finite-dimensional spectral theory over those inputs. The factor 1/(2 a_tau) is now supported by the blocked-time normalization bridge, so the previous factor-of-two normalization issue is closed within the stated two-step scope. The runner checks a finite positive-Hermitian two-step exhibit and the corrected normalization; it is supportive, not the source of the proof. The note does not overclaim a closed-form non-degeneracy theorem, U-integrated full interacting SU(3) closure, Wilson extension, or unconditional spatial clustering.
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`

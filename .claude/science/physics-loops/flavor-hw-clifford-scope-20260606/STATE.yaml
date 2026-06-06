@@ -1,0 +1,28 @@
+loop: flavor-hw-clifford-scope-20260606
+mode: science-fix
+date: 2026-06-06
+target_claim_id: flavor_hw_clifford_does_not_constrain_r_2026-06-02
+target_status: bounded-support
+active_route: scope-too-broad-repair
+current_surface_status: bounded-support
+audit_effective_status_change_claimed: false
+files_touched:
+  - docs/FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md
+  - scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py
+  - logs/runner-cache/flavor_hw_clifford_does_not_constrain_r_2026_06_02.txt
+  - .claude/science/physics-loops/flavor-hw-clifford-scope-20260606/
+closed_in_this_block:
+  - narrowed the row to the auditor-supported Fourier/HW no-go
+  - removed unproved r=1 Wigner/PSD/full-orbit landmark claims from load-bearing scope
+  - added an explicit trace/traceless-HS invariance runner check
+verification:
+  - python3 -m py_compile scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py
+  - python3 scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py --force --allow-non-main --push-mode none
+  - python3 scripts/precompute_audit_runners.py --runners scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py --check-only --allow-non-main --push-mode none
+  - git diff --check
+  - git diff -- docs/audit --exit-code
+runner_result: PASS=6 FAIL=0
+review_disposition: local_self_review_pass_pending_codex_reviewer
+pr_status: pending
+next_exact_action: commit, push, open review PR

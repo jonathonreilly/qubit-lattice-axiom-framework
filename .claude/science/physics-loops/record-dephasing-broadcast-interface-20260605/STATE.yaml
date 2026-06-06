@@ -1,0 +1,31 @@
+loop_slug: record-dephasing-broadcast-interface-20260605
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 17
+current_goal: "Isolate the dephasing/broadcast interface for pre-record probabilities and post-record atoms."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+active_route: "broadcast isometry separates nonselective dephasing from selective record atom"
+hard_residual: "Outcome selection, Born frequencies, physical collapse, clock/rate, and dial selection remain open."
+branch: physics-loop/record-dephasing-broadcast-interface-20260605
+base_branch: physics-loop/record-dynamics-koide-dial-firewall-20260605
+stacked_on_pr: 2788
+files_touched:
+  - docs/RECORD_DEPHASING_BROADCAST_INTERFACE_2026-06-05.md
+  - scripts/frontier_record_dephasing_broadcast_interface_2026_06_05.py
+  - logs/runner-cache/frontier_record_dephasing_broadcast_interface_2026_06_05.txt
+  - .claude/science/physics-loops/record-dephasing-broadcast-interface-20260605/
+open_imports:
+  - "Selective outcome event / produced atom."
+  - "Born-frequency derivation."
+  - "Physical collapse or branch selection."
+  - "Clock/rate normalization."
+no_go_routes:
+  - "Nonselective dephasing is a produced record."
+  - "Broadcast correlations select one outcome."
+  - "Dephasing fixes a dial location."
+trace_gate_classification: upstream_support
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

@@ -41,9 +41,9 @@ This runner generalizes the repo's UD_2 graph-braid construction to arbitrary N
 Cross-validates against the repo's N=2 facts (K_5 -> Z^6 (+) Z_2,
 K_{3,3} -> Z^4 (+) Z_2, planar cycles torsion-free).
 
-All exact integral linear algebra (integer Smith normal form) and GF(2) linear
-algebra; networkx for the lattice / planarity. No PDG value, scale, coupling, or
-fitted input; no CAR / z-transport / Q=2/3 assumed.
+All exact integral linear algebra (integer Smith normal form), GF(2) linear
+algebra, and finite graph checks. No PDG value, scale, coupling, or fitted
+input; no CAR / z-transport / Q=2/3 assumed.
 
 PASS/FAIL counted per check; exits 0 iff PASS_COUNT > 0 and FAIL_COUNT == 0.
 """
@@ -58,12 +58,6 @@ try:
     import numpy as np
 except Exception as exc:  # pragma: no cover
     print(f"FAIL: numpy not available: {exc}")
-    sys.exit(1)
-
-try:
-    import networkx as nx
-except Exception as exc:  # pragma: no cover
-    print(f"FAIL: networkx not available: {exc}")
     sys.exit(1)
 
 PASS_COUNT = 0
@@ -82,6 +76,132 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     if detail:
         msg += f"  {detail}"
     print(msg)
+
+
+class SimpleGraph:
+    def __init__(self):
+        self.adj = {}
+
+    def add_node(self, node):
+        self.adj.setdefault(node, set())
+
+    def add_nodes_from(self, nodes):
+        for node in nodes:
+            self.add_node(node)
+
+    def add_edge(self, u, v):
+        self.add_node(u)
+        self.add_node(v)
+        self.adj[u].add(v)
+        self.adj[v].add(u)
+
+    def nodes(self):
+        return list(self.adj)
+
+    def edges(self):
+        out = []
+        seen = set()
+        for u, nbrs in self.adj.items():
+            for v in nbrs:
+                key = frozenset((u, v))
+                if key not in seen:
+                    seen.add(key)
+                    out.append((u, v))
+        return out
+
+    def number_of_nodes(self):
+        return len(self.adj)
+
+    def number_of_edges(self):
+        return len(self.edges())
+
+    def degree(self, node):
+        return len(self.adj[node])
+
+
+def cycle_graph(n):
+    G = SimpleGraph()
+    for i in range(n):
+        G.add_edge(i, (i + 1) % n)
+    return G
+
+
+def complete_graph(n):
+    G = SimpleGraph()
+    for i, j in itertools.combinations(range(n), 2):
+        G.add_edge(i, j)
+    return G
+
+
+def complete_bipartite_graph(a, b):
+    G = SimpleGraph()
+    for u in range(a):
+        for v in range(a, a + b):
+            G.add_edge(u, v)
+    return G
+
+
+def convert_node_labels_to_integers(G):
+    labels = {node: i for i, node in enumerate(G.nodes())}
+    H = SimpleGraph()
+    for u, v in G.edges():
+        H.add_edge(labels[u], labels[v])
+    return H
+
+
+def z3_cube_k33_subdivision_witness():
+    edges = [
+        ((1, 1, 1), (1, 1, 2)),
+        ((1, 1, 1), (2, 1, 1)),
+        ((1, 1, 2), (1, 2, 2)),
+        ((1, 2, 0), (1, 2, 1)),
+        ((1, 2, 0), (2, 2, 0)),
+        ((1, 2, 1), (1, 2, 2)),
+        ((1, 2, 2), (2, 2, 2)),
+        ((2, 0, 0), (2, 0, 1)),
+        ((2, 0, 0), (2, 1, 0)),
+        ((2, 0, 1), (2, 0, 2)),
+        ((2, 0, 2), (2, 1, 2)),
+        ((2, 1, 0), (2, 2, 0)),
+        ((2, 1, 1), (2, 1, 2)),
+        ((2, 1, 1), (2, 2, 1)),
+        ((2, 1, 2), (2, 2, 2)),
+        ((2, 2, 0), (2, 2, 1)),
+        ((2, 2, 1), (2, 2, 2)),
+    ]
+    G = SimpleGraph()
+    for u, v in edges:
+        G.add_edge(u, v)
+    return G
+
+
+def is_unit_z3_subgraph(G):
+    return all(sum(abs(a - b) for a, b in zip(u, v)) == 1 for u, v in G.edges())
+
+
+def has_k33_subdivision_core(G):
+    branch = [v for v in G.nodes() if G.degree(v) != 2]
+    if len(branch) != 6 or any(G.degree(v) != 3 for v in branch):
+        return False, f"branch={[(v, G.degree(v)) for v in branch]}"
+    core_edges = set()
+    branch_set = set(branch)
+    for start in branch:
+        for nbr in G.adj[start]:
+            prev, cur = start, nbr
+            while cur not in branch_set:
+                nxts = [x for x in G.adj[cur] if x != prev]
+                if len(nxts) != 1:
+                    return False, f"bad subdivision vertex {cur}"
+                prev, cur = cur, nxts[0]
+            if start != cur:
+                core_edges.add(frozenset((start, cur)))
+    deg = {v: 0 for v in branch}
+    for edge in core_edges:
+        a, b = tuple(edge)
+        deg[a] += 1
+        deg[b] += 1
+    ok = len(core_edges) == 9 and all(value == 3 for value in deg.values())
+    return ok, f"core_edges={len(core_edges)} branch_degrees={sorted(deg.values())}"
 
 
 # ===========================================================================
@@ -333,8 +453,8 @@ def fibered_analysis(G, n):
 
 
 def subdivide_all_edges(G, k):
-    G = nx.convert_node_labels_to_integers(G)
-    H = nx.Graph()
+    G = convert_node_labels_to_integers(G)
+    H = SimpleGraph()
     H.add_nodes_from(G.nodes())
     nxt = max(G.nodes()) + 1
     for a, b in G.edges():
@@ -360,10 +480,10 @@ def part_A():
 
     # N=2 cross-validation against GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY note.
     n2 = [
-        ("C_5 (planar)", nx.cycle_graph(5), 1, []),
-        ("K_4 (planar)", nx.complete_graph(4), 4, []),
-        ("K_5", nx.complete_graph(5), 6, [2]),
-        ("K_{3,3}", nx.complete_bipartite_graph(3, 3), 4, [2]),
+        ("C_5 (planar)", cycle_graph(5), 1, []),
+        ("K_4 (planar)", complete_graph(4), 4, []),
+        ("K_5", complete_graph(5), 6, [2]),
+        ("K_{3,3}", complete_bipartite_graph(3, 3), 4, [2]),
     ]
     for name, G, b_exp, t_exp in n2:
         b1, tor, sizes, ok = integral_H1(G, 2)
@@ -375,8 +495,8 @@ def part_A():
 
     # N=3: the clean K_5 witness keeps a single Z_2 exchange-torsion class.
     n3 = [
-        ("K_5", nx.complete_graph(5)),
-        ("K_{3,3}", nx.complete_bipartite_graph(3, 3)),
+        ("K_5", complete_graph(5)),
+        ("K_{3,3}", complete_bipartite_graph(3, 3)),
     ]
     for name, G in n3:
         b1, tor, sizes, ok = integral_H1(G, 3)
@@ -415,18 +535,18 @@ def part_B():
     print("-" * 72)
 
     # the genuine K_{3,3} subdivision living inside the real Z^3 (cube L=3) lattice
-    cube = nx.grid_graph(dim=[3, 3, 3])
-    _planar, ce = nx.check_planarity(cube, counterexample=True)
-    z3_witness = nx.convert_node_labels_to_integers(ce)
+    ce = z3_cube_k33_subdivision_witness()
+    core_ok, core_detail = has_k33_subdivision_core(ce)
+    z3_witness = convert_node_labels_to_integers(ce)
     check(
-        "(B) Z^3 cube L=3 Kuratowski witness is non-planar (a K_{3,3} subdivision)",
-        ce is not None and not nx.check_planarity(ce)[0],
-        f"V={ce.number_of_nodes()} E={ce.number_of_edges()}",
+        "(B) Z^3 cube L=3 witness is a unit-edge K_{3,3} subdivision",
+        is_unit_z3_subgraph(ce) and core_ok,
+        f"V={ce.number_of_nodes()} E={ce.number_of_edges()} {core_detail}",
     )
 
     graphs = [
-        ("K_5", nx.complete_graph(5)),
-        ("K_{3,3}", nx.complete_bipartite_graph(3, 3)),
+        ("K_5", complete_graph(5)),
+        ("K_{3,3}", complete_bipartite_graph(3, 3)),
         ("Z^3-cube K_{3,3} witness", z3_witness),
     ]
     for name, G in graphs:
@@ -451,10 +571,10 @@ def part_C():
     print("    N=3) leaves dim H^1(F2) and the codim-1 non-fibered class fixed.")
     print("-" * 72)
 
-    base = nx.complete_bipartite_graph(3, 3)
+    base = complete_bipartite_graph(3, 3)
     results = {}
     for k in (1, 2):
-        G = subdivide_all_edges(base, k) if k > 1 else nx.convert_node_labels_to_integers(base)
+        G = subdivide_all_edges(base, k) if k > 1 else convert_node_labels_to_integers(base)
         for n in (2, 3):
             dimH1, dimFIB, nonfib, sizes = fibered_analysis(G, n)
             results[(k, n)] = (dimH1, dimFIB, nonfib)

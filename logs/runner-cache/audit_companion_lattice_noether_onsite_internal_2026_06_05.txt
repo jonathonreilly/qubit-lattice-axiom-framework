@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
-runner_sha256: 5babd67784453ec6fdc6b23070d8ec21af9e2b0f6b4c091f4626baba0b39fb5c
+runner_sha256: 1fbbdff25d2f28807f470236ed5f5c1d1d12e853e79dbaece61e82b1d363c5f3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ==========================================================================
  audit_companion_lattice_noether_onsite_internal_2026_06_05.py
  Onsite/internal-restricted lattice Noether theorem, corrected U(1) sign.
- Reproves: (1) sign fixed by continuity, (2) onsite/internal restriction,
+ Reproves: (1) sign fixed by continuity, (2) onsite/internal support envelope,
            (3) arbitrary-bilinear symbolic current conservation.
 ==========================================================================
 
@@ -22,6 +22,7 @@ status: ok
   [PASS] A2 i[H,rho_p] = net inflow (operator continuity, arbitrary c_ij)
   [PASS] A3 d rho_p/dt = -(div^L j)_p with sign-fixed current (arbitrary c_ij)
   [PASS] A4 sum_p d rho_p/dt = 0 => dQ/dt = 0 (arbitrary c_ij)
+  [PASS] A5 pair current has exactly the Hamiltonian coefficient support envelope
 
 [Part B] onsite/internal generator => local nearest-neighbour current
   ||[T_onsite, S^(1)]||_max = 0.000e+00 (onsite gen commutes with shift)
@@ -55,6 +56,7 @@ status: ok
    PASS  A2 i[H,rho_p] = net inflow (operator continuity, arbitrary c_ij)
    PASS  A3 d rho_p/dt = -(div^L j)_p with sign-fixed current (arbitrary c_ij)
    PASS  A4 sum_p d rho_p/dt = 0 => dQ/dt = 0 (arbitrary c_ij)
+   PASS  A5 pair current has exactly the Hamiltonian coefficient support envelope
    PASS  B1 onsite/internal generator commutes with every lattice shift
    PASS  B2 onsite U(1): current is local bilateral nn bond current (exact symbolic)
    PASS  C1 U(1) symmetry condition [T_U1, M] = 0 on staggered carrier
@@ -64,7 +66,7 @@ status: ok
    PASS  D1 one-site (site-mixing) shift is NOT a plain symmetry of staggered M
    PASS  D2 two-site shift is a symmetry but SITE-MIXING (named open item, out of scope)
 
-TOTAL: 13 PASS / 0 FAIL
+TOTAL: 14 PASS / 0 FAIL
 
 ----- stderr -----
 

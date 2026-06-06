@@ -4,11 +4,11 @@ MAGNITUDE, NOT a Fourier-eigenoperator fixed point -- at r=1/2 the pure-shift ma
 F-fixed (||F H F^dag - H|| > 0). The genuine F-self-dual operator family carries a FREE parameter
 (r free), so 1/sqrt2 is an unmarked member, not the unique self-dual point. HW-covariance forces the
 OFF-diagonal balance b=c (equal shift- and clock-weight), never the on-site:hopping ratio r. And the
-Clifford-intrinsic discriminators land at r=1 (the dimension default).
+runner does not use Clifford-intrinsic value landmarks as selectors.
 
-So the symmetry axis re-confirms, from a new direction, that r=1/2 is the unforced equal-block weight
-(AC_phi_lambda), not a symmetry fixed point. This runner verifies the qutrit Heisenberg-Weyl algebra
-and the four facts above. It reports source checks only.
+So the Fourier/HW symmetry route re-confirms, from a new direction, that r=1/2 is the unforced
+equal-block weight (AC_phi_lambda), not a symmetry fixed point. This runner verifies the qutrit
+Heisenberg-Weyl algebra and the Fourier/HW facts above. It reports source checks only.
 """
 import numpy as np
 
@@ -78,10 +78,11 @@ def main():
         "b=c F-fixed; b!=c not; a free for all values"))
 
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
-    print("FINDING: qutrit Heisenberg-Weyl/Clifford structure does NOT force r=1/2. '|b|/a=1/sqrt2 self-dual'")
+    print("FINDING: the tested qutrit Heisenberg-Weyl/Fourier structure does NOT force r=1/2.")
+    print("'|b|/a=1/sqrt2 self-dual'")
     print("is a magnitude word-coincidence (H not F-fixed there); the true F-self-dual family has r free;")
-    print("F-covariance forces only b=c (off-diagonal), not r. Symmetry axis re-confirms")
-    print("r=1/2 = unforced equal-block weight AC_phi_lambda for this route.")
+    print("F-covariance forces only b=c (off-diagonal), not r. This route re-confirms")
+    print("r=1/2 = unforced equal-block weight AC_phi_lambda, without selecting a replacement value.")
     return 0 if all(passed) else 1
 
 

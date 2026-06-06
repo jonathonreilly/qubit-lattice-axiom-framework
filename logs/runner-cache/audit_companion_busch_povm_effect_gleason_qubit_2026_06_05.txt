@@ -3,7 +3,7 @@ runner: scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py
 runner_sha256: 829ff335ed0dd026003c6c6f1f99fcd86150de74b576c1e9e89b81cea1ed1449
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.83
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 
@@ -72,4 +72,3 @@ TOTAL: 40 PASS / 0 FAIL  (out of 40 checks)
 All checks passed: the LOAD-BEARING direction of the Busch 2003 / CFMR 2004 effect-valued (POVM) Gleason theorem is reproven from finite operator-algebra primitives on the qubit M_2(C) (and M_2 (x) M_2): an additive [steps A], nonnegative, normalized effect-functional m on E(M_2) with the parent note's POVM-additivity hypotheses (M1)-(M3) is forced to m(E) = Tr(sigma . E) [linearity (B) -> linear extension (C) -> Riesz/trace form (D)], with sigma a unique density matrix [Tr sigma = 1 from m(I)=1, sigma >= 0 from m>=0 on projectors (E)]. The dim-2 guard shows the projective (Gleason) constraint alone underdetermines sigma while POVM-additivity selects it -- the reason Busch's theorem reaches dim 2. Busch (2003), Caves-Fuchs-Manne-Renes (2004), Gleason (1957) are named comparators only, not derivation inputs.
 
 ----- stderr -----
-

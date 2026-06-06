@@ -1,0 +1,87 @@
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md exists
+PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: character_path_channel_weight
+PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: normalized finite path/channel/character weight packet
+PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: Does not derive a directional path parameter
+PASS docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `character_path_channel_weight` | 9
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: character/path/channel weight rows need a supplied weight rule and carrier
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Does not derive a prior, measure, source unit, trace state, or weight rule
+PASS docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md exists
+PASS docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md contains: Directional Path Measure
+PASS docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md contains: Beta-derivation status
+PASS docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md contains: tuned support
+PASS docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md exists
+PASS docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md contains: finite character-measure coefficient packet
+PASS docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md contains: normalized central character-measure packet
+PASS docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md contains: What This Does Not Close
+PASS docs/WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md exists
+PASS docs/WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md contains: Wilson real-positive measure surface
+PASS docs/WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md contains: not derived here
+PASS docs/WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md contains: real-positive Wilson measure surface premise
+
+------------------------------------------------------------------------------
+Finite character/path/channel checks
+------------------------------------------------------------------------------
+PASS finite supplied path weights normalize :: {'straight': Fraction(4, 5), 'bend': Fraction(1, 5)}
+PASS path weights sum to one
+PASS finite supplied channel rows normalize :: {'A': {'A': Fraction(3, 4), 'B': Fraction(1, 4)}, 'B': {'A': Fraction(1, 2), 'B': Fraction(1, 2)}}
+PASS channel transition A->A is exact :: {'A': Fraction(3, 4), 'B': Fraction(1, 4)}
+PASS path product weights compose exactly :: {'two_step': Fraction(6, 1), 'direct': Fraction(1, 1)}
+PASS composed path weights normalize exactly :: {'two_step': Fraction(6, 7), 'direct': Fraction(1, 7)}
+PASS finite supplied character coefficients normalize :: {'trivial': Fraction(3, 5), 'fundamental': Fraction(3, 10), 'adjoint': Fraction(1, 10)}
+PASS normalized packet without selector does not select physical measure
+PASS physical selector rule is still needed
+PASS negative supplied weights are rejected
+
+------------------------------------------------------------------------------
+Character/path/channel row checks
+------------------------------------------------------------------------------
+PASS character/path/channel row count is current snapshot :: 9
+PASS representative row present: architecture_note_directional_measure
+PASS representative row present: dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02
+PASS representative row present: wilson_action_surface_selector_real_positive_theorem_note_2026-05-25
+PASS audit ledger hash is unchanged :: b13455e925f8862055b350350f72ce59970275fdbbc376642b9355424d8eb737
+
+Character/path/channel rows:
+  architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
+  closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c | unaudited | unaudited | bounded_theorem | docs/CLOSURE_C_L1_PER_GRAPH_CASIMIR_NOTE_2026-05-10_cL1c.md
+  continuum_limit_note | audited_clean | retained_bounded | bounded_theorem | docs/CONTINUUM_LIMIT_NOTE.md
+  dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md
+  hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26 | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_ALPHA_BARE_FOUR_PI_CONTINUUM_MEASURE_CONTENT_ATTRIBUTION_BOUNDED_NOTE_2026-05-26.md
+  koide_aps_block_by_block_forcing_note_2026-04-21 | audited_conditional | audited_conditional | bounded_theorem | docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md
+  koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological | unaudited | unaudited | bounded_theorem | docs/KOIDE_S_L1_TOPOLOGICAL_CHERN_SIMONS_NOTE_2026-05-08_probeS_L1_topological.md
+  koide_v_l1_quartic_casimir_beta2_note_2026-05-08_probev_l1_quartic | unaudited | unaudited | bounded_theorem | docs/KOIDE_V_L1_QUARTIC_CASIMIR_BETA2_NOTE_2026-05-08_probeV_L1_quartic.md
+  wilson_action_surface_selector_real_positive_theorem_note_2026-05-25 | unaudited | unaudited | bounded_theorem | docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS physical measure selected flag is false
+PASS Record-derived path rule flag is false
+PASS Record-derived character packet flag is false
+PASS Record-derived channel rule flag is false
+PASS generation/Koide dial selected flag is false
+PASS Record-derived Born law flag is false
+PASS production dynamics derived flag is false
+PASS Record-derived physical arrow flag is false
+
+SUMMARY: PASS=47 FAIL=0
+CHARACTER_PATH_CHANNEL_WEIGHT_ROWS=9
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+PHYSICAL_MEASURE_SELECTED=FALSE
+PATH_RULE_DERIVED_FROM_RECORD=FALSE
+CHARACTER_PACKET_DERIVED_FROM_RECORD=FALSE
+CHANNEL_RULE_DERIVED_FROM_RECORD=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+BORN_LAW_DERIVED_FROM_RECORD=FALSE
+PRODUCTION_DYNAMICS_DERIVED=FALSE
+PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE

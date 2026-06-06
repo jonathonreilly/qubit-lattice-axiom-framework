@@ -9,6 +9,8 @@ after independent review. The `bounded_theorem` label is a source-side
 claim-boundary declaration, not an audit verdict.
 **Primary runner:**
 [`scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py`](../scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py)
+**Cached log:**
+[`logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt`](../logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt)
 
 ## Claim
 
@@ -213,6 +215,8 @@ qubit from primitives — the load-bearing direction the parent imported by name
 
 The companion runner
 [`scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py`](../scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py)
+with cached output
+[`logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt`](../logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt)
 verifies the following, **40 PASS / 0 FAIL** (exact sympy on a rational qubit
 instance, machine-precision numpy on `M_2` and `M_2 ⊗ M_2`):
 

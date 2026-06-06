@@ -1,0 +1,127 @@
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md exists
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: supplied flow, score, or thermal rule
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: Stable setting is not selected dial.
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: stable location on the dial is
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: flow_or_thermal_stability
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: stable setting is not selected dial
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: These rows may support a stable setting
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 77
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stable settings into selected dials
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable dial setting | supplied score/rule plus map/flow stability certificate
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: selected dial value | selector/invariance/target rule
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
+
+------------------------------------------------------------------------------
+Stable-setting certificate checks
+------------------------------------------------------------------------------
+PASS complete supplied stability evidence gives stable-setting support
+PASS missing supplied rule id stays open
+PASS stable setting without selector does not select dial
+PASS selector rule is needed for selected dial readiness
+PASS finite supplied score has unique stable setting :: middle
+PASS r=1/2 is exact fixed point for supplied r -> 2r^2 map :: {'is_fixed_point': True, 'derivative': Fraction(2, 1), 'feature': 'unstable_separatrix'}
+PASS r=1/2 is an unstable separatrix, not an attractor :: {'is_fixed_point': True, 'derivative': Fraction(2, 1), 'feature': 'unstable_separatrix'}
+PASS finite supplied thermal table has unique root :: 3/20
+
+------------------------------------------------------------------------------
+Flow/thermal row checks
+------------------------------------------------------------------------------
+PASS flow/thermal stability row count is current snapshot :: 46
+PASS stable lane counts match expected :: Counter({'thermal_or_score_stable_feature': 17, 'bounded_obstruction_or_no_selection': 15, 'generic_stable_feature': 8, 'flow_or_records_stable_feature': 3, 'generation_or_koide_stable_feature': 3})
+PASS stable lane counts sum to row count :: Counter({'thermal_or_score_stable_feature': 17, 'bounded_obstruction_or_no_selection': 15, 'generic_stable_feature': 8, 'flow_or_records_stable_feature': 3, 'generation_or_koide_stable_feature': 3})
+PASS representative row present in bounded_obstruction_or_no_selection :: koide_bae_probe_native_lattice_flow_bounded_obstruction_note_2026-05-09_probe21
+PASS representative row present in flow_or_records_stable_feature :: koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02
+PASS representative row present in generation_or_koide_stable_feature :: flavor_r_half_is_the_records_flow_separatrix_2026-06-02
+PASS representative row present in generic_stable_feature :: koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23
+PASS representative row present in thermal_or_score_stable_feature :: dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16
+PASS audit ledger hash is unchanged :: b13455e925f8862055b350350f72ce59970275fdbbc376642b9355424d8eb737
+
+Flow/thermal stable-setting lane counts:
+  bounded_obstruction_or_no_selection: 15
+  flow_or_records_stable_feature: 3
+  generation_or_koide_stable_feature: 3
+  generic_stable_feature: 8
+  thermal_or_score_stable_feature: 17
+
+[bounded_obstruction_or_no_selection]
+  dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md
+  flavor_einselection_2sector_modulo_kreality_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md
+  flavor_emergent_chirality_no_transport_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md
+  flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02 | audited_conditional | audited_conditional | no_go | docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md
+  koide_a1_probe_lattice_non_conjugation_bounded_obstruction_note_2026-05-09_probe17 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_LATTICE_NON_CONJUGATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe17.md
+  koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_Q_READOUT_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe16.md
+  koide_a1_probe_rg_fixed_point_bounded_obstruction_note_2026-05-08_probe5 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md
+  koide_bae_probe_hw_sector_identification_bounded_obstruction_note_2026-05-09_probe27 | unaudited | unaudited | bounded_theorem | docs/KOIDE_BAE_PROBE_HW_SECTOR_IDENTIFICATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe27.md
+  koide_bae_probe_interacting_dynamics_bounded_obstruction_note_2026-05-09_probe28 | unaudited | unaudited | bounded_theorem | docs/KOIDE_BAE_PROBE_INTERACTING_DYNAMICS_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe28.md
+  koide_bae_probe_kappa_prediction_test_partial_falsification_note_2026-05-09_probe29 | unaudited | unaudited | bounded_theorem | docs/KOIDE_BAE_PROBE_KAPPA_PREDICTION_TEST_PARTIAL_FALSIFICATION_NOTE_2026-05-09_probe29.md
+
+[flow_or_records_stable_feature]
+  dynamics_form_from_record_preservation_gauge_invariant_local_class_bounded_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md
+  koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_RP_SPECTRUM_REDUCE_TO_TRANSFER_POSITIVITY_NARROW_THEOREM_NOTE_2026-06-02.md
+  record_classicalization_dynamics_firewall_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md
+
+[generation_or_koide_stable_feature]
+  flavor_r_half_is_the_records_flow_separatrix_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md
+  generation_dial_dynamics_stability_classifier_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md
+  koide_records_objectivity_conditional_note_2026-05-31 | unaudited | unaudited | bounded_theorem | docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md
+
+[generic_stable_feature]
+  arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md
+  koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md
+  koide_kappa_two_orbit_dimension_factorization_note_2026-04-19 | unaudited | unaudited | bounded_theorem | docs/KOIDE_KAPPA_TWO_ORBIT_DIMENSION_FACTORIZATION_NOTE_2026-04-19.md
+  koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23 | unaudited | unaudited | bounded_theorem | docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md
+  koide_x_bae_pauli_antisymmetrization_note_2026-05-08_probex_bae_pauli | unaudited | unaudited | bounded_theorem | docs/KOIDE_X_BAE_PAULI_ANTISYMMETRIZATION_NOTE_2026-05-08_probeX_bae_pauli.md
+  koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3 | unaudited | unaudited | bounded_theorem | docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md
+  record_equal_letter_stable_location_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/RECORD_EQUAL_LETTER_STABLE_LOCATION_2026-06-05.md
+  record_function_finite_sector_algebra_2026-06-05 | audited_conditional | audited_conditional | positive_theorem | docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md
+
+[thermal_or_score_stable_feature]
+  beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04 | unaudited | unaudited | bounded_theorem | docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md
+  born_lane_comparison_note | audited_clean | retained_bounded | bounded_theorem | docs/BORN_LANE_COMPARISON_NOTE.md
+  dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md
+  flavor_missing_axiom_carrier_measure_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
+  generation_record_arrow_measure_selector_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/GENERATION_RECORD_ARROW_MEASURE_SELECTOR_2026-06-05.md
+  generation_record_partition_selector_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/GENERATION_RECORD_PARTITION_SELECTOR_2026-06-05.md
+  higgs_mass_s4_born_extension_bounded_note_2026-05-10_higgss4 | unaudited | unaudited | bounded_theorem | docs/HIGGS_MASS_S4_BORN_EXTENSION_BOUNDED_NOTE_2026-05-10_higgsS4.md
+  koide_a1_probe_continuum_limit_bounded_obstruction_note_2026-05-09_probe15 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_CONTINUUM_LIMIT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe15.md
+  koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05 | audited_conditional | audited_conditional | bounded_theorem | docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_FINITE_BETA_WEIGHT_IS_THE_PARTITION_BIT_NOTE_2026-06-02.md
+
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS stable setting selects dial flag is false
+PASS generation/Koide dial selected flag is false
+PASS selected dial derived from stability flag is false
+PASS production dynamics derived flag is false
+PASS Record-derived physical arrow flag is false
+PASS clock/rate derived flag is false
+
+SUMMARY: PASS=43 FAIL=0
+FLOW_OR_THERMAL_STABILITY_ROWS=46
+BOUNDED_OBSTRUCTION_OR_NO_SELECTION_ROWS=15
+FLOW_OR_RECORDS_STABLE_FEATURE_ROWS=3
+GENERATION_OR_KOIDE_STABLE_FEATURE_ROWS=3
+GENERIC_STABLE_FEATURE_ROWS=8
+THERMAL_OR_SCORE_STABLE_FEATURE_ROWS=17
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+SELECTED_DIAL_DERIVED_FROM_STABILITY=FALSE
+PRODUCTION_DYNAMICS_DERIVED=FALSE
+PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
+CLOCK_OR_RATE_DERIVED=FALSE

@@ -1,12 +1,32 @@
 # Gauge-Vacuum Plaquette First Symmetric Three-Sample Exact Radical Reconstruction Map
 
-**Date:** 2026-04-17
-**Status:** exact retained-sector constructive theorem on the plaquette PF lane;
-the first named three-sample matrix and its inversion map are explicit algebraic
-data, so the remaining first retained `beta = 6` seam is sample evaluation, not
-reconstruction design
-**Type:** positive_theorem
+**Date:** 2026-04-17 (scope repair: 2026-06-06)
+**Status:** bounded support for the exact radical reconstruction map on the
+named first symmetric witness sector. The three-sample matrix, determinant,
+inverse map, `W_A` annihilation, and sign separation are exact algebraic data.
+This note does **not** close the physical Wilson/Haar `beta = 6` plaquette PF
+seam, does **not** evaluate the three environment samples, and does **not**
+treat the beta-side environment vector as retained authority.
+**Type:** bounded_theorem
 **Runner:** `scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py`
+
+## Audit boundary
+
+The audited core of this note is the radical reconstruction side:
+
+- exact radical-form three-sample matrix `F` on the named first symmetric
+  witness sector;
+- exact inverse map from the three sample values to the coefficient triple;
+- exact `W_A` annihilation of the `chi_(1,1)` orbit;
+- exact opposite-sign separation of the remaining `chi_(1,1)` rows;
+- exact statement that there is no further universal linear collapse below
+  the three named sample values on this witness sector.
+
+The beta-side `Z_6^env(W_A)`, `Z_6^env(W_B)`, `Z_6^env(W_C)` values remain
+open. The runner explicitly checks that the current structural surface admits
+two distinct admissible normalized beta-side witnesses that produce different
+normalized three-sample triples, so this note cannot be read as an evaluator
+for the `beta = 6` environment data.
 
 ## Question
 
@@ -19,10 +39,10 @@ numerical invertibility?
 Yes.
 
 Using the standard `pi / 16` half-angle radical identities, the full
-three-sample matrix on the first symmetric retained witness sector is explicit
+three-sample matrix on the named first symmetric witness sector is explicit
 in radicals, and the inverse reconstruction map is an exact algebraic map.
 
-So the first retained plaquette PF seam is now sharper than before:
+So the reconstruction side of the plaquette PF seam is sharper than before:
 
 - the reconstruction matrix is no longer only numerically known,
 - the inverse map is no longer only numerically known,
@@ -37,7 +57,7 @@ So the first retained plaquette PF seam is now sharper than before:
 From
 [GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_RECONSTRUCTION_NOTE_2026-04-17.md](./GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_RECONSTRUCTION_NOTE_2026-04-17.md):
 
-- the first symmetric retained witness sector is
+- the named first symmetric witness sector is
 
 `v = a_(0,0) chi_(0,0)
    + a_(1,0) (chi_(1,0) + chi_(0,1))
@@ -54,12 +74,14 @@ From
 From
 [GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md](./GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md):
 
-- after compression, the live `beta = 6` seam is already reduced to explicit
-  class-sector sample evaluation,
-- not to a new post-compression formalism.
+- on its conditional/science-only surface, the live `beta = 6` seam is reduced
+  to explicit class-sector sample evaluation rather than a new
+  post-compression formalism.
 
-The present theorem sharpens that one step further by making the first retained
-reconstruction law exact in radicals.
+The present theorem sharpens that one step further by making the named first
+symmetric reconstruction law exact in radicals. It does not supply the
+beta-side vector whose three evaluations would be inserted into that inverse
+map.
 
 ## Radical constants
 
@@ -168,12 +190,12 @@ Then
 `[a_(1,0)] = [ (c - e)/Delta        e/Delta         -c/Delta   ] [Z_B]`
 `[a_(1,1)]   [ (d - b)/Delta      (a - d)/Delta   (b - a)/Delta] [Z_C]`.
 
-So the first symmetric retained coefficient triple is recovered by one exact
+So the named first symmetric coefficient triple is recovered by one exact
 algebraic map from the three sample values.
 
 ## Corollary 3: no nontrivial universal linear relation on this witness sector
 
-On the first symmetric retained witness sector,
+On the named first symmetric witness sector,
 
 `Z = F a`.
 
@@ -181,15 +203,15 @@ Because `det(F) != 0`, there is no nonzero row vector `lambda` such that
 
 `lambda^T Z = 0`
 
-for every retained coefficient triple `a`.
+for every coefficient triple `a` on this witness sector.
 
-So on this first symmetric retained sector the current exact stack does **not**
+So on this named first symmetric sector the current exact stack does **not**
 collapse the burden below the three explicit values `Z_6^env(W_A)`,
 `Z_6^env(W_B)`, `Z_6^env(W_C)`.
 
-## Corollary 4: the first retained PF seam is now purely evaluative
+## Corollary 4: the reconstruction side is fixed, but evaluation remains open
 
-The first retained `beta = 6` plaquette PF target is now:
+The scoped reconstruction target is now:
 
 - evaluate `Z_6^env(W_A)`,
 - evaluate `Z_6^env(W_B)`,
@@ -197,7 +219,8 @@ The first retained `beta = 6` plaquette PF target is now:
 - apply the exact algebraic map above.
 
 No additional matrix design or numerical fitting step is needed on this first
-retained witness sector.
+witness sector. But the three evaluations themselves are not supplied here and
+are not forced by the current structural surface.
 
 ## Corollary 5: explicit inversion is fixed before any `beta = 6` integral closes
 
@@ -205,29 +228,30 @@ The one-slab kernel theorem, the full-slice rim-lift theorem, and the
 evaluation-seam reduction theorem already reduced the plaquette PF problem to
 sample evaluation.
 
-The present theorem closes the remaining reconstruction side of that statement:
-once the three named samples are explicit, the first retained symmetric
-coefficients follow exactly.
+The present theorem closes only the reconstruction side of that statement:
+once the three named samples are explicitly supplied by a separate retained
+evaluation theorem, the named first symmetric coefficients follow exactly.
 
 ## What this closes
 
-- exact radical-form sample matrix for the first named three-sample retained PF
-  target
+- exact radical-form sample matrix for the first named three-sample witness
+  sector
 - exact algebraic inverse map from the three named sample values to the first
-  symmetric retained coefficient triple
+  symmetric coefficient triple
 - exact structural reason the `W_A` row annihilates the `chi_(1,1)` orbit
 - exact opposite-sign separation of the remaining two `chi_(1,1)` rows
 - exact clarification that there is no further universal linear collapse below
   the three named sample values on this witness sector
-- exact clarification that the first retained `beta = 6` seam is now only
-  sample evaluation, not matrix reconstruction design
+- exact clarification that beta-side sample evaluation remains separate from
+  matrix reconstruction design
 
 ## What this does not close
 
 - explicit same-surface values `Z_6^env(W_A)`, `Z_6^env(W_B)`, `Z_6^env(W_C)`
 - explicit closed-form class-sector matrix elements of `K_6^env`
 - explicit closed-form class-sector matrix elements of `B_6(W)`
-- explicit retained coefficients beyond the first symmetric witness sector
+- explicit coefficients beyond the first symmetric witness sector
+- the physical Wilson/Haar `beta = 6` plaquette PF seam
 - the global sole-axiom PF selector theorem
 
 ## Why this matters
@@ -245,8 +269,8 @@ It can now say:
 - the exact inverse map is already known,
 - the adjoint-orbit decoupling at `W_A` is structurally understood,
 - the remaining `chi_(1,1)` rows are sign-separated exactly,
-- and the unresolved work is exactly the explicit `beta = 6` evaluation of the
-  three named sample values.
+- and the unresolved work is exactly the separate `beta = 6` environment
+  evaluation of the three named sample values.
 
 ## Command
 
@@ -256,4 +280,4 @@ python3 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_e
 
 Expected summary:
 
-- `THEOREM PASS=8 SUPPORT=3 FAIL=0`
+- `THEOREM PASS=5 SUPPORT=5 FAIL=0`

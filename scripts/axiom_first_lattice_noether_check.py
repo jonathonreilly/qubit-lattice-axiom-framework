@@ -29,9 +29,11 @@ the same Noether structure for U(1) ⊂ SU(3)):
   E4.  On-shell global charge conservation: total fermion number
        Q = Σ_x ⟨χ̄_x χ_x⟩ is constant under temporal translation.
 
-  E5.  Algebraic closure (5) -> (4): under U(1) phase substitution
-       T = i I, the bilateral current formula (5) reduces to the
-       fermion-number current (4) up to the convention factor +i.
+  E5.  Algebraic closure (5) -> (4): under onsite/internal U(1) phase
+       substitution T = i I, the bilateral current formula (5) reduces
+       to the fermion-number current (4) up to the convention factor +i.
+       The 2026-06-06 repair adds an arbitrary-bilinear symbolic check
+       for the sign convention, not only a sampled lattice value.
 
   E6.  Support-only verification of (3): the canonical staggered sublattice-
        momentum density P^μ_x = -(i/2) η_μ(x) [χ̄_x ∂^L_μ χ_x -
@@ -57,6 +59,7 @@ from __future__ import annotations
 
 import sys
 import numpy as np
+import sympy as sp
 from itertools import product
 
 
@@ -241,11 +244,11 @@ def exhibit_E3_E4(L=4, dim=3, mass=0.3, tol=1e-9):
 # ---------------------------------------------------------------------------
 
 # ---------------------------------------------------------------------------
-# E5 — algebraic closure of (5) -> (3) and (5) -> (4) (added 2026-05-03
-#      for review follow-up). Verifies that the bilateral current
-#      formula (5) reduces to the explicit (3) momentum density and
-#      (4) fermion-number current under the corresponding T^A
-#      substitution, on a small lattice.
+# E5 — algebraic closure of (5) -> (4) (added 2026-05-03 for review
+#      follow-up; strengthened 2026-06-06). Verifies that the onsite/internal
+#      U(1) phase substitution in the bilateral current formula (5) reduces
+#      to the fermion-number current (4), and checks the sign convention
+#      exactly for arbitrary forward/backward bilinears.
 # ---------------------------------------------------------------------------
 
 def exhibit_E5(L=4, dim=3, mass=0.3, tol=1e-12):
@@ -279,17 +282,19 @@ def exhibit_E5(L=4, dim=3, mass=0.3, tol=1e-12):
             J4 = -0.5 * eta * (Minv[ip, i] + Minv[i, ip])
             closure_max = max(closure_max, abs(J5_real - J4))
             n_sites += 1
-    symbolic_bilinear = 1.0
-    symbolic_j5 = 0.5j * symbolic_bilinear
-    symbolic_j4 = -0.5 * symbolic_bilinear
-    symbolic_err = abs(1j * symbolic_j5 - symbolic_j4)
-    closure_max = max(closure_max, symbolic_err)
+    B_forward, B_backward, eta_symbol = sp.symbols("B_forward B_backward eta")
+    J5_phase = sp.I * sp.Rational(1, 2) * eta_symbol * (B_forward + B_backward)
+    J5_real = sp.I * J5_phase
+    J4_real = -sp.Rational(1, 2) * eta_symbol * (B_forward + B_backward)
+    symbolic_residual = sp.simplify(J5_real - J4_real)
+    symbolic_pass = symbolic_residual == 0
 
     print(f"  L={L}, dim={dim}, mass={mass}, sites checked={n_sites}")
-    print(f"  symbolic nonzero bilinear convention error = {symbolic_err:.3e}")
+    print(f"  symbolic arbitrary-bilinear residual i*(i/2)*eta*(B+ + B-) - J4 = {symbolic_residual}")
     print(f"  max |J5_real - J4| = {closure_max:.3e}  (target: 0 to machine precision)")
-    e5_pass = closure_max < tol
+    e5_pass = closure_max < tol and symbolic_pass
     print(f"  Bilateral (5) under T = i I closes algebraically to (4):")
+    print(f"  symbolic arbitrary-bilinear verdict: {'PASS' if symbolic_pass else 'FAIL'}")
     print(f"  E5 verdict: {'PASS' if e5_pass else 'FAIL'}")
     return e5_pass
 
@@ -508,6 +513,8 @@ def main():
     print(" 2026-05-10 gate-recategorization repair: + E6 (3) divergence check")
     print(" 2026-05-25 Step 4b boundary repair: E6 support-only, + E7 field-level")
     print(" exact two-step Ward identity")
+    print(" 2026-06-06 onsite-generator repair: E5 arbitrary-bilinear symbolic")
+    print(" sign check; (5) scoped to onsite/internal infinitesimal generators")
     print("=" * 72)
 
     e1 = exhibit_E1(L=2, dim=3)

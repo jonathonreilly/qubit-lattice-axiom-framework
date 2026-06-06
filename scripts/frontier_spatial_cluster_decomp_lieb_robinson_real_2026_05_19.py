@@ -10,11 +10,11 @@ Eight verifications exhibiting:
   V1: Locality of nested commutators on a 6-site spin-1/2 Heisenberg chain
       (supports of [H, A], [H, [H, A]], ... shrink to the predicted thickening).
   V2: Triangle-inequality bound on nested commutator norm vs the
-      (2J)^n · K^n · |X| factor for n = 1, 2, 3, 4.
+      (2J)^n · D_I^n · |X| factor for n = 1, 2, 3, 4.
   V3: Lieb-Robinson commutator bound for separated operators at multiple times
       via exact diagonalization on the 6-site chain.
   V4: Lieb-Robinson velocity extraction from numerical commutator data.
-      Compare to theoretical v_LR = 2 J K R_0 e.
+      Compare to theoretical v_LR = 2 J D_I R_0 e.
   V5: Finite-N cluster-support fit on the same chain: extract the gap Δ,
       compute connected correlators C(R), fit an effective ξ, compare to the
       loose v_LR/Δ upper scale without promoting a thermodynamic theorem.
@@ -215,19 +215,19 @@ def V1_locality_nested_commutators(N: int = 6) -> VResult:
 # ============================================================================
 
 def V2_nested_commutator_norm_bound(N: int = 6) -> VResult:
-    """For A = S_z^{0}, verify ‖C_n(A)‖ ≤ (2J)^n · K^n · |X| · ‖A‖ for n = 1..4,
-    with K the path-multiplicity bound from Lemma B.
+    """For A = S_z^{0}, verify ‖C_n(A)‖ ≤ (2J)^n · D_I^n · |X| · ‖A‖ for n = 1..4,
+    with D_I the interaction-graph adjacent-term degree bound from Lemma B.
 
     For a 1D Heisenberg chain, J = 1 (link bound: ‖S_i S_j‖ ≤ 1/4 for each
     spin, ‖h_{i,i+1}‖ = J · sup(‖S_i · S_{i+1}‖) ≤ J · 3/4 ≤ J, so we use
-    J = 1 as a conservative bound). K bounds the path-multiplicity at each
-    growth step: K ≤ Z_max + 1 = 3 (each site has ≤ 2 neighboring h_Z and one
-    self-term in our case, but for nearest-neighbor only, K=2 suffices).
+    J = 1 as a conservative bound). D_I bounds the local chain branching at
+    each step: D_I ≤ Z_max + 1 = 3 (each site has ≤ 2 neighboring h_Z and one
+    self-term in our case, but for nearest-neighbor only, D_I=2 suffices).
 
-    Use K = 3 as a coarse, safe bound.
+    Use D_I = 3 as a coarse, safe bound.
     """
     J_norm = 0.75  # actual norm of each h_{i,i+1} = J/4 · ‖σ·σ‖ ≤ 3J/4
-    K = 3.0
+    D_I = 3.0
     X_size = 1
     H = heisenberg_hamiltonian(N, J=1.0, open_bc=True)
     A = site_op(S_Z, 0, N)
@@ -238,7 +238,7 @@ def V2_nested_commutator_norm_bound(N: int = 6) -> VResult:
     for n in range(1, 5):
         C = nested_commutator(H, A, n)
         Cn_norm = np.linalg.norm(C, ord=2)
-        bound = (2.0 * J_norm) ** n * (K ** n) * X_size * A_norm
+        bound = (2.0 * J_norm) ** n * (D_I ** n) * X_size * A_norm
         ratio = Cn_norm / bound
         metrics[f"n_{n}_actual"] = float(Cn_norm)
         metrics[f"n_{n}_bound"] = float(bound)
@@ -271,8 +271,8 @@ def V3_lieb_robinson_bound(N: int = 6) -> VResult:
 
     Constants used (matching the analysis in V2):
 
-        J = 0.75, K = 3, R_0 = 1, e = 2.718...
-        v_LR = 2 · J · K · R_0 · e ≈ 12.23
+        J = 0.75, D_I = 3, R_0 = 1, e = 2.718...
+        v_LR = 2 · J · D_I · R_0 · e ≈ 12.23
         ξ = R_0 / log 2 ≈ 1.44
         C_0 = 2
 
@@ -292,10 +292,10 @@ def V3_lieb_robinson_bound(N: int = 6) -> VResult:
     R = N - 1  # distance between supports of A (site 0) and B (site N-1)
 
     J_norm = 0.75
-    K = 3.0
+    D_I = 3.0
     R_0 = 1.0
     e = math.e
-    v_LR = 2.0 * J_norm * K * R_0 * e  # ≈ 12.23
+    v_LR = 2.0 * J_norm * D_I * R_0 * e  # ≈ 12.23
     xi = R_0 / math.log(2.0)
     C_0 = 2.0
 
@@ -382,7 +382,7 @@ def V4_lieb_robinson_velocity_extraction(N: int = 6) -> VResult:
 
     # Theoretical xi (with loose path-counting bound)
     J_norm = 0.75
-    K = 3.0
+    D_I = 3.0
     R_0 = 1.0
     xi_theory = R_0 / math.log(2.0)  # ≈ 1.44
 
@@ -532,7 +532,7 @@ def V6_composition_with_pr1577_su3(N_max: int = 4, tau: float = 1.0) -> VResult:
           for τ = 1, with multiplicity (dim(1,0))² = 9.
       (c) Δ_T = λ_0 - λ_1 = 1 - 0.800 ≈ 0.200 > 0.
       (d) Hamiltonian-side gap Δ = -log(λ_1 / λ_0) = -log(λ_1) = τ C_2(1,0) / (2 N_c) ≈ 0.222.
-      (e) The Lieb-Robinson velocity bound v_LR^{SU(3)} = 2 J^{SU(3)} · K · R_0 · e
+      (e) The Lieb-Robinson velocity bound v_LR^{SU(3)} = 2 J^{SU(3)} · D_I · R_0 · e
           is finite (J^{SU(3)} bounded by the canonical Wilson link norm).
 
     This composes the LR half (this PR) with PR #1577's Δ_T > 0 half.
@@ -563,14 +563,14 @@ def V6_composition_with_pr1577_su3(N_max: int = 4, tau: float = 1.0) -> VResult:
 
     # Lieb-Robinson velocity for SU(3) Wilson (canonical normalization)
     # J^{SU(3)} bounded by canonical Wilson link normalization ≈ O(1).
-    # Take J^{SU(3)} = 1 (the canonical Wilson coupling norm), K_lattice = 13 for 3D
+    # Take J^{SU(3)} = 1 (the canonical Wilson coupling norm), D_I_lattice = 13 for 3D
     # (12 plaquettes per link + 1 self-term, a conservative bound for the plaquette+staggered case).
     # The precise constant doesn't matter for V6/V7 structural verification — we just confirm
     # v_LR is finite + positive.
     J_SU3 = 1.0
-    K_lattice = 13.0
-    R_0 = math.sqrt(2.0)  # plaquette diagonal
-    v_LR_SU3 = 2.0 * J_SU3 * K_lattice * R_0 * math.e
+    D_I_lattice = 13.0
+    R_0 = 2.0  # plaquette ell_1 diameter
+    v_LR_SU3 = 2.0 * J_SU3 * D_I_lattice * R_0 * math.e
     xi_cluster_SU3 = 2.0 * v_LR_SU3 / Delta_H  # the gap-correlation length
 
     metrics = {
@@ -647,10 +647,10 @@ def V7_spatial_cluster_decomposition_su3(N_max: int = 4,
 
     # Predict exponential cluster-decay rate for the gap-induced channel:
     # connected correlator at separation R should decay as λ_1^{R/R_0}
-    # where R_0 = √2 (plaquette diagonal). The decay rate per unit length is
+    # where R_0 = 2 in the lattice ell_1 metric. The decay rate per unit length is
     # log(1/λ_1) / R_0 = Δ_H / R_0.
 
-    R_0 = math.sqrt(2.0)
+    R_0 = 2.0
     Rs = list(range(1, 7))
     predicted_decay = [(lam1 / lam0) ** (R / R_0) for R in Rs]
     log_predicted = [math.log(p) for p in predicted_decay]

@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py
+runner_sha256: d8f9db66ff4cf9172df833fda1df73a6076a05041a046e23ee1aacbfcf51e5a1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================================
+3D DENSE z=2..6 ENDPOINT: SOURCE PACKET MANIFEST
+========================================================================================
+[PASS] manifest_path_exists:endpoint_checker: scripts/lattice_3d_dense_z2_z6_endpoint_check.py
+[PASS] note_links_manifest_path:endpoint_checker: scripts/lattice_3d_dense_z2_z6_endpoint_check.py
+[PASS] manifest_path_exists:dense_helper_source: scripts/lattice_3d_dense_10prop.py
+[PASS] note_links_manifest_path:dense_helper_source: scripts/lattice_3d_dense_10prop.py
+[PASS] manifest_path_exists:endpoint_cache: logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt
+[PASS] note_links_manifest_path:endpoint_cache: logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt
+[PASS] manifest_path_exists:dense_helper_cache: logs/runner-cache/lattice_3d_dense_10prop.txt
+[PASS] note_links_manifest_path:dense_helper_cache: logs/runner-cache/lattice_3d_dense_10prop.txt
+[PASS] source_untruncated:endpoint_checker: scripts/lattice_3d_dense_z2_z6_endpoint_check.py has 3713 bytes
+[PASS] source_marker:endpoint_checker:import scripts.lattice_3d_dense_10prop as dense: import scripts.lattice_3d_dense_10prop as dense present
+[PASS] source_marker:endpoint_checker:for z_mass in [2, 3, 4, 5, 6]: for z_mass in [2, 3, 4, 5, 6] present
+[PASS] source_marker:endpoint_checker:dense.classify_sign: dense.classify_sign present
+[PASS] source_marker:endpoint_checker:ASSERTIONS:: ASSERTIONS: present
+[PASS] source_untruncated:dense_helper_source: scripts/lattice_3d_dense_10prop.py has 18865 bytes
+[PASS] source_marker:dense_helper_source:def generate(: def generate( present
+[PASS] source_marker:dense_helper_source:def propagate(: def propagate( present
+[PASS] source_marker:dense_helper_source:def make_field(: def make_field( present
+[PASS] source_marker:dense_helper_source:def classify_sign(: def classify_sign( present
+[PASS] source_marker:dense_helper_source:def near_mass_window_gain(: def near_mass_window_gain( present
+[PASS] source_marker:dense_helper_source:def mass_side_channel_bias(: def mass_side_channel_bias( present
+[PASS] cache_runner_matches:endpoint_cache: scripts/lattice_3d_dense_z2_z6_endpoint_check.py == scripts/lattice_3d_dense_z2_z6_endpoint_check.py
+[PASS] cache_sha_fresh:endpoint_cache: f84ca8703702496f2aca40bbefa3732db21f749a20ae4c7cd75d104ff17b6844 == f84ca8703702496f2aca40bbefa3732db21f749a20ae4c7cd75d104ff17b6844
+[PASS] cache_exit_ok:endpoint_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:endpoint_cache: ASSERTIONS: PASS
+[PASS] cache_runner_matches:dense_helper_cache: scripts/lattice_3d_dense_10prop.py == scripts/lattice_3d_dense_10prop.py
+[PASS] cache_sha_fresh:dense_helper_cache: 1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e == 1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e
+[PASS] cache_exit_ok:dense_helper_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:dense_helper_cache: 3D DENSE LATTICE: CANONICAL 10-PROPERTY CARD
+========================================================================================
+SUMMARY: DENSE ENDPOINT SOURCE PACKET PASS=28 FAIL=0
+========================================================================================
+
+----- stderr -----

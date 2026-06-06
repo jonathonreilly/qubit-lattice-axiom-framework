@@ -4,7 +4,10 @@
 staggered-only-sector rescope: repoint the load-bearing transfer-matrix
 positivity input from the full reflection-positivity umbrella row to the
 in-repo-derived per-config two-step transfer-positivity sector, and
-decouple (SC4) from the asserted-gap cluster-decomposition import).
+decouple (SC4) from the asserted-gap cluster-decomposition import;
+2026-06-06 blocked-time normalization repair: align `H` and `m_gap` with
+the two-step object `T := T_hat^2`, so the physical time spacing is
+`2 a_tau`).
 **Status:** support — source note on the minimal axiom surface; runner passing;
 audit-pending. (SC1)–(SC3) are stated **conditional on the
 staggered-only per-config two-step transfer positivity sector** named
@@ -38,6 +41,11 @@ The one-hop source authorities are:
   `H_hat[U] = -log(T_hat^2[U])/(2 a_τ) ≥ 0`. This carries the `T`
   positive-Hermitian input of Step 1 from the free to the fixed-background
   staggered surface. Its downstream P2 residual is not used here.
+- [`AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+  — the in-repo blocked-time normalization bridge: the staggered two-step
+  block `T_hat^2` advances two lattice time steps, so the physical
+  Hamiltonian and transfer gap use `-(1/(2 a_τ)) log(T_hat^2 / M_T)`;
+  the old `1/a_τ` normalization would double the Hamiltonian and gap.
 - [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md)
   — the positive determinant weight `det(M_KS + m·I) ≥ m^n > 0`
   config-by-config on every `SU(3)` background, supplying the positive
@@ -72,7 +80,7 @@ Hilbert space `H_phys := H_phys^(2)` — established in-repo for the free
 (`U = 1`) case and for fixed, arbitrary `SU(3)`/`U(1)` spatial backgrounds
 in temporal gauge, config-by-config, by the four sector authorities above.
 This note records the lattice analogue of the **spectrum condition** for
-that `T`: the reconstructed Hamiltonian `H := -(1/a_τ) log(T/M_T)` on
+that `T`: the reconstructed Hamiltonian `H := -(1/(2 a_τ)) log(T/M_T)` on
 `H_phys` is self-adjoint and bounded below. After this note, any package
 lane that relies on "the Hamiltonian is positive after vacuum subtraction"
 can cite this axiom-first lattice statement on the staggered-only surface
@@ -102,17 +110,27 @@ only sector authorities (free `U = 1` derivation plus its fixed-background
 extension). They are finite-dimensional by construction (a free quadratic
 fermion Fock space at fixed gauge background), so all spectral statements
 below are elementary finite-dimensional linear algebra on a bounded
-positive Hermitian `T`.
+positive Hermitian `T`. Because `T` is the two-step object `T_hat^2`, its
+physical time interval is the blocked interval `a_blk := 2 a_τ`; all energy
+and gap rates below use this blocked interval.
+
+The time-spacing convention is not an added axiom. It is inherited from
+the blocked object itself: `T_hat^2` is one period-two block and advances
+two single lattice time steps. Therefore the Hamiltonian reconstructed
+from `T := T_hat^2` is normalized by `2 a_τ`, not by `a_τ`. The companion
+bridge note and runner prove that the old `1/a_τ` normalization gives
+exactly twice the same vacuum-subtracted Hamiltonian and mass gap.
 
 ## Statement
 
 Let `T := T_hat^2` be the two-step blocked staggered-only transfer matrix
 on the finite physical Hilbert space `H_phys`, positive Hermitian by the
 sector authorities (free `U = 1` and fixed-background `SU(3)`/`U(1)`
-config-by-config). Let `M_T := ‖T‖_{op}` be its operator norm. Then on the
-staggered-only surface of the minimal axiom setup:
+config-by-config). Let `M_T := ‖T‖_{op}` be its operator norm and
+`a_blk := 2 a_τ` its blocked temporal spacing. Then on the staggered-only
+surface of the minimal axiom setup:
 
-**(SC1) Self-adjointness.** `H := -(1/a_τ) log(T / M_T)` is a
+**(SC1) Self-adjointness.** `H := -(1/(2 a_τ)) log(T / M_T)` is a
 self-adjoint operator on `H_phys`. *(Unconditional given `T` positive
 Hermitian.)*
 
@@ -122,7 +140,7 @@ energy is `E_0 := 0`, and all excited-state energies satisfy
 
 **(SC3) Energy gap (conditional on non-degeneracy).** If `T` has a
 non-degenerate top eigenvalue `M_T` with next eigenvalue `λ_1 < M_T`, then
-the mass gap `m_gap := E_1 - E_0 = -(1/a_τ) log(λ_1 / M_T) > 0`. On a
+the mass gap `m_gap := E_1 - E_0 = -(1/(2 a_τ)) log(λ_1 / M_T) > 0`. On a
 finite carrier the free staggered `T_hat^2` has a non-degenerate vacuum
 (the runner exhibits `m_gap > 0` on the tested finite surface), but
 non-degeneracy is **not** asserted as a closed-form property of every
@@ -167,7 +185,9 @@ operator with spectrum `(0, 1]`. The (finite-dimensional) functional
 calculus defines `log(T / M_T)` as a self-adjoint operator with spectrum
 `(-∞, 0]` (since `log` is real on positive reals and `log(1) = 0`).
 
-Hence `H := -(1/a_τ) log(T / M_T)` is self-adjoint on `H_phys` with
+Because `T` is the two-step block `T_hat^2`, the physical block spacing is
+`2 a_τ` by the blocked-time normalization bridge. Hence
+`H := -(1/(2 a_τ)) log(T / M_T)` is self-adjoint on `H_phys` with
 spectrum `[0, +∞)`. (No kernel-extension is needed: `T` has no nontrivial
 kernel on this finite Fock space, so `H_phys^× = H_phys`.) This proves
 (SC1) and (SC2) unconditionally given the Step-1 positivity input.
@@ -181,7 +201,7 @@ If the top eigenvalue `M_T` is non-degenerate, the next eigenvalue
 `λ_1 < M_T`, and
 
 ```text
-    m_gap   =   E_1 - E_0   =   -(1/a_τ) log(λ_1 / M_T)   >   0.    (1)
+    m_gap   =   E_1 - E_0   =   -(1/(2 a_τ)) log(λ_1 / M_T)   >   0.    (1)
 ```
 
 Non-degeneracy holds on the tested finite carrier (the runner exhibits
@@ -196,9 +216,10 @@ Step 3, not an import of an unconditional cluster-decomposition theorem.
 Given `Δ_T > 0`, the finite-block temporal transfer-matrix bridge
 ([`CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`](CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md))
 bounds the temporal connected correlator
-`|⟨A(τ) B(0)⟩_c| ≤ C e^{-Δ_T τ}` on the ground state, with an explicit
-finite-temperature excited-state-population correction; the decay length
-is `1 / m_gap`.
+`|⟨A(τ) B(0)⟩_c| ≤ C e^{-Δ_T τ}` on the ground state, where `τ` is measured
+in the same physical blocked-time units as `a_blk`, with an explicit
+finite-temperature excited-state-population correction; the decay length is
+`1 / m_gap`.
 
 What this step does **not** do: it does not establish unconditional
 spatial cluster decomposition, and it does not supply a first-principles
@@ -216,7 +237,8 @@ named in "Cited authorities". No imports from the forbidden list. The
 load-bearing input is "`T := T_hat^2` positive Hermitian on a finite
 `H_phys`"; everything downstream of it ((SC1), (SC2), and (SC3) under the
 stated non-degeneracy condition) is elementary finite-dimensional spectral
-theory on a bounded positive Hermitian operator. (SC4) additionally
+theory on a bounded positive Hermitian operator, with the generator
+normalized by the two-step blocked spacing `a_blk := 2 a_τ`. (SC4) additionally
 conditions on the temporal bridge note and on the
 gap `Δ_T > 0` of (SC3).
 
@@ -231,7 +253,8 @@ input.
 C2. *Mass-gap is the spectral-gap of `T`.* When the top eigenvalue is
 non-degenerate (SC3), any package row that quotes a mass-gap value or
 scaling can be related to the operator spectrum of the staggered-only
-two-step transfer matrix via (1).
+two-step transfer matrix via (1), using the two-step blocked time interval
+`a_blk = 2 a_τ`.
 
 C3. *Conditional temporal-clustering corollary.* Given the gap of (SC3),
 the temporal bridge note + this note give exponential temporal
@@ -267,6 +290,13 @@ honestly above (Wilson extension, `U`-integrated full interacting closure,
 unconditional spatial clustering, closed-form non-degeneracy / first-
 principles gap).
 
+**What changed in the 2026-06-06 blocked-time repair.** The theorem now
+uses the same time spacing as its load-bearing transfer object:
+`T := T_hat^2` advances two lattice time steps, so `H` and `m_gap` use
+`1/(2 a_τ)`. The primary runner now constructs the two-step object
+`T = exp(-2 a_τ H_lat)`, reconstructs `H` with `1/(2 a_τ)`, and checks
+that the old `1/a_τ` normalization is exactly `2H`.
+
 ## Citations
 
 - Minimal axiom setup: `docs/MINIMAL_AXIOMS_2026-04-11.md`
@@ -276,6 +306,8 @@ principles gap).
   `RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`,
   `STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`,
   `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`
+- blocked-time normalization bridge for the `T_hat^2` factor of two:
+  `AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
 - conditional temporal-decay bridge for (SC4) (markdown-linked in (SC4)):
   `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
 - context see-also (not load-bearing; plain text):
@@ -295,6 +327,14 @@ this note or change the audited claim scope.
   note are the load-bearing one-hop dependencies and are written as
   markdown links above so the citation-graph builder records them as
   upstream edges.
+- The blocked-time normalization bridge is now a load-bearing one-hop
+  dependency for the factor `1/(2 a_τ)` in `H` and `m_gap`. The primary
+  runner and the companion bridge runner are both linked/cached:
+  [`scripts/axiom_first_spectrum_condition_check.py`](../scripts/axiom_first_spectrum_condition_check.py),
+  [`outputs/axiom_first_spectrum_condition_check_2026-04-29.txt`](../outputs/axiom_first_spectrum_condition_check_2026-04-29.txt),
+  [`logs/runner-cache/axiom_first_spectrum_condition_check.txt`](../logs/runner-cache/axiom_first_spectrum_condition_check.txt),
+  [`scripts/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.py`](../scripts/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.py),
+  [`logs/runner-cache/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.txt`](../logs/runner-cache/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.txt).
 - `axiom_first_reflection_positivity_theorem_note_2026-04-29` and
   `axiom_first_cluster_decomposition_theorem_note_2026-04-29` are
   **context see-also only** after this rescope (backticked plain text, so

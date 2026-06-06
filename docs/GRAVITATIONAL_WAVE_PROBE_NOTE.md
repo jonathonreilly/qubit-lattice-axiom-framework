@@ -5,6 +5,7 @@
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/frontier_grav_wave_post_newtonian.py`](../scripts/frontier_grav_wave_post_newtonian.py)
+**Cached runner output:** [`logs/runner-cache/frontier_grav_wave_post_newtonian.txt`](../logs/runner-cache/frontier_grav_wave_post_newtonian.txt)
 
 ## 2026-05-29 Audit Repair
 
@@ -128,4 +129,13 @@ Poisson-field gravitational waves: NEGATIVE.
 This runner does not derive GR, physical gravitational waves, a
 post-Newtonian observable, c_lattice normalization, or an f^2 coefficient from
 retained framework primitives.
+```
+
+Current cache also reports:
+
+```text
+ARTIFACT SOURCE CHECKS
+  [PASS] Test B function body present
+  [PASS] Test C function body present
+  [PASS] source appears untruncated
 ```

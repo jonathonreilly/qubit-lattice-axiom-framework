@@ -9,6 +9,8 @@ after independent review. The `bounded_theorem` label is a source-side
 claim-boundary declaration, not an audit verdict.
 **Primary runner:**
 [`scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py`](../scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py)
+**Cached log:**
+[`logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt`](../logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt)
 
 ## Claim
 
@@ -197,6 +199,8 @@ the expected common-support effect (`diag(1/2, 0, 0)`).
 
 The companion runner
 [`scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py`](../scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py)
+with cached output
+[`logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt`](../logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt)
 verifies the following, **51 PASS / 0 FAIL** (exact sympy on rational instances,
 machine-precision numpy over `d = 2, 3, 4`):
 

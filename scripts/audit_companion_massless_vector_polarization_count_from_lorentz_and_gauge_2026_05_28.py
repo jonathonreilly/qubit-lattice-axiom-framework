@@ -1,21 +1,16 @@
 #!/usr/bin/env python3
-"""Exact-symbolic audit-companion runner for
+"""Exact-symbolic audit-companion runner for the abstract quotient scope of
 `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28`.
 
-The bounded narrow theorem supports replacing premise P2 of the parent
-g_star proof-walk note (two transverse polarizations per massless
-vector) after independent audit. The load-bearing content is a linear-algebra
-rank count on the four-component complex polarization vector
-epsilon^mu at fixed null momentum k^mu (k^2 = 0):
+The repaired source row is no longer a physical massless-vector theorem. Its
+load-bearing content is the abstract finite-dimensional quotient identity for
+V=C^4, a nonzero row ell, and a nonzero vector k in ker(ell):
 
-  (Lorentz vector components)  =  4
-  (Lorenz-gauge constraint k_mu eps^mu = 0)  =  1
-  (residual gauge orbit eps^mu ~ eps^mu + c k^mu)  =  1
+  dim_C ker(ell) / span_C{k} = 4 - 1 - 1 = 2.
 
-  =>  physical polarizations  =  4 - 1 - 1  =  2.
-
-This runner verifies the rank arithmetic and supplementary identities
-at exact-symbolic precision via sympy.
+The runner keeps the canonical null-row notation as a concrete matrix model
+for the quotient. Any physical interpretation of ell and k is outside this
+row's load-bearing scope.
 
 Companion role: not a new claim row, not a status promotion; provides
 audit-friendly evidence at exact precision for the rank arithmetic.
@@ -81,20 +76,20 @@ def main() -> int:
     print(
         "massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28"
     )
-    print("Goal: sympy verification of 4 - 1 - 1 = 2 rank arithmetic")
-    print("       on a four-component polarization vector at null momentum")
+    print("Goal: sympy verification of dim_C ker(ell)/span(k) = 4 - 1 - 1 = 2")
+    print("       for a nonzero row ell and nonzero k in ker(ell)")
     print("=" * 88)
 
     # ---------------------------------------------------------------------
-    section("Part 1 (R1-R4): rank arithmetic on the polarization quotient")
+    section("Part 1 (R1-R4): abstract rank arithmetic on ker(ell)/span(k)")
     # ---------------------------------------------------------------------
     #
     # Setup. Use mostly-minus signature eta = diag(+1, -1, -1, -1).
     # Generic null momentum k^mu = (k0, k1, k2, k3) with
     # k^2 = k0^2 - k1^2 - k2^2 - k3^2 = 0.
     #
-    # Polarization vector epsilon^mu = (e0, e1, e2, e3) is a generic
-    # complex contravariant four-vector. The Lorenz-gauge constraint reads
+    # Vector epsilon = (e0, e1, e2, e3) is a generic complex four-vector.
+    # The abstract row ell reads
     #
     #   k_mu eps^mu = eta_{mu nu} k^nu eps^mu
     #                = k0 e0 - k1 e1 - k2 e2 - k3 e3 = 0
@@ -106,20 +101,20 @@ def main() -> int:
     k0, k1, k2, k3 = symbols("k0 k1 k2 k3", real=True)
     e0, e1, e2, e3 = symbols("e0 e1 e2 e3")  # complex polarization components
 
-    # R1: total Lorentz-vector dof count = 4.
+    # R1: total vector dimension = 4.
     eps_vec = Matrix([e0, e1, e2, e3])
     check(
-        "(R1) Lorentz-vector eps^mu has 4 complex components on C^4",
+        "(R1) vector eps has 4 complex components on C^4",
         eps_vec.shape == (4, 1),
         detail=f"shape = {eps_vec.shape}",
     )
 
-    # R2: Lorenz-gauge constraint rank = 1 on C^4.
-    # The constraint is k_mu eps^mu = k0 e0 - k1 e1 - k2 e2 - k3 e3 = 0
-    # written as a 1x4 covector acting on (e0, e1, e2, e3)^T.
+    # R2: nonzero row rank = 1 on C^4.
+    # The row is ell(eps)=k0 e0 - k1 e1 - k2 e2 - k3 e3, written as a
+    # 1x4 covector acting on (e0, e1, e2, e3)^T.
     constraint_row = Matrix([[k0, -k1, -k2, -k3]])
     check(
-        "(R2a) Lorenz-gauge constraint matrix has shape (1, 4)",
+        "(R2a) abstract row ell has shape (1, 4)",
         constraint_row.shape == (1, 4),
     )
     # For generic null k^mu (not all zero), constraint matrix has rank 1.
@@ -130,33 +125,29 @@ def main() -> int:
     )
     rank_constraint = constraint_canonical.rank()
     check(
-        "(R2b) Constraint rank = 1 at canonical null k^mu = (k_z, 0, 0, k_z)",
+        "(R2b) row rank = 1 in the canonical model ell=(k_z,0,0,-k_z)",
         rank_constraint == 1,
         detail=f"rank = {rank_constraint}",
     )
 
-    # R3: residual gauge orbit rank = 1.
-    # Shift eps^mu -> eps^mu + c k^mu, where k^mu is the contravariant null
-    # momentum. The shift direction k^mu is a single vector on C^4, parameter c is
-    # one complex scalar. Rank of the shift = 1.
+    # R3: quotient direction rank = 1.
+    # Shift eps -> eps + c k, where k is a single nonzero vector in C^4 and c
+    # is one complex scalar. Rank of the shift = 1.
     k_contra_vec = Matrix([k0, k1, k2, k3])
     k_contra_canonical = k_contra_vec.subs({k0: k_z, k1: 0, k2: 0, k3: k_z})
     shift_matrix = k_contra_canonical.reshape(4, 1)  # 4x1 column = rank 1
     rank_shift = shift_matrix.rank()
     check(
-        "(R3a) Residual gauge orbit shift direction k^mu has rank 1",
+        "(R3a) quotient direction k has rank 1",
         rank_shift == 1,
         detail=f"rank = {rank_shift}",
     )
 
-    # R3b: the shift direction k^mu satisfies the Lorenz-gauge constraint
-    # (k_mu k^mu = k^2 = 0 on the null shell). Hence k^mu lies in the
-    # constraint kernel and the residual gauge transformations preserve
-    # the slice. Verify by multiplying the displayed constraint row by the
-    # displayed residual-gauge shift direction.
+    # R3b: the quotient direction k lies in ker(ell). Verify by multiplying
+    # the displayed row by the displayed quotient direction.
     kernel_containment = simplify((constraint_canonical * shift_matrix)[0])
     check(
-        "(R3b) constraint row times shift direction = k_mu k^mu = 0",
+        "(R3b) row ell times quotient direction k equals 0",
         kernel_containment == 0,
         detail=f"row*k = {kernel_containment}",
     )
@@ -170,32 +161,30 @@ def main() -> int:
     n_shift = rank_shift  # = 1
     n_physical = n_total - n_constraint - n_shift
     check(
-        "(R4) Quotient dimension = 4 - 1 - 1 = 2",
+        "(R4) abstract quotient dimension = 4 - 1 - 1 = 2",
         n_physical == 2,
         detail=f"4 - {n_constraint} - {n_shift} = {n_physical}",
     )
 
     # ---------------------------------------------------------------------
-    section("Part 2 (R5): explicit transverse basis at canonical null k^mu")
+    section("Part 2 (R5): explicit quotient representatives in the canonical model")
     # ---------------------------------------------------------------------
     #
-    # At k^mu = (omega, 0, 0, omega) the constraint k_mu eps^mu = 0 reads
-    # omega * e0 - omega * e3 = 0, i.e. e0 = e3. The residual shift
-    # eps^mu -> eps^mu + c k^mu = eps^mu + c (omega, 0, 0, omega) lets us
-    # fix e3 = 0, then the constraint forces e0 = 0. The two remaining
-    # independent components are e1 and e2.
+    # At k = (omega, 0, 0, omega) and ell=(omega,0,0,-omega), ell(eps)=0
+    # reads omega * e0 - omega * e3 = 0, i.e. e0 = e3. Quotienting by the
+    # line span(k) leaves independent representatives e1 and e2.
 
     omega = Symbol("omega", positive=True)
     k_canonical = Matrix([omega, 0, 0, omega])  # k^mu (contravariant)
     k_lower_canonical = Matrix([omega, 0, 0, -omega])  # k_mu (covariant)
 
-    # Lorenz-gauge constraint on generic eps^mu at canonical k^mu:
+    # Abstract row constraint on generic eps in the canonical model:
     constraint_canonical_eval = (
         omega * e0 - omega * e3  # = k^0 e_0 - k^3 e_3 (others = 0)
     )
     constraint_simplified = simplify(constraint_canonical_eval)
     check(
-        "(R5a) Constraint at canonical k^mu: omega*(e0 - e3) = 0 (i.e. e0 = e3)",
+        "(R5a) canonical row: omega*(e0 - e3) = 0 (i.e. e0 = e3)",
         constraint_simplified == omega * (e0 - e3),
         detail=f"constraint = {constraint_simplified}",
     )
@@ -212,12 +201,12 @@ def main() -> int:
         omega * eps_2[0] - 0 * eps_2[1] - 0 * eps_2[2] - omega * eps_2[3]
     )
     check(
-        "(R5b) eps_1^mu = (0, 1, 0, 0) satisfies k_mu eps^mu = 0",
+        "(R5b) representative eps_1 = (0, 1, 0, 0) lies in ker(ell)",
         simplify(c1) == 0,
         detail=f"constraint(eps_1) = {simplify(c1)}",
     )
     check(
-        "(R5c) eps_2^mu = (0, 0, 1, 0) satisfies k_mu eps^mu = 0",
+        "(R5c) representative eps_2 = (0, 0, 1, 0) lies in ker(ell)",
         simplify(c2) == 0,
         detail=f"constraint(eps_2) = {simplify(c2)}",
     )
@@ -238,16 +227,16 @@ def main() -> int:
     shift_check_1 = Matrix.hstack(k_canonical, eps_1)
     shift_check_2 = Matrix.hstack(k_canonical, eps_2)
     check(
-        "(R5e) eps_1 not parallel to k^mu (rank-2 with k^mu)",
+        "(R5e) eps_1 not parallel to k (rank-2 with k)",
         shift_check_1.rank() == 2,
     )
     check(
-        "(R5f) eps_2 not parallel to k^mu (rank-2 with k^mu)",
+        "(R5f) eps_2 not parallel to k (rank-2 with k)",
         shift_check_2.rank() == 2,
     )
 
     # ---------------------------------------------------------------------
-    section("Part 3 (R6): helicity basis epsilon_pm = (eps_1 +- i eps_2)/sqrt(2)")
+    section("Part 3 (R6): optional complex-basis diagnostic")
     # ---------------------------------------------------------------------
     #
     # Circular-polarization basis (complex linear combinations of the real
@@ -346,14 +335,12 @@ def main() -> int:
     )
 
     # ---------------------------------------------------------------------
-    section("Part 4 (R7): gauge-group independence")
+    section("Part 4 (R7): non-load-bearing multiplicity diagnostic")
     # ---------------------------------------------------------------------
     #
-    # The rank arithmetic 4 - 1 - 1 = 2 is per-momentum-mode, per-gauge-boson.
-    # For U(1) (one A_mu): 1 * 2 = 2 polarizations.
-    # For SU(N) (dim adj = N^2 - 1 gauge bosons A_mu^a): (N^2 - 1) * 2 each.
-    # The per-boson count is independent of the gauge group; each adjoint
-    # generator a contributes the same 4 - 1 - 1 = 2.
+    # This is retained only as a matrix-count diagnostic: if an external
+    # authority supplies N independent copies of the same quotient, the count
+    # scales by N. This runner does not supply that external authority.
 
     for N, n_adj in [(1, 1), (2, 3), (3, 8)]:
         n_polariz_per_boson = 2
@@ -373,45 +360,41 @@ def main() -> int:
         )
 
     # ---------------------------------------------------------------------
-    section("Part 5 (R8): negative check — massive case gives 3, not 2")
+    section("Part 5 (R8): non-load-bearing contrast when quotient direction is absent")
     # ---------------------------------------------------------------------
     #
-    # For a massive vector field with k^2 = m^2 > 0, the residual gauge
-    # condition k^2 Lambda = 0 forces Lambda = 0 (since k^2 != 0). Hence
-    # the residual gauge orbit is trivial (rank 0), and the polarization
-    # count is 4 - 1 - 0 = 3.
+    # Contrast: if the would-be quotient direction is not in the row kernel,
+    # the abstract quotient ker(ell)/span(k) is not defined. The old physical
+    # massive-vector language is no longer load-bearing; this block is a
+    # diagnostic count only.
 
     m_sym = Symbol("m", positive=True)
-    # At k^2 = m^2 > 0, the constraint k_mu eps^mu = 0 is still rank 1,
-    # but the residual gauge condition Box Lambda = 0 with the plane-wave
-    # ansatz Lambda = lam * exp(i k . x) reads k^2 * lam = 0. With k^2 =
-    # m^2 != 0, this forces lam = 0.
+    # This keeps the old arithmetic contrast but removes it from the
+    # load-bearing physical interpretation.
     k_sq_massive = m_sym * m_sym  # = m^2 > 0
     check(
-        "(R8a) Massive case k^2 = m^2 > 0 (non-null)",
+        "(R8a) diagnostic nonzero scalar m^2 is not zero",
         k_sq_massive != 0,
     )
-    # Residual gauge rank = 0 in massive case:
-    n_residual_massive = 0  # forced by k^2 != 0
+    # No quotient direction is supplied in this contrast.
+    n_residual_massive = 0
     n_polariz_massive = n_total - n_constraint - n_residual_massive
     check(
-        "(R8b) Massive polarization count = 4 - 1 - 0 = 3",
+        "(R8b) no-quotient contrast count = 4 - 1 - 0 = 3",
         n_polariz_massive == 3,
         detail=f"count = {n_polariz_massive}",
     )
 
-    # Sanity: massive vector has 3 polarizations (e.g. W^+- and Z each
-    # have 3 in the standard EW counting).
     check(
-        "(R8c) Massless case (k^2 = 0): 2 polarizations",
+        "(R8c) quotient case has dimension 2",
         n_total - n_constraint - n_shift == 2,
     )
     check(
-        "(R8d) Massive case (k^2 != 0): 3 polarizations",
+        "(R8d) no-quotient contrast has dimension 3",
         n_polariz_massive == 3,
     )
     check(
-        "(R8e) Difference = 1 (the longitudinal mode)",
+        "(R8e) contrast difference is 1",
         n_polariz_massive - (n_total - n_constraint - n_shift) == 1,
     )
 
@@ -421,19 +404,15 @@ def main() -> int:
     note_text = NOTE_PATH.read_text(encoding="utf-8")
 
     required_phrases = [
-        "Claim type:** bounded_theorem",
-        "Source-note proposal disclaimer",
-        "Wave equation",
-        "Gauge redundancy",
-        "Lorenz-gauge condition",
-        "4                                  − 1            − 1",  # the 4 - 1 - 1 display
-        "Admitted-context inputs",
-        "Forbidden imports check",
-        "What this theorem closes",
-        "What this theorem does NOT close",
-        "Counterfactual Pass record",
-        "Independent audit handoff",
-        "G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28",
+        "Claim type:** bounded_support",
+        "Scope Repair",
+        "dim_C ker(ell) / span_C{k} = 2",
+        "4 - 1 - 1 = 2",
+        "What This Supports",
+        "What This Does Not Close",
+        "Load-Bearing Step",
+        "Independent Audit Handoff",
+        "Physical massless-vector interpretation is outside",
     ]
     for phrase in required_phrases:
         check(
@@ -448,7 +427,7 @@ def main() -> int:
     # proof in section 4 ("Proof") does not consume them.
 
     proof_section_re = re.compile(
-        r"## 4\. Proof(.*?)## 5\. Load-bearing step",
+        r"## 4\. Proof(.*?)## 5\. Load-Bearing Step",
         re.DOTALL,
     )
     m = proof_section_re.search(note_text)
@@ -479,18 +458,12 @@ def main() -> int:
     section("Summary")
     # ---------------------------------------------------------------------
     print("  Verified at exact sympy precision:")
-    print("    (R1) Lorentz-vector eps^mu on C^4 has 4 components.")
-    print("    (R2) Lorenz-gauge constraint k_mu eps^mu = 0 has rank 1.")
-    print("    (R3) Residual gauge orbit eps^mu ~ eps^mu + c k^mu has rank 1;")
-    print("         k^mu lies in the constraint kernel on the null shell.")
-    print("    (R4) Quotient dim = 4 - 1 - 1 = 2 polarizations per momentum.")
-    print("    (R5) Explicit transverse basis (0,1,0,0), (0,0,1,0) at k^mu =")
-    print("         (omega, 0, 0, omega).")
-    print("    (R6) Helicity basis (eps_1 +- i eps_2)/sqrt(2) carries +-1 under")
-    print("         rotations about the propagation axis.")
-    print("    (R7) Gauge-group independence: per-boson count = 2 for U(1),")
-    print("         SU(2), SU(3), etc.")
-    print("    (R8) Negative check: massive case (k^2 != 0) gives 3, not 2.")
+    print("    (R1) A four-component vector eps in C^4 has 4 components.")
+    print("    (R2) The nonzero row ell has rank 1.")
+    print("    (R3) The nonzero direction k in ker(ell) has rank 1.")
+    print("    (R4) Quotient dim_C ker(ell)/span(k) = 4 - 1 - 1 = 2.")
+    print("    (R5) Explicit representatives (0,1,0,0), (0,0,1,0) in the canonical model.")
+    print("    (R6-R8) Former physics-language checks are diagnostics only.")
     print("    (R9) Note structure + forbidden-import scan.")
 
     print()
@@ -498,13 +471,16 @@ def main() -> int:
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: bounded narrow theorem rank arithmetic verified at exact precision;"
+            "VERDICT: bounded abstract quotient identity verified at exact precision;"
         )
         print(
-            "         massless vector polarization count = 4 - 1 - 1 = 2 follows from"
+            "         dim_C ker(ell)/span(k) = 2 for a nonzero row ell and nonzero"
         )
         print(
-            "         (L1)-(L3) on admitted-context (AC1)-(AC5)."
+            "         k in ker(ell). Physical massless-vector interpretation is outside"
+        )
+        print(
+            "         this row's load-bearing scope."
         )
     print("=" * 88)
     return 0 if FAIL == 0 else 1

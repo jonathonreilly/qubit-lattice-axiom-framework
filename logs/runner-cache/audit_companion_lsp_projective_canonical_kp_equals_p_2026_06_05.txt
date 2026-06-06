@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py
-runner_sha256: a48665b6e29f5bf95dadea2d7427d8f401a6834b6491e0b9ece3a4295d4c2b46
+runner_sha256: 645cfe028fcc8a6370f03a3f8cb3c3b76c66aeaad020e0f0f39a934a9d4ef660
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.33
+elapsed_sec: 1.11
 status: ok
 ----- stdout -----
 ========================================================================
@@ -13,7 +13,7 @@ LSP-projective canonical K_P = P (restricted Step-3 scope) runner
 Reproves K_r = P_r from the canonical Naimark/Lueders isometry, shows
 the V_A = I / phase / permutation restriction is sufficient, and shows
 a general label-mixing V_A breaks K_P = P (K_r^dag K_r = sum_s
-|<r|V_A|s>|^2 P_s != P_r). Literature is comparator only.
+|<r|V_A|s>|^2 P_s != P_r) on nonzero sectors. Literature is comparator only.
 
 
 [Part A] Projective-measurement primitives
@@ -62,10 +62,18 @@ a general label-mixing V_A breaks K_P = P (K_r^dag K_r = sum_s
   [PASS] E'[all]: weight matrix |V_A|^2 is doubly stochastic
   [PASS] E'[all]: generic mixing V_A breaks K_P = P
 
+[Part E''] Zero-projector edge-case for the necessity clause
+  [PASS] E''[zero-zero mixing]: formal zero-label rotation leaves every K_r^dag K_r unchanged
+  [PASS] E''[nonzero-nonzero mixing]: nonzero sector mixing breaks K_r^dag K_r = P_r
+  [PASS] E''[nonzero-zero mixing]: leaking a nonzero sector into a zero label still breaks
+  [PASS] E''[nonzero convention]: displayed physical labels have P_r != 0
+
 [Part F] Source-note boundary string checks
   [PASS] F.required present: 'Status authority:** independent audit lane only'
   [PASS] F.required present: 'restricted Step-3 scope'
   [PASS] F.required present: 'K_P = P'
+  [PASS] F.required present: 'P_r ≠ 0'
+  [PASS] F.required present: 'zero-projector edge-case'
   [PASS] F.required present: 'outcome-label'
   [PASS] F.required present: 'necessary'
   [PASS] F.required present: 'What this does NOT claim'
@@ -80,7 +88,7 @@ a general label-mixing V_A breaks K_P = P (K_r^dag K_r = sum_s
   [PASS] F.forbidden absent: 'uniqueness theorem for all instruments'
 
 ========================================================================
-TOTAL: 47 PASS / 0 FAIL
+TOTAL: 53 PASS / 0 FAIL
 ========================================================================
 
 ----- stderr -----

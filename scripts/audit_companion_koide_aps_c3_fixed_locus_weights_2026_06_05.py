@@ -2,25 +2,23 @@
 Audit companion: C_3 fixed-locus (1,2) transverse weights bridge for the
 KOIDE_APS_BLOCK_BY_BLOCK forcing note.
 
-This runner supplies, by re-derivation from primitives, the CLEANLY-SUPPORTABLE
-half of the audit repair requested for
+This runner supplies, by re-derivation from primitives, the A/B fixed-locus
+and local-density subchain requested for
 `koide_aps_block_by_block_forcing_note_2026-04-21`:
 
     "missing_bridge_theorem: add or audit a retained theorem for the
      Cl(3)/Z^3 -> PL S^3 x R route, including C3 fixed-locus weights and
      ABSS applicability."
 
-It is deliberately NARROW. It splits the repair into three sub-parts and
-discharges only the two that can be reproven from primitives + landed
-retained-grade results:
+It is deliberately NARROW. The audited claim is only:
 
   (1) C_3[111] fixed-locus structure and (1,2) transverse weights      [PART A]
   (2) (1,2) is FORCED (unique trace-free pair) -> local density 2/9    [PART B]
+
+Parts C and D are emitted as boundary diagnostics only; they are not part of
+this row's narrowed claim:
+
   (3) LOCAL ABSS prerequisites (spin, Morse-Bott, SU(2) lift)          [PART C]
-
-and explicitly records the third, HARD sub-part as a NAMED OPEN BRIDGE
-(live route, not a no-go):
-
   (4) the GLOBAL identification Cl(3)/Z^3 -> PL S^3 x R                 [PART D]
 
 PART D verifies the *negative* scope fact that grounds the honesty: the
@@ -214,11 +212,11 @@ ok("B4. L_3(1,2) = L_3(2,1) (well-defined on the unordered forced pair)",
 # ==========================================================================
 # PART C -- LOCAL ABSS prerequisites at the fixed locus (reprovable)
 # ==========================================================================
-log.append("\n=== PART C: LOCAL ABSS prerequisites (spin / Morse-Bott / SU(2) lift) ===")
+log.append("\n=== BOUNDARY DIAGNOSTIC C: local ABSS prerequisites (not part of narrowed claim) ===")
 
 # C1. Morse-Bott non-degeneracy of the transverse (normal) action: the normal
 #     linearization minus identity is invertible, det = (omega-1)(omega^2-1)=3.
-ok("C1. normal-action Morse-Bott: det(R_normal - I) = 3 != 0",
+ok("boundary.C1 normal-action Morse-Bott: det(R_normal - I) = 3 != 0",
    sp.simplify(core - 3) == 0,
    "isolated transverse fixed point is non-degenerate")
 
@@ -234,7 +232,7 @@ frame = np.array([
     [0, 1, 0],   # j-component
     [0, 0, 1],   # k-component
 ], dtype=float)
-ok("C2. S^3 = SU(2) parallelizable (3 independent left-inv fields) -> w_2=0 -> spin",
+ok("boundary.C2 S^3 = SU(2) parallelizable (3 independent left-inv fields) -> w_2=0 -> spin",
    np.linalg.matrix_rank(frame) == 3
    and np.allclose(e_i @ e_i, -np.eye(2))
    and np.allclose(e_j @ e_j, -np.eye(2))
@@ -245,7 +243,7 @@ ok("C2. S^3 = SU(2) parallelizable (3 independent left-inv fields) -> w_2=0 -> s
 #      and H^1(S^3 x R; Z_2) = 0 because S^3 is simply connected (H_1 = 0).
 H1_S3 = 0  # reproven below via the abelianized fundamental group of SU(2)
 # pi_1(SU(2)) = pi_1(S^3) = 0 (simply connected); H_1 = abelianization = 0.
-ok("C2b. H^1(S^3 x R; Z_2) = 0 (S^3 simply connected) -> spin structure UNIQUE",
+ok("boundary.C2b H^1(S^3 x R; Z_2) = 0 (S^3 simply connected) -> spin structure UNIQUE",
    H1_S3 == 0,
    "pi_1(S^3)=0 -> H_1=0 -> H^1(.;Z_2)=0")
 
@@ -266,7 +264,7 @@ def quat_mul(p, q):
 q = (q0, qv)
 q3 = quat_mul(quat_mul(q, q), q)
 qnorm = sp.simplify(q0**2 + (qv.T * qv)[0, 0])
-ok("C3. SO(3) C_3 lifts to unit quaternion q in SU(2) with |q|=1 and q^3=-1",
+ok("boundary.C3 SO(3) C_3 lifts to unit quaternion q in SU(2) with |q|=1 and q^3=-1",
    sp.simplify(qnorm - 1) == 0
    and sp.simplify(q3[0] + 1) == 0
    and sp.simplify(q3[1]) == sp.zeros(3, 1),
@@ -278,7 +276,7 @@ ok("C3. SO(3) C_3 lifts to unit quaternion q in SU(2) with |q|=1 and q^3=-1",
 #     groups vanish.  (Reproven only as the standard finite homotopy table; this
 #     is the LOCAL smoothability input, not the global identification of D.)
 PL_over_O = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 28}
-ok("C4. pi_i(PL/O)=0 for i<=4 (Cerf-Munkres) -> local PL smoothability",
+ok("boundary.C4 pi_i(PL/O)=0 for i<=4 (Cerf-Munkres) -> local PL smoothability",
    all(PL_over_O[i] == 0 for i in range(5)),
    f"pi_i(PL/O), i=0..4: {[PL_over_O[i] for i in range(5)]}")
 
@@ -293,7 +291,7 @@ local_abss_ok = (
     and sp.simplify(qnorm - 1) == 0 and sp.simplify(q3[0] + 1) == 0
     and all(PL_over_O[i] == 0 for i in range(5))
 )
-ok("C5. LOCAL ABSS prerequisites (Morse-Bott + spin + lift + local smoothing) hold",
+ok("boundary.C5 local ABSS prerequisites hold only as a diagnostic conditional on PL S^3 x R",
    local_abss_ok,
    "conditional on the ambient being PL S^3 x R (that identification is PART D)")
 
@@ -301,7 +299,7 @@ ok("C5. LOCAL ABSS prerequisites (Morse-Bott + spin + lift + local smoothing) ho
 # ==========================================================================
 # PART D -- the GLOBAL Cl(3)/Z^3 -> PL S^3 x R identification is OPEN (honest)
 # ==========================================================================
-log.append("\n=== PART D: GLOBAL Cl(3)/Z^3 -> PL S^3 x R identification is a NAMED OPEN BRIDGE ===")
+log.append("\n=== BOUNDARY DIAGNOSTIC D: global Cl(3)/Z^3 -> PL S^3 x R remains open ===")
 
 # D1. What the landed finite cone-cap certificates DO establish: finite-radius
 #     combinatorial construction facts.  Reprove the chi=2 boundary / chi=1 cap
@@ -314,7 +312,7 @@ log.append("\n=== PART D: GLOBAL Cl(3)/Z^3 -> PL S^3 x R identification is a NAM
 # Octahedron: V=6, E=12, F=8 -> chi = 6-12+8 = 2 (a 2-sphere boundary).
 V_oct, E_oct, F_oct = 6, 12, 8
 chi_boundary = V_oct - E_oct + F_oct
-ok("D1. finite cone-cap boundary has chi = 2 (a 2-sphere), reproven from V-E+F",
+ok("boundary.D1 finite cone-cap boundary has chi = 2 (a 2-sphere), reproven from V-E+F",
    chi_boundary == 2,
    f"octahedral boundary chi = {V_oct}-{E_oct}+{F_oct} = {chi_boundary}")
 
@@ -328,7 +326,7 @@ E_c = E_oct + V_oct
 F_c = F_oct + E_oct           # original 8 base faces + 12 apex-side faces
 T_c = F_oct                    # 8 tetrahedra (cone over each base triangle)
 chi_cap = V_c - E_c + F_c - T_c
-ok("D1b. cone-cap (solid) has chi = 1 (contractible), reproven from V-E+F-T",
+ok("boundary.D1b cone-cap (solid) has chi = 1 (contractible), reproven from V-E+F-T",
    chi_cap == 1,
    f"cap chi = {V_c}-{E_c}+{F_c}-{T_c} = {chi_cap}")
 
@@ -344,7 +342,7 @@ ok("D1b. cone-cap (solid) has chi = 1 (contractible), reproven from V-E+F-T",
 chi_S3 = 0          # every closed orientable 3-manifold has chi = 0
 chi_lens = 0        # lens space L(p,q): also chi = 0
 chi_S1xS2 = 0       # S^1 x S^2: also chi = 0
-ok("D2. chi cannot distinguish S^3 from lens / S^1xS^2 (all chi=0) -> open gap real",
+ok("boundary.D2 chi cannot distinguish S^3 from lens / S^1xS^2 (all chi=0) -> open gap real",
    chi_S3 == 0 and chi_lens == 0 and chi_S1xS2 == 0
    and chi_S3 == chi_lens == chi_S1xS2,
    "Euler char is blind among closed orientable 3-manifolds; needs Perelman/Moise/van Kampen")
@@ -356,21 +354,20 @@ ok("D2. chi cannot distinguish S^3 from lens / S^1xS^2 (all chi=0) -> open gap r
 #     framework surface", which is an open derivation target, not a foreclosure.
 open_bridge_is_live = True   # there is a concrete route (Perelman/Moise/van Kampen)
 no_go_claimed = False        # this note does NOT claim the route is impossible
-ok("D3. global PL S^3 x R route recorded as a LIVE open bridge (not a no-go)",
+ok("boundary.D3 global PL S^3 x R route recorded as a LIVE open bridge (not a no-go)",
    open_bridge_is_live and not no_go_claimed,
    "route = discharge Perelman/Moise/van Kampen on the framework surface (open target)")
 
 
 # ==========================================================================
-# PART E -- composite re-audit case for the NARROWED statement
+# PART E -- composite re-audit case for the A/B NARROWED statement
 # ==========================================================================
 log.append("\n=== PART E: composite (narrowed re-audit case) ===")
 
-# E1. The narrowed claim: GIVEN the ambient is PL S^3 x R (the open bridge),
-#     the C_3 fixed-locus structure forces p=3 and weights (1,2), which are the
-#     UNIQUE trace-free transverse pair, giving the local Lefschetz density 2/9;
-#     and the LOCAL ABSS prerequisites hold.  The GLOBAL identification stays
-#     open.  This is internally consistent and fully executable.
+# E1. The narrowed claim is A/B only: the C_3 fixed-locus structure forces p=3
+#     and weights (1,2), which are the UNIQUE trace-free transverse pair, giving
+#     the local Lefschetz density 2/9. Parts C/D are boundary diagnostics and
+#     are not load-bearing for this row's claim.
 narrowed_ok = (
     # PART A: fixed locus + weights forced
     sp.simplify(R - P) == sp.zeros(3, 3)
@@ -381,23 +378,26 @@ narrowed_ok = (
     and set(tracefree_pairs) == {(1, 2), (2, 1)}
     and sp.simplify(L_density(1, 2) - sp.Rational(2, 9)) == 0
     and sp.simplify(core - 3) == 0
-    # PART C: local ABSS prerequisites
-    and local_abss_ok
-    # PART D: global identification OPEN (not closed, not no-go)
+)
+diagnostics_ok = (
+    local_abss_ok
     and (chi_cap == 1 and chi_boundary == 2)
     and (chi_S3 == chi_lens == chi_S1xS2 == 0)
     and open_bridge_is_live and not no_go_claimed
 )
-ok("E1. NARROWED statement is internally consistent and fully executable",
+ok("E1. A/B narrowed fixed-locus/local-density statement is fully executable",
    narrowed_ok,
-   "fixed-locus (1,2) weights forced + 2/9 density + local ABSS hold; global PL identification stays open")
+   "fixed-locus (1,2) weights forced + local density 2/9")
+ok("boundary.E2 C/D diagnostics are non-claim boundary checks only",
+   diagnostics_ok,
+   "local ABSS/global PL material remains diagnostic, not part of narrowed claim")
 
 
 # ==========================================================================
 # Summary
 # ==========================================================================
 print("=" * 74)
-print("KOIDE APS C_3 FIXED-LOCUS (1,2) WEIGHTS BRIDGE -- NARROW COMPANION")
+print("KOIDE APS C_3 FIXED-LOCUS (1,2) WEIGHTS AND LOCAL DENSITY -- NARROW COMPANION")
 print("=" * 74)
 for line in log:
     print(line)
@@ -408,14 +408,12 @@ if FAIL == 0:
     print("Verdict (narrowed):")
     print("  - C_3[111] fixed locus forces p=3 and transverse weights (1,2),")
     print("    the UNIQUE trace-free pair -> local Lefschetz density 2/9.")
-    print("  - The LOCAL ABSS prerequisites (Morse-Bott, spin, SU(2) lift,")
-    print("    local PL smoothing) hold GIVEN the ambient is PL S^3 x R.")
-    print("  - The GLOBAL Cl(3)/Z^3 -> PL S^3 x R identification is a NAMED")
-    print("    OPEN bridge (needs Perelman/Moise/van Kampen on the framework")
-    print("    surface); chi cannot close it (chi=0 for all closed orientable")
-    print("    3-manifolds). This is a live route, not a no-go.")
+    print("  - Parts C/D are boundary diagnostics only: local/global ABSS is")
+    print("    NOT part of this row's narrowed audited claim.")
+    print("  - The GLOBAL Cl(3)/Z^3 -> PL S^3 x R identification remains a")
+    print("    named OPEN bridge for future work.")
     print()
-    print("  KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW=TRUE")
+    print("  KOIDE_APS_C3_FIXED_LOCUS_LOCAL_DENSITY_NARROW=TRUE")
 else:
     print(f"  {FAIL} checks failed.")
-    print("  KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW=PARTIAL")
+    print("  KOIDE_APS_C3_FIXED_LOCUS_LOCAL_DENSITY_NARROW=PARTIAL")

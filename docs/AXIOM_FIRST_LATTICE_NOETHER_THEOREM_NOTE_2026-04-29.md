@@ -1,13 +1,14 @@
 # Axiom-First Lattice Noether's Theorem on Cl(3) ⊗ Z^3
 
-**Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair)
+**Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair); 2026-06-06 (onsite-generator scope repair)
 **Status:** source-note proposal — author-declared `bounded_theorem`; effective
 status set only by the independent audit lane.
 **Claim type:** bounded_theorem
 **Loop:** `axiom-first-foundations`
 **Cycle:** 5 (Route R5)
 **Runner:** `scripts/axiom_first_lattice_noether_check.py`
-**Log:** `outputs/axiom_first_lattice_noether_check_2026-05-25.txt`
+**Log:** `outputs/axiom_first_lattice_noether_check_2026-06-06.txt`
+**Runner cache:** `logs/runner-cache/axiom_first_lattice_noether_check.txt`
 
 ## Authority disclaimer
 
@@ -16,6 +17,30 @@ by the audit pipeline only after the independent audit lane reviews the
 claim, dependency chain, and runner. The `claim_type`, scope, named
 admissions, and bounded classification are author-proposed; the audit
 lane has full authority to retag, narrow, or reject the proposal.
+
+## Onsite-generator scope repair (2026-06-06)
+
+The 2026-06-06 repair removes a remaining overbroad reading of the
+general Noether statement. The local bilateral current (5) is proved
+only for **onsite/internal infinitesimal generators**: generators whose
+action at site `x` is `(T^A chi)_x = t^A chi_x` (or the finite internal
+matrix analogue at the same lattice site). It is not asserted for
+arbitrary site-mixing matrices `T^A_{xy}`. Site-mixing symmetries, if
+needed later, require a separate envelope-localization theorem.
+
+The repair also makes the U(1) sign convention explicit. With the
+phase generator `t = +i`, the coefficient obtained from the local-alpha
+variation is the imaginary generator current `J_phase = (i/2) eta B`.
+This note defines the displayed real fermion-number current by
+`J_real := i J_phase = -(1/2) eta B`. Choosing the opposite generator
+`t = -i` flips the displayed sign and the charge orientation, not the
+conservation statement.
+
+Runner exhibit `E5` is upgraded from a sampled lattice check plus a
+scalar placeholder to an arbitrary-bilinear symbolic identity:
+for independent bilinears `B_+ = chibar_x t chi_{x+mu}` and
+`B_- = chibar_{x+mu} t chi_x`, it verifies exactly that
+`i * (i/2) * (B_+ + B_-) = -1/2 * (B_+ + B_-)`.
 
 ## Step 4b boundary repair (2026-05-25)
 
@@ -114,10 +139,11 @@ here. The U(1) phase result (N2) is unaffected by the repair.
 This note derives, on the current public framework memo
 `MINIMAL_AXIOMS_2026-05-20.md` plus the
 explicitly admitted staggered-Dirac realization gate, a lattice analogue
-of Noether's theorem: for any one-parameter Lie symmetry of the admitted
-canonical action that maps Grassmann variables to Grassmann variables,
-there is an explicit *conserved lattice current* `J^μ_x` with discrete
-divergence
+of Noether's theorem for the two generator classes proved here:
+onsite/internal one-parameter Lie symmetries of the admitted canonical
+action, and the separate discrete `(2Z)^3` two-step translation Ward
+identity. For an onsite/internal Lie symmetry, there is an explicit
+*conserved lattice current* `J^μ_x` with discrete divergence
 
 ```text
     ∂^L_μ J^μ_x   :=   Σ_μ  ( J^μ_x  -  J^μ_{x - μ̂} )   =   0  on shell.   (1)
@@ -148,11 +174,13 @@ structural admission close, the row becomes eligible for retagging as
 
 After this note, any package lane that quotes "the canonical action
 has a conserved current of type X" can cite the U(1) current (4) and
-the general local-infinitesimal current (5). Any downstream use of the
-translation branch must preserve the narrower Step 4b statement: exact
-two-step Ward identity on the admitted staggered carrier, with the
-canonical density (3) support-only unless a later audit-clean proof derives
-it from the two-shift Ward identity for arbitrary on-shell fields.
+the onsite/internal local-infinitesimal current (5). Any downstream use
+of the translation branch must preserve the narrower Step 4b statement:
+exact two-step Ward identity on the admitted staggered carrier, with
+the canonical density (3) support-only unless a later audit-clean proof
+derives it from the two-shift Ward identity for arbitrary on-shell
+fields. Site-mixing infinitesimal symmetries are not licensed by this
+row.
 
 ## Hypothesis set used
 
@@ -266,9 +294,10 @@ with lattice divergence `∂^L_μ J^μ_x = 0` on shell. Integration over
 a Cauchy surface (lattice time slice) gives the conserved fermion
 number `Q = Σ_x χ̄_x χ_x`.
 
-**(N3) General lattice Noether identity.** For any infinitesimal
-symmetry `δ_α χ_x = α^A T^A_{xy} χ_y` (and the conjugate variation
-`δ_α χ̄_x = -α^A χ̄_z (T^A)_{zx}`) of the canonical action with
+**(N3) Onsite/internal lattice Noether identity.** For any
+onsite/internal infinitesimal symmetry
+`δ_α χ_x = α^A t^A χ_x` (and conjugate variation
+`δ_α χ̄_x = -α^A χ̄_x t^A`) of the canonical action with
 nearest-neighbour staggered hop `M_{x, x±μ̂} = ±(1/2) η_μ(x)`, the
 on-shell conserved current splits over the two staggered-hop
 directions and reads
@@ -278,16 +307,17 @@ directions and reads
                                                                     (5)
 ```
 
-where `T̂^A` is the field-index action of the symmetry generator
-(`T̂^A χ`)_x := T^A_{xy} χ_y (suppressing summation), and the
-two-term structure `χ̄_x χ_{x+μ̂} + χ̄_{x+μ̂} χ_x` arises from the
-**bilateral staggered hop** (forward `M_{x,x+μ̂}` and backward
+where `T̂^A` denotes the same onsite/internal matrix `t^A` acting on
+the field component at the displayed site. The two-term structure
+`χ̄_x χ_{x+μ̂} + χ̄_{x+μ̂} χ_x` arises from the **bilateral
+staggered hop** (forward `M_{x,x+μ̂}` and backward
 `M_{x,x-μ̂} = -M_{x,x+μ̂}` reindexed with `x' = x - μ̂`). The proof
-of the bilateral form is given explicitly in Step 2 below.
+of the bilateral form is given explicitly in Step 2 below. Arbitrary
+site-mixing generators `T^A_{xy}` are outside this formula's scope.
 
 The proof of (N2) is the specialisation of (N3) to the U(1) phase
-generator (clean infinitesimal-Lie substitution into (5); runner E5
-verifies). The proof of (N1) follows the exact localized two-step Ward
+generator (clean onsite/internal infinitesimal-Lie substitution into
+(5); runner E5 verifies). The proof of (N1) follows the exact localized two-step Ward
 route in Step 4b because two-site translation is a *discrete* symmetry
 of `M_KS`, not an infinitesimal Lie generator. Runner E7 verifies the
 field-level identity (3a) on a nondegenerate `L=6` block; runner E6 is
@@ -308,41 +338,53 @@ identity (3a), while the canonical density (3) is support-only until a
 separate audit-clean proof derives it from the two-shift Ward identity for
 arbitrary on-shell fields.
 
+**Site-mixing boundary.** Formula (5) must not be read as a theorem for
+an arbitrary lattice-index matrix `T^A_{xy}`. The local-alpha promotion
+used below assigns one envelope value to each lattice site; for
+site-mixing `T^A_{xy}` a single factor `(alpha_y - alpha_x)` no longer
+captures all bilinear legs without a separate locality/envelope theorem.
+This note supplies no such theorem.
+
 ## Proof
 
 The proof is the standard variational Noether argument adapted to
 the finite Grassmann lattice action.
 
-### Step 1 — variation of the action under an infinitesimal symmetry
+### Step 1 — variation of the action under an onsite/internal infinitesimal symmetry
 
-Write `δχ_x = α^A T^A_{xy} χ_y` with `α^A` infinitesimal. The
+Write `δχ_x = α^A t^A χ_x` with `α^A` infinitesimal and `t^A`
+acting only on the finite internal field component at the same lattice
+site. The conjugate variation is `δχ̄_x = -α^A χ̄_x t^A`. The
 variation of the action `S_F = χ̄ M χ` is
 
 ```text
-    δS_F  =  α^A  ( χ̄_x  T^A_{xy}  M_yz  χ_z   +   χ̄_x  M_xy (-T^A_{yz})  χ_z ).
+    δS_F  =  α^A Σ_{x,y} χ̄_x ( M_xy t^A - t^A M_xy ) χ_y.
 ```
 
-For `T^A` to be a *symmetry*, the variation must vanish for arbitrary
-χ̄, χ:
+For `t^A` to be an onsite/internal *symmetry*, the variation must
+vanish for arbitrary χ̄, χ:
 
 ```text
-    [ T^A , M ]_{xz}   =   T^A_{xy} M_{yz} - M_{xy} T^A_{yz}   =   0.    (6)
+    [ M_xy , t^A ]   =   M_xy t^A - t^A M_xy   =   0
+    for every nonzero hop/local block M_xy.                                (6)
 ```
 
-This is the symmetry condition.
+This is the symmetry condition for this row's local-current theorem.
+The scalar staggered hop and the U(1) generator `t = i` satisfy it
+immediately. A site-mixing generator is not covered by (6).
 
 ### Step 2 — promote `α` to a slowly-varying lattice field
 
 Now allow `α^A` to depend on the lattice site: `α^A → α^A_x`. The
-variation of the action under `δχ_y = α^A_y T^A_{yz} χ_z` and
-`δχ̄_x = -α^A_x χ̄_z (T^A)_{zx}` reads
+variation of the action under `δχ_y = α^A_y t^A χ_y` and
+`δχ̄_x = -α^A_x χ̄_x t^A` reads
 
 ```text
     δS_F[α(x)]
-      = Σ_{x,y,z} ( α^A_y - α^A_x )  χ̄_x  M_{xy}  T^A_{yz}  χ_z       (7a)
+      = Σ_{x,y} ( α^A_y - α^A_x )  χ̄_x  M_{xy}  t^A  χ_y             (7a)
 ```
 
-(the constant-α piece `α (T^A M - M T^A)` vanishes by the symmetry
+(the constant-α piece `α (M t^A - t^A M)` vanishes by the symmetry
 condition (6)).
 
 For the canonical staggered hop `M_{x, x+μ̂} = +(1/2) η_μ(x)` and
@@ -378,15 +420,17 @@ Combining the forward and (reindexed) backward pieces:
 Identifying the coefficient of the discrete forward derivative
 `(∂^L_μ α^A)_x = α^A_{x+μ̂} - α^A_x`, the conserved current
 `J^{μ,A}_x` is the **bilateral form (5)** above. This is the explicit
-algebraic derivation requested by the review follow-up.
+algebraic derivation requested by the review follow-up, now restricted
+to the onsite/internal generator class for which the local-envelope
+calculation is valid.
 
 ### Step 3 — on-shell conservation
 
 When the equations of motion `(M χ)_x = 0` and `(χ̄ M)_x = 0` are
 satisfied (i.e. classical solutions of the Grassmann action), the
-"bulk" piece of `δS_F[α(x)]` vanishes for *any* `α^A_x`, including
-constant `α^A`. By global symmetry (`α^A` constant), the action
-itself is invariant: `δS_F[constant α] = 0`.
+"bulk" piece of `δS_F[α(x)]` vanishes for the onsite/internal
+variation, including constant `α^A`. By global symmetry (`α^A`
+constant), the action itself is invariant: `δS_F[constant α] = 0`.
 
 Conversely, for non-constant `α^A_x`, the bulk piece still vanishes
 on shell, so
@@ -402,7 +446,7 @@ test field), we obtain
     ∂^L_μ J^{μ,A}_{x_0}   =   0   on shell.                          (10)
 ```
 
-This is the lattice Noether identity.
+This is the onsite/internal lattice Noether identity.
 
 ### Step 4 — specialisation to `(2Z)^3` sublattice translation and U(1) phase
 
@@ -427,6 +471,10 @@ giving
 ```
 
 exactly as stated in (N2). The substitution closes algebraically.
+With the opposite phase-generator convention `t = -i`, the displayed
+current changes sign; this is only the orientation convention for the
+conserved charge. The conservation law and the charge-sector
+decomposition are unchanged.
 
 #### Step 4b — `(2Z)^3` sublattice translation → exact two-step Ward identity
 
@@ -503,14 +551,15 @@ an explicit source theorem for the KS-phase momentum-density form.
 #### Step 4c — combined: closure of (5) → (4) and two-step Ward identity
 
 The bilateral (5) form, derived in Step 2 from the local-α expansion
-of the canonical action, specialises to (4) under U(1) phase
-substitution (a clean Lie-generator substitution; runner E5 confirms
-algebraically). The `(2Z)^3` sublattice translation case is handled by
-the exact localized two-step Ward identity (3a), not by identifying
-(3) with a literal specialization of (5). The U(1) branch remains a
-closed local-current statement on the admitted carrier; the
-translation branch is an exact Ward identity with (3) explicitly scoped
-as support-only. ∎
+of the canonical action for onsite/internal generators, specialises to
+(4) under U(1) phase substitution (a clean Lie-generator substitution;
+runner E5 confirms algebraically, including the arbitrary-bilinear sign
+identity for the real-current convention). The `(2Z)^3` sublattice
+translation case is handled by the exact localized two-step Ward
+identity (3a), not by identifying (3) with a literal specialization of
+(5). The U(1) branch remains a closed local-current statement on the
+admitted carrier; the translation branch is an exact Ward identity with
+(3) explicitly scoped as support-only. ∎
 
 ### Step 5 — why one-site shifts are not pure translations
 
@@ -579,26 +628,30 @@ in the anomaly-forced 3+1 row — is the next layer above the
 classical Noether identity here. This note does not claim to
 discharge anomaly cancellation.
 
-## Honest status (post-2026-05-25 Step 4b boundary repair)
+## Honest status (post-2026-06-06 onsite-generator scope repair)
 
 **Author-proposed bounded theorem on the admitted staggered/Grassmann
-carrier.** (N2) and the local-infinitesimal part of (N3) are proved by
-the standard variational argument adapted to the finite Grassmann
-staggered action. (N1) is narrowed to the exact localized Ward identity
-(3a) for the `(2Z)^3` central two-step generator. One named open gate is
-admitted explicitly per `MINIMAL_AXIOMS_2026-05-20.md`: the
-staggered-Dirac realization gate (carrier of the action `M_KS`). The
-`g_bare = 1` canonical-normalization gate, formerly admitted alongside,
-is **removed** from this note's load-bearing input list per the
-2026-05-10 audit verdict (Noether identities (N1)–(N3) are
-quantitatively `g_bare`-independent).
+carrier.** (N2) and the onsite/internal local-infinitesimal part of
+(N3) are proved by the standard variational argument adapted to the
+finite Grassmann staggered action. The row does not prove a
+site-mixing local-current theorem. (N1) is narrowed to the exact
+localized Ward identity (3a) for the `(2Z)^3` central two-step
+generator. One named open gate is admitted explicitly per
+`MINIMAL_AXIOMS_2026-05-20.md`: the staggered-Dirac realization gate
+(carrier of the action `M_KS`). The `g_bare = 1`
+canonical-normalization gate, formerly admitted alongside, is
+**removed** from this note's load-bearing input list per the 2026-05-10
+audit verdict (Noether identities (N1)–(N3) are quantitatively
+`g_bare`-independent).
 
 **Sub-claim status:**
 
 - **(N2) U(1) fermion-number current.** The bilateral form (5)
-  specialises cleanly to (4) by infinitesimal Lie-generator
-  substitution. Runner E5 verifies `(5) → (4)` to machine precision.
-  **Closed form on the admitted staggered carrier.**
+  specialises cleanly to (4) by onsite/internal infinitesimal
+  Lie-generator substitution. Runner E5 verifies `(5) → (4)` to
+  machine precision and includes an arbitrary-bilinear symbolic sign
+  check for the real-current convention. **Closed form on the admitted
+  staggered carrier.**
 - **(N1) `(2Z)^3` sublattice two-step Ward identity.** Two-site
   translation is a *discrete* symmetry. Runner E2 verifies the symmetry
   condition for `M_KS` under two-site shifts. Runner E7 verifies the
@@ -607,12 +660,13 @@ quantitatively `g_bare`-independent).
   massless nullspace fields. The canonical density (3) is support-only;
   runner E6 no longer carries theorem status for arbitrary-field
   translation-current closure.
-- **(N3) General lattice Noether identity.** The bilateral (5) is
-  the conserved current for a local *infinitesimal Lie* generator. For
-  the discrete two-step generator, Step 4b supplies the separate
-  localized Ward identity (3a); it does not identify (3) as a literal
-  specialization of (5). Runner E5 + E7 jointly confirm the two regimes
-  on the admitted staggered carrier.
+- **(N3) Onsite/internal lattice Noether identity.** The bilateral (5)
+  is the conserved current for a local *onsite/internal infinitesimal
+  Lie* generator. It is not a theorem for arbitrary site-mixing
+  `T^A_{xy}`. For the discrete two-step generator, Step 4b supplies the
+  separate localized Ward identity (3a); it does not identify (3) as a
+  literal specialization of (5). Runner E5 + E7 jointly confirm the two
+  regimes on the admitted staggered carrier.
 
 **When admitted gates close.** When
 `MINIMAL_AXIOMS_2026-05-20.md`'s

@@ -1,13 +1,13 @@
-"""Action axis: the native heat-kernel / Casimir / Connes spectral action on the generation factor
+"""Action axis: the tested heat-kernel / Casimir / Connes spectral-action family on the generation factor
 has its interior stationary point at |b|/a ~ 1 (r=1, Q=1, the dimension/Plancherel default), NOT at
 the charged-lepton point |b|/a = 1/sqrt2 (r=1/2). And the {Wilson, HK, Manton} action-form
 degeneracy is r-IRRELEVANT: the on-site:hopping (a:|b|) split is set at quadratic order, where all
 three forms agree on the bi-invariant metric, so breaking the degeneracy at O(X^4) cannot move r.
 
-So no native action delivers r=1/2; the framework's native action-sector prediction is Q=1, and
-r=1/2 is reached only by the equal-block Hilbert-Schmidt partition 3a^2=6|b|^2 (= the admitted input
+So this tested native action-axis route does not deliver r=1/2; it points to Q=1, and r=1/2 is
+reached only by the equal-block Hilbert-Schmidt partition 3a^2=6|b|^2 (= the admitted input
 AC_phi_lambda), a measure/reading prescription on the single invariant Tr(H^2), not a stationarity
-condition of any native action.
+condition supplied by the tested action family.
 
 This runner verifies the spectral-action critical |b|/a across several cutoff
 functions and the equal-block landmark. It reports source checks only.
@@ -61,7 +61,8 @@ def main():
         abs(np.sqrt(0.5) - 1 / np.sqrt(2)) < 1e-12 and abs((1 / np.sqrt(2)) ** 2 - 0.5) < 1e-12,
         f"1/sqrt2 = {1/np.sqrt(2):.6f}, r=1/2"))
 
-    # Spectral-action interior extremum |b|/a across cutoff functions -> ~1 (r=1), never 1/sqrt2.
+    # Spectral-action interior extremum |b|/a across the displayed cutoff functions
+    # -> ~1 (r=1), never 1/sqrt2. This is not an all-monotone-cutoff theorem.
     cutoffs = {
         "exp(-x)": lambda x: np.exp(-x),
         "exp(-x^2)": lambda x: np.exp(-x ** 2),
@@ -73,7 +74,7 @@ def main():
     all_near_one = all(abs(v - 1.0) < 0.08 for v in crit.values())
     far_from_half = all(abs(v - 1 / np.sqrt(2)) > 0.2 for v in crit.values())
     passed.append(check(
-        "spectral-action interior extremum |b|/a ~ 1 (r=1) for every cutoff, never near 1/sqrt2=0.707",
+        "spectral-action interior extremum |b|/a ~ 1 (r=1) for the five displayed cutoffs, never near 1/sqrt2=0.707",
         all_near_one and far_from_half,
         "; ".join(f"{k}:{v:.3f}" for k, v in crit.items())))
 
@@ -95,11 +96,11 @@ def main():
         abs(cross) < 1e-12, f"<mass,hop>_HS = {cross:.2e}"))
 
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
-    print("FINDING: the native heat-kernel/Casimir/spectral action interior extremum is at r=1 (Q=1) for")
-    print("every cutoff; the action-form degeneracy is r-irrelevant (mass/hop HS-orthogonal, set at")
+    print("FINDING: the tested heat-kernel/Casimir/spectral-action family has its interior extremum at r=1 (Q=1)")
+    print("for the five displayed cutoffs; the action-form degeneracy is r-irrelevant (mass/hop HS-orthogonal, set at")
     print("quadratic order). The tested native action axis does not deliver r=1/2; r=1/2 is")
     print("the equal-block partition 3a^2=6b^2 = AC_phi_lambda. Native action-sector")
-    print("tendency = Q=1 for this route.")
+    print("tendency = Q=1 for this tested route.")
     return 0 if all(passed) else 1
 
 

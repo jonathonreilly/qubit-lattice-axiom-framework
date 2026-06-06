@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/backreaction_poisson_live_threshold_check.py
-runner_sha256: 6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925
+runner_sha256: b56df20cdc1cd7ebc0ad58d2a7799b2cc5ce10efc39153ec29e7af944988517c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 27.94
+elapsed_sec: 22.61
 status: ok
 ----- stdout -----
 ========================================================================================

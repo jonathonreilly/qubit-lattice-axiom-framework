@@ -1,0 +1,87 @@
+========================================================================
+ axiom_first_lattice_noether_check.py
+ Loop: axiom-first-foundations, Cycle 5 / Route R5
+ Exhibits the lattice Noether theorem (U(1) phase + (2Z)^d sublattice
+ translation) on the admitted staggered/Grassmann carrier (open gate per
+ MINIMAL_AXIOMS_2026-05-20.md). Bounded theorem.
+ 2026-05-03 review-loop: + E5 algebraic closure (5) -> (4) check
+ 2026-05-10 gate-recategorization repair: + E6 (3) divergence check
+ 2026-05-25 Step 4b boundary repair: E6 support-only, + E7 field-level
+ exact two-step Ward identity
+ 2026-06-06 onsite-generator repair: E5 arbitrary-bilinear symbolic
+ sign check; (5) scoped to onsite/internal infinitesimal generators
+========================================================================
+
+--- Exhibit E1: U(1) phase symmetry condition [T_U1, M] = 0 ---
+  L=2, dim=3, mass=0.3, N=8
+  ||[T_U1, M]||_max = 0.000e+00
+  E1 verdict: PASS
+
+--- Exhibit E2: (2Z)^d sublattice translation symmetry of M ---
+  shift by 2 in direction μ=0: ||S M S^T - M||_max = 0.000e+00  PASS
+  shift by 2 in direction μ=1: ||S M S^T - M||_max = 0.000e+00  PASS
+  shift by 2 in direction μ=2: ||S M S^T - M||_max = 0.000e+00  PASS
+  E2 verdict: PASS
+
+--- Exhibit E3, E4: fermion-number current divergence on shell ---
+  L=4, dim=3, mass=0.3, N=64
+  max |∂^L · J|  = 6.384e-16    (target: 0 to machine precision)
+  mean |∂^L · J| = 1.709e-16
+  E3 verdict: PASS
+  charge per time slice: ['+9.3735', '+9.3735', '+9.3735', '+9.3735']
+  std(Re Q_t) = 1.986e-15
+  E4 verdict: PASS
+
+--- Exhibit E5: bilateral (5) -> (4) closure on small lattice ---
+  L=4, dim=3, mass=0.3, sites checked=192
+  symbolic arbitrary-bilinear residual i*(i/2)*eta*(B+ + B-) - J4 = 0
+  max |J5_real - J4| = 0.000e+00  (target: 0 to machine precision)
+  Bilateral (5) under T = i I closes algebraically to (4):
+  symbolic arbitrary-bilinear verdict: PASS
+  E5 verdict: PASS
+
+--- Exhibit E6: support-only (3) momentum-density divergence ---
+  L=4, dim=3, mass=0.3, sites checked=64
+  max |∂^L · <P>| = 3.331e-16    (target: 0 to machine precision)
+  mean |∂^L · <P>| = 8.847e-17
+  E6 verdict: PASS
+  -> support-only: canonical staggered density (3) has
+     ∂^L_μ <P^μ> = 0 in this free-carrier expectation exhibit.
+     E6 is not the arbitrary-field two-step Ward proof.
+
+--- Exhibit E7: localized two-step Ward identity (field-level) ---
+  rho=0: min singular values right/left=2.610e-17/6.694e-18, nullity=8
+  rho=0: ||[M,D]||=0.000e+00, ||D^T+D||=0.000e+00, local coeff err=8.951e-16, random-envelope err=3.035e-14, on-shell variation=1.027e-15  PASS
+  rho=1: min singular values right/left=2.610e-17/6.694e-18, nullity=8
+  rho=1: ||[M,D]||=0.000e+00, ||D^T+D||=0.000e+00, local coeff err=9.155e-16, random-envelope err=1.081e-14, on-shell variation=1.239e-15  PASS
+  rho=2: min singular values right/left=2.610e-17/6.694e-18, nullity=8
+  rho=2: ||[M,D]||=0.000e+00, ||D^T+D||=0.000e+00, local coeff err=9.930e-16, random-envelope err=4.190e-15, on-shell variation=2.225e-15  PASS
+  L=6, dim=3, massive identity mass=0.3, N=216
+  max ||[M,D]||_max = 0.000e+00
+  max ||D^T + D||_max = 0.000e+00
+  max local-envelope coefficient error = 9.930e-16
+  max random-envelope identity error = 3.035e-14
+  max sampled on-shell variation = 2.225e-15
+  min sampled massless nullity = 8
+  E7 verdict: PASS
+  -> verifies Step 4b's exact two-step Ward identity (3a).
+     It does not promote the support-only density (3).
+
+========================================================================
+ SUMMARY
+========================================================================
+   E1 (U(1) sym condition): PASS
+   E2 ((2Z)^d sublattice translation sym): PASS
+   E3 (current divergence-free on shell): PASS
+   E4 (global charge conservation): PASS
+   E5 (bilateral (5) -> (4) algebraic closure): PASS
+   E6 (support-only (3) momentum-density divergence): PASS
+   E7 (field-level two-step Ward identity): PASS
+
+   PASSED: 7/7
+
+ verdict: bounded lattice Noether theorem exhibited on the admitted
+          staggered/Grassmann carrier; U(1) current closes via E5,
+          the (2Z)^d translation branch is the exact two-step Ward
+          identity checked by E7, and the old density (3) is
+          support-only via E6.

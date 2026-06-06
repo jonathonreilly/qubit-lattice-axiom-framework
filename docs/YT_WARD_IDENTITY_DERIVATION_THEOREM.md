@@ -1,6 +1,7 @@
 # H_unit Scalar-Singlet Matrix Element Core: y_t_bare = g_bare / sqrt(6)
 
-**Date:** 2026-04-17 (audit-prep refresh: 2026-05-25)
+**Date:** 2026-04-17 (audit-prep refresh: 2026-05-25;
+dependency-registration repair: 2026-06-06)
 **Status:** bounded support for the core unit-normalized `H_unit` matrix
 element on the canonical bare-action surface. This note records the exact
 `1/sqrt(6)` scalar-singlet matrix element on the Q_L block within the
@@ -10,15 +11,23 @@ Yukawa value, a Planck-surface ratio theorem, or a shared tadpole-transport
 closure.
 **Claim type:** bounded_theorem author hint; independent audit lane sets the
 actual `claim_type`, `audit_status`, and pipeline-derived `effective_status`.
-**Admitted context inputs (open-gate dependencies under
-`MINIMAL_AXIOMS_2026-05-20.md`):**
-- `staggered_dirac_realization_derivation_target` (parent: pending packaging,
-  see `MINIMAL_AXIOMS_2026-05-20.md` §"Derivation lanes")
-- `g_bare_derivation_target` (parent: `G_BARE_DERIVATION_NOTE.md`)
-The note conditions on closure of these two derivation targets; they are
-explicitly listed as `admitted_context_inputs`, not derived here.
+**Registered dependency boundary (2026-06-06 repair):**
+- the staggered-Dirac / canonical `Q_L` surface routes to the registered
+  Tier-A derivation target `AC_phi_lambda`, with canonical parent
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`;
+- the `g_bare = 1` canonical-surface choice is treated only as a rescaling
+  convention, with retained algebraic basis
+  `BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md`.
+This repair does **not** close `AC_phi_lambda`, does **not** promote this
+parent row, and does **not** assign an audit status. It only removes the
+unregistered-dependency wording by routing the two load-bearing dependencies
+through explicit registered sources for independent re-audit.
 **Primary runner:** `scripts/frontier_yt_ward_identity_derivation.py`
 (44 PASS / 0 FAIL on current source).
+**Dependency-registration companion runner:**
+`scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py`
+(31 PASS / 0 FAIL on current source). Companion note:
+`YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`.
 **Support (NOT part of the authority chain):**
 `UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`
 documents the perturbative 1-loop vertex correction, which is OPEN
@@ -44,10 +53,12 @@ Yukawa value from first principles, to derive the existence of the SM
 Yukawa construct independent of this identification, or to supply a
 precision prediction after RG running and matching.
 
-**Conditional on the named open gates (g_bare, staggered-Dirac), the
-exact algebraic core claim `(T1)` below is runner-verified at machine
-precision.** Any Planck-surface tadpole ratio is conditional context, not
-the auditable claim of this note.
+**With the two dependency routes now explicitly registered, the exact
+algebraic core claim `(T1)` below is runner-verified at machine precision.**
+The remaining bound is the open registered `AC_phi_lambda` Tier-A target;
+the `g_bare = 1` choice is a retained-basis rescaling convention and carries
+no independent physical input. Any Planck-surface tadpole ratio is
+conditional context, not the auditable claim of this note.
 
 Prior audit history: the audit lane previously recorded
 `audit_status=audited_renaming` for `yt_ward_identity_derivation_theorem`,
@@ -57,14 +68,15 @@ finding identifies the load-bearing step as the *definition* of `y_t_bare`
 as the H_unit matrix element. This refresh:
 1. Tightens scope language so the claim boundary is the core matrix-element
    identity, not the SM Yukawa map or Planck-surface tadpole transport;
-2. Replaces stale minimal-axiom citations with
-   `MINIMAL_AXIOMS_2026-05-20.md`;
-3. Lists `g_bare = 1` and the staggered-Dirac realization as
-   `admitted_context_inputs` (open gates) per the restored axiom set;
+2. Replaces stale minimal-axiom citations with the current axiom memo
+   `MINIMAL_AXIOMS_2026-06-05.md`;
+3. Routes `g_bare = 1` and the staggered-Dirac realization through
+   explicit registered sources rather than leaving them as unregistered
+   context inputs;
 4. Narrows the claim_type author hint from `open_gate` to
    `bounded_theorem` to match the restored axiom set's per-lane bookkeeping
    rule for quantitative `y_t` results
-   (`MINIMAL_AXIOMS_2026-05-20.md`).
+   (`MINIMAL_AXIOMS_2026-06-05.md`).
 
 ---
 
@@ -108,12 +120,12 @@ separate retained physical readout map.
 
 | # | Input | Status | Source |
 |---|-------|--------|--------|
-| **A1** | **one-qubit operator algebra per site, equivalently physical `Cl(3)` local algebra** | **AXIOM** | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
-| **A2** | **`Z^3` spatial substrate** | **AXIOM** | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
-| D1 | Z³ bipartite → Z₂ parity ε = (-1)^{x+y+z} | DERIVED from A2 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):14-18 |
+| Quantum | **one-qubit operator algebra per site, equivalently physical `Cl(3)` local algebra** | **AXIOM** | [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) |
+| Lattice | **`Z^3` spatial substrate** | **AXIOM** | [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) |
+| D1 | Z³ bipartite → Z₂ parity ε = (-1)^{x+y+z} | DERIVED from Lattice | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):14-18 |
 | D2 | Staggered fermion η phases on Z³ | DERIVED from D1 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):14-18 |
 | D3 | Taste doubling: 2³ = 8 internal species | DERIVED from D2 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):16 |
-| D4 | η phases → physical `Cl(3)` action in taste space | DERIVED from D3 + A1 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):17 |
+| D4 | η phases → physical `Cl(3)` action in taste space | DERIVED from D3 + Quantum | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):17 |
 | D5 | Cl(3) ⊃ su(2) → SU(2) weak gauge symmetry | DERIVED from D4 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):18 |
 | D6 | Graph-first axis selector on taste cube {0,1}³ | DERIVED from D3 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):52-66 |
 | D7 | Residual swap on complementary axes → `su(3)` closure | DERIVED from D6 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md):69-75 |
@@ -125,19 +137,21 @@ separate retained physical readout map.
 | D13 | Wilson plaquette coupling `β = 2 N_c/g_bare²` at canonical surface | DERIVED from D5 + D7 + standard Wilson action | standard lattice QFT applied to D5, D7 |
 | D14 | CMT change-of-variables tadpole identity | NON-LOAD-BEARING CONTEXT for the older Planck-ratio statement | not used in `(T1)` |
 | D15 | `n_link` power counting for shared tadpole transport | NON-LOAD-BEARING CONTEXT for the older Planck-ratio statement | not used in `(T1)` |
-| C1 | Canonical plaquette / `u_0 = ⟨P⟩^{1/4}` evaluation surface | ADMITTED context input (canonical-surface choice; closure target = staggered-Dirac realization derivation, see `MINIMAL_AXIOMS_2026-05-20.md`) | `MINIMAL_AXIOMS_2026-05-20.md` |
-| C2 | `g_bare = 1` on canonical surface | ADMITTED context input (open-gate derivation target; canonical parent: `G_BARE_DERIVATION_NOTE.md`) | `G_BARE_DERIVATION_NOTE.md` |
+| C1 | Canonical `Q_L = (2,3)` staggered-Dirac evaluation surface for the bare scalar-singlet matrix element | REGISTERED Tier-A derivation target / bounded dependency; routes to `AC_phi_lambda`, not closed here. Historical plaquette/`u_0` tadpole context remains non-load-bearing for `(T1)` | [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md); [`YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`](YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) |
+| C2 | `g_bare = 1` on canonical surface | RESCALING CONVENTION with retained algebraic basis; the load-bearing form factor `y_t_bare/g_bare = 1/sqrt(6)` is `g_bare`-flat | [`BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md`](BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md); [`YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`](YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) |
 | S1 | SU(3) fundamental Casimir `C_F = (N_c²-1)/(2N_c) = 4/3` | STANDARD Lie-algebra fact | applied to D7 |
 | S2 | Lorentz-group Fierz: `(γ^μ)(γ_μ) = c_S(1)(1) + c_P(iγ_5)(iγ_5) + c_V(γ^μ)(γ_μ) + c_A(γ^μγ_5)(γ_μγ_5) + 0·σσ`, with `|c_S| = 1` | STANDARD Clifford-algebra identity | Itzykson-Zuber §2-5; verified by Block 8 of runner |
-| D16 | Tree-level Feynman-rule completeness of the bare action on the scalar-singlet channel: at O(α_LM), the bare qubit-on-`Z^3` / physical-`Cl(3)` action (Wilson plaquette + staggered Dirac, C1-C2) yields exactly ONE tree diagram contributing to `Γ⁽⁴⁾(q²)` on the color-singlet × iso-singlet × Dirac-scalar channel — the single-gluon-exchange diagram, projected via D12 + S2 with coefficient (3.5) | DERIVED from tree-level Feynman rules of the cited action + the absence of any fundamental scalar field or bare contact 4-fermion vertex in the bare action | framework-native; follows from `MINIMAL_AXIOMS_2026-05-20.md` + D9 |
+| D16 | Tree-level Feynman-rule completeness of the bare action on the scalar-singlet channel: at O(α_LM), the bare qubit-on-`Z^3` / physical-`Cl(3)` action (Wilson plaquette + staggered Dirac, C1-C2) yields exactly ONE tree diagram contributing to `Γ⁽⁴⁾(q²)` on the color-singlet × iso-singlet × Dirac-scalar channel — the single-gluon-exchange diagram, projected via D12 + S2 with coefficient (3.5) | DERIVED from tree-level Feynman rules of the cited action + the absence of any fundamental scalar field or bare contact 4-fermion vertex in the bare action | framework-native; follows from `MINIMAL_AXIOMS_2026-06-05.md` + registered C1/C2 + D9 |
 | D17 | Scalar-singlet operator uniqueness on the Q_L block: the unique unit-normalized (Z² = 6) color-singlet × iso-singlet × Dirac-scalar operator on Q_L = (2,3) is `H_unit = (1/√(N_c · N_iso)) Σ ψ̄ψ`. Other (1,8), (3,1), (8,3) irreps give `Z² = 8, 9/2, 24` respectively (Block 5 verified) — each distinct from `Z² = 6`, hence none are the scalar singlet on this block | DERIVED and numerically verified (Block 5) | D9-D11 plus runner Block 5 |
 
-The only AXIOMS are A1 (one-qubit operator algebra per site, equivalently
-physical `Cl(3)`) and A2 (`Z^3`). The remaining inputs are
-the framework chain (D1-D17), a CANONICAL NORM CHOICE (C1, C2), or a
-STANDARD group-theoretic identity (S1, S2) that is independent of
-framework content. S1 and S2 are properties any SU(N_c) gauge theory in
-4D with Dirac fermions must respect — they are not framework axioms.
+The only framework axioms consumed by this note are Quantum (one-qubit
+operator algebra per site, equivalently physical `Cl(3)`) and Lattice
+(`Z^3`) from `MINIMAL_AXIOMS_2026-06-05.md`. The Record axiom is not
+load-bearing for `(T1)`. The remaining inputs are the framework chain
+(D1-D17), the registered dependency routes (C1-C2), or a STANDARD
+group-theoretic identity (S1, S2) that is independent of framework
+content. S1 and S2 are properties any SU(N_c) gauge theory in 4D with
+Dirac fermions must respect; they are not framework axioms.
 **There is no separate "matching axiom" in this note.** The bare-action
 1PI Green's function `Γ⁽⁴⁾` on the scalar-singlet channel is computed two
 algebraically equivalent ways within the same cited framework surface:
@@ -230,8 +244,8 @@ claimed.**
 **Representation A — direct OGE computation in the bare action.**
 
 The cited bare action contains only the Wilson plaquette and the
-staggered Dirac operator (D16, conditional on the staggered-Dirac realization
-gate named in `MINIMAL_AXIOMS_2026-05-20.md`) — no
+staggered Dirac operator (D16, on the registered `AC_phi_lambda`
+staggered-Dirac / canonical-`Q_L` surface) — no
 fundamental scalar field, no contact 4-fermion operator. At tree
 order in α_LM, the only Feynman diagram contributing to `Γ⁽⁴⁾(q²)` is
 single-gluon exchange:
@@ -373,8 +387,11 @@ framework but is not the source of the value.
 **Inputs used (cited framework inputs plus exact group-theoretic identities):**
 
 1. The bare qubit-on-`Z^3` / physical-`Cl(3)` lattice action
-   (`MINIMAL_AXIOMS_2026-05-20.md`; conditional on staggered-Dirac and `g_bare = 1` derivation gates) — contains exactly Wilson plaquette and
-   staggered Dirac, no fundamental scalar, no contact 4-fermion.
+   (`MINIMAL_AXIOMS_2026-06-05.md` plus registered `AC_phi_lambda`
+   staggered-Dirac / canonical-`Q_L` surface and retained-basis
+   `g_bare = 1` rescaling convention) — contains exactly Wilson
+   plaquette and staggered Dirac, no fundamental scalar, no contact
+   4-fermion.
 2. D9-D11: local scalar-singlet operator definition and unit-residue
    normalization on the Q_L block, derived in Steps 1-2 and runner
    Block 2.
@@ -451,11 +468,12 @@ downstream package carries independently; the note does not
 narrow that.
 
 This is a framework-native scalar-singlet matrix-element calculation within
-the qubit-on-`Z^3` baseline plus the named open-gate `admitted_context_inputs`
-(staggered-Dirac realization, `g_bare = 1`), using the chain D1-D13,
-D16-D17, exact SU(N_c) / Clifford algebra, and canonical normalization
-choices C1-C2. No new axioms. No framework conventions beyond canonical
-normalization. No package-status-doc imports.
+the qubit-on-`Z^3` baseline plus two explicitly routed dependency surfaces:
+the registered `AC_phi_lambda` staggered-Dirac / canonical-`Q_L` surface
+and the retained-basis `g_bare = 1` rescaling convention. It uses the
+chain D1-D13, D16-D17, exact SU(N_c) / Clifford algebra, and canonical
+normalization choices C1-C2. No new axioms. No framework conventions beyond
+canonical normalization. No package-status-doc imports.
 
 ---
 

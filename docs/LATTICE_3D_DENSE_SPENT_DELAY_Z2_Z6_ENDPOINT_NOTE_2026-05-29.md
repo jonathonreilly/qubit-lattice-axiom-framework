@@ -1,11 +1,12 @@
 # 3D Dense Spent-Delay `z=2..6` Endpoint Packet
 
 **Date:** 2026-05-29
-**Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
+**Status:** bounded-support positive packet; proposed for independent audit, no effective status change.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/lattice_3d_dense_z2_z6_endpoint_check.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_check.py)
 **Cached runner output:** [`logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt`](../logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt)
 **Source packet verifier:** [`scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py)
+**Cached source packet verifier output:** [`logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.txt`](../logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.txt)
 (SUMMARY: DENSE ENDPOINT SOURCE PACKET PASS=28 FAIL=0)
 
 ## Purpose
@@ -37,6 +38,18 @@ generation, propagation, field, and sign-classification functions are present
 in the untruncated helper source, and that both caches are SHA-fresh. This does
 not set a verdict; it makes the bounded packet reviewable with the missing
 helper source exposed.
+
+Current source-packet output:
+
+```text
+SUMMARY: DENSE ENDPOINT SOURCE PACKET PASS=28 FAIL=0
+```
+
+For the audit packet dependency scanner, the endpoint checker uses the static
+import form `import scripts.lattice_3d_dense_10prop as dense`; this is the form
+recognized by `scripts/audit_packet_script_deps.py`, so the next packet build
+can populate `helper_runner_paths` with
+`scripts/lattice_3d_dense_10prop.py`.
 
 ## Live Endpoint Runner
 

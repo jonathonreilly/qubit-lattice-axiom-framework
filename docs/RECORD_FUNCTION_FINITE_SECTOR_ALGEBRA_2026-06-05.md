@@ -6,7 +6,7 @@
 pipeline-derived after audit. This note does not set, predict, or propose an
 audit outcome.
 **Primary runner:** [`scripts/record_function_finite_sector_algebra_2026_06_05.py`](../scripts/record_function_finite_sector_algebra_2026_06_05.py)
-(sympy + finite subset checks; **SCORECARD 18 PASS / 0 FAIL**).
+(sympy + finite subset checks; **SCORECARD 21 PASS / 0 FAIL**).
 **Cached log:** [`logs/runner-cache/record_function_finite_sector_algebra_2026_06_05.txt`](../logs/runner-cache/record_function_finite_sector_algebra_2026_06_05.txt).
 
 ## Scope and honesty
@@ -151,6 +151,44 @@ The exact dial coordinate is therefore
 s = log2(rho) = log2(2r).
 ```
 
+For the named `Q` endpoint entries, the finite generation readout packet uses
+the standard three-slot Koide structural coordinate attached to the supplied
+`C3`/`K`-real generation context:
+
+```text
+Q = (sum_k lambda_k^2) / (sum_k lambda_k)^2.
+```
+
+Here the `K`/CPT-real `C3`-equivariant square-root readout has the finite
+character form
+
+```text
+lambda_k = a + 2|b| cos(theta + 2 pi k/3),     k=0,1,2.
+```
+
+The `C3` character sums give, exactly,
+
+```text
+sum_k lambda_k     = 3a,
+sum_k lambda_k^2   = 3a^2 + 6|b|^2.
+```
+
+Therefore this packet derives the displayed generation-coordinate formula
+before substituting endpoints:
+
+```text
+Q = (3a^2 + 6|b|^2)/(3a)^2 = 1/3 + (2/3)r.
+```
+
+Equivalently, in the two-block record-function notation above,
+
+```text
+Q = (singlet readout + doublet readout)/(3 singlet readout).
+```
+
+This is a structural coordinate on the supplied generation readout, not a
+probability, dynamics, occupancy selector, or measured-mass assertion.
+
 The named endpoints are:
 
 ```text
@@ -189,7 +227,9 @@ The runner verifies:
 - scale invariance of normalized coordinates and ratios;
 - arbitrariness of two-sector normalized coordinates under Record alone;
 - generation specialization `rho=2r`, `s=log2(rho)`, and the two named
-  endpoints.
+  endpoints;
+- the finite `C3`/`K`-real power-sum definition of the generation `Q`
+  coordinate, deriving `Q = 1/3 + (2/3)r` before endpoint substitution.
 
 ## Net
 

@@ -15,8 +15,9 @@ algebraic identities on Herm_circ(3) underlying the parent
        constraint E_+ + E_perp = E_tot > 0, has unique interior critical
        point E_+ = E_perp = E_tot / 2, equivalently a^2 = 2 |b|^2,
        i.e. kappa = 2; Hessian is strictly negative-definite there;
-  (T4) the real-irrep multiplicity pattern (trivial, doublets, sign) = (1, (1,), 0)
-       on Herm_circ(d) is uniquely realized at d = 3 among d in {2, 3, 4, 5, 6}.
+  (T4) under the clock action rho(M) = Omega^{-1} M Omega, the real-irrep
+       multiplicity pattern (trivial, doublets, sign) = (1, (1,), 0) on
+       Herm_circ(d) is uniquely realized at d = 3 among d in {2, 3, 4, 5, 6}.
 
 This narrow theorem treats (a, b) as ABSTRACT SYMBOLS. It does not select
 between weight choices (e.g. multiplicity (1, 1) vs real-dim (1, 2)),
@@ -41,7 +42,7 @@ try:
     import sympy
     from sympy import (
         Rational, sqrt, simplify, symbols, expand,
-        I, conjugate, Matrix, eye, zeros, trace, log, diff,
+        I, conjugate, Matrix, eye, zeros, trace, log, diff, pi, cos, sin,
     )
 except ImportError:
     print("FAIL: sympy required for exact algebra")
@@ -65,6 +66,31 @@ def check(label, ok, detail=""):
 
 def section(title):
     print("\n" + "-" * 88 + f"\n{title}\n" + "-" * 88)
+
+
+def matrix_simplify(M):
+    return M.applyfunc(lambda e: simplify(sympy.expand_complex(e).rewrite(sympy.exp)))
+
+
+def mat_zero(M):
+    M = matrix_simplify(M)
+    return all(e == 0 for e in M)
+
+
+def mat_eq(A, B):
+    return mat_zero(A - B)
+
+
+def shift_matrix(d):
+    C_d = zeros(d, d)
+    for i in range(d):
+        C_d[i, (i + 1) % d] = 1
+    return C_d
+
+
+def clock_matrix(d):
+    omega = sympy.exp(2 * I * sympy.pi / d)
+    return sympy.diag(*[omega ** j for j in range(d)])
 
 
 # ============================================================================
@@ -296,15 +322,51 @@ check("cross-partial d^2 S / dE_+ dE_perp = 0",
 section("Part 4 (T4): d = 3 uniqueness of the (1, (1,), 0) multiplicity pattern")
 # ----------------------------------------------------------------------------
 
-# For each d in {2, 3, 4, 5, 6}, count:
-#   trivial (k = 0): always 1.
-#   doublets (conjugate pair {k, d - k} with k != d - k mod d): floor((d - 1) / 2).
-#   sign (k = d/2 when d even): 1 if d even else 0.
+# Explicit action bridge:
+#
+# Literal conjugation by the cyclic shift C is trivial on circulants, since
+# circulants commute. The nontrivial representation used in (T4) is the dual
+# cyclic phase action alpha on coefficient modes:
+#
+#     alpha_g(C^k) = exp(2*pi*i*k/d) C^k.
+#
+# This action preserves the real Hermitian subspace because the pair
+# {C^k, C^{d-k}} is conjugate-paired. On the real Hermitian basis
+#
+#     X_k = C^k + C^{d-k},
+#     Y_k = i(C^k - C^{d-k}),
+#
+# the generator acts by the real 2 x 2 rotation
+#
+#     [[cos theta_k, -sin theta_k],
+#      [sin theta_k,  cos theta_k]],     theta_k = 2*pi*k/d.
+#
+# The k=0 coefficient is a trivial real line. If d is even, k=d/2 is the
+# sign line because theta=pi and alpha_g(C^(d/2)) = -C^(d/2).
+def generator_doublet_block(d, k):
+    theta = 2 * pi * k / d
+    return Matrix([[cos(theta), -sin(theta)], [sin(theta), cos(theta)]])
+
+
+def mat_equal(A, B):
+    return simplify(A - B) == zeros(A.rows, A.cols)
+
+
+def dual_phase_action_blocks(d):
+    blocks = {"trivial": [Matrix([[1]])], "doublets": [], "sign": []}
+    for k in range(1, (d - 1) // 2 + 1):
+        blocks["doublets"].append((k, generator_doublet_block(d, k)))
+    if d % 2 == 0:
+        blocks["sign"].append(Matrix([[-1]]))
+    return blocks
+
 def multiplicity_pattern(d):
-    trivial = 1
-    n_doublets = (d - 1) // 2
-    sign = 1 if d % 2 == 0 else 0
-    return (trivial, tuple([1] * n_doublets), sign)
+    blocks = dual_phase_action_blocks(d)
+    return (
+        len(blocks["trivial"]),
+        tuple([1] * len(blocks["doublets"])),
+        len(blocks["sign"]),
+    )
 
 expected_patterns = {
     2: (1, (), 1),
@@ -315,6 +377,33 @@ expected_patterns = {
 }
 
 for d in (2, 3, 4, 5, 6):
+    blocks = dual_phase_action_blocks(d)
+    check(f"d={d}: k=0 coefficient line is trivial under the dual phase action",
+          blocks["trivial"][0] == Matrix([[1]]),
+          detail="alpha_g(C^0) = C^0")
+    for k, Rk in blocks["doublets"]:
+        theta = 2 * pi * k / d
+        check(f"d={d}, k={k}: doublet generator is the real rotation block",
+              Rk == Matrix([[cos(theta), -sin(theta)], [sin(theta), cos(theta)]]),
+              detail=f"theta = 2*pi*{k}/{d}")
+        check(f"d={d}, k={k}: doublet block is orthogonal",
+              mat_equal(Rk.T * Rk, eye(2)),
+              detail="R_k^T R_k = I")
+        check(f"d={d}, k={k}: doublet block has determinant 1",
+              simplify(Rk.det() - 1) == 0,
+              detail=f"det(R_k) = {simplify(Rk.det())}")
+        check(f"d={d}, k={k}: doublet block has order dividing d",
+              mat_equal(Rk ** d, eye(2)),
+              detail="R_k^d = I")
+    if d % 2 == 0:
+        S_d = blocks["sign"][0]
+        check(f"d={d}: even k=d/2 coefficient line is sign",
+              S_d == Matrix([[-1]]),
+              detail="alpha_g(C^(d/2)) = -C^(d/2)")
+        check(f"d={d}: sign block has order dividing d",
+              mat_equal(S_d ** d, eye(1)),
+              detail="(-1)^d = 1 for even d")
+
     got = multiplicity_pattern(d)
     exp = expected_patterns[d]
     check(f"Herm_circ(d={d}) multiplicity pattern = {exp}",
@@ -348,7 +437,8 @@ print("""
     (T3)  S = log E_+ + log E_perp at fixed E_+ + E_perp = E_tot is
           extremized uniquely at E_+ = E_perp = E_tot / 2, i.e. a^2 = 2 |b|^2
           (kappa = 2); Hessian is strictly negative-definite there.
-    (T4)  The real-irrep multiplicity pattern (trivial, doublets, sign)
+    (T4)  Under the dual cyclic phase action on coefficient modes, the
+          real-irrep multiplicity pattern (trivial, doublets, sign)
           = (1, (1,), 0) on Herm_circ(d) is uniquely realized at d = 3
           among d in {2, 3, 4, 5, 6}.
 

@@ -20,7 +20,7 @@ MANIFEST = {
 
 REQUIRED_SOURCE_MARKERS = {
     "packet_checker": [
-        "from scripts import backreaction_poisson as bp",
+        "import scripts.backreaction_poisson as bp",
         "def _run_grid",
         "G_GRID =",
         "ASSERTIONS:",

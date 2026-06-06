@@ -42,11 +42,11 @@ GENERATION_KOIDE_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "bounded_obstruction_or_no_selection": 15,
-    "flow_or_records_stable_feature": 3,
-    "generation_or_koide_stable_feature": 3,
-    "generic_stable_feature": 8,
-    "thermal_or_score_stable_feature": 17,
+    "bounded_obstruction_or_no_selection": 17,
+    "flow_or_records_stable_feature": 4,
+    "generation_or_koide_stable_feature": 4,
+    "generic_stable_feature": 13,
+    "thermal_or_score_stable_feature": 20,
 }
 
 
@@ -259,7 +259,7 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
         buckets[stable_lane(row)].append(row)
     counts = Counter({lane: len(items) for lane, items in buckets.items()})
 
-    report("flow/thermal stability row count is current snapshot", len(rows) == 46, str(len(rows)))
+    report("flow/thermal stability row count is current snapshot", len(rows) == 58, str(len(rows)))
     report("stable lane counts match expected", dict(counts) == EXPECTED_LANE_COUNTS, str(counts))
     report("stable lane counts sum to row count", sum(counts.values()) == len(rows), str(counts))
 

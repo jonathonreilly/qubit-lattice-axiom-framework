@@ -37,8 +37,7 @@ because it is the positive counterpart to PR #2838.
 
 ## Next exact action
 
-Wait for GitHub audit-lane checks, then patch final clean/success PR status if
-the latest head remains clean.
+Closed for campaign purposes. Pivot to the production-dynamics needed row map.
 
 ## PR
 
@@ -48,7 +47,7 @@ base: "physics-loop/post-record-arrow-orientation-firewall-20260606"
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline queued at first verification"
-final_mergeable: null
-final_merge_state_status: null
-final_checks: null
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "audit_pipeline completed SUCCESS at final verification"
 ```

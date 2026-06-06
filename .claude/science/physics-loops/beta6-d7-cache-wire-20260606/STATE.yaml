@@ -1,0 +1,23 @@
+loop_slug: beta6-d7-cache-wire-20260606
+branch: physics-loop/beta6-d7-cache-wire-20260606
+base: origin/main@3ba784c50
+target_claim_id: beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30
+target_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_result_edits: false
+files_touched:
+  - docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md
+  - scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py
+  - logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt
+  - outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json
+  - .claude/science/physics-loops/beta6-d7-cache-wire-20260606/
+checks:
+  - command: python3 scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py
+    result: PASS=52 FAIL=0
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py --force --allow-non-main --push-mode none
+    result: refreshed cache, ok
+remaining_blockers:
+  - beta=6 plaquette closure remains open; this block only repairs the bounded coefficient compute packet.
+next_exact_action: open review PR for reviewer/auditor re-audit
+

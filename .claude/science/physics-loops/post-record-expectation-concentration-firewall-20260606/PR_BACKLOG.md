@@ -1,0 +1,31 @@
+# PR Backlog
+
+Status: pending PR creation.
+
+Intended title:
+
+```text
+[physics-loop] post-record-expectation-concentration-firewall no-go
+```
+
+Intended base:
+
+```text
+main
+```
+
+Intended branch:
+
+```text
+physics-loop/post-record-expectation-concentration-firewall-20260606
+```
+
+Body must include:
+
+- finite two-law counterexample;
+- runner result `SUMMARY: PASS=37 FAIL=0`;
+- artifact links to note, runner, cached log, and loop pack;
+- status `no-go`;
+- statement that concentration, p-values, and audit verdicts remain conditional
+  on supplied finite law or concentration assumptions;
+- statement that no generation/Koide dial is selected or forced.

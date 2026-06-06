@@ -1,0 +1,49 @@
+loop_slug: post-record-expectation-concentration-firewall-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 10
+date: 2026-06-06
+branch: physics-loop/post-record-expectation-concentration-firewall-20260606
+base: origin/main
+goal: |
+  Test whether expected post-record frequencies, or even all one-time
+  marginals, are enough to derive concentration, finite p-values, or audit
+  calibration without a supplied finite law or supplied concentration theorem.
+target_status: no-go
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: finite two-law counterexample
+hard_residual_attacked: |
+  The tempting route from expected post-record frequency to concentration,
+  p-value, or audit verdict. This route would collapse the user's pre-record
+  probability / post-record information distinction if it were accepted
+  without a supplied probability law.
+files_touched:
+  - docs/POST_RECORD_EXPECTATION_CONCENTRATION_FIREWALL_2026-06-06.md
+  - scripts/frontier_post_record_expectation_concentration_firewall_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_expectation_concentration_firewall_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-expectation-concentration-firewall-20260606/*
+runner_summary: "SUMMARY: PASS=37 FAIL=0"
+open_imports:
+  - "finite law or concentration theorem for any calibrated p-value"
+  - "kernel, clock/rate, Born/instrument, Hamiltonian, and dial selection remain supplied inputs"
+no_go_routes:
+  - "expected post-record frequency => concentration / p-value / audit verdict"
+review_findings: "local review clean: runner PASS=37 FAIL=0; py_compile clean; ASCII clean; wording scan clean after negated Koide/dial firewall review; loop pack has 13 files; git diff --check clean"
+pr_status: verified_pending_pr
+next_exact_action: |
+  Commit, push, open PR, verify PR status, then pivot to the next independent
+  dynamics lane.
+stop_condition: |
+  PR opened, mergeability/check state recorded, and campaign pivots while
+  runtime remains.
+status_fields:
+  actual_current_surface_status: no-go
+  trace_class: negative_route_pruning
+  reachability_to_target: prunes
+  conditional_surface_status: "concentration and p-values remain conditional on supplied finite law or concentration assumptions"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch prunes expectation-to-concentration overclaims; it does not propose retained status."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

@@ -18,4 +18,6 @@ mean `a`, before using `Q` and `|b|^2/a^2`.
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2741
+
+Initial pushed commit: `82167e300`.

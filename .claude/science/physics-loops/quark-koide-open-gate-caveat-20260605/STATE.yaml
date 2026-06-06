@@ -25,6 +25,7 @@ checks:
   - "python3 scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py"
   - "python3 -m py_compile scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py"
 review_disposition: pass
-pr_url: pending
-next_exact_action: "Commit, push, and open the review PR."
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2741
+pushed_commit: 82167e300
+next_exact_action: "Reviewer can inspect PR #2741; campaign can pivot to the next conditional audit-unblock target."
 stop_condition: "Block complete after PR creation and verification."

@@ -1,0 +1,18 @@
+loop_slug: spatial-slab-compact-scope-repair-20260606
+mode: campaign_block
+date: 2026-06-06
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17
+target_blocker_text: "scope_too_broad: correct the S.14 adjoint factor and either restrict the claim to the finite-dimensional conditional H1/H2 bridge or add a separate infinite-dimensional compact-operator and thermal trace argument for the L2(SU(3)^E) pure-Wilson surface."
+files_touched:
+  - docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md
+open_imports:
+  - "Full canonical staggered+Wilson spatial H1/H2 remains open."
+  - "Finite-temperature compact pure-Wilson form requires the explicit thermal trace-class condition."
+review_disposition: pass_local_checks_reviewer_owned
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: "Open a review PR, then continue the audit-unblock scan."

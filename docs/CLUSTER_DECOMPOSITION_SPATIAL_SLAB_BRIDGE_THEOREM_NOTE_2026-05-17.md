@@ -1,7 +1,7 @@
 # Spatial-Slab Cluster-Decomposition Bridge on physical Cl(3) over Z^3
 
 **Date:** 2026-05-17; 2026-06-06 finite-Lambda pure-Wilson H1/H2
-authority wiring.
+authority wiring; 2026-06-06 compact trace-class scope and adjoint repair.
 **Status:** source-note proposal; final claim type, audit verdict, and
 effective status are set only by the independent audit lane.
 **Type:** bounded_theorem
@@ -37,17 +37,25 @@ supplies the spatial slab bridge's two open inputs **on the restricted
 finite-Lambda pure-Wilson surface**:
 
 - **H1 on that surface:** a positive Hermitian spatial-axis Wilson transfer
-  operator `T_W^(mu)` on the finite slab Hilbert space.
+  operator `T_W^(mu)` on the finite-Lambda pure-Wilson
+  `L^2(SU(3)^E)` slab Hilbert space.
 - **H2 on that surface:** a simple top eigenvalue and strict finite-Lambda
   spatial-axis gap `Delta_x^(mu) > 0`, obtained by axis permutation from the
   finite-Lambda temporal-axis Wilson transfer theorem.
 
 Composing that one-hop authority with this bridge gives a closed finite-block
 spatial-slab clustering corollary **only for the finite-Lambda pure-Wilson
-axis-permuted surface**. It does not prove the staggered+Wilson fermion-factor
-extension, a full canonical `Cl(3) x Z^3` Hamiltonian spatial transfer gap, a
-thermodynamic-limit gap, a continuum gap, or unconditional spatial clustering.
-Those remain outside this bridge and outside the axis-permutation companion.
+axis-permuted surface**. Because `L^2(SU(3)^E)` is infinite-dimensional even at
+finite Lambda, the pure-Wilson composition uses the compact trace-class
+extension stated below, not the finite-dimensional `D = dim H_slab` estimate.
+The zero-temperature compact spectral bound is supplied by the trace-class
+extension; the finite-temperature bound requires the explicit thermal
+trace-class condition stated there and does not inherit the finite-dimensional
+Boltzmann-count estimate (S.9). This does not prove the staggered+Wilson
+fermion-factor extension, a full canonical `Cl(3) x Z^3` Hamiltonian spatial
+transfer gap, a thermodynamic-limit gap, a continuum gap, or unconditional
+spatial clustering. Those remain outside this bridge and outside the
+axis-permutation companion.
 
 **Loop:** `axiom-first-foundations`
 **Cycle:** block-28 narrow closure follow-up to the 2026-05-09 temporal bridge
@@ -238,12 +246,27 @@ slab-excited-state population. Equivalently, with
 
 At zero temperature (`β → ∞`), `q_{β,x} → 0` and (S.8) reduces to (S.7).
 
+**Compact trace-class extension.** The same ground-state proof also holds
+when `H_slab(x)` is a separable Hilbert space, `T_x` is positive self-adjoint
+trace-class, and the top eigenvalue is simple with `lambda_1 < M_x`. The
+spectral theorem gives an orthonormal eigenbasis for the compact positive
+operator and the off-ground sums below converge by Cauchy-Schwarz. Thus
+(S.7) holds for bounded `A_p,B_q` on that compact trace-class surface.
+
+The finite-temperature trace-distance form (S.8) holds on the compact surface
+whenever the thermal operator `exp(-beta Htilde_x)` is trace-class and the
+excited population `q_{beta,x}` in (S.16) is finite. The finite-dimensional
+counting estimate (S.9) is not asserted on the compact surface.
+
 **Finite-Lambda pure-Wilson corollary.** On the restricted finite-Lambda
 pure-Wilson axis-permuted surface of the 2026-06-02 `Delta_x` companion,
-H1 and H2 are supplied by `T_W^(mu)` and its strict finite-Lambda gap. Therefore
-(S.7) and (S.8) apply to bounded slab observables on that finite pure-Wilson
-slab Hilbert space. This corollary is not a statement about the full
-staggered+Wilson fermion-factor surface or any thermodynamic/continuum limit.
+H1 and H2 are supplied by `T_W^(mu)` and its strict finite-Lambda gap on
+`L^2(SU(3)^E)`. Therefore the compact trace-class extension gives the
+zero-temperature spatial bound (S.7) for bounded slab observables on that
+finite-Lambda pure-Wilson surface. The finite-temperature bound (S.8) applies
+only when its stated thermal trace-class condition is supplied. This corollary
+is not a statement about the full staggered+Wilson fermion-factor surface or
+any thermodynamic/continuum limit.
 
 **Not proved here.**
 
@@ -312,13 +335,31 @@ This is (S.6). For the bound (S.7):
         ≤  (λ_1/M_x)^d · Σ_{k ≥ 1} |⟨0_x|A_p|k⟩| · |⟨k|B_q|0_x⟩|       ((λ_k/M_x)^d ≤ (λ_1/M_x)^d)
         ≤  (λ_1/M_x)^d · ( Σ_{k ≥ 1} |⟨0_x|A_p|k⟩|² )^{1/2}
                        · ( Σ_{k ≥ 1} |⟨k|B_q|0_x⟩|² )^{1/2}            (Cauchy-Schwarz)
-        ≤  (λ_1/M_x)^d · ‖A_p|0_x⟩‖ · ‖B_q^†|0_x⟩‖
+        ≤  (λ_1/M_x)^d · ‖A_p^†|0_x⟩‖ · ‖B_q|0_x⟩‖
         ≤  (λ_1/M_x)^d · ‖A_p‖ · ‖B_q‖
         =  exp(-d · Δ_x) · ‖A_p‖ · ‖B_q‖.                                    (S.14)
 ```
 
+The penultimate line uses
+`Σ_{k ≥ 1}|⟨0_x|A_p|k⟩|² = ‖P_⟂ A_p^†|0_x⟩‖² ≤ ‖A_p^†|0_x⟩‖²` and
+`Σ_{k ≥ 1}|⟨k|B_q|0_x⟩|² = ‖P_⟂ B_q|0_x⟩‖² ≤ ‖B_q|0_x⟩‖²`.
 The last line uses `(λ_1/M_x)^d = exp(-d · log(M_x/λ_1)) = exp(-d · Δ_x)`,
 which is (S.7). ∎
+
+### Step 2b — Compact trace-class extension
+
+If `T_x` is positive self-adjoint trace-class on a separable Hilbert space,
+then `Ttilde_x` is compact and has a countable orthonormal eigenbasis for the
+closure of its range, with eigenvalues decreasing to zero. A simple top
+eigenvalue and `lambda_1 < M_x` give the same gap `Delta_x`.
+
+For bounded `A_p,B_q`, the expansion (S.13) and the Cauchy-Schwarz estimate
+above remain valid with infinite sums: the coefficient sequences are the
+square-summable coordinates of `P_perp A_p^dagger|0_x>` and
+`P_perp B_q|0_x>`. Therefore (S.7) holds on the compact trace-class surface.
+For finite temperature, the same trace-distance proof applies if
+`exp(-beta Htilde_x)` is trace-class; this condition is explicit and is not
+replaced by a finite-dimensional `D` count.
 
 ### Step 3 — Finite-temperature spatial bound (proves S.2)
 
@@ -436,22 +477,26 @@ canonical action.
 
 **Finite-Lambda pure-Wilson composition.** The 2026-06-02 `Delta_x`
 axis-permutation companion supplies H1 and H2 for the restricted finite-Lambda
-pure-Wilson spatial-axis transfer operator. Composed with this bridge, it gives
-a finite-block spatial-slab clustering theorem on that restricted surface.
-This is a source-side composition for independent review/audit; it is not a
-direct audit-status change and it does not extend to the full staggered+Wilson
-surface.
+pure-Wilson spatial-axis transfer operator on the compact `L^2(SU(3)^E)`
+surface. Composed with the compact trace-class extension above, it gives the
+zero-temperature finite-block spatial-slab clustering bound on that restricted
+surface. Its finite-temperature form additionally requires the explicit
+thermal trace-class condition; the finite-dimensional `D` estimate is not used
+for pure Wilson. This is a source-side composition for independent
+review/audit; it is not a direct audit-status change and it does not extend to
+the full staggered+Wilson surface.
 
 **What this rules out.**
 
 - This note does **not** claim `Δ_x > 0` on the canonical surface.
-- This note does claim the finite-Lambda pure-Wilson spatial-axis subcase only
-  through the one-hop `Delta_x` axis-permutation companion.
+- This note does claim the finite-Lambda pure-Wilson spatial-axis
+  zero-temperature subcase only through the compact trace-class extension plus
+  the one-hop `Delta_x` axis-permutation companion.
 - This note does **not** prove the parent note's spatial L2 as stated
   unconditionally.
-- The chain "H1 ∧ H2 ⇒ (S.1) ∧ (S.2)" *is* now closed-form on the
-  framework baseline, putting the spatial direction at the same authority level the
-  temporal direction reached with the 2026-05-09 bridge.
+- The finite-dimensional chain "H1 and H2 imply (S.1) and (S.2)" remains
+  closed-form spectral theory; the compact pure-Wilson chain gives (S.1) and
+  gives (S.2) only with its explicit thermal trace-class condition.
 - The parent row's full canonical L2 claim remains outside this bridge's
   finite-Lambda pure-Wilson subcase until the full-surface spatial inputs and
   any required temporal/full-surface gap inputs are derived.
@@ -478,12 +523,14 @@ holds L1, L3, L4 closed-form, and L2 conditional on (a) the temporal
 bridge (closed-form, open input `Δ_T > 0`) and (b) a spatial cluster
 theorem with constants.
 
-With this note, (b) is satisfied in the same conditional form as (a): the
-chain "H1 ∧ H2 ⇒ spatial clustering" is closed-form, mirroring
-"`Δ_T > 0` ⇒ temporal clustering." With the 2026-06-02 `Delta_x`
-axis-permutation companion, H1 and H2 are also supplied for the restricted
-finite-Lambda pure-Wilson spatial-axis surface, giving a closed finite-block
-pure-Wilson spatial-slab corollary.
+With this note, (b) is satisfied in the same conditional form as (a) on the
+finite-dimensional bridge surface: the chain "H1 and H2 imply spatial
+clustering" is closed-form, mirroring "`Delta_T > 0` implies temporal
+clustering." With the 2026-06-02 `Delta_x` axis-permutation companion, H1 and
+H2 are also supplied for the restricted finite-Lambda pure-Wilson spatial-axis
+surface, where the compact trace-class extension gives the zero-temperature
+pure-Wilson spatial-slab corollary and the finite-temperature version requires
+its explicit trace-class thermal hypothesis.
 
 The remaining gap for the full parent is the extension from the restricted
 finite-Lambda pure-Wilson spatial-axis surface to the full canonical physical
@@ -495,7 +542,7 @@ inputs.
 
 ## Citations
 
-- framework baseline: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- framework baseline: [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md)
 - parent cluster-decomposition note (context for the prior repair request;
   not a load-bearing dependency of this bounded theorem):
   `AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`
@@ -513,11 +560,15 @@ inputs.
 
 ## Audit dependency note
 
-This note is a bounded theorem with two surfaces:
+This note is a bounded theorem with three surfaces:
 
 - General bridge surface: conditional on explicit H1 and H2.
-- Finite-Lambda pure-Wilson surface: H1 and H2 are supplied by the linked
-  2026-06-02 `Delta_x` axis-permutation companion.
+- Finite-dimensional surface: H1 and H2 imply both the ground-state and
+  finite-temperature bounds, including the finite `D` estimate.
+- Finite-Lambda pure-Wilson compact surface: H1 and H2 are supplied by the
+  linked 2026-06-02 `Delta_x` axis-permutation companion; the compact extension
+  supplies the zero-temperature bound, and finite temperature requires the
+  explicit thermal trace-class condition.
 
 It does **not** promote the parent row's audit status. The parent row's
 `verdict_rationale` repair target is addressed on the finite-Lambda

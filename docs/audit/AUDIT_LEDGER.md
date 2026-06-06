@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 201 |
-| **retained_bounded** | 685 |
+| **retained_bounded** | 686 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1329 |
+| unaudited | 1328 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1075 |
+| `audited_clean` | 1076 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1636 |
+| `unaudited` | 1635 |
 
 | claim_type | count |
 |---|---:|
@@ -604,6 +604,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9020,6 +9021,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Given the supplied Bogomolny/self-duality normalization, setting F = *F and Q = 1 saturates S[A] >= (8 pi^2/g^2)|Q|, hence S_inst = 8 pi^2/g^2.  _(class `A`)_
 - **chain closes:** True — The conclusion is a direct algebraic substitution into the supplied retained-bounded Bogomolny normalization. The displayed component normalization Q = (1/(32 pi^2)) int Tr(F_mu nu *F^mu nu) and S = (1/(4g^2)) int Tr(F_mu nu F^mu nu) give S = 8 pi^2 Q/g^2 under self-duality, so Q = 1 closes the claim.
 - **rationale:** The load-bearing step is class A algebra over fixed standard normalizations and the one-hop cited authority is retained_bounded. The note explicitly narrows away Atiyah-Singer integrality, BPST existence, Luescher lattice topology, framework substrate identification, and hierarchy/scale-ratio claims, so no hidden external bridge is needed for the audited scope. The runner source performs the symbolic specialization, arithmetic evaluations, saturation identity, and boundary text checks rather than merely printing a pass line.
+- **auditor confidence:** high
+
+### `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30`
+
+- **Note:** [`INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`](../../docs/INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional on the supplied fixed-background staggered two-step dispersion, the matter-sector single-fermion transfer gap is at least arcsinh(m)/a_tau uniformly in U and spatial volume; the full beta=6 gauge/coupled transfer gap is only recorded as open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-182534-bebc66fae6-interacting_transfer_matter_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For real lambda_j, sqrt(m^2 + lambda_j^2) >= m and arcsinh is strictly increasing, hence E_j[U] = arcsinh(sqrt(m^2 + lambda_j(U)^2)) >= arcsinh(m) for every j and U.  _(class `A`)_
+- **chain closes:** True — The supplied retained/retained_bounded authorities provide the needed anti-Hermitian fixed-background hop and dispersion formula, and the lower bound follows by elementary monotonicity. The note does not infer full Delta_T > 0; it leaves the pure-gauge and coupled spectral gap as an open gate.
+- **rationale:** The load-bearing step is a genuine algebraic inequality over the cited dispersion and real lambda_j spectrum, not a renaming or tuned numerical match. The runner checks finite anti-Hermitian staggered-hop carriers and the symbolic floor/eigenvalue bounds without external comparator values or hard-coded pass constants. The beta=6 plaquette/Fisher-zero discussion is support-only for the open-gate wording and is not used to prove the audited matter-sector bound.
 - **auditor confidence:** high
 
 ### `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27`

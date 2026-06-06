@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 313,
     "high": 255,
-    "leaf": 409,
+    "leaf": 408,
     "medium": 354
   },
   "cycle_break_target_count": 6,
@@ -28346,33 +28346,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "staggered_only_det_positivity_case_a_note_2026-05-17"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/interacting_transfer_matter_gap_2026-05-30.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39962,6 +39935,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 71,
-  "total_pending": 1331
+  "ready_count": 70,
+  "total_pending": 1330
 }

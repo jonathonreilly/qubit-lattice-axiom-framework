@@ -5,6 +5,13 @@
 Checks passed. This block is stacked on PR #2795 and targets the
 record-production kernel boundary.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2797
+
+GitHub verification: open PR, base
+`physics-loop/record-classical-semigroup-boundary-20260606`, head
+`physics-loop/record-production-kernel-boundary-20260606`, merge state
+`UNSTABLE`.
+
 ## Intended Result
 
 Post-record append/count dynamics consumes realized atoms but does not determine
@@ -18,7 +25,7 @@ the production kernel, probability law, rate, or stable dial setting.
 
 ## Next Action
 
-Commit, push, open a stacked PR, then continue campaign.
+Continue campaign: select next high-leverage dynamics/open-lane block.
 
 ## Verification
 

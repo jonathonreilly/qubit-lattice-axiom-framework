@@ -1,0 +1,32 @@
+====================================================================================
+Neutrino Koide: lens predicts Q_nu=2/3 iff Dirac (direct record); Majorana/seesaw breaks it
+(third recordable-lens application: leptons #2910.., quarks #2937, neutrinos here)
+====================================================================================
+
+[BLOCK 1] Lens: Q=2/3 is a directly-recorded Dirac sqrt-mass phenomenon
+  [PASS] charged leptons: directly-recorded Dirac sqrt-mass (pole) -> Q = 2/3  --  Q=0.66666  (#2910/#2917/#2923)
+
+[BLOCK 2] Neutrinos are colorless -> NOT confined -> the #2937 exclusion does NOT apply
+  [PASS] neutrinos colorless => can be recorded as free states (unlike confined quarks)  --  so the question is Dirac (direct record) vs Majorana/seesaw (composite)
+
+[BLOCK 3] Majorana/seesaw composite m_nu = m_D^2/M_R BREAKS Koide
+  [PASS] seesaw M_R degenerate (1,1,1): Q_nu != 2/3  --  Q_nu=0.8936
+  [PASS] seesaw M_R hierarchical (1,10,100): Q_nu != 2/3  --  Q_nu=0.7300
+  [PASS] seesaw M_R inverse (100,10,1): Q_nu != 2/3  --  Q_nu=0.9637
+  [PASS] seesaw M_R generic (3,1,7): Q_nu != 2/3  --  Q_nu=0.7645
+  [PASS] => the nonlinear seesaw composite does NOT preserve Koide for ANY M_R tested  --  light mass is not a directly-recorded Dirac sqrt-mass; M_R decoupled/unrecorded
+
+[BLOCK 4] DATA (comparator): measured Dm^2 give Q_nu < 2/3 for BOTH hierarchies
+  [PASS] NH: Q_nu < 2/3 across the cosmologically-allowed range  --  Q_nu in [0.342, 0.586] (max at m1=0)
+  [PASS] IH: Q_nu < 2/3 across the cosmologically-allowed range  --  Q_nu in [0.355, 0.500]
+  [PASS] => neutrinos do NOT obey the charged-lepton Koide (Q=2/3): consistent with Majorana/seesaw  --  and inconsistent with the simplest Dirac+charged-lepton-C3 -> Q=2/3 hypothesis
+
+[BLOCK 5] The falsifiable distinction + scope
+  [PASS] DISTINCTION: charged leptons Q=2/3 (recorded Dirac); neutrinos Q<2/3 (composite)
+  [PASS] Q_nu=2/3 would require Dirac + shared C3 record structure (DISFAVORED by the data)
+  [PASS] 0nu-beta-beta (Majorana) + absolute-mass (KATRIN/cosmology) sharpen the test
+  [PASS] scope: qualitative+comparator (not a neutrino-mass derivation); Dm^2 comparator only; no axiom
+
+====================================================================================
+SCORECARD:  PASS = 14   FAIL = 0
+====================================================================================

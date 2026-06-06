@@ -23,7 +23,7 @@ class StackPr:
 
 
 STACK = (
-    StackPr(2850, "directed certificate examples", "exact-support", "SUMMARY: PASS=59 FAIL=0", "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt"),
+    StackPr(2850, "directed certificate examples", "exact-support", "SUMMARY: PASS=60 FAIL=0", "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt"),
     StackPr(2853, "kernel-selection firewall", "no-go", "SUMMARY: PASS=52 FAIL=0", "logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt"),
     StackPr(2856, "supplied kernel selection rule", "exact-support", "SUMMARY: PASS=39 FAIL=0", "logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt"),
     StackPr(2858, "target-vector firewall", "no-go", "SUMMARY: PASS=32 FAIL=0", "logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt"),

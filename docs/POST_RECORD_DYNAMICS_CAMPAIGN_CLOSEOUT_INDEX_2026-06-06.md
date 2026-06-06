@@ -60,6 +60,9 @@ The runner verifies:
 
 - all six PR entries are present in this index;
 - cached summaries are present for each stack layer;
+- the directed-certificate layer consumes the repaired
+  `SUMMARY: PASS=60 FAIL=0` row-bucketing certificate and the stack-map layer
+  consumes the repaired `SUMMARY: PASS=47 FAIL=0` authority-map certificate;
 - the stack has four `exact-support` entries and two `no-go` entries;
 - no audit verdict, audit-data write, retained/promoted claim, unsupplied
   kernel selection, Record-derived rule/target, sample-as-law, stable-setting

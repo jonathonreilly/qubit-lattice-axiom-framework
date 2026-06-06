@@ -1,0 +1,17 @@
+loop_slug: post-record-closeout-cache-chain-20260606
+branch: physics-loop/post-record-closeout-cache-chain-20260606
+base: origin/main@e0e617eb7
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+active_route: cache-chain consistency repair
+files_touched:
+  - scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
+  - scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.txt
+  - docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md
+  - docs/POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md
+open_imports: []
+audit_files_touched: false
+next_exact_action: "Run final check-only verification, commit, push, and open a ready review PR."
+stop_condition: "Stop this block after PR creation; then rescan ledger for remaining repairable rows."

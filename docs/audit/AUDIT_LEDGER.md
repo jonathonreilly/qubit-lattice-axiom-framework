@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 194 |
+| **retained** | 195 |
 | **retained_no_go** | 209 |
 | **retained_bounded** | 699 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1285 |
+| unaudited | 1284 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1100 |
+| `audited_clean` | 1101 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 59 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1592 |
+| `unaudited` | 1591 |
 
 | claim_type | count |
 |---|---:|
@@ -919,6 +919,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_stable_kernel_count_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stable_kernel_expected_frequency_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_concentration_certificate_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_supplied_kernel_selection_rule_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13991,6 +13992,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under truncation projections pi_n(C_{n+1})=C_n, the supplied predicate leading_marker_is_one(C_n)=true is stable across C1 through C4 while prefix density is not stable.  _(class `A`)_
 - **chain closes:** False — The finite projection and predicate arithmetic closes on the displayed ladder. The family-lift rule itself is supplied and not derived or cited as a retained or accepted premise, so the broader lift authority remains missing.
 - **rationale:** Independent formula inventory confirms the displayed finite checks: truncating C2, C3, and C4 gives C1, C2, and C3; all four words have leading entry 1; the densities are 1, 1/2, 2/3, and 3/4 and are nonconstant. The runner source genuinely computes these finite checks on the hard-coded ladder rather than merely printing a pass summary. However, the family-lift rule is a hard-coded supplied premise with no cited retained authority or accepted axiom premise in the restricted packet, so the audit supports only the conditional finite interface.
+- **auditor confidence:** high
+
+### `post_record_supplied_kernel_selection_rule_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited only the branch-local supplied-rule interface: finite supplied kernels, supplied source, supplied orientation/clock bridge, and exact rational scoring select a unique candidate within that supplied rule, without deriving the rule, candidates, or production kernel from Record.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-195424-eb2581a659-post_record_supplied_kernel_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The supplied quadratic rational scoring rule over the supplied two-kernel candidate family has a unique minimum at candidate k4, while a weakened endpoint-only rule ties the candidates.  _(class `A`)_
+- **chain closes:** True — The exact arithmetic closes on the supplied inputs: k4 has statistic vector endpoint_ab=1/4, endpoint_ba=1/2, second_is_b=1/4 and score 0, while k3 has score 1/2; the endpoint-only rule gives both score 0 and is correctly underselected.
+- **rationale:** The load-bearing step is an algebraic finite minimization over explicitly supplied kernels, source, bridge, targets, and weights. Independent recomputation of the displayed probabilities and scores agrees with the runner: k4 uniquely minimizes the informative exact rational objective, and the weaker rule ties. The note’s scope is careful that no Record-derived selection rule, candidate family, production kernel, physical arrow, Born law, or dial selection is claimed.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

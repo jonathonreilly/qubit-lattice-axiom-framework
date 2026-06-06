@@ -1,12 +1,18 @@
 # PR Backlog
 
-Status: PR not created yet.
+Status: PR created and verified.
 
-Planned command after checks and push:
+PR:
 
 ```text
-gh pr create --base physics-loop/kz-external-lift-gate-20260606 --head physics-loop/kz-su3-beta6-convention-split-20260606 --title "[physics-loop] K-Z SU3 beta6 convention split no-go" --body-file /tmp/kz-su3-beta6-convention-split-pr-body.md
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2808
 ```
 
-If PR creation fails for auth/network reasons, keep this branch pushed and use
-the command above as the recovery path.
+Verification:
+
+```text
+gh pr view 2808 --json number,url,state,baseRefName,headRefName,mergeStateStatus,mergeable,title,body
+```
+
+Result: open, stacked on `physics-loop/kz-external-lift-gate-20260606`,
+`mergeable=MERGEABLE`, `mergeStateStatus=UNSTABLE`.

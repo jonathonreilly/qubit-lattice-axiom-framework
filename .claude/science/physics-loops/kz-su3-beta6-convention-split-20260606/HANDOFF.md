@@ -16,7 +16,12 @@ physics-loop/kz-external-lift-gate-20260606
 
 Parent PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2804
 
-PR for this block: pending.
+PR for this block: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2808
+
+GitHub verification: open PR, base
+`physics-loop/kz-external-lift-gate-20260606`, head
+`physics-loop/kz-su3-beta6-convention-split-20260606`, mergeable
+`MERGEABLE`, merge state `UNSTABLE`.
 
 ## Result
 
@@ -35,5 +40,7 @@ bracket or a repo-owned beta=6 SDP reproduction.
 
 ## Next Action
 
-Commit, push, open the stacked PR, patch this pack with the PR URL, then
-continue the 12-hour campaign.
+Continue the 12-hour campaign. Prefer a retained-positive stretch route over
+another shallow no-go, with the record dynamics clock/rate normalization gate
+and repo-owned finite SU(3), Wilson beta=6 reproduction as the top live
+candidates.

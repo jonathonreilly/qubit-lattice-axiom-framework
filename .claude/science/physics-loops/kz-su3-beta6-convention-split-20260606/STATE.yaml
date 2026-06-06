@@ -12,8 +12,8 @@ hard_residual: "Direct finite SU(3), Wilson beta=6 source table/source-data extr
 branch: physics-loop/kz-su3-beta6-convention-split-20260606
 base_branch: physics-loop/kz-external-lift-gate-20260606
 base_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2804"
-pr_url: null
-pr_status: not_created_yet
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2808"
+pr_status: "open; base physics-loop/kz-external-lift-gate-20260606; head physics-loop/kz-su3-beta6-convention-split-20260606; mergeable MERGEABLE; mergeStateStatus UNSTABLE"
 files_touched:
   - docs/GAUGE_SCALAR_KZ_SU3_BETA6_CONVENTION_SPLIT_NOTE_2026-06-06.md
   - scripts/frontier_kz_su3_beta6_convention_split_2026_06_06.py
@@ -28,5 +28,5 @@ review_disposition: pass
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-next_exact_action: "Commit, push, open stacked PR against physics-loop/kz-external-lift-gate-20260606, patch this pack with the PR URL, then pivot to the next campaign opportunity."
+next_exact_action: "Pivot to the next campaign opportunity: prefer a retained-positive stretch route over another shallow no-go."
 stop_condition: "Only the 12-hour runtime/global queue/tooling stop applies; this no-go is a campaign checkpoint."

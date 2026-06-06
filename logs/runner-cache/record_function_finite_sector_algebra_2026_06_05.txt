@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/record_function_finite_sector_algebra_2026_06_05.py
+runner_sha256: 67ba7a630d4b26a5bd3bed4b1ed21e452e61e26bc0ab9ea9bbbec202fe684ade
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.81
+status: ok
+----- stdout -----
 [PASS] R1.1 finite additivity holds for every ordered disjoint pair of 4 supplied records
        checked ordered disjoint pairs=81
 [PASS] R1.2 total record readout is the sum of singleton sector readouts
@@ -29,3 +37,6 @@
 SCORECARD PASS=18 FAIL=0
 FINDING: Record supplies finite additive readout-vector algebra;
          probability, weighting, and dynamics remain separate gates.
+
+----- stderr -----
+

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 678 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1236 |
+| unaudited | 1235 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 87 |
+| ~~audited_conditional~~ | 88 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1053 |
-| `audited_conditional` | 87 |
+| `audited_conditional` | 88 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1539 |
+| `unaudited` | 1538 |
 
 | claim_type | count |
 |---|---:|
@@ -1257,6 +1257,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13739,6 +13740,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of the Hilbert-Schmidt projection onto the identity line is alpha = <I_color, M_color>_HS / <I_color, I_color>_HS = Tr_color M_color / N_c, giving rho_singlet = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].  _(class `A`)_
 - **chain closes:** True — The conclusion follows from ordinary finite-dimensional orthogonal projection and the supplied SU(N_c) generator normalization. The note explicitly does not identify this projection fraction with kappa_EW or any physical matching rule.
 - **rationale:** The load-bearing step is a direct Hilbert-Schmidt projection identity, not a definition, renaming, external comparator, or tuned numerical match. The only cited authority needed for P4 supplies the SU(N_c) normalization convention and is provided as retained-grade decoration under the rubric. The runner source performs exact rational arithmetic for the identity, traceless-generator witnesses, normalization checks, sum rule, trace-zero iff zero-singlet condition, and non-claim boundary, with no helper imports and no hard-coded contested physical coefficient.
+- **auditor confidence:** high
+
+### `record_function_finite_sector_algebra_2026-06-05`
+
+- **Note:** [`RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md`](../../docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite additive record-sector readout represented as sector vectors, incidence coarse-graining algebra, ratio/normalized-coordinate identities, and the stated generation-dial identities.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-113551-6e11eea3e7-record_function_finite_secto`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any finite union of sectors A, with indicator vector chi_A, I(A)=chi_A . v, so disjoint unions add and coarse-grainings are incidence-matrix sums.  _(class `A`)_
+- **chain closes:** False — The finite vector, additivity, coarse-graining, and ratio algebra close from the supplied finite-additivity axiom and standard algebra. The Q endpoint values do not close because the restricted packet never defines Q, while the runner supplies q_from_rho = 1/3 + 2r/3 internally.
+- **rationale:** The core record-function algebra is a genuine class A closure: finite additivity gives dot-product readout on finite unions, incidence matrices implement coarse-graining, and the scale-invariance identities are straightforward algebra with the usual nonzero-denominator domains. The generation ratio rho = 2r and s = log2(rho) also close once the sector readouts a^2 and 2|b|^2 are supplied. However, the named Q endpoint entries require an extra Q coordinate definition; the runner verifies them only by hard-coding q_from_rho = 1/3 + 2r/3, which is not supplied or cited in the source packet.
 - **auditor confidence:** high
 
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`

@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | positive_theorem | unaudited | critical | 998 | 19.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_spectrum_condition_check.py` |
+| 1 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | critical | 998 | 19.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_spectrum_condition_check.py` |
 | 2 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 288 | 14.68 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_lattice_noether_check.py` |
 | 3 | `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | audit_in_progress | critical | 254 | 15.99 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_scalar_temporal_observable_bridge_no_go.py` |
 | 4 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 48 | 13.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py` |

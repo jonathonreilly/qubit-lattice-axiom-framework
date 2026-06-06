@@ -95,15 +95,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_scope": "Finite-dimensional two-step blocked staggered-only transfer matrix T = T_hat^2 on the free or fixed-background config-by-config surface; SC1-SC2 hold given strict positive Hermitian T, SC3 is conditional on a nondegenerate top eigenvalue, and SC4 is only a conditional temporal-decay corollary on a supplied positive gap.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
         "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
@@ -113,11 +113,11 @@
         "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
       ],
       "direct_in_degree": 20,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 19.964,
       "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
       "transitive_descendants": 998

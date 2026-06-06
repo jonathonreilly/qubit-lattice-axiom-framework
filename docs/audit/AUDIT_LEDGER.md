@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 681 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1361 |
+| unaudited | 1360 |
+| audit_in_progress | 1 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -60,23 +61,23 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 4 |
 | `audited_clean` | 1057 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1667 |
+| `unaudited` | 1666 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1322 |
+| `bounded_theorem` | 1323 |
 | `decoration` | 53 |
 | `meta` | 310 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 783 |
+| `positive_theorem` | 782 |
 
 | criticality | count |
 |---|---:|
@@ -132,6 +133,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |

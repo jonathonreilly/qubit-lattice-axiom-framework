@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py
+runner_sha256: 5b5fcf52d1da14dea9d1cfb79d0433313c47eedbd76b4a2370461d87b9fe6c35
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 15.71
+status: ok
+----- stdout -----
+================================================================================================================
+GAUGE-VACUUM PLAQUETTE FIRST-SECTOR TAIL UNDERDETERMINATION
+================================================================================================================
+
+Question:
+  Can two factorized-class extensions agree on the retained first-sector
+  packet and sample triple while inducing different Perron/Jacobi data?
+
+  z00_min                                    = 0.349606952458
+  retained packet                            = [1.0, 0.267139565315, 0.267139565315, 0.0]
+  non-retained tail min/max/mass             = 7.754842e-02 / 8.808633e-01 / 1.194952e+01
+  retained packet gap zero-vs-tail           = 0.000e+00
+  retained sample gaps zero/tail/pair        = 1.777e-16 / 1.777e-16 / 0.000e+00
+  zero transfer diagnostics                  = {'sym_gap': 2.220446049250313e-16, 'swap_gap': 5.551115123125783e-16, 'eig_min': -2.0382686966382687e-16, 'lambda_top': 3.5365291773871417, 'spectral_gap': 3.503227605052718, 'entry_min': 5.116044030103168e-14}
+  tail transfer diagnostics                  = {'sym_gap': 2.220446049250313e-16, 'swap_gap': 5.551115123125783e-16, 'eig_min': -1.5830449601065452e-17, 'lambda_top': 3.5379845512874666, 'spectral_gap': 3.5024298976661288, 'entry_min': 2.989546674435027e-13}
+
+  Perron/Jacobi comparison for the same source operator J:
+    lambda zero/tail                         = 3.536529177387 / 3.537984551287
+    m1 zero/tail                             = 0.430754683575 / 0.431015307912
+    m2 zero/tail                             = 0.249382329102 / 0.249622183928
+    alpha0 zero/tail                         = 0.430754683575 / 0.431015307912
+    beta1 zero/tail                          = 0.252651403480 / 0.252681594647
+    gaps psi/m1/m2/alpha0/beta1              = 6.076e-04 / 2.606e-04 / 2.399e-04 / 2.606e-04 / 3.019e-05
+
+  [PASS] The zero extension and decaying-tail extension have exactly the same retained first-sector packet
+         retained_gap=0.000e+00
+  [PASS] Both extensions reproduce the completed three-sample triple on the retained projection
+         (zero,tail,pair)=(1.777e-16,1.777e-16,0.000e+00)
+  [PASS] The tail extension is nonnegative, conjugation-symmetric, and strictly positive on every non-retained weight in the sampled box
+         (tail_min,delta_min,swap_gap)=(0.000e+00,7.755e-02,0.000e+00)
+  [PASS] Both factorized-class transfers are self-adjoint, conjugation-symmetric, and positive semidefinite on the truncated box
+         eigmins=(-2.038e-16,-1.583e-17)
+  [PASS] The Perron states are numerically unique and separated for the same source operator J
+         (gaps,psi_gap)=(3.503e+00,3.502e+00,6.076e-04)
+  [PASS] The induced Perron moments and Jacobi coefficients differ while the retained packet is unchanged
+         (m1,m2,alpha0,beta1)=(2.606e-04,2.399e-04,2.606e-04,3.019e-05)
+
+================================================================================================================
+RESULT
+================================================================================================================
+  Executable underdetermination restored:
+    - the zero extension and positive decaying-tail extension have the
+      same retained first-sector packet and the same retained samples
+    - the same source operator J reads different Perron/Jacobi packets
+    - therefore the retained first-sector projection alone does not
+      determine the higher-tail Perron/Jacobi data
+    - this runner restores the missing executable artifact for re-audit
+
+PASS=6 FAIL=0
+
+----- stderr -----
+

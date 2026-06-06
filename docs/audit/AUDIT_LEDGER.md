@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1311 |
+| unaudited | 1310 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 7 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1089 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 51 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1618 |
+| `unaudited` | 1617 |
 
 | claim_type | count |
 |---|---:|
@@ -1275,6 +1275,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13621,6 +13622,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The same finite post-record history/count data are compatible with multiple predictive laws, and same-count histories can require different next-step predictions under an order-sensitive law, so counts alone do not determine a unique future law.  _(class `A`)_
 - **chain closes:** True — The finite counterexamples independently close the counts-alone no-go: multiple Bernoulli laws give positive likelihood to the same realized word, and count-equal histories can differ in order information needed by Markov prediction. This proves only the branch-local firewall, not an impossibility for externally supplied probability, Born, or dynamics bridges.
 - **rationale:** The load-bearing math is elementary and independently checks: count(0100) = (3,1), the iid likelihood p^3(1-p) is positive for many distinct p values, and histories 01 and 10 share counts while preserving different last-symbol data for an admitted Markov law. The Born-side formulas are used only to type-separate supplied pre-record/instrument probabilities from realized post-record count updates. The no-go discipline gate passes only under the narrowed counts-alone scope; empirical-frequency, Bayesian, maximum-entropy, Markov, Born, and rate routes remain available when they add explicit extra premises.
+- **auditor confidence:** high
+
+### `post_record_directed_certificate_examples_2026-06-06`
+
+- **Note:** [`POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`](../../docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Three supplied finite laws with supplied orientation/clock/kernel/statistic data give exact directed expectation or probability certificates under enumeration, with the note also asserting a current 31-row arrow/dynamics bucket status.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-185845-6cf9278d7b-post_record_directed_certifi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** supplied finite law plus supplied orientation bridge plus supplied clock/kernel/statistic and exact enumeration imply a law-scoped directed finite certificate  _(class `A`)_
+- **chain closes:** False — The finite example arithmetic closes independently: the transition, marker-lag, and boundary expectations/probabilities match the displayed fractions and reversal preserves count pushforwards. The chain does not close as written because the completed runner contradicts the note's row-bucket status claim, reporting 81 total selector rows, 32 arrow/dynamics rows, and 49 flow/thermal rows rather than 77, 31, and 46.
+- **rationale:** The load-bearing finite enumeration is class A, not class C: it checks exact expectations and probabilities for explicitly supplied finite laws and bridges rather than deriving them from the framework baseline. Independent hand enumeration confirms the three example table values, tail probabilities, normalizations, and count-pushforward invariances. However, the runner has three completed failures on the row-bucket side condition, and its final summary still prints the stale 31-row value despite the computed 32-row bucket. That source-runner drift prevents a clean audit of the note as written.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
+runner_sha256: 83591268f69cd17d72a74c50d207d4974a272d05c2122a2ed970a075b8acf733
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 1.04
+status: nonzero_exit
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -22,9 +30,9 @@ PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md cont
 ------------------------------------------------------------------------------
 Arrow/dynamics row-bucket checks
 ------------------------------------------------------------------------------
-PASS stability/dynamics selector row count remains 77 :: 77
-PASS arrow/dynamics bridge row count remains 31 :: Counter({'flow_or_thermal_stability': 46, 'arrow_or_dynamics_bridge': 31})
-PASS flow/thermal stability row count remains 46 :: Counter({'flow_or_thermal_stability': 46, 'arrow_or_dynamics_bridge': 31})
+FAIL stability/dynamics selector row count remains 77 :: 81
+FAIL arrow/dynamics bridge row count remains 31 :: Counter({'flow_or_thermal_stability': 49, 'arrow_or_dynamics_bridge': 32})
+FAIL flow/thermal stability row count remains 46 :: Counter({'flow_or_thermal_stability': 49, 'arrow_or_dynamics_bridge': 32})
 
 ------------------------------------------------------------------------------
 Example 1: signed transition drift
@@ -82,7 +90,7 @@ PASS generation/Koide dial selected flag is false
 PASS stable setting selects dial flag is false
 PASS selected dial derived from stability flag is false
 
-SUMMARY: PASS=59 FAIL=0
+SUMMARY: PASS=56 FAIL=3
 SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE
 ARROW_OR_DYNAMICS_BRIDGE_ROWS=31
 PRE_RECORD_LAW_CARRIES_PROBABILITY=TRUE
@@ -98,3 +106,6 @@ STABLE_SETTING_SELECTS_DIAL=FALSE
 SELECTED_DIAL_DERIVED_FROM_STABILITY=FALSE
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

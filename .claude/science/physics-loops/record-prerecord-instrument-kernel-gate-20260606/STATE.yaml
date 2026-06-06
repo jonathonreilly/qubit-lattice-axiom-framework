@@ -1,0 +1,38 @@
+loop_slug: record-prerecord-instrument-kernel-gate-20260606
+date: 2026-06-06
+mode: campaign
+cycle_kind: stacked_science_block
+current_goal: "Add a conditional gate from pre-record qubit instrument probabilities to post-record realized information."
+target_status: conditional-support
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: "exact under supplied projective instrument and Born trace rule"
+active_route: "supplied qubit instrument and Born trace rule produce future-record probabilities; realized outcome writes post-record atom"
+hard_residual: "Instrument, Born trace rule, IID/typicality, physical generator, clock/rate unit, and dial value remain open."
+branch: physics-loop/record-prerecord-instrument-kernel-gate-20260606
+base_branch: physics-loop/record-clock-rate-normalization-gate-20260606
+base_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2809"
+pr_url: null
+pr_status: not_created_yet
+files_touched:
+  - docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md
+  - scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py
+  - logs/runner-cache/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.txt
+  - .claude/science/physics-loops/record-prerecord-instrument-kernel-gate-20260606/
+open_imports:
+  - "Measurement instrument/readout context."
+  - "Born trace rule or equivalent probability-origin bridge."
+  - "IID/typicality if frequencies are claimed."
+  - "Physical production generator."
+  - "Physical clock/rate unit."
+  - "Any sector-specific generation/Koide dial-value derivation."
+no_go_routes:
+  - "Treat pre-record qubit state alone as a production kernel without an instrument."
+  - "Treat post-record atom/count update as the probability vector."
+review_disposition: pass
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Commit, push, open stacked PR against physics-loop/record-clock-rate-normalization-gate-20260606, patch PR URL, then pivot."
+stop_condition: "Only the 12-hour runtime/global queue/tooling stop applies; this conditional-support block is a campaign checkpoint."

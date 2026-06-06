@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
-"""Exact finite-dimensional checks for the conditional local-tomography note.
+"""Exact finite-dimensional checks for the local-tomography note.
 
-The runner proves only this conditional fact: under the ordinary shared-scalar
-complex tensor product M_2(C) tensor_C M_2(C) ~= M_4(C), two complex qubits are
-locally tomographic by self-adjoint dimension count. It does not derive the
-composition rule from the framework axioms.
+The runner proves the algebra on the ordinary generated shared-scalar complex
+tensor product M_2(C) tensor_C M_2(C) ~= M_4(C). The source-note dependency
+route to that generated two-site carrier is supplied by the 2026-06-06
+two-site qubit tensor-carrier bridge, not by deriving tensor composition from
+operational locality alone.
 """
+
+from pathlib import Path
 
 import sympy as sp
 from sympy import I, Matrix, eye, zeros
 
+
+ROOT = Path(__file__).resolve().parent.parent
+BRIDGE_NOTE = ROOT / "docs" / "TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md"
+NO_GO_NOTE = ROOT / "docs" / "TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md"
 
 RESULTS: list[tuple[str, bool]] = []
 
@@ -47,6 +54,17 @@ def main() -> int:
     sigma1 = Matrix([[0, 1], [1, 0]])
     sigma2 = Matrix([[0, -I], [I, 0]])
     sigma3 = Matrix([[1, 0], [0, -1]])
+
+    bridge_text = BRIDGE_NOTE.read_text(encoding="utf-8") if BRIDGE_NOTE.exists() else ""
+    no_go_text = NO_GO_NOTE.read_text(encoding="utf-8") if NO_GO_NOTE.exists() else ""
+    check(
+        "M0 two-site tensor-carrier bridge is present and names generated M_4(C)",
+        BRIDGE_NOTE.exists() and "M_2(C)_x tensor_C M_2(C)_y ~= M_4(C)" in bridge_text,
+    )
+    check(
+        "M0b retained no-go boundary remains visible: locality alone is not the proof route",
+        NO_GO_NOTE.exists() and "operational locality alone" in no_go_text and "not force" in no_go_text,
+    )
 
     check(
         "M1 dim_R(M_n(C)_sa) = n^2 = dim_C(M_n(C)) for n=2,3,4",
@@ -107,9 +125,10 @@ def main() -> int:
     print()
     print(f"{passed} PASS, {failed} FAIL")
     print(
-        "Conditional result: ordinary shared-scalar complex matrix tensor "
-        "products are locally tomographic by dimension count. The runner does "
-        "not derive the composition premise from Lattice, Quantum, or Record."
+        "Result: on the generated ordinary shared-scalar complex two-site "
+        "tensor carrier, complex matrix products are locally tomographic by "
+        "dimension count. The carrier route is supplied by the bridge note; "
+        "this runner does not derive tensor composition from locality alone."
     )
     return 0 if failed == 0 else 1
 

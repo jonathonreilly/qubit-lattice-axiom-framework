@@ -1,0 +1,15 @@
+# Artifact Plan
+
+Created:
+
+- `docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`
+- `scripts/audit_companion_two_site_qubit_tensor_carrier_bridge_2026_06_06.py`
+- `logs/runner-cache/audit_companion_two_site_qubit_tensor_carrier_bridge_2026_06_06.txt`
+
+Updated:
+
+- `docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`
+- `docs/LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md`
+- `scripts/audit_companion_local_tomography_from_complex_structure_exact.py`
+- `logs/runner-cache/audit_companion_local_tomography_from_complex_structure_exact.txt`
+- `logs/runner-cache/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.txt`

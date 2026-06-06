@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 190 |
+| **retained** | 191 |
 | **retained_no_go** | 199 |
 | **retained_bounded** | 684 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1339 |
+| unaudited | 1338 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1070 |
+| `audited_clean` | 1071 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1646 |
+| `unaudited` | 1645 |
 
 | claim_type | count |
 |---|---:|
@@ -377,6 +377,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `eta_ud2_fixed_token_square_homology_certificate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_v3_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
@@ -5179,6 +5180,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The staggered phases define a scalar Z_2 base connection whose coordinate plaquette curvature is uniformly F_{mu,nu}(x)=eta_mu(x) eta_nu(x+e_mu) eta_mu(x+e_nu) eta_nu(x)=-1, yielding Hol(rectangle a x b)=(-1)^(ab).  _(class `A`)_
 - **chain closes:** True — The displayed eta definitions directly give curvature -1 in each coordinate plane: the shifted eta factor changes sign exactly once around every coordinate plaquette. Multiplying plaquettes over an a by b rectangle cancels interior edges and gives (-1)^(ab); no UD_2 braid-class identification is asserted.
 - **rationale:** The runner source performs explicit Pauli-matrix multiplication, Z_2 curvature evaluation, gauge-transformed curvature checks, and rectangular loop holonomy checks; it is not merely printing constants or importing a contested premise. An independent algebra check of the displayed eta formulas confirms the signs: planes 12, 13, and 23 each acquire one parity flip around a unit plaquette, so curvature is -1 and rectangular holonomy is (-1)^area. The note also correctly scopes the topology boundary by refusing to identify detour swaps in B_2(Z^3) and by treating the graph as a 1-complex without an added plaquette 2-cell.
+- **auditor confidence:** high
+
+### `eta_ud2_fixed_token_square_homology_certificate_2026-06-06`
+
+- **Note:** [`ETA_UD2_FIXED_TOKEN_SQUARE_HOMOLOGY_CERTIFICATE_2026-06-06.md`](../../docs/ETA_UD2_FIXED_TOKEN_SQUARE_HOMOLOGY_CERTIFICATE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** In the explicit finite six-vertex, six-edge Z^3 subgraph consisting of one unit square plus a two-edge parking tail, the fixed-token square loop in UD_2(G) is nonzero in H_1(-; GF(2)) and therefore not null-homotopic; the result only prunes the automatic-null-square shortcut for this finite model.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-175814-88c72f999a-eta_ud2_fixed_token_square_h`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The fixed-token square loop is a valid cellular 1-cycle in UD_2(G) and is not in the image of the cellular boundary_2 map.  _(class `C`)_
+- **chain closes:** True — The restricted packet defines the graph and UD_2(G), and an independent GF(2) chain check gives C0=15, C1=24, C2=8, rank_d1=14, rank_d2=8, beta1=2, zero loop boundary, and rank(boundary_2 augmented by the loop)=9. Therefore the loop is a non-boundary cycle, so it is nonzero in mod-2 homology; standard topology then implies it cannot be null-homotopic.
+- **rationale:** The runner source constructs the finite graph, enumerates UD_2 cells from disjoint open-cell pairs, builds cellular boundaries over GF(2), and performs rank tests rather than importing or hard-coding the contested conclusion. The displayed quantitative values in the packet are consistent with an independent enumeration and linear-rank recomputation. The note keeps the conclusion scoped to the finite model and explicitly leaves the closed-PR detour-swap braid identification open, so no missing broad bridge is needed for the audited claim.
 - **auditor confidence:** high
 
 ### `evolving_network_prototype_note`

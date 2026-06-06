@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 283,
     "high": 275,
-    "leaf": 348,
+    "leaf": 347,
     "medium": 333
   },
   "cycle_break_target_count": 1,
@@ -27390,32 +27390,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_function_finite_sector_algebra_2026-06-05",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -37612,6 +37586,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 19,
-  "total_pending": 1239
+  "ready_count": 18,
+  "total_pending": 1238
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 181 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 677 |
+| **retained_bounded** | 678 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1237 |
+| unaudited | 1236 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1052 |
+| `audited_clean` | 1053 |
 | `audited_conditional` | 87 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1540 |
+| `unaudited` | 1539 |
 
 | claim_type | count |
 |---|---:|
@@ -716,6 +716,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -10992,6 +10993,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For (4) to hold for every subsequent effect, trace-duality forces sigma|_P = (P sigma P) / Tr(P sigma P).  _(class `A`)_
 - **chain closes:** False — The trace-duality and normalization algebra is correct once the sequential product and trace probability representation are assumed. Those assumptions are not supplied by the cited Minimal Axioms authority, which explicitly does not supply probability, Born weights, or measurement dynamics.
 - **rationale:** The displayed Lüders update follows algebraically from Bayes consistency only after importing M_{P,E}=PEP and the trace state/effect probability pairing. The restricted packet provides only the accepted qubit-lattice axiom authority, and that authority does not provide measurement instruments or probabilities. The note also admits the sequential-effect composition as an unclosed standard-math import, so the result is a bounded conditional theorem rather than a clean closure from the supplied authority.
+- **auditor confidence:** high
+
+### `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-region qubit-lattice projective measurements, conditional on the Lüders/canonical-frame instrument selection K_P = P, give M_{P,E}=P E P for any later effect E and the normalized postselected state P sigma P / Tr(P sigma P) when the denominator is nonzero.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-113056-ea23ffa7ef-luders_sequential_product_co`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the LSP premise K_P = P, the joint effect reduces by direct algebra: K_P† E K_P = P† E P = P E P.  _(class `A`)_
+- **chain closes:** True — The conditional theorem closes from the explicit LSP premise plus standard projection identities P†=P and P^2=P. The state-update formula follows from the same Kraus sandwich update and normalization under the stated nonzero-probability condition.
+- **rationale:** The audited claim is the bounded conditional bridge, not an unconditional derivation of LSP or a uniqueness theorem for sequential products. The non-axiom cited authorities in the packet are retained-grade, with the LSP-projective authority retained_bounded, and the minimal-axiom memo is an accepted premise under the carve-out. The runner performs actual symbolic matrix checks and a twisted-Kraus comparison rather than printing constants; independently, the displayed bridge reduces to K_P=P, P†=P, matrix multiplication, and trace cyclicity. Some runner examples are Pauli observables rather than positive effects, but the class-A identity itself is stronger than the effect domain and does not rely on positivity.
 - **auditor confidence:** high
 
 ### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`

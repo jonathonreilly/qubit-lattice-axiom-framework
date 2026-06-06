@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 187 |
+| **retained** | 188 |
 | **retained_no_go** | 197 |
 | **retained_bounded** | 683 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1349 |
+| unaudited | 1348 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1064 |
+| `audited_clean` | 1065 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1655 |
+| `unaudited` | 1654 |
 
 | claim_type | count |
 |---|---:|
@@ -913,6 +913,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13577,6 +13578,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of the Hilbert-Schmidt projection onto the identity line is alpha = <I_color, M_color>_HS / <I_color, I_color>_HS = Tr_color M_color / N_c, giving rho_singlet = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].  _(class `A`)_
 - **chain closes:** True — The conclusion follows from ordinary finite-dimensional orthogonal projection and the supplied SU(N_c) generator normalization. The note explicitly does not identify this projection fraction with kappa_EW or any physical matching rule.
 - **rationale:** The load-bearing step is a direct Hilbert-Schmidt projection identity, not a definition, renaming, external comparator, or tuned numerical match. The only cited authority needed for P4 supplies the SU(N_c) normalization convention and is provided as retained-grade decoration under the rubric. The runner source performs exact rational arithmetic for the identity, traceless-generator witnesses, normalization checks, sum rule, trace-zero iff zero-singlet condition, and non-claim boundary, with no helper imports and no hard-coded contested physical coefficient.
+- **auditor confidence:** high
+
+### `record_function_finite_sector_algebra_2026-06-05`
+
+- **Note:** [`RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md`](../../docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite additive algebra of a supplied record-sector vector, its incidence-matrix coarse-grainings, scale-invariant ratio/normalized coordinates, and the stated C3/Koide generation-coordinate identities as supplied structural coordinates.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-173028-6e5f475fa8-record_function_finite_secto`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any finite union of sectors A, with indicator vector chi_A, I(A) = chi_A . v; if A and B are disjoint, I(A union B) = I(A) + I(B).  _(class `A`)_
+- **chain closes:** True — Given a supplied finite partition and finite additivity, every finite union decomposes as a disjoint sum of sectors, so the indicator-dot-product formula and disjoint-union law follow. The coarse-graining, ratio invariance, C3 power sums, Q formula, and endpoints are standard finite algebra under the note's explicit nonzero/positive-denominator assumptions; no probability or dynamics is inferred.
+- **rationale:** The independent formula inventory checks out: 4-sector ordered disjoint pairs are 3^4 = 81; partition incidence matrices preserve total readout via 1_m C = 1_n; normalized coordinates and raw ratios are scale-invariant with nonzero denominators; and the C3 character sums give sum_k lambda_k = 3a and sum_k lambda_k^2 = 3a^2 + 6|b|^2, hence Q = 1/3 + 2r/3 and the stated endpoints. The runner source is not a print-only harness and has no helper imports or external comparator data; its 21 checks are symbolic algebra checks consistent with the note. The supplied generation readout and C3/K-real form are treated only as scoped structural inputs, not as derived probability, occupancy, dynamics, or measured-mass claims.
 - **auditor confidence:** high
 
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`

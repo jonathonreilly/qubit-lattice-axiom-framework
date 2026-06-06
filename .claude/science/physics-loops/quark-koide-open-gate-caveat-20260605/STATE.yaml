@@ -1,0 +1,30 @@
+loop_slug: quark-koide-open-gate-caveat-20260605
+created: 2026-06-05
+updated: 2026-06-05
+remote_base: origin/main
+branch: physics-loop/quark-koide-open-gate-caveat-20260605
+target_claim_id: quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26
+target_status: open
+actual_current_surface_status: open
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: packet_local_quark_mass_comparators
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: demotion
+proposal_allowed: false
+proposal_allowed_reason: "The branch repairs a domain caveat for an open-gate comparator; no quark-mass theorem is proposed."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms: 0
+files_touched:
+  - docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md
+open_imports:
+  - "Packet-local quark central values remain observational scheme/scale comparators."
+checks:
+  - "python3 scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py"
+  - "python3 -m py_compile scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py"
+review_disposition: pass
+pr_url: pending
+next_exact_action: "Commit, push, and open the review PR."
+stop_condition: "Block complete after PR creation and verification."

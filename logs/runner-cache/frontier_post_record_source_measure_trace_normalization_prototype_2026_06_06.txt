@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py
+runner_sha256: 13aec6f58aa3a21a6a32a6407b0febda2f602c5b59726a29fc23a67d0d783294
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 1.02
+status: nonzero_exit
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -42,16 +50,16 @@ PASS selector rule is still needed for selected dial readiness
 ------------------------------------------------------------------------------
 Source/trace row checks
 ------------------------------------------------------------------------------
-PASS source/trace prototype row count is current snapshot :: 24
-PASS source/trace lane counts match expected :: Counter({'source_measure_or_rn_bridge': 14, 'trace_normalization_reference': 10})
-PASS source/trace lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 14, 'trace_normalization_reference': 10})
+FAIL source/trace prototype row count is current snapshot :: 21
+FAIL source/trace lane counts match expected :: Counter({'source_measure_or_rn_bridge': 14, 'trace_normalization_reference': 7})
+PASS source/trace lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 14, 'trace_normalization_reference': 7})
 PASS representative row present in source_measure_or_rn_bridge :: source_measure_pcal_rn_cocycle_theorem_note_2026-05-30
 PASS representative row present in trace_normalization_reference :: pre_record_reference_state_tracial_derivation_note_2026-05-20
-PASS audit ledger hash is unchanged :: b13455e925f8862055b350350f72ce59970275fdbbc376642b9355424d8eb737
+PASS audit ledger hash is unchanged :: a73236c78b2d54dba076094a29743f075458ca81c7c4a8134c4036514fc63854
 
 Source/trace prototype lane counts:
   source_measure_or_rn_bridge: 14
-  trace_normalization_reference: 10
+  trace_normalization_reference: 7
 
 [source_measure_or_rn_bridge]
   higgs_x_s4b_combined_higgs_ewsb_g2_note_2026-05-08_probex_s4b_combined | unaudited | unaudited | bounded_theorem | docs/HIGGS_X_S4B_COMBINED_HIGGS_EWSB_G2_NOTE_2026-05-08_probeX_S4b_combined.md
@@ -67,15 +75,12 @@ Source/trace prototype lane counts:
 
 [trace_normalization_reference]
   busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
-  busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20 | audited_conditional | audited_conditional | positive_theorem | docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
   gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17 | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md
   gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md
   inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md
-  luders_rule_from_composition_consistency_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
   luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05 | audited_conditional | audited_conditional | bounded_theorem | docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
   observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21 | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_PRE_RECORD_TRACIAL_ROUTE_NARROW_NOTE_2026-05-21.md
   pre_record_reference_state_tracial_derivation_note_2026-05-20 | audited_clean | retained_bounded | bounded_theorem | docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md
-  rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md
 
 
 ------------------------------------------------------------------------------
@@ -93,10 +98,10 @@ PASS Record-derived source law flag is false
 PASS production dynamics derived flag is false
 PASS Record-derived physical arrow flag is false
 
-SUMMARY: PASS=49 FAIL=0
-SOURCE_TRACE_PROTOTYPE_ROWS=24
+SUMMARY: PASS=47 FAIL=2
+SOURCE_TRACE_PROTOTYPE_ROWS=21
 SOURCE_MEASURE_OR_RN_BRIDGE_ROWS=14
-TRACE_NORMALIZATION_REFERENCE_ROWS=10
+TRACE_NORMALIZATION_REFERENCE_ROWS=7
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
 PHYSICAL_REFERENCE_IDENTIFIED=FALSE
@@ -107,3 +112,6 @@ BORN_LAW_DERIVED_FROM_RECORD=FALSE
 SOURCE_LAW_DERIVED_FROM_RECORD=FALSE
 PRODUCTION_DYNAMICS_DERIVED=FALSE
 PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
+
+----- stderr -----
+

@@ -1,0 +1,26 @@
+loop_slug: post-record-dynamics-family-lift-cache-sync-20260606
+status: ready_for_review
+created: 2026-06-06
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: post_record_dynamics_family_lift_closeout_index_2026-06-06
+target_blocker_text: "audited_failed because the family-lift closeout runner expected stale cached summaries for PR #2858 and PR #2875"
+stack_base: physics-loop/post-record-dynamics-closeout-cache-sync-20260606
+depends_on_prs:
+  - 2996
+files_touched:
+  - scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-dynamics-family-lift-cache-sync-20260606/
+verification:
+  - "python3 scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py -> SUMMARY: PASS=71 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py --tail-chars 4000 -> refreshed green cache"
+open_imports:
+  - "finite certificates alone do not prove unbounded retained authority"
+audit_data_edited: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Review stacked after #2996, then re-run audit on the dynamics family-lift closeout index row."
+stop_condition: "Dynamics family-lift closeout cached-summary blocker closed on this branch."

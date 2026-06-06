@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
-runner_sha256: 020a6c14caa61d6ec87d1e3113502d9b2fd87233baa5768ba7a83772834b24bf
+runner_sha256: 9ca452330b4533093c64f065109db7ff7eeeb5f6995696401637a2b59f429e77
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_finite_null_audit_interface_2026_06_06.py
+runner_sha256: bd3b89080453c1311484b69fac7ac666852007cd17fc88e1738c2704d7e38f79
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -64,3 +72,6 @@ SUPPLIED_FINITE_NULL_AUDIT_INTERFACE=TRUE
 FINITE_NULL_P_VALUES_CONSERVATIVE=TRUE
 RECORD_DERIVES_NULL_LAW=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

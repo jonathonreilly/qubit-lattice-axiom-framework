@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 182 |
+| **retained** | 183 |
 | **retained_no_go** | 198 |
 | **retained_bounded** | 682 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1058 |
+| `audited_clean` | 1059 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1530 |
+| `unaudited` | 1529 |
 
 | claim_type | count |
 |---|---:|
@@ -632,6 +632,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kahler_dirac_silent_on_measure_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -9681,6 +9682,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Substituting the Hermitian-circulant eigenvalues into the C3 Fourier coefficients gives a_0 = sqrt(3) a and z = sqrt(3) b, hence a_0^2 - 2|z|^2 = 3(a^2 - 2|b|^2).  _(class `A`)_
 - **chain closes:** True — Within the restricted scope H = aI + bC + bbar C^2 on Herm_circ(3), the Fourier coefficient relations are exact algebraic consequences. The theorem does not independently derive the spectrum-side Koide condition or the physical validity of the cyclic-compression/P1 identification.
 - **rationale:** The load-bearing bridge identity is a genuine symbolic algebraic closure, and the provided runner source verifies the Hermitian-circulant construction, Fourier coefficients, and identity without hard-coded True values. The PDG checks are external numerical illustrations, not needed for the algebraic theorem. The clean verdict applies only to the conditional mathematical statement on the stated Herm_circ(3) bridge, not to a derivation of Koide Q = 2/3 itself.
+- **auditor confidence:** high
+
+### `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the self-contained linear-algebra theorem defining rho(M)=Omega^{-1}MOmega on Herm_circ(d), proving the character-k decomposition, real doublet/sign/trivial decomposition, and the d=3 uniqueness of the (1,(1,),0) pattern among d=2..6.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-120217-40c458006e-koide_kappa_zd_action_circul`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The clock-conjugation action satisfies Omega^{-1} C^k Omega = omega^k C^k, so each C^k line carries character k and Hermitian conjugate pairs form the stated real doublets.  _(class `A`)_
+- **chain closes:** True — The displayed identities follow directly from the stated shift and clock matrices: entrywise multiplication gives Omega^{-1}C^kOmega=omega^kC^k, and Hermiticity pairs coefficients k and d-k into the real bases B1 and B2 with the stated rotation matrix. No open physical readout, numerical comparator, or non-retained dependency is used.
+- **rationale:** The claim is a genuine algebraic closure over explicit matrices and standard root-of-unity identities. Independent checks of the coefficient sign, rotation convention, Hermitian pairing, even-d sign line, dimension formula, and d=2..6 table all agree with the note. The runner source materially computes these identities symbolically and numerically, with no helper imports, fitted constants, or external comparator values.
 - **auditor confidence:** high
 
 ### `koide_lightcone_primitive_theorem_note_2026-05-10`

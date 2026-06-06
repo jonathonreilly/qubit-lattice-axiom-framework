@@ -47,10 +47,10 @@ SELECTOR_TANGENT_RE = re.compile(
 
 EXPECTED_LANE_COUNTS = {
     "character_path_channel_weight": 9,
-    "generic_measure_weight_import": 5,
-    "selector_tangent_readout_weight": 6,
+    "generic_measure_weight_import": 6,
+    "selector_tangent_readout_weight": 7,
     "source_measure_or_rn_bridge": 14,
-    "trace_normalization_reference": 10,
+    "trace_normalization_reference": 7,
 }
 
 
@@ -129,7 +129,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "measure_weight_normalization` | 44",
+            "measure_weight_normalization` | 43",
             "measure/weight/normalization rows",
             "Does not turn stable settings into selected dials.",
         ],
@@ -209,7 +209,7 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
         buckets[measure_lane(row)].append(row)
     counts = Counter({lane: len(items) for lane, items in buckets.items()})
 
-    report("measure/weight row count is current snapshot", len(rows) == 44, str(len(rows)))
+    report("measure/weight row count is current snapshot", len(rows) == 43, str(len(rows)))
     report("measure lane counts match expected", dict(counts) == EXPECTED_LANE_COUNTS, str(counts))
     report("measure lane counts sum to row count", sum(counts.values()) == len(rows), str(counts))
 

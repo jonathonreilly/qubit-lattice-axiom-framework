@@ -1,0 +1,28 @@
+loop_slug: post-record-measure-weight-count-sync-20260606
+status: ready_for_review
+created: 2026-06-06
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: post_record_measure_weight_normalization_subdivision_2026-06-06
+target_blocker_text: "audited_failed because measure/weight subdivision source note/runner/cache used stale selector/dial and lane counts"
+stack_base: physics-loop/post-record-selector-dial-count-sync-20260606
+depends_on_prs:
+  - 2987
+  - 2989
+files_touched:
+  - docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-measure-weight-count-sync-20260606/
+verification:
+  - "python3 scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py -> SUMMARY: PASS=41 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py --tail-chars 4000 -> refreshed green cache"
+open_imports:
+  - "normalized supplied weights are not selector authority"
+audit_data_edited: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Review stacked after #2987 and #2989, then re-run audit on the measure/weight subdivision row."
+stop_condition: "Measure/weight count-drift blocker closed on this branch."

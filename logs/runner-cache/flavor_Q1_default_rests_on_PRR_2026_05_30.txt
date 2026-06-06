@@ -1,25 +1,26 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_Q1_default_rests_on_PRR_2026_05_30.py
-runner_sha256: 5f66e33d60ef2477bb1dc0d74f59d9f2cba526e4f20e89442d2d8813331604e9
+runner_sha256: 2ce0df319d1242f4b77ba9c84df2977eced0e92576b5717afbfb1a203cbbdd76
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
-[PASS] C1/C2 rho_(1:1) PSD, trace1, commutes C3, block masses 1:1 (admissible non-tracial ref)
-       eigs=[0.25 0.25 0.5 ]; trace block masses 1:2 (dimension)
-[PASS] C3 trace privileged ONLY by full U(3)=PRR (unaudited); C3 alone leaves the cone open
+[PASS] C1/C2 rho_(1:1) is PSD, trace-one, C3-invariant, and has equal block masses
+       eigs=[0.25 0.25 0.5 ]; tau block masses=[0.333 0.667]
+[PASS] C3 full U(3) conjugation preserves trace but not rho_(1:1), so it is a stronger selector than C3
        U(3) dev: tau=5.1e-16, (1:1)=0.351
-[PASS] C4 r is a SPECTRAL INVARIANT of H alone; reference does NOT enter the readout
-       the r*=w_d/(2w_s) state->operator bridge is inserted, not derived (variance min gives different b)
+[PASS] C4 displayed Q formula depends on spectral parameter r=|b|^2/a^2, not on rho
+       any bridge from block masses to r is additional structure outside this packet
+[PASS] C5 source boundary guard: no repo-baseline or PRR-status conclusion is promoted by this packet
+       the packet closes only the stipulated-C3 cone no-go
 
-SCORECARD PASS=3 FAIL=0
-VERDICT: 'Q=1 is the framework default' is CORRECTED -> DEFAULT-pending-PRR, NOT forced. framework baseline
-supply only C3 on the generation factor, leaving the (w_s,w_d) cone open; the trace (Q=1) needs
-the unaudited full-U(3) PRR premise; the non-tracial 1:1 state (Q=2/3) is equally admissible.
-NEITHER Q=1 nor Q=2/3 is forced by framework baseline; r=1/2 is REACHABLE, not derived. The decisive decidable
-(no-import) question: does the mass readout factor through the SO(2)/U(1)_b doublet-frame quotient
-(doublet counted once -> r=1/2) or its full 2-real-dim content (-> r=1)?
+SCORECARD PASS=4 FAIL=0
+VERDICT: bounded-support negative route pruning.
+Given only the stipulated C3 generation symmetry, the invariant reference-state cone
+contains both the tracial 1:2 weighting and an admissible non-tracial 1:1 weighting.
+Full U(3) conjugation is a stronger selector, but this runner does not decide its
+repo-baseline status. The displayed Q formula is a spectral readout and does not use rho.
 
 ----- stderr -----
 

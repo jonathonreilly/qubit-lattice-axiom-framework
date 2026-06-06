@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-"""The last non-symmetry lever: does positivity (OS reflection positivity / qubit Bargmann measure /
-unitarity) SELECT the Kahler (det_C) measure of the forced J_cs, fixing r=1/2? VERDICT: AGNOSTIC.
-Positivity does NOT close r=1/2; it secures the signed-Hermitian readout CLASS (a real partial win,
-necessary for Q=2/3) but not the value. After this BOTH symmetry-side AND measure/positivity-side levers
-are exhausted -> r=1/2 is a free native reality-structure (complex-vs-real / det_C-vs-det_R) bit.
+"""Three scoped positivity/readout checks for the flavor measure row.
+
+These checks test only the displayed routes:
 
   P1 OS REFLECTION POSITIVITY is AGNOSTIC: the OS Gram <theta(f_i)f_j>=G(tau_i+tau_j) is positive-
      semidefinite IDENTICALLY for 1-complex (det_C) and 2-real (det_R) field content (both min-eig ~ 0).
@@ -20,9 +18,9 @@ are exhausted -> r=1/2 is a free native reality-structure (complex-vs-real / det
      does NOT fix r=1/2.
   P4 STEELMAN: the complex GNS Hilbert space is a GNS-over-C artifact present for ANY field content (even
      the real det_R theory has a complex H_phys); it does NOT collapse 2-real into 1-complex.
-  => positivity reduces to the SAME irreducible pin: the complex-vs-real counting of the doublet (= field
-     content / statistics = Dirac-vs-Majorana = charged-vs-neutral), which is generation-blind and which
-     C^3=I forbids as an algebra symmetry. NO native selector on either the symmetry side or the measure side.
+
+Scope boundary: this runner does not prove a complete symmetry-side or measure-side selector theorem,
+and it does not close r=1/2. It only verifies the three algebraic/no-selection checks above.
 """
 import numpy as np
 
@@ -50,12 +48,10 @@ def main():
     passed.append(check("P3 positivity -> Hermitian readout Q=(1+2r)/3 for EVERY r -> secures readout CLASS not r=1/2",
         ok, "RP necessary for the signed/Brannen readout (-> Q=2/3 possible) but holds for all r"))
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
-    print("VERDICT: positivity AGNOSTIC -- does NOT select the Kahler measure / does NOT close r=1/2. Secures")
-    print("the signed-Hermitian readout CLASS (partial win, necessary for Q=2/3) but not the value. After this")
-    print("BOTH the symmetry-side and the measure/positivity-side levers are exhausted: r=1/2 is a FREE NATIVE")
-    print("reality-structure bit (complex-vs-real / det_C-vs-det_R counting of the doublet = field content =")
-    print("statistics = Dirac-vs-Majorana), generation-blind and C^3=I-forbidden as a symmetry, OS-invisible as")
-    print("a measure. Same as the framework's own statistics-selection open gap (G3). Natural campaign capstone.")
+    print("VERDICT: the three checked positivity/readout tests are AGNOSTIC to the det_C versus det_R count.")
+    print("They secure the signed-Hermitian readout class for the displayed r values, but do not select r=1/2.")
+    print("Scope boundary: this runner is not a complete symmetry-side or measure-side selector theorem and does")
+    print("not close the flavor-selection problem.")
     return 0 if all(passed) else 1
 
 if __name__ == "__main__":

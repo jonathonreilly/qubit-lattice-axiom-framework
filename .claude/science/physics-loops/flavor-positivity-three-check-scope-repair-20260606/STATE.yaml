@@ -1,0 +1,19 @@
+loop_slug: flavor-positivity-three-check-scope-repair-20260606
+branch: physics-loop/flavor-positivity-three-check-scope-repair-20260606
+base: origin/main
+target_claim_id: flavor_measure_positivity_agnostic_note_2026-05-31
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "narrow overbroad positivity-exhaustion framing to the three runner-backed algebraic checks"
+files_touched:
+  - docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md
+  - scripts/flavor_measure_positivity_agnostic_2026_05_31.py
+  - logs/runner-cache/flavor_measure_positivity_agnostic_2026_05_31.txt
+open_imports:
+  - "Independent audit must decide whether the repaired row can be reclassified."
+no_go_routes:
+  - "No claim that all possible symmetry-side or measure-side selectors have been ruled out."
+next_exact_action: "Submit PR to review loop; reviewer/auditor decides ledger effect."
+stop_condition: "Scope-too-broad blocker is repaired as far as this source artifact can be repaired without adding new bridge theorems."

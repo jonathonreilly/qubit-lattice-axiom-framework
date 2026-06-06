@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1108 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1109 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
@@ -133,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -482,6 +481,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_strong_field_observable_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_weak_connectivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_kz_su3_beta6_convention_split_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -6787,6 +6787,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cached runner completes and matches the source frozen result: exact grid and no-restore label-NN are 12/12 TOWARD with F~M=1.00, while no-restore KNN+floor is 0/12 with F~M=0.00. Current ledger deps are retained-bounded; older dependency-status prose in the source is historical and not status authority.
 - **rationale:** The row closes as a bounded finite-harness certificate. The runner constructs the three families, swaps the connectivity rule, propagates amplitudes, and computes the centroid/F~M readout rather than merely printing constants. The verdict is limited to sharpening the connectivity bottleneck on this declared comparison; it does not ratify primitive-to-gravity readout or full Gate-B package survival.
 - **auditor confidence:** medium
+
+### `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure-gauge Wilson plaquette action in temporal gauge admits the stated P_+, P_-, and P_mixed half-action decomposition; S_+ is real and Theta-invariant on Theta-symmetric configurations; symmetrized Wilson-loop observables satisfy reflection-Hermiticity.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-225048-e5be5d2ef9-gauge_os_step1_wilson_plaque`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** By the disjoint plaquette partition and the identification S_-(U)=Theta(S_+)(U)=S_+(Theta U), the Wilson action decomposes as S_W[U]=S_+(U)+Theta(S_+)(U)+S_mixed(U).  _(class `A`)_
+- **chain closes:** True — The decomposition follows from an exhaustive plaquette-set partition plus Re Tr g = Re Tr g^{-1} for reflected temporal plaquette orientation. The D2 and D3 subclaims close algebraically from Theta U = U on C_sym, Theta^2 = id, and the displayed symmetrization F(U)=f(U)+conj(f(Theta U)).
+- **rationale:** The load-bearing content is elementary lattice combinatorics and complex trace algebra, with the only load-bearing cited authority marked retained and used only for the mixed-kernel temporal-gauge factorization context. The runner performs nontrivial finite-lattice checks rather than merely printing constants, and its PASS=33 FAIL=0 is consistent with the source. I read D3 under the note's explicit narrowing in section 4.2: arbitrary positive-half Wilson loops are not claimed to be reflection-Hermitian, only the symmetrized OS-Hermitian class is.
+- **auditor confidence:** high
 
 ### `gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06`
 

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 703 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1267 |
+| unaudited | 1266 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 72 |
+| ~~audited_conditional~~ | 73 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1112 |
-| `audited_conditional` | 72 |
+| `audited_conditional` | 73 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1574 |
+| `unaudited` | 1573 |
 
 | claim_type | count |
 |---|---:|
@@ -1309,6 +1309,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15644,6 +15645,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The standard exponential formula for set partitions says that the generating function for connected components is the logarithm: K[J] = log M[J].  _(class `A`)_
 - **chain closes:** True — The Mobius cumulant formula, the log moment-generating function identity, the n=3 cumulant formula, independence cancellation, and the p-scale two-point normalization all close algebraically. The downstream physical identification of the scalar P-cal response with connected source response is explicitly outside this scoped theorem.
 - **rationale:** The load-bearing step is a standard algebraic Mobius/exponential-formula identity, not a numerical fit, external comparator, or symbol renaming. The runner source materially computes the partition-lattice n=3 Mobius formula, verifies independence cancellation, differentiates log moment generators, and checks the p-scale normalization; it does not import a contested constant or hidden comparator. The displayed closed-form formulas in the packet are consistent under the note's finite-record cumulant conventions. The clean verdict applies only to the bounded exact-support theorem, not to unbounded retained Y_T closure or the physical connected-response identification.
+- **auditor confidence:** high
+
+### `source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The packet audits the finite-dimensional diagonal-basis theorem for six canonical component projectors on a supplied C^6 Q_L carrier; it does not audit closure of physical source semantics or the physical top-Yukawa response identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-202803-6b62befcf1-source_measure_sharp_record_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For O_i = E_ii on V = C^6, Tr(O_i^dagger O_j) = delta_ij, sum_i O_i = I_6, and O_top = (1/sqrt(6)) sum_i O_i is the permutation-symmetric unit element with component amplitude 1/sqrt(6).  _(class `A`)_
+- **chain closes:** False — The matrix-unit orthonormality, spanning, identity resolution, and democratic normalization close as standard finite linear algebra. The broader same-source Y_T top/W response reading still depends on an open physical response/source-semantics bridge, and the restricted Rep-B authority supports F_Htt = 1/sqrt(6) but does not by itself supply the displayed g_bare^2/(2 N_c) formula.
+- **rationale:** The runner genuinely computes the finite algebra for O_i = E_ii and its PASS output is consistent with an independent check of the Gram matrix, rank, identity resolution, reconstruction formula, and O_top normalization. That proves a clean diagonal component-response basis lemma. The row as written still uses Y_T/top-W/same-source language that is not derived by the finite algebra alone, while the cited democratic authority explicitly leaves the physical top-response bridge open. The source-semantics section is correctly labeled interpretational, but that means it cannot carry theorem closure.
+- **open / conditional deps cited:**
+  - `YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`
+  - `YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md`
+  - `SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md`
 - **auditor confidence:** high
 
 ### `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`

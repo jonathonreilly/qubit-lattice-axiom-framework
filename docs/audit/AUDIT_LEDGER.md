@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1315 |
+| unaudited | 1314 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 7 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1087 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 51 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1622 |
+| `unaudited` | 1621 |
 
 | claim_type | count |
 |---|---:|
@@ -1272,6 +1272,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_character_path_channel_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13565,6 +13566,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the current ledger snapshot, the runner scans 1336 bounded/conditional scope rows and touches 266 rows in the post-record evidence ladder buckets.  _(class `A`)_
 - **chain closes:** False — The completed runner output contradicts the source note's current-snapshot quantitative table and reports two failed checks. The missing step is a reconciled current ledger certificate whose computed counts match the note and whose runner exits with zero failures.
 - **rationale:** The source note claims 1336 scoped rows with bucket counts including not_record_ladder_relevant=1070, simulation_support_only=22, and record_type_support_only=1. The provided completed runner output instead reports SCOPED_ROWS=1343, not_record_ladder_relevant=1077, simulation_support_only=23, no nonempty record_type_support_only bucket, and SUMMARY: PASS=37 FAIL=2. This is a completed runner/source mismatch and stale quantitative table, not a compute-timeout case. The read-only hash and firewall claims may be directionally checked by the runner, but the current-count certificate does not close as written.
+- **auditor confidence:** high
+
+### `post_record_character_path_channel_weight_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For supplied finite path, channel, and character weights with nonnegative entries and positive totals, exact finite normalization and path-product composition produce normalized packets; no physical selector or Record-derived rule is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-185034-af4eac83a1-post_record_character_path_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supplied finite carrier of paths, characters, or channels plus supplied nonnegative local weights with positive totals and exact normalization gives a normalized finite path/channel/character weight packet.  _(class `A`)_
+- **chain closes:** False — The finite arithmetic checks close as standard algebra, but the source explicitly depends on supplied carriers and supplied weight rules. The restricted packet does not derive the path/channel/character weight rule or physical selector from Record.
+- **rationale:** The independent finite checks agree with the runner: 4/(4+1)=4/5, channel rows normalize rowwise, path products 2*3=6 and normalize to 6/7 against the direct path, and character coefficients 6,3,1 normalize to 3/5,3/10,1/10. Those are algebraic normalizations over supplied inputs, not a first-principles derivation of the carrier, local weight rule, selector, or physical measure. The note itself preserves that boundary and says the finite packet does not derive a directional path parameter, character packet, Wilson surface, channel rule, Born law, production kernel, or physical arrow.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

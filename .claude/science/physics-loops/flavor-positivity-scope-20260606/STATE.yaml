@@ -1,0 +1,24 @@
+loop_slug: flavor-positivity-scope-20260606
+mode: run
+target_claim_id: flavor_measure_positivity_agnostic_note_2026-05-31
+started_from: origin/main
+branch: physics-loop/flavor-positivity-scope-20260606
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_blocker_text: "scope_too_broad: narrow the row to the three algebraic positivity/readout checks or provide retained one-hop authorities closing the prior symmetry-side exhaustion, Bargmann/unitarity bridge, and det_C/det_R-to-r counting bridge."
+active_route: narrow to three finite positivity/readout checks
+files_touched:
+  - docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md
+  - scripts/flavor_measure_positivity_agnostic_2026_05_31.py
+  - logs/runner-cache/flavor_measure_positivity_agnostic_2026_05_31.txt
+  - .claude/science/physics-loops/flavor-positivity-scope-20260606/
+open_imports:
+  - det_C/det_R selection bridge
+  - AC_phi_lambda / current chain-of-custody route
+  - statistics/readout physical bridge
+proposal_allowed: false
+proposal_allowed_reason: "This is a scope repair; it does not close r=1/2."
+audit_required_before_effective_status_change: true
+review_loop_disposition: local-self-review-pass
+next_exact_action: "Run py_compile, runner, precompute cache refresh/check, diff checks, then commit/push/open PR."

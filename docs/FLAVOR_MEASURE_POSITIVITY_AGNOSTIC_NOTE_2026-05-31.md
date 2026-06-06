@@ -1,10 +1,15 @@
-# Flavor — the measure/positivity lever is AGNOSTIC; both symmetry-side and measure-side selectors for r=1/2 are exhausted
+# Flavor — the measure/positivity lever is AGNOSTIC on three finite checks
 
 > **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** its "both levers exhausted" / finite-enumeration framing is **superseded** by FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31 (the values are lanes, not a selection to exhaust) and the chain-of-custody `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`. The current consolidated status: r=1/2 is a distinguished *stationary point* that reduces to the single Tier-A admitted input `AC_φλ` (K-reality + det_C) — not a closed/exhausted route. This note is retained for provenance; **cite the chain-of-custody note for current status.**
 
-**Date:** 2026-05-31
+**Date:** 2026-05-31 (scope repair: 2026-06-06)
 **Claim type:** bounded_theorem
-**Claim boundary:** bounded negative (last non-symmetry lever) + one partial win (readout class) + campaign-capstone characterization.
+**Claim boundary:** bounded support for three finite algebraic checks:
+OS-Gram positivity is blind to 1-complex versus 2-real counting, the qubit
+Bargmann/Kahler complex structure is generation-blind relative to `J_cs`, and
+the signed/Hermitian readout identity `Q=(1+2r)/3` holds for every tested `r`.
+This note does **not** exhaust the flavor lane, does **not** derive the
+det_C/det_R selection bit, and does **not** close `r=1/2`.
 **Runner:** `scripts/flavor_measure_positivity_agnostic_2026_05_31.py` (SCORECARD PASS=3).
 **Source:** 6-agent build `wf_9c630d58` (map → OS-RP / Bargmann / unitarity / adversary → adjudication).
 
@@ -34,36 +39,35 @@ Positivity does secure the **readout class**: RP ⟹ positive transfer matrix �
 signed/Brannen readout on which `Q=(1+2r)/3` is exact. This is *necessary* for Q=2/3 — but it holds for
 **every** `r` (verified r=0.3→0.53, 0.5→0.67, 1→1, 2→1.67), so it fixes the readout class, **not** the value.
 
-## Campaign capstone — both levers exhausted
-The value `r=1/2` is decided by one bit: the **complex-vs-real counting of the generation doublet**
-(det_C = one complex amplitude → r=1/2 → Q=2/3, observed; det_R = two real → r=1 → Q=1). That bit is:
-- **not selectable by symmetry** — every native operator that could orient `J_cs` (qubit central `i`, gauge
-  U(1)s, lattice point group, projective/magnetic reps via `H²=0`, full O_h, algebra automorphisms,
-  idempotent U(1)) is generation-blind, inert, or the blocked chiral grading; a doublet-rephasing U(1) is
-  forbidden by `C³=I`;
-- **not selectable by positivity** — OS RP, Bargmann, and unitarity are all agnostic to the counting (this note).
+## Superseded campaign framing
 
-So `r=1/2` is a **free native reality-structure bit** — equivalently the complex-vs-real / statistics /
-Dirac-vs-Majorana / charged-vs-neutral character of the doublet field, which lives on the generation-blind
-charge factor. It is the *same* unforced datum as the framework's own statistics-selection open gap (G3 in
-`FREE_FIELD_OS`): fermionic-vs-bosonic, det_C-vs-det_R, complex-vs-real — one reality/statistics bit that
-neither the symmetry structure nor the positivity structure fixes.
+The prior campaign-capstone wording said both symmetry-side and
+measure/positivity-side selectors were exhausted. That framing is superseded
+and is not part of this note's active claim. The active claim is narrower:
+the three positivity/measure checks in this packet do not select `det_C` over
+`det_R`.
+
+The broader statement that the value `r=1/2` is a free native
+reality-structure bit remains a live hypothesis only. It requires the current
+chain-of-custody / `AC_φλ` route and any retained statistics/readout bridges
+before it can be used as authority.
 
 ## What is established (the honest standing)
-- `J_cs` is **forced** (Schur, unique up to sign) — the doublet's complex structure exists natively.
-- The **signed/Hermitian (Brannen) readout** is selected by reflection positivity (native, derived).
-- `Q = 1/3 + (2/3)r` is an exact identity on that readout; the observed `Q=2/3 ⟺ r=1/2` is the det_C/block
-  count, the **coherent-state-natural** reading.
-- The *one* remaining input is the reality/statistics bit selecting det_C over det_R — **not** an arbitrary
-  knob, but a single, sharply-located, physically-meaningful character (complex/Dirac vs real/Majorana), and
-  the *same* bit as the framework's documented statistics-selection gap.
+- OS-Gram positivity holds equally for the one-complex and two-real finite
+  covariance blocks tested here.
+- The qubit Bargmann/Kahler complex structure used here is central and
+  generation-blind, so it does not select the `J_cs` doublet counting.
+- The signed/Hermitian readout identity `Q = 1/3 + (2/3)r` checks for the
+  tested `r` values, so this packet supports a readout-class fact, not a
+  value-selection theorem.
+- The selection of `det_C` over `det_R`, and any physical conclusion
+  `Q=2/3 <=> r=1/2`, remain outside this note's active scope.
 
 ## Next paths (live, not closed)
-The two surviving non-exhausted directions, both *cross-factor* (connecting the generation algebra to the
-charge/statistics factors the framework keeps showing are generation-blind): (i) **statistics selection (G3)**
-— whatever derives fermionic-vs-bosonic on the substrate is the same bit as det_C-vs-det_R, so closing G3
-would close `r=1/2`; (ii) a derived **cross-factor coupling** giving each sector its place on the
-`r`-ladder (leptons 0.50 < down 0.60 < up 0.77), which has no *internal* flavor parameter.
+The surviving directions are external to this packet: the current
+chain-of-custody / `AC_φλ` route, a retained statistics/readout bridge, or a
+derived cross-factor coupling. This note supplies only the three finite
+agnostic/readout checks above.
 
 ## Stale-citation flags
 - Anchors: OS reflection positivity (`axiom_first_reflection_positivity`, audited_conditional;

@@ -1,0 +1,30 @@
+loop_slug: flavor-j-round2-algebraic-scope-20260606
+started: 2026-06-06
+branch: physics-loop/flavor-j-round2-algebraic-scope-20260606
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle_count: 1
+active_route: algebraic non-selection of J by fermionic determinant power
+target_claim_id: flavor_find_j_round2_power_not_count_2026-06-02
+blocker_source: audit_ledger
+blocker_text: "The packet closes the narrow algebraic non-selection of J, but the broader claim also imports the P1 carrier premise, Round-1 U(1)_b measure-neutrality, and the det_C/det_R-to-r/Q mapping without providing those authorities. R2-4 verifies only arithmetic after those mappings are assumed."
+files_touched:
+  - docs/FLAVOR_FIND_J_ROUND2_POWER_NOT_COUNT_2026-06-02.md
+  - scripts/flavor_find_J_round2_power_not_count_2026_06_02.py
+  - logs/runner-cache/flavor_find_J_round2_power_not_count_2026_06_02.txt
+  - .claude/science/physics-loops/flavor-j-round2-algebraic-scope-20260606/
+open_imports:
+  - P1 carrier premise not used as a one-hop authority.
+  - Round-1 U(1)_b measure-neutrality not used as a one-hop authority.
+  - det_C/det_R to r,Q mappings not used as one-hop authorities.
+no_go_routes:
+  - Fermionic/Berezin determinant power alone selects the antisymmetric J pairing.
+trace_gate:
+  trace_class: negative_route_pruning
+  reachability_to_target: prunes
+  artifact_role: demotion
+review_findings: author verification only; independent review/audit pending
+pr_status: pending
+next_exact_action: open PR for reviewer extraction
+stop_condition: PR opened and no further clean repair identified in this loop

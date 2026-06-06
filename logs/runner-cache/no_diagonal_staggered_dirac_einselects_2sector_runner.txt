@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/no_diagonal_staggered_dirac_einselects_2sector_runner.py
+runner_sha256: 97c70424f2678fe90e5858a5a366c78f5395135094c3d0ae06d8e71d238e82cf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+no-diagonal + staggered-Dirac => generation coupling K-real to all orders  [class A]
+==============================================================================
+
+-- (1)+(2) odd orders vanish (Hamming parity); even orders are real (K-real) --
+  [PASS] uniform (+,+,+): odd orders (3,5) VANISH on hw=1 (single-flip => even-order return)
+  [PASS] uniform (+,+,+): even orders (2,4) are REAL (K-real, max|Im|=0) and nonzero  (|K|_2=0.2308)
+  [PASS] staggered (+,-,+): odd orders (3,5) VANISH on hw=1 (single-flip => even-order return)
+  [PASS] staggered (+,-,+): even orders (2,4) are REAL (K-real, max|Im|=0) and nonzero  (|K|_2=0.2308)
+  [PASS] staggered (-,+,-): odd orders (3,5) VANISH on hw=1 (single-flip => even-order return)
+  [PASS] staggered (-,+,-): even orders (2,4) are REAL (K-real, max|Im|=0) and nonzero  (|K|_2=0.2308)
+
+-- (3) realness => no K-odd i(C-C^2) component (the sieve's 3-mode/r=0 resolver) --
+  [PASS] the K-odd generator i(C-C^2) is purely imaginary (so any K-odd part shows up in Im(H))
+  [PASS] the 2nd-order coupling has zero overlap with the K-odd generator (Tr(Kodd^dag H2)=0)  (|<Kodd,H2>| = 0.0e+00)
+
+-- (4) load-bearing: only a non-native MIXED hop produces a K-odd part --
+  [PASS] purely imaginary V=iA (staggered-Dirac, native): K-real  (max|Im(H2)|=0.00e+00)
+  [PASS] purely real V=A (counterfactual): K-real  (max|Im(H2)|=0.00e+00)
+  [PASS] MIXED V=(1+i)A (non-native): K-ODD present  (max|Im(H2)|=1.08e+00)
+
+-- (5) consequence: 2-sector partition einselected; r=0 structurally excluded --
+  [PASS] the K-real cone generator C+C^2 has spectrum {-1,-1,2}: singlet isolated + doublet degenerate => resolves ONLY the 2-sector (singlet+doublet) partition, not the 3 modes
+
+==============================================================================
+TOTAL: PASS=12 FAIL=0
+VERDICT: the no-diagonal axiom (single-flip => even-order returns to hw=1, odd orders vanish) and the staggered-Dirac purely-imaginary hopping (even # of i's => real) make the emergent generation C3 coupling K-REAL to ALL orders. So it lies in the sieve's K-real cone span_R{I,C+C^2} and einselects the 2-SECTOR (singlet+doublet) partition; the K-odd (3-mode / r=0) coupling is STRUCTURALLY FORBIDDEN (needs a non-native mixed hop or a diagonal hop). This DISCHARGES the sieve's posited K-reality from the axioms and narrows the dial to the 2-sector {r=1/2, r=1} -- excluding r=0 (Q=1/3). The r=1/2-vs-r=1 choice is the separate block-count-vs-dimension measure; no value forced.
+
+----- stderr -----
+

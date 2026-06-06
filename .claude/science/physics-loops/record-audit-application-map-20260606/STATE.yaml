@@ -1,7 +1,7 @@
 loop_slug: record-audit-application-map-20260606
 branch: physics-loop/record-audit-application-map-20260606
 base: physics-loop/record-unbounded-additivity-schema-20260606
-status: verification_complete
+status: pr_open
 actual_current_surface_status: bounded-support
 target_status: best-honest-status
 cycle_count: 1
@@ -21,8 +21,8 @@ no_go_routes:
   - "Fixed bounded status remains merely because a row uses Record additivity."
 trace_gate_classification: upstream_support
 review_findings: "local review-loop emulation clean; no audit-edit, production, probability, local-observability, chirality, color, rate, dial, or status-promotion overclaim found"
-pr_status: "not_created"
-next_exact_action: "Commit, push, open a stacked PR, and record PR state."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2814; mergeable MERGEABLE; merge state UNSTABLE with audit_pipeline queued at verification"
+next_exact_action: "Continue the 12-hour campaign on the next ranked lane while this PR awaits checks."
 stop_condition: "One coherent stacked PR for this block, then pivot while campaign runtime remains."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false

@@ -26,3 +26,16 @@ Findings:
 - Trace gate: clean. The artifact supports triage and next-target selection.
 
 Disposition: branch-local application map is ready for stacked PR packaging.
+
+## PR Verification
+
+PR #2814:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2814
+```
+
+Verified open, base
+`physics-loop/record-unbounded-additivity-schema-20260606`, head
+`physics-loop/record-audit-application-map-20260606`, mergeable `MERGEABLE`,
+merge state `UNSTABLE` with `audit_pipeline` queued.

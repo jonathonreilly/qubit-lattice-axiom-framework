@@ -1,0 +1,28 @@
+loop_slug: record-markov-generator-premise-classifier-20260606
+branch: physics-loop/record-markov-generator-premise-classifier-20260606
+base: origin/physics-loop/record-markov-generator-embeddability-boundary-20260606
+mode: campaign
+cycle: record_markov_generator_premise_classifier
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2800"
+target_blocker: "After separating stochastic production kernels from Markov generator embeddability, enumerate the exact additional premises needed for physical rate claims."
+active_route: "Classify record-information, production-kernel, pre-record probability bridge, Markov-generator, clock, and rate-unit premises."
+files_touched:
+  - docs/RECORD_MARKOV_GENERATOR_PREMISE_CLASSIFIER_2026-06-06.md
+  - scripts/frontier_record_markov_generator_premise_classifier_2026_06_06.py
+  - logs/runner-cache/frontier_record_markov_generator_premise_classifier_2026_06_06.txt
+  - .claude/science/physics-loops/record-markov-generator-premise-classifier-20260606/
+checks:
+  runner: "PASS=22 FAIL=0"
+  py_compile: pass
+  diff_check: pass
+  ascii: pass
+  wording_sweep: pass
+review_loop_disposition: pass
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+pr_url: pending
+next_exact_action: "Commit, push, open stacked PR, record PR URL, then pivot to the next campaign lane."

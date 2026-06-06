@@ -25,7 +25,7 @@ https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2814
 GitHub verification: open PR, base
 `physics-loop/record-unbounded-additivity-schema-20260606`, head
 `physics-loop/record-audit-application-map-20260606`, mergeable `MERGEABLE`,
-merge state `UNSTABLE` with `audit_pipeline` queued at verification.
+merge state `CLEAN` at latest verification.
 
 ## Intended Result
 

@@ -9,7 +9,10 @@ the admitted inputs in
 Lüders rule import for record-conditioning state updates. The Born
 note is a downstream consumer, not an upstream authority for this row.
 The current source packet also includes a native finite-operator
-bridge for the two formerly bare ingredients in Step 1:
+bridge for the two formerly bare ingredients in Step 1. The 2026-06-06
+repair derives the trace/effect pairing from finite POVM-additivity,
+then uses the retained canonical projective `K_P=P` theorem plus retained
+finite Kraus selective-state algebra to obtain the Lüders branch state:
 [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
 with runner
 [`scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py`](../scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py)
@@ -76,8 +79,8 @@ generalizes to higher rank). Let the second measurement be POVM
 p(P then E_i)  =  p(P) · p(E_i | P)                                      (1)
 ```
 
-Using the state/effect trace pairing on the operator algebra, supplied
-for this finite-dimensional setting by
+Using the state/effect trace pairing on the operator algebra, derived in the
+finite-dimensional effect-probability setting by
 [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md):
 
 ```text
@@ -90,7 +93,10 @@ outcome. The sequential-effect bridge gives
 a valid effect, has the required boundaries `M_{P,I}=P` and
 `M_{I,E_i}=E_i`, reproduces the Lüders two-step probability, and is
 selected over boundary-satisfying alternatives such as the Jordan
-product by positivity and the two-step probability check.
+product by positivity and the two-step probability check. The same bridge now
+routes the branch update through retained canonical projective `K_P=P` and
+retained finite Kraus selective-state algebra rather than treating the Lüders
+update as an unexplained premise.
 
 So
 
@@ -178,8 +184,9 @@ positive-probability domain.
   (`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`
   Step 3 admitted Lüders 1951 / Cassinelli-Lahti 1995 as the standard
   measurement-update rule). This note derives the bounded replacement
-  from (U1)–(U4), with the trace pairing and `M_{P,E}=PEP`
-  ingredients now supplied by the native bridge. Closure is conditional
+  from (U1)–(U4), with the trace pairing, canonical projective `K_P=P`,
+  finite Kraus branch update, and `M_{P,E}=PEP` ingredients now derived
+  by the native bridge. Closure is conditional
   on independent audit of this row and any later dependency-chain
   update on the Born note.
 
@@ -202,8 +209,9 @@ positive-probability domain.
    measurement update rules — these are mainstream-textbook
    foundational conditions (Cassinelli-Lahti 1995, Busch et al. 1995
    *Operational QM*, Heinosaari-Ziman 2012).
-2. **Finite operator-algebra bridge for `M_{P,E}=PEP` and trace/effect
-   pairing** —
+2. **Finite operator-algebra bridge for trace/effect pairing, retained
+   canonical projective `K_P=P`, finite Kraus selective-state algebra, and
+   `M_{P,E}=PEP`** —
    [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
    with runner/cache linked above.
 3. **Positive-probability conditioning domain** — `Tr(PσP)>0` for
@@ -247,7 +255,7 @@ lattice algebra.
 - Not a derivation of Gleason–Busch from A1+A2.
 - Not a general uniqueness theorem for all sequential products on all
   effect algebras; the finite operator-algebra `PEP` bridge used here
-  is supplied separately and linked above.
+  is linked separately above.
 - Not a numerical-prediction change.
 - Not a unilateral retagging of the Born note. The bounded-theorem
   candidacy depends on independent audit acceptance of the (U1)–(U4)

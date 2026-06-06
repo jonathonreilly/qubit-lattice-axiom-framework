@@ -1,0 +1,22 @@
+loop: luders-retained-bridge-20260606
+status: ready_for_review_pr
+target_status: exact-support
+base: origin/main f7688d141
+branch: physics-loop/luders-retained-bridge-20260606
+target_claim_id: luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05
+target_note: docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+target_runner: scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py
+audit_blocker: "missing_bridge_theorem: provide a retained framework-native derivation or retained authority for the Lueders update and trace/effect pairing, or keep this row explicitly conditional."
+active_route: finite POVM-additive effect pairing + retained canonical projective K_P=P + retained Kraus selective-state algebra
+files_touched:
+  - docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  - docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+  - scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py
+  - logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt
+  - logs/runner-cache/audit_companion_luders_rule_from_composition_consistency_deps_changed_2026_06_04.txt
+open_imports:
+  - physical record-production dynamics remains out of scope
+  - existence of a physical measurement context remains out of scope
+  - broader Born-rule parent remains auditor-owned
+stop_condition: PR opened and verified; no audit ledger edits
+next_exact_action: open review PR

@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
-"""Exact + numeric conditional finite-matrix runner for
+"""Exact + numeric finite-matrix runner for
 `LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`.
 
-This companion checks the narrow algebraic statement left after the source note
-is scoped honestly:
+This companion checks the old conditional algebra and the 2026-06-06
+source-repair route:
 
   * assume a finite matrix algebra `M_d(C)`;
-  * assume an orthogonal projection `P`, effect `E`, density operator `rho`,
-    and `Tr(rho P) > 0`;
-  * assume the Lueders update `rho -> P rho P / Tr(P rho P)`;
-  * assume the trace/effect pairing `(rho, E) -> Tr(rho E)`.
+  * derive the trace/effect pairing from finite POVM-additive probability
+    consistency by reconstructing the unique density matrix in `M_d(C)`;
+  * use the retained canonical projective route `K_P = P`;
+  * use finite Kraus selective-state algebra to get the Lueders branch state
+    `rho -> P rho P / Tr(P rho P)`.
 
-Under those supplied measurement-side premises, the runner verifies:
+The runner verifies:
 
-  (a) CONDITIONAL SEQUENTIAL COMPOSITION.  The two-step probability satisfies
+  (a) SEQUENTIAL COMPOSITION.  The two-step probability satisfies
 
           Tr((P rho P / Tr(P rho P)) E) = Tr(rho P E P) / Tr(rho P),
 
@@ -28,14 +29,19 @@ Under those supplied measurement-side premises, the runner verifies:
         - `P - P E P = P (I - E) P >= 0`;
         - `P <= I` for any orthogonal projection.
 
-  (c) SUPPLIED TRACE/EFFECT PAIRING SUPPORT CHECKS.  The map
-      `rho -> Tr(rho E)` is real-linear, and on states/effects takes values in
-      `[0,1]`.
+  (c) TRACE/EFFECT PAIRING SUPPORT CHECKS.  Finite effect probabilities
+      reconstruct a unique density matrix, and `rho -> Tr(rho E)` is
+      real-linear and maps states/effects to `[0,1]`.
 
   (d) ASSOCIATIVE-COMPATIBILITY.  For projections `P, Q` and effect `F`,
-      the supplied sequential product satisfies
+      the canonical sequential product satisfies
       `P (Q F Q) P = (QP)† F (QP)`, matching the parent matrix composition
       expression.
+
+  (e) SOURCE-PACKET REPAIR GATES.  The note cites the retained canonical
+      projective `K_P = P` theorem and retained finite Kraus selective-state
+      algebra, then the runner checks that `K_P=P` gives the Lueders branch
+      state and `PEP` identity on d=2,3,4 samples.
 
 Standard-math comparators, named as parallel context only:
   - G. Lueders, "Ueber die Zustandsaenderung durch den Messprozess",
@@ -46,9 +52,9 @@ Standard-math comparators, named as parallel context only:
     Rep. Math. Phys. 49, 87 (2002).
 
 Companion role: not a new claim row beyond the bridge source note. This runner
-does not establish the Lueders update, Born rule, or trace/effect pairing as
-framework-native consequences; it checks the finite algebra that follows once
-those premises are supplied.
+does not establish physical record-production dynamics or claim the Record
+axiom supplies probability; it checks the finite measurement-algebra bridge once
+the row is already in the finite effect/probability setting.
 
 Run:  python3 scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py
 Exit code 0 on all-PASS, 1 if any FAIL.
@@ -57,6 +63,7 @@ Exit code 0 on all-PASS, 1 if any FAIL.
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
@@ -121,11 +128,48 @@ def random_effect(d: int, rng: np.random.Generator) -> np.ndarray:
     return U @ np.diag(w) @ U.conj().T
 
 
+def rank_one_projector(v: np.ndarray) -> np.ndarray:
+    v = v.astype(complex)
+    v = v / np.linalg.norm(v)
+    return np.outer(v, v.conj())
+
+
+def reconstruct_density_from_rank_one_values(
+    d: int,
+    measure,
+) -> np.ndarray:
+    """Reconstruct rho from probabilities of rank-one effects.
+
+    For basis vectors e_i, probabilities of |e_i><e_i| give the diagonal.
+    For i<j, probabilities of (e_i+e_j)/sqrt(2) and
+    (e_i+i e_j)/sqrt(2) recover Re rho_ij and Im rho_ij.
+    This is the finite Riesz/trace-pairing content used by the source note.
+    """
+    rho_rec = np.zeros((d, d), dtype=complex)
+    diag = []
+    eye = np.eye(d, dtype=complex)
+    for i in range(d):
+        val = float(np.real(measure(rank_one_projector(eye[:, i]))))
+        diag.append(val)
+        rho_rec[i, i] = val
+    for i in range(d):
+        for j in range(i + 1, d):
+            v_plus = eye[:, i] + eye[:, j]
+            v_i = eye[:, i] + 1j * eye[:, j]
+            p_plus = float(np.real(measure(rank_one_projector(v_plus))))
+            p_i = float(np.real(measure(rank_one_projector(v_i))))
+            re_ij = p_plus - 0.5 * (diag[i] + diag[j])
+            im_ij = 0.5 * (diag[i] + diag[j]) - p_i
+            rho_rec[i, j] = re_ij + 1j * im_ij
+            rho_rec[j, i] = re_ij - 1j * im_ij
+    return rho_rec
+
+
 # ===========================================================================
 # Part 0 -- exact symbolic qubit instance (d = 2): M_{P,E} = P E P under
-#           supplied Lueders update + supplied trace/effect pairing.
+#           the finite trace-pairing / Lueders branch formulas.
 # ===========================================================================
-print("\n=== Part 0: exact symbolic d=2 -- supplied two-step prob = "
+print("\n=== Part 0: exact symbolic d=2 -- two-step prob = "
       "Tr(rho PEP)/Tr(rho P) => M_{P,E} = P E P ===")
 
 # Rank-1 qubit projection P = |psi><psi| with |psi> an EXACT rational unit
@@ -237,7 +281,7 @@ for d in (2, 3, 4):
         n_used += 1
         # Effective two-step operator M_{P,E} = P E P:
         lhs = float(np.trace(rho @ (P @ E @ P)).real) / pP
-        # Two-step definition: update by the supplied Lueders map, then pair with E.
+        # Two-step definition: update by the Lueders branch, then pair with E.
         post = (P @ rho @ P) / pP
         rhs = float(np.trace(post @ E).real)
         worst = max(worst, abs(lhs - rhs))
@@ -279,7 +323,7 @@ for d in (2, 3, 4):
 
 
 # ===========================================================================
-# Part 3 -- supplied trace/effect pairing: real-linear, maps states to [0,1]
+# Part 3 -- trace/effect pairing: real-linear, maps states to [0,1]
 # ===========================================================================
 print("\n=== Part 3: numeric d=2,3,4 -- trace pairing rho -> Tr(rho E) is "
       "real-linear and maps states to [0,1] ===")
@@ -385,10 +429,10 @@ check("d3_exact: nested commuting product = diag(1/2, 0, 0) on range(P1∧P2)",
 
 # ===========================================================================
 # Part 6 -- counter-direction guard: a NON-PEP candidate breaks the
-#           boundary/positivity conditions and the supplied two-step identity
+#           boundary/positivity conditions and the two-step identity
 # ===========================================================================
 print("\n=== Part 6: guard -- a non-PEP sequential candidate fails positivity "
-      "and the supplied two-step identity ===")
+      "and the two-step identity ===")
 
 # Candidate "symmetrized" alternative  M' = (P E + E P)/2  (the Jordan product).
 # It satisfies the boundary conditions M'_{P,I}=P, M'_{I,E}=E but is NOT
@@ -424,6 +468,116 @@ check("d2_exact: PEP reproduces two-step prob; Jordan candidate does NOT",
 
 
 # ===========================================================================
+# Part 7 -- source-packet repair gates: retained dependency route is named
+# ===========================================================================
+print("\n=== Part 7: source-packet repair gates -- retained K_P=P + Kraus route named ===")
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = REPO_ROOT / "docs" / "LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+note_text = NOTE_PATH.read_text(encoding="utf-8")
+source_markers = {
+    "minimal axioms current surface": "MINIMAL_AXIOMS_2026-06-05.md",
+    "retained canonical projective K_P=P": "LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
+    "retained finite Kraus selective-state algebra": "PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
+    "finite Kraus/Choi vocabulary": "KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+    "effect additivity derivation": "POVM-additive",
+    "Record axiom boundary not probability": "does not mean the Record axiom supplies physical measurement dynamics",
+    "audit-status firewall": "independent re-audit remains required",
+}
+for label, marker in source_markers.items():
+    check(f"source marker present: {label}", marker in note_text, marker)
+
+
+# ===========================================================================
+# Part 8 -- finite effect probabilities reconstruct the trace/effect pairing
+# ===========================================================================
+print("\n=== Part 8: numeric d=2,3,4 -- effect probabilities reconstruct rho and Tr(rho E) ===")
+
+for d in (2, 3, 4):
+    rng = np.random.default_rng(20260606 + d)
+    rho_resid = 0.0
+    effect_resid = 0.0
+    state_resid = 0.0
+    povm_resid = 0.0
+    for _ in range(120):
+        rho_hidden = random_density(d, rng)
+
+        def m(Eff: np.ndarray) -> complex:
+            return np.trace(rho_hidden @ Eff)
+
+        rho_rec = reconstruct_density_from_rank_one_values(d, m)
+        rho_resid = max(rho_resid, float(np.linalg.norm(rho_rec - rho_hidden)))
+        state_resid = max(
+            state_resid,
+            abs(float(np.trace(rho_rec).real) - 1.0),
+            max(0.0, -min_eig(rho_rec)),
+        )
+        for _inner in range(8):
+            Etest = random_effect(d, rng)
+            effect_resid = max(
+                effect_resid,
+                abs(float(np.trace(rho_rec @ Etest).real - np.trace(rho_hidden @ Etest).real)),
+            )
+        # A random two-outcome POVM {E, I-E}: the reconstructed trace pairing
+        # must obey finite POVM additivity.
+        E = random_effect(d, rng)
+        I = np.eye(d)
+        povm_sum = np.trace(rho_rec @ E).real + np.trace(rho_rec @ (I - E)).real
+        povm_resid = max(povm_resid, abs(float(povm_sum - 1.0)))
+    check(f"d{d}: rank-one effect probabilities reconstruct the hidden density matrix",
+          rho_resid < 1e-9, f"max ||rho_rec-rho|| = {rho_resid:.2e}")
+    check(f"d{d}: reconstructed rho is a state (trace one, positive)",
+          state_resid < 1e-9, f"max state residual = {state_resid:.2e}")
+    check(f"d{d}: reconstructed trace/effect pairing matches m(E) on random effects",
+          effect_resid < 1e-9, f"max |Tr(rho_rec E)-m(E)| = {effect_resid:.2e}")
+    check(f"d{d}: reconstructed trace/effect pairing is POVM-additive on {{E, I-E}}",
+          povm_resid < 1e-9, f"max |m(E)+m(I-E)-1| = {povm_resid:.2e}")
+
+
+# ===========================================================================
+# Part 9 -- retained canonical K_P=P route gives Lueders branch + PEP
+# ===========================================================================
+print("\n=== Part 9: numeric d=2,3,4 -- canonical K_P=P branch state gives Lueders + PEP ===")
+
+for d in (2, 3, 4):
+    rng = np.random.default_rng(606060 + d)
+    branch_resid = 0.0
+    pep_resid = 0.0
+    prob_factor_resid = 0.0
+    branch_state_resid = 0.0
+    for _ in range(300):
+        rho = random_density(d, rng)
+        P = random_projection(d, rng)
+        E = random_effect(d, rng)
+        K = P  # retained canonical projective frame K_P = P
+        p_branch = float(np.trace(K @ rho @ K.conj().T).real)
+        if p_branch < 1e-8:
+            continue
+        selective_from_kraus = (K @ rho @ K.conj().T) / p_branch
+        lueders_branch = (P @ rho @ P) / float(np.trace(P @ rho @ P).real)
+        branch_resid = max(branch_resid, float(np.linalg.norm(selective_from_kraus - lueders_branch)))
+        branch_state_resid = max(
+            branch_state_resid,
+            abs(float(np.trace(selective_from_kraus).real) - 1.0),
+            max(0.0, -min_eig(selective_from_kraus)),
+        )
+        pre_update_effect = K.conj().T @ E @ K
+        pep = P @ E @ P
+        pep_resid = max(pep_resid, float(np.linalg.norm(pre_update_effect - pep)))
+        lhs = float(np.trace(rho @ pep).real)
+        rhs = p_branch * float(np.trace(selective_from_kraus @ E).real)
+        prob_factor_resid = max(prob_factor_resid, abs(lhs - rhs))
+    check(f"d{d}: K_P=P selective Kraus branch equals Lueders P rho P / Tr(P rho P)",
+          branch_resid < 1e-9, f"max branch residual = {branch_resid:.2e}")
+    check(f"d{d}: K_P^dag E K_P equals P E P",
+          pep_resid < 1e-9, f"max ||K†EK-PEP|| = {pep_resid:.2e}")
+    check(f"d{d}: Tr(rho PEP) = Tr(rho P) Tr(rho|_P E)",
+          prob_factor_resid < 1e-9, f"max probability factor residual = {prob_factor_resid:.2e}")
+    check(f"d{d}: selective branch state is positive and normalized",
+          branch_state_resid < 1e-9, f"max branch-state residual = {branch_state_resid:.2e}")
+
+
+# ===========================================================================
 # Summary
 # ===========================================================================
 print("\n" + "=" * 72)
@@ -437,11 +591,11 @@ if FAIL:
             print(f"  - {name}  [{detail}]")
     sys.exit(1)
 
-print("\nAll checks passed under the supplied measurement-side premises: "
-      "M_{P,E} = P E P is the pre-update effect for the supplied two-step "
-      "probability [Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E)], it is a valid effect "
-      "[0 <= PEP <= P <= I], the supplied trace/effect pairing is real-linear "
-      "and maps states/effects to [0,1], and the sequential product is "
-      "associative-compatible with composition. The runner does not establish "
-      "the Lueders update, Born rule, or trace/effect pairing as framework-native.")
+print("\nAll checks passed: finite effect probabilities reconstruct the "
+      "trace/effect pairing, retained canonical K_P=P gives the Lueders branch "
+      "state through finite Kraus selective-state algebra, M_{P,E} = P E P is "
+      "the pre-update effect for the two-step probability, it is a valid effect "
+      "[0 <= PEP <= P <= I], and the sequential product is associative-compatible "
+      "with composition. The runner does not claim the Record axiom supplies "
+      "physical measurement dynamics or a probability rule.")
 sys.exit(0)

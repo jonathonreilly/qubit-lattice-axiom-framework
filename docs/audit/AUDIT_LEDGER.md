@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 191 |
-| **retained_no_go** | 199 |
+| **retained_no_go** | 200 |
 | **retained_bounded** | 684 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1334 |
+| unaudited | 1333 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1072 |
+| `audited_clean` | 1073 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1641 |
+| `unaudited` | 1640 |
 
 | claim_type | count |
 |---|---:|
@@ -485,6 +485,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_weak_connectivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -7047,6 +7048,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** By the disjoint plaquette partition and the Θ-bijection of the two half-spaces, S_W[U] = S_+(U) + Θ(S_+)(U) + S_mixed(U).  _(class `A`)_
 - **chain closes:** True — Within the stated temporal-gauge bounded scope, the plaquette partition is disjoint and exhaustive, and Θ maps P_+ to P_- up to orientation reversal, which leaves Re Tr unchanged. The only load-bearing cited authority for mixed-plaquette temporal-gauge factorization is retained.
 - **rationale:** The load-bearing decomposition is a genuine algebraic closure from the Wilson action definition, the Θ action, and retained mixed-kernel temporal-gauge factorization. D2 follows from Re Tr being real and from restricting to Θ-fixed configurations; D3 follows by the explicit symmetrization F(U)=f(U)+conj(f(ΘU)) and Θ²=id. The runner source performs nontrivial finite SU(3) enumeration and link-matrix checks rather than printing constants, and the independent formula check finds no hidden numerical tuning or renaming step.
+- **auditor confidence:** high
+
+### `gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06`
+
+- **Note:** [`GAUGE_SCALAR_KZ_BETA6_REPRODUCTION_CONTRACT_FIREWALL_2026-06-06.md`](../../docs/GAUGE_SCALAR_KZ_BETA6_REPRODUCTION_CONTRACT_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The old W_lift lambda=3 shortcut and support-only SDP constraints cannot certify a nontrivial finite SU(3), Wilson beta=6 reproduction bracket; source-data and beta-coupled SDP routes remain open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-ef81e5a20d-gauge_scalar_kz_beta6_reprod`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Equating the paper and Wilson coefficients gives lambda=N^2/beta=1.5 for SU(3), beta=6, and the support-only constraints admit the endpoint witness P=R=Q=1 with all moments and cross-correlators equal to 1.  _(class `A`)_
+- **chain closes:** True — Independent algebra gives lambda=9/6=1.5, and the all-ones endpoint witness satisfies the stated support, Hankel/Hausdorff, Gram, area-style, and p1>=0.4225 constraints while attaining p1=1. Thus the support-only route cannot produce a nontrivial upper bound, but the closure is only for the named pruned routes.
+- **rationale:** The load-bearing mathematics is a direct algebraic feasibility check, not a first-principles physics computation or an external numerical match. The runner source implements the coefficient comparison and endpoint-witness PSD checks transparently, and the same result follows manually because rank-one all-ones matrices with nonnegative prefactors are PSD. The no-go discipline gate is satisfied only under the note's narrow boundary: it prunes the old shortcut and support-only SDP route, while explicitly leaving primary source-data and beta-coupled loop-equation routes open. Hard-coded image-width comparator constants in the runner are not used as load-bearing evidence for this scoped verdict.
 - **auditor confidence:** high
 
 ### `gauge_scalar_temporal_completion_theorem_note`

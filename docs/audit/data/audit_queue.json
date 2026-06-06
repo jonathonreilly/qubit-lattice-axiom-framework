@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 313,
     "high": 255,
-    "leaf": 414,
+    "leaf": 413,
     "medium": 354
   },
   "cycle_break_target_count": 6,
@@ -28324,28 +28324,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GAUGE_SCALAR_KZ_BETA6_REPRODUCTION_CONTRACT_FIREWALL_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_kz_beta6_reproduction_contract_2026_06_06.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gauge_scalar_kz_su3_beta6_convention_split_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -40077,6 +40055,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 76,
-  "total_pending": 1336
+  "ready_count": 75,
+  "total_pending": 1335
 }

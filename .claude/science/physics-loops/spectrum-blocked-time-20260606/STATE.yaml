@@ -1,0 +1,22 @@
+loop_slug: spectrum-blocked-time-20260606
+target: axiom_first_spectrum_condition_theorem_note_2026-04-29
+status: ready_for_review
+actual_current_surface_status: exact-support
+claim_state_movement: >
+  Closed the quoted missing_bridge_theorem blocker by changing the source note
+  and primary runner from the old one-step normalization to the two-step
+  blocked-time normalization H = -(1/(2 a_tau)) log(T/M_T), with T := T_hat^2.
+branch: physics-loop/spectrum-blocked-time-20260606
+base: origin/main
+files_touched:
+  - docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_spectrum_condition_check.py
+  - outputs/axiom_first_spectrum_condition_check_2026-04-29.txt
+  - logs/runner-cache/axiom_first_spectrum_condition_check.txt
+  - .claude/science/physics-loops/spectrum-blocked-time-20260606
+open_imports:
+  - "Independent audit must decide the repaired spectrum-condition row status."
+  - "The source note remains staggered-only and keeps SC3 conditional on top-eigenvalue nondegeneracy."
+  - "SC4 remains a temporal-decay corollary conditioned on the supplied transfer gap."
+next_exact_action: "Open PR and hand to review/audit loop; do not edit docs/audit results in this branch."
+stop_condition: "Blocker repaired and caches fresh; further movement depends on reviewer/auditor landing."

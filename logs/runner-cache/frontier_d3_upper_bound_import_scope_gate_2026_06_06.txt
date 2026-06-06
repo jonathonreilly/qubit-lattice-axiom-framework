@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py
+runner_sha256: 0e19b76b126d9caae864566cd1264cd4e08c56efd418447a361ab37c52f98e61
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+D3 upper-bound import-scope gate
+==========================================================
+[PASS] gate_note exists (docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md)
+[PASS] lower_note exists (docs/DIMENSION_SELECTION_NOTE.md)
+[PASS] upper_wrapper exists (docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
+[PASS] bertrand_support exists (docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)
+[PASS] coulomb_support exists (docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)
+[PASS] gate status is branch-local exact support, not promotion
+[PASS] gate names the current lower-bound finite set
+[PASS] gate identifies Bertrand as the decisive current uniqueness import
+[PASS] gate forbids repo-wide authority edits
+[PASS] lower note is scoped as lower-bound support only
+[PASS] lower note reports d<=2 failure and d=3,4,5 pass
+[PASS] lower note keeps upper wrapper non-load-bearing for that row
+[PASS] lower note requires separate review for framework-internal d<=3
+[PASS] upper wrapper is explicitly named-import-only
+[PASS] upper wrapper records independent audit authority
+[PASS] upper wrapper contains Bertrand route and d<=3 bound
+[PASS] upper wrapper contains atomic route and d<=4 bound
+[PASS] upper wrapper marks standard Coulomb spectrum only at d=3
+[PASS] upper wrapper forbids internal-derivation overread
+[PASS] Bertrand support note keeps theorem import boundary explicit
+[PASS] Bertrand support note verifies circular-orbit sign classification
+[PASS] Coulomb support note keeps admitted-premise boundary explicit
+[PASS] Coulomb support note does not close D3 chain by itself
+[PASS] lower support set is exactly the checked current finite set
+[PASS] Bertrand upper set over checked positive dims is d<=3
+[PASS] atomic weaker stability upper set over checked positive dims is d<=4
+[PASS] lower intersect Bertrand is unique d=3 ([3])
+[PASS] lower intersect weaker atomic stability is not unique ([3, 4])
+[PASS] lower intersect strict atomic spectrum is unique if separately used
+[PASS] Bertrand is decisive under current weaker atomic-stability scope
+[PASS] atomic companion support is compatible with Bertrand-selected d=3
+[PASS] gate non-claims include framework derivation firewall
+[PASS] gate records future work as import retirement or explicit import support
+[PASS] runner path is cited by gate note
+[PASS] runner cache path is cited by gate note
+==========================================================
+COMPOSITION:
+  lower runner support: [3, 4, 5]
+  Bertrand upper:       d <= 3 -> [1, 2, 3]
+  atomic weak upper:    d <= 4 -> [1, 2, 3, 4]
+  lower & Bertrand:     [3]
+  lower & atomic weak:  [3, 4]
+STATUS: exact-support import-scope gate; audit_required_before_effective_retained=true
+SUMMARY: PASS=35 FAIL=0
+
+----- stderr -----
+

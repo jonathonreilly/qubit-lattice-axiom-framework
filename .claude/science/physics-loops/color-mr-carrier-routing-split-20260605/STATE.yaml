@@ -1,0 +1,32 @@
+loop_slug: color-mr-carrier-routing-split-20260605
+campaign: "12h physics-loop campaign down framework lanes"
+campaign_started_utc: "2026-06-06T01:39:56Z"
+campaign_deadline_utc: "2026-06-06T13:39:56Z"
+current_goal: "Split MR_color into supported carrier content and remaining physical realization gates."
+target_status: bounded-support
+cycle_count: 5
+active_route: "carrier-content support versus species naming, color-record readout, link routing, and dynamics/action residuals"
+hard_residual: "Carrier block content is supported, but SM species naming, color-record readout, link-index routing, Gauss/action/coupling/rate/time construction remain outside scope."
+branch: physics-loop/color-mr-carrier-routing-split-20260605
+base_branch: physics-loop/color-su3-matter-realization-residual-20260605
+files_touched:
+  - docs/COLOR_MR_CARRIER_ROUTING_SPLIT_2026-06-05.md
+  - scripts/frontier_color_mr_carrier_routing_split_2026_06_05.py
+  - logs/runner-cache/frontier_color_mr_carrier_routing_split_2026_06_05.txt
+  - .claude/science/physics-loops/color-mr-carrier-routing-split-20260605/
+open_imports:
+  - "SM species naming convention for quark/lepton labels."
+  - "Color-record readout antecedent: physical records are color singlets."
+  - "Base-SU(3) link-index routing."
+  - "Gauss generators, Wilson observables, action/couplings, rates, time, and production dynamics."
+no_go_routes:
+  - "Do not treat structural (2,3)+(2,1) carrier content as physical color closure."
+  - "Do not treat record append/count as link-index routing."
+  - "Do not use a stable dial location as a matter-realization theorem."
+trace_gate_classification: upstream_support
+trace_reachability: supports
+claim_status: bounded-support
+review_findings: "local review pass; runner PASS=53 FAIL=0; py_compile pass; git diff --check pass; overclaim wording sweep empty"
+pr_status: "pending"
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Do not stop campaign after this block while runtime remains."

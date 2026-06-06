@@ -1,0 +1,15 @@
+loop: koide-frobenius-zd-action-20260606
+branch: physics-loop/koide-frobenius-zd-action-20260606
+target_status: bounded-support
+active_route: finite_zd_action_bridge
+target_claim_id: koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10
+trace_class: direct_blocker_closure
+current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md
+  - scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py
+  - logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt
+next_exact_action: run runner and refresh cache
+stop_condition: ready review PR opened

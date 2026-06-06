@@ -97,8 +97,37 @@ a^2  =  2 |b|^2,    i.e.    kappa  :=  a^2 / |b|^2  =  2.                 (11)
 **Conclusion (T4) (`d = 3` uniqueness of the `(1, 1)` multiplicity
 pattern).**
 
+The action used in this conclusion is the dual cyclic phase action on
+circulant coefficient modes, not literal conjugation by the cyclic shift
+matrix. Literal shift-conjugation is trivial on circulants because they
+commute with the shift. For the T4 multiplicity statement define the generator
+`g in Z_d` by
+
+```text
+alpha_g(C^k) = exp(2 pi i k / d) C^k.                                    (12)
+```
+
+This action preserves the real Hermitian subspace because it pairs
+`C^k` with `C^(d-k)`. On the real Hermitian basis
+
+```text
+X_k := C^k + C^(d-k),    Y_k := i(C^k - C^(d-k)),
+```
+
+the generator acts by the real rotation
+
+```text
+alpha_g | span_R{X_k,Y_k}
+  = [[cos(2 pi k/d), -sin(2 pi k/d)],
+     [sin(2 pi k/d),  cos(2 pi k/d)]].                                  (13)
+```
+
+The `k=0` coefficient line is trivial. If `d` is even, the `k=d/2`
+coefficient line is the sign representation because
+`exp(2 pi i (d/2)/d) = -1`.
+
 For `d = 2, 3, 4, 5, 6`, the real-irrep multiplicity counts of the
-`Z_d`-conjugation action on the real Hermitian circulants
+dual cyclic phase action on the real Hermitian circulants
 `Herm_circ(d)` are
 ```text
 d = 2:  (trivial, doublets, sign)  =  (1, (), 1),
@@ -155,13 +184,15 @@ i.e. `kappa = 2`. This is a positive interior critical point of `S`
 since `S` is strictly concave on the positive orthant (Hessian
 diagonal with negative entries `-1/E^2`).
 
-`(T4)` A Hermitian circulant `H` on `C^d` is specified by `(a_0, b_1, b_2, ..., b_{d-1})`
-with `a_0 in R` (coefficient of `I`) and `b_k = bbar_{d-k}` (so the off-diagonals
-are pairwise conjugate-related). The `b_k` parametrization gives one
-real scalar for `k = 0` (trivial), and for each conjugate pair
-`{k, d - k}` with `k != d - k mod d` one complex `b_k` (a 2-real-dim
-doublet), and if `d` is even one additional real scalar at `k = d/2`
-(sign irrep). Counting:
+`(T4)` A Hermitian circulant `H` on `C^d` is specified by
+`(a_0, b_1, b_2, ..., b_{d-1})` with `a_0 in R` (coefficient of `I`) and
+`b_k = bbar_{d-k}` (so the off-diagonals are pairwise
+conjugate-related). Under the dual cyclic phase action (12), the `k=0`
+coefficient line is fixed. For each conjugate pair `{k, d-k}` with
+`k != d-k mod d`, the real Hermitian basis `{X_k,Y_k}` above carries the
+two-real-dimensional rotation (13), hence one real doublet. If `d` is
+even, the remaining real coefficient at `k=d/2` is multiplied by `-1`,
+hence is the sign line. Counting:
 ```text
 trivial irreps  :  1,
 doublet irreps  :  floor((d - 1) / 2),
@@ -245,7 +276,7 @@ functional ends up retained as canonical.
 The four conclusions themselves have zero load-bearing dependencies
 because they state only elementary Hermitian-matrix algebra on
 `Herm_circ(3)` together with the real-irrep multiplicity count for the
-`Z_d`-conjugation action.
+dual cyclic phase action.
 
 ## Forbidden imports check
 
@@ -296,8 +327,9 @@ verifies symbolically (PASS=N/0):
 8. The `Herm_circ(d)` real-irrep multiplicity count
    `(trivial, doublets, sign) =
    (1, tuple([1] * floor((d - 1) / 2)), 1 if d even else 0)`
-   enumerated explicitly for `d = 2, 3, 4, 5, 6`, with the table
-   matching the statement.
+   enumerated explicitly for `d = 2, 3, 4, 5, 6`, with the dual cyclic
+   phase action instantiated as trivial, real rotation doublet, and sign
+   blocks rather than only counted.
 9. Among `d in {2, 3, 4, 5, 6}`, the pattern `(1, (1,), 0)` is realized
    uniquely at `d = 3`.
 

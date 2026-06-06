@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 680 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1232 |
+| unaudited | 1231 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 89 |
-| ~~audited_failed~~ | 4 |
+| ~~audited_failed~~ | 5 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1055 |
 | `audited_conditional` | 89 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 48 |
+| `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1535 |
+| `unaudited` | 1534 |
 
 | claim_type | count |
 |---|---:|
@@ -1331,6 +1331,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
@@ -2153,6 +2154,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The primary runner is substantive rather than a constant-printer: it constructs the action-derived transfer matrices, checks the dispersion, verifies single-step non-positivity, builds Gamma(t1^(2)), and checks B^dag B and OS-Gram positivity. The displayed transfer formulas also pass an independent algebraic check. The conditional blocker is scope: the cited gauge-half authority is only an abstract symmetric-involution Cauchy-Schwarz identity and explicitly does not prove the Wilson-plaquette boundary application needed for the full SU(3) Haar RP surface.
 - **open / conditional deps cited:**
   - `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
+
+### `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure-gauge two-time-slice Wilson temporal-gauge bridge for A_+^(2) observables, with claimed exact Z_N/U(1) checks and a numeric SU(2) exhibit.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-114841-7b73c65c26-axiom_first_reflection_posit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The plane Boltzmann weight exp(-S_0) factorizes per straddling link into a character sum with real nonnegative coefficients, so the integrated Gram has the form G = W diag(kappa) W^dag with kappa >= 0.  _(class `A`)_
+- **chain closes:** False — The chain does not close as written because W1 defines S_0 = +beta Re Tr[U_0 U_1^dag] while W2 and section 4 use exp(-S_0); the literal kernel exp(-beta cos theta) has negative character coefficients, so the required positive plane kernel is not established. The runner computes exp(+S_0) instead, so it verifies a sign-repaired convention rather than the displayed source formula.
+- **rationale:** The core bridge requires the reflection-plane Boltzmann kernel to be a positive character Gram kernel. As written, S_0 = +beta Re with exp(-S_0) gives negative Fourier coefficients already for Z_2, where the nontrivial coefficient is (e^{-beta} - e^{beta})/2 < 0. The runner source uses exp(+S_0), not the displayed exp(-S_0), and its U(1) "exact finite-Haar" check uses a finite angular grid on exp(beta cos theta), which is not a bounded-degree trigonometric polynomial. The timeout is not used as scientific evidence; the substantive blockers are the sign/source-runner drift and the overstated exactness of the U(1) finite-grid computation.
 - **auditor confidence:** high
 
 ### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`

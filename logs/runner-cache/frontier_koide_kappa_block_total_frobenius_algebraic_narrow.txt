@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py
-runner_sha256: 3c623146ff46d184649baddd01f34418e8d2b425958fc363ef2e2d561f64ba3e
+runner_sha256: c79461d0cac1857c61cd844fe61c6cd85881f4533f485c5fdecdb23fe1c6d89d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 
@@ -52,10 +52,45 @@ Part 3 (T3): equal-weight Lagrange extremum -> kappa = 2
 ----------------------------------------------------------------------------------------
 Part 4 (T4): d = 3 uniqueness of the (1, (1,), 0) multiplicity pattern
 ----------------------------------------------------------------------------------------
+  [PASS (A)] d=2: k=0 coefficient line is trivial under the dual phase action  (alpha_g(C^0) = C^0)
+  [PASS (A)] d=2: even k=d/2 coefficient line is sign  (alpha_g(C^(d/2)) = -C^(d/2))
+  [PASS (A)] d=2: sign block has order dividing d  ((-1)^d = 1 for even d)
   [PASS (A)] Herm_circ(d=2) multiplicity pattern = (1, (), 1)  (got (1, (), 1))
+  [PASS (A)] d=3: k=0 coefficient line is trivial under the dual phase action  (alpha_g(C^0) = C^0)
+  [PASS (A)] d=3, k=1: doublet generator is the real rotation block  (theta = 2*pi*1/3)
+  [PASS (A)] d=3, k=1: doublet block is orthogonal  (R_k^T R_k = I)
+  [PASS (A)] d=3, k=1: doublet block has determinant 1  (det(R_k) = 1)
+  [PASS (A)] d=3, k=1: doublet block has order dividing d  (R_k^d = I)
   [PASS (A)] Herm_circ(d=3) multiplicity pattern = (1, (1,), 0)  (got (1, (1,), 0))
+  [PASS (A)] d=4: k=0 coefficient line is trivial under the dual phase action  (alpha_g(C^0) = C^0)
+  [PASS (A)] d=4, k=1: doublet generator is the real rotation block  (theta = 2*pi*1/4)
+  [PASS (A)] d=4, k=1: doublet block is orthogonal  (R_k^T R_k = I)
+  [PASS (A)] d=4, k=1: doublet block has determinant 1  (det(R_k) = 1)
+  [PASS (A)] d=4, k=1: doublet block has order dividing d  (R_k^d = I)
+  [PASS (A)] d=4: even k=d/2 coefficient line is sign  (alpha_g(C^(d/2)) = -C^(d/2))
+  [PASS (A)] d=4: sign block has order dividing d  ((-1)^d = 1 for even d)
   [PASS (A)] Herm_circ(d=4) multiplicity pattern = (1, (1,), 1)  (got (1, (1,), 1))
+  [PASS (A)] d=5: k=0 coefficient line is trivial under the dual phase action  (alpha_g(C^0) = C^0)
+  [PASS (A)] d=5, k=1: doublet generator is the real rotation block  (theta = 2*pi*1/5)
+  [PASS (A)] d=5, k=1: doublet block is orthogonal  (R_k^T R_k = I)
+  [PASS (A)] d=5, k=1: doublet block has determinant 1  (det(R_k) = 1)
+  [PASS (A)] d=5, k=1: doublet block has order dividing d  (R_k^d = I)
+  [PASS (A)] d=5, k=2: doublet generator is the real rotation block  (theta = 2*pi*2/5)
+  [PASS (A)] d=5, k=2: doublet block is orthogonal  (R_k^T R_k = I)
+  [PASS (A)] d=5, k=2: doublet block has determinant 1  (det(R_k) = 1)
+  [PASS (A)] d=5, k=2: doublet block has order dividing d  (R_k^d = I)
   [PASS (A)] Herm_circ(d=5) multiplicity pattern = (1, (1, 1), 0)  (got (1, (1, 1), 0))
+  [PASS (A)] d=6: k=0 coefficient line is trivial under the dual phase action  (alpha_g(C^0) = C^0)
+  [PASS (A)] d=6, k=1: doublet generator is the real rotation block  (theta = 2*pi*1/6)
+  [PASS (A)] d=6, k=1: doublet block is orthogonal  (R_k^T R_k = I)
+  [PASS (A)] d=6, k=1: doublet block has determinant 1  (det(R_k) = 1)
+  [PASS (A)] d=6, k=1: doublet block has order dividing d  (R_k^d = I)
+  [PASS (A)] d=6, k=2: doublet generator is the real rotation block  (theta = 2*pi*2/6)
+  [PASS (A)] d=6, k=2: doublet block is orthogonal  (R_k^T R_k = I)
+  [PASS (A)] d=6, k=2: doublet block has determinant 1  (det(R_k) = 1)
+  [PASS (A)] d=6, k=2: doublet block has order dividing d  (R_k^d = I)
+  [PASS (A)] d=6: even k=d/2 coefficient line is sign  (alpha_g(C^(d/2)) = -C^(d/2))
+  [PASS (A)] d=6: sign block has order dividing d  ((-1)^d = 1 for even d)
   [PASS (A)] Herm_circ(d=6) multiplicity pattern = (1, (1, 1), 1)  (got (1, (1, 1), 1))
   [PASS (A)] d = 3 is the unique d in {2, 3, 4, 5, 6} with pattern (1, (1,), 0)  (d's with pattern (1, (1,), 0): [3])
 
@@ -81,7 +116,8 @@ Narrow theorem summary
     (T3)  S = log E_+ + log E_perp at fixed E_+ + E_perp = E_tot is
           extremized uniquely at E_+ = E_perp = E_tot / 2, i.e. a^2 = 2 |b|^2
           (kappa = 2); Hessian is strictly negative-definite there.
-    (T4)  The real-irrep multiplicity pattern (trivial, doublets, sign)
+    (T4)  Under the dual cyclic phase action on coefficient modes, the
+          real-irrep multiplicity pattern (trivial, doublets, sign)
           = (1, (1,), 0) on Herm_circ(d) is uniquely realized at d = 3
           among d in {2, 3, 4, 5, 6}.
 
@@ -101,9 +137,8 @@ Narrow theorem summary
 
 
 ========================================================================================
-  TOTAL: PASS=32, FAIL=0
+  TOTAL: PASS=67, FAIL=0
 ========================================================================================
-PASS=32 FAIL=0
+PASS=67 FAIL=0
 
 ----- stderr -----
-

@@ -8,6 +8,13 @@ the admitted inputs in
 `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` — the
 Lüders rule import for record-conditioning state updates. The Born
 note is a downstream consumer, not an upstream authority for this row.
+The current source packet also includes a native finite-operator
+bridge for the two formerly bare ingredients in Step 1:
+[`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
+with runner
+[`scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py`](../scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py)
+and cache
+[`logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt`](../logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt).
 
 ## Claim
 
@@ -32,6 +39,11 @@ is the **Lüders rule**: for a projection-valued record `P`,
 and more generally, for a Kraus operator `K`,
 
 > `σ → σ|_K = (K σ K†) / Tr(K σ K†)`
+
+The conditional-update domain is explicit: the projection formula is
+claimed only when `Tr(P σ P) > 0`, and the Kraus formula only when
+`Tr(K σ K†) > 0`. Zero-probability conditioning events are excluded
+from this theorem.
 
 If independently retained, this supplies the Lüders-rule input to the
 Born-rule support / repair route under Gleason–Busch on the pre-record
@@ -64,19 +76,21 @@ generalizes to higher rank). Let the second measurement be POVM
 p(P then E_i)  =  p(P) · p(E_i | P)                                      (1)
 ```
 
-Using the standard state/effect trace pairing on the operator algebra
-(the same standard-math probability representation used by the Born
-route):
+Using the state/effect trace pairing on the operator algebra, supplied
+for this finite-dimensional setting by
+[`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md):
 
 ```text
 p(P then E_i)  =  Tr(σ · M_{P, E_i})                                     (2)
 ```
 
 for some effect `M_{P, E_i}` representing the joint "P then E_i"
-outcome. Standard sequential-measurement composition gives
-`M_{P, E_i} = P E_i P` (this is the *standard* sequential-measurement
-combination; it is forced by associativity of the effect algebra
-and the requirement that `M_{P, I} = P` and `M_{I, E_i} = E_i`).
+outcome. The sequential-effect bridge gives
+`M_{P, E_i} = P E_i P` on the finite operator algebra: `P E_i P` is
+a valid effect, has the required boundaries `M_{P,I}=P` and
+`M_{I,E_i}=E_i`, reproduces the Lüders two-step probability, and is
+selected over boundary-satisfying alternatives such as the Jordan
+product by positivity and the two-step probability check.
 
 So
 
@@ -105,7 +119,9 @@ functionals forces
 ```
 
 This is the Lüders rule. (U3) Bayes consistency alone, combined with
-standard sequential-effect composition `M_{P,E} = P E P`, forces (6).
+the bridged finite-operator sequential-effect composition
+`M_{P,E} = P E P`, forces (6) on the positive-probability conditioning
+domain.
 
 ## Step 2 — (U1), (U2) are corollaries
 
@@ -145,53 +161,53 @@ satisfied by the Lüders form derived from (U3).
 
 Any state-update rule `σ → f(σ, P)` satisfying (U1)–(U4) must reproduce
 (6) by the argument in Step 1, since (U3) alone forces (6) up to the
-ambiguity in `M_{P, E}`. The standard sequential-effect composition
-`M_{P, E} = P E P` is the only one consistent with associativity of
-the effect algebra and the boundary conditions `M_{P, I} = P`,
-`M_{I, E} = E`. Therefore Lüders is the unique update rule satisfying
-(U1)–(U4) on the standard effect-algebra structure of `M_2(ℂ)`-based
-operator algebras.
+ambiguity in `M_{P, E}`. The bridge
+[`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+discharges that ambiguity for the finite operator-algebra setting used
+here: it shows `P E P` is a valid effect, reproduces the Lüders
+two-step probability, composes associatively as `(QP)†F(QP)`, and that
+a boundary-satisfying Jordan alternative fails positivity and the
+two-step probability. Therefore Lüders is the unique update rule
+satisfying (U1)–(U4) on the standard finite operator-algebra structure
+of `M_2(C)`-based qubit-lattice regions, within the stated
+positive-probability domain.
 
 ## What this can close after audit
 
-- **The Lüders-import admission** in the Born derivation note
+- **The previous Lüders-import admission** in the Born derivation note
   (`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`
   Step 3 admitted Lüders 1951 / Cassinelli-Lahti 1995 as the standard
-  measurement-update rule; this note derives the bounded replacement
-  from (U1)–(U4) plus the standard sequential-effect composition
-  import). Closure is conditional on independent audit of this row and
-  any later dependency-chain update on the Born note.
+  measurement-update rule). This note derives the bounded replacement
+  from (U1)–(U4), with the trace pairing and `M_{P,E}=PEP`
+  ingredients now supplied by the native bridge. Closure is conditional
+  on independent audit of this row and any later dependency-chain
+  update on the Born note.
 
 ## What this does not close
 
-- **The standard sequential-effect composition `M_{P, E} = P E P`**
-  is still admitted as the canonical operator-algebraic
-  sequential-measurement composition. Alternative compositions (e.g.,
-  "minimal disturbance" rules of Marlow, Wright) would give different
-  update rules but at the cost of associativity in the effect
-  algebra. The argument here treats `M_{P, E} = P E P` as the
-  standard composition; if a reviewer disputes this, an additional
-  derivation tying it to `M_2(ℂ)`-internal operator-product
-  consistency would be needed.
-- **The remaining four admitted inputs of the Born derivation**:
+- **General uniqueness of sequential products on arbitrary effect
+  algebras.** The native bridge proves the finite operator-algebra
+  facts used here and rules out a concrete boundary-satisfying Jordan
+  alternative; it does not reprove the full Gudder-Greechie
+  sequential-product uniqueness theory.
+- **The remaining inputs of the broader Born derivation chain**:
   Gleason 1957, Busch 2003 POVM extension, no-extra-structure
   pre-record identification, and persistent-record → Kraus operator
-  identification. Each is a separate admission. This note addresses
-  only the Lüders input.
+  identification. Each is separate. This note addresses only the
+  Lüders update row.
 
-## Admitted inputs
+## Source dependencies and inputs
 
 1. **(U1)–(U4) as the standard consistency requirements** on
    measurement update rules — these are mainstream-textbook
    foundational conditions (Cassinelli-Lahti 1995, Busch et al. 1995
    *Operational QM*, Heinosaari-Ziman 2012).
-2. **Standard sequential-effect composition** `M_{P, E} = P E P` for
-   the joint "P then E" measurement effect. Standard
-   operator-algebraic composition; required by associativity of the
-   effect algebra.
-3. **State/effect trace-pairing probability representation** on the
-   finite-region operator algebra. This is standard operator-algebraic
-   probability machinery, not supplied by the downstream Born note.
+2. **Finite operator-algebra bridge for `M_{P,E}=PEP` and trace/effect
+   pairing** —
+   [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
+   with runner/cache linked above.
+3. **Positive-probability conditioning domain** — `Tr(PσP)>0` for
+   projection conditioning and `Tr(KσK†)>0` for Kraus conditioning.
 
 ## Risk classification
 
@@ -206,8 +222,14 @@ lattice algebra.
 **Upstream framework dependencies** (load-bearing; markdown links so the citation graph records them as deps):
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra and `Z^3` substrate)
+- [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) — finite operator-algebra bridge for `M_{P,E}=PEP`, trace/effect pairing, valid-effect bounds, and the Jordan-product guard
 
-**Upstream standard-math imports** (named non-derivation; not framework rows):
+**Runner/cache evidence** (load-bearing for the native bridge):
+
+- [`scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py`](../scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py)
+- [`logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt`](../logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt)
+
+**Parallel standard-math comparators** (not the only source route):
 
 - Cassinelli-Lahti 1995 *Found. Phys.* 25, 1395 — Lüders rule from (U1)–(U4)
 - Busch-Lahti-Mittelstaedt 1995 *Operational Quantum Physics* — effect-algebra consistency conditions
@@ -223,8 +245,10 @@ lattice algebra.
 ## What this file is not
 
 - Not a derivation of Gleason–Busch from A1+A2.
-- Not a derivation of the standard sequential-effect composition (admitted).
+- Not a general uniqueness theorem for all sequential products on all
+  effect algebras; the finite operator-algebra `PEP` bridge used here
+  is supplied separately and linked above.
 - Not a numerical-prediction change.
 - Not a unilateral retagging of the Born note. The bounded-theorem
   candidacy depends on independent audit acceptance of the (U1)–(U4)
-  framing and the sequential-effect composition import.
+  framing and the linked sequential-effect/trace bridge.

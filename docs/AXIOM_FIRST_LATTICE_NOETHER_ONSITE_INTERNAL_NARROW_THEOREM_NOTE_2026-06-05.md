@@ -9,6 +9,9 @@ after independent review. The `bounded_theorem` label is a source-side
 claim-boundary declaration, not an audit verdict.
 **Primary runner:**
 [`scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py`](../scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py)
+with cache
+[`logs/runner-cache/audit_companion_lattice_noether_onsite_internal_2026_06_05.txt`](../logs/runner-cache/audit_companion_lattice_noether_onsite_internal_2026_06_05.txt)
+(`TOTAL: 14 PASS / 0 FAIL`).
 
 ## Purpose
 
@@ -38,10 +41,15 @@ bounded theorem suitable for independent re-audit.
 > `t`, so `T` commutes with every lattice shift `S^{(a)}` and with the symmetry
 > condition `[T, M] = 0`. Then:
 >
-> - **(P1) Local current.** The associated conserved Noether current is a
->   **local nearest-neighbour bond current** (no site-mixing tail). For the
->   global U(1)/number generator `t = i` on the staggered carrier it is, with
->   the sign fixed below,
+> - **(P1) Support-envelope current.** For an arbitrary number-conserving
+>   bilinear, the global U(1)/number current has exactly the support envelope of
+>   the Hamiltonian coefficients: the bond current between `p` and `q` uses only
+>   `c_pq` and `c_qp`, and vanishes when both coefficients vanish. Thus an
+>   all-to-all bilinear has an all-to-all current envelope; a finite-range
+>   bilinear has a finite-range current envelope; and the admitted staggered
+>   nearest-neighbour carrier has a nearest-neighbour bond current. On that
+>   staggered carrier the physical Hermitian outflow current is, with the sign
+>   fixed below,
 >
 >   ```text
 >       j^mu_x  =  -(1/2) eta_mu(x) [ chibar_x chi_{x+mu} + chibar_{x+mu} chi_x ].   (4*)
@@ -66,7 +74,8 @@ bounded theorem suitable for independent re-audit.
 >   argument of (P1) does not apply to them.
 
 This narrows the parent's general lattice Noether identity (parent (N3),
-arbitrary `T^A`) to the onsite/internal case, where the current is local, and
+arbitrary `T^A`) to the onsite/internal case, where the current support is
+controlled by the Hamiltonian support envelope, and
 replaces the parent's convention-set U(1) sign (parent formula (4), fixed in the
 parent's Step 4a by an ad-hoc `-i times imaginary-generator` rule) by a
 sign **derived** from the continuity equation. The corrected formula (4*) has
@@ -87,12 +96,16 @@ now forced rather than conventional.
   the ground-state divergence vanishes for either sign; only the dynamical
   continuity equation `(C)` against the time-derivative of `rho_x` selects the
   sign (Part C3/C3b).
-- The locality of the current is a property of **onsite/internal** generators
-  only. For a site-mixing generator the variation `delta chi_x` reaches beyond
-  nearest neighbours and the current need not be local; this note does **not**
-  claim a local current for that case. The two-site translation case is left as
-  a named open item (Part D), consistent with the parent's own Step 4b/Step 5
-  treatment of the staggered shift.
+- The current support is not automatically nearest-neighbour for an arbitrary
+  bilinear. What closes generally is the **support envelope**: the U(1) current
+  has support only where `c_pq` or `c_qp` is nonzero. Nearest-neighbour locality
+  is claimed only for the admitted staggered nearest-neighbour carrier, or more
+  generally finite-range locality for finite-range coefficient support. For a
+  site-mixing generator the variation `delta chi_x` reaches beyond nearest
+  neighbours and this note does **not** claim a local current for that branch.
+  The two-site translation case is left as a named open item (Part D),
+  consistent with the parent's own Step 4b/Step 5 treatment of the staggered
+  shift.
 - This note does not derive the admitted staggered/Grassmann carrier, the
   Kawamoto-Smit phase form, or anomaly cancellation. Those remain the same
   admitted/open items the parent already carries.
@@ -135,6 +148,10 @@ runner (Part A) verifies symbolically:
   sign-fixed continuity equation `d rho_p/dt = -(div^L j)_p` holds for arbitrary
   `c_{ij}`.
 - **(A4)** Summing over sites, `sum_p d rho_p/dt = i[H, Q] = 0`, so `dQ/dt = 0`.
+- **(A5)** The support envelope is exact: the pair current on `{p,q}` contains
+  only `c_pq` and `c_qp`, so it vanishes when both coefficients vanish. This is
+  the locality theorem for the arbitrary-bilinear surface: support is inherited
+  from the Hamiltonian, not upgraded to nearest-neighbour by Noether alone.
 
 This is the arbitrary-bilinear symbolic check the audit asked for, replacing the
 parent's `E5` (which verified `(5) -> (4)` only numerically on one small free
@@ -150,7 +167,7 @@ shift `S^{(a)}`. The runner (Part B) verifies:
   (`[T_onsite, S^{(1)}] = 0`);
 - **(B2)** under the onsite U(1) generator `t = i`, the local-`alpha` variation
   of the staggered action reproduces, **exactly and symbolically**, the
-  bilateral nearest-neighbour current as the coefficient of the forward
+  anti-Hermitian variational nearest-neighbour current as the coefficient of the forward
   difference `(alpha_{x+mu} - alpha_x)`:
 
   ```text
@@ -159,9 +176,11 @@ shift `S^{(a)}`. The runner (Part B) verifies:
                                       + chibar_{x+mu} (t) chi_x ].
   ```
 
-The current is manifestly **local** (supported on the bond `x, x+mu`). This is
-the clean case promised by the claim: site-locality of the generator forces
-site-locality of the current.
+With `t=i`, this variational coefficient is imaginary. The physical Hermitian
+number-current entering the continuity equation is `J_num = i j_var`, giving
+formula (4*) with the `-1/2` prefactor. The current is manifestly **local**
+(supported on the bond `x, x+mu`). This is the clean nearest-neighbour
+specialization of the support-envelope theorem.
 
 ## 4. Sign fixed by the continuity equation (staggered exhibit)
 

@@ -3,8 +3,8 @@
 H_unit Scalar-Singlet Matrix Element Core Verifier: y_t_bare = g_bare/sqrt(6)
 ================================================================================
 
-Independently reconstructs every load-bearing coefficient of the support /
-open-gate note YT_WARD_IDENTITY_DERIVATION_THEOREM.md via direct computation.
+Independently reconstructs every load-bearing coefficient of the bounded-support
+note YT_WARD_IDENTITY_DERIVATION_THEOREM.md via direct computation.
 No hard-coded physical y_t/g_s bridge assumptions appear in the load-bearing
 checks; every core pass is an arithmetic check of a computed quantity against
 a predicted value.
@@ -509,7 +509,7 @@ NNLO_correction = (ALPHA_LM / PI) ** 2 * C_F ** 2
 log(f"  NLO correction to y_t/g_s: alpha_LM * C_F / (2 pi) = {NLO_correction_ratio*100:.3f}%")
 log(f"  NNLO: (alpha_LM/pi)^2 * C_F^2 = {NNLO_correction*100:.4f}%")
 
-# Framework's existing Yukawa-lane systematic (MINIMAL_AXIOMS:68)
+# Historical Yukawa-lane systematic context; not part of the core claim.
 lane_systematic = 0.03
 
 check(
@@ -677,7 +677,7 @@ log("  The support note makes NO quantitative precision claim.")
 log("  It states only the exact same-1PI-function residue identity")
 log("  on the scalar-singlet channel:")
 log()
-log("    A1 (one-qubit/physical-Cl(3)) + A2 (Z^3) + D1-D17 + S1 + S2 ->")
+log("    Quantum + Lattice + registered C1/C2 + D1-D17 + S1 + S2 ->")
 log()
 log("    [Representation A — OGE-side computation, this Block 10]")
 log("       Color singlet Fierz: -1/(2 N_c) [D12, Block 4]")

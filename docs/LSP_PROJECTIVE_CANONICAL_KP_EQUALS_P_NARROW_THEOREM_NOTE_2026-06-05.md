@@ -37,9 +37,13 @@ finite-region carrier supplied by the framework axioms):
 
 > **Theorem (canonical `K_P = P` under restricted Step-3 scope).**
 > Let `{P_r}` be orthogonal projections on a finite-dimensional `H_sys = H_Λ`
-> with `P_r P_{r'} = δ_{rr'} P_r`, `P_r† = P_r`, and `Σ_r P_r = 𝟙_sys`. Let
-> `U_int` be the canonical Naimark isometry of §1 with apparatus prepared in a
-> fixed unit vector `|0⟩_A` and read out in the outcome basis `{|r⟩_A}`. Then:
+> with `P_r P_{r'} = δ_{rr'} P_r`, `P_r† = P_r`, `Σ_r P_r = 𝟙_sys`, and
+> `P_r ≠ 0` for every displayed outcome label. Formal zero-effect labels are
+> discarded from the physical outcome list; if they are kept as bookkeeping
+> labels, the necessity clause below applies only to rows mixing into a
+> distinct nonzero sector. Let `U_int` be the canonical Naimark isometry of §1
+> with apparatus prepared in a fixed unit vector `|0⟩_A` and read out in the
+> outcome basis `{|r⟩_A}`. Then:
 >
 > - **(Canonical frame, `V_A = 𝟙_A`, `U_sys = 𝟙_sys`).** The outcome-`r` Kraus
 >   operator is exactly
@@ -56,16 +60,22 @@ finite-region carrier supplied by the framework axioms):
 >   permutation for the phase case), i.e. the canonical instrument is preserved
 >   up to the physically irrelevant outcome relabeling `r ↦ π(r)` and per-Kraus
 >   global phases; `K_r = e^{iφ_r} P_r` in the phase case.
-> - **(Restriction is necessary — general `V_A` breaks `K_P = P`.)** For a
->   general apparatus unitary `V_A` that mixes outcome labels (some
+> - **(Restriction is necessary — general `V_A` breaks `K_P = P` on nonzero
+>   outcome sectors.)** For a general apparatus unitary `V_A` whose row for a
+>   nonzero outcome `r` mixes weight into any distinct nonzero outcome sector
+>   `s ≠ r` (equivalently, after zero labels are discarded, some
 >   `⟨r|V_A|s⟩ ≠ 0` for `r ≠ s`), with `U_sys = 𝟙_sys`,
 >   ```text
 >   K_r  =  Σ_s ⟨r|V_A|s⟩ · P_s,    K_r† K_r  =  Σ_s |⟨r|V_A|s⟩|² P_s  ≠  P_r,
 >   ```
 >   so `(U_sys ⊗ V_A)·U_int` is **not** a dilation of the same projective
->   measurement `{P_r}`. The general `V_A` twist is therefore a **non-canonical
->   apparatus-frame convention choice**, scoped out of the canonical theorem and
->   named as an open convention item, not part of the `K_P = P` result.
+>   measurement `{P_r}` on those nonzero sectors. The general `V_A` twist is
+>   therefore a **non-canonical apparatus-frame convention choice**, scoped out
+>   of the canonical theorem and named as an open convention item, not part of
+>   the `K_P = P` result. The only exception is a pure bookkeeping edge case:
+>   mixing solely among formal zero projectors leaves all nonzero POVM elements
+>   unchanged, which is why zero labels are excluded from the displayed outcome
+>   list.
 
 The narrow contribution is the **scope restriction** that the auditor's
 `scope_too_broad` repair note asked for: restrict Step 3 to `V_A = 𝟙_A`,
@@ -206,10 +216,11 @@ and the canonical Kraus selection is preserved (exactly, or up to outcome
 relabeling and global phase). This is the sufficiency direction of the scope
 restriction.
 
-## 3. General `V_A` breaks `K_P = P` (necessity)
+## 3. General `V_A` breaks `K_P = P` on nonzero sectors (necessity)
 
 If `V_A` is a general apparatus unitary that **mixes** outcome labels — i.e.
-`⟨r|V_A|s⟩ ≠ 0` for some `r ≠ s` — then with `U_sys = 𝟙_sys`, (tw) gives
+for a displayed nonzero outcome `r`, the row `⟨r|V_A|·⟩` has nonzero weight on
+some distinct nonzero outcome `s ≠ r` — then with `U_sys = 𝟙_sys`, (tw) gives
 
 ```text
 K_r  =  Σ_s ⟨r|V_A|s⟩ · P_s,
@@ -219,11 +230,24 @@ K_r† K_r  =  Σ_{s,s'} \overline{⟨r|V_A|s⟩} ⟨r|V_A|s'⟩ · P_s P_{s'}
 
 This is a **convex combination** of the projectors `{P_s}` with weights
 `w_{rs} := |⟨r|V_A|s⟩|² ≥ 0`, `Σ_s w_{rs} = 1` (the `r`-th row of the doubly
-stochastic matrix `|V_A|²` is a probability vector). It equals `P_r` only in the
-degenerate case `w_{rs} = δ_{rs}`, i.e. `V_A` does **not** mix outcome labels.
-Whenever `V_A` genuinely mixes, `K_r† K_r ≠ P_r`: the first-outcome POVM element
-is a nontrivial mixture, so `(U_sys ⊗ V_A)·U_int` is **not** a dilation of the
-projective measurement `{P_r}`.
+stochastic matrix `|V_A|²` is a probability vector). On the convention that
+displayed outcome labels have `P_s ≠ 0`, the mutually orthogonal nonzero
+projectors are linearly independent: applying the equality to a vector in
+`ran(P_s)` forces the coefficient of each distinct `P_s` to vanish, and applying
+it to a vector in `ran(P_r)` forces the coefficient of `P_r` to be one.
+Therefore the mixture equals `P_r` only in the degenerate case
+`w_{rs} = δ_{rs}`, i.e. `V_A` does **not** mix nonzero outcome labels. Whenever
+`V_A` genuinely mixes a nonzero outcome row into a distinct nonzero sector,
+`K_r† K_r ≠ P_r`: the first-outcome POVM element is a nontrivial mixture, so
+`(U_sys ⊗ V_A)·U_int` is **not** a dilation of the projective measurement
+`{P_r}` on those sectors.
+
+If a bookkeeping list keeps formal zero projectors, the exact statement is the
+weakened one above: a row is forced to break precisely when its weight vector has
+positive weight on a nonzero projector different from the target nonzero
+projector, or when the target is nonzero and its own weight is less than one.
+Mixing solely among labels whose projectors are all zero does not change the
+POVM and is not claimed to break `K_P=P`.
 
 This is exactly the over-broad point in the source note's original Step 3 ("this
 is still a valid dilation of the same first-outcome POVM" for arbitrary `V_A`):
@@ -231,9 +255,11 @@ the assertion is false for label-mixing `V_A`. The general-`V_A` twist is a
 distinct measurement (a smeared/coarse-grained POVM), not the canonical
 projective one, and is therefore scoped out of the `K_P = P` theorem and named
 as an open convention item (§5). The runner exhibits an explicit Haar-random
-mixing `V_A` for which `K_r† K_r ≠ P_r` and verifies it equals the mixture
-`Σ_s |⟨r|V_A|s⟩|² P_s` of (mix), and contrasts it with the phase/permutation
-cases of §2 where equality (up to relabeling) is restored.
+mixing `V_A` for which `K_r† K_r ≠ P_r` on nonzero sectors and verifies it
+equals the mixture `Σ_s |⟨r|V_A|s⟩|² P_s` of (mix), contrasts it with the
+phase/permutation cases of §2 where equality (up to relabeling) is restored,
+and includes a zero-projector edge-case check showing why the displayed theorem
+uses the nonzero-outcome convention.
 
 ## 4. Why this is a tightening, not a new claim
 
@@ -245,7 +271,7 @@ first-outcome POVM is replaced by the precise dichotomy
 
 - **preserved** (exactly, or up to outcome relabeling/global phase) under
   `V_A = 𝟙_A` / outcome-label phase / outcome-label permutation, and
-- **broken** under any label-mixing `V_A`,
+- **broken** under any label-mixing `V_A` on nonzero outcome sectors,
 
 with the latter named as a non-canonical convention choice. The canonical
 `K_P = P` theorem is thereby stated on a scope on which it is true, which is
@@ -271,10 +297,14 @@ printing `[PASS]`/`[FAIL]` per check and a final `TOTAL: N PASS / 0 FAIL`:
 - **Part D (sufficiency of the restriction).** `V_A = 𝟙_A` (`K_r = P_r`);
   outcome-label phase `V_A` (`K_r = e^{iφ_r} P_r`, `K_r† K_r = P_r`);
   outcome-label permutation `V_A` (`K_r† K_r = P_{π^{-1}(r)}`, a relabeling).
-- **Part E (necessity — general `V_A` breaks it).** An explicit label-mixing
-  unitary `V_A` (a fixed symbolic rotation and Haar-random numerical samples)
-  gives `K_r† K_r ≠ P_r`, and equals the mixture `Σ_s |⟨r|V_A|s⟩|² P_s` of (mix);
-  the weight rows form a probability vector (doubly stochastic `|V_A|²`).
+- **Part E (necessity — general `V_A` breaks it on nonzero sectors).** An
+  explicit label-mixing unitary `V_A` (a fixed symbolic rotation and
+  Haar-random numerical samples) gives `K_r† K_r ≠ P_r` on nonzero outcome
+  sectors, and equals the mixture `Σ_s |⟨r|V_A|s⟩|² P_s` of (mix); the weight
+  rows form a probability vector (doubly stochastic `|V_A|²`). A separate
+  zero-projector edge-case check shows that mixing solely among formal zero
+  labels leaves the nonzero POVM elements unchanged, while mixing a nonzero
+  sector with another nonzero sector breaks.
 - **Part F (source-note boundary strings).** Verifies this note carries the
   status-authority and scope-restriction language and avoids forbidden
   status/verdict prefills.
@@ -305,9 +335,9 @@ This note is deliberately narrow. It does **not**:
 **Status:** PASS for the restricted-scope canonical claim only. The claim is
 "`K_P = P` holds in the canonical Naimark/Lüders frame restricted to
 `V_A = 𝟙_A` / outcome-label phase / outcome-label permutation apparatus
-unitaries, and fails for label-mixing `V_A`," not "`K_P = P` is the unique
-instrument for the POVM" and not "general apparatus twists preserve the
-measurement."
+unitaries, and fails for label-mixing `V_A` on nonzero outcome sectors," not
+"`K_P = P` is the unique instrument for the POVM" and not "general apparatus
+twists preserve the measurement."
 
 ### N1 — Alternative route enumeration
 
@@ -315,7 +345,7 @@ measurement."
 |---|---|---|---|
 | Canonical-frame route | Extract `K_r` from the canonical isometry (dil). | Gives `K_r = P_r` exactly by the (kr)→(KP) contraction. | ATTEMPTED |
 | Phase/permutation apparatus route | Twist the readout register only by a phase or permutation. | Preserves `K_P = P` up to per-Kraus phase / outcome relabeling. | ATTEMPTED |
-| General-`V_A` route | Claim any apparatus unitary preserves the first-outcome POVM. | Ruled out: label-mixing gives `K_r† K_r = Σ_s |⟨r|V_A|s⟩|² P_s ≠ P_r`. | RULED OUT |
+| General-`V_A` route | Claim any apparatus unitary preserves the first-outcome POVM. | Ruled out on nonzero outcome sectors: label-mixing gives `K_r† K_r = Σ_s |⟨r|V_A|s⟩|² P_s ≠ P_r`. | RULED OUT |
 | System post-rotation route | Insert `U_sys ≠ 𝟙` after measurement. | Keeps the first-outcome POVM but changes later statistics unless `E` is co-rotated; excluded by the canonical no-extra-unitary convention. | ATTEMPTED |
 | Instrument-uniqueness route | Prove `K_P = P` is the *only* instrument for the POVM. | Not attempted; Gudder non-uniqueness stands. Out of scope. | OUT OF SCOPE |
 
@@ -330,17 +360,19 @@ isometry-extension fact.
 ### N3 — Hidden-wall scan
 
 Hidden premises are made explicit: orthogonality/completeness of `{P_r}` (proj);
-fixed apparatus preparation `|0⟩_A` and outcome-basis readout `{|r⟩_A}`; the
-finite-dimensional isometry-extension fact; and the restriction that `V_A`
-relabels/phases the outcome register only. The convention "no extra
-post-measurement system unitary `U_sys`" is stated, not hidden.
+the nonzero-outcome convention `P_r ≠ 0` for displayed labels (zero labels are
+bookkeeping-only and may be discarded); fixed apparatus preparation `|0⟩_A` and
+outcome-basis readout `{|r⟩_A}`; the finite-dimensional isometry-extension fact;
+and the restriction that `V_A` relabels/phases the outcome register only. The
+convention "no extra post-measurement system unitary `U_sys`" is stated, not
+hidden.
 
 ### N4 — Residual matching
 
 | cited witness | residual it attacks | residual here | match? |
 |---|---|---|---|
 | canonical isometry (dil)+(kr) | what the outcome Kraus operator is | `K_r = P_r` in canonical frame | yes |
-| auditor mixing formula (mix) | whether general `V_A` preserves the POVM | `K_r† K_r = Σ_s|⟨r|V_A|s⟩|² P_s ≠ P_r` | yes |
+| auditor mixing formula (mix) | whether general `V_A` preserves the POVM | `K_r† K_r = Σ_s|⟨r|V_A|s⟩|² P_s ≠ P_r` on nonzero outcome sectors | yes |
 | Lüders state update (comparator) | post-measurement state form | `P_r σ P_r / Tr(·)` consistent with `K_r = P_r` | yes (context) |
 | Gudder non-uniqueness | uniqueness of the instrument for a POVM | not claimed | n/a (out of scope) |
 
@@ -418,12 +450,13 @@ clause).
 
 **Hypothesis set used:** (1) the finite qubit-lattice region carrier `H_Λ` is
 finite-dimensional (axiom premise); (2) `{P_r}` are orthogonal projections on
-`H_Λ` with `Σ_r P_r = 𝟙` (projective-measurement definition); (3) the apparatus
-is prepared in a fixed unit vector `|0⟩_A` and read out in the outcome basis
-`{|r⟩_A}` (canonical Naimark/Lüders frame); (4) the apparatus twist `V_A` is
-restricted to outcome-label phase or permutation (the scope restriction); (5) the
-elementary finite-dimensional isometry-extension fact (standard math). The
-general label-mixing `V_A` is treated as a named open convention item, not a
+`H_Λ` with `Σ_r P_r = 𝟙` and `P_r ≠ 0` for displayed outcome labels
+(projective-measurement definition with zero labels discarded); (3) the
+apparatus is prepared in a fixed unit vector `|0⟩_A` and read out in the outcome
+basis `{|r⟩_A}` (canonical Naimark/Lüders frame); (4) the apparatus twist `V_A`
+is restricted to outcome-label phase or permutation (the scope restriction);
+(5) the elementary finite-dimensional isometry-extension fact (standard math).
+The general label-mixing `V_A` is treated as a named open convention item, not a
 hypothesis of the theorem.
 
 **Forbidden-imports check:** this note introduces **no** new axiom, primitive,

@@ -1,4 +1,4 @@
-# Koide APS C₃ Fixed-Locus (1,2) Weights Bridge — Narrow Bounded Theorem Note
+# Koide APS C₃ Fixed-Locus (1,2) Weights And Local Density — Narrow Bounded Theorem Note
 
 **Date:** 2026-06-05
 **Claim type:** bounded_theorem
@@ -9,7 +9,7 @@ pipeline after independent review. The `bounded_theorem` label is a source-side
 claim-boundary declaration, not an audit verdict.
 **Primary runner:**
 [`scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py`](../scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py)
-— **24 PASS / 0 FAIL** (exact `sympy` / `numpy`).
+— **25 PASS / 0 FAIL** (exact `sympy` / `numpy`).
 
 ## 0. Honest framing up front — what this note does and does not supply
 
@@ -20,23 +20,23 @@ repair instruction:
 > *missing_bridge_theorem: add or audit a retained theorem for the `Cl(3)/Z³ →
 > PL S³ × ℝ` route, including C₃ fixed-locus weights and ABSS applicability.*
 
-That instruction bundles **three** logically separable sub-parts. This note
-discharges only the two that can be **reproven from primitives + already-landed
-retained-grade results**, and it records the third — the hard global geometry —
-as a **named open bridge (a live route, not a no-go)**. This is the path-(b)
-narrowing the parent note itself anticipated.
+That instruction bundles logically separable sub-parts. This row is now scoped
+only to the closed A/B subchain: the C₃ fixed-locus structure, forced transverse
+weights `(1,2)`, and local density `2/9`. The local/global ABSS material is
+retained below only as boundary context and future-route diagnostics, not as an
+audited claim of this row. This is the path-(b) narrowing the audit allowed.
 
-| sub-part | this note | basis |
+| sub-part | this row's claim status | basis |
 |---|---|---|
-| **(1) C₃ fixed-locus structure + (1,2) transverse weights** | **SUPPLIED** (reproven) | C₃[111] = cyclic axis permutation; eigenstructure |
-| **(2) (1,2) is FORCED → local density 2/9** | **SUPPLIED** (reproven + tied to landed result) | unique trace-free pair; `L₃(1,2)=2/9` |
-| **(3a) LOCAL ABSS prerequisites at the fixed locus** | **SUPPLIED** (reproven), conditional on the ambient being PL S³ × ℝ | Morse-Bott, spin on S³, SU(2) lift, local PL smoothing |
-| **(3b) GLOBAL identification `Cl(3)/Z³ → PL S³ × ℝ`** | **NOT supplied — named OPEN bridge** | provably needs PL Poincaré / Moise / van Kampen |
+| **(1) C₃ fixed-locus structure + (1,2) transverse weights** | **CLAIMED / SUPPLIED** (reproven) | C₃[111] = cyclic axis permutation; eigenstructure |
+| **(2) (1,2) is FORCED → local density 2/9** | **CLAIMED / SUPPLIED** (reproven + tied to landed result) | unique trace-free pair; `L₃(1,2)=2/9` |
+| **(3a) LOCAL ABSS prerequisites at the fixed locus** | **NOT CLAIMED** in this row; boundary diagnostic only | conditional on ambient PL S³ × ℝ |
+| **(3b) GLOBAL identification `Cl(3)/Z³ → PL S³ × ℝ`** | **NOT CLAIMED** in this row; named open bridge | provably needs PL Poincaré / Moise / van Kampen |
 
-This note therefore does **not** close the parent row. It converts two of the
-three stipulated inputs of the parent's conditional certificate into reproven,
-landed-backed content, and it sharpens the residual to exactly one named open
-geometric bridge.
+This note therefore does **not** close the parent row and does **not** claim
+local/global ABSS applicability. It converts the fixed-locus weight and local
+density subchain into a closed, reproven, landed-backed bounded theorem, while
+leaving the global geometry as a named open bridge.
 
 ## 1. Claim (narrowed)
 
@@ -59,25 +59,12 @@ geometric bridge.
 >   `L₃(1,2) = 2/9` exactly (vs `L₃(1,1) = L₃(2,2) = 1/9`), via the core identity
 >   `(ω − 1)(ω² − 1) = 3`. This is the **same forced-weight / local-density
 >   arithmetic already landed** at retained-bounded grade.
-> - **(C) The LOCAL ABSS prerequisites hold** at the fixed locus, **given** the
->   ambient is `PL S³ × ℝ`: the transverse (normal) action is Morse-Bott
->   non-degenerate (`det(R_normal − I) = 3 ≠ 0`); `S³ = SU(2)` is parallelizable
->   so `w₂ = 0` and a spin structure exists and is unique
->   (`H¹(S³ × ℝ; ℤ₂) = 0`); the SO(3) C₃ generator lifts to a unit quaternion
->   `q ∈ SU(2)` with `q³ = −1` (the 2:1 cover); and `πᵢ(PL/O) = 0` for `i ≤ 4`
->   (local PL smoothability).
-> - **(D) The GLOBAL identification `Cl(3)/Z³ → PL S³ × ℝ` is OPEN.** It is a
->   named live bridge, not a no-go: it provably needs the PL Poincaré conjecture
->   (Perelman), TOP/PL equivalence in dimension 3 (Moise), and van Kampen
->   `π₁ = 0` on the framework surface — none of which is carried as a retained
->   handle. The Euler characteristic, the only invariant the finite-radius
->   cone-cap certificates control, **cannot** close it (`χ = 0` for every closed
->   orientable 3-manifold, so it does not distinguish `S³` from a lens space or
->   `S¹ × S²`).
 
 Atiyah-Patodi-Singer (APS) and Atiyah-Bott-Shapiro / Atiyah-Bott-Segal-Singer
 equivariant fixed-point theory are cited as external **comparators**; every
-load-bearing arithmetic fact (A)–(D) above is reproven in the companion runner.
+load-bearing arithmetic fact in (A)–(B) is reproven in the companion runner.
+The runner also emits boundary diagnostics for local/global ABSS scope; those
+diagnostics are not part of this row's narrowed claim.
 
 ## 2. Part A — fixed-locus structure is forced (reproven)
 
@@ -153,10 +140,12 @@ single-summand readout** — that the charged-lepton asymmetry reads one
 fixed-point density rather than the vanishing global invariant — remains a
 separate named open bridge. This note does not touch that readout.
 
-## 4. Part C — LOCAL ABSS prerequisites hold (reproven), conditional on PL S³ × ℝ
+## 4. Boundary diagnostic C — local ABSS prerequisites (not claimed), conditional on PL S³ × ℝ
 
-The runner reproves the prerequisites the equivariant fixed-point formula needs
-**at** the fixed locus, **given** the ambient is `PL S³ × ℝ`:
+This section is retained as a **non-claim boundary diagnostic**. The runner
+reproves the prerequisites the equivariant fixed-point formula needs **at** the
+fixed locus, **given** the ambient is `PL S³ × ℝ`, but this row no longer asks
+audit to treat local ABSS applicability as part of its claim:
 
 - **C1.** Morse-Bott non-degeneracy: `det(R_normal − I) = (ω − 1)(ω² − 1) = 3 ≠ 0`,
   so the transverse fixed point is isolated and non-degenerate;
@@ -174,19 +163,19 @@ The runner reproves the prerequisites the equivariant fixed-point formula needs
   compactification *is* `PL S³ × ℝ`; that is Part D.
 
 These local checks correspond to blocks (h1)–(h5) of the parent note's runner;
-reproducing them here is bookkeeping that the *local* applicability is genuine.
+reproducing them here is bookkeeping for future bridge work only.
 The retained operator-algebraic Wilson/APS surface
 [`KOIDE_RETAINED_WILSON_APS_SCALAR_ACTION_ON_RANK_TWO_MULTIPLICITY_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](KOIDE_RETAINED_WILSON_APS_SCALAR_ACTION_ON_RANK_TWO_MULTIPLICITY_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
 is cited as context for the rank-two `ζ`-character multiplicity structure on
 which APS-type spectral data live; it is not load-bearing for the weight
 arithmetic here.
 
-## 5. Part D — the GLOBAL identification is a named OPEN bridge (not a no-go)
+## 5. Boundary diagnostic D — the global identification is a named open bridge
 
-The one sub-part this note **cannot** supply is the global geometric
-identification `Cl(3)/Z³ → PL S³ × ℝ`. The runner reproves, as executable scope,
-both what the finite-radius certificates *do* establish and why they *cannot*
-close the global statement:
+The global geometric identification `Cl(3)/Z³ → PL S³ × ℝ` is **not part of the
+narrowed claim**. It remains a named future bridge. The runner reproves, as
+executable scope, both what the finite-radius certificates *do* establish and
+why they *cannot* close the global statement:
 
 - **D1 / D1b.** the finite cone-cap construction gives a `χ = 2` boundary
   (a 2-sphere) capped to a `χ = 1` contractible solid (reproven from `V − E + F`
@@ -217,31 +206,25 @@ parent row ("the one-hop cone-cap authorities do not establish the
 
 ## 6. The narrowed re-audit case
 
-**What the auditor is asked to evaluate** is the narrowed statement of §1, whose
-content is fully executable (`24 PASS / 0 FAIL`):
+**What the auditor is asked to evaluate** is the A/B statement of §1
+(`25 PASS / 0 FAIL`, with C/D labelled as non-claim diagnostics):
 
 1. **(A) + (B)** the C₃[111] fixed-locus structure forces `p = 3` and the
    transverse weights `(1,2)`, the **unique trace-free pair**, giving the local
    Lefschetz density `2/9` — the **same retained-bounded landed arithmetic** of
-   the two flavor notes, here re-derived from the cyclic-permutation spectrum;
-2. **(C)** the **local** ABSS prerequisites (Morse-Bott, spin, SU(2) lift, local
-   PL smoothing) hold, conditional on the ambient being `PL S³ × ℝ`;
-3. **(D)** the **global** `Cl(3)/Z³ → PL S³ × ℝ` identification is sharpened to a
-   single named **open** bridge (a live route via Perelman/Moise/van Kampen), and
-   the Euler-characteristic obstruction shows finite-R combinatorics cannot close
-   it.
+   the two flavor notes, here re-derived from the cyclic-permutation spectrum.
 
-So two of the three sub-parts of the parent's `missing_bridge_theorem` repair —
-the **C₃ fixed-locus weights** and the **local ABSS applicability** — are
-discharged here by re-derivation + landed retained-grade results, and the third
-(the **global PL route**) is recorded as the precise remaining open bridge. This
-note makes the re-audit case for the **narrowed** statement only; it does not
-request promotion of the parent row.
+Sections 4 and 5 are boundary diagnostics only. They should not be included in
+the row's audited claim scope. This note makes the re-audit case for the
+**narrowed fixed-locus/local-density statement only**; it does not request
+promotion of the parent row or closure of any ABSS/global-PL route.
 
 ## 7. What this note does NOT claim
 
 - It does **not** close the parent row
   `KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21`, and does not retag it.
+- It does **not** claim local ABSS applicability as part of this row's audited
+  theorem. The local ABSS checks are boundary diagnostics for future bridge work.
 - It does **not** supply the global `Cl(3)/Z³ → PL S³ × ℝ` identification, the
   global ABSS bridge, or the PL Poincaré / Moise / van Kampen authorities on the
   framework surface; those remain a named open bridge.

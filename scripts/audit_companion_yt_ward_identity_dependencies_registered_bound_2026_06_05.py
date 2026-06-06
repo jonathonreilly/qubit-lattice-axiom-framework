@@ -450,14 +450,14 @@ check(
     f"Dep 2 basis '{DEP2_BASIS}' is retained-grade in the ledger",
     DEP2_BASIS in rows
     and rows[DEP2_BASIS].get("effective_status") in RETAINED_GRADES,
-    f"effective_status = {rows.get(DEP2_BASIS, {}).get('effective_status')}",
+    f"ledger_effective_status:{rows.get(DEP2_BASIS, {}).get('effective_status')}",
 )
 check(
     f"g_bare=1 convention '{GBARE_CONVENTION}' is registered (Tier-A conventions) and retained-grade",
     GBARE_CONVENTION in conventions
     and rows.get(GBARE_CONVENTION, {}).get("effective_status") in RETAINED_GRADES,
     f"in conventions={GBARE_CONVENTION in conventions}, "
-    f"effective_status={rows.get(GBARE_CONVENTION, {}).get('effective_status')}",
+    f"ledger_effective_status:{rows.get(GBARE_CONVENTION, {}).get('effective_status')}",
 )
 # Honesty: the parent target row is itself conditional -> must be backticked,
 # never linked, by the citing note.  Verify it is NOT retained-grade so the
@@ -465,7 +465,7 @@ check(
 check(
     f"Target row '{TARGET_ROW}' is NOT retained-grade (so it must be backticked, not linked)",
     rows.get(TARGET_ROW, {}).get("effective_status") not in RETAINED_GRADES,
-    f"effective_status = {rows.get(TARGET_ROW, {}).get('effective_status')}",
+    f"ledger_effective_status:{rows.get(TARGET_ROW, {}).get('effective_status')}",
 )
 
 

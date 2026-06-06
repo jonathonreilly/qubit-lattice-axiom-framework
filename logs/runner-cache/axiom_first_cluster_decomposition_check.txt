@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_cluster_decomposition_check.py
-runner_sha256: 4035c7c11a7189870448d6a1728994ca21cfbdddbef4966e165c0b41ac83ccd9
+runner_sha256: 57efef1fe877a274d7dd663b9942e7d059b8b9a5d9daa2f7200776fa615ae869
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.36
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ========================================================================
@@ -65,6 +65,17 @@ status: ok
   corrected v_LR bound = 2e J_*_bound R_int D_int = 21.746255
   E5 verdict: PASS
 
+--- Exhibit E6: Cl(3) coefficient/operator-norm bound ---
+  Verify: ||sum c_alpha gamma^alpha|| <= sum |c_alpha| <= sqrt(8)||c||_2
+  Also exhibit: unit-constant Euclidean coefficient bound is false for I + sigma_z.
+  all 8 monomial operator norms equal 1? True
+  counterexample ||I + sigma_z|| = 2.000000
+  coefficient ||c||_2 = 1.414214
+  old unit-constant Euclidean bound false? True
+  repaired triangle/Cauchy bound passed 200/200 trials
+  worst numerical slack = 1.293e-01
+  E6 verdict: PASS
+
 ========================================================================
  SUMMARY
 ========================================================================
@@ -73,8 +84,9 @@ status: ok
    E3 (lattice light cone): PASS
    E4 (front velocity): PASS
    E5 (J_* constant): PASS
+   E6 (Cl(3) norm bound): PASS
 
-   PASSED: 5/5
+   PASSED: 6/6
    v_LR bound (LR-1972 constants) = 21.746
 
  verdict: corrected LR (L1/L3/L4) exhibited; L2 remains conditional.

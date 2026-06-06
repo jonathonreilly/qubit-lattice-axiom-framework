@@ -1,0 +1,66 @@
+D3 lower-bound source-packet audit gate
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+
+A. ledger and active-queue status
+[PASS] active queue still carries the D3 lower-bound sign item
+[PASS] ledger row exists: dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25
+[PASS] ledger row exists: dimension_selection_lower_bound_bridge_v2_2026-05-20
+[PASS] ledger row exists: dimension_selection_note
+[PASS] finite-k sign bridge is audited clean retained_bounded -- audit=audited_clean effective=retained_bounded
+[PASS] lower-bound V2 sign row is audited clean retained_bounded -- audit=audited_clean effective=retained_bounded
+[PASS] parent row remains conditional only on runner artifact issue -- runner_artifact_issue: include the finite-k bridge runner source, original dimension runner source/cache, and source-packet verifier output so the displayed beta, I_3, and sign computations can be independently inspected.
+[PASS] parent row does not claim unique d=3 or baseline rewrite -- Finite-runner lower-bound support for the stated d = 1..5 propagator-plus-Poisson runner surface: d = 1,2 fail and d = 3,4,5 pass the runner criteria; no unique-d = 3 theorem or framework-baseline rewrite.
+B. source-packet artifact issue
+[PASS] required packet path exists: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
+[PASS] parent note links packet path: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
+[PASS] required packet path exists: logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt
+[PASS] parent note links packet path: logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt
+[PASS] required packet path exists: scripts/frontier_dimension_selection.py
+[PASS] parent note links packet path: scripts/frontier_dimension_selection.py
+[PASS] required packet path exists: logs/runner-cache/frontier_dimension_selection.txt
+[PASS] parent note links packet path: logs/runner-cache/frontier_dimension_selection.txt
+[PASS] required packet path exists: docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md
+[PASS] parent note links packet path: docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md
+[PASS] required packet path exists: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+[PASS] parent note links packet path: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+[PASS] required packet path exists: logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt
+[PASS] parent note links packet path: logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt
+[PASS] required packet path exists: outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
+[PASS] parent note links packet path: outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json
+[PASS] required packet path exists: scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+[PASS] parent note links packet path: scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+[PASS] required packet path exists: logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt
+[PASS] parent note links packet path: logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt
+[PASS] source-packet verifier contains marker: finite_k_bridge_runner
+[PASS] source-packet verifier contains marker: original_cache
+[PASS] source-packet verifier contains marker: cache_sha_fresh
+[PASS] source-packet verifier contains marker: bridge_json_fail_count_zero
+[PASS] source-packet verifier contains marker: SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=
+[PASS] source-packet cache belongs to current verifier -- scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+[PASS] source-packet cache SHA is fresh -- b8fd7df690a8702cfda889cd2659fd653416abb667527f665794ee5dcd915b5a == b8fd7df690a8702cfda889cd2659fd653416abb667527f665794ee5dcd915b5a
+[PASS] source-packet cache exits cleanly -- exit_code=0 status=ok
+[PASS] source-packet cache contains snippet: SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=55 FAIL=0
+[PASS] source-packet cache contains snippet: cache_sha_fresh:original_cache
+[PASS] source-packet cache contains snippet: cache_snippet_present:original_cache:I_3/P = <1e-10
+[PASS] source-packet cache contains snippet: cache_snippet_present:finite_k_bridge_cache:SUMMARY: PASS=56 FAIL=0
+[PASS] parent note keeps boundary phrase: finite-runner lower-bound support only
+[PASS] parent note keeps boundary phrase: not a unique-dimension theorem
+[PASS] parent note keeps boundary phrase: does not authorize any framework-baseline rewrite
+[PASS] parent note keeps boundary phrase: This row does not claim:
+[PASS] parent note keeps boundary phrase: framework-internal upper-bound derivation
+C. supporting note boundaries
+[PASS] finite-k/V2 boundary phrase present: Retained finite-k sign bridge
+[PASS] finite-k/V2 boundary phrase present: not a ledger retag
+[PASS] finite-k/V2 boundary phrase present: not full retained dimension selection
+[PASS] finite-k/V2 boundary phrase present: does not authorize changing the minimal axiom line
+[PASS] forbidden overclaim absent: full retained spatial d = 3 closure
+[PASS] forbidden overclaim absent: Z^3 has been derived from A1 alone
+[PASS] forbidden overclaim absent: repo-wide framework-baseline rewrite is authorized
+[PASS] forbidden overclaim absent: self-consistency uniquely selects d = 3
+
+SCORECARD: PASS=53 FAIL=0
+VERDICT: exact support that the current-main source packet exposes the artifacts named by the parent D3 lower-bound runner-artifact issue. This does not retag the audit ledger or prove full D=3 dimension selection.

@@ -1,6 +1,7 @@
 # Spatial-Slab Cluster-Decomposition Bridge on physical Cl(3) over Z^3
 
-**Date:** 2026-05-17
+**Date:** 2026-05-17; 2026-06-06 finite-Lambda pure-Wilson H1/H2
+authority wiring.
 **Status:** source-note proposal; final claim type, audit verdict, and
 effective status are set only by the independent audit lane.
 **Type:** bounded_theorem
@@ -14,15 +15,39 @@ The 2026-05-28 audit verdict was `audited_conditional`:
 
 with repair: *"missing_bridge_theorem: add retained one-hop authorities constructing the positive Hermitian spatial slab transfer operator for the canonical Hamiltonian and proving Δ_x>0, then re-audit any unconditional promotion."*.
 
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
+The 2026-05-28 repair took the **split path**:
 
 - **Load-bearing (in scope):** The finite-dimensional spectral decomposition + Cauchy-Schwarz + trace-distance argument that, given hypotheses H1 (existence of positive Hermitian slab transfer operator `T_x`) and H2 (spatial gap `Δ_x > 0`), derives the exponential spatial clustering bounds (S.1)-(S.2) exactly. This chain is runner-verified and closes on its own conditional terms.
-- **NON-load-bearing (split off / admitted):** The construction of a positive Hermitian spatial slab transfer operator `T_x` from the canonical physical Cl(3) over Z^3 Hamiltonian (H1) and the derivation of `Δ_x > 0` for that operator (H2); both are explicitly named open inputs that require retained authority (spatial OS reflection positivity or direct slab-positivity from the canonical action) not supplied here.
+- **NON-load-bearing (split off / admitted on the full canonical surface):**
+  The construction of a positive Hermitian spatial slab transfer operator
+  `T_x` from the canonical physical Cl(3) over Z^3 Hamiltonian (H1) and the
+  derivation of `Δ_x > 0` for that operator (H2); both require retained
+  authority such as spatial OS reflection positivity or direct slab-positivity
+  from the canonical action.
 
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
+The 2026-06-06 update below does not add an axiom. It wires an already existing
+finite-Lambda pure-Wilson axis-permutation authority for the restricted
+pure-Wilson H1/H2 subcase while preserving the full canonical open boundary.
+
+## 2026-06-06 finite-Lambda pure-Wilson H1/H2 wiring
+
+The later axis-permutation companion
+[`CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md`](CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md)
+supplies the spatial slab bridge's two open inputs **on the restricted
+finite-Lambda pure-Wilson surface**:
+
+- **H1 on that surface:** a positive Hermitian spatial-axis Wilson transfer
+  operator `T_W^(mu)` on the finite slab Hilbert space.
+- **H2 on that surface:** a simple top eigenvalue and strict finite-Lambda
+  spatial-axis gap `Delta_x^(mu) > 0`, obtained by axis permutation from the
+  finite-Lambda temporal-axis Wilson transfer theorem.
+
+Composing that one-hop authority with this bridge gives a closed finite-block
+spatial-slab clustering corollary **only for the finite-Lambda pure-Wilson
+axis-permuted surface**. It does not prove the staggered+Wilson fermion-factor
+extension, a full canonical `Cl(3) x Z^3` Hamiltonian spatial transfer gap, a
+thermodynamic-limit gap, a continuum gap, or unconditional spatial clustering.
+Those remain outside this bridge and outside the axis-permutation companion.
 
 **Loop:** `axiom-first-foundations`
 **Cycle:** block-28 narrow closure follow-up to the 2026-05-09 temporal bridge
@@ -65,15 +90,17 @@ conditional spatial bridge:
 
 This addresses repair target (b) at the *same* authority level the
 temporal bridge addresses the temporal side: it is a closed-form
-finite-block conditional theorem, with the gap input made explicit.
-Neither the existence of `T_x` nor `Δ_x > 0` is asserted; both are
-named hypotheses of the conditional theorem.
+finite-block conditional theorem, with the gap input made explicit. At the
+general bridge level, the existence of `T_x` and `Δ_x > 0` are named
+hypotheses; on the finite-Lambda pure-Wilson axis-permuted surface they are
+supplied by the 2026-06-02 companion linked above.
 
 **What this note does NOT do.** It does not derive `Δ_x > 0` from
-the framework baseline; it does not construct `T_x` from the canonical Hamiltonian
-(both are listed as open inputs); it does not derive `Δ_T > 0`
-(that remains the second-named open derivation target across both
-spatial and temporal bridges). The parent
+the full canonical framework baseline; it does not construct `T_x` from the
+full canonical Hamiltonian (both remain open outside the finite-Lambda
+pure-Wilson subcase); it does not derive `Δ_T > 0` (that remains the
+second-named open derivation target across both spatial and temporal bridges).
+The parent
 `axiom_first_cluster_decomposition_theorem_note_2026-04-29` row's
 unconditional L2 spatial claim therefore remains conditional pending
 those derivations.
@@ -126,14 +153,21 @@ limit. No continuum limit.
   partition function on a block of length `L_x` along direction `x`.
   This is the spatial analogue of the reflection-positivity-derived
   temporal transfer matrix used by the 2026-05-09 bridge.
-  **Open input** on the framework baseline for the canonical Hamiltonian: see
-  `## Open hypotheses` below.
+  **Canonical full-Hamiltonian status:** open input on the framework baseline;
+  see `## Open hypotheses` below.
+  **Finite-Lambda pure-Wilson subcase:** supplied by
+  [`CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md`](CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md),
+  which constructs the axis-permuted Wilson transfer operator `T_W^(mu)` on
+  the finite slab Hilbert space.
 
 - **Spatial transfer-matrix gap (hypothesis H2).** `Δ_x > 0`, where
   `Δ_x := -log(λ_1(T_x) / M_x)` and `λ_1(T_x)` is the second-largest
   eigenvalue (counted with multiplicity beneath the top). Equivalent to
-  non-degeneracy of the top eigenvector of `T_x`. **Open input** on
-  the framework baseline.
+  non-degeneracy of the top eigenvector of `T_x`. **Canonical
+  full-Hamiltonian status:** open input on the framework baseline.
+  **Finite-Lambda pure-Wilson subcase:** supplied by the same
+  axis-permutation note, which gives a simple top eigenvalue and strict
+  finite-Lambda spatial-axis gap for `T_W^(mu)`.
 
 - **Parent LR bound (L1).** From the parent
   `AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`. Cited
@@ -203,6 +237,13 @@ slab-excited-state population. Equivalently, with
 ```
 
 At zero temperature (`β → ∞`), `q_{β,x} → 0` and (S.8) reduces to (S.7).
+
+**Finite-Lambda pure-Wilson corollary.** On the restricted finite-Lambda
+pure-Wilson axis-permuted surface of the 2026-06-02 `Delta_x` companion,
+H1 and H2 are supplied by `T_W^(mu)` and its strict finite-Lambda gap. Therefore
+(S.7) and (S.8) apply to bounded slab observables on that finite pure-Wilson
+slab Hilbert space. This corollary is not a statement about the full
+staggered+Wilson fermion-factor surface or any thermodynamic/continuum limit.
 
 **Not proved here.**
 
@@ -364,8 +405,12 @@ This bounded narrow theorem uses:
   - **H2.** Spatial transfer-matrix gap `Δ_x > 0` for the slab transfer
     operator.
 
-H1 and H2 are explicitly listed open inputs. The conditional theorem
-(S) follows from H1 + H2 by the closed-form spectral argument above.
+H1 and H2 are explicitly listed open inputs for the full canonical
+staggered+Wilson Hamiltonian. On the finite-Lambda pure-Wilson
+axis-permuted surface, they are supplied by
+[`CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md`](CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md).
+The conditional theorem (S) follows from H1 + H2 by the closed-form spectral
+argument above.
 
 Standard finite-dim spectral theorem (resolution of identity for positive
 Hermitian on finite-dim Hilbert space) is the only "standard mathematical"
@@ -389,17 +434,27 @@ existence) requires either spatial OS reflection positivity along the
 chosen axis or a direct columnar-transfer-matrix construction on the
 canonical action.
 
+**Finite-Lambda pure-Wilson composition.** The 2026-06-02 `Delta_x`
+axis-permutation companion supplies H1 and H2 for the restricted finite-Lambda
+pure-Wilson spatial-axis transfer operator. Composed with this bridge, it gives
+a finite-block spatial-slab clustering theorem on that restricted surface.
+This is a source-side composition for independent review/audit; it is not a
+direct audit-status change and it does not extend to the full staggered+Wilson
+surface.
+
 **What this rules out.**
 
 - This note does **not** claim `Δ_x > 0` on the canonical surface.
+- This note does claim the finite-Lambda pure-Wilson spatial-axis subcase only
+  through the one-hop `Delta_x` axis-permutation companion.
 - This note does **not** prove the parent note's spatial L2 as stated
   unconditionally.
 - The chain "H1 ∧ H2 ⇒ (S.1) ∧ (S.2)" *is* now closed-form on the
   framework baseline, putting the spatial direction at the same authority level the
   temporal direction reached with the 2026-05-09 bridge.
-- The parent row's L2 claim therefore remains audited_conditional
-  until *both* spatial open inputs (H1, H2) and the temporal open
-  input (`Δ_T > 0`) are derived.
+- The parent row's full canonical L2 claim remains outside this bridge's
+  finite-Lambda pure-Wilson subcase until the full-surface spatial inputs and
+  any required temporal/full-surface gap inputs are derived.
 
 **Repair targets for full closure (still open).**
 
@@ -423,15 +478,19 @@ holds L1, L3, L4 closed-form, and L2 conditional on (a) the temporal
 bridge (closed-form, open input `Δ_T > 0`) and (b) a spatial cluster
 theorem with constants.
 
-With this note, (b) is now satisfied in the same conditional form as
-(a): the chain "H1 ∧ H2 ⇒ spatial clustering" is closed-form, mirroring
-"`Δ_T > 0` ⇒ temporal clustering."
+With this note, (b) is satisfied in the same conditional form as (a): the
+chain "H1 ∧ H2 ⇒ spatial clustering" is closed-form, mirroring
+"`Δ_T > 0` ⇒ temporal clustering." With the 2026-06-02 `Delta_x`
+axis-permutation companion, H1 and H2 are also supplied for the restricted
+finite-Lambda pure-Wilson spatial-axis surface, giving a closed finite-block
+pure-Wilson spatial-slab corollary.
 
-The remaining gap is the three named open inputs `Δ_T > 0`, H1, H2
-on the canonical physical Cl(3) over Z^3 Hamiltonian. The auditor's repair target
-"add a retained spatial cluster-decomposition theorem with constants"
-is satisfied at the conditional-bounded-theorem authority level by
-this note; the unconditional version still requires deriving the gap
+The remaining gap for the full parent is the extension from the restricted
+finite-Lambda pure-Wilson spatial-axis surface to the full canonical physical
+Cl(3) over Z^3 staggered+Wilson Hamiltonian, plus any thermodynamic/continuum
+claim. The auditor's repair target "add a spatial transfer-matrix bridge" is
+addressed at the finite-Lambda pure-Wilson authority level; unconditional
+canonical spatial clustering still requires deriving the missing full-surface
 inputs.
 
 ## Citations
@@ -443,6 +502,8 @@ inputs.
 - 2026-05-09 temporal bridge (context for the spatial mirror; the proof
   here is direct finite-dimensional spectral theory):
   `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
+- finite-Lambda pure-Wilson spatial-axis `T_x` and `Delta_x` one-hop authority:
+  [`CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md`](CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md)
 - reflection-positivity support note (defines temporal `T`):
   `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
 - spectrum-condition support note (defines `H̃ ≥ 0`):
@@ -452,11 +513,15 @@ inputs.
 
 ## Audit dependency note
 
-This note is a bounded conditional theorem with explicit named open
-hypotheses H1, H2. It does **not** promote the parent row's audit
-status. The parent row's `verdict_rationale` repair target (b) is now
-addressed at the conditional-closed-form level; repair target (a)
-(`Δ_T > 0`) and the spatial open inputs (H1, H2) remain explicitly
-open. The audit citation graph carries an edge from this note to the
-parent row only as context for the repair target, not as an
-unconditional closure or parent-status promotion.
+This note is a bounded theorem with two surfaces:
+
+- General bridge surface: conditional on explicit H1 and H2.
+- Finite-Lambda pure-Wilson surface: H1 and H2 are supplied by the linked
+  2026-06-02 `Delta_x` axis-permutation companion.
+
+It does **not** promote the parent row's audit status. The parent row's
+`verdict_rationale` repair target is addressed on the finite-Lambda
+pure-Wilson spatial-axis surface, while the full canonical staggered+Wilson
+extension remains open. The audit citation graph should carry the linked
+one-hop dependency to the `Delta_x` companion for the supplied H1/H2 subcase,
+but no unconditional parent-status promotion is claimed here.

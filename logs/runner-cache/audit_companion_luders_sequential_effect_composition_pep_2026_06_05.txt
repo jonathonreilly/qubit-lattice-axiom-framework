@@ -3,7 +3,7 @@ runner: scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06
 runner_sha256: c14a2ba7bbd4c80e07c600b67657f915e7525fc5ef96e9bd1ea8dee1a42e1791
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.71
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 
@@ -79,4 +79,3 @@ TOTAL: 51 PASS / 0 FAIL  (out of 51 checks)
 All checks passed: the sequential-effect composition M_{P,E} = P E P and the trace/effect (Born) pairing are reproven from finite operator-algebra primitives on M_d(C) (d=2,3,4): PEP is the effective two-step operator [Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E)], it is a valid effect [0 <= PEP <= P <= I], the trace pairing is real-linear and state->[0,1], and the sequential product is associative-consistent with composition. Lueders (1951), Busch-Lahti-Mittelstaedt (1996), and Gudder-Greechie (2002) are named comparators only, not derivation inputs.
 
 ----- stderr -----
-

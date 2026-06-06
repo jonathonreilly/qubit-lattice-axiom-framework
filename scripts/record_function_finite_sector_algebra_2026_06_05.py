@@ -46,6 +46,7 @@ def main() -> int:
     x0, x1, x2, x3 = sp.symbols("x0 x1 x2 x3")
     k = sp.symbols("k", positive=True)
     u, d, rho, p = sp.symbols("u d rho p", positive=True)
+    alpha, beta, theta, r = sp.symbols("alpha beta theta r", positive=True, real=True)
     a2, b2 = sp.symbols("a2 b2", positive=True)
     ln2 = sp.log(2)
 
@@ -151,15 +152,36 @@ def main() -> int:
     check("R4.2 dial coordinate is log2(doublet/singlet)",
           sp.simplify(s_from_sector_ratio - sp.log(2 * generation_ratio) / ln2) == 0)
 
+    lambdas = [
+        alpha + 2 * beta * sp.cos(theta + 2 * sp.pi * j / 3)
+        for j in range(3)
+    ]
+    sum_lambda = sp.simplify(sp.expand_trig(sum(lambdas)))
+    sum_lambda_sq = sp.simplify(sp.expand_trig(sum(lam ** 2 for lam in lambdas)))
+    q_power_sum = sp.simplify(sum_lambda_sq / sum_lambda ** 2)
+    q_from_r = sp.Rational(1, 3) + sp.Rational(2, 3) * r
+    q_from_blocks = sp.simplify((singlet_readout + doublet_readout) / (3 * singlet_readout))
+
+    check("R4.3 C3/KCPT square-root readout power sums define Q",
+          sp.simplify(sum_lambda - 3 * alpha) == 0
+          and sp.simplify(sum_lambda_sq - (3 * alpha ** 2 + 6 * beta ** 2)) == 0,
+          f"S1={sum_lambda}; S2={sum_lambda_sq}")
+    check("R4.4 Q = S2/S1^2 derives Q(r)=1/3+2r/3 before endpoint substitution",
+          sp.simplify(q_power_sum.subs(beta, sp.sqrt(r) * alpha) - q_from_r) == 0,
+          f"Q={q_power_sum}")
+    check("R4.5 two-block powers give the same generation Q coordinate",
+          sp.simplify(q_from_blocks - (sp.Rational(1, 3) + sp.Rational(2, 3) * generation_ratio)) == 0,
+          f"Q_blocks={q_from_blocks}")
+
     rho_sector = rho
     r_from_rho = rho_sector / 2
-    q_from_rho = sp.Rational(1, 3) + sp.Rational(2, 3) * r_from_rho
+    q_from_rho = sp.simplify(q_from_r.subs(r, r_from_rho))
     s_from_rho = sp.log(rho_sector) / ln2
-    check("R4.3 sector balance rho=1 gives s=0, r=1/2, Q=2/3",
+    check("R4.6 sector balance rho=1 gives s=0, r=1/2, Q=2/3",
           sp.simplify(s_from_rho.subs(rho, 1)) == 0
           and sp.simplify(r_from_rho.subs(rho, 1) - sp.Rational(1, 2)) == 0
           and sp.simplify(q_from_rho.subs(rho, 1) - sp.Rational(2, 3)) == 0)
-    check("R4.4 real-mode balance rho=2 gives s=1, r=1, Q=1",
+    check("R4.7 real-mode balance rho=2 gives s=1, r=1, Q=1",
           sp.simplify(s_from_rho.subs(rho, 2) - 1) == 0
           and sp.simplify(r_from_rho.subs(rho, 2) - 1) == 0
           and sp.simplify(q_from_rho.subs(rho, 2) - 1) == 0)
@@ -167,7 +189,7 @@ def main() -> int:
     arbitrary_two = sp.Matrix([u, rho * u])
     arbitrary_total = (sp.Matrix([[1, 1]]) * arbitrary_two)[0]
     arbitrary_norm = sp.simplify(arbitrary_two[1] / arbitrary_total)
-    check("R4.5 Record additivity permits arbitrary positive sector ratio rho",
+    check("R4.8 Record additivity permits arbitrary positive sector ratio rho",
           rho in arbitrary_norm.free_symbols
           and sp.simplify(arbitrary_norm - rho / (1 + rho)) == 0,
           "rho remains a free readout ratio until a weighting/dynamics gate is supplied")

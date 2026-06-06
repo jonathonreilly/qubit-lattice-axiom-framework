@@ -1,0 +1,27 @@
+loop_slug: record-function-q-bridge-20260606
+date: 2026-06-06
+base_ref: origin/main
+base_commit: e75a3baa6
+branch: physics-loop/record-function-q-bridge-20260606
+target_claim_id: record_function_finite_sector_algebra_2026-06-05
+current_ledger_status_before_reaudit: audited_conditional
+target_status: proposed_retained
+actual_current_surface_status: proposed_retained
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: same-row finite C3/KCPT Q derivation
+hard_residual_attacked: "missing_bridge_theorem: add a cited retained definition or derivation of Q = 1/3 + 2r/3 for the generation-dial endpoints"
+files_touched:
+  - docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md
+  - scripts/record_function_finite_sector_algebra_2026_06_05.py
+  - logs/runner-cache/record_function_finite_sector_algebra_2026_06_05.txt
+  - .claude/science/physics-loops/record-function-q-bridge-20260606/
+open_imports:
+  - supplied finite generation readout context
+  - standard finite C3 character algebra, reproduced exactly in the runner
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: pending reviewer extraction
+pr_status: pending
+next_exact_action: "open review PR"
+stop_condition: "PR opened and remaining available rows require audit/reviewer action or a separate theorem route"

@@ -1,0 +1,19 @@
+loop: sharp-record-fisher-tangent-20260606
+goal: "Split pure finite probability/Fisher tangent geometry from the conditional source-measure packet."
+target_status: exact-support
+actual_current_surface_status: exact-support
+cycle_count: 1
+active_route: "finite probability RN/Fisher theorem"
+hard_residual: "Physical source semantics and same-source response basis remain outside this artifact."
+files_touched:
+  - docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/audit_companion_sharp_record_fisher_tangent_space_2026_06_06.py
+  - logs/runner-cache/audit_companion_sharp_record_fisher_tangent_space_2026_06_06.txt
+open_imports: []
+trace_gate_classification: upstream_support
+reachability_to_target: supports
+review_findings: "Local exact runner passes; external review-loop not run."
+pr_status: pending
+next_exact_action: "Open review PR; physical source semantics remain a separate bridge."
+stop_condition: "This block stops after PR creation."
+

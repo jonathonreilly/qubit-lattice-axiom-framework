@@ -14,3 +14,11 @@ Checks run:
   overclaims
 
 All checks passed. No repo-wide authority surfaces were edited.
+
+## PR Verification
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2782
+- `gh pr view 2782` verified state `OPEN`, base
+  `physics-loop/record-open-system-reset-channel-interface-20260605`, head
+  `physics-loop/record-finite-time-reset-semigroup-no-go-20260605`, and
+  `mergeStateStatus=UNSTABLE` while checks were pending.

@@ -5,6 +5,8 @@
 No-go / finite-time reset semigroup block ready for stacked review. This block
 is stacked on PR #2781.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2782
+
 ## Intended Result
 
 The exact reset channel is singular as a superoperator. A finite-time
@@ -28,5 +30,4 @@ Checks:
 
 ## Next Action
 
-Commit, push, open a stacked PR, and then pivot to an asymptotic reset ledger
-or another high-value lane.
+Pivot to an asymptotic reset ledger or another high-value lane.

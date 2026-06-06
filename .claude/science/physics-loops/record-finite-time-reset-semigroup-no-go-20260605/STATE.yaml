@@ -26,6 +26,6 @@ no_go_routes:
   - "Semigroup endpoint no-go fixes a dial location."
 trace_gate_classification: negative_route_pruning
 review_disposition: pass
-pr_status: pending
-next_exact_action: "Commit, push, and open stacked PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2782"
+next_exact_action: "Pivot to asymptotic reset ledger or another high-value dynamics lane."
 stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

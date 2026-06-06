@@ -1,0 +1,61 @@
+loop_slug: post-record-source-measure-trace-normalization-prototype-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 23
+date: 2026-06-06
+branch: physics-loop/post-record-source-measure-trace-normalization-prototype-20260606
+base: physics-loop/post-record-measure-weight-normalization-subdivision-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2842"
+goal: |
+  Provide a finite supplied source-measure trace/RN normalization prototype for
+  source-measure and trace-normalization rows without deriving the physical
+  measure, Born law, or selector from Record.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: source-measure trace normalization prototype
+hard_residual_attacked: |
+  The measure/weight subdivision exposed source-measure/RN and trace-reference
+  rows. This block supplies a finite exact RN/trace prototype for those lanes.
+files_touched:
+  - docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md
+  - scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-source-measure-trace-normalization-prototype-20260606/*
+runner_summary: "SUMMARY: PASS=49 FAIL=0"
+prototype_results:
+  source_measure_or_rn_bridge_rows: 14
+  trace_normalization_reference_rows: 8
+  source_trace_prototype_rows: 22
+open_imports:
+  - "supplied physical reference/pre-record state identification"
+  - "supplied source measure or RN density bridge"
+  - "supplied Born/prior/selector bridge where needed"
+  - "independent audit remains required for verdicts"
+  - "PR is stacked on the measure/weight normalization subdivision companion"
+no_go_routes:
+  - "finite normalization => physical reference selection"
+  - "RN density => Born law"
+  - "normalized measure => selected dial"
+  - "Record => measure, prior, source law, or selector"
+review_findings: "local review pass: py_compile, cached summary, ASCII scan, overclaim scan, 13-file loop pack, git diff --check"
+pr_status: ready_for_pr
+pr_url: null
+pr_number: null
+cycle_status: ready_for_pr
+next_exact_action: |
+  Commit, push, then open a stacked PR against
+  physics-loop/post-record-measure-weight-normalization-subdivision-20260606.
+stop_condition: |
+  Satisfied when the runner passes, local review is clean, the branch is pushed,
+  and the stacked PR is open and verified.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "source-measure and trace-normalization rows get a finite supplied RN/trace prototype; physical reference-state and selector authority remain open"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch supplies finite measure/RN semantics and does not derive the physical measure, Born law, or selector."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

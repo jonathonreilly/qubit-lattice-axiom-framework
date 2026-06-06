@@ -1,0 +1,44 @@
+loop_slug: post-record-two-state-markov-stability-interface-20260606
+branch: physics-loop/post-record-two-state-markov-stability-interface-20260606
+base: origin/main
+campaign: dynamics lanes
+cycle_status: verified_pending_pr
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: supplied two-state Markov kernel has exact stable location
+hard_residual: "Give dynamics lanes an exact post-record stability interface for supplied two-state kernels without deriving the kernel or selecting the dial."
+files_touched:
+  - docs/POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md
+  - scripts/frontier_post_record_two_state_markov_stability_interface_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_two_state_markov_stability_interface_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-two-state-markov-stability-interface-20260606/
+open_imports:
+  - supplied two-state transition kernel
+  - physical bridge from carrier dynamics to the kernel
+  - clock/rate map if rates are inferred
+  - Born/instrument bridge if probabilities are physical
+  - model or dial selection rule among possible kernels
+no_go_routes:
+  - "Record alone derives the transition kernel"
+  - "Stationarity of a supplied kernel selects the physical kernel"
+  - "Equal-letter stability forces Koide or fixes the dial"
+  - "Post-record stability derives clock/rate, Hamiltonian, or Born weights"
+trace_gate:
+  trace_class: upstream_support
+  target_claim_id: null
+  target_blocker_text: "Stable post-record locations are exact for supplied two-state kernels; choosing which kernel is physical remains a separate dynamics bridge."
+  source_of_blocker_text: user_goal
+  reachability_to_target: supports
+  artifact_role: theorem
+review_findings: "Local review found no overclaim: the branch proves only supplied-kernel stationary/stability identities and does not derive the kernel, physical bridge, or dial selection."
+pr_status:
+  url: null
+  number: null
+  mergeable: null
+  checks: null
+next_exact_action: "Commit, push, open PR, and patch PR status."
+stop_condition: "Block closes when PR is open and verified or PR backlog records exact failure."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

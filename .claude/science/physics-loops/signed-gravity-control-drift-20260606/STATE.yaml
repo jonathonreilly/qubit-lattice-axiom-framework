@@ -1,0 +1,13 @@
+goal: "Repair source-runner drift in SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE without touching audit results."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Align displayed Born I3 and norm-drift control numbers with the current runner/cache output."
+files_touched:
+  - docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md
+open_imports:
+  - "APS-locked source-action cross term remains an open source-action premise"
+  - "energy stability and tensor-GR lift remain open proof obligations"
+audit_results_edited: false
+next_exact_action: "Reviewer can re-audit the source-runner drift item; do not promote the source-action proposal without deriving S_int."

@@ -1,0 +1,16 @@
+goal: "Repair the audited formula-inventory blocker in FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31 without touching audit results."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Replace the false one-factor determinant shorthand with the two-eigenvalue normal-bundle determinant identity and verify it in the runner."
+files_touched:
+  - docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md
+  - scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py
+  - logs/runner-cache/flavor_carrier_not_derived_two_inputs_2026_05_31.txt
+open_imports:
+  - "physical species-to-flavor carrier identification remains open/delegated"
+  - "basepoint r=1/2 remains a separate unforced input"
+  - "the note remains a bounded negative/refutation, not a retained derivation"
+audit_results_edited: false
+next_exact_action: "Reviewer can re-audit the formula-inventory item; do not promote the full carrier row without the carrier/basepoint bridges."

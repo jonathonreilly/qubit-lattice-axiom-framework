@@ -15,7 +15,8 @@ This runner verifies the DECISIVE refutation + the honest two-input standing:
       C_3 character of the doublet on the finite 3-corner rep (no manifold needed). FALSE:
       the bare doublet character is omega+omega^2 = -1 (full R^3 char = 0, singlet = 1).
       2/9 = L_3(1,2) = (1/3) sum 1/((omega^k-1)(omega^{2k}-1)) arises SOLELY from the
-      Atiyah-Bott / equivariant-eta NORMAL-BUNDLE denominators 1/(omega^k-1) = det(1-g)^{-1}.
+      Atiyah-Bott / equivariant-eta NORMAL-BUNDLE determinant denominators
+      det(1-g^k|N)^{-1} = 1/((omega^k-1)(omega^{2k}-1)).
       So 2/9 is an INDEX/spectral-asymmetry object, not a representation character. Keeping the
       value 2/9 REQUIRES keeping the fixed-point/index apparatus the lead tried to discard.
 
@@ -58,19 +59,30 @@ def main():
     char_singlet = 1.0
     char_doublet = W + W ** 2                 # bare C_3 character of the doublet
     char_full = 1 + W + W ** 2                # full R^3 corner-permutation character
-    L12 = sum(1 / ((W ** k - 1) * (W ** (2 * k) - 1)) for k in (1, 2)) / 3
+    det_inv_terms = {
+        k: 1 / ((W ** k - 1) * (W ** (2 * k) - 1))
+        for k in (1, 2)
+    }
+    one_factor_terms = {k: 1 / (W ** k - 1) for k in (1, 2)}
+    L12 = sum(det_inv_terms.values()) / 3
     passed.append(check(
         "A1 bare doublet character tr(g|doublet)=omega+omega^2 = -1 (singlet=1, full=0); NONE equals 2/9",
         abs(char_doublet + 1) < 1e-12 and abs(char_full) < 1e-12 and abs(char_singlet - 1) < 1e-12
         and abs(char_doublet - 2.0 / 9.0) > 0.1,
         f"singlet={char_singlet:.3f}, doublet={char_doublet.real:.6f}, full={char_full.real:.3f}"))
     passed.append(check(
-        "A2 2/9 = L_3(1,2) comes ONLY from normal-bundle denominators 1/(omega^k-1)=det(1-g)^{-1}, an INDEX/eta object",
+        "A2 normal-bundle determinant inverse is the product 1/((omega^k-1)(omega^(2k)-1)); the one-factor shorthand is false",
+        all(abs(det_inv_terms[k] - (1.0 / 3.0)) < 1e-12 for k in (1, 2))
+        and all(abs(one_factor_terms[k] - det_inv_terms[k]) > 0.1 for k in (1, 2)),
+        f"det-inv terms={[round(float(det_inv_terms[k].real), 6) for k in (1, 2)]}; "
+        f"one-factor terms={[complex(round(one_factor_terms[k].real, 6), round(one_factor_terms[k].imag, 6)) for k in (1, 2)]}"))
+    passed.append(check(
+        "A3 2/9 = L_3(1,2) comes ONLY from the two-eigenvalue normal-bundle determinant denominators, an INDEX/eta object",
         abs(L12 - 2.0 / 9.0) < 1e-12,
         f"L_3(1,2)={L12.real:.6f} != bare character {char_doublet.real:.3f}; corner-carrier 'bare character' lead REFUTED"))
     # the lead's dichotomy made explicit: discard the index apparatus -> land on -1; keep 2/9 -> keep the apparatus
     passed.append(check(
-        "A3 'finite-carrier, no manifold' reading loses the value: it returns the character -1, not 2/9",
+        "A4 'finite-carrier, no manifold' reading loses the value: it returns the character -1, not 2/9",
         abs(char_doublet - L12) > 0.1,
         f"|bare_char - 2/9| = {abs(char_doublet - L12):.4f} >> 0  => cannot have both finite-carrier-only AND the value 2/9"))
 

@@ -1,0 +1,31 @@
+loop_slug: yt-ward-deps-wire-20260606
+mode: run
+target_claim_id: yt_ward_identity_derivation_theorem
+started_from: origin/main
+branch: physics-loop/yt-ward-deps-wire-20260606
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: dependency-registration repair on the parent YT Ward source note
+target_blocker_text: "dependency_not_retained: provide retained or explicitly registered Tier-A sources for the staggered-Dirac/canonical Q_L surface and the g_bare = 1 canonical-surface convention, then rerun the restricted audit."
+files_touched:
+  - docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md
+  - scripts/frontier_yt_ward_identity_derivation.py
+  - logs/runner-cache/frontier_yt_ward_identity_derivation.txt
+  - logs/runner-cache/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.txt
+  - .claude/science/physics-loops/yt-ward-deps-wire-20260606/
+open_imports:
+  - AC_phi_lambda remains an open registered Tier-A derivation target.
+  - Physical SM Yukawa readout and Planck-surface tadpole transport remain out of scope.
+imports_retired_or_routed:
+  - g_bare = 1 is routed to the retained beta-g_bare rescaling abstract identity.
+  - The staggered-Dirac/canonical Q_L dependency is routed to the registered AC_phi_lambda Tier-A target.
+proposal_allowed: false
+proposal_allowed_reason: "AC_phi_lambda remains open, so branch-local proposed_retained wording is not allowed."
+audit_required_before_effective_status_change: true
+review_loop_disposition: local-self-review-pass
+next_exact_action: "Run py_compile, parent runner, dependency companion runner, precompute cache refresh/check, diff checks, then commit/push/open PR."
+stop_condition: "Stop this block after PR creation; pivot only if another viable independent science-fix target remains."

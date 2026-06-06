@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ward_identity_derivation.py
-runner_sha256: 02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172
+runner_sha256: 80f94007c749d6d68227b517c2563fe26646d832dadb69e6c137923ff5ccc4ac
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.81
+elapsed_sec: 1.85
 status: ok
 ----- stdout -----
 ========================================================================
@@ -174,7 +174,7 @@ BLOCK 10: Conditional tadpole-ratio context (NON-LOAD-BEARING)
   It states only the exact same-1PI-function residue identity
   on the scalar-singlet channel:
 
-    A1 (one-qubit/physical-Cl(3)) + A2 (Z^3) + D1-D17 + S1 + S2 ->
+    Quantum + Lattice + registered C1/C2 + D1-D17 + S1 + S2 ->
 
     [Representation A — OGE-side computation, this Block 10]
        Color singlet Fierz: -1/(2 N_c) [D12, Block 4]

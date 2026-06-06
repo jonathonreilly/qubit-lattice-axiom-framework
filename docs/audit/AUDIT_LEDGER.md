@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 701 |
+| **retained_bounded** | 702 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
 | unaudited | 1327 |
-| audit_in_progress | 1 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1110 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1111 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 46 |
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -186,6 +184,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2180,6 +2179,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cited retained_bounded authority explicitly supplies T_hat^2=exp(-2 a_tau H_hat) for the positive two-step blocked transfer matrix. Finite-dimensional functional calculus then gives H=H_hat-E_0 and m_gap=-(1/(2 a_tau))log(lambda_1/M_T), so the factor-of-two correction closes without extra premises.
 - **rationale:** The source note's load-bearing content is an algebraic normalization corollary of one retained_bounded upstream authority plus standard spectral calculus. The independent formula check confirms the factor of two: applying 1/a_tau to T_hat^2 doubles every excitation energy, while 1/(2 a_tau) recovers the upstream H_hat after vacuum subtraction. The runner source performs real finite-matrix computations and does not just print constants, but those computations re-exhibit the same one-parent bridge rather than supplying an independent new theorem.
 - **decoration parent:** `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
+- **auditor confidence:** high
+
+### `axiom_first_spectrum_condition_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-230538-55370ef2b5-axiom_first_spectrum_conditi`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given finite-dimensional positive Hermitian T with spec(T) in (0,M_T], functional calculus gives H := -(1/(2 a_tau)) log(T/M_T) self-adjoint with H >= 0, and the gap formula follows when the top eigenvalue is nondegenerate.  _(class `A`)_
+- **chain closes:** True — The cited two-step positivity and blocked-time normalization inputs are retained-grade, and the downstream claims are finite-dimensional spectral calculus. The note explicitly excludes full U-integrated SU(3), Wilson extension, unconditional nondegeneracy, and spatial cluster decomposition.
+- **rationale:** The load-bearing theorem is an algebraic closure over independent retained-grade inputs: a positive Hermitian finite transfer matrix, the two-step time normalization, and the retained temporal bridge for the conditional SC4 corollary. The runner source is not a print-only certificate; it constructs a finite free-staggered exhibit, checks positivity, normalization, self-adjointness, and a positive finite-carrier gap. The clean verdict is only for the bounded/conditional scope stated in the note, not for U-integrated reflection positivity or spatial clustering.
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`

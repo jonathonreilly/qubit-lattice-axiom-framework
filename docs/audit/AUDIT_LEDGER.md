@@ -23,13 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 674 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1218 |
+| unaudited | 1217 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 84 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
+| `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -62,16 +63,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1044 |
 | `audited_conditional` | 84 |
-| `audited_decoration` | 51 |
+| `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1502 |
+| `unaudited` | 1501 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1290 |
-| `decoration` | 52 |
+| `bounded_theorem` | 1289 |
+| `decoration` | 53 |
 | `meta` | 288 |
 | `no_go` | 297 |
 | `open_gate` | 135 |
@@ -1296,6 +1297,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
+| `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10` |
@@ -13885,6 +13887,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The displayed finite-dimensional identities are standard and check out: e^{-H} is strictly positive, Z_H is positive by faithfulness of the trace, and cyclicity gives positivity of Tr(e^{-H}O) for O >= 0. However, the note's rho_ref wording depends on an upstream authority that explicitly demotes identifying the unique tracial state with the pre-record reference to an open admission. The Wilson/RP compatibility reading also imports a separate representation bridge from configuration-space measure to a self-adjoint operator on A_Lambda, which the note admits is not proved here. No runner source or stdout was available, so the judgment is from the note text and supplied authorities alone.
 - **open / conditional deps cited:**
   - `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`
+- **auditor confidence:** high
+
+### `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02`
+
+- **Note:** [`RP_TWO_STEP_TRANSFER_MATRIX_SINGULAR_MODE_C2_TIGHTENING_NOTE_2026-06-02.md`](../../docs/RP_TWO_STEP_TRANSFER_MATRIX_SINGULAR_MODE_C2_TIGHTENING_NOTE_2026-06-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Conditional singular-mode algebra: assuming the parent half-step convention T_even(m)=[[-2m,1],[1,0]] for m>0 at sin(p)=0, the one-step matrix is indefinite and its square has non-negative spectrum.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-002715-35dfd4062a-rp_two_step_transfer_matrix_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since T_even(m) is real symmetric with eigenvalues -m±sqrt(m^2+1), T_even(m)^2 has eigenvalues lambda_+^2 and lambda_-^2, both non-negative.  _(class `A`)_
+- **chain closes:** True — The cited retained_bounded parent supplies the singular-mode matrix convention. Direct 2x2 algebra gives characteristic polynomial lambda^2+2m lambda-1, roots of opposite sign, and non-negative squared eigenvalues for T_even(m)^2.
+- **rationale:** The note adds only standard algebra to one retained-grade upstream parent: trace/determinant give the stated roots, the inequalities hold for every m>0, and squaring a diagonalizable real-symmetric matrix squares its eigenvalues. The runner performs finite numerical checks of the same algebra for sample masses and does not import external comparators or tuned values. The result does not prove the parent Grassmann/Berezin bridge or any broader RP theorem, so the proper classification is algebraic decoration of the parent claim.
+- **decoration parent:** `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
 - **auditor confidence:** high
 
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py
+runner_sha256: 55003272eef937008ebe94c2aa9f9d38eeb814d7745b71f10a91c8674af9b902
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.94
+status: ok
+----- stdout -----
 ========================================================================
 GRAPH-BRAID N=3 FERMION SIGN STAYS NON-FIBERED
 Question: does the finite N=3 graph-braid witness have a FIBERED or
@@ -48,3 +56,6 @@ Result: the K_5 witness keeps a single Z_2 exchange-torsion class,
 SCORECARD: PASS=26 FAIL=0
 VERDICT: the finite N=3 graph-braid witness does not supply a fibered-enrichment escape. On the clean K_5 witness the integral H_1(UD_3) exchange torsion is a SINGLE Z_2 -- the same order-2 exchange class as N=2, with NO Z_3/Z_4 exchange-torsion enrichment. The fibered test shows the base-edge link-sign cochains span a subspace of H^1(UD_N; Z_2) whose codimension is EXACTLY 1 at BOTH N=2 and N=3, and that 1-dim complement IS the exchange Z_2: the fermion sign is a NON-FIBERED class that does NOT couple to any base-edge sign(beta) on the tested witnesses. The structure is subdivision-stable (Abrams) and holds on the genuine K_{3,3} subdivision of the real Z^3 lattice. Going to the tested N=3 sector does not make the exchange sign fibered.
 ========================================================================
+
+----- stderr -----
+

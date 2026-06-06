@@ -1,0 +1,19 @@
+loop_slug: graph-braid-n3-cache-refresh-20260606
+date: 2026-06-06
+base_ref: origin/main
+base_commit: 158d27b3cac50bcf5df6a73b18d8424590204553
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note
+active_route: refresh the completed runner-cache certificate for the finite N=3 graph-braid witness runner
+files_touched:
+  - logs/runner-cache/frontier_graph_braid_n3_fermion_sign_nonfibered.txt
+  - .claude/science/physics-loops/graph-braid-n3-cache-refresh-20260606/
+open_imports: []
+no_go_routes: []
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: reviewer/auditor can re-run cached_runner_output.py --check-only and re-audit the unchanged source note with the completed stdout/cache certificate
+stop_condition: cache verifier reports fresh and branch is opened as a review PR

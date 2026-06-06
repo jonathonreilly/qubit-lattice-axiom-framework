@@ -5,7 +5,11 @@
 This block is based on `origin/main` and targets the active
 `2026-05-03-gbare-parent-retention-gate`.
 
-PR: pending.
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2802
+
+GitHub verification: open PR, base `main`, head
+`physics-loop/gbare-parent-promotion-gate-map-20260606`, merge state
+`UNSTABLE`.
 
 ## Intended Result
 

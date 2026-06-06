@@ -1,13 +1,8 @@
 # PR Backlog
 
-PR creation is pending.
+PR created and verified.
 
-Intended command:
-
-```bash
-gh pr create \
-  --base main \
-  --head physics-loop/gbare-parent-promotion-gate-map-20260606 \
-  --title "[physics-loop] g_bare parent promotion gate map no-go" \
-  --body-file /tmp/gbare-parent-promotion-gate-map-pr-body.md
-```
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2802
+- Base: `main`
+- Head: `physics-loop/gbare-parent-promotion-gate-map-20260606`
+- Merge state at verification: `UNSTABLE`

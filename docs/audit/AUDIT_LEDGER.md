@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 179 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 674 |
+| **retained_bounded** | 675 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1211 |
+| unaudited | 1210 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1046 |
+| `audited_clean` | 1047 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1495 |
+| `unaudited` | 1494 |
 
 | claim_type | count |
 |---|---:|
@@ -1080,6 +1080,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `third_grown_family_sign_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_local_algebra_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `three_generation_observable_count_corollary_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -16838,6 +16839,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** A weight-w corner of {0,1}^d is determined exactly by choosing which w of the d coordinates are set to 1, giving binomial(d,w), and summing over w gives 2^d.  _(class `A`)_
 - **chain closes:** True — The scoped theorem is pure finite combinatorics and closes from the definition of {0,1}^d plus the binomial coefficient. The note explicitly excludes the physical and framework-selection bridges, so those open gates do not block this bounded claim.
 - **rationale:** Within its stated boundary, the proof is complete: total cube vertices are counted by the product rule, weight-w vertices by choosing w coordinates, and the d=3 row gives 1,3,3,1. The runner independently checks the same algebraic surface by exact enumeration and binomial identities with PASS=55, FAIL=0. No hidden physical import is needed because the note expressly does not derive d=3 as a substrate fact or identify the cube with Brillouin-zone corners.
+- **auditor confidence:** high
+
+### `three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Abstract C^3 theorem: for a chosen ordered basis, the coordinate rank-1 projectors together with the cyclic permutation of the three basis lines admit no nonzero proper invariant subspace; equivalently the generated matrix units give M_3(C) on that carrier.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-004305-cc01a51e1e-three_generation_no_proper_q`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Invariance under the three rank-1 coordinate projectors forces any invariant subspace to be a coordinate subspace, and the order-3 cycle has no nonempty proper invariant coordinate subset.  _(class `A`)_
+- **chain closes:** True — The cited distinct-character theorem supplies the diagonal rank-1 projectors, and the cited Burnside theorem supplies the compatible cyclic/full-matrix-algebra closure. Independently, the displayed projectors reduce invariant subspaces to coordinate subsets, and the 3-cycle leaves only the empty and full subsets invariant.
+- **rationale:** All cited authorities in the restricted packet are marked retained-grade, and no open physical carrier or species-identification dependency is used in the audited abstract-C^3 claim. Independent formula checking confirms the signs and factors in the projectors, sigma^3 = I, the matrix-unit formula P_i sigma^k P_j = E_ij, and the coordinate-subspace argument. The runner source performs exact integer matrix checks rather than merely printing constants, and there are no external comparator or tuned-scale inputs.
 - **auditor confidence:** high
 
 ### `three_generation_observable_count_corollary_note_2026-05-03`

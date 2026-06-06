@@ -1,0 +1,30 @@
+loop_slug: flavor-charge-select-scope-20260606
+started: 2026-06-06
+branch: physics-loop/flavor-charge-select-scope-20260606
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle_count: 1
+active_route: scalar-generation charge-selection route pruning
+target_claim_id: flavor_both_readings_charge_selects_note_2026-05-30
+blocker_source: audit_ledger
+blocker_text: "The scalar commutator check closes only after assuming that the physical gauge U(1)s act as e^{iχ}I on the generation C3 triplet. That bridge is asserted but not derived or supplied in the restricted packet, and the sector ordering also depends on empirical mass/readout inputs hard-coded in the runner."
+files_touched:
+  - docs/FLAVOR_BOTH_READINGS_CHARGE_SELECTS_NOTE_2026-05-30.md
+  - scripts/flavor_both_readings_charge_selects_2026_05_30.py
+  - logs/runner-cache/flavor_both_readings_charge_selects_2026_05_30.txt
+  - .claude/science/physics-loops/flavor-charge-select-scope-20260606/
+open_imports:
+  - Physical proof that gauge U(1) acts scalar on generation.
+  - Framework derivation of sector mass/readout ordering.
+  - Physical det_C/det_R selector.
+no_go_routes:
+  - A generation-scalar charge U(1) or continuous C rephasing selects det_C.
+trace_gate:
+  trace_class: negative_route_pruning
+  reachability_to_target: prunes
+  artifact_role: demotion
+review_findings: author verification only; independent review/audit pending
+pr_status: pending
+next_exact_action: open PR for reviewer extraction
+stop_condition: PR opened and next repair candidate selected

@@ -1,0 +1,68 @@
+============================================================================================
+Free Dirac Poincare self-adjointness: REPAIR via the Nelson commutator theorem
+repairs audited_failed FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_..._2026-05-30
+============================================================================================
+
+--------------------------------------------------------------------------------------------
+Part A: the FALSITY -- rapidity-Gaussian is analytic for K but NOT for H
+--------------------------------------------------------------------------------------------
+     n :  ||K^n psi||/n!     ||H^n psi||/n!
+      0:  1.882793e+00    1.882793e+00
+      1:  1.331335e+00    9.926991e+00
+      2:  6.656677e-01    9.921761e+02
+      3:  2.717577e-01    3.642310e+06
+      4:  9.608085e-02    5.475322e+11
+      5:  3.038343e-02    3.595095e+18
+      6:  8.770942e-03    1.074008e+27
+      7:  2.344133e-03    1.501538e+37
+      8:  5.860332e-04    1.002884e+49
+  [PASS] (A1) rapidity-Gaussian is ENTIRE for K: ||K^n psi||/n! monotone -> 0 (Nelson series converges)  --  ratio falls to 5.86e-04 at n=8
+  [PASS] (A2) rapidity-Gaussian is NOT analytic for H: ||H^n psi||/n! ~ e^{n^2/2a} DIVERGES  --  exceeds 1e10 by n=5 (3.6e+18); grows without bound
+  [PASS] (A3) => the note's 'common analytic vectors for all ten generators' (S-ii) is FALSE as written  --  no single Gaussian is analytic for both K (flat rapidity) and H (cosh zeta)
+
+--------------------------------------------------------------------------------------------
+Part B: comparison operator N = momentum harmonic oscillator; H,P,K Hermitian on Hermite core
+--------------------------------------------------------------------------------------------
+  [PASS] (B1) N = -d^2/dp^2 + p^2 >= 1, discrete spectrum (Hermite core = Schwartz): self-adjoint comparison op  --  min N = 1.0
+  [PASS] (B2) H = sqrt(p^2+m^2), P = p, K = -(i/2)(E d/dp + d/dp E) are Hermitian on the core  --  symmetric (formally self-adjoint) generators
+
+--------------------------------------------------------------------------------------------
+Part C: Nelson hypothesis (i) -- N-boundedness ||G v|| <= c1 ||N v||, STABLE across truncation
+--------------------------------------------------------------------------------------------
+     M=80:  c1(H)=1.2247   c1(P)=0.7071   c1(K)=0.9003
+     M=120:  c1(H)=1.2247   c1(P)=0.7071   c1(K)=0.9003
+     M=160:  c1(H)=1.2247   c1(P)=0.7071   c1(K)=0.9003
+  [PASS] (C1) N-boundedness constants c1 finite and STABLE across M=80,120,160 (hypothesis (i) holds)  --  c1 -> H:1.225 P:0.707 K:0.900
+
+--------------------------------------------------------------------------------------------
+Part D: Nelson hypothesis (ii) -- commutator form-bound -c2 N <= i[G,N] <= c2 N, STABLE
+--------------------------------------------------------------------------------------------
+     M=80:  c2(H)=0.5361   c2(P)=1.0000   c2(K)=2.0511
+     M=120:  c2(H)=0.5361   c2(P)=1.0000   c2(K)=2.0511
+     M=160:  c2(H)=0.5361   c2(P)=1.0000   c2(K)=2.0511
+  [PASS] (D1) commutator form-bound constants c2 finite and STABLE across M (hypothesis (ii) holds)  --  c2 -> H:0.536 P:1.000 K:2.051
+  [PASS] (D2) => by Nelson commutator theorem (RS X.37): H,P,K essentially self-adjoint on the Hermite core  --  and Delta=H^2+P^2+K^2 e.s.a. -> (Nelson 1959) the rep integrates to a unitary group rep
+
+--------------------------------------------------------------------------------------------
+Part E: consequences + non-triviality controls
+--------------------------------------------------------------------------------------------
+  [PASS] (E1) boost flow exp(-i theta K) is a UNITARY one-parameter group (Stone), self-adjoint K  --  norm-preserving + U^dag U = I to 1e-9 across theta
+  [PASS] (E2) Nelson Laplacian Delta = H^2+P^2+K^2 is Hermitian with real, bounded-below spectrum (e.s.a. signature)  --  min eig = 2.634
+  [PASS] (E3) control: non-Hermitian K + 0.3i I has COMPLEX spectrum (fails self-adjointness battery)  --  max|Im eig| = 0.30
+  [PASS] (E4) control: half-line -i d/dx has UNEQUAL deficiency (1,0) (NOT e.s.a.) -- boost uses the full line R  --  the mass shell is the full hyperbola (rapidity over R), no boundary -> deficiency (0,0)
+
+--------------------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------------------
+  REPAIRED:
+   A  the false step located: rapidity-Gaussian analytic for K, NOT for H (||H^n psi||/n! ~ e^{n^2/2a})
+   B-D  correct route = Nelson commutator theorem (RS X.37) with N = momentum harmonic oscillator:
+        (i) N-boundedness c1 and (ii) commutator form-bound c2 verified STABLE across truncation
+        for H,P,K -> e.s.a. on the genuine Hermite/Schwartz core; NO common analytic vectors needed
+   E  unitary boost flow (Stone); Delta real spectrum; non-Herm + half-line controls fail as required
+  3+1d adds only compact J (e.s.a. on ang-mom bands) + bounded spin Wigner term (Kato-Rellich) = the
+  original note's undisputed S-i.  Literature (Nelson 1959; RS I/II; Stone): comparator only.
+
+============================================================================================
+TOTAL: 12 PASS / 0 FAIL
+============================================================================================

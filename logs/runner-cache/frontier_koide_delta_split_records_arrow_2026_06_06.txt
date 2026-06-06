@@ -1,0 +1,35 @@
+================================================================================
+Charged-lepton doublet splitting (delta != 0) is a recordable outcome: the arrow
+(companion to KOIDE_R_HALF_RECORD_NATIVE_READOUT; carries the recordable lens to delta)
+================================================================================
+
+[BLOCK 1] K-even / K-odd channel decomposition (cited; reproven)
+  [PASS] H = a I + |b|cos(delta) S + |b|sin(delta) J  (exact, entry-wise)  --  S=C+C^2 (K-even), J=i(C-C^2) (K-odd)
+  [PASS] S = C + C^2 is K-even (conj(S) = S)
+  [PASS] J = i(C - C^2) is K-ODD (conj(J) = -J)
+  [PASS] J is Hermitian (J^dagger = J)
+  [PASS] J _|_ S in Hilbert-Schmidt (Tr(J S^dagger) = 0)
+
+[BLOCK 2] The doublet splitting IS the K-odd channel (∝ sin delta)
+  [PASS] doublet split lam1 - lam2 = -2 sqrt(3) |b| sin(delta) (∝ J-coefficient)  --  -2*sqrt(3)*bmod*sin(delta)
+  [PASS] delta = 0 -> doublet DEGENERATE (only 2 distinct masses)  --  K-even record alone: degenerate doublet
+  [PASS] delta != 0 -> doublet RESOLVED (3 distinct masses): needs the K-odd J
+  [PASS] S spectrum {-1,-1,+2}: K-even record is TWO-outcome (doublet degenerate)  --  [-1, 2]
+  [PASS] J spectrum {0,+/-sqrt3}: the K-odd channel RESOLVES the doublet  --  [-sqrt(3), 0, sqrt(3)]
+
+[BLOCK 3] KEY: a nonzero K-odd record (delta != 0) IS an arrow (T-odd)
+  [PASS] K-odd channel has ZERO record in any K-even (T-symmetric) state: Tr(rho_even J)=0  --  no-arrow record => <J>=0 => delta=0 (degenerate)
+  [PASS] => nonzero recorded <J> (delta != 0) REQUIRES T-breaking = a recorded ARROW  --  ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL (arrow is recorded)
+  [PASS] => delta != 0 (the 3-distinct-mass splitting) is a RECORDABLE outcome (the arrow)  --  not a separate Koide admission
+
+[BLOCK 4] Consistency with the count: Q is delta-INDEPENDENT
+  [PASS] dQ/d(delta) = 0: Q = 1/3 + (2/3) r holds for ANY delta  --  recording the arrow (delta) does NOT disturb the count r=1/2 (Q=2/3)
+  [PASS] => 3 distinct masses = (count r=1/2, record-native) + (split delta!=0, arrow)  --  consistent with KOIDE_R_HALF_RECORD_NATIVE_READOUT
+
+[BLOCK 5] Reframe of the FLAVOR_KREAL no-go + teeth
+  [PASS] no K-real instrument needed: K-odd channel J is recordable (= the arrow)  --  the no-go target (force delta=0) is the wrong target
+  [PASS] TEETH: no arrow (K-even only) -> delta=0 -> degenerate doublet -> only 2 masses  --  the arrow is REQUIRED for 3 distinct charged leptons
+
+================================================================================
+SCORECARD:  PASS = 17   FAIL = 0
+================================================================================

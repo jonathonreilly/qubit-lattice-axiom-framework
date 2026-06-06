@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_stable_post_record_dial_location_certificate_2026_06_06.py
+runner_sha256: 673ff78f84dce7832146b287ddb06abe63863ccb3d8ba9027d11575bc45eaf9e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+Stable post-record dial location certificate
+====================================================================
+[PASS] certificate exists (docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md)
+[PASS] equal_letter exists (docs/RECORD_EQUAL_LETTER_STABLE_LOCATION_2026-06-05.md)
+[PASS] prior_selector exists (docs/RECORD_PRIOR_STABILITY_SELECTOR_2026-06-05.md)
+[PASS] generation_prior exists (docs/GENERATION_PRIOR_STABILITY_2026-06-05.md)
+[PASS] certificate status is stable-location only
+[PASS] certificate states s0/rhalf/Q23 target
+[PASS] certificate keeps force/selection wording forbidden
+[PASS] certificate asks sharper next question
+[PASS] equal-letter note says equal point is stable location
+[PASS] equal-letter note gives reset contraction
+[PASS] equal-letter note maps s0 to rhalf and Q23
+[PASS] equal-letter note says same construction works for every s
+[PASS] equal-letter note forbids forced dial claims
+[PASS] equal-letter note runner is clean
+[PASS] prior selector states atom symmetry selects equal endpoint
+[PASS] prior selector states microstate symmetry selects dimension endpoint
+[PASS] prior selector says stability alone does not choose endpoint
+[PASS] prior selector gives dial formula
+[PASS] prior selector endpoints are s0 and s1
+[PASS] prior selector says no new axiom
+[PASS] prior selector runner is clean
+[PASS] generation prior note states unforced stable setting
+[PASS] generation prior note says post-record dynamics does not force equal-letter
+[PASS] generation prior note says no non-circular post-record dynamics selects equal-letter
+[PASS] generation prior note identifies token count vs type count
+[PASS] generation prior note identifies dial as pre-record operator property
+[PASS] generation prior note runner is clean
+[PASS] equal-letter reset leaves u stationary
+[PASS] equal-letter deviation contracts by 1-alpha
+[PASS] equal-letter imbalance contracts by 1-alpha
+[PASS] s=0 target is equal-letter ((Fraction(1, 2), Fraction(1, 2)))
+[PASS] s=1 target is dimension/Born endpoint ((Fraction(1, 3), Fraction(2, 3)))
+[PASS] s=0 maps to r=1/2
+[PASS] s=0 maps to Q=2/3 (2/3)
+[PASS] s=1 maps to r=1
+[PASS] s=1 maps to Q=1
+[PASS] arbitrary fixed target pi_s is stationary
+[PASS] arbitrary fixed target deviations contract
+[PASS] same stability form can target different dial points
+[PASS] allowed statement is only stable location
+[PASS] forced-dial statements remain forbidden
+[PASS] post-record count selector remains forbidden
+[PASS] audit verdict remains forbidden
+====================================================================
+CERTIFIED: s=0/r=1/2/Q=2/3 is a stable post-record location.
+NOT CERTIFIED: forced dial selection, Koide closure, or audit verdict.
+STATUS: exact-support stable-location certificate; audit_required_before_effective_retained=true
+SUMMARY: PASS=43 FAIL=0
+
+----- stderr -----
+

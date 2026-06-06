@@ -1,0 +1,35 @@
+loop_slug: stable-post-record-dial-location-20260606
+branch: physics-loop/stable-post-record-dial-location-20260606
+base: origin/main
+mode: campaign
+runtime_request: 12h
+cycle_count_this_block: 1
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "This is a stable-location certificate, not a retained-grade dial-selection theorem."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: "Stable post-record equal-letter dial location"
+hard_residual: "The physical dynamics or invariance surface selecting among stable dial targets remains open."
+files_touched:
+  - docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md
+  - scripts/frontier_stable_post_record_dial_location_certificate_2026_06_06.py
+  - logs/runner-cache/frontier_stable_post_record_dial_location_certificate_2026_06_06.txt
+  - .claude/science/physics-loops/stable-post-record-dial-location-20260606/
+open_imports:
+  - "Physical selector for s remains open."
+  - "Post-record count dynamics does not select equal-letter."
+  - "Record-production dynamics and Born/probability bridges remain separate."
+no_go_routes:
+  - "Stable location implies forced dial."
+  - "Post-record count dynamics selects Koide."
+trace_gate_classification: upstream_support
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Run cache/checks, commit, push, open PR, verify PR, then pivot."
+stop_condition: "Do not stop after this block unless the 12-hour runtime is exhausted or every viable queued target is blocked."

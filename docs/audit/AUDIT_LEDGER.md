@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 201 |
-| **retained_bounded** | 684 |
+| **retained_bounded** | 685 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1332 |
+| unaudited | 1331 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1074 |
+| `audited_clean` | 1075 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1639 |
+| `unaudited` | 1638 |
 
 | claim_type | count |
 |---|---:|
@@ -540,6 +540,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `global_coherence_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `graph_first_selector_derivation_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `graph_first_su3_integration_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -7922,6 +7923,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The live replay asserts the archived scaffolded 7/9 free_coh result against the old 6/9 two-property rule, while the source note's 2026-04-07 update and dependency restrict that result to scaffold-specific historical evidence.  _(class `C`)_
 - **chain closes:** True — The primary runner completes and asserts the bounded archived scaffolded numbers, and the direct dependency is retained-bounded for the off-scaffold reversal. The clean scope excludes any generator-agnostic predictor or simple-classifier exhaustion theorem.
 - **rationale:** The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here.
+- **auditor confidence:** high
+
+### `graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note`
+
+- **Note:** [`GRAPH_BRAID_N3_FERMION_SIGN_STAYS_NONFIBERED_NARROW_THEOREM_NOTE.md`](../../docs/GRAPH_BRAID_N3_FERMION_SIGN_STAYS_NONFIBERED_NARROW_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite N=3 graph-braid witnesses K_5, K_{3,3}, and the L=3 Z^3 K_{3,3} subdivision show no tested base-edge-fibered exchange enrichment and no torsion enrichment beyond the K_5 order-2 class.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-181435-6545f9badb-graph_braid_n3_fermion_sign_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Over GF(2), the base-edge link-sign cochains span a subspace of H^1(UD_N; Z_2) of codimension exactly 1 at N=2 and N=3, while the clean K_5 N=3 integral witness has H_1(UD_3)=Z^6 plus Z_2 with no Z_3/Z_4 torsion enrichment.  _(class `C`)_
+- **chain closes:** True — The runner constructs the finite UD_N cell complexes, cubical boundary maps, Smith normal form inputs, and GF(2) quotient dimensions directly, with no helper imports or external comparator values. An independent check using Sympy Smith normal form and a separate GF(2) span(W) intersect Z^1 quotient reproduced the displayed H_1 torsion and codim-1 fibered-subspace results.
+- **rationale:** The load-bearing quantities are finite exact linear algebra on explicitly specified graph witnesses. The runner source computes the asserted objects rather than hard-coding prior note values, and the cached output is consistent with the implementation. Independent finite checks matched the H_1 and H^1/fibered dimensions, including subdivision stability and the Z^3 cube witness, so the bounded finite-witness conclusion closes as stated.
 - **auditor confidence:** high
 
 ### `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29`

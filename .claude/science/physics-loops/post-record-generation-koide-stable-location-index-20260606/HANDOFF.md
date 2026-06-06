@@ -38,8 +38,8 @@ because it builds directly on the supplied stable-setting certificate.
 
 ## Next exact action
 
-Poll PR #2844 until `audit_pipeline` completes, then record the final clean PR
-state if the check succeeds.
+Continue campaign to the next ranked source-measure or directed-certificate
+lane while runtime remains.
 
 ## PR
 
@@ -50,4 +50,8 @@ initial_head: "ad1ff5c9fa34a63243448b9b1e9d82e5873e4855"
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline QUEUED"
+final_head: "efdd26c385681fa6726840a77e59aa9f01248e18"
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "no status check rollup reported"
 ```

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 671 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 82 |
+| ~~audited_conditional~~ | 83 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1039 |
-| `audited_conditional` | 82 |
+| `audited_conditional` | 83 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1511 |
+| `unaudited` | 1510 |
 
 | claim_type | count |
 |---|---:|
@@ -1243,6 +1243,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13086,6 +13087,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source genuinely computes the finite 3D Poisson stencil and propagates with the computed field; it does not hard-code the reported observables or import contested values from another note. The closed scope is the stated finite/static harness, not continuum convergence, retardation, or a self-gravity bridge.
 - **rationale:** The included runner computes the load-bearing 3D field from the local stencil and then recomputes the downstream observables from that field. The cited upstream authority is retained_no_go, which is retained-grade under the rubric and is not used as an open physical bridge. The stdout supports the scoped claims: derived axial falloff without an imposed longitudinal factor, TOWARD shifts in all three families, F~M near 1, machine-precision Born behavior, and exact s=0 null behavior. This verdict is limited to the finite static runner scope and does not certify larger-lattice convergence or time-dependent causal-cone closure.
 - **auditor confidence:** medium
+
+### `poisson_backreaction_live_threshold_packet_note_2026-05-29`
+
+- **Note:** [`POISSON_BACKREACTION_LIVE_THRESHOLD_PACKET_NOTE_2026-05-29.md`](../../docs/POISSON_BACKREACTION_LIVE_THRESHOLD_PACKET_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite live assertion for the stated Poisson self-gravity runner on G = 0.000, 0.001, 0.005, 0.010, 0.011, 0.012, 0.020, 0.050, 0.100: positive deflection throughout and first listed escape below one at G=0.050.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-001233-040ae4b43a-poisson_backreaction_live_th`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the current finite Poisson self-gravity harness, TOWARD deflection is preserved on the tested G grid and detector escape crosses below one between G=0.020 and G=0.050; the first sub-unit escape point in the declared grid is G=0.050.  _(class `C`)_
+- **chain closes:** False — The primary runner source computes the displayed finite table by calling scripts.backreaction_poisson, but the helper source is not included in the restricted packet despite being load-bearing. Without that helper, the build, field, propagation, and self-field computations are opaque and the independent formula inventory cannot close.
+- **rationale:** The runner output and primary source are internally aligned: the assertions check positive delta on the grid, escape greater than one through G=0.020, escape below one at G=0.050, and smaller escape at G=0.100. However, the primary source imports scripts.backreaction_poisson as bp and all load-bearing numerical operations are delegated to that helper. The packet states that helper source should be exposed, but section 3b provides no helper source, so the computation cannot be independently audited from the restricted packet.
+- **auditor confidence:** high
 
 ### `poisson_exhaustive_uniqueness_note`
 

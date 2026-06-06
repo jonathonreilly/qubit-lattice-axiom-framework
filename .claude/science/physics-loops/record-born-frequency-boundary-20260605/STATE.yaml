@@ -1,0 +1,31 @@
+loop_slug: record-born-frequency-boundary-20260605
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 19
+current_goal: "Prove the Born-frequency boundary for finite record histories."
+target_status: no-go
+actual_current_surface_status: no-go
+active_route: "finite history counts versus probability-model/convergence gate"
+hard_residual: "Born-frequency law, IID model, convergence theorem, and outcome selection remain open."
+branch: physics-loop/record-born-frequency-boundary-20260605
+base_branch: physics-loop/record-selective-instrument-atom-criterion-20260605
+stacked_on_pr: 2792
+files_touched:
+  - docs/RECORD_BORN_FREQUENCY_BOUNDARY_2026-06-05.md
+  - scripts/frontier_record_born_frequency_boundary_2026_06_05.py
+  - logs/runner-cache/frontier_record_born_frequency_boundary_2026_06_05.txt
+  - .claude/science/physics-loops/record-born-frequency-boundary-20260605/
+open_imports:
+  - "Born-frequency law or probability model."
+  - "IID/trial independence premise."
+  - "Convergence theorem."
+  - "Outcome selection."
+no_go_routes:
+  - "Finite record counts derive Born probabilities."
+  - "History grammar supplies IID trials."
+  - "One finite history proves convergence."
+trace_gate_classification: negative_route_pruning
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

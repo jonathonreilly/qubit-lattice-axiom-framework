@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1313 |
+| unaudited | 1312 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
-| ~~audited_renaming~~ | 28 |
+| ~~audited_renaming~~ | 29 |
 | ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 7 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,17 +66,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 52 |
 | `audited_failed` | 51 |
 | `audited_numerical_match` | 16 |
-| `audited_renaming` | 28 |
-| `unaudited` | 1620 |
+| `audited_renaming` | 29 |
+| `unaudited` | 1619 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1326 |
 | `decoration` | 53 |
-| `meta` | 312 |
+| `meta` | 313 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 777 |
+| `positive_theorem` | 776 |
 
 | criticality | count |
 |---|---:|
@@ -1423,6 +1423,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -13593,6 +13594,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** A finite post-record history of length n can be paired with many strictly increasing clock sequences tau_0 < ... < tau_n that preserve the same word, counts, and prefix order while changing elapsed times and rates.  _(class `A`)_
 - **chain closes:** True — The projection from a clocked record to its word/count data is many-to-one: the listed uniform, slow, and accelerating clocks leave the finite record unchanged while changing n/(tau_n - tau_0). Therefore no record-only function can determine a unique physical elapsed time or rate across the allowed embeddings.
 - **rationale:** The load-bearing step is a direct algebraic non-uniqueness argument over finite sequences and monotone clock labels, not a fitted numerical comparison or symbol renaming. The runner partly performs source-anchor text checks, but its mathematical checks and the independent projection argument both support the scoped no-go. The no-go is branch-local: supplied clocks, stochastic event-time processes, Hamiltonians, and transfer steps remain open external inputs rather than being ruled out.
+- **auditor confidence:** high
+
+### `post_record_conditional_audit_evidence_ladder_2026-06-06`
+
+- **Note:** [`POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md`](../../docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only that the note and runner define and self-check a branch-local evidence-rung classifier with the stated firewalls.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-185512-73ff4f33c2-post_record_conditional_audi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The ladder is a finite classifier mapping each bounded or conditional row's supplied evidence to the branch-local reading it is allowed to claim.  _(class `E`)_
+- **chain closes:** True — The chain closes as a definition of a finite classifier: the table entries and runner logic consistently encode the stated evidence-to-status mapping. It does not close as a derived physics theorem because no upstream axiom or retained authority is supplied for the normative sufficiency rules.
+- **rationale:** The load-bearing content is the introduction of classifier categories and firewall rules, not a first-principles computation from the framework baseline. The runner implements those definitions directly, checks source anchors, exercises representative cases, and verifies that forbidden flags remain false. That supports internal consistency of the classifier but does not turn the classifier policy into an independent derivation.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

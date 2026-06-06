@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_conditional_audit_evidence_ladder_2026_06_06.py
+runner_sha256: 8ec566c9977e2ae7ad3ddff3088579bef85d2ccf6a1033e35a24aa02ce237165
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -59,3 +67,6 @@ EXPECTATION_ONLY_CERTIFIES_P_VALUES=FALSE
 SIMULATION_ONLY_CALIBRATED=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

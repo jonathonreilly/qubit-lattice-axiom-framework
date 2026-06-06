@@ -38,17 +38,18 @@ because it is the positive supplied-rule companion to PR #2853.
 
 ## Next exact action
 
-Commit, push, open the stacked PR, record PR status, then continue the campaign
-while runtime remains.
+Commit and push this PR-status checkpoint, then poll PR #2856 until the latest
+head is clean/success. After the final PR status is recorded, continue the
+campaign while runtime remains.
 
 ## PR
 
 ```yaml
-pr_url: null
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2856"
 base: "physics-loop/post-record-directed-certificate-kernel-selection-firewall-20260606"
-initial_mergeable: null
-initial_merge_state_status: null
-initial_checks: null
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline in progress at initial verification"
 final_mergeable: null
 final_merge_state_status: null
 final_checks: null

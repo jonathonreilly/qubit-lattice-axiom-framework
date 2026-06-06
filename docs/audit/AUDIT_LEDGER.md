@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1300 |
+| unaudited | 1299 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
 | ~~audited_conditional~~ | 65 |
-| ~~audited_failed~~ | 10 |
+| ~~audited_failed~~ | 11 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1095 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 54 |
+| `audited_failed` | 55 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1607 |
+| `unaudited` | 1606 |
 
 | claim_type | count |
 |---|---:|
@@ -1379,6 +1379,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_dynamics_campaign_closeout_index_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_dynamics_family_lift_closeout_index_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | E | - |
+| `post_record_generation_koide_stable_location_index_2026-06-06` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -13781,6 +13782,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** supplied dial domain + supplied flow, score, or thermal rule + supplied stability predicate + exact finite/algebraic check => stable-setting support under that supplied rule  _(class `E`)_
 - **chain closes:** False — The interface is defined coherently, but the source note's current-row-map conclusion does not close because the provided completed runner reports 52 flow_or_thermal_stability rows and lane counts 16/4/3/11/18, not the note's asserted 46 and 15/3/3/8/17.
 - **rationale:** The load-bearing certificate rule is a definition of an interface, not a first-principles derivation from an axiom, so it is class E. More importantly, the completed runner source hard-codes the note's expected row counts, but its actual reported run has FAIL=2 and contradicts the note's row-count and lane-count claims. The firewall/non-selection checks pass, but the exact-support claim as written includes stale current-snapshot counts and therefore does not close on its own packet.
+- **auditor confidence:** high
+
+### `post_record_generation_koide_stable_location_index_2026-06-06`
+
+- **Note:** [`POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md`](../../docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited whether the restricted packet supports a current 108-row generation/Koide stable-location index made from 105 selector rows plus 3 stable-feature rows under supplied rules, without selecting a dial.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-191837-fb47ceb0cb-post_record_generation_koide`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** 105 koide_or_generation_selector rows + 3 generation_or_koide_stable_feature rows + supplied stable-setting certificate semantics => 108-row generation/Koide stable-location index.  _(class `B`)_
+- **chain closes:** False — The completed runner contradicts the note's current-row-map premise: it reports 103 selector rows and 106 total index rows, not 105 and 108. The missing step is an updated ledger scan or corrected source row map that actually supports the stated counts.
+- **rationale:** The displayed arithmetic in the note is internally consistent, and the finite formulas Q(1/2)=2/3, 2(1/2)^2=1/2, and r*=1/2 for equal weights check independently. But the completed runner reports FAIL=3 exactly on the current selector-row count, selector class counts, and 108-row combined index checks. Because the headline row map is stale against the supplied completed runner output, the claim does not close as written.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 683 |
+| **retained_bounded** | 684 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1343 |
+| unaudited | 1342 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1066 |
+| `audited_clean` | 1067 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1650 |
+| `unaudited` | 1649 |
 
 | claim_type | count |
 |---|---:|
@@ -301,6 +301,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cycle_break_slice_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `cyclic_dft_uniform_magnitude_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cyclic_projector_compression_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4005,6 +4006,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Exact cyclic-group averaging over the explicitly defined 3-cycle C is self-adjoint and idempotent under the Frobenius inner product, so it projects Herm(3) onto the C-fixed subspace; direct exact basis enumeration identifies that subspace as span_R{I, C+C^2, i(C-C^2)} and gives the stated coefficient formula.  _(class `A`)_
 - **chain closes:** True — The theorem closes from the explicit definition of C and P_cyc plus exact finite-dimensional algebra. The parent-row context line is not load-bearing: the row has no dependencies, defines C directly, and the asserted conclusions are independently checkable symbolic identities.
 - **rationale:** The source note is narrowly scoped and the exact runner output reports 26 algebraic checks with no failures, covering the group facts, Hermiticity, idempotence and fixed basis, basis action, and generic compression formula. The generated classifier's decoration-candidate signal arises from the parent-row context check rather than from the theorem's proof obligations, so it does not convert this independent helper theorem into decoration. Residual risk is downstream misuse: later rows must not treat B0/B1/B2 as physical response channels without a separate audited bridge.
+- **auditor confidence:** high
+
+### `d3_upper_bound_import_scope_gate_note_2026-06-06`
+
+- **Note:** [`D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md`](../../docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the branch-local import-scope composition gate: given the stated lower runner set {3,4,5}, Bertrand d<=3 uniquely selects d=3, while weak atomic stability d<=4 does not.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-175137-c3955b5518-d3_upper_bound_import_scope_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current unique-d=3 composition is L_runner = {3,4,5} intersected with the Bertrand upper bound d <= 3, while the weaker atomic-stability bound d <= 4 gives {3,4}.  _(class `A`)_
+- **chain closes:** True — The set intersections close directly from the sets stated inside the source note: {3,4,5} ∩ {d:d<=3} = {3} and {3,4,5} ∩ {d:d<=4} = {3,4}. The physics upper bounds themselves remain explicitly imported and are not audited here as framework-internal derivations.
+- **rationale:** For the narrow gate claim, the load-bearing work is an algebraic finite-set composition, not a derivation of Bertrand's theorem, atomic stability, or dimension selection from the framework baseline. The source note explicitly firewalls those imported physics premises and does not promote the result repo-wide. The runner source supports this narrow reading: it hard-codes and checks the finite intersections plus prose anchors, and does not pretend to compute the imported upper-bound theorems from first principles.
 - **auditor confidence:** high
 
 ### `decoherence_action_independence_note`

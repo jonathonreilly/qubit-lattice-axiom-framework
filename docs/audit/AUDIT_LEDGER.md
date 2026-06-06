@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 685 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1331 |
+| unaudited | 1330 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1075 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1638 |
+| `unaudited` | 1637 |
 
 | claim_type | count |
 |---|---:|
@@ -1243,6 +1243,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_zdet_fermionic_statistics_admission_2026-06-04` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -8056,6 +8057,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On this 1D ring protocol, a transient retarded field pulse produces a small but repeatable permanent shift in marker separation after the pulse has passed, with weak-pulse approximate linearity and strong-pulse nonlinearity.  _(class `C`)_
 - **chain closes:** True — The included runner source actually evolves the field and marker wavepackets and computes the reported separations rather than printing hard-coded constants. The broader Yukawa-screening interpretation is not load-bearing for the narrowed bounded claim and is explicitly caveated by the cited robustness notes.
 - **rationale:** The runner output matches the source note's narrow numerical table and summary for the N=61 protocol, and the source code performs a genuine simulation from the stated toy equations. The cited retained_bounded authorities support restricting the claim away from a graph-family or publication-grade positive memory result. The note's wording about Yukawa screening as the likely cause is weaker than the current cited authorities allow, but the audited claim is bounded to the reproduced narrow-ring signal and the instability under robustness checks.
+- **auditor confidence:** high
+
+### `gravitational_wave_probe_note`
+
+- **Note:** [`GRAVITATIONAL_WAVE_PROBE_NOTE.md`](../../docs/GRAVITATIONAL_WAVE_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 20x20x20 ordered-lattice toy-runner sensitivity only: Poisson elliptic/no-wave behavior, imposed retarded-source versus instantaneous sampling, layer-order perturbation response, and valley-linear versus imposed quadratic action response.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-181926-ea346c1338-gravitational_wave_probe_not`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the supplied finite runner, Poisson-field gravitational waves are negative while imposed retarded-source sampling, layer-order perturbations, and the imposed f^2 action term are distinguishable in finite detector responses.  _(class `C`)_
+- **chain closes:** False — The scoped bounded claim would be a class-C finite-runner computation if the complete primary runner source were available. In this restricted packet, the middle of the primary runner, including load-bearing Test B/Test C source, is elided, so stdout and source-completeness printouts are insufficient to verify those computations.
+- **rationale:** The note is properly scoped as a bounded toy-model sensitivity probe and expressly does not claim physical gravitational waves, a PN observable, c_lattice normalization, or a derived f^2 coefficient. The visible runner portions for Tests A and D implement finite Poisson/action-form computations, and the displayed table arithmetic is internally consistent. However, the restricted packet contains an elision marker in the primary runner source across the load-bearing Test B/Test C region, so the auditor cannot verify from source that the retarded-source and layer-sensitivity results are actually computed rather than printed or otherwise hard-coded. This is a runner artifact completeness defect, not a substantive physical-bridge failure of the narrowed claim.
 - **auditor confidence:** high
 
 ### `gravitomagnetic_note`

@@ -17,4 +17,4 @@
 ## Packaging
 
 - Commit on a stacked physics-loop branch.
-- Open PR against `physics-loop/equal-letter-stable-location-20260605`.
+- Opened PR #2723 against `physics-loop/equal-letter-stable-location-20260605`.

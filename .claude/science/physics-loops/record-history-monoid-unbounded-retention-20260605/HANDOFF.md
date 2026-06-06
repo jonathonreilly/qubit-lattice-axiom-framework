@@ -10,6 +10,8 @@ Added exact support for post-record history and unbounded finite retention:
 
 Runner result: `PASS=25 FAIL=0`.
 
+Stacked PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2723
+
 ## Main finding
 
 Finite record histories form an append-only free monoid `O*`, and counts form

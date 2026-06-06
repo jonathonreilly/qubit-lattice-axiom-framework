@@ -1,11 +1,58 @@
 ===== runner cache v1 =====
 runner: scripts/shapiro_five_family_portability.py
-runner_sha256: 6848dfd0f1752f0f97bbefb6a9bf61239388e5eea68b3b687a4d33db11f65f44
-timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.01
-status: timeout
+runner_sha256: fb90d3350965089140ab0b19c91e2942cd5982467a248402bfb887038c13dbd9
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 120.44
+status: ok
 ----- stdout -----
+========================================================================================
+DISCRETE SHAPIRO DELAY: FIVE-FAMILY PORTABILITY
+NL=30, W=8, s=0.004, z_src=3.0
+Families: 5 (three-family core plus quadrant and radial sign-law families), c values: [2.0, 1.0, 0.5, 0.25]
+========================================================================================
+
+ZERO CONTROL
+  Fam1: zero lag = +6.982e-02 (exact by construction)
+  Fam2: zero lag = +7.039e-02 (exact by construction)
+  Fam3: zero lag = +6.981e-02 (exact by construction)
+  Fourth family quadrant: zero lag = +6.545e-02 (exact by construction)
+  Fifth family radial: zero lag = +7.061e-02 (exact by construction)
+  -> exact zero control survives on all five families
+
+CROSS-FAMILY PHASE TABLE
+      c           Fam1           Fam2           Fam3           Quad         Radial     max diff
+----------------------------------------------------------------------------------------------
+   inst        +0.0000        +0.0000        +0.0000        +0.0000        +0.0000       0.0000
+   2.00        +0.0401        +0.0401        +0.0400        +0.0401        +0.0424       0.0024
+   1.00        +0.0499        +0.0501        +0.0499        +0.0492        +0.0514       0.0022
+   0.50        +0.0621        +0.0622        +0.0620        +0.0620        +0.0615       0.0008
+   0.25        +0.0679        +0.0679        +0.0679        +0.0652        +0.0655       0.0027
+
+REPRESENTATIVE ROWS
+  Fam1: restored(drift=0.20, restore=0.70, seed=0), restored(drift=0.20, restore=0.70, seed=1)
+  Fam2: restored(drift=0.05, restore=0.30, seed=0), restored(drift=0.05, restore=0.30, seed=1)
+  Fam3: restored(drift=0.50, restore=0.90, seed=0), restored(drift=0.50, restore=0.90, seed=1)
+  Fourth family quadrant: quadrant(drift=0.00, seed=0)
+  Fifth family radial: radial(drift=0.05, seed=0)
+
+STATIC BASELINE
+  Fam1: static phase = +0.0000 ± 0.0000
+  Fam2: static phase = +0.0000 ± 0.0000
+  Fam3: static phase = +0.0000 ± 0.0000
+  Fourth family quadrant: static phase = +0.0000 ± 0.0000
+  Fifth family radial: static phase = +0.0000 ± 0.0000
+
+SAFE READ
+  - exact zero-source control stays exact on all five families
+  - the c-dependent phase lag survives on the additional quadrant and radial rows
+  - family spread remains small, but it is a little larger than in the three-family core
+  - this is a portability statement for the phase observable, not an absolute NV calibration
+
+NARROW CONCLUSION
+  The Shapiro-style phase lag extends beyond the three-family core onto the additional retained quadrant and radial families on the sampled rows.
+  The phase observable remains portable, exact zero control survives, and the extra families stay within a few milliradians of the core curve.
+  The claim remains proxy-level and row-sampled, not a family-wide theorem.
 
 ----- stderr -----
 

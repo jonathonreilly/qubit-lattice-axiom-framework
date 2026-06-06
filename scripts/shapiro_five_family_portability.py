@@ -17,6 +17,10 @@ The claim surface stays small:
 
 from __future__ import annotations
 
+# Heavy compute runner. The five-family portability replay completes just
+# above the default 120 second audit timeout on this machine.
+AUDIT_TIMEOUT_SEC = 600
+
 import argparse
 import math
 import os

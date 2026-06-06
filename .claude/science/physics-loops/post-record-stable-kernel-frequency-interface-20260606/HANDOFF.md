@@ -27,4 +27,19 @@ finite expected count/frequency behavior.
 
 ## PR
 
-Pending.
+Opened:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2830
+```
+
+Initial GitHub verification:
+
+- state: `OPEN`;
+- base/head: `main` / `physics-loop/post-record-stable-kernel-frequency-interface-20260606`;
+- mergeable: `MERGEABLE`;
+- merge state: `UNSTABLE`;
+- checks: `audit_pipeline` in progress.
+
+The initial unstable state is an in-progress-check state, not a content review
+finding. Recheck after the audit job completes and patch the final status.

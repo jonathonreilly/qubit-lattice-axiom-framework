@@ -38,3 +38,16 @@ Checks performed:
 - `git diff --check` passed.
 
 Disposition: no fixes required before PR.
+
+## PR Verification 1
+
+Status: open with audit in progress.
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2830
+- base/head: `main` / `physics-loop/post-record-stable-kernel-frequency-interface-20260606`
+- mergeable: `MERGEABLE`
+- merge state: `UNSTABLE`
+- checks: `audit_pipeline` in progress
+
+Disposition: commit this PR-status patch, push, and recheck after the audit
+completes.

@@ -1,9 +1,10 @@
 # PR Backlog
 
-PR creation pending.
-
-If GitHub creation fails after local verification, use:
+PR created:
 
 ```text
-gh pr create --base main --head physics-loop/post-record-stable-kernel-frequency-interface-20260606 --title "[physics-loop] post-record-stable-kernel-frequency-interface exact-support" --body-file /tmp/post-record-stable-kernel-frequency-interface-pr.md
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2830
 ```
+
+Initial verification: `MERGEABLE`, `UNSTABLE`, with `audit_pipeline` in
+progress. No PR backlog action is pending unless the running audit later fails.

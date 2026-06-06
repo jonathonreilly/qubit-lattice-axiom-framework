@@ -5,6 +5,8 @@
 Bounded-support / asymptotic epsilon-reset convergence block ready for stacked
 review. This block is stacked on PR #2782.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2784
+
 ## Intended Result
 
 For supplied per-step damping parameter `p`, the residual after `n` steps is
@@ -26,5 +28,5 @@ Checks:
 
 ## Next Action
 
-Commit, push, open a stacked PR, then pivot out of the reset stack unless a
-stronger physical implementation route is available.
+Pivot out of the reset stack unless a stronger physical implementation route
+is available.

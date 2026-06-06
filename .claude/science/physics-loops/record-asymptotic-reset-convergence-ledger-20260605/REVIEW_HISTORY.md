@@ -13,3 +13,11 @@ Checks run:
 - targeted wording sweep for exact/rate/clock/cost/dial/status overclaims
 
 All checks passed. No repo-wide authority surfaces were edited.
+
+## PR Verification
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2784
+- `gh pr view 2784` verified state `OPEN`, base
+  `physics-loop/record-finite-time-reset-semigroup-no-go-20260605`, head
+  `physics-loop/record-asymptotic-reset-convergence-ledger-20260605`, and
+  `mergeStateStatus=UNSTABLE` while checks were pending.

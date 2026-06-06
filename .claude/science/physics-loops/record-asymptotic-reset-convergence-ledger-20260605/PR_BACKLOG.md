@@ -1,8 +1,14 @@
 # PR Backlog
 
-PR not created yet.
+PR created and verified:
 
-Planned stacked PR:
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2784
+- Base: `physics-loop/record-finite-time-reset-semigroup-no-go-20260605`
+- Head: `physics-loop/record-asymptotic-reset-convergence-ledger-20260605`
+- State: `OPEN`
+- Merge state at verification: `UNSTABLE` while checks were pending.
+
+Creation command used:
 
 ```bash
 gh pr create \

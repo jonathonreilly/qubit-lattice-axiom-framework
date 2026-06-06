@@ -1,0 +1,17 @@
+loop: flavor-det-character-patch-repair-20260606
+mode: campaign_block
+target_status: bounded-support
+active_route: finite independent Grassmann source patches
+current_surface_status: bounded-support source repair; independent audit required
+files_touched:
+  - docs/FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md
+  - scripts/flavor_det_character_selection_audit_ready_2026_06_04.py
+  - logs/runner-cache/flavor_det_character_selection_audit_ready_2026_06_04.txt
+hard_residual:
+  - baseline Lattice + Quantum + Record do not force cross-site Grassmann/CAR statistics
+  - coupled KS/Dirac surfaces with off-block source couplings are not factorized here
+trace_gate: direct_blocker_closure
+reachability: partially_closes
+pr_status: opened_after_verification
+next_exact_action: reviewer/auditor can re-audit the bounded finite-patch determinant-character row
+stop_condition: no stronger framework-native FS or coupled-source closure was found in this block

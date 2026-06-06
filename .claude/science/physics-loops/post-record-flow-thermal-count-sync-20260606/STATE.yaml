@@ -1,0 +1,23 @@
+loop: post-record-flow-thermal-count-sync-20260606
+mode: run
+target_status: exact-support
+current_goal: "Repair the audited-failed post-record flow/thermal stable-setting certificate by syncing current-snapshot row and lane counts."
+active_route: row_count_cache_sync
+target_claim_id: post_record_flow_thermal_stable_setting_certificate_2026-06-06
+target_blocker: "update the source note and runner expected lane counts to the current ledger snapshot, then re-run the certificate audit"
+files_touched:
+  - docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md
+  - scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt
+status:
+  actual_current_surface_status: exact-support
+  trace_class: direct_blocker_closure
+  reachability_to_target: closes
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+verification:
+  - "python3 scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py -> SUMMARY: PASS=43 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py"
+  - "git diff --check"
+next_exact_action: "Reviewer can extract the source/count repair and send the row back through independent audit."
+stop_condition: "No audit-data edits or verdict application in this branch."

@@ -10,6 +10,8 @@ pattern as `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 (applying standard Clifford-algebra theorem to `Cl(3,0)`) and the
 companion `GLEASON_ON_QUBIT_LATTICE_*` + `BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_*`
 notes (applying standard Gleason/Busch to the qubit-lattice substrate).
+**Primary runner:** [`scripts/kraus_choi_normalization_convention_check_2026_06_05.py`](../scripts/kraus_choi_normalization_convention_check_2026_06_05.py)
+**Primary runner cache:** [`logs/runner-cache/kraus_choi_normalization_convention_check_2026_06_05.txt`](../logs/runner-cache/kraus_choi_normalization_convention_check_2026_06_05.txt)
 
 ## Honest scope
 
@@ -48,8 +50,8 @@ Equivalently (Choi 1975), `Φ` is CP iff its **Choi matrix**
 C_Φ := (𝟙 ⊗ Φ) (|Ω⟩⟨Ω|)                                                 (2)
 ```
 
-(where `|Ω⟩ = Σ_i |i⟩|i⟩` is the maximally entangled vector on
-`A_Λ ⊗ A_Λ`) is positive semidefinite.
+(where this note uses the **unnormalized** convention
+`|Ω⟩ = Σ_i |i⟩|i⟩` on `A_Λ ⊗ A_Λ`) is positive semidefinite.
 
 The framework's qubit-lattice algebra `A_Λ = ⊗_x M_2(ℂ)` is a
 finite-dim matrix algebra (`M_d(ℂ)` with `d = 2^|Λ|`), so Kraus' and
@@ -81,10 +83,17 @@ A linear map `Φ: M_d(ℂ) → M_d(ℂ)` is CP iff its Choi matrix
 in equation (2)) is positive semidefinite.
 
 The Choi matrix construction:
-- `|Ω⟩ = (1/√d) Σ_i |i⟩|i⟩` (maximally entangled vector on
+- `|Ω⟩ = Σ_i |i⟩|i⟩` (unnormalized maximally entangled vector on
   `ℂ^d ⊗ ℂ^d`)
 - `C_Φ = (𝟙 ⊗ Φ)(|Ω⟩⟨Ω|)`
 - `Φ(X) = Tr_1[(X^T ⊗ 𝟙) C_Φ]` (inverse map)
+
+If one instead uses the normalized vector
+`|Ω_norm⟩ = d^(-1/2) Σ_i |i⟩|i⟩`, then
+`C_Φ^norm = C_Φ / d` and the inverse formula is
+`Φ(X) = d Tr_1[(X^T ⊗ 𝟙) C_Φ^norm]`. The source convention for this
+row is the unnormalized one above, so no extra factor appears in the
+displayed inverse formula.
 
 CP ↔ positive Choi matrix is the **Choi–Jamiołkowski isomorphism**
 between CP maps and positive bipartite operators.
@@ -104,8 +113,10 @@ for some `r_* ≤ d²` and Kraus operators `K_r ∈ M_d(ℂ)`. The map is
 
 Proof: spectral decomposition of the Choi matrix
 `C_Φ = Σ_r |v_r⟩⟨v_r|` (positive iff CP, by Step 1) gives Kraus
-operators `K_r = √d · vec^{-1}(|v_r⟩)` where `vec^{-1}` reverses
-the column-stacking isomorphism `M_d(ℂ) → ℂ^{d²}`.
+operators `K_r = vec^{-1}(|v_r⟩)` under the same unnormalized Choi
+convention, where `vec^{-1}` reverses the column-stacking isomorphism
+`M_d(ℂ) → ℂ^{d²}`. With the normalized Choi convention, the same
+calculation would instead carry the compensating `√d` factor.
 
 Minimal Kraus representations are unique up to unitary mixing of the
 Kraus operators; non-minimal representations are equivalent after

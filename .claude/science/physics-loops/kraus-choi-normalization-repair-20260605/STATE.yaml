@@ -1,0 +1,33 @@
+loop_slug: kraus-choi-normalization-repair-20260605
+created: 2026-06-05
+updated: 2026-06-05
+remote_base: origin/main
+branch: physics-loop/kraus-choi-normalization-repair-20260605
+target_claim_id: kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+proposal_allowed: false
+proposal_allowed_reason: "This branch repairs a normalization conflict and adds a finite convention check; independent audit remains required."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms: 0
+files_touched:
+  - docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+  - scripts/kraus_choi_normalization_convention_check_2026_06_05.py
+  - logs/runner-cache/kraus_choi_normalization_convention_check_2026_06_05.txt
+open_imports:
+  - "Kraus 1971 and Choi 1975 remain named standard finite-dimensional theorem imports."
+checks:
+  - "python3 scripts/kraus_choi_normalization_convention_check_2026_06_05.py"
+  - "python3 -m py_compile scripts/kraus_choi_normalization_convention_check_2026_06_05.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/kraus_choi_normalization_convention_check_2026_06_05.py --force --push-mode=none --allow-non-main --concurrency 1"
+review_disposition: pass
+pr_url: pending
+next_exact_action: "Commit, push, and open the review PR."
+stop_condition: "Block complete after PR creation and verification."

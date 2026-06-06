@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 683 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1223 |
+| unaudited | 1222 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 91 |
+| ~~audited_conditional~~ | 92 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1061 |
-| `audited_conditional` | 91 |
+| `audited_conditional` | 92 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1526 |
+| `unaudited` | 1525 |
 
 | claim_type | count |
 |---|---:|
@@ -1259,6 +1259,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -11170,6 +11171,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For (4) to hold for every subsequent effect, trace-duality forces sigma|_P = (P sigma P) / Tr(P sigma P).  _(class `A`)_
 - **chain closes:** False — The trace-duality and normalization algebra is correct once the sequential product and trace probability representation are assumed. Those assumptions are not supplied by the cited Minimal Axioms authority, which explicitly does not supply probability, Born weights, or measurement dynamics.
 - **rationale:** The displayed Lüders update follows algebraically from Bayes consistency only after importing M_{P,E}=PEP and the trace state/effect probability pairing. The restricted packet provides only the accepted qubit-lattice axiom authority, and that authority does not provide measurement instruments or probabilities. The note also admits the sequential-effect composition as an unclosed standard-math import, so the result is a bounded conditional theorem rather than a clean closure from the supplied authority.
+- **auditor confidence:** high
+
+### `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite-dimensional algebraic claim that, assuming the Lueders update and the trace/effect probability pairing for states and effects on M_d(C), PEP is the two-step effect and is a valid effect with the stated associativity checks.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-121112-c0a2d0b800-luders_sequential_effect_com`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By trace cyclicity Tr(P rho P E)=Tr(rho P E P) and Tr(P rho P)=Tr(rho P), so Tr(rho|_P E)=Tr(rho PEP)/Tr(rho P) and the two-step pre-update effect is PEP.  _(class `A`)_
+- **chain closes:** False — The matrix identities themselves close by standard finite-dimensional algebra. The restricted packet does not independently supply the Lueders update or the physical probability-status of the trace/effect pairing, so the advertised parent-repair bridge remains conditional on premises outside the cited accepted axiom.
+- **rationale:** The runner source genuinely constructs projections, effects, and states and checks exact and numerical matrix algebra; it is not a print-only or hard-coded comparator runner. Those checks support class A, not class C: the load-bearing move is trace cyclicity and congruence on existing finite-matrix objects. However the note's bridge claim depends on taking the Lueders update as an upstream rule and treating Tr(rho E) as the probability pairing, while the provided Minimal Axioms explicitly do not supply measurement or Born-rule structure. Therefore the scoped algebra is correct, but the row is conditional rather than clean as an independent repair of the parent import.
+- **open / conditional deps cited:**
+  - `LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`

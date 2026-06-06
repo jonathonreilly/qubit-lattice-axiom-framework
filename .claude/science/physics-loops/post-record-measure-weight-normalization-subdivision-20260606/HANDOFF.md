@@ -38,8 +38,8 @@ because it builds directly on the `measure_weight_normalization` row split.
 
 ## Next exact action
 
-Wait for the final pushed head's `audit_pipeline` to complete, then record the
-clean final PR/check state.
+Closed for campaign purposes. Pivot to the persistent-record production bridge
+prototype or generation/Koide stable-location index.
 
 ## PR
 
@@ -49,7 +49,7 @@ base: "physics-loop/post-record-selector-dial-bucket-subdivision-20260606"
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline queued at first verification"
-final_mergeable: null
-final_merge_state_status: null
-final_checks: null
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "audit_pipeline completed SUCCESS at clean verification"
 ```

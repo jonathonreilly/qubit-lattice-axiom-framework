@@ -1,0 +1,21 @@
+loop_slug: koide-framing-cache-20260606
+branch: physics-loop/koide-framing-cache-20260606
+base: origin/main@3ba784c50
+target_claim_id: koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02
+target_status: no-go-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_result_edits: false
+files_touched:
+  - docs/KOIDE_EMBEDDING_FRAMING_WRITHE_SO2_VS_SPIN_Z2_DECOUPLING_NARROW_NO_GO_NOTE_2026-06-02.md
+  - logs/runner-cache/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.txt
+  - .claude/science/physics-loops/koide-framing-cache-20260606/
+checks:
+  - command: python3 scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py
+    result: SCORECARD PASS=24 FAIL=0
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py --force --allow-non-main --push-mode none
+    result: refreshed cache, ok
+remaining_blockers:
+  - reviewer/auditor must decide final ledger status
+next_exact_action: open review PR
+

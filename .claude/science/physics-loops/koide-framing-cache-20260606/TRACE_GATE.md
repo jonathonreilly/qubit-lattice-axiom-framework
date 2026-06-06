@@ -1,0 +1,15 @@
+# Trace Gate
+
+```yaml
+trace_class: direct_blocker_closure
+target_claim_id: koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02
+target_blocker_text: "runner_artifact_issue rerun scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py in an environment with networkx installed and attach the completed PASS/FAIL transcript."
+source_of_blocker_text: audit_ledger
+reachability_to_target: closes
+artifact_role: runner_certificate
+next_trace_action: "Reviewer/auditor can re-audit the scoped no-go row against the completed cache."
+```
+
+This block supplies the missing artifact only. It does not widen the abelian
+embedding-framing no-go.
+

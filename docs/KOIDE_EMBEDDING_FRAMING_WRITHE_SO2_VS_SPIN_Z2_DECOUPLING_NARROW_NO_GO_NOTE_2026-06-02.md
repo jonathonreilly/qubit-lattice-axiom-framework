@@ -8,6 +8,9 @@ matter-spinor postulate.
 **Primary runner:**
 [`scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py`](../scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py)
 (SCORECARD: PASS=24 FAIL=0)
+**Completed runner cache:**
+[`logs/runner-cache/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.txt`](../logs/runner-cache/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.txt)
+(`SCORECARD: PASS=24 FAIL=0`; rerun with `networkx` available)
 
 ## Claim
 

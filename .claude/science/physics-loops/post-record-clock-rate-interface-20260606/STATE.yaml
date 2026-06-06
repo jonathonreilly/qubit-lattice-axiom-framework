@@ -2,7 +2,7 @@ loop_slug: post-record-clock-rate-interface-20260606
 branch: physics-loop/post-record-clock-rate-interface-20260606
 base: origin/main
 campaign: dynamics lanes
-cycle_status: verified_pending_pr
+cycle_status: pr_open_verified
 target_status: no-go
 actual_current_surface_status: no-go
 trace_class: negative_route_pruning
@@ -33,11 +33,15 @@ trace_gate:
   artifact_role: no_go
 review_findings: "Local review tightened one vacuous same-word runner check; no overclaim, clock/rate selection, Hamiltonian selection, or dial-selection issue found."
 pr_status:
-  url: null
-  number: null
-  mergeable: null
-  checks: null
-next_exact_action: "Commit, push, open PR, patch PR status."
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2821
+  number: 2821
+  state: OPEN
+  base: main
+  head: physics-loop/post-record-clock-rate-interface-20260606
+  mergeable: MERGEABLE
+  merge_state_status: UNSTABLE
+  checks: "audit_pipeline queued at initial PR verification"
+next_exact_action: "Push PR-status patch, reverify PR, then pivot to the next campaign lane."
 stop_condition: "Block closes when PR is open and verified or PR backlog records exact failure."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false

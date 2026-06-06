@@ -22,7 +22,9 @@ So `det_C` is not inherited; **`r=1/2` (Q=2/3) is a genuine, precisely-localized
 ## What the import IS (correcting two prior overstatements)
 **Correction #1 — it is NOT the chirality gate.** The `det_C`/U(1) generator `G_U1` **commutes** with
 `Γ_χ=(2/3)J−I` and with `C` (it is on-block, C₃-equivariant); the chiral orbit-splitting grading is
-**off-block and anticommutes** (`‖{G_U1,Γ_χ}‖=2.83≠0`). They are algebraically **orthogonal** — the
+the separate kind of object that would have to be **off-block and anticommuting**. The displayed
+nonzero anticommutator (`‖{G_U1,Γ_χ}‖=2.83≠0`) confirms that `G_U1` is not that chiral splitter. They
+are algebraically **orthogonal** — the
 campaign's earlier "single shared gate" claim is **unsupported on R³**. (Whether a lifted
 `M₂(ℂ)⊗(Z₂)³` substrate-parent projects onto *both* is untested — the genuine open frontier for unification.)
 

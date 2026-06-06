@@ -1,0 +1,15 @@
+goal: "Repair chirality/anticommutator convention wording in FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30 without touching audit results."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Clarify that G_U1 is on-block/commuting with Gamma_chi and has a nonzero anticommutator; a true chiral splitter would be a separate off-block anticommuting object."
+files_touched:
+  - docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md
+  - scripts/flavor_detR_default_full_exercise_2026_05_30.py
+  - logs/runner-cache/flavor_detR_default_full_exercise_2026_05_30.txt
+open_imports:
+  - "physical generation beta=0 tracial-vacuum premise remains unaudited/open"
+  - "det_C versus det_R measure choice remains unforced"
+audit_results_edited: false
+next_exact_action: "Reviewer can re-audit the convention wording; do not promote the full row without Half-B tracial-vacuum closure."

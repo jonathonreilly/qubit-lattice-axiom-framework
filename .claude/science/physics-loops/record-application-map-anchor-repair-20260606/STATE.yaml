@@ -1,0 +1,19 @@
+loop_slug: record-application-map-anchor-repair-20260606
+target: record_axiom_audit_application_map_2026-06-06
+mode: science-fix
+started_from: origin/main
+branch: physics-loop/record-application-map-anchor-repair-20260606
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: "Repair stale source-anchor checks in the Record application-map runner."
+files_touched:
+  - scripts/frontier_record_audit_application_map_2026_06_06.py
+  - logs/runner-cache/frontier_record_audit_application_map_2026_06_06.txt
+blocker_from_current_audit: "Re-audit after correcting or justifying the two flavor_det_character_selection anchor phrases and rerunning the classifier."
+result: "Runner now verifies the current source note language and exits PASS=39 FAIL=0."
+audit_data_edited: false
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can route this PR for re-audit of the record application-map row."
+stop_condition: "Block complete; campaign should continue with the next ledger repair target."

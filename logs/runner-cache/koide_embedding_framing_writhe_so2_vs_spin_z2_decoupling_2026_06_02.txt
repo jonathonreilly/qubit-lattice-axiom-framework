@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py
 runner_sha256: f56f55fee4f3f192ab7f091f66341710602fd8d2be7c94bd26782c607b20f41e
-timeout_sec: 120
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 4.60
+elapsed_sec: 4.33
 status: ok
 ----- stdout -----
 ========================================================================
@@ -56,4 +56,3 @@ Obstruction IV: the SO(2)/U(1) framing CONNECTION route is closed too
 SCORECARD: PASS=24 FAIL=0
 
 ----- stderr -----
-

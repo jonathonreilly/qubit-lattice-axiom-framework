@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_chirality_selector_enumerator_2026_06_06.py
+runner_sha256: 1fc3a184cebd8235871e3a81b69102ebb7a67fa5efdee6d23b1b0dab24ecea4d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+======================================================================================
+One-link chirality-selector enumerator: eps(x) is a free selector (staggered admission)
+======================================================================================
+
+[BLOCK 1] One-link enumerator: gamma5 = diag(omega_A, omega_B), omega in {+-1}
+  [PASS] gamma5^2 = I for all 4 assignments (valid chirality operators)
+  [PASS] trivial class (omega_A=omega_B): gamma5=+-I, NON-chiral, {D,g5}!=0
+  [PASS] staggered class (omega_A=-omega_B): chiral, {D,g5}=0
+
+[BLOCK 2] WITHOUT chiral constraint: >=2 inequivalent classes survive
+  [PASS] two INEQUIVALENT chirality classes survive on the bare surface
+  [PASS] => STOP CONDITION: >=2 survivors  =>  eps(x) is a FREE SELECTOR (admission)  --  the chirality H_staggered_chirality is admitted on the current surface
+
+[BLOCK 3] WITH chiral constraint {D,gamma5}=0: eps forced up to global gauge
+  [PASS] one bond: {D,g5}=0 selects omega_A = -omega_B (2 assignments = 1 up to global gauge)
+  [PASS] bipartite chain N=4: omega(i)omega(i+1)=-1 has exactly 2 solutions = +-(-1)^i  --  ['+-+-', '-+-+']
+  [PASS] bipartite chain N=6: omega(i)omega(i+1)=-1 has exactly 2 solutions = +-(-1)^i  --  ['+-+-+-', '-+-+-+']
+  [PASS] bipartite chain N=8: omega(i)omega(i+1)=-1 has exactly 2 solutions = +-(-1)^i  --  ['+-+-+-+-', '-+-+-+-+']
+  [PASS] => on the bipartite Z^3, the constraint forces omega(x) = +-(-1)^{sum x} = eps(x) up to global gauge  --  unique 2-coloring of the connected bipartite graph
+
+[BLOCK 4] The pivot + downstream (eta) + teeth
+  [PASS] PIVOT: eps forced  <=>  chiral anticommutation {D,gamma5}=0 is required
+  [PASS] framework does NOT currently require it: chirality 'out of scope'; spin-statistics UNAUDITED  --  so eps is a free selector on the current surface
+  [PASS] downstream: once eps is fixed, eta_mu(x) follow deterministically (spin-diag) -> NOT a separate atom
+  [PASS] TEETH: the trivial gamma5=I survivor = non-chiral (vector-like) matter, admissible on the bare surface  --  SM matter is chiral, so physics needs eps -- but that need is the admission, not a derivation
+
+[BLOCK 5] Synthesis: route R1 resolved
+  [PASS] VERDICT: eps(x) is a FREE SELECTOR on {Lattice,Quantum,Record} (a 2nd staggered admission)  --  the chirality H_staggered_chirality, beyond AC_phi_lambda
+  [PASS] precisely located: the admission IS the chiral anticommutation {D,gamma5}=0 (chiral symmetry)
+  [PASS] conditional forcing: eps = (-1)^{sum x} up to gauge IFF a retained spin-statistics/chirality theorem supplies {D,gamma5}=0  --  retirement path = audit that theorem; no new axiom
+
+======================================================================================
+SCORECARD:  PASS = 17   FAIL = 0
+======================================================================================
+
+----- stderr -----
+

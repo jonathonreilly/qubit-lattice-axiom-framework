@@ -10,6 +10,10 @@ bare_retained_allowed=false.
 [`scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py`](../scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt)
+**Load-bearing upstream helper:**
+[`scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py`](../scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py)
+with cache
+[`logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt)
 
 ## Result
 
@@ -32,17 +36,17 @@ on a dial without forcing that location to be the selected physical value.
 ## Current row map
 
 On the current ledger snapshot, the upstream stability/dynamics subdivision has
-`46` `flow_or_thermal_stability` rows. This block classifies them as:
+`56` `flow_or_thermal_stability` rows. This block classifies them as:
 
 | Stable-setting lane | Rows |
 |---|---:|
-| `bounded_obstruction_or_no_selection` | 15 |
-| `flow_or_records_stable_feature` | 3 |
+| `bounded_obstruction_or_no_selection` | 17 |
+| `flow_or_records_stable_feature` | 4 |
 | `generation_or_koide_stable_feature` | 3 |
-| `generic_stable_feature` | 8 |
-| `thermal_or_score_stable_feature` | 17 |
+| `generic_stable_feature` | 13 |
+| `thermal_or_score_stable_feature` | 19 |
 
-Total: `46` rows.
+Total: `56` rows.
 
 ## Meaning
 
@@ -95,10 +99,12 @@ The runner verifies:
 
 - source anchors in this note, the stability/dynamics selector subdivision, the
   selector/dial subdivision, and the conditional evidence ladder;
+- the stability/dynamics helper source used to obtain the
+  `flow_or_thermal_stability` bucket is included in the packet;
 - exact finite examples for a supplied score minimum, a supplied flow
   separatrix, and a supplied thermal root;
 - selected-dial status remains blocked without a selector rule;
-- the current `flow_or_thermal_stability` row count is `46`;
+- the current `flow_or_thermal_stability` row count is `56`;
 - row-lane counts match the current snapshot;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;

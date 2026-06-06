@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py
-runner_sha256: 76ac5791af57efa41ec2fb73c61287c602d3ff27feea22d8c0f0edef782262a8
+runner_sha256: 59afb45eb5bffcd74e63f54cd87678cc02554bb500432028f4335e68d963905b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -82,9 +82,10 @@ BLOCK 7 — VERDICT: tracial route gives (1,2)->Q=1, not (1,1)->Q=2/3
   [PASS] tracial route selection is r=1 (Q=1)
   [PASS] equal-block route is r=1/2 (Q=2/3), different from the trace
   [PASS] => tracial/product/modular route does NOT select the equal-block value :: RP/T-pos agnostic; trace+KMS+product route gives (1,2)->Q=1; (1,1)->Q=2/3 needs finite-beta/non-tracial weight
+  [PASS] source boundary guard: carrier/readout are assumed, not derived by this packet :: the packet closes only the assumed-carrier tracial-reference no-go
 
 ==============================================================================
-SCORECARD: PASS=38 FAIL=0
+SCORECARD: PASS=39 FAIL=0
 ==============================================================================
 
 ----- stderr -----

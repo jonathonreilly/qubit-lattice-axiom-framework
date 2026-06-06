@@ -186,7 +186,10 @@ authorities.
 
 The three companion runners were re-executed deterministically on
 2026-05-18 against the preserved source. Cached stdout tails (relevant
-to the quoted readouts only) are inlined below.
+to the quoted readouts only) are inlined below. On 2026-06-06, the
+restricted-packet cache certificates were added under `logs/runner-cache/`
+for the hydrogen, helium Hartree, helium Jastrow, and dependency-repair
+verifier scripts.
 
 **Hydrogen lattice companion** — `scripts/frontier_atomic_hydrogen_lattice_companion.py`
 
@@ -207,7 +210,9 @@ SUMMARY: HYDROGEN LATTICE COMPANION
   Emergent Bohr radius: r₀ = 2/g = 2.0  (measured: 2.00 lattice units)  [PASS]
 ```
 
-Log file preserved at `logs/2026-05-18-atomic_hydrogen_companion.txt`.
+Log file preserved at `logs/2026-05-18-atomic_hydrogen_companion.txt`;
+runner-cache certificate:
+[`logs/runner-cache/frontier_atomic_hydrogen_lattice_companion.txt`](../../../logs/runner-cache/frontier_atomic_hydrogen_lattice_companion.txt).
 
 **Helium Hartree companion** — `scripts/frontier_atomic_helium_hartree_companion.py`
 
@@ -228,7 +233,9 @@ SUMMARY: HELIUM HARTREE COMPANION
   IE₁/IE₂           = 0.3424  vs Hartree ~0.424
 ```
 
-Log file preserved at `logs/2026-05-18-atomic_helium_hartree_companion.txt`.
+Log file preserved at `logs/2026-05-18-atomic_helium_hartree_companion.txt`;
+runner-cache certificate:
+[`logs/runner-cache/frontier_atomic_helium_hartree_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_hartree_companion.txt).
 
 **Helium Jastrow / VMC companion** — `scripts/frontier_atomic_helium_jastrow_companion.py`
 
@@ -252,7 +259,9 @@ SUMMARY: HELIUM JASTROW COMPANION
                    Full CI             1.45200    1.4520   exact (historical)
 ```
 
-Log file preserved at `logs/2026-05-18-atomic_helium_jastrow_companion.txt`.
+Log file preserved at `logs/2026-05-18-atomic_helium_jastrow_companion.txt`;
+runner-cache certificate:
+[`logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt).
 
 ### Readout pin-table (2026-05-18 cache)
 
@@ -396,7 +405,7 @@ Two things are intentionally *not* part of this atomic reopen path:
   charged-lepton hierarchy / Koide program rather than the atomic companion
   lane itself
 
-## Citation chain and audit-stated repair path (2026-05-10)
+## Citation chain and audit-stated repair path (2026-05-10; cache repair 2026-06-06)
 
 The audit verdict (2026-05-05, see top of note) flags two missing
 items: the preserved runner source plus completed stdout/cached
@@ -404,30 +413,29 @@ certificates, and the one-hop retained lattice-kinetic and
 Coulomb-kernel authority notes as audit-graph dependencies. The cited
 authority chain on this row currently stands as follows.
 
-| Cited authority | File | Ledger snapshot (2026-05-10) | Conditional on |
+| Cited authority | File | Current restricted-packet visibility | Residual boundary |
 |---|---|---|---|
-| Hydrogen lattice-spectrum companion runner | [`scripts/frontier_atomic_hydrogen_lattice_companion.py`](../../../scripts/frontier_atomic_hydrogen_lattice_companion.py) | preserved source; no cached stdout under `logs/runner-cache/` for this script as of 2026-05-10 | provide completed stdout / cached certificate |
-| Helium Hartree companion runner | [`scripts/frontier_atomic_helium_hartree_companion.py`](../../../scripts/frontier_atomic_helium_hartree_companion.py) | preserved source; no cached stdout under `logs/runner-cache/` for this script as of 2026-05-10 | provide completed stdout / cached certificate |
-| Helium Jastrow / VMC companion runner | [`scripts/frontier_atomic_helium_jastrow_companion.py`](../../../scripts/frontier_atomic_helium_jastrow_companion.py) | preserved source; no cached stdout under `logs/runner-cache/` for this script as of 2026-05-10 | provide completed stdout / cached certificate |
-| One-hop retained lattice kinetic operator / graph Hamiltonian | upstream retained lattice surface (cited, not wired here) | not yet wired as one-hop edge on this row | audit-graph one-hop authority |
-| One-hop retained Coulomb-kernel route on `Z^3` | upstream retained / accepted Coulomb-kernel surface (cited, not wired here) | not yet wired as one-hop edge on this row | audit-graph one-hop authority |
+| Hydrogen lattice-spectrum companion runner | [`scripts/frontier_atomic_hydrogen_lattice_companion.py`](../../../scripts/frontier_atomic_hydrogen_lattice_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_hydrogen_lattice_companion.txt`](../../../logs/runner-cache/frontier_atomic_hydrogen_lattice_companion.txt) | finite-box/coupling-relative numerics only |
+| Helium Hartree companion runner | [`scripts/frontier_atomic_helium_hartree_companion.py`](../../../scripts/frontier_atomic_helium_hartree_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_helium_hartree_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_hartree_companion.txt) | product-state upper bound only |
+| Helium Jastrow / VMC companion runner | [`scripts/frontier_atomic_helium_jastrow_companion.py`](../../../scripts/frontier_atomic_helium_jastrow_companion.py) | preserved source plus [`logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt`](../../../logs/runner-cache/frontier_atomic_helium_jastrow_companion.txt) | one-parameter VMC companion only |
+| Lattice-kinetic / Coulomb-kernel dependency repair verifier | [`docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md`](../../HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md), [`scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py`](../../../scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py) | verifier cache [`logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt`](../../../logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt), `PASS=28 FAIL=0` | later review decides whether this dependency repair is sufficient |
+| One-hop retained lattice kinetic operator / graph Hamiltonian | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) and current baseline [`MINIMAL_AXIOMS_2026-06-04.md`](../../MINIMAL_AXIOMS_2026-06-04.md) | named in the 2026-06-02 dependency repair note and checked by the verifier | scalar graph-Laplacian surface only |
+| One-hop retained Coulomb-kernel route on `Z^3` | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) | four-line `G(r) -> 1/(4 pi |r|)` to `V(r)=-g/|r|` arithmetic recorded in the 2026-06-02 repair note and checked by the verifier | Maradudin/asymptotic bridge scope only |
 | Live retained EW normalization lane (used as boundary disclaimer only) | retained on `main` per "Upstream Surfaces Used Here" | retained | this companion stays in dimensionless / coupling-relative units |
 
 The audit-stated repair path (verbatim from
 `audit_ledger.json/notes_for_re_audit_if_any`) is to **provide the
 preserved runner source plus completed stdout/cached certificates**
 and **include the one-hop retained lattice kinetic and Coulomb-kernel
-authority notes in the restricted packet**. The first half can be
-satisfied by depositing deterministic runner outputs under
-`logs/runner-cache/` for each of the three companion scripts and
-citing them inline against the quoted readouts; the second half
-requires either explicitly naming the canonical upstream lattice-
-kinetic / Coulomb-kernel authority notes as one-hop dependencies in
-the audit graph, or wrapping the relevant operator definitions
-into a self-contained derivation block in the runner source. Until
-either path lands, this row remains ledger-derived; at the cited audit snapshot it was conditional and this
-note remains a diagnostic work-history companion that does not
-propagate as a retained authority. The acknowledged residual is the
+authority notes in the restricted packet**. The 2026-06-06 cache repair
+adds deterministic `logs/runner-cache/` certificates for the three
+companion scripts and cites them inline against the quoted readouts. The
+2026-06-02 dependency repair note/verifier supplies the narrowed scalar
+graph-Laplacian and Coulomb-kernel source path and explicitly rejects the
+unsupported "unique from Cl(3)" and finite-continuum-Rydberg framings.
+Independent review and audit must decide whether those repairs are
+sufficient; this note remains a diagnostic work-history companion and
+does not propagate as retained authority. The acknowledged residual is the
 pinning gap (no cached stdout backing the numerical readouts) plus
 the missing audit-graph dependency edges to the upstream lattice
 surfaces.

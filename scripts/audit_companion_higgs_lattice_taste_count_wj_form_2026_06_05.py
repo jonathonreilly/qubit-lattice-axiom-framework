@@ -13,10 +13,8 @@ This bridge supplies the two inputs the ratio-note verdict flagged as
 
   Bridge (2) mean-field W(J) = log det(D + J):
     the finite Grassmann (Berezin) partition function Z_F[M] = det(M)
-    (retained Berezin rows) gives W(J) = log det(D + J); the free staggered
-    operator M_KS is real antisymmetric, so its eigenvalues are purely imaginary
-    conjugate pairs +/- i a (a = 2 u_0 from the Clifford taste-square identity
-    D_taste^2 = d I at mean-link u_0); each pair contributes
+    (retained Berezin rows) gives W(J) = log det(D + J). Under the explicit
+    bounded uniform paired-spectrum hypothesis +/- i a with a = 2 u_0, each pair contributes
     det = (J + i a)(J - i a) = J^2 + 4 u_0^2, so
     W(J) = (N_tot/2) log(J^2 + 4 u_0^2) and W''(0) = N_tot/(4 u_0^2).
     The general curvature identity d^2/dJ^2 log det(D+J) = -Tr[(D+J)^-2] holds
@@ -182,10 +180,17 @@ check(
     np.linalg.norm(interior.conj().T @ interior) > 1e-6,
 )
 
-# 1.5 Finite even-L periodic-grid cross-check: per-axis sin-zeros are {0, pi},
-#     so corner count = 2^d = 16 at d=4 for any even L.
+# 1.5 Finite-grid cross-checks. PBC even-L grids hit {0, pi}. Strict finite
+#     APBC grids do not give the two-corner set per axis: even L has no exact
+#     zero, while odd L can hit the boundary point pi but only one zero per
+#     axis. The structural taste count is therefore the continuum-BZ corner
+#     count, not a finite-APBC exact-zero count.
 def pbc_axis_zeros(L):
     grid = [2 * np.pi * k / L for k in range(L)]
+    return [g for g in grid if abs(np.sin(g)) < 1e-12]
+
+def apbc_axis_zeros(L):
+    grid = [np.pi * (2 * k + 1) / L for k in range(L)]
     return [g for g in grid if abs(np.sin(g)) < 1e-12]
 
 for L in [2, 4, 6, 8]:
@@ -194,6 +199,20 @@ for L in [2, 4, 6, 8]:
     check(
         f"PBC even L={L}, d=4: per-axis sin-zeros=2 -> corner count {cnt} = 16",
         len(za) == 2 and cnt == 16,
+    )
+
+for L in [4, 6, 8, 10]:
+    za = apbc_axis_zeros(L)
+    check(
+        f"APBC even L={L}: no exact sin-zero momenta on the strict anti-periodic grid",
+        len(za) == 0,
+    )
+
+for L in [3, 5]:
+    za = apbc_axis_zeros(L)
+    check(
+        f"APBC odd L={L}: only one boundary zero per axis, not the two-corner set",
+        len(za) == 1 and len(za) ** 4 == 1,
     )
 
 
@@ -232,11 +251,12 @@ check("log det(D+J) = sum_k log lambda_k(D+J) (det = product of eigenvalues)", l
 
 
 # ============================================================================
-section("Part 3: Bridge (2b) — anti-Hermitian conjugate pairs, per-pair det = J^2 + 4 u_0^2")
+section("Part 3: Bridge (2b) — paired-spectrum determinant under bounded uniform hypothesis")
 # ============================================================================
-# A real source J*I shifts an anti-Hermitian D. Anti-Hermitian => eigenvalues
-# are purely imaginary and come in conjugate pairs +/- i a. Verify on random
-# anti-Hermitian seeds, and that the shifted determinant over a pair = J^2 + a^2.
+# A real source J*I shifts a paired block. The runner verifies the determinant
+# algebra for a pair and the real-antisymmetric conjugate-pair fact separately.
+# It treats the uniform a = 2 u_0 spectrum as the explicit bounded hypothesis,
+# not as a derivation of the actual mean-field operator spectrum.
 J, u0, a = symbols("J u0 a", positive=True)
 pair_det = simplify((J + sym_I * a) * (J - sym_I * a))
 check(
@@ -248,10 +268,12 @@ check(
     "with a = 2 u_0: per-pair det = J^2 + 4 u_0^2",
     simplify(pair_det.subs(a, 2 * u0) - (J**2 + 4 * u0**2)) == 0,
 )
+check(
+    "bounded paired-spectrum hypothesis is explicit: uniform a = 2 u_0 is supplied to Bridge (2)",
+    True,
+)
 
-# Numeric: the free staggered operator M_KS is REAL antisymmetric (real eta
-# phases x antisymmetric forward-backward difference). A real antisymmetric
-# matrix has purely-imaginary eigenvalues that come in genuine conjugate pairs
+# Numeric: a real antisymmetric block has purely-imaginary eigenvalues that come in genuine conjugate pairs
 # +/- i lambda (the +/- iλ pairing requires this real / eps-graded structure,
 # per the cited determinant-positivity row; a generic *complex* anti-Hermitian
 # matrix has unpaired imaginary eigenvalues). Verify reality, imaginary spectrum,
@@ -273,7 +295,7 @@ for _ in range(50):
         antiherm_ok = False
         break
 check(
-    "numeric: real-antisymmetric M_KS has purely-imaginary, conjugate-paired (+/- i lambda) eigenvalues",
+    "numeric: real-antisymmetric blocks have purely-imaginary, conjugate-paired (+/- i lambda) eigenvalues",
     antiherm_ok,
 )
 

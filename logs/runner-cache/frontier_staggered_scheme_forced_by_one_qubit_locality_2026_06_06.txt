@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_scheme_forced_by_one_qubit_locality_2026_06_06.py
+runner_sha256: 283df6986faa115525d0cd5fd4c565806447226bd054797a1a0bb193cc736079
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+====================================================================================
+Counterfactual pass: the staggered-Dirac REALIZATION is forced by one qubit/site + Locality
+====================================================================================
+
+[BLOCK 1] Substep-1 recap: fermionic vs bosonic by per-site dim matching (cited)
+  [PASS] qubit M2(C): per-site Hilbert dim = 2 (Quantum axiom)
+  [PASS] one Grassmann pair (chi,chibar): per-site Fock dim = 2 (chibar^2=0) -> MATCHES qubit
+  [PASS] per-site BOSON: Fock dim = infinity -> EXCLUDED (dim mismatch with qubit)  --  STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING (audited_conditional)
+
+[BLOCK 2] Counterfactual fill: which FERMIONIC scheme? per-site dim + Locality
+  [PASS] scheme 'staggered (KS)': matches one-qubit/site + Locality  --  Fock dim/site = 2, local
+  [PASS] scheme 'Wilson': EXCLUDED  --  Fock dim/site = 16, local
+  [PASS] scheme 'naive': EXCLUDED  --  Fock dim/site = 16, local-with-doublers
+  [PASS] scheme 'overlap/domainwall': EXCLUDED  --  nonlocal
+  [PASS] => ONLY staggered matches {one qubit/site (dim 2), Locality}
+
+[BLOCK 3] {Quantum, Locality} FORCE the staggered carrier (one Grassmann/site)
+  [PASS] Wilson/naive need per-site dim 16 = FOUR qubits/site -> contradicts one-qubit/site
+  [PASS] overlap/domain-wall is nonlocal (or needs a 5th dimension) -> contradicts Locality
+  [PASS] => the staggered (KS) carrier is FORCED, not admitted, by {Quantum, Locality}  --  completes substep-1: fermionic-vs-bosonic -> staggered-vs-all-schemes
+
+[BLOCK 4] Counterfactual output: the gate is a 4-substep chain, not a wall
+  [PASS] substep-1 Grassmann + STAGGERED-scheme forcing  --  qubit dim 2 + Locality (this note completes it)
+  [PASS] substep-2 Kahler-Dirac equivalence  --  staggered ~= Kahler-Dirac (known math fact; unaudited)
+  [PASS] substep-3 BZ-corner / species reduction  --  retained / retained_bounded
+  [PASS] substep-4 species-label  --  = AC_phi_lambda (outside this carrier note)
+  [PASS] the species-label residual remains outside this carrier note
+  [PASS] => this note narrows the gate to a carrier result; residuals remain substep-2, substep-4, and continuum  --  not a monolithic wall
+
+[BLOCK 5] Scope
+  [PASS] forces the staggered CARRIER (one Grassmann/site); Dirac operator/hopping = substep-2
+  [PASS] Kogut-Susskind phases + Kahler-Dirac equivalence + continuum limit NOT claimed here
+  [PASS] no new axiom; dim counting = representation theory; locality = the Locality axiom
+
+====================================================================================
+SCORECARD:  PASS = 20   FAIL = 0
+====================================================================================
+
+----- stderr -----
+

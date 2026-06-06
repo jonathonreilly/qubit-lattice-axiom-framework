@@ -1,51 +1,66 @@
-# Flavor — J-hunt round 1: a static complex structure cannot select det_C; J_cs is A1-native but measure-neutral, and the "Γ_χ = J_cs" chiral bridge is a false identity. det_R/Q=1 default stands; the lever is a first-order action.
+# Flavor J-Hunt Round 1: Static `J_cs` Is Measure-Neutral
 
 **Date:** 2026-06-02
 **Claim type:** bounded_theorem
-**Claim boundary:** bounded negative (round 1 of an iterative hunt) that locates the next lever precisely.
-**Runner:** `scripts/flavor_find_J_round1_jcs_measure_neutral_2026_06_02.py` (SCORECARD 4/4).
-**Source:** workflow `wf_719da018` — 5 hunt routes + 3-lens verification + synthesis (12 agents).
+**Actual current-surface status:** bounded-support
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes the route "static A1-native complex structure selects the `det_C` doublet measure".
+**Bare retained allowed:** false
+**Audit required before effective status change:** true
+**Runner:** `scripts/flavor_find_J_round1_jcs_measure_neutral_2026_06_02.py` (SCORECARD 5/5).
+**Source:** workflow `wf_719da018` -- 5 hunt routes + 3-lens verification + synthesis (12 agents).
 
-## The hunt
-Find a complex structure `J` on the C₃ generation-doublet coefficient `b` that forces **det_C → r=1/2 →
-Q=2/3**, is **not** the continuous `U(1)_b` (forbidden by C³=I), and **descends from A1**. Round 1 tested
-the Schur-forced `J_cs=(C−C²)/√3` and the chiral structure.
+## Closed Packet
 
-## Round-1 verdict: no_J — det_R/Q=1 default stands (and a static J can't do it)
-- **`J_cs` is genuinely A1-native** (verified R1): anti-Hermitian, `J_cs²=−P_doublet`, eigs `{0,±i}`,
-  `[J_cs,C]=0` — the Schur-forced C₃-equivariant complex structure, built from the retained `C`, and a
-  *different* object from the `U(1)_b` the prior no-go killed (it does not rephase `C`).
-- **But `J_cs` is measure-NEUTRAL** (verified R3): `exp(θJ_cs)=SO(2)` on the `(Re b, Im b)` plane
-  preserves the HS doublet metric block `6·I` (`RᵀgR=g`, `det R=1`), hence preserves **both** the flat
-  real measure (det_R) **and** the holomorphic measure (det_C). A complex structure is an automorphism of
-  its own real-plane Lebesgue measure *and* of the holomorphic volume — it cannot distinguish them. So
-  the *static* existence of `J_cs` does **not** select det_C. Its operator-silence `[J_cs,H]=0` (R4) is
-  genuine and consistent, but a silent structure has no lever to fix the mode-count. **J_found_A1_forced
-  is ruled out.**
-- **The chiral-import bridge is a false identity** (verified R2): the claim "`Γ_χ=(2/3)J−I` is built from
-  the same `J` as `J_cs`" is false — `Γ_χ`'s `J` is the rank-1 **all-ones** matrix (`J²=3J`), so `Γ_χ` is
-  a **real involution** (`Γ²=+I`, eigs `{+1,−1,−1}`), an algebraically distinct type from the
-  anti-Hermitian `J_cs` (`J_cs²=−P`, eigs `{0,±i}`). They **commute but are not equal/proportional**.
-  Gluing "turn on chirality = make the measure `J_cs`-holomorphic = det_C" on this non-identity is
-  **circular** (assumes the chiral reading of det_C to conclude it). So `J_is_chiral_import` was *not*
-  established this round — it remains a candidate for a *non-circular* dynamical bridge, not a delivered one.
+This note proves only the finite-algebra obstruction inside round 1 of the
+`J` hunt:
 
-(Caveat: the block-count-permitted and readout-lane-demarcation notes the routes leaned on are
-**unaudited** and cannot load-bear; the verdict rests on the verified algebra + retained
-`koide_anticommuting_operator_derivation` and `koide_z3_equivariant_anticommuting_no_go`.)
+> The static `C3`-equivariant complex structure
+> `J_cs=(C-C^2)/sqrt(3)` is measure-neutral and cannot by itself select the
+> `det_C` doublet measure.
 
-## The next lever (round 2)
-The decisive lesson: **a static complex structure cannot select the measure** (it's an automorphism of
-both counts). What *can* is a **first-order (Dirac/Berezin) action**: Berezin integration over a
-holomorphic/Grassmann mode counts it as **one** (det_C → r=1/2), whereas a static `J` and a second-order
-Gaussian weight are both measure-neutral. So the hunt moves to: **does A1 + emergent-spacetime supply a
-first-order (Dirac-type) action for the generation coefficient `b`** — built from the genuine
-anti-Hermitian `J_cs`, *not* the all-ones `Γ_χ` — **or only a second-order Gaussian (measure-neutral →
-det_R)?** That first-order/Berezin structure is exactly the **fermionic frame** — the one import the
-whole sector already reduced to — so a non-circular bridge there would *unify* r=1/2 with the chirality
-gate. Round 2 attacks this.
+The packet also checks that the proposed chiral glue
+`Gamma_chi = (2/3)J_all - I` is not `J_cs`: it is a real involution built from
+the all-ones matrix, while `J_cs` is anti-Hermitian and squares to
+`-P_doublet`.
 
-## Provenance (verified 2026-06-02)
-- J_cs algebra, Γ_χ≠J_cs, SO(2) measure-neutrality, operator-silence: verified directly (runner 4/4).
-- Anchors: `koide_anticommuting_operator_derivation` (retained), `koide_z3_equivariant_anticommuting_no_go` (retained_bounded). Block-count-permitted / readout-lane notes are unaudited (not load-bearing).
-- Does not load-bear on `closure_c_staggered_dirac_gate` / `koide_phase_aps_eta_parity_route`.
+## Direct Checks
+
+1. **`J_cs` is the finite `C3` complex structure.** It is anti-Hermitian,
+   commutes with `C`, satisfies `J_cs^2=-P_doublet`, and has eigenvalues
+   `{0,+i,-i}`.
+
+2. **`Gamma_chi` is a different operator.** `Gamma_chi^2=I` with eigenvalues
+   `{+1,-1,-1}`. It commutes with `J_cs`, but it is neither equal nor
+   proportional to `J_cs`. Therefore the route identifying chirality with the
+   `J_cs` holomorphic measure is a false identity inside this finite packet.
+
+3. **The static flow is measure-neutral.** `exp(theta J_cs)` is an `SO(2)`
+   rotation on the real doublet plane. It preserves the Hilbert-Schmidt block
+   metric `6I` and has determinant one, so the static rotation does not choose
+   between the real and holomorphic measure conventions.
+
+4. **The structure is operator-silent for the tested circulant family.**
+   `J_cs` commutes with the Hermitian `C3`-circulant family
+   `H=aI+bC+conj(b)C^T`, so it supplies no spectral lever that fixes the
+   doublet mode count.
+
+## What This Does Not Claim
+
+This packet intentionally does not derive:
+
+- a `Q` default;
+- a `det_C`-to-`r,Q` readout map;
+- a first-order action or Berezin bridge for the generation coefficient;
+- a framework-native selection of `det_C`.
+
+The remaining frontier question is separate: if the flavor lane needs the
+`det_C` convention, it must come from a dynamical, instrument, or readout
+theorem outside this static-`J_cs` packet.
+
+## Provenance
+
+- `J_cs` algebra, `Gamma_chi != J_cs`, `SO(2)` measure-neutrality, and
+  operator-silence are verified directly by the paired runner.
+- No `docs/audit/**` status is updated by this packet.
+- No new axiom is introduced.

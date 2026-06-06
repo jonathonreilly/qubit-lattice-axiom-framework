@@ -1,3 +1,9 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py
+runner_sha256: 732b731f615d3ac5f857a68fc33b0647f2ad310ac80f1564de198032100b88d6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 
@@ -64,7 +70,7 @@ BLOCK 9: Dependency-registration check (reads registry/ledger; writes nothing)
 [PASS] Dep 1 'staggered_dirac_realization_gate_note_2026-05-03' is a REGISTERED Tier-A derivation target (AC_phi_lambda)  --  derivation_targets = ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
 [PASS] Dep 2 basis 'beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10' is retained-grade in the ledger  --  ledger_effective_status:retained
 [PASS] g_bare=1 convention 'g_bare_rigidity_theorem_note' is registered (Tier-A conventions) and retained-grade  --  in conventions=True, ledger_effective_status:retained_bounded
-[PASS] Target row 'yt_ward_identity_derivation_theorem' is NOT retained-grade (so it must be backticked, not linked)  --  ledger_effective_status:audited_conditional
+[PASS] Target row 'yt_ward_identity_derivation_theorem' is NOT retained-grade (so it must be backticked, not linked)  --  ledger_effective_status:unaudited
 
 ========================================================================
 BLOCK 10: Re-audit CASE arithmetic (no status is written)

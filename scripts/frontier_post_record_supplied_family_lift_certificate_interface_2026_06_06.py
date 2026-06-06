@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Supplied family-lift certificate interface for post-record dynamics."""
+"""Finite projective-ladder compatibility witness for post-record dynamics."""
 
 from __future__ import annotations
 
@@ -36,8 +36,9 @@ LADDER = (
     LadderLevel(4, (1, 0, 1, 1)),
 )
 
-SUPPLIED_FAMILY_LIFT_RULE = True
+SUPPLIED_STABLE_PREDICATE = True
 FAMILY_LIFT_DERIVED_FROM_RECORD = False
+FAMILY_LIFT_AUTHORITY_APPLIED = False
 UNBOUNDED_RETAINED_AUTHORITY_APPLIED = False
 AUDIT_VERDICT_APPLIED = False
 DIAL_FORCED_OR_SELECTED = False
@@ -49,6 +50,7 @@ PROHIBITED_LIVE_CLAIMS = (
     "bare_retained_allowed: " + "true",
     "UNBOUNDED_RETAINED_AUTHORITY_APPLIED=" + "TRUE",
     "FAMILY_LIFT_DERIVED_FROM_RECORD=" + "TRUE",
+    "FAMILY_LIFT_AUTHORITY_APPLIED=" + "TRUE",
     "AUDIT_VERDICT_APPLIED=" + "TRUE",
 )
 
@@ -108,7 +110,8 @@ def stable_predicate_checks() -> None:
 
 def interface_firewall_checks() -> None:
     section("Interface firewalls")
-    report("family-lift rule is supplied", SUPPLIED_FAMILY_LIFT_RULE)
+    report("stable predicate is supplied", SUPPLIED_STABLE_PREDICATE)
+    report("family-lift authority is not applied", not FAMILY_LIFT_AUTHORITY_APPLIED)
     report("family-lift is not derived from Record", not FAMILY_LIFT_DERIVED_FROM_RECORD)
     report("unbounded retained authority is not applied", not UNBOUNDED_RETAINED_AUTHORITY_APPLIED)
     report("audit verdict is not applied", not AUDIT_VERDICT_APPLIED)
@@ -121,13 +124,13 @@ def document_checks() -> None:
     required_phrases = (
         "The interface has three pieces",
         "supplied projection maps",
-        "supplied lift rule",
+        "supplied stable predicate",
         "This is not an unbounded retained claim",
         "leading_marker_is_one(C_n) = true",
         "prefix density is not stable",
         "pre-record law carries probabilities",
         "post-record records carry realized information",
-        "actual_current_surface_status: exact-support",
+        "actual_current_surface_status: bounded-support",
         "audit_required_before_effective_retained: true",
         "bare_retained_allowed: false",
     )
@@ -147,12 +150,13 @@ def main() -> int:
     document_checks()
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
-    print("POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE=TRUE")
+    print("POST_RECORD_FINITE_LADDER_COMPATIBILITY_WITNESS=TRUE")
     print("LADDER_LEVELS=4")
     print("SUPPLIED_PROJECTIONS_COMMUTE=TRUE")
     print("STABLE_PREDICATE=leading_marker_is_one")
     print("DENSITY_USED_AS_STABLE_LIFT=FALSE")
-    print("SUPPLIED_FAMILY_LIFT_RULE=TRUE")
+    print("SUPPLIED_STABLE_PREDICATE=TRUE")
+    print("FAMILY_LIFT_AUTHORITY_APPLIED=FALSE")
     print("FAMILY_LIFT_DERIVED_FROM_RECORD=FALSE")
     print("UNBOUNDED_RETAINED_AUTHORITY_APPLIED=FALSE")
     print("AUDIT_VERDICT_APPLIED=FALSE")

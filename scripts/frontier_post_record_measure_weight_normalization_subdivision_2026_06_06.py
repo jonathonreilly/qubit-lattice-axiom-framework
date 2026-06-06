@@ -47,11 +47,12 @@ SELECTOR_TANGENT_RE = re.compile(
 
 EXPECTED_LANE_COUNTS = {
     "character_path_channel_weight": 9,
-    "generic_measure_weight_import": 5,
-    "selector_tangent_readout_weight": 6,
+    "generic_measure_weight_import": 6,
+    "selector_tangent_readout_weight": 7,
     "source_measure_or_rn_bridge": 14,
-    "trace_normalization_reference": 10,
+    "trace_normalization_reference": 7,
 }
+EXPECTED_MEASURE_ROWS = sum(EXPECTED_LANE_COUNTS.values())
 
 
 def load_previous():
@@ -124,14 +125,23 @@ def source_anchor_checks() -> None:
             "Normalized measure is not selected dial.",
             "Finite normalization can certify",
             "Does not select or force a generation/Koide dial location",
+            "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
         ],
     )
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "measure_weight_normalization` | 44",
+            "measure_weight_normalization` | 43",
             "measure/weight/normalization rows",
             "Does not turn stable settings into selected dials.",
+        ],
+    )
+    require_text(
+        "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
+        [
+            "def selector_subbucket",
+            "EXPECTED_SUBCOUNTS",
+            "measure_weight_normalization",
         ],
     )
     require_text(
@@ -209,7 +219,7 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
         buckets[measure_lane(row)].append(row)
     counts = Counter({lane: len(items) for lane, items in buckets.items()})
 
-    report("measure/weight row count is current snapshot", len(rows) == 44, str(len(rows)))
+    report("measure/weight row count is current snapshot", len(rows) == EXPECTED_MEASURE_ROWS, str(len(rows)))
     report("measure lane counts match expected", dict(counts) == EXPECTED_LANE_COUNTS, str(counts))
     report("measure lane counts sum to row count", sum(counts.values()) == len(rows), str(counts))
 

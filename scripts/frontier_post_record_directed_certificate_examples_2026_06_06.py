@@ -217,6 +217,7 @@ def source_anchor_checks() -> None:
             "supplied finite law plus supplied orientation bridge",
             "The law carries probability; the post-record words carry realized markers",
             "examples do not derive an arrow, clock, kernel, or selected dial",
+            "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
         ],
     )
     require_text(
@@ -239,8 +240,16 @@ def source_anchor_checks() -> None:
         "docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md",
         [
             "arrow_or_dynamics_bridge",
-            "Total: `77` stability/dynamics selector rows.",
+            "Total: `90` stability/dynamics selector rows.",
             "stable setting is not selected dial",
+        ],
+    )
+    require_text(
+        "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
+        [
+            "def stability_subbucket",
+            "EXPECTED_SUBCOUNTS",
+            "arrow_or_dynamics_bridge",
         ],
     )
 
@@ -257,9 +266,9 @@ def row_bucket_checks() -> None:
         and stability.prev.selector_subbucket(row) == "stability_or_dynamics_selector"
     ]
     buckets: Counter[str] = Counter(stability.stability_subbucket(row) for row in stability_rows)
-    report("stability/dynamics selector row count remains 77", len(stability_rows) == 77, str(len(stability_rows)))
-    report("arrow/dynamics bridge row count remains 31", buckets["arrow_or_dynamics_bridge"] == 31, str(buckets))
-    report("flow/thermal stability row count remains 46", buckets["flow_or_thermal_stability"] == 46, str(buckets))
+    report("stability/dynamics selector row count remains 90", len(stability_rows) == 90, str(len(stability_rows)))
+    report("arrow/dynamics bridge row count remains 34", buckets["arrow_or_dynamics_bridge"] == 34, str(buckets))
+    report("flow/thermal stability row count remains 56", buckets["flow_or_thermal_stability"] == 56, str(buckets))
 
 
 def transition_drift_example() -> None:
@@ -459,7 +468,7 @@ def main() -> int:
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE")
-    print("ARROW_OR_DYNAMICS_BRIDGE_ROWS=31")
+    print("ARROW_OR_DYNAMICS_BRIDGE_ROWS=34")
     print("PRE_RECORD_LAW_CARRIES_PROBABILITY=TRUE")
     print("POST_RECORD_SITE_CARRIES_REALIZED_INFORMATION=TRUE")
     print("DIRECTED_STATISTICS_REQUIRE_SUPPLIED_ORIENTATION=TRUE")

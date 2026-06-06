@@ -4,6 +4,8 @@
 **Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/FIFTH_FAMILY_RADIAL_BASIN.py`](../scripts/FIFTH_FAMILY_RADIAL_BASIN.py)
+**Primary runner cache:** [`logs/runner-cache/FIFTH_FAMILY_RADIAL_BASIN.txt`](../logs/runner-cache/FIFTH_FAMILY_RADIAL_BASIN.txt)
+records `status: ok` under the runner-declared audit timeout.
 **Companion runners:**
 [`scripts/FIFTH_FAMILY_RADIAL_SWEEP.py`](../scripts/FIFTH_FAMILY_RADIAL_SWEEP.py),
 [`scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py`](../scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py),
@@ -19,6 +21,9 @@ sampled:
   `scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py`;
 - the live basin runner recomputes ten `(drift, seed)` rows from the
   no-restore grown slice;
+- the primary basin runner declares `AUDIT_TIMEOUT_SEC = 300`, because the
+  full ten-row replay can exceed the legacy 120 second audit window under
+  contention even though it completes without changing the scientific packet;
 - four rows pass exact zero-source, exact neutral-cancellation, sign-
   orientation, and weak-charge exponent gates;
 - the two historically cited positive rows also pass the dedicated F~M

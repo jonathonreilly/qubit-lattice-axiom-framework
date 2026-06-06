@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_aps_block_by_block_forcing.py
-runner_sha256: 763878775d8c0b8c764f6248a2c53431085f4ba0568e8449b674df4581a424e1
+runner_sha256: f304a88369be438992b608bd9f6b67fc55c0226bbd4234dc1ea83df1f78f8dcd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.35
+elapsed_sec: 0.84
 status: ok
 ----- stdout -----
 ========================================================================
@@ -48,9 +48,9 @@ APS ETA = 2/9 BLOCK-BY-BLOCK CONDITIONAL SUPPORT CHAIN
   eta(p=2, a=1, b=1) = 1/8
   eta(p=5, a=1, b=4) = 2/5
   eta(p=7, a=1, b=6) = 4/7
-  [PASS] g2. Alternative p in {2, 5, 7} give DIFFERENT eta; p=3 is the stipulated choice: eta(2,1,1)=1/8, eta(5,1,4)=2/5, eta(7,1,6)=4/7
+  [PASS] g2. Alternative p in {2, 5, 7} give DIFFERENT eta; p=3 is the fixed-locus choice: eta(2,1,1)=1/8, eta(5,1,4)=2/5, eta(7,1,6)=4/7
 
-=== (h) ABSS prerequisite checks under stipulated route ===
+=== (h) ABSS prerequisite checks under conditional global route ===
   [PASS] h1. pi_i(PL/O) = 0 for i <= dim(PL S^3 x R) = 4 (Cerf-Munkres smoothing): pi_i(PL/O) for i=0..4: [0, 0, 0, 0, 0]
   [PASS] h2. S^3 = SU(2) is parallelizable (TS^3 trivial) ⟹ w_2(S^3) = 0 ⟹ spin: three linearly independent left-invariant fields give a global frame
   [PASS] h2b. H^1(S^3 x R; Z_2) = 0 ⟹ spin structure on S^3 x R is UNIQUE: H_1(S^3) = 0 ⟹ H^1(S^3; Z_2) = 0
@@ -59,18 +59,18 @@ APS ETA = 2/9 BLOCK-BY-BLOCK CONDITIONAL SUPPORT CHAIN
   [PASS] h5. ABSS prerequisites (h1)∧(h2)∧(h3)∧(h4) all verified executively: h1=True, h2=True, h3=True, h4=True
 
 === (i) Composite uniqueness consistency ===
-  [PASS] i1. Every (p, a, b) combination consistent with the stipulated C_3 route gives eta = 2/9: values = [2/9, 2/9]
+  [PASS] i1. Every (p, a, b) combination consistent with the fixed-locus C_3 route gives eta = 2/9: values = [2/9, 2/9]
   [PASS] i2. Among p in {2..7}, only p=3 with weights (1, 2) gives eta = 2/9: matches = [(3, 2/9)]
-  [PASS] i3. COMPOSITE: ambient APS eta = 2/9 follows inside the stipulated support chain: chain (a)->(b)->(c)->(d)->(e)->(f)->(g)->(h)->(i) is internally consistent and executable under the stipulations
+  [PASS] i3. COMPOSITE: ambient APS eta = 2/9 follows inside the fixed-locus-plus-conditional-ABSS support chain: chain (a)->(b)->(c)->(d)->(e)->(f)->(g)->(h)->(i) is internally consistent with fixed-locus data plus conditional global ABSS
 
 Total: 29 PASS, 0 FAIL
 
 Verdict:
-  Given the stipulated p=3, weights (1,2), and ABSS applicability
+  Given fixed-locus p=3 and weights (1,2), plus conditional ABSS applicability
   on the PL S^3 x R route, each algebraic block of the ambient
   APS eta = 2/9 derivation is executable and structurally fixed:
 
-    C_3[111] rotation    = 2pi/3 body-diagonal [stipulated route]
+    C_3[111] rotation    = 2pi/3 body-diagonal [fixed-locus bridge]
     eigenvalues          = (1, omega, omega^2) [fixed by rotation order]
     fixed locus          = body-diagonal (codim-2 on S^3)
     tangent weights      = (1, 2) mod 3 [from eigenvalues]
@@ -79,7 +79,7 @@ Verdict:
     result eta           = 2/9 [unique computation]
 
   No alternative construction gives a different ambient eta under
-  the stipulated topological data. What remains open is the global
+  the fixed-locus data plus conditional global ABSS input. What remains open is the global
   topological/ABSS bridge and the physical-observable bridge
   identifying the selected-line Brannen phase with this ambient invariant.
 

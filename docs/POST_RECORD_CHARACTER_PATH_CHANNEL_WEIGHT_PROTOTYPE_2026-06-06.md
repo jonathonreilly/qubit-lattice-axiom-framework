@@ -1,10 +1,10 @@
 # Post-Record Character/Path/Channel Weight Prototype
 
 **Date:** 2026-06-06
-**Type:** exact support / supplied character-path-channel weight prototype
-**Claim type:** methodology / positive theorem
-**Status:** exact-support branch-local for supplied finite
-character/path/channel weights; audit_required_before_effective_retained=true;
+**Type:** bounded support / finite supplied-normalization witness
+**Claim type:** methodology / bounded theorem
+**Status:** bounded-support branch-local for supplied finite
+character/path/channel normalization; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py`](../scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py)
@@ -13,8 +13,8 @@ bare_retained_allowed=false.
 
 ## Result
 
-This block gives the `character_path_channel_weight` lane a finite supplied
-weight prototype:
+This block gives the `character_path_channel_weight` lane a bounded finite
+supplied-normalization witness:
 
 ```text
 supplied finite carrier of paths, characters, or channels
@@ -48,14 +48,14 @@ It cannot certify:
 ## Status certificate
 
 ```yaml
-actual_current_surface_status: exact-support
+actual_current_surface_status: bounded-support
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: "character/path/channel rows get finite supplied weight semantics; physical selection and derivation remain open"
+conditional_surface_status: "character/path/channel rows get finite supplied normalization semantics; physical selection and derivation remain open"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "This branch supplies finite weight semantics and does not derive the path/channel/character rule or physical measure."
+proposal_allowed_reason: "This branch supplies finite normalization semantics and does not derive the path/channel/character rule or physical measure."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```

@@ -30,9 +30,10 @@ ARROW_DYNAMICS_RE = re.compile(
 )
 
 EXPECTED_SUBCOUNTS = {
-    "flow_or_thermal_stability": 46,
-    "arrow_or_dynamics_bridge": 31,
+    "flow_or_thermal_stability": 56,
+    "arrow_or_dynamics_bridge": 34,
 }
+EXPECTED_STABILITY_ROWS = sum(EXPECTED_SUBCOUNTS.values())
 
 
 def load_previous():
@@ -103,14 +104,23 @@ def source_anchor_checks() -> None:
             "arrow_or_dynamics_bridge",
             "stable setting is not selected dial",
             "physical arrow, kernel, Hamiltonian, instrument, clock, or",
+            "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
         ],
     )
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "stability_or_dynamics_selector` | 77",
+            "stability_or_dynamics_selector` | 90",
             "stable settings into selected dials",
             "Does not turn stable settings into selected dials.",
+        ],
+    )
+    require_text(
+        "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
+        [
+            "def selector_subbucket",
+            "stability_or_dynamics_selector",
+            "EXPECTED_SUBCOUNTS",
         ],
     )
     require_text(
@@ -139,7 +149,7 @@ def subdivision_checks() -> tuple[list[dict], Counter[str]]:
         buckets[stability_subbucket(row)].append(row)
     counts = Counter({bucket: len(items) for bucket, items in buckets.items()})
 
-    report("stability/dynamics selector row count is current snapshot", len(stability_rows) == 77, str(len(stability_rows)))
+    report("stability/dynamics selector row count is current snapshot", len(stability_rows) == EXPECTED_STABILITY_ROWS, str(len(stability_rows)))
     report("sub-bucket counts sum to stability/dynamics count", sum(counts.values()) == len(stability_rows), str(counts))
     report("expected sub-bucket counts match", dict(counts) == EXPECTED_SUBCOUNTS, str(counts))
 
@@ -191,8 +201,8 @@ def main() -> int:
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print(f"STABILITY_DYNAMICS_SELECTOR_ROWS={len(stability_rows)}")
-    print("FLOW_OR_THERMAL_STABILITY_ROWS=46")
-    print("ARROW_OR_DYNAMICS_BRIDGE_ROWS=31")
+    print(f"FLOW_OR_THERMAL_STABILITY_ROWS={counts['flow_or_thermal_stability']}")
+    print(f"ARROW_OR_DYNAMICS_BRIDGE_ROWS={counts['arrow_or_dynamics_bridge']}")
     print("AUDIT_LEDGER_WRITTEN=FALSE")
     print("STABLE_SETTING_SELECTS_DIAL=FALSE")
     print("GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE")

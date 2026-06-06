@@ -10,6 +10,10 @@ bare_retained_allowed=false.
 [`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt)
+**Load-bearing upstream helper:**
+[`scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py`](../scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py)
+with cache
+[`logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt)
 
 ## Result
 
@@ -31,12 +35,12 @@ On the current ledger snapshot:
 | Measure/weight lane | Rows |
 |---|---:|
 | `source_measure_or_rn_bridge` | 14 |
-| `trace_normalization_reference` | 10 |
+| `trace_normalization_reference` | 7 |
 | `character_path_channel_weight` | 9 |
-| `selector_tangent_readout_weight` | 6 |
-| `generic_measure_weight_import` | 5 |
+| `selector_tangent_readout_weight` | 7 |
+| `generic_measure_weight_import` | 6 |
 
-Total: `44` rows.
+Total: `43` rows.
 
 ## Meaning
 
@@ -96,7 +100,9 @@ The runner verifies:
 - zero-total weights are rejected;
 - normalization without selector rule remains blocked for selected-dial
   authority;
-- the current `measure_weight_normalization` row count is `44`;
+- the selector/dial helper source used to obtain the bucket is included in the
+  packet;
+- the current `measure_weight_normalization` row count is `43`;
 - lane counts match the current snapshot;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;

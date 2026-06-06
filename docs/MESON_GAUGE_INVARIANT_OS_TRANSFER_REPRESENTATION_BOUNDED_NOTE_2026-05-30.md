@@ -91,13 +91,13 @@ construction; **no continuum claim is made either way**.
 
 ## 2026-06-06 Source Packet Exposure Repair
 
-The current audit blocker asks for the full untruncated primary runner source
+The current audit blocker asks for the complete primary runner source
 or a source-hash-pinned runner artifact so the Berezin/operator kernel-build
 functions and determinant-weighted averaging path can be audited. The source
 packet verifier above checks that:
 
 - the primary runner and cache are linked from this note;
-- the primary runner is untruncated and contains the Berezin block-kernel,
+- the primary runner is complete and contains the Berezin block-kernel,
   operator block-kernel, full-spacetime `M^{-1}` spectrum check,
   vacuum-annihilation control, four-fermion Berezin correlator,
   operator meson correlator, determinant-weighted average, and gauge-transform
@@ -478,8 +478,8 @@ Expected scorecard: `SCORECARD PASS=64 FAIL=0`.
 
 ## 2026-06-06 Source Packet Re-audit Repair
 
-This repair responds to the artifact-completeness blocker asking for the full
-untruncated primary runner source, or a source-hash-pinned runner artifact. It
+This repair responds to the artifact-completeness blocker asking for the
+complete primary runner source, or a source-hash-pinned runner artifact. It
 does not promote this row or change the bounded source-surface claim boundary;
 independent audit owns any ledger/status movement.
 
@@ -492,7 +492,7 @@ The restricted packet now exposes:
 - [`outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json`](../outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json)
 
 The manifest checks that the note names the primary runner/cache, that the
-source is untruncated and contains the load-bearing functions
+source is complete and contains the load-bearing functions
 `block_metric_per_mode`, `block_fwd_propagator_berezin`,
 `block_metric_spacetime_eigs`, `meson_correlator_full_berezin`, and
 `u_averaged_meson`, and that the cache header is SHA-fresh against the current

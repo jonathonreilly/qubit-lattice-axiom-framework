@@ -79,6 +79,9 @@ The runner verifies:
 
 - all 10 stack PR entries are present in this index;
 - cached summaries are present for each stack layer;
+- the extended index consumes the repaired directed-certificate
+  `SUMMARY: PASS=60 FAIL=0`, repaired stack-map `SUMMARY: PASS=47 FAIL=0`,
+  and repaired campaign-closeout `SUMMARY: PASS=46 FAIL=0` certificates;
 - the stack has seven `exact-support` entries and three `no-go` entries;
 - the extended family-lift trio #2871/#2874/#2875 is present;
 - no audit verdict, audit-data write, retained promotion, unsupplied kernel

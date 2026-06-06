@@ -3,7 +3,7 @@
 **Date:** 2026-06-06
 **Type:** exact support / read-only synthesis map
 **Claim type:** methodology
-**Status:** exact-support branch-local for mapping the current dynamics
+**Status:** exact-support for mapping the current dynamics
 authority stack; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
@@ -23,6 +23,19 @@ supplied, admitted, and blocked authority classes.
 | Supplied kernel selection rule | exact-support | supplied candidate family and rule |
 | Target-vector firewall | no-go | blocked Record-derived targets/weights |
 | Admitted sample vector | exact-support | admitted observation sample |
+
+## Cited authority/cache packet
+
+The stack map is only a synthesis over the following one-hop authorities and
+their cached runner outputs:
+
+| Layer | Authority note | Cached runner | Branch-local status |
+|---|---|---|---|
+| Directed certificate examples | [`docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt) | exact-support |
+| Kernel-selection firewall | [`docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt) | no-go |
+| Supplied kernel selection rule | [`docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`](POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt) | exact-support |
+| Target-vector firewall | [`docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md`](POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt) | no-go |
+| Admitted sample vector | [`docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md`](POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt) | exact-support |
 
 ## Meaning
 
@@ -70,6 +83,8 @@ The runner verifies:
 
 - source anchors in each note in the current dynamics stack;
 - cached runner summaries for each layer;
+- the directed-certificate examples cache summary from the current stacked
+  upstream repair (`SUMMARY: PASS=60 FAIL=0`);
 - the five authority layers and their statuses;
 - no audit verdict, audit-data write, retained/promoted claim,
   Record-derived arrow, unsupplied kernel selection, Record-derived rule,

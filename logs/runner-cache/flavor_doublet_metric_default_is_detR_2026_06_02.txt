@@ -1,35 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_doublet_metric_default_is_detR_2026_06_02.py
-runner_sha256: 387a95f70b5242eb28129d2546d31046bef97724cd31446be7e05b524541586b
+runner_sha256: 5c549c8bb62be188e023bd5245437fa960f6741f0e9711451f0c312c5f3a8f27
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-[PASS] M1 A1 coherent-state/HS field-space metric on (a,Reb,Imb) = diag(3,6,6), HS-orthogonal
-       metric=[[3.0, 0.0, 0.0], [0.0, 6.0, 0.0], [0.0, 0.0, 6.0]]; doublet block 6(dReb^2+dImb^2)=6|db|^2 -- the metric VALUE is reading-neutral (cannot decide det_C vs det_R)
-[PASS] M2 descent no-go: b->H_lin(b) is R-linear not C-linear (||H_lin(ib)-iH_lin(b)||>0); candidate J is anti-Hermitian
-       ||H_lin(ib)-iH_lin(b)||=3.4641!=0; i*H_lin(1) anti-Hermitian -> mult-by-i EXITS the observable algebra (no J on b from A1)
-[PASS] M3 REAL/det_R (A1 default): equal power per real dim 3a^2=6(Reb)^2=6(Imb)^2 -> |b|^2=a^2 -> r=1 -> Q=1 (maximal hierarchy)
-       Q(r=1)=1.0000 -- the no-extra-structure default is maximal hierarchy, NOT democratic, NOT 2/3
-[PASS] M4 COMPLEX/det_C (needs J): equal power per complex block 3a^2=6|b|^2 -> r=1/2 -> Q=2/3 (the observed value) -- OPEN
-       Q(r=1/2)=0.6667 -- requires a complex structure J fusing the 2 real doublet modes; only continuous such J is the U(1)_b forbidden by C^3=I
-[PASS] M5 delta=arg(b) is PHYSICAL: individual masses m_k depend on delta (gauge only with the forbidden U(1)_b)
-       masses at delta=0: [0.09, 0.09, 5.76] vs delta=60deg: [0.16, 2.89, 2.89] -- delta is spectrum-observable
-[PASS] M6 C^3=I: continuous doublet rephasing C->e^{i alpha}C requires alpha in {0,2pi/3,4pi/3} (discrete C_3, NOT U(1))
-       the only continuous complex structure J making b one gauge-phase mode is the U(1)_b forbidden by the order-3 relation -> det_C's J is both undescended-from-A1 AND continuous-forbidden
+[PASS] M1 HS/coherent-state field-space metric on (a,Re b,Im b) is diag(3,6,6)
+       metric=[[3.0, 0.0, 0.0], [0.0, 6.0, 0.0], [0.0, 0.0, 6.0]]; metric value is reading-neutral
+[PASS] M2 operator-symbol route is R-linear not C-linear; multiplying by i exits Hermitian observables
+       ||H_lin(ib)-iH_lin(b)||=3.4641; i*H_lin(1) is anti-Hermitian
+[PASS] M3 conditional det_R arithmetic: per-real-direction reading gives r=1 and Q=1
+       Q(r=1)=1.0000
+[PASS] M4 conditional det_C arithmetic: equal-complex-block reading gives r=1/2 and Q=2/3
+       Q(r=1/2)=0.6667
+[PASS] M5 without a continuous U(1)_b gauge, delta=arg(b) is spectrum-observable in this family
+       masses delta=0 [0.09, 0.09, 5.76]; delta=60deg [0.16, 2.89, 2.89]
+[PASS] M6 C^3=I permits only discrete rephasings C->exp(i alpha)C, not a continuous U(1)_b
+       allowed alpha are 0, 2pi/3, 4pi/3; generic alpha fails order three
+[PASS] M7 source boundary guard: no det_R default or full-J-exclusion conclusion is promoted
+       the packet leaves physical doublet counting open
 
-SCORECARD PASS=6 FAIL=0
-VERDICT: Axiom 1's coherent-state metric is reading-NEUTRAL diag(3,6,6); the metric cannot decide r. The A1
-DEFAULT mode-count is REAL (det_R): the HS trace pairing presents the doublet as TWO equal real
-Hermitian directions, no complex structure fusing them -> equal-power-per-real-dim -> r=1 -> Q=1
-(MAXIMAL HIERARCHY, the surprising default -- not democratic, not 2/3). r=1/2 (Q=2/3, observed) is
-NOT closed: it needs a complex structure J on the doublet coefficient b that (a) does not descend
-from A1 (the CP^1 J lives on the intra-site state coordinate z, not the inter-site generation Fourier
-coefficient b; b->H_lin(b) is R-linear not C-linear) and (b) whose only continuous form is the U(1)_b
-FORBIDDEN by C^3=I. So the charged-lepton lane reduces to ONE sharp open question: a non-U(1)_b complex
-structure on b. Lane parametrization itself = Koide Z_3 (arXiv:1301.4143); our value-add = the derivation
-+ this default-mode-count determination, which the phenomenological fits leave free.
+SCORECARD PASS=7 FAIL=0
+VERDICT: bounded-support finite metric packet.
+The HS/coherent-state metric is diag(3,6,6) and reading-neutral. The det_R
+and det_C r/Q values are conditional arithmetic readings. The operator-symbol
+complex-linearity route and continuous U(1)_b route are pruned, but this runner
+does not select the physical doublet count.
 
 ----- stderr -----
 

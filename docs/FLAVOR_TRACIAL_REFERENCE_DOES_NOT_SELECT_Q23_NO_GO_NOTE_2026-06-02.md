@@ -1,134 +1,83 @@
-# Flavor Tracial Reference Does Not Select Q=2/3 No-Go
+# Flavor Tracial Reference Does Not Select `Q=2/3` No-Go
 
 **Date:** 2026-06-02
 **Claim type:** no_go
-**Runner:** `scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py`
+**Actual current-surface status:** no-go
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes the route "the tracial/product/modular reference selects the equal-block `Q=2/3` measure".
+**Bare retained allowed:** false
+**Audit required before effective status change:** true
+**Runner:** `scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py` (SCORECARD PASS=39).
 
-This note tests a narrow value-route question: can the tracial/product/modular
-reference route select the equal-block generation measure that gives `Q=2/3`?
-It cannot. In the finite `Z_3` generation carrier, the tracial reference reads
-central blocks by dimension, giving weights `(1,2)` and `Q=1`. The equal-block
-read `(1,1)` gives `Q=2/3`, but it is a separate non-tracial state or sector
-selector.
+## Closed Packet
 
-The framework baseline is
-[`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md). Lattice and
-Quantum supply the finite carrier and matrix algebra used in the runner. Record
-does not supply Born weights, a generation reference state, or a block-measure
-choice.
-
-## Result
-
-For the real generation algebra `R[Z_3] = R (+) C`, the two central blocks have
-real dimensions `1` and `2`. The Koide line checked by the runner is
+This note assumes the finite `R[Z_3]=R(+)C` generation carrier and the displayed
+Koide line/readout
 
 ```text
 Q = 1/3 + (2/3) r.
 ```
 
-Two measures sit on that line:
+Under that assumed carrier/readout surface, the tracial/product/modular route
+does not select the equal-block measure that gives `Q=2/3`. It reads the two
+central blocks by dimension, giving block weights `(1,2)`, hence `r=1` and
+`Q=1`.
 
-```text
-dimension/tracial block weight (1,2) -> r = 1   -> Q = 1
-equal real-block weight        (1,1) -> r = 1/2 -> Q = 2/3
-```
+The packet does not derive that carrier, the physical flavor-sector
+identification, or the physical mass readout from baseline axioms. Those are
+open bridge questions outside this no-go.
 
-The tracial state on the three-dimensional generation carrier is `rho = I_3/3`.
-Its central-block state weights are
+## Direct Checks
 
-```text
-Tr(rho e0) : Tr(rho e1) = 1/3 : 2/3 = 1 : 2.
-```
+1. **Central projectors close.** The cyclic generator satisfies `C^3=I`; the
+   central projectors `e0=(I+C+C^2)/3` and `e1=I-e0` have ranks `1` and `2`.
 
-The Tomita/KMS check for the trace is also trivial: the modular operator is
-`Delta = 1`, so there is no non-trivial reweighting. Product/locality-style
-factorization leaves the same generation-block weight for every tested region
-size. These are all the same tracial route seen from different handles.
+2. **The two measure points are distinct.** On the displayed Koide line,
+   dimension/tracial block weighting `(1,2)` gives `r=1`, `Q=1`; equal-block
+   weighting `(1,1)` gives `r=1/2`, `Q=2/3`.
 
-The equal-block state is admissible as a positive, `C_3`-invariant, unit-trace
-matrix state, but it is not the trace. The runner exhibits it as a finite-gap
-non-tracial density. That makes it a live chiral/sector/reference-state selector
-target, not a consequence of the tracial route.
+3. **The tracial state selects `(1,2)`.** For `rho=I_3/3`,
+   `Tr(rho e0):Tr(rho e1)=1/3:2/3=1:2`.
+
+4. **The equal-block state is admissible but non-tracial.** The runner exhibits
+   a positive, `C3`-invariant, unit-trace state with equal block masses. It is a
+   separate state, not the trace.
+
+5. **Modular/product/positivity handles do not turn trace into equal-block.**
+   The trace has trivial Tomita modular flow, product trace leaves the same
+   generation-block ratio, and the tested reflection-positivity matrices are
+   compatible with both candidate weights.
 
 ## Scope
 
-This is not evidence against `Q=2/3`, and it does not choose the physical flavor
-sector. It only says the tracial/product/modular route lands on the `Q=1`
-dimension read and cannot be reused as the selector for the `Q=2/3` equal-block
-read.
+This is not evidence against `Q=2/3`, and it does not choose the physical
+flavor sector. It says only that the tracial/product/modular route, on the
+assumed finite carrier/readout surface, lands on the dimension read and cannot
+be reused as the selector for the equal-block read.
 
 The `Q=2/3` route remains open through a chiral sector, non-tracial reference
-state, finite-gap dynamics, or owner-approved block-measure admission.
+state, finite-gap dynamics, or explicit block-measure admission.
 
 ## No-Go Discipline Gate
 
-This gate applies only to the route above: deriving the `Q=2/3` equal-block
-weight from a tracial/product/modular reference.
+The no-go applies only to deriving the `Q=2/3` equal-block weight from a
+tracial/product/modular reference.
 
-### N1 - Alternative Route Enumeration
+Alternative routes remain open:
 
-| Route | What it attempts | Result |
-| --- | --- | --- |
-| Tracial state route | Use `rho = I_3/3` to select the generation block weight. | It gives `(1,2)`, not `(1,1)`. |
-| Modular route | Use KMS/Tomita flow to reweight the two blocks. | The trace has `Delta = 1`; no reweighting occurs. |
-| Product/locality route | Let region factorization change the block count. | The tested product trace leaves `(1,2)` at every region size. |
-| Positivity route | Use reflected or transfer positivity to rank `(1,2)` against `(1,1)`. | The tested positivity matrices are compatible with both candidate points. |
-| Equal-block state route | Exhibit `(1,1)` directly. | It works as a separate non-tracial state, not as the trace. |
-| Finite-gap route | Use a non-trivial Gibbs/reference gap to reach `(1,1)`. | This is a possible future selector, but it is extra input. |
+| Route | Status in this packet |
+| --- | --- |
+| Tracial state route | Gives `(1,2)`, not `(1,1)`. |
+| Modular route | The trace has `Delta=1`; no reweighting occurs. |
+| Product/locality route | Product trace leaves `(1,2)` at every tested region size. |
+| Positivity route | Tested positivity matrices are compatible with both candidate points. |
+| Equal-block state route | Works as a separate non-tracial state, not as the trace. |
+| Finite-gap route | Possible future selector, but extra input. |
 
-### N2 - Wall Independence
+## Provenance
 
-The collapsed wall is a single reference-state/sector choice. Traciality,
-trivial modular flow, and product factorization are not independent selectors;
-they are different reads of the same tracial state.
-
-### N3 - Hidden-Wall Scan
-
-"Trace" means the finite matrix trace. "Modular" means the Tomita operator of
-that trace. "Equal-block" means a different positive state on the same carrier.
-No Record axiom, Born rule, chiral operator, or finite-temperature dynamics is
-hidden inside the tracial route.
-
-### N4 - Residual Matching
-
-The residual is the generation-block reference choice: dimension count `(1,2)`
-versus equal-block count `(1,1)`. It is not the algebraic existence of either
-state and not the general Koide line.
-
-### N5 - Rhetoric Audit
-
-"Does not select" is scoped to the tracial/product/modular route. It does not
-say `Q=2/3` is impossible, inconsistent, or disfavored as a chiral-sector value.
-
-### N6 - Partial-Closure Path Scan
-
-A chiral-sector theorem, a non-tracial reference-state derivation, a finite-gap
-dynamics, or an explicit block-measure admission could still select `(1,1)`.
-This note leaves those paths open.
-
-### N7 - Steelman
-
-A hostile reviewer can argue that the physical charged-lepton reference need not
-be the trace. That is correct and is exactly the residual: a physical non-tracial
-or chiral reference could select `(1,1)`. The tracial route still does not.
-
-### N8 - Cross-Cycle Echo
-
-Flavor notes repeatedly separate form/readout gates from value/weight gates.
-This note keeps that split: the tracial reference is a clean comparator, while
-the physical `Q=2/3` selector remains a separate sector or reference-state task.
-
-**Gate result:** pass for the tracial-reference route only.
-
-## Validation
-
-The runner checks finite-matrix facts:
-
-- `C^3 = I` and the central projectors have ranks `1` and `2`;
-- the Koide line is `Q = 1/3 + (2/3)r`;
-- the tracial state gives block weights `(1,2)` and `Q=1`;
-- the equal-block state gives `(1,1)` and is non-tracial;
-- the Tomita operator for the trace has trivial modular flow;
-- a finite-gap non-tracial witness can reach `(1,1)`;
-- the tested positivity matrices are compatible with both candidate weights;
-- product-trace factorization leaves the generation-block weight unchanged.
+- The runner checks finite-matrix facts, the Koide-line arithmetic, tracial and
+  equal-block states, trivial trace modular flow, product-trace factorization,
+  and positivity agnosticism.
+- No `docs/audit/**` status is updated by this packet.
+- No new axiom is introduced.

@@ -10,6 +10,10 @@ bare_retained_allowed=false.
 [`scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py`](../scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt)
+**Load-bearing row-bucket helper:**
+[`scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py`](../scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py)
+with cache
+[`logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt)
 
 ## Result
 
@@ -94,7 +98,9 @@ The runner verifies:
 
 - source anchors in this note, the supplied orientation bridge, the
   arrow-orientation firewall, and the stability/dynamics subdivision;
-- the current `arrow_or_dynamics_bridge` bucket remains `31` rows;
+- the stability/dynamics helper source used to obtain the
+  `arrow_or_dynamics_bridge` bucket is included in the packet;
+- the current `arrow_or_dynamics_bridge` bucket remains `34` rows;
 - signed transition drift has exact orientation-sensitive expectations and
   tails;
 - realized marker lag keeps probabilities in the law and markers in

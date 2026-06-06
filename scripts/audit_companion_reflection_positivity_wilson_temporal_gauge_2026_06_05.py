@@ -18,32 +18,35 @@ Setup (explicit small lattice, link/time reflection):
   * Time reflection theta across the plane between t=0 and t=1 swaps the
     two slices:  theta(c0, c1) = (c1, c0), where c1 are the positive-half
     (t=1) links and c0 the reflected (t=0) links.
-  * Wilson action splits S = S_+ + S_- + S_0:
-        S_+ : spatial Wilson loop on the t=1 slice (positive half);
-        S_- : the same loop on the t=0 slice (reflected half) = Theta S_+;
-        S_0 : straddling temporal plaquettes coupling t=0 to t=1 links;
-              in temporal gauge S_0 = beta * sum_k Re Tr[ U_k(0) U_k(1)^dag ].
+  * Wilson action uses S_W = -beta * sum_p Re Tr U_p (up to the
+    irrelevant additive constant).  Its Boltzmann exponent splits as
+    B = B_+ + B_- + B_0:
+        B_+ : beta times the spatial Wilson loop on the t=1 slice;
+        B_- : the same loop on the t=0 slice (reflected half) = Theta B_+;
+        B_0 : beta times the straddling temporal plaquette term.  Equivalently
+              the plane action is S_W,0 = -B_0 and exp(-S_W,0)=exp(B_0).
   * Reflected (Osterwalder-Schrader) inner product on positive-half
     observables F:  Theta(F)(U) = conj( F(theta U) ), and
         G_ij = < Theta(F_i) . F_j >  (ordinary expectation).
 
 Checks (all reproved here; literature is comparator only):
 
-  Part A  S_- = Theta S_+ (reflection symmetry) and S_0 reflection-plane
+  Part A  B_- = Theta B_+ (reflection symmetry) and B_0 reflection-plane
           invariance, exactly, on Z_N and U(1).
   Part B  Reflection-plane norm-square factorization: the plane Boltzmann
-          weight exp(S_0) is, per straddling link, a character sum with
+          factor exp(B_0) is, per straddling link, a character sum with
           REAL NONNEGATIVE coefficients (Z_N: discrete Fourier; U(1):
-          modified-Bessel coefficients reproved by Haar character
-          integration), hence a positive (Gram) kernel.  This is the
+          modified-Bessel coefficients certified by the positive-term
+          power series), hence a positive (Gram) kernel.  This is the
           "norm-square" hypothesis of the gauge-half note instantiated on
           the Wilson plane.
   Part C  Integrated three-factor RP Gram is PSD for A_+^(2) observables:
-          G_ij = (1/Z) sum_cfg exp(S) conj(F_i(theta cfg)) F_j(cfg) over
+          G_ij = (1/Z) sum_cfg exp(B) conj(F_i(theta cfg)) F_j(cfg) over
           a basis of plaquette / two-link observables on the positive
-          half, evaluated EXACTLY by finite Haar sums for Z_N and U(1),
-          is Hermitian with all eigenvalues >= 0.  Robustness across N
-          and beta.
+          half.  The Z_N checks are exact finite Haar sums; the U(1)
+          angular-grid check is numerical quadrature only, with the
+          theorem-grade U(1) plane-kernel positivity supplied by the
+          Bessel-series certificate in Part B.
   Part D  Manifest factorization  G = W diag(kappa) W^dag  with all
           kappa >= 0 (the plane-kernel spectrum): the explicit
           Osterwalder-Seiler Gram = A^dag A form making PSD manifest.
@@ -69,6 +72,7 @@ audit-friendly evidence. No PDG / fitted / measured / lattice-MC / beta=6
 from __future__ import annotations
 
 import itertools
+import math
 import sys
 
 import numpy as np
@@ -177,15 +181,14 @@ def zn_rp_gram(N: int, beta: float, Ls: int = 2):
 
 
 # ---------------------------------------------------------------------------
-# U(1) gauge-group primitives (exact finite Haar sums via dense angular grid)
+# U(1) gauge-group primitives
 # ---------------------------------------------------------------------------
 def u1_rp_gram(beta: float, Ls: int = 2, K: int = 24):
-    """U(1) reflected Gram by exact finite-Haar (uniform angular) sum.
+    """U(1) reflected Gram by uniform angular quadrature.
 
-    The integrand is a trigonometric polynomial of bounded degree; a
-    uniform K-point angular grid integrates such polynomials exactly once
-    K exceeds the total degree, so this is an exact Haar computation, not
-    an approximation, for K large enough.
+    This is a numerical cross-check only.  The exact U(1) plane-kernel
+    positivity used by the source note is the positive-term Bessel-series
+    certificate below, not a finite-grid Haar exactness claim.
     """
     phis = np.linspace(0.0, 2 * np.pi, K, endpoint=False)
 
@@ -227,19 +230,43 @@ def u1_rp_gram(beta: float, Ls: int = 2, K: int = 24):
     return ev, herm_err
 
 
-def u1_plane_kernel_bessel_coeffs(beta: float, K: int = 256, nmax: int = 8):
-    """Reprove (Haar integration, no special-function import) the U(1)
-    plane-kernel character coefficients
-        c_n(beta) = (1/2 pi) int_0^{2pi} e^{beta cos t} e^{-i n t} dt,
-    i.e. the modified Bessel functions I_n(beta).  All real and >= 0,
-    establishing the norm-square (Schwarz) form of the plane kernel."""
-    ts = np.linspace(0.0, 2 * np.pi, K, endpoint=False)
-    w = np.exp(beta * np.cos(ts))
-    coeffs = {}
-    for n in range(-nmax, nmax + 1):
-        cn = np.mean(w * np.exp(-1j * n * ts))  # exact Haar average on the grid
-        coeffs[n] = cn
-    return coeffs
+def bessel_i_positive_series_interval(beta: float, n: int, terms: int = 36):
+    """Return a rigorous positive-series interval for I_n(beta).
+
+    I_n(beta) = sum_{k>=0} (beta/2)^{2k+n}/(k!(k+n)!).
+    All summands are nonnegative for beta >= 0, so any finite partial sum is
+    a positive lower bound.  The remaining positive tail is bounded by a
+    geometric majorant once the next-term ratio is < 1.
+    """
+    if beta < 0:
+        raise ValueError("positive-series certificate assumes beta >= 0")
+    n = abs(int(n))
+    half = beta / 2.0
+    term = (half ** n) / math.factorial(n)
+    lower = 0.0
+    for k in range(terms):
+        lower += term
+        term *= (half * half) / ((k + 1) * (k + n + 1))
+
+    ratio = (half * half) / ((terms + 1) * (terms + n + 1))
+    if ratio >= 1.0:
+        raise ValueError("increase terms for a rigorous Bessel tail bound")
+    tail = term / (1.0 - ratio)
+    return lower, lower + tail, tail
+
+
+def u1_plane_kernel_bessel_coeffs(beta: float, nmax: int = 8, terms: int = 36):
+    """Certify U(1) plane-kernel character coefficients by positive series.
+
+    The coefficients are I_n(beta) in the Jacobi-Anger expansion of
+    exp(beta cos t).  This routine does not import scipy or special-function
+    values; it certifies positivity directly from the defining positive
+    series and an explicit positive tail bound.
+    """
+    return {
+        n: bessel_i_positive_series_interval(beta, n, terms=terms)
+        for n in range(-nmax, nmax + 1)
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -305,37 +332,38 @@ def main() -> int:
     print("=" * 88)
     print("Audit companion for the Wilson-plaquette temporal-gauge RP bridge")
     print("AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05")
-    print("Reprove: S_-=Theta S_+, plane norm-square factorization, integrated")
-    print("three-factor RP Gram PSD for A_+^(2) observables (Z_N / U(1) exact, SU(2) numeric).")
+    print("Reprove: B_-=Theta B_+, plane norm-square factorization, integrated")
+    print("three-factor RP Gram PSD for A_+^(2) observables")
+    print("(Z_N exact, U(1) Bessel-certified + quadrature cross-check, SU(2) numeric).")
     print("=" * 88)
 
     # -------------------------------------------------------------------
-    section("Part A: reflection symmetry  S_- = Theta S_+  and S_0 plane invariance")
+    section("Part A: reflection symmetry  B_- = Theta B_+  and B_0 plane invariance")
     # -------------------------------------------------------------------
     # Reflection-split exact sympy check: the spatial-loop half-action has identical
     # functional form on the reflected slice (so S_-(c0) = (Theta S_+)(c0)),
-    # and that S_0 is invariant under the reflection-plane swap c0 <-> c1.
+        # and that B_0 is invariant under the reflection-plane swap c0 <-> c1.
     if HAVE_SYMPY:
         b = symbols("beta", positive=True)
         a0, a1 = symbols("a0 a1", real=True)  # t=0 link angles
         c0_, c1_ = symbols("c0 c1", real=True)  # t=1 link angles
-        # U(1) closed spatial loop angle:  S_+ = beta cos(theta_0 + theta_1)
+        # U(1) closed spatial loop angle: B_+ = beta cos(theta_0 + theta_1)
         Splus_t1 = b * cos(c0_ + c1_)
         Splus_t0 = b * cos(a0 + a1)
         # Theta acts by t -> 1-t: it maps the t=1 loop to the t=0 loop with the
-        # SAME functional form.  S_-(a0,a1) must equal (Theta S_+)(a0,a1):
+        # SAME functional form. B_-(a0,a1) must equal (Theta B_+)(a0,a1):
         ThetaSplus = Splus_t1.subs({c0_: a0, c1_: a1})
         check(
-            "reflect-split.1 S_- = Theta S_+  (same functional form on reflected slice, sympy)",
+            "reflect-split.1 B_- = Theta B_+  (same functional form on reflected slice, sympy)",
             simplify(ThetaSplus - Splus_t0) == 0,
             detail="Theta maps the positive-half spatial loop to the negative half identically",
         )
-        # S_0 straddling term, single link:  beta cos(theta0 - theta1), invariant
+        # B_0 straddling term, single link: beta cos(theta0 - theta1), invariant
         # under the reflection-plane swap theta0 <-> theta1.
         S0_link = b * cos(a0 - c0_)
         S0_swap = S0_link.subs({a0: c0_, c0_: a0}, simultaneous=True)
         check(
-            "reflect-plane.1 S_0 invariant under reflection-plane swap c0<->c1 (sympy)",
+            "reflect-plane.1 B_0 invariant under reflection-plane swap c0<->c1 (sympy)",
             simplify(S0_link - S0_swap) == 0,
             detail="Re Tr[U(0) U(1)^dag] is symmetric in the two slices",
         )
@@ -343,7 +371,7 @@ def main() -> int:
         check("reflect-split.1 sympy unavailable", False, detail="install sympy")
         check("reflect-plane.1 sympy unavailable", False, detail="install sympy")
 
-    # Numeric confirmation on Z_N that S_0(c0,c1) = S_0(c1,c0) for all
+    # Numeric confirmation on Z_N that B_0(c0,c1) = B_0(c1,c0) for all
     # configs (reflection-plane invariance).
     N = 4
     beta = 0.6
@@ -353,7 +381,7 @@ def main() -> int:
         abs(S0(c0, c1) - S0(c1, c0)) < 1e-13 for c0 in cfgs for c1 in cfgs
     )
     check(
-        "reflect-plane.2 Z_N: S_0(c0,c1) = S_0(c1,c0) for all configs (reflection-plane invariance)",
+        "reflect-plane.2 Z_N: B_0(c0,c1) = B_0(c1,c0) for all configs (reflection-plane invariance)",
         s0_sym,
         detail=f"N={N}, L_s={Ls}",
     )
@@ -364,7 +392,7 @@ def main() -> int:
     # (B1) Z_N: the plane Boltzmann weight per straddling link,
     # w(n0,n1) = exp(beta Re(U^{n0} conj U^{n1})), is circulant in (n0-n1);
     # its discrete-Fourier (character) coefficients are real and nonnegative,
-    # so exp(S_0) = sum_q c_q U_0^q conj(U_1)^q with c_q >= 0:  a norm-square
+    # so exp(B_0) = sum_q c_q U_0^q conj(U_1)^q with c_q >= 0: a norm-square
     # (Gram) kernel.  Reproved by direct DFT of the per-link weight.
     g = np.array([np.exp(beta * np.real(zn_element(m, N))) for m in range(N)])
     chat = np.fft.fft(g) / N
@@ -401,32 +429,32 @@ def main() -> int:
         ]
     )
     check(
-        "(B3) Z_N plane kernel reconstructed from character sum exp(S_0)=sum_q c_q chi_q(U0) conj chi_q(U1)",
+        "(B3) Z_N plane kernel reconstructed from character sum exp(B_0)=sum_q c_q chi_q(U0) conj chi_q(U1)",
         np.max(np.abs(rec - W_direct)) < 1e-12,
         detail=f"reconstruction err = {np.max(np.abs(rec - W_direct)):.2e}",
     )
 
     # (B4) U(1): the plane-kernel character coefficients are the modified
-    # Bessel functions I_n(beta), reproved by Haar character integration
-    # (no special-function import), all real and >= 0.
-    co = u1_plane_kernel_bessel_coeffs(beta=1.3, K=256, nmax=8)
-    max_im = max(abs(v.imag) for v in co.values())
-    min_re = min(v.real for v in co.values())
+    # Bessel functions I_n(beta), certified from their positive defining
+    # series and a finite positive tail bound (no special-function import).
+    co = u1_plane_kernel_bessel_coeffs(beta=1.3, nmax=8)
+    min_lo = min(bounds[0] for bounds in co.values())
+    max_tail = max(bounds[2] for bounds in co.values())
     check(
-        "(B4) U(1) plane-kernel coeffs c_n=(1/2pi)int e^{beta cos t}e^{-int}dt are real",
-        max_im < 1e-9,
-        detail=f"max|Im c_n| = {max_im:.2e}",
+        "(B4) U(1) plane-kernel coeffs c_n=I_n(beta) have positive lower bounds",
+        min_lo > 0.0,
+        detail=f"min lower bound for n in [-8,8] = {min_lo:.6e}",
     )
     check(
-        "(B5) U(1) plane-kernel coeffs c_n = I_n(beta) >= 0 (norm-square form)",
-        min_re >= -1e-9,
-        detail=f"min c_n = {min_re:.6e} (n in [-8,8])",
+        "(B5) U(1) Bessel certificate has tiny positive tail intervals",
+        max_tail < 1e-60,
+        detail=f"max positive tail bound for n in [-8,8] = {max_tail:.2e}",
     )
-    # symmetry c_n = c_{-n} (real positive kernel)
-    sym_cn = max(abs(co[n] - co[-n]) for n in range(1, 9))
+    # symmetry c_n = c_{-n} follows from the absolute-index positive series.
+    sym_cn = max(abs(co[n][0] - co[-n][0]) for n in range(1, 9))
     check(
         "(B6) U(1) plane-kernel coeffs symmetric c_n = c_{-n}",
-        sym_cn < 1e-9,
+        sym_cn == 0.0,
         detail=f"max|c_n - c_{{-n}}| = {sym_cn:.2e}",
     )
 
@@ -475,7 +503,7 @@ def main() -> int:
         detail=f"min_eig (wrong reflection) = {ev_naive.min():+.4f}",
     )
 
-    # (C3) U(1) exact Gram PSD.
+    # (C3) U(1) quadrature Gram PSD cross-check.
     all_psd_u1 = True
     for btest in [0.5, 1.5]:
         ev, herr = u1_rp_gram(btest, Ls=2, K=24)
@@ -486,7 +514,7 @@ def main() -> int:
             f"herm_err={herr:.1e}, PSD={psd}"
         )
     check(
-        "(C3) U(1) reflected Gram (exact finite-Haar) is Hermitian PSD",
+        "(C3) U(1) reflected Gram quadrature cross-check is Hermitian PSD",
         all_psd_u1,
     )
 
@@ -548,17 +576,18 @@ def main() -> int:
         detail=f"min_eig = {ev_su2.min():+.5f}, herm/MC-noise = {herr_su2:.4f}",
     )
     print(f"     SU(2) eigenvalues: {np.round(ev_su2, 5)}")
-    print("     (numeric sample only; exact statements above are Z_N / U(1))")
+    print("     (numeric sample only; finite exact statements above are Z_N,")
+    print("      with U(1) plane positivity certified by Bessel positive series)")
 
     # -------------------------------------------------------------------
     section("Summary")
     # -------------------------------------------------------------------
     print("  Reproved from primitives:")
-    print("   A  reflection symmetry  S_- = Theta S_+  and S_0 plane invariance")
+    print("   A  reflection symmetry  B_- = Theta B_+  and B_0 plane invariance")
     print("   B  plane Boltzmann weight = positive (norm-square) character kernel")
-    print("      (Z_N: nonneg DFT coeffs; U(1): I_n(beta) >= 0 by Haar integration)")
+    print("      (Z_N: nonneg DFT coeffs; U(1): I_n(beta) >= 0 by positive series)")
     print("   C  integrated three-factor reflected Gram PSD for A_+^(2) observables")
-    print("      (Z_N and U(1) EXACT finite-Haar; wrong reflection is non-PSD control)")
+    print("      (Z_N exact finite-Haar; U(1) quadrature cross-check; wrong reflection control)")
     print("   D  manifest G = W diag(kappa) W^dag with kappa >= 0 (OS Gram = A^dag A)")
     print("   E  SU(2) numeric sample PSD (link-reflection structure carries over)")
     print("  Literature (Osterwalder-Seiler 1978; Montvay-Munster 1994): comparator only.")

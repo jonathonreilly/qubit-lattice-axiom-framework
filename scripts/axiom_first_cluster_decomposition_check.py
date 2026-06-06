@@ -42,6 +42,11 @@ combinatorial Lieb–Robinson structure):
            ‖Σ c_α γ^α‖ <= Σ |c_α| <= sqrt(8) ‖c‖_2
        and exhibit that the previous unit-constant Euclidean bound is
        false for I + σ_z.
+
+  E7.  Weighted-path LR exponent check: verify the finite-path algebra
+       used in Step 3 after replacing the invalid Poisson-tail shortcut.
+       For μ = 1/R_int, the weighted-path exponent equals
+            -(d - 2e J_* D_int R_int |t|) / R_int.
 """
 
 from __future__ import annotations
@@ -368,6 +373,60 @@ def exhibit_E6_cl3_norm_bound(seed=20260606, n_trials=200):
 
 
 # ---------------------------------------------------------------------------
+# Exhibit E7: weighted-path Lieb-Robinson algebra
+# ---------------------------------------------------------------------------
+
+def exhibit_E7_weighted_path_lr_algebra():
+    print("\n--- Exhibit E7: weighted-path Lieb-Robinson algebra ---")
+    print("  Verify Step 3 with μ = 1/R_int and v_LR = 2e J_* D_int R_int.")
+    samples = [
+        # (d, |t|, J_star, D_int, R_int)
+        (1.0, 0.00, 1.00, 2, 1.0),
+        (4.0, 0.25, 1.00, 2, 1.0),
+        (7.5, 0.40, 0.70, 6, 1.5),
+        (12.0, 0.90, 0.35, 10, 2.0),
+    ]
+
+    max_exponent_residual = 0.0
+    min_path_weight_factor = float("inf")
+    path_weight_ok = True
+
+    for d, t_abs, J_star, D_int, R_int in samples:
+        mu = 1.0 / R_int
+        v_lr = 2.0 * math.e * J_star * D_int * R_int
+        weighted_exp = (
+            -mu * d
+            + 2.0 * J_star * D_int * math.exp(mu * R_int) * t_abs
+        )
+        target_exp = -(d - v_lr * t_abs) / R_int
+        max_exponent_residual = max(
+            max_exponent_residual,
+            abs(weighted_exp - target_exp),
+        )
+
+        n_min = int(math.ceil(d / R_int))
+        for n in range(n_min, n_min + 4):
+            factor = math.exp(-mu * d + mu * n * R_int)
+            min_path_weight_factor = min(min_path_weight_factor, factor)
+            if factor < 1.0 - 1e-12:
+                path_weight_ok = False
+
+        print(
+            "    "
+            f"d={d:>4.1f}, |t|={t_abs:>4.2f}, J_*={J_star:>4.2f}, "
+            f"D_int={D_int:>2}, R_int={R_int:>3.1f}: "
+            f"residual={abs(weighted_exp - target_exp):.3e}, "
+            f"v_LR={v_lr:.6f}"
+        )
+
+    pass_check = path_weight_ok and max_exponent_residual < 1e-12
+    print(f"  minimum checked path-weight factor = {min_path_weight_factor:.6f}")
+    print(f"  max exponent residual = {max_exponent_residual:.3e}")
+    print(f"  E7 verdict: {'PASS' if pass_check else 'FAIL'}")
+    return pass_check
+
+
+# ---------------------------------------------------------------------------
 # Driver
 # ---------------------------------------------------------------------------
 
@@ -376,20 +435,22 @@ def main():
     print(" axiom_first_cluster_decomposition_check.py")
     print(" Loop: axiom-first-foundations, cluster-decomposition finite-speed route")
     print(" Exhibits the corrected J_* Lieb–Robinson envelope and")
-    print(" conditional clustering behaviour on a free-fermion 1D lattice.")
+    print(" weighted-path LR proof algebra on a free-fermion 1D lattice.")
     print("=" * 72)
 
     e1_pass, e3_pass, e4_pass, v_LR_pred = exhibit_LR_envelope(L=24)
     e2_pass = exhibit_E2_clustering(L=24)
     e5_pass = exhibit_E5_jstar_constant()
     e6_pass = exhibit_E6_cl3_norm_bound()
+    e7_pass = exhibit_E7_weighted_path_lr_algebra()
 
     results = {"E1 (LR envelope)": e1_pass,
                "E2 (clustering)": e2_pass,
                "E3 (lattice light cone)": e3_pass,
                "E4 (front velocity)": e4_pass,
                "E5 (J_* constant)": e5_pass,
-               "E6 (Cl(3) norm bound)": e6_pass}
+               "E6 (Cl(3) norm bound)": e6_pass,
+               "E7 (weighted LR proof)": e7_pass}
     print()
     print("=" * 72)
     print(" SUMMARY")

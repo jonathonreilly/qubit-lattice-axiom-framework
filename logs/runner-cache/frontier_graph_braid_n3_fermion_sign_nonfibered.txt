@@ -58,4 +58,3 @@ VERDICT: the finite N=3 graph-braid witness does not supply a fibered-enrichment
 ========================================================================
 
 ----- stderr -----
-

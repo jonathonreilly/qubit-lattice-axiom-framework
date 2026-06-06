@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_cluster_decomposition_check.py
-runner_sha256: 57efef1fe877a274d7dd663b9942e7d059b8b9a5d9daa2f7200776fa615ae869
+runner_sha256: 7b3ef876335847599f55a168d58558c954b4f9432936494f58f22b75c5cf2c0b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 ========================================================================
  axiom_first_cluster_decomposition_check.py
  Loop: axiom-first-foundations, cluster-decomposition finite-speed route
  Exhibits the corrected J_* Lieb–Robinson envelope and
- conditional clustering behaviour on a free-fermion 1D lattice.
+ weighted-path LR proof algebra on a free-fermion 1D lattice.
 ========================================================================
 
 --- Exhibits E1, E3, E4: Lieb–Robinson envelope ---
@@ -76,6 +76,16 @@ status: ok
   worst numerical slack = 1.293e-01
   E6 verdict: PASS
 
+--- Exhibit E7: weighted-path Lieb-Robinson algebra ---
+  Verify Step 3 with μ = 1/R_int and v_LR = 2e J_* D_int R_int.
+    d= 1.0, |t|=0.00, J_*=1.00, D_int= 2, R_int=1.0: residual=0.000e+00, v_LR=10.873127
+    d= 4.0, |t|=0.25, J_*=1.00, D_int= 2, R_int=1.0: residual=0.000e+00, v_LR=10.873127
+    d= 7.5, |t|=0.40, J_*=0.70, D_int= 6, R_int=1.5: residual=8.882e-16, v_LR=34.250351
+    d=12.0, |t|=0.90, J_*=0.35, D_int=10, R_int=2.0: residual=0.000e+00, v_LR=38.055946
+  minimum checked path-weight factor = 1.000000
+  max exponent residual = 8.882e-16
+  E7 verdict: PASS
+
 ========================================================================
  SUMMARY
 ========================================================================
@@ -85,8 +95,9 @@ status: ok
    E4 (front velocity): PASS
    E5 (J_* constant): PASS
    E6 (Cl(3) norm bound): PASS
+   E7 (weighted LR proof): PASS
 
-   PASSED: 6/6
+   PASSED: 7/7
    v_LR bound (LR-1972 constants) = 21.746
 
  verdict: corrected LR (L1/L3/L4) exhibited; L2 remains conditional.

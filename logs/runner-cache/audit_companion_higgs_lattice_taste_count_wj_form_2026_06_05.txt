@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py
-runner_sha256: 0f2b16be20acf4367ccb6631c17bb8c0d3c8379248429b00c2a2c84df88a824c
+runner_sha256: a0afac87be35c9804df330e08b5c3fca4e46c5d0320ce0ec68118b9f32565bb5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.88
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 
@@ -26,6 +26,12 @@ Part 1: Bridge (1) — d=4 naive taste count N_taste = 2^d = 16
   [PASS (A)] PBC even L=4, d=4: per-axis sin-zeros=2 -> corner count 16 = 16
   [PASS (A)] PBC even L=6, d=4: per-axis sin-zeros=2 -> corner count 16 = 16
   [PASS (A)] PBC even L=8, d=4: per-axis sin-zeros=2 -> corner count 16 = 16
+  [PASS (A)] APBC even L=4: no exact sin-zero momenta on the strict anti-periodic grid
+  [PASS (A)] APBC even L=6: no exact sin-zero momenta on the strict anti-periodic grid
+  [PASS (A)] APBC even L=8: no exact sin-zero momenta on the strict anti-periodic grid
+  [PASS (A)] APBC even L=10: no exact sin-zero momenta on the strict anti-periodic grid
+  [PASS (A)] APBC odd L=3: only one boundary zero per axis, not the two-corner set
+  [PASS (A)] APBC odd L=5: only one boundary zero per axis, not the two-corner set
 
 ----------------------------------------------------------------------------------------
 Part 2: Bridge (2a) — Berezin Z_F[M] = det(M) ⇒ W(J) = log det(D+J)
@@ -38,11 +44,12 @@ Part 2: Bridge (2a) — Berezin Z_F[M] = det(M) ⇒ W(J) = log det(D+J)
   [PASS (A)] log det(D+J) = sum_k log lambda_k(D+J) (det = product of eigenvalues)
 
 ----------------------------------------------------------------------------------------
-Part 3: Bridge (2b) — anti-Hermitian conjugate pairs, per-pair det = J^2 + 4 u_0^2
+Part 3: Bridge (2b) — paired-spectrum determinant under bounded uniform hypothesis
 ----------------------------------------------------------------------------------------
   [PASS (A)] per-pair determinant (J + i a)(J - i a) = J^2 + a^2  (J**2 + a**2)
   [PASS (A)] with a = 2 u_0: per-pair det = J^2 + 4 u_0^2
-  [PASS (A)] numeric: real-antisymmetric M_KS has purely-imaginary, conjugate-paired (+/- i lambda) eigenvalues
+  [PASS (A)] bounded paired-spectrum hypothesis is explicit: uniform a = 2 u_0 is supplied to Bridge (2)
+  [PASS (A)] numeric: real-antisymmetric blocks have purely-imaginary, conjugate-paired (+/- i lambda) eigenvalues
 
 ----------------------------------------------------------------------------------------
 Part 4: Bridge (2b) — Clifford magnitude D_taste^2 = d I ⇒ a = 2 u_0
@@ -75,7 +82,7 @@ Part 6: declared dependencies retained-grade; target row is the repair target
   [PASS (A)] note avoids forbidden physical claim: 'physical Higgs mass is established'
 
 ========================================================================================
-  TOTAL: 43 PASS / 0 FAIL
+  TOTAL: 50 PASS / 0 FAIL
 ========================================================================================
 
 ----- stderr -----

@@ -21,6 +21,35 @@ not** be cited for Wilson action form, running/fixed-point selection,
 N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent
 broad g_bare derivation.
 
+## 2026-06-06 Dependency Reroute
+
+The load-bearing dependency for the embedding/Ad-form inputs is repointed
+from `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md` to the
+retained `CL3_COLOR_AUTOMORPHISM_THEOREM.md` and
+`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`. No content of R1–R3 changes; the
+runner is unchanged.
+
+**Why.** The 2026-04-18 structural-normalization note is now
+`effective_status = audited_renaming` (terminal: demoted because its
+headline *defines* `g = 1` as the unrescaled Wilson convention rather than
+deriving it). This row never used that Wilson-action / `g_bare = 1`
+content (see "Non-Binding Former Claims" below); it load-bears **only** on
+that note's Claim 1 (`Cl(3) → End(V) → su(3)` embedding) and Claim 2
+(Ad-invariant trace-form identification), both of which the demoted note
+itself flags as **exact structural support**.
+
+**Reroute target (both retained positive-theorems).**
+- Claim 1 (embedding): `CL3_COLOR_AUTOMORPHISM_THEOREM.md` realizes
+  `su(3) ⊂ End(C^8)` as `M₃_sym ⊗ I₂` on the symmetric base; and
+  `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md` closes `su(3)` graph-canonically on
+  the taste cube (the route the demoted note's own Claim 1 cites).
+- Claim 2 (Ad-form): `CL3_COLOR_AUTOMORPHISM_THEOREM.md` supplies the exact
+  triplet trace form `Tr[T^a T^b] = (1/2)δ^{ab}`.
+
+So R1–R3's load-bearing inputs now stand entirely on retained surfaces.
+The independent audit lane owns whether this reroute is accepted; this
+note proposes it and does not assert a status change.
+
 ## 0. Audit context
 
 This note strengthens
@@ -40,9 +69,14 @@ This is a class (A) algebraic identity whose load-bearing inputs are:
    structure, imported through
    [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](PHYSICAL_LATTICE_NECESSITY_NOTE.md)),
 2. simplicity of `su(3)` and Killing-form rigidity (classical),
-3. the Cl(3) → End(V) embedding canonicity claim from
-   [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md)
-   Claim 1 (proved up to finite outer automorphism).
+3. the Cl(3) → End(V) → su(3) embedding (the realization of
+   `g_conc = su(3) ⊂ End(V) = End(C^8)`), supplied by the retained
+   [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md)
+   (the `M₃_sym ⊗ I₂` embedding on the symmetric base of the taste cube)
+   and the retained
+   [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
+   (the graph-canonical `su(3)` closure on the taste cube). See the
+   2026-06-06 dependency reroute below.
 
 The argument does *not* reduce to the canonical Gell-Mann generators
 already carrying `T_F = 1/2` (the path used by the 2026-05-03 source
@@ -57,8 +91,9 @@ normalization.
 > inner product (carried from the framework axioms via the physical
 > lattice retention chain). Let `g_conc = su(3) ⊂ End(V)` be the
 > derived gauge subalgebra in the canonical triplet block as fixed by
-> [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md)
-> Claim 1. Let
+> the retained [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md)
+> (`M₃_sym ⊗ I₂` embedding) and
+> [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md). Let
 >
 > ```
 > B_HS(X, Y) := Tr_{V_3}(X Y),     X, Y ∈ g_conc                      (HS)
@@ -100,10 +135,9 @@ The theorem **does not** claim:
   (the convention layer for the overall scalar is the subject of
   the companion note,
   `G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md`);
-- that the Wilson plaquette action form is uniquely forced (separate
-  retention target via A2.5; see
-  [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md)
-  Claim 3 caveat);
+- that the Wilson plaquette action form is uniquely forced (a separate
+  retention target; this row does not use, and is not load-bearing on,
+  any Wilson-action / `g_bare = 1`-definition content);
 - closure of the deeper "absolute derivation of `g_bare = 1` from A1+A2"
   Nature-grade target.
 
@@ -128,11 +162,15 @@ rigidity check supplied by this narrowed source surface.
 | Authority | Audit-lane status | Role |
 |---|---|---|
 | [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](PHYSICAL_LATTICE_NECESSITY_NOTE.md) | retained_no_go | carries the physical lattice baseline used to treat the Hilbert-space inner product as fixed framework structure |
-| [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md) | unaudited | provides the canonical Cl(3) -> End(V) -> su(3) embedding (Claim 1) and the Ad-invariant form identification (Claim 2) |
+| [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md) | retained | provides the `Cl(3) -> End(V) -> su(3)` embedding (`M₃_sym ⊗ I₂` on the symmetric base, the realization of `g_conc = su(3) ⊂ End(C^8)`) and the Ad-invariant trace form on the triplet (`Tr[T^a T^b] = (1/2)δ^{ab}`, exact) |
+| [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) | retained | provides the graph-canonical `su(3)` closure on the taste cube (corroborating the embedding `Cl(3) -> su(3) ⊂ End(V)`) |
 
-The dependency on `cl3_color_automorphism_theorem` (the
-basis-normalization lemma) is *two-hop* via either parent and is
-therefore not load-bearing for the present argument. The
+These two retained positive-theorems jointly supply the embedding (Claim 1)
+and the Ad-invariant form identification (Claim 2) that the present
+argument load-bears on; the dependency reroute below records why the
+prior single citation to the now-terminally-demoted
+`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md` is replaced.
+The
 present theorem's load-bearing path is via the **form** rather than
 via the **basis-element values**.
 
@@ -145,7 +183,7 @@ is an informational cross-reference, not a load-bearing dependency.
 ```text
 Inputs:
   V = C^8 with fixed Hilbert-space inner product (axiom-level)
-  g_conc = su(3) ⊂ End(V)  (Claim 1 of structural normalization theorem)
+  g_conc = su(3) ⊂ End(V)  (embedding from cl3_color_automorphism_theorem / graph_first_su3_integration_note, both retained)
   B_HS(X, Y) = Tr_{V_3}(X Y)  for X, Y ∈ g_conc  (HS form)
 
 Step 1 (Killing rigidity).
@@ -238,8 +276,9 @@ authority for those claims.
 | Authority | Role |
 |---|---|
 | [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](PHYSICAL_LATTICE_NECESSITY_NOTE.md) | supplies the framework Hilbert-space setting used by the row |
-| [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md) | supplies the concrete `Cl(3) -> End(V) -> su(3)` structural surface used here; independent audit owns whether that context is sufficient as load-bearing authority |
-| [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) | companion Casimir value/context; this repaired note also recomputes the finite matrix identity directly |
+| [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md) | retained; supplies the concrete `Cl(3) -> End(V) -> su(3)` embedding (`M₃_sym ⊗ I₂`) and the exact Ad-invariant trace form `Tr[T^a T^b] = (1/2)δ^{ab}` on the triplet |
+| [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) | retained; corroborating graph-canonical `su(3)` closure on the taste cube |
+| [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) | companion Casimir value/context (decoration under the retained `cl3_color_automorphism_theorem`); this repaired note also recomputes the finite matrix identity directly |
 
 The repaired claim does not need a physical Wilson matching premise.
 
@@ -363,7 +402,19 @@ historical_proposed_claim_scope_below_retired: |
 proposed_load_bearing_step_class: A
 declared_one_hop_deps:
   - physical_lattice_necessity_note
-  - g_bare_structural_normalization_theorem_note_2026-04-18
+  - cl3_color_automorphism_theorem
+  - graph_first_su3_integration_note
+dependency_reroute_2026-06-06: |
+  Load-bearing dependency repointed from
+  g_bare_structural_normalization_theorem_note_2026-04-18 (now
+  effective_status=audited_renaming, terminal: demoted for defining
+  rather than deriving the Wilson-action g=1, content this row does NOT
+  use) to the retained cl3_color_automorphism_theorem (Cl(3)->End(V)->su(3)
+  embedding M3_sym (x) I2 + exact Ad-invariant trace form
+  Tr[T^a T^b]=(1/2)delta) and graph_first_su3_integration_note
+  (graph-canonical su(3) closure). R1-R3 only load-bear on Claims 1 and 2
+  (embedding + Ad-form), both of which are exact structural support in the
+  demoted note and are independently supplied by these retained rows.
 independent_audit_required_before_effective_status_change: true
 parent_update_allowed_only_after_independent_audit_accepts_child_rows: true
 distinguishing_content_from_2026-05-03: |
@@ -402,9 +453,12 @@ package-wide `g_bare` promotion.
 - `G_BARE_RIGIDITY_THEOREM_NOTE.md`
   — sister Hamiltonian-level rigidity argument; the present theorem
   is its trace–form-explicit packaging on the Wilson-action surface.
-- [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md)
-  — declared one-hop dep providing the Cl(3) → End(V) → su(3) chain
-  (Claim 1) and the Ad-invariant form identification (Claim 2).
+- `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`
+  — former one-hop dep for the embedding (Claim 1) and Ad-form (Claim 2);
+  **superseded by the 2026-06-06 reroute** to the retained
+  [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md) and
+  [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
+  (plain-text reference here, intentionally not a load-bearing link).
 - `SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`
   — informational cross-reference for the canonical-basis Casimir
   value. The value is re-derived in §4 for this row, so this file is

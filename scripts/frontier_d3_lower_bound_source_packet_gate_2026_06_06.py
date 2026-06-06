@@ -35,6 +35,7 @@ V2_NOTE = ROOT / "docs" / "DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.
 FINITE_K_NOTE = ROOT / "docs" / "DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md"
 SOURCE_PACKET_RUNNER = ROOT / "scripts" / "dimension_selection_parent_source_packet_manifest_2026_06_05.py"
 SOURCE_PACKET_CACHE = ROOT / "logs" / "runner-cache" / "dimension_selection_parent_source_packet_manifest_2026_06_05.txt"
+SOURCE_PACKET_JSON = ROOT / "outputs" / "dimension_selection_parent_source_packet_manifest_2026_06_05.json"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -152,20 +153,22 @@ def run_source_packet_checks() -> None:
         "outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json",
         "scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py",
         "logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt",
+        "outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json",
     ]
     for rel in required_paths:
         check(f"required packet path exists: {rel}", (ROOT / rel).exists())
         check(f"parent note links packet path: {rel}", rel in parent_text)
 
-    manifest_markers = [
+    manifest_labels = [
         "finite_k_bridge_runner",
         "original_cache",
         "cache_sha_fresh",
         "bridge_json_fail_count_zero",
+        "source_full_length",
         "SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=",
     ]
-    for marker in manifest_markers:
-        check(f"source-packet verifier contains marker: {marker}", marker in source_packet_text)
+    for label in manifest_labels:
+        check(f"source-packet verifier contains label: {label}", label in source_packet_text)
 
     check(
         "source-packet cache belongs to current verifier",
@@ -183,12 +186,27 @@ def run_source_packet_checks() -> None:
         f"exit_code={cache.get('exit_code')} status={cache.get('status')}",
     )
     for snippet in (
-        "SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=55 FAIL=0",
+        "SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=56 FAIL=0",
         "cache_sha_fresh:original_cache",
         "cache_snippet_present:original_cache:I_3/P = <1e-10",
         "cache_snippet_present:finite_k_bridge_cache:SUMMARY: PASS=56 FAIL=0",
     ):
         check(f"source-packet cache contains snippet: {snippet}", snippet in cache["_text"])
+
+    if SOURCE_PACKET_JSON.exists():
+        payload = json.loads(read(SOURCE_PACKET_JSON))
+    else:
+        payload = {}
+    check(
+        "source-packet verifier JSON exists",
+        SOURCE_PACKET_JSON.exists(),
+        SOURCE_PACKET_JSON.relative_to(ROOT),
+    )
+    check(
+        "source-packet verifier JSON reports zero failures",
+        payload.get("summary", {}).get("fail") == 0,
+        payload.get("summary"),
+    )
 
     boundaries = [
         "finite-runner lower-bound support only",

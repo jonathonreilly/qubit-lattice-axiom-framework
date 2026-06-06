@@ -34,7 +34,7 @@
     "audited_conditional": 45,
     "audited_failed": 2,
     "audited_numerical_match": 15,
-    "audited_renaming": 33,
+    "audited_renaming": 32,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cl3_color_automorphism_theorem": 6,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 5,
@@ -65,10 +65,10 @@
     "meta": 307,
     "open_gate": 37,
     "retained": 198,
-    "retained_bounded": 701,
+    "retained_bounded": 700,
     "retained_no_go": 214,
     "retained_pending_chain": 10,
-    "unaudited": 1329
+    "unaudited": 1331
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

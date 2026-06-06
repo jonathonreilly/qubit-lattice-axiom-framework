@@ -4,6 +4,8 @@
 
 Bounded-support / negative route-pruning block ready for stacked review.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2757
+
 ## Main finding
 
 Post-record signed/readout information can be appended, counted, and
@@ -20,6 +22,5 @@ gate.
 
 ## Next exact action
 
-Open stacked PR against
-`physics-loop/record-dynamics-layer-reconciliation-20260605`, then patch this
-loop pack with the PR URL.
+Campaign pivot: select the next ranked science lane while #2757 receives
+review/checks.

@@ -1,0 +1,16 @@
+loop_slug: gravitational-wave-source-completeness-20260606
+branch: physics-loop/gravitational-wave-source-completeness-20260606
+base: origin/main@9f4039da4
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+active_route: source-completeness artifact repair
+files_touched:
+  - docs/GRAVITATIONAL_WAVE_PROBE_NOTE.md
+  - scripts/frontier_grav_wave_post_newtonian.py
+  - logs/runner-cache/frontier_grav_wave_post_newtonian.txt
+open_imports:
+  - physical gravitational-wave bridge
+  - physical post-Newtonian observable bridge
+  - c_lattice normalization
+audit_files_touched: false
+next_exact_action: "Run final checks, commit, push, and open a ready review PR."

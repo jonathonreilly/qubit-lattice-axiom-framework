@@ -1,0 +1,32 @@
+loop_slug: record-dynamics-audit-gate-ladder-20260605
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 15
+current_goal: "Build a branch-local dynamics gate classifier for bounded/conditional audit lanes."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+active_route: "classify record dynamics claims by required gates and supplied support"
+hard_residual: "Produced record, physical implementation, clock/rate, bath/cost, and dial selection remain outside this classifier."
+branch: physics-loop/record-dynamics-audit-gate-ladder-20260605
+base_branch: physics-loop/record-asymptotic-reset-convergence-ledger-20260605
+stacked_on_pr: 2784
+files_touched:
+  - docs/RECORD_DYNAMICS_AUDIT_GATE_LADDER_2026-06-05.md
+  - scripts/frontier_record_dynamics_audit_gate_ladder_2026_06_05.py
+  - logs/runner-cache/frontier_record_dynamics_audit_gate_ladder_2026_06_05.txt
+  - .claude/science/physics-loops/record-dynamics-audit-gate-ladder-20260605/
+open_imports:
+  - "Produced record for target lane."
+  - "Physical implementation and reset bath/cost."
+  - "Clock/rate normalization."
+  - "Any generation/Koide dial selector."
+no_go_routes:
+  - "Kernel implies produced record."
+  - "Open reset channel implies physical rate or cost."
+  - "Epsilon reset implies exact finite reset."
+  - "Gate ladder fixes a dial location."
+trace_gate_classification: upstream_support
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

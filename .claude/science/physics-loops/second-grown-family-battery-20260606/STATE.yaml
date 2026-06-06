@@ -1,0 +1,25 @@
+loop_slug: second-grown-family-battery-20260606
+goal: "Restore the missing second_grown_family_battery runner path as an audit-clean current evidence verifier."
+target_status: exact-support
+started_from: origin/main
+base_commit: 703c8ac76c90507b9a86ab5d6fe39e91d075d3b12
+branch: physics-loop/second-grown-family-battery-20260606
+cycle_count: 1
+active_route: current-battery-verifier
+hard_residual: "Do not revive the archived broad second-grown-family table; verify only current maintained packets."
+files_touched:
+  - scripts/second_grown_family_battery.py
+  - logs/runner-cache/second_grown_family_battery.txt
+  - .claude/science/physics-loops/second-grown-family-battery-20260606/
+open_imports:
+  - "Independent audit must decide row status; this branch does not edit audit results."
+no_go_routes:
+  - "Archived SECOND_GROWN_FAMILY_NOTE broad status was not revived because current caches expose a narrower complex-action boundary."
+trace_gate:
+  trace_class: direct_blocker_closure
+  reachability_to_target: closes
+  artifact_role: runner_certificate
+review_findings: "Local hygiene passed; external reviewer/auditor still required."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3010"
+next_exact_action: "Let audit/review decide whether the restored runner closes the row blocker."
+stop_condition: "Coherent block ready for review PR."

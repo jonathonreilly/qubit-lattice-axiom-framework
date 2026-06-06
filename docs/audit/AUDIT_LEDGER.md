@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 674 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1214 |
+| unaudited | 1213 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 86 |
+| ~~audited_conditional~~ | 87 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1045 |
-| `audited_conditional` | 86 |
+| `audited_conditional` | 87 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1498 |
+| `unaudited` | 1497 |
 
 | claim_type | count |
 |---|---:|
@@ -1258,6 +1258,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_backreaction_live_capture_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -15201,6 +15202,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The current live runner computes two cycle-bearing 9/9 battery scores and improves the cycle and holdout gaps by about 2x while preserving linearity, additivity, TOWARD, zero-source, and norm guardrails.  _(class `C`)_
 - **chain closes:** False — The primary runner and visible helpers perform nontrivial graph, Poisson, Crank-Nicolson, source-map, and metric computations rather than merely printing constants. However the restricted packet truncates a transitive helper, scripts/frontier_staggered_backreaction_prototype.py, so the full import chain cannot be independently verified from the provided sources.
 - **rationale:** The source note's narrow claim matches the runner stdout and the shown primary/helper code computes the reported finite metrics from fixed graph constructors and operators. The claim is explicitly bounded and does not assert the stale archived table, exact force-scale closure, calibrated transfer, continuum backreaction, or physical gravitational closure. The visible code does compare against an internal external-kernel control for gap metrics, but the audited claim is only that the live bounded harness reports an improvement against that control. Because one transitive helper source is truncated in the packet, the audit cannot fully verify the runner chain as class C from the restricted artifact alone.
+- **auditor confidence:** high
+
+### `staggered_backreaction_live_green_packet_note_2026-05-29`
+
+- **Note:** [`STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md`](../../docs/STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A finite bounded comparison among screened_poisson, geodesic_yukawa, and resistance_yukawa on the current staggered graph-Green runner for three fixed graph families, with calibrated transfer and endogenous refresh explicitly excluded.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-003736-845cba7117-staggered_backreaction_live_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current live runner computes resistance_yukawa as the best holdout-aware map with raw cycle-gap improvement 2.81x over screened Poisson, raw holdout gap 1.534e-02, tight linearity/additivity/TOWARD/norm checks, and open calibrated/self gaps.  _(class `C`)_
+- **chain closes:** False — The primary runner and green-closure helper show an actual numerical computation path, but the transitive prototype helper source is visibly truncated in the packet. The graph construction and base primitives therefore cannot be fully audited from the restricted inputs.
+- **rationale:** The displayed primary runner does not merely print constants: it builds graphs, mappings, raw/calibrated rows, summaries, and assertions from helper computations. The displayed green-closure helper likewise computes nonlocal kernels, gains, gaps, R2, additivity, TOWARD, and norm checks rather than importing an external comparator. However, the prototype helper is not fully present in the restricted packet; it contains an explicit truncation marker, so the load-bearing base graph and primitive routines cannot be completely verified. This is an artifact-completeness blocker, not a scientific failure of the bounded claim.
 - **auditor confidence:** high
 
 ### `staggered_backreaction_nonlocal_closure_note`

@@ -10,6 +10,8 @@ Added an exact support theorem for the record-prior stability selector:
 
 Runner result: `PASS=37 FAIL=0`.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2712
+
 ## Main finding
 
 The equal-letter / Koide-side endpoint is stable under post-record atom-symmetric

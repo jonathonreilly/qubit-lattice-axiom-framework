@@ -24,11 +24,13 @@ for:
   (2) The general lattice Noether identity is RESTRICTED to onsite / internal
       symmetry generators T (acting site-locally, T_{xy} = t * delta_{xy} for a
       single-site internal matrix t, i.e. [T, S^{(a)}] = 0 for every lattice
-      shift). For such generators the conserved current is manifestly local
-      (a nearest-neighbour bond current). Site-mixing generators (e.g. the
-      two-site translation) are scoped OUT and recorded as a named open item;
-      see Part D for the explicit counterexample that motivates the
-      restriction.
+      shift). For such generators the conserved current inherits the support
+      envelope of the Hamiltonian coefficients. It is nearest-neighbour on the
+      admitted staggered nearest-neighbour carrier, finite-range for finite-range
+      coefficients, and all-to-all when c_xy is all-to-all. Site-mixing
+      generators (e.g. the two-site translation) are scoped OUT and recorded as
+      a named open item; see Part D for the explicit counterexample that
+      motivates the restriction.
 
   (3) An ARBITRARY-BILINEAR SYMBOLIC check (Part A): for a fully symbolic
       bilinear H = sum_ij c_ij a_i^dag a_j with the global U(1) / onsite-internal
@@ -144,6 +146,9 @@ def part_B0_commutator_identity() -> None:
 #   (A3) the current sign: writing (div^L j)_p := -sum_q j_{p<-q} (net outflow),
 #        d rho_p/dt = -(div^L j)_p, the sign-fixed continuity equation;
 #   (A4) sum_p d rho_p/dt = 0  =>  dQ/dt = 0  (global conservation).
+#   (A5) support envelope: the {p,q} current uses only c_pq and c_qp, and
+#        vanishes if those two coefficients vanish. Noether does not turn an
+#        arbitrary all-to-all bilinear into a nearest-neighbour current.
 # ---------------------------------------------------------------------------
 
 
@@ -194,6 +199,29 @@ def part_A_arbitrary_bilinear() -> None:
     total = {k: sp.simplify(v) for k, v in total.items() if sp.simplify(v) != 0}
     record("A4 sum_p d rho_p/dt = 0 => dQ/dt = 0 (arbitrary c_ij)", len(total) == 0)
 
+    # (A5) exact support envelope. The pair current on {p,q} depends only on the
+    # two Hamiltonian coefficients on that pair, c_pq and c_qp. In particular,
+    # it vanishes when both are zero. Thus finite-range support stays
+    # finite-range, nearest-neighbour support stays nearest-neighbour, and
+    # arbitrary all-to-all support stays all-to-all.
+    support_ok = True
+    for p, q in product(range(n), repeat=2):
+        if p == q:
+            continue
+        edge_current = {
+            (q, p): sp.I * c[q, p],
+            (p, q): -sp.I * c[p, q],
+        }
+        allowed = {(q, p), (p, q)}
+        zero_pair = {c[q, p]: 0, c[p, q]: 0}
+        for expr in edge_current.values():
+            if sp.simplify(expr.subs(zero_pair)) != 0:
+                support_ok = False
+            for a, b in product(range(n), repeat=2):
+                if (a, b) not in allowed and expr.has(c[a, b]):
+                    support_ok = False
+    record("A5 pair current has exactly the Hamiltonian coefficient support envelope", support_ok)
+
 
 # ---------------------------------------------------------------------------
 # Part B — onsite/internal generator restriction (symbolic, arbitrary bilinear).
@@ -204,7 +232,8 @@ def part_A_arbitrary_bilinear() -> None:
 # LATTICE SHIFT S^{(a)} (it does not move sites). We verify:
 #   (B1) For an internal U(1)-type generator t = i*Id, [T, S^(a)] = 0 (onsite).
 #   (B2) Under such an onsite T, the local-alpha Noether current is the
-#        bilateral NEAREST-NEIGHBOUR bond current (manifestly local): the
+#        anti-Hermitian variational NEAREST-NEIGHBOUR bond current (manifestly
+#        local on the staggered nearest-neighbour carrier): the
 #        coefficient of (alpha_{x+mu}-alpha_x) is
 #            j^mu_x = (1/2) eta_mu(x) [ chibar_x (t) chi_{x+mu}
 #                                       + chibar_{x+mu} (t) chi_x ].
@@ -269,7 +298,7 @@ def part_B_onsite_internal_locality() -> None:
 # on the admitted free staggered carrier). This pins the prefactor in the
 # corrected formula (4):
 #
-#     j^mu_x  =  -(i/2) eta_mu(x) [ chibar_x chi_{x+mu} + chibar_{x+mu} chi_x ]
+#     j^mu_x  =  -(1/2) eta_mu(x) [ chibar_x chi_{x+mu} + chibar_{x+mu} chi_x ]
 #
 # as the (anti-Hermitian-kinetic) charge current whose lattice divergence
 # equals -d rho_x/dt, with rho_x = chibar_x chi_x. We verify:
@@ -328,11 +357,11 @@ def part_C_staggered_fixed_sign() -> None:
         return Minv[idx[b], idx[a]]
 
     def j_fixed(x, mu):
-        # corrected formula (4): j^mu_x = -(i/2) eta [ <chibar_x chi_{x+mu}> + <chibar_{x+mu} chi_x> ]
+        # corrected formula (4): j^mu_x = -(1/2) eta [ <chibar_x chi_{x+mu}> + <chibar_{x+mu} chi_x> ]
         ehat = tuple(1 if k == mu else 0 for k in range(dim))
         xp = tuple((x[k] + ehat[k]) % L for k in range(dim))
         eta = staggered_eta(x, mu)
-        return -0.5j * eta * (G(x, xp) + G(xp, x))
+        return -0.5 * eta * (G(x, xp) + G(xp, x))
 
     div_max = 0.0
     for x in sites:
@@ -467,7 +496,7 @@ def main() -> int:
     print("=" * 74)
     print(" audit_companion_lattice_noether_onsite_internal_2026_06_05.py")
     print(" Onsite/internal-restricted lattice Noether theorem, corrected U(1) sign.")
-    print(" Reproves: (1) sign fixed by continuity, (2) onsite/internal restriction,")
+    print(" Reproves: (1) sign fixed by continuity, (2) onsite/internal support envelope,")
     print("           (3) arbitrary-bilinear symbolic current conservation.")
     print("=" * 74)
 

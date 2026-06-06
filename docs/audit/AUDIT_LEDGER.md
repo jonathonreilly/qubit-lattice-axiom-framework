@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 706 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1321 |
+| unaudited | 1320 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
 | ~~audited_conditional~~ | 48 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1116 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 46 |
+| `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1628 |
+| `unaudited` | 1627 |
 
 | claim_type | count |
 |---|---:|
@@ -1352,6 +1352,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `critical_exponents_topology_note_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -2320,6 +2321,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The narrow open-gate support is that K = log J gives the checked single-plaquette cumulants, the Euler closed-surface law gives the cube and two-cube weights, the SU(3) epsilon channel exists at a >=3-face junction, and the finite J-truncation roots migrate while the full beta9/beta10 sector classification remains open.  _(class `A`)_
 - **chain closes:** True — Within the stated open-gate scope, the finite algebraic checks close from the retained/retained_bounded inputs plus standard SU(3) tensor algebra. The full 48-support beta9 classification and beta10 marked-face sector weight are explicitly excluded, so they are not hidden requirements for this scoped claim.
 - **rationale:** The displayed kappa values, K' leading coefficient, Euler weights, SU(3) tensor identity, and finite root table independently check out under the note's conventions. The runner source performs substantive finite recurrence, logarithm, arithmetic, and polynomial-root computations rather than merely printing the claimed results; its twelfth PASS is a non-load-bearing scope guard. Both cited authorities are retained-grade for the bounded inputs used here, and the note does not promote the uncomputed beta9/beta10 classification to a theorem.
+- **auditor confidence:** high
+
+### `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded methodology harness for evaluating d-log-Pade and tadpole/geometric ansaetze from supplied connected coefficients, including proxy validation and SUPPORT/FALSIFY comparison machinery, with no beta=6 analytic closure claimed.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-232920-593b846198-beta6_resummation_ansatz_tes`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With only d_5 = 1/472392 known, neither ansatz can make a falsifiable physical-series prediction; the tadpole/geometric test activates at d_5,d_6 -> d_7 and the d-log-Pade test at d_5..d_8 -> d_9, so the harness status is PENDING higher exact coefficients.  _(class `B`)_
+- **chain closes:** False — The threshold logic is algebraic, but the current-coefficient premise does not close against the restricted packet: the cited research map lists exact d_5..d_9 data and records that the simple geometric and first d-log-Pade diagnostics are already activated and negative. The runner leaves EXACT_HIGHER empty, so its PENDING scorecard is a stale configuration rather than the current claimed test outcome.
+- **rationale:** The runner does compute meaningful scaffold checks: the single-plaquette baseline, proxy d-log-Pade behavior, tadpole fixed points, synthetic SUPPORT/FALSIFY plumbing, and comparator-labeled sensitivity checks. However, the physical-series conclusion depends on the assertion that only d_5 is available, while the provided cited map now states exact d_6..d_9 are available. An independent ratio check from the packet's coefficients gives d_6/d_5 = 7/12 and d_7/d_6 = 5/21, so the tadpole/geometric test is not pending and already fails the single-ratio pattern. Therefore the source and runner are stale relative to their own restricted upstream packet, and the 20 PASS scorecard does not audit the current coefficient frontier.
+- **open / conditional deps cited:**
+  - `BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`
+  - `SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md`
 - **auditor confidence:** high
 
 ### `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`

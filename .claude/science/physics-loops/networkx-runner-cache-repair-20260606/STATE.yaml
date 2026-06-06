@@ -1,0 +1,34 @@
+loop_slug: networkx-runner-cache-repair-20260606
+branch: physics-loop/networkx-runner-cache-repair-20260606
+base: origin/main
+target_claim_ids:
+  - graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note
+  - koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02
+target_status_before_branch: audited_conditional
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+cycle: 6
+active_route: networkx runner transcript repair
+hard_residual: >
+  Both conditional rows were blocked because prior caches failed in an
+  environment without networkx. This branch reruns the exact primary runners in
+  an environment with networkx and refreshes their completed stdout caches.
+files_touched:
+  - docs/GRAPH_BRAID_N3_FERMION_SIGN_STAYS_NONFIBERED_NARROW_THEOREM_NOTE.md
+  - docs/KOIDE_EMBEDDING_FRAMING_WRITHE_SO2_VS_SPIN_Z2_DECOUPLING_NARROW_NO_GO_NOTE_2026-06-02.md
+  - logs/runner-cache/frontier_graph_braid_n3_fermion_sign_nonfibered.txt
+  - logs/runner-cache/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.txt
+  - .claude/science/physics-loops/networkx-runner-cache-repair-20260606/
+no_audit_result_edits: true
+new_axioms: false
+checks:
+  - python3 -m py_compile scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py,scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py --force --push-mode=none --allow-non-main --concurrency 1
+  - python3 scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py
+  - python3 scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py
+pr_status: pending
+next_exact_action: run hygiene checks, commit, push, open PR
+stop_condition: not reached

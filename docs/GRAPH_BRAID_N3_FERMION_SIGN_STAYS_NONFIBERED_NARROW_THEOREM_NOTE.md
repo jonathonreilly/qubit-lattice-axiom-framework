@@ -7,6 +7,7 @@ ledger grade. This note adds no axiom and no import; it answers a finite
 many-body witness sub-question negatively (no base-edge fibered enrichment at
 N=3 on the tested graph-braid witnesses).
 **Primary runner:** `scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py` (SCORECARD PASS=26)
+**Cached runner output:** [`logs/runner-cache/frontier_graph_braid_n3_fermion_sign_nonfibered.txt`](../logs/runner-cache/frontier_graph_braid_n3_fermion_sign_nonfibered.txt)
 
 ## Context (the open sub-question / the attacked assumption)
 
@@ -82,6 +83,12 @@ boundary carrying the Koszul sign from the edge-atom ordering. It then:
   vanishes until subdivided — which is exactly why this stability check is
   included; `K_5`, with 5 vertices and no room for 3 disjoint edges, is the clean
   small integral-torsion witness.)
+
+Current cache certificate:
+
+```text
+SCORECARD: PASS=26 FAIL=0
+```
 
 ### What "fibered" means here (made precise)
 

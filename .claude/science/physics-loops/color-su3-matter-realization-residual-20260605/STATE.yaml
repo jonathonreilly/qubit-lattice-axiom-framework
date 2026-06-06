@@ -1,0 +1,33 @@
+loop_slug: color-su3-matter-realization-residual-20260605
+campaign: "12h physics-loop campaign down framework lanes"
+campaign_started_utc: "2026-06-06T01:39:56Z"
+campaign_deadline_utc: "2026-06-06T13:39:56Z"
+current_goal: "Sharpen the physical-color matter-realization residual after record-invariance and post-record dynamics support."
+target_status: bounded-support
+cycle_count: 4
+active_route: "negative/support map for MR_color: quark carrier assignment plus base-SU(3) link-index routing"
+hard_residual: "The framework still needs a matter-carrier and link-index realization that identifies quarks with the symmetric-base fundamental and makes color-singlet records the physical records."
+branch: physics-loop/color-su3-matter-realization-residual-20260605
+base_branch: physics-loop/record-dynamics-layer-reconciliation-20260605
+files_touched:
+  - docs/COLOR_SU3_MATTER_REALIZATION_RESIDUAL_MAP_2026-06-05.md
+  - scripts/frontier_color_su3_matter_realization_residual_map_2026_06_05.py
+  - logs/runner-cache/frontier_color_su3_matter_realization_residual_map_2026_06_05.txt
+  - .claude/science/physics-loops/color-su3-matter-realization-residual-20260605/
+open_imports:
+  - "MR_color: quarks occupy Sym^2(C^2)_base as the color fundamental."
+  - "Physical color-singlet records are the relevant record algebra."
+  - "Base-SU(3) index is routed onto link/connection variables."
+  - "Gauss generators, action/couplings/truncation, rates, time, and production dynamics remain separate."
+no_go_routes:
+  - "Post-record append/count dynamics does not select the matter carrier."
+  - "Endpoint-invariance profile does not discriminate base SU(3) from fiber SU(2)."
+  - "A primitive one-qubit link endpoint is not already a color fundamental carrier."
+  - "A stable dial location does not fix the matter/link realization."
+trace_gate_classification: negative_route_pruning
+trace_reachability: prunes
+claim_status: bounded-support
+review_findings: "local review pass; runner PASS=44 FAIL=0; py_compile pass; git diff --check pass; forbidden status/dial overclaim strings absent"
+pr_status: "pending"
+next_exact_action: "Commit, push, and open a stacked PR."
+stop_condition: "Do not stop campaign after this block while runtime remains."

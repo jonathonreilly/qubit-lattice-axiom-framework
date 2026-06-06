@@ -1,0 +1,30 @@
+loop_slug: gbare-parent-promotion-gate-map-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 26
+current_goal: "Classify the g_bare parent-promotion route under the current source surface."
+target_status: no-go
+actual_current_surface_status: no-go
+active_route: "conditional algebra core plus L3 invariance as attempted parent promotion"
+hard_residual: "N_F = 1/2 remains an admitted normalization unless the staggered-Dirac realization bridge propagates the per-site scale to gauge su(3)."
+branch: physics-loop/gbare-parent-promotion-gate-map-20260606
+base_branch: origin/main
+files_touched:
+  - docs/G_BARE_PARENT_PROMOTION_GATE_MAP_NOTE_2026-06-06.md
+  - scripts/frontier_g_bare_parent_promotion_gate_map_2026_06_06.py
+  - logs/runner-cache/frontier_g_bare_parent_promotion_gate_map_2026_06_06.txt
+  - .claude/science/physics-loops/gbare-parent-promotion-gate-map-20260606/
+open_imports:
+  - "Independent audit and dependency closure for the two 2026-05-03 repair candidates."
+  - "Parent row re-audit after changed dependency surface."
+  - "Derivation of N_F = 1/2 from the minimal baseline, or explicit admitted-premise bookkeeping."
+  - "Staggered-Dirac realization bridge from per-site SU(2) scale to gauge su(3) trace surface."
+no_go_routes:
+  - "Conditional algebra core plus L3 invariance closes parent promotion."
+  - "Invariance under convention coordinates proves uniqueness of the convention point."
+  - "Dynamical fixed point, maximum entropy, mean-field iteration, or lattice beta selector fixes g = 1."
+trace_gate_classification: negative_route_pruning
+review_disposition: pass
+pr_status: "pending"
+next_exact_action: "Run checks, commit, push, open PR, then continue campaign to the next live lane."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

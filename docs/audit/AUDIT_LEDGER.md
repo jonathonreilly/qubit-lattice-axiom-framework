@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 198 |
+| **retained** | 199 |
 | **retained_no_go** | 214 |
 | **retained_bounded** | 713 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1311 |
+| unaudited | 1310 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1123 |
+| `audited_clean` | 1124 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1618 |
+| `unaudited` | 1617 |
 
 | claim_type | count |
 |---|---:|
@@ -915,6 +915,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_clock_rate_interface_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_directed_certificate_kernel_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_expectation_concentration_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_likelihood_score_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13501,6 +13502,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The same finite post-record history/count data are compatible with multiple predictive laws, and same-count histories can require different next-step predictions under an order-sensitive law, so counts alone do not determine a unique future law.  _(class `A`)_
 - **chain closes:** True — The finite counterexamples independently close the counts-alone no-go: multiple Bernoulli laws give positive likelihood to the same realized word, and count-equal histories can differ in order information needed by Markov prediction. This proves only the branch-local firewall, not an impossibility for externally supplied probability, Born, or dynamics bridges.
 - **rationale:** The load-bearing math is elementary and independently checks: count(0100) = (3,1), the iid likelihood p^3(1-p) is positive for many distinct p values, and histories 01 and 10 share counts while preserving different last-symbol data for an admitted Markov law. The Born-side formulas are used only to type-separate supplied pre-record/instrument probabilities from realized post-record count updates. The no-go discipline gate passes only under the narrowed counts-alone scope; empirical-frequency, Bayesian, maximum-entropy, Markov, Born, and rate routes remain available when they add explicit extra premises.
+- **auditor confidence:** high
+
+### `post_record_directed_certificate_examples_2026-06-06`
+
+- **Note:** [`POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`](../../docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact finite certificates for the three supplied laws, orientations, clocks/kernels, and directed statistics encoded in the runner; no derivation of the bridge data or physical arrow was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-235433-35c31fc070-post_record_directed_certifi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner instantiates three exact finite examples with supplied directed statistics, giving forward/reverse values -1/2 vs 1/2, 7/6 vs 11/6, and 1/2 vs 1/6.  _(class `A`)_
+- **chain closes:** True — Independent finite enumeration of the listed runner laws gives the stated expectations, tail probabilities, and boundary probabilities exactly. Reversal preserves count pushforwards while changing the supplied orientation-sensitive statistics, so the scoped examples close without deriving any bridge input.
+- **rationale:** The load-bearing content is finite arithmetic over explicitly supplied probability laws and bridge data, not an external comparator or tuned numerical match. Manual enumeration agrees with all three displayed example values and with the reversal/count-pushforward claims. The broader physical arrow, clock, kernel, Born-law, and dial-selection claims are explicitly excluded, so no missing bridge theorem is needed for this scoped result.
 - **auditor confidence:** high
 
 ### `post_record_directed_certificate_kernel_selection_firewall_2026-06-06`

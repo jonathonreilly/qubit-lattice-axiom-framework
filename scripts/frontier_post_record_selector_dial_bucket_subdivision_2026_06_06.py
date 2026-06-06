@@ -58,9 +58,9 @@ STABILITY_RE = re.compile(r"\b(stable|stability|flow|arrow|dynamics|thermaliz|at
 GENERIC_SELECTOR_RE = re.compile(r"\b(selector|selects|selected|dial|invariance|symmetry|target|rule)\b", re.IGNORECASE)
 
 EXPECTED_SUBCOUNTS = {
-    "koide_or_generation_selector": 105,
-    "stability_or_dynamics_selector": 77,
-    "measure_weight_normalization": 44,
+    "koide_or_generation_selector": 103,
+    "stability_or_dynamics_selector": 94,
+    "measure_weight_normalization": 43,
     "generic_selector_rule": 1,
 }
 
@@ -178,7 +178,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md",
         [
-            "selector_or_dial_needed` | 227",
+            "selector_or_dial_needed` | 241",
             "read-only scanner",
             "audit ledger hash is unchanged",
         ],
@@ -203,7 +203,7 @@ def subdivision_checks() -> tuple[list[dict], Counter[str]]:
         buckets[selector_subbucket(row)].append(row)
     counts = Counter({bucket: len(items) for bucket, items in buckets.items()})
 
-    report("selector/dial row count is current snapshot", len(selector_rows) == 227, str(len(selector_rows)))
+    report("selector/dial row count is current snapshot", len(selector_rows) == 241, str(len(selector_rows)))
     report("sub-bucket counts sum to selector count", sum(counts.values()) == len(selector_rows), str(counts))
     report("expected sub-bucket counts match", dict(counts) == EXPECTED_SUBCOUNTS, str(counts))
 
@@ -257,9 +257,9 @@ def main() -> int:
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print(f"SELECTOR_DIAL_ROWS={len(selector_rows)}")
-    print("KOIDE_OR_GENERATION_SELECTOR_ROWS=105")
-    print("STABILITY_OR_DYNAMICS_SELECTOR_ROWS=77")
-    print("MEASURE_WEIGHT_NORMALIZATION_ROWS=44")
+    print("KOIDE_OR_GENERATION_SELECTOR_ROWS=103")
+    print("STABILITY_OR_DYNAMICS_SELECTOR_ROWS=94")
+    print("MEASURE_WEIGHT_NORMALIZATION_ROWS=43")
     print("GENERIC_SELECTOR_RULE_ROWS=1")
     print("AUDIT_LEDGER_WRITTEN=FALSE")
     print("STABLE_SETTING_SELECTS_DIAL=FALSE")

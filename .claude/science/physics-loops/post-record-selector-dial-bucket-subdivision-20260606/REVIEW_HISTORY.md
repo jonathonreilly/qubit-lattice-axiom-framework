@@ -42,6 +42,19 @@ status_check_rollup: "audit_pipeline in progress at first verification"
 Disposition: in-progress check state recorded; final state must be recorded
 after GitHub finishes the audit-lane check.
 
+Final PR verification:
+
+```yaml
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2836"
+base: "physics-loop/post-record-audit-evidence-ladder-row-bucketing-20260606"
+mergeable: MERGEABLE
+merge_state_status: CLEAN
+status_check_rollup: "audit_pipeline completed SUCCESS at final verification"
+```
+
+Disposition: PR #2836 is open, mergeable, stacked on the intended base, and
+clean/success. Block closed for campaign purposes.
+
 ## Review constraints
 
 - Do not edit audit data.

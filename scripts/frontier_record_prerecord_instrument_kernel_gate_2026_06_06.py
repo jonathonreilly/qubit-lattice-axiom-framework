@@ -3,22 +3,25 @@
 
 This stacked block makes the pre-record/post-record split operational:
 
-  qubit state + supplied instrument + Born trace rule -> probabilities over
-  possible future record atoms;
+  qubit state + cited retained-bounded projective instrument/trace authority
+  + supplied readout context -> probabilities over possible future record atoms;
   realized record atom -> post-record information/count update.
 
-It is conditional support only. The runner does not derive the instrument, the
-Born rule, IID/typicality, a physical production generator, a clock/rate unit,
-or a dial value.
+The bridge is bounded support only. The runner does not derive the readout
+context, IID/typicality, a physical production generator, a clock/rate unit, or
+a dial value from the minimal axioms.
 """
 
 from __future__ import annotations
+
+from pathlib import Path
 
 import sympy as sp
 
 
 PASS = 0
 FAIL = 0
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -54,15 +57,23 @@ def is_probability_vector(p: sp.Matrix) -> bool:
     return all(x >= 0 for x in p) and sp.simplify(sum(p) - 1) == 0
 
 
+def read_doc(path: str) -> str:
+    return (REPO_ROOT / path).read_text(encoding="utf-8")
+
+
 def main() -> int:
     print("Record pre-record instrument kernel gate")
-    print("actual_current_surface_status: conditional-support")
+    print("actual_current_surface_status: bounded-support")
     print("trace_class: upstream_support")
     print("reachability_to_target: supports")
-    print("conditional_surface_status: exact under supplied instrument and Born trace rule")
-    print("proposal_allowed: false")
+    print("conditional_surface_status: exact finite algebra under cited retained-bounded projective readout authorities and a supplied readout context")
+    print("proposal_allowed: true_for_bounded_support_only")
     print("audit_required_before_effective_retained: true")
     print()
+
+    minimal_axioms = read_doc("docs/MINIMAL_AXIOMS_2026-06-05.md")
+    lsp_note = read_doc("docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md")
+    pep_note = read_doc("docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md")
 
     sqrt2 = sp.sqrt(2)
     ket0 = sp.Matrix([1, 0])
@@ -78,14 +89,23 @@ def main() -> int:
     Pm = projector(ket_minus)
     identity = sp.eye(2)
 
-    print("A. supplied one-qubit state and projective instruments")
+    print("A. cited authority anchors and supplied readout context")
+    check("Minimal Axioms supply Quantum one-site M2(C)", "M_2(C)" in minimal_axioms)
+    check("Minimal Axioms explicitly do not supply measurement/Born rules", "measurement\ninstrument, Born rule" in minimal_axioms)
+    check("Record axiom is realized-outcome registration, not probability", "durable registration of the realized outcome" in minimal_axioms and "probability" in minimal_axioms)
+    check("retained-bounded LSP authority states canonical K_r = P_r", "K_r = P_r" in lsp_note and "P_r E P_r" in lsp_note)
+    check("retained-bounded Lueders bridge states trace-normalized branch", "P sigma P" in pep_note.replace("σ", "sigma") and "Tr(P sigma P)" in pep_note.replace("σ", "sigma"))
+    check("readout context remains supplied, not selected by Record", True)
+
+    print("\nB. one-qubit state and projective instruments")
     check("rho has trace one", trace(rho) == 1, f"rho={rho}")
     check("rho is pure positive semidefinite", rho.det() == 0 and rho[0, 0] >= 0 and rho[1, 1] >= 0)
     check("Z projectors are orthogonal and complete", is_zero_matrix(P0 * P1) and is_zero_matrix(P0 + P1 - identity))
     check("X projectors are orthogonal and complete", is_zero_matrix(Pp * Pm) and is_zero_matrix(Pp + Pm - identity))
-    check("projective Kraus completeness holds for Z instrument", is_zero_matrix(P0.T * P0 + P1.T * P1 - identity))
+    check("canonical projective Kraus completeness holds for Z instrument", is_zero_matrix(P0.T * P0 + P1.T * P1 - identity))
+    check("canonical projective Kraus completeness holds for X instrument", is_zero_matrix(Pp.T * Pp + Pm.T * Pm - identity))
 
-    print("\nB. Born trace rule gives a future-record production kernel")
+    print("\nC. projective trace pairing gives a future-record production kernel")
     p_z = born_probs(rho, [P0, P1])
     p_x = born_probs(rho, [Pp, Pm])
     check("Z-instrument probabilities are normalized", is_probability_vector(p_z), f"p_z={list(p_z)}")
@@ -94,7 +114,7 @@ def main() -> int:
     check("same rho with different supplied instrument gives different kernel", p_x != p_z, f"p_x={list(p_x)}")
     check("instrument is load-bearing for the production kernel", p_x[0] == sp.Rational(1, 2) + sqrt2 / 3)
 
-    print("\nC. realized post-record atoms are not the probability vector")
+    print("\nD. realized post-record atoms are not the probability vector")
     e0 = sp.Matrix([1, 0])
     e1 = sp.Matrix([0, 1])
     check("outcome 0 writes one-hot record atom e0", e0 != p_z and sum(e0) == 1, f"e0={list(e0)}")
@@ -108,7 +128,7 @@ def main() -> int:
     check("ensemble expected count is fractional and typed separately", expected_count == sp.Matrix([sp.Rational(14, 3), sp.Rational(7, 3)]), f"E[count']={list(expected_count)}")
     check("expected count is not either realized update", expected_count != count_if_0 and expected_count != count_if_1)
 
-    print("\nD. selective and nonselective quantum states remain pre-record/ensemble objects")
+    print("\nE. selective and nonselective quantum states remain pre-record/ensemble objects")
     selective0 = sp.simplify(P0 * rho * P0 / p_z[0])
     selective1 = sp.simplify(P1 * rho * P1 / p_z[1])
     nonselective = sp.simplify(P0 * rho * P0 + P1 * rho * P1)
@@ -117,9 +137,9 @@ def main() -> int:
     check("nonselective ensemble has trace one", trace(nonselective) == 1, f"rho_ns={nonselective}")
     check("nonselective ensemble is not a realized record atom", nonselective != P0 and nonselective != P1)
 
-    print("\nE. boundary firewalls")
-    check("Record alone does not derive the supplied instrument", True)
-    check("Record alone does not derive the Born trace rule", True)
+    print("\nF. boundary firewalls")
+    check("Record alone does not derive the supplied readout context", True)
+    check("Record/Quantum alone do not derive arbitrary physical measurement dynamics", True)
     check("one-shot probabilities do not supply IID frequencies", True)
     check("instrument probabilities do not supply a physical Markov generator", True)
     check("no clock/rate unit is selected", True)
@@ -129,9 +149,10 @@ def main() -> int:
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     if PASS > 0 and FAIL == 0:
         print(
-            "VERDICT: conditional support for the pre-record instrument kernel "
-            "gate. With a supplied instrument and Born trace rule, a qubit state "
-            "gives probabilities over possible future record atoms; the written "
+            "VERDICT: bounded support for the pre-record instrument kernel "
+            "gate. With cited retained-bounded projective instrument/trace "
+            "authority and a supplied readout context, a qubit state gives "
+            "probabilities over possible future record atoms; the written "
             "post-record atom is realized information, not the probability vector."
         )
         return 0

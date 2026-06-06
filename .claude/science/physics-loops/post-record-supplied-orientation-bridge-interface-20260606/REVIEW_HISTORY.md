@@ -31,7 +31,20 @@ git diff --check: clean
 
 ## PR verification
 
-Not yet opened.
+Initial PR verification:
+
+```yaml
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2839"
+base: "physics-loop/post-record-arrow-orientation-firewall-20260606"
+head: "physics-loop/post-record-supplied-orientation-bridge-interface-20260606"
+head_sha: "984d3cee6b9fbd97407f7d0fe2926fd4e47d6f7a"
+mergeable: MERGEABLE
+merge_state_status: UNSTABLE
+status_check_rollup: "audit_pipeline queued at first verification"
+```
+
+Disposition: in-progress check state recorded; final state must be recorded
+after GitHub finishes the audit-lane check.
 
 ## Review constraints
 

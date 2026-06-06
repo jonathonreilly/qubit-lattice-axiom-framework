@@ -37,14 +37,18 @@ because it is the positive counterpart to PR #2838.
 
 ## Next exact action
 
-Commit, push, and open a stacked PR.
+Wait for GitHub audit-lane checks, then patch final clean/success PR status if
+the latest head remains clean.
 
 ## PR
 
 ```yaml
-pr_url: null
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2839"
 base: "physics-loop/post-record-arrow-orientation-firewall-20260606"
-mergeable: null
-merge_state_status: null
-status_check_rollup: null
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline queued at first verification"
+final_mergeable: null
+final_merge_state_status: null
+final_checks: null
 ```

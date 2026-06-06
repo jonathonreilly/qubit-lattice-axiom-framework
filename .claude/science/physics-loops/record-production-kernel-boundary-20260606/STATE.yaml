@@ -1,0 +1,31 @@
+loop_slug: record-production-kernel-boundary-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 21
+current_goal: "Establish that post-record append/count dynamics underdetermines the production kernel."
+target_status: no-go
+actual_current_surface_status: no-go
+active_route: "same append/count layer under multiple distinct production kernels"
+hard_residual: "Physical record-production dynamics, Born law, transition rates, clock metric, and dial generator remain open."
+branch: physics-loop/record-production-kernel-boundary-20260606
+base_branch: physics-loop/record-classical-semigroup-boundary-20260606
+stacked_on_pr: 2795
+files_touched:
+  - docs/RECORD_PRODUCTION_KERNEL_BOUNDARY_2026-06-06.md
+  - scripts/frontier_record_production_kernel_boundary_2026_06_06.py
+  - logs/runner-cache/frontier_record_production_kernel_boundary_2026_06_06.txt
+  - .claude/science/physics-loops/record-production-kernel-boundary-20260606/
+open_imports:
+  - "Physical production kernel or instrument."
+  - "Born probability law / IID / frequency bridge."
+  - "Transition rates / Markov generator / clock metric."
+  - "Generator, partition, or arrow selecting a stable dial setting."
+no_go_routes:
+  - "Append/count grammar determines the production kernel."
+  - "Finite history identifies a unique production law."
+  - "Finite post-record dynamics selects the stable dial location."
+trace_gate_classification: negative_route_pruning
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

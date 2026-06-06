@@ -1,0 +1,28 @@
+loop_slug: sm-gstar-rmatter-premise-scope-20260606
+goal: "Repair the R-MATTER audited conditional by exposing contested physical bridges as bounded premises."
+target_claim_id: sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+branch: physics-loop/sm-gstar-rmatter-premise-scope-20260606
+base: origin/main
+head_commit: pending
+cycle_count: 1
+active_route: source_scope_repair
+files_touched:
+  - docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md
+  - scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py
+  - logs/runner-cache/frontier_sm_gstar_r_matter_reduction_2026_05_29.txt
+  - .claude/science/physics-loops/sm-gstar-rmatter-premise-scope-20260606/
+open_imports:
+  - "P_RH_inventory: physical right-handed gauge-charged thermal inventory bridge."
+  - "P_Weyl_thermal_dof: physical high-T Weyl particle/antiparticle dof bridge."
+  - "I12: nu_R thermal exclusion."
+  - "R-SPIN: physical Weyl-spin identification from local carrier to thermal matter."
+  - "Neutral-singlet branch convention for labelling."
+trace_gate: direct_blocker_closure
+reachability: partially_closes
+review_disposition: local_self_review_pass_for_scope_repair
+independent_review_required: true
+audit_required_before_effective_status: true
+next_exact_action: "Hand to review-loop/audit for re-audit of the narrowed bounded arithmetic packet."
+stop_condition: "Source-scope repair complete; further promotion requires retained physical bridge theorems."

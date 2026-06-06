@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 
 
@@ -9,6 +11,11 @@ C = np.array([[0.0, 0.0, 1.0], [1.0, 0.0, 0.0], [0.0, 1.0, 0.0]])
 I3 = np.eye(3)
 S = C + C.conj().T
 J = 1j * (C - C.conj().T)
+NOTE_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "docs"
+    / "FLAVOR_KREAL_INSTRUMENT_TWO_LETTER_PHASE_ORTHOGONAL_2026-06-02.md"
+)
 
 
 def check(name: str, cond: bool, detail: str = "") -> bool:
@@ -60,6 +67,15 @@ def main() -> int:
         )
     )
 
+    passed.append(
+        check(
+            "K-odd phase channel is orthogonal to the K-even record channel",
+            abs(np.trace(I3.conj().T @ J)) < 1e-12
+            and abs(np.trace(S.conj().T @ J)) < 1e-12,
+            f"Tr(IJ)={np.trace(J):.6g}; Tr(SJ)={np.trace(S.conj().T @ J):.6g}",
+        )
+    )
+
     a_param, b_param = 1.3, 0.6 + 0.4j
     h_direct = a_param * I3 + b_param * C + np.conj(b_param) * C.conj().T
     h_split = a_param * I3 + b_param.real * S + b_param.imag * J
@@ -67,6 +83,14 @@ def main() -> int:
         check(
             "H equals the Re(b)S + Im(b)J decomposition",
             np.allclose(h_direct, h_split),
+        )
+    )
+
+    h_even = (h_direct + h_direct.conj()) / 2.0
+    passed.append(
+        check(
+            "K-even projection removes the Im(b)J phase channel",
+            np.allclose(h_even, a_param * I3 + b_param.real * S),
         )
     )
 
@@ -89,6 +113,23 @@ def main() -> int:
             "dimension count gives r=1 while block count gives r=1/2",
             abs(r_from_weights(1.0 / 3.0, 2.0 / 3.0) - 1.0) < 1e-12
             and abs(r_from_weights(0.5, 0.5) - 0.5) < 1e-12,
+        )
+    )
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    passed.append(
+        check(
+            "note keeps Record downstream of a supplied readout context",
+            "Record applies after a readout context supplies" in note_text
+            and "it does not supply" in note_text,
+        )
+    )
+
+    passed.append(
+        check(
+            "note does not force r=1/2 or a two-letter measure selector",
+            "does **not** force `r=1/2`" in note_text
+            and "two-letter measure selector" in note_text,
         )
     )
 

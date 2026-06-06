@@ -1,0 +1,33 @@
+loop_slug: noether-u1-sign-convention-repair-20260605
+created: 2026-06-05
+updated: 2026-06-05
+remote_base: origin/main
+branch: physics-loop/noether-u1-sign-convention-repair-20260605
+target_claim_id: axiom_first_lattice_noether_theorem_note_2026-04-29
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+proposal_allowed: false
+proposal_allowed_reason: "This branch repairs a sign inconsistency; the KS-phase-form structural admission remains open."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+new_axioms: 0
+files_touched:
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_lattice_noether_check.py
+  - logs/runner-cache/axiom_first_lattice_noether_check.txt
+open_imports:
+  - "Residual KS-phase-form structural admission remains conditional."
+checks:
+  - "python3 scripts/axiom_first_lattice_noether_check.py"
+  - "python3 -m py_compile scripts/axiom_first_lattice_noether_check.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/axiom_first_lattice_noether_check.py --force --push-mode=none --allow-non-main --concurrency 1"
+review_disposition: pass
+pr_url: pending
+next_exact_action: "Commit, push, and open the review PR."
+stop_condition: "Block complete after PR creation and verification."

@@ -1,0 +1,31 @@
+loop_slug: flavor-j-round1-algebraic-scope-20260606
+started: 2026-06-06
+branch: physics-loop/flavor-j-round1-algebraic-scope-20260606
+base: origin/main
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle_count: 1
+active_route: static J_cs measure-neutrality and chiral-identity no-go
+target_claim_id: flavor_find_j_round1_jcs_measure_neutral_2026-06-02
+blocker_source: audit_ledger
+blocker_text: "The matrix identities close algebraically, including J_cs^2=-P_doublet, Gamma_chi^2=I, commutation, and the HS 6*I block from the provided C. The packet does not supply a derivation or cited retained authority for det_C -> r=1/2 -> Q=2/3 or the det_R/Q=1 default, which are displayed quantitative readout steps in the source note."
+files_touched:
+  - docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md
+  - scripts/flavor_find_J_round1_jcs_measure_neutral_2026_06_02.py
+  - logs/runner-cache/flavor_find_J_round1_jcs_measure_neutral_2026_06_02.txt
+  - .claude/science/physics-loops/flavor-j-round1-algebraic-scope-20260606/
+open_imports:
+  - det_C to r,Q mapping not used.
+  - det_R/Q default not used.
+  - first-order/Berezin bridge not used.
+no_go_routes:
+  - Static J_cs selects det_C.
+  - Gamma_chi equals J_cs.
+trace_gate:
+  trace_class: negative_route_pruning
+  reachability_to_target: prunes
+  artifact_role: demotion
+review_findings: author verification only; independent review/audit pending
+pr_status: pending
+next_exact_action: open PR for reviewer extraction
+stop_condition: PR opened and next conditional candidate selected

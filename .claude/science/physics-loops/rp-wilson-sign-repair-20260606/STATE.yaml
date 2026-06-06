@@ -1,0 +1,21 @@
+loop_slug: rp-wilson-sign-repair-20260606
+target_status: bounded-support
+active_route: direct_blocker_closure
+base_commit: 86a58ad21
+branch: physics-loop/rp-wilson-sign-repair-20260606
+target_claim: axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05
+target_blocker: "The note paired S_0=+beta Re with exp(-S_0), while the runner used the positive Wilson kernel exp(+beta Re); it also overstated U(1) finite-grid checks as exact Haar."
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
+  - logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt
+verification:
+  - python3 -m py_compile scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
+  - python3 scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
+  - python3 scripts/cached_runner_output.py scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py --check-only
+next_exact_action: "Reviewer/auditor should re-audit the repaired Wilson temporal-gauge bridge row; do not edit audit verdicts in this branch."

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 180 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 675 |
+| **retained_bounded** | 676 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1207 |
+| unaudited | 1206 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1048 |
+| `audited_clean` | 1049 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1491 |
+| `unaudited` | 1490 |
 
 | claim_type | count |
 |---|---:|
@@ -1182,6 +1182,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -18473,4 +18474,17 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** Because q_R is the pointwise negation of a permutation q_L, the congruence q_L_i + q_H + q_R_j ≡ 0 mod 3 has a unique column solution in each row, and the complete q_H sweep partitions the grid into the three cyclic permutation supports.  _(class `A`)_
 - **chain closes:** True — The claim closes from elementary Z_3 arithmetic with no cited upstream authorities. The runner source performs the support computation and checks all six q_L permutations, including the necessity counterexample for non-distinct q_L.
 - **rationale:** The load-bearing step is a genuine class-A algebraic identity over a finite group, not a definition, renaming, numerical match, or external comparator check. The runner source actually constructs supports from the congruence and verifies the exhaustive six-permutation case for the cyclic-pattern identification. No physical charge assignment, PDG value, fitted selector, or upstream note is needed for the narrowed claim.
+- **auditor confidence:** high
+
+### `z_n_spectral_asymmetry_physical_identification_note_2026-05-31`
+
+- **Note:** [`Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md`](../../docs/Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C_3/circulant matrix-algebra identification of L_3(1,2) with the determinant-resolvent weight on H's nontrivial-character doublet, plus the theta=0 finite eta jump; no continuum APS eta or phenomenological readout was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-005227-4edaebeaa5-z_n_spectral_asymmetry_physi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because H=aI+bC+conj(b)C^2 commutes with C, its nontrivial C-eigenspaces are the omega and omega^2 doublet, so (1/3) sum_{k=1}^2 det[(C^k-I)^(-1)|doublet] is exactly L_3(1,2)=2/9.  _(class `A`)_
+- **chain closes:** True — The finite C_3 operator has eigenvalues 1, omega, omega^2, and H is a polynomial in C, so the doublet weights are forced to be (1,2). On that doublet det(C^k-I)=(omega^k-1)(omega^{2k}-1), giving the cited L_3(1,2)=2/9 identity.
+- **rationale:** The load-bearing step is finite matrix algebra over retained or retained_bounded cited inputs, not a definition, renaming, tuned numerical match, or external comparator. Independent checking verifies (omega-1)(omega^2-1)=3, the k=2 term is the same product, and the determinant-resolvent expression equals the cyclotomic L_3(1,2) sum. The runner source actually constructs C and H and checks commutation, character weights, determinant sums, and eta jump rather than merely printing PASS. The source boundary explicitly leaves continuum APS and downstream physical identification outside scope, so no open bridge is imported into the audited claim.
 - **auditor confidence:** high

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 178 |
-| **retained_no_go** | 192 |
+| **retained_no_go** | 193 |
 | **retained_bounded** | 671 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1037 |
+| `audited_clean` | 1038 |
 | `audited_conditional` | 82 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1513 |
+| `unaudited` | 1512 |
 
 | claim_type | count |
 |---|---:|
@@ -788,6 +788,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -12089,6 +12090,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the supplied fermionic frame with supplied D = M_KS, set M = D + J; the retained Berezin identity gives Z_matter[J] = integral Dchi_bar Dchi exp(-chi_bar(D+J)chi) = det(D+J), while conjugation invariance makes det/spec/Z blind to an S3 relabeling.  _(class `A`)_
 - **chain closes:** True — Within the explicitly supplied premises, the algebraic chain closes: Berezin determinant realization and permutation-conjugation invariance are standard finite algebra over retained inputs. The packet does not derive FS, D = M_KS, the determinant-to-trace routing, or the AC_phi_lambda relabeling premise.
 - **rationale:** The retained Berezin identity, retained determinant-positivity theorem, and inline conjugation-invariance lemma support the conditional algebraic conclusion. The runner source performs real symbolic/numeric checks rather than merely printing constants, and I found no runner artifact issue. However the theorem explicitly imports unclosed premises: FS, the actual matter-operator identification D = M_KS, the determinant-to-trace routing, and AC_phi_lambda being only an S3 relabeling. Under the rubric, those supplied premises prevent audited_clean even though the conditional assembly itself is coherent.
+- **auditor confidence:** high
+
+### `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_PRODUCT_FACTORING_DOES_NOT_FORCE_PRODUCT_CHARACTER_NO_GO_NOTE_2026-06-02.md`](../../docs/OBSERVABLE_PRINCIPLE_PRODUCT_FACTORING_DOES_NOT_FORCE_PRODUCT_CHARACTER_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Only the implication from operator source factoring plus determinant block-sum factorization to the product-character readout law chi(AS)=chi(A)chi(S) was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-2897f218e8-observable_principle_product`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Trace is a well-defined scalar readout of product operators that is block-sum additive but generically fails chi(AS)=chi(A)chi(S), so the cited source-factorization facts do not force the product-character law.  _(class `A`)_
+- **chain closes:** True — The trace counterexample independently separates the block-sum/additive axis from the product-character axis: tr(A⊕B)=tr(A)+tr(B), while tr(AS) need not equal tr(A)tr(S). The displayed identities remain true, but they do not impose multiplicativity on every scalar readout.
+- **rationale:** The load-bearing step is a standard finite-dimensional algebraic counterexample, not a definition, renaming, tuned numerical match, or external comparator. Independent checking of the displayed identities confirms D+J=D(I+D^{-1}J), determinant block-sum multiplicativity, trace block-sum additivity, and the concrete trace failure tr(AS)=15 versus tr(A)tr(S)=28 for the given invertible matrices. The no-go is scoped: it blocks only derivation of the product-character law from the two tested factorization facts, while explicitly leaving stronger readout premises or separate derivations open.
 - **auditor confidence:** high
 
 ### `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`

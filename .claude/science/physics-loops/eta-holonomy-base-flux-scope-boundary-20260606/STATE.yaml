@@ -1,0 +1,28 @@
+loop_slug: eta-holonomy-base-flux-scope-boundary-20260606
+branch: physics-loop/eta-holonomy-base-flux-scope-boundary-20260606
+base: origin/main
+mode: campaign
+cycle: eta_holonomy_scope_boundary
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_review_queue_item: 2026-05-29-pr2207-eta-holonomy-braid-invariant-gap
+target_blocker: "PR #2207 asserted rather than proved the compared detour swaps are the same element of B_2(Z^3) and that a one-token plaquette loop is null-homotopic in UD_2(Z^3)."
+active_route: "Land only the narrower base-connection area-flux theorem and leave the UD_2 homotopy bridge open."
+files_touched:
+  - docs/ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md
+  - scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py
+  - logs/runner-cache/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.txt
+  - .claude/science/physics-loops/eta-holonomy-base-flux-scope-boundary-20260606/
+checks:
+  runner: "PASS=18 FAIL=0"
+  py_compile: pass
+  diff_check: pass
+  ascii: pass
+  wording_sweep: pass
+review_loop_disposition: pass
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+pr_url: pending
+next_exact_action: "Commit, push, open PR, record PR URL, then pivot to the next campaign lane."

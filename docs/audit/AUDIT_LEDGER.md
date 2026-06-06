@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1111 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1112 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 46 |
@@ -132,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -377,6 +376,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `eta_ud2_fixed_token_square_homology_certificate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5130,6 +5130,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The source note states a bounded decomposition rather than a full structural derivation of every factor. The runner completed with PASS=38 FAIL=0 and verifies the ABC rational cancellation, exact product reconstruction, candidate near-fit mismatch, and explicit isolation of Y0^2 as phenomenological.
 - **rationale:** The audited bounded claim closes as an algebraic decomposition of the existing transport chain: ABC reduces exactly to 516/53009, the reconstructed product matches the runner's eta/eta_obs value, and the four named near-fit candidates are not exact framework forms. The clean verdict is limited to this bounded scope and does not promote Y0^2, PMNS-chart constants, or the ODE transport functional to first-principles retained derivations beyond the note's admitted residual boundary.
 - **auditor confidence:** high
+
+### `eta_holonomy_base_flux_scope_boundary_note_2026-06-06`
+
+- **Note:** [`ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md`](../../docs/ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact support for the eta Z_2 scalar base connection on the Z^3 coordinate graph, uniform plaquette curvature -1, and rectangular base-loop holonomy (-1)^area, without asserting a UD_2 braid-class bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-five-judge-panel-20260606T230933Z-eta_holonomy_base_flux_s`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The Pauli spin-diagonalization T(x)^dag sigma_mu T(x+e_mu)=eta_mu(x) I_2 induces a scalar Z_2 connection with uniform coordinate plaquette curvature -1 and rectangular holonomy (-1)^(ab).  _(class `C`)_
+- **chain closes:** True — Five-judge panel round 1 majority 3/5 selected ('second', 'audited_clean', 'positive_theorem', 'C'). Representative rationale: The runner genuinely instantiates the Pauli matrices, lattice shifts, eta phases, curvature, gauge transform, and rectangular loop holonomy rather than importing a contested premise or printing constants. Under the packet rubric, this is first-principles compute from the one-qubit operator algebra on the Z^3 substrate, and the note explicitly leaves the UD_2 braid-class bridge open, so the scoped positive theorem closes cleanly.
+- **rationale:** Five-judge panel round 1 majority 3/5 selected ('second', 'audited_clean', 'positive_theorem', 'C'). Representative rationale: The runner genuinely instantiates the Pauli matrices, lattice shifts, eta phases, curvature, gauge transform, and rectangular loop holonomy rather than importing a contested premise or printing constants. Under the packet rubric, this is first-principles compute from the one-qubit operator algebra on the Z^3 substrate, and the note explicitly leaves the UD_2 braid-class bridge open, so the scoped positive theorem closes cleanly.
+- **auditor confidence:** judicial
 
 ### `eta_ud2_fixed_token_square_homology_certificate_2026-06-06`
 

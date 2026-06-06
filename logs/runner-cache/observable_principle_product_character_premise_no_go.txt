@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_product_character_premise_no_go.py
+runner_sha256: f1ea483336a1f26ddc6cf379b04a62bcbbb70ac79b6e277fbd3bd41e4f79b296
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+==============================================================================
+A. Source insertion is an operator-product identity
+==============================================================================
+[PASS] D + J = D(I + D^-1 J) for n=2
+[PASS] D + J = D(I + D^-1 J) for n=3
+[PASS] D + J identity holds for a generic symbolic 2x2 invertible D
+
+==============================================================================
+B. Product and block-sum axes are different
+==============================================================================
+[PASS] det(A S) = det(A)det(S) on the product axis
+[PASS] det(A block_sum B) = det(A)det(B) on the block-sum axis
+[PASS] tr(A block_sum B) = tr(A) + tr(B)
+[PASS] trace is not a product character in symbolic 2x2 form -- -x00*y11 + x01*y10 + x10*y01 - x11*y00
+
+==============================================================================
+C. Concrete trace witness
+==============================================================================
+[PASS] concrete matrices are invertible -- det(A)=3 det(S)=12
+[PASS] tr(A S) differs from tr(A)tr(S) -- tr(AS)=15, tr(A)tr(S)=28
+[PASS] tr(A S) also differs from tr(A)+tr(S) -- tr(AS)=15, tr(A)+tr(S)=11
+
+==============================================================================
+D. Logical implication gap
+==============================================================================
+[PASS] trace reads product operators and is block-sum additive
+[PASS] trace satisfies the tested motivations while failing the product law
+[PASS] det satisfies the product law once that law is supplied
+[PASS] trace separates additive block-sum behavior from product-character behavior
+
+==============================================================================
+VERDICT
+==============================================================================
+Source factoring and determinant block-sum factoring do not imply
+chi(A S)=chi(A)chi(S) for every scalar readout. Trace is the witness.
+SCORECARD: PASS=14 FAIL=0
+
+----- stderr -----
+

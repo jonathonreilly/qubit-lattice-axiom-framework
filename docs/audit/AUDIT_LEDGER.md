@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 181 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 678 |
+| **retained_bounded** | 679 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1235 |
+| unaudited | 1234 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1053 |
+| `audited_clean` | 1054 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1538 |
+| `unaudited` | 1537 |
 
 | claim_type | count |
 |---|---:|
@@ -166,6 +166,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_born_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
 | `asymmetry_persistence_joint_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1895,6 +1896,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Within the finite primitive-edge class whose local data are only the 16-state primitive cell, source-free state, rank-four projector, locality/additivity, and standard von Neumann or binary measurement entropy, there is no derivation of an entanglement area coefficient equal to 1/4.  _(class `A`)_
 - **chain closes:** True — The chain closes because the canonical entropy values from the stated finite data are computed directly and none equals 1/4 in natural units, while the tuned gapped-edge value requires p_* not fixed by the primitive rank pair (16,4). With no dependencies, there is no unresolved upstream status blocking the scoped no-go.
 - **rationale:** The no-go is scoped to exact finite-cell entropy constructions and a gapped two-level edge example, not to all possible entropy-carrier theorems. The note explicitly distinguishes the primitive trace Tr((I_16/16)P_A)=1/4 from von Neumann and binary entropy values, and the runner reproduces those finite arithmetic checks with current PASS=26 FAIL=0. No hidden physical identification is used to claim a positive entropy coefficient; the conclusion is negative and leaves positive routes open only if they add a selector or operational entropy theorem.
+- **auditor confidence:** high
+
+### `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05`
+
+- **Note:** [`ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`](../../docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the explicit 1+5 qubit redundant-broadcast model with H_k=(pi/2)|1><1|_sys x X_k, record redundancy increases from the blank low-record state, decreases from high-record controls, and is flat from I/d; no from-nothing past-hypothesis derivation is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-113818-d2c7a3ce65-arrow_from_record_formation_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Running the same time-symmetric operators from low-record, time-reversed/high-record, and I/d initial states yields R_red=[0,1,2,3,4,5], [5,4,3,2,1,0], and [0,0,0,0,0,0], so arrow direction is fixed by the initial condition.  _(class `C`)_
+- **chain closes:** True — Independently, U_k acts as identity on pointer |0> and as -iX_k on pointer |1>, so after m writes a low-record |+>|0^5> state has exactly m correlated fragments and the conjugate/GHZ high-record controls unwind to 5-m fragments. I/d invariance follows from unitary conjugation, and the past-hypothesis residual is explicitly admitted rather than derived.
+- **rationale:** The runner builds the 64-dimensional density-matrix model from the displayed one-qubit operators, tensor products, exponentials, partial traces, and entropy functionals rather than printing constants. A manual orbit check gives the same redundancy and entropy sequences, with no cross-note input, external comparator, or tuned numerical scale. The clean result is bounded to the specified record-write model and admitted low-record boundary; it does not audit a derivation of the boundary condition or of record-production dynamics from the axioms.
 - **auditor confidence:** high
 
 ### `asymmetry_persistence_born_note`

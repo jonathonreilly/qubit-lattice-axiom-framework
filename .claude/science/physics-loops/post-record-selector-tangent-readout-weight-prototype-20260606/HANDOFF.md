@@ -38,14 +38,16 @@ prototype.
 
 ## Next exact action
 
-Commit, push, and open the stacked PR.
+Poll PR #2847 until `audit_pipeline` completes, then record the final clean PR
+state if the check succeeds.
 
 ## PR
 
 ```yaml
-pr_url: null
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2847"
 base: "physics-loop/post-record-character-path-channel-weight-prototype-20260606"
-initial_mergeable: null
-initial_merge_state_status: null
-initial_checks: null
+initial_head: "57c7dd9a4f7754ebf5096cde1b031c12f405e436"
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline QUEUED"
 ```

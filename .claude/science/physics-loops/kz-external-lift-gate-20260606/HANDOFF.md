@@ -5,7 +5,10 @@
 This block is based on `origin/main` and targets the PR484 K-Z external-lift
 active review gate.
 
-PR: pending.
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2804
+
+GitHub verification: open PR, base `main`, head
+`physics-loop/kz-external-lift-gate-20260606`, merge state `UNSTABLE`.
 
 ## Intended Result
 
@@ -21,7 +24,7 @@ not theorem-ready.
 
 ## Next Action
 
-Commit, push, open PR, then continue campaign.
+Continue campaign: select the next live lane from the opportunity queue.
 
 ## Verification
 

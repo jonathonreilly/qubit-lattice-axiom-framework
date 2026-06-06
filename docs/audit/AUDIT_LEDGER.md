@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 682 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1228 |
+| unaudited | 1227 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 89 |
+| ~~audited_conditional~~ | 90 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1058 |
-| `audited_conditional` | 89 |
+| `audited_conditional` | 90 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1531 |
+| `unaudited` | 1530 |
 
 | claim_type | count |
 |---|---:|
@@ -1244,6 +1244,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -9220,6 +9221,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** False — Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: Issue: the arithmetic is a valid class-A algebraic closure only after importing stipulated topological and ABSS applicability inputs. Why: the packet explicitly says the one-hop cone-cap authorities do not establish the Cl(3)/Z^3 -> PL S^3 x R bridge or global ABSS route, and the rubric downgrades imported open premises to audited_conditional. Repair: provide a retained bridge theorem for the route, fixed-locus weights, and ABSS applicability. Boundary: retain only the conditional eta=2/9 algebraic certificate.
 - **rationale:** Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: Issue: the arithmetic is a valid class-A algebraic closure only after importing stipulated topological and ABSS applicability inputs. Why: the packet explicitly says the one-hop cone-cap authorities do not establish the Cl(3)/Z^3 -> PL S^3 x R bridge or global ABSS route, and the rubric downgrades imported open premises to audited_conditional. Repair: provide a retained bridge theorem for the route, fixed-locus weights, and ABSS applicability. Boundary: retain only the conditional eta=2/9 algebraic certificate.
 - **auditor confidence:** judicial
+
+### `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** C3 fixed-locus and trace-free weight arithmetic force transverse weights (1,2) and local density 2/9; local ABSS prerequisites are asserted only conditional on ambient PL S^3 x R, while the global Cl(3)/Z^3 -> PL S^3 x R bridge remains open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-115945-4979c88142-koide_aps_c3_fixed_locus_wei`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cyclic C3[111] permutation has transverse eigenvalues (omega, omega^2), and the trace-free carrier condition forces the unique weights (1,2), so the local density sum evaluates to L3(1,2)=2/9; local ABSS support is then only conditional on the ambient PL S^3 x R hypothesis.  _(class `A`)_
+- **chain closes:** False — The algebraic fixed-locus, trace-free-pair, and 2/9 density subchain closes. The ABSS/framework route remains conditional because the restricted packet does not supply the global Cl(3)/Z^3 -> PL S^3 x R identification.
+- **rationale:** Independent checks confirm the core algebra: the cyclic permutation has determinant polynomial 1-x^3, rank(P-I)=2, transverse weights {1,2}, and (omega-1)(omega^2-1)=3 gives L3(1,2)=2/9. The runner verifies these identities, but the local ABSS/topology portion relies on the explicit ambient PL S^3 x R condition and on standard topology facts not closing the framework identification. The cited finite cone-cap authorities are retained only for finite combinatorics and explicitly do not supply the global PL S^3 bridge, so clean retention cannot propagate through that open identification.
+- **open / conditional deps cited:**
+  - `S3_CAP_UNIQUENESS_NOTE.md`
+  - `PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`
+  - `S3_GENERAL_R_DERIVATION_NOTE.md`
+- **auditor confidence:** high
 
 ### `koide_berry_monopole_bridge_reduction_note_2026-05-31`
 

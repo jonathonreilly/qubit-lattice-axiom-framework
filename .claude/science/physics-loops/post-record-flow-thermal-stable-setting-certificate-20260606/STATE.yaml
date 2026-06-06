@@ -1,0 +1,65 @@
+loop_slug: post-record-flow-thermal-stable-setting-certificate-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 19
+date: 2026-06-06
+branch: physics-loop/post-record-flow-thermal-stable-setting-certificate-20260606
+base: physics-loop/post-record-stability-dynamics-selector-subdivision-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2837"
+goal: |
+  Define supplied stable-setting certificate semantics for flow/thermal rows
+  while blocking stable-setting-to-selected-dial overclaims.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: flow/thermal stable-setting certificate
+hard_residual_attacked: |
+  The stability/dynamics selector subdivision exposed 36 flow/thermal rows.
+  This block defines what can be certified as a stable dial location under a
+  supplied rule without treating it as a selected dial.
+files_touched:
+  - docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md
+  - scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-flow-thermal-stable-setting-certificate-20260606/*
+runner_summary: "SUMMARY: PASS=43 FAIL=0"
+certificate_results:
+  flow_or_thermal_stability_rows: 36
+  stable_setting_certificate_interface: true
+  stable_setting_selects_dial: false
+  generation_or_koide_dial_selected: false
+  selected_dial_derived_from_stability: false
+open_imports:
+  - "supplied dial domain"
+  - "supplied flow, score, or thermal rule"
+  - "supplied stability predicate"
+  - "exact finite or algebraic check"
+  - "separate selector rule before any selected-dial reading"
+  - "independent audit remains required for verdicts"
+  - "PR is stacked on the stability/dynamics selector subdivision companion"
+no_go_routes:
+  - "stable setting => selected dial"
+  - "generation/Koide stable feature => forced value"
+  - "bounded obstruction => promoted row"
+  - "Record => supplied flow/score/thermal rule"
+review_findings: "local review clean: runner PASS=43 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: not_open
+pr_url: null
+pr_number: null
+cycle_status: ready_for_pr
+next_exact_action: |
+  Open a stacked PR against
+  physics-loop/post-record-stability-dynamics-selector-subdivision-20260606.
+stop_condition: |
+  Satisfied when the runner passes, local review is clean, the branch is pushed,
+  and the stacked PR is open and verified.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "stable-setting certificates are available under supplied flow/score/thermal rules, but selected-dial status needs an additional selector rule"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch defines supplied stability certificate semantics and does not select a dial."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

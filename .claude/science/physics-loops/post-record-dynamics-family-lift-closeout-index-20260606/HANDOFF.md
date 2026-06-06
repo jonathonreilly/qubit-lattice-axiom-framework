@@ -25,5 +25,5 @@ initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline queued at initial verification"
 final_mergeable: MERGEABLE
 final_merge_state_status: CLEAN
-final_checks: "empty check rollup at final verification"
+final_checks: "audit_pipeline completed SUCCESS at final verification"
 ```

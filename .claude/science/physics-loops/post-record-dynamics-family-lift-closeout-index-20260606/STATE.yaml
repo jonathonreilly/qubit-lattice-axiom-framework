@@ -40,7 +40,7 @@ pr_number: 2877
 cycle_status: pr_open_clean
 mergeable: MERGEABLE
 merge_state_status: UNSTABLE
-checks: "empty check rollup at final verification"
+checks: "audit_pipeline completed SUCCESS at final verification"
 next_exact_action: |
   Closed for campaign purposes; close out the 12-hour campaign if runtime is
   exhausted.

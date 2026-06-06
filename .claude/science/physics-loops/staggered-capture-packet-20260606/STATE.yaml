@@ -1,0 +1,23 @@
+loop_slug: staggered-capture-packet-20260606
+branch: physics-loop/staggered-capture-packet-20260606
+base: origin/main@3ba784c50
+target_claim_id: staggered_backreaction_live_capture_packet_note_2026-05-29
+target_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_result_edits: false
+files_touched:
+  - docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md
+  - scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py
+  - logs/runner-cache/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.txt
+  - outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json
+  - .claude/science/physics-loops/staggered-capture-packet-20260606/
+checks:
+  - command: python3 scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py
+    result: PASS=82 FAIL=0
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py --force --allow-non-main --push-mode none
+    result: refreshed cache, ok
+remaining_blockers:
+  - reviewer/auditor must decide final ledger status
+next_exact_action: open review PR
+

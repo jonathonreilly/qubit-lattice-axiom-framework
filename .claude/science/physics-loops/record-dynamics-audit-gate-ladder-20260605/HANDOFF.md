@@ -5,6 +5,8 @@
 Bounded-support / branch-local record-dynamics audit gate ladder ready for
 stacked review. This block is stacked on PR #2784.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2786
+
 ## Intended Result
 
 The classifier maps audit requests to required gates and identifies which gates
@@ -26,5 +28,5 @@ Checks:
 
 ## Next Action
 
-Commit, push, open a stacked PR, then apply the ladder to a concrete open lane
-or pivot to another high-value dynamics target.
+Apply the ladder to a concrete open lane or pivot to another high-value
+dynamics target.

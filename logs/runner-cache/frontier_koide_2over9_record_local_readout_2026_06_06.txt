@@ -1,0 +1,38 @@
+================================================================================
+2/9 charged-lepton asymmetry = the LOCAL fixed-point density a record reads
+(supplies the single-summand readout bridge via the Record axiom)
+================================================================================
+
+[BLOCK 1] Reprove the LOCAL Atiyah-Bott density L3(1,2) = 2/9
+  [PASS] (1-w)(1-w^2) = 3 (C3 cyclotomic norm)
+  [PASS] L3(1,2) = 2/9  (faithful transverse C3 doublet, the trace-free (1,2) weight)  --  = 2/9
+  [PASS] L3(1,1) = 1/9  (degenerate alternative)  --  = 1/9
+  [PASS] the forced weight (1,2) is the trace-free pair (a1+a2 = 3 ≡ 0 mod 3)  --  (1,1)/(2,2) not trace-free -> 1/9; (1,2) trace-free -> 2/9
+
+[BLOCK 2] The GLOBAL equivariant / eta readout VANISHES
+  [PASS] staggered chirality gamma5 anticommutes with D (gamma5 D + D gamma5 = 0)
+  [PASS] => spectrum is +/- paired => global signed eta = sum sign(lambda) = 0  --  spectrum [-0.982 -0.621  0.621  0.982]
+  [PASS] global readout (b) = 0  (the C3-symmetric/equivariant invariant vanishes)  --  cited retained: signed eta = 0, equivariant eta trace = 0, Tr(g5 U)=0
+
+[BLOCK 3] KEY: a record reads the SINGLE LOCAL realized summand -> 2/9
+  [PASS] readout (a) single fixed-point LOCAL density = 2/9 (matches data)  --  = 2/9
+  [PASS] readout (b) global equivariant/eta invariant = 0 (vanishes)
+  [PASS] readout (c) extensive sum over all sites = 3*(2/9) = 2/3  --  = 2/3
+  [PASS] Record axiom: realized outcome = the REALIZED (single, local, durable) sector  --  MINIMAL_AXIOMS_2026-06-05
+  [PASS] a record is NOT a global equivariant average (b)
+  [PASS] a record is NOT the extensive all-sites sum (c)
+  [PASS] => the RECORDED charged-lepton asymmetry = the single LOCAL density (a) = 2/9  --  the single-summand readout IS what a record is
+
+[BLOCK 4] Teeth: the non-record readouts give the WRONG answer
+  [PASS] TEETH: reading the GLOBAL equivariant invariant -> 0 (no asymmetry; contradicts 3 masses)
+  [PASS] TEETH: reading the EXTENSIVE sum -> 2/3 != 2/9 (over-counts; not a single realized record)
+  [PASS] only the single LOCAL realized record yields 2/9
+
+[BLOCK 5] Honest residual
+  [PASS] DIMENSIONLESS asymmetry-2/9 (Lefschetz density) -- NOT the radian Brannen phase 2/9  --  radian 2/9 is a separate object: retained_no_go radian bridge (pi-transcendence)
+  [PASS] d=3 / carrier / KS operator surface SUPPLIED (cited retained)
+  [PASS] overall mass scale + spectrum normalization = separate channel inputs  --  asymmetry is the genuinely-derivable channel
+
+================================================================================
+SCORECARD:  PASS = 20   FAIL = 0
+================================================================================

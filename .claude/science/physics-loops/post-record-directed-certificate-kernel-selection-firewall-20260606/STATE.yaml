@@ -1,0 +1,67 @@
+loop_slug: post-record-directed-certificate-kernel-selection-firewall-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 27
+date: 2026-06-06
+branch: physics-loop/post-record-directed-certificate-kernel-selection-firewall-20260606
+base: physics-loop/post-record-directed-certificate-examples-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2850"
+goal: |
+  Prove the firewall that exact directed certificates do not select a
+  production kernel; the kernel remains a supplied bridge input.
+target_status: no-go
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: directed certificate kernel-selection no-go
+hard_residual_attacked: |
+  The positive directed-certificate examples could be misread as selecting a
+  dynamics kernel. This block supplies exact finite counterexamples.
+files_touched:
+  - docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md
+  - scripts/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-directed-certificate-kernel-selection-firewall-20260606/*
+runner_summary: "SUMMARY: PASS=52 FAIL=0"
+no_go_results:
+  directed_certificate_kernel_selection_firewall: true
+  same_directed_certificate_distinct_kernels: true
+  production_kernel_selected: false
+  production_kernel_derived_from_directed_certificate: false
+  orientation_derived_from_record: false
+  physical_arrow_derived_from_record: false
+  clock_or_rate_derived: false
+  born_law_derived_from_record: false
+open_imports:
+  - "supplied production kernel or model-selection rule remains required"
+  - "supplied law/orientation/clock/kernel bridge for any dynamics-language certificate"
+  - "independent audit remains required before effective retained interpretation"
+  - "PR is stacked on the directed-certificate examples companion"
+no_go_routes:
+  - "exact directed certificate => selected production kernel"
+  - "finite word law => all unvisited kernel rows"
+  - "single scalar certificate => unique dynamics model"
+  - "post-record realized data => Born law, clock, rate, or physical arrow"
+review_findings: "local review clean: runner PASS=52 FAIL=0; py_compile clean; cached summary/firewalls present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: pending
+pr_url: null
+pr_number: null
+cycle_status: local_review_clean
+mergeable: null
+merge_state_status: null
+checks: null
+next_exact_action: |
+  Commit, push, open a stacked PR against
+  physics-loop/post-record-directed-certificate-examples-20260606, then record
+  PR status.
+stop_condition: |
+  Not stopped. Campaign continues after PR verification while runtime remains.
+status_fields:
+  actual_current_surface_status: no-go
+  trace_class: negative_route_pruning
+  reachability_to_target: prunes
+  conditional_surface_status: "directed certificates can validate supplied kernel bridges but cannot select production kernels without a supplied selection rule"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch is a firewall/no-go and not a retained-grade positive proposal."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

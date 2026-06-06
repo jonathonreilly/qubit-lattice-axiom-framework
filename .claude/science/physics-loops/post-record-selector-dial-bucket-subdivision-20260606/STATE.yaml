@@ -1,0 +1,58 @@
+loop_slug: post-record-selector-dial-bucket-subdivision-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 14
+date: 2026-06-06
+branch: physics-loop/post-record-selector-dial-bucket-subdivision-20260606
+base: physics-loop/post-record-audit-evidence-ladder-row-bucketing-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2835"
+goal: |
+  Subdivide the 210-row selector/dial bucket into actionable read-only
+  sub-buckets without selecting or forcing any dial value.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: read-only selector/dial sub-bucketing
+hard_residual_attacked: |
+  The selector/dial bucket is too broad to dispatch. It mixes Koide/generation
+  selectors, stability/dynamics selectors, measure/weight/normalization gates,
+  and generic selector rules.
+files_touched:
+  - docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-selector-dial-bucket-subdivision-20260606/*
+runner_summary: "SUMMARY: PASS=28 FAIL=0"
+selector_dial_rows: 210
+sub_bucket_counts:
+  koide_or_generation_selector: 104
+  stability_or_dynamics_selector: 64
+  measure_weight_normalization: 41
+  generic_selector_rule: 1
+open_imports:
+  - "manual row-specific review of keyword sub-buckets"
+  - "independent audit remains required for verdicts"
+  - "PR is stacked on the row-bucketing companion"
+no_go_routes:
+  - "stability_or_dynamics_selector => selected dial"
+  - "koide_or_generation_selector => forced Koide/generation value"
+  - "measure_weight_normalization => Record-derived measure/prior"
+  - "sub-bucket => audit verdict"
+review_findings: "local review clean: runner PASS=28 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: verified_pending_pr
+next_exact_action: |
+  Commit, push, open stacked PR against the row-bucketing branch, verify PR
+  status, then pivot.
+stop_condition: |
+  Stacked PR opened, mergeability/check state recorded on the latest head, and
+  campaign pivots while runtime remains.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "selector/dial rows are subdivided for triage; no dial value is selected"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch subdivides a read-only row bucket and does not edit audit data."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

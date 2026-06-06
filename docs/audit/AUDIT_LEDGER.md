@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 184 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 683 |
+| **retained_bounded** | 684 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1222 |
+| unaudited | 1221 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1061 |
+| `audited_clean` | 1062 |
 | `audited_conditional` | 92 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1525 |
+| `unaudited` | 1524 |
 
 | claim_type | count |
 |---|---:|
@@ -834,6 +834,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `persistent_object_top4_multistage_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_record_matched_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_record_overlap_kernel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_record_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -12787,6 +12788,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Because the record basis is orthonormal, W†W = sum_{r,s}(K_r†K_s)<r|s> = sum_r K_r†K_r, so the isometry condition gives the Kraus resolution.  _(class `A`)_
 - **chain closes:** True — The displayed identities close from the stated finite-dimensional isometry premise and orthonormal record basis. The note explicitly excludes deriving W from persistent-record dynamics, so that bridge is not needed for this bounded claim.
 - **rationale:** The load-bearing step is a direct algebraic expansion of an assumed finite isometry in an orthonormal record basis, not a definition substitution or external comparator check. The CP, trace-preservation, and selective-normalization formulas follow from the resulting Kraus resolution in finite dimensions. The runner source genuinely constructs a seeded finite isometry, extracts blocks, and checks the relevant matrix identities and positivity conditions; it does not import or hard-code the contested persistent-record bridge.
+- **auditor confidence:** high
+
+### `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given a finite qubit-lattice Hilbert space and any finite Kraus family satisfying Σ_r K_r†K_r = 𝟙, the block-stacked map V is an isometry and preserves norms; physical selection of the persistent-record Kraus family is outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-121528-85e6740967-persistent_record_instrument`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the block-column matrix V with row blocks K_r, V†V = Σ_r K_r†K_r = 𝟙_sys by direct block-matrix multiplication.  _(class `A`)_
+- **chain closes:** True — The cited Kraus-Choi authority is retained and supplies the finite Kraus-family resolution-of-identity input; the minimal axiom authority is an accepted framework premise for the finite qubit algebra. From those inputs, the V†V computation is ordinary finite-dimensional block-matrix algebra.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs, not a definition, renaming, external comparator, or tuned numerical match. The runner source actually constructs block-stacked matrices, checks Σ_r K_r†K_r = 𝟙 and V†V = 𝟙 symbolically for multiple concrete families, and performs numerical norm checks; it is not merely printing expected PASS lines. The clean verdict is limited to the conditional finite-Kraus construction and does not audit any downstream identification of these record labels with the framework's physical persistent-record process.
 - **auditor confidence:** high
 
 ### `persistent_record_matched_compare_note`

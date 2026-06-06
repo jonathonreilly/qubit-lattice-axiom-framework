@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/massless_vector_null_quotient_exact_linear_algebra_2026_06_03.py
+runner_sha256: 4b7de6f60b824dcbd5fd5dd4903df369a2df341f48a96a002467f540cad805d9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Massless-vector null quotient exact linear algebra verifier
+Claim: for nonzero null k in (C^4, diag(1,-1,-1,-1)),
+       dim_C(ker L_k / span{k}) = 2
+
+General theorem invariants
+--------------------------
+[PASS] dim_C V = 4
+[PASS] nonzero functional to C has rank 1
+[PASS] rank-nullity gives dim ker(L_k)=3
+[PASS] nonzero k gives dim span{k}=1
+[PASS] quotient dimension is 3 - 1 = 2
+
+Exact rational null-vector witnesses
+------------------------------------
+[PASS] (1, 0, 0, 1): exact null condition eta(k,k)=0
+[PASS] (1, 0, 0, 1): k is nonzero
+[PASS] (1, 0, 0, 1): L_k row is nonzero
+[PASS] (1, 0, 0, 1): rank(L_k)=1 (rank=1)
+[PASS] (1, 0, 0, 1): dim ker(L_k)=3 (dim=3)
+[PASS] (1, 0, 0, 1): L_k(k)=0 (L_k(k)=0)
+[PASS] (1, 0, 0, 1): dim span{k}=1 (dim=1)
+[PASS] (1, 0, 0, 1): dim ker(L_k)/span{k}=2 (3 - 1 = 2)
+[PASS] (5, 3, 4, 0): exact null condition eta(k,k)=0
+[PASS] (5, 3, 4, 0): k is nonzero
+[PASS] (5, 3, 4, 0): L_k row is nonzero
+[PASS] (5, 3, 4, 0): rank(L_k)=1 (rank=1)
+[PASS] (5, 3, 4, 0): dim ker(L_k)=3 (dim=3)
+[PASS] (5, 3, 4, 0): L_k(k)=0 (L_k(k)=0)
+[PASS] (5, 3, 4, 0): dim span{k}=1 (dim=1)
+[PASS] (5, 3, 4, 0): dim ker(L_k)/span{k}=2 (3 - 1 = 2)
+[PASS] (13, 12, 0, 5): exact null condition eta(k,k)=0
+[PASS] (13, 12, 0, 5): k is nonzero
+[PASS] (13, 12, 0, 5): L_k row is nonzero
+[PASS] (13, 12, 0, 5): rank(L_k)=1 (rank=1)
+[PASS] (13, 12, 0, 5): dim ker(L_k)=3 (dim=3)
+[PASS] (13, 12, 0, 5): L_k(k)=0 (L_k(k)=0)
+[PASS] (13, 12, 0, 5): dim span{k}=1 (dim=1)
+[PASS] (13, 12, 0, 5): dim ker(L_k)/span{k}=2 (3 - 1 = 2)
+[PASS] (25, 7, 24, 0): exact null condition eta(k,k)=0
+[PASS] (25, 7, 24, 0): k is nonzero
+[PASS] (25, 7, 24, 0): L_k row is nonzero
+[PASS] (25, 7, 24, 0): rank(L_k)=1 (rank=1)
+[PASS] (25, 7, 24, 0): dim ker(L_k)=3 (dim=3)
+[PASS] (25, 7, 24, 0): L_k(k)=0 (L_k(k)=0)
+[PASS] (25, 7, 24, 0): dim span{k}=1 (dim=1)
+[PASS] (25, 7, 24, 0): dim ker(L_k)/span{k}=2 (3 - 1 = 2)
+
+Canonical quotient basis witness
+--------------------------------
+[PASS] canonical e_x lies in ker(L_k)
+[PASS] canonical e_y lies in ker(L_k)
+[PASS] canonical k lies in ker(L_k)
+[PASS] canonical {e_x,e_y,k} has rank 3
+[PASS] canonical quotient representatives {e_x,e_y} have rank 2
+
+Massive/non-null contrast
+-------------------------
+[PASS] massive contrast has eta(k,k)!=0
+[PASS] massive contrast rank(L_k)=1
+[PASS] massive contrast dim ker(L_k)=3
+[PASS] massive contrast k is not in ker(L_k)
+[PASS] massive contrast has no null quotient by span{k}
+
+Source-note boundary checks
+---------------------------
+[PASS] note contains boundary phrase: pure finite-dimensional complex linear algebra
+[PASS] note contains boundary phrase: no physical spacetime
+[PASS] note contains boundary phrase: physical photon, gluon, or gauge-boson
+[PASS] note contains boundary phrase: No plane-wave decomposition, gauge orbit, gauge-fixing choice
+[PASS] note contains boundary phrase: linear-algebra quotient dimension
+[PASS] note avoids forbidden status phrase: Author-surface status
+[PASS] note avoids forbidden status phrase: Cached output
+[PASS] note avoids forbidden status phrase: exact-support
+
+SUMMARY: PASS=55 FAIL=0
+VERDICT: EXACT-LINEAR-ALGEBRA
+
+----- stderr -----
+

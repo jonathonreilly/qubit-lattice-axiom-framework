@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 177 |
+| **retained** | 178 |
 | **retained_no_go** | 192 |
 | **retained_bounded** | 671 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1232 |
+| unaudited | 1231 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1036 |
+| `audited_clean` | 1037 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1516 |
+| `unaudited` | 1515 |
 
 | claim_type | count |
 |---|---:|
@@ -714,6 +714,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -10980,6 +10981,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The newly promoted open-cubic staggered subset is scientifically consistent on main, supporting only the bounded external-source d^-2 reproduction, blocking-sensitivity, and 3D sign-split surfaces stated in the note.  _(class `C`)_
 - **chain closes:** True — The current outputs of the three listed scripts reproduce the note's exact-force, blocked-trajectory, blocking-sensitivity, and 3D contraction/sign-split summaries within print precision. The note explicitly excludes broader staggered both-masses or self-consistent two-body closure.
 - **rationale:** The validation claim closes for its bounded scope: all three referenced reruns match the frozen note summaries, including the global exponents, per-side blocked fits, blocking-scheme sensitivity, width ratios, core excess values, and 20/20 vs 0/20 field-side sign split. The note does not overstate these checks into broader Newton closure or two-body closure. Residual risk is limited to the promoted upstream notes' own scopes, not to stale validation output here.
+- **auditor confidence:** high
+
+### `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03`
+
+- **Note:** [`MASSLESS_VECTOR_NULL_QUOTIENT_EXACT_LINEAR_ALGEBRA_THEOREM_NOTE_2026-06-03.md`](../../docs/MASSLESS_VECTOR_NULL_QUOTIENT_EXACT_LINEAR_ALGEBRA_THEOREM_NOTE_2026-06-03.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure finite-dimensional complex linear algebra: for V=C^4 with eta=diag(1,-1,-1,-1) and nonzero null k, dim_C(ker eta(k,-)/span_C{k})=2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-000410-0842d44bc8-massless_vector_null_quotien`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because eta is nondegenerate and k != 0, L_k is a nonzero linear functional on C^4, so rank-nullity gives dim_C ker(L_k)=3; since eta(k,k)=0, span_C{k} lies in the kernel and the quotient dimension is 3-1=2.  _(class `A`)_
+- **chain closes:** True — The conclusion follows directly from nondegeneracy, rank-nullity, and the null condition. No physical bridge, external numerical input, or cited authority is needed.
+- **rationale:** The load-bearing step is a standard algebraic consequence of the stated hypotheses: nondegeneracy makes L_k nonzero for k != 0, rank-nullity gives a three-dimensional kernel, and eta(k,k)=0 puts the one-dimensional span of k inside it. The runner source performs exact rational rank and containment checks for witnesses and text-boundary checks; it does not import external comparators or hard-code a contested derived value as evidence. The theorem's scope is explicitly limited to the abstract quotient dimension, so no omitted physics bridge is part of the audited claim.
 - **auditor confidence:** high
 
 ### `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28`

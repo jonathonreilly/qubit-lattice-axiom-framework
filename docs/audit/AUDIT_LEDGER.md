@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 689 |
+| **retained_bounded** | 690 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1323 |
+| unaudited | 1322 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1080 |
+| `audited_clean` | 1081 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1630 |
+| `unaudited` | 1629 |
 
 | claim_type | count |
 |---|---:|
@@ -675,6 +675,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_reality_type_permitted_not_forced_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_record_sign_agnostic_eta_refuted_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `koide_records_pointer_grounds_block_channel_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10065,6 +10066,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For general weights w_s log E_+ + w_p log E_perp the maximum occurs at r*=w_p/(2 w_s), so equal weights give r=1/2 and Q=(1+2r)/3=2/3.  _(class `A`)_
 - **chain closes:** True — The algebraic optimization closes on its own terms: with E_+=1/(1+2r) and E_perp=2r/(1+2r), differentiating w_s log E_+ + w_p log E_perp gives r=w_p/(2w_s), hence r=1/2 for (1,1). The missing work is not inside the conditional algebra but in deriving or admitting the two named premises.
 - **rationale:** The displayed optimizer and Q(r) algebra are correct, and the runner source performs real symbolic/numeric checks rather than merely printing constants. However, the result explicitly depends on two unclosed inputs: equal-block weighting and records/objectivity maximization. The cited retained authorities support the surrounding algebra and the freedom/no-go boundaries, but they do not derive those premises.
+- **auditor confidence:** high
+
+### `koide_records_pointer_grounds_block_channel_note_2026-05-31`
+
+- **Note:** [`KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md`](../../docs/KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite `C_3` matrix bookkeeping: `S=C+C^2` singlet/doublet block resolution, commuting relation with `Gamma_chi`, fixed doublet complex structure, trace dimension count, and the two stated log-functional extrema; no records dynamics, objectivity theorem, or selection of `r=1/2` audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-183705-8d71d51fec-koide_records_pointer_ground`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `S=C+C^2` resolves the real singlet/doublet block while trace weights the doublet by dimension 2; with `E_+=3a^2` and `E_perp=6|b|^2`, equal-weight versus dimension-weighted log extrema give `r=1/2` versus `r=1`.  _(class `A`)_
+- **chain closes:** True — The displayed identities follow from finite polynomial algebra in `C^3=I`, the singlet projector `J/3`, and elementary constrained optimization using the retained block-total formulas. The remaining records/objectivity selection question is explicitly outside the claim boundary.
+- **rationale:** The runner source actually instantiates the finite matrices and symbolic extrema rather than only printing constants, and all seven passing checks are class-A algebraic checks. Independent eigenvalue and projector algebra confirms `spec(C+C^2)={2,-1,-1}`, `[S,Gamma_chi]=0`, `Jcs^2=-P_doublet`, trace weights `(1,2)`, and the extrema `r=1/2` and `r=1`. All cited authorities are retained-grade for the bounded algebraic inputs used here, and the note does not import the open dynamics/objectivity bridge as a conclusion.
 - **auditor confidence:** high
 
 ### `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16`

@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/emergent_coupling_scale_window_runner.py
+runner_sha256: 520ba337e256d008c235c463bd73a01f186c12fdfbbe55d680ab3644e0bfbec7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+========================================================================
+EMERGENT C3 COUPLING SCALE |K|: the predictability-sieve window  [class A]
+========================================================================
+  [PASS] the neutrino mass spread is UNIQUELY the smallest (the only sub-eV sector)  (neutrino spread = 5.00e-02 eV)
+  [PASS] the neutrino sits in a vast GAP below every other fermion (~9 orders of magnitude)  (gap = 1.8e+09x = 9.3 orders)
+  [PASS] window for |K| = [neutrino spread, smallest other splitting] spans the gap  ([5.00e-02, 9.16e+07] eV)
+  [PASS] for |K| sampled ACROSS the window: neutrino -> C3, all other sectors -> corner (ROBUST, no fine-tuning)
+  [PASS] PREDICTION: only sub-|K| sectors are C3 (large mixing) -> ONLY the neutrino; all heavier sectors are corner (small mixing)  (C3 sectors = ['neutrino'])
+  [PASS] MATCHES data: only the neutrino has large mixing (PMNS); charged leptons (U_e=I) and quarks (small CKM) are corner -> small-CKM/large-PMNS EXPLAINED by neutrino lightness
+  [PASS] the precise |K| is OPEN (the emergent-coupling/double-shift scale computation), constrained to the ~9-order window; the result is robust to its value
+========================================================================
+TOTAL: PASS=7 FAIL=0
+VERDICT: |K| is constrained to [Δm_ν, smallest-other-splitting] ~ [0.05 eV, 92 MeV] (~9 orders); ANY |K| there gives neutrino->C3 (large PMNS) and all others->corner (small CKM). The neutrino's unique lightness (the gap) explains small-CKM/large-PMNS. The precise |K| is the open emergent-coupling computation; the result is robust to it.
+
+----- stderr -----
+

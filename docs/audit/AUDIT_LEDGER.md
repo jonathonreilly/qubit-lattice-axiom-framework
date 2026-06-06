@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 192 |
-| **retained_no_go** | 204 |
+| **retained_no_go** | 205 |
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1312 |
+| unaudited | 1311 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1088 |
+| `audited_clean` | 1089 |
 | `audited_conditional` | 63 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 51 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1619 |
+| `unaudited` | 1618 |
 
 | claim_type | count |
 |---|---:|
@@ -907,6 +907,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_admitted_sample_target_vector_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_clock_rate_interface_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_count_probability_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13607,6 +13608,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The ladder is a finite classifier mapping each bounded or conditional row's supplied evidence to the branch-local reading it is allowed to claim.  _(class `E`)_
 - **chain closes:** True — The chain closes as a definition of a finite classifier: the table entries and runner logic consistently encode the stated evidence-to-status mapping. It does not close as a derived physics theorem because no upstream axiom or retained authority is supplied for the normative sufficiency rules.
 - **rationale:** The load-bearing content is the introduction of classifier categories and firewall rules, not a first-principles computation from the framework baseline. The runner implements those definitions directly, checks source anchors, exercises representative cases, and verifies that forbidden flags remain false. That supports internal consistency of the classifier but does not turn the classifier policy into an independent derivation.
+- **auditor confidence:** high
+
+### `post_record_count_probability_firewall_2026-06-06`
+
+- **Note:** [`POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md`](../../docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite post-record counts/history alone do not uniquely determine predictive probabilities, Born weights, rates, or dynamics; supplied models may still be audited or fitted by those counts.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-2b479f200d-post_record_count_probabilit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The same finite post-record history/count data are compatible with multiple predictive laws, and same-count histories can require different next-step predictions under an order-sensitive law, so counts alone do not determine a unique future law.  _(class `A`)_
+- **chain closes:** True — The finite counterexamples independently close the counts-alone no-go: multiple Bernoulli laws give positive likelihood to the same realized word, and count-equal histories can differ in order information needed by Markov prediction. This proves only the branch-local firewall, not an impossibility for externally supplied probability, Born, or dynamics bridges.
+- **rationale:** The load-bearing math is elementary and independently checks: count(0100) = (3,1), the iid likelihood p^3(1-p) is positive for many distinct p values, and histories 01 and 10 share counts while preserving different last-symbol data for an admitted Markov law. The Born-side formulas are used only to type-separate supplied pre-record/instrument probabilities from realized post-record count updates. The no-go discipline gate passes only under the narrowed counts-alone scope; empirical-frequency, Bayesian, maximum-entropy, Markov, Born, and rate routes remain available when they add explicit extra premises.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

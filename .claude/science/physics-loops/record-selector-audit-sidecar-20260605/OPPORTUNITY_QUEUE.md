@@ -1,9 +1,9 @@
 # Opportunity Queue
 
-1. **Post-record channel-count theorem.**
-   Attack the three `s=0_candidate` rows by deriving or sharply bounding
-   post-record atom/channel-count scoring on the two-channel generation
-   alphabet.
+1. **Post-record stable-location theorem.**
+   Package the three `s=0` rows as stable-location support only: the
+   equal-letter point is stable on the post-record atom/channel surface, but
+   this does not select the physical dial position.
 
 2. **Stable-dial consolidation.**
    Convert the three `stable_dial_open` rows into a clean note that separates

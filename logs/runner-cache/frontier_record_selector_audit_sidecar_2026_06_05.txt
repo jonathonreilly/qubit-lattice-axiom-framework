@@ -3,7 +3,7 @@ sidecar_rows=13
 [PASS] S0.1 sidecar has exactly the 13 selector-split audited-conditional rows
 [PASS] S0.2 expected class counts sum to 13
 [PASS] S0.3 class counts match expected repair buckets
-       {'false_positive_not_selector': 1, 'observable_identification_bridge': 2, 'dynamics_or_orbit_breaking_bridge': 1, 'stable_dial_open': 3, 'post_record_channel_count_scoring': 3, 'measurement_update_not_prior': 1, 'record_scalar_generator_not_prior': 1, 'sector_specific_dial_open_gate': 1}
+       {'false_positive_not_selector': 1, 'observable_identification_bridge': 2, 'dynamics_or_orbit_breaking_bridge': 1, 'stable_dial_open': 3, 'equal_letter_stable_location': 3, 'measurement_update_not_prior': 1, 'record_scalar_generator_not_prior': 1, 'sector_specific_dial_open_gate': 1}
 [PASS] L1 axiom_first_cluster_decomposition_theorem_note_2026-04-29 exists in audit ledger
 [PASS] L2 axiom_first_cluster_decomposition_theorem_note_2026-04-29 is currently audited_conditional
 [PASS] L3 axiom_first_cluster_decomposition_theorem_note_2026-04-29 note path exists
@@ -108,19 +108,19 @@ sidecar_rows=13
        must not be copied
 [PASS] L5 quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 sidecar class is nonempty
 [PASS] L6 quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 repair target is nonempty
-[PASS] E1 endpoint counts expose candidates without forcing them
+[PASS] E1 endpoint counts expose stable locations without forcing them
 [PASS] E2 no sidecar row claims a forced endpoint
-[PASS] E3 all s=0 candidate rows require channel/atom scoring repair
+[PASS] E3 all s=0 stable-location rows are explicitly non-selecting
 [PASS] E4 all dial rows remain open-dial rows
 [PASS] A1 audit data files are read-only inputs in this runner
 [PASS] A2 runner has no audit verdict vocabulary in sidecar classes
 
 === Repair buckets ===
 dynamics_or_orbit_breaking_bridge: 1
+equal_letter_stable_location: 3
 false_positive_not_selector: 1
 measurement_update_not_prior: 1
 observable_identification_bridge: 2
-post_record_channel_count_scoring: 3
 record_scalar_generator_not_prior: 1
 sector_specific_dial_open_gate: 1
 stable_dial_open: 3
@@ -132,16 +132,16 @@ flavor_emergent_chirality_no_transport_note_2026-05-30 | bounded_theorem | leaf 
 flavor_find_j_round1_jcs_measure_neutral_2026-06-02 | bounded_theorem | leaf | stable_dial_open | dial | Find a first-order/action or dynamics bridge; static J_cs is measure-neutral.
 flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 | bounded_theorem | leaf | observable_identification_bridge | none | Close the intensive-summand-as-observable promotion / generation-space bridge.
 flavor_measure_positivity_agnostic_note_2026-05-31 | bounded_theorem | leaf | stable_dial_open | dial | Derive the remaining reality/statistics or cross-factor bit; positivity alone is agnostic.
-flavor_missing_axiom_carrier_measure_note_2026-05-30 | bounded_theorem | medium | post_record_channel_count_scoring | s=0_candidate | Derive the generator-channel HS measure and channel-count scoring, or keep it conditional.
+flavor_missing_axiom_carrier_measure_note_2026-05-30 | bounded_theorem | medium | equal_letter_stable_location | s=0_stable_location | State the generator-channel HS measure as stable-location support only; do not claim it selects the physical dial position.
 flavor_trace_vs_center_dissolves_note_2026-05-30 | bounded_theorem | leaf | stable_dial_open | dial | Separate readout-class support from the still-free Fourier modulus.
-koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10 | positive_theorem | high | post_record_channel_count_scoring | s=0_candidate | Supply a canonical equal-weight log-functional / channel-count scoring theorem.
-koide_tracial_standard_form_carrier_narrow_note_2026-06-02 | bounded_theorem | leaf | post_record_channel_count_scoring | s=0_candidate | Accept/derive candidate carrier input plus channel-count scoring on the cyclic-vector split.
+koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10 | positive_theorem | high | equal_letter_stable_location | s=0_stable_location | Use the equal-weight log-functional as stable-location evidence only; do not promote it to physical dial selection.
+koide_tracial_standard_form_carrier_narrow_note_2026-06-02 | bounded_theorem | leaf | equal_letter_stable_location | s=0_stable_location | Keep the carrier/channel-count reading as stable-location support; do not treat the candidate carrier as selecting the physical dial position.
 luders_rule_from_composition_consistency_note_2026-05-20 | bounded_theorem | high | measurement_update_not_prior | none | Derive or explicitly admit standard sequential-effect composition for record conditioning.
 observable_principle_from_axiom_note | bounded_theorem | critical | record_scalar_generator_not_prior | none | Derive P2 continuous phase-blind scalar-generator selection.
 quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 | open_gate | leaf | sector_specific_dial_open_gate | dial | Derive sector-specific mass scheme/scale and quark-sector dial parameters; do not transfer charged-lepton BAE.
 
 === Interpretation ===
-The selector theorem moves three rows into an explicit s=0 candidate bucket, but only as conditional channel/atom-scoring targets.
+The selector theorem moves three rows into an explicit s=0 stable-location bucket, not a physical selector bucket.
 Four rows remain dial-open: stability or native structure is not enough to pick a position.
 Six rows are not prior-selector closures after the Record type firewall: they need observable identification, dynamics/orbit breaking, measurement-update, scalar-generator, or sector-specific mass-scheme repairs.
 No audit verdicts are applied and no audit data is written.

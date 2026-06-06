@@ -17,8 +17,8 @@ Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/
 
 The rows split as:
 
-- 3 `post_record_channel_count_scoring` rows: explicit `s=0_candidate`
-  repairs, still conditional on channel/atom scoring.
+- 3 `equal_letter_stable_location` rows: explicit `s=0` stability support,
+  not physical dial selection.
 - 4 dial-open rows: stability/native structure is not endpoint selection.
 - 6 non-prior-selector rows: route elsewhere after Record typing is clean.
 
@@ -31,5 +31,6 @@ The rows split as:
 
 ## Next exact action
 
-Attack the shared repair target for the three `s=0_candidate` rows: a narrow
-post-record channel-count theorem.
+Package the three `s=0` rows as stable-location support only, or attack a
+post-record dynamics theorem that proves stability without claiming physical
+dial selection.

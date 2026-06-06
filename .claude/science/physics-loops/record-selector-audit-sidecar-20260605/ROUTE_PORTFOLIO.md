@@ -1,11 +1,12 @@
 # Route Portfolio
 
-## Route 1 - classify all 13 as endpoint candidates
+## Route 1 - classify all 13 as endpoint-selection targets
 
 Status: rejected.
 
 This would overstate the selector theorem. Only three rows are legitimate
-`s=0_candidate` repairs, and all three still require channel/atom scoring.
+`s=0` stable-location support rows, and none should be treated as physical
+dial selection.
 
 ## Route 2 - fixed row registry with source anchors
 

@@ -8,7 +8,7 @@ not write audit data.
 
 The sidecar applies the selector theorem:
 
-* post-record atom/channel symmetry can support the equal-letter endpoint;
+* post-record atom/channel symmetry can support the equal-letter location;
 * pre-record microstate/dimension symmetry can support the dimension endpoint;
 * stability alone leaves the dial open;
 * many rows are not prior-selector rows at all once the type firewall is clean.
@@ -73,10 +73,10 @@ SIDE_CAR_ROWS: dict[str, dict[str, str]] = {
         "must": "positivity is AGNOSTIC",
     },
     "flavor_missing_axiom_carrier_measure_note_2026-05-30": {
-        "class": "post_record_channel_count_scoring",
-        "endpoint": "s=0_candidate",
-        "repair": "Derive the generator-channel HS measure and channel-count scoring, or keep it conditional.",
-        "use": "The selector theorem names this as an equal-channel/post-record scoring premise, not a Record axiom consequence.",
+        "class": "equal_letter_stable_location",
+        "endpoint": "s=0_stable_location",
+        "repair": "State the generator-channel HS measure as stable-location support only; do not claim it selects the physical dial position.",
+        "use": "The selector theorem names this as equal-channel/post-record stability support, not a Record axiom consequence or dial selector.",
         "must": "generator-channel HS measure",
     },
     "flavor_trace_vs_center_dissolves_note_2026-05-30": {
@@ -87,17 +87,17 @@ SIDE_CAR_ROWS: dict[str, dict[str, str]] = {
         "must": "free Fourier modulus",
     },
     "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": {
-        "class": "post_record_channel_count_scoring",
-        "endpoint": "s=0_candidate",
-        "repair": "Supply a canonical equal-weight log-functional / channel-count scoring theorem.",
-        "use": "The selector theorem identifies the missing premise as atom/channel weighting, not algebraic identities.",
+        "class": "equal_letter_stable_location",
+        "endpoint": "s=0_stable_location",
+        "repair": "Use the equal-weight log-functional as stable-location evidence only; do not promote it to physical dial selection.",
+        "use": "The selector theorem identifies the algebra as support for a stable equal-letter location, not a dial-fixing premise.",
         "must": "No selection principle",
     },
     "koide_tracial_standard_form_carrier_narrow_note_2026-06-02": {
-        "class": "post_record_channel_count_scoring",
-        "endpoint": "s=0_candidate",
-        "repair": "Accept/derive candidate carrier input plus channel-count scoring on the cyclic-vector split.",
-        "use": "The selector theorem says this is a stable equal-channel setting only after that scoring premise is supplied.",
+        "class": "equal_letter_stable_location",
+        "endpoint": "s=0_stable_location",
+        "repair": "Keep the carrier/channel-count reading as stable-location support; do not treat the candidate carrier as selecting the physical dial position.",
+        "use": "The selector theorem says this is a stable equal-channel location when that surface is used, not an endpoint-forcing result.",
         "must": "channel-counting scoring",
     },
     "luders_rule_from_composition_consistency_note_2026-05-20": {
@@ -129,7 +129,7 @@ EXPECTED_CLASS_COUNTS = {
     "observable_identification_bridge": 2,
     "dynamics_or_orbit_breaking_bridge": 1,
     "stable_dial_open": 3,
-    "post_record_channel_count_scoring": 3,
+    "equal_letter_stable_location": 3,
     "measurement_update_not_prior": 1,
     "record_scalar_generator_not_prior": 1,
     "sector_specific_dial_open_gate": 1,
@@ -202,14 +202,14 @@ def main() -> int:
         check(f"L6 {claim_id} repair target is nonempty", bool(entry["repair"]))
 
     endpoint_counts = Counter(entry["endpoint"] for entry in SIDE_CAR_ROWS.values())
-    check("E1 endpoint counts expose candidates without forcing them", endpoint_counts["s=0_candidate"] == 3 and endpoint_counts["dial"] == 4)
+    check("E1 endpoint counts expose stable locations without forcing them", endpoint_counts["s=0_stable_location"] == 3 and endpoint_counts["dial"] == 4)
     check("E2 no sidecar row claims a forced endpoint", all(entry["endpoint"] != "forced" for entry in SIDE_CAR_ROWS.values()))
     check(
-        "E3 all s=0 candidate rows require channel/atom scoring repair",
+        "E3 all s=0 stable-location rows are explicitly non-selecting",
         all(
-            "channel" in entry["repair"].lower() or "scoring" in entry["repair"].lower()
+            "do not" in entry["repair"].lower()
             for entry in SIDE_CAR_ROWS.values()
-            if entry["endpoint"] == "s=0_candidate"
+            if entry["endpoint"] == "s=0_stable_location"
         ),
     )
     check(
@@ -241,7 +241,7 @@ def main() -> int:
         )
 
     print("\n=== Interpretation ===")
-    print("The selector theorem moves three rows into an explicit s=0 candidate bucket, but only as conditional channel/atom-scoring targets.")
+    print("The selector theorem moves three rows into an explicit s=0 stable-location bucket, not a physical selector bucket.")
     print("Four rows remain dial-open: stability or native structure is not enough to pick a position.")
     print("Six rows are not prior-selector closures after the Record type firewall: they need observable identification, dynamics/orbit breaking, measurement-update, scalar-generator, or sector-specific mass-scheme repairs.")
     print("No audit verdicts are applied and no audit data is written.")

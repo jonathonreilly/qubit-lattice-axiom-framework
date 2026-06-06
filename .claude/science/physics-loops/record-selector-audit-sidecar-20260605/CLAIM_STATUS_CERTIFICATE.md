@@ -23,7 +23,7 @@ bare_retained_allowed: false
 
 - Independent fresh-context audit for any future verdict change.
 - Physical endpoint/dynamics selection.
-- Post-record channel-count theorem for the three `s=0_candidate` rows.
+- Post-record stable-location theorem for the three `s=0` support rows.
 
 ## Wording firewall
 

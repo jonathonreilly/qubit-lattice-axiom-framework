@@ -4,7 +4,7 @@ target_blocker_text: "Use the selector theorem to build an audit-sidecar classif
 source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: tooling
-next_trace_action: "Attack the three post_record_channel_count_scoring s=0 candidates with a narrow post-record channel-count theorem."
+next_trace_action: "Package the three equal_letter_stable_location rows as stable-location support without claiming physical dial selection."
 
 # Trace Gate
 
@@ -13,4 +13,5 @@ handoff. It does not close the rows themselves and does not apply audit
 verdicts.
 
 The highest-leverage follow-up is now explicit: three rows share a common
-`post_record_channel_count_scoring` repair target.
+`equal_letter_stable_location` support target. This is not a dial-selection
+target.

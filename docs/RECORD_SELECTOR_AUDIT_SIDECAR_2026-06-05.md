@@ -38,7 +38,7 @@ The answer is deliberately not "force Koide." The sidecar finds:
 
 | Repair bucket | Count | Meaning |
 |---|---:|---|
-| `post_record_channel_count_scoring` | 3 | explicit `s=0` candidates, still conditional on channel/atom scoring |
+| `equal_letter_stable_location` | 3 | explicit `s=0` stable-location support, not physical dial selection |
 | `stable_dial_open` | 3 | native structure or positivity exists, but the dial position remains open |
 | `sector_specific_dial_open_gate` | 1 | quark-sector dial must be derived separately; do not copy lepton BAE |
 | `observable_identification_bridge` | 2 | local-density/readout identification, not prior selection |
@@ -49,7 +49,7 @@ The answer is deliberately not "force Koide." The sidecar finds:
 
 So the selector theorem creates a useful repair map, not an endpoint promotion:
 
-- **3 rows** become concrete `s=0_candidate` repair targets.
+- **3 rows** become concrete `s=0` stable-location support targets.
 - **4 rows** remain dial-open (`stable_dial_open` plus the quark open gate).
 - **6 rows** are not prior-selector closures after the Record type firewall.
 
@@ -63,10 +63,10 @@ So the selector theorem creates a useful repair map, not an endpoint promotion:
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | `stable_dial_open` | dial | Find a first-order/action or dynamics bridge; static `J_cs` is measure-neutral. |
 | `flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31` | `observable_identification_bridge` | none | Close the intensive-summand-as-observable promotion / generation-space bridge. |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | `stable_dial_open` | dial | Derive the remaining reality/statistics or cross-factor bit; positivity alone is agnostic. |
-| `flavor_missing_axiom_carrier_measure_note_2026-05-30` | `post_record_channel_count_scoring` | `s=0_candidate` | Derive generator-channel HS measure and channel-count scoring, or keep conditional. |
+| `flavor_missing_axiom_carrier_measure_note_2026-05-30` | `equal_letter_stable_location` | `s=0_stable_location` | State generator-channel HS measure as stable-location support only; do not claim physical dial selection. |
 | `flavor_trace_vs_center_dissolves_note_2026-05-30` | `stable_dial_open` | dial | Separate readout-class support from the still-free Fourier modulus. |
-| `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | `post_record_channel_count_scoring` | `s=0_candidate` | Supply a canonical equal-weight log-functional / channel-count scoring theorem. |
-| `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | `post_record_channel_count_scoring` | `s=0_candidate` | Accept or derive candidate carrier input plus channel-count scoring on the cyclic-vector split. |
+| `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | `equal_letter_stable_location` | `s=0_stable_location` | Use the equal-weight log-functional as stable-location evidence only; do not promote it to physical dial selection. |
+| `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | `equal_letter_stable_location` | `s=0_stable_location` | Keep the carrier/channel-count reading as stable-location support; do not treat the candidate carrier as physical dial selection. |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | `measurement_update_not_prior` | none | Derive or admit standard sequential-effect composition for record conditioning. |
 | `observable_principle_from_axiom_note` | `record_scalar_generator_not_prior` | none | Derive P2 continuous phase-blind scalar-generator selection. |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | `sector_specific_dial_open_gate` | dial | Derive sector-specific mass scheme/scale and quark-sector dial parameters; do not transfer charged-lepton BAE. |
@@ -75,19 +75,19 @@ So the selector theorem creates a useful repair map, not an endpoint promotion:
 
 The sidecar turns a broad "selector remains" warning into concrete next actions.
 
-### 1. The `s=0_candidate` rows are now targetable
+### 1. The `s=0` stable-location rows are now targetable
 
-The three `post_record_channel_count_scoring` rows can be repaired by a narrow
-theorem of the form:
+The three `equal_letter_stable_location` rows can be supported by a narrow
+statement of the form:
 
 ```text
 Given post-record atom/channel symmetry on the two record channels,
-the equal-channel prior is the stable target, hence s=0.
+the equal-channel prior is a stable target at s=0.
 ```
 
-That would still be conditional unless the post-record atom/channel symmetry is
-itself derived or accepted. This is the useful path toward the equal-letter
-endpoint without forcing it.
+That does not select the physical dial position. It only certifies that the
+equal-letter point is a coherent stable location when the post-record
+atom/channel surface is the one being studied.
 
 ### 2. The dial-open rows are safer
 
@@ -138,7 +138,7 @@ The runner verifies:
 - all 13 exist in the audit ledger and are currently `audited_conditional`;
 - each note path exists and contains a source-text anchor for its sidecar row;
 - class counts match the expected repair buckets;
-- all `s=0_candidate` rows require channel/atom scoring repair;
+- all `s=0_stable_location` rows are explicitly non-selecting;
 - all dial rows remain open-dial rows;
 - no audit verdict vocabulary is used as a sidecar class.
 

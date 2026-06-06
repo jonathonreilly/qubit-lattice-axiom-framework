@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 192 |
-| **retained_no_go** | 203 |
+| **retained_no_go** | 204 |
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1314 |
+| unaudited | 1313 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1087 |
+| `audited_clean` | 1088 |
 | `audited_conditional` | 63 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 51 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1621 |
+| `unaudited` | 1620 |
 
 | claim_type | count |
 |---|---:|
@@ -906,6 +906,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_admitted_sample_target_vector_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_clock_rate_interface_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13579,6 +13580,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Supplied finite carrier of paths, characters, or channels plus supplied nonnegative local weights with positive totals and exact normalization gives a normalized finite path/channel/character weight packet.  _(class `A`)_
 - **chain closes:** False — The finite arithmetic checks close as standard algebra, but the source explicitly depends on supplied carriers and supplied weight rules. The restricted packet does not derive the path/channel/character weight rule or physical selector from Record.
 - **rationale:** The independent finite checks agree with the runner: 4/(4+1)=4/5, channel rows normalize rowwise, path products 2*3=6 and normalize to 6/7 against the direct path, and character coefficients 6,3,1 normalize to 3/5,3/10,1/10. Those are algebraic normalizations over supplied inputs, not a first-principles derivation of the carrier, local weight rule, selector, or physical measure. The note itself preserves that boundary and says the finite packet does not derive a directional path parameter, character packet, Wilson surface, channel rule, Born law, production kernel, or physical arrow.
+- **auditor confidence:** high
+
+### `post_record_clock_rate_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite post-record append/count histories determine event order and counts, but not a physical clock metric or transition rate; rates are exact only after an external strictly increasing clock map is supplied.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-c117e165e1-post_record_clock_rate_inter`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A finite post-record history of length n can be paired with many strictly increasing clock sequences tau_0 < ... < tau_n that preserve the same word, counts, and prefix order while changing elapsed times and rates.  _(class `A`)_
+- **chain closes:** True — The projection from a clocked record to its word/count data is many-to-one: the listed uniform, slow, and accelerating clocks leave the finite record unchanged while changing n/(tau_n - tau_0). Therefore no record-only function can determine a unique physical elapsed time or rate across the allowed embeddings.
+- **rationale:** The load-bearing step is a direct algebraic non-uniqueness argument over finite sequences and monotone clock labels, not a fitted numerical comparison or symbol renaming. The runner partly performs source-anchor text checks, but its mathematical checks and the independent projection argument both support the scoped no-go. The no-go is branch-local: supplied clocks, stochastic event-time processes, Hamiltonians, and transfer steps remain open external inputs rather than being ruled out.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

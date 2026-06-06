@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_clock_rate_interface_2026_06_06.py
+runner_sha256: bb702d32ae1c2cc2e126aade786d616f63555b883f4d32171e5c66b42117f7f3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -60,3 +68,6 @@ POST_RECORD_COUNTS_DERIVE_CLOCK_OR_RATE=FALSE
 SUPPLIED_CLOCK_GIVES_CONDITIONAL_RATES=TRUE
 HAMILTONIAN_OR_TRANSFER_SELECTED=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

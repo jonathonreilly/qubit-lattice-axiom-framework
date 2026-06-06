@@ -26,3 +26,16 @@ Findings:
 
 Disposition: branch-local no-go/support-firewall artifact is ready for review
 PR packaging.
+
+## PR Verification
+
+PR #2812:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2812
+```
+
+Verified open, base
+`physics-loop/kz-su3-beta6-convention-split-20260606`, head
+`physics-loop/kz-beta6-reproduction-contract-20260606`, mergeable
+`MERGEABLE`, merge state `UNSTABLE` with `audit_pipeline` queued.

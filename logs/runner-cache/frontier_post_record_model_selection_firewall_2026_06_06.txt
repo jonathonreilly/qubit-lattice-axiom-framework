@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_model_selection_firewall_2026_06_06.py
+runner_sha256: c66f6072a027a965d7a55c0ca0453b98a7dde75b87fac38c2039a011840bac99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -72,3 +80,6 @@ POST_RECORD_SCORE_TO_CANONICAL_SELECTION=FALSE
 SUPPLIED_SELECTION_RULE_REQUIRED=TRUE
 RECORD_DERIVES_MODEL_FAMILY=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

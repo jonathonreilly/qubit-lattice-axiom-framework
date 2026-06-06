@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 691 |
+| **retained_bounded** | 692 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1321 |
+| unaudited | 1320 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1082 |
+| `audited_clean` | 1083 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1628 |
+| `unaudited` | 1627 |
 
 | claim_type | count |
 |---|---:|
@@ -745,6 +745,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_boost_covariance_3plus1d_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11174,6 +11175,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — Within the stated scope and accepted standard lattice normalization, the Taylor expansion, parity-even no-odd-power conclusion, O_h invariance, Planck suppression estimate, and corrected normalized cubic-harmonic identity close from the provided note and runner. Experimental-bound comparisons are treated as contextual bounded-status checks rather than independently audited external facts.
 - **rationale:** The load-bearing step is not a definition or tuned numerical match: the runner implements the standard lattice dispersion, expands it, computes the Planck-scale coefficient, constructs the O_h/cubic angular structure, and verifies the corrected normalized spherical-harmonic identity. No upstream cited authority is non-retained or open, and no helper import is missing from the restricted packet. The clean verdict is limited to the bounded derivation from the cubic lattice plus standard kinetic normalization, not to an independent audit of real-world experimental bounds or the broader physical premise that nature uses this lattice.
 - **auditor confidence:** medium
+
+### `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional projective measurements on H_Lambda with nonzero displayed outcome projectors: canonical Naimark/Lueders readout gives K_r=P_r; outcome-label phases/permutations preserve this up to phase/relabeling; general label-mixing apparatus unitaries change the POVM element on nonzero sectors.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-184055-a21967e3a0-lsp_projective_canonical_kp_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the canonical isometry into Kraus extraction gives K_r = sum_s P_s <r|s> = P_r, while a twisted apparatus readout gives K_r^dag K_r = sum_s |<r|V_A|s>|^2 P_s, which differs from P_r when V_A mixes distinct nonzero outcome sectors.  _(class `A`)_
+- **chain closes:** True — The result follows by direct finite-dimensional projection algebra and orthonormal-basis contraction; the only cited framework authority is an accepted axiom premise used for the finite qubit-lattice carrier. The necessity clause follows from linear independence of mutually orthogonal nonzero projections.
+- **rationale:** The load-bearing identities are algebraic consequences of the stated projection relations, fixed apparatus preparation, and outcome-basis readout. An independent check confirms the twist formula and the failure condition for label-mixing V_A without relying on the runner implementation. The runner source computes the symbolic and numerical checks it reports, including phase/permutation sufficiency, generic mixing failure, zero-projector edge cases, and source-boundary strings, with 53 PASS / 0 FAIL. No non-accepted open dependency is imported.
+- **auditor confidence:** high
 
 ### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`
 

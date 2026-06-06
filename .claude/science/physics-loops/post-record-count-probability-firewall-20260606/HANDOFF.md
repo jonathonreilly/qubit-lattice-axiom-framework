@@ -37,4 +37,13 @@ finite realized counts + supplied statistical model
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2820
+
+Initial verification:
+
+- state: OPEN
+- base: main
+- head: physics-loop/post-record-count-probability-firewall-20260606
+- mergeable: MERGEABLE
+- mergeStateStatus: UNSTABLE
+- checks: audit_pipeline queued

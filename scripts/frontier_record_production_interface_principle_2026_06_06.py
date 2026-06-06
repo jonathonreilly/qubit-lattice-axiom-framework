@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """Verifier for the Record production interface principle.
 
-The runner checks that the current repo supports a typed split:
-pre-record quantum/predictive surface, separate formation bridge, and
-post-record information dynamics. It deliberately verifies that Record does
-not by itself supply probabilities, instruments, rates, production dynamics,
-carrier choice, or dial selection.
+The runner checks a narrow proof packet:
+
+* the source note;
+* the accepted Minimal Axioms premise;
+* finite type-set and Fraction arithmetic that separates predictive weights,
+  formation/instrument data, realized atoms, and post-record counts/readouts.
+
+It deliberately does not read the unaudited Record-stack companion notes. Those
+notes are downstream context only, not load-bearing proof dependencies for this
+row.
 """
 from __future__ import annotations
 
@@ -21,11 +26,6 @@ FAIL_COUNT = 0
 PATHS = {
     "gate_note": ROOT / "docs" / "RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md",
     "minimal_axioms": ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md",
-    "classicalization": ROOT / "docs" / "RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md",
-    "post_record_dynamics": ROOT / "docs" / "RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md",
-    "formation_constraint": ROOT / "docs" / "RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
-    "kraus_isometry": ROOT / "docs" / "PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
-    "layer_reconciliation": ROOT / "docs" / "RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md",
 }
 
 
@@ -59,15 +59,10 @@ def main() -> None:
 
     gate = read_text("gate_note")
     minimal = read_text("minimal_axioms")
-    classicalization = read_text("classicalization")
-    post_record = read_text("post_record_dynamics")
-    formation = read_text("formation_constraint")
-    kraus = read_text("kraus_isometry")
-    reconciliation = read_text("layer_reconciliation")
 
     check(
-        "gate status is exact support but not axiom or closure",
-        has(gate, "exact-support branch-local typing/interface principle")
+        "gate status is bounded support but not axiom or closure",
+        has(gate, "bounded-support branch-local typing/interface principle")
         and has(gate, "not a new\naxiom")
         and has(gate, "not a record-production closure"),
     )
@@ -79,9 +74,14 @@ def main() -> None:
         and has(gate, "post-record word/count/readout dynamics"),
     )
     check(
-        "gate says the principle is not an added axiom",
-        has(gate, "derived from the current axiom boundary")
-        and has(gate, "not an additional axiom"),
+        "gate cites Minimal Axioms as accepted axiom premise",
+        has(gate, "Accepted axiom premise, load-bearing")
+        and has(gate, "MINIMAL_AXIOMS_2026-06-05.md"),
+    )
+    check(
+        "gate says companion Record-stack notes are context only",
+        has(gate, "Context only, not load-bearing")
+        and has(gate, "no longer reads them as proof dependencies"),
     )
     check(
         "gate keeps probability on predictive, ensemble, or bridge surfaces",
@@ -118,127 +118,6 @@ def main() -> None:
         "minimal axioms keep record-production dynamics outside axioms",
         has(minimal, "arrow, measurement, decoherence, record-production dynamics")
         and has(minimal, "remain outside axiom content"),
-    )
-
-    check(
-        "classicalization note names pre-record predictive weights",
-        has(classicalization, "pre-record carrier")
-        and has(classicalization, "predictive\nweights once an instrument/readout context is supplied"),
-    )
-    check(
-        "classicalization note names post-record realized value",
-        has(classicalization, "post-record object supplied by Record is the")
-        and has(classicalization, "realized `K`/CPT orbit"),
-    )
-    check(
-        "classicalization note forbids probability as individual record",
-        has(classicalization, "rather than a probability distribution")
-        and has(classicalization, "not the same kind of object\nas the realized record atom"),
-    )
-    check(
-        "classicalization note says post-record information is not fourth axiom",
-        has(classicalization, "not a fourth \"post-record information\" axiom"),
-    )
-    check(
-        "classicalization note has dynamics benefit",
-        has(classicalization, "Quantum dynamics, record formation, and post-record")
-        and has(classicalization, "information flow no longer compete"),
-    )
-    check(
-        "classicalization note runner result is present",
-        has(classicalization, "PASS=29 FAIL=0")
-        or has(classicalization, "frontier_record_classicalization_dynamics_firewall_2026_06_05"),
-    )
-
-    check(
-        "post-record dynamics note has finite alphabet premise",
-        has(post_record, "Once a readout context supplies a finite record alphabet `O`"),
-    )
-    check(
-        "post-record dynamics note gives append/count layer",
-        has(post_record, "post-record append action on O*")
-        and has(post_record, "post-record information dynamics on `O*` / `N^O`"),
-    )
-    check(
-        "post-record dynamics note excludes production probabilities and rates",
-        has(post_record, "record-production dynamics")
-        and has(post_record, "probabilities or Born frequencies")
-        and has(post_record, "transition rates"),
-    )
-    check(
-        "post-record dynamics note is exact support not probability closure",
-        has(post_record, "exact support")
-        and has(post_record, "not a\nphysical dynamics closure")
-        and has(post_record, "Does not derive probabilities"),
-    )
-
-    check(
-        "formation note attacks record-production dynamics gate",
-        has(formation, "forms a record")
-        and has(formation, "Lattice, Quantum, and Record axioms")
-        and has(formation, "do not by\nthemselves assert"),
-    )
-    check(
-        "formation note supplies non-demolition constraint",
-        has(formation, "pointer-non-demolition")
-        and has(formation, "[H_int, Pi_S] = 0"),
-    )
-    check(
-        "formation note records necessity and sufficiency",
-        has(formation, "equivalent to\n   pointer-non-demolition")
-        or has(formation, "all** times **iff** `[H_int, Pi_S] = 0"),
-    )
-    check(
-        "formation note does not derive dynamics or couplings",
-        has(formation, "It does not derive a dynamics")
-        and has(formation, "does not pin the coupling strength"),
-    )
-    check(
-        "formation note is bounded model bridge not axiom content",
-        has(formation, "This is **bounded**")
-        and has(formation, "supplied bounded model input"),
-    )
-
-    check(
-        "Kraus note assumes W rather than deriving it",
-        has(kraus, "once a normalized linear isometry `W` is\nassumed")
-        and has(kraus, "does not derive `W`"),
-    )
-    check(
-        "Kraus note gives exact finite instrument algebra once W is supplied",
-        has(kraus, "finite Kraus/CPTP algebra closes")
-        and has(kraus, "CPTP unconditional update"),
-    )
-    check(
-        "Kraus note excludes persistent-record dynamics",
-        has(kraus, "deriving `W` from persistent-record dynamics")
-        and has(kraus, "persistent-record-to-isometry bridge remains open"),
-    )
-    check(
-        "Kraus note supplies formation bridge target",
-        has(kraus, "any future persistent-record bridge must")
-        and has(kraus, "supply if it wants a Kraus/CPTP measurement-update structure"),
-    )
-
-    check(
-        "layer reconciliation names exact post-record layer",
-        has(reconciliation, "post-record information dynamics")
-        and has(reconciliation, "exact support"),
-    )
-    check(
-        "layer reconciliation separates formation from post-record information",
-        has(reconciliation, "record formation bridge, bounded")
-        and has(reconciliation, "post-record information dynamics, exact"),
-    )
-    check(
-        "layer reconciliation forbids production outputs from post-record layer",
-        has(reconciliation, "exact post-record dynamics has no edge to production")
-        or has(reconciliation, "forbids production/probability/rate/dial outputs"),
-    )
-    check(
-        "layer reconciliation preserves bounded composition status",
-        has(reconciliation, "bounded formation/preservation claims require their bridge premises")
-        and has(reconciliation, "remains bounded-support"),
     )
 
     pre_record_outputs = {
@@ -301,7 +180,7 @@ def main() -> None:
     print("  pre_record: predictive quantum state/effect surface")
     print("  formation:  separate record-writing bridge or instrument")
     print("  post_record: realized atom -> words/counts/readouts")
-    print("STATUS: exact-support typing/interface principle; audit_required_before_effective_retained=true")
+    print("STATUS: bounded-support typing/interface principle; audit_required_before_effective_retained=true")
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     if FAIL_COUNT:
         raise SystemExit(1)

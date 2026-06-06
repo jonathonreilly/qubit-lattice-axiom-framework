@@ -1,0 +1,23 @@
+loop: record-production-interface-axiom-scope-repair-20260606
+created: 2026-06-06
+branch: physics-loop/record-production-interface-axiom-scope-repair-20260606
+base: origin/main
+target_claim_id: record_production_interface_principle_2026-06-06
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: "remove unaudited Record-stack source-note dependencies from the proof packet"
+files_touched:
+  - docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md
+  - scripts/frontier_record_production_interface_principle_2026_06_06.py
+  - logs/runner-cache/frontier_record_production_interface_principle_2026_06_06.txt
+open_imports:
+  - "record-production bridge/instrument remains outside Record axiom"
+  - "Born probabilities remain outside Record axiom"
+  - "context Record-stack notes are downstream consumers, not dependencies for this row"
+verification:
+  direct_runner: "python3 scripts/frontier_record_production_interface_principle_2026_06_06.py -> SUMMARY: PASS=28 FAIL=0"
+  cache_refresh: "python3 scripts/cached_runner_output.py scripts/frontier_record_production_interface_principle_2026_06_06.py --refresh -> status ok"
+  precompute_check: "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_record_production_interface_principle_2026_06_06.py --check-only -> fresh"
+next_exact_action: "open review PR; independent audit can re-run with Minimal Axioms as the one accepted premise"
+stop_condition: "block closed as dependency-edge/scope repair; no audit verdict applied"

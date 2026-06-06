@@ -1,0 +1,31 @@
+loop_slug: record-finite-time-reset-semigroup-no-go-20260605
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 13
+current_goal: "Prove the finite-time bounded-generator semigroup no-go for exact reset."
+target_status: no-go
+actual_current_surface_status: no-go
+active_route: "singular exact reset channel versus invertible finite-time generator exponential"
+hard_residual: "Asymptotic, discrete, singular-limit, non-Markovian, or open-boundary physical implementation remains open."
+branch: physics-loop/record-finite-time-reset-semigroup-no-go-20260605
+base_branch: physics-loop/record-open-system-reset-channel-interface-20260605
+stacked_on_pr: 2781
+files_touched:
+  - docs/RECORD_FINITE_TIME_RESET_SEMIGROUP_NO_GO_2026-06-05.md
+  - scripts/frontier_record_finite_time_reset_semigroup_no_go_2026_06_05.py
+  - logs/runner-cache/frontier_record_finite_time_reset_semigroup_no_go_2026_06_05.txt
+  - .claude/science/physics-loops/record-finite-time-reset-semigroup-no-go-20260605/
+open_imports:
+  - "Physical reset implementation outside finite-time bounded semigroup."
+  - "Thermodynamic cost / bath model."
+  - "Clock/rate normalization for non-exact or asymptotic reset."
+  - "Low-record boundary or environment refresh."
+no_go_routes:
+  - "Exact reset channel derives finite-time bounded-generator rate."
+  - "Amplitude damping at finite gamma*t exactly blanks."
+  - "Semigroup endpoint no-go fixes a dial location."
+trace_gate_classification: negative_route_pruning
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

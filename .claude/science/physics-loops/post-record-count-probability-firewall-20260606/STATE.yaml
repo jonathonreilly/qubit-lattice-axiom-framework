@@ -1,0 +1,43 @@
+loop_slug: post-record-count-probability-firewall-20260606
+branch: physics-loop/post-record-count-probability-firewall-20260606
+base: origin/main
+campaign: dynamics lanes
+cycle_status: verified_pending_pr
+target_status: no-go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: post-record counts cannot derive probability laws
+hard_residual: "Separate exact post-record count/history dynamics from probability, Born, rate, and source/instrument gates."
+files_touched:
+  - docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md
+  - scripts/frontier_post_record_count_probability_firewall_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_count_probability_firewall_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-count-probability-firewall-20260606/
+open_imports:
+  - pre-record probability law
+  - Born/effect probability functional
+  - instrument or record-production bridge
+  - repeated-trial/statistical model for frequency estimation
+  - time/rate bridge
+no_go_routes:
+  - "post-record counts alone derive a unique next-atom probability law"
+  - "post-record counts alone derive Born weights"
+  - "post-record counts alone select a rate, source action, or generation/Koide dial"
+trace_gate:
+  trace_class: negative_route_pruning
+  target_claim_id: null
+  target_blocker_text: "Rows needing probability laws, Born weights, rates, stochastic kernels, typicality, or source/action dynamics must name a separate pre-record/instrument/probability bridge."
+  source_of_blocker_text: handoff
+  reachability_to_target: prunes
+  artifact_role: no_go
+review_findings: "Local review pass narrowed an overstrong no-function phrase to no canonical framework-derived selector; no remaining overclaim, probability-selection, or dial-selection issue found."
+pr_status:
+  url: null
+  number: null
+  mergeable: null
+  checks: null
+next_exact_action: "Commit, push, open PR, patch PR status."
+stop_condition: "Block closes when PR is open and verified or PR backlog records exact failure."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

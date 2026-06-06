@@ -37,8 +37,7 @@ because it builds directly on the persistent-record production row map.
 
 ## Next exact action
 
-Poll PR #2843 until `audit_pipeline` completes, then record the final clean PR
-state if the check succeeds.
+Continue campaign to the next ranked dynamics/record lane while runtime remains.
 
 ## PR
 
@@ -49,4 +48,8 @@ initial_head: "300b7bd660ad10b3a3d90d6c070e798f401a0733"
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline IN_PROGRESS"
+final_head: "ae3b1e6ec835739338e72bbb98a9797fc1e2bca5"
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "no status check rollup reported"
 ```

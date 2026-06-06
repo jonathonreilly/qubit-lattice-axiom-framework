@@ -30,17 +30,16 @@ no_go_routes:
   - "closeout index promotes rows"
   - "closeout index selects generation/Koide dial"
 review_findings: "local review clean: runner PASS=46 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
-pr_status: pending
-pr_url: null
-pr_number: null
-cycle_status: local_review_clean
-mergeable: null
-merge_state_status: null
-checks: null
+pr_status: open
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2868"
+pr_number: 2868
+cycle_status: pr_open_initial_unstable
+mergeable: MERGEABLE
+merge_state_status: UNSTABLE
+checks: "audit_pipeline in progress at initial verification"
 next_exact_action: |
-  Commit, push, open a stacked PR against
-  physics-loop/post-record-dynamics-authority-stack-map-20260606, then record
-  PR status.
+  Commit and push this PR-status checkpoint, then poll PR #2868 until the
+  latest head is CLEAN with audit_pipeline success or no remaining check rollup.
 stop_condition: |
   Not stopped. Campaign closes after PR verification if runtime is exhausted.
 status_fields:

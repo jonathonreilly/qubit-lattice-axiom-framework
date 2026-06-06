@@ -1,3 +1,9 @@
 # PR Backlog
 
-No PR backlog yet.
+No PR backlog.
+
+Opened PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2868
+```

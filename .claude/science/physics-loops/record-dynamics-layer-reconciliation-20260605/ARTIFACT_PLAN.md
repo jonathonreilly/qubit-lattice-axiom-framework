@@ -10,5 +10,5 @@
 
 - Run reconciliation runner, `py_compile`, and `git diff --check`.
 - Commit on `physics-loop/record-dynamics-layer-reconciliation-20260605`.
-- Push and open a stacked PR against
+- Opened stacked PR #2739 against
   `physics-loop/record-history-count-audit-unlock-20260605`.

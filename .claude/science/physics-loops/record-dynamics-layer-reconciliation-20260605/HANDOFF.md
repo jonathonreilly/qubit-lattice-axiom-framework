@@ -12,6 +12,8 @@ Files:
 
 Runner result: `PASS=28 FAIL=0`.
 
+Stacked PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2739
+
 ## Main finding
 
 Exact post-record information dynamics consumes realized atoms. Bounded
@@ -28,4 +30,5 @@ closing physical dynamics.
 
 ## Next exact action
 
-Commit, push, and open the stacked PR, then continue the campaign queue.
+Continue the campaign with color SU(3) record bridge residual unless queue
+refresh ranks chirality higher.

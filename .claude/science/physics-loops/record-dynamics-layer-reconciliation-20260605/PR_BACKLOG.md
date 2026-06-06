@@ -1,7 +1,11 @@
 # PR Backlog
 
-PR creation pending for:
+No PR backlog.
 
-- branch: `physics-loop/record-dynamics-layer-reconciliation-20260605`
-- base: `physics-loop/record-history-count-audit-unlock-20260605`
-- intended title: `[physics-loop] record dynamics layer reconciliation bounded-support`
+Opened stacked PR:
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2739
+
+Base:
+
+- `physics-loop/record-history-count-audit-unlock-20260605`

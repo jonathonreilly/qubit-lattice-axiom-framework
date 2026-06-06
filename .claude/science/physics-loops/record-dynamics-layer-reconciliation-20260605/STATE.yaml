@@ -26,6 +26,6 @@ trace_gate_classification: upstream_support
 trace_reachability: supports
 claim_status: bounded-support
 review_findings: "local review pass; runner PASS=28 FAIL=0; ambiguous history-retention wording narrowed to recorded-history wording"
-pr_status: pending
-next_exact_action: "Run reconciliation runner/checks, local review, commit, push, open stacked PR, then continue campaign queue."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2739"
+next_exact_action: "Continue campaign with color SU(3) record bridge residual unless queue refresh ranks chirality higher."
 stop_condition: "Do not stop campaign after this block while runtime remains."

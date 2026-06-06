@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 197 |
-| **retained_no_go** | 210 |
+| **retained_no_go** | 211 |
 | **retained_bounded** | 702 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1277 |
+| unaudited | 1276 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1107 |
+| `audited_clean` | 1108 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1584 |
+| `unaudited` | 1583 |
 
 | claim_type | count |
 |---|---:|
@@ -956,6 +956,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14585,6 +14586,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Two exact two-record joint laws have the same one-step marginals p=(2/3,1/3) but different count/frequency distributions.  _(class `A`)_
 - **chain closes:** True — The packet gives an explicit finite-probability counterexample: the IID and locked couplings share both one-step marginals but yield different N_0 distributions and variances. Therefore the claimed shortcut from one-shot probabilities to IID frequencies is invalid without an added sequence law.
 - **rationale:** The load-bearing step is an elementary algebraic counterexample, not a definition substitution or tuned numerical match. Independent recomputation confirms the displayed marginals, count laws, expectations, and variances. The clean no-go is narrow: it blocks only deriving IID/frequency/typicality from the one-step vector alone, while leaving supplied sequence-law routes open.
+- **auditor confidence:** high
+
+### `record_markov_generator_embeddability_boundary_2026-06-06`
+
+- **Note:** [`RECORD_MARKOV_GENERATOR_EMBEDDABILITY_BOUNDARY_2026-06-06.md`](../../docs/RECORD_MARKOV_GENERATOR_EMBEDDABILITY_BOUNDARY_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Exact finite-dimensional finite-time embeddability boundary for the displayed column-stochastic kernels: swap and reset are valid discrete kernels but not exp(Q t) for a finite real Markov generator, while the lazy two-state kernel is embeddable only after rate-clock data are supplied.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-9e24ba7e93-record_markov_generator_embe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** No finite real generator can satisfy P_swap = exp(Q t) at finite t because det(exp(Q t)) = exp(t tr(Q)) > 0, and singular reset is likewise excluded because finite matrix exponentials are invertible.  _(class `A`)_
+- **chain closes:** True — The displayed matrices close by standard finite-matrix algebra: P_lazy has the supplied two-state generator, P_swap has determinant -1, P_reset has determinant 0, and every finite real matrix exponential has positive determinant and is invertible. No cited authority or external physical input is needed for this narrowed claim.
+- **rationale:** The load-bearing step is a genuine algebraic closure, not a definition, renaming, or numerical match. Independent formula inventory agrees with the packet: the stochasticity, determinants, generator signs, exponential formula for the lazy kernel, and rate-time rescaling all check exactly. The no-go is clean only at the stated scope: finite real bounded generator, finite clock time, exact same finite transition matrix. No-go stress testing leaves alternative routes such as limiting resets, dilations, projections, approximate embeddings, or broader dynamics outside this audited claim rather than contradictions to it.
 - **auditor confidence:** high
 
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`

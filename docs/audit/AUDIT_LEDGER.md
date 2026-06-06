@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 187 |
 | **retained_no_go** | 197 |
 | **retained_bounded** | 680 |
-| _retained_pending_chain_ | 9 |
+| _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1358 |
+| unaudited | 1357 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1059 |
+| `audited_clean` | 1060 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1664 |
+| `unaudited` | 1663 |
 
 | claim_type | count |
 |---|---:|
@@ -85,7 +85,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 726 |
 | `leaf` | 1259 |
 
-- **Retained pending chain closure:** 9
+- **Retained pending chain closure:** 10
 - **Citation cycles detected:** 6
 
 ### Runner classification (static heuristic)
@@ -653,6 +653,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_reality_type_permitted_not_forced_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_record_sign_agnostic_eta_refuted_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -9607,6 +9608,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the unit-normalized Z_3 Fourier transform, Plancherel gives sum |c_k|^2 = sum v_i^2 and |c_0|^2 = (sum v_i)^2/3, so Q(v)=2/3 is equivalent to |c_0|^2 = |c_1|^2 + |c_2|^2.  _(class `A`)_
 - **chain closes:** True — The equivalence follows directly from the unitary DFT/Plancherel identity and the trivial-character norm formula. The note explicitly limits itself to a change of basis and excludes any physical Koide closure or operator-level derivation.
 - **rationale:** The theorem is a self-contained algebraic equivalence over a positive real 3-vector. The live runner verifies Plancherel, the c_0 norm, proportionality of the Koide and NSC residuals, the Foot angle form, and symbolic sufficiency examples with PASS=8 and FAIL=0. Residual risk is downstream scope drift: this audit does not derive Q=2/3 from Cl(3)/Z^3, construct a lepton mass operator, or prove NSC for physics.
+- **auditor confidence:** high
+
+### `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`
+
+- **Note:** [`KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Within the Hermitian C3-circulant family H=aI+bC+bbar C^2, r=1/2 is an equal singlet/doublet norm-balance condition and is not forced by the listed unitary C3/S3 symmetry routes while preserving three distinct masses.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:koide_bae_30_probe_campaign_note_2026-05-09`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-1e258db918-koide_r_half_not_symmetry_pr`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** C3 leaves r free, S3 axis-permutation symmetry forces eigenvalue multiplicities {1,2}, there is no intermediate C3 < G < S3 subgroup, and the 1D singlet and 2D doublet cannot be swapped by a unitary isomorphism.  _(class `A`)_
+- **chain closes:** True — Fourier diagonalization gives Q=(3a^2+6|b|^2)/(3a)^2=(1+2r)/3, and the Frobenius channel split is E+=3a^2 and E_perp=6|b|^2. The S3-invariant form alpha I+beta(J-I) has a twofold eigenvalue degeneracy; Lagrange's theorem gives no strict subgroup between C3 and S3; and dimensions 1 and 2 block a unitary singlet/doublet swap.
+- **rationale:** The load-bearing math is finite matrix and group algebra, with no external comparator, fitted input, or definitional renaming. The no-go is narrow: it closes only the listed unitary C3/S3 symmetry-protection routes and explicitly leaves dynamical, variational, nonunitary, and extra-structure routes open. The BAE campaign citation is contextual rather than load-bearing on this audited scope.
 - **auditor confidence:** high
 
 ### `koide_readout_channel_map_note_2026-05-31`

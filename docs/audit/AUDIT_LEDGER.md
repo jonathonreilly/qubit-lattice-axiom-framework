@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 196 |
+| **retained** | 197 |
 | **retained_no_go** | 209 |
 | **retained_bounded** | 702 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1279 |
+| unaudited | 1278 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1105 |
+| `audited_clean` | 1106 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1586 |
+| `unaudited` | 1585 |
 
 | claim_type | count |
 |---|---:|
@@ -953,6 +953,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
@@ -14544,6 +14545,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For A = C^O with pointwise multiplication, unital algebra automorphisms are exactly pullbacks by bijections of O, and all derivations of A vanish.  _(class `A`)_
 - **chain closes:** True — The finite-algebra claims follow directly from the atom idempotent basis of C^O and the Leibniz rule; the append/count and two-state Markov examples are standard algebraic checks. No external authority or open bridge is needed for the stated finite boundary.
 - **rationale:** The source note's load-bearing step is a genuine algebraic closure over the supplied finite alphabet, not a renaming or numerical fit. Independent checking confirms that C^O automorphisms are permutations, derivations vanish by idempotent-component constraints, nonzero count translations on N^O are not surjective, and different supplied two-state generators have different stationary vectors. The runner source performs these finite checks rather than merely printing constants, and it imports no opaque helper or external calibrated input.
+- **auditor confidence:** high
+
+### `record_clock_rate_normalization_gate_2026-06-06`
+
+- **Note:** [`RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md`](../../docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** A finite three-atom Markov-generator interface theorem: supplied reversible generators can stabilize the sampled dial distributions, while Record counts, dial selection, and physical clock/rate normalization remain separate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-200422-b8df42918b-record_clock_rate_normalizat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each sampled dial distribution pi(s)=(1,s,s^2)/(1+s+s^2) at s=1,2,3, the supplied complete-graph reversible generator Q(s) satisfies Q(s) pi(s)=0 with one zero eigenmode and negative transverse modes.  _(class `A`)_
+- **chain closes:** True — The displayed generator construction algebraically gives nonnegative off-diagonal rates, zero column sums, stationarity of pi, and stable transverse modes for the three sampled dial values. Rate scaling and the two-state semigroup example also close as dimensionless algebraic checks.
+- **rationale:** The claim is explicitly scoped to supplied generators and sampled dial locations, not to a derived physical generator or Record-selected dial value. Independently, Q pi=0 follows because each column j has off-diagonal entries 1/pi_j and diagonal minus their sum, and the reversible symmetric form has one stationary mode with negative transverse modes. The count/probability separation and clock/rate quotient checks are ordinary finite algebra, with no external comparator or tuned numerical input.
 - **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`

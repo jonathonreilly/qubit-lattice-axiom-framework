@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py
+runner_sha256: c0ac61ca9f5bec2787d128f9620b3a0cabc65364f42d039190c96e2319ca147f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
 Record clock/rate normalization stable-dial gate
 actual_current_surface_status: exact-support
 trace_class: direct_blocker_closure
@@ -45,3 +53,6 @@ D. claim firewalls
 
 SCORECARD: PASS=30 FAIL=0
 VERDICT: exact support for the record clock/rate normalization gate. A supplied generator can stabilize a dial location, but Record alone does not select that location and absolute physical rates still require clock/rate normalization.
+
+----- stderr -----
+

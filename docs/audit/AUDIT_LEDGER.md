@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 704 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1263 |
+| unaudited | 1262 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 73 |
+| ~~audited_conditional~~ | 74 |
 | ~~audited_failed~~ | 17 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1114 |
-| `audited_conditional` | 73 |
+| `audited_conditional` | 74 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 61 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1570 |
+| `unaudited` | 1569 |
 
 | claim_type | count |
 |---|---:|
@@ -1313,6 +1313,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_backreaction_live_capture_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -16212,6 +16213,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `STAGGERED_BACKREACTION_NOTE.md`
   - `STAGGERED_LAYERED_BACKREACTION_NOTE.md`
+- **auditor confidence:** high
+
+### `staggered_backreaction_live_capture_packet_note_2026-05-29`
+
+- **Note:** [`STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md`](../../docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A finite bounded comparison on the supplied staggered capture-closure runner for two cycle-bearing graphs and one layered holdout, limited to the reported gap, score, linearity, additivity, norm, zero-source, and TOWARD guardrails.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-204013-d5a25428c7-staggered_backreaction_live_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current live capture-closure runner computes two 9/9 cycle battery scores, a cycle gap improvement from 9.828e-01 to 4.734e-01, and a layered holdout gap improvement from 9.191e-01 to 4.559e-01 while preserving the stated guardrails.  _(class `C`)_
+- **chain closes:** False — The primary runner and most helpers show genuine numerical construction of graph Laplacians, Poisson solves, Hamiltonians, Crank-Nicolson evolution, and derived force/gap metrics rather than hard-coded pass strings. However, the transitive helper scripts/frontier_staggered_backreaction_prototype.py is explicitly truncated in the restricted packet, so the full import chain cannot be independently verified.
+- **rationale:** The displayed arithmetic is internally consistent: the reported mean R2, cycle improvement, and holdout improvement follow from the shown per-row numbers, and the supplied primary runner computes those quantities from helper results. The helper chain contains real computation and does not merely print constants on the visible path. The restricted packet nevertheless fails the stated source-exposure requirement because one transitive helper is not fully included, preventing verification of the complete load-bearing import chain.
 - **auditor confidence:** high
 
 ### `staggered_backreaction_live_green_packet_note_2026-05-29`

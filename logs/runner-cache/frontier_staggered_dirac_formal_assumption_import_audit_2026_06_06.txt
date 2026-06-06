@@ -1,0 +1,52 @@
+======================================================================================
+FORMAL assumption-and-import audit of the staggered-Dirac realization gate
+(the repo's 'exercise': import ledger + scored counterfactual pass + synthesis)
+======================================================================================
+
+[BLOCK 1] Import ledger: every load-bearing item classified
+  [PASS] all ledger items use a valid narrowest-honest class
+  [PASS] NO load-bearing item is an 'unsupported import' or 'fitted input'  --  all load-bearing items are structural/derived/admitted-with-narrow-role
+      - staggered carrier (1 Grassmann/site)       | zero-input structural  | load-bearing=True | FORCED by {Quantum dim2, Locality} (#2956)
+      - fermionic (Grassmann) statistics           | framework-derived      | load-bearing=True | substep-1 per-site dim matching (retained_bounded)
+      - Kahler-Dirac operator equivalence          | framework-derived      | load-bearing=True | substep-2 (retained_bounded; Becher-Joos comparator)
+      - BZ-corner / species reduction              | framework-derived      | load-bearing=True | substep-3 (retained)
+      - AC_lambda simultaneous diagonalization     | framework-derived      | load-bearing=True | substep-4 (retained)
+      - species-LABEL identification (e/mu/tau)    | admitted normalization | load-bearing=True | = AC_phi_lambda; recordable lens #2910/#2917/#2923
+      - single-link nearest-neighbour hopping      | zero-input structural  | load-bearing=True | Locality axiom
+      - continuum Dirac limit                      | support-only           | load-bearing=False | DEMOTE: not supplied/needed (permanent lattice axiom)
+
+[BLOCK 2] Counterfactual: the carrier alternatives are all infeasible (forced)
+  [PASS] staggered 1-Grassmann/site: Fock dim 2 = qubit dim, local -> the ONLY match
+  [PASS] bosonic alternative: Fock dim infinity != 2 -> infeasible
+  [PASS] Wilson/naive: Fock dim 2^4 = 16 != 2 (four qubits/site) -> infeasible
+  [PASS] overlap/domain-wall: nonlocal -> infeasible (Locality)
+  [PASS] => 6 carrier/realization counterfactuals are infeasible => staggered carrier FORCED  --  forced finding: the framework choice is fixed, not chosen
+
+[BLOCK 3] Counterfactual: the continuum-Dirac limit DEMOTES
+  [PASS] Locality axiom does NOT supply a continuum/IR limit (MINIMAL_AXIOMS_2026-06-05)
+  [PASS] => the permanent lattice is the physical substrate; continuum recovery is an emergent consistency check, NOT a required closure  --  outcome: DEMOTE the residual
+  [PASS] continuum-limit counterfactual scores `live`+`demote` (dissolves the residual)
+
+[BLOCK 4] Substeps retained + species-label addressed
+  [PASS] all four gate substeps are retained / retained_bounded (live ledger)  --  substep-1 Grassmann forcing=retained_bounded, substep-2 Kahler-Dirac equiv=retained_bounded, substep-3 BZ-corner/species=retained, substep-4 AC_lambda diagonalization=retained
+  [PASS] species-LABEL residual = AC_phi_lambda is recordable-lens-addressed (#2910/#2917/#2923)
+
+[BLOCK 5] Synthesis: live routes vs forced/demoted
+  [PASS] counterfactual pass: 6 infeasible (carrier forced) + 2 live (1 derive-from-retained, 1 demote)  --  no new-axiom route is needed or possible
+  [PASS] NO counterfactual requires a new axiom (forbidden outcome) -> none invented
+  [PASS] => the gate's framework choices are FORCED; residuals are addressed (species-label) or demoted (continuum); the gate is essentially closed
+
+[counterfactual table]
+  assumption | alternative | feasibility | score | allowed-outcome
+    - matter is fermionic (Grassmann)    | per-site boson (CCR)       | infeasible | 0 | forced finding
+    - one Grassmann per site (staggered) | Wilson 4-component spinor  | infeasible | 0 | forced finding
+    - one Grassmann per site (staggered) | naive 4-comp (+doublers)   | infeasible | 0 | forced finding
+    - realization is local (single link) | overlap / domain-wall      | infeasible | 0 | forced finding
+    - matter lives ON the qubit (occupat | matter as extra dof beyond | infeasible | 0 | forced finding
+    - tastes are the qubit (no extra ind | separate flavor index on t | infeasible | 0 | forced finding
+    - operator is (Kahler-)Dirac, first- | second-order / scalar carr | live       | 1 | derive from retained (substep-2)
+    - continuum Dirac limit is a require | permanent physical lattice | live       | 2 | demote
+
+======================================================================================
+SCORECARD:  PASS = 15   FAIL = 0
+======================================================================================

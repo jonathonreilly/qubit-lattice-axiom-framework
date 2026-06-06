@@ -1,0 +1,34 @@
+loop_slug: record-finite-alphabet-dynamics-20260605
+campaign: "12h physics-loop campaign down framework lanes"
+campaign_started_utc: "2026-06-06T01:39:56Z"
+campaign_deadline_utc: "2026-06-06T13:39:56Z"
+current_goal: "Finite-alphabet post-record dynamics grammar."
+target_status: exact-support
+cycle_count: 1
+active_route: "append action on O* plus count translations on N^O plus alphabet coarse-graining"
+hard_residual: "record-production dynamics, rates, probabilities, physical persistence, gauge/local carrier dynamics, and dial selection remain outside scope"
+branch: physics-loop/record-finite-alphabet-dynamics-20260605
+base_branch: physics-loop/record-history-monoid-unbounded-retention-20260605
+branch_local_lock: /private/tmp/physics-loop-campaign-down-lanes-20260605-run/LOCK
+repo_lock_status: "repo lock unavailable in parent preflight: Permission denied on /Users/jonreilly; using branch-local supervisor lock"
+files_touched:
+  - docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md
+  - scripts/frontier_record_finite_alphabet_post_record_dynamics_2026_06_05.py
+  - logs/runner-cache/frontier_record_finite_alphabet_post_record_dynamics_2026_06_05.txt
+  - .claude/science/physics-loops/record-finite-alphabet-dynamics-20260605/
+open_imports:
+  - "Requires a supplied finite record alphabet/readout context."
+  - "Does not derive which atom is produced next."
+  - "Does not derive probabilities, transition rates, or a time metric."
+  - "Does not derive record-production or physical preservation dynamics."
+no_go_routes:
+  - "Do not classify fixed-atom append as a monoid endomorphism."
+  - "Do not treat ensemble expectation c+p as the realized post-record update c+e_o."
+  - "Do not claim arbitrary scalar readout survives coarse-graining without fiber compatibility."
+trace_gate_classification: upstream_support
+trace_reachability: supports
+claim_status: exact-support
+review_findings: "local review pass; wording scan found only explicit boundary/status uses; runner PASS=28 FAIL=0"
+pr_status: pending
+next_exact_action: "Run runner/checks, local review, commit, push, open stacked PR, then continue campaign queue."
+stop_condition: "Do not stop campaign after this block while runtime remains."

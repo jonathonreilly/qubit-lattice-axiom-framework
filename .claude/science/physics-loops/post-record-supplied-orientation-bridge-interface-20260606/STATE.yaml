@@ -1,0 +1,66 @@
+loop_slug: post-record-supplied-orientation-bridge-interface-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 17
+date: 2026-06-06
+branch: physics-loop/post-record-supplied-orientation-bridge-interface-20260606
+base: physics-loop/post-record-arrow-orientation-firewall-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2838"
+goal: |
+  Define the exact finite interface that lets a row use a supplied orientation,
+  law, clock, and kernel bridge for directed post-record certificates.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: supplied orientation bridge interface
+hard_residual_attacked: |
+  The previous no-go pruned count-only arrow derivations. This block supplies
+  the positive law-scoped interface available when a row explicitly supplies an
+  orientation bridge.
+files_touched:
+  - docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md
+  - scripts/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-supplied-orientation-bridge-interface-20260606/*
+runner_summary: "SUMMARY: PASS=37 FAIL=0"
+interface_results:
+  supplied_orientation_bridge_interface: true
+  directed_certificate_requires_supplied_orientation: true
+  orientation_derived_from_record: false
+  physical_arrow_derived_from_record: false
+  production_kernel_selected: false
+  clock_or_rate_derived: false
+open_imports:
+  - "supplied orientation bridge for physical forward order"
+  - "supplied law id and clock/order id"
+  - "supplied kernel, Hamiltonian, transfer operator, instrument, clock, or rate when dynamics language is used"
+  - "independent audit remains required for verdicts"
+  - "PR is stacked on the arrow-orientation firewall companion"
+no_go_routes:
+  - "orientation bridge => derived by Record"
+  - "directed certificate => transportable across laws without rechecking"
+  - "supplied empirical kernel => selected by count state"
+  - "stable setting => selected dial"
+review_findings: "local review clean: runner PASS=37 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: pending
+pr_url: null
+pr_number: null
+cycle_status: local_review_clean
+mergeable: null
+merge_state_status: null
+checks: "runner PASS=37 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack count 13; git diff --check clean"
+next_exact_action: |
+  Commit, push, and open a stacked PR against the arrow-orientation firewall
+  branch.
+stop_condition: |
+  Not satisfied: PR is not open yet.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "directed post-record certificates are available only under supplied orientation/law/clock/kernel bridges"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch defines a supplied-bridge interface and does not derive or select the bridge."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

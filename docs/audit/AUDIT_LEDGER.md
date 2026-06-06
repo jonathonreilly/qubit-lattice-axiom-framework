@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 193 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 698 |
+| **retained_bounded** | 699 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1288 |
+| unaudited | 1287 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,22 +61,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1098 |
+| `audited_clean` | 1099 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 59 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1595 |
+| `unaudited` | 1594 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1330 |
+| `bounded_theorem` | 1331 |
 | `decoration` | 53 |
 | `meta` | 321 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 764 |
+| `positive_theorem` | 763 |
 
 | criticality | count |
 |---|---:|
@@ -917,6 +917,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_model_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stable_kernel_count_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_stable_kernel_expected_frequency_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13949,6 +13950,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For supplied p0 and transition kernel K on a finite alphabet, the product law P(w)=p0(o_0)K(o_0,o_1)...K(o_{N-2},o_{N-1}) gives an exact finite null distribution for any count statistic by summing over O^N.  _(class `A`)_
 - **chain closes:** True — The chain closes as finite probability algebra: the product measure over all words normalizes by induction over the row-stochastic kernel, and the distribution of any finite count statistic is the pushforward of that measure. This does not close any physical derivation of p0, K, statistic, threshold, clock, or audit verdict.
 - **rationale:** The displayed formula inventory checks out: the Markov product law, finite pushforward over count fibers, and upper-tail p-value are exact finite identities under the supplied stochastic inputs. Independently, in the runner's length-4 two-state example the count masses are 27/64, 15/64, 13/64, 9/64, and 0, summing to 1 with expected counts 47/16 and 17/16 and p-value 27/64 for AAAA. The runner's source-anchor and hard-coded firewall flags do not establish a physical kernel or statistic, but the note explicitly excludes those broader claims, so the scoped conditional audit interface closes.
+- **auditor confidence:** high
+
+### `post_record_stable_kernel_expected_frequency_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given a finite normalized supplied prior pi, supplied initial law p0, supplied 0<alpha<1, and reset kernel K(i,j)=(1-alpha)delta_ij+alpha pi_j, the note derives the exact finite-N ensemble expected empirical frequency and keeps realized counts integral.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-194623-0ef134aa01-post_record_stable_kernel_ex`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For K(i,j)=(1-alpha)delta_ij+alpha pi_j, the iterates satisfy p_t=pi+(1-alpha)^t(p0-pi), hence E[f_N]=pi+((1-(1-alpha)^N)/(N alpha))(p0-pi).  _(class `A`)_
+- **chain closes:** True — The kernel sends any row-law p to (1-alpha)p+alpha pi, so subtracting pi gives pK-pi=(1-alpha)(p-pi), which proves the displayed iterate by induction. Averaging the geometric series over t=0,...,N-1 gives the finite-N expected frequency formula with the stated factor.
+- **rationale:** The audited statement is a conditional finite-state Markov-kernel algebra identity over supplied inputs, not a derivation of the target prior, kernel, clock, Born law, concentration, or physical dynamics. The displayed identities have the correct sign, normalization, and geometric-series factor: the row-stochastic reset kernel preserves normalization and contracts p-pi by 1-alpha each event step. The runner source genuinely computes the kernel, iterates it, compares against the closed form, checks target dependence, and separately verifies the firewall text; it does not hard-code the contested formula as its only support. Within the bounded scope stated in the note, the chain closes.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_stable_kernel_frequency_interface_2026_06_06.py
+runner_sha256: 51fd84db6f1856b42b497cc253cadd8f34c0083a8e8062c604c4e0a08d1026d2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -59,3 +67,6 @@ SUPPLIED_STABLE_KERNEL_EXPECTED_FREQUENCY=TRUE
 REALIZED_COUNTS_REMAIN_INTEGRAL=TRUE
 RECORD_DERIVES_TARGET_OR_KERNEL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

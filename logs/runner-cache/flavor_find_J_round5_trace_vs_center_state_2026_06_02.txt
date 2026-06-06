@@ -1,32 +1,41 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_find_J_round5_trace_vs_center_state_2026_06_02.py
-runner_sha256: 414128b64ab495a629ca355d2974343dfdc7fb2fa582ff179410fffc24089396
+runner_sha256: 07eeff1543e342df1768c87918fd782c760252a2c31c7f857082305d7e87cf19
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
 status: ok
 ----- stdout -----
-[PASS] R5-1 central idempotents of R[C_3]=R(+)C: e0=(I+C+C^2)/3 (rank 1, central, idempotent), e1=I-e0 (rank 2), e0 e1=0
-       ranks (Tr e0, Tr e1) = (1, 2) -- the singlet and doublet blocks
-[PASS] R5-2 TRACE weights central blocks by DIMENSION Tr(e0):Tr(e1)=1:2 -> per-DOF -> r=1 -> Q=1 (det_R default)
-       the trace restricted to the center IS dimension-weighting; this is the over-determined default
-[PASS] R5-3 CENTER-SYMMETRIC state weights blocks EQUALLY 1:1 -> 3a^2=6|b|^2 -> r=1/2 -> Q=2/3 (det_C, observed)
-       equal weight per central idempotent (non-tracial) gives the observed value -- but is not the trace
-[PASS] R5-4 the conditional expectation E(.)=e0(.)e0+e1(.)e1 onto the center is DISCRETE (uses projections), C^3=I-compatible
-       E is NOT the continuous rephasing C->e^{i alpha}C -> the center-symmetric route GENUINELY dodges the round 1-4 U(1)_b/C^3=I wall
-[PASS] R5-5 forced-not-chosen FAILS: the framework's reference state is DERIVED to be the TRACE (1:2 -> r=1); the 1:1 center-symmetric state must be IMPOSED
-       trace = beta=0 point of the retained_no_go isotype family B_{alpha,beta}; center-symmetric = beta!=0; PD+Ad-invariance force NEITHER -> r=1/2 admissible-but-unforced
+[PASS] R5-1 central idempotents close with ranks 1 and 2
+       Tr(e0)=1, Tr(e1)=2
+[PASS] R5-2 old E(A)=e0Ae0+e1Ae1 is only block compression, not center-valued
+       counterexample commutator norm ||E_old(A)C-C E_old(A)||=2.273030
+[PASS] R5-3 on R[C3] the old block compression is just the identity
+       so it cannot by itself create an equal-central-block state from a group-algebra operator
+[PASS] R5-4 corrected center-valued average lands in span{e0,e1}
+       block averages=(+2.833333, -0.666667)
+[PASS] R5-5 C3 conjugation average gives the C3-commutant but does not select state weights
+       operator averaging and state-weight selection are distinct finite operations
+[PASS] R5-6 tracial state has central block masses 1:2
+       trace masses=(0.333333, 0.666667)
+[PASS] R5-7 equal-block state is positive, normalized, C3-invariant, and non-tracial
+       equal masses=(0.500000, 0.500000), eigmin=+2.500e-01
+[PASS] R5-8 finite C3 central-state simplex leaves the block weight unforced
+       sampled p0 values 0, 1/4, 1/3, 1/2, 3/4, 1 are all admissible C3-invariant states
+[PASS] R5-9 equal-block route is not the continuous U(1)_b rephasing obstruction
+       changing central state weights leaves the discrete C3 operator relation C^3=I untouched
+[PASS] R5-10 local displayed Q(r) arithmetic is separated from state selection
+       this verifies the displayed convention only; it does not derive the physical Q readout
 
-SCORECARD PASS=5 FAIL=0
-VERDICT (J-hunt round 5 FINAL, wf_9b01207c): trace_is_default_same_residual. The center-symmetric
-(non-tracial) state GENUINELY dodges C^3=I (discrete central idempotents, not continuous U(1)_b) --
-proving the residual is NOT the U(1)_b wall (NEW). But it is NOT forced: the derived reference state is
-the TRACE (1:2 -> r=1); the 1:1 center-symmetric state (-> r=1/2) is a different, equally-admissible-but-
-unforced point in the retained_no_go isotype family. 5-ROUND CONSOLIDATION: r=1/2 = the single named
-admissible-but-unforced input = trace-vs-center-state = det_R-vs-det_C = (1,2)-vs-(1,1) = beta=0-vs-beta!=0.
-Framework DEFAULTS to the trace (Q=1); observed Q=2/3 = center-symmetric state. PATH OPEN (unobstructed):
-a positive state-selection principle (record/persistence or chiral-mass: 'block=one mode' vs 'DOF=one
-mode'), NOT a forbidden symmetry. = the same open_gate the framework records (Tier-A delta=2/9 admission).
+FLAVOR J-HUNT ROUND 5 REPAIRED CENTRAL-STATE CERTIFICATE
+trace block masses       = (0.333333, 0.666667)
+equal-block masses       = (0.500000, 0.500000)
+old-E commutator norm    = 2.273030
+OUTPUT_JSON=outputs/flavor_find_J_round5_trace_vs_center_state_2026_06_02.json
+SCORECARD PASS=10 FAIL=0
+VERDICT: bounded finite algebra repaired. The equal-block state is C3-compatible
+and not the U(1)_b obstruction, but the finite packet does not force that state
+or derive the physical Q=2/3 selector.
 
 ----- stderr -----
 

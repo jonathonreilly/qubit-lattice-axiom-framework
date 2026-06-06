@@ -45,16 +45,20 @@ no_go_routes:
   - "generation/Koide measure row => forced value"
   - "source unit => physical selector without selector rule"
 review_findings: "local review clean: runner PASS=41 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
-pr_status: not_open
-pr_url: null
-pr_number: null
-cycle_status: ready_for_pr
+pr_status: open
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2842"
+pr_number: 2842
+cycle_status: pr_open_initial_unstable
+mergeable: MERGEABLE
+merge_state_status: UNSTABLE
+checks: "audit_pipeline queued at initial verification"
 next_exact_action: |
-  Open a stacked PR against
-  physics-loop/post-record-selector-dial-bucket-subdivision-20260606.
+  Wait for the final pushed head's audit_pipeline to complete, then record the
+  clean final PR/check state.
 stop_condition: |
   Satisfied when the runner passes, local review is clean, the branch is pushed,
-  and the stacked PR is open and verified.
+  and the stacked PR is open, mergeable, and final clean/success status is
+  recorded.
 status_fields:
   actual_current_surface_status: exact-support
   trace_class: upstream_support

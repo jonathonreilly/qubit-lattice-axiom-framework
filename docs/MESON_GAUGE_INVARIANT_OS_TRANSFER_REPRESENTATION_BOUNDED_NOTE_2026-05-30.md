@@ -6,6 +6,11 @@
 **Review boundary:** source-surface bounded theorem proposal. This note records
 runner-backed source content; downstream effective status is not set here.
 **Primary runner:** [`scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py`](../scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py)
+**Cached runner output:** [`logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt`](../logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt)
+**Source packet verifier:** [`scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py`](../scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py)
+(SUMMARY: MESON OS SOURCE PACKET PASS=30 FAIL=0)
+**Source packet verifier cache:** [`logs/runner-cache/meson_os_transfer_source_packet_manifest_2026_06_06.txt`](../logs/runner-cache/meson_os_transfer_source_packet_manifest_2026_06_06.txt)
+**Source packet verifier JSON:** [`outputs/meson_os_transfer_source_packet_manifest_2026_06_06.json`](../outputs/meson_os_transfer_source_packet_manifest_2026_06_06.json)
 **Source role:** finite-carrier *representation* theorem for the **gauge-invariant,
 number-conserving meson** observable of the 2-step blocked staggered transfer matrix.
 On explicit finite **3+1** carriers it records the equality between the runner's
@@ -83,6 +88,30 @@ gauge-invariant meson basis on the finite 3+1 carriers (well inside the `1e-9` a
 gate). This is the **lattice / transfer-matrix** representation, exhibited on a finite
 carrier and **illustrating** the cited general transfer-matrix meson-spectroscopy
 construction; **no continuum claim is made either way**.
+
+## 2026-06-06 Source Packet Exposure Repair
+
+The current audit blocker asks for the full untruncated primary runner source
+or a source-hash-pinned runner artifact so the Berezin/operator kernel-build
+functions and determinant-weighted averaging path can be audited. The source
+packet verifier above checks that:
+
+- the primary runner and cache are linked from this note;
+- the primary runner is untruncated and contains the Berezin block-kernel,
+  operator block-kernel, full-spacetime `M^{-1}` spectrum check,
+  vacuum-annihilation control, four-fermion Berezin correlator,
+  operator meson correlator, determinant-weighted average, and gauge-transform
+  functions;
+- the runner cache is SHA-fresh, successful, and contains the scorecard plus
+  the P0/P1 and K1-K5 controls.
+
+This does not set an audit verdict or widen the finite-carrier scope.
+
+Current source-packet output:
+
+```text
+SUMMARY: MESON OS SOURCE PACKET PASS=30 FAIL=0
+```
 
 ## Why the naive single-matrix-element vanishes, and how the obstruction is handled
 

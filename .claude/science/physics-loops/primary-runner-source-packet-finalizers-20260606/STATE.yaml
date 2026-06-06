@@ -1,0 +1,35 @@
+loop_slug: primary-runner-source-packet-finalizers-20260606
+branch: physics-loop/primary-runner-source-packet-finalizers-20260606
+base: origin/main
+target_claim_ids:
+  - gravitational_wave_probe_note
+  - meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30
+target_status_before_branch: audited_conditional
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+cycle: 8
+active_route: primary-runner source-packet finalization
+hard_residual: >
+  The gravitational-wave row already has a full source-completeness witness in
+  its runner cache but lacked a note cache link. The meson row needed a
+  source-hash-pinned primary-runner packet for the Berezin/operator kernel and
+  det-weighted averaging paths.
+files_touched:
+  - docs/GRAVITATIONAL_WAVE_PROBE_NOTE.md
+  - docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+  - scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py
+  - logs/runner-cache/meson_os_transfer_source_packet_manifest_2026_06_06.txt
+  - outputs/meson_os_transfer_source_packet_manifest_2026_06_06.json
+  - .claude/science/physics-loops/primary-runner-source-packet-finalizers-20260606/
+no_audit_result_edits: true
+new_axioms: false
+checks:
+  - python3 -m py_compile scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py
+  - python3 scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py --force --push-mode=none --allow-non-main --concurrency 1
+pr_status: pending
+next_exact_action: run hygiene checks, commit, push, open PR
+stop_condition: not reached

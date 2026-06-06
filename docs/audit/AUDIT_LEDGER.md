@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 684 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1335 |
+| unaudited | 1334 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1072 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1642 |
+| `unaudited` | 1641 |
 
 | claim_type | count |
 |---|---:|
@@ -1228,6 +1228,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
+| `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5866,6 +5867,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the scoped qutrit HW/Fourier equations, pure-shift H is not Fourier-fixed at r=1/2, the true F-self-dual clock-shift family is fixed for all g, and F-covariance of G forces only b=c while leaving a free.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from direct finite-dimensional matrix algebra on the supplied X, Z, F, H, K, and G definitions. The runner source performs actual operator computations rather than importing or hard-coding the contested value, and the note keeps broader Clifford/Wigner/readout claims out of scope.
 - **rationale:** The load-bearing step is an algebraic closure over explicitly supplied qutrit matrices and operator families, with no cited upstream authority and no external comparator. Independent inspection of the formulas confirms the core facts: F conjugates X to Z, the pure-shift line is not fixed except at zero hopping, the symmetric clock-shift family has a free coupling, and b=c is the only off-diagonal balance condition in G. The conclusion is also carefully scoped as a no-selection/open-gate result, not a universal no-go over all possible symmetry or readout routes.
+- **auditor confidence:** high
+
+### `flavor_idempotent_u1_collapses_note_2026-05-30`
+
+- **Note:** [`FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md`](../../docs/FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that the flavor-U(1)-on-idempotents route cannot pin the circulant Koide readout and does not provide a native sector index for the displayed lepton/down/up r ordering.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-180740-5f0c19e49a-flavor_idempotent_u1_collaps`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The idempotent U(1) has equal phase on the two doublet modes, commutes with C and any circulant H so conjugation is inert, while the claimed sector-ordering obstruction rests on the generation C3 factor being pure flavor and generation-blind to charge/color/Yukawa factors.  _(class `A`)_
+- **chain closes:** False — The projector algebra itself checks out: Ps=P0, Pd=P1+P2, U is diagonal with equal doublet phase, UHU†=H for circulant H, and Qopp has residual sqrt(2) from span{Ps,Pd}. The full conclusion also imports unsupplied bridge facts identifying the one-sided action with a retained blocked chiral grading and asserting generation-blind decoupling of charge/color/Yukawa factors.
+- **rationale:** Independent Fourier-projector checking supports the narrower algebraic collapse of the idempotent U(1): it is native, commutes with C, is inert by conjugation, and cannot realize opposite charges within span{Ps,Pd}. The runner’s ordering check hard-codes the r, charge, and color table and verifies only monotonicity/non-monotonicity, not the broader absence of any native indexing parameter. Because the packet supplies no one-hop authority or in-packet derivation for the chiral no-go identification or the generation-blind charge/color/Yukawa factorization, the source claim is conditional at its stated scope.
 - **auditor confidence:** high
 
 ### `flavor_interacting_matter_build_note_2026-05-30`

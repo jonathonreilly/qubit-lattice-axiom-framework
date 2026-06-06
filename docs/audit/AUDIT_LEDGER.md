@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 181 |
+| **retained** | 182 |
 | **retained_no_go** | 198 |
 | **retained_bounded** | 682 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 303 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1057 |
+| `audited_clean` | 1058 |
 | `audited_conditional` | 89 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1532 |
+| `unaudited` | 1531 |
 
 | claim_type | count |
 |---|---:|
@@ -518,6 +518,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -7783,6 +7784,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Riccati recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k, together with induction, proves every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).  _(class `A`)_
 - **chain closes:** True — The recurrence follows algebraically from the stated Bessel derivative identities and the Riccati equation, and the sign induction is valid because all summands in the convolution share the same nonzero sign. The cited parent is retained_no_go, and no open upstream premise is needed for the narrow U(1) coefficient theorem beyond the stated U(1) normalization and standard Bessel calculus.
 - **rationale:** The proof is a genuine algebraic closure: parity follows from evenness of I_0, while density and sign alternation follow from the explicit Riccati coefficient recurrence and a correct strong induction. The runner source performs exact symbolic and rational checks rather than merely printing constants, though its finite-order checks are only corroborative because the note supplies the all-order induction. The cached runner summary line reports THEOREM PASS=7 while the note expected PASS=8, but the source and stdout show no failing theorem check and this count mismatch is not load-bearing.
+- **auditor confidence:** high
+
+### `gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`GAUGE_VACUUM_THREE_SAMPLE_RADICAL_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/GAUGE_VACUUM_THREE_SAMPLE_RADICAL_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The audited claim is the unconditional abstract three-sample radical reconstruction map over the pi/16 radical field, with the beta=6 PF-seam interpretation only recorded as conditional on four named bridge authorities.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-115706-2eced1398e-gauge_vacuum_three_sample_ra`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the structured matrix F = [[1,a,0],[1,b,c],[1,d,e]], det F = Delta = a*c - a*e + b*e - c*d, Delta is nonzero on the pi/16 radical specialization, and the displayed adjugate formula gives the unique alpha = F^{-1}Z.  _(class `A`)_
+- **chain closes:** True — The determinant and inverse formulas follow by direct 3x3 adjugate algebra, and the pi/16 entries match the displayed character values with nonzero determinant and the stated c/e signs. The beta=6 physical identification is not used in the algebraic closure and is explicitly kept behind the four-bridge conditional.
+- **rationale:** The load-bearing step is a genuine algebraic identity check, not a renaming or numerical match. Independent expansion of the determinant and cofactors gives the displayed Delta and reconstruction matrix, and the pi/16 half-angle reductions reproduce a,b,c,d,e with the stated W_A annihilation and sign separation. The cited beta=6 reduction authority is used only to state the downstream conditional scope, not to close or import the physical bridge premises.
+- **open / conditional deps cited:**
+  - `GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`
 - **auditor confidence:** high
 
 ### `gauge_wilson_isotropy_boundary_note_2026-05-04`

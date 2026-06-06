@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 62 |
-| ~~audited_failed~~ | 6 |
+| ~~audited_failed~~ | 7 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,16 +64,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1087 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 50 |
+| `audited_failed` | 51 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1623 |
+| `unaudited` | 1622 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1327 |
+| `bounded_theorem` | 1326 |
 | `decoration` | 53 |
-| `meta` | 311 |
+| `meta` | 312 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
 | `positive_theorem` | 777 |
@@ -1364,6 +1364,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `post_record_audit_evidence_ladder_row_bucketing_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -13551,6 +13552,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For any finite law P on record words and its reversed law P^R(w)=P(reverse(w)), the count pushforward is invariant under reversal: count_* P = count_* P^R.  _(class `A`)_
 - **chain closes:** True — The reversal map is a bijection on every count fiber, so count(w)=count(reverse(w)) and count_*P=count_*P^R follow by change of variables. Therefore any statistic, event, p-value, or certificate that factors only through counts has identical distribution under the two opposite orientations and cannot decide between them.
 - **rationale:** Formula inventory checked: w -> wv, count(wv)=count(w)+count(v), count(w)=count(reverse(w)), P^R(w)=P(reverse(w)), count_*P=count_*P^R, I(count(w))=I(count(reverse(w))), and transitions(reverse(w))=transpose(transitions(w)) are all finite-word identities. The independent proof is that reversal preserves letter multiplicities while reversing ordered adjacent pairs, so count-only data cannot distinguish P from P^R although transition or endpoint data can. The runner source supports this with exact finite enumeration and Fraction-valued law checks plus source-anchor and firewall-flag checks; it does not import tuned external numerics or a hidden comparator. N1-N8 no-go stress test passes for the narrowed count-only scope because routes through a supplied boundary, clock, oriented law, transition data, or production kernel remain explicitly outside the claim.
+- **auditor confidence:** high
+
+### `post_record_audit_evidence_ladder_row_bucketing_2026-06-06`
+
+- **Note:** [`POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md`](../../docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Read-only audit-ledger row bucketing into post-record evidence-ladder triage buckets, including the claimed current scoped-row count, bucket counts, touched-row count, and nonmutation of audit data.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-184820-f88b54a21f-post_record_audit_evidence_l`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the current ledger snapshot, the runner scans 1336 bounded/conditional scope rows and touches 266 rows in the post-record evidence ladder buckets.  _(class `A`)_
+- **chain closes:** False — The completed runner output contradicts the source note's current-snapshot quantitative table and reports two failed checks. The missing step is a reconciled current ledger certificate whose computed counts match the note and whose runner exits with zero failures.
+- **rationale:** The source note claims 1336 scoped rows with bucket counts including not_record_ladder_relevant=1070, simulation_support_only=22, and record_type_support_only=1. The provided completed runner output instead reports SCOPED_ROWS=1343, not_record_ladder_relevant=1077, simulation_support_only=23, no nonempty record_type_support_only bucket, and SUMMARY: PASS=37 FAIL=2. This is a completed runner/source mismatch and stale quantitative table, not a compute-timeout case. The read-only hash and firewall claims may be directionally checked by the runner, but the current-count certificate does not close as written.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

@@ -1,6 +1,6 @@
 # PR Backlog
 
-Status: pending PR creation.
+Status: PR created; initial queued check recorded.
 
 Intended title:
 
@@ -29,3 +29,13 @@ Body must include:
 - status `exact-support`;
 - statement that no audit verdict, retained/promoted claim, or forced
   generation/Koide dial is made.
+
+## Created PR
+
+```yaml
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2834"
+base: "physics-loop/post-record-supplied-concentration-certificate-interface-20260606"
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_status_check_rollup: "audit_pipeline queued at first verification"
+```

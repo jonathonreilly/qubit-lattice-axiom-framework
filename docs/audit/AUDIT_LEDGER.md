@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 192 |
-| **retained_no_go** | 208 |
+| **retained_no_go** | 209 |
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1298 |
+| unaudited | 1297 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1095 |
+| `audited_clean` | 1096 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 56 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1605 |
+| `unaudited` | 1604 |
 
 | claim_type | count |
 |---|---:|
@@ -914,6 +914,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_finite_null_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_target_kernel_stability_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_model_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13809,6 +13810,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Supplied finite carrier plus supplied nonnegative weights with exact positive total gives a normalized measure under that supplied weight rule, but the normalized measure is not a selected dial.  _(class `A`)_
 - **chain closes:** False — The finite normalization subclaim closes as standard algebra. The exact-support current-snapshot subdivision does not close because the completed runner reports 43 rows and different lane counts than the note's 44-row table.
 - **rationale:** The finite-weight normalization interface is mathematically valid for supplied finite nonnegative weights with positive total, and it does not by itself provide selector authority. However, the source note claims an exact current ledger snapshot of 44 rows with lane counts source=14, trace=10, character=9, selector=6, generic=5, while the completed runner reports 43 rows with trace=7, selector=7, generic=6, source=14, character=9. Those completed mismatches are substantive audit evidence, not compute noncompletion, so the exact-support subdivision claim fails as written. The runner source also dynamically imports the previous subdivision script, but that helper source is not included in the restricted packet.
+- **auditor confidence:** high
+
+### `post_record_model_selection_firewall_2026-06-06`
+
+- **Note:** [`POST_RECORD_MODEL_SELECTION_FIREWALL_2026-06-06.md`](../../docs/POST_RECORD_MODEL_SELECTION_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite post-record data plus supplied likelihood or p-value scores alone do not uniquely determine a canonical model, candidate law, or generation/Koide dial selection; selection remains conditional on extra supplied rules.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-fa3dd6c761-post_record_model_selection_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For a realized word and supplied finite candidate laws, the likelihood vector is only a score vector and does not contain a prior, loss/threshold, tie-breaker, admissibility rule, extension rule, or physical interpretation.  _(class `A`)_
+- **chain closes:** True — The finite probability examples independently show the required non-uniqueness: posterior winners can reverse under different priors, maximum likelihood can tie, candidate-family extension can change the winner, and likelihood-ratio decisions depend on thresholds. This closes only the scoped score-alone firewall, not any route that supplies an explicit decision interface.
+- **rationale:** The load-bearing step is an elementary finite-probability obstruction, not a definition, renaming, external comparator, or tuned numerical match. The runner source actually constructs normalized finite laws and exact rational counterexamples; independently checking the displayed arithmetic confirms the likelihoods 4/625 and 27/256, the posterior reversal, the 1/4 tie, the spike-family extension, and the ratio 16875/1024. The source-anchor checks against other notes are not needed for the audited mathematical scope. The no-go discipline gate is satisfied because the claim is explicitly scoped to scores alone and preserves the conditional route with supplied priors, thresholds, tie-breakers, admissibility rules, and physical interpretation.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

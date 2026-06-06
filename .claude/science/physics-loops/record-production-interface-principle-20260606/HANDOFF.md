@@ -20,11 +20,11 @@ formation bridge, Born probabilities, rates, carriers, or a generation dial.
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2817
 
 ## Verification
 
-Planned before PR:
+Completed before PR:
 
 ```bash
 python3 scripts/frontier_record_production_interface_principle_2026_06_06.py
@@ -35,5 +35,5 @@ git diff --check
 
 ## Next Action
 
-After PR verification, pivot to stable post-record dial setting or a
+Verify PR state, then pivot to stable post-record dial setting or a
 record-writing-isometry bridge stretch.

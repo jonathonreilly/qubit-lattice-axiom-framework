@@ -7,9 +7,17 @@ goal: >
   (count once -> Koide r=1/2) or second-order/real-polarization (count twice -> r=1) generation determinant.
   Entire residual Tier-A reduces to this gate (r=1/2 and delta~theta-bar both gated on the corner-mass realization).
 
-cycles_completed: 2
-block1_shipped: KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05 (runner 9/9, reviewer PASS, exact-support)
-active_route: R-block2 -- does the staggered-Dirac corner realization SUPPLY the chiral L-R coupling M(b)(x)sigma_+?
+cycles_completed: 4
+block1_shipped: KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05 (PR #2758, runner 9/9, reviewer PASS, exact-support)
+block2_shipped: KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05 (runner 6/6, bounded no-go)
+DECISION_REACHED: >
+  GOAL criterion met -- SECOND-ORDER (r=1) is FORCED on the current A_min surface; r=1/2 is foreclosed within
+  A_min (the bundle-curving coupling is forbidden by C^3=I; the allowed L-R coupling M(b)(x)sigma_+ is Berry-flat;
+  Dirac masses are singular values -> sign-blind -> r=1). AC_phi_lambda is the hard universal-floor admission;
+  the framework does NOT derive the charged-lepton mass ratios. NOT a hard universal no-go: the open
+  staggered-Dirac corner realization (substep-4) is not theorem-foreclosed; the residual = the un-forced sign of
+  sqrt(m) (signed-eigenvalue vs singular-value readout).
+active_route: campaign decision reached -- stop at clean handoff (next campaign resumes on the corner-realization gate)
 hard_residual: >
   Does the corner-mass action carry a within-generation real-antisymmetric (symplectic / Gamma_chi-anticommuting)
   bilinear that selects holomorphic polarization -> r=1/2? Is the continuous-U(1)_b-incompatible-with-C3=I

@@ -37,3 +37,30 @@ already satisfied there). This note REPROVES it as the foundation and adds posit
 recorded in the note (CPT-fuses the anti-Hermitian +/-i pair -> r=1/2, conditional on first-order) — it does NOT
 overturn the gate; it IS the gate. No new global no-go is asserted here.
 ```
+
+---
+
+# CLAIM_STATUS_CERTIFICATE — block-2 (the decisive conclusion)
+
+```yaml
+artifact: KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md
+runner: scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py   # 6/6 exact
+actual_current_surface_status: no-go   # BOUNDED (not a hard universal no-go)
+target_claim_type: no_go
+trace_class: direct_blocker_closure    # AC_phi_lambda (Tier-A 41)
+reachability_to_target: partially_closes  # r=1 forced on current surface; r=1/2 foreclosed within A_min; corner gate not theorem-foreclosed
+conditional_surface_status: "r=1/2 reachable only if the open corner realization supplies a bundle-curving coupling forbidden within R^3, OR if the signed-sqrt(m) readout is adopted (the un-forced residual)"
+claim_type_reason: >
+  Closes block-1's open route: the localized L-R coupling M(b)(x)sigma_+ is Berry-flat (does NOT reach r=1/2).
+  Dirac determinant = |det M|^2 (second-order); physical masses = singular values (sign-blind) -> r=1 forced.
+  Bundle-curving coupling forbidden by C^3=I. BOUNDED: corner realization (substep-4) not theorem-foreclosed;
+  N7 steelman (signed-sqrt(m) gives Q=2/3) is real and unresolved -> demoted from hard no-go to bounded.
+  No fitted/observed/PDG inputs; no new axiom.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+**N1-N8:** recorded in the note's No-Go Discipline Gate section (12 routes named; 2 independent walls; N7 steelman
+real -> bounded status, not hard no-go). **Value vs block-1/#2743:** new decisive premise (the specific L-R
+coupling is Berry-flat; Dirac->singular-values->r=1) that CLOSES block-1's open localization route -- distinct
+claim type (no-go vs localization).

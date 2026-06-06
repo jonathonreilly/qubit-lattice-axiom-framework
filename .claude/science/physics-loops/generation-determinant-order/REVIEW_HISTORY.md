@@ -16,3 +16,12 @@ Critical hostile-reviewer agent. **Disposition: PASS.**
   answers the "index vs continuous ratio" objection, ties to the 2026-05-16 escape-hatch + Berry-flatness.
 
 Two optional non-blocking polish items applied. Block ships at exact-support.
+
+## Block-2 (cycles 3-4): KOIDE_DIRAC_MASS_FORCES_R_ONE... 2026-06-05
+Self-review (local) + 2 independent stretch agents converged. **Disposition: PASS (bounded no-go).**
+- Decisive new content (closes block-1's open route): the L-R coupling M(b)(x)sigma_+ is Berry-flat -> r=1;
+  Dirac determinant = |det M|^2 (second-order); physical masses = singular values (sign-blind) -> r=1 forced.
+- N1-N8 run (note section): 12 routes named, 2 independent walls, N7 steelman (signed-sqrt(m)->Q=2/3) real ->
+  demoted to BOUNDED (not a hard universal no-go; corner gate not theorem-foreclosed).
+- Reprove-cite clean (runner 6/6); comparators only; no PDG. DECISION: r=1 forced -> AC_phi_lambda is the
+  universal-floor admission -> framework does NOT derive charged-lepton mass ratios.

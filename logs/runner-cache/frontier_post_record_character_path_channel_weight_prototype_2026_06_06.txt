@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
+runner_sha256: be23ae997ddfb8f13c14a628044f1fc3451325b948a6e0b5c568739306b18060
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.10
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -45,7 +53,7 @@ PASS character/path/channel row count is current snapshot :: 9
 PASS representative row present: architecture_note_directional_measure
 PASS representative row present: dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02
 PASS representative row present: wilson_action_surface_selector_real_positive_theorem_note_2026-05-25
-PASS audit ledger hash is unchanged :: b13455e925f8862055b350350f72ce59970275fdbbc376642b9355424d8eb737
+PASS audit ledger hash is unchanged :: 2dbfb4a7aa9f515d133e1884491d9d9a885365bff78e167ac695f312cd9dca13
 
 Character/path/channel rows:
   architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
@@ -85,3 +93,6 @@ GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
 BORN_LAW_DERIVED_FROM_RECORD=FALSE
 PRODUCTION_DYNAMICS_DERIVED=FALSE
 PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
+
+----- stderr -----
+

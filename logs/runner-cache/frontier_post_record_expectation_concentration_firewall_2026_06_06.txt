@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_expectation_concentration_firewall_2026_06_06.py
+runner_sha256: 35cf0846a691558c22e48bfed77a4b5ece9957f09f7bc73ef42e9663d2343bab
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -53,3 +61,6 @@ EXPECTATION_IMPLIES_CONCENTRATION=FALSE
 SAME_EXPECTATION_DIFFERENT_TAILS=TRUE
 RECORD_DERIVES_P_VALUE=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

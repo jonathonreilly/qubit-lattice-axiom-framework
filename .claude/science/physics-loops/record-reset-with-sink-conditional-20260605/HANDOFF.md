@@ -4,6 +4,8 @@
 
 Bounded-support / reversible sink-construction block ready for stacked review.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2775
+
 ## Main Finding
 
 Adding explicit sink bits restores reversibility: old fragment memory is moved
@@ -18,5 +20,5 @@ starts blank.
 
 ## Next Exact Action
 
-Open stacked PR against `physics-loop/record-blank-boundary-reset-no-go-20260605`,
-then patch this loop pack with the PR URL.
+Campaign pivot: select the next ranked science lane while #2775 receives
+review/checks.

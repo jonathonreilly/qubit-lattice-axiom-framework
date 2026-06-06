@@ -11,3 +11,9 @@
 - Hygiene: `git diff --check` passed.
 - Wording: targeted sink/production/cost/rate/selector/status sweep returned no
   hits.
+- PR verification:
+  `gh pr view 2775 --json number,title,state,baseRefName,headRefName,url,mergeStateStatus,isDraft`
+  returned open PR #2775 with base
+  `physics-loop/record-blank-boundary-reset-no-go-20260605`, head
+  `physics-loop/record-reset-with-sink-conditional-20260605`, and
+  `mergeStateStatus: UNSTABLE`.

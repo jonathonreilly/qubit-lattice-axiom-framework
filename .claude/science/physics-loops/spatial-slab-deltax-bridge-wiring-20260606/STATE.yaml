@@ -25,6 +25,7 @@ checks:
   - python3 scripts/cluster_decomposition_spatial_slab_bridge_check.py
   - git diff --check
   - git diff --name-only -- docs/audit
-pr_status: pending
-next_exact_action: commit, push, open review PR
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2763
+next_exact_action: reviewer should inspect PR #2763 and, if accepted, queue the spatial slab bridge for independent re-audit
 stop_condition: not reached

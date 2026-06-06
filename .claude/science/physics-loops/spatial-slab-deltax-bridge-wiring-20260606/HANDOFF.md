@@ -25,4 +25,4 @@ clustering corollary.
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2763

@@ -6,6 +6,7 @@
 **Primary runner:** [`scripts/lattice_3d_dense_z2_z6_endpoint_check.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_check.py)
 **Cached runner output:** [`logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt`](../logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt)
 **Source packet verifier:** [`scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py)
+**Source packet verifier cache:** [`logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.txt`](../logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.txt)
 (SUMMARY: DENSE ENDPOINT SOURCE PACKET PASS=28 FAIL=0)
 
 ## Purpose
@@ -37,6 +38,12 @@ generation, propagation, field, and sign-classification functions are present
 in the untruncated helper source, and that both caches are SHA-fresh. This does
 not set a verdict; it makes the bounded packet reviewable with the missing
 helper source exposed.
+
+For the audit packet dependency scanner, the endpoint checker uses the static
+import form `import scripts.lattice_3d_dense_10prop as dense`; this is the form
+recognized by `scripts/audit_packet_script_deps.py`, so the next packet build
+can populate `helper_runner_paths` with
+`scripts/lattice_3d_dense_10prop.py`.
 
 ## Live Endpoint Runner
 

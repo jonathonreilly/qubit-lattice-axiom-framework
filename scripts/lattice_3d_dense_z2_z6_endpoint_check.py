@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts import lattice_3d_dense_10prop as dense
+import scripts.lattice_3d_dense_10prop as dense
 
 
 def main() -> int:

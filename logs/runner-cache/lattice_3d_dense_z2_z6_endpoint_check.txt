@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_3d_dense_z2_z6_endpoint_check.py
-runner_sha256: bcc555d882ffe0f8363c32488738949624c6cd783789dc0dda7002f2a1349f7f
+runner_sha256: f84ca8703702496f2aca40bbefa3732db21f749a20ae4c7cd75d104ff17b6844
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 ============================================================================================

@@ -1,0 +1,105 @@
+============================================================================
+LEPTON SHAPE IMPORTS FRONTIER PROBE (4/4) -- r=1/2 and theta=2/9
+two distinct imports, each on its correct channel
+============================================================================
+
+============================================================================
+IMPORT A -- r=1/2  (complex-vs-real doublet polarization; U(1)_b channel)
+============================================================================
+
+-- A0. the polarization fork (det_C vs det_R) --
+  [PASS] r=|b|^2/a^2 = 1/2 at the observed point  (r=0.5000)
+  [PASS] Q(1/2) = 2/3 (observed charged-lepton)
+  [PASS] Q(1) = 1 (det_R default, maximal hierarchy)
+  [PASS] Q(0) = 1/3 (degenerate)
+
+-- A1. retained Z_2^3 (T_x,T_y,T_z) translation structure: discrete, not U(1)_b --
+  [PASS] T_a^2 = I (involutions)
+  [PASS] [T_a, T_b] = 0 (commute)
+  [PASS] group <T_x,T_y,T_z,C_3> is FINITE (no continuous U(1)_b)  (|group|=24)
+  [PASS] singlet-preserving subgroup acts on doublet as a FINITE subgroup of O(2)  (|distinct doublet ops|=3)
+  [PASS] doublet rotations available = the C_3 cube-roots (order 3), not dense SO(2)  (rotation-type elements counted=3)
+
+-- A2. CKM/PMNS carries a COUNT (N=3), not the lepton doublet polarization --
+  [PASS] delta_CKM integer-k lattice excludes 2/9 rad (no quark->lepton transport)  (min|d-2/9|=0.563)
+  [PASS] retained cross-sector content is the count N_gen=N_color=3 (not a polarization)
+
+-- A3. arg(b) / continuous levers fix |b| => cancel in r (the common root) --
+  [PASS] U(1)_b rephasing b->e^{i th} b leaves r invariant (|b| fixed)  (r-spread=1.67e-16)
+  [PASS] continuous centralizer commutes with C (leaves circulant H, hence r, fixed)
+
+-- A verdict --
+  The polarization r=1/2 needs a CONTINUOUS U(1)_b (SO(2)) angular quotient on
+  (Re b, Im b) -- equivalently the det_C/(1,1) block-count over det_R/(1,2).
+  Every NATIVE structure tested is DISCRETE on the doublet:
+   - retained Z_2^3 (T_x,T_y,T_z)+C_3 generate a FINITE group (D_3-type), no SO(2);
+   - CKM/PMNS carries the COUNT N=3, not a quark->lepton doublet polarization;
+   - arg(b)/centralizer are continuous but fix |b| => cancel in r.
+  => U(1)_b is GENUINELY ABSENT from the native structure. r=1/2 is the IMPORT,
+     precisely characterized as the block-vs-DOF counting measure (det_C vs det_R).
+     VERDICT: R-HALF-IMPORT-CONFIRMED (U(1)_b absent; not derivable from the
+     retained native structure; matches retained_no_go frobenius_isotype_split).
+
+============================================================================
+IMPORT B -- theta=2/9  (APS-eta / staggered chiral index channel)
+============================================================================
+
+-- B0. the target: 2/9 = (N-1)/N^2|_{N=3} = L_3(1,2) (retained_bounded weight) --
+  [PASS] (N-1)/N^2 at N=3 equals 2/9
+  [PASS] L_3(1,2) = 2/9 exactly (cyclotomic weight-sum)  (L_3(1,2)=0.222222)
+  [PASS] alternative repeated weights L_3(1,1) = 1/9 (so (1,2) is special)
+  [PASS] 2/9 is NOT an algebraic integer (minpoly 9x-2)
+
+-- B1. nonzero-flux Z^3 staggered Dirac: does eta become nonzero (=2/9)? --
+  [PASS] L=2 flat: staggered D is anti-Hermitian
+  [PASS] L=2 flat: eta = sum sign(lambda) = 0 (retained L1 baseline)  (eta=0.000)
+  [PASS] L=4 flat: staggered D is anti-Hermitian
+  [PASS] L=4 flat: eta = sum sign(lambda) = 0 (retained L1 baseline)  (eta=0.000)
+  [PASS] L=4 flux b=0: chiral pairing eps*H*eps = -H is EXACT (robust to flux)  (||eHe+H||=0.0e+00)
+  [PASS] L=4 flux b=0: eta = 0 (NOT 2/9) -- flux does NOT realize the asymmetry  (eta=0.000, n_zero=8)
+  [PASS] L=4 flux b=1: chiral pairing eps*H*eps = -H is EXACT (robust to flux)  (||eHe+H||=0.0e+00)
+  [PASS] L=4 flux b=1: eta = 0 (NOT 2/9) -- flux does NOT realize the asymmetry  (eta=0.000, n_zero=16)
+  [PASS] L=4 flux b=2: chiral pairing eps*H*eps = -H is EXACT (robust to flux)  (||eHe+H||=0.0e+00)
+  [PASS] L=4 flux b=2: eta = 0 (NOT 2/9) -- flux does NOT realize the asymmetry  (eta=0.000, n_zero=12)
+  [PASS] L=4 flux b=3: chiral pairing eps*H*eps = -H is EXACT (robust to flux)  (||eHe+H||=0.0e+00)
+  [PASS] L=4 flux b=3: eta = 0 (NOT 2/9) -- flux does NOT realize the asymmetry  (eta=0.000, n_zero=16)
+  [PASS] flux changes the zero-mode count (real index-density response) yet eta stays 0  (n_zero over b=8,16,12,16)
+
+-- B2. lattice equivariant-C_3 defect: staggered phases BREAK C_3 (ill-defined) --
+  [PASS] L=4: C_3 lattice permutation has P^3 = I
+  [PASS] L=4: [C_3, H_staggered] != 0 (staggered phases break C_3)  (||[C_3,H]||=1.000)
+     => the equivariant eta-defect of C_3 is NOT well-defined on the framework's
+        own staggered Dirac operator; the 2/9 lives on a DIFFERENT (S^3 orbifold
+        fixed-point) surface where C_3 commutes by construction.
+
+-- B3. finite operator spectral asymmetry lands in Z[omega], never the rational 2/9 --
+  [PASS] eta_C(H) = 0 when spectrum has one sign (sum sign*tr C = +-(1+w+w^2) = 0)
+  [PASS] eta_C(H) lands in Z[omega] (algebraic integer) for every (a,b) sampled
+  [PASS] the target 2/9 is NOT in Z[omega] (so no finite-operator eta_C can equal it)
+  [PASS] 2/9 is the RESOLVENT/fixed-point density prod 1/(omega^{ka}-1), not a sign(H) asymmetry
+
+-- B verdict --
+  The 2/9 is a FORCED cohomological weight-density (retained_bounded: (1,2) is the
+  unique trace-free C_3 pair; L_3(1,2)=2/9), but its realization as a genuine
+  spectral asymmetry / index of a FRAMEWORK Dirac operator is OBSTRUCTED:
+   - nonzero U(1) flux does NOT give eta!=0: eps*H*eps=-H is exact for any flux
+     (bipartite NN hopping), so eta=0 robustly -- the W1 'nonzero-flux' route is
+     structurally closed, not merely untuned (though the zero-mode count DOES respond);
+   - the lattice equivariant-C_3 defect is ill-defined: staggered phases break C_3;
+   - any finite-operator spectral asymmetry lives in Z[omega] (algebraic integers),
+     while 2/9 (minpoly 9x-2) is NOT an algebraic integer => no finite operator eta
+     can equal 2/9; it is intrinsically the continuum/orbifold RESOLVENT density.
+  => THETA-IMPORT-CONFIRMED: 2/9 remains a forced WEIGHT-DENSITY whose
+     operator-realization (continuum APS eta on the framework substrate) is the
+     single named open bridge -- and this probe sharpens WHY (an algebraic-integer
+     obstruction + an exact flux-robust chiral pairing), not eta-neutrality alone.
+
+============================================================================
+SCORECARD: PASS=36 FAIL=0
+============================================================================
+
+PER-IMPORT VERDICT:
+  r=1/2     -> R-HALF-IMPORT-CONFIRMED (horizontal U(1)_b genuinely absent;
+               import precisely = block-vs-DOF counting measure det_C vs det_R)
+  theta=2/9 -> THETA-IMPORT-CONFIRMED (forced weight-density; operator-realization
+               obstructed: flux-robust chiral pairing + algebraic-integer obstruction)

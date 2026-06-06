@@ -1,0 +1,32 @@
+loop_slug: kz-su3-beta6-convention-split-20260606
+date: 2026-06-06
+mode: campaign
+cycle_kind: stacked_science_block
+current_goal: "Prune the unsupported K-Z shortcut from W_lift ~= 0.05 to finite SU(3), Wilson beta=6."
+target_status: no-go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: "beta/lambda convention split for K-Z finite SU(3) source bracket"
+hard_residual: "Direct finite SU(3), Wilson beta=6 source table/source-data extraction or repo-owned SDP reproduction remains open."
+branch: physics-loop/kz-su3-beta6-convention-split-20260606
+base_branch: physics-loop/kz-external-lift-gate-20260606
+base_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2804"
+pr_url: null
+pr_status: not_created_yet
+files_touched:
+  - docs/GAUGE_SCALAR_KZ_SU3_BETA6_CONVENTION_SPLIT_NOTE_2026-06-06.md
+  - scripts/frontier_kz_su3_beta6_convention_split_2026_06_06.py
+  - logs/runner-cache/frontier_kz_su3_beta6_convention_split_2026_06_06.txt
+  - .claude/science/physics-loops/kz-su3-beta6-convention-split-20260606/
+open_imports:
+  - "Source-data or table-level finite SU(3), Wilson beta=6 plaquette bracket."
+  - "Repo-owned finite SU(3), Wilson beta=6 SDP reproduction with cutoff, solver, and tolerance."
+no_go_routes:
+  - "Use old W_lift ~= 0.05 as the SU(3), Wilson beta=6 bracket without an explicit convention bridge."
+review_disposition: pass
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Commit, push, open stacked PR against physics-loop/kz-external-lift-gate-20260606, patch this pack with the PR URL, then pivot to the next campaign opportunity."
+stop_condition: "Only the 12-hour runtime/global queue/tooling stop applies; this no-go is a campaign checkpoint."

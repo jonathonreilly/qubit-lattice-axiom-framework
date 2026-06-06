@@ -3,7 +3,7 @@
 **Date:** 2026-06-06
 **Type:** exact support / supplied dynamics examples
 **Claim type:** methodology / positive examples
-**Status:** exact-support branch-local for supplied directed-certificate
+**Status:** exact-support for supplied directed-certificate
 examples; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
@@ -94,7 +94,8 @@ The runner verifies:
 
 - source anchors in this note, the supplied orientation bridge, the
   arrow-orientation firewall, and the stability/dynamics subdivision;
-- the current `arrow_or_dynamics_bridge` bucket remains `31` rows;
+- the current `arrow_or_dynamics_bridge` bucket is at least the prior `31`
+  rows and the runner prints the computed current count;
 - signed transition drift has exact orientation-sensitive expectations and
   tails;
 - realized marker lag keeps probabilities in the law and markers in

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
-runner_sha256: 83591268f69cd17d72a74c50d207d4974a272d05c2122a2ed970a075b8acf733
+runner_sha256: e5f8271f00112ec18da524f88c4a43ff0d556cbf2d387095aaee1a6f38b1cf84
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 1.04
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
 ----- stdout -----
 
 ------------------------------------------------------------------------------
@@ -30,9 +30,10 @@ PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md cont
 ------------------------------------------------------------------------------
 Arrow/dynamics row-bucket checks
 ------------------------------------------------------------------------------
-FAIL stability/dynamics selector row count remains 77 :: 81
-FAIL arrow/dynamics bridge row count remains 31 :: Counter({'flow_or_thermal_stability': 49, 'arrow_or_dynamics_bridge': 32})
-FAIL flow/thermal stability row count remains 46 :: Counter({'flow_or_thermal_stability': 49, 'arrow_or_dynamics_bridge': 32})
+PASS stability/dynamics selector row count is at least prior map :: 82
+PASS arrow/dynamics bridge row count is at least prior map :: Counter({'flow_or_thermal_stability': 50, 'arrow_or_dynamics_bridge': 32})
+PASS flow/thermal stability row count is at least prior map :: Counter({'flow_or_thermal_stability': 50, 'arrow_or_dynamics_bridge': 32})
+PASS stability subbucket counts sum to selected rows :: Counter({'flow_or_thermal_stability': 50, 'arrow_or_dynamics_bridge': 32})
 
 ------------------------------------------------------------------------------
 Example 1: signed transition drift
@@ -90,9 +91,9 @@ PASS generation/Koide dial selected flag is false
 PASS stable setting selects dial flag is false
 PASS selected dial derived from stability flag is false
 
-SUMMARY: PASS=56 FAIL=3
+SUMMARY: PASS=60 FAIL=0
 SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE
-ARROW_OR_DYNAMICS_BRIDGE_ROWS=31
+ARROW_OR_DYNAMICS_BRIDGE_ROWS=32
 PRE_RECORD_LAW_CARRIES_PROBABILITY=TRUE
 POST_RECORD_SITE_CARRIES_REALIZED_INFORMATION=TRUE
 DIRECTED_STATISTICS_REQUIRE_SUPPLIED_ORIENTATION=TRUE

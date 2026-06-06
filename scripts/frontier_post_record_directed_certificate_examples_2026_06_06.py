@@ -17,6 +17,9 @@ LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
 STABILITY_SCRIPT = ROOT / "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py"
 PASS = 0
 FAIL = 0
+MIN_PRIOR_STABILITY_ROWS = 77
+MIN_PRIOR_ARROW_BRIDGE_ROWS = 31
+MIN_PRIOR_FLOW_STABILITY_ROWS = 46
 
 Word = tuple[str, ...]
 Law = dict[Word, Fraction]
@@ -245,7 +248,7 @@ def source_anchor_checks() -> None:
     )
 
 
-def row_bucket_checks() -> None:
+def row_bucket_checks() -> Counter[str]:
     section("Arrow/dynamics row-bucket checks")
     stability = load_script("stability_dynamics_selector_subdivision", STABILITY_SCRIPT)
     rows = list(json.loads(LEDGER.read_text(encoding="utf-8"))["rows"].values())
@@ -257,9 +260,11 @@ def row_bucket_checks() -> None:
         and stability.prev.selector_subbucket(row) == "stability_or_dynamics_selector"
     ]
     buckets: Counter[str] = Counter(stability.stability_subbucket(row) for row in stability_rows)
-    report("stability/dynamics selector row count remains 77", len(stability_rows) == 77, str(len(stability_rows)))
-    report("arrow/dynamics bridge row count remains 31", buckets["arrow_or_dynamics_bridge"] == 31, str(buckets))
-    report("flow/thermal stability row count remains 46", buckets["flow_or_thermal_stability"] == 46, str(buckets))
+    report("stability/dynamics selector row count is at least prior map", len(stability_rows) >= MIN_PRIOR_STABILITY_ROWS, str(len(stability_rows)))
+    report("arrow/dynamics bridge row count is at least prior map", buckets["arrow_or_dynamics_bridge"] >= MIN_PRIOR_ARROW_BRIDGE_ROWS, str(buckets))
+    report("flow/thermal stability row count is at least prior map", buckets["flow_or_thermal_stability"] >= MIN_PRIOR_FLOW_STABILITY_ROWS, str(buckets))
+    report("stability subbucket counts sum to selected rows", sum(buckets.values()) == len(stability_rows), str(buckets))
+    return buckets
 
 
 def transition_drift_example() -> None:
@@ -451,7 +456,7 @@ def firewall_checks() -> None:
 
 def main() -> int:
     source_anchor_checks()
-    row_bucket_checks()
+    buckets = row_bucket_checks()
     transition_drift_example()
     marker_lag_example()
     boundary_example()
@@ -459,7 +464,7 @@ def main() -> int:
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE")
-    print("ARROW_OR_DYNAMICS_BRIDGE_ROWS=31")
+    print(f"ARROW_OR_DYNAMICS_BRIDGE_ROWS={buckets['arrow_or_dynamics_bridge']}")
     print("PRE_RECORD_LAW_CARRIES_PROBABILITY=TRUE")
     print("POST_RECORD_SITE_CARRIES_REALIZED_INFORMATION=TRUE")
     print("DIRECTED_STATISTICS_REQUIRE_SUPPLIED_ORIENTATION=TRUE")

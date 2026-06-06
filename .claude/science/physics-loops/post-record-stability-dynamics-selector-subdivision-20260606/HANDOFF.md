@@ -41,8 +41,7 @@ because it subdivides the selector/dial output from PR #2836.
 
 ## Next exact action
 
-Wait for GitHub audit-lane checks, then patch final clean/success PR status if
-the latest head remains clean.
+Closed for campaign purposes. Pivot to the next dynamics lane.
 
 ## PR
 
@@ -52,7 +51,7 @@ base: "physics-loop/post-record-selector-dial-bucket-subdivision-20260606"
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline queued at first verification"
-final_mergeable: null
-final_merge_state_status: null
-final_checks: null
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "audit_pipeline completed SUCCESS at final verification"
 ```

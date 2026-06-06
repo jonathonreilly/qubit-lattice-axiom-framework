@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 199 |
 | **retained_bounded** | 684 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 36 |
-| unaudited | 1336 |
+| open_gate | 37 |
+| unaudited | 1335 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1071 |
+| `audited_clean` | 1072 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1643 |
+| `unaudited` | 1642 |
 
 | claim_type | count |
 |---|---:|
@@ -411,6 +411,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
@@ -5852,6 +5853,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Schur-complement induced hw=1 off-diagonal generation hopping cancels exactly for the specified staggered single-bit-flip operator, leaving b=0 while the diagonal term is nonzero, hence r=|b|^2/a^2=0.  _(class `C`)_
 - **chain closes:** True — The packet supplies the operator, sector, runner output, and runner source; the source explicitly constructs the matrices and computes the direct block and Schur complement rather than importing or printing the contested result. An independent sign-path check agrees: each hw=1 off-diagonal coupling has paired second-order paths through vacuum and a double-excitation state with opposite staggered signs, so the induced hopping cancels for this operator.
 - **rationale:** The load-bearing step is a finite first-principles computation from the displayed one-qubit operator algebra and the specified hw=1 projection. No upstream authorities, empirical comparators, fitted values, or open bridges are used. The no-go is narrow: it closes only this staggered single-bit-flip projection route and explicitly leaves other action, bivector, dynamical, and sector-factorized routes open.
+- **auditor confidence:** high
+
+### `flavor_hw_clifford_does_not_constrain_r_2026-06-02`
+
+- **Note:** [`FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md`](../../docs/FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited only the narrow route-local claim that the qutrit Heisenberg-Weyl/Fourier symmetry equations supplied in the packet do not force r=1/2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-180644-eab6ac26d1-flavor_hw_clifford_does_not_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the scoped qutrit HW/Fourier equations, pure-shift H is not Fourier-fixed at r=1/2, the true F-self-dual clock-shift family is fixed for all g, and F-covariance of G forces only b=c while leaving a free.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from direct finite-dimensional matrix algebra on the supplied X, Z, F, H, K, and G definitions. The runner source performs actual operator computations rather than importing or hard-coding the contested value, and the note keeps broader Clifford/Wigner/readout claims out of scope.
+- **rationale:** The load-bearing step is an algebraic closure over explicitly supplied qutrit matrices and operator families, with no cited upstream authority and no external comparator. Independent inspection of the formulas confirms the core facts: F conjugates X to Z, the pure-shift line is not fixed except at zero hopping, the symmetric clock-shift family has a free coupling, and b=c is the only off-diagonal balance condition in G. The conclusion is also carefully scoped as a no-selection/open-gate result, not a universal no-go over all possible symmetry or readout routes.
 - **auditor confidence:** high
 
 ### `flavor_interacting_matter_build_note_2026-05-30`

@@ -37,17 +37,18 @@ because it summarizes the stack through PR #2861.
 
 ## Next exact action
 
-Commit, push, open the stacked PR, record PR status, then close out the
+Commit and push this PR-status checkpoint, then poll PR #2864 until the latest
+head is clean/success. After final PR status is recorded, close out the
 campaign if runtime is exhausted.
 
 ## PR
 
 ```yaml
-pr_url: null
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2864"
 base: "physics-loop/post-record-admitted-sample-target-vector-interface-20260606"
-initial_mergeable: null
-initial_merge_state_status: null
-initial_checks: null
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline in progress at initial verification"
 final_mergeable: null
 final_merge_state_status: null
 final_checks: null

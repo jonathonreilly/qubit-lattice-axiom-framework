@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 197 |
 | **retained_bounded** | 681 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 35 |
-| unaudited | 1354 |
+| open_gate | 36 |
+| unaudited | 1353 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1061 |
+| `audited_clean` | 1062 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1660 |
+| `unaudited` | 1659 |
 
 | claim_type | count |
 |---|---:|
@@ -407,6 +407,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_native_beta_no_half_attractor_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5749,6 +5750,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Equal Hilbert-Schmidt weight on the two trace-orthogonal C3-isotypic generator channels gives 3a^2 = 6b^2, equivalently r = ||I||^2/||J-I||^2 = 1/(N-1) = 1/2 at N=3.  _(class `A`)_
 - **chain closes:** False — The algebraic consequences of the proposed measure/partition close, but the restricted packet does not derive or retain the premise that the framework selects the tracial HS generator-channel scoring over the idempotent or per-mode alternatives. The missing step is a bridge theorem or accepted axiom selecting that carrier metric and partition.
 - **rationale:** The runner does real algebra for the HS norms, three-way fork, N-family formula, Kahler identity, and commuting check, and its displayed identities are internally consistent. However, the note itself states that the present framework has not selected the generator-channel HS measure and that the candidate Axiom 1 revision is not landed. The PDG/PT line is an external comparator check and does not close the framework-internal measure-selection gap.
+- **auditor confidence:** high
+
+### `flavor_native_action_predicts_q1_2026-06-02`
+
+- **Note:** [`FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md`](../../docs/FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** For the C3 ansatz H=aI+b(C+C^2), a=1, b/a in [0,2], and the five named cutoff functions, the finite scans peak near r=1 and the HS mass/hopping grades are orthogonal, so this tested action axis does not select r=1/2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-171751-5f20aa7c21-flavor_native_action_predict`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For H = aI + b(C+C^2), the five displayed finite spectral-action scans S(b)=Σf(λ_i^2) over a=1 and b/a in [0,2] peak near |b|/a≈1, never near 1/√2.  _(class `C`)_
+- **chain closes:** True — Independently diagonalizing C+C^2 gives eigenvalues 2,-1,-1, so S(t)=f((1+2t)^2)+2f((1-t)^2); this reproduces the near-t=1 maxima and the [0,0,3] spectrum at t=1. The HS traces also give 3a^2, 6b^2, and zero cross term, closing only the stated finite-scan scope.
+- **rationale:** The runner source actually constructs the C3 operator, diagonalizes H, scans the five stated cutoff objectives, and checks the HS identities; it is not merely printing the contested conclusion. The quantitative identities in the packet match an independent algebraic reduction from C+C^2 to spectrum {2,-1,-1}. There are no cited non-retained dependencies, and the repaired note explicitly limits itself to the five finite scans rather than an arbitrary native-action theorem.
 - **auditor confidence:** high
 
 ### `flavor_native_beta_no_half_attractor_note_2026-05-30`

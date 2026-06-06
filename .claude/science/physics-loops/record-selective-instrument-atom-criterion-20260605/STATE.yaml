@@ -26,6 +26,6 @@ no_go_routes:
   - "Branch normalization selects the outcome."
 trace_gate_classification: upstream_support
 review_disposition: pass
-pr_status: pending
-next_exact_action: "Commit, push, and open stacked PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2792"
+next_exact_action: "Continue to Born-frequency boundary or another dynamics target."
 stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

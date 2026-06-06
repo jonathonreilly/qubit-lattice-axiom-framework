@@ -5,6 +5,8 @@
 Bounded-support / selective instrument atom criterion block ready for stacked
 review. This block is stacked on PR #2790.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2792
+
 ## Intended Result
 
 A post-record atom exists only after a supplied selective outcome yields a
@@ -26,5 +28,4 @@ Checks:
 
 ## Next Action
 
-Commit, push, open a stacked PR, then continue to Born-frequency boundary or
-another dynamics target.
+Continue to Born-frequency boundary or another dynamics target.

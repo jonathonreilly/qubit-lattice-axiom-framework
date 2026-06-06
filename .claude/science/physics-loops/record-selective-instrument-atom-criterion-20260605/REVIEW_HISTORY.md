@@ -13,3 +13,11 @@ Checks run:
 - targeted wording sweep for selection/Born/collapse/rate/dial/status overclaims
 
 All checks passed. No repo-wide authority surfaces were edited.
+
+## PR Verification
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2792
+- `gh pr view 2792` verified state `OPEN`, base
+  `physics-loop/record-dephasing-broadcast-interface-20260605`, head
+  `physics-loop/record-selective-instrument-atom-criterion-20260605`, and
+  `mergeStateStatus=UNSTABLE` while checks were pending.

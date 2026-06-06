@@ -3,13 +3,13 @@ runner: scripts/audit_companion_luders_rule_from_composition_consistency_deps_ch
 runner_sha256: e8430cd4715a21aa7e8dd6bbf6d8d7c174c02d79f171a4875c46420f752d85e8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Lüders Rule deps_changed:dep_added:minimal_axioms Hygiene Companion Runner
 ========================================================================
-Repo root: /private/tmp/cl3-review-open-20260604
-Parent note: /private/tmp/cl3-review-open-20260604/docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+Repo root: /private/tmp/cl3-luders-retained-bridge-20260606-egzi
+Parent note: /private/tmp/cl3-luders-retained-bridge-20260606-egzi/docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
 Companion source note: docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_DEPS_CHANGED_HYGIENE_COMPANION_NOTE_2026-06-04.md
 
 Goal: verify the parent's load-bearing Lüders-rule derivation
@@ -211,9 +211,9 @@ BLOCK 10: Uniqueness via effect-basis equality  (parent Step 4)
 ========================================================================
 BLOCK 11: Parent note Record-axiom usage scan (load-bearing sections)
 ========================================================================
-  PASS parent_note_present :: /private/tmp/cl3-review-open-20260604/docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
-  PASS structural_section_start_found :: ## Claim found at offset 484
-  PASS structural_section_end_found :: ## Citation-graph note found at offset 7991
+  PASS parent_note_present :: /private/tmp/cl3-luders-retained-bridge-20260606-egzi/docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+  PASS structural_section_start_found :: ## Claim found at offset 1382
+  PASS structural_section_end_found :: ## Citation-graph note found at offset 9948
   PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
 
 ========================================================================
@@ -251,8 +251,8 @@ BLOCK 13: Record-axiom counterfactual: identical numeric output
 ========================================================================
 BLOCK 14: Quantum / Lattice content preserved across the two minimal-axioms memos
 ========================================================================
-  PASS old_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-05-20.md
-  PASS new_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_present :: /private/tmp/cl3-luders-retained-bridge-20260606-egzi/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-luders-retained-bridge-20260606-egzi/docs/MINIMAL_AXIOMS_2026-06-04.md
   PASS old_memo_has_qubit_local_algebra_content :: historical M_2(C) / qubit content present
   PASS new_memo_has_Quantum_axiom_content :: current Quantum axiom (qubit / M_2(C)) preserved
   PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present

@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py
-runner_sha256: 9513fc1960f7ce9afb0937ddd21823ba2cdd2cad6146cef0ff4ee7919ce6583e
+runner_sha256: 808b4bf884a7bebc830d3dbedbdb377f4e89b5b9eb21c71d79c31ba521df8ef6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 
-=== Part 0: exact symbolic d=2 -- supplied two-step prob = Tr(rho PEP)/Tr(rho P) => M_{P,E} = P E P ===
+=== Part 0: exact symbolic d=2 -- two-step prob = Tr(rho PEP)/Tr(rho P) => M_{P,E} = P E P ===
 [PASS] d2_exact P is projection (P^2 = P, P† = P)  [rank-1 |psi><psi|, psi real]
 [PASS] d2_exact E is an effect (E† = E, spectrum in [0,1])  [spectrum = [1/4, 3/4]]
 [PASS] d2_exact rho is a state (rho† = rho, rho >= 0, Tr rho = 1)  [eigs = [1/2 - sqrt(61)/30, sqrt(61)/30 + 1/2]]
@@ -67,16 +67,53 @@ status: ok
 [PASS] d3_exact: P1(P2 E P2)P1 = (P2 P1)† E (P2 P1) (sequential = compositional)  [common = diag (1/2, 0, 0)]
 [PASS] d3_exact: nested commuting product = diag(1/2, 0, 0) on range(P1∧P2)  [only common-support entry survives]
 
-=== Part 6: guard -- a non-PEP sequential candidate fails positivity and the supplied two-step identity ===
+=== Part 6: guard -- a non-PEP sequential candidate fails positivity and the two-step identity ===
 [PASS] d2_exact: Jordan candidate satisfies boundaries M'_{P,I}=P, M'_{I,E}=E  [boundaries alone do not single out PEP vs Jordan]
 [PASS] d2_exact: Jordan candidate (PE+EP)/2 is INDEFINITE (some eig < 0)  [min eig(M') = -63/4225 < 0  => not a valid effect]
 [PASS] d2_exact: PEP reproduces two-step prob; Jordan candidate does NOT  [two-step=3969/4225, PEP=3969/4225, Jordan=17577/20449]
 
+=== Part 7: source-packet repair gates -- retained K_P=P + Kraus route named ===
+[PASS] source marker present: minimal axioms current surface  [MINIMAL_AXIOMS_2026-06-05.md]
+[PASS] source marker present: retained canonical projective K_P=P  [LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md]
+[PASS] source marker present: retained finite Kraus selective-state algebra  [PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md]
+[PASS] source marker present: finite Kraus/Choi vocabulary  [KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md]
+[PASS] source marker present: effect additivity derivation  [POVM-additive]
+[PASS] source marker present: Record axiom boundary not probability  [does not mean the Record axiom supplies physical measurement dynamics]
+[PASS] source marker present: audit-status firewall  [independent re-audit remains required]
+
+=== Part 8: numeric d=2,3,4 -- effect probabilities reconstruct rho and Tr(rho E) ===
+[PASS] d2: rank-one effect probabilities reconstruct the hidden density matrix  [max ||rho_rec-rho|| = 5.28e-16]
+[PASS] d2: reconstructed rho is a state (trace one, positive)  [max state residual = 2.22e-16]
+[PASS] d2: reconstructed trace/effect pairing matches m(E) on random effects  [max |Tr(rho_rec E)-m(E)| = 4.44e-16]
+[PASS] d2: reconstructed trace/effect pairing is POVM-additive on {E, I-E}  [max |m(E)+m(I-E)-1| = 2.22e-16]
+[PASS] d3: rank-one effect probabilities reconstruct the hidden density matrix  [max ||rho_rec-rho|| = 4.91e-16]
+[PASS] d3: reconstructed rho is a state (trace one, positive)  [max state residual = 3.33e-16]
+[PASS] d3: reconstructed trace/effect pairing matches m(E) on random effects  [max |Tr(rho_rec E)-m(E)| = 3.33e-16]
+[PASS] d3: reconstructed trace/effect pairing is POVM-additive on {E, I-E}  [max |m(E)+m(I-E)-1| = 3.33e-16]
+[PASS] d4: rank-one effect probabilities reconstruct the hidden density matrix  [max ||rho_rec-rho|| = 4.64e-16]
+[PASS] d4: reconstructed rho is a state (trace one, positive)  [max state residual = 2.22e-16]
+[PASS] d4: reconstructed trace/effect pairing matches m(E) on random effects  [max |Tr(rho_rec E)-m(E)| = 2.22e-16]
+[PASS] d4: reconstructed trace/effect pairing is POVM-additive on {E, I-E}  [max |m(E)+m(I-E)-1| = 2.22e-16]
+
+=== Part 9: numeric d=2,3,4 -- canonical K_P=P branch state gives Lueders + PEP ===
+[PASS] d2: K_P=P selective Kraus branch equals Lueders P rho P / Tr(P rho P)  [max branch residual = 1.78e-16]
+[PASS] d2: K_P^dag E K_P equals P E P  [max ||K†EK-PEP|| = 1.25e-16]
+[PASS] d2: Tr(rho PEP) = Tr(rho P) Tr(rho|_P E)  [max probability factor residual = 3.33e-16]
+[PASS] d2: selective branch state is positive and normalized  [max branch-state residual = 2.22e-16]
+[PASS] d3: K_P=P selective Kraus branch equals Lueders P rho P / Tr(P rho P)  [max branch residual = 2.76e-16]
+[PASS] d3: K_P^dag E K_P equals P E P  [max ||K†EK-PEP|| = 1.24e-16]
+[PASS] d3: Tr(rho PEP) = Tr(rho P) Tr(rho|_P E)  [max probability factor residual = 3.33e-16]
+[PASS] d3: selective branch state is positive and normalized  [max branch-state residual = 2.99e-16]
+[PASS] d4: K_P=P selective Kraus branch equals Lueders P rho P / Tr(P rho P)  [max branch residual = 2.21e-16]
+[PASS] d4: K_P^dag E K_P equals P E P  [max ||K†EK-PEP|| = 1.13e-16]
+[PASS] d4: Tr(rho PEP) = Tr(rho P) Tr(rho|_P E)  [max probability factor residual = 2.78e-16]
+[PASS] d4: selective branch state is positive and normalized  [max branch-state residual = 3.34e-16]
+
 ========================================================================
-TOTAL: 51 PASS / 0 FAIL  (out of 51 checks)
+TOTAL: 82 PASS / 0 FAIL  (out of 82 checks)
 ========================================================================
 
-All checks passed under the supplied measurement-side premises: M_{P,E} = P E P is the pre-update effect for the supplied two-step probability [Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E)], it is a valid effect [0 <= PEP <= P <= I], the supplied trace/effect pairing is real-linear and maps states/effects to [0,1], and the sequential product is associative-compatible with composition. The runner does not establish the Lueders update, Born rule, or trace/effect pairing as framework-native.
+All checks passed: finite effect probabilities reconstruct the trace/effect pairing, retained canonical K_P=P gives the Lueders branch state through finite Kraus selective-state algebra, M_{P,E} = P E P is the pre-update effect for the two-step probability, it is a valid effect [0 <= PEP <= P <= I], and the sequential product is associative-compatible with composition. The runner does not claim the Record axiom supplies physical measurement dynamics or a probability rule.
 
 ----- stderr -----
 

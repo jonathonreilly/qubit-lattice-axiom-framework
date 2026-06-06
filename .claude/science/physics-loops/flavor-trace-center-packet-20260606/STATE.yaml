@@ -1,0 +1,20 @@
+loop: flavor-trace-center-packet-20260606
+status: ready_for_review
+branch: physics-loop/flavor-trace-center-packet-20260606
+base: origin/main
+target_status: bounded-support
+active_route: restricted finite C3 trace-vs-center source packet
+files_touched:
+  - docs/FLAVOR_TRACE_VS_CENTER_DISSOLVES_NOTE_2026-05-30.md
+  - scripts/flavor_trace_vs_center_dissolves_2026_05_30.py
+  - logs/runner-cache/flavor_trace_vs_center_dissolves_2026_05_30.txt
+open_imports:
+  - physical charged-lepton readout class
+  - block-count/reference-state selector
+  - Fourier modulus selector r=1/2
+  - phase/sign chamber selector
+trace_gate_classification: direct_blocker_closure
+review_findings: []
+pr_status: pending
+next_exact_action: open review PR
+stop_condition: source packet committed and PR opened

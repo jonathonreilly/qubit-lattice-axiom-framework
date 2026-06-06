@@ -1,0 +1,19 @@
+loop_slug: koide-embedding-cache-refresh-20260606
+date: 2026-06-06
+base_ref: origin/main
+base_commit: ef1634ceb761bdc043ab5ac489c9418d076e40ee
+target_status: no-go
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02
+active_route: refresh the completed runner-cache certificate for the abelian embedding-framing no-go runner
+files_touched:
+  - logs/runner-cache/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.txt
+  - .claude/science/physics-loops/koide-embedding-cache-refresh-20260606/
+open_imports: []
+no_go_routes: []
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: reviewer/auditor can re-run cached_runner_output.py --check-only and re-audit the unchanged source note with the completed PASS/FAIL transcript
+stop_condition: cache verifier reports fresh and branch is opened as a review PR

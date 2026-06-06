@@ -1,0 +1,23 @@
+loop_slug: rp-three-factor-bridge-20260606
+goal: "Repair the axiom-first reflection-positivity conditional blocker by wiring the retained Wilson-boundary three-factor bridge."
+target_status: best-honest-status
+runtime: local_repair_cycle
+cycle_count: 1
+active_route: retained_wilson_boundary_three_factor_bridge
+hard_residual: "Full continuum OS reconstruction and arbitrary off-surface physical-observable completion remain out of scope."
+files_touched:
+  - docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
+  - logs/runner-cache/axiom_first_rp_two_step_transfer_matrix_positivity.txt
+open_imports:
+  - continuum OS reconstruction
+  - single-step spin-basis reflection positivity
+  - Wilson-fermion reflection positivity
+  - arbitrary non-factorized physical observable completion
+no_go_routes:
+  - direct single-step spin-basis Lagrangian RP under Sharatchandra Theta
+trace_gate_classification: direct_blocker_closure
+review_findings: "Pending independent review-loop/reviewer extraction."
+pr_status: pending
+next_exact_action: "Open PR for reviewer/auditor re-check."
+stop_condition: "PR opened with no audit edits."

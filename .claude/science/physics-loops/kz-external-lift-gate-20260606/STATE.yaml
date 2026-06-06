@@ -1,0 +1,28 @@
+loop_slug: kz-external-lift-gate-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 28
+current_goal: "Partially retire the PR484 K-Z external-lift gate by checking local SDP availability while preserving the primary-bracket blocker."
+target_status: open
+actual_current_surface_status: open
+active_route: "optional CVXPY execution path versus primary SU(3), beta=6 bracket provenance"
+hard_residual: "Explicit SU(3), beta=6 primary-source bracket or repo-owned SDP reproduction remains missing."
+branch: physics-loop/kz-external-lift-gate-20260606
+base_branch: origin/main
+files_touched:
+  - docs/GAUGE_SCALAR_KZ_EXTERNAL_LIFT_GATE_STATUS_NOTE_2026-06-06.md
+  - scripts/frontier_gauge_scalar_kz_external_lift_gate_status_2026_06_06.py
+  - logs/runner-cache/frontier_gauge_scalar_kz_external_lift_gate_status_2026_06_06.txt
+  - .claude/science/physics-loops/kz-external-lift-gate-20260606/
+open_imports:
+  - "Explicit SU(3), beta=6 primary-source bracket."
+  - "Repo-owned SDP reproduction at stated cutoff/solver/tolerance, if no primary-source table is available."
+no_go_routes:
+  - "Use K-Z SU(infinity) benchmark as target SU(3), beta=6 bracket."
+  - "Use W_lift = 0.05 as theorem-grade imported bound without provenance."
+  - "Revive PR484 parent-promotion language."
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass
+pr_status: "pending"
+next_exact_action: "Commit, push, open PR, then continue campaign."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

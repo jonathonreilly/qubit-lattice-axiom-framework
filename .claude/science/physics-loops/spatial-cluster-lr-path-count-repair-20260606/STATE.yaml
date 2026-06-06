@@ -1,0 +1,30 @@
+loop_slug: spatial-cluster-lr-path-count-repair-20260606
+branch: physics-loop/spatial-cluster-lr-path-count-repair-20260606
+base: origin/main
+target_claim_id: spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19
+target_status_before_branch: audited_failed
+actual_current_surface_status: bounded-support
+conditional_surface_status: cluster-decomposition support remains conditional on gap/filter lemma
+hypothetical_axiom_status: null
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+cycle: 4
+active_route: interaction-graph path-count repair
+hard_residual: >
+  The audited row failed because Lemma B used an unsupported union-growth
+  count and had metric/constant mismatches. This branch replaces it with a
+  fixed-degree interaction-graph chain count and ell_1 range convention.
+files_touched:
+  - docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md
+  - scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py
+  - logs/runner-cache/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.txt
+  - .claude/science/physics-loops/spatial-cluster-lr-path-count-repair-20260606/
+no_audit_result_edits: true
+new_axioms: false
+checks:
+  - python3 -m py_compile scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py
+  - python3 scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py --force --push-mode=none --allow-non-main --concurrency 1
+pr_status: pending
+next_exact_action: run branch hygiene checks, commit, push, open PR
+stop_condition: not reached

@@ -1,6 +1,6 @@
 # Finite-Λ Lieb-Robinson Bound and Conditional Cluster-Decomposition Support
 
-**Date:** 2026-05-19
+**Date:** 2026-05-19; 2026-06-06 interaction-graph path-count repair.
 **Status (source-side label):** bounded_theorem
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py`](../scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py)
@@ -42,13 +42,19 @@ H  =  Σ_{Z ⊆ Λ} h_Z                                                       (1
 
 where each `h_Z` is a self-adjoint bounded operator supported on a finite-diameter region `Z ⊆ Λ`. For the canonical physical Cl(3) local algebra on the `Z^3` spatial substrate with Wilson+staggered Hamiltonian:
 
-- **Plaquette / Wilson terms** `h_P`: supported on the four sites of an elementary plaquette `P`; `diam(P) = √2 · a`.
+- **Plaquette / Wilson terms** `h_P`: supported on the four sites of an
+  elementary plaquette `P`; in the lattice `ell_1` metric used below,
+  `diam_1(P) = 2a`.
 - **Staggered fermion terms** `h_{x,x+μ̂}`: nearest-neighbor hops; `diam = a`.
 - **On-site mass / Cl(3) terms** `h_x`: supported on `{x}`; `diam = 0`.
 
 In all cases:
 
-- **(H-range) Finite range.** Each `h_Z` has `diam(Z) ≤ R_0` for a finite `R_0 = √2 · a` (with `a = 1` in lattice units, so `R_0 = √2`).
+- **(H-range) Finite range.** Distances below use the lattice `ell_1`
+  metric. Each `h_Z` has `diam_1(Z) <= R_0` for a finite `R_0 = 2a`
+  (with `a = 1` in lattice units, so `R_0 = 2`): nearest-neighbor
+  staggered hops have diameter `a`, on-site terms have diameter `0`, and
+  elementary plaquette terms have `ell_1` diameter `2a`.
 - **(H-norm) Uniform norm bound.** Each `h_Z` has operator norm `‖h_Z‖ ≤ J` for a constant `J` independent of `Z`, depending only on the canonical normalization of the Wilson coupling `β`, the staggered hopping coefficient, and the physical Cl(3) on-site operator norms.
 - **(H-degree) Bounded local degree.** Each site `x ∈ Λ` is contained in at most `Z_max` distinct terms `h_Z`; for the canonical physical Cl(3) local algebra on the `Z^3` spatial substrate with Wilson+staggered Hamiltonian, `Z_max ≤ 12 + 6 + 1 = 19` (12 plaquettes per site on Z³, 6 nearest-neighbor hops, 1 on-site).
 
@@ -101,135 +107,132 @@ This is the structural locality that drives the Lieb-Robinson exponential bound:
 
 ---
 
-## §3. Lemma B — Triangle-inequality bound on nested commutators
+## §3. Lemma B — Interaction-graph chain count
 
-**Lemma B.** Let `C_n(A) := [H, [H, ..., [H, A]...]]` (n-fold nested commutator). Then
+The previous version counted arbitrary support-union growth sequences. That
+count was not a valid bounded-degree path estimate: at step `k`, the union may
+contain `O(k)` local terms, so a naive "choose anything touching the union"
+bound does not give a fixed branching factor. The repaired proof uses the
+standard interaction-graph chain count, which is the quantity needed for the
+commutator between two separated supports.
 
-```
-‖C_n(A)‖  ≤  (2 J)^n · N_paths(n, X) · ‖A‖                                (B.1)
-```
+Let `I_Lambda` be the finite set of local interaction supports `Z` with
+`h_Z != 0`. Define the interaction graph `G_I` on `I_Lambda` by joining two
+vertices `Z, Z'` when `Z ∩ Z' != empty`. Let
 
-where `N_paths(n, X)` is the number of length-n sequences `(Z_1, Z_2, ..., Z_n)` of local-term supports such that:
-
-- `Z_1 ∩ X ≠ ∅`,
-- `Z_{k+1} ∩ (Z_1 ∪ Z_2 ∪ ... ∪ Z_k ∪ X) ≠ ∅` for each `k ≥ 1`.
-
-In words: `N_paths(n, X)` counts paths of length `n` from `X` in the *interaction graph* (where two local-term supports `Z, Z'` are linked when they share a site, and `X` is a "seed" set).
-
-**Proof.** Iterate Duhamel:
-
-```
-A(t)  =  A  +  i ∫_0^t [H, A](s_1) ds_1
-      =  A  +  i ∫_0^t [H, A] ds_1  +  i² ∫_0^t ∫_0^{s_1} [H, [H, A]](s_2) ds_2 ds_1  +  ...
+```text
+D_I := max_Z |{Z' in I_Lambda : Z' ∩ Z != empty, Z' != Z}|.
 ```
 
-The n-fold iterated kernel is `(it)^n / n! · C_n(A)` (after expansion and time-ordering, the factor `t^n / n!` collects the nested integrals' volume). Hence we just need the operator-norm bound on `C_n(A)` itself.
+For the finite-range Wilson+staggered+on-site surface, `D_I` is finite. A
+coarse bound is `D_I <= s_max Z_max`, where
+`s_max := max_Z |Z| <= 4` for plaquettes/hops/on-site terms and
+`Z_max <= 19` is the number of local terms touching a site.
 
-Now `C_n(A) = Σ_{Z_1, ..., Z_n} [h_{Z_n}, [h_{Z_{n-1}}, ..., [h_{Z_1}, A]...]]`. By (P5) only sequences with the path-condition above contribute. For each surviving sequence,
+For local supports `X,Y`, define an interaction chain of length `n` from `X`
+to `Y` as a sequence `(Z_1,...,Z_n)` such that
 
+- `Z_1 ∩ X != empty`,
+- `Z_i ∩ Z_{i+1} != empty` for `1 <= i < n`,
+- `Z_n ∩ Y != empty`.
+
+Let `N_chain(n; X, Y)` be the number of such chains. Then
+
+```text
+N_chain(n; X, Y) <= N_X D_I^(n-1),     N_X := |{Z : Z ∩ X != empty}| <= Z_max |X|.  (B.1)
 ```
-‖[h_{Z_n}, [h_{Z_{n-1}}, ..., [h_{Z_1}, A]...]]‖  ≤  (2 J)^n · ‖A‖
+
+Also, if `R := dist_1(X,Y)` and every local term has `ell_1` diameter at most
+`R_0`, no chain can reach from `X` to `Y` unless
+
+```text
+n >= r := ceil(R / R_0).                                                   (B.2)
 ```
 
-by iterated `‖[X, Y]‖ ≤ 2 ‖X‖ ‖Y‖` and the uniform bound `‖h_{Z_k}‖ ≤ J`. Summing over the surviving sequences gives (B.1). ∎
+**Proof.** There are at most `N_X` choices for `Z_1`. Once `Z_i` is fixed,
+there are at most `D_I` adjacent choices for `Z_{i+1}`. This proves (B.1).
+For (B.2), a chain of `n` overlapping local terms can advance the `ell_1`
+distance from `X` by at most `n R_0`: the first support intersects `X`, each
+successive support overlaps the previous one, and each support has diameter at
+most `R_0`. Hence reaching `Y` requires `R <= n R_0`. ∎
 
-**Counting `N_paths(n, X)`.** Let `D := Z_max · ν(R_0)` where `ν(R_0)` is the number of distinct local-term supports `Z` of diameter `≤ R_0` containing a given site (for the canonical physical Cl(3) local algebra on the `Z^3` spatial substrate with Wilson+staggered case: `Z_max ≤ 19`). Then at each step in the path-growth, the new support `Z_{k+1}` must contain at least one site already in the union, so
-
-```
-N_paths(n, X)  ≤  |X| · D · (D + Z_max)^{n-1}  ≤  |X| · K^n                (B.2)
-```
-
-with `K := D + Z_max + 1`. This is a coarse but correct upper bound. (Tighter bounds in the literature use the structure of the interaction graph more carefully; we use the loose bound here because it is sufficient for the finite-volume Lieb-Robinson support claim.)
+This chain count is deliberately coarser than optimized Lieb-Robinson
+interaction-norm estimates, but it has the needed fixed branching factor and
+is sufficient for the finite-volume LR support theorem.
 
 ---
 
 ## §4. Lemma C — Lieb-Robinson bound from primitives
 
-**Lemma C.** Let `A`, `B` be local observables with `supp(A) ⊆ X`, `supp(B) ⊆ Y`, and `R := dist(X, Y)`. Then for all `t ∈ R`:
+**Lemma C.** Let `A`, `B` be local observables with `supp(A) subset X`,
+`supp(B) subset Y`, and `R := dist_1(X,Y)`. Set
 
-```
-‖[A(t), B]‖  ≤  2 |X| · ‖A‖ · ‖B‖ · exp(2 J K |t|) · ((2 J K |t|)·e/R)^{R/R_0} · (1/(R/R_0))^{R/R_0}   (C.1)
-```
-
-which simplifies (via Stirling and the standard "tail of an exponential series" estimate) to:
-
-```
-‖[A(t), B]‖  ≤  C_0 · |X| · ‖A‖ · ‖B‖ · exp(-(R - v_LR |t|) / ξ)           (C.2)
+```text
+r := ceil(R / R_0),          lambda := 2 J D_I |t|.
 ```
 
-with
+Then for all `t in R`,
 
-```
-v_LR  :=  2 · J · K · R_0 · e         (Lieb-Robinson velocity)             (C.3)
-ξ     :=  R_0                          (correlation length scale)          (C.4)
-C_0   :=  2                            (numerical constant)
+```text
+||[A(t), B]|| <= 2 ||A|| ||B|| N_X sum_{n >= r} lambda^n / n!.             (C.1)
 ```
 
-**Proof.** Start from the Duhamel expansion of `A(t)`:
+Consequently, for the useful regime `lambda <= r/2`,
 
-```
-A(t)  =  Σ_{n=0}^∞  (it)^n / n!  ·  C_n(A)                                 (C.5)
-```
-
-where the sum converges in norm because `‖C_n(A)‖ ≤ (2J)^n N_paths · ‖A‖ ≤ (2 J K)^n |X| ‖A‖`. Bracketing against `B`:
-
-```
-[A(t), B]  =  Σ_{n=0}^∞  (it)^n / n!  ·  [C_n(A), B].                       (C.6)
+```text
+||[A(t), B]|| <= 4 ||A|| ||B|| N_X (e lambda / r)^r.                       (C.2)
 ```
 
-By Lemma A's direct corollary (A.3), the terms with `n < R/R_0` have `[C_n(A), B] = 0`. Hence
+Equivalently, after the usual coarse light-cone packaging, there are finite
+constants
 
-```
-‖[A(t), B]‖  ≤  Σ_{n ≥ R/R_0}  |t|^n / n!  ·  ‖[C_n(A), B]‖
-            ≤  Σ_{n ≥ R/R_0}  |t|^n / n!  ·  2 ‖B‖ ·  (2 J)^n  · |X| · K^n · ‖A‖
-            =  2 |X| ‖A‖ ‖B‖  ·  Σ_{n ≥ R/R_0}  (2 J K |t|)^n / n!.        (C.7)
-```
-
-Define `λ := 2 J K |t|` and `m := ⌈R/R_0⌉` (the first index in the sum). The tail of the exponential series satisfies the standard bound (proved below):
-
-```
-Σ_{n ≥ m}  λ^n / n!  ≤  exp(λ) · (λ · e / m)^m         (whenever λ < m)    (C.8)
+```text
+v_LR := 2 e J D_I R_0,          xi := R_0 / log 2,          C_0 := 4 Z_max,
 ```
 
-so (C.7) gives
+such that in the strict spacelike region with the stated margin,
 
-```
-‖[A(t), B]‖  ≤  2 |X| ‖A‖ ‖B‖ · exp(2 J K |t|) · (2 J K |t| · e / (R/R_0))^{R/R_0}.  (C.9)
-```
-
-This is (C.1). To convert to the canonical Lieb-Robinson exponential form (C.2):
-
-```
-exp(2 J K |t|) · (2 J K |t| · e / (R/R_0))^{R/R_0}
-  =  exp(2 J K |t|) · exp((R/R_0) · log(2 J K |t| · e / (R/R_0)))
-  =  exp(2 J K |t|  -  (R/R_0) · log((R/R_0) / (2 J K |t| · e)))
-  =  exp(2 J K |t|  -  (R/R_0) · [log(R/R_0) - log(2 J K |t|) - 1]).        (C.10)
+```text
+||[A(t), B]|| <= C_0 |X| ||A|| ||B|| exp(-(R - v_LR |t|) / xi).            (C.3)
 ```
 
-For `R/R_0 > 2 · 2 J K |t| · e`, the bracket is `≥ log(2)`, and we may bound
+Outside that region the universal ceiling
+`||[A(t),B]|| <= 2||A||||B||` is retained. Thus the theorem supplies the
+finite-volume Lieb-Robinson light-cone structure with explicit finite
+constants; no optimized uniform-in-volume constant is claimed.
 
-```
-... ≤ exp(- (R/R_0 - 2 J K R_0 · e · |t|/R_0) · log(2)).                    (*)
-```
+**Proof.** Use the standard Duhamel commutator recursion, not the invalid
+union-growth sequence count. Expanding iteratively and bracketing with `B`,
+only interaction chains from `X` to `Y` can contribute: a nonzero contribution
+must contain a sequence of local terms whose consecutive supports overlap,
+starting at `X` and ending at `Y`. For each length-`n` chain the nested
+commutator norm is bounded by `(2J)^n ||A||`, and the final commutator with
+`B` contributes the factor `2||B||`. Lemma B gives at most
+`N_X D_I^(n-1) <= N_X D_I^n` chains and no chain can contribute for
+`n < r`. Therefore
 
-Setting `v_LR := 2 J K R_0 e` and `ξ := R_0 / log 2 ≤ R_0`, we obtain
-
-```
-‖[A(t), B]‖  ≤  2 |X| ‖A‖ ‖B‖ · exp(- (R - v_LR |t|) / ξ)                   (C.11)
-```
-
-for `R > v_LR |t| · e / log 2`, i.e. inside the strict Lieb-Robinson light cone with margin. For the conventional statement we absorb the `log 2` into `ξ` (giving `ξ = R_0 / log 2 ≤ 1.45 R_0` in lattice units), or equivalently inflate `v_LR` by `log 2` to absorb into the exponent base.
-
-**Proof of (C.8).** For `λ < m`:
-
-```
-Σ_{n ≥ m}  λ^n / n!  =  λ^m / m!  ·  Σ_{k ≥ 0}  λ^k · m! / (m+k)!
-                    ≤  λ^m / m!  ·  Σ_{k ≥ 0}  (λ/m)^k                       [(m+k)!/m! ≥ m^k]
-                    =  λ^m / m!  ·  1/(1 - λ/m)
-                    ≤  λ^m / m!  ·  2                          if λ ≤ m/2.
+```text
+||[A(t), B]||
+  <= 2 ||A|| ||B|| sum_{n >= r} |t|^n/n! (2J)^n N_X D_I^n
+  =  2 ||A|| ||B|| N_X sum_{n >= r} lambda^n/n!,
 ```
 
-Stirling: `m! ≥ (m/e)^m`, so `λ^m / m! ≤ (λ e / m)^m`. Hence `Σ_{n ≥ m} λ^n / n! ≤ 2 (λ e / m)^m ≤ exp(λ) · (λ e / m)^m` for `λ ≤ m/2`. For `λ > m/2`, we just keep the trivial `exp(λ)` bound; the case `λ < m` covered by (C.10) refinement is the only regime in which the Lieb-Robinson exponential is useful (inside the strict light cone). ∎
+which is (C.1).
+
+For `lambda <= r/2`,
+
+```text
+sum_{n >= r} lambda^n/n!
+  = lambda^r/r! sum_{k >= 0} lambda^k r!/(r+k)!
+  <= lambda^r/r! sum_{k >= 0} (lambda/r)^k
+  <= 2 lambda^r/r!
+  <= 2 (e lambda/r)^r,
+```
+
+using `(r+k)!/r! >= r^k` and Stirling `r! >= (r/e)^r`. This proves (C.2).
+If `R` is large compared with `v_LR |t|`, the last expression is bounded by
+the exponential form (C.3) after using `N_X <= Z_max |X|`, setting
+`C_0 = 4 Z_max`, and taking `xi = R_0/log 2`. ∎
 
 ---
 
@@ -317,7 +320,8 @@ On a finite connected `Λ ⊂ Z³` with the canonical physical Cl(3) local algeb
 ‖[A(t), B]‖  ≤  C_0 · |X| · ‖A‖ ‖B‖ · exp(-(R - v_LR |t|) / ξ)             (LR)
 ```
 
-with `v_LR = 2 J K R_0 e` and `ξ = R_0 / log 2`, where `J`, `K`, `R_0` are the constants of §1 + Lemma B.
+with `v_LR = 2 e J D_I R_0` and `ξ = R_0 / log 2`, where `J`, `D_I`, and
+`R_0` are the constants of §1 + Lemma B.
 
 **Proof:** §2 (Lemma A) + §3 (Lemma B) + §4 (Lemma C).
 

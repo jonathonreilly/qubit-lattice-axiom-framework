@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 702 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1274 |
+| unaudited | 1273 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 69 |
+| ~~audited_conditional~~ | 70 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1108 |
-| `audited_conditional` | 69 |
+| `audited_conditional` | 70 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1581 |
+| `unaudited` | 1580 |
 
 | claim_type | count |
 |---|---:|
@@ -1301,6 +1301,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_supplied_family_lift_certificate_interface_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -14627,6 +14628,26 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** A pre-record density matrix plus a supplied projective instrument and Born trace rule gives a probability vector over possible future record atoms, e.g. p_Z=(Tr(P_0 rho), Tr(P_1 rho))=(2/3, 1/3) and p_X=(1/2+sqrt(2)/3, 1/2-sqrt(2)/3).  _(class `A`)_
 - **chain closes:** False — The displayed matrix arithmetic closes once rho, the projectors, and the Born trace rule are supplied. The restricted packet does not derive the supplied instrument or Born trace bridge from an axiom or retained authority, so the chain does not close unconditionally.
 - **rationale:** Independent matrix checks confirm that rho has trace 1 and determinant 0, that the Z and X projectors are complete, and that the Born traces give the displayed probability vectors. The one-hot atoms, integral count updates, fractional ensemble expectation, selective states, and nonselective state also check. However, the production kernel uses the supplied projective instrument and Born trace rule as explicit open bridges; the packet contains no cited retained authority deriving them from Record or Quantum alone. The source therefore supports only the stated conditional theorem.
+- **auditor confidence:** high
+
+### `record_production_interface_principle_2026-06-06`
+
+- **Note:** [`RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md`](../../docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded typing/interface claim that pre-record predictive quantum surfaces, formation bridges, and post-record atom/count/readout dynamics are distinct layers and that post-record counts alone do not supply probabilities, instruments, rates, carrier choice, or dial selection.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-201521-e17ff3767d-record_production_interface_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The interface follows from the three-axiom type split: Quantum supplies the pre-record qubit algebra, Record supplies durable realized-outcome registration and finite additive readout, and Record explicitly withholds record-production dynamics and probability.  _(class `A`)_
+- **chain closes:** False — The type-set arithmetic in the runner and the toy one-hot/count examples check out independently. The restricted packet does not provide the full axiom authority or Record-stack notes as cited retained-grade inputs, while the runner relies on those external note files by substring checks, so the axiom-boundary derivation is not closed inside the packet.
+- **rationale:** The runner is not a first-principles physics derivation; it combines text-presence checks across repo notes with finite set/Fraction consistency checks. The independent math inventory finds no error in the displayed toy identities: the Born vector is normalized, one-hot realized atoms are distinct from it, realized count updates are integral, and the expected update is fractional ensemble data. However, the load-bearing axiom boundary is imported through docs not supplied as one-hop authorities in the restricted packet, so the conclusion remains conditional on those missing dependency edges being properly cited and retained or explicitly flagged as accepted axiom premises.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-06-05.md`
+  - `RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md`
+  - `RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md`
+  - `RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`
+  - `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`
+  - `RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 313,
     "high": 255,
-    "leaf": 430,
+    "leaf": 429,
     "medium": 354
   },
   "cycle_break_target_count": 6,
@@ -28298,28 +28298,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_measure_positivity_agnostic_note_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_measure_positivity_agnostic_2026_05_31.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_function_finite_sector_algebra_2026-06-05",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -40440,6 +40418,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 91,
-  "total_pending": 1352
+  "ready_count": 90,
+  "total_pending": 1351
 }

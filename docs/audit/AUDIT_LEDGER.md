@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 187 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 682 |
+| **retained_bounded** | 683 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1350 |
+| unaudited | 1349 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1063 |
+| `audited_clean` | 1064 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1656 |
+| `unaudited` | 1655 |
 
 | claim_type | count |
 |---|---:|
@@ -407,6 +407,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_native_beta_no_half_attractor_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5768,6 +5769,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Applying d log|f| = Re(df/f) to f = det M(j), Jacobi's formula gives ∂_x log|det M(j)| = Re Tr[M(j)^(-1) ∂M/∂j_x], and for M(j)=D+diag(j), ∂M/∂j_x=P_x.  _(class `A`)_
 - **chain closes:** True — The proof closes by standard finite-dimensional calculus: Jacobi's determinant formula, d log|f| = Re(df/f) for nonzero complex f, and the elementary derivative ∂(D+diag j)/∂j_x=P_x. The trace/projector identity Tr[A P_x]=A_xx is correct with the stated matrix convention.
 - **rationale:** The audited claim is narrow and finite-dimensional, with no dependence on the Record axiom or on the cited physics residuals. The displayed identities, absolute-value convention, real-part convention, projector normalization, and trace/index contraction are internally consistent. The runner performs genuine numerical sanity checks of the finite algebra rather than printing constants or importing the contested premise; it is corroborative but not needed for the proof closure.
+- **auditor confidence:** high
+
+### `flavor_measure_positivity_agnostic_note_2026-05-31`
+
+- **Note:** [`FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md`](../../docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the three finite algebraic checks in the packet: count-blind OS Gram positivity for the displayed covariance, central qubit Bargmann complex structure distinct from J_cs, and the displayed Hermitian readout identity for the tested r values; no exhaustive selector or r=1/2 closure is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-172841-204f5224f6-flavor_measure_positivity_ag`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The displayed checks are agnostic to the det_C versus det_R count: OS Gram positivity holds for both count realizations, the Bargmann complex structure is central iI_3 rather than J_cs, and the Hermitian readout identity Q=(1+2r)/3 holds for the tested r values.  _(class `A`)_
+- **chain closes:** True — The narrow claim closes from the displayed finite matrices and formulas. The excluded stronger bridge from these checks to det_C selection or to fixing r=1/2 is not needed and is explicitly outside scope.
+- **rationale:** The runner performs actual finite matrix checks rather than merely printing constants, and there are no helper imports or external comparators. Independently, G(t_i+t_j) factors as a positive outer product, so the two-real block is just two PSD copies; (C-C^2)/sqrt(3) has eigenvalues 0,±i and is not central iI_3; and eigenvalues 1+2β,1-β,1-β give Q=(3+6β^2)/9=(1+2r)/3. These computations establish only the repaired bounded nonselection/readout-class claim, not the superseded exhaustion claim.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

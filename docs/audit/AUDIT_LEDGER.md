@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 699 |
+| **retained_bounded** | 700 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1283 |
+| unaudited | 1282 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,22 +61,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1102 |
+| `audited_clean` | 1103 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 59 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1590 |
+| `unaudited` | 1589 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1331 |
+| `bounded_theorem` | 1332 |
 | `decoration` | 53 |
 | `meta` | 322 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 762 |
+| `positive_theorem` | 761 |
 
 | criticality | count |
 |---|---:|
@@ -921,6 +921,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_supplied_concentration_certificate_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_kernel_selection_rule_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_orientation_bridge_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_supplied_selection_rule_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -14019,6 +14020,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given a supplied finite law, supplied orientation bridge, supplied directed event/statistic, and exact enumeration, one obtains a law-scoped directed certificate under that supplied bridge.  _(class `A`)_
 - **chain closes:** True — The chain closes for the stated finite interface because orientation is explicitly supplied and event probabilities are finite sums over the oriented law. Independent checks of the displayed toy identities give endpoint probabilities 1/2 forward and 0 reverse, while count pushforwards are unchanged by word reversal.
 - **rationale:** The load-bearing step is an algebraic finite-enumeration closure over supplied inputs, not a derivation of a physical arrow, clock, or kernel. The runner source computes the relevant probabilities and kernel row normalizations rather than merely printing constants, and the source note explicitly limits transport across laws and orientations. Source-anchor checks read support notes, but they are not load-bearing authorities for deriving the interface claim itself.
+- **auditor confidence:** high
+
+### `post_record_supplied_selection_rule_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_SUPPLIED_SELECTION_RULE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_SUPPLIED_SELECTION_RULE_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For supplied finite candidate scores, a supplied total tie-priority order, and a positive winning margin, the lexicographic selector is unique and stable under uniform score perturbations below half the margin; no derivation of candidates, scores, rules, physical probabilities, or a dial setting is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-195623-6040318279-post_record_supplied_selecti`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If the winning score gap is Delta > 0, then the selected candidate is stable under any score perturbation bounded by epsilon < Delta/2 on every candidate.  _(class `A`)_
+- **chain closes:** True — For every challenger, the perturbed winner-minus-challenger gap is at least Delta - 2epsilon, which remains positive when epsilon < Delta/2. The selector and stability claim therefore close by finite-order and rational-inequality algebra under the stated supplied inputs.
+- **rationale:** The load-bearing math is an algebraic finite-margin argument, not a physical derivation or numerical comparator. Independent checking of the displayed fractions confirms the finite selector gap, half-gap boundary, likelihood/posterior toy examples, and dial-score gap used by the runner. The runner's source-anchor and hard-coded firewall checks are supportive scope checks, while the audited conclusion itself is only the conditional supplied-rule selection theorem. The note explicitly does not claim to derive the candidate set, score map, priority rule, probability law, or dial landscape.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

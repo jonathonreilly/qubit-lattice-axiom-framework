@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_supplied_selection_rule_interface_2026_06_06.py
+runner_sha256: 893bd25252ed3fbff992f78182083fe23bce4592b5c76bc16bffd4dbea2d3465
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -68,3 +76,6 @@ SUPPLIED_SELECTION_RULE_INTERFACE=TRUE
 POSITIVE_MARGIN_IMPLIES_LOCAL_STABILITY=TRUE
 RECORD_DERIVES_SELECTION_RULE=FALSE
 GENERATION_OR_KOIDE_DIAL_FORCED=FALSE
+
+----- stderr -----
+

@@ -1,0 +1,62 @@
+loop_slug: post-record-retained-unbounded-dynamics-gate-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 33
+date: 2026-06-06
+branch: physics-loop/post-record-retained-unbounded-dynamics-gate-20260606
+base: physics-loop/post-record-dynamics-campaign-closeout-index-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2868"
+goal: |
+  Turn the post-record dynamics closeout stack into a branch-local gate map for
+  retained and unbounded movement.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: retained/unbounded dynamics gate map
+files_touched:
+  - docs/POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md
+  - scripts/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-retained-unbounded-dynamics-gate-20260606/*
+runner_summary: "SUMMARY: PASS=54 FAIL=0"
+gate_results:
+  post_record_retained_unbounded_dynamics_gate: true
+  gate_rows: 8
+  finite_certificates_remain_bounded: true
+  unbounded_family_lift_required: true
+  pre_record_law_carries_probability: true
+  post_record_site_carries_realized_information: true
+open_imports:
+  - "independent audit remains required before effective retained interpretation"
+  - "unbounded family lift is not derived by finite enumeration alone"
+  - "production kernel, target weights, selector rule, and dial selection remain supplied inputs when used"
+no_go_routes:
+  - "Record alone derives physical arrow"
+  - "Record alone selects production kernel"
+  - "Record alone derives target vector, weights, or selector rule"
+  - "finite enumeration alone proves an unbounded retained claim"
+  - "stable location forces or selects the dial"
+review_findings: "local review clean: runner PASS=54 FAIL=0; py_compile clean; cached summary present; overclaim/firewall grep clean; loop pack has 13 files; git diff --check clean"
+pr_status: not_opened
+pr_url: null
+pr_number: null
+cycle_status: review_clean
+mergeable: null
+merge_state_status: null
+checks: null
+next_exact_action: |
+  Commit, push, open a stacked PR, and verify GitHub status.
+stop_condition: |
+  Satisfied when the stacked PR is open, mergeable/clean or settled with
+  recorded CI status, and the 12-hour campaign clock is exhausted or closeout is
+  complete.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "finite dynamics stack gives retained/unbounded gate map"
+  hypothetical_axiom_status: "unbounded family lift would still need independent audit"
+  admitted_observation_status: "admitted samples can produce empirical targets, not probability laws"
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch does not apply audit verdicts, promote claims, select a production kernel, or force any dial."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

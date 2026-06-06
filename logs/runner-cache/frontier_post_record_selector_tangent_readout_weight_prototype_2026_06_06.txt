@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
-runner_sha256: 53607c332deebc2c438380a573b33800a71f7db1f6767eb1f9c2dd0734e670d6
+runner_sha256: 6ff754f6f4c81ab2b74ecbeb88bc935287ab7b6aaa69dfa9dfcdabc8268870b9
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 1.03
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.79
+status: ok
 ----- stdout -----
 
 ------------------------------------------------------------------------------
@@ -15,7 +15,7 @@ PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md co
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: finite readout/tangent weight certificate
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: Does not derive a selector, tangent metric, Hessian
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `selector_tangent_readout_weight` | 6
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `selector_tangent_readout_weight` | 7
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: selector/tangent readout-weight rows need a supplied readout/tangent bridge
 PASS docs/YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md exists
 PASS docs/YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md contains: Exact Hessian Selector Uniqueness Note
@@ -44,11 +44,11 @@ PASS negative supplied weights are rejected
 ------------------------------------------------------------------------------
 Selector/tangent row checks
 ------------------------------------------------------------------------------
-FAIL selector/tangent row count is current snapshot :: 7
+PASS selector/tangent row count is current snapshot :: 7
 PASS representative row present: dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16
 PASS representative row present: teleportation_preparation_readout_probe_note
 PASS representative row present: yt_exact_hessian_selector_uniqueness_note
-PASS audit ledger hash is unchanged :: ab64ffd7075ae0e405976dc6e5203c76193ce78e821ed6a31b6391b9ad50a3a4
+PASS audit ledger hash is unchanged :: 85559fba1ddb84122bb0e31446bca716a83e65930b81222074e0b328d767acf7
 
 Selector/tangent/readout rows:
   dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md
@@ -74,7 +74,7 @@ PASS Record-derived Born law flag is false
 PASS production dynamics derived flag is false
 PASS Record-derived physical arrow flag is false
 
-SUMMARY: PASS=41 FAIL=1
+SUMMARY: PASS=42 FAIL=0
 SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=7
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE

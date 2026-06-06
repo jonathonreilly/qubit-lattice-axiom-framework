@@ -24,7 +24,7 @@ supplied finite tangent/readout carrier
   => finite readout/tangent weight certificate
 ```
 
-The prototype covers all `6` `selector_tangent_readout_weight` rows from the
+The prototype covers all `7` `selector_tangent_readout_weight` rows from the
 measure/weight subdivision.
 
 ## Meaning
@@ -64,7 +64,7 @@ bare_retained_allowed: false
 ## Runner certificate
 
 The runner verifies source anchors, exact finite normalization, a positive
-supplied Hessian/metric check, projection weights, the 6-row bucket, unchanged
+supplied Hessian/metric check, projection weights, the 7-row bucket, unchanged
 audit ledger hash, and firewalls against selector authority, Born law, physical
 measure, production dynamics, and audit verdicts.
 

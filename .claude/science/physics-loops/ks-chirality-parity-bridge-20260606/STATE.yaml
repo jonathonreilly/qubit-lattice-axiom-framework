@@ -1,0 +1,30 @@
+loop_slug: ks-chirality-parity-bridge-20260606
+target_status: exact-support
+active_route: direct_blocker_closure
+base_commit: b9869fd67
+branch: physics-loop/ks-chirality-parity-bridge-20260606
+target_claims:
+  - staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03
+  - axiom_first_lattice_noether_theorem_note_2026-04-29
+target_blocker: "H_staggered_chirality was an explicit conditional premise; Noether packet lacked a same-packet bridge for the KS phase/chirality sign surface."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py
+  - logs/runner-cache/staggered_dirac_chirality_parity_bridge_2026_06_06.txt
+  - docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md
+  - scripts/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.py
+  - logs/runner-cache/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.txt
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+verification:
+  - python3 -m py_compile scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py scripts/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.py
+  - python3 scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py
+  - python3 scripts/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.py
+  - python3 scripts/cached_runner_output.py scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py --check-only
+  - python3 scripts/cached_runner_output.py scripts/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.py --check-only
+  - python3 scripts/cached_runner_output.py scripts/axiom_first_lattice_noether_check.py --check-only
+next_exact_action: "Independent reviewer should decide whether the bridge is enough to re-audit the KS companion and the Noether row; do not merge audit verdict changes from this PR."

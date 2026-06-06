@@ -1,0 +1,232 @@
+{
+  "claim_id": "lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29",
+  "note": "docs/LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md",
+  "manifest": {
+    "endpoint_runner": "scripts/lattice_3d_dense_z2_z6_endpoint_check.py",
+    "dense_helper_source": "scripts/lattice_3d_dense_10prop.py",
+    "endpoint_cache": "logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt",
+    "dense_helper_cache": "logs/runner-cache/lattice_3d_dense_10prop.txt"
+  },
+  "summary": {
+    "pass": 43,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "manifest_path_exists:endpoint_runner",
+      "pass": true,
+      "detail": "scripts/lattice_3d_dense_z2_z6_endpoint_check.py"
+    },
+    {
+      "name": "note_links_manifest_path:endpoint_runner",
+      "pass": true,
+      "detail": "scripts/lattice_3d_dense_z2_z6_endpoint_check.py"
+    },
+    {
+      "name": "manifest_path_exists:dense_helper_source",
+      "pass": true,
+      "detail": "scripts/lattice_3d_dense_10prop.py"
+    },
+    {
+      "name": "note_links_manifest_path:dense_helper_source",
+      "pass": true,
+      "detail": "scripts/lattice_3d_dense_10prop.py"
+    },
+    {
+      "name": "manifest_path_exists:endpoint_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt"
+    },
+    {
+      "name": "note_links_manifest_path:endpoint_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt"
+    },
+    {
+      "name": "manifest_path_exists:dense_helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/lattice_3d_dense_10prop.txt"
+    },
+    {
+      "name": "note_links_manifest_path:dense_helper_cache",
+      "pass": true,
+      "detail": "logs/runner-cache/lattice_3d_dense_10prop.txt"
+    },
+    {
+      "name": "source_untruncated:endpoint_runner",
+      "pass": true,
+      "detail": "scripts/lattice_3d_dense_z2_z6_endpoint_check.py has 3718 bytes"
+    },
+    {
+      "name": "source_marker:endpoint_runner:from scripts import lattice_3d_dense_10prop as dense",
+      "pass": true,
+      "detail": "from scripts import lattice_3d_dense_10prop as dense present"
+    },
+    {
+      "name": "source_marker:endpoint_runner:dense.generate",
+      "pass": true,
+      "detail": "dense.generate present"
+    },
+    {
+      "name": "source_marker:endpoint_runner:dense.setup_slits",
+      "pass": true,
+      "detail": "dense.setup_slits present"
+    },
+    {
+      "name": "source_marker:endpoint_runner:dense.make_field",
+      "pass": true,
+      "detail": "dense.make_field present"
+    },
+    {
+      "name": "source_marker:endpoint_runner:dense.propagate",
+      "pass": true,
+      "detail": "dense.propagate present"
+    },
+    {
+      "name": "source_marker:endpoint_runner:dense.detector_probs",
+      "pass": true,
+      "detail": "dense.detector_probs present"
+    },
+    {
+      "name": "source_marker:endpoint_runner:dense.detector_centroid",
+      "pass": true,
+      "detail": "dense.detector_centroid present"
+    },
+    {
+      "name": "source_marker:endpoint_runner:dense.near_mass_window_gain",
+      "pass": true,
+      "detail": "dense.near_mass_window_gain present"
+    },
+    {
+      "name": "source_marker:endpoint_runner:dense.mass_side_channel_bias",
+      "pass": true,
+      "detail": "dense.mass_side_channel_bias present"
+    },
+    {
+      "name": "source_marker:endpoint_runner:dense.classify_sign",
+      "pass": true,
+      "detail": "dense.classify_sign present"
+    },
+    {
+      "name": "source_marker:endpoint_runner:ASSERTIONS:",
+      "pass": true,
+      "detail": "ASSERTIONS: present"
+    },
+    {
+      "name": "source_untruncated:dense_helper_source",
+      "pass": true,
+      "detail": "scripts/lattice_3d_dense_10prop.py has 18865 bytes"
+    },
+    {
+      "name": "source_marker:dense_helper_source:def generate",
+      "pass": true,
+      "detail": "def generate present"
+    },
+    {
+      "name": "source_marker:dense_helper_source:def propagate",
+      "pass": true,
+      "detail": "def propagate present"
+    },
+    {
+      "name": "source_marker:dense_helper_source:def make_field",
+      "pass": true,
+      "detail": "def make_field present"
+    },
+    {
+      "name": "source_marker:dense_helper_source:def setup_slits",
+      "pass": true,
+      "detail": "def setup_slits present"
+    },
+    {
+      "name": "source_marker:dense_helper_source:def detector_probs",
+      "pass": true,
+      "detail": "def detector_probs present"
+    },
+    {
+      "name": "source_marker:dense_helper_source:def detector_centroid",
+      "pass": true,
+      "detail": "def detector_centroid present"
+    },
+    {
+      "name": "source_marker:dense_helper_source:def near_mass_window_gain",
+      "pass": true,
+      "detail": "def near_mass_window_gain present"
+    },
+    {
+      "name": "source_marker:dense_helper_source:def mass_side_channel_bias",
+      "pass": true,
+      "detail": "def mass_side_channel_bias present"
+    },
+    {
+      "name": "source_marker:dense_helper_source:def classify_sign",
+      "pass": true,
+      "detail": "def classify_sign present"
+    },
+    {
+      "name": "source_marker:dense_helper_source:for z_mass in [2, 3, 4, 5]",
+      "pass": true,
+      "detail": "for z_mass in [2, 3, 4, 5] present"
+    },
+    {
+      "name": "cache_runner_matches:endpoint_cache",
+      "pass": true,
+      "detail": "scripts/lattice_3d_dense_z2_z6_endpoint_check.py == scripts/lattice_3d_dense_z2_z6_endpoint_check.py"
+    },
+    {
+      "name": "cache_sha_fresh:endpoint_cache",
+      "pass": true,
+      "detail": "bcc555d882ffe0f8363c32488738949624c6cd783789dc0dda7002f2a1349f7f == bcc555d882ffe0f8363c32488738949624c6cd783789dc0dda7002f2a1349f7f"
+    },
+    {
+      "name": "cache_exit_ok:endpoint_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:endpoint_cache:ASSERTIONS: PASS",
+      "pass": true,
+      "detail": "ASSERTIONS: PASS"
+    },
+    {
+      "name": "cache_snippet_present:endpoint_cache:hierarchy-aligned support: 5/5 points",
+      "pass": true,
+      "detail": "hierarchy-aligned support: 5/5 points"
+    },
+    {
+      "name": "cache_snippet_present:endpoint_cache: 6 +5.723120e-04 +5.356147e-04 +1.115616e-04   ATTRACTIVE",
+      "pass": true,
+      "detail": " 6 +5.723120e-04 +5.356147e-04 +1.115616e-04   ATTRACTIVE"
+    },
+    {
+      "name": "cache_runner_matches:dense_helper_cache",
+      "pass": true,
+      "detail": "scripts/lattice_3d_dense_10prop.py == scripts/lattice_3d_dense_10prop.py"
+    },
+    {
+      "name": "cache_sha_fresh:dense_helper_cache",
+      "pass": true,
+      "detail": "1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e == 1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e"
+    },
+    {
+      "name": "cache_exit_ok:dense_helper_cache",
+      "pass": true,
+      "detail": "exit_code=0 status=ok"
+    },
+    {
+      "name": "cache_snippet_present:dense_helper_cache:3D DENSE LATTICE: CANONICAL 10-PROPERTY CARD",
+      "pass": true,
+      "detail": "3D DENSE LATTICE: CANONICAL 10-PROPERTY CARD"
+    },
+    {
+      "name": "cache_snippet_present:dense_helper_cache:Distance z=5: centroid=+0.000693",
+      "pass": true,
+      "detail": "Distance z=5: centroid=+0.000693"
+    },
+    {
+      "name": "cache_snippet_present:dense_helper_cache:Hierarchy-aligned support: 4/4 points",
+      "pass": true,
+      "detail": "Hierarchy-aligned support: 4/4 points"
+    }
+  ],
+  "audit_status_authority": "independent audit lane only"
+}

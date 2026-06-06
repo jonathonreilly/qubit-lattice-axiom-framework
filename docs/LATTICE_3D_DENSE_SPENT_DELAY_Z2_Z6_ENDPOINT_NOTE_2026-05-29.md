@@ -4,6 +4,10 @@
 **Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/lattice_3d_dense_z2_z6_endpoint_check.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_check.py)
+**Cached runner output:** [`logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt`](../logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt)
+**Source packet verifier:** [`scripts/lattice_3d_dense_z2_z6_source_packet_manifest_2026_06_05.py`](../scripts/lattice_3d_dense_z2_z6_source_packet_manifest_2026_06_05.py)
+**Source packet verifier cache:** [`logs/runner-cache/lattice_3d_dense_z2_z6_source_packet_manifest_2026_06_05.txt`](../logs/runner-cache/lattice_3d_dense_z2_z6_source_packet_manifest_2026_06_05.txt)
+**Source packet verifier JSON:** [`outputs/lattice_3d_dense_z2_z6_source_packet_manifest_2026_06_05.json`](../outputs/lattice_3d_dense_z2_z6_source_packet_manifest_2026_06_05.json)
 
 ## Purpose
 
@@ -17,6 +21,23 @@ checks the previously omitted `z=6` row alongside `z=2..5`.
 
 No new axiom, observed target value, fitted selector, or external comparator is
 introduced. The scope is the finite dense spent-delay harness only.
+
+## 2026-06-05 Source Packet Exposure Repair
+
+The current audit blocker is packet completeness: the endpoint runner imports
+the dense harness for lattice generation, field construction, propagation,
+detector probabilities, centroid readout, and sign classification. This repair
+makes that transitive source path explicit:
+
+- Endpoint runner: [`scripts/lattice_3d_dense_z2_z6_endpoint_check.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_check.py)
+- Endpoint cache: [`logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt`](../logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_check.txt)
+- Dense harness helper source: [`scripts/lattice_3d_dense_10prop.py`](../scripts/lattice_3d_dense_10prop.py)
+- Dense harness helper cache: [`logs/runner-cache/lattice_3d_dense_10prop.txt`](../logs/runner-cache/lattice_3d_dense_10prop.txt)
+
+The source packet verifier above checks that these paths are linked from this
+note, that the helper source is untruncated, that the endpoint runner imports
+and calls the helper functions, and that the endpoint/helper caches are
+SHA-fresh. This does not set an audit verdict.
 
 ## Live Endpoint Runner
 

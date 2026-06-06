@@ -36,13 +36,13 @@ no_go_routes:
   - "Record => path/channel/character rule"
   - "character/path/channel weight => Born law"
 review_findings: "local review pass: py_compile, cached summary, ASCII scan, overclaim scan, 13-file loop pack, git diff --check"
-pr_status: open_initial_unstable
+pr_status: open_clean
 pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2846"
 pr_number: 2846
-cycle_status: waiting_for_audit_pipeline
+cycle_status: complete
 next_exact_action: |
-  Poll PR #2846 until `audit_pipeline` completes, then record the final clean
-  PR state if the check succeeds.
+  Continue campaign to the next ranked selector/tangent or directed-certificate
+  lane while runtime remains.
 stop_condition: |
   Satisfied when the runner passes, local review is clean, the branch is pushed,
   and the stacked PR is open and verified.
@@ -51,6 +51,10 @@ pr_verification:
   initial_mergeable: MERGEABLE
   initial_merge_state_status: UNSTABLE
   initial_checks: "audit_pipeline QUEUED"
+  final_head: "e88f908ae5e55fd4bec86cad105455d4d6c46306"
+  final_mergeable: MERGEABLE
+  final_merge_state_status: CLEAN
+  final_checks: "no status check rollup reported"
 status_fields:
   actual_current_surface_status: exact-support
   trace_class: upstream_support

@@ -1,0 +1,32 @@
+loop_slug: record-blank-sink-preparation-regress-20260605
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 11
+current_goal: "Prove the blank-sink preparation regress no-go for closed finite reset dynamics."
+target_status: no-go
+actual_current_surface_status: no-go
+active_route: "closed finite blank-sink preparation from arbitrary old sink state"
+hard_residual: "Fresh low-record boundary, growing exported-memory sink, or open-system erase dynamics remains required."
+branch: physics-loop/record-blank-sink-preparation-regress-20260605
+base_branch: physics-loop/record-reset-sink-entropy-ledger-20260605
+stacked_on_pr: 2777
+files_touched:
+  - docs/RECORD_BLANK_SINK_PREPARATION_REGRESS_NO_GO_2026-06-05.md
+  - scripts/frontier_record_blank_sink_preparation_regress_no_go_2026_06_05.py
+  - logs/runner-cache/frontier_record_blank_sink_preparation_regress_no_go_2026_06_05.txt
+  - .claude/science/physics-loops/record-blank-sink-preparation-regress-20260605/
+open_imports:
+  - "Low-record boundary / past-hypothesis-style initial condition."
+  - "Physical open-system erasure or reset dynamics."
+  - "Thermodynamic cost law."
+  - "Clock/rate normalization."
+no_go_routes:
+  - "Closed finite blanking of arbitrary sink state."
+  - "Fixed finite reusable sink supports arbitrary many clean reset cycles."
+  - "Outer sink removes the boundary residual."
+  - "Blank-sink preparation fixes a dial location."
+trace_gate_classification: negative_route_pruning
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

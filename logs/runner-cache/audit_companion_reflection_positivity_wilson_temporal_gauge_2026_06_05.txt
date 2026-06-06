@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
+runner_sha256: ce3ffc00efb972ff276adc5aab708174b9a63afce7df61e81f44547ac542af62
+timeout_sec: 120
+exit_code: -9
+elapsed_sec: 120.01
+status: timeout
+----- stdout -----
+========================================================================================
+Audit companion for the Wilson-plaquette temporal-gauge RP bridge
+AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05
+Reprove: S_-=Theta S_+, plane norm-square factorization, integrated
+three-factor RP Gram PSD for A_+^(2) observables (Z_N / U(1) exact, SU(2) numeric).
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part A: reflection symmetry  S_- = Theta S_+  and S_0 plane invariance
+----------------------------------------------------------------------------------------
+  [PASS] reflect-split.1 S_- = Theta S_+  (same functional form on reflected slice, sympy)  (Theta maps the positive-half spatial loop to the negative half identically)
+  [PASS] reflect-plane.1 S_0 invariant under reflection-plane swap c0<->c1 (sympy)  (Re Tr[U(0) U(1)^dag] is symmetric in the two slices)
+  [PASS] reflect-plane.2 Z_N: S_0(c0,c1) = S_0(c1,c0) for all configs (reflection-plane invariance)  (N=4, L_s=2)
+
+----------------------------------------------------------------------------------------
+Part B: reflection-plane norm-square (Schwarz) factorization
+----------------------------------------------------------------------------------------
+  [PASS] (B1) Z_N plane-kernel character coeffs are real (Im ~ 0)  (max|Im c_q| = 2.78e-17)
+  [PASS] (B2) Z_N plane-kernel character coeffs are nonnegative (norm-square form)  (min c_q = 0.092733)
+  [PASS] (B3) Z_N plane kernel reconstructed from character sum exp(S_0)=sum_q c_q chi_q(U0) conj chi_q(U1)  (reconstruction err = 3.38e-16)
+  [PASS] (B4) U(1) plane-kernel coeffs c_n=(1/2pi)int e^{beta cos t}e^{-int}dt are real  (max|Im c_n| = 1.53e-16)
+  [PASS] (B5) U(1) plane-kernel coeffs c_n = I_n(beta) >= 0 (norm-square form)  (min c_n = 8.281833e-07 (n in [-8,8]))
+  [PASS] (B6) U(1) plane-kernel coeffs symmetric c_n = c_{-n}  (max|c_n - c_{-n}| = 3.05e-16)
+
+----------------------------------------------------------------------------------------
+Part C: integrated three-factor RP Gram PSD for A_+^(2) observables
+----------------------------------------------------------------------------------------
+     Z_2, beta=0.3: basis=9, min_eig=-2.061064e-16, herm_err=6.2e-33, PSD=True
+     Z_2, beta=1.0: basis=9, min_eig=-2.938354e-16, herm_err=1.3e-32, PSD=True
+     Z_2, beta=2.5: basis=9, min_eig=-4.842310e-16, herm_err=2.8e-33, PSD=True
+     Z_3, beta=0.3: basis=9, min_eig=+1.790633e-02, herm_err=2.1e-16, PSD=True
+     Z_3, beta=1.0: basis=9, min_eig=+5.298851e-02, herm_err=2.3e-16, PSD=True
+     Z_3, beta=2.5: basis=9, min_eig=+1.571530e-03, herm_err=2.2e-16, PSD=True
+     Z_4, beta=0.3: basis=9, min_eig=+2.021915e-02, herm_err=4.2e-17, PSD=True
+     Z_4, beta=1.0: basis=9, min_eig=+7.449966e-02, herm_err=1.3e-16, PSD=True
+     Z_4, beta=2.5: basis=9, min_eig=+8.578173e-03, herm_err=1.1e-16, PSD=True
+     Z_5, beta=0.3: basis=9, min_eig=+1.965077e-02, herm_err=4.2e-16, PSD=True
+     Z_5, beta=1.0: basis=9, min_eig=+5.971461e-02, herm_err=4.1e-16, PSD=True
+     Z_5, beta=2.5: basis=9, min_eig=+1.310389e-02, herm_err=3.7e-16, PSD=True
+  [PASS] (C1) Z_N reflected Gram is Hermitian PSD across N in {2,3,4,5}, beta in {0.3,1,2.5}  (worst min_eig = -4.842310e-16)
+  [PASS] (C2) control: dropping Theta's conjugation gives a NON-PSD form (correct OS reflection is load-bearing)  (min_eig (wrong reflection) = -0.4823)
+     U(1), beta=0.5: min_eig=+4.253364e-02, herm_err=3.2e-15, PSD=True
+
+----- stderr -----
+

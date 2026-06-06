@@ -1,8 +1,193 @@
 {
-  "cycle_count": 1,
+  "cycle_count": 6,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
+      "decision": null,
+      "edges": [
+        {
+          "from": "observable_principle_from_axiom_note",
+          "to": "observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06"
+        },
+        {
+          "from": "observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06",
+          "to": "observable_principle_from_axiom_note"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 816,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_from_axiom_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+          "title": "Observable Principle From Axiom Note",
+          "transitive_descendants": 816
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md",
+          "title": "Observable Principle Positive Source Cone P2 Elimination Narrow Theorem Note",
+          "transitive_descendants": 816
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0002",
+      "decision": null,
+      "edges": [
+        {
+          "from": "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
+          "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+        },
+        {
+          "from": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
+          "to": "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 10,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Plaquette D7 Coefficient and Geometric-Ratio Verdict",
+          "transitive_descendants": 10
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Wilson Single-Plaquette \u2014 Exact Order-beta^6 and Order-beta^7 Coefficients",
+          "transitive_descendants": 10
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0003",
+      "decision": null,
+      "edges": [
+        {
+          "from": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
+          "to": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
+        },
+        {
+          "from": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
+          "to": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 2,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
+          "title": "Tsirelson Bound on Lattice Qubit Pairs",
+          "transitive_descendants": 2
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+          "title": "Two-Site Qubit Tensor Carrier Bridge",
+          "transitive_descendants": 2
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0004",
+      "decision": null,
+      "edges": [
+        {
+          "from": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
+          "to": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
+        },
+        {
+          "from": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
+          "to": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 2,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+          "title": "Two-Site Qubit Tensor Carrier Bridge",
+          "transitive_descendants": 2
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md",
+          "title": "Local Tomography From Complex Qubit Tensor Product - Narrow Theorem",
+          "transitive_descendants": 2
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0005",
+      "decision": null,
+      "edges": [
+        {
+          "from": "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
+          "to": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06"
+        },
+        {
+          "from": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "to": "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md",
+          "title": "`g_*` SM-Content Proof-Walk From Supplied Thermal Inventory Bounded Note",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+          "title": "`g_*` Thermal `7/8` Stefan-Boltzmann Integral Bridge",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0006",
       "decision": null,
       "edges": [
         {
@@ -40,7 +225,7 @@
     }
   ],
   "length_counts": {
-    "2": 1
+    "2": 6
   },
   "sort": [
     "max_transitive_descendants descending",

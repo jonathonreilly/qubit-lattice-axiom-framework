@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 271,
     "high": 281,
-    "leaf": 333,
+    "leaf": 332,
     "medium": 325
   },
   "cycle_break_target_count": 0,
@@ -27033,30 +27033,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36851,6 +36827,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 4,
-  "total_pending": 1210
+  "ready_count": 3,
+  "total_pending": 1209
 }

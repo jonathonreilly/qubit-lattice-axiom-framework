@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 675 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1208 |
+| unaudited | 1207 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 89 |
+| ~~audited_conditional~~ | 90 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1048 |
-| `audited_conditional` | 89 |
+| `audited_conditional` | 90 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1492 |
+| `unaudited` | 1491 |
 
 | claim_type | count |
 |---|---:|
@@ -1268,6 +1268,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_fam2_seed1_followup_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_ew_higgs_source_intertwiner_gate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -18162,6 +18163,23 @@ Why this blocks: a separate retained bounded theorem would duplicate algebraic c
 Repair target: box this note under the Fierz channel-count parent, or re-promote only if a later revision adds independent physical content such as a retained EW-current selector or a new comparator not already attached to the parent.
 Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebra under the parent; it should be treated as decoration, not as an independent retained bounded theorem.
 - **decoration parent:** `ew_current_fierz_channel_decomposition_note_2026-05-01`
+- **auditor confidence:** high
+
+### `yt_ew_higgs_source_intertwiner_gate_note_2026-05-25`
+
+- **Note:** [`YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md`](../../docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the algebraic neutral-Higgs carrier map and top/W response-ratio cancellation conditional on a common radial source and the one-Higgs up-type top carrier; no derivation of y_t, m_t, g_2, v, or retained Y_T closure was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-005023-5b97f59308-yt_ew_higgs_source_intertwin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With H(h)=(0,(v_0+a h)/sqrt(2))^T, dM_W/dh=(g_2/2)a and dM_t/dh=(y_t/sqrt(2))a, so y_t=(g_2/sqrt(2))(dM_t/dh)/(dM_W/dh) and the unknown source slope a cancels.  _(class `A`)_
+- **chain closes:** False — The displayed algebra checks independently: Q annihilates the lower Higgs ray, T1/T2 act nontrivially, and the common source slope cancels in the symbolic top/W response ratio. The chain does not close as retained source-intertwiner authority because the top coefficient, same-source top transfer response, one-Higgs top carrier retention, and hypercharge retention remain missing or explicitly open.
+- **rationale:** The load-bearing math is class A symbolic algebra, not a first-principles compute, and the independent formula check agrees with the runner's factors and signs. However, the note's own closure path imports top-carrier and hypercharge authority that the packet and runner identify as not retained, and it leaves the coefficient-certified same-source top response absent. The runner mostly verifies text, file presence, ledger status, and simple algebra; it does not prove the missing physical top coefficient or same-surface transfer theorem.
+- **open / conditional deps cited:**
+  - `SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md`
+  - `STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`
+  - `YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`
 - **auditor confidence:** high
 
 ### `yt_ew_m_residual_note_2026-05-02`

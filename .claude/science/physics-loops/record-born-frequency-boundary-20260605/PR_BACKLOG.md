@@ -1,8 +1,14 @@
 # PR Backlog
 
-PR not created yet.
+PR created and verified:
 
-Planned stacked PR:
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2793
+- Base: `physics-loop/record-selective-instrument-atom-criterion-20260605`
+- Head: `physics-loop/record-born-frequency-boundary-20260605`
+- State: open
+- Merge state at verification: `UNSTABLE`
+
+Creation command:
 
 ```bash
 gh pr create \

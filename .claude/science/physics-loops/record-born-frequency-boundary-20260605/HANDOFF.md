@@ -5,6 +5,12 @@
 Checks passed. This block is stacked on PR #2792 and targets the
 Born-frequency boundary.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2793
+
+GitHub verification: open PR, base
+`physics-loop/record-selective-instrument-atom-criterion-20260605`, head
+`physics-loop/record-born-frequency-boundary-20260605`, merge state `UNSTABLE`.
+
 ## Intended Result
 
 Finite record histories give exact counts and empirical frequencies. They do
@@ -19,8 +25,7 @@ outcome selection.
 
 ## Next Action
 
-Commit, push, open a stacked PR, then pivot to the next independent dynamics
-lane.
+Continue campaign: pivot to the next independent dynamics lane.
 
 ## Verification
 

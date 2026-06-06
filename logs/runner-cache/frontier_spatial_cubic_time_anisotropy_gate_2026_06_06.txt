@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_spatial_cubic_time_anisotropy_gate_2026_06_06.py
+runner_sha256: 52758f18e2d5c545edc69a37d8228bb8eeafbb4dcccc4a15fd4866303e9f03f6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
 
 ========================================================================
 Group and invariant-space checks
@@ -53,3 +61,6 @@ Scorecard
 ========================================================================
 PASS=18 FAIL=0
 FINDING: spatial cubic power counting does not exclude marginal time-vs-space kinetic anisotropy. Full SO(4) continuum wording needs an explicit Euclidean normalization / 4D hypercubic premise, or the claim must be narrowed to spatial cubic artifact power counting.
+
+----- stderr -----
+

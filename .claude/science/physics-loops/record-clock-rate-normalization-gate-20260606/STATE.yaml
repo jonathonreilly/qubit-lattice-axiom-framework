@@ -1,0 +1,35 @@
+loop_slug: record-clock-rate-normalization-gate-20260606
+date: 2026-06-06
+mode: campaign
+cycle_kind: stacked_science_block
+current_goal: "Add an exact record dynamics gate separating stable dial locations from Record-selected dial values and physical rate normalization."
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "stable dial as supplied-generator stationary point; rate/clock as separate normalization"
+hard_residual: "Physical production generator, probability-origin bridge, and clock/rate unit remain open."
+branch: physics-loop/record-clock-rate-normalization-gate-20260606
+base_branch: physics-loop/record-markov-generator-premise-classifier-20260606
+base_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2807"
+pr_url: null
+pr_status: not_created_yet
+files_touched:
+  - docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md
+  - scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py
+  - logs/runner-cache/frontier_record_clock_rate_normalization_gate_2026_06_06.txt
+  - .claude/science/physics-loops/record-clock-rate-normalization-gate-20260606/
+open_imports:
+  - "Physical record-production generator or action."
+  - "Pre-record probability-origin bridge such as Born/IID or an equivalent interface."
+  - "Physical clock/rate unit."
+  - "Any sector-specific dial-value derivation."
+no_go_routes:
+  - "Treat Record alone as selecting the dial location."
+  - "Treat stationary dial location as an absolute physical rate without a clock/rate unit."
+review_disposition: pass
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Commit, push, open stacked PR against physics-loop/record-markov-generator-premise-classifier-20260606, patch PR URL, then pivot."
+stop_condition: "Only the 12-hour runtime/global queue/tooling stop applies; this exact-support block is a campaign checkpoint."

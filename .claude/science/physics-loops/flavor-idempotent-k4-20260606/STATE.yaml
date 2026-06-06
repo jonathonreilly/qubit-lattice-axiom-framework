@@ -1,0 +1,15 @@
+goal: "Repair the missing K4 runner execution in FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30 without touching audit results."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Add the finite C3 spectral-projector check distinguishing equal idempotent doublet charge from opposite omega/omegabar split charge."
+files_touched:
+  - docs/FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md
+  - scripts/flavor_idempotent_u1_collapses_2026_05_30.py
+  - logs/runner-cache/flavor_idempotent_u1_collapses_2026_05_30.txt
+open_imports:
+  - "K5 sector ordering still uses external sector labels/charge-color table and does not derive the physical sector selector"
+  - "r=1/2 fixing remains open"
+audit_results_edited: false
+next_exact_action: "Reviewer can re-audit the K4 runner-execution item; do not treat this as a sector-selector derivation."

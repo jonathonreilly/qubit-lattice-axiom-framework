@@ -28,6 +28,7 @@ checks:
   - "python3 scripts/precompute_audit_runners.py --runners scripts/lattice_3d_dense_z2_z6_source_packet_manifest_2026_06_05.py --force --push-mode=none --allow-non-main --concurrency 1"
   - "python3 scripts/precompute_audit_runners.py --runners scripts/lattice_3d_dense_z2_z6_endpoint_check.py,scripts/lattice_3d_dense_10prop.py,scripts/lattice_3d_dense_z2_z6_source_packet_manifest_2026_06_05.py --check-only --push-mode=none --allow-non-main --concurrency 1"
 review_disposition: pass
-pr_url: pending
-next_exact_action: "Commit, push, and open the review PR."
-stop_condition: "Stop this block after PR creation, then pivot to the next conditional audit-unblock target."
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2736
+pushed_commit: 3710da157
+next_exact_action: "Reviewer can inspect PR #2736; campaign can pivot to the next conditional audit-unblock target."
+stop_condition: "Block complete after PR creation and verification."

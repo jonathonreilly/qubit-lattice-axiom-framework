@@ -1,0 +1,19 @@
+loop: free-dirac-direct-integrability-repair-20260606
+target_claim_id: free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30
+branch: physics-loop/free-dirac-direct-integrability-repair-20260606
+base: origin/main
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: theorem
+cycle_count: 1
+files_touched:
+  - docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md
+  - scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py
+  - logs/runner-cache/free_dirac_poincare_generators_selfadjointness_2026-05-30.txt
+  - outputs/free_dirac_poincare_generators_selfadjointness_2026_05_30.json
+open_imports:
+  - consumes companion packet's explicit Wigner/mass-shell representation data
+  - does not re-prove Wigner induced representation theorem from baseline axioms
+next_exact_action: "Reviewer/auditor should check whether direct unitary mass-shell action is an acceptable alternate integrability route."
+stop_condition: "Science block packaged and PR opened."

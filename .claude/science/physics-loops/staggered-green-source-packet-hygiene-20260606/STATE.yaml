@@ -1,0 +1,17 @@
+loop_slug: staggered-green-source-packet-hygiene-20260606
+target_claim_id: staggered_backreaction_live_green_packet_note_2026-05-29
+mode: campaign_block
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+active_route: source_packet_hygiene_repair
+files_touched:
+  - docs/STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md
+  - scripts/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.py
+  - logs/runner-cache/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.txt
+  - outputs/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.json
+open_imports:
+  - independent_audit_status_movement
+no_go_routes: []
+review_disposition: pending_reviewer
+next_exact_action: "Commit, push, open PR, then rescan conditional backlog for remaining uncovered rows."
+stop_condition: "Continue campaign while tractable artifact or bridge repairs remain."

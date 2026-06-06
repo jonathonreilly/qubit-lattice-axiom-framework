@@ -12,8 +12,9 @@ audit pipeline after independent review.
 This note opens the quark-mass-spectrum lane with a boundary condition,
 not a quark-mass theorem.
 
-For any three real generation coordinates `x_k`, including formal
-sqrt-mass coordinates, the `C_3` circulant/Brannen parametrization
+For any three real generation coordinates `x_k` with nonzero sum
+equivalently nonzero mean `a`, including formal sqrt-mass coordinates,
+the `C_3` circulant/Brannen parametrization
 
 ```text
 x_k = a + 2 |b| cos(delta + 2 pi k / 3)
@@ -25,6 +26,10 @@ is an algebraic coordinate system. Existing Koide algebra then gives
 Q = (sum x_k^2) / (sum x_k)^2
 |b|^2 / a^2 = (3Q - 1) / 2.
 ```
+
+The nonzero-sum caveat is load-bearing only for the displayed ratios:
+if `sum x_k = 0` then `Q` and `|b|^2/a^2` are undefined, so this open
+gate does not use such triples as comparator points.
 
 Using the packet-local central-value comparator convention below, the
 apparent Koide/Brannen amplitude ratios for the up- and down-type quark

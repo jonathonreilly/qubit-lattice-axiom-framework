@@ -94,8 +94,9 @@ with residual
 <P>_TI(N=8) - <P>_MC  =  0.910550 - 0.5934  =  +0.31715                 (6)
 ```
 i.e. a 53.4% relative residual. Tadpole improvement reduces the
-1-loop value by `< 1%` at `beta = 6` and does not change the
-saturation regime.
+1-loop value from `0.925926` to `0.910550`, i.e. an absolute shift of
+`0.01538` and a `1.66%` relative reduction against the 1-loop value at
+`beta = 6`; it does not change the saturation regime.
 
 **Conclusion (T3; Pade resummation saturation).** Pade `[m/n]`
 approximants of the truncated series (1) at every `(m, n)` with

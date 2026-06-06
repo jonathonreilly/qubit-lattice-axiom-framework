@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_eta_ud2_fixed_token_square_homology_2026_06_06.py
+runner_sha256: 3e96a39b4811431db310014104744111842bfd8560f90951ff4f6dfe319fba8e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 eta / UD_2 fixed-token square homology certificate
 actual_current_surface_status: exact-support
 trace_class: negative_route_pruning
@@ -25,3 +33,6 @@ C. eta-lane scope boundary
 
 SCORECARD: PASS=12 FAIL=0
 VERDICT: In the explicit connected finite Z^3 subgraph, the fixed-token unit-square loop in UD_2 is a mod-2 cycle but not a boundary. It is therefore not null-homotopic in that model. This prunes the automatic-null-square shortcut while leaving the full detour-swap braid comparison open.
+
+----- stderr -----
+

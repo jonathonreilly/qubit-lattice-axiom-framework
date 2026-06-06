@@ -1,0 +1,21 @@
+loop_slug: flavor-latitude-trace-boundary-20260606
+branch: physics-loop/flavor-latitude-trace-boundary-20260606
+base: origin/main
+started_utc: "2026-06-06"
+target_claim_id: flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30
+target_status: best-honest-status
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: trace-vs-center correction and source-boundary demotion
+files_touched:
+  - docs/FLAVOR_LATITUDE_QUANTIZER_AND_RP_SELFDUAL_NOTE_2026-05-30.md
+  - scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py
+  - logs/runner-cache/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.txt
+open_imports:
+  - No framework-native selector for block-equal versus per-real-mode readout is supplied.
+  - Old N2/N3 broad claims are not certified by this packet.
+review_disposition: local_checks_pass_reviewer_required
+pr_status: pending
+next_exact_action: commit, push, and open a ready review PR
+stop_condition: PR opened for reviewer extraction

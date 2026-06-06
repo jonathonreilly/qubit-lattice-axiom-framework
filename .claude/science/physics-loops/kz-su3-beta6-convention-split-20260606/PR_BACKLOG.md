@@ -15,4 +15,4 @@ gh pr view 2808 --json number,url,state,baseRefName,headRefName,mergeStateStatus
 ```
 
 Result: open, stacked on `physics-loop/kz-external-lift-gate-20260606`,
-`mergeable=MERGEABLE`, `mergeStateStatus=UNSTABLE`.
+`mergeable=MERGEABLE`, `mergeStateStatus=CLEAN`.

@@ -21,7 +21,7 @@ PR for this block: https://github.com/jonathonreilly/qubit-lattice-axiom-framewo
 GitHub verification: open PR, base
 `physics-loop/kz-external-lift-gate-20260606`, head
 `physics-loop/kz-su3-beta6-convention-split-20260606`, mergeable
-`MERGEABLE`, merge state `UNSTABLE`.
+`MERGEABLE`, merge state `CLEAN`.
 
 ## Result
 

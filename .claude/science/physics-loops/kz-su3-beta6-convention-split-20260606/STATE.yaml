@@ -13,7 +13,7 @@ branch: physics-loop/kz-su3-beta6-convention-split-20260606
 base_branch: physics-loop/kz-external-lift-gate-20260606
 base_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2804"
 pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2808"
-pr_status: "open; base physics-loop/kz-external-lift-gate-20260606; head physics-loop/kz-su3-beta6-convention-split-20260606; mergeable MERGEABLE; mergeStateStatus UNSTABLE"
+pr_status: "open; base physics-loop/kz-external-lift-gate-20260606; head physics-loop/kz-su3-beta6-convention-split-20260606; mergeable MERGEABLE; mergeStateStatus CLEAN"
 files_touched:
   - docs/GAUGE_SCALAR_KZ_SU3_BETA6_CONVENTION_SPLIT_NOTE_2026-06-06.md
   - scripts/frontier_kz_su3_beta6_convention_split_2026_06_06.py

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_finite_likelihood_score_interface_2026_06_06.py
+runner_sha256: 4a75a7ef34629c1c1a70fc2699bbbaf25f3084b2899e1c16f7b21beaf3ad2dd0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -70,3 +78,6 @@ SUPPLIED_FINITE_MODEL_SCORE_INTERFACE=TRUE
 LIKELIHOOD_RATIOS_EXACT_WHEN_DEFINED=TRUE
 RECORD_DERIVES_MODEL_FAMILY=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

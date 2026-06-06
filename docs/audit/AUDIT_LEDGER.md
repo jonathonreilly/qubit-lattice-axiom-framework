@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1295 |
+| unaudited | 1294 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
-| ~~audited_renaming~~ | 30 |
+| ~~audited_renaming~~ | 31 |
 | ~~audited_conditional~~ | 65 |
 | ~~audited_failed~~ | 12 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,17 +66,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 52 |
 | `audited_failed` | 56 |
 | `audited_numerical_match` | 16 |
-| `audited_renaming` | 30 |
-| `unaudited` | 1602 |
+| `audited_renaming` | 31 |
+| `unaudited` | 1601 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1329 |
 | `decoration` | 53 |
-| `meta` | 318 |
+| `meta` | 319 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 768 |
+| `positive_theorem` | 767 |
 
 | criticality | count |
 |---|---:|
@@ -1441,6 +1441,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_production_dynamics_needed_row_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -13851,6 +13852,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** This block maps the six current production_dynamics_needed rows from the post-record evidence-ladder row bucketing.  _(class `E`)_
 - **chain closes:** False — The displayed table internally counts to six rows with lane counts 1, 2, and 3, and the runner's hard-coded ROW_MAP mirrors those entries. The lane and bridge assignments are stipulated rather than derived from supplied authorities or an axiom, and the current-row membership depends on an imported row-bucketing classifier not included in the packet.
 - **rationale:** The runner performs consistency checks over source anchors, ledger-selected rows, lane counts, bridge counts, and firewall flags, but the load-bearing map itself is a hard-coded definition. The restricted packet contains no derivation of the bridge import classes from Record, from retained upstream authorities, or from physics primitives. Independent inventory of the displayed quantitative content confirms only the finite table arithmetic: 1+2+3=6 and the bridge-count multiplicities printed by the runner.
+- **auditor confidence:** high
+
+### `post_record_retained_unbounded_dynamics_gate_2026-06-06`
+
+- **Note:** [`POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md`](../../docs/POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Branch-local definition of an eight-row retained/unbounded gate map for finite post-record dynamics, with explicit blockers for unbounded and effective-retained use.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-193220-2497c9f837-post_record_retained_unbound`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current dynamics artifacts are bounded because each exact certificate is over a finite object, and exact enumeration over those objects does not by itself provide a law over an unbounded family.  _(class `E`)_
+- **chain closes:** True — For the audited narrow scope, the packet closes as an internal gate definition: the note defines the rows and the runner checks those rows, statuses, PR-number references, and firewall flags. It does not independently verify the upstream dynamics authorities or derive retained/unbounded authority from an axiom.
+- **rationale:** The only quantitative/table claims in the restricted packet are structural: eight gate rows, listed PR numbers, open/exact-support statuses, and false firewall flags. The runner hard-codes the GateRow entries and firewall booleans, then checks document presence and consistency; it does not instantiate framework primitives or derive the gate map from cited retained inputs. The load-bearing move is therefore a definition of gates and blockers, not a class C derivation or retained-grade theorem.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

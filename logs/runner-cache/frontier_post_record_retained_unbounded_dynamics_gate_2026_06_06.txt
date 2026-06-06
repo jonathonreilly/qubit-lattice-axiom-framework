@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.py
+runner_sha256: f9bfad80ac0f99a19dbb9ac2f3ae4f22e34270bc6ef577c88bcf2a30a9999328
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Gate shape
@@ -82,3 +90,6 @@ PRE_RECORD_LAW_CARRIES_PROBABILITY=TRUE
 POST_RECORD_SITE_CARRIES_REALIZED_INFORMATION=TRUE
 DIAL_FORCED_OR_SELECTED=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

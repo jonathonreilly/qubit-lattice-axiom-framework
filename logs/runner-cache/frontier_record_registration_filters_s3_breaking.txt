@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_registration_filters_s3_breaking.py
+runner_sha256: 60fa23a2c9ef73f0ae3a789666ce1ae70a07722d5a0aa7bac145c295e262e2ad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+
+==============================================================================
+Setup
+==============================================================================
+[PASS] C^3 = I
+[PASS] P0+P1+P2 = I (C_3-character central-sector decomposition)
+[PASS] each P_k is a rank-1 orthogonal projector
+[PASS] A = i(C-C^2): K-odd Hermitian, eig {0,+/-sqrt3}
+
+==============================================================================
+T1/T2/T3: D filters every T-odd op to the S3-symmetric A-line
+==============================================================================
+[PASS] T1: D(M) is circulant for all 5000 random Hermitian M
+[PASS] T2: D(X) proportional to A for all 5000 random T-odd Hermitian X
+[PASS] T2 cor: [D(X), S] = 0 (registered part commutes with S)  --  max ||[D(X),S]||=5.21e-15
+[PASS] T3: the S3-breaking part X-D(X) is annihilated by D (D(X-D(X))=0), all 5000 trials
+[PASS] witness: a non-circulant T-odd op exists with [W,S]!=0 (the S3-breaking dir)
+[PASS] witness: its registered part D(W) is the S3-symmetric A-line only
+
+==============================================================================
+T4: K swaps chi_1<->chi_2; {chi_1,chi_2} is one K/CPT orbit
+==============================================================================
+[PASS] K (complex conj) swaps the doublet characters: P1* = P2
+[PASS] K fixes the singlet character: P0* = P0
+[PASS] <C_3 cycle, K reflection> generates the full S3 (order 6)  --  group order = 6
+[PASS] realized K/CPT coarsening = {chi_0} | {chi_1,chi_2} (the (1,1) Koide partition)
+
+TOTAL: PASS=14 FAIL=0
+VERDICT: register-not-read filtering checks pass.
+  The RECORD registration map D filters every T-odd op to the
+  S3-symmetric A-line; the S3-breaking doublet-plane direction is the
+  inter-sector coherence D annihilates AND lives within one K/CPT orbit
+  {chi_1,chi_2}. It is unregistrable -- not a pre-record operator to
+  derive (realist slip) and not an import; the realized value is a
+  registered pattern. No r forced.
+
+----- stderr -----
+

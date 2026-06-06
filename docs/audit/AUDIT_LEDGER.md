@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 707 |
+| **retained_bounded** | 708 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1319 |
+| unaudited | 1318 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1117 |
+| `audited_clean` | 1118 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1626 |
+| `unaudited` | 1625 |
 
 | claim_type | count |
 |---|---:|
@@ -405,6 +405,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5650,6 +5651,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The residual import is the block-vs-dimension counting-measure choice on R[Z3]=R⊕C: center/idempotent count (1,1) gives r=1/2 and Q=2/3, while dimension/Plancherel count (1,2) gives r=1 and Q=1, with the trace permitting both but ranking neither.  _(class `A`)_
 - **chain closes:** False — The finite matrix and counting checks close as algebraic identities, including [iI3,C]=0, alpha quantization, G_U1 commutation with Gamma_chi, ||{G,Gamma_chi}||=2sqrt(2), and Q(1/2)=2/3, Q(1)=1. The broader default claim still requires the unprovided Half-B bridge that the physical generation vacuum is the beta=0 tracial state and that this selects dimension/Plancherel count as the native default.
 - **rationale:** The runner source performs real algebraic checks rather than a first-principles framework computation, and independent manual checks agree with the displayed matrix identities and Q arithmetic. However, the source note itself names Link 1 Half B as unaudited: the identification of the physical generation reference state with the beta=0 trace is an imported premise. The runner also prints, rather than derives, the trace-ranking/default-selection claim and the CPT J_b -> -J_b carrier exclusion. Therefore the bounded algebraic obstruction is supported, but the full substrate-forced default conclusion is conditional on an open bridge.
+- **auditor confidence:** high
+
+### `flavor_doublet_metric_default_is_detr_2026-06-02`
+
+- **Note:** [`FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02.md`](../../docs/FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3 circulant HS metric calculation on (a, Re b, Im b), with conditional det_R/det_C arithmetic and two narrow route-pruning checks.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-233523-9c86a8a511-flavor_doublet_metric_defaul`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the C3 circulant coefficient surface (a, Re b, Im b), the Hilbert-Schmidt/coherent-state metric is diag(3,6,6), and the metric is reading-neutral.  _(class `C`)_
+- **chain closes:** True — Using C^3=I, C†=C^2, tr(C)=tr(C^2)=0, the independent trace calculation gives <I,I>=3 and <C+C^2,C+C^2>=<i(C-C^2),i(C-C^2)>=6 with zero cross terms. The det_R/det_C arithmetic and the two stated obstructions then follow algebraically within the packet's bounded scope.
+- **rationale:** The runner source genuinely instantiates the C3 shift matrix and computes the HS Gram matrix rather than merely printing expected constants. An independent trace audit confirms the displayed diag(3,6,6), the conditional r and Q readings, the Hermitian-observable obstruction for multiplication by i, and the discrete-only rephasing condition e^{3i alpha}=1. The note does not promote a det_R default, exclude all field-space complex structures, or claim a physical mass readout theorem, so the bounded conclusion closes as stated.
 - **auditor confidence:** high
 
 ### `flavor_doublet_rotation_exhaustive_note_2026-05-30`

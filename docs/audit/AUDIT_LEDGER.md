@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 192 |
-| **retained_no_go** | 202 |
+| **retained_no_go** | 203 |
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1086 |
+| `audited_clean` | 1087 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1624 |
+| `unaudited` | 1623 |
 
 | claim_type | count |
 |---|---:|
@@ -905,6 +905,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_admitted_sample_target_vector_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13537,6 +13538,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** A supplied finite post-record sample plus a supplied statistic set, evaluated by exact counting, yields an admitted empirical target vector.  _(class `A`)_
 - **chain closes:** True — The arithmetic closes directly from the supplied finite sample and supplied statistic predicates: endpoint_ab occurs once, endpoint_ba occurs twice, and second_is_b occurs once in four words. The note's stated firewalls are negative scope conditions rather than additional derivations.
 - **rationale:** The load-bearing content is exact finite-sample counting over explicitly supplied observations and explicitly supplied statistics, not an external comparator or tuned numerical match. Independent recount gives endpoint_ab = 1/4, endpoint_ba = 1/2, and second_is_b = 1/4, matching the note and runner. The runner source implements the same finite counting with Fraction arithmetic and blocks empty samples, missing statistic sets, and unknown statistics; it does not import a contested premise or assert a production kernel selection.
+- **auditor confidence:** high
+
+### `post_record_arrow_orientation_firewall_2026-06-06`
+
+- **Note:** [`POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md`](../../docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite post-record count states and count-only law pushforwards are invariant under word reversal, so counts alone cannot select an orientation, physical arrow, or production kernel; any such selection requires non-count bridge data.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-487df974c6-post_record_arrow_orientatio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any finite law P on record words and its reversed law P^R(w)=P(reverse(w)), the count pushforward is invariant under reversal: count_* P = count_* P^R.  _(class `A`)_
+- **chain closes:** True — The reversal map is a bijection on every count fiber, so count(w)=count(reverse(w)) and count_*P=count_*P^R follow by change of variables. Therefore any statistic, event, p-value, or certificate that factors only through counts has identical distribution under the two opposite orientations and cannot decide between them.
+- **rationale:** Formula inventory checked: w -> wv, count(wv)=count(w)+count(v), count(w)=count(reverse(w)), P^R(w)=P(reverse(w)), count_*P=count_*P^R, I(count(w))=I(count(reverse(w))), and transitions(reverse(w))=transpose(transitions(w)) are all finite-word identities. The independent proof is that reversal preserves letter multiplicities while reversing ordered adjacent pairs, so count-only data cannot distinguish P from P^R although transition or endpoint data can. The runner source supports this with exact finite enumeration and Fraction-valued law checks plus source-anchor and firewall-flag checks; it does not import tuned external numerics or a hidden comparator. N1-N8 no-go stress test passes for the narrowed count-only scope because routes through a supplied boundary, clock, oriented law, transition data, or production kernel remain explicitly outside the claim.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

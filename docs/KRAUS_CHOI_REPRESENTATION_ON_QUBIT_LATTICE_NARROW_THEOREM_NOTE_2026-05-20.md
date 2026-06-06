@@ -10,6 +10,8 @@ pattern as `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 (applying standard Clifford-algebra theorem to `Cl(3,0)`) and the
 companion `GLEASON_ON_QUBIT_LATTICE_*` + `BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_*`
 notes (applying standard Gleason/Busch to the qubit-lattice substrate).
+**Primary runner:** [`scripts/kraus_choi_normalization_convention_check_2026_06_05.py`](../scripts/kraus_choi_normalization_convention_check_2026_06_05.py)
+**Primary runner cache:** [`logs/runner-cache/kraus_choi_normalization_convention_check_2026_06_05.txt`](../logs/runner-cache/kraus_choi_normalization_convention_check_2026_06_05.txt)
 
 ## Honest scope
 
@@ -48,8 +50,8 @@ Equivalently (Choi 1975), `Φ` is CP iff its **Choi matrix**
 C_Φ := (𝟙 ⊗ Φ) (|Ω⟩⟨Ω|)                                                 (2)
 ```
 
-(where `|Ω⟩ = Σ_i |i⟩|i⟩` is the maximally entangled vector on
-`A_Λ ⊗ A_Λ`) is positive semidefinite.
+(where this note uses the **unnormalized** convention
+`|Ω⟩ = Σ_i |i⟩|i⟩` on `A_Λ ⊗ A_Λ`) is positive semidefinite.
 
 The framework's qubit-lattice algebra `A_Λ = ⊗_x M_2(ℂ)` is a
 finite-dim matrix algebra (`M_d(ℂ)` with `d = 2^|Λ|`), so Kraus' and
@@ -57,9 +59,10 @@ Choi's hypotheses are satisfied and the standard theorems apply.
 
 ## Setup
 
-By A1+A2 of
-[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md), the
-per-site operator algebra is `M_2(ℂ)`. For finite `Λ ⊂ Z^3`:
+By the named Lattice and Quantum axioms in
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md), the
+per-site operator algebra is `M_2(ℂ)` on the `Z^3` lattice. For finite
+`Λ ⊂ Z^3`:
 
 - `A_Λ = ⊗_{x ∈ Λ} M_2(ℂ)_x ≅ M_d(ℂ)` for `d = 2^|Λ|`
 - `A_Λ ⊗ A_Λ ≅ M_{d²}(ℂ)` — joint algebra used for the Choi matrix
@@ -69,9 +72,9 @@ for every `n ≥ 1`, the extension `𝟙_n ⊗ Φ: M_n(ℂ) ⊗ A_Λ → M_n(ℂ
 ⊗ A_Λ` is positivity-preserving. It is **trace-preserving (TP)** iff
 `Tr(Φ(X)) = Tr(X)` for all `X ∈ A_Λ`.
 
-CPTP maps describe physical state evolution: dynamics, measurements
-(unconditional update over outcomes), decoherence, record formation
-(per the framework's existing record lane).
+CPTP maps are a standard finite-region model class for dynamics,
+measurements, decoherence, and record-update maps when a separate lane
+establishes that the update under discussion is CPTP.
 
 ## Step 1 — Choi's theorem (cited)
 
@@ -81,10 +84,17 @@ A linear map `Φ: M_d(ℂ) → M_d(ℂ)` is CP iff its Choi matrix
 in equation (2)) is positive semidefinite.
 
 The Choi matrix construction:
-- `|Ω⟩ = (1/√d) Σ_i |i⟩|i⟩` (maximally entangled vector on
+- `|Ω⟩ = Σ_i |i⟩|i⟩` (unnormalized maximally entangled vector on
   `ℂ^d ⊗ ℂ^d`)
 - `C_Φ = (𝟙 ⊗ Φ)(|Ω⟩⟨Ω|)`
 - `Φ(X) = Tr_1[(X^T ⊗ 𝟙) C_Φ]` (inverse map)
+
+If one instead uses the normalized vector
+`|Ω_norm⟩ = d^(-1/2) Σ_i |i⟩|i⟩`, then
+`C_Φ^norm = C_Φ / d` and the inverse formula is
+`Φ(X) = d Tr_1[(X^T ⊗ 𝟙) C_Φ^norm]`. The source convention for this
+row is the unnormalized one above, so no extra factor appears in the
+displayed inverse formula.
 
 CP ↔ positive Choi matrix is the **Choi–Jamiołkowski isomorphism**
 between CP maps and positive bipartite operators.
@@ -104,8 +114,10 @@ for some `r_* ≤ d²` and Kraus operators `K_r ∈ M_d(ℂ)`. The map is
 
 Proof: spectral decomposition of the Choi matrix
 `C_Φ = Σ_r |v_r⟩⟨v_r|` (positive iff CP, by Step 1) gives Kraus
-operators `K_r = √d · vec^{-1}(|v_r⟩)` where `vec^{-1}` reverses
-the column-stacking isomorphism `M_d(ℂ) → ℂ^{d²}`.
+operators `K_r = vec^{-1}(|v_r⟩)` under the same unnormalized Choi
+convention, where `vec^{-1}` reverses the column-stacking isomorphism
+`M_d(ℂ) → ℂ^{d²}`. With the normalized Choi convention, the same
+calculation would instead carry the compensating `√d` factor.
 
 Minimal Kraus representations are unique up to unitary mixing of the
 Kraus operators; non-minimal representations are equivalent after
@@ -204,7 +216,7 @@ standard representation theory).
 
 **Upstream framework dependencies** (load-bearing; markdown links):
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate)
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — supplies the named Lattice and Quantum baseline: `Z^3` lattice plus per-site `M_2(ℂ)` operator algebra
 
 **Upstream standard-math imports** (named non-derivation):
 

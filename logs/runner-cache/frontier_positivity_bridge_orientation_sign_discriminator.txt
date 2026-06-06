@@ -1,14 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_positivity_bridge_orientation_sign_discriminator.py
-runner_sha256: 0445b016748e42274b8514aacba80a22ae2c1aa8216d6b8d83c7f20ec39b08a3
+runner_sha256: 275f23e821cc7d15550d44b06bf128f2a97e17dca038415899aca65753acdb76
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ============================================================================
 WHICH POSITIVITY BREAKS S_3 -> C_3:  det-magnitude vs orientation-sign
 ============================================================================
+
+----------------------------------------------------------------------------
+SOURCE SCOPE CHECK: one-dimensional sign/magnitude only
+----------------------------------------------------------------------------
+  [PASS] source contains scope phrase: one-dimensional character /
+  [PASS] source contains scope phrase: sign-magnitude constraints
+  [PASS] source contains scope phrase: does not classify higher-dimensional selectors, arbitrary class
+  [PASS] source excludes broad binary-class-function sentence
 
 ----------------------------------------------------------------------------
 (A) staggered det(D+mI): identical & positive under id / transposition / 3-cycle
@@ -51,6 +59,7 @@ VERDICT
   route is closed.
 
 ============================================================================
-PASS=11 FAIL=0
+PASS=15 FAIL=0
 
 ----- stderr -----
+

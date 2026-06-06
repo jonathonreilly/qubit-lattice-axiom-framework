@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 178 |
 | **retained_no_go** | 194 |
-| **retained_bounded** | 671 |
+| **retained_bounded** | 672 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1226 |
+| unaudited | 1225 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1039 |
+| `audited_clean` | 1040 |
 | `audited_conditional` | 83 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1510 |
+| `unaudited` | 1509 |
 
 | claim_type | count |
 |---|---:|
@@ -863,6 +863,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_mechanism_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -13226,6 +13227,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `SIGN_PORTABILITY_INVARIANT_NOTE.md`
   - `DISTANCE_LAW_PORTABILITY_NOTE.md`
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
+- **auditor confidence:** high
+
+### `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** One-dimensional character/sign-magnitude constraints on the finite S_3 axis-ordering surface: determinant-magnitude positivity is trivial-representation and orientation sign is the sign-representation route whose positive level set is C_3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-001331-6c17fe2cbd-positivity_bridge_requires_o`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The staggered determinant is S_3-invariant and positive under axis orderings, while the orientation sign sgn(σ) is +1 exactly on A_3=C_3 and -1 on transpositions.  _(class `A`)_
+- **chain closes:** True — The determinant positivity and S_3 gauge-equivalence inputs are supplied by retained-grade cited authorities, and the remaining selection claim is finite S_3 representation algebra. The note explicitly leaves the physical derivation of an orientation-sign positivity as open and does not rely on it for the bounded theorem.
+- **rationale:** The load-bearing argument is a genuine algebraic closure over retained determinant-positivity and retained-bounded S_3 axis-symmetry inputs plus elementary S_3 sign-character facts. The runner does compute the free staggered determinant under representative identity, transposition, and 3-cycle orderings and separately checks the sign representation; it also guards the stated one-dimensional scope. No external comparator, tuned numerical value, or open upstream premise is imported into the bounded conclusion.
 - **auditor confidence:** high
 
 ### `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23`

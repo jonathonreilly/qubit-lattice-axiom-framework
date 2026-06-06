@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1290 |
+| unaudited | 1289 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
 | ~~audited_conditional~~ | 67 |
-| ~~audited_failed~~ | 14 |
+| ~~audited_failed~~ | 15 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,19 +64,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1097 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 58 |
+| `audited_failed` | 59 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1597 |
+| `unaudited` | 1596 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1329 |
 | `decoration` | 53 |
-| `meta` | 320 |
+| `meta` | 321 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 766 |
+| `positive_theorem` | 765 |
 
 | criticality | count |
 |---|---:|
@@ -1387,6 +1387,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_measure_weight_normalization_subdivision_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_dial_bucket_subdivision_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_stability_dynamics_selector_subdivision_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -13921,6 +13922,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Supplied finite carrier plus supplied positive reference trace measure plus supplied nonnegative source weights with positive total plus exact Radon-Nikodym density imply a normalized source measure and trace/RN expectation identity.  _(class `A`)_
 - **chain closes:** False — The finite RN algebra closes, but the indexed row-count claim does not close in the completed runner output. The note claims 24 rows with 10 trace_normalization_reference rows, while the runner finds 21 total rows and 7 trace_normalization_reference rows.
 - **rationale:** The mathematical prototype is ordinary finite-measure algebra over supplied inputs, not a first-principles physics derivation. However, the source note’s explicit indexed coverage claim fails against the included runner output: two row-count checks fail, reporting 21 rows rather than 24 and 7 trace-normalization rows rather than 10. Because those counts are part of the stated result and runner certificate, the chain does not close on its own terms.
+- **auditor confidence:** high
+
+### `post_record_stability_dynamics_selector_subdivision_2026-06-06`
+
+- **Note:** [`POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md`](../../docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Read-only audit-companion subdivision of stability_or_dynamics_selector ledger rows into flow/thermal stability versus arrow/dynamics bridge sub-buckets, including the claimed current snapshot counts and firewall flags.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-194157-f7953673fe-post_record_stability_dynami`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the current ledger snapshot, the stability/dynamics selector bucket contains 77 rows, subdivided into 46 flow_or_thermal_stability rows and 31 arrow_or_dynamics_bridge rows.  _(class `A`)_
+- **chain closes:** False — The completed runner reports the current ledger snapshot has 87 stability/dynamics selector rows, with computed sub-bucket counts 53 and 34, not the note's 77, 46, and 31. The missing step is an updated ledger-snapshot certificate matching the current audit ledger.
+- **rationale:** This is not a timeout or missing-compute case: the provided runner completed and returned two substantive failures. Its computed current-snapshot row count and sub-bucket counts contradict the source note's load-bearing table. The runner also hard-codes the claimed 46 and 31 summary lines even after printing computed counts of 53 and 34, so the exact-support count claim is stale rather than closed.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

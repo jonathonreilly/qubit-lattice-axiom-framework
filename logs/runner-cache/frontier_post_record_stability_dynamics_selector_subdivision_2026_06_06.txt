@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
+runner_sha256: a5d7c3f4ab2f6498c93daf5dcc6a5f208d01b776771fc4243a196b08ba7f2f8a
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 1.04
+status: nonzero_exit
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -19,16 +27,16 @@ PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: 
 ------------------------------------------------------------------------------
 Stability/dynamics subdivision checks
 ------------------------------------------------------------------------------
-PASS stability/dynamics selector row count is current snapshot :: 77
-PASS sub-bucket counts sum to stability/dynamics count :: Counter({'flow_or_thermal_stability': 46, 'arrow_or_dynamics_bridge': 31})
-PASS expected sub-bucket counts match :: Counter({'flow_or_thermal_stability': 46, 'arrow_or_dynamics_bridge': 31})
+FAIL stability/dynamics selector row count is current snapshot :: 87
+PASS sub-bucket counts sum to stability/dynamics count :: Counter({'flow_or_thermal_stability': 53, 'arrow_or_dynamics_bridge': 34})
+FAIL expected sub-bucket counts match :: Counter({'flow_or_thermal_stability': 53, 'arrow_or_dynamics_bridge': 34})
 PASS representative row present in flow_or_thermal_stability :: flavor_r_half_is_the_records_flow_separatrix_2026-06-02
 PASS representative row present in arrow_or_dynamics_bridge :: a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1
-PASS audit ledger hash is unchanged :: b13455e925f8862055b350350f72ce59970275fdbbc376642b9355424d8eb737
+PASS audit ledger hash is unchanged :: eed1bd20c1ff5b5b8280d799adfcec67120d8ac7031fdcc89d924ada1ca2465c
 
 Stability/dynamics sub-bucket counts:
-  arrow_or_dynamics_bridge: 31
-  flow_or_thermal_stability: 46
+  arrow_or_dynamics_bridge: 34
+  flow_or_thermal_stability: 53
 
 [arrow_or_dynamics_bridge]
   a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1 | unaudited | unaudited | bounded_theorem | docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md
@@ -61,10 +69,13 @@ PASS stable setting selects dial flag is false
 PASS generation/Koide dial selected flag is false
 PASS Record-derived physical arrow flag is false
 
-SUMMARY: PASS=25 FAIL=0
-STABILITY_DYNAMICS_SELECTOR_ROWS=77
+SUMMARY: PASS=23 FAIL=2
+STABILITY_DYNAMICS_SELECTOR_ROWS=87
 FLOW_OR_THERMAL_STABILITY_ROWS=46
 ARROW_OR_DYNAMICS_BRIDGE_ROWS=31
 AUDIT_LEDGER_WRITTEN=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

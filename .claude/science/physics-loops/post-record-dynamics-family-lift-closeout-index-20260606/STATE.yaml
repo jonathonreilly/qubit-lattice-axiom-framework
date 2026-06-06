@@ -1,0 +1,59 @@
+loop_slug: post-record-dynamics-family-lift-closeout-index-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 36
+date: 2026-06-06
+branch: physics-loop/post-record-dynamics-family-lift-closeout-index-20260606
+base: physics-loop/post-record-supplied-family-lift-certificate-interface-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2875"
+goal: |
+  Index the extended post-record dynamics plus family-lift stack for final
+  campaign handoff.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: dynamics plus family-lift closeout index
+files_touched:
+  - docs/POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md
+  - scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-dynamics-family-lift-closeout-index-20260606/*
+runner_summary: "SUMMARY: PASS=71 FAIL=0"
+index_results:
+  post_record_dynamics_family_lift_closeout_index: true
+  extended_stack_prs: 10
+  extended_stack_exact_support: 7
+  extended_stack_no_go: 3
+  family_lift_extension_prs: 3
+open_imports:
+  - "branch-local handoff only"
+  - "independent audit remains required before effective retained interpretation"
+  - "family-lift rule remains supplied unless derived elsewhere"
+no_go_routes:
+  - "closeout index applies audit verdicts"
+  - "closeout index promotes rows"
+  - "closeout index selects a dial"
+  - "finite certificates alone prove unbounded retained authority"
+review_findings: "local review clean: runner PASS=71 FAIL=0; py_compile clean; cached summary present; overclaim/firewall grep clean; loop pack has 13 files; git diff --check clean"
+pr_status: not_opened
+pr_url: null
+pr_number: null
+cycle_status: review_clean
+mergeable: null
+merge_state_status: null
+checks: null
+next_exact_action: |
+  Commit, push, open a stacked PR, and verify GitHub status.
+stop_condition: |
+  Satisfied when the stacked PR is open, mergeable/clean or settled with
+  recorded CI status, and the 12-hour campaign clock is exhausted.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "extended dynamics plus family-lift stack is indexed for handoff"
+  hypothetical_axiom_status: "family-lift rule may be supplied or derived elsewhere and still needs audit"
+  admitted_observation_status: "post-record observations remain realized records, not probability laws"
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch is a closeout index and does not apply verdicts, promote claims, or select a dial."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

@@ -1,0 +1,22 @@
+loop_slug: plaquette-three-sample-scope-20260606
+mode: run
+target_claim_id: gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17
+started_from: origin/main
+branch: physics-loop/plaquette-three-sample-scope-20260606
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_blocker_text: "missing_bridge_theorem: cheapest repair is to narrow this row to the exact radical reconstruction map from three abstract sample values and make all beta=6 PF-seam statements conditional on the four Wilson/Haar/compression/evaluation bridge authorities."
+active_route: source-scope repair to exact radical reconstruction map
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_EXACT_RADICAL_RECONSTRUCTION_MAP_NOTE_2026-04-17.md
+  - .claude/science/physics-loops/plaquette-three-sample-scope-20260606/
+open_imports:
+  - physical Wilson/Haar beta=6 plaquette PF seam
+  - explicit same-surface values Z_6^env(W_A), Z_6^env(W_B), Z_6^env(W_C)
+  - explicit beta-side environment vector
+proposal_allowed: false
+proposal_allowed_reason: "This block narrows to bounded support; it does not close the beta=6 evaluator."
+audit_required_before_effective_status_change: true
+review_loop_disposition: local-self-review-pass
+next_exact_action: "Run py_compile, runner, cache check, diff checks, then commit/push/open PR."

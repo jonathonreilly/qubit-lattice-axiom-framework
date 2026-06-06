@@ -1,0 +1,13 @@
+loop_slug: noether-onsite-generator-scope-repair-20260606
+target_claim_id: axiom_first_lattice_noether_theorem_note_2026-04-29
+branch: physics-loop/noether-onsite-generator-scope-repair-20260606
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_status_change: true
+files_touched:
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_lattice_noether_check.py
+  - outputs/axiom_first_lattice_noether_check_2026-06-06.txt
+blocker_closed_by_branch: "N3 scoped to onsite/internal generators; U(1) sign convention explicit; E5 arbitrary-bilinear symbolic check added."
+next_exact_action: "Open PR for independent review/audit requeue."

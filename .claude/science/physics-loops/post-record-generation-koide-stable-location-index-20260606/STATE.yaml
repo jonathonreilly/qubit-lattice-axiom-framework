@@ -1,0 +1,62 @@
+loop_slug: post-record-generation-koide-stable-location-index-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 22
+date: 2026-06-06
+branch: physics-loop/post-record-generation-koide-stable-location-index-20260606
+base: physics-loop/post-record-flow-thermal-stable-setting-certificate-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2841"
+goal: |
+  Index generation/Koide dial rows as stable-location candidates under supplied
+  rules without selecting, forcing, or deriving the dial.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: generation/Koide stable-location index
+hard_residual_attacked: |
+  The stable-setting certificate allows stable locations on a dial, but the
+  generation/Koide rows still need a row-index that separates candidate
+  locations, obstruction/open-gate rows, and supplied stable-feature rows.
+files_touched:
+  - docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md
+  - scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_generation_koide_stable_location_index_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-generation-koide-stable-location-index-20260606/*
+runner_summary: "SUMMARY: PASS=60 FAIL=0"
+index_results:
+  koide_or_generation_selector_rows: 104
+  generation_or_koide_stable_feature_rows: 2
+  generation_koide_stable_location_index_rows: 106
+open_imports:
+  - "supplied score/rule/map/kernel for stable-location claims"
+  - "supplied stability predicate for each claimed location"
+  - "selector/invariance/target rule for selected-dial status"
+  - "measure/prior/source bridge where a row depends on weighting"
+  - "independent audit remains required for verdicts"
+  - "PR is stacked on the flow/thermal stable-setting certificate companion"
+no_go_routes:
+  - "stable location => selected dial"
+  - "Koide/generation row membership => selected physical value"
+  - "Record => stable rule or selector"
+  - "objectivity/pointer words => equal weighting without supplied measure"
+review_findings: "local review pass: py_compile, cached summary, ASCII scan, overclaim scan, 13-file loop pack, git diff --check"
+pr_status: ready_for_pr
+pr_url: null
+pr_number: null
+cycle_status: ready_for_pr
+next_exact_action: |
+  Commit, push, then open a stacked PR against
+  physics-loop/post-record-flow-thermal-stable-setting-certificate-20260606.
+stop_condition: |
+  Satisfied when the runner passes, local review is clean, the branch is pushed,
+  and the stacked PR is open and verified.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "generation/Koide dial rows have a stable-location index under supplied rules; selected-dial status remains blocked without a selector"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch indexes stable locations and does not select or force a generation/Koide dial value."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

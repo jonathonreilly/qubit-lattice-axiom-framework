@@ -1,0 +1,158 @@
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md exists
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: stable-location index
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: It is not a selected dial.
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: Total generation/Koide dial-relevant rows indexed here: `106`.
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: `koide_or_generation_selector` | 104
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md exists
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: `generation_or_koide_stable_feature` | 2
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: Stable setting is not selected dial.
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: stable location on the dial is
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable dial setting | supplied score/rule plus map/flow stability certificate
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: selected dial value | selector/invariance/target rule
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
+PASS docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md exists
+PASS docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md contains: r=1/2 is the unstable separatrix
+PASS docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md contains: drop charged leptons onto
+PASS docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md contains: requires a **stabilizer**
+PASS docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md exists
+PASS docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md contains: equal-block `(1,1)` weighting
+PASS docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md contains: records/objectivity maximization principle
+PASS docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md contains: not an unconditional
+
+------------------------------------------------------------------------------
+Stable-location certificate checks
+------------------------------------------------------------------------------
+PASS complete supplied evidence gives stable-location support
+PASS missing supplied rule stays open
+PASS stable location without selector does not select dial
+PASS selector rule is needed for selected-dial readiness
+PASS Q(r) sends r=1/2 to 2/3 exactly :: 2/3
+PASS supplied r -> 2r^2 has r=1/2 fixed :: {'is_fixed_point': True, 'derivative': Fraction(2, 1), 'feature': 'unstable_separatrix'}
+PASS r=1/2 feature is separatrix, not attractor :: {'is_fixed_point': True, 'derivative': Fraction(2, 1), 'feature': 'unstable_separatrix'}
+PASS equal objectivity weights give r=1/2
+PASS rank weights give r=1 instead of r=1/2
+
+------------------------------------------------------------------------------
+Generation/Koide row-index checks
+------------------------------------------------------------------------------
+PASS Koide/generation selector row count is current snapshot :: 104
+PASS selector location counts match expected :: Counter({'koide_value_or_phase_location': 49, 'obstruction_or_open_gate': 38, 'generation_structure_location': 6, 'selector_surface_location': 5, 'readout_carrier_or_record_location': 3, 'measure_weight_or_source_location': 2, 'other_generation_koide_location': 1})
+PASS selector location counts sum to selector rows :: Counter({'koide_value_or_phase_location': 49, 'obstruction_or_open_gate': 38, 'generation_structure_location': 6, 'selector_surface_location': 5, 'readout_carrier_or_record_location': 3, 'measure_weight_or_source_location': 2, 'other_generation_koide_location': 1})
+PASS generation/Koide stable-feature row count is current snapshot :: {'flavor_r_half_is_the_records_flow_separatrix_2026-06-02', 'koide_records_objectivity_conditional_note_2026-05-31'}
+PASS generation/Koide stable-feature ids match :: {'flavor_r_half_is_the_records_flow_separatrix_2026-06-02', 'koide_records_objectivity_conditional_note_2026-05-31'}
+PASS combined generation/Koide dial-relevant index has 106 rows
+PASS stable-feature rows are disjoint from selector rows
+PASS representative row present in generation_structure_location :: three_generation_structure_note
+PASS representative row present in koide_value_or_phase_location :: charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02
+PASS representative row present in measure_weight_or_source_location :: bae_u1b_six_ray_dirac_measure_note_2026-05-17
+PASS representative row present in obstruction_or_open_gate :: flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31
+PASS representative row present in other_generation_koide_location :: staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17
+PASS representative row present in readout_carrier_or_record_location :: persistent_record_sidebit_note
+PASS representative row present in selector_surface_location :: pmns_commutant_eigenoperator_selector_note
+PASS audit ledger hash is unchanged :: 8f607fd1374a4ce70a55e37dab233caff8be55df4e18bcd2a61cf594cc1e5d44
+
+Generation/Koide selector-location counts:
+  generation_structure_location: 6
+  koide_value_or_phase_location: 49
+  measure_weight_or_source_location: 2
+  obstruction_or_open_gate: 38
+  other_generation_koide_location: 1
+  readout_carrier_or_record_location: 3
+  selector_surface_location: 5
+
+[generation_structure_location]
+  flavor_find_j_round1_jcs_measure_neutral_2026-06-02 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md
+  one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10 | audited_clean | retained_bounded | bounded_theorem | docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md
+  one_generation_matter_closure_note | unaudited | unaudited | bounded_theorem | docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md
+  staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07 | unaudited | unaudited | bounded_theorem | docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md
+  three_generation_local_algebra_narrow_theorem_note_2026-05-10 | audited_clean | retained_bounded | bounded_theorem | docs/THREE_GENERATION_LOCAL_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-10.md
+  three_generation_structure_note | audited_clean | retained_bounded | bounded_theorem | docs/THREE_GENERATION_STRUCTURE_NOTE.md
+
+[koide_value_or_phase_location]
+  charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md
+  charged_lepton_koide_value_full_chain_of_custody_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md
+  charged_lepton_mass_hierarchy_review_note_2026-04-17 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md
+  ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25 | unaudited | unaudited | bounded_theorem | docs/CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md
+  cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29 | unaudited | unaudited | bounded_theorem | docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_PROMOTED_VIA_V8_THEOREM_NOTE_2026-04-29.md
+  flavor_asymmetry_2over9_forced_weight_2026-05-31 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md
+  flavor_asymmetry_identification_principled_not_forced_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md
+  flavor_trace_vs_center_dissolves_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_TRACE_VS_CENTER_DISSOLVES_NOTE_2026-05-30.md
+
+[measure_weight_or_source_location]
+  bae_u1b_six_ray_dirac_measure_note_2026-05-17 | unaudited | unaudited | bounded_theorem | docs/BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md
+  g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2 | unaudited | unaudited | bounded_theorem | docs/G_NEWTON_BORN_AS_SOURCE_POSITIVE_THEOREM_NOTE_2026-05-10_gnewtonG2.md
+
+[obstruction_or_open_gate]
+  flavor_carrier_delegation_terminus_local_blind_2026-05-31 | unaudited | unaudited | bounded_theorem | docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md
+  flavor_find_j_round3_dirac_generation_blind_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md
+  flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md
+  flavor_kreal_instrument_two_letter_phase_orthogonal_2026-06-02 | audited_conditional | audited_conditional | open_gate | docs/FLAVOR_KREAL_INSTRUMENT_TWO_LETTER_PHASE_ORTHOGONAL_2026-06-02.md
+  flavor_measure_positivity_agnostic_note_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md
+  flavor_readout_gate_equals_carrier_identification_2026-05-31 | audited_renaming | audited_renaming | bounded_theorem | docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md
+  flavor_so2_readout_false_binary_note_2026-05-30 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md
+  generation_axiom_boundary_note | audited_clean | retained_bounded | bounded_theorem | docs/GENERATION_AXIOM_BOUNDARY_NOTE.md
+
+[other_generation_koide_location]
+  staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17 | audited_clean | retained_bounded | bounded_theorem | docs/STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md
+
+[readout_carrier_or_record_location]
+  closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2 | audited_clean | retained_bounded | bounded_theorem | docs/CLOSURE_T2_M1_M2_DISTINGUISHER_NOTE_2026-05-10_t2m1m2.md
+  persistent_record_sidebit_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md
+  physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30 | audited_clean | retained_bounded | bounded_theorem | docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md
+
+[selector_surface_location]
+  dm_leptogenesis_pmns_microscopic_selector_reduction_theorem_note_2026-04-17 | unaudited | unaudited | bounded_theorem | docs/DM_LEPTOGENESIS_PMNS_MICROSCOPIC_SELECTOR_REDUCTION_THEOREM_NOTE_2026-04-17.md
+  dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16 | unaudited | unaudited | bounded_theorem | docs/DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md
+  pmns_commutant_eigenoperator_selector_note | audited_clean | retained_bounded | bounded_theorem | docs/PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md
+  pmns_selector_bank_nonrealization_note | unaudited | unaudited | bounded_theorem | docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md
+  scalar_selector_proof_chains_2026-04-19 | unaudited | unaudited | bounded_theorem | docs/SCALAR_SELECTOR_PROOF_CHAINS_2026-04-19.md
+
+[generation_or_koide_stable_feature]
+  flavor_r_half_is_the_records_flow_separatrix_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md
+  koide_records_objectivity_conditional_note_2026-05-31 | unaudited | unaudited | bounded_theorem | docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS generation/Koide dial selected flag is false
+PASS stable location selects dial flag is false
+PASS selected dial derived from stability flag is false
+PASS Record-derived stable rule flag is false
+PASS Record-derived selector flag is false
+PASS Record-derived measure/prior flag is false
+PASS Record-derived physical arrow flag is false
+PASS Koide closure flag is false
+
+SUMMARY: PASS=60 FAIL=0
+KOIDE_OR_GENERATION_SELECTOR_ROWS=104
+GENERATION_OR_KOIDE_STABLE_FEATURE_ROWS=2
+GENERATION_KOIDE_STABLE_LOCATION_INDEX_ROWS=106
+GENERATION_STRUCTURE_LOCATION_ROWS=6
+KOIDE_VALUE_OR_PHASE_LOCATION_ROWS=49
+MEASURE_WEIGHT_OR_SOURCE_LOCATION_ROWS=2
+OBSTRUCTION_OR_OPEN_GATE_ROWS=38
+OTHER_GENERATION_KOIDE_LOCATION_ROWS=1
+READOUT_CARRIER_OR_RECORD_LOCATION_ROWS=3
+SELECTOR_SURFACE_LOCATION_ROWS=5
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+STABLE_LOCATION_SELECTS_DIAL=FALSE
+SELECTED_DIAL_DERIVED_FROM_STABILITY=FALSE
+STABLE_RULE_DERIVED_FROM_RECORD=FALSE
+SELECTOR_DERIVED_FROM_RECORD=FALSE
+MEASURE_OR_PRIOR_DERIVED_FROM_RECORD=FALSE
+PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
+KOIDE_CLOSED=FALSE

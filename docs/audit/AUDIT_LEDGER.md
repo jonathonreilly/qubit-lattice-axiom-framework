@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1308 |
+| unaudited | 1307 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
 | ~~audited_conditional~~ | 65 |
-| ~~audited_failed~~ | 7 |
+| ~~audited_failed~~ | 8 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,19 +64,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1090 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 51 |
+| `audited_failed` | 52 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1615 |
+| `unaudited` | 1614 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1326 |
 | `decoration` | 53 |
-| `meta` | 314 |
+| `meta` | 315 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 775 |
+| `positive_theorem` | 774 |
 
 | criticality | count |
 |---|---:|
@@ -1371,6 +1371,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `post_record_audit_evidence_ladder_row_bucketing_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_dynamics_campaign_closeout_index_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | E | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -13669,6 +13670,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`
   - `POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md`
   - `POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md`
+- **auditor confidence:** high
+
+### `post_record_dynamics_campaign_closeout_index_2026-06-06`
+
+- **Note:** [`POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md`](../../docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited the closeout index as a branch-local map of PRs #2850, #2853, #2856, #2858, #2861, and #2864, including its stated stack statuses, cached-summary certificate, and no-promotion/no-dial-selection firewall flags.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-190501-023707f486-post_record_dynamics_campaig`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** This branch indexes the six-PR post-record dynamics stack built at the end of the campaign.  _(class `E`)_
+- **chain closes:** False — The index text and firewall flags mostly check out, but the completed runner reports two failed cached-summary checks for PR #2850 and PR #2864. The note asserts cached summaries are present for each stack layer, so the restricted packet does not close that claim on its own terms.
+- **rationale:** The load-bearing step is an index definition, not a first-principles derivation or algebraic closure. The runner source hard-codes the stack entries and expected summary strings, then performs text/cache presence checks rather than deriving any physics result. The completed runner exits nonzero with FAIL=2 because two required cached logs do not contain the expected summary strings. This is a substantive completed artifact mismatch, not a timeout or compute-budget case.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
+runner_sha256: 82acfa764ddd83e53c17825e6386ea6968a8dd36c7d47ce0c00918a74a0bf76e
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 0.04
+status: nonzero_exit
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Closeout index checks
@@ -28,7 +36,7 @@ PASS index states no audit verdicts are applied
 Cached summary checks
 ------------------------------------------------------------------------------
 PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt exists
-PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt has summary for PR #2850
+FAIL logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt has summary for PR #2850
 PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt exists
 PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt has summary for PR #2853
 PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt exists
@@ -38,7 +46,7 @@ PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewal
 PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt exists
 PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt has summary for PR #2861
 PASS logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt exists
-PASS logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt has summary for PR #2864
+FAIL logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt has summary for PR #2864
 
 ------------------------------------------------------------------------------
 Status shape checks
@@ -61,7 +69,7 @@ PASS sample-is-probability-law flag is false
 PASS generation/Koide dial selected flag is false
 PASS stable setting selects dial flag is false
 
-SUMMARY: PASS=46 FAIL=0
+SUMMARY: PASS=44 FAIL=2
 POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX=TRUE
 DYNAMICS_STACK_PRS=6
 DYNAMICS_STACK_EXACT_SUPPORT=4
@@ -70,3 +78,6 @@ AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
+
+----- stderr -----
+

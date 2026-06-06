@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 192 |
+| **retained** | 193 |
 | **retained_no_go** | 209 |
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1297 |
+| unaudited | 1296 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1096 |
+| `audited_clean` | 1097 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 56 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1604 |
+| `unaudited` | 1603 |
 
 | claim_type | count |
 |---|---:|
@@ -915,6 +915,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_finite_target_kernel_stability_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_model_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_persistent_record_production_bridge_prototype_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13823,6 +13824,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For a realized word and supplied finite candidate laws, the likelihood vector is only a score vector and does not contain a prior, loss/threshold, tie-breaker, admissibility rule, extension rule, or physical interpretation.  _(class `A`)_
 - **chain closes:** True — The finite probability examples independently show the required non-uniqueness: posterior winners can reverse under different priors, maximum likelihood can tie, candidate-family extension can change the winner, and likelihood-ratio decisions depend on thresholds. This closes only the scoped score-alone firewall, not any route that supplies an explicit decision interface.
 - **rationale:** The load-bearing step is an elementary finite-probability obstruction, not a definition, renaming, external comparator, or tuned numerical match. The runner source actually constructs normalized finite laws and exact rational counterexamples; independently checking the displayed arithmetic confirms the likelihoods 4/625 and 27/256, the posterior reversal, the 1/4 tie, the spike-family extension, and the ratio 16875/1024. The source-anchor checks against other notes are not needed for the audited mathematical scope. The no-go discipline gate is satisfied because the claim is explicitly scoped to scores alone and preserves the conditional route with supplied priors, thresholds, tie-breakers, admissibility rules, and physical interpretation.
+- **auditor confidence:** high
+
+### `post_record_persistent_record_production_bridge_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** A finite supplied bridge prototype: for the explicitly supplied word law, record update, persistence rule, and overlap kernel, the post-record distribution is normalized, contains no internal probabilities, and has expected overlap 169/320 without deriving physical production dynamics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-192559-e75b2755b3-post_record_persistent_recor`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A supplied finite pre-record word law is pushed forward through the supplied monotone record-writing update, and the supplied overlap kernel gives a law-scoped expected overlap certificate.  _(class `A`)_
+- **chain closes:** True — The scoped finite construction closes by direct enumeration from the supplied definitions. Independently, the law sums to 1, the four words push forward to the four stated records, the kernel is symmetric/self-normalized/bounded, and the expected overlap is 169/320.
+- **rationale:** The audited claim is not a derivation of a production law, Born law, physical arrow, or dial selection; it is a finite supplied-bridge construction with those exclusions stated in the note and reflected in the runner. The load-bearing math is exact finite enumeration over supplied inputs, not a tuned numerical comparator or a symbol renaming. An independent calculation of the displayed probabilities and kernel expectation matches the runner's 169/320 result.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

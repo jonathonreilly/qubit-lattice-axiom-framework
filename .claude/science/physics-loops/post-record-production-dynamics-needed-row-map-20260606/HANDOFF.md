@@ -41,8 +41,8 @@ language.
 
 ## Next exact action
 
-Wait for the final pushed head's `audit_pipeline` to complete, then record the
-clean final PR/check state.
+Closed for campaign purposes. Pivot to the flow/thermal stable-setting
+certificate lane.
 
 ## PR
 
@@ -53,6 +53,7 @@ initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline in progress at first verification"
 final_mergeable: null
-final_merge_state_status: null
-final_checks: null
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "audit_pipeline completed SUCCESS at clean verification"
 ```

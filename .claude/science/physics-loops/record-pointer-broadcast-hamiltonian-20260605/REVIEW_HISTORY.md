@@ -11,3 +11,9 @@
 - Hygiene: `git diff --check` passed.
 - Wording: targeted Hamiltonian/rate/basis/selector/status sweep returned no
   hits.
+- PR verification:
+  `gh pr view 2770 --json number,title,state,baseRefName,headRefName,url,mergeStateStatus,isDraft`
+  returned open PR #2770 with base
+  `physics-loop/record-pointer-broadcast-circuit-20260605`, head
+  `physics-loop/record-pointer-broadcast-hamiltonian-20260605`, and
+  `mergeStateStatus: UNSTABLE`.

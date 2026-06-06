@@ -41,14 +41,18 @@ language.
 
 ## Next exact action
 
-Open the stacked PR and verify GitHub merge/check status.
+Wait for the final pushed head's `audit_pipeline` to complete, then record the
+clean final PR/check state.
 
 ## PR
 
 ```yaml
-pr_url: null
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2840"
 base: "physics-loop/post-record-supplied-orientation-bridge-interface-20260606"
-initial_mergeable: null
-initial_merge_state_status: null
-initial_checks: null
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline in progress at first verification"
+final_mergeable: null
+final_merge_state_status: null
+final_checks: null
 ```

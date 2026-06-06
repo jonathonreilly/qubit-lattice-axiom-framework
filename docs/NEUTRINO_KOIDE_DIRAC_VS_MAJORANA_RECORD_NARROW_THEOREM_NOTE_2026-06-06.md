@@ -68,6 +68,31 @@ So neutrinos do **not** obey the charged-lepton Koide (`Q=2/3`). This is
 with** the simplest "neutrinos are Dirac with the charged-lepton C₃ structure →
 `Q=2/3`" hypothesis.
 
+## Sharpened: the bound `Q_ν < 2/3` is guaranteed and robust
+
+The data statement above is not merely a scan — it is a **guaranteed, robust
+bound** (runner Block 4b):
+
+1. **Monotonicity ⟹ the maximum is at `m_lightest = 0`.** `Q_ν(NH)` decreases
+   monotonically in the lightest mass (verified over the full range), so its
+   supremum over **all** absolute scales is attained at `m_lightest = 0`:
+   `Q_ν^max = (√Δm²₂₁ + √Δm²₃₁)/(Δm²₂₁^{1/4} + Δm²₃₁^{1/4})²`. The bound therefore
+   holds for **every** absolute scale, not just the sampled range.
+2. **3σ-robust.** Maximizing the hierarchy over the global-fit 3σ boxes
+   (`Δm²₂₁ ∈ [6.8, 8.0]×10⁻⁵`, `Δm²₃₁ ∈ [2.40, 2.60]×10⁻³ eV²`) gives
+   `Q_ν^max(NH) = 0.591` and `Q_ν^max(IH) = 0.500` — both still well below
+   `2/3 = 0.667`. The charged-lepton Koide is excluded for neutrinos at a robust
+   margin.
+3. **The Koide deficit as a discriminant.** Define
+   `Δ_K := 2/3 − Q_ν^max ≳ 0.076` (3σ). This nonzero, robust deficit *is* the
+   quantitative Dirac/Majorana discriminant: a directly-recorded Dirac neutrino
+   sharing the charged-lepton structure would have `Δ_K = 0` (`Q_ν = 2/3`); the
+   composite Majorana/seesaw mass forces `Δ_K > 0`, and the measured splittings
+   already require `Δ_K ≳ 0.08`.
+
+So the charged-lepton Koide is not approximately, but **robustly (≳0.08 in Q,
+3σ)** forbidden for neutrinos — independent of the unknown absolute mass scale.
+
 ## The falsifiable distinction
 
 - **Charged leptons:** `Q = 2/3` (recorded Dirac √mass).

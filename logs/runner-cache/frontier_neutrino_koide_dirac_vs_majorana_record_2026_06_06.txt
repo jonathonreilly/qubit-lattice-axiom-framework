@@ -21,6 +21,12 @@ Neutrino Koide: lens predicts Q_nu=2/3 iff Dirac (direct record); Majorana/seesa
   [PASS] IH: Q_nu < 2/3 across the cosmologically-allowed range  --  Q_nu in [0.355, 0.500]
   [PASS] => neutrinos do NOT obey the charged-lepton Koide (Q=2/3): consistent with Majorana/seesaw  --  and inconsistent with the simplest Dirac+charged-lepton-C3 -> Q=2/3 hypothesis
 
+[BLOCK 4b] SHARPENED: Q_nu < 2/3 is GUARANTEED (analytic max, 3-sigma robust)
+  [PASS] Q_nu(NH) is monotone-decreasing in m_lightest => max at m_lightest=0 (bound holds for ALL scales)
+  [PASS] NH: Q_nu^max over the 3-sigma Dm^2 box is < 2/3 (charged-lepton Koide robustly excluded)  --  Q_nu^max(NH,3sig) = 0.5909 < 0.6667
+  [PASS] IH: Q_nu^max (m_lightest=0) is < 2/3  --  Q_nu^max(IH) = 0.5000
+  [PASS] Koide DEFICIT (2/3 - Q_nu^max) > 0.07 at 3-sigma: a robust discriminant margin  --  deficit >= 0.0758 (charged-lepton Q=2/3 excluded by ~0.08 in Q)
+
 [BLOCK 5] The falsifiable distinction + scope
   [PASS] DISTINCTION: charged leptons Q=2/3 (recorded Dirac); neutrinos Q<2/3 (composite)
   [PASS] Q_nu=2/3 would require Dirac + shared C3 record structure (DISFAVORED by the data)
@@ -28,5 +34,5 @@ Neutrino Koide: lens predicts Q_nu=2/3 iff Dirac (direct record); Majorana/seesa
   [PASS] scope: qualitative+comparator (not a neutrino-mass derivation); Dm^2 comparator only; no axiom
 
 ====================================================================================
-SCORECARD:  PASS = 14   FAIL = 0
+SCORECARD:  PASS = 18   FAIL = 0
 ====================================================================================

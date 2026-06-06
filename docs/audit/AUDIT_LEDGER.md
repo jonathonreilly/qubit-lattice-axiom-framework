@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 710 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 49 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1120 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 49 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1623 |
+| `unaudited` | 1622 |
 
 | claim_type | count |
 |---|---:|
@@ -1259,6 +1259,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4130,6 +4131,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The retained finite-k bridge computes the exact normalized centroid derivative and finite probe, with negative signs for d=1,2 and positive signs for d=3,4,5.  _(class `B`)_
 - **chain closes:** True — The stated lower-bound sign conclusion follows from the retained finite-k centroid-sign bridge's sign table and the note's explicit convention that positive raw_delta is toward the mass. The derivative-sign calculus on df_d/dr is correctly kept explanatory rather than load-bearing.
 - **rationale:** Both cited authorities are retained-grade, and the only load-bearing imported sign authority is the retained_bounded finite-k bridge. The source note does not overclaim full dimension selection, beta/alpha derivation, upper-bound closure, or uniform control in M; it limits itself to the current runner geometry and the displayed finite probe. The included runner stdout is consistent with the sign table, while the primary scientific closure comes from the upstream exact tangent-recursion certificate rather than the broader frontier runner's printed narrative.
+- **auditor confidence:** high
+
+### `dimension_selection_note`
+
+- **Note:** [`DIMENSION_SELECTION_NOTE.md`](../../docs/DIMENSION_SELECTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-runner lower-bound support only: d=1,2 fail and d=3,4,5 pass the stated runner criteria under the displayed finite propagator and potential-family surface, with no unique-d=3 or baseline-rewrite claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-234245-269f5eae4c-dimension_selection_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-k derivative bridge independently certifies the same sign transition for the runner's baseline centroid observable: d <= 2 negative/away response and d >= 3 positive/toward response.  _(class `B`)_
+- **chain closes:** False — The bridge note supplies retained-bounded sign support, but the restricted packet does not include the dynamically imported bridge runner source or the original dimension runner/cache/source-packet verifier needed to check the displayed beta/I_3 table from code. The provided primary runner therefore verifies prose boundaries and an opaque imported replay, not the full finite-runner lower-bound artifact chain.
+- **rationale:** The narrowed prose is materially better scoped and the cited bridge is retained-bounded for the runner-specific centroid sign transition. However, the primary runner source dynamically imports scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py, whose source is not included in the helper packet, so its numerical derivative and finite-M replay cannot be independently verified from the supplied code. The parent note also displays beta, alpha, and I_3 entries attributed to the original dimension runner, but that runner/cache/verifier chain is not present in the restricted packet. This is a packet/artifact incompleteness condition, not a substantive disproof of the bounded claim.
 - **auditor confidence:** high
 
 ### `dimensional_gravity_table`

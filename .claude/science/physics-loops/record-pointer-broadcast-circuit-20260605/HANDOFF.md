@@ -4,6 +4,8 @@
 
 Bounded-support / conditional finite witness block ready for stacked review.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2768
+
 ## Main Finding
 
 With a supplied pointer basis, blank fragments, and CNOT fanout, pointer
@@ -18,6 +20,5 @@ superposition becomes an entangled GHZ-style state, not cloned qubits.
 
 ## Next Exact Action
 
-Open stacked PR against
-`physics-loop/record-local-observability-decoder-20260605`, then patch this
-loop pack with the PR URL.
+Campaign pivot: select the next ranked science lane while #2768 receives
+review/checks.

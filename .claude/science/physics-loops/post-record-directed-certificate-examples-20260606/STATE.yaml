@@ -1,0 +1,74 @@
+loop_slug: post-record-directed-certificate-examples-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 26
+date: 2026-06-06
+branch: physics-loop/post-record-directed-certificate-examples-20260606
+base: physics-loop/post-record-supplied-orientation-bridge-interface-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2839"
+goal: |
+  Instantiate exact finite directed-certificate examples under the supplied
+  orientation bridge interface, keeping arrow/kernel/clock authority supplied
+  rather than derived from post-record counts.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: supplied directed certificate examples
+hard_residual_attacked: |
+  The orientation bridge interface was abstract. This block tests concrete
+  finite directed statistics while preserving the no-go that counts alone do
+  not orient a physical arrow or select production dynamics.
+files_touched:
+  - docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md
+  - scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-directed-certificate-examples-20260606/*
+runner_summary: "SUMMARY: PASS=59 FAIL=0"
+example_results:
+  supplied_directed_certificate_examples: true
+  arrow_or_dynamics_bridge_rows: 28
+  pre_record_law_carries_probability: true
+  post_record_site_carries_realized_information: true
+  directed_statistics_require_supplied_orientation: true
+  orientation_derived_from_record: false
+  physical_arrow_derived_from_record: false
+  production_kernel_selected: false
+  clock_or_rate_derived: false
+  born_law_derived_from_record: false
+open_imports:
+  - "supplied finite law id"
+  - "supplied orientation convention"
+  - "supplied clock/order id"
+  - "supplied kernel, transfer, instrument, Hamiltonian, rate, or boundary bridge for dynamics language"
+  - "supplied directed statistic or event"
+  - "independent audit remains required before effective retained interpretation"
+  - "PR is stacked on the supplied-orientation bridge companion"
+no_go_routes:
+  - "post-record counts alone orient a physical arrow"
+  - "record data derive a production kernel, clock, rate, or Born law"
+  - "stable location or stable setting selects a generation/Koide dial"
+  - "directed certificates transport across laws or bridges without rechecking"
+review_findings: "local review clean: runner PASS=59 FAIL=0; py_compile clean; cached summary/firewalls present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: pending
+pr_url: null
+pr_number: null
+cycle_status: local_review_clean
+mergeable: null
+merge_state_status: null
+checks: null
+next_exact_action: |
+  Commit, push, open a stacked PR against
+  physics-loop/post-record-supplied-orientation-bridge-interface-20260606, then
+  record PR status.
+stop_condition: |
+  Not stopped. Campaign continues after PR verification while runtime remains.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "directed finite certificates are exactly checkable under supplied law/orientation/clock/kernel bridges"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch gives supplied-bridge examples and does not derive or select the bridge data."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

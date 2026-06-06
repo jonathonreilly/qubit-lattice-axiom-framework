@@ -37,9 +37,8 @@ because it summarizes the stack through PR #2861.
 
 ## Next exact action
 
-Commit and push this PR-status checkpoint, then poll PR #2864 until the latest
-head is clean/success. After final PR status is recorded, close out the
-campaign if runtime is exhausted.
+Closed for campaign purposes. Check runtime and close out if the 12-hour budget
+is exhausted.
 
 ## PR
 
@@ -50,6 +49,6 @@ initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline in progress at initial verification"
 final_mergeable: null
-final_merge_state_status: null
-final_checks: null
+final_merge_state_status: CLEAN
+final_checks: "empty check rollup at final verification"
 ```

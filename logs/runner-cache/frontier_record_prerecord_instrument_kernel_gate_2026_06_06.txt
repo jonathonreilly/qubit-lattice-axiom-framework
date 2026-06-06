@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py
+runner_sha256: 9d20603f017eed857017e852394a1e67256c33cb4270d1208813300495f0c2ea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
 Record pre-record instrument kernel gate
 actual_current_surface_status: conditional-support
 trace_class: upstream_support
@@ -44,3 +52,6 @@ E. boundary firewalls
 
 SCORECARD: PASS=26 FAIL=0
 VERDICT: conditional support for the pre-record instrument kernel gate. With a supplied instrument and Born trace rule, a qubit state gives probabilities over possible future record atoms; the written post-record atom is realized information, not the probability vector.
+
+----- stderr -----
+

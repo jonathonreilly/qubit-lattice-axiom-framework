@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dynamics_coupling_residual_classifier_2026_06_06.py
+runner_sha256: 19b6b6b8dd10c39a6a40338c5d5f804f13d47fdb8726e4e5c9ed3aa765442529
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
 
 ========================================================================
 Record-preserving Hamiltonians form a coupling family
@@ -44,3 +52,6 @@ Scorecard
 ========================================================================
 PASS=18 FAIL=0
 FINDING: record preservation constrains an allowed dynamics class, but leaves coupling magnitude, coefficient ratios, nontriviality, and clock-rate normalization open.
+
+----- stderr -----
+

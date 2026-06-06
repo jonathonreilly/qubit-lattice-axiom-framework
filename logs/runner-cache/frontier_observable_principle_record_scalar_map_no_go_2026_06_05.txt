@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_record_scalar_map_no_go_2026_06_05.py
+runner_sha256: 1a9cef8b3f07f51cc8f5410e6641f1dd48d0c926d3063bd2837771a6cb4cf974
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+[PASS] independent branch weights multiply
+       p_ab = p_a p_b
+[PASS] power readouts are multiplicative for every exponent
+       (p_a p_b)^q = p_a^q p_b^q
+[PASS] no nonzero power readout is additive on multiplication
+       for f(p)=p^q, f(1*1)=1 but f(1)+f(1)=2
+[PASS] the additive coordinate is the log limit of the power family
+       (p^q - 1)/q -> log(p)
+[PASS] log is additive on multiplicative branch data
+       log(p_a p_b) = log(p_a) + log(p_b)
+[PASS] normalized power-gradient readout is exponent-blind
+       normalized=2*theta/(theta**2 + 1)
+[PASS] free-monoid word length is additive under concatenation
+       |uv| = |u| + |v|
+[PASS] bare integer mark count does not equal the log code length for p=1/3
+       -log_2(1/3)=log_2(3), and no nonnegative integer n has 2^n=3
+[PASS] Record axiom supplies finite scalar record additivity
+[PASS] Record axiom excludes the tested extra readout content
+[PASS] note contains boundary marker: **Claim type:** no_go
+[PASS] note contains boundary marker: Record supports additive scalar readout after the scalar is supplied
+[PASS] note contains boundary marker: Gate result:
+[PASS] note contains boundary marker: N1 - Alternative Route Enumeration
+[PASS] note contains boundary marker: N8 - Cross-Cycle Echo
+[PASS] note omits forbidden marker: audited_clean
+[PASS] note omits forbidden marker: audited_conditional
+[PASS] note omits forbidden marker: effective_status
+[PASS] note omits forbidden marker: audit_status
+[PASS] note omits forbidden marker: retained_bounded
+[PASS] note omits forbidden marker: retained_no_go
+[PASS] note omits forbidden marker: Generated with
+[PASS] note omits forbidden marker: Claude
+[PASS] note omits forbidden marker: /Users/
+[PASS] note omits forbidden marker: /tmp/
+
+SCORECARD PASS=25 FAIL=0
+
+----- stderr -----
+

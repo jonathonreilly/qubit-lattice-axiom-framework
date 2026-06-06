@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 178 |
-| **retained_no_go** | 193 |
+| **retained_no_go** | 194 |
 | **retained_bounded** | 671 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1228 |
+| unaudited | 1227 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1038 |
+| `audited_clean` | 1039 |
 | `audited_conditional` | 82 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1512 |
+| `unaudited` | 1511 |
 
 | claim_type | count |
 |---|---:|
@@ -790,6 +790,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `omega_lambda_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12116,6 +12117,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Step 6: strengthened block-additivity and universality give f(r_A r_B)=f(r_A)+f(r_B) on a dense realized subset of R_+ x R_+, continuity extends this to all of R_+ x R_+, and Cauchy-Erdos forces f(r)=c log r.  _(class `A`)_
 - **chain closes:** True — The determinant factorization gives r_AB=r_A r_B on no-bond sums, so the strengthened admissibility hypotheses reduce the problem to the standard continuous multiplicative-to-additive Cauchy equation. The cited real-D authority is retained-grade, and X2/X3 are explicit bounded-theorem hypotheses rather than hidden imports.
 - **rationale:** The load-bearing argument is a genuine algebraic and real-analysis closure over the stated bounded hypotheses: real determinants, block determinant multiplication, dense realized ratios, continuity, and the standard Cauchy classifier. Independent checking of the displayed determinant-ratio branches confirms that the 2x2 real-skew block realizes (0,1), 1, and (1,infty), so two factors realize a dense, in fact full, R_+ x R_+ image in the stated strengthened class. The runner output is consistent with class-A symbolic checks and does not import numerical comparators or tuned values. The conclusion is clean only in the stated up-to-scale bounded scope; X2 itself is not derived.
+- **auditor confidence:** high
+
+### `observable_principle_record_scalar_map_no_go_note_2026-06-05`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md`](../../docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the narrow claim that Record additivity alone does not derive a map from multiplicative branch data such as p or |Z| to an additive scalar record/log-det/P1 readout.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-2258a9178d-observable_principle_record_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Record additivity is a rule for an already specified finite scalar record surface, not a rule that chooses the branch-to-scalar surface.  _(class `A`)_
+- **chain closes:** True — The cited Record axiom supplies finite additivity for a fixed scalar readout and explicitly withholds weighting, normalization, probability, and readout-context selection. The packet's algebra separately checks that multiplicative branch quantities remain multiplicative unless a logarithmic coordinate is supplied.
+- **rationale:** The no-go is narrow and matches the authority: Record grants additivity after a scalar readout is fixed, while the authority explicitly excludes the missing branch-to-scalar bridge. The displayed identities are standard algebraic checks: p_AB=p_Ap_B, p^q multiplicativity, the log homomorphism, additive word length, and the 2^n=3 obstruction for binary integer length at p=1/3. The runner source is only supportive and has a version-reference blemish because it reads MINIMAL_AXIOMS_2026-06-04.md while the packet authority is 2026-06-05, but the restricted authority itself closes the audited step.
 - **auditor confidence:** high
 
 ### `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16`

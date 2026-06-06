@@ -1,0 +1,29 @@
+loop_slug: staggered-gbare-normalization-bridge-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 27
+current_goal: "Narrow the staggered-Dirac input needed for the g_bare normalization route."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+active_route: "V_3 trace-surface bridge versus species-label residual"
+hard_residual: "V_3 physical trace surface and per-site-to-gauge SU(2) scale bridge remain open pending staggered-gate audit/closure."
+branch: physics-loop/staggered-gbare-normalization-bridge-20260606
+base_branch: origin/main
+files_touched:
+  - docs/STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md
+  - scripts/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.py
+  - logs/runner-cache/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.txt
+  - .claude/science/physics-loops/staggered-gbare-normalization-bridge-20260606/
+open_imports:
+  - "Audit/dependency closure for the staggered kinetic-and-algebra surface."
+  - "V_3 as the physical gauge trace surface."
+  - "Per-site Cl(3) SU(2) scale inherited by gauge su(3) SU(2) sub-blocks."
+no_go_routes:
+  - "Species-label bijection is load-bearing for g_bare trace normalization."
+  - "Label permutations change N_F."
+  - "V_3 trace surface is already unconditional on the current source surface."
+trace_gate_classification: upstream_support
+review_disposition: pass
+pr_status: "pending"
+next_exact_action: "Commit, push, open PR, then continue campaign."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

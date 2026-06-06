@@ -1,0 +1,27 @@
+loop_slug: record-selector-audit-sidecar-20260605
+current_goal: "Read-only sidecar classification of the 13 audited-conditional selector-split rows."
+target_status: bounded-support
+cycle_count: 1
+active_route: "fixed registry over the 13 touched rows plus source-anchor verifier"
+hard_residual: "actual row verdict changes require independent fresh-context audit; physical endpoint selection remains open"
+files_touched:
+  - docs/RECORD_SELECTOR_AUDIT_SIDECAR_2026-06-05.md
+  - scripts/frontier_record_selector_audit_sidecar_2026_06_05.py
+  - logs/runner-cache/frontier_record_selector_audit_sidecar_2026_06_05.txt
+  - .claude/science/physics-loops/record-selector-audit-sidecar-20260605/
+open_imports:
+  - "Depends on stacked PR #2712 for the record-prior stability selector."
+  - "Depends on PR #2710 for the 13-row selector-split map."
+  - "Depends on PR #2708 for Record typing firewall."
+  - "No audit verdict changes are made."
+no_go_routes:
+  - "Do not route all 13 rows through an s=0 selector; only three rows are s=0 candidates."
+  - "Do not treat stable-dial rows as endpoint closure."
+  - "Do not treat observable-identification, measurement-update, scalar-generator, quark, or cluster rows as prior-selector closures."
+trace_gate_classification: direct_blocker_closure
+trace_reachability: supports
+claim_status: bounded-support
+review_findings: "local review pass; no subagents spawned because tool policy requires explicit user request for delegated/parallel agents"
+pr_status: pending
+next_exact_action: "Run review checks, commit, push, and open a stacked PR against physics-loop/record-prior-stability-selector-20260605."
+stop_condition: "Stop after PR creation for this coherent sidecar block unless user asks to continue."

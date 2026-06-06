@@ -1,0 +1,23 @@
+loop_slug: observable-p2-consumed-20260606
+target: observable_principle_from_axiom_note
+status: ready_for_review
+actual_current_surface_status: exact-support
+claim_state_movement: >
+  Repaired the observable-principle parent so P2 phase-blindness is eliminated
+  on the finite real-positive source surface the parent consumes, rather than
+  admitted as a separate load-bearing premise.
+branch: physics-loop/observable-p2-consumed-20260606
+base: origin/main
+files_touched:
+  - docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  - docs/OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/frontier_hierarchy_observable_principle_from_axiom.py
+  - scripts/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.py
+  - logs/runner-cache/frontier_hierarchy_observable_principle_from_axiom.txt
+  - logs/runner-cache/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.txt
+open_imports:
+  - "Independent audit must decide the repaired parent row status."
+  - "Global/off-sector P2 for arbitrary complex source phases remains outside this parent row."
+  - "AC_phi_lambda/Berezin determinant-identification remains a separate downstream gate where consumers need it."
+next_exact_action: "Open PR and hand to review/audit loop; do not edit docs/audit results in this branch."
+stop_condition: "Observable P2 blocker repaired for the consumed source surface; further movement depends on review/audit."

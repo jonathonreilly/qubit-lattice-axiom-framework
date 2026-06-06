@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_observable_principle_from_axiom.py
-runner_sha256: 715c664fbb282a9d9817eb2dcc7b8f2cb2825212b5da8bbb2d4a3eb04740d405
+runner_sha256: f4d2d3418af6aabbb3b3ad80035a6c731fa11b57400b836edae07073e548ef27
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Hierarchy observable principle from the lattice axiom
@@ -87,11 +87,11 @@ PART 5: OUT-OF-SCOPE HIERARCHY COMPARATOR (INFORMATIONAL ONLY)
   INFO: comparator only; not counted as a theorem PASS check.
 
 ==============================================================================
-PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-06-04 RECORD/P1+P2 REPAIR)
+PART 6: REPAIRED SOURCE-SCOPE VERIFICATION (RECORD/P1 + PHASE-FREE SOURCE)
 ==============================================================================
   [PASS] Record/P1 additivity holds for the candidate generator W = log|det(D+J)|
          max additivity error = 7.11e-15
-  [PASS] P2 consistency: selected phase-blind candidate is source-even, W(j) = W(-j)
+  [PASS] source-branch consistency: real-positive candidate is source-even, W(j) = W(-j)
          max evenness error = 0.00e+00
   [PASS] candidate regularity: small-j behavior is stable for W
          max relative quadratic-coefficient consistency = 7.28e-06
@@ -99,7 +99,7 @@ PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-06-04 RECORD/P1+P2 REPAIR)
          max zero-source baseline error = 0.00e+00
   [PASS] Record/P1 is non-vacuous: raw |Z| violates additivity
          raw |Z| additivity violation = 0.9999
-  Note: this part verifies the CONDITIONAL SHAPE only (Record/P1+P2 plus the canonical c=1 convention select the candidate W). It does NOT derive P2 from retained bridge theorems; that path is explicitly out of scope per the audit-named conditional scope (see docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md §'Audit-named conditional scope').
+  Note: this part verifies the repaired finite source shape only (Record/P1 plus the phase-free real-positive source branch select the candidate W with the canonical c=1 convention). It does NOT derive global/off-sector P2; arbitrary complex source phases remain out of scope for this parent row.
 
 ==============================================================================
 PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE
@@ -129,11 +129,11 @@ PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE
   [PASS] baseline convention checked: source-derivative observables invariant under additive constant in W
          max |dW_native - dW_alt| = 8.88e-11
 
-  Summary: the selected Record/P1+P2 candidate passes source-evenness,
+  Summary: the selected Record/P1 real-positive source candidate passes source-evenness,
   finite-block regularity, and additive-baseline invariance checks.
   The c=1 scale is a representative normalization, not a derived
-  physical scale. These checks do not derive the residual P2
-  scalar-selection surface or promote any cited upstream row.
+  physical scale. These checks do not derive global/off-sector P2
+  or promote any cited upstream row.
 
 ==============================================================================
 SCORECARD: 25 pass, 0 fail out of 25

@@ -9,11 +9,12 @@ Goal:
       Z[J] = det(D + J)
 
   Given Record/P1 finite scalar additivity on independent disjoint record
-  collections and P2 (continuous phase-blind scalar-generator selection), |Z|
-  is multiplicative, so the additive scalar generator is fixed up to
-  W(r) = c log r. With the canonical c=1 generator normalization and
-  zero-source baseline, local scalar observables are therefore the
-  source-response coefficients of log|Z| (equivalently Re log Z).
+  collections and the finite real-positive source branch certified by the
+  positive-source-cone bridge, Z = det(D+J) is multiplicative and phase-free on
+  the consumed source surface. The additive scalar generator is therefore fixed
+  up to W(r) = c log r on R_{>0}. With the canonical c=1 generator
+  normalization and zero-source baseline, local scalar observables are the
+  source-response coefficients of log|Z| (equivalently Re log Z) on that branch.
 
   On the minimal hierarchy block this reproduces the exact dimension-4
   effective-potential coefficient A(L_t), and the resulting temporal kernel is
@@ -385,29 +386,30 @@ def test_hierarchy_value_from_internal_observable_principle():
 
 
 def test_conditional_scope_shape():
-    """Part 6 -- conditional-scope verification (2026-06-04 Record repair).
+    """Part 6 -- repaired source-scope verification.
 
-    Per the 2026-06-04 Record repair recorded in
-    `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the load-bearing claim
-    of the parent note is conditional on the Record/P1+P2 scalar-selection
-    surface:
+    Per the 2026-06-04 Record repair and 2026-06-06 positive-source-cone
+    repair recorded in `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the
+    load-bearing claim of the parent note is on the Record/P1 finite
+    real-positive source surface:
 
       Record/P1: finite scalar additivity on independent disjoint record
           collections
           (W[J_1 (+) J_2] = W[J_1] + W[J_2])
-      P2: continuous phase-blind scalar-generator selection
-          (the scalar bosonic generator is a continuous function of |Z| alone)
+      Source branch: D is real antisymmetric and the in-scope scalar sources
+          keep det(D+J) in R_{>0}, so no determinant phase is present.
 
     The canonical c=1 generator normalization and zero-source baseline are
     fixed conventionally; finite-block regularity and source-evenness are
-    checked as candidate consistency properties, not as derivations of the
-    broader P2 selection premise.
+    checked as source-branch consistency properties, not as a global
+    phase-blindness theorem for arbitrary complex sources.
 
     This test verifies, *as an empirical statement on the runner's lattice
     Dirac operator*, that:
 
       - if the candidate generator W = log|det(D+J)| - log|det D| is adopted
-        under Record/P1+P2, it is additive on direct sums, source-even,
+        on the Record/P1 real-positive source branch, it is additive on direct
+        sums, source-even,
         regular near zero source, and implements the baseline convention
         W(0) = 0;
 
@@ -415,14 +417,12 @@ def test_conditional_scope_shape():
         fails to be a unique additive scalar generator, confirming additivity
         is a load-bearing filter rather than a redundant assumption.
 
-    This part does NOT attempt to derive P2 from retained bridge theorems; that
-    is explicitly out of scope per the audit-named conditional scope. It only
-    verifies the conditional shape on the runner's block so reviewers can
-    independently check that the runner's PASS count matches the conditional
-    load-bearing statement of the parent note.
+    This part does NOT attempt to derive global/off-sector P2. It verifies the
+    repaired finite source shape on the runner's block so reviewers can
+    independently check that the runner's PASS count matches the source note.
     """
     print("\n" + "=" * 78)
-    print("PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-06-04 RECORD/P1+P2 REPAIR)")
+    print("PART 6: REPAIRED SOURCE-SCOPE VERIFICATION (RECORD/P1 + PHASE-FREE SOURCE)")
     print("=" * 78)
 
     u0 = 0.9
@@ -483,7 +483,7 @@ def test_conditional_scope_shape():
         f"max additivity error = {p1_max_err:.2e}",
     )
     check(
-        "P2 consistency: selected phase-blind candidate is source-even, W(j) = W(-j)",
+        "source-branch consistency: real-positive candidate is source-even, W(j) = W(-j)",
         p2_max_err < 1e-12,
         f"max evenness error = {p2_max_err:.2e}",
     )
@@ -503,24 +503,22 @@ def test_conditional_scope_shape():
         f"raw |Z| additivity violation = {raw_violation:.4f}",
     )
     print(
-        "  Note: this part verifies the CONDITIONAL SHAPE only "
-        "(Record/P1+P2 plus the canonical c=1 convention select the candidate W). It does NOT derive "
-        "P2 from retained bridge theorems; that path is explicitly out of "
-        "scope per the audit-named conditional scope (see "
-        "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md §'Audit-named "
-        "conditional scope')."
+        "  Note: this part verifies the repaired finite source shape only "
+        "(Record/P1 plus the phase-free real-positive source branch select the "
+        "candidate W with the canonical c=1 convention). It does NOT derive "
+        "global/off-sector P2; arbitrary complex source phases remain out of "
+        "scope for this parent row."
     )
 
 
 def test_candidate_consistency_checks():
     """Part 7 -- runner-local consistency checks for the selected candidate.
 
-    Per the 2026-05-25 narrowing recorded in
+    Per the 2026-05-25 narrowing and 2026-06-06 source-cone repair recorded in
     `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` §"Runner-local
-    consistency checks for P2/P3/P4", these checks do not derive the
-    broader P2 scalar-generator classification premise. They verify that the
-    selected phase-blind amplitude generator has the expected structural
-    behavior on the registered staggered block:
+    consistency checks for source regularity and normalization", these checks
+    verify that the selected real-positive source generator has the expected
+    structural behavior on the registered staggered block:
 
       * source evenness: because D is real anti-Hermitian on the runner block,
         `|det(D + jI)| = |det(D - jI)|`, so the selected candidate W is even
@@ -536,9 +534,9 @@ def test_candidate_consistency_checks():
 
     Record/P1 is supplied by the Record axiom only in the narrow finite
     scalar-additivity sense; that premise support is not a bounded-status
-    source. P2 remains an admitted scalar-selection premise. This part does not
-    promote `CPT_EXACT_NOTE`, P2, or any cited upstream row; it only checks the
-    candidate selected under the conditional surface.
+    source. Global/off-sector phase-blindness remains out of scope. This part
+    does not promote `CPT_EXACT_NOTE` or any cited upstream row; it only checks
+    the candidate on the repaired source surface.
     """
     print("\n" + "=" * 78)
     print("PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE")
@@ -712,11 +710,11 @@ def test_candidate_consistency_checks():
     )
 
     print(
-        "\n  Summary: the selected Record/P1+P2 candidate passes source-evenness,\n"
+        "\n  Summary: the selected Record/P1 real-positive source candidate passes source-evenness,\n"
         "  finite-block regularity, and additive-baseline invariance checks.\n"
         "  The c=1 scale is a representative normalization, not a derived\n"
-        "  physical scale. These checks do not derive the residual P2\n"
-        "  scalar-selection surface or promote any cited upstream row."
+        "  physical scale. These checks do not derive global/off-sector P2\n"
+        "  or promote any cited upstream row."
     )
 
 

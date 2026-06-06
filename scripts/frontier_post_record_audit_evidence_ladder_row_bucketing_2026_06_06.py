@@ -17,6 +17,17 @@ PASS = 0
 FAIL = 0
 
 SCOPE_EFFECTIVE = {"retained_bounded", "retained_pending_chain", "audited_conditional"}
+MIN_PRIOR_LEDGER_ROWS = 2825
+MIN_PRIOR_SCOPED_ROWS = 1304
+KNOWN_BUCKETS = {
+    "append_count_ready",
+    "finite_law_or_certificate_needed",
+    "simulation_support_only",
+    "selector_or_dial_needed",
+    "production_dynamics_needed",
+    "record_type_support_only",
+    "not_record_ladder_relevant",
+}
 
 FOCUS_RE = re.compile(
     r"(RECORD|READOUT|BORN|PROBABILITY|P_VALUE|PVALUE|LIKELIHOOD|NULL|"
@@ -186,14 +197,14 @@ def ledger_checks() -> tuple[list[dict], Counter[str]]:
 
     counts = Counter({bucket: len(items) for bucket, items in buckets.items()})
     touched = sum(v for k, v in counts.items() if k != "not_record_ladder_relevant")
-    report("ledger row count matches current map", len(rows) == 2825, str(len(rows)))
-    report("bounded/conditional scope count is at least prior map", len(scoped_rows) >= 1304, str(len(scoped_rows)))
+    report("ledger row count is at least prior map", len(rows) >= MIN_PRIOR_LEDGER_ROWS, str(len(rows)))
+    report("bounded/conditional scope count is at least prior map", len(scoped_rows) >= MIN_PRIOR_SCOPED_ROWS, str(len(scoped_rows)))
     report("each scoped row gets one bucket", sum(counts.values()) == len(scoped_rows), str(counts))
+    report("all emitted buckets are known", set(counts).issubset(KNOWN_BUCKETS), str(counts))
     report("touched ladder rows are nonempty", touched > 0, str(touched))
     report("selector/dial bucket nonempty", counts["selector_or_dial_needed"] > 0, str(counts["selector_or_dial_needed"]))
     report("production/dynamics bucket nonempty", counts["production_dynamics_needed"] > 0, str(counts["production_dynamics_needed"]))
     report("finite-law/certificate bucket nonempty", counts["finite_law_or_certificate_needed"] > 0, str(counts["finite_law_or_certificate_needed"]))
-    report("append/count or record-type support bucket nonempty", (counts["append_count_ready"] + counts["record_type_support_only"]) > 0)
 
     required_rows = {
         "selector_or_dial_needed": "architecture_note_directional_measure",

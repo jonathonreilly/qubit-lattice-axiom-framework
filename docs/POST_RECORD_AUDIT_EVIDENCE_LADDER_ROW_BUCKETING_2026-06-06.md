@@ -3,7 +3,7 @@
 **Date:** 2026-06-06
 **Type:** exact support / read-only audit companion
 **Claim type:** methodology
-**Status:** exact-support branch-local for read-only bounded/conditional row
+**Status:** exact-support for read-only bounded/conditional row
 bucketing; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
@@ -30,20 +30,23 @@ bounded/conditional-scope rows into evidence buckets:
 The purpose is triage. A row bucket says which missing evidence type should be
 reviewed next; it is not a status change.
 
-On the current ledger snapshot, the runner scans `1336` bounded/conditional
+On the current runner-cache snapshot, the runner scans `1343` bounded/conditional
 scope rows and touches `266` rows in the post-record evidence ladder buckets.
-The prior Record typing map recorded `1304`; this branch treats the newer
-larger count as ledger drift and preserves read-only behavior.
+The prior Record typing map recorded `1304`; this block treats the newer larger
+count as ledger drift and preserves read-only behavior. The runner now checks
+that the total ledger size is at least the prior map rather than pinning an
+exact total that changes as audit rows are added or renamed.
 
 ## Current bucket counts
 
 | Bucket | Rows |
 |---|---:|
+| `append_count_ready` | 0 |
 | `finite_law_or_certificate_needed` | 10 |
-| `not_record_ladder_relevant` | 1070 |
+| `not_record_ladder_relevant` | 1077 |
 | `production_dynamics_needed` | 6 |
-| `record_type_support_only` | 1 |
-| `selector_or_dial_needed` | 227 |
+| `record_type_support_only` | 0 |
+| `selector_or_dial_needed` | 228 |
 | `simulation_support_only` | 22 |
 
 ## Read-only contract
@@ -97,6 +100,7 @@ The runner verifies:
 - ledger exists and has the expected `rows` object;
 - bounded/conditional scope is nonempty and at least the prior scope count;
 - every scoped row lands in exactly one bucket;
+- every emitted bucket is a known evidence-ladder bucket;
 - bucket counts sum to the scoped count;
 - touched buckets are nonempty where expected;
 - representative rows are present in selector/dynamics/certificate buckets;

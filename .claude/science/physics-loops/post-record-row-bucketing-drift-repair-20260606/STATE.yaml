@@ -1,0 +1,20 @@
+loop: post-record-row-bucketing-drift-repair-20260606
+date: 2026-06-06
+branch: physics-loop/post-record-row-bucketing-drift-repair-20260606
+base: origin/main
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: repair_stale_ledger_drift_guards
+files_touched:
+  - scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py
+  - docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md
+  - logs/runner-cache/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-row-bucketing-drift-repair-20260606/
+open_imports: []
+new_axioms: []
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Open review PR; after review landing the read-only row-bucketing packet is re-audit ready."
+stop_condition: "Compute/source mismatch repaired for this block; campaign should pivot after PR creation."

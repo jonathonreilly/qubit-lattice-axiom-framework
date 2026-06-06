@@ -1,0 +1,45 @@
+loop_slug: post-record-stable-kernel-count-audit-interface-20260606
+branch: physics-loop/post-record-stable-kernel-count-audit-interface-20260606
+base: origin/main
+campaign: dynamics lanes
+cycle_status: verified_pending_pr
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: exact finite count-statistic audit under supplied kernel
+hard_residual: "Give audit lanes exact finite count p-values under supplied post-record kernels without importing asymptotic concentration or deriving the kernel."
+files_touched:
+  - docs/POST_RECORD_STABLE_KERNEL_COUNT_AUDIT_INTERFACE_2026-06-06.md
+  - scripts/frontier_post_record_stable_kernel_count_audit_interface_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_stable_kernel_count_audit_interface_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-stable-kernel-count-audit-interface-20260606/
+open_imports:
+  - supplied finite kernel
+  - supplied initial law
+  - supplied statistic and tail direction
+  - supplied threshold or audit decision rule
+  - physical source of probabilities
+  - clock/rate bridge if physical rates are inferred
+no_go_routes:
+  - "Record alone derives the kernel"
+  - "Record alone derives the statistic or threshold"
+  - "Exact finite p-value applies an audit verdict"
+  - "Finite p-value selects a generation/Koide dial"
+trace_gate:
+  trace_class: upstream_support
+  target_claim_id: null
+  target_blocker_text: "Finite count-statistic p-values are exact under supplied kernels, but kernel/statistic/threshold/verdict remain separate inputs."
+  source_of_blocker_text: handoff
+  reachability_to_target: supports
+  artifact_role: theorem
+review_findings: "Local review found no overclaim: the branch proves only exact finite count p-values under supplied kernels and does not derive kernel/statistic or apply verdicts."
+pr_status:
+  url: null
+  number: null
+  mergeable: null
+  checks: null
+next_exact_action: "Commit, push, open PR, and patch PR status."
+stop_condition: "Block closes when PR is open and verified or PR backlog records exact failure."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

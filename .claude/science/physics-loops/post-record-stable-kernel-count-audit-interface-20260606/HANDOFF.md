@@ -1,0 +1,30 @@
+# Handoff
+
+## Result
+
+Verified branch-local exact-support result:
+
+```text
+supplied finite post-record kernel
+  + supplied count statistic
+  + observed finite word
+  => exact finite p-value under that kernel.
+```
+
+Fresh cache: `SUMMARY: PASS=37 FAIL=0`.
+
+## Intended Safe Use
+
+Use this when a downstream row supplies a finite kernel and count statistic and
+needs exact finite calibration.
+
+## Do Not Use For
+
+- deriving the kernel or statistic;
+- importing concentration or asymptotic claims;
+- applying audit verdicts;
+- deriving clock/rates, Born weights, instruments, Hamiltonians, or dials.
+
+## PR
+
+Pending.

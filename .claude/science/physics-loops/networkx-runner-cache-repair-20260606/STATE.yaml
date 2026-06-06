@@ -29,6 +29,7 @@ checks:
   - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py,scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py --force --push-mode=none --allow-non-main --concurrency 1
   - python3 scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py
   - python3 scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py
-pr_status: pending
-next_exact_action: run hygiene checks, commit, push, open PR
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2776
+next_exact_action: reviewer to inspect PR #2776; independent audit required before any status change
 stop_condition: not reached

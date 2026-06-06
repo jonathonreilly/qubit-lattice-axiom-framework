@@ -3,7 +3,7 @@ runner: scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2
 runner_sha256: 74aa475d9f932c56c67046ca54c11afb87667c4e89a46eef302952fb320c037e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.09
+elapsed_sec: 1.03
 status: ok
 ----- stdout -----
 
@@ -54,7 +54,7 @@ PASS selector/tangent row count is current snapshot :: 7
 PASS representative row present: dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16
 PASS representative row present: teleportation_preparation_readout_probe_note
 PASS representative row present: yt_exact_hessian_selector_uniqueness_note
-PASS audit ledger hash is unchanged :: c5744aeb88243780f2eec7253d06a3761535fa1885eddaa76c747b86376b82d9
+PASS audit ledger hash is unchanged :: bb12b00f567bffb76b022141430357986adf892361defc9044cca6486ca1f9dc
 
 Selector/tangent/readout rows:
   dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md

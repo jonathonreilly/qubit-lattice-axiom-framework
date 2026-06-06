@@ -34,13 +34,13 @@ On the current ledger snapshot:
 
 | Measure/weight lane | Rows |
 |---|---:|
-| `source_measure_or_rn_bridge` | 14 |
-| `trace_normalization_reference` | 7 |
+| `source_measure_or_rn_bridge` | 15 |
+| `trace_normalization_reference` | 6 |
 | `character_path_channel_weight` | 9 |
 | `selector_tangent_readout_weight` | 7 |
-| `generic_measure_weight_import` | 6 |
+| `generic_measure_weight_import` | 7 |
 
-Total: `43` rows.
+Total: `44` rows.
 
 ## Meaning
 
@@ -102,7 +102,7 @@ The runner verifies:
   authority;
 - the selector/dial helper source used to obtain the bucket is included in the
   packet;
-- the current `measure_weight_normalization` row count is `43`;
+- the current `measure_weight_normalization` row count is `44`;
 - lane counts match the current snapshot;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;

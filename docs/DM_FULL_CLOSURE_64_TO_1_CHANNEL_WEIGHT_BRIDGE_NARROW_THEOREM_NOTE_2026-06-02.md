@@ -5,13 +5,13 @@
 **Review boundary:** source-note candidate. Later independent review sets the
 ledger state; this note does not set or predict it.
 **Primary runner:** [`scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py`](../scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py)
+**Cached runner output:** [`logs/runner-cache/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.txt`](../logs/runner-cache/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.txt)
 
 ## Purpose
 
-This companion supplies the algebraic channel-weight bridge used by
-[`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md).
-It proves the SU(3) singlet/octet weight identity behind the parent helper's
-visible-channel formula
+This companion supplies a self-contained algebraic channel-weight bridge for
+the downstream same-surface DM thermal-bounding lane. It proves the SU(3)
+singlet/octet weight identity behind the visible-channel formula
 
 ```text
 s_vis(alpha_s) = (8 s_1(alpha_s) + s_8(alpha_s)) / 9.
@@ -20,19 +20,24 @@ s_vis(alpha_s) = (8 s_1(alpha_s) + s_8(alpha_s)) / 9.
 The repair is only item (i) of the parent bridge gap: the 64:1 same-surface
 channel-weight calculation. It does not address observational constants,
 packet-completeness, endpoint selection, or physical-color identification, and
-it does not edit the parent note or change any generated parent state.
+it does not edit the downstream parent note or change any generated parent
+state.
 
-## Source Dependencies
+## Load-Bearing Inputs
 
-Load-bearing links:
+Load-bearing links are restricted to the algebraic carrier and bounded
+Sommerfeld-normalization notation:
 
 - [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md)
   supplies the `3 x 3bar = 1 + 8` multiplicity fraction used as the
   algebraic carrier split.
 - [`DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
   supplies the thermal-average and Sommerfeld algebra for `s_1` and `s_8`.
-- [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md)
-  is the parent note whose helper formula is checked.
+
+The downstream parent note is a consumer of this bridge, not a load-bearing
+input to it. The verifier therefore proves the folding identity directly on
+the SU(3) carrier and exact rational coefficients instead of importing parent
+helper modules.
 
 This companion adds no axiom, primitive, Tier-A input, convention, fitted value,
 or observed-data input.
@@ -103,8 +108,9 @@ The runner verifies the bridge with two independent routes:
 - explicit singlet and octet projectors on `3 x 3bar`, including projector
   idempotency, traces `1` and `8`, and channel scalars `-4/3` and `+1/6`;
 - exact rational arithmetic for the raw `64:1` ratio and folded `8:1` ratio;
-- direct equality against the parent helper at the alpha midpoint used by the
-  helper support code.
+- exact equality of the folded formula
+  `(w_1 s_1 + w_8 s_8)/(w_1+w_8) = (8 s_1+s_8)/9` for arbitrary channel
+  values.
 
 ## 4. Boundaries
 

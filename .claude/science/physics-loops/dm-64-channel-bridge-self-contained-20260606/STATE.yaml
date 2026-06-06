@@ -1,0 +1,19 @@
+loop_slug: dm-64-channel-bridge-self-contained-20260606
+target_claim_id: dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02
+downstream_claim_id: dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17
+mode: campaign_block
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+active_route: upstream_bridge_self_containment
+files_touched:
+  - docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md
+  - scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py
+  - logs/runner-cache/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.txt
+open_imports:
+  - independent_audit_of_64_to_1_bridge
+  - downstream_live_constants
+  - downstream_selector_packet_premise
+no_go_routes: []
+review_disposition: pending_reviewer
+next_exact_action: "Commit, push, open PR, then rescan remaining parent DM sub-blockers."
+stop_condition: "Continue campaign while tractable upstream bridge repairs remain."

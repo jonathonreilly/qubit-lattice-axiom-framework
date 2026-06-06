@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 685 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1330 |
+| unaudited | 1329 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1075 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1637 |
+| `unaudited` | 1636 |
 
 | claim_type | count |
 |---|---:|
@@ -1245,6 +1245,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8633,6 +8634,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** An independent check of the load-bearing algebra agrees with the runner: differentiating (1/2) log(J^2 + 4u_0^2) gives 1/(4u_0^2) per mode, and 4/(16 u_0^2) simplifies to the same value. However, the packet leaves the d=4/APBC N_taste=16 bridge and the specific mean-field generating-functional form as scoped inputs rather than closed retained derivations. The Clifford dependency is also represented in the note/runner as retained_pending_chain, so the row is not eligible for audited_clean on this packet.
 - **open / conditional deps cited:**
   - `CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
+
+### `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic bridge for the free naive d=4 corner-zero taste count and the mean-field log-determinant curvature formula under a uniform paired-spectrum hypothesis.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-182237-441c14c33d-higgs_lattice_taste_count_an`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The naive d=4 symbol has zeros at the Brillouin-zone corner set {0,pi}^4 giving N_taste=16, and a real-source determinant over uniform conjugate pairs +/- i 2u_0 gives W(J)=(N_tot/2)log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).  _(class `A`)_
+- **chain closes:** False — The algebraic identities close under the local hypotheses, but the restricted packet does not close the APBC finite/thermodynamic bridge: the note's APBC grid statement is wrong for finite odd L and the runner does not test APBC. The W(J) bridge also lacks a retained one-hop authority that the actual mean-field lattice operator has the uniform +/- i 2u_0 paired spectrum, rather than only a generic real-antisymmetric toy spectrum.
+- **rationale:** Manual formula checks confirm the core class-A algebra: D(p)^dag D(p)=(sum sin^2 p_mu)I, the continuum corner count is 2^4, the per-pair determinant is J^2+a^2, and differentiating the displayed W(J) gives N_tot/(4u_0^2). The packet is not clean as written because the APBC cross-check contains a false finite-grid statement and the runner omits that case. The cited authorities also do not by themselves establish the actual mean-field operator's uniform +/- i 2u_0 spectrum, so the bridge remains conditional on an unclosed carrier/spectrum premise.
 - **auditor confidence:** high
 
 ### `higgs_mass_from_axiom_note`

@@ -1,0 +1,66 @@
+loop_slug: post-record-production-dynamics-needed-row-map-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 18
+date: 2026-06-06
+branch: physics-loop/post-record-production-dynamics-needed-row-map-20260606
+base: physics-loop/post-record-supplied-orientation-bridge-interface-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2839"
+goal: |
+  Map the current production_dynamics_needed rows to exact supplied-bridge
+  import classes without deriving dynamics or selecting a dial.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: production-dynamics needed row map
+hard_residual_attacked: |
+  The evidence ladder identified six bounded/conditional rows whose next move
+  needs production dynamics. This block resolves the queue into row-level bridge
+  imports.
+files_touched:
+  - docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md
+  - scripts/frontier_post_record_production_dynamics_needed_row_map_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_production_dynamics_needed_row_map_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-production-dynamics-needed-row-map-20260606/*
+runner_summary: "SUMMARY: PASS=49 FAIL=0"
+row_map_results:
+  production_dynamics_needed_rows: 6
+  boundary_phase_finite_scan_rows: 1
+  persistent_object_readout_kernel_rows: 2
+  persistent_record_production_overlap_rows: 3
+  production_dynamics_derived: false
+  production_kernel_selected: false
+  physical_arrow_derived_from_record: false
+  clock_or_rate_derived: false
+open_imports:
+  - "boundary condition and finite-size/continuum bridges for boundary-phase finite scans"
+  - "source-object formation, detector readout/instrument, kernel normalization, and scale bridges for object readout rows"
+  - "record-writing law, persistence/preservation, overlap-kernel, production-time/barrier, and baseline bridges for persistent-record rows"
+  - "independent audit remains required for verdicts"
+  - "PR is stacked on the supplied-orientation bridge interface companion"
+no_go_routes:
+  - "post-record realized information => production dynamics law"
+  - "bounded scan/readout/overlap table => unbounded retained claim"
+  - "stable setting => selected dial"
+  - "generation/Koide stable location => forced dial"
+review_findings: "local review clean: runner PASS=49 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: not_open
+pr_url: null
+pr_number: null
+cycle_status: ready_for_pr
+next_exact_action: |
+  Open a stacked PR against
+  physics-loop/post-record-supplied-orientation-bridge-interface-20260606.
+stop_condition: |
+  Satisfied when the runner passes, local review is clean, the branch is pushed,
+  and the stacked PR is open and verified.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "six production-dynamics-needed rows are mapped to explicit supplied-bridge import classes"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch maps current rows and import classes without editing audit data or deriving dynamics."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

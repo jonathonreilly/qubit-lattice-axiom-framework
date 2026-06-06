@@ -38,9 +38,8 @@ because it is the firewall companion to PR #2850.
 
 ## Next exact action
 
-Commit and push this PR-status checkpoint, then poll PR #2853 until the latest
-head is clean/success. After the final PR status is recorded, continue the
-campaign while runtime remains.
+Closed for campaign purposes. Pivot to the next viable dynamics/support block
+while runtime remains.
 
 ## PR
 
@@ -51,6 +50,6 @@ initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline in progress at initial verification"
 final_mergeable: null
-final_merge_state_status: null
-final_checks: null
+final_merge_state_status: CLEAN
+final_checks: "empty check rollup at final verification"
 ```

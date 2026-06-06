@@ -37,16 +37,16 @@ review_findings: "local review clean: runner PASS=43 FAIL=0; py_compile clean; c
 pr_status: not_opened
 pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2874"
 pr_number: 2874
-cycle_status: pr_open_initial_unstable
+cycle_status: pr_open_clean
 mergeable: MERGEABLE
 merge_state_status: UNSTABLE
-checks: "audit_pipeline queued at initial verification"
+checks: "empty check rollup at final verification"
 next_exact_action: |
-  Wait for audit_pipeline to settle, then record final GitHub status.
+  Closed for campaign purposes; close out the 12-hour campaign if runtime is
+  exhausted.
 stop_condition: |
-  Satisfied when the stacked PR is open, mergeable/clean or settled with
-  recorded CI status, and the 12-hour campaign clock is exhausted or closeout is
-  complete.
+  Satisfied: stacked PR is open, mergeable, and final clean status is recorded.
+  Campaign closes when runtime is exhausted.
 status_fields:
   actual_current_surface_status: no-go
   trace_class: negative_route_pruning

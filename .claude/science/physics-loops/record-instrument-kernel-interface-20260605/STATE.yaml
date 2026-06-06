@@ -29,6 +29,6 @@ trace_gate_classification: upstream_support
 trace_reachability: supports
 claim_status: bounded-support
 review_findings: "Local runner and wording review clean. Checks: SCORECARD PASS=48 FAIL=0; py_compile clean; git diff --check clean."
-pr_status: "pending"
-next_exact_action: "Commit, push, and open PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2759"
+next_exact_action: "Campaign pivot: select the next ranked science lane while #2759 receives review/checks."
 stop_condition: "Do not stop campaign after this block while runtime remains."

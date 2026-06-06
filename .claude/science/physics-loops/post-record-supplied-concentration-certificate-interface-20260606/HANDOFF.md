@@ -46,5 +46,15 @@ supplied theorem.
 
 ## Next exact action
 
-Commit, push, open the PR, record PR status, then pivot to the next independent
+Push the PR-status commit, re-check PR #2833 after `audit_pipeline` settles,
+record final clean/success status if clean, then pivot to the next independent
 dynamics lane.
+
+## PR
+
+```yaml
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2833"
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline in progress at first verification"
+```

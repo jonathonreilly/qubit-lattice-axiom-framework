@@ -1,6 +1,6 @@
 # PR Backlog
 
-Status: pending PR creation.
+Status: PR created; initial in-progress check recorded.
 
 Intended title:
 
@@ -29,3 +29,12 @@ Body must include:
 - explicit residual that probability laws and concentration theorems are
   supplied, not derived by Record;
 - statement that no audit verdict or generation/Koide dial is selected.
+
+## Created PR
+
+```yaml
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2833"
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_status_check_rollup: "audit_pipeline in progress at first verification"
+```

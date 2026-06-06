@@ -1,0 +1,30 @@
+loop_slug: record-classical-semigroup-boundary-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 20
+current_goal: "Establish the finite post-record classical semigroup boundary for dynamics."
+target_status: exact-support
+actual_current_surface_status: exact-support
+active_route: "finite record algebra automorphisms/derivations versus append and Markov semigroup layers"
+hard_residual: "Record-production dynamics, Born law, transition rates, clock metric, and dial generator remain open."
+branch: physics-loop/record-classical-semigroup-boundary-20260606
+base_branch: origin/main
+files_touched:
+  - docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md
+  - scripts/frontier_record_classical_semigroup_boundary_2026_06_06.py
+  - logs/runner-cache/frontier_record_classical_semigroup_boundary_2026_06_06.txt
+  - .claude/science/physics-loops/record-classical-semigroup-boundary-20260606/
+open_imports:
+  - "Record-production dynamics."
+  - "Born probability law and IID/frequency bridge."
+  - "Transition rates / Markov generator / clock metric."
+  - "Physical generator, partition, or arrow selecting a dial attractor."
+no_go_routes:
+  - "Finite post-record algebra supplies nontrivial continuous reversible dynamics."
+  - "Append/count translation is a reversible automorphism of N^O."
+  - "Finite record algebra selects a stable dial location without a supplied generator."
+trace_gate_classification: negative_route_pruning
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

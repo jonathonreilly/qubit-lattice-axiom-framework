@@ -1,0 +1,32 @@
+loop_slug: record-reset-with-sink-conditional-20260605
+campaign: "12h physics-loop campaign down framework lanes"
+campaign_started_utc: "2026-06-06T01:39:56Z"
+campaign_deadline_utc: "2026-06-06T13:39:56Z"
+current_goal: "Provide the exact reversible reset-with-sink construction complementing the blank-boundary no-go."
+target_status: bounded-support
+cycle_count: 17
+active_route: "explicit sink carries old fragment memory while fragments become clean broadcast"
+hard_residual: "Sink blankness, entropy/cost accounting, physical reset dynamics, and clock/rate normalization remain open."
+branch: physics-loop/record-reset-with-sink-conditional-20260605
+base_branch: physics-loop/record-blank-boundary-reset-no-go-20260605
+files_touched:
+  - docs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md
+  - scripts/frontier_record_reset_with_sink_conditional_2026_06_05.py
+  - logs/runner-cache/frontier_record_reset_with_sink_conditional_2026_06_05.txt
+  - .claude/science/physics-loops/record-reset-with-sink-conditional-20260605/
+open_imports:
+  - "Blank sink preparation."
+  - "Entropy / thermodynamic cost accounting."
+  - "Physical reset dynamics."
+  - "Clock/rate normalization."
+no_go_routes:
+  - "Sink construction makes reset free."
+  - "Sink construction derives production dynamics."
+  - "Sink construction removes thermodynamic accounting."
+trace_gate_classification: upstream_support
+trace_reachability: supports
+claim_status: bounded-support
+review_findings: "Local runner and wording review clean. Checks: SCORECARD PASS=29 FAIL=0; py_compile clean; git diff --check clean."
+pr_status: "pending"
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Do not stop campaign after this block while runtime remains."

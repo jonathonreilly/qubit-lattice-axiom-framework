@@ -21,7 +21,8 @@ PR for this block: https://github.com/jonathonreilly/qubit-lattice-axiom-framewo
 GitHub verification: open PR, base
 `physics-loop/record-clock-rate-normalization-gate-20260606`, head
 `physics-loop/record-prerecord-instrument-kernel-gate-20260606`, mergeable
-`MERGEABLE`, merge state `UNSTABLE`.
+`MERGEABLE`, latest verified merge state `CLEAN`. Transient `UNSTABLE` was
+observed immediately after metadata pushes while checks refreshed.
 
 ## Result
 

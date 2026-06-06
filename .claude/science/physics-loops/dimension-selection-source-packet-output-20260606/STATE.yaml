@@ -1,0 +1,19 @@
+loop_slug: dimension-selection-source-packet-output-20260606
+target_claim_id: dimension_selection_note
+mode: campaign_block
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+active_route: source_packet_output_repair
+files_touched:
+  - docs/DIMENSION_SELECTION_NOTE.md
+  - scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+  - scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py
+  - logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt
+  - logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt
+  - outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
+open_imports:
+  - independent_audit_status_movement
+no_go_routes: []
+review_disposition: pending_reviewer
+next_exact_action: "Commit, push, open PR, then rescan conditional backlog."
+stop_condition: "Do not stop campaign after this PR unless no tractable conditional repair remains."

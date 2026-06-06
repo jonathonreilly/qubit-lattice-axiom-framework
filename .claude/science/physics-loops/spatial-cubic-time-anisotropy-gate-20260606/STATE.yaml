@@ -1,0 +1,29 @@
+loop_slug: spatial-cubic-time-anisotropy-gate-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 22
+current_goal: "Resolve the SO(4) power-counting marginal anisotropy review gate with a narrow exact no-go."
+target_status: no-go
+actual_current_surface_status: no-go
+active_route: "spatial cubic invariant kinetic forms versus SO(4) time-space rotations"
+hard_residual: "Euclidean kinetic-normalization / 4D-hypercubic premise remains required for full SO(4) continuum wording."
+branch: physics-loop/spatial-cubic-time-anisotropy-gate-20260606
+base_branch: origin/main
+files_touched:
+  - docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md
+  - scripts/frontier_spatial_cubic_time_anisotropy_gate_2026_06_06.py
+  - logs/runner-cache/frontier_spatial_cubic_time_anisotropy_gate_2026_06_06.txt
+  - .claude/science/physics-loops/spatial-cubic-time-anisotropy-gate-20260606/
+open_imports:
+  - "Euclidean kinetic-normalization c_t=c_s."
+  - "4D hypercubic symmetry or equivalent time-space symmetry premise."
+  - "OS reconstruction / interacting continuum all-n-point covariance."
+no_go_routes:
+  - "Spatial cubic power counting alone excludes marginal time-space anisotropy."
+  - "Quartic cubic-harmonic artifact checks determine the quadratic time normalization."
+  - "Z^3 x Z_tau spatial symmetry alone implies full SO(4) continuum covariance."
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

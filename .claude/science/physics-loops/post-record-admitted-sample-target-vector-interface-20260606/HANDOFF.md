@@ -38,9 +38,8 @@ because it is the positive admitted-sample companion to PR #2858.
 
 ## Next exact action
 
-Commit and push this PR-status checkpoint, then poll PR #2861 until the latest
-head is clean/success. After the final PR status is recorded, continue or close
-the campaign based on remaining runtime.
+Closed for campaign purposes. Check remaining runtime and either close out or
+pivot to the next viable block.
 
 ## PR
 
@@ -51,6 +50,6 @@ initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline in progress at initial verification"
 final_mergeable: null
-final_merge_state_status: null
-final_checks: null
+final_merge_state_status: CLEAN
+final_checks: "empty check rollup at final verification"
 ```

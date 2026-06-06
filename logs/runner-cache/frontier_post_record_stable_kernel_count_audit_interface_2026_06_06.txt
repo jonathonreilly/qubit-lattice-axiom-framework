@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_stable_kernel_count_audit_interface_2026_06_06.py
+runner_sha256: 46c05543c8ad8e2dc8275100631803291fb324094e8f038ab738a8164cc8912d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -53,3 +61,6 @@ SUPPLIED_KERNEL_EXACT_COUNT_AUDIT=TRUE
 FINITE_P_VALUES_EXACT=TRUE
 RECORD_DERIVES_KERNEL_OR_STATISTIC=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

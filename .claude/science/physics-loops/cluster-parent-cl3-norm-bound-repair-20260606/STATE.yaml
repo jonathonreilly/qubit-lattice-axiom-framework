@@ -25,6 +25,7 @@ checks:
   - python3 -m py_compile scripts/axiom_first_cluster_decomposition_check.py
   - python3 scripts/axiom_first_cluster_decomposition_check.py
   - python3 scripts/precompute_audit_runners.py --runners scripts/axiom_first_cluster_decomposition_check.py --force --push-mode=none --allow-non-main --concurrency 1
-pr_status: pending
-next_exact_action: run branch hygiene checks, commit, push, open PR
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2767
+next_exact_action: reviewer should inspect PR #2767 and, if accepted, queue the parent row for independent re-audit with the remaining L2 boundary explicit
 stop_condition: not reached

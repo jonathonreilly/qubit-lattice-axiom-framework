@@ -17,10 +17,10 @@ This block converts the generation/Koide dial queue into a stable-location
 index:
 
 ```text
-105 koide_or_generation_selector rows
+103 koide_or_generation_selector rows
   + 3 generation_or_koide_stable_feature rows
   + supplied stable-setting certificate semantics
-  => 108-row generation/Koide stable-location index
+  => 106-row generation/Koide stable-location index
 ```
 
 The index records where a stable location can live on a dial under a supplied
@@ -29,16 +29,16 @@ score, rule, map, or kernel. It is not a selected dial.
 ## Current row map
 
 On the current ledger snapshot, the upstream selector/dial subdivision has
-`105` `koide_or_generation_selector` rows. This block splits those selector
+`103` `koide_or_generation_selector` rows. This block splits those selector
 rows as:
 
 | Selector row class | Rows |
 |---|---:|
-| `koide_value_or_phase_location` | 49 |
-| `obstruction_or_open_gate` | 38 |
+| `koide_value_or_phase_location` | 47 |
+| `obstruction_or_open_gate` | 37 |
 | `generation_structure_location` | 6 |
 | `selector_surface_location` | 5 |
-| `readout_carrier_or_record_location` | 3 |
+| `readout_carrier_or_record_location` | 4 |
 | `measure_weight_or_source_location` | 2 |
 | `other_generation_koide_location` | 2 |
 
@@ -49,7 +49,7 @@ The flow/thermal stable-setting certificate also exposes `3`
 - `generation_dial_dynamics_stability_classifier_2026-06-05`;
 - `koide_records_objectivity_conditional_note_2026-05-31`.
 
-Total generation/Koide dial-relevant rows indexed here: `108`.
+Total generation/Koide dial-relevant rows indexed here: `106`.
 
 ## Meaning
 
@@ -107,9 +107,9 @@ The runner verifies:
   separatrix at `r=1/2`, and the objectivity maximum
   `r*=w_p/(2 w_s)`;
 - selected-dial status remains blocked without a selector rule;
-- the `105` Koide/generation selector rows split into the row classes above;
+- the `103` Koide/generation selector rows split into the row classes above;
 - the `3` generation/Koide stable-feature rows are present;
-- the combined generation/Koide dial-relevant index has `108` rows;
+- the combined generation/Koide dial-relevant index has `106` rows;
 - the audit ledger hash is unchanged after the scan;
 - no audit verdict, audit-data write, retained/promoted claim, selected-dial
   derivation, stable-location-to-selected-dial conversion, or generation/Koide

@@ -1,0 +1,22 @@
+loop_slug: post-record-generation-koide-index-repair-20260606
+target: post_record_generation_koide_stable_location_index_2026-06-06
+mode: science-fix
+started_from: origin/physics-loop/post-record-selector-tangent-row7-20260606
+branch: physics-loop/post-record-generation-koide-index-repair-20260606
+base_branch: physics-loop/post-record-selector-tangent-row7-20260606
+stacked_on_pr: 2966
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: "Regenerate the generation/Koide stable-location row map against the current selector/dial snapshot."
+files_touched:
+  - docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md
+  - scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_generation_koide_stable_location_index_2026_06_06.txt
+blocker_from_current_audit: "Re-audit after the source row map is regenerated against the current ledger or the ledger is repaired to make the stated 105/108 counts true."
+result: "The current snapshot is 103 selector rows plus 3 stable-feature rows, total 106; runner exits PASS=60 FAIL=0."
+audit_data_edited: false
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: "After PR #2966 is handled, route this stacked PR for re-audit of the generation/Koide stable-location row."
+stop_condition: "Block complete; continue campaign with the next independent or stacked repair target."

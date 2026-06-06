@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py
-runner_sha256: 8ca90611e9a295706c113b32450aeba4a1c7f8672af9fc0efbc90fcfd998e49e
+runner_sha256: e44a2b67b4141570a700d51d0e4b1fad2ffc6ca8ec2630f0d89c80b3486e8250
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 1.97
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 1.45
+status: ok
 ----- stdout -----
 
 ------------------------------------------------------------------------------
@@ -13,10 +13,10 @@ Source-anchor checks
 PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md exists
 PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: stable-location index
 PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: It is not a selected dial.
-PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: Total generation/Koide dial-relevant rows indexed here: `108`.
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: Total generation/Koide dial-relevant rows indexed here: `106`.
 PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: `koide_or_generation_selector` | 105
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: `koide_or_generation_selector` | 103
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
 PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md exists
@@ -52,12 +52,12 @@ PASS rank weights give r=1 instead of r=1/2
 ------------------------------------------------------------------------------
 Generation/Koide row-index checks
 ------------------------------------------------------------------------------
-FAIL Koide/generation selector row count is current snapshot :: 103
-FAIL selector location counts match expected :: Counter({'koide_value_or_phase_location': 47, 'obstruction_or_open_gate': 37, 'generation_structure_location': 6, 'selector_surface_location': 5, 'readout_carrier_or_record_location': 4, 'other_generation_koide_location': 2, 'measure_weight_or_source_location': 2})
+PASS Koide/generation selector row count is current snapshot :: 103
+PASS selector location counts match expected :: Counter({'koide_value_or_phase_location': 47, 'obstruction_or_open_gate': 37, 'generation_structure_location': 6, 'selector_surface_location': 5, 'readout_carrier_or_record_location': 4, 'other_generation_koide_location': 2, 'measure_weight_or_source_location': 2})
 PASS selector location counts sum to selector rows :: Counter({'koide_value_or_phase_location': 47, 'obstruction_or_open_gate': 37, 'generation_structure_location': 6, 'selector_surface_location': 5, 'readout_carrier_or_record_location': 4, 'other_generation_koide_location': 2, 'measure_weight_or_source_location': 2})
-PASS generation/Koide stable-feature row count is current snapshot :: {'generation_dial_dynamics_stability_classifier_2026-06-05', 'koide_records_objectivity_conditional_note_2026-05-31', 'flavor_r_half_is_the_records_flow_separatrix_2026-06-02'}
-PASS generation/Koide stable-feature ids match :: {'generation_dial_dynamics_stability_classifier_2026-06-05', 'koide_records_objectivity_conditional_note_2026-05-31', 'flavor_r_half_is_the_records_flow_separatrix_2026-06-02'}
-FAIL combined generation/Koide dial-relevant index has 108 rows
+PASS generation/Koide stable-feature row count is current snapshot :: {'generation_dial_dynamics_stability_classifier_2026-06-05', 'flavor_r_half_is_the_records_flow_separatrix_2026-06-02', 'koide_records_objectivity_conditional_note_2026-05-31'}
+PASS generation/Koide stable-feature ids match :: {'generation_dial_dynamics_stability_classifier_2026-06-05', 'flavor_r_half_is_the_records_flow_separatrix_2026-06-02', 'koide_records_objectivity_conditional_note_2026-05-31'}
+PASS combined generation/Koide dial-relevant index has 106 rows
 PASS stable-feature rows are disjoint from selector rows
 PASS representative row present in generation_structure_location :: three_generation_structure_note
 PASS representative row present in koide_value_or_phase_location :: charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02
@@ -66,7 +66,7 @@ PASS representative row present in obstruction_or_open_gate :: flavor_generation
 PASS representative row present in other_generation_koide_location :: staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17
 PASS representative row present in readout_carrier_or_record_location :: persistent_record_sidebit_note
 PASS representative row present in selector_surface_location :: pmns_commutant_eigenoperator_selector_note
-PASS audit ledger hash is unchanged :: 0e2071c5b94593d31f004b5ac47a6ce0c14ffd9ead9addfce1fc452bc5262914
+PASS audit ledger hash is unchanged :: c5744aeb88243780f2eec7253d06a3761535fa1885eddaa76c747b86376b82d9
 
 Generation/Koide selector-location counts:
   generation_structure_location: 6
@@ -146,7 +146,7 @@ PASS Record-derived measure/prior flag is false
 PASS Record-derived physical arrow flag is false
 PASS Koide closure flag is false
 
-SUMMARY: PASS=57 FAIL=3
+SUMMARY: PASS=60 FAIL=0
 KOIDE_OR_GENERATION_SELECTOR_ROWS=103
 GENERATION_OR_KOIDE_STABLE_FEATURE_ROWS=3
 GENERATION_KOIDE_STABLE_LOCATION_INDEX_ROWS=106

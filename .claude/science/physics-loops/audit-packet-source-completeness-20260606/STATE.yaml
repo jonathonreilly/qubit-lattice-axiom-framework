@@ -1,0 +1,13 @@
+loop: audit-packet-source-completeness-20260606
+mode: repair
+target_status: exact-support
+base_commit: 86425723e
+active_route: raise audit prompt source caps enough to include current blocker-sized runners
+files_touched:
+  - scripts/codex_audit_runner.py
+  - docs/audit/scripts/tests/test_audit_pipeline.py
+trace_gate: direct_blocker_closure
+audit_data_written: false
+audit_verdict_applied: false
+retained_claim_made: false
+next_action: reviewer evaluates PR; auditor may re-run affected rows after landing

@@ -1260,6 +1260,55 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
         self.assertIn("models_cache.json", source)
 
 
+class CodexAuditRunnerPromptSourcePacketTest(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        (self.tmp_root / "docs").mkdir(parents=True, exist_ok=True)
+        (self.tmp_root / "scripts").mkdir(parents=True, exist_ok=True)
+
+    def test_render_prompt_keeps_current_blocker_sized_sources_unelided(self):
+        m = _import_codex_audit_runner()
+        m.REPO_ROOT = self.tmp_root
+
+        note_path = self.tmp_root / "docs" / "NOTE.md"
+        note_path.write_text("source note body\n", encoding="utf-8")
+
+        runner_body = "# primary runner\n" + ("x = 1\n" * 6000) + "PRIMARY_SENTINEL_TAIL\n"
+        helper_body = "# helper runner\n" + ("y = 2\n" * 4200) + "HELPER_SENTINEL_TAIL\n"
+        (self.tmp_root / "scripts" / "primary.py").write_text(runner_body, encoding="utf-8")
+        (self.tmp_root / "scripts" / "helper.py").write_text(helper_body, encoding="utf-8")
+
+        template = "\n".join(
+            [
+                "{{NOTE_BODY}}",
+                "{{RUNNER_SOURCE}}",
+                "{{HELPER_RUNNER_SOURCES}}",
+            ]
+        )
+        row = {
+            "claim_id": "claim",
+            "note_path": "docs/NOTE.md",
+            "runner_path": "scripts/primary.py",
+            "claim_type": "bounded_theorem",
+            "helper_runner_paths": ["scripts/helper.py"],
+        }
+
+        prompt = m.render_prompt(
+            row,
+            {"claim": row},
+            template,
+            runner_timeout_sec=0,
+            skip_runner_stdout=True,
+        )
+
+        self.assertIn("PRIMARY_SENTINEL_TAIL", prompt)
+        self.assertIn("HELPER_SENTINEL_TAIL", prompt)
+        self.assertNotIn("[truncated; runner", prompt)
+        self.assertNotIn("[truncated; helper", prompt)
+
+
 class CodexAuditRunnerReauditCandidatesTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()

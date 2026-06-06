@@ -108,13 +108,27 @@ def main() -> int:
     check("two pre-record operators differing only in inter-sector coherence record IDENTICALLY",
           np.allclose(D(M), D(M + Coh)))
 
-    # ---- (4) recorded central-sector overlaps fixed by {P_k}, independent of M ----
+    # ---- (4) registered central-sector overlaps fixed by {P_k}, independent of M ----
     ref = np.eye(n)[0]                                   # a reference (flavor) state
     rho_a = np.outer(ref, ref)
     ov = np.array([np.real(np.trace(P @ rho_a)) for P in projs])
     # independent of M: overlaps depend only on projectors
     check("central-sector overlaps tr(P_k rho) are fixed by {P_k} alone (M-independent)",
           np.allclose(ov, [1.0, 0.0, 0.0]), detail=f"{ov.tolist()}")
+
+    # ---- (G3 separation) the WEIGHT between sectors is the registered pattern of the
+    #      STATE, NOT a property of the partition: same {P_k}, different realized states
+    #      give different sector weights. (So a weight like Koide r is matched, not
+    #      delivered; a reference state's weight is not the registration.) ----
+    P0g = np.zeros((n, n), complex); P0g[0, 0] = P0g[1, 1] = 1.0   # a 2-dim sector
+    P1g = np.eye(n) - P0g
+    rho_uniform = np.eye(n) / n                                     # "reference" state
+    rho_struct = np.diag([0.45, 0.45, 0.05, 0.025, 0.025])         # a different realized state
+    w_unif = np.real(np.trace(P0g @ rho_uniform)) / np.real(np.trace(P1g @ rho_uniform))
+    w_struct = np.real(np.trace(P0g @ rho_struct)) / np.real(np.trace(P1g @ rho_struct))
+    check("sector WEIGHT depends on the realized state, not on the partition "
+          "(same {P_k}, different states -> different weights => weight is registered, not delivered)",
+          not np.isclose(w_unif, w_struct), detail=f"w_ref={w_unif:.3f} vs w_realized={w_struct:.3f}")
 
     # ---- (5) within-sector freedom: vary block content, overlaps unchanged ----
     Mw = M + 5.0 * (projs[0] @ rand_herm(n, 9) @ projs[0])   # change only within block 0
@@ -148,10 +162,10 @@ def main() -> int:
     if FAIL:
         print("VERDICT: record-outcome observable principle FAILED.")
         return 1
-    print("VERDICT: observables = recorded central-sector structure; pre-record "
-          "inter-sector coherence not recorded; within-sector data free. Decomposition is "
-          "an input (needs a predicate, e.g. K-reality). Outcome-structure reading, "
-          "axiom-direct.")
+    print("VERDICT: observables = REGISTERED central-sector structure; pre-record "
+          "inter-sector coherence is never registered; per-sector WEIGHTS (e.g. r) are the "
+          "registered pattern of the realized state, not delivered by the partition. "
+          "Decomposition is an input (needs a predicate, e.g. K-reality). Register, not read.")
     return 0
 
 

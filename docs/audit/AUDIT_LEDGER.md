@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 197 |
+| **retained** | 198 |
 | **retained_no_go** | 212 |
 | **retained_bounded** | 702 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1272 |
+| unaudited | 1271 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1109 |
+| `audited_clean` | 1110 |
 | `audited_conditional` | 70 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1579 |
+| `unaudited` | 1578 |
 
 | claim_type | count |
 |---|---:|
@@ -958,6 +958,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14662,6 +14663,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The same finite post-record alphabet and append/count grammar admit multiple distinct normalized producers with different likelihoods and expectations, so the append/count layer underdetermines the production kernel.  _(class `A`)_
 - **chain closes:** True — The restricted packet gives an explicit finite counterexample: fair IID, biased IID, reverse-biased IID, Markov persistence, and scripted kernels all feed the same realized append/count update while disagreeing on likelihoods and expected next counts. This closes the scoped underdetermination claim without importing any producer-selection rule.
 - **rationale:** The runner source performs finite rational checks rather than merely printing constants, and the independent algebraic check is straightforward: append takes a supplied atom and count increments by the corresponding basis vector, while many normalized kernels can assign probabilities to the same prefixes. The cited semigroup boundary is retained and supports the separation between post-record append/count dynamics and supplied ensemble or generator dynamics. The no-go is scoped to the exact post-record grammar not selecting a producer; it does not claim that no producer can be supplied or derived elsewhere.
+- **auditor confidence:** high
+
+### `record_unbounded_finite_additivity_schema_2026-06-06`
+
+- **Note:** [`RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Conditional algebraic schema: given arbitrarily large finite pairwise-disjoint collections of nonzero unit records on Z^3, finite additivity yields exact finite-prefix readouts and no global finite cap across all finite prefix lengths, without deriving record production or probabilities.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-201906-044f5b80f3-record_unbounded_finite_addi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For finite disjoint unit-record collections R_n, finite additivity gives I(R_n)=n, so no finite global bound exists as n ranges over arbitrary finite integers.  _(class `A`)_
+- **chain closes:** True — The finite-additivity calculation closes on its own terms: I(empty)=0 and additivity over finite disjoint unit records imply I(R_n)=sum_{k=1}^n 1=n. For any proposed finite bound B, the finite collection with n=B+1 has readout B+1, so the parametric finite-family is unbounded while each fixed prefix remains bounded.
+- **rationale:** The note's load-bearing content is a standard finite-additivity argument over arbitrary finite disjoint collections, not a numerical fit, external comparison, or symbol renaming. The runner source mirrors this with simple finite sums, disjoint-site construction on Z^3, fixed-prefix cap checks, and explicit negative checks that production, probability, IID, clock/rate, and dial selection remain open. The conclusion is correctly conditional on supplied nonzero produced records and does not overclaim production of those records.
 - **auditor confidence:** high
 
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`

@@ -1,0 +1,50 @@
+loop_slug: post-record-supplied-concentration-certificate-interface-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 11
+date: 2026-06-06
+branch: physics-loop/post-record-supplied-concentration-certificate-interface-20260606
+base: origin/main
+goal: |
+  Provide an exact finite interface for bounded/conditional audit lanes that
+  need concentration or p-value calibration after post-record histories have
+  been typed as realized words and counts.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: law-scoped certificate semantics with exact finite verification
+hard_residual_attacked: |
+  The missing bridge between post-record append/count dynamics and calibrated
+  audit flags. Expected counts are not enough; a finite law, theorem, or
+  certificate must be supplied and scoped to the law being audited.
+files_touched:
+  - docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md
+  - scripts/frontier_post_record_supplied_concentration_certificate_interface_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_supplied_concentration_certificate_interface_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-supplied-concentration-certificate-interface-20260606/*
+runner_summary: "SUMMARY: PASS=45 FAIL=0"
+open_imports:
+  - "finite law, exact enumeration, dynamic programming, or independent concentration theorem"
+  - "law-scope hypotheses for any transported concentration certificate"
+  - "kernel, clock/rate, Born/instrument, Hamiltonian, and dial selection remain outside this interface"
+no_go_routes:
+  - "expected post-record frequency alone => concentration certificate"
+  - "iid concentration certificate => valid under arbitrary law with same one-time marginals"
+review_findings: "local review clean: runner PASS=45 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: verified_pending_pr
+next_exact_action: |
+  Commit, push, open PR, verify PR status, then pivot to the next independent
+  dynamics lane.
+stop_condition: |
+  PR opened, mergeability/check state recorded on the latest head, and campaign
+  pivots while runtime remains.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "audit flags are conditional on supplied finite laws or supplied concentration certificates"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch provides an exact finite interface, not a retained/audit verdict."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

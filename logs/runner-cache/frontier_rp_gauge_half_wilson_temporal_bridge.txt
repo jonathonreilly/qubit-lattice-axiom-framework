@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rp_gauge_half_wilson_temporal_bridge.py
+runner_sha256: 7b04d480cd9b08314cb0f815c18c61d126d7ea23e8a4540b52696405c7980d15
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.69
+status: ok
+----- stdout -----
+
+==============================================================================
+A. Reflection split S = S_+ + Theta(S_+) + S_0 (temporal gauge)
+==============================================================================
+[PASS] S_0 plane-symmetric under theta (Re Tr V = Re Tr V^dag)  --  |dS0|=0.0e+00
+[PASS] plane weight = exp(-S_0) = exp(+(beta/N) Re Tr V) (standard Wilson sign)
+
+==============================================================================
+B. Z_N (N=2..5): exact character kernel c_a >= 0 and OS-Gram PSD
+==============================================================================
+[PASS] Z_2: all character coeffs c_a >= 0 (standard sign)  --  min c_a=+1.0265
+[PASS] Z_2: reflected OS-Gram PSD (min eig)  --  min_eig=+1.0265
+[PASS] Z_3: all character coeffs c_a >= 0 (standard sign)  --  min c_a=+0.6073
+[PASS] Z_3: reflected OS-Gram PSD (min eig)  --  min_eig=+0.6073
+[PASS] Z_4: all character coeffs c_a >= 0 (standard sign)  --  min c_a=+0.2165
+[PASS] Z_4: reflected OS-Gram PSD (min eig)  --  min_eig=+0.2165
+[PASS] Z_5: all character coeffs c_a >= 0 (standard sign)  --  min c_a=+0.1242
+[PASS] Z_5: reflected OS-Gram PSD (min eig)  --  min_eig=+0.1242
+
+==============================================================================
+C. U(1): coeffs c_n = I_n(beta) >= 0 by manifestly-nonneg series (NO grid)
+==============================================================================
+[PASS] U(1) beta=0.3: every I_n series term >= 0 (=> c_n=I_n(beta) >= 0), n=0..7  --  min c_n=3.400e-10
+[PASS] U(1) beta=1.0: every I_n series term >= 0 (=> c_n=I_n(beta) >= 0), n=0..7  --  min c_n=1.599e-06
+[PASS] U(1) beta=3.0: every I_n series term >= 0 (=> c_n=I_n(beta) >= 0), n=0..7  --  min c_n=4.472e-03
+[PASS] U(1) beta=6.0: every I_n series term >= 0 (=> c_n=I_n(beta) >= 0), n=0..7  --  min c_n=1.257e+00
+[PASS] U(1) reflected OS-Gram (diag c_n, character orthogonality) PSD  --  min_eig=min c_n=0.0002
+
+==============================================================================
+D. SU(2): reflected Gram PSD by Peter-Weyl, c_j = 2(j+1) I_{j+1}(beta)/beta > 0
+==============================================================================
+[PASS] SU(2) beta=0.5: c_j = 2(j+1)I_(j+1)(beta)/beta > 0, j=0..5  --  min c_j=8.2110e-06
+[PASS] SU(2) beta=1.5: c_j = 2(j+1)I_(j+1)(beta)/beta > 0, j=0..5  --  min c_j=2.1422e-03
+[PASS] SU(2) beta=4.0: c_j = 2(j+1)I_(j+1)(beta)/beta > 0, j=0..5  --  min c_j=4.6339e-01
+[PASS] SU(2) reflected OS-Gram (diag c_j, Peter-Weyl orthogonality) PSD  --  min_eig=min c_j=2.1422e-03
+
+==============================================================================
+E. SU(3): fundamental plane-weight coeff >= 0 (Weyl-integration corroboration)
+==============================================================================
+[PASS] SU(3) beta=0.5 rep=triv: plane-weight char coeff c_lambda >= 0  --  c=+1.00716
+[PASS] SU(3) beta=0.5 rep=fund: plane-weight char coeff c_lambda >= 0  --  c=+0.08742
+[PASS] SU(3) beta=0.5 rep=adj: plane-weight char coeff c_lambda >= 0  --  c=+0.00738
+[PASS] SU(3) beta=2.0 rep=triv: plane-weight char coeff c_lambda >= 0  --  c=+1.13096
+[PASS] SU(3) beta=2.0 rep=fund: plane-weight char coeff c_lambda >= 0  --  c=+0.43642
+[PASS] SU(3) beta=2.0 rep=adj: plane-weight char coeff c_lambda >= 0  --  c=+0.15177
+[PASS] SU(3) beta=5.0 rep=triv: plane-weight char coeff c_lambda >= 0  --  c=+2.33277
+[PASS] SU(3) beta=5.0 rep=fund: plane-weight char coeff c_lambda >= 0  --  c=+2.47708
+[PASS] SU(3) beta=5.0 rep=adj: plane-weight char coeff c_lambda >= 0  --  c=+2.15213
+
+==============================================================================
+F. Wrong-sign control: exp(-(beta) Re Tr) (S_0=+beta Re) gives c_a < 0 (non-PSD)
+==============================================================================
+[PASS] Z_2 WRONG sign: a nontrivial coeff c_1 < 0 (kernel NOT positive => NON-PSD)  --  min c_a=-1.0265 (this is the sign bug)
+[PASS] U(1) WRONG sign: c_1 = -I_1(beta) < 0 (NON-PSD)  --  c_1=-0.4971
+
+TOTAL: PASS=30 FAIL=0
+VERDICT: RP gauge-half Wilson temporal-gauge bridge checks pass.
+  Standard Wilson sign -> plane weight exp(+(beta/N)Re Tr) -> positive
+  character kernel (Z_N exact, U(1) analytic Bessel, SU(2) Peter-Weyl;
+  SU(3) corroborated) -> reflected OS-Gram G = W diag(c) W^dag, c>=0 -> PSD.
+  Wrong sign gives c_a<0 (non-PSD), the bug that sank the 2026-06-05 attempt.
+
+----- stderr -----
+

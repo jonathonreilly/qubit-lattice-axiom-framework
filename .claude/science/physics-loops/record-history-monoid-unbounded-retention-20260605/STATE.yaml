@@ -17,7 +17,7 @@ no_go_routes:
   - "Do not represent post-record history as one coherent qubit state."
   - "Do not treat unbounded finite retention as an actually infinite word."
   - "Do not claim Record supplies probability, weighting, normalization, or dynamics."
-trace_gate_classification: direct_blocker_closure
+trace_gate_classification: upstream_support
 trace_reachability: supports
 claim_status: exact-support
 review_findings: "local review pass; no subagents spawned because tool policy requires explicit user request for delegated/parallel agents"

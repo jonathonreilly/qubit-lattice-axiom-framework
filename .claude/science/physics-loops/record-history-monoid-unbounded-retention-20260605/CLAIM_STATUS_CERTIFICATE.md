@@ -2,7 +2,7 @@
 
 ```yaml
 actual_current_surface_status: exact-support
-trace_class: direct_blocker_closure
+trace_class: upstream_support
 reachability_to_target: supports
 conditional_surface_status: null
 hypothetical_axiom_status: null

@@ -1,4 +1,4 @@
-trace_class: direct_blocker_closure
+trace_class: upstream_support
 target_claim_id: null
 target_blocker_text: "The framework needs unbounded recorded history without requiring the entire history to remain a coherent qubit state."
 source_of_blocker_text: user_goal
@@ -17,5 +17,6 @@ append/count update
 arbitrary finite record slots from Z^3
 ```
 
-It supports unbounded finite retention. It does not close physical
+It supports downstream dynamics and audit lanes by removing a fixed finite
+carrier-cap obstruction for finite histories. It does not close physical
 record-production dynamics or completed infinite history.

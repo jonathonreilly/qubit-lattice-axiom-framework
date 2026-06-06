@@ -20,4 +20,6 @@ shift and `1.66%` relative reduction.
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2740
+
+Initial pushed commit: `454c7b3e2`.

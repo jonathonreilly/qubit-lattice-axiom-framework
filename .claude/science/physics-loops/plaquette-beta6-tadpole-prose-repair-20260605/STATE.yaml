@@ -25,6 +25,7 @@ checks:
   - "python3 scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py"
   - "python3 -m py_compile scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py"
 review_disposition: pass
-pr_url: pending
-next_exact_action: "Commit, push, and open the review PR."
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2740
+pushed_commit: 454c7b3e2
+next_exact_action: "Reviewer can inspect PR #2740; campaign can pivot to the next conditional audit-unblock target."
 stop_condition: "Block complete after PR creation and verification."

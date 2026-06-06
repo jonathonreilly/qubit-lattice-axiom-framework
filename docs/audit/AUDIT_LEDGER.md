@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 192 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 694 |
+| **retained_bounded** | 695 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1305 |
+| unaudited | 1304 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
@@ -61,22 +61,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1091 |
+| `audited_clean` | 1092 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1612 |
+| `unaudited` | 1611 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1326 |
+| `bounded_theorem` | 1327 |
 | `decoration` | 53 |
 | `meta` | 316 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 773 |
+| `positive_theorem` | 772 |
 
 | criticality | count |
 |---|---:|
@@ -910,6 +910,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_count_probability_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_directed_certificate_kernel_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_expectation_concentration_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_finite_likelihood_score_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13711,6 +13712,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Two finite laws on length-4 A/B words have the same expected counts and fair one-time marginals, but their extreme-imbalance probabilities are 1/8 and 1, respectively.  _(class `A`)_
 - **chain closes:** True — The supplied iid and perfectly correlated laws are explicit probability measures, and direct enumeration gives identical expectations and one-time marginals but different tail probabilities. This proves the stated route-pruning no-go, not an absolute obstruction to calibration from stronger assumptions.
 - **rationale:** The load-bearing step is an elementary finite counterexample over two explicitly supplied laws: iid fair has two all-equal words out of sixteen, so the extreme tail is 2/16 = 1/8, while the correlated law assigns probability 1/2 + 1/2 = 1 to the same extreme event. Both laws have E[count_A] = E[count_B] = 2 and fair one-time marginals at each of the four positions. The conclusion is scoped correctly as pruning the expectation-to-concentration route while leaving calibration conditional on stronger inputs, so the no-go closes on its own terms.
+- **auditor confidence:** high
+
+### `post_record_finite_likelihood_score_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_FINITE_LIKELIHOOD_SCORE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_FINITE_LIKELIHOOD_SCORE_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite likelihood, likelihood-ratio, and optional Bayes-weight bookkeeping for a realized finite word against supplied normalized candidate laws and supplied priors only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-190951-36c9f57a7d-post_record_finite_likelihoo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given supplied normalized finite laws P_m on O^n, evaluate L_m(w*) = P_m(w*), form LR_ij(w*) = L_i(w*)/L_j(w*) when L_j(w*) > 0, and normalize pi_m L_m(w*) over the supplied model list when the evidence denominator is nonzero.  _(class `A`)_
+- **chain closes:** True — Within the stated finite supplied-model scope, the formulas reduce to point evaluation of finite probability masses and finite normalization. The note does not claim to derive the model family, prior, decision rule, physical law, or dial.
+- **rationale:** The displayed quantitative identities independently check out: the IID likelihoods 4/625 and 27/256, ratio 16875/1024, posterior 16875/17899, reversed BBBB ratio 625/65536, and finite normalization/zero-denominator guards all follow by exact rational arithmetic. The runner source does compute finite laws, scores, ratios, and posterior weights rather than merely printing pass lines, though its source-anchor checks are non-load-bearing. The clean verdict is limited to the supplied finite score interface and does not promote any derivation of candidates, priors, physical probabilities, or dials.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

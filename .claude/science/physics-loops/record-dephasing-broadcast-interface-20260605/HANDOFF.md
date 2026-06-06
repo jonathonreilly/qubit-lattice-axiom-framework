@@ -5,6 +5,8 @@
 Bounded-support / dephasing-broadcast interface block ready for stacked review.
 This block is stacked on PR #2788.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2790
+
 ## Intended Result
 
 The nonselective broadcast/dephasing state preserves probabilities as weights
@@ -26,5 +28,4 @@ Checks:
 
 ## Next Action
 
-Commit, push, open a stacked PR, then continue to selective instrument atom
-criteria or another dynamics target.
+Continue to selective instrument atom criteria or another dynamics target.

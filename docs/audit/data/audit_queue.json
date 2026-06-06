@@ -1,8 +1,8 @@
 {
   "by_criticality": {
-    "critical": 320,
+    "critical": 319,
     "high": 256,
-    "leaf": 429,
+    "leaf": 430,
     "medium": 361
   },
   "cycle_break_target_count": 6,
@@ -93,28 +93,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Standalone polynomial-algebra identity over abstract positive g and c with N in characteristic zero: beta(g/c,N)=c^2 beta(g,N), beta*g^2=2N is invariant under (g,beta)->(g/c,c^2 beta), and the positive-g rescaling orbit/fiber statements hold; no lattice gauge theory, Wilson plaquette action, Cl(3), SU(N_c), physical g_bare convention, external target, or unit convention is audited.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 4,
-      "effective_status": "retained",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.099,
-      "note_path": "docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_beta_gbare_rescaling_abstract_identity_narrow.py",
-      "transitive_descendants": 1096
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -213,7 +191,7 @@
       "direct_in_degree": 13,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 18.675,
+      "load_bearing_score": 14.675,
       "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": true,
@@ -22704,7 +22682,7 @@
       "claim_id": "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -28104,7 +28082,7 @@
       "claim_id": "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
       "claim_scope": null,
       "claim_type": "no_go",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -28808,6 +28786,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
       "transitive_descendants": 0
     },
     {
@@ -37451,7 +37454,7 @@
       "claim_id": "lattice_total_momentum_conservation_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "criticality_rank": 0,
       "cross_confirmation_status": null,

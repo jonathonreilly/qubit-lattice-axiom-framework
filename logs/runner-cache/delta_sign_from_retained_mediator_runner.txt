@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/delta_sign_from_retained_mediator_runner.py
+runner_sha256: 67b889d7e3c1d26b8398ebd38c4508f35dd3c5483f5a8e8fbab6bc46537d7442
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.36
+status: ok
+----- stdout -----
+==============================================================================
+delta SIGN from the RETAINED two-body mediator (attractive => delta<0)  [class A]
+==============================================================================
+
+-- (1) retained mediator: partner force attractive, binding energy E_mut < 0 --
+  [PASS] side=12: partner force ATTRACTIVE on all separations (reproduces the retained 15/15)  (|F| ~ d^-1.94 (retained ~d^-1.95); F(d=3)=+0.4956)
+  [PASS] side=12: two-excitation binding energy E_mut = -sum rho_A Phi_B < 0 on all separations (attractive => bound)
+  [PASS] side=14: partner force ATTRACTIVE on all separations (reproduces the retained 15/15)  (|F| ~ d^-1.94 (retained ~d^-1.95); F(d=3)=+0.4901)
+  [PASS] side=14: two-excitation binding energy E_mut = -sum rho_A Phi_B < 0 on all separations (attractive => bound)
+  [PASS] side=16: partner force ATTRACTIVE on all separations (reproduces the retained 15/15)  (|F| ~ d^-1.97 (retained ~d^-1.95); F(d=3)=+0.4868)
+  [PASS] side=16: two-excitation binding energy E_mut = -sum rho_A Phi_B < 0 on all separations (attractive => bound)
+  [PASS] force reproduces the retained note value verbatim (side=12, d=3 -> +0.49557)  (got +0.49557)
+
+-- (2) |delta| bounded by the (sign-definite Yukawa) propagator --
+  [PASS] |E_mut| is bounded and monotone-decreasing with separation (the screened-Poisson (L+mu^2)^-1 kernel is sign-definite) => |delta| bounded, not divergent  (|E_mut|(d=3..7) = [29.29, 28.94, 28.72, 28.57, 28.45])
+
+-- (3) sign propagation: delta = E_mut < 0 => sign(|K|) < 0, exact C3 (J-I) form --
+  [PASS] delta = E_mut < 0 gives the emergent C3 coupling with sign(|K|) < 0  (K_offdiag = -0.4286)
+  [PASS] the sourced coupling is the exact C3 (J - I) form (all off-diagonals equal)
+  [PASS] sign law is genuine: a (counterfactual) repulsive delta>0 would flip sign(|K|)>0
+
+==============================================================================
+TOTAL: PASS=11 FAIL=0
+VERDICT: the retained two-body mediator channel (attractive partner force, reproduced verbatim) gives a NEGATIVE two-excitation binding energy E_mut < 0, so delta = E_mut < 0 and the emergent C3 coupling has sign(|K|) < 0 (exact J-I form), fixed by a retained_bounded surface with no import. The magnitude is bounded by the screened-Poisson propagator (calibration-surface, not pinned); the result inherits the mediator's bounded tier and forces no flavor value.
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.py
+runner_sha256: 0e0e7e011ad3b0463b452aecb9fbde66fec1079562e0722816202b13c39aa37f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
 [PASS] epsilon flips on every checked nearest-neighbor link
 [PASS] omega(x)=epsilon(x) omega_global gives the required sign reversal across links
 [PASS] Kawamoto-Smit eta_1 is identically one
@@ -7,3 +15,6 @@
 
 SCORECARD PASS=6 FAIL=0
 FINDING: H_staggered_chirality is a clean conditional premise; given it, the checked Kawamoto-Smit phase surface is consistent.
+
+----- stderr -----
+

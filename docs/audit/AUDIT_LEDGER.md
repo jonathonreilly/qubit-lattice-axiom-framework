@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 684 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1338 |
+| unaudited | 1337 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 56 |
+| ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1071 |
-| `audited_conditional` | 56 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1645 |
+| `unaudited` | 1644 |
 
 | claim_type | count |
 |---|---:|
@@ -1219,6 +1219,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_a1prime_debt_and_data_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_asymmetry_identification_principled_not_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_emergent_chirality_no_transport_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5638,6 +5639,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The framework's gauge U(1)s are generation-blind and act as scalars e^{iχ}I on the generation triplet, so electric charge cannot orient J_cs or select det_C.  _(class `A`)_
 - **chain closes:** False — The scalar commutator check closes only after assuming that the physical gauge U(1)s act as e^{iχ}I on the generation C3 triplet. That bridge is asserted but not derived or supplied in the restricted packet, and the sector ordering also depends on empirical mass/readout inputs hard-coded in the runner.
 - **rationale:** The displayed numerics checked in the packet are internally consistent: H(1,1) has eigenvalues {3,0,0}, the Q table values and corresponding r values match the runner's mass inputs, and the neutrino Q range stays below 2/3 for the stated scan. However, the central charge-selection failure imports the physical identification of gauge U(1)s with scalar generation action; the runner only verifies [iI,C]=0 after hard-coding iI. The charged-sector ladder is likewise an external-comparator observation from embedded fermion masses, not a first-principles framework derivation. The claim is therefore productive and plausible within its assumptions, but not closed from the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_carrier_not_derived_two_inputs_2026-05-31`
+
+- **Note:** [`FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md`](../../docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded negative/refinement that the finite-corner character route does not derive the 2/9 flavor carrier and that carrier selection plus r=1/2 basepoint remain independent inputs.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-180211-76815ed9cc-flavor_carrier_not_derived_t`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The carrier theorem/text is asserted to leave physical species-to-flavor identification out of scope, while the 2/9 shortcut is only an index/eta determinant value and the r=1/2 basepoint is a separate unforced section choice.  _(class `B`)_
+- **chain closes:** False — The 2/9-versus-character arithmetic closes algebraically, but the full two-input conclusion relies on upstream species-ID and basepoint-status authorities not supplied in this restricted packet. The provided PHYSICAL_LATTICE_NECESSITY authority explicitly narrows physical-species semantics out of its load-bearing scope.
+- **rationale:** The independent arithmetic check agrees that omega + omega^2 = -1, 1 + omega + omega^2 = 0, and the determinant terms give L_3(1,2) = 2/9, so the bare-character shortcut is refuted. But the broader claim that exactly two independent flavor inputs remain depends on cited status/text for three_generation_observable_*, lepton_brannen_bae_delta_two_ninths, and koide_q_delta_residual_cohomology_obstruction that is not included as authority here; the runner's final independence check is hard-coded true. The only provided authority, PHYSICAL_LATTICE_NECESSITY_NOTE, is retained only for a narrowed algebraic no-go and explicitly delegates physical-species semantics, so it cannot close the carrier-selection bridge.
+- **open / conditional deps cited:**
+  - `PHYSICAL_LATTICE_NECESSITY_NOTE.md`
 - **auditor confidence:** high
 
 ### `flavor_center_trace_closed_capstone_note_2026-05-30`

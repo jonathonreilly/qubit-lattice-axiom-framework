@@ -16,4 +16,4 @@ gh pr view 2810 --json number,url,state,baseRefName,headRefName,mergeStateStatus
 
 Result: open, stacked on
 `physics-loop/record-clock-rate-normalization-gate-20260606`,
-`mergeable=MERGEABLE`, `mergeStateStatus=CLEAN`.
+`mergeable=MERGEABLE`, `mergeStateStatus=UNSTABLE`.

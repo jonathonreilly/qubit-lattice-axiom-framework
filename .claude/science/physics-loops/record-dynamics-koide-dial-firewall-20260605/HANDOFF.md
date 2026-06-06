@@ -5,6 +5,8 @@
 No-go / Koide-generation dial firewall block ready for stacked review. This
 block is stacked on PR #2786.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2788
+
 ## Intended Result
 
 Record dynamics can register or preserve a supplied stable dial setting, but it
@@ -25,5 +27,4 @@ Checks:
 
 ## Next Action
 
-Commit, push, open a stacked PR, then pivot to another concrete open lane or
-independent dynamics target.
+Pivot to another concrete open lane or independent dynamics target.

@@ -23,4 +23,4 @@ the cited two-step transfer authorities by defining `a_blk := 2 a_tau` for
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2760

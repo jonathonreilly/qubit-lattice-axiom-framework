@@ -16,8 +16,9 @@ VERDICT: closed_modulo_one_named_import. Two findings, both verified here:
     operator-realization side, not the value-construction side.
 
   GAP (the single named import): promoting the INTENSIVE per-fixed-point local Lefschetz density
-    (a summand of the EXTENSIVE global index, which VANISHES on the retained Gamma_5-paired
-    staggered Dirac: eta=0, global sum=0, chi=0) to THE observable. This summand-vs-invariant
+    (distinct from the EXTENSIVE signed global invariant, which VANISHES on the retained
+    Gamma_5-paired staggered Dirac: eta=0, signed global sum=0, chi=0) to THE observable.
+    The unsigned L*(2/9) aggregate is a scale diagnostic, not the invariant. This summand-vs-invariant
     promotion IS the existing origin/main open_gate row lepton_brannen_bae_delta_two_ninths, and
     coincides with the a=0 zero-section pick of retained_no_go koide_q_delta_residual_cohomology.
 
@@ -117,21 +118,28 @@ def main():
         and np.linalg.norm(H @ GAMMA + GAMMA @ H) > 1.0,
         f"r={r:.4f}; ||[H,G]||={np.linalg.norm(H@GAMMA-GAMMA@H):.1e}; ||{{H,G}}||={np.linalg.norm(H@GAMMA+GAMMA@H):.4f}"))
 
-    # --- Finding D: EXTENSIVE global index vanishes; 2/9 survives only as a non-summed summand -
-    # global Lefschetz sum over L diagonal fixed sites = L * (per-site density)
+    # --- Finding D: signed global index vanishes; 2/9 survives only as a selected summand ----
+    # Unsigned same-orientation aggregate over L diagonal fixed sites = L * (per-site density).
+    # This is a scale diagnostic, not the signed global invariant.
     sums = {L: L * (2.0 / 9.0) for L in (3, 8)}
     intensive_const = all(abs((s / L) - 2.0 / 9.0) < 1e-12 for L, s in sums.items())
     passed.append(check(
-        "D1 EXTENSIVE global sum = L*(2/9) scales with L; INTENSIVE per-site density stays 2/9",
+        "D1 unsigned same-orientation aggregate = L*(2/9) scales with L; intensive per-site density stays 2/9",
         abs(sums[3] - 2.0 / 3.0) < 1e-12 and abs(sums[8] - 16.0 / 9.0) < 1e-12 and intensive_const,
-        f"L=3 -> {sums[3]:.4f}=2/3 ; L=8 -> {sums[8]:.4f}=16/9 ; density L-independent"))
+        f"L=3 -> {sums[3]:.4f}=2/3 ; L=8 -> {sums[8]:.4f}=16/9 ; density L-independent; not the signed invariant"))
     # Gamma_5=(-1)^(x+y+z) pairing => signed spectrum is +/- symmetric => global index/eta = 0
     paired_spectrum = np.array([0.7, -0.7, 1.3, -1.3, 2.1, -2.1])   # any +/- paired set
     eta = np.sign(paired_spectrum).sum()
     passed.append(check(
-        "D2 Gamma_5 +/- pairing => global eta = signed-sum = 0 (so 2/9 is a summand of a VANISHING total)",
+        "D2 Gamma_5 +/- pairing => global eta = signed-sum = 0 (so 2/9 is not a free global invariant)",
         abs(eta) < 1e-12,
         f"signed-sum over a +/- paired spectrum = {eta:.1f}; the global invariant is 0, the local summand is 2/9"))
+    local = 2.0 / 9.0
+    signed_local_sum = sum(sign * local for sign in (1, -1, 1, -1))
+    passed.append(check(
+        "D3 signed local-density pairs cancel: (+2/9)+(-2/9)+(+2/9)+(-2/9)=0",
+        abs(signed_local_sum) < 1e-12,
+        f"signed local sum={signed_local_sum:.1f}; selecting one +2/9 summand is the open readout/promotion premise"))
 
     # --- Finding E: downstream 2/9 -> Koide Q is subsumed in the same gate (readout-class) -----
     # H eigenvalues lam_k = a + 2|b| cos(delta + 2pi k/3). Two readout classes give the SAME masses
@@ -154,8 +162,8 @@ def main():
 
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT: closed_modulo_one_named_import. The generation-space bridge REDUCES to a single")
-    print("named premise -- promoting the intensive per-fixed-point local Lefschetz density 2/9 (a")
-    print("summand of the VANISHING global index) to the physical observable. That premise IS the")
+    print("named premise -- promoting the intensive per-fixed-point local Lefschetz density 2/9")
+    print("(rather than the VANISHING signed global invariant) to the physical observable. That premise IS the")
     print("origin/main open_gate row lepton_brannen_bae_delta_two_ninths (= the a=0 zero-section pick")
     print("of retained_no_go koide_q_delta_residual_cohomology_obstruction). NEW positive content: the")
     print("local-density CONSTRUCTION survives koide_z3_equivariant_anticommuting_no_go (block-diagonal")

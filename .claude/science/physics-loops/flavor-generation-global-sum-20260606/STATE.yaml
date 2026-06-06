@@ -1,0 +1,15 @@
+goal: "Repair the local/global formula-inventory blocker in FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31 without touching audit results."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Separate the unsigned same-orientation L*(2/9) aggregate from the signed global invariant and add an explicit signed-pair cancellation check."
+files_touched:
+  - docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md
+  - scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py
+  - logs/runner-cache/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.txt
+open_imports:
+  - "intensive single-fixed-point local-density-to-observable promotion remains open"
+  - "signed readout class remains failed/downstream and not repaired here"
+audit_results_edited: false
+next_exact_action: "Reviewer can re-audit the local/global formula-inventory contradiction; do not promote the row without the readout/promotion bridge."

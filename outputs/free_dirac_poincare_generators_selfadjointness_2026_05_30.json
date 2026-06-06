@@ -1,0 +1,63 @@
+{
+  "claim_id": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+  "gaussian_route_slopes": [
+    0.5999152926503377,
+    0.9187930384936202,
+    1.2680899272147963,
+    1.638485398438419,
+    2.024599461288653,
+    2.422935761972691,
+    2.8310689267632996,
+    3.2472406151443183,
+    3.670132744094181,
+    4.098730491542909,
+    4.532235134266313,
+    4.97000629986958,
+    5.411522412202545,
+    5.856352827683771,
+    6.304137729564883
+  ],
+  "repair": "replace false Nelson common-analytic-vector route with direct unitary-action integrability",
+  "results": [
+    {
+      "detail": "K_orb=-i d/dzeta on L2(R,dzeta)",
+      "name": "D1 boost orbital generator is Hermitian in rapidity",
+      "pass": true
+    },
+    {
+      "detail": "dp/dzeta=E, so the boost one-parameter generator reduces exactly to momentum on the line",
+      "name": "D2 rapidity change gives E d/dp = d/dzeta",
+      "pass": true
+    },
+    {
+      "detail": "small-shift norms=2.800e-01, 1.411e-01, 7.067e-02, 3.535e-02",
+      "name": "D3 direct boost flow is a strongly continuous unitary one-parameter group",
+      "pass": true
+    },
+    {
+      "detail": "min E=1.700000; |exp(-itE)| and |exp(iap)| equal 1",
+      "name": "D4 translation generators act by unitary mass-shell phases",
+      "pass": true
+    },
+    {
+      "detail": "log(||H^n psi||/n!)/n grows from 0.600 to 6.304",
+      "name": "D5 rapidity Gaussian is not an analytic vector for H/P",
+      "pass": true
+    },
+    {
+      "detail": "full-line momentum proxy has full ranges for K +/- i and unitary Cayley transform",
+      "name": "D6 boost Cayley/deficiency finite proxy has self-adjoint signature",
+      "pass": true
+    },
+    {
+      "detail": "the same first-order shift on a half-line loses norm at the boundary",
+      "name": "D7 half-line control is not a unitary group",
+      "pass": true
+    }
+  ],
+  "status_boundary": "bounded-support/direct-integrability repair; no Nelson Laplacian or common Gaussian analytic-vector claim remains",
+  "summary": {
+    "fail": 0,
+    "pass": 7
+  }
+}

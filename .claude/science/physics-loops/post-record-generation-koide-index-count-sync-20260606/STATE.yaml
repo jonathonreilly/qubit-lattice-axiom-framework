@@ -1,0 +1,31 @@
+loop_slug: post-record-generation-koide-index-count-sync-20260606
+status: ready_for_review
+created: 2026-06-06
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: post_record_generation_koide_stable_location_index_2026-06-06
+target_blocker_text: "audited_failed because generation/Koide stable-location index source note/runner/cache used stale selector and stable-feature counts"
+stack_base: physics-loop/post-record-selector-dial-count-sync-20260606
+depends_on_prs:
+  - 2984
+  - 2987
+  - 2989
+included_dependency_commit: "8ad479dd9 repair post-record flow thermal count sync"
+files_touched:
+  - docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md
+  - scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_generation_koide_stable_location_index_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-generation-koide-index-count-sync-20260606/
+verification:
+  - "python3 scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py -> SUMMARY: PASS=60 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py --tail-chars 4000 -> refreshed green cache"
+open_imports:
+  - "stable location is not selected dial"
+  - "selector, stable rule, measure/prior, and physical arrow remain supplied/imported"
+audit_data_edited: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Review with #2984/#2987/#2989 dependencies, then re-run audit on the generation/Koide stable-location index row."
+stop_condition: "Generation/Koide stale row-map blocker closed on this branch."

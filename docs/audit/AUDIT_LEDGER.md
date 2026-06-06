@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 711 |
+| **retained_bounded** | 712 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1314 |
+| unaudited | 1313 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1121 |
+| `audited_clean` | 1122 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1621 |
+| `unaudited` | 1620 |
 
 | claim_type | count |
 |---|---:|
@@ -406,6 +406,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5655,6 +5656,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** J_cs=(C-C^2)/sqrt3 is built from the real C3 shift, commutes with C, has eigenvalues {0,+i,-i} with the doublet one complex line, so C^3=I quantizes the U(1)_b symmetry but does not forbid the J_cs block-count measure.  _(class `A`)_
 - **chain closes:** True — The Pauli pseudoscalar identity, generation-blind scalar action, J_cs commutation/eigenvalue facts, U(1)_b quantization check, and real/complex Z3 block-count arithmetic all close by direct algebra. The note explicitly leaves the stronger claim that J_cs is the uniquely forced mass-generation measure open, and the audited scope excludes that stronger claim.
 - **rationale:** The runner performs direct algebraic checks rather than merely printing constants: sigma_x sigma_y sigma_z=iI2, [iI3,C]=0, J_cs real antisymmetric and C3-equivariant with spectrum {0,+i,-i}, and the rephasing constraint (e^{ia}C)^3=I only at a=2pi k/3. Independent formula inventory also checks C[Z3] gives three complex one-dimensional blocks while R[Z3] factors as R plus C, giving one real singlet block and one complex-type real block, so the table weights (1:2) -> Q=1 and (1:1) -> Q=2/3 are consistent. No external comparator or non-retained cited authority is used for the bounded availability claim.
+- **auditor confidence:** high
+
+### `flavor_both_readings_charge_selects_note_2026-05-30`
+
+- **Note:** [`FLAVOR_BOTH_READINGS_CHARGE_SELECTS_NOTE_2026-05-30.md`](../../docs/FLAVOR_BOTH_READINGS_CHARGE_SELECTS_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A generation-scalar U(1) action cannot select a det_C doublet reading, and C^3=I permits only the three discrete C3 rephasings; the mass tables are comparator-only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-234721-5aeaef7ec7-flavor_both_readings_charge_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If a physical charge U(1) acts as a scalar on the generation triplet, it commutes with C and cannot orient the generation doublet or select the det_C reading.  _(class `A`)_
+- **chain closes:** True — The scalar action is central, so [iI,C]=0 and it supplies no orientation of the generation doublet. Independently, (exp(i alpha)C)^3=exp(3i alpha)I, so order three allows only alpha=0,2pi/3,4pi/3 modulo 2pi.
+- **rationale:** The load-bearing route-pruning statement is a direct algebraic identity about scalar matrices and the C3 order condition, not a definition substitution or numerical fit. The runner source actually computes the spectral endpoint, commutator, and order-three rephasing obstruction, while the charged-sector and neutrino values are correctly bounded as empirical comparators rather than promoted to selectors. The packet explicitly does not claim that physical Standard Model gauge U(1) actions are generation-scalar or that a physical det_C/det_R selector has been derived.
 - **auditor confidence:** high
 
 ### `flavor_center_trace_closed_capstone_note_2026-05-30`

@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 1008 | 19.48 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cluster_decomposition_check.py` |
+| 1 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | critical | 1008 | 19.48 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cluster_decomposition_check.py` |
 | 2 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | unaudited | critical | 1004 | 10.47 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.py` |
 | 3 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | audit_in_progress | critical | 293 | 8.70 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py` |
 | 4 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 275 | 22.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_hs_rigidity_narrow.py` |

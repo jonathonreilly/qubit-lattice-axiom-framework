@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 178 |
 | **retained_no_go** | 196 |
-| **retained_bounded** | 673 |
+| **retained_bounded** | 674 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1220 |
+| unaudited | 1219 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1043 |
+| `audited_clean` | 1044 |
 | `audited_conditional` | 83 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1504 |
+| `unaudited` | 1503 |
 
 | claim_type | count |
 |---|---:|
@@ -903,6 +903,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `ring_monodromy_does_not_force_car_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -13842,6 +13843,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** No Lattice+Quantum+RP datum tested rejects the HCB ring; RP/T-positivity certifies both HCB and CAR in every parity sector, so selecting CAR requires positing the graded tensor product / FS boundary condition.  _(class `C`)_
 - **chain closes:** True — The HCB ring is an explicit non-CAR countermodel satisfying the audited constraints, while the CAR ring also satisfies them. Therefore the tested positivity/monodromy/local-observable data are nonselective; the graded loop boundary condition remains an extra FS premise.
 - **rationale:** The runner source substantively constructs the finite one-qubit tensor operators, HCB and JW-CAR ring Hamiltonians, parity projectors, transfer matrices, spectra, locality tests, and flux samples; it is not just printing expected constants. The load-bearing result is a first-principles finite-matrix counterexample from the accepted Lattice+Quantum premise plus retained parity/spectral inputs, with no PDG, tuned scale, or external comparator. This is clean only for the packet's scoped finite transfer-matrix T-positivity / monodromy-local-observable selector, not for a broader spin-statistics or full OS reflection-positivity theorem.
+- **auditor confidence:** high
+
+### `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-carrier W^dag W assembly for represented mixed gauge+fermion observables on H_gauge x H_ferm, assuming PSD gauge transfer, per-background fermion B[U]^dag B[U] blocks, and the mixed OS transfer representation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-002256-5310b597cb-rp_mixed_observable_single_t`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given PSD T_gauge and block factors B[U]^dag B[U], the assembled operator T_full = (T_gauge^{1/2} x I)(oplus_U B[U]^dag B[U])(T_gauge^{1/2} x I) equals W^dag W, so <Theta(F)F> = ||W(O_hat Omega)||^2 >= 0.  _(class `A`)_
+- **chain closes:** True — With A = T_gauge^{1/2} x I and C = oplus_U B[U]^dag B[U] = (oplus_U B[U])^dag(oplus_U B[U]), T_full = A C A = W^dag W and the Gram entries are <W O_i Omega, W O_j Omega>. The Wilson-boundary PSD theorem and mixed OS representation are explicit hypotheses of the audited bounded scope, not derived conclusions.
+- **rationale:** The load-bearing theorem is a finite-dimensional algebraic closure under explicitly stated PSD-transfer premises. The one-hop cited authorities are retained, and the note does not promote the Wilson-boundary compact-group theorem or the full mixed OS representation beyond premise status. The runner supplies nontrivial finite matrix checks and controls with no external comparator or tuned numerical input, but the clean closure rests on the W^dag W identity itself.
 - **auditor confidence:** high
 
 ### `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`

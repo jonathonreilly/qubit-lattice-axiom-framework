@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 195 |
+| **retained** | 196 |
 | **retained_no_go** | 209 |
 | **retained_bounded** | 699 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1284 |
+| unaudited | 1283 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1101 |
+| `audited_clean` | 1102 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 59 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1591 |
+| `unaudited` | 1590 |
 
 | claim_type | count |
 |---|---:|
@@ -920,6 +920,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_stable_kernel_expected_frequency_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_concentration_certificate_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_kernel_selection_rule_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_supplied_orientation_bridge_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -14005,6 +14006,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The supplied quadratic rational scoring rule over the supplied two-kernel candidate family has a unique minimum at candidate k4, while a weakened endpoint-only rule ties the candidates.  _(class `A`)_
 - **chain closes:** True — The exact arithmetic closes on the supplied inputs: k4 has statistic vector endpoint_ab=1/4, endpoint_ba=1/2, second_is_b=1/4 and score 0, while k3 has score 1/2; the endpoint-only rule gives both score 0 and is correctly underselected.
 - **rationale:** The load-bearing step is an algebraic finite minimization over explicitly supplied kernels, source, bridge, targets, and weights. Independent recomputation of the displayed probabilities and scores agrees with the runner: k4 uniquely minimizes the informative exact rational objective, and the weaker rule ties. The note’s scope is careful that no Record-derived selection rule, candidate family, production kernel, physical arrow, Born law, or dial selection is claimed.
+- **auditor confidence:** high
+
+### `post_record_supplied_orientation_bridge_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited only the finite supplied-bridge interface: directed endpoint certificates are exactly enumerable once law id, orientation convention, clock id, and optional kernel/dynamics id are supplied, while counts alone do not select an orientation or kernel.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-195523-90f0daaaf8-post_record_supplied_orienta`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given a supplied finite law, supplied orientation bridge, supplied directed event/statistic, and exact enumeration, one obtains a law-scoped directed certificate under that supplied bridge.  _(class `A`)_
+- **chain closes:** True — The chain closes for the stated finite interface because orientation is explicitly supplied and event probabilities are finite sums over the oriented law. Independent checks of the displayed toy identities give endpoint probabilities 1/2 forward and 0 reverse, while count pushforwards are unchanged by word reversal.
+- **rationale:** The load-bearing step is an algebraic finite-enumeration closure over supplied inputs, not a derivation of a physical arrow, clock, or kernel. The runner source computes the relevant probabilities and kernel row normalizations rather than merely printing constants, and the source note explicitly limits transport across laws and orientations. Source-anchor checks read support notes, but they are not load-bearing authorities for deriving the interface claim itself.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.py
+runner_sha256: 635af6fdf7ea4e65e4e7e890eb70a974c82a632805f4f16595b01945711d605e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -62,3 +70,6 @@ CLOCK_OR_RATE_DERIVED=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
 AUDIT_LEDGER_WRITTEN=FALSE
+
+----- stderr -----
+

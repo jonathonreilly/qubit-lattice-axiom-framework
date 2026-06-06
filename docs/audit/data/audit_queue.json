@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 313,
     "high": 255,
-    "leaf": 364,
+    "leaf": 363,
     "medium": 354
   },
   "cycle_break_target_count": 6,
@@ -28346,28 +28346,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "post_record_supplied_orientation_bridge_interface_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "post_record_supplied_selection_rule_interface_2026-06-06",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -38931,6 +38909,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 26,
-  "total_pending": 1286
+  "ready_count": 25,
+  "total_pending": 1285
 }

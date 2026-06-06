@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 189 |
-| **retained_no_go** | 197 |
+| **retained_no_go** | 198 |
 | **retained_bounded** | 684 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1342 |
+| unaudited | 1341 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1067 |
+| `audited_clean` | 1068 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1649 |
+| `unaudited` | 1648 |
 
 | claim_type | count |
 |---|---:|
@@ -358,6 +358,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `dynamics_coupling_residual_classifier_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `edge_deletion_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `edge_deletion_boundary_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `eigenvalue_anderson_phase_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -4929,6 +4930,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact Schur factorization gives I_e^* D_-^(-1) I_e = L_e^(-1), and under D_- = D_-^* > 0 the completed-square identity gives u^* L_e u = min_v [u; v]^* D_- [u; v].  _(class `A`)_
 - **chain closes:** True — The note proves the scoped conclusions directly by finite-dimensional block factorization and positive-Hermitian quadratic completion. There are no one-hop dependencies and no imported physical bridge inside the audited finite-dimensional boundary theorem.
 - **rationale:** The finite-dimensional algebra closes under the note's explicit hypotheses: invertible F and L_e for the resolvent identity, and D_- = D_-^* > 0 for the variational and monotonicity statements. The runner is not a first-principles microscopic computation, but it consistently checks exact Schur/Feshbach/Dirichlet algebra and scope hygiene, with 46 PASS and 0 FAIL in the supplied live summary. Residual risk is limited to scope discipline: this clean verdict covers only the supplied-block theorem and does not certify any Wilson-native construction of D_-, charged support selection, or final DM closure.
+- **auditor confidence:** high
+
+### `dynamics_coupling_residual_classifier_2026-06-06`
+
+- **Note:** [`DYNAMICS_COUPLING_RESIDUAL_CLASSIFIER_2026-06-06.md`](../../docs/DYNAMICS_COUPLING_RESIDUAL_CLASSIFIER_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite diagonal record-algebra preservation alone constrains Hamiltonians to a commuting/invariant class but does not determine coupling magnitude, coefficient ratios, nonzero dynamics, or a clock-rate split.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-80a8f1d152-dynamics_coupling_residual_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Diagonal record-preserving Hamiltonians such as H(g)=gP1 and H(x,y)=xA+yB commute with the record atoms for arbitrary scalar coefficients, while T=exp(-aH(g)) depends only on the product ag.  _(class `A`)_
+- **chain closes:** True — The commutators vanish identically for arbitrary symbolic g,x,y, H=0 also satisfies the preservation equations, and exp(-a g) gives the stated rate/coupling degeneracy. These finite counterexamples close the scoped preservation-only no-go without requiring an external dependency.
+- **rationale:** The load-bearing work is exact finite linear algebra, not a definition substitution or tuned numerical match. The no-go is scoped to preservation equations alone and explicitly leaves action, variational, minimality, normalization, and clock premises outside the claim. One runner label overstates that the particular x/y swap changes the spectrum; the code only checks matrix inequality and the source claim only needs coefficient-ratio freedom, so this is non-load-bearing for the audited result.
 - **auditor confidence:** high
 
 ### `edge_deletion_boundary_note`

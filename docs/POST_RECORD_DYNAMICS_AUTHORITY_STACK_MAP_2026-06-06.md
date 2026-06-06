@@ -3,7 +3,7 @@
 **Date:** 2026-06-06
 **Type:** exact support / read-only synthesis map
 **Claim type:** methodology
-**Status:** exact-support branch-local for mapping the current dynamics
+**Status:** exact-support for mapping the current dynamics
 authority stack; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
@@ -70,6 +70,8 @@ The runner verifies:
 
 - source anchors in each note in the current dynamics stack;
 - cached runner summaries for each layer;
+- the directed-certificate examples cache summary from the current stacked
+  upstream repair (`SUMMARY: PASS=60 FAIL=0`);
 - the five authority layers and their statuses;
 - no audit verdict, audit-data write, retained/promoted claim,
   Record-derived arrow, unsupplied kernel selection, Record-derived rule,

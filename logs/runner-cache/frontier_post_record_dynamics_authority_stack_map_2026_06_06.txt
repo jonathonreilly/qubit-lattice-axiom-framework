@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py
-runner_sha256: 768320f0fce5de584bb087a66d8e6f6891845e82c03ea8c833b1f2bdf1ae235b
+runner_sha256: 02595f56073f2b7763b456156f3d09df8d95020acf4b230af8b9b41bd6b8f77a
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.04
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
 ----- stdout -----
 
 ------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ PASS self note contains: post-record samples are realized information, not proba
 Cached log checks
 ------------------------------------------------------------------------------
 PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt exists
-FAIL logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: SUMMARY: PASS=59 FAIL=0
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: SUMMARY: PASS=60 FAIL=0
 PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE
 PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt exists
 PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt contains: SUMMARY: PASS=52 FAIL=0
@@ -75,7 +75,7 @@ PASS sample-is-probability-law flag is false
 PASS generation/Koide dial selected flag is false
 PASS stable setting selects dial flag is false
 
-SUMMARY: PASS=46 FAIL=1
+SUMMARY: PASS=47 FAIL=0
 POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP=TRUE
 DYNAMICS_AUTHORITY_LAYERS=5
 PRODUCTION_KERNEL_SELECTED_WITHOUT_RULE=FALSE

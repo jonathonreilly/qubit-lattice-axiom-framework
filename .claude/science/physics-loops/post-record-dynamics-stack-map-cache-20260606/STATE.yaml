@@ -1,0 +1,21 @@
+loop: post-record-dynamics-stack-map-cache-20260606
+date: 2026-06-06
+branch: physics-loop/post-record-dynamics-stack-map-cache-20260606
+base: physics-loop/post-record-directed-cert-count-drift-20260606
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: align_stack_map_with_directed_certificate_cache_repair
+files_touched:
+  - scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py
+  - docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md
+  - logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-dynamics-stack-map-cache-20260606/
+open_imports:
+  - "Depends on PR #2957 directed-certificate cache repair."
+new_axioms: []
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Open stacked review PR against physics-loop/post-record-directed-cert-count-drift-20260606."
+stop_condition: "Stack-map cache mismatch repaired on top of upstream cache repair; campaign can pivot after PR creation."

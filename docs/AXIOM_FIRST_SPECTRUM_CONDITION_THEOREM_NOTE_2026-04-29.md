@@ -4,7 +4,9 @@
 staggered-only-sector rescope: repoint the load-bearing transfer-matrix
 positivity input from the full reflection-positivity umbrella row to the
 in-repo-derived per-config two-step transfer-positivity sector, and
-decouple (SC4) from the asserted-gap cluster-decomposition import).
+decouple (SC4) from the asserted-gap cluster-decomposition import;
+2026-06-06 blocked-time normalization repair: use
+`a_blk := 2 a_τ` for the two-step transfer `T := T_hat^2`).
 **Status:** support — source note on the minimal axiom surface; runner passing;
 audit-pending. (SC1)–(SC3) are stated **conditional on the
 staggered-only per-config two-step transfer positivity sector** named
@@ -72,8 +74,9 @@ Hilbert space `H_phys := H_phys^(2)` — established in-repo for the free
 (`U = 1`) case and for fixed, arbitrary `SU(3)`/`U(1)` spatial backgrounds
 in temporal gauge, config-by-config, by the four sector authorities above.
 This note records the lattice analogue of the **spectrum condition** for
-that `T`: the reconstructed Hamiltonian `H := -(1/a_τ) log(T/M_T)` on
-`H_phys` is self-adjoint and bounded below. After this note, any package
+that `T`: with blocked temporal spacing `a_blk := 2 a_τ`, the reconstructed
+Hamiltonian `H := -(1/a_blk) log(T/M_T)` on `H_phys` is self-adjoint and
+bounded below. After this note, any package
 lane that relies on "the Hamiltonian is positive after vacuum subtraction"
 can cite this axiom-first lattice statement on the staggered-only surface
 of the minimal axiom setup instead of treating the spectrum condition as a continuum
@@ -102,17 +105,20 @@ only sector authorities (free `U = 1` derivation plus its fixed-background
 extension). They are finite-dimensional by construction (a free quadratic
 fermion Fock space at fixed gauge background), so all spectral statements
 below are elementary finite-dimensional linear algebra on a bounded
-positive Hermitian `T`.
+positive Hermitian `T`. Because `T` is the two-step object `T_hat^2`, its
+physical time interval is the blocked interval `a_blk := 2 a_τ`; all energy
+and gap rates below use this blocked interval.
 
 ## Statement
 
 Let `T := T_hat^2` be the two-step blocked staggered-only transfer matrix
 on the finite physical Hilbert space `H_phys`, positive Hermitian by the
 sector authorities (free `U = 1` and fixed-background `SU(3)`/`U(1)`
-config-by-config). Let `M_T := ‖T‖_{op}` be its operator norm. Then on the
-staggered-only surface of the minimal axiom setup:
+config-by-config). Let `M_T := ‖T‖_{op}` be its operator norm and
+`a_blk := 2 a_τ` its blocked temporal spacing. Then on the staggered-only
+surface of the minimal axiom setup:
 
-**(SC1) Self-adjointness.** `H := -(1/a_τ) log(T / M_T)` is a
+**(SC1) Self-adjointness.** `H := -(1/a_blk) log(T / M_T)` is a
 self-adjoint operator on `H_phys`. *(Unconditional given `T` positive
 Hermitian.)*
 
@@ -122,7 +128,7 @@ energy is `E_0 := 0`, and all excited-state energies satisfy
 
 **(SC3) Energy gap (conditional on non-degeneracy).** If `T` has a
 non-degenerate top eigenvalue `M_T` with next eigenvalue `λ_1 < M_T`, then
-the mass gap `m_gap := E_1 - E_0 = -(1/a_τ) log(λ_1 / M_T) > 0`. On a
+the mass gap `m_gap := E_1 - E_0 = -(1/a_blk) log(λ_1 / M_T) > 0`. On a
 finite carrier the free staggered `T_hat^2` has a non-degenerate vacuum
 (the runner exhibits `m_gap > 0` on the tested finite surface), but
 non-degeneracy is **not** asserted as a closed-form property of every
@@ -167,7 +173,7 @@ operator with spectrum `(0, 1]`. The (finite-dimensional) functional
 calculus defines `log(T / M_T)` as a self-adjoint operator with spectrum
 `(-∞, 0]` (since `log` is real on positive reals and `log(1) = 0`).
 
-Hence `H := -(1/a_τ) log(T / M_T)` is self-adjoint on `H_phys` with
+Hence `H := -(1/a_blk) log(T / M_T)` is self-adjoint on `H_phys` with
 spectrum `[0, +∞)`. (No kernel-extension is needed: `T` has no nontrivial
 kernel on this finite Fock space, so `H_phys^× = H_phys`.) This proves
 (SC1) and (SC2) unconditionally given the Step-1 positivity input.
@@ -181,7 +187,8 @@ If the top eigenvalue `M_T` is non-degenerate, the next eigenvalue
 `λ_1 < M_T`, and
 
 ```text
-    m_gap   =   E_1 - E_0   =   -(1/a_τ) log(λ_1 / M_T)   >   0.    (1)
+    m_gap   =   E_1 - E_0   =   -(1/a_blk) log(λ_1 / M_T)   >   0,
+    with a_blk = 2 a_τ.                                             (1)
 ```
 
 Non-degeneracy holds on the tested finite carrier (the runner exhibits
@@ -196,9 +203,10 @@ Step 3, not an import of an unconditional cluster-decomposition theorem.
 Given `Δ_T > 0`, the finite-block temporal transfer-matrix bridge
 ([`CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`](CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md))
 bounds the temporal connected correlator
-`|⟨A(τ) B(0)⟩_c| ≤ C e^{-Δ_T τ}` on the ground state, with an explicit
-finite-temperature excited-state-population correction; the decay length
-is `1 / m_gap`.
+`|⟨A(τ) B(0)⟩_c| ≤ C e^{-Δ_T τ}` on the ground state, where `τ` is measured
+in the same physical blocked-time units as `a_blk`, with an explicit
+finite-temperature excited-state-population correction; the decay length is
+`1 / m_gap`.
 
 What this step does **not** do: it does not establish unconditional
 spatial cluster decomposition, and it does not supply a first-principles
@@ -216,7 +224,8 @@ named in "Cited authorities". No imports from the forbidden list. The
 load-bearing input is "`T := T_hat^2` positive Hermitian on a finite
 `H_phys`"; everything downstream of it ((SC1), (SC2), and (SC3) under the
 stated non-degeneracy condition) is elementary finite-dimensional spectral
-theory on a bounded positive Hermitian operator. (SC4) additionally
+theory on a bounded positive Hermitian operator, with the generator
+normalized by the two-step blocked spacing `a_blk := 2 a_τ`. (SC4) additionally
 conditions on the temporal bridge note and on the
 gap `Δ_T > 0` of (SC3).
 
@@ -231,7 +240,8 @@ input.
 C2. *Mass-gap is the spectral-gap of `T`.* When the top eigenvalue is
 non-degenerate (SC3), any package row that quotes a mass-gap value or
 scaling can be related to the operator spectrum of the staggered-only
-two-step transfer matrix via (1).
+two-step transfer matrix via (1), using the two-step blocked time interval
+`a_blk = 2 a_τ`.
 
 C3. *Conditional temporal-clustering corollary.* Given the gap of (SC3),
 the temporal bridge note + this note give exponential temporal

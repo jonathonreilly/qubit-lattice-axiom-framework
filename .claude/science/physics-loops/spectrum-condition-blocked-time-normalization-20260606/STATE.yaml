@@ -1,0 +1,29 @@
+loop_slug: spectrum-condition-blocked-time-normalization-20260606
+branch: physics-loop/spectrum-condition-blocked-time-normalization-20260606
+base: origin/main
+target_claim_id: axiom_first_spectrum_condition_theorem_note_2026-04-29
+target_status_before_branch: audited_conditional
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+cycle: 1
+active_route: blocked-time normalization repair
+hard_residual: >
+  The current note used the two-step object T := T_hat^2 but normalized
+  log(T/M_T) by a single a_tau rather than the blocked interval 2 a_tau.
+files_touched:
+  - docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_spectrum_condition_check.py
+  - logs/runner-cache/axiom_first_spectrum_condition_check.txt
+  - .claude/science/physics-loops/spectrum-condition-blocked-time-normalization-20260606/
+no_audit_result_edits: true
+new_axioms: false
+checks:
+  - python3 scripts/axiom_first_spectrum_condition_check.py
+  - python3 -m py_compile scripts/axiom_first_spectrum_condition_check.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/axiom_first_spectrum_condition_check.py --force --push-mode=none --allow-non-main --concurrency 1
+pr_status: pending
+next_exact_action: run branch hygiene checks, commit, push, open PR
+stop_condition: not reached

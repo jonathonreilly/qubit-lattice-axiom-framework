@@ -15,18 +15,19 @@ staggered-only surface; representative finite carrier of the two-step
 blocked transfer matrix T := T_hat^2 whose positivity the note imports
 from the staggered-only sector authorities):
 
-  E1.  Construct T = exp(-a_τ H_lat) on a small spatial slice;
-       verify spectrum of T is real and positive with M_T = max
-       eigenvalue.
+  E1.  Construct the two-step blocked transfer object
+       T = exp(-a_blk H_lat), with a_blk = 2 a_step, on a small
+       spatial slice; verify spectrum of T is real and positive with
+       M_T = max eigenvalue.
 
   E2.  Build the normalised transfer matrix T_norm = T / M_T;
        verify spectrum is in (0, 1].
 
-  E3.  Compute H := -(1/a_τ) log(T_norm); verify H is self-adjoint
+  E3.  Compute H := -(1/a_blk) log(T_norm); verify H is self-adjoint
        with non-negative spectrum (E_0 = 0, all E_n ≥ 0).
 
   E4.  Compute the mass gap m_gap = E_1 - E_0 = -log(λ_1 / M_T) /
-       a_τ; report it as a positive number on this finite carrier.
+       a_blk; report it as a positive number on this finite carrier.
 
 E1-E4 exhibit the content of (SC1)-(SC3) of the note. (SC4) is a
 *conditional* temporal-decay corollary (given the gap, via the
@@ -97,16 +98,20 @@ def main():
     print("=" * 72)
     print(" axiom_first_spectrum_condition_check.py")
     print(" Loop: axiom-first-foundations-block02, Cycle 1 / R7")
-    print(" Spectrum condition: H = -log(T/M_T)/a_τ is self-adjoint, H ≥ 0")
+    print(" Spectrum condition: H = -log(T/M_T)/a_blk is self-adjoint, H ≥ 0")
     print("=" * 72)
 
-    a_tau = 1.0
+    a_step = 1.0
+    a_blk = 2.0 * a_step
     L_s = 4
     mass = 0.3
 
     H_lat = free_staggered_1d_hamiltonian(L_s, mass=mass)
-    T = expm(-a_tau * H_lat)
-    print(f"\n  L_s = {L_s}, mass = {mass}, a_τ = {a_tau}, dim = {2**L_s}")
+    T = expm(-a_blk * H_lat)
+    print(
+        f"\n  L_s = {L_s}, mass = {mass}, "
+        f"a_step = {a_step}, a_blk = {a_blk}, dim = {2**L_s}"
+    )
 
     # E1: spectrum of T
     evals_T = np.linalg.eigvalsh(0.5 * (T + T.conj().T))
@@ -126,12 +131,12 @@ def main():
     print(f"  spectrum in (0, 1]? {e2}")
     print(f"  E2 verdict: {'PASS' if e2 else 'FAIL'}")
 
-    # E3: H = -(1/a_τ) log(T_norm) self-adjoint, H ≥ 0
-    H_phys = -(1.0 / a_tau) * logm(T_norm)
+    # E3: H = -(1/a_blk) log(T_norm) self-adjoint, H ≥ 0
+    H_phys = -(1.0 / a_blk) * logm(T_norm)
     H_phys_herm = 0.5 * (H_phys + H_phys.conj().T)
     H_err = float(np.max(np.abs(H_phys - H_phys_herm)))
     evals_H = np.linalg.eigvalsh(H_phys_herm)
-    print(f"\n--- E3: H = -(1/a_τ) log(T_norm) ---")
+    print(f"\n--- E3: H = -(1/a_blk) log(T_norm) ---")
     print(f"  Hermiticity err (||H - H†||_max) = {H_err:.3e}")
     print(f"  spectrum of H: min = {evals_H.min():.6e}, max = {evals_H.max():.6e}")
     print(f"  ground state E_0 = {evals_H.min():.6e} (target: 0)")

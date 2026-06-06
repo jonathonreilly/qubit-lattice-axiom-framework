@@ -11,5 +11,12 @@ Reviewer focus:
 - Confirm it makes the post-record information vs pre-record probability
   interface explicit.
 
-PR URL: pending
+PR URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2807
 
+PR verification:
+
+- Base: `physics-loop/record-markov-generator-embeddability-boundary-20260606`
+- Head: `physics-loop/record-markov-generator-premise-classifier-20260606`
+- Mergeability: `MERGEABLE`
+- Merge state at verification: `UNSTABLE` because `audit_pipeline` was
+  `IN_PROGRESS`, not because of a merge conflict.

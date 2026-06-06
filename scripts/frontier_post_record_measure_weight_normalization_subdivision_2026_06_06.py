@@ -47,10 +47,10 @@ SELECTOR_TANGENT_RE = re.compile(
 
 EXPECTED_LANE_COUNTS = {
     "character_path_channel_weight": 9,
-    "generic_measure_weight_import": 6,
+    "generic_measure_weight_import": 7,
     "selector_tangent_readout_weight": 7,
-    "source_measure_or_rn_bridge": 14,
-    "trace_normalization_reference": 7,
+    "source_measure_or_rn_bridge": 15,
+    "trace_normalization_reference": 6,
 }
 EXPECTED_MEASURE_ROWS = sum(EXPECTED_LANE_COUNTS.values())
 
@@ -131,7 +131,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "measure_weight_normalization` | 43",
+            "measure_weight_normalization` | 44",
             "measure/weight/normalization rows",
             "Does not turn stable settings into selected dials.",
         ],

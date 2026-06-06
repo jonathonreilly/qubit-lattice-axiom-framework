@@ -20,8 +20,8 @@ FAIL = 0
 
 PROTOTYPE_LANES = {"source_measure_or_rn_bridge", "trace_normalization_reference"}
 EXPECTED_LANE_COUNTS = {
-    "source_measure_or_rn_bridge": 14,
-    "trace_normalization_reference": 7,
+    "source_measure_or_rn_bridge": 15,
+    "trace_normalization_reference": 6,
 }
 
 
@@ -135,8 +135,8 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
-            "`source_measure_or_rn_bridge` | 14",
-            "`trace_normalization_reference` | 7",
+            "`source_measure_or_rn_bridge` | 15",
+            "`trace_normalization_reference` | 6",
             "Normalized measure is not selected dial.",
             "Does not derive a prior, measure, source unit, trace state, or weight rule",
         ],

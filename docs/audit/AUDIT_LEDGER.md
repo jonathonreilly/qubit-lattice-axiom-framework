@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 674 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1219 |
+| unaudited | 1218 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 83 |
+| ~~audited_conditional~~ | 84 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1044 |
-| `audited_conditional` | 83 |
+| `audited_conditional` | 84 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1503 |
+| `unaudited` | 1502 |
 
 | claim_type | count |
 |---|---:|
@@ -1250,6 +1250,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13869,6 +13870,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Since h[U] is anti-Hermitian, it is unitarily diagonalizable with eigenvalues i lambda_j, so T_odd T_even splits into 2x2 Hermitian blocks with determinant 1, trace 2+4(m^2+lambda_j^2), and eigenvalues exp(±2 asinh(sqrt(m^2+lambda_j^2))); the relabeling part is unitary conjugation invariance of determinant, spectrum, and trace.  _(class `A`)_
 - **chain closes:** True — The finite linear-algebra chain closes: independent checking gives h^dag=-h, the displayed T2(lambda) block has the stated signs, determinant, trace, and positive eigenvalues, and second quantization of positive contraction eigenvalues gives a positive many-body transfer. The relabeling result follows exactly from similarity invariance under permutation unitaries.
 - **rationale:** The runner source performs actual finite matrix construction and numerical checks rather than printing constants, and its PASS=7 output matches the stated surfaces. The clean verdict does not rest on the random samples alone: the modal anti-Hermitian-hop reduction independently supplies the arbitrary fixed-background finite proof within the note's stated scope. The source also explicitly excludes the full dynamical-gauge RP bridge and downstream P2/AC_phi_lambda conclusions, so those open items are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20`
+
+- **Note:** [`RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md`](../../docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-volume Gibbs density on A_Lambda relative to the normalized trace tau_Lambda; any reading as rho_ref or Wilson/RP compatibility remains conditional on separate identification and carrier-representation bridges.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-002526-c2dd805166-rp_rho_ref_radon_nikodym_com`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For self-adjoint H, D_H = e^{-H}/tau_Lambda(e^{-H}) is positive with tau_Lambda(D_H)=1, so omega_H(O)=tau_Lambda(D_H O) is the finite-dimensional Radon-Nikodym density representation relative to the faithful trace.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional matrix-algebra Gibbs/tracial density calculation closes relative to tau_Lambda. The rho_ref compatibility reading does not close because the cited pre-record authority explicitly leaves the tau-to-rho_ref identification open, and the Wilson measure-to-H_Wilson,Lambda representation bridge is also not supplied.
+- **rationale:** The displayed finite-dimensional identities are standard and check out: e^{-H} is strictly positive, Z_H is positive by faithfulness of the trace, and cyclicity gives positivity of Tr(e^{-H}O) for O >= 0. However, the note's rho_ref wording depends on an upstream authority that explicitly demotes identifying the unique tracial state with the pre-record reference to an open admission. The Wilson/RP compatibility reading also imports a separate representation bridge from configuration-space measure to a self-adjoint operator on A_Lambda, which the note admits is not proved here. No runner source or stdout was available, so the judgment is from the note text and supplied authorities alone.
+- **open / conditional deps cited:**
+  - `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`

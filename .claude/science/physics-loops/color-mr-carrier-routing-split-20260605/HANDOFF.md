@@ -12,7 +12,7 @@ Files:
 
 Runner result: `PASS=53 FAIL=0`.
 
-Stacked PR: pending.
+Stacked PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2746
 
 ## Main finding
 
@@ -30,4 +30,5 @@ readout, and link-index routing, plus downstream formation/action dynamics.
 
 ## Next exact action
 
-Commit, push, and open a stacked PR.
+Continue campaign queue; likely next route is direct link-index routing
+attempt or chirality/left-right residual.

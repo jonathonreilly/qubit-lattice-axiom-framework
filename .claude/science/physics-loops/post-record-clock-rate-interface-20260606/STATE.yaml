@@ -1,0 +1,43 @@
+loop_slug: post-record-clock-rate-interface-20260606
+branch: physics-loop/post-record-clock-rate-interface-20260606
+base: origin/main
+campaign: dynamics lanes
+cycle_status: verified_pending_pr
+target_status: no-go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: post-record histories do not derive clocks or rates
+hard_residual: "Separate event-indexed append/count dynamics from physical clock metrics, transition rates, and carrier Hamiltonians."
+files_touched:
+  - docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md
+  - scripts/frontier_post_record_clock_rate_interface_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_clock_rate_interface_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-clock-rate-interface-20260606/
+open_imports:
+  - physical clock or time metric
+  - transition-rate or stochastic-process bridge
+  - record-production process
+  - carrier Hamiltonian or transfer step
+  - probability/Born bridge for stochastic rates
+no_go_routes:
+  - "post-record event counts alone derive physical elapsed time"
+  - "post-record event counts alone derive transition rates"
+  - "post-record event counts alone select Hamiltonian, transfer step, or dial"
+trace_gate:
+  trace_class: negative_route_pruning
+  target_claim_id: null
+  target_blocker_text: "Rows that report rates must identify the clock denominator and cannot cite append/count algebra as a clock or transition-rate derivation."
+  source_of_blocker_text: handoff
+  reachability_to_target: prunes
+  artifact_role: no_go
+review_findings: "Local review tightened one vacuous same-word runner check; no overclaim, clock/rate selection, Hamiltonian selection, or dial-selection issue found."
+pr_status:
+  url: null
+  number: null
+  mergeable: null
+  checks: null
+next_exact_action: "Commit, push, open PR, patch PR status."
+stop_condition: "Block closes when PR is open and verified or PR backlog records exact failure."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

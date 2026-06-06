@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 316,
     "high": 256,
-    "leaf": 390,
+    "leaf": 389,
     "medium": 352
   },
   "cycle_break_target_count": 9,
@@ -28393,30 +28393,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_only_det_positivity_case_a_note_2026-05-17"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "post_record_directed_certificate_examples_2026-06-06",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -39660,6 +39636,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 45,
-  "total_pending": 1314
+  "ready_count": 44,
+  "total_pending": 1313
 }

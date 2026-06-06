@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 192 |
-| **retained_no_go** | 205 |
+| **retained_no_go** | 206 |
 | **retained_bounded** | 694 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1310 |
+| unaudited | 1309 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1089 |
+| `audited_clean` | 1090 |
 | `audited_conditional` | 64 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 51 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1617 |
+| `unaudited` | 1616 |
 
 | claim_type | count |
 |---|---:|
@@ -908,6 +908,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_clock_rate_interface_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_directed_certificate_kernel_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13635,6 +13636,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** supplied finite law plus supplied orientation bridge plus supplied clock/kernel/statistic and exact enumeration imply a law-scoped directed finite certificate  _(class `A`)_
 - **chain closes:** False — The finite example arithmetic closes independently: the transition, marker-lag, and boundary expectations/probabilities match the displayed fractions and reversal preserves count pushforwards. The chain does not close as written because the completed runner contradicts the note's row-bucket status claim, reporting 81 total selector rows, 32 arrow/dynamics rows, and 49 flow/thermal rows rather than 77, 31, and 46.
 - **rationale:** The load-bearing finite enumeration is class A, not class C: it checks exact expectations and probabilities for explicitly supplied finite laws and bridges rather than deriving them from the framework baseline. Independent hand enumeration confirms the three example table values, tail probabilities, normalizations, and count-pushforward invariances. However, the runner has three completed failures on the row-bucket side condition, and its final summary still prints the stale 31-row value despite the computed 32-row bucket. That source-runner drift prevents a clean audit of the note as written.
+- **auditor confidence:** high
+
+### `post_record_directed_certificate_kernel_selection_firewall_2026-06-06`
+
+- **Note:** [`POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md`](../../docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the branch-local no-go that directed certificate data alone do not generally select a unique production kernel; supplied kernels, estimators, or model-selection rules remain outside the firewall.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-5fc727b65d-post_record_directed_certifi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With source mass only on A, two distinct row-stochastic kernels agree on the visited A row, differ on the unvisited B row, and induce the same length-2 law and directed certificate values.  _(class `A`)_
+- **chain closes:** True — The finite two-state witnesses close the underselection claim: the same law/certificate data admit distinct candidate kernels, and a single scalar certificate also admits distinct full-support candidates. Routes that recover a kernel require extra supplied assumptions such as a model class, sufficient statistics, or a selection rule, which the claim explicitly excludes.
+- **rationale:** The load-bearing step is an exact finite algebraic counterexample, not a definition, renaming, tuned numerical match, or external comparator check. Independent recomputation of the displayed fractions gives the runner's laws and certificate values: k1 and k2 share L(AA)=1/2 and L(AB)=1/2 while differing on the B row, and k3 and k4 share endpoint_AB=1/4 while other directed statistics separate them. The no-go is clean only in the scoped sense of no selection from directed certificates alone, not as a ban on separately supplied model-selection rules.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

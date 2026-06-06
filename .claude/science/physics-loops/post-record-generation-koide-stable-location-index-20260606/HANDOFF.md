@@ -38,14 +38,16 @@ because it builds directly on the supplied stable-setting certificate.
 
 ## Next exact action
 
-Commit, push, and open the stacked PR.
+Poll PR #2844 until `audit_pipeline` completes, then record the final clean PR
+state if the check succeeds.
 
 ## PR
 
 ```yaml
-pr_url: null
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2844"
 base: "physics-loop/post-record-flow-thermal-stable-setting-certificate-20260606"
-initial_mergeable: null
-initial_merge_state_status: null
-initial_checks: null
+initial_head: "ad1ff5c9fa34a63243448b9b1e9d82e5873e4855"
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline QUEUED"
 ```

@@ -5,6 +5,8 @@
 Bounded-support / finite sink-memory entropy-ledger block ready for stacked
 review. This block is stacked on PR #2775.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2777
+
 ## Result
 
 Reversible reset with a blank sink preserves full finite label entropy by
@@ -27,5 +29,4 @@ Checks:
 
 ## Next Action
 
-Commit, push, open a stacked PR, and then pivot to the next reset residual or
-another high-value dynamics lane.
+Pivot to sink blankness/preparation or another high-value dynamics lane.

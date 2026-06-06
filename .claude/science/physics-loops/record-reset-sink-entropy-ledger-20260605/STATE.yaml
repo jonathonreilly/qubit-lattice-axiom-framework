@@ -27,6 +27,6 @@ no_go_routes:
   - "Entropy ledger fixes a dial location."
 trace_gate_classification: upstream_support
 review_disposition: pass
-pr_status: pending
-next_exact_action: "Commit, push, and open stacked PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2777"
+next_exact_action: "Pivot to sink blankness/preparation or another high-value dynamics lane."
 stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

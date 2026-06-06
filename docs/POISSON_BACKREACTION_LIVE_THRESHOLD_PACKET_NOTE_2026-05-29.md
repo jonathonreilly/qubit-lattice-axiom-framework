@@ -40,6 +40,11 @@ present in the untruncated helper source, and that both caches are SHA-fresh.
 This does not set an audit verdict; it makes the bounded packet reauditable
 with the missing helper source exposed.
 
+For the audit packet dependency scanner, the packet checker uses the static
+import form `import scripts.backreaction_poisson as bp`; this is the form
+recognized by `scripts/audit_packet_script_deps.py`, so the next packet build
+can populate `helper_runner_paths` with `scripts/backreaction_poisson.py`.
+
 ## Live Finite Result
 
 The runner replays the current Poisson self-gravity harness on the explicit

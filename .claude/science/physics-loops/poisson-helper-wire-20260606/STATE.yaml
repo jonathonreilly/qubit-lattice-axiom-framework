@@ -1,0 +1,27 @@
+loop_slug: poisson-helper-wire-20260606
+branch: physics-loop/poisson-helper-wire-20260606
+base: origin/main@3ba784c50
+target_claim_id: poisson_backreaction_live_threshold_packet_note_2026-05-29
+target_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_result_edits: false
+files_touched:
+  - docs/POISSON_BACKREACTION_LIVE_THRESHOLD_PACKET_NOTE_2026-05-29.md
+  - scripts/backreaction_poisson_live_threshold_check.py
+  - scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py
+  - logs/runner-cache/backreaction_poisson_live_threshold_check.txt
+  - logs/runner-cache/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.txt
+  - outputs/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.json
+  - .claude/science/physics-loops/poisson-helper-wire-20260606/
+checks:
+  - command: python3 scripts/backreaction_poisson_live_threshold_check.py
+    result: ASSERTIONS PASS
+  - command: python3 scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py
+    result: PASS=27 FAIL=0
+  - command: parse_script_imports/transitive_helpers probe
+    result: scripts/backreaction_poisson.py detected
+remaining_blockers:
+  - reviewer/auditor must decide final ledger status
+next_exact_action: open review PR
+

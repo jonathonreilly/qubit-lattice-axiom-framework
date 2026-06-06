@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 692 |
+| **retained_bounded** | 693 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1320 |
+| unaudited | 1319 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,22 +61,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1083 |
+| `audited_clean` | 1084 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1627 |
+| `unaudited` | 1626 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1326 |
+| `bounded_theorem` | 1327 |
 | `decoration` | 53 |
 | `meta` | 311 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 778 |
+| `positive_theorem` | 777 |
 
 | criticality | count |
 |---|---:|
@@ -751,6 +751,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -11265,6 +11266,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Because eta is nondegenerate and k != 0, L_k is a nonzero linear functional on C^4, so rank-nullity gives dim_C ker(L_k)=3; since eta(k,k)=0, span_C{k} lies in the kernel and the quotient dimension is 3-1=2.  _(class `A`)_
 - **chain closes:** True — The conclusion follows directly from nondegeneracy, rank-nullity, and the null condition. No physical bridge, external numerical input, or cited authority is needed.
 - **rationale:** The load-bearing step is a standard algebraic consequence of the stated hypotheses: nondegeneracy makes L_k nonzero for k != 0, rank-nullity gives a three-dimensional kernel, and eta(k,k)=0 puts the one-dimensional span of k inside it. The runner source performs exact rational rank and containment checks for witnesses and text-boundary checks; it does not import external comparators or hard-code a contested derived value as evidence. The theorem's scope is explicitly limited to the abstract quotient dimension, so no omitted physics bridge is part of the audited claim.
+- **auditor confidence:** high
+
+### `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28`
+
+- **Note:** [`MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md`](../../docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the abstract finite-dimensional identity dim_C ker(ell)/span_C{k}=2 for V=C^4, nonzero ell:V->C, and nonzero k in ker(ell).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-184317-cfcb1491a7-massless_vector_polarization`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because ell is a nonzero linear functional on C^4, dim ker(ell)=3, and because nonzero k lies in ker(ell), dim_C ker(ell)/span_C{k}=3-1=2.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by rank-nullity and the standard dimension formula for quotient vector spaces. No physical massless-vector interpretation or Standard Model inventory input is needed for the stated abstract scope.
+- **rationale:** The load-bearing step is a direct algebraic identity over the stated hypotheses: rank(ell)=1, dim ker(ell)=3, dim span{k}=1, and span{k} is a subspace of ker(ell). The runner source performs exact symbolic rank and containment checks for the canonical model and labels all 48 checks as class A; the physics-language blocks are explicitly diagnostic and not load-bearing. The displayed identities and signs in the abstract proof are internally consistent, and the narrowed scope avoids importing any unresolved physical bridge.
 - **auditor confidence:** high
 
 ### `matched_2d_4d_decoherence_note`

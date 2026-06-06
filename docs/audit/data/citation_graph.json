@@ -53587,12 +53587,12 @@
     },
     "d3_lower_bound_source_packet_gate_note_2026-06-06": {
       "claim_id": "d3_lower_bound_source_packet_gate_note_2026-06-06",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "exact-support for an audit-gate artifact",
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c083aaf5142d63db5d66ede99f490d14584f96baa4f19f60d224287fe4d1f932",
+      "note_hash": "3355cfbb71972fd317da4cd1e74f2d4c7d8831a88d1d8100e94adfece6e0f1b7",
       "path": "docs/D3_LOWER_BOUND_SOURCE_PACKET_GATE_NOTE_2026-06-06.md",
       "runner_path": "scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py",
       "title": "D3 Lower-Bound Source-Packet Gate"
@@ -99132,18 +99132,18 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 879,
       "decoration": 1,
-      "meta": 268,
+      "meta": 269,
       "no_go": 132,
-      "none": 1488,
+      "none": 1487,
       "open_gate": 76,
       "positive_theorem": 190
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1282,
       "decoration": 1,
-      "meta": 268,
+      "meta": 269,
       "no_go": 246,
-      "none": 459,
+      "none": 458,
       "open_gate": 151,
       "positive_theorem": 627
     },

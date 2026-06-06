@@ -1,0 +1,30 @@
+loop_slug: lattice-dense-source-packet-cache-20260606
+branch: physics-loop/lattice-dense-source-packet-cache-20260606
+base: origin/main
+target_claim_id: lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29
+target_status_before_branch: audited_conditional
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+cycle: 5
+active_route: runner-artifact source-packet completeness
+hard_residual: >
+  The audited conditional row says the endpoint runner was artifact-incomplete
+  because the transitive helper source scripts/lattice_3d_dense_10prop.py was
+  load-bearing. Main already exposes the helper and verifier; this branch adds
+  the missing verifier cache and links it from the note.
+files_touched:
+  - docs/LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md
+  - logs/runner-cache/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.txt
+  - .claude/science/physics-loops/lattice-dense-source-packet-cache-20260606/
+no_audit_result_edits: true
+new_axioms: false
+checks:
+  - python3 -m py_compile scripts/lattice_3d_dense_z2_z6_endpoint_check.py scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py scripts/lattice_3d_dense_10prop.py
+  - python3 scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/lattice_3d_dense_z2_z6_endpoint_check.py,scripts/lattice_3d_dense_z2_z6_endpoint_source_packet_manifest_2026_06_05.py,scripts/lattice_3d_dense_10prop.py --force --push-mode=none --allow-non-main --concurrency 1
+pr_status: pending
+next_exact_action: run hygiene checks, commit, push, open PR
+stop_condition: not reached

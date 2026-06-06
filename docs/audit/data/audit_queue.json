@@ -3,7 +3,7 @@
     "critical": 313,
     "high": 255,
     "leaf": 431,
-    "medium": 360
+    "medium": 359
   },
   "cycle_break_target_count": 6,
   "cycle_break_targets": [
@@ -17201,33 +17201,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-        "gauge_vacuum_plaquette_bridge_support_note",
-        "plaquette_self_consistency_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.7,
-      "note_path": "docs/SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py",
-      "transitive_descendants": 12
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40614,6 +40587,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 98,
-  "total_pending": 1359
+  "ready_count": 97,
+  "total_pending": 1358
 }

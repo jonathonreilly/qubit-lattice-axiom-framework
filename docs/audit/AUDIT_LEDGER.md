@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 680 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1357 |
+| unaudited | 1356 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 50 |
-| ~~audited_failed~~ | 5 |
+| ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1060 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 49 |
+| `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1663 |
+| `unaudited` | 1662 |
 
 | claim_type | count |
 |---|---:|
@@ -1340,6 +1340,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_nonlocal_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_results_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_scale_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `su3_wilson_closed_form_fanout_theorem_note_2026-05-04` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -15790,6 +15791,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Within the narrowed scope, the one-hop dependencies are retained-grade or retained_bounded and supply the SU(3) representation-theory and L_s=3 geometry inputs. The primary runner source visibly recomputes the coefficients and singlet basis rather than importing the disclaimed bridge constants or relying on the missing Block 5 runner.
 - **rationale:** The supplied runner is source-visible and does more than print cached constants: it evaluates the SU(3) Bessel-determinant coefficient sum, diagonalizes the 4096 x 4096 total Casimir to recover the rank-8 singlet basis, constructs the stated plaquette tensor, and reports the finite storage/intermediate arithmetic. The repaired note no longer load-bears on the L_s=2 Block 5 diagnostics or on the unaudited bridge/open-gate constants. The full L_s=3 contraction is expressly outside the audited claim, so its absence is not a blocker for this staging theorem.
 - **auditor confidence:** medium
+
+### `su3_wilson_closed_form_fanout_theorem_note_2026-05-04`
+
+- **Note:** [`SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md`](../../docs/SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the four stated SU(3) Wilson plaquette closed-form values at beta=6 and the conditional arithmetic gaps to the imported MC comparator 0.5934.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-170909-ebb0a324fd-su3_wilson_closed_form_fanou`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner evaluates the four closed-form beta=6 estimates as M1=0.4225, M2=0.3333, M4=0.8740, and M5=0.9259, with the MC gap comparison treated as conditional.  _(class `C`)_
+- **chain closes:** False — M1, M2, M4, and the displayed gap arithmetic check numerically, but the M5 one-loop weak-coupling normalization does not. With Wilson beta=2N/g^2, the independent leading plaquette check gives 1 - g^2 C_F/4 = 1 - (N^2-1)/(4 beta), hence 0.6667 for SU(3) at beta=6, not the note's 0.9259.
+- **rationale:** The supplied runner genuinely computes the one-plaquette character value and the mean-field fixed point, and independent Weyl-torus quadrature reproduces M1=0.4225317 and M4=0.874049. The simple algebra also reproduces M2 and the printed gap ratios. However, the runner hard-codes the M5 weak-coupling formula and only sanity-checks that it lies in (0,1); an independent one-loop normalization check finds the stated coefficient off by a factor, so the bounded internal quartet is not correct as written.
+- **auditor confidence:** high
 
 ### `substrate_to_p_a_forcing_theorem_note_2026-04-30`
 

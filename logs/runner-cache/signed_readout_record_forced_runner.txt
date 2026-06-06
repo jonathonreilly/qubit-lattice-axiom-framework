@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/signed_readout_record_forced_runner.py
+runner_sha256: 724f7f88419f055da33ef9d21e4264656bbecc4e2dbb70afab5ff8dccfd5e949
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+========================================================================
+SIGNED READOUT IS RECORD-FORCED (given Hermitian); pin -> operator class [class A]
+========================================================================
+  [PASS] recorded observable is self-adjoint (H = H^dag) -> real spectrum
+  [PASS] real spectrum carries a Z2 SIGN (not a U(1) phase): some eigenvalue < 0  (signed sqrt(m) = [-0.399, 1.52, 1.879])
+  [PASS] record reads the K-orbit = SIGNED eigenvalue: Q_signed = 2/3  (0.6667)
+  [PASS] singular-value |lambda| reading DISCARDS the K-fixed sign (a recorded datum): Q != 2/3  (Q_|lambda|=0.4160)
+  [PASS] => readout class is record-forced-given-Hermitian (not a free choice); residual is purely the OPERATOR class
+  [PASS] generation C^3 = hw=1 SUBSPACE of the 3 site-qubits (isometry V1: C^3->C^8), NOT a tensor factor
+  [PASS] qubit K/CPT (conj on C^8) RESTRICTS to the generation K (conj on the C^3 corner basis) -> factor-split no-go (about factors) does not apply to this subspace
+  [PASS] generation circulant M is Hermitian on C^3 -> signed eigenvalues are the recorded sqrt(m)
+  [PASS] STEELMAN (documented): Dirac [[0,M],[M^dag,0]] has eigenvalues +/-(signed eig of M)
+  [PASS] STEELMAN: the Dirac positive eigenvalues = singular values |eig(M)| (ABSORB the sign, the SM chiral-phase convention)
+  [PASS] HONEST GAP: 'sqrt(m) sign RECORDED (M eigenvalue sign) vs ABSORBED (chiral convention)' is the remaining record-vs-reconstruction question -- favored-recorded, NOT proven
+========================================================================
+TOTAL: PASS=11 FAIL=0
+VERDICT: the record forces the signed readout GIVEN a Hermitian generation observable (|lambda| discards the recorded K-fixed sign); the pin reduces to the operator class. Welding route (hw=1 subspace, not factor) is the live escape; the sqrt(m) sign recorded-vs-absorbed is the remaining honest gap (Dirac/SVD steelman).
+
+----- stderr -----
+

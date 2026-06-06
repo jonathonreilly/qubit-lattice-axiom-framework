@@ -16,7 +16,12 @@ physics-loop/record-markov-generator-premise-classifier-20260606
 
 Parent PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2807
 
-PR for this block: pending.
+PR for this block: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2809
+
+GitHub verification: open PR, base
+`physics-loop/record-markov-generator-premise-classifier-20260606`, head
+`physics-loop/record-clock-rate-normalization-gate-20260606`, mergeable
+`MERGEABLE`, merge state `UNSTABLE`.
 
 ## Result
 
@@ -35,5 +40,6 @@ information, not probability.
 
 ## Next Action
 
-Commit, push, open the stacked PR, patch this pack with the PR URL, then
-continue the 12-hour campaign.
+Continue the 12-hour campaign. The highest-value next dynamics route is to
+look for a physical generator/source candidate that can feed this stable-dial
+gate without importing observed target values.

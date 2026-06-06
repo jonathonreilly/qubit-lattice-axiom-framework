@@ -1,12 +1,19 @@
 # PR Backlog
 
-Status: PR not created yet.
+Status: PR created and verified.
 
-Planned command after checks and push:
+PR:
 
 ```text
-gh pr create --base physics-loop/record-markov-generator-premise-classifier-20260606 --head physics-loop/record-clock-rate-normalization-gate-20260606 --title "[physics-loop] record clock/rate normalization gate exact-support"
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2809
 ```
 
-If PR creation fails for auth/network reasons, keep this branch pushed and use
-the command above as the recovery path.
+Verification:
+
+```text
+gh pr view 2809 --json number,url,state,baseRefName,headRefName,mergeStateStatus,mergeable,title
+```
+
+Result: open, stacked on
+`physics-loop/record-markov-generator-premise-classifier-20260606`,
+`mergeable=MERGEABLE`, `mergeStateStatus=UNSTABLE`.

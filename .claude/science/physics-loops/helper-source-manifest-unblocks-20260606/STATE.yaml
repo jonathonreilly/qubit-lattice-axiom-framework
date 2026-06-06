@@ -1,0 +1,40 @@
+loop_slug: helper-source-manifest-unblocks-20260606
+branch: physics-loop/helper-source-manifest-unblocks-20260606
+base: origin/main
+target_claim_ids:
+  - staggered_backreaction_live_capture_packet_note_2026-05-29
+  - wave_direct_dm_h025_fam2_seed1_followup_note
+target_status_before_branch: audited_conditional
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+cycle: 7
+active_route: transitive helper-source packet manifests
+hard_residual: >
+  Both rows were conditionally blocked by packet-completeness issues:
+  the staggered capture row needed the full transitive prototype helper source,
+  and the wave row needed the untruncated wave_retardation helper behind
+  measure_dm. This branch adds source-packet verifiers, caches, and note links.
+files_touched:
+  - docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md
+  - docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+  - scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py
+  - scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py
+  - logs/runner-cache/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.txt
+  - logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt
+  - outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json
+  - outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json
+  - .claude/science/physics-loops/helper-source-manifest-unblocks-20260606/
+no_audit_result_edits: true
+new_axioms: false
+checks:
+  - python3 -m py_compile scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py
+  - python3 scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py
+  - python3 scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py,scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py --force --push-mode=none --allow-non-main --concurrency 1
+  - python3 scripts/precompute_audit_runners.py --runners scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py,scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py --check-only --allow-non-main --concurrency 1
+pr_status: pending
+next_exact_action: run hygiene checks, commit, push, open PR
+stop_condition: not reached

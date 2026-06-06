@@ -5,6 +5,10 @@
 **Source boundary:** bounded target replay feeding the controlled `Fam2`
 fine-`H` pair surface; not an independent theorem-grade surface or
 portability promotion
+**Source packet verifier:** [`scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py`](../scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py)
+(SUMMARY: WAVE FAM2 SEED1 SOURCE PACKET PASS=59 FAIL=0)
+**Source packet verifier cache:** [`logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt`](../logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt)
+**Source packet verifier JSON:** [`outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json`](../outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json)
 
 This note records the complementary second-family follow-up after the first
 extra-family `Fam2`, seed-`0` boundary on the direct-`dM` matched-history
@@ -112,6 +116,35 @@ proposed_claim_type: bounded_theorem
 runner_path: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
 claim_boundary: "Exact Fam2 seed1 H=0.25 replay feeding controlled pair/batch surface; not an independent theorem-grade surface or portability law."
 audit_authority: independent audit lane only
+```
+
+## 2026-06-06 Source Packet Exposure Repair
+
+The current audit blocker asks for the complete untruncated helper source
+behind `measure_dm`, especially [`scripts/wave_retardation_continuum_limit.py`](../scripts/wave_retardation_continuum_limit.py)
+with `field_at`, `prop_beam`, and `cz`. The source packet is now explicit:
+
+- Target-specific runner: [`scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py`](../scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py)
+- Target-specific runner cache: [`logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt`](../logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt)
+- Generic point runner: [`scripts/wave_direct_dm_h025_point_runner.py`](../scripts/wave_direct_dm_h025_point_runner.py)
+- Generic point runner cache: [`logs/runner-cache/wave_direct_dm_h025_point_runner.txt`](../logs/runner-cache/wave_direct_dm_h025_point_runner.txt)
+- Matched-history helper: [`scripts/wave_direct_dm_matched_history_probe.py`](../scripts/wave_direct_dm_matched_history_probe.py)
+- Matched-history helper cache: [`logs/runner-cache/wave_direct_dm_matched_history_probe.txt`](../logs/runner-cache/wave_direct_dm_matched_history_probe.txt)
+- Wave-retardation helper: [`scripts/wave_retardation_continuum_limit.py`](../scripts/wave_retardation_continuum_limit.py)
+- Wave-retardation helper cache: [`logs/runner-cache/wave_retardation_continuum_limit.txt`](../logs/runner-cache/wave_retardation_continuum_limit.txt)
+
+The source packet verifier checks that these paths are linked from this note,
+that the target runner is fixed to `Fam2`, seed `1`, `H=0.25`, and source
+strength `S_PHYS`, that `measure_dm` imports and calls the wave-retardation
+helpers, that `field_at`, `prop_beam`, `cz`, `solve_wave`, and `grow` are
+present in the untruncated helper source, and that all listed caches are
+SHA-fresh and successful. This does not set an audit verdict; it makes the
+bounded target replay reauditable with the missing helper source exposed.
+
+Current source-packet output:
+
+```text
+SUMMARY: WAVE FAM2 SEED1 SOURCE PACKET PASS=59 FAIL=0
 ```
 
 ## Artifact chain

@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py
+runner_sha256: 4a13a809cce4ac5dea8baee86eb38c762130daa80c4210670322e98dc4e23cbf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+[PASS] path_exists:target_runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] note_links:target_runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] path_exists:target_runner_cache: logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt
+[PASS] note_links:target_runner_cache: logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt
+[PASS] path_exists:generic_point_runner: scripts/wave_direct_dm_h025_point_runner.py
+[PASS] note_links:generic_point_runner: scripts/wave_direct_dm_h025_point_runner.py
+[PASS] path_exists:generic_point_runner_cache: logs/runner-cache/wave_direct_dm_h025_point_runner.txt
+[PASS] note_links:generic_point_runner_cache: logs/runner-cache/wave_direct_dm_h025_point_runner.txt
+[PASS] path_exists:matched_history_helper: scripts/wave_direct_dm_matched_history_probe.py
+[PASS] note_links:matched_history_helper: scripts/wave_direct_dm_matched_history_probe.py
+[PASS] path_exists:matched_history_helper_cache: logs/runner-cache/wave_direct_dm_matched_history_probe.txt
+[PASS] note_links:matched_history_helper_cache: logs/runner-cache/wave_direct_dm_matched_history_probe.txt
+[PASS] path_exists:wave_retardation_helper: scripts/wave_retardation_continuum_limit.py
+[PASS] note_links:wave_retardation_helper: scripts/wave_retardation_continuum_limit.py
+[PASS] path_exists:wave_retardation_helper_cache: logs/runner-cache/wave_retardation_continuum_limit.txt
+[PASS] note_links:wave_retardation_helper_cache: logs/runner-cache/wave_retardation_continuum_limit.txt
+[PASS] source_untruncated:target_runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py bytes=5121
+[PASS] source_marker:target_runner:FAMILY = "Fam2": FAMILY = "Fam2"
+[PASS] source_marker:target_runner:SEED = 1: SEED = 1
+[PASS] source_marker:target_runner:H_VALUE = 0.25: H_VALUE = 0.25
+[PASS] source_marker:target_runner:from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm: from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm
+[PASS] source_marker:target_runner:from wave_retardation_continuum_limit import S_PHYS as SOURCE_STRENGTH_CONSTANT: from wave_retardation_continuum_limit import S_PHYS as SOURCE_STRENGTH_CONSTANT
+[PASS] source_untruncated:generic_point_runner: scripts/wave_direct_dm_h025_point_runner.py bytes=3062
+[PASS] source_marker:generic_point_runner:from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm: from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm
+[PASS] source_untruncated:matched_history_helper: scripts/wave_direct_dm_matched_history_probe.py bytes=6751
+[PASS] source_marker:matched_history_helper:from wave_retardation_continuum_limit import (: from wave_retardation_continuum_limit import (
+[PASS] source_marker:matched_history_helper:def measure_dm(: def measure_dm(
+[PASS] source_marker:matched_history_helper:prop_beam(: prop_beam(
+[PASS] source_marker:matched_history_helper:cz(: cz(
+[PASS] source_untruncated:wave_retardation_helper: scripts/wave_retardation_continuum_limit.py bytes=21276
+[PASS] source_marker:wave_retardation_helper:def field_at(: def field_at(
+[PASS] source_marker:wave_retardation_helper:def prop_beam(: def prop_beam(
+[PASS] source_marker:wave_retardation_helper:def cz(: def cz(
+[PASS] source_marker:wave_retardation_helper:def solve_wave(: def solve_wave(
+[PASS] source_marker:wave_retardation_helper:def grow(: def grow(
+[PASS] cache_runner_present:target_runner_cache: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] cache_sha_fresh:target_runner_cache: 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d == 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d
+[PASS] cache_exit_ok:target_runner_cache: exit_code=0
+[PASS] cache_status_ok:target_runner_cache: status=ok
+[PASS] cache_snippet:target_runner_cache: SUMMARY: WAVE H025 FAM2 SEED1 PASS=27 FAIL=0
+[PASS] cache_name_consistent:target_runner_cache: wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04 in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+[PASS] cache_runner_present:generic_point_runner_cache: scripts/wave_direct_dm_h025_point_runner.py
+[PASS] cache_sha_fresh:generic_point_runner_cache: e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a == e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a
+[PASS] cache_exit_ok:generic_point_runner_cache: exit_code=0
+[PASS] cache_status_ok:generic_point_runner_cache: status=ok
+[PASS] cache_snippet:generic_point_runner_cache: WAVE DIRECT-DM SINGLE-POINT RUNNER
+[PASS] cache_name_consistent:generic_point_runner_cache: wave_direct_dm_h025_point_runner in scripts/wave_direct_dm_h025_point_runner.py
+[PASS] cache_runner_present:matched_history_helper_cache: scripts/wave_direct_dm_matched_history_probe.py
+[PASS] cache_sha_fresh:matched_history_helper_cache: 6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211 == 6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211
+[PASS] cache_exit_ok:matched_history_helper_cache: exit_code=0
+[PASS] cache_status_ok:matched_history_helper_cache: status=ok
+[PASS] cache_snippet:matched_history_helper_cache: DIRECT-DM MATCHED-HISTORY PROBE
+[PASS] cache_name_consistent:matched_history_helper_cache: wave_direct_dm_matched_history_probe in scripts/wave_direct_dm_matched_history_probe.py
+[PASS] cache_runner_present:wave_retardation_helper_cache: scripts/wave_retardation_continuum_limit.py
+[PASS] cache_sha_fresh:wave_retardation_helper_cache: 0c1ffd073cb1f811e2c74507d6bbefe658c4798efcd5cca3522c16fe2ea8c2e1 == 0c1ffd073cb1f811e2c74507d6bbefe658c4798efcd5cca3522c16fe2ea8c2e1
+[PASS] cache_exit_ok:wave_retardation_helper_cache: exit_code=0
+[PASS] cache_status_ok:wave_retardation_helper_cache: status=ok
+[PASS] cache_snippet:wave_retardation_helper_cache: WAVE-RETARDATION CONTINUUM-LIMIT REFINEMENT
+[PASS] cache_name_consistent:wave_retardation_helper_cache: wave_retardation_continuum_limit in scripts/wave_retardation_continuum_limit.py
+========================================================================================
+SUMMARY: WAVE FAM2 SEED1 SOURCE PACKET PASS=59 FAIL=0
+OUTPUT_JSON=outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json
+========================================================================================
+
+----- stderr -----
+

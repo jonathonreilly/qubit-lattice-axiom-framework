@@ -1,0 +1,312 @@
+{
+  "checks": [
+    {
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py",
+      "name": "path_exists:target_runner",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py",
+      "name": "note_links:target_runner",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt",
+      "name": "path_exists:target_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt",
+      "name": "note_links:target_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_h025_point_runner.py",
+      "name": "path_exists:generic_point_runner",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_h025_point_runner.py",
+      "name": "note_links:generic_point_runner",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/wave_direct_dm_h025_point_runner.txt",
+      "name": "path_exists:generic_point_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/wave_direct_dm_h025_point_runner.txt",
+      "name": "note_links:generic_point_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_matched_history_probe.py",
+      "name": "path_exists:matched_history_helper",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_matched_history_probe.py",
+      "name": "note_links:matched_history_helper",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/wave_direct_dm_matched_history_probe.txt",
+      "name": "path_exists:matched_history_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/wave_direct_dm_matched_history_probe.txt",
+      "name": "note_links:matched_history_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_retardation_continuum_limit.py",
+      "name": "path_exists:wave_retardation_helper",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_retardation_continuum_limit.py",
+      "name": "note_links:wave_retardation_helper",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/wave_retardation_continuum_limit.txt",
+      "name": "path_exists:wave_retardation_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/wave_retardation_continuum_limit.txt",
+      "name": "note_links:wave_retardation_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py bytes=5121",
+      "name": "source_untruncated:target_runner",
+      "ok": true
+    },
+    {
+      "detail": "FAMILY = \"Fam2\"",
+      "name": "source_marker:target_runner:FAMILY = \"Fam2\"",
+      "ok": true
+    },
+    {
+      "detail": "SEED = 1",
+      "name": "source_marker:target_runner:SEED = 1",
+      "ok": true
+    },
+    {
+      "detail": "H_VALUE = 0.25",
+      "name": "source_marker:target_runner:H_VALUE = 0.25",
+      "ok": true
+    },
+    {
+      "detail": "from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm",
+      "name": "source_marker:target_runner:from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm",
+      "ok": true
+    },
+    {
+      "detail": "from wave_retardation_continuum_limit import S_PHYS as SOURCE_STRENGTH_CONSTANT",
+      "name": "source_marker:target_runner:from wave_retardation_continuum_limit import S_PHYS as SOURCE_STRENGTH_CONSTANT",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_h025_point_runner.py bytes=3062",
+      "name": "source_untruncated:generic_point_runner",
+      "ok": true
+    },
+    {
+      "detail": "from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm",
+      "name": "source_marker:generic_point_runner:from wave_direct_dm_matched_history_probe import FAMILIES, measure_dm",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_matched_history_probe.py bytes=6751",
+      "name": "source_untruncated:matched_history_helper",
+      "ok": true
+    },
+    {
+      "detail": "from wave_retardation_continuum_limit import (",
+      "name": "source_marker:matched_history_helper:from wave_retardation_continuum_limit import (",
+      "ok": true
+    },
+    {
+      "detail": "def measure_dm(",
+      "name": "source_marker:matched_history_helper:def measure_dm(",
+      "ok": true
+    },
+    {
+      "detail": "prop_beam(",
+      "name": "source_marker:matched_history_helper:prop_beam(",
+      "ok": true
+    },
+    {
+      "detail": "cz(",
+      "name": "source_marker:matched_history_helper:cz(",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_retardation_continuum_limit.py bytes=21276",
+      "name": "source_untruncated:wave_retardation_helper",
+      "ok": true
+    },
+    {
+      "detail": "def field_at(",
+      "name": "source_marker:wave_retardation_helper:def field_at(",
+      "ok": true
+    },
+    {
+      "detail": "def prop_beam(",
+      "name": "source_marker:wave_retardation_helper:def prop_beam(",
+      "ok": true
+    },
+    {
+      "detail": "def cz(",
+      "name": "source_marker:wave_retardation_helper:def cz(",
+      "ok": true
+    },
+    {
+      "detail": "def solve_wave(",
+      "name": "source_marker:wave_retardation_helper:def solve_wave(",
+      "ok": true
+    },
+    {
+      "detail": "def grow(",
+      "name": "source_marker:wave_retardation_helper:def grow(",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py",
+      "name": "cache_runner_present:target_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d == 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d",
+      "name": "cache_sha_fresh:target_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "exit_code=0",
+      "name": "cache_exit_ok:target_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "status=ok",
+      "name": "cache_status_ok:target_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "SUMMARY: WAVE H025 FAM2 SEED1 PASS=27 FAIL=0",
+      "name": "cache_snippet:target_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04 in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py",
+      "name": "cache_name_consistent:target_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_h025_point_runner.py",
+      "name": "cache_runner_present:generic_point_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a == e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+      "name": "cache_sha_fresh:generic_point_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "exit_code=0",
+      "name": "cache_exit_ok:generic_point_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "status=ok",
+      "name": "cache_status_ok:generic_point_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "WAVE DIRECT-DM SINGLE-POINT RUNNER",
+      "name": "cache_snippet:generic_point_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "wave_direct_dm_h025_point_runner in scripts/wave_direct_dm_h025_point_runner.py",
+      "name": "cache_name_consistent:generic_point_runner_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_direct_dm_matched_history_probe.py",
+      "name": "cache_runner_present:matched_history_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211 == 6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211",
+      "name": "cache_sha_fresh:matched_history_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "exit_code=0",
+      "name": "cache_exit_ok:matched_history_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "status=ok",
+      "name": "cache_status_ok:matched_history_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "DIRECT-DM MATCHED-HISTORY PROBE",
+      "name": "cache_snippet:matched_history_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "wave_direct_dm_matched_history_probe in scripts/wave_direct_dm_matched_history_probe.py",
+      "name": "cache_name_consistent:matched_history_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "scripts/wave_retardation_continuum_limit.py",
+      "name": "cache_runner_present:wave_retardation_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "0c1ffd073cb1f811e2c74507d6bbefe658c4798efcd5cca3522c16fe2ea8c2e1 == 0c1ffd073cb1f811e2c74507d6bbefe658c4798efcd5cca3522c16fe2ea8c2e1",
+      "name": "cache_sha_fresh:wave_retardation_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "exit_code=0",
+      "name": "cache_exit_ok:wave_retardation_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "status=ok",
+      "name": "cache_status_ok:wave_retardation_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "WAVE-RETARDATION CONTINUUM-LIMIT REFINEMENT",
+      "name": "cache_snippet:wave_retardation_helper_cache",
+      "ok": true
+    },
+    {
+      "detail": "wave_retardation_continuum_limit in scripts/wave_retardation_continuum_limit.py",
+      "name": "cache_name_consistent:wave_retardation_helper_cache",
+      "ok": true
+    }
+  ],
+  "claim_id": "wave_direct_dm_h025_fam2_seed1_followup_note",
+  "fail_count": 0,
+  "pass_count": 59,
+  "paths": {
+    "generic_point_runner": "scripts/wave_direct_dm_h025_point_runner.py",
+    "generic_point_runner_cache": "logs/runner-cache/wave_direct_dm_h025_point_runner.txt",
+    "matched_history_helper": "scripts/wave_direct_dm_matched_history_probe.py",
+    "matched_history_helper_cache": "logs/runner-cache/wave_direct_dm_matched_history_probe.txt",
+    "target_runner": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py",
+    "target_runner_cache": "logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt",
+    "wave_retardation_helper": "scripts/wave_retardation_continuum_limit.py",
+    "wave_retardation_helper_cache": "logs/runner-cache/wave_retardation_continuum_limit.txt"
+  }
+}

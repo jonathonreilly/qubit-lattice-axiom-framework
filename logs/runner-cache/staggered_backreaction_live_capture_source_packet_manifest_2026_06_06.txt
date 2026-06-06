@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py
+runner_sha256: 9886eb42be7828d69977bf05e61adffbba17951daf2a564761d0c7cae6cdd5fb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+[PASS] path_exists:packet_checker: scripts/staggered_backreaction_live_capture_packet_check.py
+[PASS] note_links:packet_checker: scripts/staggered_backreaction_live_capture_packet_check.py
+[PASS] path_exists:packet_cache: logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt
+[PASS] note_links:packet_cache: logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt
+[PASS] path_exists:capture_harness: scripts/frontier_staggered_backreaction_capture_closure_harness.py
+[PASS] note_links:capture_harness: scripts/frontier_staggered_backreaction_capture_closure_harness.py
+[PASS] path_exists:capture_harness_cache: logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt
+[PASS] note_links:capture_harness_cache: logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt
+[PASS] path_exists:iterative_helper: scripts/frontier_staggered_backreaction_iterative.py
+[PASS] note_links:iterative_helper: scripts/frontier_staggered_backreaction_iterative.py
+[PASS] path_exists:iterative_helper_cache: logs/runner-cache/frontier_staggered_backreaction_iterative.txt
+[PASS] note_links:iterative_helper_cache: logs/runner-cache/frontier_staggered_backreaction_iterative.txt
+[PASS] path_exists:cycle_helper: scripts/frontier_staggered_cycle_battery.py
+[PASS] note_links:cycle_helper: scripts/frontier_staggered_cycle_battery.py
+[PASS] path_exists:cycle_helper_cache: logs/runner-cache/frontier_staggered_cycle_battery.txt
+[PASS] note_links:cycle_helper_cache: logs/runner-cache/frontier_staggered_cycle_battery.txt
+[PASS] path_exists:layered_helper: scripts/frontier_staggered_layered_backreaction.py
+[PASS] note_links:layered_helper: scripts/frontier_staggered_layered_backreaction.py
+[PASS] path_exists:layered_helper_cache: logs/runner-cache/frontier_staggered_layered_backreaction.txt
+[PASS] note_links:layered_helper_cache: logs/runner-cache/frontier_staggered_layered_backreaction.txt
+[PASS] path_exists:prototype_helper: scripts/frontier_staggered_backreaction_prototype.py
+[PASS] note_links:prototype_helper: scripts/frontier_staggered_backreaction_prototype.py
+[PASS] path_exists:prototype_helper_cache: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
+[PASS] note_links:prototype_helper_cache: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
+[PASS] source_untruncated:packet_checker: scripts/staggered_backreaction_live_capture_packet_check.py bytes=3743
+[PASS] source_marker:packet_checker:import frontier_staggered_backreaction_capture_closure_harness as cap: import frontier_staggered_backreaction_capture_closure_harness as cap
+[PASS] source_marker:packet_checker:ASSERTIONS:: ASSERTIONS:
+[PASS] source_untruncated:capture_harness: scripts/frontier_staggered_backreaction_capture_closure_harness.py bytes=18888
+[PASS] source_marker:capture_harness:import frontier_staggered_backreaction_iterative as iterative: import frontier_staggered_backreaction_iterative as iterative
+[PASS] source_marker:capture_harness:import frontier_staggered_cycle_battery as cycle: import frontier_staggered_cycle_battery as cycle
+[PASS] source_marker:capture_harness:import frontier_staggered_layered_backreaction as layered: import frontier_staggered_layered_backreaction as layered
+[PASS] source_marker:capture_harness:def _measure_cycle_graph(: def _measure_cycle_graph(
+[PASS] source_marker:capture_harness:def _measure_holdout(: def _measure_holdout(
+[PASS] source_marker:capture_harness:CLOSURE = ClosureSpec(: CLOSURE = ClosureSpec(
+[PASS] source_untruncated:iterative_helper: scripts/frontier_staggered_backreaction_iterative.py bytes=11883
+[PASS] source_marker:iterative_helper:import frontier_staggered_backreaction_prototype as base: import frontier_staggered_backreaction_prototype as base
+[PASS] source_marker:iterative_helper:class MappingSpec: class MappingSpec
+[PASS] source_marker:iterative_helper:def _apply_mapping(: def _apply_mapping(
+[PASS] source_marker:iterative_helper:def _measure_family(: def _measure_family(
+[PASS] source_untruncated:cycle_helper: scripts/frontier_staggered_cycle_battery.py bytes=17189
+[PASS] source_marker:cycle_helper:def make_random_geometric(: def make_random_geometric(
+[PASS] source_marker:cycle_helper:def make_growing(: def make_growing(
+[PASS] source_untruncated:layered_helper: scripts/frontier_staggered_layered_backreaction.py bytes=15091
+[PASS] source_marker:layered_helper:def _build_layered_family(: def _build_layered_family(
+[PASS] source_untruncated:prototype_helper: scripts/frontier_staggered_backreaction_prototype.py bytes=20482
+[PASS] source_marker:prototype_helper:def _source_density(: def _source_density(
+[PASS] source_marker:prototype_helper:def _solve_phi(: def _solve_phi(
+[PASS] source_marker:prototype_helper:def _build_hamiltonian(: def _build_hamiltonian(
+[PASS] source_marker:prototype_helper:def _force_from_phi(: def _force_from_phi(
+[PASS] source_marker:prototype_helper:def _measure_family(: def _measure_family(
+[PASS] cache_runner_present:packet_cache: scripts/staggered_backreaction_live_capture_packet_check.py
+[PASS] cache_sha_fresh:packet_cache: 54ad62600a353a4826934404b862630c4e5aba8a21b94ea8c0825d84ccad3205 == 54ad62600a353a4826934404b862630c4e5aba8a21b94ea8c0825d84ccad3205
+[PASS] cache_exit_ok:packet_cache: exit_code=0
+[PASS] cache_status_ok:packet_cache: status=ok
+[PASS] cache_snippet:packet_cache: ASSERTIONS: PASS
+[PASS] cache_name_consistent:packet_cache: staggered_backreaction_live_capture_packet_check in scripts/staggered_backreaction_live_capture_packet_check.py
+[PASS] cache_runner_present:capture_harness_cache: scripts/frontier_staggered_backreaction_capture_closure_harness.py
+[PASS] cache_sha_fresh:capture_harness_cache: 8eee0a1c509997614b5bd488fcf048a0b157ee28f4c264e3876ef2528495b969 == 8eee0a1c509997614b5bd488fcf048a0b157ee28f4c264e3876ef2528495b969
+[PASS] cache_exit_ok:capture_harness_cache: exit_code=0
+[PASS] cache_status_ok:capture_harness_cache: status=ok
+[PASS] cache_snippet:capture_harness_cache: CAPTURE-CLOSURE HARNESS
+[PASS] cache_name_consistent:capture_harness_cache: frontier_staggered_backreaction_capture_closure_harness in scripts/frontier_staggered_backreaction_capture_closure_harness.py
+[PASS] cache_runner_present:iterative_helper_cache: scripts/frontier_staggered_backreaction_iterative.py
+[PASS] cache_sha_fresh:iterative_helper_cache: 2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497 == 2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497
+[PASS] cache_exit_ok:iterative_helper_cache: exit_code=0
+[PASS] cache_status_ok:iterative_helper_cache: status=ok
+[PASS] cache_snippet:iterative_helper_cache: STAGGERED BACKREACTION ITERATIVE SOURCE-MAPPING PROBE
+[PASS] cache_name_consistent:iterative_helper_cache: frontier_staggered_backreaction_iterative in scripts/frontier_staggered_backreaction_iterative.py
+[PASS] cache_runner_present:cycle_helper_cache: scripts/frontier_staggered_cycle_battery.py
+[PASS] cache_sha_fresh:cycle_helper_cache: d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48 == d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48
+[PASS] cache_exit_ok:cycle_helper_cache: exit_code=0
+[PASS] cache_status_ok:cycle_helper_cache: status=ok
+[PASS] cache_snippet:cycle_helper_cache: CYCLE-BEARING GRAPH BATTERY
+[PASS] cache_name_consistent:cycle_helper_cache: frontier_staggered_cycle_battery in scripts/frontier_staggered_cycle_battery.py
+[PASS] cache_runner_present:layered_helper_cache: scripts/frontier_staggered_layered_backreaction.py
+[PASS] cache_sha_fresh:layered_helper_cache: 833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd == 833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd
+[PASS] cache_exit_ok:layered_helper_cache: exit_code=0
+[PASS] cache_status_ok:layered_helper_cache: status=ok
+[PASS] cache_snippet:layered_helper_cache: STAGGERED LAYERED BACKREACTION
+[PASS] cache_name_consistent:layered_helper_cache: frontier_staggered_layered_backreaction in scripts/frontier_staggered_layered_backreaction.py
+[PASS] cache_runner_present:prototype_helper_cache: scripts/frontier_staggered_backreaction_prototype.py
+[PASS] cache_sha_fresh:prototype_helper_cache: 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975 == 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975
+[PASS] cache_exit_ok:prototype_helper_cache: exit_code=0
+[PASS] cache_status_ok:prototype_helper_cache: status=ok
+[PASS] cache_snippet:prototype_helper_cache: STAGGERED SOURCE-GENERATED BACKREACTION PROTOTYPE
+[PASS] cache_name_consistent:prototype_helper_cache: frontier_staggered_backreaction_prototype in scripts/frontier_staggered_backreaction_prototype.py
+========================================================================================
+SUMMARY: STAGGERED CAPTURE SOURCE PACKET PASS=86 FAIL=0
+OUTPUT_JSON=outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json
+========================================================================================
+
+----- stderr -----
+

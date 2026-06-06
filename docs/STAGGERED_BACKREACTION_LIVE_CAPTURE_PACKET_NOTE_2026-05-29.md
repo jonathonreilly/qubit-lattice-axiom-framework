@@ -6,6 +6,11 @@
 not audit-effective.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/staggered_backreaction_live_capture_packet_check.py`](../scripts/staggered_backreaction_live_capture_packet_check.py)
+**Cached runner output:** [`logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt`](../logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt)
+**Source packet verifier:** [`scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py`](../scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py)
+(SUMMARY: STAGGERED CAPTURE SOURCE PACKET PASS=86 FAIL=0)
+**Source packet verifier cache:** [`logs/runner-cache/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.txt`](../logs/runner-cache/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.txt)
+**Source packet verifier JSON:** [`outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json`](../outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json)
 
 ## Purpose
 
@@ -16,6 +21,33 @@ current live capture-closure harness supports.
 
 No new axiom, observed target value, fitted selector, or external comparator
 is introduced.
+
+## 2026-06-06 Source Packet Exposure Repair
+
+The current audit blocker asks for the complete untruncated transitive helper
+source, especially [`scripts/frontier_staggered_backreaction_prototype.py`](../scripts/frontier_staggered_backreaction_prototype.py).
+The source packet is now explicit:
+
+- Restricted packet checker: [`scripts/staggered_backreaction_live_capture_packet_check.py`](../scripts/staggered_backreaction_live_capture_packet_check.py)
+- Restricted packet cache: [`logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt`](../logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt)
+- Capture harness source: [`scripts/frontier_staggered_backreaction_capture_closure_harness.py`](../scripts/frontier_staggered_backreaction_capture_closure_harness.py)
+- Capture harness cache: [`logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt`](../logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt)
+- Iterative helper source: [`scripts/frontier_staggered_backreaction_iterative.py`](../scripts/frontier_staggered_backreaction_iterative.py)
+- Iterative helper cache: [`logs/runner-cache/frontier_staggered_backreaction_iterative.txt`](../logs/runner-cache/frontier_staggered_backreaction_iterative.txt)
+- Cycle helper source: [`scripts/frontier_staggered_cycle_battery.py`](../scripts/frontier_staggered_cycle_battery.py)
+- Cycle helper cache: [`logs/runner-cache/frontier_staggered_cycle_battery.txt`](../logs/runner-cache/frontier_staggered_cycle_battery.txt)
+- Layered helper source: [`scripts/frontier_staggered_layered_backreaction.py`](../scripts/frontier_staggered_layered_backreaction.py)
+- Layered helper cache: [`logs/runner-cache/frontier_staggered_layered_backreaction.txt`](../logs/runner-cache/frontier_staggered_layered_backreaction.txt)
+- Prototype helper source: [`scripts/frontier_staggered_backreaction_prototype.py`](../scripts/frontier_staggered_backreaction_prototype.py)
+- Prototype helper cache: [`logs/runner-cache/frontier_staggered_backreaction_prototype.txt`](../logs/runner-cache/frontier_staggered_backreaction_prototype.txt)
+
+The source packet verifier checks that these paths are linked from this note,
+that the transitive import chain is present, that load-bearing prototype
+functions such as `_source_density`, `_solve_phi`, `_build_hamiltonian`, and
+`_force_from_phi` are present in the untruncated source, and that all listed
+caches are SHA-fresh and successful. This does not set an audit verdict; it
+makes the same bounded packet reauditable with the missing helper source
+exposed.
 
 ## Live Finite Result
 
@@ -41,6 +73,12 @@ cycle gap improvement factor: 2.08x
 cycle mean R2: 0.996306; two-body max <1e-12
 holdout gap: 9.191e-01 -> 4.559e-01 (2.02x)
 ASSERTIONS: PASS
+```
+
+Current source-packet output:
+
+```text
+SUMMARY: STAGGERED CAPTURE SOURCE PACKET PASS=86 FAIL=0
 ```
 
 ## Claim Boundary

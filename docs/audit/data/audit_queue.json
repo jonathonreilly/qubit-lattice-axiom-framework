@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 321,
+    "critical": 320,
     "high": 258,
     "leaf": 393,
     "medium": 361
@@ -135,33 +135,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-      "claim_scope": "Finite-block finite-range Cl(3)=M2(C) Hamiltonians on Z^3 satisfy the stated Lieb-Robinson commutator envelope and lattice light-cone bound with v_LR=2eJ_*D_intR_int, plus the Cl(3) local norm bound; L2 is audited only as conditional on a separate transfer-gap or spatial-clustering authority.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
-        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
-        "strong_cp_theta_zero_note",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 19,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 19.479,
-      "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
-      "transitive_descendants": 1008
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -28988,6 +28961,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "cluster_decomposition_lr_poisson_tail_repair_narrow_theorem_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/CLUSTER_DECOMPOSITION_LR_POISSON_TAIL_REPAIR_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_cluster_decomp_lr_poisson_tail_repair_2026_06_06.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "delta_magnitude_reduces_to_massless_gravity_scale_narrow_theorem_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -33722,30 +33719,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_t2_df_physical_consequences_2026_05_10_t2df.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cluster_decomposition_lr_poisson_tail_repair_narrow_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CLUSTER_DECOMPOSITION_LR_POISSON_TAIL_REPAIR_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_cluster_decomp_lr_poisson_tail_repair_2026_06_06.py",
       "transitive_descendants": 0
     },
     {
@@ -40138,5 +40111,5 @@
     }
   ],
   "ready_count": 56,
-  "total_pending": 1333
+  "total_pending": 1332
 }

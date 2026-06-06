@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 700 |
+| **retained_bounded** | 701 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
 | unaudited | 1329 |
-| audit_in_progress | 1 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1109 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1110 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
@@ -132,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -181,6 +179,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_cluster_decomposition_temporal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2080,6 +2079,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Combining the Duhamel expansion with the finite interaction-path bound gives the Lieb-Robinson estimate with finite velocity v_LR = 2 e J_* R_int D_int; L3 is its outside-light-cone corollary and L4 supplies finiteness of J_* via the repaired triangle norm bound.  _(class `C`)_
 - **chain closes:** True — For the scoped L1/L3/L4 statement, the chain closes from finite-dimensional local Cl(3) operator norms, finite-range Hermitian lattice interactions, Duhamel/path-count LR estimates, and the triangle inequality. The spatial connected-correlator clustering bridge is not used as a load-bearing step.
 - **rationale:** The source note correctly removes the parent spatial L2 claim and limits the theorem to L1/L3/L4. The repaired Cl(3) bound uses the valid l1 triangle inequality, fixes the explicit I + sigma_z counterexample to the prior Euclidean bound, and gives finite J_* and v_LR under the finite-range local-rule hypothesis. The LR/light-cone part is a standard finite-lattice Duhamel/path-count derivation with no external numerical comparator or tuned input; the temporal transfer-matrix material is presented only as a conditional exhibit and not as closure of spatial clustering.
+- **auditor confidence:** high
+
+### `axiom_first_cluster_decomposition_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-225800-9865a15a60-axiom_first_cluster_decompos`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The weighted-path Duhamel estimate bounds the commutator by 2||A||||B|| exp(-mu d(x,y)) sum_n (2 J_* D_int exp(mu R_int)|t|)^n/n!, and with mu=1/R_int gives v_LR=2 e J_* D_int R_int.  _(class `A`)_
+- **chain closes:** True — For the audited scope, the weighted-path estimate gives L1, L3 is its direct contrapositive, and L4 follows from the finite-dimensional Cl(3) triangle/Cauchy norm bound. The packet does not close unconditional spatial L2, but that claim is explicitly outside the load-bearing scope.
+- **rationale:** The load-bearing step is an algebraic finite-lattice Lieb-Robinson closure over the accepted Lattice/Quantum premises and the explicit finite-range Hamiltonian hypothesis. Independently checking the constants gives -d/R_int + 2 e J_* D_int |t| = -(d - v_LR |t|)/R_int, and the Cl(3) constant bound follows from unit-norm monomials and Cauchy-Schwarz. The runner source performs real many-body matrix-exponential checks for illustrative finite chains and algebra checks for the corrected constants; it does not import an external comparator or tuned value.
 - **auditor confidence:** high
 
 ### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`

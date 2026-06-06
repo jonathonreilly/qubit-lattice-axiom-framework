@@ -1,0 +1,13 @@
+loop_slug: flavor-hw-fourier-scope-repair-20260606
+target_claim_id: flavor_hw_clifford_does_not_constrain_r_2026-06-02
+branch: physics-loop/flavor-hw-fourier-scope-repair-20260606
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_status_change: true
+files_touched:
+  - docs/FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md
+  - scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py
+  - logs/runner-cache/flavor_hw_clifford_does_not_constrain_r_2026_06_02.txt
+blocker_closed_by_branch: "Claim narrowed to Fourier/HW no-go; unsupported r=1 landmarks removed; runner/cache language aligned."
+next_exact_action: "Open PR for independent review/audit requeue."

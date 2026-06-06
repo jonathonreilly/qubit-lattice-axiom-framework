@@ -1,7 +1,7 @@
 # D3 Lower-Bound Source-Packet Gate
 
 **Date:** 2026-06-06
-**Claim type:** exact-support for an audit-gate artifact
+**Claim type:** meta
 **Runner:** [`scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py`](../scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py)
 **Cached output:** [`logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt`](../logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt)
 (`SCORECARD: PASS=53 FAIL=0`)

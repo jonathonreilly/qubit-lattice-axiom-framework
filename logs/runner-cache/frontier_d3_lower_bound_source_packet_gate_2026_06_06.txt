@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py
+runner_sha256: 4d3b862b40f106ad99e8884ba1301516acece8075418ae3ef55465e0e96dea11
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 D3 lower-bound source-packet audit gate
 actual_current_surface_status: exact-support
 trace_class: direct_blocker_closure
@@ -64,3 +72,6 @@ C. supporting note boundaries
 
 SCORECARD: PASS=53 FAIL=0
 VERDICT: exact support that the current-main source packet exposes the artifacts named by the parent D3 lower-bound runner-artifact issue. This does not retag the audit ledger or prove full D=3 dimension selection.
+
+----- stderr -----
+

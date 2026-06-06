@@ -1,0 +1,70 @@
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: flow_or_thermal_stability
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: arrow_or_dynamics_bridge
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: stable setting is not selected dial
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: physical arrow, kernel, Hamiltonian, instrument, clock, or
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 64
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stable settings into selected dials
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: selected dial value
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: independent audit owns verdicts
+
+------------------------------------------------------------------------------
+Stability/dynamics subdivision checks
+------------------------------------------------------------------------------
+PASS stability/dynamics selector row count is current snapshot :: 64
+PASS sub-bucket counts sum to stability/dynamics count :: Counter({'flow_or_thermal_stability': 36, 'arrow_or_dynamics_bridge': 28})
+PASS expected sub-bucket counts match :: Counter({'flow_or_thermal_stability': 36, 'arrow_or_dynamics_bridge': 28})
+PASS representative row present in flow_or_thermal_stability :: flavor_r_half_is_the_records_flow_separatrix_2026-06-02
+PASS representative row present in arrow_or_dynamics_bridge :: a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1
+PASS audit ledger hash is unchanged :: 8f607fd1374a4ce70a55e37dab233caff8be55df4e18bcd2a61cf594cc1e5d44
+
+Stability/dynamics sub-bucket counts:
+  arrow_or_dynamics_bridge: 28
+  flow_or_thermal_stability: 36
+
+[arrow_or_dynamics_bridge]
+  a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1 | unaudited | unaudited | bounded_theorem | docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md
+  axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26 | audited_clean | retained_bounded | bounded_theorem | docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md
+  bell_inequality_derived_note | audited_clean | retained_bounded | bounded_theorem | docs/BELL_INEQUALITY_DERIVED_NOTE.md
+  cl3_taste_generation_theorem | unaudited | unaudited | bounded_theorem | docs/CL3_TASTE_GENERATION_THEOREM.md
+  flavor_interacting_matter_build_note_2026-05-30 | audited_renaming | audited_renaming | bounded_theorem | docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md
+  flavor_zdet_fermionic_statistics_admission_2026-06-04 | audited_conditional | audited_conditional | open_gate | docs/FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md
+  g_newton_skeleton_selection_bounded_note_2026-05-10_gnewtong1 | unaudited | unaudited | bounded_theorem | docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md
+  generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23 | audited_clean | retained_bounded | bounded_theorem | docs/GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md
+
+[flow_or_thermal_stability]
+  beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04 | unaudited | unaudited | bounded_theorem | docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md
+  born_lane_comparison_note | audited_clean | retained_bounded | bounded_theorem | docs/BORN_LANE_COMPARISON_NOTE.md
+  dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md
+  dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md
+  flavor_einselection_2sector_modulo_kreality_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md
+  flavor_emergent_chirality_no_transport_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md
+  flavor_missing_axiom_carrier_measure_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
+  flavor_r_half_is_the_records_flow_separatrix_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md
+
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS stable setting selects dial flag is false
+PASS generation/Koide dial selected flag is false
+PASS Record-derived physical arrow flag is false
+
+SUMMARY: PASS=25 FAIL=0
+STABILITY_DYNAMICS_SELECTOR_ROWS=64
+FLOW_OR_THERMAL_STABILITY_ROWS=36
+ARROW_OR_DYNAMICS_BRIDGE_ROWS=28
+AUDIT_LEDGER_WRITTEN=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE

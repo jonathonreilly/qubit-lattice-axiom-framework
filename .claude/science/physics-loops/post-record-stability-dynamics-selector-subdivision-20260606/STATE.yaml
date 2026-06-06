@@ -1,0 +1,63 @@
+loop_slug: post-record-stability-dynamics-selector-subdivision-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 15
+date: 2026-06-06
+branch: physics-loop/post-record-stability-dynamics-selector-subdivision-20260606
+base: physics-loop/post-record-selector-dial-bucket-subdivision-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2836"
+goal: |
+  Subdivide the 64 stability/dynamics selector rows into actionable read-only
+  queues while preserving the rule that a stable setting is not a selected dial.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: read-only stability/dynamics selector sub-bucketing
+hard_residual_attacked: |
+  The stability_or_dynamics_selector queue still mixes rows about stable
+  flow/thermal settings with rows that need a physical arrow, Hamiltonian,
+  transfer, kernel, instrument, decoherence, or measurement bridge.
+files_touched:
+  - docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-stability-dynamics-selector-subdivision-20260606/*
+runner_summary: "SUMMARY: PASS=25 FAIL=0"
+stability_dynamics_selector_rows: 64
+sub_bucket_counts:
+  flow_or_thermal_stability: 36
+  arrow_or_dynamics_bridge: 28
+open_imports:
+  - "manual row-specific review of keyword sub-buckets"
+  - "supplied map, flow, thermal rule, or stability certificate for flow/thermal rows"
+  - "physical arrow, Hamiltonian, transfer, kernel, instrument, clock, or rate bridge for arrow/dynamics rows"
+  - "independent audit remains required for verdicts"
+  - "PR is stacked on the selector/dial subdivision companion"
+no_go_routes:
+  - "stable setting => selected dial"
+  - "stability keyword => physical selector"
+  - "dynamics keyword => Record-derived physical arrow"
+  - "sub-bucket => audit verdict"
+review_findings: "local review clean: runner PASS=25 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: pending
+pr_url: null
+pr_number: null
+cycle_status: local_review_clean
+mergeable: null
+merge_state_status: null
+checks: "runner PASS=25 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack count 13; git diff --check clean"
+next_exact_action: |
+  Commit, push, and open a stacked PR against the selector/dial subdivision
+  branch.
+stop_condition: |
+  Not satisfied: PR is not open yet.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "stability/dynamics selector rows are subdivided for triage; stable settings are not selected dials"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch subdivides a read-only row bucket and does not edit audit data."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

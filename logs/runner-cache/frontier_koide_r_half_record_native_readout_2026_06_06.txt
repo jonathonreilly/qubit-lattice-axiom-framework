@@ -1,0 +1,36 @@
+================================================================================
+Charged-lepton Koide r=1/2 is the RECORD-NATIVE readout (doublet counted once)
+(resolves the measure gate left open by GENERATION_RECORD_PARTITION_SELECTOR_2026-06-05)
+================================================================================
+
+[BLOCK 1] C3 carrier + Koide functional Q = 1/3 + (2/3) r  (cited; reproven)
+  [PASS] Koide Q = (sum lam^2)/(sum lam)^2 = 1/3 + (2/3) r  (independent of theta)  --  Q = 1/3 + (2/3) r
+
+[BLOCK 2] Two K/CPT-orbit collections: SINGLET (rank 1) + DOUBLET (rank 2)
+  [PASS] K/CPT conjugation maps chi_1 -> chi_2 (faithful pair fused)
+  [PASS] K/CPT fixes chi_0 (singlet)
+  [PASS] => exactly TWO K/CPT orbits: {chi_0} rank 1 (singlet), {chi_1,chi_2} rank 2 (doublet)  --  RECORD_GENERATION_READOUT_TWO_SECTORS
+
+[BLOCK 3] Two weightings of the two collections -> r=1/2 vs r=1
+  [PASS] block-count (1:1, each collection once): equal block power -> r = 1/2  --  r = 1/2 -> Q = 2/3
+  [PASS] rank/dimension (1:2, doublet weighted by its rank 2): r = 1  --  r = 1 -> Q = 1
+  [PASS] det_C (block-count) = alpha*beta ; det_R (rank) = alpha*beta^2
+
+[BLOCK 4] KEY: the Record axiom counts the doublet ONCE (no within-sector data)
+  [PASS] Record reads 2 disjoint-collection scalars (doublet = ONE letter)
+  [PASS] Record axiom supplies NO within-sector data -> cannot use the doublet's rank 2
+  [PASS] => RECORD-NATIVE measure = block-count det_C (each collection once) -> r = 1/2  --  Q = 2/3, import-free
+  [PASS] singlet<->doublet swap r -> 1/(4r): unique positive fixed point r = 1/2  --  the label-symmetric (ordering-free) recordable outcome
+
+[BLOCK 5] TEETH: r=1 REQUIRES the within-sector rank / PRR import (non-native)
+  [PASS] r=1 uses det_R = alpha*beta^2 -> consumes the doublet's within-sector RANK (=2)  --  within-sector data: disclaimed by the Record axiom
+  [PASS] r=1 (trace/Born) privileged only by full U(3)=PRR; native symmetry is only C3  --  FLAVOR_Q1_DEFAULT_RESTS_ON_PRR_2026-05-30
+  [PASS] => r=1 is the IMPORT-DEPENDENT alternative; r=1/2 is IMPORT-FREE (record-native)
+
+[BLOCK 6] r=1/2 is a RECORDABLE outcome (valid additive readout)
+  [PASS] r=1/2 maximizes the 2-collection entropy (S = log 2): a distinguished recordable point  --  argmax = [1/2]
+  [PASS] r=1/2 <=> equal collection readout I(singlet)=I(doublet): a valid additive outcome  --  recordable: not measure-zero, the balanced/symmetric letter
+
+================================================================================
+SCORECARD:  PASS = 16   FAIL = 0
+================================================================================

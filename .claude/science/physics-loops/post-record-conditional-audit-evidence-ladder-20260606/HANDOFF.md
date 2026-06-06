@@ -41,8 +41,7 @@ because it uses the concentration-certificate interface from PR #2833.
 
 ## Next exact action
 
-Push the PR-status commit, re-check PR #2834 after `audit_pipeline` settles,
-record final clean/success status if clean, then pivot to the next campaign
+Closed for campaign purposes. Pivot to the next independent or stacked dynamics
 lane.
 
 ## PR
@@ -53,4 +52,7 @@ base: "physics-loop/post-record-supplied-concentration-certificate-interface-202
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline queued at first verification"
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "audit_pipeline completed SUCCESS at final verification"
 ```

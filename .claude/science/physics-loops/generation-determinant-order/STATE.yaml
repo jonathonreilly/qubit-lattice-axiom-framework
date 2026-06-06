@@ -1,0 +1,48 @@
+slug: generation-determinant-order
+mode: campaign
+runtime_budget: ~12h
+target_status: best-honest-status
+goal: >
+  Determine whether the staggered/Kähler-Dirac corner realization gives a first-order/holomorphic-polarization
+  (count once -> Koide r=1/2) or second-order/real-polarization (count twice -> r=1) generation determinant.
+  Entire residual Tier-A reduces to this gate (r=1/2 and delta~theta-bar both gated on the corner-mass realization).
+
+cycles_completed: 2
+block1_shipped: KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05 (runner 9/9, reviewer PASS, exact-support)
+active_route: R-block2 -- does the staggered-Dirac corner realization SUPPLY the chiral L-R coupling M(b)(x)sigma_+?
+hard_residual: >
+  Does the corner-mass action carry a within-generation real-antisymmetric (symplectic / Gamma_chi-anticommuting)
+  bilinear that selects holomorphic polarization -> r=1/2? Is the continuous-U(1)_b-incompatible-with-C3=I
+  obstruction fatal, or is there a discrete C3 route?
+
+cycle2_result: >
+  CRACKED OPEN + 2 corrections. (a) U(1)_b/C^3=I obstruction is a RED HERRING: Q=(1+2r)/3 is delta-independent
+  -> the (1,1)-vs-(1,2) count is a FUNCTIONAL choice, not a symmetry quotient. (b) the DISCRETE Z3-character
+  (clock) index gives (1,1)->r=1/2 respecting C^3=I exactly -> resolves "index can't output a continuous ratio".
+  (c) the selector is EXACTLY the chiral L-R coupling M(b)(x)sigma_+: within R^3 first-order is forbidden
+  (C3-equiv <=> commutes-with-Gamma_chi, comm(C) cap anticomm(Gamma_chi)={0}); the escape is factor-crossing
+  (I3(x)sx commutes C(x)I, anticommutes I3(x)sz); the framework supplies the grading eps but NOT the coupling.
+  Block-1 shipped at exact-support (reviewer PASS). NOT a derivation of r=1/2.
+
+cycle1_result: >
+  Sharper obstruction + correction. (a) An index is an INTEGER -> cannot output the continuous r=1/2; the
+  selector is the fermion-measure POLARIZATION (det_C holomorphic vs det_R real), NOT a topological index
+  (corrects #2743 framing). (b) r=1/2 = equal-CHANNEL balance (3a^2=6|b|^2), not an extremum of any energy/
+  determinant object (those give r=1 / massless). (c) Native structure provably gives REAL polarization -> r=1:
+  J_cs measure-neutral & silent on r, eps phase-only, Record dimension-counting, native circulant mass
+  Berry-flat (zero curvature -> second-order/Q=1 derived). (d) NEW obstruction: continuous U(1)_b forcing the
+  channel collapse is incompatible with C^3=I. Wall: a within-generation real-antisymmetric symplectic bilinear
+  in the gated corner-mass action.
+
+files_touched:
+  - .claude/science/physics-loops/generation-determinant-order/*  (pack)
+open_imports: [holomorphic-polarization selector (the within-generation symplectic bilinear) -- gated on AC_phi_lambda substep-4]
+no_go_routes: [modulus, det-extremum, taste-multiplicity, Connes-Lott, eps-magnitude, J_cs-select, Record-(1,1), Berry-native, SUSY-needed, U(1)_b-channel-collapse, index->continuous-r]
+trace_class: direct_blocker_closure (target AC_phi_lambda; partially_closes)
+review_findings: none yet
+pr_status: none yet
+next_exact_action: >
+  Run cycle-2 stretch R4: my own sympy on the symplectic/Pfaffian pairing (does psi^T J_cs psi give holomorphic
+  count -> r=1/2?) + 2 agents on (i) U(1)_b-vs-C3 discrete route, (ii) Berry-curvature/Gamma_chi chiral-coupling
+  source. Then N1-N8 if trending no-go; synthesize; checkpoint; review-loop; PR the block.
+stop_condition: runtime/max-cycles exhausted OR queue exhausted OR clean derivation/no-go achieved + checkpointed

@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | positive_theorem | unaudited | critical | 1003 | 19.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_spectrum_condition_check.py` |
+| 1 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | critical | 1003 | 19.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_spectrum_condition_check.py` |
 | 2 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | audit_in_progress | critical | 293 | 8.70 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py` |
 | 3 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 275 | 22.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_hs_rigidity_narrow.py` |
 | 4 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 1012 | 20.48 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_kawamoto_smit_phase_forcing.py` |

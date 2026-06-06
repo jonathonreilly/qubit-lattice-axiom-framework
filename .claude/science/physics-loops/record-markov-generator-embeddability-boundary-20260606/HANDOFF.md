@@ -5,6 +5,13 @@
 Checks passed. This block is stacked on PR #2797 and targets the
 Markov-generator embeddability boundary for record-production kernels.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2800
+
+GitHub verification: open PR, base
+`physics-loop/record-production-kernel-boundary-20260606`, head
+`physics-loop/record-markov-generator-embeddability-boundary-20260606`, merge
+state `UNSTABLE`.
+
 ## Intended Result
 
 A stochastic production kernel is not automatically a continuous-time rate law.
@@ -19,7 +26,7 @@ dynamics gates.
 
 ## Next Action
 
-Commit, push, open a stacked PR, then continue campaign.
+Continue campaign: select next high-leverage dynamics/open-lane block.
 
 ## Verification
 

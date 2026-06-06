@@ -1,0 +1,36 @@
+============================================================================================
+FS stress-test: 'forced-modulo emergent-Lorentz + R', NOT a free admission needing a new principle
+============================================================================================
+
+[BLOCK 1] The spin-statistics ENGINE: spin-1/2 bosonic is inconsistent
+  [PASS] spin-1/2 CAR Hamiltonian is bounded below (>=0)
+  [PASS] spin-1/2 CCR attempt is UNBOUNDED below (has -E): inconsistent (Streater-Wightman)
+  [PASS] => spin-1/2 + Lorentz + positivity => fermionic FORCED; spin-0 hard-core boson excluded  --  the engine is rigorous (comparator: Pauli 1940; Streater-Wightman)
+
+[BLOCK 2] The 4-link forcing chain + repo status (no new axiom)
+      LINK A qubit spin-1/2         | RETAINED                     | per_site_su2_spin_half; = Clifford Spin(3) bivectors (internal_external_su2_merger)
+      LINK B algebra-3=spatial-3    | RETAINED (discrete)          | O_h vector rep on Cl(3); qubit=2D spinor 2pi=-1; continuum upgrade = LINK C
+      LINK C emergent Lorentz       | TARGET / bounded-conditional | emergent_lorentz_invariance retained_bounded; NOT a new axiom
+      LINK D spin-statistics thm    | comparator (engine rigorous) | spin-1/2-bosonic inconsistent; Dirac-Kahler evaded
+  [PASS] LINK A retained; LINK B retained at discrete level (not the residual)
+  [PASS] residual = LINK C continuum upgrade + the reconstruction R (both buildable, NOT axioms)  --  R = free_field_os_wightman_reconstruction (unaudited; currently circular)
+
+[BLOCK 3] The last static opening (multi-loop graph-braid) is REFUTED (statistics-blind)
+  [PASS] HCB (boson) survives the multi-loop cocycle
+  [PASS] CAR (fermion) survives the multi-loop cocycle
+  [PASS] => BOTH survive => multi-loop is statistics-BLIND; HCB not frustrated out (opening refuted)  --  theta-graph H1 free (beta1=3, no torsion): both +-1 are homomorphisms
+
+[BLOCK 4] If ever forced: cheapest principle is WEAKER than an axiom
+  [PASS] Record already delivers the two Z2 fermion-parity sectors (fermion_parity_z2_grading retained)
+  [PASS] cheapest fallback = graded locality / parity-superselection = a SIGN-SELECTION between 2 existing sectors  --  half-implied by Record; weaker than a fresh axiom (no new structure, just the sign)
+  [PASS] NOT currently forced: the continuum/R route remains open => do not invoke it prematurely
+
+[BLOCK 5] Owner bottom line
+  [PASS] FS does NOT need a new principle beyond Planck  --  it rides on emergent Lorentz (a TARGET) + R (buildable reconstruction)
+  [PASS] reclassify FS: 'forced-modulo emergent-Lorentz + R' (conditional on a target), NOT a free admission
+  [PASS] if a principle were ever forced, it is graded-locality (Record-half-implied), weaker than an axiom
+  [PASS] no new axiom invented; all four FS no-gos remain concordant for the STATIC baseline only
+
+============================================================================================
+SCORECARD:  PASS = 15   FAIL = 0
+============================================================================================

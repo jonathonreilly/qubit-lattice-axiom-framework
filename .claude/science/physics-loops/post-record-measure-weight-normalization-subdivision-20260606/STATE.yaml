@@ -1,0 +1,68 @@
+loop_slug: post-record-measure-weight-normalization-subdivision-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 20
+date: 2026-06-06
+branch: physics-loop/post-record-measure-weight-normalization-subdivision-20260606
+base: physics-loop/post-record-selector-dial-bucket-subdivision-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2836"
+goal: |
+  Subdivide measure_weight_normalization rows and define finite supplied-weight
+  normalization without treating normalized measures as selectors.
+target_status: exact-support
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: measure/weight/normalization subdivision
+hard_residual_attacked: |
+  The selector/dial subdivision exposed 41 measure/weight rows. This block
+  separates trace normalization, source-measure/RN, character/path/channel
+  weight, selector/tangent readout, and generic measure-weight imports.
+files_touched:
+  - docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-measure-weight-normalization-subdivision-20260606/*
+runner_summary: "SUMMARY: PASS=41 FAIL=0"
+subdivision_results:
+  measure_weight_normalization_rows: 41
+  source_measure_or_rn_bridge_rows: 14
+  character_path_channel_weight_rows: 10
+  trace_normalization_reference_rows: 8
+  selector_tangent_readout_weight_rows: 5
+  generic_measure_weight_import_rows: 4
+  normalized_measure_selects_dial: false
+open_imports:
+  - "supplied carrier and nonnegative weights"
+  - "supplied trace/reference state or invariance principle"
+  - "supplied source functional or Radon-Nikodym density bridge"
+  - "supplied character/path/channel weight rule"
+  - "supplied readout/tangent bridge"
+  - "separate selector rule before any selected-dial reading"
+  - "independent audit remains required for verdicts"
+  - "PR is stacked on the selector/dial bucket subdivision companion"
+no_go_routes:
+  - "normalized measure => selected dial"
+  - "measure/prior/weight rule => derived from Record"
+  - "generation/Koide measure row => forced value"
+  - "source unit => physical selector without selector rule"
+review_findings: "local review clean: runner PASS=41 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: not_open
+pr_url: null
+pr_number: null
+cycle_status: ready_for_pr
+next_exact_action: |
+  Open a stacked PR against
+  physics-loop/post-record-selector-dial-bucket-subdivision-20260606.
+stop_condition: |
+  Satisfied when the runner passes, local review is clean, the branch is pushed,
+  and the stacked PR is open and verified.
+status_fields:
+  actual_current_surface_status: exact-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  conditional_surface_status: "measure/weight rows are subdivided and finite supplied weights can be normalized, but normalization is not selector authority"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch subdivides a read-only row bucket and does not turn measures or weights into selectors."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

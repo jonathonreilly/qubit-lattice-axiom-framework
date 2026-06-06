@@ -1,0 +1,128 @@
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Normalized measure is not selected dial.
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Finite normalization can certify
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization` | 41
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure/weight/normalization rows
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: selected dial value | selector/invariance/target rule
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: independent audit owns verdicts
+PASS docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md exists
+PASS docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md contains: Source/Measure
+PASS docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md contains: cumulant
+PASS docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md contains: generating
+
+------------------------------------------------------------------------------
+Finite normalization certificate checks
+------------------------------------------------------------------------------
+PASS positive finite supplied weights normalize :: {'a': Fraction(1, 4), 'b': Fraction(3, 4)}
+PASS normalized weights sum to one
+PASS zero-total weights are rejected
+PASS negative weights are rejected
+PASS normalization without selector does not select dial
+PASS selector rule is still needed for selected dial readiness
+
+------------------------------------------------------------------------------
+Measure/weight row checks
+------------------------------------------------------------------------------
+PASS measure/weight row count is current snapshot :: 41
+PASS measure lane counts match expected :: Counter({'source_measure_or_rn_bridge': 14, 'character_path_channel_weight': 10, 'trace_normalization_reference': 8, 'selector_tangent_readout_weight': 5, 'generic_measure_weight_import': 4})
+PASS measure lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 14, 'character_path_channel_weight': 10, 'trace_normalization_reference': 8, 'selector_tangent_readout_weight': 5, 'generic_measure_weight_import': 4})
+PASS representative row present in character_path_channel_weight :: architecture_note_directional_measure
+PASS representative row present in generic_measure_weight_import :: born_scattering_comparison_note
+PASS representative row present in selector_tangent_readout_weight :: yt_exact_hessian_selector_uniqueness_note
+PASS representative row present in source_measure_or_rn_bridge :: source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30
+PASS representative row present in trace_normalization_reference :: pre_record_reference_state_tracial_derivation_note_2026-05-20
+PASS audit ledger hash is unchanged :: 8f607fd1374a4ce70a55e37dab233caff8be55df4e18bcd2a61cf594cc1e5d44
+
+Measure/weight lane counts:
+  character_path_channel_weight: 10
+  generic_measure_weight_import: 4
+  selector_tangent_readout_weight: 5
+  source_measure_or_rn_bridge: 14
+  trace_normalization_reference: 8
+
+[character_path_channel_weight]
+  architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
+  axiom_first_cluster_decomposition_theorem_note_2026-04-29 | audited_conditional | audited_conditional | bounded_theorem | docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
+  closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c | unaudited | unaudited | bounded_theorem | docs/CLOSURE_C_L1_PER_GRAPH_CASIMIR_NOTE_2026-05-10_cL1c.md
+  continuum_limit_note | audited_clean | retained_bounded | bounded_theorem | docs/CONTINUUM_LIMIT_NOTE.md
+  dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md
+  hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26 | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_ALPHA_BARE_FOUR_PI_CONTINUUM_MEASURE_CONTENT_ATTRIBUTION_BOUNDED_NOTE_2026-05-26.md
+  koide_aps_block_by_block_forcing_note_2026-04-21 | audited_conditional | audited_conditional | bounded_theorem | docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md
+  koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological | unaudited | unaudited | bounded_theorem | docs/KOIDE_S_L1_TOPOLOGICAL_CHERN_SIMONS_NOTE_2026-05-08_probeS_L1_topological.md
+  koide_v_l1_quartic_casimir_beta2_note_2026-05-08_probev_l1_quartic | unaudited | unaudited | bounded_theorem | docs/KOIDE_V_L1_QUARTIC_CASIMIR_BETA2_NOTE_2026-05-08_probeV_L1_quartic.md
+  wilson_action_surface_selector_real_positive_theorem_note_2026-05-25 | unaudited | unaudited | bounded_theorem | docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md
+
+[generic_measure_weight_import]
+  born_scattering_comparison_note | unaudited | unaudited | bounded_theorem | docs/BORN_SCATTERING_COMPARISON_NOTE.md
+  central_band_born_dense_sweep_note | audited_clean | retained_bounded | bounded_theorem | docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md
+  linear_response_second_order_kubo_note | audited_clean | retained_pending_chain | bounded_theorem | docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md
+  persistent_record_instrument_construction_narrow_theorem_note_2026-05-22 | unaudited | unaudited | bounded_theorem | docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md
+
+[selector_tangent_readout_weight]
+  dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md
+  hierarchy_bosonic_bilinear_selector_note | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md
+  higgs_taste_singlet_projection_bounded_note_2026-05-09 | unaudited | unaudited | bounded_theorem | docs/HIGGS_TASTE_SINGLET_PROJECTION_BOUNDED_NOTE_2026-05-09.md
+  teleportation_preparation_readout_probe_note | unaudited | unaudited | bounded_theorem | docs/TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md
+  yt_exact_hessian_selector_uniqueness_note | unaudited | unaudited | bounded_theorem | docs/YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md
+
+[source_measure_or_rn_bridge]
+  higgs_x_s4b_combined_higgs_ewsb_g2_note_2026-05-08_probex_s4b_combined | unaudited | unaudited | bounded_theorem | docs/HIGGS_X_S4B_COMBINED_HIGGS_EWSB_G2_NOTE_2026-05-08_probeX_S4b_combined.md
+  link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10 | audited_clean | retained_bounded | bounded_theorem | docs/LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md
+  observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21 | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_FREE_CUMULANT_ROUTE_NARROW_NOTE_2026-05-21.md
+  prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22 | audited_clean | retained_bounded | bounded_theorem | docs/PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md
+  pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22 | audited_renaming | audited_renaming | bounded_theorem | docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md
+  source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30 | audited_clean | retained_bounded | bounded_theorem | docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md
+  source_measure_pcal_retirement_synthesis_note_2026-05-30 | unaudited | unaudited | bounded_theorem | docs/SOURCE_MEASURE_PCAL_RETIREMENT_SYNTHESIS_NOTE_2026-05-30.md
+  source_measure_pcal_rn_cocycle_theorem_note_2026-05-30 | unaudited | unaudited | bounded_theorem | docs/SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md
+  source_measure_planck_action_rn_source_unit_bridge_note_2026-05-30 | unaudited | unaudited | bounded_theorem | docs/SOURCE_MEASURE_PLANCK_ACTION_RN_SOURCE_UNIT_BRIDGE_NOTE_2026-05-30.md
+  source_measure_sharp_record_tangent_space_theorem_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
+
+[trace_normalization_reference]
+  busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20 | audited_conditional | audited_conditional | positive_theorem | docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+  gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17 | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md
+  gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md
+  inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md
+  luders_rule_from_composition_consistency_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+  observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21 | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_PRE_RECORD_TRACIAL_ROUTE_NARROW_NOTE_2026-05-21.md
+  pre_record_reference_state_tracial_derivation_note_2026-05-20 | audited_clean | retained_bounded | bounded_theorem | docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md
+  rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md
+
+
+------------------------------------------------------------------------------
+Firewall flags
+------------------------------------------------------------------------------
+PASS audit data written flag is false
+PASS audit verdict applied flag is false
+PASS promoted/retained claim flag is false
+PASS normalized measure selects dial flag is false
+PASS generation/Koide dial selected flag is false
+PASS stable setting selects dial flag is false
+PASS Record-derived measure/prior flag is false
+PASS Record-derived Born law flag is false
+PASS production dynamics derived flag is false
+
+SUMMARY: PASS=41 FAIL=0
+MEASURE_WEIGHT_NORMALIZATION_ROWS=41
+CHARACTER_PATH_CHANNEL_WEIGHT_ROWS=10
+GENERIC_MEASURE_WEIGHT_IMPORT_ROWS=4
+SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=5
+SOURCE_MEASURE_OR_RN_BRIDGE_ROWS=14
+TRACE_NORMALIZATION_REFERENCE_ROWS=8
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+NORMALIZED_MEASURE_SELECTS_DIAL=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+MEASURE_OR_PRIOR_DERIVED_FROM_RECORD=FALSE
+BORN_LAW_DERIVED_FROM_RECORD=FALSE
+PRODUCTION_DYNAMICS_DERIVED=FALSE

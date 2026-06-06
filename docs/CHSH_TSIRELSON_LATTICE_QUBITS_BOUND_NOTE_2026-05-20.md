@@ -35,9 +35,9 @@ acts on `H_x ⊗ H_y = ℂ² ⊗ ℂ²` with operator norm bounded by
 
 with equality achievable on a maximally entangled qubit pair using
 the standard Tsirelson configuration. This is the standard two-outcome
-CHSH surface: it is strictly tighter than the classical Bell bound
-`‖C‖ ≤ 2` (Bell 1964) but strictly looser than the algebraic bound
-`‖C‖ ≤ 4` (general-probability-theory).
+CHSH surface: it is strictly looser than the classical Bell bound
+`‖C‖ ≤ 2` (Bell 1964) but strictly tighter than the algebraic/no-signaling
+bound `‖C‖ ≤ 4` (general-probability-theory).
 
 The framework's qubit-lattice substrate (A1+A2 of
 [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md))

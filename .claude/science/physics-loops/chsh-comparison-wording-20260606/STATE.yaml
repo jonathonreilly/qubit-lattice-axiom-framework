@@ -1,0 +1,12 @@
+goal: "Repair the CHSH Tsirelson comparison wording identified by conditional audit without touching audit results."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Correct the classical/Tsirelson/algebraic bound ordering sentence."
+files_touched:
+  - docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md
+open_imports:
+  - "full framework composition theorem remains conditional/open outside this wording repair"
+audit_results_edited: false
+next_exact_action: "Reviewer can re-audit the comparison wording; do not promote the row without resolving the composition premise."

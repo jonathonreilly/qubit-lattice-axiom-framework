@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py
+runner_sha256: 55455414b54ae1d1d613d3072361d6a09ed68c9af680edc7054b561f28ed35fe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+
+=== (A) Quantum local algebra: Pauli/Clifford action is faithful on C^2 ===
+[PASS] A.1 Pauli sigma_i satisfy Cl(3,0): {sigma_i,sigma_j}=2 delta_ij (faithful gens)
+[PASS] A.2 Cl(3,0)->M_2(C) is faithful (8 basis elts -> rank-8 real image, injective)
+[PASS] A.3 sigma-rep irreducible on C^2 (commutant = scalars, complex dim 1)
+[PASS] A.4a j=1/2 Casimir J^2 = (3/4) I on C^2
+[PASS] A.4b scalar-only action does NOT realize {gamma_i,gamma_j}=2 delta_ij I
+
+=== (B) IF boost acts via the operator-frame Pauli triple: scalar boost excluded, faithful Weyl forced ===
+[PASS] B.1 [J,J]=i eps J, [J,K]=i eps K, [K,K]=-i eps J (so(3,1) on C^2, Lorentzian sign)
+[PASS] B.2 K=0 scalar boost FAILS [K,K]=+- i eps J for J=sigma/2 (so(3,1) AND so(4)) -- signature-free
+[PASS] B.3 nonzero SCALAR boost K_i=c_i I fails [J_i,K_j]=i eps K_k (J=sigma/2) -> only c=0 works
+[PASS] B.4a K=+i sigma/2 is the definite chiral Weyl (0,1/2): N^2=0, Ntil^2=(3/4)I
+[PASS] B.4b K=-i sigma/2 is the mirror chiral Weyl (1/2,0): N^2=(3/4)I, Ntil^2=0
+[PASS] B.4c both completions are FAITHFUL (K != 0) -- no K=0 / scalar branch survives
+
+=== (C) THE GAP: local algebra + native H=iD do NOT force boost action faithfulness ===
+[PASS] C.1 native H=iD is spin-blind: [H (x) I_2, I (x) B_i]=0 -> dynamics does NOT pick out the faithful boost
+[PASS] C.2a scalar boost S(eta)=e^{eta c} I_2 is a valid 1-param rep on the qubit vector space (S(a)S(b)=S(a+b))
+[PASS] C.2b scalar boost is non-faithful; local algebra alone cannot pick faithful-vs-scalar
+[PASS] C.3a spin-1/2 numerator m I - i sigma.p has NONZERO traceless part (irreducibly spin-1/2, not a disguised scalar)
+[PASS] C.3b FAITHFUL boost S=exp(eta.sigma/2) covaries the spin-1/2 kernel: S^dag (p.sigmabar) S = (Lp).sigmabar
+[PASS] C.3c SCALAR boost S=I FAILS to covary the spin-1/2 kernel (the kernel excludes the scalar)
+[PASS] C.4 Quantum gives local algebra and no-scalar-IF-operator-frame, but not boost-action faith by itself
+
+======================================================================
+SCORECARD: PASS=18 FAIL=0
+
+----- stderr -----
+

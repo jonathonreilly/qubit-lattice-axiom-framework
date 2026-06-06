@@ -1,9 +1,9 @@
 # PR Backlog
 
-No PR backlog yet.
+No PR backlog.
 
-Expected PR target:
+Opened PR:
 
 ```text
-physics-loop/post-record-supplied-kernel-selection-rule-interface-20260606
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2858
 ```

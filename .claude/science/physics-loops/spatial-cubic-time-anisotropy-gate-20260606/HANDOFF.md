@@ -5,6 +5,12 @@
 Checks passed. This block is based on `origin/main` and targets the active
 SO(4) power-counting marginal anisotropy review gate.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2798
+
+GitHub verification: open PR, base `main`, head
+`physics-loop/spatial-cubic-time-anisotropy-gate-20260606`, merge state
+`UNSTABLE`.
+
 ## Intended Result
 
 Spatial cubic power counting does not exclude marginal time-vs-space kinetic
@@ -19,7 +25,7 @@ anisotropy. Salvage requires an explicit Euclidean kinetic-normalization /
 
 ## Next Action
 
-Commit, push, open PR, then continue campaign.
+Continue campaign: select next high-leverage dynamics/open-lane block.
 
 ## Verification
 

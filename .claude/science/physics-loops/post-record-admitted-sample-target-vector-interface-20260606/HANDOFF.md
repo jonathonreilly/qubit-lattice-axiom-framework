@@ -38,17 +38,18 @@ because it is the positive admitted-sample companion to PR #2858.
 
 ## Next exact action
 
-Commit, push, open the stacked PR, record PR status, then continue or close the
-campaign based on remaining runtime.
+Commit and push this PR-status checkpoint, then poll PR #2861 until the latest
+head is clean/success. After the final PR status is recorded, continue or close
+the campaign based on remaining runtime.
 
 ## PR
 
 ```yaml
-pr_url: null
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2861"
 base: "physics-loop/post-record-selection-rule-target-vector-firewall-20260606"
-initial_mergeable: null
-initial_merge_state_status: null
-initial_checks: null
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline in progress at initial verification"
 final_mergeable: null
 final_merge_state_status: null
 final_checks: null

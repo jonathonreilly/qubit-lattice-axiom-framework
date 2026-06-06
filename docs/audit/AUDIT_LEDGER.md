@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 184 |
+| **retained** | 185 |
 | **retained_no_go** | 197 |
 | **retained_bounded** | 678 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 34 |
 | unaudited | 1364 |
-| audit_in_progress | 1 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1053 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1054 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -629,6 +627,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kahler_dirac_silent_on_measure_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -9225,6 +9224,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since d raises form degree and delta lowers form degree, D_KD=d-delta has zero Lambda^k -> Lambda^k blocks, including the Lambda^1 candidate generation block, while the determinant/Pfaffian and Jcs checks only localize the remaining measure binary.  _(class `A`)_
 - **chain closes:** True — The grade-off-diagonal statement follows directly from the form-degree shifts d: Lambda^p -> Lambda^{p+1} and delta: Lambda^p -> Lambda^{p-1}; the determinant/Pfaffian and Jcs identities are exact finite matrix algebra. The note explicitly leaves the matter-action real-antisymmetric bilinear as an open binary, so that bridge is not required for the bounded conclusion.
 - **rationale:** The load-bearing steps are class A algebraic closures over retained-grade inputs: zero grade-diagonal D_KD blocks, det(M)=(a+2b)(a-b)^2, det(M tensor eps)=det(M)^2, Jcs^2=-P_doublet, and the one-dimensional C3-equivariant antisymmetric direction. The runner source actually constructs the matrices and symbolic determinants rather than hard-coding the contested conclusions, and independent finite checks confirm the displayed target identities. No external comparator, tuned numerical input, or closed Koide-measure claim is imported; the no-go language is bounded to the checked routes and leaves the bilinear route open.
+- **auditor confidence:** high
+
+### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-164813-6126bf1fd5-koide_kappa_block_total_frob`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For H = a I + b C + bbar C^2, the orthogonal projections give E_+(H)=3a^2 and E_perp(H)=6|b|^2, so the equal-weight constrained log functional is extremized at E_+=E_perp, equivalently kappa=2, while the clock action rho(C^k)=omega^k C^k gives the stated d=3 irrep-count uniqueness.  _(class `A`)_
+- **chain closes:** True — T1-T3 close by direct matrix algebra: tr(C)=tr(C^2)=0, C is unitary, the trace line is Frobenius-orthogonal to the {C,C^2} block, and log E_+ + log E_perp on a fixed positive sum is maximized at equality. T4 closes from the retained cited authority defining the nontrivial clock action rho(M)=Omega^{-1}MOmega, proving rho(C^k)=omega^k C^k and the trivial/doublet/sign count.
+- **rationale:** The restricted packet supplies a retained bridge for the clock-action convention that previously would have been the only serious missing premise. Independent formula inventory finds the displayed factors and signs consistent: ||aI||_F^2=3a^2, the two off-identity circulant modes contribute 3|b|^2 each with zero cross trace, the equal-weight log optimum is E_+=E_perp, and the d=2..6 multiplicity table matches 1, floor((d-1)/2), and the even-d sign line. The note explicitly excludes the F1-vs-F3 canonical-weighting selection and physical charged-lepton identification, so the open derivation gap is not load-bearing for this narrowed algebraic theorem.
 - **auditor confidence:** high
 
 ### `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`

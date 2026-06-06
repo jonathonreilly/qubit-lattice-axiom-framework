@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 704 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1262 |
+| unaudited | 1261 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
-| ~~audited_renaming~~ | 32 |
+| ~~audited_renaming~~ | 33 |
 | ~~audited_conditional~~ | 74 |
 | ~~audited_failed~~ | 17 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,8 +66,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 52 |
 | `audited_failed` | 61 |
 | `audited_numerical_match` | 16 |
-| `audited_renaming` | 32 |
-| `unaudited` | 1569 |
+| `audited_renaming` | 33 |
+| `unaudited` | 1568 |
 
 | claim_type | count |
 |---|---:|
@@ -1480,6 +1480,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -17022,6 +17023,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** P_candidate(6)=0.4291049969 and P_target(6)=0.5935306800, so the gap 0.1644256831 is more than five hundred times epsilon_witness and the uniform-pairing shortcut cannot close the bridge target.  _(class `A`)_
 - **chain closes:** True — Given the stated uniform-pairing ansatz and declared target, the runner builds the finite L_s=2 graph, verifies 12 plaquettes, 48 nodes, 48 identifications, 8 components, exponent -16, computes the rho profile and P_candidate=0.4291049969, and checks P_candidate+epsilon_witness < P_target. The source boundary explicitly prevents importing a stronger actual-trace or bridge-parent no-go.
 - **rationale:** The completed cached runner exits 0 with PASS=25 FAIL=0 and verifies the finite shortcut calculation plus the note boundary. The source confines the result to the uniform-pairing shortcut ansatz and expressly disclaims actual SU(3) Wigner/intertwiner trace closure, source-sector bridge-parent closure, gauge-scalar observable-bridge promotion, and any new axiom or audit verdict. No-go discipline passes only for this narrow route: N1 checks graph count, ansatz exponent, rho computation, Perron solve, and target-margin attacks; N2 finds no inflated independent wall set; N3 finds the ansatz and declared target explicit rather than hidden; N4 has no nonmatching residual witness citation; N5 rhetoric is route-scoped; N6 makes no new-axiom claim; N7's steelman that actual traces may differ is outside scope; N8 finds no global cross-cycle wall asserted. This would not be clean as a global no-go for actual SU(3) traces or for the bridge parent, but that broader claim is not made.
+- **auditor confidence:** high
+
+### `su3_cube_perron_solve_combined_theorem_note_2026-05-03`
+
+- **Note:** [`SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrowed L_s=2 cube claim: all-forward 12-plaquette/24-link geometry, bipartite 6:6 plaquette adjacency, and trivial-sector rho=delta Perron recovery P_trivial(6)=0.4225317396; no full P_cube or nontrivial-sector rho claim audited.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-204208-fb7543c060-su3_cube_perron_solve_combin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At L_s=2 PBC, the note asserts that the standard +d1 +d2 -d1 -d2 plaquette traversal collapses so all four boundary links are forward-directed, yielding 12 plaquettes and the 6:6 bipartite adjacency graph.  _(class `F`)_
+- **chain closes:** False — The trivial-sector rho=delta Perron recovery checks out, but the geometry and bipartite claims depend on identifying backward PBC plaquette segments with distinct forward directed links. Endpoint equality modulo 2 does not by itself establish equality of Wilson link variables or orientations.
+- **rationale:** Independent enumeration confirms that the runner's self-defined all-forward graph has 12 plaquettes, 24 links, every link used twice, and a 6:6 bipartition. The runner does not prove that this all-forward graph is the standard L_s=2 PBC Wilson plaquette cell complex; it obtains the result by substituting a forward link for each backward traversal. Because the structural theorem relies on that identification, the chain reduces to a convention/renaming rather than a closed derivation of the stated PBC geometry. The rank-one rho=delta Perron number independently reproduces 0.4225317396, but that does not rescue the geometry and adjacency claims.
 - **auditor confidence:** high
 
 ### `su3_dabc_symmetric_theorem_note_2026-05-02`

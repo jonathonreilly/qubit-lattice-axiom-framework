@@ -12,8 +12,8 @@ FAMILY_LIFT_EXTENSION_PRS=3
 
 ## Next exact action
 
-Wait for `audit_pipeline` to settle on PR #2877, then record the final GitHub
-status.
+Closed for campaign purposes. Close out the 12-hour campaign if runtime is
+exhausted.
 
 ## PR
 
@@ -23,7 +23,7 @@ base: "physics-loop/post-record-supplied-family-lift-certificate-interface-20260
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline queued at initial verification"
-final_mergeable: null
-final_merge_state_status: null
-final_checks: null
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "empty check rollup at final verification"
 ```

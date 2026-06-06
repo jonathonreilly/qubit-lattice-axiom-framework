@@ -16,7 +16,12 @@ physics-loop/record-prerecord-instrument-kernel-gate-20260606
 
 Parent PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2810
 
-PR for this block: pending.
+PR for this block: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2811
+
+GitHub verification: open PR, base
+`physics-loop/record-prerecord-instrument-kernel-gate-20260606`, head
+`physics-loop/record-iid-typicality-firewall-20260606`, mergeable
+`MERGEABLE`, merge state `UNSTABLE`.
 
 ## Result
 
@@ -33,5 +38,4 @@ and frequency laws.
 
 ## Next Action
 
-Commit, push, open the stacked PR, patch this pack with the PR URL, then pivot
-to a non-record hard lane.
+Pivot to a non-record hard lane.

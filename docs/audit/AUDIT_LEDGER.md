@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 690 |
+| **retained_bounded** | 691 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1322 |
+| unaudited | 1321 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1081 |
+| `audited_clean` | 1082 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1629 |
+| `unaudited` | 1628 |
 
 | claim_type | count |
 |---|---:|
@@ -695,6 +695,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_window_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_l2_numpy_h0125_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_l2_numpy_h0125_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -10396,6 +10397,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
   - `z_equals_6_hierarchy_endpoint_missing_from_live_runner_and_log`
   - `runner_path_not_registered_in_audit_ledger`
   - `asymptotic_or_all_distance_attraction_theorem_not_provided`
+- **auditor confidence:** high
+
+### `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29`
+
+- **Note:** [`LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md`](../../docs/LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 3D dense spent-delay harness endpoint check with L=12, W=6, h=1.0, max_d=3, and z_mass=2..6; only the printed finite centroid, P_near, and side-bias sign support is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-183847-c4f56e694b-lattice_3d_dense_spent_delay`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite z=2..6 endpoint scan in the existing dense spent-delay harness has hierarchy-aligned attractive support at every tested point, including z=6 positive on centroid shift, near-window probability gain, and side-bias.  _(class `C`)_
+- **chain closes:** True — The primary runner calls the exposed dense helper to generate the lattice, slits, field, propagation, detector probabilities, and three sign metrics for z=2..6, then asserts the exact bounded endpoint condition claimed. The helper source contains actual finite propagation code rather than hard-coded endpoint values or imported comparator constants, and the displayed signs/regression are consistent with the printed table.
+- **rationale:** The load-bearing step is a first-principles finite computation inside the supplied harness, with the transitive helper source exposed. The endpoint checker does not read a prior z=6 value or assert equality to a cached constant; it computes flat and mass detector distributions and classifies the signs from those distributions. The claim is properly bounded to the finite z=2..6 support surface and explicitly avoids asymptotic or physical-gravity overclaiming.
 - **auditor confidence:** high
 
 ### `lattice_3d_dense_window_extension_note`

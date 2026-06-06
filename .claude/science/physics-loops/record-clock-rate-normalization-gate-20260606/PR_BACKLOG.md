@@ -16,4 +16,4 @@ gh pr view 2809 --json number,url,state,baseRefName,headRefName,mergeStateStatus
 
 Result: open, stacked on
 `physics-loop/record-markov-generator-premise-classifier-20260606`,
-`mergeable=MERGEABLE`, `mergeStateStatus=UNSTABLE`.
+`mergeable=MERGEABLE`, `mergeStateStatus=CLEAN`.

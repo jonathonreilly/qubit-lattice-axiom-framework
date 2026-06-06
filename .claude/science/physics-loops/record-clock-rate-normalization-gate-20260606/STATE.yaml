@@ -13,7 +13,7 @@ branch: physics-loop/record-clock-rate-normalization-gate-20260606
 base_branch: physics-loop/record-markov-generator-premise-classifier-20260606
 base_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2807"
 pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2809"
-pr_status: "open; base physics-loop/record-markov-generator-premise-classifier-20260606; head physics-loop/record-clock-rate-normalization-gate-20260606; mergeable MERGEABLE; mergeStateStatus UNSTABLE"
+pr_status: "open; base physics-loop/record-markov-generator-premise-classifier-20260606; head physics-loop/record-clock-rate-normalization-gate-20260606; mergeable MERGEABLE; mergeStateStatus CLEAN"
 files_touched:
   - docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md
   - scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py

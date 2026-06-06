@@ -21,4 +21,6 @@ free-state numerical exhibit.
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2747
+
+Initial pushed commit: `e9792b123`.

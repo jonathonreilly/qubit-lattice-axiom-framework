@@ -1,0 +1,16 @@
+loop: meson-source-packet-20260606
+branch: physics-loop/meson-source-packet-20260606
+target_status: bounded-support
+active_route: source_packet_manifest
+target_claim_id: meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30
+trace_class: direct_blocker_closure
+current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+  - scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py
+  - logs/runner-cache/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.txt
+  - outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json
+next_exact_action: run verifier and precompute cache check
+stop_condition: ready review PR opened

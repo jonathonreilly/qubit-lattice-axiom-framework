@@ -1,0 +1,28 @@
+loop: luders-pep-conditional-scope-20260606
+date: 2026-06-06
+mode: science-fix
+branch: physics-loop/luders-pep-conditional-scope-20260606
+base: origin/main
+current_goal: "Repair the Lüders PEP source surface by narrowing it to the conditional finite-matrix identity actually supported by the runner."
+actual_current_surface_status: conditional-support
+target_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes_for_narrowing_only
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py
+  - logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt
+  - .claude/science/physics-loops/luders-pep-conditional-scope-20260606/
+open_imports:
+  - "Lüders update as measurement-side state update"
+  - "trace/effect probability pairing"
+  - "Born/Gleason/Busch probability bridge"
+  - "parent (U1)-(U4) consistency framing"
+verification:
+  - "python3 -m py_compile scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py"
+  - "python3 scripts/cached_runner_output.py scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py --refresh --timeout-sec 120"
+next_exact_action: "Package as a ready review PR; do not edit audit-ledger files."
+stop_condition: "Stop this block after PR creation; continue campaign by scanning remaining conditional rows for source-side overclaims or repairable premise exposure."

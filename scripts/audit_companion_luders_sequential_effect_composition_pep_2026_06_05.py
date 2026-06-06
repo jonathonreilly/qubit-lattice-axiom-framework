@@ -1,75 +1,54 @@
 #!/usr/bin/env python3
-"""Exact + numeric audit-companion runner for
+"""Exact + numeric conditional finite-matrix runner for
 `LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`.
 
-Bridge target (verbatim from the audit repair item on the parent row
-`luders_rule_from_composition_consistency_note_2026-05-20`):
+This companion checks the narrow algebraic statement left after the source note
+is scoped honestly:
 
-    "provide a retained derivation or retained standard-math authority for
-     the sequential-effect composition M_{P,E}=PEP and the trace/effect
-     probability pairing on the finite operator algebra."
+  * assume a finite matrix algebra `M_d(C)`;
+  * assume an orthogonal projection `P`, effect `E`, density operator `rho`,
+    and `Tr(rho P) > 0`;
+  * assume the Lueders update `rho -> P rho P / Tr(P rho P)`;
+  * assume the trace/effect pairing `(rho, E) -> Tr(rho E)`.
 
-This runner REPROVES, from finite operator-algebra primitives only (no
-imported numbers, no PDG/fitted/lattice-MC inputs), the standard
-quantum-measurement-theory facts the parent's Step 1 imported by name:
+Under those supplied measurement-side premises, the runner verifies:
 
-  (a) SEQUENTIAL COMPOSITION.  On `M_d(C)` (the per-site qubit algebra
-      `A_x ~= M_2(C)` of the Quantum axiom, and its finite tensor powers
-      `d = 2,3,4` for one/region carriers), let `P` be an orthogonal
-      projection (`P = P† = P^2`) and `E` an effect (`0 <= E <= I`).  After a
-      Lueders projective measurement of `P` with outcome 'yes', the state
-      updates `rho -> P rho P / Tr(P rho P)` (the parent's derived rule).  The
-      probability of then observing the effect `E` is, by the Born
-      trace/effect pairing,
+  (a) CONDITIONAL SEQUENTIAL COMPOSITION.  The two-step probability satisfies
 
-          Tr( (P rho P / Tr(P rho P)) E )  =  Tr(rho P E P) / Tr(rho P).
+          Tr((P rho P / Tr(P rho P)) E) = Tr(rho P E P) / Tr(rho P),
 
-      Hence the EFFECTIVE two-step (sequential) effect operator is
+      so the pre-update effect paired against `rho` is `M_{P,E} = P E P`.
+      The identity is checked exactly with sympy and numerically with numpy for
+      d = 2,3,4.
 
-          M_{P,E} = P E P                                              (PEP)
-
-      i.e. `Tr(rho M_{P,E}) = Tr(rho P) * Tr(rho|_P E)` reproduces the chained
-      probability `p(P) * p(E | P)`.  The runner verifies this identity at
-      exact (sympy) and machine (numpy) precision for d = 2,3,4.
-
-  (b) VALID-EFFECT PROPERTIES of PEP.  `P E P` is positive and
+  (b) VALID-EFFECT PROPERTIES.  `P E P` is positive and
       `0 <= P E P <= P <= I`, so it is a legitimate effect supported on the
       range of `P`:
-        - `P E P >= 0`              (congruence by `P` preserves positivity);
-        - `P - P E P = P (I - E) P >= 0` since `I - E >= 0` and `P^2 = P`,
-          hence `P E P <= P`;
+        - `P E P >= 0`;
+        - `P - P E P = P (I - E) P >= 0`;
         - `P <= I` for any orthogonal projection.
-      Boundary conditions `M_{P,I} = P` and `M_{I,E} = E` are verified
-      (these are the conditions that, with associativity, single out PEP).
 
-  (c) TRACE/EFFECT (BORN) PAIRING.  The map `rho -> Tr(rho E)` is real-linear,
-      and on states (`rho >= 0`, `Tr rho = 1`) takes values in `[0,1]` for
-      every effect `E`.  Verified by linearity residuals and by the spectral
-      bound `0 <= Tr(rho E) <= 1`.
+  (c) SUPPLIED TRACE/EFFECT PAIRING SUPPORT CHECKS.  The map
+      `rho -> Tr(rho E)` is real-linear, and on states/effects takes values in
+      `[0,1]`.
 
-  (d) ASSOCIATIVE-CONSISTENCY of the sequential product.  Chaining a third
-      effect/projection is consistent with composing the sequential operators:
-      for projections `P, Q` and effect `F`, the 'P then Q then F' effective
-      operator equals `P (Q F Q) P` and also equals applying the PEP rule with
-      the composite `QP` to `F` in the way the parent's (U4) compositional
-      check requires:  `(QP)† F (QP) = P Q F Q P`.  Verified exactly and
-      numerically.  (For commuting/nested projections this further collapses to
-      the expected nested form; the runner exhibits an exact nested case.)
+  (d) ASSOCIATIVE-COMPATIBILITY.  For projections `P, Q` and effect `F`,
+      the supplied sequential product satisfies
+      `P (Q F Q) P = (QP)† F (QP)`, matching the parent matrix composition
+      expression.
 
-Standard-math COMPARATORS (named, NOT derivation inputs; the runner reproves
-the algebra from primitives and does not import any of these as a fact):
+Standard-math comparators, named as parallel context only:
   - G. Lueders, "Ueber die Zustandsaenderung durch den Messprozess",
-    Ann. Phys. (Leipzig) 8, 322 (1951) [Lueders rule];
+    Ann. Phys. (Leipzig) 8, 322 (1951);
   - P. Busch, P. Lahti, P. Mittelstaedt, "The Quantum Theory of Measurement",
-    Springer (2nd ed. 1996) [sequential measurement / effect formalism];
+    Springer (2nd ed. 1996);
   - S. Gudder & R. Greechie, "Sequential products on effect algebras",
-    Rep. Math. Phys. 49, 87 (2002) [sequential-effect product P E P].
+    Rep. Math. Phys. 49, 87 (2002).
 
-Companion role: not a new claim row beyond the bridge source note; supplies
-audit-friendly machine-checkable evidence that M_{P,E} = P E P and the
-trace/effect pairing are reproven-from-primitives standard operator-algebra
-facts on M_d(C), so the parent's named sequential-effect-composition import is
-discharged to standard mathematics rather than left as a bare admission.
+Companion role: not a new claim row beyond the bridge source note. This runner
+does not establish the Lueders update, Born rule, or trace/effect pairing as
+framework-native consequences; it checks the finite algebra that follows once
+those premises are supplied.
 
 Run:  python3 scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py
 Exit code 0 on all-PASS, 1 if any FAIL.
@@ -101,7 +80,7 @@ def check(name: str, condition: bool, detail: str = "") -> None:
 
 
 # ---------------------------------------------------------------------------
-# Numeric helpers (finite operator-algebra primitives)
+# Numeric helpers (finite matrix hypotheses)
 # ---------------------------------------------------------------------------
 
 def is_hermitian(M: np.ndarray, atol: float = 1e-12) -> bool:
@@ -143,11 +122,11 @@ def random_effect(d: int, rng: np.random.Generator) -> np.ndarray:
 
 
 # ===========================================================================
-# Part 0 -- exact symbolic qubit instance (d = 2): M_{P,E} = P E P from
-#           Lueders update + Born pairing, with exact rational/symbolic algebra
+# Part 0 -- exact symbolic qubit instance (d = 2): M_{P,E} = P E P under
+#           supplied Lueders update + supplied trace/effect pairing.
 # ===========================================================================
-print("\n=== Part 0: exact symbolic d=2 -- two-step prob = Tr(rho PEP)/Tr(rho P) "
-      "=> M_{P,E} = P E P ===")
+print("\n=== Part 0: exact symbolic d=2 -- supplied two-step prob = "
+      "Tr(rho PEP)/Tr(rho P) => M_{P,E} = P E P ===")
 
 # Rank-1 qubit projection P = |psi><psi| with |psi> an EXACT rational unit
 # vector (Pythagorean (3/5, 4/5)) so every matrix entry is an exact rational
@@ -258,7 +237,7 @@ for d in (2, 3, 4):
         n_used += 1
         # Effective two-step operator M_{P,E} = P E P:
         lhs = float(np.trace(rho @ (P @ E @ P)).real) / pP
-        # Two-step definition: update by Lueders, then Born-pair with E:
+        # Two-step definition: update by the supplied Lueders map, then pair with E.
         post = (P @ rho @ P) / pP
         rhs = float(np.trace(post @ E).real)
         worst = max(worst, abs(lhs - rhs))
@@ -300,7 +279,7 @@ for d in (2, 3, 4):
 
 
 # ===========================================================================
-# Part 3 -- trace/effect (Born) pairing: real-linear, maps states to [0,1]
+# Part 3 -- supplied trace/effect pairing: real-linear, maps states to [0,1]
 # ===========================================================================
 print("\n=== Part 3: numeric d=2,3,4 -- trace pairing rho -> Tr(rho E) is "
       "real-linear and maps states to [0,1] ===")
@@ -406,10 +385,10 @@ check("d3_exact: nested commuting product = diag(1/2, 0, 0) on range(P1∧P2)",
 
 # ===========================================================================
 # Part 6 -- counter-direction guard: a NON-PEP candidate breaks the
-#           boundary/positivity conditions (so PEP is not an arbitrary choice)
+#           boundary/positivity conditions and the supplied two-step identity
 # ===========================================================================
-print("\n=== Part 6: guard -- a non-PEP sequential candidate fails the standard "
-      "conditions (PEP is selected, not arbitrary) ===")
+print("\n=== Part 6: guard -- a non-PEP sequential candidate fails positivity "
+      "and the supplied two-step identity ===")
 
 # Candidate "symmetrized" alternative  M' = (P E + E P)/2  (the Jordan product).
 # It satisfies the boundary conditions M'_{P,I}=P, M'_{I,E}=E but is NOT
@@ -458,12 +437,11 @@ if FAIL:
             print(f"  - {name}  [{detail}]")
     sys.exit(1)
 
-print("\nAll checks passed: the sequential-effect composition M_{P,E} = P E P "
-      "and the trace/effect (Born) pairing are reproven from finite "
-      "operator-algebra primitives on M_d(C) (d=2,3,4): PEP is the effective "
-      "two-step operator [Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E)], it is a valid "
-      "effect [0 <= PEP <= P <= I], the trace pairing is real-linear and "
-      "state->[0,1], and the sequential product is associative-consistent with "
-      "composition. Lueders (1951), Busch-Lahti-Mittelstaedt (1996), and "
-      "Gudder-Greechie (2002) are named comparators only, not derivation inputs.")
+print("\nAll checks passed under the supplied measurement-side premises: "
+      "M_{P,E} = P E P is the pre-update effect for the supplied two-step "
+      "probability [Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E)], it is a valid effect "
+      "[0 <= PEP <= P <= I], the supplied trace/effect pairing is real-linear "
+      "and maps states/effects to [0,1], and the sequential product is "
+      "associative-compatible with composition. The runner does not establish "
+      "the Lueders update, Born rule, or trace/effect pairing as framework-native.")
 sys.exit(0)

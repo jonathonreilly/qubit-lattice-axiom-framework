@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py
-runner_sha256: c14a2ba7bbd4c80e07c600b67657f915e7525fc5ef96e9bd1ea8dee1a42e1791
+runner_sha256: 9513fc1960f7ce9afb0937ddd21823ba2cdd2cad6146cef0ff4ee7919ce6583e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.54
 status: ok
 ----- stdout -----
 
-=== Part 0: exact symbolic d=2 -- two-step prob = Tr(rho PEP)/Tr(rho P) => M_{P,E} = P E P ===
+=== Part 0: exact symbolic d=2 -- supplied two-step prob = Tr(rho PEP)/Tr(rho P) => M_{P,E} = P E P ===
 [PASS] d2_exact P is projection (P^2 = P, P† = P)  [rank-1 |psi><psi|, psi real]
 [PASS] d2_exact E is an effect (E† = E, spectrum in [0,1])  [spectrum = [1/4, 3/4]]
 [PASS] d2_exact rho is a state (rho† = rho, rho >= 0, Tr rho = 1)  [eigs = [1/2 - sqrt(61)/30, sqrt(61)/30 + 1/2]]
@@ -67,7 +67,7 @@ status: ok
 [PASS] d3_exact: P1(P2 E P2)P1 = (P2 P1)† E (P2 P1) (sequential = compositional)  [common = diag (1/2, 0, 0)]
 [PASS] d3_exact: nested commuting product = diag(1/2, 0, 0) on range(P1∧P2)  [only common-support entry survives]
 
-=== Part 6: guard -- a non-PEP sequential candidate fails the standard conditions (PEP is selected, not arbitrary) ===
+=== Part 6: guard -- a non-PEP sequential candidate fails positivity and the supplied two-step identity ===
 [PASS] d2_exact: Jordan candidate satisfies boundaries M'_{P,I}=P, M'_{I,E}=E  [boundaries alone do not single out PEP vs Jordan]
 [PASS] d2_exact: Jordan candidate (PE+EP)/2 is INDEFINITE (some eig < 0)  [min eig(M') = -63/4225 < 0  => not a valid effect]
 [PASS] d2_exact: PEP reproduces two-step prob; Jordan candidate does NOT  [two-step=3969/4225, PEP=3969/4225, Jordan=17577/20449]
@@ -76,6 +76,7 @@ status: ok
 TOTAL: 51 PASS / 0 FAIL  (out of 51 checks)
 ========================================================================
 
-All checks passed: the sequential-effect composition M_{P,E} = P E P and the trace/effect (Born) pairing are reproven from finite operator-algebra primitives on M_d(C) (d=2,3,4): PEP is the effective two-step operator [Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E)], it is a valid effect [0 <= PEP <= P <= I], the trace pairing is real-linear and state->[0,1], and the sequential product is associative-consistent with composition. Lueders (1951), Busch-Lahti-Mittelstaedt (1996), and Gudder-Greechie (2002) are named comparators only, not derivation inputs.
+All checks passed under the supplied measurement-side premises: M_{P,E} = P E P is the pre-update effect for the supplied two-step probability [Tr(rho PEP)/Tr(rho P) = Tr(rho|_P E)], it is a valid effect [0 <= PEP <= P <= I], the supplied trace/effect pairing is real-linear and maps states/effects to [0,1], and the sequential product is associative-compatible with composition. The runner does not establish the Lueders update, Born rule, or trace/effect pairing as framework-native.
 
 ----- stderr -----
+

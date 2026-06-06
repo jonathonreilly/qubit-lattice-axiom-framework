@@ -3,7 +3,7 @@ runner: scripts/frontier_post_record_stability_dynamics_selector_subdivision_202
 runner_sha256: e9eb10eed00037c1445e540b6ea86f6b1d1255fec5cd022e40c237746da09efb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.15
+elapsed_sec: 1.71
 status: ok
 ----- stdout -----
 
@@ -37,7 +37,7 @@ PASS sub-bucket counts sum to stability/dynamics count :: Counter({'flow_or_ther
 PASS expected sub-bucket counts match :: Counter({'flow_or_thermal_stability': 56, 'arrow_or_dynamics_bridge': 34})
 PASS representative row present in flow_or_thermal_stability :: flavor_r_half_is_the_records_flow_separatrix_2026-06-02
 PASS representative row present in arrow_or_dynamics_bridge :: a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1
-PASS audit ledger hash is unchanged :: c5744aeb88243780f2eec7253d06a3761535fa1885eddaa76c747b86376b82d9
+PASS audit ledger hash is unchanged :: 1087302aabee160b34c834c50b7ae58533cea180fbd3f284020a95fa85feef9a
 
 Stability/dynamics sub-bucket counts:
   arrow_or_dynamics_bridge: 34
@@ -51,7 +51,7 @@ Stability/dynamics sub-bucket counts:
   color_su3_restricted_transport_profile_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/COLOR_SU3_RESTRICTED_TRANSPORT_PROFILE_2026-06-05.md
   color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md
   flavor_interacting_matter_build_note_2026-05-30 | audited_renaming | audited_renaming | bounded_theorem | docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md
-  flavor_zdet_fermionic_statistics_admission_2026-06-04 | audited_conditional | audited_conditional | open_gate | docs/FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md
+  g_newton_skeleton_selection_bounded_note_2026-05-10_gnewtong1 | unaudited | unaudited | bounded_theorem | docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md
 
 [flow_or_thermal_stability]
   arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md

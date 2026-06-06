@@ -40,11 +40,11 @@ On the current ledger snapshot, the upstream stability/dynamics subdivision has
 
 | Stable-setting lane | Rows |
 |---|---:|
-| `bounded_obstruction_or_no_selection` | 17 |
-| `flow_or_records_stable_feature` | 4 |
-| `generation_or_koide_stable_feature` | 3 |
-| `generic_stable_feature` | 13 |
-| `thermal_or_score_stable_feature` | 19 |
+| `bounded_obstruction_or_no_selection` | 16 |
+| `flow_or_records_stable_feature` | 3 |
+| `generation_or_koide_stable_feature` | 4 |
+| `generic_stable_feature` | 15 |
+| `thermal_or_score_stable_feature` | 18 |
 
 Total: `56` rows.
 

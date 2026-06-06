@@ -1,0 +1,34 @@
+loop: gstar-i12-threshold-wording-20260606
+mode: science-fix
+date: 2026-06-06
+target_claim_id: sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29
+target_status: bounded-support
+active_route: threshold-and-margin-source-repair
+current_surface_status: bounded-support
+audit_effective_status_change_claimed: false
+files_touched:
+  - docs/SM_GSTAR_I12_NUR_THERMAL_EXCLUSION_BOUNDED_NOTE_2026-05-29.md
+  - scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py
+  - logs/runner-cache/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.txt
+  - .claude/science/physics-loops/gstar-i12-threshold-wording-20260606/
+open_imports:
+  - empirical small neutrino mass remains an admitted observation/comparator
+  - Gamma ~ y_nu^2 T remains an order-of-magnitude thermalization comparator
+  - overall g_star census retains its separate bounded residuals
+closed_in_this_block:
+  - corrected the T=100 GeV margin from about 4.6 decades to about 4.3 decades
+  - corrected Gamma/H at T=100 GeV from 5.9e-10 to 2.35e-9
+  - replaced O(1)-only route language with the actual thermalization threshold y_nu >= y_thr
+  - preserved O(1) only as the stronger excluded steelman subcase
+verification:
+  - python3 -m py_compile scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py
+  - PYTHONPATH=scripts python3 scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py --force --allow-non-main --push-mode none
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py --check-only --allow-non-main --push-mode none
+  - git diff --check
+  - git diff -- docs/audit --exit-code
+runner_result: PASS=66 FAIL=0
+review_disposition: local_self_review_pass_pending_codex_reviewer
+pr_status: pending
+next_exact_action: commit, push, open review PR
+stop_condition: PR opened and next conditional opportunity selected

@@ -1,4 +1,4 @@
-# Source/Measure Sharp-Record — The Six O_i Are A Same-Source Orthonormal Y_T Top/W Response Basis Narrow Theorem Note
+# Source/Measure Sharp-Record — Six Diagonal E_ii Operators Orthonormal Basis Narrow Theorem Note
 
 **Date:** 2026-06-05
 **Claim type:** bounded_theorem
@@ -12,317 +12,168 @@ claim-boundary declaration, not an audit verdict.
 
 ## Claim
 
-The target row `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`
-(`SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md`, the
-tangent-space note) carries the audit repair
-
-> *missing_bridge_theorem: add a retained bridge proving that smooth sharp-record
-> probability interventions are the physical source semantics and that the six
-> `O_i` form the same-source orthonormal `Y_T` top/`W` response basis.*
-
-The tangent-space note uses the six `O_i` only implicitly, through the single
-combination `O_top = (1/sqrt(6)) sum_i O_i` and the unit-tangent statement
-`y_33 = 1/sqrt(6)`. This note supplies the **concrete** half of that repair as a
-narrow, reproven finite-dimensional theorem, and states the **interpretational**
-half (source semantics) explicitly as the Record-axiom-grounded reading rather
-than as a reproven physics theorem.
-
-> **Claim (the six `O_i` are a same-source orthonormal `Y_T` top/`W` response
-> basis).** Let the single one-Higgs up-type Yukawa source act on the
-> left-handed quark color-isospin carrier `V = C^6`, whose dimension is
-> `N_iso * N_color = 2 * 3 = 6` with `N_color = N_c = 3`. Let the six response
-> operators be the canonical rank-one component-insertion operators
-> `O_i = E_{ii}` on `V` (equivalently the standard-basis source directions
-> `e_i` of the response space), `i = 1..6`. Then, under the Hilbert–Schmidt
-> inner product `<A, B>_{HS} = Tr(A^dagger B)`:
->
-> - **(O1) Orthonormal.** The Gram matrix `G_{ij} = Tr(O_i^dagger O_j)` is the
->   `6x6` identity, so `{O_i}` is an orthonormal set.
-> - **(O2) Spanning / complete.** The six `O_i` are linearly independent
->   (rank 6) and resolve the carrier, `sum_i O_i = I_6`; every diagonal
->   component-response `D` is reconstructed as `D = sum_i Tr(O_i^dagger D) O_i`.
->   They are therefore a complete basis of the `6`-dimensional component-response
->   subspace the top/`W` responses live in.
-> - **(O3) Same source.** All six `O_i` act on the **one** carrier `V = C^6`
->   sourced by the single up-type Yukawa coupling `bar Q_L tilde H u_R`; each
->   `O_i` is the projection onto one component of that one shared source. They
->   are not six unrelated sources.
-> - **(O4) Democratic normalization.** The unique permutation-symmetric unit
->   element is `O_top = (1/sqrt(6)) sum_i O_i`; every component amplitude equals
->   `1/sqrt(6)`, matching the top/`W` form factor `F_Htt = 1/sqrt(6)`
->   (`F_Htt^2 = g_bare^2/(2 N_c) = 1/6` at `g_bare = 1`, `N_c = 3`). A scaled
->   family `lambda O_top` has Hilbert–Schmidt norm `lambda^2`, so the unit
->   response selects `lambda = 1` — exactly the tangent-space note's unit
->   statement.
-
-This is the load-bearing content and is reproven from primitives in the runner.
-
-## 0. Honest framing up front
-
-The tangent-space note proves a finite **probability** tangent-space fact (RN
-scores, zero reference mean, the Fisher pairing, the exponential chart) and then
-*names* a six-component top tangent `O_top = sum_i O_i / sqrt(6)` whose unit norm
-yields `y_33 = 1/sqrt(6)`. The audit repair asks for two distinct things:
-
-1. **Concrete (provable).** Pin the six `O_i` down as actual operators and prove
-   they form a same-source orthonormal basis of the top/`W` response space.
-2. **Interpretational (partly not provable).** Establish that *smooth sharp-record
-   probability interventions are the physical source semantics*.
-
-This note does (1) as a reproven theorem (§2–§4, runner Parts 2–6) and is honest
-that (2) is **not** a reproven physics theorem: it is an interpretation grounded
-in the current Record axiom and the retained Berezin generating functional
-(§5, runner Part 7, marked interpretational). The load-bearing claim is narrowed
-to (1); (2) is presented as the source-semantics frame, not as content that the
-runner certifies as forced. This matches the tangent-space note's own
-`Status boundary` distinction between its closed exact-support content and its
-"physical source intervention" item that "remains if not accepted."
-
-## 1. What the six `O_i` and the carrier are
-
-The "same source" is the single Standard-Model one-Higgs up-type Yukawa monomial
-`bar Q_L tilde H u_R`, the monomial fixed (with the generation matrix left free)
-by `SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md` and used by
-the strict top-response row packet
-`YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md`. Its source acts
-on the left-handed quark **color-isospin carrier**
+This note is a pure diagonal component-response lemma. Let
 
 ```text
-V = C^6,   dim V = N_iso * N_color = 2 * 3 = 6,
+V = C^6,
+D_6 = span{E_11, E_22, E_33, E_44, E_55, E_66} subset End(V),
+<A,B>_HS = Tr(A^dagger B).
 ```
 
-with the weak-doublet multiplicity `N_iso = 2` and the color rank
-`N_color = N_c = 3` carried by
-[`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md).
-This `6 = 2 N_c` carrier and the democratic unit source on it are exactly the
-content of
-[`YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`](YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md),
-whose load-bearing finite-dimensional core (the democratic component amplitude is
-`1/sqrt(6)`) is the same number the tangent-space note names as `y_33`.
+For `i = 1..6`, set `O_i = E_ii`. Then:
 
-The six `O_i` are the canonical rank-one component-insertion (response) operators
-on this carrier:
+- **(D1) Orthonormality.** `Tr(O_i^dagger O_j) = delta_ij`; the Gram matrix of
+  the six `O_i` is the `6 x 6` identity.
+- **(D2) Diagonal completeness.** The six `O_i` are linearly independent and
+  form a basis of the six-dimensional diagonal subspace `D_6`.
+- **(D3) Identity resolution and reconstruction.** `sum_i O_i = I_6`, and every
+  diagonal operator `D = diag(d_1,...,d_6)` is reconstructed by
+  `D = sum_i Tr(O_i^dagger D) O_i`.
+- **(D4) Democratic diagonal unit.** The vector
+  `O_dem = (1/sqrt(6)) sum_i O_i` is unit-normalized in `D_6`, has every
+  diagonal component amplitude equal to `1/sqrt(6)`, and spans the unique
+  permutation-fixed line of `D_6`.
+
+That is the full load-bearing claim. Boundary sentence for the runner: this is
+not a physical `Y_T` top/`W` response theorem. It does not identify sharp-record
+probability interventions with physical source semantics, and does not derive
+`g_bare`, `F_Htt`, `y_33`, `y_t`, `m_t`, or any Standard-Model source
+coefficient.
+Boundary sentence for the runner: this note does not derive `g_bare`.
+
+## 0. Honest framing
+
+The earlier conditional reading of this row mixed two different statements:
+
+1. the finite algebra of the six diagonal coordinate projectors `E_ii`; and
+2. a physical interpretation that would identify those coordinates with the
+   same-source top/`W` response directions of a `Y_T` source packet.
+
+Only (1) is proven here. The source-side row is therefore narrowed to the finite
+`E_ii` diagonal-basis theorem. The broader physical bridge remains outside this
+note unless a separate reviewed artifact supplies it.
+
+This note also does not import textbook linear algebra as an authority. The
+runner constructs the matrices, computes the Hilbert-Schmidt Gram matrix,
+checks rank, checks the identity resolution, reconstructs a symbolic diagonal
+operator, proves the democratic unit normalization, and repeats the key facts by
+an independent numpy cross-check.
+
+## 1. Construction
+
+Fix the six-dimensional complex vector space `V = C^6` with standard basis
+`e_1,...,e_6`. Define
 
 ```text
-O_i = E_{ii} = e_i e_i^dagger   on V = C^6,   i = 1..6,
+O_i = E_ii = e_i e_i^dagger.
 ```
 
-equivalently the standard-basis source directions `e_i` of the `6`-dimensional
-response space. Each `O_i` is the directional derivative of the record generator
-along carrier component `i` of the one shared Yukawa source `J`; this is the
-sharp-record observable in direction `i` (see §5 for the source-semantics frame).
+Each `O_i` is Hermitian, idempotent, and supported on exactly one diagonal
+coordinate of the same ambient space `V`. This is a statement about one fixed
+finite vector space and its diagonal operator subspace; it is not a statement
+about six unrelated physical sources, and it is not a statement that this
+ambient space has already been identified with a physical top-sector carrier.
 
-## 2. Load-bearing step (Class A) — orthonormality
+## 2. Orthonormality
 
-The Hilbert–Schmidt inner product on `End(V)` is `<A, B>_{HS} = Tr(A^dagger B)`.
-For the diagonal matrix units `O_i = E_{ii}`,
+For diagonal matrix units,
 
 ```text
-Tr(E_{ii}^dagger E_{jj}) = Tr(E_{ii} E_{jj}) = delta_{ij},
+O_i^dagger O_j = E_ii E_jj = delta_ij E_ii,
+Tr(O_i^dagger O_j) = delta_ij.
 ```
 
-so the Gram matrix `G_{ij} = Tr(O_i^dagger O_j) = I_6`: the six `O_i` are
-orthonormal (O1). The runner reproves `G = I_6` exactly (sympy, Part 3),
-re-derives it in the equivalent vector realization `O_i = e_i`, and cross-checks
-`G = I` to `1e-12` in numpy (Part 6). This is a class (A) finite-dimensional
-identity; no fitted value, observed mass, plaquette, or `g_bare` value enters.
+Thus the Hilbert-Schmidt Gram matrix is exactly `I_6`. The runner verifies this
+symbolically and checks the equivalent coordinate-vector realization
+`O_i = e_i`.
 
-## 3. Load-bearing step (Class A) — spanning and completeness
+## 3. Completeness and reconstruction
 
-The six `O_i` span the intended response subspace (O2):
+Flattening the six `O_i` as vectors in the `36`-dimensional ambient matrix
+space gives rank `6`. Since the diagonal subspace has dimension `6`, the six
+operators form a basis of `D_6`.
+
+They also resolve the identity:
 
 ```text
-rank{O_1, ..., O_6} = 6,           (linear independence)
-sum_i O_i = I_6,                    (resolution of the carrier)
-D = sum_i Tr(O_i^dagger D) O_i,     (any diagonal component-response D).
+sum_i O_i = I_6.
 ```
 
-The third identity recovers the Hilbert–Schmidt coefficients of an arbitrary
-diagonal component-response as exactly its components `d_i`. So `{O_i}` is a
-complete orthonormal basis of the `6`-dimensional diagonal component-response
-space, which is the space the top and `W` component responses live in (the
-top/`W` response rows of
-`YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md` are component
-responses of this same carrier). The runner reproves rank `6`, the resolution
-identity, and the reconstruction identity exactly (Part 4) and rank `6` again in
-numpy (Part 6).
-
-## 4. Load-bearing step (Class A) — same source and democratic normalization
-
-**Same source (O3).** All six `O_i` act on the **one** carrier `V = C^6`. In the
-runner they all have shape `6x6` (operator realization) and pairwise-distinct
-single-component supports on that one carrier (Part 2). They are projections onto
-the six components of a single shared source space, not six independent sources —
-the single up-type Yukawa coupling supplies the one source.
-
-**Democratic normalization (O4).** The unique permutation-symmetric unit element
-of the response space is
+For an arbitrary diagonal operator `D = diag(d_1,...,d_6)`,
 
 ```text
-O_top = (1/sqrt(6)) sum_i O_i,
+Tr(O_i^dagger D) = d_i,
+D = sum_i d_i O_i = sum_i Tr(O_i^dagger D) O_i.
 ```
 
-with unit Hilbert–Schmidt norm and every component amplitude equal to
-`1/sqrt(6)` (runner Part 5; the `S_6`-uniqueness mirrors the democratic-candidate
-row). This `1/sqrt(6)` is the top/`W` tree form factor
+The runner checks these identities exactly over symbolic `d_i`.
+
+## 4. Democratic diagonal unit
+
+In the coordinate realization of `D_6`, define
 
 ```text
-F_Htt^2 = g_bare^2 / (2 N_c) = 1/6   at  g_bare = 1, N_c = 3,
+O_dem = (1/sqrt(6)) sum_i O_i.
 ```
 
-carried by
-[`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md)
-(`F_Htt = 1/sqrt(6)`). The runner reproves `F_Htt^2 = 1/6` and
-`F_Htt = 1/sqrt(6)` from the finite formula at `g_bare = 1`, `N_c = 3` (Part 5);
-the value is re-derived, not imported as a fitted number. Finally a scaled family
-`lambda O_top` has Hilbert–Schmidt norm `lambda^2`, so the unit-response
-condition selects `lambda = 1` — the exact unit statement the tangent-space note
-makes for `O_top`.
+Then `<O_dem,O_dem>_HS = 1`, and every coordinate amplitude is `1/sqrt(6)`.
+Adjacent transpositions fix `O_dem`; their fixed subspace has nullity one, so
+the permutation-fixed subspace is exactly the line spanned by `O_dem`. A scaled
+family `lambda O_dem` has Hilbert-Schmidt norm `lambda^2`; the unit condition
+selects `lambda = 1`.
 
-## 5. The source-semantics half is interpretational, not a reproven theorem
+These facts are finite matrix identities. The appearance of `1/sqrt(6)` here is
+only the democratic diagonal-unit normalization in `D_6`. It is not used here as
+a physical top coefficient or a gauge-coupling form factor.
 
-The second clause of the repair — *smooth sharp-record probability interventions
-are the physical source semantics* — is **interpretational** and is **not**
-claimed here as a reproven physics theorem. The honest statement is:
+## 5. What this does not claim
 
-- Per the Record axiom
-  ([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md): *"A record is
-  the durable registration of the realized outcome"*), a sharp record registers
-  the realized outcome; a smooth family of record probabilities `P_h` is the
-  smooth handle on that registration, and the tangent-space note's score
-  `s = d log R_h / dh` is the derivative direction of the record-probability
-  functional.
-- On the retained Berezin generating-functional surface
-  ([`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md))
-  the finite-block amplitude is `Z = det(D + J)`, so `W = log Z = log det(D + J)`
-  is the additive scalar generator and a source insertion `J_i` is a direction of
-  that generator. In this bookkeeping, the response `O_i = dW/dJ_i` is the
-  sharp-record observable along component `i`: the runner checks the bookkeeping
-  identity `dW/dJ_i|_0 = Tr(D^{-1} O_i)` on the finite block (Part 7), with the
-  same six `O_i`.
+This note does **not**:
 
-What is **not** established (and is explicitly not claimed):
+- identify smooth sharp-record probability interventions with complete physical
+  source semantics;
+- prove that the six `O_i` are physical `Y_T` top/`W` response directions;
+- derive or use `g_bare = 1`;
+- derive or use any `F_Htt` gauge-coupling form-factor formula;
+- derive `y_33`, `y_t`, `m_t`, a Higgs vev, or a top-sector mass relation;
+- establish `N_c = 3`, a one-Higgs Yukawa selection theorem, or a top-carrier
+  theorem;
+- retag this row, the tangent-space row, or any dependency row.
 
-- that record-probability interventions are *the* complete physical source
-  semantics — that is the identification the tangent-space note itself lists as
-  "remaining if not accepted," and it is the open `(M)`/`AC_phi_lambda`
-  determinant-identification residual tracked elsewhere, **not** Record content
-  (`MINIMAL_AXIOMS_2026-06-05.md` explicitly excludes source/action and
-  physical-observable identification from the axiom);
-- that `O_top` is the physical top Yukawa coefficient `y_33` — that is the
-  open response bridge named by the democratic-candidate row and the strict
-  symbolic top-response packet, not supplied here.
+Those are separate physical or audit questions. This row supplies only the
+finite diagonal `E_ii` theorem stated in the Claim section.
 
-The Record axiom is cited only for the durable-record-registration reading of the
-"smooth sharp-record probability intervention" phrase. It is **not** used as a
-source of bounded status (axiom nodes chain-satisfy only their narrow content).
-Part 7 is labelled interpretational in the runner and contributes the bookkeeping
-identity only; it does not certify the source-semantics identification.
+## 6. Dependencies and citations
 
-## 6. What this does NOT claim
+**Load-bearing dependencies:** none beyond the definitions stated in this note:
+`V = C^6`, `O_i = E_ii`, the diagonal subspace `D_6`, and the
+Hilbert-Schmidt pairing. The runner reproves the relevant finite linear algebra
+directly.
 
-This note is deliberately narrow. It does **not**:
+**Context only; not load-bearing edges:** `SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md`,
+`YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md`,
+`YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`,
+`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`,
+`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`, and `MINIMAL_AXIOMS_2026-06-05.md`.
 
-- **Close the source-semantics identification.** It does not prove that smooth
-  record-probability interventions are *the* physical source semantics; that is
-  the interpretational frame of §5, gated by the open `(M)`/`AC_phi_lambda`
-  determinant identification and not by Record.
-- **Derive `y_33`, `y_t`, `m_t`, or `v`.** The democratic amplitude `1/sqrt(6)`
-  is the component amplitude of `O_top`; the bridge equating it with the physical
-  top Yukawa coefficient is the still-open response bridge named by the
-  democratic-candidate and strict-top-response rows.
-- **Newly derive `N_c = 3` or `F_Htt = 1/sqrt(6)`.** `N_c = 3` is carried by the
-  graph-first SU(3) row; `F_Htt = 1/sqrt(6)` by the Rep-B-independence row. This
-  note re-derives the finite numbers in the runner and cites those rows as the
-  authority surfaces, but does not re-establish them.
-- **Retag the target row.** It does not move
-  `SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md` (or any
-  other row) to any terminal status. The audit lane is the only status authority.
-- **Use forbidden imports.** No PDG/fitted/measured/lattice-MC value, no
-  `beta = 6` plaquette value, and no fitted `g_bare` selector is a load-bearing
-  input; `g_bare = 1` appears only as the convention point at which the retained
-  `F_Htt^2 = g_bare^2/(2 N_c)` relation is evaluated to `1/6`, matching the
-  reproven `O_top` component amplitude.
-
-## 7. Re-audit case
-
-The narrowed, reproven content of this note is the concrete half of the target
-row's `missing_bridge_theorem` repair: the six `O_i` are a same-source
-orthonormal basis (O1) that spans the top/`W` component-response space (O2) on
-the one shared Yukawa carrier (O3), with the democratic unit element giving the
-`1/sqrt(6)` normalization the tangent-space note names (O4). All four are
-reproven from finite-dimensional primitives in the runner
-(`TOTAL: 33 PASS / 0 FAIL`), independently of any cited row's audit grade and
-without fitted inputs; the load-bearing checks pass standalone with no repo note
-present.
-
-The source-semantics clause of the repair is supplied only as the
-Record-axiom-grounded interpretation of §5 (runner Part 7, interpretational),
-**not** as a reproven theorem. Independent audit decides whether the concrete
-orthonormal-basis bridge, together with the explicitly-interpretational
-source-semantics frame, is sufficient to move the target row, and whether the
-remaining `(M)`/`AC_phi_lambda` source-identification residual keeps it bounded.
-This note proposes no status and sets no verdict.
-
-## 8. Dependencies and citations
-
-**Load-bearing dependencies (retained-grade or axiom; markdown-linked):**
-
-- The `6 = 2 N_c` color-isospin carrier and the `1/sqrt(6)` democratic component
-  amplitude (`retained_bounded`):
-  [`YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`](YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md).
-- The top/`W` tree form factor `F_Htt = 1/sqrt(6)` and
-  `F_Htt^2 = g_bare^2/(2 N_c)` (`retained_bounded`):
-  [`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md).
-- The color rank `N_c = 3` (`retained`):
-  [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md).
-- The Berezin finite-block generating functional `Z = det(D + J)` grounding the
-  `W = log det(D + J)` reading of §5 (`retained_bounded`):
-  [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md).
-- The Record axiom grounding the source-semantics interpretation only (axiom
-  node; chain-satisfies, not a bounded-status source):
-  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md).
-
-**Target and non-retained context (backticked; not load-bearing edges):**
-`SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md`
-(the target row whose repair this addresses, `audited_conditional`),
-`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` (`audited_conditional`),
-`YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md` (`unaudited`),
-`SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md` (`unaudited`),
-`SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md` (`unaudited`),
-`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`
-(the tangent-space note's projective-record-surface dep, context only here).
-
-**External mathematics (comparator only, not a derivation input):** the
-Hilbert–Schmidt / Frobenius inner product `<A, B> = Tr(A^dagger B)` and the
-matrix-unit orthonormality `Tr(E_{ii} E_{jj}) = delta_{ij}` are standard linear
-algebra; they are reproven in the runner, not imported by name.
+**External mathematics:** the Hilbert-Schmidt / Frobenius pairing and matrix
+unit algebra are standard finite linear algebra. They are not imported as a
+black-box theorem; they are evaluated explicitly by the runner.
 
 ### Source-note boundary
 
-**Hypothesis set used:** (1) the single one-Higgs up-type Yukawa source acts on
-the `6 = 2 N_c` color-isospin carrier (carried by the democratic-candidate and
-graph-first SU(3) rows); (2) the six `O_i` are the canonical component-insertion
-operators on that carrier; (3) the Hilbert–Schmidt inner product on `End(V)`;
-(4) for §5 only, the retained Berezin `Z = det(D + J)` surface and the Record
-axiom's durable-record reading — used interpretationally, not as a reproven
-identification.
+**Hypothesis set used:** the fixed finite vector space `C^6`, the six diagonal
+matrix units, and the Hilbert-Schmidt pairing on matrices.
 
-**Forbidden-imports check:** this note introduces no new axiom, primitive, repo
-vocabulary, or class tag. It uses only standard linear-algebra terms
-("Hilbert–Schmidt inner product," "Gram matrix," "rank," "matrix unit,"
-"orthonormal," "resolution of the identity") and repo-canonical terms ("`Y_T`
-top/`W` response," "`Q_L` color-isospin carrier," "democratic," "`F_Htt`,"
-"sharp record"). No fitted value, observed target, PDG comparator, lattice-MC
-measurement, `beta = 6` plaquette value, or fitted `g_bare` selector is a
-load-bearing input.
+**Forbidden-imports check:** no fitted value, observed target, PDG comparator,
+lattice-MC measurement, plaquette value, fitted selector, top mass, Higgs vev,
+or gauge-coupling normalization is a load-bearing input.
 
 **No-promotion statement:** this note does not promote, demote, or set the audit
-status of the target row, the democratic-candidate row, the Rep-B-independence
-row, the graph-first SU(3) row, the Berezin bridge, or any other row. The audit
-lane is the only status authority.
+status of this row, the tangent-space row, or any other row. The audit lane is
+the only status authority.
 
-## 9. Verification
+## 7. Verification
 
 Run:
 
@@ -333,10 +184,8 @@ python3 scripts/audit_companion_source_measure_sharp_record_onb_2026_06_05.py
 Expected result:
 
 ```text
-TOTAL: 33 PASS / 0 FAIL
+TOTAL: 37 PASS / 0 FAIL
 ```
 
-The load-bearing checks (Parts 2–6) are pure finite-dimensional reproofs and pass
-standalone without this note present (Part 1 anchor presence is non-fatal and is
-skipped if absent). Part 7 is the interpretational source-semantics bookkeeping
-and is labelled as such.
+The checks are finite-dimensional and do not require any context note to be
+treated as status authority.

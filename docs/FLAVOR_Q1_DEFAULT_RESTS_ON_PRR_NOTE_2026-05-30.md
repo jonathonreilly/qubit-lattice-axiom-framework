@@ -1,66 +1,68 @@
-# Flavor — CORRECTION: "Q=1 is the framework default" is NOT forced; it rests entirely on the unaudited PRR premise, and Q=2/3 is admissible under native C3
+# Flavor Q1: The `C3` Reference Cone Does Not Force the Trace
 
 **Date:** 2026-05-30
 **Claim type:** bounded_theorem
-**Claim boundary:** bounded correction of a prior campaign statement + sharpened localization of the single unaudited premise.
-**Runner:** `scripts/flavor_Q1_default_rests_on_PRR_2026_05_30.py` (SCORECARD PASS=3).
+**Actual current-surface status:** bounded-support
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes the route "stipulated `C3` generation symmetry alone selects the tracial `1:2` block weighting".
+**Bare retained allowed:** false
+**Audit required before effective status change:** true
+**Runner:** `scripts/flavor_Q1_default_rests_on_PRR_2026_05_30.py` (SCORECARD PASS=4).
 **Source:** 6-agent build `wf_9977f75f` (reference-state cone; tracial-vs-Gibbs; observability; PRR steelman).
 
-## The correction
-Earlier in the campaign (and in my reporting) the conclusion hardened to "**Q=1 (democratic) is the
-framework's honest default, and r=1/2 is a genuine import.**" This build shows the **default half is an
-overstatement**: framework baseline do **not** force the trace on the generation factor.
+## Closed Packet
 
-## Why
-- **C₃-invariant reference states form a 2-parameter cone.** By Schur, any C₃-invariant state on
-  `ℝ[Z₃]=ℝ⊕ℂ` is scalar on each isotypic block, fixed by two block masses `(w_s, w_d)`. The trace weights
-  them by **dimension** `(1:2) → r=1 → Q=1`; a non-tracial state weights them `(1:1) → r=1/2 → Q=2/3`.
-- **The `(1:1)` state is explicit and admissible.** `ρ_(1:1) = ½P_s + ¼P_d` (diagonal 1/3, off-diagonal
-  1/12; eigenvalues {½,¼,¼}) is PSD, trace 1, and **commutes with the C₃ shift** — a perfectly valid
-  C₃-invariant reference giving Q=2/3.
-- **The trace is privileged ONLY by full U(3) invariance = PRR.** Verified: Haar `U(3)` leaves `ρ_τ`
-  invariant (dev ~1e-15) but not `ρ_(1:1)` (dev ~0.35). Full inner-automorphism invariance is the **PRR**
-  premise — `inner_automorphism_invariance_...` is **unaudited, user-approval-required, NOT derived from
-  framework baseline**. The only symmetry framework baseline genuinely supply on the generation factor is **C₃**, which leaves the
-  entire `(w_s,w_d)` cone open. The "dynamics-independence ⇒ trace" steelman collapses into PRR
-  (KMS-for-all-dynamics ⟺ tracial ⟺ U(3)-invariant; framework baseline give no generation Hamiltonian).
+This note proves only the following finite statement:
 
-## A second correction (to the build's own MAP, and my framing)
-**`r=|b|²/a²` is a spectral invariant of the operator `H` alone — the reference state does NOT enter the
-retained Koide functional** (`Q=(a²+2b²)/3a²`, no `ρ`). So the reference-state cone does **not** by itself
-select `r=1/2`: the posited bridge `r* = w_d/(2w_s)` is an **inserted equation-of-state** (variance
-minimization gives a different `b`), not derived. The measure framing correctly *localizes* the unaudited
-premise (PRR), but it is **not** the mechanism that fixes the value.
+> Given only the explicit `C3` generation-factor symmetry, the invariant
+> reference-state cone is two-dimensional and does not select the tracial
+> `1:2` block weighting.
 
-## Honest status of the value question (superseding "Q=1 default")
-- **Q=1 is NOT forced** — it is *default-pending-PRR*. Drop the unaudited full-U(3) premise and the trace
-  loses its privilege.
-- **Q=2/3 is REACHABLE, not derived** — an admissible C₃-invariant reference gives it, but no native
-  principle (stronger than C₃, weaker than PRR) selects the `(1:1)` point, and the state→operator bridge
-  does not load-bear.
-- **NEITHER Q=1 nor Q=2/3 is forced by framework baseline alone.** The block weighting is **physically observable**
-  (any C₃-invariant observable touching the doublet distinguishes the states: `⟨R⟩_τ=0` vs
-  `⟨R⟩_(1:1)=1/4`), not gauge — *provided* the doublet `(J−I)` direction is a retained observable and the
-  a-vs-b orientation is not separately convention.
+It also checks that the displayed Koide `Q` functional is a spectral function
+of the operator parameters and does not use the reference state. Therefore the
+reference-state cone alone does not derive either a `Q=1` default or a
+`Q=2/3` value.
 
-## The decisive, decidable, no-import next step
-The value is fixed **at the readout structure, not the reference-state choice**: does the physical mass
-readout factor through the **SO(2)/U(1)_b doublet-frame quotient** — counting the doublet **once**
-(`1:1 → r=1/2`) — or use its full **2-real-dimensional** content (`1:2 → r=1`)? This is a structural
-question about the **already-retained** Koide functional (`det_R(αP_s+βP_d)=αβ²` currently carries the
-`(1,2)` weighting on the unreduced carrier), requiring **no PRR and no new axiom**. It supersedes both the
-reference-cone framing and the inserted `r*` bridge, and pairs with the unaudited
-`koide_real_rep_block_count_permitted_not_forced` (runner 15/15) whose stated surviving handle is this same quotient.
+## Direct Checks
 
-## Reframed campaign bottom line
-The framework derives all charged-lepton flavor **except** whether the doublet is counted once (complex /
-SO(2)-quotient → Q=2/3, observed) or twice (real dimension → Q=1). That single binary is **not** settled by
-framework baseline; "Q=1 default" was an artifact of silently assuming PRR (full-unitary symmetry where only C₃ is
-native). The genuinely open, import-free question is the doublet-frame quotient in the retained readout.
+1. **`C3`-invariant states form a two-block cone.** With
+   `P_s=J_all/3` and `P_d=I-P_s`, a `C3`-invariant reference state is scalar
+   on the singlet and doublet blocks. The tracial state has block masses
+   `1:2`, while a non-tracial state can have block masses `1:1`.
 
-## Stale-citation flags (verified vs origin/main ledger)
-- Retained: `koide_circulant_q_two_thirds` (operator functional); `pre_record_reference_state` (retained
-  but identification-half **excluded** from scope); `prr_local_derivation_from_jaynes` (retained_bounded,
-  **spatial-qubit only**, does not act on the generation factor).
-- **Unaudited (the single load-bearing premise):** `inner_automorphism_invariance_tracial_identification`
-  (full-U(3)/PRR); also `axiom_first_kms_condition`, `koide_real_rep_block_count_permitted_not_forced`.
+2. **The `1:1` state is explicit and admissible.**
+   `rho_(1:1)=1/2 P_s + 1/4 P_d` is positive semidefinite, trace one, and
+   commutes with the `C3` shift. Thus `C3` covariance alone leaves this state
+   in the admissible cone.
+
+3. **Full `U(3)` invariance is a stronger selector.** The normalized trace is
+   invariant under sampled `U(3)` conjugations, while `rho_(1:1)` is not. This
+   is a mathematical comparison of symmetry strength, not a claim that the repo
+   baseline either includes or excludes full `U(3)` on the generation factor.
+
+4. **The reference state is not the displayed `Q` readout.** In the displayed
+   formula, `r=|b|^2/a^2` is a spectral parameter of `H`; no `rho` appears.
+   Any bridge from reference-state block masses to operator parameter `r` is an
+   additional equation of state outside this packet.
+
+## What This Does Not Claim
+
+This packet intentionally does not decide:
+
+- whether framework baseline supplies only `C3` on the generation factor;
+- whether a stronger generation-factor symmetry is available elsewhere;
+- whether full `U(3)`/PRR is accepted as a baseline principle;
+- whether the physical mass readout counts the doublet once or twice;
+- whether `Q=1` or `Q=2/3` is selected by the full framework.
+
+The repaired conclusion is only the finite no-go: `C3` covariance by itself
+does not force the trace, and reference-state weighting by itself does not fix
+the displayed operator readout.
+
+## Provenance
+
+- Projector algebra, admissibility of `rho_(1:1)`, sampled full-`U(3)`
+  non-invariance, and the displayed `Q`-formula independence check are verified
+  directly by the paired runner.
+- No `docs/audit/**` status is updated by this packet.
+- No new axiom is introduced.

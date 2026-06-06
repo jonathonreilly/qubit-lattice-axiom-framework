@@ -24,10 +24,10 @@ supplied finite carrier
   => normalized source measure and trace/RN expectation identity
 ```
 
-The prototype covers the `14` `source_measure_or_rn_bridge` rows and the `10`
+The prototype covers the `14` `source_measure_or_rn_bridge` rows and the `7`
 `trace_normalization_reference` rows from the measure/weight subdivision.
 
-Total source/trace prototype rows indexed here: `24`.
+Total source/trace prototype rows indexed here: `21`.
 
 ## Meaning
 
@@ -86,8 +86,8 @@ The runner verifies:
   expectations;
 - unsupported source measures are rejected;
 - RN densities compose exactly;
-- the `14` source-measure/RN rows and `10` trace-normalization rows are present;
-- the combined source/trace prototype row count is `24`;
+- the `14` source-measure/RN rows and `7` trace-normalization rows are present;
+- the combined source/trace prototype row count is `21`;
 - the audit ledger hash is unchanged after the scan;
 - no audit verdict, audit-data write, retained/promoted claim,
   normalized-measure selector, generation/Koide selection, physical-reference

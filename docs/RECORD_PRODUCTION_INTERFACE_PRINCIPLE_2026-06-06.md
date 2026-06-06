@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-06
 **Claim type:** bounded_theorem
-**Status:** exact-support branch-local typing/interface principle; not a new
+**Status:** bounded-support branch-local typing/interface principle; not a new
 axiom, not a record-production closure, and not an audit verdict.
 **Primary runner:**
 [`scripts/frontier_record_production_interface_principle_2026_06_06.py`](../scripts/frontier_record_production_interface_principle_2026_06_06.py)
@@ -22,11 +22,11 @@ pre-record quantum state
 ```
 
 The principle is a typing rule derived from the current axiom boundary and the
-landed Record stack. It is not an additional axiom. The Record axiom already
-says a record is a durable realized-outcome registration with finite scalar
-additivity over finite disjoint records. It also explicitly withholds
-probability, measurement/decoherence dynamics, sector generation, weighting,
-normalization, and record-production dynamics.
+accepted Minimal Axioms authority. It is not an additional axiom. The Record
+axiom already says a record is a durable realized-outcome registration with
+finite scalar additivity over finite disjoint records. It also explicitly
+withholds probability, measurement/decoherence dynamics, sector generation,
+weighting, normalization, and record-production dynamics.
 
 ## Interface Principle
 
@@ -77,6 +77,25 @@ atoms. Probability can re-enter as a predictive state before the event, as an
 ensemble over many runs, or as a model for the production bridge. It is not the
 individual durable record.
 
+## Dependencies And Scope
+
+**Accepted axiom premise, load-bearing:**
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md). The runner uses
+only the Minimal Axioms text for the one-qubit Quantum carrier, durable realized
+Record atom, finite scalar additivity, and the explicit exclusion of
+probability, measurement/decoherence dynamics, sector generation, weighting,
+normalization, and record-production dynamics from Record.
+
+**Finite arithmetic, load-bearing:** the runner's toy type inventory distinguishes
+predictive Born weights from realized one-hot atoms, integral count updates, and
+fractional ensemble expected updates.
+
+**Context only, not load-bearing:** companion Record-stack notes about
+classicalization, finite alphabets, formation constraints, Kraus algebra, and
+layer reconciliation are useful downstream consumers of this typing principle,
+but this row no longer reads them as proof dependencies. Re-audit should treat
+them as outside the restricted proof packet for this row.
+
 ## What This Unlocks
 
 - Audit rows can split "needs a probability law" from "only needs a realized
@@ -113,5 +132,5 @@ python3 scripts/cached_runner_output.py --refresh scripts/frontier_record_produc
 Expected summary:
 
 ```text
-SUMMARY: PASS=55 FAIL=0
+SUMMARY: PASS=28 FAIL=0
 ```

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.py
-runner_sha256: 88c211aade32c14c7d403e3378149c5d2adaadf688c817ad4f6010cf6bb91428
+runner_sha256: 48de9132a5b52670a46d3290e593ffef895dee05466512abde5bed1e8f04cf1b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -43,7 +43,8 @@ PASS density sequence is 1, 1/2, 2/3, 3/4
 ------------------------------------------------------------------------------
 Interface firewalls
 ------------------------------------------------------------------------------
-PASS family-lift rule is supplied
+PASS stable predicate is supplied
+PASS family-lift authority is not applied
 PASS family-lift is not derived from Record
 PASS unbounded retained authority is not applied
 PASS audit verdict is not applied
@@ -54,24 +55,25 @@ Document checks
 ------------------------------------------------------------------------------
 PASS document contains phrase: The interface has three pieces
 PASS document contains phrase: supplied projection maps
-PASS document contains phrase: supplied lift rule
+PASS document contains phrase: supplied stable predicate
 PASS document contains phrase: This is not an unbounded retained claim
 PASS document contains phrase: leading_marker_is_one(C_n) = true
 PASS document contains phrase: prefix density is not stable
 PASS document contains phrase: pre-record law carries probabilities
 PASS document contains phrase: post-record records carry realized information
-PASS document contains phrase: actual_current_surface_status: exact-support
+PASS document contains phrase: actual_current_surface_status: bounded-support
 PASS document contains phrase: audit_required_before_effective_retained: true
 PASS document contains phrase: bare_retained_allowed: false
 PASS document avoids live retained/promotion leaks
 
-SUMMARY: PASS=38 FAIL=0
-POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE=TRUE
+SUMMARY: PASS=39 FAIL=0
+POST_RECORD_FINITE_LADDER_COMPATIBILITY_WITNESS=TRUE
 LADDER_LEVELS=4
 SUPPLIED_PROJECTIONS_COMMUTE=TRUE
 STABLE_PREDICATE=leading_marker_is_one
 DENSITY_USED_AS_STABLE_LIFT=FALSE
-SUPPLIED_FAMILY_LIFT_RULE=TRUE
+SUPPLIED_STABLE_PREDICATE=TRUE
+FAMILY_LIFT_AUTHORITY_APPLIED=FALSE
 FAMILY_LIFT_DERIVED_FROM_RECORD=FALSE
 UNBOUNDED_RETAINED_AUTHORITY_APPLIED=FALSE
 AUDIT_VERDICT_APPLIED=FALSE

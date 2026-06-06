@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
-runner_sha256: 0f961d4b390fcf276a2c7388805b8b2fb835daa9b257a0dd7e3f1d757b1cf8db
+runner_sha256: 020a6c14caa61d6ec87d1e3113502d9b2fd87233baa5768ba7a83772834b24bf
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.05
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
 ----- stdout -----
 
 ------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ PASS index states no audit verdicts are applied
 Cached summary checks
 ------------------------------------------------------------------------------
 PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt exists
-FAIL logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt has summary for PR #2850
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt has summary for PR #2850
 PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt exists
 PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt has summary for PR #2853
 PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt exists
@@ -62,9 +62,9 @@ PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewal
 PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt exists
 PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt has summary for PR #2861
 PASS logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt exists
-FAIL logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt has summary for PR #2864
+PASS logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt has summary for PR #2864
 PASS logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt exists
-FAIL logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt has summary for PR #2868
+PASS logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt has summary for PR #2868
 PASS logs/runner-cache/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.txt exists
 PASS logs/runner-cache/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.txt has summary for PR #2871
 PASS logs/runner-cache/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.txt exists
@@ -94,7 +94,7 @@ PASS dial forced or selected flag is false
 PASS finite-alone unbounded retained flag is false
 PASS family lift derived from Record flag is false
 
-SUMMARY: PASS=68 FAIL=3
+SUMMARY: PASS=71 FAIL=0
 POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX=TRUE
 EXTENDED_STACK_PRS=10
 EXTENDED_STACK_EXACT_SUPPORT=7

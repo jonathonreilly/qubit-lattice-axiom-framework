@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cosmology_from_mass_spectrum.py
-runner_sha256: d09674d07e6b2a070633794a764da27a92758ccafb50c3ee607f5f73934bba2f
+runner_sha256: 0935d6144172aec8a209ec8513a6b5976160ea0de290068834caa3c9a415f4e1
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -133,6 +133,19 @@ Part 8: cross-link through all five phases of the attack plan
   [PASS] full cascade Phase 1 -> Phase 5 lands within 5% at every retained link  (cascade consistency check)
 
 ----------------------------------------------------------------------------------------
+Part 8b: explicit dependency-edge repair guards
+----------------------------------------------------------------------------------------
+  [PASS] dependency source exists: NEUTRINO_MASS_DERIVED_NOTE.md  (path=docs/NEUTRINO_MASS_DERIVED_NOTE.md)
+  [PASS] note exposes markdown dependency edge: NEUTRINO_MASS_DERIVED_NOTE.md  ([`NEUTRINO_MASS_DERIVED_NOTE.md`](NEUTRINO_MASS_DERIVED_NOTE.md))
+  [PASS] dependency source exists: OMEGA_LAMBDA_DERIVATION_NOTE.md  (path=docs/OMEGA_LAMBDA_DERIVATION_NOTE.md)
+  [PASS] note exposes markdown dependency edge: OMEGA_LAMBDA_DERIVATION_NOTE.md  ([`OMEGA_LAMBDA_DERIVATION_NOTE.md`](OMEGA_LAMBDA_DERIVATION_NOTE.md))
+  [PASS] dependency source exists: DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md  (path=docs/DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md)
+  [PASS] note exposes markdown dependency edge: DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md  ([`DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md`](DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md))
+  [PASS] dependency source exists: DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md  (path=docs/DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md)
+  [PASS] note exposes markdown dependency edge: DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md  ([`DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md))
+  [PASS] dependency-edge repair section names remaining eta/Sommerfeld blockers  (edge repair is not a status promotion)
+
+----------------------------------------------------------------------------------------
 Part 9: Phase 5 summary
 ----------------------------------------------------------------------------------------
   What Phase 5 RETAINS:
@@ -157,7 +170,7 @@ Part 9: Phase 5 summary
     cosmology row still needs the bounded R and matter-bridge closures.
 
 ========================================================================================
-  TOTAL: PASS=14, FAIL=0
+  TOTAL: PASS=23, FAIL=0
 ========================================================================================
 
 ----- stderr -----

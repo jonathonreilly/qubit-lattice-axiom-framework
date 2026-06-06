@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
-runner_sha256: 0ddae83ae2c9a753274134159c7fa9ed6d7a47aaf6fe631298b331dca13139f9
+runner_sha256: b5803dc3621e095aa40c73369c7ab964e157dcedf8187cfc9c4a46b435b4a522
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 1.03
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 1.12
+status: ok
 ----- stdout -----
 
 ------------------------------------------------------------------------------
@@ -15,10 +15,15 @@ PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md con
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Normalized measure is not selected dial.
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Finite normalization can certify
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization` | 44
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization` | 43
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure/weight/normalization rows
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
+PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py exists
+PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py contains: def selector_subbucket
+PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py contains: EXPECTED_SUBCOUNTS
+PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py contains: measure_weight_normalization
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: selected dial value | selector/invariance/target rule
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
@@ -41,15 +46,15 @@ PASS selector rule is still needed for selected dial readiness
 ------------------------------------------------------------------------------
 Measure/weight row checks
 ------------------------------------------------------------------------------
-FAIL measure/weight row count is current snapshot :: 43
-FAIL measure lane counts match expected :: Counter({'source_measure_or_rn_bridge': 14, 'character_path_channel_weight': 9, 'trace_normalization_reference': 7, 'selector_tangent_readout_weight': 7, 'generic_measure_weight_import': 6})
+PASS measure/weight row count is current snapshot :: 43
+PASS measure lane counts match expected :: Counter({'source_measure_or_rn_bridge': 14, 'character_path_channel_weight': 9, 'trace_normalization_reference': 7, 'selector_tangent_readout_weight': 7, 'generic_measure_weight_import': 6})
 PASS measure lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 14, 'character_path_channel_weight': 9, 'trace_normalization_reference': 7, 'selector_tangent_readout_weight': 7, 'generic_measure_weight_import': 6})
 PASS representative row present in character_path_channel_weight :: architecture_note_directional_measure
 PASS representative row present in generic_measure_weight_import :: born_scattering_comparison_note
 PASS representative row present in selector_tangent_readout_weight :: yt_exact_hessian_selector_uniqueness_note
 PASS representative row present in source_measure_or_rn_bridge :: source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30
 PASS representative row present in trace_normalization_reference :: pre_record_reference_state_tracial_derivation_note_2026-05-20
-PASS audit ledger hash is unchanged :: 013de3f321a88d71ea6a2c491668d8fe9f8013821822eaeb00df6da5c3b020a9
+PASS audit ledger hash is unchanged :: c5744aeb88243780f2eec7253d06a3761535fa1885eddaa76c747b86376b82d9
 
 Measure/weight lane counts:
   character_path_channel_weight: 9
@@ -121,7 +126,7 @@ PASS Record-derived measure/prior flag is false
 PASS Record-derived Born law flag is false
 PASS production dynamics derived flag is false
 
-SUMMARY: PASS=39 FAIL=2
+SUMMARY: PASS=46 FAIL=0
 MEASURE_WEIGHT_NORMALIZATION_ROWS=43
 CHARACTER_PATH_CHANNEL_WEIGHT_ROWS=9
 GENERIC_MEASURE_WEIGHT_IMPORT_ROWS=6

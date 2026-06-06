@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py
-runner_sha256: 4d3b862b40f106ad99e8884ba1301516acece8075418ae3ef55465e0e96dea11
+runner_sha256: 522a786c191016378f0061baf27db7e670fc94384f21c3e510fb5c622ce5fa20
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 D3 lower-bound source-packet audit gate
@@ -43,18 +43,23 @@ B. source-packet artifact issue
 [PASS] parent note links packet path: scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
 [PASS] required packet path exists: logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt
 [PASS] parent note links packet path: logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt
-[PASS] source-packet verifier contains marker: finite_k_bridge_runner
-[PASS] source-packet verifier contains marker: original_cache
-[PASS] source-packet verifier contains marker: cache_sha_fresh
-[PASS] source-packet verifier contains marker: bridge_json_fail_count_zero
-[PASS] source-packet verifier contains marker: SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=
+[PASS] required packet path exists: outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
+[PASS] parent note links packet path: outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
+[PASS] source-packet verifier contains label: finite_k_bridge_runner
+[PASS] source-packet verifier contains label: original_cache
+[PASS] source-packet verifier contains label: cache_sha_fresh
+[PASS] source-packet verifier contains label: bridge_json_fail_count_zero
+[PASS] source-packet verifier contains label: source_full_length
+[PASS] source-packet verifier contains label: SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=
 [PASS] source-packet cache belongs to current verifier -- scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
-[PASS] source-packet cache SHA is fresh -- b8fd7df690a8702cfda889cd2659fd653416abb667527f665794ee5dcd915b5a == b8fd7df690a8702cfda889cd2659fd653416abb667527f665794ee5dcd915b5a
+[PASS] source-packet cache SHA is fresh -- cfc393928471758f7b4b2787cd6186526c0a529369b45899dc6d164fb8795083 == cfc393928471758f7b4b2787cd6186526c0a529369b45899dc6d164fb8795083
 [PASS] source-packet cache exits cleanly -- exit_code=0 status=ok
-[PASS] source-packet cache contains snippet: SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=55 FAIL=0
+[PASS] source-packet cache contains snippet: SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=56 FAIL=0
 [PASS] source-packet cache contains snippet: cache_sha_fresh:original_cache
 [PASS] source-packet cache contains snippet: cache_snippet_present:original_cache:I_3/P = <1e-10
 [PASS] source-packet cache contains snippet: cache_snippet_present:finite_k_bridge_cache:SUMMARY: PASS=56 FAIL=0
+[PASS] source-packet verifier JSON exists -- outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
+[PASS] source-packet verifier JSON reports zero failures -- {'pass': 56, 'fail': 0}
 [PASS] parent note keeps boundary phrase: finite-runner lower-bound support only
 [PASS] parent note keeps boundary phrase: not a unique-dimension theorem
 [PASS] parent note keeps boundary phrase: does not authorize any framework-baseline rewrite
@@ -70,7 +75,7 @@ C. supporting note boundaries
 [PASS] forbidden overclaim absent: repo-wide framework-baseline rewrite is authorized
 [PASS] forbidden overclaim absent: self-consistency uniquely selects d = 3
 
-SCORECARD: PASS=53 FAIL=0
+SCORECARD: PASS=58 FAIL=0
 VERDICT: exact support that the current-main source packet exposes the artifacts named by the parent D3 lower-bound runner-artifact issue. This does not retag the audit ledger or prove full D=3 dimension selection.
 
 ----- stderr -----

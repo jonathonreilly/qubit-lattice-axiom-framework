@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_audit_application_map_2026_06_06.py
-runner_sha256: f3068e174c2e922c35003a4a99d2ac6d31f8e366f54c87fae67df37cd248e343
+runner_sha256: e85f85d111e0a240f4c57f2abeac7cc59c58ac8acb1a2dadf686676f7895b1df
 timeout_sec: 120
-exit_code: 1
+exit_code: 0
 elapsed_sec: 0.04
-status: nonzero_exit
+status: ok
 ----- stdout -----
 Record axiom audit-application map
 actual_current_surface_status: bounded-support
@@ -18,8 +18,8 @@ A. source availability and anchors
 [PASS] record_unbounded_additivity_schema: anchor phrase present -- arbitrary finite-prefix schema
 [PASS] record_unbounded_additivity_schema: anchor phrase present -- production of those records
 [PASS] flavor_det_character_selection: source file exists -- docs/FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md
-[FAIL] flavor_det_character_selection: anchor phrase present -- Record axiom supplies the finite additivity target
-[FAIL] flavor_det_character_selection: anchor phrase present -- residual premise
+[PASS] flavor_det_character_selection: anchor phrase present -- the exact Record typing theorem supplies the object-type firewall
+[PASS] flavor_det_character_selection: anchor phrase present -- regular additive readouts of positive multiplicative amplitudes
 [PASS] darwinism_local_observability: source file exists -- docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md
 [PASS] darwinism_local_observability: anchor phrase present -- local-observability
 [PASS] darwinism_local_observability: anchor phrase present -- Additivity != redundancy
@@ -86,8 +86,8 @@ C. audit discipline
 [PASS] forbidden closure claims are absent from classifier outputs
 [PASS] classifier emits only support/gate language
 
-SCORECARD: PASS=37 FAIL=2
-VERDICT: record audit application map failed; do not use this artifact.
+SCORECARD: PASS=39 FAIL=0
+VERDICT: The Record schema fully covers only durable finite additivity/count-readout requirements. Concrete downstream lanes remain partial whenever they need regularity, log-det origin, local observability, record-production dynamics, chirality, color matter realization, rates, or dial selection.
 
 ----- stderr -----
 

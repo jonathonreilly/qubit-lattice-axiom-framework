@@ -272,28 +272,43 @@ bounded by
 while `N_paths(x, y, n) = 0` for `n < d(x,y) / R_int` (no path of
 fewer than `d(x,y) / R_int` interaction "hops" can connect them).
 
-### Step 3 — Geometric series + exponential bound
+### Step 3 — Weighted-path exponential bound
 
-Combining (4) and (5):
+Combining (4) and (5), the Duhamel expansion is a finite path
+series. Instead of estimating the truncated Poisson tail directly,
+insert an exponential path weight before summing. Let `μ > 0`. Every
+contributing path from `x` to `y` with `n` interaction hops satisfies
+`d(x,y) <= n R_int`, hence
 
 ```text
-    ‖ [A(t), B] ‖   ≤   2 ‖A‖ ‖B‖ · Σ_{n ≥ d(x,y)/R_int}  (J_* · D_int · |t| · R_int)^n / n!     (6)
-                    ≤   2 ‖A‖ ‖B‖ · exp( J_* D_int R_int |t| )
-                         · ( e J_* D_int R_int |t| / d(x,y) )^{d(x,y)/R_int}
+    1 <= exp(-μ d(x,y)) · exp(μ n R_int).                         (6a)
 ```
 
-By the elementary inequality `(a/n)^n ≤ exp(-n) · exp(n log(a/n))`,
-expanding around `n = d(x,y) / R_int` gives the Lieb–Robinson bound
+The commutator expansion with the conservative `2 J_*` per-step
+commutator weight is therefore bounded by
+
+```text
+    ‖ [A(t), B] ‖
+      ≤ 2 ‖A‖ ‖B‖ · exp(-μ d(x,y))
+          · Σ_{n ≥ 0} (2 J_* D_int exp(μ R_int) |t|)^n / n!        (6)
+
+      = 2 ‖A‖ ‖B‖
+          · exp( -μ d(x,y) + 2 J_* D_int exp(μ R_int) |t| ).
+```
+
+Taking `μ = 1/R_int` gives the Lieb–Robinson bound
 
 ```text
     ‖ [A(t), B] ‖   ≤   2 ‖A‖ ‖B‖ · exp( -(d(x,y) - v_LR |t|) / ξ )    (7)
 ```
 
 with `v_LR = 2 e J_* D_int R_int` and `ξ = R_int`. This is (L1) with
-the constants in (1). The previous source text used the per-term max
-`J` and the bare cubic coordination in this slot; the corrected
-parent-source constant is the per-site interaction norm `J_*` times
-the interaction adjacency degree.
+the constants in (1). This repair does not use the earlier truncated
+Poisson-tail display or the false inequality previously placed under
+Step 3. The previous source text also used the per-term max `J` and
+the bare cubic coordination in this slot; the corrected parent-source
+constant is the per-site interaction norm `J_*` times the interaction
+adjacency degree.
 
 ### Step 4 — Cluster decomposition (L2)
 

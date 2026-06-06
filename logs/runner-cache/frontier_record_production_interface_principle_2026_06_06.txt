@@ -1,23 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_production_interface_principle_2026_06_06.py
-runner_sha256: 86e237a5c5b5636c2503a66097788eb2d63d753726646eead4c3936205e6bf59
+runner_sha256: 9885e559aea0286ad51de02baf64409b1d1b28261c4147429014c744da4d8a4d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.02
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Record production interface principle
 ================================================================
 [PASS] gate_note exists (docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md)
 [PASS] minimal_axioms exists (docs/MINIMAL_AXIOMS_2026-06-05.md)
-[PASS] classicalization exists (docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md)
-[PASS] post_record_dynamics exists (docs/RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md)
-[PASS] formation_constraint exists (docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md)
-[PASS] kraus_isometry exists (docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md)
-[PASS] layer_reconciliation exists (docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md)
-[PASS] gate status is exact support but not axiom or closure
+[PASS] gate status is bounded support but not axiom or closure
 [PASS] gate states the four-stage interface
-[PASS] gate says the principle is not an added axiom
+[PASS] gate cites Minimal Axioms as accepted axiom premise
+[PASS] gate says companion Record-stack notes are context only
 [PASS] gate keeps probability on predictive, ensemble, or bridge surfaces
 [PASS] gate preserves dial non-forcing
 [PASS] minimal axioms provide one-qubit Quantum carrier
@@ -25,29 +21,6 @@ Record production interface principle
 [PASS] minimal axioms provide finite scalar additivity
 [PASS] minimal axioms exclude probability and dynamics from Record
 [PASS] minimal axioms keep record-production dynamics outside axioms
-[PASS] classicalization note names pre-record predictive weights
-[PASS] classicalization note names post-record realized value
-[PASS] classicalization note forbids probability as individual record
-[PASS] classicalization note says post-record information is not fourth axiom
-[PASS] classicalization note has dynamics benefit
-[PASS] classicalization note runner result is present
-[PASS] post-record dynamics note has finite alphabet premise
-[PASS] post-record dynamics note gives append/count layer
-[PASS] post-record dynamics note excludes production probabilities and rates
-[PASS] post-record dynamics note is exact support not probability closure
-[PASS] formation note attacks record-production dynamics gate
-[PASS] formation note supplies non-demolition constraint
-[PASS] formation note records necessity and sufficiency
-[PASS] formation note does not derive dynamics or couplings
-[PASS] formation note is bounded model bridge not axiom content
-[PASS] Kraus note assumes W rather than deriving it
-[PASS] Kraus note gives exact finite instrument algebra once W is supplied
-[PASS] Kraus note excludes persistent-record dynamics
-[PASS] Kraus note supplies formation bridge target
-[PASS] layer reconciliation names exact post-record layer
-[PASS] layer reconciliation separates formation from post-record information
-[PASS] layer reconciliation forbids production outputs from post-record layer
-[PASS] layer reconciliation preserves bounded composition status
 [PASS] typed output sets are pairwise distinct at the interface
 [PASS] formation bridge overlaps neither pure predictive nor pure count outputs
 [PASS] post-record layer does not supply forbidden outputs
@@ -68,8 +41,8 @@ INTERFACE:
   pre_record: predictive quantum state/effect surface
   formation:  separate record-writing bridge or instrument
   post_record: realized atom -> words/counts/readouts
-STATUS: exact-support typing/interface principle; audit_required_before_effective_retained=true
-SUMMARY: PASS=55 FAIL=0
+STATUS: bounded-support typing/interface principle; audit_required_before_effective_retained=true
+SUMMARY: PASS=28 FAIL=0
 
 ----- stderr -----
 

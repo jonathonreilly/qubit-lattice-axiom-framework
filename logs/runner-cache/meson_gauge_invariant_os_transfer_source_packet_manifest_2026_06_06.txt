@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py
-runner_sha256: 79e0fd9fbbd71a1d1da42918fbe9f3c85941c0106334102eb9c2c3e100176b3a
+runner_sha256: 532bfa4e8f46ca88c098e396083b3fd86f842093712894eed8c411adadc0f998
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -17,14 +17,14 @@ MESON OS TRANSFER: RESTRICTED SOURCE PACKET MANIFEST
 [PASS] note_names_manifest_artifact:manifest_runner: scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
 [PASS] note_names_manifest_artifact:manifest_cache: logs/runner-cache/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.txt is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
 [PASS] note_names_manifest_artifact:manifest_json: outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json is named in docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
-[PASS] source_untruncated:primary_runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py has 47163 bytes
-[PASS] source_marker:primary_runner:def block_metric_per_mode: def block_metric_per_mode present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
-[PASS] source_marker:primary_runner:def block_fwd_propagator_berezin: def block_fwd_propagator_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
-[PASS] source_marker:primary_runner:def block_metric_spacetime_eigs: def block_metric_spacetime_eigs present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
-[PASS] source_marker:primary_runner:def meson_correlator_full_berezin: def meson_correlator_full_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
-[PASS] source_marker:primary_runner:def u_averaged_meson: def u_averaged_meson present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
-[PASS] source_marker:primary_runner:det(M[U]) is ACTUALLY applied: det(M[U]) is ACTUALLY applied present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
-[PASS] source_marker:primary_runner:print(f"SCORECARD PASS={npass} FAIL={nfail}"): print(f"SCORECARD PASS={npass} FAIL={nfail}") present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_full_length:primary_runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py has 47163 bytes
+[PASS] source_contains:primary_runner:def block_metric_per_mode: def block_metric_per_mode present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:def block_fwd_propagator_berezin: def block_fwd_propagator_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:def block_metric_spacetime_eigs: def block_metric_spacetime_eigs present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:def meson_correlator_full_berezin: def meson_correlator_full_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:def u_averaged_meson: def u_averaged_meson present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:det(M[U]) is ACTUALLY applied: det(M[U]) is ACTUALLY applied present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] source_contains:primary_runner:print(f"SCORECARD PASS={npass} FAIL={nfail}"): print(f"SCORECARD PASS={npass} FAIL={nfail}") present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
 [PASS] cache_runner_matches:primary_cache: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py == scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
 [PASS] cache_sha_fresh:primary_cache: cache sha ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5 current sha ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5
 [PASS] cache_exit_ok:primary_cache: exit_code=0 status=ok

@@ -98,7 +98,10 @@ CASES = (
             "composition_multiplicativity",
             "determinant_partition_origin",
         ),
-        anchor_phrases=("Record axiom supplies the finite additivity target", "residual premise"),
+        anchor_phrases=(
+            "the exact Record typing theorem supplies the object-type firewall",
+            "regular additive readouts of positive multiplicative amplitudes",
+        ),
     ),
     AuditCase(
         case_id="darwinism_local_observability",

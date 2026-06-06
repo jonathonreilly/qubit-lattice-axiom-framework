@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/probe_kawamoto_smit_phase_forcing.py
-runner_sha256: 8974e07313a32cdd340531be0a0b205a5130c2247bf3df449828ca58e3e83cea
+runner_sha256: 968381499472aa6f822651feeba9359db20b95c43a31ded9a7259d459c5afdc4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 ========================================================================
@@ -14,6 +14,7 @@ Companion: docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
 
 Verifies: T†(x) γ_μ T(x + μ̂) = η_μ(x) · I_2
 with T(x) = σ_1^{x_1} σ_2^{x_2} σ_3^{x_3}
+and the Clifford -1 plaquette cocycle/gauge-class uniqueness check.
 
 Expected K-S phases:
   η_1 = 1
@@ -50,9 +51,17 @@ SUMMARY: PASS=24 FAIL=0 (out of 24 = 8 sites × 3 directions)
 Cross-check: σ_1 σ_2 σ_3 = i I_2 (chirality central pseudoscalar)
   σ_1 σ_2 σ_3 = I · I_2  (= i · I_2 verified)
 
+Cocycle/gauge-class checks:
+  canonical η satisfies -1 plaquette cocycle? True (162 checks)
+  gauge-transformed η satisfies same cocycle? True (162 checks)
+  gauge transform recovered on finite simply connected box? True (288 edge checks)
+  T'(x)=g(x)T(x) scalarizes to transformed η? True (24 checks)
+  invalid all-plus sign system rejected by cocycle? True (1 checks before first failure)
+
 Bounded theorem (T2) — Kawamoto-Smit Phase Forcing — verified.
 Spin-rotation T(x) = σ_1^{x_1} σ_2^{x_2} σ_3^{x_3} diagonalizes
 the kinetic operator into Kawamoto-Smit phases on all 8 unit-cell sites.
+The phase system is unique up to Z2 gauge on the checked simply connected boxes.
 
 ----- stderr -----
 

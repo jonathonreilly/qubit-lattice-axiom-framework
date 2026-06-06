@@ -86,6 +86,13 @@ MODEL_FALLBACK = "gpt-5.5"
 # only gpt-5.5 and newer are accepted.
 MIN_AUDIT_MODEL_RANK = (5, 5)
 
+# The prompt template promises source visibility, and several current
+# runner-artifact blockers hinge on elided load-bearing functions. Keep the
+# packet bounded, but high enough to include the largest ordinary runners and
+# helpers now used by the audit queue.
+RUNNER_SOURCE_CHAR_LIMIT = 120_000
+HELPER_SOURCE_CHAR_LIMIT = 120_000
+
 
 def _meets_floor(model: str | None) -> bool:
     """True if model parses to a rank >= MIN_AUDIT_MODEL_RANK."""
@@ -587,10 +594,9 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         if rp.exists():
             try:
                 src = rp.read_text(encoding="utf-8", errors="replace")
-                MAX = 30_000
-                if len(src) > MAX:
-                    head = src[: MAX // 2]
-                    tail = src[-MAX // 2 :]
+                if len(src) > RUNNER_SOURCE_CHAR_LIMIT:
+                    head = src[: RUNNER_SOURCE_CHAR_LIMIT // 2]
+                    tail = src[-RUNNER_SOURCE_CHAR_LIMIT // 2 :]
                     runner_source = (
                         f"{head}\n\n"
                         f"... [truncated; runner is {len(src)} chars total] ...\n\n"
@@ -626,10 +632,9 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             continue
         try:
             hsrc = full_hp.read_text(encoding="utf-8", errors="replace")
-            MAX_HELPER = 20_000
-            if len(hsrc) > MAX_HELPER:
-                head = hsrc[: MAX_HELPER // 2]
-                tail = hsrc[-MAX_HELPER // 2 :]
+            if len(hsrc) > HELPER_SOURCE_CHAR_LIMIT:
+                head = hsrc[: HELPER_SOURCE_CHAR_LIMIT // 2]
+                tail = hsrc[-HELPER_SOURCE_CHAR_LIMIT // 2 :]
                 hsrc = (
                     f"{head}\n\n"
                     f"... [truncated; helper is {len(hsrc)} chars total] ...\n\n"

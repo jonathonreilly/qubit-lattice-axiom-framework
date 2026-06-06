@@ -22,12 +22,12 @@ class StackPr:
 
 
 STACK = (
-    StackPr(2850, "directed certificate examples", "exact-support", "SUMMARY: PASS=59 FAIL=0"),
+    StackPr(2850, "directed certificate examples", "exact-support", "SUMMARY: PASS=64 FAIL=0"),
     StackPr(2853, "kernel-selection firewall", "no-go", "SUMMARY: PASS=52 FAIL=0"),
     StackPr(2856, "supplied kernel selection rule", "exact-support", "SUMMARY: PASS=39 FAIL=0"),
     StackPr(2858, "target-vector firewall", "no-go", "SUMMARY: PASS=32 FAIL=0"),
     StackPr(2861, "admitted sample target-vector", "exact-support", "SUMMARY: PASS=30 FAIL=0"),
-    StackPr(2864, "dynamics authority stack map", "exact-support", "SUMMARY: PASS=47 FAIL=0"),
+    StackPr(2864, "dynamics authority stack map", "exact-support", "SUMMARY: PASS=52 FAIL=0"),
 )
 
 LOGS = (

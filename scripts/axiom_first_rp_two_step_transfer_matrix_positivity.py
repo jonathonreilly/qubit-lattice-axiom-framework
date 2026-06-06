@@ -145,12 +145,18 @@ from __future__ import annotations
 
 import math
 from itertools import combinations
+from pathlib import Path
 
 import numpy as np
 
 MASS = 0.5
 TOL_DISP = 1e-9
 TOL_PSD = 1e-10
+NOTE_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "docs"
+    / "AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
+)
 
 
 # ---------------------------------------------------------------------------
@@ -489,6 +495,55 @@ def r2_os_gram(Ls: int, m: float):
     }
 
 
+def check_three_factor_bridge_source() -> dict[str, object]:
+    """C7: source guard for the 2026-06-06 Wilson-boundary bridge.
+
+    The full gauge integration is owned by the retained source notes named in
+    the parent. This check prevents the parent from regressing to the old
+    missing-bridge wording and verifies the elementary sign composition on a
+    finite product model of the retained factors.
+    """
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    required = [
+        "2026-06-06 retained Wilson-boundary three-factor bridge",
+        "GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+        "GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md",
+        "REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
+        "finite, lattice, two-step, factorized/linear-span reflection-positivity form",
+        "does **not** claim",
+    ]
+    forbidden = [
+        "not for a Wilson-plaquette boundary closure",
+        "the full interacting gauge closure remains limited to the named three-factor reduction claim",
+    ]
+
+    # Finite product sanity check: each factor is representative of a retained
+    # non-negative/positive factor in the bridge, so the composed integrand and
+    # Gram weights are non-negative without a sign convention.
+    mixed_kernel = np.array([0.41, 1.0, 2.7, 4.3])
+    determinant_weight = np.array([0.09, 0.8, 1.6, 3.2])
+    gauge_norm_square = np.abs(np.array([0.2 + 0.3j, -1.0 + 0.4j, 0.0 + 0.7j, 2.0])) ** 2
+    fermion_psd_expectation = np.array([0.0, 0.12, 1.4, 5.0])
+    integrand = mixed_kernel * determinant_weight * gauge_norm_square * fermion_psd_expectation
+
+    return {
+        "required_present": all(s in text for s in required),
+        "forbidden_absent": not any(s in text for s in forbidden),
+        "min_factor": float(
+            min(
+                mixed_kernel.min(),
+                determinant_weight.min(),
+                gauge_norm_square.min(),
+                fermion_psd_expectation.min(),
+            )
+        ),
+        "min_integrand": float(integrand.min()),
+        "sum_integrand": float(integrand.sum()),
+    }
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -639,18 +694,45 @@ def main() -> int:
     fails += int(not c6)
     print()
 
+    # ---- C7: source bridge guard for Wilson-boundary three-factor repair ----
+    print("-" * 78)
+    print("C7  WILSON-BOUNDARY THREE-FACTOR BRIDGE GUARD")
+    print("    source wiring: OS Step 1 + mixed kernel + det positivity + Cauchy-Schwarz + T_hat^2[U]")
+    print("    finite product sanity: positive factors compose to a non-negative integrand")
+    print("-" * 78)
+    c7r = check_three_factor_bridge_source()
+    c7 = (
+        c7r["required_present"]
+        and c7r["forbidden_absent"]
+        and c7r["min_factor"] >= 0.0
+        and c7r["min_integrand"] >= 0.0
+        and c7r["sum_integrand"] > 0.0
+    )
+    print(f"    required source bridge phrases present: {'YES' if c7r['required_present'] else 'NO'}")
+    print(f"    stale missing-bridge phrases absent    : {'YES' if c7r['forbidden_absent'] else 'NO'}")
+    print(f"    min representative factor              : {c7r['min_factor']:.6e}")
+    print(f"    min composed integrand                 : {c7r['min_integrand']:.6e}")
+    print(f"    sum composed integrand                 : {c7r['sum_integrand']:.6e}")
+    print(f"    C7 = {'PASS' if c7 else 'FAIL'}  (source bridge wired; composed signs non-negative)")
+    passes += int(c7)
+    fails += int(not c7)
+    print()
+
     # ---- Gauge-case reduction statement ----
     print("-" * 78)
-    print("GAUGE CASE REDUCTION TARGET (NOT re-derived here)")
+    print("GAUGE CASE REDUCTION / 2026-06-06 PARENT BRIDGE")
     print("-" * 78)
-    print("    possible SU(3)-gauged staggered 2-step RP route would need")
-    print("      (fermion-sector 2-step transfer positivity -- THIS runner, C1-C6, NEW)")
+    print("    The parent now wires the finite factorized/linear-span bridge:")
+    print("      (Wilson OS Step 1 boundary + reflection-Hermitian gauge observables)")
+    print("    x (mixed-kernel positive class-function factorization)")
     print("    x (det(M_KS + m I) >= m^n > 0 config-by-config -- separate source row:")
     print("       STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)")
     print("    x (gauge-half Cauchy-Schwarz norm-square -- separate source row:")
     print("       REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)")
-    print("    Newly supplied in-repo: the free fermion-sector 2-step transfer positivity.")
-    print("    Interacting gauge closure and U-integrated RP are not claimed by this runner.")
+    print("    x (fixed-background two-step fermion transfer positivity T_hat^2[U] >= 0)")
+    print("    This runner supplies C1-C6 for the free specialization and C7 as a source/sign guard.")
+    print("    Continuum OS reconstruction, single-step RP, and off-surface physical completion")
+    print("    remain out of scope.")
     print()
 
     # ---- Verdict ----
@@ -666,6 +748,7 @@ def main() -> int:
     print(f"  C4 R2 OS Gram PSD      : {'PASS' if c4 else 'FAIL'}  (2-step OS Gram Hermitian PSD)")
     print(f"  C5 functor identity    : {'PASS' if c5 else 'FAIL'}  (Gamma=B^dag B verified in-repo)")
     print(f"  C6 decaying bridge     : {'PASS' if c6 else 'FAIL'}  (spectral projector -> Fock kernel)")
+    print(f"  C7 bridge guard        : {'PASS' if c7 else 'FAIL'}  (Wilson-boundary three-factor source wiring)")
     print()
     all_ok = (fails == 0)
     print(f"PASS={passes} FAIL={fails}")
@@ -676,8 +759,10 @@ def main() -> int:
         print("  derived from the staggered action and anchored to the exact free staggered")
         print("  dispersion sinh^2 E = m^2 + sin^2 p. The single-step T_hat is non-positive")
         print("  (complex/negative one-step spectrum), consistent with the single-step no-go")
-        print("  runner. The interacting gauge case is only recorded as the named")
-        print("  reduction target; it is not re-derived by this free-case runner.")
+        print("  runner. The parent source now wires the retained Wilson-boundary")
+        print("  three-factor bridge for finite factorized/linear-span two-step")
+        print("  observables; continuum OS reconstruction and off-surface physical")
+        print("  completion remain out of scope.")
     else:
         print()
         print("  FAIL -- the 2-step positivity construction did not close on the free case.")

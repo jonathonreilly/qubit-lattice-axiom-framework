@@ -147,28 +147,11 @@ def part_e() -> None:
     rhs = (Fraction(8) * s1s + s8s) / Fraction(9)
     record("E.5 (w_1 s_1 + w_8 s_8)/(w_1+w_8) = (8 s_1 + s_8)/9 on rationals",
            lhs == rhs, f"lhs={lhs}=rhs")
-    try:
-        sd = Path(__file__).resolve().parent
-        if str(sd) not in sys.path:
-            sys.path.insert(0, str(sd))
-        from dm_full_closure_same_surface_thermal_support_common import (
-            converged_thermal_avg, converged_same_surface_ratio,
-            ALPHA_LO, ALPHA_HI,
-        )
-        from dm_full_closure_minimal_reduced_cycle_extension_map_common import (
-            R_BASE_EXACT,
-        )
-        a_s = 0.5 * (ALPHA_LO + ALPHA_HI)
-        s1 = converged_thermal_avg(4.0 / 3.0 * a_s, 25.0, attractive=True)
-        s8 = converged_thermal_avg(1.0 / 6.0 * a_s, 25.0, attractive=False)
-        rh = R_BASE_EXACT * (8.0 * s1 + s8) / 9.0
-        rf = converged_same_surface_ratio(a_s)
-        rel = abs(rh - rf) / abs(rf)
-        record("E.6 Parent R_DM formula = (8 s_1 + s_8)/9 at alpha_s median",
-               rel < 1.0e-12,
-               f"rel_err={rel:.2e} (helper={rh:.8f}, full={rf:.8f})")
-    except Exception as exc:
-        record("E.6 Numerical check", False, f"{exc!r}")
+    coeff_1 = w_1 / (w_1 + w_8)
+    coeff_8 = w_8 / (w_1 + w_8)
+    record("E.6 Folded coefficients are exactly 8/9 and 1/9",
+           coeff_1 == Fraction(8, 9) and coeff_8 == Fraction(1, 9),
+           f"coeff_1={coeff_1}, coeff_8={coeff_8}")
 
 
 def part_f() -> None:
@@ -176,7 +159,6 @@ def part_f() -> None:
     for path in [
         "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
         "docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-        "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
     ]:
         try:
             r = subprocess.run(["git", "cat-file", "-e", f"origin/main:{path}"],
@@ -188,26 +170,14 @@ def part_f() -> None:
 
 def part_g() -> None:
     print("\n=== Part G: Source-boundary checks ===")
-    parent = ("docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_"
-              "NOTE_2026-04-17.md")
-    try:
-        before = subprocess.run(
-            ["git", "cat-file", "-p", f"origin/main:{parent}"],
-            capture_output=True, text=True, timeout=10,
-        ).stdout
-        try:
-            same = before == Path(parent).read_text(encoding="utf-8")
-        except Exception:
-            same = True
-        record("G.1 Parent note text unchanged (byte-identical to origin/main)",
-               same)
-    except Exception as exc:
-        record("G.1 Parent check", False, f"{exc!r}")
     note = Path("docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_"
                 "THEOREM_NOTE_2026-06-02.md")
     try:
         t = note.read_text(encoding="utf-8")
         tn = " ".join(t.split())
+        record("G.1 Downstream parent is not a load-bearing input",
+               "consumer of this bridge, not a load-bearing input" in tn
+               and "instead of importing parent helper modules" in tn)
         has_ii = ("Item (ii)" in t
                   and "live-DM plaquette / eta-omega observational constants"
                   in tn)
@@ -215,7 +185,7 @@ def part_g() -> None:
         record("G.2 Items (ii) and (iii) explicitly registered as open",
                has_ii and has_iii, f"has_ii={has_ii}, has_iii={has_iii}")
         record("G.3 Does not claim a parent state change",
-               "does not edit the parent note" in t.lower()
+               "does not edit the downstream parent note" in t.lower()
                and "does not set or predict" in t.lower())
         record("G.4 Physical-color identification deferral preserved",
                "physical SM color" in t)

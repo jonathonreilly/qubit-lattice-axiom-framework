@@ -1,6 +1,6 @@
 # Axiom-First Lattice Noether's Theorem on Cl(3) ⊗ Z^3
 
-**Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair); 2026-06-06 (onsite-generator scope and U(1) sign-directness repairs)
+**Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair); 2026-06-06 (onsite-generator scope, U(1) sign-directness, and KS chirality/parity bridge-support repairs)
 **Status:** source-note proposal — author-declared `bounded_theorem`; effective
 status set only by the independent audit lane.
 **Claim type:** bounded_theorem
@@ -17,6 +17,31 @@ by the audit pipeline only after the independent audit lane reviews the
 claim, dependency chain, and runner. The `claim_type`, scope, named
 admissions, and bounded classification are author-proposed; the audit
 lane has full authority to retag, narrow, or reject the proposal.
+
+## KS chirality/parity bridge-support repair (2026-06-06)
+
+The latest conditional audit identified that the Noether algebra closes on the
+admitted Kawamoto-Smit staggered operator, but the restricted packet did not
+provide a source-contained bridge for the KS phase/chirality sign surface.
+
+This source-packet repair adds a narrow bridge for that specific sign surface:
+
+- [`STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+  proves that the scalar nearest-neighbor edge-flip grading on the `Z^3`
+  coordinate graph is unique up to global sign and equals
+  `epsilon(x)=(-1)^(x_1+x_2+x_3)`, then combines it with the A1 central
+  pseudoscalar `Omega_global=sigma_1 sigma_2 sigma_3=i I` to give
+  `Omega(x)=epsilon(x) Omega_global`.
+- [`ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md`](ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md)
+  supplies the companion exact spin-diagonal connection identity
+  `T(x)^dag sigma_mu T(x+e_mu)=eta_mu(x) I_2` for the displayed KS phases.
+
+This does **not** promote the full staggered-Dirac realization gate and does
+not remove every admitted carrier boundary. The broader Grassmann/CAR
+realization, full kinetic-operator selection, and species-label interpretation
+remain governed by their own rows and by independent audit. The repair only
+removes the avoidable source-packet gap where this Noether row used the KS
+phase/chirality sign surface without a same-packet derivation/citation.
 
 ## Onsite-generator scope repair (2026-06-06)
 
@@ -240,6 +265,16 @@ the **named admitted carrier inputs** recorded below:
   pending packaging. The action is invariant under both `T_{2a}`
   (two-site shift acting on lattice indices) and global `U(1)` phase
   (acting as `χ → e^{iα} χ`, `χ̄ → e^{-iα} χ̄`).
+
+  The specific scalar chirality/parity sign and spin-diagonal KS phase
+  surface used by `M_KS` is no longer left as an uncited free premise in this
+  packet: the 2026-06-06 chirality/parity bridge and eta-holonomy base-flux
+  note cited above supply a source-side exact-support derivation of
+  `epsilon(x)=(-1)^(x_1+x_2+x_3)` and
+  `eta_1=1`, `eta_2=(-1)^x_1`, `eta_3=(-1)^(x_1+x_2)`.
+  Independent audit still decides whether those bridge notes are sufficient
+  authority for this row. The full staggered-Dirac realization gate remains
+  outside this Noether note's author-side status authority.
 
 **Note on `g_bare` (not a load-bearing admission of this note).** The
 `g_bare = 1` canonical SU(3) normalization recategorized from the prior

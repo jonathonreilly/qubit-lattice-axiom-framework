@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py
-runner_sha256: f9fef05ab74ea3f69b533e6a181417af472a45b06fe0c94a0d5f38134192a6b8
+runner_sha256: 1ab344a1ff99d4199d69aaf03a7ff357d0fa9f3cd75f578ed5a9339a553dd27d
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 1.05
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 1.15
+status: ok
 ----- stdout -----
 
 ------------------------------------------------------------------------------
@@ -15,14 +15,19 @@ PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md cont
 PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: Stable setting is not selected dial.
 PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: stable location on the dial is
 PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md exists
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: flow_or_thermal_stability
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: stable setting is not selected dial
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: These rows may support a stable setting
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 77
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 90
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stable settings into selected dials
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
+PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py exists
+PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py contains: def stability_subbucket
+PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py contains: flow_or_thermal_stability
+PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py contains: EXPECTED_SUBCOUNTS
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable dial setting | supplied score/rule plus map/flow stability certificate
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: selected dial value | selector/invariance/target rule
@@ -43,22 +48,22 @@ PASS finite supplied thermal table has unique root :: 3/20
 ------------------------------------------------------------------------------
 Flow/thermal row checks
 ------------------------------------------------------------------------------
-FAIL flow/thermal stability row count is current snapshot :: 52
-FAIL stable lane counts match expected :: Counter({'thermal_or_score_stable_feature': 18, 'bounded_obstruction_or_no_selection': 16, 'generic_stable_feature': 11, 'flow_or_records_stable_feature': 4, 'generation_or_koide_stable_feature': 3})
-PASS stable lane counts sum to row count :: Counter({'thermal_or_score_stable_feature': 18, 'bounded_obstruction_or_no_selection': 16, 'generic_stable_feature': 11, 'flow_or_records_stable_feature': 4, 'generation_or_koide_stable_feature': 3})
+PASS flow/thermal stability row count is current snapshot :: 56
+PASS stable lane counts match expected :: Counter({'thermal_or_score_stable_feature': 19, 'bounded_obstruction_or_no_selection': 17, 'generic_stable_feature': 13, 'flow_or_records_stable_feature': 4, 'generation_or_koide_stable_feature': 3})
+PASS stable lane counts sum to row count :: Counter({'thermal_or_score_stable_feature': 19, 'bounded_obstruction_or_no_selection': 17, 'generic_stable_feature': 13, 'flow_or_records_stable_feature': 4, 'generation_or_koide_stable_feature': 3})
 PASS representative row present in bounded_obstruction_or_no_selection :: koide_bae_probe_native_lattice_flow_bounded_obstruction_note_2026-05-09_probe21
 PASS representative row present in flow_or_records_stable_feature :: koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02
 PASS representative row present in generation_or_koide_stable_feature :: flavor_r_half_is_the_records_flow_separatrix_2026-06-02
 PASS representative row present in generic_stable_feature :: koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23
 PASS representative row present in thermal_or_score_stable_feature :: dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16
-PASS audit ledger hash is unchanged :: 375f4bec28a584485c9d5903d29402230243c4f952cde82bd18f506aa1ca51b9
+PASS audit ledger hash is unchanged :: c5744aeb88243780f2eec7253d06a3761535fa1885eddaa76c747b86376b82d9
 
 Flow/thermal stable-setting lane counts:
-  bounded_obstruction_or_no_selection: 16
+  bounded_obstruction_or_no_selection: 17
   flow_or_records_stable_feature: 4
   generation_or_koide_stable_feature: 3
-  generic_stable_feature: 11
-  thermal_or_score_stable_feature: 18
+  generic_stable_feature: 13
+  thermal_or_score_stable_feature: 19
 
 [bounded_obstruction_or_no_selection]
   dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md
@@ -92,8 +97,8 @@ Flow/thermal stable-setting lane counts:
   koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3 | unaudited | unaudited | bounded_theorem | docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md
   post_record_directed_certificate_examples_2026-06-06 | audited_conditional | audited_conditional | positive_theorem | docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md
   post_record_finite_target_kernel_stability_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_FINITE_TARGET_KERNEL_STABILITY_2026-06-06.md
-  record_equal_letter_stable_location_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/RECORD_EQUAL_LETTER_STABLE_LOCATION_2026-06-05.md
-  record_production_interface_principle_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md
+  post_record_stable_kernel_count_audit_interface_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_STABLE_KERNEL_COUNT_AUDIT_INTERFACE_2026-06-06.md
+  post_record_stable_kernel_expected_frequency_interface_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md
 
 [thermal_or_score_stable_feature]
   beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04 | unaudited | unaudited | bounded_theorem | docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md
@@ -121,13 +126,13 @@ PASS production dynamics derived flag is false
 PASS Record-derived physical arrow flag is false
 PASS clock/rate derived flag is false
 
-SUMMARY: PASS=41 FAIL=2
-FLOW_OR_THERMAL_STABILITY_ROWS=52
-BOUNDED_OBSTRUCTION_OR_NO_SELECTION_ROWS=16
+SUMMARY: PASS=48 FAIL=0
+FLOW_OR_THERMAL_STABILITY_ROWS=56
+BOUNDED_OBSTRUCTION_OR_NO_SELECTION_ROWS=17
 FLOW_OR_RECORDS_STABLE_FEATURE_ROWS=4
 GENERATION_OR_KOIDE_STABLE_FEATURE_ROWS=3
-GENERIC_STABLE_FEATURE_ROWS=11
-THERMAL_OR_SCORE_STABLE_FEATURE_ROWS=18
+GENERIC_STABLE_FEATURE_ROWS=13
+THERMAL_OR_SCORE_STABLE_FEATURE_ROWS=19
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE

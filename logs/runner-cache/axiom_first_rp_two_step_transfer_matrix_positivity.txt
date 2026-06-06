@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
-runner_sha256: ab9b895f7b232af4ea3f2a933154108091ce9d61a94b11c8487cae27b543145c
+runner_sha256: 456a3fc46c919950863e1bfb22fba0c6ac5c7cc2921f141cb5e4ed52b6f6a08b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -85,16 +85,31 @@ C6  DECAYING-CHANNEL BRIDGE: spectral projector of action-derived T_odd T_even
     C6 = PASS  (decaying spectral channel derives the Fock kernel)
 
 ------------------------------------------------------------------------------
-GAUGE CASE REDUCTION TARGET (NOT re-derived here)
+C7  WILSON-BOUNDARY THREE-FACTOR BRIDGE GUARD
+    source wiring: OS Step 1 + mixed kernel + det positivity + Cauchy-Schwarz + T_hat^2[U]
+    finite product sanity: positive factors compose to a non-negative integrand
 ------------------------------------------------------------------------------
-    possible SU(3)-gauged staggered 2-step RP route would need
-      (fermion-sector 2-step transfer positivity -- THIS runner, C1-C6, NEW)
+    required source bridge phrases present: YES
+    stale missing-bridge phrases absent    : YES
+    min representative factor              : 0.000000e+00
+    min composed integrand                 : 0.000000e+00
+    sum composed integrand                 : 2.782749e+02
+    C7 = PASS  (source bridge wired; composed signs non-negative)
+
+------------------------------------------------------------------------------
+GAUGE CASE REDUCTION / 2026-06-06 PARENT BRIDGE
+------------------------------------------------------------------------------
+    The parent now wires the finite factorized/linear-span bridge:
+      (Wilson OS Step 1 boundary + reflection-Hermitian gauge observables)
+    x (mixed-kernel positive class-function factorization)
     x (det(M_KS + m I) >= m^n > 0 config-by-config -- separate source row:
        STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)
     x (gauge-half Cauchy-Schwarz norm-square -- separate source row:
        REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)
-    Newly supplied in-repo: the free fermion-sector 2-step transfer positivity.
-    Interacting gauge closure and U-integrated RP are not claimed by this runner.
+    x (fixed-background two-step fermion transfer positivity T_hat^2[U] >= 0)
+    This runner supplies C1-C6 for the free specialization and C7 as a source/sign guard.
+    Continuum OS reconstruction, single-step RP, and off-surface physical completion
+    remain out of scope.
 
 ==============================================================================
 SUMMARY
@@ -105,16 +120,19 @@ SUMMARY
   C4 R2 OS Gram PSD      : PASS  (2-step OS Gram Hermitian PSD)
   C5 functor identity    : PASS  (Gamma=B^dag B verified in-repo)
   C6 decaying bridge     : PASS  (spectral projector -> Fock kernel)
+  C7 bridge guard        : PASS  (Wilson-boundary three-factor source wiring)
 
-PASS=6 FAIL=0
+PASS=7 FAIL=0
 
   PASS -- the free staggered 2-step blocked transfer matrix T_hat^2 is
   POSITIVE HERMITIAN (T_hat^2 = B^dag B, H_hat = -log(T_hat^2)/(2 a_tau) >= 0),
   derived from the staggered action and anchored to the exact free staggered
   dispersion sinh^2 E = m^2 + sin^2 p. The single-step T_hat is non-positive
   (complex/negative one-step spectrum), consistent with the single-step no-go
-  runner. The interacting gauge case is only recorded as the named
-  reduction target; it is not re-derived by this free-case runner.
+  runner. The parent source now wires the retained Wilson-boundary
+  three-factor bridge for finite factorized/linear-span two-step
+  observables; continuum OS reconstruction and off-surface physical
+  completion remain out of scope.
 
 ----- stderr -----
 

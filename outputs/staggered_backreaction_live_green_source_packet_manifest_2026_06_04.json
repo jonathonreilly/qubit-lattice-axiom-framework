@@ -75,82 +75,82 @@
       "detail": "logs/runner-cache/frontier_staggered_backreaction_prototype.txt"
     },
     {
-      "name": "source_untruncated:packet_checker",
+      "name": "source_full_length:packet_checker",
       "pass": true,
       "detail": "scripts/staggered_backreaction_live_green_packet_check.py has 3640 bytes"
     },
     {
-      "name": "source_marker:packet_checker:import frontier_staggered_backreaction_green_closure as green",
+      "name": "source_contains:packet_checker:import frontier_staggered_backreaction_green_closure as green",
       "pass": true,
       "detail": "import frontier_staggered_backreaction_green_closure as green present"
     },
     {
-      "name": "source_marker:packet_checker:def _compute",
+      "name": "source_contains:packet_checker:def _compute",
       "pass": true,
       "detail": "def _compute present"
     },
     {
-      "name": "source_marker:packet_checker:ASSERTIONS:",
+      "name": "source_contains:packet_checker:ASSERTIONS:",
       "pass": true,
       "detail": "ASSERTIONS: present"
     },
     {
-      "name": "source_untruncated:green_closure_source",
+      "name": "source_full_length:green_closure_source",
       "pass": true,
       "detail": "scripts/frontier_staggered_backreaction_green_closure.py has 13612 bytes"
     },
     {
-      "name": "source_marker:green_closure_source:import frontier_staggered_backreaction_prototype as base",
+      "name": "source_contains:green_closure_source:import frontier_staggered_backreaction_prototype as base",
       "pass": true,
       "detail": "import frontier_staggered_backreaction_prototype as base present"
     },
     {
-      "name": "source_marker:green_closure_source:def _make_mappings",
+      "name": "source_contains:green_closure_source:def _make_mappings",
       "pass": true,
       "detail": "def _make_mappings present"
     },
     {
-      "name": "source_marker:green_closure_source:def _measure_family",
+      "name": "source_contains:green_closure_source:def _measure_family",
       "pass": true,
       "detail": "def _measure_family present"
     },
     {
-      "name": "source_marker:green_closure_source:def _fit_gain",
+      "name": "source_contains:green_closure_source:def _fit_gain",
       "pass": true,
       "detail": "def _fit_gain present"
     },
     {
-      "name": "source_marker:green_closure_source:class MapSummary",
+      "name": "source_contains:green_closure_source:class MapSummary",
       "pass": true,
       "detail": "class MapSummary present"
     },
     {
-      "name": "source_untruncated:prototype_helper_source",
+      "name": "source_full_length:prototype_helper_source",
       "pass": true,
       "detail": "scripts/frontier_staggered_backreaction_prototype.py has 20482 bytes"
     },
     {
-      "name": "source_marker:prototype_helper_source:class GraphFamily",
+      "name": "source_contains:prototype_helper_source:class GraphFamily",
       "pass": true,
       "detail": "class GraphFamily present"
     },
     {
-      "name": "source_marker:prototype_helper_source:def _make_graphs",
+      "name": "source_contains:prototype_helper_source:def _make_graphs",
       "pass": true,
       "detail": "def _make_graphs present"
     },
     {
-      "name": "source_marker:prototype_helper_source:def _solve_phi",
+      "name": "source_contains:prototype_helper_source:def _solve_phi",
       "pass": true,
       "detail": "def _solve_phi present"
     },
     {
-      "name": "source_marker:prototype_helper_source:def _build_hamiltonian",
+      "name": "source_contains:prototype_helper_source:def _build_hamiltonian",
       "pass": true,
       "detail": "def _build_hamiltonian present"
     },
     {
-      "name": "source_marker:prototype_helper_source:def _evolve_cn",
+      "name": "source_contains:prototype_helper_source:def _evolve_cn",
       "pass": true,
       "detail": "def _evolve_cn present"
     },

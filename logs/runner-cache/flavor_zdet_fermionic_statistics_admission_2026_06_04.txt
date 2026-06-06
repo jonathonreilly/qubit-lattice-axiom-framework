@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py
-runner_sha256: b213a39fa933f566f443def77ae72faea60f1e2f2d3234bce0df75d8804e8fd7
+runner_sha256: 20f18314d1f0ef7592b3e1b6ce423f98db8c118ebd9afa288c69828f81f07d1a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 [PASS] Berezin finite Gaussian gives det(M) once Grassmann variables are supplied
@@ -15,10 +15,12 @@ status: ok
        det=4.971000; permanent=5.947000
 [PASS] Gamma_chi is an internal-generation object distinct from spatial CAR
        Gamma_chi commutes with the tested C3-equivariant mass operator
+[PASS] source boundary guard: finite locator only, no baseline/admission conclusion promoted
+       the packet leaves FS selection open
 
-SCORECARD PASS=6 FAIL=0
-FINDING: the determinant-amplitude gate localizes to FS, an owner-approved cross-site fermionic-statistics admission.
-The three baseline axioms do not force FS in these finite checks; approved axioms and primitives are dependency premises, not grade sources.
+SCORECARD PASS=7 FAIL=0
+FINDING: supplied Grassmann/CAR variables realize the determinant amplitude.
+The tested finite hard-core/tensor-product routes do not force that statistics choice.
 Koide generation chirality remains a separate internal-factor residual.
 
 ----- stderr -----

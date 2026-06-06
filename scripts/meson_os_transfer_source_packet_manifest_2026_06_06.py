@@ -16,7 +16,7 @@ PATHS = {
     "primary_runner_cache": "logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt",
 }
 
-SOURCE_MARKERS = [
+REQUIRED_SOURCE_FRAGMENTS = [
     "def block_fwd_propagator_berezin(",
     "def block_fwd_propagator_operator(",
     "def block_metric_spacetime_eigs(",
@@ -32,7 +32,7 @@ SOURCE_MARKERS = [
     "K5  GAUGE INVARIANCE",
 ]
 
-CACHE_MARKERS = [
+REQUIRED_CACHE_SNIPPETS = [
     "SCORECARD PASS=64 FAIL=0",
     "P0      : det-weighted avg Berezin == operator meson",
     "P1      : per-config Berezin(4-ferm) == operator meson",
@@ -81,9 +81,9 @@ def main() -> int:
 
     source_path = ROOT / PATHS["primary_runner"]
     source = source_path.read_text()
-    check("source_untruncated", len(source) > 40000, f"bytes={len(source)}")
-    for marker in SOURCE_MARKERS:
-        check(f"source_marker:{marker}", marker in source, marker)
+    check("source_full_length", len(source) > 40000, f"bytes={len(source)}")
+    for fragment in REQUIRED_SOURCE_FRAGMENTS:
+        check(f"source_contains:{fragment}", fragment in source, fragment)
 
     cache_path = ROOT / PATHS["primary_runner_cache"]
     cache = cache_path.read_text()
@@ -99,8 +99,8 @@ def main() -> int:
         )
     check("cache_exit_ok", fields.get("exit_code") == "0", f"exit_code={fields.get('exit_code')}")
     check("cache_status_ok", fields.get("status") == "ok", f"status={fields.get('status')}")
-    for marker in CACHE_MARKERS:
-        check(f"cache_marker:{marker}", marker in cache, marker)
+    for snippet in REQUIRED_CACHE_SNIPPETS:
+        check(f"cache_contains:{snippet}", snippet in cache, snippet)
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(

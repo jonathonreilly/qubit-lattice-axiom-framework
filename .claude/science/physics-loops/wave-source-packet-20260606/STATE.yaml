@@ -1,0 +1,16 @@
+loop: wave-source-packet-20260606
+branch: physics-loop/wave-source-packet-20260606
+target_status: bounded-support
+active_route: transitive_source_packet_manifest
+target_claim_id: wave_direct_dm_h025_fam2_seed1_followup_note
+trace_class: direct_blocker_closure
+current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+  - scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py
+  - logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt
+  - outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json
+next_exact_action: run verifier and precompute cache check
+stop_condition: ready review PR opened

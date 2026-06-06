@@ -120,6 +120,13 @@ audit_authority: independent audit lane only
 - [`scripts/wave_direct_dm_h025_point_runner.py`](../scripts/wave_direct_dm_h025_point_runner.py)
 - [`logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt`](../logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt)
 - [`outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json`](../outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json)
+- [`scripts/wave_direct_dm_matched_history_probe.py`](../scripts/wave_direct_dm_matched_history_probe.py)
+- [`logs/runner-cache/wave_direct_dm_matched_history_probe.txt`](../logs/runner-cache/wave_direct_dm_matched_history_probe.txt)
+- [`scripts/wave_retardation_continuum_limit.py`](../scripts/wave_retardation_continuum_limit.py)
+- [`logs/runner-cache/wave_retardation_continuum_limit.txt`](../logs/runner-cache/wave_retardation_continuum_limit.txt)
+- [`scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py`](../scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py)
+- [`logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt`](../logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt)
+- [`outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json`](../outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json)
 - [`logs/2026-04-08-wave-direct-dm-h025-fam2-seed1.txt`](../logs/2026-04-08-wave-direct-dm-h025-fam2-seed1.txt)
 - [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md)
 - `docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`
@@ -134,3 +141,25 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [wave_direct_dm_h025_two_point_synthesis_note](WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md)
 - [wave_direct_dm_portability_batch_note](WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md)
+
+## 2026-06-06 transitive helper source-packet repair
+
+This repair responds to the artifact-completeness blocker asking for the
+complete untruncated `scripts/wave_retardation_continuum_limit.py` helper
+source, especially `field_at`, `prop_beam`, and `cz`, or an independent
+certificate for the `measure_dm` computation. It does not promote this note or
+change the bounded target-replay claim boundary; independent audit owns any
+ledger/status movement.
+
+The source-packet manifest now checks that the restricted packet exposes the
+exact target runner, the transitive `measure_dm` source/cache, and the
+wave-retardation helper source/cache. It verifies SHA-fresh cache headers for:
+
+- `scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py`
+- `scripts/wave_direct_dm_matched_history_probe.py`
+- `scripts/wave_retardation_continuum_limit.py`
+
+The same manifest checks source markers for the full `measure_dm` path:
+`measure_dm` calls `solve_wave`, `prop_beam`, and `cz`, while the continuum
+helper supplies `field_at`, `prop_beam`, `cz`, `solve_wave`, and the fixed
+`S_PHYS = 0.004` source-strength constant.

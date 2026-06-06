@@ -39,14 +39,16 @@ because it builds directly on the measure/weight subdivision companion.
 
 ## Next exact action
 
-Commit, push, and open the stacked PR.
+Poll PR #2845 until `audit_pipeline` completes, then record the final clean PR
+state if the check succeeds.
 
 ## PR
 
 ```yaml
-pr_url: null
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2845"
 base: "physics-loop/post-record-measure-weight-normalization-subdivision-20260606"
-initial_mergeable: null
-initial_merge_state_status: null
-initial_checks: null
+initial_head: "13feb634c15d13a765dfcafe59b4812b33486135"
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline IN_PROGRESS"
 ```

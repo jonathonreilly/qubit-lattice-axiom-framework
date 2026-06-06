@@ -1,0 +1,23 @@
+loop_slug: post-record-dynamics-closeout-cache-sync-20260606
+status: ready_for_review
+created: 2026-06-06
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: post_record_dynamics_campaign_closeout_index_2026-06-06
+target_blocker_text: "audited_failed because the closeout runner expected stale cached summary text for PR #2858"
+base_commit: 9c1a871cd
+files_touched:
+  - scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-dynamics-closeout-cache-sync-20260606/
+verification:
+  - "python3 scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py -> SUMMARY: PASS=46 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py --tail-chars 4000 -> refreshed green cache"
+open_imports: []
+audit_data_edited: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Review, then re-run audit on the dynamics campaign closeout index row."
+stop_condition: "Dynamics campaign closeout cached-summary blocker closed on this branch."

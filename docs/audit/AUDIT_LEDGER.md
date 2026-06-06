@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 179 |
+| **retained** | 180 |
 | **retained_no_go** | 197 |
 | **retained_bounded** | 675 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1210 |
+| unaudited | 1209 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1047 |
+| `audited_clean` | 1048 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1494 |
+| `unaudited` | 1493 |
 
 | claim_type | count |
 |---|---:|
@@ -1088,6 +1088,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-26` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `translation_abelian_composition_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -16943,6 +16944,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** At BZ corners p_mu in {0, pi}, m(p)=sum_mu(1-cos p_mu)=2 hw(p), so the eight corners split as 1+3+3+1 and hw=1 is exactly the threefold lightest nonzero-mass orbit, with the M_3(C)/no-proper-quotient part imported from the direct audited dependency.  _(class `A`)_
 - **chain closes:** True — Independent exact enumeration gives 8 corners, degeneracies [1,3,3,1], masses 0,2,4,6 by Hamming weight, and hw=1 as the unique lightest nonzero orbit. The admitted staggered-Dirac/Wilson surface is present in the Tier-A registry, and the direct dependency's scoped algebra result supplies only the finite C^3/M_3(C) no-proper-quotient statement without importing physical-species or SM-generation claims.
 - **rationale:** The spectral calculation is a finite algebraic identity on the explicitly admitted bounded surface, not a tuned numerical comparator or a physical-generation identification. The runner's math checks agree with an independent exact enumeration, while its source-firewall checks confirm the note excludes no-rooting, physical lattice necessity, CKM, chirality, and new-axiom claims. The no-go/wall discipline gate does not expose an inflated wall set: there is a single registered Tier-A admitted surface, the no-proper-quotient residual exactly matches the direct dependency's audited scope, and all broader negative/physical claims are explicitly out of scope.
+- **auditor confidence:** high
+
+### `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For disjoint finite regions Λ1,Λ2, with A_Λ defined as the finite tensor product of one-site M2(ℂ) factors, the unique normalized tracial state on A_{Λ1∪Λ2} factorizes on simple tensors.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-004447-47fe01e16e-tomita_tensor_trace_on_finit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On simple tensors, Tr_{n1 n2}(A ⊗ B)=Tr_{n1}(A) Tr_{n2}(B), so the normalized trace on M_{n1}(ℂ) ⊗ M_{n2}(ℂ) factorizes as τ(A ⊗ B)=τ1(A)τ2(B).  _(class `A`)_
+- **chain closes:** True — The cited axiom packet supplies the lattice and one-site M2(ℂ) carrier, and the source note defines the finite-region algebras as finite tensor products. The identities M_a(ℂ)⊗M_b(ℂ)≅M_{ab}(ℂ), uniqueness of the normalized trace on M_n(ℂ), and Tr(A⊗B)=Tr(A)Tr(B) close the stated factorization.
+- **rationale:** No runner was supplied, so the judgment is from the source note and cited axiom packet. The displayed identities (1)-(4) are consistent: if |Λ_i|=m_i then A_{Λ_i}≅M_{2^{m_i}}(ℂ), the union algebra is M_{2^{m_1+m_2}}(ℂ), and the normalized trace denominator factorizes as 2^{m_1+m_2}=2^{m_1}2^{m_2}. The load-bearing step is elementary finite-dimensional matrix algebra, with no external comparator, tuned numerical input, or renaming step.
 - **auditor confidence:** high
 
 ### `topological_instanton_textbook_infrastructure_import_note_2026-05-17`

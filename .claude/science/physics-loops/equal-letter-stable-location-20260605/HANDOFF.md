@@ -10,6 +10,8 @@ Added exact stable-location support for the equal-letter point:
 
 Runner result: `PASS=26 FAIL=0`.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2720
+
 ## Main finding
 
 `s=0` is stable under the named post-record atom-symmetric reset dynamics. The

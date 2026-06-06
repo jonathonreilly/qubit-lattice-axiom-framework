@@ -1,3 +1,5 @@
 # PR Backlog
 
-No PR backlog yet. PR creation is pending.
+PR creation succeeded:
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2720

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 192 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 696 |
+| **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1303 |
+| unaudited | 1302 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 29 |
@@ -61,22 +61,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1093 |
+| `audited_clean` | 1094 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 53 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1610 |
+| `unaudited` | 1609 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1328 |
+| `bounded_theorem` | 1329 |
 | `decoration` | 53 |
 | `meta` | 316 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 771 |
+| `positive_theorem` | 770 |
 
 | criticality | count |
 |---|---:|
@@ -912,6 +912,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_expectation_concentration_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_likelihood_score_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_null_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_finite_target_kernel_stability_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13739,6 +13740,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For W sampled from the supplied finite null law, P(p_T(W) <= alpha) <= alpha for every alpha in [0,1].  _(class `A`)_
 - **chain closes:** True — For any alpha, the event {p_T(W) <= alpha} is either empty or an upper tail set at a minimal statistic cutoff whose supplied null mass is exactly its tail p-value, hence at most alpha. This proves the scoped conditional finite-null statement without deriving the null law, statistic, or threshold.
 - **rationale:** The load-bearing theorem is a finite-probability superuniformity argument over a supplied normalized law and supplied ordered statistic. Independent checking of the displayed formulas confirms the exact tail definition and the runner's finite examples, including 17/625, 189/256, and 7/16. The runner source performs actual enumeration for the finite p-values and conservativity checks; its cross-note source-anchor checks are non-load-bearing for this scoped theorem. The audit does not close, and the note does not claim to close, derivation of the null law, statistic, threshold, or model-selection rule.
+- **auditor confidence:** high
+
+### `post_record_finite_target_kernel_stability_2026-06-06`
+
+- **Note:** [`POST_RECORD_FINITE_TARGET_KERNEL_STABILITY_2026-06-06.md`](../../docs/POST_RECORD_FINITE_TARGET_KERNEL_STABILITY_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For any finite alphabet, supplied normalized target prior pi, and supplied 0<alpha<1, the reset kernel is row-stochastic, has pi stationary, satisfies detailed balance with pi, and contracts deviations from pi by factor 1-alpha; it does not derive pi, alpha, or a physical source.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-191501-2938ab4114-post_record_finite_target_ke`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For K_{pi,alpha}(i,j)=(1-alpha)delta_ij+alpha pi_j, pi K_{pi,alpha}=pi and pK_{pi,alpha}-pi=(1-alpha)(p-pi) for every row probability vector p.  _(class `A`)_
+- **chain closes:** True — The displayed identities follow by direct finite-sum algebra from the supplied definition of K_{pi,alpha}. The note explicitly limits the result to supplied pi and alpha and does not claim selection or physical derivation.
+- **rationale:** The load-bearing step is a genuine algebraic identity over explicitly supplied finite inputs: summing rows gives stochasticity, pi K equals pi by normalization, detailed balance reduces to pi_i[(1-alpha)delta_ij+alpha pi_j]=pi_j[(1-alpha)delta_ji+alpha pi_i], and pK-pi=(1-alpha)(p-pi). The runner source independently implements these finite rational checks rather than merely printing constants, though the audit judgment does not depend on the runner alone. There are no cited authorities and no imported open bridge needed for the bounded claim as stated.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

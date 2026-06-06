@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 186 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 679 |
+| **retained_bounded** | 680 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 35 |
-| unaudited | 1360 |
+| unaudited | 1359 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1057 |
+| `audited_clean` | 1058 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1666 |
+| `unaudited` | 1665 |
 
 | claim_type | count |
 |---|---:|
@@ -211,6 +211,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -2550,6 +2551,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The bounded damage ladder does not crown p = 1 as the most robust action power on this family: p = 1 is cleanest on exponent drift when it survives, while p = 2 survives more signed damage cases.  _(class `C`)_
 - **chain closes:** True — The included runner and helper source instantiate the lattice, damaged offset masks, propagator, field, Born diagnostic, gravity sign, F~M fits, and summary counts rather than printing constants. The audited conclusion is limited to the bounded replay result and does not require a universal graph theorem.
 - **rationale:** The runner output directly supports the note's negative robustness summary: p=0.5 and p=1.0 are TOWARD on 3/6 damaged cases, while p=2.0 is TOWARD on 5/6, and p=1.0 has the smallest mean |F~M-p| among finite surviving fits. The primary and helper source show an actual bounded numerical replay from the stated lattice/action setup, with no hard-coded expected summary values or external comparator calibration. The cited authorities are retained_bounded and are used only to bound the family and neighboring action-power context, so the narrowed claim closes as a bounded theorem.
+- **auditor confidence:** high
+
+### `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the qubit M_2(C) effect-Gleason representation from the stated [0,1]-valued POVM-additive hypotheses M1-M3, not the full all-dimensions Busch/CFMR theorem or the parent Born-rule chain.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-170224-831e59f910-busch_povm_effect_gleason_qu`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** POVM-additivity on partitions implies partial additivity on effects; bounded additivity then gives real homogeneity and a unique real-linear extension to Herm(M_2), so finite-dimensional Riesz representation yields m(E)=Tr(sigma E) with sigma normalized and positive.  _(class `C`)_
+- **chain closes:** True — The finite-dimensional proof closes from the accepted M_2(C) carrier plus the explicitly stated effect/POVM hypotheses: additivity, homogeneity, linear extension, Riesz representation, and positivity all follow without external comparator input. The runner is supportive but samples trace-form functionals rather than proving the universal quantifier by itself.
+- **rationale:** The displayed normalizations and factors check out: P_a^+=(I+sigma_a)/2 gives m(P_a^+)=(1+r_a)/2 and hence sigma=1/2[I+sum_a(2m(P_a^+)-1)sigma_a]. The critical extension step is valid: partial additivity on effects gives additive positive-cone scaling, boundedness/nonnegativity rules out Cauchy pathologies, and the Hermitian cone decomposition yields a well-defined real-linear functional. The only cited upstream authority is the minimal axiom memo flagged as an accepted axiom premise, so it does not trigger a dependency downgrade.
 - **auditor confidence:** high
 
 ### `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26`

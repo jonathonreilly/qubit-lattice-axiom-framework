@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 700 |
+| **retained_bounded** | 701 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1282 |
+| unaudited | 1281 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,22 +61,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1103 |
+| `audited_clean` | 1104 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 59 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1589 |
+| `unaudited` | 1588 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1332 |
+| `bounded_theorem` | 1333 |
 | `decoration` | 53 |
 | `meta` | 322 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 761 |
+| `positive_theorem` | 760 |
 
 | criticality | count |
 |---|---:|
@@ -922,6 +922,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_supplied_kernel_selection_rule_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_orientation_bridge_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_selection_rule_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_transition_kernel_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -14033,6 +14034,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** If the winning score gap is Delta > 0, then the selected candidate is stable under any score perturbation bounded by epsilon < Delta/2 on every candidate.  _(class `A`)_
 - **chain closes:** True — For every challenger, the perturbed winner-minus-challenger gap is at least Delta - 2epsilon, which remains positive when epsilon < Delta/2. The selector and stability claim therefore close by finite-order and rational-inequality algebra under the stated supplied inputs.
 - **rationale:** The load-bearing math is an algebraic finite-margin argument, not a physical derivation or numerical comparator. Independent checking of the displayed fractions confirms the finite selector gap, half-gap boundary, likelihood/posterior toy examples, and dial-score gap used by the runner. The runner's source-anchor and hard-coded firewall checks are supportive scope checks, while the audited conclusion itself is only the conditional supplied-rule selection theorem. The note explicitly does not claim to derive the candidate set, score map, priority rule, probability law, or dial landscape.
+- **auditor confidence:** high
+
+### `post_record_transition_kernel_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_TRANSITION_KERNEL_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_TRANSITION_KERNEL_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For a supplied finite row-stochastic transition kernel and initial law, the note correctly gives the Markov finite-history law and the one-step expected count update while preserving integral realized appends.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-195835-3316e359f7-post_record_transition_kerne`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given a finite alphabet, an initial law, and a supplied row-stochastic kernel K, finite-history probabilities are mu_0(o_0) times the product of transition factors and the conditional next-count expectation is count(w)+K(o,-).  _(class `A`)_
+- **chain closes:** True — The audited claim is explicitly conditional on a supplied kernel; under that premise, normalization, product history probabilities, and count expectation follow by finite-sum algebra. The note does not claim to derive the kernel, Markov property, stationarity, clock, Born law, Hamiltonian, or generation/Koide setting.
+- **rationale:** The displayed formulas are standard finite Markov-chain and count-vector identities once the alphabet, initial law, and row-stochastic kernel are supplied. Independent inspection of the quantitative identities confirms that a row-stochastic kernel normalizes fixed-length history probabilities and that E[count(w next)|w]=count(w)+sum_o' K(o,o')e_o'=count(w)+K(o,-). The runner source performs actual finite enumeration and fraction arithmetic rather than merely printing constants, and its firewall checks keep the supplied-kernel premise separate from any claimed derivation of physical dynamics.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

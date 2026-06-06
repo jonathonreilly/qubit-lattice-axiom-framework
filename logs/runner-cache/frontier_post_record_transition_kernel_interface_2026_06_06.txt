@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_transition_kernel_interface_2026_06_06.py
+runner_sha256: 1684b1020d77e2519828ae70d8f651193332abed26862300a0c1160b1e141aa6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -55,3 +63,6 @@ SUPPLIED_KERNEL_EXTENDS_TO_RECORD_HISTORY_LAW=TRUE
 RECORD_DERIVES_TRANSITION_KERNEL=FALSE
 REALIZED_COUNTS_REMAIN_INTEGRAL=TRUE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+
+----- stderr -----
+

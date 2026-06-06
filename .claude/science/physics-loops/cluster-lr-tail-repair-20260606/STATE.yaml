@@ -1,0 +1,25 @@
+loop_slug: cluster-lr-tail-repair-20260606
+branch: physics-loop/cluster-lr-tail-repair-20260606
+base: origin/main
+started_at: 2026-06-06
+target_claim_id: axiom_first_cluster_decomposition_theorem_note_2026-04-29
+target_note: docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
+target_runner: scripts/axiom_first_cluster_decomposition_check.py
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+blocker_source: audit_ledger
+blocker_text: "Repair Step 3 with a correct LR/Poisson-tail estimate for the stated J_*, D_int, R_int constants; separately supply retained spatial or target-state gap authority before promoting any L2 spatial clustering statement."
+active_route: weighted_path_lieb_robinson_tail
+files_touched:
+  - docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_cluster_decomposition_check.py
+  - logs/runner-cache/axiom_first_cluster_decomposition_check.txt
+  - .claude/science/physics-loops/cluster-lr-tail-repair-20260606/
+status_summary: "Step 3 now uses a weighted-path LR estimate with mu=1/R_int, yielding v_LR=2e J_* D_int R_int without the invalid Poisson-tail inequality. L2 spatial clustering remains conditional."
+open_imports:
+  - "L2 spatial/static clustering still needs a retained gap-plus-LR theorem or target-state gap authority."
+review_findings: "local self-review passed; independent review-loop/audit still required"
+pr_status: pending
+next_exact_action: "Commit, push, open a ready review PR, then scan the current audit ledger for the next uncovered conditional/failed science-fix target."
+stop_condition: "Stop only after a refreshed queue has no viable unblocked repair target."

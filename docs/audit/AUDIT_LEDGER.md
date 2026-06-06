@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 197 |
 | **retained_bounded** | 678 |
 | _retained_pending_chain_ | 9 |
-| open_gate | 34 |
-| unaudited | 1364 |
+| open_gate | 35 |
+| unaudited | 1363 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1054 |
+| `audited_clean` | 1055 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1670 |
+| `unaudited` | 1669 |
 
 | claim_type | count |
 |---|---:|
@@ -477,6 +477,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -6828,6 +6829,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Two analytic strictly increasing completion witnesses share every retained current-packet premise through the beta^5 onset but differ at beta=6, and injectivity of R_O makes their BRIDGE readouts unequal.  _(class `A`)_
 - **chain closes:** True — The retained packet fixes the local response, scalar temporal ratio, beta^5 onset, and prior underdetermination boundaries, but it does not fix beta_eff(6). The two witnesses satisfy the retained premises and yield distinct R_O values, so a derivation from only those premises would have to assign one value and cannot close.
 - **rationale:** All cited authorities are retained or retained_no_go, and the note uses the open beta-6 completion only negatively rather than importing it as a positive bridge premise. Independent formula checks confirm a=1/26244, c*6^6=0.0046656, beta_eff^-(6)=6+8/27, and R_O injectivity follows from dR_O/dx=Var_x(P)>0 for the nondegenerate one-plaquette source family. The runner's Bessel values support the separation but are not the proof; the proof is the scoped two-witness non-entailment, with exact spectral/Perron/effective-action primitives correctly left as escape routes.
+- **auditor confidence:** high
+
+### `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02`
+
+- **Note:** [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md`](../../docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited that the stretch note is an open-gate obstruction packet, not a positive observable-bridge theorem for `<P>_full = R_O(beta_eff)`.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-165057-eb7a000ca1-gauge_scalar_temporal_observ`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bridge `<P>_full = R_O(beta_eff)` is not analytically derived from `A_min`; the note only records a surveyed-route obstruction with named escape hatches.  _(class `A`)_
+- **chain closes:** True — The restricted packet supports the scoped open-gate claim: the note explicitly declines the positive bridge and the cited retained no-go authority supplies the two-witness reason that the current Wilson packet does not determine the missing nonperturbative completion datum.
+- **rationale:** The audited claim is not the positive bridge; it is the bounded open-gate/obstruction status of that bridge. The runner only performs structural class-A checks, but those checks match the note's actual load-bearing role, and the one-hop authorities are retained-grade. The packet contains no PDG, lattice-MC, fitted beta_eff, or external comparator derivation input.
 - **auditor confidence:** high
 
 ### `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10`

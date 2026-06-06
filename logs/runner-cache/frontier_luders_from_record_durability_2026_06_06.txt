@@ -1,0 +1,40 @@
+====================================================================================
+The Lueders update IS record-formation: the conditional expectation forced by durability
+====================================================================================
+
+[BLOCK 1] The record algebra A_rec = {P_k}-block-diagonal operators
+  [PASS] the P_k are orthogonal projectors summing to I (central-sector decomposition)
+  [PASS] a durable record (sector-definite, e.g. diag) lies in A_rec
+  [PASS] an inter-sector coherence (|0><1|) is NOT in A_rec (would violate durability)
+
+[BLOCK 2] L(rho)=sum P_k rho P_k is the conditional expectation onto A_rec
+  [PASS] L is trace-preserving
+  [PASS] L(rho) is PSD (completely positive map output)
+  [PASS] L lands in A_rec (durability: sector-definite, no inter-sector coherence)
+  [PASS] L is idempotent: L^2 = L (durability: a record does not change once registered)
+  [PASS] L fixes A_rec: L(A)=A for records A
+  [PASS] L preserves record statistics Tr(P_k rho)
+  [PASS] conditional-expectation trace property: Tr(L(rho) X)=Tr(rho X) for X in A_rec
+
+[BLOCK 3] KEY: durability => the update is UNIQUELY the Lueders pinching
+  [PASS] candidate 'no update' (identity): FAILS durability (output not in A_rec)
+  [PASS] candidate 'reweighted pinch': lands in A_rec but FAILS record statistics Tr(P_k rho)
+  [PASS] candidate 'rotated pinch': records a DIFFERENT decomposition, NOT in A_rec
+  [PASS] => on the supplied decomposition {P_k}, the durable record-formation map is UNIQUELY L  --  the trace-preserving conditional expectation onto A_rec
+
+[BLOCK 4] Idempotence = compositional consistency (U4); selective Lueders
+  [PASS] L^2 = L  <=>  'recording twice = recording once' = compositional consistency (U4)  --  grounds LUDERS_RULE_FROM_COMPOSITION's U4 in durability
+  [PASS] selective Lueders sigma|_P = P rho P / Tr(P rho) is a valid normalized state (PSD, trace 1)  --  = the realized-sector conditioning of L on the realized outcome
+
+[BLOCK 5] Teeth: non-durable updates are excluded
+  [PASS] durable (L) is REPEATABLE: L(L(rho)) = L(rho) (the record is stable)
+  [PASS] TEETH: identity 'update' is NOT a stable record (id(rho) != pinch(id(rho)) generically)
+
+[BLOCK 6] Scope
+  [PASS] grounds the ASSUMED Lueders premise of luders_sequential_effect_composition (audited_conditional)
+  [PASS] the decomposition {P_k} (which observable is recorded) = SUPPLIED readout context, not derived  --  consistent with the Record axiom's stated boundary
+  [PASS] distinct from decoherence route (RECORD_DEPHASING_BROADCAST) and U1-U4 route (LUDERS_RULE_FROM_COMPOSITION)  --  here: forced by durability alone, model-free, as the conditional expectation
+
+====================================================================================
+SCORECARD:  PASS = 21   FAIL = 0
+====================================================================================

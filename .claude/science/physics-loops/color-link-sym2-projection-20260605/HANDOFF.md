@@ -12,7 +12,7 @@ Files:
 
 Runner result: `PASS=66 FAIL=0`.
 
-Stacked PR: pending.
+Stacked PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2752
 
 ## Main finding
 
@@ -29,4 +29,5 @@ and the Gell-Mann `su(3)` action embeds exactly on the symmetric block.
 
 ## Next exact action
 
-Commit, push, and open a stacked PR.
+Continue campaign queue; likely next route is endpoint ontology /
+SU(3)-restricted transport, or chirality/left-right residual.

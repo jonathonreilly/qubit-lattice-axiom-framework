@@ -29,6 +29,6 @@ trace_gate_classification: upstream_support
 trace_reachability: supports
 claim_status: exact-support
 review_findings: "local review pass; runner PASS=66 FAIL=0; py_compile pass; git diff --check pass; overclaim wording sweep empty"
-pr_status: "pending"
-next_exact_action: "Commit, push, and open stacked PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2752 (stacked on physics-loop/color-link-carrier-budget-20260605; audit workflow initially in progress)"
+next_exact_action: "Continue campaign queue; likely next route is endpoint ontology / SU(3)-restricted transport, or chirality/left-right residual."
 stop_condition: "Do not stop campaign after this block while runtime remains."

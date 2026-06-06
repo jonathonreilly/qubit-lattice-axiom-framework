@@ -1,21 +1,15 @@
-"""Finite checks for the Z=det fermionic-statistics admission locator.
+"""Finite checks for the Z=det fermionic-statistics locator.
 
-The runner verifies six algebra facts used by
-docs/FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md:
-
-1. finite Berezin/Grassmann Gaussian evaluation gives det(M);
-2. ordinary cross-site qubit ladders commute;
-3. a Jordan-Wigner dressing realizes CAR as a generator change;
-4. local dimension two is shared by fermions and hard-core bosons;
-5. signed determinant and unsigned permanent differ;
-6. the Koide Gamma_chi operator is a separate internal-generation object.
-
-The checks localize the FS admission. They do not assign a claim grade.
+The runner verifies that supplied Grassmann/CAR variables realize a determinant
+amplitude, while the tested finite hard-core/tensor-product routes do not force
+that statistics choice. It does not derive FS from baseline axioms or introduce
+a new axiom/admission.
 """
 
 from __future__ import annotations
 
 import itertools
+from pathlib import Path
 
 import numpy as np
 
@@ -53,9 +47,7 @@ def berezin_det(matrix: np.ndarray) -> float:
     n = matrix.shape[0]
     total = 0.0
     for perm in itertools.permutations(range(n)):
-        total += permutation_sign(perm) * np.prod(
-            [matrix[i, perm[i]] for i in range(n)]
-        )
+        total += permutation_sign(perm) * np.prod([matrix[i, perm[i]] for i in range(n)])
     return float(total)
 
 
@@ -107,8 +99,7 @@ def main() -> int:
     passed.append(
         check(
             "local dimension two is shared by fermions and hard-core bosons",
-            np.allclose(SP @ SP, 0.0)
-            and np.allclose(a1 @ a2 - a2 @ a1, 0.0),
+            np.allclose(SP @ SP, 0.0) and np.allclose(a1 @ a2 - a2 @ a1, 0.0),
         )
     )
 
@@ -134,29 +125,39 @@ def main() -> int:
         check(
             "Gamma_chi is an internal-generation object distinct from spatial CAR",
             np.allclose(sorted(np.linalg.eigvalsh(gamma_chi)), [-1.0, -1.0, 1.0])
-            and np.allclose(
-                gamma_chi @ c3_equivariant_mass
-                - c3_equivariant_mass @ gamma_chi,
-                0.0,
-            ),
+            and np.allclose(gamma_chi @ c3_equivariant_mass - c3_equivariant_mass @ gamma_chi, 0.0),
             "Gamma_chi commutes with the tested C3-equivariant mass operator",
+        )
+    )
+
+    root = Path(__file__).resolve().parents[1]
+    note = (root / "docs" / "FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md").read_text()
+    banned = [
+        "owner-approved",
+        "Tier-A admission",
+        "The three baseline axioms do not force FS",
+        "approved axioms and primitives",
+        "assign a claim grade",
+    ]
+    required = [
+        "does not derive the choice of Grassmann/CAR variables",
+        "does not introduce a new axiom or admission",
+        "No new axiom is introduced.",
+    ]
+    passed.append(
+        check(
+            "source boundary guard: finite locator only, no baseline/admission conclusion promoted",
+            all(term not in note for term in banned) and all(term in note for term in required),
+            "the packet leaves FS selection open",
         )
     )
 
     pass_count = sum(passed)
     fail_count = len(passed) - pass_count
     print(f"\nSCORECARD PASS={pass_count} FAIL={fail_count}")
-    print(
-        "FINDING: the determinant-amplitude gate localizes to FS, an "
-        "owner-approved cross-site fermionic-statistics admission."
-    )
-    print(
-        "The three baseline axioms do not force FS in these finite checks; "
-        "approved axioms and primitives are dependency premises, not grade sources."
-    )
-    print(
-        "Koide generation chirality remains a separate internal-factor residual."
-    )
+    print("FINDING: supplied Grassmann/CAR variables realize the determinant amplitude.")
+    print("The tested finite hard-core/tensor-product routes do not force that statistics choice.")
+    print("Koide generation chirality remains a separate internal-factor residual.")
     return 0 if all(passed) else 1
 
 

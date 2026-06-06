@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 186 |
+| **retained** | 187 |
 | **retained_no_go** | 197 |
 | **retained_bounded** | 680 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 35 |
-| unaudited | 1359 |
+| unaudited | 1358 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1058 |
+| `audited_clean` | 1059 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1665 |
+| `unaudited` | 1664 |
 
 | claim_type | count |
 |---|---:|
@@ -212,6 +212,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -2564,6 +2565,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** POVM-additivity on partitions implies partial additivity on effects; bounded additivity then gives real homogeneity and a unique real-linear extension to Herm(M_2), so finite-dimensional Riesz representation yields m(E)=Tr(sigma E) with sigma normalized and positive.  _(class `C`)_
 - **chain closes:** True — The finite-dimensional proof closes from the accepted M_2(C) carrier plus the explicitly stated effect/POVM hypotheses: additivity, homogeneity, linear extension, Riesz representation, and positivity all follow without external comparator input. The runner is supportive but samples trace-form functionals rather than proving the universal quantifier by itself.
 - **rationale:** The displayed normalizations and factors check out: P_a^+=(I+sigma_a)/2 gives m(P_a^+)=(1+r_a)/2 and hence sigma=1/2[I+sum_a(2m(P_a^+)-1)sigma_a]. The critical extension step is valid: partial additivity on effects gives additive positive-cone scaling, boundedness/nonnegativity rules out Cauchy pathologies, and the Hermitian cone decomposition yields a well-defined real-linear functional. The only cited upstream authority is the minimal axiom memo flagged as an accepted axiom premise, so it does not trigger a dependency downgrade.
+- **auditor confidence:** high
+
+### `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-region effect-Gleason representation on E(M_{2^|Λ|}(C)) for all finite qubit-lattice regions |Λ| >= 1, assuming the stated POVM-additivity axioms.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-170409-48b5915cb3-busch_povm_extension_on_qubi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For |Λ| = 1 the retained M_2(C) effect-Gleason bridge gives m(E)=Tr(σE), while for |Λ| >= 2 the retained projection-Gleason result plus effect additivity, homogeneity, and finite spectral decomposition extends m(P)=Tr(σP) from projections to all effects.  _(class `A`)_
+- **chain closes:** True — The single-site case is supplied by the retained_bounded qubit effect bridge, and the multi-site case follows algebraically from the retained projection-lattice theorem after deriving partial additivity and homogeneity from complete POVM additivity. The finite spectral decomposition formula then gives m(E)=Σ_j λ_j Tr(σP_j)=Tr(σE).
+- **rationale:** The cited non-axiom authorities are retained-grade, and the minimal-axioms citation is an accepted axiom premise supplying only the qubit lattice carrier. An independent formula check confirms the dimension count d=2^|Λ|, the complement and partial-additivity derivation from two- and three-outcome POVMs, the homogeneity step, the Bloch coefficient 2m(P_a^+)-1, and the spectral extension m(E)=Σ_j λ_jm(P_j). The runner source performs real algebraic checks rather than importing external comparator data, and its 40/0 pass log is consistent with the displayed proof.
 - **auditor confidence:** high
 
 ### `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26`

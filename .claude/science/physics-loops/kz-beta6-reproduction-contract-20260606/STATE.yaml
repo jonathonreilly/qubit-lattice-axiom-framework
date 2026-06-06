@@ -1,0 +1,27 @@
+loop_slug: kz-beta6-reproduction-contract-20260606
+branch: physics-loop/kz-beta6-reproduction-contract-20260606
+base: physics-loop/kz-su3-beta6-convention-split-20260606
+status: verification_complete
+actual_current_surface_status: no-go
+target_status: best-honest-status
+cycle_count: 1
+current_goal: "Prune invalid K-Z finite SU(3), Wilson beta=6 reproduction routes after the beta/lambda convention split."
+active_route: "support-only SDP firewall and beta=6 reproduction acceptance contract"
+hard_residual: "A primary source-data bracket or repo-owned beta-coupled SDP reproduction remains missing."
+files_touched:
+  - docs/GAUGE_SCALAR_KZ_BETA6_REPRODUCTION_CONTRACT_FIREWALL_2026-06-06.md
+  - scripts/frontier_kz_beta6_reproduction_contract_2026_06_06.py
+  - logs/runner-cache/frontier_kz_beta6_reproduction_contract_2026_06_06.txt
+  - .claude/science/physics-loops/kz-beta6-reproduction-contract-20260606/
+open_imports:
+  - "Primary table/source-data extraction at paper coordinate lambda=1.5, or beta-coupled Migdal-Makeenko/Schwinger-Dyson loop equations."
+no_go_routes:
+  - "Old W_lift ~= 0.05 shortcut as finite SU(3), Wilson beta=6 bracket."
+  - "Support-only SDP constraints as a nontrivial beta=6 upper-bound reproduction."
+trace_gate_classification: negative_route_pruning
+review_findings: "local review-loop emulation clean; no status-promotion or beta=6 bracket overclaim found"
+pr_status: "not_created"
+next_exact_action: "Commit, push, open a stacked PR, and record PR state."
+stop_condition: "One coherent PR for this block, then pivot to the next campaign lane while runtime remains."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

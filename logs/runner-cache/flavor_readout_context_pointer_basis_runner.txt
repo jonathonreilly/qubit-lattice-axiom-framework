@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/flavor_readout_context_pointer_basis_runner.py
+runner_sha256: 13a19717a7a872721610c71032f3e3f4ece836455456b3f0fa4f3692377b4f01
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+========================================================================
+FLAVOR READOUT CONTEXT = the DERIVABLE decoherence pointer basis  [class A]
+========================================================================
+  [PASS] native C3 coupling K=C+C^dag: pure-coupling pointer basis has trimaximal columns (C3 readout)  (trimax cols=[2])
+  [PASS] pure corner mass M: pointer basis is the CORNER (mass) eigenbasis
+  [PASS] PREDICTABILITY SIEVE: mass-DOMINATED (M >> K) -> pointer basis ~ CORNER (charged: large mass)
+  [PASS] PREDICTABILITY SIEVE: coupling-DOMINATED (K >> M) -> pointer basis ~ C3 (trimaximal column; neutrino: tiny mass)  (trimax cols=[2])
+  [PASS] coupling-dominated pointer is NOT corner-like (unlike charged)
+  [PASS] the MASS SCALE tunes the pointer basis: large->corner, small->C3 (the sector-distinguisher is the mass hierarchy)  ([(50.0, True, 0), (1.0, False, 0), (0.01, False, 1)])
+  [PASS] => the readout context is DERIVABLE from {LATTICE, QUANTUM} (the decoherence pointer basis); RECORD disclaims it but the OTHER axioms derive it -- NOT a 4th-principle gate. Open piece: the emergent C3 coupling SCALE (a computation).
+  [PASS] the two prior mechanism-guesses (gauge-localization, Dirac-vs-Majorana) were the WRONG mechanism; the right one is the mass-scale predictability sieve
+========================================================================
+TOTAL: PASS=8 FAIL=0
+VERDICT: the flavor readout context (corner vs C3) is the DERIVABLE decoherence pointer basis -- mass-dominated -> corner (charged), coupling-dominated -> C3 (neutrino). The mass scale is the sector-distinguisher. Derivable from {LATTICE, QUANTUM}; the open piece is the emergent C3 coupling scale, a computation.
+
+----- stderr -----
+

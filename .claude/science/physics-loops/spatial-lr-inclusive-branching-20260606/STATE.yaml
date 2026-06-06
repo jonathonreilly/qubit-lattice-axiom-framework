@@ -1,0 +1,28 @@
+loop_slug: spatial-lr-inclusive-branching-20260606
+branch: physics-loop/spatial-lr-inclusive-branching-20260606
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3014
+base: origin/main
+base_commit: 0f4b28f29
+target_claim_id: spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_status: true
+cycle_count: 1
+active_route: inclusive interaction-graph branching constant
+files_touched:
+  - docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md
+  - scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py
+  - logs/runner-cache/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.txt
+open_imports:
+  - finite-volume filter lemma for static spatial clustering
+  - retained gap/target-state bridge for the cluster-decomposition half
+resolved_blocker:
+  source: audit_ledger
+  text: "D_I excludes self-overlap while the nested-commutator expansion admits repeated local terms, so the stated branching constant and lambda=2JD_I|t| are not justified without an inclusive branching constant or a separate resummation argument."
+verification:
+  - "PYTHONPATH=scripts python3 -m py_compile scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py"
+  - "PYTHONPATH=scripts python3 scripts/cached_runner_output.py scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py"
+next_exact_action: "Reviewer extracts science from PR #3014; if accepted, queue independent re-audit of the finite-volume LR row only."
+stop_condition: "Stop this block after PR handoff; continue campaign with next uncovered conditional/failed row."

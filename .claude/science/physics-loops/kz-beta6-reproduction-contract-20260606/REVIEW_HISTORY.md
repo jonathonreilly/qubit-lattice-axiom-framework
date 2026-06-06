@@ -35,7 +35,10 @@ PR #2812:
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2812
 ```
 
-Verified open, base
+Initial verification: open, base
 `physics-loop/kz-su3-beta6-convention-split-20260606`, head
 `physics-loop/kz-beta6-reproduction-contract-20260606`, mergeable
 `MERGEABLE`, merge state `UNSTABLE` with `audit_pipeline` queued.
+
+Latest verification after pushing PR-state bookkeeping: open, mergeable
+`MERGEABLE`, merge state `CLEAN`.

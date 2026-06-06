@@ -23,8 +23,7 @@ https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2812
 GitHub verification: open PR, base
 `physics-loop/kz-su3-beta6-convention-split-20260606`, head
 `physics-loop/kz-beta6-reproduction-contract-20260606`, mergeable
-`MERGEABLE`, merge state `UNSTABLE` with `audit_pipeline` queued at
-verification.
+`MERGEABLE`, merge state `CLEAN` at latest verification.
 
 ## Result
 
@@ -43,5 +42,4 @@ with explicit loop equations and solver/cutoff evidence.
 
 ## Next Action
 
-Run verification, open the stacked PR, record the PR URL/state here, then
-continue the 12-hour campaign on the next highest-value lane.
+Continue the 12-hour campaign on the next highest-value lane.

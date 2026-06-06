@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/record_outcome_observable_principle_runner.py
-runner_sha256: 6a836e34894becf88bd0b60a583e1f7d77b8a328750bbdb40940ac6355efa808
+runner_sha256: 9ff51a655aec6e54a1f30c1983a6821ed9d3043d14cd90334a229161bbc0ee47
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -17,13 +17,14 @@ RECORD-OUTCOME OBSERVABLE PRINCIPLE -- abstract methodology (class A)
   [PASS] perturbation is purely inter-sector (block-off-diagonal)
   [PASS] two pre-record operators differing only in inter-sector coherence record IDENTICALLY
   [PASS] central-sector overlaps tr(P_k rho) are fixed by {P_k} alone (M-independent)  ([1.0, 0.0, 0.0])
+  [PASS] sector WEIGHT depends on the realized state, not on the partition (same {P_k}, different states -> different weights => weight is registered, not delivered)  (w_ref=0.667 vs w_realized=9.000)
   [PASS] varying within-sector content leaves central-sector overlaps unchanged
   [PASS] C3 instance: singlet P0 = J/3 gives corner overlaps 1/3 (PMNS trimaximal column)  ([0.3333, 0.3333, 0.3333])
   [PASS] GUARDRAIL G1: a different (valid) decomposition gives different overlaps (the recipe needs {P_k} as input, does not invent it)
   [PASS] GUARDRAIL G2: coarser and finer partitions are BOTH complete/orthogonal (a predicate, e.g. K-reality, is needed to fix which)
 ========================================================================
-TOTAL: PASS=12 FAIL=0
-VERDICT: observables = recorded central-sector structure; pre-record inter-sector coherence not recorded; within-sector data free. Decomposition is an input (needs a predicate, e.g. K-reality). Outcome-structure reading, axiom-direct.
+TOTAL: PASS=13 FAIL=0
+VERDICT: observables = REGISTERED central-sector structure; pre-record inter-sector coherence is never registered; per-sector WEIGHTS (e.g. r) are the registered pattern of the realized state, not delivered by the partition. Decomposition is an input (needs a predicate, e.g. K-reality). Register, not read.
 
 ----- stderr -----
 

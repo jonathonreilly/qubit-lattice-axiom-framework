@@ -1,0 +1,24 @@
+loop: koide-aps-fixed-locus-dep-sharpen-20260606
+date: 2026-06-06
+mode: science-fix
+target_status: conditional-support
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+target_claim_id: koide_aps_block_by_block_forcing_note_2026-04-21
+source_of_blocker_text: audit_ledger
+target_blocker_text: "Repair: provide a bridge theorem for the route, fixed-locus weights, and ABSS applicability. Boundary: retain only the conditional eta=2/9 algebraic certificate."
+active_route: "Use the fixed-locus bridge to retire the p=3 / (1,2) weight stipulations while preserving the global PL/ABSS conditional boundary."
+files_touched:
+  - docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md
+  - scripts/frontier_koide_aps_block_by_block_forcing.py
+  - logs/runner-cache/frontier_koide_aps_block_by_block_forcing.txt
+runner:
+  command: "python3 scripts/cached_runner_output.py scripts/frontier_koide_aps_block_by_block_forcing.py --refresh --timeout-sec 120"
+  result: "29 PASS / 0 FAIL"
+open_imports:
+  - "Global Cl(3)/Z^3 -> PL S^3 x R identification remains open."
+  - "Global ABSS applicability on the framework surface remains conditional."
+  - "Physical selected-line Brannen-phase readout remains open."
+proposal_allowed: false
+audit_required_before_effective_status: true
+next_exact_action: "Independent review/audit should judge whether the parent row's blocker is narrowed to the remaining global PL/ABSS route."

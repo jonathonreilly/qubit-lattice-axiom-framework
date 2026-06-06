@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_single_clock_uniqueness_scope_boundary_2026_06_06.py
+runner_sha256: 4e4a9445893733ac790ef2bf0b1647892174ac0241cb43340d92988607706600
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
 
 ========================================================================
 Fixed T and fixed tau give a unique Stone generator
@@ -44,3 +52,6 @@ Scorecard
 ========================================================================
 PASS=19 FAIL=0
 FINDING: finite-dimensional Stone uniqueness is relative to a supplied positive transfer T and fixed time scale tau. It does not by itself fix tau, exclude other supplied positive transfers, or prove a broad framework-wide one-clock exclusion theorem.
+
+----- stderr -----
+

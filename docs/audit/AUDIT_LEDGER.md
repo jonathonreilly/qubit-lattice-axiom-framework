@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 198 |
-| **retained_no_go** | 212 |
+| **retained_no_go** | 213 |
 | **retained_bounded** | 703 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1270 |
+| unaudited | 1269 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1111 |
+| `audited_clean` | 1112 |
 | `audited_conditional` | 70 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1577 |
+| `unaudited` | 1576 |
 
 | claim_type | count |
 |---|---:|
@@ -1003,6 +1003,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sign_portability_invariant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `site_phase_cube_shift_intertwiner_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `sixth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
@@ -15426,6 +15427,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given finite-dimensional positive Hermitian T with spectrum 0 < λ_k ≤ 1, define H_gen = -(1/τ)log(T) by spectral functional calculus, so U(t)=exp(-itH_gen) and T^n=U(-inτ).  _(class `A`)_
 - **chain closes:** True — The statement follows from the finite-dimensional spectral theorem, functional calculus, and bounded matrix ODE uniqueness. No cited external authority or open bridge is needed for the narrowed N1-N4 scope.
 - **rationale:** The removed false condition U(τ)^*T=T is no longer part of the audited headline scope. The remaining N1-N4 claims are standard finite-dimensional algebraic consequences of positivity, Hermiticity, trivial kernel, and τ>0. The runner source performs exact symbolic checks for representative diagonal positive matrices and counterfactual hypotheses; it does not merely print constants or import a contested premise. The general proof in the note supplies the full finite-dimensional closure beyond the concrete runner examples.
+- **auditor confidence:** high
+
+### `single_clock_uniqueness_scope_boundary_2026-06-06`
+
+- **Note:** [`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`](../../docs/SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite-dimensional matrix-algebra boundary: Stone uniqueness is relative to a supplied positive transfer T and fixed tau, and does not by itself fix tau or exclude independent commuting supplied transfers.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-8e3e90321f-single_clock_uniqueness_scop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The same positive transfer T can be reconstructed with different tau by rescaling H, and distinct tensor-factor transfers can commute without being erased by Stone uniqueness for a supplied product transfer.  _(class `A`)_
+- **chain closes:** True — Independent algebra confirms that T=diag(1/2,1/3) is reconstructed by both tau=1 with H1 and tau=2 with H1/2, so T fixes tau H rather than a clock unit. The tensor-product examples give distinct commuting positive transfers and generators, so excluding a second clock needs an extra axis/transfer uniqueness premise.
+- **rationale:** The runner source performs exact Sympy matrix, logarithm, exponential, tensor-product, and commutator checks rather than merely printing constants. The load-bearing content is standard finite-dimensional algebra over explicit matrices, not a numerical fit, renaming, or external comparison. The no-go is scoped only to skipping N2/N4/N5 and explicitly leaves separate axis or transfer uniqueness premises open, so it is not an overbroad framework-wide one-clock exclusion.
 - **auditor confidence:** high
 
 ### `site_phase_cube_shift_intertwiner_note`

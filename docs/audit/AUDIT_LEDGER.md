@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 674 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1216 |
+| unaudited | 1215 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 84 |
+| ~~audited_conditional~~ | 85 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1045 |
-| `audited_conditional` | 84 |
+| `audited_conditional` | 85 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1500 |
+| `unaudited` | 1499 |
 
 | claim_type | count |
 |---|---:|
@@ -1255,6 +1255,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -14544,6 +14545,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The empirically implied light-Dirac Yukawa y_nu ~ 10^-13 to 10^-12 lies many orders below the Gamma ~ y_nu^2 T versus H thermalization threshold, while the heavy-Majorana branch excludes nu_R by assuming M_R >> T_census, so nu_R is not a light thermalized degree of freedom in either admitted branch.  _(class `D`)_
 - **chain closes:** False — The finite g_* arithmetic and the displayed Yukawa/threshold estimates mostly check out, but the conclusion depends on imports not closed by the cited authorities: empirical small m_nu, the standard Gamma/H thermalization criterion, and M_R >> T_census for the Majorana branch. The source also has minor quantitative drift: the 0.1 eV, T=100 GeV margin is about 4.3 decades, not 4.6, and y_nu >= y_thr rather than O(1) is the minimal thermalizing route.
 - **rationale:** The cited authorities are retained-grade and the runner performs real arithmetic checks rather than merely printing a PASS line. However, the load-bearing step is an external-observation/standard-cosmology comparator, not a first-principles framework computation or a pure algebraic closure over retained inputs. The heavy-Majorana branch also relies on M_R >> T_census, which is asserted in the source note and hard-coded in the runner but not established by the one-hop no-go authority. Therefore the honest result is conditional, even though the scoped exclusion is plausible under the stated assumptions.
+- **auditor confidence:** high
+
+### `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded residual-reduction claim that the g_* matter-sector arithmetic can use 15 gauge-charged Weyl multiplicities per generation, times a Weyl-to-dof factor 2 and three generations, while separating nu_R thermal exclusion, Weyl-spin identification, and neutral-singlet labelling as residuals.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-003148-ecb7e59110-sm_gstar_r_matter_residual_r`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's operative step is that the thermalized per-generation matter count is 30 = 15 gauge-charged Weyl fermions * 2 dof per Weyl, with the 15 gauge-charged multiplicities re-sourced to retained / decoration-under-retained authorities while I12, R-SPIN, and the branch convention remain residual.  _(class `A`)_
+- **chain closes:** False — The displayed arithmetic and branch-independence checks close as algebraic bookkeeping. The restricted packet does not fully close the bridge from the cited CAR/Pauli cardinality theorem to the thermodynamic particle/antiparticle Weyl dof factor, and the right-handed singlet completion authority is explicitly conditional on a singlet inventory / chirality setup rather than deriving that inventory.
+- **rationale:** The runner performs exact rational arithmetic and source/ledger bookkeeping, but it hard-codes the contested structural constants rather than deriving the missing physical bridges. The spin-statistics authority supplied in the packet proves finite-dimensional CAR occupancy and Pauli exclusion; it does not by itself prove that each thermalized Weyl species contributes the particle/antiparticle degeneracy used in g_*. The anomaly singlet completion packet verifies a conditional algebraic completion for four singlets, but its own scope says the chirality / singlet-inventory identification is taken as given. Thus the partial reduction is plausible, but the claim as written overstates that all count inputs are retained-sourced.
+- **open / conditional deps cited:**
+  - `SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29`

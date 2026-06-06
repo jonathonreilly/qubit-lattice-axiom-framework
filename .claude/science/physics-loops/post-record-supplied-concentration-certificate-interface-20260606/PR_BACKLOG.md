@@ -1,6 +1,6 @@
 # PR Backlog
 
-Status: PR created; initial in-progress check recorded.
+Status: PR created; final clean/success state recorded.
 
 Intended title:
 
@@ -37,4 +37,7 @@ pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/28
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_status_check_rollup: "audit_pipeline in progress at first verification"
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_status_check_rollup: "audit_pipeline completed SUCCESS at final verification"
 ```

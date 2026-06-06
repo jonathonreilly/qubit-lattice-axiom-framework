@@ -23,4 +23,4 @@ lattice `ell_1` metric consistently.
 
 ## PR
 
-Pending.
+Open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2772

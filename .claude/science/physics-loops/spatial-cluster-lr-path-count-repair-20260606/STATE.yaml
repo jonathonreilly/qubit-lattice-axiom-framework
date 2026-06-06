@@ -25,6 +25,7 @@ checks:
   - python3 -m py_compile scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py
   - python3 scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py
   - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py --force --push-mode=none --allow-non-main --concurrency 1
-pr_status: pending
-next_exact_action: run branch hygiene checks, commit, push, open PR
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2772
+next_exact_action: reviewer to inspect PR #2772; independent audit required before any status change
 stop_condition: not reached

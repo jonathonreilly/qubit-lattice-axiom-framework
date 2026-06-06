@@ -1,0 +1,20 @@
+loop: noether-u1-sign-direct-check-20260606
+branch: physics-loop/noether-u1-sign-direct-check-20260606
+target_claim_id: axiom_first_lattice_noether_theorem_note_2026-04-29
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+blocker: "E5 did not independently verify the claimed algebraic sign in (5)->(4); it evaluated a propagator surface where symmetric link bilinears can cancel."
+files_touched:
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_lattice_noether_check.py
+  - logs/runner-cache/axiom_first_lattice_noether_check.txt
+  - .claude/science/physics-loops/noether-u1-sign-direct-check-20260606/
+verification:
+  - python3 -m py_compile scripts/axiom_first_lattice_noether_check.py
+  - python3 scripts/axiom_first_lattice_noether_check.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/axiom_first_lattice_noether_check.py --force --allow-non-main --push-mode none
+remaining_limits:
+  - The theorem remains bounded on the admitted staggered/Grassmann carrier.
+  - E5b closes the U(1) sign visibility issue only; it does not derive the carrier from baseline axioms.
+

@@ -217,9 +217,13 @@ lattice analogue of microcausality.
 **(L4) Cl(3)-specific constant.** The factor `J_*` in (1) is finite
 on the canonical finite-range surface: each local term is a finite
 Hermitian Cl(3) tensor with bounded operator norm at canonical
-normalization, and each site is touched by finitely many nonzero
-terms. If at most `N_touch` local terms touch any site, then
-`J_* ≤ N_touch J`.
+normalization. For a coefficient expansion over the 8 canonical monomials
+`gamma^alpha`, no unit-constant Euclidean coefficient bound is asserted;
+the valid bound is the triangle/Cauchy estimate
+`||sum_alpha c_alpha gamma^alpha|| <= sum_alpha |c_alpha| <= sqrt(8)||c||_2`
+because each monomial has operator norm 1. Since each site is touched by
+finitely many nonzero terms, if at most `N_touch` local terms touch any site,
+then `J_* <= N_touch J`.
 
 ## Proof
 
@@ -331,11 +335,21 @@ norm. This is the lattice analogue of microcausality.
 For a single Hermitian element `h ∈ Cl(3)` evaluated on the minimal
 complex spinor module (dim 2), the operator norm equals the spectral
 radius. Cl(3) has 8 real generators, so any finite-coefficient
-Hermitian element `h = Σ_α c_α γ^α` has operator norm bounded by
-`(Σ_α |c_α|² · ‖γ^α‖²)^{1/2}` with each `‖γ^α‖ = 1` for the
-canonical orthonormal generators. Thus the single-term bound `J` is
-finite at canonical normalization. Since the finite-range local rule
-has finite `N_touch`, `J_* ≤ N_touch J` is finite as well. ∎
+Hermitian element `h = Σ_α c_α γ^α` has operator norm bounded by the
+triangle inequality:
+
+```text
+    ||h||_op  <=  Σ_α |c_α| ||γ^α||_op  =  Σ_α |c_α|
+              <=  sqrt(8) (Σ_α |c_α|²)^{1/2}.                         (8)
+```
+
+Here each canonical monomial `γ^α` is unitary on the minimal complex spinor
+module, hence `||γ^α||_op = 1`. The previous unit-constant Euclidean
+coefficient bound is not used and is false in general: `I + σ_z` has
+operator norm `2` but coefficient `l2` norm `sqrt(2)`. The repaired bound
+(8) is sufficient for L4: it supplies a finite single-term bound `J` at
+canonical normalization. Since the finite-range local rule has finite
+`N_touch`, `J_* <= N_touch J` is finite as well. ∎
 
 ## Hypothesis set used
 

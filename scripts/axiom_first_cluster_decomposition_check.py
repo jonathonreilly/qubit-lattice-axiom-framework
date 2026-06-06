@@ -36,6 +36,12 @@ combinatorial Lieb–Robinson structure):
   E5.  Explicit nearest-neighbour J <= J_* check: the per-site sum
        constant is larger than the single-term maximum whenever a site
        is touched by multiple interaction terms.
+
+  E6.  Cl(3) coefficient/operator-norm bound: verify the valid
+       triangle/Cauchy estimate
+           ‖Σ c_α γ^α‖ <= Σ |c_α| <= sqrt(8) ‖c‖_2
+       and exhibit that the previous unit-constant Euclidean bound is
+       false for I + σ_z.
 """
 
 from __future__ import annotations
@@ -298,6 +304,70 @@ def exhibit_E5_jstar_constant(J=0.5):
 
 
 # ---------------------------------------------------------------------------
+# Exhibit E6: Cl(3) coefficient/operator-norm bound
+# ---------------------------------------------------------------------------
+
+def cl3_monomial_basis_minimal_spinor():
+    """Canonical Cl(3) monomials on the minimal complex spinor module."""
+    I2 = np.eye(2, dtype=complex)
+    sx = np.array([[0, 1], [1, 0]], dtype=complex)
+    sy = np.array([[0, -1j], [1j, 0]], dtype=complex)
+    sz = np.array([[1, 0], [0, -1]], dtype=complex)
+    gammas = [sx, sy, sz]
+    return [
+        I2,
+        gammas[0],
+        gammas[1],
+        gammas[2],
+        gammas[0] @ gammas[1],
+        gammas[0] @ gammas[2],
+        gammas[1] @ gammas[2],
+        gammas[0] @ gammas[1] @ gammas[2],
+    ]
+
+
+def exhibit_E6_cl3_norm_bound(seed=20260606, n_trials=200):
+    print("\n--- Exhibit E6: Cl(3) coefficient/operator-norm bound ---")
+    print("  Verify: ||sum c_alpha gamma^alpha|| <= sum |c_alpha| <= sqrt(8)||c||_2")
+    print("  Also exhibit: unit-constant Euclidean coefficient bound is false for I + sigma_z.")
+    rng = np.random.default_rng(seed)
+    basis = cl3_monomial_basis_minimal_spinor()
+    basis_norms = [float(np.linalg.svd(B, compute_uv=False).max()) for B in basis]
+    unit_basis = all(abs(n - 1.0) < 1e-12 for n in basis_norms)
+    print(f"  all 8 monomial operator norms equal 1? {unit_basis}")
+
+    I2 = basis[0]
+    sz = basis[3]
+    old_counter_coeffs = np.zeros(8, dtype=complex)
+    old_counter_coeffs[0] = 1.0
+    old_counter_coeffs[3] = 1.0
+    old_counter = I2 + sz
+    old_counter_norm = float(np.linalg.svd(old_counter, compute_uv=False).max())
+    old_counter_l2 = float(np.linalg.norm(old_counter_coeffs))
+    old_bound_false = old_counter_norm > old_counter_l2 + 1e-12
+    print(f"  counterexample ||I + sigma_z|| = {old_counter_norm:.6f}")
+    print(f"  coefficient ||c||_2 = {old_counter_l2:.6f}")
+    print(f"  old unit-constant Euclidean bound false? {old_bound_false}")
+
+    n_pass = 0
+    worst_slack = float("inf")
+    for _ in range(n_trials):
+        coeffs = rng.normal(size=8) + 1j * rng.normal(size=8)
+        h = sum(c * B for c, B in zip(coeffs, basis))
+        op = float(np.linalg.svd(h, compute_uv=False).max())
+        l1 = float(np.sum(np.abs(coeffs)))
+        l2_bound = math.sqrt(8.0) * float(np.linalg.norm(coeffs))
+        if op <= l1 + 1e-10 and l1 <= l2_bound + 1e-10:
+            n_pass += 1
+        worst_slack = min(worst_slack, l1 - op, l2_bound - l1)
+    pass_check = unit_basis and old_bound_false and (n_pass == n_trials)
+    print(f"  repaired triangle/Cauchy bound passed {n_pass}/{n_trials} trials")
+    print(f"  worst numerical slack = {worst_slack:.3e}")
+    print(f"  E6 verdict: {'PASS' if pass_check else 'FAIL'}")
+    return pass_check
+
+
+# ---------------------------------------------------------------------------
 # Driver
 # ---------------------------------------------------------------------------
 
@@ -312,12 +382,14 @@ def main():
     e1_pass, e3_pass, e4_pass, v_LR_pred = exhibit_LR_envelope(L=24)
     e2_pass = exhibit_E2_clustering(L=24)
     e5_pass = exhibit_E5_jstar_constant()
+    e6_pass = exhibit_E6_cl3_norm_bound()
 
     results = {"E1 (LR envelope)": e1_pass,
                "E2 (clustering)": e2_pass,
                "E3 (lattice light cone)": e3_pass,
                "E4 (front velocity)": e4_pass,
-               "E5 (J_* constant)": e5_pass}
+               "E5 (J_* constant)": e5_pass,
+               "E6 (Cl(3) norm bound)": e6_pass}
     print()
     print("=" * 72)
     print(" SUMMARY")

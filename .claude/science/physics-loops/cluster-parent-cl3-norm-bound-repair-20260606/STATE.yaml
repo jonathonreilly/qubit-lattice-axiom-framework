@@ -1,0 +1,30 @@
+loop_slug: cluster-parent-cl3-norm-bound-repair-20260606
+branch: physics-loop/cluster-parent-cl3-norm-bound-repair-20260606
+base: origin/main
+target_claim_id: axiom_first_cluster_decomposition_theorem_note_2026-04-29
+target_status_before_branch: audited_conditional
+actual_current_surface_status: bounded-support
+conditional_surface_status: L2 remains conditional on gap/spatial-clustering authority
+hypothetical_axiom_status: null
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+cycle: 3
+active_route: Cl(3) coefficient/operator-norm bound repair
+hard_residual: >
+  The parent note's Step 6 asserted a unit-constant Euclidean coefficient
+  norm bound for arbitrary Hermitian Cl(3) elements. I + sigma_z is a
+  counterexample. A triangle/Cauchy bound with sqrt(8) is sufficient for L4.
+files_touched:
+  - docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
+  - scripts/axiom_first_cluster_decomposition_check.py
+  - logs/runner-cache/axiom_first_cluster_decomposition_check.txt
+  - .claude/science/physics-loops/cluster-parent-cl3-norm-bound-repair-20260606/
+no_audit_result_edits: true
+new_axioms: false
+checks:
+  - python3 -m py_compile scripts/axiom_first_cluster_decomposition_check.py
+  - python3 scripts/axiom_first_cluster_decomposition_check.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/axiom_first_cluster_decomposition_check.py --force --push-mode=none --allow-non-main --concurrency 1
+pr_status: pending
+next_exact_action: run branch hygiene checks, commit, push, open PR
+stop_condition: not reached

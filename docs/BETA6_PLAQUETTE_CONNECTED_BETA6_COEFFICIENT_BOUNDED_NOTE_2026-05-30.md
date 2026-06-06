@@ -6,6 +6,33 @@ finite order-beta^7 support reduction; does NOT close beta=6)
 **Status authority:** independent audit lane only. This source note sets source
 claim metadata only; it does not quote, set, or predict audit outcomes.
 **Primary runner:** [`scripts/frontier_beta6_connected_coefficient_2026_05_30.py`](../scripts/frontier_beta6_connected_coefficient_2026_05_30.py)
+**Completed maxorder-7 packet:** [`scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py`](../scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py)
+**Completed maxorder-7 packet cache:** [`logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt`](../logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt)
+**Source-packet verifier:** [`scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py`](../scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py)
+**Source-packet verifier cache:** [`logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt`](../logs/runner-cache/frontier_beta6_d7_source_packet_manifest_2026_06_05.txt)
+**Source-packet verifier JSON:** [`outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json`](../outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json)
+**D7 companion note:** [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md)
+
+## 2026-06-06 source-packet addendum
+
+The prior text below was written before the maxorder-7 exact run was
+cache-addressable. The completed packet now exists in the source tree:
+
+- `scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py` delegates to
+  `scripts/frontier_beta6_connected_coefficient_2026_05_30.py 7`;
+- `logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt`
+  records `SCORECARD: PASS=22 FAIL=0`, the GF(3) cycle-space certificate,
+  and the exact order-7 value `d_7 = 5/17006112`;
+- `scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py` verifies
+  that the full delegated runner source, packet runner, packet cache, D9
+  cross-certificate, and source markers are available and fresh; its cache
+  records `SUMMARY: BETA6 D7 SOURCE PACKET PASS=38 FAIL=0`;
+- the companion D7 note records the order-7 coefficient and the bounded
+  geometric-ratio falsification.
+
+This addendum does not widen this row's original claim and does not assign an
+audit verdict. It only makes Section 3c's requested maxorder-7 packet and full
+source path explicit for re-audit.
 
 ## 0. Scope and what this note is for
 
@@ -32,9 +59,11 @@ d_6 = 7 / 5668704     (exact).
 Equivalently, per cube shell `d_6 = 7/22674816 = 7/(12 * 18^5)`, and the clean
 per-shell rational ratio is `d_6 / d_5 = 7/12`. It further gives a **structural
 order-beta^7 support reduction**: Section 3c's GF(3) cycle-space certificate
-proves no order-beta^6 or order-beta^7 distinct support is color-closable, so a
-future exact `d_7` computation only has to sum the four cube shells' order-7
-multiplicity terms. This note does not certify a numerical `d_7` value.
+proves no order-beta^6 or order-beta^7 distinct support is color-closable, so
+the exact `d_7` computation has to sum only the four cube shells' order-7
+multiplicity terms. The completed maxorder-7 packet linked above now performs
+that computation; the numerical `d_7` coefficient itself is recorded in the
+separate companion D7 note.
 
 This is a **bounded** result: an exact strong-coupling series coefficient. It
 does **not** close beta=6, does not assert `P(6)`, does not posit a closed
@@ -165,10 +194,11 @@ there is **no weight-7 or weight-8 2-cycle through `p0`** (the next weights are
 (size 6 also confirmed directly by the radius-1 enumeration, runner V3). This
 GF(3) cycle-space certificate is the tractable replacement for the size-7
 connected-subset enumeration, which collides with the `mu^n` cluster-growth
-wall (frontier `> 1e7`, OOM). Therefore any future exact `d_7` computation,
-like `d_6`, receives contributions **only from the four cube shells via order-7
+wall (frontier `> 1e7`, OOM). Therefore the exact `d_7` computation, like
+`d_6`, receives contributions **only from the four cube shells via order-7
 multiplicity** (one face tripled, two faces doubled, one face doubled with
-`m_{p0}=1`, etc.).
+`m_{p0}=1`, etc.). The completed maxorder-7 packet linked in the header
+executes this restricted computation.
 
 ## 4. Result
 
@@ -189,10 +219,11 @@ strong-coupling coefficient).
 
 **Order beta^7.** Section 3c reduces the `d_7` distinct-support search to the
 **four cube shells' order-7 multiplicity sum** (the GF(3) cycle-space
-certificate proves no size-6/7 distinct support is closable). The numerical
-`d_7` value is a later heavy exact computation, not a coefficient certified by
-this note. The geometric prediction that a future `d_7` would test is
-`d_7^pred = (d_6/d_5) d_6 = (7/12) d_6 = 49/68024448 ~= 7.20e-07` (Section 5).
+certificate proves no size-6/7 distinct support is closable). The completed
+maxorder-7 packet linked above now supplies the exact value
+`d_7 = 5/17006112`, and the companion D7 note owns the coefficient statement
+and bounded geometric-ratio verdict. The geometric prediction tested there is
+`d_7^pred = (d_6/d_5) d_6 = (7/12) d_6 = 49/68024448 ~= 7.20e-07`.
 
 ## 5. How this feeds the resummation test harness (#2255)
 
@@ -207,20 +238,21 @@ tadpole / boosted-PT geometric prediction
 d_7^pred = (d_6 / d_5) * d_6 = (7/12) * d_6 = 49/68024448 ~= 7.20e-07.
 ```
 
-The moment an independently reviewed exact `d_7` is supplied, the harness
-reports `SUPPORT` (within its 5% window) or `FALSIFY`. This cycle reduces the
-`d_7` support search to the four cube shells' order-7 multiplicity sum (Section
-3c); a later exact coefficient computation can then set
-`EXACT_HIGHER = {6: Fraction(7,5668704), 7: <reviewed d_7>}` and read off the
-tadpole/geometric SUPPORT-or-FALSIFY verdict against
-`d_7^pred = (7/12) d_6` (the harness run is the next cycle). The d-log-Pade
+The companion D7 packet supplies an exact candidate `d_7`, so the harness can
+report `SUPPORT` (within its 5% window) or `FALSIFY` for the single-ratio
+geometric continuation. This cycle reduces the `d_7` support search to the
+four cube shells' order-7 multiplicity sum (Section 3c); the companion packet
+then sets `EXACT_HIGHER = {6: Fraction(7,5668704), 7: Fraction(5,17006112)}`
+and reads off the tadpole/geometric FALSIFY verdict against
+`d_7^pred = (7/12) d_6`. The d-log-Pade
 predictive test instead needs `{d_5..d_8}` (= beta^8, at/past the treewidth
 wall), so only its forward `<P>(6)` sensitivity test is in-runway.
 
 This note therefore supplies the exact `d_6` needed by the tadpole/geometric
-predictive test and narrows the remaining `d_7` coefficient computation to four
-cube-shell multiplicity terms. The SUPPORT/FALSIFY read-off belongs to the
-later harness run after `d_7` is independently computed and reviewed.
+predictive test and narrows the `d_7` coefficient computation to four
+cube-shell multiplicity terms. The linked companion D7 packet performs that
+restricted computation and owns the SUPPORT/FALSIFY read-off after independent
+review.
 
 ## 6. Computational reach and the named wall
 
@@ -257,7 +289,8 @@ Does NOT claim:
 - any value of `P(beta=6)`, `beta_eff(6)`, `u_0`, or `alpha_s`;
 - any closed boosting / reduction-law form;
 - closure or repinning of the canonical same-surface plaquette value;
-- a numerical `d_7` value;
+- a numerical `d_7` value in this row itself (the companion D7 note owns that
+  bounded coefficient claim);
 - any audit status (independent audit lane only);
 - any new axiom, tag, vocabulary, or meta-framing.
 

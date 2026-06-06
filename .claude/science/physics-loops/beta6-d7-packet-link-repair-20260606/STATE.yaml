@@ -1,0 +1,11 @@
+loop_slug: beta6-d7-packet-link-repair-20260606
+target_claim_id: beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30
+branch: physics-loop/beta6-d7-packet-link-repair-20260606
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_status_change: true
+files_touched:
+  - docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md
+blocker_closed_by_branch: "Old D6/support row now links completed maxorder-7 packet, cache, source verifier, JSON, and D7 companion note."
+next_exact_action: "Open PR for independent review/audit requeue."

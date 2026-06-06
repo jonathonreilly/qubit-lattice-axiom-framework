@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 320,
+    "critical": 319,
     "high": 258,
     "leaf": 393,
     "medium": 361
@@ -139,25 +139,30 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+      "claim_id": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
       "deps": [
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+        "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 20,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.473,
-      "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+      "load_bearing_score": 19.972,
+      "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.py",
-      "transitive_descendants": 1004
+      "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
+      "transitive_descendants": 1003
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -234,35 +239,6 @@
       "ready": false,
       "runner_path": "scripts/probe_kawamoto_smit_phase_forcing.py",
       "transitive_descendants": 1012
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-        "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
-      ],
-      "direct_in_degree": 20,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 19.972,
-      "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
-      "transitive_descendants": 1003
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -40111,5 +40087,5 @@
     }
   ],
   "ready_count": 56,
-  "total_pending": 1332
+  "total_pending": 1331
 }

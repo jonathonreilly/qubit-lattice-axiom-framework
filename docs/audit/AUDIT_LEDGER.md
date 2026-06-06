@@ -23,13 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 701 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1329 |
+| unaudited | 1328 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
 | ~~audited_conditional~~ | 46 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
+| `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -62,16 +63,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1110 |
 | `audited_conditional` | 46 |
-| `audited_decoration` | 51 |
+| `audited_decoration` | 52 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1636 |
+| `unaudited` | 1635 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1349 |
-| `decoration` | 52 |
+| `bounded_theorem` | 1348 |
+| `decoration` | 53 |
 | `meta` | 315 |
 | `no_go` | 317 |
 | `open_gate` | 136 |
@@ -1291,6 +1292,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
+| `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -2162,6 +2164,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The action-derived two-step monodromy has eigenvalues e^{±2E(p)} with E(p)=arcsinh(sqrt(m^2+sin^2 p)); selecting the decaying channel gives t1^(2)(p)=e^{-2E(p)}, so Gamma(t1^(2))=tensor_p diag(1,e^{-2E(p)})=B^dag B is positive Hermitian.  _(class `C`)_
 - **chain closes:** True — Independently, T_odd T_even has determinant 1 and trace 2+4(m^2+sin^2 p)=2 cosh(2E), giving eigenvalues e^{±2E}; the one-step characteristic equation has non-real roots for sin(p)!=0 and one negative root at sin(p)=0. The finite diagonal Gamma construction then gives a positive B^dag B factorization from the positive decaying eigenvalues.
 - **rationale:** The load-bearing free-case derivation is a first-principles finite-matrix computation from the stated staggered action, not a fitted numerical match or renaming. The displayed trace/determinant identities, exceptional one-step eigenvalues, spectral projectors, and finite exterior/Gamma positivity all check algebraically. The runner's C7 parent-source guard is a non-load-bearing cross-note/source-wiring check and was not used for the free-case closure.
+- **auditor confidence:** high
+
+### `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Audited the bounded free/fixed-background staggered normalization bridge: T_hat^2 has block spacing 2 a_tau, so Hamiltonian and gap reconstruction use 1/(2 a_tau) and agree with the vacuum-subtracted H_hat from the retained_bounded two-step positivity authority.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-230106-01bd1fd11b-axiom_first_spectrum_conditi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the imported object is T_hat^2=exp(-2 a_tau H_hat) and advances one two-step block, the reconstructed Hamiltonian is H=-(1/(2 a_tau)) log(T_hat^2/M_T), not the spectrum-condition note's -(1/a_tau) log(T_hat^2/M_T).  _(class `A`)_
+- **chain closes:** True — The cited retained_bounded authority explicitly supplies T_hat^2=exp(-2 a_tau H_hat) for the positive two-step blocked transfer matrix. Finite-dimensional functional calculus then gives H=H_hat-E_0 and m_gap=-(1/(2 a_tau))log(lambda_1/M_T), so the factor-of-two correction closes without extra premises.
+- **rationale:** The source note's load-bearing content is an algebraic normalization corollary of one retained_bounded upstream authority plus standard spectral calculus. The independent formula check confirms the factor of two: applying 1/a_tau to T_hat^2 doubles every excitation energy, while 1/(2 a_tau) recovers the upstream H_hat after vacuum subtraction. The runner source performs real finite-matrix computations and does not just print constants, but those computations re-exhibit the same one-parent bridge rather than supplying an independent new theorem.
+- **decoration parent:** `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`

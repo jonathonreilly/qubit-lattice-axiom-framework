@@ -1,0 +1,21 @@
+loop_slug: su3-wilson-m5-normalization-20260606
+mode: campaign_block
+date: 2026-06-06
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: su3_wilson_closed_form_fanout_theorem_note_2026-05-04
+target_blocker_text: "Correct the M5 weak-coupling one-loop coefficient/normalization and rerun the table; also keep any L_s=2 or next-route language explicitly non-load-bearing unless a retained predecessor supports it."
+files_touched:
+  - docs/SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md
+  - scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py
+  - logs/runner-cache/frontier_su3_wilson_closed_form_fanout_2026_05_04.txt
+open_imports:
+  - "MC plaquette comparator <P>_MC=0.5934 and epsilon_witness remain comparator-only imports."
+  - "L_s>=3 Wigner-Racah route remains a non-load-bearing planning pointer."
+review_disposition: pass_local_checks_reviewer_owned
+proposal_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: "Open a review PR for the bounded-support repair, then continue the audit-unblock campaign on the next conditional or failed row not already covered by an open PR."
+stop_condition: "Only stop after a refreshed opportunity queue shows no remaining repair route that passes the dramatic-step gate."

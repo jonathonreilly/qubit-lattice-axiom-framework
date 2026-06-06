@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py
-runner_sha256: 6986648ea59c2e81a79fc9486adf917a358711996c4df75a35d6ff06226d666e
+runner_sha256: 9a883e8b73c785fbc35a9abc6399eef16a0166bb292b41e4e59e962021bfb20e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ==============================================================================
 SU(3) Wilson Plaquette Closed-Form Fan-Out at beta = 6
 ==============================================================================
 
-Goal: rule out simpler closed-form paths to <P>(beta=6) before
-committing multi-day engineering on the L_s>=3 Wigner-Racah engine.
+Goal: test simpler closed-form paths to <P>(beta=6) before
+treating the L_s>=3 Wigner-Racah engine as a planning candidate.
 
   Reference: <P>_MC(beta=6) = 0.5934 (canonical lattice MC)
   epsilon_witness = 3.030e-04
@@ -39,8 +39,10 @@ committing multi-day engineering on the L_s>=3 Wigner-Racah engine.
   PASS: M4 mean-field converges and is in range.
 
 --- M5: weak-coupling 1-loop perturbation ---
-  <P>_WC = 1 - (N^2-1)/(8 N^2) * 4 / beta = 1 - 4/54 = 0.925926
-  gap to MC: 0.3325 = 1097x epsilon_witness
+  W = 1 - (1/N) Re Tr U_p = c_1 / beta + O(beta^-2)
+  c_1 = (N^2 - 1) / 4 = 2 for SU(3)
+  <P>_WC = 1 - W = 1 - 2/6 = 0.666667
+  gap to MC: 0.0733 = 242x epsilon_witness
   PASS: M5 weak-coupling estimate is in range.
 
 --- Comparison table ---
@@ -50,7 +52,7 @@ committing multi-day engineering on the L_s>=3 Wigner-Racah engine.
   M1: single-plaquette character               0.4225      0.1709         564x
   M2: strong-coupling 1st order                0.3333      0.2601         858x
   M4: mean-field self-consistency              0.8740      0.2806         926x
-  M5: weak-coupling 1-loop                     0.9259      0.3325        1097x
+  M5: weak-coupling 1-loop                     0.6667      0.0733         242x
   MC reference (canonical)                     0.5934      0.0000          0x
 
 --- Verdict ---
@@ -65,10 +67,10 @@ committing multi-day engineering on the L_s>=3 Wigner-Racah engine.
   Haar, strong-coupling, mean-field, weak-coupling 1-loop)
   CANNOT reproduce <P>(beta=6) = 0.5934 within epsilon_witness.
 
-  The L_s>=3 Wigner-Racah engine path remains the next
-  exact-cube route among the tested methods. The SU(3) Wigner
-  L_s=2 PBC orientation verdict (legacy Block 5) is strengthened
-  by this explicit ruling-out of orthogonal closed-form attack frames.
+  The L_s>=3 Wigner-Racah engine path remains a non-load-bearing
+  planning candidate among the tested methods. The SU(3) Wigner
+  L_s=2 PBC orientation verdict (legacy Block 5) is not changed
+  by this comparator fan-out.
 
   Method-by-method commentary:
     M1 (single-plaq char): 0.4225 — captures one plaquette
@@ -77,14 +79,13 @@ committing multi-day engineering on the L_s>=3 Wigner-Racah engine.
     M2 (SC1):              0.3333 — strict leading-order
                             beta/18; ignores all corrections.
     M4 (MF):               0.8740 — adds coordination effect;
-                            saturates near M1 for SU(3) at beta=6
-                            because the self-consistent beta_eff
-                            stays in the strong-coupling regime.
-    M5 (WC 1-loop):        0.9259 — overshoots; beta=6 is
+                            self-consistent beta_eff jumps deep
+                            into weak coupling and overshoots.
+    M5 (WC 1-loop):        0.6667 — overshoots; beta=6 is
                             in the CROSSOVER regime where neither
-                            strong-coupling (M1, M2, M4) nor
-                            weak-coupling (M5) is a good
-                            asymptotic.
+                            strong-coupling (M1, M2) nor
+                            leading weak-coupling/mean-field
+                            (M5, M4) is a good asymptotic.
 
   beta = 6 is the SU(3) crossover regime where the correlation
   length exceeds 2 lattice spacings (so L_s=2 fails per the
@@ -106,10 +107,10 @@ Headline:
     M1 single-plaquette = 0.4225  (gap 564x eps)
     M2 SC leading       = 0.3333  (gap 858x eps)
     M4 mean-field       = 0.8740  (gap 926x eps)
-    M5 WC 1-loop        = 0.9259  (gap 1097x eps)
+    M5 WC 1-loop        = 0.6667  (gap 242x eps)
     MC reference        = 0.5934
-  Verdict: 4 simpler closed-form paths explicitly ruled out;
-  L_s>=3 Wigner-Racah path remains the next exact-cube route.
+  Verdict: 4 simpler closed-form paths miss the comparator;
+  L_s>=3 Wigner-Racah remains a non-load-bearing planning candidate.
 
 ----- stderr -----
 

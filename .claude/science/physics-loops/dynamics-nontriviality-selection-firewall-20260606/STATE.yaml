@@ -2,7 +2,7 @@ loop_slug: dynamics-nontriviality-selection-firewall-20260606
 branch: physics-loop/dynamics-nontriviality-selection-firewall-20260606
 base: origin/main
 campaign: dynamics lanes
-cycle_status: verified_pending_pr
+cycle_status: pr_open_verified
 target_status: no-go
 actual_current_surface_status: no-go
 trace_class: negative_route_pruning
@@ -34,11 +34,15 @@ trace_gate:
   artifact_role: no_go
 review_findings: "Local review found no overclaim: the block preserves allowed-class support and prunes only nonzero/coupling/action/truncation/dial selection from class membership alone."
 pr_status:
-  url: null
-  number: null
-  mergeable: null
-  checks: null
-next_exact_action: "Commit, push, open PR, patch PR status."
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2822
+  number: 2822
+  state: OPEN
+  base: main
+  head: physics-loop/dynamics-nontriviality-selection-firewall-20260606
+  mergeable: MERGEABLE
+  merge_state_status: UNSTABLE
+  checks: "audit_pipeline in progress at initial PR verification"
+next_exact_action: "Push PR-status patch, reverify PR, then pivot to the next campaign lane."
 stop_condition: "Block closes when PR is open and verified or PR backlog records exact failure."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false

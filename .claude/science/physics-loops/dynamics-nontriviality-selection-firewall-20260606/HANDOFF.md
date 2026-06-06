@@ -35,4 +35,13 @@ supplied candidate dynamics
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2822
+
+Initial verification:
+
+- state: OPEN
+- base: main
+- head: physics-loop/dynamics-nontriviality-selection-firewall-20260606
+- mergeable: MERGEABLE
+- mergeStateStatus: UNSTABLE
+- checks: audit_pipeline in progress

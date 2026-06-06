@@ -1,9 +1,9 @@
 {
   "by_criticality": {
-    "critical": 315,
-    "high": 256,
-    "leaf": 430,
-    "medium": 361
+    "critical": 314,
+    "high": 257,
+    "leaf": 431,
+    "medium": 365
   },
   "cycle_break_target_count": 6,
   "cycle_break_targets": [
@@ -93,39 +93,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-      "claim_scope": "The current Wilson packet, without an added exact beta-6 nonperturbative completion object or fitted beta_eff, does not derive the observable bridge <P>_full = R_O(beta_eff).",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "gauge_scalar_temporal_completion_theorem_note",
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "gauge_vacuum_plaquette_framework_point_underdetermination_note",
-        "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "retained_no_go",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-        "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
-        "scripts/frontier_scalar_3plus1_temporal_ratio.py"
-      ],
-      "load_bearing_score": 15.994,
-      "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_no_go.py",
-      "transitive_descendants": 254
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -9220,6 +9187,31 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+        "gauge_scalar_temporal_completion_theorem_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.827,
+      "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py",
+      "transitive_descendants": 226
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17336,6 +17328,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
+        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+        "gauge_vacuum_plaquette_bridge_support_note",
+        "plaquette_self_consistency_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.7,
+      "note_path": "docs/SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py",
+      "transitive_descendants": 12
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -24840,6 +24859,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
+        "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
+        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.959,
+      "note_path": "docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
+      "transitive_descendants": 10
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "signed_gravity_nature_grade_closure_blocker_audit_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -24876,6 +24921,37 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/signed_gravity_nature_grade_closure_blockers.py",
+      "transitive_descendants": 9
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint_after_invalidation",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "beta6_plaquette_closure_note_2026-05-29",
+        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+        "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+        "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+        "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
+        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
+        "su3_wilson_closed_form_fanout_theorem_note_2026-05-04"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.822,
+      "note_path": "docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py",
       "transitive_descendants": 9
     },
     {
@@ -25010,6 +25086,31 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
+      "transitive_descendants": 9
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "su3_wigner_l3_treewidth_infeasible_2026-05-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
+        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.822,
+      "note_path": "docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py",
       "transitive_descendants": 9
     },
     {
@@ -30508,6 +30609,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/staggered_backreaction_live_capture_packet_check.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_fusion_engine_pr1_theorem_note_2026-05-03",
+        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_cube_perron_solve.py",
       "transitive_descendants": 0
     },
     {
@@ -40686,6 +40814,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 97,
-  "total_pending": 1362
+  "ready_count": 99,
+  "total_pending": 1367
 }

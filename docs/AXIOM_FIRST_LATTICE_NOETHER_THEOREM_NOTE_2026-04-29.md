@@ -418,7 +418,7 @@ a multiple of identity). Substituting into the bilateral (5):
 
 The `i` factor is the imaginary phase generator. The fermion-number
 current (4) is the corresponding **real** charge current, related by
-the convention `J^μ_x [real] := -i · J^μ_x [imaginary phase generator]`,
+the convention `J^μ_x [real] := i · J^μ_x [imaginary phase generator]`,
 giving
 
 ```text

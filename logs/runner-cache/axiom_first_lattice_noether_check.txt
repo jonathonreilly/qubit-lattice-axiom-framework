@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_lattice_noether_check.py
-runner_sha256: 3abf8e69064af6cd8947baeaefa6e1b415b956169668c7567bd2d637ee8e96e5
+runner_sha256: edb70cbd92e71d6f3f702adb638c93e6ce83d70e47809b9a683d5b6eb061f076
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ========================================================================
@@ -40,7 +40,8 @@ status: ok
 
 --- Exhibit E5: bilateral (5) -> (4) closure on small lattice ---
   L=4, dim=3, mass=0.3, sites checked=192
-  max |J5_real - J4| = 7.216e-16  (target: 0 to machine precision)
+  symbolic nonzero bilinear convention error = 0.000e+00
+  max |J5_real - J4| = 0.000e+00  (target: 0 to machine precision)
   Bilateral (5) under T = i I closes algebraically to (4):
   E5 verdict: PASS
 

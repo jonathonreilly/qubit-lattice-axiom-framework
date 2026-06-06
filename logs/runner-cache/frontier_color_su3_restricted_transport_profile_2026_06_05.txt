@@ -1,0 +1,118 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_su3_restricted_transport_profile_2026_06_05.py
+runner_sha256: 889126cbc4afa17ce6363a63f79123741ca1dff4c977485aba10111d0740f9c6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.22
+status: ok
+----- stdout -----
+==============================================================================
+COLOR SU(3)-RESTRICTED TRANSPORT PROFILE
+bounded finite-algebra runner under admitted transport rule
+==============================================================================
+
+------------------------------------------------------------------------------
+1. SU(3) generator sanity
+------------------------------------------------------------------------------
+  [PASS] eight Gell-Mann generators
+  [PASS] T1 Hermitian
+  [PASS] T1 traceless
+  [PASS] T2 Hermitian
+  [PASS] T2 traceless
+  [PASS] T3 Hermitian
+  [PASS] T3 traceless
+  [PASS] T4 Hermitian
+  [PASS] T4 traceless
+  [PASS] T5 Hermitian
+  [PASS] T5 traceless
+  [PASS] T6 Hermitian
+  [PASS] T6 traceless
+  [PASS] T7 Hermitian
+  [PASS] T7 traceless
+  [PASS] T8 Hermitian
+  [PASS] T8 traceless
+  [PASS] sample commutator [T1,T2] = i T3
+  [PASS] sample commutator [T4,T5] = i/2(T3+sqrt(3)T8)
+
+------------------------------------------------------------------------------
+2. Endpoint variations
+------------------------------------------------------------------------------
+  [PASS] bare link varies at left endpoint
+  [PASS] bare link varies at right endpoint
+  [PASS] T1 half-dressed left variation cancels
+  [PASS] half-dressed line remains right-variant
+  [PASS] T2 half-dressed left variation cancels
+  [PASS] T3 half-dressed left variation cancels
+  [PASS] T4 half-dressed left variation cancels
+  [PASS] T5 half-dressed left variation cancels
+  [PASS] T6 half-dressed left variation cancels
+  [PASS] T7 half-dressed left variation cancels
+  [PASS] T8 half-dressed left variation cancels
+
+------------------------------------------------------------------------------
+3. Fully dressed endpoint invariance
+------------------------------------------------------------------------------
+  [PASS] T1 full line left variation cancels
+  [PASS] T1 full line right variation cancels
+  [PASS] T2 full line left variation cancels
+  [PASS] T2 full line right variation cancels
+  [PASS] T3 full line left variation cancels
+  [PASS] T3 full line right variation cancels
+  [PASS] T4 full line left variation cancels
+  [PASS] T4 full line right variation cancels
+  [PASS] T5 full line left variation cancels
+  [PASS] T5 full line right variation cancels
+  [PASS] T6 full line left variation cancels
+  [PASS] T6 full line right variation cancels
+  [PASS] T7 full line left variation cancels
+  [PASS] T7 full line right variation cancels
+  [PASS] T8 full line left variation cancels
+  [PASS] T8 full line right variation cancels
+  [PASS] endpoint profile is 0->1->2
+
+------------------------------------------------------------------------------
+4. Closed trace invariance
+------------------------------------------------------------------------------
+  [PASS] T1 trace of commutator vanishes
+  [PASS] T2 trace of commutator vanishes
+  [PASS] T3 trace of commutator vanishes
+  [PASS] T4 trace of commutator vanishes
+  [PASS] T5 trace of commutator vanishes
+  [PASS] T6 trace of commutator vanishes
+  [PASS] T7 trace of commutator vanishes
+  [PASS] T8 trace of commutator vanishes
+  [PASS] closed-loop trace identity is algebraic
+
+------------------------------------------------------------------------------
+5. Residual ledger
+------------------------------------------------------------------------------
+  [PASS] three transport-profile outputs supplied
+  [PASS] seven residuals remain
+  [PASS] supplied outputs do not include residuals
+  [PASS] post-record outputs do not include residuals
+  [PASS] transport rule derivation remains residual
+  [PASS] record readout remains residual
+  [PASS] record production remains residual
+
+------------------------------------------------------------------------------
+6. Note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/COLOR_SU3_RESTRICTED_TRANSPORT_PROFILE_2026-06-05.md)
+  [PASS] note contains marker: Claim type:** bounded_theorem
+  [PASS] note contains marker: This block supplies only the finite algebra
+  [PASS] note contains marker: This rule is a bounded input here.
+  [PASS] note contains marker: Does not derive physical color.
+  [PASS] note contains marker: Does not establish a repo-wide quantum-link ontology.
+  [PASS] note contains marker: Does not select a Koide/generation dial location.
+  [PASS] forbidden wording absent: physical color closure
+  [PASS] forbidden wording absent: transport derivation closure
+  [PASS] forbidden wording absent: action closure
+  [PASS] forbidden wording absent: dial selector closure
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=74 FAIL=0
+
+----- stderr -----
+

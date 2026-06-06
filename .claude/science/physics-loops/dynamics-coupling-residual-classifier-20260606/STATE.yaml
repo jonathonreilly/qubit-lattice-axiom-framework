@@ -1,0 +1,31 @@
+loop_slug: dynamics-coupling-residual-classifier-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 25
+current_goal: "Classify the coupling/rate residual left open by record-preserving dynamics."
+target_status: no-go
+actual_current_surface_status: no-go
+active_route: "record-preserving commutant condition versus coupling/rate/nontriviality selection"
+hard_residual: "Coupling values, coefficient ratios, nontriviality, action/minimality, and clock-rate normalization remain open."
+branch: physics-loop/dynamics-coupling-residual-classifier-20260606
+base_branch: origin/main
+files_touched:
+  - docs/DYNAMICS_COUPLING_RESIDUAL_CLASSIFIER_2026-06-06.md
+  - scripts/frontier_dynamics_coupling_residual_classifier_2026_06_06.py
+  - logs/runner-cache/frontier_dynamics_coupling_residual_classifier_2026_06_06.txt
+  - .claude/science/physics-loops/dynamics-coupling-residual-classifier-20260606/
+open_imports:
+  - "Action / variational principle / minimal truncation."
+  - "Coupling normalization or numeric value."
+  - "Clock-rate normalization."
+  - "Nontriviality premise."
+no_go_routes:
+  - "Record preservation fixes coupling values."
+  - "Record preservation fixes coefficient ratios."
+  - "Record preservation excludes H=0."
+  - "Transfer preservation fixes coupling and clock separately."
+trace_gate_classification: negative_route_pruning
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

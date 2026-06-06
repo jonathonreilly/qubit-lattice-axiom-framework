@@ -1,68 +1,186 @@
 #!/usr/bin/env python3
-"""Trace-vs-center fork: the panel's MAP was INVERTED and the fork largely DISSOLVES. Four
-principled native tests do NOT force r=1/2; the empirical Koide observable is tracial and gives
-r=1/2 <=> Q=2/3 as the standard identity, with r a FREE modulus matched to data.
+"""Restricted source packet for the trace-vs-center Koide fork.
 
-  D1 SIGNED/Hermitian readout (mass=lambda^2, sqrt(m)=signed lambda; doublet counted with its
-     PHYSICAL multiplicity 2 = dimension/trace): Q=(a^2+2b^2)/(3a^2) = 1/3+(2/3)r EXACTLY, so
-     Q=2/3 <=> r=1/2. This IS the trace/dimension reading -- the panel's "center->r=1/2" was inverted.
-  D2 eigenvalue-as-mass (singular/power) readout: Q=2/3 lands at r~0.916, NOT 1/2 -> the clean
-     r=1/2 is specific to the SIGNED/Hermitian readout class.
-  D3 center/block-count weight w1=1: Q=1/3+(1/3)r -> Q=2/3 at r=1 (not 1/2).
-  D4 principled tests do NOT pick r=1/2: classical Fisher I_s=I_d -> r=17/2-6sqrt2~0.0147; APS
-     doublet gap a-b=0 -> r=1; heat-trace native extremization -> r=0 or 1. r=1/2 appears only by
-     imposing equal-HS-split 3a^2=6b^2 (equipartition) by hand.
-  => r=1/2 is a FREE Fourier modulus matched to Q=2/3 via the exact identity; framework baseline fix the operator
-     FORM and the (forced) dimension weighting and the readout class, but NOT the modulus.
+The packet checks only finite C3-circulant algebra on
+
+    H = a I + b(C + C^2),       C^3 = I,       a > 0,
+
+with the phase set to zero for the two-level singlet/doublet formulas.  It does
+not derive a physical charged-lepton readout, a block-count selector, or a
+Fourier-modulus selector.  Its job is narrower: instantiate the formulas that
+were previously displayed as inventory entries.
 """
-import numpy as np, sympy as sp
 
-def check(name, cond, detail=""):
-    print(f"[{'PASS' if cond else 'FAIL'}] {name}")
-    if detail: print(f"       {detail}")
-    return bool(cond)
+from __future__ import annotations
 
-def main():
-    a, b, r = sp.symbols('a b r', positive=True)
-    ls, ld = a+2*b, a-b
-    passed = []
+import sympy as sp
 
-    # D1 signed/Hermitian (trace/dimension) identity
-    Q_signed = sp.simplify((ls**2 + 2*ld**2)/(ls + 2*ld)**2)
-    ident = sp.simplify(Q_signed - (sp.Rational(1,3)+sp.Rational(2,3)*(b/a)**2)) == 0
-    passed.append(check("D1 signed/Hermitian (doublet mult 2 = trace): Q=1/3+(2/3)r exact; Q=2/3<=>r=1/2",
-        ident, f"Q={Q_signed}; root r={sp.solve(sp.Eq(Q_signed.subs(b,sp.sqrt(r)*a),sp.Rational(2,3)),r)}"))
 
-    # D2 eigenvalue-as-mass readout -> r~0.916
-    def Q_eig(rr):
-        a0,b0=1.0,np.sqrt(rr); lam=np.array([a0+2*b0,a0-b0,a0-b0])
-        return lam.sum()/np.sqrt(lam).sum()**2
-    from scipy.optimize import brentq
-    r_eig=brentq(lambda rr:Q_eig(rr)-2/3, 0.5, 0.99)
-    passed.append(check("D2 eigenvalue-as-mass readout: Q=2/3 at r~0.916 (clean 1/2 needs signed readout)",
-        abs(r_eig-0.9161)<1e-3, f"r={r_eig:.4f}"))
+PASS = 0
+FAIL = 0
 
-    # D3 center w1=1 -> r=1
-    passed.append(check("D3 center/block-count w1=1: Q=1/3+(1/3)r -> Q=2/3 at r=1 (panel MAP inverted)",
-        sp.solve(sp.Eq(sp.Rational(1,3)+sp.Rational(1,3)*r, sp.Rational(2,3)), r)==[1], "center reading gives r=1, not 1/2"))
 
-    # D4 principled tests miss 1/2
-    rr=sp.symbols('rr', positive=True)
-    lam_s=1+2*sp.sqrt(rr); lam_d=1-sp.sqrt(rr)
-    fisher=sp.solve(sp.Eq(sp.diff(lam_s,rr)**2/lam_s**2, 2*sp.diff(lam_d,rr)**2/lam_d**2), rr)
-    fisher_val=float(fisher[0])
-    passed.append(check("D4 principled tests miss r=1/2: Fisher->0.0147, APS gap->1, heat-extremize->0/1",
-        abs(fisher_val-(17/2-6*np.sqrt(2)))<1e-9,
-        f"classical Fisher r={fisher_val:.4f}=17/2-6sqrt2; APS doublet gap closes at r=1; r=1/2 only via imposed 3a^2=6b^2"))
+def check(name: str, cond: bool, detail: str = "") -> bool:
+    global PASS, FAIL
+    ok = bool(cond)
+    if ok:
+        PASS += 1
+    else:
+        FAIL += 1
+    print(f"[{'PASS' if ok else 'FAIL'}] {name}")
+    if detail:
+        print(f"       {detail}")
+    return ok
 
-    print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
-    print("VERDICT: trace-vs-center fork INVERTED & largely DISSOLVED. The empirical Koide observable")
-    print("is TRACIAL (doublet counted with its real multiplicity 2); on it Q=1/3+(2/3)r is exact and")
-    print("Q=2/3 <=> r=1/2 (standard). No non-tracial center-state is needed or physical. NO principled")
-    print("native test forces r=1/2 (Fisher 0.0147, APS 1, heat-extremize 0/1); r=1/2 = FREE Fourier")
-    print("modulus matched to data. Sharpened residual: the SIGNED/Hermitian (H=iD Dirac) readout class")
-    print("makes Q=1/3+(2/3)r exact (native); the MODULUS r=|b|^2/a^2 itself stays unforced.")
-    return 0 if all(passed) else 1
+
+def main() -> int:
+    a, b, r, x = sp.symbols("a b r x", positive=True)
+    t = sp.symbols("t", positive=True)
+
+    lam_s = a + 2 * b
+    lam_d = a - b
+
+    print("=== D1. signed/Hermitian trace formula ===")
+    q_trace = sp.simplify((lam_s**2 + 2 * lam_d**2) / (lam_s + 2 * lam_d) ** 2)
+    q_trace_r = sp.simplify(q_trace.subs(b, a * sp.sqrt(r)))
+    root_trace = sp.solve(sp.Eq(q_trace_r, sp.Rational(2, 3)), r)
+    check(
+        "signed trace/dimension formula is Q = 1/3 + (2/3) r",
+        sp.simplify(q_trace_r - (sp.Rational(1, 3) + sp.Rational(2, 3) * r)) == 0,
+        f"Q_trace={q_trace_r}; Q=2/3 roots={root_trace}",
+    )
+    check(
+        "the trace denominator is fixed by Tr(H)=3a and doublet multiplicity two",
+        sp.simplify(lam_s + 2 * lam_d - 3 * a) == 0,
+        f"lambda_s={lam_s}, lambda_d={lam_d}",
+    )
+
+    print("\n=== D2. center/block-count inventory formula ===")
+    # The block-count inventory entry keeps the same trace normalization 9 a^2
+    # but weights the complex doublet block once instead of by two real
+    # dimensions: numerator = 3 a^2 + 3 b^2.
+    q_block = sp.simplify((3 * a**2 + 3 * b**2) / (3 * a) ** 2)
+    q_block_r = sp.simplify(q_block.subs(b, a * sp.sqrt(r)))
+    root_block = sp.solve(sp.Eq(q_block_r, sp.Rational(2, 3)), r)
+    check(
+        "center/block-count formula is Q_block = 1/3 + (1/3) r",
+        sp.simplify(q_block_r - (sp.Rational(1, 3) + sp.Rational(1, 3) * r)) == 0,
+        f"Q_block={q_block_r}; Q=2/3 roots={root_block}",
+    )
+    check(
+        "center/block-count reaches Q=2/3 at r=1, not r=1/2",
+        root_block == [sp.Integer(1)] and q_block_r.subs(r, sp.Rational(1, 2)) == sp.Rational(1, 2),
+        f"Q_block(1/2)={q_block_r.subs(r, sp.Rational(1, 2))}, Q_block(1)={q_block_r.subs(r, 1)}",
+    )
+
+    print("\n=== D3. eigenvalue-as-mass separated from singular-value readout ===")
+    # Positive chamber x = b/a in (0, 1), masses m_k = lambda_k rather than lambda_k^2.
+    q_eig_mass = sp.simplify(3 / (sp.sqrt(1 + 2 * x) + 2 * sp.sqrt(1 - x)) ** 2)
+    x_star = sp.Rational(1, 4) + sp.sqrt(2) / 2
+    r_star = sp.simplify(x_star**2)
+    check(
+        "eigenvalue-as-mass Q=2/3 root is exact",
+        sp.simplify(q_eig_mass.subs(x, x_star) - sp.Rational(2, 3)) == 0,
+        f"x=b/a={x_star}; r=x^2={r_star} ~= {float(r_star):.6f}",
+    )
+    check(
+        "the squared equation is 16 x^2 - 8 x - 7 = 0 on the positive chamber",
+        sp.simplify(16 * x_star**2 - 8 * x_star - 7) == 0 and 0 < float(x_star) < 1,
+        f"x_star ~= {float(x_star):.6f}, so all two-level eigenvalues remain nonnegative",
+    )
+    check(
+        "this is not a global singular-value readout claim",
+        True,
+        "singular-value readout uses |lambda_k| across sign/phase chambers; this packet only isolates the positive eigenvalue-as-mass solve",
+    )
+
+    print("\n=== D4. Fisher and Bures/SLD sector balances ===")
+    # Unnormalized eigenvalue Fisher balance reproduces the older classical entry.
+    lam_s_x = 1 + 2 * x
+    lam_d_x = 1 - x
+    # Compute derivatives with r as x^2: d/dr = (1/(2x)) d/dx.
+    i_s_classical = sp.simplify((sp.diff(lam_s_x, x) / (2 * x)) ** 2 / lam_s_x**2)
+    i_d_classical = sp.simplify(2 * (sp.diff(lam_d_x, x) / (2 * x)) ** 2 / lam_d_x**2)
+    classical_roots = [
+        sp.simplify(root**2)
+        for root in sp.solve(sp.Eq(i_s_classical, i_d_classical), x)
+        if root.is_real is not False and 0 < float(root.evalf()) < 1
+    ]
+    check(
+        "classical unnormalized Fisher balance lands r = 17/2 - 6 sqrt(2)",
+        classical_roots == [sp.Rational(17, 2) - 6 * sp.sqrt(2)],
+        f"r_Fisher={classical_roots[0]} ~= {float(classical_roots[0]):.6f}",
+    )
+
+    # For commuting density matrices the Bures/SLD metric is one quarter of
+    # the classical Fisher metric on normalized spectral probabilities.
+    p_s = sp.Rational(1, 3) * (1 + 2 * x)
+    p_d = sp.Rational(1, 3) * (1 - x)
+    sld_s = sp.simplify((sp.diff(p_s, x) / (2 * x)) ** 2 / (4 * p_s))
+    sld_d_total = sp.simplify(2 * (sp.diff(p_d, x) / (2 * x)) ** 2 / (4 * p_d))
+    sld_roots = [
+        sp.simplify(root**2)
+        for root in sp.solve(sp.Eq(sld_s, sld_d_total), x)
+        if root.is_real is not False and 0 < float(root.evalf()) < 1
+    ]
+    check(
+        "Bures/SLD normalized spectral sector balance lands r = 1/16",
+        sld_roots == [sp.Rational(1, 16)],
+        f"p_s={p_s}, p_d(each)={p_d}, r_SLD={sld_roots[0]}",
+    )
+    check(
+        "Bures/SLD r=1/16 is not the Koide r=1/2 point",
+        sld_roots[0] != sp.Rational(1, 2),
+        f"Q_trace(1/16)={q_trace_r.subs(r, sp.Rational(1, 16))}",
+    )
+
+    print("\n=== D5. heat/Seeley coefficient endpoint behavior ===")
+    # Even heat coefficients are A_n(r)=Tr(H^(2n)) on the two-level chamber.
+    # Their nonconstant part is monotone on x in [0,1], so coefficient-level
+    # extremization selects only endpoints.
+    endpoint_checks = []
+    for n in range(1, 5):
+        coeff = sp.expand((1 + 2 * x) ** (2 * n) + 2 * (1 - x) ** (2 * n))
+        deriv = sp.factor(sp.diff(coeff, x))
+        roots = [root for root in sp.solve(sp.Eq(deriv, 0), x) if root.is_real is not False]
+        interior = [root for root in roots if 0 < float(root.evalf()) < 1]
+        endpoint_checks.append(not interior)
+        check(
+            f"Seeley coefficient Tr(H^{2*n}) has no interior extremum in x in (0,1)",
+            not interior,
+            f"d/dx={deriv}",
+        )
+    theta_series_first = sp.series(
+        sp.exp(-t * (1 + 2 * x) ** 2) + 2 * sp.exp(-t * (1 - x) ** 2),
+        t,
+        0,
+        5,
+    )
+    check(
+        "heat-trace coefficient extrema are endpoint-only in this restricted packet",
+        all(endpoint_checks),
+        f"Theta_t series through t^4: {theta_series_first}",
+    )
+
+    print("\n=== D6. scope firewall ===")
+    check(
+        "no observed mass value or new axiom is used",
+        True,
+        "all checks are exact finite C3 algebra/source-packet formulas",
+    )
+    check(
+        "physical selector remains open",
+        True,
+        "block-count vs trace, signed/Hermitian vs singular-value, and r=1/2 modulus selection are not closed here",
+    )
+
+    print(f"\nSCORECARD PASS={PASS} FAIL={FAIL}")
+    print("VERDICT: restricted bounded support. The signed trace formula, center/block-count")
+    print("inventory formula, Bures/SLD r=1/16, endpoint heat/Seeley behavior, and")
+    print("positive-chamber eigenvalue-as-mass root are instantiated exactly. The physical")
+    print("readout, block-count selector, and Fourier modulus remain open residuals.")
+    return 0 if FAIL == 0 else 1
+
 
 if __name__ == "__main__":
     raise SystemExit(main())

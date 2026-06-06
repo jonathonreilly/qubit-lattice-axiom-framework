@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_detR_default_full_exercise_2026_05_30.py
-runner_sha256: a8276521425e54549faccf6b85b55be10900e668c95c93f163f7b0b8e137b3f3
+runner_sha256: d54d6e8198ada027475f0c6a877cf8a9b477f4198abadeb620a13eba25dbdd94
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -10,7 +10,7 @@ status: ok
 [PASS] X2 C^3=I quantizes U(1)_b: (e^{ia}C)^3=I only at a in {0,2pi/3,4pi/3}
 [PASS] X3 (Z_2)^3 corner amplitudes are +/-1 (REAL) -> honestly real R[Z3]
 [PASS] CORR#1 G_U1 COMMUTES with Gamma_chi and C (NOT the chiral gate)
-       ||{G,Gchi}||=2.828 (chiral grading is off-block, anticommutes)
+       ||{G,Gchi}||=2.828 (nonzero; a true chiral splitter would anticommute)
 [PASS] CORR#2 import = block(1,1)->Q=2/3 vs dimension(1,2)->Q=1 measure choice; trace ranks neither
        det_C block-count r=1/2; det_R dimension r=1; Schur: no merge of 2 real->1 complex
 

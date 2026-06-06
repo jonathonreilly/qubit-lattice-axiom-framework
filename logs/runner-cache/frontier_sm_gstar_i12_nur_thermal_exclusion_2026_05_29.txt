@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py
-runner_sha256: 48434c1bce18b817ec326a2f71aa543cf74f36e08d2cca499232022ba4861021
+runner_sha256: f6fe920a6569a4e9eeb3b736cd6bd0a068a0be159e1f4498ab2fa24b4cb70fae
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 
@@ -50,14 +50,14 @@ status: ok
   [PASS] small-m_nu Yukawa and thermalization Yukawa are mutually exclusive
 
 ----------------------------------------------------------------------------------------
-5. Branch table (light-Dirac / heavy-Majorana / large-Yukawa-Dirac)
+5. Branch table (light-Dirac / heavy-Majorana / thermalizing-Dirac)
 ----------------------------------------------------------------------------------------
   [PASS] Branch A light-Dirac: nu_R does NOT thermalize -> g_* = 106.75 (thermalizes=False, g_*=106.75)
   [PASS] Branch B heavy-Majorana: M_R >> T_census so nu_R is NOT a light dof -> g_* = 106.75 (M_R=1e+14 GeV >> T; light_at_census=False)
-  [PASS] Branch C large-Yukawa-Dirac: nu_R thermalizes -> g_* = 112 (thermalizes=True, g_*=112.0)
-  [PASS] Branch C is EXCLUDED by data: y~O(1) implies m_nu ~ 174 GeV >> sub-eV bound (m_nu(branch C) ~ 1.74e+11 eV)
+  [PASS] Branch C thermalizing-Dirac: y_nu >= y_thr thermalizes -> g_* = 112 (thermalizes=True, y_thr=1.19e-08, g_*=112.0)
+  [PASS] Branch C is EXCLUDED by data: y>=y_thr implies m_nu >= keV; O(1) gives 174 GeV (m_nu(min thermalizing) ~ 2.06e+03 eV; O(1) ~ 1.74e+11 eV)
   [PASS] g_* = 106.75 is ROBUST across BOTH admitted branches (light-Dirac, heavy-Majorana) ([106.75])
-  [PASS] g_* = 112 arises ONLY in the empirically-excluded large-Yukawa branch
+  [PASS] g_* = 112 arises ONLY in the empirically-excluded thermalizing-Dirac branch
   [PASS] resolution is branch-independent (framework retained no-go does not pick a branch)
 
 ----------------------------------------------------------------------------------------

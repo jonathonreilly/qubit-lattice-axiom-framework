@@ -1,6 +1,6 @@
 # Axiom-First Lattice Noether's Theorem on Cl(3) ⊗ Z^3
 
-**Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair); 2026-06-06 (onsite-generator scope repair)
+**Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair); 2026-06-06 (onsite-generator scope and U(1) sign-directness repairs)
 **Status:** source-note proposal — author-declared `bounded_theorem`; effective
 status set only by the independent audit lane.
 **Claim type:** bounded_theorem
@@ -41,6 +41,27 @@ scalar placeholder to an arbitrary-bilinear symbolic identity:
 for independent bilinears `B_+ = chibar_x t chi_{x+mu}` and
 `B_- = chibar_{x+mu} t chi_x`, it verifies exactly that
 `i * (i/2) * (B_+ + B_-) = -1/2 * (B_+ + B_-)`.
+
+## U(1) sign-directness repair (2026-06-06)
+
+The same 2026-06-06 repair adds a separate arbitrary-field check,
+`E5b`, so the U(1) specialization is not visible only through a
+propagator expectation surface where some symmetric link-bilinear sign
+errors can cancel:
+
+- it samples arbitrary complex finite fields `chi`, `chibar` and an
+  arbitrary real local envelope `alpha_x`;
+- it computes the local U(1) variation of the staggered action directly,
+  `delta S = (-i alpha chibar) M chi + chibar M (i alpha chi)`;
+- it independently computes the bilateral plus-sign expression in (7c)
+  with `T = i I`;
+- it verifies that the direct variation and the bilateral plus-sign
+  current agree to roundoff, while the historical minus-sign current is
+  separated by an order-one residual on the same fields.
+
+This does not change the theorem scope or remove the admitted
+staggered-carrier boundary. It only makes the U(1) `(5) -> (4)` sign
+closure independently visible to the runner.
 
 ## Step 4b boundary repair (2026-05-25)
 
@@ -317,7 +338,7 @@ site-mixing generators `T^A_{xy}` are outside this formula's scope.
 
 The proof of (N2) is the specialisation of (N3) to the U(1) phase
 generator (clean onsite/internal infinitesimal-Lie substitution into
-(5); runner E5 verifies). The proof of (N1) follows the exact localized two-step Ward
+(5); runners E5 and E5b verify). The proof of (N1) follows the exact localized two-step Ward
 route in Step 4b because two-site translation is a *discrete* symmetry
 of `M_KS`, not an infinitesimal Lie generator. Runner E7 verifies the
 field-level identity (3a) on a nondegenerate `L=6` block; runner E6 is
@@ -554,10 +575,12 @@ The bilateral (5) form, derived in Step 2 from the local-α expansion
 of the canonical action for onsite/internal generators, specialises to
 (4) under U(1) phase substitution (a clean Lie-generator substitution;
 runner E5 confirms algebraically, including the arbitrary-bilinear sign
-identity for the real-current convention). The `(2Z)^3` sublattice
-translation case is handled by the exact localized two-step Ward
-identity (3a), not by identifying (3) with a literal specialization of
-(5). The U(1) branch remains a closed local-current statement on the
+identity for the real-current convention; runner E5b verifies by direct
+arbitrary-field action variation that the plus-sign bilateral form is
+the one selected by the local-envelope calculation). The `(2Z)^3`
+sublattice translation case is handled by the exact localized two-step
+Ward identity (3a), not by identifying (3) with a literal specialization
+of (5). The U(1) branch remains a closed local-current statement on the
 admitted carrier; the translation branch is an exact Ward identity with
 (3) explicitly scoped as support-only. ∎
 

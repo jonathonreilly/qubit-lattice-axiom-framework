@@ -35,6 +35,13 @@ the same Noether structure for U(1) ⊂ SU(3)):
        The 2026-06-06 repair adds an arbitrary-bilinear symbolic check
        for the sign convention, not only a sampled lattice value.
 
+  E5b. Direct U(1) local-envelope sign check: for arbitrary sampled
+       finite fields chi, chibar and local alpha_x, the direct variation
+       delta S matches the bilateral plus-sign expression in (7c), while
+       the old minus-sign current fails by an order-one residual. This
+       makes the sign visible without using a propagator surface where
+       symmetric link-bilinears can cancel.
+
   E6.  Support-only verification of (3): the canonical staggered sublattice-
        momentum density P^μ_x = -(i/2) η_μ(x) [χ̄_x ∂^L_μ χ_x -
        ∂^L_μ χ̄_x · χ_x] has on-shell ∂^L_μ P^μ_x = 0 to machine
@@ -299,6 +306,59 @@ def exhibit_E5(L=4, dim=3, mass=0.3, tol=1e-12):
     return e5_pass
 
 
+def exhibit_E5b(L=4, dim=3, mass=0.3, tol=1e-12):
+    print("\n--- Exhibit E5b: direct U(1) local-envelope sign check ---")
+    M, sites, idx = build_M_pure_staggered(L, mass=mass, dim=dim)
+    N = len(sites)
+    rng = np.random.default_rng(20260606)
+    chi = rng.normal(size=N) + 1j * rng.normal(size=N)
+    chibar = rng.normal(size=N) + 1j * rng.normal(size=N)
+    alpha = rng.normal(size=N)
+
+    # Direct local U(1) variation with delta chi = i alpha chi and
+    # delta chibar = -i alpha chibar.
+    direct_delta = ((-1j * alpha * chibar) @ M @ chi) + (
+        chibar @ M @ (1j * alpha * chi)
+    )
+
+    bilateral_plus = 0.0 + 0.0j
+    historical_minus = 0.0 + 0.0j
+    for x in sites:
+        i = idx[x]
+        for mu in range(dim):
+            ehat = tuple(1 if k == mu else 0 for k in range(dim))
+            xp = tuple((x[k] + ehat[k]) % L for k in range(dim))
+            ip = idx[xp]
+            eta = staggered_eta(x, mu)
+            dalpha = alpha[ip] - alpha[i]
+            bilateral_plus += (
+                0.5j
+                * eta
+                * (chibar[i] * chi[ip] + chibar[ip] * chi[i])
+                * dalpha
+            )
+            historical_minus += (
+                0.5j
+                * eta
+                * (chibar[i] * chi[ip] - chibar[ip] * chi[i])
+                * dalpha
+            )
+
+    plus_err = abs(direct_delta - bilateral_plus)
+    minus_err = abs(direct_delta - historical_minus)
+    direct_scale = max(abs(direct_delta), 1.0)
+    minus_relative = minus_err / direct_scale
+    e5b_pass = plus_err < tol and minus_relative > 1e-3
+    print(f"  L={L}, dim={dim}, mass={mass}, sampled fields={N}")
+    print(f"  direct delta S = {direct_delta.real:+.6e}{direct_delta.imag:+.6e}j")
+    print(f"  |direct - bilateral plus sign| = {plus_err:.3e}")
+    print(f"  |direct - historical minus sign| = {minus_err:.3e}")
+    print(f"  relative historical-minus residual = {minus_relative:.3e}")
+    print("  -> direct variation selects the plus-sign bilateral current in (7c).")
+    print(f"  E5b verdict: {'PASS' if e5b_pass else 'FAIL'}")
+    return e5b_pass
+
+
 # ---------------------------------------------------------------------------
 # E6 — direct verification of the (3) momentum-density divergence
 #      (added 2026-05-10 for gate-recategorization repair).
@@ -515,12 +575,14 @@ def main():
     print(" exact two-step Ward identity")
     print(" 2026-06-06 onsite-generator repair: E5 arbitrary-bilinear symbolic")
     print(" sign check; (5) scoped to onsite/internal infinitesimal generators")
+    print(" 2026-06-06 audit repair: + E5b direct U(1) local-envelope sign check")
     print("=" * 72)
 
     e1 = exhibit_E1(L=2, dim=3)
     e2 = exhibit_E2(L=4, dim=3)
     e3, e4 = exhibit_E3_E4(L=4, dim=3)
     e5 = exhibit_E5(L=4, dim=3)
+    e5b = exhibit_E5b(L=4, dim=3)
     e6 = exhibit_E6(L=4, dim=3)
     e7 = exhibit_E7(L=6, dim=3)
 
@@ -533,6 +595,7 @@ def main():
                "E3 (current divergence-free on shell)": e3,
                "E4 (global charge conservation)": e4,
                "E5 (bilateral (5) -> (4) algebraic closure)": e5,
+               "E5b (direct U(1) sign-visible local variation)": e5b,
                "E6 (support-only (3) momentum-density divergence)": e6,
                "E7 (field-level two-step Ward identity)": e7}
     n_pass = sum(1 for v in results.values() if v)
@@ -543,9 +606,10 @@ def main():
     print()
     if n_pass == n_total:
         print(" verdict: bounded lattice Noether theorem exhibited on the admitted")
-        print("          staggered/Grassmann carrier; U(1) current closes via E5,")
-        print("          the (2Z)^d translation branch is the exact two-step Ward")
-        print("          identity checked by E7, and the old density (3) is")
+        print("          staggered/Grassmann carrier; U(1) current closes via E5")
+        print("          and sign-visible arbitrary-field E5b, the (2Z)^d")
+        print("          translation branch is the exact two-step Ward identity")
+        print("          checked by E7, and the old density (3) is")
         print("          support-only via E6.")
         return 0
     else:

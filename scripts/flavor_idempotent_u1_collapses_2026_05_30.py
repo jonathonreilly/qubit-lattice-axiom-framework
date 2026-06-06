@@ -20,13 +20,20 @@ NARROWER than stated) and one honest negative on the ordering (no native paramet
 """
 import numpy as np
 
+W = np.exp(2j * np.pi / 3)
+
 def check(name, cond, detail=""):
     print(f"[{'PASS' if cond else 'FAIL'}] {name}")
     if detail: print(f"       {detail}")
     return bool(cond)
 
+def spectral_projector(C, q):
+    """Projector onto the C eigenline with eigenvalue omega^q."""
+    I = np.eye(3, dtype=complex)
+    return (I + (W ** (-q)) * C + (W ** (-2 * q)) * (C @ C)) / 3.0
+
 def main():
-    C=np.array([[0,0,1],[1,0,0],[0,1,0]],float); I=np.eye(3); J=np.ones((3,3)); Ps=J/3; Pd=I-J/3
+    C=np.array([[0,0,1],[1,0,0],[0,1,0]],complex); I=np.eye(3,dtype=complex); J=np.ones((3,3),dtype=complex); Ps=J/3; Pd=I-J/3
     U=np.exp(1j*0.7)*Ps+np.exp(1j*2.3)*Pd
     H=I+(0.6+0.3j)*C+(0.6-0.3j)*C.T
     passed=[]
@@ -36,6 +43,20 @@ def main():
         np.allclose(U@H@U.conj().T,H)))
     passed.append(check("K3 only nontrivial action (one-sided H U^dag) breaks Hermiticity -> = the blocked chiral grading",
         not np.allclose(np.linalg.eigvals(H@U.conj().T).imag,0), "value set by FREE psi; = koide_z3_equivariant_anticommuting_no_go (retained_bounded)"))
+    P0 = spectral_projector(C, 0)
+    P1 = spectral_projector(C, 1)
+    P2 = spectral_projector(C, 2)
+    Q_equal = P1 + P2
+    Q_opp = P1 - P2
+    coeffs, *_ = np.linalg.lstsq(
+        np.column_stack([Ps.reshape(-1), Pd.reshape(-1)]),
+        Q_opp.reshape(-1),
+        rcond=None,
+    )
+    span_residual = np.linalg.norm(coeffs[0] * Ps + coeffs[1] * Pd - Q_opp)
+    passed.append(check("K4 equal doublet charge is idempotent-native; opposite omega/omegabar charge is not in span{P_s,P_d}",
+        np.allclose(Q_equal, Pd) and span_residual > 0.5 and np.allclose(P0 + P1 + P2, I),
+        f"Q_equal=P_omega+P_omegabar=P_d; best span residual for Q_opp=P_omega-P_omegabar is {span_residual:.3f} -> split charge is not the idempotent U(1)"))
     # K5 ordering non-indexed
     r={"lep":0.500,"down":0.597,"up":0.773}; Qem={"lep":1.0,"down":1/3,"up":2/3}; col={"lep":1,"down":3,"up":3}
     rmono = r["lep"]<r["down"]<r["up"]

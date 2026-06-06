@@ -22,6 +22,8 @@ from CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP import (
 from gate_b_no_restore_farfield import grow
 
 
+AUDIT_TIMEOUT_SEC = 300
+
 DRIFTS = [0.05, 0.10, 0.20, 0.30, 0.40]
 SEEDS = [0, 1]
 

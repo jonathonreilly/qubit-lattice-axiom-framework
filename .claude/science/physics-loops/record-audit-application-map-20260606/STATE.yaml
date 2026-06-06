@@ -1,0 +1,28 @@
+loop_slug: record-audit-application-map-20260606
+branch: physics-loop/record-audit-application-map-20260606
+base: physics-loop/record-unbounded-additivity-schema-20260606
+status: verification_complete
+actual_current_surface_status: bounded-support
+target_status: best-honest-status
+cycle_count: 1
+current_goal: "Apply the Record unbounded finite-additivity schema to concrete record-sensitive audit lane shapes without editing audit data."
+active_route: "finite application classifier for record-supported versus still-missing gates"
+hard_residual: "Concrete audit rows still require independent audit handling; many lanes need non-Record gates."
+files_touched:
+  - docs/RECORD_AXIOM_AUDIT_APPLICATION_MAP_2026-06-06.md
+  - scripts/frontier_record_audit_application_map_2026_06_06.py
+  - logs/runner-cache/frontier_record_audit_application_map_2026_06_06.txt
+  - .claude/science/physics-loops/record-audit-application-map-20260606/
+open_imports:
+  - "Independent audit handling for any concrete row."
+  - "Regularity, determinant origin, local observability, production dynamics, gauge/color realization, chirality, rates, and dial selectors where required."
+no_go_routes:
+  - "Record mention alone promotes a row."
+  - "Fixed bounded status remains merely because a row uses Record additivity."
+trace_gate_classification: upstream_support
+review_findings: "local review-loop emulation clean; no audit-edit, production, probability, local-observability, chirality, color, rate, dial, or status-promotion overclaim found"
+pr_status: "not_created"
+next_exact_action: "Commit, push, open a stacked PR, and record PR state."
+stop_condition: "One coherent stacked PR for this block, then pivot while campaign runtime remains."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

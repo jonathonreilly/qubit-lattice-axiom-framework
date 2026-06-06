@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 187 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 680 |
+| **retained_bounded** | 681 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1356 |
+| unaudited | 1355 |
 | meta | 306 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 28 |
@@ -61,22 +61,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1060 |
+| `audited_clean` | 1061 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1662 |
+| `unaudited` | 1661 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1324 |
+| `bounded_theorem` | 1325 |
 | `decoration` | 53 |
 | `meta` | 310 |
 | `no_go` | 316 |
 | `open_gate` | 136 |
-| `positive_theorem` | 781 |
+| `positive_theorem` | 780 |
 
 | criticality | count |
 |---|---:|
@@ -530,6 +530,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `global_coherence_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `graph_first_selector_derivation_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `graph_first_su3_integration_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `graph_laplacian_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7670,6 +7671,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The live replay asserts the archived scaffolded 7/9 free_coh result against the old 6/9 two-property rule, while the source note's 2026-04-07 update and dependency restrict that result to scaffold-specific historical evidence.  _(class `C`)_
 - **chain closes:** True — The primary runner completes and asserts the bounded archived scaffolded numbers, and the direct dependency is retained-bounded for the off-scaffold reversal. The clean scope excludes any generator-agnostic predictor or simple-classifier exhaustion theorem.
 - **rationale:** The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here.
+- **auditor confidence:** high
+
+### `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite witness packet: exact UD_2 homology for C_3,C_4,C_5,K_4,K_5,K_{3,3}; finite L=3,4 Z^3 cube graph nonplanarity and 3-connectivity checks; and the elementary sign-phase consequence for an already-established order-2 class.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-171409-a06b233ddc-graph_braid_z3_anyon_exclusi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner constructs UD_2(Gamma) boundary maps for the finite listed graphs, verifies d1*d2=0, computes Smith normal forms giving the displayed H_1 groups, checks L=3,4 cube nonplanarity/3-connectivity witnesses, and applies Hom(Z_2,U(1))={+1,-1}.  _(class `A`)_
+- **chain closes:** True — The repaired claim is explicitly limited to finite computed witnesses and the elementary group-homomorphism consequence. It does not claim the all-L or infinite-lattice exchange-generator bridge, so no missing bridge is load-bearing for the audited scope.
+- **rationale:** Within the repaired bounded scope, the runner source actually constructs the Abrams unordered two-particle chain groups and boundary maps rather than merely printing constants, and the reported Smith-normal-form outputs match the stated finite witness groups. The cube witness checks are finite graph-count and vertex-cut checks, and the Hom(Z_2,U(1)) step is standard algebra. The note also explicitly excludes the broader all-L and infinite-Z^3 theorem, avoiding the unsupported bridge that would otherwise make the claim conditional.
 - **auditor confidence:** high
 
 ### `graph_first_selector_derivation_note`

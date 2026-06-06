@@ -39,8 +39,8 @@ pr_status:
   base: main
   head: physics-loop/post-record-count-probability-firewall-20260606
   mergeable: MERGEABLE
-  merge_state_status: UNSTABLE
-  checks: "audit_pipeline queued at initial PR verification"
+  merge_state_status: CLEAN
+  checks: "no status check rollup after post-push verification"
 next_exact_action: "Push PR-status patch, reverify PR, then pivot to the next campaign lane."
 stop_condition: "Block closes when PR is open and verified or PR backlog records exact failure."
 audit_required_before_effective_retained: true

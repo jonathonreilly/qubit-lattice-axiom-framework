@@ -37,14 +37,16 @@ because it builds directly on the persistent-record production row map.
 
 ## Next exact action
 
-Commit, push, and open the stacked PR.
+Poll PR #2843 until `audit_pipeline` completes, then record the final clean PR
+state if the check succeeds.
 
 ## PR
 
 ```yaml
-pr_url: null
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2843"
 base: "physics-loop/post-record-production-dynamics-needed-row-map-20260606"
-initial_mergeable: null
-initial_merge_state_status: null
-initial_checks: null
+initial_head: "300b7bd660ad10b3a3d90d6c070e798f401a0733"
+initial_mergeable: MERGEABLE
+initial_merge_state_status: UNSTABLE
+initial_checks: "audit_pipeline IN_PROGRESS"
 ```

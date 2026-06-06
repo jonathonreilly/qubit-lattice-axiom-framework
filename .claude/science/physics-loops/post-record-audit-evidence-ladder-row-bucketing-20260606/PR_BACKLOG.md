@@ -1,6 +1,6 @@
 # PR Backlog
 
-Status: PR created; initial queued check recorded.
+Status: PR created; final clean/success state recorded.
 
 Intended title:
 
@@ -38,4 +38,7 @@ base: "physics-loop/post-record-conditional-audit-evidence-ladder-20260606"
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_status_check_rollup: "audit_pipeline queued at first verification"
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_status_check_rollup: "audit_pipeline completed SUCCESS at final verification"
 ```

@@ -49,8 +49,7 @@ because it applies the evidence ladder from PR #2834.
 
 ## Next exact action
 
-Push the PR-status commit, re-check PR #2835 after `audit_pipeline` settles,
-record final clean/success status if clean, then pivot to the next campaign
+Closed for campaign purposes. Pivot to the next independent or stacked dynamics
 lane.
 
 ## PR
@@ -61,4 +60,7 @@ base: "physics-loop/post-record-conditional-audit-evidence-ladder-20260606"
 initial_mergeable: MERGEABLE
 initial_merge_state_status: UNSTABLE
 initial_checks: "audit_pipeline queued at first verification"
+final_mergeable: MERGEABLE
+final_merge_state_status: CLEAN
+final_checks: "audit_pipeline completed SUCCESS at final verification"
 ```

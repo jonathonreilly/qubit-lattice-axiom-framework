@@ -1,12 +1,12 @@
 # Audit Queue
 
-**Total pending:** 1355
-**Ready (all deps already at retained-grade or metadata tiers):** 94
+**Total pending:** 1354
+**Ready (all deps already at retained-grade or metadata tiers):** 93
 
 By criticality:
 - `critical`: 313
 - `high`: 255
-- `medium`: 356
+- `medium`: 355
 - `leaf`: 431
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.

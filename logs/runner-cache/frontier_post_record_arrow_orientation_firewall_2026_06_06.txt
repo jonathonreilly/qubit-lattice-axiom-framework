@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_arrow_orientation_firewall_2026_06_06.py
+runner_sha256: 56caa42f1a6d35ccc199c9515b213bdea82dd634da4111319a8582bbb2c885d0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -70,3 +78,6 @@ PRODUCTION_KERNEL_SELECTED=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
 AUDIT_LEDGER_WRITTEN=FALSE
+
+----- stderr -----
+

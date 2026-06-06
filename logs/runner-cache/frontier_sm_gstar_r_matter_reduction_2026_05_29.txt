@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py
-runner_sha256: 48d5f4f81565b93e9e815c82bae7f3bfca72f088de658e3b91154a6c4a532b8d
+runner_sha256: 37e9070b18ea3a528cc2c3433184c984583fb9558e0113bbcac494a041b0f00b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 
@@ -24,16 +24,16 @@ status: ok
   [PASS] colored + uncolored = 15 gauge-charged Weyl
 
 ----------------------------------------------------------------------------------------
-2. Multiplicities sourced from retained / decoration-under-retained
+2. Source classes for R-MATTER arithmetic
 ----------------------------------------------------------------------------------------
   [PASS] color triplet multiplicity = N_c = 3 (retained graph_first_su3 / cl3_color_automorphism)
   [PASS] isospin doublet multiplicity = 2 (retained native_gauge_closure)
   [PASS] Q_L = (color 3) * (isospin 2) = 6 from the two retained gauge fundamentals
   [PASS] LH per-rep assignment (2,3)+(2,1) = 6+2 = 8 Weyl (decoration_under_graph_first_su3) (8)
-  [PASS] RH gauge-charged completion u_R+d_R+e_R = 3+3+1 = 7 (retained_bounded anomaly singlet) (7)
+  [PASS] RH gauge-charged completion u_R+d_R+e_R = 3+3+1 = 7 (bounded P_RH_inventory) (7)
   [PASS] LH(8) + RH(7) = 15 gauge-charged Weyl
   [PASS] generation count n_gen = 3 (retained three_generation_observable)
-  [PASS] Weyl-to-dof cardinality = 2 (retained spin_statistics_cardinality)
+  [PASS] Weyl-to-dof factor = 2 (bounded P_Weyl_thermal_dof)
 
 ----------------------------------------------------------------------------------------
 3. nu_R / I12 fork (106.75 vs 112)
@@ -69,21 +69,25 @@ status: ok
   [PASS] authority file exists: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md
   [PASS] authority file exists: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
   [PASS] authority file exists: ONE_GENERATION_MATTER_CLOSURE_NOTE.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): CL3_COLOR_AUTOMORPHISM_THEOREM.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): NATIVE_GAUGE_CLOSURE_NOTE.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): LEFT_HANDED_CHARGE_MATCHING_NOTE.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md
-  [PASS] sourced authority cited as markdown link (load-bearing edge): PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
+  [PASS] support authority cited as markdown link: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+  [PASS] support authority cited as markdown link: CL3_COLOR_AUTOMORPHISM_THEOREM.md
+  [PASS] support authority cited as markdown link: NATIVE_GAUGE_CLOSURE_NOTE.md
+  [PASS] support authority cited as markdown link: LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md
+  [PASS] support authority cited as markdown link: LEFT_HANDED_CHARGE_MATCHING_NOTE.md
+  [PASS] support authority cited as markdown link: ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] support authority cited as markdown link: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
+  [PASS] support authority cited as markdown link: THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] support authority cited as markdown link: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] support authority cited as markdown link: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
   [PASS] separated stronger statement is plain-text (non-load-bearing): ONE_GENERATION_MATTER_CLOSURE_NOTE.md
   [PASS] note marks R-MATTER reduced for the thermalized dof count
   [PASS] note names I12 nu_R thermal exclusion as the load-bearing residual
   [PASS] note names R-SPIN as remaining residual
+  [PASS] note names R-RH as remaining residual
+  [PASS] note names R-WEYL-THERMAL as remaining residual
   [PASS] note scopes R-SPIN as physical Weyl-spin bridge
+  [PASS] note carries thermal Weyl factor as bounded premise, not retained-derived
+  [PASS] note carries RH inventory as bounded premise, not retained-derived
   [PASS] note names the neutral-singlet branch convention as residual
   [PASS] note carries the 106.75 vs 112 fork explicitly
   [PASS] note states R-MATTER is NOT fully retired
@@ -101,6 +105,8 @@ status: ok
   [PASS] decoration source left_handed_charge_matching_note is decoration_under_graph_first_su3_integration_note (ledger = decoration_under_graph_first_su3_integration_note)
   [PASS] anomaly singlet completion is retained_bounded (ledger = retained_bounded)
   [PASS] R-SPIN remains a physical bridge residual after local carrier source
+  [PASS] R-RH remains an explicit bounded premise
+  [PASS] R-WEYL-THERMAL remains an explicit bounded premise
   [PASS] full one-generation closure stays unaudited (separated, not reduced by this note) (ledger = unaudited)
 
 ----------------------------------------------------------------------------------------
@@ -112,6 +118,8 @@ status: ok
   [PASS] note states full one-generation closure NOT claimed derived
   [PASS] note states nu_R thermal exclusion NOT claimed derived (import I12)
   [PASS] note states neutral-singlet branch convention NOT claimed derived
+  [PASS] note states RH inventory bridge NOT claimed retained-derived
+  [PASS] note states thermal Weyl factor NOT claimed retained-derived
   [PASS] no load-bearing forbidden import 'wilson plaquette' (1 occurrence(s))
   [PASS] no load-bearing forbidden import 'staggered phase' (1 occurrence(s))
   [PASS] no load-bearing forbidden import 'brillouin' (1 occurrence(s))
@@ -128,10 +136,10 @@ status: ok
 ----------------------------------------------------------------------------------------
 SCORECARD
 ----------------------------------------------------------------------------------------
-  PASS = 90
+  PASS = 98
   FAIL = 0
 
-RESULT: PASS=90 FAIL=0
+RESULT: PASS=98 FAIL=0
 
 ----- stderr -----
 

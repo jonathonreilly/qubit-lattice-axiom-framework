@@ -6,23 +6,26 @@ docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md.
 
 The g_* fermionic census consumes a THERMALIZED per-generation count
 30 = 15 (gauge-charged Weyl) * 2 (particle/antiparticle), summed over 3
-generations to N_fermions = 90. This runner re-sources the gauge-charged Weyl
-MULTIPLICITIES to retained / decoration-under-retained authorities and sharpens
-the genuine residual to I12 (nu_R thermal exclusion) + R-SPIN (the physical
-Weyl-spin identification bridge from the local carrier to this census) + the
-neutral-singlet branch convention. All as EXECUTED asserts (not prose):
+generations to N_fermions = 90. This runner separates the retained/decorated
+arithmetic inputs from explicit bounded physical premises and sharpens the
+genuine residual to I12 (nu_R thermal exclusion) + R-RH (right-handed
+gauge-charged inventory bridge) + R-WEYL-THERMAL (physical Weyl thermal dof
+bridge) + R-SPIN (the physical Weyl-spin identification bridge from the local
+carrier to this census) + the neutral-singlet branch convention. All as
+EXECUTED asserts (not prose):
 
 1. **Per-rep gauge-charged Weyl multiplicity breakdown.** Q_L = 3*2 = 6,
    u_R = 3, d_R = 3, L_L = 2, e_R = 1; sum = 15; 15*2 = 30 dof/gen;
    n_gen*30 = 3*30 = 90; g_* = 28 + (7/8)*90 = 427/4 = 106.75. All exact
    rationals via fractions.Fraction.
 
-2. **Multiplicities tied to retained / decoration-under-retained sources.**
+2. **Source classes.**
    Color 3 / N_c = 3 (retained graph_first_su3 / cl3_color_automorphism);
-   isospin 2 (retained native_gauge_closure); per-rep assignment
-   (decoration-under-retained lhcm_matter_assignment + retained_bounded anomaly
-   singlet completion); n_gen = 3 (retained three_generation_observable);
-   cardinality 2 (retained spin_statistics_cardinality).
+   isospin 2 (retained native_gauge_closure); LH per-rep assignment
+   (decoration-under-retained lhcm_matter_assignment); RH inventory as explicit
+   bounded premise P_RH_inventory with anomaly-singlet support; n_gen = 3
+   (retained three_generation_observable); Weyl dof factor as explicit bounded
+   premise P_Weyl_thermal_dof with finite-CAR/cardinality support.
 
 3. **The nu_R / I12 fork (the load-bearing residual).** The matter is 16 Weyl
    (gauge-charged 15 + gauge-singlet nu_R). Thermalized count excludes nu_R ->
@@ -39,8 +42,9 @@ neutral-singlet branch convention. All as EXECUTED asserts (not prose):
    forbidden-import / new-vocabulary scan.
 
 No lattice-action quantity, fitted comparator, or PDG observed value is a
-load-bearing input. The multiplicities and the cardinality 2 are framework /
-representation-theory quantities, not fitted.
+load-bearing input. The representation counts are not fitted; P_RH_inventory
+and P_Weyl_thermal_dof are explicit bounded premises, not retained-derived
+bridges.
 """
 
 from __future__ import annotations
@@ -96,7 +100,7 @@ N_C = 3
 DIM_ISOSPIN_DOUBLET = 2
 # Generation count (retained three_generation_observable).
 N_GEN = 3
-# Weyl-to-dof particle/antiparticle cardinality (retained spin_statistics_cardinality).
+# Weyl-to-dof particle/antiparticle factor (explicit bounded thermal premise).
 WEYL_DOF = 2
 # Boson count (retained-sourced in the companion census note; not re-derived here).
 N_BOSONS = 28
@@ -172,10 +176,10 @@ check(
 
 
 # ===========================================================================
-# 2. Multiplicities tied to retained / decoration-under-retained sources
+# 2. Source classes: retained/decorated inputs plus explicit bounded premises
 # ===========================================================================
 
-section("2. Multiplicities sourced from retained / decoration-under-retained")
+section("2. Source classes for R-MATTER arithmetic")
 
 # Color triplet multiplicity = dim(SU(3) fundamental) = N_c = 3.
 check(
@@ -199,10 +203,11 @@ check(
     lh_assignment == 8,
     f"{lh_assignment}",
 )
-# RH gauge-charged completion u_R:3 + d_R:3 + e_R:1 = 7 (retained_bounded singlet completion).
+# RH gauge-charged completion u_R:3 + d_R:3 + e_R:1 = 7.
+# This is an explicit bounded inventory premise, with anomaly-singlet support.
 rh_completion = u_R + d_R + e_R
 check(
-    "RH gauge-charged completion u_R+d_R+e_R = 3+3+1 = 7 (retained_bounded anomaly singlet)",
+    "RH gauge-charged completion u_R+d_R+e_R = 3+3+1 = 7 (bounded P_RH_inventory)",
     rh_completion == 7,
     f"{rh_completion}",
 )
@@ -215,9 +220,9 @@ check(
     "generation count n_gen = 3 (retained three_generation_observable)",
     N_GEN == 3,
 )
-# Weyl-to-dof cardinality (retained spin-statistics cardinality).
+# Weyl-to-dof thermal factor (bounded P_Weyl_thermal_dof).
 check(
-    "Weyl-to-dof cardinality = 2 (retained spin_statistics_cardinality)",
+    "Weyl-to-dof factor = 2 (bounded P_Weyl_thermal_dof)",
     WEYL_DOF == 2,
 )
 
@@ -335,7 +340,7 @@ check(
 
 section("5. Note / authority cross-checks")
 
-# Retained / decoration-under-retained sources -> markdown-link (load-bearing) edges.
+# Retained / decoration-under-retained support sources -> markdown-link edges.
 SOURCED_AUTHORITIES = [
     "GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
     "CL3_COLOR_AUTOMORPHISM_THEOREM.md",
@@ -360,10 +365,10 @@ for fname in SOURCED_AUTHORITIES + SEPARATED_STRONGER:
         (ROOT / "docs" / fname).exists(),
     )
 
-# Markdown-link (load-bearing) edges must be present for the sourced authorities.
+# Markdown-link support edges must be present for the cited authorities.
 for fname in SOURCED_AUTHORITIES:
     check(
-        f"sourced authority cited as markdown link (load-bearing edge): {fname}",
+        f"support authority cited as markdown link: {fname}",
         f"]({fname})" in NOTE_TEXT,
     )
 
@@ -389,9 +394,27 @@ check(
     "R-SPIN" in NOTE_TEXT,
 )
 check(
+    "note names R-RH as remaining residual",
+    "R-RH" in NOTE_TEXT and "P_RH_inventory" in NOTE_TEXT,
+)
+check(
+    "note names R-WEYL-THERMAL as remaining residual",
+    "R-WEYL-THERMAL" in NOTE_TEXT and "P_Weyl_thermal_dof" in NOTE_TEXT,
+)
+check(
     "note scopes R-SPIN as physical Weyl-spin bridge",
     "physical Weyl-spin identification bridge" in NOTE_TEXT
     and "bridge out of scope" in NOTE_TEXT,
+)
+check(
+    "note carries thermal Weyl factor as bounded premise, not retained-derived",
+    "explicit bounded thermal-counting premise" in NOTE_TEXT
+    and "does **not** by itself prove" in NOTE_TEXT,
+)
+check(
+    "note carries RH inventory as bounded premise, not retained-derived",
+    "explicit bounded premise `P_RH_inventory`" in NOTE_TEXT
+    and "does not by itself prove" in NOTE_TEXT,
 )
 check(
     "note names the neutral-singlet branch convention as residual",
@@ -472,6 +495,14 @@ if LEDGER_PATH.exists():
         and "bridge out of scope" in NOTE_TEXT,
     )
     check(
+        "R-RH remains an explicit bounded premise",
+        "P_RH_inventory" in NOTE_TEXT and "R-RH" in NOTE_TEXT,
+    )
+    check(
+        "R-WEYL-THERMAL remains an explicit bounded premise",
+        "P_Weyl_thermal_dof" in NOTE_TEXT and "R-WEYL-THERMAL" in NOTE_TEXT,
+    )
+    check(
         "full one-generation closure stays unaudited (separated, not reduced by this note)",
         status_of("one_generation_matter_closure_note") == "unaudited",
         f"ledger = {status_of('one_generation_matter_closure_note')}",
@@ -516,6 +547,14 @@ check(
 check(
     "note states neutral-singlet branch convention NOT claimed derived",
     "branch convention" in NOTE_TEXT and "is derived" in NOTE_TEXT,
+)
+check(
+    "note states RH inventory bridge NOT claimed retained-derived",
+    "right-handed gauge-charged inventory is derived from retained" in NOTE_TEXT,
+)
+check(
+    "note states thermal Weyl factor NOT claimed retained-derived",
+    "thermal Weyl factor `2` is derived from retained" in NOTE_TEXT,
 )
 
 # Forbidden load-bearing imports: no lattice-action / fitted / PDG carrier.

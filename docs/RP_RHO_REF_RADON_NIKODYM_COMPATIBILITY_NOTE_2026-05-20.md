@@ -1,28 +1,41 @@
-# Finite-Volume Gibbs State Relative to rho_ref: Conditional RP Compatibility Template
+# Finite-Volume Gibbs State Relative to the Normalized Trace
 
 **Date:** 2026-05-20
 **Type:** bounded_theorem candidate
 **Status:** source-side proposal — independent audit lane owns the verdict
-**Purpose:** Salvage the correct finite-volume Radon-Nikodym statement
-needed by the reflection-positivity / `rho_ref` compatibility follow-up
-without claiming that the Wilson configuration measure has already been
-identified with the operator-algebra tracial state.
+**Runner:** [`scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py`](../scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py)
+**Purpose:** Record the finite-volume Radon-Nikodym density theorem relative to
+the normalized trace on the qubit-lattice finite-region algebra, while keeping
+all `rho_ref` and Wilson/RP compatibility readings conditional and
+non-load-bearing.
+
+## 2026-06-06 audit-scope repair
+
+The 2026-06-06 conditional audit found the finite-dimensional Gibbs-density
+identity correct, but blocked the row because the `rho_ref`/Wilson wording made
+two separate bridges look load-bearing:
+
+- identifying `rho_ref|_Lambda` with the normalized trace `tau_Lambda`;
+- representing a Wilson/RP configuration-space measure by a self-adjoint
+  operator `H_Wilson,Lambda in A_Lambda`.
+
+This repair narrows the load-bearing claim to the trace-relative theorem only.
+The conditional `rho_ref` and Wilson/RP readings remain as downstream
+applications requiring independent bridge theorems.
 
 ## Honest Scope
 
 This note does **not** close the RP to `rho_ref` bridge. It records the
-standard finite-dimensional Gibbs/tracial Radon-Nikodym template on the
-qubit-lattice operator algebra:
+finite-dimensional Gibbs/tracial Radon-Nikodym theorem on the qubit-lattice
+operator algebra:
 
 ```text
 omega_H(O) = tau_Lambda(D_H O),    D_H = e^{-H} / tau_Lambda(e^{-H})
 ```
 
 for a finite-region self-adjoint Hamiltonian/action operator `H` on
-`A_Lambda`. The missing bridge is the representation step that turns a
-Wilson Euclidean configuration-space measure into such an operator
-`H_Wilson,Lambda` on the same carrier as `rho_ref`. That step is not
-proved here.
+`A_Lambda`. No `rho_ref` or Wilson configuration-space measure is a
+load-bearing premise of this theorem.
 
 ## Claim
 
@@ -34,9 +47,7 @@ the finite-region qubit-lattice algebra is
 A_Lambda = tensor_{x in Lambda} M_2(C) ~= M_{2^|Lambda|}(C).
 ```
 
-Let `tau_Lambda(O) = Tr(O) / 2^|Lambda|` be the normalized trace,
-the finite-region restriction of the pre-record reference state from
-[`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md).
+Let `tau_Lambda(O) = Tr(O) / 2^|Lambda|` be the normalized trace.
 For any self-adjoint finite-region operator `H in A_Lambda`, define
 
 ```text
@@ -53,11 +64,11 @@ is a positive normalized state on `A_Lambda`. In finite dimension,
 `omega_H` is normal with respect to `tau_Lambda`, and its
 Radon-Nikodym density is exactly `D_H`.
 
-Equivalently, if a Wilson/RP finite-volume sector is independently
-represented on the qubit-lattice algebra by a self-adjoint operator
-`H_Wilson,Lambda`, then its Gibbs state is absolutely continuous with
-respect to `rho_ref|_Lambda` with positive density proportional to
-`e^{-H_Wilson,Lambda}`.
+Conditional downstream application: if separate retained bridges identify
+`rho_ref|_Lambda = tau_Lambda` and represent a Wilson/RP finite-volume sector
+by a self-adjoint `H_Wilson,Lambda in A_Lambda`, then the same formula gives the
+Wilson/RP Gibbs density relative to `rho_ref|_Lambda`. Those bridge hypotheses
+are not proved or consumed here.
 
 ## Proof
 
@@ -86,7 +97,7 @@ for positive `O`. Normalization is immediate from `omega_H(1)=1`.
 Finite dimensionality makes the Radon-Nikodym statement just the
 standard density-matrix representation relative to the faithful trace.
 
-## Conditional RP Compatibility Reading
+## Conditional RP / rho_ref Compatibility Reading
 
 The retained reflection-positivity row
 `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29` concerns a
@@ -94,11 +105,12 @@ Wilson Euclidean configuration/path-integral measure on its narrowed
 retained scope. That measure is not automatically a state on the same
 operator-algebra carrier as `rho_ref`.
 
-This note therefore supports only the following conditional statement:
+This note therefore supports only the following conditional downstream
+application:
 
 ```text
-If a retained finite-volume Wilson/RP sector is represented by
-H_Wilson,Lambda in A_Lambda, then its Gibbs state has
+If rho_ref|_Lambda = tau_Lambda and a retained finite-volume Wilson/RP sector
+is represented by H_Wilson,Lambda in A_Lambda, then its Gibbs state has
 d omega_Wilson / d rho_ref|_Lambda proportional to e^{-H_Wilson,Lambda}.
 ```
 
@@ -126,22 +138,20 @@ carriers.
 - The broader RP scope, full thermodynamic-limit RP retention, or any
   numerical prediction.
 
-## Admitted Inputs
+## Load-Bearing Inputs
 
 1. **Finite-dimensional Gibbs-state construction** relative to a
    faithful normalized trace.
 2. **Standard matrix functional calculus** for `e^{-H}` with
    self-adjoint `H`.
-3. **Future/conditional Wilson representation bridge** if this lemma
-   is later used for the Wilson/RP compatibility row.
+No `rho_ref` identification or Wilson representation bridge is load-bearing for
+the theorem stated in this row.
 
 ## Risk Classification
 
-This is a `bounded_theorem` candidate. The finite-dimensional
-Gibbs/tracial density statement is standard operator-algebraic
-background applied to the qubit-lattice finite-region algebra. Any use
-as an RP compatibility result remains conditional on a separately
-audited carrier-identification bridge.
+This is a `bounded_theorem` candidate for the trace-relative finite theorem.
+Any use as an RP or `rho_ref` compatibility result remains conditional on
+separately audited carrier-identification bridges.
 
 ## Citation-Graph Note
 
@@ -149,11 +159,12 @@ audited carrier-identification bridge.
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) —
   supplies A1+A2, hence the finite-region qubit algebra.
-- [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) —
-  supplies `rho_ref` / `tau_Lambda` as the trace reference.
 
 **Plain-text pointer references** (NOT load-bearing deps):
 
+- `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md` —
+  downstream/contextual `rho_ref` trace-reference bridge; not consumed as a
+  theorem premise here.
 - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29` —
   downstream RP carrier that would need a separate representation
   bridge before this finite-volume density template can be applied.

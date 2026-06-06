@@ -3,7 +3,7 @@
 **Date:** 2026-05-30
 **Claim type:** bounded_theorem
 **Claim boundary:** bounded negative (route collapses) + one refinement (no-go narrowed) + one honest negative (ordering not natively indexed).
-**Runner:** `scripts/flavor_idempotent_u1_collapses_2026_05_30.py` (SCORECARD PASS=4).
+**Runner:** `scripts/flavor_idempotent_u1_collapses_2026_05_30.py` (SCORECARD PASS=5).
 **Source:** 6-agent build `wf_561034c7` (map → 4 tests → adjudication).
 
 ## Question

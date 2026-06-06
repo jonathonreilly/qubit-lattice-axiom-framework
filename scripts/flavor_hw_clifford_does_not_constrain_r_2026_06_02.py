@@ -4,11 +4,11 @@ MAGNITUDE, NOT a Fourier-eigenoperator fixed point -- at r=1/2 the pure-shift ma
 F-fixed (||F H F^dag - H|| > 0). The genuine F-self-dual operator family carries a FREE parameter
 (r free), so 1/sqrt2 is an unmarked member, not the unique self-dual point. HW-covariance forces the
 OFF-diagonal balance b=c (equal shift- and clock-weight), never the on-site:hopping ratio r. And the
-runner does not use Clifford-intrinsic value landmarks as selectors.
+runner does not use Clifford-intrinsic, Wigner/PSD, or full-orbit value landmarks as selectors.
 
-So the Fourier/HW symmetry route re-confirms, from a new direction, that r=1/2 is the unforced
-equal-block weight (AC_phi_lambda), not a symmetry fixed point. This runner verifies the qutrit
-Heisenberg-Weyl algebra and the Fourier/HW facts above. It reports source checks only.
+So the symmetry axis re-confirms, from a new direction, that r=1/2 is unforced by this
+HW/Fourier route, not a symmetry fixed point. This runner verifies the qutrit Heisenberg-Weyl
+algebra and the scoped facts above. It reports source checks only.
 """
 import numpy as np
 
@@ -77,12 +77,26 @@ def main():
         bc_equal_fixed and bc_unequal_notfixed and a_free,
         "b=c F-fixed; b!=c not; a free for all values"))
 
+    # The ratio data are invariant under unitary conjugation, but invariance is
+    # not selection: it supplies no equation fixing b/a.
+    H0 = Hsh(1.3, 0.42)
+    HF = F @ H0 @ F.conj().T
+    def trace_part(M):
+        return np.trace(M) / 3
+    def traceless_hs(M):
+        T = M - trace_part(M) * I3
+        return np.real(np.trace(T.conj().T @ T))
+    passed.append(check(
+        "trace and traceless-HS ratio are Fourier-conjugation invariant, but this is not value selection",
+        np.allclose(trace_part(H0), trace_part(HF)) and np.allclose(traceless_hs(H0), traceless_hs(HF)),
+        f"trace={trace_part(H0):.3f}; hs2={traceless_hs(H0):.6f}"))
+
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("FINDING: the tested qutrit Heisenberg-Weyl/Fourier structure does NOT force r=1/2.")
     print("'|b|/a=1/sqrt2 self-dual'")
     print("is a magnitude word-coincidence (H not F-fixed there); the true F-self-dual family has r free;")
-    print("F-covariance forces only b=c (off-diagonal), not r. This route re-confirms")
-    print("r=1/2 = unforced equal-block weight AC_phi_lambda, without selecting a replacement value.")
+    print("F-covariance forces only b=c (off-diagonal), not r. Symmetry axis re-confirms")
+    print("r=1/2 is unforced by the scoped HW/Fourier route.")
     return 0 if all(passed) else 1
 
 

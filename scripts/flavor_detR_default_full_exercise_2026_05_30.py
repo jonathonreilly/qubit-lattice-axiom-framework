@@ -12,8 +12,9 @@ Q=2/3 (r=1/2 / det_C) is a genuine, precisely-localized import.
   X3 (Z_2)^3 momentum corners are +/-1 (REAL) + CPT reflection sends J_b->-J_b -> no holomorphic det_C
      carrier; generation algebra is honestly real R[Z3].
 CORRECTION #1 (Link 5, previously overstated): the det_C/U(1) generator is NOT the chirality gate.
-  G_U1 COMMUTES with Gamma_chi=(2/3)J-I and with C (on-block, C3-equivariant); the chiral grading is
-  off-block and ANTICOMMUTES. They are algebraically orthogonal -- "single shared gate" is unsupported on R^3.
+  G_U1 COMMUTES with Gamma_chi=(2/3)J-I and with C (on-block, C3-equivariant), and its
+  anticommutator with Gamma_chi is nonzero. A true chiral splitter would be a separate off-block
+  anticommuting object. They are algebraically orthogonal -- "single shared gate" is unsupported on R^3.
 CORRECTION #2 (the actual import): once U(1)-symmetry and holomorphic-measure are both excluded, the
   residual import is SOLELY the block-vs-dimension MEASURE CHOICE on R[Z3]=R(+)C: (1,1) idempotent/center
   -count -> Q=2/3 vs (1,2) Plancherel/dimension-count -> Q=1. The trace permits both, RANKS NEITHER
@@ -46,7 +47,7 @@ def main():
         all(abs(c.imag) < 1e-12 if isinstance(c,complex) else True for c in chars) and set(chars)=={1,-1}))
     passed.append(check("CORR#1 G_U1 COMMUTES with Gamma_chi and C (NOT the chiral gate)",
         np.allclose(G@Gchi-Gchi@G,0) and np.allclose(G@C-C@G,0) and
-        np.linalg.norm(G@Gchi+Gchi@G)>1, f"||{{G,Gchi}}||={np.linalg.norm(G@Gchi+Gchi@G):.3f} (chiral grading is off-block, anticommutes)"))
+        np.linalg.norm(G@Gchi+Gchi@G)>1, f"||{{G,Gchi}}||={np.linalg.norm(G@Gchi+Gchi@G):.3f} (nonzero; a true chiral splitter would anticommute)"))
     Q=lambda r:1/3+2/3*r
     passed.append(check("CORR#2 import = block(1,1)->Q=2/3 vs dimension(1,2)->Q=1 measure choice; trace ranks neither",
         abs(Q(0.5)-2/3)<1e-12 and abs(Q(1)-1)<1e-12, "det_C block-count r=1/2; det_R dimension r=1; Schur: no merge of 2 real->1 complex"))

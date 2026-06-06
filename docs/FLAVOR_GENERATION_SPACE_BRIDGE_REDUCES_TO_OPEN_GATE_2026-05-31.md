@@ -3,7 +3,7 @@
 **Date:** 2026-05-31
 **Claim type:** bounded_theorem
 **Claim boundary:** bounded characterization (a gap-reduction) + one new positive structural fact. Not a closure; not an import.
-**Runner:** `scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py` (SCORECARD 10/10).
+**Runner:** `scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py` (SCORECARD 11/11).
 **Source:** workflow `wf_d994df21-e74` — 5 attack routes + 3-lens adversarial verification + synthesis (18 agents).
 
 ## Question
@@ -42,9 +42,12 @@ by Schur, prior campaign work) supplies the holomorphic/Dolbeault denominator fo
 ### Finding B (the single irreducible gap) — promoting an intensive summand of a vanishing total
 Under framework baseline+retained the genuine equivariant-index **invariants** are **extensive** and **vanish** on
 the retained C₃-equivariant native staggered Dirac: `Γ₅=(−1)^{x+y+z}` forces ± spectral pairing, so
-the global η = 0, the global Lefschetz sum = 0, and the Euler characteristic χ = 0. The number 2/9 is
-a **per-fixed-point summand** of that vanishing global sum (`global = L·(2/9)`, `L`-dependent: `L=3→2/3`,
-`L=8→16/9`), surviving **only by refusing to sum**.
+the global η = 0, the signed global Lefschetz invariant = 0, and the Euler characteristic χ = 0. The
+number 2/9 is a **per-fixed-point local density**. If one forms an unsigned same-orientation diagnostic
+from `L` identical local summands, it scales as `L·(2/9)` (`L=3→2/3`, `L=8→16/9`), but that diagnostic
+is not the signed global invariant. The invariant sum cancels after the retained `Γ₅` pairing. Thus
+the 2/9 value survives **only by refusing the signed global sum** and selecting one intensive local
+summand as the observable.
 
 The one unforced step is therefore: **promote the intensive single-fixed-point local density 2/9 to
 THE physical flavor-asymmetry observable**, rather than treating it as a contribution to the

@@ -3,7 +3,7 @@
 **Date:** 2026-05-31
 **Claim type:** bounded_theorem
 **Claim boundary:** bounded negative (a refuted derivation lead) + an honest input-count refinement. Not a closure; not an import.
-**Runner:** `scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py` (SCORECARD 6/6).
+**Runner:** `scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py` (SCORECARD 7/7).
 **Source:** workflow `wf_26eb7111-7e7` — 6 attack routes + 3-lens adversarial verification + synthesis (25 agents). All 6 attackers claimed the carrier was *derived*; adversarial verification refuted **every** one (survivors: none).
 
 ## Question
@@ -23,7 +23,13 @@ for a decisive, verified reason, and the carrier reduces to an *existing open ga
 The lead's whole force was "compute 2/9 on the finite corner rep, no position-space manifold." But:
 - the **bare doublet character** is `tr(g|doublet) = ω + ω² = −1` (full R³ char `1+ω+ω² = 0`, singlet `= 1`);
 - **none of these is 2/9.** `2/9 = L₃(1,2) = (1/3) Σ_{k=1,2} 1/((ωᵏ−1)(ω²ᵏ−1))` arises *solely* from the
-  Atiyah-Bott / equivariant-η **normal-bundle denominators** `1/(ωᵏ−1) = det(1−g)⁻¹`.
+  Atiyah-Bott / equivariant-η **normal-bundle determinant denominators** on the two-dimensional normal
+  doublet:
+  ```text
+  det(1-g^k | N)^{-1} = 1 / ((ω^k - 1)(ω^{2k} - 1)).
+  ```
+  The one-factor expression `1/(ω^k-1)` is not the determinant inverse; the determinant inverse is the
+  two-eigenvalue product above.
 
 So 2/9 is an **index / spectral-asymmetry** object, **not** a character. The "finite-carrier, no
 manifold" reading either keeps the value 2/9 — and thereby keeps exactly the fixed-point/index

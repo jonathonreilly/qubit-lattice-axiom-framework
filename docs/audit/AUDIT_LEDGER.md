@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 177 |
 | **retained_no_go** | 192 |
-| **retained_bounded** | 670 |
+| **retained_bounded** | 671 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1234 |
+| unaudited | 1233 |
 | meta | 284 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 26 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1035 |
+| `audited_clean` | 1036 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1518 |
+| `unaudited` | 1517 |
 
 | claim_type | count |
 |---|---:|
@@ -684,6 +684,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_rg_alpha_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_rg_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
+| `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_symmetry_unification_decision_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_weak_field_mass_scaling_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_weak_field_purity_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -10475,6 +10476,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The canonical artifact-backed statement is that the raw nearest-neighbor lattice is Born-clean through h = 0.125 by the high-precision raw-kernel certificate, while the RG-style schedule and alpha-sweep evidence remains only suggestive and does not establish a continuum/RG result.  _(class `B`)_
 - **chain closes:** True — The cited retained-grade notes and included runner output support the bounded reconciliation exactly: the high-precision runner computes the raw h = 0.125 row, while the RG gravity and alpha-sweep notes preserve the open RG/continuum caveats. No unsupported alpha = 2.0 or continuum-complete claim is imported.
 - **rationale:** All cited authorities are retained-grade or retained-bounded, and the primary runner source genuinely computes the raw NN observables at h = 0.125 rather than merely printing constants. The note itself is a bounded cross-note reconciliation rather than a new first-principles theorem, but its conclusion follows from the provided retained inputs and the included successful raw-kernel certificate. The RG caveat is also supported by the cited RG gravity and alpha-sweep notes.
+- **auditor confidence:** high
+
+### `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic finite-Grassmann bilateral Noether identity for nearest-neighbour carriers with c_mu(x + mu_hat)=c_mu(x), restricted to site-local/internal generators T satisfying [T,M]=0 and excluding physical M_KS identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-000005-99291b2890-lattice_noether_carrier_inde`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By AxisInv, c_mu(x' + mu_hat) = c_mu(x'), so the reindexed backward coefficient matches the forward coefficient and the local-alpha variation combines into the bilateral current (5).  _(class `A`)_
+- **chain closes:** True — The backward-hop reindexing is a direct algebraic consequence of AxisInv and yields the displayed bilateral current; summation by parts then gives zero divergence on the stated equations of motion. The one-hop Berezin authority supplies the finite Grassmann determinant/bilinear convention, and no staggered-Dirac carrier gate is imported.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the explicitly defined carrier class, not a definition substitution or numerical match. The cited authority is retained_bounded and is used only for the finite Berezin calculus/sign convention, while the carrier-independent reindexing is proven inside the note. The runner source performs symbolic and finite-matrix checks for the sign convention, anti-Hermiticity characterization, carrier sweeps, and divergence identities rather than merely printing expected constants.
 - **auditor confidence:** high
 
 ### `lattice_symmetry_unification_decision_note`

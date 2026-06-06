@@ -1,0 +1,107 @@
+# Spin-Statistics / FS: the Cross-Site Fermion Sign is a Genuine Admission, Precisely Located (Exercise)
+
+**Date:** 2026-06-06
+**Claim type:** bounded_theorem (exercise verdict + located admission + route portfolio)
+**Status:** review-loop source proposal. Adds no axiom, no fitted input, no audit
+verdict.
+**Primary runner:**
+[`scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py`](../scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py)
+**Cached runner output:**
+[`logs/runner-cache/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.txt`](../logs/runner-cache/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.txt)
+**Exercise packet:** `.claude/science/exercises/spin-statistics/`
+
+---
+
+## Role
+
+Output of the repo's `/exercise` skill
+([`docs/ai_methodology/skills/exercise/SKILL.md`](ai_methodology/skills/exercise/SKILL.md))
+run as a full 5-subagent fan-out (assumptions ledger / Elon reduction / literature
+/ mathematics-sector / reframing, each with a framework-refresher read) on the
+spin-statistics / FS wall — the matter sector's highest-leverage residual
+(it gates both FS and the chirality `ε`).
+
+## Wall (neutral)
+
+The per-site `Z₂` fermion-parity grading, Pauli exclusion, and the Berezin
+determinant are **retained**; the **cross-site fermion exchange sign** (CAR / −1,
+vs hard-core-boson CCR) is **not forced** from `{Lattice, Quantum, Record}`. A
+hard-core boson has the same per-site dim 2 / `Z₂` grading / Pauli exclusion; only
+the cross-site exchange sign differs. The standard spin-statistics theorem needs
+Lorentz invariance + microcausality + positivity — the lattice lacks manifest
+Lorentz (`axiom_first_spin_statistics_theorem` is unaudited).
+
+## Verdict — FS is a genuine admission, precisely located (runner SCORECARD 14/14)
+
+All five exercise slices converge:
+
+1. **Cl(3) does not supply the CAR grading** (verified). The per-site pseudoscalar
+   `ω = σ₁σ₂σ₃ = i·I` has `ω² = −I` (*not* a `Z₂` involution), and the **only**
+   operator anticommuting all three Paulis is `0` (the maximal-anticommuting /
+   `d_s=3` fact). So the Cl(3) vector grade is *not* an inner `Z₂` grading on the
+   qubit; the CAR grading is the **Fock parity** `F = (−1)^n = σ₃`, which requires
+   choosing which basis state is "occupied" — a datum the Quantum axiom does not
+   supply.
+2. **Topology gives only the dichotomy, never the sign.** The 2-particle exchange
+   class is order-2 (anyons excluded), but `Hom(Z₂, U(1)) = {+1, −1}` admits
+   **both** boson and fermion; the first-quantized configuration-space route is
+   **sign-blind** (Koszul vs ungraded boundary maps give identical `Z₂` torsion).
+   Sharper `Z³` witness from the fan-out: the **3×3×2 box has
+   `H₁(UD₂) = Z¹⁶ ⊕ Z₂`** — the smallest concrete `Z³` graph where the exchange
+   `Z₂` appears (to be independently re-verified; the dichotomy itself is
+   `retained_bounded` in the graph-braid notes).
+3. **Precise location (the sharpest reframe).** The `Z₂` fermion-parity grading
+   `F = (−1)^Q` is the **central-sector** (`K`/CPT-orbit) structure the Record
+   axiom **delivers** (`fermion_parity_z2_grading_theorem` is retained, *identical*
+   in the boson and fermion frames). The exchange **sign** is **within-sector**
+   data — and the Record axiom explicitly "supplies no within-sector data." So
+   **Record forces the grading and is constitutively silent on the sign.** FS is
+   therefore a genuine admission of the **same class as Lorentz-route
+   spin-statistics** (the central structure is free; the sign needs an extra
+   principle) — **not** a missing lemma the axioms secretly contain.
+4. **Literature no-go confirms.** Allen–Mondragon (quant-ph/0304088): "no
+   spin-statistics connection in non-relativistic QM"; any derivation needs an
+   extra premise ruling out spinless fermions. DHR superselection classifies
+   (Bose/Fermi/para) but does not select the sign; Berry–Robbins is non-unique.
+
+This is consistent with the four existing repo no-gos (`car_from_positivity`,
+`staggered_dirac_substep1_statistics_agnostic`, `ring_monodromy_does_not_force_car`,
+`FS_rotation_exchange_discrete_insufficiency`).
+
+## Route portfolio
+
+| Rank | Route | Outcome class | First artifact |
+|---|---|---|---|
+| 1 | **multi-loop graded-net cocycle consistency** (the one un-refuted opening) | possible forcing lemma | two linked Jordan-Wigner-string loops on a `Z³` patch — does a hard-core-boson framing survive *joint* single-valuedness, or does mutual consistency force −1? |
+| 2 | **continuum migration** (emergent Lorentz → standard theorem applies) | migrate to the continuum frontier | complete the OS→Wightman reconstruction (rungs A–C) |
+| 3 | **3×3×2 `Z³` box `H₁(UD₂)` witness** | sharpen the dichotomy | SNF on the actual `Z³` box (vs abstract `K₅`/`K₃,₃`) |
+| — | graded-tensor / parity-superselection from `{L,Q,R}` | **infeasible** w/o new principle | (re-derives the admission) |
+
+No route closes FS on the static baseline without a new principle; **no new axiom
+is invented** (the protocol's forbidden outcome).
+
+## Honest scope
+
+This is a **verdict + location + route map**, not a closure. FS is confirmed an
+admission; what is *new* is the precise location (Record forces the central-sector
+grading, is silent on the within-sector sign), the Cl(3)-doesn't-supply-the-grading
+fact, and the single un-refuted opening (the multi-loop graded-net consistency).
+The verified facts are exact; the 3×3×2 `H₁` is from the fan-out and flagged for
+re-verification. No new axiom.
+
+## Reprove-and-cite ledger
+
+- **Reproven here** (runner): `ω = i·I`, `ω² = −I`, only `G=0` anticommutes all
+  three Paulis; `Hom(Z₂,U(1)) = {±1}`; the route classifications.
+- **Cited**: the four repo no-gos; `fermion_parity_z2_grading_theorem` (retained);
+  the graph-braid dichotomy (retained_bounded); the Record axiom boundary
+  (`MINIMAL_AXIOMS_2026-06-05`); literature (Allen–Mondragon, DHR, Berry–Robbins,
+  Leinaas–Myrheim, Abrams/HKRS — comparators only).
+
+## Audit dependency repair links
+
+- [CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md](CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md)
+- [AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md)
+- [FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
+- [GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md](GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md)
+- [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)

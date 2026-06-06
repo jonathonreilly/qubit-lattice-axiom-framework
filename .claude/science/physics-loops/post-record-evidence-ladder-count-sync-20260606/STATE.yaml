@@ -1,0 +1,23 @@
+loop_slug: post-record-evidence-ladder-count-sync-20260606
+status: ready_for_review
+created: 2026-06-06
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: post_record_audit_evidence_ladder_row_bucketing_2026-06-06
+target_blocker_text: "audited_failed because source note/runner/cache used stale post-record evidence ladder counts after audit ledger growth"
+files_touched:
+  - docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md
+  - scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-evidence-ladder-count-sync-20260606/
+verification:
+  - "python3 scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py -> SUMMARY: PASS=44 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py --tail-chars 4000 -> refreshed green cache"
+open_imports: []
+audit_data_edited: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: "Review source/count sync, then rerun audit on the target row without treating this PR as a verdict edit."
+stop_condition: "Evidence ladder count-drift blocker closed on this branch."

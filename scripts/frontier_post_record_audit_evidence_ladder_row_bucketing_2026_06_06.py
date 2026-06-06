@@ -17,6 +17,19 @@ PASS = 0
 FAIL = 0
 
 SCOPE_EFFECTIVE = {"retained_bounded", "retained_pending_chain", "audited_conditional"}
+EXPECTED_LEDGER_ROWS = 2920
+EXPECTED_SCOPED_ROWS = 1357
+EXPECTED_BUCKET_COUNTS = Counter(
+    {
+        "append_count_ready": 0,
+        "finite_law_or_certificate_needed": 10,
+        "not_record_ladder_relevant": 1077,
+        "production_dynamics_needed": 6,
+        "record_type_support_only": 0,
+        "selector_or_dial_needed": 241,
+        "simulation_support_only": 23,
+    }
+)
 
 FOCUS_RE = re.compile(
     r"(RECORD|READOUT|BORN|PROBABILITY|P_VALUE|PVALUE|LIKELIHOOD|NULL|"
@@ -139,6 +152,9 @@ def source_anchor_checks() -> None:
         "docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md",
         [
             "read-only scanner",
+            "scans `1357` bounded/conditional",
+            "touches `280` rows",
+            "`selector_or_dial_needed` | 241",
             "bounded/conditional-scope rows",
             "bucket counts sum to the scoped count",
             "audit ledger hash is unchanged",
@@ -185,15 +201,19 @@ def ledger_checks() -> tuple[list[dict], Counter[str]]:
         buckets[classify(row)].append(row)
 
     counts = Counter({bucket: len(items) for bucket, items in buckets.items()})
+    full_counts = Counter({bucket: counts[bucket] for bucket in EXPECTED_BUCKET_COUNTS})
     touched = sum(v for k, v in counts.items() if k != "not_record_ladder_relevant")
-    report("ledger row count matches current map", len(rows) == 2825, str(len(rows)))
-    report("bounded/conditional scope count is at least prior map", len(scoped_rows) >= 1304, str(len(scoped_rows)))
+    expected_touched = sum(v for k, v in EXPECTED_BUCKET_COUNTS.items() if k != "not_record_ladder_relevant")
+    report("ledger row count matches current map", len(rows) == EXPECTED_LEDGER_ROWS, str(len(rows)))
+    report("bounded/conditional scope count matches current map", len(scoped_rows) == EXPECTED_SCOPED_ROWS, str(len(scoped_rows)))
     report("each scoped row gets one bucket", sum(counts.values()) == len(scoped_rows), str(counts))
-    report("touched ladder rows are nonempty", touched > 0, str(touched))
+    report("bucket counts match current source map", full_counts == EXPECTED_BUCKET_COUNTS, str(full_counts))
+    report("touched ladder rows match current source map", touched == expected_touched, str(touched))
     report("selector/dial bucket nonempty", counts["selector_or_dial_needed"] > 0, str(counts["selector_or_dial_needed"]))
     report("production/dynamics bucket nonempty", counts["production_dynamics_needed"] > 0, str(counts["production_dynamics_needed"]))
     report("finite-law/certificate bucket nonempty", counts["finite_law_or_certificate_needed"] > 0, str(counts["finite_law_or_certificate_needed"]))
-    report("append/count or record-type support bucket nonempty", (counts["append_count_ready"] + counts["record_type_support_only"]) > 0)
+    report("append/count bucket matches current source zero", counts["append_count_ready"] == 0)
+    report("record-type support bucket matches current source zero", counts["record_type_support_only"] == 0)
 
     required_rows = {
         "selector_or_dial_needed": "architecture_note_directional_measure",

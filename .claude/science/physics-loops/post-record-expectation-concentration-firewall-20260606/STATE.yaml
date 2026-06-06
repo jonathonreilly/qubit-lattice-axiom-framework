@@ -29,13 +29,20 @@ open_imports:
 no_go_routes:
   - "expected post-record frequency => concentration / p-value / audit verdict"
 review_findings: "local review clean: runner PASS=37 FAIL=0; py_compile clean; ASCII clean; wording scan clean after negated Koide/dial firewall review; loop pack has 13 files; git diff --check clean"
-pr_status: verified_pending_pr
+pr_status: open
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2832"
+pr_number: 2832
+cycle_status: pr_open_initial_unstable_queued_check
+mergeable: MERGEABLE
+merge_state_status: UNSTABLE
+checks: "audit_pipeline queued at first verification"
 next_exact_action: |
-  Commit, push, open PR, verify PR status, then pivot to the next independent
+  Push this PR-status commit, re-check PR #2832 after audit_pipeline settles,
+  record final clean status if clean, then pivot to the next independent
   dynamics lane.
 stop_condition: |
-  PR opened, mergeability/check state recorded, and campaign pivots while
-  runtime remains.
+  Satisfied only after PR final mergeability/check state is recorded and the
+  campaign pivots while runtime remains.
 status_fields:
   actual_current_surface_status: no-go
   trace_class: negative_route_pruning

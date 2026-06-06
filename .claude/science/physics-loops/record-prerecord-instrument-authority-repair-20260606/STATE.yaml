@@ -1,0 +1,18 @@
+loop: record-prerecord-instrument-authority-repair-20260606
+date: 2026-06-06
+target_claim_id: record_prerecord_instrument_kernel_gate_2026-06-06
+active_route: authority-gap repair for projective instrument/trace pairing
+actual_current_surface_status: bounded-support
+conditional_surface_status: exact finite algebra under cited retained-bounded projective readout authorities and supplied readout context
+trace_class: upstream_support
+reachability_to_target: partially_closes
+files_touched:
+  - docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md
+  - scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py
+  - logs/runner-cache/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.txt
+open_imports:
+  - physical readout context remains supplied
+  - no physical measurement dynamics, clock/rate, IID typicality, or dial selection derived
+review_status: pending
+pr_status: pending
+next_exact_action: open review PR

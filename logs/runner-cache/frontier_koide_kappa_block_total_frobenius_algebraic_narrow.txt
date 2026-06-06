@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py
-runner_sha256: 3c623146ff46d184649baddd01f34418e8d2b425958fc363ef2e2d561f64ba3e
+runner_sha256: facb59b8c8ba41967fa9a698eee5c39d5927ec7841a35050899529d8bc5f9d75
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 
@@ -52,6 +52,58 @@ Part 3 (T3): equal-weight Lagrange extremum -> kappa = 2
 ----------------------------------------------------------------------------------------
 Part 4 (T4): d = 3 uniqueness of the (1, (1,), 0) multiplicity pattern
 ----------------------------------------------------------------------------------------
+  [PASS (A)] [T4 d=2] C^d = I  (cyclic shift order)
+  [PASS (A)] [T4 d=2] Omega^d = I  (clock action order)
+  [PASS (A)] [T4 d=2] shift-conjugation by C is trivial on Herm_circ(d)  (rules out the shift-conjugation reading)
+  [PASS (A)] [T4 d=2] rho(C^k) = omega^k C^k for every k  (C^k line carries character k)
+  [PASS (A)] [T4 d=2] rho^d = id on the C-power basis  (Z_d representation)
+  [PASS (A)] [T4 d=2] rho preserves Hermiticity  (Omega is unitary)
+  [PASS (A)] [T4 d=2] even-d sign line: rho(C^(d/2)) = -C^(d/2)  (omega^(d/2) = -1)
+  [PASS (A)] [T4 d=2] trivial line: rho(I) = I  (character 0)
+  [PASS (A)] [T4 d=3] C^d = I  (cyclic shift order)
+  [PASS (A)] [T4 d=3] Omega^d = I  (clock action order)
+  [PASS (A)] [T4 d=3] shift-conjugation by C is trivial on Herm_circ(d)  (rules out the shift-conjugation reading)
+  [PASS (A)] [T4 d=3] rho(C^k) = omega^k C^k for every k  (C^k line carries character k)
+  [PASS (A)] [T4 d=3] rho^d = id on the C-power basis  (Z_d representation)
+  [PASS (A)] [T4 d=3] rho preserves Hermiticity  (Omega is unitary)
+  [PASS (A)] [T4 d=3, k=1] B1/B2 are Hermitian doublet generators  ({C^k + C^(d-k), i(C^k - C^(d-k))})
+  [PASS (A)] [T4 d=3, k=1] rho on the Hermitian pair is planar rotation  (angle = 2*pi*1/3)
+  [PASS (A)] [T4 d=3] odd d has no sign line  (no nonzero k equals d-k modulo d)
+  [PASS (A)] [T4 d=3] trivial line: rho(I) = I  (character 0)
+  [PASS (A)] [T4 d=4] C^d = I  (cyclic shift order)
+  [PASS (A)] [T4 d=4] Omega^d = I  (clock action order)
+  [PASS (A)] [T4 d=4] shift-conjugation by C is trivial on Herm_circ(d)  (rules out the shift-conjugation reading)
+  [PASS (A)] [T4 d=4] rho(C^k) = omega^k C^k for every k  (C^k line carries character k)
+  [PASS (A)] [T4 d=4] rho^d = id on the C-power basis  (Z_d representation)
+  [PASS (A)] [T4 d=4] rho preserves Hermiticity  (Omega is unitary)
+  [PASS (A)] [T4 d=4, k=1] B1/B2 are Hermitian doublet generators  ({C^k + C^(d-k), i(C^k - C^(d-k))})
+  [PASS (A)] [T4 d=4, k=1] rho on the Hermitian pair is planar rotation  (angle = 2*pi*1/4)
+  [PASS (A)] [T4 d=4] even-d sign line: rho(C^(d/2)) = -C^(d/2)  (omega^(d/2) = -1)
+  [PASS (A)] [T4 d=4] trivial line: rho(I) = I  (character 0)
+  [PASS (A)] [T4 d=5] C^d = I  (cyclic shift order)
+  [PASS (A)] [T4 d=5] Omega^d = I  (clock action order)
+  [PASS (A)] [T4 d=5] shift-conjugation by C is trivial on Herm_circ(d)  (rules out the shift-conjugation reading)
+  [PASS (A)] [T4 d=5] rho(C^k) = omega^k C^k for every k  (C^k line carries character k)
+  [PASS (A)] [T4 d=5] rho^d = id on the C-power basis  (Z_d representation)
+  [PASS (A)] [T4 d=5] rho preserves Hermiticity  (Omega is unitary)
+  [PASS (A)] [T4 d=5, k=1] B1/B2 are Hermitian doublet generators  ({C^k + C^(d-k), i(C^k - C^(d-k))})
+  [PASS (A)] [T4 d=5, k=1] rho on the Hermitian pair is planar rotation  (angle = 2*pi*1/5)
+  [PASS (A)] [T4 d=5, k=2] B1/B2 are Hermitian doublet generators  ({C^k + C^(d-k), i(C^k - C^(d-k))})
+  [PASS (A)] [T4 d=5, k=2] rho on the Hermitian pair is planar rotation  (angle = 2*pi*2/5)
+  [PASS (A)] [T4 d=5] odd d has no sign line  (no nonzero k equals d-k modulo d)
+  [PASS (A)] [T4 d=5] trivial line: rho(I) = I  (character 0)
+  [PASS (A)] [T4 d=6] C^d = I  (cyclic shift order)
+  [PASS (A)] [T4 d=6] Omega^d = I  (clock action order)
+  [PASS (A)] [T4 d=6] shift-conjugation by C is trivial on Herm_circ(d)  (rules out the shift-conjugation reading)
+  [PASS (A)] [T4 d=6] rho(C^k) = omega^k C^k for every k  (C^k line carries character k)
+  [PASS (A)] [T4 d=6] rho^d = id on the C-power basis  (Z_d representation)
+  [PASS (A)] [T4 d=6] rho preserves Hermiticity  (Omega is unitary)
+  [PASS (A)] [T4 d=6, k=1] B1/B2 are Hermitian doublet generators  ({C^k + C^(d-k), i(C^k - C^(d-k))})
+  [PASS (A)] [T4 d=6, k=1] rho on the Hermitian pair is planar rotation  (angle = 2*pi*1/6)
+  [PASS (A)] [T4 d=6, k=2] B1/B2 are Hermitian doublet generators  ({C^k + C^(d-k), i(C^k - C^(d-k))})
+  [PASS (A)] [T4 d=6, k=2] rho on the Hermitian pair is planar rotation  (angle = 2*pi*2/6)
+  [PASS (A)] [T4 d=6] even-d sign line: rho(C^(d/2)) = -C^(d/2)  (omega^(d/2) = -1)
+  [PASS (A)] [T4 d=6] trivial line: rho(I) = I  (character 0)
   [PASS (A)] Herm_circ(d=2) multiplicity pattern = (1, (), 1)  (got (1, (), 1))
   [PASS (A)] Herm_circ(d=3) multiplicity pattern = (1, (1,), 0)  (got (1, (1,), 0))
   [PASS (A)] Herm_circ(d=4) multiplicity pattern = (1, (1,), 1)  (got (1, (1,), 1))
@@ -81,9 +133,9 @@ Narrow theorem summary
     (T3)  S = log E_+ + log E_perp at fixed E_+ + E_perp = E_tot is
           extremized uniquely at E_+ = E_perp = E_tot / 2, i.e. a^2 = 2 |b|^2
           (kappa = 2); Hessian is strictly negative-definite there.
-    (T4)  The real-irrep multiplicity pattern (trivial, doublets, sign)
-          = (1, (1,), 0) on Herm_circ(d) is uniquely realized at d = 3
-          among d in {2, 3, 4, 5, 6}.
+    (T4)  Under rho(M) = Omega^{-1} M Omega, the real-irrep multiplicity
+          pattern (trivial, doublets, sign) = (1, (1,), 0) on Herm_circ(d)
+          is uniquely realized at d = 3 among d in {2, 3, 4, 5, 6}.
 
   Audit-lane class:
     (A) - pure linear algebra and elementary cyclic-group representation
@@ -101,9 +153,9 @@ Narrow theorem summary
 
 
 ========================================================================================
-  TOTAL: PASS=32, FAIL=0
+  TOTAL: PASS=84, FAIL=0
 ========================================================================================
-PASS=32 FAIL=0
+PASS=84 FAIL=0
 
 ----- stderr -----
 

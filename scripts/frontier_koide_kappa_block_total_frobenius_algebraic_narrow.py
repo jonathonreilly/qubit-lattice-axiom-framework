@@ -15,8 +15,9 @@ algebraic identities on Herm_circ(3) underlying the parent
        constraint E_+ + E_perp = E_tot > 0, has unique interior critical
        point E_+ = E_perp = E_tot / 2, equivalently a^2 = 2 |b|^2,
        i.e. kappa = 2; Hessian is strictly negative-definite there;
-  (T4) the real-irrep multiplicity pattern (trivial, doublets, sign) = (1, (1,), 0)
-       on Herm_circ(d) is uniquely realized at d = 3 among d in {2, 3, 4, 5, 6}.
+  (T4) under the clock action rho(M) = Omega^{-1} M Omega, the real-irrep
+       multiplicity pattern (trivial, doublets, sign) = (1, (1,), 0) on
+       Herm_circ(d) is uniquely realized at d = 3 among d in {2, 3, 4, 5, 6}.
 
 This narrow theorem treats (a, b) as ABSTRACT SYMBOLS. It does not select
 between weight choices (e.g. multiplicity (1, 1) vs real-dim (1, 2)),
@@ -65,6 +66,31 @@ def check(label, ok, detail=""):
 
 def section(title):
     print("\n" + "-" * 88 + f"\n{title}\n" + "-" * 88)
+
+
+def matrix_simplify(M):
+    return M.applyfunc(lambda e: simplify(sympy.expand_complex(e).rewrite(sympy.exp)))
+
+
+def mat_zero(M):
+    M = matrix_simplify(M)
+    return all(e == 0 for e in M)
+
+
+def mat_eq(A, B):
+    return mat_zero(A - B)
+
+
+def shift_matrix(d):
+    C_d = zeros(d, d)
+    for i in range(d):
+        C_d[i, (i + 1) % d] = 1
+    return C_d
+
+
+def clock_matrix(d):
+    omega = sympy.exp(2 * I * sympy.pi / d)
+    return sympy.diag(*[omega ** j for j in range(d)])
 
 
 # ============================================================================
@@ -296,6 +322,83 @@ check("cross-partial d^2 S / dE_+ dE_perp = 0",
 section("Part 4 (T4): d = 3 uniqueness of the (1, (1,), 0) multiplicity pattern")
 # ----------------------------------------------------------------------------
 
+# The audit blocker for this row was not the final pair count itself. It was
+# that the source packet never defined the nontrivial Z_d action whose isotypes
+# T4 counts, while shift-conjugation by C is trivial on circulants. We therefore
+# instantiate the repaired action directly here:
+#
+#   omega = exp(2 pi i / d),
+#   Omega = diag(1, omega, ..., omega^{d-1}),
+#   rho(M) = Omega^{-1} M Omega.
+#
+# This is the retained sister action in
+# KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.
+# The checks below prove rho(C^k) = omega^k C^k, so the C^k coefficient line
+# carries character k; Hermitian conjugate pairs form real doublets; even d has
+# the sign line; and k = 0 is the trivial line.
+for d in (2, 3, 4, 5, 6):
+    C_d = shift_matrix(d)
+    I_d = eye(d)
+    Omega = clock_matrix(d)
+    Omega_inv = Omega.inv()
+    omega = sympy.exp(2 * I * sympy.pi / d)
+    powers = [C_d ** k for k in range(d)]
+
+    def rho(M):
+        return Omega_inv * M * Omega
+
+    check(f"[T4 d={d}] C^d = I",
+          mat_eq(C_d ** d, I_d), detail="cyclic shift order")
+    check(f"[T4 d={d}] Omega^d = I",
+          mat_eq(Omega ** d, I_d), detail="clock action order")
+
+    shift_trivial = all(mat_eq(C_d * powers[k] * C_d.H, powers[k]) for k in range(d))
+    check(f"[T4 d={d}] shift-conjugation by C is trivial on Herm_circ(d)",
+          shift_trivial, detail="rules out the shift-conjugation reading")
+
+    char_ok = all(mat_eq(rho(powers[k]), (omega ** k) * powers[k]) for k in range(d))
+    check(f"[T4 d={d}] rho(C^k) = omega^k C^k for every k",
+          char_ok, detail="C^k line carries character k")
+
+    rho_order_ok = all(mat_eq(
+        Omega_inv ** d * powers[k] * Omega ** d,
+        powers[k],
+    ) for k in range(d))
+    check(f"[T4 d={d}] rho^d = id on the C-power basis",
+          rho_order_ok, detail="Z_d representation")
+
+    hermitian_preserved = all(mat_eq(rho(powers[k].H), rho(powers[k]).H) for k in range(d))
+    check(f"[T4 d={d}] rho preserves Hermiticity",
+          hermitian_preserved, detail="Omega is unitary")
+
+    pairs = [k for k in range(1, d) if k < (d - k) % d]
+    for k in pairs:
+        dk = (d - k) % d
+        B1_dk = powers[k] + powers[dk]
+        B2_dk = I * (powers[k] - powers[dk])
+        check(f"[T4 d={d}, k={k}] B1/B2 are Hermitian doublet generators",
+              mat_eq(B1_dk.H, B1_dk) and mat_eq(B2_dk.H, B2_dk),
+              detail="{C^k + C^(d-k), i(C^k - C^(d-k))}")
+
+        theta = 2 * sympy.pi * k / d
+        rot_b1 = sympy.cos(theta) * B1_dk + sympy.sin(theta) * B2_dk
+        rot_b2 = -sympy.sin(theta) * B1_dk + sympy.cos(theta) * B2_dk
+        check(f"[T4 d={d}, k={k}] rho on the Hermitian pair is planar rotation",
+              mat_eq(rho(B1_dk), rot_b1) and mat_eq(rho(B2_dk), rot_b2),
+              detail=f"angle = 2*pi*{k}/{d}")
+
+    if d % 2 == 0:
+        sign_line = powers[d // 2]
+        check(f"[T4 d={d}] even-d sign line: rho(C^(d/2)) = -C^(d/2)",
+              mat_eq(rho(sign_line), -sign_line), detail="omega^(d/2) = -1")
+    else:
+        check(f"[T4 d={d}] odd d has no sign line",
+              all(k != (d - k) % d for k in range(1, d)),
+              detail="no nonzero k equals d-k modulo d")
+
+    check(f"[T4 d={d}] trivial line: rho(I) = I",
+          mat_eq(rho(I_d), I_d), detail="character 0")
+
 # For each d in {2, 3, 4, 5, 6}, count:
 #   trivial (k = 0): always 1.
 #   doublets (conjugate pair {k, d - k} with k != d - k mod d): floor((d - 1) / 2).
@@ -348,9 +451,9 @@ print("""
     (T3)  S = log E_+ + log E_perp at fixed E_+ + E_perp = E_tot is
           extremized uniquely at E_+ = E_perp = E_tot / 2, i.e. a^2 = 2 |b|^2
           (kappa = 2); Hessian is strictly negative-definite there.
-    (T4)  The real-irrep multiplicity pattern (trivial, doublets, sign)
-          = (1, (1,), 0) on Herm_circ(d) is uniquely realized at d = 3
-          among d in {2, 3, 4, 5, 6}.
+    (T4)  Under rho(M) = Omega^{-1} M Omega, the real-irrep multiplicity
+          pattern (trivial, doublets, sign) = (1, (1,), 0) on Herm_circ(d)
+          is uniquely realized at d = 3 among d in {2, 3, 4, 5, 6}.
 
   Audit-lane class:
     (A) - pure linear algebra and elementary cyclic-group representation

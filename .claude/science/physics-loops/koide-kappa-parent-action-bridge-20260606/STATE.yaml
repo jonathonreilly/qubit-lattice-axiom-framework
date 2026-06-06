@@ -1,0 +1,18 @@
+loop_slug: koide-kappa-parent-action-bridge-20260606
+target_claim_id: koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10
+target_status: proposed_retained
+branch: physics-loop/koide-kappa-parent-action-bridge-20260606
+base: origin/main
+current_block: parent_action_bridge_repair
+trace_class: direct_blocker_closure
+artifact_role: theorem
+files_touched:
+  - docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md
+  - scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py
+  - logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt
+open_imports: []
+checks:
+  - python3 scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py --check-only --allow-non-main
+audit_files_touched: false
+next_exact_action: "Open PR for reviewer extraction and independent re-audit queueing."

@@ -16,7 +16,10 @@ that
     `E_+(H) + E_perp(H) = E_tot`, extremized at `E_+ = E_perp`,
     equivalently `a^2 = 2 |b|^2`, equivalently `kappa := a^2 / |b|^2 = 2`,
     and
-  * `(T4)` the real-irrep multiplicity pattern
+  * `(T4)` under the clock-conjugation action
+    `rho_d(M) := Omega_d^{-1} M Omega_d`, with
+    `Omega_d = diag(1, omega, ..., omega^{d-1})` and
+    `omega = exp(2 pi i / d)`, the real-irrep multiplicity pattern
     `(trivial, doublets, sign) = (1, (1,), 0)` on `Herm_circ(d)` is
     uniquely realized at `d = 3` among `d in {2, 3, 4, 5, 6}`.
 
@@ -95,11 +98,17 @@ a^2  =  2 |b|^2,    i.e.    kappa  :=  a^2 / |b|^2  =  2.                 (11)
 ```
 
 **Conclusion (T4) (`d = 3` uniqueness of the `(1, 1)` multiplicity
-pattern).**
+pattern under the clock `Z_d` action).**
 
-For `d = 2, 3, 4, 5, 6`, the real-irrep multiplicity counts of the
-`Z_d`-conjugation action on the real Hermitian circulants
-`Herm_circ(d)` are
+For `d = 2, 3, 4, 5, 6`, define
+`omega_d = exp(2 pi i / d)`,
+`Omega_d = diag(1, omega_d, ..., omega_d^{d-1})`, and the `Z_d`
+action
+```text
+rho_d(M) := Omega_d^{-1} M Omega_d.                                      (12)
+```
+The real-irrep multiplicity counts of this clock-conjugation action on
+the real Hermitian circulants `Herm_circ(d)` are
 ```text
 d = 2:  (trivial, doublets, sign)  =  (1, (), 1),
 d = 3:  (trivial, doublets, sign)  =  (1, (1,), 0),
@@ -155,13 +164,29 @@ i.e. `kappa = 2`. This is a positive interior critical point of `S`
 since `S` is strictly concave on the positive orthant (Hessian
 diagonal with negative entries `-1/E^2`).
 
-`(T4)` A Hermitian circulant `H` on `C^d` is specified by `(a_0, b_1, b_2, ..., b_{d-1})`
+`(T4)` The action in `(12)` is the nontrivial cyclic grading action,
+not conjugation by the shift `C`. Since every circulant commutes with
+`C`, shift-conjugation `M -> C M C^{-1}` is the identity on
+`Herm_circ(d)` and carries no character structure. By contrast, for the
+clock action `(12)`,
+```text
+rho_d(C^k) = Omega_d^{-1} C^k Omega_d = omega_d^k C^k,                  (13)
+```
+because `(Omega_d^{-1} C^k Omega_d)_{i,i+k} =
+omega_d^{-i} omega_d^{i+k} = omega_d^k`. Thus the complex coefficient
+line `C . C^k` carries character `k`.
+
+A Hermitian circulant `H` on `C^d` is specified by `(a_0, b_1, b_2, ..., b_{d-1})`
 with `a_0 in R` (coefficient of `I`) and `b_k = bbar_{d-k}` (so the off-diagonals
 are pairwise conjugate-related). The `b_k` parametrization gives one
-real scalar for `k = 0` (trivial), and for each conjugate pair
+real scalar for `k = 0` (trivial). For each conjugate pair
 `{k, d - k}` with `k != d - k mod d` one complex `b_k` (a 2-real-dim
-doublet), and if `d` is even one additional real scalar at `k = d/2`
-(sign irrep). Counting:
+doublet) is equivalently the real plane
+`span_R {C^k + C^{d-k}, i(C^k - C^{d-k})}`. On that plane, `(13)` is
+the real rotation by `2 pi k / d`, i.e. the real form of
+character `k` plus character `d-k`. If `d` is even, the line
+`R . C^{d/2}` has `omega_d^{d/2} = -1`, so it is the sign irrep.
+Counting:
 ```text
 trivial irreps  :  1,
 doublet irreps  :  floor((d - 1) / 2),
@@ -189,8 +214,10 @@ the positive simplex) maximum of `S` under the linear constraint.
   `E_+ = 3 a^2`, `E_perp = 6 |b|^2`.
 - `(T3)`: the equal-weight Lagrange extremum of `S = log E_+ + log E_perp`
   at fixed `E_+ + E_perp` is `kappa = 2`.
-- `(T4)`: the real-irrep multiplicity pattern `(1, (1,), 0)` is uniquely
-  realized at `d = 3` among `d in {2, 3, 4, 5, 6}`.
+- `(T4)`: under the explicit clock action
+  `rho_d(M) = Omega_d^{-1} M Omega_d`, the real-irrep multiplicity
+  pattern `(1, (1,), 0)` is uniquely realized at `d = 3` among
+  `d in {2, 3, 4, 5, 6}`.
 
 ## What this does NOT claim
 
@@ -242,10 +269,13 @@ functional ends up retained as canonical.
   — campaign-context citation only (Open derivation gap context). Not
   load-bearing on the algebraic identities `(T1)`-`(T4)`.
 
-The four conclusions themselves have zero load-bearing dependencies
-because they state only elementary Hermitian-matrix algebra on
-`Herm_circ(3)` together with the real-irrep multiplicity count for the
-`Z_d`-conjugation action.
+The four conclusions themselves are packet-contained elementary
+Hermitian-matrix algebra plus the explicit clock-action cyclic
+representation theory above. The retained sister note
+[`KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md)
+is cited as the already-audited bridge authority for the same `rho_d`
+action and character decomposition; the primary runner below also
+instantiates `rho_d` directly.
 
 ## Forbidden imports check
 
@@ -280,7 +310,7 @@ canonical extremal principle for the operator-side `kappa` gate.
 ## Validation
 
 Primary runner: [`scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py`](./../scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py)
-verifies symbolically (PASS=N/0):
+verifies symbolically (current branch: `PASS=84 FAIL=0`):
 
 1. `C^3 = I` and `tr(C) = tr(C^2) = 0` exactly.
 2. `pi_+(H) = a I`, `pi_+(H)^H = pi_+(H)`, `pi_+(pi_+(H)) = pi_+(H)`,
@@ -293,12 +323,16 @@ verifies symbolically (PASS=N/0):
    reduces to `E_+ = E_perp = E_tot / 2`, equivalently `a^2 = 2 |b|^2`
    (kappa = 2).
 7. The Hessian of `S` is strictly negative-definite at the critical point.
-8. The `Herm_circ(d)` real-irrep multiplicity count
+8. The clock action `rho_d(M) = Omega_d^{-1} M Omega_d` on
+   `Herm_circ(d)`: shift-conjugation is trivial, `rho_d(C^k) =
+   omega_d^k C^k`, conjugate Hermitian pairs form real doublets,
+   even `d` has the sign line, and `k = 0` is the trivial line.
+9. The `Herm_circ(d)` real-irrep multiplicity count
    `(trivial, doublets, sign) =
    (1, tuple([1] * floor((d - 1) / 2)), 1 if d even else 0)`
    enumerated explicitly for `d = 2, 3, 4, 5, 6`, with the table
    matching the statement.
-9. Among `d in {2, 3, 4, 5, 6}`, the pattern `(1, (1,), 0)` is realized
+10. Among `d in {2, 3, 4, 5, 6}`, the pattern `(1, (1,), 0)` is realized
    uniquely at `d = 3`.
 
 ## Cross-references
@@ -309,6 +343,10 @@ verifies symbolically (PASS=N/0):
   — sister Pattern A narrow theorem on the character / operator bridge
   identities `a_0 = sqrt(3) a`, `z = sqrt(3) b`,
   `a_0^2 - 2 |z|^2 = 3 a^2 - 6 |b|^2`.
+- [`KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md)
+  — retained sister bridge defining the same clock `Z_d` action
+  `rho_d(M) = Omega_d^{-1} M Omega_d` and proving the
+  character-`k` decomposition whose absence blocked this row.
 - `KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`
   — campaign context for the Open derivation gap on F1-vs-F3 weighting
   selection.

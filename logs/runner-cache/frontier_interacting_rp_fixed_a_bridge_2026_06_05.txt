@@ -1,0 +1,145 @@
+===== runner cache v1 =====
+runner: scripts/frontier_interacting_rp_fixed_a_bridge_2026_06_05.py
+runner_sha256: fa8fa912c133c516a69ade268be83a9e984a961b35450cc3340323ff708e12f2
+timeout_sec: 300000
+exit_code: 0
+elapsed_sec: 4.20
+status: ok
+----- stdout -----
+============================================================================
+FRONTIER: fixed-a interacting U-integrated staggered SU(3) RP bridge
+  (OS reflection-square assembly; H1 x Case-A-det x H2/RP_P2 x rung-B)
+============================================================================
+seed=20260605  mass=0.5  a_tau=1.0  tol_psd=1e-09
+
+----------------------------------------------------------------------------
+SECTION 1 -- gauge cross-cut Wilson kernel PSD (H1 factor)
+----------------------------------------------------------------------------
+  [PASS] U(1) exact Fourier c_n>0 (beta=0.5)  min c_n = 7.584e-17 (Bessel e^-b I_n(b))
+  [PASS] U(1) exact Fourier c_n>0 (beta=1.0)  min c_n = 1.911e-13 (Bessel e^-b I_n(b))
+  [PASS] U(1) exact Fourier c_n>0 (beta=2.0)  min c_n = 3.051e-10 (Bessel e^-b I_n(b))
+  [PASS] U(1) exact Fourier c_n>0 (beta=4.0)  min c_n = 2.123e-07 (Bessel e^-b I_n(b))
+  [PASS] u1 Haar-MC kernel PSD (beta=1.0)  worst min eig = 1.909e-11 (mean 2.618e-05 +/- 1.3e-05)
+  [PASS] u1 Haar-MC kernel PSD (beta=2.0)  worst min eig = 9.254e-14 (mean 2.740e-04 +/- 9.0e-05)
+  [PASS] su2 Haar-MC kernel PSD (beta=1.0)  worst min eig = 1.793e-03 (mean 3.446e-02 +/- 3.5e-03)
+  [PASS] su2 Haar-MC kernel PSD (beta=2.0)  worst min eig = 1.409e-03 (mean 1.099e-01 +/- 1.0e-02)
+  [PASS] su3 Haar-MC kernel PSD (beta=1.0)  worst min eig = 5.301e-02 (mean 2.230e-01 +/- 1.0e-02)
+  [PASS] su3 Haar-MC kernel PSD (beta=2.0)  worst min eig = 2.082e-01 (mean 4.755e-01 +/- 1.4e-02)
+----------------------------------------------------------------------------
+SECTION 2 -- fixed-background fermion 2-step positivity (H2/RP_P2 factor)
+----------------------------------------------------------------------------
+  [PASS] u1 fermion 2-step T=B^dag B, mu>0 (Ls=4,nc=1)  min mu=1.459e-01 worst|Im|=4.2e-16 min det(I+t1)=2.135 fails=0/60
+  [PASS] su2 fermion 2-step T=B^dag B, mu>0 (Ls=3,nc=2)  min mu=1.459e-01 worst|Im|=5.6e-16 min det(I+t1)=3.394 fails=0/60
+  [PASS] su3 fermion 2-step T=B^dag B, mu>0 (Ls=2,nc=3)  min mu=1.459e-01 worst|Im|=6.1e-16 min det(I+t1)=2.635 fails=0/60
+----------------------------------------------------------------------------
+SECTION 2b -- FAITHFULNESS: operator B[U] == genuine Berezin block metric
+            (anchors mu_k=e^{-2E_k} to the actual Grassmann path integral)
+----------------------------------------------------------------------------
+    lam=0.00: Berezin pos eig=0.763932, e^-2E=0.381966, ratio (=C_BLOCK)=2.000000
+    lam=0.20: Berezin pos eig=0.713451, e^-2E=0.356726, ratio (=C_BLOCK)=2.000000
+    lam=0.50: Berezin pos eig=0.535898, e^-2E=0.267949, ratio (=C_BLOCK)=2.000000
+    lam=0.90: Berezin pos eig=0.329196, e^-2E=0.164598, ratio (=C_BLOCK)=2.000000
+    lam=1.30: Berezin pos eig=0.207116, e^-2E=0.103558, ratio (=C_BLOCK)=2.000000
+    lam=2.00: Berezin pos eig=0.105556, e^-2E=0.052778, ratio (=C_BLOCK)=2.000000
+  [PASS] operator mu_k == Berezin block metric (C_BLOCK=2 exact)  worst |C_BLOCK - 2| = 4.16e-10 over 6 modes
+----------------------------------------------------------------------------
+SECTION 3 -- Case A det(M_KS+mI)>0 weight factor (re-derived check)
+----------------------------------------------------------------------------
+  [PASS] SU(3) full-lattice det(M_KS+mI)>0 (balanced 4x2x...)  min det = 7.751e-02 over 40 SU(3) configs
+----------------------------------------------------------------------------
+SECTION 4 -- THE BRIDGE: U-integrated OS reflection Gram PSD
+            (entangled T_full; H1 x det x H2 x rung-B assembled)
+----------------------------------------------------------------------------
+  [u1] dimH=64 K=8 Ls=3 nc=1 n_obs=40 (mixed 27)
+        cross-cut kernel min eig = 4.467e-06 (H1: PSD => contingent input)
+        op-Schmidt rank = 8 (>1 => genuine gauge-fermion entanglement)
+        fermion worst|Im| = 3.5e-16; min decay mu = 1.460e-01; min det = 1.843
+        herm err = 2.22e-15
+        >>> U-INTEGRATED RP GRAM min eig = -8.027288e-15 (max 7.409e+01)
+  [PASS] u1 U-integrated OS RP Gram PSD  min eig -8.027e-15
+  [PASS] u1 cross-cut kernel PSD (H1 contingent input)  min eig 4.467e-06
+  [PASS] u1 genuine entanglement (Schmidt rank>1)  rank 8
+  [PASS] u1 Gram Hermitian  err 2.2e-15
+  [su2] dimH=96 K=6 Ls=2 nc=2 n_obs=60 (mixed 42)
+        cross-cut kernel min eig = 2.819e-01 (H1: PSD => contingent input)
+        op-Schmidt rank = 5 (>1 => genuine gauge-fermion entanglement)
+        fermion worst|Im| = 4.7e-16; min decay mu = 1.505e-01; min det = 1.752
+        herm err = 1.78e-15
+        >>> U-INTEGRATED RP GRAM min eig = -5.155022e-15 (max 4.528e+01)
+  [PASS] su2 U-integrated OS RP Gram PSD  min eig -5.155e-15
+  [PASS] su2 cross-cut kernel PSD (H1 contingent input)  min eig 2.819e-01
+  [PASS] su2 genuine entanglement (Schmidt rank>1)  rank 5
+  [PASS] su2 Gram Hermitian  err 1.8e-15
+  [su3] dimH=384 K=6 Ls=2 nc=3 n_obs=76 (mixed 54)
+        cross-cut kernel min eig = 1.050e+00 (H1: PSD => contingent input)
+        op-Schmidt rank = 18 (>1 => genuine gauge-fermion entanglement)
+        fermion worst|Im| = 4.3e-16; min decay mu = 1.462e-01; min det = 2.749
+        herm err = 3.66e-15
+        >>> U-INTEGRATED RP GRAM min eig = -7.846537e-15 (max 5.416e+01)
+  [PASS] su3 U-integrated OS RP Gram PSD  min eig -7.847e-15
+  [PASS] su3 cross-cut kernel PSD (H1 contingent input)  min eig 1.050e+00
+  [PASS] su3 genuine entanglement (Schmidt rank>1)  rank 18
+  [PASS] su3 Gram Hermitian  err 3.7e-15
+----------------------------------------------------------------------------
+SECTION 5 -- CONTROLS (the test must have teeth)
+----------------------------------------------------------------------------
+  C-wrong-reflection-A (cross-cut gauge kernel forced INDEFINITE,
+                        H1 C5-style w~ = w - eps*chi; OS gauge-half breaks):
+    [u1] indefinite kernel min eig = -2.233e+01; Gram min eig = -2.242227e+02
+  [PASS] u1 C-wrong-reflection-A FIRES (Gram non-PSD)  min eig -2.242e+02 (should be < 0)
+    [su3] indefinite kernel min eig = -2.739e+01; Gram min eig = -2.664472e+01
+  [PASS] su3 C-wrong-reflection-A FIRES (Gram non-PSD)  min eig -2.664e+01 (should be < 0)
+  C-wrong-reflection-B (fermion reflection sign broken: single-step
+                        phasing in the U-integrated mixed object):
+    [u1] U-integrated SINGLE-STEP mixed Gram min eig = -2.912456e-01
+  [PASS] u1 C-wrong-reflection-B FIRES (single-step U-avg non-PSD)  min eig -2.912e-01 (should be < 0; single-step no-go survives U-avg)
+    [su3] U-integrated SINGLE-STEP mixed Gram min eig = -4.065697e-01
+  [PASS] su3 C-wrong-reflection-B FIRES (single-step U-avg non-PSD)  min eig -4.066e-01 (should be < 0; single-step no-go survives U-avg)
+  C-single-step (naive single-step Lagrangian Gram, the -0.80 no-go):
+    single-step Gram min eig = -0.8000 (9 basis elts)
+  [PASS] C-single-step FIRES (single-step Gram non-PSD)  min eig -0.8000 (documented ~ -0.80 Caracciolo-Palumbo)
+  C-entangle (entangled vs naive U-diagonal factorized; per #2399):
+    [u1] entangled-vs-diagonal relative gap = 0.5464 (diag Gram min eig = -2.665e-16)
+  [PASS] u1 C-entangle: entangled != naive-diagonal  gap 0.5464
+        (naive U-diagonal Gram min eig = -2.665e-16; PSD as a positive-measure average, but misses the cross-cut coupling)
+    [su3] entangled-vs-diagonal relative gap = 0.8312 (diag Gram min eig = -2.597e-16)
+  [PASS] su3 C-entangle: entangled != naive-diagonal  gap 0.8312
+        (naive U-diagonal Gram min eig = -2.597e-16; PSD as a positive-measure average, but misses the cross-cut coupling)
+  C-det-drop (drop det weight from the U-measure):
+    [su3] det-weighted vs flat relative gap = 0.8249
+  [PASS] su3 C-det-drop: det weight is load-bearing  gap 0.8249
+----------------------------------------------------------------------------
+SECTION 6 -- U(1) Haar-exact vs Haar-MC convergence of the RP Gram
+----------------------------------------------------------------------------
+  U(1) exact-grid RP Gram min eig   = -1.968900e-15
+  U(1) Haar-MC   RP Gram min eig    = -8.336440e-16 +/- 9.1e-17
+  [PASS] U(1) exact RP Gram PSD  min eig -1.969e-15
+  [PASS] U(1) MC RP Gram PSD (within error)  min eig -8.336e-16 +/- 9.1e-17
+----------------------------------------------------------------------------
+SECTION 7 -- DECISIVE: DIRECT full path-integral RP Gram <Theta(A)A>
+            (Berezin + det-weighted Haar-U-avg; reflection relates the
+             two halves' links; NO operator-form / transfer assumption)
+----------------------------------------------------------------------------
+  [u1] direct PI RP Gram: nt=2 Ls=2 nc=1 basis=12 cfg=4000
+        herm err = 2.84e-17; >>> DIRECT RP GRAM min eig = 1.612888e-02
+  [PASS] u1 DIRECT path-integral RP Gram PSD  min eig 1.613e-02 (genuine path integral, no operator assumption)
+  [su2] direct PI RP Gram: nt=1 Ls=2 nc=2 basis=12 cfg=3000
+        herm err = 6.99e-18; >>> DIRECT RP GRAM min eig = 2.137804e-01
+  [PASS] su2 DIRECT path-integral RP Gram PSD  min eig 2.138e-01 (genuine path integral, no operator assumption)
+  [su3] direct PI RP Gram: nt=1 Ls=2 nc=3 basis=18 cfg=2500
+        herm err = 6.79e-18; >>> DIRECT RP GRAM min eig = 1.763921e-01
+  [PASS] su3 DIRECT path-integral RP Gram PSD  min eig 1.764e-01 (genuine path integral, no operator assumption)
+  (teeth for the DIRECT object: the SAME det-weighted Haar path-integral
+   Gram with the WRONG single-step reflection is NON-PSD -- see
+   C-wrong-reflection-B above: U(1) -0.29, SU(3) -0.41, and the fixed-U
+   single-step no-go C-single-step -0.80.  So the direct PI PSD result is
+   specifically contingent on the correct 2-step OS reflection.)
+============================================================================
+SCORECARD PASS=40 FAIL=0
+PEAK RSS = 0.066 GB
+============================================================================
+
+[wrote log to /private/tmp/cl3-review-loop-open-20260605b/logs/runner-cache/frontier_interacting_rp_fixed_a_bridge_2026_06_05.txt]
+
+----- stderr -----
+

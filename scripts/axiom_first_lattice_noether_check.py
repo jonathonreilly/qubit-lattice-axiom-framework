@@ -31,7 +31,7 @@ the same Noether structure for U(1) ⊂ SU(3)):
 
   E5.  Algebraic closure (5) -> (4): under U(1) phase substitution
        T = i I, the bilateral current formula (5) reduces to the
-       fermion-number current (4) up to the convention factor -i.
+       fermion-number current (4) up to the convention factor +i.
 
   E6.  Support-only verification of (3): the canonical staggered sublattice-
        momentum density P^μ_x = -(i/2) η_μ(x) [χ̄_x ∂^L_μ χ_x -
@@ -256,7 +256,7 @@ def exhibit_E5(L=4, dim=3, mass=0.3, tol=1e-12):
 
     # (5) for U(1) phase generator T = i*I gives:
     #   J^mu_x = (i/2) eta_mu(x) [chibar_x chi_{x+mu} + chibar_{x+mu} chi_x]
-    # The convention-real fermion-number current (4) is -i times this:
+    # The convention-real fermion-number current (4) is +i times this:
     #   J^mu_x_real = -(1/2) eta_mu(x) [chibar_x chi_{x+mu} + chibar_{x+mu} chi_x]
     # Verify: under the U(1) phase substitution into (5) above, the resulting
     # bilateral form matches (4) exactly.
@@ -274,12 +274,19 @@ def exhibit_E5(L=4, dim=3, mass=0.3, tol=1e-12):
             #        = (i/2) eta * [G(xp,x) + G(x,xp)]   (with G = M^-1)
             J5 = 0.5j * eta * (Minv[ip, i] + Minv[i, ip])
             # The convention-real version:
-            J5_real = -1j * J5
+            J5_real = 1j * J5
             # The (4) form:
             J4 = -0.5 * eta * (Minv[ip, i] + Minv[i, ip])
             closure_max = max(closure_max, abs(J5_real - J4))
             n_sites += 1
+    symbolic_bilinear = 1.0
+    symbolic_j5 = 0.5j * symbolic_bilinear
+    symbolic_j4 = -0.5 * symbolic_bilinear
+    symbolic_err = abs(1j * symbolic_j5 - symbolic_j4)
+    closure_max = max(closure_max, symbolic_err)
+
     print(f"  L={L}, dim={dim}, mass={mass}, sites checked={n_sites}")
+    print(f"  symbolic nonzero bilinear convention error = {symbolic_err:.3e}")
     print(f"  max |J5_real - J4| = {closure_max:.3e}  (target: 0 to machine precision)")
     e5_pass = closure_max < tol
     print(f"  Bilateral (5) under T = i I closes algebraically to (4):")

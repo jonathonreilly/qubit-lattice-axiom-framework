@@ -21,4 +21,6 @@ from the unnormalized Kraus unvectorization statement.
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2745
+
+Initial pushed commit: `bb19d9b93`.

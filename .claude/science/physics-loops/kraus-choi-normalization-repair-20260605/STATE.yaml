@@ -28,6 +28,7 @@ checks:
   - "python3 -m py_compile scripts/kraus_choi_normalization_convention_check_2026_06_05.py"
   - "python3 scripts/precompute_audit_runners.py --runners scripts/kraus_choi_normalization_convention_check_2026_06_05.py --force --push-mode=none --allow-non-main --concurrency 1"
 review_disposition: pass
-pr_url: pending
-next_exact_action: "Commit, push, and open the review PR."
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2745
+pushed_commit: bb19d9b93
+next_exact_action: "Reviewer can inspect PR #2745; campaign can pivot to the next conditional audit-unblock target."
 stop_condition: "Block complete after PR creation and verification."

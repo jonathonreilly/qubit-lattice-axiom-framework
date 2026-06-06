@@ -14,11 +14,11 @@ separately admitted and scoped.
 
 ## PR
 
-Pending.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2816
 
 ## Verification
 
-Planned before PR:
+Completed before PR:
 
 ```bash
 python3 scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py
@@ -29,6 +29,6 @@ git diff --check
 
 ## Next Action
 
-After PR verification, pivot to a positive dynamics lane from
+Verify PR state, then pivot to a positive dynamics lane from
 `OPPORTUNITY_QUEUE.md`, preferably record-production dynamics or stable dial
 location.

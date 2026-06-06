@@ -29,6 +29,7 @@ no_go_routes:
   - "Atomic weaker stability bound d <= 4 alone cannot select d = 3 from lower runner set {3,4,5}."
 trace_gate_classification: upstream_support
 review_disposition: pass
-pr_status: pending
-next_exact_action: "Run cache/checks, commit, push, open PR, verify PR, then pivot to the next campaign lane."
+pr_status: open
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2816"
+next_exact_action: "Verify PR state, then pivot to the next campaign lane."
 stop_condition: "Do not stop after this block unless the 12-hour runtime is exhausted or every viable queued target is blocked."

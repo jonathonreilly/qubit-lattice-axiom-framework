@@ -1,0 +1,33 @@
+loop_slug: record-history-time-rate-firewall-20260605
+campaign: "12h physics-loop campaign down framework lanes"
+campaign_started_utc: "2026-06-06T01:39:56Z"
+campaign_deadline_utc: "2026-06-06T13:39:56Z"
+current_goal: "Separate record history/order and per-step kernels from physical time/rate normalization."
+target_status: bounded-support
+cycle_count: 11
+active_route: "record word order and supplied step kernels versus clock/rate bridge"
+hard_residual: "Clock map, physical step duration, production law, continuous-time generator, rates, and measurement Hamiltonian remain outside record history/count dynamics."
+branch: physics-loop/record-history-time-rate-firewall-20260605
+base_branch: physics-loop/record-instrument-kernel-interface-20260605
+files_touched:
+  - docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md
+  - scripts/frontier_record_history_time_rate_firewall_2026_06_05.py
+  - logs/runner-cache/frontier_record_history_time_rate_firewall_2026_06_05.txt
+  - .claude/science/physics-loops/record-history-time-rate-firewall-20260605/
+open_imports:
+  - "Physical clock map from record-step index to time."
+  - "Production law or measurement Hamiltonian fixing step duration."
+  - "Continuous-time generator or rate normalization."
+  - "Decoherence/formation dynamics beyond supplied instrument/kernel."
+no_go_routes:
+  - "History length is not physical time."
+  - "Counts per step are not physical rates without a clock."
+  - "A step kernel does not fix a continuous-time generator."
+  - "Unbounded retention is not unlimited metric duration."
+trace_gate_classification: negative_route_pruning
+trace_reachability: prunes
+claim_status: bounded-support
+review_findings: "Local runner and wording review clean. Checks: SCORECARD PASS=40 FAIL=0; py_compile clean; git diff --check clean."
+pr_status: "pending"
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Do not stop campaign after this block while runtime remains."

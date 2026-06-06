@@ -1,0 +1,22 @@
+loop_slug: flavor-carrier-two-inputs-scope-20260606
+goal: "Repair FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS source so it preserves finite math while avoiding carrier/basepoint overclaim."
+target_status: bounded-support
+runtime: local_repair_cycle
+cycle_count: 1
+active_route: bare_character_derivation_no_go
+hard_residual: "Derive the physical charged-lepton carrier and r=1/2 basepoint without importing species-to-flavor or section choice."
+files_touched:
+  - docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md
+  - scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py
+  - logs/runner-cache/flavor_carrier_not_derived_two_inputs_2026_05_31.txt
+open_imports:
+  - physical carrier / species-to-flavor identification
+  - physical basepoint / section selection
+  - continuum or physical eta interpretation beyond finite doublet determinant arithmetic
+no_go_routes:
+  - "2/9 as a bare C3 representation character"
+trace_gate_classification: negative_route_pruning
+review_findings: "Pending independent review-loop/reviewer extraction."
+pr_status: pending
+next_exact_action: "Open PR for reviewer/auditor re-check."
+stop_condition: "PR opened with source repair and no audit edits."

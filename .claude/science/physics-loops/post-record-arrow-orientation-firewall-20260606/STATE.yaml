@@ -1,0 +1,66 @@
+loop_slug: post-record-arrow-orientation-firewall-20260606
+campaign: physics-loop-campaign-down-lanes-20260605
+cycle: 16
+date: 2026-06-06
+branch: physics-loop/post-record-arrow-orientation-firewall-20260606
+base: physics-loop/post-record-stability-dynamics-selector-subdivision-20260606
+stacked_on_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2837"
+goal: |
+  Prove the exact count-only firewall for deriving physical arrow orientation
+  or a production kernel from post-record information.
+target_status: no-go
+runtime_used: campaign-continuation
+cycles_completed: 1
+active_route: finite reversal/count no-go
+hard_residual_attacked: |
+  The arrow_or_dynamics_bridge rows need a bridge because post-record counts
+  and count-law certificates are invariant under reversal unless an oriented
+  law, boundary condition, clock, or production kernel is supplied.
+files_touched:
+  - docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md
+  - scripts/frontier_post_record_arrow_orientation_firewall_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_arrow_orientation_firewall_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-arrow-orientation-firewall-20260606/*
+runner_summary: "SUMMARY: PASS=43 FAIL=0"
+firewall_results:
+  post_record_counts_orient_physical_arrow: false
+  count_pushforward_reversal_invariant: true
+  physical_arrow_derived_from_record: false
+  production_kernel_selected: false
+  stable_setting_selects_dial: false
+  generation_or_koide_dial_selected: false
+open_imports:
+  - "oriented law or boundary condition for physical arrow"
+  - "clock/rate or production kernel for dynamics calibration"
+  - "Hamiltonian, transfer operator, or instrument bridge for physical formation"
+  - "independent audit remains required for verdicts"
+  - "PR is stacked on the stability/dynamics subdivision companion"
+no_go_routes:
+  - "post-record count state => physical arrow orientation"
+  - "count-law concentration certificate => physical arrow orientation"
+  - "post-record count state => production kernel selection"
+  - "stable setting => selected dial"
+review_findings: "local review clean: runner PASS=43 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack has 13 files; git diff --check clean"
+pr_status: pending
+pr_url: null
+pr_number: null
+cycle_status: local_review_clean
+mergeable: null
+merge_state_status: null
+checks: "runner PASS=43 FAIL=0; py_compile clean; cached summary present; ASCII clean; overclaim scan clean; loop pack count 13; git diff --check clean"
+next_exact_action: |
+  Commit, push, and open a stacked PR against the stability/dynamics
+  subdivision branch.
+stop_condition: |
+  Not satisfied: PR is not open yet.
+status_fields:
+  actual_current_surface_status: no-go
+  trace_class: negative_route_pruning
+  reachability_to_target: prunes
+  conditional_surface_status: "post-record counts can support realized information and count certificates; they cannot orient a physical arrow or select a production kernel without a supplied bridge"
+  hypothetical_axiom_status: null
+  admitted_observation_status: null
+  proposal_allowed: false
+  proposal_allowed_reason: "This branch proves a no-go/firewall, not a positive retained-grade theorem."
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false

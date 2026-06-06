@@ -1,0 +1,30 @@
+loop_slug: record-dynamics-koide-dial-firewall-20260605
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 16
+current_goal: "Apply the dynamics gate ladder to the Koide/generation dial without forcing a dial setting."
+target_status: no-go
+actual_current_surface_status: no-go
+active_route: "record dynamics registers supplied stable dial settings but does not select the dial location"
+hard_residual: "Dial selector remains external to record dynamics."
+branch: physics-loop/record-dynamics-koide-dial-firewall-20260605
+base_branch: physics-loop/record-dynamics-audit-gate-ladder-20260605
+stacked_on_pr: 2786
+files_touched:
+  - docs/RECORD_DYNAMICS_KOIDE_DIAL_FIREWALL_2026-06-05.md
+  - scripts/frontier_record_dynamics_koide_dial_firewall_2026_06_05.py
+  - logs/runner-cache/frontier_record_dynamics_koide_dial_firewall_2026_06_05.txt
+  - .claude/science/physics-loops/record-dynamics-koide-dial-firewall-20260605/
+open_imports:
+  - "Dial selector / stable setting source."
+  - "Produced record for a supplied setting."
+  - "Any Koide/generation value derivation."
+no_go_routes:
+  - "Record history selects Koide/generation dial."
+  - "Reset or epsilon dynamics fixes the dial."
+  - "Stable readout equals selected location."
+trace_gate_classification: negative_route_pruning
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.py
+runner_sha256: 6b876b19b5010686ad73dde9131c8911d5fd7635aa6cd073a0b4d2d5dba568a8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -59,3 +67,6 @@ GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
+
+----- stderr -----
+

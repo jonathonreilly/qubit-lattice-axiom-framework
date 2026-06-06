@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 697 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1294 |
+| unaudited | 1293 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 65 |
+| ~~audited_conditional~~ | 66 |
 | ~~audited_failed~~ | 12 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1097 |
-| `audited_conditional` | 65 |
+| `audited_conditional` | 66 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 56 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1601 |
+| `unaudited` | 1600 |
 
 | claim_type | count |
 |---|---:|
@@ -1285,6 +1285,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_dynamics_authority_stack_map_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `post_record_selection_rule_target_vector_firewall_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13865,6 +13866,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The current dynamics artifacts are bounded because each exact certificate is over a finite object, and exact enumeration over those objects does not by itself provide a law over an unbounded family.  _(class `E`)_
 - **chain closes:** True — For the audited narrow scope, the packet closes as an internal gate definition: the note defines the rows and the runner checks those rows, statuses, PR-number references, and firewall flags. It does not independently verify the upstream dynamics authorities or derive retained/unbounded authority from an axiom.
 - **rationale:** The only quantitative/table claims in the restricted packet are structural: eight gate rows, listed PR numbers, open/exact-support statuses, and false firewall flags. The runner hard-codes the GateRow entries and firewall booleans, then checks document presence and consistency; it does not instantiate framework primitives or derive the gate map from cited retained inputs. The load-bearing move is therefore a definition of gates and blockers, not a class C derivation or retained-grade theorem.
+- **auditor confidence:** high
+
+### `post_record_selection_rule_target_vector_firewall_2026-06-06`
+
+- **Note:** [`POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md`](../../docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the finite two-kernel supplied selection-rule witness showing weight-dependent kernel selection for a fixed target, plus blocking when target or positive weights are absent.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-ecf8701ce5-post_record_selection_rule_t`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The same rational target vector can select different kernels under different supplied weight choices, so the target vector and loss weights are supplied rule data rather than consequences of the post-record words alone.  _(class `A`)_
+- **chain closes:** False — The exact rational score computation is correct for the displayed supplied-rule example. The broader Record-alone no-go does not close from this restricted packet because no Record axiom content or retained selection-rule authority is provided, and the runner hard-codes the absence/blocking flags rather than deriving them from Record.
+- **rationale:** Independent recomputation confirms the runner's finite rational witness: k4 wins under endpoint-heavy weights and k3 wins under second-coordinate-heavy weights for the same target. That proves weight dependence inside the supplied scoring rule, but not that Record cannot derive targets or weights in general. The no-go discipline check leaves open routes through a Record axiom statement, a retained bridge theorem, a canonical weighting convention, or a narrowed interface theorem not present in the packet.
 - **auditor confidence:** high
 
 ### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`

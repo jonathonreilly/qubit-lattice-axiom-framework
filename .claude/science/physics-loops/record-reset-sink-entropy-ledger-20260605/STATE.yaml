@@ -1,0 +1,32 @@
+loop_slug: record-reset-sink-entropy-ledger-20260605
+campaign: physics-loop-campaign-down-lanes-20260605
+runtime_budget: 12h
+cycle_index: 10
+current_goal: "Provide the finite sink-memory entropy ledger exposed by reset-with-sink."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+active_route: "finite support/cardinality accounting for exported old fragment memory"
+hard_residual: "Thermodynamic cost, sink blankness, physical reset dynamics, and clock/rate normalization remain open."
+branch: physics-loop/record-reset-sink-entropy-ledger-20260605
+base_branch: physics-loop/record-reset-with-sink-conditional-20260605
+stacked_on_pr: 2775
+files_touched:
+  - docs/RECORD_RESET_SINK_ENTROPY_LEDGER_2026-06-05.md
+  - scripts/frontier_record_reset_sink_entropy_ledger_2026_06_05.py
+  - logs/runner-cache/frontier_record_reset_sink_entropy_ledger_2026_06_05.txt
+  - .claude/science/physics-loops/record-reset-sink-entropy-ledger-20260605/
+open_imports:
+  - "Sink blankness / preparation."
+  - "Thermodynamic reset cost law."
+  - "Physical open-system reset dynamics."
+  - "Clock/rate normalization."
+no_go_routes:
+  - "Clean reset without sink or blank boundary."
+  - "Sink construction erases old memory."
+  - "Discard/reblank sink is reversible in finite labels."
+  - "Entropy ledger fixes a dial location."
+trace_gate_classification: upstream_support
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Continue campaign until runtime budget or global queue exhaustion."

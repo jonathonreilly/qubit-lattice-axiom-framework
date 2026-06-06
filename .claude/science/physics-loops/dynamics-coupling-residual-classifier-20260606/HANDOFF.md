@@ -5,6 +5,12 @@
 Checks passed. This block is based on `origin/main` and targets the coupling /
 rate residual of record-preserving dynamics.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2801
+
+GitHub verification: open PR, base `main`, head
+`physics-loop/dynamics-coupling-residual-classifier-20260606`, merge state
+`UNSTABLE`.
+
 ## Intended Result
 
 Record preservation can constrain an allowed class, but leaves coupling
@@ -19,7 +25,7 @@ open.
 
 ## Next Action
 
-Commit, push, open PR, then continue campaign.
+Continue campaign: select next high-leverage dynamics/open-lane block.
 
 ## Verification
 

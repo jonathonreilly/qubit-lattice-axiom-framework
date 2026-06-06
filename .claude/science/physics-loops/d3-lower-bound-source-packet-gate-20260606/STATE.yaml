@@ -24,5 +24,6 @@ review_loop_disposition: pass
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-pr_url: pending
-next_exact_action: "Commit, push, open PR, record PR URL, then pivot to the next campaign lane."
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2806
+pr_status: "open; base main; head physics-loop/d3-lower-bound-source-packet-gate-20260606; mergeable MERGEABLE; mergeStateStatus UNSTABLE while audit_pipeline is QUEUED"
+next_exact_action: "Pivot to the next campaign lane from origin/main."

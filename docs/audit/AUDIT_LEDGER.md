@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 710 |
+| **retained_bounded** | 711 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1315 |
+| unaudited | 1314 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1120 |
+| `audited_clean` | 1121 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1622 |
+| `unaudited` | 1621 |
 
 | claim_type | count |
 |---|---:|
@@ -412,6 +412,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -5771,6 +5772,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The same central idempotents admit positive C3-invariant metric families with different trivial:standard energy ratios, so K0 counts the two blocks but does not by itself select an energy weighting.  _(class `A`)_
 - **chain closes:** True — The finite algebra closes: the real regular C3 representation splits into rank-1 and rank-2 central projectors, R[C3] is R(+)C with K0 rank 2, and G=w_triv P_triv+w_std P_std is positive and C3-invariant for arbitrary positive weights. The stated Gaussian also gives <a^2>=<|b|^2>, while equal-block weighting is a separate imposed constraint.
 - **rationale:** The bounded claim is a finite algebraic statement inside the stated real regular C3 packet, not a closure of rounds 1-3. Independent checks confirm the projector ranks, the standard R[C3]=R(+)C / K0=Z^2 block count, and the existence of invariant positive metric families with nonunique sector ratios. That is sufficient to show the tested block-count route does not force det_C/r=1/2. The runner states some constants, but the load-bearing non-forcing result is independently closed by the restricted finite algebra.
+- **auditor confidence:** high
+
+### `flavor_find_j_round1_jcs_measure_neutral_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3 matrix-algebra check that static J_cs=(C-C^2)/sqrt(3) is a valid doublet complex structure but is measure-neutral and distinct from Gamma_chi within the stated static packet.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260606-234559-e7d4176eae-flavor_find_j_round1_jcs_mea`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** exp(theta J_cs) is an SO(2) rotation on the real doublet plane, preserves the Hilbert-Schmidt block metric 6I, has determinant one, and therefore does not select between real and holomorphic doublet measure conventions.  _(class `A`)_
+- **chain closes:** True — The displayed matrices give J_cs^2=-P_doublet, [J_cs,C]=0, Gamma_chi^2=I with Gamma_chi not equal or proportional to J_cs, and exp(theta J_cs) restricts to an orientation-preserving SO(2) action on the doublet. Those algebraic facts are enough for the bounded negative conclusion that static J_cs alone supplies no measure-selection lever.
+- **rationale:** The load-bearing step is a direct finite-dimensional algebraic identity check, not a renaming, external comparison, or tuned numerical match. The runner source actually constructs the C3 permutation, J_cs, Gamma_chi, and P_doublet and checks the relevant commutators, squares, eigenvalue structure, metric preservation, and determinant behavior. The only caveat is scope: the clean result is bounded to static J_cs algebra and does not derive any Q default, det_C readout, or dynamical/Berezin bridge.
 - **auditor confidence:** high
 
 ### `flavor_find_j_round3_dirac_generation_blind_2026-06-02`

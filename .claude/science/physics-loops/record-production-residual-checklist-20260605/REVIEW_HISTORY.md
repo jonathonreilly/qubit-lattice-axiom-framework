@@ -11,3 +11,9 @@
 - Hygiene: `git diff --check` passed.
 - Wording: targeted production/local-observability/rate/selector/status sweep
   returned no hits.
+- PR verification:
+  `gh pr view 2762 --json number,title,state,baseRefName,headRefName,url,mergeStateStatus,isDraft`
+  returned open PR #2762 with base
+  `physics-loop/record-history-time-rate-firewall-20260605`, head
+  `physics-loop/record-production-residual-checklist-20260605`, and
+  `mergeStateStatus: UNSTABLE`.

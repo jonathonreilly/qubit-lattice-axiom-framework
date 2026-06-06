@@ -4,6 +4,8 @@
 
 Bounded-support / audit-checklist block ready for stacked review.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2762
+
 ## Main Finding
 
 Kernel, produced record, post-record history, local observability, and clocked
@@ -19,6 +21,5 @@ artifact.
 
 ## Next Exact Action
 
-Open stacked PR against
-`physics-loop/record-history-time-rate-firewall-20260605`, then patch this loop
-pack with the PR URL.
+Campaign pivot: select the next ranked science lane while #2762 receives
+review/checks.

@@ -1,0 +1,32 @@
+loop_slug: record-blank-boundary-reset-no-go-20260605
+campaign: "12h physics-loop campaign down framework lanes"
+campaign_started_utc: "2026-06-06T01:39:56Z"
+campaign_deadline_utc: "2026-06-06T13:39:56Z"
+current_goal: "Prove the blank-boundary/reset no-go for clean closed-unitary broadcast."
+target_status: no-go
+cycle_count: 16
+active_route: "closed finite-unitary clean reset from arbitrary fragment states"
+hard_residual: "Blank boundary, erasure/reset sink, thermodynamic cost, physical production Hamiltonian, and clock/rate normalization remain open."
+branch: physics-loop/record-blank-boundary-reset-no-go-20260605
+base_branch: physics-loop/record-pointer-broadcast-hamiltonian-20260605
+files_touched:
+  - docs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md
+  - scripts/frontier_record_blank_boundary_reset_no_go_2026_06_05.py
+  - logs/runner-cache/frontier_record_blank_boundary_reset_no_go_2026_06_05.txt
+  - .claude/science/physics-loops/record-blank-boundary-reset-no-go-20260605/
+open_imports:
+  - "Blank-fragment preparation principle."
+  - "Erasure/reset dynamics with explicit sink/environment."
+  - "Thermodynamic cost ledger."
+  - "Physical production Hamiltonian plus boundary condition."
+no_go_routes:
+  - "Closed finite-unitary clean reset without sink."
+  - "Fanout removes old fragment memory by itself."
+  - "Hamiltonian witness supplies blank fragments."
+trace_gate_classification: negative_route_pruning
+trace_reachability: prunes
+claim_status: no-go
+review_findings: "Local runner and wording review clean. Checks: SCORECARD PASS=31 FAIL=0; py_compile clean; git diff --check clean."
+pr_status: "pending"
+next_exact_action: "Commit, push, and open stacked PR."
+stop_condition: "Do not stop campaign after this block while runtime remains."

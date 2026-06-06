@@ -20,4 +20,4 @@ manifest so both primary-runner artifact blockers are reauditable.
 
 ## PR
 
-Pending.
+Open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2779

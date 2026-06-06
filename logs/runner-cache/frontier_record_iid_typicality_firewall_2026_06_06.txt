@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_iid_typicality_firewall_2026_06_06.py
+runner_sha256: c48baceb7166281e589572b42cb0b8a4a24ff27dfb81a7465c356891759a2d84
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
 Record IID/typicality firewall
 actual_current_surface_status: no-go
 trace_class: direct_blocker_closure
@@ -39,3 +47,6 @@ E. boundary firewalls
 
 SCORECARD: PASS=22 FAIL=0
 VERDICT: exact no-go for deriving IID/typicality from a one-shot record-production probability vector. Same one-step marginals can have different joint and frequency laws.
+
+----- stderr -----
+

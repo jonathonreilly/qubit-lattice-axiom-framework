@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 197 |
-| **retained_no_go** | 209 |
+| **retained_no_go** | 210 |
 | **retained_bounded** | 702 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1278 |
+| unaudited | 1277 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 31 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1106 |
+| `audited_clean` | 1107 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 60 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1585 |
+| `unaudited` | 1584 |
 
 | claim_type | count |
 |---|---:|
@@ -955,6 +955,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14571,6 +14572,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For any finite union of sectors A, with indicator vector chi_A, I(A) = chi_A . v; if A and B are disjoint, I(A union B) = I(A) + I(B).  _(class `A`)_
 - **chain closes:** True — Given a supplied finite partition and finite additivity, every finite union decomposes as a disjoint sum of sectors, so the indicator-dot-product formula and disjoint-union law follow. The coarse-graining, ratio invariance, C3 power sums, Q formula, and endpoints are standard finite algebra under the note's explicit nonzero/positive-denominator assumptions; no probability or dynamics is inferred.
 - **rationale:** The independent formula inventory checks out: 4-sector ordered disjoint pairs are 3^4 = 81; partition incidence matrices preserve total readout via 1_m C = 1_n; normalized coordinates and raw ratios are scale-invariant with nonzero denominators; and the C3 character sums give sum_k lambda_k = 3a and sum_k lambda_k^2 = 3a^2 + 6|b|^2, hence Q = 1/3 + 2r/3 and the stated endpoints. The runner source is not a print-only harness and has no helper imports or external comparator data; its 21 checks are symbolic algebra checks consistent with the note. The supplied generation readout and C3/K-real form are treated only as scoped structural inputs, not as derived probability, occupancy, dynamics, or measured-mass claims.
+- **auditor confidence:** high
+
+### `record_iid_typicality_firewall_2026-06-06`
+
+- **Note:** [`RECORD_IID_TYPICALITY_FIREWALL_2026-06-06.md`](../../docs/RECORD_IID_TYPICALITY_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** A one-step probability vector alone does not determine an IID sequence law or the resulting two-record count/typicality distribution.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-01ca6632b7-record_iid_typicality_firewa`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Two exact two-record joint laws have the same one-step marginals p=(2/3,1/3) but different count/frequency distributions.  _(class `A`)_
+- **chain closes:** True — The packet gives an explicit finite-probability counterexample: the IID and locked couplings share both one-step marginals but yield different N_0 distributions and variances. Therefore the claimed shortcut from one-shot probabilities to IID frequencies is invalid without an added sequence law.
+- **rationale:** The load-bearing step is an elementary algebraic counterexample, not a definition substitution or tuned numerical match. Independent recomputation confirms the displayed marginals, count laws, expectations, and variances. The clean no-go is narrow: it blocks only deriving IID/frequency/typicality from the one-step vector alone, while leaving supplied sequence-law routes open.
 - **auditor confidence:** high
 
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`

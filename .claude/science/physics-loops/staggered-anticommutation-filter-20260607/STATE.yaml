@@ -1,0 +1,31 @@
+loop_slug: staggered-anticommutation-filter-20260607
+date: 2026-06-07
+branch: physics-loop/staggered-anticommutation-filter-20260607
+base: origin/main
+current_goal: "Attack the first chirality-resolution target: can multi-loop graded-net consistency force CAR and hence supply the staggered anticommutation filter?"
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: multi_loop_exchange_cocycle_consistency
+cycle_count: 1
+block_count: 1
+hard_residual: "A native selector for the global exchange sign q in {+1,-1} remains missing."
+files_touched:
+  - docs/STAGGERED_ANTICOMMUTATION_FILTER_COCYCLE_NO_GO_NOTE_2026-06-07.md
+  - scripts/frontier_staggered_anticommutation_filter_cocycle_no_go_2026_06_07.py
+  - logs/runner-cache/frontier_staggered_anticommutation_filter_cocycle_no_go_2026_06_07.txt
+  - .claude/science/physics-loops/staggered-anticommutation-filter-20260607/
+open_imports:
+  - "Global exchange sign selector q=-1 if CAR is required."
+  - "Graded-locality/spin-statistics reconstruction if used to select q=-1."
+  - "Chiral anticommutation {D,gamma5}=0 if used downstream to force epsilon."
+no_go_routes:
+  - "Multi-loop Coxeter/braid consistency forcing CAR."
+  - "Single-valued abelian exchange cocycle forcing q=-1."
+runner_result: "PASS=18 FAIL=0"
+review_loop_disposition: pass
+audit_results_modified: false
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3135"
+next_exact_action: "Pivot to canonical orientation/source-section route in a new branch."
+stop_condition: "Route 1 pruned; pivot to canonical orientation/source-section theorem next."

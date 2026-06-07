@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 718 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1302 |
+| unaudited | 1301 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1131 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1609 |
+| `unaudited` | 1608 |
 
 | claim_type | count |
 |---|---:|
@@ -1275,6 +1275,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `fifth_family_radial_repaired_positive_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_a1prime_debt_and_data_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_asymmetry_identification_principled_not_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5587,6 +5588,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `scripts/FIFTH_FAMILY_RADIAL_BASIN.py_import_error_missing__build_radial_shell_connectivity`
   - `scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py_import_error_missing__build_radial_shell_connectivity`
   - `live_runner_output_not_reproducible`
+- **auditor confidence:** high
+
+### `fifth_family_radial_repaired_positive_packet_note_2026-05-29`
+
+- **Note:** [`FIFTH_FAMILY_RADIAL_REPAIRED_POSITIVE_PACKET_NOTE_2026-05-29.md`](../../docs/FIFTH_FAMILY_RADIAL_REPAIRED_POSITIVE_PACKET_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite ten-row radial-shell basin check over drifts [0.05, 0.10, 0.20, 0.30, 0.40] and seeds [0, 1], plus the stated two-row F~M transfer companion check.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-001408-47bf6e89ef-fifth_family_radial_repaired`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the live no-restore grown-slice harness, four sampled radial-shell rows pass the finite zero-source, neutral-cancellation, sign-orientation, and exponent gates, and the two historically cited positive rows pass the dedicated F~M transfer check.  _(class `C`)_
+- **chain closes:** False — The provided primary runner and cache substantively compute the ten-row basin portion, and the table values independently satisfy exactly the four stated pass rows under the declared gates. The F~M transfer portion does not close in the restricted packet because the companion runner source/cache is not provided for verification.
+- **rationale:** The primary runner instantiates the no-restore grown geometry, rebuilds radial-shell connectivity, measures zero/plus/minus/neutral/double responses, and computes pass rows rather than merely printing constants. An independent gate check from the cached numeric table gives exactly the four basin pass rows claimed: (0.05,0), (0.10,0), (0.30,0), and (0.30,1), with the 0.20 seed 0 row failing by sign orientation. However, the bounded claim also includes the dedicated two-row F~M transfer check, and that companion runner's source/cache is absent from the restricted packet, so that load-bearing component remains an unverified runner artifact assertion.
 - **auditor confidence:** high
 
 ### `fine_h_family_universality_note`

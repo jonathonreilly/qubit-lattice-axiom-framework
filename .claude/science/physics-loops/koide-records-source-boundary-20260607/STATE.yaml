@@ -1,0 +1,18 @@
+loop: koide-records-source-boundary-20260607
+target_claim_id: koide_records_objectivity_conditional_note_2026-05-31
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: Record-era source-boundary clarification
+files_touched:
+  - docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md
+  - scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py
+  - logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt
+open_imports:
+  - equal-block metric
+  - records/objectivity maximization selector
+runner_result: "13/13 checks passed"
+audit_files_touched: false
+next_exact_action: derive one or both inputs, or keep the row as conditional bounded algebra
+

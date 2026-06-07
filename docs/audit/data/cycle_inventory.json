@@ -207,10 +207,10 @@
       "max_transitive_descendants": 4,
       "nodes": [
         {
-          "audit_status": "unaudited",
+          "audit_status": "audited_conditional",
           "claim_id": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
           "claim_type": "open_gate",
-          "effective_status": "unaudited",
+          "effective_status": "audited_conditional",
           "note_path": "docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md",
           "title": "Quark Mass Spectrum Koide-Scheme Open Gate",
           "transitive_descendants": 4

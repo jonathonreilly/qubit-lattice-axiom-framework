@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 203 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 728 |
+| **retained_bounded** | 729 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1269 |
+| unaudited | 1268 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1144 |
+| `audited_clean` | 1145 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1578 |
+| `unaudited` | 1577 |
 
 | claim_type | count |
 |---|---:|
@@ -1043,6 +1043,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_driven_field_recovery_h025_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_driven_field_recovery_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `source_resolved_generated_architecture_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_generated_bridge_failure_audit` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
@@ -15820,6 +15821,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The standard exponential formula for set partitions says that the generating function for connected components is the logarithm: K[J] = log M[J].  _(class `A`)_
 - **chain closes:** True — The Mobius cumulant formula, the log moment-generating function identity, the n=3 cumulant formula, independence cancellation, and the p-scale two-point normalization all close algebraically. The downstream physical identification of the scalar P-cal response with connected source response is explicitly outside this scoped theorem.
 - **rationale:** The load-bearing step is a standard algebraic Mobius/exponential-formula identity, not a numerical fit, external comparator, or symbol renaming. The runner source materially computes the partition-lattice n=3 Mobius formula, verifies independence cancellation, differentiates log moment generators, and checks the p-scale normalization; it does not import a contested constant or hidden comparator. The displayed closed-form formulas in the packet are consistent under the note's finite-record cumulant conventions. The clean verdict applies only to the bounded exact-support theorem, not to unbounded retained Y_T closure or the physical connected-response identification.
+- **auditor confidence:** high
+
+### `source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The six diagonal matrix units E_ii on C^6 form an orthonormal Hilbert-Schmidt basis of the diagonal subspace D_6, resolve I_6, reconstruct every diagonal operator, and have the normalized permutation-fixed democratic vector (1/sqrt(6)) sum_i E_ii.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-012950-8d5a68f3d9-source_measure_sharp_record_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For diagonal matrix units, O_i^dagger O_j = E_ii E_jj = delta_ij E_ii, so Tr(O_i^dagger O_j) = delta_ij, and these six units resolve and span D_6.  _(class `A`)_
+- **chain closes:** True — The conclusion follows directly from finite matrix-unit multiplication and the stated Hilbert-Schmidt pairing. The source note explicitly excludes the physical Y_T/top/W and coupling interpretations, so no missing physical bridge is load-bearing for the audited claim.
+- **rationale:** The displayed matrix identities are elementary consequences of E_ii E_jj = delta_ij E_ij with i=j support, the trace pairing, and the six-dimensional diagonal coordinate basis. The democratic vector has squared norm 6*(1/6)=1, and invariance under adjacent swaps forces all coordinates equal, giving a one-dimensional fixed line. The runner source actually constructs the matrices symbolically and numerically; it does not import contested physical constants or external comparators. The six non-algebraic runner passes are source-boundary checks, not load-bearing derivation steps.
 - **auditor confidence:** high
 
 ### `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`

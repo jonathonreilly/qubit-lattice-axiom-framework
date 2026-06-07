@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/frontier_eta_spectral_flow_boundary_filter_no_go_2026_06_07.py
+runner_sha256: 9df116f3e8e525f12253b4dc1ed49686c6739dbca585c66658be778245f8b4d4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+[PASS] oriented scalar crossing has positive spectral flow :: sf[-1 -> +1]=1
+[PASS] reversing the same crossing reverses spectral flow :: sf[+1 -> -1]=-1
+[PASS] same unoriented endpoint pair carries both signs :: possible signs=[-1, 1]
+[PASS] scalar eta jump matches twice the oriented crossing :: eta(+1)-eta(-1)=2
+[PASS] reverse scalar eta jump matches reversed crossing :: eta(-1)-eta(+1)=-2
+[PASS] gapped positive deformation has zero spectral flow :: sf[+1 -> +2]=0
+[PASS] reversed gapped positive deformation also has zero spectral flow :: sf[+2 -> +1]=0
+[PASS] eta is locally constant on the gapped positive sector :: eta(+1)=1, eta(+2)=1
+[PASS] finite difference of sign eta vanishes away from crossing :: d_eta(+1;h=1/10)=0
+[PASS] paired chiral crossing has zero net spectral flow :: paired sf[-1 -> +1]=0
+[PASS] reversed paired chiral crossing remains zero :: paired sf[+1 -> -1]=0
+[PASS] paired eta vanishes on both sides of the crossing :: paired eta(-1,+1)=(0,0)
+[PASS] bulk chiral paired spectrum has zero eta :: eta={+/-1/2,+/-1,+/-2} -> 0
+[PASS] bulk chiral paired eta stays zero under gap deformation :: eta={+/-1,+/-3/2,+/-2} -> 0
+[PASS] unoriented path data cannot distinguish forward from reverse :: unoriented endpoints=[Fraction(-1, 1), Fraction(1, 1)]
+[PASS] oriented spectral flow is not an unoriented path invariant :: forward=1, reverse=-1
+[PASS] there is no nonzero equality to both orientations :: nonzero oriented selector would require a supplied orientation
+[PASS] a supplied selector can choose the positive crossing sign :: selector=start_negative_end_positive, selected_flow=1
+[PASS] the selector is extra data rather than spectral flow alone :: selector_input=start_negative_end_positive
+[PASS] separable positive source stack is orientation-even :: source=(1, 1)
+[PASS] eta sign creates an odd source only when multiplied in :: chi=+1->(1, -1), chi=-1->(-1, 1)
+[PASS] orientation-even source is not the required odd source :: even=(1, 1), odd=(1, -1)
+[PASS] native eta data expose ambiguity rather than selecting a branch :: native_data={'bulk_pairing': 0, 'gapped_eta_derivative': Fraction(0, 1), 'unoriented_crossing_signs': (-1, 1)}
+SCORECARD: PASS=23 FAIL=0
+
+----- stderr -----
+

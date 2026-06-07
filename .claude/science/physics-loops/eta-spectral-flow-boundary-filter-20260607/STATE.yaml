@@ -1,0 +1,31 @@
+loop_slug: eta-spectral-flow-boundary-filter-20260607
+date: 2026-06-07
+branch: physics-loop/eta-spectral-flow-boundary-filter-20260607
+base: origin/main
+current_goal: "Attack the third chirality-resolution target: can eta or spectral flow supply the missing orientation/source selector?"
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: eta_spectral_flow_boundary_filter
+cycle_count: 1
+block_count: 1
+hard_residual: "A native symmetry-breaking selector must precede eta/spectral-flow readout."
+files_touched:
+  - docs/ETA_SPECTRAL_FLOW_BOUNDARY_FILTER_NO_GO_NOTE_2026-06-07.md
+  - scripts/frontier_eta_spectral_flow_boundary_filter_no_go_2026_06_07.py
+  - logs/runner-cache/frontier_eta_spectral_flow_boundary_filter_no_go_2026_06_07.txt
+  - .claude/science/physics-loops/eta-spectral-flow-boundary-filter-20260607/
+open_imports:
+  - "Canonical boundary-path orientation if spectral flow is used as a source selector."
+  - "Canonical mass-sign convention or orientation section if eta sign is used as chi."
+  - "Active source-action cross term if sign(eta) is multiplied into the positive source stack."
+no_go_routes:
+  - "Using eta/spectral flow alone to choose the orientation/source branch."
+  - "Using closed flat paired bulk eta as a nonzero selector."
+runner_result: "PASS=23 FAIL=0"
+review_loop_disposition: pass
+audit_results_modified: false
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3139"
+next_exact_action: "Pivot to generation/Berry/holonomy selector route in a new branch."
+stop_condition: "Route 3 pruned; pivot next to generation/Berry/holonomy selector route."

@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_kreality_predicate_a1_native_bounded.py
+runner_sha256: db37a467ca335b0e0ab2cd735c5b019878caa12c269863394c6793dd06ffe750
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+PASS T1 all 3 corners self-conjugate (-k=k mod 2pi)
+PASS T1b connecting (pi,pi,0)-type momenta self-conjugate
+PASS T2 K-even (real) site op => real corner block (delta=0)
+PASS T3 K-even part => real corner coupling (500)
+PASS T3 K-odd part => pure-imaginary corner coupling (500)
+PASS T4 translation-invariant complex hoppings: ZERO inter-corner coupling
+PASS T5 site-conj transports to swap(1,2): U real swap
+PASS T5 conj(P0)=P0, conj(P1)=P2, conj(P2)=P1 (= flavor_einselection K)
+PASS T6 A=i(C-C^2) Hermitian & K-odd
+PASS T6b native (C-C^2)(x)omega Hermitian (native C, native omega)
+PASS T6c K-even mass => b real (delta=0)
+PASS T6d native K-odd component => b complex (delta!=0)
+PASS CTRL A purely imaginary in corner basis (real-symmetric block can't produce it)
+
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -11,8 +11,10 @@ pipeline after independent review.
 ## Summary
 
 The charged-lepton generation partition predicate (`δ=0` / K-reality)
-requires — per the companion G2-bridge no-go (the C₃-current `A=i(C-C²)`
-route, `koide_z3_equivariant_anticommuting_no_go` escape-hatch) — a selector
+requires — per the companion G2-bridge no-go
+[`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md`](G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md)
+(the C₃-current `A=i(C-C²)` route,
+`koide_z3_equivariant_anticommuting_no_go` escape-hatch) — a selector
 that is **(i) T-odd AND (ii) non-commuting with `S=C+C²` on the generation
 factor C³** (i.e. it must break C₃-equivariance). The natural candidate is
 the on-site Cl(3,0) chirality `γ₅` (the spin grade). This note is a **narrow
@@ -122,12 +124,16 @@ C₃-breaking T-odd selector via the natural embedding `γ₅_spin ⊗ I_gen`.*
 | [`KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md`](KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md) | retained_no_go | rank-2 sector = spin-lift multiplicity-2 at fixed gen character |
 | [`KOIDE_DELTA_MARKED_RELATIVE_COBORDISM_NO_GO_NOTE_2026-04-24.md`](KOIDE_DELTA_MARKED_RELATIVE_COBORDISM_NO_GO_NOTE_2026-04-24.md) | retained_no_go | Wilson/APS marks act as λ·I on the rank-2 space |
 | [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md) | retained_bounded | the C₃-breaking requirement for the chiral selector |
+| [`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md`](G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md) | source packet supplied; independent audit pending | isolates the T-odd and non-commuting-with-`S` selector requirement after the `A=i(C-C²)` route fails |
 
 The "on-site Clifford `γ₅` as the rank-2 selector" lead
 (`KOIDE_DELTA_RANK2_SELECTOR_…CLIFFORD_CHIRALITY_DOMAIN_WALL`) is **unaudited**
 / off-main; cited as the lead under test, not as a retained authority. The
-companion G2-bridge no-go (`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A`) supplies
-the (T-odd ∧ non-commuting-with-`S`) requirement.
+companion G2-bridge no-go
+[`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md`](G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md)
+supplies the (T-odd ∧ non-commuting-with-`S`) requirement and is now included
+as an explicit source-packet dependency with runner/cache below. Independent
+audit still owns the G2 row's effective status.
 
 All §2 algebra is class-(A) finite (`C²⊗C³`), recomputed in the runner.
 
@@ -143,7 +149,8 @@ All §2 algebra is class-(A) finite (`C²⊗C³`), recomputed in the runner.
 
 Runner
 [`scripts/frontier_koide_gamma5_factor_bridge_no_go.py`](../scripts/frontier_koide_gamma5_factor_bridge_no_go.py)
-(`PASS = 14, FAIL = 0`): `C³=I`; `eig(S)={-1,-1,2}`; dimension mismatch
+(`PASS = 22, FAIL = 0`): actual G2 companion source path/runner/cache present
+and passing; `C³=I`; `eig(S)={-1,-1,2}`; dimension mismatch
 (`γ₅` 2×2 vs `S` 3×3); `[γ₅⊗I, I⊗S]=0` exactly; `γ₅` K-even; `γ₅⊗I` commutes
 with `A`; any site-factor op commutes with any gen-factor op (200 samples,
 max norm 0); `P±=(1±γ₅)/2` is a spin-factor partition; the generation
@@ -158,6 +165,7 @@ declared_one_hop_deps:
   - koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24
   - koide_delta_marked_relative_cobordism_no_go_note_2026-04-24
   - koide_z3_equivariant_anticommuting_no_go_note_2026-05-16
+  - g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06
 proposal_allowed: false
 audit_required_before_effective_retained: true
 ```
@@ -166,7 +174,12 @@ audit_required_before_effective_retained: true
 
 - [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
   — the C₃-breaking requirement the selector must meet on the generation factor.
-- The companion G2-bridge no-go (`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A`,
-  same lane) — establishes the (T-odd ∧ non-commuting-with-`S`) requirement
-  that `γ₅ ⊗ I_gen` here fails; together they relocate the chirality residual
-  to the rooting / spin-generation-entanglement step (the open frontier).
+- The companion G2-bridge no-go
+  [`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md`](G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md)
+  with runner
+  [`scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py`](../scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py)
+  and cache
+  [`logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt`](../logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt)
+  — establishes the (T-odd ∧ non-commuting-with-`S`) requirement that
+  `γ₅ ⊗ I_gen` here fails; together they relocate the chirality residual to
+  the rooting / spin-generation-entanglement step (the open frontier).

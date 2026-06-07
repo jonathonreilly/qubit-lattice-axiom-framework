@@ -1,11 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_gamma5_factor_bridge_no_go.py
-runner_sha256: 221a2d6adc028723ed131aa35fda016c41230f1b5b4f8c36f8cec1b83fb70444
+runner_sha256: b1e7900cc4118a57b8070b97303951f7f37f99b58052ac6cdfd6b707d541ad61
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
+
+==============================================================================
+Source dependency: G2 C3-current bridge packet
+==============================================================================
+[PASS] gamma5 note names the actual G2 source path
+[PASS] G2 source note exists  --  docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md
+[PASS] G2 source note states the T-odd and non-commuting-with-S requirement
+[PASS] G2 source note records the open frontier boundary
+[PASS] G2 runner exists  --  scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py
+[PASS] G2 runner cache exists  --  logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt
+[PASS] G2 runner cache passes
+[PASS] G2 cache includes selector requirement conclusion
 
 ==============================================================================
 Setup: generation factor (C^3) and on-site gamma5 (C^2)
@@ -41,7 +53,7 @@ Weight-clean: no r is forced
 ==============================================================================
 [PASS] statement is r-independent: S, A, gamma5 carry no r dependence (G3 clean)
 
-TOTAL: PASS=14 FAIL=0
+TOTAL: PASS=22 FAIL=0
 VERDICT: gamma5 factor-bridge no-go checks pass.
   On-site gamma5 = gamma5_spin (x) I_gen commutes with S on the
   generation C^3 EXACTLY and is K-even there -> supplies NEITHER half

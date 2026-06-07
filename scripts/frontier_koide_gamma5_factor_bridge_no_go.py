@@ -33,11 +33,17 @@ named open frontier). No weight r is forced.
 
 from __future__ import annotations
 
+from pathlib import Path
 import sys
 import numpy as np
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+G2_NOTE = ROOT / "docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md"
+G2_RUNNER = ROOT / "scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py"
+G2_CACHE = ROOT / "logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt"
+GAMMA5_NOTE = ROOT / "docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md"
 
 
 def check(name: str, ok: bool, detail: str = "") -> None:
@@ -52,6 +58,25 @@ def check(name: str, ok: bool, detail: str = "") -> None:
 
 def section(t: str) -> None:
     print("\n" + "=" * 78 + "\n" + t + "\n" + "=" * 78)
+
+
+def source_dependency_checks() -> None:
+    section("Source dependency: G2 C3-current bridge packet")
+    gamma5_text = GAMMA5_NOTE.read_text(encoding="utf-8") if GAMMA5_NOTE.is_file() else ""
+    check("gamma5 note names the actual G2 source path",
+          "G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md" in gamma5_text)
+    check("G2 source note exists", G2_NOTE.is_file(), str(G2_NOTE.relative_to(ROOT)))
+    g2_text = G2_NOTE.read_text(encoding="utf-8") if G2_NOTE.is_file() else ""
+    check("G2 source note states the T-odd and non-commuting-with-S requirement",
+          "T-odd AND non-commuting-with-`S`" in g2_text)
+    check("G2 source note records the open frontier boundary",
+          "genuine T-odd, **non-commuting-with-`S`**" in g2_text)
+    check("G2 runner exists", G2_RUNNER.is_file(), str(G2_RUNNER.relative_to(ROOT)))
+    check("G2 runner cache exists", G2_CACHE.is_file(), str(G2_CACHE.relative_to(ROOT)))
+    g2_cache = G2_CACHE.read_text(encoding="utf-8") if G2_CACHE.is_file() else ""
+    check("G2 runner cache passes", "TOTAL: PASS=22 FAIL=0" in g2_cache)
+    check("G2 cache includes selector requirement conclusion",
+          "selector must be T-odd AND non-commuting-with-S" in g2_cache)
 
 
 def cyclic_shift() -> np.ndarray:
@@ -144,6 +169,7 @@ def weight_clean() -> None:
 
 
 def main() -> int:
+    source_dependency_checks()
     setup_checks()
     factor_bridge_no_go()
     structural_reason()

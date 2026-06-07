@@ -1,0 +1,24 @@
+loop: koide-gamma5-g2-edge
+date: 2026-06-07
+branch: physics-loop/koide-gamma5-g2-edge-20260607
+base: origin/main@7b90b068c
+target_claim_id: koide_gamma5_factor_bridge_no_go_note_2026-06-06
+target_note: docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md
+target_blocker: "missing_dependency_edge: add the companion G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A source/runner or restate the T/K-odd noncommuting selector requirement as an audited retained premise, then re-audit the scoped factor-bridge claim."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+remaining_caveat: "The G2 companion source packet is supplied and runner-backed, but its own row is still unaudited on current main."
+files_touched:
+  - docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md
+  - scripts/frontier_koide_gamma5_factor_bridge_no_go.py
+  - logs/runner-cache/frontier_koide_gamma5_factor_bridge_no_go.txt
+  - .claude/science/physics-loops/koide-gamma5-g2-edge/
+verification:
+  - "python3 scripts/frontier_koide_gamma5_factor_bridge_no_go.py"
+  - "python3 -m py_compile scripts/frontier_koide_gamma5_factor_bridge_no_go.py"
+  - "git diff --check"
+next_exact_action: "Reviewer/auditor should re-audit the gamma5 row with the actual G2 source path and decide whether the G2 row also needs separate audit first."
+stop_condition: "PR opened for review."

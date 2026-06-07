@@ -87,6 +87,31 @@ The durable result is the review boundary: quark-sector mass work must
 not assume the lepton BAE coefficient, and any numerical comparison must
 make the quark mass scheme explicit.
 
+## 2026-06-07 Record-Selector Sidecar Boundary
+
+The Record-selector sidecar classifies this row as a sector-specific dial
+open gate, not as an equal-letter selector result. Its repair target is:
+
+```text
+Derive sector-specific mass scheme/scale and quark-sector dial parameters; do not transfer charged-lepton BAE.
+```
+
+This sidecar boundary is now included in the restricted packet:
+
+- [`RECORD_SELECTOR_AUDIT_SIDECAR_2026-06-05.md`](RECORD_SELECTOR_AUDIT_SIDECAR_2026-06-05.md)
+- [`scripts/frontier_record_selector_audit_sidecar_2026_06_05.py`](../scripts/frontier_record_selector_audit_sidecar_2026_06_05.py)
+- [`logs/runner-cache/frontier_record_selector_audit_sidecar_2026_06_05.txt`](../logs/runner-cache/frontier_record_selector_audit_sidecar_2026_06_05.txt)
+
+Raw restricted-packet paths:
+
+- `docs/RECORD_SELECTOR_AUDIT_SIDECAR_2026-06-05.md`
+- `scripts/frontier_record_selector_audit_sidecar_2026_06_05.py`
+- `logs/runner-cache/frontier_record_selector_audit_sidecar_2026_06_05.txt`
+
+This repair keeps the row comparator-only. It does not derive a quark mass
+scheme, scale, phase, amplitude ratio, CKM-to-mass theorem, or a physical
+quark-sector dial position.
+
 ## Verification
 
 Run:
@@ -98,6 +123,6 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_mass_spectrum_koide_scheme_ope
 Expected:
 
 ```text
-TOTAL: PASS=14 FAIL=0
+TOTAL: PASS=18 FAIL=0
 VERDICT: quark Koide-scheme open gate verified; quark BAE parameters and scales remain open.
 ```

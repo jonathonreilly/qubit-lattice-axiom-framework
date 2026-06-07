@@ -1,0 +1,27 @@
+loop_slug: quark-koide-selector-sidecar-boundary-20260607
+date: 2026-06-07
+branch: physics-loop/quark-koide-selector-sidecar-boundary-20260607
+base: origin/main
+target_claim_id: quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle: 1
+active_route: selector-sidecar boundary closure
+hard_residual: derive sector-specific quark mass scheme, scale, and dial parameters without copying charged-lepton BAE
+files_touched:
+  - docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md
+  - scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py
+  - logs/runner-cache/frontier_quark_mass_spectrum_koide_scheme_open_gate.txt
+  - scripts/frontier_record_selector_audit_sidecar_2026_06_05.py
+  - logs/runner-cache/frontier_record_selector_audit_sidecar_2026_06_05.txt
+open_imports:
+  - physical quark-sector mass readout
+  - quark-sector scheme and scale selection
+  - quark dial dynamics
+  - CKM-to-mass bridge
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+review_status: pending reviewer extraction
+audit_data_modified: false
+next_exact_action: reviewer decides whether the bounded-support sidecar packet is audit-ready
+stop_condition: no branch-local proof of the physical quark mass theorem is claimed

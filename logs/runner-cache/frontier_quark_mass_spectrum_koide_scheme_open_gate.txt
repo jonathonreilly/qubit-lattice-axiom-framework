@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py
-runner_sha256: 3b495bc414c9b5e3d4d41b01c5af90bbf279bcbc55e124c5983fcd696e30ac1f
+runner_sha256: 058ab606a3e2b092b51b460851825bb3823eb653d6d53c5a7f1e7cbb6d8daf93
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 Quark mass spectrum Koide-scheme open gate
@@ -27,9 +27,13 @@ Central-value comparators
   PASS: Q <-> |b|^2/a^2 algebra reconstructs Q=0.849094
   PASS: Q <-> |b|^2/a^2 algebra reconstructs Q=0.731428
   PASS: quark values are treated as scheme-dependent comparators (no derivation claimed)
+  PASS: Record-selector sidecar classifies quark row as sector-specific dial open gate (sidecar says sector-specific mass scheme/scale and quark dial remain open)
+  PASS: quark note names selector sidecar note, runner, and cache (restricted packet includes sidecar boundary artifact)
+  PASS: selector sidecar cache is SHA-fresh and clean (cache runner=scripts/frontier_record_selector_audit_sidecar_2026_06_05.py status=ok)
+  PASS: source boundary: charged-lepton BAE is not copied to quark sector (quark lane stays comparator-only until sector-specific bridge exists)
 
 ========================================================================
-TOTAL: PASS=14 FAIL=0
+TOTAL: PASS=18 FAIL=0
 VERDICT: quark Koide-scheme open gate verified; quark BAE parameters and scales remain open.
 
 ----- stderr -----

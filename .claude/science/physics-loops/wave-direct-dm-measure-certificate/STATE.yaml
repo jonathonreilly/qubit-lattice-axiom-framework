@@ -1,0 +1,26 @@
+loop_slug: wave-direct-dm-measure-certificate
+target_claim_id: wave_direct_dm_h025_fam2_seed1_followup_note
+target_status: exact-support
+base_ref: origin/main
+base_sha: 924f6ebaf
+branch: physics-loop/wave-direct-dm-measure-certificate-20260607
+cycle_count: 1
+active_route: target-runner-measure-dm-source-certificate
+hard_residual: "Audit blocker asked for complete helper source, especially field_at/prop_beam/cz, or an independent certificate for measure_dm."
+files_touched:
+  - docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+  - scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+  - scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py
+  - logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt
+  - logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt
+  - outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json
+  - outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json
+  - .claude/science/physics-loops/wave-direct-dm-measure-certificate/
+open_imports:
+  - "Bounded target replay only; no portability or amplitude-law promotion."
+  - "Independent audit must decide whether the source certificate resolves the artifact blocker."
+trace_gate_classification: direct_blocker_closure
+review_findings: "pass: target PASS=33 FAIL=0; source packet PASS=86 FAIL=0; py_compile pass; git diff --check pass; no docs/audit edits"
+pr_status: pending
+next_exact_action: "Push branch and open a review PR."
+stop_condition: "Stop this block after PR creation, then continue to the next independent artifact issue."

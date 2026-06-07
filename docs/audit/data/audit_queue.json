@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 316,
     "high": 256,
-    "leaf": 384,
+    "leaf": 383,
     "medium": 352
   },
   "cycle_break_target_count": 9,
@@ -28393,33 +28393,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
-        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CLUSTER_DECOMPOSITION_PARENT_EQ8_REPAIR_NARROW_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_cluster_decomposition_parent_eq8_repair_narrow_verifier.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "delta_magnitude_reduces_to_massless_gravity_scale_narrow_theorem_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39518,6 +39491,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 40,
-  "total_pending": 1308
+  "ready_count": 39,
+  "total_pending": 1307
 }

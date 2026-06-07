@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 715 |
+| **retained_bounded** | 716 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1306 |
+| unaudited | 1305 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1128 |
+| `audited_clean` | 1129 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1613 |
+| `unaudited` | 1612 |
 
 | claim_type | count |
 |---|---:|
@@ -278,6 +278,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_lr_poisson_tail_repair_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -3663,6 +3664,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The excited spectral sum is bounded by (λ_1/M_T)^n via Cauchy-Schwarz as ‖A†|0⟩‖‖B|0⟩‖ ≤ ‖A‖‖B‖, giving exp(-nΔ_T)‖A‖‖B‖, with the thermal term then controlled by ‖ρ_β-P_0‖_1=2q_β.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the spectral decomposition, corrected Cauchy-Schwarz placement, and trace-distance estimate prove the displayed ground-state and thermal bounds. The open mass-gap and spatial-clustering problems are explicitly outside the audited conclusion.
 - **rationale:** The load-bearing proof is a finite-dimensional algebraic spectral argument over the theorem assumptions, not a numerical match or imported physical premise. The runner source genuinely tests the corrected adjoint placement, spectral identity, ground-state bound, thermal q_β bound, and no-gap counterexample rather than merely printing expected results. Independent formula checks found the displayed exponential factor, trace-norm identity, 6q_β thermal correction, and finite-D Boltzmann population bound consistent with the note's definitions. The clean verdict is limited to the conditional transfer-matrix lemma and does not certify Δ_T>0 on A_min or spatial cluster decomposition.
+- **auditor confidence:** high
+
+### `cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02`
+
+- **Note:** [`CLUSTER_DECOMPOSITION_PARENT_EQ8_REPAIR_NARROW_NOTE_2026-06-02.md`](../../docs/CLUSTER_DECOMPOSITION_PARENT_EQ8_REPAIR_NARROW_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the two narrow repairs: deletion/falsification of the parent displayed imaginary-time commutator identity and replacement of the LR velocity's per-term J by the per-site interaction norm J*.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-000504-32fb4a48df-cluster_decomposition_parent`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The parent equation (8) is falsified by the finite-dimensional counterexample H=0, A=B=sigma_z with connected variance 1 and zero commutator integral, and the LR iteration requires bounding the interaction sum by the per-site norm J* rather than the per-term maximum J.  _(class `A`)_
+- **chain closes:** True — The eq (8) counterexample closes by direct finite-dimensional operator algebra, and the J <= J* correction closes from the definitions plus the Duhamel commutator norm estimate. The note does not claim to close the parent L2 gap/slab hypotheses or promote the parent row.
+- **rationale:** The load-bearing repairs are algebraic checks over finite-dimensional operators and interaction-norm definitions, not external imports or numerical tuning. The runner source genuinely constructs Pauli operators, thermal states, commutator integrals, and explicit local Hamiltonian terms; it is not merely printing expected constants. Cited bridge notes contain open gap hypotheses, but those are explicitly outside this narrow repair claim and are not needed for the two repaired statements.
 - **auditor confidence:** high
 
 ### `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17`

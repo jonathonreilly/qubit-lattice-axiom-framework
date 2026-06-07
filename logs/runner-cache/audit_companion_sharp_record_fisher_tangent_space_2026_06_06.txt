@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_sharp_record_fisher_tangent_space_2026_06_06.py
-runner_sha256: c70f1853c74f4eb35160c15e39177d661f1779a62c6252818e1cdbe2f51c5ac8
+runner_sha256: 4be30cd9f5590eadc7a9d028c5b9da39c27ffd4b47c09e28fe6232e3898ef3e9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 ==============================================================================

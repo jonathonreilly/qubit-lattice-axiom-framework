@@ -1,0 +1,22 @@
+loop: flavor-zdet-grassmann-bridge-20260607
+date: 2026-06-07
+branch: physics-loop/flavor-zdet-grassmann-bridge-20260607
+base: origin/main
+base_commit: fbf4dfbed
+target_claim_id: flavor_zdet_fermionic_statistics_admission_2026-06-04
+target_status: bounded-support
+cycle_count: 1
+active_route: one-hop audited dependency bridge for the abstract Grassmann/CAR determinant side
+hard_residual: physical-lattice cross-site CAR/Grassmann selector from baseline axioms remains open
+files_touched:
+  - docs/FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md
+  - scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py
+  - logs/runner-cache/flavor_zdet_fermionic_statistics_admission_2026_06_04.txt
+  - .claude/science/physics-loops/flavor-zdet-grassmann-bridge-20260607/
+verification:
+  - python3 scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py
+result: PASS=11 FAIL=0
+pr_status: pending
+next_exact_action: commit, push, open PR, then rescan uncovered audited conditionals
+stop_condition: campaign continues until no tractable audit-unblock repair targets remain

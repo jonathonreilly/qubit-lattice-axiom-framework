@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py
-runner_sha256: 20f18314d1f0ef7592b3e1b6ce423f98db8c118ebd9afa288c69828f81f07d1a
+runner_sha256: f8a3627ec7f8daff63e7a2e654602aac22007b2869743f069e6bba08c8a07b05
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 [PASS] Berezin finite Gaussian gives det(M) once Grassmann variables are supplied
@@ -15,12 +15,21 @@ status: ok
        det=4.971000; permanent=5.947000
 [PASS] Gamma_chi is an internal-generation object distinct from spatial CAR
        Gamma_chi commutes with the tested C3-equivariant mass operator
-[PASS] source boundary guard: finite locator only, no baseline/admission conclusion promoted
-       the packet leaves FS selection open
+[PASS] one-hop dependency status: fermion parity Z2 grading is audited retained
+       fermion_parity_z2_grading_theorem_note_2026-05-02 -> retained
+[PASS] one-hop dependency status: abstract Grassmann forcing bridge is audited retained_bounded
+       staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16 -> retained_bounded
+[PASS] graded tensor route composes parity-odd generators into CAR with even bilinears
+       F c_i F=-c_i, {c1,c2}=0, and c1^dag c2 is Z2-even
+[PASS] source boundary guard: finite bridge only, no physical baseline/admission conclusion promoted
+       the packet leaves the physical FS selector open
+[PASS] dependency boundary guard: consumed supports are algebraic, not physical spin-statistics selectors
+       parity supplies Z2 grading; Grassmann bridge supplies abstract two-candidate determinant scope
 
-SCORECARD PASS=7 FAIL=0
-FINDING: supplied Grassmann/CAR variables realize the determinant amplitude.
-The tested finite hard-core/tensor-product routes do not force that statistics choice.
+SCORECARD PASS=11 FAIL=0
+FINDING: the abstract two-candidate determinant side now has one-hop audited support.
+The physical-lattice cross-site CAR/Grassmann selector remains open.
+The tested finite hard-core/tensor-product routes still do not force that statistics choice.
 Koide generation chirality remains a separate internal-factor residual.
 
 ----- stderr -----

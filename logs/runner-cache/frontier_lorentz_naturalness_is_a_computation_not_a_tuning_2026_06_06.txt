@@ -1,0 +1,47 @@
+==============================================================================================
+Lorentz "naturalness" for a FIXED fundamental theory is a COMPUTATION, not a tuning
+==============================================================================================
+
+----------------------------------------------------------------------------------------------
+Part A: the coupling is DERIVED (g^2 = 2N/beta = 1), not a free EFT knob -> no tuning
+----------------------------------------------------------------------------------------------
+  [PASS] (A1) g^2 = 2N/beta = 1 is DERIVED from the framework's beta=6 (not a free coupling)  --  g^2=1.0; a^-1=M_Pl fixed -> NO sliding cutoff, NO free coupling to tune
+  [PASS] (A2) => 'naturalness' (sliding-cutoff + free-coupling tuning) is partly a CATEGORY ERROR here  --  the well-posed question is 'what does the framework COMPUTE for delta_v?' (a prediction)
+
+----------------------------------------------------------------------------------------------
+Part B: TREE LEVEL passes -- the only LV is dim-6, Planck-suppressed
+----------------------------------------------------------------------------------------------
+     observable                 E (GeV)   |dE2/E2|_tree     bound  safe by (orders)
+     photon (GRB/Fermi-LAT)       1e+03        5.60e-34     1e-20              13.3
+     nucleon (Hughes-Drever)      1e+00        5.60e-40     1e-27              12.3
+     UHECR                        1e+11        5.60e-18     1e-17               0.3
+  [PASS] (B1) TREE-level dim-6 LV is Planck-suppressed and PASSES every bound (given the approved Planck primitive)  --  the marginal dim-2 LV is ABSENT at tree level on the native continuous-time surface (#3020)
+
+----------------------------------------------------------------------------------------------
+Part C: the RADIATIVE marginal -- shared kernel universalizes J, but the DIFFERENCE is O(1)
+----------------------------------------------------------------------------------------------
+     species Casimirs C_2(R): {'lepton (singlet)': 0.0, 'quark (fund)': 1.333, 'gluon (adj)': 3.0}
+       dC_2(quark - lepton) = 1.333  -> delta_v_diff ~ 1.33 * g^2 J ~ 0.1061 (O(1)*alpha_s)
+       dC_2(gluon - quark) = 1.667  -> delta_v_diff ~ 1.67 * g^2 J ~ 0.1326 (O(1)*alpha_s)
+       dC_2(gluon - lepton) = 3.000  -> delta_v_diff ~ 3.00 * g^2 J ~ 0.2387 (O(1)*alpha_s)
+  [PASS] (C1) shared kernel: delta c_s^(R) = C_2(R) g^2 J with J species-INDEPENDENT (common part universal)  --  the shared sin(p_i a) kernel universalizes the loop integral J across species
+  [PASS] (C2) but the OBSERVABLE species DIFFERENCE ~ (dC_2) g^2 J is O(1)*(alpha_s/4pi) -- NOT cancelled  --  min dC_2 = 1.33 (O(1)); the shared kernel does NOT suppress the difference
+
+----------------------------------------------------------------------------------------------
+Part D: STATUS = UNCOMPUTED (the alpha_s/4pi is a generic PRIOR, not the framework's POSTERIOR)
+----------------------------------------------------------------------------------------------
+  [PASS] (D1) the alpha_s/4pi ~ 6e-3 is a generic Collins ESTIMATE substituted in, NOT computed by the framework  --  dv_UV(estimate) = 6.33e-03; the obstruction note flags it as an 'open input'
+  [PASS] (D2) three framework-specific suppressions are UNQUANTIFIED: shared-kernel diff (C), (mu/M_Pl)^gamma flow (#3121), c_t-fixing (#3020)  --  none is in the estimate; the actual posterior could be far below 6e-3 -- or not
+  [PASS] (D3) honest status: UNCOMPUTED -- not passing (tree only), not falsified (no real computation); IF estimate holds -> FALSIFICATION  --  a fixed theory that COMPUTES delta_v ~ 1e-3 >> 1e-20 is WRONG, not 'unnatural'
+
+----------------------------------------------------------------------------------------------
+Verdict + the real next artifact
+----------------------------------------------------------------------------------------------
+  [PASS] (V1) the prior 'naturalness obstruction needing new axiom/physics' framing IMPORTED an EFT category (free coupling + sliding cutoff)  --  for a FIXED fundamental theory, 'tuning' -> 'prediction' ('t Hooft/Wetterich)
+  [PASS] (V2) corrected status: TREE passes (Planck-suppressed); the radiative MARGINAL delta_v is an UNCOMPUTED, high-stakes PREDICTION
+  [PASS] (V3) the REAL next artifact is a COMPUTATION (species-differential marginal delta_v on the native surface at beta=6), NOT a custodial-symmetry hunt  --  the symmetry hunt (#3126/#3129/#3131) was the EFT-framing fallback; the fixed-theory's primary task is the number
+  [PASS] (V4) the owner's correction is VALIDATED: the framework's non-EFT structure changes the FRAMING (computation, not tuning), though not (yet) the estimate  --  being fixed/finite is necessary; the shared kernel does not cancel the species difference (C) -> the computation is decisive
+
+==============================================================================================
+TOTAL: 12 PASS / 0 FAIL
+==============================================================================================

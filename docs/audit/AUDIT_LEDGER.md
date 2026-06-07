@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 719 |
+| **retained_bounded** | 720 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1300 |
+| unaudited | 1299 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1132 |
+| `audited_clean` | 1133 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1607 |
+| `unaudited` | 1606 |
 
 | claim_type | count |
 |---|---:|
@@ -420,6 +420,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -5916,6 +5917,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** exp(theta J_cs) is an SO(2) rotation on the real doublet plane, preserves the Hilbert-Schmidt block metric 6I, has determinant one, and therefore does not select between real and holomorphic doublet measure conventions.  _(class `A`)_
 - **chain closes:** True — The displayed matrices give J_cs^2=-P_doublet, [J_cs,C]=0, Gamma_chi^2=I with Gamma_chi not equal or proportional to J_cs, and exp(theta J_cs) restricts to an orientation-preserving SO(2) action on the doublet. Those algebraic facts are enough for the bounded negative conclusion that static J_cs alone supplies no measure-selection lever.
 - **rationale:** The load-bearing step is a direct finite-dimensional algebraic identity check, not a renaming, external comparison, or tuned numerical match. The runner source actually constructs the C3 permutation, J_cs, Gamma_chi, and P_doublet and checks the relevant commutators, squares, eigenvalue structure, metric preservation, and determinant behavior. The only caveat is scope: the clean result is bounded to static J_cs algebra and does not derive any Q default, det_C readout, or dynamical/Berezin bridge.
+- **auditor confidence:** high
+
+### `flavor_find_j_round2_power_not_count_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND2_POWER_NOT_COUNT_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND2_POWER_NOT_COUNT_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the finite C3/Berezin algebra in the packet, determinant power and C3 covariance do not force the antisymmetric J=C-C^2 pairing, and no det_R/Q, r/Q, or Dirac-vs-Majorana conclusion is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-001647-0c411d6dbd-flavor_find_j_round2_power_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Berezin determinant is a determinant/eigenvalue product rather than the Frobenius block-total selector, and finite C3 covariance admits both I and J=C-C^2 since C^T I C=I and C^T J C=J.  _(class `A`)_
+- **chain closes:** True — The displayed identities close by finite matrix algebra: C^3=I gives invariance of both I and J, J is antisymmetric and nonzero, and det(H) is the product of the real Hermitian circulant eigenvalues with cubic scaling distinct from the quadratic Frobenius block-total. The Pfaffian/determinant examples support only exponent scaling, not a mode-count or pairing-selection rule.
+- **rationale:** The runner source performs direct finite-matrix checks and a source-boundary guard rather than importing a contested premise or matching an external number. An independent algebra check confirms the load-bearing identities: both invariant bilinears satisfy the same C3 covariance condition, so that condition alone cannot select J over I, and the determinant functional is not the Frobenius block-total convention. The conclusion is clean only in the bounded negative-route-pruning scope stated by the note.
 - **auditor confidence:** high
 
 ### `flavor_find_j_round3_dirac_generation_blind_2026-06-02`

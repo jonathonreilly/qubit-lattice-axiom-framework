@@ -55,7 +55,8 @@ Qc = {k:(I*a**2)*F[k] for k in F}                       # clover leading order ~
 q_clover = sum(LeviCivita(mu,nu,rho,sig)*Qc[(mu,nu)]*Qc[(rho,sig)]
                for mu in range(4) for nu in range(4) for rho in range(4) for sig in range(4))
 q_clover = simplify(q_clover)
-chk("(2) clover density q ~ eps tr(Q Q) with Q~i a^2 F reproduces -a^4 F~F at leading order (the F~F slot is realized)",
+chk("(2) [under the standard leading-order clover model Q~i a^2 F, not a from-scratch lattice expansion] the contraction "
+    "eps tr(Q Q) reduces to -a^4 F~F -> the lattice F~F slot is populated at leading order",
     simplify(q_clover + a**4 * FtF)==0)
 
 # (3) SINGLE plaquette CANNOT form F~F: a single plaquette gives one F_{mu nu}; the leading CP-odd invariant tr(F)=0
@@ -74,11 +75,11 @@ gauge_invariant = True      # built from tr of Wilson loops
 local_finite_range = True   # clover = a finite cluster of plaquettes at x
 real_valued_density = True  # the lattice topological charge density is real
 enters_action_as_imaginary = True   # the theta-term is i*theta*q (imaginary), invisible to real observables (RP no-go)
-rp_compatible = True        # STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY no-go
+not_excluded_by_rp_nogo = True   # NOT claimed full OS reflection-positive; only that the retained RP half-square no-go does not forbid it
 cpt_even = True             # Q is CPT-even (#3174 runner check (4))
 chk("(4) [bookkeeping of standard facts, NOT derived] the clover F~F is gauge-invariant, local, a real density, "
-    "RP-compatible, and CPT-even -> no reality/RP/CPT/locality/gauge-invariance principle excludes it",
-    all([gauge_invariant, local_finite_range, real_valued_density, rp_compatible, cpt_even]))
+    "NOT excluded by the retained RP half-square no-go, and CPT-even -> no reality/RP-no-go/CPT/locality/gauge-invariance principle excludes it",
+    all([gauge_invariant, local_finite_range, real_valued_density, not_excluded_by_rp_nogo, cpt_even]))
 
 # (5) Therefore the only thing excluding F~F is the SINGLE-PLAQUETTE / minimality restriction (an admission), NOT a
 #     derivation. The multi-plaquette boundary is NOT clean-closeable: theta_gauge=0 requires a minimality admission.

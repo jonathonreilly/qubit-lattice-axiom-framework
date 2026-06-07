@@ -53,6 +53,39 @@ admissions, and the bare coupling is **not** among them.
    notes, and the R_form no-go are all currently pending independent audit; the
    map asserts no audit status.
 
+## Bridge-discharge analysis (waves 4–5, runner-verified)
+
+Both form-class bridges were attacked for derivability from `{Lattice, Quantum,
+Record}`; each was independently re-derived, with a definite verdict:
+
+- **Bridge 1 (two-endpoint Gauss generators): un-derived.** Only a relational
+  half reduces ("observables = commutant of whatever local frame-change group
+  acts"); the load-bearing carrier / group / charge-normalization is *not*
+  fixed (a `U(1)` vs `SU(2)` endpoint, or a different charge weight, gives a
+  different observable algebra; `SU(2)`-fiber and `SU(3)`-base give the same
+  endpoint profile). No **retained** authority supplies even the half — the
+  gauge-invariance-of-observables corollary is **not** a ledgered claim (it
+  appears only inside unaudited notes).
+- **Bridge 2 (local observability of a determined outcome): a genuine
+  admission, independent of the three axioms.** `Z³`-locality does **not** force
+  it. Witness
+  ([`scripts/audit_companion_bridge2_local_observability_independence_2026_06_07.py`](../scripts/audit_companion_bridge2_local_observability_independence_2026_06_07.py),
+  PASS=4): a record registered in a bounded diameter-1 cell parity
+  (`Z_S Z_1 Z_2 = +1`) is **determined** (variance 0) and **durable** (frozen
+  over the commuting commutant) yet **locally non-observable** — every disjoint
+  fragment is blind (`⟨Z_S Z_1⟩ = ⟨Z_S Z_2⟩ = 0`), so the maximum number of
+  disjoint certifiers is `R_δ = 1` (no redundancy plateau). The Record axiom's
+  negative list disclaims "measurement/decoherence dynamics" and "within-sector
+  data", so a broadcast / locally-readable-on-disjoint-fragments channel is
+  excluded from axiom scope. Missing premise: **local observability** — the
+  realized value is independently recoverable by each spatially-disjoint local
+  observer.
+
+So the honest count is **{R_form + 2 bridges} = 3 import-bridges** (both bridges
+confirmed genuinely un-derived); the `N = 1` within-class reading holds only if
+the two form-derivation bridges are not counted. No new dynamics axiom either
+way.
+
 ## The one open derivation lever
 
 R_form is a theorem-grade obstruction (the convolution-semigroup

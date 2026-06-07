@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py
-runner_sha256: 832a5c16a9ff66b27fa8ebffeb26cb95f427c9a3b18ac1e82fb119354b3574c3
+runner_sha256: a14b9ce9a04b98f6d7bbc8abde3c82eeaf6e64d9506e6316aa56125c26af5d03
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 
@@ -12,6 +12,8 @@ Source anchors
 ------------------------------------------------------------------------------
 PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md exists
 PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: Wigner Action Strong-Continuity Bridge
+PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: 2026-06-07 dependency authority repair
+PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: full companion free-Dirac Poincare representation packet/cache
 PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: strongly continuous
 PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: Wigner cocycle
 PASS docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md contains: Stone consequence
@@ -26,9 +28,24 @@ PASS docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md contains
 PASS docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md contains: Lorentz-invariant mass-shell
 PASS docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md contains: Wigner rotation
 PASS logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt exists
+PASS logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt contains: runner cache v1
 PASS logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt contains: P5 boost preserves H_m^+; SU(2) Wigner rotation correct
 PASS logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt contains: P6 invariant measure d^3p/2E boost-preserved
 PASS logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt contains: SCORECARD PASS=8 FAIL=0
+
+------------------------------------------------------------------------------
+Companion dependency authority
+------------------------------------------------------------------------------
+PASS bridge cites companion authority: docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+PASS bridge cites companion authority: scripts/free_dirac_poincare_representation_2026-05-30.py
+PASS bridge cites companion authority: logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt
+PASS companion cache runner path is recorded :: {'runner': 'scripts/free_dirac_poincare_representation_2026-05-30.py', 'runner_sha256': '39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.20', 'status': 'ok'}
+PASS companion cache status is ok :: {'runner': 'scripts/free_dirac_poincare_representation_2026-05-30.py', 'runner_sha256': '39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.20', 'status': 'ok'}
+PASS companion cache exit code is zero :: {'runner': 'scripts/free_dirac_poincare_representation_2026-05-30.py', 'runner_sha256': '39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.20', 'status': 'ok'}
+PASS companion cache runner SHA is fresh :: 39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214
+PASS companion cache certifies PASS=8 FAIL=0
+PASS companion cache includes invariant measure check
+PASS companion cache includes Wigner rotation check
 
 ------------------------------------------------------------------------------
 Mass-shell semidirect product action
@@ -59,7 +76,7 @@ PASS retained-status claim flag is false
 PASS Nelson/common-Gaussian route reintroduced flag is false
 
 FREE DIRAC WIGNER ACTION STRONG-CONTINUITY BRIDGE
-SCORECARD PASS=35 FAIL=0
+SCORECARD PASS=48 FAIL=0
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
 BARE_RETAINED_ALLOWED=FALSE

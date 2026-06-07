@@ -17,10 +17,10 @@ Then the harness measures both, so the audit trail covers:
                      without refitting?
     L3 (pre-pass):   how often is the package pass/fail intuition right?
 
-If L2 stays near 78% on a fresh batch the +11 points is real, not a
-fluke. If L2 drops, the previous lane's revival is suspect. Either
-outcome is decisive on the question of whether free_coh is a real
-generator-agnostic predictor.
+If L2 stays near 78% on a fresh scaffolded batch, the +11 point result
+is not just a one-batch accident. If L2 drops, the previous lane's
+revival is suspect. Either outcome is decisive only for this finite
+scaffolded held-out table, not for a law-level or off-scaffold predictor.
 
 All 12 new generators are placed on the same (layer, iy, iz) grid
 scaffolding so the wave-equation field measurement still works. Edge
@@ -471,10 +471,10 @@ def run_full_batch():
     rate_new_now = L2_correct / max(L1_n, 1)
     rate_old_now = old_correct / max(L1_n, 1)
     if rate_new_now >= 0.65:
-        print(f"  CONFIRMED — frozen rule generalizes to a fresh batch at {rate_new_now:.0%}")
+        print(f"  BOUNDED FINITE TABLE — frozen rule scores {rate_new_now:.0%} on this fresh scaffolded batch")
         if rate_new_now > rate_old_now + 0.05:
             print(f"    and beats the old node-level rule by "
-                  f"{rate_new_now - rate_old_now:+.0%}")
+                  f"{rate_new_now - rate_old_now:+.0%} on this batch")
     elif rate_new_now >= 0.50:
         print(f"  PARTIAL — frozen rule at {rate_new_now:.0%}, weaker than first batch")
     else:
@@ -520,8 +520,8 @@ def verify_frozen_log() -> int:
         "old=6/12")
     add("new rule comparison", "new free_coh on this batch: 10/12 = 83.3%" in text,
         "new=10/12")
-    add("verdict", "CONFIRMED" in text and "beats the old node-level rule by +33%" in text,
-        "confirmed +33% over old node-level rule")
+    add("verdict", "BOUNDED FINITE TABLE" in text and "beats the old node-level rule by +33% on this batch" in text,
+        "bounded +33% finite-table comparison")
 
     n_ok = sum(1 for _, ok, _ in checks if ok)
     n_bad = len(checks) - n_ok

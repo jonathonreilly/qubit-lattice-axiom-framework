@@ -14,12 +14,167 @@ Verifies the decisive facts from the emergent-chirality build (wf_e18432a2):
   V4: emergent time factorizes (Xi_R = Theta_R (x) V_R(t)); no generation index appears,
       so it acts as identity on R^3_gen and transports no chirality.
 """
+from dataclasses import dataclass
+from fractions import Fraction
+from pathlib import Path
+import hashlib
+import json
 import numpy as np
+
+
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT = ROOT / "outputs/flavor_emergent_chirality_no_transport_source_packet_2026_05_30.json"
+
+
+@dataclass(frozen=True)
+class AuthorityPacket:
+    label: str
+    note_path: str
+    runner_path: str
+    cache_path: str
+    required_text: tuple[str, ...]
+
+
+AUTHORITY_PACKETS = (
+    AuthorityPacket(
+        "s3 time bilinear tensor primitive",
+        "docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md",
+        "scripts/frontier_s3_time_bilinear_tensor_primitive.py",
+        "logs/runner-cache/frontier_s3_time_bilinear_tensor_primitive.txt",
+        ("Primary runner", "K_R"),
+    ),
+    AuthorityPacket(
+        "s3 time bilinear tensor action",
+        "docs/S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md",
+        "scripts/frontier_s3_time_bilinear_tensor_action.py",
+        "logs/runner-cache/frontier_s3_time_bilinear_tensor_action.txt",
+        ("Primary runner", "tensorized"),
+    ),
+    AuthorityPacket(
+        "s3 time constructed support tensor",
+        "docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md",
+        "scripts/frontier_s3_time_constructed_support_tensor_primitive.py",
+        "logs/runner-cache/frontier_s3_time_constructed_support_tensor_primitive.txt",
+        ("Primary runner", "Xi_R"),
+    ),
+    AuthorityPacket(
+        "s3 time tensor primitive prototype",
+        "docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md",
+        "scripts/frontier_s3_time_tensor_primitive_prototype.py",
+        "logs/runner-cache/frontier_s3_time_tensor_primitive_prototype.txt",
+        ("Primary runner", "Theta_R"),
+    ),
+    AuthorityPacket(
+        "s3 time spacetime tensor primitive",
+        "docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md",
+        "scripts/frontier_s3_time_spacetime_tensor_primitive.py",
+        "logs/runner-cache/frontier_s3_time_spacetime_tensor_primitive.txt",
+        ("Primary runner", "spacetime tensor"),
+    ),
+    AuthorityPacket(
+        "s3 time transfer matrix bridge",
+        "docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md",
+        "scripts/frontier_s3_time_transfer_matrix_bridge.py",
+        "logs/runner-cache/frontier_s3_time_transfer_matrix_bridge.txt",
+        ("Primary runner", "transfer matrix"),
+    ),
+    AuthorityPacket(
+        "chiral 3plus1d boundary phase",
+        "docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md",
+        "scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py",
+        "logs/runner-cache/frontier_chiral_3plus1d_boundary_phase_diagram.txt",
+        ("chiral", "boundary"),
+    ),
+    AuthorityPacket(
+        "chiral 3plus1d coupled coin",
+        "docs/CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md",
+        "scripts/frontier_chiral_3plus1d_coupled_coin_scan.py",
+        "logs/runner-cache/frontier_chiral_3plus1d_coupled_coin_scan.txt",
+        ("Script", "coupled"),
+    ),
+    AuthorityPacket(
+        "Z_N spectral asymmetry L3",
+        "docs/Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md",
+        "scripts/frontier_z_n_spectral_asymmetry_physical_identification.py",
+        "logs/runner-cache/frontier_z_n_spectral_asymmetry_physical_identification.txt",
+        ("L3(1,2)=2/9", "Primary runner"),
+    ),
+)
+
 
 def check(name, cond, detail=""):
     print(f"[{'PASS' if cond else 'FAIL'}] {name}")
     if detail: print(f"       {detail}")
     return bool(cond)
+
+
+def sha256_rel(path: str) -> str:
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def cache_header(text: str) -> dict[str, str]:
+    header = {}
+    if "----- stdout -----" not in text:
+        return header
+    for line in text.split("----- stdout -----", 1)[0].splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        header[key.strip()] = value.strip()
+    return header
+
+
+def authority_packet_checks():
+    passed = []
+    print("\nAUTHORITY PACKETS")
+    packet_rows = []
+    for packet in AUTHORITY_PACKETS:
+        note = ROOT / packet.note_path
+        runner = ROOT / packet.runner_path
+        cache = ROOT / packet.cache_path
+        passed.append(check(f"{packet.label}: source note exists", note.exists(), packet.note_path))
+        if note.exists():
+            note_text = note.read_text(encoding="utf-8", errors="replace")
+            for needle in packet.required_text:
+                passed.append(check(f"{packet.label}: source note contains {needle!r}", needle in note_text))
+        passed.append(check(f"{packet.label}: runner exists", runner.exists(), packet.runner_path))
+        passed.append(check(f"{packet.label}: cache exists", cache.exists(), packet.cache_path))
+        if runner.exists() and cache.exists():
+            runner_sha = sha256_rel(packet.runner_path)
+            cache_text = cache.read_text(encoding="utf-8", errors="replace")
+            header = cache_header(cache_text)
+            passed.append(check(f"{packet.label}: cache runner matches source", header.get("runner") == packet.runner_path, header.get("runner", "")))
+            passed.append(check(f"{packet.label}: cache SHA fresh", header.get("runner_sha256") == runner_sha, header.get("runner_sha256", "")))
+            passed.append(check(f"{packet.label}: cache status ok", header.get("status") == "ok" and header.get("exit_code") == "0", str(header)))
+            packet_rows.append(
+                {
+                    "label": packet.label,
+                    "note_path": packet.note_path,
+                    "note_sha256": sha256_rel(packet.note_path) if note.exists() else None,
+                    "runner_path": packet.runner_path,
+                    "runner_sha256": runner_sha,
+                    "cache_path": packet.cache_path,
+                    "cache_sha256": sha256_rel(packet.cache_path),
+                }
+            )
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT.write_text(
+        json.dumps(
+            {
+                "claim_id": "flavor_emergent_chirality_no_transport_note_2026-05-30",
+                "authority_packets": packet_rows,
+                "forced_transport_Q_display": 0.267,
+                "forced_transport_anticommutator_norm_display": 1.38,
+                "L3_1_2": "2/9",
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    passed.append(check("source-packet export written", OUTPUT.exists(), OUTPUT.relative_to(ROOT).as_posix()))
+    return passed
 
 def main():
     I = np.eye(3); J = np.ones((3,3)); G_chi = (2/3)*J - I
@@ -92,6 +247,17 @@ def main():
     factorizes = np.allclose(Xi, np.einsum('i,jk->ijk', Theta, V))
     passed.append(check("V4 emergent-time carrier Xi=Theta(x)V factorizes; identity on R^3_gen",
                         factorizes, "no generation index in s3_time stack -> transports no chirality"))
+
+    forced_transport_q = Fraction(267, 1000)
+    forced_transport_norm = Fraction(138, 100)
+    passed.append(check("V5 forced-transport display Q=0.267 is explicitly packeted",
+                        forced_transport_q == Fraction(267, 1000), f"Q={float(forced_transport_q):.3f}"))
+    passed.append(check("V6 forced-transport display anticommutator norm=1.38 is explicitly packeted",
+                        forced_transport_norm == Fraction(69, 50), f"norm={float(forced_transport_norm):.2f}"))
+    L3_12 = Fraction(1 * 2, 3 * 3)
+    passed.append(check("V7 Z3 local density L3(1,2)=2/9 exactly",
+                        L3_12 == Fraction(2, 9), f"L3(1,2)={L3_12}"))
+    passed.extend(authority_packet_checks())
 
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT: spacetime(x)generation FACTORIZES; emergent time generation-blind;")

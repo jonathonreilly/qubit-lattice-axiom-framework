@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_emergent_chirality_no_transport_2026_05_30.py
-runner_sha256: 58e888f938f0c1e45e3aaaccf3520113c12964c9ada5bd3c730a0e57873b0a82
+runner_sha256: e7ade5edfcf2f3ba31ab399f55a5f30ddf2aa1a9d4acd9a803939121c450e88a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 [PASS] V1 native chirality eps|hw1=-I3: commutes R, does NOT anticommute Gamma_chi
@@ -14,8 +14,144 @@ status: ok
        eig=[-7.07106781e-01 -2.19544277e-16  7.07106781e-01], ||[H,R]||=1.732, Q_sv=0.5000
 [PASS] V4 emergent-time carrier Xi=Theta(x)V factorizes; identity on R^3_gen
        no generation index in s3_time stack -> transports no chirality
+[PASS] V5 forced-transport display Q=0.267 is explicitly packeted
+       Q=0.267
+[PASS] V6 forced-transport display anticommutator norm=1.38 is explicitly packeted
+       norm=1.38
+[PASS] V7 Z3 local density L3(1,2)=2/9 exactly
+       L3(1,2)=2/9
 
-SCORECARD PASS=4 FAIL=0
+AUTHORITY PACKETS
+[PASS] s3 time bilinear tensor primitive: source note exists
+       docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+[PASS] s3 time bilinear tensor primitive: source note contains 'Primary runner'
+[PASS] s3 time bilinear tensor primitive: source note contains 'K_R'
+[PASS] s3 time bilinear tensor primitive: runner exists
+       scripts/frontier_s3_time_bilinear_tensor_primitive.py
+[PASS] s3 time bilinear tensor primitive: cache exists
+       logs/runner-cache/frontier_s3_time_bilinear_tensor_primitive.txt
+[PASS] s3 time bilinear tensor primitive: cache runner matches source
+       scripts/frontier_s3_time_bilinear_tensor_primitive.py
+[PASS] s3 time bilinear tensor primitive: cache SHA fresh
+       743c8e4f922044494cc10e0665da3de02f21a4be8d300d13f0e7651ff7cbbe84
+[PASS] s3 time bilinear tensor primitive: cache status ok
+       {'runner': 'scripts/frontier_s3_time_bilinear_tensor_primitive.py', 'runner_sha256': '743c8e4f922044494cc10e0665da3de02f21a4be8d300d13f0e7651ff7cbbe84', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '15.04', 'status': 'ok'}
+[PASS] s3 time bilinear tensor action: source note exists
+       docs/S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md
+[PASS] s3 time bilinear tensor action: source note contains 'Primary runner'
+[PASS] s3 time bilinear tensor action: source note contains 'tensorized'
+[PASS] s3 time bilinear tensor action: runner exists
+       scripts/frontier_s3_time_bilinear_tensor_action.py
+[PASS] s3 time bilinear tensor action: cache exists
+       logs/runner-cache/frontier_s3_time_bilinear_tensor_action.txt
+[PASS] s3 time bilinear tensor action: cache runner matches source
+       scripts/frontier_s3_time_bilinear_tensor_action.py
+[PASS] s3 time bilinear tensor action: cache SHA fresh
+       539882d385a49c2bf47785dea8f84ab7e6cb9aff315d2de6f9840cdb4ef7589a
+[PASS] s3 time bilinear tensor action: cache status ok
+       {'runner': 'scripts/frontier_s3_time_bilinear_tensor_action.py', 'runner_sha256': '539882d385a49c2bf47785dea8f84ab7e6cb9aff315d2de6f9840cdb4ef7589a', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '2.76', 'status': 'ok'}
+[PASS] s3 time constructed support tensor: source note exists
+       docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md
+[PASS] s3 time constructed support tensor: source note contains 'Primary runner'
+[PASS] s3 time constructed support tensor: source note contains 'Xi_R'
+[PASS] s3 time constructed support tensor: runner exists
+       scripts/frontier_s3_time_constructed_support_tensor_primitive.py
+[PASS] s3 time constructed support tensor: cache exists
+       logs/runner-cache/frontier_s3_time_constructed_support_tensor_primitive.txt
+[PASS] s3 time constructed support tensor: cache runner matches source
+       scripts/frontier_s3_time_constructed_support_tensor_primitive.py
+[PASS] s3 time constructed support tensor: cache SHA fresh
+       2facf5e88c080e7c69524e44ec275892a23b31c6f5d3c2af47abb0d980045908
+[PASS] s3 time constructed support tensor: cache status ok
+       {'runner': 'scripts/frontier_s3_time_constructed_support_tensor_primitive.py', 'runner_sha256': '2facf5e88c080e7c69524e44ec275892a23b31c6f5d3c2af47abb0d980045908', 'timeout_sec': '180', 'exit_code': '0', 'elapsed_sec': '85.76', 'status': 'ok'}
+[PASS] s3 time tensor primitive prototype: source note exists
+       docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md
+[PASS] s3 time tensor primitive prototype: source note contains 'Primary runner'
+[PASS] s3 time tensor primitive prototype: source note contains 'Theta_R'
+[PASS] s3 time tensor primitive prototype: runner exists
+       scripts/frontier_s3_time_tensor_primitive_prototype.py
+[PASS] s3 time tensor primitive prototype: cache exists
+       logs/runner-cache/frontier_s3_time_tensor_primitive_prototype.txt
+[PASS] s3 time tensor primitive prototype: cache runner matches source
+       scripts/frontier_s3_time_tensor_primitive_prototype.py
+[PASS] s3 time tensor primitive prototype: cache SHA fresh
+       322db0d1eeafeb623b89b76e3dc21fcf074aaf73d3bf18032465cec7dd29c3a4
+[PASS] s3 time tensor primitive prototype: cache status ok
+       {'runner': 'scripts/frontier_s3_time_tensor_primitive_prototype.py', 'runner_sha256': '322db0d1eeafeb623b89b76e3dc21fcf074aaf73d3bf18032465cec7dd29c3a4', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '71.27', 'status': 'ok'}
+[PASS] s3 time spacetime tensor primitive: source note exists
+       docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md
+[PASS] s3 time spacetime tensor primitive: source note contains 'Primary runner'
+[PASS] s3 time spacetime tensor primitive: source note contains 'spacetime tensor'
+[PASS] s3 time spacetime tensor primitive: runner exists
+       scripts/frontier_s3_time_spacetime_tensor_primitive.py
+[PASS] s3 time spacetime tensor primitive: cache exists
+       logs/runner-cache/frontier_s3_time_spacetime_tensor_primitive.txt
+[PASS] s3 time spacetime tensor primitive: cache runner matches source
+       scripts/frontier_s3_time_spacetime_tensor_primitive.py
+[PASS] s3 time spacetime tensor primitive: cache SHA fresh
+       f248a79d9d5f846e00b9273b717f72980e106abab254c5b2061d4bdc0cf81976
+[PASS] s3 time spacetime tensor primitive: cache status ok
+       {'runner': 'scripts/frontier_s3_time_spacetime_tensor_primitive.py', 'runner_sha256': 'f248a79d9d5f846e00b9273b717f72980e106abab254c5b2061d4bdc0cf81976', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '27.40', 'status': 'ok'}
+[PASS] s3 time transfer matrix bridge: source note exists
+       docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md
+[PASS] s3 time transfer matrix bridge: source note contains 'Primary runner'
+[PASS] s3 time transfer matrix bridge: source note contains 'transfer matrix'
+[PASS] s3 time transfer matrix bridge: runner exists
+       scripts/frontier_s3_time_transfer_matrix_bridge.py
+[PASS] s3 time transfer matrix bridge: cache exists
+       logs/runner-cache/frontier_s3_time_transfer_matrix_bridge.txt
+[PASS] s3 time transfer matrix bridge: cache runner matches source
+       scripts/frontier_s3_time_transfer_matrix_bridge.py
+[PASS] s3 time transfer matrix bridge: cache SHA fresh
+       c952fd283165cfc8794340be47751725ace2eebc9b41e9b2783121cc67e0054a
+[PASS] s3 time transfer matrix bridge: cache status ok
+       {'runner': 'scripts/frontier_s3_time_transfer_matrix_bridge.py', 'runner_sha256': 'c952fd283165cfc8794340be47751725ace2eebc9b41e9b2783121cc67e0054a', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '1.99', 'status': 'ok'}
+[PASS] chiral 3plus1d boundary phase: source note exists
+       docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md
+[PASS] chiral 3plus1d boundary phase: source note contains 'chiral'
+[PASS] chiral 3plus1d boundary phase: source note contains 'boundary'
+[PASS] chiral 3plus1d boundary phase: runner exists
+       scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py
+[PASS] chiral 3plus1d boundary phase: cache exists
+       logs/runner-cache/frontier_chiral_3plus1d_boundary_phase_diagram.txt
+[PASS] chiral 3plus1d boundary phase: cache runner matches source
+       scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py
+[PASS] chiral 3plus1d boundary phase: cache SHA fresh
+       49b7ce1ed1d6236d1ca3ca7d45fa7b3fff653cdec214dec7d8a8bd160715780c
+[PASS] chiral 3plus1d boundary phase: cache status ok
+       {'runner': 'scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py', 'runner_sha256': '49b7ce1ed1d6236d1ca3ca7d45fa7b3fff653cdec214dec7d8a8bd160715780c', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '70.10', 'status': 'ok'}
+[PASS] chiral 3plus1d coupled coin: source note exists
+       docs/CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md
+[PASS] chiral 3plus1d coupled coin: source note contains 'Script'
+[PASS] chiral 3plus1d coupled coin: source note contains 'coupled'
+[PASS] chiral 3plus1d coupled coin: runner exists
+       scripts/frontier_chiral_3plus1d_coupled_coin_scan.py
+[PASS] chiral 3plus1d coupled coin: cache exists
+       logs/runner-cache/frontier_chiral_3plus1d_coupled_coin_scan.txt
+[PASS] chiral 3plus1d coupled coin: cache runner matches source
+       scripts/frontier_chiral_3plus1d_coupled_coin_scan.py
+[PASS] chiral 3plus1d coupled coin: cache SHA fresh
+       4b1cb6d9ab49054f7fc16906e5fa2d6b1378bab9dc0efad4e0883942a49a110e
+[PASS] chiral 3plus1d coupled coin: cache status ok
+       {'runner': 'scripts/frontier_chiral_3plus1d_coupled_coin_scan.py', 'runner_sha256': '4b1cb6d9ab49054f7fc16906e5fa2d6b1378bab9dc0efad4e0883942a49a110e', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '1.48', 'status': 'ok'}
+[PASS] Z_N spectral asymmetry L3: source note exists
+       docs/Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md
+[PASS] Z_N spectral asymmetry L3: source note contains 'L3(1,2)=2/9'
+[PASS] Z_N spectral asymmetry L3: source note contains 'Primary runner'
+[PASS] Z_N spectral asymmetry L3: runner exists
+       scripts/frontier_z_n_spectral_asymmetry_physical_identification.py
+[PASS] Z_N spectral asymmetry L3: cache exists
+       logs/runner-cache/frontier_z_n_spectral_asymmetry_physical_identification.txt
+[PASS] Z_N spectral asymmetry L3: cache runner matches source
+       scripts/frontier_z_n_spectral_asymmetry_physical_identification.py
+[PASS] Z_N spectral asymmetry L3: cache SHA fresh
+       fb112b9758c9716dde8576674e39cd5ca667c5e01b2fa475233d89ec2843d8ad
+[PASS] Z_N spectral asymmetry L3: cache status ok
+       {'runner': 'scripts/frontier_z_n_spectral_asymmetry_physical_identification.py', 'runner_sha256': 'fb112b9758c9716dde8576674e39cd5ca667c5e01b2fa475233d89ec2843d8ad', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.37', 'status': 'ok'}
+[PASS] source-packet export written
+       outputs/flavor_emergent_chirality_no_transport_source_packet_2026_05_30.json
+
+SCORECARD PASS=80 FAIL=0
 VERDICT: spacetime(x)generation FACTORIZES; emergent time generation-blind;
 tensor-product loophole open but uncrossed by any NATIVE filling; the single
 unsupplied import = C3-orbit-splitting chiral grading on R^3_gen. Next path off the

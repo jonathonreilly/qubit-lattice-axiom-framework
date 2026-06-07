@@ -1,0 +1,25 @@
+loop_slug: flavor-emergent-chirality-source-packet
+branch: physics-loop/flavor-emergent-chirality-source-packet-20260607
+base: origin/main@a26b0f21e
+date: 2026-06-07
+mode: science_fix
+target_status: exact-support
+target_claim_id: flavor_emergent_chirality_no_transport_note_2026-05-30
+active_route: upstream_authority_source_packet
+hard_residual: "missing_dependency_edge: include the one-hop s3_time carrier notes, the chiral_3plus1d native-chirality authority, and a source or runner assertion for the forced-transport Q/norm and L3(1,2) numerics, then re-audit."
+files_touched:
+  - docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md
+  - scripts/flavor_emergent_chirality_no_transport_2026_05_30.py
+  - logs/runner-cache/flavor_emergent_chirality_no_transport_2026_05_30.txt
+  - outputs/flavor_emergent_chirality_no_transport_source_packet_2026_05_30.json
+  - .claude/science/physics-loops/flavor-emergent-chirality-source-packet/
+open_imports:
+  - independent_audit_required
+  - c3_orbit_splitting_operator_still_unsupplied
+no_go_routes:
+  - "Emergent time/chirality transport does not supply a native C3-breaking generation operator."
+trace_gate_classification: direct_blocker_closure
+review_disposition: local_self_review_pass
+pr_status: pending_create
+next_exact_action: "Commit, push, open PR, then stop if refreshed queue has no comparable source-packet repair left."
+stop_condition: "Remaining uncovered rows require new bridge theorems or accepted premises rather than packet completeness."

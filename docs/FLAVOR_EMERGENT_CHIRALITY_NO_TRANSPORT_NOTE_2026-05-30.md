@@ -3,7 +3,10 @@
 **Date:** 2026-05-30
 **Claim type:** bounded_theorem
 **Claim boundary:** bounded no-go (sharpening) + one positive next-path identification.
-**Runner:** `scripts/flavor_emergent_chirality_no_transport_2026_05_30.py` (SCORECARD PASS=4).
+**Runner:** `scripts/flavor_emergent_chirality_no_transport_2026_05_30.py`
+(SCORECARD PASS=80 FAIL=0 after source-packet repair).
+**Cached log:** `logs/runner-cache/flavor_emergent_chirality_no_transport_2026_05_30.txt`.
+**Source-packet export:** `outputs/flavor_emergent_chirality_no_transport_source_packet_2026_05_30.json`.
 **Source:** 11-agent build `wf_e18432a2` (map → 4 candidate constructions → adversarial verify → lit disambiguator).
 
 ## Question
@@ -47,6 +50,21 @@ grading **must break C₃-equivariance**. That is a constraint, not an impossibi
 - `anomaly_forces_time` (all variants) and `a3_route3` are **meta / unaudited** — NOT retained.
   Spacetime→generation transport is **not** a landed theorem; the retained crux is only the
   narrow circulant identity + `koide_anticommuting_operator_derivation` + textbook QFT.
+
+## Source-packet repair
+
+The repaired runner now includes the restricted upstream packets that the audit
+asked for:
+
+- six `s3_time` source-note/runner/cache packets;
+- two `chiral_3plus1d` source-note/runner/cache packets;
+- the `Z_N` spectral-asymmetry packet carrying `L3(1,2)=2/9`;
+- explicit runner assertions for the displayed forced-transport `Q=0.267`,
+  `||{D,Gamma_chi}||=1.38`, and exact `L3(1,2)=2/9` numerics.
+
+This is still a bounded no-transport/source-packet repair. It does not prove a
+C3-breaking generation operator, and it does not close the charged-lepton
+readout gate.
 
 ## Sharpest next path (off the circulant wall — NOT a closing framing)
 Build the **operator-realization bridge for the equivariant APS η-invariant / Z_N

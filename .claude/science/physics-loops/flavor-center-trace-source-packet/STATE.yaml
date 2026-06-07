@@ -1,0 +1,19 @@
+loop_slug: flavor-center-trace-source-packet
+target_claim_id: flavor_center_trace_closed_capstone_note_2026-05-30
+branch: physics-loop/flavor-center-trace-source-packet-20260607
+base_ref: origin/main
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes_repair_by_narrowing_not_promotion
+active_route: narrow historical closed-capstone row to reduced-status source packet
+files_touched:
+  - docs/FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md
+  - scripts/flavor_center_trace_closed_2026_05_30.py
+  - outputs/flavor_center_trace_reduced_status_source_packet_2026_05_30.json
+  - logs/runner-cache/flavor_center_trace_closed_2026_05_30.txt
+open_imports:
+  - physical observable-algebra identification bridge remains open
+  - pre-record trace identification remains retained_bounded
+no_new_axioms: true
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer extracts the reduced-status packet; independent audit decides whether the narrowed row is clean."

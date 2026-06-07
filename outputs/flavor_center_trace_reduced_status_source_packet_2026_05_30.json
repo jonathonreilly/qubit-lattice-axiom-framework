@@ -1,0 +1,313 @@
+{
+  "actual_current_surface_status": "exact-support",
+  "authority_packets": {
+    "no_proper_quotient": {
+      "cache_path": "logs/runner-cache/frontier_three_gen_observable_no_proper_quotient_narrow.txt",
+      "cache_runner_sha256": "76d05c81bc345d10c7de250d7ee740365388fab2dca759fdb71d67fb359e1001",
+      "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+      "effective_status": "retained",
+      "note_path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
+      "note_sha256": "ecc3386078b1401209aeca659957c594acc0ae989fcffccffacd11f7ee8845e4",
+      "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
+      "runner_sha256": "76d05c81bc345d10c7de250d7ee740365388fab2dca759fdb71d67fb359e1001"
+    },
+    "pre_record_trace_boundary": {
+      "cache_path": "logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt",
+      "cache_runner_sha256": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8",
+      "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+      "effective_status": "retained_bounded",
+      "note_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+      "note_sha256": "6a131ecfbaebfc288b9bdcb2ff202464a7b91651846641cb936786d468b688b1",
+      "runner_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
+      "runner_sha256": "4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8"
+    },
+    "uhf_trace_uniqueness": {
+      "cache_path": null,
+      "cache_runner_sha256": null,
+      "claim_id": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "effective_status": "retained",
+      "note_path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "note_sha256": "4d8d4f1c7702ee4e0992508f8aec376d96497fa42378a5e49cb57612b68f484c",
+      "runner_path": null,
+      "runner_sha256": null
+    }
+  },
+  "checks": [
+    {
+      "detail": "flavor_center_trace_closed_capstone_note_2026-05-30",
+      "name": "target ledger row exists",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "target currently remains audited_conditional",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "target re-audit blocker mentions missing dependency edge or narrowing",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "repaired note contains 'reduced-status source packet'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "repaired note contains 'old closed-capstone framing is superseded'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "repaired note contains 'pre-record identification remains retained_bounded'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "repaired note contains 'not a ledger retag'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "P_i are projectors",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "P_i are mutually orthogonal",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "sum_i P_i = I_3",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "C3^3 = I_3",
+      "ok": true
+    },
+    {
+      "detail": "dim=9",
+      "name": "D3 projectors plus C3 generate full M3(C)",
+      "ok": true
+    },
+    {
+      "detail": "invariant=[(), (0, 1, 2)]",
+      "name": "only empty/full coordinate subsets preserve D3 and C3",
+      "ok": true
+    },
+    {
+      "detail": "0.333333333333",
+      "name": "tracial I/3 gives singlet population 1/3",
+      "ok": true
+    },
+    {
+      "detail": "0.666666666667",
+      "name": "tracial I/3 gives doublet population 2/3",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "singlet/doublet dephasing preserves population weights",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "dimension-weighted full trace default gives Q=1",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "equal central-atom weighting would be an extra selector",
+      "ok": true
+    },
+    {
+      "detail": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+      "name": "no_proper_quotient: ledger row exists",
+      "ok": true
+    },
+    {
+      "detail": "observed='retained'",
+      "name": "no_proper_quotient: effective_status is retained",
+      "ok": true
+    },
+    {
+      "detail": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
+      "name": "no_proper_quotient: note exists",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "no_proper_quotient: note contains 'no proper quotient'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "no_proper_quotient: note contains 'M_3'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "no_proper_quotient: note contains 'physical-species interpretation'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "no_proper_quotient: note contains 'out of scope'",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
+      "name": "no_proper_quotient: runner exists",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/frontier_three_gen_observable_no_proper_quotient_narrow.txt",
+      "name": "no_proper_quotient: cache exists",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "no_proper_quotient: cache pins current runner sha",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "no_proper_quotient: cache contains 'TOTAL: PASS=45, FAIL=0'",
+      "ok": true
+    },
+    {
+      "detail": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "name": "uhf_trace_uniqueness: ledger row exists",
+      "ok": true
+    },
+    {
+      "detail": "observed='retained'",
+      "name": "uhf_trace_uniqueness: effective_status is retained",
+      "ok": true
+    },
+    {
+      "detail": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "name": "uhf_trace_uniqueness: note exists",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "uhf_trace_uniqueness: note contains 'unique tracial state'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "uhf_trace_uniqueness: note contains 'provenance'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "uhf_trace_uniqueness: note contains 'not an admitted import'",
+      "ok": true
+    },
+    {
+      "detail": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+      "name": "pre_record_trace_boundary: ledger row exists",
+      "ok": true
+    },
+    {
+      "detail": "observed='retained_bounded'",
+      "name": "pre_record_trace_boundary: effective_status is retained_bounded",
+      "ok": true
+    },
+    {
+      "detail": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+      "name": "pre_record_trace_boundary: note exists",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "pre_record_trace_boundary: note contains 'Narrowed claim'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "pre_record_trace_boundary: note contains 'Open admission'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "pre_record_trace_boundary: note contains 'unique tracial state'",
+      "ok": true
+    },
+    {
+      "detail": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
+      "name": "pre_record_trace_boundary: runner exists",
+      "ok": true
+    },
+    {
+      "detail": "logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt",
+      "name": "pre_record_trace_boundary: cache exists",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "pre_record_trace_boundary: cache pins current runner sha",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "pre_record_trace_boundary: cache contains 'PASS=12 FAIL=0'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "pre_record_trace_boundary: cache contains 'pre-record identification remains open'",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "old closed-capstone framing is not restored",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "pre-record physical trace identification is bounded, not unbounded",
+      "ok": true
+    },
+    {
+      "detail": "outputs/flavor_center_trace_reduced_status_source_packet_2026_05_30.json",
+      "name": "certificate JSON written",
+      "ok": true
+    }
+  ],
+  "claim_id": "flavor_center_trace_closed_capstone_note_2026-05-30",
+  "exact_algebra": {
+    "center_atom_equal_weight_requires_extra_selector": true,
+    "dephased_populations": {
+      "doublet": 0.6666666666666669,
+      "singlet": 0.3333333333333333
+    },
+    "full_trace_q_default": 1.0,
+    "generated_algebra_dimension": 9,
+    "invariant_coordinate_subsets": [
+      [],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "tracial_populations": {
+      "doublet": 0.6666666666666667,
+      "singlet": 0.3333333333333333
+    }
+  },
+  "ledger_retag_in_this_branch": false,
+  "no_new_axioms": true,
+  "old_closure_restored": false,
+  "reachability_to_target": "closes_repair_by_narrowing_not_promotion",
+  "scorecard": {
+    "fail": 0,
+    "pass": 49
+  },
+  "trace_class": "direct_blocker_closure"
+}

@@ -1,0 +1,31 @@
+loop_slug: generation-berry-holonomy-selector-20260607
+date: 2026-06-07
+branch: physics-loop/generation-berry-holonomy-selector-20260607
+base: origin/main
+current_goal: "Attack the fourth chirality-resolution target: can native C3 generation Berry/holonomy supply the missing selector?"
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: native_c3_generation_berry_holonomy_selector
+cycle_count: 1
+block_count: 1
+hard_residual: "A selector must move beyond flat native C3 central projectors: staggered-Dirac mass/Yukawa holomorphy or rooted spin-generation entanglement remains open."
+files_touched:
+  - docs/GENERATION_BERRY_HOLONOMY_SELECTOR_NO_GO_NOTE_2026-06-07.md
+  - scripts/frontier_generation_berry_holonomy_selector_no_go_2026_06_07.py
+  - logs/runner-cache/frontier_generation_berry_holonomy_selector_no_go_2026_06_07.txt
+  - .claude/science/physics-loops/generation-berry-holonomy-selector-20260607/
+open_imports:
+  - "Physical prior over the Record two-sector alphabet."
+  - "K-reality or partition-coarseness selector if used to choose delta=0."
+  - "Staggered-Dirac mass/Yukawa fluctuation determinant if used to choose holomorphic/Pfaffian readout."
+  - "Rooted spin-generation entanglement if used to create nontrivial generation projector motion."
+no_go_routes:
+  - "Native C3 generation Berry/holonomy flat connection as selector."
+runner_result: "PASS=24 FAIL=0"
+review_loop_disposition: pass
+audit_results_modified: false
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3141"
+next_exact_action: "Pivot to mass/Yukawa fluctuation-determinant holomorphy or rooted spin-generation-entanglement residual."
+stop_condition: "Route 4 pruned; next route is the harder mass/Yukawa fluctuation-determinant holomorphy or rooted spin-generation-entanglement residual."

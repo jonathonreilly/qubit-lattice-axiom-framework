@@ -43,12 +43,15 @@ LOG_FILE = "logs/" + time.strftime("%Y-%m-%d") + "-grav_decoherence_derived.txt"
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SOURCE_NOTE = REPO_ROOT / "docs/GRAV_DECOHERENCE_DERIVED_NOTE.md"
 SOURCE_REQUIRED = [
-    "**Claim type:** bounded support note",
-    "**Type:** conditional / support",
+    "**Claim type:** bounded_theorem",
+    "**Type:** bounded companion / external-model arithmetic",
+    "2026-06-07 Companion-Boundary Retargeting",
     "not a framework-only derivation",
     "Penrose-Diosi/BMV model",
     "external inputs for this companion surface",
-    "Open Inputs That Remain Load-Bearing",
+    "companion arithmetic",
+    "not a load-bearing retained premise",
+    "Open Inputs Outside This Companion Boundary",
 ]
 SOURCE_BANNED = [
     ("old title overclaim", "Derived" + " from Framework Axioms"),

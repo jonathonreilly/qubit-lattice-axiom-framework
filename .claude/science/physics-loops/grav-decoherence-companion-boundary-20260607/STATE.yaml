@@ -1,0 +1,26 @@
+loop_slug: grav-decoherence-companion-boundary-20260607
+date: 2026-06-07
+branch: physics-loop/grav-decoherence-companion-boundary-20260607
+base: origin/main
+target_claim_id: grav_decoherence_derived_note
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle: 1
+active_route: companion-boundary retargeting
+hard_residual: derive physical mass-source/readout, G_N/SI normalization, Penrose-Diosi rate law, BMV geometry, Planck lattice pin, and L^{-1}=G_0
+files_touched:
+  - docs/GRAV_DECOHERENCE_DERIVED_NOTE.md
+  - scripts/frontier_grav_decoherence_derived.py
+  - logs/runner-cache/frontier_grav_decoherence_derived.txt
+open_imports:
+  - physical gravitational source/readout
+  - SI coupling normalization
+  - Penrose-Diosi field-distinguishability-to-rate bridge
+  - BMV/NV geometry and cutoff conventions
+  - Planck lattice pin
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+review_status: pending reviewer extraction
+audit_data_modified: false
+next_exact_action: reviewer can extract the bounded companion boundary and return the row to audit
+stop_condition: no physical gravitational-decoherence theorem is claimed

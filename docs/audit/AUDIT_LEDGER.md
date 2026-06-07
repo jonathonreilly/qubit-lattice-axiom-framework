@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 737 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1309 |
+| unaudited | 1308 |
 | meta | 310 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,21 +60,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1156 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1619 |
+| `unaudited` | 1618 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1355 |
 | `decoration` | 53 |
-| `meta` | 318 |
+| `meta` | 319 |
 | `no_go` | 319 |
 | `open_gate` | 135 |
-| `positive_theorem` | 773 |
+| `positive_theorem` | 772 |
 
 | criticality | count |
 |---|---:|
@@ -1316,6 +1316,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `packet_memory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_dynamics_family_lift_closeout_index_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13748,6 +13749,30 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** This branch indexes the six-PR post-record dynamics stack built at the end of the campaign.  _(class `E`)_
 - **chain closes:** True — The restricted packet supports the meta/indexing claim: the note lists six PR rows and the runner checks those entries, cached-summary strings, status counts, and firewall flags. This closes only as an index definition/bookkeeping claim, not as a physics derivation.
 - **rationale:** The runner does not derive a physics result or instantiate framework dynamics; it hard-codes the six StackPr entries, expected summary strings, and firewall booleans, then checks that the source note and cache text contain those markers. The load-bearing step is therefore a definition/indexing assertion rather than class C first-principles compute or independent algebraic closure. The claimed branch-local handoff map is supported within that limited scope, but the audit verdict must reflect that the chain reduces to bookkeeping definitions.
+- **auditor confidence:** high
+
+### `post_record_dynamics_family_lift_closeout_index_2026-06-06`
+
+- **Note:** [`POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md`](../../docs/POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Source-side audit of the closeout index asserting that PRs #2850, #2853, #2856, #2858, #2861, #2864, #2868, #2871, #2874, and #2875 are indexed with 6 exact-support, 1 bounded-support, and 3 no-go entries, without applying audit verdicts or promotions.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-184709-5d1386b666-post_record_dynamics_family_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The extended stack has six `exact-support` layers, one `bounded-support` layer, and three `no-go` layers.  _(class `B`)_
+- **chain closes:** False — The table arithmetic itself checks: the ten listed rows contain six exact-support, one bounded-support, and three no-go entries, with the family-lift trio #2871/#2874/#2875 present. The broader chain does not close because the packet declares no cited authorities while the runner and claim rely on ten upstream source notes/cached summaries, and the source note's claimed repaired PASS=60/PASS=47 certificates do not match the runner's hard-coded PASS=64/PASS=52 checks.
+- **rationale:** This is a meta index and cross-note artifact verification, not a first-principles derivation from an axiom. The internal count of the displayed stack entries is correct, but the restricted packet omits the full upstream authorities that the index and runner use to support those statuses. There is also source-runner drift: the note says the runner consumes repaired directed-certificate `SUMMARY: PASS=60 FAIL=0` and stack-map `SUMMARY: PASS=47 FAIL=0`, while the runner source checks `SUMMARY: PASS=64 FAIL=0` and `SUMMARY: PASS=52 FAIL=0` for those corresponding layers. That prevents an audited_clean verdict as written.
+- **open / conditional deps cited:**
+  - `POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`
+  - `POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md`
+  - `POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`
+  - `POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md`
+  - `POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md`
+  - `POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md`
+  - `POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md`
+  - `POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md`
+  - `POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md`
+  - `POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `post_record_expectation_concentration_firewall_2026-06-06`

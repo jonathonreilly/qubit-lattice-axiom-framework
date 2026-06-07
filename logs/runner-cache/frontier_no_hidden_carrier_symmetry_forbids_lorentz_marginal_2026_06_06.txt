@@ -1,0 +1,47 @@
+==============================================================================================
+No hidden carrier symmetry forbids the marginal Lorentz operator (closure (i) fails)
+==============================================================================================
+
+----------------------------------------------------------------------------------------------
+Part A: velocity-coefficient invariants -- O_h leaves the c_t/c_s split; only t<->x kills it
+----------------------------------------------------------------------------------------------
+  [PASS] (A1) under O_h x time-parity the velocity coefficients (c_t,c_x,c_y,c_z) have invariant dim 2 = (c_t, c_s)  --  dim=2 -> the c_t/c_s split is O_h-INVARIANT (allowed, NOT forbidden)
+  [PASS] (A2) only the 4D t<->x symmetry (B_4) collapses to invariant dim 1 = a single c (forbids the split)  --  dim=1 -> forbidding c requires a t<->x-mixing symmetry
+  [PASS] (A3) => the marginal c-operator is the (dim2 - dim1) mode, EVEN under O_h, ODD only under t<->x  --  the residual is the single c_t/c_s number; O_h cannot resolve it
+
+----------------------------------------------------------------------------------------------
+Part B: internal/gauge symmetries act on the fiber -> commute with the velocity scalar
+----------------------------------------------------------------------------------------------
+  [PASS] (B1) the velocity magnitude c_s is INVARIANT under the inner Cl(3,0) su(2) automorphism  --  c_s: 1.3000 -> 1.3000 (internal rot = spatial rot via the merger)
+  [PASS] (B2) the velocity magnitude c_s is INVARIANT under the U(1) phase / gauge (acts on charge index)  --  gauge SU(3)xU(1) acts on colour/charge, orthogonal to the velocity scalar
+  [PASS] (B3) => internal/gauge symmetries leave the c-operator coefficient unchanged (do NOT forbid it)  --  a Lorentz scalar is internal-singlet by construction
+
+----------------------------------------------------------------------------------------------
+Part C: the Clifford algebra does NOT fix c_t/c_s (per-generator rescaling = free metric)
+----------------------------------------------------------------------------------------------
+  [PASS] (C1) rescaling sigma_i -> c_s sigma_i keeps the Clifford relation {.,.}=2 c_s^2 delta (any c_s valid)  --  the velocity coefficient c_s is a FREE rescaling of the Clifford generators
+  [PASS] (C2) sigma_i^2 = I fixes the velocity DIRECTION (eig +-1); the magnitude c_s multiplies it (free)  --  c_s*sigma has eigenvalues +-c_s -> c_s is the un-fixed coupling
+  [PASS] (C3) => the Cl(3,1) metric ratio c_t/c_s is a free per-generator rescaling, NOT fixed by the algebra  --  eta = diag(0.36, -2.89, ...) -> ratio free
+
+----------------------------------------------------------------------------------------------
+Part D: the DISCRIMINATOR -- only a (t,x) rotation makes c_t/c_s odd
+----------------------------------------------------------------------------------------------
+  [PASS] (D1) under a t<->x swap the split delta = c_t - c_s flips sign (delta -> -delta): c_t/c_s is ODD  --  the unique generator forbidding the c-operator mixes time and space
+  [PASS] (D2) the t<->x swap is the 4th signed-permutation axis the Z^3 Lattice axiom DENIES (= the new axiom)  --  B_4 (which contains t<->x) -> dim1; O_h+time-parity -> dim2: the gap is exactly the t<->x direction
+
+----------------------------------------------------------------------------------------------
+Part E: SUSY-analog -- no boson-fermion velocity tie in the framework
+----------------------------------------------------------------------------------------------
+  [PASS] (E1) the one KNOWN custodial route (SUSY: equal boson/fermion velocities) is ABSENT  --  fermions = site-qubits; gauge bosons = link-variables; no substrate map relates their velocities
+  [PASS] (E2) the RG attractor (#3121) drags v_F, v_b together DYNAMICALLY -- an attractor, not a symmetry that forbids the split  --  the UV mean-shift survives the flow (Collins); attraction != protection
+
+----------------------------------------------------------------------------------------------
+Verdict
+----------------------------------------------------------------------------------------------
+  [PASS] (V1) closure (i) SYSTEMATICALLY FAILS: the c-operator is a Lorentz scalar, even under every carrier symmetry  --  O_h/internal-su2/gauge/U(1)/chiral/CPT all act within-space or on the fiber; none mixes t and space
+  [PASS] (V2) the ONLY forbidding symmetry is the t<->x boost/SO(4) = the absent 4th lattice direction (a new axiom)
+  [PASS] (V3) => the Lorentz-naturalness custodial mechanism must be (ii) an admitted c_t=c_s axiom OR (iii) a strong-CFT  --  (iii) precluded by asymptotic freedom (#3123); no existing-structure symmetry (Record, Quantum, Lattice) closes it
+
+==============================================================================================
+TOTAL: 16 PASS / 0 FAIL
+==============================================================================================

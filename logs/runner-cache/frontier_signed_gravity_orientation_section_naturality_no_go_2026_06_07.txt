@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_signed_gravity_orientation_section_naturality_no_go_2026_06_07.py
+runner_sha256: 109b191ea344309c2c54674f366dbc9b39064f0cbbec97623963582abe4d36ae
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================================
+Signed-gravity orientation section: equivariant naturality no-go
+========================================================================================
+
+[BLOCK 1] A Z2 torsor has no sign-flip-invariant section
+  [PASS] sign flip sends + section to - section
+  [PASS] sign flip sends - section to + section
+  [PASS] the flip action has no fixed section
+  [PASS] no constant section selector is invariant under the torsor automorphism -- canonical gauge-invariant selection would require a fixed point
+
+[BLOCK 2] Multiplicative sewing is compatible with both orientations
+  [PASS] sewing is Z2 multiplication
+  [PASS] opposite local sections sew coherently
+  [PASS] multiplicativity alone does not prefer + over - -- sewn_values=[-1, 1]
+
+[BLOCK 3] Flat local-system gauge changes act transitively on sections
+  [PASS] + section is a flat global section
+  [PASS] - section is a flat global section
+  [PASS] global gauge flip maps + global section to - global section
+  [PASS] global gauge flip maps - global section to + global section
+  [PASS] gauge orbit contains both constant global sections -- orbit_size=8
+
+[BLOCK 4] Source vector requires the chosen section
+  [PASS] orientation-even positive source is section-independent
+  [PASS] desired odd source appears with the minus section
+  [PASS] torsor host without a section supplies no active source
+  [PASS] both section choices are coherent but give different source vectors -- plus=(1, 1), minus=(1, -1)
+
+========================================================================================
+SCORECARD: PASS=16 FAIL=0
+========================================================================================
+
+----- stderr -----
+

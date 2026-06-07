@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 742 |
+| **retained_bounded** | 743 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1295 |
+| unaudited | 1294 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1162 |
+| `audited_clean` | 1163 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1606 |
+| `unaudited` | 1605 |
 
 | claim_type | count |
 |---|---:|
@@ -1240,6 +1240,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_fam2_seed0_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed0_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed1_control_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `wave_direct_dm_h025_fam2_seed1_followup_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_two_point_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wave_direct_dm_h025_feasibility_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_high_band_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18498,6 +18499,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The primary runner calls measure_dm over the stated strengths and prints values matching the note; the helper path shown instantiates the lattice growth, wave solve, beam propagation, and history comparison rather than importing the contested conclusion. Within the restricted packet, the stated null, sign pattern, and weak-field scaling summary follow from the completed runner output.
 - **rationale:** The source note's load-bearing numerical claim is supported by a completed runner with exit code 0, and the printed rows match the note's table and summary. The primary runner does not hard-code the contested output values; it delegates to measure_dm and computes null size, sign pattern, and scaled spread from returned rows. No cited upstream authority is needed for this bounded control-ladder claim, and the note explicitly avoids broader family-pair portability claims.
 - **auditor confidence:** medium
+
+### `wave_direct_dm_h025_fam2_seed1_followup_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the exact Fam2 seed1 H=0.25 direct-dM matched-history replay at source strength 0.004, including its use as a controlled Fam2 fine-H pair datapoint but not as a portability or amplitude-law claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-191926-8347fe207e-wave_direct_dm_h025_fam2_see`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The target runner recomputes the fixed Fam2 seed1 H=0.25, S=0.004 replay and checks dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03%, and late gain=+0.002037.  _(class `C`)_
+- **chain closes:** True — The runner computes through the exposed measure_dm path, including grow, solve_wave, prop_beam, and cz, rather than only printing constants; the displayed delta_hist, R_hist, late-gain, sign, and ladder-spread arithmetic also checks independently from the tables. All one-hop cited authorities are retained-grade, and the note keeps the conclusion inside the bounded target/pair scope.
+- **rationale:** The load-bearing target replay is a finite first-principles computation within the provided framework sources, with the transitive helper code exposed and tied to SHA-fresh successful caches. The hard-coded EXPECTED values are used as archive comparisons, but the contested row is recomputed before comparison through the supplied wave and beam-propagation code. The cited Fam2 controls, Fam2 synthesis, Fam1 synthesis, and portability batch are retained or retained_bounded, and the source avoids promoting the result beyond the fixed bounded replay and controlled pair surface.
+- **auditor confidence:** high
 
 ### `wave_direct_dm_h025_fam2_two_point_synthesis_note`
 

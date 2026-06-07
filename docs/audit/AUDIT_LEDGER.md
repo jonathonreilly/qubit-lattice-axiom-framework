@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 717 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1304 |
+| unaudited | 1303 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1130 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1611 |
+| `unaudited` | 1610 |
 
 | claim_type | count |
 |---|---:|
@@ -1269,6 +1269,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4141,6 +4142,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** As mu^2 -> 0, the q=0 monopole |Vq(0)|=G/mu^2 diverges while the corner term |Vq(Delta k)|=G/(8+mu^2) tends to G/8, so the delta magnitude is carried by the gravity mediator IR scale rather than fixed as a flavor value.  _(class `A`)_
 - **chain closes:** True — The displayed formulas give delta_ij=(-G/mu^2+G/(8+mu^2))/N, so its leading magnitude diverges with the zero-mode IR regulator while the corner contribution is finite. Independently, eps((pi,-pi,0)) and permutations equals 8, C+C^2=J-I for the 3-cycle, and the real single-hop second-order matrix has a real I plus J-I form.
 - **rationale:** The load-bearing content is algebraic and closes over the supplied delta/Vq form, retained bounded mediator and K-real cone inputs, and the accepted scale-reference primitive. The runner source performs actual finite checks rather than merely printing constants, and an independent check reproduces the IR limit, corner eps=8, C+C^2=J-I, and real single-hop K-real form. The note does not claim the physical magnitude value, full complex-hopping K-reality, r/Q, or an unsupplied hierarchy window, so the named open surfaces remain outside the audited closure.
+- **auditor confidence:** high
+
+### `delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The retained screened-Poisson two-body surface supports attractive partner force and negative two-excitation mediator energy on the audited finite rows; the audited packet does not close the unconditional propagation from that negative mediator energy to negative K_C3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-000855-26354a8e7b-delta_sign_fixed_negative_by`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** “Since delta = E_2 - 2*E_1 + E_0 is exactly this two-excitation mutual energy, delta = E_mut < 0; propagating into the second-order effective operator on C^8 gives K_C3 < 0.”  _(class `A`)_
+- **chain closes:** False — The mediator-sign portion closes on the retained_bounded finite surface, but the final K_C3 sign does not follow from sign(delta) alone in the runner’s own second-order C^8 model. An independent two-path elimination gives K_offdiag = delta/(1 + delta), so sign(K_C3)=sign(delta) requires an additional normalization/gap condition such as delta > -1, which the packet does not supply.
+- **rationale:** The cited two-body authority is retained_bounded and the runner genuinely recomputes the attractive force surface and negative E_mut rows rather than merely printing constants. However, the load-bearing sign propagation is only checked at the chosen sample delta = -0.3 and is not an unconditional algebraic identity of the displayed second-order model. The packet also flags but does not close the bridge identifying the generation pair with the same psi-quanta sourcing the retained mediator, and sign-definiteness of the inverse supports E_mut < 0 but does not by itself prove the stated monotone-distance law beyond the finite checked rows.
 - **auditor confidence:** high
 
 ### `dense_prune_guard_seed_note`

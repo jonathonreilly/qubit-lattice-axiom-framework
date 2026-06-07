@@ -1,0 +1,17 @@
+loop: rala-cache-unblock-20260607
+goal: "Unblock the audited-clean RALA runner cache without narrowing the full finite grid."
+target_status: exact-support
+current_status: packaged_for_review
+base: origin/main@fbf4dfbed
+branch: physics-loop/rala-cache-unblock-20260607
+files_touched:
+  - scripts/frontier_teleportation_retained_axis_operator_algebra_closure.py
+  - docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md
+  - logs/runner-cache/frontier_teleportation_retained_axis_operator_algebra_closure.txt
+  - .claude/science/physics-loops/rala-cache-unblock-20260607/
+open_imports: []
+no_go_routes: []
+trace_gate: direct_blocker_closure
+pr_status: pending
+next_exact_action: "Open review PR and hand to reviewer."
+stop_condition: "PR opened and verified."

@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_anticommutation_filter_cocycle_no_go_2026_06_07.py
+runner_sha256: 42fb206220d02e072df887e089d9ff53165b855012d1ca012599fdf933f3bcd1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================================
+Staggered anticommutation filter: multi-loop cocycle no-go for CAR forcing
+========================================================================================
+
+[BLOCK 1] Multi-loop Coxeter consistency leaves two uniform characters
+  [PASS] S_3: exactly two Z2 exchange-character survivors -- labels=['hard-core-boson/trivial exchange character', 'CAR/fermion sign character']
+  [PASS] S_3: adjacent braid loops force uniformity, not sign value -- survivors=[(1, 1), (-1, -1)]
+  [PASS] S_4: exactly two Z2 exchange-character survivors -- labels=['hard-core-boson/trivial exchange character', 'CAR/fermion sign character']
+  [PASS] S_4: adjacent braid loops force uniformity, not sign value -- survivors=[(1, 1, 1), (-1, -1, -1)]
+  [PASS] S_5: exactly two Z2 exchange-character survivors -- labels=['hard-core-boson/trivial exchange character', 'CAR/fermion sign character']
+  [PASS] S_5: adjacent braid loops force uniformity, not sign value -- survivors=[(1, 1, 1, 1), (-1, -1, -1, -1)]
+  [PASS] S_6: exactly two Z2 exchange-character survivors -- labels=['hard-core-boson/trivial exchange character', 'CAR/fermion sign character']
+  [PASS] S_6: adjacent braid loops force uniformity, not sign value -- survivors=[(1, 1, 1, 1, 1), (-1, -1, -1, -1, -1)]
+
+[BLOCK 2] Boson and fermion characters both satisfy all loop relations
+  [PASS] S_4: hard-core-boson/trivial character passes -- signs=(1, 1, 1)
+  [PASS] S_4: CAR/fermion sign character passes -- signs=(-1, -1, -1)
+  [PASS] S_5: hard-core-boson/trivial character passes -- signs=(1, 1, 1, 1)
+  [PASS] S_5: CAR/fermion sign character passes -- signs=(-1, -1, -1, -1)
+
+[BLOCK 3] Selecting CAR requires an extra predicate
+  [PASS] extra predicate chi(s_1)=-1 selects CAR uniquely -- selected=(-1, -1, -1, -1)
+  [PASS] opposite predicate chi(s_1)=+1 selects hard-core-boson uniquely -- selected=(1, 1, 1, 1)
+  [PASS] loop consistency alone has no predicate that ranks the two survivors -- the selector is exactly the global exchange sign q
+
+[BLOCK 4] Consequence for the staggered anticommutation filter
+  [PASS] hard-core-boson exchange survives every tested multi-loop constraint
+  [PASS] CAR exchange also survives, so consistency gives compatibility not forcing
+  [PASS] therefore this route cannot supply the {D,gamma5}=0 filter -- the staggered epsilon theorem still needs a separate CAR/graded-locality/chiral premise
+
+========================================================================================
+SCORECARD: PASS=18 FAIL=0
+========================================================================================
+
+----- stderr -----
+

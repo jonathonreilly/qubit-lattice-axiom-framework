@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1278 |
+| unaudited | 1277 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 64 |
+| ~~audited_conditional~~ | 65 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1138 |
-| `audited_conditional` | 64 |
+| `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1587 |
+| `unaudited` | 1586 |
 
 | claim_type | count |
 |---|---:|
@@ -1325,6 +1325,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_generation_koide_stable_location_index_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `post_record_measure_weight_normalization_subdivision_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -14079,6 +14080,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The same rational target vector can select different kernels under different supplied loss weights, so target vector and loss weights are supplied rule data for this finite selection interface.  _(class `A`)_
 - **chain closes:** True — Independent arithmetic matches the finite witness: k3 has endpoint_ba=0 and second_is_b=3/4, while k4 has endpoint_ba=1/2 and second_is_b=1/4. With target (1/3,2/3), weights (100,1) uniquely select k4 and weights (1,100) uniquely select k3, so target alone does not determine the selection under the supplied objective.
 - **rationale:** The load-bearing calculation is finite algebra over explicitly supplied rational data, and the runner source computes the laws, statistic vectors, weighted losses, and blocking cases rather than merely printing constants. The cited authorities are retained-grade for the restricted supplied-rule and kernel-firewall surfaces. The no-go discipline gate is satisfied only for this narrow firewall: any broader claim that Record can never derive target vectors or weights is expressly outside scope and is not ratified here.
+- **auditor confidence:** high
+
+### `post_record_selector_tangent_readout_weight_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite supplied selector/tangent/readout weight semantics: exact normalization of supplied readout and projection weights, SPD/quadratic checks for a supplied tangent metric or Hessian, and claimed coverage of seven selector_tangent_readout_weight rows, without deriving selector, readout, metric, or physical-measure authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-011008-3523d24ec1-post_record_selector_tangent`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supplied finite tangent/readout carrier plus supplied positive tangent metric or Hessian and supplied nonnegative readout weights, with exact normalization and quadratic checks, yields a finite readout/tangent weight certificate.  _(class `A`)_
+- **chain closes:** False — The displayed finite arithmetic closes for the supplied examples: 1:3 normalizes to 1/4 and 3/4, 1:15 normalizes to 1/16 and 15/16, the metric has leading minor 3 and determinant 5, and the stated quadratic value is 9/2. The restricted packet does not derive the supplied carrier, metric/Hessian, readout/projection weights, projection map, or selector rule from Record or any retained authority.
+- **rationale:** The independent formula inventory agrees with the runner's finite algebraic checks: the normalizations, SPD determinant test, and quadratic evaluation are exact over the supplied rational inputs. These are class-A checks over supplied objects, not a first-principles class-C construction from the framework baseline. The note explicitly imports a supplied tangent/readout carrier, metric or Hessian, readout/projection weights, and selector context, while also stating that selector authority, Born law, physical measure, and Record-derived readout remain open. The row-bucket coverage also depends on the measure-subdivision support path, so the packet supports conditional supplied-weight semantics rather than an audited-clean positive theorem.
+- **open / conditional deps cited:**
+  - `POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `post_record_stable_kernel_count_audit_interface_2026-06-06`

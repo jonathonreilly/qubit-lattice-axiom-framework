@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1283 |
+| unaudited | 1282 |
 | meta | 308 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,21 +62,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1138 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1591 |
+| `unaudited` | 1590 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1349 |
 | `decoration` | 53 |
-| `meta` | 318 |
+| `meta` | 319 |
 | `no_go` | 318 |
 | `open_gate` | 136 |
-| `positive_theorem` | 765 |
+| `positive_theorem` | 764 |
 
 | criticality | count |
 |---|---:|
@@ -1321,6 +1321,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_dynamics_family_lift_closeout_index_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13872,6 +13873,30 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** This branch indexes the six-PR post-record dynamics stack built at the end of the campaign.  _(class `E`)_
 - **chain closes:** True — The restricted packet supports the meta/indexing claim: the note lists six PR rows and the runner checks those entries, cached-summary strings, status counts, and firewall flags. This closes only as an index definition/bookkeeping claim, not as a physics derivation.
 - **rationale:** The runner does not derive a physics result or instantiate framework dynamics; it hard-codes the six StackPr entries, expected summary strings, and firewall booleans, then checks that the source note and cache text contain those markers. The load-bearing step is therefore a definition/indexing assertion rather than class C first-principles compute or independent algebraic closure. The claimed branch-local handoff map is supported within that limited scope, but the audit verdict must reflect that the chain reduces to bookkeeping definitions.
+- **auditor confidence:** high
+
+### `post_record_dynamics_family_lift_closeout_index_2026-06-06`
+
+- **Note:** [`POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md`](../../docs/POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only that the provided closeout index enumerates the ten stack PR entries, counts seven exact-support and three no-go layers, and states the listed boundary/firewall conditions for branch-local handoff.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-005644-6deb38f9d7-post_record_dynamics_family_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The extended stack has seven exact-support layers and three no-go layers, with ten listed PR entries indexed for handoff.  _(class `A`)_
+- **chain closes:** False — The packet supports the index/counting claim as a text-and-table consistency check, but it does not include the upstream note contents needed to verify the cached summary claims or the scientific status of the listed stack layers. The runner also hard-codes firewall booleans rather than deriving them from repository state.
+- **rationale:** The primary runner checks document fragments, counts hard-coded StackPr entries, and scans cached log files for expected summary strings. That is adequate for a branch-local index consistency check but not for auditing the upstream stack layers or proving the absence of audit-data writes, promotions, kernel selection, dial selection, or finite-alone unbounded retention from the restricted packet. With no cited authorities supplied, the claimed stack statuses and cached summary dependencies remain open inputs rather than retained-grade audited premises.
+- **open / conditional deps cited:**
+  - `logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt`
+  - `logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt`
+  - `logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt`
+  - `logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt`
+  - `logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt`
+  - `logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt`
+  - `logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt`
+  - `logs/runner-cache/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.txt`
+  - `logs/runner-cache/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.txt`
+  - `logs/runner-cache/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.txt`
 - **auditor confidence:** high
 
 ### `post_record_expectation_concentration_firewall_2026-06-06`

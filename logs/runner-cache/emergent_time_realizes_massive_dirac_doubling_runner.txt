@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/emergent_time_realizes_massive_dirac_doubling_runner.py
+runner_sha256: d638c749edf2fcec2e4984f597da916a307692b7a947a980330d295abcd1a56b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+==============================================================================
+A1. the retained EUCLIDEAN kernel symmetry is compact Spin(4): all Sigma^E anti-Hermitian
+==============================================================================
+  [PASS] Euclidean Spin(4): all 6 Sigma^E anti-Hermitian => boosts unitary (compact, retained kernel)  | the Euclidean staggered kernel lives in compact Spin(4)
+
+==============================================================================
+A2. the DERIVED emergent-time axis IS e_4 = i gamma^0, e_4^2 = -1 (the doubling step)
+==============================================================================
+   Lorentzian Clifford {g^mu,g^nu}=2 eta^munu: True;  e_4=i g^0, e_4^2=-1: True
+  [PASS] the emergent-time axis = e_4 = i gamma^0 (e_4^2=-1), the timelike I-axis realizing the doubling  | derived emergent time (#3149) + Lorentzian signature (#3154)
+
+==============================================================================
+A3. the Wick rotation along the emergent-time axis FLIPS compact -> non-compact boosts
+==============================================================================
+   boosts K_j Hermitian (non-compact): True;  rotations J_k anti-Herm (compact): True
+   K_j = i * Sigma^E_4j (the emergent-time i flips Euclidean compact -> Lorentzian non-compact): True
+  [PASS] emergent-time Wick rotation: Euclidean unitary boost -> Lorentzian Hermitian (non-compact) boost  | reaches the non-compact boost-spinor the compact Euclidean kernel does not
+
+==============================================================================
+A4. the retained non-compact so(3,1) sign + the massive doubling (both chiralities coupled by m)
+==============================================================================
+   non-compact sign [K^i,K^j]=-i eps J^k (retained FREE_DIRAC_POINCARE): True
+   C^4 doubling carries BOTH chiralities (tr P_+=tr P_-=2): True;  mass projector idempotent on C^4: True
+   the mass m COUPLES the two chiralities (massive Dirac, not Weyl): True
+  [PASS] non-compact so(3,1) + massive bispinor: both chiralities coupled by m, boost-covariant  | the emergent-time e_4 delivers the boost-covariant MASSIVE doubling (KOIDE sec 6 core)
+
+==============================================================================
+A5. bridge summary: framework emergent-time realizes the massive doubling
+==============================================================================
+   DELIVERED (structural+causal core of KOIDE sec 6): boost-covariant massive Dirac bispinor (both chiralities, non-compact Spin(3,1)) + microcausal (#3127, merged)
+   REMAINING dependency: positive-energy on the reconstructed Hilbert space via R (CAR) + rung C; the (A) half-integer-carrier attachment
+  [PASS] the DERIVED emergent-time axis realizes the e_4-doubling bridging the two retained endpoints  | Euclidean compact-Spin(4) kernel --e_4(emergent time)--> non-compact massive Dirac rep
+
+runner_check_breakdown = {A: 5, B: 0, C: 0, D: 0, total_pass: 5}
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

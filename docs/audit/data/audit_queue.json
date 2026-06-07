@@ -3,7 +3,7 @@
     "critical": 319,
     "high": 257,
     "leaf": 420,
-    "medium": 371
+    "medium": 370
   },
   "cycle_break_target_count": 13,
   "cycle_break_targets": [
@@ -17562,28 +17562,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "teleportation_retained_axis_operator_algebra_closure_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_teleportation_retained_axis_operator_algebra_closure.py",
-      "transitive_descendants": 8
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_missing_axiom_carrier_measure_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17809,6 +17787,61 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/NONLABEL_GROWN_BASIN_TARGETED.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "teleportation_resource_from_poisson_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "teleportation_retained_axis_operator_algebra_closure_note",
+        "minimal_axioms",
+        "teleportation_poisson_resource_sweep_note",
+        "teleportation_resource_fidelity_note",
+        "teleportation_measurement_record_note",
+        "teleportation_apparatus_dynamics_closure_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_bell_inequality.py"
+      ],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "teleportation_taste_readout_operator_model_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "teleportation_retained_axis_operator_algebra_closure_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_teleportation_taste_readout_operator_model.py",
       "transitive_descendants": 2
     },
     {
@@ -28863,61 +28896,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "teleportation_resource_from_poisson_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "teleportation_retained_axis_operator_algebra_closure_note",
-        "minimal_axioms",
-        "teleportation_poisson_resource_sweep_note",
-        "teleportation_resource_fidelity_note",
-        "teleportation_measurement_record_note",
-        "teleportation_apparatus_dynamics_closure_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_bell_inequality.py"
-      ],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "teleportation_taste_readout_operator_model_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "teleportation_retained_axis_operator_algebra_closure_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_teleportation_taste_readout_operator_model.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -29277,6 +29255,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "teleportation_encoding_portability_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "teleportation_retained_axis_operator_algebra_closure_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_teleportation_encoding_portability.py",
       "transitive_descendants": 1
     },
     {
@@ -30238,6 +30240,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_su3_cube_perron_solve.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "teleportation_native_transport_theory_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "teleportation_retained_axis_operator_algebra_closure_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_teleportation_transport_invariants.py",
       "transitive_descendants": 0
     },
     {
@@ -33513,30 +33539,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_substep4_ac_lambda_separate_closure_2026_05_10_aclambda.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "teleportation_encoding_portability_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "teleportation_retained_axis_operator_algebra_closure_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_teleportation_encoding_portability.py",
       "transitive_descendants": 1
     },
     {
@@ -40007,30 +40009,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "teleportation_native_transport_theory_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "teleportation_retained_axis_operator_algebra_closure_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_teleportation_transport_invariants.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "teleportation_preparation_readout_probe_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -41181,6 +41159,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 64,
-  "total_pending": 1367
+  "ready_count": 67,
+  "total_pending": 1366
 }

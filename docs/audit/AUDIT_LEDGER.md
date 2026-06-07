@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 203 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 715 |
+| **retained_bounded** | 716 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1365 |
+| unaudited | 1364 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1126 |
+| `audited_clean` | 1127 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1674 |
+| `unaudited` | 1673 |
 
 | claim_type | count |
 |---|---:|
@@ -1146,6 +1146,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_noise_fault_controls_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_poisson_resource_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_resource_fidelity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `teleportation_retained_axis_operator_algebra_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -16635,6 +16636,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For an arbitrary supplied physical two-qubit resource density matrix rho_RB, the fixed Bell-basis measurement with fixed Bob Pauli correction induces a Pauli channel whose weights are the Bell-basis diagonal overlaps p_g=<beta_g|rho_RB|beta_g>; hence the identity entanglement fidelity is p_00=<Phi+|rho_RB|Phi+> and the qubit average fidelity is F_avg=(1+2 p_00)/3, giving the fixed-protocol threshold p_00>1/2 for beating 2/3.  _(class `C`)_
 - **chain closes:** True — Within the stated fixed protocol, the note supplies the algebraic channel reduction and the completed runner independently implements the same three-qubit protocol, exact Choi average fidelity, threshold brackets, no-record Bob diagnostics, and trace-preservation checks. The reported formula error is numerical roundoff scale and all acceptance gates pass. The broader native resource-preparation and non-ideal operational questions are explicitly outside scope rather than hidden premises for this bounded theorem.
 - **rationale:** The claim is narrowly bounded and does not overstate beyond the fixed supplied-resource protocol. The load-bearing formula and threshold follow from the stated teleportation-channel derivation and are corroborated by the completed runner across representative resource families and arbitrary random density matrices. No external comparator, tuned numerical match, unsupported physical identification, or unclosed dependency is needed for the scoped conclusion.
+- **auditor confidence:** high
+
+### `teleportation_retained_axis_operator_algebra_closure_note`
+
+- **Note:** [`TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md`](../../docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-162127-f0bf5d12e1-teleportation_retained_axis_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** After reordering into |b>_logical x |e>_env, the retained-axis Pauli and Bell operators factor as standard logical qubit operators tensored with I_env, so the ideal protocol reduces to ordinary two-qubit teleportation on the logical factor.  _(class `A`)_
+- **chain closes:** True — The stated KS block decomposition directly gives O_logical x I_env for retained-axis operators, spectator-sign cancellation for native-Z when d>1, and environment flipping for fixed-X when a != d-1. The Bell projector and teleportation claims then reduce to standard two-qubit Pauli/Bell algebra on the logical factor.
+- **rationale:** The theorem is self-contained in the restricted packet and closes by finite block-matrix algebra. Independent formula checks confirm the Bell-projector signs, the 1/4 normalization, the native-Z spectator average to zero for d>1, the fixed-X iff a=d-1 condition, and the correction/fidelity identity up to irrelevant branch phase. The runner genuinely constructs the relevant operators and verifies 96 algebraic cases without hidden helper imports or external comparators, while explicitly leaving physical apparatus, noise, preparation, and durable record gates outside scope.
 - **auditor confidence:** high
 
 ### `teleportation_three_register_cross_encoding_note`

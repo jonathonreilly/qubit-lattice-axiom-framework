@@ -1417,6 +1417,10 @@
       "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
     },
     {
+      "from": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
       "from": "axiom_first_lattice_noether_record_invariance_companion_note_2026-06-04",
       "to": "key_terminology"
     },
@@ -25537,12 +25541,40 @@
       "to": "post_record_admitted_sample_target_vector_interface_2026-06-06"
     },
     {
+      "from": "post_record_generation_koide_stable_location_index_2026-06-06",
+      "to": "post_record_selector_dial_bucket_subdivision_2026-06-06"
+    },
+    {
+      "from": "post_record_generation_koide_stable_location_index_2026-06-06",
+      "to": "post_record_flow_thermal_stable_setting_certificate_2026-06-06"
+    },
+    {
+      "from": "post_record_generation_koide_stable_location_index_2026-06-06",
+      "to": "post_record_conditional_audit_evidence_ladder_2026-06-06"
+    },
+    {
+      "from": "post_record_generation_koide_stable_location_index_2026-06-06",
+      "to": "generation_dial_dynamics_stability_classifier_2026-06-05"
+    },
+    {
+      "from": "post_record_generation_koide_stable_location_index_2026-06-06",
+      "to": "koide_records_objectivity_conditional_note_2026-05-31"
+    },
+    {
+      "from": "post_record_measure_weight_normalization_subdivision_2026-06-06",
+      "to": "post_record_selector_dial_bucket_subdivision_2026-06-06"
+    },
+    {
       "from": "post_record_selection_rule_target_vector_firewall_2026-06-06",
       "to": "post_record_supplied_selection_rule_interface_2026-06-06"
     },
     {
       "from": "post_record_selection_rule_target_vector_firewall_2026-06-06",
       "to": "post_record_directed_certificate_kernel_selection_firewall_2026-06-06"
+    },
+    {
+      "from": "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+      "to": "post_record_measure_weight_normalization_subdivision_2026-06-06"
     },
     {
       "from": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
@@ -48299,10 +48331,11 @@
       "deps": [
         "minimal_axioms",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_only_det_positivity_case_a_note_2026-05-17"
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "staggered_dirac_realization_gate_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9dc7c55c0308519286ac72fa232d4f6f6ed04b76a332407b0aff67df8a928d00",
+      "note_hash": "26bef2f283d789d4ed40e212c1ebfadb2366296b87d60ad6a836ee6ecc93f70c",
       "path": "docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md",
       "runner_path": "scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py",
       "title": "Lattice Noether For Onsite/Internal Generators \u2014 Corrected U(1) Sign Via The Continuity Equation Narrow Theorem Note"
@@ -81496,9 +81529,15 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "exact support / supplied stable-location index",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "post_record_selector_dial_bucket_subdivision_2026-06-06",
+        "post_record_flow_thermal_stable_setting_certificate_2026-06-06",
+        "post_record_conditional_audit_evidence_ladder_2026-06-06",
+        "generation_dial_dynamics_stability_classifier_2026-06-05",
+        "koide_records_objectivity_conditional_note_2026-05-31"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "f01d71fd0a4a0296dcca1d33fa2475009dd11b4c3730d88ebe66c2c733536ab2",
+      "note_hash": "6319ebebf5884bcccdb075cbf806ea39597c157ae533399763a9280220808bd1",
       "path": "docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py",
       "title": "Post-Record Generation/Koide Stable-Location Index"
@@ -81508,9 +81547,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "exact support / read-only audit companion",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "post_record_selector_dial_bucket_subdivision_2026-06-06"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "5cb82fc404cb1f3dab69938d78d3fc69942bc758fc7ef269cf653b59ca68d421",
+      "note_hash": "025f7a533e9e223ad59ea3161bbce791ffa9996bf42b85c42286160df1f5e62c",
       "path": "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
       "title": "Post-Record Measure/Weight/Normalization Subdivision"
@@ -81595,9 +81636,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "exact support / supplied selector-tangent-readout weight prototype",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "post_record_measure_weight_normalization_subdivision_2026-06-06"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "e5c072eadc9cfcda1ee76e764b44d6674b60b15647abe2ef607b382d5209d32c",
+      "note_hash": "c8d9acec0ad8aee3defbca2623a574d6760193199ec6d380f105e58350a256ce",
       "path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
       "title": "Post-Record Selector/Tangent Readout Weight Prototype"
@@ -99497,14 +99540,11 @@
     "post_record_finite_target_kernel_stability_2026-06-06",
     "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06",
     "post_record_flow_thermal_stable_setting_certificate_2026-06-06",
-    "post_record_generation_koide_stable_location_index_2026-06-06",
-    "post_record_measure_weight_normalization_subdivision_2026-06-06",
     "post_record_model_selection_firewall_2026-06-06",
     "post_record_persistent_record_production_bridge_prototype_2026-06-06",
     "post_record_production_dynamics_needed_row_map_2026-06-06",
     "post_record_retained_unbounded_dynamics_gate_2026-06-06",
     "post_record_selector_dial_bucket_subdivision_2026-06-06",
-    "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
     "post_record_source_measure_trace_normalization_prototype_2026-06-06",
     "post_record_stability_dynamics_selector_subdivision_2026-06-06",
     "post_record_stable_kernel_count_audit_interface_2026-06-06",
@@ -99822,10 +99862,10 @@
       "open_gate": 151,
       "positive_theorem": 627
     },
-    "edge_count": 11295,
-    "leaf_count": 1022,
+    "edge_count": 11303,
+    "leaf_count": 1017,
     "node_count": 3054,
-    "root_count": 1020,
+    "root_count": 1017,
     "runners_with_path": 2640
   }
 }

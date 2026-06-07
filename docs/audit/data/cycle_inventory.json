@@ -15,7 +15,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 821,
+      "max_transitive_descendants": 822,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -24,7 +24,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
           "title": "Observable Principle From Axiom Note",
-          "transitive_descendants": 821
+          "transitive_descendants": 822
         },
         {
           "audit_status": "unaudited",
@@ -33,7 +33,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md",
           "title": "Observable Principle Positive Source Cone P2 Elimination Narrow Theorem Note",
-          "transitive_descendants": 821
+          "transitive_descendants": 822
         }
       ],
       "requires_lemma_extraction": false
@@ -191,6 +191,43 @@
       "decision": null,
       "edges": [
         {
+          "from": "generation_dial_dynamics_stability_classifier_2026-06-05",
+          "to": "generation_dial_local_stability_grammar_2026-06-05"
+        },
+        {
+          "from": "generation_dial_local_stability_grammar_2026-06-05",
+          "to": "generation_dial_dynamics_stability_classifier_2026-06-05"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 2,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "generation_dial_dynamics_stability_classifier_2026-06-05",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md",
+          "title": "Generation Dial Dynamics Stability Classifier",
+          "transitive_descendants": 2
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "generation_dial_local_stability_grammar_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md",
+          "title": "Generation Dial Local Stability Grammar",
+          "transitive_descendants": 2
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0007",
+      "decision": null,
+      "edges": [
+        {
           "from": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
           "to": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
         },
@@ -224,7 +261,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0007",
+      "cycle_id": "cycle-0008",
       "decision": null,
       "edges": [
         {
@@ -255,43 +292,6 @@
           "effective_status": "unaudited",
           "note_path": "docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
           "title": "`g_*` Thermal `7/8` Stefan-Boltzmann Integral Bridge",
-          "transitive_descendants": 1
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0008",
-      "decision": null,
-      "edges": [
-        {
-          "from": "generation_dial_dynamics_stability_classifier_2026-06-05",
-          "to": "generation_dial_local_stability_grammar_2026-06-05"
-        },
-        {
-          "from": "generation_dial_local_stability_grammar_2026-06-05",
-          "to": "generation_dial_dynamics_stability_classifier_2026-06-05"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 1,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "generation_dial_dynamics_stability_classifier_2026-06-05",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md",
-          "title": "Generation Dial Dynamics Stability Classifier",
-          "transitive_descendants": 1
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "generation_dial_local_stability_grammar_2026-06-05",
-          "claim_type": "positive_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md",
-          "title": "Generation Dial Local Stability Grammar",
           "transitive_descendants": 1
         }
       ],

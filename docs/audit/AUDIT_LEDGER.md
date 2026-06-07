@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 730 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1267 |
+| unaudited | 1271 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 66 |
+| ~~audited_conditional~~ | 62 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -62,28 +62,28 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1146 |
-| `audited_conditional` | 66 |
+| `audited_conditional` | 62 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1576 |
+| `unaudited` | 1580 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1348 |
 | `decoration` | 54 |
-| `meta` | 322 |
+| `meta` | 321 |
 | `no_go` | 318 |
 | `open_gate` | 136 |
-| `positive_theorem` | 761 |
+| `positive_theorem` | 762 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 499 |
 | `high` | 445 |
-| `medium` | 733 |
-| `leaf` | 1262 |
+| `medium` | 735 |
+| `leaf` | 1260 |
 
 - **Retained pending chain closure:** 10
 - **Citation cycles detected:** 9
@@ -101,30 +101,30 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1321 | 85.37 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 717 | 58.49 | `audited_clean` | **retained** |
-| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 821 | 58.18 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1227 | 50.26 | `audited_clean` | **retained** |
-| 5 | `minimal_axioms_2026-05-03` | meta | critical | 457 | 47.84 | `unaudited` | meta |
-| 6 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1154 | 41.67 | `audited_renaming` | ~~audited_renaming~~ |
-| 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 967 | 40.42 | `unaudited` | unaudited |
+| 1 | `minimal_axioms` | meta | critical | 1322 | 85.37 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 718 | 58.49 | `audited_clean` | **retained** |
+| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 822 | 58.19 | `unaudited` | unaudited |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1228 | 50.26 | `audited_clean` | **retained** |
+| 5 | `minimal_axioms_2026-05-03` | meta | critical | 458 | 47.84 | `unaudited` | meta |
+| 6 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1156 | 42.18 | `audited_renaming` | ~~audited_renaming~~ |
+| 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 968 | 40.42 | `unaudited` | unaudited |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 246 | 39.45 | `unaudited` | unaudited |
-| 9 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 562 | 38.64 | `audited_clean` | **retained** |
-| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 766 | 38.58 | `unaudited` | unaudited |
-| 11 | `yt_ew_color_projection_theorem` | no_go | critical | 657 | 38.36 | `audited_clean` | **retained_no_go** |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1198 | 38.23 | `audited_clean` | **retained** |
-| 13 | `alpha_s_derived_note` | bounded_theorem | critical | 813 | 38.17 | `unaudited` | unaudited |
-| 14 | `key_terminology` | meta | critical | 528 | 38.05 | `unaudited` | meta |
-| 15 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 255 | 34.50 | `unaudited` | unaudited |
-| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 865 | 34.26 | `audited_clean` | **retained_bounded** |
-| 17 | `three_generation_structure_note` | bounded_theorem | critical | 827 | 34.19 | `audited_clean` | **retained_bounded** |
-| 18 | `cpt_exact_note` | positive_theorem | critical | 1079 | 34.08 | `audited_clean` | **retained** |
-| 19 | `minimal_axioms_2026-04-11` | meta | critical | 1073 | 32.57 | `unaudited` | meta |
-| 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 666 | 32.38 | `unaudited` | unaudited |
-| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1015 | 31.49 | `audited_conditional` | ~~audited_conditional~~ |
-| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 664 | 31.38 | `unaudited` | unaudited |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 788 | 31.12 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 301 | 30.24 | `unaudited` | unaudited |
+| 9 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 563 | 38.64 | `audited_clean` | **retained** |
+| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 767 | 38.59 | `unaudited` | unaudited |
+| 11 | `yt_ew_color_projection_theorem` | no_go | critical | 658 | 38.36 | `audited_clean` | **retained_no_go** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1199 | 38.23 | `audited_clean` | **retained** |
+| 13 | `alpha_s_derived_note` | bounded_theorem | critical | 814 | 38.17 | `unaudited` | unaudited |
+| 14 | `key_terminology` | meta | critical | 529 | 38.05 | `unaudited` | meta |
+| 15 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 256 | 34.51 | `unaudited` | unaudited |
+| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 866 | 34.26 | `audited_clean` | **retained_bounded** |
+| 17 | `three_generation_structure_note` | bounded_theorem | critical | 828 | 34.20 | `audited_clean` | **retained_bounded** |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 1080 | 34.08 | `audited_clean` | **retained** |
+| 19 | `minimal_axioms_2026-04-11` | meta | critical | 1074 | 32.57 | `unaudited` | meta |
+| 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 667 | 32.38 | `unaudited` | unaudited |
+| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1016 | 31.49 | `audited_conditional` | ~~audited_conditional~~ |
+| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 665 | 31.38 | `unaudited` | unaudited |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 789 | 31.13 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 302 | 30.24 | `unaudited` | unaudited |
 | 25 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 255 | 29.50 | `unaudited` | unaudited |
 
 
@@ -1280,7 +1280,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1331,9 +1330,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_dynamics_family_lift_closeout_index_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `post_record_generation_koide_stable_location_index_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `post_record_measure_weight_normalization_subdivision_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stability_dynamics_selector_subdivision_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -2179,21 +2175,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using [E_ij,E_pp] = delta_jp E_ip - delta_pi E_pj, the expansion i[H,rho_p] = i sum_i c_ip E_ip - i sum_j c_pj E_pj equals sum_{q != p} i(c_qp E_qp - c_pq E_pq) after the q=p term cancels.  _(class `A`)_
 - **chain closes:** True — The commutator identity directly gives the local continuity equation for arbitrary finite I, and summing over p cancels every oriented pair. The support-envelope and antisymmetry claims follow immediately from the displayed definition of J_{p<-q}.
 - **rationale:** The load-bearing step is a genuine algebraic closure from the stated matrix-unit commutator, not a definition substitution or imported physical bridge. An independent manual expansion verifies the sign, the q=p cancellation, global cancellation, and the dependence only on c_pq and c_qp. The runner source performs actual symbolic dictionary algebra and concrete matrix-unit checks without external comparators, hard-coded contested values, or helper opacity. The note explicitly excludes the staggered carrier and physical density bridge, so no open carrier-specific dependency is imported into this scoped claim.
-- **auditor confidence:** high
-
-### `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05`
-
-- **Note:** [`AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded algebraic U(1)/number-current theorem for finite number-conserving bilinear lattice systems: support follows Hamiltonian coefficient support, the admitted staggered nearest-neighbor exhibit has current sign (4*) fixed by d rho/dt + div j = 0, and site-mixing generators are excluded.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260606-173617-a26cefeaca-axiom_first_lattice_noether_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For a symbolic bilinear H=sum_ij c_ij E_ij, i[H,rho_p]=sum_q i(c_qp E_qp - c_pq E_pq), so d rho_p/dt=-(div^L j)_p and the bond current has exactly the c_pq,c_qp support envelope, with the staggered sign selected by this continuity equation.  _(class `A`)_
-- **chain closes:** False — The displayed bilinear commutator algebra and continuity/sign calculation close on their own terms. The full theorem still imports the admitted staggered/Kawamoto-Smit carrier and physical U(1) density surface from an open gate rather than from a retained authority in this restricted packet.
-- **rationale:** The core calculation is a genuine class-A algebraic closure: manual expansion of [E_ij,E_pq] gives the current, support envelope, and sign relation claimed in the note. The runner source substantively checks the symbolic identities and finite-Fock staggered sign test, with no missing helpers or obvious hard-coded contested premise. However, the staggered specialization depends on the named admitted Kawamoto-Smit/staggered carrier and associated physical density identification, which are not closed by the one-hop retained authorities provided here. That open carrier bridge prevents audited_clean for the full bounded theorem packet.
-- **open / conditional deps cited:**
-  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`
@@ -13991,42 +13972,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing certificate rule is a supplied-interface definition, not a first-principles derivation from the framework baseline. The runner's finite toy checks are exact and its printed PASS count is internally consistent, but the 56-row current-snapshot classification uses PREV = scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py via importlib. That helper is explicitly load-bearing for flow_or_thermal_stability selection but its source is absent from the helper-runner section, leaving the row-map verification opaque.
 - **auditor confidence:** medium
 
-### `post_record_generation_koide_stable_location_index_2026-06-06`
-
-- **Note:** [`POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md`](../../docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Audited only the branch-local claim that the current ledger's 102 Koide/generation selector rows plus 4 stable-feature rows form a 106-row supplied stable-location index without selecting or forcing a dial value.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260607-010040-729846c0f4-post_record_generation_koide`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** 102 koide_or_generation_selector rows + 4 generation_or_koide_stable_feature rows + supplied stable-setting certificate semantics => 106-row generation/Koide stable-location index.  _(class `B`)_
-- **chain closes:** False — The arithmetic identities in the packet are internally consistent, but the row partition and stable-feature semantics are imported from upstream selector/stable runners and notes that are not provided as cited authorities. The missing step is a complete restricted-packet derivation or retained-grade dependency packet for the ledger partition and supplied stable-setting certificate semantics.
-- **rationale:** The independent quantitative pass checks that the row-class table sums to 102, 102+4=106, Q(1/2)=2/3, r -> 2r^2 fixes r=1/2 with repelling derivative 2, and r*=w_p/(2w_s) gives the stated equal/rank-weight examples. Those checks close only as finite consistency checks over imported ledger rows and supplied rules, not as a first-principles derivation from the axiom baseline. The primary runner hard-codes expected counts and IDs, reads the audit ledger and source notes, and imports selector/stable runner modules whose sources are absent from the packet, so stdout PASS is not enough for a clean positive-theorem verdict.
-- **open / conditional deps cited:**
-  - `POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md`
-  - `POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md`
-  - `POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md`
-  - `GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md`
-  - `KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md`
-- **auditor confidence:** high
-
-### `post_record_measure_weight_normalization_subdivision_2026-06-06`
-
-- **Note:** [`POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md)
-- **claim_type:** `meta`
-- **claim_scope:** Branch-local audit of the stated five-lane subdivision of the current measure_weight_normalization bucket and the finite supplied-weight normalization interface, excluding any selector authority.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260607-010337-11def4f449-post_record_measure_weight_n`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** This block subdivides the measure_weight_normalization sub-bucket from the selector/dial subdivision and adds the finite normalization certificate interface.  _(class `B`)_
-- **chain closes:** False — The finite normalization subclaim closes by finite-sum algebra: nonnegative weights divided by a positive total remain nonnegative and sum to one. The subdivision/count subclaim does not close from the restricted packet because it depends on the audit ledger and a dynamically imported selector/dial helper whose source and ledger slice are not provided.
-- **rationale:** The displayed lane-count arithmetic is internally consistent, since 15 + 6 + 9 + 7 + 7 = 44, and the supplied-weight normalization example is algebraically correct. However, the row classification and representative-row claims rely on docs/audit/data/audit_ledger.json and on prev.scoped, prev.ladder_bucket, and prev.selector_subbucket from the dynamically loaded selector/dial helper. Those artifacts are not available in full in the restricted packet, while the expected lane counts are hard-coded in the runner, so runner PASS cannot independently establish the full subdivision claim.
-- **open / conditional deps cited:**
-  - `POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md`
-  - `audit/data/audit_ledger.json`
-  - `scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py`
-- **auditor confidence:** high
-
 ### `post_record_model_selection_firewall_2026-06-06`
 
 - **Note:** [`POST_RECORD_MODEL_SELECTION_FIREWALL_2026-06-06.md`](../../docs/POST_RECORD_MODEL_SELECTION_FIREWALL_2026-06-06.md)
@@ -14090,21 +14035,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The same rational target vector can select different kernels under different supplied loss weights, so target vector and loss weights are supplied rule data for this finite selection interface.  _(class `A`)_
 - **chain closes:** True — Independent arithmetic matches the finite witness: k3 has endpoint_ba=0 and second_is_b=3/4, while k4 has endpoint_ba=1/2 and second_is_b=1/4. With target (1/3,2/3), weights (100,1) uniquely select k4 and weights (1,100) uniquely select k3, so target alone does not determine the selection under the supplied objective.
 - **rationale:** The load-bearing calculation is finite algebra over explicitly supplied rational data, and the runner source computes the laws, statistic vectors, weighted losses, and blocking cases rather than merely printing constants. The cited authorities are retained-grade for the restricted supplied-rule and kernel-firewall surfaces. The no-go discipline gate is satisfied only for this narrow firewall: any broader claim that Record can never derive target vectors or weights is expressly outside scope and is not ratified here.
-- **auditor confidence:** high
-
-### `post_record_selector_tangent_readout_weight_prototype_2026-06-06`
-
-- **Note:** [`POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Finite supplied selector/tangent/readout weight semantics: exact normalization of supplied readout and projection weights, SPD/quadratic checks for a supplied tangent metric or Hessian, and claimed coverage of seven selector_tangent_readout_weight rows, without deriving selector, readout, metric, or physical-measure authority.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260607-011008-3523d24ec1-post_record_selector_tangent`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Supplied finite tangent/readout carrier plus supplied positive tangent metric or Hessian and supplied nonnegative readout weights, with exact normalization and quadratic checks, yields a finite readout/tangent weight certificate.  _(class `A`)_
-- **chain closes:** False — The displayed finite arithmetic closes for the supplied examples: 1:3 normalizes to 1/4 and 3/4, 1:15 normalizes to 1/16 and 15/16, the metric has leading minor 3 and determinant 5, and the stated quadratic value is 9/2. The restricted packet does not derive the supplied carrier, metric/Hessian, readout/projection weights, projection map, or selector rule from Record or any retained authority.
-- **rationale:** The independent formula inventory agrees with the runner's finite algebraic checks: the normalizations, SPD determinant test, and quadratic evaluation are exact over the supplied rational inputs. These are class-A checks over supplied objects, not a first-principles class-C construction from the framework baseline. The note explicitly imports a supplied tangent/readout carrier, metric or Hessian, readout/projection weights, and selector context, while also stating that selector authority, Born law, physical measure, and Record-derived readout remain open. The row-bucket coverage also depends on the measure-subdivision support path, so the packet supports conditional supplied-weight semantics rather than an audited-clean positive theorem.
-- **open / conditional deps cited:**
-  - `POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `post_record_source_measure_trace_normalization_prototype_2026-06-06`

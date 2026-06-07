@@ -1,0 +1,27 @@
+loop_slug: flavor-substrate-parent-boundary-20260607
+goal: "Repair flavor_substrate_parent_separate by preserving finite tensor algebra while removing only-way/native-status overclaims."
+target_claim_id: flavor_substrate_parent_separate_note_2026-05-30
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: supplied_z2_spin_factor_boundary
+files_touched:
+  - docs/FLAVOR_SUBSTRATE_PARENT_SEPARATE_NOTE_2026-05-30.md
+  - scripts/flavor_substrate_parent_separate_2026_05_30.py
+  - logs/runner-cache/flavor_substrate_parent_separate_2026_05_30.txt
+  - .claude/science/physics-loops/flavor-substrate-parent-boundary-20260607/
+open_imports:
+  - "Native status of diag(1,omega) in full complex M2(C)."
+  - "General all-parent folding theorem."
+retired_imports:
+  - "Only-way folding theorem."
+  - "Global non-native classification of diag(1,omega)."
+runner_status:
+  command: "PYTHONPATH=scripts python3 scripts/flavor_substrate_parent_separate_2026_05_30.py"
+  result: "SCORECARD PASS=5 FAIL=0"
+audit_data_touched: false
+review_loop_disposition: "not run; reviewer-owned review/landing path"
+next_exact_action: "Reviewer should assess whether the row is now a clean bounded theorem under the supplied Z2 spin-factor reading."
+stop_condition: "science block packaged and PR opened"

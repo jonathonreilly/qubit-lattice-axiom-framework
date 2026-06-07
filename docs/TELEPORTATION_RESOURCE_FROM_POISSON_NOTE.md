@@ -11,9 +11,12 @@ resource for ordinary quantum state teleportation.
 
 **Source boundary:** This is a **planning / first-artifact** note. The
 limitation has moved, but is not closed: the runner certificate covers only the
-small-surface (`1D N=8`, `2D 4x4`) bounded extraction. The native
-preparation/readout theorem selecting the last taste bit as a physical
-deterministic carrier remains open.
+small-surface (`1D N=8`, `2D 4x4`) bounded extraction. The finite algebraic
+selection of the last-taste retained axis is routed through the retained-bounded
+RALA source
+[`TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md`](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md).
+The native preparation/readout theorem realizing that retained-axis carrier as
+a physical deterministic teleportation apparatus remains open.
 
 It does not claim matter teleportation, charge transfer, mass transfer, or
 faster-than-light transport. The only audited object is a quantum state
@@ -28,11 +31,15 @@ The 2026-05-28 audit verdict was `audited_conditional`:
 
 with repair: *"missing_bridge_theorem: prove the native preparation/readout and last-taste-bit logical-carrier selection, then rerun the small-surface checks with the Poisson/CHSH machinery source included in the restricted packet."*.
 
+The 2026-06-07 repair splits that target: the finite last-taste logical-carrier
+algebra is now sourced through the retained-bounded RALA note, while the native
+physical preparation/readout theorem remains open.
+
 Supplying the missing native bridge is substantive new work, out of scope for
 this repair. This revision takes the **split path**:
 
-- **Load-bearing (in scope):** The runner's bounded extraction diagnostics on the two small surfaces (1D N=8 and 2D 4x4): traced Bell overlap, negativity, and standard teleportation fidelity under the last-taste-bit logical-qubit identification, confirming a positive first artifact for the Poisson/CHSH cases relative to the null case. The 2026-06-03 repair below now exposes and checks the imported Poisson/CHSH helper source in the row runner.
-- **NON-load-bearing (split off / admitted):** The native preparation/readout theorem selecting the last taste bit as a physical deterministic teleportation carrier (distinct from offline ground-state extraction). This remains a missing bridge theorem recorded here as an admitted, not-derived input.
+- **Load-bearing (in scope):** The runner's bounded extraction diagnostics on the two small surfaces (1D N=8 and 2D 4x4): traced Bell overlap, negativity, and standard teleportation fidelity under the last-taste-bit logical-qubit identification, confirming a positive first artifact for the Poisson/CHSH cases relative to the null case. The 2026-06-03 repair exposes and checks the imported Poisson/CHSH helper source in the row runner; the 2026-06-07 repair exposes the retained-bounded RALA authority for the finite last-taste logical-operator selection.
+- **NON-load-bearing (split off / admitted):** The native preparation/readout theorem realizing the retained-axis last taste bit as a physical deterministic teleportation carrier (distinct from offline ground-state extraction). This remains a missing bridge theorem recorded here as an admitted, not-derived input.
 
 No new axiom, primitive, import, or approved bridge is introduced. The
 runner-verified core is the load-bearing content; the named bridge stays an
@@ -69,6 +76,28 @@ The remaining open bridge is still the operational theorem: a native
 preparation/readout and apparatus path that realizes this offline
 last-taste-bit carrier as a physical deterministic teleportation resource.
 
+## 2026-06-07 Retained-Axis Carrier Source Repair
+
+The finite logical-carrier part of the earlier blocker no longer needs to be
+carried as an unsourced convention. The retained-bounded RALA source
+[`TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md`](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md)
+proves the finite retained-axis operator algebra used here:
+
+- the site Hilbert space factorizes into cell/environment labels and a retained
+  taste-axis logical bit;
+- `Z_axis` and `X_axis` are in the retained-axis operator algebra;
+- the axis Bell projectors are environment-blind logical Bell projectors;
+- the prior fixed pair-hop `X` is the retained-axis `X` exactly when the
+  retained axis is the last taste axis;
+- the standard teleportation identity closes inside that finite algebra.
+
+This row's runner now checks that RALA authority is present and retained-bounded
+on the audit ledger before printing the last-taste carrier certificate. This
+does **not** close the physical preparation/readout theorem, a microscopic
+apparatus Hamiltonian, durable endogenous records, or a native detector path.
+It only routes the finite logical-operator selection through a retained-bounded
+source instead of leaving it as an unregistered convention.
+
 ## Script
 
 New runner:
@@ -82,7 +111,9 @@ ground-state cases, and then extracts a candidate resource as follows:
 
 1. Use the Kogut-Susskind cell/taste factorization already used in the CHSH
    lane.
-2. Keep the last taste bit of each species as the logical qubit.
+2. Keep the last taste bit of each species as the logical qubit, using the
+   retained-axis operator algebra source for the finite logical-operator
+   selection.
 3. Trace over cells and spectator taste bits to get a deterministic two-qubit
    logical resource.
 4. Separately scan fixed-environment postselected branches as diagnostics only.
@@ -149,8 +180,8 @@ Still open before promotion:
 
 - Harden beyond the two small default surfaces.
 - Check mass, coupling, dimension, boundary, and degeneracy sensitivity.
-- Add a native preparation/readout story for the logical resource, not only an
-  offline ground-state extraction.
+- Add a native preparation/readout story for the retained-axis logical resource,
+  not only an offline ground-state extraction.
 - Separate deterministic traced extraction from diagnostic postselection.
 - Keep the claim restricted to quantum state teleportation.
 
@@ -172,8 +203,8 @@ The source claim is therefore narrower than promotion:
   links, hashes, and checks `scripts/frontier_bell_inequality.py`.
 - The current framework baseline is [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md):
   Lattice, Quantum, and Record. No new axiom or primitive is introduced here.
-- No sentence in this note asserts that the last taste bit has been derived as
-  a native physical carrier.
+- This note asserts only the finite retained-axis logical-operator source, not
+  that the last taste bit has been derived as a native physical carrier.
 - The missing native preparation/readout theorem remains the next positive
   science target if this open-gate boundary passes audit.
 
@@ -186,20 +217,23 @@ PYTHONPATH=scripts python3 scripts/frontier_teleportation_poisson_resource_scope
 ## Citation Chain And Repair Path (2026-05-10)
 
 The runner's reduced-resource diagnostics support the small-surface positive
-observation, but the packet does not close the native preparation/readout
-theorem selecting the last taste bit as a deterministic teleportation resource.
+observation, and the retained-axis operator algebra source closes the finite
+last-taste logical-operator selection. The packet still does not close the
+native preparation/readout theorem realizing that retained-axis carrier as a
+deterministic physical teleportation resource.
 The source chain on this row currently stands as follows.
 
 | Source | Note / file | Role | Conditional on |
 |---|---|---|---|
 | Poisson/CHSH small-surface ground states | `scripts/frontier_bell_inequality.py` (imported, linked, hashed, and source-checked by this runner) | source script | visible bounded helper source; not a native preparation/readout theorem |
 | This row's runner | `scripts/frontier_teleportation_resource_from_poisson.py` | quoted bounded certificate | bounded extraction on `1D N=8` and `2D 4x4` only |
+| Retained-axis logical carrier algebra | [`TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md`](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md) | finite operator-algebra source | retained-bounded RALA source for `Z_axis`, `X_axis`, axis Bell projectors, and last-axis `X_fixed`; not a physical apparatus theorem |
 | Adjacent Poisson resource sweep | [`TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md`](TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md) | adjacent diagnostic | not a substitute for the missing native-carrier bridge theorem |
-| Adjacent resource fidelity note | [`TELEPORTATION_RESOURCE_FIDELITY_NOTE.md`](TELEPORTATION_RESOURCE_FIDELITY_NOTE.md) | bounded fidelity protocol | not a derivation of last-taste-bit selection |
-| Adjacent measurement-record / apparatus-dynamics-closure | [`TELEPORTATION_MEASUREMENT_RECORD_NOTE.md`](TELEPORTATION_MEASUREMENT_RECORD_NOTE.md), [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md) | adjacent bounded results | do not select the last taste bit as native carrier |
+| Adjacent resource fidelity note | [`TELEPORTATION_RESOURCE_FIDELITY_NOTE.md`](TELEPORTATION_RESOURCE_FIDELITY_NOTE.md) | bounded fidelity protocol | not a physical apparatus theorem |
+| Adjacent measurement-record / apparatus-dynamics-closure | [`TELEPORTATION_MEASUREMENT_RECORD_NOTE.md`](TELEPORTATION_MEASUREMENT_RECORD_NOTE.md), [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md) | adjacent bounded results | do not derive native preparation/readout for this Poisson resource |
 | Current framework baseline | [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md) | Lattice / Quantum / Record baseline | the native preparation/readout theorem has not yet been derived from that baseline |
 
 The remaining repair path is to prove the native preparation/readout theorem
-for this last-taste-bit carrier. Until that lands, the small-surface positive
-numbers in the table are bounded diagnostics, not a deterministic resource
-derivation.
+for this retained-axis last-taste carrier. Until that lands, the small-surface
+positive numbers in the table are bounded diagnostics plus finite
+operator-algebra support, not a physical deterministic resource derivation.

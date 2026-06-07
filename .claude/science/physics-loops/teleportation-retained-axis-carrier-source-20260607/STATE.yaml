@@ -1,0 +1,25 @@
+loop: teleportation-retained-axis-carrier-source-20260607
+mode: science_fix
+date: 2026-06-07
+base_branch: main
+branch: physics-loop/teleportation-retained-axis-carrier-source-20260607
+target_claim_id: teleportation_resource_from_poisson_note
+actual_current_surface_status: bounded-support
+conditional_surface_status: native preparation/readout still open
+active_route: route finite last-taste logical carrier selection through retained-bounded RALA
+files_touched:
+  - docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md
+  - scripts/frontier_teleportation_resource_from_poisson.py
+  - scripts/frontier_teleportation_poisson_resource_scope_repair.py
+  - logs/runner-cache/frontier_teleportation_resource_from_poisson.txt
+  - logs/runner-cache/frontier_teleportation_poisson_resource_scope_repair.txt
+open_imports:
+  - native physical preparation/readout for the retained-axis carrier
+  - microscopic apparatus or detector path for the Poisson resource
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_status: not_run
+audit_status: not_modified
+pr_status: pending
+next_exact_action: run cache checks, commit, push, and open review PR
+stop_condition: PR opened for review

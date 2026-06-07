@@ -1,0 +1,22 @@
+loop_slug: timeout-cache-unblocks-batch2-20260607
+branch: physics-loop/timeout-cache-unblocks-batch2-20260607
+base: origin/main
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: runner_cache_timeout_repair
+files_touched:
+  - docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md
+  - scripts/lattice_3d_l2_tail_stats.py
+  - logs/runner-cache/lattice_3d_l2_tail_stats.txt
+  - scripts/fm_transfer_grown_companion.py
+  - logs/runner-cache/fm_transfer_grown_companion.txt
+  - scripts/persistent_record_matched_compare.py
+  - logs/runner-cache/persistent_record_matched_compare.txt
+claim_boundary: "Cache and runner evidence only; no audit status edits and no scientific widening."
+verification:
+  - "python3 scripts/cached_runner_output.py --check-only scripts/lattice_3d_l2_tail_stats.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/fm_transfer_grown_companion.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/persistent_record_matched_compare.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/lattice_3d_l2_tail_stats.py,scripts/fm_transfer_grown_companion.py,scripts/persistent_record_matched_compare.py --check-only --allow-non-main"
+next_exact_action: "Review PR; if accepted, queue lattice_3d_l2_tail_stats_note for re-audit from the repaired source packet."

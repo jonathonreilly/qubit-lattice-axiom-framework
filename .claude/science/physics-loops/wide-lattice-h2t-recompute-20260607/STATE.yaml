@@ -1,0 +1,14 @@
+slug: wide-lattice-h2t-recompute-20260607
+target_claim_id: wide_lattice_h2t_distance_law_note
+base: origin/main
+status: ready_for_review_pr
+actual_current_surface_status: bounded-support
+active_route: frozen_raw_row_verifier
+files_touched:
+  - docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md
+  - scripts/wide_lattice_h2t_distance_replay.py
+  - logs/runner-cache/wide_lattice_h2t_distance_replay.txt
+open_imports:
+  - continuum distance-law theorem
+next_exact_action: "Open review PR."
+stop_condition: "PR opened and verified."

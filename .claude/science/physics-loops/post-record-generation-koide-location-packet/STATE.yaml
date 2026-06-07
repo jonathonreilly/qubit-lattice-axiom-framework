@@ -1,0 +1,38 @@
+loop_slug: post-record-generation-koide-location-packet
+date: 2026-06-07
+mode: science-fix
+target_status: exact-support
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+target_claim_id: post_record_generation_koide_stable_location_index_2026-06-06
+target_blocker_text: "runner_artifact_issue: include the two importlib-loaded helper runner sources and provide the selector subdivision, stable-setting certificate, evidence-ladder, and non-retained stable-feature authority packets before re-audit."
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: runner_certificate
+stacked_on: physics-loop/post-record-flow-thermal-packet-20260607
+cycle_count: 1
+active_route: static helper graph plus bounded generation/Koide row-index export
+files_touched:
+  - docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md
+  - scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_generation_koide_stable_location_index_2026_06_06.txt
+  - outputs/post_record_generation_koide_stable_location_index_slice_2026_06_07.json
+open_imports:
+  - selected-dial authority remains out of scope
+  - physical stable-rule and selector derivation from Record remains out of scope
+  - two stable-feature rows remain non-retained or conditional authority, but are now explicit packet inputs
+closed_or_reduced_imports:
+  - target runner now statically exposes selector and stable-setting helper runners
+  - target packet now points to all four stable-feature authority notes
+  - target runner verifies the current 108-row bounded row export
+checks:
+  - command: python3 scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py
+    result: SUMMARY PASS=78 FAIL=0
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py,scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py,scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py --check-only --push-mode=none
+    result: all relevant caches fresh
+  - command: git diff -- docs/audit | wc -c
+    result: "0"
+review_disposition: pass_for_scope
+pr_status: pending
+next_exact_action: "Attack a retained-premise selector or stable-rule bridge for one of the 108 indexed generation/Koide rows."
+stop_condition: "This block is complete when pushed as a stacked review PR."

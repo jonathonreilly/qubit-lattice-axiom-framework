@@ -1,21 +1,28 @@
 ===== runner cache v1 =====
 runner: scripts/NONLABEL_GROWN_BASIN_TARGETED.py
-runner_sha256: 67d5b4c649f6c49a7d22b9697876e1d1562a80bce2c5a616ddb1d4c305f2daf1
+runner_sha256: b65af6b592d68d3d356dba2796968a91bb285275b8458aceaeacaff57cd1ab50
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==========================================================================================
 NON-LABEL GROWN BASIN TARGETED FROZEN LOG VERIFIER
 log: logs/2026-04-06-nonlabel-grown-basin-targeted.txt
+recompute certificate: outputs/nonlabel_grown_basin_recompute_certificate_2026_06_07.json
 ==========================================================================================
 restore=0.60 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.393e-05 minus=+3.392e-05 double=-6.787e-05 exp=1.000 PASS
 restore=0.70 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.535e-05 minus=+3.534e-05 double=-7.071e-05 exp=1.000 PASS
 restore=0.80 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.620e-05 minus=+3.619e-05 double=-7.241e-05 exp=1.000 PASS
 
-SAFE READ: bounded positive restore basin; verifier checks frozen rows only.
-SCORECARD PASS=3 FAIL=0
+
+RECOMPUTED ROWS
+restore=0.60 zero=+0.000000000e+00 neutral=+0.000000000e+00 plus=-3.392850377e-05 minus=+3.391821269e-05 double=-6.786728602e-05 exp=1.000219 PASS
+restore=0.70 zero=+0.000000000e+00 neutral=+0.000000000e+00 plus=-3.534838057e-05 minus=+3.533742985e-05 double=-7.070769755e-05 exp=1.000223 PASS
+restore=0.80 zero=+0.000000000e+00 neutral=+0.000000000e+00 plus=-3.620003164e-05 minus=+3.618855547e-05 double=-7.241152409e-05 exp=1.000228 PASS
+
+SAFE READ: bounded positive restore basin; verifier checks frozen rows against recompute certificate.
+SCORECARD PASS=6 FAIL=0
 
 ----- stderr -----
 

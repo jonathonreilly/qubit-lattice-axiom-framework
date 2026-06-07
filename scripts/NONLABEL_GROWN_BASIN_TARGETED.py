@@ -8,6 +8,7 @@ geometry-sector transfer has a real local basin or only a single retained point.
 from __future__ import annotations
 
 import argparse
+import json
 import math
 import os
 import re
@@ -35,6 +36,9 @@ SEED = 0
 AUDIT_TIMEOUT_SEC = 120
 REPO_ROOT = Path(__file__).resolve().parents[1]
 FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-06-nonlabel-grown-basin-targeted.txt"
+RECOMPUTE_CERT = REPO_ROOT / "outputs" / "nonlabel_grown_basin_recompute_certificate_2026_06_07.json"
+VALUE_TOL = 1.0e-8
+EXPONENT_TOL = 5.0e-4
 ROW_RE = re.compile(
     r"^restore=(?P<restore>[0-9.]+)\s+\|\s+"
     r"zero=(?P<zero>[+-][0-9.]+e[+-][0-9]+)\s+"
@@ -165,21 +169,145 @@ def _measure(pos, adj, layers):
     return zero, plus, minus, neutral, double, exponent, ok
 
 
-def run_full_replay() -> None:
-    print("=" * 90)
-    print("NON-LABEL GROWN BASIN TARGETED")
-    print(f"  drift={DRIFT}, restore values={RESTORES}, seed={SEED}")
-    print("=" * 90)
-    passed = 0
+def _row_passes_gates(row: dict[str, float | bool]) -> bool:
+    zero = float(row["zero"])
+    plus = float(row["plus"])
+    minus = float(row["minus"])
+    neutral = float(row["neutral"])
+    double = float(row["double"])
+    exponent = float(row["exp"])
+    return (
+        abs(zero) < 1e-12
+        and abs(neutral) < 1e-12
+        and plus != 0.0
+        and minus != 0.0
+        and plus * minus < 0.0
+        and double < 0.0
+        and abs(exponent - 1.0) < 0.05
+    )
+
+
+def _computed_rows() -> list[dict[str, float | bool]]:
+    rows: list[dict[str, float | bool]] = []
     for restore in RESTORES:
         pos, adj, layers = grow(DRIFT, restore, SEED)
         sector_adj = _build_geometry_sector_grown(pos, layers)
         zero, plus, minus, neutral, double, exponent, ok = _measure(pos, sector_adj, layers)
-        passed += int(ok)
+        rows.append(
+            {
+                "restore": restore,
+                "zero": zero,
+                "plus": plus,
+                "minus": minus,
+                "neutral": neutral,
+                "double": double,
+                "exp": exponent,
+                "ok": bool(ok),
+                "passes_gates": _row_passes_gates(
+                    {
+                        "zero": zero,
+                        "plus": plus,
+                        "minus": minus,
+                        "neutral": neutral,
+                        "double": double,
+                        "exp": exponent,
+                    }
+                ),
+            }
+        )
+    return rows
+
+
+def _write_recompute_certificate(rows: list[dict[str, float | bool]]) -> Path:
+    payload = {
+        "certificate": "nonlabel_grown_basin_recompute_certificate_2026_06_07",
+        "generated_by": "scripts/NONLABEL_GROWN_BASIN_TARGETED.py --recompute --write-certificate",
+        "claim_id": "nonlabel_grown_basin_note",
+        "drift": DRIFT,
+        "restore_values": RESTORES,
+        "seed": SEED,
+        "h": H,
+        "k": K,
+        "beta": BETA,
+        "nl": NL,
+        "source_z": SOURCE_Z,
+        "source_strength": SOURCE_STRENGTH,
+        "field_power": FIELD_POWER,
+        "min_edges": MIN_EDGES,
+        "value_tolerance_for_frozen_log": VALUE_TOL,
+        "exponent_tolerance_for_frozen_log": EXPONENT_TOL,
+        "rows": rows,
+    }
+    RECOMPUTE_CERT.parent.mkdir(parents=True, exist_ok=True)
+    RECOMPUTE_CERT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    return RECOMPUTE_CERT
+
+
+def _load_recompute_certificate(failures: list[str]) -> list[dict[str, float | bool]]:
+    if not RECOMPUTE_CERT.exists():
+        failures.append(f"missing recompute certificate: {RECOMPUTE_CERT.relative_to(REPO_ROOT)}")
+        return []
+    try:
+        payload = json.loads(RECOMPUTE_CERT.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        failures.append(f"bad recompute certificate json: {exc}")
+        return []
+    rows = payload.get("rows")
+    if not isinstance(rows, list):
+        failures.append("recompute certificate has no rows list")
+        return []
+    if payload.get("drift") != DRIFT:
+        failures.append(f"recompute drift mismatch: {payload.get('drift')}")
+    if payload.get("restore_values") != RESTORES:
+        failures.append(f"recompute restore grid mismatch: {payload.get('restore_values')}")
+    if payload.get("seed") != SEED:
+        failures.append(f"recompute seed mismatch: {payload.get('seed')}")
+    return rows
+
+
+def _compare_frozen_to_recompute(
+    frozen_rows: list[dict[str, float | bool]],
+    recompute_rows: list[dict[str, float | bool]],
+    failures: list[str],
+) -> None:
+    if len(recompute_rows) != len(RESTORES):
+        failures.append(f"expected {len(RESTORES)} recompute rows, found {len(recompute_rows)}")
+        return
+    for frozen, recompute in zip(frozen_rows, recompute_rows, strict=False):
+        restore = float(frozen["restore"])
+        if round(float(recompute.get("restore", math.nan)), 2) != round(restore, 2):
+            failures.append(f"restore={restore:.2f} recompute row mismatch")
+            continue
+        if not bool(recompute.get("ok")):
+            failures.append(f"restore={restore:.2f} recompute row is not marked ok")
+        if not _row_passes_gates(recompute):
+            failures.append(f"restore={restore:.2f} recompute gates failed")
+        for key in ("zero", "plus", "minus", "neutral", "double"):
+            delta = abs(float(frozen[key]) - float(recompute[key]))
+            if delta > VALUE_TOL:
+                failures.append(
+                    f"restore={restore:.2f} frozen {key} differs from recompute by {delta:.3e}"
+                )
+        exp_delta = abs(float(frozen["exp"]) - float(recompute["exp"]))
+        if exp_delta > EXPONENT_TOL:
+            failures.append(
+                f"restore={restore:.2f} frozen exponent differs from recompute by {exp_delta:.3e}"
+            )
+
+
+def run_full_replay(write_certificate: bool = False) -> None:
+    print("=" * 90)
+    print("NON-LABEL GROWN BASIN TARGETED")
+    print(f"  drift={DRIFT}, restore values={RESTORES}, seed={SEED}")
+    print("=" * 90)
+    rows = _computed_rows()
+    passed = sum(1 for row in rows if row["passes_gates"])
+    for row in rows:
         print(
-            f"restore={restore:.2f} | zero={zero:+.3e} plus={plus:+.3e} "
-            f"minus={minus:+.3e} neutral={neutral:+.3e} double={double:+.3e} "
-            f"exp={exponent:>5.3f} {'YES' if ok else 'no'}"
+            f"restore={float(row['restore']):.2f} | zero={float(row['zero']):+.9e} "
+            f"plus={float(row['plus']):+.9e} minus={float(row['minus']):+.9e} "
+            f"neutral={float(row['neutral']):+.9e} double={float(row['double']):+.9e} "
+            f"exp={float(row['exp']):.6f} {'YES' if row['passes_gates'] else 'no'}"
         )
     print()
     print("SAFE READ")
@@ -188,6 +316,9 @@ def run_full_replay() -> None:
         print("  this is a bounded positive basin around the retained row")
     else:
         print("  this is a clean no-go at the nearest restore neighborhood")
+    if write_certificate:
+        path = _write_recompute_certificate(rows)
+        print(f"RECOMPUTE_CERTIFICATE={path.relative_to(REPO_ROOT)}")
 
 
 def verify_frozen_log() -> int:
@@ -233,9 +364,14 @@ def verify_frozen_log() -> int:
         if abs(row["exp"] - 1.0) > 0.002:
             failures.append(f"restore={restore:.2f} exponent not linear: {row['exp']:.6f}")
 
+    recompute_rows = _load_recompute_certificate(failures)
+    if recompute_rows:
+        _compare_frozen_to_recompute(rows, recompute_rows, failures)
+
     print("=" * 90)
     print("NON-LABEL GROWN BASIN TARGETED FROZEN LOG VERIFIER")
     print(f"log: {FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print(f"recompute certificate: {RECOMPUTE_CERT.relative_to(REPO_ROOT)}")
     print("=" * 90)
     for row in rows:
         print(
@@ -250,8 +386,18 @@ def verify_frozen_log() -> int:
             print(f"FAIL: {failure}")
         print(f"SCORECARD PASS=0 FAIL={len(failures)}")
         return 1
-    print("SAFE READ: bounded positive restore basin; verifier checks frozen rows only.")
-    print(f"SCORECARD PASS={len(rows)} FAIL=0")
+    print()
+    print("RECOMPUTED ROWS")
+    for row in recompute_rows:
+        print(
+            f"restore={float(row['restore']):.2f} zero={float(row['zero']):+.9e} "
+            f"neutral={float(row['neutral']):+.9e} plus={float(row['plus']):+.9e} "
+            f"minus={float(row['minus']):+.9e} double={float(row['double']):+.9e} "
+            f"exp={float(row['exp']):.6f} PASS"
+        )
+    print()
+    print("SAFE READ: bounded positive restore basin; verifier checks frozen rows against recompute certificate.")
+    print(f"SCORECARD PASS={len(rows) + len(recompute_rows)} FAIL=0")
     return 0
 
 
@@ -262,10 +408,17 @@ def main() -> int:
         action="store_true",
         help="Run the original live replay instead of verifying the frozen log.",
     )
+    parser.add_argument(
+        "--write-certificate",
+        action="store_true",
+        help="With --recompute, write the completed recompute certificate used by the default verifier.",
+    )
     args = parser.parse_args()
     if args.recompute:
-        run_full_replay()
+        run_full_replay(write_certificate=args.write_certificate)
         return 0
+    if args.write_certificate:
+        parser.error("--write-certificate requires --recompute")
     return verify_frozen_log()
 
 

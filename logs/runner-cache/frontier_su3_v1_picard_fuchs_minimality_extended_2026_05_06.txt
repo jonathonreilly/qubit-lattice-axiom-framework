@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py
-runner_sha256: be9b2d9c265237827b61c68469414ed94591cc1bd475aae37e5bcd2ed62d2595
+runner_sha256: b375cf8c63694e0fb9eb01644ccb231d97b0fb8440468e27d59cc9f0fe8039f0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 14.07
+elapsed_sec: 9.29
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -14,7 +14,7 @@ Candidate ODE (from PR #541):
   6 beta^2 J''' + beta(60-beta) J'' + (-4 beta^2 - 2 beta + 120) J' - beta(beta+10) J = 0
 
 Building Bessel-determinant Taylor series of J(beta) to depth 100...
-  build+taylor: 0.91s
+  build+taylor: 0.55s
   a_0 = 1, a_1 = 0, a_2 = 1/36, a_3 = 1/648, a_4 = 1/2592
 
 [A] Deep Taylor annihilation certificate (depth=100):
@@ -24,7 +24,7 @@ Building Bessel-determinant Taylor series of J(beta) to depth 100...
     Recurrence verified for N = 2 to 99: ALL HOLD EXACTLY
 
 [B-EXT] Lower-order exclusion (no order <= 2 ODE with deg <= 30):
-    Lower-order exclusion (extended): ALL (r <= 2, d <= 30) EXCLUDED  (total 11.84s)
+    Lower-order exclusion (extended): ALL (r <= 2, d <= 30) EXCLUDED  (total 8.03s)
     r=1,d=0: unknowns=2, equations=10, rank=2, kernel_dim=0 -> OK: no annihilator
     r=1,d=5: unknowns=12, equations=20, rank=12, kernel_dim=0 -> OK: no annihilator
     r=1,d=10: unknowns=22, equations=30, rank=22, kernel_dim=0 -> OK: no annihilator
@@ -41,7 +41,7 @@ Building Bessel-determinant Taylor series of J(beta) to depth 100...
     r=2,d=30: unknowns=93, equations=96, rank=93, kernel_dim=0 -> OK: no annihilator
 
 [E-EXT] (r=3) higher-degree consistency to d=12:
-    (r=3) higher-degree consistency to d=12: ALL kernels match polynomial-multiple bound  (total 0.43s)
+    (r=3) higher-degree consistency to d=12: ALL kernels match polynomial-multiple bound  (total 0.29s)
     r=3,d=2: kernel_dim=1, expected=1 -> OK
     r=3,d=3: kernel_dim=2, expected=2 -> OK
     r=3,d=4: kernel_dim=3, expected=3 -> OK
@@ -69,16 +69,16 @@ Building Bessel-determinant Taylor series of J(beta) to depth 100...
 SUMMARY: CERTIFICATE PASS=6 FAIL=0
 ==============================================================================
 
-Extended minimality certificate operationally CLOSED.
-- Lower-order exclusion to (r <= 2, d <= 30): no annihilator
-- (r=3, d) higher-degree consistency to d=12: polynomial-multiple bound exact
-- Algorithmic Koutschan guess: minimal at (r=3, d=2), matches PR #541 L
+Finite-window Picard-Fuchs certificate PASS.
+- Lower-order exclusion to (r <= 2, d <= 30): no checked annihilator
+- (r=3, d) higher-degree consistency to d=12: polynomial-multiple bound exact in the checked window
+- Algorithmic Koutschan guess: first checked hit at (r=3, d=2), matches PR #541 L
 - Primitive-integer signature: 8/8 coefficient match
 
 Combined with the deep Taylor annihilation (depth 100), the algorithmic
 verification path is self-contained over Q. The Bernstein-Sato existence
-input from D-module theory remains philosophical context, but the bounded
-operational closure of the rank bound is now runner-internal.
+input from D-module theory remains philosophical context; this runner does
+not claim arbitrary-degree lower-order exclusion or all-order minimality.
 Output written: outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json
 
 ----- stderr -----

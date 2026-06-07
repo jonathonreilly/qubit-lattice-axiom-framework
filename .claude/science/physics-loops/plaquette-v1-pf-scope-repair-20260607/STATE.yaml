@@ -1,0 +1,21 @@
+loop_slug: plaquette-v1-pf-scope-repair-20260607
+branch: physics-loop/plaquette-v1-pf-scope-repair-20260607
+base: origin/main
+target_claim_id: plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06
+target_status: bounded-support
+current_goal: repair overbroad Picard-Fuchs scope without audit edits
+cycle_count: 1
+active_route: finite-window source narrowing
+hard_residual: all-degree lower-order exclusion remains unproved
+files_touched:
+  - docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md
+  - scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py
+  - logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.txt
+  - outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: local self-check only; independent review-loop/audit remains required
+pr_status: pending
+next_exact_action: open review PR for the repair block
+stop_condition: current block packaged; campaign should pivot to next conditional row after PR creation

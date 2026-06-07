@@ -1,14 +1,26 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: 11fd80b859715083b5d2faac04d4661858499b6b3691b7eb9ec917f2d128818f
+runner_sha256: 3faec274bb1ab48d32efba86e734a2e194bb113ea55ad8397a2f7c24d0793da4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Plaquette beta=6 perturbative-derivation bounded-obstruction runner
 (Pattern A; companion-note paired)
 
+
+==============================================================================
+T0: source-boundary manifest
+==============================================================================
+  [PASS] note records 2026-06-07 source-boundary manifest
+         source-boundary section present
+  [PASS] note records supplied finite packet I_PT
+         packet names beta, coefficient list, MC comparator, and F2 comparator
+  [PASS] note keeps NSPT/beta/MC/F2 outside framework-native authority
+         admitted-input boundary remains explicit
+  [PASS] note excludes non-perturbative route no-go
+         negative claim remains finite-route only
 
 ==============================================================================
 C1: supplied beta=6 Wilson-gauge constants (exact algebra)
@@ -252,7 +264,7 @@ T9: scope (no new axioms / primitives / vocabulary)
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
   [PASS] note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-         length = 18820 chars
+         length = 20061 chars
   [PASS] note declares Status authority: independent audit lane only
          audit-lane authority pattern present
   [PASS] note declares no new axioms / no new primitives
@@ -260,7 +272,7 @@ T10: paired note exists with matching status authority disclaimer
   [PASS] note declares MC value 0.5934 as comparator only
          comparator pattern present
 
-TOTAL: PASS=24  FAIL=0
+TOTAL: PASS=28  FAIL=0
 
 ----- stderr -----
 

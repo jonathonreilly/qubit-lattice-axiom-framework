@@ -1,0 +1,24 @@
+loop_slug: plaquette-beta6-perturbative-source-boundary-20260607
+date: 2026-06-07
+base: origin/main
+base_sha: fbf4dfbedf8c7add83c179756584d9fc983f4488
+branch: physics-loop/plaquette-beta6-perturbative-source-boundary-20260607
+target_claim_id: plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: negative_route_pruning
+reachability_to_target: partially_closes
+active_route: source-boundary repair for finite weak-coupling/tadpole/Pade no-go
+files_touched:
+  - docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md
+  - scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
+  - logs/runner-cache/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.txt
+open_imports:
+  - NSPT coefficient packet w_1..w_16
+  - beta=6 Wilson-gauge normalization for this diagnostic
+  - Monte Carlo comparator <P>_MC=0.5934
+  - F2 scale comparator
+runner_result: "TOTAL: PASS=28 FAIL=0"
+audit_files_touched: false
+next_exact_action: "Reviewer/auditor can re-audit the exact source row as a source-boundary finite-route no-go."
+stop_condition: "No framework-native retained authority is supplied here for the packet or comparators."

@@ -1,0 +1,34 @@
+loop_slug: koide-gamma5-factor-helper-packet
+date: 2026-06-07
+remote_branch: physics-loop/koide-gamma5-factor-helper-packet-20260607
+target_claim_id: koide_gamma5_factor_bridge_no_go_note_2026-06-06
+target_status: exact-support
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: runner_certificate
+target_blocker_text: "missing_dependency_edge: add the companion G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A source/runner or restate the T/K-odd noncommuting selector requirement as an audited retained premise, then re-audit the scoped factor-bridge claim."
+files_touched:
+  - docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md
+  - scripts/frontier_koide_gamma5_factor_bridge_no_go.py
+  - logs/runner-cache/frontier_koide_gamma5_factor_bridge_no_go.txt
+  - logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt
+  - .claude/science/physics-loops/koide-gamma5-factor-helper-packet/
+audit_surface_edits: false
+new_axioms: false
+current_blocker_state: "The exact missing companion G2 source/runner/cache edge is exposed. The physics no-go remains a no-go: gamma5_spin x I_gen commutes with S on C3 and is K-even on the generation factor."
+remaining_frontier_residual: "Find or rule out a rooted carrier that entangles spin into the generation index so the selector is T-odd and non-commuting with S without forcing r."
+verification:
+  - "python3 scripts/frontier_koide_gamma5_factor_bridge_no_go.py"
+  - "python3 scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_gamma5_factor_bridge_no_go.py,scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py --force --push-mode=none"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_gamma5_factor_bridge_no_go.py,scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py --check-only --push-mode=none"
+  - "git diff -- docs/audit | wc -c"
+next_exact_action: "Open the review PR and let the audit/review lane decide whether the dependency-edge blocker is retired."
+stop_condition: "This packet is complete once pushed as a review PR; continue campaign by scanning for remaining audited conditional rows with exact missing-source or runner-cache blockers."

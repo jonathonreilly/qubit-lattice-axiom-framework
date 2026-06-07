@@ -33,11 +33,17 @@ named open frontier). No weight r is forced.
 
 from __future__ import annotations
 
+from pathlib import Path
 import sys
 import numpy as np
 
+import frontier_g2_bridge_c3_current_cannot_beat_gap_a as g2_bridge
+
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+TARGET_NOTE = ROOT / "docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md"
+G2_NOTE = ROOT / "docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md"
 
 
 def check(name: str, ok: bool, detail: str = "") -> None:
@@ -52,6 +58,24 @@ def check(name: str, ok: bool, detail: str = "") -> None:
 
 def section(t: str) -> None:
     print("\n" + "=" * 78 + "\n" + t + "\n" + "=" * 78)
+
+
+def source_anchor_checks() -> None:
+    section("Source anchors: companion G2 bridge packet")
+    target_text = TARGET_NOTE.read_text(encoding="utf-8")
+    g2_text = G2_NOTE.read_text(encoding="utf-8")
+    check("target note links the companion G2 no-go note",
+          "G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md" in target_text)
+    check("target note links the companion G2 runner",
+          "scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py" in target_text)
+    check("target note links the companion G2 runner cache",
+          "logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt" in target_text)
+    check("companion runner source is statically importable",
+          hasattr(g2_bridge, "positive_half") and hasattr(g2_bridge, "negative_half"))
+    check("companion note states the T-odd and non-commuting-with-S requirement",
+          "T-odd AND non-commuting with `S`" in g2_text)
+    check("companion note keeps r weight-clean",
+          "Does **not** force or derive `r`" in g2_text)
 
 
 def cyclic_shift() -> np.ndarray:
@@ -144,6 +168,7 @@ def weight_clean() -> None:
 
 
 def main() -> int:
+    source_anchor_checks()
     setup_checks()
     factor_bridge_no_go()
     structural_reason()

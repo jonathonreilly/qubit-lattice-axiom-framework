@@ -126,8 +126,13 @@ C₃-breaking T-odd selector via the natural embedding `γ₅_spin ⊗ I_gen`.*
 The "on-site Clifford `γ₅` as the rank-2 selector" lead
 (`KOIDE_DELTA_RANK2_SELECTOR_…CLIFFORD_CHIRALITY_DOMAIN_WALL`) is **unaudited**
 / off-main; cited as the lead under test, not as a retained authority. The
-companion G2-bridge no-go (`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A`) supplies
-the (T-odd ∧ non-commuting-with-`S`) requirement.
+companion G2-bridge no-go
+([`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md`](G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md),
+runner
+[`scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py`](../scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py),
+cache
+[`logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt`](../logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt))
+supplies the (T-odd ∧ non-commuting-with-`S`) requirement.
 
 All §2 algebra is class-(A) finite (`C²⊗C³`), recomputed in the runner.
 
@@ -166,7 +171,10 @@ audit_required_before_effective_retained: true
 
 - [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
   — the C₃-breaking requirement the selector must meet on the generation factor.
-- The companion G2-bridge no-go (`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A`,
-  same lane) — establishes the (T-odd ∧ non-commuting-with-`S`) requirement
-  that `γ₅ ⊗ I_gen` here fails; together they relocate the chirality residual
-  to the rooting / spin-generation-entanglement step (the open frontier).
+- The companion G2-bridge no-go
+  ([`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md`](G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md),
+  runner
+  [`scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py`](../scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py))
+  — establishes the (T-odd ∧ non-commuting-with-`S`) requirement that
+  `γ₅ ⊗ I_gen` here fails; together they relocate the chirality residual to
+  the rooting / spin-generation-entanglement step (the open frontier).

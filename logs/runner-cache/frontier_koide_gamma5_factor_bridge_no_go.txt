@@ -1,11 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_gamma5_factor_bridge_no_go.py
-runner_sha256: 221a2d6adc028723ed131aa35fda016c41230f1b5b4f8c36f8cec1b83fb70444
+runner_sha256: d47197806646ec6a1c2171ebc41ca00dc31f40343dd1e7556cd9b0f9032b5929
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
+
+==============================================================================
+Source anchors: companion G2 bridge packet
+==============================================================================
+[PASS] target note links the companion G2 no-go note
+[PASS] target note links the companion G2 runner
+[PASS] target note links the companion G2 runner cache
+[PASS] companion runner source is statically importable
+[PASS] companion note states the T-odd and non-commuting-with-S requirement
+[PASS] companion note keeps r weight-clean
 
 ==============================================================================
 Setup: generation factor (C^3) and on-site gamma5 (C^2)
@@ -41,7 +51,7 @@ Weight-clean: no r is forced
 ==============================================================================
 [PASS] statement is r-independent: S, A, gamma5 carry no r dependence (G3 clean)
 
-TOTAL: PASS=14 FAIL=0
+TOTAL: PASS=20 FAIL=0
 VERDICT: gamma5 factor-bridge no-go checks pass.
   On-site gamma5 = gamma5_spin (x) I_gen commutes with S on the
   generation C^3 EXACTLY and is K-even there -> supplies NEITHER half

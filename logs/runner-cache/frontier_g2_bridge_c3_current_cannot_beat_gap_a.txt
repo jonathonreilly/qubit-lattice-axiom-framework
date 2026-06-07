@@ -3,7 +3,7 @@ runner: scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py
 runner_sha256: cdda683982cd9b26c4a16abb67c55cbb4f6e5a92b47c4296d479671fbc6c6b17
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 

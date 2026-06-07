@@ -1,0 +1,29 @@
+loop: flavor-two-ninths-source-packet-20260607
+date: 2026-06-07
+branch: physics-loop/flavor-two-ninths-source-packet-20260607
+base: origin/main
+base_commit: fbf4dfbed
+target_claim_ids:
+  - flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31
+  - flavor_asymmetry_identification_principled_not_forced_2026-05-31
+target_status: bounded-support
+cycle_count: 1
+active_route: expose audited lepton delta=2/9 open-gate source packet for exact residual matching
+hard_residual: retained-grade theorem selecting one C3 fixed-point local density as the physical charged-lepton observable remains open
+files_touched:
+  - docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md
+  - docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md
+  - scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py
+  - scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py
+  - logs/runner-cache/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.txt
+  - logs/runner-cache/flavor_asymmetry_identification_principled_not_forced_2026_05_31.txt
+  - .claude/science/physics-loops/flavor-two-ninths-source-packet-20260607/
+verification:
+  - python3 scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py
+  - python3 scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py
+result: generation PASS=15 FAIL=0; asymmetry PASS=9 FAIL=0
+pr_status: pending
+next_exact_action: commit, push, open PR, then continue uncovered-row scan
+stop_condition: no tractable uncovered audit-unblock repairs remain

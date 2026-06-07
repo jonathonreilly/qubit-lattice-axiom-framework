@@ -1,0 +1,23 @@
+loop_slug: fifth-family-radial-packet-manifest
+branch: physics-loop/fifth-family-radial-packet-manifest-20260607
+target_claim_id: fifth_family_radial_repaired_positive_packet_note_2026-05-29
+target_status: bounded-support audit-unblock
+actual_current_surface_status: audited_conditional
+blocker_source: audit_ledger
+blocker_text: "runner_artifact_issue: include scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py with its SHA-pinned cache/output, and preferably the sweep and failure-audit companion caches, then re-audit the full bounded packet."
+cycle: 1
+active_route: static-import companion packet manifest plus SHA-pinned cache check
+files_touched:
+  - docs/FIFTH_FAMILY_RADIAL_REPAIRED_POSITIVE_PACKET_NOTE_2026-05-29.md
+  - scripts/FIFTH_FAMILY_RADIAL_BASIN.py
+  - scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py
+  - logs/runner-cache/FIFTH_FAMILY_RADIAL_BASIN.txt
+  - logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt
+open_imports:
+  - finite sampled fifth-family radial packet remains bounded, not family-wide
+  - physical mass-observable interpretation remains out of scope
+  - independent audit must decide whether packet-manifest repair clears the runner_artifact_issue
+trace_gate: direct_blocker_closure
+review_disposition: local_checks_pass_reviewer_pending
+next_exact_action: "Open review PR; auditor/reviewer can re-run helper graph extraction and the fifth-family caches."
+stop_condition: "This block is complete when the review PR is opened; campaign then pivots to the next repairable conditional row."

@@ -52,6 +52,13 @@ def main() -> None:
     print()
     print("SAFE READ")
     print(f"  failing rows: {len(failing)}")
+    assertions_ok = (
+        len(failing) == 1
+        and abs(failing[0][0] - 0.20) < 1e-12
+        and failing[0][1] == 0
+        and failing[0][2] < 0.0
+        and failing[0][3] > 0.0
+    )
     if failing:
         for drift, seed, plus, minus, exponent in failing[:5]:
             print(
@@ -61,6 +68,9 @@ def main() -> None:
         print("  the miss is a sign-orientation boundary, not a control leak")
     else:
         print("  no boundary failures found in this audit window")
+    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
+    if not assertions_ok:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

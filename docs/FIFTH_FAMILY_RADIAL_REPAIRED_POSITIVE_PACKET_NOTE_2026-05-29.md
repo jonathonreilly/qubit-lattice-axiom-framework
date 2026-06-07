@@ -10,6 +10,10 @@ records `status: ok` under the runner-declared audit timeout.
 [`scripts/FIFTH_FAMILY_RADIAL_SWEEP.py`](../scripts/FIFTH_FAMILY_RADIAL_SWEEP.py),
 [`scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py`](../scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py),
 [`scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py`](../scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py).
+The primary basin runner intentionally imports these companion runners so the
+audit packet builder's static helper-graph resolver includes their source files
+in the restricted packet. Its cache also prints a companion packet manifest with
+source and cache SHA-256 hashes for each companion.
 
 ## Purpose
 
@@ -105,6 +109,11 @@ failing rows: 1
 drift=0.20 seed=0 plus=-2.028e-06 minus=+2.028e-06 exp=1.000
 ASSERTIONS: PASS
 ```
+
+The primary basin runner's `COMPANION PACKET MANIFEST` pins the companion
+sources and caches, including the F~M transfer source/cache named by the audit
+repair note. This packet-surface repair is purely runner-manifest hygiene; it
+does not widen the bounded positive claim.
 
 ## Claim Boundary
 

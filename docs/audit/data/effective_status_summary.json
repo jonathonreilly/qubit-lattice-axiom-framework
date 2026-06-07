@@ -1,13 +1,17 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1348,
-    "decoration": 54,
-    "meta": 321,
-    "no_go": 318,
-    "open_gate": 136,
-    "positive_theorem": 762
+    "bounded_theorem": 1353,
+    "decoration": 53,
+    "meta": 317,
+    "no_go": 319,
+    "open_gate": 135,
+    "positive_theorem": 776
   },
   "cycle_examples": [
+    [
+      "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06"
+    ],
     [
       "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
       "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03"
@@ -23,18 +27,13 @@
     [
       "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
       "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
-    ],
-    [
-      "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
-      "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
     ]
   ],
-  "cycles_detected": 9,
+  "cycles_detected": 13,
   "effective_status_counts": {
-    "audited_conditional": 62,
-    "audited_failed": 3,
+    "audited_conditional": 2,
     "audited_numerical_match": 15,
-    "audited_renaming": 34,
+    "audited_renaming": 29,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
     "decoration_under_cl3_color_automorphism_theorem": 6,
@@ -60,16 +59,15 @@
     "decoration_under_strong_cp_theta_zero_note": 1,
     "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 3,
     "decoration_under_three_generation_observable_theorem_note": 1,
-    "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 309,
-    "open_gate": 37,
+    "open_gate": 33,
     "retained": 203,
-    "retained_bounded": 730,
-    "retained_no_go": 215,
+    "retained_bounded": 710,
+    "retained_no_go": 213,
     "retained_pending_chain": 10,
-    "unaudited": 1271
+    "unaudited": 1380
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

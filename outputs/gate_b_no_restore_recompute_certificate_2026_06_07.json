@@ -1,0 +1,74 @@
+{
+  "beta": 0.8,
+  "certificate": "gate_b_no_restore_recompute_certificate_2026_06_07",
+  "claim_id": "gate_b_no_restore_joint_package_note",
+  "frozen_log_tolerances": {
+    "born": 5e-18,
+    "d_tv": 0.0005,
+    "decoh": 0.05,
+    "mi": 0.0005
+  },
+  "generated_by": "scripts/gate_b_no_restore_joint_package.py --recompute --write-certificate",
+  "h": 0.5,
+  "k": 5.0,
+  "lambda": 10.0,
+  "max_d_phys": 3,
+  "n_ybins": 8,
+  "nl": 25,
+  "pw": 10,
+  "rows": [
+    {
+      "born": 2.1231099970198806e-15,
+      "d_tv": 0.786762247622177,
+      "decoh": 49.434236490834635,
+      "label": "exact grid",
+      "mi": 0.5683563556075912
+    },
+    {
+      "born": 2.1231099970198806e-15,
+      "d_tv": 0.786762247622177,
+      "decoh": 49.434236490834635,
+      "label": "no restore drift=0.0",
+      "mi": 0.5683563556075912
+    },
+    {
+      "born": 2.011562455236083e-15,
+      "d_tv": 0.5961304159417927,
+      "decoh": 0.9706055497940125,
+      "label": "no restore drift=0.2",
+      "mi": 0.3138427513206359
+    },
+    {
+      "born": 1.3103042064569025e-15,
+      "d_tv": 0.9713954573880939,
+      "decoh": 4.343010880039788,
+      "label": "no restore drift=0.5",
+      "mi": 0.8112652102744171
+    }
+  ],
+  "rows_spec": [
+    {
+      "drift": 0.0,
+      "label": "exact grid",
+      "restore": 1.0
+    },
+    {
+      "drift": 0.0,
+      "label": "no restore drift=0.0",
+      "restore": 0.0
+    },
+    {
+      "drift": 0.2,
+      "label": "no restore drift=0.2",
+      "restore": 0.0
+    },
+    {
+      "drift": 0.5,
+      "label": "no restore drift=0.5",
+      "restore": 0.0
+    }
+  ],
+  "seeds": [
+    0
+  ]
+}

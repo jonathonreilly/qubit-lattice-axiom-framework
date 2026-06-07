@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 203 |
+| **retained** | 204 |
 | **retained_no_go** | 214 |
 | **retained_bounded** | 721 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 34 |
-| unaudited | 1344 |
+| unaudited | 1343 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1133 |
+| `audited_clean` | 1134 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1653 |
+| `unaudited` | 1652 |
 
 | claim_type | count |
 |---|---:|
@@ -542,6 +542,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -7600,6 +7601,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Cl(3) pseudoscalar commutes with the three spatial generators and the staggered eta plaquette product is -1 for every plaquette orientation, so the two checked mechanisms do not derive orientation-dependent Wilson plaquette coefficients.  _(class `A`)_
 - **chain closes:** True — The independent algebra closes: omega=G1G2G3 is central in Cl(3,0), hence not a fourth anticommuting generator, and for mu<nu the staggered eta product equals -1 uniformly. Combined with the retained Wilson grammar's common plaquette coefficient, the scoped anisotropy claim is not produced by these routes.
 - **rationale:** The load-bearing work is algebraic closure over the accepted Quantum axiom content and retained Wilson-source grammar, not a definition, external comparison, or tuned numerical match. The runner source computes the Pauli anticommutation, pseudoscalar centrality, and eta-product orientation uniformity rather than merely printing constants, and the same identities check independently from the displayed definitions. The no-go is correctly scoped to the two PR #528 mechanisms and explicitly does not claim a global impossibility for all future anisotropy routes.
+- **auditor confidence:** high
+
+### `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07`
+
+- **Note:** [`GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md`](../../docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For SU(3), every Wilson one-link character coefficient c_(p,q)(beta) and normalized eigenvalue a_(p,q)(beta) is strictly positive for beta > 0, and arbitrary all-weight sequences define only formal diagonal convolution actions on C_fin.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-172255-113a49f8d5-gauge_wilson_su3_all_weight_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any dominant weight (p,q), V_(p,q) occurs in Sym^p(3) tensor Sym^q(3bar) inside V^{tensor(p+q)} as the Cartan highest-weight component.  _(class `A`)_
+- **chain closes:** True — The tensor-power expansion of chi_V^n has nonnegative irreducible multiplicities, and the Cartan product gives a positive n=p+q contribution for every (p,q). The formal convolution statement is restricted to the algebraic dual of finite-character tests and does not assert analytic closure.
+- **rationale:** The all-weight positivity follows from finite-dimensional SU(3) representation algebra: chi_V^n is a tensor-power character with nonnegative multiplicities, and the Cartan highest-weight component supplies the strict positive witness. The runner checks arithmetic consequences and packet markers rather than independently decomposing tensor powers, so runner PASS is supporting evidence, not the sole basis for the verdict. The formal distribution dictionary is explicitly algebraic/formal and does not overclaim L2, continuity, positivity, or bounded-operator closure.
 - **auditor confidence:** high
 
 ### `gellmann_completeness_theorem_note_2026-05-02`

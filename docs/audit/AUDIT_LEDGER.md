@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 721 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1339 |
+| unaudited | 1338 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 26 |
+| ~~audited_conditional~~ | 27 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1137 |
-| `audited_conditional` | 26 |
+| `audited_conditional` | 27 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1648 |
+| `unaudited` | 1647 |
 
 | claim_type | count |
 |---|---:|
@@ -1269,6 +1269,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_upper_bound_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2119,6 +2120,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using [E_ij,E_pp] = delta_jp E_ip - delta_pi E_pj, the expansion i[H,rho_p] = i sum_i c_ip E_ip - i sum_j c_pj E_pj equals sum_{q != p} i(c_qp E_qp - c_pq E_pq) after the q=p term cancels.  _(class `A`)_
 - **chain closes:** True — The commutator identity directly gives the local continuity equation for arbitrary finite I, and summing over p cancels every oriented pair. The support-envelope and antisymmetry claims follow immediately from the displayed definition of J_{p<-q}.
 - **rationale:** The load-bearing step is a genuine algebraic closure from the stated matrix-unit commutator, not a definition substitution or imported physical bridge. An independent manual expansion verifies the sign, the q=p cancellation, global cancellation, and the dependence only on c_pq and c_qp. The runner source performs actual symbolic dictionary algebra and concrete matrix-unit checks without external comparators, hard-coded contested values, or helper opacity. The note explicitly excludes the staggered carrier and physical density bridge, so no open carrier-specific dependency is imported into this scoped claim.
+- **auditor confidence:** high
+
+### `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Arbitrary finite bilinear number-current continuity/support envelope plus the supplied staggered nearest-neighbour onsite U(1) current sign fixed by the lattice continuity equation; site-mixing currents remain out of scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-174106-94907b15d1-axiom_first_lattice_noether_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With rho_x = chibar_x chi_x, the formula-(4*) current satisfies d rho_x/dt + div^L j = 0 operator-exactly on the supplied staggered hop, while the flipped sign violates continuity.  _(class `A`)_
+- **chain closes:** False — The algebraic continuity, support-envelope, and sign-selection checks close conditional on the supplied staggered/Kawamoto-Smit carrier and rho_x = chibar_x chi_x readout. The restricted packet explicitly does not derive that carrier/readout bridge.
+- **rationale:** The matrix-unit continuity and support-envelope identities are genuine algebraic closures, and the runner source performs nontrivial symbolic/operator checks rather than printing constants. The U(1) sign is fixed by continuity once the density, divergence convention, and supplied staggered carrier are accepted. However, the note explicitly consumes the staggered/Kawamoto-Smit exhibit and physical density/readout bridge as admitted rather than derived, so the theorem does not close from retained inputs alone.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`

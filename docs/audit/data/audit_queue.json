@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 319,
     "high": 257,
-    "leaf": 408,
+    "leaf": 407,
     "medium": 357
   },
   "cycle_break_target_count": 13,
@@ -28701,33 +28701,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06",
-        "minimal_axioms",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_only_det_positivity_case_a_note_2026-05-17"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -40521,6 +40494,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 48,
-  "total_pending": 1341
+  "ready_count": 47,
+  "total_pending": 1340
 }

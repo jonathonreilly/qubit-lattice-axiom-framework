@@ -1,0 +1,13 @@
+goal: "Wire the axiom-first reflection-positivity parent row to the Wilson-plane sign-repair source packet."
+target_claim_id: axiom_first_reflection_positivity_theorem_note_2026-04-29
+target_status: bounded-support
+trace_class: direct_blocker_closure
+base_branch: claude/repair-rp-wilson-temporal-gauge-sign-2026-06-06
+stacked_dependency: PR #3011 sign-repair bridge
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+  - scripts/audit_companion_axiom_first_reflection_positivity_parent_source_packet_2026_06_07.py
+  - logs/runner-cache/audit_companion_axiom_first_reflection_positivity_parent_source_packet_2026_06_07.txt
+next_exact_action: "Open stacked review PR; auditor/reviewer decides whether PR #3011 and this parent wiring close the conditional blocker."

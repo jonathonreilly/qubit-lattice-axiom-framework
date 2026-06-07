@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_measure_sharp_record_tangent_space.py
-runner_sha256: e00f26785e8da18bd9671bc4e7d42269374229640b611c3fa296e6af7c4d108e
+runner_sha256: 5ba9ac34dd61443566358e577118470eb66d98dbf3e6ebffde980f7797aab284
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.36
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -22,8 +22,14 @@ Part 1: document/status boundary
 [PASS] note contains required phrase: Y_T source unit
 [PASS] note contains required phrase: Status boundary
 [PASS] note contains required phrase: Non-claims
-[PASS] note marks exact-support status
+[PASS] note contains required phrase: 2026-06-07 authority split
+[PASS] note contains required phrase: SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06
+[PASS] note contains required phrase: SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05
+[PASS] note marks bounded-support status
 [PASS] note forbids bare retained
+[PASS] boundary phrase present: derive physical source semantics
+[PASS] boundary phrase present: strict same-source top/W response
+[PASS] boundary phrase present: unbounded top-Yukawa closure
 
 Part 2: finite probability tangent space
 [PASS] probability tangent sums to zero: 0
@@ -59,7 +65,7 @@ Part 5: firewall
 [PASS] forbidden overclaim absent: audit-clean retained
 
 ========================================================================================
-SUMMARY: PASS=38 FAIL=0
+SUMMARY: PASS=44 FAIL=0
 Wrote outputs/source_measure_sharp_record_tangent_space_2026-05-30.json
 
 ----- stderr -----

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 722 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1296 |
+| unaudited | 1295 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1135 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1603 |
+| `unaudited` | 1602 |
 
 | claim_type | count |
 |---|---:|
@@ -1295,6 +1295,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_zdet_fermionic_statistics_admission_2026-06-04` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6516,6 +6517,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given CAR quantization, the negative-energy branch can be relabeled as a positive-energy antiparticle branch with H_CAR = sum_{p,s} E(p)(a^dag a + b^dag b), so the finite-mode Fock spectrum is bounded below by 0.  _(class `A`)_
 - **chain closes:** True — The one-hop retained_bounded authority supplies the continuum Euclidean Dirac kernel and scalar denominator. The remaining conclusions are finite-dimensional Clifford, spinor-completeness, pole-continuation, Hamiltonian-spectrum, and CAR occupation algebra identities, and no reconstruction or spin-statistics claim is imported.
 - **rationale:** The runner source performs actual finite matrix and finite Fock occupation checks rather than printing constants or importing a contested fitted value. Independent algebra confirms M(p)S(p)=I from the Euclidean Clifford relation, poles p4=+/-iE Wick-continue to p0=+/-E, H_D^2=E^2 with double degeneracy, the displayed u/v completeness and bilinear signs match the standard Dirac-basis construction for positive mass, and finite CAR occupations make the displayed normal-ordered H_CAR nonnegative. The source note explicitly excludes Wightman reconstruction, microcausality, CAR selection from covariance, and spin-statistics closure, so the audited chain closes only at the bounded free-mode algebra level.
+- **auditor confidence:** high
+
+### `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`
+
+- **Note:** [`FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md`](../../docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the free Dirac one-particle Poincare generator integrability/self-adjointness repair via direct mass-shell/Wigner unitary action, excluding the rejected Nelson/Gaussian common analytic-vector route and excluding interacting-theory claims.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-002421-3cfc05bf58-free_dirac_poincare_generato`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The displayed mass-shell/Wigner action is a strongly continuous unitary Poincare representation, so Stone's theorem supplies the self-adjoint one-parameter generators.  _(class `B`)_
+- **chain closes:** False — The rapidity identities and the rejection of the Gaussian analytic-vector route check out as local mathematics. The full conclusion still depends on the explicit Wigner carrier, cocycle, invariant mass-shell action, and strong-continuity inputs said to come from a companion packet, but that authority is not provided or cited in the restricted packet.
+- **rationale:** The runner performs meaningful sanity checks of the rapidity reduction, unit-modulus phases, Gaussian obstruction, and finite spectral/full-line proxies, but these are algebraic or finite-model checks rather than a derivation of the full Poincare representation. The load-bearing step is the direct unitary mass-shell/Wigner action and its strong continuity, and the source note explicitly says the companion packet supplies the smooth carrier and cocycle checks. Since section 2 provides no cited authorities and says the load-bearing step must derive from the axiom, the restricted packet has an unsupported dependency edge rather than a closed bounded theorem.
+- **open / conditional deps cited:**
+  - `companion free-Dirac Poincare representation packet path not provided in restricted packet`
 - **auditor confidence:** high
 
 ### `free_dirac_poincare_representation_bounded_note_2026-05-30`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 721 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 34 |
-| unaudited | 1347 |
+| unaudited | 1346 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1133 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1656 |
+| `unaudited` | 1655 |
 
 | claim_type | count |
 |---|---:|
@@ -1273,6 +1273,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6079,6 +6080,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the supplied path r(t)=tanh(t)^4, dr/dt=4 tanh(t)^3 sech(t)^2>0 for finite t>0, so r=1/2 is crossed as a transit value rather than selected as an attractor.  _(class `A`)_
 - **chain closes:** True — The retained Koide lightcone authority supplies Q=2/3 iff r=1/2 on the stated positive C3-circulant line, and the map/path claims reduce to direct algebra and calculus. The physical/native arrow-selection bridge is not closed, but the note explicitly excludes that broader claim from scope.
 - **rationale:** The load-bearing math is a genuine algebraic/calculus closure over the supplied maps and path: the inverse identities, fixed points, derivatives, monotonicity, endpoint limits, and r=1/2 crossing all check independently. The runner source performs actual symbolic and numerical checks rather than merely printing pass constants, and it does not import the contested native-beta premise as a derived result. The verdict is clean only for the narrowed bounded route-pruning statement; it does not promote r(t)=tanh(t)^4 to a framework-native beta law or decide the physical arrow.
+- **auditor confidence:** high
+
+### `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`
+
+- **Note:** [`FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the supplied finite R[Z3]=R+C generation carrier/readout and the retained Q=1/3+(2/3)r coordinate, the trace/product/trivial-modular reference selects dimension block weights (1,2), not equal-block weights (1,1).
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-3dc8728ccd-flavor_tracial_reference_doe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the tracial state rho=I_3/3, Tr(rho e0):Tr(rho e1)=1/3:2/3=1:2, so the tracial reference gives r=1 and Q=1 rather than the equal-block r=1/2 and Q=2/3.  _(class `A`)_
+- **chain closes:** True — The finite projector calculation gives rank(e0)=1 and rank(e1)=2, hence trace block masses 1/3 and 2/3. The cited retained inputs supply the Q-coordinate and endpoint dictionary, so the narrowed route-pruning result closes on the supplied surface while leaving other Q=2/3 selectors outside scope.
+- **rationale:** The load-bearing math is an algebraic finite-projector calculation, not a first-principles compute from the framework baseline. Independent checking confirms the trace weights central blocks by rank and the cited endpoint dictionary sends dimension weighting to Q=1 while equal-block weighting goes to Q=2/3. The verdict is conditional rather than clean because the finite generation carrier/readout surface is an explicit supplied bridge, not derived or admitted by the restricted packet. The N1-N8 no-go gate supports only the narrowed route-pruning statement; non-tracial, chiral, finite-gap, and explicit block-measure routes remain open.
 - **auditor confidence:** high
 
 ### `fm_transfer_note`

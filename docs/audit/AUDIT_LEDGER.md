@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1289 |
+| unaudited | 1288 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 57 |
+| ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1138 |
-| `audited_conditional` | 57 |
+| `audited_conditional` | 58 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1596 |
+| `unaudited` | 1595 |
 
 | claim_type | count |
 |---|---:|
@@ -1306,6 +1306,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9211,6 +9212,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since H_hop[U] is anti-Hermitian, lambda_j(U) is real and E_j[U]=arcsinh(sqrt(m^2+lambda_j(U)^2)) >= arcsinh(m)>0, hence Delta_T^matter >= arcsinh(m)/a_tau uniformly in U and volume.  _(class `A`)_
 - **chain closes:** True — The per-background dispersion and anti-Hermitian-hop spectrum are supplied by the cited authorities; the inequality follows from real lambda_j, sqrt(m^2+lambda_j^2)>=m, and monotonicity of arcsinh. No cited input proves the full pure-gauge/coupled gap, and the note does not claim it.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs in the restricted packet, not a definition or tuned numerical match. The runner source constructs random staggered SU(3) spatial hops, checks anti-Hermiticity, the arcsinh(m) floor, the transfer-eigenvalue cap, and a non-anti-Hermitian control; it does not hard-code the contested bound. The beta=6 pure-gauge/coupling issue remains an open gate by the note's own scope, so it is not part of the closed theorem.
+- **auditor confidence:** high
+
+### `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`
+
+- **Note:** [`INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md`](../../docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Algebraic structure of delta as occupation-number curvature in the axis-separable single-hop model and symmetric pair-count interaction, excluding any computed physical value of delta.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-004313-c60988330e-interaction_asymmetry_delta_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The free Hamiltonian factorizes so E(hw) is affine and delta=0, while the pair-count term has second difference +1, so a native pair coupling U gives delta=U and the C3 off-diagonal coefficient is claimed to have sign(U).  _(class `A`)_
+- **chain closes:** False — The factorization, second-difference, and forbidden-diagonal identities close algebraically. The exact sign law does not close as stated: independent second-order downfolding gives K = t^2(1/eps - 1/(eps+U)) = t^2 U/[eps(eps+U)], so sign(K)=sign(U) only under an unstated no-level-crossing condition eps+U>0.
+- **rationale:** The runner performs genuine finite-dimensional algebra checks and its displayed sampled K values are consistent with the formula above. However, those samples do not prove the unconditional sign law, and the source states the sign lock as exact without the required denominator-sign boundary. The structure theorem is supportable in the weak/no-resonance regime, but the unrestricted theorem as written imports an unstated scope condition.
 - **auditor confidence:** high
 
 ### `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27`

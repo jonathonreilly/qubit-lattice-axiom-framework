@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 723 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1292 |
+| unaudited | 1291 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 56 |
+| ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1136 |
-| `audited_conditional` | 56 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1599 |
+| `unaudited` | 1598 |
 
 | claim_type | count |
 |---|---:|
@@ -1302,6 +1302,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8796,6 +8797,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** An independent check of the load-bearing algebra agrees with the runner: differentiating (1/2) log(J^2 + 4u_0^2) gives 1/(4u_0^2) per mode, and 4/(16 u_0^2) simplifies to the same value. However, the packet leaves the d=4/APBC N_taste=16 bridge and the specific mean-field generating-functional form as scoped inputs rather than closed retained derivations. The Clifford dependency is also represented in the note/runner as retained_pending_chain, so the row is not eligible for audited_clean on this packet.
 - **open / conditional deps cited:**
   - `CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
+
+### `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the algebraic taste-count and Berezin log-det curvature bridge for the free naive d=4 lattice symbol, conditional on the stated uniform conjugate-paired +/- i 2u_0 mean-field spectrum.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-003444-cb51bff8b7-higgs_lattice_taste_count_an`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The naive symbol has 2^d corner zeros, giving N_taste=16 at d=4, and under a uniform paired spectrum +/- i 2u_0 each pair gives W(J)=(N_tot/2) log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).  _(class `A`)_
+- **chain closes:** False — The displayed algebra closes after assuming d=4 and the uniform paired spectrum. The restricted packet does not close d=4 from the cited Clifford authority, which only gives even total dimension/d_t odd under d_s=3, and it explicitly does not derive the actual mean-field operator's uniform +/- i 2u_0 spectrum.
+- **rationale:** The taste-count and W(J) calculus identities are correct as class-A conditional algebra, and the runner meaningfully checks those identities. However, the runner hard-codes d=4 and treats the uniform a=2u_0 paired spectrum as an explicit supplied hypothesis, so it does not close the two premises needed to use this as a retained repair bridge for the parent ratio note. The cited Clifford note does not supply total d=4 on its own.
 - **auditor confidence:** high
 
 ### `higgs_mass_from_axiom_note`

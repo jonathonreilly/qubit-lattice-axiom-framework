@@ -1,9 +1,9 @@
-===== runner cache v2 =====
+===== runner cache v1 =====
 runner: scripts/koide_tracial_standard_form_carrier_2026_06_02.py
 runner_sha256: a701d77bec7d8a15316fc3a8ee145de49cf8c16920209aedbbfda0335dc67359
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 [PASS] C1 tracial GNS standard form reproduces tau and has Omega=e cyclic+separating

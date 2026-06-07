@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 203 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 717 |
+| **retained_bounded** | 718 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1362 |
+| unaudited | 1361 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1128 |
+| `audited_clean` | 1129 |
 | `audited_conditional` | 12 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1671 |
+| `unaudited` | 1670 |
 
 | claim_type | count |
 |---|---:|
@@ -693,6 +693,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_three_measures_three_observables_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_transport_gap_constant_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_y_l1_ratios_wilson_integer_diff_note_2026-05-08_probey_l1_ratios` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
 | `koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9748,6 +9749,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The finite C3 bookkeeping separates count-once block readout Q=2/3 at r=1/2 from count-twice dimension readouts Q=1 and L_3(1,2)=2/9.  _(class `A`)_
 - **chain closes:** True — The Q table follows by direct substitution of r*=nu/(2mu) into Q=(1+2r)/3 for (1,0), (1,1), and (1,2). Independently, with omega^3=1 and 1+omega+omega^2=0, (omega-1)(omega^2-1)=3, so L_3(1,2)=(1/3)(1/3+1/3)=2/9.
 - **rationale:** The load-bearing content is finite algebraic bookkeeping over retained-grade cited inputs, not a first-principles framework derivation. The runner source computes the displayed Q table and L_3(1,2) formula rather than importing external comparators, and the independent manual check confirms the factors and normalizations. The note explicitly preserves the open selector/source problem for r=1/2, so the audited claim does not overreach into charged-lepton phenomenology.
+- **auditor confidence:** high
+
+### `koide_tracial_standard_form_carrier_narrow_note_2026-06-02`
+
+- **Note:** [`KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md`](../../docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the supplied finite tracial standard-form R[Z_3] carrier and the conditional equal-channel scoring arithmetic; no physical carrier or scoring-rule selection from baseline axioms was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-162931-16ecbeef14-koide_tracial_standard_form_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cyclic vector is one of the group-element ONB vectors, so L^2 = C Omega (+) Omega^perp = span{e} (+) span{g,g^2}, and equal channel scoring gives N a^2 = N(N-1)b^2, hence r=1/(N-1).  _(class `A`)_
+- **chain closes:** True — The finite standard-form identities, the Omega-aligned (1,2) split, the Hilbert-Schmidt norms, and Q=2/3 after the supplied r=1/2 all close by direct algebra on the stated carrier. The chain does not claim to close the separate physical selection of the carrier or channel-count scoring rule.
+- **rationale:** The note is correctly scoped as a bounded supplied-carrier theorem, not an unbounded Koide derivation. Independent algebra confirms the ONB/trace identities, the cyclic-vector split, the democratic idempotent misalignment, the Hilbert-Schmidt factors N and N(N-1), r=1/(N-1), and Q=2/3 at N=3. The runner source performs finite symbolic/numeric checks rather than merely printing constants, and its PASS output matches the restricted claim boundary.
 - **auditor confidence:** high
 
 ### `koide_transport_gap_constant_no_go_note_2026-04-20`

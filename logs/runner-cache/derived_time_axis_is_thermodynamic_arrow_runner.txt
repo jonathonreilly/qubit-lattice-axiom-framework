@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/derived_time_axis_is_thermodynamic_arrow_runner.py
+runner_sha256: b72fc0d12a18eeeaa6dfa5ab7ef7f5059832d4e6ac2c4b9b6f39b7891b92e307
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.96
+status: ok
+----- stdout -----
+==============================================================================
+the derived time axis (record count) IS the thermodynamic arrow (entropy)  [class A]
+==============================================================================
+
+-- (1) records form => entanglement entropy rises (strongly correlated) --
+  [PASS] the record-count proxy (1 - coherence) and the system-environment entanglement entropy S_E are strongly positively correlated => record formation IS entropy production  (corr(records, S_E) = 0.930; S_E: 0.00 -> 1.00)
+
+-- (2) the decoherence onset is sharply monotone in S_E (the second-law arrow) --
+  [PASS] S_E rises monotonically through the decoherence onset (records forming); long-time monotonicity is coarse-grained (statistical second law, finite-env fluctuations)  (onset S_E = [np.float64(0.0), np.float64(0.95), np.float64(0.99), np.float64(1.0)]; coarse-monotone frac = 0.92)
+
+-- (3) the derived record-count time axis coincides with the entropy-increase axis --
+  [PASS] the record-count ordering and the entropy ordering agree => the (derived) record-count time axis IS the entropy-increase axis (the thermodynamic arrow)  (rank agreement = 1.000)
+
+-- (4) the one residual (orientation) = the low-entropy past = the past hypothesis --
+  [PASS] the low-S_E / low-record end is the START (the boundary), so the orientation (which I-direction is future) = the low-entropy PAST HYPOTHESIS -- a universal cosmological boundary condition (the standing retained_no_go orientation firewall), not a framework gap  (S_E(start)=0.000, records(start)=0.000)
+
+==============================================================================
+TOTAL: PASS=4 FAIL=0
+VERDICT: the unconditionally-derived emergent time AXIS (the record-count I-gradient) IS the THERMODYNAMIC ARROW: record formation is entropy production (S_E rises with records, corr>0.8), the decoherence onset is monotone (the second-law arrow, coarse-grained at long times), and the record-count axis coincides with the entropy-increase axis. The one residual of the emergent-time picture -- the ORIENTATION -- is thereby identified as the low-entropy/low-record PAST HYPOTHESIS, a universal cosmological boundary condition, not a framework-specific gap. Time = record count = entropy increase; future = more records.
+
+----- stderr -----
+

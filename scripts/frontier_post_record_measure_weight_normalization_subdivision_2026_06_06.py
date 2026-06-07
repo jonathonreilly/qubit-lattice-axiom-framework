@@ -7,15 +7,17 @@ from collections import Counter, defaultdict
 from fractions import Fraction
 from pathlib import Path
 import hashlib
-import importlib.util
 import json
 import re
 import sys
+
+import frontier_post_record_selector_dial_bucket_subdivision_2026_06_06 as prev
 
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
 PREV = ROOT / "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
+OUTPUT = ROOT / "outputs/post_record_measure_weight_normalization_slice_2026_06_07.json"
 PASS = 0
 FAIL = 0
 
@@ -46,25 +48,13 @@ SELECTOR_TANGENT_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "character_path_channel_weight": 9,
-    "generic_measure_weight_import": 7,
+    "character_path_channel_weight": 10,
+    "generic_measure_weight_import": 6,
     "selector_tangent_readout_weight": 7,
     "source_measure_or_rn_bridge": 15,
-    "trace_normalization_reference": 6,
+    "trace_normalization_reference": 7,
 }
 EXPECTED_MEASURE_ROWS = sum(EXPECTED_LANE_COUNTS.values())
-
-
-def load_previous():
-    spec = importlib.util.spec_from_file_location("selector_dial_subdivision", PREV)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot load {PREV}")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
-
-
-prev = load_previous()
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -131,7 +121,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "measure_weight_normalization` | 44",
+            "measure_weight_normalization` | 45",
             "measure/weight/normalization rows",
             "Does not turn stable settings into selected dials.",
         ],
@@ -236,6 +226,12 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
 
     after = digest(LEDGER)
     report("audit ledger hash is unchanged", before == after, before)
+    write_slice_certificate(rows, buckets, counts, before, after)
+    report(
+        "exact ledger slice certificate is written outside docs/audit",
+        OUTPUT.exists(),
+        OUTPUT.relative_to(ROOT).as_posix(),
+    )
 
     print()
     print("Measure/weight lane counts:")
@@ -253,6 +249,50 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
             )
         print()
     return rows, counts
+
+
+def write_slice_certificate(
+    rows: list[dict],
+    buckets: dict[str, list[dict]],
+    counts: Counter[str],
+    ledger_hash_before: str,
+    ledger_hash_after: str,
+) -> None:
+    payload = {
+        "claim_id": "post_record_measure_weight_normalization_subdivision_2026-06-06",
+        "role": "exact read-only ledger-slice certificate",
+        "source_runner": "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
+        "static_helper_source": PREV.relative_to(ROOT).as_posix(),
+        "audit_ledger_written": False,
+        "audit_verdict_applied": False,
+        "ledger_sha256_before": ledger_hash_before,
+        "ledger_sha256_after": ledger_hash_after,
+        "ledger_sha256_unchanged": ledger_hash_before == ledger_hash_after,
+        "expected_measure_rows": EXPECTED_MEASURE_ROWS,
+        "actual_measure_rows": len(rows),
+        "expected_lane_counts": EXPECTED_LANE_COUNTS,
+        "actual_lane_counts": dict(counts),
+        "rows_by_lane": {
+            lane: [
+                {
+                    "claim_id": row.get("claim_id"),
+                    "audit_status": row.get("audit_status"),
+                    "effective_status": row.get("effective_status"),
+                    "claim_type": row.get("claim_type"),
+                    "note_path": row.get("note_path"),
+                    "runner_path": row.get("runner_path"),
+                }
+                for row in sorted(items, key=lambda item: item.get("claim_id") or "")
+            ]
+            for lane, items in sorted(buckets.items())
+        },
+        "status_boundary": (
+            "read-only exact-support packet exposure; independent audit owns "
+            "any ledger/status movement"
+        ),
+    }
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 
 def firewall_checks() -> None:

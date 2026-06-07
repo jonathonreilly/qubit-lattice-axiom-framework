@@ -1,0 +1,21 @@
+loop: post-record-measure-weight-packet
+date: 2026-06-07
+branch: physics-loop/post-record-measure-weight-packet-20260607
+target_claim_id: post_record_measure_weight_normalization_subdivision_2026-06-06
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+blocker_text: "runner_artifact_issue: include the full selector/dial helper source and the exact ledger slice used by measure_rows(), then independently recheck the 44-row and lane-count table."
+resolution: "Static helper import exposes the selector/dial helper to the citation graph; the current ledger slice is independently certified as 45 measure/weight rows with lane counts 10/6/7/15/7."
+files_touched:
+  - docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+  - docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+  - scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
+  - outputs/post_record_measure_weight_normalization_slice_2026_06_07.json
+  - logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt
+docs_audit_diff_bytes: 0
+review_status: pending_reviewer
+next_action: "Open review PR; independent audit/reviewer owns any ledger/status movement."
+

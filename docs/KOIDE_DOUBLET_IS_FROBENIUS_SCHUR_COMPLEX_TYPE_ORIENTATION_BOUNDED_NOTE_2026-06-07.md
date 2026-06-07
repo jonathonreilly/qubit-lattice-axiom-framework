@@ -31,6 +31,11 @@ The Koide `det_C`-vs-`det_R` fork (the `r = 1/2` vs `r = 1` reading of the C₃ 
 
 ## This is an orientation correction, not a closure
 
+**Bottom line:** `r = 1/2` is a **registered (admitted) pattern, not forced by the minimal axioms** — the
+`(1,1)`-vs-`(1,2)` readout selection is the open `AC_φλ` gate, and the framework's native `log|det|` /
+second-order modulus reading gives `r = 1`. This note only fixes the **reality-type orientation** of the fork
+(ruling out the inverted `Majorana → r = 1/2` reading); it does **not** select `r = 1/2`.
+
 `FS = 0` (complex type) plus the complex `M₂(ℂ)` carrier (Quantum axiom) are **necessary but not sufficient**
 to force `r = 1/2`:
 

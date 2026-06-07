@@ -1,0 +1,20 @@
+loop_slug: flavor-detr-default-scope-repair-20260607
+branch: physics-loop/flavor-detr-default-scope-repair-20260607
+base: origin/main
+target_claim_id: flavor_detr_default_full_exercise_note_2026-05-30
+target_status: bounded-support
+current_goal: repair default/reference-state overclaim without audit edits
+cycle_count: 1
+active_route: finite-locator source narrowing
+hard_residual: beta=0 tracial generation reference remains outside this row
+files_touched:
+  - docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md
+  - scripts/flavor_detR_default_full_exercise_2026_05_30.py
+  - logs/runner-cache/flavor_detR_default_full_exercise_2026_05_30.txt
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: local self-check only; independent review-loop/audit remains required
+pr_status: pending
+next_exact_action: open review PR for the repair block
+stop_condition: current block packaged; campaign should pivot to next conditional row after PR creation

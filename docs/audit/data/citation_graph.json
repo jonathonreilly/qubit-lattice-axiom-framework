@@ -82140,14 +82140,14 @@
     },
     "post_record_stability_dynamics_selector_subdivision_2026-06-06": {
       "claim_id": "post_record_stability_dynamics_selector_subdivision_2026-06-06",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "exact support / read-only audit companion",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [
         "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
       ],
-      "note_hash": "1a4cbf97b144478e49b151a779eeae557acc5e6006be9152e6de956b4d6bc89b",
+      "note_hash": "f74743ee99441c804366c5b3e04e4d434e17aa7a0b8ec3b98ebeac3c3158ba9f",
       "path": "docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
       "title": "Post-Record Stability/Dynamics Selector Subdivision"
@@ -100397,20 +100397,20 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 903,
       "decoration": 1,
-      "meta": 272,
+      "meta": 273,
       "no_go": 136,
-      "none": 1484,
+      "none": 1483,
       "open_gate": 75,
       "positive_theorem": 197
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1308,
       "decoration": 1,
-      "meta": 272,
+      "meta": 273,
       "no_go": 249,
       "none": 462,
       "open_gate": 150,
-      "positive_theorem": 626
+      "positive_theorem": 625
     },
     "edge_count": 11368,
     "leaf_count": 1008,

@@ -1,0 +1,31 @@
+loop_slug: generation-corner-hf-vq-bridge
+date: 2026-06-07
+branch: physics-loop/generation-corner-hf-vq-bridge-20260607
+base: origin/main
+target_claim_id: generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06
+target_status_before_block: audited_conditional
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: periodic screened-Poisson Fourier/Hartree-Fock normalization bridge
+quoted_blocker: "missing_bridge_theorem: add a one-hop retained theorem deriving the periodic translation-invariant Hartree-Fock plane-wave mutual-energy readout Vq(q)=-G/(eps(q)+mu^2), including boundary/normalization, from the retained staggered two-body mediator."
+files_touched:
+  - docs/GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md
+  - docs/GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py
+  - scripts/generation_localization_corner_protected_delta_runner.py
+  - logs/runner-cache/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt
+  - logs/runner-cache/generation_localization_corner_protected_delta_runner.txt
+runner_results:
+  bridge_runner: "PASS=16 FAIL=0"
+  target_runner: "PASS=13 FAIL=0"
+authority_surface_edits:
+  audit_ledger: false
+  active_review_queue: false
+  canonical_harness_index: false
+  lane_registry: false
+remaining_blocker_after_block: "Independent audit must decide whether the new one-hop source bridge is sufficient and may then retag the target. This PR does not perform that audit action."
+next_exact_action: "Open review PR; then refresh conditional backlog and select the next repairable audited conditional row."
+pr_url: null

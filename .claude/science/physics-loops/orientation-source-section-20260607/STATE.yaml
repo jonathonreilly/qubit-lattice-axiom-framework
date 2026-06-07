@@ -1,0 +1,31 @@
+loop_slug: orientation-source-section-20260607
+date: 2026-06-07
+branch: physics-loop/orientation-source-section-20260607
+base: origin/main
+current_goal: "Attack the second chirality-resolution target: can a hosted determinant/orientation torsor canonically choose the source section?"
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: equivariant_orientation_torsor_section
+cycle_count: 1
+block_count: 1
+hard_residual: "A genuinely native structure that breaks the torsor sign-flip symmetry remains missing."
+files_touched:
+  - docs/SIGNED_GRAVITY_ORIENTATION_SECTION_NATURALITY_NO_GO_NOTE_2026-06-07.md
+  - scripts/frontier_signed_gravity_orientation_section_naturality_no_go_2026_06_07.py
+  - logs/runner-cache/frontier_signed_gravity_orientation_section_naturality_no_go_2026_06_07.txt
+  - .claude/science/physics-loops/orientation-source-section-20260607/
+open_imports:
+  - "Canonical orientation/source section if used to create the active odd source."
+  - "Hard boundary-sector rule or dynamics if used to select a section."
+  - "Eta/spectral-flow oriented boundary filter if used as next route."
+no_go_routes:
+  - "Choosing a section from a free Z2 torsor by equivariant naturality."
+  - "Choosing a section from sewing or flat local-system transport alone."
+runner_result: "PASS=16 FAIL=0"
+review_loop_disposition: pass
+audit_results_modified: false
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3137"
+next_exact_action: "Pivot to eta/spectral-flow boundary-filter route in a new branch."
+stop_condition: "Route 2 pruned; pivot to eta/spectral-flow boundary filter next."

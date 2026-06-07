@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 735 |
+| **retained_bounded** | 736 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1312 |
+| unaudited | 1311 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1154 |
+| `audited_clean` | 1155 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1621 |
+| `unaudited` | 1620 |
 
 | claim_type | count |
 |---|---:|
@@ -906,6 +906,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
 | `plaquette_4d_mc_support_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_observable_uniqueness_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13121,6 +13122,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given the supplied beta=6 coefficient packet, all tested finite truncation, tadpole-improved, Pade, and tadpole-Pade evaluations stay near 0.91 and remain more than 40% away from the supplied comparator <P>_MC = 0.5934.  _(class `D`)_
 - **chain closes:** False — The finite arithmetic over the supplied packet checks out, including the 0.919331 truncated value and 0.910550 tadpole-Pade value. The retained chain does not close because the NSPT coefficient packet, beta=6 normalization, MC comparator, and F2 comparator are admitted external inputs rather than authorities closed inside the restricted packet.
 - **rationale:** The runner performs real finite numerical computations rather than merely printing constants, and the source scope properly limits the negative claim to the tested finite method grid. Independent arithmetic confirms the headline residuals: the 16-term sum gives about 0.919331, while the best tadpole-Pade fixed point stays about 0.910550, both far above 0.5934. However, the load-bearing coefficients and comparators are supplied external premises with no cited retained-grade bridge in this packet, so the no-go is conditional on those inputs. The N1-N8 gate is satisfied only for the narrow tested-route obstruction; it does not support an absolute plaquette or non-perturbative no-go.
+- **auditor confidence:** high
+
+### `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite algebra over the supplied packet I_SC: the displayed Padé[3/3] value and alpha=2,4 conformal checks equal 3/5, the c6 perturbations give 3/7 and 9/23, Pade[4/4](1/3)=157/395, and the Padé[3/3] Borel denominator has a positive-contour pole.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-183824-00c0f403c1-plaquette_beta6_strong_coupl`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the explicit coefficient packet and u=1/3, solve the Padé[3/3] matching equations series*Q-P=O(u^7) to obtain P(u)=u-6u^3 and Q(u)=1-6u^2-4u^3, hence Pade[3/3](1/3)=3/5.  _(class `A`)_
+- **chain closes:** True — For the bounded conditional scope, the chain closes by finite rational algebra from the supplied coefficient packet and supplied evaluation point. The coefficient table, beta-to-u identification, and MC comparator are not audited as framework-derived facts.
+- **rationale:** The load-bearing statement is an algebraic identity check on explicit inputs, not a first-principles physics derivation. Independent Padé equations reproduce the [3/3], conformal alpha=2 and alpha=4, c6-rigidity, [4/4], truncated-series residual, and Borel-denominator identities. The runner source genuinely solves Padé systems in exact rational arithmetic and checks the obstruction, while the MC value is used only in non-load-bearing comparator checks.
 - **auditor confidence:** high
 
 ### `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10`

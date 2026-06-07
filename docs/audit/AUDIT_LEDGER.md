@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 200 |
+| **retained** | 201 |
 | **retained_no_go** | 215 |
 | **retained_bounded** | 723 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1291 |
+| unaudited | 1290 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1136 |
+| `audited_clean` | 1137 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1598 |
+| `unaudited` | 1597 |
 
 | claim_type | count |
 |---|---:|
@@ -601,6 +601,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8826,6 +8827,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **open / conditional deps cited:**
   - `HIGGS_FROM_LATTICE_NOTE.md`
   - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+- **auditor confidence:** high
+
+### `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06`
+
+- **Note:** [`HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md`](../../docs/HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite Clifford/APBC spin-taste/color mean-field determinant identity showing the per-mode source curvature equals 4/(u_0^2 N_taste) for N_taste = 16 under the declared U -> u_0 I truncation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-003805-591b5e401f-higgs_mean_field_determinant`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With D_mf^dag D_mf = 4 u_0^2 I_48, the trace-log reduces to W(J) = (48/2) log(J^2 + 4 u_0^2), giving W''(0)/48 = 1/(4 u_0^2) = 4/(u_0^2 * 16).  _(class `A`)_
+- **chain closes:** True — The Clifford anticommutation gives (sum_mu gamma_mu)^2 = 4 I_4, and Hermitian tensor/color lifts preserve D^dag D as 4 u_0^2 I_48. The trace-log derivative then gives W''(0)/48 = 1/(4 u_0^2), matching 4/(u_0^2 N_taste) at N_taste = 16.
+- **rationale:** The restricted packet presents a finite algebraic determinant calculation, not a physical Higgs-mass identification or full gauge-theory claim. Independent checking of the displayed dimensions, Clifford square, tensor/color lift, determinant trace factor, and J-curvature confirms the factors 4, 16, 48, 1/2, and 1/(4 u_0^2). The runner source performs actual finite matrix and symbolic derivative checks rather than importing an external calibrated value or merely printing constants.
 - **auditor confidence:** high
 
 ### `higgs_mechanism_note`

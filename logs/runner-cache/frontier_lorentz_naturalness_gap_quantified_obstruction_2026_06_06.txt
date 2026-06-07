@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py
+runner_sha256: ab6f3cb87d74a056e1cd751b67785c1ecff75b21a0b1df5fad2471ab1db60824
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.22
+status: ok
+----- stdout -----
+==============================================================================================
+Lorentz naturalness: QUANTIFIED OBSTRUCTION (asymptotically-free gamma too small)
+==============================================================================================
+
+----------------------------------------------------------------------------------------------
+Part A: UV regeneration delta v ~ alpha_s(M_Pl)/4pi (NOT Planck-suppressed)
+----------------------------------------------------------------------------------------------
+  [PASS] (A1) beta=6 -> g^2 = 2N/beta = 1 (SU(3)); alpha_s(M_Pl) = g^2/4pi ~ 0.08  --  g^2=1.000, alpha_s(M_Pl)=0.0796
+  [PASS] (A2) UV-regenerated marginal LV delta v|_UV ~ alpha_s/4pi ~ 6e-3 (loop- but NOT Planck-suppressed)  --  delta v|_UV = 6.333e-03  (Collins et al: the lattice dim-6 feeds the marginal coeff)
+
+----------------------------------------------------------------------------------------------
+Part B: the framework's anomalous dimension gamma is SMALL (asymptotic freedom)
+----------------------------------------------------------------------------------------------
+     c_gamma=1: gamma = c_gamma*alpha_s(M_Pl) ~ 0.080
+     c_gamma=2: gamma = c_gamma*alpha_s(M_Pl) ~ 0.159
+     c_gamma=3: gamma = c_gamma*alpha_s(M_Pl) ~ 0.239
+  [PASS] (B1) framework gamma ~ 0.08-0.24 (weak, because alpha_s is small at the UV regeneration scale)  --  asymptotic freedom: the coupling is weak exactly where the regeneration occurs
+
+----------------------------------------------------------------------------------------------
+Part C: required gamma_crit to bridge the gap to each bound
+----------------------------------------------------------------------------------------------
+     observable                      bound   mu(GeV)  gamma_crit
+     photon (GRB/Fermi-LAT)          1e-20     1e+03        1.11
+     electron (clock/Penning)        1e-22     1e-03        0.90
+     nucleon (Hughes-Drever)         1e-27     1e+00        1.30
+     quark/gluon (mesons,UHECR)      1e-12     1e+00        0.51
+  [PASS] (C1) tight bounds (photon/electron/nucleon) require gamma_crit ~ 0.9-1.3  --  even the WEAKEST (quark/gluon) needs gamma_crit ~ 0.5
+  [PASS] (C2) the framework's gamma (<=0.24) is BELOW even the weakest gamma_crit (~0.51)  --  max framework gamma 0.239 < quark/gluon gamma_crit 0.51
+
+----------------------------------------------------------------------------------------------
+Part D: the residual gap (net delta v|_IR vs the bounds)
+----------------------------------------------------------------------------------------------
+     gamma=0.1: delta v|_IR(1 GeV) ~ 7.82e-05  | gap vs quark/gluon(1e-12) = 7.9 orders; vs photon(1e-20) = 15.9
+     gamma=0.2: delta v|_IR(1 GeV) ~ 9.65e-07  | gap vs quark/gluon(1e-12) = 6.0 orders; vs photon(1e-20) = 14.0
+     gamma=0.3: delta v|_IR(1 GeV) ~ 1.19e-08  | gap vs quark/gluon(1e-12) = 4.1 orders; vs photon(1e-20) = 12.1
+  [PASS] (D1) even for the WEAKEST bound and the most-optimistic gamma, a multi-order gap REMAINS  --  smallest gap (quark/gluon, gamma=0.3) ~ 7.9 orders; tight bounds 12-16 orders
+
+----------------------------------------------------------------------------------------------
+Part E: what would close it (and why the framework lacks it)
+----------------------------------------------------------------------------------------------
+  [PASS] (E1) closing the gap needs gamma >= gamma_crit ~ 1 -> a STRONG-coupling fixed point  --  but asymptotic freedom makes the coupling WEAK at M_Pl where the regeneration occurs -> precluded
+  [PASS] (E2) IR strong-QCD (alpha_s~1, gamma~1) acts over too FEW e-folds (~1 near Lambda_QCD) -> negligible  --  extra suppression ~ e^-1 = 0.37, vs the ~10^-14 needed
+  [PASS] (E3) a custodial symmetry (SUSY; Nibbelink-Pospelov) WOULD work but is ABSENT in the framework  --  CPT (even), O_h (permits), gauge-Ward (no c_t-c_s tie) do NOT protect the marginal operator
+  [PASS] (E4) => QUANTIFIED OBSTRUCTION: the framework does NOT close Lorentz naturalness; a custodial mechanism is REQUIRED  --  resolves the attractor-note residual: the attractive flow is real but ~10-15 orders too weak
+
+----------------------------------------------------------------------------------------------
+Part F: no-go discipline + honest scope
+----------------------------------------------------------------------------------------------
+  [PASS] (F1) N2 wall-independence: the gap survives varying gamma (B), the bound/scale (C), and the sector (D)  --  robust to the O(1) coefficient and to which species/observable is used
+  [PASS] (F2) N7 steelman: 'all species share one v* so no LV' fails -- different reps flow at different rates;  --  the OBSERVABLE is the residual species-to-species speed difference = exactly delta v|_IR
+  [PASS] (F3) SCOPE: ORDER-OF-MAGNITUDE result; exact regeneration O(1) coeff + fixed-point gamma are open INPUTS  --  they do NOT change the qualitative no-go (gamma~0.2 vs gamma_crit~1)
+  [PASS] (F4) CONSISTENT with the attractor note and Collins et al (field-wide naturalness); not a contradiction  --  this quantifies the attractor note's open residual as a ~10-15 order gap requiring gamma~1 or a symmetry
+
+----------------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------------
+  A  UV regeneration delta v|_UV ~ alpha_s(M_Pl)/4pi ~ 6e-3 (beta=6; NOT Planck-suppressed).
+  B  framework gamma ~ 0.08-0.24 (asymptotic freedom -> weak coupling at the regeneration scale).
+  C  required gamma_crit ~ 0.9-1.3 (tight bounds), ~0.5 (weakest); framework gamma is BELOW all.
+  D  net delta v|_IR ~ 1e-5..1e-8 -> 4-16 order GAP to the experimental LV bounds.
+  E  closing it needs gamma~1 (strong fixed point, precluded by asymptotic freedom) or SUSY (absent).
+  => QUANTIFIED OBSTRUCTION: the framework's gauge dynamics does NOT solve Lorentz naturalness;
+     a custodial mechanism is REQUIRED (resolves the attractor-note residual; consistent with Collins et al).
+
+==============================================================================================
+TOTAL: 14 PASS / 0 FAIL
+==============================================================================================
+
+----- stderr -----
+

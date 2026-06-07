@@ -1,13 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py
-runner_sha256: 19e4248f4219cf0063c7456a13533395ffc97ed9ca73e73e0d0f8f9ca187a095
+runner_sha256: 096fa3945b46a6de05950b745eac3f8611df55e77dd4fba27c146e324bc6fbed
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 # 't Hooft 1981 dual-superconductor / center-vortex confinement external gate runner
 # Source note: docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+
+==============================================================================
+T0: pure-notation source boundary
+==============================================================================
+  [PASS] note declares 2026-06-07 pure-notation source boundary
+         source-boundary section present
+  [PASS] note names only the syntactic registration packet P_THOOFT_REG
+         registration packet, not theorem packet, is named
+  [PASS] note says external references are bibliographic labels, not retained authorities
+         reference boundary present
+  [PASS] note has no published-context support claim
+         support-only reading excluded
+  [PASS] note leaves theorem use behind a separate retained bridge
+         future bridge route explicit
 
 ==============================================================================
 T1: abelian projection — residual gauge group U(1)^(N-1) ⊂ SU(N)
@@ -105,7 +119,7 @@ T10: boundary — note does NOT claim alpha_LM^16 / hierarchy closure
   [PASS] boundary explicitly excludes deriving the string tension σ from framework primitives
          string-tension exclusion present
 
-=== TOTAL: PASS=28, FAIL=0 ===
+=== TOTAL: PASS=33, FAIL=0 ===
 
 ----- stderr -----
 

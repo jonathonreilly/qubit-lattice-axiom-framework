@@ -1,0 +1,35 @@
+loop_slug: chirality-resolution-dynamics-scout-20260607
+date: 2026-06-07
+branch: physics-loop/chirality-resolution-dynamics-scout-20260607
+base: origin/main
+current_goal: "Start and scout the chirality-resolution dynamics lane from the enzyme analogy."
+target_status: best-honest-status
+actual_current_surface_status: open
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+active_route: blend_flip_filter_finite_boundary
+cycle_count: 1
+block_count: 1
+hard_residual: "Derive a native asymmetric chirality/orientation filter rather than importing one."
+files_touched:
+  - docs/CHIRALITY_RESOLUTION_DYNAMICS_SCOUT_NOTE_2026-06-07.md
+  - scripts/frontier_chirality_resolution_dynamics_scout_2026_06_07.py
+  - logs/runner-cache/frontier_chirality_resolution_dynamics_scout_2026_06_07.txt
+  - .claude/science/exercises/chirality-resolution-dynamics-20260607/
+  - .claude/science/physics-loops/chirality-resolution-dynamics-scout-20260607/
+open_imports:
+  - "Chiral anticommutation {D,gamma5}=0 if used as a staggered selector."
+  - "Canonical orientation/source section if used for signed gravity."
+  - "Kinetic/source instrument if used as actual dynamics."
+  - "Holomorphic or first-order readout if used for Koide/generation selection."
+no_go_routes:
+  - "Blend alone."
+  - "Symmetric flip alone."
+  - "Record creating carrier chirality."
+  - "Signed spectral readout treated automatically as chirality."
+runner_result: "PASS=16 FAIL=0"
+review_loop_disposition: pass
+audit_results_modified: false
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3130"
+next_exact_action: "Reviewer can inspect PR #3130; next science block should attack the top-ranked filter theorem."
+stop_condition: "First scout block packaged; later work should attack one ranked filter theorem at a time."

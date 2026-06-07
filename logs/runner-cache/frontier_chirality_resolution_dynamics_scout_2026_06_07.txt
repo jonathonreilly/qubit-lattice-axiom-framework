@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/frontier_chirality_resolution_dynamics_scout_2026_06_07.py
+runner_sha256: 50c21f22c56edf92296402b170f8624dc2649634199f878ee77fb5a5298dbb38
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================================
+Chirality-resolution dynamics scout: blend/flip/filter boundary
+========================================================================================
+
+[BLOCK 1] Blend and symmetric flip do not select chirality
+  [PASS] racemic blend has zero signed excess -- ee=0
+  [PASS] symmetric flip relaxes toward the unbiased fixed point -- state=(0.500000, 0.500000)
+  [PASS] flip without a filter remains unbiased -- state=(0.500000, 0.500000), retained_mass=1.000000
+
+[BLOCK 2] A filter can enrich one hand, but the filter is the selector
+  [PASS] asymmetric filter enriches the unsunk hand and lowers retained mass -- state=(0.645161, 0.354839), ee=0.290323, retained_mass=0.775000
+  [PASS] symmetric filter changes retained mass but not handedness -- state=(0.500000, 0.500000), retained_mass=0.550000
+  [PASS] dynamic kinetic resolution works only with an asymmetric sink -- state=(0.865438, 0.134562), ee=0.730876, retained_mass=0.002562
+  [PASS] dynamic protocol with symmetric sinks still has no selector -- state=(0.500000, 0.500000), retained_mass=0.000000
+
+[BLOCK 3] Staggered one-bond selector: anticommutation is the filter
+  [PASS] without {D,gamma5}=0 there are two inequivalent sign classes -- classes=['staggered/chiral', 'trivial/vector-like']
+  [PASS] matrix anticommutator {D,gamma5}=0 holds exactly for opposite signs -- survivors=[(1, -1), (-1, 1)]
+  [PASS] the two surviving assignments are one class up to global gauge -- the remaining distinction is the global sign
+
+[BLOCK 4] Orientation host does not choose its section
+  [PASS] orientation line hosts two coherent sections
+  [PASS] desired odd source is present only after choosing a section -- chosen=(1, -1)
+  [PASS] opposite section is equally coherent before a source theorem -- unchosen=(1, 1)
+
+[BLOCK 5] Record consumes realized labels; it does not create a carrier chirality
+  [PASS] record append preserves the carrier distribution
+  [PASS] record stores the realized split without selecting a hand -- record=(0.37, 0.63)
+
+[BLOCK 6] Signed readout guardrail
+  [PASS] toy signed C3 readout commutes with the C3 labels -- commuting signed readout is not by itself chirality
+
+========================================================================================
+SCORECARD: PASS=16 FAIL=0
+========================================================================================
+
+----- stderr -----
+

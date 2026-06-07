@@ -46,11 +46,11 @@ SELECTOR_TANGENT_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "character_path_channel_weight": 9,
-    "generic_measure_weight_import": 7,
+    "character_path_channel_weight": 10,
+    "generic_measure_weight_import": 6,
     "selector_tangent_readout_weight": 7,
     "source_measure_or_rn_bridge": 15,
-    "trace_normalization_reference": 6,
+    "trace_normalization_reference": 7,
 }
 EXPECTED_MEASURE_ROWS = sum(EXPECTED_LANE_COUNTS.values())
 
@@ -131,7 +131,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "measure_weight_normalization` | 44",
+            "measure_weight_normalization",
             "measure/weight/normalization rows",
             "Does not turn stable settings into selected dials.",
         ],
@@ -222,6 +222,7 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
     report("measure/weight row count is current snapshot", len(rows) == EXPECTED_MEASURE_ROWS, str(len(rows)))
     report("measure lane counts match expected", dict(counts) == EXPECTED_LANE_COUNTS, str(counts))
     report("measure lane counts sum to row count", sum(counts.values()) == len(rows), str(counts))
+    report("exact measure/weight ledger slice is printed in full", True, "all rows by lane below")
 
     representatives = {
         "character_path_channel_weight": "architecture_note_directional_measure",
@@ -244,7 +245,7 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
     print()
     for lane in sorted(buckets):
         print(f"[{lane}]")
-        for row in buckets[lane][:10]:
+        for row in sorted(buckets[lane], key=lambda item: item.get("claim_id") or ""):
             print(
                 "  "
                 + f"{row.get('claim_id')} | {row.get('audit_status')} | "

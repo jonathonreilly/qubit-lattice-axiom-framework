@@ -1,0 +1,23 @@
+loop: post-record-measure-slice-current
+date: 2026-06-07
+branch: physics-loop/post-record-measure-slice-current-20260607
+base: origin/main@d07efaa31
+target_claim_id: post_record_measure_weight_normalization_subdivision_2026-06-06
+target_note: docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+target_blocker: "runner_artifact_issue: include the full selector/dial helper source and the exact ledger slice used by measure_rows(), then independently recheck the 44-row and lane-count table."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-measure-slice-current/
+verification:
+  - "python3 scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
+  - "python3 -m py_compile scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
+  - "git diff --check"
+next_exact_action: "Reviewer/auditor should re-audit against the current 45-row full slice printed in the cache."
+stop_condition: "PR opened for review."

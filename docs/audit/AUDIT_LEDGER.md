@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 741 |
+| **retained_bounded** | 742 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1296 |
+| unaudited | 1295 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1161 |
+| `audited_clean` | 1162 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1607 |
+| `unaudited` | 1606 |
 
 | claim_type | count |
 |---|---:|
@@ -1230,6 +1230,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `valley_linear_mirror_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `valley_linear_repro_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `valley_linear_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `vector_sector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_3plus1d_promotions_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_3plus1d_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_amplification_near_horizon_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -18368,6 +18369,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** False — The supplied helper source contains a genuine first-principles lattice propagation path, but the completed runner output is only a frozen-log verifier with hard-coded expected strings. The restricted packet does not include the raw distance deltas or a completed --recompute output, so the b^(-1.17), R^2 = 0.997 fit cannot be independently checked as required.
 - **rationale:** The note's scope is finite and bounded, and the recompute code path appears to instantiate the stated lattice, valley-linear action, 1/L^2 kernel, and log-log fitting procedure. The actual supplied runner result, however, validates exact frozen-log strings rather than recomputing or exposing the numerical rows needed to audit the fit independently. Runner PASS therefore does not close the load-bearing math under the restricted packet.
 - **auditor confidence:** medium
+
+### `vector_sector_note`
+
+- **Note:** [`VECTOR_SECTOR_NOTE.md`](../../docs/VECTOR_SECTOR_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded phi0=0 CCW/CW vector-sector lattice-propagation case at f=0.02, R=4.0, s=0.004, with matched avg_inv_r scalar exposure and opposite dz signs.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-191725-ac1d372db8-vector_sector_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At f=0.02, R=4.0, s=0.004, the computed dz is positive for CCW and negative for CW while avg_inv_r is identical for both directions.  _(class `C`)_
+- **chain closes:** True — For the bounded case, the runner computes dz through grow/_meas_yz/_prop_orbit rather than hard-coding the claimed dz values. The scalar-exposure match also checks independently because avg_inv_r depends on y_src^2+z_src^2=R^2, so it is direction-independent at fixed parameters.
+- **rationale:** The primary runner source verifies that the reported CCW/CW dz signs come from the helper propagation computation, and the contested dz constants are not simply printed as expected values. The matched scalar exposure is not merely stdout trust: it follows algebraically from the radius formula used in avg_inv_r. This clean verdict is limited to the bounded matched-exposure CCW/CW case and does not establish a phase-independent or unqualified retained vector-sector observable.
+- **auditor confidence:** high
 
 ### `wave_3plus1d_promotions_note`
 

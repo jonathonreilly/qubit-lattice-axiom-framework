@@ -1,12 +1,12 @@
 # Audit Queue
 
-**Total pending:** 1359
-**Ready (all deps already at retained-grade or metadata tiers):** 62
+**Total pending:** 1358
+**Ready (all deps already at retained-grade or metadata tiers):** 61
 
 By criticality:
 - `critical`: 319
 - `high`: 257
-- `medium`: 363
+- `medium`: 362
 - `leaf`: 420
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
@@ -77,7 +77,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 3 | `cycle-0003` | 2 | 295 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | critical | unaudited |
 | 4 | `cycle-0004` | 2 | 18 | `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02` | medium | unaudited |
 | 5 | `cycle-0005` | 2 | 10 | `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | medium | unaudited |
-| 6 | `cycle-0006` | 3 | 4 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | medium | unaudited |
+| 6 | `cycle-0006` | 3 | 4 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | medium | audited_conditional |
 | 7 | `cycle-0007` | 2 | 2 | `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20` | leaf | unaudited |
 | 8 | `cycle-0008` | 2 | 2 | `generation_dial_dynamics_stability_classifier_2026-06-05` | medium | unaudited |
 | 9 | `cycle-0009` | 2 | 2 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | leaf | unaudited |

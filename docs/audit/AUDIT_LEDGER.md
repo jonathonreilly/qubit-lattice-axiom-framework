@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 737 |
+| **retained_bounded** | 738 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1304 |
+| unaudited | 1303 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 31 |
@@ -59,22 +59,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1157 |
+| `audited_clean` | 1158 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1615 |
+| `unaudited` | 1614 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1355 |
+| `bounded_theorem` | 1356 |
 | `decoration` | 53 |
 | `meta` | 320 |
 | `no_go` | 319 |
 | `open_gate` | 135 |
-| `positive_theorem` | 771 |
+| `positive_theorem` | 770 |
 
 | criticality | count |
 |---|---:|
@@ -1040,6 +1040,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `self_gravity_failure_diagnosis` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `self_gravity_scaling_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
+| `seventh_family_diagonal_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `shapiro_static_discriminator_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
@@ -15226,6 +15227,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `HIGHER_DIMENSION_STATUS_2026-04-01.md`
   - `IF_PROGRAM_CLOSING_NOTE.md`
   - `DECOHERENCE_FAILURE_ANALYSIS.md`
+- **auditor confidence:** high
+
+### `seventh_family_diagonal_boundary_note`
+
+- **Note:** [`SEVENTH_FAMILY_DIAGONAL_BOUNDARY_NOTE.md`](../../docs/SEVENTH_FAMILY_DIAGONAL_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the frozen diagonal-stripe seventh-family sweep log verifier for the stated 6 drift by 3 seed grid and its seed-selective boundary interpretation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-190016-ab31de4094-seventh_family_diagonal_boun`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The explicit frozen row grid has seven sign-gate passing rows out of eighteen while exact zero-source and neutral gates survive on every tested row, so the honest read is a seed-selective boundary pocket rather than broad seventh-family closure.  _(class `A`)_
+- **chain closes:** True — The restricted packet includes the source note, runner output, primary runner source, and the imported helper used to generate the geometry. The row list independently supports 7 PASS rows, exact zero and neutral cancellation on all 18 rows, and sign-orientation failure on the remaining rows.
+- **rationale:** The audited claim is deliberately bounded to the frozen explicit row grid and the boundary-pocket interpretation, not a family-wide theorem. Independently reading the displayed rows gives PASS at drift 0.00 seeds 0,1,2; drift 0.20 seed 2; drift 0.30 seeds 1,2; and drift 0.50 seed 1, totaling 7/18, with zero and neutral entries exactly displayed as +0.000e+00 throughout. The runner source verifies the frozen log by parsing the row grid and checking grid order, stale 6/18 legacy marker, gates, coverage, and boundary text; it does not import a contested external comparator. For this scoped frozen-log consistency claim, the algebraic/table check closes.
 - **auditor confidence:** high
 
 ### `shapiro_complex_interaction_note`

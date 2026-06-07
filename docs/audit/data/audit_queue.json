@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 316,
     "high": 256,
-    "leaf": 388,
+    "leaf": 387,
     "medium": 352
   },
   "cycle_break_target_count": 9,
@@ -28393,31 +28393,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "post_record_selection_rule_target_vector_firewall_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "post_record_supplied_selection_rule_interface_2026-06-06",
-        "post_record_directed_certificate_kernel_selection_firewall_2026-06-06"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -29019,6 +28994,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "post_record_dynamics_authority_stack_map_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "post_record_directed_certificate_examples_2026-06-06",
+        "post_record_directed_certificate_kernel_selection_firewall_2026-06-06",
+        "post_record_supplied_kernel_selection_rule_interface_2026-06-06",
+        "post_record_selection_rule_target_vector_firewall_2026-06-06",
+        "post_record_admitted_sample_target_vector_interface_2026-06-06"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py",
       "transitive_descendants": 0
     },
     {
@@ -37152,34 +37155,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "post_record_dynamics_authority_stack_map_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "post_record_directed_certificate_examples_2026-06-06",
-        "post_record_directed_certificate_kernel_selection_firewall_2026-06-06",
-        "post_record_supplied_kernel_selection_rule_interface_2026-06-06",
-        "post_record_selection_rule_target_vector_firewall_2026-06-06",
-        "post_record_admitted_sample_target_vector_interface_2026-06-06"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "primitive_p_heavyq_casimir_closure_note_2026-05-10_ppheavyq_closure",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -39615,5 +39590,5 @@
     }
   ],
   "ready_count": 43,
-  "total_pending": 1312
+  "total_pending": 1311
 }

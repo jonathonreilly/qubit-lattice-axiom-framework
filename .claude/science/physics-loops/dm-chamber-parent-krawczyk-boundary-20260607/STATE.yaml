@@ -1,0 +1,9 @@
+loop: dm-chamber-parent-krawczyk-boundary-20260607
+status: ready_for_review
+base: origin/main
+branch: physics-loop/dm-chamber-parent-krawczyk-boundary-20260607
+audit_files_edited: false
+claim_status: bounded_listed_root_support
+residual:
+  - global_upper_bound_no_other_roots
+  - chamber_exclusion_cover_or_elimination_certificate

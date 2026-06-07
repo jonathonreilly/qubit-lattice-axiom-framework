@@ -1,0 +1,31 @@
+loop_slug: flavor-tracial-reference-bounded-repair-20260607
+branch: physics-loop/flavor-tracial-reference-bounded-repair-20260607
+base: origin/main
+started_at: 2026-06-07
+goal: >
+  Repair the audited conditional flavor tracial-reference no-go by separating
+  the bounded route-pruning theorem from upstream carrier/readout provenance
+  and by sourcing the r/Q normalization to retained support.
+target_claim_id: flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: retained_normalization_plus_bounded_no_go_boundary
+files_touched:
+  - docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md
+  - scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py
+  - logs/runner-cache/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.txt
+open_imports:
+  - supplied finite R[Z_3]=R(+)C generation carrier/readout surface
+  - physical flavor-sector identification
+  - physical measured-mass readout
+imports_retired:
+  - local untracked r/Q normalization convention
+  - local untracked endpoint dictionary for r=1/2 and r=1
+verification:
+  - command: PYTHONPATH=scripts python3 scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py
+    result: PASS=39 FAIL=0
+pr_status: pending
+next_exact_action: Open review PR for this bounded repair packet.
+stop_condition: PR opened and verified, then continue scanning for further repairable conditional rows.

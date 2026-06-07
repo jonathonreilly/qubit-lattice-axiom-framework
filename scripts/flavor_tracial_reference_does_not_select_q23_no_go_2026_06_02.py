@@ -18,7 +18,9 @@ PERMIT, not FORCE.  Symmetric standard applied to (i).
 
 Every operator used is finite-dimensional matrix algebra. The runner does not
 derive the generation carrier, physical sector identification, or physical mass
-readout from baseline axioms.
+readout from baseline axioms. The paired source note now cites the retained
+Record-function algebra for the r/Q coordinate and keeps the carrier/readout as
+supplied context.
 """
 
 from pathlib import Path
@@ -335,8 +337,11 @@ banned = [
     "MINIMAL_AXIOMS_2026-06-04",
 ]
 required = [
-    "assumes the finite `R[Z_3]=R(+)C` generation carrier",
-    "does not derive that carrier",
+    "bounded no_go / route-pruning theorem",
+    "supplied finite carrier/readout surface",
+    "does not derive the carrier",
+    "RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05",
+    "KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29",
     "No new axiom is introduced.",
 ]
 check("source boundary guard: carrier/readout are assumed, not derived by this packet",

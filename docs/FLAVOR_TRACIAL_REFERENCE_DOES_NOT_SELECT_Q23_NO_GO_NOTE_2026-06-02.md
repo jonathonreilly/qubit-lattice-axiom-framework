@@ -1,31 +1,59 @@
 # Flavor Tracial Reference Does Not Select `Q=2/3` No-Go
 
 **Date:** 2026-06-02
-**Claim type:** no_go
-**Actual current-surface status:** no-go
+**Claim type:** bounded no_go / route-pruning theorem
+**Actual current-surface status:** bounded-support
 **Trace class:** negative_route_pruning
-**Reachability to target:** prunes the route "the tracial/product/modular reference selects the equal-block `Q=2/3` measure".
+**Reachability to target:** prunes the bounded route "on the supplied finite
+generation carrier/readout, the tracial/product/modular reference selects the
+equal-block `Q=2/3` measure".
 **Bare retained allowed:** false
 **Audit required before effective status change:** true
 **Runner:** `scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py` (SCORECARD PASS=39).
 
 ## Closed Packet
 
-This note assumes the finite `R[Z_3]=R(+)C` generation carrier and the displayed
-Koide line/readout
+This note is deliberately **bounded**. It assumes the finite
+`R[Z_3]=R(+)C` generation carrier/readout surface and uses the displayed
+Koide structural coordinate
 
 ```text
 Q = 1/3 + (2/3) r.
 ```
 
-Under that assumed carrier/readout surface, the tracial/product/modular route
-does not select the equal-block measure that gives `Q=2/3`. It reads the two
-central blocks by dimension, giving block weights `(1,2)`, hence `r=1` and
-`Q=1`.
+Under that supplied surface, the tracial/product/modular route does not select
+the equal-block measure that gives `Q=2/3`. It reads the two central blocks by
+dimension, giving block weights `(1,2)`, hence `r=1` and `Q=1`.
 
-The packet does not derive that carrier, the physical flavor-sector
+The packet does not derive the carrier, the physical flavor-sector
 identification, or the physical mass readout from baseline axioms. Those are
-open bridge questions outside this no-go.
+outside the bounded route-pruning claim. This note therefore should not be read
+as an absolute obstruction to `Q=2/3`; it only removes one proposed selector for
+the equal-block value once that finite readout surface has already been supplied.
+
+### 2026-06-07 source repair
+
+The original packet bundled three different issues in its boundary language:
+the finite carrier/readout, the `r`-normalization/`Q` coordinate, and the
+tracial-route no-go. The current retained support stack separates them more
+cleanly:
+
+- [`RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md`](RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md)
+  supplies retained finite record-function algebra and, for the supplied
+  generation two-sector readout, derives `rho = 2r`,
+  `Q = 1/3 + (2/3)r`, and the endpoint dictionary
+  `rho=1 -> r=1/2 -> Q=2/3` and `rho=2 -> r=1 -> Q=1`.
+- [`KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`](KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md)
+  supplies audited bounded algebra separating equal-block weighting
+  `(1/2,1/2) -> Q=2/3` from dimension/Plancherel trace weighting
+  `(1/3,2/3) -> Q=1`.
+
+Those sources retire the stale normalization objection for this bounded packet:
+the `r` and `Q` coordinates used below are no longer an untracked local
+convention. The remaining boundary is the supplied generation carrier/readout
+surface itself. Since the theorem is explicitly scoped to that surface, the
+load-bearing claim is the finite route-pruning statement: the trace route lands
+on dimension weighting, not equal-block weighting.
 
 ## Direct Checks
 
@@ -52,7 +80,7 @@ open bridge questions outside this no-go.
 
 This is not evidence against `Q=2/3`, and it does not choose the physical
 flavor sector. It says only that the tracial/product/modular route, on the
-assumed finite carrier/readout surface, lands on the dimension read and cannot
+supplied finite carrier/readout surface, lands on the dimension read and cannot
 be reused as the selector for the equal-block read.
 
 The `Q=2/3` route remains open through a chiral sector, non-tracial reference
@@ -79,5 +107,11 @@ Alternative routes remain open:
 - The runner checks finite-matrix facts, the Koide-line arithmetic, tracial and
   equal-block states, trivial trace modular flow, product-trace factorization,
   and positivity agnosticism.
+- The `r`/`Q` normalization is cross-sourced to retained
+  `RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05` and audited bounded
+  `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29`.
+- The generation carrier/readout remains supplied context; no framework-native
+  carrier, physical flavor-sector identification, or measured-mass readout is
+  derived here.
 - No `docs/audit/**` status is updated by this packet.
 - No new axiom is introduced.

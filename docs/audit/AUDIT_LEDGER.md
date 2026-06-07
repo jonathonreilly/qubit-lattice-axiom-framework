@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 713 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1374 |
+| unaudited | 1373 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 4 |
+| ~~audited_conditional~~ | 5 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1124 |
-| `audited_conditional` | 4 |
+| `audited_conditional` | 5 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1683 |
+| `unaudited` | 1682 |
 
 | claim_type | count |
 |---|---:|
@@ -1257,6 +1257,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5298,6 +5299,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py_import_error_missing__field_from_sources`
   - `FIFTH_FAMILY_RADIAL_NOTE.md_unaudited_base_family`
   - `live_runner_output_not_reproducible`
+- **auditor confidence:** high
+
+### `fifth_family_radial_boundary_note`
+
+- **Note:** [`FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded empirical boundary row for the fifth radial-shell connectivity family on the no-restore grown slice at drift 0.20, seed 0, plus the two comparison rows shown by the runner.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-160008-c58e9f6383-fifth_family_radial_boundary`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At drift 0.20, seed 0 the radial-shell family keeps exact zero and neutral controls but flips sign orientation with plus < 0 and minus > 0.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the reported signs and controls from framework-style growth, connectivity, field, propagation, and centroid primitives. However the note itself explicitly states that there is no independent derivation of the zero/neutral exactness or sign flip from retained inputs, so theorem-level closure is missing.
+- **rationale:** The supplied runner is not a trivial printout: it calls grow, builds radial-shell connectivity, propagates fields, measures centroid shifts, and asserts the single failing row with plus negative and minus positive. The helper chain contains no obvious import of a contested constant for this boundary row. Still, the source note classifies itself as support and explicitly says the deeper derivation of the exact controls and sign flip remains open work. The audited claim is therefore a valid bounded computed observation, not a closed bounded theorem from the restricted packet.
 - **auditor confidence:** high
 
 ### `fifth_family_radial_fm_transfer_note`

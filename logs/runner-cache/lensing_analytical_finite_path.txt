@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lensing_analytical_finite_path.py
-runner_sha256: c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1
+runner_sha256: 6fc5448b3f382327a07f073968db6c6f455c9ad72f80c43a903f66ff00d61b12
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 ================================================================================
@@ -46,6 +46,42 @@ So the finite-path idea is still useful, but the current 'exact analytical
 explanation' is too strong. The missing ingredient is likely the actual
 beam/path weighting of the detector-centroid observable, not just a plain
 angle integral over a centered interaction segment.
+
+================================================================================
+INLINE SOURCE-PACKET EXPOSURE CHECKS
+================================================================================
+[PASS] packet path exists: docs/LENSING_LONG_PATH_TEST_NOTE.md
+[PASS] finite-path note links packet path: docs/LENSING_LONG_PATH_TEST_NOTE.md
+[PASS] packet path exists: scripts/lensing_long_path_test.py
+[PASS] finite-path note links packet path: scripts/lensing_long_path_test.py
+[PASS] packet path exists: logs/runner-cache/lensing_long_path_test.txt
+[PASS] finite-path note links packet path: logs/runner-cache/lensing_long_path_test.txt
+[PASS] packet path exists: scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py
+[PASS] finite-path note links packet path: scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py
+[PASS] packet path exists: logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt
+[PASS] finite-path note links packet path: logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt
+[PASS] packet path exists: outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json
+[PASS] finite-path note links packet path: outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json
+[PASS] long-path runner source marker present: AUDIT_TIMEOUT_SEC = 1800
+[PASS] long-path runner source marker present: from kubo_continuum_limit import
+[PASS] long-path runner source marker present: T_PHYS_LONG = 45.0
+[PASS] long-path runner source marker present: T_PHYS_SHORT = 7.5
+[PASS] long-path runner source marker present: B_VALUES = [3.0, 4.0, 5.0, 6.0]
+[PASS] long-path runner source marker present: def measure_at
+[PASS] long-path runner source marker present: true_kubo_at_H
+[PASS] long-path cache runner matches source: scripts/lensing_long_path_test.py
+[PASS] long-path cache SHA is fresh: 6c97ab1fe30b85a83357e7cea950013ff286e3a1765a4daa3bdea9a667d6583b == 6c97ab1fe30b85a83357e7cea950013ff286e3a1765a4daa3bdea9a667d6583b
+[PASS] long-path cache exits cleanly: exit_code=0 status=ok
+[PASS] long-path cache contains: T_phys = 45.0
+[PASS] long-path cache contains: T_phys = 7.5
+[PASS] long-path cache contains: H=0.25 kubo_true:        slope = -1.4356
+[PASS] long-path cache contains: analytical (no fit):    slope = -1.7336
+[PASS] long-path cache contains: H=0.5 kubo_true:        slope = -1.8128
+[PASS] long-path cache contains: POOR MATCH
+[PASS] manifest cache reports zero failures
+[PASS] manifest JSON exists: outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json
+[PASS] manifest JSON reports zero failures: {'pass': 57, 'fail': 0}
+INLINE SOURCE PACKET: PASS=31 FAIL=0
 
 ----- stderr -----
 

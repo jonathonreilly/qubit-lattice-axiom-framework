@@ -28,7 +28,7 @@ LENSING FINITE-PATH: RESTRICTED SOURCE PACKET MANIFEST
 [PASS] finite_path_note_names_manifest_artifact:manifest_cache: logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
 [PASS] finite_path_note_names_manifest_artifact:manifest_json: outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json is named in docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
 [PASS] long_path_note_points_back_to_finite_path_note: long-path note names finite-path note as falsified target
-[PASS] source_untruncated:finite_path_runner: scripts/lensing_analytical_finite_path.py has 6340 bytes
+[PASS] source_untruncated:finite_path_runner: scripts/lensing_analytical_finite_path.py has 10796 bytes
 [PASS] source_marker:finite_path_runner:def alpha_centered_surrogate: def alpha_centered_surrogate present in scripts/lensing_analytical_finite_path.py
 [PASS] source_marker:finite_path_runner:def alpha_full_path_reg: def alpha_full_path_reg present in scripts/lensing_analytical_finite_path.py
 [PASS] source_marker:finite_path_runner:def shift_weighted_reg: def shift_weighted_reg present in scripts/lensing_analytical_finite_path.py
@@ -45,7 +45,7 @@ LENSING FINITE-PATH: RESTRICTED SOURCE PACKET MANIFEST
 [PASS] source_marker:long_path_runner:def measure_at: def measure_at present in scripts/lensing_long_path_test.py
 [PASS] source_marker:long_path_runner:true_kubo_at_H: true_kubo_at_H present in scripts/lensing_long_path_test.py
 [PASS] cache_runner_matches:finite_path_cache: scripts/lensing_analytical_finite_path.py == scripts/lensing_analytical_finite_path.py
-[PASS] cache_sha_fresh:finite_path_cache: cache sha c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1 current sha c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1
+[PASS] cache_sha_fresh:finite_path_cache: cache sha 6fc5448b3f382327a07f073968db6c6f455c9ad72f80c43a903f66ff00d61b12 current sha 6fc5448b3f382327a07f073968db6c6f455c9ad72f80c43a903f66ff00d61b12
 [PASS] cache_exit_ok:finite_path_cache: exit_code=0 status=ok
 [PASS] cache_contains:finite_path_cache:status: ok: status: ok
 [PASS] cache_contains:finite_path_cache:measured H=0.25                 -1.4335: measured H=0.25                 -1.4335

@@ -85,6 +85,31 @@ one restricted packet. The remaining science boundary is unchanged:
 there is still no independently audited layer-weighted analytical derivation from
 the literal harness geometry to the detector-centroid observable.
 
+## 2026-06-06 Primary-Runner Packet Inlining Repair
+
+The 2026-06-06 audit still treated the row as conditional because the
+restricted packet needed the long-path runner/cache available with the primary
+finite-path evidence. The primary runner now checks that packet inline. After
+printing the analytical finite-path comparison, it verifies:
+
+- the long-path note, runner, cache, manifest cache, and manifest JSON are
+  linked from this note;
+- `scripts/lensing_long_path_test.py` contains the `T_phys=45`, `T_phys=7.5`,
+  `B_VALUES`, and `measure_at` machinery;
+- `logs/runner-cache/lensing_long_path_test.txt` is SHA-fresh, exits cleanly,
+  and contains the `T_phys=7.5`, `H=0.25` measured slope `-1.4356` and
+  analytical prediction `-1.7336`;
+- the source-packet manifest cache and JSON report zero failures.
+
+The primary runner reports:
+
+```text
+INLINE SOURCE PACKET: PASS=31 FAIL=0
+```
+
+This remains a packet-completeness repair. It does not promote the row, and it
+does not close the open layer-weighted detector-centroid derivation.
+
 ## Question
 
 Lane L (H=0.35 only) headlined the sweep as "matches 1/b

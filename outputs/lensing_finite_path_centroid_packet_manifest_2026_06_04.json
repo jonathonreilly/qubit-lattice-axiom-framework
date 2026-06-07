@@ -114,7 +114,7 @@
     {
       "name": "source_untruncated:finite_path_runner",
       "pass": true,
-      "detail": "scripts/lensing_analytical_finite_path.py has 6340 bytes"
+      "detail": "scripts/lensing_analytical_finite_path.py has 10796 bytes"
     },
     {
       "name": "source_marker:finite_path_runner:def alpha_centered_surrogate",
@@ -199,7 +199,7 @@
     {
       "name": "cache_sha_fresh:finite_path_cache",
       "pass": true,
-      "detail": "cache sha c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1 current sha c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1"
+      "detail": "cache sha 6fc5448b3f382327a07f073968db6c6f455c9ad72f80c43a903f66ff00d61b12 current sha 6fc5448b3f382327a07f073968db6c6f455c9ad72f80c43a903f66ff00d61b12"
     },
     {
       "name": "cache_exit_ok:finite_path_cache",

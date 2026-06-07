@@ -29,7 +29,131 @@ The question is not just "does some finite-path model fit?" but
 
 from __future__ import annotations
 
+import hashlib
+import json
 import math
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "LENSING_FINITE_PATH_EXPLANATION_NOTE.md"
+LONG_PATH_RUNNER = ROOT / "scripts" / "lensing_long_path_test.py"
+LONG_PATH_CACHE = ROOT / "logs" / "runner-cache" / "lensing_long_path_test.txt"
+MANIFEST_CACHE = ROOT / "logs" / "runner-cache" / "lensing_finite_path_centroid_packet_manifest_2026_06_04.txt"
+MANIFEST_JSON = ROOT / "outputs" / "lensing_finite_path_centroid_packet_manifest_2026_06_04.json"
+
+PACKET_PATHS = [
+    "docs/LENSING_LONG_PATH_TEST_NOTE.md",
+    "scripts/lensing_long_path_test.py",
+    "logs/runner-cache/lensing_long_path_test.txt",
+    "scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py",
+    "logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt",
+    "outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json",
+]
+
+LONG_PATH_SOURCE_MARKERS = [
+    "AUDIT_TIMEOUT_SEC = 1800",
+    "from kubo_continuum_limit import",
+    "T_PHYS_LONG = 45.0",
+    "T_PHYS_SHORT = 7.5",
+    "B_VALUES = [3.0, 4.0, 5.0, 6.0]",
+    "def measure_at",
+    "true_kubo_at_H",
+]
+
+LONG_PATH_CACHE_SNIPPETS = [
+    "T_phys = 45.0",
+    "T_phys = 7.5",
+    "H=0.25 kubo_true:        slope = -1.4356",
+    "analytical (no fit):    slope = -1.7336",
+    "H=0.5 kubo_true:        slope = -1.8128",
+    "POOR MATCH",
+]
+
+INLINE_PASS = 0
+INLINE_FAIL = 0
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def parse_cache(path: Path) -> dict[str, str]:
+    text = path.read_text(encoding="utf-8", errors="replace")
+    header, _, _stdout = text.partition("----- stdout -----")
+    out = {"_text": text}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        out[key.strip()] = value.strip()
+    return out
+
+
+def check_packet(name: str, ok: bool, detail="") -> None:
+    global INLINE_PASS, INLINE_FAIL
+    tag = "PASS" if ok else "FAIL"
+    if ok:
+        INLINE_PASS += 1
+    else:
+        INLINE_FAIL += 1
+    suffix = f": {detail}" if detail != "" else ""
+    print(f"[{tag}] {name}{suffix}")
+
+
+def inline_source_packet_checks() -> int:
+    print()
+    print("=" * 80)
+    print("INLINE SOURCE-PACKET EXPOSURE CHECKS")
+    print("=" * 80)
+    note_text = NOTE.read_text(encoding="utf-8")
+    long_source = LONG_PATH_RUNNER.read_text(encoding="utf-8")
+    long_cache = parse_cache(LONG_PATH_CACHE)
+    manifest_cache = parse_cache(MANIFEST_CACHE)
+
+    for rel_path in PACKET_PATHS:
+        check_packet(f"packet path exists: {rel_path}", (ROOT / rel_path).exists())
+        check_packet(f"finite-path note links packet path: {rel_path}", rel_path in note_text)
+
+    for marker in LONG_PATH_SOURCE_MARKERS:
+        check_packet(f"long-path runner source marker present: {marker}", marker in long_source)
+
+    long_sha = sha256_file(LONG_PATH_RUNNER)
+    check_packet(
+        "long-path cache runner matches source",
+        long_cache.get("runner") == "scripts/lensing_long_path_test.py",
+        long_cache.get("runner"),
+    )
+    check_packet(
+        "long-path cache SHA is fresh",
+        long_cache.get("runner_sha256") == long_sha,
+        f"{long_cache.get('runner_sha256')} == {long_sha}",
+    )
+    check_packet(
+        "long-path cache exits cleanly",
+        long_cache.get("exit_code") == "0" and long_cache.get("status") == "ok",
+        f"exit_code={long_cache.get('exit_code')} status={long_cache.get('status')}",
+    )
+    for snippet in LONG_PATH_CACHE_SNIPPETS:
+        check_packet(f"long-path cache contains: {snippet}", snippet in long_cache["_text"])
+
+    check_packet(
+        "manifest cache reports zero failures",
+        "SUMMARY: LENSING SOURCE PACKET PASS=57 FAIL=0" in manifest_cache["_text"],
+    )
+    if MANIFEST_JSON.exists():
+        payload = json.loads(MANIFEST_JSON.read_text(encoding="utf-8"))
+    else:
+        payload = {}
+    check_packet("manifest JSON exists", MANIFEST_JSON.exists(), MANIFEST_JSON.relative_to(ROOT))
+    check_packet("manifest JSON reports zero failures", payload.get("summary", {}).get("fail") == 0, payload.get("summary"))
+
+    print(f"INLINE SOURCE PACKET: PASS={INLINE_PASS} FAIL={INLINE_FAIL}")
+    return INLINE_FAIL
 
 
 def alpha_centered_surrogate(b, L, s=1.0):
@@ -169,7 +293,8 @@ def main():
     print("explanation' is too strong. The missing ingredient is likely the actual")
     print("beam/path weighting of the detector-centroid observable, not just a plain")
     print("angle integral over a centered interaction segment.")
+    return inline_source_packet_checks()
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

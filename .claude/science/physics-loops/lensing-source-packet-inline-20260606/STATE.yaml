@@ -1,0 +1,25 @@
+loop_slug: lensing-source-packet-inline-20260606
+mode: science-fix
+started_from: origin/main@42e22e6ab
+branch: physics-loop/lensing-source-packet-inline-20260606
+target_claim_id: lensing_finite_path_explanation_note
+target_status: best-honest-status
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+blocker_text: "runner_artifact_issue: include scripts/lensing_long_path_test.py and its fresh runner cache/output so the T_phys=7.5 measured slope -1.4356 and finite-path prediction -1.7336 can be verified within the restricted packet."
+files_touched:
+  - docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+  - scripts/lensing_analytical_finite_path.py
+  - logs/runner-cache/lensing_analytical_finite_path.txt
+  - logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt
+  - outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json
+current_result: "Primary finite-path runner now verifies long-path source/cache and source-packet zero-fail output inline."
+remaining_blockers:
+  - "Independent audit must decide whether the source-packet blocker is closed."
+  - "Layer-weighted analytical reduction from literal harness geometry to detector-centroid observable remains open."
+  - "No standard 1/b lensing theorem is claimed."
+next_exact_action: "Open review PR for source extraction and re-audit."
+stop_condition: "Block complete after PR creation; campaign should continue scanning remaining conditionals."

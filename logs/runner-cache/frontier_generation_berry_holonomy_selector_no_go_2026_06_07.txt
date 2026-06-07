@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/frontier_generation_berry_holonomy_selector_no_go_2026_06_07.py
+runner_sha256: 48ddd22397121d8d1a55ecad2d47d38e7c5c65ec3e20e9e951f34b76cbed7568
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+[PASS] C has order three :: C^3=[[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+[PASS] character projectors sum to identity
+[PASS] P0 is the singlet projector J/3
+[PASS] P1 and P2 fuse to the doublet projector
+[PASS] character projectors are idempotent and orthogonal
+[PASS] native mass carrier is Hermitian
+[PASS] native mass carrier is C3-equivariant
+[PASS] all character projectors commute with H
+[PASS] two-block singlet/doublet projector commutes with H
+[PASS] central-sector projectors are parameter-constant :: derivative_keys=['P0_a', 'P0_x', 'P0_y', 'P1_x', 'P2_y', 'Pd_a', 'Pd_x', 'Pd_y']
+[PASS] singlet Berry curvature is zero
+[PASS] doublet Wilczek-Zee curvature is zero
+[PASS] faithful-band Berry curvatures are zero
+[PASS] faithful-band split is 2 sqrt(3) y :: split=2*sqrt(3)*y
+[PASS] K-real degeneracy condition is independent of x and a
+[PASS] K/CPT conjugation preserves r :: r=(x**2 + y**2)/a**2
+[PASS] K-real line leaves the weight dial free :: r|y=0=x**2/a**2
+[PASS] Berry curvature cannot distinguish K-real from non-K-real samples
+[PASS] sample moving-projector rotation is orthogonal
+[PASS] sample moving-projector rotation leaves the C3-central carrier :: commutator_norm_sq=15392/625
+[PASS] central changes commute with C
+[PASS] central changes preserve P0
+[PASS] central changes preserve Pd
+[PASS] native Berry/holonomy data expose no r-half selector :: native_data={'berry_curvature': Matrix([
+[0, 0, 0],
+[0, 0, 0],
+[0, 0, 0]]), 'r_under_K': 0, 'kreal_split': 2*sqrt(3)*y, 'weight_on_kreal': x**2/a**2}
+eigenvalues: lambda0=a + 2*x, lambda1=a - x + sqrt(3)*y, lambda2=a - x - sqrt(3)*y
+SCORECARD: PASS=24 FAIL=0
+
+----- stderr -----
+

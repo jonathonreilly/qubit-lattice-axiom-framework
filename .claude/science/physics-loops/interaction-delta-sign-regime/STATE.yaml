@@ -1,0 +1,21 @@
+loop_slug: interaction-delta-sign-regime
+branch: physics-loop/interaction-delta-sign-regime-20260607
+target_claim_id: interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06
+target_status: positive-theorem scope repair
+actual_current_surface_status: audited_conditional
+blocker_source: audit_ledger
+blocker_text: "scope_too_broad: add and verify the symbolic effective-coupling formula with the eps+U>0 or weak-coupling hypothesis, then restate the sign law within that regime."
+cycle: 1
+active_route: Schur denominator formula and no-resonance sign-law narrowing
+files_touched:
+  - docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md
+  - scripts/interaction_asymmetry_delta_occupation_curvature_runner.py
+  - logs/runner-cache/interaction_asymmetry_delta_occupation_curvature_runner.txt
+open_imports:
+  - actual delta sign/scale from retained mediator pair energy remains open
+  - generation-pair-to-psi normalization remains outside this structure theorem
+  - independent audit must decide whether the scope repair clears the conditional verdict
+trace_gate: direct_blocker_closure
+review_disposition: local_checks_pass_reviewer_pending
+next_exact_action: "Open review PR; auditor/reviewer can verify K_off=t^2*U/[eps(eps+U)] and the eps+U>0 scope."
+stop_condition: "This block is complete when the review PR is opened; campaign then pivots to the next repairable conditional row."

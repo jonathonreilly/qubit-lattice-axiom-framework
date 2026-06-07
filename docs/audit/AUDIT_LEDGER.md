@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 721 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 34 |
-| unaudited | 1345 |
+| unaudited | 1344 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1133 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1654 |
+| `unaudited` | 1653 |
 
 | claim_type | count |
 |---|---:|
@@ -1275,6 +1275,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6674,6 +6675,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The note's frozen rows match the SHA-pinned cached runner output for restore=0 across the declared drift rows, two seeds, three far-field z masses, and three-strength F~M probe.  _(class `C`)_
 - **chain closes:** True — The claim closes only at the bounded runner-defined level. The retained-bounded one-hop dependencies supply compatible finite-harness context, and the source does not claim physical Gate B closure or replacement of the restore>0 family.
 - **rationale:** A fresh restricted-input auditor confirmed that the source note is narrowly scoped and that its frozen rows exactly match the cached runner output: drift 0.0 through 0.3 give 6/6 TOWARD with F~M=1.00, and drift 0.5 gives 5/6 TOWARD with F~M=1.00. The runner source genuinely constructs the no-restore grown geometries, propagates the runner-defined field/readout, and computes the counts and slopes; it is not a print-only certificate. The note preserves the finite-row boundary and explicitly avoids treating the no-restore family as a full replacement for restore>0 or as physical Gate B closure.
+- **auditor confidence:** high
+
+### `gate_b_no_restore_joint_package_note`
+
+- **Note:** [`GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md`](../../docs/GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded single-seed audit of the exact-grid and restore=0 drift rows for Born residual, d_TV, MI, and decoherence on the runner's grown-geometry family.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-172006-1eae3a47e6-gate_b_no_restore_joint_pack`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From the frozen replay table, restore = 0 with zero drift reproduces the exact-grid package, while nonzero drift makes the joint package drift-sensitive.  _(class `A`)_
+- **chain closes:** False — The zero-drift equality closes analytically from the growth rule because drift=0 makes the restore parameter irrelevant. The nonzero-drift numerical rows are only read from the frozen log in the supplied execution, so a completed recompute or independent numeric certificate is the missing step.
+- **rationale:** The supplied execution is a frozen-log verifier: it parses rows from logs/2026-04-05-gate-b-no-restore-joint-package.txt and checks labels, broad ranges, the exact-vs-zero-drift equality, safe text, and a time marker. It does not execute measure_row in the default path or compare the frozen rows against a completed recompute certificate, so the drift-row quantitative table is not closed by the restricted packet. The recompute source path appears substantive rather than a hard-coded printout, but the audited evidence supplied here stops one step short of tying the cited numbers to that path.
 - **auditor confidence:** high
 
 ### `gate_b_nonlabel_connectivity_v1_distance_note`

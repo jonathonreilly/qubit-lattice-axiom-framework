@@ -1,0 +1,14 @@
+loop_slug: yt-boundary-finite-diagnostic-20260607
+created: 2026-06-07
+branch: physics-loop/yt-boundary-finite-diagnostic-20260607
+base: origin/main
+target_claim_id: yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: implementation-input finite diagnostic retargeting
+hard_residual: canonical plaquette constants, Ward target, SM RGE normalization, threshold scales, and EW initial conditions remain implementation inputs rather than retained proof authorities
+verification:
+  - python3 scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
+next_exact_action: open review PR against main

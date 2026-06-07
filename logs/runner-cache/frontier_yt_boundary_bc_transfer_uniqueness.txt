@@ -1,14 +1,29 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
-runner_sha256: f0b5a83183264529a34c2935a585b2c620eb0ec8ef8455da6c70ba27cb190370
+runner_sha256: 4907809e309d81ee4edd03c5653ee74d425e7b31ebd49c888a6f6061fb5893bb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.01
+elapsed_sec: 0.68
 status: ok
 ----- stdout -----
 ==============================================================================
 BOUNDARY BC-TRANSFER FINITE-GRID DIAGNOSTIC
 ==============================================================================
+
+==============================================================================
+SECTION 0: Source-boundary checks
+==============================================================================
+
+  [PASS (D)] section0_2026_06_07_boundary_present
+         source note carries the implementation-input retargeting section
+  [PASS (D)] section0_imports_are_implementation_inputs
+         canonical plaquette and Ward target are not proof authorities for this row
+  [PASS (D)] section0_continuum_claims_excluded
+         finite grid diagnostic only
+  [PASS (D)] section0_runner_count_updated
+         note scorecard matches source-boundary runner
+  [PASS (D)] section0_no_retained_input_overclaim
+         old retained-input wording removed
 
 ==============================================================================
 SECTION 1: Imported numeric inputs
@@ -219,11 +234,11 @@ SECTION 8: SCORECARD
     - parent claim (iii) Ward-identity domain     (interpretive)
     - parent claim (v)  non-perturbative bridge  (interpretive)
 
-  Elapsed: 0.5s
+  Elapsed: 0.4s
 
-  Counts: 23 PASS, 0 FAIL
+  Counts: 28 PASS, 0 FAIL
 
-  All 23 checks passed.
+  All 28 checks passed.
 
 ----- stderr -----
 

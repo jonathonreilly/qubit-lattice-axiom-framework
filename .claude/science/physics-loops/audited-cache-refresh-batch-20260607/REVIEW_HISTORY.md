@@ -1,0 +1,19 @@
+# Review History
+
+Self-review disposition: pass for the 18 included cache refreshes.
+
+Checks run:
+
+```bash
+python3 scripts/precompute_audit_runners.py --runners scripts/frontier_chiral_split_mass_gravity.py,scripts/fermion_parity_z2_grading_check.py,scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py,scripts/frontier_gauge_vacuum_plaquette_bridge_support.py,scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py,scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py,scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py,scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py,scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py,scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py,scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py,scripts/lattice_keff_continuum.py,scripts/frontier_non_abelian_gauge.py,scripts/frontier_qcd_low_energy_running_bridge.py,scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py,scripts/wave_static_matrixfree_shared_geometry_compare.py,scripts/frontier_wilson_two_body_open.py,scripts/frontier_yt_color_projection_correction.py --check-only --allow-non-main
+```
+
+Result: 18 fresh, 0 stale, 0 missing.
+
+Withheld from this PR:
+
+```text
+scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py
+```
+
+Reason: current output contains `TOTAL: PASS=28, FAIL=1`.

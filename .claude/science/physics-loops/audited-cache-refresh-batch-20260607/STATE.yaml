@@ -1,0 +1,37 @@
+loop_slug: audited-cache-refresh-batch-20260607
+date: 2026-06-07
+branch: physics-loop/audited-cache-refresh-batch-20260607
+base: origin/main@fbf4dfbedf8c7add83c179756584d9fc983f4488
+mode: campaign_block
+target_status: exact-support
+actual_current_surface_status: cache-refresh-only
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: refresh uncovered audited sha-mismatch runner caches
+files_touched:
+  - logs/runner-cache/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.txt
+  - logs/runner-cache/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.txt
+  - logs/runner-cache/fermion_parity_z2_grading_check.txt
+  - logs/runner-cache/frontier_chiral_split_mass_gravity.txt
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_bridge_support.txt
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_local_environment_factorization.txt
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_residual_environment_identification.txt
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.txt
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.txt
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.txt
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.txt
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.txt
+  - logs/runner-cache/frontier_non_abelian_gauge.txt
+  - logs/runner-cache/frontier_qcd_low_energy_running_bridge.txt
+  - logs/runner-cache/frontier_wilson_two_body_open.txt
+  - logs/runner-cache/frontier_yt_color_projection_correction.txt
+  - logs/runner-cache/lattice_keff_continuum.txt
+  - logs/runner-cache/wave_static_matrixfree_shared_geometry_compare.txt
+open_imports:
+  - none added
+withheld_targets:
+  - scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py emits TOTAL PASS=28 FAIL=1; do not include in clean cache batch without repair
+review_disposition: pass
+pr_status: pending_create
+next_exact_action: open review PR, then repair or route the remaining failing/missing runner targets
+stop_condition: stop this block after PR creation and continue campaign scan

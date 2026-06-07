@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_bridge_support.py
-runner_sha256: 20ac6a52fddf47b303cb30023aa116674b4835663d087ff1316ca89ec19de5be
+runner_sha256: 96cfa9c6348eeeae32929f3c1fa5109d1c4aa48987120cbfa64656e390ff3d45
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -24,7 +24,7 @@ Plaquette four-link coupling map
   max |P(u0 V)/u0^4 - P(V)|           = 1.110e-16
   max |P(u0 V)/u0^2 - P(V)|           = 1.652e-01
 
-Support candidate output
+Support-only candidate comparator
   Gamma_coord                         = 1.500000000000000
   beta_eff                            = 9.329531846652698
   P(6)                                = 0.593530679977098   (mode cutoff m = 10)

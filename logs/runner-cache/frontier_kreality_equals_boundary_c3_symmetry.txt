@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_kreality_equals_boundary_c3_symmetry.py
+runner_sha256: 2367729a74df799c00945ef368b7a4849cb75552d704ae4c9ab69412c3be4b82
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+PASS base [A,S]=0 (A partition-blind)
+PASS base A Hermitian
+PASS T1 circulant history: Aham in span{A}, [Aham,S]=0 (1000)
+PASS T2 C3-breaking history => Aham partition-selective (all)
+PASS T3 Aham(I/3) = 0 (no arrow)
+PASS T4 single-axis |e_k>: C3-broken & rank-1 (k=0,1,2)
+PASS T5 D(|e_k><e_k|) = I/3 (register-collapse to no-arrow)
+PASS T5b D(rho) circulant (C3-symmetric) for every rho (500)
+PASS T6 Tr(A M) is conjugation-odd: F(conj M) = -F(M) (500)
+PASS T6 Tr(A M) = 0 on every K-real (delta=0) operator (500)
+PASS T6b Tr(A M) = 6|b| sin(delta) (closed form, 200)
+PASS CTRL1 delta!=0 => Tr(A M) != 0 (T6 not vacuous)
+PASS CTRL2 circulant arrow-bearing history: Aham != 0 in span{A}
+PASS CTRL3 single-axis boundary bears an arrow pre-registration ([rho,C]!=0)
+
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

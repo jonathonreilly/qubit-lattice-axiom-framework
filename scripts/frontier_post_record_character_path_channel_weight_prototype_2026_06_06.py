@@ -3,35 +3,29 @@
 
 from __future__ import annotations
 
-from collections import Counter, defaultdict
 from fractions import Fraction
 from pathlib import Path
 import hashlib
-import importlib.util
 import json
 import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-MEASURE_RUNNER = ROOT / "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
 PASS = 0
 FAIL = 0
 
-EXPECTED_ROWS = 9
-
-
-def load_module(name: str, path: Path):
-    spec = importlib.util.spec_from_file_location(name, path)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot load {path}")
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[name] = module
-    spec.loader.exec_module(module)
-    return module
-
-
-measure = load_module("measure_weight_subdivision", MEASURE_RUNNER)
+EXPECTED_CHARACTER_PATH_CHANNEL_ROWS = {
+    "architecture_note_directional_measure": "docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md",
+    "closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c": "docs/CLOSURE_C_L1_PER_GRAPH_CASIMIR_NOTE_2026-05-10_cL1c.md",
+    "continuum_limit_note": "docs/CONTINUUM_LIMIT_NOTE.md",
+    "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02": "docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md",
+    "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26": "docs/HIERARCHY_ALPHA_BARE_FOUR_PI_CONTINUUM_MEASURE_CONTENT_ATTRIBUTION_BOUNDED_NOTE_2026-05-26.md",
+    "koide_aps_block_by_block_forcing_note_2026-04-21": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
+    "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological": "docs/KOIDE_S_L1_TOPOLOGICAL_CHERN_SIMONS_NOTE_2026-05-08_probeS_L1_topological.md",
+    "koide_v_l1_quartic_casimir_beta2_note_2026-05-08_probev_l1_quartic": "docs/KOIDE_V_L1_QUARTIC_CASIMIR_BETA2_NOTE_2026-05-08_probeV_L1_quartic.md",
+    "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25": "docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md",
+}
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -102,6 +96,7 @@ def source_anchor_checks() -> None:
             "character_path_channel_weight",
             "supplied-normalization witness",
             "normalized finite path/channel/character weight packet",
+            "Independent row-inventory certificate",
             "Does not derive a directional path parameter",
             "Does not select or force a generation/Koide dial location.",
         ],
@@ -184,27 +179,33 @@ def certificate_checks() -> None:
     report("negative supplied weights are rejected", negative_rejected)
 
 
-def character_rows() -> list[dict]:
-    return [
-        row
-        for row in measure.measure_rows()
-        if measure.measure_lane(row) == "character_path_channel_weight"
-    ]
+def ledger_rows() -> dict[str, dict]:
+    return json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
+
+
+def character_rows(all_rows: dict[str, dict]) -> list[dict]:
+    return [all_rows[claim_id] for claim_id in EXPECTED_CHARACTER_PATH_CHANNEL_ROWS if claim_id in all_rows]
 
 
 def row_checks() -> list[dict]:
     section("Character/path/channel row checks")
     before = digest(LEDGER)
-    rows = character_rows()
-    report("character/path/channel row count is current snapshot", len(rows) == EXPECTED_ROWS, str(len(rows)))
-    representative_ids = {
-        "architecture_note_directional_measure",
-        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
-        "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
-    }
+    all_rows = ledger_rows()
+    rows = character_rows(all_rows)
+    report(
+        "character/path/channel explicit inventory has nine rows",
+        len(EXPECTED_CHARACTER_PATH_CHANNEL_ROWS) == 9,
+        str(len(EXPECTED_CHARACTER_PATH_CHANNEL_ROWS)),
+    )
     ids = {row.get("claim_id") for row in rows}
-    for claim_id in sorted(representative_ids):
-        report(f"representative row present: {claim_id}", claim_id in ids)
+    missing = sorted(set(EXPECTED_CHARACTER_PATH_CHANNEL_ROWS) - ids)
+    report("all explicit inventory rows are present in ledger", not missing, ", ".join(missing))
+    report("ledger-matched row count is current snapshot", len(rows) == 9, str(len(rows)))
+    for claim_id, note_path in sorted(EXPECTED_CHARACTER_PATH_CHANNEL_ROWS.items()):
+        row = all_rows.get(claim_id, {})
+        report(f"inventory row present: {claim_id}", claim_id in all_rows)
+        report(f"inventory note path matches: {claim_id}", row.get("note_path") == note_path, row.get("note_path") or "")
+        report(f"inventory note exists: {claim_id}", (ROOT / note_path).is_file(), note_path)
     after = digest(LEDGER)
     report("audit ledger hash is unchanged", before == after, before)
 

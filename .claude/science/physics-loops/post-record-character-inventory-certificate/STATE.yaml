@@ -1,0 +1,24 @@
+loop: post-record-character-inventory-certificate
+date: 2026-06-07
+branch: physics-loop/post-record-character-inventory-certificate-20260607
+base: origin/main@7b90b068c
+target_claim_id: post_record_character_path_channel_weight_prototype_2026-06-06
+target_note: docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md
+target_runner: scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
+target_blocker: "runner_artifact_issue: include scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py as a helper source or supply an independent row-inventory certificate for the 9-row coverage claim."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md
+  - scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-character-inventory-certificate/
+verification:
+  - "python3 scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py"
+  - "python3 -m py_compile scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py"
+  - "git diff --check"
+next_exact_action: "Independent reviewer/auditor should re-audit the row against the self-contained inventory certificate."
+stop_condition: "PR opened for review."

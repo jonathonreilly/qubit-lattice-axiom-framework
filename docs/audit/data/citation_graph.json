@@ -7185,6 +7185,22 @@
       "to": "dimension_selection_note"
     },
     {
+      "from": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+      "to": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30"
+    },
+    {
+      "from": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+      "to": "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+    },
+    {
+      "from": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+      "to": "emergent_lorentz_invariance_note"
+    },
+    {
       "from": "dirac_observable_panel_note",
       "to": "dirac_core_card_note"
     },
@@ -54725,6 +54741,23 @@
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py",
       "title": "Dirac Field Smoothing Note \u2014 Finite m\u2080 = 0.10 Runner Output (Binding)"
     },
+    "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07": {
+      "claim_id": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+        "minimal_axioms",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "emergent_lorentz_invariance_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "484a57ed8b9c1ae6e9e1e444e17721109aa501bbcc4e50021f4916dd28b334e6",
+      "path": "docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md",
+      "runner_path": "scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py",
+      "title": "Dirac/Lorentz Diagnostic Boundaries from Rejected Repairs"
+    },
     "dirac_observable_panel_note": {
       "claim_id": "dirac_observable_panel_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -100400,7 +100433,7 @@
       "meta": 271,
       "no_go": 136,
       "none": 1485,
-      "open_gate": 75,
+      "open_gate": 76,
       "positive_theorem": 197
     },
     "claim_type_seed_hint_counts": {
@@ -100409,13 +100442,13 @@
       "meta": 271,
       "no_go": 249,
       "none": 462,
-      "open_gate": 150,
+      "open_gate": 151,
       "positive_theorem": 626
     },
-    "edge_count": 11368,
+    "edge_count": 11372,
     "leaf_count": 1008,
-    "node_count": 3068,
+    "node_count": 3069,
     "root_count": 1013,
-    "runners_with_path": 2655
+    "runners_with_path": 2656
   }
 }

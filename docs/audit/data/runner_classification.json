@@ -5100,6 +5100,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py"
     },
+    "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py"
+    },
     "dirac_observable_panel_note": {
       "assert_count": 0,
       "counts": {
@@ -43630,6 +43642,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py": {
+      "assert_count": 0,
+      "claims": [
+        "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/frontier_dirac_walk_3plus1d_core_card.py": {
       "assert_count": 2,
       "claims": [
@@ -70313,9 +70340,9 @@
       "B": 429,
       "C": 953,
       "D": 353,
-      "none": 451
+      "none": 452
     },
-    "runners_classified": 2546,
+    "runners_classified": 2547,
     "runners_with_C": 1277,
     "runners_with_D": 740
   }

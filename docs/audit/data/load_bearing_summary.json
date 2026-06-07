@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 506,
     "high": 445,
-    "leaf": 1326,
+    "leaf": 1327,
     "medium": 791
   },
   "flagship_signal_used": false,
-  "node_count": 3068,
+  "node_count": 3069,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,8 +19,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 86.879,
-      "transitive_descendants": 1331
+      "load_bearing_score": 87.38,
+      "transitive_descendants": 1332
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
@@ -121,8 +121,8 @@
     {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
-      "load_bearing_score": 34.09,
-      "transitive_descendants": 1089
+      "load_bearing_score": 34.091,
+      "transitive_descendants": 1090
     },
     {
       "claim_id": "minimal_axioms_2026-04-11",

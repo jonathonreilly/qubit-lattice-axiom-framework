@@ -624,6 +624,49 @@
       "state": "resolved_or_superseded"
     },
     {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the parent L\u00fcders sequential-composition row close for the ideal unrefined sharp-projective scope under the ratified LSP-projective rule, or does another blocker remain?",
+      "blocked_by_group_ids": [],
+      "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
+      "deps": [
+        "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+        "minimal_axioms"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_conditional",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "audited_conditional",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "LSP-projective re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 1,
+      "group_id": "lsp_projective_direct_luders",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
+      "runner_path": "scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
+      "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
       "actual_audit_status": "audited_clean",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "retained_bounded",
@@ -1095,6 +1138,46 @@
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/ACTION_NORMALIZATION_NOTE.md",
       "runner_path": "scripts/frontier_action_normalization.py",
+      "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "open_gate",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Fresh-context provenance re-audit: the current clean verdict has independence=weak. Re-audit the bounded claim under current independence and reasoning-effort requirements.",
+      "blocked_by_group_ids": [],
+      "claim_id": "packet_memory_note",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this audit-provenance review as evidence",
+        "PR-submitted audit verdicts",
+        "PR #441 review text or PR discussion as evidence",
+        "legacy weak-independence audit rationales as evidence",
+        "prior assistant discussion",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 3,
+      "group_id": "legacy_weak_independence_clean_rows",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/PACKET_MEMORY_NOTE.md",
+      "runner_path": "scripts/packet_memory.py",
       "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"
@@ -1624,59 +1707,6 @@
   ],
   "resolved_targets": [
     {
-      "actual_audit_status": "audited_conditional",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the parent L\u00fcders sequential-composition row close for the ideal unrefined sharp-projective scope under the ratified LSP-projective rule, or does another blocker remain?",
-      "blocked_by_group_ids": [],
-      "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
-      "deps": [
-        "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_conditional",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "audited_conditional",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "LSP-projective re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 1,
-      "group_id": "lsp_projective_direct_luders",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
-      "resolution_evidence": {
-        "audit_date": "2026-06-06T23:21:23.654110+00:00",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-cli-gpt-5.5-20260606-232102-dbe97f737e-luders_rule_from_composition",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "bounded_theorem",
-        "independence": "cross_family"
-      },
-      "resolution_manifest_date": "2026-05-22",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
-      "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
       "actual_audit_status": "audited_clean",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "retained_bounded",
@@ -1872,56 +1902,6 @@
       "resolution_manifest_date": "2026-05-23",
       "resolution_reason": "bounded_terminal_after_reaudit",
       "runner_path": "scripts/frontier_chiral_3plus1d_coupled_coin_scan.py",
-      "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Fresh-context provenance re-audit: the current clean verdict has independence=weak. Re-audit the bounded claim under current independence and reasoning-effort requirements.",
-      "blocked_by_group_ids": [],
-      "claim_id": "packet_memory_note",
-      "deps": [],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this audit-provenance review as evidence",
-        "PR-submitted audit verdicts",
-        "PR #441 review text or PR discussion as evidence",
-        "legacy weak-independence audit rationales as evidence",
-        "prior assistant discussion",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 3,
-      "group_id": "legacy_weak_independence_clean_rows",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/PACKET_MEMORY_NOTE.md",
-      "resolution_evidence": {
-        "audit_date": "2026-05-26T16:06:08.359261+00:00",
-        "audit_status": "audited_clean",
-        "auditor": "codex-gpt-5.5-packet-memory-fresh-2026-05-26",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "bounded_theorem",
-        "independence": "fresh_context"
-      },
-      "resolution_manifest_date": "2026-05-23",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/packet_memory.py",
       "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved"

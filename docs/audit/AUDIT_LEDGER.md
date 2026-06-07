@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1286 |
+| unaudited | 1285 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1138 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1593 |
+| `unaudited` | 1592 |
 
 | claim_type | count |
 |---|---:|
@@ -1320,6 +1320,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13780,6 +13781,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The packet supports the narrow meta claim that the runner defines and applies deterministic bucket rules, checks ledger immutability, and reports the stated current counts. The support is not a physics derivation; the bucket taxonomy and regex rules are definitions for triage.
 - **rationale:** The load-bearing step is a methodological classification scheme: it introduces bucket labels and applies deterministic regex-style rules to ledger rows. The runner does perform a read-only scan and hash check, but the contested scientific content is not derived from first principles; expected ledger and bucket counts are hard-coded as snapshot checks. Because the claim reduces to definition/application of a triage taxonomy rather than class C computation or independent algebraic closure, the appropriate verdict is audited_renaming.
 - **auditor confidence:** high
+
+### `post_record_character_path_channel_weight_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite supplied path, channel-row, path-product, and character-coefficient normalization semantics; no Record-derived weight rule, physical selector, Born law, or production dynamics is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-004831-3ca606c9b9-post_record_character_path_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given a supplied finite carrier with nonnegative local weights of positive total, exact normalization and supplied edge-product composition yield a normalized finite path/channel/character weight packet.  _(class `A`)_
+- **chain closes:** False — The finite supplied-normalization algebra closes independently. The full packet does not close because the claimed coverage of all 9 character_path_channel_weight rows depends on a dynamically imported measure-subdivision runner whose source is not included in the restricted packet.
+- **rationale:** Independent math audit confirms the displayed finite identities: 4:1 normalizes to 4/5 and 1/5, the channel rows sum to one, the path product 2*3 gives 6 and then 6/7 versus 1/7 after normalization, and 6:3:1 gives 3/5, 3/10, and 1/10. The runner uses exact Fraction arithmetic for those supplied-weight checks, and the source correctly withholds physical-measure, selector, Born-law, and Record-derived-rule claims. However, the result also asserts coverage of all 9 character_path_channel_weight rows, and that row inventory is verified through scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py, which is dynamically loaded but not provided as helper source.
+- **auditor confidence:** medium
 
 ### `post_record_clock_rate_interface_2026-06-06`
 

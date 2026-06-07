@@ -1,0 +1,24 @@
+loop_slug: signed-gravity-exact-source-boundary-20260607
+date: 2026-06-07
+base: origin/main
+base_sha: fbf4dfbedf8c7add83c179756584d9fc983f4488
+branch: physics-loop/signed-gravity-exact-source-boundary-20260607
+target_claim_id: signed_gravity_aps_locked_source_action_proposal_note
+actual_current_surface_status: open
+target_status: exact-source-boundary
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: exact-source boundary manifest for signed-gravity APS source action
+files_touched:
+  - docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md
+  - scripts/signed_gravity_aps_locked_source_action_proposal.py
+  - logs/runner-cache/signed_gravity_aps_locked_source_action_proposal.txt
+open_imports:
+  - canonical orientation-section/source principle
+  - protected eta sector from retained dynamics
+  - derivation of S_int = -chi_eta M_phys <rho,Phi>
+  - full tensor/Einstein lift and energy stability
+runner_result: "SUMMARY: PASS=16 FAIL=0"
+audit_files_touched: false
+next_exact_action: "Independent reviewer/auditor can re-audit the exact source row as sharpened open gate; retained promotion needs the canonical section/source theorem."
+stop_condition: "Current retained surface hosts orientation data but does not canonically select the active signed source action."

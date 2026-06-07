@@ -1,0 +1,48 @@
+==============================================================================================
+Record cannot protect the Lorentz marginal coupling -- a category argument
+==============================================================================================
+
+----------------------------------------------------------------------------------------------
+Part A: record FORMATION is blind to the kinetic coupling c_s (U depends only on c_s*t)
+----------------------------------------------------------------------------------------------
+  [PASS] (A1) U(c_s=0.5, t=pi) == U(c_s=2, t=pi/4): evolution depends only on the product c_s*t  --  ||U_a - U_b|| = 0.0e+00  -> c_s only sets the timescale
+  [PASS] (A2) => the formed record is IDENTICAL for the two c_s (same final state) -> record does NOT pin c_s  --  matches RECORD_FORMATION: any g>0 forms the record at t=pi/4g; the coupling is not pinned
+
+----------------------------------------------------------------------------------------------
+Part B: two SPECIES with different c_s both form good objective records
+----------------------------------------------------------------------------------------------
+  [PASS] (B1) species with c_s=0.7 and c_s=1.9 BOTH reach the same objective record quality per fragment  --  per-fragment readout |corr| = [1.0, 1.0, 1.0] (identical) -> objectivity does NOT forbid c_s differences
+
+----------------------------------------------------------------------------------------------
+Part C: EINSELECTION is blind to c_s (the recorded observable is fixed by [H_int,Pi]=0)
+----------------------------------------------------------------------------------------------
+  [PASS] (C1) [K, Pi] = 0 -> the pointer-non-demolition condition holds independent of the coupling c_s  --  einselection picks the pointer BASIS, not the kinetic coefficient
+  [PASS] (C2) the pointer basis is unchanged as c_s varies (einselection is c_s-independent)  --  the record reads the pointer (a discrete outcome), not the velocity
+
+----------------------------------------------------------------------------------------------
+Part D: the ADDITIVE readout over disjoint records holds for ANY c_s
+----------------------------------------------------------------------------------------------
+  [PASS] (D1) additive readout I(R1 cup R2) = I(R1)+I(R2) holds for every c_s (additivity does not pin c_s)  --  additivity constrains disjoint supports, not the metric speed of spreading
+
+----------------------------------------------------------------------------------------------
+Part E: typicality firewall (Cauchy-classifier) -- additivity gives no typicality functional
+----------------------------------------------------------------------------------------------
+  [PASS] (E1) two joint laws share the SAME single-record marginal (same additive readout input)  --  marginals equal [0.5, 0.5]
+  [PASS] (E2) ... but DIFFERENT variance/typicality of the additive sum -> additivity fixes no sequence law  --  same mean 1.00; var(IID)=0.50 vs var(corr)=1.00 -> no typicality functional -> cannot prefer c_s=c_t
+
+----------------------------------------------------------------------------------------------
+Part F: residual identity -- a c_s mean-shift stays in the gauge-invariant-local class
+----------------------------------------------------------------------------------------------
+  [PASS] (F1) a c_s mean-shift delta_c keeps the term gauge-covariant + Hermitian + local (a valid class member)  --  delta_c is an UN-FORCED coupling -- the same residual as beta/g_bare (DYNAMICS_FORM item 5)
+  [PASS] (F2) => Lorentz-naturalness residual = the action-form no-go residual (couplings not forced), one gap at two dims  --  Record forces the FORM; it cannot fix THIS coupling, exactly as it cannot fix beta/g_bare
+
+----------------------------------------------------------------------------------------------
+Verdict
+----------------------------------------------------------------------------------------------
+  [PASS] (V1) CATEGORY mismatch: Collins shifts the MEAN of a marginal coupling; Record acts on basis/support/fluctuations  --  a fluctuation-suppressor cannot cancel a mean-shift; Record never touches a marginal coefficient in H
+  [PASS] (V2) Record DOES contribute (upstream): continuous-time c_t-fixing, gauge-invariant-local FORM, CPT-odd protection  --  but the residual is CPT-EVEN and lives in the un-forced dynamics -> outside Record's scope
+  [PASS] (V3) only closures: a hidden Z^3+continuous-time+Cl(3,0) symmetry (open) or an admitted custodial/c_t=c_s axiom (strictly new)  --  route (b) [recordize the metric / typicality] does NOT close, and does not reach, Collins
+
+==============================================================================================
+TOTAL: 13 PASS / 0 FAIL
+==============================================================================================

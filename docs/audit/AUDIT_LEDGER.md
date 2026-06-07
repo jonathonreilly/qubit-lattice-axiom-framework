@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 714 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1372 |
+| unaudited | 1371 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 5 |
+| ~~audited_conditional~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1125 |
-| `audited_conditional` | 5 |
+| `audited_conditional` | 6 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1681 |
+| `unaudited` | 1680 |
 
 | claim_type | count |
 |---|---:|
@@ -1259,6 +1259,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -7039,6 +7040,25 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The two analytic strictly increasing witnesses share beta_eff(beta)=beta+beta^5/26244+O(beta^6) but differ at beta=6, hence give different P_1plaq values.  _(class `A`)_
 - **chain closes:** True — The explicit witness pair satisfies the scoped hypotheses and has exact delta beta_eff(6)=0.0046656 with positive delta P, so the stated inputs cannot force a unique framework-point value.
 - **rationale:** Clean as a scoped no-go obstruction, not as analytic closure of canonical P(6). The runner confirms 5 theorem checks and 2 support checks with no failures; the load-bearing step is algebraic counterexample construction rather than support-class propagation. The safe conclusion is that the current onset jet plus analyticity/monotonicity does not force beta_eff(6) or analytic P(6).
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the claimed exact identification of the full-slice marked-plaquette boundary input as the local Wilson/Haar rim integral B_beta(W), with eta_beta(W)=P_cls B_beta(W), not any explicit beta=6 evaluation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-160353-e9016a3e73-gauge_vacuum_plaquette_full_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because Xi^rim and the bulk-environment links are disjoint sets of Haar variables, the Wilson density factorises over the rim and the bulk, so psi_beta(W)(U) factors as the rim integral B_beta(W)(U) times a far/environment factor.  _(class `A`)_
+- **chain closes:** False — The product-Haar Fubini identity closes only after a rim/far support separation is supplied. The restricted packet does not prove that separation for the intended physical Wilson slab, nor the temporal-gauge marked/non-marked mixed-kernel compression bridge or full untruncated Wilson-environment transfer.
+- **rationale:** The load-bearing formula is a valid algebraic Fubini/product-measure step under the stated support-separation hypothesis, and the SU(3) companion supports that bounded lemma once such a partition is supplied. But the primary runner is only an SU(2) toy plus text checks, and the one-hop authorities explicitly leave the actual Wilson environment transfer, physical rim/far support partition, and mixed-kernel compression bridge open. Therefore the note does not close the advertised full positive theorem from the restricted inputs.
+- **open / conditional deps cited:**
+  - `GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md`
+  - `GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md`
+  - `GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md`
+  - `GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md`
+  - `GAUGE_VACUUM_PLAQUETTE_SU3_FULL_SLICE_PRODUCT_FUBINI_FACTORIZATION_NOTE_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10`

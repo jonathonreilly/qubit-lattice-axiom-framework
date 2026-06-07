@@ -1,7 +1,7 @@
 # Post-Record Audit Evidence Ladder Row Bucketing
 
 **Date:** 2026-06-06
-**Type:** exact support / read-only audit companion
+**Type:** meta
 **Claim type:** meta
 **Status:** exact-support source-side for read-only bounded/conditional row
 bucketing; audit_required_before_effective_retained=true;

@@ -81800,12 +81800,12 @@
     },
     "post_record_audit_evidence_ladder_row_bucketing_2026-06-06": {
       "claim_id": "post_record_audit_evidence_ladder_row_bucketing_2026-06-06",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "exact support / read-only audit companion",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0799394e2ef7a3980b48c6cc18f1a9d0d081669b8905f4656238b3eb8b7d0b21",
+      "note_hash": "c36b78895ef9c9a852f3b8bef511c9b2c49afb45ca68a918ffee72d03947b281",
       "path": "docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py",
       "title": "Post-Record Audit Evidence Ladder Row Bucketing"
@@ -100397,16 +100397,16 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 903,
       "decoration": 1,
-      "meta": 271,
+      "meta": 272,
       "no_go": 136,
-      "none": 1485,
+      "none": 1484,
       "open_gate": 75,
       "positive_theorem": 197
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1309,
+      "bounded_theorem": 1308,
       "decoration": 1,
-      "meta": 271,
+      "meta": 272,
       "no_go": 249,
       "none": 462,
       "open_gate": 150,

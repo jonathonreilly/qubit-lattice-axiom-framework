@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/delta_sign_from_retained_mediator_runner.py
+runner_sha256: 5826e6f4b96ee07805e1c4b209ea31c0b838cee6a98dfe87b2dec93f2b2fc150
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.35
+status: ok
+----- stdout -----
 ==============================================================================
 delta SIGN from the RETAINED two-body mediator (attractive => delta<0)  [class A]
 ==============================================================================
@@ -35,3 +43,6 @@ delta SIGN from the RETAINED two-body mediator (attractive => delta<0)  [class A
 ==============================================================================
 TOTAL: PASS=20 FAIL=0
 VERDICT: the retained two-body mediator channel gives negative mutual energy delta < 0 on the open-cubic force surface and on the stacked periodic hw=1 plane-wave kernel. The exact second-order C3 coupling satisfies K_C3 = t^2 delta/[eps_gap(eps_gap+delta)], so K_C3 < 0 follows on the explicit nonresonant branch eps_gap>0, eps_gap+delta>0. The physical magnitude/gap branch remains open; no flavor value is forced.
+
+----- stderr -----
+

@@ -23,14 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 728 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1271 |
+| unaudited | 1270 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 66 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
-| `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
+| `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -63,16 +63,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1143 |
 | `audited_conditional` | 66 |
-| `audited_decoration` | 52 |
+| `audited_decoration` | 53 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1580 |
+| `unaudited` | 1579 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1349 |
-| `decoration` | 53 |
+| `bounded_theorem` | 1348 |
+| `decoration` | 54 |
 | `meta` | 322 |
 | `no_go` | 318 |
 | `open_gate` | 136 |
@@ -1379,6 +1379,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
+| `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10` |
@@ -15010,6 +15011,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For self-adjoint H in A_Lambda, D_H = e^{-H}/tau_Lambda(e^{-H}) is positive with tau_Lambda(D_H)=1, and omega_H(O)=tau_Lambda(D_H O) is the trace-relative Radon-Nikodym density representation.  _(class `A`)_
 - **chain closes:** True — Once the accepted qubit-lattice finite matrix algebra and normalized trace are in scope, the result follows from finite-dimensional spectral calculus, faithfulness of the trace, and trace cyclicity. The rho_ref and Wilson/RP clauses are explicitly conditional downstream applications and are not consumed by the audited theorem.
 - **rationale:** The displayed quantitative identities reduce to finite matrix algebra: e^{-H} is strictly positive for self-adjoint H, Z_H=tau_Lambda(e^{-H}) is positive, tau_Lambda(D_H)=1, and Tr(e^{-H}O)=Tr(e^{-H/2} O e^{-H/2}) >= 0 for O>=0. The cited minimal-axiom authority is flagged as an accepted axiom premise, so it does not trigger a dependency downgrade. The runner source performs consistent finite matrix sanity checks and contains no hidden rho_ref, Wilson/RP, external comparator, or tuned numerical import.
+- **auditor confidence:** high
+
+### `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02`
+
+- **Note:** [`RP_TWO_STEP_TRANSFER_MATRIX_SINGULAR_MODE_C2_TIGHTENING_NOTE_2026-06-02.md`](../../docs/RP_TWO_STEP_TRANSFER_MATRIX_SINGULAR_MODE_C2_TIGHTENING_NOTE_2026-06-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Conditional on the parent singular-mode half-step matrix convention, for m > 0 the 2x2 singular-mode one-step matrix is indefinite and its two-step square has non-negative spectrum.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-012723-e1128b5edc-rp_two_step_transfer_matrix_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The characteristic polynomial of T_even(m) is lambda^2 + 2m lambda - 1, with roots -m +/- sqrt(m^2+1), so T_even has one negative eigenvalue while T_even(m)^2 has squared, non-negative eigenvalues.  _(class `A`)_
+- **chain closes:** True — The cited parent, marked retained_bounded, supplies the singular-mode matrix convention. From that input, the determinant, eigenvalue signs, and squared-spectrum conclusion follow by standard 2x2 real-symmetric matrix algebra.
+- **rationale:** The packet closes only as an algebraic tightening over a single retained_bounded parent convention plus standard mathematics. The runner performs finite 2x2 algebra checks at sampled positive masses and does not import external comparators or introduce a new first-principles construction. The source note's own scope excludes the Grassmann/Berezin bridge, gauge extensions, and any lift of the parent status. Under the tie-break rule, this is decoration rather than an independent clean bounded theorem.
+- **decoration parent:** `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
 - **auditor confidence:** high
 
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`

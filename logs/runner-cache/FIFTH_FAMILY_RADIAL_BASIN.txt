@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/FIFTH_FAMILY_RADIAL_BASIN.py
-runner_sha256: 799d94b9efee36d506841184403adb9e1d75f2af7e11321d28c88ba30da3b038
+runner_sha256: afedbf40ebc476bf12db06dae5f16d0e2cd57946e99ceb8c53751f3a0f438ca8
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 89.33
+elapsed_sec: 89.89
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -32,6 +32,65 @@ SAFE READ
   mean exponent among passes: 0.999495
   this radial-shell family is a real bounded basin, but not family-wide
   [PASS (C)] finite basin assertion surface
+[PASS] packet path exists: scripts/FIFTH_FAMILY_RADIAL_BASIN.py
+[PASS] note links packet path: scripts/FIFTH_FAMILY_RADIAL_BASIN.py
+[PASS] packet path exists: logs/runner-cache/FIFTH_FAMILY_RADIAL_BASIN.txt
+[PASS] note links packet path: logs/runner-cache/FIFTH_FAMILY_RADIAL_BASIN.txt
+[PASS] packet path exists: scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py
+[PASS] note links packet path: scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py
+[PASS] packet path exists: logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt
+[PASS] note links packet path: logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt
+[PASS] packet path exists: scripts/FIFTH_FAMILY_RADIAL_SWEEP.py
+[PASS] note links packet path: scripts/FIFTH_FAMILY_RADIAL_SWEEP.py
+[PASS] packet path exists: logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt
+[PASS] note links packet path: logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt
+[PASS] packet path exists: scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py
+[PASS] note links packet path: scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py
+[PASS] packet path exists: logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt
+[PASS] note links packet path: logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt
+[PASS] packet path exists: scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py
+[PASS] note links packet path: scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py
+[PASS] packet path exists: scripts/gate_b_no_restore_farfield.py
+[PASS] note links packet path: scripts/gate_b_no_restore_farfield.py
+[PASS] companion source appears untruncated: scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py: 2729 bytes
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py: TARGETS = [(0.05, 0), (0.30, 1)]
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py: def _fm(drift: float, seed: int) -> float:
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py: for strength in (5e-5, 1e-4):
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py: math.log(d2 / d1) / math.log(2.0)
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py: mean F~M among passes
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py: ASSERTIONS:
+[PASS] companion source appears untruncated: scripts/FIFTH_FAMILY_RADIAL_SWEEP.py: 3127 bytes
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_SWEEP.py: TARGETS = [(0.05, 0), (0.20, 0), (0.30, 1)]
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_SWEEP.py: pass_keys == {(0.05, 0), (0.30, 1)}
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_SWEEP.py: boundary[3] < 0.0
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_SWEEP.py: boundary[4] > 0.0
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_SWEEP.py: ASSERTIONS:
+[PASS] companion source appears untruncated: scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py: 2153 bytes
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py: TARGETS = [(0.20, 0), (0.05, 0), (0.30, 1)]
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py: if not out.ok:
+[PASS] source marker present in scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py: the miss is a sign-orientation boundary
+[PASS] cache runner matches source: logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt: scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py
+[PASS] cache SHA fresh: logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt: 0d985aaae5709fc8163991fd7a542f329fcbbe309211d51dfe27337f0d76af71 == 0d985aaae5709fc8163991fd7a542f329fcbbe309211d51dfe27337f0d76af71
+[PASS] cache exits cleanly: logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt: exit_code=0 status=ok
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt: FIFTH FAMILY RADIAL F~M TRANSFER
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt: passed rows: 2/2
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt: mean F~M among passes: 0.999439
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt: ASSERTIONS: PASS
+[PASS] cache runner matches source: logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt: scripts/FIFTH_FAMILY_RADIAL_SWEEP.py
+[PASS] cache SHA fresh: logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt: 6a0612d0b4142b1a7a46eaf79ed112751538cdce10b2286b294c1c6b283bafec == 6a0612d0b4142b1a7a46eaf79ed112751538cdce10b2286b294c1c6b283bafec
+[PASS] cache exits cleanly: logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt: exit_code=0 status=ok
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt: FIFTH FAMILY RADIAL SWEEP
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt: passed rows: 2/3
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt: drift coverage: [0.05, 0.3]
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt: ASSERTIONS: PASS
+[PASS] cache runner matches source: logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt: scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py
+[PASS] cache SHA fresh: logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt: 8dc375aedf41720481a57b2e6e81a23cd630c7445fb26a622ff8623ce0a5f0c5 == 8dc375aedf41720481a57b2e6e81a23cd630c7445fb26a622ff8623ce0a5f0c5
+[PASS] cache exits cleanly: logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt: exit_code=0 status=ok
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt: FIFTH FAMILY RADIAL FAILURE AUDIT
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt: failing rows: 1
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt: drift=0.20 seed=0 plus=-2.028e-06 minus=+2.028e-06 exp=1.000
+[PASS] cache contains expected marker: logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt: the miss is a sign-orientation boundary, not a control leak
+INLINE COMPANION PACKET: PASS=58 FAIL=0
 ASSERTIONS: PASS
 
 ----- stderr -----

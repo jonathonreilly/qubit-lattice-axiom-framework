@@ -10,6 +10,13 @@ records `status: ok` under the runner-declared audit timeout.
 [`scripts/FIFTH_FAMILY_RADIAL_SWEEP.py`](../scripts/FIFTH_FAMILY_RADIAL_SWEEP.py),
 [`scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py`](../scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py),
 [`scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py`](../scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py).
+**Companion runner caches:**
+[`logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt`](../logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt),
+[`logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt`](../logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt),
+[`logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt`](../logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt).
+**Helper sources:**
+[`scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py`](../scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py),
+[`scripts/gate_b_no_restore_farfield.py`](../scripts/gate_b_no_restore_farfield.py).
 
 ## Purpose
 
@@ -105,6 +112,41 @@ failing rows: 1
 drift=0.20 seed=0 plus=-2.028e-06 minus=+2.028e-06 exp=1.000
 ASSERTIONS: PASS
 ```
+
+## 2026-06-06 Primary-Runner Companion Packet Inlining Repair
+
+The 2026-06-07 audit accepted the primary ten-row basin computation but left
+the row conditional because the restricted packet did not include enough
+verification for the load-bearing F~M transfer companion. The primary basin
+runner now checks the companion packet inline. After recomputing the ten-row
+basin surface, it verifies:
+
+- the primary runner/cache, F~M transfer runner/cache, sweep runner/cache,
+  failure-audit runner/cache, restored radial helper, and no-restore growth
+  helper are linked from this note;
+- the F~M transfer source is untruncated and contains the two sampled target
+  rows, weak-field two-strength computation, logarithmic scaling exponent, and
+  `ASSERTIONS: PASS` gate;
+- the sweep and failure-audit companion sources are untruncated and contain
+  the positive-row and sign-orientation-boundary assertions;
+- the F~M, sweep, and failure-audit companion caches are SHA-fresh and
+  clean-exit;
+- the F~M cache reports `passed rows: 2/2` and
+  `mean F~M among passes: 0.999439`;
+- the sweep cache reports `passed rows: 2/3` with drift coverage
+  `[0.05, 0.3]`;
+- the failure-audit cache reports exactly one boundary row,
+  `drift=0.20 seed=0`.
+
+The primary runner reports:
+
+```text
+INLINE COMPANION PACKET: PASS=58 FAIL=0
+```
+
+This remains a packet-completeness repair for the finite bounded radial-shell
+claim. It does not claim family-wide survival, continuum/asymptotic closure, a
+physical mass-observable derivation, or audit-effective status.
 
 ## Claim Boundary
 

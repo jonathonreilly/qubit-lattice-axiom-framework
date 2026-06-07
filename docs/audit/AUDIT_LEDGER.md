@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 202 |
+| **retained** | 203 |
 | **retained_no_go** | 215 |
 | **retained_bounded** | 728 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1270 |
+| unaudited | 1269 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1143 |
+| `audited_clean` | 1144 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1579 |
+| `unaudited` | 1578 |
 
 | claim_type | count |
 |---|---:|
@@ -1025,6 +1025,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `self_gravity_scaling_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `seventh_family_diagonal_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `shapiro_static_discriminator_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `sign_portability_invariant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
@@ -15510,6 +15511,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** "The frozen cone-shape proxy reproduces the full c-dependent causal phase curve to numerical precision on all three families."  _(class `A`)_
 - **chain closes:** True — The runner source defines _causal_field and _static_cone_field with the same support and strength formula for the same c, and then propagates those fields through the same baseline comparison. Equality of the causal and static-cone phase curves follows from the code-level identity, so the no-go witness does not depend on the timed-out stdout.
 - **rationale:** The scoped no-go closes because the supplied runner contains an explicit static-cone construction that is identical to the purported causal cone field for matching c, defeating uniqueness of the detector-line phase lag within this model. No cited upstream authority is needed for that equality. The timeout prevents validating the displayed numeric table and the static-scheduling near-flat values, but it is not needed for the static-cone mimic boundary that carries the no-go.
+- **auditor confidence:** high
+
+### `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite positive probability space Fisher tangent identities, normalized exponential chart for zero-mean scores, and the uniform two-outcome signed-record unit calculation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-012854-9bd9e58d6c-sharp_record_fisher_tangent_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From normalization E_0[R_h]=1 and R'_0(i)=dp_i/p_i, the score has zero mean and Fisher quadratic form E_0[s^2]=sum_i dp_i^2/p_i.  _(class `A`)_
+- **chain closes:** True — The displayed identities follow by differentiation of probability normalization, Radon-Nikodym coordinate substitution, and direct finite sums. The exponential chart normalizes by construction via W(h)=log E_0 exp(hO), and the two-outcome record calculation is immediate under the uniform reference.
+- **rationale:** The claim is a finite-probability algebraic theorem with no external or open cited dependencies. Independent inspection of the displayed formulas confirms the zero-mean condition, coordinate Fisher norm, exponential normalization, origin score, and two-outcome epsilon normalization. The runner source performs symbolic finite-sum checks rather than merely printing expected constants, and it introduces no fitted values, external comparators, or contested cross-note inputs.
 - **auditor confidence:** high
 
 ### `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09`

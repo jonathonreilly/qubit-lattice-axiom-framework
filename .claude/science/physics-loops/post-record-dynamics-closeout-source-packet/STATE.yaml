@@ -1,0 +1,25 @@
+loop_slug: post-record-dynamics-closeout-source-packet
+branch: physics-loop/post-record-dynamics-closeout-source-packet-20260607
+base: origin/main@a26b0f21e
+date: 2026-06-07
+mode: science_fix
+target_status: exact-support
+target_claim_id: post_record_dynamics_family_lift_closeout_index_2026-06-06
+active_route: source_packet_and_surface_firewall
+hard_residual: "missing_dependency_edge: provide the upstream source notes or retained audit rows for the ten indexed stack layers, and replace hard-coded firewall booleans with checks over the relevant repository/audit surfaces."
+files_touched:
+  - docs/POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md
+  - scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.txt
+  - outputs/post_record_dynamics_family_lift_closeout_index_2026_06_06_source_packet.json
+  - .claude/science/physics-loops/post-record-dynamics-closeout-source-packet/
+open_imports:
+  - independent_audit_required
+  - source_notes_are_packet_authorities_not_audit_verdicts
+no_go_routes:
+  - "Do not claim the supplied family-lift certificate layer is exact-support; its source note is bounded-support."
+trace_gate_classification: direct_blocker_closure
+review_disposition: local_self_review_pass
+pr_status: pending_create
+next_exact_action: "Commit, push, open PR, then stop if refreshed queue has no non-duplicative exact-support packet repair left."
+stop_condition: "No remaining uncovered runner-artifact, compute, or source-packet missing-dependency target found."

@@ -1,0 +1,57 @@
+{
+  "beta": 0.8,
+  "certificate": "nonlabel_grown_basin_recompute_certificate_2026_06_07",
+  "claim_id": "nonlabel_grown_basin_note",
+  "drift": 0.2,
+  "exponent_tolerance_for_frozen_log": 0.0005,
+  "field_power": 1,
+  "generated_by": "scripts/NONLABEL_GROWN_BASIN_TARGETED.py --recompute --write-certificate",
+  "h": 0.5,
+  "k": 5.0,
+  "min_edges": 5,
+  "nl": 25,
+  "restore_values": [
+    0.6,
+    0.7,
+    0.8
+  ],
+  "rows": [
+    {
+      "double": -6.78672860181459e-05,
+      "exp": 1.0002185120711171,
+      "minus": 3.391821268519668e-05,
+      "neutral": 0.0,
+      "ok": true,
+      "passes_gates": true,
+      "plus": -3.392850377389317e-05,
+      "restore": 0.6,
+      "zero": 0.0
+    },
+    {
+      "double": -7.070769755103401e-05,
+      "exp": 1.0002231601216096,
+      "minus": 3.533742984683508e-05,
+      "neutral": 0.0,
+      "ok": true,
+      "passes_gates": true,
+      "plus": -3.534838056580558e-05,
+      "restore": 0.7,
+      "zero": 0.0
+    },
+    {
+      "double": -7.241152409303772e-05,
+      "exp": 1.0002283583453457,
+      "minus": 3.6188555469642e-05,
+      "neutral": 0.0,
+      "ok": true,
+      "passes_gates": true,
+      "plus": -3.620003163685645e-05,
+      "restore": 0.8,
+      "zero": 0.0
+    }
+  ],
+  "seed": 0,
+  "source_strength": 5e-05,
+  "source_z": 3.0,
+  "value_tolerance_for_frozen_log": 1e-08
+}

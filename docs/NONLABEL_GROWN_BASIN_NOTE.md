@@ -6,13 +6,44 @@
 ## Artifact chain
 
 - [`scripts/NONLABEL_GROWN_BASIN_TARGETED.py`](../scripts/NONLABEL_GROWN_BASIN_TARGETED.py)
-- [`logs/2026-04-06-nonlabel-grown-basin-targeted.txt`](../logs/runner-cache/NONLABEL_GROWN_BASIN_TARGETED.txt)
+- [`logs/2026-04-06-nonlabel-grown-basin-targeted.txt`](../logs/2026-04-06-nonlabel-grown-basin-targeted.txt)
+- [`outputs/nonlabel_grown_basin_recompute_certificate_2026_06_07.json`](../outputs/nonlabel_grown_basin_recompute_certificate_2026_06_07.json)
+- [`logs/runner-cache/NONLABEL_GROWN_BASIN_TARGETED.txt`](../logs/runner-cache/NONLABEL_GROWN_BASIN_TARGETED.txt)
 
 Runner behavior for audit replay:
 
-- default: verify the frozen log row grid, zero/neutral gates, signed response,
-  charge exponent, and `3/3` safe-read count
-- `--recompute`: run the original live targeted replay
+- default: verify the frozen log row grid, compare each row against the
+  completed 2026-06-07 recompute certificate, re-check zero/neutral gates,
+  signed response, charge exponent, and safe-read counts
+- `--recompute --write-certificate`: run the live targeted replay and write the
+  recompute certificate used by the default verifier
+
+## 2026-06-07 recompute repair
+
+The 2026-06-07 audit marked this row conditional for a runner-artifact issue:
+
+```text
+runner_artifact_issue: include a completed
+scripts/NONLABEL_GROWN_BASIN_TARGETED.py --recompute audit run or an
+independent derivation of the three restore-row values, then re-check the row
+gates and exponent arithmetic.
+```
+
+This repair runs:
+
+```text
+python3 scripts/NONLABEL_GROWN_BASIN_TARGETED.py --recompute --write-certificate
+```
+
+and records the completed live replay in
+`outputs/nonlabel_grown_basin_recompute_certificate_2026_06_07.json`. The
+default audit runner now checks the frozen 2026-04-06 transcript against that
+certificate and independently re-checks the row gates and exponent arithmetic
+from the recomputed values. It exits:
+
+```text
+SCORECARD PASS=6 FAIL=0
+```
 
 ## Question
 
@@ -35,9 +66,9 @@ Seed `0`, geometry-sector candidate:
 
 | restore | zero source | single `+1` | single `-1` | neutral `+1/-1` | double `+2` | charge exponent |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `0.60` | `+0.000000e+00` | `-3.392803e-05` | `+3.391622e-05` | `+0.000000e+00` | `-6.787447e-05` | `1.000000` |
-| `0.70` | `+0.000000e+00` | `-3.534838e-05` | `+3.533743e-05` | `+0.000000e+00` | `-7.070770e-05` | `1.000223` |
-| `0.80` | `+0.000000e+00` | `-3.620420e-05` | `+3.619258e-05` | `+0.000000e+00` | `-7.241011e-05` | `1.000000` |
+| `0.60` | `+0.000000000e+00` | `-3.392850377e-05` | `+3.391821269e-05` | `+0.000000000e+00` | `-6.786728602e-05` | `1.000219` |
+| `0.70` | `+0.000000000e+00` | `-3.534838057e-05` | `+3.533742985e-05` | `+0.000000000e+00` | `-7.070769755e-05` | `1.000223` |
+| `0.80` | `+0.000000000e+00` | `-3.620003164e-05` | `+3.618855547e-05` | `+0.000000000e+00` | `-7.241152409e-05` | `1.000228` |
 
 ## Safe Read
 

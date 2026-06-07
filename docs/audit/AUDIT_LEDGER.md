@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 721 |
+| **retained_bounded** | 722 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1338 |
+| unaudited | 1337 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1137 |
+| `audited_clean` | 1138 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1647 |
+| `unaudited` | 1646 |
 
 | claim_type | count |
 |---|---:|
@@ -191,6 +191,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_entropy_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2338,6 +2339,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Independent recomputation confirmed the displayed P_1plaq(6), d_5*6^5, coefficient ratios, truncated P(6), and the d-log-Pade next-coefficient predictions reported by the runner. The MC value is used only as a comparator, not as a fitted derivation input. However, the load-bearing physical classifications depend on d_6..d_11 being exact, and the restricted packet supplies those values only as embedded constants rather than through a retained coefficient authority. The cited beta6 research map is also meta/open-context rather than a retained-grade theorem dependency.
 - **open / conditional deps cited:**
   - `BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`
+- **auditor confidence:** high
+
+### `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the conditional tree-like K-built radius threshold and the finite compact-deficit counterexample; no all-K-built convergence theorem, beta=6 plaquette value, or full connected-series closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-174334-1579fbd73c-beta6_resummation_radius_gro`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For tree-like K-built clusters, s=k-1 gives F=4k+2 and n=4k+1, so the k-sum has geometric ratio g_tree(|beta|/18)^4 and R_tree(g_tree)=18/g_tree^(1/4), with R_tree>6 exactly when g_tree<81; the compact 2x2x1 block has k=4, s=4, F=16, n=15.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the result follows from the cubical incidence identities F=6k-2s and n=F-1 plus elementary geometric-series convergence. The actual bounds on g_tree, compact face-deficit growth, and the >=3-face sector are explicitly outside the conclusion, not hidden closure steps.
+- **rationale:** The load-bearing math is an algebraic closure over the stated cubical identities and conditional growth parameter: tree adjacency gives the stated exponent, and solving g_tree(6/18)^4<1 gives g_tree<81. The compact obstruction is independently finite: a 2x2x1 four-cube block has one excess shared face, reducing F and n by 2 while preserving boundary link incidence two. The cited authorities are retained-grade in the packet, and the J-zero/cube-coefficient material is contextual rather than necessary for the audited theorem scope. The clean verdict is only for this bounded certificate and does not retire the three open growth inputs.
 - **auditor confidence:** high
 
 ### `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`

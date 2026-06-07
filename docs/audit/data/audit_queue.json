@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 319,
     "high": 257,
-    "leaf": 407,
+    "leaf": 406,
     "medium": 357
   },
   "cycle_break_target_count": 13,
@@ -28701,31 +28701,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -40494,6 +40469,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 47,
-  "total_pending": 1340
+  "ready_count": 46,
+  "total_pending": 1339
 }

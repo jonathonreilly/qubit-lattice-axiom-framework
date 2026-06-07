@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 734 |
+| **retained_bounded** | 735 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1315 |
+| unaudited | 1314 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1153 |
+| `audited_clean` | 1154 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1624 |
+| `unaudited` | 1623 |
 
 | claim_type | count |
 |---|---:|
@@ -857,6 +857,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -12428,6 +12429,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On smooth W with W(0)=0, Add, Loc, and Pot are logically equivalent, while the normalized-gradient selector equals d log Z/dj for every p and therefore cannot fix the exponent.  _(class `A`)_
 - **chain closes:** True — The Add⇔Loc⇔Pot equivalence closes by elementary calculus on a convex domain, and the normalized-gradient identity is an exact algebraic derivative computation. This proves the narrow enumerated-selector no-go, not a universal impossibility for future selectors outside that class.
 - **rationale:** The load-bearing step is class A elementary algebra/calculus, not a fitted comparator, status import, or renaming. The runner source actually computes the determinant factorization, det/tr product defects, exponent freedom, cross derivatives, Add/Loc/Pot coefficient equivalence for its ansatz, and normalized/bare gradient identities; the displayed derivative and ratio formulas check out independently. No-go discipline passes only under the bounded rhetoric already present in the note: the result pins the tested selector families and explicitly leaves genuinely new non-additive selectors open.
+- **auditor confidence:** high
+
+### `observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md`](../../docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebraic packet only: Berezin determinant identity, zero-source staggered determinant positivity on supplied finite surfaces, and determinant/spectrum/trace invariance under finite permutation-unitary relabelings; FS, actual D=M_KS, determinant-to-trace routing, and AC_phi_lambda-as-relabeling are excluded from the direct claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-183045-12109fee4b-observable_principle_p2_det_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The direct bounded claim composes the retained finite Berezin identity Z_F[M]=det(M), retained det(M_KS+mI)>0 positivity on the zero-source staggered surface, and the inline conjugation invariance det(PXP^dagger)=det(X), spec(PXP^dagger)=spec(X), and Tr(exp(-beta P H P^dagger))=Tr(exp(-beta H)).  _(class `A`)_
+- **chain closes:** True — The finite determinant and positivity components are supplied by retained-grade cited authorities, and the relabeling component follows from elementary finite-dimensional similarity invariance. No physical matter-operator identification, FS derivation, determinant-to-trace bridge, or AC_phi_lambda identification is needed for the audited finite boundary.
+- **rationale:** For the retargeted finite determinant/relabeling boundary, the load-bearing math is class A algebra over retained-grade inputs plus an inline one-line similarity-invariance proof. The runner source performs real symbolic/numeric checks rather than printing constants or importing fitted/external comparators. The clean verdict does not extend to the historical physical realization assembly, which the note correctly leaves conditional and outside the direct proof load.
 - **auditor confidence:** high
 
 ### `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02`

@@ -1,0 +1,9 @@
+loop: framework-bare-alpha-boundary-20260607
+status: ready_for_review
+base: origin/main
+branch: physics-loop/framework-bare-alpha-boundary-20260607
+audit_files_edited: false
+claim_status: archived_conditional_algebra
+residual:
+  - retained_authority_for_bare_bookkeeping_inputs
+  - physical_ew_readout_bridge

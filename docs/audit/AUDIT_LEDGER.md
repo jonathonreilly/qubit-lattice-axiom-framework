@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 720 |
+| **retained_bounded** | 721 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1299 |
+| unaudited | 1298 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1133 |
+| `audited_clean` | 1134 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1606 |
+| `unaudited` | 1605 |
 
 | claim_type | count |
 |---|---:|
@@ -422,6 +422,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -5943,6 +5944,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Conditional on the explicit input U_gen=iI3, the central generation scalar and C-eigenbasis phase centralizer leave the C3-circulant Hermitian family fixed, while generic C rephasing and nonzero Hermitian C3-circulant Gamma_chi anticommutants are excluded.  _(class `A`)_
 - **chain closes:** True — Within the stated finite packet, the identities close by direct matrix algebra: iI3 conjugation is trivial, the stated phase centralizer is diagonal in the C-eigenbasis and commutes with H, generic scalar rephasing violates C^3=I, and the anticommutator equations force a=x=y=0. The open physical bridge is explicitly outside the audited scope.
 - **rationale:** The runner source performs actual finite matrix and symbolic checks rather than printing constants, and the displayed claims can be verified independently from the given matrices. No cited upstream authority is imported, and no external comparator or tuned numerical input is used. The conclusion is clean only for the bounded conditional algebraic statement, not for any stronger Dirac/Majorana physical assignment.
+- **auditor confidence:** high
+
+### `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND5_TRACE_VS_CENTER_STATE_FINAL_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND5_TRACE_VS_CENTER_STATE_FINAL_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 3x3 C3 central-state algebra only: admissibility and C3-compatibility of the equal-central-block state, nontraciality relative to I/3, and non-selection of p by this finite algebra.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-001843-33b0343d1c-flavor_find_j_round5_trace_v`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the finite C3 algebra with e0=(I+C+C^2)/3 and e1=I-e0, the densities rho_p=p e0/Tr(e0)+(1-p)e1/Tr(e1) for 0<=p<=1 are positive trace-one C3-invariant states, so p=1/2 is admissible but not selected.  _(class `A`)_
+- **chain closes:** True — Independently, e0=J/3 and e1=I-J/3 are orthogonal central idempotents with traces 1 and 2; rho_p has eigenvalues p on e0 and (1-p)/2 on e1, giving positivity, trace one, C3-invariance, trace masses (1/3,2/3) at p=1/3 and equal masses (1/2,1/2) at p=1/2. The Q(r) formula and physical selector are explicitly separated from the theorem and are not used as derived conclusions.
+- **rationale:** The runner source performs actual finite matrix computations rather than merely printing constants, and its checks match the independent algebraic audit of the displayed projections, traces, block averages, state simplex, and Q(r) arithmetic. The old block-compression error is correctly demoted: e0Ae0+e1Ae1 is not center-valued for general A, while the repaired center-valued average and C3 conjugation average are kept distinct. The clean verdict is bounded to the stated finite-algebra claim; it does not derive a physical Q=2/3 readout, a trace default, a Frobenius beta-family, or dynamics selecting p=1/2.
 - **auditor confidence:** high
 
 ### `flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31`

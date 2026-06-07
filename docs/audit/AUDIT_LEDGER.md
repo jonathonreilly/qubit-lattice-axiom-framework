@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 204 |
+| **retained** | 205 |
 | **retained_no_go** | 214 |
 | **retained_bounded** | 721 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 34 |
-| unaudited | 1343 |
+| unaudited | 1342 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1134 |
+| `audited_clean` | 1135 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1652 |
+| `unaudited` | 1651 |
 
 | claim_type | count |
 |---|---:|
@@ -545,6 +545,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7655,6 +7656,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The audited claim closes as standard finite-group representation algebra over the retained S3 and Z2 anchors, with the C3 and trivial rows following directly from subgroup restrictions. The false S3-locus formula identified inside the cited Z2 authority is a real upstream defect, but it is not load-bearing for this note’s Z2 row or minimal-breaking conclusion. The current claim uses the Z2 authority for the five-parameter generically nondegenerate family, not for that displayed S3-locus identity.
 - **rationale:** Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The audited claim closes as standard finite-group representation algebra over the retained S3 and Z2 anchors, with the C3 and trivial rows following directly from subgroup restrictions. The false S3-locus formula identified inside the cited Z2 authority is a real upstream defect, but it is not load-bearing for this note’s Z2 row or minimal-breaking conclusion. The current claim uses the Z2 authority for the five-parameter generically nondegenerate family, not for that displayed S3-locus identity.
 - **auditor confidence:** judicial
+
+### `generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07`
+
+- **Note:** [`GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md`](../../docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite even periodic torus normalization and Fourier-kernel bridge for V_L = -G(Delta + mu^2 I)^(-1), including equal negative hw=1 corner pair deltas with eps(k_i-k_j)=8.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-172526-f5b7a7ee98-generation_periodic_plane_wa`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For normalized periodic plane waves, the Hartree-Fock density-density matrix element is delta(k,l) = (Vq(0) - Vq(k-l)) / N.  _(class `A`)_
+- **chain closes:** True — With V_L defined on the periodic torus, plane waves diagonalize Delta and the Green kernel. The constant density and exchange transition density each carry the stated finite-volume 1/N normalization under the Hartree-Fock bilinear kernel pairing, so the formula and hw=1 equal negative signs follow.
+- **rationale:** The load-bearing identity is an algebraic Fourier closure over the explicitly defined finite periodic operator and normalized plane waves. The runner source builds the periodic Laplacian, inverts the massive operator, and checks direct Hartree-Fock matrix contractions rather than merely printing constants; its source/text marker checks are not used as the scientific derivation. No external comparator or tuned physical magnitude is imported, and the cited mediator authority is retained_bounded, which is retained-grade for this scoped bridge.
+- **auditor confidence:** high
 
 ### `generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note`
 

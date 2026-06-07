@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 736 |
+| **retained_bounded** | 737 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1310 |
+| unaudited | 1309 |
 | meta | 310 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1155 |
+| `audited_clean` | 1156 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1620 |
+| `unaudited` | 1619 |
 
 | claim_type | count |
 |---|---:|
@@ -940,6 +940,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_admitted_sample_target_vector_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_clock_rate_interface_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -13656,6 +13657,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For any finite law P on record words and its reversed law P^R(w)=P(reverse(w)), the count pushforward is invariant under reversal: count_* P = count_* P^R.  _(class `A`)_
 - **chain closes:** True — The reversal map is a bijection on every count fiber, so count(w)=count(reverse(w)) and count_*P=count_*P^R follow by change of variables. Therefore any statistic, event, p-value, or certificate that factors only through counts has identical distribution under the two opposite orientations and cannot decide between them.
 - **rationale:** Formula inventory checked: w -> wv, count(wv)=count(w)+count(v), count(w)=count(reverse(w)), P^R(w)=P(reverse(w)), count_*P=count_*P^R, I(count(w))=I(count(reverse(w))), and transitions(reverse(w))=transpose(transitions(w)) are all finite-word identities. The independent proof is that reversal preserves letter multiplicities while reversing ordered adjacent pairs, so count-only data cannot distinguish P from P^R although transition or endpoint data can. The runner source supports this with exact finite enumeration and Fraction-valued law checks plus source-anchor and firewall-flag checks; it does not import tuned external numerics or a hidden comparator. N1-N8 no-go stress test passes for the narrowed count-only scope because routes through a supplied boundary, clock, oriented law, transition data, or production kernel remain explicitly outside the claim.
+- **auditor confidence:** high
+
+### `post_record_character_path_channel_weight_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given a supplied finite carrier and supplied nonnegative finite weights with positive totals, the note audits exact finite normalization, row-stochastic channel normalization, multiplicative path-product composition, and normalized positive character packets; it does not audit a Record-derived physical measure or selector.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-184336-ddec008d13-post_record_character_path_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supplied finite carrier plus supplied nonnegative local weights with positive totals, exact normalization, and exact product/composition check imply a normalized finite path/channel/character weight packet.  _(class `A`)_
+- **chain closes:** True — Independently, for finite weights w_i >= 0 with total T > 0, p_i = w_i/T is nonnegative and sums to one; applying the same operation row-wise gives a row-stochastic channel, and products of supplied edge weights compose by ordinary multiplication. The displayed values check out: 4/5+1/5=1, channel rows sum to one, 2*3=6 with normalization 6/7 and 1/7, and 6+3+1 normalizes to 3/5, 3/10, 1/10.
+- **rationale:** The load-bearing content is elementary finite algebra over explicitly supplied weights, not a tuned numerical match or external comparator. The runner uses exact Fraction arithmetic for the normalization and product examples, and the helper bucket totals also arithmetically match their displayed sums: 10+6+7+15+7=45 and 105+94+45+2=246. The note is correctly scoped: it certifies supplied finite normalization semantics and expressly excludes derivation of the carrier, physical measure, selector, Born law, or production dynamics from Record.
 - **auditor confidence:** high
 
 ### `post_record_clock_rate_interface_2026-06-06`

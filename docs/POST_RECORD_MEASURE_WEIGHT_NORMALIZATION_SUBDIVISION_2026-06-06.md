@@ -115,3 +115,9 @@ Run:
 ```text
 python3 scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [post_record_selector_dial_bucket_subdivision_2026-06-06](POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md)

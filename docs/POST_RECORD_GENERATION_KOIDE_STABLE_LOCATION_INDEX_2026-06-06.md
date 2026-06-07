@@ -121,3 +121,13 @@ Run:
 ```text
 python3 scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [post_record_selector_dial_bucket_subdivision_2026-06-06](POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md)
+- [post_record_flow_thermal_stable_setting_certificate_2026-06-06](POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md)
+- [post_record_conditional_audit_evidence_ladder_2026-06-06](POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md)
+- [generation_dial_dynamics_stability_classifier_2026-06-05](GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md)
+- [koide_records_objectivity_conditional_note_2026-05-31](KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md)

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 743 |
+| **retained_bounded** | 744 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1293 |
+| unaudited | 1292 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1163 |
+| `audited_clean` | 1164 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1604 |
+| `unaudited` | 1603 |
 
 | claim_type | count |
 |---|---:|
@@ -1294,6 +1294,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -19356,6 +19357,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** Because q_R is the pointwise negation of a permutation q_L, the congruence q_L_i + q_H + q_R_j ≡ 0 mod 3 has a unique column solution in each row, and the complete q_H sweep partitions the grid into the three cyclic permutation supports.  _(class `A`)_
 - **chain closes:** True — The claim closes from elementary Z_3 arithmetic with no cited upstream authorities. The runner source performs the support computation and checks all six q_L permutations, including the necessity counterexample for non-distinct q_L.
 - **rationale:** The load-bearing step is a genuine class-A algebraic identity over a finite group, not a definition, renaming, numerical match, or external comparator check. The runner source actually constructs supports from the congruence and verifies the exhaustive six-permutation case for the cyclic-pattern identification. No physical charge assignment, PDG value, fitted selector, or upstream note is needed for the narrowed claim.
+- **auditor confidence:** high
+
+### `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31`
+
+- **Note:** [`Z_N_ASYMMETRY_RESIDUAL_1_FINITE_VS_CONTINUUM_NOTE_2026-05-31.md`](../../docs/Z_N_ASYMMETRY_RESIDUAL_1_FINITE_VS_CONTINUUM_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded algebraic finite/continuum-style separation for the C3 weights (1,2): L_3(1,2)=2/9, cot-product=-2/9, csc-product=0, non-algebraic-integer/index distinction, and the flat staggered bulk-pairing witness. No continuum APS bridge or curved/boundary operator realization was audited as closed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-192348-e629616502-z_n_asymmetry_residual_1_fin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the same rotation data (3;(1,2)), the finite Molien/Lefschetz weight is +2/9 while the cot-product comparator is -2/9 and the csc-product spin-Dirac-style comparator is 0, so the finite 2/9 object is not the continuum eta/index/spectral-flow value.  _(class `A`)_
+- **chain closes:** True — The C3 cyclotomic identities, cot/csc comparator values, algebraic-integer check, integer spectral-flow check, and flat staggered +/- pairing all close by finite algebra from the retained one-hop inputs. The missing self-adjoint continuum APS bridge is explicitly outside the claim scope rather than a premise needed for this bounded separation.
+- **rationale:** The runner source performs actual finite matrix/product computations rather than merely printing constants, and the load-bearing signs and normalizations independently check exactly: L_3(1,2)=2/9, cot-product=-2/9, and csc-product=0. The cited load-bearing inputs are retained-grade for the finite C3 weight, local-density arithmetic, staggered pairing, and hw=1 sector facts used here. The clean verdict is bounded to the stated algebraic separation and does not promote the finite 2/9 value to a derived continuum APS eta.
 - **auditor confidence:** high
 
 ### `z_n_spectral_asymmetry_physical_identification_note_2026-05-31`

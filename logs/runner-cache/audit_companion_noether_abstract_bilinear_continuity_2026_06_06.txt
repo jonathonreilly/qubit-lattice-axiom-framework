@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_noether_abstract_bilinear_continuity_2026_06_06.py
-runner_sha256: e1aaca1386bb2427968f0195e4940aca17149425ce127875e87c7ea045f69b9f
+runner_sha256: 46936a422d52acb0eacbf875f5e9921b12f7b109d37dc5379a1a63e41c4d7a10
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 ==============================================================================

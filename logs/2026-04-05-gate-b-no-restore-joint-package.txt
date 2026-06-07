@@ -17,4 +17,4 @@ SAFE INTERPRETATION
   much of the joint package survives without the restoring pull.
   Treat this as bounded evidence, not a full generated-geometry closure.
 
-Total time: 129s
+Total time: 90s

@@ -35,14 +35,16 @@ flagged as scoped rather than reproven.
 > gives `2, 4, 8`.
 >
 > **Bridge (2) — mean-field W(J) form.** The scalar source generator is the
-> finite Grassmann (Berezin) fermion determinant `W(J) = log det(D + J)`. With a
-> real source `J · I` and the explicitly bounded paired-spectrum hypothesis that
-> the mean-field block decomposes into uniform conjugate pairs `± i a` with
-> `a = 2 u_0`, each pair contributes
-> `det = (J + i a)(J − i a) = J^2 + a^2`, so
-> `W(J) = (N_tot/2) · log(J^2 + 4 u_0^2)`. The eigenvalue-ratio curvature is the
-> second source-derivative `W''(0) = N_tot/(4 u_0^2)`, exactly the mean-field
-> form the ratio note consumes.
+> finite Grassmann (Berezin) fermion determinant `W(J) = log det(D + J)`. In the
+> tadpole mean-field taste block
+> `D_mf = i u_0 D_taste = i u_0 Σ_μ γ_μ`, exact Clifford algebra gives
+> `D_taste^2 = 4I`, hence
+> `char(D_mf)(λ) = (λ^2 + 4u_0^2)^2`. Thus the block has two uniform conjugate
+> pairs `± 2i u_0`, and each pair shifted by the real source contributes
+> `det = (J + 2i u_0)(J − 2i u_0) = J^2 + 4 u_0^2`. Summing over `N_tot/2`
+> pairs gives `W(J) = (N_tot/2) · log(J^2 + 4 u_0^2)`. The eigenvalue-ratio
+> curvature is the second source-derivative `W''(0) = N_tot/(4 u_0^2)`, exactly
+> the mean-field form the ratio note consumes.
 
 Both bridges are class (A) algebraic / counting facts conditional on the named
 retained upstream rows and the explicit naive-operator and mean-field
@@ -70,12 +72,13 @@ Two scope honesties are stated up front:
   enter the staggered species-reduction question (that is downstream of the open
   realization gate `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` and is
   out of scope here).
-- **The W(J) form is bounded by an explicit paired-spectrum hypothesis.** The
-  runner proves the determinant and curvature consequences of a real
-  anti-Hermitian paired spectrum and separately proves the Clifford magnitude
-  `sqrt(d)=2`. It does **not** prove that the actual mean-field operator has a
-  uniform `± i 2u_0` spectrum. That uniform spectrum is the stated bounded
-  hypothesis under which Bridge (2) is available.
+- **The W(J) form is bounded by the tadpole mean-field block, not by an extra
+  spectrum import.** The mean-field truncation `U_ab -> u_0 δ_ab` is still the
+  named formal regime, with `u_0` supplied by the retained plaquette-quartic
+  row. Inside that regime the uniform `± 2i u_0` spectrum is derived from the
+  explicit `Cl(4)` taste block `D_mf = i u_0 Σ_μ γ_μ`; it is no longer a
+  separate paired-spectrum hypothesis. This note still does **not** claim that
+  the full non-mean-field lattice operator has the same uniform spectrum.
 
 ## 1. Bridge (1) — d=4 naive taste count N_taste = 2^d = 16 (Class A)
 
@@ -156,20 +159,33 @@ This is the standard generating-functional form; the runner reproves
 (reusing the cited Berezin harness) and `log det(D+J) = Σ_k log λ_k(D+J)` over
 eigenvalues.
 
-### 2.2 The bounded paired-spectrum determinant and curvature
+### 2.2 The tadpole mean-field spectrum, determinant, and curvature
 
 The runner verifies the matrix fact that real antisymmetric blocks have purely
 imaginary conjugate-pair eigenvalues `± i a`. It also verifies the Clifford
 taste-square identity `D_taste² = d·I`, giving `sqrt(d)=2` at `d=4`. The
-additional statement that the actual mean-field block is uniformly paired with
-the same magnitude `a = 2u_0` for all pairs is **not derived here**; it is the
-explicit bounded paired-spectrum hypothesis of Bridge (2).
+tadpole mean-field block is then the explicit finite matrix
 
-Under that bounded hypothesis, each conjugate pair shifted by the real source
+```text
+D_mf = i u_0 D_taste = i u_0 Σ_μ γ_μ.
+```
+
+Because `D_taste² = 4I`, the runner computes
+
+```text
+char(D_mf)(λ) = (λ² + 4u_0²)²,
+det(D_mf + JI_4) = (J² + 4u_0²)².
+```
+
+So the uniform paired spectrum `± 2i u_0` is derived inside the tadpole
+mean-field block. The bounded input remains only the mean-field truncation
+itself (`U_ab -> u_0 δ_ab`), not a separate spectral assertion.
+
+For each conjugate pair shifted by the real source
 contributes
 
 ```text
-det over the pair = (J + i a)(J − i a) = J^2 + a^2 = J^2 + 4 u_0^2,
+det over the pair = (J + 2i u_0)(J − 2i u_0) = J^2 + 4 u_0^2,
 ```
 
 so summing the log over all `N_tot` modes (`N_tot/2` pairs) gives the mean-field
@@ -202,10 +218,10 @@ single closed form.
 The ratio note writes `W(J) = (N_tot/2)·log(J² + 4 u_0²)` and uses
 `W''(0)/N_tot = 1/(4 u_0²)` as the per-taste curvature feeding
 `R_lattice = 4/(u_0² N_taste)`. Bridge (2) derives the `log det(D + J)` form from
-the retained Berezin identity, the per-pair `J² + 4u_0²` factor from
-anti-Hermiticity plus the Clifford magnitude `2 u_0`, and the curvature from
-straight differentiation — so the generating-functional form is reproven from
-retained rows and explicit hypotheses rather than posited.
+the retained Berezin identity, the per-pair `J² + 4u_0²` factor from the
+explicit mean-field Clifford block, and the curvature from straight
+differentiation — so the generating-functional form is reproven from retained
+rows and the named mean-field truncation rather than posited.
 
 ## 3. Load-bearing steps and classes
 
@@ -213,7 +229,7 @@ retained rows and explicit hypotheses rather than posited.
 |---|---|---|
 | (1) | naive symbol corner zeros `{0,π}^d`, count `2^d`, `=16` at `d=4` | A (counting/algebra) |
 | (2a) | Berezin `Z_F[M] = det(M)` ⇒ `W(J) = log det(D+J)` | A (finite Grassmann algebra; retained Berezin row) |
-| (2b) | bounded uniform paired-spectrum hypothesis `±i 2u_0` ⇒ per-pair `J²+4u_0²` | A under explicit bounded hypothesis |
+| (2b) | tadpole mean-field block `D_mf=i u_0Σγ_μ` has `char(D_mf)=(λ²+4u_0²)²`, hence per-pair `J²+4u_0²` | A under the named mean-field truncation |
 | (2c) | `W(J)=(N_tot/2)log(J²+4u_0²)`, `W''(0)=N_tot/(4u_0²)` | A (calculus) |
 
 All four are exact algebraic/counting/calculus facts; none consume a fitted,
@@ -226,7 +242,7 @@ measured, PDG, lattice-MC, `β = 6`, or `g_bare` value.
 | [`CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) | even spacetime dimension `d = 4` and the Euclidean Clifford generator structure used in Bridge (1)'s `D†D = (Σ sin²)·I` step and Bridge (2)'s `D_taste² = d·I` |
 | [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md) | the Berezin identity `Z_F[M] = det(M)` grounding `W(J) = log det(D+J)` in Bridge (2) |
 | [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) | the finite-Grassmann scalar determinant readout (its (D4)) used for the `W(J)` form |
-| [`U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`](U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md) | supplies the mean-link `u_0 = ⟨P⟩^{1/4}` and the tadpole mean-field scheme used for `a = 2 u_0` in Bridge (2) |
+| [`U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`](U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md) | supplies the mean-link `u_0 = ⟨P⟩^{1/4}` and the tadpole mean-field scheme used in `D_mf = i u_0Σγ_μ` |
 
 The bridge target it repairs is the ratio note itself, named in backticks
 because it is `audited_conditional` (not retained-grade): the target row is
@@ -252,11 +268,13 @@ final `TOTAL: N PASS / 0 FAIL` line:
   `N = 1..4`; `log det(D+J) = Σ log λ_k`.
 - **Part 3 (conjugate pairs):** random real-antisymmetric matrices have
   purely-imaginary conjugate-pair eigenvalues `±i a`; the per-pair shifted
-  determinant equals `J² + a²`; under the bounded uniform `a = 2 u_0` hypothesis
-  it is `J² + 4 u_0²`.
-- **Part 4 (Clifford magnitude):** `D_taste = Σ_μ γ_μ` with the explicit
-  Euclidean `Cl(4)` matrices satisfies `D_taste² = 4·I`, so `|λ_taste| = 2` and
-  `a = 2 u_0`.
+  determinant equals `J² + a²`.
+- **Part 4 (tadpole mean-field spectrum):** `D_taste = Σ_μ γ_μ` with the
+  explicit Euclidean `Cl(4)` matrices satisfies `D_taste² = 4·I`, and the
+  tadpole block `D_mf = i u_0D_taste` has
+  `char(D_mf) = (λ² + 4u_0²)²` and
+  `det(D_mf + JI_4) = (J² + 4u_0²)²`, deriving the uniform `±2iu_0`
+  paired spectrum inside the mean-field block.
 - **Part 5 (curvature):** `W(J) = (N_tot/2) log(J² + 4 u_0²)` gives
   `W''(0) = N_tot/(4 u_0²)`; the general identity
   `d²/dJ² log det(D+J) = −Tr[(D+J)^{−2}]` matches a finite-difference second
@@ -277,8 +295,8 @@ bridge** for two inputs:
    retained Clifford/dimension row;
 2. the mean-field determinant `W(J)` form — supplied by Bridge (2), reproven as
    `W(J) = log det(D + J)` from the retained Berezin rows, with the per-pair
-   `J² + 4 u_0²` factor under the explicit bounded uniform paired-spectrum
-   hypothesis, and curvature `W''(0) = N_tot/(4 u_0²)` by differentiation.
+   `J² + 4 u_0²` factor derived from the explicit tadpole mean-field `Cl(4)`
+   block, and curvature `W''(0) = N_tot/(4 u_0²)` by differentiation.
 
 Both bridges cite only retained / retained-bounded one-hop authorities (§4) and
 introduce no admission, no new axiom, and no import. The re-audit **case** is
@@ -304,9 +322,9 @@ the independent audit lane, not by this note.
 - It does **not** derive the numerical value of `u_0` (its tadpole definition is
   retained via the plaquette-quartic row; the number requires a separate
   plaquette evaluation, out of scope).
-- It does **not** derive the actual mean-field operator's uniform
-  `± i 2u_0` paired spectrum; that is an explicit bounded hypothesis of this
-  bridge.
+- It does **not** derive the full non-mean-field lattice operator's spectrum.
+  The uniform `± i 2u_0` paired spectrum is derived only inside the named
+  tadpole mean-field block `D_mf = i u_0Σγ_μ`.
 - It does **not** promote, demote, or set the audit status of the ratio note or
   any cited row. All status is set by the independent audit lane.
 

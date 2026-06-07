@@ -1,0 +1,17 @@
+loop: higgs-taste-wj-spectrum-20260607
+goal: "Retire the extra paired-spectrum hypothesis in the Higgs taste-count/W(J) bridge by deriving the tadpole mean-field block spectrum."
+target_status: exact-support
+current_status: ready_for_review
+active_route: "finite Cl(4) taste-block spectrum certificate"
+target_claim_id: higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05
+audit_target_claim_id: higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02
+files_touched:
+  - docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py
+  - logs/runner-cache/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.txt
+  - .claude/science/physics-loops/higgs-taste-wj-spectrum-20260607/
+verification:
+  - "PYTHONPATH=scripts python3 scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py"
+result: "TOTAL: 53 PASS / 0 FAIL"
+audit_files_touched: false
+next_exact_action: "Reviewer should extract the strengthened mean-field spectrum certificate and queue the bridge row for independent audit."

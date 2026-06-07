@@ -1,15 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py
-runner_sha256: c7f49e99fab55743d0bcb4a85a95286b69c85b0dc36e4c29b6fc04ae797710bf
+runner_sha256: a58e6c183ac57fcee96eeb137e2448fe6d87d469a10a6eab87e838d021ba5856
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.36
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
 Pattern A narrow theorem: SU(3) Wilson plaquette strong-coupling Pade[3/3]
 ----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+Part 0: source-boundary manifest
+----------------------------------------------------------------------------------------
+  [PASS] coefficient packet is an explicit finite supplied tuple  (orders=[1, 4, 6, 7, 8])
+  [PASS] beta=6 evaluation point enters only as supplied rational u=1/3  (u_eval=1/3)
+  [PASS] MC comparator is an explicit non-theorem comparison value  (mc=0.5934)
 
 ----------------------------------------------------------------------------------------
 Part 1 (C1): supplied leading-order strong-coupling context
@@ -32,7 +39,10 @@ Part 3 (T3): Pade[N/M] analytic-continuation table
                    Q(u) = -4*u**3 - 6*u**2 + 1
                    value at u=1/3 = 3/5 = 0.600000
   [PASS] Pade[3/3] at u=1/3 equals exactly 3/5  (Pade[3/3](1/3) = 3/5)
+  [PASS] Pade[3/3] matching equations vanish through order u^6  (series*Q-P = O(u^7))
+  [PASS] Pade[3/3] denominator is nonzero at supplied u=1/3  (Q(1/3)=5/27)
   [PASS] Pade[3/3] residual to MC value 0.5934 is small (NOT zero -- no closure)  (gap = -0.0066 (-1.11%))
+  [PASS] MC comparator is not consumed as a theorem equality  (mc=2967/5000, Pade[3/3]=3/5)
   [PASS] Pade[4/4] at u=1/3 is rational  (Pade[4/4](1/3) = 157/395 = 0.397468)
   [PASS] Pade[4/4] does NOT improve over Pade[3/3] (alternation destabilizes)  (|gap_44|=0.1959 > |gap_33|=0.0066)
   [PASS] Pade[1/1] at u=1/3 = 1/3 (just the leading-order linear value)  (Pade[1/1](1/3) = 1/3)
@@ -76,7 +86,7 @@ Part 7: comparison summary (NOT a closure)
   [PASS] Pade[3/3] in u and in z (alpha=2) agree exactly  (u-form = 3/5, z-form_alpha2 = 3/5)
 
 ----------------------------------------------------------------------------------------
-TOTAL: PASS=20 FAIL=0
+TOTAL: PASS=26 FAIL=0
 ----------------------------------------------------------------------------------------
 
 ----- stderr -----

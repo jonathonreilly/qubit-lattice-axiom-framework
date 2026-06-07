@@ -1,0 +1,30 @@
+loop_slug: gauge-all-weight-formal-bridge-20260607
+branch: physics-loop/gauge-all-weight-formal-bridge-20260607
+base: origin/main
+target_claim_id: gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: derive SU(3) Wilson all-weight coefficient positivity and formal central-distribution authority
+hard_residual_attacked: unclosed all-weight existence/nonvanishing premise for Wilson coefficients and boundary convolution object
+files_touched:
+  - docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md
+  - scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py
+  - logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt
+  - docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
+  - logs/runner-cache/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.txt
+  - .claude/science/physics-loops/gauge-all-weight-formal-bridge-20260607/
+open_imports:
+  - independent audit must decide whether I4 can serve as retained bridge authority
+  - no decay theorem is supplied for upgrading the formal distribution to an L2 class function or bounded completed-space operator
+no_go_routes:
+  - claiming all-weight L2/operator closure without decay
+  - treating the proposed I4 bridge as already retained
+  - computing beta=6 Perron residual coefficients in this block
+trace_gate_classification: direct_blocker_closure
+review_disposition: local pass; external review-loop still required
+pr_status: pending
+next_exact_action: commit, push, open review PR, then scan remaining conditionals
+stop_condition: PR opened and refreshed queue has no further tractable audit-unblock target

@@ -14,12 +14,12 @@ with the unnormalized central convolution operator
 
   (1 / lambda_env(beta)) C_(Z_beta^env)
 
-by the boundary class function
+by the formal boundary character distribution
 
   Z_beta^env(W) := sum_(p,q) d_(p,q) z_(p,q)^env(beta) chi_(p,q)(W),
   z_(p,q)^env(beta) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) * lambda_env(beta).  (D2)
 
-Three cited retained authorities supply the inputs (I1), (I2), (I3):
+Three cited retained authorities plus proposed bridge I4 supply the inputs:
 
   (I1) gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note
        (retained_bounded / audited_clean): T_src(beta) = exp[(beta/2) J] D_beta
@@ -40,11 +40,17 @@ Three cited retained authorities supply the inputs (I1), (I2), (I3):
        only that unnormalized identity; it does not assume rho_(0,0)=1 for
        R_beta^env.
 
+  (I4) gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026-06-07
+       (proposed exact-support bridge): derives strict all-weight positivity
+       of the Wilson one-link coefficients and supplies the formal central
+       character-distribution dictionary. Independent audit is still required
+       before I4 can serve as retained authority.
+
 This Pattern A narrow runner verifies symbolically (sympy `simplify` to 0):
 
   (a) (T1) structural diagonality, self-adjointness, positivity, and
-      conjugation symmetry of R_beta^env under (I1)+(I2);
-  (b) (T2) Peter-Weyl character expansion of Z_beta^env with the
+      conjugation symmetry of R_beta^env under (I1)+(I2)+(I4);
+  (b) (T2) formal Peter-Weyl character-distribution coefficients of Z_beta^env with the
       coefficients of (D2), including the distinction between lambda_env and
       the actual trivial coefficient z_(0,0)^env = lambda_env*kappa_(0,0);
   (c) (T3) eigenvalue equality kappa_(p,q) / a_(p,q)^4 = z_(p,q)^env /
@@ -60,13 +66,15 @@ This Pattern A narrow runner verifies symbolically (sympy `simplify` to 0):
 Companion role: not a new claim row, not a new source note, no status
 promotion. Provides audit-friendly evidence that the parent's
 load-bearing class-(A) algebraic identification holds at exact symbolic
-precision under the cited retained authorities (I1)+(I2)+(I3). The
-cited retained authorities themselves are imported from upstream retained
-authorities and are not re-derived here.
+precision under the cited retained authorities (I1)+(I2)+(I3) plus the
+proposed I4 bridge packet. The cited retained
+authorities themselves are imported from upstream retained authorities and
+are not re-derived here; I4 remains audit-required.
 """
 
 from __future__ import annotations
 from pathlib import Path
+import hashlib
 import sys
 
 try:
@@ -79,6 +87,41 @@ except ImportError:
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md"
+
+BRIDGE_PACKET_PATHS = [
+    "docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md",
+    "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py",
+    "logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt",
+]
+
+SOURCE_MARKERS = {
+    "docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md": [
+        "strictly positive Peter-Weyl character coefficient",
+        "Sym^p(3) tensor Sym^q(3bar)",
+        "define the formal central",
+        "bounded-operator closure without a separate decay",
+        "No new framework axiom is introduced",
+    ],
+    "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py": [
+        "Cartan component of",
+        "strict positivity is claimed for beta > 0 only",
+        "formal C_Z action is coefficientwise diagonal",
+        "TOTAL: PASS=",
+    ],
+}
+
+CACHE_TO_RUNNER = {
+    "logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt": (
+        "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py",
+        [
+            "TOTAL: PASS=38 FAIL=0",
+            "strict positivity is claimed for beta > 0 only",
+            "formal C_Z action is coefficientwise diagonal",
+        ],
+    )
+}
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -98,6 +141,62 @@ def section(title: str) -> None:
     print("-" * 88)
     print(title)
     print("-" * 88)
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def parse_cache_header(cache_path: Path) -> dict[str, str]:
+    text = cache_path.read_text(encoding="utf-8", errors="replace")
+    header, _, _stdout = text.partition("----- stdout -----")
+    fields: dict[str, str] = {"_text": text}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        fields[key.strip()] = value.strip()
+    return fields
+
+
+def bridge_packet_checks() -> None:
+    section("Part 9: I4 Wilson all-weight bridge packet verification")
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    for rel_path in BRIDGE_PACKET_PATHS:
+        path = ROOT / rel_path
+        check(f"I4 bridge packet path exists: {rel_path}", path.exists())
+        check(f"parent note links I4 bridge packet path: {rel_path}", rel_path in note_text)
+
+    for rel_path, markers in SOURCE_MARKERS.items():
+        source_text = (ROOT / rel_path).read_text(encoding="utf-8")
+        for marker in markers:
+            check(f"I4 bridge source marker present: {rel_path}", marker in source_text, detail=marker)
+
+    for cache_rel, (runner_rel, snippets) in CACHE_TO_RUNNER.items():
+        header = parse_cache_header(ROOT / cache_rel)
+        current_sha = sha256_file(ROOT / runner_rel)
+        check(
+            f"I4 bridge cache runner matches source: {cache_rel}",
+            header.get("runner") == runner_rel,
+            detail=runner_rel,
+        )
+        check(
+            f"I4 bridge cache SHA fresh: {cache_rel}",
+            header.get("runner_sha256") == current_sha,
+            detail=f"{header.get('runner_sha256')} == {current_sha}",
+        )
+        check(
+            f"I4 bridge cache exits cleanly: {cache_rel}",
+            header.get("exit_code") == "0" and header.get("status") == "ok",
+            detail=f"exit_code={header.get('exit_code')} status={header.get('status')}",
+        )
+        for snippet in snippets:
+            check(f"I4 bridge cache contains marker: {cache_rel}", snippet in header["_text"], detail=snippet)
 
 
 # ---------------------------------------------------------------------------
@@ -135,7 +234,7 @@ def main() -> int:
     print("Audit companion (exact-symbolic) for")
     print("GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_")
     print("IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17")
-    print("Goal: sympy-symbolic verification of (T1)-(T4) under cited retained (I1)-(I3)")
+    print("Goal: sympy-symbolic verification of (T1)-(T4) under retained (I1)-(I3) plus proposed I4")
     print("=" * 88)
 
     # -------------------------------------------------------------------
@@ -222,7 +321,7 @@ def main() -> int:
     # All entries are products/quotients of positive symbols, so all are positive in sympy:
     pos_strong = all(R_env[i, i].is_positive for i in range(n))
     check(
-        "(T1) R_beta^env eigenvalues are positive (kappa > 0, a > 0 from (I1)+(I2))",
+        "(T1) R_beta^env eigenvalues are positive (kappa > 0, a > 0 from (I1)+(I2)+(I4))",
         pos_strong,
         detail="every eigenvalue is product/ratio of positive symbols",
     )
@@ -524,18 +623,21 @@ def main() -> int:
         detail=f"sample trivial-channel difference = {normalized_delta_concrete}",
     )
 
+    bridge_packet_checks()
+
     # -------------------------------------------------------------------
     section("Summary")
     # -------------------------------------------------------------------
-    print("  Verified at exact sympy precision under cited retained (I1)+(I2)+(I3):")
+    print("  Verified at exact sympy precision under cited retained (I1)+(I2)+(I3) plus proposed I4 bridge:")
     print("    (T1) Structural diagonality, self-adjointness, positivity, swap symmetry of R_beta^env")
-    print("    (T2) Peter-Weyl character expansion of Z_beta^env with (D2) coefficients")
+    print("    (T2) formal Peter-Weyl character-distribution coefficients for Z_beta^env")
     print("    (T3) eigenvalue equality kappa/a^4 = z^env/lambda_env at every weight (operator-level)")
     print("    (T3b) actual-trivial normalization gives R/kappa_(0,0), not R, unless kappa_(0,0)=1")
     print("    (T4) uniqueness: distinct eigenvalue sequences yield distinct operators")
     print("    Algebraic compatibility R_beta^env = D_beta^loc^{-1} * D_beta")
     print("    Counterfactuals: D^loc strip + swap symmetry are both load-bearing")
     print("    Finite-truncation numerical sanity at one independent abstract sample")
+    print("    I4 bridge packet: all-weight Wilson coefficient positivity + formal convolution dictionary")
 
     print()
     print("=" * 88)

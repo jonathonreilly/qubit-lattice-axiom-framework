@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
-runner_sha256: 714583bd0f242c070d31bdac63a04d5587c74d25b3d775162a1aa992de6cbfab
+runner_sha256: 24dcdfe2e5012ce5e859089ecd4e47383045989ab8c09cb27107d2b0f8e059e2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_
 IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17
-Goal: sympy-symbolic verification of (T1)-(T4) under cited retained (I1)-(I3)
+Goal: sympy-symbolic verification of (T1)-(T4) under retained (I1)-(I3) plus proposed I4
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -25,7 +25,7 @@ Part 1: (T1) structural diagonality of R_beta^env
 ----------------------------------------------------------------------------------------
   [PASS (A)] (T1) R_beta^env is diagonal on the character basis (off-diagonal entries vanish symbolically)  (diag operator on orthonormal basis)
   [PASS (A)] (T1) R_beta^env is self-adjoint (real diagonal entries)  (all eigenvalues kappa/(a^4) are real positive symbols)
-  [PASS (A)] (T1) R_beta^env eigenvalues are positive (kappa > 0, a > 0 from (I1)+(I2))  (every eigenvalue is product/ratio of positive symbols)
+  [PASS (A)] (T1) R_beta^env eigenvalues are positive (kappa > 0, a > 0 from (I1)+(I2)+(I4))  (every eigenvalue is product/ratio of positive symbols)
   [PASS (A)] (T1) R_beta^env commutes with the swap involution S  (kappa_(p,q) = kappa_(q,p), a_(p,q) = a_(q,p) enforced by symbol-pair sharing)
 
 ----------------------------------------------------------------------------------------
@@ -76,20 +76,46 @@ Part 8: finite-truncation numerical sanity (Class A FP cross-check)
   [PASS (A)] (numerical sanity) actual-trivial normalization differs from R_beta^env when kappa_(0,0) != 1  (sample trivial-channel difference = -2/5)
 
 ----------------------------------------------------------------------------------------
+Part 9: I4 Wilson all-weight bridge packet verification
+----------------------------------------------------------------------------------------
+  [PASS (A)] I4 bridge packet path exists: docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md
+  [PASS (A)] parent note links I4 bridge packet path: docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md
+  [PASS (A)] I4 bridge packet path exists: scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py
+  [PASS (A)] parent note links I4 bridge packet path: scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py
+  [PASS (A)] I4 bridge packet path exists: logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt
+  [PASS (A)] parent note links I4 bridge packet path: logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt
+  [PASS (A)] I4 bridge source marker present: docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md  (strictly positive Peter-Weyl character coefficient)
+  [PASS (A)] I4 bridge source marker present: docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md  (Sym^p(3) tensor Sym^q(3bar))
+  [PASS (A)] I4 bridge source marker present: docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md  (define the formal central)
+  [PASS (A)] I4 bridge source marker present: docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md  (bounded-operator closure without a separate decay)
+  [PASS (A)] I4 bridge source marker present: docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md  (No new framework axiom is introduced)
+  [PASS (A)] I4 bridge source marker present: scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py  (Cartan component of)
+  [PASS (A)] I4 bridge source marker present: scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py  (strict positivity is claimed for beta > 0 only)
+  [PASS (A)] I4 bridge source marker present: scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py  (formal C_Z action is coefficientwise diagonal)
+  [PASS (A)] I4 bridge source marker present: scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py  (TOTAL: PASS=)
+  [PASS (A)] I4 bridge cache runner matches source: logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt  (scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py)
+  [PASS (A)] I4 bridge cache SHA fresh: logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt  (4e280a53e064f49a17bf8a331cfdb7f2ddd18821818791084a15044106a239f2 == 4e280a53e064f49a17bf8a331cfdb7f2ddd18821818791084a15044106a239f2)
+  [PASS (A)] I4 bridge cache exits cleanly: logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt  (exit_code=0 status=ok)
+  [PASS (A)] I4 bridge cache contains marker: logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt  (TOTAL: PASS=38 FAIL=0)
+  [PASS (A)] I4 bridge cache contains marker: logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt  (strict positivity is claimed for beta > 0 only)
+  [PASS (A)] I4 bridge cache contains marker: logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt  (formal C_Z action is coefficientwise diagonal)
+
+----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
-  Verified at exact sympy precision under cited retained (I1)+(I2)+(I3):
+  Verified at exact sympy precision under cited retained (I1)+(I2)+(I3) plus proposed I4 bridge:
     (T1) Structural diagonality, self-adjointness, positivity, swap symmetry of R_beta^env
-    (T2) Peter-Weyl character expansion of Z_beta^env with (D2) coefficients
+    (T2) formal Peter-Weyl character-distribution coefficients for Z_beta^env
     (T3) eigenvalue equality kappa/a^4 = z^env/lambda_env at every weight (operator-level)
     (T3b) actual-trivial normalization gives R/kappa_(0,0), not R, unless kappa_(0,0)=1
     (T4) uniqueness: distinct eigenvalue sequences yield distinct operators
     Algebraic compatibility R_beta^env = D_beta^loc^{-1} * D_beta
     Counterfactuals: D^loc strip + swap symmetry are both load-bearing
     Finite-truncation numerical sanity at one independent abstract sample
+    I4 bridge packet: all-weight Wilson coefficient positivity + formal convolution dictionary
 
 ========================================================================================
-TOTAL: PASS=23, FAIL=0
+TOTAL: PASS=44, FAIL=0
 ========================================================================================
 
 ----- stderr -----

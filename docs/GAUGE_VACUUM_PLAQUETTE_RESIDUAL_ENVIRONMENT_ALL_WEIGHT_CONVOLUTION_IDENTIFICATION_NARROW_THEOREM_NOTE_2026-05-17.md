@@ -4,7 +4,9 @@
 surface restated as the **unnormalized** convolution identification
 `R_beta^env chi_(p,q) = (1 / lambda_env(beta)) C_(Z_beta^env) chi_(p,q)`
 at every weight, removing the `kappa_(0,0)(beta) = 1` normalization
-premise from the load-bearing conclusion. The previous normalized form
+premise from the load-bearing conclusion; audit-unblock repair
+2026-06-07 adds the Wilson all-weight positive-coefficient and formal
+central-distribution bridge described below. The previous normalized form
 `R_beta^env = C_(Z_beta^env / z_(0,0)^env(beta))` is demoted to an
 explicit additional-normalization hypothesis for future work — see
 `## 2026-05-24 audit-conditional repair` below.)
@@ -16,15 +18,17 @@ operator obtained by stripping `exp[(beta/2) J]` on both sides of the
 one-step Wilson source-sector kernel `K_beta^src` and then stripping the
 marked four-link mixed-kernel factor `D_beta^loc` — with the
 **unnormalized** central convolution operator `C_(Z_beta^env)` by the
-boundary class function `Z_beta^env(W)`, divided by an independent
-positive scale `lambda_env(beta)`, established as a per-weight diagonal
-action at every weight `(p,q) in P_+(SU(3))` (no finite-box truncation
-applied to the conclusion, no L^2-closure operator equality on the full
-infinite-dimensional Hilbert space asserted, and the normalized form
+formal boundary character distribution `Z_beta^env`, divided by an
+independent positive scale `lambda_env(beta)`, established as a
+per-weight diagonal action at every weight `(p,q) in P_+(SU(3))` (no
+finite-box truncation applied to the conclusion, no `L^2` class function
+or L^2-closure operator equality on the full infinite-dimensional Hilbert
+space asserted, and the normalized form
 `R_beta^env = C_(Z_beta^env / z_(0,0)^env(beta))` is **not** asserted as
 load-bearing — that form requires the additional normalization
 hypothesis `kappa_(0,0)(beta) = 1` which is out-of-scope under this
-narrow), under three cited retained authorities:
+narrow), under the three cited retained authorities plus the proposed
+I4 bridge packet below:
 
 - (I1) the retained `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`
   (retained_bounded, audited_clean) supplying the structural
@@ -42,6 +46,15 @@ narrow), under three cited retained authorities:
   normalized `rho_(0,0)=1` specialization of that note is used only for
   out-of-scope normalized comparisons; the load-bearing statement below
   uses the linear, unnormalized eigenvalue identity for `C_(Z_beta^env)`.
+- (I4) the proposed bridge
+  `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026-06-07`
+  supplying the strict all-weight positivity/nonzero input
+  `c_(p,q)(beta)>0`, hence `a_(p,q)(beta)>0`, for the Wilson one-link
+  coefficients at every dominant `SU(3)` weight and `beta>0`, together
+  with the formal central character distribution dictionary for arbitrary
+  all-weight coefficient sequences on the finite-character test algebra.
+  I4 is a bridge packet for independent re-audit; this source note does
+  not mark it retained.
 
 The identification is purely structural: no analytic evaluation of
 `rho_(p,q)(beta)`, no framework-point `beta = 6` numerical value, no Perron
@@ -64,6 +77,39 @@ the framework-point `beta = 6` Perron closure and the explicit
 analytic value of `rho_(p,q)(6)`, both of which remain outside this
 narrow note's scope.
 
+## 2026-06-07 all-weight positivity and formal-distribution repair
+
+The 2026-06-07 conditional audit says the prior packet hard-coded
+positive `a_(p,q)` symbols rather than deriving strict positivity/nonzero
+from the cited Wilson authority, and upgraded finite/per-weight Schur
+algebra into an all-weight boundary class function without a convergence,
+distribution, or formal-series authority.
+
+Gauge Wilson SU(3) all-weight positive-coefficient formal bridge:
+
+- Bridge note:
+  [`docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md`](GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md)
+- Bridge runner:
+  [`scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py`](../scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py)
+- Bridge cache:
+  [`logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt`](../logs/runner-cache/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.txt)
+
+That bridge derives strict positivity of every one-link Wilson character
+coefficient from the tensor-product expansion of
+`exp[(beta/6)(chi_3 + chi_3bar)]`: for each dominant weight `(p,q)`, the
+Cartan component of `Sym^p(3) tensor Sym^q(3bar)` occurs inside
+`(3 direct_sum 3bar)^{tensor (p+q)}`, so the `n=p+q` exponential term
+gives a strictly positive contribution when `beta>0`. Therefore
+`a_(p,q)(beta)=c_(p,q)(beta)/(d_(p,q)c_(0,0)(beta))` is strictly positive
+at every weight.
+
+The same bridge also supplies the formal all-weight authority: unless a
+separate decay theorem is supplied, `Z_beta^env` is treated here as a
+formal central character distribution on the finite-character test
+algebra, not an `L^2` class function, continuous class function, positive
+measure, or bounded convolution operator on the completed Hilbert space.
+The per-weight diagonal action `(T3)` is unchanged.
+
 ## Statement
 
 Let `J = (chi_(1,0) + chi_(0,1)) / 6` be the marked-plaquette source
@@ -72,7 +118,8 @@ operator acting on the marked-plaquette class-function sector
 `P_+(SU(3)) = { (p,q) : p, q in Z_{>= 0} }` is the full set of dominant
 `SU(3)` weights.
 
-Suppose the three retained input identities are supplied as cited inputs:
+Suppose the three retained input identities and the proposed I4 bridge
+packet are supplied as cited inputs:
 
 ```text
 (I1)  Source-sector matrix factorization (I1):
@@ -107,6 +154,14 @@ Suppose the three retained input identities are supplied as cited inputs:
       positive conjugation-symmetric coefficient sequence
       z_(p,q) >= 0. The present theorem consumes only this unnormalized
       identity; it does not consume the rho_(0,0)=1 normalization.
+
+(I4)  Gauge Wilson SU(3) all-weight positive-coefficient formal bridge:
+      for beta > 0, c_(p,q)(beta)>0 at every dominant SU(3) weight,
+      so a_(p,q)(beta)=c_(p,q)(beta)/(d_(p,q)c_(0,0)(beta))>0. Also,
+      arbitrary all-weight sequences define formal central character
+      distributions on the finite-character test algebra, with
+      C_Z chi_(p,q)=z_(p,q) chi_(p,q) coefficientwise. No L2 class-function
+      or bounded completed-Hilbert-space operator closure is asserted.
 ```
 
 Define the **residual source-sector operator** at the marked-plaquette
@@ -119,17 +174,17 @@ R_beta^env  :=  D_beta^loc^{-1} * (exp[-(beta/2) J] * T_src(beta) * exp[-(beta/2
             chi_(p,q) -> (kappa_(p,q)(beta) / a_(p,q)(beta)^4) chi_(p,q).      (D1)
 ```
 
-By (I1), `D_beta` is central and diagonal on the character basis. By (I2),
-`D_beta^loc` is central and diagonal on the character basis with strictly
-positive eigenvalues `a_(p,q)(beta)^4 > 0` for all `beta > 0`. So `(D1)` is
-well-defined at all weights.
+By (I1), `D_beta` is central and diagonal on the character basis. By
+(I2)+(I4), `D_beta^loc` is central and diagonal on the character basis
+with strictly positive eigenvalues `a_(p,q)(beta)^4 > 0` for all
+`beta > 0`. So `(D1)` is well-defined at all weights.
 
-Define the **unmarked spatial Wilson environment boundary class function**
-on the marked plaquette holonomy `W in SU(3)` as the real central class
-function on `SU(3)` whose unnormalized convolution operator, divided by
-an independent positive scale `lambda_env(beta)`, equals the residual
-operator `R_beta^env` of (D1) on each character basis vector. By
-(I1)+(I2)+(I3), `Z_beta^env(W)` has character coefficients
+Define the **unmarked spatial Wilson environment boundary formal
+character distribution** on the marked plaquette holonomy sector as the
+real central formal distribution whose unnormalized convolution action,
+divided by an independent positive scale `lambda_env(beta)`, equals the
+residual operator `R_beta^env` of (D1) on each character basis vector. By
+(I1)+(I2)+(I3)+(I4), `Z_beta^env` has formal character coefficients
 
 ```text
 z_(p,q)^env(beta)  =  (kappa_(p,q)(beta) / a_(p,q)(beta)^4) * lambda_env(beta),  (D2)
@@ -143,9 +198,9 @@ z_(0,0)^env(beta) = kappa_(0,0)(beta) * lambda_env(beta),               (D2.0)
 ```
 
 not `lambda_env(beta)` unless the additional out-of-scope normalization
-`kappa_(0,0)(beta)=1` is supplied. The physical reading is the boundary
-class function of the unmarked spatial Wilson
-environment compression: it captures the result of integrating all
+`kappa_(0,0)(beta)=1` is supplied. The physical reading is the formal
+boundary character distribution of the unmarked spatial Wilson
+environment compression: coefficientwise, it captures the result of integrating all
 unmarked spatial DOFs (non-marked spatial links and unmarked
 spatial-plaquette action in both adjacent slices) with the marked
 plaquette holonomy held fixed at `W`, after the marked four-link
@@ -165,8 +220,8 @@ marked half-slice multipliers is the unmarked-DOF integration.
   involution `S chi_(p,q) = chi_(q,p)`.
 
 **Conclusion (T2) (structural central-convolution representation of
-`Z_beta^env`).** The central class function `Z_beta^env(W)` admits a
-unique Peter-Weyl expansion at all weights
+`Z_beta^env`).** The formal central character distribution `Z_beta^env`
+admits a unique coefficient assignment at all weights
 
 ```text
 Z_beta^env(W) = lambda_env(beta) sum_{(p,q) in P_+(SU(3))}
@@ -188,13 +243,13 @@ actual Peter-Weyl trivial coefficient of `Z_beta^env` is the product
 `z_(0,0)^env(beta) = lambda_env(beta) kappa_(0,0)(beta)`.
 
 **Conclusion (T3) (per-weight structural identification at all weights,
-unnormalized form).** Under (I1), (I2), (I3), at every weight
+unnormalized form).** Under (I1), (I2), (I3), and I4, at every weight
 `(p, q) in P_+(SU(3))` the eigenvalue of `R_beta^env` on `chi_(p,q)`
 equals the eigenvalue of the **unnormalized** central convolution
 operator `C_(Z_beta^env)` on the same basis element, divided by the
 positive scale `lambda_env(beta)`. The divisor `lambda_env(beta)`
 appearing in `(T3)` is an **arbitrary positive scale** for the boundary
-class function `Z_beta^env(W)` (the overall positive scale left free by
+formal distribution `Z_beta^env` (the overall positive scale left free by
 `(D2)`); it is **not** the actual Peter-Weyl trivial coefficient unless
 `kappa_(0,0)(beta)=1`. Dividing by the actual Peter-Weyl trivial
 coefficient `z_(0,0)^env(beta)=lambda_env(beta) kappa_(0,0)(beta)` would
@@ -215,7 +270,7 @@ marked-plaquette class-function sector at all weights, after division by
 the independent positive scale `lambda_env(beta)`. This is the **load-bearing
 per-weight structural identification at all weights** between the
 stripped residual factor and the unnormalized convolution by the
-boundary class function of the unmarked spatial Wilson environment
+formal boundary character distribution of the unmarked spatial Wilson environment
 compression. (No L^2-closure or convergence claim is made about the
 operator equality on the full infinite-dimensional Hilbert space `H`;
 the conclusion is the per-weight diagonal action of the unnormalized
@@ -248,8 +303,8 @@ eigenvalues `a_(p,q)(beta)^4`. The product of central diagonal operators
 is central diagonal; the quotient `D_beta^loc^{-1} D_beta` is well-defined
 because `a_(p,q)(beta)^4 > 0` for `beta > 0` (the trivial irrep gives
 `a_(0,0)(beta) = 1 > 0`, and for any nontrivial irrep `a_(p,q)(beta) > 0`
-by the convolution-eigenvalue formula `(8)` of (I2) applied to a real
-positive class function `w_beta`). Hence `R_beta^env` is diagonal in the
+by the all-weight Wilson coefficient positivity bridge I4). Hence
+`R_beta^env` is diagonal in the
 character basis at all weights with eigenvalues
 
 ```text
@@ -257,17 +312,19 @@ r_(p,q)^env(beta)  =  kappa_(p,q)(beta) / a_(p,q)(beta)^4.                   (T1
 ```
 
 Self-adjointness follows from each eigenvalue being real. Positivity
-follows from `kappa_(p,q)(beta) >= 0` (I1) and `a_(p,q)(beta)^4 > 0` (I2).
+follows from `kappa_(p,q)(beta) >= 0` (I1) and
+`a_(p,q)(beta)^4 > 0` (I2)+(I4).
 Conjugation symmetry follows because both `kappa_(p,q)(beta) =
 kappa_(q,p)(beta)` (I1) and `a_(p,q)(beta) = a_(q,p)(beta)` (I2)
 [the latter because `c_(p,q)(beta) = c_(q,p)(beta)` is the Schur character
 orthogonality property of `(p,q) <-> (q,p)` complex-conjugate irreps], so
 their ratio is conjugation-symmetric.
 
-`(T2)`. By `(D2)`, `Z_beta^env(W)` has character coefficients
+`(T2)`. By `(D2)`, `Z_beta^env` has formal character coefficients
 `z_(p,q)^env(beta) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) *
-lambda_env(beta)`. The Peter-Weyl theorem on `SU(3)` gives the expansion
-at all weights stated in `(T2)`. Dividing by the independent positive
+lambda_env(beta)`. The formal Peter-Weyl character-distribution
+dictionary (I4) gives the coefficient assignment at all weights stated in
+`(T2)`. Dividing by the independent positive
 scale `lambda_env(beta) > 0`,
 
 ```text
@@ -290,16 +347,17 @@ The structural properties follow term by term from those of
 By `(T1)`, the eigenvalue of `R_beta^env` on `chi_(p,q)` is
 `r_(p,q)^env(beta) = kappa_(p,q)(beta) / a_(p,q)(beta)^4`.
 
-By `(T2)`, the character coefficient of `Z_beta^env(W)` at weight
+By `(T2)`, the formal character coefficient of `Z_beta^env` at weight
 `(p, q)` is
 `z_(p,q)^env(beta) = (kappa_(p,q)(beta) / a_(p,q)(beta)^4) lambda_env(beta)`
 (by `(D2)`).
 
-The unnormalized central convolution operator `C_(Z_beta^env)` on the
+The unnormalized central formal convolution operator `C_(Z_beta^env)` on the
 character basis is the diagonal operator
 `C_(Z_beta^env) chi_(p,q) = z_(p,q)^env(beta) chi_(p,q)` at every weight
-`(p, q) in P_+(SU(3))`, by Schur orthogonality on `SU(3)` applied to the
-Peter-Weyl expansion `(T2)` of `Z_beta^env(W)`. (This is the
+`(p, q) in P_+(SU(3))`, by the formal Schur/Peter-Weyl diagonal rule
+(I4) applied to the coefficient assignment `(T2)` of `Z_beta^env`.
+(This is the
 unnormalized form of the convolution-eigenvalue identity; it does not
 invoke (I3)'s `rho_(0,0) = 1` premise.) Substituting `(D2)`,
 
@@ -327,10 +385,10 @@ identification `(T3)` is independent of any specific analytic value of
 `kappa_(p,q)(beta)` or `a_(p,q)(beta)`. It identifies, at all weights,
 the operator `R_beta^env` defined by stripping `exp[(beta/2) J]` and
 `D_beta^loc` from `T_src(beta)` with `1 / lambda_env(beta)` times the
-unnormalized central convolution by the central class function
-`Z_beta^env(W)`. By the construction in `(D2)`, `Z_beta^env` is the
-boundary class function of the unmarked spatial Wilson environment
-compression: it represents the contribution to `D_beta` from the
+unnormalized central convolution by the formal central distribution
+`Z_beta^env`. By the construction in `(D2)`, `Z_beta^env` is the
+formal boundary character distribution of the unmarked spatial Wilson
+environment compression: it represents coefficientwise the contribution to `D_beta` from the
 unmarked-DOF integration after the marked four-link mixed-kernel factor
 (by (I2)) and the marked half-slice multipliers (by (I1)) are factored
 out. The audit-named "compression of the unmarked spatial Wilson
@@ -343,9 +401,9 @@ hypothesis `kappa_(0,0)(beta) = 1`, which is out-of-scope here.
 
 `(T4)`. The diagonal eigenvalues of `R_beta^env` on the orthonormal
 character basis uniquely determine the per-weight action of the operator
-(linear extension on orthonormal basis). The character coefficients of
-`Z_beta^env` are uniquely determined by Peter-Weyl orthogonality at every
-weight (Schur orthogonality identity (T1) of (I3)). So both per-weight
+(linear extension on orthonormal basis). The formal character
+coefficients of `Z_beta^env` are uniquely determined by the all-weight
+coefficient assignment in I4. So both per-weight
 sequences are uniquely determined by their operators, and by `(T3)` they
 coincide at every weight. ∎
 
@@ -353,9 +411,10 @@ coincide at every weight. ∎
 
 - `(T1)`: structural diagonality, self-adjointness, positivity, and
   conjugation symmetry of `R_beta^env` at every weight `(p,q) in P_+(SU(3))`,
-  under (I1)+(I2)+(I3).
-- `(T2)`: per-weight Peter-Weyl character expansion of the boundary class
-  function `Z_beta^env(W)` with coefficients `(D2)` at every weight.
+  under (I1)+(I2)+(I3)+(I4).
+- `(T2)`: per-weight formal Peter-Weyl character-distribution expansion of
+  the boundary object `Z_beta^env` with coefficients `(D2)` at every
+  weight.
 - `(T3)`: the **load-bearing per-weight structural identification at all
   weights, in unnormalized form**: at every `(p, q) in P_+(SU(3))`,
   `R_beta^env chi_(p,q) = (1 / lambda_env(beta)) C_(Z_beta^env) chi_(p,q)`
@@ -376,6 +435,8 @@ coincide at every weight. ∎
 - Does **not** derive (I3). That is the retained
   `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`
   abstract `SU(3)` character algebra (retained / audited_clean).
+- Does **not** mark I4 retained. I4 is the bridge packet added for
+  independent review/audit in this repair branch.
 - Does **not** supply an analytic value for `r_(p,q)^env(beta)` or
   `rho_(p,q)(beta)` at any
   framework point. The all-weight structural identification `(T3)` is
@@ -386,9 +447,9 @@ coincide at every weight. ∎
   Wilson character coefficient `a_(p,q)(beta) = c_(p,q)(beta) / (d_(p,q)
   c_(0,0)(beta))`. The narrow theorem treats `lambda_env(beta)
   r_(p,q)^env(beta)` as the abstract character coefficient of the
-  **multi-link** unmarked spatial Wilson environment boundary class
-  function `Z_beta^env`, defined by integration over all unmarked spatial
-  degrees of freedom; the
+  **multi-link** unmarked spatial Wilson environment formal boundary
+  character distribution `Z_beta^env`, defined coefficientwise by
+  integrating over all unmarked spatial degrees of freedom; the
   single-link character coefficient is structurally a different object
   (one-link convolution eigenvalue from (I2), not the boundary character
   of the bulk integration in `(D2)`).
@@ -397,6 +458,10 @@ coincide at every weight. ∎
   per-weight-at-all-weights formulation `(T3)` is the conclusion; closure
   to an L^2 operator equality would require an asymptotic decay bound on
   `r_(p,q)^env(beta)` in `(p,q)`, which is separately open work.
+- Does **not** assert that `Z_beta^env` is an `L^2` class function,
+  continuous class function, positive measure, or bounded convolution
+  operator without a separate decay/summability theorem. The all-weight
+  object used here is the formal central character distribution of I4.
 - Does **not** assert the **normalized** convolution identity
   `R_beta^env = C_(Z_beta^env / z_(0,0)^env(beta))` as load-bearing.
   That stronger identity requires the additional normalization
@@ -446,7 +511,9 @@ narrow theorem's scope.
 
 ## Cited dependencies
 
-All three load-bearing inputs are currently retained on the audit ledger:
+The first three load-bearing inputs are currently retained on the audit
+ledger. I4 is a proposed bridge packet added by this repair branch and
+requires independent audit before it can serve as retained authority:
 
 - [`GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
   (I1) — retained source-sector matrix factorization
@@ -461,6 +528,11 @@ All three load-bearing inputs are currently retained on the audit ledger:
   (I3) — retained `SU(3)` character diagonal-convolution equivalence
   (`su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`,
   ledger reports retained / audited_clean).
+- [`GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md`](GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md)
+  (I4) — proposed exact-support bridge deriving all-weight Wilson
+  coefficient strict positivity and the formal central character
+  distribution dictionary used in this repair. Independent audit remains
+  required before this bridge can act as retained authority.
 
 The retained transfer-operator / character-recurrence theorem
 [`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md)
@@ -512,7 +584,8 @@ verifies symbolically (sympy-based, class-A) that:
    and equal to `(1 / lambda_env) C_Z` exactly under abstract positive
    symmetric coefficient sequences.
 
-Expected runner summary: `PASS=23 FAIL=0`.
+Expected runner summary after the 2026-06-07 bridge-packet checks:
+`PASS=44, FAIL=0`.
 
 ## 2026-05-24 audit-conditional repair
 
@@ -541,9 +614,9 @@ the missing normalization `kappa_(0,0)(beta) = 1`. The cited authorities
 This repair takes the **second option**: the load-bearing per-weight
 identification `(T3)` is restated as the **unnormalized** convolution
 identity `R_beta^env chi_(p,q) = (1 / lambda_env(beta)) C_(Z_beta^env)
-chi_(p,q)` at every weight. This unnormalized identity follows from
-Schur orthogonality on `SU(3)` applied to the Peter-Weyl expansion `(T2)`
-of `Z_beta^env(W)`, **without** invoking the I3 normalization premise
+chi_(p,q)` at every weight. This unnormalized identity follows from the
+formal Schur/Peter-Weyl diagonal rule applied to the coefficient
+assignment `(T2)` of `Z_beta^env`, **without** invoking the I3 normalization premise
 `rho_(0,0) = 1`. The normalization premise is therefore removed from the
 load-bearing surface of this row.
 
@@ -599,9 +672,10 @@ unnormalized `(T3)` only.
   separately verifies that normalization by the actual trivial
   coefficient gives `R_beta^env / kappa_(0,0)(beta)`, not
   `R_beta^env`, unless `(KN)` is added.
-- The three cited dependencies (I1)+(I2)+(I3) and the upstream
-  transfer-operator authority are not touched; their status authority
-  remains with the audit pipeline.
+- The original three retained dependencies (I1)+(I2)+(I3) and the
+  upstream transfer-operator authority are not touched; their status
+  authority remains with the audit pipeline. The I4 bridge is added as a
+  proposed exact-support packet for independent review/audit.
 - The parent gate
   `gauge_vacuum_plaquette_residual_environment_identification_theorem_note`
   is not touched; its parent-level closure remains outside this narrow

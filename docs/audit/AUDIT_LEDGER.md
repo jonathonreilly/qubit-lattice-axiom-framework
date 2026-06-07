@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 725 |
+| **retained_bounded** | 726 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1274 |
+| unaudited | 1273 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1140 |
+| `audited_clean` | 1141 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1583 |
+| `unaudited` | 1582 |
 
 | claim_type | count |
 |---|---:|
@@ -975,6 +975,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `record_axiom_audit_application_map_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -14695,6 +14696,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of the Hilbert-Schmidt projection onto the identity line is alpha = <I_color, M_color>_HS / <I_color, I_color>_HS = Tr_color M_color / N_c, giving rho_singlet = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].  _(class `A`)_
 - **chain closes:** True — The conclusion follows from ordinary finite-dimensional orthogonal projection and the supplied SU(N_c) generator normalization. The note explicitly does not identify this projection fraction with kappa_EW or any physical matching rule.
 - **rationale:** The load-bearing step is a direct Hilbert-Schmidt projection identity, not a definition, renaming, external comparator, or tuned numerical match. The only cited authority needed for P4 supplies the SU(N_c) normalization convention and is provided as retained-grade decoration under the rubric. The runner source performs exact rational arithmetic for the identity, traceless-generator witnesses, normalization checks, sum rule, trace-zero iff zero-singlet condition, and non-claim boundary, with no helper imports and no hard-coded contested physical coefficient.
+- **auditor confidence:** high
+
+### `record_axiom_audit_application_map_2026-06-06`
+
+- **Note:** [`RECORD_AXIOM_AUDIT_APPLICATION_MAP_2026-06-06.md`](../../docs/RECORD_AXIOM_AUDIT_APPLICATION_MAP_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Record-application classifier for the seven listed lane shapes: Record-only support covers durable realized outcome, finite additivity/arbitrary finite-prefix readout/count, and post-record label consumption, while all other listed requirements remain separate gates.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-011941-1536b6e56e-record_axiom_audit_applicati`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If a row needs only durable finite additive readout/counts, Record can support that part through the approved minimal axiom surface; if it needs a producer, probability law, local observer access, regularity, source/action, gauge/color realization, chirality, rate, or dial selector, that part remains a separate gate.  _(class `A`)_
+- **chain closes:** True — Independently checking the displayed table as set intersections against the declared Record-supported gate set reproduces every supported and missing entry. The closure is limited to the bounded support map and does not promote downstream lanes or derive production, locality, chirality, color, rates, or dial selection.
+- **rationale:** The load-bearing step is finite set classification, not a first-principles numerical compute. The displayed table has no quantitative identities beyond the gate entries, and each entry matches supported = required ∩ Record-supported and missing = required \ Record-supported. The runner source performs the same source/anchor checks and set classifications, and its PASS=39/FAIL=0 output matches the independent table audit. Clean status applies only to the stated bounded classifier and not to any downstream audit verdict or repo-wide status write.
 - **auditor confidence:** high
 
 ### `record_classical_semigroup_boundary_2026-06-06`

@@ -25,9 +25,9 @@ It does BOTH of the two tests the campaign needs:
 
   PREDICTIVE TEST    : given only the lower-order connected series, compute what
                        each ansatz PREDICTS for the next connected coefficient.
-                       Written as a one-line call so that the moment the
-                       parallel cycle supplies the EXACT beta^6 (and later
-                       beta^7) coefficient, exact-vs-predicted is an immediate
+                       Written as a one-line call so that the moment a
+                       coefficient packet supplies beta^6 (and later beta^7),
+                       supplied-vs-predicted is an immediate
                        falsify-or-support of each ansatz.
 
 What this is NOT (honesty, non-negotiable)
@@ -37,14 +37,17 @@ This harness does NOT close beta=6 and must not be read as doing so.
   * 0.594 is a Monte-Carlo COMPARATOR (P_inf = 0.59400 +/- 0.00037, from
     `plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05`), NOT a derivation
     input. Nothing here is fitted to 0.594. The harness TESTS whether an
-    ansatz fixed by the LOW-order exact coefficients independently reaches it.
+    ansatz fixed by the LOW-order supplied coefficients independently reaches it.
 
-  * The current exact connected-coefficient packet in the repo supplies
-    d_5..d_11. These coefficients activate the predictive tests below. The
-    result is not beta=6 closure: the simple tadpole/geometric continuation
-    is falsified, and d-log-Pade is unstable rather than converged.
+  * The current connected-coefficient packet in the repo supplies d_6..d_11
+    as rational inputs. These coefficients activate the predictive tests below,
+    but this runner does not derive or audit-retain that coefficient packet.
+    The executable claim is conditional-on-supplied-coefficients harness
+    arithmetic. The result is not beta=6 closure: the simple
+    tadpole/geometric continuation is falsified, and d-log-Pade is unstable
+    rather than converged.
 
-  * A genuine resummation needs many exact connected coefficients; producing
+  * A genuine resummation needs many connected coefficients; producing
     them collides with the treewidth-29 infeasibility wall
     (`su3_wigner_l3_treewidth_infeasible_2026-05-04`, audited_conditional).
     This harness is the METHODOLOGY that will evaluate the route; not the route.
@@ -52,8 +55,8 @@ This harness does NOT close beta=6 and must not be read as doing so.
 Type: bounded_theorem (methodology). Status authority: independent audit lane
 only. No new tags, no new vocabulary, no promotion language.
 
-Load-bearing inputs (all retained / recomputed here for self-consistency)
--------------------------------------------------------------------------
+Load-bearing inputs and boundaries
+----------------------------------
   * J(beta) = int_{SU(3)} exp((beta/3) Re Tr U) dU via the exact order-3
     dominant-weight recurrence
       6(N+1)(N+4)(N+5) a_{N+1} = N(N+1) a_N + 2(2N+3) a_{N-1} + a_{N-2},
@@ -62,8 +65,9 @@ Load-bearing inputs (all retained / recomputed here for self-consistency)
      `plaquette_v1_picard_fuchs_ode_note_2026-05-05`).
   * P_1plaq(beta) = J'(beta)/J(beta); P_1plaq(6) = 0.4225317396 (retained).
   * d_5 = 1/472392 (retained order-beta^5 connected coefficient).
-  * Current exact higher connected coefficients d_6..d_11 from the landed
-    beta6 coefficient packet/cache.
+  * Supplied higher connected coefficients d_6..d_11 from the current beta6
+    coefficient packet/cache. This runner consumes those literals; it does not
+    provide a retained one-hop derivation of them.
 
 Run:
   python3 scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
@@ -164,7 +168,7 @@ MC_SIGMA = mp.mpf("0.00037")
 MC_COMPARATOR_4DP = mp.mpf("0.5934")     # the 4-dp canonical comparator quoted in the research map
 DELTA_TARGET = MC_COMPARATOR - P1_AT_6   # ~0.1715 (comparator-derived, not fitted)
 D5 = Fraction(1, 472392)                 # retained exact order-beta^5 connected coefficient
-CURRENT_EXACT_HIGHER: dict[int, str] = {
+SUPPLIED_HIGHER_COEFFS: dict[int, str] = {
     6: "7/5668704",
     7: "5/17006112",
     8: "5/272097792",
@@ -255,7 +259,7 @@ def physical_series_through(max_order: int) -> ConnectedSeries:
     series = ConnectedSeries(lowest_order=5)
     series.set_coeff(5, mp.mpf(D5.numerator) / mp.mpf(D5.denominator))
     for n in range(6, max_order + 1):
-        series.set_coeff(n, CURRENT_EXACT_HIGHER[n])
+        series.set_coeff(n, SUPPLIED_HIGHER_COEFFS[n])
     return series
 
 
@@ -344,7 +348,7 @@ def dlog_pade_predict_next(series: ConnectedSeries) -> tuple[Optional[mp.mpf], s
 
     One contiguous coefficient cannot fix a non-trivial continuation, so this
     honestly returns None until >= 2 contiguous coefficients are supplied.
-    This is the one-line call to make the moment the exact d_6 lands.
+    This is the one-line call to make once supplied d_6 lands.
     """
     h = series.shifted_h()
     if len(h) < 4:
@@ -415,7 +419,7 @@ def tadpole_geometric_predict_next(series: ConnectedSeries) -> tuple[Optional[mp
     rho = d_K / d_{K-1} and predicts d_{K+1} = rho * d_K.
 
     One contiguous coefficient gives no ratio -> returns None (honest null).
-    This is the one-line call the moment the exact d_6 lands (then it predicts
+    This is the one-line call once supplied d_6 lands (then it predicts
     d_7 from {d_5, d_6}).
     """
     cc = series.contiguous()
@@ -429,7 +433,7 @@ def tadpole_geometric_predict_next(series: ConnectedSeries) -> tuple[Optional[mp
 
 
 # ===========================================================================
-# 6. EXACT-VS-PREDICTED comparison
+# 6. SUPPLIED-VS-PREDICTED comparison
 # ===========================================================================
 def compare_against_exact(predicted: Optional[mp.mpf],
                           exact,
@@ -437,16 +441,16 @@ def compare_against_exact(predicted: Optional[mp.mpf],
                           coeff_label: str,
                           rel_tol: mp.mpf = mp.mpf("0.05")) -> Optional[bool]:
     """
-    Compare an ansatz's PREDICTED next connected coefficient against the EXACT
-    one supplied by the parallel cycle. Returns True (SUPPORT), False (FALSIFY),
-    or None (no prediction available yet). Prints the comparison line.
+    Compare an ansatz's PREDICTED next connected coefficient against the
+    supplied one. Returns True (SUPPORT), False (FALSIFY), or None (no
+    prediction available yet). Prints the comparison line.
 
     rel_tol is the support window (default 5% relative). A genuine continuation
     of the right analytic class should land well inside it; a miss by more than
     rel_tol falsifies the ansatz at this order.
     """
     if exact is None:
-        print(f"  [PENDING] {ansatz}: exact {coeff_label} not supplied yet "
+        print(f"  [PENDING] {ansatz}: supplied {coeff_label} not available yet "
               f"(predicted = {mp.nstr(predicted, 8) if predicted is not None else 'n/a'})")
         return None
     exact = mp.mpf(exact) if not isinstance(exact, mp.mpf) else exact
@@ -511,11 +515,15 @@ def main() -> int:
           cpt[1] == Fraction(1, 18), f"c_1 = {cpt[1]}")
     check("d_5 = 1/472392 (retained exact connected coefficient)",
           D5 == Fraction(1, 472392), f"d_5 = {mp.nstr(mp.mpf(1)/472392, 8)}")
-    check("current exact connected packet is populated through d_11",
-          set(CURRENT_EXACT_HIGHER) == {6, 7, 8, 9, 10, 11},
+    check("current supplied connected packet is populated through d_11",
+          set(SUPPLIED_HIGHER_COEFFS) == {6, 7, 8, 9, 10, 11},
           "d_6=7/5668704; d_7=5/17006112; d_8=5/272097792; "
           "d_9=-2035/264479053824; d_10=-10483/5289581076480; "
           "d_11=-13/3967185807360")
+    check("claim boundary is conditional-on-supplied-coefficients harness arithmetic",
+          True,
+          "d_6..d_11 are consumed as supplied literals; this runner does not derive "
+          "or retain the coefficient packet, the research map, or beta=6 closure")
     check("Delta(6) target from comparator = 0.594 - P_1plaq(6) ~ 0.1715 (comparator, NOT fitted)",
           abs(DELTA_TARGET - mp.mpf("0.17146826")) < mp.mpf("1e-6"),
           f"Delta_target = {mp.nstr(DELTA_TARGET, 8)} = 0.594(MC comparator) - {mp.nstr(P1_AT_6, 8)}")
@@ -590,9 +598,9 @@ def main() -> int:
     phys.set_coeff(5, mp.mpf(D5.numerator) / mp.mpf(D5.denominator))
     print("  Connected series Delta(beta) = d_5 beta^5 + d_6 beta^6 + d_7 beta^7 + ...")
     print(f"  Known: d_5 = 1/472392 = {mp.nstr(mp.mpf(1)/472392, 8)}")
-    print("  Current exact packet: d_6..d_11 are now supplied and evaluated below.")
+    print("  Current supplied packet: d_6..d_11 are now supplied and evaluated below.")
     for n in range(6, 12):
-        print(f"    d_{n} = {CURRENT_EXACT_HIGHER[n]}")
+        print(f"    d_{n} = {SUPPLIED_HIGHER_COEFFS[n]}")
     print()
 
     # 2a. FORWARD <P>(6) from the truncated known series (one term)
@@ -657,15 +665,15 @@ def main() -> int:
 
     # -----------------------------------------------------------------------
     section("4. CURRENT exact-coefficient predictive tests")
-    print("  The decisive test is now active: exact d_6..d_11 are supplied from the")
+    print("  The decisive test is now active: d_6..d_11 are supplied from the")
     print("  current beta6 coefficient packet. The harness evaluates the ansaetze against")
     print("  those coefficients without fitting to the 0.594 Monte-Carlo comparator.\n")
 
     exact_series = physical_series_through(11)
     n_known = len(exact_series.contiguous())
     highest = 4 + n_known
-    print(f"  Exact contiguous connected coefficients supplied: d_5 .. d_{highest} ({n_known} total).")
-    check("current physical series is contiguous through d_11",
+    print(f"  Supplied contiguous connected coefficients: d_5 .. d_{highest} ({n_known} total).")
+    check("current supplied physical series is contiguous through d_11",
           n_known == 7 and highest == 11,
           "the audit-stale PENDING configuration is gone; d_6..d_11 are live inputs")
 
@@ -793,11 +801,11 @@ def main() -> int:
     print("  * The d-log-Pade METHOD is sound on a controlled complex-pair proxy: it localizes")
     print("    the singularity (|beta_c|->5.70, off-axis) and reconstructs Delta(6) to <1e-3 by")
     print("    [10/10], and its predictive next-coefficient call is exact to ~1e-11 on the proxy.")
-    print("  * On the PHYSICAL series, the current exact d_5..d_11 packet is now consumed. The")
+    print("  * On the PHYSICAL series, the supplied d_5..d_11 packet is now consumed. The")
     print("    historical d_5-only PENDING surface is retired; predictive tests are live.")
     print("  * Tadpole/boosted-PT of the BARE single-plaquette series does NOT reach 0.594: it")
     print("    collapses to 0 or, convention-dependent, lands on the blocked 0.611 / 0.8740.")
-    print("  * CURRENT TEST STATUS: tadpole/geometric is FALSIFIED by the exact coefficients;")
+    print("  * CURRENT TEST STATUS: tadpole/geometric is FALSIFIED by the supplied coefficients;")
     print("    d-log-Pade is unstable rather than converged (d_9 and d_11 falsify while d_10")
     print("    narrowly supports). This harness evaluates the route; it does NOT close beta=6.")
     print("    0.594 is a Monte-Carlo comparator, never a derivation input.")

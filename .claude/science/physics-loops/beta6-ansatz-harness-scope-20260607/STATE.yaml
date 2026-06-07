@@ -1,0 +1,15 @@
+slug: beta6-ansatz-harness-scope-20260607
+target_claim_id: beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30
+base: origin/main
+status: ready_for_review_pr
+actual_current_surface_status: bounded-support
+active_route: narrow_to_conditional_supplied_coefficients
+files_touched:
+  - docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md
+  - scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
+  - logs/runner-cache/frontier_beta6_resummation_ansatz_test_2026_05_30.txt
+open_imports:
+  - retained coefficient-packet derivation for d_6..d_11
+  - beta=6 analytic-continuation closure
+next_exact_action: "Open review PR."
+stop_condition: "PR opened and verified."

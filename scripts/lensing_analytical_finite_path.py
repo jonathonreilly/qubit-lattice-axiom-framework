@@ -29,7 +29,16 @@ The question is not just "does some finite-path model fit?" but
 
 from __future__ import annotations
 
+import hashlib
 import math
+from pathlib import Path
+
+import lensing_long_path_test as long_path_test
+
+
+ROOT = Path(__file__).resolve().parents[1]
+LONG_PATH_RUNNER = Path(long_path_test.__file__).resolve()
+LONG_PATH_CACHE = ROOT / "logs/runner-cache/lensing_long_path_test.txt"
 
 
 def alpha_centered_surrogate(b, L, s=1.0):
@@ -105,6 +114,46 @@ MEASUREMENTS = {
 }
 
 
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def long_path_cache_current() -> bool:
+    if not LONG_PATH_CACHE.exists():
+        return False
+    text = LONG_PATH_CACHE.read_text(encoding="utf-8", errors="replace")
+    required = [
+        "===== runner cache v1 =====",
+        "runner: scripts/lensing_long_path_test.py",
+        f"runner_sha256: {sha256_file(LONG_PATH_RUNNER)}",
+        "status: ok",
+        "T_phys = 7.5",
+        "H=0.25 kubo_true:        slope = -1.4356",
+        "analytical (no fit):    slope = -1.7336",
+    ]
+    return all(snippet in text for snippet in required)
+
+
+def print_long_path_packet_check() -> bool:
+    print()
+    print("=" * 80)
+    print("LONG-PATH SOURCE PACKET")
+    print("=" * 80)
+    print(f"  source: scripts/{LONG_PATH_RUNNER.name}")
+    print(f"  cache: logs/runner-cache/{LONG_PATH_CACHE.name}")
+    ok = long_path_cache_current()
+    print(f"  cache SHA/current assertion: {'PASS' if ok else 'FAIL'}")
+    print("  required short-path facts:")
+    print("    T_phys = 7.5")
+    print("    H=0.25 kubo_true slope = -1.4356")
+    print("    finite-path prediction slope = -1.7336")
+    return ok
+
+
 def main():
     L_sur = 10.0
     x_src = 5.0
@@ -169,6 +218,8 @@ def main():
     print("explanation' is too strong. The missing ingredient is likely the actual")
     print("beam/path weighting of the detector-centroid observable, not just a plain")
     print("angle integral over a centered interaction segment.")
+    if not print_long_path_packet_check():
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

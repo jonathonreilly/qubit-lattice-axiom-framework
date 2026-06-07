@@ -60,6 +60,9 @@ The packet now exposes both load-bearing computations:
    [`scripts/lensing_analytical_finite_path.py`](../scripts/lensing_analytical_finite_path.py)
    and
    [`logs/runner-cache/lensing_analytical_finite_path.txt`](../logs/runner-cache/lensing_analytical_finite_path.txt).
+   The analytical runner imports `scripts/lensing_long_path_test.py` and checks
+   its SHA-pinned cache so the long-path source packet is visible from the
+   primary runner stdout.
 2. The Lane L++ long/short-path runner/cache for the `T_phys=7.5`
    and `T_phys=45` tests:
    [`scripts/lensing_long_path_test.py`](../scripts/lensing_long_path_test.py)

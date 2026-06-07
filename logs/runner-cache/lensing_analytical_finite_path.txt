@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lensing_analytical_finite_path.py
-runner_sha256: c15a10cc9ed40ca0dcc458a584de7b50bcb658be7554dc22d4e71ca11c945ef1
+runner_sha256: f1f719555333397b76d6c62aa9928ffb61e6ca901a8c76dacf7a92b8b9e30a67
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ================================================================================
@@ -46,6 +46,17 @@ So the finite-path idea is still useful, but the current 'exact analytical
 explanation' is too strong. The missing ingredient is likely the actual
 beam/path weighting of the detector-centroid observable, not just a plain
 angle integral over a centered interaction segment.
+
+================================================================================
+LONG-PATH SOURCE PACKET
+================================================================================
+  source: scripts/lensing_long_path_test.py
+  cache: logs/runner-cache/lensing_long_path_test.txt
+  cache SHA/current assertion: PASS
+  required short-path facts:
+    T_phys = 7.5
+    H=0.25 kubo_true slope = -1.4356
+    finite-path prediction slope = -1.7336
 
 ----- stderr -----
 

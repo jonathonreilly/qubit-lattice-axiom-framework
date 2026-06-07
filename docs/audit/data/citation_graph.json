@@ -81379,9 +81379,9 @@
     },
     "post_record_dynamics_authority_stack_map_2026-06-06": {
       "claim_id": "post_record_dynamics_authority_stack_map_2026-06-06",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "exact support / read-only synthesis map",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "post_record_directed_certificate_examples_2026-06-06",
         "post_record_directed_certificate_kernel_selection_firewall_2026-06-06",
@@ -81390,7 +81390,7 @@
         "post_record_admitted_sample_target_vector_interface_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4d5628817a15a5006ac410974674cd866765aceb8e2232193902e5b3c03f4327",
+      "note_hash": "a458c882cfd6eaabe7d666fe558289eb0295400e331b6b5aa68364720ec03fef",
       "path": "docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py",
       "title": "Post-Record Dynamics Authority Stack Map"
@@ -99807,20 +99807,20 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 891,
       "decoration": 1,
-      "meta": 269,
+      "meta": 270,
       "no_go": 134,
-      "none": 1487,
+      "none": 1486,
       "open_gate": 76,
       "positive_theorem": 196
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1297,
       "decoration": 1,
-      "meta": 269,
+      "meta": 270,
       "no_go": 247,
       "none": 460,
       "open_gate": 151,
-      "positive_theorem": 629
+      "positive_theorem": 628
     },
     "edge_count": 11295,
     "leaf_count": 1022,

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 720 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1355 |
+| unaudited | 1354 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 16 |
+| ~~audited_conditional~~ | 17 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1131 |
-| `audited_conditional` | 16 |
+| `audited_conditional` | 17 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1664 |
+| `unaudited` | 1663 |
 
 | claim_type | count |
 |---|---:|
@@ -1273,6 +1273,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11768,6 +11769,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Writing M = aI + b_1σ_1 + b_2σ_2 + b_3σ_3 gives {M,σ_j}=2aσ_j+2b_jI, so anticommuting with all three σ_j forces M=0.  _(class `A`)_
 - **chain closes:** True — The Pauli basis spans M_2(C), and the anticommutator equations independently force the scalar coefficient and each Pauli coefficient to vanish. This closes the stated single-site no-go without using temporal, gauge, multi-site, or larger Clifford structure.
 - **rationale:** The load-bearing step is elementary finite-dimensional matrix algebra over the accepted one-site M_2(C) premise and the retained Pauli Cl(3) representation input. Independent checking confirms σ_1σ_2σ_3=iI and confirms the linear anticommutator constraints have only the zero solution. The no-go is properly scoped to one single-site Pauli carrier and explicitly leaves larger chirality mechanisms outside its residual. The runner source performs actual matrix and linear-rank computations rather than merely printing expected constants.
+- **auditor confidence:** high
+
+### `nonlabel_grown_basin_note`
+
+- **Note:** [`NONLABEL_GROWN_BASIN_NOTE.md`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Seed 0 at drift=0.2 for restore values 0.60, 0.70, and 0.80, auditing only the frozen signed-source transfer rows and their zero, neutral, sign-orientation, double-source, and charge-exponent gates.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-164712-be249a0c10-nonlabel_grown_basin_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The geometry-sector / non-label architecture survives the nearest restore neighborhood at fixed drift = 0.2, with exact zero and neutral controls, correct signed response, and near-linear charge response.  _(class `B`)_
+- **chain closes:** False — Independent arithmetic on the displayed rows confirms the stated sign gates and approximate charge linearity, with plus/double exponents within about 4e-4 of one from the rounded table entries. The completed runner output, however, only verifies values imported from the frozen log and does not execute the live growth/field/propagation computation that would derive those rows.
+- **rationale:** The default runner path parses the frozen log and checks the row grid, zero/neutral gates, signs, double-source sign, exponent tolerance, and 3/3 count. The source does include a --recompute path that appears to perform the finite propagation calculation, and the helper's hard-coded EXPECTED_REPLAY constants are not used by that load-bearing path. But the restricted packet supplies only the successful frozen-log verification, so the bounded basin is not closed from a completed first-principles computation in the provided evidence.
 - **auditor confidence:** high
 
 ### `nonlinear_born_gravity_note`

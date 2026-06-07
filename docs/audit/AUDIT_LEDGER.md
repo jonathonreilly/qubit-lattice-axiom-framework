@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 741 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1297 |
+| unaudited | 1296 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
-| ~~audited_renaming~~ | 31 |
+| ~~audited_renaming~~ | 32 |
 | ~~audited_conditional~~ | 40 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -64,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
-| `audited_renaming` | 31 |
-| `unaudited` | 1608 |
+| `audited_renaming` | 32 |
+| `unaudited` | 1607 |
 
 | claim_type | count |
 |---|---:|
@@ -1474,6 +1474,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
@@ -17760,6 +17761,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The family has a real bounded basin: 5/15 tested rows pass exact zero and neutral controls, correct +1/-1 sign orientation, and near-linear double-source scaling.  _(class `C`)_
 - **chain closes:** True — The cached SHA-fresh runner output matches the note's counted pass set, drift coverage, and mean exponent, and the one-hop boundary dependency is retained_bounded. The conclusion must remain bounded to the tested finite sweep and does not support a family-wide or geometry-generic theorem.
 - **rationale:** The runner constructs the third cross-quadrant load-balanced connectivity, computes zero, plus, minus, neutral, double-source responses for all 15 drift/seed rows, and marks five rows as passing without hard-coded target pass values. The source note's numeric claims match the cached runner output: 5/15 passed rows, drift coverage [0.1, 0.2, 0.3], and mean passing exponent 0.999842. The upstream boundary note is retained_bounded and supports the narrow interpretation that edge failures are structural rather than control leakage.
+- **auditor confidence:** high
+
+### `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited only the source-bounded syntactic vocabulary registration and open-gate boundary, not the truth of monopole condensation, center-vortex percolation, string tension positivity, Wilson-loop area-law confinement, or any framework bridge.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-191628-a83c845607-thooft_1981_dual_superconduc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The row is only the syntactic registration packet P_THOOFT_REG: abelian-projection vocabulary, residual U(1)^(N-1) notation, monopole/dual-superconductor labels, center-vortex labels, symbolic action templates, and Wilson-loop area-law target notation.  _(class `E`)_
+- **chain closes:** True — The restricted claim closes as a definition-level catalogue of notation and disclaimers. It does not close any physics mechanism or framework identification, and the note explicitly leaves those as missing future bridge theorems.
+- **rationale:** The runner mostly verifies text presence plus tautological symbolic identities such as S_vortex = sigma a^2/g^2 and log(exp(-sigma Area)) + sigma Area = 0. The load-bearing move is not a first-principles derivation from retained authorities; it is the introduction and boundary-marking of a notation packet. That is appropriate for the stated open_gate scope, but under the rubric it is class E, so the legal terminal verdict is audited_renaming rather than audited_clean.
 - **auditor confidence:** high
 
 ### `three_family_card_note`

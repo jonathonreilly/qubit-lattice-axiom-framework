@@ -1,0 +1,30 @@
+loop_slug: rooted-spin-generation-entanglement-20260607
+date: 2026-06-07
+branch: physics-loop/rooted-spin-generation-entanglement-20260607
+base: origin/main
+current_goal: "Attack the sixth chirality-resolution target: can equivariant rooted spin-generation entanglement derive the generation selector?"
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: equivariant_rooted_spin_generation_entanglement
+cycle_count: 1
+block_count: 1
+hard_residual: "A non-equivariant physical C3-breaking or T-odd K-reality origin remains required."
+files_touched:
+  - docs/ROOTED_SPIN_GENERATION_ENTANGLEMENT_NO_GO_NOTE_2026-06-07.md
+  - scripts/frontier_rooted_spin_generation_entanglement_no_go_2026_06_07.py
+  - logs/runner-cache/frontier_rooted_spin_generation_entanglement_no_go_2026_06_07.txt
+  - .claude/science/physics-loops/rooted-spin-generation-entanglement-20260607/
+open_imports:
+  - "Physical non-equivariant C3-breaking rooting map if used to move spin chirality into generation."
+  - "T-odd K-reality origin if used to choose delta=0."
+  - "Spin-sector selection rule if a polarized trace is used."
+no_go_routes:
+  - "C3-equivariant rooted spin-generation embedding derives the generation selector."
+runner_result: "PASS=21 FAIL=0"
+review_loop_disposition: pass
+audit_results_modified: false
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3143"
+next_exact_action: "Pivot to the T-odd K-reality origin."
+stop_condition: "Route 6 pruned; next route is the T-odd K-reality origin."

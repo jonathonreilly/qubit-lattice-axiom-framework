@@ -106,9 +106,10 @@ def main() -> None:
     )
 
     check(
-        "upper wrapper is explicitly named-import-only",
-        has(upper, "Named Non-Derivation Imports")
-        and has(upper, "bounded named-import wrapper"),
+        "upper wrapper is repaired dependency wrapper",
+        has(upper, "dependency repair wrapper")
+        and has(upper, "2026-06-07 dependency-edge repair")
+        and has(upper, "audited direct one-hop support packets"),
     )
     check(
         "upper wrapper records independent audit authority",
@@ -131,9 +132,9 @@ def main() -> None:
     )
     check(
         "upper wrapper forbids internal-derivation overread",
-        has(upper, "This is NOT a re-derivation of Bertrand's theorem")
-        and has(upper, "This is NOT a re-derivation of the atomic-stability upper bound")
-        and has(upper, "This is NOT a framework-level derivation of `d = 3`"),
+        has(upper, "not a complete re-derivation of Bertrand's theorem")
+        and has(upper, "not a complete re-derivation of the atomic-stability upper bound")
+        and has(upper, "not a framework-level derivation of `d = 3`"),
     )
 
     check(

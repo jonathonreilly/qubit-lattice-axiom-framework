@@ -1,0 +1,26 @@
+Dimension upper-bound dependency repair
+============================================================
+[PASS] wrapper file exists (docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
+[PASS] lower file exists (docs/DIMENSION_SELECTION_NOTE.md)
+[PASS] bertrand file exists (docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)
+[PASS] coulomb file exists (docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)
+[PASS] gate file exists (docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md)
+[PASS] audit ledger data exists for status inspection
+[PASS] lower ledger status is audited_clean/retained_bounded (got audited_clean/retained_bounded)
+[PASS] bertrand ledger status is audited_clean/retained_bounded (got audited_clean/retained_bounded)
+[PASS] coulomb ledger status is audited_clean/retained_bounded (got audited_clean/retained_bounded)
+[PASS] gate ledger status is audited_clean/retained_bounded (got audited_clean/retained_bounded)
+[PASS] wrapper has 2026-06-07 dependency repair section
+[PASS] wrapper directly cites Bertrand support packet
+[PASS] wrapper directly cites Coulomb support packet
+[PASS] wrapper directly cites D3 composition gate
+[PASS] wrapper preserves bounded-support firewall
+[PASS] lower note remains lower-bound only
+[PASS] Bertrand support is scoped to circular-orbit stability
+[PASS] Coulomb support is scoped to Green-kernel scaling
+[PASS] gate states current finite lower set and import composition
+[PASS] lower ∩ Bertrand = {3}
+[PASS] lower ∩ weak atomic stability = {3,4}
+[PASS] lower ∩ strict atomic spectrum = {3}
+============================================================
+SUMMARY: PASS=22 FAIL=0

@@ -1,0 +1,24 @@
+loop: dimension-upper-bound-dep-repair-20260607
+branch: physics-loop/dimension-upper-bound-dep-repair-20260607
+base: origin/main
+current_goal: "Repair the conditional dimension upper-bound wrapper by wiring audited one-hop dependency packets."
+target_status: exact-support
+cycle_count: 1
+active_route: "source-side dependency repair"
+hard_residual: "Independent audit must decide whether the repaired wrapper clears the conditional row."
+files_touched:
+  - docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
+  - docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md
+  - scripts/dimension_upper_bound_dependency_repair_2026_06_07.py
+  - scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py
+  - logs/runner-cache/dimension_upper_bound_dependency_repair_2026_06_07.txt
+  - logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt
+open_imports:
+  - "full framework-internal Bertrand theorem remains outside scope"
+  - "framework-native electromagnetic/hydrogen spectrum remains outside scope"
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: "local repair runner PASS=22 FAIL=0; refreshed D3 gate PASS=35 FAIL=0; independent review-loop/audit not run"
+pr_status: pending
+next_exact_action: "Package PR."
+stop_condition: "Block complete when PR is open."

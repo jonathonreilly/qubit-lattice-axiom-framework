@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lh_template_i3_independence_discriminator.py
+runner_sha256: 8858a3c7db978c60f68a6b34091d97de929e3b9d2a3da549c7cc09ef37da140a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+============================================================================
+LH MATTER-TEMPLATE I3-INDEPENDENCE DISCRIMINATOR
+============================================================================
+
+----------------------------------------------------------------------------
+I1 (retained, graph_first_su3): Sym^2/Anti^2 split under tau
+----------------------------------------------------------------------------
+  [PASS] tau^2 = I_4
+  [PASS] P_sym + P_anti = I
+  [PASS] P_sym P_anti = 0
+  [PASS] rank Sym^2 = 3
+  [PASS] rank Anti^2 = 1
+  [PASS] sym basis vec 1 is +1 eigenvector of tau
+  [PASS] sym basis vec 2 is +1 eigenvector of tau
+  [PASS] sym basis vec 3 is +1 eigenvector of tau
+  [PASS] anti vec is -1 eigenvector of tau
+
+----------------------------------------------------------------------------
+I2 (retained, graph_first_su3): su(3) on Sym^2 via Gell-Mann; trivial on Anti^2
+----------------------------------------------------------------------------
+  [PASS] [l1,l2] = 2i l3 (su(3) structure)
+  [PASS] [l4,l5] = i(l3 + sqrt3 l8)
+  [PASS] l1 hermitian & traceless
+  [PASS] l2 hermitian & traceless
+  [PASS] l3 hermitian & traceless
+  [PASS] l4 hermitian & traceless
+  [PASS] l5 hermitian & traceless
+  [PASS] l6 hermitian & traceless
+  [PASS] l7 hermitian & traceless
+  [PASS] l8 hermitian & traceless
+  [PASS] B2: su(3) acts as 0 on the 1-dim Anti^2 block (singlet)
+  [PASS] B1: su(3) acts non-trivially on Sym^2 (3-dim)
+  [PASS] B1: only su(3) irreps of dim 3 are (1,0)=3 and (0,1)=3bar  (weights=[(0, 1), (1, 0)])
+
+----------------------------------------------------------------------------
+I4 (retained, graph_first_selector): weak SU(2) commutes with color su(3)
+----------------------------------------------------------------------------
+  [PASS] B3: [SU(2)_weak, su(3)_color] = 0  (product structure SU(2) x SU(3))
+
+----------------------------------------------------------------------------
+B3: LH-doublet sector decomposes as (2,3) + (2,1), dims 6 + 2
+----------------------------------------------------------------------------
+  [PASS] (2,3) block dim = 6
+  [PASS] (2,1) block dim = 2
+  [PASS] (2,3) + (2,1) = full LH sector C^8
+
+----------------------------------------------------------------------------
+I3-INDEPENDENCE: template derived without the +1:(-3) eigenvalue ratio
+----------------------------------------------------------------------------
+  [PASS] (2,3) dim 6 = 2*3 from rep dims alone (no ratio used)
+  [PASS] (2,1) dim 2 = 2*1 from rep dims alone (no ratio used)
+  [PASS] I3 ratio +1:(-3) is the SEPARATE traceless-U(1) corollary (6a+2b=0)  (used for hypercharge ratio, not the template)
+
+============================================================================
+VERDICT
+============================================================================
+  TEMPLATE DERIVED FROM RETAINED-ONLY SUBSTRATE.
+  B1 (Sym^2 = fundamental 3), B2 (Anti^2 = singlet 1), and
+  B3 (LH sector = (2,3) + (2,1), dims 6+2) follow from I1+I2
+  (graph_first_su3_integration, retained) and I4
+  (graph_first_selector_derivation, retained) ALONE. The decoration-
+  grade I3 eigenvalue ratio is NOT load-bearing for the template; it
+  feeds only the separate hypercharge-ratio corollary.
+
+  Consequence: the triangulation's R1 (LH template) is retained-
+  derived content, not an independent assumption. The only genuine
+  residual of the dimensionless SM gauge identity is R2 (absolute
+  normalization) -- the blocked a/Planck scale freedom.
+
+============================================================================
+PASS=29 FAIL=0
+
+----- stderr -----
+

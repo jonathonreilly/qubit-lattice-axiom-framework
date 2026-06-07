@@ -1,0 +1,21 @@
+loop_slug: missing-audited-cache-batch-20260607
+date: 2026-06-07
+branch: physics-loop/missing-audited-runner-restore-20260607
+base: origin/main@fbf4dfbedf8c7add83c179756584d9fc983f4488
+mode: campaign_block
+target_status: exact-support
+actual_current_surface_status: cache-refresh-only
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: create missing cache files for four audited runner rows
+files_touched:
+  - logs/runner-cache/frontier_lh_template_i3_independence_discriminator.txt
+  - logs/runner-cache/frontier_positivity_orientation_selects_c3_discriminator.txt
+  - logs/runner-cache/frontier_universal_gr_invariant_frame_obstruction.txt
+  - logs/runner-cache/k_dependence_fixed_window_review.txt
+open_imports:
+  - none added
+review_disposition: pass
+pr_status: pending_create
+next_exact_action: open review PR, then repair the remaining observable-P1 internal failure or hard conditional rows
+stop_condition: stop this block after PR creation and continue campaign scan

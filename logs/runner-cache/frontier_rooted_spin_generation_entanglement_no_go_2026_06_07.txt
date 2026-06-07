@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rooted_spin_generation_entanglement_no_go_2026_06_07.py
+runner_sha256: f8f6529eeb816dc83c2c3fde351cbc701ea5c53656a52e071e4263566799658d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+[PASS] C has order three
+[PASS] spin gamma5 is traceless
+[PASS] natural gamma5 embedding commutes with generation S
+[PASS] natural gamma5 embedding is C3-invariant
+[PASS] unpolarized spin trace of gamma5 embedding is zero
+[PASS] trivial-spin embedding is equivariant exactly when spin is generation-independent
+[PASS] trivial-spin induced gamma5 is scalar on generation :: induced=Matrix([[c**2 - d**2, 0, 0], [0, c**2 - d**2, 0], [0, 0, c**2 - d**2]])
+[PASS] normalized trivial-spin embedding still induces only a scalar
+[PASS] generation-dependent spin embedding can be non-scalar before equivariance
+[PASS] equivariance residual detects unequal spin labels
+[PASS] equivariant generation-dependent embedding collapses to scalar
+[PASS] equivariance constraints are exactly orbit-constant spin labels
+[PASS] sample B_break is Hermitian
+[PASS] sample B_break does not commute with S
+[PASS] C3 twirl makes B central
+[PASS] C3-twirled B commutes with S
+[PASS] C3 twirl removes the noncommuting selector part
+[PASS] unpolarized trace of off-diagonal spin entanglement is zero
+[PASS] polarized spin trace can expose B only after choosing a spin sector
+[PASS] exposed B then carries the supplied C3-breaking
+[PASS] equivariant rooting exposes no generation chirality selector :: native_data_keys=['equivariant_induced', 'natural_commutator', 'twirled_breaker_commutator', 'unpolarized_trace']
+SCORECARD: PASS=21 FAIL=0
+
+----- stderr -----
+

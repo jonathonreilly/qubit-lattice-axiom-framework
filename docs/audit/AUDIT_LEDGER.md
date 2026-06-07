@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 737 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1308 |
+| unaudited | 1307 |
 | meta | 310 |
 | ~~audited_numerical_match~~ | 15 |
-| ~~audited_renaming~~ | 30 |
+| ~~audited_renaming~~ | 31 |
 | ~~audited_conditional~~ | 36 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -64,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
-| `audited_renaming` | 30 |
-| `unaudited` | 1618 |
+| `audited_renaming` | 31 |
+| `unaudited` | 1617 |
 
 | claim_type | count |
 |---|---:|
@@ -1454,6 +1454,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_dynamics_campaign_closeout_index_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_production_dynamics_needed_row_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -13838,6 +13839,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Two unbounded completions can agree on every bounded record visible to the finite certificate while disagreeing on the tail statistic or limiting law.  _(class `A`)_
 - **chain closes:** True — Independently, the zero-tail completion has length-n density 3/n for n>=4, hence limit 0, while the one-tail completion has density (n-1)/n, hence limit 1, despite sharing the full four-site prefix. Therefore any certificate depending only on that finite prefix cannot select a unique unbounded limiting law.
 - **rationale:** The source presents a direct finite-prefix counterexample, not a definition substitution or tuned numerical match. The displayed quantitative identities check out independently: prefix count 3, frequency 3/4, long-window densities 3/20 and 19/20, and limiting densities 0 and 1. The runner genuinely instantiates the two completions and verifies the finite indistinguishability and tail divergence; its hard-coded route-scope flags are not the load-bearing mathematical step. The no-go is correctly narrow and explicitly leaves supplied law, projective consistency, monotone exhaustion, direct-limit compatibility, and tightness/compactness routes open.
+- **auditor confidence:** high
+
+### `post_record_flow_thermal_stable_setting_certificate_2026-06-06`
+
+- **Note:** [`POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md`](../../docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the source-side stable-setting certificate semantics and read-only row-count/lane classification for current flow_or_thermal_stability ledger rows, with the stated firewall that this does not select a dial or derive dynamics.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-184937-22382151e1-post_record_flow_thermal_sta`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** supplied dial domain + supplied flow, score, or thermal rule + supplied stability predicate + exact finite/algebraic check => stable-setting support under that supplied rule  _(class `E`)_
+- **chain closes:** False — The packet closes only by stipulating the supplied stable-setting interface and checking ledger/slice bookkeeping. The missing theorem step is an independent derivation from the Record/framework baseline that the stable-setting support relation follows rather than being a definition.
+- **rationale:** The displayed quantitative inventory is internally consistent: 18+3+4+14+19=58, the helper totals 58+36=94 and 105+94+45+2=246, and the toy score, flow, and thermal examples check algebraically. But the load-bearing implication is the introduction of a certificate semantics: complete supplied evidence is labeled stable-setting support, while selected-dial status is separately blocked. The helper chain performs regex ledger bucketing and compares against hard-coded expected counts; it is cross-note/bookkeeping verification, not first-principles physics computation from the axiom baseline.
 - **auditor confidence:** high
 
 ### `post_record_measure_weight_normalization_subdivision_2026-06-06`

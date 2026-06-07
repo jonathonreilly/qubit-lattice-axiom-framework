@@ -1,0 +1,29 @@
+loop_slug: flavor-value-capstone-boundary-20260607
+goal: "Repair flavor_value_campaign_capstone_four_channel by preserving finite C3 coordinate algebra while removing complete-account and physical channel overclaims."
+target_claim_id: flavor_value_campaign_capstone_four_channel_2026-05-31
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: finite_coordinate_boundary
+files_touched:
+  - docs/FLAVOR_VALUE_CAMPAIGN_CAPSTONE_FOUR_CHANNEL_2026-05-31.md
+  - scripts/flavor_four_channel_reframe_validated_2026_05_31.py
+  - logs/runner-cache/flavor_four_channel_reframe_validated_2026_05_31.txt
+  - .claude/science/physics-loops/flavor-value-capstone-boundary-20260607/
+open_imports:
+  - "Axiom-to-H construction for the physical charged-lepton carrier."
+  - "Retained lane/channel bridge from finite coordinates to physical gauge, Yukawa, CP, anomaly, or flavor observables."
+  - "Retained eta=2/9 derivation in the restricted packet."
+  - "Readout-convention selection."
+retired_imports:
+  - "Complete charged-lepton flavor account."
+  - "Physical channel assignments from finite coordinate algebra alone."
+runner_status:
+  command: "PYTHONPATH=scripts python3 scripts/flavor_four_channel_reframe_validated_2026_05_31.py"
+  result: "SCORECARD PASS=5 FAIL=0"
+audit_data_touched: false
+review_loop_disposition: "not run; reviewer-owned review/landing path"
+next_exact_action: "Reviewer should assess whether the row is now a bounded finite-coordinate theorem with physical channel/readout bridges explicit."
+stop_condition: "science block packaged and PR opened"

@@ -1,9 +1,9 @@
-===== runner cache v2 =====
+===== runner cache v1 =====
 runner: scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py
 runner_sha256: 076a8b3f4db91991051132a0ea861347d1ed36878be44f49e6418b65c111b8c0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 [PASS] C1 HS split: ||I||^2=3, ||J-I||^2=6, <I,J-I>_HS=0

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 203 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 716 |
+| **retained_bounded** | 717 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1364 |
+| unaudited | 1363 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1127 |
+| `audited_clean` | 1128 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1673 |
+| `unaudited` | 1672 |
 
 | claim_type | count |
 |---|---:|
@@ -423,6 +423,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_native_beta_no_half_attractor_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5740,6 +5741,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The displayed checks are agnostic to the det_C versus det_R count: OS Gram positivity holds for both count realizations, the Bargmann complex structure is central iI_3 rather than J_cs, and the Hermitian readout identity Q=(1+2r)/3 holds for the tested r values.  _(class `A`)_
 - **chain closes:** True — The narrow claim closes from the displayed finite matrices and formulas. The excluded stronger bridge from these checks to det_C selection or to fixing r=1/2 is not needed and is explicitly outside scope.
 - **rationale:** The runner performs actual finite matrix checks rather than merely printing constants, and there are no helper imports or external comparators. Independently, G(t_i+t_j) factors as a positive outer product, so the two-real block is just two PSD copies; (C-C^2)/sqrt(3) has eigenvalues 0,±i and is not central iI_3; and eigenvalues 1+2β,1-β,1-β give Q=(3+6β^2)/9=(1+2r)/3. These computations establish only the repaired bounded nonselection/readout-class claim, not the superseded exhaustion claim.
+- **auditor confidence:** high
+
+### `flavor_missing_axiom_carrier_measure_note_2026-05-30`
+
+- **Note:** [`FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md`](../../docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite generator-channel Hilbert-Schmidt algebra and the bounded Record statement that additive two-sector readout coordinates do not select the Koide weight by themselves.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-162453-cb962038f8-flavor_missing_axiom_carrier`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If equal Hilbert-Schmidt energy is supplied across the two generator channels, then N a^2 = N(N-1)b^2 and r = b^2/a^2 = 1/(N-1), while finite Record additivity leaves d/(u+d)=p arbitrary.  _(class `A`)_
+- **chain closes:** True — The finite Hilbert-Schmidt identities and ratio algebra close directly from the displayed matrices and equations. The claimed positive value is explicitly conditional on a supplied generator-channel Hilbert-Schmidt scoring rule, and the note correctly preserves that boundary.
+- **rationale:** The load-bearing finite algebra is an algebraic identity check: ||I_N||^2=N, ||J_N-I_N||^2=N(N-1), orthogonality, and equal supplied channel energy imply r=1/(N-1). The Record-side non-selection claim also closes algebraically because d=p u/(1-p) realizes any normalized two-sector coordinate p in (0,1). The runner source performs symbolic and matrix checks rather than merely printing constants, though its source-guard reads unprovided notes; that guard is not needed for the load-bearing finite algebra audited here.
 - **auditor confidence:** high
 
 ### `flavor_native_action_predicts_q1_2026-06-02`

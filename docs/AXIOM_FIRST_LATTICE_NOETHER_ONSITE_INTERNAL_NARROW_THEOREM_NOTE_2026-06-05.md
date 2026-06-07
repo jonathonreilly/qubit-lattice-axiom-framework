@@ -30,6 +30,22 @@ companion runner that reproves every load-bearing fact from primitives. It does
 **not** retag or promote the parent row; it states a corrected and narrowed
 bounded theorem suitable for independent re-audit.
 
+### 2026-06-07 authority split
+
+The later source
+[`AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06.md`](AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06.md)
+has now isolated and independently audited the abstract bilinear part of this
+packet: finite matrix-unit continuity, global number-charge conservation,
+orientation antisymmetry, and the exact coefficient-support current envelope.
+That abstract row is the retained authority for the general identities.
+
+With that authority split out, this note's remaining role is carrier-specific
+and explicitly bounded: on the supplied staggered/Kawamoto-Smit exhibit, it
+checks that the onsite U(1) variation is a nearest-neighbour bilateral current,
+that the physical sign is fixed by `d rho/dt + div j = 0`, and that site-mixing
+generators remain outside the onsite/internal theorem. The staggered carrier
+and physical density/readout bridge are not derived here.
+
 ## Claim
 
 > **Claim (onsite/internal lattice Noether, sign-fixed by continuity).** Let
@@ -74,13 +90,15 @@ bounded theorem suitable for independent re-audit.
 >   argument of (P1) does not apply to them.
 
 This narrows the parent's general lattice Noether identity (parent (N3),
-arbitrary `T^A`) to the onsite/internal case, where the current support is
-controlled by the Hamiltonian support envelope, and
-replaces the parent's convention-set U(1) sign (parent formula (4), fixed in the
-parent's Step 4a by an ad-hoc `-i times imaginary-generator` rule) by a
-sign **derived** from the continuity equation. The corrected formula (4*) has
-the **same sign** as the parent's formula (4); what changes is that the sign is
-now forced rather than conventional.
+arbitrary `T^A`) to the onsite/internal case. The abstract support-envelope and
+continuity identities are now delegated to the retained abstract bilinear
+theorem cited above. This note then specializes those identities to the supplied
+staggered nearest-neighbour exhibit and replaces the parent's convention-set
+U(1) sign (parent formula (4), fixed in the parent's Step 4a by an ad-hoc
+`-i times imaginary-generator` rule) by a sign **derived** from the continuity
+equation. The corrected formula (4*) has the **same sign** as the parent's
+formula (4); what changes is that the sign is now forced rather than
+conventional on the supplied exhibit.
 
 ## 0. Honest framing up front
 
@@ -107,8 +125,10 @@ now forced rather than conventional.
   consistent with the parent's own Step 4b/Step 5 treatment of the staggered
   shift.
 - This note does not derive the admitted staggered/Grassmann carrier, the
-  Kawamoto-Smit phase form, or anomaly cancellation. Those remain the same
-  admitted/open items the parent already carries.
+  Kawamoto-Smit phase form, the physical density/readout bridge, or anomaly
+  cancellation. Those remain the same admitted/open items the parent already
+  carries. The retained abstract bilinear theorem supplies only the carrier-free
+  finite matrix-unit identities; it does not supply the staggered exhibit.
 
 ## 1. Setup: the number-conserving bilinear algebra
 
@@ -128,7 +148,13 @@ with anticommutation and per-site Fock dimension 2, and the Berezin determinant
 readout — is supplied by the retained substep-1 narrow theorem listed in §6; the
 bilinear current here is built on that surface.
 
-## 2. Arbitrary-bilinear symbolic continuity (the E5 replacement)
+## 2. Arbitrary-bilinear symbolic continuity (retained authority + local replay)
+
+The abstract content of this section is now supplied by the retained source
+[`AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06.md`](AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06.md).
+The runner in the present note keeps the same symbolic replay as a guardrail,
+but audit of this carrier-specific packet need not treat the abstract
+matrix-unit identity as an open import.
 
 For a **fully symbolic** bilinear `H = sum_{ij} c_{ij} E_{ij}` (no numeric
 entries) and the global U(1)/onsite-internal generator `Q = sum_p E_{pp}`, the
@@ -232,6 +258,11 @@ narrow theorem.
 - The framework axiom node (Lattice/Quantum/Record), supplying the `Z^3` site
   set with shift action and the per-site qubit/`Cl(3,0)` carrier:
   [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md).
+- The abstract finite matrix-unit continuity theorem, supplying the general
+  bilinear continuity identity, global number-charge conservation, orientation
+  antisymmetry, and exact Hamiltonian coefficient support envelope:
+  [`AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06.md`](AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06.md)
+  (audited retained).
 - The finite-Grassmann partition with per-site `(chi_x, chibar_x)` generators,
   anticommutation, per-site Fock dimension 2, and the Berezin determinant
   readout — the algebraic surface on which the bilinear current is built:
@@ -269,14 +300,15 @@ narrow theorem.
 ### Source-note boundary
 
 **Hypothesis set used:** (1) the framework axiom node (`Z^3` site set + shift
-action, per-site qubit carrier); (2) the finite-Grassmann/operator carrier
-(per-site `(chi_x, chibar_x)`, Fock dim 2, Berezin readout) from the retained
-substep-1 narrow theorem; (3) the admitted staggered Kawamoto-Smit carrier (open
-gate, named); (4) the bilinear commutator identity `(B)` (reproven on Fock
-space); (5) the physical number density `rho_x = chibar_x chi_x` as the U(1)
-charge density. No PDG, fitted, measured, lattice-MC, `beta = 6`, or `g_bare`
-value is consumed as a derivation input; the staggered carrier mass is an
-arbitrary positive bookkeeping constant.
+action, per-site qubit carrier); (2) the retained abstract bilinear continuity
+theorem for the matrix-unit identities; (3) the finite-Grassmann/operator
+carrier (per-site `(chi_x, chibar_x)`, Fock dim 2, Berezin readout) from the
+retained substep-1 narrow theorem; (4) the admitted staggered Kawamoto-Smit
+carrier (open gate, named); (5) the physical number density
+`rho_x = chibar_x chi_x` as the U(1) charge density on that supplied exhibit.
+No PDG, fitted, measured, lattice-MC, `beta = 6`, or `g_bare` value is consumed
+as a derivation input; the staggered carrier mass is an arbitrary positive
+bookkeeping constant.
 
 **Forbidden-imports check:** this note introduces **no** new axiom, primitive,
 repo vocabulary, or class tag. It uses only repo-canonical terms

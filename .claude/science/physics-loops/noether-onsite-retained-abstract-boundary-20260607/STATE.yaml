@@ -1,0 +1,30 @@
+loop_slug: noether-onsite-retained-abstract-boundary-20260607
+branch: physics-loop/noether-onsite-retained-abstract-boundary-20260607
+base: origin/main
+started_at: 2026-06-07
+goal: >
+  Repair the audited conditional onsite/internal Noether row by making the
+  retained abstract bilinear continuity theorem the authority for carrier-free
+  identities and preserving the staggered sign/locality checks as bounded
+  supplied-carrier exhibit support.
+target_claim_id: axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: retained_abstract_authority_split
+files_touched:
+  - docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
+  - logs/runner-cache/audit_companion_lattice_noether_onsite_internal_2026_06_05.txt
+imports_retired:
+  - open/duplicated abstract bilinear continuity import
+open_imports:
+  - supplied staggered/Kawamoto-Smit exhibit
+  - physical density/readout bridge on the staggered carrier
+  - site-mixing generator current theorem
+verification:
+  - command: PYTHONPATH=scripts python3 scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
+    result: TOTAL 14 PASS / 0 FAIL, BOUNDARY GUARD PASS
+pr_status: pending
+next_exact_action: Open review PR for this authority split repair.

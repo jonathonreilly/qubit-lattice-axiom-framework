@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/flavor_detR_default_full_exercise_2026_05_30.py
+runner_sha256: d743ce8253658eaac751e152c01d9a0fffb04fb824a6da23ab1d2afe29b0f39a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 [PASS] X1 substrate i generation-blind ([i*I3,C]=0) + <i*I3,G_U1>_HS=0 -> no descended U(1)
 [PASS] X2 C^3=I quantizes U(1)_b: (e^{ia}C)^3=I only at a in {0,2pi/3,4pi/3}
 [PASS] X3 (Z_2)^3 corner amplitudes are +/-1 (REAL) -> honestly real R[Z3]
@@ -14,3 +22,6 @@ under a supplied beta=0 tracial reference, the trace/dimension read gives Q=1. C
 the equal-block input is not the chirality gate, not a U(1) symmetry, and not a holomorphic
 measure; it is the block-vs-dimension counting choice the trace permits but does not rank.
 OPEN: beta=0 tracial generation reference vs finite-beta Gibbs remains unclosed.
+
+----- stderr -----
+

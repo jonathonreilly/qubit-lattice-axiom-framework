@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 732 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1323 |
+| unaudited | 1322 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,21 +60,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1149 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1632 |
+| `unaudited` | 1631 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1355 |
+| `bounded_theorem` | 1356 |
 | `decoration` | 53 |
 | `meta` | 317 |
 | `no_go` | 319 |
 | `open_gate` | 135 |
-| `positive_theorem` | 774 |
+| `positive_theorem` | 773 |
 
 | criticality | count |
 |---|---:|
@@ -1295,6 +1295,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6456,6 +6457,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The explicit free massive Dirac/Poincare generators satisfy the stated Lorentz and Poincare commutators, preserve the positive mass shell and invariant measure, and give the CAR-relabelled finite-mode Fock Hamiltonian a lower bound.  _(class `A`)_
 - **chain closes:** True — Within the note's bounded scope, the displayed identities reduce to explicit matrix and differential-operator algebra over definitions given in the packet. The note explicitly excludes OS reconstruction, essential self-adjointness, spin-statistics, and lattice-derived Lorentz symmetry, so no missing downstream bridge is needed for the audited claim.
 - **rationale:** The load-bearing content is a genuine class A algebraic closure check, not a definition, renaming, tuned numerical match, or external comparator. The runner output reports all eight checks passing, and the provided source implements substantive gamma-matrix, finite-representation, mass-shell, measure, spectrum, and boost-covariance computations rather than printing fixed results. The displayed signs and normalizations in the source note are consistent with the stated mostly-minus conventions. The clean verdict is limited to the bounded textbook free-field packet and does not promote any excluded reconstruction or lattice-origin claim.
+- **auditor confidence:** high
+
+### `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07`
+
+- **Note:** [`FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md`](../../docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded free one-particle Wigner action on the supplied positive-mass-shell continuum carrier H_1 = L^2(H_m^+, d^3p/(2E); C^2), excluding lattice derivation, spin-statistics, interactions, or status promotion.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-181620-e4a6cc799c-free_dirac_wigner_action_str`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For compactly supported smooth psi, the phase, Lorentz pullback, and SU(2) carrier vary pointwise continuously near the identity and are dominated on a common compact support, so dominated convergence gives ||U(a,Lambda)psi - psi|| -> 0, then unitary density extends this to H_1.  _(class `A`)_
+- **chain closes:** False — The dense-carrier dominated-convergence and epsilon/3 extension argument is standard once the invariant mass-shell measure, smooth standard boosts, Wigner cocycle, and continuous unitary SU(2) little-group carrier are granted. In the restricted packet those ingredients are asserted or referenced to an unprovided companion representation packet rather than derived from an included authority.
+- **rationale:** The load-bearing continuity bridge is a class-A functional-analytic closure over supplied Wigner-action data, and the displayed cocycle algebra is consistent. However, the packet does not include the cited companion derivation of Lorentz-invariant d^3p/(2E), Wigner rotation membership/continuity, or the full 3+1 carrier facts; the runner mostly checks anchors plus a 1+1 proxy and same-axis SU(2) identities. Therefore the bridge is valid only conditional on those missing mass-shell/Wigner carrier premises.
+- **open / conditional deps cited:**
+  - `FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`
 - **auditor confidence:** high
 
 ### `free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30`

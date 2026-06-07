@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py
-runner_sha256: 179dcd6cd90c867f80c3f34b8286f0a014fc29d189adbd47a967b349effa8671
+runner_sha256: 932fc9bc0dd430a89282ffec8bc66d88b03c9f32f903a96f1c02627512a3e25f
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================================
-Interacting emergent Lorentz: velocity anisotropy is an ATTRACTIVE IR fixed point;
-Collins' 2-parameter naturalness gate reduces to ONE IR-attractive, hierarchy-suppressed number
+Interacting emergent Lorentz: velocity anisotropy is an ATTRACTIVE IR fixed point
+inside the supplied one-loop model; Collins' gate reduces to ONE conditional scalar
 ==============================================================================================
 
 ----------------------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ Part C: canonical continuous time FIXES c_t -> the gate reduces to ONE number
 Part D: HONEST residual -- the power-divergent UV piece (Collins), scoped not solved
 ----------------------------------------------------------------------------------------------
   [PASS] (D1) UV regeneration delta c_s ~ alpha/4pi is loop-suppressed but NOT Planck-suppressed (Collins)  --  delta c_s|_UV ~ 0.0080 -- unprotected by CPT(even)/O_h(permits)/gauge-Ward(no c_t-c_s tie)
-  [PASS] (D2) attractive flow gives ADDITIONAL power-law IR suppression (mu/M_Pl)^gamma, gamma>0  --  gamma = 0.133, (mu/M_Pl)^gamma ~ 2.93e-03 -> eta-1|_IR ~ 2.33e-05 (illustrative; gamma is coupling-dependent)
+  [PASS] (D2) supplied-model attractive flow gives an illustrative (mu/M_Pl)^gamma damping factor  --  gamma = 0.133, (mu/M_Pl)^gamma ~ 2.93e-03 -> eta-1|_IR ~ 2.33e-05; non-closing until physical gamma/coefficient are retained
   [PASS] (D3) SCOPE: whether (D2) beats LV bounds WITHOUT a custodial symmetry is the GENUINE OPEN problem  --  not claimed solved; gamma at the physical fixed point + the exact power-divergent coeff are the open inputs
   [PASS] (D4) the cheapest candidate closer is the a^-1=M_Pl EFT/LV scale separation (Belenchia et al 2016), NOT a new symmetry  --  the framework HAS the exact Planck hierarchy; SUSY (Nibbelink-Pospelov) would also work but is overkill/absent
 
@@ -48,10 +48,10 @@ Summary
   C  canonical continuous time FIXES c_t (CAR preserved by Stone) -> Collins' 2-parameter gate
      reduces to ONE number c_s; with A, c_s flows to the canonical c_t=1.
   D  HONEST residual: the power-divergent UV regeneration of c_s (Collins) is loop- but NOT
-     Planck-suppressed and unprotected by CPT/O_h/gauge-Ward; IR-suppressed by the attractive
-     flow over the a^-1=M_Pl hierarchy (Belenchia et al) -- the genuine open field-wide problem.
-  NET: deepest residual RECLASSIFIED from '2-parameter O(1) wall' to 'ONE IR-attractive,
-       hierarchy-suppressed number'. No new axiom. Literature comparator/scope only.
+     Planck-suppressed and unprotected by CPT/O_h/gauge-Ward; the supplied-model hierarchy
+     damping factor is illustrative/non-closing until physical gamma and coefficient are retained.
+  NET: inside the supplied one-loop/structural packet, the residual is organized from
+       '2-parameter O(1) wall' to 'ONE conditional IR-attractive scalar'. No new axiom.
 
 ==============================================================================================
 TOTAL: 12 PASS / 0 FAIL

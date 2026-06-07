@@ -27,6 +27,30 @@ without self-promoting status.
   — PR #616 Koutschan-style algorithmic minimality + extended exclusion to
   `d ≤ 30`.
 
+## 2026-06-07 scope repair
+
+The 2026-06-07 audit marked this synthesis conditional for overbroad scope:
+
+```text
+scope_too_broad: narrow the synthesis note to the finite checked windows and
+finite beta=6 companion readout, or supply an auditable all-degree lower-order
+exclusion/all-order Picard-Fuchs bridge.
+```
+
+This repair takes the narrowing route. The load-bearing source claim is exactly
+the finite-window packet:
+
+- Taylor annihilation by the displayed `L` through degree `96`;
+- recurrence consistency for `N in [2, 99]`;
+- no checked lower-order annihilator for `r <= 2` and `d <= 30`;
+- `(r=3,d=2)` one-dimensional kernel matching the published `L`;
+- polynomial-multiple consistency for `(r=3,d in {2,...,12})`;
+- beta=6 value only as a finite companion numerical readout.
+
+This note does **not** claim an arbitrary-degree lower-order exclusion, an
+all-order Picard-Fuchs minimality theorem, a thermodynamic-limit bridge, or a
+many-plaquette generalization.
+
 ## Theorem statement
 
 For the V=1 single-plaquette SU(3) Wilson character integral
@@ -42,8 +66,9 @@ operator
 L = 6 β² ∂³ + β(60 − β) ∂² + (−4β² − 2β + 120) ∂ − β(β + 10) · 𝟙
 ```
 
-annihilates `J(β)` and is, within the runner-verified scope, the unique
-minimal-rank annihilator. At `β = 6`,
+annihilates `J(β)` throughout the checked Taylor window. Within the finite
+runner window, no lower-order annihilator is found for `r <= 2, d <= 30`, and
+the `(r=3,d=2)` kernel matches `L`. At `β = 6`,
 
 ```text
 ⟨P⟩_{V=1}(β=6) = J'(6) / J(6) = 0.422531739650.
@@ -112,11 +137,10 @@ PASS at Taylor depth 100:
 Scripts: `scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py`
 emits `SUMMARY: CERTIFICATE PASS=6 FAIL=0` (~11 s wall-clock).
 
-## Combined verdict
+## Finite-window verdict
 
-The V=1 SU(3) Wilson Picard-Fuchs operator `L` is operationally certified
-as the minimal-rank annihilator of `J(β)` within the runner-verified
-scope:
+The V=1 SU(3) Wilson Picard-Fuchs operator `L` is certified only within the
+finite runner-verified windows:
 
 | axis | scope |
 |------|-------|
@@ -141,11 +165,12 @@ bound is the algorithm's output.
 
 ## Honest scope: what this DOES and DOES NOT close
 
-**Closes (algorithmic, runner-verified):** The V=1 single-plaquette SU(3)
-Wilson-integral Picard-Fuchs ODE is the minimal-rank annihilator of `J(β)`
-within the algorithmic shortlex-guess scope `(r ∈ [0, 4], d ∈ [0, 30])`,
-with deep Taylor annihilation through `[β^0, …, β^96]`. The `β = 6`
-logarithmic-derivative value follows by direct ODE integration.
+**Finite-window support (algorithmic, runner-verified):** The V=1
+single-plaquette SU(3) Wilson-integral Picard-Fuchs packet verifies exact
+Taylor annihilation through `[β^0, …, β^96]`, excludes checked lower-order
+ansatz windows `r <= 2, d <= 30`, identifies the `(r=3,d=2)` kernel with `L`,
+and records the `β = 6` logarithmic-derivative value as a finite companion
+readout.
 
 **Does NOT close:**
 
@@ -218,12 +243,11 @@ secondary_runner_path: scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_0
 origin_runner_path: scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py
 claim_type: bounded_theorem
 claim_scope: >
-  Bounded V=1 single-plaquette SU(3) Wilson-integral Picard-Fuchs ODE
-  (the PR #541 order-3 polynomial-coefficient operator L) and its beta=6
-  logarithmic-derivative value 0.422531739650, certified as the
-  minimal-rank annihilator of J(beta) within the runner-verified scope
-  (Koutschan-style algorithmic guess on (r in [0,4], d in [0,30]) plus
-  deep Taylor annihilation through degree 96). Excludes any
+  V=1 SU(3) single-plaquette Picard-Fuchs finite-window packet: exact
+  Taylor annihilation through degree 96, recurrence through N=99, no checked
+  lower-order annihilator for r<=2 and d<=30, (r=3,d=2) kernel matching L,
+  and the beta=6 value only as a companion finite numerical readout. Excludes
+  arbitrary-degree lower-order exclusion, all-order Picard-Fuchs minimality,
   thermodynamic-limit (L -> infinity), multi-plaquette generalization,
   higher-irrep extension, or bridge promotion.
 proposes_consolidation_for:

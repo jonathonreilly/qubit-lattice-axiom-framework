@@ -8,13 +8,14 @@ This is intentionally narrow:
   - widened W=12 replay at h=0.25
 
 The goal is to independently retest the source-side wide-lattice far-tail
-distance-law claim and decide whether it is retained frontier, still
-exploratory, or a no-go.
+distance-law claim and decide whether it has bounded frontier support, is
+still exploratory, or is a no-go.
 """
 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import math
 import pathlib
 import re
@@ -50,6 +51,7 @@ from scripts.valley_linear_same_harness_compare import (
 AUDIT_TIMEOUT_SEC = 120
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-05-wide-lattice-h2t-distance-replay.txt"
+FROZEN_LOG_SHA256 = "2faf31bf9b1015df87adaadbfa8393c4a26e100abdc6ccaf6daf70308a30e024"
 
 PHYS_W = 12
 Z_VALUES = list(range(2, 12))
@@ -247,7 +249,10 @@ def verify_frozen_log() -> int:
         print("SCORECARD PASS=0 FAIL=1")
         return 1
 
-    text = FROZEN_LOG.read_text(encoding="utf-8", errors="replace")
+    frozen_bytes = FROZEN_LOG.read_bytes()
+    frozen_sha = hashlib.sha256(frozen_bytes).hexdigest()
+    text = frozen_bytes.decode("utf-8", errors="replace")
+    print(f"source_sha256={frozen_sha}")
     checks: list[tuple[str, bool, str]] = []
 
     def add(name: str, ok: bool, metric: str) -> None:
@@ -255,6 +260,8 @@ def verify_frozen_log() -> int:
 
     add("header", "WIDE-LATTICE H^2+T DISTANCE-LAW REPLAY" in text,
         "wide-lattice replay header present")
+    add("frozen log sha", frozen_sha == FROZEN_LOG_SHA256,
+        f"sha256={frozen_sha}")
     add("barrier sanity", "Barrier sanity: Born=4.82e-15  k=0=+0.000000" in text,
         "Born=4.82e-15 and k=0 exactly zero")
     rows = re.findall(r"^\s+z=\s*(\d+)\s+delta=([+-]\d+\.\d+)\s+(TOWARD|AWAY)\s*$", text, re.MULTILINE)
@@ -262,15 +269,54 @@ def verify_frozen_log() -> int:
     add("distance all toward", len(rows) == 10 and all(float(delta) > 0.0 and direction == "TOWARD" for _, delta, direction in rows),
         f"toward={sum(1 for _, delta, direction in rows if float(delta) > 0.0 and direction == 'TOWARD')}/10")
     add("toward support", "TOWARD support: 10/10" in text, "support=10/10")
-    add("peak tail", "Peak tail from z>=4: b^(-0.95), R^2=0.980, n=8" in text,
-        "peak tail -0.95, R2=0.980, n=8")
-    add("far tail", "Far tail from z>=5: b^(-1.05), R^2=0.990, n=7" in text,
-        "far tail -1.05, R2=0.990, n=7")
+    parsed = [(int(z), float(delta), direction) for z, delta, direction in rows]
+    toward_z = [z for z, delta, direction in parsed if delta > 0.0 and direction == "TOWARD"]
+    toward_delta = [delta for _z, delta, direction in parsed if delta > 0.0 and direction == "TOWARD"]
+    peak_i = max(range(len(toward_delta)), key=lambda i: toward_delta[i]) if toward_delta else None
+    peak_z = toward_z[peak_i] if peak_i is not None else math.nan
+    add("raw peak row", peak_z == 4, f"peak_z={peak_z}")
+    if peak_i is not None and len(toward_delta[peak_i:]) >= 3:
+        slope_peak, r2_peak = fit_power(toward_z[peak_i:], toward_delta[peak_i:])
+        add("recomputed peak tail fit",
+            slope_peak is not None
+            and abs(slope_peak - (-0.95)) < 0.02
+            and r2_peak is not None
+            and round(r2_peak, 3) == 0.980
+            and len(toward_delta[peak_i:]) == 8,
+            f"slope={slope_peak:.4f} R2={r2_peak:.4f} n={len(toward_delta[peak_i:])}; "
+            "tolerance reflects six-decimal frozen-row deltas")
+    else:
+        add("recomputed peak tail fit", False, "insufficient parsed rows")
+    far_pairs = [(z, d) for z, d in zip(toward_z, toward_delta) if z >= FAR_MIN_Z]
+    if len(far_pairs) >= 3:
+        slope_far, r2_far = fit_power([z for z, _ in far_pairs], [d for _, d in far_pairs])
+        add("recomputed far tail fit",
+            slope_far is not None
+            and abs(slope_far - (-1.05)) < 0.02
+            and r2_far is not None
+            and round(r2_far, 3) == 0.990
+            and len(far_pairs) == 7,
+            f"slope={slope_far:.4f} R2={r2_far:.4f} n={len(far_pairs)}; "
+            "tolerance reflects six-decimal frozen-row deltas")
+    else:
+        add("recomputed far tail fit", False, "insufficient parsed rows")
     sweep = re.findall(r"^\s+s=(\d+e-\d+): delta=([+-]\d+\.\d+e[+-]\d+)\s+(TOWARD|AWAY)\s*$", text, re.MULTILINE)
     add("F~M sweep rows", len(sweep) == 6, f"rows={len(sweep)} expected=6")
     add("F~M all toward", len(sweep) == 6 and all(float(delta) > 0.0 and direction == "TOWARD" for _, delta, direction in sweep),
         f"toward={sum(1 for _, delta, direction in sweep if float(delta) > 0.0 and direction == 'TOWARD')}/6")
-    add("F~M exponent", "F~M exponent: 1.000" in text, "exponent=1.000")
+    sweep_parsed = [(float(strength), float(delta), direction) for strength, delta, direction in sweep]
+    m_data = [strength for strength, delta, direction in sweep_parsed if delta > 0.0 and direction == "TOWARD"]
+    g_data = [delta for _strength, delta, direction in sweep_parsed if delta > 0.0 and direction == "TOWARD"]
+    if len(m_data) >= 3:
+        fm_alpha, fm_r2 = fit_power(m_data, g_data)
+        add("recomputed F~M exponent",
+            fm_alpha is not None
+            and round(fm_alpha, 3) == 1.000
+            and fm_r2 is not None
+            and fm_r2 > 0.999,
+            f"alpha={fm_alpha:.6f} R2={fm_r2:.6f} n={len(m_data)}")
+    else:
+        add("recomputed F~M exponent", False, "insufficient parsed sweep rows")
 
     n_pass = sum(1 for _, ok, _ in checks if ok)
     n_fail = len(checks) - n_pass

@@ -1,16 +1,36 @@
 # Wide-Lattice h^2+T Distance-Law Note
 
 **Date:** 2026-04-05  
-**Status:** proposed_retained frontier on an independent wide-lattice replay of the
-ordered 3D `1/L^2` family
+**Verifier repair:** 2026-06-07
+**Status:** bounded frontier replay on an independent wide-lattice replay of
+the ordered 3D `1/L^2` family; independent audit lane sets effective status
 
 ## Artifact chain
 
 - [`scripts/wide_lattice_h2t_distance_replay.py`](../scripts/wide_lattice_h2t_distance_replay.py)
-- [`logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`](../logs/runner-cache/wide_lattice_h2t_distance_replay.txt)
+- Frozen replay log: [`logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`](../logs/2026-04-05-wide-lattice-h2t-distance-replay.txt)
+- Registered runner cache: [`logs/runner-cache/wide_lattice_h2t_distance_replay.txt`](../logs/runner-cache/wide_lattice_h2t_distance_replay.txt)
 
 The registered runner defaults to a verifier for the frozen replay log above;
 use `--recompute` to run the original slow wide-lattice replay.
+
+## 2026-06-07 verifier repair
+
+The audit blocker asked for either a completed recompute cache or a full
+SHA-pinned frozen replay log with all distance and `F~M` rows plus an
+independent tail-fit check from those raw deltas. This note takes the frozen
+raw-row verifier route:
+
+- frozen raw replay log SHA-256:
+  `2faf31bf9b1015df87adaadbfa8393c4a26e100abdc6ccaf6daf70308a30e024`;
+- the verifier parses all ten raw distance rows and recomputes the peak row,
+  peak-tail fit, and far-tail fit from the parsed deltas;
+- the verifier parses all six `F~M` sweep rows and recomputes the mass-scaling
+  exponent from the parsed deltas;
+- because the frozen log stores deltas at six decimal places, the recomputed
+  tail slopes are checked within a tight `0.02` exponent tolerance of the
+  full-replay printed values;
+- current verifier scorecard: `SCORECARD PASS=12 FAIL=0`.
 
 ## Question
 
@@ -48,8 +68,7 @@ The important qualitative read is:
 
 The strongest honest statement is:
 
-- the wide-lattice `h^2+T` replay is now a **retained frontier** result on
-  `main`
+- the wide-lattice `h^2+T` replay is a bounded frontier replay on `main`
 - it is a strong finite-lattice replay with near-Newtonian far-tail behavior
 - it is **not** yet a universal theorem or continuum-limit proof
 
@@ -68,4 +87,4 @@ The review-safe wording is:
 
 ## Final Verdict
 
-**retained frontier**
+**bounded frontier replay; independent audit required for effective status**

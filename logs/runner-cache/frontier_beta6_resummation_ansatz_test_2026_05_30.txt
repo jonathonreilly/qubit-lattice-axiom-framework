@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
-runner_sha256: e6ea02b87d7eba93781d6a0a8fa9589e517cf4049b809fff43499762d7bc170d
+runner_sha256: 9e6c30cbc635fa46d3f5168eefa05b15e59965dc047cd18ce1c49de8fc71f98f
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.54
@@ -16,8 +16,10 @@ status: ok
          c_1 = 1/18
   [PASS] d_5 = 1/472392 (retained exact connected coefficient)
          d_5 = 2.116886e-6
-  [PASS] current exact connected packet is populated through d_11
+  [PASS] current supplied connected packet is populated through d_11
          d_6=7/5668704; d_7=5/17006112; d_8=5/272097792; d_9=-2035/264479053824; d_10=-10483/5289581076480; d_11=-13/3967185807360
+  [PASS] claim boundary is conditional-on-supplied-coefficients harness arithmetic
+         d_6..d_11 are consumed as supplied literals; this runner does not derive or retain the coefficient packet, the research map, or beta=6 closure
   [PASS] Delta(6) target from comparator = 0.594 - P_1plaq(6) ~ 0.1715 (comparator, NOT fitted)
          Delta_target = 0.17146826 = 0.594(MC comparator) - 0.42253174
   [PASS] beta_eff^can = P_1plaq^{-1}(0.5934) = 9.32617 (research map Section 7; read-off, not derivation)
@@ -59,7 +61,7 @@ status: ok
 ==============================================================================
   Connected series Delta(beta) = d_5 beta^5 + d_6 beta^6 + d_7 beta^7 + ...
   Known: d_5 = 1/472392 = 2.116886e-6
-  Current exact packet: d_6..d_11 are now supplied and evaluated below.
+  Current supplied packet: d_6..d_11 are now supplied and evaluated below.
     d_6 = 7/5668704
     d_7 = 5/17006112
     d_8 = 5/272097792
@@ -114,12 +116,12 @@ status: ok
 ==============================================================================
 4. CURRENT exact-coefficient predictive tests
 ==============================================================================
-  The decisive test is now active: exact d_6..d_11 are supplied from the
+  The decisive test is now active: d_6..d_11 are supplied from the
   current beta6 coefficient packet. The harness evaluates the ansaetze against
   those coefficients without fitting to the 0.594 Monte-Carlo comparator.
 
-  Exact contiguous connected coefficients supplied: d_5 .. d_11 (7 total).
-  [PASS] current physical series is contiguous through d_11
+  Supplied contiguous connected coefficients: d_5 .. d_11 (7 total).
+  [PASS] current supplied physical series is contiguous through d_11
          the audit-stale PENDING configuration is gone; d_6..d_11 are live inputs
 
   4a. earliest activation checks (the audit blocker's direct target):
@@ -178,17 +180,17 @@ status: ok
   * The d-log-Pade METHOD is sound on a controlled complex-pair proxy: it localizes
     the singularity (|beta_c|->5.70, off-axis) and reconstructs Delta(6) to <1e-3 by
     [10/10], and its predictive next-coefficient call is exact to ~1e-11 on the proxy.
-  * On the PHYSICAL series, the current exact d_5..d_11 packet is now consumed. The
+  * On the PHYSICAL series, the supplied d_5..d_11 packet is now consumed. The
     historical d_5-only PENDING surface is retired; predictive tests are live.
   * Tadpole/boosted-PT of the BARE single-plaquette series does NOT reach 0.594: it
     collapses to 0 or, convention-dependent, lands on the blocked 0.611 / 0.8740.
-  * CURRENT TEST STATUS: tadpole/geometric is FALSIFIED by the exact coefficients;
+  * CURRENT TEST STATUS: tadpole/geometric is FALSIFIED by the supplied coefficients;
     d-log-Pade is unstable rather than converged (d_9 and d_11 falsify while d_10
     narrowly supports). This harness evaluates the route; it does NOT close beta=6.
     0.594 is a Monte-Carlo comparator, never a derivation input.
 
 ==============================================================================
-SCORECARD: PASS=26 FAIL=0
+SCORECARD: PASS=27 FAIL=0
 ==============================================================================
 
 ----- stderr -----

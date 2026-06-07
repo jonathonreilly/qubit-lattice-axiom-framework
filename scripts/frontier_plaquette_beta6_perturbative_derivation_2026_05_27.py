@@ -135,6 +135,40 @@ def test_framework_constants() -> None:
     )
 
 
+def test_source_boundary_manifest() -> None:
+    section("T0: source-boundary manifest")
+    if not NOTE.exists():
+        check(f"note file {NOTE.name} exists for source-boundary checks", False, f"path={NOTE}")
+        return
+    body = NOTE.read_text()
+    flat = " ".join(body.split())
+    flat_lower = flat.lower()
+    check(
+        "note records 2026-06-07 source-boundary manifest",
+        "2026-06-07 Source-Boundary Manifest" in body,
+        "source-boundary section present",
+    )
+    check(
+        "note records supplied finite packet I_PT",
+        "I_PT = (beta = 6, w_1..w_16, <P>_MC = 0.5934, F2 scale comparator)" in flat,
+        "packet names beta, coefficient list, MC comparator, and F2 comparator",
+    )
+    check(
+        "note keeps NSPT/beta/MC/F2 outside framework-native authority",
+        "does not provide framework-native authority for the nspt coefficient packet" in flat_lower
+        and "not new axioms" in flat_lower
+        and "derived framework primitives" in flat_lower,
+        "admitted-input boundary remains explicit",
+    )
+    check(
+        "note excludes non-perturbative route no-go",
+        "not a no-go for non-perturbative" in body
+        and "strong-coupling" in body
+        and "exact Wigner-Racah" in body,
+        "negative claim remains finite-route only",
+    )
+
+
 def test_one_loop_value() -> None:
     section("T2: 1-loop weak-coupling value (framework existing M5)")
     # M5: <P>_WC = 1 - (N^2-1)/(8 N^2) * 4/beta = 1 - (8)/(8*9) * 4/6
@@ -612,6 +646,7 @@ def main() -> int:
         "Plaquette beta=6 perturbative-derivation bounded-obstruction runner\n"
         "(Pattern A; companion-note paired)\n"
     )
+    test_source_boundary_manifest()
     test_framework_constants()
     test_one_loop_value()
     test_truncated_series_convergence()

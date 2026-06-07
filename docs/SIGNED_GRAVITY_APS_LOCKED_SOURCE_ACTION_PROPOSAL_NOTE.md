@@ -14,6 +14,49 @@ construction rather than asserted here. Under no-admissions the grading must be
 **derived**, not admitted. The local source/response harness passes but is not a
 derivation.
 **Script:** [`../scripts/signed_gravity_aps_locked_source_action_proposal.py`](../scripts/signed_gravity_aps_locked_source_action_proposal.py)
+**Cached log:** [`../logs/runner-cache/signed_gravity_aps_locked_source_action_proposal.txt`](../logs/runner-cache/signed_gravity_aps_locked_source_action_proposal.txt)
+
+## 2026-06-07 Exact-Source Boundary Manifest
+
+This note is the exact source-action proposal row for the inserted term
+
+```text
+S_int = - chi_eta M_phys <rho, Phi>.
+```
+
+Its direct runner claim is conditional: once this term is inserted, finite
+variation, source/response locking, source-unit conversion, and fixed-sector
+Born/unitarity controls pass. The runner does not derive the term.
+
+The strongest current retained-route statement is negative and already lives
+on the signed-gravity lane: retained separable APS/Wald/Gauss ingredients span
+only the orientation-even positive source vector `[+1,+1]` plus source-neutral
+spectator vectors `[0,0]`. They do not span the required orientation-odd source
+vector `[+1,-1]`; the latter appears only after the explicit cross term is
+added. This is the scope of
+`SIGNED_GRAVITY_RETAINED_BOUNDARY_SOURCE_PRINCIPLE_NO_GO_NOTE.md`.
+
+The strongest current positive host statement is also narrower than source
+closure: the finite `Cl(3)`/`Z^3` determinant-line package derives a
+source-character grammar and naturally hosts a real orientation line, but the
+host is a `Z2` torsor/local system and does not canonically choose the section
+or force the active `chi_eta rho Phi` source action. This is the scope of
+`SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md` and
+`SIGNED_GRAVITY_NATURALLY_HOSTED_ORIENTATION_LINE_NOTE.md`.
+
+Therefore the current exact-source status is:
+
+```text
+retained APS/Wald/Gauss source-action derivation: blocked
+determinant orientation-line host: present but not canonically selected
+source-action term: open_gate conditional ansatz, not retained
+```
+
+To move this row beyond open-gate status, a later retained theorem must derive
+a canonical orientation-section/source principle and protected eta sector from
+the current axiom surface, then rerun the variation/table checks here. This
+note does not introduce a new axiom and does not mark that source principle as
+admitted.
 
 ## 2026-05-28 Panel Convergence — Origin Obligation Sharpened to the Generation-Chirality Grading
 

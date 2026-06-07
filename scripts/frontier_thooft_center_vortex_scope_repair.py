@@ -43,7 +43,7 @@ def main() -> int:
     print("A. Permanent open-gate boundary")
     print("-" * 72)
     check("note declares open_gate", "**Claim type:** open_gate" in note)
-    check("note has no branch-local status authority", "Status authority" not in note)
+    check("note has no source-local status authority", "Status authority" not in note)
     check(
         "note says permanent external-context catalogue",
         has_phrase(note, "permanent `open_gate` external-context catalogue"),
@@ -68,6 +68,26 @@ def main() -> int:
         "source checker does not claim to apply audit result",
         has_phrase(note, "does not apply an audit result")
         and has_phrase(note, "promote the row beyond `open_gate`"),
+    )
+    check(
+        "note declares pure-notation source boundary",
+        "2026-06-07 Pure-Notation Source Boundary" in note
+        and "P_THOOFT_REG" in note,
+    )
+    check(
+        "note says references are labels, not retained authority",
+        has_phrase(note, "bibliographic labels for the notation being catalogued")
+        and has_phrase(note, "not a retained authority packet"),
+    )
+    check(
+        "note excludes published-context support claim",
+        has_phrase(note, "no published-context support claim")
+        and has_phrase(note, "pure syntactic vocabulary registration"),
+    )
+    check(
+        "note requires separate retained bridge for theorem use",
+        has_phrase(note, "later use as a theorem input")
+        and has_phrase(note, "separate retained bridge theorem"),
     )
 
     print()

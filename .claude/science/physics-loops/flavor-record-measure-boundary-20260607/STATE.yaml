@@ -1,0 +1,25 @@
+loop_slug: flavor-record-measure-boundary-20260607
+goal: "Repair flavor_missing_axiom_carrier_measure by replacing the new-axiom framing with a current Record-boundary theorem."
+target_claim_id: flavor_missing_axiom_carrier_measure_note_2026-05-30
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: record_boundary_repair
+files_touched:
+  - docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
+  - scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py
+  - logs/runner-cache/flavor_missing_axiom_carrier_measure_2026_05_30.txt
+  - .claude/science/physics-loops/flavor-record-measure-boundary-20260607/
+open_imports:
+  - "Physical carrier-measure selection: why generator-channel Hilbert-Schmidt scoring, rather than per-mode/dimension or idempotent/eigenvalue scoring, is the physical generation readout."
+retired_imports:
+  - "The old note's candidate revised Axiom 1 / missing-axiom premise is no longer load-bearing."
+runner_status:
+  command: "PYTHONPATH=scripts python3 scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py"
+  result: "SCORECARD PASS=9 FAIL=0"
+audit_data_touched: false
+review_loop_disposition: "not run; reviewer-owned review/landing path"
+next_exact_action: "Reviewer should assess whether the updated row is now a clean bounded theorem / open measure residual rather than audited_conditional on a not-landed axiom revision."
+stop_condition: "science block packaged and PR opened"

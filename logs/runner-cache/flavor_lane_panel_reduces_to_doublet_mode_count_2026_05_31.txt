@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py
-runner_sha256: 11f77d4c381d5f966e8b38c6740d173ca3ac0428718dde1c73b98727b74c8a13
+runner_sha256: 35077610a4dd019bad037c462f4b1aaf80e57dc6b9fadb06c3333a5d582d235d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 [PASS] D1 Q is a SINGLE observable = 1/3+(2/3)r, scale- and delta-invariant; {1/3,2/3,1} are r-LANES not channels
@@ -15,7 +15,89 @@ status: ok
 [PASS] PRIMITIVE dimension-count (det_R, doublet=2 real modes): 3a^2=3|b|^2 -> r=1 -> Q=1
        r_dim=1.000 -> Q=1.0000  => SOLE decider: doublet = 1 complex vs 2 real modes
 
-SCORECARD PASS=4 FAIL=0
+EXACT DET_C / DET_R BRIDGE
+[PASS] exact det_C block-count gives r=1/2
+       r=1/2
+[PASS] exact det_C block-count gives Q=2/3
+       Q=2/3
+[PASS] exact det_R real-mode count gives r=1
+       r=1
+[PASS] exact det_R real-mode count gives Q=1
+       Q=1
+[PASS] det_C and det_R endpoints are distinct
+       1/2 vs 1
+
+AUTHORITY PACKETS
+[PASS] Frobenius isotype split no-go: source note exists
+       docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md
+[PASS] Frobenius isotype split no-go: source note contains 'Frobenius Isotype-Weight Freedom No-Go'
+[PASS] Frobenius isotype split no-go: source note contains 'do not force'
+[PASS] Frobenius isotype split no-go: runner exists
+       scripts/frontier_koide_frobenius_isotype_split_uniqueness.py
+[PASS] Frobenius isotype split no-go: cache exists
+       logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt
+[PASS] Frobenius isotype split no-go: cache runner matches source
+       scripts/frontier_koide_frobenius_isotype_split_uniqueness.py
+[PASS] Frobenius isotype split no-go: cache SHA fresh
+       193c9bbb4999181cc7b4e5a43f24142e1a2266f773765cac498b8bb2f1880d02
+[PASS] Frobenius isotype split no-go: cache status ok
+       {'runner': 'scripts/frontier_koide_frobenius_isotype_split_uniqueness.py', 'runner_sha256': '193c9bbb4999181cc7b4e5a43f24142e1a2266f773765cac498b8bb2f1880d02', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.37', 'status': 'ok'}
+[PASS] Frobenius isotype split no-go: cache contains 'PASS=24 FAIL=0'
+[PASS] action normalization no-go: source note exists
+       docs/ACTION_NORMALIZATION_NOTE.md
+[PASS] action normalization no-go: source note contains 'Action Normalization Convention-Free Selection No-Go'
+[PASS] action normalization no-go: source note contains 'does not select'
+[PASS] action normalization no-go: runner exists
+       scripts/frontier_action_normalization.py
+[PASS] action normalization no-go: cache exists
+       logs/runner-cache/frontier_action_normalization.txt
+[PASS] action normalization no-go: cache runner matches source
+       scripts/frontier_action_normalization.py
+[PASS] action normalization no-go: cache SHA fresh
+       a846e7a4794c0d6503117c9a074272b47f048f41823ef6edeb46e97f0870f5f6
+[PASS] action normalization no-go: cache status ok
+       {'runner': 'scripts/frontier_action_normalization.py', 'runner_sha256': 'a846e7a4794c0d6503117c9a074272b47f048f41823ef6edeb46e97f0870f5f6', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '47.08', 'status': 'ok'}
+[PASS] action normalization no-go: cache contains 'NARROWED: The coefficient c'
+[PASS] action normalization no-go: cache contains 'Total runtime:'
+[PASS] generation weight dial structure: source note exists
+       docs/GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md
+[PASS] generation weight dial structure: source note contains 'GENERATION_WEIGHT_DIAL_STRUCTURE'
+[PASS] generation weight dial structure: source note contains 'r(s)'
+[PASS] generation weight dial structure: runner exists
+       scripts/generation_weight_dial_structure_2026_06_05.py
+[PASS] generation weight dial structure: cache exists
+       logs/runner-cache/generation_weight_dial_structure_2026_06_05.txt
+[PASS] generation weight dial structure: cache runner matches source
+       scripts/generation_weight_dial_structure_2026_06_05.py
+[PASS] generation weight dial structure: cache SHA fresh
+       966cc28a84ad7142e2c831df7b7c621d3f4350fe9a03f87b3322bbe1cbb01196
+[PASS] generation weight dial structure: cache status ok
+       {'runner': 'scripts/generation_weight_dial_structure_2026_06_05.py', 'runner_sha256': '966cc28a84ad7142e2c831df7b7c621d3f4350fe9a03f87b3322bbe1cbb01196', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.43', 'status': 'ok'}
+[PASS] generation weight dial structure: cache contains 'SCORECARD: 28 PASS / 0 FAIL'
+[PASS] generation weight dial structure: cache contains 'r(0)=1/2'
+[PASS] generation weight dial structure: cache contains 'r(1)=1'
+[PASS] one counting bit synthesis: source note exists
+       docs/CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md
+[PASS] one counting bit synthesis: source note contains 'one counting bit'
+[PASS] one counting bit synthesis: source note contains 'det_C'
+[PASS] one counting bit synthesis: source note contains 'det_R'
+[PASS] one counting bit synthesis: runner exists
+       scripts/charged_lepton_value_one_counting_bit.py
+[PASS] one counting bit synthesis: cache exists
+       logs/runner-cache/charged_lepton_value_one_counting_bit.txt
+[PASS] one counting bit synthesis: cache runner matches source
+       scripts/charged_lepton_value_one_counting_bit.py
+[PASS] one counting bit synthesis: cache SHA fresh
+       a13ffa52252ed0f14f141ed72e81f75987034d7a4c7eb1029c2cf35139f7b618
+[PASS] one counting bit synthesis: cache status ok
+       {'runner': 'scripts/charged_lepton_value_one_counting_bit.py', 'runner_sha256': 'a13ffa52252ed0f14f141ed72e81f75987034d7a4c7eb1029c2cf35139f7b618', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.31', 'status': 'ok'}
+[PASS] one counting bit synthesis: cache contains 'SCORECARD: PASS=22 FAIL=0'
+[PASS] one counting bit synthesis: cache contains 'det_C'
+[PASS] one counting bit synthesis: cache contains 'det_R'
+[PASS] det_C/det_R source-packet export written
+       outputs/flavor_lane_panel_detcr_source_packet_2026_05_31.json
+
+SCORECARD PASS=52 FAIL=0
 VERDICT (20-physicist panel + 4 meta, wf_9028152c): D1 UNANIMOUS -- Q is one observable, {1/3,2/3,1}
 are LANES not channels (corrects the four-channel capstone). Assignment open_confirmed: every escape
 collapses to ONE primitive = block-count(det_C, r=1/2) vs dimension-count(det_R, r=1) = doublet as one

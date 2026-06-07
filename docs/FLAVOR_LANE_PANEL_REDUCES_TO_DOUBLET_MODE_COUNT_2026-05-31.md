@@ -3,7 +3,9 @@
 **Date:** 2026-05-31
 **Claim type:** bounded_theorem
 **Claim boundary:** adjudication (unanimous panel) + a gate-reduction to a single decidable primitive + two killed escapes. Not a closure.
-**Runner:** `scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py` (SCORECARD 4/4).
+**Runner:** `scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py` (SCORECARD PASS=52 FAIL=0;
+cached at `logs/runner-cache/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.txt`).
+**Source-packet export:** `outputs/flavor_lane_panel_detcr_source_packet_2026_05_31.json`.
 **Source:** workflow `wf_9028152c` — 20-physicist panel + 4 meta-exercises (assumptions / first-principles / literature / math-rigor), framed find-the-escape, + chair synthesis (25 agents). Convened at user request.
 
 ## Question
@@ -35,6 +37,21 @@ So the charged-lepton lane is decided by whether the C₃ doublet counts as **on
 real** modes — nothing else. This sits on the retained obstruction: `koide_frobenius_isotype_split_uniqueness`
 (retained_no_go — the C₃-invariant Gram is a 2-parameter block-constant cone with the singlet:doublet
 ratio **free**) and `action_normalization` (retained_no_go — declines to rank (1,1) vs (1,2)).
+
+### 2026-06-07 dependency/source-packet repair
+The runner now removes the ledger-facing "missing dependency edge" ambiguity for this row by checking
+the exact source packets the argument uses, instead of importing them as prose context. It SHA-pins the
+source notes, runners, and cached runs for:
+- `koide_frobenius_isotype_split_uniqueness` / Frobenius isotype-weight freedom no-go;
+- `action_normalization` / convention-free action-normalization no-go;
+- `generation_weight_dial_structure_2026-06-05`;
+- `charged_lepton_value_one_counting_bit`.
+
+It also writes a standalone source-packet JSON certificate with the exact det_C/det_R reduction:
+`det_C` block-count gives `r=1/2`, `Q=2/3`; `det_R` real-mode count gives `r=1`, `Q=1`; the endpoints
+are distinct. This is an exact-support packet for the reduction and dependency edge. It is **not** a
+selection of det_C, **not** a charged-lepton value closure, and **not** an audit retag; independent
+audit still has to decide whether the repaired source packet retires the prior blocker.
 
 ### Two escapes KILLED (the wrong-escape check)
 - **The most-converged escape (10+ specialties): "r=1/2 = self-dual fixed point of the swap `r→1−r`"
@@ -73,6 +90,7 @@ of `r=1/2` (the unique equipartition / power-swap point) are derived; the *assig
 measure question, shared with the standing det_C/det_R datum across the flavor sector.
 
 ## Provenance (verified 2026-05-31)
-- D1, the swap-kill (Casimir-change), and the det_C/det_R → r=1/2 / r=1 primitive verified directly (runner 4/4).
+- D1, the swap-kill (Casimir-change), and the det_C/det_R → r=1/2 / r=1 primitive verified directly
+  (runner PASS=52 FAIL=0 after the 2026-06-07 source-packet repair).
 - Anchors: `koide_frobenius_isotype_split_uniqueness` (**retained_no_go**), `action_normalization` (**retained_no_go**); `koide_signed_eigenvalue_vs_singular_value_readout` (**audited_failed**); `koide_real_rep_block_count_permitted_not_forced` (**unaudited** — mentioned, not load-bearing).
 - Does not load-bear on `closure_c_staggered_dirac_gate` / `koide_phase_aps_eta_parity_route`.

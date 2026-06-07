@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/charged_lepton_value_one_counting_bit.py
+runner_sha256: a13ffa52252ed0f14f141ed72e81f75987034d7a4c7eb1029c2cf35139f7b618
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
 == A. the generation circulant family ==
   [PASS] C^3 = I (three generations, cyclic C_3)
   [PASS] C, C^2 traceless
@@ -26,3 +34,6 @@
   [PASS] spectral masses m_k = lambda_k^2 are determined (real spectrum, dim 3) by (a,|b|,arg b); the bit is the COUNT not the masses
 
 SCORECARD: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -31,7 +31,62 @@ User invoked the panel ("ask the 20 physicists if we're stuck"), framed as find-
   (d Re b)^2+(d Im b)^2 (two modes) -> det_R -> r=1. This is framework-internal and novel (NOT the
   U(1)_b route the retained no-go closed; NOT the discrete-reflection route the panel killed).
 """
+from dataclasses import dataclass
+from fractions import Fraction
+from pathlib import Path
+import hashlib
+import json
 import numpy as np
+
+
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT = ROOT / "outputs/flavor_lane_panel_detcr_source_packet_2026_05_31.json"
+
+
+@dataclass(frozen=True)
+class AuthorityPacket:
+    label: str
+    note_path: str
+    runner_path: str
+    cache_path: str
+    required_text: tuple[str, ...]
+    required_cache_text: tuple[str, ...]
+
+
+AUTHORITY_PACKETS = (
+    AuthorityPacket(
+        "Frobenius isotype split no-go",
+        "docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md",
+        "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py",
+        "logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt",
+        ("Frobenius Isotype-Weight Freedom No-Go", "do not force"),
+        ("PASS=24 FAIL=0",),
+    ),
+    AuthorityPacket(
+        "action normalization no-go",
+        "docs/ACTION_NORMALIZATION_NOTE.md",
+        "scripts/frontier_action_normalization.py",
+        "logs/runner-cache/frontier_action_normalization.txt",
+        ("Action Normalization Convention-Free Selection No-Go", "does not select"),
+        ("NARROWED: The coefficient c", "Total runtime:"),
+    ),
+    AuthorityPacket(
+        "generation weight dial structure",
+        "docs/GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md",
+        "scripts/generation_weight_dial_structure_2026_06_05.py",
+        "logs/runner-cache/generation_weight_dial_structure_2026_06_05.txt",
+        ("GENERATION_WEIGHT_DIAL_STRUCTURE", "r(s)"),
+        ("SCORECARD: 28 PASS / 0 FAIL", "r(0)=1/2", "r(1)=1"),
+    ),
+    AuthorityPacket(
+        "one counting bit synthesis",
+        "docs/CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md",
+        "scripts/charged_lepton_value_one_counting_bit.py",
+        "logs/runner-cache/charged_lepton_value_one_counting_bit.txt",
+        ("one counting bit", "det_C", "det_R"),
+        ("SCORECARD: PASS=22 FAIL=0", "det_C", "det_R"),
+    ),
+)
 
 
 def check(name, cond, detail=""):
@@ -41,12 +96,87 @@ def check(name, cond, detail=""):
     return bool(cond)
 
 
+def sha256_rel(path: str) -> str:
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def cache_header(text: str) -> dict[str, str]:
+    header = {}
+    if "----- stdout -----" not in text:
+        return header
+    for line in text.split("----- stdout -----", 1)[0].splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        header[key.strip()] = value.strip()
+    return header
+
+
 def TrH2(a, babs):
     return 3 * a ** 2 + 6 * babs ** 2
 
 
 def Q_of_r(r):
     return 1.0 / 3.0 + (2.0 / 3.0) * r
+
+
+def Q_fraction(r: Fraction) -> Fraction:
+    return Fraction(1, 3) + Fraction(2, 3) * r
+
+
+def exact_bridge_checks():
+    passed = []
+    print("\nEXACT DET_C / DET_R BRIDGE")
+    a2 = Fraction(1, 1)
+    singlet_energy = 3 * a2
+    # E_doublet = 6 |b|^2. Equal block energy gives 3a^2 = 6|b|^2.
+    r_det_c = singlet_energy / 6
+    # Equal real-mode energy gives 3a^2 = E_doublet / 2 = 3|b|^2.
+    r_det_r = singlet_energy / 3
+    passed.append(check("exact det_C block-count gives r=1/2", r_det_c == Fraction(1, 2), f"r={r_det_c}"))
+    passed.append(check("exact det_C block-count gives Q=2/3", Q_fraction(r_det_c) == Fraction(2, 3), f"Q={Q_fraction(r_det_c)}"))
+    passed.append(check("exact det_R real-mode count gives r=1", r_det_r == Fraction(1, 1), f"r={r_det_r}"))
+    passed.append(check("exact det_R real-mode count gives Q=1", Q_fraction(r_det_r) == Fraction(1, 1), f"Q={Q_fraction(r_det_r)}"))
+    passed.append(check("det_C and det_R endpoints are distinct", r_det_c != r_det_r, f"{r_det_c} vs {r_det_r}"))
+    return passed, {"r_det_c": str(r_det_c), "q_det_c": str(Q_fraction(r_det_c)), "r_det_r": str(r_det_r), "q_det_r": str(Q_fraction(r_det_r))}
+
+
+def authority_packet_checks():
+    passed = []
+    print("\nAUTHORITY PACKETS")
+    packet_rows = []
+    for packet in AUTHORITY_PACKETS:
+        note = ROOT / packet.note_path
+        runner = ROOT / packet.runner_path
+        cache = ROOT / packet.cache_path
+        passed.append(check(f"{packet.label}: source note exists", note.exists(), packet.note_path))
+        if note.exists():
+            note_text = note.read_text(encoding="utf-8", errors="replace")
+            for needle in packet.required_text:
+                passed.append(check(f"{packet.label}: source note contains {needle!r}", needle in note_text))
+        passed.append(check(f"{packet.label}: runner exists", runner.exists(), packet.runner_path))
+        passed.append(check(f"{packet.label}: cache exists", cache.exists(), packet.cache_path))
+        if runner.exists() and cache.exists():
+            runner_sha = sha256_rel(packet.runner_path)
+            cache_text = cache.read_text(encoding="utf-8", errors="replace")
+            header = cache_header(cache_text)
+            passed.append(check(f"{packet.label}: cache runner matches source", header.get("runner") == packet.runner_path, header.get("runner", "")))
+            passed.append(check(f"{packet.label}: cache SHA fresh", header.get("runner_sha256") == runner_sha, header.get("runner_sha256", "")))
+            passed.append(check(f"{packet.label}: cache status ok", header.get("status") == "ok" and header.get("exit_code") == "0", str(header)))
+            for needle in packet.required_cache_text:
+                passed.append(check(f"{packet.label}: cache contains {needle!r}", needle in cache_text))
+            packet_rows.append(
+                {
+                    "label": packet.label,
+                    "note_path": packet.note_path,
+                    "note_sha256": sha256_rel(packet.note_path) if note.exists() else None,
+                    "runner_path": packet.runner_path,
+                    "runner_sha256": runner_sha,
+                    "cache_path": packet.cache_path,
+                    "cache_sha256": sha256_rel(packet.cache_path),
+                }
+            )
+    return passed, packet_rows
 
 
 def main():
@@ -87,6 +217,27 @@ def main():
         "PRIMITIVE dimension-count (det_R, doublet=2 real modes): 3a^2=3|b|^2 -> r=1 -> Q=1",
         abs(r_dim - 1.0) < 1e-12 and abs(Q_of_r(r_dim) - 1.0) < 1e-12,
         f"r_dim={r_dim:.3f} -> Q={Q_of_r(r_dim):.4f}  => SOLE decider: doublet = 1 complex vs 2 real modes"))
+
+    bridge_passed, bridge_payload = exact_bridge_checks()
+    authority_passed, packet_rows = authority_packet_checks()
+    passed.extend(bridge_passed)
+    passed.extend(authority_passed)
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT.write_text(
+        json.dumps(
+            {
+                "claim_id": "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31",
+                "bridge": bridge_payload,
+                "authority_packets": packet_rows,
+                "boundary": "det_C/det_R reduction only; no selected charged-lepton lane",
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    passed.append(check("det_C/det_R source-packet export written", OUTPUT.exists(), OUTPUT.relative_to(ROOT).as_posix()))
 
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT (20-physicist panel + 4 meta, wf_9028152c): D1 UNANIMOUS -- Q is one observable, {1/3,2/3,1}")

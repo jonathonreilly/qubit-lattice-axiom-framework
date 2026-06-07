@@ -1,0 +1,23 @@
+loop: interaction-asymmetry-sign-regime
+date: 2026-06-07
+branch: physics-loop/interaction-asymmetry-sign-regime-20260607
+base: origin/main@7b90b068c
+target_claim_id: interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06
+target_note: docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md
+target_blocker: "scope_too_broad: add and verify the symbolic effective-coupling formula with the eps+U>0 or weak-coupling hypothesis, then restate the sign law within that regime."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md
+  - scripts/interaction_asymmetry_delta_occupation_curvature_runner.py
+  - logs/runner-cache/interaction_asymmetry_delta_occupation_curvature_runner.txt
+  - .claude/science/physics-loops/interaction-asymmetry-sign-regime/
+verification:
+  - "PYTHONPATH=scripts python3 scripts/interaction_asymmetry_delta_occupation_curvature_runner.py"
+  - "python3 -m py_compile scripts/interaction_asymmetry_delta_occupation_curvature_runner.py"
+  - "git diff --check"
+next_exact_action: "Reviewer/auditor should re-audit whether the denominator-resolved sign formula removes the scope-too-broad blocker."
+stop_condition: "PR opened for review."

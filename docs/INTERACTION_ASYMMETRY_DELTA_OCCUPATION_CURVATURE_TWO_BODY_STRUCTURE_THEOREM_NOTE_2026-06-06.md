@@ -11,13 +11,15 @@
 The emergent `C3` coupling `|K|` (the coefficient of the native double-shift `J − I` on the
 generation triplet) vanishes at naive second order for a symmetric (linear) spectrum and is
 sourced by an energy asymmetry `delta` between the `hw=0` and `hw=2` intermediate states
-(`E_2 = 2*eps + delta`), with `|K| ~ t^2*delta / eps^2`. That `delta` is the open "actual
+(`E_2 = 2*eps + delta`), with the weak/no-resonance expansion
+`K_eff = t^2*delta/(eps*(eps+delta)) = t^2*delta/eps^2 + O(delta^2)`. That
+`delta` is the open "actual
 emergent coupling" named in
 [`FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02`](FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md)
 (`retained_bounded`). This note pins down **what `delta` is**: it is the occupation-number
 **curvature** of the energy, it is **irreducibly two-body**, it cancels to **all orders** for
-the free single-hop dynamics (not merely at second order), and it carries a **forced sign
-law**. The diagonal companion — how the second-order *return* shapes the generation **masses**
+the free single-hop dynamics (not merely at second order), and it carries a
+**denominator-resolved sign law**. The diagonal companion — how the second-order *return* shapes the generation **masses**
 — is the retained
 [`HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE`](HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md);
 the present note is its **off-diagonal** counterpart (the `C3` mixing `|K|`, not the species
@@ -49,9 +51,18 @@ excitation count `hw`.
    `delta = w_pair` exactly: `delta` is carried by a genuine **connected two-body** coupling,
    and `delta = 0 ⟺ there is no two-body coupling`.
 
-3. **Forced sign law.** A native pair coupling `U * sum_{i<j} n_i n_j` sets `delta = U`
-   exactly and produces the `C3` coupling (the `J − I` form, all off-diagonals equal) with
-   `sign(|K|) = sign(delta) = sign(U)`.
+3. **Denominator-resolved sign law.** A native pair coupling
+   `U * sum_{i<j} n_i n_j` sets `delta = U` exactly and produces the `C3`
+   coupling (the `J − I` form, all off-diagonals equal) with
+
+   ```text
+   K_eff = t^2 * U / (eps * (eps + U)).
+   ```
+
+   Therefore `sign(K_eff) = sign(delta) = sign(U)` in the no-resonance/weak
+   regime `eps > 0` and `eps + U > 0`. At `eps+U=0` the second-order reduction
+   is resonant, and for `eps+U<0` the denominator can flip the sign; no
+   unrestricted sign law is claimed outside that regime.
 
 4. **The one-body lattice realization of `delta` is a forbidden diagonal.** In momentum space
    `n_mu = (1 − cos k_mu)/2`, so the pair term `n_mu n_nu` carries
@@ -62,9 +73,10 @@ excitation count `hw`.
    `delta = 0`). `delta` is therefore a genuine **two-body / interaction** object, not a
    kinetic one.
 
-So `delta` (hence `|K|`) is not a hopping amplitude and not any one-body lattice energy: it is
-the **two-body occupation curvature**, sign-locked to the underlying pair coupling, and zero
-for the entire free single-hop sector.
+So `delta` is not a hopping amplitude and not any one-body lattice energy: it
+is the **two-body occupation curvature**, and its transfer to `K_eff` is
+sign-locked to the underlying pair coupling only in the stated no-resonance
+denominator regime. It is zero for the entire free single-hop sector.
 
 ## The genuine open piece (the route this opens)
 
@@ -76,7 +88,8 @@ route is the framework's already-**retained** two-body mediator channel — the
 and
 [`WILSON_TWO_BODY_OPEN_REFINED_NOTE_2026-04-11`](WILSON_TWO_BODY_OPEN_REFINED_NOTE_2026-04-11.md)
 (both `retained_bounded`), whose mutual energy is **attractive**. If that channel supplies the
-generation-pair energy, then by the sign law (3) it fixes `sign(delta) < 0` and bounds
+generation-pair energy, then it fixes `sign(delta) < 0`; by the sign law (3),
+`K_eff` inherits that sign only while `eps>0` and `eps+delta>0`. It also bounds
 `|delta| = G·W(r_pair)` by the propagator value at the pair separation. That computation — the
 mediator pair-energy at the generation separation — is the sharply-posed next artifact; it is
 **not** performed here. Independent of the value, the flavor pattern is robust to the precise
@@ -86,8 +99,9 @@ survives the open `delta`.
 ## Boundary (honest)
 
 - **A structure result, not a value.** It establishes that `delta` is the two-body occupation
-  curvature with `sign(|K|) = sign(delta)` and that the free sector gives `delta = 0` to all
-  orders; it does **not** compute the sign or scale of `delta`.
+  curvature and that the free sector gives `delta = 0` to all orders. The sign
+  transfer to `K_eff` is claimed only under `eps>0` and `eps+U>0`; it does
+  **not** compute the sign or scale of `delta`.
 - **The all-orders statement is for the axis-separable single-hop model.** It is exact for
   `H = eps*N + t*sum_mu X_mu` and for any axis-additive one-body `H_0`. A genuine two-body
   term (the open object) is precisely what breaks the separability — that is the content of (2)
@@ -97,6 +111,10 @@ survives the open `delta`.
   on whether the three single-flip axes are read as spatial directions or as taste/momentum
   axes (the latter reading rests on the currently-`unaudited` BZ-corner surface and is not
   used here).
+- **No-resonance denominator boundary.** The displayed sign law is the exact
+  second-order effective-coupling formula in the regime where the `hw=2`
+  denominator remains away from zero: `eps>0` and `eps+U>0`. The runner includes
+  an `eps+U<0` control showing that the sign can flip outside this regime.
 - **Off-diagonal scope.** This note concerns the `C3` mixing coefficient `|K|` (off-diagonal,
   `J − I`); the species **diagonal** (mass weights) is the separate retained
   `HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE`.
@@ -114,7 +132,7 @@ lattice); and the records/sector-weight channel. No finite enumeration of source
 
 No new axiom. `V = sum X_mu` and the Hamming-graded `H_0` are the minimal native lattice
 dynamics; the factorization (sumset), the occupation-functional curvature decomposition, the
-sign law, and the product-to-sum (`face-diagonal`) identity are arithmetic. The two-body
+denominator-resolved sign law, and the product-to-sum (`face-diagonal`) identity are arithmetic. The two-body
 mediator route cited for the open value uses **retained** (`retained_bounded`) surfaces, not a
 new import; its application to the generation-pair energy is named open, not asserted.
 
@@ -125,7 +143,8 @@ spectrum equals the `L`-fold per-axis sumset for `L = 3, 4, 5` (factorization �
 `delta = 0`), and the affine second-order shift reproduces the naive cancellation; (2) one-body
 occupation functionals have second difference `0` while the pair count `C(hw,2)` has second
 difference `+1`, and a pure pair term gives `delta = w_pair` exactly; (3) a native pair coupling
-`U` gives `sign(|K|) = sign(U)` with the exact `C3` (`J − I`) form; (4) the product-to-sum
+`U` gives `K_eff = t^2*U/(eps*(eps+U))`, with `sign(K_eff)=sign(U)` only for
+`eps>0` and `eps+U>0`, and the exact `C3` (`J − I`) form; (4) the product-to-sum
 identity exhibiting the face-diagonal content. Expected `runner_check_breakdown = {A: N, B: 0,
 C: 0, D: 0, total_pass: N}`.
 
@@ -136,8 +155,11 @@ so its energy is additive and the occupation curvature `delta = E_2 − 2E_1 + E
 all orders — strengthening the second-order cancellation to an all-orders statement and
 identifying `delta` as the discrete curvature of the energy in excitation number. The
 occupation-functional decomposition shows `delta` is carried by the pair count (second
-difference `+1`), so `delta` is irreducibly two-body and sign-locked to the pair coupling
-(`sign(|K|) = sign(delta)`). The one-body realization of the pair term is a next-nearest
+difference `+1`), so `delta` is irreducibly two-body. The effective `C3`
+coupling has the exact denominator-resolved formula
+`K_eff = t^2*U/(eps*(eps+U))`; hence it is sign-locked to the pair coupling
+only in the no-resonance regime `eps>0`, `eps+U>0`. The one-body realization
+of the pair term is a next-nearest
 (face-diagonal) hop forbidden by the 6-NN lattice axiom, so `delta` is a genuine two-body
 object. The result is a **structure + sign-law** localization of `delta`, not a value: the
 precise sign/scale reduces to the retained two-body mediator channel, named open. Effective

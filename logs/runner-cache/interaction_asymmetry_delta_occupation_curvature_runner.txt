@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/interaction_asymmetry_delta_occupation_curvature_runner.py
-runner_sha256: 9cb81f88d1abf234474ca043a4e244bc966978fb280efcf13afb78dfa2ef5b46
+runner_sha256: b1b1be6cec1da604afeec345f500c00613c0775183f69f0047251fd6476209eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -22,16 +22,18 @@ INTERACTION ASYMMETRY delta = OCCUPATION CURVATURE, irreducibly two-body  [class
   [PASS] the pair count C(hw,2) has second difference identically +1 => it is the lowest-degree functional with nonzero curvature
   [PASS] a pure pair term w_pair*C(hw,2) gives delta = w_pair exactly (delta is carried by the connected two-body coupling)
 
--- (3) forced sign law sign(|K|) = sign(delta) --
-  [PASS] native pair coupling U*sum n_i n_j sets delta=U and the C3 coupling |K| has sign(|K|)=sign(delta)=sign(U)  (U=+0.5->K=+0.214; U=-0.5->K=-0.481; U=+1.0->K=+0.334; U=-1.0->K=-2.564)
+-- (3) denominator-resolved sign law for K_eff --
+  [PASS] native pair coupling U*sum n_i n_j sets delta=U and gives K_eff = t^2*U/(eps*(eps+U)) in the no-resonance reduction  (U=+0.5->K=+0.214, formula=+0.214; U=-0.5->K=-0.481, formula=-0.481; U=+1.0->K=+0.334, formula=+0.334; U=-1.0->K=-2.564, formula=-2.564)
+  [PASS] for eps>0 and eps+U>0, sign(K_eff)=sign(delta)=sign(U)  (eps+U=1.80; eps+U=0.80; eps+U=2.30; eps+U=0.30)
+  [PASS] outside the eps+U>0 regime the denominator can flip the sign (control)  (U=-2.0, eps+U=-0.70, K=+2.198)
   [PASS] the sourced coupling has the exact C3 (J-I) form (all off-diagonals equal)
 
 -- (4) the one-body realization of delta is a forbidden (next-nearest) diagonal --
   [PASS] n_mu n_nu carries cos(k_mu)cos(k_nu) = (1/2)[cos(k_mu+k_nu)+cos(k_mu-k_nu)] = a FACE-DIAGONAL (next-nearest) hop, which the 6-NN no-diagonal LATTICE axiom forbids => no one-body 6-NN H0 carries delta
 
 ==============================================================================
-TOTAL: PASS=11 FAIL=0
-VERDICT: delta (hence |K|) is the OCCUPATION-NUMBER CURVATURE E_2-2E_1+E_0; it vanishes to ALL orders for the free single-hop + axis-separable one-body dynamics (factorization), is IRREDUCIBLY TWO-BODY (= pair-count curvature), carries the forced sign law sign(|K|)=sign(delta), and its one-body lattice realization is a forbidden diagonal -- so delta is a genuine two-body interaction object. The precise sign/scale (the leading non-import route = the retained two-body mediator channel) is left open.
+TOTAL: PASS=13 FAIL=0
+VERDICT: delta (hence K_eff) is the OCCUPATION-NUMBER CURVATURE E_2-2E_1+E_0; it vanishes to ALL orders for the free single-hop + axis-separable one-body dynamics (factorization), is IRREDUCIBLY TWO-BODY (= pair-count curvature), carries the denominator-resolved sign law K_eff=t^2*U/(eps*(eps+U)) with sign(K_eff)=sign(U) only when eps>0 and eps+U>0, and its one-body lattice realization is a forbidden diagonal -- so delta is a genuine two-body interaction object. The precise sign/scale (the leading non-import route = the retained two-body mediator channel) is left open.
 
 ----- stderr -----
 

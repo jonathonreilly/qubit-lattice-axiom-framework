@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 720 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 34 |
-| unaudited | 1352 |
+| unaudited | 1351 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 18 |
+| ~~audited_conditional~~ | 19 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1132 |
-| `audited_conditional` | 18 |
+| `audited_conditional` | 19 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1661 |
+| `unaudited` | 1660 |
 
 | claim_type | count |
 |---|---:|
@@ -1282,6 +1282,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `valley_linear_wide_tail_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `wide_lattice_h2t_distance_law_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -18052,6 +18053,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The cited authorities are retained_bounded and support the narrowed conclusion that the h=0.125 rows remain Born-clean with TOWARD gravity but F~M about 0.50 rather than near 1. The source note explicitly excludes the wider phys_w=4 continuation from binding scope, so the missing runner for that wider narrative is not load-bearing.
 - **rationale:** No primary runner source or stdout is present, so the audit falls back to the note text and one-hop cited authorities. Within the narrowed scope, the conclusion follows from retained_bounded dependencies and does not require the out-of-scope wider-family phys_w=4 claims. The load-bearing step is cross-note inheritance rather than a fresh first-principles computation, but the source note does not present it as a new computation.
 - **auditor confidence:** medium
+
+### `wide_lattice_h2t_distance_law_note`
+
+- **Note:** [`WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`](../../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Fixed finite wide-lattice replay of the ordered 3D 1/L^2 family with valley-linear action, h^2 measure, h=0.25, W=12, and L=12.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-165934-2482036156-wide_lattice_h2t_distance_la`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Independent wide replay at h=0.25, W=12, L=12 yields Born=4.82e-15, k=0, 10/10 TOWARD distance rows, near-Newtonian peak/far-tail fits, and F~M exponent 1.000.  _(class `C`)_
+- **chain closes:** False — The recompute path appears to instantiate the finite lattice, field, propagation kernel, and fits from framework primitives, but the completed stdout in this packet is only a frozen-log verifier with hard-coded expected numerical strings. The missing step is a completed first-principles replay output or raw frozen-log data sufficient to independently check the distance-tail and F~M fits.
+- **rationale:** The helper source supports the intended class-C route: lattice construction, h^2/L^2 propagation weights, valley-linear phase, barrier/slit setup, and log-log fits are implemented rather than imported from a cited note. However, the supplied executed runner path does not perform that replay; it reads a frozen log and checks hard-coded expected Born, tail, and F~M strings. An independent inventory can confirm structural counts and the k=0 phase-independence sanity check, but not the quoted tail slopes, R^2 values, or F~M exponent without the underlying distance and sweep deltas. The claim is therefore not clean in this restricted packet.
+- **auditor confidence:** high
 
 ### `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08`
 

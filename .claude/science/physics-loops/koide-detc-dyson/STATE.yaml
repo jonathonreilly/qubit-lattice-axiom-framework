@@ -1,27 +1,28 @@
 slug: koide-detc-dyson
 title: "Koide r=1/2 via det_C / Kähler-Dirac index — the one open derivation lever"
 opened: 2026-06-06
-status: block01_shipped
-target: "Derive the charged-lepton Koide magnitude r=|b|^2/a^2=1/2 (Q=2/3) via the multiplicity-stripped det_C / chirality-graded index, the one genuinely open derivation lever (gated on AC_phi_lambda, Tier-A lev 41)."
-verdict_so_far: sharper_obstruction
+status: block01_refuted_lever_still_open
+target: "Derive the charged-lepton Koide magnitude r=|b|^2/a^2=1/2 (Q=2/3) via the multiplicity-stripped det_C / holomorphic index, the one genuinely open derivation lever (gated on AC_phi_lambda, Tier-A lev 41)."
+verdict_so_far: refuted_reframe_lever_remains_open
 blocks:
   - id: block01
     date: 2026-06-06
     trace_class: negative_route_pruning
     branch: physics-loop/koide-detc-dyson-obstruction-20260606
-    note: docs/KOIDE_R_HALF_FORK_IS_THE_DYSON_REALITY_CLASS_CHARGED_LEPTON_MASS_IS_SYMMETRIC_SHARPER_OBSTRUCTION_NOTE_2026-06-06.md
-    runner: scripts/audit_companion_koide_dyson_reality_class_sharper_obstruction_exact.py
-    runner_result: "12/12 exact"
+    pr: 3138   # CLOSED — retracted (refuted by Codex review)
+    outcome: REFUTED
     finding: >
-      The det_C-vs-det_R fork is the DYSON REALITY CLASS (Dirac/symmetric/determinant/degree-2/r=1
-      vs Majorana/antisymmetric/Pfaffian/degree-1/r=1/2). The K/CPT-real charged-lepton mass is
-      SYMMETRIC (Hermitian, built from i*J_cs, distinct eigenvalues) -> determinant, no Pfaffian -> r=1;
-      no antisymmetric (K^2=-1) structure on the distinct-eigenvalue doublet; electric charge FORBIDS
-      the Majorana/Pfaffian (r=1/2) structure for a charged lepton. THREE convergent arguments
-      (Coleman-Weinberg, KO-mod-2 Dyson parity, Berezin degree) + charge -> r=1. FORECLOSES the det_C
-      lever for charged leptons; framework forces Q=1; empirical Q=2/3 is the derived partial-falsification.
+      A 16-agent reframe→attack workflow recast the det_C-vs-det_R fork as the "Dyson reality class"
+      (det_C=Pfaffian=Majorana=r=1/2; det_R=det=Dirac=r=1) and argued electric charge forecloses r=1/2.
+      Codex adversarial review REFUTED it: the Dirac/Majorana↔det_C/det_R mapping is INVERTED relative to
+      the landed Berezin fork (Majorana→r=1; holomorphic-Dirac→r=1/2), so det_C/r=1/2 is the Dirac/holomorphic
+      reading, which charge does NOT forbid; the charge argument attacks the wrong target; operator-symmetry
+      does not bear on the readout functional; charge import + "forces/foreclosed" overclaim. The lever
+      remains OPEN. See NO_GO_LEDGER block01 for the do-not-re-walk record.
 provenance:
   reframe_attack_workflow: wf_a52c0201-d2a   # 10 reframe lenses + 5 attacks + synthesis, 16 agents
-residual:
-  - "Formal AC_phi_lambda staggered realization (Dirac-bilinear at the lattice level) — narrow, charge-foreclosed."
-  - "Neutrino sector: electrically neutral, charge foreclosure does NOT apply -> det_C/Majorana is ΔQ=0-allowed -> prediction surface, not foreclosure."
+  codex_review: bfy906gr4   # verdict REFUTED, 4 BLOCKERs
+open_lever_unchanged:
+  - "Does the framework's generation readout use the HOLOMORPHIC polarization (one complex slot -> r=1/2) or the REAL polarization (two real slots -> r=1)? The open AC_phi_lambda staggered-realization / Berezin-polarization gate. Neither derived nor foreclosed."
+lesson:
+  - "Multi-agent reframes can produce confident, internally-consistent-looking reframes that are CATEGORY ERRORS. Adversarial review against LANDED context (the verified Berezin-fork table) is what caught the inverted mapping. Always cross-check a reframe's core identification against the runner-verified prior note before shipping."

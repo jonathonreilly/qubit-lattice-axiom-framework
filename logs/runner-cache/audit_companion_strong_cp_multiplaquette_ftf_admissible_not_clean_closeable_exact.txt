@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_strong_cp_multiplaquette_ftf_admissible_not_clean_closeable_exact.py
+runner_sha256: 2f747ecd72ceceeef5a7d5c4431050250637593f5e265cd956e277672818f7db
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.93
+status: ok
+----- stdout -----
+PASS - (1) F~F = eps.F.F = 8(F01 F23 - F02 F13 + F03 F12) (the E.B topological density), generically NONZERO
+PASS - (2) [under the standard leading-order clover model Q~i a^2 F, not a from-scratch lattice expansion] the contraction eps tr(Q Q) reduces to -a^4 F~F -> the lattice F~F slot is populated at leading order
+PASS - (3) single plaquette cannot build F~F: tr F = 0 and eps.F has free indices (needs a SECOND plaquette) -> F~F is intrinsically TWO-plaquette (consistent with the single-plaquette O(a^6) no-F~F theorem)
+PASS - (4) [bookkeeping of standard facts, NOT derived] the clover F~F is gauge-invariant, local, a real density, NOT excluded by the retained RP half-square no-go, and CPT-even -> no reality/RP-no-go/CPT/locality/gauge-invariance principle excludes it
+PASS - (5) [conclusion from (1)-(4)] the multi-plaquette F~F boundary is NOT clean-closeable: the clover F~F is computed-realizable (1)-(3) and admissible (4), so only a single-plaquette/minimality ADMISSION excludes it -> theta_gauge=0 is not derived this way
+
+5 PASS, 0 FAIL
+
+PRESS RESULT (multi-plaquette F~F): the open boundary is NOT clean-closeable.
+ - The CLOVER (two-plaquette) operator reproduces F~F at leading order (runner 1,2); a single plaquette CANNOT (3).
+ - The clover F~F is ADMISSIBLE by every clean framework principle — gauge-invariant, local, real density,
+   RP-compatible, CPT-even (4). No reality/RP/CPT/locality/gauge-invariance principle excludes it.
+ - Only a SINGLE-PLAQUETTE / minimality ADMISSION removes the F~F slot (5). So theta_gauge=0 is gated on that
+   admission; the multi-plaquette boundary does NOT close it. Combined with #3174 (the measure side cannot force
+   theta_gauge=0 either), theta_gauge is admitted from BOTH sides: the action CAN carry F~F, and the measure cannot
+   detect/forbid it. Honest endpoint: theta_gauge is a minimality admission, structurally parallel to Koide r=1/2.
+
+
+----- stderr -----
+

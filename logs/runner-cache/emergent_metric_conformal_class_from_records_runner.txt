@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/emergent_metric_conformal_class_from_records_runner.py
+runner_sha256: a9c631805c56bec3546a6da7902d1baf4691d6b39fb10eadebbd0de774929429
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.04
+status: ok
+----- stdout -----
+==============================================================================
+Causal data: I-axis order + LR cone + (3,1) signature
+==============================================================================
+   finite LR cone v_LR = 0.6937 (light cone); I-axis total order: True; (3,1): 1T+3S
+  [PASS] retained causal data supply the conformal-class input (event order + light cone + (3,1) signature)  | the conformal-class data from the session's emergent-time work
+
+==============================================================================
+Conformal rigidity: the causal cone fixes the metric UP TO a conformal factor
+==============================================================================
+   eta-null v is null for Omega^2*eta (same cone): True
+   a different cone-speed c=0.6 metric does NOT share the null cone: True
+   eta and Omega^2*eta share the cone but differ in scale: True
+  [PASS] the causal cone fixes the conformal CLASS, not the scale (Malament rigidity)  | g and Omega^2 g share the causal structure => cone => conformal class only
+
+==============================================================================
+Clock-rate boundary: the conformal FACTOR is the post-record clock-rate NO-GO
+==============================================================================
+   same record/count history under two monotone clocks tau_A, tau_B (both valid): True
+   the counts/order are identical, but the rates (durations) differ: True
+  [PASS] the conformal factor (clock rate/scale) is NOT fixed by records (post-record clock-rate no-go)  | records give order/count; the scale needs a supplied clock map tau (retained_no_go)
+
+==============================================================================
+Assembly: conformal class from retained causal data, conformal factor = located no-go
+==============================================================================
+   DERIVED: the emergent Lorentzian metric's CONFORMAL CLASS (causal/light-cone structure)
+            from retained record-time/LR/signature data via Malament rigidity.
+   NO-GO:   the CONFORMAL FACTOR (clock rate / metric scale) = post-record clock-rate no-go
+            (retained_no_go); records give order/count, the scale needs a supplied clock unit.
+   => geometry's CAUSAL/conformal structure is retained-data native; its SCALE is a located no-go.
+      (varying record-density -> curved conformal class = the gravity seed, beyond this note.)
+  [PASS] emergent metric = (retained-data conformal class) + (no-go conformal factor)  | the metric's causal structure is derived; the scale is the precisely-located clock-rate no-go
+
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

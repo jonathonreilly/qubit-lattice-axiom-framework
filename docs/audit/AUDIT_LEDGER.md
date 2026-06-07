@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 738 |
+| **retained_bounded** | 739 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1303 |
+| unaudited | 1302 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 31 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1158 |
+| `audited_clean` | 1159 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1614 |
+| `unaudited` | 1613 |
 
 | claim_type | count |
 |---|---:|
@@ -1041,6 +1041,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `self_gravity_failure_diagnosis` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `self_gravity_scaling_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `seventh_family_diagonal_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `shapiro_five_family_portability_corrected_boundary_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `shapiro_static_discriminator_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
@@ -15298,6 +15299,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`
   - `DIAMOND_SENSOR_PROTOCOL_NOTE.md`
   - `DIAMOND_SENSOR_PREDICTION_NOTE.md`
+- **auditor confidence:** high
+
+### `shapiro_five_family_portability_corrected_boundary_note_2026-06-06`
+
+- **Note:** [`SHAPIRO_FIVE_FAMILY_PORTABILITY_CORRECTED_BOUNDARY_NOTE_2026-06-06.md`](../../docs/SHAPIRO_FIVE_FAMILY_PORTABILITY_CORRECTED_BOUNDARY_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the sampled proxy statement for the three restored grown-family samples plus the named quadrant and radial rows at c={2.0,1.0,0.5,0.25}, with corrected zero-source control and milliradian-scale cross-family spread.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-190114-87a882c3dd-shapiro_five_family_portabil`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The corrected runner gates show zero-source finite-c control below 1e-12, nonzero source-off diagnostics, positive monotone finite-c detector phases as c decreases, and five-family sampled spread below 0.003 rad at each tested c.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the sampled geometries/connectivities and computes the instantaneous and finite-c propagations directly; the included helpers cover the load-bearing quadrant and radial builders. Independent arithmetic checks of the displayed table confirm the asserted spreads and monotonicity, and the s=0 zero-source identity follows from the field term vanishing for both instantaneous and finite-c propagation.
+- **rationale:** The claim is explicitly bounded to sampled rows and does not import an external calibration, observational comparator, or family-wide theorem. The runner source is not a print-only or expected-value matcher on the load-bearing path; it computes the phase observable from deterministic lattice samples and included connectivity builders. The four assertion gates in the completed runner output match the source note and support exactly the stated bounded scope.
 - **auditor confidence:** high
 
 ### `shapiro_five_family_portability_note`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 722 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1294 |
+| unaudited | 1293 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1135 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 56 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1601 |
+| `unaudited` | 1600 |
 
 | claim_type | count |
 |---|---:|
@@ -1298,6 +1298,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7980,6 +7981,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The audited claim closes as standard finite-group representation algebra over the retained S3 and Z2 anchors, with the C3 and trivial rows following directly from subgroup restrictions. The false S3-locus formula identified inside the cited Z2 authority is a real upstream defect, but it is not load-bearing for this note’s Z2 row or minimal-breaking conclusion. The current claim uses the Z2 authority for the five-parameter generically nondegenerate family, not for that displayed S3-locus identity.
 - **rationale:** Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The audited claim closes as standard finite-group representation algebra over the retained S3 and Z2 anchors, with the C3 and trivial rows following directly from subgroup restrictions. The false S3-locus formula identified inside the cited Z2 authority is a real upstream defect, but it is not load-bearing for this note’s Z2 row or minimal-breaking conclusion. The current claim uses the Z2 authority for the five-parameter generically nondegenerate family, not for that displayed S3-locus identity.
 - **auditor confidence:** judicial
+
+### `generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Periodic pure-corner plane-wave calculation for the hw=1 momentum corners using Vq(q)=-G/(eps(q)+mu^2): equal inter-corner transfers, equal negative pair mutual energies, and IR/volume scaling of the magnitude; no physical magnitude or flavor value audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-002910-59b3107883-generation_localization_mome`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For two plane waves k_i,k_j with translation-invariant V, the mutual energy is delta_ij=(Vq(0)-Vq(k_i-k_j))/N, and every hw=1 corner pair has eps(k_i-k_j)=8, so all pair deltas are equal and negative.  _(class `A`)_
+- **chain closes:** False — The algebra from the stated periodic translation-invariant kernel closes: eps(Delta k)=8 for all three pairs and delta=-8G/[N mu^2(8+mu^2)]<0 for G,mu^2>0. The restricted packet does not close the bridge from the cited open-lattice self-consistent two-body channel to the periodic translation-invariant density-density/Hartree-Fock plane-wave readout used as the load-bearing kernel.
+- **rationale:** The runner is substantive rather than a print-only certificate: it independently builds a periodic lattice Green operator for L=4,6 and checks the Hartree-Fock formula, and the displayed eps, sign, 1/N scaling, and Fock/Hartree ratio are algebraically consistent. The remaining blocker is not arithmetic; it is dependency scope. The provided mediator authority is a retained_bounded open-cubic self-consistent force-channel result, while this note needs a retained bridge to the periodic translation-invariant plane-wave density-density kernel and normalization. With that bridge admitted, the theorem would be a clean class-A closure in the stated pure-corner scope.
+- **open / conditional deps cited:**
+  - `STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11.md`
+- **auditor confidence:** medium
 
 ### `generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note`
 

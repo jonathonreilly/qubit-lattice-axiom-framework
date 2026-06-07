@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 203 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 729 |
+| **retained_bounded** | 730 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1268 |
+| unaudited | 1267 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1145 |
+| `audited_clean` | 1146 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1577 |
+| `unaudited` | 1576 |
 
 | claim_type | count |
 |---|---:|
@@ -1075,6 +1075,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `stable_post_record_dial_location_certificate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_3d_self_gravity_sign_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -16394,6 +16395,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The current live capture-closure runner computes two 9/9 cycle battery scores, a cycle gap improvement from 9.828e-01 to 4.734e-01, and a layered holdout gap improvement from 9.191e-01 to 4.559e-01 while preserving the stated guardrails.  _(class `C`)_
 - **chain closes:** False — The primary runner and most helpers show genuine numerical construction of graph Laplacians, Poisson solves, Hamiltonians, Crank-Nicolson evolution, and derived force/gap metrics rather than hard-coded pass strings. However, the transitive helper scripts/frontier_staggered_backreaction_prototype.py is explicitly truncated in the restricted packet, so the full import chain cannot be independently verified.
 - **rationale:** The displayed arithmetic is internally consistent: the reported mean R2, cycle improvement, and holdout improvement follow from the shown per-row numbers, and the supplied primary runner computes those quantities from helper results. The helper chain contains real computation and does not merely print constants on the visible path. The restricted packet nevertheless fails the stated source-exposure requirement because one transitive helper is not fully included, preventing verification of the complete load-bearing import chain.
+- **auditor confidence:** high
+
+### `staggered_backreaction_live_green_packet_note_2026-05-29`
+
+- **Note:** [`STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md`](../../docs/STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite bounded comparison of three graph-Green maps on the current staggered graph runner, including the raw cycle-gap improvement, raw holdout gap, retained linearity/additivity/TOWARD/norm checks, and explicit non-closure of calibrated holdout and endogenous self-refresh.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-013045-945b2ce2ce-staggered_backreaction_live_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The live runner computes resistance_yukawa as the best holdout-aware map, with 2.81x raw cycle-gap improvement over screened Poisson, raw holdout gap 1.534e-02, large calibrated holdout gap 5.371e-01, and open cycle-bearing self-gap 1.339e-01.  _(class `C`)_
+- **chain closes:** True — The provided primary and helper sources construct the graph families, Green maps, Hamiltonian evolution, force observable, gain fit, gap metrics, and threshold assertions from finite arrays rather than importing the contested result. Independent arithmetic on the displayed table confirms the 2.81 improvement ratio and the resistance_yukawa balance ordering.
+- **rationale:** The runner is not a print-only certificate: its load-bearing path calls the exposed helper code to generate the graphs, apply the screened Poisson/geodesic Yukawa/resistance Yukawa maps, evolve the finite system, and compute the reported gaps and battery metrics. The numerical readout is internally consistent: 9.618e-01 / 3.425e-01 = 2.81x, the raw holdout value is below 2e-2, the calibrated holdout value remains above 0.5, and the balance column orders resistance_yukawa first. No cited support note, external comparator, or calibrated observed target is imported, and the source explicitly limits the conclusion to this frozen finite runner comparison.
 - **auditor confidence:** high
 
 ### `staggered_backreaction_nonlocal_closure_note`

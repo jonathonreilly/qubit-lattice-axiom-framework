@@ -55,14 +55,16 @@ chk("(2b) sum_k lambda_k^2 = 3a^2 + 6|b|^2 (reproven from the spectrum)", simpli
 chk("(2c) Q = (sum lambda^2)/(sum lambda)^2 = 1/3 + (2/3)(|b|^2/a^2) = 1/3 + (2/3) r  [REPROVEN from the C_3 circulant]",
     simplify(Q_spectrum - (Rational(1, 3) + Rational(2, 3)*r_sym)) == 0)
 def Q(r): return Rational(1, 3) + Rational(2, 3)*r
-# the two READOUTS differ only in the value of r they impose on the same circulant; arithmetic consequences:
-chk("(2d) complex-type / holomorphic readout (1 complex slot, r=1/2): Q=2/3 (empirical target)",
-    Q(Rational(1, 2)) == Rational(2, 3))
-chk("(2e) realified / dimension-count readout (2 real slots, r=1): Q=1 (the native log|det| value)",
+# (2d),(2e) check ONLY the arithmetic for the two r-values. The slot-count -> r bridge (1 complex slot -> r=1/2;
+# 2 real slots -> r=1) is the LANDED Berezin-fork table's result, NOT reproven here.
+chk("(2d) arithmetic: r=1/2 -> Q=2/3 (the value the complex-type/holomorphic readout imposes per the landed "
+    "Berezin table; the slot-count -> r bridge is the table's, NOT checked here)", Q(Rational(1, 2)) == Rational(2, 3))
+chk("(2e) arithmetic: r=1 -> Q=1 (the value the realified/dimension-count readout imposes; the native log|det| value)",
     Q(1) == 1)
 # Orientation: the landed Berezin-fork table maps holomorphic -> r=1/2 and Majorana -> r=1 (cross-referenced in the
-# companion note, not recomputed here). FS=0 (complex type, check (1)) rules out the real/Majorana TYPING of the
-# doublet, hence rules out the inverted "Majorana <-> r=1/2" reading of the retracted #3138. FS does NOT by itself
+# companion note, not recomputed here). FS=0 (complex type, check (1)) establishes the doublet is NOT a real/
+# self-conjugate (FS=+1) irrep -> this rules out the INVERTED "Majorana <-> r=1/2" reading of the retracted #3138.
+# It does NOT rule out the realified/Majorana -> r=1 cell (the admissible realification). FS does NOT by itself
 # select between the two readouts (that is the open gate, check (3)).
 
 # (3) OBSTRUCTION (necessary-not-sufficient): the native flavor complex structure J_cs=(C-C^2)/sqrt3 commutes
@@ -86,8 +88,9 @@ BOUNDED RESULT (reframe + obstruction; NOT a closure):
  - The C_3 generation doublet is Frobenius-Schur COMPLEX type (FS=0). The two readouts are the complex-type /
    holomorphic readout (1 complex slot, r=1/2) and the realified / dimension-count readout (2 real slots, r=1).
  - ORIENTATION: the landed Berezin-fork table maps holomorphic/Dirac -> r=1/2 and real/Majorana -> r=1. FS=0
-   rules out the real/Majorana TYPING of the doublet, hence rules out the inverted "Majorana <-> r=1/2" reading
-   of the retracted #3138. FS does NOT by itself prove r=1/2 is selected.
+   establishes the doublet is NOT real/self-conjugate (FS=+1) -> rules out the INVERTED "Majorana <-> r=1/2"
+   reading of #3138; it does NOT rule out the realified/Majorana -> r=1 cell (admissible). FS does NOT prove
+   r=1/2 is selected.
  - OBSTRUCTION: J_cs is measure-neutral ([J_cs,H]=0), so FS=0 + the complex carrier are NECESSARY-NOT-SUFFICIENT.
    Which readout is selected is the open, DYNAMICAL AC_phi_lambda gate. r=1/2 is NOT derived here.
 """)

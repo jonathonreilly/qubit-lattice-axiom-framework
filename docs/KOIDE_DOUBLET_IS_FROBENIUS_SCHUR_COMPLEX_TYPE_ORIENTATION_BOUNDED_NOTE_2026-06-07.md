@@ -15,16 +15,19 @@ The Koide `det_C`-vs-`det_R` fork (the `r = 1/2` vs `r = 1` reading of the C₃ 
   The real 2-dimensional "doublet" is the **realification of a complex-type irrep**. [runner (1)]
 - The Koide lever `Q = 1/3 + (2/3) r` (`r = |b|²/a²`) is **reproven from the C₃ circulant spectrum**
   `λ_k = a + 2|b|cos(δ + 2πk/3)` via `Q = (Σλ_k²)/(Σλ_k)²`. [runner (2a)–(2c)]
-- The two **readouts** of the same circulant are: the **complex-type / holomorphic readout** (count the doublet
-  as **one complex slot**, `ω̄ = conj(ω)` determined not independent) → `r = 1/2` (`Q = 2/3`); and the
-  **realified / dimension-count readout** (count its **two real slots**) → `r = 1` (`Q = 1`, the native
-  `log|det|` value). [runner (2d),(2e)]
+- The two **readouts** of the same circulant — the **complex-type / holomorphic readout** (the doublet as
+  **one complex slot**, `ω̄ = conj(ω)` determined not independent) and the **realified / dimension-count
+  readout** (its **two real slots**) — map to `r = 1/2` (`Q = 2/3`) and `r = 1` (`Q = 1`, the native
+  `log|det|` value) respectively. The **slot-count → r mapping is the landed Berezin-fork table's** (cited
+  below), **not reproven here**; runner (2d),(2e) check only the resulting arithmetic `Q(1/2)=2/3`, `Q(1)=1`.
 - **Orientation.** The landed, runner-verified four-cell Berezin-fork table
   ([`KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md`](./KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md))
   maps `holomorphic / Dirac ↔ r = 1/2` and `real / Majorana ↔ r = 1`. The Frobenius-Schur **complex** typing
-  of the doublet **rules out the real/Majorana typing**, and hence rules out the **inverted** reading of a
-  retracted attempt that asserted `det_C = Pfaffian = Majorana → r = 1/2` (closed/retracted). The FS typing does
-  **not** by itself prove `r = 1/2` is selected. [runner (1),(2)]
+  establishes the doublet is **not** a real/self-conjugate (`FS = +1`) irrep. This rules out the **inverted**
+  `Majorana → r = 1/2` reading of a retracted attempt (`det_C = Pfaffian = Majorana → r = 1/2`,
+  closed/retracted). It does **not** rule out the **realified / Majorana → `r = 1`** cell of the Berezin table
+  (the admissible realification of the complex-type irrep, = the native `log|det|` value); that cell remains
+  open pending the selector. The FS typing does **not** by itself prove `r = 1/2` is selected. [runner (1),(2)]
 
 ## This is an orientation correction, not a closure
 

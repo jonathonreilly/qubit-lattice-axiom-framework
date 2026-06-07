@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 714 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1369 |
+| unaudited | 1368 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 8 |
+| ~~audited_conditional~~ | 9 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1125 |
-| `audited_conditional` | 8 |
+| `audited_conditional` | 9 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1678 |
+| `unaudited` | 1677 |
 
 | claim_type | count |
 |---|---:|
@@ -1265,6 +1265,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `valley_linear_wide_tail_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -17333,6 +17334,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The provided runner source constructs the lattice, propagates amplitudes under the stated action and kernel, and computes the reported observables rather than printing hard-coded expected values. The conclusions are explicitly limited to the tested slices and match the completed runner output.
 - **rationale:** The note’s bounded tables are directly reproduced by a completed runner whose source performs the relevant numerical computation from the stated lattice/action setup. The runner does not import the contested table values from another note and does not use external comparator data. The claim is carefully scoped: it does not assert universality, a continuum theorem, or a settled derivation of the action law.
 - **auditor confidence:** high
+
+### `valley_linear_wide_tail_note`
+
+- **Note:** [`VALLEY_LINEAR_WIDE_TAIL_NOTE.md`](../../docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-lattice claim for the 3D ordered-lattice 1/L^2 family at h = 0.25 and W = 12: Born/k=0 sanity, 9/9 TOWARD no-barrier rows for z = 2..10, and the reported post-peak and far-tail log-log fits.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-160956-90cc471d59-valley_linear_wide_tail_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the widened h = 0.25, W = 12 replay for the 3D valley-linear branch, the tested z >= 5 far-tail fit is b^(-1.17) with R^2 = 0.997.  _(class `C`)_
+- **chain closes:** False — The supplied helper source contains a genuine first-principles lattice propagation path, but the completed runner output is only a frozen-log verifier with hard-coded expected strings. The restricted packet does not include the raw distance deltas or a completed --recompute output, so the b^(-1.17), R^2 = 0.997 fit cannot be independently checked as required.
+- **rationale:** The note's scope is finite and bounded, and the recompute code path appears to instantiate the stated lattice, valley-linear action, 1/L^2 kernel, and log-log fitting procedure. The actual supplied runner result, however, validates exact frozen-log strings rather than recomputing or exposing the numerical rows needed to audit the fit independently. Runner PASS therefore does not close the load-bearing math under the restricted packet.
+- **auditor confidence:** medium
 
 ### `wave_3plus1d_promotions_note`
 

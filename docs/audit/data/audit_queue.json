@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 319,
     "high": 257,
-    "leaf": 410,
+    "leaf": 409,
     "medium": 357
   },
   "cycle_break_target_count": 13,
@@ -28701,30 +28701,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "post_record_measure_weight_normalization_subdivision_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "teleportation_encoding_portability_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -29553,6 +29529,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "post_record_measure_weight_normalization_subdivision_2026-06-06"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
       "transitive_descendants": 0
     },
     {
@@ -38052,30 +38052,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "post_record_measure_weight_normalization_subdivision_2026-06-06"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "primitive_p_heavyq_casimir_closure_note_2026-05-10_ppheavyq_closure",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -40570,5 +40546,5 @@
     }
   ],
   "ready_count": 49,
-  "total_pending": 1343
+  "total_pending": 1342
 }

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 205 |
+| **retained** | 206 |
 | **retained_no_go** | 214 |
 | **retained_bounded** | 721 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 34 |
-| unaudited | 1341 |
+| unaudited | 1340 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1135 |
+| `audited_clean` | 1136 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1650 |
+| `unaudited` | 1649 |
 
 | claim_type | count |
 |---|---:|
@@ -931,6 +931,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_finite_null_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_target_kernel_stability_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_measure_weight_normalization_subdivision_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_model_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selection_rule_target_vector_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -13395,6 +13396,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Two unbounded completions can agree on every bounded record visible to the finite certificate while disagreeing on the tail statistic or limiting law.  _(class `A`)_
 - **chain closes:** True — Independently, the zero-tail completion has length-n density 3/n for n>=4, hence limit 0, while the one-tail completion has density (n-1)/n, hence limit 1, despite sharing the full four-site prefix. Therefore any certificate depending only on that finite prefix cannot select a unique unbounded limiting law.
 - **rationale:** The source presents a direct finite-prefix counterexample, not a definition substitution or tuned numerical match. The displayed quantitative identities check out independently: prefix count 3, frequency 3/4, long-window densities 3/20 and 19/20, and limiting densities 0 and 1. The runner genuinely instantiates the two completions and verifies the finite indistinguishability and tail divergence; its hard-coded route-scope flags are not the load-bearing mathematical step. The no-go is correctly narrow and explicitly leaves supplied law, projective consistency, monotone exhaustion, direct-limit compatibility, and tightness/compactness routes open.
+- **auditor confidence:** high
+
+### `post_record_measure_weight_normalization_subdivision_2026-06-06`
+
+- **Note:** [`POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the read-only 45-row measure_weight_normalization subdivision and the finite supplied-weight normalization certificate, with no derivation of a prior, source measure, Born law, production dynamics, or selected dial.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-173044-b421a6b84a-post_record_measure_weight_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supplied finite carrier plus supplied nonnegative weights with exact positive total define a normalized measure under that supplied weight rule, while normalized measure is not selected-dial authority.  _(class `A`)_
+- **chain closes:** True — Independently, for finite weights w_i >= 0 and W = sum_i w_i > 0, p_i = w_i/W is nonnegative and sums to one, while zero total and negative weights are correctly excluded. The displayed lane counts 15+7+10+7+6 sum to 45, and the runner source performs real ledger/export comparisons rather than merely printing the reported totals.
+- **rationale:** The load-bearing normalization step is a class (A) algebraic closure over supplied finite weights, not an attempted derivation of physical measure selection. The runner also checks source anchors, live ledger row classification, bounded export consistency, hash nonmutation, and firewall flags; the upstream helper subcounts 105+94+45+2 also sum to the reported 246 selector/dial rows. No external comparator, tuned numerical input, or hidden selector rule is used, and the note keeps normalized measure explicitly below selected-dial authority.
 - **auditor confidence:** high
 
 ### `post_record_model_selection_firewall_2026-06-06`

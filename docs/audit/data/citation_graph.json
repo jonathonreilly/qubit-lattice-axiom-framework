@@ -81580,12 +81580,12 @@
     },
     "post_record_selector_dial_bucket_subdivision_2026-06-06": {
       "claim_id": "post_record_selector_dial_bucket_subdivision_2026-06-06",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "exact support / read-only audit companion",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "fc43d76342f54667e7f9d25e94f9baeedaa5840e1865129576c5900d60fa0d1a",
+      "note_hash": "7ac841681276c2c80945af3b40d9dc1ddef726d5699409251f86e9eec90b450a",
       "path": "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
       "title": "Post-Record Selector/Dial Bucket Subdivision"
@@ -99807,20 +99807,20 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 891,
       "decoration": 1,
-      "meta": 270,
+      "meta": 271,
       "no_go": 134,
-      "none": 1486,
+      "none": 1485,
       "open_gate": 76,
       "positive_theorem": 196
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1297,
       "decoration": 1,
-      "meta": 270,
+      "meta": 271,
       "no_go": 247,
       "none": 460,
       "open_gate": 151,
-      "positive_theorem": 628
+      "positive_theorem": 627
     },
     "edge_count": 11295,
     "leaf_count": 1022,

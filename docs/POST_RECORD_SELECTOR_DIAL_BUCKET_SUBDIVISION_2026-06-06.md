@@ -1,9 +1,9 @@
 # Post-Record Selector/Dial Bucket Subdivision
 
 **Date:** 2026-06-06
-**Type:** exact support / read-only audit companion
-**Claim type:** methodology
-**Status:** exact-support branch-local for read-only selector/dial bucket
+**Type:** meta
+**Claim type:** meta
+**Status:** exact-support / read-only audit companion branch-local for selector/dial bucket
 subdivision; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**

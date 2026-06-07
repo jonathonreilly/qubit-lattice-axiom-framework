@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1279 |
-| meta | 308 |
+| unaudited | 1278 |
+| meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 64 |
@@ -73,10 +73,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `bounded_theorem` | 1349 |
 | `decoration` | 53 |
-| `meta` | 320 |
+| `meta` | 321 |
 | `no_go` | 318 |
 | `open_gate` | 136 |
-| `positive_theorem` | 763 |
+| `positive_theorem` | 762 |
 
 | criticality | count |
 |---|---:|

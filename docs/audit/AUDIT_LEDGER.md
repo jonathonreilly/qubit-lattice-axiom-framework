@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 739 |
+| **retained_bounded** | 740 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1302 |
+| unaudited | 1301 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 31 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1159 |
+| `audited_clean` | 1160 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1613 |
+| `unaudited` | 1612 |
 
 | claim_type | count |
 |---|---:|
@@ -1053,6 +1053,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sixth_family_sheared_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
+| `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `sm_identity_triangulation_convergence_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15530,6 +15531,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The Yukawa implied by empirical small m_nu is many orders below the Gamma ~ y_nu^2 T versus H thermalization threshold, so light-Dirac nu_R never equilibrates, while a heavy-Majorana nu_R is not a light relativistic dof.  _(class `D`)_
 - **chain closes:** True — The arithmetic and threshold comparison close for the explicitly conditional statement: y_nu = m_nu/<H> with sub-eV m_nu is far below the thermalization threshold, and the heavy-Majorana branch is excluded from the light-dof census by M_R >> T. The chain does not retire the empirical small-m_nu import or the standard cosmology/equilibration premises.
 - **rationale:** The runner performs real finite arithmetic and order-of-magnitude threshold checks rather than merely printing constants, and its output matches the note's core claims. However, the load-bearing step is an external empirical/comparator argument, not a framework first-principles derivation: it imports small observed m_nu, the radiation-era Hubble criterion, and the thermalization-rate ansatz. The note labels those imports honestly and scopes the result as partial resolution, so the conditional chain is coherent but not eligible for audited_clean.
+- **auditor confidence:** high
+
+### `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_RESIDUAL_RETIREMENT_FSB_U1Y_BOUNDED_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_RESIDUAL_RETIREMENT_FSB_U1Y_BOUNDED_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded retirement of two g_* census residuals: the fermion thermal 7/8 weight via source-local thermal integrals and the one-abelian-factor rank via the retained gl(3) ⊕ gl(1) commutant.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-190310-d189e04ee0-sm_gstar_residual_retirement`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For g_* purposes, R-FSB consumes only the direct Bose/Fermi thermal-integral ratio I_F/I_B = 7/8, and R-U1Y consumes only the single gl(1) rank in the retained gl(3) ⊕ gl(1) commutant, not the full fermionic Stefan-Boltzmann law or hypercharge values.  _(class `A`)_
+- **chain closes:** True — The thermal ratio follows from the displayed Bose/Fermi series integrals and eta/zeta identity, and the abelian count follows algebraically from the retained gl(3) ⊕ gl(1) decomposition. The note explicitly leaves the full fermionic-SB law, hypercharge values, and R-POL outside the retired scope.
+- **rationale:** Independent formula checking confirms Gamma(4) zeta(4) = pi^4/15, Gamma(4) eta(4) = 7 pi^4/120, and their ratio is 7/8. The graph-first authority states the 3 ⊕ 1 split and gl(3) ⊕ gl(1) commutant, so extracting one abelian factor is a valid algebraic consequence of retained input. The runner source mostly performs symbolic/arithmetic checks plus citation and ledger checks; it does not import PDG, lattice, fitted, or observational comparators.
 - **auditor confidence:** high
 
 ### `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10`

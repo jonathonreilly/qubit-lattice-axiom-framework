@@ -117,6 +117,25 @@ M_odd = I3 + 0.4 * S + 0.3 * A
 check("T6c K-even mass => b real (delta=0)", abs(bcoeff(M_even).imag) < 1e-9)
 check("T6d native K-odd component => b complex (delta!=0)", abs(bcoeff(M_odd).imag) > 0.1)
 
+# --- T7: the delta-channel A is DISTINCT from the chiral grading (Gamma_chi) ---
+# Gamma_chi = (2/3)J - I = -(1/3)I + (2/3)S is CIRCULANT (J = I+C+C^2), so A=i(C-C^2)
+# COMMUTES with it (both circulant). The chiral grading must ANTICOMMUTE with Gamma_chi
+# and is NON-circulant. So the delta (K-reality) channel and the Q/r chiral grading are
+# DISTINCT residuals (this corrects the earlier 'unifies with chirality import' framing).
+J = np.ones((3, 3), dtype=complex)
+Gchi = (2.0 / 3.0) * J - I3
+check("T7 J = I + C + C^2 (Gamma_chi is circulant)", np.allclose(J, I3 + C + C @ C))
+check("T7b A=i(C-C^2) COMMUTES with Gamma_chi (delta-channel, not chiral grading)",
+      np.allclose(A @ Gchi - Gchi @ A, 0))
+check("T7c A does NOT anticommute with Gamma_chi", not np.allclose(A @ Gchi + Gchi @ A, 0))
+none_circ = True
+for _ in range(2000):
+    a2, b2, c2 = np.random.randn(3) + 1j * np.random.randn(3)
+    Mc2 = a2 * I3 + b2 * C + c2 * (C @ C)
+    if np.linalg.norm(Mc2) > 1e-6 and np.allclose(Mc2 @ Gchi + Gchi @ Mc2, 0):
+        none_circ = False
+check("T7d NO circulant op anticommutes with Gamma_chi (chiral grading is non-circulant)", none_circ)
+
 # --- CTRL: the K-odd channel A is unreachable by any K-even (real) corner block (teeth) ---
 # A is purely imaginary-antisymmetric in the corner basis; a real corner block has no overlap
 check("CTRL A purely imaginary in corner basis (real-symmetric block can't produce it)",

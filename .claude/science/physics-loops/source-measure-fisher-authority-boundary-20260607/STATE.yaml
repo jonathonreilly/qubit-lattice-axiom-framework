@@ -1,0 +1,29 @@
+loop_slug: source-measure-fisher-authority-boundary-20260607
+branch: physics-loop/source-measure-fisher-authority-boundary-20260607
+base: origin/main
+started_at: 2026-06-07
+goal: >
+  Repair the source-measure sharp-record tangent row by citing retained finite
+  Fisher and retained-bounded six-component ONB authorities while preserving
+  open physical source semantics.
+target_claim_id: source_measure_sharp_record_tangent_space_theorem_note_2026-05-30
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: retained_fisher_authority_split
+files_touched:
+  - docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
+  - scripts/frontier_source_measure_sharp_record_tangent_space.py
+  - outputs/source_measure_sharp_record_tangent_space_2026-05-30.json
+imports_retired:
+  - unsourced finite Fisher tangent theorem
+  - unsourced six-component ONB normalization
+open_imports:
+  - physical source intervention semantics
+  - strict same-source top/W response certificate
+verification:
+  - command: PYTHONPATH=scripts python3 scripts/frontier_source_measure_sharp_record_tangent_space.py
+    result: SUMMARY PASS=44 FAIL=0
+pr_status: pending
+next_exact_action: Open review PR for this bounded authority split.

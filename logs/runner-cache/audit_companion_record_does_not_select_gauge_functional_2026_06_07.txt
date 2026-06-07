@@ -1,0 +1,25 @@
+NO RECORD-DERIVABLE PRINCIPLE SELECTS THE MAGNETIC GAUGE FUNCTIONAL
+========================================================================
+[PASS] psi_GJ is a Bernstein function of the Casimir (positive, completely-monotone derivative) -> valid Levy exponent -> exact convolution semigroup
+       d/dx psi_GJ = W + G*TAU*e^(-TAU x) in [0.503, 1.000], monotone decreasing
+[PASS] BOTH the heat-kernel and Gaussian+jump single-plaquette weights are reflection-positive (character coefficients c_j >= 0; analytically e^{-t*psi}>0, large-j float underflow to 0.0 is not an RP violation; low-j strictly positive)
+       min coeff (HK, GJ) = (0.00e+00, 9.24e-195); low-j strictly positive
+[PASS] identical continuum LEADING-ORDER slope (both match (1/2g^2)Tr F^2 at leading order): HK slope = 1, GJ leading slope = W + G*TAU = 1
+       HK slope=1.0, GJ leading slope=1.0
+[PASS] the two RP convolution semigroups give DIFFERENT <P> -> RP + semigroup + continuum-LO does NOT isolate the magnetic functional (the decisive counter-witness)
+       <P>_HK = e^(-3/4) = 0.4724, <P>_GJ = 0.5027, relative spread = 6.2%
+[PASS] selecting the pure-Gaussian heat kernel requires the EXTRA premise 'no jump part' (G=0) -- an assumption, not a record-derivable condition
+       the Levy/Hunt class of RP convolution semigroups is infinite-dimensional; the heat kernel is one point, picked only by stipulating no jump part
+[PASS] cross-check vs landed no-go: SU(3) beta=6 gives Wilson 0.4225 / heat-kernel exp(-2/3)=0.5134 / Manton ~0.56 -- genuinely distinct (~13% absolute spread), consistent with the landed no-go
+       Wilson=0.42253, HK=0.5134, Manton~0.56; absolute spread=0.137
+
+  Five selection principles, all NON-selecting:
+    - KMS / Tomita-Takesaki modular: pins the (generator, weight) PAIR, never the action alone
+    - convolution-semigroup / decoherence-diffusion: EXHIBITED above: Levy/Hunt class is infinite-dim; Gaussian+jump witness
+    - (P4) real-positivity / K-reality (real record): real record forces only the sign/anti-imaginary half; HK/Manton equally K-real & RP
+    - OS reflection-positivity + Symanzik minimality: RP admits a convex family; minimality has inequivalent readings -> not record-derivable
+    - max-entropy / Jaynes: bijection {energy observable} -> {Gibbs}; returns whichever functional is fed in
+[PASS] all five tested selection principles fail to select a record-derivable functional
+
+SCORECARD PASS=7 FAIL=0
+VERDICT: no record-derivable / first-principles condition selects the magnetic single-plaquette functional within the record-forced gauge-invariant-local class. The choice of magnetic functional is an irreducible admission (import-bridge), counter-witnessed by two distinct reflection-positive convolution semigroups with the same continuum leading order and different <P>. This is a no-go; the audit lane sets the verdict.

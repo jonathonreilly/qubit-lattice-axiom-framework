@@ -1,0 +1,21 @@
+loop: spin-statistics-reconstruction-boundary-20260607
+status: ready_for_review
+target_status: bounded-support
+base_ref: origin/main
+branch: physics-loop/spin-statistics-reconstruction-boundary-20260607
+active_route: source-boundary repair for audited conditional spin-statistics reconstruction row
+claim_id: flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31
+files_touched:
+  - docs/FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_2026-05-31.md
+  - scripts/flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31.py
+  - logs/runner-cache/flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31.txt
+open_imports:
+  - non-circular reconstruction R from the statistics-blind kernel to a positive-energy microcausal spinor field
+  - bare-qubit boost-spinor embedding independent of a preselected Grassmann/staggered fermion frame
+no_go_routes:
+  - T1 engine alone does not back-propagate to UV CAR/P1 on the current baseline
+  - ordinary qubit ladders and Jordan-Wigner realizability do not select cross-site statistics
+verification:
+  - "PYTHONPATH=scripts python3 scripts/flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31.py -> SCORECARD PASS=7 FAIL=0"
+next_exact_action: reviewer should inspect boundary wording and decide whether to queue the repaired source packet for re-audit
+stop_condition: coherent bounded source-repair PR opened

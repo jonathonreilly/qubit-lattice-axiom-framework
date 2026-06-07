@@ -1,0 +1,35 @@
+loop_slug: free-dirac-poincare-helper-packet
+date: 2026-06-07
+remote_branch: physics-loop/free-dirac-poincare-helper-packet-20260607
+target_claim_id: free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: runner_certificate
+target_blocker_text: "missing_dependency_edge: cite and include the companion free-Dirac Poincare representation packet, with its retained status and the carrier/cocycle/strong-continuity proof, or replace the import with a self-contained derivation in this packet."
+files_touched:
+  - docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md
+  - scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py
+  - outputs/free_dirac_poincare_generators_selfadjointness_2026_05_30.json
+  - logs/runner-cache/free_dirac_poincare_generators_selfadjointness_2026-05-30.txt
+  - logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt
+  - .claude/science/physics-loops/free-dirac-poincare-helper-packet/
+audit_surface_edits: false
+new_axioms: false
+current_blocker_state: "The companion representation note, runner, and cache are now cited by path and checked by the target runner. The citation graph has a dependency edge from the self-adjointness packet to the companion representation packet."
+remaining_frontier_residual: "Independent audit may still require status review of the companion representation packet or a stronger in-packet domain/cocycle theorem."
+verification:
+  - "python3 scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py"
+  - "python3 scripts/free_dirac_poincare_representation_2026-05-30.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py,scripts/free_dirac_poincare_representation_2026-05-30.py --force --push-mode=none"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py,scripts/free_dirac_poincare_representation_2026-05-30.py --check-only --push-mode=none"
+  - "git diff -- docs/audit | wc -c"
+next_exact_action: "Open the review PR and let the audit lane decide whether the dependency-edge blocker is retired or narrowed to a remaining status/domain-theorem burden."
+stop_condition: "Packet complete once pushed as a review PR; continue campaign by scanning remaining missing_dependency_edge rows."

@@ -14,6 +14,7 @@ but it does not claim a Nelson-Laplacian/common-analytic-core proof.
 
 from __future__ import annotations
 
+import importlib.util
 import json
 import math
 from pathlib import Path
@@ -24,6 +25,10 @@ import numpy as np
 SEED = 20260606
 TOL = 1e-9
 REPO_ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = REPO_ROOT / "docs" / "FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md"
+COMPANION_NOTE = REPO_ROOT / "docs" / "FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+COMPANION_RUNNER = REPO_ROOT / "scripts" / "free_dirac_poincare_representation_2026-05-30.py"
+COMPANION_CACHE = REPO_ROOT / "logs" / "runner-cache" / "free_dirac_poincare_representation_2026-05-30.txt"
 OUTPUT_PATH = REPO_ROOT / "outputs" / "free_dirac_poincare_generators_selfadjointness_2026_05_30.json"
 
 
@@ -33,6 +38,69 @@ def check(name: str, cond: bool, detail: str, results: list[dict]) -> bool:
     print(f"       {detail}")
     results.append({"name": name, "pass": passed, "detail": detail})
     return passed
+
+
+def load_companion_runner():
+    spec = importlib.util.spec_from_file_location(
+        "free_dirac_poincare_representation_2026_05_30",
+        COMPANION_RUNNER,
+    )
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"could not load companion runner spec: {COMPANION_RUNNER}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def source_anchor_checks(results: list[dict]) -> None:
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    companion_note_text = COMPANION_NOTE.read_text(encoding="utf-8")
+    companion_cache_text = COMPANION_CACHE.read_text(encoding="utf-8")
+    companion_module = load_companion_runner()
+
+    check(
+        "S1 note links companion free-Dirac Poincare representation note",
+        "FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md" in note_text,
+        "companion note path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S2 note links companion free-Dirac Poincare runner",
+        "scripts/free_dirac_poincare_representation_2026-05-30.py" in note_text,
+        "companion runner path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S3 note links companion free-Dirac Poincare cache",
+        "logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt" in note_text,
+        "companion runner cache path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S4 companion note carries the expected claim id",
+        "free_dirac_poincare_representation_bounded_note_2026-05-30" in companion_note_text,
+        "the linked companion note is the exact packet consumed by this repair",
+        results,
+    )
+    check(
+        "S5 companion runner exposes the Poincare algebra and Wigner checks",
+        hasattr(companion_module, "check_poincare_algebra")
+        and hasattr(companion_module, "check_mass_shell_and_wigner"),
+        "source import exposes finite Poincare closure and mass-shell/Wigner checks",
+        results,
+    )
+    check(
+        "S6 companion runner exposes the invariant-measure check",
+        hasattr(companion_module, "check_invariant_measure"),
+        "source import exposes d^3p/(2E) boost-invariance check",
+        results,
+    )
+    check(
+        "S7 companion cache is a passing representation certificate",
+        "SCORECARD PASS=8 FAIL=0" in companion_cache_text,
+        "cached companion representation runner output is present and passing",
+        results,
+    )
 
 
 def rapidity_grid(n: int, length: float) -> tuple[np.ndarray, float]:
@@ -98,6 +166,8 @@ def half_line_shift_loses_norm() -> bool:
 def main() -> int:
     rng = np.random.default_rng(SEED)
     results: list[dict] = []
+
+    source_anchor_checks(results)
 
     n = 128
     length = 14.0

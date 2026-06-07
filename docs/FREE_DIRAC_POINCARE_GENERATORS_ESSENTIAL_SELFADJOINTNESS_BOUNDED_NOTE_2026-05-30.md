@@ -44,6 +44,19 @@ explicit free one-particle Poincare representation data:
 - orbital rotation/boost vector fields and bounded spin/Wigner carrier terms;
 - the verified Poincare algebra formulas on the Schwartz mass-shell core.
 
+The concrete companion source packet is:
+
+- note:
+  [`FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`](FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md);
+- runner:
+  [`scripts/free_dirac_poincare_representation_2026-05-30.py`](../scripts/free_dirac_poincare_representation_2026-05-30.py);
+- cached output:
+  [`logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt`](../logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt).
+
+The paired runner verifies these source anchors before running the direct
+integrability checks. This source repair exposes the dependency edge for
+independent audit; it does not assert an audit status for the companion row.
+
 This repair does not derive the free Dirac carrier from baseline axioms, does
 not prove spin-statistics, and does not claim an interacting theory result.
 

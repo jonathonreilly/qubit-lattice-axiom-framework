@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/time_axis_from_record_ontology_runner.py
+runner_sha256: 78af1fe5901ab3e3b4e5017b2412a6ad493a43dc28d7dcb42093a2268c6ff1d3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+the unique time AXIS is derived from the RECORD ONTOLOGY (not a dynamics)  [class A]
+==============================================================================
+
+-- (1) the record stack's I-grading is intrinsic (no Hamiltonian) and strict-monotone --
+  [PASS] the additive count I is computed from the RECORDS alone (no H) and is strictly monotone along the durable containment poset => a unique time-axis direction (the I-gradient)  (I = [0, 1, 2, 3])
+
+-- (2) reconstruction-invariance: the axis is a function of the records, not of H --
+  [PASS] the time-axis grading function takes ONLY the record stack as input (no Hamiltonian parameter) => it is reconstruction-invariant: every pre-record H underlying the same stack gives the SAME axis => the axis is ONTOLOGICAL, not dynamics-contingent
+
+-- (3) realist-slip correction: H=0 / eigenstate = empty record stack = NO reality --
+  [PASS] the prior 'no-record' witnesses (H=0, eigenstate) carry an EMPTY realized-outcome set => an EMPTY record stack => NO reality (vacuous), NOT a no-time reality => they are NOT counterexamples to 'given a reality, the time axis is forced' (treating the reconstruction H as a no-record reality is the realist slip)  (empty-stack I = [0])
+
+-- (4) spatial Z^3 within a constant-I slice is reversible => only the I-gradient is timelike --
+  [PASS] each spatial axis reflection x_i->-x_i is an involution preserving the distance multiset (reversible) => carries no I-monotone => only the record-count I-gradient is the time axis
+
+-- (5) the unique time AXIS is unconditional from the ontology; orientation residual --
+  [PASS] reality(=records) + additive count I + durable containment + spatial reversibility => the unique time AXIS (the I-gradient) is forced UNCONDITIONALLY; the decoherence dynamics the RECORD axiom disclaims is a reconstruction, not a prerequisite; only the ORIENTATION (which I-direction is future) is residual (the past hypothesis)
+
+==============================================================================
+TOTAL: PASS=5 FAIL=0
+VERDICT: the unique emergent time AXIS is forced UNCONDITIONALLY by the record ontology (reality IS a durable, additively-counted record stack): the additive count I -- computed from the records alone, with no Hamiltonian -- is a strict monotone grading whose gradient is the unique time axis, the spatial Z^3 within each constant-I slice being reversible. The prior 'R1 needs a decoherence dynamics' was the REALIST SLIP (treating a pre-record reconstruction H=0/eigenstate, i.e. an EMPTY record stack = NO reality, as a no-time reality). The axis is reconstruction-invariant (ontological), so 'the axiom does not supply the dynamics' does NOT mean 'the time axis is not derivable'. Only the ORIENTATION is residual (the past hypothesis; retained_no_go firewall).
+
+----- stderr -----
+

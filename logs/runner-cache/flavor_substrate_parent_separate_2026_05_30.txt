@@ -1,9 +1,9 @@
-===== runner cache v2 =====
+===== runner cache v1 =====
 runner: scripts/flavor_substrate_parent_separate_2026_05_30.py
 runner_sha256: bd401ce87fbaa79ba18621f20242fa328ff17297393b7bf7bbd8b6d1f956d407
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 [PASS] D1 coin-blind grading forces K into even value slot plus odd chiral slot

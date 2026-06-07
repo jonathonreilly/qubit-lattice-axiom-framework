@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 730 |
+| **retained_bounded** | 731 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1327 |
+| unaudited | 1326 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1146 |
+| `audited_clean` | 1147 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1636 |
+| `unaudited` | 1635 |
 
 | claim_type | count |
 |---|---:|
@@ -450,6 +450,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_split_the_brick_doublet_complex_structure_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6248,6 +6249,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For H=I+bC+bC^T at b=1/sqrt(2), the eigenvalue readout gives Q_signed=2/3, while Diag(H)=I gives Q=1/3.  _(class `A`)_
 - **chain closes:** True — The identities close by finite matrix algebra: C+C^T has eigenvalues 2,-1,-1, so H has eigenvalues 1+sqrt(2), 1-1/sqrt(2), 1-1/sqrt(2), giving Q=2/3; taking the diagonal removes the C terms and returns I with Q=1/3. Also Tr(Z)=-1, so E_loc(I+zZ)=(1-z/3)I.
 - **rationale:** The packet is explicitly bounded to finite 3x3 algebra and does not claim the broader source-domain or substrate bridge. The runner source constructs the displayed matrices and checks the same finite identities rather than importing an external value or merely printing constants. An independent eigenvalue calculation confirms the load-bearing Q contrast and projection collapse.
+- **auditor confidence:** high
+
+### `flavor_substrate_parent_separate_note_2026-05-30`
+
+- **Note:** [`FLAVOR_SUBSTRATE_PARENT_SEPARATE_NOTE_2026-05-30.md`](../../docs/FLAVOR_SUBSTRATE_PARENT_SEPARATE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite M2(C) tensor C3 carrier with coin-blind I2 tensor Gamma_chi grading and the stated parent ansatz K; no audit of global M2(C) native status or an only-way folding theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-180830-f2d6c10892-flavor_substrate_parent_sepa`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With grading I2 tensor Gamma_chi, the ansatz K projects as K_even = I2 tensor G_U1 and K_odd = sigma_x tensor H_chi, while diag(1,omega) is order 3 and outside the supplied Z_2 spin-factor charges.  _(class `A`)_
+- **chain closes:** True — The finite identities close directly from the supplied matrices: Gamma_chi is involutive, G_U1 commutes with Gamma_chi and C, H_chi anticommutes with Gamma_chi and is not C-equivariant, and diag(1,omega) has order 3 with determinant omega. The source explicitly excludes the broader native-status and classification claims.
+- **rationale:** The runner source performs actual finite matrix computations rather than merely printing expected outcomes, and its checks match an independent algebraic verification of the projections, commutators, anticommutator, and order/determinant facts. No cited upstream authority, external comparator, or tuned numerical input is used. Because the note confines the conclusion to the supplied Z_2 spin-factor reading and leaves the det_C/native bridge open, the bounded claim closes as stated.
 - **auditor confidence:** high
 
 ### `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04`

@@ -1,0 +1,24 @@
+loop_slug: gauge-residual-all-weight-formal-packet
+date: 2026-06-07
+branch: physics-loop/gauge-residual-all-weight-formal-packet-20260607
+base: origin/main
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+target_claim_id: gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17
+target_blocker_text: "missing_dependency_edge: cite or prove all-weight nonvanishing of a_(p,q)(beta) for the SU(3) Wilson one-link coefficients and add an authority or explicit narrowing for the all-weight Z_beta^env object as a formal per-weight sequence rather than an actual class function."
+cycle_count: 1
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
+  - logs/runner-cache/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.txt
+  - .claude/science/physics-loops/gauge-residual-all-weight-formal-packet/
+open_imports:
+  - Independent audit must decide whether the source repair closes the row.
+  - No L2 all-weight class-function closure is claimed.
+checks:
+  - "python3 scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py -> PASS=31 FAIL=0"
+review_disposition: pass_for_handoff
+pr_status: pending
+next_exact_action: "Open review PR and let the reviewer/auditor decide whether this repairs the conditional row."
+stop_condition: "Stop only after PR handoff or if the reviewer finds a source-scope blocker."

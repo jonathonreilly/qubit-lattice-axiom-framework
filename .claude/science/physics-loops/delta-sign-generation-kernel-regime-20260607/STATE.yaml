@@ -1,0 +1,24 @@
+loop: delta-sign-generation-kernel-regime-20260607
+status: ready_for_review
+base_branch: physics-loop/generation-periodic-mediator-bridge-20260607
+stacked_on_pr: 3029
+target_claim_id: delta_sign_fixed_negative_by_retained_two_body_mediator_narrow_theorem_note_2026-06-06
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: "Use the periodic density-kernel bridge plus exact nonresonant second-order sign formula."
+files_touched:
+  - docs/DELTA_SIGN_FIXED_NEGATIVE_BY_RETAINED_TWO_BODY_MEDIATOR_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/delta_sign_from_retained_mediator_runner.py
+  - logs/runner-cache/delta_sign_from_retained_mediator_runner.txt
+  - .claude/science/physics-loops/delta-sign-generation-kernel-regime-20260607/
+verification:
+  - "PYTHONPATH=scripts python3 scripts/delta_sign_from_retained_mediator_runner.py"
+  - "TOTAL: PASS=20 FAIL=0"
+open_imports:
+  - "Physical IR/gap branch: eps_gap > 0 and eps_gap + delta > 0 for the realized delta."
+  - "Effective physical magnitude remains controlled by open mediator IR data."
+next_exact_action: "Reviewer should assess this stacked PR with PR #3029's bridge present, then decide whether the target row can be re-audited as branch-exact bounded support."
+stop_condition: "Stop this block after PR creation; further progress requires audit/review of the stacked bridge or a new IR/gap closure."

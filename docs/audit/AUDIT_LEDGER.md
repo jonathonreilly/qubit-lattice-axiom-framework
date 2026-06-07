@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 721 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 34 |
-| unaudited | 1346 |
+| unaudited | 1345 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1133 |
-| `audited_conditional` | 23 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1655 |
+| `unaudited` | 1654 |
 
 | claim_type | count |
 |---|---:|
@@ -1274,6 +1274,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6178,6 +6179,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `audit_queue_runner_path_null_for_named_primary_verifier`
   - `retained_EW_bare_coupling_bookkeeping_not_registered_one_hop_dependency`
   - `Cl3_to_SM_dimension_count_d_plus_1_d_plus_2_support_packet_not_registered_one_hop_dependency`
+- **auditor confidence:** high
+
+### `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30`
+
+- **Note:** [`FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md`](../../docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Assumed-input bare-coupling algebra: from the supplied values g_3^2=1, g_2^2=1/(d+1), g_Y^2=1/(d+2), with the bare EM inverse-sum convention used by the runner, the listed identities for g_em^2, alpha_3/alpha_em, and sin^2(theta_W) follow, including the d=3 values 9 and 4/9.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-171759-9b0f3f9207-framework_bare_alpha_ratio_a`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If g_3^2 = 1, g_2^2 = 1/(d + 1), and g_Y^2 = 1/(d + 2), then 1/g_em^2 = 2d + 3, so at d = 3 alpha_3(bare) / alpha_em(bare) = 9 and sin^2(theta_W)(bare) = 4/9.  _(class `A`)_
+- **chain closes:** True — The arithmetic closes as conditional algebra: 1/g_2^2=d+1 and 1/g_Y^2=d+2, so their inverse-EM sum is 2d+3, giving g_em^2=1/(2d+3), ratio 2d+3, and sin^2(theta_W)=(d+1)/(2d+3). The restricted packet does not close or derive the supplied coupling inputs themselves, so the closure is conditional rather than retained-grade.
+- **rationale:** The load-bearing mathematics is class A algebra and independently checks out: at d=3 the inverse-EM sum is 4+5=9, alpha_3/alpha_em=1/(1/9)=9, and sin^2(theta_W)=(1/5)/(1/4+1/5)=4/9. However, the note explicitly preserves only consequences after the coupling inputs are assumed, and the restricted packet provides no retained-grade derivation of those inputs or of the EM normalization/readout authority. The runner computes the same conditional arithmetic, but its boundary checks target the archived 2026-04-25 note rather than the 2026-04-30 source note, so it is supportive but not an independent closure of the current note's authority boundary.
 - **auditor confidence:** high
 
 ### `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`

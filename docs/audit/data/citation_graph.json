@@ -19557,6 +19557,14 @@
       "to": "koide_gamma_orbit_observable_selector_generator_line_note_2026-04-18"
     },
     {
+      "from": "koide_selected_eigenline_ambient_eta_repair_target_note_2026-06-07",
+      "to": "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24"
+    },
+    {
+      "from": "koide_selected_eigenline_ambient_eta_repair_target_note_2026-06-07",
+      "to": "koide_dimensionless_note_2026-04-24"
+    },
+    {
       "from": "koide_selected_line_cyclic_response_bridge_note_2026-04-18",
       "to": "koide_berry_phase_theorem_note_2026-04-19"
     },
@@ -72467,6 +72475,23 @@
       "runner_path": "scripts/frontier_koide_scale_selector_reparameterization_theorem.py",
       "title": "Koide Scale-Selector Reparameterization Theorem"
     },
+    "koide_selected_eigenline_ambient_eta_repair_target_note_2026-06-07": {
+      "claim_id": "koide_selected_eigenline_ambient_eta_repair_target_note_2026-06-07",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+        "koide_dimensionless_note_2026-04-24"
+      ],
+      "helper_runner_paths": [
+        "scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py"
+      ],
+      "note_hash": "515c3f50f8359fd8934ca5eb164451305e1c19f9ee7565213350a917f0cbfbe8",
+      "path": "docs/KOIDE_SELECTED_EIGENLINE_AMBIENT_ETA_REPAIR_TARGET_NOTE_2026-06-07.md",
+      "runner_path": "scripts/frontier_koide_selected_eigenline_ambient_eta_repair_target_2026_06_07.py",
+      "title": "Koide Selected-Eigenline Ambient-Eta Repair Target"
+    },
     "koide_selected_line_cyclic_response_bridge_note_2026-04-18": {
       "claim_id": "koide_selected_line_cyclic_response_bridge_note_2026-04-18",
       "claim_type_author_hint": null,
@@ -100400,7 +100425,7 @@
       "meta": 271,
       "no_go": 136,
       "none": 1485,
-      "open_gate": 75,
+      "open_gate": 76,
       "positive_theorem": 197
     },
     "claim_type_seed_hint_counts": {
@@ -100409,13 +100434,13 @@
       "meta": 271,
       "no_go": 249,
       "none": 462,
-      "open_gate": 150,
+      "open_gate": 151,
       "positive_theorem": 626
     },
-    "edge_count": 11368,
-    "leaf_count": 1008,
-    "node_count": 3068,
+    "edge_count": 11370,
+    "leaf_count": 1009,
+    "node_count": 3069,
     "root_count": 1013,
-    "runners_with_path": 2655
+    "runners_with_path": 2656
   }
 }

@@ -1,0 +1,14 @@
+Koide selected-eigenline ambient-eta repair target
+========================================================================
+[PASS] current frozen finite Wilson eta diagnostic equals APS comparator 2/9
+       |eta|/fixed_site=0.222222222222; 2/9=0.222222222222
+[PASS] selected/spectator residual is independent of ambient eta proxy
+       delta/eta_APS - 1 = 9*c/2 - sin(alpha)**2
+[PASS] closure still requires selected line alpha=0 and endpoint offset c=0
+       ambient eta matching does not choose the rank-one line or endpoint lift
+[PASS] live witness still exposes ambient-residual wording, so this is a real repair target
+       companion leaves the audited witness untouched
+[PASS] companion note keeps audit-bound diagnostic status
+       independent audit lane owns any witness re-ratification
+========================================================================
+TOTAL: 5 PASS / 0 FAIL

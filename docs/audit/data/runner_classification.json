@@ -16356,6 +16356,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_scale_selector_reparameterization_theorem.py"
     },
+    "koide_selected_eigenline_ambient_eta_repair_target_note_2026-06-07": {
+      "assert_count": 0,
+      "counts": {
+        "A": 5,
+        "B": 3,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_koide_selected_eigenline_ambient_eta_repair_target_2026_06_07.py"
+    },
     "koide_selected_line_cyclic_response_bridge_note_2026-04-18": {
       "assert_count": 1,
       "counts": {
@@ -52511,6 +52523,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_koide_selected_eigenline_ambient_eta_repair_target_2026_06_07.py": {
+      "assert_count": 0,
+      "claims": [
+        "koide_selected_eigenline_ambient_eta_repair_target_note_2026-06-07"
+      ],
+      "counts": {
+        "A": 5,
+        "B": 3,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_koide_selected_line_cyclic_response_bridge.py": {
       "assert_count": 1,
       "claims": [
@@ -70309,14 +70336,14 @@
   "stats": {
     "decoration_candidates": 497,
     "dominant_class_distribution": {
-      "A": 360,
+      "A": 361,
       "B": 429,
       "C": 953,
       "D": 353,
       "none": 451
     },
-    "runners_classified": 2546,
+    "runners_classified": 2547,
     "runners_with_C": 1277,
-    "runners_with_D": 740
+    "runners_with_D": 741
   }
 }

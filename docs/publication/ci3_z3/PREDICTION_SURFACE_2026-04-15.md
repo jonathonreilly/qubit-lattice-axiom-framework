@@ -202,6 +202,17 @@ conceptual pressure.
   `Z`-erasure criterion theorem and the unique strict-onsite canonical
   descent theorem, and the selected-line local boundary-source plus
   based-endpoint law behind `delta = 2/9` remains open
+- emergent Lorentz (two distinct pressure points):
+  (1) the tree-level dim-6 LV is `~0.3 orders` below the UHECR/GRB bound at
+  the highest cosmic-ray energies -- a near-term experimental pressure point
+  (a tightening of UHECR time-of-flight bounds tests it directly);
+  (2) the radiative *marginal* species-speed-difference `delta_v` is
+  **uncomputed**: it is a falsifiable prediction (the framework computes it,
+  it is not tuned), and the best current estimate (`~alpha_s/4pi`, the shared
+  kernel not cancelling the `O(1)`-Casimir species difference) would falsify
+  the framework if it were the final number. The genuine open task is the
+  species-differential computation; this is the framework's highest-stakes
+  open Lorentz pressure point, not a naturalness/symmetry deficit
 
 ## Structural predictions and signatures
 
@@ -249,9 +260,38 @@ conceptual pressure.
   - fixed-`H_lat` boost-covariance kernel closes as
     `U(a)=exp(-i a H_lat)` by Stone's theorem; the gravity-card
     directional-measure kernel remains separate/open
+  - **near-term falsifiable test (tree-level dim-6):** the tree-level
+    dispersion gives `|delta E^2/E^2| ~ (1/12)(E/M_Pl)^2`, which is
+    `~5.6 x 10^-34` at LHC and `~5.6 x 10^-40` at nucleon scale (safe by
+    12-13 orders), but at the highest cosmic-ray energies
+    (`E ~ 10^11 GeV`) reaches `~5.6 x 10^-18` against a GRB/UHECR bound
+    `~10^-17` -- only `~0.3 orders` of headroom. This is the framework's
+    **sharpest accessible Lorentz test**: a modest tightening of UHECR /
+    GRB time-of-flight bounds reaches it. The `ell = 4` cubic-harmonic
+    angular pattern is the smoking-gun signature if any LV is seen.
+  - **high-stakes uncomputed prediction (radiative marginal):** the
+    framework, being a *fixed fundamental theory* that derives its
+    couplings (`g^2 = 2N/beta = 1` at `beta=6`, no free knob), does not
+    *tune* the species-to-species maximum-speed difference `delta_v` --
+    it *computes* it. The field-wide Collins-naturalness framing is
+    therefore partly a category error here; the well-posed question is
+    the predicted number. The tree-level marginal `delta_v` is **absent**
+    on the native continuous-time surface; the radiative marginal
+    `delta_v` is currently **uncomputed** (the `~alpha_s/4pi ~ 6 x 10^-3`
+    figure is a generic estimate, not the framework's posterior; the
+    shared `sin(p a)` kernel universalizes the common part but not the
+    `O(1)`-Casimir species difference). This is **pass-or-falsify**: a
+    computed `delta_v` below the `~10^-20` bounds passes; near `10^-3`
+    falsifies. The genuine open task is the species-differential
+    computation, **not** a custodial-symmetry search.
   - authority:
     [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](../../EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
-    [LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md](../../LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)
+    [LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md](../../LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md),
+    [LORENTZ_VIOLATION_DERIVED_NOTE.md](../../LORENTZ_VIOLATION_DERIVED_NOTE.md),
+    [LORENTZ_NATURALNESS_GAP_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-06.md](../../LORENTZ_NATURALNESS_GAP_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-06.md),
+    and (branch-local, not yet on `main` -- backticked to avoid a broken
+    citation-graph edge) `EMERGENT_LORENTZ_CONTINUOUS_TIME_MARGINAL_GATE_DISSOLUTION_NOTE_2026-06-06.md`,
+    `LORENTZ_NATURALNESS_IS_A_COMPUTATION_NOT_A_TUNING_NOTE_2026-06-06.md`
 - strong CP:
   - retained action-surface `theta_eff = 0` on the retained
     axiom-determined Wilson-plus-staggered action surface

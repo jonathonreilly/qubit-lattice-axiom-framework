@@ -1,0 +1,20 @@
+loop_slug: free-dirac-wigner-dependency-repair-20260607
+branch: physics-loop/free-dirac-wigner-dependency-repair-20260607
+base: origin/main
+target_claim_id: free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07
+target_status: bounded-support
+current_goal: repair missing companion dependency authority without audit edits
+cycle_count: 1
+active_route: explicit companion note/runner/cache authority plus SHA freshness checks
+hard_residual: null
+files_touched:
+  - docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md
+  - scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py
+  - logs/runner-cache/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.txt
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: local self-check only; independent review-loop/audit remains required
+pr_status: pending
+next_exact_action: open review PR for the repair block
+stop_condition: current block packaged; campaign should pivot to next conditional row after PR creation

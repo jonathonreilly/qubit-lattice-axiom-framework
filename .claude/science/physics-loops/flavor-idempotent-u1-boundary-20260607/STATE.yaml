@@ -1,0 +1,26 @@
+loop_slug: flavor-idempotent-u1-boundary-20260607
+goal: "Repair flavor_idempotent_u1_collapses by preserving the finite U(1) collapse and demoting ordering to comparator."
+target_claim_id: flavor_idempotent_u1_collapses_note_2026-05-30
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: idempotent_u1_negative_boundary
+files_touched:
+  - docs/FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md
+  - scripts/flavor_idempotent_u1_collapses_2026_05_30.py
+  - logs/runner-cache/flavor_idempotent_u1_collapses_2026_05_30.txt
+  - .claude/science/physics-loops/flavor-idempotent-u1-boundary-20260607/
+open_imports:
+  - "Framework-native charged-fermion sector selector."
+retired_imports:
+  - "Observed ordering table as a theorem."
+  - "Unlinked chiral no-go and generator-rephasing authority references."
+runner_status:
+  command: "PYTHONPATH=scripts python3 scripts/flavor_idempotent_u1_collapses_2026_05_30.py"
+  result: "SCORECARD PASS=7 FAIL=0"
+audit_data_touched: false
+review_loop_disposition: "not run; reviewer-owned review/landing path"
+next_exact_action: "Reviewer should assess whether the row is now a clean bounded negative boundary after ordering and selector overclaims are removed."
+stop_condition: "science block packaged and PR opened"

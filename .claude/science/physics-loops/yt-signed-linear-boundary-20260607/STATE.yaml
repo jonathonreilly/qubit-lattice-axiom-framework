@@ -1,0 +1,25 @@
+loop_slug: yt-signed-linear-boundary-20260607
+date: 2026-06-07
+branch: physics-loop/yt-signed-linear-boundary-20260607
+base: origin/main
+target_claim_id: yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle: 1
+active_route: finite C6 signed-linear support boundary
+hard_residual: strict top response or top-coefficient theorem identifying physical y_33 with the signed-linear tangent
+files_touched:
+  - docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md
+  - scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py
+  - outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json
+  - logs/runner-cache/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.txt
+open_imports:
+  - physical top response/correlator row
+  - top-coefficient theorem
+  - same-scale physical Y_T matching/running
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+review_status: pending reviewer extraction
+audit_data_modified: false
+next_exact_action: reviewer can extract the finite-support boundary and send the row back to audit
+stop_condition: no branch-local physical Y_T closure is claimed

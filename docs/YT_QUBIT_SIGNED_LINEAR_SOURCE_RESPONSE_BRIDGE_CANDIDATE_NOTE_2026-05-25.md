@@ -1,15 +1,45 @@
 ---
 claim_id: yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25
-claim_type_author_hint: bounded_support_note
+claim_type_author_hint: bounded_theorem
+direct_effective_status_change_allowed_from_this_note: false
 ---
 
-# Y_T Qubit Signed-Linear Source Response Bridge Candidate
+# Y_T Qubit Signed-Linear Source Response Finite Support
 
-**Claim type:** bounded support note
-**Role:** conditional exact support / bridge candidate.
-**Status:** candidate support; no positive Y_T closure.
+**Claim type:** bounded_theorem
+**Role:** exact finite support for the signed-linear `C^6` source tangent.
+**Status:** bounded exact support; no positive Y_T closure.
 **Primary runner:** `scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py`
-**Type:** conditional / support
+**Type:** exact finite support / physical bridge excluded
+
+## 2026-06-07 Finite-Support Boundary
+
+This row's direct audit target is now the finite-dimensional support theorem,
+not the physical top-Yukawa bridge:
+
+```text
+retained-bounded source-action support
++ retained-bounded LSP projective readout
++ retained-bounded S_6-democratic Q_L source support
+-> the democratic C^6 component has projective weight 1/6
+   and signed-linear source tangent 1/sqrt(6).
+```
+
+The physical statement
+
+```text
+top Yukawa coefficient y_33 equals that signed-linear tangent
+```
+
+is explicitly outside this row. It still needs a strict top response/correlator
+row or a retained top-coefficient theorem. The separate top-response
+underdetermination no-go,
+[`YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md`](YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md),
+is a boundary pointer only; it is not used here as a retained dependency.
+
+This repair does not introduce a new axiom, admission, observed comparator,
+or fitted selector. It preserves the useful finite algebra and removes the
+physical bridge from the load-bearing claim surface.
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
@@ -29,10 +59,10 @@ No new axiom, import, or retained bridge is introduced. The runner-verified
 core is the load-bearing content; the named bridge stays an admitted,
 non-load-bearing input until a retained authority for it lands.
 
-This note answers the axiom-first version of the remaining Y_T question:
+This note answers the finite-support version of the remaining Y_T question:
 
 ```text
-Can the repo baseline force the missing top coefficient from qubits on Z^3?
+What does the retained-bounded source/LSP/democratic C^6 packet force?
 ```
 
 The honest answer is a fork:
@@ -44,16 +74,16 @@ Projective probability readout of that ray -> component weight 1/6.
 Signed linear source/action tangent        -> component amplitude 1/sqrt(6).
 ```
 
-Therefore the strongest current zero-compute bridge is:
+Therefore the strongest current zero-compute finite support is:
 
 ```text
-the physical Yukawa coefficient is the signed linear action-tangent
-component of the democratic Q_L source, not the projective probability weight.
+the signed-linear action-tangent component of the democratic Q_L source
+is 1/sqrt(6), while the projective probability weight is 1/6.
 ```
 
 This is not the old Ward trap.  It does not define `y_t_bare` by an `H_unit`
-matrix element.  It isolates a finite-dimensional source-response theorem and
-states the physical bridge that remains open.
+matrix element. It isolates a finite-dimensional source-response theorem and
+keeps the physical top-response bridge open.
 
 ## Axiom-First Fork
 
@@ -118,9 +148,9 @@ dS/ds projected to O_i = u_i.
 
 For the democratic source, that coefficient is `1/sqrt(6)`.
 
-## Candidate Bridge
+## Boundary To Physical Y_T
 
-The candidate bridge is therefore:
+The physical bridge would be:
 
 ```text
 strict top Yukawa coefficient = signed linear action-tangent component
@@ -150,17 +180,18 @@ The load-bearing finite-dimensional result is only:
 democratic signed-linear source component = 1/sqrt(6).
 ```
 
-The physical bridge to the Yukawa coefficient is named explicitly and remains
-unclosed unless a later source/action theorem supplies it.
+The physical bridge to the Yukawa coefficient is named explicitly, excluded
+from this row's load-bearing target, and remains unclosed unless a later
+top-response/coefficient theorem supplies it.
 
 ## Current Status
 
-This packet is exact support, not retained closure:
+This packet is exact finite support, not physical Y_T closure:
 
 - the qubit-at-each-`Z^3`-site baseline alone does not select `y_33`.
-- The democratic source amplitude is exactly `1/sqrt(6)`.
-- Projective measurement probability gives `1/6`, so LSP alone is not enough.
-- Signed linear source/action response gives `1/sqrt(6)`, but the physical
+- the retained-bounded democratic source amplitude is exactly `1/sqrt(6)`.
+- retained-bounded projective measurement probability gives `1/6`, so LSP alone is not enough.
+- retained-bounded signed linear source/action support gives `1/sqrt(6)`, but the physical
   identification of the top Yukawa coefficient with that tangent is still the
   live bridge.
 

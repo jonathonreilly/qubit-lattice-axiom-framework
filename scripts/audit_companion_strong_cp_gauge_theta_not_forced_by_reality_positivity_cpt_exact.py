@@ -41,40 +41,47 @@ imag_pair = simplify( (sin(th*Q)*Z_Q) + (sin(th*(-Q))*Z_Q.subs(Q,-Q)) )   # Q an
 chk("(1) reality: Im-part of sector Q cancels its -Q partner for ALL theta (Z(theta) real) -> reality does NOT force theta=0",
     simplify(imag_pair)==0)
 
-# (2) POSITIVITY: Z(theta) > 0 for small theta even though theta != 0 (Z_0 dominates). Numerically:
+# (2) POSITIVITY: a POSITIVE partition function EXISTS at a representative nonzero theta (theta=0.5) in a toy
+#     CP-symmetric Gaussian sector model -> positivity is COMPATIBLE with theta != 0 -> does NOT force theta=0.
+#     (Existence at one nonzero theta suffices to show positivity is not a selector; not a universal claim.)
 def Zth(theta, chival=1.0, N=200):
     Qs=np.arange(-N,N+1)
     return float(np.sum(np.cos(theta*Qs)*np.exp(-Qs**2/(2*chival))))
-chk("(2) positivity: Z(theta=0.5) > 0 (a nonzero theta still gives a positive partition function) -> positivity does NOT force theta=0",
+chk("(2) positivity: a POSITIVE Z exists at a representative nonzero theta=0.5 (toy CP-symmetric Gaussian model) -> positivity is compatible with theta!=0 -> does NOT force theta=0",
     Zth(0.5) > 0)
 
-# (3) PHYSICALITY: theta is a genuine physical parameter — the vacuum energy F(theta) = -log Z(theta) DEPENDS on theta
-#     (F(theta) != F(0)), so theta is NOT a redundant/unphysical label that could be gauged to 0.
-chk("(3) physicality: F(theta)=-log Z(theta) depends on theta (F(0.5) != F(0)) -> theta is PHYSICAL (neutron-EDM ~ theta), not removable",
+# (3) PHYSICALITY (CONDITIONAL on an F~F slot): IF the action contains the F~F term and nontrivial topological
+#     sectors exist, the vacuum energy F(theta) = -log Z(theta) DEPENDS on theta -> theta is then a genuine physical
+#     parameter, not a removable label. The toy model EXHIBITS this generic structure; whether the framework's
+#     (un-derived) action HAS the F~F slot is the open action-class gate (so this is conditional, not a framework proof).
+chk("(3) physicality (GIVEN an F~F slot): F(theta)=-log Z(theta) depends on theta (F(0.5) != F(0)) in the toy model -> IF the slot is present theta is physical (cf. neutron-EDM ~ theta), not removable",
     abs((-np.log(Zth(0.5))) - (-np.log(Zth(0.0)))) > 1e-6)
-# and F'(0)=0 (CP at theta=0) but F''(0) = -<Q^2> != 0 (the topological susceptibility): theta=0 is a special CP point,
-# but nothing in reality/positivity SELECTS it over a generic theta.
+# F'(0)=0 (CP at theta=0); F''(0) = +<Q^2>_c > 0 (topological susceptibility, with F=-log Z the sign is POSITIVE):
+# theta=0 is the CP-symmetric point, but nothing in reality/positivity SELECTS it over a generic theta.
 dF = (-np.log(Zth(1e-4)) + np.log(Zth(-1e-4)))/(2e-4)
 chk("(3b) F'(0)=0 (theta=0 is the CP-symmetric point) but it is not SELECTED by reality/positivity — only a CP/T input picks it",
     abs(dF) < 1e-6)
 
-# (4) CPT does NOT constrain theta: Q (topological charge) is P-odd and T-odd, hence CPT-EVEN (P-odd x T-odd = even).
-#     So the framework's K/CPT-orbit (Record axiom) identifies a config with its CPT-image, which has the SAME Q ->
-#     no identification of theta with -theta -> CPT does NOT quantize/force theta. (Contrast the MASS side below.)
-P_parity, T_parity = -1, -1            # topological charge Q: P-odd, T-odd
-CPT_parity = P_parity * T_parity       # = +1 (CPT-even)
-chk("(4) Q is CPT-EVEN (P-odd x T-odd = +1) -> the Record K/CPT-orbit does NOT identify theta with -theta -> CPT does NOT force theta=0",
+# (4) CPT does NOT constrain theta. The topological charge Q ~ integral tr(F F-dual) ~ E.B has the STANDARD parities
+#     P-odd, T-odd, C-even -> CPT-EVEN (product +1). So the Record K/CPT-orbit identifies a config with a SAME-Q image
+#     -> it does NOT identify theta with -theta -> CPT does NOT quantize/force theta. (Standard parities, BOOKKEPT here,
+#     not derived; cf. the QCD theta term being P- and T-violating but CPT-conserving.)
+P_parity, T_parity, C_parity = -1, -1, +1      # Q ~ E.B: P-odd, T-odd, C-even (color-traced)  [standard parities]
+CPT_parity = P_parity * T_parity * C_parity    # = +1 (CPT-even)
+chk("(4) Q is CPT-EVEN (P-odd x T-odd x C-even = +1; standard parities, bookkept) -> the Record K/CPT-orbit does NOT identify theta with -theta -> CPT does NOT force theta=0",
     CPT_parity == 1)
 
-# (5) CONTRAST — why the MASS side IS quantizable but the gauge side is not: the mass arg det is the phase of a
-#     K/CPT-REAL (Hermitian) circulant's determinant, which is REAL (product of real eigenvalues) -> arg det in {0,pi}.
-#     The gauge theta is NOT a determinant phase, so no analogous K-reality constraint applies to it.
+# (5) CONTRAST — the MASS side IS quantizable, the gauge side is not. The mass arg det is the phase of a K/CPT-REAL
+#     (Hermitian) circulant's determinant, which is REAL (Im=0) -> arg det in {0,pi}. The gauge theta is a TOPOLOGICAL
+#     COUPLING with NO determinant, so this K-reality mechanism has nothing to act on (a structural, not numerical,
+#     point — stated, not claimed computed here beyond exhibiting the mass-determinant reality).
 a, br, bi = symbols('a b_r b_i', real=True)
 C = sp.Matrix([[0,1,0],[0,0,1],[1,0,0]]); b = br + I*bi
 M = a*sp.eye(3) + b*C + sp.conjugate(b)*(C*C)   # K/CPT-real (Hermitian) mass circulant
 detM = simplify(M.det())
-chk("(5) MASS side: det of the K/CPT-real (Hermitian) circulant is REAL -> arg det in {0,pi} (the #2932 quantization). "
-    "The GAUGE theta is NOT a determinant phase -> this mechanism does NOT transfer -> gauge theta stays admitted",
+chk("(5) MASS side: det of the K/CPT-real (Hermitian) circulant is REAL (Im=0) -> arg det in {0,pi}. The GAUGE theta "
+    "is a topological coupling with NO determinant, so this K-reality mechanism has nothing to act on (structural) -> "
+    "gauge theta is not quantized by it",
     simplify(sp.im(detM)) == 0)
 
 P=sum(1 for _,o in R if o); F=sum(1 for _,o in R if not o)

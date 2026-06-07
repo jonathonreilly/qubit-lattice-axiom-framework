@@ -19,17 +19,18 @@ records that the **gauge side** `θ_gauge` (the `F̃F` / topological coupling, w
 | route | does it force `θ_gauge = 0`? | why |
 |---|---|---|
 | reflection positivity | **No** (documented no-go) | `F̃F` is Θ-anti-invariant → the phase cancels in every reflection-Hermitian observable; RP cannot detect it ([`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](./STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)) |
-| **reality** of `Z(θ)` | **No** | with CP-symmetric sector weights `Z_Q = Z_{−Q} > 0`, `Z(θ) = Σ_Q cos(θQ) Z_Q` is real for **all** `θ` (the `sin` terms cancel pairwise). runner (1) |
-| **positivity** of `Z(θ)` | **No** | `Z(θ) > 0` for nonzero `θ` (`Z_0` dominates). runner (2) |
-| **CPT** (the Record K/CPT orbit) | **No** | the topological charge `Q` is **CPT-even** (P-odd × T-odd = +1), so the K/CPT orbit identifies a configuration with a **same-`Q`** image — it does **not** identify `θ` with `−θ`. runner (4) |
+| **reality** of `Z(θ)` | **No** | *assuming* CP-symmetric sector weights `Z_Q = Z_{−Q} > 0`, `Z(θ) = Σ_Q cos(θQ) Z_Q` is real for **all** `θ` (the `sin` terms cancel pairwise). runner (1) |
+| **positivity** of `Z(θ)` | **No** | a positive `Z(θ)` **exists** at a representative nonzero `θ` (a toy CP-symmetric sector model) — positivity is compatible with `θ ≠ 0`. runner (2) |
+| **CPT** (the Record K/CPT orbit) | **No** | the topological charge `Q` is **CPT-even** (standard parities P-odd × T-odd × C-even = +1), so the K/CPT orbit identifies a configuration with a **same-`Q`** image — it does **not** identify `θ` with `−θ`. runner (4) |
 
 And the decisive structural point: the mass-side `{0, π}` quantization rides on the **K-reality of a
 determinant** (a Hermitian operator has a real determinant); `θ_gauge` is a **topological coupling, not a
 determinant phase**, so that mechanism **does not transfer**. runner (5).
 
-`θ_gauge` is also genuinely **physical** — the vacuum energy `F(θ) = −log Z(θ)` depends on `θ` (`F'(0) = 0`
-marks `θ = 0` as the CP point, but nothing in reality/positivity/CPT **selects** it), so `θ_gauge` is not a
-removable/gauge label. runner (3),(3b).
+And **conditionally on the action containing the `F̃F` slot**, `θ_gauge` is genuinely **physical** — the vacuum
+energy `F(θ) = −log Z(θ)` depends on `θ` (`F'(0) = 0` marks `θ = 0` as the CP point, but nothing in
+reality/positivity/CPT **selects** it), so it is not a removable/gauge label. Whether the framework's action
+*has* that slot is precisely the open action-class gate below. runner (3),(3b).
 
 ## What this means
 

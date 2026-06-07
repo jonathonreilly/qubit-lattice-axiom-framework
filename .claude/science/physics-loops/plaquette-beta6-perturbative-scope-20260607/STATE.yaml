@@ -1,0 +1,12 @@
+slug: plaquette-beta6-perturbative-scope-20260607
+target_claim_id: plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27
+base: origin/main
+status: ready_for_review_pr
+actual_current_surface_status: bounded-support
+active_route: stale_expected_output_count_repair
+files_touched:
+  - docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md
+open_imports:
+  - retained/effective-bounded authority rows for NSPT packet and comparators
+next_exact_action: "Open review PR."
+stop_condition: "PR opened and verified."

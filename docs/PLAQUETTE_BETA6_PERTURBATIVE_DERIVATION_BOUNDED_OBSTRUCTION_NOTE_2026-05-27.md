@@ -370,7 +370,7 @@ python3 scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
 Expected output:
 
 ```text
-TOTAL: PASS=24  FAIL=0
+TOTAL: PASS=28  FAIL=0
 ```
 
 The runner exercises each conclusion (T1)-(T5) plus framework-side

@@ -40,22 +40,36 @@ chk("(1c) FS(omega-bar)= 0 (COMPLEX type)", fs([1, w**2, w]) == 0)
 chk("(1d) the doublet (omega (+) omega-bar) is the realification of a COMPLEX-type irrep, not a real-type one "
     "(omega-bar = conj(omega) is determined by omega, not independent)", simplify(wb - conjugate(w)) == 0)
 
-# (2) The FS-grounded, correctly-oriented Koide arithmetic (matches the landed Berezin-fork table; the
-#     INVERSE of the retracted #3138). Q = 1/3 + (2/3) r.
+# (2) REPROVE the Koide lever Q = 1/3 + (2/3) r DIRECTLY from the C_3 circulant spectrum (derived, not asserted):
+#     the circulant H = aI + bC + b̄C^2 has eigenvalues lambda_k = a + 2|b| cos(delta + 2 pi k/3) (Brannen
+#     sqrt-masses, b = |b| e^{i delta}); Q = (sum_k lambda_k^2)/(sum_k lambda_k)^2.
+a = symbols('a', positive=True)            # singlet scale (also reused in section (3))
+bmag, delta = symbols('b_mag delta', positive=True)
+lam = [a + 2*bmag*sp.cos(delta + 2*sp.pi*k/3) for k in range(3)]
+sum_lam = sp.simplify(sp.expand_trig(sum(lam)))
+sum_lam2 = sp.simplify(sp.expand_trig(sum(l**2 for l in lam)))
+Q_spectrum = sp.simplify(sum_lam2 / sum_lam**2)
+r_sym = bmag**2 / a**2
+chk("(2a) sum_k lambda_k = 3a (the C_3-breaking cosines cancel)", simplify(sum_lam - 3*a) == 0)
+chk("(2b) sum_k lambda_k^2 = 3a^2 + 6|b|^2 (reproven from the spectrum)", simplify(sum_lam2 - (3*a**2 + 6*bmag**2)) == 0)
+chk("(2c) Q = (sum lambda^2)/(sum lambda)^2 = 1/3 + (2/3)(|b|^2/a^2) = 1/3 + (2/3) r  [REPROVEN from the C_3 circulant]",
+    simplify(Q_spectrum - (Rational(1, 3) + Rational(2, 3)*r_sym)) == 0)
 def Q(r): return Rational(1, 3) + Rational(2, 3)*r
-chk("(2a) FS-faithful (complex type, 1 complex slot): r=1/2 -> Q=2/3 (empirical target)",
+# the two READOUTS differ only in the value of r they impose on the same circulant; arithmetic consequences:
+chk("(2d) complex-type / holomorphic readout (1 complex slot, r=1/2): Q=2/3 (empirical target)",
     Q(Rational(1, 2)) == Rational(2, 3))
-chk("(2b) realified (2 real slots): r=1 -> Q=1 (the native log|det| dimension-count value)",
+chk("(2e) realified / dimension-count readout (2 real slots, r=1): Q=1 (the native log|det| value)",
     Q(1) == 1)
-chk("(2c) ORIENTATION (corrects #3138): complex <-> r=1/2 and real/Majorana <-> r=1; #3138 asserted the inverse "
-    "(Majorana <-> r=1/2) and was refuted",
-    Q(Rational(1, 2)) == Rational(2, 3) and Q(1) == 1)
+# Orientation: the landed Berezin-fork table maps holomorphic -> r=1/2 and Majorana -> r=1 (cross-referenced in the
+# companion note, not recomputed here). FS=0 (complex type, check (1)) rules out the real/Majorana TYPING of the
+# doublet, hence rules out the inverted "Majorana <-> r=1/2" reading of the retracted #3138. FS does NOT by itself
+# select between the two readouts (that is the open gate, check (3)).
 
 # (3) OBSTRUCTION (necessary-not-sufficient): the native flavor complex structure J_cs=(C-C^2)/sqrt3 commutes
 #     with the entire K/CPT-real mass family H = aI + bC + b̄C^2, so it is MEASURE-NEUTRAL -- silent on r.
 C = Matrix([[0, 1, 0], [0, 0, 1], [1, 0, 0]])
 Jcs = (C - C*C)/sqrt(3)
-a, br, bi = symbols('a b_r b_i', real=True)
+br, bi = symbols('b_r b_i', real=True)      # a is the positive singlet scale hoisted in section (2)
 b = br + I*bi
 H = a*eye(3) + b*C + conjugate(b)*(C*C)
 P_doublet = eye(3) - (eye(3) + C + C*C)/3
@@ -69,10 +83,11 @@ print("\n%d PASS, %d FAIL" % (passed, failed))
 if failed: raise SystemExit(1)
 print("""
 BOUNDED RESULT (reframe + obstruction; NOT a closure):
- - The C_3 generation doublet is Frobenius-Schur COMPLEX type (FS=0). The r=1/2 reading counts it as its
-   faithful complex type (1 complex slot); the r=1 reading counts its realification (2 real slots).
- - CORRECT ORIENTATION: complex/holomorphic/Dirac <-> r=1/2; real/Majorana <-> r=1. This is the inverse of the
-   retracted #3138, and matches the landed, runner-verified Berezin-fork table.
+ - The C_3 generation doublet is Frobenius-Schur COMPLEX type (FS=0). The two readouts are the complex-type /
+   holomorphic readout (1 complex slot, r=1/2) and the realified / dimension-count readout (2 real slots, r=1).
+ - ORIENTATION: the landed Berezin-fork table maps holomorphic/Dirac -> r=1/2 and real/Majorana -> r=1. FS=0
+   rules out the real/Majorana TYPING of the doublet, hence rules out the inverted "Majorana <-> r=1/2" reading
+   of the retracted #3138. FS does NOT by itself prove r=1/2 is selected.
  - OBSTRUCTION: J_cs is measure-neutral ([J_cs,H]=0), so FS=0 + the complex carrier are NECESSARY-NOT-SUFFICIENT.
-   Which reading is selected is the open, DYNAMICAL AC_phi_lambda gate. r=1/2 is NOT derived here.
+   Which readout is selected is the open, DYNAMICAL AC_phi_lambda gate. r=1/2 is NOT derived here.
 """)

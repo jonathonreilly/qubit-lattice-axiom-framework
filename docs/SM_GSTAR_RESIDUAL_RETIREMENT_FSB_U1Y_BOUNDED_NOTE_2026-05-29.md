@@ -1,4 +1,4 @@
-# `g_*` Census Residual Retirement: R-FSB (7/8 ratio) + R-U1Y (one abelian gauge dof) — Bounded Note
+# `g_*` Census Residual Retirement: R-FSB (direct thermal 7/8 ratio) + R-U1Y (one abelian gauge dof) — Bounded Note
 
 **Date:** 2026-05-29
 **Claim type:** bounded_theorem
@@ -24,15 +24,26 @@ from framework structure, and names six framework-derivation residuals
 (R-FSB, R-U1Y, R-POL, R-HIGGS, R-MATTER, R-SPIN) plus two honest regime/sector
 imports (I11, I12).
 
-This companion note retires **two** of those six residuals — **R-FSB** (the
-fermion thermal weight `7/8`) and **R-U1Y** (the U(1) gauge degree-of-freedom
-count) — from their prior status to **retained-sourced for the `g_*`
-dof-count purpose**, by re-sourcing exactly the quantity the `g_*` arithmetic
-consumes to an already-retained framework authority. This is the
-import → bounded → retire path applied at the level of a single census input
-each: the `g_*` arithmetic consumes a quantity that is **strictly weaker** than
-the full not-yet-audited statement the prior census note pointed at, and that
-weaker quantity is already a **retained** positive theorem.
+This companion note repairs the prior R-FSB sourcing and retires **two** of
+those six residuals for the `g_*` dof-count purpose:
+
+- **R-FSB** (the fermion thermal weight `7/8`) is now sourced by the direct
+  Stefan-Boltzmann thermal-integral proof written and executed inside this
+  packet. The earlier version cited the retained hierarchy `7/8` anchor as if a
+  numerically equal rational supplied the physical thermal role. That was a
+  role-identification substitution. This repair removes that substitution:
+  the load-bearing proof is the Bose/Fermi integral ratio actually consumed by
+  relativistic `g_*` bookkeeping.
+- **R-U1Y** (the U(1) gauge degree-of-freedom count) is still sourced to the
+  retained one-abelian-factor rank of the `gl(3) ⊕ gl(1)` commutant.
+
+This is the import -> bounded -> retire path applied at the level of the exact
+single census inputs: the `g_*` arithmetic consumes quantities strictly weaker
+than the stronger statements the prior census note pointed at. R-FSB consumes
+only the direct thermal `7/8` ratio, not the full substrate fermionic
+Stefan-Boltzmann law; R-U1Y consumes only one abelian rank, not the hypercharge
+value assignment. Independent audit decides whether this repaired source earns
+an effective status change.
 
 This note does **not** claim the full fermionic Stefan-Boltzmann law is
 derived, and does **not** claim the hypercharge values are derived. Both of
@@ -42,7 +53,7 @@ dof-count does not require either. The retirement is precisely scoped: only the
 retained-sourced. The overall `g_*` census stays a `bounded_theorem`; this note
 tightens 2 of its 6 residuals.
 
-## 1. R-FSB — fermion thermal weight `7/8`
+## 1. R-FSB — direct fermion thermal weight `7/8`
 
 ### 1.1 What `g_*` consumes
 
@@ -58,34 +69,56 @@ fermionic Stefan-Boltzmann energy-density law `u_F = (7/8) u_B` per mode, nor
 its derivation, nor any absolute energy density. Only the dimensionless rational
 `7/8` enters the dof count.
 
-### 1.2 Retained source of the `7/8` ratio
+### 1.2 Source-local thermal-integral proof of the `7/8` ratio
 
-The ratio `7/8` is the content of the **retained** positive theorem
-[`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
-(ledger `effective_status: retained`, `claim_type: positive_theorem`, verified
-against `docs/audit/data/audit_ledger.json` on 2026-05-29). That theorem proves
-two independent identities that each land on `7/8` at `d = 4`:
+The source-local proof uses the standard thermal hypotheses explicitly needed
+by the relativistic `g_*` census:
 
-**(i) Per-mode lattice ratio.** With `c = d − 1`,
+- effectively massless relativistic dispersion in `3+1` dimensions;
+- zero chemical potential for the counted inventory;
+- natural units `k_B = hbar = c = 1`;
+- one internal degree of freedom at a time, with spin/color/flavor/gauge
+  multiplicities counted separately by the inventory.
 
-```text
-R_lat(c)  =  (c + 1/2) / (c + 1)  =  1 − 1/(2(c + 1)),
-```
-
-so at `c = 3` (`d = 4`), `R_lat(3) = (3 + 1/2)/(3 + 1) = (7/2)/4 = 7/8`.
-
-**(ii) Riemann-Dirichlet quotient.** For real `s > 1`,
+For `x > 0`, expand the Bose and Fermi factors under the energy-density
+integral:
 
 ```text
-η(s) / ζ(s)  =  1 − 2^(1 − s),
+1/(e^x - 1) = sum_{n>=1} e^{-n x},
+1/(e^x + 1) = sum_{n>=1} (-1)^(n-1) e^{-n x}.
 ```
 
-so at `s = 4`, `η(4)/ζ(4) = 1 − 2^(−3) = 1 − 1/8 = 7/8`.
+The elementary Gamma integral gives
 
-The retained theorem further proves these two values coincide on `7/8` at no
-integer `d ≥ 2` other than `d = 4` (the integer alignment equation
-`2^(d − 2) = d` has its unique solution at `d = 4`). The fermion thermal weight
-the `g_*` census consumes is exactly this retained rational.
+```text
+int_0^infty x^3 e^{-n x} dx = Gamma(4)/n^4 = 6/n^4.
+```
+
+Therefore
+
+```text
+I_B = int_0^infty x^3/(e^x - 1) dx = Gamma(4) zeta(4) = pi^4/15,
+I_F = int_0^infty x^3/(e^x + 1) dx = Gamma(4) eta(4)  = 7 pi^4/120,
+I_F / I_B = eta(4)/zeta(4) = 7/8.
+```
+
+Multiplying by the common phase-space prefactor `(1/(2 pi^2)) T^4` gives
+
+```text
+rho_B,per-dof = (pi^2/30) T^4,
+rho_F,per-dof = (7/8) (pi^2/30) T^4.
+```
+
+This is the exact thermal role the `g_*` census consumes. The paired runner
+checks the Gamma/zeta/eta identities, the phase-space coefficients, and the
+weighted arithmetic `28 + (7/8) * 90 = 427/4` directly. The newer
+`GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`
+is a parallel source/runner mirror of the same proof, not a load-bearing
+dependency of this repaired row. The retained
+`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`
+remains a useful consistency check that another retained anchor lands on the
+same rational at `d=4`, but it is no longer used to supply the physical thermal
+role.
 
 ### 1.3 What stays separately blocked (not needed by `g_*`)
 
@@ -94,23 +127,22 @@ The full substrate fermionic Stefan-Boltzmann law lives in
 (ledger `effective_status: unaudited`). That note is a **stronger** statement —
 it asserts the full per-mode fermionic energy-density law, and is blocked on the
 unaudited Wightman-reconstruction chain (KMS condition, spectrum condition,
-spin-statistics, anomaly-forces-time, Lorentz kernel — all currently
-unaudited). It is **not** tractable in isolation. But the `g_*` dof-count never
-consumes the energy-density law; it consumes only the dimensionless `7/8`
-ratio, which is the retained anchor's content. R-FSB is therefore retired **for
-the `g_*` dof-count purpose** to a retained source; the full fermionic-SB law
-remains a separate, stronger, separately-blocked target that `g_*` does not
-require.
+spin-statistics, anomaly-forces-time, Lorentz kernel, and the framework-native
+thermal-state construction). It is **not** tractable in isolation. The `g_*`
+dof-count, however, does not consume that full framework-native law; it consumes
+only the dimensionless Fermi/Bose ratio under the stated thermal counting
+hypotheses. This repaired row proves that exact ratio directly and leaves the
+stronger substrate statement separately blocked.
 
 ### 1.4 Retirement summary (R-FSB)
 
 | `g_*` input | value consumed | prior census-note source | retired-to source | retired source status |
 |---|---|---|---|---|
-| fermion thermal weight | `7/8` ratio only | (ratio retained; full law unaudited) | [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md) | retained |
+| fermion thermal weight | `7/8` ratio only | hierarchy-anchor role substitution; full law unaudited | source-local Bose/Fermi thermal-integral proof in this packet, mirrored by `GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | audit-required bounded theorem |
 
-**R-FSB → retired-to-retained-sourced** for the `g_*` dof-count. Separately
-blocked and not needed by `g_*`: the full substrate fermionic Stefan-Boltzmann
-law (`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`,
+**R-FSB -> direct bounded closure proposed** for the `g_*` dof-count. Separately
+blocked and not needed by `g_*`: the full framework-native fermionic
+Stefan-Boltzmann law (`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`,
 unaudited).
 
 ## 2. R-U1Y — U(1) gauge degree-of-freedom count
@@ -169,7 +201,7 @@ abelian direction", "hypercharge-like eigenvalue matching", "anomaly-complete
 bounded" section that "the abelian factor is still best described as
 hypercharge-like ... unless the full anomaly-complete identification is written
 cleanly". The hypercharge value assignment lives in
-[`HYPERCHARGE_IDENTIFICATION_NOTE.md`](HYPERCHARGE_IDENTIFICATION_NOTE.md)
+`HYPERCHARGE_IDENTIFICATION_NOTE.md`
 (ledger `effective_status: retained_bounded`, `claim_type: bounded_theorem`),
 which imports the SM `1 : (−3)` convention; the anomaly-complete uniqueness
 statement lives in `STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`
@@ -199,13 +231,13 @@ R-POL.
 
 ## 3. Effect on the `g_*` residual census
 
-With R-FSB and R-U1Y retired-to-retained-sourced for the dof count, the abelian
-gauge dof and the fermion thermal weight are no longer sourced from unaudited
-authorities for `g_*` purposes:
+With R-FSB source-locally repaired and R-U1Y retired-to-retained-sourced for the
+dof count, the abelian gauge dof and the fermion thermal weight are no longer
+sourced from unaudited external authorities for `g_*` purposes:
 
 ```text
 abelian gauge dof  =  (one gl(1) factor, retained gl(3)+gl(1) rank) * (2 pol, R-POL)  =  2
-fermion weight     =  7/8  (retained Riemann-Dirichlet / lattice-ratio anchor)
+fermion weight     =  7/8  (direct Bose/Fermi thermal-integral proof)
 ```
 
 The full unbroken-phase gauge-rank count, sourced entirely from retained gauge
@@ -237,7 +269,7 @@ This note is a `bounded_theorem`. It does **not**:
   census with named residuals);
 - claim the full substrate fermionic Stefan-Boltzmann law is derived (that
   stronger statement stays separately blocked on the unaudited Wightman chain;
-  `g_*` does not need it — only the retained `7/8` ratio);
+  `g_*` does not need it — only the direct thermal-integral `7/8` ratio);
 - claim the hypercharge values or anomaly-complete `U(1)_Y` are derived (those
   stay bounded / unaudited; `g_*` does not need them — only the retained
   one-abelian-factor rank);
@@ -261,10 +293,11 @@ PYTHONPATH=scripts python3 scripts/frontier_sm_gstar_residual_retirement_fsb_u1y
 
 The runner verifies, at exact rational precision via `fractions.Fraction`:
 
-1. **R-FSB `7/8` ratio from the retained anchor's two formulas (executed):**
-   `R_lat(c) = (c + 1/2)/(c + 1)` at `c = 3` equals `7/8`; the Riemann-Dirichlet
-   quotient `η(s)/ζ(s) = 1 − 2^(1 − s)` at `s = 4` equals `7/8`; the two agree;
-   and the integer alignment `2^(d − 2) = d` is unique at `d = 4`.
+1. **R-FSB `7/8` ratio from the direct thermal integrals (executed):**
+   `I_B = int x^3/(e^x - 1) dx = pi^4/15`;
+   `I_F = int x^3/(e^x + 1) dx = 7 pi^4/120`;
+   `I_F/I_B = 7/8`; and the per-degree phase-space coefficients give
+   `rho_F = (7/8) rho_B`.
 2. **R-U1Y one-abelian-factor gauge-rank count (executed):** the retained
    `gl(3) ⊕ gl(1)` commutant yields exactly one `gl(1)` abelian factor (rank 1);
    `dim adj(SU(3)) = N_c^2 − 1 = 8`; `dim adj(SU(2)) = 3`; the gauge generator
@@ -306,30 +339,34 @@ Target: `PASS=N FAIL=0` with `N >= 30`.
 
 ## 7. Cited authorities and status
 
-Load-bearing retained sourcing authorities (markdown-link, so the
+Load-bearing retained sourcing authorities for R-U1Y (markdown-link, so the
 citation-graph builder records the edges):
 
-- [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — the `7/8` ratio at `d = 4` (retained). Retires R-FSB for the dof count.
 - [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md) — the native
   gauge-closure surface carrying the `gl(3) ⊕ gl(1)` commutant via its
   graph-first dependency (retained). Supplies the one-abelian-factor rank.
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) —
   the `gl(3) ⊕ gl(1)` joint-commutant decomposition (retained). Retires R-U1Y
   (rank) for the dof count.
-- [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](HYPERCHARGE_IDENTIFICATION_NOTE.md) —
-  the hypercharge **values** (retained_bounded), cited only to mark them as the
-  separated bounded content the `g_*` dof-count does **not** consume.
 
 Plain-text pointers (non-load-bearing; written without markdown links so the
 citation-graph builder does not record them as load-bearing retained edges):
 
+- `GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`
+  — parallel source/runner mirror of the same direct thermal-integral proof;
+  not imported as a retained dependency by this repaired row.
+- `HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`
+  — retained context-only consistency anchor for the same rational `7/8`; no
+  longer load-bearing for the physical thermal role.
 - `AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md` —
   the full substrate fermionic-SB law (unaudited, separately blocked); `g_*`
-  needs only the retained `7/8` ratio.
+  needs only the direct thermal-integral `7/8` ratio.
 - `STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md` — the
   anomaly-complete uniqueness statement (unaudited); the prior census note's
   R-U1Y source for abelian-factor existence; `g_*` needs only the retained rank.
+- `HYPERCHARGE_IDENTIFICATION_NOTE.md` — the hypercharge **values**
+  (retained_bounded), cited only to mark them as the separated bounded content
+  the `g_*` dof-count does **not** consume.
 - `SM_GSTAR_FROM_FRAMEWORK_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-05-29.md` — the
   companion census note (bounded_theorem) whose residuals R-FSB and R-U1Y this
   note retires to retained-sourced for the dof count.
@@ -341,12 +378,12 @@ citation-graph builder does not record them as load-bearing retained edges):
 ```yaml
 proposed_claim_type: bounded_theorem
 proposed_claim_scope: |
-  Bounded note retiring two named residuals of the framework-structure g_*
-  census (companion note 2026-05-29) to retained-sourced for the g_* dof-count
-  purpose. R-FSB (fermion thermal weight): the g_* census consumes only the
-  dimensionless 7/8 ratio, which is the retained positive theorem
-  hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor (R_lat(3)=7/8;
-  eta(4)/zeta(4)=7/8). R-U1Y (abelian gauge dof): the g_* census consumes only
+  Bounded note repairing two named residuals of the framework-structure g_*
+  census (companion note 2026-05-29) for the g_* dof-count purpose. R-FSB
+  (fermion thermal weight): the g_* census consumes only the dimensionless
+  Fermi/Bose thermal ratio 7/8, and this repaired row proves it directly from
+  the Bose and Fermi Stefan-Boltzmann integrals rather than substituting a
+  numerically equal hierarchy anchor. R-U1Y (abelian gauge dof): the g_* census consumes only
   the one-abelian-factor rank, which is the gl(1) summand of the retained
   gl(3)+gl(1) commutant (native_gauge_closure / graph_first_su3_integration),
   giving one massless vector -> 2 transverse dof; this is explicitly SEPARATED
@@ -361,23 +398,26 @@ status_authority: independent audit lane only
 audit_required_before_effective_status_change: true
 forbidden_imports_used: false
 notes_for_re_audit_if_any: |
-  The retired-to authorities (hierarchy_seven_eighths,
-  native_gauge_closure_note, graph_first_su3_integration_note) read retained on
-  the 2026-05-29 ledger. The R-POL 2-polarization factor remains an unaudited
-  residual; any dependency-retention issue on R-POL belongs to independent
-  audit bookkeeping. The hypercharge-value and full-fermionic-SB pointers are
-  deliberately plain-text (non-load-bearing edges) because they are the
-  separated stronger statements, not g_* dof-count inputs.
+  The R-FSB repair is source-local and does not require the unaudited sibling
+  bridge as a dependency. The retired-to R-U1Y authorities
+  (native_gauge_closure_note, graph_first_su3_integration_note) read retained
+  on the ledger. The R-POL 2-polarization factor remains an unaudited residual;
+  any dependency-retention issue on R-POL belongs to independent audit
+  bookkeeping. The hypercharge-value, hierarchy-anchor, parallel thermal bridge,
+  and full-fermionic-SB pointers are deliberately plain-text (non-load-bearing
+  edges) because they are context or separated stronger statements, not g_*
+  dof-count inputs.
 ```
 
 ## 9. Author tone and audit boundary
 
 This note records one thing: two named residuals of the framework-structure
-`g_*` census (R-FSB and R-U1Y) are retired to retained-sourced **for the `g_*`
-dof-count purpose**, because the dof-count consumes only the retained `7/8`
-ratio and the retained one-abelian-factor gauge rank — both strictly weaker
-than the not-yet-audited full statements (full fermionic-SB law, hypercharge
-values) that stay separately blocked / bounded and that `g_*` does not need. It
-is not a synthesis, introduces no repo vocabulary, promotes no other note's
-status, and claims no full derivation of `g_*`, of the fermionic-SB law, or of
-the hypercharge values. The audit lane is the authority on effective status.
+`g_*` census (R-FSB and R-U1Y) are repaired **for the `g_*` dof-count purpose**,
+because the dof-count consumes only the direct thermal-integral `7/8` ratio and
+the retained one-abelian-factor gauge rank — both strictly weaker than the
+not-yet-audited full statements (full framework-native fermionic-SB law,
+hypercharge values) that stay separately blocked / bounded and that `g_*` does
+not need. It is not a synthesis, introduces no repo vocabulary, promotes no
+other note's status, and claims no full derivation of `g_*`, of the
+framework-native fermionic-SB law, or of the hypercharge values. The audit lane
+is the authority on effective status.

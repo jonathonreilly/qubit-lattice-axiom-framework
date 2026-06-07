@@ -1,0 +1,18 @@
+loop_slug: gstar-fsb-direct-bridge-20260607
+branch: physics-loop/gstar-fsb-direct-bridge-20260607
+base: origin/main
+target_claim_id: sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: source-local thermal-integral repair for R-FSB
+files_touched:
+  - docs/SM_GSTAR_RESIDUAL_RETIREMENT_FSB_U1Y_BOUNDED_NOTE_2026-05-29.md
+  - scripts/frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29.py
+verification:
+  - python3 scripts/frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29.py
+audit_results_edited: false
+next_exact_action: review PR, then independent audit decides effective status
+stop_condition: PR opened for review

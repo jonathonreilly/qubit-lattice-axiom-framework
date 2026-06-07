@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 203 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 718 |
+| **retained_bounded** | 719 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1361 |
+| unaudited | 1360 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1129 |
+| `audited_clean` | 1130 |
 | `audited_conditional` | 12 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1670 |
+| `unaudited` | 1669 |
 
 | claim_type | count |
 |---|---:|
@@ -595,6 +595,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -8297,6 +8298,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current Higgs runner shows that the framework has nontrivial quantitative Higgs behavior once the lattice Coleman-Weinberg mechanism is active.  _(class `C`)_
 - **chain closes:** True — For this bounded scope, the note does not claim an exact Higgs-mass derivation; it claims only that the runner exhibits nontrivial CW Higgs behavior and supports bounded studies. The completed runner computes CW potential/SSB scans and ballpark mass-ratio behavior, while its failed exact-coupling/crossing checks are consistent with the note's explicit boundary.
 - **rationale:** The source note is narrowly scoped: it is a support note for bounded Higgs quantitative behavior and explicitly excludes standalone exact m_H authority. The runner is not clean for exact Higgs closure, but that is not the claim under audit; the two completed failures show missing exact coupling/crossing closure and reinforce the boundary. Within the bounded scope, the source note and completed runner evidence close without promoting an exact Higgs-mass derivation.
+- **auditor confidence:** high
+
+### `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded algebraic bridge that, for the stated free naive d=4 lattice Dirac operator and tadpole mean-field Cl(4) taste block, derives N_taste=16 and W(J)=(N_tot/2)log(J^2+4u_0^2) with curvature W''(0)=N_tot/(4u_0^2).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-163229-894460ad45-higgs_lattice_taste_count_an`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** D(p)^dag D(p)=(sum_mu sin^2 p_mu)I gives the 2^d corner-zero taste count, and D_mf=i u_0 sum_mu gamma_mu with D_taste^2=4I gives det(D_mf+JI)=(J^2+4u_0^2)^2 and W''(0)=N_tot/(4u_0^2).  _(class `A`)_
+- **chain closes:** True — The taste-count and W(J) formulas follow by Clifford algebra, finite Berezin determinant algebra, paired-spectrum determinant algebra, and elementary differentiation. The cited authorities in the restricted packet are retained-grade, and no physical Higgs-mass identification or full non-mean-field spectrum is used.
+- **rationale:** The load-bearing steps are genuine class-A algebraic/counting closures over retained-grade inputs and explicitly stated bounded hypotheses. Independent checking confirms the factors, signs, multiplicities, determinant form, and curvature normalization. The runner source performs actual Clifford, Berezin, spectral, and calculus checks rather than merely printing constants, and the packet imports no PDG, lattice-MC, fitted, or tuned numerical comparator.
 - **auditor confidence:** high
 
 ### `higgs_mass_from_axiom_note`

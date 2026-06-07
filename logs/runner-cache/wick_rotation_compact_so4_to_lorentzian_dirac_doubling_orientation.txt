@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.py
+runner_sha256: 6f0eab6a67b381f2e776ab381ec682c5c2b76b6b1eac99ccddb98a3bc7920ef9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+==============================================================================
+Wick-rotation orientation: compact Spin(4) -> Lorentzian Dirac doubling
+==============================================================================
+PASS Euclidean mixed Spin(4) generators are compact :: Sigma^E anti-Hermitian; exp(theta Sigma^E_4j) unitary
+PASS Wick-rotated gamma matrices satisfy Lorentzian Clifford signature :: gamma^0^2=+1, gamma^j^2=-1, e_4=i gamma^0 has square -1
+PASS Wick factor maps compact Euclidean mixed generators to non-compact boosts :: K_j = i/4 [gamma^E_4,gamma^E_j]; boosts Hermitian, rotations anti-Hermitian
+PASS Lorentzian boosts carry the non-compact bracket sign :: [K_i,K_j] = -J_k while [J_i,J_j] = +J_k in the 1/4[gamma,gamma] convention
+PASS C4 Dirac doubling carries both chiral sectors and a massive bispinor projector :: tr P_+=tr P_-=2; (p_slash+m)/2m idempotent on C4 and mixes chiral sectors
+PASS Firewall: this is finite algebra orientation only :: no Record/time-axis derivation, no framework-realization claim, no CAR or positive-energy closure
+SCORECARD PASS=6 FAIL=0
+
+----- stderr -----
+

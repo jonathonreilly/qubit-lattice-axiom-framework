@@ -20,6 +20,41 @@
   "repair": "replace false Nelson common-analytic-vector route with direct unitary-action integrability",
   "results": [
     {
+      "detail": "companion note path is explicit in the restricted source packet",
+      "name": "S1 note links companion free-Dirac Poincare representation note",
+      "pass": true
+    },
+    {
+      "detail": "companion runner path is explicit in the restricted source packet",
+      "name": "S2 note links companion free-Dirac Poincare runner",
+      "pass": true
+    },
+    {
+      "detail": "companion runner cache path is explicit in the restricted source packet",
+      "name": "S3 note links companion free-Dirac Poincare cache",
+      "pass": true
+    },
+    {
+      "detail": "the linked companion note is the exact packet consumed by this repair",
+      "name": "S4 companion note carries the expected claim id",
+      "pass": true
+    },
+    {
+      "detail": "source import exposes finite Poincare closure and mass-shell/Wigner checks",
+      "name": "S5 companion runner exposes the Poincare algebra and Wigner checks",
+      "pass": true
+    },
+    {
+      "detail": "source import exposes d^3p/(2E) boost-invariance check",
+      "name": "S6 companion runner exposes the invariant-measure check",
+      "pass": true
+    },
+    {
+      "detail": "cached companion representation runner output is present and passing",
+      "name": "S7 companion cache is a passing representation certificate",
+      "pass": true
+    },
+    {
       "detail": "K_orb=-i d/dzeta on L2(R,dzeta)",
       "name": "D1 boost orbital generator is Hermitian in rapidity",
       "pass": true
@@ -58,6 +93,6 @@
   "status_boundary": "bounded-support/direct-integrability repair; no Nelson Laplacian or common Gaussian analytic-vector claim remains",
   "summary": {
     "fail": 0,
-    "pass": 7
+    "pass": 14
   }
 }

@@ -3,7 +3,7 @@ runner: scripts/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2
 runner_sha256: bbbf48f54728aab941dd020d1d0169d2548e8fa0364760bb9db70561f04dd899
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.85
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 ==============================================================================

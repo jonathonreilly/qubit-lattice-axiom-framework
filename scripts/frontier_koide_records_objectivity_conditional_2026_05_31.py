@@ -51,9 +51,13 @@ correct, but it grounds the 2-channel STRUCTURE, not the equal-block WEIGHT. REA
 """
 
 import sys
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
+
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = ROOT / "docs" / "KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md"
 
 PASSES: list[tuple[str, bool, str]] = []
 
@@ -72,6 +76,22 @@ def section(t):
 
 def main():
     section("Koide r=1/2 is a CONDITIONAL (equal-block metric + objectivity-max), not forced")
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+    section("F0 - Record-era source boundary")
+    record("F0.1 note records the 2026-06-07 Record-era source boundary",
+           "2026-06-07 Record-Era Source Boundary" in note_text)
+    record("F0.2 note keeps equal-block metric and objectivity selector as two named inputs",
+           "the row still has exactly two named inputs" in note_flat
+           and "equal-block `(1,1)` metric" in note_flat
+           and "records/objectivity maximization selector" in note_flat)
+    record("F0.3 Record axiom is not cited as selecting the sector measure",
+           "does not select the singlet/doublet sector measure" in note_flat
+           and "cannot be cited as a Record-axiom derivation" in note_flat)
+    record("F0.4 source-bounded conditional certificate is the stated audit target",
+           "source-bounded conditional algebra certificate" in note_flat
+           and "if both inputs are supplied, `r=1/2` and `Q=2/3` follow" in note_flat)
 
     r, ws, wp, a2, lam, T = sp.symbols("r w_s w_p a2 lam T", positive=True)
     # at FIXED TOTAL energy (T=1), with E_perp/E_+ = 6|b|^2/3a^2 = 2r:

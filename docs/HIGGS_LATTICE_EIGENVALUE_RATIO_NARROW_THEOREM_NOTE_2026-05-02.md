@@ -109,6 +109,48 @@ formal lemma (the tadpole mean-field truncation regime), not an admitted
 premise. The result is an exact algebraic identity within that named
 truncation.
 
+## 2026-06-06 Bridge Packet Inlining Repair
+
+The 2026-06-05/2026-06-07 audit blocker asks for a retained one-hop bridge
+deriving the `d=4/Z^4` taste count `N_taste = 16` and the mean-field
+determinant `W(J)` form used in the curvature calculation. The source side now
+exposes the bridge packet explicitly and the parent runner checks it inline.
+
+Bridge packet:
+
+- Broad taste-count and `W(J)` bridge note:
+  [`docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- Broad bridge runner:
+  [`scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py`](../scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py)
+- Broad bridge cache:
+  [`logs/runner-cache/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.txt`](../logs/runner-cache/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.txt)
+- Determinant/APBC bridge note:
+  [`docs/HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md`](HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md)
+- Determinant/APBC bridge runner:
+  [`scripts/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.py`](../scripts/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.py)
+- Determinant/APBC bridge cache:
+  [`logs/runner-cache/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.txt`](../logs/runner-cache/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.txt)
+
+The parent runner now verifies that those paths are linked here, that the
+bridge notes/runners contain the load-bearing `N_taste = 16`, `W(J) = log det(D
++ J)`, `D_mf^dag D_mf = 4 u_0^2 I_48`, and `W''(0)/48 = 1/(4 u_0^2)`
+statements, and that both bridge caches are SHA-fresh and clean-exit:
+
+```text
+TOTAL: 50 PASS / 0 FAIL
+TOTAL: 15 PASS / 0 FAIL
+```
+
+After the parent algebra checks, the primary runner reports:
+
+```text
+TOTAL: PASS=90, FAIL=0
+```
+
+This is a bridge-packet repair only. It does not identify `R_lattice` with
+`(m_H/v)^2`, does not claim a Higgs mass prediction, does not derive a numerical
+`u_0`, and does not set an audit verdict.
+
 ## Load-bearing step (class A)
 
 ```text

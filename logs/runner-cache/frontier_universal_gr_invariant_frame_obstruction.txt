@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_invariant_frame_obstruction.py
+runner_sha256: 66b71bfebd0c04a30ef4c4de6e27b0a7a9f9711835d520f6f78c7cffc1cade22
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+UNIVERSAL GR INVARIANT FRAME OBSTRUCTION AUDIT
+==============================================================================
+[PASS] scalar generator is exact
+    scalar generator is the exact observable-principle output
+[PASS] 3+1 lift is exact
+    Route 2 gives the exact PL S^3 x R lift
+[PASS] tensor candidate is exact as a construction
+    tensor-valued Hessian candidate is exact as a construction
+[PASS] quotient uniqueness is exact
+    symmetric quotient kernel is unique on the finite prototype
+[PASS] A1 projector is exact and rank-2
+    Pi_A1 fixes lapse and spatial trace
+[PASS] A1 projector commutes with valid spatial rotations
+    Pi_A1 is invariant to machine precision
+[PASS] complement carries a nontrivial spatial rotation algebra
+    generator rank = 3
+[PASS] shared-axis complement weight decomposition has two weight-1 doublets and one weight-2 sector
+    weight multiplicities = {0: 4, 1: 4, 2: 2}; doublets = {1: 2, 2: 1}
+[PASS] weight-1 multiplicity space is not canonically split
+    weight-1 commutant dimension = 8
+[PASS] quotient-kernel spectrum is frame-invariant
+    max spectrum delta under rotation = 0.000e+00
+[PASS] current universal notes still stop at an orbit bundle
+    notes record only an orbit bundle, not a canonical section
+[PASS] exact invariant section note is present
+    A1 invariant section is explicitly recorded
+[PASS] weight decomposition is recorded in the live obstruction note
+    weight decomposition is explicitly recorded and recomputed by the runner
+
+==============================================================================
+REPRESENTATION DATA
+==============================================================================
+Pi_A1_rank = 2
+generator_rank = 3
+complement_commutant_dim = 6
+weight_multiplicities_x = {0: 4, 1: 4, 2: 2}
+weight_doublets_x = {1: 2, 2: 1}
+weight1_commutant_dim = 8
+quotient_spectrum_delta = 0.000000000000e+00
+
+==============================================================================
+CANDIDATE
+==============================================================================
+Pi_A1 = diag(1,0,0,0,1,0,0,0,0,0)
+Strongest invariant-frame candidate = Pi_A1-anchored orbit bundle
+P_curv^cand = (Pi_A1, O_{E \oplus T1}, omega_MC)
+Residual gauge = SO(3) on the universal complement
+Shared-axis obstruction = two equivalent weight-1 doublets
+Weight-1 multiplicity space = 8D real commutant, hence no canonical section
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=13 FAIL=0 TOTAL=13
+SUMMARY: PASS=13 FAIL=0
+Bounded representation-theoretic facts on the canonical basis are verified: Pi_A1 is exact rank-2 invariant, the complement carries the rank-3 spatial-rotation generator algebra, the shared-axis decomposition has two weight-1 doublets plus a weight-2 sector, and the weight-1 multiplicity commutant of the canonical SO(2) doublet model has dimension 8. On the canonical basis tested, the complement is orbit-canonical, not section-canonical. The further atlas-exhaustion statement is not asserted here and is non-load-bearing per the source note's 2026-05-24 narrowing.
+
+----- stderr -----
+

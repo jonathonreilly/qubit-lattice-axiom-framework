@@ -3,7 +3,7 @@ runner: scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py
 runner_sha256: cdda683982cd9b26c4a16abb67c55cbb4f6e5a92b47c4296d479671fbc6c6b17
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -17,7 +17,7 @@ POSITIVE half: partition-given-K-reality (derived, weight-clean)
 [PASS] rank(P_singlet)=1, rank(P_doublet)=2
 [PASS] P_singlet + P_doublet = I (2-block partition)
 [PASS] D-map no-op on C_3-invariant H for all sampled r (||P0 H P1||=0)  --  max off-block=8.21e-16, r-samples=[0.0, 0.13, 1.0, 5.0, 12.2]
-[PASS] => partition delivered, weight r left FREE (G3 clean: no weight leak)
+[PASS] => partition delivered, weight r left FREE (weight-clean: no weight leak)
 
 ==============================================================================
 NEGATIVE half: A=i(C-C^2) cannot beat Gap A (the no-go)
@@ -38,12 +38,11 @@ NEGATIVE half: A=i(C-C^2) cannot beat Gap A (the no-go)
 [PASS] => a delta=0 selector must be T-odd AND non-commuting-with-S => must BREAK C_3 (= the chirality import); emergent time (C_3-invariant, conj-even) cannot supply it
 
 TOTAL: PASS=22 FAIL=0
-VERDICT: G2-bridge C_3-current no-go checks pass.
-  Partition-given-K-reality is derived and weight-clean (G3);
+VERDICT: C_3-current bridge no-go checks pass.
+  Partition-given-K-reality is derived and weight-clean;
   A=i(C-C^2) is the C_3 generator but commutes with S and is
   spectrum-indefinite/periodic, so it cannot source the delta=0
   selector. The selector must be T-odd AND non-commuting-with-S
   (the open frontier). No r is forced.
 
 ----- stderr -----
-

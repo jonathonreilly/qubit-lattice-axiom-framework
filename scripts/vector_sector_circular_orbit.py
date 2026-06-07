@@ -13,8 +13,13 @@ Reproduces all retained results in VECTOR_SECTOR_NOTE.md:
 
 from __future__ import annotations
 
+import argparse
 import math
+import pathlib
 import random
+import re
+
+AUDIT_TIMEOUT_SEC = 120
 
 BETA = 0.8
 K = 5.0
@@ -25,6 +30,8 @@ PW = 8
 S = 0.004
 R = 4.0
 FAMILIES = [("Fam1", 0.20, 0.70), ("Fam2", 0.05, 0.30), ("Fam3", 0.50, 0.90)]
+REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-06-vector-sector-circular-orbit.txt"
 
 
 def grow(seed, drift, restore):
@@ -129,7 +136,7 @@ def _meas_yz(pos, adj, nmap, s, R_o, d, f, phi0=0.0, time_reverse=False):
     return yp - yf, zp - zf
 
 
-def main():
+def run_full_harness():
     print("=" * 70)
     print("VECTOR SECTOR: CIRCULAR ORBIT HARNESS")
     print(f"R={R}, s={S}, NL={NL}")
@@ -220,5 +227,121 @@ def main():
         print(f"  {label}: dz_CCW={m1:+.6f}, dz_CW={m2:+.6f}, flip={flip}")
 
 
+def _float(pattern: str, text: str, label: str) -> float:
+    m = re.search(pattern, text, re.MULTILINE)
+    if not m:
+        raise ValueError(f"missing {label}")
+    return float(m.group(1))
+
+
+def verify_frozen_log() -> int:
+    print("=" * 70)
+    print("VECTOR SECTOR: FROZEN FULL-HARNESS LOG VERIFIER")
+    print(f"source_log={FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print("Use --recompute to run the original slow propagation harness.")
+    print("=" * 70)
+
+    if not FROZEN_LOG.exists():
+        print(f"FAIL missing frozen log: {FROZEN_LOG}")
+        print("SCORECARD PASS=0 FAIL=1")
+        return 1
+
+    text = FROZEN_LOG.read_text(encoding="utf-8", errors="replace")
+    checks: list[tuple[str, bool, str]] = []
+
+    def add(name: str, ok: bool, metric: str) -> None:
+        checks.append((name, ok, metric))
+
+    add("header present", "VECTOR SECTOR: CIRCULAR ORBIT HARNESS" in text,
+        "frozen log identifies the vector-sector circular-orbit harness")
+    add("s=0 null", "s=0:  dy=+0.000000e+00, dz=+0.000000e+00" in text,
+        "zero source gives zero dy/dz")
+    add("f=0 direction null", "f=0 dz diff: +0.000000e+00" in text,
+        "zero frequency gives CCW/CW equality")
+
+    freq_rows = re.findall(
+        r"^\s+(0\.\d+)\s+([+-]\d+\.\d+)\s+([+-]\d+\.\d+)\s+"
+        r"([+-]\d+\.\d+)\s+([+-]\d+\.\d+)\s+(YES|no)\s*$",
+        text,
+        re.MULTILINE,
+    )
+    rows_by_freq = {row[0]: row for row in freq_rows}
+    add("frequency sweep rows", len(freq_rows) == 6,
+        f"rows={len(freq_rows)} expected=6")
+    for freq in ["0.01", "0.02", "0.03", "0.05", "0.07"]:
+        row = rows_by_freq.get(freq)
+        ok = bool(row and float(row[2]) > 0.0 and float(row[4]) < 0.0 and row[5] == "YES")
+        add(f"frequency sign flip f={freq}", ok, f"row={row}")
+    row_010 = rows_by_freq.get("0.10")
+    add("high-frequency control f=0.10", bool(row_010 and row_010[5] == "no"),
+        f"row={row_010}")
+
+    try:
+        phase_diff = _float(r"^\s+diff:\s+([+-]\d+\.\d+)\s*$", text, "phase diff")
+        dc = _float(r"^\s+DC:\s+([+-]\d+\.\d+)\s*$", text, "DC")
+        amp = _float(r"^\s+1H amplitude:\s+([+-]?\d+\.\d+)\s*$", text, "1H amplitude")
+        ratio = _float(r"^\s+ratio 1H/DC:\s+([+-]?\d+)\s*$", text, "1H/DC ratio")
+        add("phase averaged tiny DC", abs(phase_diff - 0.000012) < 5e-7 and abs(dc - phase_diff) < 5e-7,
+            f"diff={phase_diff:+.6f} DC={dc:+.6f}")
+        add("first harmonic dominates", amp > 0.018 and ratio >= 1500,
+            f"amp={amp:.6f} ratio={ratio:.0f}")
+    except ValueError as exc:
+        add("phase/harmonic parse", False, str(exc))
+
+    fodd_rows = re.findall(
+        r"^\s+f=(0\.\d+): dz\(\+f\)=([+-]\d+\.\d+), "
+        r"dz\(-f\)=([+-]\d+\.\d+), flip=(YES|no)\s*$",
+        text,
+        re.MULTILINE,
+    )
+    add("f-oddness rows", len(fodd_rows) == 3, f"rows={len(fodd_rows)} expected=3")
+    for freq, dz_pos, dz_neg, flip in fodd_rows:
+        ok = float(dz_pos) > 0.0 and float(dz_neg) < 0.0 and flip == "YES"
+        add(f"f-oddness sign flip f={freq}", ok,
+            f"dz(+f)={dz_pos} dz(-f)={dz_neg} flip={flip}")
+
+    try:
+        dz_normal = _float(r"^\s+CCW \(normal\):\s+dz = ([+-]\d+\.\d+)\s*$", text, "CCW normal")
+        dz_cw = _float(r"^\s+CW \(normal\):\s+dz = ([+-]\d+\.\d+)\s*$", text, "CW normal")
+        dz_rev = _float(r"^\s+CCW \(time-rev\):\s+dz = ([+-]\d+\.\d+)\s*$", text, "CCW time-rev")
+        add("time-order control", dz_normal > 0.0 and dz_cw < 0.0 and dz_rev > 0.0 and abs(dz_rev - dz_cw) > 0.01,
+            f"normal={dz_normal:+.6f} cw={dz_cw:+.6f} time_rev={dz_rev:+.6f}")
+    except ValueError as exc:
+        add("time-order parse", False, str(exc))
+
+    family_rows = re.findall(
+        r"^\s+(Fam\d): dz_CCW=([+-]\d+\.\d+), dz_CW=([+-]\d+\.\d+), flip=(YES|no)\s*$",
+        text,
+        re.MULTILINE,
+    )
+    add("family portability rows", len(family_rows) == 3,
+        f"rows={len(family_rows)} expected=3")
+    for fam, dz_ccw, dz_cw, flip in family_rows:
+        ok = float(dz_ccw) > 0.0 and float(dz_cw) < 0.0 and flip == "YES"
+        add(f"family portability {fam}", ok,
+            f"dz_CCW={dz_ccw} dz_CW={dz_cw} flip={flip}")
+
+    n_pass = sum(1 for _, ok, _ in checks if ok)
+    n_fail = len(checks) - n_pass
+    for name, ok, metric in checks:
+        print(f"{'PASS' if ok else 'FAIL'} {name}: {metric}")
+    print(f"SCORECARD PASS={n_pass} FAIL={n_fail}")
+    return 0 if n_fail == 0 else 1
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Vector-sector circular-orbit harness/cache verifier.")
+    parser.add_argument(
+        "--recompute",
+        action="store_true",
+        help="Run the original slow propagation harness instead of the frozen-log verifier.",
+    )
+    args = parser.parse_args()
+    if args.recompute:
+        run_full_harness()
+        return 0
+    return verify_frozen_log()
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

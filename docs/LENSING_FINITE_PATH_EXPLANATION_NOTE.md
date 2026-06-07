@@ -79,6 +79,15 @@ cache stdout contains the detector-centroid comparison facts:
 - short-path `T_phys=7.5`, `H=0.25` measured slope `-1.4356`
 - short-path finite-path formula prediction `-1.7336`
 
+The primary analytical runner
+[`scripts/lensing_analytical_finite_path.py`](../scripts/lensing_analytical_finite_path.py)
+now also imports
+[`scripts/lensing_long_path_test.py`](../scripts/lensing_long_path_test.py)
+directly and prints a `LONG-PATH COMPANION PACKET` manifest. That makes the
+audit helper-graph resolver include the long-path source in the restricted
+packet, and it pins the long-path cache to the current source SHA while checking
+the `T_phys=7.5` measured/predicted slope snippets named by the audit blocker.
+
 That closes the packet-completeness part of the blocker: the long-path
 runner/output and the detector-centroid proxy checks are now exposed in
 one restricted packet. The remaining science boundary is unchanged:

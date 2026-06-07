@@ -3,7 +3,7 @@
 **Date:** 2026-05-31
 **Claim type:** bounded_theorem
 **Claim boundary:** bounded characterization (a gap-reduction) + one new positive structural fact. Not a closure; not an import.
-**Runner:** `scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py` (SCORECARD 11/11).
+**Runner:** `scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py` (SCORECARD 15/15).
 **Source:** workflow `wf_d994df21-e74` — 5 attack routes + 3-lens adversarial verification + synthesis (18 agents).
 
 ## Question
@@ -97,3 +97,35 @@ but still routes through the **same** open gate (none of them closes the bridge)
 - `axiom_first_z_n_equivariant_spectral_asymmetry_narrow`, `koide_aps_block_by_block_forcing` — **retained_bounded**.
 - `three_generation_observable_theorem` (+ `_no_proper_quotient`, `_m3c_burnside`) — **retained** (the count side).
 - Does **NOT** load-bear on `closure_c_staggered_dirac_gate` or `koide_phase_aps_eta_parity_route` (both **unaudited**).
+
+## 2026-06-07 Source-Packet Repair: exact residual matching
+
+The audit blocker asked this row to include the source packet for the named
+residual gate. This branch supplies that restricted-packet visibility without
+promoting the residual:
+
+- [`LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md`](LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md)
+  is the audited-clean open-gate source packet for the conditional
+  Brannen-BAE `delta = 2/9` comparator.
+- [`scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py`](../scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py)
+  is the paired runner.
+- [`logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt`](../logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt)
+  is the paired SHA-pinned cache, expected `TOTAL: PASS=17 FAIL=0`.
+
+Raw restricted-packet paths:
+
+- `docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md`
+- `scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py`
+- `logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt`
+
+This repairs the source-packet part of the restricted-packet blocker: the
+downstream note now exposes the exact open-gate comparator packet it names as
+the residual. It does **not** derive the phase `delta = 2/9`, the `sqrt(2)`
+Brannen/BAE coefficient, the charged-lepton mass scale, or the physical rule
+selecting one fixed-point summand as the charged-lepton asymmetry observable.
+
+The remaining blocker is unchanged and explicit: a future source theorem would
+still have to prove that the physical charged-lepton generation space is the
+`C3[111]` fixed locus and that the readout consumes one intensive local
+Lefschetz density rather than the vanishing signed global invariant or the
+extensive sum.

@@ -24,6 +24,10 @@ VERDICT: closed_modulo_one_named_import. Two findings, both verified here:
 
 This runner verifies the algebra of both findings (it does NOT discharge the gap -- by design).
 """
+import hashlib
+import json
+from pathlib import Path
+
 import numpy as np
 
 W = np.exp(2j * np.pi / 3)            # omega = primitive cube root of unity
@@ -31,6 +35,12 @@ I3 = np.eye(3)
 J = np.ones((3, 3))
 GAMMA = (2.0 / 3.0) * J - I3          # chiral grading Gamma_chi = (2/3)J - I
 C = np.array([[0, 0, 1.0], [1, 0, 0], [0, 1, 0]])   # C_3 cyclic shift on generation R^3
+ROOT = Path(__file__).resolve().parents[1]
+LEPTON_CID = "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26"
+LEPTON_NOTE = "docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md"
+LEPTON_RUNNER = "scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py"
+LEPTON_CACHE = "logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt"
+THIS_NOTE = "docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md"
 
 
 def check(name, cond, detail=""):
@@ -50,6 +60,30 @@ def lefschetz_density(weights):
             denom *= (W ** (k * a) - 1.0)
         total += 1.0 / denom
     return total / 3.0
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def cache_header(path: Path) -> dict[str, str]:
+    text = path.read_text(encoding="utf-8", errors="replace")
+    header, _, _stdout = text.partition("----- stdout -----")
+    out = {"_text": text}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        out[key.strip()] = value.strip()
+    return out
+
+
+def flat(text: str) -> str:
+    return " ".join(text.split())
 
 
 def main():
@@ -159,6 +193,37 @@ def main():
         and (Qsv.max() - Qsv.min() > 1e-3) and Qsv.max() <= 2.0 / 3.0 + 1e-9,
         f"signed Q const={Qsig.mean():.6f}=2/3; singular-value Q range=[{Qsv.min():.4f},{Qsv.max():.4f}] "
         f"-> 2/9->Q load-bears on the SIGNED readout-class, which is audited_failed on origin/main"))
+
+    # --- Finding F: source-packet inclusion for exact residual matching ----------------------
+    ledger = json.loads((ROOT / "docs" / "audit" / "data" / "audit_ledger.json").read_text())
+    lepton_row = ledger["rows"].get(LEPTON_CID, {})
+    this_note = (ROOT / THIS_NOTE).read_text(encoding="utf-8")
+    lepton_note = (ROOT / LEPTON_NOTE).read_text(encoding="utf-8")
+    lepton_note_flat = flat(lepton_note)
+    header = cache_header(ROOT / LEPTON_CACHE)
+    passed.append(check(
+        "F1 lepton delta=2/9 source packet is audited-clean open_gate, not a phase derivation",
+        lepton_row.get("audit_status") == "audited_clean"
+        and lepton_row.get("effective_status") == "open_gate"
+        and lepton_row.get("runner_path") == LEPTON_RUNNER,
+        f"{LEPTON_CID}: audit={lepton_row.get('audit_status')} effective={lepton_row.get('effective_status')}"))
+    passed.append(check(
+        "F2 downstream note names lepton source packet note, runner, and cache",
+        LEPTON_NOTE in this_note and LEPTON_RUNNER in this_note and LEPTON_CACHE in this_note,
+        "restricted packet includes exact residual note/runner/cache"))
+    passed.append(check(
+        "F3 lepton source packet keeps phase/coefficient/scale open",
+        "does not derive the Brannen phase" in lepton_note_flat
+        and "open gate plus empirical comparator" in lepton_note_flat
+        and "not a retained lepton-mass theorem" in lepton_note_flat,
+        "no downstream promotion of the open comparator"))
+    passed.append(check(
+        "F4 lepton runner cache is SHA-fresh and clean",
+        header.get("runner") == LEPTON_RUNNER
+        and header.get("runner_sha256") == sha256_file(ROOT / LEPTON_RUNNER)
+        and header.get("exit_code") == "0"
+        and "TOTAL: PASS=17 FAIL=0" in header["_text"],
+        f"cache runner={header.get('runner')} status={header.get('status')}"))
 
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT: closed_modulo_one_named_import. The generation-space bridge REDUCES to a single")

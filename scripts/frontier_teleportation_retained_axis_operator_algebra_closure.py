@@ -57,6 +57,7 @@ I2 = np.eye(2, dtype=complex)
 X2 = np.array([[0, 1], [1, 0]], dtype=complex)
 Z2 = np.array([[1, 0], [0, -1]], dtype=complex)
 Y2 = np.array([[0, -1j], [1j, 0]], dtype=complex)
+DENSE_PAIR_MAX_SITES = 32
 
 
 # -----------------------------------------------------------------------------
@@ -253,54 +254,7 @@ def check_T3_axis_bell_projector(factor: SiteFactor) -> RalaCheck:
     X_axis = axis_taste_op(X2, factor.dim, factor.side, factor.logical_axis)
     n = factor.n_sites
     n_env = factor.n_env
-    I_n = np.eye(n, dtype=complex)
-    ZA = np.kron(Z_axis, I_n)
-    ZB = np.kron(I_n, Z_axis)
-    XA = np.kron(X_axis, I_n)
-    XB = np.kron(I_n, X_axis)
-    Itot = np.kron(I_n, I_n)
     bell_labels = [("Phi+",0,0),("Phi-",1,0),("Psi+",0,1),("Psi-",1,1)]
-
-    perm = factor.perm
-    pair_perm_inv = np.empty(n*n, dtype=np.int64)
-    for siteA in range(n):
-        rA = perm[siteA]
-        b_A = rA // n_env
-        e_A = rA % n_env
-        for siteB in range(n):
-            rB = perm[siteB]
-            b_B = rB // n_env
-            e_B = rB % n_env
-            old_idx = siteA * n + siteB
-            new_idx = ((b_A * 2 + b_B) * n_env + e_A) * n_env + e_B
-            pair_perm_inv[new_idx] = old_idx
-
-    def in_pair_rala(op):
-        rebased = op[pair_perm_inv][:, pair_perm_inv]
-        O_logical = np.zeros((4, 4), dtype=complex)
-        residual_sq = 0.0
-        for bA1 in range(2):
-            for bB1 in range(2):
-                for bA2 in range(2):
-                    for bB2 in range(2):
-                        rs = (bA1*2 + bB1) * (n_env*n_env)
-                        re = rs + n_env*n_env
-                        cs = (bA2*2 + bB2) * (n_env*n_env)
-                        ce = cs + n_env*n_env
-                        block = rebased[rs:re, cs:ce]
-                        avg = np.trace(block) / (n_env*n_env)
-                        O_logical[bA1*2+bB1, bA2*2+bB2] = avg
-                        target = avg * np.eye(n_env*n_env)
-                        residual_sq += float(np.linalg.norm(block - target) ** 2)
-        return math.sqrt(residual_sq), O_logical
-
-    bell_residuals = []
-    P_list = []
-    for label, z, x in bell_labels:
-        P = 0.25 * (Itot + ((-1)**x) * ZA @ ZB) @ (Itot + ((-1)**z) * XA @ XB)
-        res, O_log = in_pair_rala(P)
-        bell_residuals.append((label, res, O_log))
-        P_list.append(P)
 
     def bell_state(z, x):
         if (z, x) == (0, 0):
@@ -313,28 +267,109 @@ def check_T3_axis_bell_projector(factor: SiteFactor) -> RalaCheck:
             v = np.array([0, 1, -1, 0], dtype=complex)/math.sqrt(2)
         return np.outer(v, v.conj())
 
-    max_match_err = 0.0
-    for (label, _, O_log), (_, z, x) in zip(bell_residuals, bell_labels):
-        ideal = bell_state(z, x)
-        max_match_err = max(max_match_err, float(np.linalg.norm(O_log - ideal)))
+    # The large side=4, dim=3 pair space would materialize 4096x4096 dense
+    # matrices. The same pair-RALA result follows from the already-checked
+    # single-register factorization Z_axis = Z2 x I_env and
+    # X_axis = X2 x I_env, after which the Bell projectors are 4x4 logical
+    # projectors tensored with I_env_pair. We still keep dense pair-RALA
+    # cross-checks on the smaller grids.
+    ok_z, Oz, fro_z, _ = in_rala(Z_axis, factor)
+    ok_x, Ox, fro_x, _ = in_rala(X_axis, factor)
+    axis_factor_ok = (
+        ok_z and ok_x
+        and np.allclose(Oz, Z2, atol=1e-12)
+        and np.allclose(Ox, X2, atol=1e-12)
+    )
 
-    sum_P = sum(P_list)
-    resolution_err = float(np.linalg.norm(sum_P - Itot))
+    I4 = np.eye(4, dtype=complex)
+    ZA_log = np.kron(Z2, I2)
+    ZB_log = np.kron(I2, Z2)
+    XA_log = np.kron(X2, I2)
+    XB_log = np.kron(I2, X2)
+    P_log_list = [
+        0.25 * (I4 + ((-1)**x) * ZA_log @ ZB_log)
+        @ (I4 + ((-1)**z) * XA_log @ XB_log)
+        for _, z, x in bell_labels
+    ]
+
+    max_match_err = 0.0
+    for P_log, (_, z, x) in zip(P_log_list, bell_labels):
+        ideal = bell_state(z, x)
+        max_match_err = max(max_match_err, float(np.linalg.norm(P_log - ideal)))
+
+    resolution_err = float(np.linalg.norm(sum(P_log_list) - I4))
     pair_ortho_err = 0.0
     for i in range(4):
         for j in range(4):
-            if i == j: continue
-            pair_ortho_err = max(pair_ortho_err, float(np.linalg.norm(P_list[i] @ P_list[j])))
-    idem_err = max(float(np.linalg.norm(P @ P - P)) for P in P_list)
-    max_res = max(r[1] for r in bell_residuals)
+            if i == j:
+                continue
+            pair_ortho_err = max(
+                pair_ortho_err,
+                float(np.linalg.norm(P_log_list[i] @ P_log_list[j])),
+            )
+    idem_err = max(float(np.linalg.norm(P @ P - P)) for P in P_log_list)
 
-    passed = (max_res < 1e-12 and max_match_err < 1e-12
+    pair_mode = "logical_factor"
+    max_res = max(fro_z, fro_x)
+    if n <= DENSE_PAIR_MAX_SITES:
+        I_n = np.eye(n, dtype=complex)
+        ZA = np.kron(Z_axis, I_n)
+        ZB = np.kron(I_n, Z_axis)
+        XA = np.kron(X_axis, I_n)
+        XB = np.kron(I_n, X_axis)
+        Itot = np.kron(I_n, I_n)
+
+        perm = factor.perm
+        pair_perm_inv = np.empty(n*n, dtype=np.int64)
+        for siteA in range(n):
+            rA = perm[siteA]
+            b_A = rA // n_env
+            e_A = rA % n_env
+            for siteB in range(n):
+                rB = perm[siteB]
+                b_B = rB // n_env
+                e_B = rB % n_env
+                old_idx = siteA * n + siteB
+                new_idx = ((b_A * 2 + b_B) * n_env + e_A) * n_env + e_B
+                pair_perm_inv[new_idx] = old_idx
+
+        def in_pair_rala(op):
+            rebased = op[pair_perm_inv][:, pair_perm_inv]
+            O_logical = np.zeros((4, 4), dtype=complex)
+            residual_sq = 0.0
+            eye_env_pair = np.eye(n_env*n_env)
+            for bA1 in range(2):
+                for bB1 in range(2):
+                    for bA2 in range(2):
+                        for bB2 in range(2):
+                            rs = (bA1*2 + bB1) * (n_env*n_env)
+                            re = rs + n_env*n_env
+                            cs = (bA2*2 + bB2) * (n_env*n_env)
+                            ce = cs + n_env*n_env
+                            block = rebased[rs:re, cs:ce]
+                            avg = np.trace(block) / (n_env*n_env)
+                            O_logical[bA1*2+bB1, bA2*2+bB2] = avg
+                            target = avg * eye_env_pair
+                            residual_sq += float(np.linalg.norm(block - target) ** 2)
+            return math.sqrt(residual_sq), O_logical
+
+        dense_residuals = []
+        for (label, z, x), P_log in zip(bell_labels, P_log_list):
+            P = 0.25 * (Itot + ((-1)**x) * ZA @ ZB) @ (Itot + ((-1)**z) * XA @ XB)
+            res, O_log = in_pair_rala(P)
+            dense_residuals.append(res)
+            max_match_err = max(max_match_err, float(np.linalg.norm(O_log - P_log)))
+        max_res = max(dense_residuals) if dense_residuals else max_res
+        pair_mode = "dense_pair"
+
+    passed = (axis_factor_ok and max_res < 1e-12 and max_match_err < 1e-12
               and resolution_err < 1e-10 and pair_ortho_err < 1e-10
               and idem_err < 1e-10)
     return RalaCheck(
         f"T3 axis-Bell projectors in pair-RALA (dim={factor.dim} side={factor.side})",
         passed,
-        f"max_pair_RALA_residual={max_res:.2e} max_logical_block_err={max_match_err:.2e} "
+        f"mode={pair_mode} axis_factor_ok={axis_factor_ok} max_pair_RALA_residual={max_res:.2e} "
+        f"max_logical_block_err={max_match_err:.2e} "
         f"sum_to_I_err={resolution_err:.2e} ortho_err={pair_ortho_err:.2e} idem_err={idem_err:.2e}",
     )
 
@@ -439,6 +474,8 @@ def check_T8_teleportation_protocol_closure(factor: SiteFactor) -> RalaCheck:
     """
     n = factor.n_sites
     n_env = factor.n_env
+    if n > DENSE_PAIR_MAX_SITES:
+        return check_T8_teleportation_protocol_closure_logical(factor)
 
     e0 = 0
     def encode(b):
@@ -522,7 +559,101 @@ def check_T8_teleportation_protocol_closure(factor: SiteFactor) -> RalaCheck:
     return RalaCheck(
         f"T8 RALA teleportation protocol closure (dim={factor.dim} side={factor.side} a={factor.logical_axis})",
         passed,
-        f"min_fidelity={min_fid:.12f} max_total_prob_err={max_total_prob_err:.2e} "
+        f"mode=dense_pair min_fidelity={min_fid:.12f} max_total_prob_err={max_total_prob_err:.2e} "
+        f"max_branch_prob_err={max_branch_prob_err:.2e} pre_record_input_dep={max_pre_record_input_dependence:.2e}",
+    )
+
+
+def check_T8_teleportation_protocol_closure_logical(factor: SiteFactor) -> RalaCheck:
+    """Large-grid T8 check on the exact logical factor.
+
+    T2 has already verified that the retained-axis site operators factor as
+    sigma_z/sigma_x on the logical bit tensored with I_env. The encoded
+    fixed-environment protocol therefore reduces to the ordinary 2-qubit
+    teleportation calculation, which this function checks directly without
+    building n^2 dense pair projectors.
+    """
+    Z_axis = axis_taste_op(Z2, factor.dim, factor.side, factor.logical_axis)
+    X_axis = axis_taste_op(X2, factor.dim, factor.side, factor.logical_axis)
+    ok_z, Oz, fro_z, _ = in_rala(Z_axis, factor)
+    ok_x, Ox, fro_x, _ = in_rala(X_axis, factor)
+    axis_factor_ok = (
+        ok_z and ok_x
+        and np.allclose(Oz, Z2, atol=1e-12)
+        and np.allclose(Ox, X2, atol=1e-12)
+    )
+
+    phi_plus = np.array([1, 0, 0, 1], dtype=complex) / math.sqrt(2.0)
+    I4 = np.eye(4, dtype=complex)
+    ZZ = np.kron(Z2, Z2)
+    XX = np.kron(X2, X2)
+    P_list = [
+        (0.25 * (I4 + ((-1)**x) * ZZ) @ (I4 + ((-1)**z) * XX), z, x)
+        for z in (0, 1)
+        for x in (0, 1)
+    ]
+
+    rng = np.random.default_rng(20260507)
+    test_states_logical = [
+        np.array([1, 0], dtype=complex),
+        np.array([0, 1], dtype=complex),
+        np.array([1, 1], dtype=complex) / math.sqrt(2.0),
+        np.array([1, -1], dtype=complex) / math.sqrt(2.0),
+        np.array([1, 1j], dtype=complex) / math.sqrt(2.0),
+        np.array([1, -1j], dtype=complex) / math.sqrt(2.0),
+    ]
+    for _ in range(8):
+        v = rng.normal(size=2) + 1j * rng.normal(size=2)
+        v = v / np.linalg.norm(v)
+        test_states_logical.append(v)
+
+    min_fid = 1.0
+    max_total_prob_err = 0.0
+    max_branch_prob_err = 0.0
+    max_pre_record_input_dependence = 0.0
+    pre_record_marginals = []
+
+    for psi_log in test_states_logical:
+        full = np.kron(psi_log, phi_plus)
+        full_mat = full.reshape(4, 2)
+        total_prob = 0.0
+        rho_B_marginal = full_mat.T @ full_mat.conj()
+        pre_record_marginals.append(rho_B_marginal)
+
+        for P, zbit, xbit in P_list:
+            after_mat = P @ full_mat
+            prob = float(np.real(np.sum(np.abs(after_mat) ** 2)))
+            total_prob += prob
+            if prob < 1e-12:
+                continue
+            rho_B_branch = (after_mat.T @ after_mat.conj()) / prob
+            U_corr = (X2 if xbit else I2) @ (Z2 if zbit else I2)
+            rho_B_corr = U_corr @ rho_B_branch @ U_corr.conj().T
+            fid = float(np.real(psi_log.conj() @ rho_B_corr @ psi_log))
+            min_fid = min(min_fid, fid)
+            max_branch_prob_err = max(max_branch_prob_err, abs(prob - 0.25))
+        max_total_prob_err = max(max_total_prob_err, abs(total_prob - 1.0))
+
+    if pre_record_marginals:
+        ref = pre_record_marginals[0]
+        for m in pre_record_marginals[1:]:
+            max_pre_record_input_dependence = max(
+                max_pre_record_input_dependence,
+                float(np.linalg.norm(m - ref)))
+
+    passed = (
+        axis_factor_ok
+        and max(fro_z, fro_x) < 1e-12
+        and min_fid > 1.0 - 1e-9
+        and max_total_prob_err < 1e-9
+        and max_branch_prob_err < 1e-9
+        and max_pre_record_input_dependence < 1e-9
+    )
+    return RalaCheck(
+        f"T8 RALA teleportation protocol closure (dim={factor.dim} side={factor.side} a={factor.logical_axis})",
+        passed,
+        f"mode=logical_factor axis_factor_ok={axis_factor_ok} min_fidelity={min_fid:.12f} "
+        f"max_total_prob_err={max_total_prob_err:.2e} "
         f"max_branch_prob_err={max_branch_prob_err:.2e} pre_record_input_dep={max_pre_record_input_dependence:.2e}",
     )
 

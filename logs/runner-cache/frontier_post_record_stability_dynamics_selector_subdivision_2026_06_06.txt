@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
-runner_sha256: e9eb10eed00037c1445e540b6ea86f6b1d1255fec5cd022e40c237746da09efb
+runner_sha256: 0dc4baa94511650cd0be21e5406e823323d19a17057787f85ea6a91abca20ce8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.04
+elapsed_sec: 1.14
 status: ok
 ----- stdout -----
 
@@ -16,8 +16,9 @@ PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md cont
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: stable setting is not selected dial
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: physical arrow, kernel, Hamiltonian, instrument, clock, or
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: outputs/post_record_stability_dynamics_selector_slice_2026_06_07.json
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 90
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 94
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stable settings into selected dials
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
 PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py exists
@@ -32,16 +33,16 @@ PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: 
 ------------------------------------------------------------------------------
 Stability/dynamics subdivision checks
 ------------------------------------------------------------------------------
-PASS stability/dynamics selector row count is current snapshot :: 90
-PASS sub-bucket counts sum to stability/dynamics count :: Counter({'flow_or_thermal_stability': 56, 'arrow_or_dynamics_bridge': 34})
-PASS expected sub-bucket counts match :: Counter({'flow_or_thermal_stability': 56, 'arrow_or_dynamics_bridge': 34})
+PASS stability/dynamics selector row count is current snapshot :: 94
+PASS sub-bucket counts sum to stability/dynamics count :: Counter({'flow_or_thermal_stability': 58, 'arrow_or_dynamics_bridge': 36})
+PASS expected sub-bucket counts match :: Counter({'flow_or_thermal_stability': 58, 'arrow_or_dynamics_bridge': 36})
 PASS representative row present in flow_or_thermal_stability :: flavor_r_half_is_the_records_flow_separatrix_2026-06-02
 PASS representative row present in arrow_or_dynamics_bridge :: a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1
-PASS audit ledger hash is unchanged :: bb12b00f567bffb76b022141430357986adf892361defc9044cca6486ca1f9dc
+PASS audit ledger hash is unchanged :: 4b31e8573fb839a0606465ae08ae61bdbdfef55cbd88ccf7ecf5d2f7336a8679
 
 Stability/dynamics sub-bucket counts:
-  arrow_or_dynamics_bridge: 34
-  flow_or_thermal_stability: 56
+  arrow_or_dynamics_bridge: 36
+  flow_or_thermal_stability: 58
 
 [arrow_or_dynamics_bridge]
   a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1 | unaudited | unaudited | bounded_theorem | docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md
@@ -60,9 +61,19 @@ Stability/dynamics sub-bucket counts:
   dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md
   dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md
   dynamics_form_from_record_preservation_gauge_invariant_local_class_bounded_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md
+  flavor_center_trace_closed_capstone_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md
   flavor_einselection_2sector_modulo_kreality_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md
-  flavor_emergent_chirality_no_transport_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md
 
+
+------------------------------------------------------------------------------
+Bounded ledger-row export checks
+------------------------------------------------------------------------------
+PASS bounded stability/dynamics row export exists :: outputs/post_record_stability_dynamics_selector_slice_2026_06_07.json
+PASS slice export is for the stability/dynamics selector bucket
+PASS slice export records current ledger sha :: 4b31e8573fb839a0606465ae08ae61bdbdfef55cbd88ccf7ecf5d2f7336a8679
+PASS slice export row count matches current split :: 94
+PASS slice export sub-counts match current split :: {'arrow_or_dynamics_bridge': 36, 'flow_or_thermal_stability': 58}
+PASS slice export rows match independently enumerated regex split
 
 ------------------------------------------------------------------------------
 Firewall flags
@@ -74,10 +85,10 @@ PASS stable setting selects dial flag is false
 PASS generation/Koide dial selected flag is false
 PASS Record-derived physical arrow flag is false
 
-SUMMARY: PASS=30 FAIL=0
-STABILITY_DYNAMICS_SELECTOR_ROWS=90
-FLOW_OR_THERMAL_STABILITY_ROWS=56
-ARROW_OR_DYNAMICS_BRIDGE_ROWS=34
+SUMMARY: PASS=37 FAIL=0
+STABILITY_DYNAMICS_SELECTOR_ROWS=94
+FLOW_OR_THERMAL_STABILITY_ROWS=58
+ARROW_OR_DYNAMICS_BRIDGE_ROWS=36
 AUDIT_LEDGER_WRITTEN=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE

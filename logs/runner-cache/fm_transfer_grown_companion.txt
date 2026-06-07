@@ -1,11 +1,34 @@
 ===== runner cache v1 =====
 runner: scripts/fm_transfer_grown_companion.py
-runner_sha256: cce562cd53f7d6aab6a2bc46aaa113f3d58006a77e359806b6b41b70b7efc9ce
-timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.01
-status: timeout
+runner_sha256: bc7fc5ef9243989603105405a7c82ca49426312628b76b7057db16a844e70571
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 57.01
+status: ok
 ----- stdout -----
+======================================================================
+F~M TRANSFER: GROWN vs FIXED LATTICE
+NL=30, W=8, drift=0.2, restore=0.7
+6 seeds, 4 mass points
+======================================================================
+
+FIXED: F~M = 0.9901
+
+GROWN (per seed):
+  seed 0: F~M = 0.9988
+  seed 1: F~M = 0.9702
+  seed 2: F~M = 0.9812
+  seed 3: F~M = 0.9900
+  seed 4: F~M = 0.9968
+  seed 5: F~M = 0.9851
+
+GROWN: F~M = 0.9870 +/- 0.0097
+FIXED: F~M = 0.9901
+DIFF:  0.0031 (0.3 sigma)
+
+SAFE READ
+  mass-law transfer agrees within uncertainty
+  no broader claim about geometry-generic transfer
 
 ----- stderr -----
 

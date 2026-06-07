@@ -266,6 +266,11 @@ positive-cone obstruction runner is retained as the companion
 support-check for the upstream three-sample positive-cone obstruction
 theorem that the original note string-checked.
 
+The SU(3) full-slice product-Fubini companion is now checked separately by
+`scripts/audit_companion_gauge_full_slice_su3_product_fubini_factorization_2026_06_06.py`;
+that companion is the framework-native exact replacement for relying on the
+SU(2) toy as the load-bearing mathematical support for product factorization.
+
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links the
@@ -275,7 +280,29 @@ identification as definition-style; the derivation chain in this revised
 note grounds the identification in the upstream Fubini factorisation
 already named by the spatial-environment transfer theorem.
 
-- [gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md) — upstream definition of `eta_beta(W)` as the rim-induced boundary state on one edge slice; supplies the slice-marginal object whose Fubini rim factor is `B_beta(W)`.
+- [gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md) — upstream bounded transfer-witness packet that records `eta_beta(W)` in the target boundary-amplitude identity. It does not by itself prove the full untruncated Wilson-environment boundary state.
 - [gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md) — upstream uniqueness of the class-sector compression `P_cls`, used in the derivation of `eta_beta(W) = P_cls B_beta(W)`.
-- [gauge_vacuum_plaquette_local_environment_factorization_theorem_note](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md) — upstream proof that non-marked mixed-link factors contribute rep-independent scalars on the marked source sector; this is the input that confines the nontrivial marked boundary data to the rim neighborhood `Omega^rim`.
+- [gauge_vacuum_plaquette_local_environment_factorization_theorem_note](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md) — upstream bounded finite local Wilson coefficient packet. Its own open-target section leaves the actual temporal-gauge mixed-kernel compression bridge open, so this note does not cite it as full-scope proof that every non-marked mixed-link factor is a trivial-channel scalar.
 - [gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md) — upstream compressed boundary functional formula `Z_beta^env(W) = <K(W), v_beta>` that the rim integral feeds into after class-sector compression.
+
+## 2026-06-06 SU(3) Product-Fubini Source Repair
+
+The SU(2) Monte Carlo toy runner remains only a toy support check. The
+framework-native product-measure step is now isolated in the SU(3)
+full-slice product-Fubini companion:
+
+- [GAUGE_VACUUM_PLAQUETTE_SU3_FULL_SLICE_PRODUCT_FUBINI_FACTORIZATION_NOTE_2026-06-06.md](GAUGE_VACUUM_PLAQUETTE_SU3_FULL_SLICE_PRODUCT_FUBINI_FACTORIZATION_NOTE_2026-06-06.md)
+- `scripts/audit_companion_gauge_full_slice_su3_product_fubini_factorization_2026_06_06.py`
+
+That companion proves the exact compact-Haar Fubini/Tonelli factorization on
+finite `SU(3)` link variables once a rim/far plaquette-support partition is
+supplied: no plaquette may contain both a rim variable and a far variable
+after the marked holonomy `W` and slice data `U` are held fixed. It also
+checks that the marked class projection pulls out the `W`-independent far
+factor.
+
+This repair removes the need to import an SU(2) toy as the load-bearing
+mathematical reason for the product factorization. It does not close the
+separate temporal-gauge mixed-kernel compression bridge, does not derive the
+physical untruncated Wilson-environment partition for every slab, and does
+not evaluate `B_6(W)` or `eta_6(W)`.

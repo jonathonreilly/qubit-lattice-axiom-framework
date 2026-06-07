@@ -23,12 +23,81 @@ from pathlib import Path
 from sympy import symbols, simplify, log, diff, Rational, sqrt
 from sympy import I as sympy_I, eye, zeros, Matrix
 from sympy.physics.quantum import TensorProduct
+import hashlib
 import sys
 import json
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE_PATH = ROOT / "docs" / "HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md"
 CLAIM_ID = "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+
+BRIDGE_PACKET_PATHS = [
+    "docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py",
+    "logs/runner-cache/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.txt",
+    "docs/HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md",
+    "scripts/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.py",
+    "logs/runner-cache/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.txt",
+]
+
+SOURCE_MARKERS = {
+    "docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": [
+        "N_taste = 2^d = 16",
+        "W(J) = log det(D + J)",
+        "W''(0) = N_tot/(4 u_0^2)",
+        "missing_bridge_theorem",
+        "physical Higgs-mass claim",
+    ],
+    "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py": [
+        "Bridge (1) d=4/Z^4 naive taste count N_taste = 2^d = 16",
+        "Berezin identity Z_F[M] = det(M)",
+        "W''(0) = N_tot/(4 u_0^2)",
+        "TOTAL:",
+        "target's recorded repair item is missing_bridge_theorem",
+    ],
+    "docs/HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md": [
+        "H_taste := C^4_spin tensor C^4_taste",
+        "dim H_taste = 16",
+        "D_mf^dag D_mf = 4 u_0^2 I_48",
+        "W''(0) / 48 = 1 / (4 u_0^2)",
+        "physical Higgs mass identification",
+    ],
+    "scripts/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.py": [
+        "binary APBC hypercube count is 2^4 = 16",
+        "D_mf^dag D_mf = 4 u_0^2 I_48",
+        "W''(0)/48 = 1/(4 u_0^2)",
+        "per-mode curvature matches R_lattice",
+        "TOTAL:",
+    ],
+}
+
+MIN_SOURCE_BYTES = {
+    "docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": 18_000,
+    "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py": 15_000,
+    "docs/HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md": 3_000,
+    "scripts/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.py": 4_000,
+}
+
+CACHE_TO_RUNNER = {
+    "logs/runner-cache/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.txt": (
+        "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py",
+        [
+            "TOTAL: 53 PASS / 0 FAIL",
+            "Bridge (1) result: N_taste = 2^4 = 16 at d=4",
+            "W''(0) for W=(N_tot/2)log(J^2+4u_0^2) equals N_tot/(4 u_0^2)",
+            "target's recorded repair item is missing_bridge_theorem",
+        ],
+    ),
+    "logs/runner-cache/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.txt": (
+        "scripts/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.py",
+        [
+            "TOTAL: 15 PASS / 0 FAIL",
+            "binary APBC hypercube count is 2^4 = 16",
+            "D_mf^dag D_mf = 4 u_0^2 I_48",
+            "per-mode curvature matches R_lattice",
+        ],
+    ),
+}
 
 PASS = 0
 FAIL = 0
@@ -46,6 +115,68 @@ def check(label, ok, detail=""):
 
 def section(title):
     print("\n" + "-" * 88 + f"\n{title}\n" + "-" * 88)
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def parse_cache_header(cache_path: Path) -> dict[str, str]:
+    text = cache_path.read_text(encoding="utf-8", errors="replace")
+    header, _, _stdout = text.partition("----- stdout -----")
+    fields: dict[str, str] = {"_text": text}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        fields[key.strip()] = value.strip()
+    return fields
+
+
+def bridge_packet_checks() -> None:
+    section("Part 7: bridge packet source/cache verification for re-audit")
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    for rel_path in BRIDGE_PACKET_PATHS:
+        path = ROOT / rel_path
+        check(f"bridge packet path exists: {rel_path}", path.exists())
+        check(f"parent note links bridge packet path: {rel_path}", rel_path in note_text)
+
+    for rel_path, markers in SOURCE_MARKERS.items():
+        source_path = ROOT / rel_path
+        source = source_path.read_text(encoding="utf-8")
+        check(
+            f"bridge source appears untruncated: {rel_path}",
+            len(source) > MIN_SOURCE_BYTES[rel_path],
+            detail=f"{len(source)} bytes",
+        )
+        for marker in markers:
+            check(f"bridge source marker present: {rel_path}", marker in source, detail=marker)
+
+    for cache_rel, (runner_rel, snippets) in CACHE_TO_RUNNER.items():
+        header = parse_cache_header(ROOT / cache_rel)
+        current_sha = sha256_file(ROOT / runner_rel)
+        check(
+            f"bridge cache runner matches source: {cache_rel}",
+            header.get("runner") == runner_rel,
+            detail=runner_rel,
+        )
+        check(
+            f"bridge cache SHA fresh: {cache_rel}",
+            header.get("runner_sha256") == current_sha,
+            detail=f"{header.get('runner_sha256')} == {current_sha}",
+        )
+        check(
+            f"bridge cache exits cleanly: {cache_rel}",
+            header.get("exit_code") == "0" and header.get("status") == "ok",
+            detail=f"exit_code={header.get('exit_code')} status={header.get('status')}",
+        )
+        for snippet in snippets:
+            check(f"bridge cache contains expected marker: {cache_rel}", snippet in header["_text"], detail=snippet)
 
 
 # ============================================================================
@@ -212,6 +343,7 @@ if claim_row is not None:
           claim_row.get("effective_status") in {"unaudited", "audited_conditional"},
           detail=f"effective_status={claim_row.get('effective_status')!r}")
 
+bridge_packet_checks()
 
 print(f"\n{'='*88}\n  TOTAL: PASS={PASS}, FAIL={FAIL}\n{'='*88}")
 sys.exit(1 if FAIL > 0 else 0)

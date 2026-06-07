@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
-runner_sha256: 30e20905339fd994250e0d8a6e6df1205a4a312b0b4377ad508cb7122698de20
+runner_sha256: a80fc1adf508c3c63bc9c222b047a4fd2957c85032ff57d4247456be80cce9a4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 11.54
+elapsed_sec: 5.16
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -131,11 +131,11 @@ Hostile-review diagnostics:
   [PASS] [THEOREM] at reference solve A (input rho_(p,q) = 1) the source-sector Perron problem yields an explicit positive conjugation-symmetric solution with a definite numerical P_loc(6)
          Perron eig=3.812630, psi swap=2.776e-16, P_loc=0.452407159045, u_0,loc=0.820129374352
   [PASS] [THEOREM] at reference solve B (input rho_(p,q) = delta_{(p,q),(0,0)}) the source-sector Perron problem yields an explicit positive conjugation-symmetric solution with a definite numerical P_triv(6)
-         Perron eig=3.441440, psi swap=1.722e-16, P_triv=0.422531739647, u_0,triv=0.806240916014
-  [PASS] [THEOREM] the NMAX truncation tail is super-polynomially summable: successive drifts decay geometrically and the dominant-weight band sum at the truncation edge is below theorem-grade tolerance
+         Perron eig=3.441440, psi swap=2.776e-16, P_triv=0.422531739647, u_0,triv=0.806240916014
+  [PASS] [THEOREM] the NMAX truncation tail is super-polynomially summable: successive drifts decay geometrically and the dominant-weight band sum at the truncation edge is below the source-side tolerance
          |P(NMAX=7)-P(NMAX=6)|=1.142e-09, |P(NMAX=6)-P(NMAX=5)|=1.139e-07, |P(NMAX=5)-P(NMAX=4)|/|P(NMAX=6)-P(NMAX=5)|=69.05, max_(p+q=NMAX) a^4 = 2.540e-16
-  [PASS] [THEOREM] the source-sector Perron value depends nontrivially on rho_(p,q)(6); explicit Wilson character coefficients and SU(3) intertwiners do not, by themselves, fix it (no-go: distinct admissible rho choices give distinct P(6))
-         family-1 spread = 0.029664, family-2 spread = 0.065300, family-3 spread = 0.163849; full admissible spread >= 0.193725; no choice of (tau, beta_env, k) is canonically picked out by local Wilson data
+  [PASS] [THEOREM] the source-sector Perron value depends nontrivially on rho_(p,q)(6); the three tested 1-parameter local-input closures do not fix a unique rho (bounded no-go: distinct admissible rho choices give distinct P(6))
+         family-1 spread = 0.029664, family-2 spread = 0.065300, family-3 spread = 0.163849; full admissible spread >= 0.193725; no choice of (tau, beta_env, k) is canonically picked out by the enumerated local-input closures
   [PASS] [SUPPORT] the Wilson character coefficients are not a constant-lift family: a_(1,1) is not equal to a_(1,0)^2
          a_(1,1) / a_(1,0)^2 = 0.908850 (rep-dependent structure, no scalar lift)
   [PASS] [SUPPORT] neither structural reference Perron value coincides with the canonical comparator; the runner does not tune any input to that comparator
@@ -149,9 +149,10 @@ Summary table (structural reference solves only — not the physical answer):
   B: rho = delta_(0,0)  0.4225317396    0.8062409160  1.5384037545
   one-plaquette ref     0.9994571046    0.9998642485  1.0002715583
 
-No-go: c_lambda(6) and SU(3) intertwiners do not, by themselves, fix
-rho_(p,q)(6) on the source sector. Three distinct admissible parametric
-families (decreasing exp(-tau(p+q)), one-plaquette-environment ansatz
+Bounded no-go: the three tested 1-parameter local-input closures do
+not fix a unique rho_(p,q)(6) on the source sector. Three distinct
+admissible parametric families (decreasing exp(-tau(p+q)),
+one-plaquette-environment ansatz
 rho^(beta_env), and tube-power ansatz rho^k) each use only c_lambda(6)
 and SU(3) intertwiners plus a single exogenous parameter (tau, beta_env,
 k), are each strictly admissible, and yet produce DIFFERENT P(6) values.
@@ -163,9 +164,8 @@ The missing mathematical object is the boundary character measure of
 the unmarked 3D spatial Wilson environment with marked-plaquette
 boundary, equivalently the Perron eigenvector of the explicit positive
 tensor-transfer operator built from c_lambda(6) and SU(3) intertwiners
-on the full 3D environment lattice. That object is non-perturbative on
-a 3D SU(3) lattice gauge network with one boundary plaquette and is
-not derivable in closed form from the local character data above alone.
+on the full 3D environment lattice. That physical object is outside
+this finite reference-solve packet.
 
 ==============================================================================
 SUMMARY: THEOREM PASS=6 SUPPORT=3 FAIL=0

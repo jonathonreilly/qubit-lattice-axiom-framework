@@ -161,6 +161,7 @@ def main() -> int:
     transfer_note = read(
         "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md"
     )
+    transfer_flat = " ".join(transfer_note.split())
     compressed_note = read(
         "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md"
     )
@@ -235,13 +236,14 @@ def main() -> int:
               f"{B*F:>14.6e} {psi:>14.6e} {rel:>16.3e}")
     print()
 
-    # SUPPORT: upstream definition of eta_beta(W) is the boundary state on
-    # the edge slice induced by the local rim coupling.
+    # SUPPORT: the current upstream transfer packet records eta_beta(W) in the
+    # target boundary-amplitude identity, while leaving the full untruncated
+    # Wilson-environment boundary theorem open.
     check(
-        "Upstream transfer theorem defines eta_beta(W) as the rim-induced boundary state on the edge slice",
-        "eta_beta(W)" in transfer_note
-        and "boundary state induced on one edge slice" in transfer_note
-        and "local rim coupling" in transfer_note,
+        "Upstream transfer packet records eta_beta(W) in the target boundary-state identity",
+        "eta_beta" in transfer_note
+        and "boundary state" in transfer_note
+        and "full untruncated spatial-environment boundary-amplitude identity" in transfer_flat,
         bucket="SUPPORT",
     )
 

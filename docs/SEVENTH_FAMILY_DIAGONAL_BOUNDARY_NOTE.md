@@ -5,6 +5,16 @@ The diagonal-stripe seventh-family scout is highly selective.
 
 Runner: [`scripts/SEVENTH_FAMILY_DIAGONAL_SWEEP.py`](../scripts/SEVENTH_FAMILY_DIAGONAL_SWEEP.py)
 
+Runner behavior for audit replay:
+- default: verify the frozen log's explicit row grid, exact zero/neutral gates,
+  row-derived seed-selective pockets, and boundary read
+- `--recompute`: run the original live diagonal-stripe replay
+
+The frozen log's explicit row list is the governing artifact. Its old
+safe-read count line says `6/18`, but the explicit row list has seven `YES`
+rows; the runner reports the row-derived `7/18` count while preserving the
+legacy summary line as a stale-log marker.
+
 Exact-gate result:
 - exact zero-source baseline survives on every tested row
 - exact neutral cancellation survives on every tested row

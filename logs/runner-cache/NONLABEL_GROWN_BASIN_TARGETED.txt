@@ -1,11 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/NONLABEL_GROWN_BASIN_TARGETED.py
-runner_sha256: 6579fe59532db9d550c1a9985ea30a9cb5650da27646a0c65dc2c43cafff7531
+runner_sha256: 67d5b4c649f6c49a7d22b9697876e1d1562a80bce2c5a616ddb1d4c305f2daf1
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.03
-status: timeout
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
 ----- stdout -----
+==========================================================================================
+NON-LABEL GROWN BASIN TARGETED FROZEN LOG VERIFIER
+log: logs/2026-04-06-nonlabel-grown-basin-targeted.txt
+==========================================================================================
+restore=0.60 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.393e-05 minus=+3.392e-05 double=-6.787e-05 exp=1.000 PASS
+restore=0.70 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.535e-05 minus=+3.534e-05 double=-7.071e-05 exp=1.000 PASS
+restore=0.80 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.620e-05 minus=+3.619e-05 double=-7.241e-05 exp=1.000 PASS
+
+SAFE READ: bounded positive restore basin; verifier checks frozen rows only.
+SCORECARD PASS=3 FAIL=0
 
 ----- stderr -----
 

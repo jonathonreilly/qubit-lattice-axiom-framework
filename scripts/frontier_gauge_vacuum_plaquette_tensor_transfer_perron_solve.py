@@ -59,7 +59,7 @@ truncation is justified by exponential decay of c_(p,q)(beta) at fixed
 beta with the rep size: at beta = 6, c_(p,q)(6) and a_(p,q)(6)^4 fall
 below 1e-6 for (p+q) >= 4 already on the audited box, so the Peter-Weyl
 tail is super-polynomially summable and contributes well below
-branch-local tolerance at NMAX = 7.
+source-side tolerance at NMAX = 7.
 
 It performs an explicit bounded no-go check for the three enumerated
 rho-family closures on the source sector.
@@ -540,7 +540,7 @@ def main() -> int:
     check(
         "the NMAX truncation tail is super-polynomially summable: successive drifts "
         "decay geometrically and the dominant-weight band sum at the truncation edge is "
-        "below the branch-local tolerance",
+        "below the source-side tolerance",
         nmax_drift < 1.0e-6
         and nmax_drift_prior < 1.0e-3
         and nmax_drift_geom > 50.0

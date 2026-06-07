@@ -20,6 +20,7 @@ from __future__ import annotations
 import math
 import random
 
+AUDIT_TIMEOUT_SEC = 300
 BETA = 0.8
 K = 5.0
 MAX_D_PHYS = 3

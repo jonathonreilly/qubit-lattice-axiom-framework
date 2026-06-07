@@ -1,8 +1,12 @@
-# The Sign of the Interaction Asymmetry `delta` is Fixed Negative (Attractive) by the Retained Two-Body Mediator — Narrow Theorem
+# The Sign of the Interaction Asymmetry `delta` is Fixed Negative by the Retained Two-Body Mediator; `K_C3` is Negative on the Nonresonant Branch — Narrow Theorem
 
 **Date:** 2026-06-06
-**Claim type:** positive_theorem (the **sign** of `delta` / signed `K_C3`; the magnitude `|K_C3|` bounded, not pinned)
-**Status:** unaudited candidate; inherits the retained mediator's **bounded** tier. Graph-visible only so the independent audit lane can decide.
+**Claim type:** bounded_theorem / exact-support bridge (the **sign** of
+`delta` from the mediator, plus the exact nonresonant sign branch for signed
+`K_C3`; the physical magnitude/gap branch remains open)
+**Status:** unaudited candidate; inherits the retained mediator's **bounded**
+tier and is stacked on the periodic-kernel bridge. Graph-visible only so the
+independent audit lane can decide.
 **Primary runner:** [`scripts/delta_sign_from_retained_mediator_runner.py`](../scripts/delta_sign_from_retained_mediator_runner.py)
 **Cached output:** [`logs/runner-cache/delta_sign_from_retained_mediator_runner.txt`](../logs/runner-cache/delta_sign_from_retained_mediator_runner.txt)
 
@@ -22,13 +26,26 @@ The open `delta` was named in
 (`retained_bounded`; the partner-force channel is attractive on `15/15` rows with a near-Newton
 `~d^-1.95` law), with companion
 [`WILSON_TWO_BODY_OPEN_REFINED_NOTE_2026-04-11`](WILSON_TWO_BODY_OPEN_REFINED_NOTE_2026-04-11.md).
+For the retained momentum-corner generation pair, this stacked repair also
+uses the exact finite-periodic density-kernel bridge
+[`GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07`](GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md),
+which derives the plane-wave normalization and
+
+```text
+delta_ij = (Vq(0) - Vq(k_i-k_j)) / N,     Vq(q) = -G/(eps(q)+mu^2),
+```
+
+from the same local mediator stencil on an even periodic torus.
 
 ## Safe statement
 
-**Theorem (sign of `delta`).** Identify the two generation excitations of the `hw=2`
-intermediate sector with two quanta of the lattice matter field `psi` (a generation is a `hw=1`
-excitation of `psi`). They source and feel the framework's retained shared scalar field by the
-same universal coupling `(L + mu^2) Phi = G |psi|^2`. Then:
+**Theorem (sign of `delta`; nonresonant sign of `K_C3`).** Identify the two
+generation excitations of the `hw=2` intermediate sector with two quanta of
+the lattice matter field `psi` on the retained momentum-corner generation
+surface. They source and feel the framework's retained shared scalar field by
+the same universal coupling `(L + mu^2) Phi = G |psi|^2`; on the finite
+periodic plane-wave surface this is exactly the density-kernel formula in the
+stacked 2026-06-07 bridge. Then:
 
 1. **The retained partner force is attractive.** Reproducing the retained observable verbatim
    (graph Laplacian `L`, `mu^2 = 0.001`, `G = 50`, `sigma = 0.80`, partner force
@@ -42,68 +59,113 @@ same universal coupling `(L + mu^2) Phi = G |psi|^2`. Then:
    **bounded and monotone-decreasing** in separation (the screened-Poisson `(L + mu^2)^{-1}`
    kernel is sign-definite).
 
-3. **Hence `delta < 0` and `K_C3 < 0`.** Since `delta = E_2 − 2*E_1 + E_0` is exactly this
-   two-excitation mutual energy, `delta = E_mut < 0`. Propagating into the second-order
-   effective operator on `C^8` gives the signed `C3` coupling with `K_C3 < 0` and the exact
-   `J − I` form. A (counterfactual) repulsive channel `delta > 0` would flip `K_C3 > 0`, so
-   the sign law is genuine, not an artifact.
+3. **The retained momentum-corner generation pair has the same negative
+   `delta_ij` on each pair.** By the periodic density-kernel bridge, the
+   retained `hw=1` corners satisfy `eps(k_i-k_j)=8` for every distinct pair,
+   hence
 
-So the **sign** of the emergent `C3` coupling is fixed by a retained surface:
-`delta < 0`, `K_C3 < 0`; the magnitude `|K_C3|` remains bounded but not pinned.
+   ```text
+   delta_ij = ( -G/mu^2 + G/(8+mu^2) ) / N < 0
+   ```
+
+   and the equality across pairs is the exact `J - I` form. This closes the
+   generation-pair-to-`psi`/kernel normalization bridge for the pure periodic
+   corner surface; it does not pin the physical magnitude.
+
+4. **Second-order sign propagation is exact on the nonresonant branch.** For
+   the native one-hop model with gap `eps_gap > 0`, pair curvature `delta`,
+   and one-hop amplitude `t`, eliminating the `hw=0` and `hw=2` intermediate
+   states gives the off-diagonal `C3` coupling
+
+   ```text
+   K_C3 = t^2 * delta / (eps_gap * (eps_gap + delta)).                  (1)
+   ```
+
+   Therefore `sign(K_C3)=sign(delta)` exactly when the nonresonant branch
+   condition `eps_gap > 0 and eps_gap + delta > 0` holds:
+
+   ```text
+   eps_gap > 0,     eps_gap + delta > 0.                                (2)
+   ```
+
+   Combining (1)-(2) with the retained mediator sign gives `K_C3 < 0` on the
+   nonresonant attractive branch. A counterfactual repulsive channel gives
+   `K_C3 > 0` on the same branch, while a strong-curvature/resonant branch
+   `eps_gap + delta < 0` flips the denominator sign and is explicitly outside
+   this sign theorem.
+
+So the **sign of the interaction curvature** is fixed by the retained mediator:
+`delta < 0`. The signed emergent `C3` coupling is negative on the explicitly
+stated nonresonant branch: `K_C3 < 0` if `eps_gap > 0` and
+`eps_gap + delta > 0`. The physical magnitude and branch verification remain
+open IR/gap data rather than a flavor-value assertion.
 
 ## The genuine open piece (and the route this opens)
 
-The **magnitude** `|delta| = |E_mut|` at the generation-pair separation is **bounded** by the
-screened-Poisson propagator (sign-definite, monotone) but **not pinned**: it depends on the
-generation-pair localization and on extension beyond the retained channel's calibrated
-open-cubic surface (the retained note lists "extension beyond the open cubic calibration
-surface" and a clean trajectory channel as still missing). So this note moves `delta` from
-"sign and scale both open" to "**sign fixed (attractive), scale bounded**." The next artifact is
-the generation-pair separation/localization that converts the bound into a value.
+The **magnitude** `|delta| = |E_mut|` is **bounded/routed** by the mediator
+kernel but **not pinned**. The periodic-corner bridge removes the old
+"generation-pair separation" ambiguity for the pure plane-wave surface and
+replaces it with explicit IR/gap data `(G, mu^2, N, eps_gap)`. This note moves
+`delta` from "sign and scale both open" to "**sign fixed (attractive), kernel
+normalization explicit, sign propagation branch exact**." The remaining
+artifact is not another localization ansatz; it is the physical IR/gap
+closure proving that the realized branch satisfies `eps_gap + delta > 0`.
 
 ## Boundary (honest)
 
-- **A sign + bound, not a value.** It fixes `sign(delta) = sign(K_C3) < 0` and bounds `|delta|`;
-  it does not pin the magnitude.
+- **A sign + branch theorem, not a value.** It fixes `delta < 0` on the retained
+  mediator surfaces and proves `K_C3 < 0` only on the nonresonant branch
+  `eps_gap > 0`, `eps_gap + delta > 0`; it does not pin the physical magnitude
+  or prove that the physical branch is nonresonant.
 - **Inherits the retained channel's bounded tier.** The attraction is established on the
   retained note's **clean partner-force** observable; that note is `retained_bounded` because
   its staggered trajectory channel is noisier and full Newton on the primary architecture is not
   closed. This note is no stronger than that surface.
-- **Load-bearing identification (native, but named).** The result rests on identifying the two
-  generation excitations with two quanta of the same matter field `psi` that sources the
-  mediator. This is the framework's own definition of generations (the `hw=1` sector of the
-  lattice matter field) and the mediator's universal `G|psi|^2` coupling — an application of a
-  retained channel, **not** a new field, species, or coupling. It is flagged here so the audit
-  lane can weigh it.
+- **Load-bearing identification (now bridged on the periodic corner surface).** The result
+  rests on identifying the two generation excitations with two quanta of the
+  same matter field `psi` that sources the mediator. The stacked periodic
+  plane-wave bridge supplies the finite-volume density-kernel normalization
+  for the retained `hw=1` momentum-corner generations. This is an application
+  of a retained channel, **not** a new field, species, or coupling, but the
+  physical IR/gap branch remains open.
 - **Forces no flavor value.** This is one overall **sign** of the `C3` coupling; it does **not**
   force `r`, `Q`, or any mixing value (no overreach). `r` remains the registered dial.
 
 ## Forbidden imports check
 
-No new axiom and no new import. The mediator `(L + mu^2) Phi = G|psi|^2` and its attractive
-partner force are the **retained** (`retained_bounded`) two-body channel, reproduced verbatim;
-applying it to two `psi`-quanta (the generation pair) uses the same universal coupling. The
-occupation-curvature identity `delta = E_mut` and the sign propagation `sign(K_C3) = sign(delta)`
-are arithmetic. The magnitude is named open, not asserted.
+No new axiom and no new import. The mediator `(L + mu^2) Phi = G|psi|^2` and
+its attractive partner force are the **retained** (`retained_bounded`)
+two-body channel, reproduced verbatim; applying it to two `psi`-quanta on the
+retained momentum-corner surface uses the stacked periodic density-kernel
+bridge. The occupation-curvature identity `delta = E_mut` and the
+nonresonant sign propagation formula
+`K_C3 = t^2 * delta / (eps_gap * (eps_gap + delta))` are arithmetic. The
+magnitude/gap branch is named open, not asserted.
 
 ## Runner check breakdown
 
-Class A: (1) the retained partner force is attractive on `d = 3..7`, sides `12, 14, 16`
-(reproducing the published `+0.49557` and the `~d^-1.95` law) and the binding energy
-`E_mut < 0` on every row; (2) `|E_mut|` is bounded and monotone in separation; (3) `delta < 0`
-yields `K_C3 < 0` with the exact `J − I` form, and a counterfactual `delta > 0` flips the
-sign. Expected `runner_check_breakdown = {A: N, B: 0, C: 0, D: 0, total_pass: N}`.
+Class A: (1) the retained partner force is attractive on `d = 3..7`, sides
+`12, 14, 16` (reproducing the published `+0.49557` and the `~d^-1.95` law)
+and the binding energy `E_mut < 0` on every row; (2) `|E_mut|` is bounded and
+monotone in separation; (3) the stacked periodic kernel gives equal negative
+`delta_ij` for the three retained `hw=1` corner pairs and `eps(Delta k)=8`;
+(4) the exact formula `K_C3 = t^2 * delta / (eps_gap * (eps_gap + delta))`
+gives `K_C3 < 0` on `eps_gap > 0`, `eps_gap + delta > 0`, detects the
+resonant branch as excluded, and preserves the exact `J - I` form. Expected
+`runner_check_breakdown = {A: N, B: 0, C: 0, D: 0, total_pass: N}`.
 
 ## Honest auditor read
 
-The class-A content reproduces the retained two-body channel's exact attractive partner-force
-observable (verbatim conventions and published value), shows the corresponding two-excitation
-binding energy is negative and bounded, and propagates `delta = E_mut < 0` into `K_C3 < 0`
-with the `J − I` form. The result is the **sign** of `delta`/`K_C3` plus a magnitude bound,
-obtained from a `retained_bounded` surface with no import; it inherits that surface's bounded
-tier and forces no flavor value. The one judgement the auditor must weigh is the (native, flagged)
-identification of the generation pair with two `psi`-quanta sourcing the universal mediator.
-Effective status remains `unaudited`.
+The class-A content reproduces the retained two-body channel's exact
+attractive partner-force observable (verbatim conventions and published
+value), shows the corresponding two-excitation binding energy is negative and
+bounded, uses the stacked periodic plane-wave bridge to put the retained
+momentum-corner generation pair on the same density-kernel surface, and proves
+the second-order sign formula rather than sampling a single `delta`. The result
+is a **mediator sign + nonresonant branch theorem**: `delta < 0`, and
+`K_C3 < 0` when `eps_gap > 0` and `eps_gap + delta > 0`. It inherits the
+mediator's bounded tier, forces no flavor value, and leaves the physical
+IR/gap branch for later audit. Effective status remains `unaudited`.
 
 ## Runner
 

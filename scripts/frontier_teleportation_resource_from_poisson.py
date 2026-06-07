@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import dataclasses
 import hashlib
+import json
 import math
 import sys
 from pathlib import Path
@@ -27,6 +28,7 @@ from scipy.linalg import eigh
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+ROOT = SCRIPT_DIR.parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
@@ -68,6 +70,16 @@ SOURCE_REQUIRED_SYMBOLS = (
     "lattice_1d",
     "lattice_2d",
     "lattice_3d",
+)
+RALA_CLAIM_ID = "teleportation_retained_axis_operator_algebra_closure_note"
+RALA_NOTE = ROOT / "docs" / "TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md"
+LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+RALA_REQUIRED_SNIPPETS = (
+    "RALA(a) = { O_logical",
+    "T2 (axis Pauli operators are in RALA)",
+    "T3 (axis Bell projectors are in pair-RALA)",
+    "T5 (fixed pair-hop X membership)",
+    "T8 (RALA teleportation closure)",
 )
 
 
@@ -119,6 +131,41 @@ def helper_source_certificate() -> dict[str, object]:
         "sha256": hashlib.sha256(helper_text.encode("utf-8")).hexdigest(),
         "line_count": len(helper_text.splitlines()),
         "symbol_count": len(SOURCE_REQUIRED_SYMBOLS),
+    }
+
+
+def ledger_status(claim_id: str) -> str | None:
+    if not LEDGER_PATH.exists():
+        return None
+    ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+    rows = ledger.get("rows", ledger)
+    if isinstance(rows, dict):
+        iterable = rows.values()
+    else:
+        iterable = rows
+    for row in iterable:
+        if row.get("claim_id") == claim_id:
+            return row.get("effective_status")
+    return None
+
+
+def retained_axis_source_certificate() -> dict[str, object]:
+    if not RALA_NOTE.exists():
+        raise RuntimeError("RALA retained-axis source note is missing")
+    text = RALA_NOTE.read_text(encoding="utf-8")
+    missing = [snippet for snippet in RALA_REQUIRED_SNIPPETS if snippet not in text]
+    if missing:
+        raise RuntimeError(f"RALA source note is missing expected theorem snippets: {missing}")
+    status = ledger_status(RALA_CLAIM_ID)
+    if status != "retained_bounded":
+        raise RuntimeError(
+            "RALA source note must remain retained_bounded for this bounded support route; "
+            f"ledger status={status!r}"
+        )
+    return {
+        "path": RALA_NOTE,
+        "status": status,
+        "snippet_count": len(RALA_REQUIRED_SNIPPETS),
     }
 
 
@@ -558,6 +605,17 @@ def main() -> int:
         "Source packet: "
         f"{helper_label} sha256={helper['sha256']} "
         f"lines={helper['line_count']} required_symbols={helper['symbol_count']} PASS"
+    )
+    rala = retained_axis_source_certificate()
+    rala_path = Path(rala["path"])
+    try:
+        rala_label = rala_path.relative_to(SCRIPT_DIR.parent)
+    except ValueError:
+        rala_label = rala_path
+    print(
+        "Retained-axis source: "
+        f"{rala_label} ledger={rala['status']} "
+        f"required_theorem_snippets={rala['snippet_count']} PASS"
     )
     print("Last-taste carrier checks:")
     for certificate in (logical_carrier_certificate(case) for case in cases):

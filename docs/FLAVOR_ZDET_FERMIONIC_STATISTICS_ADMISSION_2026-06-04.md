@@ -3,11 +3,15 @@
 **Date:** 2026-06-04
 **Claim type:** open_gate
 **Actual current-surface status:** bounded-support
-**Trace class:** negative_route_pruning
-**Reachability to target:** prunes the route "finite local dimension, ordinary tensor-product ladders, or Jordan-Wigner realizability by themselves select cross-site CAR/Grassmann statistics".
+**Trace class:** direct_blocker_closure
+**Reachability to target:** partially closes the missing determinant-side
+bridge inside the abstract two-candidate Grassmann-vs-bosonic finite algebra
+scope, and prunes the route "finite local dimension, ordinary tensor-product
+ladders, or Jordan-Wigner realizability by themselves select physical
+cross-site CAR/Grassmann statistics".
 **Bare retained allowed:** false
 **Audit required before effective status change:** true
-**Runner:** `scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py` (SCORECARD PASS=7).
+**Runner:** `scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py` (SCORECARD PASS=11).
 
 ## Closed Packet
 
@@ -17,15 +21,55 @@ This note isolates the determinant-amplitude input:
 Z = det(D + J)
 ```
 
-The finite packet verifies two sides of the gate:
+The finite packet verifies three sides of the gate:
 
 1. If Grassmann/CAR matter variables are supplied, the finite Berezin Gaussian
    gives the determinant.
-2. The tested finite hard-core/tensor-product carrier data do not by themselves
+2. On the 2026-06-07 repair branch, the determinant side is no longer merely
+   a free import in the **abstract two-candidate** scope: it consumes the
+   retained finite occupation-parity `Z_2` grading row and the
+   retained-bounded abstract Grassmann forcing bridge, which compares the
+   Grassmann and bosonic one-pair-per-site candidates and supplies the
+   finite Berezin determinant compatibility.
+3. The tested finite hard-core/tensor-product carrier data do not by themselves
    select cross-site CAR/Grassmann statistics.
 
-The packet does not derive the choice of Grassmann/CAR variables from baseline
-axioms, and it does not introduce a new axiom or admission.
+The packet does not derive the physical-lattice choice of Grassmann/CAR
+variables from baseline axioms. It does not introduce a new axiom or
+admission.
+
+## 2026-06-07 Bridge Repair
+
+The audit blocker for this row was that the determinant-amplitude input was
+treated as a supplied Grassmann/CAR premise. This branch repairs the
+determinant side only at the abstract finite-algebra level by citing and
+checking two one-hop audited dependencies:
+
+- [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
+  supplies the retained algebraic `Z_2` grading carrier on finite
+  occupation/Fock space. It does not by itself prove a physical
+  fermion-statistics selector or superselection rule.
+- [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+  supplies the retained-bounded abstract Grassmann forcing bridge: within the
+  explicitly named two-candidate comparison, the Grassmann candidate matches
+  the per-site dimension-two readout and gives `det(M)`, while the bosonic
+  candidate has the wrong per-site Fock dimension and the wrong scalar
+  partition structure.
+
+Composed with the existing finite checks here, those dependencies close the
+following narrow statement:
+
+> In the retained-bounded abstract two-candidate matter-generator scope, the
+> determinant-amplitude side has one-hop audited support: the Grassmann
+> candidate carries the finite `det(M)` readout, while the ordinary
+> hard-core/tensor and bosonic comparator routes do not supply that same
+> readout.
+
+This is **bounded support**, not a physical spin-statistics theorem. The
+physical spin-statistics selector remains open: this packet still does not
+identify the framework's physical per-site Hilbert space on `Z^3` with the
+abstract `Cl(3)` faithful complex irrep, and it still does not derive the
+cross-site CAR/Grassmann relations from a deeper baseline axiom.
 
 ## Direct Checks
 
@@ -42,22 +86,33 @@ axioms, and it does not introduce a new axiom or admission.
 4. **Local dimension two is not enough.** Fermions and hard-core bosons share
    nilpotent two-state local carriers; the difference is cross-site statistics.
 
-5. **Determinant and permanent differ.** Signed determinant statistics and
+5. **Retained parity grading supplies the algebraic carrier.** The
+   occupation-parity row supplies `F=(-1)^{Q_total}` and the finite `Z_2`
+   odd/even grading. In the runner, the dressed generators are `Z_2`-odd,
+   anticommute across the two tested sites, and their bilinear is `Z_2`-even.
+
+6. **Retained-bounded Grassmann forcing supplies the abstract determinant
+   bridge.** The existing retained-bounded bridge supplies the
+   two-candidate Grassmann-vs-bosonic comparison and the finite Berezin
+   determinant compatibility in the abstract scope.
+
+7. **Determinant and permanent differ.** Signed determinant statistics and
    unsigned hard-core/permanent-style statistics are distinct finite choices.
 
-6. **Koide internal chirality is separate.** `Gamma_chi` acts on the internal
+8. **Koide internal chirality is separate.** `Gamma_chi` acts on the internal
    generation factor and commutes with the tested `C3`-equivariant mass
    operator. Spatial CAR selection does not settle that internal residual.
 
 ## Scope
 
-This is not a universal spin-statistics theorem and not a baseline derivation
-of FS. It only says the tested finite routes do not force FS, while supplied
-Grassmann/CAR variables do realize the determinant amplitude.
+This is not a physical spin-statistics theorem and not a baseline derivation
+of FS. It says:
 
-If later work derives or admits a cross-site CAR/Grassmann matter premise, that
-could supply the determinant-amplitude input for downstream log-det consumers.
-This file does not promote those consumers or rewrite their dependency state.
+- the abstract two-candidate determinant side has bounded one-hop support via
+  retained and retained-bounded audited dependencies;
+- the tested finite routes do not force a physical-lattice FS selector; and
+- downstream log-det consumers still need their own dependency/audit review
+  before any effective status changes.
 
 ## No-Go Discipline Gate
 
@@ -68,14 +123,15 @@ The no-go applies only to the finite routes represented in the runner:
 | On-site Clifford/local dimension | Does not force cross-site CAR. |
 | Ordinary tensor-product ladders | Commute across sites. |
 | Jordan-Wigner | Realizes CAR after a generator/string choice; not a selector. |
-| Determinant-character mathematics | Works after determinant amplitude is supplied. |
+| Abstract determinant-character mathematics | Works in the retained-bounded two-candidate Grassmann scope. |
 | Koide chirality transport | Separate internal-generation residual. |
 | Continuum spin-statistics | Not tested here and left open. |
 
 ## Provenance
 
 - The runner checks determinant/permanent arithmetic, ordinary ladder
-  commutation, Jordan-Wigner CAR realization, local nilpotency, and internal
-  `Gamma_chi` separation.
+  commutation, Jordan-Wigner CAR realization, local nilpotency, one-hop
+  dependency status, parity-graded composition, dependency boundary language,
+  and internal `Gamma_chi` separation.
 - No `docs/audit/**` status is updated by this packet.
 - No new axiom is introduced.

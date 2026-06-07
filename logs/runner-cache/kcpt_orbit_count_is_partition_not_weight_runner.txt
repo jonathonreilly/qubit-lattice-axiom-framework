@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_orbit_count_is_partition_not_weight_runner.py
+runner_sha256: 4a002c59f8d1db86a8491f570418ee9d3e557bb9113fa7f5b3307a84a2982509
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
+==============================================================================
+K/CPT-orbit count = the 2-sector PARTITION, not the weight r; J_cs measure-neutral  [class A]
+==============================================================================
+
+-- (1) K/CPT orbits of the C3 irreps = {{1},{omega,omega-bar}} = 2 = the 2-sector partition --
+  [PASS] the K/CPT (conjugation) orbit set has exactly 2 orbits {trivial} and {omega,omega-bar}  (orbits = [{1, 2}, {0}])
+  [PASS] these 2 orbits = the einselected 2-sector partition {P0 rank1 (singlet), P1 rank2 (doublet)}
+
+-- (2) the orbit count is r-INVARIANT (b->b-bar leaves r=|b|^2/a^2 fixed) --
+  [PASS] max|r(a,b) - r(a,b-bar)| = 0 over 1e5 draws => the orbit merge carries ZERO inter-block weight information (it moves only arg(b)=delta, Q-orthogonal to |b|)  (max = 0.0e+00)
+  [PASS] explicit r=1/2 (|b|^2=a^2/2) and r=1 (|b|^2=a^2) states have identical orbit cardinality (=2) => a constant cannot pin a varying r
+
+-- (3) J_cs=(C-C^2)/sqrt(3): commuting complex structure, clears the anticommuting no-go --
+  [PASS] [J_cs, C] = 0 (J_cs is C3-equivariant)
+  [PASS] J_cs^2 = -P_doublet (genuine complex structure on the doublet)
+  [PASS] [J_cs, M] = 0 for every C3-invariant mass M (J_cs COMMUTES with the mass operator)
+  [PASS] {J_cs, Gamma_chi} != 0 => J_cs is DISTINCT from and weaker than the anticommuting chiral grading the retained koide_z3_equivariant_anticommuting_no_go forecloses => it CLEARS that no-go  (||{J_cs,Gamma_chi}|| = 2.828)
+
+-- (4) exp(theta J_cs) orthogonal & det=+1 => MEASURE-NEUTRAL => dodging buys no forcing --
+  [PASS] exp(theta J_cs) is orthogonal with det=+1 for all theta => preserves BOTH the real-trace and complex-trace measures => adjudicates neither count => carries no weight-selection power
+
+-- (5) genuine complex-trace count-once => equal-block-energy at r=1, NOT r=1/2 --
+  [PASS] complex-trace equal-block-energy (a^2=|b|^2) gives r=1, NOT r=1/2
+  [PASS] r=1/2 appears only via the SEPARATE equal-power-per-block balance 3a^2=6|b|^2 (the registered equal-power weight pattern) => 'count b once' alone does NOT deliver r=1/2
+
+-- (6) FS(omega)=0 => antiunitary K realifies (omega,omega-bar)->2 real modes = r=1 side --
+  [PASS] Frobenius-Schur indicator of omega = 0 (complex type) => by Wigner an antiunitary K can only REALIFY (omega,omega-bar) into a 2-real-dim block = the (1,2)->r=1 side (OPPOSITE of the escape's claim)  (FS(omega) = 0.0000)
+  [PASS] K on the doublet 2-plane is a det=-1 reflection (antiholomorphic, realifying), not a det=+1 U(1) rotation that det_C would require
+
+==============================================================================
+TOTAL: PASS=13 FAIL=0
+VERDICT: the K/CPT-orbit count delivers the 2-sector PARTITION (a multiplicity readout, = GAP B's partition), NOT the inter-block weight r (it is exactly r-invariant). The holomorphic readout is implemented by the COMMUTING complex structure J_cs, strictly weaker than and clearing the foreclosed anticommuting chiral grading -- but J_cs is measure-neutral, so it forces nothing; and a genuine complex-trace count gives r=1, not r=1/2 (the FS=0 antiunitary realifies toward r=1). So r=1/2 is a REGISTERED PATTERN as a registered pattern, not forced by the minimal axioms. The one live route to force the field/measure choice is the gated staggered-Dirac fluctuation-determinant holomorphy (substep-4, off-main).
+
+----- stderr -----
+

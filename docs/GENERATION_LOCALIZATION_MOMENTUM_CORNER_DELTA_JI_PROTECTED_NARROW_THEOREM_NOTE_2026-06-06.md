@@ -5,6 +5,11 @@
 **Status:** unaudited candidate. Graph-visible only so the independent audit lane can decide.
 **Primary runner:** [`scripts/generation_localization_corner_protected_delta_runner.py`](../scripts/generation_localization_corner_protected_delta_runner.py)
 **Cached output:** [`logs/runner-cache/generation_localization_corner_protected_delta_runner.txt`](../logs/runner-cache/generation_localization_corner_protected_delta_runner.txt)
+**2026-06-07 source bridge:** [`GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07`](GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md)
+with verifier
+[`scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py`](../scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py)
+and cache
+[`logs/runner-cache/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt`](../logs/runner-cache/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt).
 
 ## Audit context
 
@@ -28,6 +33,18 @@ retained
 [`STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11`](STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11.md)
 (`retained_bounded`).
 
+2026-06-07 bridge repair: the current audit blocker asked for a one-hop source theorem deriving
+the Generation periodic plane-wave density-kernel bridge. Its target is the periodic
+translation-invariant plane-wave density-density kernel and Hartree-Fock plane-wave readout
+`Vq(q) = -G/(eps(q)+mu^2)` and `delta_ij = (Vq(0)-Vq(k_i-k_j))/N`, including boundary and
+normalization, from the retained staggered two-body mediator. The bridge note above supplies that
+finite-lattice derivation on `Lambda_L = (Z/LZ)^3`: normalized translation characters diagonalize
+the periodic graph Laplacian; `-G(Lap+mu^2 I)^-1` has multiplier `Vq`; and the Slater
+density-density mutual energy is exactly Hartree minus exchange with the displayed `1/N`
+normalization. This is a bridge packet for independent re-audit, not an audit verdict, and it
+does not pin `|delta|`.
+Marker summary for the source-packet gate: periodic translation-invariant plane-wave density-density kernel.
+
 ## Safe statement
 
 Because the generations are momentum corners, `delta` is **not** a propagator evaluated at a
@@ -39,6 +56,9 @@ waves `k_i, k_j` (a Slater determinant) with translation-invariant `V`, the mutu
 delta_ij = ( Vq(0) − Vq(k_i − k_j) ) / N ,     Vq(q) = −G/(eps(q) + mu^2),
 eps(q) = sum_mu 2(1 − cos q_mu),               N = lattice volume.
 ```
+The 2026-06-07 bridge note derives this finite periodic boundary/normalization from the native
+screened graph-Poisson operator, rather than importing it as a textbook Fourier/Hartree-Fock
+formula.
 
 **Theorem.**
 
@@ -86,38 +106,41 @@ sign are fixed).
   completion would rescale the magnitude — another reason the magnitude is open. The **form** and
   **sign** results do not depend on this.
 - **Periodic lattice for the exact plane-wave check.** Used so the momentum corners are exact
-  eigenstates; the retained mediator's attraction (the sign) is boundary-independent. The
-  `J − I` corner-protection (`eps(Δk) = 8` for all pairs) is a statement about the corner momenta
-  and is boundary-independent.
+  eigenstates. The 2026-06-07 bridge note now proves the periodic screened-Poisson multiplier
+  and the Hartree-Fock `1/N` normalization on that finite surface. The retained mediator's
+  attraction supplies the framework-native screened density-density channel/sign convention; the
+  bridge does not widen the retained bounded open-cubic force result to a universal periodic
+  physical mediator theorem.
 - **No flavor value forced.** This fixes the **form** (`J − I`) and **sign** (`< 0`) of the `C3`
   coupling; it does not force `r`, `Q`, or any mixing value.
 
 ## Forbidden imports check
 
-No new axiom and no new import. The momentum-corner generations and their translation characters
-are **retained**; the mediator is **retained** (`retained_bounded`). The two-fermion mutual
-energy (Hartree–Fock matrix element of the retained density–density interaction) is exact
-arithmetic, cross-checked against exact finite-lattice diagonalization. The magnitude is named
-open, not asserted.
+No new axiom and no external textbook import. The momentum-corner generations and their
+translation characters are **retained**; the mediator is **retained_bounded**; and the periodic
+`Vq`/Hartree-Fock normalization is now supplied by the source-side finite-lattice source bridge
+for independent re-audit. The magnitude is named open, not asserted.
 
 ## Runner check breakdown
 
-Class A: (1) three distinct joint translation characters; (2) `eps(k_i − k_j) = 8` for all three
-generation pairs (`J − I` corner-protection); (3) exact lattice two-fermion `delta` equals the
-Hartree–Fock formula (`L = 4, 6`) and is `< 0` and equal for all pairs; (4) `|delta|` scales as
-`1/N` (monopole-dominated) with the corner Fock part subleading by `mu^2/8`. Expected
+Class A: (1) source bridge presence/dependency checks; (2) three distinct joint translation
+characters; (3) `eps(k_i − k_j) = 8` for all three generation pairs (`J − I` corner-protection);
+(4) exact lattice two-fermion `delta` equals the Hartree-Fock formula (`L = 4, 6`) and is `< 0`
+and equal for all pairs; (5) `|delta|` scales as `1/N` (monopole-dominated) with the corner Fock
+part subleading by `mu^2/8`. Expected
 `runner_check_breakdown = {A: N, B: 0, C: 0, D: 0, total_pass: N}`.
 
 ## Honest auditor read
 
 The class-A content uses the retained momentum-corner generation structure and the retained
-mediator to compute the two-fermion mutual energy `delta` exactly (Hartree–Fock matrix element,
-cross-checked against finite-lattice diagonalization). The three corners' equal inter-transfer
-`eps(Δk) = 8` protects the exact `J − I` form; the mutual energy is `delta < 0` for all pairs
-(re-confirming the sign from the momentum side); and the magnitude is dominated by the `q = 0`
-monopole, scaling with volume and `mu^2`, so it reduces to the mediator IR scale rather than a
-localization distance. The result is a **form + sign** theorem with an explicitly open
-(IR-set) magnitude; it forces no flavor value. Effective status remains `unaudited`.
+bounded mediator sign/channel, plus the 2026-06-07 finite periodic source bridge, to compute the
+two-fermion mutual energy `delta` exactly (Hartree-Fock matrix element, cross-checked against
+finite-lattice diagonalization). The three corners' equal inter-transfer `eps(Δk) = 8` protects
+the exact `J − I` form; the mutual energy is `delta < 0` for all pairs (re-confirming the sign
+from the momentum side); and the magnitude is dominated by the `q = 0` monopole, scaling with
+volume and `mu^2`, so it reduces to the mediator IR scale rather than a localization distance.
+The result is a **form + sign** theorem with an explicitly open (IR-set) magnitude; it forces no
+flavor value. Effective status remains `unaudited` pending independent audit of the new bridge.
 
 ## Runner
 

@@ -36,6 +36,30 @@ real** modes — nothing else. This sits on the retained obstruction: `koide_fro
 (retained_no_go — the C₃-invariant Gram is a 2-parameter block-constant cone with the singlet:doublet
 ratio **free**) and `action_normalization` (retained_no_go — declines to rank (1,1) vs (1,2)).
 
+### Dependency packets made explicit for re-audit
+
+The two obstruction packets used above are concrete graph dependencies, not
+bare labels:
+
+- Frobenius isotype split:
+  [`KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`](KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md),
+  runner
+  [`scripts/frontier_koide_frobenius_isotype_split_uniqueness.py`](../scripts/frontier_koide_frobenius_isotype_split_uniqueness.py),
+  cache
+  [`logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt`](../logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt).
+- Action normalization:
+  [`ACTION_NORMALIZATION_NOTE.md`](ACTION_NORMALIZATION_NOTE.md),
+  runner
+  [`scripts/frontier_action_normalization.py`](../scripts/frontier_action_normalization.py),
+  cache
+  [`logs/runner-cache/frontier_action_normalization.txt`](../logs/runner-cache/frontier_action_normalization.txt).
+
+The paired runner checks that both dependency rows are currently
+`audited_clean` / `retained_no_go` in `docs/audit/data/audit_ledger.json` and
+that their source runners/caches are present. This does not edit the audit
+ledger; it makes the cited dependency packets visible in the source packet for
+independent re-audit.
+
 ### Two escapes KILLED (the wrong-escape check)
 - **The most-converged escape (10+ specialties): "r=1/2 = self-dual fixed point of the swap `r→1−r`"
   is a SCALAR RELABELING, not a forcing.** Verified (runner ESC1-KILLED): `r→1−r` changes the Casimir

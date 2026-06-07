@@ -17,7 +17,7 @@
     "manifest_json": "outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json"
   },
   "summary": {
-    "pass": 85,
+    "pass": 86,
     "fail": 0
   },
   "results": [
@@ -134,7 +134,7 @@
     {
       "name": "source_untruncated:target_runner",
       "pass": true,
-      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py has 5121 bytes"
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py has 7306 bytes"
     },
     {
       "name": "source_marker:target_runner:FAMILY = \"Fam2\"",
@@ -269,7 +269,7 @@
     {
       "name": "cache_sha_fresh:target_cache",
       "pass": true,
-      "detail": "cache sha 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d current sha 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d"
+      "detail": "cache sha c1d401ee87e275b853d56ac27903b44c0a9b697c3b6625e92d34ff689691b4b9 current sha c1d401ee87e275b853d56ac27903b44c0a9b697c3b6625e92d34ff689691b4b9"
     },
     {
       "name": "cache_exit_ok:target_cache",
@@ -312,9 +312,14 @@
       "detail": "delta_hist = -0.002037"
     },
     {
-      "name": "cache_contains:target_cache:SUMMARY: WAVE H025 FAM2 SEED1 PASS=27 FAIL=0",
+      "name": "cache_contains:target_cache:MEASURE_DM_SOURCE_PACKET=PASS",
       "pass": true,
-      "detail": "SUMMARY: WAVE H025 FAM2 SEED1 PASS=27 FAIL=0"
+      "detail": "MEASURE_DM_SOURCE_PACKET=PASS"
+    },
+    {
+      "name": "cache_contains:target_cache:SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0",
+      "pass": true,
+      "detail": "SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0"
     },
     {
       "name": "cache_runner_matches:generic_point_runner_cache",

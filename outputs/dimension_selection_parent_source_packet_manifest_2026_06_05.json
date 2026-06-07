@@ -12,7 +12,7 @@
     "finite_k_bridge_cache": "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt"
   },
   "summary": {
-    "pass": 56,
+    "pass": 57,
     "fail": 0
   },
   "results": [
@@ -104,7 +104,7 @@
     {
       "name": "source_full_length:parent_runner",
       "pass": true,
-      "detail": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py has 4048 bytes"
+      "detail": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py has 7626 bytes"
     },
     {
       "name": "source_contains:parent_runner:import importlib.util",
@@ -189,7 +189,7 @@
     {
       "name": "cache_sha_fresh:parent_cache",
       "pass": true,
-      "detail": "97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880 == 97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880"
+      "detail": "55ba22423e9c8abc6d29b210233dbb0fea7d0e4001b9b0e1aa5bf17cb6b87c7f == 55ba22423e9c8abc6d29b210233dbb0fea7d0e4001b9b0e1aa5bf17cb6b87c7f"
     },
     {
       "name": "cache_exit_ok:parent_cache",
@@ -197,9 +197,14 @@
       "detail": "exit_code=0 status=ok"
     },
     {
-      "name": "cache_snippet_present:parent_cache:SUMMARY: PASS=26 FAIL=0",
+      "name": "cache_snippet_present:parent_cache:SUMMARY: PASS=27 FAIL=0",
       "pass": true,
-      "detail": "SUMMARY: PASS=26 FAIL=0"
+      "detail": "SUMMARY: PASS=27 FAIL=0"
+    },
+    {
+      "name": "cache_snippet_present:parent_cache:COMPANION_PACKET: PASS",
+      "pass": true,
+      "detail": "COMPANION_PACKET: PASS"
     },
     {
       "name": "cache_snippet_present:parent_cache:finite-k lower-bound pass set is d=3,4,5",

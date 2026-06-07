@@ -20,12 +20,48 @@ prediction, NOT a no-go. One named bridge remains.
   F5 radian distinctness HOLDS: the dimensionless 2/9 is NOT the CP radian-delta=2/9 rad (retained_no_go radian
      bridge); (2/9)/(q_i pi) irrational for all 6 native angular units. Not conflated.
 """
+import hashlib
+import json
+from pathlib import Path
+
 import numpy as np, sympy as sp
+
+ROOT = Path(__file__).resolve().parents[1]
+LEPTON_CID = "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26"
+LEPTON_NOTE = "docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md"
+LEPTON_RUNNER = "scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py"
+LEPTON_CACHE = "logs/runner-cache/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.txt"
+THIS_NOTE = "docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md"
 
 def check(name, cond, detail=""):
     print(f"[{'PASS' if cond else 'FAIL'}] {name}")
     if detail: print(f"       {detail}")
     return bool(cond)
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def cache_header(path: Path) -> dict[str, str]:
+    text = path.read_text(encoding="utf-8", errors="replace")
+    header, _, _stdout = text.partition("----- stdout -----")
+    out = {"_text": text}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        out[key.strip()] = value.strip()
+    return out
+
+
+def flat(text: str) -> str:
+    return " ".join(text.split())
+
 
 def main():
     w=sp.exp(2*sp.pi*sp.I/3); passed=[]
@@ -45,6 +81,31 @@ def main():
     # F5 radian distinctness: (2/9)/(q*pi) irrational
     passed.append(check("F5 dimensionless 2/9 != CP radian-delta (2/9 rad): (2/9)/(q*pi) irrational (retained radian-bridge separation)",
         True, "not conflated; the radian-bridge no-go is a different surface"))
+    ledger = json.loads((ROOT / "docs" / "audit" / "data" / "audit_ledger.json").read_text())
+    lepton_row = ledger["rows"].get(LEPTON_CID, {})
+    this_note = (ROOT / THIS_NOTE).read_text(encoding="utf-8")
+    lepton_note = (ROOT / LEPTON_NOTE).read_text(encoding="utf-8")
+    lepton_note_flat = flat(lepton_note)
+    header = cache_header(ROOT / LEPTON_CACHE)
+    passed.append(check("F6 lepton delta=2/9 source packet is audited-clean open_gate, not a phase derivation",
+        lepton_row.get("audit_status") == "audited_clean"
+        and lepton_row.get("effective_status") == "open_gate"
+        and lepton_row.get("runner_path") == LEPTON_RUNNER,
+        f"{LEPTON_CID}: audit={lepton_row.get('audit_status')} effective={lepton_row.get('effective_status')}"))
+    passed.append(check("F7 downstream note names lepton source packet note, runner, and cache",
+        LEPTON_NOTE in this_note and LEPTON_RUNNER in this_note and LEPTON_CACHE in this_note,
+        "restricted packet includes exact residual note/runner/cache"))
+    passed.append(check("F8 lepton source packet keeps phase/coefficient/scale open",
+        "does not derive the Brannen phase" in lepton_note_flat
+        and "open gate plus empirical comparator" in lepton_note_flat
+        and "not a retained lepton-mass theorem" in lepton_note_flat,
+        "no downstream promotion of the open comparator"))
+    passed.append(check("F9 lepton runner cache is SHA-fresh and clean",
+        header.get("runner") == LEPTON_RUNNER
+        and header.get("runner_sha256") == sha256_file(ROOT / LEPTON_RUNNER)
+        and header.get("exit_code") == "0"
+        and "TOTAL: PASS=17 FAIL=0" in header["_text"],
+        f"cache runner={header.get('runner')} status={header.get('status')}"))
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT: PRINCIPLED-BUT-NOT-FORCED. Type-filter forces (c) among the three index objects (excludes")
     print("eta=0 and the extensive sum) -- not a cherry-pick. But the single-locus density is a CONTRIBUTION,")

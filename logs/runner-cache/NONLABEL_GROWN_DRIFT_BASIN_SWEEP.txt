@@ -1,11 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py
-runner_sha256: 1160871e90b46b095d6b28471064a34f298b6724a061d4815fb674bc92db7e4b
+runner_sha256: 515b03dd612f7c45bfddabfb49bc12b4d31ec1b96ae7dd1308c93905e11e8835
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.01
-status: timeout
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
 ----- stdout -----
+==========================================================================================
+NON-LABEL GROWN DRIFT BASIN FROZEN LOG VERIFIER
+log: logs/2026-04-06-nonlabel-grown-drift-basin-sweep.txt
+==========================================================================================
+drift=0.15 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.582e-05 minus=+3.580e-05 double=-7.164e-05 exp=1.000 PASS
+drift=0.15 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=-4.494e-05 minus=+4.493e-05 double=-8.989e-05 exp=1.000 PASS
+drift=0.15 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.335e-05 minus=+3.334e-05 double=-6.672e-05 exp=1.000 PASS
+drift=0.20 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.535e-05 minus=+3.534e-05 double=-7.071e-05 exp=1.000 PASS
+drift=0.20 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=-4.754e-05 minus=+4.754e-05 double=-9.510e-05 exp=1.000 PASS
+drift=0.20 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.163e-05 minus=+3.162e-05 double=-6.327e-05 exp=1.000 PASS
+drift=0.25 seed=0 zero=+0.000e+00 neutral=+0.000e+00 plus=-3.486e-05 minus=+3.485e-05 double=-6.974e-05 exp=1.000 PASS
+drift=0.25 seed=1 zero=+0.000e+00 neutral=+0.000e+00 plus=-5.007e-05 minus=+5.006e-05 double=-1.001e-04 exp=1.000 PASS
+drift=0.25 seed=2 zero=+0.000e+00 neutral=+0.000e+00 plus=-2.967e-05 minus=+2.966e-05 double=-5.934e-05 exp=1.000 PASS
+
+SAFE READ: bounded positive drift basin; verifier checks frozen rows only.
+SCORECARD PASS=9 FAIL=0
 
 ----- stderr -----
 

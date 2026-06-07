@@ -1,14 +1,14 @@
-===== runner cache v1 =====
-runner: scripts/generation_localization_corner_protected_delta_runner.py
-runner_sha256: dc7984c710bffd58aa49310161fb8c16d5f84bc136da8a9d190e3ef3d36dc9d2
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.14
-status: ok
------ stdout -----
 ==============================================================================
 GENERATION LOCALIZATION = momentum corners: J-I corner-protected; delta<0; |delta| IR  [class A]
 ==============================================================================
+
+-- (0) 2026-06-07 source bridge for periodic Vq / Hartree-Fock normalization --
+  [PASS] audit blocker names the missing periodic Vq/Hartree-Fock bridge
+  [PASS] target note cites the 2026-06-07 one-hop bridge note, runner, and cache
+  [PASS] bridge note proves the finite periodic boundary and normalization, not an external textbook import
+  [PASS] bridge runner exists and has a green cached output  (generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt)
+  [PASS] retained bounded mediator status is read from the ledger without widening it  (retained_bounded)
+  [PASS] generation-corner inputs remain retained or retained_bounded on the current ledger  (['retained', 'retained_bounded', 'retained'])
 
 -- (1) the three generation corners carry distinct joint translation characters --
   [PASS] the three hw=1 corners have three DISTINCT joint (T_x,T_y,T_z) sign characters (retained: translations separate the generations)  ((-1, 1, 1),(1, -1, 1),(1, 1, -1))
@@ -26,8 +26,5 @@ GENERATION LOCALIZATION = momentum corners: J-I corner-protected; delta<0; |delt
   [PASS] the q=0 monopole carries essentially all of |delta| (corner structure fixes the FORM and SIGN, the IR scale fixes the magnitude)  (Hartree fraction of |delta| = 1.00013)
 
 ==============================================================================
-TOTAL: PASS=7 FAIL=0
+TOTAL: PASS=13 FAIL=0
 VERDICT: the generation 'localization' is the retained momentum-corner structure (no spatial separation). The three corners' equal inter-transfer eps(Δk)=8 protects the exact C3 (J-I) form by cubic corner symmetry; the two-fermion mutual energy is delta<0 (sign re-confirmed from the momentum picture); and |delta| is dominated by the q=0 mediator monopole (~1/(N mu^2)) -- so the magnitude reduces to the mediator IR scale, NOT to the localization, and stays open (wide-window robust).
-
------ stderr -----
-

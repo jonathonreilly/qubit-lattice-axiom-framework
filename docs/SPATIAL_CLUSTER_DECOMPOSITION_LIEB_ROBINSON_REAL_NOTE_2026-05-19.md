@@ -1,6 +1,6 @@
 # Finite-Λ Lieb-Robinson Bound and Conditional Cluster-Decomposition Support
 
-**Date:** 2026-05-19; 2026-06-06 interaction-graph path-count repair.
+**Date:** 2026-05-19; 2026-06-06 interaction-graph path-count repair; 2026-06-06 inclusive-branching repair.
 **Status (source-side label):** bounded_theorem
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py`](../scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py)
@@ -118,16 +118,24 @@ commutator between two separated supports.
 
 Let `I_Lambda` be the finite set of local interaction supports `Z` with
 `h_Z != 0`. Define the interaction graph `G_I` on `I_Lambda` by joining two
-vertices `Z, Z'` when `Z ∩ Z' != empty`. Let
+distinct vertices `Z, Z'` when `Z ∩ Z' != empty`. For the chain count below,
+use the inclusive overlap degree
 
 ```text
-D_I := max_Z |{Z' in I_Lambda : Z' ∩ Z != empty, Z' != Z}|.
+D_I^+ := max_Z |{Z' in I_Lambda : Z' ∩ Z != empty}|.
 ```
 
-For the finite-range Wilson+staggered+on-site surface, `D_I` is finite. A
-coarse bound is `D_I <= s_max Z_max`, where
+The superscript `+` is load-bearing: repeated local terms are allowed in the
+nested-commutator expansion, so `Z_{i+1} = Z_i` must be counted. The older
+exclusive degree `max_Z |{Z' : Z' ∩ Z != empty, Z' != Z}|` is not used in the
+LR constants.
+
+For the finite-range Wilson+staggered+on-site surface, `D_I^+` is finite. A
+coarse bound is `D_I^+ <= s_max Z_max`, where
 `s_max := max_Z |Z| <= 4` for plaquettes/hops/on-site terms and
-`Z_max <= 19` is the number of local terms touching a site.
+`Z_max <= 19` is the number of local terms touching a site. This coarse bound
+counts `Z` itself and may overcount terms touching several sites of `Z`; it is
+chosen only to make the finite-volume constant explicit.
 
 For local supports `X,Y`, define an interaction chain of length `n` from `X`
 to `Y` as a sequence `(Z_1,...,Z_n)` such that
@@ -139,7 +147,7 @@ to `Y` as a sequence `(Z_1,...,Z_n)` such that
 Let `N_chain(n; X, Y)` be the number of such chains. Then
 
 ```text
-N_chain(n; X, Y) <= N_X D_I^(n-1),     N_X := |{Z : Z ∩ X != empty}| <= Z_max |X|.  (B.1)
+N_chain(n; X, Y) <= N_X (D_I^+)^(n-1),     N_X := |{Z : Z ∩ X != empty}| <= Z_max |X|.  (B.1)
 ```
 
 Also, if `R := dist_1(X,Y)` and every local term has `ell_1` diameter at most
@@ -150,7 +158,9 @@ n >= r := ceil(R / R_0).                                                   (B.2)
 ```
 
 **Proof.** There are at most `N_X` choices for `Z_1`. Once `Z_i` is fixed,
-there are at most `D_I` adjacent choices for `Z_{i+1}`. This proves (B.1).
+there are at most `D_I^+` overlap choices for `Z_{i+1}`, including the repeated
+choice `Z_{i+1}=Z_i`. This proves (B.1) for the full nested-commutator
+expansion rather than only for self-avoiding interaction paths.
 For (B.2), a chain of `n` overlapping local terms can advance the `ell_1`
 distance from `X` by at most `n R_0`: the first support intersects `X`, each
 successive support overlaps the previous one, and each support has diameter at
@@ -168,7 +178,7 @@ is sufficient for the finite-volume LR support theorem.
 `supp(B) subset Y`, and `R := dist_1(X,Y)`. Set
 
 ```text
-r := ceil(R / R_0),          lambda := 2 J D_I |t|.
+r := ceil(R / R_0),          lambda := 2 J D_I^+ |t|.
 ```
 
 Then for all `t in R`,
@@ -187,7 +197,7 @@ Equivalently, after the usual coarse light-cone packaging, there are finite
 constants
 
 ```text
-v_LR := 2 e J D_I R_0,          xi := R_0 / log 2,          C_0 := 4 Z_max,
+v_LR := 2 e J D_I^+ R_0,          xi := R_0 / log 2,          C_0 := 4 Z_max,
 ```
 
 such that in the strict spacelike region with the stated margin,
@@ -208,12 +218,12 @@ must contain a sequence of local terms whose consecutive supports overlap,
 starting at `X` and ending at `Y`. For each length-`n` chain the nested
 commutator norm is bounded by `(2J)^n ||A||`, and the final commutator with
 `B` contributes the factor `2||B||`. Lemma B gives at most
-`N_X D_I^(n-1) <= N_X D_I^n` chains and no chain can contribute for
+`N_X (D_I^+)^(n-1) <= N_X (D_I^+)^n` chains and no chain can contribute for
 `n < r`. Therefore
 
 ```text
 ||[A(t), B]||
-  <= 2 ||A|| ||B|| sum_{n >= r} |t|^n/n! (2J)^n N_X D_I^n
+  <= 2 ||A|| ||B|| sum_{n >= r} |t|^n/n! (2J)^n N_X (D_I^+)^n
   =  2 ||A|| ||B|| N_X sum_{n >= r} lambda^n/n!,
 ```
 
@@ -320,7 +330,7 @@ On a finite connected `Λ ⊂ Z³` with the canonical physical Cl(3) local algeb
 ‖[A(t), B]‖  ≤  C_0 · |X| · ‖A‖ ‖B‖ · exp(-(R - v_LR |t|) / ξ)             (LR)
 ```
 
-with `v_LR = 2 e J D_I R_0` and `ξ = R_0 / log 2`, where `J`, `D_I`, and
+with `v_LR = 2 e J D_I^+ R_0` and `ξ = R_0 / log 2`, where `J`, `D_I^+`, and
 `R_0` are the constants of §1 + Lemma B.
 
 **Proof:** §2 (Lemma A) + §3 (Lemma B) + §4 (Lemma C).
@@ -358,12 +368,13 @@ with `ξ_cluster = O(max(ξ, v_LR / Δ))`.
 
 The companion runner [`scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py`](../scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py) exhibits the load-bearing LR claim and bounded cluster-support checks numerically on real small lattice systems:
 
-- **V1–V4: Lieb-Robinson locality, nested-commutator, and commutator-spread checks on a 6-site spin-1/2 Heisenberg chain.** Real lattice, exact diagonalization, and explicitly bounded finite-system scope.
+- **V1–V4: Lieb-Robinson locality, nested-commutator norm, and commutator-spread checks on a 6-site spin-1/2 Heisenberg chain.** Real lattice, exact diagonalization, and explicitly bounded finite-system scope.
 - **V5: finite-N cluster-support fit on the same chain.** This is qualitative support only because the open Heisenberg chain is not a thermodynamic-limit gapped cluster theorem.
 - **V6–V7: Composition with PR #1577's SU(3) truncated character basis transfer matrix.** Verifies `Δ_T > 0` on the SU(3) transfer spectrum and exhibits the structural exponential sequence implied by the top two eigenvalues; V7 is not a direct connected-character-correlator measurement.
 - **V8: Anti-overclaim verification.** Confirms finite-Λ-only scope by showing that the extracted correlation length is Λ-dependent.
+- **V9: Inclusive branching guard.** Brute-forces repeated interaction chains on a minimal two-term graph and confirms that the exclusive-degree count fails while the inclusive `D_I^+` count holds; also checks a 1D bond graph against the inclusive bound.
 
-All eight verifications use only NumPy/SciPy and complete in under one minute on a laptop. PASS/FAIL with hard assertion gates is reported.
+All nine verifications use only NumPy/SciPy and complete in under one minute on a laptop. PASS/FAIL with hard assertion gates is reported.
 
 ---
 

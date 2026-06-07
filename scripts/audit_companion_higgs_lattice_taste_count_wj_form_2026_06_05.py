@@ -13,9 +13,11 @@ This bridge supplies the two inputs the ratio-note verdict flagged as
 
   Bridge (2) mean-field W(J) = log det(D + J):
     the finite Grassmann (Berezin) partition function Z_F[M] = det(M)
-    (retained Berezin rows) gives W(J) = log det(D + J). Under the explicit
-    bounded uniform paired-spectrum hypothesis +/- i a with a = 2 u_0, each pair contributes
-    det = (J + i a)(J - i a) = J^2 + 4 u_0^2, so
+    (retained Berezin rows) gives W(J) = log det(D + J). In the tadpole
+    mean-field taste block D_mf = i*u_0*sum_mu gamma_mu, the exact Clifford
+    identity D_taste^2 = 4I gives characteristic polynomial
+    (lambda^2 + 4*u_0^2)^2, i.e. two conjugate pairs +/- 2i*u_0. Each pair contributes
+    det = (J + 2i*u_0)(J - 2i*u_0) = J^2 + 4 u_0^2, so
     W(J) = (N_tot/2) log(J^2 + 4 u_0^2) and W''(0) = N_tot/(4 u_0^2).
     The general curvature identity d^2/dJ^2 log det(D+J) = -Tr[(D+J)^-2] holds
     for any invertible D and is checked numerically as well.
@@ -251,12 +253,11 @@ check("log det(D+J) = sum_k log lambda_k(D+J) (det = product of eigenvalues)", l
 
 
 # ============================================================================
-section("Part 3: Bridge (2b) — paired-spectrum determinant under bounded uniform hypothesis")
+section("Part 3: Bridge (2b) — paired-spectrum determinant algebra")
 # ============================================================================
 # A real source J*I shifts a paired block. The runner verifies the determinant
 # algebra for a pair and the real-antisymmetric conjugate-pair fact separately.
-# It treats the uniform a = 2 u_0 spectrum as the explicit bounded hypothesis,
-# not as a derivation of the actual mean-field operator spectrum.
+# Part 4 derives a = 2 u_0 for the actual tadpole mean-field taste block.
 J, u0, a = symbols("J u0 a", positive=True)
 pair_det = simplify((J + sym_I * a) * (J - sym_I * a))
 check(
@@ -269,7 +270,7 @@ check(
     simplify(pair_det.subs(a, 2 * u0) - (J**2 + 4 * u0**2)) == 0,
 )
 check(
-    "bounded paired-spectrum hypothesis is explicit: uniform a = 2 u_0 is supplied to Bridge (2)",
+    "paired determinant algebra awaits Part 4 spectrum derivation a = 2 u_0",
     True,
 )
 
@@ -301,10 +302,12 @@ check(
 
 
 # ============================================================================
-section("Part 4: Bridge (2b) — Clifford magnitude D_taste^2 = d I ⇒ a = 2 u_0")
+section("Part 4: Bridge (2b) — tadpole mean-field spectrum D_mf = i u_0 D_taste")
 # ============================================================================
 # Symmetric taste-Dirac element D_taste = sum_mu gamma_mu; cross terms cancel by
-# antisymmetry => D_taste^2 = (sum gamma_mu^2) = d I. |lambda_taste| = sqrt(d).
+# antisymmetry => D_taste^2 = (sum gamma_mu^2) = d I. Therefore the tadpole
+# mean-field anti-Hermitian block D_mf = i*u_0*D_taste has eigenvalues
+# +/- 2i*u_0, paired with multiplicity two in the 4x4 taste block.
 d = 4
 D_taste = zeros(4)
 for g in gammas:
@@ -317,6 +320,27 @@ check(
 check(
     "=> |lambda_taste| = sqrt(d) = 2; at mean-link u_0 the magnitude a = 2 u_0",
     sqrt(Rational(d)) == 2 and simplify(sqrt(Rational(d)) * u0 - 2 * u0) == 0,
+)
+D_mf = sym_I * u0 * D_taste
+lam = symbols("lambda")
+char_mf = sp.factor(D_mf.charpoly(lam).as_expr())
+expected_char_mf = (lam**2 + 4 * u0**2) ** 2
+check(
+    "D_mf = i u_0 D_taste has characteristic polynomial (lambda^2 + 4u_0^2)^2",
+    simplify(char_mf - expected_char_mf) == 0,
+    detail=f"char={char_mf}",
+)
+det_shifted_block = sp.factor((D_mf + J * I4).det())
+expected_det_shifted_block = (J**2 + 4 * u0**2) ** 2
+check(
+    "det(D_mf + J I_4) = (J^2 + 4u_0^2)^2: two identical conjugate pairs",
+    simplify(det_shifted_block - expected_det_shifted_block) == 0,
+    detail=f"det={det_shifted_block}",
+)
+check(
+    "the uniform +/-2i*u_0 mean-field spectrum is derived from the explicit Cl(4) block",
+    simplify(char_mf - expected_char_mf) == 0
+    and simplify(det_shifted_block - expected_det_shifted_block) == 0,
 )
 
 

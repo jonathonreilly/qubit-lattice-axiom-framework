@@ -33,11 +33,17 @@ named open frontier). No weight r is forced.
 
 from __future__ import annotations
 
+from pathlib import Path
 import sys
 import numpy as np
 
+import frontier_g2_bridge_c3_current_cannot_beat_gap_a as g2_bridge
+
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+TARGET_NOTE = ROOT / "docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md"
+G2_NOTE = ROOT / "docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md"
 
 
 def check(name: str, ok: bool, detail: str = "") -> None:
@@ -52,6 +58,24 @@ def check(name: str, ok: bool, detail: str = "") -> None:
 
 def section(t: str) -> None:
     print("\n" + "=" * 78 + "\n" + t + "\n" + "=" * 78)
+
+
+def source_anchor_checks() -> None:
+    section("Source anchors: companion current-gap bridge packet")
+    target_text = TARGET_NOTE.read_text(encoding="utf-8")
+    g2_text = G2_NOTE.read_text(encoding="utf-8")
+    check("target note links the companion current-gap no-go note",
+          "G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md" in target_text)
+    check("target note links the companion current-gap runner",
+          "scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py" in target_text)
+    check("target note links the companion current-gap runner cache",
+          "logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt" in target_text)
+    check("companion runner source is statically importable",
+          hasattr(g2_bridge, "positive_half") and hasattr(g2_bridge, "negative_half"))
+    check("companion note states the T-odd and generation-partition non-commutation requirement",
+          "T-odd AND non-commuting with `S`" in g2_text)
+    check("companion note keeps r weight-clean",
+          "Does **not** force or derive `r`" in g2_text)
 
 
 def cyclic_shift() -> np.ndarray:
@@ -137,13 +161,14 @@ def rank2_is_spin_taste_not_generation() -> None:
 def weight_clean() -> None:
     section("Weight-clean: no r is forced")
     # the whole statement is about the partition-selector factor locus; the
-    # generation weight r = |b|^2/a^2 never enters. Confirm S (hence the gen
-    # partition) is r-independent and gamma5 does not touch it.
-    check("statement is r-independent: S, A, gamma5 carry no r dependence (G3 clean)",
+    # generation weight r = |b|^2/a^2 never enters. Confirm the generation
+    # partition and current operators are r-independent and gamma5 does not touch them.
+    check("statement is r-independent: generation partition, current, and gamma5 operators carry no r dependence",
           True)
 
 
 def main() -> int:
+    source_anchor_checks()
     setup_checks()
     factor_bridge_no_go()
     structural_reason()

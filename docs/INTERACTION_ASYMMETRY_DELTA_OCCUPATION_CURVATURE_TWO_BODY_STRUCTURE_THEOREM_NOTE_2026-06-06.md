@@ -49,9 +49,21 @@ excitation count `hw`.
    `delta = w_pair` exactly: `delta` is carried by a genuine **connected two-body** coupling,
    and `delta = 0 ⟺ there is no two-body coupling`.
 
-3. **Forced sign law.** A native pair coupling `U * sum_{i<j} n_i n_j` sets `delta = U`
-   exactly and produces the `C3` coupling (the `J − I` form, all off-diagonals equal) with
-   `sign(|K|) = sign(delta) = sign(U)`.
+3. **Forced sign law in the no-resonance / weak-pair regime.** A native pair coupling
+   `U * sum_{i<j} n_i n_j` sets `delta = U` exactly. Schur elimination of the `hw=0`
+   and `hw=2` intermediates gives the off-diagonal generation-triplet coupling
+
+   ```text
+   K_off = t^2 * (1/eps - 1/(eps + U))
+         = t^2 * U / (eps * (eps + U)).
+   ```
+
+   Therefore, for `eps > 0` and `eps + U > 0` (equivalently the perturbative
+   no-resonance / weak-attraction window), `sign(K_off) = sign(delta) = sign(U)` and the
+   coupling has the `C3` (`J − I`) form with all off-diagonals equal. The sign claim is
+   **not** asserted across the denominator crossing `eps + U = 0`; beyond that boundary
+   the second-order eliminated formula changes sign and the restricted theorem must be read
+   as out of regime.
 
 4. **The one-body lattice realization of `delta` is a forbidden diagonal.** In momentum space
    `n_mu = (1 − cos k_mu)/2`, so the pair term `n_mu n_nu` carries
@@ -62,9 +74,10 @@ excitation count `hw`.
    `delta = 0`). `delta` is therefore a genuine **two-body / interaction** object, not a
    kinetic one.
 
-So `delta` (hence `|K|`) is not a hopping amplitude and not any one-body lattice energy: it is
-the **two-body occupation curvature**, sign-locked to the underlying pair coupling, and zero
-for the entire free single-hop sector.
+So `delta` (hence the off-diagonal `K` channel) is not a hopping amplitude and not any one-body
+lattice energy: it is the **two-body occupation curvature**, sign-locked to the underlying
+pair coupling in the explicit `eps > 0`, `eps + U > 0` no-resonance regime, and zero for the
+entire free single-hop sector.
 
 ## The genuine open piece (the route this opens)
 
@@ -86,8 +99,9 @@ survives the open `delta`.
 ## Boundary (honest)
 
 - **A structure result, not a value.** It establishes that `delta` is the two-body occupation
-  curvature with `sign(|K|) = sign(delta)` and that the free sector gives `delta = 0` to all
-  orders; it does **not** compute the sign or scale of `delta`.
+  curvature with `sign(K_off) = sign(delta)` only in the stated `eps > 0`, `eps + U > 0`
+  no-resonance regime, and that the free sector gives `delta = 0` to all orders; it does
+  **not** compute the sign or scale of `delta`.
 - **The all-orders statement is for the axis-separable single-hop model.** It is exact for
   `H = eps*N + t*sum_mu X_mu` and for any axis-additive one-body `H_0`. A genuine two-body
   term (the open object) is precisely what breaks the separability — that is the content of (2)
@@ -97,9 +111,13 @@ survives the open `delta`.
   on whether the three single-flip axes are read as spatial directions or as taste/momentum
   axes (the latter reading rests on the currently-`unaudited` BZ-corner surface and is not
   used here).
-- **Off-diagonal scope.** This note concerns the `C3` mixing coefficient `|K|` (off-diagonal,
+- **Off-diagonal scope.** This note concerns the `C3` mixing coefficient `K` (off-diagonal,
   `J − I`); the species **diagonal** (mass weights) is the separate retained
   `HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE`.
+- **Denominator boundary.** The exact Schur formula has denominators `eps` and `eps + U`.
+  This row assumes `eps > 0` and `eps + U > 0`. It does not claim a global sign law through
+  the resonance/level-crossing boundary where the eliminated second-order expression is no
+  longer in the weak-pair regime.
 
 ## What this is not (no-go hygiene on the (4) clause)
 
@@ -125,9 +143,10 @@ spectrum equals the `L`-fold per-axis sumset for `L = 3, 4, 5` (factorization �
 `delta = 0`), and the affine second-order shift reproduces the naive cancellation; (2) one-body
 occupation functionals have second difference `0` while the pair count `C(hw,2)` has second
 difference `+1`, and a pure pair term gives `delta = w_pair` exactly; (3) a native pair coupling
-`U` gives `sign(|K|) = sign(U)` with the exact `C3` (`J − I`) form; (4) the product-to-sum
-identity exhibiting the face-diagonal content. Expected `runner_check_breakdown = {A: N, B: 0,
-C: 0, D: 0, total_pass: N}`.
+`U` gives the exact formula `K_off = t^2 U/[eps(eps+U)]`, hence `sign(K_off)=sign(U)` only under
+`eps>0`, `eps+U>0`, with the exact `C3` (`J − I`) form; (4) the product-to-sum identity
+exhibiting the face-diagonal content. Expected `runner_check_breakdown = {A: N, B: 0, C: 0,
+D: 0, total_pass: N}`.
 
 ## Honest auditor read
 
@@ -136,10 +155,11 @@ so its energy is additive and the occupation curvature `delta = E_2 − 2E_1 + E
 all orders — strengthening the second-order cancellation to an all-orders statement and
 identifying `delta` as the discrete curvature of the energy in excitation number. The
 occupation-functional decomposition shows `delta` is carried by the pair count (second
-difference `+1`), so `delta` is irreducibly two-body and sign-locked to the pair coupling
-(`sign(|K|) = sign(delta)`). The one-body realization of the pair term is a next-nearest
-(face-diagonal) hop forbidden by the 6-NN lattice axiom, so `delta` is a genuine two-body
-object. The result is a **structure + sign-law** localization of `delta`, not a value: the
+difference `+1`), so `delta` is irreducibly two-body. The sign law is the checked Schur formula
+`K_off=t^2 U/[eps(eps+U)]`, restricted to `eps>0`, `eps+U>0`; the old unrestricted sign-lock
+wording is not part of the theorem. The one-body realization of the pair term is a next-nearest
+(face-diagonal) hop forbidden by the 6-NN lattice axiom, so `delta` is a genuine two-body object.
+The result is a **structure + regime-scoped sign-law** localization of `delta`, not a value: the
 precise sign/scale reduces to the retained two-body mediator channel, named open. Effective
 status remains `unaudited`.
 

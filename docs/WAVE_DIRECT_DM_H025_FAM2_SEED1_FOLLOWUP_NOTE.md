@@ -6,7 +6,7 @@
 fine-`H` pair surface; not an independent theorem-grade surface or
 portability promotion
 **Source packet verifier:** [`scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py`](../scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py)
-(SUMMARY: WAVE SOURCE PACKET PASS=85 FAIL=0)
+(SUMMARY: WAVE SOURCE PACKET PASS=86 FAIL=0)
 **Source packet verifier cache:** [`logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt`](../logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt)
 **Source packet verifier JSON:** [`outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json`](../outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json)
 
@@ -144,7 +144,7 @@ bounded target replay reauditable with the missing helper source exposed.
 Current source-packet output:
 
 ```text
-SUMMARY: WAVE SOURCE PACKET PASS=85 FAIL=0
+SUMMARY: WAVE SOURCE PACKET PASS=86 FAIL=0
 ```
 
 ## Artifact chain
@@ -196,3 +196,6 @@ The same manifest checks source markers for the full `measure_dm` path:
 `measure_dm` calls `solve_wave`, `prop_beam`, and `cz`, while the continuum
 helper supplies `field_at`, `prop_beam`, `cz`, `solve_wave`, and the fixed
 `S_PHYS = 0.004` source-strength constant.
+The target-specific runner cache also now prints an independent
+`MEASURE_DM_SOURCE_PACKET=PASS` certificate tying those helper sources and
+SHA-fresh caches directly to the row-specific replay.

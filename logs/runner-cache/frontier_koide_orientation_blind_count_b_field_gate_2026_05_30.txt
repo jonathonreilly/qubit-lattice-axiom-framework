@@ -1,16 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_orientation_blind_count_b_field_gate_2026_05_30.py
-runner_sha256: f9d20252b288d86fe8074edaa8dbf0bb8d803774a821deb07f9f339c1e4b923a
+runner_sha256: 6340622af5826705f63ac9916d5d7a1245a7d600ba7100573bd077167d133547
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 
 ================================================================================
 Note scope
 ================================================================================
-[PASS] note contains marker: **Claim type:** open_gate
+[PASS] note contains marker: **Claim type:** bounded_theorem / open_gate
+[PASS] note contains marker: 2026-06-07 Boundary Retargeting
+[PASS] note contains marker: remains open and is not load-bearing for the direct local-support claim
 [PASS] note contains marker: B-coupling -> B-field bridge open
 [PASS] note contains marker: does not derive the charged-lepton Koide value
 [PASS] note contains marker: does not approve
@@ -69,8 +71,8 @@ Kähler-Dirac form-degree block gate
 [PASS] Lambda^1 subspace has dimension three  --  [3, 5, 6]
 [PASS] D_KD Lambda^1 -> Lambda^1 block is zero  --  max=0.000e+00
 
-TOTAL: PASS=34 FAIL=0
-VERDICT: orientation-blind count and B-field gate checks pass; the B-coupling to B-field bridge remains open.
+TOTAL: PASS=36 FAIL=0
+VERDICT: bounded orientation-blind count and B-field local gate checks pass; the B-coupling to B-field bridge remains open.
 
 ----- stderr -----
 

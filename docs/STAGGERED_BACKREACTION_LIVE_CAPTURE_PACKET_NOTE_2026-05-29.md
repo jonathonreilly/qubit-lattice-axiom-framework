@@ -48,6 +48,9 @@ harness and its transitive helpers contain load-bearing source markers such as
 `_source_density`, `_solve_phi`, `_build_hamiltonian`, and `_force_from_phi`,
 and that all listed caches are SHA-fresh. This does not set an audit verdict; it
 makes the bounded packet reauditable with the missing helper source exposed.
+The primary packet checker now also prints `PROTOTYPE_SOURCE_PACKET` and checks
+the prototype helper's untruncated source markers and SHA-fresh cache directly
+inside the primary stdout packet.
 
 ## Live Finite Result
 

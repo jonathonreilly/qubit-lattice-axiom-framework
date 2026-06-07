@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/FIFTH_FAMILY_RADIAL_BASIN.py
-runner_sha256: 799d94b9efee36d506841184403adb9e1d75f2af7e11321d28c88ba30da3b038
+runner_sha256: 3448b5eb09d03c3342bc6b9e5a985e52423fa8d0744406c8b90aadae2eed5bcc
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 89.33
+elapsed_sec: 89.37
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -32,6 +32,15 @@ SAFE READ
   mean exponent among passes: 0.999495
   this radial-shell family is a real bounded basin, but not family-wide
   [PASS (C)] finite basin assertion surface
+
+COMPANION PACKET MANIFEST
+  sweep: source=scripts/FIFTH_FAMILY_RADIAL_SWEEP.py sha256=6a0612d0b4142b1a7a46eaf79ed112751538cdce10b2286b294c1c6b283bafec
+  sweep: cache=logs/runner-cache/FIFTH_FAMILY_RADIAL_SWEEP.txt sha256=454469b5a40254b5bd9d5283c39a9d821d1e09b4bced976cb49f3ddb119359c2 status_ok=True
+  failure_audit: source=scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py sha256=24049e4a08a30737e04ee692f9f8bb232ea1081bdcd143f34aa5cceb97ec2335
+  failure_audit: cache=logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt sha256=a4bac38c958ba554d04e66d171cb3ce3c8e5b29805c8febd1735ca00a4127fe4 status_ok=True
+  fm_transfer: source=scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py sha256=0d985aaae5709fc8163991fd7a542f329fcbbe309211d51dfe27337f0d76af71
+  fm_transfer: cache=logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt sha256=29b0905e4029ab103e69c869391c0ae9c55b92103bd6c60c8076d3ab4ba6263d status_ok=True
+COMPANION_PACKET: PASS
 ASSERTIONS: PASS
 
 ----- stderr -----

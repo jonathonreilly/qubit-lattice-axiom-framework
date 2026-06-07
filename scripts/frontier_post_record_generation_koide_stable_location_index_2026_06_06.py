@@ -7,16 +7,16 @@ from collections import Counter, defaultdict
 from fractions import Fraction
 from pathlib import Path
 import hashlib
-import importlib.util
 import json
 import re
 import sys
 
+import frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06 as stable
+import frontier_post_record_selector_dial_bucket_subdivision_2026_06_06 as selector
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-SELECTOR_RUNNER = ROOT / "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
-STABLE_RUNNER = ROOT / "scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py"
+SLICE = ROOT / "outputs/post_record_generation_koide_stable_location_index_slice_2026_06_07.json"
 PASS = 0
 FAIL = 0
 
@@ -53,10 +53,10 @@ SELECTOR_SURFACE_RE = re.compile(
 
 EXPECTED_SELECTOR_CLASSES = {
     "generation_structure_location": 5,
-    "koide_value_or_phase_location": 47,
-    "measure_weight_or_source_location": 2,
-    "obstruction_or_open_gate": 38,
-    "other_generation_koide_location": 2,
+    "koide_value_or_phase_location": 49,
+    "measure_weight_or_source_location": 3,
+    "obstruction_or_open_gate": 39,
+    "other_generation_koide_location": 1,
     "readout_carrier_or_record_location": 3,
     "selector_surface_location": 5,
 }
@@ -66,20 +66,9 @@ EXPECTED_STABLE_FEATURE_IDS = {
     "koide_records_objectivity_conditional_note_2026-05-31",
     "stable_post_record_dial_location_certificate_2026-06-06",
 }
-
-
-def load_module(name: str, path: Path):
-    spec = importlib.util.spec_from_file_location(name, path)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot load {path}")
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[name] = module
-    spec.loader.exec_module(module)
-    return module
-
-
-selector = load_module("selector_dial_subdivision", SELECTOR_RUNNER)
-stable = load_module("flow_thermal_stable_setting", STABLE_RUNNER)
+EXPECTED_SELECTOR_ROWS = sum(EXPECTED_SELECTOR_CLASSES.values())
+EXPECTED_STABLE_FEATURE_ROWS = len(EXPECTED_STABLE_FEATURE_IDS)
+EXPECTED_INDEX_ROWS = EXPECTED_SELECTOR_ROWS + EXPECTED_STABLE_FEATURE_ROWS
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -203,14 +192,15 @@ def source_anchor_checks() -> None:
         [
             "stable-location index",
             "It is not a selected dial.",
-            "Total generation/Koide dial-relevant rows indexed here: `106`.",
+            "Total generation/Koide dial-relevant rows indexed here: `109`.",
             "Does not select or force a generation/Koide dial location.",
+            "outputs/post_record_generation_koide_stable_location_index_slice_2026_06_07.json",
         ],
     )
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "`koide_or_generation_selector` | 102",
+            "`koide_or_generation_selector` | 105",
             "Does not turn stable settings into selected dials.",
             "Does not select or force a generation/Koide dial location.",
         ],
@@ -240,11 +230,27 @@ def source_anchor_checks() -> None:
         ],
     )
     require_text(
+        "docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md",
+        [
+            "is an exact stable setting",
+            "not forced by Lattice",
+            "selection of the record partition",
+        ],
+    )
+    require_text(
         "docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md",
         [
             "equal-block `(1,1)` weighting",
             "records/objectivity maximization principle",
             "not an unconditional",
+        ],
+    )
+    require_text(
+        "docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md",
+        [
+            "stable post-record equal-letter location",
+            "It is not forced by the Record axiom",
+            "not a physical dial-value theorem",
         ],
     )
 
@@ -293,14 +299,14 @@ def row_checks() -> tuple[list[dict], list[dict], Counter[str]]:
         buckets[selector_location_class(row)].append(row)
     counts = Counter({bucket: len(items) for bucket, items in buckets.items()})
 
-    report("Koide/generation selector row count is current snapshot", len(selector_rows) == 102, str(len(selector_rows)))
+    report("Koide/generation selector row count is current snapshot", len(selector_rows) == EXPECTED_SELECTOR_ROWS, str(len(selector_rows)))
     report("selector location counts match expected", dict(counts) == EXPECTED_SELECTOR_CLASSES, str(counts))
     report("selector location counts sum to selector rows", sum(counts.values()) == len(selector_rows), str(counts))
 
     stable_ids = {row.get("claim_id") for row in stable_rows}
-    report("generation/Koide stable-feature row count is current snapshot", len(stable_rows) == 4, str(stable_ids))
+    report("generation/Koide stable-feature row count is current snapshot", len(stable_rows) == EXPECTED_STABLE_FEATURE_ROWS, str(stable_ids))
     report("generation/Koide stable-feature ids match", stable_ids == EXPECTED_STABLE_FEATURE_IDS, str(stable_ids))
-    report("combined generation/Koide dial-relevant index has 106 rows", len(selector_rows) + len(stable_rows) == 106)
+    report("combined generation/Koide dial-relevant index has 109 rows", len(selector_rows) + len(stable_rows) == EXPECTED_INDEX_ROWS)
     report("stable-feature rows are disjoint from selector rows", stable_ids.isdisjoint({row.get("claim_id") for row in selector_rows}))
 
     representatives = {
@@ -342,7 +348,67 @@ def row_checks() -> tuple[list[dict], list[dict], Counter[str]]:
             + f"{row.get('effective_status')} | {row.get('claim_type')} | "
             + f"{row.get('note_path')}"
         )
+    export_checks(buckets, stable_rows, counts, before)
     return selector_rows, stable_rows, counts
+
+
+def selector_export_row(row: dict, lane: str) -> dict:
+    return {
+        "claim_id": row.get("claim_id"),
+        "audit_status": row.get("audit_status"),
+        "effective_status": row.get("effective_status"),
+        "claim_type": row.get("claim_type"),
+        "note_path": row.get("note_path"),
+        "runner_path": row.get("runner_path"),
+        "index_source": "koide_or_generation_selector",
+        "selector_location_class": lane,
+    }
+
+
+def stable_export_row(row: dict) -> dict:
+    return {
+        "claim_id": row.get("claim_id"),
+        "audit_status": row.get("audit_status"),
+        "effective_status": row.get("effective_status"),
+        "claim_type": row.get("claim_type"),
+        "note_path": row.get("note_path"),
+        "runner_path": row.get("runner_path"),
+        "index_source": "generation_or_koide_stable_feature",
+        "selector_location_class": "generation_or_koide_stable_feature",
+    }
+
+
+def expected_export_rows(buckets: dict[str, list[dict]], stable_rows: list[dict]) -> list[dict]:
+    exported: list[dict] = []
+    for lane in sorted(buckets):
+        for row in sorted(buckets[lane], key=lambda item: item.get("claim_id") or ""):
+            exported.append(selector_export_row(row, lane))
+    for row in sorted(stable_rows, key=lambda item: item.get("claim_id") or ""):
+        exported.append(stable_export_row(row))
+    return exported
+
+
+def export_checks(
+    buckets: dict[str, list[dict]],
+    stable_rows: list[dict],
+    counts: Counter[str],
+    ledger_sha: str,
+) -> None:
+    section("Bounded ledger-row export checks")
+    report("bounded generation/Koide index export exists", SLICE.exists(), str(SLICE.relative_to(ROOT)))
+    if not SLICE.exists():
+        return
+
+    data = json.loads(SLICE.read_text(encoding="utf-8"))
+    expected_rows = expected_export_rows(buckets, stable_rows)
+    report("slice export is for the generation/Koide stable-location index", data.get("bucket") == "generation_koide_stable_location_index")
+    report("slice export records current ledger sha", data.get("ledger_sha256") == ledger_sha, data.get("ledger_sha256", ""))
+    report("slice export selector row count matches current split", data.get("selector_row_count") == EXPECTED_SELECTOR_ROWS, str(data.get("selector_row_count")))
+    report("slice export stable-feature row count matches current split", data.get("stable_feature_row_count") == EXPECTED_STABLE_FEATURE_ROWS, str(data.get("stable_feature_row_count")))
+    report("slice export total row count matches current split", data.get("row_count") == EXPECTED_INDEX_ROWS, str(data.get("row_count")))
+    report("slice export selector class counts match current split", data.get("selector_class_counts") == dict(counts), str(data.get("selector_class_counts")))
+    report("slice export stable-feature ids match current split", set(data.get("stable_feature_ids", [])) == EXPECTED_STABLE_FEATURE_IDS, str(data.get("stable_feature_ids")))
+    report("slice export rows match independently enumerated regex split", data.get("rows") == expected_rows)
 
 
 def firewall_checks() -> None:

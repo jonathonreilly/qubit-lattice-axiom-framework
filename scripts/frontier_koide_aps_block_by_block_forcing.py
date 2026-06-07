@@ -1,23 +1,21 @@
 """
-APS eta = 2/9 block-by-block support verification for the conditional
-ambient topological route behind the Brannen phase.
+C3 local-density boundary verification for the Koide APS support row.
 
-
-
-Verifies that, with p=3 and tangent weights (1,2) supplied by the
-fixed-locus bridge, the APS arithmetic closes to eta = 2/9 conditional on
-ABSS fixed-point applicability on the global PL S^3 x R route. This runner
-does not prove the global Cl(3)/Z^3 -> PL S^3 x R bridge and does not prove
-the physical Brannen-phase identification.
+Verifies that the current source row is scoped to the bounded local-density
+manifest the framework can carry now: p=3 and tangent weights (1,2) are
+supplied by the retained-bounded fixed-locus bridge, and the exact local
+fixed-point density arithmetic closes to 2/9. The global Cl(3)/Z^3 -> PL S^3 x
+R bridge, global ABSS applicability, and physical Brannen-phase identification
+remain outside the direct claim.
 
 The derivation chain:
   (a) Source-supplied C_3[111] route: rotation by 2pi/3 about
       (1,1,1)/sqrt(3) body-diagonal (fixed-locus bridge).
-  (b) Conditional topology input: PL S^3 x R route.
+  (b) Source-boundary check: global PL/ABSS route is not load-bearing here.
   (c) Fixed locus of C_3 action on R^3: the body-diagonal line.
   (d) Tangent representation at fixed locus: eigenvalues (omega, omega^2)
       on the transverse plane, giving weights (1, 2) mod 3.
-  (e) Atiyah-Bott-Segal-Singer equivariant fixed-point formula:
+  (e) Local Lefschetz / fixed-point density formula:
       eta = (1/p) * sum_{k=1}^{p-1} 1 / ((zeta^{k*a}-1)(zeta^{k*b}-1))
   (f) Core algebraic identity: (zeta-1)(zeta^2-1) = 3 for zeta = primitive
       cube root of unity.
@@ -29,9 +27,15 @@ For each step, verify:
     (p, a, b) data leave no internal arithmetic choice.
 """
 import sympy as sp
-import math
+import json
+from pathlib import Path
 
 sp.init_printing()
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md"
+LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
+FIXED_LOCUS_ID = "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
 
 PASS = 0
 FAIL = 0
@@ -46,6 +50,74 @@ def ok(name, cond, detail=""):
     else:
         FAIL += 1
         log.append(f"  [FAIL] {name}: {detail}")
+
+
+def _walk_ledger(node):
+    if isinstance(node, dict):
+        yield node
+        for value in node.values():
+            yield from _walk_ledger(value)
+    elif isinstance(node, list):
+        for value in node:
+            yield from _walk_ledger(value)
+
+
+def ledger_row(claim_id):
+    ledger = json.loads(LEDGER.read_text())
+    for row in _walk_ledger(ledger):
+        if row.get("claim_id") == claim_id or row.get("id") == claim_id:
+            return row
+    return {}
+
+
+note_text = NOTE.read_text()
+fixed_locus_row = ledger_row(FIXED_LOCUS_ID)
+
+# ==========================================================================
+# (0) Source boundary: local-density manifest, not global ABSS closure
+# ==========================================================================
+
+log.append("=== (0) source-boundary checks ===")
+
+ok("0a. note carries the 2026-06-07 local-density retargeting section",
+   "2026-06-07 Local-Density Boundary Retargeting" in note_text,
+   "retargeting section present")
+
+ok("0b. direct status is bounded local-density manifest",
+   "bounded local-density manifest" in note_text,
+   "source status names the bounded direct target")
+
+ok("0c. global PL/ABSS route is explicitly not load-bearing",
+   "global `Cl(3)/Z³ → PL S³ × ℝ` / ABSS route is **not** a" in note_text
+   and "load-bearing premise of this row" in note_text,
+   "global route excluded from direct proof load")
+
+ok("0d. fixed-locus bridge is ledger retained_bounded",
+   fixed_locus_row.get("effective_status") == "retained_bounded",
+   f"effective_status={fixed_locus_row.get('effective_status')}")
+
+fixed_locus_scope = fixed_locus_row.get("claim_scope", "")
+ok("0e. fixed-locus bridge scope names C3 weights and local density only",
+   "transverse weights (1,2)" in fixed_locus_scope
+   and "local" in fixed_locus_scope
+   and "PL S^3 x R identification" in fixed_locus_scope
+   and "not audited as claims" in fixed_locus_scope,
+   "fixed-locus row is the bounded A/B supplier, not the global bridge")
+
+ok("0f. note names global topology and physical readout as out of scope",
+   "not claimed here:** global PL S³ compactification" in note_text
+   and "physical selected-line readout" in note_text,
+   "remaining blockers remain outside this row")
+
+source_boundary_ok = (
+    "2026-06-07 Local-Density Boundary Retargeting" in note_text
+    and "bounded local-density manifest" in note_text
+    and "global `Cl(3)/Z³ → PL S³ × ℝ` / ABSS route is **not** a" in note_text
+    and "load-bearing premise of this row" in note_text
+    and fixed_locus_row.get("effective_status") == "retained_bounded"
+    and "transverse weights (1,2)" in fixed_locus_scope
+    and "PL S^3 x R identification" in fixed_locus_scope
+)
 
 
 # ==========================================================================
@@ -249,13 +321,12 @@ ok("d3. (a, b) consistent with transverse eigenvalues = {(1,2), (2,1)} only",
    f"consistent = {consistent}")
 
 # ==========================================================================
-# (e) ABSS equivariant fixed-point formula
+# (e) Local Lefschetz / fixed-point density formula
 # ==========================================================================
 
-log.append("\n=== (e) ABSS equivariant fixed-point formula ===")
+log.append("\n=== (e) Local Lefschetz / fixed-point density formula ===")
 
-# ABSS formula for APS eta on Z_p orbifold with weights (a, b) at isolated
-# codim-2 fixed point:
+# Local fixed-point density formula for Z_p weights (a, b):
 #   eta = (1/p) * sum_{k=1}^{p-1} 1 / ((zeta^{k*a} - 1) * (zeta^{k*b} - 1))
 # where zeta = primitive p-th root of unity.
 
@@ -289,7 +360,7 @@ def abss_eta(a_weight, b_weight, p=3):
 
 
 eta_12 = abss_eta(1, 2, 3)
-ok("e1. ABSS eta(a=1, b=2, p=3) = 2/9",
+ok("e1. local density(a=1, b=2, p=3) = 2/9",
    sp.simplify(eta_12 - sp.Rational(2, 9)) == 0,
    f"eta = {eta_12}")
 
@@ -378,11 +449,12 @@ ok("g2. Alternative p in {2, 5, 7} give DIFFERENT eta; p=3 is the fixed-locus ch
    f"eta(2,1,1)={eta_p2}, eta(5,1,4)={eta_p5}, eta(7,1,6)={eta_p7}")
 
 # ==========================================================================
-# (h) ABSS prerequisite support inside the conditional global route: each prerequisite
-#     converted to an executable symbolic/numerical check rather than a literal True.
+# (h) ABSS prerequisite diagnostics inside the conditional global route: each
+#     prerequisite converted to an executable symbolic/numerical check rather
+#     than a literal True. These diagnostics are not part of the direct claim.
 # ==========================================================================
 
-log.append("\n=== (h) ABSS prerequisite checks under conditional global route ===")
+log.append("\n=== (h) ABSS prerequisite diagnostics outside direct claim ===")
 
 # h1. Smoothability: PL smoothing obstruction for a PL n-manifold lives in
 #     H^{i+1}(M; pi_i(PL/O)). For dim(M) <= 6, all relevant pi_i(PL/O) vanish
@@ -477,7 +549,7 @@ h2_ok = basis_at_e.rank() == 3 and H_S3[1] == "0"
 h3_ok = sp.simplify(det_normal_minus_I - 3) == 0
 h4_ok = (sp.simplify(q_norm_sq - 1) == 0
          and sp.simplify(q_cube[0] + 1) == 0)
-ok("h5. ABSS prerequisites (h1)∧(h2)∧(h3)∧(h4) all verified executively",
+ok("h5. diagnostic ABSS prerequisites (h1)∧(h2)∧(h3)∧(h4) all verified executively",
    h1_ok and h2_ok and h3_ok and h4_ok,
    f"h1={h1_ok}, h2={h2_ok}, h3={h3_ok}, h4={h4_ok}")
 
@@ -514,12 +586,13 @@ ok("i2. Among p in {2..7}, only p=3 with weights (1, 2) gives eta = 2/9",
    len(match_2_9) == 1 and match_2_9[0][0] == 3,
    f"matches = {match_2_9}")
 
-# Final composite: eta = 2/9 is fixed, given the source-supplied C_3 kinematics,
-# the tangent-rep weights, the ABSS applicability check (h-block above),
-# and the exact core algebraic identity (f-block above).
+# Final composite: the local density 2/9 is fixed by the source-supplied C_3
+# kinematics, tangent-rep weights, source boundary, and exact core algebraic
+# identity. The ABSS diagnostics are intentionally not load-bearing here.
 composite_certificate_ok = (
-    # (a-b) Stipulated C_3 route identified eigenvalues
-    sp.simplify(char_poly - (1 - lam**3)) == 0
+    source_boundary_ok
+    # (a-b) Source-supplied C_3 route identified eigenvalues
+    and sp.simplify(char_poly - (1 - lam**3)) == 0
     # (c) Fixed locus structure
     and M_rank == 2
     # (d) Tangent weights forced
@@ -529,21 +602,19 @@ composite_certificate_ok = (
     and sp.simplify(core_id - 3) == 0
     # (g) Alternative (p, a, b) give different eta
     and different_from_2_9
-    # (h) ABSS prerequisites verified
-    and h1_ok and h2_ok and h3_ok and h4_ok
     # (i) All consistent combinations give 2/9
     and all(sp.simplify(v - sp.Rational(2, 9)) == 0 for v in all_eta_values)
 )
-ok("i3. COMPOSITE: ambient APS eta = 2/9 follows inside the fixed-locus-plus-conditional-ABSS support chain",
+ok("i3. COMPOSITE: bounded C3 local-density manifest closes at 2/9",
    composite_certificate_ok,
-   "chain (a)->(b)->(c)->(d)->(e)->(f)->(g)->(h)->(i) is internally consistent with fixed-locus data plus conditional global ABSS")
+   "source boundary plus chain (a)->(c)->(d)->(e)->(f)->(g)->(i) closes local density without global PL/ABSS")
 
 # ==========================================================================
 # Summary
 # ==========================================================================
 
 print("=" * 72)
-print("APS ETA = 2/9 BLOCK-BY-BLOCK CONDITIONAL SUPPORT CHAIN")
+print("C3 LOCAL-DENSITY 2/9 BOUNDED SUPPORT MANIFEST")
 print("=" * 72)
 for line in log:
     print(line)
@@ -552,24 +623,21 @@ print(f"Total: {PASS} PASS, {FAIL} FAIL")
 print()
 print("Verdict:")
 if FAIL == 0:
-    print("  Given fixed-locus p=3 and weights (1,2), plus conditional ABSS applicability")
-    print("  on the PL S^3 x R route, each algebraic block of the ambient")
-    print("  APS eta = 2/9 derivation is executable and structurally fixed:")
+    print("  Given the ledger-retained-bounded fixed-locus bridge, the direct")
+    print("  source claim now closes only the bounded C3 local-density manifest:")
     print()
     print("    C_3[111] rotation    = 2pi/3 body-diagonal [fixed-locus bridge]")
     print("    eigenvalues          = (1, omega, omega^2) [fixed by rotation order]")
     print("    fixed locus          = body-diagonal (codim-2 on S^3)")
     print("    tangent weights      = (1, 2) mod 3 [from eigenvalues]")
-    print("    ABSS prerequisites   = spin + Morse-Bott + compact checks")
+    print("    ABSS prerequisites   = diagnostic-only, not direct claim load")
     print("    core identity        = (omega-1)(omega^2-1) = 3 [exact algebra]")
-    print("    result eta           = 2/9 [unique computation]")
+    print("    local density        = 2/9 [unique computation]")
     print()
-    print("  No alternative construction gives a different ambient eta under")
-    print("  the fixed-locus data plus conditional global ABSS input. What remains open is the global")
-    print("  topological/ABSS bridge and the physical-observable bridge")
-    print("  identifying the selected-line Brannen phase with this ambient invariant.")
+    print("  The global topological/ABSS bridge and physical selected-line readout")
+    print("  remain named open bridges outside this row's direct target.")
     print()
-    print("  APS_ETA_2_9_CONDITIONAL_SUPPORT_CHAIN=TRUE")
+    print("  C3_LOCAL_DENSITY_2_9_BOUNDED_SUPPORT_MANIFEST=TRUE")
 else:
     print(f"  {FAIL} checks failed.")
-    print("  APS_ETA_2_9_CONDITIONAL_SUPPORT_CHAIN=PARTIAL")
+    print("  C3_LOCAL_DENSITY_2_9_BOUNDED_SUPPORT_MANIFEST=PARTIAL")

@@ -2,14 +2,16 @@
 
 **Date:** 2026-06-06
 **Type:** bounded support / finite supplied-normalization witness
-**Claim type:** methodology / bounded theorem
-**Status:** bounded-support branch-local for supplied finite
+**Claim type:** bounded_theorem
+**Status:** bounded-support source-side for supplied finite
 character/path/channel normalization; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py`](../scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.txt)
+**Bounded row export:**
+[`outputs/post_record_character_path_channel_weight_slice_2026_06_07.json`](../outputs/post_record_character_path_channel_weight_slice_2026_06_07.json)
 
 ## Result
 
@@ -24,7 +26,7 @@ supplied finite carrier of paths, characters, or channels
   => normalized finite path/channel/character weight packet
 ```
 
-The prototype covers all `9` `character_path_channel_weight` rows from the
+The prototype covers all `10` `character_path_channel_weight` rows from the
 measure/weight subdivision.
 
 ## Meaning
@@ -82,7 +84,8 @@ The runner verifies:
 - finite supplied channel weights normalize to row-stochastic rows;
 - path product weights compose exactly under supplied edge weights;
 - finite supplied character coefficients normalize to a positive packet;
-- the `9` `character_path_channel_weight` rows are present;
+- bounded ledger-row export exists for the selected character/path/channel rows;
+- the `10` `character_path_channel_weight` rows are present;
 - the audit ledger hash is unchanged after the scan;
 - no audit verdict, audit-data write, retained/promoted claim,
   physical-measure selection, generated path rule, generation/Koide selection,

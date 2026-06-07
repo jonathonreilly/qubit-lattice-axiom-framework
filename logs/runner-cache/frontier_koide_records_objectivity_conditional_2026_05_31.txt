@@ -1,15 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py
-runner_sha256: 7605f3fc333c72dca65c8ef1d0e15b3fc1b277d987a162794dac0784c82cff3d
+runner_sha256: f1c578ead289c848170c500ee3ee6cb1bc7c4c3ee97c5e2657ba7bf0a3d96c24
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 
 ========================================================================================
 Koide r=1/2 is a CONDITIONAL (equal-block metric + objectivity-max), not forced
 ========================================================================================
+
+========================================================================================
+F0 - Record-era source boundary
+========================================================================================
+[PASS] F0.1 note records the 2026-06-07 Record-era source boundary
+[PASS] F0.2 note keeps equal-block metric and objectivity selector as two named inputs
+[PASS] F0.3 Record axiom is not cited as selecting the sector measure
+[PASS] F0.4 source-bounded conditional certificate is the stated audit target
 
 ========================================================================================
 F1 — general 2-block capacity extremum r* = w_p/(2 w_s) (weight, not pointer)
@@ -52,7 +60,7 @@ F5 — both conditional hypotheses are unforced
 ========================================================================================
 SUMMARY
 ========================================================================================
-  9/9 checks passed
+  13/13 checks passed
 
   THE HONEST RESULT: Q=2/3 is a CONDITIONAL, not a forced theorem.
     GIVEN (i) equal-block (1,1) metric AND (ii) objectivity-MAXIMIZATION,

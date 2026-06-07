@@ -1,14 +1,14 @@
 {
   "boundary": {
-    "actual_status": "exact-support"
+    "actual_status": "bounded-support"
   },
   "exponential_chart": {
     "exponential_chart": "R_h=exp(h epsilon - log E exp(h epsilon))"
   },
   "summary": {
-    "actual_current_surface_status": "exact-support",
+    "actual_current_surface_status": "bounded-support",
     "fail": 0,
-    "pass": 38,
+    "pass": 44,
     "proposal_allowed": false,
     "trace_class": "direct_blocker_closure_candidate"
   },

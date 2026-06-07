@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py
-runner_sha256: 59afb45eb5bffcd74e63f54cd87678cc02554bb500432028f4335e68d963905b
+runner_sha256: 330cc9eca4b4553b03705e192381f9d9f73d6f8bac9c5a48d6fcde78334c3213
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 ==============================================================================

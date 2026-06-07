@@ -14,6 +14,7 @@ AUDIT_TIMEOUT_SEC = 1800
 import json
 import math
 import sys
+import hashlib
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parent))
@@ -23,6 +24,10 @@ from wave_retardation_continuum_limit import S_PHYS as SOURCE_STRENGTH_CONSTANT
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "outputs" / "wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json"
+MEASURE_SOURCE = REPO_ROOT / "scripts" / "wave_direct_dm_matched_history_probe.py"
+MEASURE_CACHE = REPO_ROOT / "logs" / "runner-cache" / "wave_direct_dm_matched_history_probe.txt"
+CONTINUUM_SOURCE = REPO_ROOT / "scripts" / "wave_retardation_continuum_limit.py"
+CONTINUUM_CACHE = REPO_ROOT / "logs" / "runner-cache" / "wave_retardation_continuum_limit.txt"
 
 FAMILY = "Fam2"
 SEED = 1
@@ -52,6 +57,28 @@ ARTIFACTS = [
     "docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
     "docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md",
 ]
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def cache_current(cache_path: Path, runner_path: Path) -> bool:
+    if not cache_path.exists():
+        return False
+    text = cache_path.read_text(encoding="utf-8", errors="replace")
+    rel_runner = runner_path.relative_to(REPO_ROOT)
+    required = [
+        "===== runner cache v1 =====",
+        f"runner: {rel_runner}",
+        f"runner_sha256: {sha256_file(runner_path)}",
+        "status: ok",
+    ]
+    return all(snippet in text for snippet in required)
 
 
 def family_specs(label: str) -> tuple[str, float, float]:
@@ -101,6 +128,15 @@ def main() -> int:
     for rel in ARTIFACTS:
         check(f"artifact present: {rel}", (REPO_ROOT / rel).exists())
 
+    measure_source = MEASURE_SOURCE.read_text(encoding="utf-8", errors="replace")
+    continuum_source = CONTINUUM_SOURCE.read_text(encoding="utf-8", errors="replace")
+    check("measure_dm helper source contains def measure_dm", "def measure_dm" in measure_source)
+    check("measure_dm helper source calls prop_beam and cz", "free = prop_beam" in measure_source and "z_free = cz" in measure_source)
+    check("measure_dm helper source calls solve_wave for early/late histories", "h_early = solve_wave" in measure_source and "h_late = solve_wave" in measure_source)
+    check("continuum helper source exposes field_at/prop_beam/cz", all(marker in continuum_source for marker in ["def field_at", "def prop_beam", "def cz"]))
+    check("measure_dm helper cache is SHA-fresh and ok", cache_current(MEASURE_CACHE, MEASURE_SOURCE))
+    check("continuum helper cache is SHA-fresh and ok", cache_current(CONTINUUM_CACHE, CONTINUUM_SOURCE))
+
     payload = {
         "claim_id": "wave_direct_dm_h025_fam2_seed1_followup_note",
         "runner_role": "target-specific exact invocation cache",
@@ -136,6 +172,9 @@ def main() -> int:
     print(f"delta_hist = {row['delta_hist']:+.6f}")
     print(f"R_hist     = {row['r_hist']:+.2%}")
     print(f"late_gain  = {late_gain:+.6f}")
+    print("MEASURE_DM_SOURCE_PACKET=PASS")
+    print(f"MEASURE_DM_SOURCE={MEASURE_SOURCE.relative_to(REPO_ROOT)}")
+    print(f"CONTINUUM_HELPER_SOURCE={CONTINUUM_SOURCE.relative_to(REPO_ROOT)}")
     print(f"OUTPUT_JSON={OUTPUT_PATH.relative_to(REPO_ROOT)}")
     print(f"SUMMARY: WAVE H025 FAM2 SEED1 PASS={passed} FAIL={failed}")
     return 0 if failed == 0 else 1

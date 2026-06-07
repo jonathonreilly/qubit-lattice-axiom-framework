@@ -57,6 +57,14 @@ table and printed `alpha` values, that the bridge cache reports
 SHA. This does not set an audit verdict; its generated JSON is a disposable
 runner output.
 
+The primary parent runner now also imports the original dimension runner, the
+finite-k bridge runner, and the source-packet manifest runner directly, then
+prints a companion packet check. This makes the audit helper-graph resolver
+include the packet sources rather than relying on the older dynamic-import path,
+and it pins the original and bridge caches to their current runner SHAs while
+exposing the source-packet manifest source for the independent manifest cache
+check.
+
 ## Answer
 
 No. The current bounded result is narrower:
@@ -154,6 +162,6 @@ python3 scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
 Expected summary:
 
 ```text
-SUMMARY: PASS=26 FAIL=0
+SUMMARY: PASS=27 FAIL=0
 SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=... FAIL=0
 ```

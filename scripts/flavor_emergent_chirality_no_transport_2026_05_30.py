@@ -14,17 +14,94 @@ Verifies the decisive facts from the emergent-chirality build (wf_e18432a2):
   V4: emergent time factorizes (Xi_R = Theta_R (x) V_R(t)); no generation index appears,
       so it acts as identity on R^3_gen and transports no chirality.
 """
+import json
+from pathlib import Path
+
 import numpy as np
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE = REPO_ROOT / "docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md"
+LEDGER = REPO_ROOT / "docs/audit/data/audit_ledger.json"
+S3_NOTES = [
+    REPO_ROOT / "docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE_2026-05-17.md",
+    REPO_ROOT / "docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE_2026-05-17.md",
+    REPO_ROOT / "docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE_2026-05-17.md",
+    REPO_ROOT / "docs/S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md",
+]
+CHIRAL_NOTES = [
+    REPO_ROOT / "docs/CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md",
+    REPO_ROOT / "docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md",
+]
+CHIRAL_CACHES = [
+    REPO_ROOT / "logs/runner-cache/frontier_chiral_3plus1d_coupled_coin_scan.txt",
+    REPO_ROOT / "logs/runner-cache/frontier_chiral_3plus1d_boundary_phase_diagram.txt",
+]
 
 def check(name, cond, detail=""):
     print(f"[{'PASS' if cond else 'FAIL'}] {name}")
     if detail: print(f"       {detail}")
     return bool(cond)
 
+def ledger_row(claim_id):
+    rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
+    return rows[claim_id]
+
+def source_packet_checks():
+    text = NOTE.read_text(encoding="utf-8")
+    checks = []
+    s3_names = [p.name for p in S3_NOTES]
+    chiral_names = [p.name for p in CHIRAL_NOTES]
+
+    checks.append(check(
+        "SRC1 target note links the one-hop S3-time carrier notes",
+        all(name in text for name in s3_names),
+        ", ".join(s3_names),
+    ))
+    checks.append(check(
+        "SRC2 target note links retained-bounded chiral 3+1D authority notes",
+        all(name in text for name in chiral_names),
+        ", ".join(chiral_names),
+    ))
+    checks.append(check(
+        "SRC3 target note links chiral runner/cache sources",
+        "scripts/frontier_chiral_3plus1d_coupled_coin_scan.py" in text
+        and "scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py" in text
+        and all("status: ok" in p.read_text(encoding="utf-8") for p in CHIRAL_CACHES),
+        "chiral caches are present and ok",
+    ))
+    checks.append(check(
+        "SRC4 chiral coupled-coin row is current retained_bounded",
+        ledger_row("chiral_3plus1d_coupled_coin_note")["effective_status"] == "retained_bounded",
+        "bounded authority for the declared finite coupled-coin scan",
+    ))
+    checks.append(check(
+        "SRC5 chiral boundary-phase row is current retained_bounded",
+        ledger_row("chiral_3plus1d_boundary_phase_note")["effective_status"] == "retained_bounded",
+        "bounded authority for the declared finite boundary phase scan",
+    ))
+    checks.append(check(
+        "SRC6 S3-time source notes are present but not status-promoted here",
+        all(p.exists() for p in S3_NOTES)
+        and "S3-time source packet is source-visible, not status-promoted" in text,
+        "this runner does not claim an audit status for the S3-time carrier notes",
+    ))
+    checks.append(check(
+        "SRC7 displayed forced-transport numerics are source-visible",
+        "Q=0.267" in text and "1.38" in text,
+        "the target note exposes the Q/norm numerics that motivated the audit request",
+    ))
+    checks.append(check(
+        "SRC8 L3(1,2)=2/9 next-path coefficient is exact in the source packet",
+        "L3(1,2)=2/9" in text and abs((2.0 / 9.0) - 0.2222222222222222) < 1e-15,
+        "2/9 is checked as exact arithmetic; operator realization remains open",
+    ))
+    return checks
+
 def main():
     I = np.eye(3); J = np.ones((3,3)); G_chi = (2/3)*J - I
     R = np.array([[0,0,1],[1,0,0],[0,1,0]], float)
     passed = []
+    passed.extend(source_packet_checks())
 
     # V1: native chirality eps restricted to hw=1 triplet is -I3 (scalar)
     eps_hw1 = -I

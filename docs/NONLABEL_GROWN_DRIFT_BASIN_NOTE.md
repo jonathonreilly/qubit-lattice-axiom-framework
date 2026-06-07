@@ -1,15 +1,21 @@
 # Non-Label Grown Drift Basin Note
 
 **Date:** 2026-04-06  
-**Status:** proposed_retained bounded positive drift basin around the grown-row non-label signed-source transfer
+**Status:** bounded positive drift basin around the grown-row non-label signed-source transfer
 
 ## Artifact chain
 
-- [`scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py`](/Users/jonreilly/Projects/Physics/scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py)
-- [`scripts/NONLABEL_GROWN_DRIFT_BASIN_DIAG.py`](/Users/jonreilly/Projects/Physics/scripts/NONLABEL_GROWN_DRIFT_BASIN_DIAG.py)
-- [`logs/2026-04-06-nonlabel-grown-drift-basin-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-nonlabel-grown-drift-basin-sweep.txt)
+- [`scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py`](../scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py)
+- [`scripts/NONLABEL_GROWN_DRIFT_BASIN_DIAG.py`](../scripts/NONLABEL_GROWN_DRIFT_BASIN_DIAG.py)
+- [`logs/2026-04-06-nonlabel-grown-drift-basin-sweep.txt`](../logs/runner-cache/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.txt)
 - retained restore-basin anchor:
-  [`docs/NONLABEL_GROWN_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/NONLABEL_GROWN_BASIN_NOTE.md)
+  [`docs/NONLABEL_GROWN_BASIN_NOTE.md`](NONLABEL_GROWN_BASIN_NOTE.md)
+
+Runner behavior for audit replay:
+
+- default: verify the frozen log drift/seed grid, zero/neutral gates, signed
+  response, charge exponent, `9/9` safe-read count, and mean exponent summary
+- `--recompute`: run the original live drift-basin replay
 
 ## Question
 
@@ -61,4 +67,3 @@ one-row ridge.
 ## Final Verdict
 
 **bounded positive drift basin**
-

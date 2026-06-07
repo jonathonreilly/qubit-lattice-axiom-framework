@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
-runner_sha256: 1fbbdff25d2f28807f470236ed5f5c1d1d12e853e79dbaece61e82b1d363c5f3
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.24
-status: ok
------ stdout -----
 ==========================================================================
  audit_companion_lattice_noether_onsite_internal_2026_06_05.py
  Onsite/internal-restricted lattice Noether theorem, corrected U(1) sign.
@@ -67,6 +59,4 @@ status: ok
    PASS  D2 two-site shift is a symmetry but SITE-MIXING (named open item, out of scope)
 
 TOTAL: 14 PASS / 0 FAIL
-
------ stderr -----
-
+BOUNDARY GUARD: PASS retained abstract authority is cited; staggered exhibit remains bounded

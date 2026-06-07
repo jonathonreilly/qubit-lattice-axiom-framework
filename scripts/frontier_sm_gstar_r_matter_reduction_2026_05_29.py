@@ -9,9 +9,10 @@ The g_* fermionic census consumes a THERMALIZED per-generation count
 generations to N_fermions = 90. This runner separates the retained/decorated
 arithmetic inputs from explicit bounded physical premises and sharpens the
 genuine residual to I12 (nu_R thermal exclusion) + R-RH (right-handed
-gauge-charged inventory bridge) + R-WEYL-THERMAL (physical Weyl thermal dof
-bridge) + R-SPIN (the physical Weyl-spin identification bridge from the local
-carrier to this census) + the neutral-singlet branch convention. All as
+gauge-charged inventory bridge) + the Dirac/Weyl dof dependency boundary +
+R-WEYL-THERMAL / R-SPIN (the physical thermal-inventory and Weyl-spin
+identification bridges from the local carrier to this census) + the
+neutral-singlet branch convention. All as
 EXECUTED asserts (not prose):
 
 1. **Per-rep gauge-charged Weyl multiplicity breakdown.** Q_L = 3*2 = 6,
@@ -24,8 +25,9 @@ EXECUTED asserts (not prose):
    isospin 2 (retained native_gauge_closure); LH per-rep assignment
    (decoration-under-retained lhcm_matter_assignment); RH inventory as explicit
    bounded premise P_RH_inventory with anomaly-singlet support; n_gen = 3
-   (retained three_generation_observable); Weyl dof factor as explicit bounded
-   premise P_Weyl_thermal_dof with finite-CAR/cardinality support.
+   (retained three_generation_observable); Weyl dof factor routed through the
+   stacked Dirac/Weyl dof bridge, with finite-CAR/cardinality support and
+   independent review/audit still required.
 
 3. **The nu_R / I12 fork (the load-bearing residual).** The matter is 16 Weyl
    (gauge-charged 15 + gauge-singlet nu_R). Thermalized count excludes nu_R ->
@@ -42,9 +44,10 @@ EXECUTED asserts (not prose):
    forbidden-import / new-vocabulary scan.
 
 No lattice-action quantity, fitted comparator, or PDG observed value is a
-load-bearing input. The representation counts are not fitted; P_RH_inventory
-and P_Weyl_thermal_dof are explicit bounded premises, not retained-derived
-bridges.
+load-bearing input. The representation counts are not fitted; P_RH_inventory is
+an explicit bounded premise, while the Weyl `*2` is dependency-routed through
+the Dirac/Weyl dof bridge rather than treated as a retained-derived downstream
+bridge.
 """
 
 from __future__ import annotations
@@ -100,7 +103,8 @@ N_C = 3
 DIM_ISOSPIN_DOUBLET = 2
 # Generation count (retained three_generation_observable).
 N_GEN = 3
-# Weyl-to-dof particle/antiparticle factor (explicit bounded thermal premise).
+# Weyl-to-dof particle/antiparticle factor, routed through the stacked
+# Dirac/Weyl dof bridge on this source surface.
 WEYL_DOF = 2
 # Boson count (retained-sourced in the companion census note; not re-derived here).
 N_BOSONS = 28
@@ -220,9 +224,9 @@ check(
     "generation count n_gen = 3 (retained three_generation_observable)",
     N_GEN == 3,
 )
-# Weyl-to-dof thermal factor (bounded P_Weyl_thermal_dof).
+# Weyl-to-dof thermal factor (Dirac/Weyl dof bridge dependency; audit pending).
 check(
-    "Weyl-to-dof factor = 2 (bounded P_Weyl_thermal_dof)",
+    "Weyl-to-dof factor = 2 (Dirac/Weyl dof bridge dependency, audit pending)",
     WEYL_DOF == 2,
 )
 
@@ -350,6 +354,7 @@ SOURCED_AUTHORITIES = [
     "ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md",
     "THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
     "THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md",
+    "DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
     "SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md",
     "PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
 ]
@@ -399,7 +404,31 @@ check(
 )
 check(
     "note names R-WEYL-THERMAL as remaining residual",
-    "R-WEYL-THERMAL" in NOTE_TEXT and "P_Weyl_thermal_dof" in NOTE_TEXT,
+    "R-WEYL-THERMAL" in NOTE_TEXT
+    and "physical Weyl thermal-inventory bridge" in NOTE_TEXT,
+)
+check(
+    "note routes Weyl dof factor through Dirac/Weyl bridge dependency",
+    "DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md"
+    in NOTE_TEXT
+    and "dependency-routed" in NOTE_TEXT
+    and "Dirac/Weyl dof dependency boundary" in NOTE_TEXT,
+)
+DIRAC_WEYL_PATH = (
+    ROOT
+    / "docs"
+    / "DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md"
+)
+DIRAC_WEYL_TEXT = DIRAC_WEYL_PATH.read_text(encoding="utf-8")
+check(
+    "Dirac/Weyl source note contains source-local Q2 rank counting",
+    "source-local Q2 rank counting" in DIRAC_WEYL_TEXT
+    and "rank(gamma.p - m)=2" in DIRAC_WEYL_TEXT,
+)
+check(
+    "Dirac/Weyl source note contains massless chirality split",
+    "chirality projectors split the massless branch" in DIRAC_WEYL_TEXT
+    and "Weyl on-shell thermal dof" in DIRAC_WEYL_TEXT,
 )
 check(
     "note scopes R-SPIN as physical Weyl-spin bridge",
@@ -407,9 +436,9 @@ check(
     and "bridge out of scope" in NOTE_TEXT,
 )
 check(
-    "note carries thermal Weyl factor as bounded premise, not retained-derived",
-    "explicit bounded thermal-counting premise" in NOTE_TEXT
-    and "does **not** by itself prove" in NOTE_TEXT,
+    "note does not claim Weyl factor is retained-derived on current audit surface",
+    "thermal Weyl factor `2` is already retained-derived" in NOTE_TEXT
+    and "requires review/audit" in NOTE_TEXT,
 )
 check(
     "note carries RH inventory as bounded premise, not retained-derived",
@@ -499,8 +528,17 @@ if LEDGER_PATH.exists():
         "P_RH_inventory" in NOTE_TEXT and "R-RH" in NOTE_TEXT,
     )
     check(
-        "R-WEYL-THERMAL remains an explicit bounded premise",
-        "P_Weyl_thermal_dof" in NOTE_TEXT and "R-WEYL-THERMAL" in NOTE_TEXT,
+        "Weyl dof source remains dependency-routed pending audit",
+        "Dirac/Weyl dof dependency boundary" in NOTE_TEXT
+        and "audit pending" in NOTE_TEXT,
+    )
+    dirac_weyl_status = status_of(
+        "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
+    )
+    check(
+        "Dirac/Weyl dof source is not asserted retained by this downstream runner",
+        dirac_weyl_status in {"audited_conditional", "retained", "retained_bounded", None},
+        f"ledger = {dirac_weyl_status}",
     )
     check(
         "full one-generation closure stays unaudited (separated, not reduced by this note)",
@@ -554,7 +592,7 @@ check(
 )
 check(
     "note states thermal Weyl factor NOT claimed retained-derived",
-    "thermal Weyl factor `2` is derived from retained" in NOTE_TEXT,
+    "thermal Weyl factor `2` is already retained-derived" in NOTE_TEXT,
 )
 
 # Forbidden load-bearing imports: no lattice-action / fitted / PDG carrier.

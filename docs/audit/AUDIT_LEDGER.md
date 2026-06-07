@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 727 |
+| **retained_bounded** | 728 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1272 |
+| unaudited | 1271 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1142 |
+| `audited_clean` | 1143 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1581 |
+| `unaudited` | 1580 |
 
 | claim_type | count |
 |---|---:|
@@ -982,6 +982,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -14801,6 +14802,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** With a supplied projective readout context and cited canonical projective/Lueders authority, the trace pairings Tr(P_r rho) produce the Z and X probability kernels while realized records are one-hot atoms/count increments.  _(class `A`)_
 - **chain closes:** True — The numerical identities close by direct matrix algebra from the displayed rho and projectors plus the retained-bounded projective/Lueders authorities. The source correctly keeps the readout context supplied rather than derived from the Record axiom.
 - **rationale:** The load-bearing computation is an algebraic identity check over independent retained-bounded inputs and an accepted axiom premise. Independently checking the displayed formulas gives Tr(P0 rho)=2/3, Tr(P1 rho)=1/3, X probabilities 1/2 +/- sqrt(2)/3, one-hot realized atoms, and expected count (14/3, 7/3). The runner source performs actual symbolic matrix calculations and citation-string boundary checks rather than merely printing constants, though several boundary checks are necessarily textual or tautological. No open or non-retained dependency is imported beyond the explicitly supplied readout context, which is part of the audited bounded scope.
+- **auditor confidence:** high
+
+### `record_production_interface_principle_2026-06-06`
+
+- **Note:** [`RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md`](../../docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A branch-local typing/interface principle separating pre-record qubit state/effect surfaces, separate record-production bridges, and post-record realized atoms/counts/readouts, without deriving probabilities, production dynamics, instruments, rates, or dials.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-012514-f925e63fd2-record_production_interface_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The three axioms already provide the required type split: Quantum supplies the pre-record one-qubit local algebra, Record supplies post-record durable realized-outcome registration and additive scalar readout, and Record explicitly does not supply the production bridge between them.  _(class `A`)_
+- **chain closes:** True — For this bounded interface scope, the cited Minimal Axioms include the Quantum and Record surfaces used by the note and explicitly exclude probability and record-production dynamics from Record. No missing bridge is needed because the audited conclusion is only the type split, not a derivation of the bridge itself.
+- **rationale:** The only cited authority is flagged as an accepted axiom premise, so its meta status does not trigger the not-retained dependency downgrade. The load-bearing move is an A-class logical/type-set consequence of what the Minimal Axioms include and exclude, not a first-principles numerical computation. The runner source is consistent with that narrow scope: it performs text/input checks plus finite set and Fraction arithmetic checks, with no external comparator and no hidden helper imports. This verdict does not audit any stronger claim that record-production dynamics, Born probabilities, a normalized isometry, or a dial selection has been derived.
 - **auditor confidence:** high
 
 ### `record_production_kernel_boundary_2026-06-06`

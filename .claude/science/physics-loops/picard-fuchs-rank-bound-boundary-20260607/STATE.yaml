@@ -1,0 +1,23 @@
+loop_slug: picard-fuchs-rank-bound-boundary-20260607
+target_claim_id: plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+current_result: >
+  The previous source packet overclaimed a finite r<=2,d<=30 search as an
+  all-degree minimal-annihilator certificate. This branch repairs the boundary:
+  finite-window support is preserved, T3 is conditional on an external all-degree
+  R=3,D=2 bound, and the all-degree lower-order exclusion remains open.
+files_touched:
+  - docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md
+  - scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
+  - logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt
+  - outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json
+  - .claude/science/physics-loops/picard-fuchs-rank-bound-boundary-20260607/
+verification:
+  - python3 scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
+  - git diff -- docs/audit
+

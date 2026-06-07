@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_substep4_realized_mass_keven_delta_zero.py
+runner_sha256: c78a370d641296fe88de01f359783759d08aefe17f393d4d7b583d070f9fb736
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+PASS T1 KS phases eta_mu(x) real +/-1
+PASS T2 hw=1 corners self-conjugate (-k=k)
+PASS T3 kinetic i*sin(k_mu) = 0 at all hw=1 corners (sin(0)=sin(pi)=0)
+PASS T4a realized mass real-symmetric in site basis (omega-free)
+PASS T4b => hw=1 corner couplings REAL (delta=0)
+PASS T5 real scalar mass pulls back invariantly: T (m I) T^dag = m I
+PASS T5b scalarized spin sign eta in {+1,-1} (real)
+PASS CTRL omega-dressed K-odd mass gives delta!=0 (excluded by T3/T4/T5, not vacuous)
+PASS CTRL real K-even mass gives delta=0
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

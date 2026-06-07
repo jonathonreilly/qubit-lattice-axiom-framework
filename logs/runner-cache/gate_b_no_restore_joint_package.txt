@@ -1,22 +1,30 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_no_restore_joint_package.py
-runner_sha256: fe277aa5a1a460ed27b04316d2c3be5726aa857ac3a0efe377f5b82b1f71d95e
-timeout_sec: 120
+runner_sha256: 23f234c70b1f9e414f16d51c0b47b1524fdc22ac6fe7a91f81dc6652cf5946c7
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ============================================================================
 GATE B NO-RESTORE JOINT PACKAGE FROZEN LOG VERIFIER
 log: logs/2026-04-05-gate-b-no-restore-joint-package.txt
+recompute certificate: outputs/gate_b_no_restore_recompute_certificate_2026_06_07.json
 ============================================================================
-exact grid           Born=2.12e-15 d_TV=0.787 MI=0.568 Decoh=49.4% PASS
-no restore drift=0.0 Born=2.12e-15 d_TV=0.787 MI=0.568 Decoh=49.4% PASS
-no restore drift=0.2 Born=2.01e-15 d_TV=0.596 MI=0.314 Decoh=1.0% PASS
-no restore drift=0.5 Born=1.31e-15 d_TV=0.971 MI=0.811 Decoh=4.3% PASS
+exact grid           Born=2.06e-15 d_TV=0.787 MI=0.568 Decoh=49.4% PASS
+no restore drift=0.0 Born=2.06e-15 d_TV=0.787 MI=0.568 Decoh=49.4% PASS
+no restore drift=0.2 Born=1.96e-15 d_TV=0.596 MI=0.314 Decoh=1.0% PASS
+no restore drift=0.5 Born=1.52e-15 d_TV=0.971 MI=0.811 Decoh=4.3% PASS
+
+
+RECOMPUTED ROWS
+exact grid           Born=2.0586e-15 d_TV=0.786762 MI=0.568356 Decoh=49.434236% PASS
+no restore drift=0.0 Born=2.0586e-15 d_TV=0.786762 MI=0.568356 Decoh=49.434236% PASS
+no restore drift=0.2 Born=1.9611e-15 d_TV=0.596130 MI=0.313843 Decoh=0.970606% PASS
+no restore drift=0.5 Born=1.5233e-15 d_TV=0.971395 MI=0.811265 Decoh=4.343011% PASS
 
 SAFE READ: bounded no-restore joint-package replay; drift rows remain sensitive.
-SCORECARD PASS=4 FAIL=0
+SCORECARD PASS=8 FAIL=0
 
 ----- stderr -----
 

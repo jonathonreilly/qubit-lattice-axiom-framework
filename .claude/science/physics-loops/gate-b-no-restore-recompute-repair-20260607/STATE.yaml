@@ -1,0 +1,22 @@
+loop_slug: gate-b-no-restore-recompute-repair-20260607
+branch: physics-loop/gate-b-no-restore-recompute-repair-20260607
+base: origin/main
+target_claim_id: gate_b_no_restore_joint_package_note
+target_status: bounded-support
+current_goal: repair recompute-artifact blocker without audit edits
+cycle_count: 1
+active_route: completed recompute certificate plus source-log comparison
+hard_residual: null
+files_touched:
+  - docs/GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md
+  - scripts/gate_b_no_restore_joint_package.py
+  - logs/2026-04-05-gate-b-no-restore-joint-package.txt
+  - outputs/gate_b_no_restore_recompute_certificate_2026_06_07.json
+  - logs/runner-cache/gate_b_no_restore_joint_package.txt
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: local self-check only; independent review-loop/audit remains required
+pr_status: pending
+next_exact_action: open review PR for the repair block
+stop_condition: current block packaged; campaign should pivot to next conditional row after PR creation

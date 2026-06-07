@@ -1,0 +1,14 @@
+loop_slug: koide-orientation-bfield-boundary-20260607
+created: 2026-06-07
+branch: physics-loop/koide-orientation-bfield-boundary-20260607
+base: origin/main
+target_claim_id: koide_orientation_blind_count_b_field_gate_note_2026-05-30
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: bounded local-support gate retargeting
+hard_residual: bridge identifying circulant coefficient b with first-order Kähler-Dirac B-field amplitude remains open
+verification:
+  - python3 scripts/frontier_koide_orientation_blind_count_b_field_gate_2026_05_30.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_koide_orientation_blind_count_b_field_gate_2026_05_30.py
+next_exact_action: open review PR against main

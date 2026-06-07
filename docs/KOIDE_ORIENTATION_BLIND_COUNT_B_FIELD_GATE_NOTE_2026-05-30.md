@@ -1,9 +1,28 @@
-# Koide Orientation-Blind Count And B-Field Gate
+# Koide Orientation-Blind Count And B-Field Local Gate
 
 **Date:** 2026-05-30
-**Claim type:** open_gate
+**Date of boundary repair:** 2026-06-07
+**Claim type:** bounded_theorem / open_gate
 **Status:** source note; downstream status is decided by independent review.
 **Primary runner:** [`scripts/frontier_koide_orientation_blind_count_b_field_gate_2026_05_30.py`](../scripts/frontier_koide_orientation_blind_count_b_field_gate_2026_05_30.py)
+
+## 2026-06-07 Boundary Retargeting
+
+The direct claim is now the bounded local-support gate, not the downstream
+B-field identification. The runner verifies the local `b`-plane Kähler
+geometry, orientation-blind rank count, circulant `Q(r)` formula, action-order
+one-mode/two-mode split, cooling-jump orthogonality, and Kähler-Dirac
+form-degree block obstruction.
+
+The bridge
+
+```text
+circulant coefficient b -> first-order Kähler-Dirac B-field amplitude
+```
+
+remains open and is not load-bearing for the direct local-support claim. This
+note does not derive the charged-lepton Koide value, does not select `r=1/2`,
+and does not claim that `b` is a physical B-field amplitude.
 
 ## Result
 
@@ -57,7 +76,8 @@ Kähler-Dirac field amplitude on the same doublet component.
 
 This note does not derive the charged-lepton Koide value.  It does not approve
 a new axiom, primitive, or Tier-A admission.  It also does not claim that all
-possible routes are closed.  It records an open gate with exact local support:
+possible routes are closed.  It records a bounded local-support gate with exact
+local algebra and one open bridge:
 
 ```text
 B-coupling -> B-field bridge open.
@@ -81,7 +101,7 @@ PYTHONPATH=scripts python3 scripts/frontier_koide_orientation_blind_count_b_fiel
 Expected:
 
 ```text
-TOTAL: PASS=N FAIL=0
-VERDICT: orientation-blind count and B-field gate checks pass; the B-coupling
-to B-field bridge remains open.
+TOTAL: PASS=36 FAIL=0
+VERDICT: bounded orientation-blind count and B-field local gate checks pass; the
+B-coupling to B-field bridge remains open.
 ```

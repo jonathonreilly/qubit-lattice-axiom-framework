@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 724 |
+| **retained_bounded** | 725 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1275 |
+| unaudited | 1274 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1139 |
+| `audited_clean` | 1140 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1584 |
+| `unaudited` | 1583 |
 
 | claim_type | count |
 |---|---:|
@@ -941,6 +941,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_stable_kernel_count_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stable_kernel_expected_frequency_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_concentration_certificate_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_supplied_family_lift_certificate_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_kernel_selection_rule_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_orientation_bridge_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_selection_rule_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -14162,6 +14163,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For finite post-record words, a law-scoped concentration certificate can be verified by exact enumeration, and count-dependent event probabilities agree with the count-law pushforward.  _(class `A`)_
 - **chain closes:** True — The finite probability calculations close directly from the supplied iid and correlated laws: both normalize and share expected counts and one-time marginals, while the extreme-imbalance event has probabilities 1/8 and 1 respectively. The certificate validity is therefore law-scoped and is not implied by expectation-only data.
 - **rationale:** The load-bearing step is finite algebra/probability enumeration over explicitly supplied laws, not an imported empirical comparator or a symbol renaming. An independent check gives iid extreme imbalance probability 2/16 = 1/8 and correlated extreme imbalance probability 1, while both laws have expected counts (2,2) and one-time marginals (1/2,1/2). The runner source performs the relevant enumeration and certificate-scope checks rather than merely printing constants, and the note's boundaries correctly prevent deriving probability or concentration from Record itself.
+- **auditor confidence:** high
+
+### `post_record_supplied_family_lift_certificate_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audit checks only the supplied four-level finite binary ladder with truncation projections, stability of leading_marker_is_one, non-use of density as a stable lift, and absence of unbounded family-lift authority.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-011808-cd4f2cc86f-post_record_supplied_family_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A supplied projective ladder and supplied stable predicate can be checked mechanically, but no family-lift authority is applied.  _(class `A`)_
+- **chain closes:** True — Direct inspection gives pi_1(C2)=C1, pi_2(C3)=C2, pi_3(C4)=C3; each word begins with 1, while densities are 1, 1/2, 2/3, 3/4 and are not constant. No additional family-lift theorem is needed for this bounded finite-interface claim because no unbounded lift is asserted.
+- **rationale:** The runner source hard-codes the supplied finite ladder and performs finite algebraic/data-consistency checks rather than a first-principles physics computation. An independent manual check of the displayed projections, predicate values, and density fractions agrees with the note and runner. The clean verdict is limited to the bounded compatibility witness; it does not certify any future family-lift rule or unbounded retained law.
 - **auditor confidence:** high
 
 ### `post_record_supplied_kernel_selection_rule_interface_2026-06-06`

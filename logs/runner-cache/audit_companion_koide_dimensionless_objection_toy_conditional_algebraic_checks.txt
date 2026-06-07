@@ -1,15 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py
-runner_sha256: 2d0a032bc3257f2dd536431f1798e160c98d295d7eba0ba8e0ab64e357449003
+runner_sha256: 89c4234e52480ca8ac6b4ec9a7e1c5d0932cadff91e49d02dec802c06a05f26f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.02
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================================
 Koide dimensionless objection - toy conditional algebraic checks
 (Pattern A narrow companion runner)
 ========================================================================================
+
+----------------------------------------------------------------------------------------
+(T0) source-boundary manifest
+----------------------------------------------------------------------------------------
+  [PASS] note records 2026-06-07 source-boundary manifest
+  [PASS] note records local toy admission packet A_TOY
+  [PASS] note says A1-A5 are not framework-native facts
+  [PASS] note forbids retained propagation without a bridge theorem
 
 ----------------------------------------------------------------------------------------
 (T1) Q zero-background identity under (A1)
@@ -77,8 +85,8 @@ Koide dimensionless objection - toy conditional algebraic checks
   [PASS] in-toy: '(A5) alone => delta = 2/9' fails
 
 ========================================================================================
-SUMMARY: PASS=29 FAIL=0
-PASSED: 29/29
+SUMMARY: PASS=33 FAIL=0
+PASSED: 33/33
 ========================================================================================
 KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS=TRUE
 ADMISSIONS_USED=A1_A2_A3_A4_A5
@@ -92,3 +100,4 @@ RETAINED_GRADE_CLOSURE_ASSERTED=FALSE
 RETAINED_GRADE_NO_GO_ASSERTED=FALSE
 
 ----- stderr -----
+

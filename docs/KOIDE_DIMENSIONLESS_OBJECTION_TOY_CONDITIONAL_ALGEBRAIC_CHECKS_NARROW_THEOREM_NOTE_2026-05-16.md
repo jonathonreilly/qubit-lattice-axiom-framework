@@ -27,6 +27,25 @@ is `IF [admitted carrier / admitted scalar] THEN [algebraic identity]`,
 where the antecedent is a stated admission, not a retained-framework
 derivation.
 **Primary runner:** [`scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py`](../scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py)
+**Cached log:** [`logs/runner-cache/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.txt`](../logs/runner-cache/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.txt) (PASS=33 FAIL=0)
+
+## 2026-06-07 Source-Boundary Manifest
+
+This repair makes the admission boundary executable. The source note proves only
+the finite rational identities `(T1)-(T9)` inside the local toy packet
+
+```text
+A_TOY = (A1, A2, A3, A4, A5).
+```
+
+The row does not derive the toy carrier, central `Z` grammar, selected-line
+endpoint algebra, based endpoint section, or `eta_APS = 2/9`. None of
+`(A1)-(A5)` is promoted to a framework-native fact here. Accordingly, this row
+can be re-audited as a bounded conditional algebra certificate only; it cannot
+propagate a retained Koide closure, retained delta closure, or retained
+dimensionless-objection no-go without a separate bridge theorem for the
+admissions.
+
 **Authority role:** Pattern A narrow rescope of the in-toy algebraic core
 of the parent `koide_dimensionless_objection_closure_review_packet_2026-04-24`
 no-go packet. The parent packet bundles:

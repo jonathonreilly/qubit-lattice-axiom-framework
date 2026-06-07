@@ -1,0 +1,22 @@
+loop_slug: beta6-ansatz-current-coeff-boundary-20260607
+target_claim_id: beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+current_result: >
+  The stale PENDING harness now consumes current exact d_6..d_11 connected
+  coefficients. Simple tadpole/geometric continuation is falsified; d-log-Pade
+  is unstable rather than converged. This repairs the source-side stale packet
+  and queues the row for independent re-audit, but it does not close beta=6.
+files_touched:
+  - docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md
+  - scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
+  - logs/runner-cache/frontier_beta6_resummation_ansatz_test_2026_05_30.txt
+  - .claude/science/physics-loops/beta6-ansatz-current-coeff-boundary-20260607/
+verification:
+  - python3 scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
+  - git diff -- docs/audit
+

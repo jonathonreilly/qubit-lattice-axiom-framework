@@ -1,0 +1,22 @@
+loop: frozen-log-verifier-batch-20260607
+goal: "Unblock three slow historical-sweep runner caches with frozen-log verifiers."
+target_status: exact-support
+current_status: packaged_for_review
+base: origin/main@fbf4dfbed
+branch: physics-loop/frozen-log-verifier-batch-20260607
+files_touched:
+  - scripts/wide_lattice_h2t_distance_replay.py
+  - scripts/valley_linear_wide_tail_replay.py
+  - scripts/global_coherence_held_out2.py
+  - docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md
+  - docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md
+  - docs/GLOBAL_COHERENCE_HELD_OUT2_NOTE.md
+  - logs/runner-cache/wide_lattice_h2t_distance_replay.txt
+  - logs/runner-cache/valley_linear_wide_tail_replay.txt
+  - logs/runner-cache/global_coherence_held_out2.txt
+  - .claude/science/physics-loops/frozen-log-verifier-batch-20260607/
+open_imports: []
+trace_gate: direct_blocker_closure
+pr_status: pending
+next_exact_action: "Open review PR and hand to reviewer."
+stop_condition: "PR opened and verified."

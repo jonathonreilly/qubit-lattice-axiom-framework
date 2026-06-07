@@ -23,8 +23,10 @@ global_coherence_predictor_note=audited_failed), so the chain does
 not close under the leaf audit rule." This rigorization edit only
 sharpens the boundary of the conditional perimeter; nothing here
 promotes audit status. The supported content of this note is the
-finite 12-generator scaffolded held-out table reproduced verbatim by
-the registered runner; the headline 17/21 cross-generator combined
+finite 12-generator scaffolded held-out table recorded in the frozen
+source log and verified verbatim by the registered runner; use
+`--recompute` to run the original slow 12-generator batch. The headline
+17/21 cross-generator combined
 statistic is bounded interpretation that depends on
 [`GLOBAL_COHERENCE_PREDICTOR_NOTE.md`](GLOBAL_COHERENCE_PREDICTOR_NOTE.md)
 (currently `audited_failed`) for the 9-family first batch and on the

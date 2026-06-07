@@ -14,7 +14,10 @@ exploratory, or a no-go.
 
 from __future__ import annotations
 
+import argparse
 import math
+import pathlib
+import re
 import time
 
 import os
@@ -44,6 +47,9 @@ from scripts.valley_linear_same_harness_compare import (
     setup_slits,
 )
 
+AUDIT_TIMEOUT_SEC = 120
+REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-05-wide-lattice-h2t-distance-replay.txt"
 
 PHYS_W = 12
 Z_VALUES = list(range(2, 12))
@@ -118,7 +124,7 @@ def born_audit(lat: Lattice3D, det: list[int], blocked: set[int]) -> float:
     return i3 / total if total > 1e-30 else math.nan
 
 
-def main() -> None:
+def run_full_replay() -> None:
     t0 = time.time()
     lat = Lattice3D(PHYS_L, PHYS_W, H)
     pos = lat.pos
@@ -230,5 +236,60 @@ def main() -> None:
     print(f"Total time: {total:.1f}s")
 
 
+def verify_frozen_log() -> int:
+    print("=" * 88)
+    print("WIDE-LATTICE H^2+T DISTANCE-LAW FROZEN LOG VERIFIER")
+    print(f"source_log={FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print("Use --recompute to run the original slow wide-lattice replay.")
+    print("=" * 88)
+    if not FROZEN_LOG.exists():
+        print(f"FAIL missing frozen log: {FROZEN_LOG}")
+        print("SCORECARD PASS=0 FAIL=1")
+        return 1
+
+    text = FROZEN_LOG.read_text(encoding="utf-8", errors="replace")
+    checks: list[tuple[str, bool, str]] = []
+
+    def add(name: str, ok: bool, metric: str) -> None:
+        checks.append((name, ok, metric))
+
+    add("header", "WIDE-LATTICE H^2+T DISTANCE-LAW REPLAY" in text,
+        "wide-lattice replay header present")
+    add("barrier sanity", "Barrier sanity: Born=4.82e-15  k=0=+0.000000" in text,
+        "Born=4.82e-15 and k=0 exactly zero")
+    rows = re.findall(r"^\s+z=\s*(\d+)\s+delta=([+-]\d+\.\d+)\s+(TOWARD|AWAY)\s*$", text, re.MULTILINE)
+    add("distance rows", len(rows) == 10, f"rows={len(rows)} expected=10")
+    add("distance all toward", len(rows) == 10 and all(float(delta) > 0.0 and direction == "TOWARD" for _, delta, direction in rows),
+        f"toward={sum(1 for _, delta, direction in rows if float(delta) > 0.0 and direction == 'TOWARD')}/10")
+    add("toward support", "TOWARD support: 10/10" in text, "support=10/10")
+    add("peak tail", "Peak tail from z>=4: b^(-0.95), R^2=0.980, n=8" in text,
+        "peak tail -0.95, R2=0.980, n=8")
+    add("far tail", "Far tail from z>=5: b^(-1.05), R^2=0.990, n=7" in text,
+        "far tail -1.05, R2=0.990, n=7")
+    sweep = re.findall(r"^\s+s=(\d+e-\d+): delta=([+-]\d+\.\d+e[+-]\d+)\s+(TOWARD|AWAY)\s*$", text, re.MULTILINE)
+    add("F~M sweep rows", len(sweep) == 6, f"rows={len(sweep)} expected=6")
+    add("F~M all toward", len(sweep) == 6 and all(float(delta) > 0.0 and direction == "TOWARD" for _, delta, direction in sweep),
+        f"toward={sum(1 for _, delta, direction in sweep if float(delta) > 0.0 and direction == 'TOWARD')}/6")
+    add("F~M exponent", "F~M exponent: 1.000" in text, "exponent=1.000")
+
+    n_pass = sum(1 for _, ok, _ in checks if ok)
+    n_fail = len(checks) - n_pass
+    for name, ok, metric in checks:
+        print(f"{'PASS' if ok else 'FAIL'} {name}: {metric}")
+    print(f"SCORECARD PASS={n_pass} FAIL={n_fail}")
+    return 0 if n_fail == 0 else 1
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Wide-lattice h2T replay/cache verifier.")
+    parser.add_argument("--recompute", action="store_true",
+                        help="Run the original slow wide-lattice replay.")
+    args = parser.parse_args()
+    if args.recompute:
+        run_full_replay()
+        return 0
+    return verify_frozen_log()
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

@@ -9,6 +9,9 @@ ordered 3D `1/L^2` family
 - [`scripts/wide_lattice_h2t_distance_replay.py`](/Users/jonreilly/Projects/Physics/scripts/wide_lattice_h2t_distance_replay.py)
 - [`logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-wide-lattice-h2t-distance-replay.txt)
 
+The registered runner defaults to a verifier for the frozen replay log above;
+use `--recompute` to run the original slow wide-lattice replay.
+
 ## Question
 
 Does the branch-side wide-lattice `h^2+T` distance-law claim survive an
@@ -66,4 +69,3 @@ The review-safe wording is:
 ## Final Verdict
 
 **retained frontier**
-

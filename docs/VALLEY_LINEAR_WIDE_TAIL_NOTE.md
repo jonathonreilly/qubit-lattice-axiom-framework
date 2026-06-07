@@ -16,6 +16,9 @@ That is a strong finite-lattice replay, not a universal theorem by itself.
 - Script: [scripts/valley_linear_wide_tail_replay.py](/Users/jonreilly/Projects/Physics/scripts/valley_linear_wide_tail_replay.py)
 - Log: [logs/2026-04-04-valley-linear-wide-tail-replay.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-wide-tail-replay.txt)
 
+The registered runner defaults to a verifier for the frozen replay log above;
+use `--recompute` to run the original slow wide-tail replay.
+
 This replay keeps fixed:
 
 - the 3D ordered-lattice family

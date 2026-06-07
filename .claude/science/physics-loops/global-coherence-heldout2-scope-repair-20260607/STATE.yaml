@@ -1,0 +1,21 @@
+loop_slug: global-coherence-heldout2-scope-repair-20260607
+branch: physics-loop/global-coherence-heldout2-scope-repair-20260607
+base: origin/main
+target_claim_id: global_coherence_held_out2_note
+target_status: bounded-support
+current_goal: repair overbroad source scope without audit edits
+cycle_count: 1
+active_route: source-scope demotion plus verifier wording repair
+hard_residual: null
+files_touched:
+  - docs/GLOBAL_COHERENCE_HELD_OUT2_NOTE.md
+  - scripts/global_coherence_held_out2.py
+  - logs/2026-04-07-global-coherence-held-out2.txt
+  - logs/runner-cache/global_coherence_held_out2.txt
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: local self-check only; independent review-loop/audit remains required
+pr_status: pending
+next_exact_action: open review PR for the repair block
+stop_condition: current block packaged; campaign should pivot to next conditional row after PR creation

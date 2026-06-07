@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 729 |
+| **retained_bounded** | 730 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1328 |
+| unaudited | 1327 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1145 |
+| `audited_clean` | 1146 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1637 |
+| `unaudited` | 1636 |
 
 | claim_type | count |
 |---|---:|
@@ -447,6 +447,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_split_the_brick_doublet_complex_structure_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6208,6 +6209,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The supplied finite algebra verifies the C3 rephase obstruction, delta-blind Koide trace ratio for the stated circulant family, det_R(alpha P_s+beta P_d)=alpha beta^2 versus block product alpha beta, and degeneracy at delta=m*pi/3.  _(class `A`)_
 - **chain closes:** True — The displayed identities close by direct finite algebra on the matrices and spectra supplied in the packet. Independent checks give (exp(i alpha)C)^3=I iff exp(3i alpha)=1, Q=(3a^2+6|b|^2)/(3a)^2 independent of delta, eigenvalues alpha,beta,beta for alpha P_s+beta P_d, and pairwise spectral degeneracy exactly at delta=m*pi/3 for |b|>0.
 - **rationale:** The narrowed note no longer claims framework-wide exhaustiveness or a physical selector result; it claims only finite algebra for the supplied family. The runner source performs actual matrix and spectrum checks rather than merely printing constants, and the same formulas are independently confirmed by elementary algebra. There are no cited non-retained authorities or external comparator inputs in the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31`
+
+- **Note:** [`FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_2026-05-31.md`](../../docs/FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The packet audits only the bounded route-pruning claim that a supplied relativistic spin-1/2 field excludes wrong Bose quantization, while current baseline plus emergent spacetime alone does not non-circularly force P1/CAR.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-180733-c94969c4ad-flavor_spin_statistics_force`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The tested UV-lattice data do not force cross-site CAR/Grassmann statistics: ordinary qubit ladders commute across sites, Jordan-Wigner dressed generators anticommute after a representation choice, and the free propagator kernel used in the check is statistics-blind.  _(class `A`)_
+- **chain closes:** True — The restricted packet closes as a bounded negative route-pruning statement: the finite algebra checks support the supplied-field T1 engine and show that the tested qubit/kernel carrier remains statistics-agnostic. It does not close a positive derivation of P1/CAR, but the repaired claim explicitly denies that stronger conclusion.
+- **rationale:** The runner source performs finite algebraic checks rather than merely printing constants: CAR occupancy boundedness, the wrong-sign Bose energy direction, taste spectator multiplicity, kernel identity, two-site ladder/Jordan-Wigner relations, and the spatial spin Casimir. The source note's conclusion is scoped to bounded support and route pruning, not a promoted derivation of P1. The displayed quantitative identities are simple finite matrix and occupation-number checks, and their results are consistent with the stated bounded claim.
 - **auditor confidence:** high
 
 ### `flavor_split_the_brick_doublet_complex_structure_2026-06-04`

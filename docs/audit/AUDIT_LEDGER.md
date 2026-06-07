@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1288 |
+| unaudited | 1287 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1138 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1595 |
+| `unaudited` | 1594 |
 
 | claim_type | count |
 |---|---:|
@@ -1309,6 +1309,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_gamma5_factor_bridge_no_go_note_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9761,6 +9762,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The positive-definite region alpha > 0 and alpha + 3 beta > 0 contains beta != 0 examples such as alpha = beta = 1, so the stated linear-algebra premises do not force the Frobenius normalization beta = 0.  _(class `A`)_
 - **chain closes:** True — The scalar/traceless decomposition gives weights alpha + 3 beta and alpha, so positive-definiteness only imposes alpha > 0 and alpha + 3 beta > 0. The explicit alpha = beta = 1 witness satisfies those conditions while changing the scalar/traceless ratio, closing the bounded no-go.
 - **rationale:** The displayed decomposition B(A,A) = (alpha + 3 beta) Tr(A_s^2) + alpha Tr(A_t^2), the positivity conditions, and the alpha = beta = 1 counterexample check algebraically under the note's definitions. The runner source performs symbolic decomposition and witness checks rather than merely printing a pass total. The no-go is scoped narrowly to the listed linear-algebra premises and explicitly leaves independent future normalizations out of scope, so it does not overclaim an absolute obstruction.
+- **auditor confidence:** high
+
+### `koide_gamma5_factor_bridge_no_go_note_2026-06-06`
+
+- **Note:** [`KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The natural tensor embedding gamma5_spin ⊗ I_gen is partition-blind on the C^3 generation factor and cannot by itself supply a generation-factor C3-breaking selector under the stated T/K-odd noncommuting-with-S requirement.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-23e3e8aef4-koide_gamma5_factor_bridge_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the natural embedding, [gamma5_spin ⊗ I_gen, I_spin ⊗ S] = 0 exactly, and gamma5 is real/K-even on the generation factor.  _(class `A`)_
+- **chain closes:** False — The tensor-factor commutation, A-commutation, K-evenness, and spin-vs-generation rank distinction close algebraically from the packet. The full no-go depends on the unprovided companion G2 bridge/parity premise establishing the exact selector requirement, so that premise is not closed in the restricted packet.
+- **rationale:** Independent algebra confirms the runner's core checks: (A⊗I)(I⊗B)=A⊗B=(I⊗B)(A⊗I), C has eigenvalues 1, omega, omega^2, so S=C+C^2 has eigenvalues 2,-1,-1, and P+/- partition the C^2 spin factor rather than C^3. The runner source genuinely constructs these finite matrices and does not merely print constants or use external numerical comparators. The provided one-hop authorities are retained-grade for the rank-two-sector context, but the packet cites an additional companion G2 bridge for the load-bearing selector requirement without providing it. The result is clean as a scoped algebraic obstruction to the natural embedding, but conditional as a full no-go claim tied to that requirement.
+- **open / conditional deps cited:**
+  - `G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A.md`
 - **auditor confidence:** high
 
 ### `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`

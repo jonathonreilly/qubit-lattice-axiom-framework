@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 316,
     "high": 256,
-    "leaf": 366,
+    "leaf": 365,
     "medium": 352
   },
   "cycle_break_target_count": 9,
@@ -28415,32 +28415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
-        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_gamma5_factor_bridge_no_go.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "post_record_audit_evidence_ladder_row_bucketing_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39074,6 +39048,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 22,
-  "total_pending": 1290
+  "ready_count": 21,
+  "total_pending": 1289
 }

@@ -1,0 +1,29 @@
+loop_slug: thooft-center-vortex-pure-notation-boundary-20260607
+date: 2026-06-07
+base: origin/main
+base_sha: fbf4dfbedf8c7add83c179756584d9fc983f4488
+branch: physics-loop/thooft-center-vortex-pure-notation-boundary-20260607
+target_claim_id: thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16
+actual_current_surface_status: open
+target_status: permanent-open-gate
+trace_class: methodology
+reachability_to_target: partially_closes
+active_route: pure-notation source-boundary registration
+files_touched:
+  - docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py
+  - scripts/frontier_thooft_center_vortex_scope_repair.py
+  - logs/runner-cache/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.txt
+  - logs/runner-cache/frontier_thooft_center_vortex_scope_repair.txt
+open_imports:
+  - external confinement mechanism truth
+  - monopole condensation
+  - center-vortex condensation/percolation
+  - Wilson-loop area law and positive string tension
+  - framework observable/substrate identification
+runner_results:
+  primary: "PASS=33 FAIL=0"
+  scope_repair: "PASS=16 FAIL=0"
+audit_files_touched: false
+next_exact_action: "Re-audit as pure syntactic vocabulary registration/open gate, not as published-context support or theorem closure."
+stop_condition: "A retained theorem requires separate authority/bridge work outside this PR."

@@ -10805,6 +10805,22 @@
       "to": "pmns_selector_three_identity_support_note_2026-04-21"
     },
     {
+      "from": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+      "to": "matter_inertial_closure_note"
+    },
+    {
+      "from": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+      "to": "broad_gravity_derivation_note"
+    },
+    {
+      "from": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+      "to": "equivalence_principle_note"
+    },
+    {
       "from": "evanescent_barrier_amplitude_suppression_theorem_note",
       "to": "restricted_strong_field_closure_note"
     },
@@ -60990,6 +61006,23 @@
       "runner_path": "scripts/frontier_emergent_product_law.py",
       "title": "Emergent M1*M2 Product Law via Self-Consistent Poisson Field"
     },
+    "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07": {
+      "claim_id": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "matter_inertial_closure_note",
+        "broad_gravity_derivation_note",
+        "minimal_axioms",
+        "equivalence_principle_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6de05d5856fff8fb113ab8adbde817fe7fac2210be610da7b5889246f4c41c82",
+      "path": "docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
+      "runner_path": "scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py",
+      "title": "EP Record-Stiffness Conditional Shared-Coupling Template"
+    },
     "epsilon1_from_cp_chain_note_2026-05-03": {
       "claim_id": "epsilon1_from_cp_chain_note_2026-05-03",
       "claim_type_author_hint": null,
@@ -100400,7 +100433,7 @@
       "meta": 271,
       "no_go": 136,
       "none": 1485,
-      "open_gate": 75,
+      "open_gate": 76,
       "positive_theorem": 197
     },
     "claim_type_seed_hint_counts": {
@@ -100409,13 +100442,13 @@
       "meta": 271,
       "no_go": 249,
       "none": 462,
-      "open_gate": 150,
+      "open_gate": 151,
       "positive_theorem": 626
     },
-    "edge_count": 11368,
-    "leaf_count": 1008,
-    "node_count": 3068,
+    "edge_count": 11372,
+    "leaf_count": 1009,
+    "node_count": 3069,
     "root_count": 1013,
-    "runners_with_path": 2655
+    "runners_with_path": 2656
   }
 }

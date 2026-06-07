@@ -8544,6 +8544,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_emergent_product_law.py"
     },
+    "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07": {
+      "assert_count": 0,
+      "counts": {
+        "A": 7,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py"
+    },
     "epsilon1_from_cp_chain_note_2026-05-03": {
       "assert_count": 1,
       "counts": {
@@ -47341,6 +47353,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py": {
+      "assert_count": 0,
+      "claims": [
+        "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_epsilon1_from_cp_chain.py": {
       "assert_count": 1,
       "claims": [
@@ -70307,15 +70334,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 497,
+    "decoration_candidates": 498,
     "dominant_class_distribution": {
-      "A": 360,
+      "A": 361,
       "B": 429,
       "C": 953,
       "D": 353,
       "none": 451
     },
-    "runners_classified": 2546,
+    "runners_classified": 2547,
     "runners_with_C": 1277,
     "runners_with_D": 740
   }

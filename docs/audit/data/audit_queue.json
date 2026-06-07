@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 319,
     "high": 257,
-    "leaf": 420,
+    "leaf": 421,
     "medium": 372
   },
   "cycle_break_target_count": 13,
@@ -29366,6 +29366,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "matter_inertial_closure_note",
+        "broad_gravity_derivation_note",
+        "minimal_axioms",
+        "equivalence_principle_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "fifth_family_radial_repaired_positive_packet_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -41212,6 +41239,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 65,
-  "total_pending": 1368
+  "ready_count": 66,
+  "total_pending": 1369
 }

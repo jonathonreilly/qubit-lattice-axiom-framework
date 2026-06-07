@@ -1,0 +1,18 @@
+loop: ep-mass-recordedness
+goal: EP via mass=recordedness — generator-invariant inertial mass from the record-stiffness
+target_status: best-honest-status
+cycle: 2
+block: 01
+active_route: "inertial mass = record-stiffness (generator-invariant) -> shared coupling with gravity = recorded energy -> m_i=m_g"
+hard_residual_attacked: "the framework lacked a generator-invariant inertial mass (MATTER_INERTIAL_CLOSURE negative, 123% dispersion)"
+actual_current_surface_status: bounded-support
+files_touched:
+  - docs/EP_INERTIAL_MASS_IS_THE_RECORD_STIFFNESS_GENERATOR_INVARIANT_BOUNDED_SUPPORT_NOTE_2026-06-06.md
+  - scripts/audit_companion_ep_inertial_mass_is_record_stiffness_exact.py
+open_imports: ["#2988 record-stiffness mass (bounded)", "BROAD_GRAVITY rho=|psi|^2 (bounded)", "standard relativistic E^2=p^2+m^2 + gravity-couples-to-energy (comparator)"]
+no_go_routes: ["MATTER_INERTIAL_CLOSURE Gaussian-packet inertial mass = dispersion (sigma-dependent), 123% non-universal — do NOT reuse"]
+trace_gate_class: upstream_support
+review_disposition: self-pending
+pr_status: to-open
+next_exact_action: "connect record-stiffness to the discrete-lattice dispersion gap rigorously (cycle 2); or supply the other EP closure components"
+stop_condition: runtime/queue exhaustion

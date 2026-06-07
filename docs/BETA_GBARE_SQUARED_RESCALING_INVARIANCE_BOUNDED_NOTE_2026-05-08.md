@@ -28,6 +28,32 @@ No new axiom, import, or retained bridge is introduced. The conditional
 arithmetic is the load-bearing content; the premise packet stays admitted
 until a retained authority for it lands.
 
+## 2026-06-07 Science-Fix Source Packet for `WM`
+
+This branch adds a one-hop source theorem for the exact Wilson small-`a`
+coefficient matching premise:
+[`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md),
+with runner
+[`scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py`](../scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py)
+and cache
+[`logs/runner-cache/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.txt`](../logs/runner-cache/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.txt).
+
+The new packet proves
+
+```text
+standard Wilson plaquette action
+  + Tr(T_a T_b)=delta_ab/2
+  + small-a plaquette expansion
+  => beta = 2 N_c / g_bare^2.
+```
+
+It does not derive Wilson action-surface selection, `g_bare = 1`, or
+`beta = 6` as a physical value. The physical Wilson-surface interpretation
+remains conditional on the supplied standard Wilson action form and on any
+separate action-selection authority. If independent audit retains the new
+matching packet, this row's `WM` symbol has a direct source theorem rather
+than only a bare premise record.
+
 ## Claim
 
 This row is an explicitly conditional arithmetic lemma. It assumes the
@@ -76,6 +102,7 @@ status row.
 | Item | Role |
 |---|---|
 | Explicit premise `WM: β = 2 N_c / g_bare²` | scoped Wilson action-surface assumption; not derived or imported as a retained theorem here |
+| [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) | source-side exact matching packet deriving `WM` inside the supplied standard Wilson plaquette action and canonical trace normalization; audit-owned until independently reviewed |
 | [`BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md`](BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) | retained pure polynomial-algebra identity for `β(g,N)=2N/g²`, `β(g/c,N)=c²β(g,N)`, and invariance of `β·g²` |
 | [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) | scoped generator-basis rescaling map; it also treats Wilson matching as an input rather than deriving it |
 

@@ -1,0 +1,22 @@
+loop: wilson-small-a-matching-wm-20260607
+date: 2026-06-07
+branch: physics-loop/wilson-small-a-matching-wm-20260607
+base: origin/main
+target_status: exact-support
+current_status: packaged
+target_claim_id: beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08
+target_blocker: "derive or register retained-grade authority for the Wilson action-surface matching premise WM"
+files_touched:
+  - docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md
+  - scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py
+  - logs/runner-cache/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.txt
+  - docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md
+open_imports:
+  - Wilson plaquette action-surface selection from the framework baseline
+  - physical g_bare value selection
+  - beta=6 unless N_c=3 and g_bare^2=1 are separately supplied
+verification:
+  - "PYTHONPATH=scripts python3 scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_beta_gbare_squared_rescaling_invariance.py"
+next_exact_action: "Open PR for review-loop/audit review; do not edit audit data."
+stop_condition: "PR opened and verified."

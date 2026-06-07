@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 203 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 711 |
+| **retained_bounded** | 712 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 33 |
-| unaudited | 1379 |
+| unaudited | 1378 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1121 |
+| `audited_clean` | 1122 |
 | `audited_conditional` | 2 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1688 |
+| `unaudited` | 1687 |
 
 | claim_type | count |
 |---|---:|
@@ -627,6 +627,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -8723,6 +8724,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using {H,Γχ}=0 and Hv=λv, the two evaluations give λ⟨v|Γχ|v⟩=-λ⟨v|Γχ|v⟩, so since λ≠0, ⟨v|Γχ|v⟩=0.  _(class `A`)_
 - **chain closes:** True — The implication follows directly from Hermiticity, anti-commutation, and the nonzero eigenvalue hypothesis. The conversion from zero Γχ expectation to Q=2/3 is an explicit quadratic identity, with no external physics input needed.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the hypotheses stated in the note. The runner source performs symbolic matrix checks and explicit eigenvector checks rather than importing empirical masses, calibrated constants, or prior contested premises. No cited authority is needed for the main implication, and the note correctly limits the framework-realization question as open rather than claiming closure.
+- **auditor confidence:** high
+
+### `koide_aps_block_by_block_forcing_note_2026-04-21`
+
+- **Note:** [`KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded local C_3 density only: the cyclic body-diagonal operator has order p=3, transverse weights (1,2) up to swap, and the stated local Lefschetz density is 2/9; global PL S^3 x R/ABSS applicability and physical selected-line readout are outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-154936-7c5b3431e6-koide_aps_block_by_block_for`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given p=3 and transverse weights (1,2) for the C_3[111] operator, the local fixed-point density is L_3(1,2)=(1/3)(1/3+1/3)=2/9 because (omega-1)(omega^2-1)=3.  _(class `A`)_
+- **chain closes:** True — The retained_bounded fixed-locus bridge supplies the local C_3 operator/weight surface, and the remaining density computation is an exact algebraic simplification. The source explicitly removes the global PL/ABSS bridge and physical readout from the direct claim, so those open bridges are not needed for this bounded result.
+- **rationale:** Independent algebra checks the load-bearing identities: P^3=I, det(P-lambda I)=1-lambda^3, the nonfixed eigenvalues are omega and omega^2, and (omega-1)(omega^2-1)=3, giving L_3(1,2)=2/9. The runner source performs symbolic matrix and exact rational/algebraic checks rather than merely printing constants; its note/ledger checks are scope guards. The cited fixed-locus bridge is retained_bounded, and the source's direct claim excludes the still-open global PL/ABSS and physical-readout bridges.
 - **auditor confidence:** high
 
 ### `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`

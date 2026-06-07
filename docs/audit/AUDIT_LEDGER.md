@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 732 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1321 |
+| unaudited | 1320 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 31 |
+| ~~audited_conditional~~ | 32 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1149 |
-| `audited_conditional` | 31 |
+| `audited_conditional` | 32 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1630 |
+| `unaudited` | 1629 |
 
 | claim_type | count |
 |---|---:|
@@ -1298,6 +1298,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `global_coherence_held_out2_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7985,6 +7986,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Applying Gleason's theorem to the frame function f_m on H_Lambda with dim H_Lambda >= 3 gives f_m(|psi>) = <psi|sigma|psi>, and finite orthogonal additivity then gives m(P) = Tr(sigma P).  _(class `A`)_
 - **chain closes:** True — The finite-region Hilbert space has dimension 2^|Lambda| >= 4, so it satisfies the stated Gleason dimension hypothesis. M1-M3 make rank-one projection values a normalized bounded frame function, and finite spectral decomposition of projections transfers Gleason's rank-one formula to all projections.
 - **rationale:** The displayed quantitative identities are consistent: dim H_Lambda = 2^|Lambda|, |Lambda| >= 2 gives dimension at least 4, orthonormal rank-one projectors sum to identity, and the trace formula follows by additivity over a projection's orthonormal range basis. The cited minimal axiom authority is an accepted premise for the one-qubit-on-Z^3 substrate, and the theorem itself is scoped to the explicitly stated finite tensor-product Hilbert space. No runner was provided, so the audit is based on the note text and restricted cited authority rather than executable verification.
+- **auditor confidence:** high
+
+### `global_coherence_held_out2_note`
+
+- **Note:** [`GLOBAL_COHERENCE_HELD_OUT2_NOTE.md`](../../docs/GLOBAL_COHERENCE_HELD_OUT2_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the finite scaffolded 12-generator held-out table/log claim for the frozen free_coh threshold, including the 10/12 L2 count and archived 6/12 old-rule comparison; not a law-level or off-scaffold predictor theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-181958-67a2785d21-global_coherence_held_out2_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The frozen rule free_coh >= 7.96e-04 applied without refit to 12 new scaffolded generators achieves 10/12 = 83.3%, beating the old node-level rule's 6/12 = 50.0% by about +33 points.  _(class `B`)_
+- **chain closes:** False — The 12-row L2 arithmetic is internally supported by the note table and the frozen-log verifier, but the supplied runner path verifies archived values rather than independently recomputing the batch. The broader positive-theorem framing also needs a bridge from finite scaffolded empirical accuracy to the claimed predictor status, which the note itself leaves bounded and open.
+- **rationale:** The runner reports 11/11 checks, but those checks parse and assert a frozen log; they are not a live first-principles recomputation unless --recompute is run. The displayed L2 table does count to 10/12, and 10/12, 6/12, 17/21, and 12/21 arithmetic checks out. The packet also contains an internal typo in the L1 heading, which says 6/12 = 66.7% even though the misses listed and summary table give 8/12 = 66.7%. The audited support is therefore a bounded archived empirical table, not a clean positive theorem for a global predictor.
 - **auditor confidence:** high
 
 ### `global_coherence_off_scaffold_note`

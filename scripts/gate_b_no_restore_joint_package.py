@@ -16,11 +16,14 @@ no-restore lane the user asked for.
 
 from __future__ import annotations
 
+import argparse
 import cmath
 import math
 import random
+import re
 import time
 from dataclasses import dataclass
+from pathlib import Path
 
 
 BETA = 0.8
@@ -38,6 +41,17 @@ ROWS = [
     ("no restore drift=0.2", 0.2, 0.0),
     ("no restore drift=0.5", 0.5, 0.0),
 ]
+AUDIT_TIMEOUT_SEC = 120
+REPO_ROOT = Path(__file__).resolve().parents[1]
+FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-05-gate-b-no-restore-joint-package.txt"
+ROW_RE = re.compile(
+    r"^(?P<label>exact grid|no restore drift=[0-9.]+)\s+"
+    r"(?P<born>[0-9.]+e[+-][0-9]+)\s+"
+    r"(?P<dtv>[0-9.]+)\s+"
+    r"(?P<mi>[0-9.]+)\s+"
+    r"(?P<decoh>[0-9.]+)%$",
+    re.MULTILINE,
+)
 
 
 @dataclass
@@ -274,7 +288,7 @@ def measure_row(label: str, drift: float, restore: float) -> JointRow:
     )
 
 
-def main():
+def run_full_replay():
     t0 = time.time()
     print("=" * 76)
     print("GATE B NO-RESTORE JOINT PACKAGE HARNESS")
@@ -301,5 +315,86 @@ def main():
     print(f"\nTotal time: {time.time() - t0:.0f}s")
 
 
+def verify_frozen_log() -> int:
+    text = FROZEN_LOG.read_text(encoding="utf-8")
+    rows = {
+        m.group("label"): JointRow(
+            label=m.group("label"),
+            born=float(m.group("born")),
+            d_tv=float(m.group("dtv")),
+            mi=float(m.group("mi")),
+            decoh=float(m.group("decoh")),
+        )
+        for m in ROW_RE.finditer(text)
+    }
+
+    failures: list[str] = []
+    expected_labels = [label for label, _drift, _restore in ROWS]
+    if "GATE B NO-RESTORE JOINT PACKAGE HARNESS" not in text:
+        failures.append("missing frozen-log title")
+    if list(rows.keys()) != expected_labels:
+        failures.append(f"row labels mismatch: {list(rows.keys())}")
+    if "Treat this as bounded evidence" not in text:
+        failures.append("bounded-evidence safe interpretation missing")
+    if not re.search(r"Total time:\s*129s", text):
+        failures.append("expected frozen live replay time marker is missing")
+
+    exact = rows.get("exact grid")
+    no_restore_zero = rows.get("no restore drift=0.0")
+    if exact and no_restore_zero:
+        for attr in ("born", "d_tv", "mi", "decoh"):
+            if not math.isclose(getattr(exact, attr), getattr(no_restore_zero, attr), rel_tol=0.0, abs_tol=1e-12):
+                failures.append(f"exact grid and drift=0.0 differ on {attr}")
+
+    for label in expected_labels:
+        row = rows.get(label)
+        if row is None:
+            continue
+        if not (0.0 <= row.born < 3e-15):
+            failures.append(f"{label} Born value outside bounded replay range: {row.born:.3e}")
+        if not (0.0 <= row.d_tv <= 1.0):
+            failures.append(f"{label} d_TV outside probability range: {row.d_tv:.3f}")
+        if not (0.0 <= row.mi <= 1.0):
+            failures.append(f"{label} MI outside bounded replay range: {row.mi:.3f}")
+        if not (0.0 <= row.decoh <= 100.0):
+            failures.append(f"{label} decoherence outside percent range: {row.decoh:.1f}")
+
+    print("=" * 76)
+    print("GATE B NO-RESTORE JOINT PACKAGE FROZEN LOG VERIFIER")
+    print(f"log: {FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print("=" * 76)
+    for label in expected_labels:
+        row = rows.get(label)
+        if row is None:
+            continue
+        print(
+            f"{row.label:<20} Born={row.born:.2e} d_TV={row.d_tv:.3f} "
+            f"MI={row.mi:.3f} Decoh={row.decoh:.1f}% PASS"
+        )
+    print()
+    if failures:
+        for failure in failures:
+            print(f"FAIL: {failure}")
+        print(f"SCORECARD PASS=0 FAIL={len(failures)}")
+        return 1
+    print("SAFE READ: bounded no-restore joint-package replay; drift rows remain sensitive.")
+    print(f"SCORECARD PASS={len(rows)} FAIL=0")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--recompute",
+        action="store_true",
+        help="Run the original live replay instead of verifying the frozen log.",
+    )
+    args = parser.parse_args()
+    if args.recompute:
+        run_full_replay()
+        return 0
+    return verify_frozen_log()
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

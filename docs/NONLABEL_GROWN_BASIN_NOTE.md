@@ -1,12 +1,18 @@
 # Non-Label Grown Basin Note
 
 **Date:** 2026-04-06
-**Status:** bounded positive basin around the proposed_retained grown-row signed-source transfer
+**Status:** bounded positive basin around the grown-row signed-source transfer
 
 ## Artifact chain
 
 - [`scripts/NONLABEL_GROWN_BASIN_TARGETED.py`](/Users/jonreilly/Projects/Physics/scripts/NONLABEL_GROWN_BASIN_TARGETED.py)
 - [`logs/2026-04-06-nonlabel-grown-basin-targeted.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-nonlabel-grown-basin-targeted.txt)
+
+Runner behavior for audit replay:
+
+- default: verify the frozen log row grid, zero/neutral gates, signed response,
+  charge exponent, and `3/3` safe-read count
+- `--recompute`: run the original live targeted replay
 
 ## Question
 
@@ -47,4 +53,3 @@ retained grown row. It survives the nearest restore neighborhood at fixed
 ## Final Verdict
 
 **bounded positive basin**
-

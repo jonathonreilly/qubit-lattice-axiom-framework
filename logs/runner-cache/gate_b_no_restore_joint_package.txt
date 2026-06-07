@@ -1,11 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_no_restore_joint_package.py
-runner_sha256: f89b726b66e5fa5f1f7e3396105d005dffbbaf3dbb4f2e2ac30bd1ec98489a7e
+runner_sha256: fe277aa5a1a460ed27b04316d2c3be5726aa857ac3a0efe377f5b82b1f71d95e
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.02
-status: timeout
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
 ----- stdout -----
+============================================================================
+GATE B NO-RESTORE JOINT PACKAGE FROZEN LOG VERIFIER
+log: logs/2026-04-05-gate-b-no-restore-joint-package.txt
+============================================================================
+exact grid           Born=2.12e-15 d_TV=0.787 MI=0.568 Decoh=49.4% PASS
+no restore drift=0.0 Born=2.12e-15 d_TV=0.787 MI=0.568 Decoh=49.4% PASS
+no restore drift=0.2 Born=2.01e-15 d_TV=0.596 MI=0.314 Decoh=1.0% PASS
+no restore drift=0.5 Born=1.31e-15 d_TV=0.971 MI=0.811 Decoh=4.3% PASS
+
+SAFE READ: bounded no-restore joint-package replay; drift rows remain sensitive.
+SCORECARD PASS=4 FAIL=0
 
 ----- stderr -----
 

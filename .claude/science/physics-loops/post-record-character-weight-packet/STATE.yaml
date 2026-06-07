@@ -1,0 +1,36 @@
+loop_slug: post-record-character-weight-packet
+date: 2026-06-07
+mode: science-fix
+target_status: exact-support
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+target_claim_id: post_record_character_path_channel_weight_prototype_2026-06-06
+target_blocker_text: "runner_artifact_issue: include scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py as a helper source or supply an independent row-inventory certificate for the 9-row coverage claim."
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: runner_certificate
+stacked_on: physics-loop/post-record-stability-packet-20260607
+cycle_count: 1
+active_route: static measure helper plus bounded character/path/channel row export
+files_touched:
+  - docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md
+  - scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.txt
+  - outputs/post_record_character_path_channel_weight_slice_2026_06_07.json
+open_imports:
+  - physical measure selection remains out of scope
+  - path/channel/character rule derivation from Record remains out of scope
+closed_or_reduced_imports:
+  - target runner now statically exposes the measure helper and transitive selector helper
+  - target runner verifies the current 10-row bounded row export
+checks:
+  - command: python3 scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
+    result: SUMMARY PASS=54 FAIL=0
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py,scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py,scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py --check-only --push-mode=none
+    result: all relevant caches fresh
+  - command: git diff -- docs/audit | wc -c
+    result: "0"
+review_disposition: pass_for_scope
+pr_status: pending
+next_exact_action: "Derive an actual path/channel/character weight rule or physical selector for one row from retained premises."
+stop_condition: "This block is complete when pushed as a stacked review PR."

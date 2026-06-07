@@ -7,31 +7,18 @@ from collections import Counter, defaultdict
 from fractions import Fraction
 from pathlib import Path
 import hashlib
-import importlib.util
 import json
 import sys
 
+import frontier_post_record_measure_weight_normalization_subdivision_2026_06_06 as measure
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-MEASURE_RUNNER = ROOT / "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
+SLICE = ROOT / "outputs/post_record_character_path_channel_weight_slice_2026_06_07.json"
 PASS = 0
 FAIL = 0
 
-EXPECTED_ROWS = 9
-
-
-def load_module(name: str, path: Path):
-    spec = importlib.util.spec_from_file_location(name, path)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot load {path}")
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[name] = module
-    spec.loader.exec_module(module)
-    return module
-
-
-measure = load_module("measure_weight_subdivision", MEASURE_RUNNER)
+EXPECTED_ROWS = 10
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -104,12 +91,13 @@ def source_anchor_checks() -> None:
             "normalized finite path/channel/character weight packet",
             "Does not derive a directional path parameter",
             "Does not select or force a generation/Koide dial location.",
+            "outputs/post_record_character_path_channel_weight_slice_2026_06_07.json",
         ],
     )
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
-            "`character_path_channel_weight` | 9",
+            "`character_path_channel_weight` | 10",
             "character/path/channel weight rows need a supplied weight rule and carrier",
             "Does not derive a prior, measure, source unit, trace state, or weight rule",
         ],
@@ -192,6 +180,22 @@ def character_rows() -> list[dict]:
     ]
 
 
+def export_row(row: dict) -> dict:
+    return {
+        "claim_id": row.get("claim_id"),
+        "audit_status": row.get("audit_status"),
+        "effective_status": row.get("effective_status"),
+        "claim_type": row.get("claim_type"),
+        "note_path": row.get("note_path"),
+        "runner_path": row.get("runner_path"),
+        "measure_lane": "character_path_channel_weight",
+    }
+
+
+def expected_export_rows(rows: list[dict]) -> list[dict]:
+    return [export_row(row) for row in sorted(rows, key=lambda item: item.get("claim_id") or "")]
+
+
 def row_checks() -> list[dict]:
     section("Character/path/channel row checks")
     before = digest(LEDGER)
@@ -217,7 +221,22 @@ def row_checks() -> list[dict]:
             + f"{row.get('effective_status')} | {row.get('claim_type')} | "
             + f"{row.get('note_path')}"
         )
+    export_checks(rows, before)
     return rows
+
+
+def export_checks(rows: list[dict], ledger_sha: str) -> None:
+    section("Bounded ledger-row export checks")
+    report("bounded character/path/channel row export exists", SLICE.exists(), str(SLICE.relative_to(ROOT)))
+    if not SLICE.exists():
+        return
+
+    data = json.loads(SLICE.read_text(encoding="utf-8"))
+    expected_rows = expected_export_rows(rows)
+    report("slice export is for the character/path/channel bucket", data.get("bucket") == "character_path_channel_weight")
+    report("slice export records current ledger sha", data.get("ledger_sha256") == ledger_sha, data.get("ledger_sha256", ""))
+    report("slice export row count matches current split", data.get("row_count") == EXPECTED_ROWS, str(data.get("row_count")))
+    report("slice export rows match independently enumerated measure split", data.get("rows") == expected_rows)
 
 
 def firewall_checks() -> None:

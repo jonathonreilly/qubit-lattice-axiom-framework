@@ -143,7 +143,7 @@
     {
       "name": "source_untruncated:packet_checker",
       "pass": true,
-      "detail": "scripts/staggered_backreaction_live_capture_packet_check.py has 3743 bytes"
+      "detail": "scripts/staggered_backreaction_live_capture_packet_check.py has 5375 bytes"
     },
     {
       "name": "source_marker:packet_checker:import frontier_staggered_backreaction_capture_closure_harness as cap",
@@ -363,7 +363,7 @@
     {
       "name": "cache_sha_fresh:packet_cache",
       "pass": true,
-      "detail": "54ad62600a353a4826934404b862630c4e5aba8a21b94ea8c0825d84ccad3205 == 54ad62600a353a4826934404b862630c4e5aba8a21b94ea8c0825d84ccad3205"
+      "detail": "062e2dedffc603e15365a7f1685b55fbe56cb09d5141759be6ea26e81d6f5536 == 062e2dedffc603e15365a7f1685b55fbe56cb09d5141759be6ea26e81d6f5536"
     },
     {
       "name": "cache_exit_ok:packet_cache",

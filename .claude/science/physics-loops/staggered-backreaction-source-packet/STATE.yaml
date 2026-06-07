@@ -1,0 +1,24 @@
+loop_slug: staggered-backreaction-source-packet
+branch: physics-loop/staggered-backreaction-source-packet-20260607
+base: origin/main@924f6ebaf
+date: 2026-06-07
+mode: science_fix
+target_status: exact-support
+target_claim_id: staggered_backreaction_live_capture_packet_note_2026-05-29
+active_route: source_packet_certificate
+hard_residual: "runner_artifact_issue: provide the complete untruncated source of scripts/frontier_staggered_backreaction_prototype.py in the restricted packet and rerun the audit against that full helper chain."
+files_touched:
+  - docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md
+  - scripts/staggered_backreaction_live_capture_packet_check.py
+  - logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt
+  - logs/runner-cache/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.txt
+  - outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json
+  - .claude/science/physics-loops/staggered-backreaction-source-packet/
+open_imports:
+  - independent_audit_required
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_disposition: local_self_review_pass
+pr_status: pending_create
+next_exact_action: "Commit, push, open a physics-loop PR, then rescan main for remaining independent conditional audit blockers."
+stop_condition: "Stop only after the refreshed queue has no independent, non-duplicative science-fix target left."

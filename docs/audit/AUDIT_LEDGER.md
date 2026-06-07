@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 731 |
+| **retained_bounded** | 732 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1326 |
+| unaudited | 1325 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1147 |
+| `audited_clean` | 1148 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1635 |
+| `unaudited` | 1634 |
 
 | claim_type | count |
 |---|---:|
@@ -452,6 +452,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
@@ -6288,6 +6289,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the tracial state rho=I_3/3, Tr(rho e0):Tr(rho e1)=1/3:2/3=1:2, so the tracial reference gives r=1 and Q=1 rather than the equal-block r=1/2 and Q=2/3.  _(class `A`)_
 - **chain closes:** True — The finite projector calculation gives rank(e0)=1 and rank(e1)=2, hence trace block masses 1/3 and 2/3. The cited retained inputs supply the Q-coordinate and endpoint dictionary, so the narrowed route-pruning result closes on the supplied surface while leaving other Q=2/3 selectors outside scope.
 - **rationale:** The load-bearing math is an algebraic finite-projector calculation, not a first-principles compute from the framework baseline. Independent checking confirms the trace weights central blocks by rank and the cited endpoint dictionary sends dimension weighting to Q=1 while equal-block weighting goes to Q=2/3. The verdict is conditional rather than clean because the finite generation carrier/readout surface is an explicit supplied bridge, not derived or admitted by the restricted packet. The N1-N8 no-go gate supports only the narrowed route-pruning statement; non-tracial, chiral, finite-gap, and explicit block-measure routes remain open.
+- **auditor confidence:** high
+
+### `flavor_value_campaign_capstone_four_channel_2026-05-31`
+
+- **Note:** [`FLAVOR_VALUE_CAMPAIGN_CAPSTONE_FOUR_CHANNEL_2026-05-31.md`](../../docs/FLAVOR_VALUE_CAMPAIGN_CAPSTONE_FOUR_CHANNEL_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebraic checks for the supplied C3 circulant model H = aI + bC + conjugate(b)C^2, excluding physical channel, eta=2/9, and charged-lepton value-selection claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-181054-32faa3752a-flavor_value_campaign_capsto`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Within the supplied C3 circulant coordinate model, scale, ratio, and phase are independent coordinates, while the displayed Q values depend on the chosen readout convention.  _(class `A`)_
+- **chain closes:** True — The restricted claim closes as a bounded algebraic statement about the supplied model. The source explicitly leaves the axiom-to-H construction, physical channel identifications, eta=2/9, and readout-convention selection outside scope.
+- **rationale:** The packet no longer claims a first-principles physical flavor derivation; it claims only finite algebraic facts about an explicitly supplied C3 circulant coordinate model. Independent inspection confirms the displayed formulas are algebraic: the eigenvalue mean is a, the dispersion readout is delta-blind, the scalar gI has zero C/C^2 doublet projection, and the stated Q floors follow from their definitions at r=0. Because the physical carrier, channel bridge, eta datum, and readout selection are explicitly excluded, those open bridges do not break the narrowed claim.
 - **auditor confidence:** high
 
 ### `fm_transfer_note`

@@ -1,0 +1,27 @@
+loop: free-dirac-wigner-action-bridge
+date: 2026-06-07
+branch: physics-loop/free-dirac-wigner-action-bridge-20260607
+base: origin/main@7b90b068c
+target_claim_id: free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30
+target_note: docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md
+target_blocker: "missing_dependency_edge: cite and include the companion free-Dirac Poincare representation packet, with its retained status and the carrier/cocycle/strong-continuity proof, or replace the import with a self-contained derivation in this packet."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md
+  - scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py
+  - logs/runner-cache/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.txt
+  - docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md
+  - scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py
+  - logs/runner-cache/free_dirac_poincare_generators_selfadjointness_2026-05-30.txt
+  - outputs/free_dirac_poincare_generators_selfadjointness_2026_05_30.json
+verification:
+  - "python3 scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py"
+  - "python3 scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py"
+  - "python3 -m py_compile scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py"
+  - "git diff --check"
+next_exact_action: "Reviewer/auditor should re-audit whether the explicit Wigner-action bridge closes the missing dependency edge."
+stop_condition: "PR opened for review."

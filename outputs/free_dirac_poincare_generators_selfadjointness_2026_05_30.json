@@ -1,9 +1,9 @@
 {
   "claim_id": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
   "gaussian_route_slopes": [
-    0.5999152926503377,
+    0.5999152926503376,
     0.9187930384936202,
-    1.2680899272147963,
+    1.268089927214796,
     1.638485398438419,
     2.024599461288653,
     2.422935761972691,
@@ -53,11 +53,16 @@
       "detail": "the same first-order shift on a half-line loses norm at the boundary",
       "name": "D7 half-line control is not a unitary group",
       "pass": true
+    },
+    {
+      "detail": "all bridge anchors present",
+      "name": "D8 Wigner action bridge packet is present and cached",
+      "pass": true
     }
   ],
   "status_boundary": "bounded-support/direct-integrability repair; no Nelson Laplacian or common Gaussian analytic-vector claim remains",
   "summary": {
     "fail": 0,
-    "pass": 7
+    "pass": 8
   }
 }

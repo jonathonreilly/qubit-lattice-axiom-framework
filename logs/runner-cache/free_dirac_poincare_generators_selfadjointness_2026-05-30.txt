@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py
-runner_sha256: cb881f7573c90d6c346147ee5ea129dbd1e8f50cfe7db39915412a75da783857
+runner_sha256: 8761c1414ae023b71d03a77cb16915e380dfd56be004f0e9c4a0763e600a3266
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 [PASS] D1 boost orbital generator is Hermitian in rapidity
@@ -20,10 +20,12 @@ status: ok
        full-line momentum proxy has full ranges for K +/- i and unitary Cayley transform
 [PASS] D7 half-line control is not a unitary group
        the same first-order shift on a half-line loses norm at the boundary
+[PASS] D8 Wigner action bridge packet is present and cached
+       all bridge anchors present
 
 FREE DIRAC POINCARE DIRECT-INTEGRABILITY REPAIR CERTIFICATE
 OUTPUT_JSON=outputs/free_dirac_poincare_generators_selfadjointness_2026_05_30.json
-SCORECARD PASS=7 FAIL=0
+SCORECARD PASS=8 FAIL=0
 VERDICT: the old Nelson/Gaussian route is rejected; the repaired route
 uses the explicit unitary mass-shell action and one-parameter Stone/self-adjointness checks.
 

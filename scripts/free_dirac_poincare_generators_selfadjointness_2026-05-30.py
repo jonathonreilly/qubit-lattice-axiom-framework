@@ -25,6 +25,11 @@ SEED = 20260606
 TOL = 1e-9
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "outputs" / "free_dirac_poincare_generators_selfadjointness_2026_05_30.json"
+BRIDGE_NOTE = REPO_ROOT / "docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md"
+BRIDGE_RUNNER = REPO_ROOT / "scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py"
+BRIDGE_CACHE = REPO_ROOT / "logs/runner-cache/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.txt"
+COMPANION_NOTE = REPO_ROOT / "docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
+COMPANION_CACHE = REPO_ROOT / "logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt"
 
 
 def check(name: str, cond: bool, detail: str, results: list[dict]) -> bool:
@@ -93,6 +98,38 @@ def half_line_shift_loses_norm() -> bool:
     shifted[:-kshift] = bump[kshift:]
     n1 = math.sqrt(trapezoid(np.abs(shifted) ** 2, xs))
     return n1 < n0 - 1e-3
+
+
+def source_bridge_packet_ok() -> tuple[bool, str]:
+    checks = [
+        (BRIDGE_NOTE.is_file(), str(BRIDGE_NOTE.relative_to(REPO_ROOT))),
+        (BRIDGE_RUNNER.is_file(), str(BRIDGE_RUNNER.relative_to(REPO_ROOT))),
+        (BRIDGE_CACHE.is_file(), str(BRIDGE_CACHE.relative_to(REPO_ROOT))),
+        (COMPANION_NOTE.is_file(), str(COMPANION_NOTE.relative_to(REPO_ROOT))),
+        (COMPANION_CACHE.is_file(), str(COMPANION_CACHE.relative_to(REPO_ROOT))),
+    ]
+    if BRIDGE_NOTE.is_file():
+        body = BRIDGE_NOTE.read_text(encoding="utf-8")
+        checks.extend(
+            [
+                ("strongly continuous" in body, "bridge strong-continuity statement"),
+                ("Wigner cocycle" in body, "bridge Wigner cocycle statement"),
+                ("Stone consequence" in body, "bridge Stone consequence"),
+            ]
+        )
+    if BRIDGE_CACHE.is_file():
+        cache = BRIDGE_CACHE.read_text(encoding="utf-8")
+        checks.append(("SCORECARD PASS=35 FAIL=0" in cache, "bridge cache PASS=35 FAIL=0"))
+    if COMPANION_CACHE.is_file():
+        cache = COMPANION_CACHE.read_text(encoding="utf-8")
+        checks.extend(
+            [
+                ("P5 boost preserves H_m^+; SU(2) Wigner rotation correct" in cache, "companion Wigner cache"),
+                ("P6 invariant measure d^3p/2E boost-preserved" in cache, "companion invariant-measure cache"),
+            ]
+        )
+    missing = [label for ok, label in checks if not ok]
+    return not missing, "all bridge anchors present" if not missing else "missing: " + ", ".join(missing)
 
 
 def main() -> int:
@@ -191,6 +228,14 @@ def main() -> int:
         "D7 half-line control is not a unitary group",
         half_line_shift_loses_norm(),
         "the same first-order shift on a half-line loses norm at the boundary",
+        results,
+    )
+
+    bridge_ok, bridge_detail = source_bridge_packet_ok()
+    check(
+        "D8 Wigner action bridge packet is present and cached",
+        bridge_ok,
+        bridge_detail,
         results,
     )
 

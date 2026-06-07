@@ -6,7 +6,7 @@
 repair; independent audit owns any effective status movement.
 **Primary runner:**
 `scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py`
-(SCORECARD PASS=7 FAIL=0).
+(SCORECARD PASS=8 FAIL=0).
 **Cached runner output:**
 `logs/runner-cache/free_dirac_poincare_generators_selfadjointness_2026-05-30.txt`
 **Runner JSON:**
@@ -31,7 +31,8 @@ Gaussian claim is therefore removed, not patched.
 
 This note uses the alternate route named by the audit blocker: direct
 integrability from the explicit unitary mass-shell/Wigner action supplied by
-the companion free-Dirac Poincare packet.
+the companion free-Dirac Poincare packet and the 2026-06-07 strong-continuity
+bridge packet.
 
 ## Inputs
 
@@ -43,6 +44,16 @@ explicit free one-particle Poincare representation data:
 - real multiplication generators `H=E(p)` and `P^i=p^i`;
 - orbital rotation/boost vector fields and bounded spin/Wigner carrier terms;
 - the verified Poincare algebra formulas on the Schwartz mass-shell core.
+
+It also consumes the bridge packet
+`docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md`,
+whose runner is
+`scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py`.
+That bridge proves the explicit mass-shell/Wigner action is a strongly
+continuous unitary representation on the dense smooth carrier and records the
+Stone-theorem consequence. It cites the companion free-Dirac representation
+packet in parallel for the finite mass-shell, invariant-measure, and Wigner
+carrier checks.
 
 This repair does not derive the free Dirac carrier from baseline axioms, does
 not prove spin-statistics, and does not claim an interacting theory result.
@@ -77,10 +88,10 @@ The integration step is not Nelson's theorem. It is the direct unitary action:
 ```
 
 The mass-shell measure is invariant, the translation factor has unit modulus,
-and the Wigner carrier is unitary. The companion packet supplies the smooth
-carrier/cocycle checks; this note records the functional-analytic consequence:
-the displayed action is a strongly continuous unitary representation, and
-Stone's theorem supplies the self-adjoint one-parameter generators.
+and the Wigner carrier is unitary. The bridge packet supplies the
+strong-continuity and cocycle bridge on the dense smooth carrier: the displayed
+action is a strongly continuous unitary representation, and Stone's theorem
+supplies the self-adjoint one-parameter generators.
 
 ## What Is Proved Here
 
@@ -116,11 +127,14 @@ The paired runner checks:
   full-line signature.
 - `D7`: the half-line control is not unitary, so the self-adjointness checks are
   discriminating.
+- `D8`: the Wigner action strong-continuity bridge packet and the companion
+  representation cache are present and verify the mass-shell/Wigner support
+  edge.
 
 Current output:
 
 ```text
-SCORECARD PASS=7 FAIL=0
+SCORECARD PASS=8 FAIL=0
 ```
 
 No `docs/audit/**` file is edited by this source repair.

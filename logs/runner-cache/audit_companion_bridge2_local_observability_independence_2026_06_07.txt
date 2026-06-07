@@ -1,0 +1,12 @@
+[PASS] DETERMINED: <Z_S Z_1 Z_2> = +1, var 0 (system value = cell parity; a determined fact)
+       <Z_S Z_1 Z_2>=1.000, var=0.0e+00
+[PASS] DURABLE: value frozen under 80 generators commuting with Z_S Z_1 Z_2 (worst drift ~0)
+       worst drift=1.1e-04
+[PASS] LOCAL OBSERVABILITY FAILS: each disjoint fragment {1},{2} blind to S (<Z_S Z_1>=<Z_S Z_2>=0)
+       <Z_S Z_1>=0.0e+00, <Z_S Z_2>=0.0e+00
+[PASS] only the JOINT cell {1,2} reads S -> R_delta=1 (no Darwinism redundancy plateau)
+
+PASS=4/4
+CORRECTED VERDICT: with the right state, the witness HOLDS -- a diameter-1 LOCAL cell-parity
+record is determined + durable yet locally non-observable (disjoint fragments blind, R_delta=1).
+Z^3-locality does NOT force local observability. Bridge 2 is a GENUINE ADMISSION. Wave-5 confirmed.

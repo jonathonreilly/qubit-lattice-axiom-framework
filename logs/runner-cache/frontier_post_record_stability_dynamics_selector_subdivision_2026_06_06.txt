@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
-runner_sha256: e9eb10eed00037c1445e540b6ea86f6b1d1255fec5cd022e40c237746da09efb
+runner_sha256: dac7c33d7fdbf46da298d53a96998c6c9ffd6438ddc7ee0d4ca264ac5d5f8d5d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.04
+elapsed_sec: 0.82
 status: ok
 ----- stdout -----
 
@@ -17,13 +17,18 @@ PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md cont
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: physical arrow, kernel, Hamiltonian, instrument, clock, or
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 90
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 97
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stable settings into selected dials
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
 PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py exists
 PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py contains: def selector_subbucket
 PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py contains: stability_or_dynamics_selector
 PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py contains: EXPECTED_SUBCOUNTS
+PASS logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt contains: ===== runner cache v1 =====
+PASS logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt contains: SELECTOR_DIAL_ROWS=248
+PASS logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt contains: STABILITY_OR_DYNAMICS_SELECTOR_ROWS=97
+PASS logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt contains: exact selector/dial ledger slice is printed in full
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: selected dial value
@@ -32,16 +37,17 @@ PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: 
 ------------------------------------------------------------------------------
 Stability/dynamics subdivision checks
 ------------------------------------------------------------------------------
-PASS stability/dynamics selector row count is current snapshot :: 90
-PASS sub-bucket counts sum to stability/dynamics count :: Counter({'flow_or_thermal_stability': 56, 'arrow_or_dynamics_bridge': 34})
-PASS expected sub-bucket counts match :: Counter({'flow_or_thermal_stability': 56, 'arrow_or_dynamics_bridge': 34})
+PASS stability/dynamics selector row count is current snapshot :: 97
+PASS sub-bucket counts sum to stability/dynamics count :: Counter({'flow_or_thermal_stability': 60, 'arrow_or_dynamics_bridge': 37})
+PASS expected sub-bucket counts match :: Counter({'flow_or_thermal_stability': 60, 'arrow_or_dynamics_bridge': 37})
+PASS exact stability/dynamics ledger slice is printed in full :: all rows by sub-bucket below
 PASS representative row present in flow_or_thermal_stability :: flavor_r_half_is_the_records_flow_separatrix_2026-06-02
 PASS representative row present in arrow_or_dynamics_bridge :: a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1
-PASS audit ledger hash is unchanged :: bb12b00f567bffb76b022141430357986adf892361defc9044cca6486ca1f9dc
+PASS audit ledger hash is unchanged :: 10a983d30a3620c7c448b4bb161157e817ae63664e47d14ce75504869cab6b4b
 
 Stability/dynamics sub-bucket counts:
-  arrow_or_dynamics_bridge: 34
-  flow_or_thermal_stability: 56
+  arrow_or_dynamics_bridge: 37
+  flow_or_thermal_stability: 60
 
 [arrow_or_dynamics_bridge]
   a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1 | unaudited | unaudited | bounded_theorem | docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md
@@ -52,6 +58,35 @@ Stability/dynamics sub-bucket counts:
   color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md
   flavor_interacting_matter_build_note_2026-05-30 | audited_renaming | audited_renaming | bounded_theorem | docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md
   g_newton_skeleton_selection_bounded_note_2026-05-10_gnewtong1 | unaudited | unaudited | bounded_theorem | docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md
+  generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23 | audited_clean | retained_bounded | bounded_theorem | docs/GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md
+  interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06 | audited_conditional | audited_conditional | positive_theorem | docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md
+  koide_a1_probe_operator_class_bounded_note_2026-05-08_probe6 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_OPERATOR_CLASS_BOUNDED_NOTE_2026-05-08_probe6.md
+  koide_a1_probe_retained_u1_hunt_bounded_obstruction_note_2026-05-09_probe14 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_RETAINED_U1_HUNT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe14.md
+  koide_a1_route_e_kostant_weyl_bounded_obstruction_note_2026-05-08_routee | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_ROUTE_E_KOSTANT_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routee.md
+  koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_HERMITIAN_RECORDS_IMPORT_REQUIRED_NARROW_THEOREM_NOTE_2026-06-02.md
+  koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_MASSIVE_DOUBLING_REDUCES_TO_TRANSFER_POSITIVITY_NOTE_2026-06-02.md
+  koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_MATTER_ATTACHMENT_GATE_EXTRA_ASSUMPTIONS_REVIEW_NOTE_2026-06-02.md
+  koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md
+  koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md
+  koide_onsite_weyl_boost_from_bivectors_note_2026-06-01 | audited_clean | retained_bounded | bounded_theorem | docs/KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01.md
+  koide_p1_collapses_frame_residuals_note_2026-06-01 | unaudited | unaudited | bounded_theorem | docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md
+  koide_records_pointer_grounds_block_channel_note_2026-05-31 | audited_clean | retained_bounded | bounded_theorem | docs/KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md
+  koide_taste_cube_cyclic_source_descent_note_2026-04-18 | unaudited | unaudited | bounded_theorem | docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md
+  observable_principle_from_axiom_note | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  pmns_chart_constant_q_koide_brannen_lift_narrow_theorem_note_2026-05-17 | unaudited | unaudited | bounded_theorem | docs/PMNS_CHART_CONSTANT_Q_KOIDE_BRANNEN_LIFT_NARROW_THEOREM_NOTE_2026-05-17.md
+  post_record_character_path_channel_weight_prototype_2026-06-06 | audited_conditional | audited_conditional | bounded_theorem | docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md
+  post_record_dynamics_family_lift_closeout_index_2026-06-06 | audited_conditional | audited_conditional | meta | docs/POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md
+  post_record_finite_likelihood_score_interface_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_FINITE_LIKELIHOOD_SCORE_INTERFACE_2026-06-06.md
+  post_record_selector_tangent_readout_weight_prototype_2026-06-06 | audited_conditional | audited_conditional | positive_theorem | docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md
+  post_record_transition_kernel_interface_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_TRANSITION_KERNEL_INTERFACE_2026-06-06.md
+  primordial_spectrum_note | unaudited | unaudited | bounded_theorem | docs/PRIMORDIAL_SPECTRUM_NOTE.md
+  qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04 | audited_clean | retained_pending_chain | bounded_theorem | docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md
+  record_axiom_audit_application_map_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/RECORD_AXIOM_AUDIT_APPLICATION_MAP_2026-06-06.md
+  record_prerecord_instrument_kernel_gate_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md
+  single_axiom_hilbert_note | audited_renaming | audited_renaming | bounded_theorem | docs/SINGLE_AXIOM_HILBERT_NOTE.md
+  teleportation_retained_axis_operator_algebra_closure_note | audited_clean | retained_bounded | bounded_theorem | docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md
+  two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md
+  yt_ward_identity_derivation_theorem | unaudited | unaudited | bounded_theorem | docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md
 
 [flow_or_thermal_stability]
   arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md
@@ -62,6 +97,58 @@ Stability/dynamics sub-bucket counts:
   dynamics_form_from_record_preservation_gauge_invariant_local_class_bounded_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md
   flavor_einselection_2sector_modulo_kreality_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md
   flavor_emergent_chirality_no_transport_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md
+  flavor_find_j_round1_jcs_measure_neutral_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md
+  flavor_missing_axiom_carrier_measure_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
+  flavor_r_half_is_the_records_flow_separatrix_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md
+  generation_dial_dynamics_stability_classifier_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md
+  generation_record_arrow_measure_selector_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/GENERATION_RECORD_ARROW_MEASURE_SELECTOR_2026-06-05.md
+  generation_record_partition_selector_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/GENERATION_RECORD_PARTITION_SELECTOR_2026-06-05.md
+  hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md
+  higgs_mass_s4_born_extension_bounded_note_2026-05-10_higgss4 | unaudited | unaudited | bounded_theorem | docs/HIGGS_MASS_S4_BORN_EXTENSION_BOUNDED_NOTE_2026-05-10_higgsS4.md
+  koide_a1_probe_continuum_limit_bounded_obstruction_note_2026-05-09_probe15 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_CONTINUUM_LIMIT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe15.md
+  koide_a1_probe_lattice_non_conjugation_bounded_obstruction_note_2026-05-09_probe17 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_LATTICE_NON_CONJUGATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe17.md
+  koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_Q_READOUT_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe16.md
+  koide_a1_probe_rg_fixed_point_bounded_obstruction_note_2026-05-08_probe5 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md
+  koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  koide_bae_probe_hw_sector_identification_bounded_obstruction_note_2026-05-09_probe27 | unaudited | unaudited | bounded_theorem | docs/KOIDE_BAE_PROBE_HW_SECTOR_IDENTIFICATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe27.md
+  koide_bae_probe_interacting_dynamics_bounded_obstruction_note_2026-05-09_probe28 | unaudited | unaudited | bounded_theorem | docs/KOIDE_BAE_PROBE_INTERACTING_DYNAMICS_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe28.md
+  koide_bae_probe_kappa_prediction_test_partial_falsification_note_2026-05-09_probe29 | unaudited | unaudited | bounded_theorem | docs/KOIDE_BAE_PROBE_KAPPA_PREDICTION_TEST_PARTIAL_FALSIFICATION_NOTE_2026-05-09_probe29.md
+  koide_bae_probe_lepton_triplet_c3_cycle_bounded_note_2026-05-09_probe23 | unaudited | unaudited | bounded_theorem | docs/KOIDE_BAE_PROBE_LEPTON_TRIPLET_C3_CYCLE_BOUNDED_NOTE_2026-05-09_probe23.md
+  koide_bae_probe_native_lattice_flow_bounded_obstruction_note_2026-05-09_probe21 | unaudited | unaudited | bounded_theorem | docs/KOIDE_BAE_PROBE_NATIVE_LATTICE_FLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe21.md
+  koide_bae_probe_physical_extremization_bounded_obstruction_note_2026-05-09_probe25 | unaudited | unaudited | bounded_theorem | docs/KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md
+  koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md
+  koide_delta_rank2_selector_is_the_clifford_chirality_domain_wall_edge_bounded_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/KOIDE_DELTA_RANK2_SELECTOR_IS_THE_CLIFFORD_CHIRALITY_DOMAIN_WALL_EDGE_BOUNDED_NOTE_2026-06-05.md
+  koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_FINITE_BETA_WEIGHT_IS_THE_PARTITION_BIT_NOTE_2026-06-02.md
+  koide_kappa_two_orbit_dimension_factorization_note_2026-04-19 | unaudited | unaudited | bounded_theorem | docs/KOIDE_KAPPA_TWO_ORBIT_DIMENSION_FACTORIZATION_NOTE_2026-04-19.md
+  koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23 | unaudited | unaudited | bounded_theorem | docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md
+  koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04 | audited_clean | retained_pending_chain | no_go | docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md
+  koide_records_objectivity_conditional_note_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md
+  koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_RP_SPECTRUM_REDUCE_TO_TRANSFER_POSITIVITY_NARROW_THEOREM_NOTE_2026-06-02.md
+  koide_s_substep4_aclambda_new_science_note_2026-05-08_probes_substep4_aclambda | unaudited | unaudited | bounded_theorem | docs/KOIDE_S_SUBSTEP4_ACLAMBDA_NEW_SCIENCE_NOTE_2026-05-08_probeS_substep4_aclambda.md
+  koide_x_bae_pauli_antisymmetrization_note_2026-05-08_probex_bae_pauli | unaudited | unaudited | bounded_theorem | docs/KOIDE_X_BAE_PAULI_ANTISYMMETRIZATION_NOTE_2026-05-08_probeX_bae_pauli.md
+  koide_x_l1_threshold_heavy_quark_wilson_note_2026-05-08_probex_l1_threshold | unaudited | unaudited | bounded_theorem | docs/KOIDE_X_L1_THRESHOLD_HEAVY_QUARK_WILSON_NOTE_2026-05-08_probeX_L1_threshold.md
+  koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3 | unaudited | unaudited | bounded_theorem | docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md
+  persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_BLENDED_READOUT_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md
+  post_record_finite_target_kernel_stability_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_FINITE_TARGET_KERNEL_STABILITY_2026-06-06.md
+  post_record_flow_thermal_stable_setting_certificate_2026-06-06 | audited_conditional | audited_conditional | positive_theorem | docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md
+  post_record_generation_koide_stable_location_index_2026-06-06 | audited_conditional | audited_conditional | positive_theorem | docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md
+  post_record_measure_weight_normalization_subdivision_2026-06-06 | audited_conditional | audited_conditional | meta | docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+  post_record_stability_dynamics_selector_subdivision_2026-06-06 | audited_conditional | audited_conditional | meta | docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md
+  post_record_stable_kernel_count_audit_interface_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_STABLE_KERNEL_COUNT_AUDIT_INTERFACE_2026-06-06.md
+  post_record_stable_kernel_expected_frequency_interface_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md
+  post_record_supplied_family_lift_certificate_interface_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md
+  post_record_supplied_selection_rule_interface_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_SUPPLIED_SELECTION_RULE_INTERFACE_2026-06-06.md
+  post_record_two_state_markov_stability_interface_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_TWO_STATE_MARKOV_STABILITY_INTERFACE_2026-06-06.md
+  record_classicalization_dynamics_firewall_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md
+  record_equal_letter_stable_location_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/RECORD_EQUAL_LETTER_STABLE_LOCATION_2026-06-05.md
+  record_prior_stability_selector_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/RECORD_PRIOR_STABILITY_SELECTOR_2026-06-05.md
+  record_production_interface_principle_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md
+  scalar_selector_remaining_open_imports_2026-04-20 | unaudited | unaudited | bounded_theorem | docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md
+  scalar_selector_synthesis_note_2026-04-19 | unaudited | unaudited | bounded_theorem | docs/SCALAR_SELECTOR_SYNTHESIS_NOTE_2026-04-19.md
+  stable_post_record_dial_location_certificate_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md
+  teleportation_apparatus_dynamics_closure_note | audited_clean | retained_bounded | bounded_theorem | docs/TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md
+  wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09 | unaudited | unaudited | bounded_theorem | docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md
+  yt_bridge_hessian_selector_note | unaudited | unaudited | bounded_theorem | docs/YT_BRIDGE_HESSIAN_SELECTOR_NOTE.md
 
 
 ------------------------------------------------------------------------------
@@ -74,10 +161,10 @@ PASS stable setting selects dial flag is false
 PASS generation/Koide dial selected flag is false
 PASS Record-derived physical arrow flag is false
 
-SUMMARY: PASS=30 FAIL=0
-STABILITY_DYNAMICS_SELECTOR_ROWS=90
-FLOW_OR_THERMAL_STABILITY_ROWS=56
-ARROW_OR_DYNAMICS_BRIDGE_ROWS=34
+SUMMARY: PASS=36 FAIL=0
+STABILITY_DYNAMICS_SELECTOR_ROWS=97
+FLOW_OR_THERMAL_STABILITY_ROWS=60
+ARROW_OR_DYNAMICS_BRIDGE_ROWS=37
 AUDIT_LEDGER_WRITTEN=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE

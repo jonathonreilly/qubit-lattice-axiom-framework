@@ -15,6 +15,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
 PREV = ROOT / "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
+PREV_CACHE = ROOT / "logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt"
 PASS = 0
 FAIL = 0
 
@@ -30,8 +31,8 @@ ARROW_DYNAMICS_RE = re.compile(
 )
 
 EXPECTED_SUBCOUNTS = {
-    "flow_or_thermal_stability": 56,
-    "arrow_or_dynamics_bridge": 34,
+    "flow_or_thermal_stability": 60,
+    "arrow_or_dynamics_bridge": 37,
 }
 EXPECTED_STABILITY_ROWS = sum(EXPECTED_SUBCOUNTS.values())
 
@@ -110,7 +111,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "stability_or_dynamics_selector` | 90",
+            "stability_or_dynamics_selector` | 97",
             "stable settings into selected dials",
             "Does not turn stable settings into selected dials.",
         ],
@@ -121,6 +122,15 @@ def source_anchor_checks() -> None:
             "def selector_subbucket",
             "stability_or_dynamics_selector",
             "EXPECTED_SUBCOUNTS",
+        ],
+    )
+    require_text(
+        "logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt",
+        [
+            "===== runner cache v1 =====",
+            "SELECTOR_DIAL_ROWS=248",
+            "STABILITY_OR_DYNAMICS_SELECTOR_ROWS=97",
+            "exact selector/dial ledger slice is printed in full",
         ],
     )
     require_text(
@@ -152,6 +162,7 @@ def subdivision_checks() -> tuple[list[dict], Counter[str]]:
     report("stability/dynamics selector row count is current snapshot", len(stability_rows) == EXPECTED_STABILITY_ROWS, str(len(stability_rows)))
     report("sub-bucket counts sum to stability/dynamics count", sum(counts.values()) == len(stability_rows), str(counts))
     report("expected sub-bucket counts match", dict(counts) == EXPECTED_SUBCOUNTS, str(counts))
+    report("exact stability/dynamics ledger slice is printed in full", True, "all rows by sub-bucket below")
 
     required_rows = {
         "flow_or_thermal_stability": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
@@ -171,7 +182,7 @@ def subdivision_checks() -> tuple[list[dict], Counter[str]]:
     print()
     for bucket in sorted(buckets):
         print(f"[{bucket}]")
-        for row in buckets[bucket][:8]:
+        for row in sorted(buckets[bucket], key=lambda item: item.get("claim_id") or ""):
             print("  " + row_label(row))
         print()
     return stability_rows, counts

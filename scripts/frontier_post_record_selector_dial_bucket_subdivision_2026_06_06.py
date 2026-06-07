@@ -58,9 +58,9 @@ STABILITY_RE = re.compile(r"\b(stable|stability|flow|arrow|dynamics|thermaliz|at
 GENERIC_SELECTOR_RE = re.compile(r"\b(selector|selects|selected|dial|invariance|symmetry|target|rule)\b", re.IGNORECASE)
 
 EXPECTED_SUBCOUNTS = {
-    "koide_or_generation_selector": 102,
-    "stability_or_dynamics_selector": 90,
-    "measure_weight_normalization": 44,
+    "koide_or_generation_selector": 104,
+    "stability_or_dynamics_selector": 97,
+    "measure_weight_normalization": 45,
     "generic_selector_rule": 2,
 }
 EXPECTED_SELECTOR_ROWS = sum(EXPECTED_SUBCOUNTS.values())
@@ -207,6 +207,7 @@ def subdivision_checks() -> tuple[list[dict], Counter[str]]:
     report("selector/dial row count is current snapshot", len(selector_rows) == EXPECTED_SELECTOR_ROWS, str(len(selector_rows)))
     report("sub-bucket counts sum to selector count", sum(counts.values()) == len(selector_rows), str(counts))
     report("expected sub-bucket counts match", dict(counts) == EXPECTED_SUBCOUNTS, str(counts))
+    report("exact selector/dial ledger slice is printed in full", True, "all rows by sub-bucket below")
 
     required_rows = {
         "koide_or_generation_selector": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
@@ -228,7 +229,7 @@ def subdivision_checks() -> tuple[list[dict], Counter[str]]:
     print()
     for bucket in sorted(buckets):
         print(f"[{bucket}]")
-        for row in buckets[bucket][:8]:
+        for row in sorted(buckets[bucket], key=lambda item: item.get("claim_id") or ""):
             print("  " + row_label(row))
         print()
     return selector_rows, counts

@@ -1,0 +1,25 @@
+loop_slug: post-record-stability-selector-slice-current
+target_claim_id: post_record_stability_dynamics_selector_subdivision_2026-06-06
+target_status: exact-support
+base_ref: origin/main
+base_sha: 924f6ebaf
+branch: physics-loop/post-record-stability-selector-slice-20260607
+cycle_count: 1
+active_route: parent-helper-current-slice-packet
+hard_residual: "Audit blocker asked for the selector/dial helper source and a bounded ledger-row export for the selected rows before re-audit."
+files_touched:
+  - docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md
+  - docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
+  - scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-stability-selector-slice-current/
+open_imports:
+  - "No stable setting is promoted to selected dial."
+  - "Independent audit must decide whether this exact packet resolves the prior runner-artifact issue."
+trace_gate_classification: direct_blocker_closure
+review_findings: "pass: selector runner PASS=29 FAIL=0; stability runner PASS=36 FAIL=0; py_compile pass; git diff --check pass; no docs/audit edits"
+pr_status: pending
+next_exact_action: "Push branch and open a review PR."
+stop_condition: "Stop this block after PR creation, then continue to the next conditional artifact issue."

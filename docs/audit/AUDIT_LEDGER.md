@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 732 |
+| **retained_bounded** | 733 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 36 |
-| unaudited | 1320 |
+| unaudited | 1319 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 30 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1149 |
+| `audited_clean` | 1150 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1629 |
+| `unaudited` | 1628 |
 
 | claim_type | count |
 |---|---:|
@@ -630,6 +630,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9107,6 +9108,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The endpoint configuration at P=1 remains feasible under the PSD, Hausdorff, Gram, support, area-law, and admitted lower-bound constraints.  _(class `A`)_
 - **chain closes:** True — Setting p1=p2=p3=p4=r1=r2=q1=q2=pr=pq=rq=1 makes the Hankel, shifted Hausdorff, and Gram matrices PSD and satisfies p4<=p2, r1<=p2, q1<=p4, support bounds, and p1>=0.4225, so the upper optimum cannot be below 1.
 - **rationale:** Clean only as an open gate, not as a retained lattice plaquette value or nontrivial bracket theorem. The lower bound p1>=0.4225 is imported/admitted, not derived by the SDP. The runner hard-codes that lower bound and hard-codes MC/bridge comparators for reporting, but those constants are not needed for the scoped upper-bound non-improvement result.
+- **auditor confidence:** high
+
+### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-region theorem: for M_d(C), including qubit finite regions A_Lambda ~= M_{2^|Lambda|}(C), any density matrix invariant under all unitary conjugations is the normalized trace density I_d/d; no PRR or pre-record reference-state identification is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-182256-f9ce22a3e4-inner_automorphism_invarianc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If rho is fixed by conjugation with every unitary, then it commutes with every U in U(d), so the commutant is C I_d and trace normalization forces rho = I_d/d.  _(class `A`)_
+- **chain closes:** True — The matrix-algebra argument closes: full unitary conjugation invariance puts rho in the scalar commutant, and Tr rho = 1 fixes the scalar to 1/d. The framework input is only the finite-region matrix algebra, supplied by the accepted axiom premise and retained UHF authority, while PRR is explicitly not used.
+- **rationale:** The load-bearing step is a standard finite-dimensional algebraic closure, independently checked by the commutant argument and by the displayed sign/permutation route. The runner source actually tests the off-diagonal, diagonal-equality, normalization, partial-trace-compatibility, and source-boundary claims rather than merely printing constants. The cited minimal axiom memo is an accepted-premise carve-out, the Powers UHF note is retained, and the source note does not import the open PRR/reference-state identification.
 - **auditor confidence:** high
 
 ### `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16`

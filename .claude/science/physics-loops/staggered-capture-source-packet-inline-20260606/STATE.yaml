@@ -1,0 +1,24 @@
+loop_slug: staggered-capture-source-packet-inline-20260606
+target_claim_id: staggered_backreaction_live_capture_packet_note_2026-05-29
+target_status: exact-support
+branch: physics-loop/staggered-capture-source-packet-inline-20260606
+base: origin/main
+cycle_count: 1
+active_route: inline source-packet exposure checks into the primary live capture packet runner
+hard_residual: "Independent audit must decide whether the repaired restricted packet is sufficient for the row; this branch only closes the named missing-helper-source packet blocker."
+files_touched:
+  - docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md
+  - scripts/staggered_backreaction_live_capture_packet_check.py
+  - logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt
+  - logs/runner-cache/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.txt
+  - outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json
+open_imports:
+  - independent audit verdict
+  - continuum/physical gravitational closure
+no_go_routes:
+  - treating packet-completeness repair as effective retained status without audit
+trace_gate_classification: direct_blocker_closure
+review_findings: local packet-scope pass; external review/audit still required
+pr_status: ready_to_open
+next_exact_action: "Open review PR and hand to reviewer/auditor."
+stop_condition: "This coherent packet-repair block is complete; continue campaign on the next conditional source-packet target."

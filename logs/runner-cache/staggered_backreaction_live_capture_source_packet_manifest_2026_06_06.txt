@@ -33,7 +33,7 @@ STAGGERED BACKREACTION LIVE CAPTURE: SOURCE PACKET MANIFEST
 [PASS] note_links_manifest_path:layered_cache: logs/runner-cache/frontier_staggered_layered_backreaction.txt
 [PASS] manifest_path_exists:prototype_helper_cache: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
 [PASS] note_links_manifest_path:prototype_helper_cache: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
-[PASS] source_untruncated:packet_checker: scripts/staggered_backreaction_live_capture_packet_check.py has 3743 bytes
+[PASS] source_untruncated:packet_checker: scripts/staggered_backreaction_live_capture_packet_check.py has 10615 bytes
 [PASS] source_marker:packet_checker:import frontier_staggered_backreaction_capture_closure_harness as cap: import frontier_staggered_backreaction_capture_closure_harness as cap present
 [PASS] source_marker:packet_checker:cap.cycle.make_random_geometric: cap.cycle.make_random_geometric present
 [PASS] source_marker:packet_checker:cap.layered._build_layered_family: cap.layered._build_layered_family present
@@ -77,7 +77,7 @@ STAGGERED BACKREACTION LIVE CAPTURE: SOURCE PACKET MANIFEST
 [PASS] source_marker:prototype_helper_source:def _force_from_phi: def _force_from_phi present
 [PASS] source_marker:prototype_helper_source:def _measure_family: def _measure_family present
 [PASS] cache_runner_matches:packet_cache: scripts/staggered_backreaction_live_capture_packet_check.py == scripts/staggered_backreaction_live_capture_packet_check.py
-[PASS] cache_sha_fresh:packet_cache: 54ad62600a353a4826934404b862630c4e5aba8a21b94ea8c0825d84ccad3205 == 54ad62600a353a4826934404b862630c4e5aba8a21b94ea8c0825d84ccad3205
+[PASS] cache_sha_fresh:packet_cache: d565030aa10fd9a7d5f786d871dc442ac762398d2e8868897739c7d2b50ab798 == d565030aa10fd9a7d5f786d871dc442ac762398d2e8868897739c7d2b50ab798
 [PASS] cache_exit_ok:packet_cache: exit_code=0 status=ok
 [PASS] cache_snippet_present:packet_cache: ASSERTIONS: PASS
 [PASS] cache_runner_matches:capture_harness_cache: scripts/frontier_staggered_backreaction_capture_closure_harness.py == scripts/frontier_staggered_backreaction_capture_closure_harness.py
@@ -106,3 +106,4 @@ SUMMARY: STAGGERED CAPTURE SOURCE PACKET PASS=91 FAIL=0
 Output written: outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json
 
 ----- stderr -----
+

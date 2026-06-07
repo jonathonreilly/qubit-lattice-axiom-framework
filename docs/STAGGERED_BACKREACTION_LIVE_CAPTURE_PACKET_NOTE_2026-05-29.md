@@ -81,6 +81,31 @@ Current source-packet output:
 SUMMARY: STAGGERED CAPTURE SOURCE PACKET PASS=91 FAIL=0
 ```
 
+## 2026-06-06 Primary-Runner Packet Inlining Repair
+
+The 2026-06-06 audit still treated the row as conditional because the
+restricted packet needed the complete transitive helper source for
+`scripts/frontier_staggered_backreaction_prototype.py`. The primary live
+capture runner now checks that source-packet exposure inline. After asserting
+the bounded live capture packet, it verifies:
+
+- the capture harness, iterative source-map, cycle-battery, layered holdout,
+  prototype helper, manifest cache, and manifest JSON paths are linked from
+  this note;
+- the transitive helper sources contain the load-bearing source-density,
+  Poisson solve, Hamiltonian/evolution, and force-readout routines;
+- the helper caches are SHA-fresh and clean-exit;
+- the source-packet manifest cache and JSON report zero failures.
+
+The primary runner reports:
+
+```text
+INLINE SOURCE PACKET: PASS=78 FAIL=0
+```
+
+This remains a packet-completeness repair. It does not promote the row and
+does not claim continuum or physical gravitational closure.
+
 ## Claim Boundary
 
 This packet supports only a finite bounded comparison on the current

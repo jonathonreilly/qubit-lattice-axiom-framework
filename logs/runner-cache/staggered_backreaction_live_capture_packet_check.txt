@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_backreaction_live_capture_packet_check.py
-runner_sha256: 54ad62600a353a4826934404b862630c4e5aba8a21b94ea8c0825d84ccad3205
+runner_sha256: d565030aa10fd9a7d5f786d871dc442ac762398d2e8868897739c7d2b50ab798
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.04
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -31,10 +31,10 @@ CAPTURE BATTERY: random_geometric (36 nodes)
 CAPTURE BATTERY: growing (48 nodes)
   [B1] Zero-source: F=0.0000e+00, |Phi|=0.0000e+00 PASS
   [B2] Linearity: R^2=0.992977 PASS
-  [B3] Additivity: residual=1.7022e-16 PASS
+  [B3] Additivity: residual=2.4784e-16 PASS
   [B4] Force: +3.3040e-01 TOWARD PASS
   [B5] Iter stability: 15/15 TOWARD PASS
-  [B6] Norm: drift=0.0000e+00 PASS
+  [B6] Norm: drift=2.2204e-16 PASS
     gauss     : F=+3.3040e-01 TW
     color-0   : F=+1.6852e-01 TW
     color-1   : F=+4.8992e-01 TW
@@ -56,6 +56,89 @@ SAFE READ
   bounded live packet only: no old stale table or continuum closure
   [PASS (C)] live capture packet
 ASSERTIONS: PASS
+
+================================================================================================
+INLINE SOURCE-PACKET EXPOSURE CHECKS
+================================================================================================
+[PASS] packet path exists: scripts/frontier_staggered_backreaction_capture_closure_harness.py
+[PASS] note links packet path: scripts/frontier_staggered_backreaction_capture_closure_harness.py
+[PASS] packet path exists: logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt
+[PASS] note links packet path: logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt
+[PASS] packet path exists: scripts/frontier_staggered_backreaction_iterative.py
+[PASS] note links packet path: scripts/frontier_staggered_backreaction_iterative.py
+[PASS] packet path exists: logs/runner-cache/frontier_staggered_backreaction_iterative.txt
+[PASS] note links packet path: logs/runner-cache/frontier_staggered_backreaction_iterative.txt
+[PASS] packet path exists: scripts/frontier_staggered_cycle_battery.py
+[PASS] note links packet path: scripts/frontier_staggered_cycle_battery.py
+[PASS] packet path exists: logs/runner-cache/frontier_staggered_cycle_battery.txt
+[PASS] note links packet path: logs/runner-cache/frontier_staggered_cycle_battery.txt
+[PASS] packet path exists: scripts/frontier_staggered_layered_backreaction.py
+[PASS] note links packet path: scripts/frontier_staggered_layered_backreaction.py
+[PASS] packet path exists: logs/runner-cache/frontier_staggered_layered_backreaction.txt
+[PASS] note links packet path: logs/runner-cache/frontier_staggered_layered_backreaction.txt
+[PASS] packet path exists: scripts/frontier_staggered_backreaction_prototype.py
+[PASS] note links packet path: scripts/frontier_staggered_backreaction_prototype.py
+[PASS] packet path exists: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
+[PASS] note links packet path: logs/runner-cache/frontier_staggered_backreaction_prototype.txt
+[PASS] packet path exists: scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py
+[PASS] note links packet path: scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py
+[PASS] packet path exists: logs/runner-cache/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.txt
+[PASS] note links packet path: logs/runner-cache/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.txt
+[PASS] packet path exists: outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json
+[PASS] note links packet path: outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json
+[PASS] source appears untruncated: scripts/frontier_staggered_backreaction_capture_closure_harness.py: 18888 bytes
+[PASS] source marker present in scripts/frontier_staggered_backreaction_capture_closure_harness.py: import frontier_staggered_backreaction_iterative as iterative
+[PASS] source marker present in scripts/frontier_staggered_backreaction_capture_closure_harness.py: import frontier_staggered_cycle_battery as cycle
+[PASS] source marker present in scripts/frontier_staggered_backreaction_capture_closure_harness.py: import frontier_staggered_layered_backreaction as layered
+[PASS] source marker present in scripts/frontier_staggered_backreaction_capture_closure_harness.py: def _measure_cycle_graph
+[PASS] source marker present in scripts/frontier_staggered_backreaction_capture_closure_harness.py: def _measure_holdout
+[PASS] source appears untruncated: scripts/frontier_staggered_backreaction_iterative.py: 11883 bytes
+[PASS] source marker present in scripts/frontier_staggered_backreaction_iterative.py: import frontier_staggered_backreaction_prototype as base
+[PASS] source marker present in scripts/frontier_staggered_backreaction_iterative.py: def _apply_mapping
+[PASS] source marker present in scripts/frontier_staggered_backreaction_iterative.py: def _source_density
+[PASS] source marker present in scripts/frontier_staggered_backreaction_iterative.py: def _measure_family
+[PASS] source appears untruncated: scripts/frontier_staggered_cycle_battery.py: 17189 bytes
+[PASS] source marker present in scripts/frontier_staggered_cycle_battery.py: def make_random_geometric
+[PASS] source marker present in scripts/frontier_staggered_cycle_battery.py: def make_growing
+[PASS] source marker present in scripts/frontier_staggered_cycle_battery.py: def _source_density
+[PASS] source marker present in scripts/frontier_staggered_cycle_battery.py: def _solve_phi
+[PASS] source marker present in scripts/frontier_staggered_cycle_battery.py: def _build_H
+[PASS] source appears untruncated: scripts/frontier_staggered_layered_backreaction.py: 15091 bytes
+[PASS] source marker present in scripts/frontier_staggered_layered_backreaction.py: def _build_layered_family
+[PASS] source marker present in scripts/frontier_staggered_layered_backreaction.py: def _source_density
+[PASS] source marker present in scripts/frontier_staggered_layered_backreaction.py: def _solve_phi
+[PASS] source marker present in scripts/frontier_staggered_layered_backreaction.py: def _force_from_phi
+[PASS] source appears untruncated: scripts/frontier_staggered_backreaction_prototype.py: 20482 bytes
+[PASS] source marker present in scripts/frontier_staggered_backreaction_prototype.py: def _make_graphs
+[PASS] source marker present in scripts/frontier_staggered_backreaction_prototype.py: def _source_density
+[PASS] source marker present in scripts/frontier_staggered_backreaction_prototype.py: def _solve_phi
+[PASS] source marker present in scripts/frontier_staggered_backreaction_prototype.py: def _build_hamiltonian
+[PASS] source marker present in scripts/frontier_staggered_backreaction_prototype.py: def _evolve_cn
+[PASS] source marker present in scripts/frontier_staggered_backreaction_prototype.py: def _force_from_phi
+[PASS] cache runner matches source: logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt: scripts/frontier_staggered_backreaction_capture_closure_harness.py
+[PASS] cache SHA fresh: logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt: 8eee0a1c509997614b5bd488fcf048a0b157ee28f4c264e3876ef2528495b969 == 8eee0a1c509997614b5bd488fcf048a0b157ee28f4c264e3876ef2528495b969
+[PASS] cache exits cleanly: logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt: exit_code=0 status=ok
+[PASS] cache contains expected marker: logs/runner-cache/frontier_staggered_backreaction_capture_closure_harness.txt: STAGGERED BACKREACTION CAPTURE-CLOSURE HARNESS
+[PASS] cache runner matches source: logs/runner-cache/frontier_staggered_backreaction_iterative.txt: scripts/frontier_staggered_backreaction_iterative.py
+[PASS] cache SHA fresh: logs/runner-cache/frontier_staggered_backreaction_iterative.txt: 2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497 == 2ac39d606949af29d6171fbd17018a9321dea4b1abf2e70ba434bcca928b3497
+[PASS] cache exits cleanly: logs/runner-cache/frontier_staggered_backreaction_iterative.txt: exit_code=0 status=ok
+[PASS] cache contains expected marker: logs/runner-cache/frontier_staggered_backreaction_iterative.txt: STAGGERED BACKREACTION ITERATIVE SOURCE-MAPPING PROBE
+[PASS] cache runner matches source: logs/runner-cache/frontier_staggered_cycle_battery.txt: scripts/frontier_staggered_cycle_battery.py
+[PASS] cache SHA fresh: logs/runner-cache/frontier_staggered_cycle_battery.txt: d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48 == d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48
+[PASS] cache exits cleanly: logs/runner-cache/frontier_staggered_cycle_battery.txt: exit_code=0 status=ok
+[PASS] cache contains expected marker: logs/runner-cache/frontier_staggered_cycle_battery.txt: STAGGERED FERMION
+[PASS] cache runner matches source: logs/runner-cache/frontier_staggered_layered_backreaction.txt: scripts/frontier_staggered_layered_backreaction.py
+[PASS] cache SHA fresh: logs/runner-cache/frontier_staggered_layered_backreaction.txt: 833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd == 833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd
+[PASS] cache exits cleanly: logs/runner-cache/frontier_staggered_layered_backreaction.txt: exit_code=0 status=ok
+[PASS] cache contains expected marker: logs/runner-cache/frontier_staggered_layered_backreaction.txt: STAGGERED LAYERED BACKREACTION BRIDGE
+[PASS] cache runner matches source: logs/runner-cache/frontier_staggered_backreaction_prototype.txt: scripts/frontier_staggered_backreaction_prototype.py
+[PASS] cache SHA fresh: logs/runner-cache/frontier_staggered_backreaction_prototype.txt: 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975 == 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975
+[PASS] cache exits cleanly: logs/runner-cache/frontier_staggered_backreaction_prototype.txt: exit_code=0 status=ok
+[PASS] cache contains expected marker: logs/runner-cache/frontier_staggered_backreaction_prototype.txt: STAGGERED SOURCE-GENERATED BACKREACTION PROTOTYPE
+[PASS] source-packet manifest cache reports zero failures
+[PASS] source-packet manifest JSON exists: outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json
+[PASS] source-packet manifest JSON reports zero failures: {'pass': 91, 'fail': 0}
+INLINE SOURCE PACKET: PASS=78 FAIL=0
 
 ----- stderr -----
 

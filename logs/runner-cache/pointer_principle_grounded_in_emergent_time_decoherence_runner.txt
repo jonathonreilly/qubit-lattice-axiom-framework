@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/pointer_principle_grounded_in_emergent_time_decoherence_runner.py
+runner_sha256: 23a120de7fe8c901646ec4b95e16d874beddd98230d3010aabd21e504251ee2b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+==============================================================================
+A1. (c) the H_S = M + |K|(J-I) eigenbasis IS the dominant of {M, K}
+==============================================================================
+  [PASS] |K| << split: H_S eigenbasis is the CORNER (mass) basis, 3 distinct eigenvalues  | distinct mass eigenvalues, no degeneracy
+  [PASS] |K| >> split: H_S eigenbasis is the C3/DFT basis, carries the singlet W=(1,1,1)/sqrt3  | max overlap with W = 1.0000 (the trimaximal column)
+
+==============================================================================
+A2. (b) energy-monitoring decoherence EINSELECTS the H_S eigenbasis (dynamics)
+==============================================================================
+   M-dominant: max off-diagonal coherence in H_S eigenbasis after evolution = 0.157
+   K-dominant: max off-diagonal coherence in H_S eigenbasis after evolution = 0.007
+  [PASS] energy-monitoring decoherence kills coherences in the H_S eigenbasis (einselection)  | the H_S eigenbasis is the pointer/record basis
+
+==============================================================================
+A3. (a) energy-monitoring is grounded in the emergent-time structure
+==============================================================================
+  [PASS] energy H_S generates emergent-time evolution; its eigenstates are the durable records  | records = decoherence-stable H_S eigenstates (energy = the I-axis generator)
+
+==============================================================================
+A4. (d) flavor consequence: leptons -> PMNS trimaximal; quarks -> CKM small
+==============================================================================
+   PMNS has a trimaximal column (|entries|=1/sqrt3): True
+   V_CKM near-diagonal (no trimaximal column): True
+  [PASS] leptons (e corner / nu C3) -> PMNS trimaximal column; quarks (both corner) -> CKM small  | the grounded pointer principle reproduces large-PMNS / small-CKM
+
+runner_check_breakdown = {A: 5, B: 0, C: 0, D: 0, total_pass: 5}
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

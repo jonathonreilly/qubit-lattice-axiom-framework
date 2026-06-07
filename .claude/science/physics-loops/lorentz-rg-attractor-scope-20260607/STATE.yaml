@@ -1,0 +1,16 @@
+slug: lorentz-rg-attractor-scope-20260607
+target_claim_id: emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06
+base: origin/main
+status: ready_for_review_pr
+actual_current_surface_status: bounded-support
+active_route: conditional_algebra_scope_repair
+files_touched:
+  - docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md
+  - scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py
+  - logs/runner-cache/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.txt
+open_imports:
+  - retained one-loop velocity RG bridge
+  - retained spatial-only power-divergent mixing bridge
+  - physical fixed-point gamma and LV-bound sufficiency theorem
+next_exact_action: "Open review PR."
+stop_condition: "PR opened and verified."

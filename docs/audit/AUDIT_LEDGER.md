@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 740 |
+| **retained_bounded** | 741 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1300 |
+| unaudited | 1299 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 31 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1160 |
+| `audited_clean` | 1161 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1611 |
+| `unaudited` | 1610 |
 
 | claim_type | count |
 |---|---:|
@@ -1093,6 +1093,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `stable_post_record_dial_location_certificate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_3d_self_gravity_sign_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `staggered_backreaction_live_capture_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -16196,6 +16197,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `STAGGERED_BACKREACTION_NOTE.md`
   - `STAGGERED_LAYERED_BACKREACTION_NOTE.md`
+- **auditor confidence:** high
+
+### `staggered_backreaction_live_capture_packet_note_2026-05-29`
+
+- **Note:** [`STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md`](../../docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite bounded comparison on the current staggered capture-closure runner for the hard-coded lap_selfmix50_capture3o2 closure on two cycle-bearing graph families and one layered holdout.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-190925-f2097ecfa4-staggered_backreaction_live_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner imports the current capture-closure harness and asserts that both cycle-bearing batteries score 9/9 while the cycle and layered holdout gaps improve by about 2x with the zero-source, TOWARD, linearity, additivity, and norm guardrails surviving.  _(class `C`)_
+- **chain closes:** True — The primary runner calls the exposed helper chain to build the graphs, solve the screened graph Poisson field, evolve the staggered Hamiltonian, and compute the reported force/gap/readout quantities rather than printing fixed expected values. Independent arithmetic on the displayed output checks the mean R2, cycle gap ratio, and holdout gap ratio within the stated precision.
+- **rationale:** Within the stated bounded scope, the load-bearing result is a first-principles finite computation over the supplied runner definitions and transitive helper sources. The helper chain contains real graph construction, Laplacian/Poisson solves, Hamiltonian evolution, force readout, closure iteration, and guardrail checks; the contested summary values are not hard-coded as expected outputs. The external-kernel row is an internally defined finite comparator for gap characterization, not an empirical PDG/lattice/observation import, and the note explicitly disclaims physical or continuum closure.
 - **auditor confidence:** high
 
 ### `staggered_backreaction_live_green_packet_note_2026-05-29`

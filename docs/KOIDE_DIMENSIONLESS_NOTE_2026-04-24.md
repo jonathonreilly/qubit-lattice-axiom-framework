@@ -23,6 +23,22 @@ closure language. This repair keeps the exact finite result:
 Therefore the finite two-channel plus endpoint algebra does not force full
 dimensionless closure. Extra physical source/readout selection would be needed.
 
+The live runner records that boundary with explicit negative closeout labels:
+
+```text
+Q_DIMENSIONLESS_OBJECTION_CLOSES_Q=FALSE
+DELTA_DIMENSIONLESS_OBJECTION_CLOSES_DELTA=FALSE
+FULL_DIMENSIONLESS_OBJECTION_CLOSES_LANE=FALSE
+```
+
+The remaining residuals are likewise named explicitly rather than hidden in the
+prose:
+
+```text
+RESIDUAL_Q=derive_physical_background_source_zero_or_Z_erasure
+RESIDUAL_DELTA=derive_selected_line_local_boundary_source_and_based_endpoint
+```
+
 ## Exact Claim
 
 Let the two-channel source background be

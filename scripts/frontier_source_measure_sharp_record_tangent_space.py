@@ -2,10 +2,11 @@
 """Sharp-record probability tangent theorem for source/measure P-cal.
 
 This route removes one layer of semantics: on a finite sharp-record sample
-space, every smooth physical record-probability intervention has a
-Radon-Nikodym score tangent.  The normalized trace reference supplies the
-canonical Fisher pairing.  A primitive signed record is therefore a unit
-tangent vector; scaling it by lambda changes the tangent norm to lambda^2.
+space, every smooth supplied record-probability intervention has a
+Radon-Nikodym score tangent.  The retained finite Fisher theorem now supplies
+the canonical pairing.  A primitive signed record is therefore a unit tangent
+vector; scaling it by lambda changes the tangent norm to lambda^2.  Physical
+source semantics and strict same-source top/W response remain out of scope.
 """
 
 from __future__ import annotations
@@ -63,11 +64,20 @@ def part1_boundary() -> dict[str, Any]:
         "Y_T source unit",
         "Status boundary",
         "Non-claims",
+        "2026-06-07 authority split",
+        "SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06",
+        "SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05",
     ):
         check(f"note contains required phrase: {phrase}", phrase in note)
-    check("note marks exact-support status", "actual_current_surface_status: exact-support" in note)
+    check("note marks bounded-support status", "actual_current_surface_status: bounded-support" in note)
     check("note forbids bare retained", "bare_retained_allowed: false" in note)
-    return {"actual_status": "exact-support"}
+    for phrase in (
+        "derive physical source semantics",
+        "strict same-source top/W response",
+        "unbounded top-Yukawa closure",
+    ):
+        check(f"boundary phrase present: {phrase}", phrase in note)
+    return {"actual_status": "bounded-support"}
 
 
 def part2_probability_tangent_space() -> dict[str, Any]:
@@ -151,7 +161,7 @@ def main() -> int:
     result["summary"] = {
         "pass": PASS_COUNT,
         "fail": FAIL_COUNT,
-        "actual_current_surface_status": "exact-support",
+        "actual_current_surface_status": "bounded-support",
         "trace_class": "direct_blocker_closure_candidate",
         "proposal_allowed": False,
     }

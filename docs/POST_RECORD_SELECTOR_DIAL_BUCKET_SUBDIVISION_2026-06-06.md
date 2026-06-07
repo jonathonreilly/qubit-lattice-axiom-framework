@@ -3,7 +3,7 @@
 **Date:** 2026-06-06
 **Type:** meta
 **Claim type:** meta
-**Status:** exact-support / read-only audit companion branch-local for selector/dial bucket
+**Status:** exact-support / read-only audit companion source-side for selector/dial bucket
 subdivision; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
@@ -23,12 +23,12 @@ On the current ledger snapshot:
 
 | Selector/dial sub-bucket | Rows |
 |---|---:|
-| `koide_or_generation_selector` | 102 |
-| `stability_or_dynamics_selector` | 90 |
-| `measure_weight_normalization` | 44 |
+| `koide_or_generation_selector` | 105 |
+| `stability_or_dynamics_selector` | 94 |
+| `measure_weight_normalization` | 45 |
 | `generic_selector_rule` | 2 |
 
-Total: `238` selector/dial rows.
+Total: `246` selector/dial rows.
 
 ## Meaning
 
@@ -75,8 +75,8 @@ bare_retained_allowed: false
 The runner verifies:
 
 - source anchors in the row-bucketing and evidence-ladder notes;
-- current selector/dial row count is `238`;
-- sub-bucket counts sum to `238`;
+- current selector/dial row count is `246`;
+- sub-bucket counts sum to `246`;
 - expected sub-bucket counts match the current snapshot;
 - representative rows are present in each sub-bucket;
 - audit ledger hash is unchanged after the scan;

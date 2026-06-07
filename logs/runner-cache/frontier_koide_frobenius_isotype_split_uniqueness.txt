@@ -3,7 +3,7 @@ runner: scripts/frontier_koide_frobenius_isotype_split_uniqueness.py
 runner_sha256: 193c9bbb4999181cc7b4e5a43f24142e1a2266f773765cac498b8bb2f1880d02
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 [PASS] [A] note boundary contains: Claim type:** no_go

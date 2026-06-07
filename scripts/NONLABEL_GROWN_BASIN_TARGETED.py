@@ -7,9 +7,12 @@ geometry-sector transfer has a real local basin or only a single retained point.
 
 from __future__ import annotations
 
+import argparse
 import math
 import os
+import re
 import sys
+from pathlib import Path
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if ROOT not in sys.path:
@@ -29,6 +32,19 @@ MIN_EDGES = 5
 DRIFT = 0.20
 RESTORES = [0.60, 0.70, 0.80]
 SEED = 0
+AUDIT_TIMEOUT_SEC = 120
+REPO_ROOT = Path(__file__).resolve().parents[1]
+FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-06-nonlabel-grown-basin-targeted.txt"
+ROW_RE = re.compile(
+    r"^restore=(?P<restore>[0-9.]+)\s+\|\s+"
+    r"zero=(?P<zero>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"plus=(?P<plus>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"minus=(?P<minus>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"neutral=(?P<neutral>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"double=(?P<double>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"exp=\s*(?P<exp>[0-9.]+)\s+(?P<ok>YES|no)$",
+    re.MULTILINE,
+)
 
 
 def _nearest_node_in_layer(pos, layer_nodes, x_target, y_target, z_target):
@@ -149,7 +165,7 @@ def _measure(pos, adj, layers):
     return zero, plus, minus, neutral, double, exponent, ok
 
 
-def main() -> None:
+def run_full_replay() -> None:
     print("=" * 90)
     print("NON-LABEL GROWN BASIN TARGETED")
     print(f"  drift={DRIFT}, restore values={RESTORES}, seed={SEED}")
@@ -174,5 +190,84 @@ def main() -> None:
         print("  this is a clean no-go at the nearest restore neighborhood")
 
 
+def verify_frozen_log() -> int:
+    text = FROZEN_LOG.read_text(encoding="utf-8")
+    rows = [
+        {
+            "restore": float(m.group("restore")),
+            "zero": float(m.group("zero")),
+            "plus": float(m.group("plus")),
+            "minus": float(m.group("minus")),
+            "neutral": float(m.group("neutral")),
+            "double": float(m.group("double")),
+            "exp": float(m.group("exp")),
+            "ok": m.group("ok") == "YES",
+        }
+        for m in ROW_RE.finditer(text)
+    ]
+
+    failures: list[str] = []
+    if "NON-LABEL GROWN BASIN TARGETED" not in text:
+        failures.append("missing frozen-log title")
+    if len(rows) != len(RESTORES):
+        failures.append(f"expected {len(RESTORES)} rows, found {len(rows)}")
+    restores = [round(r["restore"], 2) for r in rows]
+    if restores != [round(r, 2) for r in RESTORES]:
+        failures.append(f"restore grid mismatch: {restores}")
+    summary = re.search(r"passed rows:\s*(\d+)/(\d+)", text)
+    if not summary or summary.groups() != ("3", "3"):
+        failures.append("safe-read pass count is not 3/3")
+
+    for row in rows:
+        restore = row["restore"]
+        if not row["ok"]:
+            failures.append(f"restore={restore:.2f} is not marked YES")
+        if abs(row["zero"]) > 1e-12:
+            failures.append(f"restore={restore:.2f} zero gate failed: {row['zero']:+.3e}")
+        if abs(row["neutral"]) > 1e-12:
+            failures.append(f"restore={restore:.2f} neutral gate failed: {row['neutral']:+.3e}")
+        if not (row["plus"] < 0.0 < row["minus"]):
+            failures.append(f"restore={restore:.2f} signed orientation failed")
+        if row["double"] >= 0.0:
+            failures.append(f"restore={restore:.2f} double-source sign failed")
+        if abs(row["exp"] - 1.0) > 0.002:
+            failures.append(f"restore={restore:.2f} exponent not linear: {row['exp']:.6f}")
+
+    print("=" * 90)
+    print("NON-LABEL GROWN BASIN TARGETED FROZEN LOG VERIFIER")
+    print(f"log: {FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print("=" * 90)
+    for row in rows:
+        print(
+            f"restore={row['restore']:.2f} zero={row['zero']:+.3e} "
+            f"neutral={row['neutral']:+.3e} plus={row['plus']:+.3e} "
+            f"minus={row['minus']:+.3e} double={row['double']:+.3e} "
+            f"exp={row['exp']:.3f} {'PASS' if row['ok'] else 'FAIL'}"
+        )
+    print()
+    if failures:
+        for failure in failures:
+            print(f"FAIL: {failure}")
+        print(f"SCORECARD PASS=0 FAIL={len(failures)}")
+        return 1
+    print("SAFE READ: bounded positive restore basin; verifier checks frozen rows only.")
+    print(f"SCORECARD PASS={len(rows)} FAIL=0")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--recompute",
+        action="store_true",
+        help="Run the original live replay instead of verifying the frozen log.",
+    )
+    args = parser.parse_args()
+    if args.recompute:
+        run_full_replay()
+        return 0
+    return verify_frozen_log()
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

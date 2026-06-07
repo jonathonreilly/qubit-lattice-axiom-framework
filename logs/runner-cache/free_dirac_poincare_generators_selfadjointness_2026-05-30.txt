@@ -1,11 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py
-runner_sha256: cb881f7573c90d6c346147ee5ea129dbd1e8f50cfe7db39915412a75da783857
+runner_sha256: bd6832a9b630f9f9d2c543d5ccc606fe3c10fcfdd8645dc6eff24e76227dc684
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.15
 status: ok
 ----- stdout -----
+[PASS] S1 note links companion free-Dirac Poincare representation note
+       companion note path is explicit in the restricted source packet
+[PASS] S2 note links companion free-Dirac Poincare runner
+       companion runner path is explicit in the restricted source packet
+[PASS] S3 note links companion free-Dirac Poincare cache
+       companion runner cache path is explicit in the restricted source packet
+[PASS] S4 companion note carries the expected claim id
+       the linked companion note is the exact packet consumed by this repair
+[PASS] S5 companion runner exposes the Poincare algebra and Wigner checks
+       source import exposes finite Poincare closure and mass-shell/Wigner checks
+[PASS] S6 companion runner exposes the invariant-measure check
+       source import exposes d^3p/(2E) boost-invariance check
+[PASS] S7 companion cache is a passing representation certificate
+       cached companion representation runner output is present and passing
 [PASS] D1 boost orbital generator is Hermitian in rapidity
        K_orb=-i d/dzeta on L2(R,dzeta)
 [PASS] D2 rapidity change gives E d/dp = d/dzeta
@@ -23,7 +37,7 @@ status: ok
 
 FREE DIRAC POINCARE DIRECT-INTEGRABILITY REPAIR CERTIFICATE
 OUTPUT_JSON=outputs/free_dirac_poincare_generators_selfadjointness_2026_05_30.json
-SCORECARD PASS=7 FAIL=0
+SCORECARD PASS=14 FAIL=0
 VERDICT: the old Nelson/Gaussian route is rejected; the repaired route
 uses the explicit unitary mass-shell action and one-parameter Stone/self-adjointness checks.
 

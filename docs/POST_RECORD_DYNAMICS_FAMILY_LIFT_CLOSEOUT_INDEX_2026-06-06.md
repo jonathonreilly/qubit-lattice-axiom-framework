@@ -2,14 +2,16 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / extended closeout index
-**Claim type:** methodology
-**Status:** exact-support branch-local for indexing the extended dynamics plus
+**Claim type:** meta
+**Status:** exact-support source-side for indexing the extended dynamics plus
 family-lift stack; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py`](../scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.txt)
+**Source-packet export:**
+[`outputs/post_record_dynamics_family_lift_closeout_index_2026_06_06_source_packet.json`](../outputs/post_record_dynamics_family_lift_closeout_index_2026_06_06_source_packet.json)
 
 ## Result
 
@@ -27,9 +29,10 @@ retained/unbounded and family-lift campaign push.
 | [#2868](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2868) | exact-support | dynamics campaign closeout index |
 | [#2871](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2871) | exact-support | retained/unbounded dynamics gate |
 | [#2874](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2874) | no-go | finite-to-unbounded family-lift no-go |
-| [#2875](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2875) | exact-support | supplied family-lift certificate interface |
+| [#2875](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2875) | bounded-support | supplied family-lift certificate interface |
 
-The extended stack has seven `exact-support` layers and three `no-go` layers.
+The extended stack has six `exact-support` layers, one `bounded-support` layer,
+and three `no-go` layers.
 
 ## Meaning
 
@@ -43,7 +46,7 @@ The campaign now has both sides of the bounded/unbounded story:
 - pre-record law carries probabilities;
 - post-record records carry realized information, counts, and markers.
 
-This index does not apply audit verdicts. It is a branch-local handoff map for
+This index does not apply audit verdicts. It is a source-side handoff map for
 review.
 
 ## Boundaries
@@ -79,14 +82,20 @@ The runner verifies:
 
 - all 10 stack PR entries are present in this index;
 - cached summaries are present for each stack layer;
+- each stack layer has an upstream source note, runner source, SHA-fresh cache,
+  and the source note names its primary runner;
 - the extended index consumes the repaired directed-certificate
   `SUMMARY: PASS=60 FAIL=0`, repaired stack-map `SUMMARY: PASS=47 FAIL=0`,
   and repaired campaign-closeout `SUMMARY: PASS=46 FAIL=0` certificates;
-- the stack has seven `exact-support` entries and three `no-go` entries;
+- the stack has six `exact-support` entries, one `bounded-support` entry, and
+  three `no-go` entries;
 - the extended family-lift trio #2871/#2874/#2875 is present;
-- no audit verdict, audit-data write, retained promotion, unsupplied kernel
-  selection, Record-derived rule/target/weight, sample-as-law, dial selection,
-  or finite-alone unbounded retained flag is set.
+- repo-surface scans find no audit verdict, audit-data write, retained
+  promotion, unsupplied kernel selection, Record-derived rule/target/weight,
+  sample-as-law, dial selection, or finite-alone unbounded retained flag set to
+  true;
+- the audit ledger hash is unchanged during the scan;
+- a JSON source-packet export is written outside `docs/audit`.
 
 Run:
 

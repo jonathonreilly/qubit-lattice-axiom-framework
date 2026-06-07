@@ -30,32 +30,57 @@ the same precise way the sibling note
 `SM_GSTAR_RESIDUAL_RETIREMENT_FSB_U1Y_BOUNDED_NOTE_2026-05-29.md` reduced R-FSB
 and R-U1Y: by isolating exactly the quantity the `g_*` arithmetic consumes
 (the thermalized per-generation degree-of-freedom **count**) and separating the
-finite representation multiplicities from two physical bridges that remain
-bounded premises: the right-handed gauge-charged inventory readout and the
-thermal Weyl particle/antiparticle dof factor.
+finite representation multiplicities from the physical bridges that remain
+outside this row: the right-handed gauge-charged inventory readout, the
+Dirac/Weyl thermal-counting bridge, and the thermal-inventory identification
+surface.
+
+## 2026-06-07 stacked Weyl-dof source update
+
+This stacked source update follows the Dirac/Weyl dof repair packet
+[`DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`](DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md).
+That packet replaces the raw textbook on-shell-counting convention with an
+executable finite-rank certificate for `gamma.p - m` and verifies the Weyl
+two-state count by chirality splitting:
+
+```text
+rank(gamma.p - m) = 2 on shell,
+dim_C ker(gamma.p - m) = 2 per energy branch,
+massless Dirac kernel dim_C = 2,
+chirality projectors select 1 + 1 massless on-shell dimensions.
+```
+
+This row therefore no longer treats the Weyl `*2` as an unattributed textbook
+counting premise on this stacked surface. It routes that factor through the
+Dirac/Weyl dof bridge, subject to review/audit of that upstream packet. This
+does **not** derive the Dirac equation, physical Wick rotation, the full thermal
+inventory, the right-handed inventory, or the `nu_R` thermal-exclusion fork.
+It also does **not** edit the audit ledger or predict an audit verdict.
 
 The quantity `g_*` consumes from the matter sector is the **thermalized**
 per-generation count `30 = 15 (gauge-charged Weyl) * 2 (dof per Weyl)`, summed
 over `3` generations to `90`. This count uses **strictly less** than the full
 one-generation matter closure: it needs color `3`, isospin `2`, generation
 count `3`, the left-handed `(2,3)+(2,1)` carrier split, a bounded right-handed
-gauge-charged inventory bridge for `u_R,d_R,e_R`, and a bounded thermal-Weyl
-factor `2`. It **does not** thermally count the gauge-singlet `nu_R` and
+gauge-charged inventory bridge for `u_R,d_R,e_R`, and the Dirac/Weyl dof bridge
+for the thermal Weyl factor `2`. It **does not** thermally count the
+gauge-singlet `nu_R` and
 **does not** consume the neutral-singlet branch convention that fixes the
 hypercharge labelling.
 
 This note does **not** claim the full one-generation matter closure is derived,
 does **not** claim the `nu_R` thermal exclusion is derived, and does **not**
 claim the neutral-singlet branch convention is derived. It also does **not**
-claim that the right-handed gauge-charged inventory bridge or the physical
-thermal Weyl dof bridge is derived by the cited retained rows. Those stay
-separate. The reduction is precisely scoped: the arithmetic is exact once these
-named bounded inputs are accepted.
+claim that the right-handed gauge-charged inventory bridge, the Dirac/Weyl
+free-field mass-shell surface, or the physical thermal inventory is derived by
+this row. Those stay separate. The reduction is precisely scoped: the arithmetic
+is exact once these named bounded/dependency-routed inputs are accepted.
 The overall `g_*` census stays a `bounded_theorem`; this note sharpens R-MATTER
 from "matter content sourced from the unaudited closure note" to "finite
 gauge-multiplicity arithmetic with explicit bounded bridges; residual =
-I12 + R-RH + R-WEYL-THERMAL + physical Weyl-spin identification bridge
-(R-SPIN) + neutral-singlet branch convention".
+I12 + R-RH + Dirac/Weyl dof dependency review + physical Weyl-spin /
+thermal-inventory identification bridge (R-SPIN) + neutral-singlet branch
+convention".
 
 ## 1. What `g_*` consumes from the matter sector
 
@@ -68,8 +93,8 @@ N_fermions  =  n_gen * (per-generation thermalized dof).
 The per-generation thermalized dof is built from the **gauge-charged** Weyl
 fermions only. A Weyl fermion contributes `2` relativistic dof (the
 particle/antiparticle pair of the single physical helicity at high `T`; the
-factor `2` is carried here as an explicit bounded thermal-counting premise, not
-as a retained conclusion of the spin-statistics cardinality row). The
+factor `2` is routed here through the Dirac/Weyl dof bridge rather than through
+the spin-statistics cardinality row alone). The
 gauge-charged multiplicities used in the arithmetic are:
 
 | Weyl fermion | `(SU(3)_c, SU(2)_L)` rep | Weyl multiplicity | how the multiplicity arises |
@@ -102,8 +127,8 @@ The `g_*` dof-count thus consumes only:
    per-rep assignment `Q_L, u_R, d_R, L_L, e_R`) — partially sourced and
    partially bounded in §2;
 2. the generation count `n_gen = 3` — retained (§2);
-3. the `2`-dof-per-Weyl thermal-counting bridge — explicit bounded premise
-   (§3.2);
+3. the `2`-dof-per-Weyl thermal-counting bridge — dependency-routed through
+   the Dirac/Weyl dof bridge (§3.2);
 4. the `nu_R` thermal-exclusion premise (I12) — a named import, **not** derived
    (§4);
 
@@ -211,25 +236,36 @@ Each gauge-charged Weyl fermion contributes `2` relativistic dof to the high-`T`
 census: one particle and one antiparticle state of the single physical helicity
 of a massless Weyl fermion. This is the `* 2` in `15 * 2 = 30`.
 
-### 3.2 Bounded source class of the thermal Weyl factor
+### 3.2 Source class of the thermal Weyl factor
 
 The particle/antiparticle doubling (the count `2` per Weyl) is the
-thermal-counting factor used by this `g_*` census. The retained
+thermal-counting factor used by this `g_*` census. On this stacked surface the
+count is routed through the Dirac/Weyl dof bridge
+[`DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`](DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md):
+R1 supplies spin-cardinality support, R3 supplies the particle/antiparticle
+pairing, R2 supplies chirality halving, retained Q1 supplies the finite
+`Cl(3,1)` cell, and the Q2 source-local rank certificate verifies that the
+Dirac mass-shell operator leaves a two-complex-dimensional solution space per
+energy branch with a one-and-one massless chirality split.
+
+The retained
 [`SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md)
 (ledger `effective_status: retained`, `claim_type: positive_theorem`) supports
 the finite CAR/cardinality side, but it does **not** by itself prove the
 physical thermalized Weyl particle/antiparticle contribution used in `g_*`.
-This note therefore carries the `2`-dof-per-Weyl factor as an explicit bounded
-thermal-counting premise, `P_Weyl_thermal_dof`.
+The stacked Dirac/Weyl bridge is the intended source packet for that count; it
+still requires independent review/audit before this downstream row can treat
+`P_Weyl_thermal_dof` as retired.
 
 The **per-site spin-`1/2` representation** itself (the half-integer spin carrier
 per site) is tracked separately by
 [`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md).
 For the **count** `2` the census consumes, the retained cardinality theorem is
-supporting context, not a retained physical thermal bridge. The remaining
-R-SPIN point is narrower: this note does not close the local carrier row, nor
-does it derive the physical bridge that identifies the thermalized high-`T`
-matter inventory specifically as Weyl-spin matter.
+supporting context, not by itself a retained physical thermal bridge. The
+remaining R-SPIN / thermal-inventory point is narrower: this note does not
+derive the physical bridge that identifies the thermalized high-`T` matter
+inventory specifically as the free Weyl-spin matter sector counted by the
+Dirac/Weyl bridge.
 
 ## 4. The genuine residual after the arithmetic reduction
 
@@ -265,13 +301,13 @@ conditional algebraic completion and does not by itself prove that this is the
 physical thermalized right-handed gauge-charged inventory. This row carries that
 use as explicit bounded premise `P_RH_inventory`.
 
-### 4.3 R-WEYL-THERMAL — the physical Weyl thermal dof bridge
+### 4.3 R-WEYL-THERMAL — the Dirac/Weyl dof dependency boundary
 
-The factor `2` per Weyl is the standard thermal particle/antiparticle counting
-used in this bounded census. The cited finite CAR/cardinality authority supports
-the algebraic side, but does not close the physical high-`T` thermal readout.
-This row carries that bridge as explicit bounded premise
-`P_Weyl_thermal_dof`.
+The factor `2` per Weyl is no longer a raw textbook premise on this stacked
+surface. It is routed through the Dirac/Weyl dof bridge named in §3.2. What
+remains for this row is the dependency boundary: that bridge must pass review
+and independent audit, and any downstream use must keep the physical
+free-Dirac / Weyl thermal-inventory identification honest.
 
 ### 4.4 R-SPIN — the physical Weyl-spin identification bridge
 
@@ -318,7 +354,7 @@ thermalized count does not require.
 | isospin multiplicity `2` | `SU(2)_L` doublet dim | (in the unaudited closure) | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md) | retained |
 | per-rep gauge-charged assignment | `Q_L:6, u_R:3, d_R:3, L_L:2, e_R:1 = 15` | (in the unaudited closure) | LH split from [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md); RH inventory from explicit `P_RH_inventory` with support from [`ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md`](ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md) | mixed: decoration-under-retained + bounded premise |
 | generation count `3` | `n_gen = 3` | (already retained-sourced) | [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) | retained |
-| Weyl-to-dof factor `2` | particle/antiparticle thermal count | (already retained-sourced) | explicit `P_Weyl_thermal_dof` with support from [`SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md) | bounded premise |
+| Weyl-to-dof factor `2` | particle/antiparticle thermal count | (already retained-sourced) | [`DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`](DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md), with finite CAR/cardinality support from [`SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md) | dependency-routed; audit pending |
 | physical Weyl-spin identification bridge (R-SPIN) | — | per-site spin-`1/2` row; bridge not derived here | unchanged residual bridge | local carrier separate; bridge out of scope |
 | `nu_R` thermal exclusion (`15` vs `16` Weyl) | exclusion premise | sector import | unchanged (import I12) | not derived |
 | neutral-singlet branch convention (labelling) | not consumed by the count | matter-closure convention | unchanged (convention) | unaudited |
@@ -327,9 +363,10 @@ thermalized count does not require.
 The thermalized per-generation count `30 = 15 * 2` is exact arithmetic once the
 mixed source surface above is accepted. The genuine residual sharpens to
 **I12** (`nu_R` thermal exclusion, the `106.75` vs `112` fork), **R-RH**
-(`P_RH_inventory`), **R-WEYL-THERMAL** (`P_Weyl_thermal_dof`), **R-SPIN** (the
-physical Weyl-spin identification bridge from the separate per-site spin-`1/2`
-row to the thermalized matter sector), and the **neutral-singlet branch
+(`P_RH_inventory`), the Dirac/Weyl dof dependency boundary, **R-SPIN** (the
+physical Weyl-spin / thermal-inventory identification bridge from the separate
+per-site spin-`1/2` row to the thermalized matter sector), and the
+**neutral-singlet branch
 convention** (a convention selecting the SM labelling, not a derivation).
 R-MATTER is **not** fully retired.
 
@@ -344,21 +381,22 @@ purposes:
 per-generation gauge-charged Weyl
   =  Q_L(3*2=6) + u_R(3) + d_R(3) + L_L(2) + e_R(1)  =  15   (mixed support + P_RH_inventory)
 per-generation thermalized dof
-  =  15 * 2                                          =  30   (P_Weyl_thermal_dof)
+  =  15 * 2                                          =  30   (Dirac/Weyl dof bridge; audit pending)
 N_fermions
   =  n_gen * 30  =  3 * 30                           =  90   (n_gen = 3 retained)
 g_*
   =  28 + (7/8) * 90                                 =  427/4  =  106.75.
 ```
 
-The matter side still has explicit bounded residuals: the `nu_R` thermal
-exclusion (I12), `P_RH_inventory`, `P_Weyl_thermal_dof`, the physical Weyl-spin
-identification bridge (R-SPIN), and the neutral-singlet branch convention.
+The matter side still has explicit bounded/dependency residuals: the `nu_R`
+thermal exclusion (I12), `P_RH_inventory`, the Dirac/Weyl dof dependency
+boundary, the physical Weyl-spin / thermal-inventory identification bridge
+(R-SPIN), and the neutral-singlet branch convention.
 
 Remaining `g_*` residuals after this note: **R-POL** (massless-vector
 2-polarization, pending the emergent-Lorentz repair), **R-RH** (right-handed
-gauge-charged inventory bridge), **R-WEYL-THERMAL** (physical Weyl thermal dof
-bridge), **R-SPIN** (the physical Weyl-spin identification bridge from the
+gauge-charged inventory bridge), the **Dirac/Weyl dof dependency boundary**,
+**R-SPIN** (the physical Weyl-spin / thermal-inventory identification bridge from the
 local carrier to this census), the **neutral-singlet branch convention** (matter
 labelling), and the honest sector import **I12** (`nu_R` thermal exclusion, the
 `106.75` vs `112` fork). The
@@ -382,9 +420,12 @@ This note is a `bounded_theorem`. It does **not**:
 - claim the right-handed gauge-charged inventory is derived from retained
   authorities (it is an explicit bounded premise supported by the anomaly
   completion packet);
-- claim the thermal Weyl factor `2` is derived from retained authorities (it is
-  an explicit bounded thermal-counting premise supported by finite CAR
-  cardinality context);
+- claim the thermal Weyl factor `2` is already retained-derived on the current
+  audit surface (on this stacked source surface it is routed through the
+  Dirac/Weyl dof bridge, which still requires review/audit before downstream
+  retention can use it);
+- claim the physical high-`T` thermal inventory is derived from the
+  Dirac/Weyl finite-rank count (that identification bridge stays separate);
 - retire R-SPIN (the physical Weyl-spin identification bridge is out of scope);
 - promote, demote, or set the audit status of any cited authority.
 
@@ -392,10 +433,11 @@ The load-bearing new content is the recognition + proof that the `g_*`
 thermalized fermionic count consumes a narrower arithmetic surface than full
 one-generation matter closure: color `3` (retained), isospin `2` (retained),
 the LH per-rep assignment (decoration-under-retained), the RH inventory
-premise `P_RH_inventory`, generation count `3` (retained), and
-`P_Weyl_thermal_dof`. The genuine residual sharpens to I12 + R-RH +
-R-WEYL-THERMAL + R-SPIN + the neutral-singlet branch convention. The `nu_R` /
-I12 fork (`106.75` vs `112`) is carried explicitly.
+premise `P_RH_inventory`, generation count `3` (retained), and the
+dependency-routed Dirac/Weyl dof factor `2`. The genuine residual sharpens to
+I12 + R-RH + Dirac/Weyl dof dependency review + R-SPIN / thermal-inventory
+identification + the neutral-singlet branch convention. The `nu_R` / I12 fork
+(`106.75` vs `112`) is carried explicitly.
 
 ## 8. Counterfactual pass (run before authoring)
 
@@ -428,9 +470,11 @@ exercised before authoring.
    right-handed gauge-charged thermal inventory.
 
 6. **Thermal Weyl dof factor.** A different physical thermal readout changes
-   the `*2` factor. The finite CAR/cardinality row is supporting context, but
-   the high-`T` Weyl particle/antiparticle thermal count remains an explicit
-   bounded premise. **OPEN/BOUNDED (R-WEYL-THERMAL).**
+   the `*2` factor. On this stacked source surface, the finite on-shell
+   Dirac/Weyl state count is routed through the Dirac/Weyl dof bridge rather
+   than left as a raw textbook premise. That upstream bridge still requires
+   review/audit, and the physical high-`T` thermal-inventory identification
+   remains separate. **OPEN/DEPENDENCY (R-WEYL-THERMAL / Dirac-Weyl dof).**
 
 7. **Spin of the matter (Weyl spin-`1/2` vs other).** A non-spin-`1/2` carrier
    changes the physical identification. The local spin carrier row remains
@@ -446,12 +490,12 @@ exercised before authoring.
 
 **Counterfactual conclusion.** The retained/decorated part of the arithmetic is
 color `3`, isospin `2`, the left-handed per-rep assignment, and generation `3`.
-The OPEN/BOUNDED residuals of the thermalized matter count are I12 (`nu_R`
-exclusion, the load-bearing fork), R-RH (`P_RH_inventory`), R-WEYL-THERMAL
-(`P_Weyl_thermal_dof`), R-SPIN (physical Weyl-spin identification bridge), and
-the neutral-singlet branch convention (labelling, not load-bearing on the
-count). This confirms the honest claim type is **bounded_theorem** and that
-R-MATTER is **partially reduced**, not retired.
+The OPEN/BOUNDED/DEPENDENCY residuals of the thermalized matter count are I12
+(`nu_R` exclusion, the load-bearing fork), R-RH (`P_RH_inventory`), the
+Dirac/Weyl dof dependency boundary for the Weyl factor `2`, R-SPIN / physical
+thermal-inventory identification, and the neutral-singlet branch convention
+(labelling, not load-bearing on the count). This confirms the honest claim type
+is **bounded_theorem** and that R-MATTER is **partially reduced**, not retired.
 
 ## 9. Verification
 
@@ -472,8 +516,9 @@ The runner verifies, at exact rational precision via `fractions.Fraction`:
    (retained `native_gauge_closure`); the left-handed per-rep assignment
    (decoration-under-retained `lhcm_matter_assignment`); `P_RH_inventory`
    (explicit bounded premise with anomaly-singlet support); `n_gen = 3`
-   (retained three-generation); `P_Weyl_thermal_dof` (explicit bounded premise
-   with finite-CAR/cardinality support).
+   (retained three-generation); the Weyl factor `2` routed through the
+   Dirac/Weyl dof bridge, with finite-CAR/cardinality support and independent
+   review/audit still required.
 3. **The `nu_R` / I12 counterfactual (executed):** `16` Weyl (gauge-charged
    `15` + gauge-singlet `nu_R`) `* 2 = 32` dof per generation `-> 96 -> g_* =
    28 + (7/8) * 96 = 112`. Confirms the load-bearing fork `106.75` vs `112`.
@@ -482,10 +527,10 @@ The runner verifies, at exact rational precision via `fractions.Fraction`:
    relabelling (both branches give the same `(1,1)` singlet multiplicities); the
    branch convention is not a count input.
 5. **Reduction bookkeeping:** the arithmetic is split into retained/decorated
-   inputs plus explicit bounded physical premises; the stronger full
+   inputs plus explicit bounded/dependency physical premises; the stronger full
    one-generation closure stays unaudited and separate; the remaining residuals
-   are I12, R-RH, R-WEYL-THERMAL, R-SPIN, and the neutral-singlet branch
-   convention.
+   are I12, R-RH, the Dirac/Weyl dof dependency boundary, R-SPIN /
+   thermal-inventory identification, and the neutral-singlet branch convention.
 6. **Authority file existence + ledger-status cross-check:** each cited
    retained / decoration authority file exists in `docs/`, and (when the ledger
    is present) the retained sources read `retained`, the decoration sources read
@@ -506,7 +551,7 @@ Target: `PASS=N FAIL=0` with `N >= 35`.
 - No literature numerical comparators consumed as proof inputs.
 - No fitted selectors consumed.
 - No new axiom introduced; the reduction separates retained/decorated
-  arithmetic inputs from explicit bounded physical premises.
+  arithmetic inputs from explicit bounded/dependency physical premises.
 - No lattice-action carrier (Wilson plaquette, staggered phases, Brillouin-zone
   labels, link unitaries, `u_0`, Monte Carlo measurement) load-bearing on the
   reduction.
@@ -542,10 +587,15 @@ Load-bearing retained / decoration-under-retained support authorities
   — three generations (retained). Sources the generation count.
 - [`THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md)
   — `n_gen = 3` carrier (retained).
+- [`DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`](DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md)
+  — stacked Dirac/Weyl dof source packet. Routes the Weyl `2` through retained
+  Q1 plus source-local Q2 finite-rank on-shell counting, with independent
+  review/audit still required before this downstream row can treat the factor
+  as retired.
 - [`SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — finite CAR/cardinality support (retained). Supports the explicit bounded
-  `P_Weyl_thermal_dof` premise; it does not by itself derive the high-`T`
-  physical Weyl thermal readout.
+  — finite CAR/cardinality support (retained). Supports the algebraic
+  cardinality side of the Dirac/Weyl dof bridge; it does not by itself derive
+  the high-`T` physical Weyl thermal readout.
 - [`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md)
   — per-site spin-`1/2` carrier row. Cited to keep the local-carrier row visible;
   R-SPIN remains the separate physical Weyl-spin identification bridge from that
@@ -576,33 +626,38 @@ proposed_claim_scope: |
   The g_* fermionic count consumes the thermalized per-generation count
   30 = 15 (gauge-charged Weyl) * 2 (particle/antiparticle), summed over 3
   generations to 90. The arithmetic is split into retained/decorated support
-  plus explicit bounded premises: color triplet 3 and N_c=3
+  plus explicit bounded/dependency premises: color triplet 3 and N_c=3
   (retained graph_first_su3_integration / cl3_color_automorphism); isospin
   doublet 2 (retained native_gauge_closure); the per-rep assignment
   (2,3)=Q_L:6, (2,1)=L_L:2 (decoration_under_graph_first_su3_integration_note
   lhcm_matter_assignment); right-handed completion u_R:3, d_R:3, e_R:1 as
   explicit bounded premise P_RH_inventory supported by retained_bounded
   one_generation_anomaly_singlet_completion; generation count 3 (retained
-  three_generation_observable); and Weyl factor 2 as explicit bounded premise
-  P_Weyl_thermal_dof supported by finite CAR/cardinality context. The genuine
-  residual sharpens to I12 (nu_R
+  three_generation_observable); and Weyl factor 2 dependency-routed through the
+  stacked Dirac/Weyl dof bridge, supported by retained finite CAR/cardinality
+  context and by source-local Q2 finite-rank on-shell counting, with
+  independent review/audit still required. The genuine residual sharpens to
+  I12 (nu_R
   thermal exclusion: the matter is 16 Weyl including the gauge-singlet nu_R, but
   the thermalized count excludes nu_R -> 15 gauge-charged Weyl -> 30/gen ->
   g_* = 106.75; if nu_R were thermalized Dirac, 16*2 = 32/gen -> g_* = 112),
-  R-RH (right-handed gauge-charged inventory bridge), R-WEYL-THERMAL (physical
-  Weyl thermal dof bridge), R-SPIN (physical Weyl-spin identification bridge
-  from the separate per-site spin-1/2 row to the thermalized Weyl matter sector),
+  R-RH (right-handed gauge-charged inventory bridge), Dirac/Weyl dof dependency
+  review plus R-WEYL-THERMAL (physical Weyl thermal-inventory bridge), R-SPIN
+  (physical Weyl-spin identification bridge from the separate per-site spin-1/2
+  row to the thermalized Weyl matter sector),
   and the
   neutral-singlet branch convention Y(nu_R)=0 (a
   labelling convention selecting the SM assignment, not load-bearing on the
   count). Does NOT claim the full 16-Weyl one-generation closure is derived
   (stays unaudited, separately blocked), does NOT claim the nu_R thermal
-  exclusion is derived (stays import I12), does NOT claim P_RH_inventory or
-  P_Weyl_thermal_dof is retained-derived, does NOT claim the neutral-singlet
-  branch convention is derived, does NOT retire R-SPIN, does NOT promote/demote
-  any cited authority, does NOT close any downstream cosmology row. The overall
-  g_* census stays bounded_theorem; this partially reduces R-MATTER by exposing
-  the exact bounded premises instead of hiding them in the full closure.
+  exclusion is derived (stays import I12), does NOT claim P_RH_inventory is
+  retained-derived, does NOT claim the Dirac/Weyl dof dependency has passed
+  downstream audit, does NOT claim the physical thermal-inventory bridge is
+  derived, does NOT claim the neutral-singlet branch convention is derived,
+  does NOT retire R-SPIN, does NOT promote/demote any cited authority, does NOT
+  close any downstream cosmology row. The overall g_* census stays
+  bounded_theorem; this partially reduces R-MATTER by exposing the exact
+  bounded/dependency premises instead of hiding them in the full closure.
 status_authority: independent audit lane only
 audit_required_before_effective_status_change: true
 forbidden_imports_used: false
@@ -615,10 +670,12 @@ notes_for_re_audit_if_any: |
   (lhcm_matter_assignment_from_su3_representation_note_2026-05-02,
   left_handed_charge_matching_note) read
   decoration_under_graph_first_su3_integration_note; the anomaly singlet
-  completion status is unchanged; the per-site spin-1/2 carrier row remains
-  separate. The full one-generation closure remains separate. The physical
-  Weyl-spin identification bridge (R-SPIN), right-handed thermal-inventory
-  bridge (R-RH), and physical Weyl thermal dof bridge (R-WEYL-THERMAL) remain
+  completion status is unchanged; the Dirac/Weyl dof source packet remains an
+  upstream dependency requiring independent review/audit on this stacked
+  surface; the per-site spin-1/2 carrier row remains separate. The full
+  one-generation closure remains separate. The physical Weyl-spin
+  identification bridge (R-SPIN), right-handed thermal-inventory bridge
+  (R-RH), and physical Weyl thermal-inventory bridge (R-WEYL-THERMAL) remain
   residuals; the nu_R thermal exclusion (I12) is a sector import; the
   neutral-singlet branch convention is a convention.
   Any dependency-retention issue on R-SPIN / I12 belongs to independent audit
@@ -633,10 +690,11 @@ This note records one thing: the named residual R-MATTER of the
 framework-structure `g_*` census is reduced for the thermalized dof-count
 purpose by exposing the exact arithmetic and the remaining bounded premises.
 The thermalized per-generation count `30 = 15 * 2` is not presented as closed
-from retained rows alone: `P_RH_inventory`, `P_Weyl_thermal_dof`, I12, R-SPIN,
-and the neutral-singlet branch convention remain residuals. It is not a synthesis,
+from retained rows alone: `P_RH_inventory`, the Dirac/Weyl dof dependency
+boundary, I12, R-SPIN / thermal-inventory identification, and the
+neutral-singlet branch convention remain residuals. It is not a synthesis,
 introduces no repo vocabulary, promotes no other note's status, and claims no
 full derivation of `g_*`, of the one-generation matter closure, of the `nu_R`
-thermal exclusion, of the RH inventory bridge, of the Weyl thermal dof bridge,
-or of the branch convention. The audit lane is the authority on effective
-status.
+thermal exclusion, of the RH inventory bridge, of the Dirac/Weyl dof dependency
+audit, of the physical Weyl thermal-inventory bridge, or of the branch
+convention. The audit lane is the authority on effective status.

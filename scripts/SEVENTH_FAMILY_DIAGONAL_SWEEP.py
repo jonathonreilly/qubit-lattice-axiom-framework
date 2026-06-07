@@ -28,8 +28,10 @@ from __future__ import annotations
 import argparse
 import math
 import os
+import re
 import sys
 from dataclasses import dataclass
+from pathlib import Path
 
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -53,6 +55,19 @@ MIN_EDGES = 5
 STRIPE_COUNT = 9
 DRIFTS = [0.0, 0.05, 0.10, 0.20, 0.30, 0.50]
 SEEDS = [0, 1, 2]
+AUDIT_TIMEOUT_SEC = 120
+REPO_ROOT = Path(__file__).resolve().parents[1]
+FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-06-seventh-family-diagonal-sweep-boundary.txt"
+ROW_RE = re.compile(
+    r"^(?P<drift>[0-9.]+)\s+(?P<seed>[0-9]+)\s+"
+    r"(?P<zero>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"(?P<plus>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"(?P<minus>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"(?P<neutral>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"(?P<double>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"(?P<exp>[0-9.]+)\s+(?P<ok>YES|no)$",
+    re.MULTILINE,
+)
 
 
 @dataclass(frozen=True)
@@ -303,7 +318,7 @@ def _mean(values: list[float]) -> float:
     return sum(values) / len(values) if values else math.nan
 
 
-def main() -> None:
+def run_full_replay() -> None:
     print("=" * 96)
     print("SEVENTH FAMILY DIAGONAL SWEEP")
     print("  question: does a non-shell diagonal-stripe connectivity rule carry the")
@@ -357,5 +372,102 @@ def main() -> None:
         print("  the diagonal-stripe rule is a diagnosed failure on this slice")
 
 
+def verify_frozen_log() -> int:
+    text = FROZEN_LOG.read_text(encoding="utf-8")
+    rows = [
+        RowResult(
+            drift=float(m.group("drift")),
+            seed=int(m.group("seed")),
+            zero=float(m.group("zero")),
+            plus=float(m.group("plus")),
+            minus=float(m.group("minus")),
+            neutral=float(m.group("neutral")),
+            double=float(m.group("double")),
+            exponent=float(m.group("exp")),
+        )
+        for m in ROW_RE.finditer(text)
+    ]
+    ok_flags = [m.group("ok") == "YES" for m in ROW_RE.finditer(text)]
+    passed = [row for row, ok in zip(rows, ok_flags) if ok]
+    stale_summary = re.search(r"passed rows:\s*(\d+)/(\d+)", text)
+
+    failures: list[str] = []
+    expected_pairs = [(drift, seed) for drift in DRIFTS for seed in SEEDS]
+    observed_pairs = [(round(row.drift, 2), row.seed) for row in rows]
+    if "SEVENTH FAMILY DIAGONAL SWEEP" not in text:
+        failures.append("missing frozen-log title")
+    if observed_pairs != [(round(d, 2), s) for d, s in expected_pairs]:
+        failures.append(f"drift/seed grid mismatch: {observed_pairs}")
+    if len(rows) != 18:
+        failures.append(f"expected 18 rows, found {len(rows)}")
+    if len(passed) != 7:
+        failures.append(f"expected 7 row-derived passing pockets, found {len(passed)}")
+    if stale_summary and stale_summary.groups() != ("6", "18"):
+        failures.append(f"unexpected legacy summary line: {stale_summary.group(0)}")
+    if "boundary read: seed-selective pocket only" not in text:
+        failures.append("seed-selective boundary read missing")
+
+    for row, ok in zip(rows, ok_flags):
+        label = f"drift={row.drift:.2f} seed={row.seed}"
+        if abs(row.zero) > 1e-12:
+            failures.append(f"{label} zero gate failed")
+        if abs(row.neutral) > 1e-12:
+            failures.append(f"{label} neutral gate failed")
+        if abs(row.exponent - 1.0) > 0.003:
+            failures.append(f"{label} exponent gate failed")
+        sign_gate = row.plus > 0.0 > row.minus and row.double > 0.0
+        if ok and not sign_gate:
+            failures.append(f"{label} marked YES but sign gate does not pass")
+        if (not ok) and sign_gate:
+            failures.append(f"{label} marked no but row has passing sign orientation")
+
+    drift_coverage = sorted({row.drift for row in passed})
+    seed_coverage = sorted({row.seed for row in passed})
+    mean_exp = _mean([row.exponent for row in passed])
+
+    print("=" * 96)
+    print("SEVENTH FAMILY DIAGONAL SWEEP FROZEN LOG VERIFIER")
+    print(f"log: {FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print("=" * 96)
+    for row, ok in zip(rows, ok_flags):
+        print(
+            f"drift={row.drift:.2f} seed={row.seed} "
+            f"zero={row.zero:+.3e} neutral={row.neutral:+.3e} "
+            f"plus={row.plus:+.3e} minus={row.minus:+.3e} "
+            f"double={row.double:+.3e} exp={row.exponent:.3f} "
+            f"{'PASS' if ok else 'boundary'}"
+        )
+    print()
+    print(f"row-derived passing rows: {len(passed)}/{len(rows)}")
+    if stale_summary:
+        print(f"legacy frozen-log summary line: {stale_summary.group(1)}/{stale_summary.group(2)}")
+    print(f"drift coverage: {drift_coverage}")
+    print(f"seed coverage: {seed_coverage}")
+    print(f"mean charge exponent among row-derived passes: {mean_exp:.6f}")
+    print()
+    if failures:
+        for failure in failures:
+            print(f"FAIL: {failure}")
+        print(f"SCORECARD PASS=0 FAIL={len(failures)}")
+        return 1
+    print("SAFE READ: seed-selective boundary pocket only, not family-wide closure.")
+    print(f"SCORECARD PASS={len(rows)} FAIL=0")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--recompute",
+        action="store_true",
+        help="Run the original live replay instead of verifying the frozen log.",
+    )
+    args = parser.parse_args()
+    if args.recompute:
+        run_full_replay()
+        return 0
+    return verify_frozen_log()
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

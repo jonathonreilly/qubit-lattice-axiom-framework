@@ -7,21 +7,48 @@ direct_effective_status_change_allowed_from_this_note: false
 
 # Source/Measure Sharp-Record Tangent-Space Theorem
 
-**Claim type:** bounded_theorem / exact-support theorem.
+**Claim type:** bounded_theorem / bounded exact-support theorem.
 **Role:** third source/measure P-cal retirement route; strengthens the RN
 cocycle route by deriving the primitive source unit from finite sharp-record
 probability geometry.
-**Status:** exact-support.  This note proves that finite sharp-record
-probability space has a canonical RN score tangent space and Fisher unit
-normalization.  It does not by itself assert unbounded retained Y_T closure.
+**Status:** bounded-support.  The finite Fisher tangent theorem is now supplied
+by the retained authority cited below; this older packet preserves the
+source-measure/Y_T interface boundary.  It does not assert unbounded retained
+Y_T closure.
 **Primary runner:** `scripts/frontier_source_measure_sharp_record_tangent_space.py`
 **Generated output:** `outputs/source_measure_sharp_record_tangent_space_2026-05-30.json`
 
+## 2026-06-07 authority split
+
+The finite probability geometry in this row has been split out and audited
+clean in
+[`SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md`](SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md),
+with effective status `retained`. That row is now the source authority for:
+
+- RN score tangents on a finite positive probability space;
+- zero-mean score condition from normalization;
+- Fisher pairing `E_0[s t]`;
+- the two-outcome signed-record unit `epsilon=(+1,-1)`;
+- normalized exponential charts for zero-mean scores.
+
+The six-component response-basis normalization used in the `Y_T` line is
+likewise sourced to audited bounded
+[`SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md`](SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md),
+which supplies the diagonal `C^6` Hilbert-Schmidt orthonormal basis and the
+normalized democratic vector `(1/sqrt(6)) sum_i E_ii`.
+
+After this split, the present packet should be read only as a bounded interface
+claim: if a physical source intervention is represented by this finite
+sharp-record probability/Fisher surface and the six-component response basis is
+the supplied `Y_T` readout basis, then the primitive unit normalization gives
+`lambda=1` and component coefficient `1/sqrt(6)`. The packet still does **not**
+derive physical source semantics, strict same-source top/W response, or an
+unbounded top-Yukawa closure.
+
 ## Theorem
 
-On a finite sharp-record sample space, with the projective record surface as in
-[`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`](LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md),
-and with reference probability `P_0`, every smooth absolutely-continuous
+On a finite sharp-record sample space, with a supplied projective record surface
+and reference probability `P_0`, every smooth absolutely-continuous
 record-probability intervention `P_h` has a Radon-Nikodym density
 
 ```text
@@ -105,14 +132,17 @@ record sector.
 
 ## Y_T source unit
 
-For the normalized six-component top source tangent
+For the supplied normalized six-component response basis from
+[`SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md`](SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md),
+the democratic tangent
 
 ```text
 O_top = sum_i O_i / sqrt(6),
 ```
 
 the Fisher norm is one.  A scaled family `lambda O_top` has norm `lambda^2`.
-Therefore the finite sharp-record source tangent geometry selects
+Therefore the finite sharp-record source tangent geometry selects the unit
+normalization inside this supplied response basis:
 
 ```text
 lambda = 1,
@@ -122,12 +152,15 @@ y_33 = 1/sqrt(6).
 ## Status boundary
 
 ```yaml
-actual_current_surface_status: exact-support
+actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure_candidate
 target_blocker_text: "P-cal / primitive source-action unit"
 source_of_blocker_text: "observable-principle P-cal residual and Y_T primitive source-unit no-go"
 reachability_to_target: partially_closes
 artifact_role: theorem
+finite_authorities_now_sourced:
+  - sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06
+  - source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05
 closed_if_audit_accepts_record_probability_intervention_as_physical_source:
   - canonical RN score tangent space
   - primitive Fisher source unit

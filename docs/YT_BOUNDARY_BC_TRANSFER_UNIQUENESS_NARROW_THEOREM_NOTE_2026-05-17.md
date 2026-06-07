@@ -35,6 +35,27 @@ rather than an implicit assumption.
 **Primary runner:** [`scripts/frontier_yt_boundary_bc_transfer_uniqueness.py`](./../scripts/frontier_yt_boundary_bc_transfer_uniqueness.py)
 **Cache:** `logs/runner-cache/frontier_yt_boundary_bc_transfer_uniqueness.txt`
 
+## 2026-06-07 Implementation-Input Boundary Retargeting
+
+The direct claim is a bounded finite-grid diagnostic over the runner's explicit
+implementation inputs. The canonical plaquette constants, Ward target, two-loop
+SM RGE normalization, threshold scales, and EW initial conditions are not
+load-bearing retained proof authorities for this row. They are visible
+implementation inputs to the finite diagnostic.
+
+The row therefore asks only whether the registered runner performs the stated
+finite checks on the stated grid and brackets:
+
+- finite trajectories on the sampled interval;
+- positive forward differences on the 33-point grid;
+- finite observed grid slopes;
+- stable `brentq` root agreement across the declared brackets;
+- extension-scan location of the blow-up-like onset above the working interval.
+
+It does not claim continuum monotonicity, exact continuum uniqueness, physical
+validity of the SM EFT at `M_Pl`, a lattice Ward theorem, or a parent
+`yt_boundary_theorem` closure.
+
 ## 2026-05-28 Audit Repair (narrow to runner-verified measurement)
 
 The 2026-05-28 audit verdict was `audited_conditional`:
@@ -45,7 +66,7 @@ with repair: *"scope_too_broad: either narrow this row to the completed finite-g
 
 This revision narrows the claim to exactly what the runner proves:
 
-- **Load-bearing (in scope):** The finite-grid numerical diagnostic: strict monotonicity verified on a 33-point grid by positive forward differences, brentq root agreement across three subintervals to 1e-10, Lipschitz bound L_observed < 10 on the working grid, and empirical Yukawa-Landau onset located at X_pole ~ 1.275 — all under the explicit imported-input assumptions (I1)–(I5) including the canonical plaquette surface and Ward-identity target cited as retained inputs.
+- **Load-bearing (in scope):** The finite-grid numerical diagnostic: strict monotonicity verified on a 33-point grid by positive forward differences, brentq root agreement across three subintervals to 1e-10, Lipschitz bound L_observed < 10 on the working grid, and empirical Yukawa-Landau onset located at X_pole ~ 1.275 — all under the explicit imported-input assumptions (I1)–(I5), with the canonical plaquette surface and Ward-identity target treated as visible implementation inputs rather than retained proof authorities for this row.
 - **NON-load-bearing (non-binding interpretation):** Continuum strict monotonicity (that Phi is strictly monotone on the whole interval [0.5, 1.2] as a continuous mathematical fact, not just on the 33-point sample grid) and exact uniqueness (that no root exists outside the scanned interval). These elevate the grid check to a continuum statement that the finite runner evidence does not prove. Marked as non-binding interpretation unless a retained interval/validated-numerics proof authority is supplied.
 
 No new axiom, import, or retained bridge is introduced. Only the exact finite
@@ -111,7 +132,7 @@ No PDG observable value is consumed by the load-bearing pass/fail checks. The ru
 
 ## Runner Evidence
 
-The runner performs 23 pass/fail checks:
+The runner performs 28 pass/fail checks:
 
 - setup and imported-input consistency checks;
 - finite trajectory checks on a coarse `X` grid;
@@ -124,7 +145,7 @@ The runner performs 23 pass/fail checks:
 Expected result:
 
 ```text
-Counts: 23 PASS, 0 FAIL
+Counts: 28 PASS, 0 FAIL
 ```
 
 ## Audit Graph Hygiene

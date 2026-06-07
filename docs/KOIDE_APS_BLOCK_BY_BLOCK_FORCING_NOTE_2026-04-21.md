@@ -1,19 +1,50 @@
-# Delta Support Route Block-by-Block APS η = 2/9 Conditional Verification
+# Delta Support Route C3 Local-Density Boundary Manifest
 
 **Date:** 2026-04-21 (original); 2026-05-28 (narrowed to the explicit
 algebraic certificate); 2026-06-06 (dependency surface sharpened: `p = 3` and
 weights `(1,2)` are now sourced from the fixed-locus bridge; global PL/ABSS
-applicability remains conditional).
+applicability remains conditional); 2026-06-07 (retargeted to the bounded
+local-density manifest that the current framework can actually carry).
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
-**Status:** explicit algebraic APS `η = 2/9` certificate, **conditional
-on the remaining global topological input**: ABSS-equivariant-fixed-point
-applicability on a supplied `PL S³ × ℝ` route. The local C₃ data `p = 3` and
-fixed-locus weights `(1,2)` are no longer treated here as unsupported
-stipulations; they are supplied by the linked fixed-locus bridge below.
-**Runner:** `scripts/frontier_koide_aps_block_by_block_forcing.py` — 29/29 PASS.
+**Status:** bounded local-density manifest. The direct load-bearing row target
+is the C₃ fixed-locus operator, forced weights `(1,2)`, and exact local density
+`2/9`. The supplied global `Cl(3)/Z³ → PL S³ × ℝ` / ABSS route is **not** a
+load-bearing premise for this row.
+**Runner:** `scripts/frontier_koide_aps_block_by_block_forcing.py` — 35/35 PASS.
 All checks are executable symbolic or numeric computations; no literal
 `True` placeholders remain.
+
+## 2026-06-07 Local-Density Boundary Retargeting
+
+The latest audit surface already records the exact distinction this source must
+respect:
+
+- the local matrix/spectrum/weight arithmetic closes;
+- the global `Cl(3)/Z³ → PL S³ × ℝ` identification and global ABSS
+  applicability do not close from the finite cone-cap authorities;
+- the physical selected-line Brannen-phase readout is also outside the proved
+  local-density statement.
+
+This edit therefore changes the source-side target from a conditional global
+APS certificate into a bounded local-density manifest. The row no longer asks a
+future audit to accept the global PL/ABSS route as a premise. Instead, it asks
+only whether the current framework can carry the closed subclaim already
+available on the audited surface:
+
+1. the `C₃[111]` cyclic operator has order `p = 3`;
+2. its transverse fixed-locus representation forces weights `(1,2)` up to swap;
+3. the exact local Lefschetz / fixed-point density arithmetic evaluates to
+   `2/9`;
+4. all global PL/ABSS and physical-readout assertions are explicitly out of
+   scope.
+
+The runner now checks this boundary directly against the note text and the
+ledger status of the fixed-locus bridge
+`koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`,
+whose audited scope is exactly the C₃ fixed-locus / local-density subclaim.
+The old ABSS prerequisite block remains as a diagnostic for future bridge work
+only; it is not part of the direct claim closure here.
 
 ## 2026-05-28 Audit Repair (conditional algebraic certificate)
 
@@ -41,8 +72,8 @@ identification still imports the PL Poincaré / Moise / van Kampen bridge.
 There is no source-side `Cl(3)/Z³ → PL S³ × ℝ` global topological bridge to cite
 here.
 
-This parent note therefore remains a **conditional algebraic certificate**, but
-with a smaller conditional surface than before:
+Before the 2026-06-07 retargeting, this parent note was a **conditional
+algebraic certificate** with a smaller conditional surface than before:
 
 **Load-bearing (source-supplied or computed in this packet):**
 
@@ -52,8 +83,8 @@ with a smaller conditional surface than before:
 - the exact block-by-block arithmetic that turns those local inputs into
   `η = 2/9` under the ABSS fixed-point formula.
 
-**Remaining conditional input:** applicability of the ABSS equivariant
-fixed-point formula on the global `PL S³ × ℝ` route.
+**Remaining conditional input for the historical global route:** applicability
+of the ABSS equivariant fixed-point formula on the global `PL S³ × ℝ` route.
 
 **Non-load-bearing / still open:** the identification of the `Cl(3)/Z³`
 compactification with `PL S³ × ℝ`, the global ABSS topological bridge, and the
@@ -61,7 +92,9 @@ physical selected-line Brannen-phase identification. The finite-R cone-cap deps
 do **not** supply these; downstream consumers must carry these remaining
 conditions.
 
-No new axioms are introduced by this repair.
+No new axioms are introduced by this repair. After the 2026-06-07 retargeting,
+the historical global route is recorded as future bridge context rather than a
+load-bearing premise of this row.
 
 ## 2026-06-06 Dependency Surface Sharpening
 
@@ -87,16 +120,16 @@ set an audit outcome.
 
 ## Statement
 
-Every algebraic building block of the ambient `η = 2/9` computation via APS
-topological robustness is verified executable once the remaining global
-`Cl(3)/Z³ → PL S³ × ℝ` / ABSS route is supplied. The local C₃ fixed-locus inputs
-are now sourced from the fixed-locus bridge; no hidden internal choice is made
-inside that local route. This note does not prove the global PL S³
-identification + global ABSS bridge, and does not prove the remaining physical
-bridge identifying the selected-line Brannen phase with the ambient APS
+The direct claim retained by this source is the bounded C₃ local-density
+subclaim: the framework's `C₃[111]` cyclic operator forces `p = 3`, transverse
+weights `(1,2)` up to swap, and the exact local fixed-point density `2/9`.
+There is no hidden internal choice inside that local route. This note does not
+prove the global PL S³ identification + global ABSS bridge, does not use that
+route as a premise for its direct claim, and does not prove the remaining
+physical bridge identifying a selected-line Brannen phase with an ambient APS
 invariant.
 
-## Conditional building blocks
+## Bounded local-density building blocks
 
 | # | Block | Verified / stipulated input |
 |---|---|---|
@@ -104,7 +137,7 @@ invariant.
 | (b) | Eigenvalues (1, ω, ω²) on R³ | det(R − λI) = 1 − λ³ uniquely; no other root of unity triple possible |
 | (c) | Fixed locus: body-diagonal, codim-2 on S³ | rank(R − I) = 2 |
 | (d) | Tangent weights (1, 2) mod 3 | Supplied by fixed-locus bridge; forced by transverse eigenvalues (ω, ω²) |
-| (e) | ABSS equivariant fixed-point formula input | Conditional on stipulated PL S³ × ℝ / ABSS route; spin, smoothability, and Morse-Bott prerequisites are checked inside that route |
+| (e) | Local Lefschetz / fixed-point density formula | Used only for the bounded local-density value; the global PL S³ × ℝ / ABSS route is diagnostic-only in this row |
 | (f) | Core algebraic identity (ω − 1)(ω² − 1) = 3 | Exact algebraic fact for primitive cube root of unity |
 | (g) | Result: η = (1/3)(1/3 + 1/3) = 2/9 | Unique computation from (a)–(f) |
 | (h) | Alternative weights/p give different η | Consistency enumeration: once the fixed-locus bridge supplies `(p,a,b) = (3,1,2)`, nearby alternatives do not reproduce the same value |
@@ -122,7 +155,16 @@ invariant.
   η(2, 2, 3) = 1/9 ≠ 2/9, only η(1, 2, 3) = η(2, 1, 3) = 2/9 — and
   only (1, 2) is consistent with the fixed-locus bridge's C₃ rotation eigenvalues.
 
-## ABSS applicability checks under the conditional global route
+## ABSS applicability diagnostics outside the direct claim
+
+This section is kept only as a future-route diagnostic. It does not supply the
+direct bounded local-density claim above, and it does not establish the global
+`Cl(3)/Z³ → PL S³ × ℝ` route. The source boundary is:
+
+- **claimed here:** C₃ local fixed-locus structure, weights `(1,2)`, local
+  density `2/9`;
+- **not claimed here:** global PL S³ compactification, global ABSS
+  applicability, ambient APS invariant, or physical selected-line readout.
 
 - **(h1)** PL smoothability obstruction groups π_i(PL/O) = 0 for
   i ≤ dim(PL S³ × R) = 4. The runner checks the standard table
@@ -143,27 +185,26 @@ invariant.
   executively, so the ABSS fixed-point formula has the stated local-prerequisite
   support inside the conditional global route.
 
-## Why this answers the reviewer question "is η = 2/9 a choice?"
+## Why this answers the reviewer question "is the local 2/9 value a choice?"
 
 **No hidden internal choice is made inside the local C₃ route.** Once
 the fixed-locus bridge supplies the C₃[111] cubic rotation, `p = 3` and the
-tangent weights `(1, 2)` follow from the eigenvalues `(ω,ω²)`. The ABSS formula
-is still used as the conditional fixed-point formula on the supplied global PL
-route, with prerequisite checks listed above. The core identity
-`(ζ − 1)(ζ² − 1) = 3` is an exact algebraic fact.
+tangent weights `(1, 2)` follow from the eigenvalues `(ω,ω²)`. The local density
+formula then reduces to the exact algebraic identity
+`(ζ − 1)(ζ² − 1) = 3`.
 
 There is no alternative construction under those sourced local inputs that gives
-a different ambient `η` value. The remaining open issues are the global
+a different local density value. The remaining open issues are the global
 topological/ABSS bridge and the physical-observable bridge
 `delta_physical = eta_APS`.
 
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links for
-finite-R/topology support related to the conditional `Cl(3)/Z^3 -> PL S^3 x R`
-route and the ABSS-prerequisite authorities used by the conditional
-block-by-block executable verification above. It does not promote this note
-or change the audited claim scope.
+finite-R/topology support related to the historical conditional
+`Cl(3)/Z^3 -> PL S^3 x R` route and the ABSS-prerequisite authorities used by
+the diagnostic block above. It does not promote this note or change the audited
+claim scope.
 
 - [KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) — supplies the local C₃ fixed-locus structure, `p = 3`, transverse weights `(1,2)`, and local density `2/9`; explicitly leaves global PL/ABSS and physical readout open.
 - [S3_CAP_UNIQUENESS_NOTE.md](S3_CAP_UNIQUENESS_NOTE.md) — finite-R cone-cap construction support only; it does not close the global `Cl(3)/Z^3 -> PL S^3 x R` identification consumed as a remaining conditional premise above.

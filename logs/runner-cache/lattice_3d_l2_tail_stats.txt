@@ -1,17 +1,38 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_3d_l2_tail_stats.py
-runner_sha256: 74dccbdc37adf72dd1c739019b868cf40046d291202241febd4ac1de3336a292
+runner_sha256: ed0ca465affbe2ae40cf212f8faa591e67ecd444855aa7ba3b97055879c3dea6
 timeout_sec: 120
-exit_code: -9
-elapsed_sec: 120.06
-status: timeout
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
 ----- stdout -----
 ================================================================================================
-3D INVERSE-SQUARE TAIL STATISTICS
-  Review-safe tail probe for the exploratory 1/L^2 branch.
-  Same family, same barrier geometry, same action, h=0.25.
+3D INVERSE-SQUARE TAIL STATISTICS -- FROZEN-LOG VERIFIER
+  Scope: width-8 frozen-log tail statistics only.
+  Full recomputation remains available with --recompute.
 ================================================================================================
 
+[PASS] frozen width-8 log exists :: /private/tmp/cl3-timeout-cache-unblocks-batch2-20260607/logs/2026-04-04-lattice-3d-l2-tail-stats.txt
+[PASS] frozen log is width=8 at h=0.25
+[PASS] barrier Born matches narrowed note
+[PASS] barrier k0 matches narrowed note
+[PASS] barrier dTV matches narrowed note
+[PASS] barrier read is ATTRACTIVE
+[PASS] five no-barrier rows parsed :: rows=5
+[PASS] z=4 row matches frozen table :: got centroid=+0.049373 P_near=+0.004422 bias=+0.795766 read=ATTRACTIVE
+[PASS] z=5 row matches frozen table :: got centroid=+0.046445 P_near=+0.003459 bias=+0.765371 read=ATTRACTIVE
+[PASS] z=6 row matches frozen table :: got centroid=+0.040248 P_near=+0.001309 bias=+0.719169 read=ATTRACTIVE
+[PASS] z=7 row matches frozen table :: got centroid=+0.035067 P_near=+0.000651 bias=+0.668926 read=ATTRACTIVE
+[PASS] z=8 row matches frozen table :: got centroid=+0.030697 P_near=+0.000357 bias=+0.627323 read=ATTRACTIVE
+[PASS] tail peak is z=4
+[PASS] tail has five post-peak points
+[PASS] tail exponent recomputes to -0.70 after display rounding :: slope=-0.7000
+[PASS] tail R^2 recomputes to 0.955 after display rounding :: R^2=0.9548
+[PASS] comparison remains single-width only
+
+SCORECARD PASS=17 FAIL=0
+FINDING: frozen width-8 tail-stat table and post-peak fit are audit-reproducible.
+BOUNDARY: no width-6 head-to-head recomputation and no asymptotic 1/r^2 closure.
 
 ----- stderr -----
 

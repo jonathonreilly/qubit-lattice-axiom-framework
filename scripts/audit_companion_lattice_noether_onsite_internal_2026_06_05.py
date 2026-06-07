@@ -47,6 +47,12 @@ free staggered Dirac operator built in Parts C and D is an admitted-carrier
 exhibit only (no measured input); its mass is an arbitrary positive bookkeeping
 constant.
 
+2026-06-07 boundary repair: the paired source note now cites the retained
+abstract bilinear continuity theorem as the authority for the carrier-free
+matrix-unit identities. This runner keeps the replay as a guardrail and checks
+that the source note does not promote the supplied staggered/Kawamoto-Smit
+exhibit into a derived carrier/readout theorem.
+
 Each check prints [PASS]/[FAIL]; the script prints a final
 'TOTAL: N PASS / 0 FAIL' line and exits nonzero on any failure.
 """
@@ -514,6 +520,33 @@ def main() -> int:
     for name, ok in RESULTS:
         print(f"   {'PASS' if ok else 'FAIL'}  {name}")
     print(f"\nTOTAL: {n_pass} PASS / {n_fail} FAIL")
+    from pathlib import Path
+
+    note = (
+        Path(__file__).resolve().parents[1]
+        / "docs"
+        / "AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md"
+    ).read_text()
+    required_terms = [
+        "2026-06-07 authority split",
+        "AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06",
+        "physical density/readout bridge are not derived here",
+        "supplied staggered/Kawamoto-Smit exhibit",
+    ]
+    banned_terms = [
+        "derives the admitted staggered",
+        "derives the Kawamoto-Smit",
+        "framework-native staggered carrier",
+    ]
+    boundary_ok = all(term in note for term in required_terms) and not any(
+        term in note for term in banned_terms
+    )
+    print(
+        f"BOUNDARY GUARD: {'PASS' if boundary_ok else 'FAIL'} "
+        "retained abstract authority is cited; staggered exhibit remains bounded"
+    )
+    if not boundary_ok:
+        return 1
     return 0 if n_fail == 0 else 1
 
 

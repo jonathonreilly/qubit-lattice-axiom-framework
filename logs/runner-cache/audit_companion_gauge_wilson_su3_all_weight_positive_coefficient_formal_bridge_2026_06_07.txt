@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py
+runner_sha256: 4e280a53e064f49a17bf8a331cfdb7f2ddd18821818791084a15044106a239f2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+========================================================================================
+GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE
+Goal: all-weight Wilson coefficient positivity + formal convolution bridge
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: strict positivity witness for every sampled dominant weight
+----------------------------------------------------------------------------------------
+[PASS] finite Cartan-component witness for weight (0,0) :: n=p+q=0, beta=1 lower monomial=1
+[PASS] finite Cartan-component witness for weight (1,0) :: n=p+q=1, beta=1 lower monomial=1/6
+[PASS] finite Cartan-component witness for weight (0,1) :: n=p+q=1, beta=1 lower monomial=1/6
+[PASS] finite Cartan-component witness for weight (1,1) :: n=p+q=2, beta=1 lower monomial=1/72
+[PASS] finite Cartan-component witness for weight (2,0) :: n=p+q=2, beta=1 lower monomial=1/72
+[PASS] finite Cartan-component witness for weight (0,2) :: n=p+q=2, beta=1 lower monomial=1/72
+[PASS] finite Cartan-component witness for weight (2,1) :: n=p+q=3, beta=1 lower monomial=1/1296
+[PASS] finite Cartan-component witness for weight (1,2) :: n=p+q=3, beta=1 lower monomial=1/1296
+[PASS] finite Cartan-component witness for weight (3,3) :: n=p+q=6, beta=1 lower monomial=1/33592320
+[PASS] finite Cartan-component witness for weight (5,2) :: n=p+q=7, beta=1 lower monomial=1/1410877440
+[PASS] finite Cartan-component witness for weight (2,5) :: n=p+q=7, beta=1 lower monomial=1/1410877440
+[PASS] finite Cartan-component witness for weight (8,0) :: n=p+q=8, beta=1 lower monomial=1/67722117120
+[PASS] finite Cartan-component witness for weight (0,8) :: n=p+q=8, beta=1 lower monomial=1/67722117120
+
+----------------------------------------------------------------------------------------
+Part 2: positivity of normalized Wilson eigenvalues a_(p,q)
+----------------------------------------------------------------------------------------
+[PASS] a_(0,0)(beta) strict-positive lower witness :: d=1, lower a(beta=1)>=1
+[PASS] a_(1,0)(beta) strict-positive lower witness :: d=3, lower a(beta=1)>=1/18
+[PASS] a_(0,1)(beta) strict-positive lower witness :: d=3, lower a(beta=1)>=1/18
+[PASS] a_(1,1)(beta) strict-positive lower witness :: d=8, lower a(beta=1)>=1/576
+[PASS] a_(4,2)(beta) strict-positive lower witness :: d=60, lower a(beta=1)>=1/2015539200
+[PASS] a_(2,4)(beta) strict-positive lower witness :: d=60, lower a(beta=1)>=1/2015539200
+[PASS] a_(6,6)(beta) strict-positive lower witness :: d=343, lower a(beta=1)>=1/357640002075937996800
+
+----------------------------------------------------------------------------------------
+Part 3: beta=0 boundary is not overclaimed
+----------------------------------------------------------------------------------------
+[PASS] nontrivial weight (1,0) has no strict-positive beta=0 witness :: strict positivity is claimed for beta > 0 only
+[PASS] nontrivial weight (0,1) has no strict-positive beta=0 witness :: strict positivity is claimed for beta > 0 only
+[PASS] nontrivial weight (1,1) has no strict-positive beta=0 witness :: strict positivity is claimed for beta > 0 only
+[PASS] nontrivial weight (3,2) has no strict-positive beta=0 witness :: strict positivity is claimed for beta > 0 only
+[PASS] trivial weight has beta=0 coefficient from n=0 term :: c_(0,0)(0)=1 boundary remains positive
+
+----------------------------------------------------------------------------------------
+Part 4: formal all-weight diagonal convolution on finite tests
+----------------------------------------------------------------------------------------
+[PASS] formal C_Z action is coefficientwise diagonal on a finite-character test vector :: 16 basis weights checked exactly
+[PASS] formal C_Z chi_(p,q) = z_(p,q) chi_(p,q) on every sampled basis vector :: finite-support test algebra; no L2 closure asserted
+[PASS] formal distribution does not require conjugation symmetry unless the theorem asks for it :: arbitrary all-weight sequences are legal formal data
+[PASS] conjugation-symmetric formal data remain symmetric weight by weight :: matches the downstream residual-environment symmetry case
+
+----------------------------------------------------------------------------------------
+Part 5: source-note and downstream-marker checks
+----------------------------------------------------------------------------------------
+[PASS] bridge note marker present: strictly positive Peter-Weyl character coefficient
+[PASS] bridge note marker present: Sym^p(3) tensor Sym^q(3bar)
+[PASS] bridge note marker present: define the formal central
+[PASS] bridge note marker present: bounded-operator closure without a separate decay
+[PASS] bridge note marker present: No new framework axiom is introduced
+[PASS] downstream plaquette note marker present: Gauge Wilson SU(3) all-weight positive-coefficient formal bridge
+[PASS] downstream plaquette note marker present: formal central character distribution
+[PASS] downstream plaquette note marker present: strict all-weight positivity/nonzero input
+[PASS] downstream plaquette note marker present: not an `L^2` class function
+
+========================================================================================
+TOTAL: PASS=38 FAIL=0
+========================================================================================
+
+----- stderr -----
+

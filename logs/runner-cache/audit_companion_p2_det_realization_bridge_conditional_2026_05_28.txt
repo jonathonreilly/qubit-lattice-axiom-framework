@@ -1,15 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py
-runner_sha256: dbeb59c168fc8edbac837e20f4ee05bb8cd0c04906ddf27b12c6f23f5a945c6d
+runner_sha256: 8559ab30f543c93b6407a5274bb346064ba0ea4087a4fc94bc23a60c6c7c52c7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.97
 status: ok
 ----- stdout -----
 ==============================================================================
-P2 DETERMINANT-REALIZATION BRIDGE, CONDITIONAL ON SUPPLIED FRAME DATA
-assembly + separability under supplied D=M_KS and AC relabeling premises
+P2 FINITE DETERMINANT/RELABELING BOUNDARY MANIFEST
+bounded finite algebra; physical realization premises stay conditional
 ==============================================================================
+
+--- SOURCE BOUNDARY  direct bounded claim and ledger dependency classes ---
+  [PASS] note carries 2026-06-07 finite-determinant boundary retargeting
+  [PASS] direct claim is finite determinant/relabeling boundary, not physical realization
+  [PASS] FS, D=M_KS, determinant-to-trace, and AC relabeling remain outside direct proof load
+  [PASS] historical conditional assembly is context, not the direct bounded target
+  [PASS] ledger dependency spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10 has effective_status=retained_bounded
+  [PASS] ledger dependency staggered_only_det_positivity_case_a_note_2026-05-17 has effective_status=retained
+  [PASS] ledger dependency staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16 has effective_status=retained_bounded
+  [PASS] ledger dependency staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25 has effective_status=retained_no_go
 
 --- BLOCK 1  Berezin Gaussian-determinant identity  Z_F[M] = det(M) ---
   [PASS] berezin Z_F[M]=det(M) generic 1x1
@@ -47,17 +57,16 @@ assembly + separability under supplied D=M_KS and AC relabeling premises
 ==============================================================================
 INTERPRETATION
 ------------------------------------------------------------------------------
-Block 1: on the supplied fermionic frame, the finite Berezin
-  partition function is det(D+J), so W = log|det(D+J)| is the generator.
-Block 2: on the supplied zero-source staggered surface det(M_KS+mI) > 0, so
-  log|det| = log det (no phase) -- the realization half of P2 there.
-Block 3 (CRUX): det, spec(H_hat), Z are invariant under ALL S_3
-  relabelings of the hw=1 triplet and the delta mass-pattern. Given
-  the supplied premise that AC_phi_lambda is only such a relabeling,
-  the determinant readout is blind to it. The remaining realization
-  residual is FS plus the supplied D=M_KS and AC-relabeling premises.
+Source boundary: the direct bounded claim is finite determinant
+  algebra plus relabeling invariance. It does not derive FS, actual
+  D=M_KS, determinant-to-trace routing, or AC_phi_lambda-as-relabeling.
+Block 1: finite Berezin Gaussian algebra gives Z_F[M] = det(M).
+Zero-source section: on the supplied finite zero-source staggered surfaces,
+  det(M_KS+mI) > 0, so log|det| = log det there.
+Block 3: det, spec(H_hat), and Z are invariant under all finite S_3
+  relabelings of the hw=1 triplet and the delta mass-pattern.
 ==============================================================================
-SCORECARD: PASS=27 FAIL=0
+SCORECARD: PASS=35 FAIL=0
 
 ----- stderr -----
 

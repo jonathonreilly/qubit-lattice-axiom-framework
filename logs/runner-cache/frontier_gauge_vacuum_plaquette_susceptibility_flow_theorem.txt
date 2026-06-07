@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py
-runner_sha256: dfc52e70a37356aacc0226234765f8697872bb18773f644deea73f36d190d4b7
+runner_sha256: 47da743bce4ae95270725444de5329e9b1398d9998221dbc015e314e522a56dd
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ==============================================================================
-GAUGE-VACUUM PLAQUETTE SUSCEPTIBILITY-FLOW THEOREM
+GAUGE-VACUUM PLAQUETTE SUSCEPTIBILITY-FLOW FINITE PACKET
 ==============================================================================
 
 Exact onset coefficients

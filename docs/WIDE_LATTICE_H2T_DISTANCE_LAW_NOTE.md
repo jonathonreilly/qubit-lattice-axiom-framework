@@ -6,12 +6,15 @@ ordered 3D `1/L^2` family
 
 ## Artifact chain
 
-- [`scripts/wide_lattice_h2t_distance_replay.py`](/Users/jonreilly/Projects/Physics/scripts/wide_lattice_h2t_distance_replay.py)
-- [`logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-wide-lattice-h2t-distance-replay.txt)
+- [`scripts/wide_lattice_h2t_distance_replay.py`](../scripts/wide_lattice_h2t_distance_replay.py)
+- [`logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`](../logs/runner-cache/wide_lattice_h2t_distance_replay.txt)
+
+The registered runner defaults to a verifier for the frozen replay log above;
+use `--recompute` to run the original slow wide-lattice replay.
 
 ## Question
 
-Does the branch-side wide-lattice `h^2+T` distance-law claim survive an
+Does the source-side wide-lattice `h^2+T` distance-law claim survive an
 independent replay on `main` when we keep the same ordered 3D `1/L^2`
 geometry family but freeze the wider `W = 12`, `h = 0.25` slice?
 
@@ -61,9 +64,8 @@ The review-safe wording is:
 
 - the wide-lattice replay strengthens the 3D `h^2+T` distance-law story
 - the far tail is now independently reproducible on `main`
-- the branch-side wide-lattice claim is no longer just exploratory
+- the source-side wide-lattice claim is no longer just exploratory
 
 ## Final Verdict
 
 **retained frontier**
-

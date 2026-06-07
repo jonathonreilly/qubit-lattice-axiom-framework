@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_grav_decoherence_derived.py
-runner_sha256: c0bd1c975107b78430da1e13085a52d101df7aa9913c94a5d3c5a8edcda6ddbf
+runner_sha256: f39de6f34c05ef5bf0611390929beb2ca49e24a3d27e6ff9d110f5e3d78b78da
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.26
+elapsed_sec: 6.82
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -13,12 +13,15 @@ GRAVITATIONAL DECOHERENCE RATE -- CONDITIONAL PENROSE-DIOSI/BMV COMPANION
 ==============================================================================
 SOURCE BOUNDARY CHECKS
 ==============================================================================
-  [PASS] source requires: **Claim type:** bounded support note: 
-  [PASS] source requires: **Type:** conditional / support: 
+  [PASS] source requires: **Claim type:** bounded_theorem: 
+  [PASS] source requires: **Type:** bounded companion / external-model arithmetic: 
+  [PASS] source requires: 2026-06-07 Companion-Boundary Retargeting: 
   [PASS] source requires: not a framework-only derivation: 
   [PASS] source requires: Penrose-Diosi/BMV model: 
   [PASS] source requires: external inputs for this companion surface: 
-  [PASS] source requires: Open Inputs That Remain Load-Bearing: 
+  [PASS] source requires: companion arithmetic: 
+  [PASS] source requires: not a load-bearing retained premise: 
+  [PASS] source requires: Open Inputs Outside This Companion Boundary: 
   [PASS] source excludes old title overclaim: 
   [PASS] source excludes old single-axiom overclaim: 
   [PASS] source excludes old beta prediction overclaim: 
@@ -290,10 +293,10 @@ CONDITIONAL SUPPORT SUMMARY
     delta_gamma / gamma = (beta - 1) is kept here only as supplied
     companion phenomenology.
 
-PASS=16  FAIL=0  (of 16 checks)
-Runtime: 6.1s
+PASS=19  FAIL=0  (of 19 checks)
+Runtime: 6.7s
 
-Log written to logs/2026-06-05-grav_decoherence_derived.txt
+Log written to logs/2026-06-07-grav_decoherence_derived.txt
 
 ----- stderr -----
 

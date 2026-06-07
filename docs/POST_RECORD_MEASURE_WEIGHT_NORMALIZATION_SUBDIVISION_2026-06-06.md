@@ -2,14 +2,16 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / read-only audit companion
-**Claim type:** methodology
-**Status:** exact-support branch-local for measure/weight subdivision and
+**Claim type:** positive_theorem
+**Status:** exact-support source-side for measure/weight subdivision and
 finite normalization certificate semantics; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt)
+**Bounded row export:**
+[`outputs/post_record_measure_weight_normalization_slice_2026_06_07.json`](../outputs/post_record_measure_weight_normalization_slice_2026_06_07.json)
 **Load-bearing upstream helper:**
 [`scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py`](../scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py)
 with cache
@@ -35,12 +37,12 @@ On the current ledger snapshot:
 | Measure/weight lane | Rows |
 |---|---:|
 | `source_measure_or_rn_bridge` | 15 |
-| `trace_normalization_reference` | 6 |
-| `character_path_channel_weight` | 9 |
+| `trace_normalization_reference` | 7 |
+| `character_path_channel_weight` | 10 |
 | `selector_tangent_readout_weight` | 7 |
-| `generic_measure_weight_import` | 7 |
+| `generic_measure_weight_import` | 6 |
 
-Total: `44` rows.
+Total: `45` rows.
 
 ## Meaning
 
@@ -102,7 +104,8 @@ The runner verifies:
   authority;
 - the selector/dial helper source used to obtain the bucket is included in the
   packet;
-- the current `measure_weight_normalization` row count is `44`;
+- bounded ledger-row export exists for the selected measure/weight rows;
+- the current `measure_weight_normalization` row count is `45`;
 - lane counts match the current snapshot;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;
@@ -115,9 +118,3 @@ Run:
 ```text
 python3 scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
 ```
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [post_record_selector_dial_bucket_subdivision_2026-06-06](POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md)

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/generation_weight_dial_structure_2026_06_05.py
+runner_sha256: 966cc28a84ad7142e2c831df7b7c621d3f4350fe9a03f87b3322bbe1cbb01196
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
 [PASS] S1.1 C is the order-3 cyclic shift (C^3 = I, C != I)
        C generates the only relabeling symmetry C_3 of the 3 hw=1 generation patterns (Lattice)
 [PASS] S1.2 C^2 = C^T = C^{-1} (the C_3 group is realized faithfully)
@@ -53,3 +61,6 @@ THEOREM GENERATION_WEIGHT_DIAL_STRUCTURE verified:
   strictly increasing; endpoints = the two canonical measures.
   SCOPE: derives the DIAL STRUCTURE only; the per-sector position s (value of r)
   is a SEPARATE, genuinely open selection (not fixed here).
+
+----- stderr -----
+

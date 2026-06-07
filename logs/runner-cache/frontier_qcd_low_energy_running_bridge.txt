@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_qcd_low_energy_running_bridge.py
-runner_sha256: e258ad4e6ce3380f2aaee63008e49423af1e5afbb7e6bf5fc7b2fae800987117
+runner_sha256: f3a020f14ce4df36cd67d85f138a04a89bca521f857b7f566a8d9c63d7623f75
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 0.73
 status: ok
 ----- stdout -----
 ==============================================================================
-QCD Low-Energy Running Bridge: alpha_s(v) -> alpha_s(M_Z)
+QCD Running-Kernel Bridge: admitted alpha_s(v) -> alpha_s(M_Z)
 ==============================================================================
 
-Bounded-scope same-surface running bridge using standard SM 2-loop
-RGE plus quark-mass threshold matching at m_t, m_b, m_c.
-Boundary: alpha_s(v=246.28) = 0.103304
+Bounded-scope running kernel using standard SM 2-loop
+RGE plus leading-order active-flavor matching; v -> M_Z crosses m_t.
+Boundary: alpha_s(v=246.28) = 0.103304 (admitted)
 Target:   alpha_s(M_Z=91.1876) ~ 0.1180 +/- 0.0009 (PDG)
 
 
@@ -24,21 +24,22 @@ Target:   alpha_s(M_Z=91.1876) ~ 0.1180 +/- 0.0009 (PDG)
 
 === Part 2: threshold-matching continuity ===
 
-  [PASS] [BOUNDED] threshold n_f flip changes slope but not the value AT the threshold (LO)  (|Delta g_3(m_t; n_f=6 vs n_f=5)|/g_3 = 0.0020 (slope-only at LO))
-  [PASS] [BOUNDED] g_3 monotonically grows toward IR through m_b, m_c (asymptotic freedom)  (g_3(v) = 1.1394, g_3(m_b)=1.6340, g_3(m_c)=2.1598)
+  [PASS] [BOUNDED] LO threshold matching keeps g_3 continuous at the crossed top threshold  (g_3(m_t^+) = 1.163379, g_3(m_t^-) = 1.163379)
+  [PASS] [BOUNDED] active-flavor change alters the QCD beta slope at the top threshold  (beta_6 = -6.979788e-02, beta_5 = -7.644530e-02)
+  [PASS] [BOUNDED] threshold helper remains monotone in lower-scale sanity run through m_b, m_c  (g_3(v) = 1.1394, g_3(m_b)=1.6340, g_3(m_c)=2.1598)
 
 === Part 3: one-decade transfer v -> M_Z ===
 
-  Boundary: alpha_s(v=246.28 GeV) = 0.103304
+  Boundary: alpha_s(v=246.28 GeV) = 0.103304 (admitted)
   Result:   alpha_s(M_Z=91.1876 GeV) = 0.118067
   PDG ref:  0.1180 +/- 0.0009
   [PASS] [BOUNDED] alpha_s(M_Z) within 2% of PDG world average  (alpha_s(M_Z) = 0.118067, PDG = 0.118, rel = 0.06%)
   [PASS] [BOUNDED] alpha_s(M_Z) within 1-sigma of PDG world average (0.1180 +/- 0.0009)  (|alpha_s(M_Z) - 0.1180| = 0.0001, sigma = 0.0009)
   [PASS] [BOUNDED] alpha_s(M_Z) reproduces canonical 0.1181 to within 0.001  (alpha_s(M_Z) = 0.118067, canonical = 0.1181)
 
-=== Part 4: bridge structural independence from plaquette insertion ===
+=== Part 4: kernel independence from boundary provenance ===
 
-  Varying alpha_s(v) in [0.0950, 0.1100] (a 7% window around 0.1033):
+  Varying admitted alpha_s(v) in [0.0950, 0.1100] (a 7% window around 0.1033):
     alpha_s(v)     g_3(v)   alpha_s(M_Z)
   --------------------------------------------
         0.0950     1.0926       0.107308
@@ -46,8 +47,8 @@ Target:   alpha_s(M_Z=91.1876) ~ 0.1180 +/- 0.0009 (PDG)
         0.1033     1.1393       0.118062
         0.1066     1.1574       0.122411
         0.1100     1.1757       0.126936
-  [PASS] [BOUNDED] alpha_s(M_Z) monotonically tracks alpha_s(v) (bridge has no hidden discontinuity)  (monotone propagation across the full 7% window)
-  [PASS] [BOUNDED] bridge transfer Jacobian d(alpha_s(M_Z)) / d(alpha_s(v)) is structurally consistent  (d(alpha_s(M_Z))/d(alpha_s(v)) = 1.3086 (compressive RGE flow))
+  [PASS] [BOUNDED] alpha_s(M_Z) monotonically tracks alpha_s(v) (kernel has no hidden discontinuity)  (monotone propagation across the full 7% window)
+  [PASS] [BOUNDED] kernel transfer Jacobian d(alpha_s(M_Z)) / d(alpha_s(v)) is structurally consistent  (d(alpha_s(M_Z))/d(alpha_s(v)) = 1.3086 (compressive RGE flow))
 
 === Part 5: 1-loop vs 2-loop truncation envelope ===
 
@@ -70,7 +71,7 @@ Target:   alpha_s(M_Z=91.1876) ~ 0.1180 +/- 0.0009 (PDG)
   [PASS] [BOUNDED] 2-loop SM RGE is standard Machacek-Vaughn / Arason et al infrastructure  (Nucl. Phys. B 222, 83 (1983); Phys. Rev. D 46, 3945 (1992))
 
 ==============================================================================
-SUMMARY: PASS=18  FAIL=0
+SUMMARY: PASS=19  FAIL=0
 ==============================================================================
 
 ----- stderr -----

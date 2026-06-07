@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_axiom_first_reflection_positivity_parent_source_packet_2026_06_07.py
+runner_sha256: 8c34491a75d4a517d0bdc1c57fb620c04467282278ee98a80b0a228c878f0917
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+axiom-first RP parent source-packet verifier 2026-06-07
+[PASS] exists: docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+[PASS] exists: docs/RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md
+[PASS] exists: scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py
+[PASS] exists: logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt
+[PASS] exists: logs/runner-cache/axiom_first_rp_two_step_transfer_matrix_positivity.txt
+[PASS] parent cites bridge note -- RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md
+[PASS] parent names latest blocker -- derive the full Wilson-plaquette gauge-half sesquilinear PSD form
+[PASS] parent uses corrected Wilson sign -- S_0 := -beta Re Tr[U_+ U_-^dag]
+[PASS] parent names ferromagnetic weight -- exp(+beta Re Tr[U_+ U_-^dag])
+[PASS] parent records character positivity route -- powers/fusion products have non-negative multiplicities
+[PASS] parent records Gram factorization -- G = W diag(kappa) W^dag
+[PASS] parent keeps audit boundary -- any downstream row retained.
+[PASS] bridge note fixes failed sign root -- S_0 := -beta
+[PASS] bridge note proves exact coefficient positivity -- tensor-power multiplicities
+[PASS] bridge note rejects grid exactness -- finite grid is spectrally-convergent
+[PASS] bridge note has wrong-sign teeth -- antiferromagnetic
+[PASS] bridge note says no new axiom -- introduces **no** new axiom
+[PASS] bridge cache passed -- TOTAL: 17 PASS / 0 FAIL
+[PASS] free two-step cache passed -- PASS=7 FAIL=0
+[PASS] free two-step cache has BdagB -- T_hat^2 = B^dag B
+[PASS] parent status firewall present: author-applied retained status
+[PASS] parent status firewall present: does not set or predict an audit outcome
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

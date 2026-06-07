@@ -3,7 +3,7 @@ runner: scripts/frontier_chiral_3plus1d_coupled_coin_scan.py
 runner_sha256: 4b1cb6d9ab49054f7fc16906e5fa2d6b1378bab9dc0efad4e0883942a49a110e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.48
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 FRONTIER: 3+1D COUPLED-COIN SCAN
@@ -62,7 +62,7 @@ Best/Worst
 ==============================================================================
 SUMMARY
 ==============================================================================
-  Runtime: 1.4s
+  Runtime: 0.4s
   Best KG point:    mix=1.00 (R^2=0.4787, dir_CV=0.8670)
   Best gauge point: mix=0.88 (V=0.9142, R^2=0.7004)
   Worst KG point:   mix=0.00 (R^2=0.0627, dir_CV=0.0603)

@@ -17,6 +17,10 @@ This script explicitly separates the two effects with matched controls.
 
 from __future__ import annotations
 
+# Heavy compute runner. The current cache completes in about 127 seconds on
+# this machine, just above the default 120 second audit timeout.
+AUDIT_TIMEOUT_SEC = 600
+
 import math
 import random
 

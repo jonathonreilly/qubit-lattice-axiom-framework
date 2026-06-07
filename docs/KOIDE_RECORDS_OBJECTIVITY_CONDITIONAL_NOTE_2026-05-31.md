@@ -8,7 +8,28 @@ inputs from the framework baseline and does not set an audit verdict.
 **Primary runner:**
 `scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py`
 with cache
-`logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt`.
+`logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt`
+(13/13 checks passed).
+
+## 2026-06-07 Record-Era Source Boundary
+
+The Record axiom and the post-record equal-letter notes do not by themselves
+turn this conditional into an unconditional theorem. The current Record axiom
+supplies additive scalar record readout/registration structure; it does not
+select the singlet/doublet sector measure. On the current surface, the row still
+has exactly two named inputs:
+
+1. the equal-block `(1,1)` metric, choosing atom/share weighting over rank/Born
+   `(1,2)` weighting; and
+2. the records/objectivity maximization selector, choosing the objectivity
+   functional as the physical readout criterion rather than the dephasing/trace
+   fixed point.
+
+This note can therefore be re-audited as a source-bounded conditional algebra
+certificate: if both inputs are supplied, `r=1/2` and `Q=2/3` follow. It cannot
+be cited as a Record-axiom derivation of the equal-block metric or of the
+objectivity selector. The Record-era state of the lane reinforces the existing
+boundary rather than removing it.
 
 ## Result
 

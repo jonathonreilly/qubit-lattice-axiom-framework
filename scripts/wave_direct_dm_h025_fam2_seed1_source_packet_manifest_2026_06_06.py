@@ -82,7 +82,8 @@ EXPECTED_CACHE_SNIPPETS = {
         "dM(early)  = +0.003777",
         "dM(late)   = +0.005814",
         "delta_hist = -0.002037",
-        "SUMMARY: WAVE H025 FAM2 SEED1 PASS=27 FAIL=0",
+        "MEASURE_DM_SOURCE_PACKET=PASS",
+        "SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0",
     ],
     "generic_point_runner_cache": [
         "status: ok",

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
-runner_sha256: cfc393928471758f7b4b2787cd6186526c0a529369b45899dc6d164fb8795083
+runner_sha256: 1cbcc61c68ced08485be8a68cb7f768d0806f26be03b55c96542e10c4673e0c4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -26,7 +26,7 @@ DIMENSION SELECTION PARENT: SOURCE PACKET MANIFEST
 [PASS] manifest_path_exists:finite_k_bridge_cache: logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt
 [PASS] note_links_manifest_path:finite_k_bridge_cache: logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt
 [PASS] note_links_manifest_output: outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
-[PASS] source_full_length:parent_runner: scripts/frontier_dimension_selection_lower_bound_parent_repair.py has 4048 bytes
+[PASS] source_full_length:parent_runner: scripts/frontier_dimension_selection_lower_bound_parent_repair.py has 7626 bytes
 [PASS] source_contains:parent_runner:import importlib.util: import importlib.util present
 [PASS] source_contains:parent_runner:BRIDGE_RUNNER: BRIDGE_RUNNER present
 [PASS] source_contains:parent_runner:def load_bridge_runner: def load_bridge_runner present
@@ -43,9 +43,10 @@ DIMENSION SELECTION PARENT: SOURCE PACKET MANIFEST
 [PASS] source_contains:finite_k_bridge_runner:def part3_finite_difference: def part3_finite_difference present
 [PASS] source_contains:finite_k_bridge_runner:SUMMARY: PASS=: SUMMARY: PASS= present
 [PASS] cache_runner_matches:parent_cache: scripts/frontier_dimension_selection_lower_bound_parent_repair.py == scripts/frontier_dimension_selection_lower_bound_parent_repair.py
-[PASS] cache_sha_fresh:parent_cache: 97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880 == 97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880
+[PASS] cache_sha_fresh:parent_cache: 55ba22423e9c8abc6d29b210233dbb0fea7d0e4001b9b0e1aa5bf17cb6b87c7f == 55ba22423e9c8abc6d29b210233dbb0fea7d0e4001b9b0e1aa5bf17cb6b87c7f
 [PASS] cache_exit_ok:parent_cache: exit_code=0 status=ok
-[PASS] cache_snippet_present:parent_cache:SUMMARY: PASS=26 FAIL=0: SUMMARY: PASS=26 FAIL=0
+[PASS] cache_snippet_present:parent_cache:SUMMARY: PASS=27 FAIL=0: SUMMARY: PASS=27 FAIL=0
+[PASS] cache_snippet_present:parent_cache:COMPANION_PACKET: PASS: COMPANION_PACKET: PASS
 [PASS] cache_snippet_present:parent_cache:finite-k lower-bound pass set is d=3,4,5: finite-k lower-bound pass set is d=3,4,5
 [PASS] cache_snippet_present:parent_cache:finite-k lower-bound fail set is d=1,2: finite-k lower-bound fail set is d=1,2
 [PASS] cache_runner_matches:original_cache: scripts/frontier_dimension_selection.py == scripts/frontier_dimension_selection.py
@@ -66,7 +67,7 @@ DIMENSION SELECTION PARENT: SOURCE PACKET MANIFEST
 [PASS] bridge_json_fail_count_zero: 0
 [PASS] bridge_json_pass_count_56: 56
 ========================================================================================
-SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=56 FAIL=0
+SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=57 FAIL=0
 ========================================================================================
 Output written: outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
 

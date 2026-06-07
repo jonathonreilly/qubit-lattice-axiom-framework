@@ -1,11 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_gamma5_factor_bridge_no_go.py
-runner_sha256: 221a2d6adc028723ed131aa35fda016c41230f1b5b4f8c36f8cec1b83fb70444
+runner_sha256: 3c0a819bc6cc8ab34f52b8d8dfe1fdfb0bf963fb02326b40b3743e8e4244f952
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
+
+==============================================================================
+Source anchors: companion current-gap bridge packet
+==============================================================================
+[PASS] target note links the companion current-gap no-go note
+[PASS] target note links the companion current-gap runner
+[PASS] target note links the companion current-gap runner cache
+[PASS] companion runner source is statically importable
+[PASS] companion note states the T-odd and generation-partition non-commutation requirement
+[PASS] companion note keeps r weight-clean
 
 ==============================================================================
 Setup: generation factor (C^3) and on-site gamma5 (C^2)
@@ -39,9 +49,9 @@ The rank-2 sector gamma5 splits is spin/taste, not the generation C^3
 ==============================================================================
 Weight-clean: no r is forced
 ==============================================================================
-[PASS] statement is r-independent: S, A, gamma5 carry no r dependence (G3 clean)
+[PASS] statement is r-independent: generation partition, current, and gamma5 operators carry no r dependence
 
-TOTAL: PASS=14 FAIL=0
+TOTAL: PASS=20 FAIL=0
 VERDICT: gamma5 factor-bridge no-go checks pass.
   On-site gamma5 = gamma5_spin (x) I_gen commutes with S on the
   generation C^3 EXACTLY and is K-even there -> supplies NEITHER half

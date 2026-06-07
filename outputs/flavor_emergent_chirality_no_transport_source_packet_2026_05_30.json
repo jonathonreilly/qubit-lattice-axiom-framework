@@ -1,0 +1,89 @@
+{
+  "L3_1_2": "2/9",
+  "authority_packets": [
+    {
+      "cache_path": "logs/runner-cache/frontier_s3_time_bilinear_tensor_primitive.txt",
+      "cache_sha256": "38561ef300fabe5271001afde3f2bf0c2bab1c4bfdab8af09a2d410d04f4c0f8",
+      "label": "s3 time bilinear tensor primitive",
+      "note_path": "docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md",
+      "note_sha256": "1aa7d4d90be30f085f193d5ad341937967e070b7b4b6edaa9b4dddc6958d259c",
+      "runner_path": "scripts/frontier_s3_time_bilinear_tensor_primitive.py",
+      "runner_sha256": "743c8e4f922044494cc10e0665da3de02f21a4be8d300d13f0e7651ff7cbbe84"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_s3_time_bilinear_tensor_action.txt",
+      "cache_sha256": "e5bef61c2a4ceaf9566afe6a527dbb3ab3ce14035e782c1b58a6cc7013c3dc16",
+      "label": "s3 time bilinear tensor action",
+      "note_path": "docs/S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md",
+      "note_sha256": "db355e01075d5c6d7a0701b1928a7aca0eab9d30a2fe102517ec271fbc806cda",
+      "runner_path": "scripts/frontier_s3_time_bilinear_tensor_action.py",
+      "runner_sha256": "539882d385a49c2bf47785dea8f84ab7e6cb9aff315d2de6f9840cdb4ef7589a"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_s3_time_constructed_support_tensor_primitive.txt",
+      "cache_sha256": "5bb7bd1302aa9a314b2f2f4ca2ea5e38aa93925a0c8f2e1abc1a21da20b36736",
+      "label": "s3 time constructed support tensor",
+      "note_path": "docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md",
+      "note_sha256": "ef9dd087a811fb3c3950cd8ea361ead1d1c467412dbef6c9b58372e09a752c80",
+      "runner_path": "scripts/frontier_s3_time_constructed_support_tensor_primitive.py",
+      "runner_sha256": "2facf5e88c080e7c69524e44ec275892a23b31c6f5d3c2af47abb0d980045908"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_s3_time_tensor_primitive_prototype.txt",
+      "cache_sha256": "d5bbd506626d43c4db31936bc9a1ecfc9a5e01aa2c091573ae50cbd8a475bf56",
+      "label": "s3 time tensor primitive prototype",
+      "note_path": "docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md",
+      "note_sha256": "f1943218167cd5e64d1b41749508df2fbae617c14e1dbcd6b9d0061e967ea419",
+      "runner_path": "scripts/frontier_s3_time_tensor_primitive_prototype.py",
+      "runner_sha256": "322db0d1eeafeb623b89b76e3dc21fcf074aaf73d3bf18032465cec7dd29c3a4"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_s3_time_spacetime_tensor_primitive.txt",
+      "cache_sha256": "ba6238aeca2216f7aa2a17a6f517f5be10a957a3aa27f2aefdf3ad42cac3810a",
+      "label": "s3 time spacetime tensor primitive",
+      "note_path": "docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md",
+      "note_sha256": "6cd3b845aaa16ecf2d9c44d7608c8353aa5b9853b3821b3d9031113a8bdc37d2",
+      "runner_path": "scripts/frontier_s3_time_spacetime_tensor_primitive.py",
+      "runner_sha256": "f248a79d9d5f846e00b9273b717f72980e106abab254c5b2061d4bdc0cf81976"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_s3_time_transfer_matrix_bridge.txt",
+      "cache_sha256": "67ebcbf06367461fa6c927c2819504ae1608e613aab1185283107a68a03a532e",
+      "label": "s3 time transfer matrix bridge",
+      "note_path": "docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md",
+      "note_sha256": "1137fb75202092d5335f764ceb70e9db328ad3800715478a46977ef8235b3cb9",
+      "runner_path": "scripts/frontier_s3_time_transfer_matrix_bridge.py",
+      "runner_sha256": "c952fd283165cfc8794340be47751725ace2eebc9b41e9b2783121cc67e0054a"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_chiral_3plus1d_boundary_phase_diagram.txt",
+      "cache_sha256": "9728b25d309648d60d83c6616a04011f3c49389fc0c1b244c945dade90790a2b",
+      "label": "chiral 3plus1d boundary phase",
+      "note_path": "docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md",
+      "note_sha256": "4855907f24071b711552c2d42e46460da91d8824cce748ec60ad0fe9f91ea794",
+      "runner_path": "scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py",
+      "runner_sha256": "49b7ce1ed1d6236d1ca3ca7d45fa7b3fff653cdec214dec7d8a8bd160715780c"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_chiral_3plus1d_coupled_coin_scan.txt",
+      "cache_sha256": "76d1f035ddc52b1b567e7ebfffef5a2374b96203562ed2271ddfb3a51c5cea58",
+      "label": "chiral 3plus1d coupled coin",
+      "note_path": "docs/CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md",
+      "note_sha256": "8aa2bc2895b8e3c6576a607b7aa1480eab8fc9117c5d3bfd7146d698abf02ee4",
+      "runner_path": "scripts/frontier_chiral_3plus1d_coupled_coin_scan.py",
+      "runner_sha256": "4b1cb6d9ab49054f7fc16906e5fa2d6b1378bab9dc0efad4e0883942a49a110e"
+    },
+    {
+      "cache_path": "logs/runner-cache/frontier_z_n_spectral_asymmetry_physical_identification.txt",
+      "cache_sha256": "49b921577e50001b28210fec0e3a55573760fb34107105a377386db73f8729fb",
+      "label": "Z_N spectral asymmetry L3",
+      "note_path": "docs/Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md",
+      "note_sha256": "c6ab6cc13e2a2b1ff3a408e36f8e454ba684383b375c56fcd65f88305c08886e",
+      "runner_path": "scripts/frontier_z_n_spectral_asymmetry_physical_identification.py",
+      "runner_sha256": "fb112b9758c9716dde8576674e39cd5ca667c5e01b2fa475233d89ec2843d8ad"
+    }
+  ],
+  "claim_id": "flavor_emergent_chirality_no_transport_note_2026-05-30",
+  "forced_transport_Q_display": 0.267,
+  "forced_transport_anticommutator_norm_display": 1.38
+}

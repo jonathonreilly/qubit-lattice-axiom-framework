@@ -6,10 +6,30 @@
 effective status are set by the independent audit lane.
 **Primary runner:** [`scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py`](../scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py)
 
+## 2026-06-07 source-packet repair
+
+The audit blocker named two residual inputs: Q1 (`Cl(3,1)` signature
+extension) and Q2 (on-shell thermal counting). On current `main`, Q1's finite
+Clifford-algebra content is now audit-retained by
+[`CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md).
+This repair updates the row accordingly:
+
+- Q1 is retired as an unsupported algebraic admission for this dof bridge.
+- Q2 is repaired as a textbook-counting import: the on-shell halving is now a
+  source-local finite-rank statement for the Dirac mass-shell operator on
+  `C^4`.
+- The row still does not claim physical Wick rotation, spacetime dynamics, or
+  forced Lorentzian-sign selection.
+- The row still does not derive the Dirac equation or the physical thermal
+  inventory; it proves the counting once that first-order mass-shell equation
+  is the active free-particle equation.
+- This is not a ledger retag; independent audit owns any effective-status
+  change.
+
 ## Claim
 
-Given the supplied Cl(3,1) Lorentzian-signature extension and
-on-shell thermal-counting admission packet (Q1-Q2 below), and the
+Given the retained Cl(3,1) finite Clifford-algebra source packet (Q1
+below), the source-local on-shell rank certificate (Q2 below), and the
 existing framework authority packet (R1-R4 below), the Standard Model
 fermion thermal degree-of-freedom counts named in premise P4 of the
 parent thermal-inventory proof-walk
@@ -25,19 +45,25 @@ inputs. The factor `2` for spin comes from R1 (per-site `j = 1/2`); the
 factor `2` for particle-antiparticle comes from R3 (CPT exact); the
 factor `2` halving from Dirac to Weyl comes from R2 (chirality operator
 `gamma_5` existence at even total Clifford generator count). The
-Cl(3,1) signature extension supplying the `n = 4` even-generator count
-itself is admitted in Q1 (the Wick-rotation sign-`ε` admission P2 of
-`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`); the on-shell
-thermal-counting convention (`2 spin * 2 particle-antiparticle = 4`
-rather than the naive 8 real off-shell components of the four-component
-spinor) is admitted in Q2.
+Cl(3,1) algebra-cell fact supplying the `n = 4` even-generator count is
+now sourced by the retained Q1 authority
+`CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md`.
+The on-shell halving is no longer imported as a textbook convention:
+Q2 now proves, by explicit Dirac-operator rank, that imposing
+`(gamma^mu p_mu - m) psi = 0` on an on-shell momentum leaves a
+two-complex-dimensional particle solution space per energy branch.
 
-This is a bounded admission bridge. It does **not** add a new axiom, a
-new repo-wide theory class, or a retained-status claim. The Cl(3,1)
-signature extension remains an external admission named in Q1; the
-on-shell thermal-counting convention remains an external admission
-named in Q2. Parent-note replacement of P4 is audit-conditional, not a
-status change performed by this source note.
+This is a Q1/Q2-counting-repaired bounded bridge. It does **not** add a new
+axiom, a new repo-wide theory class, or a retained-status claim. Q1 is retired
+only as the finite Clifford-algebra cell `Cl(3,1) ~= M_4(R)` with a
+four-real-dimensional faithful module; it does **not** claim the
+framework has derived Wick rotation, spacetime dynamics, or physical
+selection of the Lorentzian sign. Q2 is retired only as the finite
+linear-algebra count for an already-supplied Dirac mass-shell equation;
+this bridge does **not** derive that equation, the free-field dynamics,
+or the physical thermal inventory itself.
+Parent-note replacement of P4 is audit-conditional, not a status change
+performed by this source note.
 
 ## Framework authority packet (R1-R4)
 
@@ -97,42 +123,57 @@ Cl(3) backbone
 are framework-baseline context pointers and not load-bearing for the
 dof arithmetic.
 
-## Supplied admission packet (Q1-Q2, not framework-retained)
+## Retained source plus source-local counting packet (Q1-Q2)
 
-The following admission packet supplies the Lorentzian-signature
-spinor-space dimension and the on-shell thermal-counting convention.
-Q1-Q2 are declared explicitly for this bridge; they are not derived
-from the framework here and are not promoted to axioms.
+The following packet supplies the Lorentzian-signature spinor-space
+dimension and the on-shell thermal-counting count. Q1 is now a retained
+finite Clifford-algebra authority on the current ledger; Q2 is repaired
+inside this packet as a finite rank calculation. Neither is promoted to
+an axiom.
 
-- **Q1 Cl(3,1) Lorentzian signature extension (`n = 4` even generator
-  count; `Cl(3, 1) ≅ M_4(R)`).** The framework's per-site `Cl(3, 0)`
-  algebra is extended by one additional anticommuting generator `e_4`
-  with `e_4^2 = -I` (the Lorentzian-signature timelike sign). The
-  resulting algebra is `Cl(3, 1) ≅ M_4(R)`, whose unique faithful
-  irreducible real module is the standard `R^4` action of `M_4(R)`, of
-  real dimension 4. The narrow Cartan-Bott classification is recorded
-  in
-  `CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md`
-  as source context; the sign-`ε = -1` choice itself is the
-  Wick-rotation admission **P2** of
-  `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`. Q1 is admitted,
-  not derived, on this bridge.
+- **Q1 Cl(3,1) finite Clifford-algebra source (`n = 4` even generator
+  count; `Cl(3, 1) ≅ M_4(R)`).** This is now supplied by the retained
+  source
+  [`CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md).
+  That theorem proves the two one-generator real-Clifford extensions of
+  the framework `Cl(3,0)` cell, identifies the `ε = -1` branch as
+  `Cl(3,1) ≅ M_4(R)`, and gives the faithful real `R^4` module used
+  here. Q1 is therefore retired as an unsupported admission for this
+  local algebraic dof bridge. Boundary: the retained theorem does not
+  derive Wick rotation, physical spacetime, dynamics, or why the
+  framework must select the Lorentzian sign; any downstream use that
+  requires those physical claims must still carry that separate
+  bounded premise.
 
-- **Q2 On-shell relativistic thermal-counting convention (factor of
-  `1/2` from off-shell to on-shell).** A four-component complex Dirac
-  spinor `psi` has `4 * 2 = 8` real off-shell components. After
-  imposing the Dirac equation `(i gamma^mu partial_mu - m) psi = 0` as
-  a first-order on-shell constraint, the on-shell relativistic state
-  count is `8 / 2 = 4` real on-shell components per spacetime point
-  (Peskin & Schroeder, *An Introduction to Quantum Field Theory*,
-  §3.3; Weinberg, *The Quantum Theory of Fields*, Vol. I, §5.5). Q2
-  is the standard textbook on-shell convention; it is admitted here as
-  external bookkeeping infrastructure, not derived on the framework
-  surface.
+- **Q2 On-shell finite-rank counting certificate (factor of `1/2`
+  from off-shell spinor space to one energy-branch solution space).**
+  Let the retained Q1 `Cl(3,1)` cell be represented by gamma matrices
+  satisfying `{gamma^mu, gamma^nu} = 2 eta^{mu nu} I_4` with
+  `eta = diag(+,-,-,-)` after the standard real/complex presentation
+  change used by the runner. For a momentum satisfying the mass-shell
+  relation `p_0^2 - |p|^2 = m^2`, the Dirac operator
+  `D(p) = gamma^mu p_mu - m I_4` obeys `D(p)(gamma^mu p_mu + m I_4)=0`
+  on shell. In the explicit Q1 gamma representation the runner checks
+  that `rank D(p) = 2` and therefore `dim_C ker D(p) = 2` for:
 
-Q1 names the algebraic extension to `n = 4` Clifford generators; Q2
-names the on-shell vs off-shell relativistic-counting convention used
-by the parent thermal-inventory note.
+  ```text
+  p = (m, 0, 0, 0)        rest branch,
+  p = (5, 0, 0, 4), m=3   nonzero-momentum branch,
+  p = (-5, 0, 0, 4), m=3  antiparticle/negative-energy branch.
+  ```
+
+  Thus the "on-shell halving" is not an imported textbook counting
+  convention in this row: it is the finite linear-algebra fact
+  `C^4 -> ker D(p)` with nullity `2` per energy branch. The real
+  off-shell phrase `8 -> 4` is the same statement after multiplying
+  complex dimensions by `2`. Boundary: Q2 does not derive the Dirac
+  equation, does not derive the physical free-field dynamics, and does
+  not by itself prove that the high-temperature thermal inventory must
+  use this free Dirac mass-shell surface.
+
+Q1 names the retained algebraic extension to `n = 4` Clifford
+generators; Q2 supplies the source-local on-shell rank count used by
+the parent thermal-inventory note.
 
 ## Proof-walk
 
@@ -151,8 +192,8 @@ Monte-Carlo measurement, fitted comparator) enters the proof-walk.
 | (F4) | Faithful real irrep of `Cl(3, 1) ≅ M_4(R)` has real dimension 4 | Q1 | no |
 | (F5) | Spin label per Dirac state: `m_s in {-1/2, +1/2}` gives factor 2 from per-site `j = 1/2` | R1 | no |
 | (F6) | Particle-antiparticle label per Dirac state: CPT pairs `psi <-> psi^c` of equal mass, factor 2 | R3 | no |
-| (F7) | Naive off-shell real-component count of a four-component complex Dirac spinor: `4 (complex) * 2 (real per complex) = 8` | (F4) + Q2 (admission) | no |
-| (F8) | On-shell Dirac equation constraint halves naive 8 to 4: `8 / 2 = 4` | Q2 | no |
+| (F7) | Naive off-shell real-component count of a four-component complex Dirac spinor: `4 (complex) * 2 (real per complex) = 8` | (F4) + complexification bookkeeping | no |
+| (F8) | On-shell Dirac equation constraint halves naive 8 to 4: `rank(gamma.p - m)=2`, so `dim_C ker=2` per energy branch | Q2 finite-rank certificate | no |
 | (F9) | Equivalent thermal factorisation: Dirac on-shell dof = `2 (spin) * 2 (particle-antiparticle) = 4` | R1 (spin factor) + R3 (particle-antiparticle factor) | no |
 | (F10) | Chirality halving for Weyl: `P_L psi` projects out half of the four spinor components, so Weyl on-shell dof = `4 / 2 = 2` | R2 + (F8) | no |
 | (F11) | Equivalent thermal factorisation: Weyl on-shell dof = `2 (helicity-antiparticle)` | R3 + (F10) (one chirality projected, helicity-antiparticle is the surviving doublet) | no |
@@ -172,7 +213,8 @@ dof_Dirac (on-shell)  =  2  (spin, m_s in {-1/2, +1/2}, from R1)
                       =  4.
 ```
 
-Equivalently, from the spinor-space dimension and Q2 on-shell halving,
+Equivalently, from the spinor-space dimension and Q2 finite-rank
+on-shell halving,
 
 ```text
 dof_Dirac (on-shell)  =  dim_R V_(3,1)  *  2  /  2
@@ -183,8 +225,8 @@ dof_Dirac (on-shell)  =  dim_R V_(3,1)  *  2  /  2
 where `dim_R V_(3,1) = 4` is the real dimension of the faithful real
 irreducible module of `Cl(3, 1) ≅ M_4(R)` (Q1), the `* 2` is the
 real-vs-complex doubling for a complex Dirac spinor (4 complex
-components -> 8 real components), and the `/ 2` is the Q2 on-shell
-halving from the first-order Dirac equation.
+components -> 8 real components), and the `/ 2` is the Q2 finite-rank
+halving from the first-order Dirac mass-shell operator.
 
 The Weyl on-shell thermal dof factorises as
 
@@ -233,12 +275,15 @@ This bridge supplies the algebraic content of P4 in two parts:
   
   > Each Dirac fermion state contributes `2 (spin, from R1) * 2
   > (particle-antiparticle, from R3) = 4` thermal degrees of freedom,
-  > with the on-shell convention from Q2 and the four-component
-  > spinor space from Q1.
+  > with the source-local on-shell rank count from Q2 and the
+  > four-component spinor space from Q1.
   
-  The two `2`s are then no longer unattributed premise content; only
-  the admissions Q1 (Cl(3,1) signature extension) and Q2 (on-shell
-  counting convention) remain explicit for this bridge.
+  The two `2`s are then no longer unattributed premise content. Q1
+  (finite `Cl(3,1)` algebra cell) is retained-sourced, and Q2's
+  textbook on-shell-counting import is replaced by this source-local
+  rank certificate. The residual boundary is narrower: the bridge does
+  not derive the Dirac equation/free-field mass-shell input or the
+  physical thermal-inventory use of that input.
 
 - **The Weyl `2 (helicity-antiparticle)` factor** is also
   supported on the chirality-halving side: R2 supplies the existence of
@@ -250,9 +295,9 @@ This bridge supplies the algebraic content of P4 in two parts:
   single chirality).
 
 P4 of the parent note can therefore be replaced, after independent
-audit of this bounded row, by this explicit bridge plus the residual
-admission content Q1 (signature extension) and Q2 (on-shell counting).
-This is the operational purpose of the present bridge note.
+audit of this bounded row, by this explicit bridge plus retained Q1 and
+source-local Q2 rank counting. This is the operational purpose of the
+present bridge note.
 
 ## Dependencies
 
@@ -269,16 +314,19 @@ Load-bearing framework dependencies for this bridge:
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
   Berezin-determinant identity.
 
-Admitted load-bearing inputs (not framework-derived here):
+Retained / bounded source inputs:
 
-- `CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md`
-  records the Cartan-Bott classification cell `Cl(3, 1) ≅ M_4(R)`;
-  this bridge admits that cell through Q1 rather than using the row as
-  retained framework input.
+- [`CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md)
+  is now the retained Q1 source for the Cartan-Bott classification cell
+  `Cl(3, 1) ≅ M_4(R)` and its four-real-dimensional faithful module.
+- Q2 finite-rank on-shell counting is source-local to this note and runner:
+  explicit gamma matrices verify `rank(gamma.p - m)=2` on mass shell and
+  chirality projectors split the massless branch.
 - `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`
   parent honest-status note naming the Wick-rotation `Z^3 -> Z^4`
-  admission (P2). Q1 of the present bridge is exactly the algebraic
-  content of P2 expressed in Clifford-algebra language.
+  admission (P2). This bridge does not claim to close that physical
+  Wick-rotation premise; it only uses the retained finite
+  Clifford-algebra Q1 cell.
 
 Non-load-bearing context:
 
@@ -293,32 +341,32 @@ Non-load-bearing context:
 - `MINIMAL_AXIOMS_2026-05-20.md` framework-baseline two-axiom
   packet; context only.
 
-These are imported authorities for a bounded admission bridge. The
-row remains unaudited until the independent audit lane reviews this
-note, its dependencies, the supplied admission packet, and the runner.
+These are imported authorities for a bounded Q1/Q2-counting-repaired bridge. The row
+remains under independent audit authority until the audit lane reviews
+this note, its dependencies, the source-local Q2 rank certificate, and
+the runner.
 
 ## Boundaries
 
 This bridge does not close:
 
-- derivation of the Cl(3,1) Lorentzian signature itself (the Q1
-  admission; equivalent to P2 of `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`);
-- derivation of the on-shell relativistic-counting convention (Q2;
-  textbook Peskin-Schroeder / Weinberg infrastructure consumed
-  externally);
+- physical derivation of Wick rotation, spacetime dynamics, or forced
+  Lorentzian-sign selection. Q1 retires only the finite algebraic
+  `Cl(3,1) ~= M_4(R)` cell used for the spinor module;
+- derivation of the Dirac equation/free-field dynamics themselves. Q2
+  proves the finite count once the first-order Dirac mass-shell equation
+  is the active equation;
 - derivation of the Lorentz group `SO(3, 1)` or its spin cover
   `SL(2, C)`;
 - derivation of the spin-statistics theorem (R4 supplies the CAR
   cardinality core but does not derive the spin-statistics theorem
   proper);
-- derivation of the Dirac equation `(i gamma^mu partial_mu - m) psi
-  = 0` itself;
 - the staggered-Dirac realization gate (still open);
 - closure of the parent note
   `G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md`
   (the parent inventory note still has P1, P2, P3, P5 as admitted
   premises; this bridge only supports audit-conditional replacement of
-  P4 and exposes its residual admission content as Q1 + Q2);
+  P4);
 - any downstream cosmology, leptogenesis, or DM claim;
 - promotion of `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27`
   (the present bridge does not alter the audit status of cited
@@ -329,16 +377,16 @@ This bridge does not close:
 
 - The bridge **claims** that the four-factor decomposition `dof_Dirac
   = 2 (spin) * 2 (particle-antiparticle) = 4` follows from R1 + R3 as
-  exact integer arithmetic, given the Q1 + Q2 admission packet, and
-  that the Weyl halving `dof_Weyl = dof_Dirac / 2 = 2` follows from
-  R2 (chirality operator at even `n`).
-- The bridge **does not claim** that the Cl(3,1) signature extension
-  is forced by any retained framework primitive. The sign-`ε = -1`
-  choice is the open content of P2 of
-  `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`.
-- The bridge **does not claim** that the on-shell vs off-shell
-  reduction `/ 2` is a framework derivation; it is a textbook
-  on-shell convention named explicitly in Q2.
+  exact integer arithmetic, given retained Q1 plus the Q2 finite-rank
+  on-shell count, and that the Weyl halving `dof_Weyl = dof_Dirac / 2 = 2`
+  follows from R2 (chirality operator at even `n`).
+- The bridge **does not claim** that the Lorentzian sign is physically
+  forced by the framework. The retained Q1 theorem supplies the finite
+  algebraic cell; physical sign selection remains outside this bridge.
+- The bridge **does not claim** that the Dirac equation/free-field
+  mass-shell surface is derived by this row. It only removes the
+  textbook import for the on-shell dimension count once that equation
+  is supplied.
 - The bridge **does not claim** parent-note status promotion. The
   parent note
   `G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md`
@@ -346,8 +394,9 @@ This bridge does not close:
   P2 (two transverse polarizations per massless vector), P3 (four
   real scalar dof in complex Higgs doublet), and P5 (temperature
   regime). P4 can only be replaced after this bounded bridge is
-  independently audited, with its residual admission content named as
-  Q1 + Q2 of the present bridge.
+  independently audited, with any separate downstream premise that tries
+  to use Q1 as a physical Wick-rotation/sign-selection theorem kept
+  outside this row.
 - The bridge **does not claim** that the framework's per-site Hilbert
   space becomes `R^4`-valued under Wick rotation. The framework's
   per-site site module is `C^2`-valued per
@@ -370,5 +419,6 @@ Expected:
 TOTAL: PASS=<n> FAIL=0
 VERDICT: bounded admission bridge passes; Dirac dof = 4 and Weyl
 dof = 2 follow from the framework authority packet R1-R4 plus
-supplied admission packet Q1-Q2 by exact rational arithmetic.
+retained Q1 plus source-local Q2 rank counting by exact rational
+arithmetic.
 ```

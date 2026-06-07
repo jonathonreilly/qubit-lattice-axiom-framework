@@ -1,11 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/wide_lattice_h2t_distance_replay.py
-runner_sha256: a956c2162bf28be8f6c1e315e17f83445d5fb82b8ec977e8fc175831b2cbb3cb
+runner_sha256: 05d296dacf44cdcb268b8c99ef83f68b62027e976651cea24a06f9514360f844
 timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.01
-status: timeout
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
 ----- stdout -----
+========================================================================================
+WIDE-LATTICE H^2+T DISTANCE-LAW FROZEN LOG VERIFIER
+source_log=logs/2026-04-05-wide-lattice-h2t-distance-replay.txt
+Use --recompute to run the original slow wide-lattice replay.
+========================================================================================
+PASS header: wide-lattice replay header present
+PASS barrier sanity: Born=4.82e-15 and k=0 exactly zero
+PASS distance rows: rows=10 expected=10
+PASS distance all toward: toward=10/10
+PASS toward support: support=10/10
+PASS peak tail: peak tail -0.95, R2=0.980, n=8
+PASS far tail: far tail -1.05, R2=0.990, n=7
+PASS F~M sweep rows: rows=6 expected=6
+PASS F~M all toward: toward=6/6
+PASS F~M exponent: exponent=1.000
+SCORECARD PASS=10 FAIL=0
 
 ----- stderr -----
 

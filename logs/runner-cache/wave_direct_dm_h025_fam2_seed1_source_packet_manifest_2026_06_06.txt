@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py
-runner_sha256: 99f82881b6333c233930646d4426c962a12bddb987d9cf8971e6750615748b57
+runner_sha256: 5a3e47d70aeb235ecc1c016095e05cde70b9c092d96024bec489293b19fcbed3
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -31,7 +31,7 @@ WAVE DIRECT-DM H025 FAM2 SEED1: TRANSITIVE SOURCE PACKET MANIFEST
 [PASS] note_names_manifest_artifact:manifest_runner: scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
 [PASS] note_names_manifest_artifact:manifest_cache: logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
 [PASS] note_names_manifest_artifact:manifest_json: outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
-[PASS] source_untruncated:target_runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py has 5121 bytes
+[PASS] source_untruncated:target_runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py has 7306 bytes
 [PASS] source_marker:target_runner:FAMILY = "Fam2": FAMILY = "Fam2" present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
 [PASS] source_marker:target_runner:SEED = 1: SEED = 1 present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
 [PASS] source_marker:target_runner:H_VALUE = 0.25: H_VALUE = 0.25 present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
@@ -58,7 +58,7 @@ WAVE DIRECT-DM H025 FAM2 SEED1: TRANSITIVE SOURCE PACKET MANIFEST
 [PASS] source_marker:continuum_helper_source:field[idx] = field_at: field[idx] = field_at present in scripts/wave_retardation_continuum_limit.py
 [PASS] source_marker:continuum_helper_source:def cz: def cz present in scripts/wave_retardation_continuum_limit.py
 [PASS] cache_runner_matches:target_cache: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py == scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
-[PASS] cache_sha_fresh:target_cache: cache sha 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d current sha 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d
+[PASS] cache_sha_fresh:target_cache: cache sha c1d401ee87e275b853d56ac27903b44c0a9b697c3b6625e92d34ff689691b4b9 current sha c1d401ee87e275b853d56ac27903b44c0a9b697c3b6625e92d34ff689691b4b9
 [PASS] cache_exit_ok:target_cache: exit_code=0 status=ok
 [PASS] cache_contains:target_cache:status: ok: status: ok
 [PASS] cache_contains:target_cache:PASS family is fixed to Fam2: PASS family is fixed to Fam2
@@ -67,7 +67,8 @@ WAVE DIRECT-DM H025 FAM2 SEED1: TRANSITIVE SOURCE PACKET MANIFEST
 [PASS] cache_contains:target_cache:dM(early)  = +0.003777: dM(early)  = +0.003777
 [PASS] cache_contains:target_cache:dM(late)   = +0.005814: dM(late)   = +0.005814
 [PASS] cache_contains:target_cache:delta_hist = -0.002037: delta_hist = -0.002037
-[PASS] cache_contains:target_cache:SUMMARY: WAVE H025 FAM2 SEED1 PASS=27 FAIL=0: SUMMARY: WAVE H025 FAM2 SEED1 PASS=27 FAIL=0
+[PASS] cache_contains:target_cache:MEASURE_DM_SOURCE_PACKET=PASS: MEASURE_DM_SOURCE_PACKET=PASS
+[PASS] cache_contains:target_cache:SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0: SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0
 [PASS] cache_runner_matches:generic_point_runner_cache: scripts/wave_direct_dm_h025_point_runner.py == scripts/wave_direct_dm_h025_point_runner.py
 [PASS] cache_sha_fresh:generic_point_runner_cache: cache sha e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a current sha e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a
 [PASS] cache_exit_ok:generic_point_runner_cache: exit_code=0 status=ok
@@ -95,8 +96,9 @@ WAVE DIRECT-DM H025 FAM2 SEED1: TRANSITIVE SOURCE PACKET MANIFEST
 [PASS] note_has_transitive_helper_repair_section: wave note has the 2026-06-06 helper repair section
 [PASS] note_preserves_bounded_boundary: repair section states that status movement remains audit-owned
 ========================================================================================
-SUMMARY: WAVE SOURCE PACKET PASS=85 FAIL=0
+SUMMARY: WAVE SOURCE PACKET PASS=86 FAIL=0
 ========================================================================================
 Output written: outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json
 
 ----- stderr -----
+

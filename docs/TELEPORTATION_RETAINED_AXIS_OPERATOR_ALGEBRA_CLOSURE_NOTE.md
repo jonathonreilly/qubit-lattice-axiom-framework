@@ -208,8 +208,12 @@ then applies, giving branch probability `1/4` and corrected fidelity `1`. □
 
 The runner enumerates every `(dim, side, retained_axis)` triple in
 `{1,2,3} x {2,4} x {0,...,d-1}` (12 cases for axes-all) and verifies all
-eight theorems numerically. Each PASS uses 2x2 block projection and
-operator-norm residuals at tolerance `1e-12`.
+eight theorems. Small pair-register cases use dense pair-RALA projectors and
+operator-norm residuals at tolerance `1e-12`. The `dim=3, side=4` pair
+cases use the exact logical-factor reduction after first checking
+`Z_axis = sigma_z (x) I_env` and `X_axis = sigma_x (x) I_env` by the same
+single-register block projection. This avoids materializing 4096-by-4096
+dense matrices while preserving the full audited grid.
 
 Default observed run:
 

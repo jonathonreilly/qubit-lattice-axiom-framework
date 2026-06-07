@@ -11,7 +11,7 @@ pipeline after independent review.
 ## Summary
 
 The charged-lepton generation partition predicate (`δ=0` / K-reality)
-requires — per the companion G2-bridge no-go (the C₃-current `A=i(C-C²)`
+requires — per the companion C₃-current bridge no-go (the C₃-current `A=i(C-C²)`
 route, `koide_z3_equivariant_anticommuting_no_go` escape-hatch) — a selector
 that is **(i) T-odd AND (ii) non-commuting with `S=C+C²` on the generation
 factor C³** (i.e. it must break C₃-equivariance). The natural candidate is
@@ -24,7 +24,7 @@ doublet at *fixed* generation character (dim 2 on C²), not the generation C³
 orbit (dim 3). This is the same site-C² → generation-C³ factor bridge that
 the left/right-coupling route hit.
 
-The on-site `γ₅` is genuinely framework-native (A1 / Quantum axiom) and is
+The on-site `γ₅` is genuinely framework-native (Quantum axiom) and is
 T-odd *versus the massless Dirac operator* — but that is the wrong factor and
 the wrong commutant for the open frontier. This note rules out the **natural
 tensor embedding**; it does **not** foreclose a rooted/continuum carrier that
@@ -112,7 +112,7 @@ C₃-breaking T-odd selector via the natural embedding `γ₅_spin ⊗ I_gen`.*
 - **Does NOT claim:** that `δ=0` / K-reality is underivable (scoped per N5);
   that the on-site `γ₅` is trivial (it is T-odd on the spin factor); that a
   rooted spin-generation-entangling carrier cannot supply the source (the open
-  frontier, N7). Does not force `r` (weight-clean, G3). No new axiom/import; no
+  frontier, N7). Does not force `r` (weight-clean). No new axiom/import; no
   audit-status promotion; no PDG/literature/fitted inputs.
 
 ## 5. Cited dependencies (fresh ledger status verified)
@@ -126,8 +126,13 @@ C₃-breaking T-odd selector via the natural embedding `γ₅_spin ⊗ I_gen`.*
 The "on-site Clifford `γ₅` as the rank-2 selector" lead
 (`KOIDE_DELTA_RANK2_SELECTOR_…CLIFFORD_CHIRALITY_DOMAIN_WALL`) is **unaudited**
 / off-main; cited as the lead under test, not as a retained authority. The
-companion G2-bridge no-go (`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A`) supplies
-the (T-odd ∧ non-commuting-with-`S`) requirement.
+companion C₃-current bridge no-go
+([`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md`](G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md),
+runner
+[`scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py`](../scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py),
+cache
+[`logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt`](../logs/runner-cache/frontier_g2_bridge_c3_current_cannot_beat_gap_a.txt))
+supplies the (T-odd ∧ non-commuting-with-`S`) requirement.
 
 All §2 algebra is class-(A) finite (`C²⊗C³`), recomputed in the runner.
 
@@ -166,7 +171,10 @@ audit_required_before_effective_retained: true
 
 - [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
   — the C₃-breaking requirement the selector must meet on the generation factor.
-- The companion G2-bridge no-go (`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A`,
-  same lane) — establishes the (T-odd ∧ non-commuting-with-`S`) requirement
-  that `γ₅ ⊗ I_gen` here fails; together they relocate the chirality residual
-  to the rooting / spin-generation-entanglement step (the open frontier).
+- The companion C₃-current bridge no-go
+  ([`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md`](G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md),
+  runner
+  [`scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py`](../scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py))
+  — establishes the (T-odd ∧ non-commuting-with-`S`) requirement that
+  `γ₅ ⊗ I_gen` here fails; together they relocate the chirality residual to
+  the rooting / spin-generation-entanglement step (the open frontier).

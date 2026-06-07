@@ -34,7 +34,18 @@ element is exact arithmetic.
 """
 
 from __future__ import annotations
+
+import json
+from pathlib import Path
+
 import numpy as np
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md"
+BRIDGE_NOTE = ROOT / "docs" / "GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md"
+BRIDGE_RUNNER = ROOT / "scripts" / "generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py"
+BRIDGE_CACHE = ROOT / "logs" / "runner-cache" / "generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt"
+LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 PASS = 0
 FAIL = 0
@@ -62,6 +73,69 @@ def eps(q):
 
 def Vq(q):
     return -G / (eps(q) + MU2)
+
+
+def ledger_rows():
+    data = json.loads(LEDGER.read_text())
+    rows = data["rows"]
+    if not isinstance(rows, dict):
+        raise TypeError("audit ledger rows must be a dictionary")
+    return rows
+
+
+def effective_status(rows, claim_id):
+    row = rows.get(claim_id, {})
+    return str(row.get("effective_status") or row.get("audit_status") or "")
+
+
+def hf_vq_bridge_source_checks():
+    """Expose the one-hop Vq/Hartree-Fock bridge required by the audit blocker."""
+    print("\n-- (0) 2026-06-07 source bridge for periodic Vq / Hartree-Fock normalization --")
+    note = NOTE_PATH.read_text()
+    bridge = BRIDGE_NOTE.read_text() if BRIDGE_NOTE.exists() else ""
+    cache = BRIDGE_CACHE.read_text() if BRIDGE_CACHE.exists() else ""
+    rows = ledger_rows()
+    target_row = rows["generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06"]
+    blocker = str(target_row.get("notes_for_re_audit_if_any", ""))
+
+    check(
+        "audit blocker names the missing periodic Vq/Hartree-Fock bridge",
+        "periodic translation-invariant Hartree-Fock plane-wave mutual-energy readout" in blocker
+        and "Vq(q)=-G/(eps(q)+mu^2)" in blocker,
+    )
+    check(
+        "target note cites the 2026-06-07 one-hop bridge note, runner, and cache",
+        BRIDGE_NOTE.name in note
+        and "scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py" in note
+        and "logs/runner-cache/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt" in note,
+    )
+    check(
+        "bridge note proves the finite periodic boundary and normalization, not an external textbook import",
+        "Lambda_L = (Z/LZ)^3" in bridge
+        and "N = L^3" in bridge
+        and "normalized characters" in bridge
+        and "delta_ij=(Vq(0)-Vq(k_i-k_j))/N" in bridge.replace(" ", ""),
+    )
+    check(
+        "bridge runner exists and has a green cached output",
+        BRIDGE_RUNNER.exists() and "TOTAL: PASS=" in cache and "FAIL=0" in cache,
+        detail=BRIDGE_CACHE.name if BRIDGE_CACHE.exists() else "missing cache",
+    )
+    check(
+        "retained bounded mediator status is read from the ledger without widening it",
+        effective_status(rows, "staggered_self_consistent_two_body_note_2026-04-11") == "retained_bounded",
+        detail=effective_status(rows, "staggered_self_consistent_two_body_note_2026-04-11"),
+    )
+    generation_statuses = [
+        effective_status(rows, "three_generation_observable_theorem_note"),
+        effective_status(rows, "three_generation_structure_note"),
+        effective_status(rows, "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"),
+    ]
+    check(
+        "generation-corner inputs remain retained or retained_bounded on the current ledger",
+        all(status in {"retained", "retained_bounded"} for status in generation_statuses),
+        detail=str(generation_statuses),
+    )
 
 
 def exact_lattice_delta(L):
@@ -92,6 +166,7 @@ def main() -> int:
     print("=" * 78)
     print("GENERATION LOCALIZATION = momentum corners: J-I corner-protected; delta<0; |delta| IR  [class A]")
     print("=" * 78)
+    hf_vq_bridge_source_checks()
 
     # ---- (1) three distinct joint translation characters (retained distinctness) ----
     print("\n-- (1) the three generation corners carry distinct joint translation characters --")

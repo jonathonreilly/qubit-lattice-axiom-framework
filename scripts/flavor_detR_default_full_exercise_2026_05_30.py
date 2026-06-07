@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""FULL exercise on the campaign load-bearing claim. Confirms Q=1 (det_R) is the substrate-FORCED
-default and r=1/2 (det_C) a genuine import -- the crux (does qubit C-structure flip it) is refuted
-on 4 legs -- BUT corrects two overstatements and names the one open gap.
+"""FULL exercise on the campaign load-bearing claim. It preserves the finite
+det_R/det_C counting fork and refutes the route where qubit C-structure makes
+det_C automatic. The old "Q=1 substrate-forced default" wording is now bounded:
+Q=1 is the trace/dimension read only when the beta=0 tracial generation
+reference is supplied.
 
-CONFIRMED (load-bearing): Q=1 (det_R / real-discrete-C3) is the substrate-forced generation default;
-Q=2/3 (r=1/2 / det_C) is a genuine, precisely-localized import.
+CONFIRMED (load-bearing): the tested finite structures do not supply det_C;
+under a supplied beta=0 tracial reference the det_R/dimension read gives Q=1,
+while Q=2/3 (r=1/2 / det_C) remains a precisely localized measure/counting input.
   X1 substrate i is generation-BLIND (i*I3 commutes with C); the doublet U(1) generator G_U1=(C-C^2)/sqrt3
      has ZERO HS-overlap with i*I3 -> the complex structure does NOT descend as a doublet U(1).
   X2 C^3=I quantizes the U(1)_b rephasing to {0, 2pi/3, 4pi/3} -> continuous U(1) forbidden (retained
@@ -21,9 +24,9 @@ CORRECTION #2 (the actual import): once U(1)-symmetry and holomorphic-measure ar
   (Schur: 2 real doublet modes cannot merge into 1 complex mode). It is NOT a continuous symmetry, NOT a
   holomorphic measure, NOT the chiral grading -- just a discrete counting-measure choice.
 OPEN GAP (Link 1 Half B): that the generation reference state is the beta=0 TRACE (3 equal modes) rather
-  than a finite-beta Gibbs/KMS state is UNAUDITED, user-approval-required (PRR premise); the framework's own
+  than a finite-beta Gibbs/KMS state is not derived here (PRR premise); the framework's own
   KMS note has beta>0 Gibbs (non-tracial). Finite-beta cannot make det_C native (Schur) but framework baseline do not
-  force beta=0, so "Q=1 is THE default" is conditional on the tracial-vacuum premise.
+  force beta=0, so Q=1 is only the trace/det_R read under that supplied premise.
 """
 import numpy as np
 
@@ -51,12 +54,28 @@ def main():
     Q=lambda r:1/3+2/3*r
     passed.append(check("CORR#2 import = block(1,1)->Q=2/3 vs dimension(1,2)->Q=1 measure choice; trace ranks neither",
         abs(Q(0.5)-2/3)<1e-12 and abs(Q(1)-1)<1e-12, "det_C block-count r=1/2; det_R dimension r=1; Schur: no merge of 2 real->1 complex"))
-    print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
-    print("VERDICT: CONFIRMED -- Q=1 (det_R) substrate-forced default, Q=2/3 (det_C) a genuine import;")
-    print("crux (complex structure flips it) refuted 4 ways. CORRECTED: the import is NOT the chirality")
-    print("gate (G_U1 commutes with Gamma_chi) and NOT a U(1) symmetry or holomorphic measure -- it is the")
-    print("discrete block-vs-dimension counting-measure choice the trace permits but does not rank. OPEN:")
-    print("Link-1 Half B -- beta=0 tracial vacuum vs finite-beta Gibbs is an unaudited, user-approval premise.")
+    note = open("docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md").read()
+    required = [
+        "2026-06-07 boundary repair",
+        "RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05",
+        "KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29",
+        "This note does not derive that reference",
+        "does not choose the physical generation reference state",
+    ]
+    banned = [
+        "Q=1 is THE default",
+        "substrate-forced *default*",
+        "substrate-FORCED default",
+    ]
+    boundary_ok = all(term in note for term in required) and not any(term in note for term in banned)
+    passed.append(check("BOUNDARY source guard: Q=1 default is conditional, r/Q support is retained-sourced",
+        boundary_ok, "no beta=0 tracial-vacuum promotion"))
+    print(f"\nUPDATED SCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
+    print("VERDICT: FINITE LOCATOR -- tested structures do not make det_C/equal-block counting automatic;")
+    print("under a supplied beta=0 tracial reference, the trace/dimension read gives Q=1. CORRECTED:")
+    print("the equal-block input is not the chirality gate, not a U(1) symmetry, and not a holomorphic")
+    print("measure; it is the block-vs-dimension counting choice the trace permits but does not rank.")
+    print("OPEN: beta=0 tracial generation reference vs finite-beta Gibbs remains unclosed.")
     return 0 if all(passed) else 1
 
 if __name__ == "__main__":

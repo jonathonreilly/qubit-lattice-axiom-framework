@@ -3,18 +3,54 @@
 
 from __future__ import annotations
 
+import hashlib
 from pathlib import Path
 import statistics
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
+PROTOTYPE_SOURCE = SCRIPTS / "frontier_staggered_backreaction_prototype.py"
+PROTOTYPE_CACHE = ROOT / "logs/runner-cache/frontier_staggered_backreaction_prototype.txt"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 import frontier_staggered_backreaction_capture_closure_harness as cap  # noqa: E402
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def prototype_source_packet_ok() -> bool:
+    source = PROTOTYPE_SOURCE.read_text(encoding="utf-8", errors="replace")
+    cache = PROTOTYPE_CACHE.read_text(encoding="utf-8", errors="replace") if PROTOTYPE_CACHE.exists() else ""
+    source_markers = [
+        "class GraphFamily",
+        "def _source_density",
+        "def _solve_phi",
+        "def _build_hamiltonian",
+        "def _force_from_phi",
+        "def _measure_family",
+    ]
+    cache_markers = [
+        "===== runner cache v1 =====",
+        "runner: scripts/frontier_staggered_backreaction_prototype.py",
+        f"runner_sha256: {sha256_file(PROTOTYPE_SOURCE)}",
+        "status: ok",
+        "STAGGERED SOURCE-GENERATED BACKREACTION PROTOTYPE",
+    ]
+    return (
+        len(source) > 20_000
+        and all(marker in source for marker in source_markers)
+        and all(marker in cache for marker in cache_markers)
+    )
 
 
 def main() -> int:
@@ -91,10 +127,16 @@ def main() -> int:
         f"  holdout gap: {holdout_result.baseline_gap:.3e} -> "
         f"{holdout_result.closed_gap:.3e} ({holdout_improvement:.2f}x)"
     )
+    prototype_packet_ok = prototype_source_packet_ok()
+    print("PROTOTYPE_SOURCE_PACKET")
+    print(f"  source: {PROTOTYPE_SOURCE.relative_to(ROOT)}")
+    print(f"  cache: {PROTOTYPE_CACHE.relative_to(ROOT)}")
+    print(f"  untruncated source/cache assertion: {'PASS' if prototype_packet_ok else 'FAIL'}")
     print("  bounded live packet only: no old stale table or continuum closure")
-    print(f"  [{'PASS' if assertions_ok else 'FAIL'} (C)] live capture packet")
-    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
-    return 0 if assertions_ok else 1
+    all_ok = assertions_ok and prototype_packet_ok
+    print(f"  [{'PASS' if all_ok else 'FAIL'} (C)] live capture packet")
+    print(f"ASSERTIONS: {'PASS' if all_ok else 'FAIL'}")
+    return 0 if all_ok else 1
 
 
 if __name__ == "__main__":

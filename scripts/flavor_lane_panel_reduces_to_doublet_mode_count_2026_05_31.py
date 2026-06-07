@@ -31,7 +31,22 @@ User invoked the panel ("ask the 20 physicists if we're stuck"), framed as find-
   (d Re b)^2+(d Im b)^2 (two modes) -> det_R -> r=1. This is framework-internal and novel (NOT the
   U(1)_b route the retained no-go closed; NOT the discrete-reflection route the panel killed).
 """
+import json
+from pathlib import Path
+
 import numpy as np
+
+import frontier_action_normalization as action_normalization
+import frontier_koide_frobenius_isotype_split_uniqueness as frobenius_isotype
+
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE = REPO_ROOT / "docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md"
+LEDGER = REPO_ROOT / "docs/audit/data/audit_ledger.json"
+FROBENIUS_NOTE = REPO_ROOT / "docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md"
+ACTION_NOTE = REPO_ROOT / "docs/ACTION_NORMALIZATION_NOTE.md"
+FROBENIUS_CACHE = REPO_ROOT / "logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt"
+ACTION_CACHE = REPO_ROOT / "logs/runner-cache/frontier_action_normalization.txt"
 
 
 def check(name, cond, detail=""):
@@ -39,6 +54,77 @@ def check(name, cond, detail=""):
     if detail:
         print(f"       {detail}")
     return bool(cond)
+
+
+def ledger_row(claim_id):
+    rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
+    return rows[claim_id]
+
+
+def dependency_packet_checks():
+    text = NOTE.read_text(encoding="utf-8")
+    frobenius_text = FROBENIUS_NOTE.read_text(encoding="utf-8")
+    action_text = ACTION_NOTE.read_text(encoding="utf-8")
+    frobenius_cache = FROBENIUS_CACHE.read_text(encoding="utf-8")
+    action_cache = ACTION_CACHE.read_text(encoding="utf-8")
+    frobenius_row = ledger_row("koide_frobenius_isotype_split_uniqueness_note_2026-04-21")
+    action_row = ledger_row("action_normalization_note")
+
+    checks = []
+    checks.append(check(
+        "DEP1 target note links Frobenius isotype no-go note",
+        "KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md" in text,
+        "graph-visible dependency for the scalar/traceless isotype freedom no-go",
+    ))
+    checks.append(check(
+        "DEP2 target note links action-normalization no-go note",
+        "ACTION_NORMALIZATION_NOTE.md" in text,
+        "graph-visible dependency for convention-free action-normalization failure",
+    ))
+    checks.append(check(
+        "DEP3 target note links both dependency runner paths",
+        "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py" in text
+        and "scripts/frontier_action_normalization.py" in text,
+        "restricted packet can locate both source runners",
+    ))
+    checks.append(check(
+        "DEP4 target note links both dependency caches",
+        "logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt" in text
+        and "logs/runner-cache/frontier_action_normalization.txt" in text,
+        "restricted packet can locate both cached outputs",
+    ))
+    checks.append(check(
+        "DEP5 Frobenius dependency is current retained_no_go in ledger",
+        frobenius_row["audit_status"] == "audited_clean"
+        and frobenius_row["effective_status"] == "retained_no_go",
+        f"status={frobenius_row['audit_status']}/{frobenius_row['effective_status']}",
+    ))
+    checks.append(check(
+        "DEP6 action-normalization dependency is current retained_no_go in ledger",
+        action_row["audit_status"] == "audited_clean"
+        and action_row["effective_status"] == "retained_no_go",
+        f"status={action_row['audit_status']}/{action_row['effective_status']}",
+    ))
+    checks.append(check(
+        "DEP7 Frobenius source/cached certificate is present",
+        "Frobenius Isotype-Weight Freedom No-Go" in frobenius_text
+        and "PASS=24 FAIL=0" in frobenius_cache,
+        "Frobenius runner cache carries PASS=24 FAIL=0",
+    ))
+    checks.append(check(
+        "DEP8 action-normalization source/cached certificate is present",
+        "Convention-Free Selection No-Go" in action_text
+        and "status: ok" in action_cache
+        and "NARROWED: The coefficient c" in action_cache,
+        "action-normalization cache is present and records the narrowed no-go",
+    ))
+    checks.append(check(
+        "DEP9 dependency runner modules expose their checked primitives",
+        hasattr(frobenius_isotype, "algebra_checks")
+        and hasattr(action_normalization, "measure_rescaling_degeneracy"),
+        "imports expose Frobenius algebra checks and action rescaling-degeneracy checks",
+    ))
+    return checks
 
 
 def TrH2(a, babs):
@@ -51,6 +137,7 @@ def Q_of_r(r):
 
 def main():
     passed = []
+    passed.extend(dependency_packet_checks())
     a = 1.0
 
     # D1: Q is scale-invariant single observable; lanes not channels (re-anchor)

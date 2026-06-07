@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py
-runner_sha256: 0b960ef37ade434947ceaa5813aab3dcaabe27481e4ebbdb824541246ebcc5e2
+runner_sha256: 085803ff44abb815ced8d837933a90af404fc4c019a1e99c1c8d33496059abbf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 [PASS] A1 L_3(1,2) = (1/3) sum_{k=1,2} 1/((w^k-1)(w^2k-1)) == 2/9 exactly
@@ -28,8 +28,16 @@ status: ok
        signed local sum=0.0; selecting one +2/9 summand is the open readout/promotion premise
 [PASS] E1 at r=1/2 SIGNED (Brannen) Q == 2/3 delta-independently; SINGULAR-VALUE Q is delta-dependent and <=2/3
        signed Q const=0.666667=2/3; singular-value Q range=[0.4094,0.6667] -> 2/9->Q load-bears on the SIGNED readout-class, which is audited_failed on origin/main
+[PASS] F1 lepton delta=2/9 source packet is audited-clean open_gate, not a phase derivation
+       lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26: audit=audited_clean effective=open_gate
+[PASS] F2 downstream note names lepton source packet note, runner, and cache
+       restricted packet includes exact residual note/runner/cache
+[PASS] F3 lepton source packet keeps phase/coefficient/scale open
+       no downstream promotion of the open comparator
+[PASS] F4 lepton runner cache is SHA-fresh and clean
+       cache runner=scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py status=ok
 
-SCORECARD PASS=11 FAIL=0
+SCORECARD PASS=15 FAIL=0
 VERDICT: closed_modulo_one_named_import. The generation-space bridge REDUCES to a single
 named premise -- promoting the intensive per-fixed-point local Lefschetz density 2/9
 (rather than the VANISHING signed global invariant) to the physical observable. That premise IS the

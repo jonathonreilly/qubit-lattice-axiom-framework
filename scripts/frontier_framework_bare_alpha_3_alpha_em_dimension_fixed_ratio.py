@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Audit the bare alpha_3 / alpha_em dimension-ratio support corollary.
+"""Verify the bare alpha_3 / alpha_em dimension-ratio conditional lemma.
 
-This runner intentionally verifies both pieces of the landing:
+This runner verifies only the repaired archived packet:
 
-1. the exact bare-coupling algebra, and
-2. the status boundary that keeps this as support-side bookkeeping rather than
-   a new minimal-stack theorem.
+1. the exact bare-coupling algebra under supplied bookkeeping inputs, and
+2. the source boundary that forbids retained EW-lane, minimal-stack, or
+   low-energy phenomenology claims from this archived row.
 """
 
 from __future__ import annotations
@@ -57,15 +57,8 @@ def float_close(label: str, audit: Audit, actual: float, expected: float, tol: f
     audit.check(label, abs(actual - expected) <= tol, f"actual={actual:.17g}, expected={expected:.17g}")
 
 
-def audit_authority_surfaces(audit: Audit) -> None:
+def audit_scope_boundary(audit: Audit) -> None:
     note_path = "docs/FRAMEWORK_BARE_ALPHA_3_ALPHA_EM_DIMENSION_FIXED_RATIO_SUPPORT_NOTE_2026-04-25.md"
-    cl3_path = "docs/CL3_SM_EMBEDDING_THEOREM.md"
-    ew_path = "docs/YT_EW_COLOR_PROJECTION_THEOREM.md"
-    matrix_path = "docs/publication/ci3_z3/PUBLICATION_MATRIX.md"
-    validation_path = "docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md"
-    atlas_path = "docs/publication/ci3_z3/DERIVATION_ATLAS.md"
-
-    paths = [note_path, cl3_path, ew_path, matrix_path, validation_path, atlas_path]
     archive_root = ROOT / "archive_unlanded"
 
     def _authority_exists(rel: str) -> bool:
@@ -77,72 +70,48 @@ def audit_authority_surfaces(audit: Audit) -> None:
                 return True
         return False
 
-    for rel in paths:
-        audit.check(f"authority file exists: {rel}", _authority_exists(rel))
+    audit.check(f"source file exists: {note_path}", _authority_exists(note_path))
 
     note = read(note_path)
-    cl3 = read(cl3_path)
-    ew = read(ew_path)
-    matrix = read(matrix_path)
-    validation = read(validation_path)
-    atlas = read(atlas_path)
 
     audit.check(
-        "note status is support corollary",
-        "support corollary" in note and "not a new retained front-door theorem" in note,
+        "note status is conditional algebra lemma only",
+        "conditional algebra lemma only" in note and "not a live retained theorem" in note,
+    )
+    audit.check(
+        "note declares supplied inputs",
+        "Conditional assumptions" in note and "These inputs are hypotheses of the lemma" in note,
+    )
+    audit.check(
+        "note blocks retained EW-lane authority",
+        "does not assert that a retained EW-normalization lane exists" in note
+        and "not authority for an" in note,
     )
     audit.check(
         "note blocks minimal-stack promotion",
-        "does not promote the `Cl(3) -> SM` support packet" in note,
+        "does not promote a Cl(3) -> SM support packet" in note
+        and "minimal-input stack" in note,
     )
     audit.check(
-        "note blocks direct low-energy readout",
-        "does not promote the bare integer `9`" in note
-        and "directly observable low-energy" in note,
+        "note blocks low-energy phenomenology",
+        "does not claim direct low-energy" in note
+        and "low-energy observable" in note,
     )
     audit.check(
         "note distinguishes SU(5)",
-        "not the SU(5) bare normalization" in note and "5/72" in note,
+        "formal normalization contrast" in note and "5/72" in note,
     )
 
     forbidden = [
+        "support corollary on a retained EW-normalization surface",
+        "retained EW normalization lane remains the authoritative route",
+        "candidate retained-grade support corollary on the retained EW surface",
         "Retained derivation theorem on main",
         "three independent retained inputs",
         "independent retained structural routes",
     ]
     for phrase in forbidden:
         audit.check(f"forbidden overclaim absent: {phrase}", phrase not in note)
-
-    audit.check(
-        "CL3 packet remains support-only",
-        "not part of the accepted minimal-input stack" in cl3 and "support theorem" in cl3,
-    )
-    audit.check(
-        "CL3 packet carries d+1/d+2 bookkeeping",
-        "1/(d+1)" in cl3 and "1/(d+2)" in cl3 and "bare gauge couplings" in cl3,
-    )
-    audit.check(
-        "EW normalization lane exists",
-        "standalone retained EW normalization lane" in ew
-        or "Retained status" in ew
-        or "EW normalization lane" in ew,
-    )
-    audit.check(
-        "publication matrix keeps CL3 support boundary",
-        "support packet / atlas only; not part of the accepted minimal-input stack" in matrix,
-    )
-    audit.check(
-        "publication matrix carries bare-ratio support row",
-        "Bare alpha_3/alpha_em dimension-ratio support" in matrix and "bounded support corollary" in matrix,
-    )
-    audit.check(
-        "validation map carries support row",
-        "Bare alpha_3/alpha_em dimension-ratio support" in validation and "support corollary" in validation,
-    )
-    audit.check(
-        "atlas carries support tool row",
-        "Bare alpha_3/alpha_em dimension-ratio support" in atlas and "not part of the accepted minimal-input stack" in atlas,
-    )
 
 
 def audit_exact_algebra(audit: Audit) -> None:
@@ -211,15 +180,15 @@ def audit_dimension_fingerprint(audit: Audit) -> None:
 
 def main() -> int:
     audit = Audit()
-    print("=== Bare alpha_3 / alpha_em dimension-ratio support audit ===")
-    audit_authority_surfaces(audit)
+    print("=== Bare alpha_3 / alpha_em conditional bookkeeping lemma ===")
+    audit_scope_boundary(audit)
     audit_exact_algebra(audit)
     audit_dimension_fingerprint(audit)
     print(f"TOTAL: PASS={audit.passed}, FAIL={audit.failed}")
     if audit.failed:
         print("VERDICT: FAIL")
         return 1
-    print("VERDICT: SUPPORT COROLLARY CLOSED")
+    print("VERDICT: CONDITIONAL ALGEBRA LEMMA VERIFIED")
     return 0
 
 

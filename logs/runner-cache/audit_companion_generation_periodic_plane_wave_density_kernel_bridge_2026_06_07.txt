@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py
+runner_sha256: 48a22b25510d3ca5fae6a35a88702489332e2d024239d060f452c77a4016aac0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+========================================================================================
+GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE
+Goal: bridge retained bounded mediator family to periodic plane-wave density kernel
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: even periodic momenta and normalized plane waves
+----------------------------------------------------------------------------------------
+[PASS] L=4: hw=1 corner momenta are periodic
+[PASS] L=4: corner plane waves have unit norm :: norms=[1.0, 1.0, 1.0]
+[PASS] L=6: hw=1 corner momenta are periodic
+[PASS] L=6: corner plane waves have unit norm :: norms=[0.9999999999999996, 0.9999999999999996, 0.9999999999999996]
+
+----------------------------------------------------------------------------------------
+Part 2: periodic Laplacian and mediator diagonalization
+----------------------------------------------------------------------------------------
+[PASS] L=4: Delta psi_q = eps(q) psi_q for q samples
+[PASS] L=4: V_L psi_q = -G/(eps(q)+mu2) psi_q for q samples
+[PASS] L=6: Delta psi_q = eps(q) psi_q for q samples
+[PASS] L=6: V_L psi_q = -G/(eps(q)+mu2) psi_q for q samples
+
+----------------------------------------------------------------------------------------
+Part 3: density-density normalization and Hartree-Fock formula
+----------------------------------------------------------------------------------------
+[PASS] L=4: Hartree term equals Vq(0)/N :: -7.812500e+02 vs -7.812500e+02
+[PASS] L=4: Fock term equals Vq(k_j-k_i)/N :: -9.764404e-02 vs -9.764404e-02
+[PASS] L=4: delta equals [Vq(0)-Vq(Delta k)]/N :: -7.811524e+02 vs -7.811524e+02
+[PASS] L=6: Hartree term equals Vq(0)/N :: -2.314815e+02 vs -2.314815e+02
+[PASS] L=6: Fock term equals Vq(k_j-k_i)/N :: -2.893157e-02 vs -2.893157e-02
+[PASS] L=6: delta equals [Vq(0)-Vq(Delta k)]/N :: -2.314525e+02 vs -2.314525e+02
+
+----------------------------------------------------------------------------------------
+Part 4: hw=1 pair symmetry, sign, and scaling
+----------------------------------------------------------------------------------------
+[PASS] all hw=1 generation pairs have eps(Delta k)=8 :: [8.0, 8.0, 8.0]
+[PASS] all three pair deltas are equal and negative :: -4.999375e+01, -4.999375e+01, -4.999375e+01
+[PASS] |delta| scales as 1/N with fixed mediator IR data :: |delta|*N=4.999375e+04
+
+----------------------------------------------------------------------------------------
+Part 5: source and downstream markers
+----------------------------------------------------------------------------------------
+[PASS] bridge note marker present: V_L = -G (Delta + mu^2 I)^(-1)
+[PASS] bridge note marker present: delta(k,l) = <rho_k, V_L rho_l>
+[PASS] bridge note marker present: `1/N` factor is not fitted
+[PASS] bridge note marker present: does not pin the physical magnitude
+[PASS] bridge note marker present: No new axiom is introduced
+[PASS] parent note marker present: Generation periodic plane-wave density-kernel bridge
+[PASS] parent note marker present: periodic translation-invariant plane-wave density-density kernel
+[PASS] parent note marker present: bridge packet for independent re-audit
+[PASS] parent note marker present: does not pin `|delta|`
+[PASS] retained bounded mediator note exposes V = -G (L + mu^2 I)^-1 family
+
+========================================================================================
+TOTAL: PASS=27 FAIL=0
+========================================================================================
+
+----- stderr -----
+

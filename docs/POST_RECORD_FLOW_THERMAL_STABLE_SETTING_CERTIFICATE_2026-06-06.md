@@ -2,14 +2,16 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / supplied stability interface
-**Claim type:** methodology / positive theorem
-**Status:** exact-support branch-local for supplied stable-setting certificate
+**Claim type:** positive_theorem
+**Status:** exact-support source-side for supplied stable-setting certificate
 semantics; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py`](../scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt)
+**Bounded row export:**
+[`outputs/post_record_flow_thermal_stable_setting_slice_2026_06_07.json`](../outputs/post_record_flow_thermal_stable_setting_slice_2026_06_07.json)
 **Load-bearing upstream helper:**
 [`scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py`](../scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py)
 with cache
@@ -36,17 +38,17 @@ on a dial without forcing that location to be the selected physical value.
 ## Current row map
 
 On the current ledger snapshot, the upstream stability/dynamics subdivision has
-`56` `flow_or_thermal_stability` rows. This block classifies them as:
+`58` `flow_or_thermal_stability` rows. This block classifies them as:
 
 | Stable-setting lane | Rows |
 |---|---:|
-| `bounded_obstruction_or_no_selection` | 16 |
+| `bounded_obstruction_or_no_selection` | 18 |
 | `flow_or_records_stable_feature` | 3 |
 | `generation_or_koide_stable_feature` | 4 |
-| `generic_stable_feature` | 15 |
-| `thermal_or_score_stable_feature` | 18 |
+| `generic_stable_feature` | 14 |
+| `thermal_or_score_stable_feature` | 19 |
 
-Total: `56` rows.
+Total: `58` rows.
 
 ## Meaning
 
@@ -101,10 +103,11 @@ The runner verifies:
   selector/dial subdivision, and the conditional evidence ladder;
 - the stability/dynamics helper source used to obtain the
   `flow_or_thermal_stability` bucket is included in the packet;
+- bounded ledger-row export exists for the selected flow/thermal rows;
 - exact finite examples for a supplied score minimum, a supplied flow
   separatrix, and a supplied thermal root;
 - selected-dial status remains blocked without a selector rule;
-- the current `flow_or_thermal_stability` row count is `56`;
+- the current `flow_or_thermal_stability` row count is `58`;
 - row-lane counts match the current snapshot;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;

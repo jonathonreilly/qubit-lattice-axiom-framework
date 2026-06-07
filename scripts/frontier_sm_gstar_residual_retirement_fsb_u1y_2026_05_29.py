@@ -6,14 +6,13 @@ docs/SM_GSTAR_RESIDUAL_RETIREMENT_FSB_U1Y_BOUNDED_NOTE_2026-05-29.md.
 
 This runner does four distinct jobs, all as EXECUTED asserts (not prose):
 
-1. **R-FSB: the 7/8 ratio from the retained anchor's two formulas.** The g_*
-   census consumes only the dimensionless fermion/boson Stefan-Boltzmann ratio.
-   The retained positive theorem
-   hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor proves it two
-   ways at d=4: the per-mode lattice ratio R_lat(c) = (c+1/2)/(c+1) at c=3, and
-   the Riemann-Dirichlet quotient eta(s)/zeta(s) = 1 - 2^(1-s) at s=4. Both = 7/8,
-   and the integer alignment 2^(d-2) = d is unique at d=4. The runner checks all
-   of these with fractions.Fraction (exact rationals).
+1. **R-FSB: the 7/8 ratio from the direct thermal integrals.** The g_*
+   census consumes the dimensionless Fermi/Bose Stefan-Boltzmann ratio. The
+   repaired note proves this role directly:
+   I_B = int x^3/(e^x-1) dx = pi^4/15,
+   I_F = int x^3/(e^x+1) dx = 7*pi^4/120,
+   and I_F/I_B = 7/8. This replaces the prior role-substitution from a
+   numerically equal hierarchy anchor.
 
 2. **R-U1Y: the one-abelian-factor gauge-rank dof count.** The g_* census
    consumes only the abelian-factor RANK (one gl(1) factor), sourced from the
@@ -45,6 +44,8 @@ from pathlib import Path
 import json
 import re
 import sys
+
+import sympy as sp
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE_PATH = (
@@ -82,25 +83,18 @@ NOTE_FLAT = re.sub(r"\s+", " ", NOTE_TEXT)
 
 
 # ---------------------------------------------------------------------------
-# R-FSB: the 7/8 ratio from the retained anchor's two formulas
+# R-FSB: the 7/8 ratio from direct thermal integrals
 # ---------------------------------------------------------------------------
 
 
-def r_lat(c: int) -> Fraction:
-    """Per-mode lattice ratio R_lat(c) = (c + 1/2)/(c + 1) of the retained
-    hierarchy_seven_eighths anchor (identity (i))."""
-    return (Fraction(c) + Fraction(1, 2)) / (Fraction(c) + 1)
-
-
-def eta_over_zeta(s: int) -> Fraction:
-    """Riemann-Dirichlet quotient eta(s)/zeta(s) = 1 - 2^(1-s) of the retained
-    anchor (identity (ii)); exact rational for integer s >= 2."""
-    return Fraction(1) - Fraction(1, 2) ** (s - 1)
-
-
-def alignment_residual(d: int) -> int:
-    """Integer alignment equation f(d) = 2^(d-2) - d (identity (iii))."""
-    return 2 ** (d - 2) - d
+def bose_fermi_integrals():
+    """Return exact symbolic Bose/Fermi x^3 thermal integrals."""
+    gamma4 = sp.gamma(4)
+    zeta4 = sp.pi**4 / 90
+    eta4 = (1 - sp.Rational(1, 8)) * zeta4
+    bose = sp.simplify(gamma4 * zeta4)
+    fermi = sp.simplify(gamma4 * eta4)
+    return gamma4, zeta4, eta4, bose, fermi
 
 
 # ---------------------------------------------------------------------------
@@ -146,51 +140,48 @@ def abelian_gauge_dof_from_rank(eigenvalue_scale: Fraction) -> int:
 # 1. R-FSB: 7/8 ratio from the retained anchor
 # ===========================================================================
 
-section("1. R-FSB: 7/8 fermion thermal weight from the retained anchor")
+section("1. R-FSB: 7/8 fermion thermal weight from direct thermal integrals")
 
 seven_eighths = Fraction(7, 8)
+gamma4, zeta4, eta4, bose_integral, fermi_integral = bose_fermi_integrals()
 
+check("Gamma(4) = 6", gamma4 == 6, str(gamma4))
+check("zeta(4) = pi^4/90", zeta4 == sp.pi**4 / 90, str(zeta4))
 check(
-    "lattice ratio R_lat(3) = (3 + 1/2)/(3 + 1) = 7/8",
-    r_lat(3) == seven_eighths,
-    f"R_lat(3) = {r_lat(3)}",
+    "eta(4) = (7/8) zeta(4)",
+    sp.simplify(eta4 / zeta4) == sp.Rational(7, 8),
+    str(sp.simplify(eta4 / zeta4)),
 )
 check(
-    "Riemann-Dirichlet eta(4)/zeta(4) = 1 - 2^(-3) = 7/8",
-    eta_over_zeta(4) == seven_eighths,
-    f"eta(4)/zeta(4) = {eta_over_zeta(4)}",
+    "Bose integral I_B = pi^4/15",
+    sp.simplify(bose_integral - sp.pi**4 / 15) == 0,
+    str(bose_integral),
 )
 check(
-    "the two retained-anchor formulas agree on 7/8 at d=4",
-    r_lat(3) == eta_over_zeta(4) == seven_eighths,
+    "Fermi integral I_F = 7*pi^4/120",
+    sp.simplify(fermi_integral - 7 * sp.pi**4 / 120) == 0,
+    str(fermi_integral),
 )
 check(
-    "general lattice identity R_lat(c) = 1 - 1/(2(c+1)) holds (c=3)",
-    r_lat(3) == Fraction(1) - Fraction(1, 2 * (3 + 1)),
+    "direct thermal-integral ratio I_F/I_B = 7/8",
+    sp.simplify(fermi_integral / bose_integral) == sp.Rational(7, 8),
+    str(sp.simplify(fermi_integral / bose_integral)),
+)
+prefactor = sp.Rational(1, 2) / sp.pi**2
+rho_b = sp.simplify(prefactor * bose_integral)
+rho_f = sp.simplify(prefactor * fermi_integral)
+check(
+    "rho_B per dof = pi^2/30 * T^4",
+    sp.simplify(rho_b - sp.pi**2 / 30) == 0,
+    str(rho_b),
 )
 check(
-    "general eta/zeta identity = 1 - 2^(1-s) holds (s=4)",
-    eta_over_zeta(4) == Fraction(1) - Fraction(2) ** (1 - 4),
-)
-# Integer alignment 2^(d-2) = d unique at d=4 (identity (iii)).
-align_solutions = [d for d in range(2, 21) if alignment_residual(d) == 0]
-check(
-    "integer alignment 2^(d-2) = d unique at d=4 over 2<=d<=20",
-    align_solutions == [4],
-    f"solutions = {align_solutions}",
-)
-# At other integer d the two ratios diverge (coincidence only at d=4).
-diverge = all(
-    r_lat(d - 1) != eta_over_zeta(d)
-    for d in range(2, 13)
-    if d != 4
+    "rho_F per dof = (7/8) rho_B",
+    sp.simplify(rho_f / rho_b) == sp.Rational(7, 8),
+    str(sp.simplify(rho_f / rho_b)),
 )
 check(
-    "lattice and Riemann-Dirichlet ratios differ at every integer d != 4 (2..12)",
-    diverge,
-)
-check(
-    "g_* consumes only the dimensionless 7/8 ratio (it is a pure rational)",
+    "g_* consumes only the dimensionless direct thermal 7/8 ratio",
     isinstance(seven_eighths, Fraction) and 0 < seven_eighths < 1,
     f"7/8 = {float(seven_eighths)}",
 )
@@ -293,17 +284,18 @@ check(
 section("4. Note / authority cross-checks and retirement bookkeeping")
 
 RETIRED_TO_RETAINED = [
-    "HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
     "NATIVE_GAUGE_CLOSURE_NOTE.md",
     "GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
 ]
-SEPARATED_STRONGER = [
+NON_LOAD_BEARING_CONTEXT = [
+    "GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+    "HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
     "AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md",
     "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md",
     "HYPERCHARGE_IDENTIFICATION_NOTE.md",
 ]
 
-for fname in RETIRED_TO_RETAINED + SEPARATED_STRONGER:
+for fname in RETIRED_TO_RETAINED + NON_LOAD_BEARING_CONTEXT:
     check(
         f"authority file exists: {fname}",
         (ROOT / "docs" / fname).exists(),
@@ -316,21 +308,25 @@ for fname in RETIRED_TO_RETAINED:
         f"]({fname})" in NOTE_TEXT,
     )
 
-# The separated stronger fermionic-SB law and the uniqueness note must be
-# plain-text pointers (NOT markdown links) so they are not load-bearing edges.
+# The parallel/context statements must be plain-text pointers (NOT markdown
+# links) so they are not load-bearing edges.
 for fname in [
+    "GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+    "HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
     "AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md",
     "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md",
+    "HYPERCHARGE_IDENTIFICATION_NOTE.md",
 ]:
     check(
-        f"separated stronger statement is plain-text (non-load-bearing): {fname}",
+        f"context/separated statement is plain-text (non-load-bearing): {fname}",
         (fname in NOTE_TEXT) and (f"]({fname})" not in NOTE_TEXT),
     )
 
 # Retirement bookkeeping strings present in the note.
 check(
-    "note marks R-FSB retired-to-retained-sourced",
-    "R-FSB" in NOTE_TEXT and "retired-to-retained-sourced" in NOTE_TEXT,
+    "note marks R-FSB source-local direct bounded closure",
+    "R-FSB -> direct bounded closure proposed" in NOTE_TEXT
+    and "source-local Bose/Fermi thermal-integral proof" in NOTE_TEXT,
 )
 check(
     "note marks R-U1Y retired-to-retained-sourced",
@@ -360,14 +356,13 @@ if LEDGER_PATH.exists():
         return None
 
     retained_expected = {
-        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained",
         "native_gauge_closure_note": "retained",
         "graph_first_su3_integration_note": "retained",
     }
     for cid, want in retained_expected.items():
         got = status_of(cid)
         check(
-            f"retired-to source {cid} is {want}",
+            f"retired-to R-U1Y source {cid} is {want}",
             got == want,
             f"ledger = {got}",
         )

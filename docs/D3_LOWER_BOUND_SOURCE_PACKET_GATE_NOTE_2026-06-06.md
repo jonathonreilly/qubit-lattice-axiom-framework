@@ -4,7 +4,7 @@
 **Claim type:** meta
 **Runner:** [`scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py`](../scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py)
 **Cached output:** [`logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt`](../logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt)
-(`SCORECARD: PASS=53 FAIL=0`)
+(`SCORECARD: PASS=58 FAIL=0`)
 
 ```yaml
 actual_current_surface_status: exact-support
@@ -68,7 +68,7 @@ It also checks the source-packet verifier cache:
 - belongs to `scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py`;
 - has a SHA matching the current verifier source;
 - exits with `exit_code=0` and `status=ok`;
-- reports `SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=55 FAIL=0`;
+- reports `SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=57 FAIL=0`;
 - includes SHA freshness checks for the original runner cache;
 - includes the original `I_3/P = <1e-10` table evidence;
 - includes the finite-k bridge cache summary `SUMMARY: PASS=56 FAIL=0`.

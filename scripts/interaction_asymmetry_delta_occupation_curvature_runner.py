@@ -22,8 +22,14 @@ spectrum) along three independent axes:
       exactly: delta is carried by a genuine connected TWO-BODY coupling, and delta = 0
       <=> there is no two-body coupling.
 
-  (3) FORCED SIGN LAW.  A native pair coupling U*sum_{i<j} n_i n_j sets delta = U exactly
-      and yields the C3 coupling with sign(|K|) = sign(delta) = sign(U).
+  (3) REGIME-SCOPED SIGN LAW.  A native pair coupling U*sum_{i<j} n_i n_j sets
+      delta = U exactly.  The second-order Schur elimination through the hw=0 and
+      hw=2 intermediates gives
+          K_off = t^2 * (1/eps - 1/(eps+U)) = t^2 * U/(eps*(eps+U)).
+      Therefore sign(K_off)=sign(delta)=sign(U) only in the no-resonance /
+      weak-pair regime eps>0 and eps+U>0.  The runner also checks an
+      eps+U<0 sample where the unconditional sign statement fails, so the
+      denominator boundary is load-bearing and explicit.
 
   (4) The one-body lattice realization of the pair term is a FORBIDDEN DIAGONAL.  In
       momentum space n_mu = (1 - cos k_mu)/2, so n_mu n_nu contains cos(k_mu)cos(k_nu),
@@ -37,7 +43,7 @@ The precise value of delta (sign and scale) is left open -- the leading non-impo
 is the framework's retained two-body mediator channel (the (L+mu^2)Phi = G|psi|^2 surface,
 staggered_self_consistent_two_body / wilson_two_body_open_refined, both retained_bounded),
 which is attractive and would fix sign(delta) < 0 and bound |delta|.  This runner verifies
-the STRUCTURE (curvature / two-body / sign-law / all-orders), not the value.
+the STRUCTURE (curvature / two-body / regime-scoped sign-law / all-orders), not the value.
 
 No new axiom: the single-hop V = t*sum X_mu and the Hamming-graded diagonal are the
 minimal native lattice dynamics; the factorization, the occupation-functional curvature
@@ -81,6 +87,10 @@ def op(o, q, L):
 
 def second_difference(values):
     return [values[n + 1] - 2 * values[n] + values[n - 1] for n in range(1, len(values) - 1)]
+
+
+def effective_k_formula(eps, U, t=1.0):
+    return t * t * U / (eps * (eps + U))
 
 
 def main() -> int:
@@ -128,27 +138,38 @@ def main() -> int:
           "(delta is carried by the connected two-body coupling)",
           np.isclose(E_pair[2] - 2 * E_pair[1] + E_pair[0], w_pair))
 
-    # ---- (3) forced sign law: native pair coupling U gives delta=U, sign(|K|)=sign(U) ----
-    print("\n-- (3) forced sign law sign(|K|) = sign(delta) --")
+    # ---- (3) regime-scoped sign law: native pair coupling U gives delta=U and
+    # K_off=t^2*U/(eps*(eps+U)); sign follows U only for eps>0, eps+U>0.
+    print("\n-- (3) regime-scoped sign law sign(K_off) = sign(delta) when eps+U>0 --")
     hwv = np.array([bin(i).count("1") for i in range(8)])
     P1 = [i for i in range(8) if hwv[i] == 1]
     Vc = sum(op(sx, q, 3) for q in range(3))
     nup = [op(nop1, q, 3) for q in range(3)]
 
-    def Keff_offdiag(U):
+    def Keff_offdiag(U, hop=1.0):
         Hint = U * sum(nup[i] @ nup[j] for i in range(3) for j in range(i + 1, 3))
         E = {i: hwv[i] * eps + Hint[i, i].real for i in range(8)}
         E1 = E[P1[0]]
         H = np.array([[sum(Vc[ia, k] * Vc[k, ib] / (E1 - E[k])
                            for k in range(8) if hwv[k] != 1 and abs(E1 - E[k]) > 1e-9)
                        for ib in P1] for ia in P1])
-        return H[0, 1].real
+        return hop * hop * H[0, 1].real
 
-    deltas = [(U, Keff_offdiag(U)) for U in (0.5, -0.5, 1.0, -1.0)]
-    check("native pair coupling U*sum n_i n_j sets delta=U and the C3 coupling |K| has "
-          "sign(|K|)=sign(delta)=sign(U)",
-          all(np.sign(k) == np.sign(U) for U, k in deltas),
-          detail="; ".join(f"U={U:+.1f}->K={k:+.3f}" for U, k in deltas))
+    weak_samples = (0.5, -0.5, 1.0, -1.0)
+    deltas = [(U, Keff_offdiag(U), effective_k_formula(eps, U)) for U in weak_samples]
+    check("Schur elimination gives exact K_off = t^2*U/[eps*(eps+U)] for sampled U",
+          all(np.isclose(k, formula) for U, k, formula in deltas),
+          detail="; ".join(f"U={U:+.1f}->K={k:+.6f}, formula={formula:+.6f}"
+                           for U, k, formula in deltas))
+    check("for eps>0 and eps+U>0, sign(K_off)=sign(delta)=sign(U)",
+          all(eps + U > 0 and np.sign(k) == np.sign(U) for U, k, _formula in deltas),
+          detail="; ".join(f"U={U:+.1f}, eps+U={eps+U:+.2f}, K={k:+.3f}"
+                           for U, k, _formula in deltas))
+    outside_U = -2.0 * eps
+    outside_K = effective_k_formula(eps, outside_U)
+    check("outside the eps+U>0 regime, the unconditional sign law is false/unguarded",
+          np.sign(outside_K) != np.sign(outside_U),
+          detail=f"U={outside_U:+.3f}, eps+U={eps+outside_U:+.3f}, formula K={outside_K:+.3f}")
     # the sourced coupling is C3 (J-I): all three off-diagonals equal
     Hint = 0.6 * sum(nup[i] @ nup[j] for i in range(3) for j in range(i + 1, 3))
     E = {i: hwv[i] * eps + Hint[i, i].real for i in range(8)}; E1 = E[P1[0]]
@@ -177,11 +198,12 @@ def main() -> int:
     if FAIL:
         print("VERDICT: occupation-curvature structure of delta FAILED.")
         return 1
-    print("VERDICT: delta (hence |K|) is the OCCUPATION-NUMBER CURVATURE E_2-2E_1+E_0; it "
+    print("VERDICT: delta (hence K_off in the generation triplet) is the OCCUPATION-NUMBER CURVATURE E_2-2E_1+E_0; it "
           "vanishes to ALL orders for the free single-hop + axis-separable one-body dynamics "
           "(factorization), is IRREDUCIBLY TWO-BODY (= pair-count curvature), carries the "
-          "forced sign law sign(|K|)=sign(delta), and its one-body lattice realization is a "
-          "forbidden diagonal -- so delta is a genuine two-body interaction object. The "
+          "regime-scoped sign law K_off=t^2*U/[eps*(eps+U)] with sign(K_off)=sign(delta) "
+          "only for eps>0 and eps+U>0, and its one-body lattice realization is a forbidden "
+          "diagonal -- so delta is a genuine two-body interaction object. The "
           "precise sign/scale (the leading non-import route = the retained two-body mediator "
           "channel) is left open.")
     return 0

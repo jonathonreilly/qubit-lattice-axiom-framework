@@ -3,7 +3,7 @@ runner: scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py
 runner_sha256: 49b7ce1ed1d6236d1ca3ca7d45fa7b3fff653cdec214dec7d8a8bd160715780c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 70.10
+elapsed_sec: 14.56
 status: ok
 ----- stdout -----
 ======================================================================================

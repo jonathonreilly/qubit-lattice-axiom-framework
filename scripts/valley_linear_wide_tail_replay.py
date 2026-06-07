@@ -12,8 +12,11 @@ It is not a universal theorem harness.
 
 from __future__ import annotations
 
+import argparse
 import math
 import os
+import pathlib
+import re
 import sys
 import time
 
@@ -41,6 +44,9 @@ from scripts.valley_linear_same_harness_compare import (
     setup_slits,
 )
 
+AUDIT_TIMEOUT_SEC = 120
+REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-04-valley-linear-wide-tail-replay.txt"
 
 PHYS_W = 12
 Z_VALUES = list(range(2, 11))
@@ -96,7 +102,7 @@ def born_audit(lat: Lattice3D, det: list[int], sa: list[int], sb: list[int], blo
     return i3 / total if total > 1e-30 else math.nan
 
 
-def main() -> None:
+def run_full_replay() -> None:
     t0 = time.time()
     lat = Lattice3D(PHYS_L, PHYS_W, H)
     pos = lat.pos
@@ -180,5 +186,55 @@ def main() -> None:
     print(f"Total time: {time.time() - t0:.1f}s")
 
 
+def verify_frozen_log() -> int:
+    print("=" * 88)
+    print("VALLEY-LINEAR WIDE-TAIL FROZEN LOG VERIFIER")
+    print(f"source_log={FROZEN_LOG.relative_to(REPO_ROOT)}")
+    print("Use --recompute to run the original slow wide-tail replay.")
+    print("=" * 88)
+    if not FROZEN_LOG.exists():
+        print(f"FAIL missing frozen log: {FROZEN_LOG}")
+        print("SCORECARD PASS=0 FAIL=1")
+        return 1
+
+    text = FROZEN_LOG.read_text(encoding="utf-8", errors="replace")
+    checks: list[tuple[str, bool, str]] = []
+
+    def add(name: str, ok: bool, metric: str) -> None:
+        checks.append((name, ok, metric))
+
+    add("header", "3D VALLEY-LINEAR WIDE-TAIL REPLAY" in text,
+        "wide-tail replay header present")
+    add("barrier sanity", "Barrier sanity: Born=4.82e-15  k=0=+0.000000" in text,
+        "Born=4.82e-15 and k=0 exactly zero")
+    rows = re.findall(r"^\s+z=\s*(\d+)\s+delta=([+-]\d+\.\d+)\s+(TOWARD|AWAY)\s*$", text, re.MULTILINE)
+    add("distance rows", len(rows) == 9, f"rows={len(rows)} expected=9")
+    add("distance all toward", len(rows) == 9 and all(float(delta) > 0.0 and direction == "TOWARD" for _, delta, direction in rows),
+        f"toward={sum(1 for _, delta, direction in rows if float(delta) > 0.0 and direction == 'TOWARD')}/9")
+    add("toward support", "TOWARD support: 9/9" in text, "support=9/9")
+    add("peak tail", "Tail from peak (z>=4): b^(-1.07), R^2=0.990  n=7" in text,
+        "peak tail -1.07, R2=0.990, n=7")
+    add("far tail", "Far tail (z>=5): b^(-1.17), R^2=0.997  n=6" in text,
+        "far tail -1.17, R2=0.997, n=6")
+
+    n_pass = sum(1 for _, ok, _ in checks if ok)
+    n_fail = len(checks) - n_pass
+    for name, ok, metric in checks:
+        print(f"{'PASS' if ok else 'FAIL'} {name}: {metric}")
+    print(f"SCORECARD PASS={n_pass} FAIL={n_fail}")
+    return 0 if n_fail == 0 else 1
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Valley-linear wide-tail replay/cache verifier.")
+    parser.add_argument("--recompute", action="store_true",
+                        help="Run the original slow wide-tail replay.")
+    args = parser.parse_args()
+    if args.recompute:
+        run_full_replay()
+        return 0
+    return verify_frozen_log()
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

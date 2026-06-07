@@ -28,6 +28,7 @@ and sampled well-behavior (grid monotonicity, finite-difference slopes,
 no-blow-up) on the working scan interval.
 
 CHECKS:
+  Section 0: source-boundary checks
   Section 1: setup + imported numeric inputs
   Section 2: (T1) globalness / max|y_t| bounded on [0.5, 1.2]
   Section 3: (T2) finite-grid monotonicity on 33-point grid
@@ -45,6 +46,7 @@ from __future__ import annotations
 import math
 import sys
 import time
+from pathlib import Path
 
 import numpy as np
 from canonical_plaquette_surface import (
@@ -63,6 +65,8 @@ except ImportError:
     sys.exit(1)
 
 np.set_printoptions(precision=10, linewidth=120)
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md"
 
 # ── Physical constants (same as parent runner; only used as RGE seeds) ─────
 
@@ -299,6 +303,39 @@ print("BOUNDARY BC-TRANSFER FINITE-GRID DIAGNOSTIC")
 print("=" * 78)
 print()
 t0 = time.time()
+
+# =====================================================================
+log("=" * 78)
+log("SECTION 0: Source-boundary checks")
+log("=" * 78)
+log()
+note_text = NOTE.read_text(encoding="utf-8")
+check(
+    "section0_2026_06_07_boundary_present",
+    "2026-06-07 Implementation-Input Boundary Retargeting" in note_text,
+    "source note carries the implementation-input retargeting section",
+)
+check(
+    "section0_imports_are_implementation_inputs",
+    "visible implementation inputs rather than retained proof authorities" in note_text,
+    "canonical plaquette and Ward target are not proof authorities for this row",
+)
+check(
+    "section0_continuum_claims_excluded",
+    "does not claim continuum monotonicity, exact continuum uniqueness" in note_text,
+    "finite grid diagnostic only",
+)
+check(
+    "section0_runner_count_updated",
+    "Counts: 28 PASS, 0 FAIL" in note_text,
+    "note scorecard matches source-boundary runner",
+)
+check(
+    "section0_no_retained_input_overclaim",
+    "cited as retained inputs" not in note_text,
+    "old retained-input wording removed",
+)
+log()
 
 # =====================================================================
 log("=" * 78)

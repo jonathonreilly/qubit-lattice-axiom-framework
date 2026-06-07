@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/fermion_parity_z2_grading_check.py
-runner_sha256: b70fb96eaf82c37279a8307f080ae35e5b706f002c0a4deb16154344f6d58fcf
+runner_sha256: 0dd5e09c1717b499f24e6b0d12f41510cdbf5649d2193f6613a7bbf75a0f11f4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
-FRAMEWORK FERMION PARITY (-1)^Q̂ AND Z_2 GRADING
+FRAMEWORK OCCUPATION PARITY (-1)^Q̂ AND Z_2 GRADING
 ========================================================================
 
   Toy model: N = 4 sites, dim = 16
@@ -47,7 +47,7 @@ TEST 5: dim H_even = dim H_odd = 2^{N-1} = 8
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 6: {(-1)^Q̂, a_x} = 0  for all x  (a_x is Z_2-odd)
+TEST 6: {(-1)^Q̂, a_x} = 0  for all x  (ladder operator is Z_2-odd)
 ------------------------------------------------------------------------
   max ||{F, a_x}|| = 0.000e+00
   STATUS: PASS
@@ -64,7 +64,7 @@ TEST 7: [(-1)^Q̂, a_x^† a_y] = 0  (bilinears are Z_2-even)
   Test 3 ([F, n̂_x] = 0):                            PASS
   Test 4 (Spec = {+1, -1}):                         PASS
   Test 5 (Z_2 grading dim balance):                 PASS
-  Test 6 (a_x is Z_2-odd: {F, a_x} = 0):            PASS
+  Test 6 (ladder operator is Z_2-odd: {F, a_x} = 0): PASS
   Test 7 (bilinear a_x^† a_y is Z_2-even):           PASS
   OVERALL: PASS
 

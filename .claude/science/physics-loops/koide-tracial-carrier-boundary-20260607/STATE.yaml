@@ -1,0 +1,28 @@
+loop_slug: koide-tracial-carrier-boundary-20260607
+goal: "Repair koide_tracial_standard_form_carrier by converting candidate-source language into a supplied-carrier boundary theorem."
+target_claim_id: koide_tracial_standard_form_carrier_narrow_note_2026-06-02
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: supplied_carrier_boundary
+files_touched:
+  - docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md
+  - scripts/koide_tracial_standard_form_carrier_2026_06_02.py
+  - logs/runner-cache/koide_tracial_standard_form_carrier_2026_06_02.txt
+  - .claude/science/physics-loops/koide-tracial-carrier-boundary-20260607/
+open_imports:
+  - "Framework-native physical selection of the tracial standard-form generation carrier."
+  - "Framework-native selection of channel-count scoring rather than direction-count scoring."
+retired_imports:
+  - "Tier-A candidate/admission source role."
+  - "Axiom-surface proposal role."
+  - "Physical Majorana/Kahler/readout predictions as load-bearing support."
+runner_status:
+  command: "PYTHONPATH=scripts python3 scripts/koide_tracial_standard_form_carrier_2026_06_02.py"
+  result: "SCORECARD PASS=10 FAIL=0"
+audit_data_touched: false
+review_loop_disposition: "not run; reviewer-owned review/landing path"
+next_exact_action: "Reviewer should assess whether the row is now a clean bounded supplied-carrier theorem rather than audited_conditional on proposed carrier/scoring authority."
+stop_condition: "science block packaged and PR opened"

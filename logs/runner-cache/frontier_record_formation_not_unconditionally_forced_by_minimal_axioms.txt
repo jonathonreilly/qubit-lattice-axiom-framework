@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py
+runner_sha256: 7fb3a89f950e3975d54c636ee0d87049b52a2f6eb2f3c94e1c0213e5e3e94ad9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+==============================================================================
+NO-GO: record formation is not unconditionally forced by the minimal axioms  [class A]
+==============================================================================
+
+-- baseline-consistent witnesses that record formation is NOT forced --
+  [PASS] (1) H=0 (trivial dynamics): pointer coherence preserved for all t => NO record forms  (coh(t=1,5,20) = [np.float64(0.5), np.float64(0.5), np.float64(0.5)])
+  [PASS] (2) decoupled H = H_S(x)I + I(x)H_E with H != 0 (no coupling): coherence preserved => NO record despite non-trivial dynamics  (coh(t=1,5,20) = [np.float64(0.5), np.float64(0.5), np.float64(0.5)])
+  [PASS] (3) an eigenstate of any (even coupled) H is stationary => coherence frozen => NO record forms (the baseline fixes no state, so an eigenstate is admissible)
+
+-- contrast: coupled non-eigenstate dynamics can decohere --
+  [PASS] (4) a generic coupled H on a non-eigenstate decoheres => a record forms (companion contrast); (1)-(3) are the baseline-consistent witnesses it is not UNCONDITIONAL  (coupled-H coherence = 0.201)
+
+-- the no-go reduction --
+  [PASS] (5) Record explicitly disclaims measurement/decoherence dynamics, and the baseline fixes neither the dynamics nor the state => the (1)-(3) no-record cases are baseline-consistent => unconditional record formation requires an imported decoherence-dynamics premise
+
+==============================================================================
+TOTAL: PASS=5 FAIL=0
+VERDICT: record formation is NOT unconditionally forced by the Lattice/Quantum/Record baseline. Record explicitly excludes measurement/decoherence dynamics, and baseline-consistent witnesses (H=0, decoupled H, any energy eigenstate) produce no records. A coupled non-eigenstate toy model shows record formation can be generic, but generic is not unconditional. A theory layer that wants record production must supply the production/decoherence model explicitly.
+
+----- stderr -----
+

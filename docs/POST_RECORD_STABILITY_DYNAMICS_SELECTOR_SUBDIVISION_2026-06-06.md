@@ -1,7 +1,7 @@
 # Post-Record Stability/Dynamics Selector Subdivision
 
 **Date:** 2026-06-06
-**Type:** exact support / read-only audit companion
+**Type:** meta
 **Claim type:** meta
 **Status:** exact-support source-side for read-only stability/dynamics selector
 subdivision; audit_required_before_effective_retained=true;

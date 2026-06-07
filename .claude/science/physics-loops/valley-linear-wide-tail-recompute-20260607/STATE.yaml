@@ -1,0 +1,14 @@
+slug: valley-linear-wide-tail-recompute-20260607
+target_claim_id: valley_linear_wide_tail_note
+base: origin/main
+status: ready_for_review_pr
+actual_current_surface_status: bounded-support
+active_route: frozen_raw_row_verifier
+files_touched:
+  - docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md
+  - scripts/valley_linear_wide_tail_replay.py
+  - logs/runner-cache/valley_linear_wide_tail_replay.txt
+open_imports:
+  - universal asymptotic distance-law theorem
+next_exact_action: "Open review PR."
+stop_condition: "PR opened and verified."

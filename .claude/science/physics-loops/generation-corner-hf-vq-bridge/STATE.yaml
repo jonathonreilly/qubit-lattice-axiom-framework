@@ -28,4 +28,4 @@ authority_surface_edits:
   lane_registry: false
 remaining_blocker_after_block: "Independent audit must decide whether the new one-hop source bridge is sufficient and may then retag the target. This PR does not perform that audit action."
 next_exact_action: "Open review PR; then refresh conditional backlog and select the next repairable audited conditional row."
-pr_url: null
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3091

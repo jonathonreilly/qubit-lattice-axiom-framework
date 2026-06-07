@@ -40,4 +40,4 @@ Review whether the one-hop bridge is acceptable exact support for re-auditing
 `generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06`.
 If accepted, the independent audit lane can decide the target's actual verdict.
 
-PR URL: pending.
+PR URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3091

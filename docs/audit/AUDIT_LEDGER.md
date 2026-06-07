@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 726 |
+| **retained_bounded** | 727 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1332 |
+| unaudited | 1331 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1142 |
+| `audited_clean` | 1143 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1641 |
+| `unaudited` | 1640 |
 
 | claim_type | count |
 |---|---:|
@@ -427,6 +427,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5905,6 +5906,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the scoped qutrit HW/Fourier equations, pure-shift H is not Fourier-fixed at r=1/2, the true F-self-dual clock-shift family is fixed for all g, and F-covariance of G forces only b=c while leaving a free.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from direct finite-dimensional matrix algebra on the supplied X, Z, F, H, K, and G definitions. The runner source performs actual operator computations rather than importing or hard-coding the contested value, and the note keeps broader Clifford/Wigner/readout claims out of scope.
 - **rationale:** The load-bearing step is an algebraic closure over explicitly supplied qutrit matrices and operator families, with no cited upstream authority and no external comparator. Independent inspection of the formulas confirms the core facts: F conjugates X to Z, the pure-shift line is not fixed except at zero hopping, the symmetric clock-shift family has a free coupling, and b=c is the only off-diagonal balance condition in G. The conclusion is also carefully scoped as a no-selection/open-gate result, not a universal no-go over all possible symmetry or readout routes.
+- **auditor confidence:** high
+
+### `flavor_idempotent_u1_collapses_note_2026-05-30`
+
+- **Note:** [`FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md`](../../docs/FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited claim is the finite algebraic route-pruning statement that the native equal-doublet idempotent U(1) is inert on circulant Hermitian Hamiltonians, one-sided multiplication is not the Hermitian signed readout route, and opposite doublet charge exits the idempotent span; the ordering table is only a comparator.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-180014-122f6f19a8-flavor_idempotent_u1_collaps`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the Fourier/idempotent decomposition, the equal-doublet U(1) is scalar on the singlet and doublet projectors so U H U^dagger = H for circulant H, while the opposite doublet charge P1 - P2 has unequal doublet eigenvalues and is outside span{Ps,Pd}.  _(class `A`)_
+- **chain closes:** True — The projector algebra closes directly: Ps and Pd commute with C, any C3-circulant H is diagonal in the same Fourier basis, and U is scalar on the two idempotent blocks, so conjugation is inert. Also P1+P2=Pd, whereas P1-P2 has Fourier eigenvalues (0,1,-1), impossible for any alpha Ps + beta Pd whose doublet eigenvalues are equal.
+- **rationale:** The load-bearing math is a genuine class-A finite matrix identity over the supplied C3/idempotent inputs and retained one-hop authorities. An independent Fourier-basis check confirms the commutation, conjugation inertness, equal-doublet projector identity, and outside-span status of the opposite charge without relying on the runner implementation. The note explicitly demotes the observed sector ordering to a non-load-bearing comparator and does not claim a global sector selector or blanket absence of continuous doublet actions.
 - **auditor confidence:** high
 
 ### `flavor_interacting_matter_build_note_2026-05-30`

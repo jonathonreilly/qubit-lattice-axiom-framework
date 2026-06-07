@@ -1,9 +1,9 @@
-===== runner cache v2 =====
+===== runner cache v1 =====
 runner: scripts/flavor_idempotent_u1_collapses_2026_05_30.py
 runner_sha256: 40794f719146f9f781a57fceb936739057d81644f109ce1098b0f6b0fbc8b5a5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 [PASS] K1 idempotent U(1) commutes with C and is distinct from generator rephasing

@@ -1,0 +1,24 @@
+loop_slug: dimension-selection-packet-manifest
+branch: physics-loop/dimension-selection-packet-manifest-20260607
+target_claim_id: dimension_selection_note
+target_status: bounded-theorem audit-unblock
+actual_current_surface_status: audited_conditional
+blocker_source: audit_ledger
+blocker_text: "runner_artifact_issue: include scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py, scripts/frontier_dimension_selection.py, logs/runner-cache/frontier_dimension_selection.txt, and the source-packet verifier/cache so the finite-k replay and displayed beta/I_3 table can be checked from code."
+cycle: 1
+active_route: static-import source-packet manifest plus cache checks
+files_touched:
+  - docs/DIMENSION_SELECTION_NOTE.md
+  - scripts/frontier_dimension_selection_lower_bound_parent_repair.py
+  - scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+  - logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt
+  - logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt
+  - outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json
+open_imports:
+  - all-d potential/Coulomb-law source derivation remains open
+  - framework-internal upper-bound d <= 3 remains open
+  - row remains finite-runner lower-bound support, not unique-dimension closure
+trace_gate: direct_blocker_closure
+review_disposition: local_checks_pass_reviewer_pending
+next_exact_action: "Open review PR; auditor/reviewer can rebuild helper_runner_paths and verify the source-packet manifest."
+stop_condition: "This block is complete when the review PR is opened; campaign then pivots to the next repairable conditional row."

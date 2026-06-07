@@ -1,0 +1,18 @@
+loop_slug: dirac-weyl-dof-source-packet
+target_claim_id: dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28
+branch: physics-loop/dirac-weyl-dof-source-packet-20260607
+base_ref: origin/main
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: retire Q1 via retained Cl(3)->Cl(3,1) source, keep Q2 bounded
+files_touched:
+  - docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+  - scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
+  - logs/runner-cache/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.txt
+open_imports:
+  - Q2 on-shell relativistic thermal-counting convention remains bounded
+  - physical Wick-rotation / Lorentzian-sign selection is not closed by Q1
+no_new_axioms: true
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer extracts the Q1-retired source packet; independent audit decides whether the row can become retained_bounded or remains conditional on Q2."

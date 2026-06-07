@@ -9,31 +9,33 @@ and via explicit sympy matrix realisations:
 
   (1) Note structure (claim_type, status authority, R-packet, Q-packet,
       proof-walk, exact arithmetic check, dependencies, boundaries).
-  (2) The exact rational identities
+  (2) Live ledger statuses for the authority packet, including retained Q1
+      and bounded Q2.
+  (3) The exact rational identities
         dof_Dirac = 2 (spin, R1) * 2 (particle-antiparticle, R3) = 4
         dof_Weyl  = dof_Dirac / 2 = 2          (chirality projection R2)
         dof_Weyl  = 2 (helicity-antiparticle)
       with no floating-point arithmetic.
-  (3) The four-component complex Dirac spinor space has 8 real
+  (4) The four-component complex Dirac spinor space has 8 real
       off-shell components; the Q2 on-shell convention halves to 4.
-  (4) An explicit 4x4 real-matrix realisation of `Cl(3, 1)` is
+  (5) An explicit 4x4 real-matrix realisation of `Cl(3, 1)` is
       constructed and the chirality projector `gamma_5 = gamma_1
       gamma_2 gamma_3 gamma_4` (up to phase) is verified to satisfy
       gamma_5^2 = +I and {gamma_5, gamma_mu} = 0 for every generator.
       P_L = (I - gamma_5)/2 and P_R = (I + gamma_5)/2 are then
       verified to be orthogonal projectors splitting V_(3,1) ~= R^4
       into two two-dimensional chirality eigenspaces.
-  (5) The CPT-pairing factor 2 is implemented as a binary
+  (6) The CPT-pairing factor 2 is implemented as a binary
       `(particle, antiparticle)` index on a Berezin-style single
       fermionic mode and matched against the spin-statistics
       single-mode 2-dim CAR irreducible carrier.
-  (6) Forbidden-vocabulary scan (no "fermion landing class",
+  (7) Forbidden-vocabulary scan (no "fermion landing class",
       "spinor landing tier", "Dirac admission tier", "Weyl admission
       tier", "dof landing class", etc.).
-  (7) Forbidden-imports scan (no lattice-action quantity in the
+  (8) Forbidden-imports scan (no lattice-action quantity in the
       proof-walk: no plaquette, staggered, Brillouin, link unitary,
       u_0, Monte Carlo, fitted).
-  (8) The audit-conditional P4 replacement mapping: the parent note's P4 premise
+  (9) The audit-conditional P4 replacement mapping: the parent note's P4 premise
       content is exactly reconstructed by R1 (spin = 2) * R3
       (particle-antiparticle = 2) for Dirac, and Dirac / 2 (R2
       chirality halving) for Weyl.
@@ -41,6 +43,7 @@ and via explicit sympy matrix realisations:
 
 from __future__ import annotations
 
+import json
 from fractions import Fraction
 from pathlib import Path
 import re
@@ -55,6 +58,7 @@ except ImportError:
 
 
 ROOT = Path(__file__).resolve().parent.parent
+LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 NOTE_PATH = (
     ROOT
     / "docs"
@@ -69,6 +73,15 @@ PARENT_NOTE = (
 
 PASS = 0
 FAIL = 0
+
+EXPECTED_AUTHORITY_STATUSES = {
+    "per_site_su2_spin_half_theorem_note_2026-05-02": {"retained"},
+    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": {"retained"},
+    "cpt_exact_note": {"retained"},
+    "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": {"retained"},
+    "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": {"retained_bounded"},
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": {"retained"},
+}
 
 
 def check(label: str, ok: bool, detail: str = "") -> bool:
@@ -91,8 +104,37 @@ def section(title: str) -> None:
     print("-" * 88)
 
 
+def load_ledger_rows() -> dict[str, dict[str, object]]:
+    data = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+    rows = data.get("rows")
+    if not isinstance(rows, dict):
+        raise TypeError("audit ledger rows must be a dict keyed by claim id")
+    return rows
+
+
 NOTE_TEXT = NOTE_PATH.read_text(encoding="utf-8")
 NOTE_FLAT = re.sub(r"\s+", " ", NOTE_TEXT)
+
+
+def check_live_authority_statuses() -> None:
+    section("live ledger authority statuses")
+    rows = load_ledger_rows()
+    for claim_id, allowed_statuses in EXPECTED_AUTHORITY_STATUSES.items():
+        row = rows.get(claim_id)
+        check(f"ledger row exists: {claim_id}", row is not None)
+        if row is None:
+            continue
+        observed = row.get("effective_status")
+        check(
+            f"{claim_id}: effective_status in {sorted(allowed_statuses)}",
+            observed in allowed_statuses,
+            detail=f"observed={observed!r}",
+        )
+        check(
+            f"{claim_id}: audit_status audited_clean",
+            row.get("audit_status") == "audited_clean",
+            detail=f"observed={row.get('audit_status')!r}",
+        )
 
 
 def check_note_structure() -> None:
@@ -100,9 +142,12 @@ def check_note_structure() -> None:
     required = [
         "Claim type:** bounded_theorem",
         "Status authority:** source-note proposal only",
+        "2026-06-07 source-packet repair",
+        "Q1 is retired as an unsupported algebraic admission",
+        "Q2 remains a bounded on-shell-counting admission",
         "does **not** add a new axiom",
         "Framework authority packet (R1-R4)",
-        "Supplied admission packet (Q1-Q2",
+        "Retained source plus bounded admission packet (Q1-Q2)",
         "Proof-walk",
         "Exact arithmetic check",
         "Mapping to the parent note's P4 premise",
@@ -121,16 +166,20 @@ def check_note_structure() -> None:
 
 
 def check_premise_packet_marking() -> None:
-    section("admission packet (Q1-Q2) marked as not framework-retained")
-    # The note must mark Q1 and Q2 as admissions, not as retained primitives.
+    section("Q1 retained source and Q2 bounded admission marking")
+    # The note must mark Q1 as retained-sourced for the algebra cell, while
+    # keeping Q2 as an explicit bounded admission.
     must_have = [
-        "Q1 Cl(3,1) Lorentzian signature extension",
+        "Q1 Cl(3,1) finite Clifford-algebra source",
+        "retained Q1 source",
+        "Q1 is therefore retired as an unsupported admission",
         "Q2 On-shell relativistic thermal-counting convention",
-        "admitted, not derived",
-        "not framework-retained",
+        "Q2 remains a bounded admission",
+        "physical Wick rotation",
+        "Lorentzian sign",
     ]
     for phrase in must_have:
-        check(f"admission marker present: {phrase}", phrase in NOTE_FLAT)
+        check(f"source/admission marker present: {phrase}", phrase in NOTE_FLAT)
 
 
 def check_p4_mapping() -> None:
@@ -163,6 +212,10 @@ def check_p4_mapping() -> None:
         "gamma_5" in NOTE_TEXT
         and "chirality" in NOTE_TEXT
         and "halving" in NOTE_TEXT,
+    )
+    check(
+        "P4 replacement names retained Q1 and residual bounded Q2",
+        "retained Q1" in NOTE_FLAT and "residual bounded admission Q2" in NOTE_FLAT,
     )
 
 
@@ -235,14 +288,14 @@ def check_exact_arithmetic() -> None:
         detail=f"got {dof_dirac_direct}",
     )
 
-    # Equivalent: spinor-space dim 4 * (real-vs-complex factor 2) /
-    # (Q2 on-shell halving factor 2).
+    # Equivalent: retained Q1 spinor-space dim 4 * (real-vs-complex factor 2) /
+    # (bounded Q2 on-shell halving factor 2).
     spinor_real_dim = Fraction(4)  # Q1: dim_R V_(3,1) = 4
     real_per_complex = Fraction(2)
     onshell_halving = Fraction(2)  # Q2
     dof_dirac_via_spinor = (spinor_real_dim * real_per_complex) / onshell_halving
     check(
-        "Dirac dof = (dim_R V_(3,1) * 2) / 2 = 4",
+        "Dirac dof = (retained Q1 dim_R V_(3,1) * 2) / bounded Q2 2 = 4",
         dof_dirac_via_spinor == Fraction(4),
         detail=f"got {dof_dirac_via_spinor}",
     )
@@ -277,14 +330,14 @@ def check_exact_arithmetic() -> None:
         naive_offshell == Fraction(8),
     )
     check(
-        "on-shell halving 8 / 2 = 4 (Q2 admission)",
+        "on-shell halving 8 / 2 = 4 (bounded Q2 admission)",
         (naive_offshell / onshell_halving) == Fraction(4),
     )
 
 
 def check_cl31_realisation() -> None:
     section("explicit 4x4 real-matrix realisation of Cl(3, 1)")
-    # Build an explicit real 4x4 realisation of Cl(3, 1) per Q1.
+    # Build an explicit real 4x4 realisation of Cl(3, 1) per retained Q1.
     # We use the Majorana-style real basis with eta = diag(+1,+1,+1,-1).
     # A standard real 4x4 realisation (see Lawson-Michelsohn Ch. I §5):
     #   gamma_1 = sigma_3 (X) sigma_1
@@ -519,15 +572,15 @@ def check_p4_replacement_arithmetic() -> None:
         "bridge reproduces P4 Weyl dof = 2 from R1 + R3 + R2",
         bridge_weyl_dof == Fraction(2),
     )
-    # The bridge's two admissions Q1 + Q2 carry only the spinor-space
-    # dimension and the on-shell convention. They do not themselves
-    # produce the integer 4 - they are the algebraic infrastructure on
-    # which the integer arithmetic R1 * R3 runs.
+    # Retained Q1 and bounded Q2 carry only the spinor-space dimension
+    # and the on-shell convention. They do not themselves produce the
+    # integer 4 - they are the algebraic infrastructure on which the
+    # integer arithmetic R1 * R3 runs.
     q1_spinor_dim = Fraction(4)  # dim_R V_(3,1)
     q2_onshell = Fraction(2)
     q_path = (q1_spinor_dim * Fraction(2)) / q2_onshell
     check(
-        "Q1 + Q2 path also yields 4 (cross-check on the spinor-dim side)",
+        "retained Q1 + bounded Q2 path also yields 4 (spinor-dim cross-check)",
         q_path == Fraction(4),
     )
 
@@ -538,6 +591,7 @@ def main() -> int:
     print(f"parent: {PARENT_NOTE}")
 
     check_note_structure()
+    check_live_authority_statuses()
     check_premise_packet_marking()
     check_p4_mapping()
     check_proof_walk_forbidden_imports()
@@ -552,9 +606,9 @@ def main() -> int:
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: bounded admission bridge passes; Dirac dof = 4 and "
+            "VERDICT: Q1-retired bounded bridge passes; Dirac dof = 4 and "
             "Weyl dof = 2 follow from the framework authority packet R1-R4 "
-            "plus supplied admission packet Q1-Q2 by exact rational arithmetic."
+            "plus retained Q1 and bounded Q2 by exact rational arithmetic."
         )
     return 0 if FAIL == 0 else 1
 

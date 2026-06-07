@@ -1,26 +1,29 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
-runner_sha256: 5f21c53618b3ba9661e378166b0e4b1863cf5c5ea0f1233238de024aee7ed28d
+runner_sha256: 099792f8d4e89ae88613adcf6f86fe2e838e53f2041b21452a31bee77f1d009b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
 audit-companion: Dirac/Weyl fermion dof admission bridge
 ----------------------------------------------------------------------------------------
-note: /private/tmp/cl3-review-open-20260527-yg4oK6/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
-parent: /private/tmp/cl3-review-open-20260527-yg4oK6/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
+note: /private/tmp/cl3-dirac-weyl-dof-source-packet-20260607/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+parent: /private/tmp/cl3-dirac-weyl-dof-source-packet-20260607/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
 
 ----------------------------------------------------------------------------------------
 note structure and scope
 ----------------------------------------------------------------------------------------
   [PASS] note contains: Claim type:** bounded_theorem
   [PASS] note contains: Status authority:** source-note proposal only
+  [PASS] note contains: 2026-06-07 source-packet repair
+  [PASS] note contains: Q1 is retired as an unsupported algebraic admission
+  [PASS] note contains: Q2 remains a bounded on-shell-counting admission
   [PASS] note contains: does **not** add a new axiom
   [PASS] note contains: Framework authority packet (R1-R4)
-  [PASS] note contains: Supplied admission packet (Q1-Q2
+  [PASS] note contains: Retained source plus bounded admission packet (Q1-Q2)
   [PASS] note contains: Proof-walk
   [PASS] note contains: Exact arithmetic check
   [PASS] note contains: Mapping to the parent note's P4 premise
@@ -35,12 +38,37 @@ note structure and scope
   [PASS] note contains: G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28
 
 ----------------------------------------------------------------------------------------
-admission packet (Q1-Q2) marked as not framework-retained
+live ledger authority statuses
 ----------------------------------------------------------------------------------------
-  [PASS] admission marker present: Q1 Cl(3,1) Lorentzian signature extension
-  [PASS] admission marker present: Q2 On-shell relativistic thermal-counting convention
-  [PASS] admission marker present: admitted, not derived
-  [PASS] admission marker present: not framework-retained
+  [PASS] ledger row exists: per_site_su2_spin_half_theorem_note_2026-05-02
+  [PASS] per_site_su2_spin_half_theorem_note_2026-05-02: effective_status in ['retained'] (observed='retained')
+  [PASS] per_site_su2_spin_half_theorem_note_2026-05-02: audit_status audited_clean (observed='audited_clean')
+  [PASS] ledger row exists: clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10
+  [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: effective_status in ['retained'] (observed='retained')
+  [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: audit_status audited_clean (observed='audited_clean')
+  [PASS] ledger row exists: cpt_exact_note
+  [PASS] cpt_exact_note: effective_status in ['retained'] (observed='retained')
+  [PASS] cpt_exact_note: audit_status audited_clean (observed='audited_clean')
+  [PASS] ledger row exists: spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10
+  [PASS] spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10: effective_status in ['retained'] (observed='retained')
+  [PASS] spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10: audit_status audited_clean (observed='audited_clean')
+  [PASS] ledger row exists: spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10
+  [PASS] spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10: effective_status in ['retained_bounded'] (observed='retained_bounded')
+  [PASS] spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10: audit_status audited_clean (observed='audited_clean')
+  [PASS] ledger row exists: cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27
+  [PASS] cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27: effective_status in ['retained'] (observed='retained')
+  [PASS] cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27: audit_status audited_clean (observed='audited_clean')
+
+----------------------------------------------------------------------------------------
+Q1 retained source and Q2 bounded admission marking
+----------------------------------------------------------------------------------------
+  [PASS] source/admission marker present: Q1 Cl(3,1) finite Clifford-algebra source
+  [PASS] source/admission marker present: retained Q1 source
+  [PASS] source/admission marker present: Q1 is therefore retired as an unsupported admission
+  [PASS] source/admission marker present: Q2 On-shell relativistic thermal-counting convention
+  [PASS] source/admission marker present: Q2 remains a bounded admission
+  [PASS] source/admission marker present: physical Wick rotation
+  [PASS] source/admission marker present: Lorentzian sign
 
 ----------------------------------------------------------------------------------------
 P4 audit-conditional replacement mapping is explicit
@@ -49,6 +77,7 @@ P4 audit-conditional replacement mapping is explicit
   [PASS] bridge cites parent P4 wording
   [PASS] bridge maps P4 to R1 + R3 (Dirac)
   [PASS] bridge maps Weyl halving to R2 (chirality)
+  [PASS] P4 replacement names retained Q1 and residual bounded Q2
 
 ----------------------------------------------------------------------------------------
 proof-walk forbids lattice-action imports
@@ -77,12 +106,12 @@ repo-vocabulary discipline (no new class / tier framings)
 exact rational arithmetic: dof_Dirac = 4, dof_Weyl = 2
 ----------------------------------------------------------------------------------------
   [PASS] Dirac dof = 2 (spin) * 2 (particle-antiparticle) = 4 (got 4)
-  [PASS] Dirac dof = (dim_R V_(3,1) * 2) / 2 = 4 (got 4)
+  [PASS] Dirac dof = (retained Q1 dim_R V_(3,1) * 2) / bounded Q2 2 = 4 (got 4)
   [PASS] factorisations agree (R1*R3 = Q1-spinor decomposition)
   [PASS] Weyl dof = Dirac dof / 2 (chirality projection, R2) = 2 (got 2)
   [PASS] Weyl dof = 2 (helicity-antiparticle)
   [PASS] naive off-shell real-component count = 8 (4 complex spinor)
-  [PASS] on-shell halving 8 / 2 = 4 (Q2 admission)
+  [PASS] on-shell halving 8 / 2 = 4 (bounded Q2 admission)
 
 ----------------------------------------------------------------------------------------
 explicit 4x4 real-matrix realisation of Cl(3, 1)
@@ -133,10 +162,10 @@ P4 replacement support: bridge supplies the factor 2 * 2 = 4 from R-packet
 ----------------------------------------------------------------------------------------
   [PASS] bridge reproduces P4 Dirac dof = 4 from R1 + R3
   [PASS] bridge reproduces P4 Weyl dof = 2 from R1 + R3 + R2
-  [PASS] Q1 + Q2 path also yields 4 (cross-check on the spinor-dim side)
+  [PASS] retained Q1 + bounded Q2 path also yields 4 (spinor-dim cross-check)
 
-TOTAL: PASS=82 FAIL=0
-VERDICT: bounded admission bridge passes; Dirac dof = 4 and Weyl dof = 2 follow from the framework authority packet R1-R4 plus supplied admission packet Q1-Q2 by exact rational arithmetic.
+TOTAL: PASS=107 FAIL=0
+VERDICT: Q1-retired bounded bridge passes; Dirac dof = 4 and Weyl dof = 2 follow from the framework authority packet R1-R4 plus retained Q1 and bounded Q2 by exact rational arithmetic.
 
 ----- stderr -----
 

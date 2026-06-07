@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 728 |
+| **retained_bounded** | 729 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1329 |
+| unaudited | 1328 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1144 |
+| `audited_clean` | 1145 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1638 |
+| `unaudited` | 1637 |
 
 | claim_type | count |
 |---|---:|
@@ -445,6 +445,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_split_the_brick_doublet_complex_structure_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6181,6 +6182,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Genuine log|det H| counts eigenvalue multiplicity, so the doublet contributes 2 log|lambda_doublet| while the r=1/2 block-count reading requires the distinct multiplicity-stripped functional log|lambda_triv lambda_doublet|.  _(class `A`)_
 - **chain closes:** True — The determinant multiplicity statement is standard finite-dimensional algebra: a two-dimensional degenerate doublet contributes twice to log|det H|. The block-count expression is therefore a different functional, so additive/log form alone does not determine the sector weight.
 - **rationale:** The audited claim is narrow and negative: it separates logarithmic form from Koide sector weighting. The displayed determinant identity and the distinction from the multiplicity-stripped block functional close by algebra, and the runner source actually computes a finite 3x3 example rather than merely printing constants. No external comparator, tuned numerical match, or cited open dependency is used.
+- **auditor confidence:** high
+
+### `flavor_retention_law_is_a2plus_note_2026-05-31`
+
+- **Note:** [`FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md`](../../docs/FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebra on the supplied surface of onsite diagonal sources plus Q(z)=2/(3(1+z)); no physical charged-lepton readout or source-locality bridge is audited as closed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-180545-f3c6c04095-flavor_retention_law_is_a2pl`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The intersection of onsite diagonal operators with the circulant algebra is only span{I}, so diagonal onsite descent erases the sample off-diagonal circulant mass splitting in H = I + bC + bC^T.  _(class `A`)_
+- **chain closes:** True — The bounded algebra closes: C3 invariance forces a=b=c, Q(0)=2/3 and Q(-1/3)=1 follow by substitution, Z=2P_+-I gives S_Q1 diagonal 10/9 and off-diagonal -2/9, and diagonal descent of I+bC+bC^T is scalar. The physical source-locality/readout bridge is explicitly outside the claim scope.
+- **rationale:** All displayed quantitative identities in the restricted packet check as finite algebra over the supplied definitions, and the runner source performs corresponding symbolic/numeric checks rather than merely printing constants. The claim is carefully bounded to supplied-coordinate algebra and expressly does not identify Q(0)=2/3 with the physical charged-lepton Koide value. Since the open physical bridge is excluded from the audited scope, it does not block closure of this bounded theorem.
 - **auditor confidence:** high
 
 ### `flavor_so2_readout_false_binary_note_2026-05-30`

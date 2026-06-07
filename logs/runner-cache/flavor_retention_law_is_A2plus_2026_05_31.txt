@@ -1,9 +1,9 @@
-===== runner cache v2 =====
+===== runner cache v1 =====
 runner: scripts/flavor_retention_law_is_A2plus_2026_05_31.py
 runner_sha256: c17545b5d4587fddbe812b14d021d5ff9d1324d7735a5b5b9060d8630b65f4a2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.33
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 [PASS] R1 C3-invariant onsite diagonal sources are scalar

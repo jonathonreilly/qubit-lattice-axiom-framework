@@ -1,0 +1,20 @@
+loop_slug: observable-p1-boundary-cache-repair-20260607
+date: 2026-06-07
+branch: physics-loop/observable-p1-boundary-cache-repair-20260607
+base: origin/main@fbf4dfbedf8c7add83c179756584d9fc983f4488
+mode: campaign_block
+target_status: exact-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: repair observable-P1 runner boundary check and refresh cache
+files_touched:
+  - scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py
+  - docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md
+  - logs/runner-cache/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.txt
+open_imports:
+  - none added
+review_disposition: pass
+pr_status: pending_create
+next_exact_action: open PR, then continue only on hard audited conditional rows
+stop_condition: direct stale-runner blockers exhausted after this PR and open cache PRs

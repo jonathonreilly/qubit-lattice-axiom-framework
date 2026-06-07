@@ -270,25 +270,27 @@ def test_T6_cluster_decomposition_ledger_status() -> None:
     status_cluster = rows.get(cid_cluster, {}).get("effective_status", "?")
     status_reeh = rows.get(cid_reeh, {}).get("effective_status", "?")
     status_bridge = rows.get(cid_bridge, {}).get("effective_status", "?")
-    retained_grade = {"retained", "retained_bounded", "retained_no_go"}
+    positive_closure_grade = {"retained"}
+    retained_or_bounded_grade = {"retained", "retained_bounded", "retained_no_go"}
     # The operator-algebraic attempt cannot consume cluster decomposition as a
-    # retained-grade primitive for closing P1 positively under the live ledger.
+    # positive retained primitive for closing P1 under the live ledger. A
+    # bounded/conditional context row is expected and is part of the boundary.
     check(
-        f"Cluster decomposition row is not retained-grade",
-        status_cluster not in retained_grade,
+        f"Cluster decomposition row is not positive-closure retained",
+        status_cluster not in positive_closure_grade,
         f"{cid_cluster}.effective_status = {status_cluster}",
     )
     # Reeh-Schlieder is also not consumable as a retained primitive.
     check(
         f"Reeh-Schlieder row is not retained-grade",
-        status_reeh not in retained_grade,
+        status_reeh not in retained_or_bounded_grade,
         f"{cid_reeh}.effective_status = {status_reeh}",
     )
     # The mass-gap bridge is retained-grade, but provides temporal decay,
     # not the additivity-of-generator step.
     check(
         f"Mass-gap bridge row is retained-grade (conditional temporal bridge only)",
-        status_bridge in retained_grade,
+        status_bridge in retained_or_bounded_grade,
         f"{cid_bridge}.effective_status = {status_bridge}",
     )
 

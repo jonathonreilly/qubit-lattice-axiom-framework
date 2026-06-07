@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1287 |
+| unaudited | 1286 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
-| ~~audited_renaming~~ | 32 |
+| ~~audited_renaming~~ | 33 |
 | ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,14 +66,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
-| `audited_renaming` | 32 |
-| `unaudited` | 1594 |
+| `audited_renaming` | 33 |
+| `unaudited` | 1593 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1350 |
+| `bounded_theorem` | 1349 |
 | `decoration` | 53 |
-| `meta` | 315 |
+| `meta` | 316 |
 | `no_go` | 318 |
 | `open_gate` | 136 |
 | `positive_theorem` | 767 |
@@ -1463,6 +1463,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `post_record_audit_evidence_ladder_row_bucketing_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_production_dynamics_needed_row_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -13765,6 +13766,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For any finite law P on record words and its reversed law P^R(w)=P(reverse(w)), the count pushforward is invariant under reversal: count_* P = count_* P^R.  _(class `A`)_
 - **chain closes:** True — The reversal map is a bijection on every count fiber, so count(w)=count(reverse(w)) and count_*P=count_*P^R follow by change of variables. Therefore any statistic, event, p-value, or certificate that factors only through counts has identical distribution under the two opposite orientations and cannot decide between them.
 - **rationale:** Formula inventory checked: w -> wv, count(wv)=count(w)+count(v), count(w)=count(reverse(w)), P^R(w)=P(reverse(w)), count_*P=count_*P^R, I(count(w))=I(count(reverse(w))), and transitions(reverse(w))=transpose(transitions(w)) are all finite-word identities. The independent proof is that reversal preserves letter multiplicities while reversing ordered adjacent pairs, so count-only data cannot distinguish P from P^R although transition or endpoint data can. The runner source supports this with exact finite enumeration and Fraction-valued law checks plus source-anchor and firewall-flag checks; it does not import tuned external numerics or a hidden comparator. N1-N8 no-go stress test passes for the narrowed count-only scope because routes through a supplied boundary, clock, oriented law, transition data, or production kernel remain explicitly outside the claim.
+- **auditor confidence:** high
+
+### `post_record_audit_evidence_ladder_row_bucketing_2026-06-06`
+
+- **Note:** [`POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md`](../../docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Read-only methodological triage of current audit-ledger bounded/conditional rows into evidence-ladder buckets; no audit verdicts, promotions, probabilities, calibration, dynamics, or dial selections are applied.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-004736-836168977f-post_record_audit_evidence_l`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner scans 1360 bounded/conditional-scope ledger rows read-only and classifies them into the listed evidence buckets, touching 279 rows with the displayed bucket counts.  _(class `E`)_
+- **chain closes:** True — The packet supports the narrow meta claim that the runner defines and applies deterministic bucket rules, checks ledger immutability, and reports the stated current counts. The support is not a physics derivation; the bucket taxonomy and regex rules are definitions for triage.
+- **rationale:** The load-bearing step is a methodological classification scheme: it introduces bucket labels and applies deterministic regex-style rules to ledger rows. The runner does perform a read-only scan and hash check, but the contested scientific content is not derived from first principles; expected ledger and bucket counts are hard-coded as snapshot checks. Because the claim reduces to definition/application of a triage taxonomy rather than class C computation or independent algebraic closure, the appropriate verdict is audited_renaming.
 - **auditor confidence:** high
 
 ### `post_record_clock_rate_interface_2026-06-06`

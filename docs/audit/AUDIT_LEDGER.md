@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 725 |
+| **retained_bounded** | 726 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1334 |
+| unaudited | 1333 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1141 |
+| `audited_clean` | 1142 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1643 |
+| `unaudited` | 1642 |
 
 | claim_type | count |
 |---|---:|
@@ -414,6 +414,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5717,6 +5718,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** A finite C3 triplet has bare characters 1 on the singlet, omega+omega^2=-1 on the doublet, and 1+omega+omega^2=0 on the full triplet, so none equals 2/9, while L_3(1,2)=(1/3) sum_{k=1,2} 1/((omega^k-1)(omega^{2k}-1))=2/9 comes only from the determinant denominator.  _(class `A`)_
 - **chain closes:** True — The finite character identities and determinant-denominator sum close by direct algebra: omega+omega^2=-1, 1+omega+omega^2=0, and each two-eigenvalue denominator term equals 1/3. The circulant equivariant form also leaves b, hence r=|b|^2/a^2, freely choosable.
 - **rationale:** The audited claim is deliberately narrow and does not assert physical carrier derivation, basepoint selection, or the old two-input theorem. The displayed finite identities check independently of the runner: the bare characters are 1, -1, and 0, while the determinant-denominator average is 2/9. The cited upstream note is retained_no_go and is used only as a bookkeeping dependency, not as an open bridge needed for this finite route-pruning result.
+- **auditor confidence:** high
+
+### `flavor_center_trace_closed_capstone_note_2026-05-30`
+
+- **Note:** [`FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md`](../../docs/FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Reduced exact-support packet for the finite D3+C3 algebra, invariant coordinate subsets, tracial singlet/doublet populations, dephasing preservation, and non-restoration of the historical center-trace closure claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-175321-643bdc3cac-flavor_center_trace_closed_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The coordinate projectors together with the C3 cycle generate M3(C), so the tracial carrier rho=I3/3 gives singlet/doublet populations 1/3 and 2/3 while equal central-atom weighting would be an extra selector.  _(class `A`)_
+- **chain closes:** True — Independently, P_i C^k P_j gives matrix units, so the generated algebra is M3(C) and the only C3-invariant coordinate subsets are empty/full. Since Ps has rank 1 and Pd rank 2, rho=I3/3 gives weights 1/3 and 2/3, and block dephasing preserves those traces; the physical observable-algebra bridge is explicitly outside scope.
+- **rationale:** The load-bearing step is finite-dimensional algebra and trace bookkeeping, not a definition, renaming, numerical match, or external comparator check. The runner source actually computes the projector, generation, invariant-subset, trace, and dephasing checks, while its remaining checks are ledger/cache consistency checks. This clean verdict applies only to the narrowed exact-support packet and does not restore the old center-trace route closure or upgrade the retained_bounded pre-record identification.
+- **open / conditional deps cited:**
+  - `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31`

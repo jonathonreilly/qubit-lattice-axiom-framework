@@ -68,6 +68,7 @@ X_F_BAND = (22.0, 28.0)        # P4 band
 S_RATIO_BAND = (1.4, 1.7)      # P7 band
 X_F_CENTRAL = 25.0             # P4 central
 S_RATIO_CENTRAL = 1.59         # P7 central
+S_RATIO_CENTRAL_RATIONAL = Fraction(159, 100)
 
 AUDIT_FAILS: list[str] = []
 AUDIT_PASSES = 0
@@ -149,6 +150,22 @@ audit(
 audit(
     "Note records conditional support over supplied premise packet",
     "conditional support over the supplied" in note_text,
+)
+audit(
+    "Note records 2026-06-07 source-boundary repair",
+    "2026-06-07 Source-Boundary and Rounding Repair" in note_text,
+)
+audit(
+    "Note records supplied P_DM_ETA packet",
+    "P_DM_ETA = (" in note_text,
+)
+audit(
+    "Note records corrected exact central R ratio 1643/300",
+    "1643/300" in note_text and "5.4767" in note_text,
+)
+audit(
+    "Old central R display 5.4811 is absent",
+    "5.4811" not in note_text,
 )
 for phrase in (
     "source-note proposal only",
@@ -310,9 +327,15 @@ audit(
 
 R_base_float = 31.0 / 9.0
 R_central = R_base_float * S_RATIO_CENTRAL
+R_central_exact = Fraction(31, 9) * S_RATIO_CENTRAL_RATIONAL
 audit(
-    "R(central) = R_base * 1.59 ≈ 5.481",
-    abs(R_central - 5.4811) < 1e-2,
+    "R(central) = (31/9) * 1.59 = 1643/300 exactly",
+    R_central_exact == Fraction(1643, 300),
+    f"computed {R_central_exact}",
+)
+audit(
+    "R(central) float ≈ 5.4767",
+    abs(R_central - 5.476666666666667) < 1e-12,
     f"computed {R_central:.4f}",
 )
 

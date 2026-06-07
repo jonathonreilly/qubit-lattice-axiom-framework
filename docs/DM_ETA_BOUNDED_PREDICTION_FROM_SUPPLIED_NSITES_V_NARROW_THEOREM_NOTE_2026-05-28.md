@@ -13,6 +13,7 @@ pipeline after independent review.
 (non-load-bearing lane context:
 `HUBBLE_LANE5_C2_ATTACK_SURFACE_BIPARTITION_NARROW_THEOREM_NOTE_2026-05-27.md`).
 **Primary runner:** [`scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py`](../scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py)
+**Cached log:** [`logs/runner-cache/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.txt`](../logs/runner-cache/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.txt) (PASS=84 FAIL=0)
 
 **Type:** conditional / support
 **Status authority:** independent audit lane only.
@@ -35,6 +36,35 @@ path**:
 No new axiom, import, or retained bridge is introduced. The conditional
 arithmetic is the load-bearing content; the premise packet stays admitted
 until a retained authority for it lands.
+
+## 2026-06-07 Source-Boundary and Rounding Repair
+
+This repair makes the admission boundary executable in the source note. The
+direct statement is bounded arithmetic over the local supplied packet
+
+```text
+P_DM_ETA = (
+  P1: eta = C * m_DM^2,
+  P2: m_DM = N_sites * v = 16 * v,
+  P3: Omega_b h^2 = 3.6515e-3 * eta_10,
+  P4: x_F in [22, 28],
+  P5: g_* = 106.75,
+  P6: K = 1.07e9 GeV^-1,
+  P7: S_vis/S_dark in [1.4, 1.7] and alpha_X = alpha_LM
+).
+```
+
+The runner verifies the arithmetic consequences of this packet and the two
+retained algebraic inputs, but it does not turn P1-P7 into framework-native
+facts. The displayed central ratio is also corrected:
+
+```text
+R(central) = (31/9) * 1.59 = 1643/300 = 5.476666...
+```
+
+The earlier stale display was a rounding/arithmetic slip; the cached runner
+already computed the consistent value and the same central `eta_pred =
+6.38e-10` band survives the correction.
 
 ---
 
@@ -163,7 +193,7 @@ v             = M_Pl * (7/8)^(1/4) * alpha_LM^16
               = 246.282818290129 GeV         # composed from authorities
 N_sites       = 2^4 = 16                     # composed from authorities
 R_base        = 31/9                         # retained group-theory
-R(central)    = R_base * 1.59 = 5.4811...    # P7 central
+R(central)    = R_base * 1.59 = 1643/300 = 5.4767...    # P7 central
 g_*           = 106.75                       # P5
 K             = 1.07e9 GeV^-1                # P6
 x_F(central)  = 25                           # P4 central
@@ -173,7 +203,7 @@ Substituting into (M0):
 
 ```text
 C(central)
-  = (1.07e9 * 25) / (sqrt(106.75) * 1.2209e19 * pi * 0.09067^2 * 5.4811 * 3.65e7)
+  = (1.07e9 * 25) / (sqrt(106.75) * 1.2209e19 * pi * 0.09067^2 * 5.4767 * 3.65e7)
   = 4.108e-17 GeV^-2.
 
 m_DM         = N_sites * v = 16 * 246.282818290129 GeV = 3940.5 GeV
@@ -402,7 +432,7 @@ floating-point arithmetic elsewhere:
 Expected:
 
 ```text
-TOTAL: PASS=N FAIL=0
+TOTAL: PASS=84 FAIL=0
 VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
 ```
 

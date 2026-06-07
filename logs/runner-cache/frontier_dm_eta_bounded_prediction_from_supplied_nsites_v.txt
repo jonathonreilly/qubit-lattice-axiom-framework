@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py
-runner_sha256: ea70be3efbe95b445112a5dc3972029c70f8469120cec88bcdfce471a43496c6
+runner_sha256: 6c83383fff6982f640abafc8d09540b4b22e429d50fa3fab1463ca94074bb5a8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 ========================================================================
@@ -18,6 +18,10 @@ Section 1: chain authority audits
 [PASS] Old bounded_theorem header is absent
 [PASS] Note status authority is independent audit lane only
 [PASS] Note records conditional support over supplied premise packet
+[PASS] Note records 2026-06-07 source-boundary repair
+[PASS] Note records supplied P_DM_ETA packet
+[PASS] Note records corrected exact central R ratio 1643/300
+[PASS] Old central R display 5.4811 is absent
 [PASS] Note omits source-side status control phrase: source-note proposal only
 [PASS] Note omits source-side status control phrase: actual_current_surface_status
 [PASS] Note omits source-side status control phrase: conditional_surface_status
@@ -55,7 +59,8 @@ Section 4: freeze-out-bypass identity arithmetic (M0)
 [PASS] Canonical plaquette 0.5934 used as cited surface
 [PASS] u_0 = <P>^(1/4) ≈ 0.8777  --  computed 0.877681
 [PASS] alpha_LM = (1/(4π))/u_0 ≈ 0.09067  --  computed 0.090668
-[PASS] R(central) = R_base * 1.59 ≈ 5.481  --  computed 5.4767
+[PASS] R(central) = (31/9) * 1.59 = 1643/300 exactly  --  computed 1643/300
+[PASS] R(central) float ≈ 5.4767  --  computed 5.4767
 [PASS] C(central) ≈ 4.108e-17 GeV^-2  --  computed 4.1077e-17
 
 Section 5: central evaluation eta_pred(central)
@@ -120,7 +125,7 @@ Section 10: status discipline
 [PASS] Note does NOT use bare 'proposed_retained' or 'retained:' status language
 
 ========================================================================
-TOTAL: PASS=79 FAIL=0
+TOTAL: PASS=84 FAIL=0
 VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
 
 ----- stderr -----

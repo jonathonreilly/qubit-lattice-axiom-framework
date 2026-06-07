@@ -1,0 +1,19 @@
+loop: dm-eta-source-packet-boundary-20260607
+target_claim_id: dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: supplied P1-P7 packet boundary plus R(central) arithmetic repair
+files_touched:
+  - docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md
+  - scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py
+  - logs/runner-cache/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.txt
+open_imports:
+  - P1 freeze-out-bypass identity
+  - P2 m_DM = N_sites * v
+  - P3-P7 standard/candidate freeze-out packet
+runner_result: "TOTAL: PASS=84 FAIL=0"
+audit_files_touched: false
+next_exact_action: derive or register P1/P2 authority separately if wider closure is desired
+

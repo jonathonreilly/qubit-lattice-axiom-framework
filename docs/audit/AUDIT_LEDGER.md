@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1276 |
+| unaudited | 1275 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 65 |
+| ~~audited_conditional~~ | 66 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,21 +62,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1139 |
-| `audited_conditional` | 65 |
+| `audited_conditional` | 66 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1585 |
+| `unaudited` | 1584 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1349 |
 | `decoration` | 53 |
-| `meta` | 321 |
+| `meta` | 322 |
 | `no_go` | 318 |
 | `open_gate` | 136 |
-| `positive_theorem` | 762 |
+| `positive_theorem` | 761 |
 
 | criticality | count |
 |---|---:|
@@ -1327,6 +1327,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_generation_koide_stable_location_index_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `post_record_measure_weight_normalization_subdivision_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_stability_dynamics_selector_subdivision_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -14109,6 +14110,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** supplied finite carrier + supplied positive reference trace measure + supplied nonnegative source weights with positive total + exact Radon-Nikodym density => normalized source measure and trace/RN expectation identity  _(class `A`)_
 - **chain closes:** True — The finite algebra closes independently: for tau=(1/2,1/2) and mu=(1/4,3/4), dmu/dtau=(1/2,3/2), tau(rho)=1, and both expectations of f=(-1,1) equal 1/2. This proves only supplied finite RN/trace normalization, not physical reference-state selection, Born/source law derivation, or dial selection.
 - **rationale:** The load-bearing step is an algebraic finite-measure identity over supplied positive weights, not a numerical fit, external comparator check, or symbol renaming. The runner source performs exact Fraction arithmetic for normalization, absolute-continuity rejection, expectation equality, and RN density composition. Its row/anchor checks are cross-note bookkeeping, and the source note's explicit boundaries keep the audited claim within the supplied finite prototype.
+- **auditor confidence:** high
+
+### `post_record_stability_dynamics_selector_subdivision_2026-06-06`
+
+- **Note:** [`POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md`](../../docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Read-only audit-methodology claim that the current stability_or_dynamics_selector ledger bucket is split by keyword rules into 56 flow/thermal stability rows and 34 arrow/dynamics bridge rows, without applying verdicts or selecting dials.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-011535-a07aacc340-post_record_stability_dynami`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the current ledger snapshot, the stability/dynamics selector rows subdivide into 56 flow_or_thermal_stability rows and 34 arrow_or_dynamics_bridge rows, totaling 90.  _(class `A`)_
+- **chain closes:** False — The runner appears to compute the split from the audit ledger, but the restricted packet does not include the ledger rows or the dynamically imported selector/dial helper source that defines the parent bucket. The 56/34/90 table therefore cannot be independently checked from the packet.
+- **rationale:** The source note's quantitative table entries are 56, 34, and total 90, and the primary runner stdout reports those same counts with PASS=30 FAIL=0. The runner source is not merely printing constants; it reads the ledger and buckets rows, but its load-bearing parent-bucket selection is delegated to a dynamically imported helper whose full source is absent from the packet. Because the full ledger row set is also absent, runner PASS is not enough to independently verify the displayed subdivision.
 - **auditor confidence:** high
 
 ### `post_record_stable_kernel_count_audit_interface_2026-06-06`

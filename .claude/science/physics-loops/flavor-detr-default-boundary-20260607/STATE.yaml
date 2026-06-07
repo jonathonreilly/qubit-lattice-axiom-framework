@@ -1,0 +1,28 @@
+loop_slug: flavor-detr-default-boundary-20260607
+branch: physics-loop/flavor-detr-default-boundary-20260607
+base: origin/main
+started_at: 2026-06-07
+goal: >
+  Repair the audited conditional det_R/det_C flavor row by preserving the finite
+  algebraic locator while removing the unqualified Q=1 default overclaim.
+target_claim_id: flavor_detr_default_full_exercise_note_2026-05-30
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: conditional_default_boundary_repair
+files_touched:
+  - docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md
+  - scripts/flavor_detR_default_full_exercise_2026_05_30.py
+  - logs/runner-cache/flavor_detR_default_full_exercise_2026_05_30.txt
+imports_retired:
+  - unqualified Q=1 framework-default wording
+  - local untracked r/Q endpoint support
+open_imports:
+  - beta=0 tracial generation reference versus finite-beta Gibbs
+  - physical generation reference-state selection
+verification:
+  - command: PYTHONPATH=scripts python3 scripts/flavor_detR_default_full_exercise_2026_05_30.py
+    result: UPDATED SCORECARD PASS=6 FAIL=0
+pr_status: pending
+next_exact_action: Open review PR for this boundary repair.

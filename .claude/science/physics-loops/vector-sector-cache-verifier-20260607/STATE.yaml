@@ -1,0 +1,16 @@
+loop: vector-sector-cache-verifier-20260607
+goal: "Unblock the vector-sector circular-orbit timeout cache with a frozen full-harness verifier."
+target_status: exact-support
+current_status: packaged_for_review
+base: origin/main@fbf4dfbed
+branch: physics-loop/vector-sector-cache-verifier-20260607
+files_touched:
+  - scripts/vector_sector_circular_orbit.py
+  - docs/VECTOR_SECTOR_NOTE.md
+  - logs/runner-cache/vector_sector_circular_orbit.txt
+  - .claude/science/physics-loops/vector-sector-cache-verifier-20260607/
+open_imports: []
+trace_gate: direct_blocker_closure
+pr_status: pending
+next_exact_action: "Open review PR and hand to reviewer."
+stop_condition: "PR opened and verified."

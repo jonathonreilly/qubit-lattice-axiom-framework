@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1280 |
+| unaudited | 1279 |
 | meta | 308 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,21 +62,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1138 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1588 |
+| `unaudited` | 1587 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1349 |
 | `decoration` | 53 |
-| `meta` | 319 |
+| `meta` | 320 |
 | `no_go` | 318 |
 | `open_gate` | 136 |
-| `positive_theorem` | 764 |
+| `positive_theorem` | 763 |
 
 | criticality | count |
 |---|---:|
@@ -1324,6 +1324,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_dynamics_family_lift_closeout_index_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_generation_koide_stable_location_index_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `post_record_measure_weight_normalization_subdivision_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13996,6 +13997,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md`
   - `GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md`
   - `KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md`
+- **auditor confidence:** high
+
+### `post_record_measure_weight_normalization_subdivision_2026-06-06`
+
+- **Note:** [`POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Branch-local audit of the stated five-lane subdivision of the current measure_weight_normalization bucket and the finite supplied-weight normalization interface, excluding any selector authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-010337-11def4f449-post_record_measure_weight_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** This block subdivides the measure_weight_normalization sub-bucket from the selector/dial subdivision and adds the finite normalization certificate interface.  _(class `B`)_
+- **chain closes:** False — The finite normalization subclaim closes by finite-sum algebra: nonnegative weights divided by a positive total remain nonnegative and sum to one. The subdivision/count subclaim does not close from the restricted packet because it depends on the audit ledger and a dynamically imported selector/dial helper whose source and ledger slice are not provided.
+- **rationale:** The displayed lane-count arithmetic is internally consistent, since 15 + 6 + 9 + 7 + 7 = 44, and the supplied-weight normalization example is algebraically correct. However, the row classification and representative-row claims rely on docs/audit/data/audit_ledger.json and on prev.scoped, prev.ladder_bucket, and prev.selector_subbucket from the dynamically loaded selector/dial helper. Those artifacts are not available in full in the restricted packet, while the expected lane counts are hard-coded in the runner, so runner PASS cannot independently establish the full subdivision claim.
+- **open / conditional deps cited:**
+  - `POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md`
+  - `audit/data/audit_ledger.json`
+  - `scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py`
 - **auditor confidence:** high
 
 ### `post_record_model_selection_firewall_2026-06-06`

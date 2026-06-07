@@ -1,0 +1,24 @@
+loop_slug: signed-gravity-aps-boundary-cache-repair
+date: 2026-06-07
+branch: physics-loop/signed-gravity-aps-boundary-cache-repair-20260607
+base: origin/main
+target_claim_id: signed_gravity_aps_locked_source_action_proposal_note
+actual_current_surface_status: demotion
+conditional_surface_status: open_gate proposed-extension boundary
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: refresh the existing open-gate boundary repair checker/cache
+files_touched:
+  - scripts/signed_gravity_aps_source_action_boundary_repair.py
+  - logs/runner-cache/signed_gravity_aps_source_action_boundary_repair.txt
+  - .claude/science/physics-loops/signed-gravity-aps-boundary-cache-repair/*
+checks:
+  - python3 scripts/signed_gravity_aps_locked_source_action_proposal.py
+  - python3 scripts/signed_gravity_aps_source_action_boundary_repair.py
+  - python3 scripts/cached_runner_output.py scripts/signed_gravity_aps_source_action_boundary_repair.py --refresh
+open_imports:
+  - derivation of S_int = -chi_eta M_phys <rho,Phi> from current APS/Wald/Gauss structure
+  - protected eta-sector superselection under admissible boundary dynamics
+  - energy-stability/no-runaway argument for opposite active signs with positive inertial mass
+next_exact_action: reviewer should decide whether this cache repair is enough to requeue the row as an explicit open_gate boundary, while leaving positive signed-gravity closure blocked
+stop_condition: PR opened for this coherent cache/boundary repair block

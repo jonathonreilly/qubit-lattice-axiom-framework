@@ -1,0 +1,30 @@
+loop_slug: mass-yukawa-holomorphy-selector-20260607
+date: 2026-06-07
+branch: physics-loop/mass-yukawa-holomorphy-selector-20260607
+base: origin/main
+current_goal: "Attack the fifth chirality-resolution target: can the current mass/Yukawa fluctuation determinant force holomorphic det_C?"
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: current_mass_yukawa_determinant_functor_selector
+cycle_count: 1
+block_count: 1
+hard_residual: "A physical action/polarization theorem must choose the holomorphic/Pfaffian field module."
+files_touched:
+  - docs/MASS_YUKAWA_HOLOMORPHIC_DETERMINANT_SELECTOR_NO_GO_NOTE_2026-06-07.md
+  - scripts/frontier_mass_yukawa_holomorphic_determinant_selector_no_go_2026_06_07.py
+  - logs/runner-cache/frontier_mass_yukawa_holomorphic_determinant_selector_no_go_2026_06_07.txt
+  - .claude/science/physics-loops/mass-yukawa-holomorphy-selector-20260607/
+open_imports:
+  - "Physical holomorphic/Pfaffian action-family selection for the generation fluctuation."
+  - "Staggered-Dirac mass/Yukawa realization if used to derive that action family."
+  - "Rooted spin-generation entanglement if used to change the field module."
+no_go_routes:
+  - "Current determinant functor alone selects det_C over det_R."
+runner_result: "PASS=21 FAIL=0"
+review_loop_disposition: pass
+audit_results_modified: false
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3142"
+next_exact_action: "Pivot to rooted spin-generation entanglement or T-odd K-reality origin."
+stop_condition: "Route 5 pruned; next route is rooted spin-generation entanglement or T-odd K-reality origin."

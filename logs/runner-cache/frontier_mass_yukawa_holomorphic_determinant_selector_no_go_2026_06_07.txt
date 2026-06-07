@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_mass_yukawa_holomorphic_determinant_selector_no_go_2026_06_07.py
+runner_sha256: 190779be2c953daecc76272de7725bf67a86cfdab02a3bbc3fa1fe58f85c5734
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.27
+status: ok
+----- stdout -----
+[PASS] J is a complex structure on the real doublet
+[PASS] J is antisymmetric
+[PASS] complex multiplication L commutes with J
+[PASS] real determinant equals complex determinant norm squared :: det_R=u**2 + v**2
+[PASS] det_R is multiplicative
+[PASS] det_C is multiplicative
+[PASS] real/vector doublet count gives r=1 :: r_vector=1
+[PASS] holomorphic/chiral doublet count gives r=1/2 :: r_holomorphic=1/2
+[PASS] statistics alone does not choose the count :: cells={'real_gaussian': ('real', 2, 1), 'majorana_berezin': ('real', 2, 1), 'holomorphic_gaussian': ('holomorphic', 1, 1/2), 'holomorphic_berezin': ('holomorphic', 1, 1/2)}
+[PASS] Pfaffian square equals determinant for the real two-mode antisymmetric form :: pf=m, det=m**2
+[PASS] using a Pfaffian requires choosing the antisymmetric bilinear mJ
+[PASS] K/CPT conjugation fixes det_R
+[PASS] K/CPT conjugation conjugates det_C
+[PASS] positive real slice still has exponent ambiguity
+[PASS] same carrier permits both determinant exponents :: exponent 1=det_C, exponent 2=det_R
+[PASS] J existence alone leaves both exponents open
+[PASS] C3 centrality alone leaves both exponents open
+[PASS] K/CPT realification points to real count, not holomorphic forcing
+[PASS] Gaussian versus Berezin statistics does not decide the exponent
+[PASS] physical action family is the missing selector
+[PASS] current determinant data expose a fork rather than selecting holomorphy :: native_data={'det_relation': 0, 'r_vector': 1, 'r_holomorphic': 1/2, 'K_det_R': 0, 'K_det_C': 0}
+SCORECARD: PASS=21 FAIL=0
+
+----- stderr -----
+

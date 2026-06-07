@@ -1,0 +1,30 @@
+loop_slug: generation-periodic-mediator-bridge-20260607
+branch: physics-loop/generation-periodic-mediator-bridge-20260607
+base: origin/main
+target_claim_id: generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06
+target_status: exact-support
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: derive periodic plane-wave density-density mediator kernel and normalization
+hard_residual_attacked: bridge from retained bounded open-cubic mediator to periodic translation-invariant plane-wave density-density kernel
+files_touched:
+  - docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md
+  - scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py
+  - logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt
+  - docs/GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/generation_localization_corner_protected_delta_runner.py
+  - logs/runner-cache/generation_localization_corner_protected_delta_runner.txt
+  - .claude/science/physics-loops/generation-periodic-mediator-bridge-20260607/
+open_imports:
+  - independent audit must decide whether the periodic bridge can serve as retained authority
+  - physical values of G, mu2, and effective volume remain open
+no_go_routes:
+  - claiming the retained bounded open-cubic force channel already proves the periodic plane-wave formula without a bridge
+  - pinning magnitude or any flavor value
+  - editing audit ledger/status files
+trace_gate_classification: direct_blocker_closure
+review_disposition: local pass; external review-loop still required
+pr_status: pending
+next_exact_action: commit, push, open review PR, then continue scanning
+stop_condition: PR opened and refreshed queue has no further tractable repair

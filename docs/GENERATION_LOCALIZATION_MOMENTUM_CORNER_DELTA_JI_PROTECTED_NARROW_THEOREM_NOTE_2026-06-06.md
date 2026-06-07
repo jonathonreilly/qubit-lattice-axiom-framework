@@ -28,6 +28,35 @@ retained
 [`STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11`](STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11.md)
 (`retained_bounded`).
 
+## 2026-06-07 periodic plane-wave mediator bridge repair
+
+The 2026-06-07 conditional audit says the arithmetic is consistent but the
+dependency edge is not yet closed: the cited mediator authority is a
+retained-bounded open-cubic force-channel result, while this note uses a
+periodic translation-invariant plane-wave density-density kernel and its
+normalization.
+
+Generation periodic plane-wave density-kernel bridge:
+
+- Bridge note:
+  [`docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md`](GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md)
+- Bridge runner:
+  [`scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py`](../scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py)
+- Bridge cache:
+  [`logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt`](../logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt)
+
+That bridge proves the finite periodic torus facts used here: normalized
+plane waves diagonalize the periodic Laplacian, the finite mediator
+`V_L=-G(Delta+mu^2 I)^-1` has eigenvalue
+`Vq(q)=-G/(eps(q)+mu^2)`, and the two-plane-wave density-density Slater
+matrix element is exactly
+`delta(k,l)=(Vq(0)-Vq(k-l))/N`. The `1/N` factor is the finite-volume
+plane-wave normalization, not a fitted convention.
+
+This is a bridge packet for independent re-audit. It does not mark the
+bridge retained, does not pin `|delta|`, does not identify the physical
+values of `G`, `mu^2`, or `N`, and does not force any flavor value.
+
 ## Safe statement
 
 Because the generations are momentum corners, `delta` is **not** a propagator evaluated at a

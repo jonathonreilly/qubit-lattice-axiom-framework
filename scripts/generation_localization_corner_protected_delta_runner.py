@@ -34,7 +34,42 @@ element is exact arithmetic.
 """
 
 from __future__ import annotations
+from pathlib import Path
+import hashlib
 import numpy as np
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md"
+BRIDGE_PACKET_PATHS = [
+    "docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md",
+    "scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py",
+    "logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt",
+]
+SOURCE_MARKERS = {
+    "docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md": [
+        "V_L = -G (Delta + mu^2 I)^(-1)",
+        "delta(k,l) = <rho_k, V_L rho_l>",
+        "`1/N` factor is not fitted",
+        "does not pin the physical magnitude",
+        "No new axiom is introduced",
+    ],
+    "scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py": [
+        "GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE",
+        "Hartree term equals Vq(0)/N",
+        "Fock term equals Vq(k_j-k_i)/N",
+        "TOTAL: PASS=",
+    ],
+}
+CACHE_TO_RUNNER = {
+    "logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt": (
+        "scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py",
+        [
+            "TOTAL: PASS=27 FAIL=0",
+            "Hartree term equals Vq(0)/N",
+            "all three pair deltas are equal and negative",
+        ],
+    )
+}
 
 PASS = 0
 FAIL = 0
@@ -49,6 +84,65 @@ def check(name, condition, detail=""):
     if detail:
         line += f"  ({detail})"
     print(line)
+
+
+def section(title: str) -> None:
+    print("\n-- " + title + " --")
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def parse_cache_header(cache_path: Path) -> dict[str, str]:
+    text = cache_path.read_text(encoding="utf-8", errors="replace")
+    header, _, _stdout = text.partition("----- stdout -----")
+    fields: dict[str, str] = {"_text": text}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        fields[key.strip()] = value.strip()
+    return fields
+
+
+def bridge_packet_checks() -> None:
+    section("(5) periodic plane-wave density-kernel bridge packet")
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    for rel_path in BRIDGE_PACKET_PATHS:
+        path = ROOT / rel_path
+        check(f"bridge packet path exists: {rel_path}", path.exists())
+        check(f"parent note links bridge packet path: {rel_path}", rel_path in note_text)
+
+    for rel_path, markers in SOURCE_MARKERS.items():
+        source = (ROOT / rel_path).read_text(encoding="utf-8")
+        for marker in markers:
+            check(f"bridge source marker present: {rel_path}", marker in source, detail=marker)
+
+    for cache_rel, (runner_rel, snippets) in CACHE_TO_RUNNER.items():
+        header = parse_cache_header(ROOT / cache_rel)
+        current_sha = sha256_file(ROOT / runner_rel)
+        check(
+            f"bridge cache runner matches source: {cache_rel}",
+            header.get("runner") == runner_rel,
+            detail=runner_rel,
+        )
+        check(
+            f"bridge cache SHA fresh: {cache_rel}",
+            header.get("runner_sha256") == current_sha,
+            detail=f"{header.get('runner_sha256')} == {current_sha}",
+        )
+        check(
+            f"bridge cache exits cleanly: {cache_rel}",
+            header.get("exit_code") == "0" and header.get("status") == "ok",
+            detail=f"exit_code={header.get('exit_code')} status={header.get('status')}",
+        )
+        for snippet in snippets:
+            check(f"bridge cache contains marker: {cache_rel}", snippet in header["_text"], detail=snippet)
 
 
 G, MU2 = 50.0, 0.001
@@ -150,6 +244,8 @@ def main() -> int:
     check("the q=0 monopole carries essentially all of |delta| (corner structure fixes the FORM "
           "and SIGN, the IR scale fixes the magnitude)", hartree_frac > 0.999,
           detail=f"Hartree fraction of |delta| = {hartree_frac:.5f}")
+
+    bridge_packet_checks()
 
     print("\n" + "=" * 78)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

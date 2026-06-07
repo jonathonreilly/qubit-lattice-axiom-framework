@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/generation_localization_corner_protected_delta_runner.py
-runner_sha256: dc7984c710bffd58aa49310161fb8c16d5f84bc136da8a9d190e3ef3d36dc9d2
+runner_sha256: 8fb775359479564faed93a39bfdee156b0efd4a908d53cfc3454d89e401209f3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -25,8 +25,31 @@ GENERATION LOCALIZATION = momentum corners: J-I corner-protected; delta<0; |delt
   [PASS] |delta| scales as 1/N (the q=0 Hartree monopole -G/(N mu^2) dominates; the corner Fock part ~G/(8N) is subleading) => the magnitude is set by the mediator IR scale (G, mu^2), NOT by a localization distance => stays open, wide-window robust  (|delta|*N (const over L) = 49993.751; Fock/Hartree ~ mu^2/8 = 1.25e-04)
   [PASS] the q=0 monopole carries essentially all of |delta| (corner structure fixes the FORM and SIGN, the IR scale fixes the magnitude)  (Hartree fraction of |delta| = 1.00013)
 
+-- (5) periodic plane-wave density-kernel bridge packet --
+  [PASS] bridge packet path exists: docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md
+  [PASS] parent note links bridge packet path: docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md
+  [PASS] bridge packet path exists: scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py
+  [PASS] parent note links bridge packet path: scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py
+  [PASS] bridge packet path exists: logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt
+  [PASS] parent note links bridge packet path: logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt
+  [PASS] bridge source marker present: docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md  (V_L = -G (Delta + mu^2 I)^(-1))
+  [PASS] bridge source marker present: docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md  (delta(k,l) = <rho_k, V_L rho_l>)
+  [PASS] bridge source marker present: docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md  (`1/N` factor is not fitted)
+  [PASS] bridge source marker present: docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md  (does not pin the physical magnitude)
+  [PASS] bridge source marker present: docs/GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE_NOTE_2026-06-07.md  (No new axiom is introduced)
+  [PASS] bridge source marker present: scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py  (GENERATION_PERIODIC_PLANE_WAVE_DENSITY_KERNEL_BRIDGE)
+  [PASS] bridge source marker present: scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py  (Hartree term equals Vq(0)/N)
+  [PASS] bridge source marker present: scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py  (Fock term equals Vq(k_j-k_i)/N)
+  [PASS] bridge source marker present: scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py  (TOTAL: PASS=)
+  [PASS] bridge cache runner matches source: logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt  (scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py)
+  [PASS] bridge cache SHA fresh: logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt  (48a22b25510d3ca5fae6a35a88702489332e2d024239d060f452c77a4016aac0 == 48a22b25510d3ca5fae6a35a88702489332e2d024239d060f452c77a4016aac0)
+  [PASS] bridge cache exits cleanly: logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt  (exit_code=0 status=ok)
+  [PASS] bridge cache contains marker: logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt  (TOTAL: PASS=27 FAIL=0)
+  [PASS] bridge cache contains marker: logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt  (Hartree term equals Vq(0)/N)
+  [PASS] bridge cache contains marker: logs/runner-cache/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.txt  (all three pair deltas are equal and negative)
+
 ==============================================================================
-TOTAL: PASS=7 FAIL=0
+TOTAL: PASS=28 FAIL=0
 VERDICT: the generation 'localization' is the retained momentum-corner structure (no spatial separation). The three corners' equal inter-transfer eps(Δk)=8 protects the exact C3 (J-I) form by cubic corner symmetry; the two-fermion mutual energy is delta<0 (sign re-confirmed from the momentum picture); and |delta| is dominated by the q=0 mediator monopole (~1/(N mu^2)) -- so the magnitude reduces to the mediator IR scale, NOT to the localization, and stays open (wide-window robust).
 
 ----- stderr -----

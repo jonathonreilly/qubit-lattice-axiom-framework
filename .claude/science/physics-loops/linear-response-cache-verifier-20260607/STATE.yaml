@@ -1,0 +1,16 @@
+loop_slug: linear-response-cache-verifier-20260607
+branch: physics-loop/linear-response-cache-verifier-20260607
+base: origin/main
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: frozen_log_verifier
+files_touched:
+  - docs/LINEAR_RESPONSE_DERIVATION_NOTE.md
+  - scripts/linear_response_derivation.py
+  - logs/runner-cache/linear_response_derivation.txt
+claim_boundary: "Open-gate heuristic metrics only; no retained theorem or literal Kubo closure."
+verification:
+  - "python3 scripts/cached_runner_output.py --check-only scripts/linear_response_derivation.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/linear_response_derivation.py --check-only --allow-non-main"
+next_exact_action: "Review PR; if accepted, the row has an audit-compatible verifier cache instead of a timeout cache."

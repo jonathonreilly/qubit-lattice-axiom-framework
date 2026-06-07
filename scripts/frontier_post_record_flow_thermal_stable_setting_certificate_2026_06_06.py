@@ -8,15 +8,15 @@ from dataclasses import dataclass
 from fractions import Fraction
 from pathlib import Path
 import hashlib
-import importlib.util
 import json
 import re
 import sys
 
+import frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06 as prev
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-PREV = ROOT / "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py"
+SLICE = ROOT / "outputs/post_record_flow_thermal_stable_setting_slice_2026_06_07.json"
 PASS = 0
 FAIL = 0
 
@@ -42,11 +42,11 @@ GENERATION_KOIDE_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "bounded_obstruction_or_no_selection": 16,
+    "bounded_obstruction_or_no_selection": 18,
     "flow_or_records_stable_feature": 3,
     "generation_or_koide_stable_feature": 4,
-    "generic_stable_feature": 15,
-    "thermal_or_score_stable_feature": 18,
+    "generic_stable_feature": 14,
+    "thermal_or_score_stable_feature": 21,
 }
 EXPECTED_FLOW_THERMAL_ROWS = sum(EXPECTED_LANE_COUNTS.values())
 
@@ -58,18 +58,6 @@ class StabilityEvidence:
     supplied_stability_predicate: bool = False
     exact_check: bool = False
     selector_rule: bool = False
-
-
-def load_previous():
-    spec = importlib.util.spec_from_file_location("stability_subdivision", PREV)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot load {PREV}")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
-
-
-prev = load_previous()
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -153,6 +141,7 @@ def source_anchor_checks() -> None:
             "stable location on the dial is",
             "Does not select or force a generation/Koide dial location",
             "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
+            "outputs/post_record_flow_thermal_stable_setting_slice_2026_06_07.json",
         ],
     )
     require_text(
@@ -166,7 +155,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "stability_or_dynamics_selector` | 90",
+            "stability_or_dynamics_selector` | 97",
             "stable settings into selected dials",
             "Does not turn stable settings into selected dials.",
         ],
@@ -248,6 +237,26 @@ def stable_lane(row: dict) -> str:
     return "generic_stable_feature"
 
 
+def export_row(row: dict, lane: str) -> dict:
+    return {
+        "claim_id": row.get("claim_id"),
+        "audit_status": row.get("audit_status"),
+        "effective_status": row.get("effective_status"),
+        "claim_type": row.get("claim_type"),
+        "note_path": row.get("note_path"),
+        "runner_path": row.get("runner_path"),
+        "stable_setting_lane": lane,
+    }
+
+
+def expected_export_rows(buckets: dict[str, list[dict]]) -> list[dict]:
+    exported: list[dict] = []
+    for lane in sorted(buckets):
+        for row in sorted(buckets[lane], key=lambda item: item.get("claim_id") or ""):
+            exported.append(export_row(row, lane))
+    return exported
+
+
 def flow_thermal_rows() -> list[dict]:
     rows = list(json.loads(LEDGER.read_text())["rows"].values())
     return [
@@ -302,7 +311,23 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
                 + f"{row.get('note_path')}"
             )
         print()
+    export_checks(buckets, counts, before)
     return rows, counts
+
+
+def export_checks(buckets: dict[str, list[dict]], counts: Counter[str], ledger_sha: str) -> None:
+    section("Bounded ledger-row export checks")
+    report("bounded flow/thermal row export exists", SLICE.exists(), str(SLICE.relative_to(ROOT)))
+    if not SLICE.exists():
+        return
+
+    data = json.loads(SLICE.read_text(encoding="utf-8"))
+    expected_rows = expected_export_rows(buckets)
+    report("slice export is for the flow/thermal stability bucket", data.get("bucket") == "flow_or_thermal_stability")
+    report("slice export records current ledger sha", data.get("ledger_sha256") == ledger_sha, data.get("ledger_sha256", ""))
+    report("slice export row count matches current split", data.get("row_count") == EXPECTED_FLOW_THERMAL_ROWS, str(data.get("row_count")))
+    report("slice export lane counts match current split", data.get("lane_counts") == dict(counts), str(data.get("lane_counts")))
+    report("slice export rows match independently enumerated regex split", data.get("rows") == expected_rows)
 
 
 def firewall_checks() -> None:

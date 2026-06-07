@@ -1,0 +1,36 @@
+loop_slug: post-record-flow-thermal-packet
+date: 2026-06-07
+mode: science-fix
+target_status: exact-support
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+target_claim_id: post_record_flow_thermal_stable_setting_certificate_2026-06-06
+target_blocker_text: "runner_artifact_issue include scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py and its transitive helpers, if any, in the restricted packet, then re-audit the current row-map computation."
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: runner_certificate
+stacked_on: physics-loop/post-record-stability-packet-20260607
+cycle_count: 1
+active_route: static helper graph plus bounded flow/thermal row-slice export
+files_touched:
+  - docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md
+  - scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt
+  - outputs/post_record_flow_thermal_stable_setting_slice_2026_06_07.json
+open_imports:
+  - physical selector/dial authority remains out of scope
+  - physical flow/score/thermal rule derivation from Record remains out of scope
+closed_or_reduced_imports:
+  - target runner now statically exposes the stability helper and transitive selector helper
+  - target runner verifies the current 60-row bounded flow/thermal export
+checks:
+  - command: python3 scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py
+    result: SUMMARY PASS=55 FAIL=0
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py,scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py,scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py --check-only --push-mode=none
+    result: all relevant caches fresh
+  - command: git diff -- docs/audit | wc -c
+    result: "0"
+review_disposition: pass_for_scope
+pr_status: pending
+next_exact_action: "Pick one retained-positive candidate from the 60-row flow/thermal slice and try to derive the supplied flow/score/thermal rule from retained premises."
+stop_condition: "This block is complete when pushed as a stacked review PR."

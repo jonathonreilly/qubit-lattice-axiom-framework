@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py
+runner_sha256: 7cc45064269182e574ea9b2294bdac3f31cdc2b12649b1e8fdec02853af909b1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+PASS T1 taste-cube V_sel = 32 sum_{i<j} phi^2 phi^2 (axis-selector)
+PASS T1b taste-cube Hessian at e_1 = diag(0,64,64) (m_perp=32, anisotropic)
+PASS T2 Dirac Higgs M^2 = |phi|^2 I (retained dirac_bridge)
+PASS T2b Dirac V_sel = (3/2)|phi|^4 (rotationally invariant, NO axis-selector)
+PASS T2c Dirac V_sel Hessian at e_1 = diag(18,6,6) (ISOTROPIC transverse, no distinguished 32)
+PASS T3 every even invariant Tr M^{2n} = 2|phi|^{2n} (function of |phi|^2 only; no axis-selector)
+PASS T4 taste-cube V_sel(axis)=0 but V_sel(non-axis)!=0 (genuine axis-selector)
+PASS T4b Dirac V_sel(non-axis)=V_sel(same-|phi| axis) (rotation-blind, NO selector)
+
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

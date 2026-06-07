@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 718 |
+| **retained_bounded** | 719 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1301 |
+| unaudited | 1300 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,22 +61,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1131 |
+| `audited_clean` | 1132 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1608 |
+| `unaudited` | 1607 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1349 |
+| `bounded_theorem` | 1350 |
 | `decoration` | 53 |
 | `meta` | 315 |
 | `no_go` | 318 |
 | `open_gate` | 136 |
-| `positive_theorem` | 768 |
+| `positive_theorem` | 767 |
 
 | criticality | count |
 |---|---:|
@@ -412,6 +412,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5772,6 +5773,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** If a physical charge U(1) acts as a scalar on the generation triplet, it commutes with C and cannot orient the generation doublet or select the det_C reading.  _(class `A`)_
 - **chain closes:** True — The scalar action is central, so [iI,C]=0 and it supplies no orientation of the generation doublet. Independently, (exp(i alpha)C)^3=exp(3i alpha)I, so order three allows only alpha=0,2pi/3,4pi/3 modulo 2pi.
 - **rationale:** The load-bearing route-pruning statement is a direct algebraic identity about scalar matrices and the C3 order condition, not a definition substitution or numerical fit. The runner source actually computes the spectral endpoint, commutator, and order-three rephasing obstruction, while the charged-sector and neutrino values are correctly bounded as empirical comparators rather than promoted to selectors. The packet explicitly does not claim that physical Standard Model gauge U(1) actions are generation-scalar or that a physical det_C/det_R selector has been derived.
+- **auditor confidence:** high
+
+### `flavor_carrier_not_derived_two_inputs_2026-05-31`
+
+- **Note:** [`FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md`](../../docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded finite C3 route-pruning claim that 2/9 is not a bare character, that the determinant-denominator doublet weight gives 2/9, and that C3 equivariance alone leaves r unselected.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-001551-502da554b0-flavor_carrier_not_derived_t`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A finite C3 triplet has bare characters 1 on the singlet, omega+omega^2=-1 on the doublet, and 1+omega+omega^2=0 on the full triplet, so none equals 2/9, while L_3(1,2)=(1/3) sum_{k=1,2} 1/((omega^k-1)(omega^{2k}-1))=2/9 comes only from the determinant denominator.  _(class `A`)_
+- **chain closes:** True — The finite character identities and determinant-denominator sum close by direct algebra: omega+omega^2=-1, 1+omega+omega^2=0, and each two-eigenvalue denominator term equals 1/3. The circulant equivariant form also leaves b, hence r=|b|^2/a^2, freely choosable.
+- **rationale:** The audited claim is deliberately narrow and does not assert physical carrier derivation, basepoint selection, or the old two-input theorem. The displayed finite identities check independently of the runner: the bare characters are 1, -1, and 0, while the determinant-denominator average is 2/9. The cited upstream note is retained_no_go and is used only as a bookkeeping dependency, not as an open bridge needed for this finite route-pruning result.
 - **auditor confidence:** high
 
 ### `flavor_center_trace_closed_capstone_note_2026-05-30`

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 201 |
+| **retained** | 202 |
 | **retained_no_go** | 215 |
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1277 |
+| unaudited | 1276 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1138 |
+| `audited_clean` | 1139 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1586 |
+| `unaudited` | 1585 |
 
 | claim_type | count |
 |---|---:|
@@ -937,6 +937,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_model_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selection_rule_target_vector_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_source_measure_trace_normalization_prototype_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stable_kernel_count_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stable_kernel_expected_frequency_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_concentration_certificate_interface_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -14095,6 +14096,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The independent formula inventory agrees with the runner's finite algebraic checks: the normalizations, SPD determinant test, and quadratic evaluation are exact over the supplied rational inputs. These are class-A checks over supplied objects, not a first-principles class-C construction from the framework baseline. The note explicitly imports a supplied tangent/readout carrier, metric or Hessian, readout/projection weights, and selector context, while also stating that selector authority, Born law, physical measure, and Record-derived readout remain open. The row-bucket coverage also depends on the measure-subdivision support path, so the packet supports conditional supplied-weight semantics rather than an audited-clean positive theorem.
 - **open / conditional deps cited:**
   - `POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`
+- **auditor confidence:** high
+
+### `post_record_source_measure_trace_normalization_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite supplied source/reference measure algebra: normalization, pointwise RN density, expectation identity, density composition, and no selector or physical-measure implication.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-011309-5b8c805c3a-post_record_source_measure_t`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** supplied finite carrier + supplied positive reference trace measure + supplied nonnegative source weights with positive total + exact Radon-Nikodym density => normalized source measure and trace/RN expectation identity  _(class `A`)_
+- **chain closes:** True — The finite algebra closes independently: for tau=(1/2,1/2) and mu=(1/4,3/4), dmu/dtau=(1/2,3/2), tau(rho)=1, and both expectations of f=(-1,1) equal 1/2. This proves only supplied finite RN/trace normalization, not physical reference-state selection, Born/source law derivation, or dial selection.
+- **rationale:** The load-bearing step is an algebraic finite-measure identity over supplied positive weights, not a numerical fit, external comparator check, or symbol renaming. The runner source performs exact Fraction arithmetic for normalization, absolute-continuity rejection, expectation equality, and RN density composition. Its row/anchor checks are cross-note bookkeeping, and the source note's explicit boundaries keep the audited claim within the supplied finite prototype.
 - **auditor confidence:** high
 
 ### `post_record_stable_kernel_count_audit_interface_2026-06-06`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 741 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1298 |
+| unaudited | 1297 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 31 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1161 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 31 |
-| `unaudited` | 1609 |
+| `unaudited` | 1608 |
 
 | claim_type | count |
 |---|---:|
@@ -1329,6 +1329,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `valley_linear_wide_tail_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wide_lattice_h2t_distance_law_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -17485,6 +17486,21 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Native teleportation closure is explicitly left open because scaling, apparatus, bath/leakage/noise, and physical-control derivations are missing.  _(class `E`)_
 - **chain closes:** True — The note closes only as an open-gate status statement: it explicitly withholds nature-grade closure and lists the missing resource-genesis, apparatus, noise, scaling, and control derivations. It does not close an unconditional teleportation theorem.
 - **rationale:** The load-bearing move is a status definition/admission rather than a first-principles derivation. The runner verifies simple XOR and Manhattan arithmetic and hard-coded finite evidence thresholds, while explicitly stating it is not a physics simulation and holding native resource genesis open. Because the audited claim is an open-gate planning artifact, this does not fail the note, but it is not clean theorem closure.
+- **auditor confidence:** high
+
+### `teleportation_native_transport_theory_note`
+
+- **Note:** [`TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md`](../../docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the bounded algebraic consistency of the native transport note's Pauli-frame connection, base/fiber separation, causal-record bookkeeping, loop holonomy, and hidden-branch dephasing claims, not a physical native teleportation implementation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-191527-a073c7478d-teleportation_native_transpo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Bob corrections and Bell-frame updates act in the retained fiber algebra while conserved support, charge, mass, energy, and apparatus records live in the base ledger, with admissibility requiring [C_B, L] = 0 and Pauli-frame corrections k = c xor h.  _(class `A`)_
+- **chain closes:** False — The formal Pauli-frame and RALA algebra consequences close, but the full candidate transport theory does not: the packet explicitly leaves the native Bell-resource derivation, durable record carrier, apparatus, noise model, conservation ledgers, loop bookkeeping implementation, and preparation curvature open.
+- **rationale:** The runner genuinely computes algebraic consistency checks for Z2 x Z2 Pauli frames, twirling, multi-hop xor composition, causal delivery arithmetic, ledger commutation, loop holonomy detection, and branch dephasing; these are class A checks, not first-principles physical derivations. The cited RALA authority is retained_bounded and supports T1/T2 algebraic content, but it also explicitly states that T3, T4, T5, and T6 need physical content beyond RALA. Because the source note itself is an open-gate candidate theory and imports unresolved record, apparatus, preparation, and conservation assumptions, the chain does not close to an unconditional retained transport theory.
+- **open / conditional deps cited:**
+  - `TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md`
 - **auditor confidence:** high
 
 ### `teleportation_no_signaling_audit`

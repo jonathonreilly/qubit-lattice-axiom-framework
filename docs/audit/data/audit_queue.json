@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 319,
     "high": 257,
-    "leaf": 367,
+    "leaf": 366,
     "medium": 357
   },
   "cycle_break_target_count": 13,
@@ -28723,30 +28723,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "teleportation_native_transport_theory_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "teleportation_retained_axis_operator_algebra_closure_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_teleportation_transport_invariants.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -39502,6 +39478,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 7,
-  "total_pending": 1300
+  "ready_count": 6,
+  "total_pending": 1299
 }

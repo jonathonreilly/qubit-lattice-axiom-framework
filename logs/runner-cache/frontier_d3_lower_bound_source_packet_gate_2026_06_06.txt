@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py
-runner_sha256: 522a786c191016378f0061baf27db7e670fc94384f21c3e510fb5c622ce5fa20
+runner_sha256: 2f03cb51ed5f62c31174f1ec52706321f521a86456fb0008796d96eaa233d9cc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 D3 lower-bound source-packet audit gate
@@ -20,8 +20,8 @@ A. ledger and active-queue status
 [PASS] ledger row exists: dimension_selection_note
 [PASS] finite-k sign bridge is audited clean retained_bounded -- audit=audited_clean effective=retained_bounded
 [PASS] lower-bound V2 sign row is audited clean retained_bounded -- audit=audited_clean effective=retained_bounded
-[PASS] parent row remains conditional only on runner artifact issue -- runner_artifact_issue: include the finite-k bridge runner source, original dimension runner source/cache, and source-packet verifier output so the displayed beta, I_3, and sign computations can be independently inspected.
-[PASS] parent row does not claim unique d=3 or baseline rewrite -- Finite-runner lower-bound support for the stated d = 1..5 propagator-plus-Poisson runner surface: d = 1,2 fail and d = 3,4,5 pass the runner criteria; no unique-d = 3 theorem or framework-baseline rewrite.
+[PASS] parent row remains conditional only on runner artifact issue -- runner_artifact_issue: include scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py, scripts/frontier_dimension_selection.py, logs/runner-cache/frontier_dimension_selection.txt, and the source-packet verifier/cache so the finite-k replay and displayed beta/I_3 table can be checked from code.
+[PASS] parent row does not claim unique d=3 or baseline rewrite -- Finite-runner lower-bound support only: d=1,2 fail and d=3,4,5 pass the stated runner criteria under the displayed finite propagator and potential-family surface, with no unique-d=3 or baseline-rewrite claim.
 B. source-packet artifact issue
 [PASS] required packet path exists: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
 [PASS] parent note links packet path: scripts/frontier_dimension_selection_lower_bound_parent_repair.py

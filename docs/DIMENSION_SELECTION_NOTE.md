@@ -8,6 +8,8 @@ repair.
 **Source packet verifier:** `scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py`
 **Source packet verifier cache:** `logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt`
 **Source packet verifier output:** `outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json`
+**Source packet audit gate:** `scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py`
+**Source packet audit-gate cache:** `logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt`
 
 ## 2026-05-27 Scope Repair
 
@@ -56,6 +58,18 @@ table and printed `alpha` values, that the bridge cache reports
 `SUMMARY: PASS=56 FAIL=0`, and that all runner caches match the current source
 SHA. This does not set an audit verdict; its generated JSON is a disposable
 runner output.
+
+The source-packet audit gate
+`scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py` checks the
+same packet against the current audit-row blocker and now accepts the current
+ledger boundary wording, `no unique-d=3 or baseline-rewrite claim`. Its cache
+reports:
+
+```text
+SCORECARD: PASS=58 FAIL=0
+VERDICT: exact support that the current-main source packet exposes the artifacts
+named by the parent D3 lower-bound runner-artifact issue.
+```
 
 ## Answer
 
@@ -149,6 +163,7 @@ Run:
 ```bash
 python3 scripts/frontier_dimension_selection_lower_bound_parent_repair.py
 python3 scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py
+python3 scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py
 ```
 
 Expected summary:
@@ -156,4 +171,5 @@ Expected summary:
 ```text
 SUMMARY: PASS=26 FAIL=0
 SUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=... FAIL=0
+SCORECARD: PASS=58 FAIL=0
 ```

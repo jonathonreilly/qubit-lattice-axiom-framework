@@ -130,7 +130,10 @@ def run_active_queue_and_status_checks(rows: dict[str, dict[str, Any]]) -> None:
     )
     check(
         "parent row does not claim unique d=3 or baseline rewrite",
-        "no unique-d = 3 theorem or framework-baseline rewrite" in str(parent.get("claim_scope", "")),
+        (
+            "no unique-d = 3 theorem or framework-baseline rewrite" in str(parent.get("claim_scope", ""))
+            or "no unique-d=3 or baseline-rewrite claim" in str(parent.get("claim_scope", ""))
+        ),
         parent.get("claim_scope", ""),
     )
 

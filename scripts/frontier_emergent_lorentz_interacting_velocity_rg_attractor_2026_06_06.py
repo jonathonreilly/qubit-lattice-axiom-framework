@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 r"""
 Interacting emergent Lorentz: the velocity anisotropy c_t/c_s is an ATTRACTIVE IR
-fixed point, and the framework reduces Collins' 2-parameter naturalness gate to ONE
-IR-attractive, hierarchy-suppressed number
+fixed point in the supplied one-loop model, and Collins' 2-parameter
+naturalness gate reduces to ONE conditional scalar
 =================================================================================
 
 This is a standalone bounded packet for the INTERACTING radiative-naturalness
@@ -41,16 +41,15 @@ Three results (free + structural; loop coefficients at the standard one-loop lev
      that one number (the lattice dim-6 anisotropy feeding the marginal coefficient,
      Collins) is loop-suppressed O(alpha/4pi) but NOT Planck-suppressed, and is NOT
      forbidden by CPT (even), O_h (permits it), or any gauge Ward identity (does not
-     tie c_t to c_s).  It is IR-suppressed by the attractive flow (A) over the
-     a^-1 = M_Pl hierarchy: |eta-1|_IR ~ |eta-1|_UV * (mu/M_Pl)^gamma, gamma =
-     (C_F + C_B N_f) alpha > 0 (Bednik-Pujolas-Sibiryakov power-law; the EFT/Planck
-     scale separation of Belenchia-Gambassi-Liberati 2016).  Whether this suffices
-     against LV bounds without a custodial symmetry is the genuine open problem.
+     tie c_t to c_s).  In the supplied model it carries an illustrative attractive-flow
+     damping factor |eta-1|_IR ~ |eta-1|_UV * (mu/M_Pl)^gamma, gamma =
+     (C_F + C_B N_f) alpha > 0.  This runner does not derive the physical fixed-point
+     gamma, the power-divergent coefficient, or sufficiency against LV bounds without a
+     custodial symmetry; those are the genuine open problem.
 
-NET: the campaign's deepest residual is RECLASSIFIED from "marginal anisotropy is an
-O(1) unprotected wall" to "IR-ATTRACTIVE, reduced to ONE number, hierarchy-suppressed
-residual" -- the standard field-wide UV naturalness, sharpened, with the framework's
-exact Planck hierarchy the candidate suppressant.
+NET: inside the supplied one-loop/structural packet, the residual is organized from
+"two-parameter O(1) wall" to "one conditional IR-attractive scalar."  The hierarchy
+damping estimate is illustrative/non-closing until the missing bridges are retained.
 
 No new axiom/primitive/import; literature (Collins et al 2004; Chadha-Nielsen 1983;
 Nielsen-Ninomiya; Giuliani-Mastropietro-Porta; Roy-Juricic-Herbut; Belenchia et al
@@ -88,8 +87,8 @@ def section(t):
 
 def main():
     print("=" * 94)
-    print("Interacting emergent Lorentz: velocity anisotropy is an ATTRACTIVE IR fixed point;")
-    print("Collins' 2-parameter naturalness gate reduces to ONE IR-attractive, hierarchy-suppressed number")
+    print("Interacting emergent Lorentz: velocity anisotropy is an ATTRACTIVE IR fixed point")
+    print("inside the supplied one-loop model; Collins' gate reduces to ONE conditional scalar")
     print("=" * 94)
 
     # =====================================================================
@@ -219,9 +218,9 @@ def main():
     ln_hier = np.log(1e-19)  # mu/M_Pl ~ (1 TeV)/(1.2e19 GeV) ~ 1e-16..-19; use 1e-19
     supp = np.exp(gamma * ln_hier)  # (mu/M_Pl)^gamma
     eta_IR = delta_cs_UV * supp
-    check("(D2) attractive flow gives ADDITIONAL power-law IR suppression (mu/M_Pl)^gamma, gamma>0",
+    check("(D2) supplied-model attractive flow gives an illustrative (mu/M_Pl)^gamma damping factor",
           gamma > 0 and supp < 1.0,
-          detail=f"gamma = {gamma:.3f}, (mu/M_Pl)^gamma ~ {supp:.2e} -> eta-1|_IR ~ {eta_IR:.2e} (illustrative; gamma is coupling-dependent)")
+          detail=f"gamma = {gamma:.3f}, (mu/M_Pl)^gamma ~ {supp:.2e} -> eta-1|_IR ~ {eta_IR:.2e}; non-closing until physical gamma/coefficient are retained")
     check("(D3) SCOPE: whether (D2) beats LV bounds WITHOUT a custodial symmetry is the GENUINE OPEN problem",
           True, detail="not claimed solved; gamma at the physical fixed point + the exact power-divergent coeff are the open inputs")
     check("(D4) the cheapest candidate closer is the a^-1=M_Pl EFT/LV scale separation (Belenchia et al 2016), NOT a new symmetry",
@@ -236,10 +235,10 @@ def main():
     print("  C  canonical continuous time FIXES c_t (CAR preserved by Stone) -> Collins' 2-parameter gate")
     print("     reduces to ONE number c_s; with A, c_s flows to the canonical c_t=1.")
     print("  D  HONEST residual: the power-divergent UV regeneration of c_s (Collins) is loop- but NOT")
-    print("     Planck-suppressed and unprotected by CPT/O_h/gauge-Ward; IR-suppressed by the attractive")
-    print("     flow over the a^-1=M_Pl hierarchy (Belenchia et al) -- the genuine open field-wide problem.")
-    print("  NET: deepest residual RECLASSIFIED from '2-parameter O(1) wall' to 'ONE IR-attractive,")
-    print("       hierarchy-suppressed number'. No new axiom. Literature comparator/scope only.")
+    print("     Planck-suppressed and unprotected by CPT/O_h/gauge-Ward; the supplied-model hierarchy")
+    print("     damping factor is illustrative/non-closing until physical gamma and coefficient are retained.")
+    print("  NET: inside the supplied one-loop/structural packet, the residual is organized from")
+    print("       '2-parameter O(1) wall' to 'ONE conditional IR-attractive scalar'. No new axiom.")
     print("\n" + "=" * 94)
     print(f"TOTAL: {PASS} PASS / {FAIL} FAIL")
     print("=" * 94)

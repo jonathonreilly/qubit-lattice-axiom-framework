@@ -13,6 +13,26 @@ claim-boundary declaration, not an audit verdict.
 
 ---
 
+## 2026-06-07 conditional-algebra scope repair
+
+The current auditable claim is narrower than a retained interacting-Lorentz
+naturalness theorem. It is a **conditional one-loop/structural algebra packet**
+over supplied inputs:
+
+- supplied one-loop velocity-RG dynamics;
+- supplied spatial-only power-divergent mixing/power-counting context;
+- supplied Planck-to-IR hierarchy scale used in the illustrative suppression
+  estimate.
+
+The runner verifies algebraic consequences of those supplied inputs: attractive
+difference-mode flow, `O_h` scalar reduction, canonical-time one-number
+reduction, and the form of an illustrative `(mu/M_Pl)^gamma` damping factor.
+This note does **not** provide retained one-hop bridges for the one-loop
+dynamics, the spatial-only power-divergent mixing theorem, the physical
+fixed-point anomalous dimension, or the hierarchy-suppression sufficiency
+claim. The hierarchy line is non-load-bearing interpretation unless those
+bridges are supplied and independently audited.
+
 ## Role
 
 This note is a standalone bounded packet for the emergent-Lorentz lane's
@@ -26,16 +46,17 @@ custodial symmetry protects it. This note is **free + structural** (standard one
 coefficients); it adds **no axiom**, and it is explicit about what it does and does
 not establish. Runner: **12 PASS / 0 FAIL**.
 
-**Net result.** The deepest residual is **reclassified** from "the marginal anisotropy
-is an O(1), two-parameter, unprotected wall" to "a **single, IR-attractive,
-hierarchy-suppressed number**":
+**Net result inside the supplied one-loop packet.** The residual is **organized**
+from "the marginal anisotropy is an O(1), two-parameter, unprotected wall" to "a
+single IR-attractive scalar in the conditional model":
 1. the interacting gauge dynamics makes `c_t = c_s` an **attractive IR fixed point**;
 2. the framework's **canonical continuous time fixes `c_t`** and **`O_h` keeps the
    spatial split a single scalar**, reducing Collins' two-parameter gate to **one
    number `c_s`**;
-3. the residual — the power-divergent UV regeneration of that one number — is
-   IR-suppressed by the attractive flow over the `a⁻¹ = M_Pl` hierarchy, but not by a
-   custodial symmetry: the genuine, sharpened, open problem.
+3. the residual — the power-divergent UV regeneration of that one number —
+   admits an illustrative IR-damping factor in the supplied model, but whether
+   that factor is the physical fixed-point anomalous dimension and whether it
+   beats bounds remains the genuine open problem.
 
 ## (A) The velocity anisotropy is an attractive IR fixed point — verified
 
@@ -102,11 +123,12 @@ overkill/absent (Part D4).
 
 ## What this note establishes vs leaves open
 
-- **Establishes** (verified): (A) the velocity anisotropy is an attractive IR fixed
-  point (marginal operator IR-irrelevant); (B) the spatial split is a single `O_h`
-  scalar; (C) canonical time fixes `c_t`, reducing the gate to one number that flows to
-  the Lorentz value. Net: the two-parameter O(1) wall is reclassified to one
-  IR-attractive, hierarchy-suppressed number.
+- **Establishes** (verified inside the supplied one-loop/structural packet):
+  (A) the velocity anisotropy is an attractive IR fixed point for the supplied
+  coupled RG form; (B) the spatial split is a single `O_h` scalar; (C)
+  canonical time fixes `c_t`, reducing the gate to one number in the model.
+  Net: the two-parameter wall is reorganized to one conditional IR-attractive
+  scalar.
 - **Leaves open** (named, not solved): (D) the exact power-divergent coefficient and the
   anomalous dimension `γ` at the physical fixed point, hence whether the
   flow + Planck-hierarchy suppression beats the LV bounds with no custodial symmetry.
@@ -118,6 +140,10 @@ overkill/absent (Part D4).
 - **No** solution to the Lorentz naturalness problem (residual D stands).
 - **No** unconditional emergent-Lorentz theorem; the dynamics is still admitted (the
   interaction is supplied), and the result is one-loop + structural.
+- **No** retained hierarchy-suppression conclusion; the `(mu/M_Pl)^gamma`
+  factor is an illustrative consequence of the supplied model until the
+  physical fixed-point anomalous dimension and power-divergent coefficient are
+  derived or otherwise retained.
 - **No** contradiction of the no-go (`spatial_cubic_time_anisotropy_gate_no_go`, the
   Euclidean route) or of `dm_continuum_limit_velocity_note` (an unrelated
   wave-deflection observable).

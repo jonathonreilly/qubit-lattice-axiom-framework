@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1281 |
+| unaudited | 1280 |
 | meta | 308 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1138 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1589 |
+| `unaudited` | 1588 |
 
 | claim_type | count |
 |---|---:|
@@ -1323,6 +1323,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_dynamics_family_lift_closeout_index_2026-06-06` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `post_record_generation_koide_stable_location_index_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13977,6 +13978,25 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** False — The finite examples and arithmetic are internally consistent: the score has a unique minimizer, r=1/2 is a fixed point with derivative 2 for r->2r^2, the thermal table has a unique root, and 16+3+4+15+18=56. However, the current-row classification depends on an imported stability-subdivision helper whose source is not included in the restricted packet.
 - **rationale:** The load-bearing certificate rule is a supplied-interface definition, not a first-principles derivation from the framework baseline. The runner's finite toy checks are exact and its printed PASS count is internally consistent, but the 56-row current-snapshot classification uses PREV = scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py via importlib. That helper is explicitly load-bearing for flow_or_thermal_stability selection but its source is absent from the helper-runner section, leaving the row-map verification opaque.
 - **auditor confidence:** medium
+
+### `post_record_generation_koide_stable_location_index_2026-06-06`
+
+- **Note:** [`POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md`](../../docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited only the branch-local claim that the current ledger's 102 Koide/generation selector rows plus 4 stable-feature rows form a 106-row supplied stable-location index without selecting or forcing a dial value.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-010040-729846c0f4-post_record_generation_koide`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** 102 koide_or_generation_selector rows + 4 generation_or_koide_stable_feature rows + supplied stable-setting certificate semantics => 106-row generation/Koide stable-location index.  _(class `B`)_
+- **chain closes:** False — The arithmetic identities in the packet are internally consistent, but the row partition and stable-feature semantics are imported from upstream selector/stable runners and notes that are not provided as cited authorities. The missing step is a complete restricted-packet derivation or retained-grade dependency packet for the ledger partition and supplied stable-setting certificate semantics.
+- **rationale:** The independent quantitative pass checks that the row-class table sums to 102, 102+4=106, Q(1/2)=2/3, r -> 2r^2 fixes r=1/2 with repelling derivative 2, and r*=w_p/(2w_s) gives the stated equal/rank-weight examples. Those checks close only as finite consistency checks over imported ledger rows and supplied rules, not as a first-principles derivation from the axiom baseline. The primary runner hard-codes expected counts and IDs, reads the audit ledger and source notes, and imports selector/stable runner modules whose sources are absent from the packet, so stdout PASS is not enough for a clean positive-theorem verdict.
+- **open / conditional deps cited:**
+  - `POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md`
+  - `POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md`
+  - `POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md`
+  - `GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md`
+  - `KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md`
+- **auditor confidence:** high
 
 ### `post_record_model_selection_firewall_2026-06-06`
 

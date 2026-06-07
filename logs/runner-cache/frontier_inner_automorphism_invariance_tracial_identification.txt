@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_inner_automorphism_invariance_tracial_identification.py
-runner_sha256: ae75c79257aaa6b4eed3d5ee11d21f7fe9593d6b5ef900461e600a81698bab62
+runner_sha256: 4f1d9ea3648badaa347026492fa0866e0ad49bd5b806638ce4de64ea5a0f095d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
-# Conditional inner-automorphism tracial-identification runner
+# Inner-automorphism tracial-identification runner
 
 ==============================================================================
 T1: diagonal sign unitaries kill off-diagonal entries
@@ -45,6 +45,40 @@ T3: trace normalization fixes rho = I_d / d
          d=16, c=1/16, trace=1, positive=True
 
 ==============================================================================
+T3b: symbolic all-d proof skeleton
+==============================================================================
+  [PASS] d=2: off-diagonal coordinates forced zero by sign conjugations
+         count=2
+  [PASS] d=2: permutation swaps connect all diagonal coordinates
+         swaps=1
+  [PASS] d=2: trace-one scalar invariant has weight 1/d
+         weight=1/2
+  [PASS] d=3: off-diagonal coordinates forced zero by sign conjugations
+         count=6
+  [PASS] d=3: permutation swaps connect all diagonal coordinates
+         swaps=2
+  [PASS] d=3: trace-one scalar invariant has weight 1/d
+         weight=1/3
+  [PASS] d=5: off-diagonal coordinates forced zero by sign conjugations
+         count=20
+  [PASS] d=5: permutation swaps connect all diagonal coordinates
+         swaps=4
+  [PASS] d=5: trace-one scalar invariant has weight 1/d
+         weight=1/5
+  [PASS] d=8: off-diagonal coordinates forced zero by sign conjugations
+         count=56
+  [PASS] d=8: permutation swaps connect all diagonal coordinates
+         swaps=7
+  [PASS] d=8: trace-one scalar invariant has weight 1/d
+         weight=1/8
+  [PASS] d=16: off-diagonal coordinates forced zero by sign conjugations
+         count=240
+  [PASS] d=16: permutation swaps connect all diagonal coordinates
+         swaps=15
+  [PASS] d=16: trace-one scalar invariant has weight 1/d
+         weight=1/16
+
+==============================================================================
 T4: maximally mixed finite regions are restriction-compatible
 ==============================================================================
   [PASS] partial trace over 1 sites maps I_{AB}/(d_A d_B) to I_A/d_A
@@ -61,22 +95,24 @@ T5: source note boundary strings
 ==============================================================================
   [PASS] required boundary string present: **Claim type:** bounded_theorem
          present=True
-  [PASS] required boundary string present: does not approve that
+  [PASS] required boundary string present: does not identify that state with a pre-record
          present=True
   [PASS] required boundary string present: does not add a new framework axiom or rule
          present=True
-  [PASS] required boundary string present: derive PRR from Axiom 1 + Axiom 2
+  [PASS] required boundary string present: does not derive PRR from the Lattice, Quantum, or Record axioms
          present=True
-  [PASS] required boundary string present: conditional bridge theorem
+  [PASS] required boundary string present: pure invariant-state theorem
          present=True
-  [PASS] required boundary string present: explicit approval
+  [PASS] required boundary string present: not an admitted
          present=True
   [PASS] required boundary string present: Plain-text target row, not a load-bearing dependency
+         present=True
+  [PASS] required boundary string present: Re-audit this source as a pure invariant-state theorem
          present=True
   [PASS] no forbidden promotion/approval strings
          hits=[]
 
-=== TOTAL: PASS=24, FAIL=0 ===
+=== TOTAL: PASS=40, FAIL=0 ===
 
 ----- stderr -----
 

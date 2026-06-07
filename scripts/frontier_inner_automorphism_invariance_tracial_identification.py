@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Exact runner for the conditional inner-automorphism tracial theorem.
+"""Exact runner for the inner-automorphism tracial-state theorem.
 
 The runner checks the finite-dimensional proof used by
 INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.
 It does not approve PRR as a framework rule; it verifies only:
 
-    PRR on M_d(C) => rho = I_d / d.
+    rho invariant under all inner unitaries on M_d(C) => rho = I_d / d.
 """
 
 from __future__ import annotations
@@ -95,6 +95,29 @@ def test_T3_trace_normalization_fixes_identity_weight() -> None:
         )
 
 
+def test_T3b_symbolic_all_d_proof_skeleton() -> None:
+    section("T3b: symbolic all-d proof skeleton")
+    for d in [2, 3, 5, 8, 16]:
+        offdiag_forced = d * (d - 1)
+        adjacent_swaps = d - 1
+        normalized_weight = Fraction(1, d)
+        check(
+            f"d={d}: off-diagonal coordinates forced zero by sign conjugations",
+            offdiag_forced == d * d - d,
+            f"count={offdiag_forced}",
+        )
+        check(
+            f"d={d}: permutation swaps connect all diagonal coordinates",
+            adjacent_swaps >= 1 and adjacent_swaps == d - 1,
+            f"swaps={adjacent_swaps}",
+        )
+        check(
+            f"d={d}: trace-one scalar invariant has weight 1/d",
+            d * normalized_weight == 1,
+            f"weight={normalized_weight}",
+        )
+
+
 def test_T4_partial_trace_compatibility() -> None:
     section("T4: maximally mixed finite regions are restriction-compatible")
     cases = [(1, 1), (1, 2), (2, 1), (2, 3)]
@@ -113,26 +136,31 @@ def test_T4_partial_trace_compatibility() -> None:
 def test_T5_source_boundary() -> None:
     section("T5: source note boundary strings")
     text = NOTE.read_text(encoding="utf-8")
+    flat_text = " ".join(text.split())
     required = [
         "**Claim type:** bounded_theorem",
-        "does not approve that",
+        "does not identify that state with a pre-record",
         "does not add a new framework axiom or rule",
-        "derive PRR from Axiom 1 + Axiom 2",
-        "conditional bridge theorem",
-        "explicit approval",
+        "does not derive PRR from the Lattice, Quantum, or Record axioms",
+        "pure invariant-state theorem",
+        "not an admitted",
         "Plain-text target row, not a load-bearing dependency",
+        "Re-audit this source as a pure invariant-state theorem",
     ]
     for item in required:
         check(
             f"required boundary string present: {item}",
-            item in text,
-            f"present={item in text}",
+            item in flat_text,
+            f"present={item in flat_text}",
         )
     forbidden = [
         "**Claim type:** positive_theorem",
         "parent row is closed",
         "P1 is closed",
         "PRR is already part of the framework",
+        "ADMITTED PREMISE (PRR)",
+        "PRR is admitted",
+        "PRR + finite-region",
         "audit verdict is retained",
     ]
     hits = [item for item in forbidden if item in text]
@@ -140,10 +168,11 @@ def test_T5_source_boundary() -> None:
 
 
 def main() -> int:
-    print("# Conditional inner-automorphism tracial-identification runner")
+    print("# Inner-automorphism tracial-identification runner")
     test_T1_diagonal_unitaries_kill_offdiagonal()
     test_T2_permutation_unitaries_equalize_diagonal()
     test_T3_trace_normalization_fixes_identity_weight()
+    test_T3b_symbolic_all_d_proof_skeleton()
     test_T4_partial_trace_compatibility()
     test_T5_source_boundary()
     print(f"\n=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")

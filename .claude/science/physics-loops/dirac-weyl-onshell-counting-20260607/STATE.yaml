@@ -1,0 +1,21 @@
+loop_slug: dirac-weyl-onshell-counting-20260607
+target_claim_id: dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28
+branch: physics-loop/dirac-weyl-onshell-counting-20260607
+base_ref: origin/physics-loop/dirac-weyl-dof-source-packet-20260607
+stacked_on_pr: 3047
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: retire Q2 textbook on-shell-counting import via finite Dirac mass-shell rank certificate
+files_touched:
+  - docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+  - scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
+  - logs/runner-cache/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.txt
+  - .claude/science/physics-loops/dirac-weyl-onshell-counting-20260607/*
+open_imports:
+  - physical Wick-rotation / Lorentzian-sign selection is not closed by Q1
+  - Dirac equation/free-field mass-shell dynamics are not derived by this row
+  - physical thermal-inventory use remains parent-row scope
+no_new_axioms: true
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer may extract the Q2 finite-rank source packet; independent audit decides whether Q1 plus Q2 repair changes the conditional row."

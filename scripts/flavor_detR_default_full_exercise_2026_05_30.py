@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """FULL exercise on the campaign load-bearing claim. It preserves the finite
 det_R/det_C counting fork and refutes the route where qubit C-structure makes
-det_C automatic. The old "Q=1 substrate-forced default" wording is now bounded:
-Q=1 is the trace/dimension read only when the beta=0 tracial generation
-reference is supplied.
+det_C automatic. The old default/reference-state wording is removed: this
+runner supports only the finite locator and makes no Q=1 default claim.
 
-CONFIRMED (load-bearing): the tested finite structures do not supply det_C;
-under a supplied beta=0 tracial reference the det_R/dimension read gives Q=1,
-while Q=2/3 (r=1/2 / det_C) remains a precisely localized measure/counting input.
+CONFIRMED (load-bearing): the tested finite structures do not supply det_C and
+do not rank the two allowed reads. Q=1 (r=1 / det_R dimension read) and Q=2/3
+(r=1/2 / det_C center-count read) remain localized measure/counting inputs.
   X1 substrate i is generation-BLIND (i*I3 commutes with C); the doublet U(1) generator G_U1=(C-C^2)/sqrt3
      has ZERO HS-overlap with i*I3 -> the complex structure does NOT descend as a doublet U(1).
   X2 C^3=I quantizes the U(1)_b rephasing to {0, 2pi/3, 4pi/3} -> continuous U(1) forbidden (retained
@@ -26,7 +25,7 @@ CORRECTION #2 (the actual import): once U(1)-symmetry and holomorphic-measure ar
 OPEN GAP (Link 1 Half B): that the generation reference state is the beta=0 TRACE (3 equal modes) rather
   than a finite-beta Gibbs/KMS state is not derived here (PRR premise); the framework's own
   KMS note has beta>0 Gibbs (non-tracial). Finite-beta cannot make det_C native (Schur) but framework baseline do not
-  force beta=0, so Q=1 is only the trace/det_R read under that supplied premise.
+  force beta=0, so this packet makes no Q=1 default/reference-state claim.
 """
 import numpy as np
 
@@ -57,25 +56,29 @@ def main():
     note = open("docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md").read()
     required = [
         "2026-06-07 boundary repair",
+        "2026-06-07 scope repair",
         "RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05",
         "KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29",
-        "This note does not derive that reference",
-        "does not choose the physical generation reference state",
+        "bounded finite-algebra locator only",
+        "default/reference-state claim",
+        "does not rank the physical generation",
+        "Non-claim: physical generation reference state",
     ]
     banned = [
         "Q=1 is THE default",
         "substrate-forced *default*",
         "substrate-FORCED default",
+        "under a supplied beta=0 tracial reference",
     ]
     boundary_ok = all(term in note for term in required) and not any(term in note for term in banned)
-    passed.append(check("BOUNDARY source guard: Q=1 default is conditional, r/Q support is retained-sourced",
-        boundary_ok, "no beta=0 tracial-vacuum promotion"))
+    passed.append(check("BOUNDARY source guard: finite locator only, no default/reference-state claim",
+        boundary_ok, "finite locator only; no beta=0 tracial-vacuum promotion"))
     print(f"\nUPDATED SCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT: FINITE LOCATOR -- tested structures do not make det_C/equal-block counting automatic;")
-    print("under a supplied beta=0 tracial reference, the trace/dimension read gives Q=1. CORRECTED:")
+    print("they localize Q=2/3 versus Q=1 as a counting fork but do not rank the physical read. CORRECTED:")
     print("the equal-block input is not the chirality gate, not a U(1) symmetry, and not a holomorphic")
     print("measure; it is the block-vs-dimension counting choice the trace permits but does not rank.")
-    print("OPEN: beta=0 tracial generation reference vs finite-beta Gibbs remains unclosed.")
+    print("OPEN: beta=0 tracial generation reference vs finite-beta Gibbs remains outside this row.")
     return 0 if all(passed) else 1
 
 if __name__ == "__main__":

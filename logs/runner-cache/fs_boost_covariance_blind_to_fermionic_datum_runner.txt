@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/fs_boost_covariance_blind_to_fermionic_datum_runner.py
+runner_sha256: 39fc3731a39a697fb2bfeb6222eba63baf393b45030cc56c0f36cd1f7ab4850f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+==============================================================================
+A1. context (retained): the kernel covariance forces FAITHFUL over SCALAR
+==============================================================================
+  [PASS] 4 Hermitian Euclidean gammas, Clifford {g_mu,g_nu}=2 delta
+  [PASS] faithful S=exp(theta Sigma) intertwines kernel (A derived from S, in SO(4)); scalar lambda*I does NOT  | reproduces the retained faithful-vs-scalar selection
+
+==============================================================================
+A2. NEW: covariance is BLIND to the double-valuedness S(2pi) = -1 (the Fermi sign)
+==============================================================================
+   S(2pi) = -I (spinor double cover): True;  A(2pi) = I (SO(4)): True
+   S and -S give IDENTICAL kernel conjugation: True  => the -1 in ker(S->SO(4))
+  [PASS] the fermionic sign S(2pi)=-1 is in ker(covariance): NEITHER used NOR produced  | boost-covariance cannot see the double-valuedness that IS Fermi statistics
+
+==============================================================================
+A3. NEW: covariance/traceless is BLIND to the spin magnitude (1/2 vs integer)
+==============================================================================
+   tr(Sigma_spinor)=0.0e+00, tr(M_vector)=0.0e+00 (both traceless)
+   eig(Sigma)=+-i/2 (half-integer), eig(M_vec)=+-i (integer): True
+  [PASS] traceless is necessary-NOT-sufficient for spin-1/2 (vector gen also traceless)  | covariance/traceless cannot pin the carrier to half-integer
+
+==============================================================================
+A4. the sharpened frontier: blind to sign AND spin => cannot supply the fermionic datum
+==============================================================================
+   boost-covariance blind to the fermionic sign:  True
+   boost-covariance blind to the spin magnitude:  True
+   => statistics-blind kernel CANNOT close FS:     True
+   residual (A): half-integer carrier attachment (UNAUDITED Kawamoto-Smit)
+   residual (B): emergent-time Cl(3,0)->Cl(3,1) e_4-doubling as positive-energy (rung C) microcausal MASSIVE Dirac field   <-- highest-leverage, at the emergent-time + spectrum-positivity intersection
+  [PASS] FS sharpens to statistics-SENSITIVE residuals (A)+(B); boost-covariance route bounded  | the cross-site-kernel escape is true-but-duplicative; the no-go stands
+
+runner_check_breakdown = {A: 5, B: 0, C: 0, D: 0, total_pass: 5}
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

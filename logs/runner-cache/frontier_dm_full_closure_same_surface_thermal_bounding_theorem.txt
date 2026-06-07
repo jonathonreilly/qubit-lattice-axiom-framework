@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
-runner_sha256: 3a67ada4385f9453eb6e93aa901d3883bfc500d3193eafc7a93d633330cdeb81
+runner_sha256: 5830a2f279d8364956585afe9f9bd7c645cc20f11ba7ad449c3520db38943c66
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 72.41
+elapsed_sec: 41.21
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -23,6 +23,12 @@ PART 0: SOURCE-NOTE SCOPE BOUNDARY
   [PASS] source omits forbidden control phrase: actual_current_surface_status
   [PASS] source omits forbidden control phrase: bare_retained
   [PASS] source omits forbidden control phrase: Claim type:** bounded_theorem
+  [PASS] source records the 2026-06-07 current-authority reduction
+  [PASS] source no longer treats the 64:1 bridge as an open gap
+  [PASS] one-hop authority is audited_clean/retained_bounded: dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16  (audit_status=audited_clean effective_status=retained_bounded)
+  [PASS] one-hop authority is audited_clean/retained_bounded: dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17  (audit_status=audited_clean effective_status=retained_bounded)
+  [PASS] one-hop authority is audited_clean/retained_bounded: dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17  (audit_status=audited_clean effective_status=retained_bounded)
+  [PASS] one-hop authority is audited_clean/retained_bounded: dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02  (audit_status=audited_clean effective_status=retained_bounded)
 
 ========================================================================================
 PART 1: CERTIFIED CURRENT-BANK THERMAL ENVELOPES
@@ -71,10 +77,10 @@ BOTTOM LINE
     - the supplied-packet current-bank obstruction is bracketed
     - the one-scalar same-surface admitted family has a certified unique root interval
   What still remains open is the source derivation of the live-DM
-  premise packet: the 64:1 bridge, live constants, and selector premises.
+  constants and packet-completeness / selector premises.
 
 ========================================================================================
-SUMMARY: PASS=19 FAIL=0
+SUMMARY: PASS=25 FAIL=0
 ========================================================================================
 
 ----- stderr -----

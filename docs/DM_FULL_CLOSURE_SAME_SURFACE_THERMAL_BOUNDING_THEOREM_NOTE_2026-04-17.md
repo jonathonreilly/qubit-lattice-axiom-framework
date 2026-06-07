@@ -101,8 +101,8 @@ layer itself.
   whether the current exact bank itself can be made to select a value, or
   whether the DM-side one-scalar family must remain an admitted extension
 - remaining audit question:
-  whether the 64:1 bridge, live-DM constants, and packet-completeness/selector
-  premises can be supplied by retained one-hop authorities.
+  whether the live-DM constants and packet-completeness/selector premises can
+  be supplied by retained one-hop authorities.
 
 ## Command
 
@@ -115,15 +115,18 @@ python3 scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.p
 This section records explicit upstream authority citations and supplied
 premise boundaries named by audit feedback for
 `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`.
-The load-bearing boundary is broader than the imported certification routines:
-the current packet also does not derive the 64:1 same-surface channel-weight
-bridge, the live-DM plaquette / eta-omega constants, or the
-packet-completeness / selector premise. The visible runner delegates the
-certified ratio and root enclosures to common modules and then performs
-algebraic / bracketing checks on their returned values. This source repair
-therefore narrows the claim scope to a supplied-premise interval-composition
-theorem. Independent audit owns any current verdict or effective status after
-this source change.
+The load-bearing boundary is broader than the imported certification routines,
+but the current ledger has moved since the earlier repair. The visible runner
+now verifies that the integral representation, monotonicity, series/tail
+support, and 64:1 same-surface channel-weight bridge are all current one-hop
+`retained_bounded` / `audited_clean` authorities. The parent still does not
+derive the live-DM plaquette / eta-omega constants or the packet-completeness /
+selector premise. The visible runner delegates the certified ratio and root
+enclosures to common modules and then performs algebraic / bracketing checks on
+their returned values. This source repair therefore records the current
+authority reduction while preserving the remaining conditional parent boundary.
+Independent audit owns any current verdict or effective status after this
+source change.
 
 One-hop authorities cited:
 
@@ -143,6 +146,11 @@ One-hop authorities cited:
   `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`.
   Upstream/supplied authority for positive-series / tail-enclosure machinery
   underlying ingredient (3) of the supplied packet.
+- [`DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`](DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md)
+  — audit row:
+  `dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`.
+  Current retained-bounded authority for the 64:1 same-surface
+  channel-weight bridge underlying ingredient (4) of the supplied packet.
 - `DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`
   — audit row:
   `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`.
@@ -155,12 +163,27 @@ One-hop authorities cited:
   the admitted-family root interval against the no-current-bank-selector
   conclusion.
 
+## 2026-06-07 Current Authority Reduction
+
+The 64:1 channel-weight bridge is no longer an open parent import. The current
+ledger records these one-hop authorities as `audited_clean` with
+`effective_status: retained_bounded`, and the runner checks those statuses
+read-only:
+
+- `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`;
+- `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17`;
+- `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`;
+- `dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`.
+
+This strengthens the parent restricted packet from "all six ingredients
+supplied" to "ingredients (1)-(4) have current retained-bounded one-hop
+authorities, while ingredients (5)-(6) remain conditional." The parent row
+still must not be promoted by this source edit because the live-DM
+plaquette/eta-omega constants and packet-completeness/selector premise remain
+outside the closed one-hop chain.
+
 Open upstream gaps registered for independent audit:
 
-- the continuum integral representation authority;
-- the monotonicity authority;
-- the positive-series / tail-enclosure authority;
-- the 64:1 same-surface channel-weight bridge;
 - the live-DM plaquette / eta-omega constants;
 - the packet-completeness / selector premise;
 - the sibling current-bank no_go boundary.
@@ -182,12 +205,14 @@ Prior audit feedback observed that the restricted packet does not
 include the load-bearing derivations or source for the imported
 certification routines and that the visible runner delegates those
 steps to external common modules. The cite-chain repair above wires the
-three ingredient-level upstream authorities, the sibling no_go, and the
-sensitivity boundary as the explicit cite chain for this bounded
-theorem. The 2026-05-30 repair also records the 64:1 channel-weight,
-live-DM-constant, and selector/packet-completeness premises as supplied rather
-than derived. Closing those upstream rows is the path to a stronger chain;
-local rewriting of this note does not by itself close that gap.
+three ingredient-level upstream authorities, the 64:1 channel-weight bridge,
+the sibling no_go, and the sensitivity boundary as the explicit cite chain for
+this bounded theorem. The 2026-06-07 update records that the 64:1
+channel-weight bridge has since become a current retained-bounded one-hop
+authority, while the live-DM constants and selector/packet-completeness
+premises remain supplied rather than derived. Closing those remaining upstream
+rows is the path to a stronger chain; local rewriting of this note does not by
+itself close that gap.
 
 ## Scope of this rigorization
 

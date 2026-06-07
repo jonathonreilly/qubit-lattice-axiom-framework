@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 722 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1297 |
+| unaudited | 1296 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1135 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1604 |
+| `unaudited` | 1603 |
 
 | claim_type | count |
 |---|---:|
@@ -1294,6 +1294,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_zdet_fermionic_statistics_admission_2026-06-04` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6391,6 +6392,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Jacobian of (mean-eigenvalue, Q, δ) with respect to (a, |b|, δ) has nonzero determinant, so scale, ratio, and CP phase are independently recoverable C3 channels.  _(class `A`)_
 - **chain closes:** False — The algebraic formulas from the assumed H close, including Q=1/3+(2/3)r and the local Jacobian check. The packet does not derive H, the physical sector identifications, or the eta/topological lane from an axiom or retained authority, and the source warning says the channel/lane framing is superseded.
 - **rationale:** The runner verifies algebraic/convention checks under assumed definitions: a sample nonzero Jacobian, the trace-zero doublet coefficient for gI, Q's delta-independence, and the two readout floors. It does not instantiate a first-principles framework derivation of the C3 circulant operator, the topological eta datum, or the physical gauge/Yukawa/CP/anomaly identifications. The source note's own supersession warning also narrows or corrects the central 'complete account' and 'three channels' framing, so the capstone conclusion is broader than the restricted packet establishes.
+- **auditor confidence:** high
+
+### `flavor_zdet_fermionic_statistics_admission_2026-06-04`
+
+- **Note:** [`FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md`](../../docs/FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite algebra checks that supplied Grassmann/CAR variables realize Z=det(D+J), and that the tested local-dimension, ordinary-ladder, Jordan-Wigner, determinant/permanent, and internal-chirality routes do not by themselves derive the statistics choice.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-002150-085ae7ae29-flavor_zdet_fermionic_statis`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If Grassmann/CAR matter variables are supplied, the finite Berezin Gaussian gives the determinant, while the tested finite hard-core/tensor-product routes do not themselves select cross-site CAR/Grassmann statistics.  _(class `A`)_
+- **chain closes:** False — The finite determinant/permanent and operator-algebra checks close as scoped algebra, including det=4.971 and permanent=5.947 by independent expansion. The chain does not close to baseline selection of Grassmann/CAR statistics because no axiom, cited authority, or admission supplies that matter premise.
+- **rationale:** The runner performs real finite matrix and permutation-sum checks rather than merely printing constants, and the displayed numerical values and matrix identities are consistent with an independent hand expansion. However, the source note explicitly leaves the cross-site CAR/Grassmann selection open and treats it as a supplied premise rather than deriving it from baseline axioms. The packet therefore supports the finite locator and route-pruning scope, but not promotion of the determinant-amplitude input as a closed framework consequence.
 - **auditor confidence:** high
 
 ### `fm_transfer_note`

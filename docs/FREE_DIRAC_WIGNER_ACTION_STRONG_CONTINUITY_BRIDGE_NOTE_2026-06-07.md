@@ -37,6 +37,40 @@ This bridge does not derive the free Dirac carrier from the baseline lattice
 axioms, does not prove spin-statistics, does not close an interacting theory,
 and does not promote any audit status.
 
+## 2026-06-07 dependency authority repair
+
+The 2026-06-07 audit marked this bridge conditional because the restricted
+packet did not include the full companion free-Dirac Poincare representation packet/cache
+as an explicit dependency authority:
+
+```text
+missing_dependency_edge: include the full companion free-Dirac Poincare
+representation packet/cache as a cited authority, or replace it with a
+self-contained derivation of invariant d^3p/(2E), Wigner cocycle/SU(2) carrier
+continuity, and full 3+1 mass-shell action facts.
+```
+
+This source repair keeps the claim bounded to the supplied continuum
+mass-shell carrier and makes the companion authority packet explicit:
+
+| Role | Path | Certificate |
+| --- | --- | --- |
+| companion representation note | [`docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`](FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md) | bounded free Dirac/Poincare algebra and positive-energy support |
+| companion representation runner | [`scripts/free_dirac_poincare_representation_2026-05-30.py`](../scripts/free_dirac_poincare_representation_2026-05-30.py) | primary runner for the companion packet |
+| SHA-pinned companion cache | [`logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt`](../logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt) | `SCORECARD PASS=8 FAIL=0` |
+
+The companion cache is load-bearing for:
+
+- positive-energy mass shell preservation;
+- Lorentz-invariant `d^3p/(2E)` measure preservation;
+- Wigner little-group rotation and `SU(2)` carrier checks;
+- finite Poincare-algebra sign and bracket checks.
+
+The bridge runner now verifies that this companion cache is SHA-fresh, has
+`status: ok`, exits zero, and contains the `P5`, `P6`, and
+`SCORECARD PASS=8 FAIL=0` certificates before checking the bridge's own
+strong-continuity and firewall claims.
+
 ## Carrier And Action
 
 Let
@@ -102,7 +136,7 @@ The runner checks:
 Expected output:
 
 ```text
-SCORECARD PASS=35 FAIL=0
+SCORECARD PASS=48 FAIL=0
 ```
 
 ## Status Certificate

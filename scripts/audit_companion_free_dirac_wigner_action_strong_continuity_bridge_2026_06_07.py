@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 from pathlib import Path
 import math
 import numpy as np
@@ -35,6 +36,21 @@ def section(title: str) -> None:
 
 def text(path: str) -> str:
     return (ROOT / path).read_text(encoding="utf-8")
+
+
+def sha256_file(path: str) -> str:
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def cache_header(path: str) -> dict[str, str]:
+    body = text(path)
+    head = body.split("----- stdout -----", 1)[0]
+    fields: dict[str, str] = {}
+    for line in head.splitlines():
+        if ":" in line:
+            key, value = line.split(":", 1)
+            fields[key.strip()] = value.strip()
+    return fields
 
 
 def require_text(path: str, needles: list[str]) -> None:
@@ -101,6 +117,8 @@ def source_anchor_checks() -> None:
             "docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md",
         [
             "Wigner Action Strong-Continuity Bridge",
+            "2026-06-07 dependency authority repair",
+            "full companion free-Dirac Poincare representation packet/cache",
             "strongly continuous",
             "Wigner cocycle",
             "Stone consequence",
@@ -127,11 +145,38 @@ def source_anchor_checks() -> None:
     require_text(
         "logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt",
         [
+            "runner cache v1",
             "P5 boost preserves H_m^+; SU(2) Wigner rotation correct",
             "P6 invariant measure d^3p/2E boost-preserved",
             "SCORECARD PASS=8 FAIL=0",
         ],
     )
+
+
+def dependency_authority_checks() -> None:
+    section("Companion dependency authority")
+    bridge = text("docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md")
+    authority_paths = [
+        "docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
+        "scripts/free_dirac_poincare_representation_2026-05-30.py",
+        "logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt",
+    ]
+    for path in authority_paths:
+        report(f"bridge cites companion authority: {path}", path in bridge)
+
+    header = cache_header("logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt")
+    report("companion cache runner path is recorded", header.get("runner") == "scripts/free_dirac_poincare_representation_2026-05-30.py", str(header))
+    report("companion cache status is ok", header.get("status") == "ok", str(header))
+    report("companion cache exit code is zero", header.get("exit_code") == "0", str(header))
+    report(
+        "companion cache runner SHA is fresh",
+        header.get("runner_sha256") == sha256_file("scripts/free_dirac_poincare_representation_2026-05-30.py"),
+        header.get("runner_sha256", ""),
+    )
+    cache = text("logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt")
+    report("companion cache certifies PASS=8 FAIL=0", "SCORECARD PASS=8 FAIL=0" in cache)
+    report("companion cache includes invariant measure check", "P6 invariant measure d^3p/2E boost-preserved" in cache)
+    report("companion cache includes Wigner rotation check", "P5 boost preserves H_m^+; SU(2) Wigner rotation correct" in cache)
 
 
 def semidirect_product_checks() -> None:
@@ -215,6 +260,7 @@ def firewall_checks() -> None:
 
 def main() -> int:
     source_anchor_checks()
+    dependency_authority_checks()
     semidirect_product_checks()
     su2_wigner_checks()
     firewall_checks()

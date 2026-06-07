@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/global_coherence_held_out2.py
-runner_sha256: 5556fba86e9f96f593823f46c177fed9bbbbbaa95b2c8e189f489c6c421e41eb
+runner_sha256: d1f05dddd55b8791571f3c971a0c0985542739e61c4922b51b84314a70dc1e1b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ====================================================================================================
@@ -21,7 +21,7 @@ PASS L2 accuracy: L2=10/12
 PASS L3 accuracy: L3=8/12
 PASS old rule comparison: old=6/12
 PASS new rule comparison: new=10/12
-PASS verdict: confirmed +33% over old node-level rule
+PASS verdict: bounded +33% finite-table comparison
 SCORECARD PASS=11 FAIL=0
 
 ----- stderr -----

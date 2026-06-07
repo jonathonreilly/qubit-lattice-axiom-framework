@@ -3,7 +3,7 @@ runner: scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06
 runner_sha256: d1ec5b16a71c549ca6a534bc3692fd3555a25b8a64f1bb3e83dfe82830b8b72c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -179,7 +179,7 @@ PASS sample-is-probability-law flag is absent
 PASS dial forced or selected flag is absent
 PASS finite-alone unbounded retained flag is absent
 PASS family lift derived from Record flag is absent
-PASS audit ledger hash is unchanged :: 6b9b3104d6313a9a35ab492b6f8f8c7d8c140e07d5f09ab92b5dd85999b29c19
+PASS audit ledger hash is unchanged :: c5bb9b4368fd7080a5e02dd4d50e8cc15540540bf223c834261850c5fa563cc5
 
 ------------------------------------------------------------------------------
 Source-packet export

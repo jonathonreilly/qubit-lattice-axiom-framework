@@ -13,6 +13,38 @@ bare_retained_allowed=false.
 **Source-packet export:**
 [`outputs/post_record_dynamics_family_lift_closeout_index_2026_06_06_source_packet.json`](../outputs/post_record_dynamics_family_lift_closeout_index_2026_06_06_source_packet.json)
 
+## 2026-06-07 runner-artifact repair
+
+The 2026-06-07 audit marked this index conditional for a source-packet issue:
+
+```text
+runner_artifact_issue: reconcile the source note's PASS=60/PASS=47
+certificate text with the primary runner's PASS=64/PASS=52 expectations and
+include the ten upstream stack notes/caches as explicit dependency authorities
+in the restricted packet.
+```
+
+This repair does not change the claim boundary or apply an audit verdict. It
+updates this source note to match the runner's actual stack contract and makes
+the ten upstream note/runner/cache authorities explicit.
+
+| PR | Status | Source note | Runner | Cache summary |
+|---:|---|---|---|---|
+| #2850 | exact-support | [`POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md) | [`frontier_post_record_directed_certificate_examples_2026_06_06.py`](../scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py) | `SUMMARY: PASS=64 FAIL=0` |
+| #2853 | no-go | [`POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md) | [`frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py`](../scripts/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py) | `SUMMARY: PASS=52 FAIL=0` |
+| #2856 | exact-support | [`POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`](POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md) | [`frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.py`](../scripts/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.py) | `SUMMARY: PASS=39 FAIL=0` |
+| #2858 | no-go | [`POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md`](POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md) | [`frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.py`](../scripts/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.py) | `SUMMARY: PASS=36 FAIL=0` |
+| #2861 | exact-support | [`POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md`](POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md) | [`frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py`](../scripts/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py) | `SUMMARY: PASS=30 FAIL=0` |
+| #2864 | exact-support | [`POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md`](POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md) | [`frontier_post_record_dynamics_authority_stack_map_2026_06_06.py`](../scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py) | `SUMMARY: PASS=52 FAIL=0` |
+| #2868 | exact-support | [`POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md`](POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md) | [`frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py`](../scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py) | `SUMMARY: PASS=46 FAIL=0` |
+| #2871 | exact-support | [`POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md`](POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md) | [`frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.py`](../scripts/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.py) | `SUMMARY: PASS=54 FAIL=0` |
+| #2874 | no-go | [`POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md`](POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md) | [`frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py`](../scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py) | `SUMMARY: PASS=43 FAIL=0` |
+| #2875 | bounded-support | [`POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md`](POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md) | [`frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.py`](../scripts/frontier_post_record_supplied_family_lift_certificate_interface_2026_06_06.py) | `SUMMARY: PASS=39 FAIL=0` |
+
+The primary runner checks all note/runner/cache paths above, verifies cache
+SHA freshness, exports the source packet outside `docs/audit`, and exits with
+`SUMMARY: PASS=155 FAIL=0`.
+
 ## Result
 
 This branch indexes the extended post-record dynamics stack after the
@@ -85,7 +117,7 @@ The runner verifies:
 - each stack layer has an upstream source note, runner source, SHA-fresh cache,
   and the source note names its primary runner;
 - the extended index consumes the repaired directed-certificate
-  `SUMMARY: PASS=60 FAIL=0`, repaired stack-map `SUMMARY: PASS=47 FAIL=0`,
+  `SUMMARY: PASS=64 FAIL=0`, repaired stack-map `SUMMARY: PASS=52 FAIL=0`,
   and repaired campaign-closeout `SUMMARY: PASS=46 FAIL=0` certificates;
 - the stack has six `exact-support` entries, one `bounded-support` entry, and
   three `no-go` entries;
@@ -101,4 +133,5 @@ Run:
 
 ```text
 python3 scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
+# SUMMARY: PASS=155 FAIL=0
 ```

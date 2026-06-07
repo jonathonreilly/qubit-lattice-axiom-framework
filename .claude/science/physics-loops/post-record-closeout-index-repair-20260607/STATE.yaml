@@ -1,0 +1,20 @@
+loop_slug: post-record-closeout-index-repair-20260607
+branch: physics-loop/post-record-closeout-index-repair-20260607
+base: origin/main
+target_claim_id: post_record_dynamics_family_lift_closeout_index_2026-06-06
+target_status: exact-support
+current_goal: repair runner-artifact blocker without audit edits
+cycle_count: 1
+active_route: source packet dependency authority repair
+hard_residual: null
+files_touched:
+  - docs/POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md
+  - logs/runner-cache/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.txt
+  - outputs/post_record_dynamics_family_lift_closeout_index_2026_06_06_source_packet.json
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: local self-check only; independent review-loop/audit remains required
+pr_status: pending
+next_exact_action: open review PR for the repair block
+stop_condition: current block packaged; campaign should pivot to next conditional row after PR creation

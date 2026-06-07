@@ -1,0 +1,21 @@
+loop_slug: lensing-finite-path-packet-manifest
+branch: physics-loop/lensing-finite-path-packet-manifest-20260607
+target_claim_id: lensing_finite_path_explanation_note
+target_status: open-gate audit-unblock
+actual_current_surface_status: audited_conditional
+blocker_source: audit_ledger
+blocker_text: "runner_artifact_issue: include scripts/lensing_long_path_test.py and its fresh runner cache/output so the T_phys=7.5 measured slope -1.4356 and finite-path prediction -1.7336 can be verified within the restricted packet."
+cycle: 1
+active_route: static-import long-path companion packet plus SHA-pinned cache check
+files_touched:
+  - docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+  - scripts/lensing_analytical_finite_path.py
+  - logs/runner-cache/lensing_analytical_finite_path.txt
+open_imports:
+  - exact layer-weighted detector-centroid derivation remains open
+  - row remains an open-gate falsification/diagnostic, not retained physics
+  - independent audit must decide whether packet-manifest repair clears the runner_artifact_issue
+trace_gate: direct_blocker_closure
+review_disposition: local_checks_pass_reviewer_pending
+next_exact_action: "Open review PR; auditor/reviewer can rebuild helper_runner_paths and verify the long-path cache manifest."
+stop_condition: "This block is complete when the review PR is opened; campaign then pivots to the next repairable conditional row."

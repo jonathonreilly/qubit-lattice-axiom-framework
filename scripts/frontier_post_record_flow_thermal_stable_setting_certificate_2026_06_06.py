@@ -42,11 +42,11 @@ GENERATION_KOIDE_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "bounded_obstruction_or_no_selection": 16,
+    "bounded_obstruction_or_no_selection": 17,
     "flow_or_records_stable_feature": 3,
     "generation_or_koide_stable_feature": 4,
     "generic_stable_feature": 15,
-    "thermal_or_score_stable_feature": 18,
+    "thermal_or_score_stable_feature": 20,
 }
 EXPECTED_FLOW_THERMAL_ROWS = sum(EXPECTED_LANE_COUNTS.values())
 
@@ -272,6 +272,7 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
     report("flow/thermal stability row count is current snapshot", len(rows) == EXPECTED_FLOW_THERMAL_ROWS, str(len(rows)))
     report("stable lane counts match expected", dict(counts) == EXPECTED_LANE_COUNTS, str(counts))
     report("stable lane counts sum to row count", sum(counts.values()) == len(rows), str(counts))
+    report("exact flow/thermal ledger slice is printed in full", True, "all rows by lane below")
 
     representatives = {
         "bounded_obstruction_or_no_selection": "koide_bae_probe_native_lattice_flow_bounded_obstruction_note_2026-05-09_probe21",
@@ -294,7 +295,7 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
     print()
     for lane in sorted(buckets):
         print(f"[{lane}]")
-        for row in buckets[lane][:10]:
+        for row in sorted(buckets[lane], key=lambda item: item.get("claim_id") or ""):
             print(
                 "  "
                 + f"{row.get('claim_id')} | {row.get('audit_status')} | "

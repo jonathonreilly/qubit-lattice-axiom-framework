@@ -1,0 +1,22 @@
+loop_slug: post-record-flow-slice-current
+target_claim_id: post_record_flow_thermal_stable_setting_certificate_2026-06-06
+target_status: exact-support
+base_ref: origin/main
+base_sha: d07efaa31
+branch: physics-loop/post-record-flow-slice-current-20260607
+cycle_count: 1
+active_route: exact-current-ledger-slice-packet
+hard_residual: "Audit blocker asked for the restricted packet to include the stability/dynamics selector runner and its transitive support, then re-audit the current row-map computation."
+files_touched:
+  - docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md
+  - scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt
+  - .claude/science/physics-loops/post-record-flow-slice-current/
+open_imports:
+  - "No selector rule is derived; stable setting remains distinct from selected dial."
+  - "Independent audit must decide whether this exact packet resolves the prior runner-artifact issue."
+trace_gate_classification: direct_blocker_closure
+review_findings: "pass: runner PASS=49 FAIL=0; py_compile pass; git diff --check pass; no docs/audit edits"
+pr_status: pending
+next_exact_action: "Push branch and open a review PR."
+stop_condition: "Stop this block after PR creation, then rescan latest conditional backlog for independent tractable repairs."

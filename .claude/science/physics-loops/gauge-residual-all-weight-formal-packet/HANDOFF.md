@@ -18,4 +18,6 @@ Reviewer focus:
 
 Next exact action:
 
-Open the PR and let the reviewer/auditor decide whether the row can be re-audited.
+PR opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3090
+
+Reviewer/auditor decides whether the row can be re-audited.

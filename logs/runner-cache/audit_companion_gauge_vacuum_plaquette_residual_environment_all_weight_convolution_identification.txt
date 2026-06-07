@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
+runner_sha256: 82f4029e4ae3db0224ba31ce425bf2b07ca0d6b57f3d2873d7bebd13adba3264
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_
@@ -96,3 +104,6 @@ Summary
 ========================================================================================
 TOTAL: PASS=31, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

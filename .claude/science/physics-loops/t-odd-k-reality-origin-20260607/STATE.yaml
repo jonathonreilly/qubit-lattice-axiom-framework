@@ -1,0 +1,24 @@
+loop: t-odd-k-reality-origin-20260607
+branch: physics-loop/t-odd-k-reality-origin-20260607
+base: origin/main
+current_goal: "Classify the T-odd/K-odd generation-factor source space for the K-reality origin wall."
+target_status: best-honest-status
+cycle_count: 1
+active_route: "finite source-space classifier"
+hard_residual: "Physical derivation of the required C3-breaking doublet bridge vector."
+files_touched:
+  - docs/T_ODD_K_REALITY_SOURCE_SPACE_CLASSIFIER_NO_GO_NOTE_2026-06-07.md
+  - scripts/frontier_t_odd_k_reality_source_space_classifier.py
+  - logs/runner-cache/frontier_t_odd_k_reality_source_space_classifier.txt
+open_imports:
+  - "physical source for q=P1 T u"
+  - "valid spin-generation entangled carrier, if used"
+no_go_routes:
+  - "T-oddness alone"
+  - "C3-invariant K-odd source beyond A"
+  - "C3 averaging/Record canonicalization of the bridge"
+trace_gate_classification: negative_route_pruning
+review_findings: "local runner PASS=19 FAIL=0; independent review-loop/audit not run"
+pr_status: pending
+next_exact_action: "Package a review PR."
+stop_condition: "Block complete when PR is opened."

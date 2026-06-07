@@ -1,9 +1,9 @@
 # Post-Record Dynamics Authority Stack Map
 
 **Date:** 2026-06-06
-**Type:** exact support / read-only synthesis map
-**Claim type:** methodology
-**Status:** exact-support for mapping the current dynamics
+**Type:** meta
+**Claim type:** meta
+**Status:** exact-support / read-only synthesis map for mapping the current dynamics
 authority stack; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**

@@ -1,0 +1,46 @@
+
+==============================================================================
+A. Carrier and partition checks
+==============================================================================
+[PASS] C^3 = I
+[PASS] S = C+C^2 is K-even Hermitian
+[PASS] S eigenvalues are {-1,-1,+2}
+[PASS] P0 is singlet rank 1 and P1 is doublet rank 2
+[PASS] S = 3 P0 - I
+
+==============================================================================
+B. K-odd Hermitian source-space basis
+==============================================================================
+[PASS] basis[0] is Hermitian and K-odd
+[PASS] basis[1] is Hermitian and K-odd
+[PASS] basis[2] is Hermitian and K-odd
+[PASS] A, B1, B2 are linearly independent K-odd Hermitian directions  --  det Gram=24
+[PASS] A = i(C-C^2) commutes with C and S
+[PASS] B1 and B2 do not commute with S  --  ||[B1,S]||=4.24264, ||[B2,S]||=4.24264
+
+==============================================================================
+C. Orthogonal split: current plus singlet-doublet bridge
+==============================================================================
+[PASS] every sampled T splits into commuting current + pure off-block bridge
+[PASS] noncommuting T-odd bridge is equivalent to choosing a doublet vector
+
+==============================================================================
+D. C3 action fixes A and rotates/kills the bridge
+==============================================================================
+[PASS] C3 averaging kills exactly the noncommuting bridge component
+[PASS] Ad_C on bridge has trace -1 and determinant +1  --  action=[[-0.5, -0.866025], [0.866025, -0.5]]
+[PASS] bridge has no nonzero C3-fixed vector  --  det(Ad_C-I)=3
+
+==============================================================================
+E. Scalar invariants are angle-blind on the unit bridge
+==============================================================================
+[PASS] all unit bridge orientations have eigenvalues {-1,0,+1}
+[PASS] all unit bridge orientations have the same ||[T,S]||
+[PASS] exp(i theta A/sqrt(3)) commutes with C and rotates bridge orientation
+
+TOTAL: PASS=19 FAIL=0
+VERDICT: source-space classifier checks pass.
+  K-odd Hermitian candidates split as current A plus a C3-breaking
+  singlet-doublet bridge. The noncommuting bridge is exactly a
+  supplied doublet vector; C3 averaging kills it. No K-reality
+  closure is claimed.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_detR_default_full_exercise_2026_05_30.py
-runner_sha256: d743ce8253658eaac751e152c01d9a0fffb04fb824a6da23ab1d2afe29b0f39a
+runner_sha256: 43b6288d484458f47fd6f97a4823003f098654299c903ed558f7a5bc7fa1dd00
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 [PASS] X1 substrate i generation-blind ([i*I3,C]=0) + <i*I3,G_U1>_HS=0 -> no descended U(1)
@@ -13,15 +13,15 @@ status: ok
        ||{G,Gchi}||=2.828 (nonzero; a true chiral splitter would anticommute)
 [PASS] CORR#2 import = block(1,1)->Q=2/3 vs dimension(1,2)->Q=1 measure choice; trace ranks neither
        det_C block-count r=1/2; det_R dimension r=1; Schur: no merge of 2 real->1 complex
-[PASS] BOUNDARY source guard: Q=1 default is conditional, r/Q support is retained-sourced
-       no beta=0 tracial-vacuum promotion
+[PASS] BOUNDARY source guard: finite locator only, no default/reference-state claim
+       finite locator only; no beta=0 tracial-vacuum promotion
 
 UPDATED SCORECARD PASS=6 FAIL=0
 VERDICT: FINITE LOCATOR -- tested structures do not make det_C/equal-block counting automatic;
-under a supplied beta=0 tracial reference, the trace/dimension read gives Q=1. CORRECTED:
+they localize Q=2/3 versus Q=1 as a counting fork but do not rank the physical read. CORRECTED:
 the equal-block input is not the chirality gate, not a U(1) symmetry, and not a holomorphic
 measure; it is the block-vs-dimension counting choice the trace permits but does not rank.
-OPEN: beta=0 tracial generation reference vs finite-beta Gibbs remains unclosed.
+OPEN: beta=0 tracial generation reference vs finite-beta Gibbs remains outside this row.
 
 ----- stderr -----
 

@@ -1,19 +1,20 @@
-# Flavor — det_R/det_C counting fork bounded locator: finite algebra confirmed, default status conditional
+# Flavor — det_R/det_C counting fork bounded locator: finite algebra confirmed, no default/reference-state claim
 
 **Date:** 2026-05-30
 **Claim type:** bounded_theorem
-**Claim boundary:** bounded finite-algebra locator + conditional default statement.
-The trace/dimension read gives `r=1` and `Q=1` only after a beta=0 tracial
-generation reference is supplied. This note does not derive that reference
-state from the current framework.
+**Claim boundary:** bounded finite-algebra locator only. The packet localizes
+the `det_C`/equal-block versus `det_R`/dimension-count fork and verifies that
+the tested native structures do not force the equal-block read. It makes no
+default/reference-state claim and does not rank the physical generation
+reference state.
 **Runner:** `scripts/flavor_detR_default_full_exercise_2026_05_30.py` (SCORECARD PASS=6).
 **Source:** 9-agent adversarial exercise `wf_b1f506df` (establish 5 links → 4 flip-attacks → adjudication), all numerics re-verified.
 
 ## 2026-06-07 boundary repair
 
 The finite algebra in this packet is worth preserving, but the older wording
-over-read it as a framework-native "Q=1 default" theorem. The current bounded
-claim is sharper:
+over-read it as a framework-native default/reference-state theorem. The current
+bounded claim is sharper:
 
 - the substrate `i`, `C^3=I` rephasing quantization, `(Z_2)^3` real-corner
   check, and `G_U1`/`Gamma_chi` distinction are finite carrier algebra;
@@ -22,18 +23,31 @@ claim is sharper:
 - the equal-block versus dimension/Plancherel split is sourced to audited
   bounded
   [`KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`](KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md);
-- the beta=0 tracial-vacuum premise is **not** derived here and is not promoted.
+- the beta=0 tracial-vacuum premise is **not** derived here, is not promoted,
+  and is not part of this packet's load-bearing claim.
 
 Thus the honest result is a bounded route-pruning statement: the tested native
-structures do not make `det_C`/equal-block counting automatic, and the trace
-read is the dimension/Plancherel read if the tracial generation reference is
-supplied. The packet does not choose the physical generation reference state.
+structures do not make `det_C`/equal-block counting automatic. The packet does
+not choose the physical generation reference state, does not assert a `Q=1`
+default, and does not derive a beta=0 tracial generation reference.
+
+**2026-06-07 scope repair:** the audit requested:
+
+```text
+missing_bridge_theorem: provide a retained derivation of the beta=0 tracial
+generation reference, or explicitly narrow the row to the finite locator with
+no default/reference-state claim.
+```
+
+This source note takes the narrowing route. The retained science is the finite
+locator for the counting fork; all default/reference-state language is
+non-load-bearing context or removed.
 
 ## The crux verdict — the finite counting fork does NOT flip
 Tested whether the complex `M₂(ℂ)` qubit makes `det_C` native (which would make Q=2/3 the default,
 r=1/2 *derived*). **All four flip-attacks confirm that the tested structures
-do not supply `det_C`; under a supplied tracial reference they leave the
-dimension/Plancherel `det_R` read.** The complex structure does **not** descend
+do not supply `det_C` and do not rank the two allowed reads.** The complex
+structure does **not** descend
 as a doublet U(1):
 - **Substrate `i` is generation-blind:** multiplication-by-`i` restricts to the scalar `i·I₃` on the
   hw=1 triplet (`[i·I₃, C]=0`); the doublet generator `G_U1=(C−C²)/√3` has **zero** HS-overlap with it.
@@ -64,9 +78,8 @@ are both excluded, the residual import is solely the **block-vs-dimension counti
 
 The retained trace τ **permits both and ranks neither** (Schur: the two real
 doublet modes cannot be merged into one complex mode by any native operator).
-If the beta=0 tracial generation reference is supplied, its dimension count is
-`Q=1`; the observed `Q=2/3` is the center-count/equal-block read, which this
-packet does not derive.
+The dimension/Plancherel read corresponds to `Q=1`; the center-count/equal-block
+read corresponds to `Q=2/3`. This packet does not select which read is physical.
 
 ## Precise one-sentence characterization
 > Charged-lepton Koide `Q=2/3` (`r=1/2`) requires choosing the `(1,1)`
@@ -77,17 +90,19 @@ packet does not derive.
 > `(Z₂)³` real characters and the CPT reflection `J_b→−J_b`), and which is
 > **not** the chiral orbit-splitting grading (`G_U1` commutes with `Γ_χ`).
 
-## The one open gap (Link 1, Half B)
-The exercise found one genuine, un-closed assumption. Splitting Link 1:
+## Non-claim: physical generation reference state
+The exercise found one genuine, un-closed assumption in its original framing.
+Splitting Link 1:
 - **Half A (which state is tracial):** airtight/retained — the UHF II_∞ trace is unique (`τ=Tr/3`,
   three equal real modes).
 - **Half B (that the *physical generation vacuum* IS that tracial β=0 state):** **open,
   not derived here** (the PRR/no-extra-structure premise, `inner_automorphism_invariance_...`).
   The framework's own `axiom_first_kms_condition` note has physical equilibria as β>0 Gibbs states
   (non-tracial). A finite-β route cannot make `det_C` native (Schur again), so it does not flip the
-  import — but framework baseline do **not** force β=0, so "`Q=1` is the trace/det_R read" is conditional on the
-  tracial-vacuum premise. Closing or refuting Half B (β=0 trace vs β>0 Gibbs for the generation
-  reference, without the PRR premise) is the sharpest next computation; the second is building the
+  import — but framework baseline do **not** force β=0. This packet therefore
+  does not claim a `Q=1` default or physical reference-state theorem. Closing or
+  refuting Half B (β=0 trace vs β>0 Gibbs for the generation reference, without
+  the PRR premise) is outside this finite-locator row; the second open frontier is building the
   `M₂(ℂ)⊗(Z₂)³` substrate-parent to test the Correction-#1 unification.
 
 ## Stale-citation flags (verified vs origin/main ledger)
@@ -95,6 +110,6 @@ The exercise found one genuine, un-closed assumption. Splitting Link 1:
   (retained_bounded), `powers_uhf_tracial_uniqueness` + `pre_record_reference_state` (retained, Half-A scope),
   `RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05` (retained), and
   `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29` (retained_bounded).
-- Open / not promoted (load-bearing only for a physical default claim, which this bounded packet does not make):
+- Open / not promoted (not load-bearing for this finite-locator claim):
   `inner_automorphism_invariance_tracial_identification`, `axiom_first_kms_condition`, and
   `koide_real_rep_block_count_permitted_not_forced`.

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 721 |
+| **retained_bounded** | 722 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1298 |
+| unaudited | 1297 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1134 |
+| `audited_clean` | 1135 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1605 |
+| `unaudited` | 1604 |
 
 | claim_type | count |
 |---|---:|
@@ -432,6 +432,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_qubit_berry_holonomy_probe_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -6154,6 +6155,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the specified C3-circulant family, the tested choice-free spectral/HS functionals extremize at r=0 or r=1, while r=1/2 appears only after folding {C,C^2} into one two-sector channel.  _(class `A`)_
 - **chain closes:** True — The eigenvalues are a+2b,a-b,a-b, giving Tr(H^2)=3a^2+6b^2 and Q=1/3+(2/3)r; the HS norms of I and J-I are 3 and 6, so two-channel equipartition gives r=1/2 only after choosing that folded channel split. Independent checks of the listed entropy, purity, relative-entropy, HS-metric, and positivity probes confirm they select the uniform three-eigenvalue endpoint, the three-mode HS point, or no interior point, not r=1/2.
 - **rationale:** The runner source performs finite symbolic and matrix checks rather than importing the target value from another note or external comparator. The restricted packet's accepted axiom authority is used only as framework background and does not supply the block fold, which is exactly the residual isolated by the no-go. The clean verdict is scoped: it audits the enumerated operator-spectral/HS route only and does not rule out the chiral, non-tracial, dynamical, or owner-admitted block-count routes named as still open.
+- **auditor confidence:** high
+
+### `flavor_q1_default_rests_on_prr_note_2026-05-30`
+
+- **Note:** [`FLAVOR_Q1_DEFAULT_RESTS_ON_PRR_NOTE_2026-05-30.md`](../../docs/FLAVOR_Q1_DEFAULT_RESTS_ON_PRR_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given only the displayed C3 generation-factor symmetry with P_s=J_all/3 and P_d=I-P_s, the admissible invariant reference-state cone contains a non-tracial 1:1 state, so C3 covariance alone does not force the tracial 1:2 block weighting.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-002055-75bdb27ba0-flavor_q1_default_rests_on_p`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The explicit C3-invariant state rho_(1:1)=1/2 P_s + 1/4 P_d is positive semidefinite, trace one, commutes with the C3 shift, and has singlet/doublet block masses 1:1 rather than the tracial 1:2 weighting.  _(class `A`)_
+- **chain closes:** True — The projector algebra closes directly: P_s and P_d are orthogonal C3-invariant projectors of ranks 1 and 2, and rho_(1:1)=1/2 P_s+1/4 P_d has eigenvalues 1/2, 1/4, 1/4, trace one, and equal block masses. This is enough to refute uniqueness of the tracial weighting under C3 alone.
+- **rationale:** The restricted packet proves a bounded negative statement by explicit finite-dimensional algebra, not by importing an external authority or introducing a definition substitution. The runner source computes the projectors, the candidate state, C3 commutation, block masses, non-invariance under sampled U(3), and symbolic Q-formula independence rather than merely printing expected values. The conclusion is carefully scoped to stipulated C3 covariance alone and does not promote a framework-baseline, PRR, or physical-readout claim.
 - **auditor confidence:** high
 
 ### `flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02`

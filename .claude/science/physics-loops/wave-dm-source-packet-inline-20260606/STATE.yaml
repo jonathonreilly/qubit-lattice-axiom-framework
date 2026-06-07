@@ -1,0 +1,27 @@
+loop_slug: wave-dm-source-packet-inline-20260606
+target_claim_id: wave_direct_dm_h025_fam2_seed1_followup_note
+target_status: exact-support
+branch: physics-loop/wave-dm-source-packet-inline-20260606
+base: origin/main
+cycle_count: 1
+active_route: inline transitive helper source-packet checks into the target-specific wave runner
+hard_residual: "Independent audit must decide whether the repaired restricted packet is sufficient for the row; this branch only closes the missing measure_dm/continuum-helper source exposure blocker."
+files_touched:
+  - docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
+  - scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+  - logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt
+  - logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt
+  - outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json
+  - outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json
+open_imports:
+  - independent audit verdict
+  - portability or amplitude-law promotion
+  - theorem-grade cross-family wave law
+no_go_routes:
+  - treating a bounded target replay as an independent theorem-grade surface
+  - treating packet-completeness repair as ledger/status movement
+trace_gate_classification: direct_blocker_closure
+review_findings: local packet-scope pass; external review/audit still required
+pr_status: ready_to_open
+next_exact_action: "Open review PR and hand to reviewer/auditor."
+stop_condition: "This coherent packet-repair block is complete; continue campaign on the next conditional source-side target."

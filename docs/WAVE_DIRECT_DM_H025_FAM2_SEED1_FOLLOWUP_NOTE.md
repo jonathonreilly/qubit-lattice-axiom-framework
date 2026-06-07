@@ -147,6 +147,32 @@ Current source-packet output:
 SUMMARY: WAVE SOURCE PACKET PASS=85 FAIL=0
 ```
 
+## 2026-06-06 Primary-Runner Packet Inlining Repair
+
+The primary target-specific runner now checks the source-packet exposure inline.
+After recomputing the bounded `Fam2`, seed-`1`, `H=0.25` replay and asserting
+the archived target values, it verifies:
+
+- the target runner/cache/JSON, generic point runner/cache, matched-history
+  helper/cache, wave-retardation helper/cache, source-packet manifest cache,
+  and manifest JSON are linked from this note;
+- the `measure_dm` helper source includes the calls through `solve_wave`,
+  `prop_beam`, and `cz`;
+- the continuum helper source includes `field_at`, `prop_beam`, `cz`,
+  `solve_wave`, `grow`, and the fixed `S_PHYS = 0.004` constant;
+- the helper caches are SHA-fresh and clean-exit;
+- the source-packet manifest cache and JSON report zero failures.
+
+The primary runner reports:
+
+```text
+INLINE SOURCE PACKET: PASS=54 FAIL=0
+```
+
+This remains a packet-completeness repair. It does not promote the note or
+change the bounded target-replay claim boundary; independent audit owns any
+ledger/status movement.
+
 ## Artifact chain
 
 - [`scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py`](../scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py)

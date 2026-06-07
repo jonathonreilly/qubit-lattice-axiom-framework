@@ -31,7 +31,7 @@ WAVE DIRECT-DM H025 FAM2 SEED1: TRANSITIVE SOURCE PACKET MANIFEST
 [PASS] note_names_manifest_artifact:manifest_runner: scripts/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.py is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
 [PASS] note_names_manifest_artifact:manifest_cache: logs/runner-cache/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.txt is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
 [PASS] note_names_manifest_artifact:manifest_json: outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json is named in docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md
-[PASS] source_untruncated:target_runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py has 5121 bytes
+[PASS] source_untruncated:target_runner: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py has 11226 bytes
 [PASS] source_marker:target_runner:FAMILY = "Fam2": FAMILY = "Fam2" present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
 [PASS] source_marker:target_runner:SEED = 1: SEED = 1 present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
 [PASS] source_marker:target_runner:H_VALUE = 0.25: H_VALUE = 0.25 present in scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
@@ -58,7 +58,7 @@ WAVE DIRECT-DM H025 FAM2 SEED1: TRANSITIVE SOURCE PACKET MANIFEST
 [PASS] source_marker:continuum_helper_source:field[idx] = field_at: field[idx] = field_at present in scripts/wave_retardation_continuum_limit.py
 [PASS] source_marker:continuum_helper_source:def cz: def cz present in scripts/wave_retardation_continuum_limit.py
 [PASS] cache_runner_matches:target_cache: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py == scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
-[PASS] cache_sha_fresh:target_cache: cache sha 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d current sha 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d
+[PASS] cache_sha_fresh:target_cache: cache sha 22bbd7626d7bf9074b310d0feb7e892deb427d8dc7d8b3ab09d5a86bdcb65bae current sha 22bbd7626d7bf9074b310d0feb7e892deb427d8dc7d8b3ab09d5a86bdcb65bae
 [PASS] cache_exit_ok:target_cache: exit_code=0 status=ok
 [PASS] cache_contains:target_cache:status: ok: status: ok
 [PASS] cache_contains:target_cache:PASS family is fixed to Fam2: PASS family is fixed to Fam2
@@ -100,3 +100,4 @@ SUMMARY: WAVE SOURCE PACKET PASS=85 FAIL=0
 Output written: outputs/wave_direct_dm_h025_fam2_seed1_source_packet_manifest_2026_06_06.json
 
 ----- stderr -----
+

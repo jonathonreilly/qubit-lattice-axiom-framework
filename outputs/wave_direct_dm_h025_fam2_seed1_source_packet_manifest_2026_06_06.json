@@ -134,7 +134,7 @@
     {
       "name": "source_untruncated:target_runner",
       "pass": true,
-      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py has 5121 bytes"
+      "detail": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py has 11226 bytes"
     },
     {
       "name": "source_marker:target_runner:FAMILY = \"Fam2\"",
@@ -269,7 +269,7 @@
     {
       "name": "cache_sha_fresh:target_cache",
       "pass": true,
-      "detail": "cache sha 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d current sha 52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d"
+      "detail": "cache sha 22bbd7626d7bf9074b310d0feb7e892deb427d8dc7d8b3ab09d5a86bdcb65bae current sha 22bbd7626d7bf9074b310d0feb7e892deb427d8dc7d8b3ab09d5a86bdcb65bae"
     },
     {
       "name": "cache_exit_ok:target_cache",

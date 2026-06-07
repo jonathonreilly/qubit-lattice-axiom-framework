@@ -10,6 +10,8 @@ bare_retained_allowed=false.
 [`scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py`](../scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_generation_koide_stable_location_index_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_generation_koide_stable_location_index_2026_06_06.txt)
+**Current slice export:**
+[`outputs/post_record_generation_koide_stable_location_index_2026_06_06_current_slice.json`](../outputs/post_record_generation_koide_stable_location_index_2026_06_06_current_slice.json)
 
 ## Result
 
@@ -17,10 +19,10 @@ This block converts the generation/Koide dial queue into a stable-location
 index:
 
 ```text
-102 koide_or_generation_selector rows
+104 koide_or_generation_selector rows
   + 4 generation_or_koide_stable_feature rows
   + supplied stable-setting certificate semantics
-  => 106-row generation/Koide stable-location index
+  => 108-row generation/Koide stable-location index
 ```
 
 The index records where a stable location can live on a dial under a supplied
@@ -29,18 +31,18 @@ score, rule, map, or kernel. It is not a selected dial.
 ## Current row map
 
 On the current ledger snapshot, the upstream selector/dial subdivision has
-`102` `koide_or_generation_selector` rows. This block splits those selector
+`104` `koide_or_generation_selector` rows. This block splits those selector
 rows as:
 
 | Selector row class | Rows |
 |---|---:|
-| `koide_value_or_phase_location` | 47 |
-| `obstruction_or_open_gate` | 38 |
+| `koide_value_or_phase_location` | 48 |
+| `obstruction_or_open_gate` | 39 |
 | `generation_structure_location` | 5 |
 | `selector_surface_location` | 5 |
 | `readout_carrier_or_record_location` | 3 |
-| `measure_weight_or_source_location` | 2 |
-| `other_generation_koide_location` | 2 |
+| `measure_weight_or_source_location` | 3 |
+| `other_generation_koide_location` | 1 |
 
 The flow/thermal stable-setting certificate also exposes `4`
 `generation_or_koide_stable_feature` rows:
@@ -50,7 +52,7 @@ The flow/thermal stable-setting certificate also exposes `4`
 - `koide_records_objectivity_conditional_note_2026-05-31`;
 - `stable_post_record_dial_location_certificate_2026-06-06`.
 
-Total generation/Koide dial-relevant rows indexed here: `106`.
+Total generation/Koide dial-relevant rows indexed here: `108`.
 
 ## Meaning
 
@@ -104,14 +106,19 @@ The runner verifies:
 - source anchors in this note, the selector/dial subdivision, the stable-setting
   certificate, the conditional evidence ladder, and the two generation/Koide
   stable-feature source notes;
+- SHA-fresh source/cache packets for the two imported helpers, the conditional
+  evidence ladder, and the non-retained generation/Koide stable-feature
+  authority runners;
 - exact finite examples for `Q(r)=(1+2r)/3`, the supplied `r -> 2r^2`
   separatrix at `r=1/2`, and the objectivity maximum
   `r*=w_p/(2 w_s)`;
 - selected-dial status remains blocked without a selector rule;
-- the `102` Koide/generation selector rows split into the row classes above;
+- the `104` Koide/generation selector rows split into the row classes above;
 - the `4` generation/Koide stable-feature rows are present;
-- the combined generation/Koide dial-relevant index has `106` rows;
+- the combined generation/Koide dial-relevant index has `108` rows;
 - the audit ledger hash is unchanged after the scan;
+- an exact JSON export of the current `108` row slice is written outside
+  `docs/audit`;
 - no audit verdict, audit-data write, retained/promoted claim, selected-dial
   derivation, stable-location-to-selected-dial conversion, or generation/Koide
   dial-selection flag is set.

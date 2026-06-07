@@ -15,8 +15,13 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
+OUTPUT = ROOT / "outputs/post_record_generation_koide_stable_location_index_2026_06_06_current_slice.json"
 SELECTOR_RUNNER = ROOT / "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
+SELECTOR_CACHE = ROOT / "logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt"
 STABLE_RUNNER = ROOT / "scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py"
+STABLE_CACHE = ROOT / "logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt"
+EVIDENCE_LADDER_RUNNER = ROOT / "scripts/frontier_post_record_conditional_audit_evidence_ladder_2026_06_06.py"
+EVIDENCE_LADDER_CACHE = ROOT / "logs/runner-cache/frontier_post_record_conditional_audit_evidence_ladder_2026_06_06.txt"
 PASS = 0
 FAIL = 0
 
@@ -53,19 +58,72 @@ SELECTOR_SURFACE_RE = re.compile(
 
 EXPECTED_SELECTOR_CLASSES = {
     "generation_structure_location": 5,
-    "koide_value_or_phase_location": 47,
-    "measure_weight_or_source_location": 2,
-    "obstruction_or_open_gate": 38,
-    "other_generation_koide_location": 2,
+    "koide_value_or_phase_location": 48,
+    "measure_weight_or_source_location": 3,
+    "obstruction_or_open_gate": 39,
+    "other_generation_koide_location": 1,
     "readout_carrier_or_record_location": 3,
     "selector_surface_location": 5,
 }
+EXPECTED_SELECTOR_ROWS = sum(EXPECTED_SELECTOR_CLASSES.values())
 EXPECTED_STABLE_FEATURE_IDS = {
     "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
     "generation_dial_dynamics_stability_classifier_2026-06-05",
     "koide_records_objectivity_conditional_note_2026-05-31",
     "stable_post_record_dial_location_certificate_2026-06-06",
 }
+EXPECTED_STABLE_FEATURE_ROWS = len(EXPECTED_STABLE_FEATURE_IDS)
+EXPECTED_GENERATION_KOIDE_INDEX_ROWS = EXPECTED_SELECTOR_ROWS + EXPECTED_STABLE_FEATURE_ROWS
+
+SOURCE_PACKET_ITEMS = [
+    {
+        "label": "selector subdivision helper",
+        "source": SELECTOR_RUNNER,
+        "cache": SELECTOR_CACHE,
+        "needles": [
+            "SUMMARY: PASS=28 FAIL=0",
+            "KOIDE_OR_GENERATION_SELECTOR_ROWS=104",
+            "STABILITY_OR_DYNAMICS_SELECTOR_ROWS=97",
+        ],
+    },
+    {
+        "label": "stable-setting helper",
+        "source": STABLE_RUNNER,
+        "cache": STABLE_CACHE,
+        "needles": [
+            "SUMMARY: PASS=48 FAIL=0",
+            "FLOW_OR_THERMAL_STABILITY_ROWS=60",
+            "GENERATION_OR_KOIDE_STABLE_FEATURE_ROWS=4",
+        ],
+    },
+    {
+        "label": "conditional evidence ladder",
+        "source": EVIDENCE_LADDER_RUNNER,
+        "cache": EVIDENCE_LADDER_CACHE,
+        "needles": [
+            "SUMMARY: PASS=42 FAIL=0",
+            "CONDITIONAL_AUDIT_EVIDENCE_LADDER=TRUE",
+        ],
+    },
+    {
+        "label": "generation dial dynamics authority",
+        "source": ROOT / "scripts/generation_dial_dynamics_stability_classifier_2026_06_05.py",
+        "cache": ROOT / "logs/runner-cache/generation_dial_dynamics_stability_classifier_2026_06_05.txt",
+        "needles": [
+            "[PASS] D1.1 exact dial endpoint s=0 is r=1/2",
+            "[PASS] D2.5 gradient ascent of two-sector entropy stabilizes s=0",
+        ],
+    },
+    {
+        "label": "Koide records objectivity authority",
+        "source": ROOT / "scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py",
+        "cache": ROOT / "logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt",
+        "needles": [
+            "Koide r=1/2 is a CONDITIONAL",
+            "9/9 checks passed",
+        ],
+    },
+]
 
 
 def load_module(name: str, path: Path):
@@ -105,6 +163,22 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def rel(path: Path) -> str:
+    return path.relative_to(ROOT).as_posix()
+
+
+def cache_header(text: str) -> dict[str, str]:
+    header: dict[str, str] = {}
+    if "----- stdout -----" not in text:
+        return header
+    for line in text.split("----- stdout -----", 1)[0].splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        header[key.strip()] = value.strip()
+    return header
+
+
 def read_rel(path: str) -> str:
     return (ROOT / path).read_text(encoding="utf-8")
 
@@ -114,6 +188,33 @@ def require_text(path: str, needles: list[str]) -> None:
     report(f"{path} exists", True)
     for needle in needles:
         report(f"{path} contains: {needle}", needle in text)
+
+
+def source_packet_checks() -> None:
+    section("Source-packet checks")
+    for item in SOURCE_PACKET_ITEMS:
+        label = item["label"]
+        source = item["source"]
+        cache = item["cache"]
+        report(f"{label} source exists", source.exists(), rel(source))
+        if source.exists():
+            source_sha = digest(source)
+            report(f"{label} source SHA is available", len(source_sha) == 64, source_sha)
+        else:
+            source_sha = ""
+        report(f"{label} cache exists", cache.exists(), rel(cache))
+        if not cache.exists():
+            continue
+        text = cache.read_text(encoding="utf-8", errors="replace")
+        header = cache_header(text)
+        if header:
+            report(f"{label} cache runner matches source", header.get("runner") == rel(source), header.get("runner", ""))
+            report(f"{label} cache SHA is fresh", header.get("runner_sha256") == source_sha, header.get("runner_sha256", ""))
+            report(f"{label} cache status ok", header.get("status") == "ok" and header.get("exit_code") == "0", str(header))
+        else:
+            report(f"{label} legacy cache has PASS evidence", "[PASS]" in text and "[FAIL]" not in text)
+        for needle in item["needles"]:
+            report(f"{label} cache contains: {needle}", needle in text)
 
 
 def row_text(row: dict) -> str:
@@ -203,14 +304,14 @@ def source_anchor_checks() -> None:
         [
             "stable-location index",
             "It is not a selected dial.",
-            "Total generation/Koide dial-relevant rows indexed here: `106`.",
+            "Total generation/Koide dial-relevant rows indexed here: `108`.",
             "Does not select or force a generation/Koide dial location.",
         ],
     )
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "`koide_or_generation_selector` | 102",
+            "`koide_or_generation_selector` | 104",
             "Does not turn stable settings into selected dials.",
             "Does not select or force a generation/Koide dial location.",
         ],
@@ -229,6 +330,22 @@ def source_anchor_checks() -> None:
             "stable dial setting | supplied score/rule plus map/flow stability certificate",
             "selected dial value | selector/invariance/target rule",
             "stable settings are not selected dials",
+        ],
+    )
+    require_text(
+        "docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md",
+        [
+            "r=1/2",
+            "stable",
+            "not forced by Lattice, Quantum, and Record alone",
+        ],
+    )
+    require_text(
+        "docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md",
+        [
+            "Stable Post-Record Dial Location Certificate",
+            "It is not forced by the Record axiom",
+            "stability by itself does not choose",
         ],
     )
     require_text(
@@ -293,14 +410,17 @@ def row_checks() -> tuple[list[dict], list[dict], Counter[str]]:
         buckets[selector_location_class(row)].append(row)
     counts = Counter({bucket: len(items) for bucket, items in buckets.items()})
 
-    report("Koide/generation selector row count is current snapshot", len(selector_rows) == 102, str(len(selector_rows)))
+    report("Koide/generation selector row count is current snapshot", len(selector_rows) == EXPECTED_SELECTOR_ROWS, str(len(selector_rows)))
     report("selector location counts match expected", dict(counts) == EXPECTED_SELECTOR_CLASSES, str(counts))
     report("selector location counts sum to selector rows", sum(counts.values()) == len(selector_rows), str(counts))
 
     stable_ids = {row.get("claim_id") for row in stable_rows}
-    report("generation/Koide stable-feature row count is current snapshot", len(stable_rows) == 4, str(stable_ids))
+    report("generation/Koide stable-feature row count is current snapshot", len(stable_rows) == EXPECTED_STABLE_FEATURE_ROWS, str(stable_ids))
     report("generation/Koide stable-feature ids match", stable_ids == EXPECTED_STABLE_FEATURE_IDS, str(stable_ids))
-    report("combined generation/Koide dial-relevant index has 106 rows", len(selector_rows) + len(stable_rows) == 106)
+    report(
+        "combined generation/Koide dial-relevant index has 108 rows",
+        len(selector_rows) + len(stable_rows) == EXPECTED_GENERATION_KOIDE_INDEX_ROWS,
+    )
     report("stable-feature rows are disjoint from selector rows", stable_ids.isdisjoint({row.get("claim_id") for row in selector_rows}))
 
     representatives = {
@@ -345,6 +465,47 @@ def row_checks() -> tuple[list[dict], list[dict], Counter[str]]:
     return selector_rows, stable_rows, counts
 
 
+def export_slice(selector_rows: list[dict], stable_rows: list[dict], counts: Counter[str]) -> None:
+    section("Current slice export")
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "claim_id": "post_record_generation_koide_stable_location_index_2026-06-06",
+        "ledger_sha256": digest(LEDGER),
+        "selector_rows": len(selector_rows),
+        "stable_feature_rows": len(stable_rows),
+        "total_rows": len(selector_rows) + len(stable_rows),
+        "selector_location_counts": dict(sorted(counts.items())),
+        "stable_feature_ids": sorted(row.get("claim_id") for row in stable_rows),
+        "selector_row_ids": sorted(row.get("claim_id") for row in selector_rows),
+        "rows": [
+            {
+                "claim_id": row.get("claim_id"),
+                "audit_status": row.get("audit_status"),
+                "effective_status": row.get("effective_status"),
+                "claim_type": row.get("claim_type"),
+                "note_path": row.get("note_path"),
+                "slice": "selector",
+                "selector_location_class": selector_location_class(row),
+            }
+            for row in sorted(selector_rows, key=lambda item: item.get("claim_id") or "")
+        ]
+        + [
+            {
+                "claim_id": row.get("claim_id"),
+                "audit_status": row.get("audit_status"),
+                "effective_status": row.get("effective_status"),
+                "claim_type": row.get("claim_type"),
+                "note_path": row.get("note_path"),
+                "slice": "stable_feature",
+                "selector_location_class": None,
+            }
+            for row in sorted(stable_rows, key=lambda item: item.get("claim_id") or "")
+        ],
+    }
+    OUTPUT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    report("current 108-row slice export written", OUTPUT.exists(), rel(OUTPUT))
+
+
 def firewall_checks() -> None:
     section("Firewall flags")
     audit_data_written = False
@@ -374,8 +535,10 @@ def firewall_checks() -> None:
 
 def main() -> int:
     source_anchor_checks()
+    source_packet_checks()
     certificate_checks()
     selector_rows, stable_rows, counts = row_checks()
+    export_slice(selector_rows, stable_rows, counts)
     firewall_checks()
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")

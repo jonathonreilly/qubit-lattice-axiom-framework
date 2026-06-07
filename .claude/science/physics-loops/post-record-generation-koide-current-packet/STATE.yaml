@@ -1,0 +1,32 @@
+loop_slug: post-record-generation-koide-current-packet
+branch: physics-loop/post-record-generation-koide-current-packet-20260607
+base: origin/main@a26b0f21e
+date: 2026-06-07
+mode: science_fix
+target_status: exact-support
+target_claim_id: post_record_generation_koide_stable_location_index_2026-06-06
+active_route: current_slice_source_packet
+hard_residual: "runner_artifact_issue: include the two importlib-loaded helper runner sources and provide the selector subdivision, stable-setting certificate, evidence-ladder, and non-retained stable-feature authority packets before re-audit."
+files_touched:
+  - docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md
+  - docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md
+  - docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md
+  - docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md
+  - scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
+  - scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
+  - scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py
+  - scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.txt
+  - logs/runner-cache/frontier_post_record_generation_koide_stable_location_index_2026_06_06.txt
+  - outputs/post_record_generation_koide_stable_location_index_2026_06_06_current_slice.json
+  - .claude/science/physics-loops/post-record-generation-koide-current-packet/
+open_imports:
+  - independent_audit_required
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_disposition: local_self_review_pass
+pr_status: pending_create
+next_exact_action: "Commit, push, open PR, then rescan uncovered conditionals for any non-duplicative exact-support target."
+stop_condition: "Stop only after the refreshed queue has no independent quick repair left."

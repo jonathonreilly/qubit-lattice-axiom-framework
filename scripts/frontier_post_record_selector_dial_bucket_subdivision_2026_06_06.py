@@ -58,9 +58,9 @@ STABILITY_RE = re.compile(r"\b(stable|stability|flow|arrow|dynamics|thermaliz|at
 GENERIC_SELECTOR_RE = re.compile(r"\b(selector|selects|selected|dial|invariance|symmetry|target|rule)\b", re.IGNORECASE)
 
 EXPECTED_SUBCOUNTS = {
-    "koide_or_generation_selector": 102,
-    "stability_or_dynamics_selector": 90,
-    "measure_weight_normalization": 44,
+    "koide_or_generation_selector": 104,
+    "stability_or_dynamics_selector": 97,
+    "measure_weight_normalization": 45,
     "generic_selector_rule": 2,
 }
 EXPECTED_SELECTOR_ROWS = sum(EXPECTED_SUBCOUNTS.values())

@@ -36,17 +36,17 @@ on a dial without forcing that location to be the selected physical value.
 ## Current row map
 
 On the current ledger snapshot, the upstream stability/dynamics subdivision has
-`56` `flow_or_thermal_stability` rows. This block classifies them as:
+`60` `flow_or_thermal_stability` rows. This block classifies them as:
 
 | Stable-setting lane | Rows |
 |---|---:|
-| `bounded_obstruction_or_no_selection` | 16 |
+| `bounded_obstruction_or_no_selection` | 18 |
 | `flow_or_records_stable_feature` | 3 |
 | `generation_or_koide_stable_feature` | 4 |
-| `generic_stable_feature` | 15 |
-| `thermal_or_score_stable_feature` | 18 |
+| `generic_stable_feature` | 14 |
+| `thermal_or_score_stable_feature` | 21 |
 
-Total: `56` rows.
+Total: `60` rows.
 
 ## Meaning
 
@@ -104,7 +104,7 @@ The runner verifies:
 - exact finite examples for a supplied score minimum, a supplied flow
   separatrix, and a supplied thermal root;
 - selected-dial status remains blocked without a selector rule;
-- the current `flow_or_thermal_stability` row count is `56`;
+- the current `flow_or_thermal_stability` row count is `60`;
 - row-lane counts match the current snapshot;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;

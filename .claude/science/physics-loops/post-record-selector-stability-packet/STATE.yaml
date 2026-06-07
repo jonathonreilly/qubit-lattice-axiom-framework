@@ -1,0 +1,50 @@
+loop_slug: post-record-selector-stability-packet
+date: 2026-06-07
+mode: science-fix
+target_status: exact-support
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+target_claim_ids:
+  - post_record_stability_dynamics_selector_subdivision_2026-06-06
+  - post_record_measure_weight_normalization_subdivision_2026-06-06
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: runner_certificate
+cycle_count: 1
+active_route: post-record helper source plus bounded row-slice packet repair
+files_touched:
+  - docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md
+  - docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md
+  - docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+  - docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py
+  - scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
+  - scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+  - scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
+  - outputs/post_record_measure_weight_normalization_slice_2026_06_07.json
+  - outputs/post_record_stability_dynamics_selector_slice_2026_06_07.json
+open_imports:
+  - physical selector/dial authority remains out of scope
+  - physical measure/prior/source derivation from Record remains out of scope
+  - physical arrow/dynamics derivation from Record remains out of scope
+closed_or_reduced_imports:
+  - target runners now statically expose the selector/dial helper source
+  - target runners now verify bounded ledger-row exports against the current ledger-derived split
+  - current ledger drift is reconciled across row-bucketing, selector/dial, measure/weight, and stability/dynamics counts
+checks:
+  - command: python3 scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py
+    result: SUMMARY PASS=44 FAIL=0
+  - command: python3 scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
+    result: SUMMARY PASS=28 FAIL=0
+  - command: python3 scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+    result: SUMMARY PASS=53 FAIL=0
+  - command: python3 scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
+    result: SUMMARY PASS=37 FAIL=0
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py,scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py,scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py,scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py --check-only --push-mode=none
+    result: all relevant caches fresh
+  - command: git diff -- docs/audit | wc -c
+    result: "0"
+review_disposition: pass_for_scope
+pr_status: pending
+next_exact_action: "Use the refreshed 248-row selector queue to attack either selector/tangent readout-weight bridges or flow/thermal stability bridges from retained premises."
+stop_condition: "This block is complete when pushed as a review PR; campaign should then pivot to the next conditional row."

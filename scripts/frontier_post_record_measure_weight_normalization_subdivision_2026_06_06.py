@@ -7,15 +7,15 @@ from collections import Counter, defaultdict
 from fractions import Fraction
 from pathlib import Path
 import hashlib
-import importlib.util
 import json
 import re
 import sys
 
+import frontier_post_record_selector_dial_bucket_subdivision_2026_06_06 as prev
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-PREV = ROOT / "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
+SLICE = ROOT / "outputs/post_record_measure_weight_normalization_slice_2026_06_07.json"
 PASS = 0
 FAIL = 0
 
@@ -46,25 +46,13 @@ SELECTOR_TANGENT_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "character_path_channel_weight": 9,
-    "generic_measure_weight_import": 7,
+    "character_path_channel_weight": 10,
+    "generic_measure_weight_import": 6,
     "selector_tangent_readout_weight": 7,
     "source_measure_or_rn_bridge": 15,
-    "trace_normalization_reference": 6,
+    "trace_normalization_reference": 7,
 }
 EXPECTED_MEASURE_ROWS = sum(EXPECTED_LANE_COUNTS.values())
-
-
-def load_previous():
-    spec = importlib.util.spec_from_file_location("selector_dial_subdivision", PREV)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot load {PREV}")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
-
-
-prev = load_previous()
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -126,12 +114,13 @@ def source_anchor_checks() -> None:
             "Finite normalization can certify",
             "Does not select or force a generation/Koide dial location",
             "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
+            "outputs/post_record_measure_weight_normalization_slice_2026_06_07.json",
         ],
     )
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "measure_weight_normalization` | 44",
+            "measure_weight_normalization` | 45",
             "measure/weight/normalization rows",
             "Does not turn stable settings into selected dials.",
         ],
@@ -199,6 +188,26 @@ def measure_lane(row: dict) -> str:
     return "generic_measure_weight_import"
 
 
+def export_row(row: dict, lane: str) -> dict:
+    return {
+        "claim_id": row.get("claim_id"),
+        "audit_status": row.get("audit_status"),
+        "effective_status": row.get("effective_status"),
+        "claim_type": row.get("claim_type"),
+        "note_path": row.get("note_path"),
+        "runner_path": row.get("runner_path"),
+        "measure_lane": lane,
+    }
+
+
+def expected_export_rows(buckets: dict[str, list[dict]]) -> list[dict]:
+    exported: list[dict] = []
+    for lane in sorted(buckets):
+        for row in sorted(buckets[lane], key=lambda item: item.get("claim_id") or ""):
+            exported.append(export_row(row, lane))
+    return exported
+
+
 def measure_rows() -> list[dict]:
     rows = list(json.loads(LEDGER.read_text())["rows"].values())
     return [
@@ -252,7 +261,23 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
                 + f"{row.get('note_path')}"
             )
         print()
+    export_checks(buckets, counts, before)
     return rows, counts
+
+
+def export_checks(buckets: dict[str, list[dict]], counts: Counter[str], ledger_sha: str) -> None:
+    section("Bounded ledger-row export checks")
+    report("bounded measure/weight row export exists", SLICE.exists(), str(SLICE.relative_to(ROOT)))
+    if not SLICE.exists():
+        return
+
+    data = json.loads(SLICE.read_text(encoding="utf-8"))
+    expected_rows = expected_export_rows(buckets)
+    report("slice export is for the measure/weight bucket", data.get("bucket") == "measure_weight_normalization")
+    report("slice export records current ledger sha", data.get("ledger_sha256") == ledger_sha, data.get("ledger_sha256", ""))
+    report("slice export row count matches current split", data.get("row_count") == EXPECTED_MEASURE_ROWS, str(data.get("row_count")))
+    report("slice export lane counts match current split", data.get("lane_counts") == dict(counts), str(data.get("lane_counts")))
+    report("slice export rows match independently enumerated regex split", data.get("rows") == expected_rows)
 
 
 def firewall_checks() -> None:

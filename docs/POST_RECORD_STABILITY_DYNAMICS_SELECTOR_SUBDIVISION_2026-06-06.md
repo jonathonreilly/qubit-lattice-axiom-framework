@@ -10,6 +10,8 @@ bare_retained_allowed=false.
 [`scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py`](../scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt)
+**Bounded row export:**
+[`outputs/post_record_stability_dynamics_selector_slice_2026_06_07.json`](../outputs/post_record_stability_dynamics_selector_slice_2026_06_07.json)
 **Load-bearing upstream helper:**
 [`scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py`](../scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py)
 with cache
@@ -27,10 +29,10 @@ On the current ledger snapshot:
 
 | Stability/dynamics sub-bucket | Rows |
 |---|---:|
-| `flow_or_thermal_stability` | 56 |
-| `arrow_or_dynamics_bridge` | 34 |
+| `flow_or_thermal_stability` | 60 |
+| `arrow_or_dynamics_bridge` | 37 |
 
-Total: `90` stability/dynamics selector rows.
+Total: `97` stability/dynamics selector rows.
 
 ## Meaning
 
@@ -82,8 +84,9 @@ The runner verifies:
 - source anchors in the selector/dial subdivision and evidence-ladder notes;
 - the selector/dial helper source used to obtain the bucket is included in the
   packet;
-- current stability/dynamics selector row count is `90`;
-- sub-bucket counts sum to `90`;
+- bounded ledger-row export exists for the selected stability/dynamics rows;
+- current stability/dynamics selector row count is `97`;
+- sub-bucket counts sum to `97`;
 - expected sub-bucket counts match the current snapshot;
 - representative rows are present in each sub-bucket;
 - audit ledger hash is unchanged after the scan;

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 714 |
+| **retained_bounded** | 715 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1307 |
+| unaudited | 1306 |
 | meta | 307 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1127 |
+| `audited_clean` | 1128 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1614 |
+| `unaudited` | 1613 |
 
 | claim_type | count |
 |---|---:|
@@ -276,6 +276,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
+| `cluster_decomposition_lr_poisson_tail_repair_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -3637,6 +3638,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **rationale:** The claimed spatial gap is not an independent first-principles computation; the SU(3) heat-kernel positivity, trace-class property, and Perron-Jentzsch gap are all imported from the retained temporal-axis parent. The new step is a finite-kernel axis-label permutation, which is a class-A algebraic decoration of that parent under the note's own pure-Wilson definitions. The runner reports 18 passes, but its sampled positivity check uses an approximate character surrogate, so the runner should be treated as non-load-bearing sanity support rather than a class-C proof.
 - **decoration parent:** `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`
 - **auditor confidence:** medium
+
+### `cluster_decomposition_lr_poisson_tail_repair_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`CLUSTER_DECOMPOSITION_LR_POISSON_TAIL_REPAIR_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/CLUSTER_DECOMPOSITION_LR_POISSON_TAIL_REPAIR_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the narrow Step-3 repair: the corrected Poisson-tail/Stirling/tangent estimate supporting the L1 Lieb-Robinson commutator light-cone bound, not L2 static cluster decomposition.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-000408-9dc4ad1762-cluster_decomposition_lr_poi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The LR series tail satisfies Σ_{n≥R} x^n/n! ≤ e^x x^R/R! ≤ e^x(e x/R)^R ≤ e^{(1+e)x}e^{-R}, giving an exponential light-cone bound with R=d/R_int.  _(class `A`)_
+- **chain closes:** True — The displayed tail estimate follows from reindexing the exponential series, Stirling's lower bound, and log z ≥ 1 - 1/z. With R=d/R_int it yields the claimed exponential decay outside the LR cone; no mass-gap or static-correlator input is used for this narrowed L1 repair.
+- **rationale:** The old inequality is correctly identified as false. The replacement estimate is a genuine algebraic inequality chain over the cited LR series structure, and the constants are only asserted at honest O(1) LR-envelope precision. The packet explicitly excludes L2 promotion, so the open gap/spatial-clustering issue in the parent is outside this audited claim scope.
+- **auditor confidence:** high
 
 ### `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09`
 

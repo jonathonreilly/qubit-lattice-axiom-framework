@@ -1,0 +1,19 @@
+loop: beta6-resummation-source-boundary-20260607
+target_claim_id: beta6_resummation_radius_growth_rate_bounded_note_2026-05-30
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: tree-sector source-boundary manifest
+files_touched:
+  - docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md
+  - scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py
+  - logs/runner-cache/frontier_beta6_resummation_radius_growth_rate_2026_05_30.txt
+open_imports:
+  - g_tree < 81 tree-cluster/cumulant bound
+  - compact K-built face-deficit growth bound
+  - >=3-face baryon/epsilon-sector bound
+runner_result: "SCORECARD: PASS=32 FAIL=0"
+audit_files_touched: false
+next_exact_action: derive or import the three growth bounds if full beta=6 radius closure is desired
+

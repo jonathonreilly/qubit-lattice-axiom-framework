@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.py
-runner_sha256: c2d927e8ffc7392110a085355cd0903631546c147148f3f8e5ecbc877f5ded5b
+runner_sha256: bbbf48f54728aab941dd020d1d0169d2548e8fa0364760bb9db70561f04dd899
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 ==============================================================================

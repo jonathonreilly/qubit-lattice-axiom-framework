@@ -1,0 +1,28 @@
+loop_slug: flavor-a1prime-boundary-20260607
+goal: "Repair flavor_a1prime_debt_and_data by preserving finite support-count algebra and comparator stress tests while removing axiom-status, normalization, and data-certificate overclaims."
+target_claim_id: flavor_a1prime_debt_and_data_note_2026-05-30
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: support_count_and_comparator_boundary
+files_touched:
+  - docs/FLAVOR_A1PRIME_DEBT_AND_DATA_NOTE_2026-05-30.md
+  - scripts/flavor_a1prime_debt_and_data_2026_05_30.py
+  - logs/runner-cache/flavor_a1prime_debt_and_data_2026_05_30.txt
+  - .claude/science/physics-loops/flavor-a1prime-boundary-20260607/
+open_imports:
+  - "Retained or accepted axiom text for any proposed r/Q normalization."
+  - "Retained bridge for complex-doublet permissibility or incompatibility on the order-three carrier."
+  - "Retained source certificates for embedded sector mass, splitting, and angle comparator inputs."
+retired_imports:
+  - "Claim that this packet fully rejects or accepts a revised Axiom 1."
+  - "Claim that embedded comparator data are framework-derived inputs in this packet."
+runner_status:
+  command: "PYTHONPATH=scripts python3 scripts/flavor_a1prime_debt_and_data_2026_05_30.py"
+  result: "SCORECARD PASS=9 FAIL=0"
+audit_data_touched: false
+review_loop_disposition: "not run; reviewer-owned review/landing path"
+next_exact_action: "Reviewer should assess whether the row is now a bounded support-count/comparator theorem with the normalization, complex-doublet, and data-source bridges explicit."
+stop_condition: "science block packaged and PR opened"

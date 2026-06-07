@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 727 |
+| **retained_bounded** | 728 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1330 |
+| unaudited | 1329 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1143 |
+| `audited_clean` | 1144 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1639 |
+| `unaudited` | 1638 |
 
 | claim_type | count |
 |---|---:|
@@ -428,6 +428,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5947,6 +5948,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** False — The displayed algebra checks: summing the three C3 eigenvalue squares gives Q=1/3+(2/3)|b|^2/a^2, equal-per-block gives r=1/2, and equal-per-real-dimension gives r=1. The stronger claim that all assignment mechanisms reduce only to det_C versus det_R is not derived from the two retained no-go authorities or the runner; it is imported from the panel synthesis/exhaustiveness assertion.
 - **rationale:** The formula inventory did not expose a sign, factor, or normalization error in the Q identity, Casimir-difference check, or the two mode-count branches. The runner verifies dependency visibility and finite algebraic consequences, but it does not independently prove the universal reduction that every viable lane-selection route collapses to the doublet complex-vs-real metric primitive. The source itself also leaves the holomorphic/Kähler metric calculation as the open datum, so the full bounded theorem remains conditional on a formal exhaustiveness/bridge theorem.
 - **auditor confidence:** medium
+
+### `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30`
+
+- **Note:** [`FLAVOR_LATITUDE_QUANTIZER_AND_RP_SELFDUAL_NOTE_2026-05-30.md`](../../docs/FLAVOR_LATITUDE_QUANTIZER_AND_RP_SELFDUAL_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the repaired demotion boundary: cube-angle and finite-idempotent routes do not derive a native latitude quantizer, RP self-duality is a |b|-coordinate artifact, and trace alone does not select equal-center over regular weighting.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-180446-e6143a8edc-flavor_latitude_quantizer_an`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The RP self-dual route gives r=1/2 only after passing to |b|, while the signed RP edges and trace/center facts leave multiple admissible readings rather than a native latitude quantizer.  _(class `A`)_
+- **chain closes:** True — The restricted packet closes as a bounded negative/boundary result by elementary algebra: the signed RP edges are distinct, the listed tracial functionals are both tracial on the commutative algebra R + C, and the HS metric supports distinct conditional readings without selecting one.
+- **rationale:** The note no longer presents r=1/2 or Q=2/3 as a positive framework derivation; it audits only a demotion/source-boundary claim. The displayed identities independently check out: cos^2((1,1,1),(1,1,0))=2/3, M2(C) idempotent ranks give only 0,1/2,1 after trace/dimension normalization, the RP signed edges are b=-a/2 and b=a, and the |b| geometric/arithmetic/signed-affine conventions yield 1/2, 9/16, and 1/16 respectively. The trace/center correction is also sound because R + C is commutative, so both equal-center and regular functionals are tracial and trace alone cannot select between them.
+- **auditor confidence:** high
 
 ### `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04`
 

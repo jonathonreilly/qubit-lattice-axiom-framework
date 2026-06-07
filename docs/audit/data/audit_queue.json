@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 319,
     "high": 257,
-    "leaf": 399,
+    "leaf": 398,
     "medium": 357
   },
   "cycle_break_target_count": 13,
@@ -28701,30 +28701,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_doublet_metric_default_is_detr_2026-06-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FLAVOR_LATITUDE_QUANTIZER_AND_RP_SELFDUAL_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_retention_law_is_a2plus_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -40286,6 +40262,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 39,
-  "total_pending": 1332
+  "ready_count": 38,
+  "total_pending": 1331
 }

@@ -1,0 +1,18 @@
+loop_slug: observable-p2-det-boundary-20260607
+created: 2026-06-07
+branch: physics-loop/observable-p2-det-boundary-20260607
+base: origin/main
+target_claim_id: observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: finite determinant/relabeling boundary retargeting
+hard_residual: FS, actual D=M_KS, determinant-to-trace routing, and AC_phi_lambda-as-S3-relabeling remain unproved physical-frame premises
+files_touched:
+  - docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md
+  - scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py
+  - logs/runner-cache/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.txt
+verification:
+  - python3 scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py
+next_exact_action: open review PR against main

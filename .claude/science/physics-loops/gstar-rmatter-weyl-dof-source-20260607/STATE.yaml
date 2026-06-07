@@ -1,0 +1,26 @@
+loop: gstar-rmatter-weyl-dof-source-20260607
+mode: science_fix
+date: 2026-06-07
+base_branch: physics-loop/dirac-weyl-onshell-counting-20260607
+branch: physics-loop/gstar-rmatter-weyl-dof-source-20260607
+target_claim_id: sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29
+actual_current_surface_status: bounded-support
+conditional_surface_status: dependency-routed support pending upstream audit
+active_route: route Weyl thermal dof factor through Dirac/Weyl finite-rank source packet
+files_touched:
+  - docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md
+  - scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py
+  - logs/runner-cache/frontier_sm_gstar_r_matter_reduction_2026_05_29.txt
+open_imports:
+  - I12 nu_R thermal exclusion
+  - P_RH_inventory right-handed thermal inventory bridge
+  - Dirac/Weyl dof dependency review and audit
+  - R-SPIN physical Weyl-spin / thermal-inventory identification bridge
+  - neutral-singlet branch convention
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_status: not_run
+audit_status: not_modified
+pr_status: pending
+next_exact_action: run cache checks, commit, push, and open stacked review PR
+stop_condition: PR opened and no additional source-local repair available in this block

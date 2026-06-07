@@ -18,8 +18,10 @@ selection packet:
    binding result is that the runner criteria fail for `d <= 2` and pass for
    the checked dimensions `d = 3,4,5`.
 2. `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md` is a
-   named non-derivation import wrapper. It supplies external upper-bound
-   mathematics rather than a framework-internal proof.
+   repaired dependency wrapper. It now cites audited-clean retained-bounded
+   one-hop support packets for the bounded Bertrand/stable-orbit and
+   Coulomb/atomic-scaling roles, while still not claiming a full
+   framework-internal proof of those imported upper-bound theorems.
 3. The decisive uniqueness step, on the current packet, is the intersection of
    the finite lower-bound support `{3,4,5}` with the Bertrand upper bound
    `d <= 3`, giving `{3}`.
@@ -48,19 +50,20 @@ It also says the upper-bound wrapper is separate and not load-bearing for the
 bounded lower-bound claim. Any future attempt to derive `d <= 3` inside the
 framework must be reviewed separately.
 
-### Named upper-bound import wrapper
+### Repaired upper-bound dependency wrapper
 
-`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md` is titled
-"Named Non-Derivation Imports." Its load-bearing role is to record two named
-external inputs:
+`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md` now carries
+a 2026-06-07 dependency-edge repair. Its load-bearing role is to wire the
+dimension upper-bound route to audited-clean retained-bounded one-hop support
+packets while preserving the import-scope firewall:
 
 | Import | Wrapper scope | Current composition with `{3,4,5}` |
 |---|---|---|
 | Bertrand stable-orbit upper bound | Stable bounded gravitational orbits require `d <= 3` | `{3}` |
 | Atomic-stability upper bound | Stable hydrogen-like atoms require `d <= 4`; the canonical infinite-bound-state Coulomb spectrum exists only at `d = 3` | `{3,4}` for the weaker stability bound; `{3}` only if the stronger spectral statement is separately used |
 
-The wrapper explicitly does not re-derive Bertrand's theorem, does not
-re-derive the atomic-stability upper bound, and does not give a
+The wrapper explicitly does not completely re-derive Bertrand's theorem, does
+not completely re-derive the atomic-stability upper bound, and does not give a
 framework-level derivation of `d = 3` from `Cl(3)` on `Z^3` alone.
 
 ### Bounded support notes
@@ -100,7 +103,7 @@ runner packet.
   whether they accept the named Bertrand import, demand a framework-internal
   replacement for it, or carry the chain as bounded import-supported context.
 - A clean separation between the lower-bound runner packet and the upper-bound
-  named imports.
+  dependency wrapper.
 - A guard against using the atomic-stability lane as a silent uniqueness
   selector when only the weaker `d <= 4` stability statement is in scope.
 - A narrow target for future work: retire the Bertrand import if the framework

@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py
-runner_sha256: 0e19b76b126d9caae864566cd1264cd4e08c56efd418447a361ab37c52f98e61
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.05
-status: ok
------ stdout -----
 D3 upper-bound import-scope gate
 ==========================================================
 [PASS] gate_note exists (docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md)
@@ -21,7 +13,7 @@ D3 upper-bound import-scope gate
 [PASS] lower note reports d<=2 failure and d=3,4,5 pass
 [PASS] lower note keeps upper wrapper non-load-bearing for that row
 [PASS] lower note requires separate review for framework-internal d<=3
-[PASS] upper wrapper is explicitly named-import-only
+[PASS] upper wrapper is repaired dependency wrapper
 [PASS] upper wrapper records independent audit authority
 [PASS] upper wrapper contains Bertrand route and d<=3 bound
 [PASS] upper wrapper contains atomic route and d<=4 bound
@@ -52,6 +44,3 @@ COMPOSITION:
   lower & atomic weak:  [3, 4]
 STATUS: exact-support import-scope gate; audit_required_before_effective_retained=true
 SUMMARY: PASS=35 FAIL=0
-
------ stderr -----
-

@@ -1,0 +1,27 @@
+loop_slug: flavor-retention-law-boundary-20260607
+goal: "Repair flavor_retention_law_is_a2plus by preserving the finite onsite algebra while removing the unproved A2/source-locality and physical-readout claims."
+target_claim_id: flavor_retention_law_is_a2plus_note_2026-05-31
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+cycle_count: 1
+active_route: supplied_onsite_coordinate_boundary
+files_touched:
+  - docs/FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md
+  - scripts/flavor_retention_law_is_A2plus_2026_05_31.py
+  - logs/runner-cache/flavor_retention_law_is_A2plus_2026_05_31.txt
+  - .claude/science/physics-loops/flavor-retention-law-boundary-20260607/
+open_imports:
+  - "Framework-native derivation of source-locality for the physical charged-lepton readout."
+  - "Framework-native justification of the supplied Q(z)=2/(3(1+z)) readout formula."
+retired_imports:
+  - "Hard-coded runner assertion that A2 directly gives the source-domain retention law."
+  - "Physical charged-lepton interpretation of Q(0)=2/3 inside this finite packet."
+runner_status:
+  command: "PYTHONPATH=scripts python3 scripts/flavor_retention_law_is_A2plus_2026_05_31.py"
+  result: "SCORECARD PASS=6 FAIL=0"
+audit_data_touched: false
+review_loop_disposition: "not run; reviewer-owned review/landing path"
+next_exact_action: "Reviewer should assess whether the row is now a clean bounded supplied-onsite theorem with the source-locality/readout bridge exposed."
+stop_condition: "science block packaged and PR opened"

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 723 |
+| **retained_bounded** | 724 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 35 |
-| unaudited | 1336 |
+| unaudited | 1335 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 29 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1139 |
+| `audited_clean` | 1140 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1645 |
+| `unaudited` | 1644 |
 
 | claim_type | count |
 |---|---:|
@@ -400,6 +400,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `fifth_family_radial_repaired_positive_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fine_h_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `finite_rank_source_to_metric_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5533,6 +5534,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `scripts/FIFTH_FAMILY_RADIAL_BASIN.py_import_error_missing__build_radial_shell_connectivity`
   - `scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py_import_error_missing__build_radial_shell_connectivity`
   - `live_runner_output_not_reproducible`
+- **auditor confidence:** high
+
+### `fifth_family_radial_repaired_positive_packet_note_2026-05-29`
+
+- **Note:** [`FIFTH_FAMILY_RADIAL_REPAIRED_POSITIVE_PACKET_NOTE_2026-05-29.md`](../../docs/FIFTH_FAMILY_RADIAL_REPAIRED_POSITIVE_PACKET_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite sampled audit of the repaired radial-shell fifth-family rule on drifts [0.05, 0.10, 0.20, 0.30, 0.40] and seeds [0, 1], plus F~M transfer on targets (0.05, 0) and (0.30, 1).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260607-174909-156aa9a25b-fifth_family_radial_repaired`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the live no-restore grown-slice harness, the repaired radial-shell fifth-family connectivity rule has four sampled rows satisfying the declared finite controls and sign-orientation gates, and the two historically cited positive rows satisfy the dedicated F~M transfer check.  _(class `C`)_
+- **chain closes:** True — The primary runner deterministically builds the no-restore grown slice, constructs radial-shell connectivity, propagates the declared weak source fields, and computes the zero, neutral, sign, and exponent gates for all ten rows. The companion F~M runner source computes the weak-field log-slope on the two target rows and asserts failure unless both pass.
+- **rationale:** The restricted packet contains the primary runner source, transitive helper sources, and a completed status-ok cache whose reported pass set matches the note's bounded claim. The load-bearing computation is not a definition, renaming, external comparator, or tuned numerical match: it instantiates the declared harness and computes the sampled row outcomes from the supplied code path. Independent formula checks on the displayed gate logic confirm that zero-source and neutral cancellation are structurally exact, the four positive rows have the required plus/minus orientation and exponent tolerance, and the cited boundary row is a sign-orientation miss rather than a control leak.
 - **auditor confidence:** high
 
 ### `fine_h_family_universality_note`

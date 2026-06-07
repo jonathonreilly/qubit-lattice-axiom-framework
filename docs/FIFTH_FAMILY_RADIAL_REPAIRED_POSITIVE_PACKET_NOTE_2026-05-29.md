@@ -6,6 +6,10 @@
 **Primary runner:** [`scripts/FIFTH_FAMILY_RADIAL_BASIN.py`](../scripts/FIFTH_FAMILY_RADIAL_BASIN.py)
 **Primary runner cache:** [`logs/runner-cache/FIFTH_FAMILY_RADIAL_BASIN.txt`](../logs/runner-cache/FIFTH_FAMILY_RADIAL_BASIN.txt)
 records `status: ok` under the runner-declared audit timeout.
+The primary runner imports
+[`scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py`](../scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py),
+checks its SHA-pinned cache, and recomputes the two F~M transfer rows inside
+the primary stdout packet.
 **Companion runners:**
 [`scripts/FIFTH_FAMILY_RADIAL_SWEEP.py`](../scripts/FIFTH_FAMILY_RADIAL_SWEEP.py),
 [`scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py`](../scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py),
@@ -21,6 +25,8 @@ sampled:
   `scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py`;
 - the live basin runner recomputes ten `(drift, seed)` rows from the
   no-restore grown slice;
+- the live basin runner includes a source/cache check for the companion F~M
+  transfer runner and recomputes those two rows in the same primary packet;
 - the primary basin runner declares `AUDIT_TIMEOUT_SEC = 300`, because the
   full ten-row replay can exceed the legacy 120 second audit window under
   contention even though it completes without changing the scientific packet;
@@ -89,7 +95,8 @@ ASSERTIONS: PASS
 ```
 
 The repaired `FIFTH_FAMILY_RADIAL_FM_TRANSFER.py` runner checks the two cited
-positive rows:
+positive rows, and the primary basin runner now checks the same transfer
+source/cache packet:
 
 ```text
 passed rows: 2/2

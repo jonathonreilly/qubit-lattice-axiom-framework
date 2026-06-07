@@ -5,6 +5,9 @@ from __future__ import annotations
 
 import os
 import sys
+from pathlib import Path
+import hashlib
+import math
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
@@ -19,6 +22,7 @@ from CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP import (
     _measure_family,
     _mean,
 )
+import FIFTH_FAMILY_RADIAL_FM_TRANSFER as fm_transfer
 from gate_b_no_restore_farfield import grow
 
 
@@ -26,6 +30,58 @@ AUDIT_TIMEOUT_SEC = 300
 
 DRIFTS = [0.05, 0.10, 0.20, 0.30, 0.40]
 SEEDS = [0, 1]
+TRANSFER_RUNNER = Path(SCRIPT_DIR) / "FIFTH_FAMILY_RADIAL_FM_TRANSFER.py"
+TRANSFER_CACHE = Path(ROOT) / "logs/runner-cache/FIFTH_FAMILY_RADIAL_FM_TRANSFER.txt"
+
+
+def _sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _transfer_cache_is_current() -> bool:
+    if not TRANSFER_CACHE.exists():
+        return False
+    text = TRANSFER_CACHE.read_text(encoding="utf-8", errors="replace")
+    expected_sha = _sha256(TRANSFER_RUNNER)
+    required = [
+        "===== runner cache v1 =====",
+        "runner: scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py",
+        f"runner_sha256: {expected_sha}",
+        "status: ok",
+        "ASSERTIONS: PASS",
+    ]
+    return all(item in text for item in required)
+
+
+def transfer_packet_checks() -> bool:
+    print()
+    print("TRANSFER SOURCE PACKET")
+    print(f"  source: scripts/{TRANSFER_RUNNER.name}")
+    print(f"  cache: logs/runner-cache/{TRANSFER_CACHE.name}")
+    cache_ok = _transfer_cache_is_current()
+    print(f"  cache SHA/current assertion: {'PASS' if cache_ok else 'FAIL'}")
+    print()
+    print(f"{'drift':>5s} {'seed':>4s} {'F~M':>8s} {'ok':>4s}")
+    print("-" * 24)
+
+    rows = []
+    for drift, seed in fm_transfer.TARGETS:
+        fm = fm_transfer._fm(drift, seed)
+        ok = not math.isnan(fm) and abs(fm - 1.0) < 0.05
+        rows.append((drift, seed, fm, ok))
+        print(f"{drift:5.2f} {seed:4d} {fm:8.3f} {'YES' if ok else 'no':>4s}")
+
+    passed = [row for row in rows if row[-1]]
+    print(f"  transfer rows passed: {len(passed)}/{len(rows)}")
+    if passed:
+        print(f"  mean F~M among transfer passes: {_mean([row[2] for row in passed]):.6f}")
+    transfer_ok = (
+        cache_ok
+        and {(row[0], row[1]) for row in passed} == set(fm_transfer.TARGETS)
+        and all(abs(row[2] - 1.0) < 0.05 for row in passed)
+    )
+    print(f"  [{'PASS' if transfer_ok else 'FAIL'} (C)] F~M transfer source/cache packet")
+    return transfer_ok
 
 
 def main() -> None:
@@ -71,8 +127,10 @@ def main() -> None:
     print(
         f"  [{'PASS' if assertions_ok else 'FAIL'} (C)] finite basin assertion surface"
     )
-    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
-    if not assertions_ok:
+    transfer_ok = transfer_packet_checks()
+    all_ok = assertions_ok and transfer_ok
+    print(f"ASSERTIONS: {'PASS' if all_ok else 'FAIL'}")
+    if not all_ok:
         raise SystemExit(1)
 
 

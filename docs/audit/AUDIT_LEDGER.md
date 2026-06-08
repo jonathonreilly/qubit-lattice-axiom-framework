@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 750 |
+| **retained_bounded** | 746 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1337 |
+| unaudited | 1342 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 24 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -58,14 +58,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1170 |
-| `audited_conditional` | 25 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1167 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1650 |
+| `unaudited` | 1655 |
 
 | claim_type | count |
 |---|---:|
@@ -133,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -914,11 +913,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_observable_uniqueness_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_commutant_eigenoperator_selector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1319,7 +1315,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
-| `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13039,45 +13034,17 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** With the claim boundary enforced, the note is not deriving or certifying 0.5934; that value is explicitly an admitted comparison/reuse number and is outside the audited claim. The bounded finite result follows from the selected compact SU(3) finite lattice surface and the defined Wilson observable/measure, without hidden physical readout or tuned comparator matching. The runner supports implementation and boundary diagnostics only, with no D-class physical comparator and no same-surface MC certificate for the canonical value.
 - **auditor confidence:** high
 
-### `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09`
+### `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`
 
-- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md)
+- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** V=1 single-plaquette SU(3) Wilson integral Picard-Fuchs packet: finite-window annihilation through beta^196, finite-grid lower-order exclusion through degree 30, conditional BSS threshold arithmetic, and Frobenius data at beta=0.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260608-105914-fce04381f9-plaquette_v1_picard_fuchs_od`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The finite-window depth-200 verification is converted into the all-order identity by applying the Bostan-Salvy-Schost threshold with the asserted all-degree D-finite bounds R = 3 and D = 2.  _(class `A`)_
-- **chain closes:** False — The restricted packet does not close the all-degree R=3,D=2 premise required by the Bostan-Salvy-Schost step. The runner source explicitly preserves this as an open blocker and downgrades T3 to a conditional arithmetic check.
-- **rationale:** The runner computes nontrivial exact finite-window checks, including Bessel-determinant coefficients, finite-grid ansatz ranks, the indicial polynomial, and recurrence regression. However, its own stdout and source state that it does not prove all-degree lower-order exclusion or all-order minimal-annihilator closure. The note’s stronger theorem depends on an external all-degree R=3,D=2 bound or equivalent bridge not supplied by the restricted packet.
-- **open / conditional deps cited:**
-  - `external: Brower-Nauenberg 1981 SU(N) Wilson character holonomic operator / all-degree R=3,D=2 bound`
-- **auditor confidence:** high
-
-### `plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06`
-
-- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** V=1 SU(3) single-plaquette Picard-Fuchs finite-window certificate: L*J through beta^96, recurrence N=2..99, lower-order exclusion r<=2,d<=30, (r=3,d=2) kernel/signature match, r=3 polynomial-multiple consistency d=2..12, plus beta=6 J'/J=0.422531739650 as a finite companion readout; no all-order, arbitrary-degree, thermodynamic-limit, multi-plaquette, or higher-irrep claim.
+- **claim_scope:** Bounded exact-arithmetic finite-window certificate for the displayed V=1 SU(3) Bessel-determinant Taylor series: Taylor annihilation through beta^36, recurrence consistency for N in [2,39], lower-order exclusion only for {1}x{0..12} union {2}x{0..11}, uniqueness at (r=3,d=2), and higher-degree consistency for r=3,d=2..6.
 - **audit_status:** ~~audited_clean~~
 - **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260608-105013-f1cc36430e-plaquette_v1_picard_fuchs_od`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The finite-window packet verifies, in exact rational arithmetic, Taylor annihilation by L through degree 96, recurrence consistency for N=2..99, no lower-order ansatz for r<=2,d<=30, and a one-dimensional (r=3,d=2) kernel matching L.  _(class `A`)_
-- **chain closes:** True — The provided runner source actually constructs the Bessel-determinant Taylor coefficients and performs exact Fraction/Sympy rank/nullspace checks; the cached output matches the scoped finite claims. Independent checks of the ODE-to-recurrence conversion, coefficient signature, table dimensions, and beta=6 Bessel-determinant readout found no sign/factor/normalization mismatch.
-- **rationale:** The repaired source note is scoped to the finite windows that the runner executes, and it explicitly excludes the all-degree lower-order exclusion and all-order Picard-Fuchs minimality that remain open upstream. The runner is not a print-only certificate: it builds the Taylor series from the determinant formula, computes ranks over exact rationals, extracts the kernel, and compares the primitive integer signature. The cited note dependencies are retained_bounded and are used only for the finite-window packet and companion beta=6 readout. Within that bounded scope, the conclusion follows without an unclosed bridge.
-- **auditor confidence:** high
-
-### `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06`
-
-- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-window V=1 SU(3) Picard-Fuchs certificate: Taylor annihilation through degree 96, recurrence through N=99, lower-order exclusion for r<=2 and d<=30, r=3 consistency for d=2..12, and finite Koutschan-style rediscovery of L in the stated scan window.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260608-104648-b57f8e5701-plaquette_v1_picard_fuchs_od`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** At Taylor depth 100, exact-rational matching systems have zero kernel for all checked order <= 2, degree <= 30 ansatzes, while the first finite scan hit is a one-dimensional (r=3,d=2) kernel matching the displayed operator L.  _(class `A`)_
-- **chain closes:** True — The runner source constructs the Bessel-determinant Taylor coefficients and solves the finite matching systems over exact rationals; no helper imports are missing. This closes the bounded finite-window certificate only, not arbitrary-degree or all-order minimality.
-- **rationale:** The displayed operator coefficients and recurrence factors are internally consistent, and independent coefficient extraction gives the reported initial Taylor coefficients. The supplied runner source performs exact rational Taylor construction, exact rank checks, kernel extraction, and primitive-integer signature comparison; the cached run reports all six certificates passing. Both provided cited note authorities are retained-grade, and no unavailable helper source or optional ore_algebra result is load-bearing for the finite claim.
+- **auditor:** `codex-cli-gpt-5.5-20260608-142249-46591e2589-plaquette_v1_picard_fuchs_od`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Using the Bessel-determinant Taylor coefficients through depth 40, substituting into L gives zero through beta^36, the lower-order matching matrices have full column rank in the checked window, and the (r=3,d=2) kernel is one-dimensional and proportional to L.  _(class `A`)_
+- **chain closes:** True — The finite-window conclusion follows from exact algebraic substitution and rank checks over the displayed Bessel-determinant series; an independent permutation/list-polynomial and modular-rank recomputation reproduced the stated coefficients, residual vanishing, recurrence window, skipped (2,12) cell, and r=3 kernel dimensions. The note explicitly excludes all-order minimal-annihilator and degree-unbounded lower-order claims, so those bridge theorems are not load-bearing for this bounded result.
+- **rationale:** The runner source genuinely computes the Bessel-determinant Taylor coefficients and exact rational matching matrices; it is not merely printing constants or importing the contested conclusion. The note's stated scope matches the completed runner output, including the skipped (r=2,d=12) boundary and the finite higher-degree window. The one provided repo authority is retained_bounded, and the external Bernstein/WZ/SST minimal-annihilator machinery is clearly marked out of scope rather than used to close the bounded claim.
 - **auditor confidence:** high
 
 ### `plaquette_v1_picard_fuchs_ode_note_2026-05-05`
@@ -13091,32 +13058,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner verifies at finite truncation order that the displayed third-order ODE annihilates the truncated Taylor series of J(beta), and numerically agrees with direct Weyl integration at beta in {2,4,6,8,10}.  _(class `C`)_
 - **chain closes:** True — The narrowed claim is exactly the finite computation performed by the included runner. The runner constructs a truncated series from the Bessel-determinant representation, checks the ODE residual to degree 21, integrates the ODE numerically, and independently compares the readout with Weyl quadrature at the stated sample points.
 - **rationale:** The note has been narrowed to a bounded finite-runner certificate and no longer asserts the all-order Picard-Fuchs or Frobenius-branch theorem. The included source is not a pure printout: it symbolically builds the truncated series, computes the residual, numerically evolves the ODE, and compares against direct Weyl integration at the specified points. Within that bounded scope, the runner output matches the note's stated PASS=4 FAIL=0 and the beta=6 value. This does not audit or imply the separate all-order companion claim.
-- **auditor confidence:** high
-
-### `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06`
-
-- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded V=1 SU(3) single-plaquette Picard-Fuchs finite-window packet: exact Bessel-determinant Taylor/rank checks through the stated finite windows, plus the candidate operator's indicial-polynomial check; no all-degree minimal-annihilator claim.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260607-161249-77d9150f46-plaquette_v1_picard_fuchs_od`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The repaired runner gives finite-window support: L·J is checked through degree 196, the scanned r<=2,d<=30 lower-order grid is empty, the order-3 degree-2 candidate appears, and arbitrary-degree lower-order annihilator exclusion remains open.  _(class `A`)_
-- **chain closes:** True — For the narrowed finite-window claim, the runner source and helper source compute the Taylor coefficients, residual, recurrence, rank matrices, and indicial polynomial rather than merely printing expected constants. The all-degree lower-order exclusion is explicitly outside scope.
-- **rationale:** The live claim has been narrowed to finite-window algebraic support, and the supplied runner source substantiates that boundary with exact rational Taylor, recurrence, rank, and indicial calculations. The helper source needed by the primary runner is present, so the load-bearing calls are not opaque. The packet correctly preserves the open blocker that T2 does not exclude order<=2 annihilators at arbitrary coefficient degree and that T3 is conditional on an external all-degree R=3,D=2 bound.
-- **auditor confidence:** high
-
-### `plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17`
-
-- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact-rational finite-window rank exclusion for the V=1 SU(3) single-plaquette matching system at (r=2, d=12), with ORDER=48 primary check, ORDER=52 stability check, and neighbouring (r=2, d=10),(r=2, d=11) reconfirmation.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T180848Z-4f71e255-plaquette_v1_picard_fuch-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The runner builds the Bessel-determinant Taylor coefficients exactly as rationals and exact Fraction Gaussian elimination returns rank 39 for the 44 x 39 matching matrix at (r=2, d=12), with the ORDER=52 cross-check also rank 39.  _(class `A`)_
-- **chain closes:** True — The included runner source genuinely constructs the Bessel-determinant Taylor series with Fraction arithmetic, builds the stated matching matrices, and computes exact ranks rather than printing constants. The only load-bearing upstream is retained_bounded and the conclusion is limited to the finite rank checks actually computed.
-- **rationale:** The runner output matches the note and the source code verifies the load-bearing arithmetic path: exact Bessel-series construction, exact matching matrix assembly, and exact Gaussian elimination over rationals. No forbidden external comparator, fitted value, or contested imported premise is used. The scope is narrow and bounded, avoiding the parent all-order minimality issue.
 - **auditor confidence:** high
 
 ### `pmns_commutant_eigenoperator_selector_note`

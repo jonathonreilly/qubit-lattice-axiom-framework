@@ -66,11 +66,17 @@ why their fanout is enormous.
 
 ## Recommended actions (for the audit lane)
 
-1. **Dispatch the top ready keystones first.** Re-order the dispatch queue to put the
-   high-fanout ready rows (this table) at the head. Concretely: add a **downstream-
-   blocker-fanout tiebreaker** to `compute_audit_queue.py` / `compute_audit_dispatch_queue.py`
-   (currently ready-first + criticality; fanout is the missing signal). The runner here
-   computes that fanout and can seed it.
+1. **Drain the ready frontier (the dispatch ordering already does this — no patch needed).**
+   `compute_audit_queue.py` already sorts by `(-criticality_rank, ready-first,
+   -transitive_descendants, -load_bearing_score)` — **downstream fanout
+   (`transitive_descendants`) is already the 3rd key**, so ready rows are already dispatched
+   fanout-first. (Correction 2026-06-06: an earlier draft of this note recommended adding a
+   fanout tiebreaker, calling fanout "the missing signal." It is NOT missing — it is already
+   applied.) The catch is that the highest-fanout keystones are all `ready=False` (the RP
+   pair sits at queue rows #1/#2, fanout ~1041, but is cycle-trapped and blocked on deep dep
+   chains): no sort change can surface a non-ready row. So the throughput limit is auditor
+   rate through the (already-correctly-ordered) ready frontier, plus the cycle traps in #2 —
+   not the queue logic.
 2. **RESOLVE THE KEYSTONE CYCLES FIRST (prerequisite for #1).** Three of the top
    keystones sit in **mutual-dependency 2-cycles**, so they can **never become `ready`**
    (each waits on the other) — the dispatch never reaches them via the ready-DAG, and the

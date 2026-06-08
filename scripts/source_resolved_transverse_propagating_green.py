@@ -210,6 +210,7 @@ def _run_case(
         "trans": trans_delta,
         "same_ratio": abs(same_delta / inst_delta) if abs(inst_delta) > 1e-30 else 0.0,
         "trans_ratio": abs(trans_delta / inst_delta) if abs(inst_delta) > 1e-30 else 0.0,
+        "trans_same_ratio": abs(trans_delta / same_delta) if abs(same_delta) > 1e-30 else 0.0,
         "trans_minus_same": trans_delta - same_delta,
         "same_eff": same_eff,
         "trans_eff": trans_eff,
@@ -251,12 +252,17 @@ def main() -> None:
     print(f"  zero-source transverse shift: {trans_zero:+.6e}")
     print()
 
-    print(f"{'s':>8s} {'inst':>12s} {'same':>12s} {'trans':>12s} {'trans/same':>11s} {'trans-same':>12s}")
-    print("-" * 80)
+    print(
+        f"{'s':>8s} {'inst':>12s} {'same':>12s} {'trans':>12s} "
+        f"{'trans/inst':>11s} {'trans/same':>11s} {'trans-same':>12s}"
+    )
+    print("-" * 96)
 
     inst_vals: list[float] = []
     same_vals: list[float] = []
     trans_vals: list[float] = []
+    trans_same_ratios: list[float] = []
+    trans_minus_same_vals: list[float] = []
     support_deltas: list[float] = []
 
     for s in SOURCE_STRENGTHS:
@@ -264,10 +270,12 @@ def main() -> None:
         inst_vals.append(row["inst"])
         same_vals.append(row["same"])
         trans_vals.append(row["trans"])
+        trans_same_ratios.append(row["trans_same_ratio"])
+        trans_minus_same_vals.append(row["trans_minus_same"])
         support_deltas.append(row["trans_support"] - row["same_support"])
         print(
             f"{s:8.4f} {row['inst']:+12.6e} {row['same']:+12.6e} {row['trans']:+12.6e}"
-            f" {row['trans_ratio']:11.3f} {row['trans_minus_same']:+12.6e}"
+            f" {row['trans_ratio']:11.3f} {row['trans_same_ratio']:11.3f} {row['trans_minus_same']:+12.6e}"
         )
 
     inst_alpha = _fit_power(SOURCE_STRENGTHS, inst_vals)
@@ -278,14 +286,27 @@ def main() -> None:
     print()
     print("SUPPORT COMPARISON")
     print(f"  mean (trans support - same support): {sum(support_deltas) / len(support_deltas):+.3e}")
-    print("  positive means transverse transport broadens detector support relative to same-site memory")
+    print("  support fraction is unchanged here")
     print()
     print("SAFE READ")
     print(f"  instantaneous F~M exponent: {inst_alpha:.2f}" if inst_alpha is not None else "  instantaneous F~M exponent: n/a")
     print(f"  same-site memory F~M exponent: {same_alpha:.2f}" if same_alpha is not None else "  same-site memory F~M exponent: n/a")
     print(f"  transverse F~M exponent: {trans_alpha:.2f}" if trans_alpha is not None else "  transverse F~M exponent: n/a")
     print(f"  TOWARD rows: {toward}/{len(trans_vals)}")
+    assertions_ok = (
+        abs(same_zero) < 1e-12
+        and abs(trans_zero) < 1e-12
+        and toward == len(trans_vals)
+        and all(v < 0.0 for v in trans_minus_same_vals)
+        and all(0.98 < r < 1.0 for r in trans_same_ratios)
+        and abs(sum(support_deltas) / len(support_deltas)) < 1e-12
+        and all(a is not None and abs(a - 1.0) < 0.02 for a in (inst_alpha, same_alpha, trans_alpha))
+    )
+    print(f"  true trans/same range: {min(trans_same_ratios):.3f} .. {max(trans_same_ratios):.3f}")
+    print(f"  ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
     print("  this is a transverse-transport pocket, not a full propagating field theory")
+    if not assertions_ok:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

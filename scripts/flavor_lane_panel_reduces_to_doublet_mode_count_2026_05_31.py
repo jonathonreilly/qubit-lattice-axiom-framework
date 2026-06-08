@@ -8,8 +8,8 @@ User invoked the panel ("ask the 20 physicists if we're stuck"), framed as find-
      delta (Q-orthogonal CP)} + topological 2/9. This CORRECTS the prior four-channel capstone, which
      mislabeled Q=1/3 and Q=1 as separate channels. (The user's lane reading is the correct one.)
 
-(ASSIGNMENT) open_confirmed: no escape forces r=1/2 from framework baseline+emergent-spacetime. But the panel
-     pinned the structure precisely:
+(ASSIGNMENT) open_confirmed: no escape in this packet forces r=1/2 from framework baseline+emergent-spacetime.
+     The panel synthesis organizes the surviving candidate structure:
   - STRONG convergence (10+ specialties) on "r=1/2 = self-dual fixed point of the singlet<->doublet
     swap r->1-r" -- but this is the GEOMETRY of r=1/2, NOT a forcing. The swap is a scalar relabeling:
     it changes the Casimir Tr(H^2) except at r=1/2, so it is NOT realized by any C_3-covariant
@@ -20,13 +20,14 @@ User invoked the panel ("ask the 20 physicists if we're stuck"), framed as find-
     the genuine equipartition theorem PER QUADRATIC DOF gives r=1 (Q=1); r=1/2 needs the BLOCK /
     HOLOMORPHIC (det_C) measure that nothing on the retained surface fixes.
 
-(THE ONE PRIMITIVE) all escapes collapse to a single decider, stated three equivalent ways:
+(BRANCH ALGEBRA) the runner verifies the two named finite branches of the det_C/det_R proposal:
   block-count (1,1) vs dimension-count (1,2)  ==  det_C vs det_R  ==  doublet is ONE complex mode vs
   TWO real modes. Verified: equal-per-BLOCK -> 3a^2=6|b|^2 -> r=1/2 -> Q=2/3 (det_C);
-  equal-per-real-DIM -> 3a^2=3|b|^2 -> r=1 -> Q=1 (det_R). The SOLE decider of the charged-lepton lane.
+  equal-per-real-DIM -> 3a^2=3|b|^2 -> r=1 -> Q=1 (det_R). The stronger thesis that every admissible
+  lane-selection route is exhausted by this metric choice remains open route support, not proved here.
 
 (THE DECIDABLE NEXT CALC, honest survivor escape) the field-space metric on the doublet coefficient b,
-  derived from Axiom 1's qubit coherent-state resolution-of-identity restricted to the hw=1 C_3 orbit:
+  derived from the Quantum axiom's one-qubit coherent-state resolution-of-identity restricted to the hw=1 C_3 orbit:
   if HOLOMORPHIC |d b|^2 (one complex mode, phase=gauge) -> det_C -> r=1/2; if doubled-real
   (d Re b)^2+(d Im b)^2 (two modes) -> det_R -> r=1. This is framework-internal and novel (NOT the
   U(1)_b route the retained no-go closed; NOT the discrete-reflection route the panel killed).
@@ -163,26 +164,28 @@ def main():
     # (CPT-nonforcing — that an antilinear CPT/real-structure involution does NOT force equal-block —
     #  is the retained no-go koide_real_rep_block_count_permitted_not_forced; cited, not re-toy-modeled here.)
 
-    # THE ONE PRIMITIVE: block-count (det_C) -> r=1/2 ; dimension-count (det_R) -> r=1
+    # BRANCH ALGEBRA: block-count (det_C) -> r=1/2 ; dimension-count (det_R) -> r=1
     r_block = 3.0 / 6.0            # 3a^2 = 6|b|^2  (equal per BLOCK)
     r_dim = (6.0 / 2.0) / 3.0      # 3a^2/1 = 6|b|^2/2  (equal per real DIM)
     passed.append(check(
-        "PRIMITIVE block-count (det_C, doublet=1 complex mode): 3a^2=6|b|^2 -> r=1/2 -> Q=2/3",
+        "BRANCH det_C block-count (doublet=1 complex mode): 3a^2=6|b|^2 -> r=1/2 -> Q=2/3",
         abs(r_block - 0.5) < 1e-12 and abs(Q_of_r(r_block) - 2/3) < 1e-12,
         f"r_block={r_block:.3f} -> Q={Q_of_r(r_block):.4f}"))
     passed.append(check(
-        "PRIMITIVE dimension-count (det_R, doublet=2 real modes): 3a^2=3|b|^2 -> r=1 -> Q=1",
+        "BRANCH det_R dimension-count (doublet=2 real modes): 3a^2=3|b|^2 -> r=1 -> Q=1",
         abs(r_dim - 1.0) < 1e-12 and abs(Q_of_r(r_dim) - 1.0) < 1e-12,
-        f"r_dim={r_dim:.3f} -> Q={Q_of_r(r_dim):.4f}  => SOLE decider: doublet = 1 complex vs 2 real modes"))
+        f"r_dim={r_dim:.3f} -> Q={Q_of_r(r_dim):.4f}  => named decider candidate: doublet = 1 complex vs 2 real modes"))
 
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT (20-physicist panel + 4 meta, wf_9028152c): D1 UNANIMOUS -- Q is one observable, {1/3,2/3,1}")
-    print("are LANES not channels (corrects the four-channel capstone). Assignment open_confirmed: every escape")
-    print("collapses to ONE primitive = block-count(det_C, r=1/2) vs dimension-count(det_R, r=1) = doublet as one")
-    print("complex vs two real modes. The converged 'r=1/2 = self-dual swap fixed point' escape is a scalar")
+    print("are LANES not channels (corrects the four-channel capstone). Assignment open_confirmed: runner verifies")
+    print("the two branch consequences of the det_C/det_R candidate = block-count(det_C, r=1/2) vs")
+    print("dimension-count(det_R, r=1) = doublet as one complex vs two real modes. The stronger panel")
+    print("exhaustiveness thesis remains open pending a restricted bridge theorem. The converged 'r=1/2 = self-dual")
+    print("swap fixed point' escape is a scalar")
     print("relabeling (changes the Casimir; no covariant involution) -- KILLED, alongside the CPT-reflection route.")
     print("The honest decidable next calc: is the doublet-coefficient's emergent kinetic metric HOLOMORPHIC")
-    print("(det_C -> r=1/2) or doubled-REAL (det_R -> r=1)? -- derived from Axiom 1's qubit coherent-state measure.")
+    print("(det_C -> r=1/2) or doubled-REAL (det_R -> r=1)? -- derived from the Quantum axiom's one-qubit coherent-state measure.")
     return 0 if all(passed) else 1
 
 

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1325 |
+| unaudited | 1324 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1175 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1638 |
+| `unaudited` | 1637 |
 
 | claim_type | count |
 |---|---:|
@@ -1325,6 +1325,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
 | `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `i1_static_readout_is_native_field_integration_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -9147,6 +9148,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Cross-note chain assembly of three explicit inputs: retained/decorative structural ratio, retained/decorative SU(3) representation-to-matter convention, and retained_bounded alpha=1/3 normalization bridge with admitted GMN/electron readout; runner checks the resulting projector algebra and charge table but does not derive the imported inputs internally.  _(class `B`)_
 - **chain closes:** True — The bounded chain closes because every physical or readout convention needed for SM-Y matching is explicitly imported: the ratio is supplied by the LH-doublet traceless-ratio note, the Sym^2/Anti^2 to color triplet/singlet assignment is supplied by the LHCM matter-assignment note under a naming convention, and the absolute scale is supplied by the audited retained_bounded alpha bridge. The current source expressly excludes internal derivations of those inputs, GMN, full-spectrum hypercharge, and anomaly cancellation, so no additional hidden bridge is required for the narrowed claim.
 - **rationale:** Audited clean only as a bounded theorem. Boundary stress check found no unlisted load-bearing admission after narrowing: quark/lepton naming, Anti^2-as-L_L readout, alpha=1/3, GMN, T3(e_L), and Q(e_L) are all named or forwarded to audited dependencies. The source's broader title and SM-Y language are controlled by the retained-scope and not read as a derivation of physical hypercharge from the commutant alone. The decoration dependencies are not promoted to independent physics; they are used only as inherited chain inputs under the retained graph-first SU(3) surface. The stale runner prose saying alpha remains open is non-authoritative under the supplied current ledger metadata and does not break the chain.
+- **auditor confidence:** high
+
+### `i1_static_readout_is_native_field_integration_2026-06-06`
+
+- **Note:** [`I1_STATIC_READOUT_IS_NATIVE_FIELD_INTEGRATION_2026-06-06.md`](../../docs/I1_STATIC_READOUT_IS_NATIVE_FIELD_INTEGRATION_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded relocation claim that I1's static-source potential is supplied by native quadratic Z^3 field integration, V(r) = -g^2 G(r) -> -g^2/(4*pi*r), with readout supplied by the general register-not-read energy bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-153227-e1de332233-i1_static_readout_is_native_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Integrating out the framework's quadratic gauge field coupled to two static sources gives the interaction V(r) = -g^2 G(r) exactly, then reads that interaction as registered sourced-field energy rather than a standalone lattice-gauge readout.  _(class `A`)_
+- **chain closes:** False — The algebra checks if the quadratic graph-Laplacian action, static source coupling, and energy-readout identification are accepted: completing the square gives -1/2 J^T A^-1 J and the two-source cross term -g^2 G(r), while the continuum inverse Laplacian gives 1/(4*pi*r). The restricted packet does not supply retained authority or an axiom derivation for those physical premises, especially the general energy-readout bridge that the note itself labels a non-axiom parent.
+- **rationale:** The runner source performs real algebra/numerics for a scalar graph-Laplacian model and the displayed 4*pi normalization is independently consistent, but key premises are assumed by construction: V is defined as -g^2 times the computed Green function, and Section R only asserts the relocation dependency table. No one-hop authority is provided for the native quadratic gauge action/source normalization, the massless graph-Laplacian asymptotic as a framework result, g_bare=1, or the Observable-Principle/register-not-read energy bridge. Because the note explicitly substitutes that general readout bridge for I1 rather than deriving it, the claimed elimination of the standalone import is conditional on an open bridge theorem.
+- **open / conditional deps cited:**
+  - `record_outcome_observable_principle_canonical_proposal_note`
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

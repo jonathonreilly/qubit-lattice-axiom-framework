@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 328,
     "high": 249,
-    "leaf": 366,
+    "leaf": 365,
     "medium": 357
   },
   "cycle_break_target_count": 13,
@@ -28748,31 +28748,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_einselection_2sector_modulo_kreality_2026-06-02",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/PMNS_TM2_COLUMN_SITE_BASIS_KCPT_PREDICATE_BOUNDED_THEOREM_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_pmns_tm2_column_site_basis_kcpt_predicate.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -39502,6 +39477,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 4,
-  "total_pending": 1300
+  "ready_count": 3,
+  "total_pending": 1299
 }

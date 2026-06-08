@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 750 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1298 |
+| unaudited | 1297 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
-| ~~audited_renaming~~ | 32 |
+| ~~audited_renaming~~ | 33 |
 | ~~audited_conditional~~ | 42 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -64,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
-| `audited_renaming` | 32 |
-| `unaudited` | 1609 |
+| `audited_renaming` | 33 |
+| `unaudited` | 1608 |
 
 | claim_type | count |
 |---|---:|
@@ -1473,6 +1473,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_dynamics_campaign_closeout_index_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -13561,6 +13562,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing step is a valid class A algebraic substitution in the supplied construction, and the cited coefficient law is marked retained. However, the audit packet contains no first-principles derivation and no external comparator checks; it reduces to one retained parent law plus standard finite-dimensional matrix algebra. Under the tie-breaking rule, a zero-D purely algebraic bridge of this kind is classified as audited_decoration rather than audited_clean.
 - **decoration parent:** `pmns_oriented_cycle_channel_value_law_note`
 - **auditor confidence:** high
+
+### `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`PMNS_TM2_COLUMN_SITE_BASIS_KCPT_PREDICATE_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/PMNS_TM2_COLUMN_SITE_BASIS_KCPT_PREDICATE_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded finite C3 site-basis algebra: RECORD dephasing onto P0 plus P1 yields one trimaximal singlet column, K-real C3-invariant monitors lie in span_R{I,S}, and site-basis conjugation fixes the singlet character projector while swapping the two nontrivial character projectors; realized monitor K-evenness was not derived.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-114537-4a204dd553-pmns_tm2_column_site_basis_k`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The K/CPT conjugation is site-basis complex conjugation in the fixed Z^3 site-occupation basis, transported by the complex C3 Fourier, fixing P_char(0) and swapping P_char(1) with P_char(2).  _(class `F`)_
+- **chain closes:** False — The algebraic matrix identities P0=J/3=P_char(0), conj(P_char1)=P_char2, conj(P_char2)=P_char1, and the K-real span_R{I,S} check out. The missing step is an independent retained bridge deriving or defining physical K/CPT or time-reversal K-reality as this site-basis complex conjugation, rather than asserting the identity by name.
+- **rationale:** The runner performs real finite C3 algebra checks and its 12 PASS claims match the displayed formulas, signs, factors, projectors, and degeneracies under an independent matrix audit. However, the theorem's new load-bearing move is the identification of the prior K-reality residual with site-basis K/CPT conjugation. In the restricted packet, that identity is not derived from a retained K/CPT bridge; it is introduced as the chosen name for site-basis complex conjugation. Thus the algebraic consequences are sound, but the claimed residual identification is a renaming rather than a derivation.
+- **auditor confidence:** medium
 
 ### `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26`
 

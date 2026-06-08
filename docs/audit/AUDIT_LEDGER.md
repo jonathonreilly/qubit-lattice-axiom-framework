@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 743 |
+| **retained_bounded** | 744 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1320 |
+| unaudited | 1319 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1163 |
+| `audited_clean` | 1164 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1631 |
+| `unaudited` | 1630 |
 
 | claim_type | count |
 |---|---:|
@@ -1229,6 +1229,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `valley_linear_mirror_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `valley_linear_repro_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `valley_linear_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `valley_linear_wide_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_3plus1d_promotions_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_3plus1d_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18179,6 +18180,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The strongest safe summary is that the valley-linear action is robust on the tested 3D ordered-lattice slices, with Born machine-clean, F~M = 1.00, and gravity TOWARD throughout the tested rows.  _(class `C`)_
 - **chain closes:** True — The provided runner source constructs the lattice, propagates amplitudes under the stated action and kernel, and computes the reported observables rather than printing hard-coded expected values. The conclusions are explicitly limited to the tested slices and match the completed runner output.
 - **rationale:** The note’s bounded tables are directly reproduced by a completed runner whose source performs the relevant numerical computation from the stated lattice/action setup. The runner does not import the contested table values from another note and does not use external comparator data. The claim is carefully scoped: it does not assert universality, a continuum theorem, or a settled derivation of the action law.
+- **auditor confidence:** high
+
+### `valley_linear_wide_tail_note`
+
+- **Note:** [`VALLEY_LINEAR_WIDE_TAIL_NOTE.md`](../../docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-lattice replay for the 3D ordered-lattice valley-linear branch at h=0.25, W=12, with the 1/L^2 kernel and h^2 measure, establishing the reported toward support and tail fits on the tested z=2..10 window.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-104410-c0e243ec85-valley_linear_wide_tail_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The verifier parses the nine raw no-barrier distance rows, finds peak_z=4, and recomputes the z>=5 far-tail fit as slope=-1.1685 with R^2=0.9972.  _(class `C`)_
+- **chain closes:** True — The runner source contains a first-principles replay path that instantiates the stated lattice, field, propagator, action, kernel, and detector readout, and the registered verifier checks a SHA-pinned frozen replay log while recomputing the peak and log-log tail fits from parsed rows. The note’s conclusion is explicitly bounded to this finite replay window and does not claim asymptotic or dimensional universality.
+- **rationale:** The load-bearing numerical result is not a definition, renaming, or external comparator match; it is a bounded framework computation with a frozen-row verifier that recomputes the contested peak and tail regressions rather than merely accepting prose. The helper source supplies the actual lattice construction, valley-linear propagation, h^2/L^2 weighting, field source, slit setup, and log-log fit used by the parent runner. The note scopes the result conservatively as a finite-lattice replay and explicitly excludes universal continuum or all-dimension claims.
 - **auditor confidence:** high
 
 ### `vector_sector_note`

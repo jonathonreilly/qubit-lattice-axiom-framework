@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 750 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1300 |
+| unaudited | 1299 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1172 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1611 |
+| `unaudited` | 1610 |
 
 | claim_type | count |
 |---|---:|
@@ -1330,6 +1330,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `packet_memory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -12226,6 +12227,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For dust, integrating a''/a=-(4*pi*G/3)*rho with rho*a^3=const gives H^2=(8*pi*G/3)*rho plus a curvature integration constant, and k=0 sets that constant to zero.  _(class `A`)_
 - **chain closes:** True — The independent check matches the note: with rho=C/a^3, multiplying a''=-(4*pi*G/3)*rho*a by a' integrates to (1/2)a'^2=(4*pi*G/3)C/a+const, hence H^2=(8*pi*G/3)rho+const/a^2; the flat k=0 premise removes the curvature term. The source correctly excludes radiation/general pressure, where rho-only Newtonian acceleration would not supply the GR pressure-source coefficient.
 - **rationale:** The audited claim is only the dust first-integral wrapper, not a derivation of Newton-Poisson, G, GR, radiation, or downstream cosmology. Under the stated retained/accepted inputs, the dust continuity equation supplies the exact factor 8*pi*G/3 and the flatness premise removes the integration constant. Residual risk is confined to downstream consumers: any radiation/general-pressure use still needs a separate retained GR/active-gravitational-mass source lemma.
+- **auditor confidence:** high
+
+### `newtonian_distance_law_confirmed`
+
+- **Note:** [`NEWTONIAN_DISTANCE_LAW_CONFIRMED.md`](../../docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 3D ordered-lattice valley-linear h=0.25, W=12 replay: nine tested z=2..10 no-barrier rows are TOWARD, peak row is z=4, and the claimed far-tail fit on z>=5 is approximately b^(-1.17), with no universal or asymptotic theorem asserted.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-113925-0c8b409407-newtonian_distance_law_confi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The widened W = 12, h = 0.25 replay gives a far-tail fit of b^(-1.17) on the tested z >= 5 window.  _(class `A`)_
+- **chain closes:** False — The verifier source recomputes the peak and far-tail fits from a SHA-pinned frozen log, but the restricted packet does not include the raw distance rows themselves. Under the binding independent-formula pass, the b^(-1.17) fit cannot be independently checked without trusting the runner/artifact path.
+- **rationale:** The cited authority is retained_bounded and the source note correctly narrows the claim to a finite-lattice replay, not a universal theorem. The runner is not a trivial constant printer: it verifies a frozen log hash, parses rows, and recomputes the peak and far-tail fits using a standard log-linear power fit. However, the load-bearing raw z, delta rows are not present in the restricted packet, so a fresh auditor cannot independently reproduce the displayed -1.1685 slope or R^2=0.9972 without relying on the same runner/log artifact. That leaves the scoped bounded claim plausible but not clean under the strict current-packet audit rule.
 - **auditor confidence:** high
 
 ### `nn_lattice_rescaled_c2_derivation_note_2026-05-10`

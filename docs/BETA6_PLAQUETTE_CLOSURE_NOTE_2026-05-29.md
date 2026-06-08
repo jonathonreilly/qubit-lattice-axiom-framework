@@ -161,15 +161,18 @@ read-off.
 4. **M5 weak-coupling 1-loop 1-4/54 = 0.9259.** Not yet asymptotic at beta=6;
    overshoots.
 
-### 3b. V=1 Picard-Fuchs (solved but wrong observable)
+### 3b. V=1 Picard-Fuchs (finite-window support, wrong observable)
 
 5. **V=1 single-plaquette Picard-Fuchs ODE / Frobenius (Lee-Yang) zero
-   localization.** Fully solved (all-order order-3 ODE in Q[[beta]], indicial
-   roots {-4,-3,0}, unique analytic Frobenius branch) but yields only the
+   localization.** Runner-backed finite-window support (exact checks through
+   the verified Taylor window, finite-grid lower-order exclusion, indicial
+   roots {-4,-3,0}, and conditional Bostan-Salvy-Schost arithmetic if an
+   external all-degree R=3,D=2 bridge is supplied), but not standalone
+   all-degree Picard-Fuchs closure. In any case it yields only the
    single-plaquette-in-isolation value 0.4225. Explicitly does NOT close the
    thermodynamic limit, multi-plaquette generalization, or higher-irrep
    extension. Notes: `plaquette_v1_picard_fuchs_ode_note_2026-05-05`
-   (retained_bounded); all-order proof companion unaudited.
+   (retained_bounded); finite-window boundary companion unaudited.
 
 ### 3c. Finite L_s=2 cube (cannot host the correlation length)
 

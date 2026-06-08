@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 221 |
-| **retained_bounded** | 762 |
+| **retained_bounded** | 763 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1319 |
+| unaudited | 1318 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1192 |
+| `audited_clean` | 1193 |
 | `audited_conditional` | 36 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1634 |
+| `unaudited` | 1633 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 521 |
 | `high` | 443 |
-| `medium` | 778 |
-| `leaf` | 1269 |
+| `medium` | 777 |
+| `leaf` | 1270 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 15
@@ -116,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 837 | 38.21 | `unaudited` | unaudited |
 | 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 891 | 34.80 | `audited_clean` | **retained_bounded** |
 | 16 | `three_generation_structure_note` | bounded_theorem | critical | 853 | 34.74 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1115 | 34.62 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1114 | 34.62 | `audited_clean` | **retained** |
 | 18 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 273 | 34.60 | `unaudited` | unaudited |
 | 19 | `minimal_axioms_2026-04-11` | meta | critical | 1102 | 32.61 | `unaudited` | meta |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 689 | 32.43 | `unaudited` | unaudited |
@@ -852,6 +852,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newton_law_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_c2_derivation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_c_arm_derivation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -12453,6 +12454,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For dust, integrating a''/a=-(4*pi*G/3)*rho with rho*a^3=const gives H^2=(8*pi*G/3)*rho plus a curvature integration constant, and k=0 sets that constant to zero.  _(class `A`)_
 - **chain closes:** True — The independent check matches the note: with rho=C/a^3, multiplying a''=-(4*pi*G/3)*rho*a by a' integrates to (1/2)a'^2=(4*pi*G/3)C/a+const, hence H^2=(8*pi*G/3)rho+const/a^2; the flat k=0 premise removes the curvature term. The source correctly excludes radiation/general pressure, where rho-only Newtonian acceleration would not supply the GR pressure-source coefficient.
 - **rationale:** The audited claim is only the dust first-integral wrapper, not a derivation of Newton-Poisson, G, GR, radiation, or downstream cosmology. Under the stated retained/accepted inputs, the dust continuity equation supplies the exact factor 8*pi*G/3 and the flatness premise removes the integration constant. Residual risk is confined to downstream consumers: any radiation/general-pressure use still needs a separate retained GR/active-gravitational-mass source lemma.
+- **auditor confidence:** high
+
+### `newtonian_distance_law_confirmed`
+
+- **Note:** [`NEWTONIAN_DISTANCE_LAW_CONFIRMED.md`](../../docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite W=12, h=0.25 3D valley-linear replay claim that the supplied no-barrier raw rows fit a z >= 5 far-tail exponent near b^(-1.17), not a universal Newtonian distance law.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-205223-acca9518e7-newtonian_distance_law_confi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The supplied raw distance rows have peak row z=4 and, on the z >= 5 far-tail window, a log-log fit with slope -1.1685 and R^2 = 0.9972, recorded as b^(-1.17).  _(class `A`)_
+- **chain closes:** True — The restricted packet provides the raw rows, retained_bounded upstream note, runner source, and successful frozen-log verifier output. An independent log-log least-squares check of the listed rows confirms peak z=4, far-tail slope -1.1685, R^2=0.9972, n=6.
+- **rationale:** The default runner is a frozen-log/raw-row verifier rather than a first-principles recompute, so the load-bearing closure is class A over supplied retained-grade bounded inputs. The note's safe wording is explicitly finite-window and rejects the universal-law overclaim. Within that bounded scope, the raw-row inventory, SHA-pinned verifier, and independent fit check agree.
 - **auditor confidence:** high
 
 ### `nn_lattice_rescaled_c2_derivation_note_2026-05-10`

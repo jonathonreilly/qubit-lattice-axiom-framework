@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/valley_linear_wide_tail_replay.py
+runner_sha256: 3666095eb79aab58426084bc14eac025ec70eae0fcca055e2ad434447e3f31fd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
 ========================================================================================
 VALLEY-LINEAR WIDE-TAIL FROZEN LOG VERIFIER
 source_log=logs/2026-04-04-valley-linear-wide-tail-replay.txt
@@ -14,3 +22,6 @@ PASS raw peak row: peak_z=4
 PASS recomputed peak tail fit: slope=-1.0723 R2=0.9897 n=7
 PASS recomputed far tail fit: slope=-1.1685 R2=0.9972 n=6
 SCORECARD PASS=9 FAIL=0
+
+----- stderr -----
+

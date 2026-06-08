@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 750 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1333 |
+| unaudited | 1332 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 29 |
+| ~~audited_conditional~~ | 30 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1172 |
-| `audited_conditional` | 29 |
+| `audited_conditional` | 30 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1646 |
+| `unaudited` | 1645 |
 
 | claim_type | count |
 |---|---:|
@@ -1322,6 +1322,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -12248,6 +12249,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Writing M = aI + b_1σ_1 + b_2σ_2 + b_3σ_3 gives {M,σ_j}=2aσ_j+2b_jI, so anticommuting with all three σ_j forces M=0.  _(class `A`)_
 - **chain closes:** True — The Pauli basis spans M_2(C), and the anticommutator equations independently force the scalar coefficient and each Pauli coefficient to vanish. This closes the stated single-site no-go without using temporal, gauge, multi-site, or larger Clifford structure.
 - **rationale:** The load-bearing step is elementary finite-dimensional matrix algebra over the accepted one-site M_2(C) premise and the retained Pauli Cl(3) representation input. Independent checking confirms σ_1σ_2σ_3=iI and confirms the linear anticommutator constraints have only the zero solution. The no-go is properly scoped to one single-site Pauli carrier and explicitly leaves larger chirality mechanisms outside its residual. The runner source performs actual matrix and linear-rank computations rather than merely printing expected constants.
+- **auditor confidence:** high
+
+### `nonlabel_grown_basin_note`
+
+- **Note:** [`NONLABEL_GROWN_BASIN_NOTE.md`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Seed 0 at fixed drift = 0.2 and restore values 0.60, 0.70, and 0.80 for the signed-source transfer: zero and neutral cancellation, opposite single-source signs, negative double-source response, and near-linear charge scaling.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-150628-7986a2898c-nonlabel_grown_basin_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The geometry-sector / non-label architecture survives the nearest restore neighborhood at fixed drift = 0.2, with zero/neutral gates, correct sign orientation, and linear charge response for restore = 0.6, 0.7, 0.8.  _(class `B`)_
+- **chain closes:** False — The completed stdout checks only a frozen log, so the packet does not provide the completed live recompute needed to connect the displayed row values to the grow/propagate computation. Independently checking the displayed table gives charge exponents about 1.000391 and 1.000034 for the 0.60 and 0.80 rows, not the displayed 1.000000 entries, although both remain within the stated linearity tolerance.
+- **rationale:** The primary runner source contains a plausible live recompute path through grown geometry, sector adjacency, source-field construction, propagation, and detector-centroid readout. However, the only completed runner output in the restricted packet is explicitly a frozen-log verifier, and the SHA-pinned recompute artifact named in the repair is not included as source or stdout. The audited chain therefore verifies row gates over an imported log rather than closing the bounded basin from the framework baseline. The displayed charge-exponent precision also needs correction or justification before a clean verdict.
 - **auditor confidence:** high
 
 ### `nonlinear_born_gravity_note`

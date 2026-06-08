@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 219 |
-| **retained_bounded** | 752 |
+| **retained_bounded** | 753 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1342 |
+| unaudited | 1341 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1178 |
+| `audited_clean` | 1179 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1657 |
+| `unaudited` | 1656 |
 
 | claim_type | count |
 |---|---:|
@@ -1154,6 +1154,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_fusion_engine_pr1_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block1_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -17051,6 +17052,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At NMAX=4 and n_grid=80, the runner computes the finite SU(3) fusion table on 0<=p,q<=4 by Cartan-torus character orthogonality, rounds to non-negative integers with residual <3.6e-15, and passes V1-V9.  _(class `C`)_
 - **chain closes:** True — The runner source constructs Schur characters, normalized Weyl-Vandermonde Cartan weights, and all 25^3 numerical fusion integrals directly from standard SU(3) representation-theory formulas. No cross-note, Wilson-plaquette, bridge-parent, or external comparator input is used, and the note confines the claim to this bounded finite run.
 - **rationale:** The bounded theorem closes on the restricted surface actually claimed: NMAX=4, n_grid=80, 25 weights, and 25^3 rounded fusion multiplicities computed by the runner. The nine validation passes are algebraic SU(3) identity checks over the computed table, and the tenth pass checks the computed integer residual at machine precision. This does not establish arbitrary SU(3) fusion, Wilson plaquette closure, rho_(p,q)(6), or any bridge parent chain; it cleanly supports only the finite-box engine check.
+- **auditor confidence:** high
+
+### `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05`
+
+- **Note:** [`SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md`](../../docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-runner certificate for the seven displayed SU(3) low-rank representatives: order-3 ODE candidates found inside r <= 6, deg <= 8, with finite Taylor and beta = 2,4,6,8 numerical verification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-193911-524b0f12a4-su3_low_rank_irrep_picard_fu`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each selected irrep, the runner constructs the Bessel-determinant Taylor series, solves the rational polynomial-ODE ansatz, selects primitive-integer order-3 coefficients, and verifies them on held-out series coefficients plus beta = 2,4,6,8 numerical checks.  _(class `C`)_
+- **chain closes:** True — The runner source genuinely computes the Taylor series, nullspace ODE coefficients, bounded-search minimum, and finite numerical checks rather than importing or printing the catalog. The audited scope is only this finite certificate, not all-order Picard-Fuchs exactness, all-order minimality, or behavior outside the checked window.
+- **rationale:** The displayed ODE coefficients, degree pattern, irrep dimensions, beta=6 values, and verification errors are consistent with the provided runner output and source. The runner does not hard-code the contested ODEs; it derives them from rational series data and verifies them by an independent numerical solve against the same determinant evaluator. I also checked the load-bearing formulas by an independent Weyl-torus quadrature route, reproducing the beta=6 values and near-zero ODE residuals for the displayed coefficients. The only cited repo authority is retained_bounded, and no non-retained dependency is needed for the finite certificate scope.
 - **auditor confidence:** high
 
 ### `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10`

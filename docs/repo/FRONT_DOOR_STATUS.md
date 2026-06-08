@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1340 |
-| Retained-grade rows, including boxed decorations | 1221 |
+| Applied audit verdicts | 1341 |
+| Retained-grade rows, including boxed decorations | 1222 |
 | Retained positive theorems | 207 |
 | Retained no-go rows | 218 |
-| Retained bounded rows | 747 |
+| Retained bounded rows | 748 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
 | Unaudited rows | 1353 |
@@ -33,18 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1356 |
-| Ready rows | 31 |
+| Total pending rows | 1355 |
+| Ready rows | 34 |
 | Cycle-break targets | 15 |
-| Critical pending | 329 |
+| Critical pending | 328 |
 | High pending | 251 |
 | Medium pending | 374 |
 | Leaf pending | 402 |
 
 Next ready rows by queue order:
 
-- [`plaquette_v1_picard_fuchs_ode_note_2026-05-05`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) - critical; audit_in_progress
 - [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - critical; unaudited
+- [`plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md) - high; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md) - medium; unaudited

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/NONLABEL_GROWN_BASIN_TARGETED.py
+runner_sha256: 8e5195b90516e3da629d960366a743b92936bd59aba7b8f1310485ebeead0aa1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 ==========================================================================================
 NON-LABEL GROWN BASIN TARGETED FROZEN LOG VERIFIER
 log: logs/2026-04-06-nonlabel-grown-basin-targeted.txt
@@ -15,3 +23,6 @@ Live recompute artifact
 
 SAFE READ: bounded positive restore basin; verifier checks frozen rows and the SHA-fresh live recompute artifact.
 SCORECARD PASS=4 FAIL=0
+
+----- stderr -----
+

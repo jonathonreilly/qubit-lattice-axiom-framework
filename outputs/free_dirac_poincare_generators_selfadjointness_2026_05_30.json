@@ -1,9 +1,9 @@
 {
   "claim_id": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
   "gaussian_route_slopes": [
-    0.5999152926503377,
+    0.5999152926503376,
     0.9187930384936202,
-    1.2680899272147963,
+    1.268089927214796,
     1.638485398438419,
     2.024599461288653,
     2.422935761972691,
@@ -17,7 +17,7 @@
     5.856352827683771,
     6.304137729564883
   ],
-  "repair": "replace false Nelson common-analytic-vector route with direct unitary-action integrability",
+  "repair": "replace false Nelson common-analytic-vector route with direct unitary-action integrability and wire in the Wigner strong-continuity bridge as an explicit restricted-packet dependency",
   "results": [
     {
       "detail": "companion note path is explicit in the restricted source packet",
@@ -35,23 +35,58 @@
       "pass": true
     },
     {
+      "detail": "bridge note path is explicit in the restricted source packet",
+      "name": "S4 note links Wigner strong-continuity bridge note",
+      "pass": true
+    },
+    {
+      "detail": "bridge runner path is explicit in the restricted source packet",
+      "name": "S5 note links Wigner strong-continuity bridge runner",
+      "pass": true
+    },
+    {
+      "detail": "bridge cache path is explicit in the restricted source packet",
+      "name": "S6 note links Wigner strong-continuity bridge cache",
+      "pass": true
+    },
+    {
       "detail": "the linked companion note is the exact packet consumed by this repair",
-      "name": "S4 companion note carries the expected claim id",
+      "name": "S7 companion note carries the expected claim id",
       "pass": true
     },
     {
       "detail": "source import exposes finite Poincare closure and mass-shell/Wigner checks",
-      "name": "S5 companion runner exposes the Poincare algebra and Wigner checks",
+      "name": "S8 companion runner exposes the Poincare algebra and Wigner checks",
       "pass": true
     },
     {
       "detail": "source import exposes d^3p/(2E) boost-invariance check",
-      "name": "S6 companion runner exposes the invariant-measure check",
+      "name": "S9 companion runner exposes the invariant-measure check",
       "pass": true
     },
     {
       "detail": "cached companion representation runner output is present and passing",
-      "name": "S7 companion cache is a passing representation certificate",
+      "name": "S10 companion cache is a passing representation certificate",
+      "pass": true
+    },
+    {
+      "detail": "runner=scripts/free_dirac_poincare_representation_2026-05-30.py status=ok exit=0 sha_fresh=True",
+      "name": "S11 companion cache is SHA-fresh and exits cleanly",
+      "pass": true
+    },
+    {
+      "detail": "bridge note is the functional-analytic dependency requested by audit",
+      "name": "S12 Wigner bridge note carries strong-continuity and Stone content",
+      "pass": true
+    },
+    {
+      "detail": "cached bridge runner output is present, passing, and firewall-clean",
+      "name": "S13 Wigner bridge cache is a passing continuity certificate",
+      "pass": true
+    },
+    {
+      "detail": "runner=scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py status=ok exit=0 sha_fresh=True",
+      "name": "S14 Wigner bridge cache is SHA-fresh and exits cleanly",
       "pass": true
     },
     {
@@ -93,6 +128,6 @@
   "status_boundary": "bounded-support/direct-integrability repair; no Nelson Laplacian or common Gaussian analytic-vector claim remains",
   "summary": {
     "fail": 0,
-    "pass": 14
+    "pass": 21
   }
 }

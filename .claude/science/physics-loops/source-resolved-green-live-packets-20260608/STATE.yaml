@@ -1,0 +1,26 @@
+loop_slug: source-resolved-green-live-packets-20260608
+branch: physics-loop/source-resolved-green-live-packets-20260608
+base: origin/main
+target_claim_ids:
+  - source_resolved_retarded_green_pocket_note
+  - source_resolved_transverse_propagating_green_note
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: correct_observable_labels_and_restore_live_notes
+files_touched:
+  - docs/SOURCE_RESOLVED_RETARDED_GREEN_POCKET_NOTE.md
+  - docs/SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md
+  - scripts/source_resolved_retarded_green_pocket.py
+  - scripts/source_resolved_transverse_propagating_green.py
+  - logs/runner-cache/source_resolved_retarded_green_pocket.txt
+  - logs/runner-cache/source_resolved_transverse_propagating_green.txt
+open_imports:
+  - independent audit of restored live notes
+  - no full retarded field equation
+  - no full propagating transverse field theory
+trace_gate_classification: direct_blocker_closure
+review_findings: pending
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: PR opened and remaining backlog rescanned

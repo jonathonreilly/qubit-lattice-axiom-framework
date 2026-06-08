@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 746 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1342 |
+| unaudited | 1341 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1168 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1655 |
+| `unaudited` | 1654 |
 
 | claim_type | count |
 |---|---:|
@@ -1307,6 +1307,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5516,6 +5517,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `FIFTH_FAMILY_RADIAL_NOTE.md_unaudited_base_family`
   - `live_runner_output_not_reproducible`
 - **auditor confidence:** high
+
+### `fifth_family_radial_boundary_note`
+
+- **Note:** [`FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the radial-shell family at the single drift=0.20, seed=0 row: exact zero-source and neutral cancellation controls plus a local sign-orientation flip; neighboring rows are only finite-run context.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-143129-f63069cd1c-fifth_family_radial_boundary`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At drift=0.20, seed=0 the radial-shell row keeps exact zero/neutral controls but flips sign orientation, with plus < 0 and minus > 0, supposedly certified by a first-order orientation coefficient rather than the old replay alone.  _(class `C`)_
+- **chain closes:** False — The supplied primary runner and helpers genuinely compute the finite row, and zero/neutral exactness follows from empty-source and same-point +1/-1 field cancellation. The independent variational certificate named by the note is not included, so the negative first-order orientation coefficient is not independently checkable from this restricted packet.
+- **rationale:** The primary runner is not a constant-printing stub: it builds the grown slice, radial-shell connectivity, source field, propagation, and detector centroid, and its output supports the finite sign-flip row. However, the note's repair explicitly relies on a separate symmetry/orientation certificate for clean closure beyond finite replay, and neither that certificate source nor its cached output is provided here. Under the strict independent-math-check rule, runner PASS alone is insufficient for audited_clean.
+- **auditor confidence:** medium
 
 ### `fifth_family_radial_fm_transfer_note`
 

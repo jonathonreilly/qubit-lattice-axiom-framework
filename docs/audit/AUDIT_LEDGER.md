@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 760 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1326 |
+| unaudited | 1325 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,28 +60,28 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1189 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1641 |
+| `unaudited` | 1640 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1388 |
+| `bounded_theorem` | 1389 |
 | `decoration` | 53 |
 | `meta` | 323 |
 | `no_go` | 339 |
 | `open_gate` | 137 |
-| `positive_theorem` | 771 |
+| `positive_theorem` | 770 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 520 |
 | `high` | 445 |
-| `medium` | 779 |
-| `leaf` | 1267 |
+| `medium` | 780 |
+| `leaf` | 1266 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 15
@@ -1335,6 +1335,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -6582,6 +6583,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The explicit free massive Dirac/Poincare generators satisfy the stated Lorentz and Poincare commutators, preserve the positive mass shell and invariant measure, and give the CAR-relabelled finite-mode Fock Hamiltonian a lower bound.  _(class `A`)_
 - **chain closes:** True — Within the note's bounded scope, the displayed identities reduce to explicit matrix and differential-operator algebra over definitions given in the packet. The note explicitly excludes OS reconstruction, essential self-adjointness, spin-statistics, and lattice-derived Lorentz symmetry, so no missing downstream bridge is needed for the audited claim.
 - **rationale:** The load-bearing content is a genuine class A algebraic closure check, not a definition, renaming, tuned numerical match, or external comparator. The runner output reports all eight checks passing, and the provided source implements substantive gamma-matrix, finite-representation, mass-shell, measure, spectrum, and boost-covariance computations rather than printing fixed results. The displayed signs and normalizations in the source note are consistent with the stated mostly-minus conventions. The clean verdict is limited to the bounded textbook free-field packet and does not promote any excluded reconstruction or lattice-origin claim.
+- **auditor confidence:** high
+
+### `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free massive spin-1/2 one-particle Wigner representation on the supplied continuum positive-mass shell, with D = C_c^infty(H_m^+; C^2), auditing Stone-generator/differential-generator coincidence on that core.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-203341-8b08c25c28-free_dirac_poincare_stone_di`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Dense U(t)-invariant D with d/dt U(t)psi|0 = -i A_diff psi implies D is a common core for the Stone generator and A_Stone = closure(A_diff|D).  _(class `A`)_
+- **chain closes:** False — The packet verifies the orbital boost derivative but does not derive the derivative of the Wigner SU(2) cocycle for boosts, i.e. the claimed bounded momentum-dependent spin term with correct sign and factor. Boundedness plus Kato-Rellich establishes essential self-adjointness once the differential operator is identified, but it does not identify the Stone boost generator's spin part.
+- **rationale:** The runner contains genuine algebraic and symbolic checks for mass-shell measure invariance, the rotation z-generator, the orbital boost derivative, selected commutators, the Casimir, and rapidity/full-line self-adjointness proxies. However, several core-lemma premises are asserted as True, and the load-bearing full boost coincidence omits the Wigner cocycle derivative that would produce the claimed bounded spin multiplication term. The cited strong-continuity bridge supplies existence of Stone generators, while the representation note explicitly does not close the full momentum-dependent spin-tensored boost domain theorem. The restricted packet therefore supports a conditional bridge, not the stated full ten-generator coincidence theorem.
+- **open / conditional deps cited:**
+  - `FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`
 - **auditor confidence:** high
 
 ### `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07`

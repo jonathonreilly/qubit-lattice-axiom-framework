@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py
+runner_sha256: 41cfb4e7fa5620c9596ab9de27f783ea7a628fa44aac43a2025d56ac9bc51dbe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
 ============================================================================================
 Wigner Stone-generator / differential-generator COINCIDENCE on the common core C_c^inf(H_m^+;C^2)
 ============================================================================================
@@ -49,3 +57,6 @@ F: Reed-Simon VIII.11 core lemma => common core => Stone gen = differential gen 
 ============================================================================================
 TOTAL: 20 PASS / 0 FAIL
 ============================================================================================
+
+----- stderr -----
+

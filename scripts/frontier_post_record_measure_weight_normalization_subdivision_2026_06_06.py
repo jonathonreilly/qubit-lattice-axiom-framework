@@ -46,11 +46,11 @@ SELECTOR_TANGENT_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "character_path_channel_weight": 10,
-    "generic_measure_weight_import": 6,
-    "selector_tangent_readout_weight": 7,
+    "character_path_channel_weight": 8,
+    "generic_measure_weight_import": 8,
+    "selector_tangent_readout_weight": 8,
     "source_measure_or_rn_bridge": 15,
-    "trace_normalization_reference": 7,
+    "trace_normalization_reference": 6,
 }
 EXPECTED_MEASURE_ROWS = sum(EXPECTED_LANE_COUNTS.values())
 

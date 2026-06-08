@@ -1,0 +1,27 @@
+loop_slug: post-record-selector-helper-refresh-20260608
+mode: run
+target_claim_id: post_record_selector_tangent_readout_weight_prototype_2026-06-06
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: refresh_row_count_and_static_helper_source
+files_touched:
+  - docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md
+  - scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+  - outputs/post_record_measure_weight_normalization_slice_2026_06_07.json
+  - logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt
+  - docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md
+  - scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.txt
+open_imports:
+  - Record-derived selector/tangent/readout carrier
+  - Record-derived readout weights/readout map
+  - Record-derived positive tangent metric/Hessian
+checks:
+  - python3 scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+  - python3 scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py --timeout-sec 120
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py --timeout-sec 120
+next_exact_action: Submit this dependency repair for review; decide separately whether to attempt a Record-derived selector/readout bridge.
+stop_condition: Coherent PR block complete; continue campaign by scanning next conditional rows.

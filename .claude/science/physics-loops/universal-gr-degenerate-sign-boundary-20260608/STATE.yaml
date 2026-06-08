@@ -1,0 +1,21 @@
+loop_slug: universal-gr-degenerate-sign-boundary-20260608
+date: 2026-06-08
+branch: physics-loop/universal-gr-degenerate-sign-boundary-20260608
+goal: "Repair the universal-GR degenerate supermetric sign row by narrowing it to supplied-comparator sign algebra."
+target_claim_id: universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: comparator_sign_algebra_boundary
+hard_residual: "Framework-native Regge/Lichnerowicz signs and dynamical gluing law remain open."
+files_touched:
+  - docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md
+  - scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py
+  - logs/runner-cache/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.txt
+  - .claude/science/physics-loops/universal-gr-degenerate-sign-boundary-20260608/
+open_imports:
+  - "framework-native derivation of the comparator curvature signs"
+  - "framework-native V/G dynamical gluing law"
+  - "finite-k W/stress route"
+next_exact_action: "Re-audit as bounded comparator-sign algebra."
+stop_condition: "The broader GR no-go is not asserted by this branch."

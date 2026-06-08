@@ -1,11 +1,18 @@
-"""Class-A finite runner: the weak-field test-mass response (clean-chain premise (4),
-S = L(1 - c*phi), refractive index n = 1 - c*phi) is DERIVED from the field phi entering
-the lattice DISPERSION. The field enters H -> H + phi (self_consistency / the source
-modifies the Hamiltonian); a test particle at fixed energy E then has local wavenumber set
-by lambda(k) + phi = E, i.e. k(x) = k0*sqrt(1 - phi/E) = k0*(1 - phi/(2E) + O(phi^2)), so
-the Fermat refractive index is n(x) = k(x)/k0 = 1 - phi/(2E). Hence the test-mass action is
-S = integral n dl = L - (1/2E) integral phi dl = the weak-field response premise (4), and the
-weak-field metric is g ~ (1 +/- 2*Phi) with the Newtonian potential Phi proportional to phi.
+"""Bounded runner for the weak-field refractive-index support packet.
+
+The field-shift input H -> H + phi is supplied by the retained-bounded
+self-consistency packet.  This runner checks the lattice-dispersion arithmetic
+and source-boundary discipline; it does not claim to derive the full physical
+Fermat/eikonal bridge.
+
+On the axis lattice dispersion lambda_axis(k) = 2 - 2 cos(k), fixed energy
+lambda_axis(k) + phi = E gives the exact relation
+
+    k(phi) = arccos(1 - (E - phi)/2),   n(phi) = k(phi)/k(0).
+
+For small k and weak field, n(phi) = sqrt(1 - phi/E) + O(E, phi), hence
+n = 1 - phi/(2E) + O((phi/E)^2, E, phi).  With the Fermat reading supplied,
+the test-mass action is S = integral n dl = L - (1/2E) integral phi dl.
 
 The geometric (Fermat/geodesic) ray deflection of the import-free potential phi = a/r
 (companion lattice_greens_1_over_r_from_heat_kernel_resolvent #3184) is the STANDARD
@@ -13,8 +20,10 @@ alpha(b) = integral grad_perp phi dl = 2a/b ~ 1/b weak-field lensing -- DISTINCT
 dipole-suppressed Kubo susceptibility (companion lensing_exponent_is_dipole_crossover #3191,
 which is b^-2). So the lattice DOES give 1/b geometric lensing via the geodesic, premise (4).
 
-  T1  dispersion shift: on lambda(k)=6-2 sum cos(k_mu), solving lambda(k)+phi=E gives
-      n(x)=k(x)/k0 = sqrt(1-phi/E) = 1 - phi/(2E) + O(phi^2) (Fermat refractive index).
+  T1  exact axis-lattice dispersion shift:
+      k(phi)=arccos(1-(E-phi)/2), n(phi)=k(phi)/k0.
+      Small-k weak-field limit: n=sqrt(1-phi/E)+O(E,phi)
+      and first order n=1-phi/(2E)+...
   T2  Fermat action premise (4): S = integral n dl = L - (1/2E) integral phi dl
       = L(1 - c*<phi>) with c = 1/(2E); linear in phi.
   T3  weak-field metric: the light index n = 1 - 2*Phi (Phi the Newtonian potential)
@@ -32,6 +41,10 @@ the structural targets here.
 prints TOTAL: PASS=N FAIL=0
 """
 
+import hashlib
+import json
+from pathlib import Path
+
 import numpy as np
 from scipy.integrate import quad
 from scipy.optimize import brentq
@@ -40,23 +53,50 @@ TOL = 1e-6
 results = []
 def check(name, ok): results.append((name, bool(ok)))
 
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md"
+AUDIT_LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+KUBO_RUNNER = ROOT / "scripts" / "frontier_lensing_exponent_is_dipole_crossover.py"
+KUBO_CACHE = ROOT / "logs" / "runner-cache" / "frontier_lensing_exponent_is_dipole_crossover.txt"
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def cache_header(cache_path: Path) -> dict[str, str]:
+    header = cache_path.read_text(encoding="utf-8", errors="replace").split("----- stdout -----", 1)[0]
+    fields: dict[str, str] = {}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        fields[key.strip()] = value.strip()
+    return fields
+
 # lattice dispersion along an axis: lambda(k) = 6 - 2(cos k + 2)  (other two components at k=0)
 # small-k along axis: lambda ~ k^2. Test particle energy E; local wavenumber from lambda(k)+phi=E.
 def lam_axis(k): return 6 - 2 * (np.cos(k) + 2.0)   # = 2 - 2 cos k ~ k^2 small k
 
-# --- T1: dispersion-shift refractive index n = sqrt(1 - phi/E) = 1 - phi/(2E) + O(phi^2) ---
+# --- T1: exact axis-lattice shift plus small-k weak-field limit. ---
 E = 0.02   # small energy -> small k -> continuum (|k|^2) regime
 k0 = brentq(lambda k: lam_axis(k) - E, 1e-6, 1.0)
-ok1 = ok1b = True
+exact_lattice_ok = small_k_ok = first_order_ok = True
 for phi in [0.0004, 0.0008, 0.0016]:   # phi/E <= 0.08, genuinely weak field (first-order regime)
     kx = brentq(lambda k: lam_axis(k) + phi - E, 1e-6, 1.0)
-    n = kx / k0
-    if not abs(n - np.sqrt(1 - phi / E)) < 5e-3:   # n = k(x)/k0 = sqrt(1-phi/E) (exact, continuum)
-        ok1 = False
-    if not abs(n - (1 - phi / (2 * E))) < 5e-3:    # first-order Fermat index n = 1 - phi/2E
-        ok1b = False
-check("T1 dispersion shift: n=k(x)/k0 = sqrt(1-phi/E) (Fermat refractive index)", ok1)
-check("T1b first-order: n = 1 - phi/(2E) (refractive index linear in phi)", ok1b)
+    exact_kx = np.arccos(1.0 - (E - phi) / 2.0)
+    n_exact = kx / k0
+    n_continuum = np.sqrt(1 - phi / E)
+    n_linear = 1 - phi / (2 * E)
+    if abs(kx - exact_kx) > 1e-12:
+        exact_lattice_ok = False
+    if not abs(n_exact - n_continuum) < 5e-3:
+        small_k_ok = False
+    if not abs(n_exact - n_linear) < 5e-3:
+        first_order_ok = False
+check("T1 exact axis-lattice map: k(phi)=arccos(1-(E-phi)/2)", exact_lattice_ok)
+check("T1b small-k limit: n=k(phi)/k0 = sqrt(1-phi/E)+O(E,phi)", small_k_ok)
+check("T1c first-order weak field: n = 1 - phi/(2E)", first_order_ok)
 
 # --- T2: Fermat action S = int n dl = L - (1/2E) int phi dl (premise 4) ---
 # along a path of length Lpath through a field profile phi(s); S = int (1 - phi/2E) ds
@@ -102,6 +142,37 @@ geo = np.array([2 * a / b for b in bs])
 slope_geo = np.polyfit(np.log(bs), np.log(geo), 1)[0]
 check("T6 geometric deflection slope = -1 (1/b), distinct from Kubo b^-2 (#3191)",
       abs(slope_geo + 1.0) < 1e-9)
+
+# --- SOURCE/AUTHORITY BOUNDARY: expose ledger statuses and comparison packet. ---
+note_text = NOTE.read_text(encoding="utf-8")
+ledger = json.loads(AUDIT_LEDGER.read_text(encoding="utf-8"))
+rows = ledger.get("rows", {})
+check("SOURCE note names the 2026-06-08 audit-targeted boundary repair",
+      "2026-06-08 Audit-Targeted Boundary Repair" in note_text)
+check("SOURCE note states Fermat n=k/k0 remains supplied eikonal bridge",
+      "not as a new" in note_text and "retained physical bridge" in note_text)
+check("SOURCE note contains exact arccos lattice relation",
+      "k(phi)=arccos(1 - (E - phi)/2)" in note_text
+      or "k(φ)=arccos(1−(E−φ)/2)" in note_text)
+check("AUTH self_consistency_forces_poisson is retained_bounded",
+      rows.get("self_consistency_forces_poisson_note", {}).get("effective_status") == "retained_bounded")
+check("AUTH finite_rank_source_to_metric is retained_bounded",
+      rows.get("finite_rank_source_to_metric_theorem_note", {}).get("effective_status") == "retained_bounded")
+check("KUBO comparison runner and cache are present",
+      KUBO_RUNNER.exists() and KUBO_CACHE.exists())
+if KUBO_RUNNER.exists() and KUBO_CACHE.exists():
+    kubo_header = cache_header(KUBO_CACHE)
+    check("KUBO comparison cache is SHA-fresh",
+          kubo_header.get("runner_sha256") == sha256(KUBO_RUNNER))
+else:
+    check("KUBO comparison cache is SHA-fresh", False)
+check("KUBO comparison packet status is exposed as unaudited",
+      rows.get("lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07", {}).get("effective_status") == "unaudited"
+      and "unaudited at this ledger snapshot" in note_text)
+check("SOURCE no full premise-4 promotion",
+      "does not by itself promote clean-chain premise" in note_text
+      and "not a full retained" in note_text
+      and "derivation of the physical Fermat bridge" in note_text)
 
 n_pass = sum(1 for _, ok in results if ok)
 n_fail = sum(1 for _, ok in results if not ok)

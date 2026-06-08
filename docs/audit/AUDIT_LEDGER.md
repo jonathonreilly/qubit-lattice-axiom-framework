@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 208 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 752 |
+| **retained_bounded** | 753 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1312 |
+| unaudited | 1311 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1176 |
+| `audited_clean` | 1177 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1625 |
+| `unaudited` | 1624 |
 
 | claim_type | count |
 |---|---:|
@@ -998,6 +998,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_axiom_audit_application_map_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -14742,6 +14743,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** eta_bar / rho_bar = (mu eta) / (mu rho) = eta / rho, since mu > 0 cancels; the origin angle and doubled-angle identities then depend only on this preserved slope, and the (1,0)-based finite tangent difference factors as eta*(mu - 1)/((1 - mu*rho)*(1 - rho)).  _(class `A`)_
 - **chain closes:** True — The scoped claim is pure algebra and elementary plane geometry over abstract positive real symbols with no cited dependencies. The note explicitly guards the finite-tangent exclusions needed for T4, so the factorization proves the iff condition on its stated domain.
 - **rationale:** The load-bearing step is a direct algebraic cancellation under positive radial scaling, with standard arctan and double-angle consequences, and the runner independently verifies the symbolic slope, origin-angle, doubled-angle, radius, and finite-tangent factorization checks. Residual risk is limited to scope control: this clean verdict covers only the abstract Euclidean radial-scaling theorem and does not ratify any CKM-specific assignment, physical observable bridge, or upstream parent framing.
+- **auditor confidence:** high
+
+### `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`
+
+- **Note:** [`RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the structural locator: the retained C3 coupling form K=|K|(J−I) contains a rank-1 singlet/democratic J piece, yields a singlet plus degenerate doublet spectrum, and the stated reduced 2x2 toy blocks distinguish degenerate maximal mixing from split-doublet small mixing; no physical mass/readout or hierarchy derivation was audited as closed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-161410-096b210a0a-rank1_single_source_template`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the retained derived coupling K = |K|(J−I), J = 3·P_singlet is rank-1 and K = 3|K|·P_singlet − |K|·I has spectrum (2|K|, −|K|, −|K|).  _(class `A`)_
+- **chain closes:** True — The structural claims follow from the retained upstream K form plus standard finite-dimensional matrix algebra: J has eigenvalues (3,0,0), J−I has (2,−1,−1), and [[m,b],[b,m]] has 45° eigenvector mixing. The note explicitly leaves the physical mass/readout identification and the origin of the hierarchy outside scope.
+- **rationale:** The runner source performs the relevant rank, eigenvalue, and 2x2 mixing calculations rather than merely printing the expected result, and an independent algebra check agrees with the displayed factors and spectra. The numerical 12.6° toy value follows from the stated split block with m1=0.05, m2=1, b=sqrt(0.05), while the PDG angles are comparator-only and not asserted as derived. The clean verdict is only for the bounded locator theorem, not for identifying K with the physical mass operator or deriving the doublet hierarchy.
 - **auditor confidence:** high
 
 ### `rconn_derived_note`

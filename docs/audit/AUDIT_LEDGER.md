@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 210 |
-| **retained_no_go** | 220 |
+| **retained_no_go** | 221 |
 | **retained_bounded** | 762 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1322 |
+| unaudited | 1321 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1191 |
+| `audited_clean` | 1192 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1637 |
+| `unaudited` | 1636 |
 
 | claim_type | count |
 |---|---:|
@@ -78,8 +78,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 520 |
-| `high` | 444 |
+| `critical` | 521 |
+| `high` | 443 |
 | `medium` | 777 |
 | `leaf` | 1270 |
 
@@ -771,6 +771,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_adjoint_kernel_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_adjoint_kernel_reduced_model_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lensing_beta_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lensing_centroid_multipole_no_go_bounded_theorem_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_finite_path_explanation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -11212,6 +11213,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The coarse beta=5 near-1/b slope is not stable: nearby beta=7 and beta=10 leave the positive near-1 branch, and the H=0.35 beta=5 refinement flips sign and moves to slope -0.7930.  _(class `C`)_
 - **chain closes:** True — The completed runner computes the contested beta sweep from the lattice/Kubo machinery and its cache matches the note's load-bearing slopes, signs, and shape-spread values. This closes the bounded finite-sweep claim, not a universal beta->infinity no-go theorem.
 - **rationale:** The runner source calls the framework grow/true_kubo machinery for each beta and b value, fits the resulting values, and does not hard-code the contested slopes or sign pattern. The cached output supports the note's finite numerical conclusion: beta=5 at H=0.5 is a special near-1/b point, while beta=7/10 and H=0.35 beta=5 do not preserve that behavior. The cited one-hop authorities are retained-bounded, and no upstream value is imported as the contested result. The clean verdict is only for the explicitly bounded Fam1 beta/H sweep, not for a framework-level negative theorem about all narrow-beam limits or the adjoint-kernel mechanism.
+- **auditor confidence:** high
+
+### `lensing_centroid_multipole_no_go_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`LENSING_CENTROID_MULTIPOLE_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/LENSING_CENTROID_MULTIPOLE_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Fixed finite H=0.6, T_phys=15 adjoint-centroid harness: nonzero nonnegative scalar-potential path/layer reductions cannot be the exact detector-centroid functional; this is not a global no-go against lensing or signed adjoint bridges.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-2a66e9d6f0-lensing_centroid_multipole_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A nonzero nonnegative scalar-potential path or layer sum has M0 = sum_e w_e > 0 and therefore an uncancelled M0/b leading term, whereas the fixed adjoint-centroid edge coefficients are signed with a nearly cancelled monopole and live dipole.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the finite lattice, free amplitudes, detector adjoint, and signed edge coefficients, then computes the stated multipole coefficients rather than importing them. Independently, the finite-edge expansion gives 1/r_e(b)=b^-1+(z_e-eps)b^-2+((z_e-eps)^2-dx_e^2/2)b^-3+O(b^-4), so any nonzero nonnegative replacement has positive monopole and cannot match the signed centroid functional's asymptotic data.
+- **rationale:** The helper chain is present and the load-bearing computations instantiate the framework harness rather than reading a prior note or printing fixed contested values. The decisive obstruction is algebraic once the computed signed finite edge measure is available: nonnegative scalar weights have M0>0, while the audited centroid coefficients have signed cancellation and a nonzero dipole. The no-go discipline gate is satisfied only in the bounded sense: signed adjoint-centroid bridges, refinement/family claims, and other observables remain explicitly open.
 - **auditor confidence:** high
 
 ### `lensing_deflection_note`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1372 |
-| Retained-grade rows, including boxed decorations | 1241 |
+| Applied audit verdicts | 1373 |
+| Retained-grade rows, including boxed decorations | 1242 |
 | Retained positive theorems | 210 |
-| Retained no-go rows | 220 |
+| Retained no-go rows | 221 |
 | Retained bounded rows | 762 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1322 |
+| Unaudited rows | 1321 |
 | Retained-pending-chain rows | 11 |
 | Audited conditional rows | 35 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1324 |
-| Ready rows | 18 |
+| Total pending rows | 1323 |
+| Ready rows | 17 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
 | Medium pending | 365 |
-| Leaf pending | 382 |
+| Leaf pending | 381 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`lensing_centroid_multipole_no_go_bounded_theorem_note_2026-06-08`](../../docs/LENSING_CENTROID_MULTIPOLE_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`lepton_phase_modulus_separation_no_go_2026-06-06`](../../docs/LEPTON_PHASE_MODULUS_SEPARATION_NO_GO_2026-06-06.md) - medium; unaudited
 - [`lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06`](../../docs/LORENTZ_NATURALNESS_GAP_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-06.md) - medium; unaudited
 - [`newtonian_distance_law_confirmed`](../../docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md) - medium; unaudited
 - [`nonlabel_grown_drift_basin_note`](../../docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md) - medium; unaudited
 - [`packet_memory_note`](../../docs/PACKET_MEMORY_NOTE.md) - medium; unaudited
-- [`plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md) - leaf; unaudited
+- [`plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
+- [`post_record_selector_tangent_readout_weight_prototype_2026-06-06`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3129 |
-| Critical nodes | 523 |
-| High nodes | 446 |
+| Critical nodes | 524 |
+| High nodes | 445 |
 | Medium nodes | 818 |
 | Leaf nodes | 1342 |
 

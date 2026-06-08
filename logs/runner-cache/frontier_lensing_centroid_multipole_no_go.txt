@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lensing_centroid_multipole_no_go.py
+runner_sha256: c36fd97f7404d96f5b92f5849cdfaa77358d684ebf4a151229d9b6c5f2695ec0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.22
+status: ok
+----- stdout -----
 ========================================================================================
 LENSING CENTROID MULTIPOLE NO-GO
 ========================================================================================
@@ -35,3 +43,6 @@ PASS positive scalar-potential control keeps monopole slope
 PASS old centered gradient surrogate is a different primitive
 
 TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

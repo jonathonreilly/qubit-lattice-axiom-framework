@@ -46002,10 +46002,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lattice_total_momentum_conservation_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "lensing_centroid_multipole_no_go_bounded_theorem_note_2026-06-08"
     },
     {
@@ -46027,6 +46023,10 @@
     {
       "from": "repo.front_door_status",
       "to": "packet_memory_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -88951,16 +88951,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "lattice_total_momentum_conservation_theorem_note_2026-05-02",
         "lensing_centroid_multipole_no_go_bounded_theorem_note_2026-06-08",
         "lepton_phase_modulus_separation_no_go_2026-06-06",
         "lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06",
         "newtonian_distance_law_confirmed",
         "nonlabel_grown_drift_basin_note",
-        "packet_memory_note"
+        "packet_memory_note",
+        "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ecc899e119847a7fc6b4a7f6a0d529fd388d26372848594c85c192e49dfcee10",
+      "note_hash": "682669ecbddcceb9cc5ba8054b3884d4df8335c393537bd9252c305e85022b6e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

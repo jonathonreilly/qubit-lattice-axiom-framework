@@ -2,10 +2,17 @@
 
 **Date:** 2026-05-20 (parent-boundary repair 2026-06-07: align this
 row with the narrower finite PEP bridge, which supplies compression
-algebra but not measurement probability semantics).
-**Type:** conditional bounded_theorem candidate
+algebra but not measurement probability semantics; audit-target split
+2026-06-08: separate the exact finite projective/instrument support from
+the still-open measurement probability bridge).
+**Type:** conditional-support assembly over exact finite subclaims
 **Status:** source-side conditional proposal — independent audit lane owns
 the verdict
+**Actual current-surface status:** conditional-support. This parent row is
+not a retained, unbounded, or framework-native Lüders/Born theorem. It is
+an assembly note whose exact source-side support is limited to the finite
+projective/instrument algebra listed in the 2026-06-08 split below; the
+measurement probability semantics remain a separate open bridge.
 **Supplies (proposed):** a conditional bounded replacement for one of
 the admitted inputs in
 `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` — the
@@ -267,12 +274,78 @@ Expected:
 SUMMARY: PASS=12 FAIL=0
 ```
 
+## 2026-06-08 Audit-Target Split
+
+The current source packet should be audited as a split target, not as a
+single framework-native Lüders theorem.
+
+**Exact finite support already present in source:**
+
+1. The finite `PEP` compression theorem:
+   [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+   proves `0 <= PEP <= P`, trace cyclicity, nested compression, and the
+   relevant boundary cases in finite matrix algebra. It does not assign
+   physical probability meaning to the trace scalar.
+2. The canonical projective Kraus selection:
+   [`LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`](LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md)
+   proves `K_r = P_r` for the canonical finite projective readout frame,
+   and proves why general apparatus label-mixing is outside that scope.
+3. The finite pointer-record write bridge:
+   [`RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md`](RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md)
+   proves that supplied stable pointer projectors plus a supplied ideal
+   pointer-label write give a normalized isometry `W`, projective Kraus
+   blocks `K_r=P_r`, a CPTP pointer-dephasing channel, and repeat-readable
+   selective branches inside that finite pointer model.
+4. The typed record-instrument kernel interface:
+   [`RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md`](RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md)
+   proves that, once a finite instrument and trace/effect pairing are
+   supplied, `mu_r = Tr(K_r rho K_r^dag)` is a normalized kernel over
+   possible record atoms and that realized post-record atoms remain distinct
+   from predictive probabilities.
+
+**Residual open bridge for this parent:**
+
+The missing theorem is not another `PEP` algebra check. It is the physical
+measurement-semantics bridge from the approved `{Lattice, Quantum, Record}`
+surface to:
+
+```text
+pre-record density state + physical instrument/readout context
+  -> trace/effect probability law
+  -> sequential record probabilities
+  -> selective conditioning update as a physical record update.
+```
+
+The 2026-06-05 Record axiom explicitly supplies durable realized-outcome
+registration and finite scalar additivity only after a readout context is
+given; it supplies no probability, normalization, measurement/decoherence
+dynamics, or instrument generation. Therefore the parent row remains
+conditional-support unless a separate retained measurement-side bridge is
+accepted. The exact subclaims above can be independently useful audit targets
+and can retire bare textbook *algebra* imports, but they do not by themselves
+retire the Born/measurement probability premise.
+
+Audit split guard:
+
+```bash
+python3 scripts/luders_measurement_semantics_audit_split_guard_2026_06_08.py
+```
+
+Expected:
+
+```text
+SUMMARY: PASS=23 FAIL=0
+```
+
 ## Citation-graph note
 
 **Upstream framework dependencies** (load-bearing; markdown links so the citation graph records them as deps):
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra and `Z^3` substrate)
 - [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) — finite operator-algebra bridge for `M_{P,E}=PEP`, valid-effect bounds, trace-cyclicity algebra, nested compression, and the Jordan-product guard
+- [`LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`](LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md) — canonical finite projective Kraus selection `K_r=P_r` under restricted readout-frame scope
+- [`RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md`](RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md) — finite pointer-record write to projective Kraus isometry bridge under supplied pointer-model premises
+- [`RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md`](RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md) — typed finite kernel interface under supplied instrument and trace/effect pairing
 
 **Runner/cache evidence** (load-bearing for the native bridge):
 
@@ -280,6 +353,8 @@ SUMMARY: PASS=12 FAIL=0
 - [`logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt`](../logs/runner-cache/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.txt)
 - [`scripts/luders_parent_boundary_guard_2026_06_07.py`](../scripts/luders_parent_boundary_guard_2026_06_07.py)
 - [`logs/runner-cache/luders_parent_boundary_guard_2026_06_07.txt`](../logs/runner-cache/luders_parent_boundary_guard_2026_06_07.txt)
+- [`scripts/luders_measurement_semantics_audit_split_guard_2026_06_08.py`](../scripts/luders_measurement_semantics_audit_split_guard_2026_06_08.py)
+- [`logs/runner-cache/luders_measurement_semantics_audit_split_guard_2026_06_08.txt`](../logs/runner-cache/luders_measurement_semantics_audit_split_guard_2026_06_08.txt)
 
 **Parallel standard-math comparators** (not the only source route):
 

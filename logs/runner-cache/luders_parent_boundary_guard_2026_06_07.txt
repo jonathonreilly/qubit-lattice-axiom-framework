@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/luders_parent_boundary_guard_2026_06_07.py
-runner_sha256: 01ed45ea7b9b7e8299a7ae0f252abb40e979429e854d3606fcd157428a44f076
+runner_sha256: 1bccb123dd32814934abb560e8f03b1b67af09c6b630cf54c5a0596eac798317
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.02
@@ -9,7 +9,7 @@ status: ok
 LUEDERS PARENT BOUNDARY GUARD 2026-06-07
 [PASS] parent note exists  [docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md]
 [PASS] PEP bridge note exists  [docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md]
-[PASS] parent declares conditional bounded theorem candidate
+[PASS] parent declares conditional Lueders support boundary
 [PASS] parent states trace/effect probability is measurement-side premise
 [PASS] parent states bridge supplies PEP compression algebra
 [PASS] parent states bridge does not supply Born/update semantics

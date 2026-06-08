@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
+runner_sha256: d4c523f1631eac79f9677faef3222eca1724c66983bad0f203eb5dfe1527f646
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 1.02
+status: nonzero_exit
+----- stdout -----
 
 ------------------------------------------------------------------------------
 Source-anchor checks
@@ -50,17 +58,18 @@ PASS negative supplied weights are rejected
 ------------------------------------------------------------------------------
 Selector/tangent row checks
 ------------------------------------------------------------------------------
-PASS selector/tangent row count is current snapshot :: 7
+FAIL selector/tangent row count is current snapshot :: 8
 PASS representative row present: dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16
 PASS representative row present: teleportation_preparation_readout_probe_note
 PASS representative row present: yt_exact_hessian_selector_uniqueness_note
-PASS audit ledger hash is unchanged :: c2342b776905620eb719a785ec616734b8ddc0e9d310eb83c6b01226e10bdfe4
+PASS audit ledger hash is unchanged :: 9864f26320e2a74f0e27ab07fd280d4d7683f4af8fd94dbdf1b134892be335a9
 
 Selector/tangent/readout rows:
   dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16 | effective retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md
   hierarchy_bosonic_bilinear_selector_note | effective unaudited | bounded_theorem | docs/HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md
   higgs_taste_singlet_projection_bounded_note_2026-05-09 | effective unaudited | bounded_theorem | docs/HIGGS_TASTE_SINGLET_PROJECTION_BOUNDED_NOTE_2026-05-09.md
   lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05 | effective retained_bounded | bounded_theorem | docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md
+  magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06 | effective unaudited | bounded_theorem | docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md
   observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05 | effective unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md
   teleportation_preparation_readout_probe_note | effective unaudited | bounded_theorem | docs/TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md
   yt_exact_hessian_selector_uniqueness_note | effective unaudited | bounded_theorem | docs/YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md
@@ -80,8 +89,8 @@ PASS Record-derived Born law flag is false
 PASS production dynamics derived flag is false
 PASS Record-derived physical arrow flag is false
 
-SUMMARY: PASS=56 FAIL=0
-SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=7
+SUMMARY: PASS=55 FAIL=1
+SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=8
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
 SELECTOR_AUTHORITY_DERIVED=FALSE
@@ -92,3 +101,6 @@ GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
 BORN_LAW_DERIVED_FROM_RECORD=FALSE
 PRODUCTION_DYNAMICS_DERIVED=FALSE
 PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
+
+----- stderr -----
+

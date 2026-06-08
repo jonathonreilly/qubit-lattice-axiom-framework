@@ -62,11 +62,13 @@ from __future__ import annotations
 
 import itertools
 import sys
+from pathlib import Path
 
 import numpy as np
 
 np.seterr(all="ignore")
 PASS, FAIL = 0, 0
+NOTE = Path(__file__).resolve().parents[1] / "docs" / "EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md"
 
 
 def check(label, ok, detail=""):
@@ -117,7 +119,8 @@ def main():
     eig = -(C_F + C_B * N_f) * alpha
     check("(A2) linear-stability eigenvalue of the difference mode is NEGATIVE (attractive)",
           eig < 0, detail=f"d(vF-vb)/dl = {eig:.4f} (vF-vb) -> exponential decay; speed-difference operator IR-IRRELEVANT")
-    # the common-speed (sum) direction is marginal (overall speed set by the scale primitive)
+    # the common-speed (sum) direction is marginal; this packet does not derive
+    # the physical speed/time normalization.
     # check: the difference decays while the mean stays ~ constant on the relevant timescale
     vF, vb = 0.4, 1.0
     mean0 = (C_B * N_f * vF + C_F * vb)  # the conserved-ish weighted combo
@@ -128,7 +131,7 @@ def main():
     mean1 = (C_B * N_f * vF + C_F * vb)
     check("(A3) the COMMON-speed direction is marginal (weighted mean ~ invariant); only the DIFFERENCE flows",
           abs(mean1 - mean0) / mean0 < 1e-6,
-          detail=f"weighted-mean drift = {abs(mean1-mean0)/mean0:.1e} (overall c set by the scale primitive, not by the flow)")
+          detail=f"weighted-mean drift = {abs(mean1-mean0)/mean0:.1e} (overall speed/time normalization is supplied, not derived by this flow)")
 
     # =====================================================================
     section("Part B: O_h keeps the spatial renormalization a SINGLE scalar c_s (not a tensor)")
@@ -227,6 +230,26 @@ def main():
           True, detail="the framework HAS the exact Planck hierarchy; SUSY (Nibbelink-Pospelov) would also work but is overkill/absent")
 
     # =====================================================================
+    section("Part E: source title/scope is conditional algebra, not an unconditional theorem")
+    # =====================================================================
+    note_text = NOTE.read_text(encoding="utf-8")
+    check("(E1) note title is narrowed to conditional algebra / supplied one-loop boundary",
+          note_text.startswith("# Interacting Emergent Lorentz Conditional Algebra:"),
+          detail="title no longer presents a bare interacting-Lorentz theorem")
+    check("(E2) source role calls the packet conditional algebra",
+          "standalone conditional-algebra packet" in note_text
+          and "supplied gauge/Yukawa dynamics" in note_text,
+          detail="scope is supplied one-loop/structural packet")
+    check("(E3) hierarchy suppression remains non-load-bearing",
+          "**No** retained hierarchy-suppression conclusion" in note_text
+          and "illustrative consequence of the supplied model" in note_text,
+          detail="hierarchy damping is explicitly non-load-bearing")
+    check("(E4) source explicitly leaves physical gamma/coefficient open",
+          "physical fixed-point anomalous dimension and power-divergent coefficient are" in note_text
+          and "genuine open problem" in note_text,
+          detail="no retained LV-naturalness closure claimed")
+
+    # =====================================================================
     section("Summary")
     # =====================================================================
     print("  A  interacting velocity RG: eta=v_F/v_b -> 1 ATTRACTIVE (eigenvalue -(C_F+C_B N_f)alpha < 0);")
@@ -239,8 +262,9 @@ def main():
     print("     damping factor is illustrative/non-closing until physical gamma and coefficient are retained.")
     print("  NET: inside the supplied one-loop/structural packet, the residual is organized from")
     print("       '2-parameter O(1) wall' to 'ONE conditional IR-attractive scalar'. No new axiom.")
+    print("       Source title/scope is conditional algebra over supplied one-loop dynamics.")
     print("\n" + "=" * 94)
-    print(f"TOTAL: {PASS} PASS / {FAIL} FAIL")
+    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 94)
     return 0 if FAIL == 0 else 1
 

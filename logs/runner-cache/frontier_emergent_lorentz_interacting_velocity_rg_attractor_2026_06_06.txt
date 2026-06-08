@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py
-runner_sha256: 932fc9bc0dd430a89282ffec8bc66d88b03c9f32f903a96f1c02627512a3e25f
-timeout_sec: 600
-exit_code: 0
-elapsed_sec: 0.13
-status: ok
------ stdout -----
 ==============================================================================================
 Interacting emergent Lorentz: velocity anisotropy is an ATTRACTIVE IR fixed point
 inside the supplied one-loop model; Collins' gate reduces to ONE conditional scalar
@@ -16,7 +8,7 @@ Part A: the one-loop velocity RG drives eta = v_F/v_b -> 1 (ATTRACTIVE fixed poi
 ----------------------------------------------------------------------------------------------
   [PASS] (A1) eta -> 1 from every initial ratio eta0 in {0.3,0.6,1.8,3.0} (coupled RG flow)  --  finals = 1.00000, 1.00000, 1.00000, 1.00000
   [PASS] (A2) linear-stability eigenvalue of the difference mode is NEGATIVE (attractive)  --  d(vF-vb)/dl = -0.1333 (vF-vb) -> exponential decay; speed-difference operator IR-IRRELEVANT
-  [PASS] (A3) the COMMON-speed direction is marginal (weighted mean ~ invariant); only the DIFFERENCE flows  --  weighted-mean drift = 4.8e-16 (overall c set by the scale primitive, not by the flow)
+  [PASS] (A3) the COMMON-speed direction is marginal (weighted mean ~ invariant); only the DIFFERENCE flows  --  weighted-mean drift = 4.8e-16 (overall speed/time normalization is supplied, not derived by this flow)
 
 ----------------------------------------------------------------------------------------------
 Part B: O_h keeps the spatial renormalization a SINGLE scalar c_s (not a tensor)
@@ -40,6 +32,14 @@ Part D: HONEST residual -- the power-divergent UV piece (Collins), scoped not so
   [PASS] (D4) the cheapest candidate closer is the a^-1=M_Pl EFT/LV scale separation (Belenchia et al 2016), NOT a new symmetry  --  the framework HAS the exact Planck hierarchy; SUSY (Nibbelink-Pospelov) would also work but is overkill/absent
 
 ----------------------------------------------------------------------------------------------
+Part E: source title/scope is conditional algebra, not an unconditional theorem
+----------------------------------------------------------------------------------------------
+  [PASS] (E1) note title is narrowed to conditional algebra / supplied one-loop boundary  --  title no longer presents a bare interacting-Lorentz theorem
+  [PASS] (E2) source role calls the packet conditional algebra  --  scope is supplied one-loop/structural packet
+  [PASS] (E3) hierarchy suppression remains non-load-bearing  --  hierarchy damping is explicitly non-load-bearing
+  [PASS] (E4) source explicitly leaves physical gamma/coefficient open  --  no retained LV-naturalness closure claimed
+
+----------------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------------
   A  interacting velocity RG: eta=v_F/v_b -> 1 ATTRACTIVE (eigenvalue -(C_F+C_B N_f)alpha < 0);
@@ -52,10 +52,8 @@ Summary
      damping factor is illustrative/non-closing until physical gamma and coefficient are retained.
   NET: inside the supplied one-loop/structural packet, the residual is organized from
        '2-parameter O(1) wall' to 'ONE conditional IR-attractive scalar'. No new axiom.
+       Source title/scope is conditional algebra over supplied one-loop dynamics.
 
 ==============================================================================================
-TOTAL: 12 PASS / 0 FAIL
+TOTAL: PASS=16 FAIL=0
 ==============================================================================================
-
------ stderr -----
-

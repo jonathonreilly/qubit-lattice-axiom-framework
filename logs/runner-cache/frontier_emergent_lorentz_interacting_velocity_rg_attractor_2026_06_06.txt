@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py
+runner_sha256: 70e81aa352527362d866bc9e680e6ff19196655b4d8e4711a0bae76d2aa7b832
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.23
+status: ok
+----- stdout -----
 ==============================================================================================
 Interacting emergent Lorentz: velocity anisotropy is an ATTRACTIVE IR fixed point
 inside the supplied one-loop model; Collins' gate reduces to ONE conditional scalar
@@ -57,3 +65,6 @@ Summary
 ==============================================================================================
 TOTAL: PASS=16 FAIL=0
 ==============================================================================================
+
+----- stderr -----
+

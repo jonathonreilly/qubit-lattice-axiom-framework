@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 747 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1312 |
+| unaudited | 1311 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1168 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1623 |
+| `unaudited` | 1622 |
 
 | claim_type | count |
 |---|---:|
@@ -1305,6 +1305,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5173,6 +5174,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On seed 42, the primary runner's matter-coupled growth rule produces a grown graph with higher effective dimension and much higher peak shell-bin density than the uniform-growth control.  _(class `C`)_
 - **chain closes:** True — The included runner source actually constructs both graphs, evolves the matter field for the coupled case, applies the |psi|^2-biased parent selection, and computes the reported shell-volume and density metrics. The cached output supports the narrowed qualitative claim on this seed.
 - **rationale:** The narrowed load-bearing claim is not the broader multi-seed or gravitational-closure story; it is the single-seed primary-runner comparison. The runner does not merely print constants or import the contested conclusion: it computes the grown graph and control from fixed rules and reports d_eff = 1.64 versus 1.55 and peak shell-bin density about 72 versus 11. The broader companion-runner claims are explicitly scoped as support diagnostics and are not needed for this audited claim.
+- **auditor confidence:** high
+
+### `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`
+
+- **Note:** [`EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional one-loop/structural algebra packet: from the supplied velocity-RG form, spatial O_h tensor symmetry, and canonical continuous-time normalization, the velocity difference is an attractive mode and the Collins c_t/c_s gate is reduced to one conditional scalar; physical power-divergent coefficient, fixed-point gamma, and hierarchy sufficiency remain out of scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-110640-6eb616b882-emergent_lorentz_interacting`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied one-loop equations, d(v_F − v_b)/dl = −(C_F + C_B N_f) α (v_F − v_b), so the speed-difference mode is IR-attractive, while O_h and canonical time reduce the remaining gate to one scalar c_s.  _(class `A`)_
+- **chain closes:** False — The algebraic consequences of the supplied inputs close, but the broader stated one-number IR-attractive naturalness gate still imports open supplied premises: the one-loop interacting dynamics, canonical-time physical identification of c_t, the spatial-only power-divergent mixing context, and the physical fixed-point anomalous dimension/hierarchy sufficiency are not derived in the restricted packet.
+- **rationale:** The runner genuinely checks the elementary algebra of the supplied RG equations, O_h Reynolds projection, unitarity/CAR preservation, and illustrative damping factor; it is not merely printing constants. However, the source note itself correctly scopes the central dynamics and naturalness ingredients as supplied or open, and the runner hard-codes representative coefficients and hierarchy scales rather than deriving the physical one-loop coefficients, power-divergent mixing coefficient, or fixed-point anomalous dimension. Therefore the packet is valid as conditional algebra but not clean as a retained interacting Lorentz naturalness theorem.
+- **open / conditional deps cited:**
+  - `EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md`
+  - `EMERGENT_LORENTZ_INVARIANCE_NOTE.md`
 - **auditor confidence:** high
 
 ### `emergent_lorentz_invariance_note`

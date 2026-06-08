@@ -19,11 +19,14 @@ which is where `_field_from_sources` is actually defined.
 Fresh runner log:
 [`logs/2026-05-03-fifth-family-complex-targeted.txt`](../logs/2026-05-03-fifth-family-complex-targeted.txt)
 
-The fresh log confirms every boundary-row statement in this note: 1
-anchor row passes the exact `gamma=0` + Born/F~M gates, 1 row exhibits
-the `TOWARD -> AWAY` crossover (the anchor row at `drift = 0.05`,
-`seed = 1`), and the sampled outer rows at `drift = 0.05, seed = 0` and
-`drift = 0.30, seed = 1` do not show the crossover.
+The fresh log confirms every boundary-row statement in this note: exactly one
+anchor row passes the Born/F~M gates and the `TOWARD -> AWAY` crossover gate:
+`drift = 0.20`, `seed = 0`. The runner prints sampled outer rows as controls;
+they are not promoted to a family-wide companion claim.
+
+The 2026-06-08 live-source repair also adds an explicit assertion gate to the
+runner: it now fails unless the anchor and companion row set is exactly
+`{(0.20, 0)}` and the Born/F~M thresholds hold.
 
 ## Artifact Chain
 

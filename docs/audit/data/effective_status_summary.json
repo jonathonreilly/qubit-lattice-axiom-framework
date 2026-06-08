@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1388,
+    "bounded_theorem": 1389,
     "decoration": 53,
     "meta": 323,
     "no_go": 339,
     "open_gate": 137,
-    "positive_theorem": 771
+    "positive_theorem": 770
   },
   "cycle_examples": [
     [
@@ -37,7 +37,7 @@
   ],
   "cycles_detected": 15,
   "effective_status_counts": {
-    "audited_conditional": 33,
+    "audited_conditional": 34,
     "audited_numerical_match": 15,
     "audited_renaming": 35,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
@@ -73,7 +73,7 @@
     "retained_bounded": 760,
     "retained_no_go": 220,
     "retained_pending_chain": 11,
-    "unaudited": 1326
+    "unaudited": 1325
   },
   "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [

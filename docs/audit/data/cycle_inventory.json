@@ -1,71 +1,8 @@
 {
-  "cycle_count": 17,
+  "cycle_count": 16,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
-      "decision": null,
-      "edges": [
-        {
-          "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-          "to": "luders_rule_from_composition_consistency_note_2026-05-20"
-        },
-        {
-          "from": "luders_rule_from_composition_consistency_note_2026-05-20",
-          "to": "record_instrument_kernel_interface_2026-06-05"
-        },
-        {
-          "from": "record_instrument_kernel_interface_2026-06-05",
-          "to": "pre_record_reference_state_maximal_symmetry_open_gate_note_2026-06-05"
-        },
-        {
-          "from": "pre_record_reference_state_maximal_symmetry_open_gate_note_2026-06-05",
-          "to": "born_rule_from_gleason_busch_derivation_note_2026-05-20"
-        }
-      ],
-      "length": 4,
-      "max_transitive_descendants": 33,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-          "claim_type": "positive_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-          "title": "Born Rule From Finite Ideal Records",
-          "transitive_descendants": 33
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
-          "claim_type": "positive_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
-          "title": "L\u00fcders Rule from Compositional Bayesian Consistency",
-          "transitive_descendants": 33
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "record_instrument_kernel_interface_2026-06-05",
-          "claim_type": "positive_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md",
-          "title": "Record Instrument Kernel Interface",
-          "transitive_descendants": 33
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "pre_record_reference_state_maximal_symmetry_open_gate_note_2026-06-05",
-          "claim_type": "open_gate",
-          "effective_status": "unaudited",
-          "note_path": "docs/PRE_RECORD_REFERENCE_STATE_MAXIMAL_SYMMETRY_OPEN_GATE_NOTE_2026-06-05.md",
-          "title": "Pre-Record Reference State `rho_ref = I/d`: Maximal-Symmetry Open Gate",
-          "transitive_descendants": 33
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0002",
       "decision": null,
       "edges": [
         {
@@ -102,7 +39,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0003",
+      "cycle_id": "cycle-0002",
       "decision": null,
       "edges": [
         {
@@ -139,7 +76,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0004",
+      "cycle_id": "cycle-0003",
       "decision": null,
       "edges": [
         {
@@ -189,7 +126,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0005",
+      "cycle_id": "cycle-0004",
       "decision": null,
       "edges": [
         {
@@ -239,7 +176,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0006",
+      "cycle_id": "cycle-0005",
       "decision": null,
       "edges": [
         {
@@ -302,7 +239,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0007",
+      "cycle_id": "cycle-0006",
       "decision": null,
       "edges": [
         {
@@ -365,7 +302,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0008",
+      "cycle_id": "cycle-0007",
       "decision": null,
       "edges": [
         {
@@ -441,7 +378,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0009",
+      "cycle_id": "cycle-0008",
       "decision": null,
       "edges": [
         {
@@ -491,7 +428,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0010",
+      "cycle_id": "cycle-0009",
       "decision": null,
       "edges": [
         {
@@ -528,7 +465,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0011",
+      "cycle_id": "cycle-0010",
       "decision": null,
       "edges": [
         {
@@ -565,7 +502,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0012",
+      "cycle_id": "cycle-0011",
       "decision": null,
       "edges": [
         {
@@ -602,7 +539,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0013",
+      "cycle_id": "cycle-0012",
       "decision": null,
       "edges": [
         {
@@ -639,7 +576,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0014",
+      "cycle_id": "cycle-0013",
       "decision": null,
       "edges": [
         {
@@ -676,7 +613,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0015",
+      "cycle_id": "cycle-0014",
       "decision": null,
       "edges": [
         {
@@ -713,7 +650,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0016",
+      "cycle_id": "cycle-0015",
       "decision": null,
       "edges": [
         {
@@ -750,7 +687,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0017",
+      "cycle_id": "cycle-0016",
       "decision": null,
       "edges": [
         {
@@ -790,7 +727,7 @@
   "length_counts": {
     "2": 10,
     "3": 3,
-    "4": 3,
+    "4": 2,
     "5": 1
   },
   "sort": [

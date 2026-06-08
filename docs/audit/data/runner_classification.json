@@ -9156,6 +9156,18 @@
       "dominant_class": "A",
       "runner": "scripts/flavor_a1prime_debt_and_data_2026_05_30.py"
     },
+    "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_flavor_absolute_handedness_is_gauge.py"
+    },
     "flavor_asymmetry_2over9_forced_weight_2026-05-31": {
       "assert_count": 1,
       "counts": {
@@ -20040,6 +20052,18 @@
       "dominant_class": "C",
       "runner": "scripts/persistent_inertial_object_probe.py"
     },
+    "newtonian_distance_law_confirmed": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/valley_linear_wide_tail_replay.py"
+    },
     "nn_lattice_rescaled_c2_derivation_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -20944,8 +20968,8 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 4,
+        "B": 5,
+        "C": 6,
         "D": 1
       },
       "decoration_candidate": false,
@@ -48418,6 +48442,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_flavor_absolute_handedness_is_gauge.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_flavor_handedness_rk_even_arrow_insufficient.py": {
       "assert_count": 1,
       "claims": [
@@ -68443,8 +68482,8 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
-        "C": 4,
+        "B": 5,
+        "C": 6,
         "D": 1
       },
       "decoration_candidate": false,
@@ -71030,6 +71069,7 @@
     "scripts/valley_linear_wide_tail_replay.py": {
       "assert_count": 2,
       "claims": [
+        "newtonian_distance_law_confirmed",
         "valley_linear_wide_tail_note"
       ],
       "counts": {
@@ -71703,11 +71743,11 @@
       "A": 366,
       "B": 431,
       "C": 981,
-      "D": 362,
+      "D": 363,
       "none": 458
     },
-    "runners_classified": 2598,
+    "runners_classified": 2599,
     "runners_with_C": 1310,
-    "runners_with_D": 764
+    "runners_with_D": 765
   }
 }

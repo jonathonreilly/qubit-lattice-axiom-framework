@@ -11197,6 +11197,26 @@
       "to": "claude_complex_action_grown_companion_note"
     },
     {
+      "from": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
+      "to": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
+      "to": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
+      "to": "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
+      "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
+      "to": "three_generation_observable_theorem_note"
+    },
+    {
       "from": "flavor_asymmetry_2over9_forced_weight_2026-05-31",
       "to": "three_generation_observable_theorem_note"
     },
@@ -21617,10 +21637,6 @@
       "to": "record_formation_to_kraus_isometry_bridge_2026-06-06"
     },
     {
-      "from": "luders_rule_from_composition_consistency_note_2026-05-20",
-      "to": "record_instrument_kernel_interface_2026-06-05"
-    },
-    {
       "from": "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
       "to": "minimal_axioms"
     },
@@ -24495,6 +24511,30 @@
     {
       "from": "p2_wick_rotation_sign_epsilon_closure_narrow_theorem_note_2026-05-27",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "p3_coupling_is_retention_eligible_composition_2026-06-06",
+      "to": "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24"
+    },
+    {
+      "from": "p3_coupling_is_retention_eligible_composition_2026-06-06",
+      "to": "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "p3_coupling_is_retention_eligible_composition_2026-06-06",
+      "to": "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "p3_coupling_is_retention_eligible_composition_2026-06-06",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
+      "from": "p3_coupling_is_retention_eligible_composition_2026-06-06",
+      "to": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
+    },
+    {
+      "from": "p3_coupling_is_retention_eligible_composition_2026-06-06",
+      "to": "i1_static_readout_is_native_field_integration_2026-06-06"
     },
     {
       "from": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
@@ -62543,6 +62583,24 @@
       "runner_path": "scripts/flavor_a1prime_debt_and_data_2026_05_30.py",
       "title": "Flavor A1prime Carrier-Measure Boundary"
     },
+    "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08": {
+      "claim_id": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (a gauge classification / residual resolution)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "three_generation_observable_theorem_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "12ba9532793dbecb5bb2ebac9e998987dd031e57770c104cbf96dc461f443b16",
+      "path": "docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_flavor_absolute_handedness_is_gauge.py",
+      "title": "The Absolute Flavor Handedness Is Gauge \u2014 Only the Magnitude and Inter-Sector Relative Orientations Are Physical"
+    },
     "flavor_asymmetry_2over9_forced_weight_2026-05-31": {
       "claim_id": "flavor_asymmetry_2over9_forced_weight_2026-05-31",
       "claim_type_author_hint": "bounded_theorem",
@@ -76541,11 +76599,10 @@
         "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
         "minimal_axioms",
         "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
-        "record_formation_to_kraus_isometry_bridge_2026-06-06",
-        "record_instrument_kernel_interface_2026-06-05"
+        "record_formation_to_kraus_isometry_bridge_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f12bdd1599559e86adf6b60b51a0fe32de4ef54380b3569768c38fa4bd919229",
+      "note_hash": "02409c63f545ae31f987e420deee0f3006fc5bb3b912aaa0bbf9e371c943012c",
       "path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
       "runner_path": "scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
       "title": "L\u00fcders Rule from Compositional Bayesian Consistency"
@@ -79217,10 +79274,12 @@
       "deps": [
         "valley_linear_wide_tail_note"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "d7e779035ffbb7502efb50abba5a65de9f17a20aa98c5f4464d328075520f0ab",
+      "helper_runner_paths": [
+        "scripts/valley_linear_same_harness_compare.py"
+      ],
+      "note_hash": "071c078ceef59a71bfbbfa785e77c4c8f2bd86fcffb568b52b2ac50b10d68698",
       "path": "docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md",
-      "runner_path": null,
+      "runner_path": "scripts/valley_linear_wide_tail_replay.py",
       "title": "Historical Headline Note: Newtonian Distance Law"
     },
     "next_chunk_recommendation": {
@@ -80463,9 +80522,18 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "coupling-side capstone / open-primitive reduction",
       "claim_type_seed_hint": "open_gate",
-      "deps": [],
-      "helper_runner_paths": [],
-      "note_hash": "6ccb4d6ce29d876486d7e71d94bb3a51790bdb46798261d30f61bad068b26437",
+      "deps": [
+        "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
+        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+        "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10",
+        "plaquette_self_consistency_note",
+        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
+        "i1_static_readout_is_native_field_integration_2026-06-06"
+      ],
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "note_hash": "83b6a0ebc19dc4fe54f5887a94ea89cd09c11f314b3543c44ca6e9175906f22d",
       "path": "docs/P3_COUPLING_IS_RETENTION_ELIGIBLE_COMPOSITION_2026-06-06.md",
       "runner_path": "scripts/p3_coupling_is_retention_eligible_composition_2026_06_06.py",
       "title": "P3 (u_0 \u2192 \u03b1_LM) is Retention-Eligible Composition + One register-not-read Selection"
@@ -88652,7 +88720,7 @@
         "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "80c12de13d9311bf19ae83803628be986c7667ce2b7f5cef992af63e8f274597",
+      "note_hash": "38e3c2a880b7df7ff64062f6b8f2613fd17757a941a5df9e7cf9bf4db9a54be8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"
@@ -101693,7 +101761,6 @@
     "open_koide_flavor_cluster_consolidation_map_2026-06-02",
     "ordered_lattice_quasi_persistent_relaunch_2d_note",
     "p2_euclidean_vs_lorentzian_fork_2026-06-05",
-    "p3_coupling_is_retention_eligible_composition_2026-06-06",
     "packet_memory_note",
     "paper_outline_2026-04-12",
     "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
@@ -102068,7 +102135,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 924,
+      "bounded_theorem": 925,
       "decoration": 1,
       "meta": 276,
       "no_go": 153,
@@ -102077,7 +102144,7 @@
       "positive_theorem": 197
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1337,
+      "bounded_theorem": 1338,
       "decoration": 1,
       "meta": 276,
       "no_go": 267,
@@ -102085,10 +102152,10 @@
       "open_gate": 151,
       "positive_theorem": 623
     },
-    "edge_count": 11558,
-    "leaf_count": 1030,
-    "node_count": 3123,
-    "root_count": 1021,
-    "runners_with_path": 2708
+    "edge_count": 11568,
+    "leaf_count": 1029,
+    "node_count": 3124,
+    "root_count": 1020,
+    "runners_with_path": 2710
   }
 }

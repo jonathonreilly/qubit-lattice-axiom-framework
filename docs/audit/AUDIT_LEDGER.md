@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 763 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1318 |
+| unaudited | 1317 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1193 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1633 |
+| `unaudited` | 1632 |
 
 | claim_type | count |
 |---|---:|
@@ -1352,6 +1352,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
+| `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -12649,6 +12650,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The provided primary runner source contains a genuine recompute path: it builds the grown geometry, constructs geometry-sector adjacency, applies the signed source field, propagates amplitudes, and measures detector centroid shifts. The provided helper's hard-coded replay constants are not used on this load-bearing path.
 - **rationale:** The bounded conclusion follows for exactly the three stated restore rows and does not rely on an external comparator or tuned empirical input. Independent checks of the restricted packet confirm the exact zero-source and same-point neutral cancellations by code identity, and the displayed charge exponents match log2(|double/plus|) for the recompute rows. The runner source's load-bearing computation is not a print-only or hard-coded expected-value path, and the helper's expected replay table is not on the relevant path. No cited non-retained authority or open bridge is present in the restricted packet.
 - **auditor confidence:** medium
+
+### `nonlabel_grown_drift_basin_note`
+
+- **Note:** [`NONLABEL_GROWN_DRIFT_BASIN_NOTE.md`](../../docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite drift sweep at restore = 0.70 for drifts 0.15, 0.20, 0.25 and seeds 0, 1, 2, checking zero/neutral gates, sign orientation, and charge exponent near 1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-205406-ee7b38c01a-nonlabel_grown_drift_basin_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** All checked drift/seed rows pass the zero-source, neutral +1/-1, signed-response, and near-linear double-charge gates at restore = 0.7.  _(class `B`)_
+- **chain closes:** False — The displayed row values satisfy the stated gates by direct arithmetic, including zero/neutral cancellation, plus/minus opposite signs, and double-charge ratios near exponent 1. The completed runner output only verifies a frozen log, so the restricted packet lacks a completed live recompute or independent derivation of the nine centroid-shift values.
+- **rationale:** The cited upstream basin note is retained_bounded, so it does not itself force a dependency downgrade. The current claim's new drift-basin rows, however, are established in the completed packet by parsing and gate-checking a frozen log, not by a completed first-principles recompute. The runner source contains a recompute path that appears to instantiate the grown geometry, source field, propagation, and detector centroid readout, but the available stdout is explicitly only the frozen-log verifier. That makes the finite gate classification plausible but not closed as an audited_clean derivation from the restricted packet.
+- **auditor confidence:** high
 
 ### `nonlinear_born_gravity_note`
 

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1376 |
+| Applied audit verdicts | 1377 |
 | Retained-grade rows, including boxed decorations | 1243 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 221 |
 | Retained bounded rows | 763 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1318 |
+| Unaudited rows | 1317 |
 | Retained-pending-chain rows | 11 |
-| Audited conditional rows | 36 |
+| Audited conditional rows | 37 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1320 |
-| Ready rows | 14 |
+| Total pending rows | 1319 |
+| Ready rows | 13 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
 | Medium pending | 365 |
-| Leaf pending | 378 |
+| Leaf pending | 377 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`nonlabel_grown_drift_basin_note`](../../docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md) - medium; unaudited
 - [`packet_memory_note`](../../docs/PACKET_MEMORY_NOTE.md) - medium; unaudited
 - [`plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`post_record_selector_tangent_readout_weight_prototype_2026-06-06`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`](../../docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03`](../../docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md) - medium; unaudited
-- [`su3_bridge_pr525_flaw_fix_note_2026-05-05`](../../docs/SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md) - leaf; unaudited
+- [`su3_bridge_pr525_flaw_fix_note_2026-05-05`](../../docs/SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md) - medium; unaudited
+- [`unification_basin_failure_note`](../../docs/UNIFICATION_BASIN_FAILURE_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

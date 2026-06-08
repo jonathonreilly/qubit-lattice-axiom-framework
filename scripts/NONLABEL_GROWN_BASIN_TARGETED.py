@@ -8,6 +8,7 @@ geometry-sector transfer has a real local basin or only a single retained point.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import math
 import os
 import re
@@ -35,6 +36,8 @@ SEED = 0
 AUDIT_TIMEOUT_SEC = 120
 REPO_ROOT = Path(__file__).resolve().parents[1]
 FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-06-nonlabel-grown-basin-targeted.txt"
+RECOMPUTE_RUNNER = REPO_ROOT / "scripts" / "nonlabel_grown_basin_recompute_audit_2026_06_08.py"
+RECOMPUTE_CACHE = REPO_ROOT / "logs" / "runner-cache" / "nonlabel_grown_basin_recompute_audit_2026_06_08.txt"
 ROW_RE = re.compile(
     r"^restore=(?P<restore>[0-9.]+)\s+\|\s+"
     r"zero=(?P<zero>[+-][0-9.]+e[+-][0-9]+)\s+"
@@ -45,6 +48,95 @@ ROW_RE = re.compile(
     r"exp=\s*(?P<exp>[0-9.]+)\s+(?P<ok>YES|no)$",
     re.MULTILINE,
 )
+RECOMPUTE_ROW_RE = re.compile(
+    r"^restore=(?P<restore>[0-9.]+)\s+"
+    r"zero=(?P<zero>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"plus=(?P<plus>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"minus=(?P<minus>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"neutral=(?P<neutral>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"double=(?P<double>[+-][0-9.]+e[+-][0-9]+)\s+"
+    r"exp=(?P<exp>[0-9.]+)\s+(?P<status>PASS|FAIL)$",
+    re.MULTILINE,
+)
+
+
+def _sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _cache_header(cache_path: Path) -> dict[str, str]:
+    header = cache_path.read_text(encoding="utf-8").split("----- stdout -----", 1)[0]
+    fields: dict[str, str] = {}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        fields[key.strip()] = value.strip()
+    return fields
+
+
+def _verify_recompute_artifact(failures: list[str]) -> None:
+    if not RECOMPUTE_RUNNER.exists():
+        failures.append("missing live recompute runner")
+        return
+    if not RECOMPUTE_CACHE.exists():
+        failures.append("missing live recompute cache")
+        return
+
+    fields = _cache_header(RECOMPUTE_CACHE)
+    cache_text = RECOMPUTE_CACHE.read_text(encoding="utf-8")
+    rows = [
+        {
+            "restore": float(m.group("restore")),
+            "zero": float(m.group("zero")),
+            "plus": float(m.group("plus")),
+            "minus": float(m.group("minus")),
+            "neutral": float(m.group("neutral")),
+            "double": float(m.group("double")),
+            "exp": float(m.group("exp")),
+            "status": m.group("status"),
+        }
+        for m in RECOMPUTE_ROW_RE.finditer(cache_text)
+    ]
+
+    runner_rel = RECOMPUTE_RUNNER.relative_to(REPO_ROOT).as_posix()
+    sha_fresh = fields.get("runner_sha256") == _sha256(RECOMPUTE_RUNNER)
+    header_ok = (
+        fields.get("runner") == runner_rel
+        and fields.get("status") == "ok"
+        and fields.get("exit_code") == "0"
+        and sha_fresh
+    )
+    score_ok = "SCORECARD PASS=3 FAIL=0" in cache_text
+    grid_ok = [round(row["restore"], 2) for row in rows] == [round(r, 2) for r in RESTORES]
+    row_gate_ok = True
+    for row in rows:
+        row_gate_ok = row_gate_ok and row["status"] == "PASS"
+        row_gate_ok = row_gate_ok and abs(row["zero"]) < 1.0e-12
+        row_gate_ok = row_gate_ok and abs(row["neutral"]) < 1.0e-12
+        row_gate_ok = row_gate_ok and row["plus"] < 0.0 < row["minus"]
+        row_gate_ok = row_gate_ok and row["double"] < 0.0
+        row_gate_ok = row_gate_ok and abs(row["exp"] - 1.0) < 0.05
+
+    print()
+    print("Live recompute artifact")
+    print(f"  runner={fields.get('runner')} status={fields.get('status')} exit={fields.get('exit_code')}")
+    print(f"  runner_sha_fresh={sha_fresh} rows={len(rows)} scorecard_pass={score_ok}")
+    for row in rows:
+        print(
+            f"  recompute restore={row['restore']:.2f} plus={row['plus']:+.12e} "
+            f"minus={row['minus']:+.12e} double={row['double']:+.12e} "
+            f"exp={row['exp']:.12f} {row['status']}"
+        )
+
+    if not header_ok:
+        failures.append("live recompute cache header is not SHA-fresh/ok")
+    if not score_ok:
+        failures.append("live recompute cache scorecard is not PASS=3 FAIL=0")
+    if not grid_ok:
+        failures.append("live recompute restore grid mismatch")
+    if not row_gate_ok:
+        failures.append("live recompute row gates failed")
 
 
 def _nearest_node_in_layer(pos, layer_nodes, x_target, y_target, z_target):
@@ -244,14 +336,17 @@ def verify_frozen_log() -> int:
             f"minus={row['minus']:+.3e} double={row['double']:+.3e} "
             f"exp={row['exp']:.3f} {'PASS' if row['ok'] else 'FAIL'}"
         )
+
+    _verify_recompute_artifact(failures)
+
     print()
     if failures:
         for failure in failures:
             print(f"FAIL: {failure}")
         print(f"SCORECARD PASS=0 FAIL={len(failures)}")
         return 1
-    print("SAFE READ: bounded positive restore basin; verifier checks frozen rows only.")
-    print(f"SCORECARD PASS={len(rows)} FAIL=0")
+    print("SAFE READ: bounded positive restore basin; verifier checks frozen rows and the SHA-fresh live recompute artifact.")
+    print(f"SCORECARD PASS={len(rows) + 1} FAIL=0")
     return 0
 
 

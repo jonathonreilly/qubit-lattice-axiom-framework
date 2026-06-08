@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1349 |
+| Applied audit verdicts | 1350 |
 | Retained-grade rows, including boxed decorations | 1227 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 219 |
 | Retained bounded rows | 750 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
-| Unaudited rows | 1345 |
+| Unaudited rows | 1344 |
 | Retained-pending-chain rows | 11 |
-| Audited conditional rows | 27 |
+| Audited conditional rows | 28 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1347 |
-| Ready rows | 32 |
+| Total pending rows | 1346 |
+| Ready rows | 31 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
-| Medium pending | 368 |
+| Medium pending | 367 |
 | Leaf pending | 402 |
 
 Next ready rows by queue order:
 
-- [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md) - medium; unaudited
 - [`plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md) - medium; unaudited
 - [`su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05`](../../docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`nonlabel_grown_basin_note`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md) - medium; unaudited
 - [`wide_lattice_h2t_distance_law_note`](../../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md) - medium; unaudited
+- [`generation_dial_local_stability_grammar_2026-06-05`](../../docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -63,14 +63,14 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 |---|---|---:|
 | critical | `unaudited` | 188 |
 | high | `unaudited` | 144 |
-| medium | `unaudited` | 91 |
+| medium | `unaudited` | 90 |
 | critical | `audited_renaming` | 3 |
 | critical | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| medium | `audited_conditional` | 2 |
 | critical | `audited_conditional` | 1 |
-| medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 

@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1328 |
+| unaudited | 1327 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
-| ~~audited_renaming~~ | 33 |
+| ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 32 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -64,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
-| `audited_renaming` | 33 |
-| `unaudited` | 1641 |
+| `audited_renaming` | 34 |
+| `unaudited` | 1640 |
 
 | claim_type | count |
 |---|---:|
@@ -1457,6 +1457,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -8255,6 +8256,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given (-Delta_lat)phi=rho and G(r)~1/(4*pi*r), a localized source gives phi(r)=M G(r)~M/(4*pi*r), whose gradient gives an inverse-square force and, with S=L(1-phi), bilinear response.  _(class `A`)_
 - **chain closes:** True — Fresh-context check confirms that for rho=M1 delta_0, linearity gives phi=M1(-Delta_lat)^(-1)delta_0=M1 G(r); the stipulated Z^3 asymptotic gives phi=M1/(4*pi*r)+O(r^-3), so the leading radial gradient scales as M1/r^2, and the assumed test-mass response supplies the M2 factor.
 - **rationale:** The scoped IF-chain closes only as a bounded implication. The source map, response law, L^{-1}=G_0 closure, physical G_Newton unit map, Einstein equations, and strong-field claims remain outside the audited result.
+- **auditor confidence:** high
+
+### `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded weak-field claim that the D-row closure L^-1 = G0 follows because gravity's first-order source response is the same resolvent kernel H^-1 on the single lattice.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-152319-2ce4240929-gravity_closure_from_weak_fi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The weak-field gravitational potential sourced by rho is asserted to be the single-lattice linear response phi = G0 rho, with G0 = H^-1, so the field kernel is identified with the propagator resolvent.  _(class `F`)_
+- **chain closes:** False — The finite linear algebra closes only after phi = G0 rho is imposed. The restricted packet does not derive the physical source-coupling/response theorem that makes the gravitational field kernel identical to the lattice propagator kernel.
+- **rationale:** The runner verifies finite neutral-subspace facts after defining the response as G0 rho: H G0 acts as the neutral projector, matrix multiplication is linear, one perturbed kernel fails, the sampled Green column decays, and one backreaction step changes the kernel. It does not derive the load-bearing physical identification that weak-field gravity is mediated by the same H and same G0 as the lattice propagator; the source note itself calls this the residual primitive. The displayed 1/(4 pi r) asymptotic also depends on a companion authority not present in the restricted packet, while the runner only checks near > far. Thus the advertised D-row bridge reduces to an asserted identity between two existing concepts, not a closed derivation from the cited inputs.
+- **open / conditional deps cited:**
+  - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
 - **auditor confidence:** high
 
 ### `gravity_full_self_consistency_note`

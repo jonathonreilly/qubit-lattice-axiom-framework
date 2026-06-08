@@ -156,6 +156,8 @@ registered in `docs/audit/data/axiom_premise_nodes.json`, such as the
 scale-reference primitive, chain-satisfies dependencies without making the
 claim bounded. A proposed but unapproved primitive is an owner-governance
 question, not a silent Tier-A admission and not an automatic no-go wall.
+Run `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` before writing
+"no retained primitive supplies this" or any equivalent wall language.
 
 Before declaring "this requires a new axiom," scan for:
 

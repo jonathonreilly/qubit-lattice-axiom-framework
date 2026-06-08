@@ -29,9 +29,15 @@ Run the repo-native physics review loop from:
 7. For math-bearing runner/proof changes, do not trust PASS output alone:
    independently cross-check load-bearing formulas, signs, factors,
    normalizations, expected values, and edge cases before landing.
-8. Re-review only files changed by the fix pass, plus interacting files that
+8. Before classifying a dependency as an import, wall, Tier-A admission, or
+   bounded-status source, read
+   `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`,
+   `docs/audit/data/axiom_premise_nodes.json`, and any relevant primitive
+   source note. The registered `scale_reference_primitive` grants the Planck
+   scale reference as units conversion only; it is not a bounded Planck import.
+9. Re-review only files changed by the fix pass, plus interacting files that
    were already in the original changed-file set.
-9. Before closing or rejecting a non-landable PR, run the skill's salvage pass:
+10. Before closing or rejecting a non-landable PR, run the skill's salvage pass:
    preserve any durable, runner-backed lemma in the same requested landing path
    with a canonical claim type, and explicitly reject only the pieces that
    cannot be salvaged without new science.
@@ -40,10 +46,10 @@ Run the repo-native physics review loop from:
    or audit-readiness repairs into source/tooling/pipeline changes and
    regenerate generated surfaces instead of rejecting them just because they
    are not theorem science.
-10. Draft PRs are out of scope for `/review-loop`: ignore draft-status PRs and
+11. Draft PRs are out of scope for `/review-loop`: ignore draft-status PRs and
    never land them unless the user explicitly asks for draft inspection without
    landing.
-11. End with a concise report covering imports/support status, retained/bounded
+12. End with a concise report covering imports/support status, retained/bounded
    disposition, salvage disposition, audit-readiness, commits, checks, and
    remaining manual science.
 
@@ -77,6 +83,11 @@ Run the repo-native physics review loop from:
   dependency statuses. Reviewers must reject stale exact-status checks that
   require only `effective_status = retained` when bounded/no-go retained
   grades are valid.
+- Approved primitives listed in `docs/audit/data/axiom_premise_nodes.json`
+  chain-satisfy dependencies without making rows `retained_bounded`. Do not
+  call the registered `scale_reference_primitive` a Planck import, Tier-A
+  admission, missing premise, no-go wall, or bounded-status source. Do not
+  grant it more than `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` declares.
 - `/review-loop` must not apply audit verdicts. It prepares
   audit-compatible review surfaces and reports which proposed claims require
   the independent audit worker.

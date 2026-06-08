@@ -32,11 +32,15 @@ execution requests even when the user says only `run`.
    `.claude/science/frontier-workstreams/<slug>/` packs may be read as legacy
    resume surfaces.
 4. Ground in current repo authority surfaces, retained work, no-go history,
-   atlas/tool surfaces, and relevant publication tables before route selection.
+   atlas/tool surfaces, approved primitive registry entries, and relevant
+   publication tables before route selection.
 5. For science execution, fetch `origin`, create clean dedicated science block
    branches from `origin/main`, commit coherent science artifacts there, and
    push those branches to `origin`.
-6. Build an assumption/import ledger before new derivation work.
+6. Build an assumption/import ledger before new derivation work. Read
+   `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` and enumerate
+   approved primitives from `docs/audit/data/axiom_premise_nodes.json` before
+   naming imports, walls, or bounded-status sources.
 7. Generate and score a route portfolio; execute only a route that can move
    claim state, retire an import, close a blocker, prove a no-go, create a
    decisive artifact, or make a recorded first-principles stretch attempt on a
@@ -84,6 +88,10 @@ worktree/lock conflict, or documented global queue exhaustion.
 
 - No hidden fitted values, selectors, observations, normalizations, or
   literature imports.
+- Approved primitives are not hidden imports. The registered
+  `scale_reference_primitive` grants the Planck scale reference as units
+  conversion only and does not bound a row by itself; proposed primitives not
+  in `docs/audit/data/axiom_premise_nodes.json` remain unapproved.
 - No Nature-grade or retained-grade proposal language without decisive artifact
   support, a passing retained-proposal certificate, review-loop backpressure,
   and explicit independent-audit handoff.

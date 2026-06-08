@@ -295,6 +295,14 @@ metric, within-sector data, occupancy rule, P2/modulus, log-det,
 source/action, scale, or arbitrary observable identification. The
 scale-reference primitive is the approved units primitive; do not describe it
 as a Tier-A admission or a bounded Planck import.
+Before writing a wall/import/dependency statement in `STATE.yaml`,
+`ASSUMPTIONS_AND_IMPORTS.md`, `TRACE_GATE.md`, `CLAIM_STATUS_CERTIFICATE.md`,
+`HANDOFF.md`, or a source note, perform
+`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. If the only issue is
+use of the registered `scale_reference_primitive`, record it as an approved
+units primitive and keep the actual status judgment focused on any additional
+dimensionless, selector, readout, normalization, probability, dynamics, or
+empirical content.
 
 Required status fields for major artifacts:
 
@@ -585,7 +593,9 @@ routes are risky.
   a sharper obstruction, a falsified premise, or a worked failed derivation
   with the exact load-bearing wall named.
 - **First-principles reset:** before the stretch attempt, write the minimal
-  allowed premise set (`A_min`: Lattice, Quantum, Record) and forbidden imports. The attempt must not
+  allowed premise set (`A_min`: Lattice, Quantum, Record), the approved
+  primitive set from `docs/audit/data/axiom_premise_nodes.json`, and
+  forbidden imports. The attempt must not
   rely on observed target values, fitted selectors, or literature as hidden
   proof inputs. `A_min` is the minimum axiom set, NOT a license to add
   axioms or framework primitives — extending either governance surface is

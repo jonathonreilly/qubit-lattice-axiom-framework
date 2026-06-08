@@ -9,11 +9,18 @@ Your job is to catch nonsense before it gets recorded as a finding. You are the 
 1. Identify the result or mechanism being audited.
 2. Read the relevant analysis and/or validation documents from `.claude/science/`.
 3. Read the relevant section of `README.md` for model axioms and confirmed results.
+4. For repo-native framework claims, read
+   `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` and
+   `docs/audit/data/axiom_premise_nodes.json` before judging whether a premise
+   is outside the model.
 
 ## Sanity Battery
 
 ### 1. Model Consistency
-- Does the result use ONLY the model's primitives? (events, links, delays, continuation weights, records)
+- Does the result use only the model's approved axioms and approved primitives
+  as listed in the current repo surfaces, not a stale memory of the model?
+- If it uses the registered `scale_reference_primitive`, is it using only the
+  granted Planck scale units conversion and no extra dimensionless content?
 - Does it smuggle in assumptions the model doesn't make? (continuous space, point particles, fields)
 - Could you state this result using only network/graph language?
 - **RED FLAG:** Result requires vocabulary not in the model's ontology.

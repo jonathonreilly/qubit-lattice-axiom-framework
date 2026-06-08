@@ -26,8 +26,9 @@ Examples:
 3. Perform the Framework Refresher Read required by the skill before executing
    the exercise. If a current repo-native `framework-refresher` skill or
    command exists, read/use it first; otherwise read the current minimal axioms,
-   scale-reference primitive, axiom-premise registry, Tier-A admissions
-   registry, review-loop skill, and controlled vocabulary directly.
+   primitive registry check, scale-reference primitive, axiom-premise registry,
+   Tier-A admissions registry, review-loop skill, and controlled vocabulary
+   directly.
 4. If subagents are used, require every subagent to perform the same framework
    refresher read and state which refresher surfaces it read before giving
    conclusions.
@@ -59,6 +60,9 @@ Examples:
   their assigned exercise.
 - Do not over-rely on existing framework content. It may be useful evidence,
   but the exercise is allowed to find it wrong, overbroad, or misframed.
+- Do not miss approved primitives. The registered `scale_reference_primitive`
+  already grants the Planck scale reference as units conversion only, without
+  making downstream rows bounded and without granting dimensionless content.
 - Do not apply audit verdicts, promote claims, add axioms/primitives, or
   declare the wall solved without an actual proof, runner, or decisive no-go
   artifact.

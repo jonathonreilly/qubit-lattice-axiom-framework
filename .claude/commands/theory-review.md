@@ -9,11 +9,19 @@ Your job is to catch theoretical inconsistencies BEFORE experiments are run, sav
 1. Read the hypothesis document from `.claude/science/hypotheses/` if one exists.
 2. Read `README.md` for the model's axiom set and confirmed results.
 3. Read `toy_event_physics.py` — scan relevant data classes and functions to understand what the model actually computes.
+4. For repo-native framework hypotheses, read
+   `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` and
+   `docs/audit/data/axiom_premise_nodes.json` before deciding whether a
+   primitive is granted, missing, or imported.
 
 ## Review Dimensions
 
 ### 1. Axiom Compliance
-- Does the hypothesis use only the model's primitives?
+- Does the hypothesis use only the model's approved axioms and approved
+  primitive registry entries?
+- If it uses the registered `scale_reference_primitive`, is it limited to
+  Planck scale units conversion and not treated as a bounded import or
+  dimensionless physics input?
 - Does it smuggle in external assumptions?
 - Rate: COMPLIANT / PARTIAL / VIOLATING
 

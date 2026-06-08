@@ -89,10 +89,15 @@ framing in prose:
    convention shipped as `bounded_theorem` is overclassified, since
    `retained_bounded` grade is for algebraic claims with explicit named
    premises, not for stipulations about names or approved framework primitives
-   already registered in `docs/audit/data/axiom_premise_nodes.json`. See the
+   already registered in `docs/audit/data/axiom_premise_nodes.json`. Before
+   treating any primitive use as bounded or missing, consult the primitive
+   registry check in
+   `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. The registered
+   `scale_reference_primitive` grants the Planck scale reference as units
+   conversion only; it is not a bounded import. For the symmetric check on
+   bounded-theorem candidates, see the
    `LabelingConventionReviewer` in
-   `docs/ai_methodology/skills/review-loop/SKILL.md`
-   for the symmetric check on bounded-theorem candidates.
+   `docs/ai_methodology/skills/review-loop/SKILL.md`.
 4. **Premise-retention check.** No-go theorems depend on premise lists
    just like positive theorems. Verify each premise via live ledger
    `effective_status`. An "unaudited no-go" with an unaudited premise can
@@ -121,5 +126,5 @@ reframe, or demoting to bounded.
   Scrutiny Battery before treating any `claim_type: no_go` candidate as
   review-ready for independent audit.
 - Do not approve new science names that are only ambiguous shorthand. Use
-  explicit names such as `physical Cl(3) local algebra`, `Z^3 spatial
-  substrate`, `Koide Frobenius-equipartition condition`, or `Lie type A_1`.
+  explicit names such as `physical Cl(3) local algebra`, `Z^3 lattice`,
+  `Koide Frobenius-equipartition condition`, or `Lie type A_1`.

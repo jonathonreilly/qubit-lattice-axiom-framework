@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 747 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1313 |
+| unaudited | 1312 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 31 |
+| ~~audited_conditional~~ | 32 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,21 +60,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1168 |
-| `audited_conditional` | 31 |
+| `audited_conditional` | 32 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1624 |
+| `unaudited` | 1623 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1362 |
 | `decoration` | 53 |
-| `meta` | 319 |
+| `meta` | 320 |
 | `no_go` | 326 |
 | `open_gate` | 137 |
-| `positive_theorem` | 771 |
+| `positive_theorem` | 770 |
 
 | criticality | count |
 |---|---:|
@@ -1315,6 +1315,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lanes.ordered-lattice.readme` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -10421,6 +10422,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The Current Standing section labels the lane as old generated-geometry positives plus a current partial reopen and says not to conflate the two.  _(class `F`)_
 - **chain closes:** False — The README routes the reader to already-audited bounded rows; it does not derive any new finite table, physical bridge, or generated-geometry theorem itself.
 - **rationale:** Issue: the source note is a lane index/status label, not a standalone bounded theorem. Why this blocks: the only substantive scientific claims are delegated to cited rows such as gate_b_grown_joint_package_note, source_resolved_generated_architecture_bridge_note, and emergent_geometry_growth_note_2026-04-10; the README itself adds no load-bearing computation or proof beyond grouping and naming that surface. Repair target: if a separate theorem is intended, write a source note with a specific claim, dependencies, runner, and scoped conclusion rather than using the lane index. Claim boundary until fixed: safely cite this file only as navigation/meta framing; cite the underlying audited source notes for retained bounded scientific content.
+- **auditor confidence:** high
+
+### `lanes.ordered-lattice.readme`
+
+- **Note:** [`lanes/ordered-lattice/README.md`](../../docs/lanes/ordered-lattice/README.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only the README's ordered-lattice lane-index role and its one-hop dependency links, not an independent ordered-lattice theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-110453-f8f6ea86e8-lanes.ordered-lattice.readme`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The README's audit-dependency section says its one-hop links track upstream authority surfaces and explicitly states that the README is a lane index, not an authority surface.  _(class `B`)_
+- **chain closes:** False — The packet does not close a retained positive theorem from this README: one cited authority is explicitly support/meta and the other retained authorities are bounded slices that do not establish the full lane-level bridge or architecture claim. The missing step is a retained per-claim authority, or narrowed claim, for the continuum/refinement and broad ordered-lattice lane assertions.
+- **rationale:** The primary runner source genuinely computes a finite 3D dense-lattice 10-property card rather than merely printing constants, so its cached PASS output is credible for that bounded runner slice. But the source note is an index and explicitly disclaims authority-surface status. The cited CONTINUUM_BRIDGE_NOTE.md is marked meta/support and says it propagates no retained-grade claims, so retained status cannot propagate through this README as a lane-level theorem. The structured and same-family authorities are bounded and do not close the README's broader ordered-lattice program scope.
+- **open / conditional deps cited:**
+  - `CONTINUUM_BRIDGE_NOTE.md`
 - **auditor confidence:** high
 
 ### `lattice_3d_dense_refinement_reconciliation_note`

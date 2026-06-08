@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 207 |
+| **retained** | 208 |
 | **retained_no_go** | 218 |
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1327 |
+| unaudited | 1326 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1174 |
+| `audited_clean` | 1175 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1640 |
+| `unaudited` | 1639 |
 
 | claim_type | count |
 |---|---:|
@@ -584,6 +584,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_clean_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_full_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_law_cleanup_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -8297,6 +8298,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The primary-runner cache reports the raw per-b t-values on b ∈ {2,4,6,8,10,12} and the runner's own statement that there are not enough falling-tail points for a review-safe power-law fit.  _(class `C`)_
 - **chain closes:** True — The runner stdout matches the note's quoted rows and no-tail-fit statement, and the included source computes the rows from generated graphs rather than printing fixed expected constants. The narrowed claim does not promote significance or a force-law exponent.
 - **rationale:** Within the restricted packet, the load-bearing claim is only a descriptive cached-runner result: raw per-b t-values plus absence of enough falling-tail points for a review-safe fit. The runner source performs a seed sweep, propagation, field computation, per-seed aggregation, mean/SE/t calculation, and tail-count check; the contested numerical rows are not hard-coded. Because the note explicitly withdraws significance, peak-signal, and power-law claims, the presented bounded conclusion follows from the provided runner cache and source.
+- **auditor confidence:** high
+
+### `gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07`
+
+- **Note:** [`GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md`](../../docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the nearest-neighbor Z^3 graph-Laplian Green function in lattice units, the leading correction to 1/(4 pi r) is (5/(32 pi)) K4(nhat)/r^3 with no isotropic 1/r^3 tail.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-152605-3278f8112e-gravity_leading_lattice_corr`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The (1/12) sum_mu k_mu^4/k^4 correction to 1/lambda(k) Fourier-transforms to the [5/(32 pi)] K4(nhat)/r^3 long-range term, while the isotropic 3/5 part is only a contact term.  _(class `C`)_
+- **chain closes:** True — The small-k expansion gives 1/lambda = 1/k^2 + (1/12) sum_i k_i^4/k^4 plus terms that do not change the displayed leading tail. Independently, F^{-1}(1/k^4) = -r/(8 pi) and sum_i partial_i^4 r = -15 K4/r^3, giving the stated +5/(32 pi) coefficient.
+- **rationale:** The runner performs a substantive first-principles numerical check using the exact heat-kernel/Bessel Green function and symbolic dispersion expansion; it is not merely printing constants or importing an external fit. The independent Fourier/distribution calculation confirms the sign, normalization, K4 convention, and zero spherical average of the 1/r^3 term. The clean verdict is scoped to the lattice Green-function asymptotic; it does not upgrade the separate bounded weak-field gravity bridge into an unconditional physical-gravity derivation.
 - **auditor confidence:** high
 
 ### `gravity_observable_hierarchy_note`

@@ -322,3 +322,9 @@ audit status of
 `AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`, the staggered-Dirac
 realization gate, the substep-1 Grassmann bridge, the determinant-positivity
 surface, or any other row. The audit lane is the only status authority.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)

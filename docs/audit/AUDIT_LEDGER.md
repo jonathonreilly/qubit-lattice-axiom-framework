@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 760 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1331 |
+| unaudited | 1330 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 29 |
+| ~~audited_conditional~~ | 30 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1188 |
-| `audited_conditional` | 29 |
+| `audited_conditional` | 30 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1646 |
+| `unaudited` | 1645 |
 
 | claim_type | count |
 |---|---:|
@@ -79,9 +79,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 520 |
-| `high` | 444 |
-| `medium` | 776 |
-| `leaf` | 1271 |
+| `high` | 445 |
+| `medium` | 779 |
+| `leaf` | 1267 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 15
@@ -1338,6 +1338,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `i1_static_readout_is_native_field_integration_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -11108,6 +11109,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** At H=0.25 on b ∈ {3,4,5,6}, kubo_true follows a clean log-log power law with slope ≈ -1.43 and R² = 0.998, so the retained result is a non-standard power law rather than 1/b lensing.  _(class `A`)_
 - **chain closes:** True — The bounded arithmetic claim closes from the supplied per-b values and runner fit. This does not establish continuum stability, a generated-from-first-principles H=0.25 replay, other families, larger-b asymptotics, or standard 1/b lensing.
 - **rationale:** The runner parses/checks the cached H=0.25 values and performs the log-log slope/R² calculation; the reported slope, R², and non-1/b margin follow arithmetically from those fixed inputs. The runner is not a first-principles recomputation of the fine H=0.25 model values, but the note and selector firewall explicitly restrict the retained claim to the bounded cached slope-fit certificate. Residual risk is confined to any broader reading that treats four selected cached points as a continuum-stable physical law.
+- **auditor confidence:** high
+
+### `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite H=0.6 edge-kernel computation for alpha(b)=sum_e c_e/r_e(b): |sum c|/sum|c| about 1e-4, support about 3.61, small-window slope -1.57, finite large-b slope -2.02, and non-cancelling |c_e| control slope -1.00.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-201650-0bb10b1172-lensing_exponent_is_a_dipole`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the signed edge kernel has a cancelling monopole, alpha(b)=sum_e c_e/r_e(b) loses its leading 1/b term, leaving a dipole b^-2 tail while b in {3,4,5,6} lies near the kernel support and therefore measures a crossover slope.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the H=0.6 mechanism, and an independent multipole expansion confirms that exact sum c=0 would remove the 1/b term and expose a b^-2 dipole term. The packet does not close the bridge from an approximate finite residual to a true asymptotic cancellation, nor from the H=0.6 mechanism to the retained H=0.25 -1.43 measurement.
+- **rationale:** The cited authorities are retained_bounded, and the primary runner plus helpers are substantive framework computations rather than hard-coded PASS printouts. The finite runner supports a bounded H=0.6 crossover mechanism and the |c_e| control is a strong internal check. However, the source conclusion says the true asymptotic is dipole and uses this to resolve the retained H=0.25 exponent; that requires either exact cancellation or a residual-monopole bound, plus an H-bridge certificate or theorem. Those bridges are asserted but not closed in the restricted packet.
 - **auditor confidence:** high
 
 ### `lensing_finite_path_explanation_note`

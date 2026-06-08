@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 250,
-    "leaf": 391,
+    "leaf": 390,
     "medium": 365
   },
   "cycle_break_target_count": 15,
@@ -17650,36 +17650,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lensing_deflection_note",
-        "lensing_long_path_test_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/kubo_continuum_limit.py",
-        "scripts/lensing_adjoint_kernel_probe.py",
-        "scripts/lensing_adjoint_kernel_reduced_model.py",
-        "scripts/lensing_deflection_sweep.py"
-      ],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_lensing_exponent_is_dipole_crossover.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -17828,6 +17798,36 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": null,
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
+        "three_generation_observable_theorem_note",
+        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+        "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_delta_phase_count_one_z2_orientation.py",
       "transitive_descendants": 16
     },
     {
@@ -28997,36 +28997,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
-        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
-        "three_generation_observable_theorem_note",
-        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
-        "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_delta_phase_count_one_z2_orientation.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40447,6 +40417,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 27,
-  "total_pending": 1333
+  "ready_count": 26,
+  "total_pending": 1332
 }

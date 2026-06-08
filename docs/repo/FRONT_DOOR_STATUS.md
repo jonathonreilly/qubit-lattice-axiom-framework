@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1363 |
+| Applied audit verdicts | 1364 |
 | Retained-grade rows, including boxed decorations | 1239 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 220 |
 | Retained bounded rows | 760 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
-| Unaudited rows | 1331 |
+| Unaudited rows | 1330 |
 | Retained-pending-chain rows | 11 |
-| Audited conditional rows | 29 |
+| Audited conditional rows | 30 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1333 |
-| Ready rows | 27 |
+| Total pending rows | 1332 |
+| Ready rows | 26 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
 | Medium pending | 365 |
-| Leaf pending | 391 |
+| Leaf pending | 390 |
 
 Next ready rows by queue order:
 
-- [`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`beta6_plaquette_multicube_resummation_relocation_note_2026-05-31`](../../docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md) - medium; unaudited
 - [`beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`](../../docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md) - medium; unaudited
 - [`flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08`](../../docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08`](../../docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
+- [`koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07`](../../docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,9 +82,9 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3129 |
 | Critical nodes | 523 |
-| High nodes | 446 |
-| Medium nodes | 817 |
-| Leaf nodes | 1343 |
+| High nodes | 447 |
+| Medium nodes | 820 |
+| Leaf nodes | 1339 |
 
 Top load-bearing rows by graph score:
 

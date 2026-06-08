@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 328,
     "high": 249,
-    "leaf": 376,
+    "leaf": 375,
     "medium": 357
   },
   "cycle_break_target_count": 13,
@@ -28726,31 +28726,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "graph_first_selector_derivation_note",
-        "dm_neutrino_dirac_bridge_theorem_note_2026-04-15"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39773,6 +39748,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 14,
-  "total_pending": 1310
+  "ready_count": 13,
+  "total_pending": 1309
 }

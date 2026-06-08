@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 749 |
+| **retained_bounded** | 750 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1302 |
+| unaudited | 1301 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1171 |
+| `audited_clean` | 1172 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1613 |
+| `unaudited` | 1612 |
 
 | claim_type | count |
 |---|---:|
@@ -566,6 +566,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `global_coherence_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8083,6 +8084,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Applying Gleason's theorem to the frame function f_m on H_Lambda with dim H_Lambda >= 3 gives f_m(|psi>) = <psi|sigma|psi>, and finite orthogonal additivity then gives m(P) = Tr(sigma P).  _(class `A`)_
 - **chain closes:** True — The finite-region Hilbert space has dimension 2^|Lambda| >= 4, so it satisfies the stated Gleason dimension hypothesis. M1-M3 make rank-one projection values a normalized bounded frame function, and finite spectral decomposition of projections transfers Gleason's rank-one formula to all projections.
 - **rationale:** The displayed quantitative identities are consistent: dim H_Lambda = 2^|Lambda|, |Lambda| >= 2 gives dimension at least 4, orthonormal rank-one projectors sum to identity, and the trace formula follows by additivity over a projection's orthonormal range basis. The cited minimal axiom authority is an accepted premise for the one-qubit-on-Z^3 substrate, and the theorem itself is scoped to the explicitly stated finite tensor-product Hilbert space. No runner was provided, so the audit is based on the note text and restricted cited authority rather than executable verification.
+- **auditor confidence:** high
+
+### `global_coherence_held_out2_note`
+
+- **Note:** [`GLOBAL_COHERENCE_HELD_OUT2_NOTE.md`](../../docs/GLOBAL_COHERENCE_HELD_OUT2_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 12-generator scaffolded held-out table only: frozen `free_coh >= 7.9597e-04` scores 10/12 and the old node-level rule scores 6/12; 17/21 cross-batch language is context only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-113245-c7f97c145e-global_coherence_held_out2_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On this 12-generator scaffolded held-out table, the frozen rule `free_coh >= 7.96e-04` has 10 agreements out of 12 while the old node-level rule has 6 out of 12, giving an 83.3% vs 50.0% finite-table comparison.  _(class `A`)_
+- **chain closes:** True — The source table's L2 rule applications tally to 10/12, and the stated old-rule comparator gives 6/12, so the finite-table arithmetic closes. The cited one-hop authorities are marked retained_bounded in this packet and are used only for threshold provenance and bounded context.
+- **rationale:** The repaired note confines the load-bearing claim to the 12-row scaffolded table and explicitly demotes cross-batch and off-scaffold generalization. The runner cache reports 11/11 frozen-log checks passing, and the supplied source contains a recompute path that constructs the generators and battery through the included helper code rather than merely printing the headline. Manual tally of the displayed L2 table matches 10/12 = 83.3%, and the old-rule comparison arithmetic matches 6/12 = 50.0% and a 33.3 point gap.
 - **auditor confidence:** high
 
 ### `global_coherence_off_scaffold_note`

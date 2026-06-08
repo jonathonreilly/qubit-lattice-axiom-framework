@@ -1,25 +1,28 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_cube_perron_solve.py
-runner_sha256: 3ae4856563bfeff9f181e13af1b65145cf9e915d045b3bd042a7eb979fe28376
+runner_sha256: 9fae00288c51ae4040c26384c0513535988a209374656360281d093e7fe2e09e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.60
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 ==============================================================================
-SU(3) Tensor-Network Engine + L_s=2 PBC Cube Perron Solve
-(narrowed scope: PBC geometry + bipartite adjacency + trivial-sector Reference B recovery)
+SU(3) Tensor-Network Engine + L_s=2 Quotient-Encoder Perron Solve
+(narrowed scope: all-forward quotient encoder + bipartite adjacency + trivial-sector Reference B recovery)
 ==============================================================================
+
+--- Section 0.1: source-boundary guard ---
+  PASS: source note declares the all-forward quotient-encoder boundary.
 
 --- Section A: SU(3) fusion engine sanity ---
   Dominant-weight box (NMAX=4): 25 weights
   Self-conjugate irreps in box: [(0, 0), (1, 1), (2, 2), (3, 3), (4, 4)]
   PASS: fusion engine module loaded with API exposed.
 
---- Section B: L_s=2 PBC spatial cube geometry ---
+--- Section B: L_s=2 all-forward quotient encoder ---
   Total directed links: 24 (3 directions x 8 starting positions)
   Total unique plaquettes: 12
-  PASS: 12 unique unoriented spatial plaquettes constructed.
+  PASS: 12 encoded quotient plaquette loops constructed.
 
     plaq[0]: start=(0, 0, 0), plane=(+x, +y), links=[(0, 0, 0, 0), (1, 0, 0, 1), (1, 1, 0, 0), (0, 1, 0, 1)]
     plaq[1]: start=(1, 0, 0), plane=(+x, +y), links=[(1, 0, 0, 0), (0, 0, 0, 1), (0, 1, 0, 0), (1, 1, 0, 1)]
@@ -29,7 +32,7 @@ SU(3) Tensor-Network Engine + L_s=2 PBC Cube Perron Solve
 --- Section C: link-orientation analysis ---
   PASS: each of 24 directed links is in exactly 2 plaquettes.
 
-  PASS: all 48 link-plaquette incidences are forward orientation.
+  PASS: all 48 link-plaquette incidences are forward by encoder convention.
 
 --- Section D: plaquette adjacency graph + 2-colorability ---
   Plaquette adjacency edges: 24 (one per directed link)
@@ -89,10 +92,10 @@ SU(3) Tensor-Network Engine + L_s=2 PBC Cube Perron Solve
 --- Section H: honest summary (narrowed note scope) ---
 
   STRUCTURAL FINDINGS (all PASS):
-    1. L_s=2 PBC cube has 12 unique unoriented spatial plaquettes,
+    1. L_s=2 quotient encoder has 12 encoded plaquette loops,
        24 directed links, 8 sites.
     2. Each directed link is in exactly 2 plaquettes.
-    3. All 48 link-plaquette incidences are FORWARD orientation.
+    3. All 48 link-plaquette incidences are FORWARD by encoder convention.
     4. The 2-link Haar selection rule forces lambda_B = bar(lambda_A)
        for adjacent plaquettes.
     5. Plaquette adjacency graph IS BIPARTITE (color partition 6:6).
@@ -125,12 +128,12 @@ SU(3) Tensor-Network Engine + L_s=2 PBC Cube Perron Solve
   SUPPORT: real structural progress toward eventual closure.
 
 ==============================================================================
-SUMMARY: THEOREM PASS=7 SUPPORT=2 FAIL=0
+SUMMARY: THEOREM PASS=8 SUPPORT=2 FAIL=0
 ==============================================================================
 
 Headline:
-  Narrowed SU(3) tensor-network engine + L_s=2 cube structural analysis.
-  Cube geometry: 12 plaquettes, 24 directed links, all forward.
+  Narrowed SU(3) tensor-network engine + L_s=2 quotient-encoder analysis.
+  Encoder geometry: 12 plaquette loops, 24 directed links, all forward by convention.
   Plaquette graph BIPARTITE (NEW finding; admits alternating lambda).
   Trivial-sector P(6) = 0.422532 (recovers Reference B).
   Non-trivial-sector P(6) requires intertwiner traces (deferred).

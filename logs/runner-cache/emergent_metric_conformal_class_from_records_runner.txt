@@ -1,45 +1,74 @@
-===== runner cache v1 =====
-runner: scripts/emergent_metric_conformal_class_from_records_runner.py
-runner_sha256: a9c631805c56bec3546a6da7902d1baf4691d6b39fb10eadebbd0de774929429
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 1.04
-status: ok
------ stdout -----
 ==============================================================================
-Causal data: I-axis order + LR cone + (3,1) signature
+Causal-source packet reachability and status firewall
 ==============================================================================
-   finite LR cone v_LR = 0.6937 (light cone); I-axis total order: True; (3,1): 1T+3S
-  [PASS] retained causal data supply the conformal-class input (event order + light cone + (3,1) signature)  | the conformal-class data from the session's emergent-time work
+  [PASS] source note exists  | docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md
+  [PASS] source note contains status/assumption marker: actual_current_surface_status: conditional-support
+  [PASS] source note contains status/assumption marker: bare_retained_allowed: false
+  [PASS] source note contains status/assumption marker: audit_required_before_effective_retained: true
+  [PASS] source note contains status/assumption marker: distinguishing
+  [PASS] source note contains status/assumption marker: time-oriented Lorentzian manifold
+  [PASS] source note contains status/assumption marker: dimension >= 2
+  [PASS] source note contains status/assumption marker: current theorem remains conditional
+  [PASS] record order / event-index firewall doc exists  | docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md
+  [PASS] record order / event-index firewall runner exists  | scripts/frontier_record_history_time_rate_firewall_2026_06_05.py
+  [PASS] record order / event-index firewall cache exists  | logs/runner-cache/frontier_record_history_time_rate_firewall_2026_06_05.txt
+  [PASS] record order / event-index firewall cache reports successful checks  | logs/runner-cache/frontier_record_history_time_rate_firewall_2026_06_05.txt
+  [PASS] clock-rate no-go authority doc exists  | docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md
+  [PASS] clock-rate no-go authority runner exists  | scripts/frontier_post_record_clock_rate_interface_2026_06_06.py
+  [PASS] clock-rate no-go authority cache exists  | logs/runner-cache/frontier_post_record_clock_rate_interface_2026_06_06.txt
+  [PASS] clock-rate no-go authority cache reports successful checks  | logs/runner-cache/frontier_post_record_clock_rate_interface_2026_06_06.txt
+  [PASS] clock-rate no-go authority ledger status is retained_no_go  | post_record_clock_rate_interface_2026-06-06 -> retained_no_go
+  [PASS] rate-normalization gate authority doc exists  | docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md
+  [PASS] rate-normalization gate authority runner exists  | scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py
+  [PASS] rate-normalization gate authority cache exists  | logs/runner-cache/frontier_record_clock_rate_normalization_gate_2026_06_06.txt
+  [PASS] rate-normalization gate authority cache reports successful checks  | logs/runner-cache/frontier_record_clock_rate_normalization_gate_2026_06_06.txt
+  [PASS] rate-normalization gate authority ledger status is retained  | record_clock_rate_normalization_gate_2026-06-06 -> retained
+  [PASS] nearest-neighbor causal bound doc exists  | docs/LATTICE_NN_LIGHT_CONE_NOTE.md
+  [PASS] nearest-neighbor causal bound runner exists  | scripts/lattice_nn_topological_causal_bound_check.py
+  [PASS] nearest-neighbor causal bound cache exists  | logs/runner-cache/lattice_nn_topological_causal_bound_check.txt
+  [PASS] nearest-neighbor causal bound cache reports successful checks  | logs/runner-cache/lattice_nn_topological_causal_bound_check.txt
+  [PASS] nearest-neighbor causal bound ledger status is retained  | lattice_nn_light_cone_note -> retained
+  [PASS] equal-time tensor locality doc exists  | docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] equal-time tensor locality runner exists  | scripts/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py
+  [PASS] equal-time tensor locality cache exists  | logs/runner-cache/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.txt
+  [PASS] equal-time tensor locality cache reports successful checks  | logs/runner-cache/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.txt
+  [PASS] equal-time tensor locality ledger status is retained_bounded  | lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10 -> retained_bounded
+  [PASS] reconstructed-H analytic-dispersion LR bridge doc exists  | docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  [PASS] reconstructed-H analytic-dispersion LR bridge runner exists  | scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py
+  [PASS] reconstructed-H analytic-dispersion LR bridge cache exists  | logs/runner-cache/reconstructed_h_quasilocal_microcausality_bridge_runner.txt
+  [PASS] reconstructed-H analytic-dispersion LR bridge cache reports successful checks  | logs/runner-cache/reconstructed_h_quasilocal_microcausality_bridge_runner.txt
+  [PASS] 3+1 Lorentzian/boost-covariance bounded authority doc exists  | docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md
+  [PASS] 3+1 Lorentzian/boost-covariance bounded authority runner exists  | scripts/frontier_lorentz_boost_3plus1d.py
+  [PASS] 3+1 Lorentzian/boost-covariance bounded authority cache exists  | logs/runner-cache/frontier_lorentz_boost_3plus1d.txt
+  [PASS] 3+1 Lorentzian/boost-covariance bounded authority cache reports successful checks  | logs/runner-cache/frontier_lorentz_boost_3plus1d.txt
+  [PASS] 3+1 Lorentzian/boost-covariance bounded authority ledger status is retained_bounded  | lorentz_boost_covariance_3plus1d_theorem_note -> retained_bounded
+  [PASS] Lorentzian signature orientation firewall doc exists  | docs/WICK_ROTATION_COMPACT_SO4_TO_LORENTZIAN_DIRAC_DOUBLING_ORIENTATION_NOTE_2026-06-07.md
+  [PASS] Lorentzian signature orientation firewall runner exists  | scripts/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.py
+  [PASS] Lorentzian signature orientation firewall cache exists  | logs/runner-cache/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.txt
+  [PASS] Lorentzian signature orientation firewall cache reports successful checks  | logs/runner-cache/wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation.txt
+  [PASS] Lorentzian signature orientation firewall ledger status is retained_bounded  | wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07 -> retained_bounded
+  [PASS] current ledger exposes at least one non-retained causal-source input  | record_history_order_time_rate_firewall_2026-06-05:unaudited, reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06:unaudited
+  [PASS] note status is no stronger than current causal-source packet  | conditional-support required until causal inputs are retained
 
 ==============================================================================
-Conformal rigidity: the causal cone fixes the metric UP TO a conformal factor
+Finite conformal-class algebra under the explicit packet
 ==============================================================================
-   eta-null v is null for Omega^2*eta (same cone): True
-   a different cone-speed c=0.6 metric does NOT share the null cone: True
-   eta and Omega^2*eta share the cone but differ in scale: True
-  [PASS] the causal cone fixes the conformal CLASS, not the scale (Malament rigidity)  | g and Omega^2 g share the causal structure => cone => conformal class only
+   finite LR-cone diagnostic v_LR = 0.6937; record-prefix order: True; signature sources retained-grade: True
+  [PASS] explicit causal-source packet supplies the conditional inputs being assembled  | event order + finite cone diagnostic + retained-bounded signature anchors
 
 ==============================================================================
-Clock-rate boundary: the conformal FACTOR is the post-record clock-rate NO-GO
+Conformal rigidity boundary: cone fixes class, not scale
 ==============================================================================
-   same record/count history under two monotone clocks tau_A, tau_B (both valid): True
-   the counts/order are identical, but the rates (durations) differ: True
-  [PASS] the conformal factor (clock rate/scale) is NOT fixed by records (post-record clock-rate no-go)  | records give order/count; the scale needs a supplied clock map tau (retained_no_go)
+   eta-null v remains null for Omega^2 eta: True
+   a c=0.6 cone-speed metric does not share that null cone: True
+   eta and Omega^2 eta differ as metrics: True
+  [PASS] algebraic conformal invariance holds; full HKM/Malament use is assumption-gated  | same null cone only determines conformal class
 
 ==============================================================================
-Assembly: conformal class from retained causal data, conformal factor = located no-go
+Clock-rate boundary: conformal factor remains the retained no-go
 ==============================================================================
-   DERIVED: the emergent Lorentzian metric's CONFORMAL CLASS (causal/light-cone structure)
-            from retained record-time/LR/signature data via Malament rigidity.
-   NO-GO:   the CONFORMAL FACTOR (clock rate / metric scale) = post-record clock-rate no-go
-            (retained_no_go); records give order/count, the scale needs a supplied clock unit.
-   => geometry's CAUSAL/conformal structure is retained-data native; its SCALE is a located no-go.
-      (varying record-density -> curved conformal class = the gravity seed, beyond this note.)
-  [PASS] emergent metric = (retained-data conformal class) + (no-go conformal factor)  | the metric's causal structure is derived; the scale is the precisely-located clock-rate no-go
+  [PASS] record count/order is invariant under monotone clock reparametrization  | same events/counts; different interval rates
+  [PASS] emergent metric surface is conditional conformal class plus retained clock-rate scale no-go  | audit may promote only after causal-source inputs are retained or separately admitted
 
-runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
-TOTAL: PASS=4 FAIL=0
-
------ stderr -----
-
+runner_check_breakdown = {A: 52, B: 0, C: 0, D: 0, total_pass: 52}
+TOTAL: PASS=52 FAIL=0

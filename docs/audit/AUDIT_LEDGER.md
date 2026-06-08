@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 767 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1308 |
+| unaudited | 1307 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 41 |
+| ~~audited_conditional~~ | 42 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1198 |
-| `audited_conditional` | 41 |
+| `audited_conditional` | 42 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1623 |
+| `unaudited` | 1622 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 520 |
 | `high` | 444 |
-| `medium` | 773 |
-| `leaf` | 1274 |
+| `medium` | 772 |
+| `leaf` | 1275 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
@@ -116,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 837 | 38.21 | `unaudited` | unaudited |
 | 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 891 | 34.80 | `audited_clean` | **retained_bounded** |
 | 16 | `three_generation_structure_note` | bounded_theorem | critical | 853 | 34.74 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1115 | 34.62 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1114 | 34.62 | `audited_clean` | **retained** |
 | 18 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 273 | 34.60 | `unaudited` | unaudited |
 | 19 | `minimal_axioms_2026-04-11` | meta | critical | 1102 | 32.61 | `unaudited` | meta |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 689 | 32.43 | `unaudited` | unaudited |
@@ -1370,6 +1370,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -18647,6 +18648,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `universal_gr_stress_ward_transverse_seagull (path not supplied in restricted packet)`
   - `universal_gr_induced_graviton_w_native_finite_k (path not supplied in restricted packet)`
+- **auditor confidence:** high
+
+### `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_INDUCED_GRAVITON_W_NATIVE_FINITE_K_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_INDUCED_GRAVITON_W_NATIVE_FINITE_K_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite-Brillouin-zone Pauli/lattice Dirac computation showing a positive sampled yz TT k^2 bubble slope for mI+i sigma.sin(q), opposite-signed trace slope, and negative divergent bare-Hermitian control.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-213139-e9b8c112d1-universal_gr_induced_gravito`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-k metric Hessian of W is represented by the yz TT stress bubble, and on the native elliptic iD its k^2 slope is positive/convergent/mass-robust, implying omega^2=+k^2 for a healthy spin-2 graviton.  _(class `C`)_
+- **chain closes:** False — The displayed determinant signs and finite-BZ slope numerics are genuine computations, and an independent Pauli-coefficient recomputation reproduces the runner values. The chain to the broader W-native healthy spin-2 graviton claim does not close because the packet does not derive the hard-coded finite-k metric stress vertex, possible contact terms, or the Ward/isotropy/dispersion bridge from one yz channel to a physical spin-2 graviton.
+- **rationale:** The runner is not a trivial PASS printer: it computes determinant-sign checks and finite-k bubble slopes from the Pauli lattice operator, with no external comparator or tuned observational value. However, the load-bearing physical identification is broader than the completed computation in the restricted packet. The source itself leaves the full lattice diffeomorphism Ward identity and E_g/T_2g spin-2 isotropy open, and the packet does not prove that the runner's vertex is exactly the full metric Hessian of W including all required terms.
+- **open / conditional deps cited:**
+  - `UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md`
+  - `UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md`
 - **auditor confidence:** high
 
 ### `universal_gr_invariant_frame_obstruction_note`

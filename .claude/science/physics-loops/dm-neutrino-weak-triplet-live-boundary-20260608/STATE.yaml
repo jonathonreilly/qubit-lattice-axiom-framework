@@ -1,0 +1,21 @@
+loop_slug: dm-neutrino-weak-triplet-live-boundary-20260608
+branch: physics-loop/dm-neutrino-weak-triplet-live-boundary-20260608
+base: origin/main
+target_claim_id: dm_neutrino_weak_triplet_coefficient_axiom_boundary_note_2026-04-15
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: restore_live_source_note_and_repo_local_boundary_check
+files_touched:
+  - docs/DM_NEUTRINO_WEAK_TRIPLET_COEFFICIENT_AXIOM_BOUNDARY_NOTE_2026-04-15.md
+  - scripts/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.py
+  - logs/runner-cache/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.txt
+open_imports:
+  - independent audit of the restored live source note
+  - source-amplitude law for a_sel and tau_+
+  - benchmark rebuild in the exact transfer law
+trace_gate_classification: direct_blocker_closure
+review_findings: pending
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: PR opened and remaining backlog rescanned

@@ -1,0 +1,16 @@
+loop_slug: dirac-lorentz-diagnostic-corrected-20260608
+target: dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07
+mode: run
+runtime: current interactive repair pass
+cycle_count: 1
+active_route: corrected Gaussian quadrature plus analytic H-growth lower bound
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+files_touched:
+  - docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md
+  - scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py
+  - logs/runner-cache/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.txt
+review_disposition: pass
+next_exact_action: open review PR for independent audit
+stop_condition: coherent repair block packaged
+

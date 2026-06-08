@@ -1,27 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py
-runner_sha256: b5d985cce0c9cea1ed12c1d448f4fb7cfc62a4f2129640ec80f40cad9df99de2
+runner_sha256: 2502a299f487582fe198d05914cb355ca004cd7199c5fa29be44a14e953ee4fa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 Dirac/Lorentz diagnostic salvage boundaries
 ========================================================================
 n  ||K^n psi||/n!   ||H^n psi||/n!
-0  1.882793e+00       1.882793e+00
-1  1.331335e+00       9.926991e+00
-2  6.656677e-01       9.921761e+02
-3  2.717577e-01       3.642310e+06
-4  9.608085e-02       5.475322e+11
-5  3.038343e-02       3.595095e+18
-6  8.770942e-03       1.074008e+27
-7  2.344133e-03       1.501538e+37
-8  5.860332e-04       1.002884e+49
+0  1.583233e+00       1.583233e+00
+1  7.916167e-01       3.242549e+00
+2  3.427801e-01       1.536408e+01
+3  1.277466e-01       3.780320e+02
+4  4.224822e-02       5.181338e+04
+5  1.267447e-02       4.198468e+07
+6  3.503037e-03       2.094830e+11
+7  9.021700e-04       6.619864e+15
+8  2.183806e-04       1.352528e+21
 [PASS] rapidity Gaussian is analytic for K at sampled orders
-       sampled K ratio falls to 5.860e-04
+       sampled K ratio falls to 2.184e-04
 [PASS] rapidity Gaussian is not analytic for H
-       sampled H ratio exceeds 1e10 by n=5: 3.595e+18
+       corrected quadrature H ratio n=5 4.198e+07, analytic lower bound n=8 4.704e+20
 [PASS] quadratic invariant counts separate native time from Euclidean time
        dims: spatial=1, Euclidean=2, B4=1
 [PASS] free continuous-time dispersion has one quadratic speed and p^4 first correction

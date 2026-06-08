@@ -1,0 +1,27 @@
+loop_slug: fifth-family-legacy-live-packet-20260608
+branch: physics-loop/fifth-family-legacy-live-packet-20260608
+base: origin/main
+target_claim_ids:
+  - fifth_family_radial_note
+  - fifth_family_radial_fm_transfer_note
+  - fifth_family_complex_note
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: restore_live_source_notes_and_assertion_gates
+files_touched:
+  - docs/FIFTH_FAMILY_RADIAL_NOTE.md
+  - docs/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md
+  - docs/FIFTH_FAMILY_COMPLEX_NOTE.md
+  - docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md
+  - scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py
+  - logs/runner-cache/FIFTH_FAMILY_COMPLEX_TARGETED.txt
+open_imports:
+  - independent audit of the restored live source notes
+  - no family-wide radial-shell theorem
+  - no continuum or physical mass-observable bridge
+trace_gate_classification: direct_blocker_closure
+review_findings: pending
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: PR opened and remaining backlog rescanned

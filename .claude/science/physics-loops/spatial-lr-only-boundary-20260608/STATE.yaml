@@ -1,0 +1,19 @@
+loop_slug: spatial-lr-only-boundary-20260608
+branch: physics-loop/spatial-lr-only-boundary-20260608
+base: origin/main
+target_claim_id: spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: finite_lr_only_scope_repair
+files_touched:
+  - docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md
+open_imports:
+  - retained finite-volume filter/Hastings-Koma bridge
+  - retained gap input for the relevant surface
+  - parent cluster-decomposition composition
+trace_gate_classification: direct_blocker_closure
+review_findings: pending
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: PR opened and remaining conditional backlog rescanned

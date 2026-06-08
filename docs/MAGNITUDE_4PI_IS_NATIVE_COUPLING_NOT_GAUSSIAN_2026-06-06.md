@@ -1,148 +1,121 @@
-# The Hierarchy Magnitude's 4π is the Native Coupling/Solid-Angle, Not the Gaussian 2π
+# The Hierarchy Magnitude's 4π Boundary Is Coupling/Geometry, Not Gaussian Measure
 
-**Date:** 2026-06-06
+**Date:** 2026-06-06; source-boundary repair 2026-06-08
 **Type:** boundary correction / status relocation
 **Claim type:** bounded_theorem
-**Status:** branch-local bounded. Corrects the status of the
-`HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0` value gate: the per-mode magnitude factor is
-the coupling normalization (4π = native d=3 lattice solid angle), not the Gaussian
-path-integral measure (2π); the "native-2π / 2¹⁶-gap" reading was a conflation.
-Sets no audit status; audit lane owns final classification.
-`audit_required_before_effective_retained=true; bare_retained_allowed=false`.
+**Status:** source-side bounded support. This row repairs the 4π-vs-2π boundary
+inside the supplied hierarchy formula and explicitly leaves the readout,
+convention, dressing, and value-gate residuals open. It sets no audit status; the
+audit lane owns final classification.
+`actual_current_surface_status=bounded-support; audit_required_before_effective_retained=true; bare_retained_allowed=false`.
 **Runner:** [`scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py`](../scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py)
-(`TOTAL: PASS=14 FAIL=0`).
+(`TOTAL: PASS=62 FAIL=0`).
 **Cached log:** `logs/runner-cache/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.txt`
 
-## Background
+## 2026-06-08 Source-Boundary Repair
 
-The hierarchy magnitude is `v = M_Pl (7/8)^{1/4} alpha_LM^16`, with
-`alpha_LM = alpha_bare/u_0`, `alpha_bare = g_bare^2/(4π) = 1/(4π)` (g_bare=1), so
-the dominant suppression is `alpha_bare^16 = (4π)^-16 = 2.586e-18` (`u_0^-16` is
-sub-decade, ~8.06). A prior 50-agent attack on this value gate concluded
-NOT-closed, with the headline obstruction: *"the native per-mode factor is 2π
-(real-Gaussian prefactor), not 4π; the genuinely-native 4π (Maradudin d=3 solid
-angle) has multiplicity 1, not 16,"* and reduced the gate to the staggered-Dirac
-realization gate. This note shows that verdict rests on two correctable errors.
+The conditional audit found that the prior packet mixed a correct 4π/2π
+arithmetic boundary with unclosed claims about the hierarchy magnitude's physical
+readout/convention/dressing chain, and that the runner included a PASS condition
+using observed `M_Pl` and `v`. This repair removes that observed-value check and
+states the narrower source boundary:
 
-## Statement (bounded theorem)
+```yaml
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
-**(T1) The per-mode factor is the COUPLING normalization (4π), not the Gaussian
-measure (2π).** The magnitude's per-factor is the coupling
-`alpha_bare = g_bare^2/(4π)`, whose `4π` is the **d=3 solid angle** — the
-normalization of the inverse `Z^3` graph-Laplacian (Poisson kernel)
-`G(r) -> 1/(4π|r|)`. The runner re-derives the `4π` origin from the native `Z^3`
-operator: the nearest-neighbor graph-Laplacian symbol `L(k) = 2 Σ_μ(1-cos k_μ) ->
-|k|^2`, and the continuum inverse-Laplacian `FT[1/k^2] = 1/(4π r)` with the `4π`
-the angular `∫dΩ = 4π` (assembled `r·G(r) = (4π/(2π)^3)(π/2) = 1/(4π) = 0.0796`).
-This is the framework-applied Maradudin certificate
-(`lattice_greens_function_maradudin_textbook_import_note`, **retained_bounded** —
-a framework-local Fourier proof on the `Z^3` operator, "parallel provenance, not
-imported authority"). The Gaussian path-integral measure `√(2π)/mode -> 2π` is a
-**different object**; the magnitude uses the solid-angle `4π`, verified by:
-`(4π)^-16 = 2.586e-18` (matches `v`), while `(2π)^-16` is off by **exactly
-`2^16 = 65536`**. So the prior attack's "native 2π" was the path-integral measure,
-not the magnitude's coupling factor.
+The repair originally stacked on the temporal-count source packet from #3260.
+That packet has now landed on `main`, so this row consumes it as current source
+context while still requiring independent audit for this 4π boundary.
 
-**(T2) Exponent-as-COUNT dissolves the "multiplicity 1, not 16" objection.** The
-exponent 16 is the native mode **count** (8 spatial `Z^3` corners × 2 temporal;
-this session's `MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE` and
-`MAGNITUDE_READS_MINIMAL_RECORD_BLOCK`). Hence `(4π)^-16 = (one native 4π)^(native
-count 16)` — multiplicity 1 (one coupling normalization) raised to the native
-count is identical to "16 separate factors." The demand for "16 distinct per-mode
-solid-angle insertions" was a strictly stronger, false requirement.
+## Statement
 
-**Therefore the value gate is NOT wall-blocked by a `2^16` native-2π gap, and does
-NOT reduce to the staggered-Dirac realization gate via the magnitude's 4π.** The
-4π is native d=3 geometry (retained_bounded), `g_bare=1` is retained, the exponent
-16 is the native count. What the `(4π)^-16` magnitude still rides is a
-readout/convention chain (T3), not a numeric gap.
+**T1. Formula-local 4π/2π boundary.** Given the supplied hierarchy-formula slot
+`alpha_bare = g_bare^2/(4π)` and exponent `16`, replacing the coupling
+normalization `4π` with a Gaussian `2π` changes the factor by exactly
 
-## (T3) The honest residual (relocated, not closed)
+```text
+((1/(2π)) / (1/(4π)))^16 = 2^16.
+```
 
-The 4π geometry being native does not by itself derive the magnitude. The
-`(4π)^-16` still rides, with verified live-ledger statuses:
+This is pure algebra inside the supplied formula. It does not consume observed
+`M_Pl`, observed `v`, PDG values, fitted `u_0`, or a value match.
 
-| piece | role | status |
+**T2. Framework-local geometric 4π.** The framework-local `Z^3`
+nearest-neighbor graph-Laplacian Green-kernel packet derives the continuum-leading
+coefficient `G(r) ~ 1/(4π r)` from the native lattice symbol
+`2 sum_mu(1-cos k_mu) -> |k|^2` and the `S^2` solid angle. This supplies the
+native geometric 4π. It does not by itself derive that a physical static-source
+readout must use that kernel as a coupling potential.
+
+**T3. Count-16 algebra.** One coupling normalization raised to exponent count 16
+is algebraically the same number as sixteen identical factors:
+
+```text
+(4π)^-16 = ((4π)^-1)^16.
+```
+
+Therefore the "4π has multiplicity 1, not 16" objection is too strong as a
+decomposition demand once the formula supplies an exponent count. The count
+source is not re-proved here; it is supplied by the stacked temporal-count packet,
+and the minimal-record readout selection remains demoted/open as stated there.
+
+**Therefore:** this row removes the specific `2^16` Gaussian-measure objection
+to the supplied 4π formula slot. It does not close the hierarchy value gate and
+does not prove the physical coupling/readout/dressing chain.
+
+## Source Packet
+
+| role | source | current source status |
 |---|---|---|
-| `static_source_readout_i1_..._bridge` | the physical readout `V(r) = -C g^2 G(r)` links the coupling to the native `G(r)` | **unaudited — ADMITTED IMPORT** (its own text: "does **not** derive (P1) from the framework's one-qubit operator algebra"; it registers "the canonical lattice-gauge static-source linear-response readout") |
-| `alpha_convention_i2_..._bridge` | `alpha := g^2/(4π)` | unaudited premise |
-| `cl3_normalization_i3_..._bridge` | `Tr(T_a T_b)=δ/2` | unaudited premise |
-| P3 (per-mode coupling dressing) | the substitution `u_0 -> alpha_LM` per mode | unaudited / admitted-open (`hierarchy_formula_honest_status` P3) |
-| `g_bare ... L3a/L3b` | `g_bare=1` sub-lemmas | unaudited |
+| `Z^3` Green-kernel 4π geometry | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md), runner [`lattice_greens_z3_asymptotic_normalization_certificate.py`](../scripts/lattice_greens_z3_asymptotic_normalization_certificate.py), cache [`lattice_greens_z3_asymptotic_normalization_certificate.txt`](../logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt) | `retained_bounded` |
+| native BZ Haar normalization | [`BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26`](BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md), runner [`bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py`](../scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py), cache [`bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.txt`](../logs/runner-cache/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.txt) | `retained_bounded` |
+| `g_bare` constraint/convention restatement | [`G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10`](G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md), runner [`frontier_g_bare_constraint_vs_convention_restatement_abstract_identity_narrow.py`](../scripts/frontier_g_bare_constraint_vs_convention_restatement_abstract_identity_narrow.py), cache [`frontier_g_bare_constraint_vs_convention_restatement_abstract_identity_narrow.txt`](../logs/runner-cache/frontier_g_bare_constraint_vs_convention_restatement_abstract_identity_narrow.txt) | `retained` |
+| exponent count-16 boundary | [`MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06`](MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md), runner [`magnitude_temporal_factor_is_count_not_rate_2026_06_06.py`](../scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py), cache [`magnitude_temporal_factor_is_count_not_rate_2026_06_06.txt`](../logs/runner-cache/magnitude_temporal_factor_is_count_not_rate_2026_06_06.txt) | stacked source-side bounded support; independent audit still required |
+| minimal-block readout selection | [`MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06`](MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md), runner [`magnitude_reads_minimal_record_block_2026_06_06.py`](../scripts/magnitude_reads_minimal_record_block_2026_06_06.py), cache [`magnitude_reads_minimal_record_block_2026_06_06.txt`](../logs/runner-cache/magnitude_reads_minimal_record_block_2026_06_06.txt) | demoted/flagged-open readout selection |
 
-The **highest-leverage** piece is **I1**: an admitted import asserting the
-framework's physical readout of the native `Z^3` Green's function is the static
-potential. This is exactly the kind of "readout" the framework's **register-not-
-read** principle governs — so the next attack is a *native* (register-not-read)
-derivation of the I1 readout, replacing the import. That is the live frontier, and
-it is a readout/import question, **not** a `2^16` numeric wall.
+## Honest Residual
 
-## Reconciliation with the 50-agent attack (it found real objects, mis-assembled)
+The source-boundary repair does not close these load-bearing pieces:
 
-The prior attack correctly identified both objects — the Gaussian `2π` and the
-Maradudin `4π` (multiplicity 1) — but mis-assembled them: it treated the per-mode
-magnitude factor as the path-integral measure (`2π`) and dismissed the `4π` for
-"multiplicity 1." In fact the magnitude's per-factor **is** the coupling (`4π`,
-solid angle), and multiplicity-1 raised to the native count is exactly `(4π)^-16`.
-The reduction "to the staggered-Dirac realization gate via the magnitude 4π" was
-an artifact of the `2π`-measure misreading; the genuine residual is the I1 readout
-import (+ I2/I3/P3/L3a-b), all `unaudited`, none `retained_no_go`.
+| piece | role | current source status |
+|---|---|---|
+| `static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27` | physical readout `V(r) = -C g^2 G(r)` linking coupling to the native Green kernel | `unaudited`; accepted-premise/import boundary |
+| `alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27` | `alpha := g^2/(4π)` convention bridge | `unaudited`; accepted premise |
+| `cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27` | `Tr(T_a T_b)=delta_ab/2` normalization bridge | `unaudited`; accepted premise |
+| `hierarchy_formula_honest_status_note_2026-05-10` | per-mode dressing/value-gate honesty, including P3 | `unaudited`; value gate remains open |
 
-## What this note does NOT claim
+These are the remaining science targets. The 4π boundary being repaired here is
+not a substitute for deriving I1/I2/I3/P3.
 
-- Does **not** close the value gate or derive `v`. The I1 static-source readout is
-  an admitted import; P3 (per-mode dressing) and I2/I3 are admitted premises;
-  `g_bare` L3a/L3b are unaudited. The gate rests on these.
-- Does **not** claim the 4π's *coupling role* is native — only that the **4π
-  geometry** (the d=3 solid angle / `Z^3` Poisson kernel) is native (retained_
-  bounded), and that the magnitude uses the solid-angle 4π, not the Gaussian 2π.
-- Does **not** upgrade any unaudited bridge; it relocates the residual and names
-  I1 as the highest-leverage import.
+## What This Note Does Not Claim
+
+- Does **not** derive the magnitude `v` or close the hierarchy value gate.
+- Does **not** consume observed `M_Pl`, observed `v`, PDG values, or a fitted
+  `u_0` in any PASS condition.
+- Does **not** promote the static-source readout, alpha convention, Cl3
+  normalization, per-mode dressing, or minimal-block readout selection.
+- Does **not** claim that Green-kernel 4π geometry alone supplies a physical
+  coupling/readout theorem.
 - Sets no audit status.
-
-## Load-bearing dependency and context references
-
-- `lattice_greens_function_maradudin_textbook_import_note` (**retained_bounded**) —
-  framework-applied `Z^3` Poisson-kernel `G(r)->1/(4π r)`; the native 4π (T1).
-- `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note` (**retained_
-  bounded**) — native BZ Haar `d^3k/(2π)^3`.
-- `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note`
-  (**retained**) — `g_bare=1`.
-- `static_source_readout_i1_..._bridge` (**unaudited**, admitted import) — the I1
-  readout; the relocated highest-leverage residual (T3).
-- `alpha_convention_i2_...`, `cl3_normalization_i3_...` (**unaudited** premises);
-  `hierarchy_formula_honest_status` (P3, admitted-open).
-- `HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30` (**open_gate**) —
-  the gate whose status this corrects.
-- `MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06`,
-  `MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06` (bounded) — the exponent-as-
-  count results used in T2.
-
-## Forbidden imports check
-
-- No PDG observed values consumed (`v`/`alpha_LM` appear only as labelled
-  background, in no PASS condition).
-- No new literature comparator adopted; the Maradudin 4π is the framework-applied
-  retained_bounded certificate; the I1 readout is flagged as the existing admitted
-  import (not newly introduced here).
-- No fitted selectors; no new axiom or mechanism proposed.
-- All cited statuses verified on the live ledger.
 
 ## Validation
 
 `scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py`
-(`PASS=14 FAIL=0`): Section E1 (`(4π)^-16` matches; `(2π)^-16` off by exactly
-`2^16`; `u_0^-16` sub-decade), Section N (native `Z^3` symbol `L(k)->k^2`; `4π` =
-d=3 solid angle; assembled `r·G(r)=1/(4π)`; Gaussian 2π a distinct object,
-`4π/2π=2`), Section E2 (`(4π)^-16 = (one 4π)^(count 16)`; multiplicity-1
-dissolved), Section R (the residual chain: I1 import + I2/I3 + P3 + L3a/L3b).
+(`PASS=62 FAIL=0`): the runner verifies the status firewall and source packet;
+the formula-local `4π`/`2π` algebra with no observed-value constants; the
+native `Z^3` Green-kernel solid-angle normalization; the count-16 algebra; and
+the readout/convention/dressing residuals remaining explicitly open.
 
-## Reading rule
+## Reading Rule
 
-This note is the claim boundary for: the hierarchy magnitude's per-mode factor is
-the coupling normalization `4π` (the native d=3 `Z^3` solid angle / Poisson
-kernel), **not** the Gaussian measure `2π` (the prior attack's `2^16` gap was that
-conflation); and `(4π)^-16 = (one native 4π)^(native count 16)` dissolves the
-"multiplicity 1, not 16" objection. It does **not** close the gate: the
-`(4π)^-16` magnitude rides the I1 static-source-readout import (+ I2/I3/P3/L3a-b).
-The next path is a register-not-read native derivation of the I1 readout.
+This note is the claim boundary for: the supplied hierarchy formula's `4π` slot
+is not a Gaussian `2π` measure slot, and the exact `2^16` objection is a
+measure/coupling conflation inside that supplied formula. It does not close the
+formula's physical readout, convention, dressing, or value gate.

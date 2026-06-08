@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1324 |
+| unaudited | 1323 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 34 |
+| ~~audited_conditional~~ | 35 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1175 |
-| `audited_conditional` | 34 |
+| `audited_conditional` | 35 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1637 |
+| `unaudited` | 1636 |
 
 | claim_type | count |
 |---|---:|
@@ -1328,6 +1328,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `i1_static_readout_is_native_field_integration_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -10809,6 +10810,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Under the gravity-observable hierarchy classifier, the runner-computed z = 2, 3, 4, 5 window is genuinely attractive on this tested 3D dense spent-delay card.  _(class `C`)_
 - **chain closes:** True — The primary runner constructs the lattice, field, propagation, detector probabilities, centroid shift, P_near, and channel bias directly, then computes all four z = 2..5 rows without importing or hard-coding the contested values. The cited hierarchy authority supplies the retained sign-interpretation rule, and the source note excludes the rows and broader claims that the authority does not retain.
 - **rationale:** The load-bearing attractive-window claim is a bounded first-principles runner computation on the stated card. The runner source is not a constant printer or cross-note equality check; it generates the graph, propagates amplitudes, computes the observables, and classifies z = 2, 3, 4, 5 as attractive with positive centroid, P_near, and bias. The one-hop hierarchy authority is retained_bounded, and the note explicitly narrows away z = 6, 2D distance-law, refinement, and all-distances claims. A second auditor should note the minor non-load-bearing Born display drift between 7.39e-16 in the note and 7.37e-16 in the runner output.
+- **auditor confidence:** high
+
+### `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07`
+
+- **Note:** [`LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md`](../../docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact A1 `Z^3` graph-Laplacian heat-kernel factorization and numerical support for the lattice Green kernel approaching the isotropic `1/(4 pi |x|)` asymptotic.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-153527-8815b971ed-lattice_greens_1_over_r_from`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note passes from the exact Bessel heat-kernel resolvent to `G(x) -> int_0^inf (4 pi t)^(-3/2) exp(-|x|^2/(4t)) dt = 1/(4 pi |x|)` using the large-t Gaussian limit.  _(class `C`)_
+- **chain closes:** False — The exact resolvent identity and Bessel factorization close, but the displayed fixed-n large-t limit is not enough by itself to justify the `|x| -> infinity` Green-function asymptotic. The missing step is a uniform diffusive Bessel/local-CLT asymptotic with tail domination allowing the large-distance limit to pass through the heat-kernel integral.
+- **rationale:** The runner is substantive rather than a printout: it constructs finite graph-Laplacian heat kernels, checks factorization, integrates the exact Bessel resolvent, and samples the continuum normalization. However, its load-bearing asymptotic evidence is finite-distance numerical convergence plus fixed-n large-t Bessel ratios, not a proof of the full isotropic `|x| -> infinity` asymptotic. Using the cited Fourier/Maradudin authority would re-import the target asymptotic rather than verify the asserted heat-kernel route.
 - **auditor confidence:** high
 
 ### `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`

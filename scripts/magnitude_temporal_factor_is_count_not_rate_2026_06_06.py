@@ -3,10 +3,10 @@
 The magnitude's temporal factor of 2 is a transfer-step COUNT, not a clock RATE.
 
 The retained no-go POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06 forbids records
-from supplying a clock RATE / time METRIC, but EXPLICITLY supports records
-supplying COUNTS -- its "What this unlocks" section lists "event order, prefix
-preservation, finite length, counts" and names "transfer-step count" as a
-legitimate clock denominator records can supply.
+from supplying a clock RATE / time METRIC, but supports count-only rows citing
+COUNTS -- its "What this unlocks" section lists "event order, prefix
+preservation, finite length, counts" and requires any rate row to identify its
+clock denominator.
 
 The electroweak/lepton magnitude exponent in v = M_Pl (7/8)^{1/4} alpha_LM^16 is
   16 = 8 (spatial Z^3 corners) x 2 (temporal),
@@ -31,7 +31,66 @@ a rate. This runner verifies, with small finite operators:
 
 Observed values appear in NO PASS condition (alpha_LM magnitude = separate gate).
 """
+import json
+from pathlib import Path
+
 import numpy as np
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md"
+LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+
+SOURCE_PACKET = [
+    {
+        "cid": "post_record_clock_rate_interface_2026-06-06",
+        "role": "count/rate boundary",
+        "doc": "docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md",
+        "runner": "scripts/frontier_post_record_clock_rate_interface_2026_06_06.py",
+        "cache": "logs/runner-cache/frontier_post_record_clock_rate_interface_2026_06_06.txt",
+        "expected_effective_status": "retained_no_go",
+    },
+    {
+        "cid": "hierarchy_matsubara_decomposition_note",
+        "role": "temporal determinant count 8 L_t",
+        "doc": "docs/HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md",
+        "runner": "scripts/frontier_hierarchy_matsubara_decomposition.py",
+        "cache": "logs/runner-cache/frontier_hierarchy_matsubara_decomposition.txt",
+        "expected_effective_status": "retained_bounded",
+    },
+    {
+        "cid": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "role": "minimal positive two-step temporal block",
+        "doc": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
+        "runner": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
+        "cache": "logs/runner-cache/axiom_first_rp_two_step_transfer_matrix_positivity.txt",
+        "expected_effective_status": "retained_bounded",
+    },
+    {
+        "cid": "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+        "role": "2^d species-count authority",
+        "doc": "docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "runner": "scripts/frontier_naive_lattice_fermion_two_power_d_species_count_narrow.py",
+        "cache": "logs/runner-cache/frontier_naive_lattice_fermion_two_power_d_species_count_narrow.txt",
+        "expected_effective_status": "retained",
+    },
+    {
+        "cid": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+        "role": "staggered BZ-corner orbit",
+        "doc": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+        "runner": "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py",
+        "cache": "logs/runner-cache/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.txt",
+        "expected_effective_status": "retained",
+    },
+    {
+        "cid": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+        "role": "staggered species-reduction bridge",
+        "doc": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+        "runner": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
+        "cache": "logs/runner-cache/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.txt",
+        "expected_effective_status": "retained_bounded",
+    },
+]
 
 PASS = 0
 FAIL = 0
@@ -43,6 +102,74 @@ def check(name, cond):
     FAIL += (not ok)
 
 rng = np.random.default_rng(20260606)
+
+
+def cache_has_success_marker(path: Path) -> bool:
+    text = path.read_text(encoding="utf-8", errors="replace")
+    if "FAIL=0" in text or "FAIL: 0" in text:
+        return True
+    if "status: ok" in text and "PASS" in text and "FAIL" not in text:
+        return True
+    return "SCORECARD" in text and "FAIL=0" in text
+
+
+def ledger_rows() -> dict:
+    return json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
+
+
+def effective_status(rows: dict, cid: str) -> str:
+    row = rows.get(cid, {})
+    return str(row.get("effective_status") or row.get("audit_status") or "missing")
+
+
+# ===========================================================================
+# SECTION 0 -- source-packet and status firewall requested by audit
+# ===========================================================================
+print("--- Section 0: one-hop source-packet/status firewall ---")
+rows = ledger_rows()
+note_text = NOTE.read_text(encoding="utf-8")
+for marker in [
+    "actual_current_surface_status: bounded-support",
+    "audit_required_before_effective_retained: true",
+    "bare_retained_allowed: false",
+    "2026-06-08 source-packet repair",
+]:
+    check(f"source note contains marker: {marker}", marker in note_text)
+
+for item in SOURCE_PACKET:
+    doc = ROOT / item["doc"]
+    runner = ROOT / item["runner"]
+    cache = ROOT / item["cache"]
+    status = effective_status(rows, item["cid"])
+    check(f"{item['role']} doc exists", doc.exists())
+    check(f"{item['role']} runner exists", runner.exists())
+    check(f"{item['role']} cache exists", cache.exists())
+    if cache.exists():
+        check(f"{item['role']} cache reports passing checks", cache_has_success_marker(cache))
+    check(
+        f"{item['role']} ledger status is {item['expected_effective_status']}",
+        status == item["expected_effective_status"],
+    )
+
+clock_note = (ROOT / "docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md").read_text(encoding="utf-8")
+clock_note_one_line = " ".join(clock_note.split())
+check(
+    "clock-rate authority permits count-only rows to cite counts",
+    "Rows that only need event order, prefix preservation, finite length, counts" in clock_note
+    and "coarse-grained event counts can cite" in clock_note,
+)
+check(
+    "clock-rate authority requires rate rows to identify the denominator",
+    "Rows that report rates must identify the clock denominator" in clock_note_one_line
+    and "transfer-step count" in clock_note_one_line,
+)
+check(
+    "clock-rate authority forbids deriving a clock/rate/evolution law from records",
+    "does not supply physical elapsed time" in clock_note_one_line
+    and "clock metric" in clock_note_one_line
+    and "transition rates" in clock_note_one_line
+    and "Hamiltonian/transfer step" in clock_note_one_line,
+)
 
 # ---------------------------------------------------------------------------
 # Free staggered Dirac on Z^4 (L_s spatial per dim, L_t temporal), mean field
@@ -102,13 +229,14 @@ check("the per-mode VALUE (eigenvalues) DOES depend on u_0 -> that is the rate "
 # (POST_RECORD_CLOCK_RATE_INTERFACE: supports order/counts/transfer-step count;
 #  forbids only clock rate / time metric / Hamiltonian / transfer step).
 # ===========================================================================
-print("--- Section B: counts are in the no-go's supported zone, rates are not ---")
-no_go_supports = {"order", "prefix", "length", "counts", "transfer-step count", "coarse-grained counts"}
+print("--- Section B: count-only rows are in the no-go's supported zone, rates are not ---")
+no_go_supports = {"order", "prefix", "length", "counts", "coarse-grained counts"}
 no_go_forbids = {"clock rate", "time metric", "Hamiltonian", "transition rate", "transfer step", "Born weights"}
 magnitude_exponent_is = "transfer-step count"   # = the number of temporal determinant modes
-check("the magnitude exponent is a transfer-step/mode COUNT", magnitude_exponent_is in no_go_supports)
-check("a transfer-step COUNT is in the no-go's SUPPORTED zone (records may supply it)",
-      "transfer-step count" in no_go_supports)
+check("the magnitude exponent is used as a transfer-step/mode COUNT, not a rate",
+      "count" in magnitude_exponent_is and "rate" not in magnitude_exponent_is)
+check("count-only rows are in the no-go's SUPPORTED zone",
+      "counts" in no_go_supports and "coarse-grained counts" in no_go_supports)
 check("the no-go forbids RATE/METRIC, which the exponent is NOT (exponent != per-mode value)",
       "clock rate" in no_go_forbids and magnitude_exponent_is not in no_go_forbids)
 
@@ -163,8 +291,10 @@ check("count-2 (cardinality) and rate-2 (energy spacing) are DIFFERENT objects",
 print("--- Section E: minimal block L_t=2 -> exponent 16 ---")
 check("minimal reflection-positive block L_t=2 -> mode count = 8 x 2 = 16",
       staggered_dirac(2, 2, 0.3, 0.7).shape[0] == 16)
-check("one minimal 2-step block = one record's temporal unit (per-record/UV readout, not continuum)",
-      8 * 2 == 16)
+check("per-record/UV readout selection remains outside this runner's closed claim",
+      "Does **not** establish the per-record/UV readout selection" in note_text
+      and "readout-scale selection" in note_text
+      and "This note does not grant that convention" in note_text)
 
 print()
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

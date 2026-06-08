@@ -1,0 +1,22 @@
+loop_slug: magnitude-temporal-source-packet-20260608
+branch: physics-loop/magnitude-temporal-source-packet-20260608
+base: origin/main@467001586
+goal: "Repair the audited conditional missing one-hop authority packet for MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+cycle_count: 1
+active_route: "Make retained/bounded dependencies explicit and executable."
+hard_residual: "This does not derive the full magnitude or the per-record/UV readout selection; it only removes the clock-rate-no-go/source-packet blocker for the temporal count claim."
+files_touched:
+  - docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md
+  - scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py
+  - logs/runner-cache/magnitude_temporal_factor_is_count_not_rate_2026_06_06.txt
+trace_gate_classification: direct_blocker_closure
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+verification:
+  - "PYTHONPATH=scripts python3 scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py -> TOTAL: PASS=52 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py --force --push-mode=none --allow-non-main --concurrency 1 -> ok"
+next_exact_action: "Open PR for review-loop/audit re-audit."
+stop_condition: "PR opened and verified."

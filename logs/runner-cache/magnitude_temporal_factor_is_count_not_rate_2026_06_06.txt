@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py
+runner_sha256: 88a8f327e594a375fd4776dca574c29705d26fe47f23b6ecbcbfdb7ef19f7818
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
 --- Section 0: one-hop source-packet/status firewall ---
 PASS: source note contains marker: actual_current_surface_status: bounded-support
 PASS: source note contains marker: audit_required_before_effective_retained: true
@@ -58,3 +66,6 @@ PASS: minimal reflection-positive block L_t=2 -> mode count = 8 x 2 = 16
 PASS: per-record/UV readout selection remains outside this runner's closed claim
 
 TOTAL: PASS=52 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,42 @@
+============================================================================================
+Pairing B is an IRREDUCIBLE admission; residual = the kinetic-order selector
+============================================================================================
+
+--------------------------------------------------------------------------------------------
+D: GIVEN first-order, the spin lift is the UNIQUE 2-dim O_h lift hosting a vector vertex (closes wrong-rep hatch)
+--------------------------------------------------------------------------------------------
+  [PASS] (D1) under the SPIN lift, M2(C)=span{I,sigma_i} = A1(scalar I) (+) T1(vector sigma_i): U_R sigma_i U_R^dag = sum_j R_ji sigma_j  --  => the unique first-order O_h-covariant vector vertex is A_mu ~ sigma_mu = B
+  [PASS] (D2) T1(vector) multiplicity: spin=1, trivial=0, E=0 => ONLY the spin lift admits a first-order covariant vector vertex  --  mult_T1 = spin 1.000, trivial 0.000, E 0.000
+
+--------------------------------------------------------------------------------------------
+A: NO first-order SCALAR (qubit-trivial) spectator (parity-odd; vanishes on every O-orbit; parity-excluded)
+--------------------------------------------------------------------------------------------
+  [PASS] (A1) first-order scalar symbol sum_{n in O-orbit} sin(p.n) = 0 on every orbit (parity-odd cancels) -> no O_h-covariant 1st-order scalar  --  max|sum sin| = 4.54e-16
+  [PASS] (A2) parity P: p->-p sends sin->-sin (parity-ODD); full O_h (incl. inversion) forbids it as a scalar kinetic symbol
+
+--------------------------------------------------------------------------------------------
+B: the SECOND-order scalar Laplacian H=(sum cos p_mu) I2 is a genuine all-constraints SPECTATOR (turn-1 correction)
+--------------------------------------------------------------------------------------------
+  [PASS] (B1) 2nd-order Laplacian: O_h-invariant + parity-EVEN (cos) + Hermitian + [H,sigma_i]=0 (qubit SPECTATES) -- a full-O_h non-B realization  --  max|[H_lap,sigma_i]| = 0.00e+00; the parity-even 2nd-order spectator survives all constraints
+
+--------------------------------------------------------------------------------------------
+C: the first-order gamma-vertex (GIVEN B) is qubit-ACTIVE
+--------------------------------------------------------------------------------------------
+  [PASS] (C1) first-order gamma-vertex D=sum sigma_mu sin(p_mu) is qubit-ACTIVE ([D,sigma_i] != 0) -- couples the qubit to spatial directions = B  --  max|[D_gamma,sigma_i]| = 1.930
+
+--------------------------------------------------------------------------------------------
+E: NO axiom-permitted selector picks first-order over second-order non-circularly => B irreducible
+--------------------------------------------------------------------------------------------
+  [PASS] (E1) stability DISFAVORS first-order: Dirac H eigenvalues +-|sin p| span -+ (no bounded ground state); the Laplacian is bounded -> positivity/Record do not pick 1st-order  --  Record is timeless/order-silent; the only forcer of 1st-order is the isotropic Lorentz cone = the Dirac form = B (circular)
+  [PASS] (E2) isotropic SO(3) is NOT supplied by cubic O_h (landed: SPATIAL_CUBIC_TIME_ANISOTROPY_GATE no-go; QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH no-go) -> the rotation-level twin  --  local-algebra faithfulness != faithful physical action; covariance PRESUPPOSES the attachment B
+
+--------------------------------------------------------------------------------------------
+VERDICT
+--------------------------------------------------------------------------------------------
+  [PASS] (V1) GIVEN first-order: B forced + UNIQUE (spin lift is the only 2-dim O_h lift with a vector vertex; D1/D2) -- sharpens turn-1
+  [PASS] (V2) first-order itself is NOT axiom-supplied: the 2nd-order Laplacian is a full-O_h spectator (B1); no selector picks 1st-order (E1/E2)
+  [PASS] (V3) => B (the gamma<->edge pairing) is an IRREDUCIBLE ADMISSION (staggered/Kahler-Dirac gate); residual = the KINETIC-ORDER selector. Completes the double-use (forced-given-B + B-admission).
+
+============================================================================================
+TOTAL: 11 PASS / 0 FAIL
+============================================================================================

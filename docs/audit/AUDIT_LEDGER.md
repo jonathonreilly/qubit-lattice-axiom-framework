@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1320 |
+| unaudited | 1319 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,18 +60,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1175 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1633 |
+| `unaudited` | 1632 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1378 |
+| `bounded_theorem` | 1377 |
 | `decoration` | 53 |
-| `meta` | 321 |
+| `meta` | 322 |
 | `no_go` | 331 |
 | `open_gate` | 137 |
 | `positive_theorem` | 773 |
@@ -1333,6 +1333,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
+| `mesoscopic_surrogate_alternate_family_scout_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11688,6 +11689,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The det-weighted finite Haar-sample/quadrature reflected Berezin connected meson two-point equals the operator-side transfer-matrix connected loop, with both sides reducing after independently built forward block kernels to Tr[V^dag G_f V G_f].  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite staggered carrier, Berezin block kernel, operator one-body transfer kernel, connected four-index meson loop, determinant-weighted finite average, and controls directly rather than printing constants. The only explicit markdown-linked upstream determinant-positivity dependency is retained, and the open continuum/RP extensions are excluded from the audited scope.
 - **rationale:** Within the bounded finite-carrier scope, the load-bearing step is a first-principles finite matrix computation from the framework definitions, not a renaming or tuned numerical match. The supplied runner source has no helper opacity, applies the determinant weight, checks the Berezin/operator block-kernel identity through temporal-chain and full-spacetime M^-1 paths, and verifies the connected meson loop, gauge invariance, positivity, vacuum-annihilation handling, and negative controls. The result should not be read beyond the stated finite-sample transfer-matrix representation scope.
+- **auditor confidence:** high
+
+### `mesoscopic_surrogate_alternate_family_scout_note`
+
+- **Note:** [`MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md)
+- **claim_type:** `meta`
+- **claim_scope:** Support/meta planning index: runner-level text-marker verification of retained h=0.5 and 2D negative-evidence markers plus h=0.25 closure/bridge context, not a theorem-grade objective target ranking.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-154831-0fb76bd125-mesoscopic_surrogate_alterna`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner verifies that the cited upstream notes contain the expected frozen-evidence markers ruling out the h=0.5 and 2D threshold lanes, while the h=0.25 "cheapest plausible next target" ranking is admitted as non-load-bearing planning judgment.  _(class `B`)_
+- **chain closes:** False — The retained cited authorities support the negative-evidence markers and the existence of h=0.25 closure/bridge rows, but the packet supplies no registered objective criterion deriving h=0.25 as the cheapest plausible target. The runner hard-codes the ranking after substring checks, and the readiness authority is meta/open.
+- **rationale:** The note correctly narrows itself to a meta/support index and admits the positive ranking as editorial rather than theorem-grade. The runner only reads cited note text and checks marker substrings; it does not recompute the physics or enforce an objective ranking. Because the cited readiness note is meta and the target-selection bridge remains absent, the row cannot be clean as a bounded theorem.
+- **open / conditional deps cited:**
+  - `PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md`
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_annular_tapered_sweep_note`

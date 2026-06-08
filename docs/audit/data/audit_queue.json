@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 334,
     "high": 250,
-    "leaf": 378,
+    "leaf": 377,
     "medium": 360
   },
   "cycle_break_target_count": 20,
@@ -29141,35 +29141,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mesoscopic_surrogate_alternate_family_scout_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mesoscopic_surrogate_localization_frontier_note",
-        "mesoscopic_surrogate_localization_sweep_note",
-        "mesoscopic_surrogate_threshold_2d_note",
-        "same_family_3d_closure_note",
-        "valley_linear_asymptotic_bridge_note",
-        "persistent_inertial_response_readiness_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mesoscopic_surrogate_alternate_family_scout.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -40197,6 +40168,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 11,
-  "total_pending": 1322
+  "ready_count": 10,
+  "total_pending": 1321
 }

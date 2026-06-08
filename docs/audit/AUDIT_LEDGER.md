@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 756 |
+| **retained_bounded** | 757 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1337 |
+| unaudited | 1336 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1183 |
+| `audited_clean` | 1184 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1652 |
+| `unaudited` | 1651 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 520 |
 | `high` | 444 |
-| `medium` | 773 |
-| `leaf` | 1274 |
+| `medium` | 774 |
+| `leaf` | 1273 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 15
@@ -857,6 +857,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nn_lattice_rescaled_universal_parameter_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12389,6 +12390,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The Pauli basis spans M_2(C), and the anticommutator equations independently force the scalar coefficient and each Pauli coefficient to vanish. This closes the stated single-site no-go without using temporal, gauge, multi-site, or larger Clifford structure.
 - **rationale:** The load-bearing step is elementary finite-dimensional matrix algebra over the accepted one-site M_2(C) premise and the retained Pauli Cl(3) representation input. Independent checking confirms σ_1σ_2σ_3=iI and confirms the linear anticommutator constraints have only the zero solution. The no-go is properly scoped to one single-site Pauli carrier and explicitly leaves larger chirality mechanisms outside its residual. The runner source performs actual matrix and linear-rank computations rather than merely printing expected constants.
 - **auditor confidence:** high
+
+### `nonlabel_grown_basin_note`
+
+- **Note:** [`NONLABEL_GROWN_BASIN_NOTE.md`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite deterministic audit of the grown geometry-sector signed-source transfer for seed 0, drift 0.2, and restore values 0.60, 0.70, and 0.80 only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-195834-929ed8236e-nonlabel_grown_basin_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The three live recompute rows at drift = 0.2 and restore = 0.60, 0.70, 0.80 have exact zero-source and neutral controls, opposite signed single-source responses, negative double-source responses, and charge exponents within the linear tolerance.  _(class `C`)_
+- **chain closes:** True — The provided primary runner source contains a genuine recompute path: it builds the grown geometry, constructs geometry-sector adjacency, applies the signed source field, propagates amplitudes, and measures detector centroid shifts. The provided helper's hard-coded replay constants are not used on this load-bearing path.
+- **rationale:** The bounded conclusion follows for exactly the three stated restore rows and does not rely on an external comparator or tuned empirical input. Independent checks of the restricted packet confirm the exact zero-source and same-point neutral cancellations by code identity, and the displayed charge exponents match log2(|double/plus|) for the recompute rows. The runner source's load-bearing computation is not a print-only or hard-coded expected-value path, and the helper's expected replay table is not on the relevant path. No cited non-retained authority or open bridge is present in the restricted packet.
+- **auditor confidence:** medium
 
 ### `nonlinear_born_gravity_note`
 

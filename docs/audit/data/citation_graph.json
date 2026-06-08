@@ -45998,10 +45998,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "nonlabel_grown_basin_note"
     },
     {
@@ -46027,6 +46023,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31"
     },
     {
       "from": "repo.repo_organization",
@@ -88950,17 +88950,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
         "nonlabel_grown_basin_note",
         "wide_lattice_h2t_distance_law_note",
         "generation_dial_local_stability_grammar_2026-06-05",
         "magnitude_reads_minimal_record_block_2026-06-06",
         "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
         "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
-        "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
+        "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
+        "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7d817c7b7967f57344170556b4f8bd9ff502b4c3e9c8925a3c714bc90458759c",
+      "note_hash": "ee2cac7ebd1c16db1323fa5ab0390d096d1eddb23c398e746b7190f40d0d5c9f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"
@@ -102426,7 +102426,7 @@
       "positive_theorem": 621
     },
     "edge_count": 11609,
-    "leaf_count": 1026,
+    "leaf_count": 1025,
     "node_count": 3129,
     "root_count": 1019,
     "runners_with_path": 2715

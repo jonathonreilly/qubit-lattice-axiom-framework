@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1326 |
+| unaudited | 1325 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1175 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1639 |
+| `unaudited` | 1638 |
 
 | claim_type | count |
 |---|---:|
@@ -1323,6 +1323,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_dynamics_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
+| `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8325,6 +8326,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the narrowed scope, the runner stdout matches the note's signs and classifications for every ratified row. The z=2, z=4, z=6, and z=7 dense rows are explicitly outside the audited scope and are not ratified here.
 - **rationale:** The scoped claim is an algebraic sign-interpretation over runner-computed observables, and the supplied runner computes the relevant rows rather than printing fixed classifications. No one-hop authorities are listed, so no dependency-retention blocker is available inside the restricted packet. Clean status applies only to the narrowed z=3 and z=5 dense rows plus the other printed runner rows; the broader z=2..6 dense table is not part of this verdict.
 - **auditor confidence:** medium
+
+### `gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited whether the provided shifted-dispersion argument derives the weak-field Fermat-index form n=1-c*phi and the 1/b geodesic deflection from the restricted cited inputs.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-152853-ac3ef58449-gravity_premise4_refractive_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At fixed energy E, the asserted shifted dispersion lambda(k)+phi=E gives k(x)=k0*sqrt(1-phi/E), so n=k/k0=1-phi/(2E)+O(phi^2) and S=int n dl.  _(class `A`)_
+- **chain closes:** False — The algebraic step only closes after importing two bridges not supplied in the packet: the field must enter the test-particle Hamiltonian as H->H+phi, and k/k0 must be identified with the Fermat index/action. For the exact lattice dispersion lambda=2-2cos(k) along an axis, the fixed-energy solution is k=arccos(1-(E-phi)/2), so the stated sqrt coefficient is a continuum small-k approximation rather than the exact consequence of the displayed lattice formula.
+- **rationale:** The runner performs algebraic/numerical checks of the assumed shifted-dispersion model and the standard 1/r geodesic integral, but it does not derive the field-coupling or Fermat-action bridge from the cited authorities. The cited gravity-chain note explicitly records S=L(1-phi) as an input, and the provided self-consistency note does not independently supply H->H+phi; using it here would re-import the premise being derived. The exact lattice-dispersion formula in T1 is also overstated, since n=sqrt(1-phi/E) follows only in the continuum/small-k approximation. The 1/b geodesic calculation is standard algebra conditional on phi=a/r and the Fermat coupling, while the Kubo-comparison authority is not provided.
+- **open / conditional deps cited:**
+  - `GRAVITY_CLEAN_DERIVATION_NOTE.md`
+- **auditor confidence:** high
 
 ### `gravity_sign_audit_2026-04-10`
 

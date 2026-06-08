@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py
+runner_sha256: 4a5c1abb85b94c4f33722af106a1da03d13c926e52aa134babf1186f16807a96
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 38.33
+status: ok
+----- stdout -----
 ================================================================================================
 FIFTH FAMILY RADIAL FAILURE AUDIT
   radial-shell boundary on the no-restore grown slice
@@ -20,3 +28,6 @@ INDEPENDENT ORIENTATION CERTIFICATE
   scorecard=SCORECARD PASS=9 FAIL=0
   certificate=PASS
 ASSERTIONS: PASS
+
+----- stderr -----
+

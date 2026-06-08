@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 749 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1351 |
+| unaudited | 1350 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 26 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1172 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 26 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1666 |
+| `unaudited` | 1665 |
 
 | claim_type | count |
 |---|---:|
@@ -1311,6 +1311,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5523,6 +5524,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py_import_error_missing__field_from_sources`
   - `FIFTH_FAMILY_RADIAL_NOTE.md_unaudited_base_family`
   - `live_runner_output_not_reproducible`
+- **auditor confidence:** high
+
+### `fifth_family_radial_boundary_note`
+
+- **Note:** [`FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded radial-shell row certificate at drift=0.20, seed=0: zero and neutral controls vanish, while the signed-source orientation flips relative to the retained positive-orientation rows; no wider basin or family-wide theorem is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-191157-7303f06e17-fifth_family_radial_boundary`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At drift=0.20, seed=0 the radial-shell row has exact zero/neutral controls but a negative positive-source response, i.e. plus < 0 and minus > 0.  _(class `C`)_
+- **chain closes:** False — The visible primary runner and helpers compute the finite replay row without hard-coded row values, and the zero/neutral cancellations are algebraically explained by source linearity and deterministic propagation. The claimed independent variational orientation certificate is not inspectable in this restricted packet: the primary runner only checks a SHA-pinned cache by strings, so the negative linear-slope derivation cannot be independently audited.
+- **rationale:** The finite bounded observation is strongly supported by the provided runner path: grow, radial-shell connectivity, field construction, propagation, and detector centroid are all present and do real computation. The exact zero and neutral rows also close by a direct algebraic check of the field construction. However, the source note makes the 2026-06-08 independent orientation certificate load-bearing, and the packet omits that certificate source and full cache body; a string check for `linear_slope = -` is not an independent derivation. The audited scope therefore remains conditionally supported, not cleanly closed as written.
 - **auditor confidence:** high
 
 ### `fifth_family_radial_fm_transfer_note`

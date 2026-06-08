@@ -23,11 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 762 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1321 |
+| unaudited | 1320 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
 | ~~audited_conditional~~ | 35 |
+| ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,10 +63,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1192 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 44 |
+| `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1636 |
+| `unaudited` | 1635 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 521 |
 | `high` | 443 |
-| `medium` | 777 |
-| `leaf` | 1270 |
+| `medium` | 778 |
+| `leaf` | 1269 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 15
@@ -1432,6 +1433,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `lepton_phase_modulus_separation_no_go_2026-06-06` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -11317,6 +11319,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using fixed PDG comparator inputs, a_lepton^2 from charged-lepton square roots numerically agrees with m_W/256 at about 0.032%, while 1/256, m_W, delta=2/9, and the lepton masses remain empirical or open inputs.  _(class `D`)_
 - **chain closes:** True — The arithmetic closes as an external-comparator gate: m_W/256, a_lepton^2, and the Brannen-style masses are reproduced from the fixed empirical inputs. The row remains open because the physical scale, suppression factor, comparator phase, and observed masses are not derived from retained framework structure.
 - **rationale:** The note accurately records a sharp empirical comparator and repeatedly blocks promotion to a theorem. The cached runner reports PASS=28, FAIL=0 under SHA a5b0055d6d66b50dfdd59a1bdc0909d7fe6dd862437b4f441c21f0494d70ea22, with bookkeeping/open-gate checks plus external PDG-comparator checks. Because the claim_type is open_gate, the clean audit preserves effective_status=open_gate and does not retain the scale relation as derived science.
+- **auditor confidence:** high
+
+### `lepton_phase_modulus_separation_no_go_2026-06-06`
+
+- **Note:** [`LEPTON_PHASE_MODULUS_SEPARATION_NO_GO_2026-06-06.md`](../../docs/LEPTON_PHASE_MODULUS_SEPARATION_NO_GO_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The e1/e2/e3 separation and derivative formula close for the restricted subclass W(r, r^{3/2} cos 3delta), but the advertised no-go for all real C3-invariant scalar actions does not close.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-e9e1ea6d07-lepton_phase_modulus_separat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Any real C3-invariant scalar action is asserted to be W(|z|^2, Re z^3), giving dW/ddelta = W_X(-3 r^{3/2} sin 3delta) and therefore forcing stationary phases to delta = n pi/3.  _(class `A`)_
+- **chain closes:** False — The derivative condition is W_X dX/ddelta = 0, so the packet has not excluded the W_X = 0 branch; a scalar W(r,X) can be chosen with an extremum at X = r^{3/2} cos(2/3), stationarizing delta = 2/9. Also, C3 invariance alone does not justify dropping Im z^3; that requires an extra conjugation-even or spectral-scalar restriction not supplied by the packet.
+- **rationale:** The symmetric-function identities check algebraically: e2 is delta-blind and e3 carries cos 3delta with the stated sign and factor. The no-go step fails because the stationarity equation has two factors, and the runner only tests the sin 3delta branch while hard-coding the broader conclusion as True. The No-Go Discipline stress test exposes hidden assumptions: exclusion of Im z^3, exclusion of target-encoded W_X = 0 extrema, and rhetoric broader than the actually proven restricted subclass.
 - **auditor confidence:** high
 
 ### `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10`

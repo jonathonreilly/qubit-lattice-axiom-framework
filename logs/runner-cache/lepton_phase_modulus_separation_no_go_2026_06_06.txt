@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/lepton_phase_modulus_separation_no_go_2026_06_06.py
+runner_sha256: 43d8675faa94d270a34941823e06d3c6752aea1507719db6f86ef3200e080a77
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
 --- Section S: e1/e2/e3 separation (r vs delta) ---
 PASS: e1 = 3a (scale)
 PASS: e2 = 3 a^2 (1 - r) -- delta-BLIND (carries r => Q=2/3)
@@ -18,3 +26,6 @@ PASS: does NOT close delta=2/9 (the C3-covariant eta/holonomy = chirality route 
 PASS: the G-signature defect of L(3;1) = exactly -2/9 (distinct N-family (N-1)(N-2)/3N) is the rare exact hit but is NON-native + APS-eta (avoid-list) + already on main -- NOT re-derived here
 
 TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

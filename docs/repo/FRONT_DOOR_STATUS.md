@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1355 |
-| Retained-grade rows, including boxed decorations | 1232 |
+| Applied audit verdicts | 1356 |
+| Retained-grade rows, including boxed decorations | 1233 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 220 |
-| Retained bounded rows | 754 |
+| Retained bounded rows | 755 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
-| Unaudited rows | 1339 |
+| Unaudited rows | 1338 |
 | Retained-pending-chain rows | 11 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1341 |
-| Ready rows | 29 |
+| Total pending rows | 1340 |
+| Ready rows | 28 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
 | Medium pending | 365 |
-| Leaf pending | 399 |
+| Leaf pending | 398 |
 
 Next ready rows by queue order:
 
-- [`plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md) - medium; unaudited
 - [`free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`nonlabel_grown_basin_note`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md) - medium; unaudited
 - [`wide_lattice_h2t_distance_law_note`](../../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md) - medium; unaudited
 - [`generation_dial_local_stability_grammar_2026-06-05`](../../docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md) - medium; unaudited
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - medium; unaudited
 - [`magnitude_temporal_factor_is_count_not_rate_2026-06-06`](../../docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md) - medium; unaudited
-- [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - leaf; unaudited
+- [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
+- [`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,15 +83,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3129 |
 | Critical nodes | 524 |
 | High nodes | 445 |
-| Medium nodes | 812 |
-| Leaf nodes | 1348 |
+| Medium nodes | 813 |
+| Leaf nodes | 1347 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1366 descendants; score 95.417
 - `three_generation_observable_theorem_note` - critical; 750 descendants; score 61.053
 - `observable_principle_from_axiom_note` - critical; 843 descendants; score 58.221
-- `graph_first_su3_integration_note` - critical; 1263 descendants; score 50.804
+- `graph_first_su3_integration_note` - critical; 1262 descendants; score 50.803
 - `minimal_axioms_2026-05-03` - critical; 481 descendants; score 47.913
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1185 descendants; score 42.712
 - `key_terminology` - critical; 1000 descendants; score 40.967

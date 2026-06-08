@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1338 |
-| Retained-grade rows, including boxed decorations | 1219 |
+| Applied audit verdicts | 1339 |
+| Retained-grade rows, including boxed decorations | 1220 |
 | Retained positive theorems | 207 |
 | Retained no-go rows | 218 |
-| Retained bounded rows | 745 |
+| Retained bounded rows | 746 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
 | Unaudited rows | 1355 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1358 |
-| Ready rows | 28 |
+| Total pending rows | 1357 |
+| Ready rows | 29 |
 | Cycle-break targets | 15 |
-| Critical pending | 331 |
+| Critical pending | 330 |
 | High pending | 251 |
 | Medium pending | 374 |
 | Leaf pending | 402 |
 
 Next ready rows by queue order:
 
-- [`staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06`](../../docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - critical; audit_in_progress
+- [`axiom_first_lattice_noether_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 - [`plaquette_v1_picard_fuchs_ode_note_2026-05-05`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) - critical; unaudited
 - [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - critical; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited

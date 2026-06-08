@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.p
 runner_sha256: 5830a2f279d8364956585afe9f9bd7c645cc20f11ba7ad449c3520db38943c66
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 41.21
+elapsed_sec: 42.34
 status: ok
 ----- stdout -----
 ========================================================================================

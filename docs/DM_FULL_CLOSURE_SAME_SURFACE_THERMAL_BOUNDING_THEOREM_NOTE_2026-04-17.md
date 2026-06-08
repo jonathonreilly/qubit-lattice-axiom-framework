@@ -1,6 +1,6 @@
 # DM Full Closure Same-Surface Thermal Bounding Theorem
 
-**Claim type:** bounded_theorem
+**Claim type:** bounded support note
 **Status:** conditional supplied-premise interval support
 **Type:** conditional / support
 **Date:** 2026-04-17  

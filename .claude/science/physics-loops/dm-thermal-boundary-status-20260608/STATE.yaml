@@ -1,0 +1,18 @@
+loop: dm-thermal-boundary-status-20260608
+target_claim_id: dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17
+target_status: bounded-support
+actual_current_surface_status: conditional-support
+branch: physics-loop/dm-thermal-boundary-status-20260608
+base: origin/main
+started_at: 2026-06-08
+cycle_count: 1
+active_route: runner/source-boundary reconciliation
+files_touched:
+  - docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md
+  - logs/runner-cache/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.txt
+open_imports:
+  - live-DM plaquette / eta-omega constants
+  - packet-completeness / selector premise
+claim_state_movement: repaired runner FAIL=2 status-boundary mismatch to PASS=25 FAIL=0
+next_exact_action: independent audit should re-run the same interval-composition packet and decide whether the fixed status boundary is sufficient for the bounded supplied-premise row.
+stop_condition: coherent one-row repair packaged for review PR

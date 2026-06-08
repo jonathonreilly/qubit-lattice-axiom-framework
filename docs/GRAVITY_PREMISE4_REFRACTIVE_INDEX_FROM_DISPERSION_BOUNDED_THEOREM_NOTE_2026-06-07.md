@@ -1,4 +1,4 @@
-# Premise (4) Derived: the Weak-Field Response n=1−cφ from the Field Shifting the Lattice Dispersion (Bounded; 1/b Geodesic Lensing)
+# Premise (4) Refractive-Index Support From Lattice Dispersion (Bounded Boundary Packet)
 
 **Date:** 2026-06-07
 **Claim type:** bounded_theorem
@@ -10,22 +10,59 @@ after independent review.
 
 ## Summary
 
+## 2026-06-08 Audit-Targeted Boundary Repair
+
+The independent audit blocker for this row was:
+
+```text
+missing_bridge_theorem: add a retained derivation of H->H+phi and the Fermat
+identification n=k/k0, include the Kubo-comparison authority if T6 remains in
+scope, and restate T1 with either the exact lattice arccos coefficient or an
+explicit small-k limit.
+```
+
+This revision takes the honest bounded route. It does not claim to close the
+full physical premise (4) bridge. Instead it:
+
+- exposes `H -> H + phi` as supplied by the retained-bounded
+  [`SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md)
+  authority;
+- treats the Fermat identification `n = k/k_0` as the eikonal/WKB
+  interpretation of a fixed-energy scalar dispersion packet, not as a new
+  retained physical bridge;
+- restates T1 with the exact axis-lattice relation
+  `k(phi)=arccos(1 - (E - phi)/2)` for
+  `lambda_axis(k)=2-2 cos(k)`, followed by the small-`k` limit
+  `k(phi)/k_0 = sqrt(1 - phi/E) + O(E, phi)`;
+- keeps the Kubo comparison in T6 as a scoped contrast with the unaudited
+  [`LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+  packet rather than as a retained authority.
+
+Thus this note is a bounded support packet for the refractive-index form and
+geometric `1/b` calculation. It does not by itself promote clean-chain premise
+(4) to retained status.
+
 The clean-chain note
 [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md)
 (retained_bounded) lists **premise (4)** — the weak-field test-mass response
 `S = L(1−φ)` (Fermat with refractive index `n = 1−φ`) — as **stipulated**. This
-note derives it from the field entering the **lattice dispersion**:
+note supports it from the field entering the **lattice dispersion**:
 
 > The field enters `H → H+φ` (the source modifies the Hamiltonian;
 > [`SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md)).
 > A test particle at fixed energy `E` then has local wavenumber set by
-> `λ(k)+φ = E`, so `k(x) = k₀√(1−φ/E) = k₀(1 − φ/(2E) + O(φ²))`. Hence the
-> **Fermat refractive index** is `n(x) = k(x)/k₀ = 1 − φ/(2E)`, and the test-mass
-> action is `S = ∫n dl = L − (1/2E)∫φ dl` — premise (4), with the weak-field
-> metric `g ~ (1 ± 2Φ)` (`Φ = φ/(4E)` the Newtonian potential).
+> `λ(k)+φ = E`. On the axis lattice dispersion
+> `λ_axis(k)=2−2 cos(k)`, this gives the exact relation
+> `k(φ)=arccos(1−(E−φ)/2)` and
+> `n(φ)=k(φ)/k(0)`. In the small-`k` weak-field limit,
+> `n(φ)=sqrt(1−φ/E)+O(E,φ) = 1 − φ/(2E) + O((φ/E)^2,E,φ)`. Hence the
+> **Fermat refractive-index form** is `n(x) = k(x)/k₀ = 1 − φ/(2E)` to first
+> order, and the test-mass action is `S = ∫n dl = L − (1/2E)∫φ dl` within the
+> supplied eikonal packet.
 
-So premise (4) is not a separate ansatz: the refractive-index response is the
-dispersion shift `λ(k)+φ=E` of a test particle in the field.
+The refractive-index response is therefore a bounded dispersion-support route
+for premise (4), conditional on the physical/eikonal bridge that reads the
+local wavenumber ratio as the Fermat index.
 
 **Geometric lensing is 1/b.** The geodesic (Fermat) ray deflection of the
 import-free potential `φ = a/r` (companion
@@ -39,8 +76,9 @@ observable was a different (Kubo) object.
 ## Theorem (bounded, runner-verified)
 
 - **(T1)** dispersion shift: on `λ(k)=6−2Σ_μ cos k_μ`, solving `λ(k)+φ=E` gives
-  `n(x)=k(x)/k₀ = √(1−φ/E)`; **(T1b)** to first order `n = 1 − φ/(2E)` (refractive
-  index linear in `φ`).
+  exact axis relation `k(φ)=arccos(1−(E−φ)/2)` and
+  `n(φ)=k(φ)/k(0)`; **(T1b)** in the small-`k` weak-field limit
+  `n = sqrt(1 − φ/E) + O(E,φ) = 1 − φ/(2E) + O((φ/E)^2,E,φ)`.
 - **(T2)** Fermat action: `S = ∫n dl = L − (1/2E)∫φ dl` (premise (4) form), **(T2b)**
   linear in `φ`.
 - **(T3)** weak-field metric: the light index `n = 1 − 2Φ` matches `n = 1 − φ/(2E)`
@@ -48,17 +86,17 @@ observable was a different (Kubo) object.
 - **(T4)** geodesic deflection of `φ = a/r`: `α(b) = 2a/b` (`α·b → const`) — `1/b` lensing.
 - **(T5, control)** no field coupling (`n=1`) gives zero deflection.
 - **(T6)** the geometric deflection slope is `−1` (`1/b`), distinct from the Kubo
-  observable's `b⁻²` (#3191).
+  observable packet's dipole-suppressed scaling. The Kubo packet is included
+  as a comparison authority, not as a retained dependency.
 
 `TOTAL: PASS=9 FAIL=0`.
 
 ## What This Supplies / Does Not Claim
 
-- **Supplies** clean-chain premise (4): the weak-field response `n = 1−cφ` (Fermat /
-  weak-field metric `g~1±2Φ`) is derived from the field shifting the test particle's
-  dispersion (`λ(k)+φ=E`), not stipulated. With premise (2) (closure, weak-field
-  linear response, companion this session) and premise (5) (`G₀→1/(4π r)` import-free,
-  companion), the weak-field chain's *structural* premises (2),(4),(5) are now derived.
+- **Supports** clean-chain premise (4): the weak-field response form `n = 1−cφ`
+  is obtained from the supplied Hamiltonian shift and fixed-energy lattice
+  dispersion in the bounded eikonal packet. This is not a full retained
+  derivation of the physical Fermat bridge.
 - **Resolves a framing point:** the genuine *geometric* (geodesic) lensing of `φ=1/r`
   is the standard `1/b`; the `−1.43` was the dipole-suppressed *Kubo* observable, a
   different object (#3191).
@@ -71,21 +109,32 @@ observable was a different (Kubo) object.
 
 ## Relation to Retained Inventory
 
-- Derives premise (4) of retained_bounded `gravity_clean_derivation`.
-- The field-in-Hamiltonian (`H→H+φ`) is retained_bounded `self_consistency_forces_poisson`.
+- Supports premise (4) of retained_bounded `gravity_clean_derivation` on the
+  supplied eikonal/dispersion boundary.
+- The field-in-Hamiltonian (`H→H+φ`) input is retained_bounded
+  `self_consistency_forces_poisson`.
 - The exterior `φ_eff=a/r` source potential is retained_bounded `finite_rank_source_to_metric`.
 - Uses the import-free `G₀→1/(4π r)` and complements the Kubo-vs-geometric distinction
   (companions `lattice_greens_1_over_r_from_heat_kernel_resolvent`,
   `lensing_exponent_is_dipole_crossover`, this session).
 
+| Packet | Current audit status in ledger | Role here |
+| --- | --- | --- |
+| `self_consistency_forces_poisson_note` | retained_bounded | Supplies the field-shift/Hamiltonian-response context. |
+| `finite_rank_source_to_metric_theorem_note` | retained_bounded | Supplies the exterior `phi_eff=a/r` source-potential packet. |
+| `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | audited_conditional at this ledger snapshot | Support-only heat-kernel route toward `1/(4πr)`. |
+| `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | unaudited at this ledger snapshot | Comparison-only Kubo-vs-geometric distinction for T6. |
+
 ## Boundary / Honest-Auditor Read
 
-The content is the dispersion derivation of the refractive index: a test particle at fixed
-energy in the field `φ` has `λ(k)+φ=E ⟹ n=1−φ/(2E)`, which *is* premise (4) (the Fermat /
-weak-field-metric response), plus the standard `1/b` geodesic deflection of the import-free
-`1/r` potential. The runner verifies the dispersion-to-index map (T1), the Fermat action
-(T2), the metric match (T3), the `1/b` deflection (T4), the no-coupling control (T5), and
-the distinction from the Kubo `b⁻²` observable (T6). Together with the weak-field closure and
-the import-free Green function (companions this session), the weak-field Newtonian chain's
-structural premises are derived; the `G_Newton` normalization stays registered, and premise
-(3) + the nonlinear/strong-field regime remain open.
+The content is bounded dispersion support for a refractive-index response: a
+test particle at fixed energy in the supplied field-shift packet has
+`λ(k)+φ=E`; on the exact axis lattice dispersion this gives
+`k(φ)=arccos(1−(E−φ)/2)`, whose small-`k` weak-field limit gives
+`n=k(φ)/k(0)=1−φ/(2E)+...`. The runner verifies the exact lattice map and its
+small-`k` limit (T1), the Fermat action algebra after the `n=k/k0` reading is
+supplied (T2), the metric-form match (T3), the `1/b` geometric deflection
+(T4), the no-coupling control (T5), and the comparison-only distinction from
+the Kubo packet (T6). The `G_Newton` normalization stays registered, and the
+full physical Fermat/eikonal bridge, premise (3), and nonlinear/strong-field
+regime remain open.

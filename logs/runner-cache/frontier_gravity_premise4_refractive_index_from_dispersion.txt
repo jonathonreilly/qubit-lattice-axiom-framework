@@ -1,13 +1,6 @@
-===== runner cache v1 =====
-runner: scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py
-runner_sha256: a9aee4b10536ca657d98fa8894ca6c0f8a0ca4753e4711646cc0c505358cdf61
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.56
-status: ok
------ stdout -----
-PASS T1 dispersion shift: n=k(x)/k0 = sqrt(1-phi/E) (Fermat refractive index)
-PASS T1b first-order: n = 1 - phi/(2E) (refractive index linear in phi)
+PASS T1 exact axis-lattice map: k(phi)=arccos(1-(E-phi)/2)
+PASS T1b small-k limit: n=k(phi)/k0 = sqrt(1-phi/E)+O(E,phi)
+PASS T1c first-order weak field: n = 1 - phi/(2E)
 PASS T2 Fermat action S = int n dl = L - (1/2E) int phi dl (premise 4 form)
 PASS T2b S is linear in phi (refractive-index response)
 PASS T3 weak-field metric light index n=1-2Phi matches dispersion n=1-phi/2E (Phi=phi/4E)
@@ -15,8 +8,14 @@ PASS T4 geodesic deflection of phi=a/r: alpha(b) = 2a/b (1/b lensing)
 PASS T4b alpha*b -> const (= 2a): confirms 1/b form
 PASS T5 CONTROL: no field coupling (n=1) -> zero deflection (teeth)
 PASS T6 geometric deflection slope = -1 (1/b), distinct from Kubo b^-2 (#3191)
+PASS SOURCE note names the 2026-06-08 audit-targeted boundary repair
+PASS SOURCE note states Fermat n=k/k0 remains supplied eikonal bridge
+PASS SOURCE note contains exact arccos lattice relation
+PASS AUTH self_consistency_forces_poisson is retained_bounded
+PASS AUTH finite_rank_source_to_metric is retained_bounded
+PASS KUBO comparison runner and cache are present
+PASS KUBO comparison cache is SHA-fresh
+PASS KUBO comparison packet status is exposed as unaudited
+PASS SOURCE no full premise-4 promotion
 
-TOTAL: PASS=9 FAIL=0
-
------ stderr -----
-
+TOTAL: PASS=19 FAIL=0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
-runner_sha256: 2e4e96b11e3c4b1aec46e238fbc577d195a112cf6cd669cb0ac6e8c52cd39c03
+runner_sha256: e18c2f117e973d3ce62d123f5b46f72e8f25084610f1a46aadf04d167894b8ee
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.56
+elapsed_sec: 4.57
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -48,6 +48,18 @@ Reference solve B (structural choice rho_(p,q) = delta_{(p,q),(0,0)})
 One-plaquette block reference
   P_1plaq(6) = d/d beta log c_(0,0)(6)  (Bessel-determinant FD)
   P_1plaq(6)                            = 0.422531738327
+
+Finite all-forward L_s=2 PBC cube Schur shortcut
+  rho_Schur = ((d c/c00)^12) d^(N_components - N_links), normalized at (0,0)
+  unique plaquettes, directed links       = 12, 24
+  cyclic-index nodes, edges, components   = 48, 48, 8
+  normalized dimension exponent           = -4
+  rho_Schur_(1,0), rho_Schur_(1,1)        = 2.124624038030e-01, 5.587932035228e-03
+  Perron eigenvalue                       = 3.516942399098
+  P_Schur,L2(6)                           = 0.429104996947
+  u_0,Schur,L2                            = 0.809358427105
+  alpha_s,Schur,L2(v) (alpha_bare=1)      = 1.526575239594
+  -> finite-volume diagnostic only; not the physical 3D Wilson environment
 
 Input rho_(p,q)(6) values defining each structural reference solve:
   reference solve A (Dirac-delta-environment, rho = 1):
@@ -136,6 +148,12 @@ Hostile-review diagnostics:
          |P(NMAX=7)-P(NMAX=6)|=1.142e-09, |P(NMAX=6)-P(NMAX=5)|=1.139e-07, |P(NMAX=5)-P(NMAX=4)|/|P(NMAX=6)-P(NMAX=5)|=69.05, max_(p+q=NMAX) a^4 = 2.540e-16
   [PASS] [THEOREM] the source-sector Perron value depends nontrivially on rho_(p,q)(6); the three tested 1-parameter local-input closures do not fix a unique rho (bounded no-go: distinct normalized rho choices give distinct P(6))
          family-1 spread = 0.029664, family-2 spread = 0.065300, family-3 spread = 0.163849; full admissible spread >= 0.193725; no choice of (tau, beta_env, k) is canonically picked out by the enumerated local-input closures
+  [PASS] [THEOREM] the all-forward L_s=2 PBC cube index graph is reconstructed internally with 12 plaquettes, 24 directed links, 48 cyclic-index nodes, 48 identifications, and 8 connected components
+         plaquettes=12, links=24, nodes=48, edges=48, components=8
+  [PASS] [THEOREM] the raw-coefficient Schur rho is normalized, conjugation-symmetric, and distinct from the three enumerated one-parameter local families
+         rho00=1.000000000000, rho10=2.124624038030e-01, rho01=2.124624038030e-01, rho11=5.587932035228e-03
+  [PASS] [THEOREM] the finite L_s=2 Schur rho gives a self-contained source-sector Perron value P_Schur,L2(6) = 0.429104996947 without importing that number from a sibling note
+         P_Schur,L2=0.429104996947, eig=3.516942399098, psi swap=2.220e-16
   [PASS] [SUPPORT] the Wilson character coefficients are not a constant-lift family: a_(1,1) is not equal to a_(1,0)^2
          a_(1,1) / a_(1,0)^2 = 0.908850 (rep-dependent structure, no scalar lift)
   [PASS] [SUPPORT] neither structural reference Perron value coincides with the canonical comparator; the runner does not tune any input to that comparator
@@ -149,6 +167,7 @@ Summary table (structural reference solves only — not the physical answer):
   reference solve         P(6)            u_0           alpha_s(v)
   A: rho = 1            0.4524071590    0.8201293744  1.4867408201
   B: rho = delta_(0,0)  0.4225317396    0.8062409160  1.5384037545
+  L2 Schur shortcut     0.4291049969    0.8093584271  1.5265752396
   one-plaquette ref     0.4225317383    0.8062409154  1.5384037569
 
 Bounded no-go: the three tested 1-parameter local-input closures do
@@ -171,7 +190,7 @@ on the full 3D environment lattice. That physical object is outside
 this finite reference-solve packet.
 
 ==============================================================================
-SUMMARY: THEOREM PASS=6 SUPPORT=4 FAIL=0
+SUMMARY: THEOREM PASS=9 SUPPORT=4 FAIL=0
 ==============================================================================
 
 ----- stderr -----

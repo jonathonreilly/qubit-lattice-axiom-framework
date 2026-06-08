@@ -1,0 +1,18 @@
+PASS: M_same_mass_multiset_at_plus_minus_delta sorted masses identical: True
+PASS: M_sqrt_m_minus_delta_is_relabeled_plus_delta sqrt m_k(-d) = sqrt m_{-k}(+d) (R-relabeling)
+PASS: S_S3_has_3_reflections_3_rotations |transpositions|=3 (sgn -1), |A_3|=3 (sgn +1)
+PASS: S_transposition_R_flips_sign_Vand sign Vand -> -1 under R
+PASS: S_R_unbroken_per_retained_staggered_S3 R in unbroken S_3 parent; effective status retained_bounded
+PASS: G_sign_Vand_is_S3_sign_rep odd under all 3 transpositions, even under A_3 -> the sign rep
+PASS: G_absolute_handedness_is_gauge odd under an unbroken physical symmetry (R) => not gauge-invariant => GAUGE
+PASS: P_magnitude_is_S3_invariant |Vand| same at +/-delta: 0.046748
+PASS: P_relative_orientation_R_invariant sign(V1)*sign(V2)=+1 = under R-on-both +1 (physical: the mixing/CP phase)
+PASS: P_magnitude_carries_derived_2_9 |delta|=2/9=L_3(1,2)=0.222222 (derived; the physical magnitude)
+PASS: P_magnitude_authority_is_retained_grade effective status retained_bounded
+PASS: number_three_is_separate the NUMBER 3 = triplet dimension (separate physical/derived fact, not the gauge orientation)
+PASS: number_three_authority_is_retained_grade effective status retained
+PASS: firewall_cone_Q_two_thirds max|Q-2/3|=5.55e-16
+PASS: C_comparator_delta_pdg delta_PDG=0.222230
+
+TOTAL: PASS=15 FAIL=0
+VERDICT: the ABSOLUTE flavor handedness sign(Delta) is GAUGE -- it is odd under the orientation-reversing transposition R, an UNBROKEN physical symmetry of the staggered kinematics (retained full S_3), and +delta/-delta are the same masses R-relabeled. The physical S_3-invariant flavor data is the magnitude |delta|=2/9=L_3(1,2) (derived) and the inter-sector RELATIVE orientation (the mixing/CP phase). The handedness residual is RESOLVED (gauge, no derivation needed); the number 3 and the r=1/2 cone are separate/untouched.

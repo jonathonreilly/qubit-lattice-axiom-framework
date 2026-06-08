@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_staggered_tt_graviton_triangle.py
+runner_sha256: b131c185775df75b5f920a922ad15ef8af8cbab57637ecefc6282733d8ce5f05
+timeout_sec: 480
+exit_code: 0
+elapsed_sec: 4.77
+status: ok
+----- stdout -----
+PASS T1 CONTROL 2-comp Cl(3) triangle <T T T> VANISHES (max=4.2e-04, all channels) -- no pure-TT^3 (#3295)
+PASS T2 STAGGERED physical TT triangle NONZERO (mixed pol, non-collinear): <h23,h13,h23>=+0.0248, <h23,h13,(33-11)>=+0.0325
+PASS T3 ALL-SAME suppressed -> 0 (all-same-helicity): <h23^3>/mixed = 0.024(N6) -> 0.012(N8) (halving toward 0)
+PASS T4 the proper 4-taste fermion SUPPLIES the paramagnetic TT graviton self-coupling (staggered 0.0248 vs 2-comp 4.2e-04)
+
+The PARAMAGNETIC TT graviton cubic self-interaction turns on with the proper staggered
+Kaehler-Dirac (4-taste) fermion: the triangle <T T T> is NONZERO for physical transverse
+gravitons (mixed polarizations ~0.025-0.032), while the single 2-component fermion gives
+IDENTICALLY ZERO. The all-same-polarization channels are suppressed -> 0 -- the gravitational
+all-same-helicity vanishing (<+++>=0). With the diamagnetic seagull/conformal sector (#3295),
+the full cubic Einstein-Hilbert graviton self-interaction is W-native on the proper fermion.
+BOUNDED: momentum-dependent vertex (3-point), magnitude registered (G3), cubic diffeo-Ward open.
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

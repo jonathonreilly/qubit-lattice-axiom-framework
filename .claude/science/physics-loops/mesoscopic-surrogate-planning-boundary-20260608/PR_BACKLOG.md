@@ -1,14 +1,16 @@
 # PR Backlog
 
-Status: pending PR creation.
+Status: PR created.
 
-Planned title:
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3251
+
+Title:
 
 ```text
 [physics-loop] mesoscopic-surrogate-planning-boundary open
 ```
 
-Planned verification:
+Verification:
 
 ```bash
 python3 scripts/mesoscopic_surrogate_alternate_family_scout.py

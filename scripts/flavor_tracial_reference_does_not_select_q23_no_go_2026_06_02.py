@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Koide measure tie-break -- assumed finite-carrier route test.
+Koide measure tie-break -- formal finite-carrier route-pruning theorem.
 
 ANGLE: Does the tracial/product/modular reference route select the equal-block
 measure on the assumed generation algebra R[Z3] = R (+) C, or does it read the
@@ -16,11 +16,12 @@ Honesty discipline: a principle "forces (ii)" only if it is INCOMPATIBLE with
 (i); a coincidence/consistency-equality that merely PERMITS (ii) is logged as
 PERMIT, not FORCE.  Symmetric standard applied to (i).
 
-Every operator used is finite-dimensional matrix algebra. The runner does not
-derive the generation carrier, physical sector identification, or physical mass
-readout from baseline axioms. The paired source note now cites the retained
-Record-function algebra for the r/Q coordinate and keeps the carrier/readout as
-supplied context.
+Every operator used is finite-dimensional matrix algebra under the formal
+finite-carrier hypotheses F1-F3. The runner does not derive the physical
+generation carrier, physical sector identification, or physical mass readout
+from baseline axioms. The paired source note cites the retained Record-function
+algebra for the r/Q coordinate and keeps the physical carrier/readout bridge
+outside this route-pruning theorem.
 """
 
 from pathlib import Path
@@ -338,10 +339,18 @@ banned = [
 ]
 required = [
     "bounded no_go / route-pruning theorem",
-    "supplied finite carrier/readout surface",
+    "formal finite carrier/readout surface F1-F3",
+    "2026-06-08 formal-carrier repair",
+    "F1:",
+    "F2:",
+    "F3:",
     "does not derive the carrier",
     "RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05",
     "KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29",
+    "physical_generation_bridge_claimed: false",
+    "physical_flavor_sector_claimed: false",
+    "measured_mass_readout_claimed: false",
+    "bare_retained_allowed: false",
     "No new axiom is introduced.",
 ]
 check("source boundary guard: carrier/readout are assumed, not derived by this packet",

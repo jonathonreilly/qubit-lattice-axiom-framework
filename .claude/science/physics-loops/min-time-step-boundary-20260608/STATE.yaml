@@ -1,0 +1,15 @@
+loop: min-time-step-boundary-20260608
+status: packaged_for_review
+target_claim_id: min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08
+actual_current_surface_status: conditional-support
+branch: physics-loop/min-time-step-boundary-20260608
+base: origin/main
+files_touched:
+  - docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md
+  - scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py
+  - logs/runner-cache/min_time_step_is_planck_time_from_scale_reference_primitive_runner.txt
+  - .claude/science/physics-loops/min-time-step-boundary-20260608/
+open_blockers:
+  - Companion tick/edge row is currently audited_renaming, not retained.
+  - This packet exposes physical-c normalization but does not derive emergent c as physical c.
+next_action: reviewer extracts or adapts the narrowed boundary repair; independent audit decides status.

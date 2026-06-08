@@ -1,6 +1,11 @@
 # Ordered-Lattice Lane
 
-**Status:** historical proposed_retained major program
+**Status:** historical lane index / meta; not an authority surface
+
+This README is an index for ordered-lattice materials. It does not assert a
+theorem-level ordered-lattice claim, does not promote archived branch material,
+and does not override the per-note audit status of the linked authority
+surfaces.
 
 ## Covers
 

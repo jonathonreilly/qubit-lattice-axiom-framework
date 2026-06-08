@@ -1,0 +1,55 @@
+loop_slug: audit-cleanup-batch-20260608
+date: 2026-06-08
+mode: repair_batch
+target_status: best-honest-status
+base_ref: origin/main
+branch: physics-loop/audit-cleanup-batch-20260608
+current_surface_status: source-side audit unblock repairs only
+actual_current_surface_status: bounded-support/demotion mix
+bare_retained_allowed: false
+audit_required_before_effective_status_change: true
+files_touched:
+  - docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md
+  - docs/GATE_B_DYNAMICS_NOTE.md
+  - docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md
+  - docs/lanes/ordered-lattice/README.md
+  - scripts/newtonian_distance_law_confirmed_pointer_guard_2026_06_08.py
+  - scripts/audit_cleanup_scope_guard_2026_06_08.py
+  - logs/runner-cache/newtonian_distance_law_confirmed_pointer_guard_2026_06_08.txt
+  - logs/runner-cache/audit_cleanup_scope_guard_2026_06_08.txt
+targets_repaired:
+  - claim_id: newtonian_distance_law_confirmed
+    movement: stale machine-local historical pointer repaired to local SHA-pinned bounded replay evidence
+    status_after_branch: historical pointer row; bounded finite replay remains in VALLEY_LINEAR_WIDE_TAIL_NOTE
+  - claim_id: gate_b_dynamics_note
+    movement: overbroad Gate B status narrowed to generated-geometry source index; stale machine-local links repaired
+    status_after_branch: bounded source-side index; physical bridge and primitive growth rule remain open
+  - claim_id: mesoscopic_surrogate_alternate_family_scout_note
+    movement: bounded-theorem header demoted to meta/support planning index
+    status_after_branch: meta/support index; no theorem-grade target-selection authority
+  - claim_id: lanes.ordered-lattice.readme
+    movement: historical proposed-retained lane index demoted away from authority-surface language
+    status_after_branch: meta index controlled by per-note audit statuses
+inspected_noop_targets:
+  - claim_id: wide_lattice_h2t_distance_law_note
+    finding: already repaired on main with a SHA-pinned verifier and fresh cache
+    branch_action: none
+verification:
+  - python3 scripts/newtonian_distance_law_confirmed_pointer_guard_2026_06_08.py
+  - python3 scripts/valley_linear_wide_tail_replay.py
+  - python3 scripts/audit_cleanup_scope_guard_2026_06_08.py
+  - python3 scripts/mesoscopic_surrogate_alternate_family_scout.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/newtonian_distance_law_confirmed_pointer_guard_2026_06_08.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/audit_cleanup_scope_guard_2026_06_08.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/valley_linear_wide_tail_replay.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/mesoscopic_surrogate_alternate_family_scout.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/wide_lattice_h2t_distance_replay.py
+  - git diff --check
+  - git diff -- docs/audit
+review_loop_disposition: limited local branch review; no independent audit verdict applied
+remaining_blockers:
+  - full physical Gate B bridge from primitives to readout
+  - objective ranking theorem for mesoscopic target selection
+  - ordered-lattice per-note authority statuses remain owned by independent audit
+next_exact_action: open review PR for this cleanup batch
+stop_condition: coherent repair batch packaged for reviewer/auditor extraction

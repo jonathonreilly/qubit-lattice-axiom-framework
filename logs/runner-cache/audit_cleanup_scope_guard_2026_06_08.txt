@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/audit_cleanup_scope_guard_2026_06_08.py
+runner_sha256: 24a27c7e292cb637eca3ce2fedd050e9677bf4d032d060beb34c6bf1dda10a9b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+AUDIT CLEANUP SCOPE GUARD 2026-06-08
+PASS docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md exists
+PASS docs/GATE_B_DYNAMICS_NOTE.md exists
+PASS docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md exists
+PASS docs/lanes/ordered-lattice/README.md exists
+PASS newton pointer is historical only
+PASS newton pointer exposes cache
+PASS newton pointer exposes SHA
+PASS Gate B declares generated-geometry index
+PASS Gate B denies physical bridge
+PASS Gate B names runner-local slice semantics
+PASS Gate B removes bold CLOSED overclaim
+PASS Gate B removes stale absolute project paths
+PASS mesoscopic scout is meta/support index
+PASS mesoscopic scout denies theorem-grade target selection
+PASS mesoscopic scout preserves ranking residual
+PASS ordered README declares meta index
+PASS ordered README denies authority surface
+PASS ordered README preserves per-note status
+SCORECARD PASS=18 FAIL=0
+
+----- stderr -----
+

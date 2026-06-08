@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/newtonian_distance_law_confirmed_pointer_guard_2026_06_08.py
+runner_sha256: 5f7d729211a4853a802d374d63039eea80584e8f832a27b9bf1e055bfc88b7fa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+NEWTONIAN DISTANCE-LAW HISTORICAL POINTER GUARD 2026-06-08
+PASS docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md exists
+PASS docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md exists
+PASS scripts/valley_linear_wide_tail_replay.py exists
+PASS logs/2026-04-04-valley-linear-wide-tail-replay.txt exists
+PASS logs/runner-cache/valley_linear_wide_tail_replay.txt exists
+PASS pointer declares historical pointer status
+PASS pointer has local replay note link
+PASS pointer has local runner link
+PASS pointer has local frozen log link
+PASS pointer has local cache link
+PASS pointer removes stale absolute project paths
+PASS pointer exposes frozen log sha
+PASS pointer states bounded finite replay only
+PASS replay note contains verifier repair
+PASS replay note exposes same frozen sha
+PASS cache is fresh successful verifier
+SCORECARD PASS=16 FAIL=0
+
+----- stderr -----
+

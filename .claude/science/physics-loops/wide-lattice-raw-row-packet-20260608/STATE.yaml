@@ -1,0 +1,21 @@
+loop: wide-lattice-raw-row-packet-20260608
+date: 2026-06-08
+branch: physics-loop/wide-lattice-raw-row-packet-20260608
+base: origin/main
+mode: run
+target_status: audit-unblock
+active_route: wide-lattice raw-row restricted-packet exposure
+actual_current_surface_status: bounded frontier replay packet repair
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: wide_lattice_h2t_distance_law_note
+target_blocker_text: "include the full SHA-pinned frozen log rows, or a completed --recompute cache, so a second auditor can independently recompute the distance and F~M fits from raw deltas"
+files_touched:
+  - docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md
+  - scripts/wide_lattice_h2t_raw_row_packet_manifest_2026_06_08.py
+  - logs/runner-cache/wide_lattice_h2t_raw_row_packet_manifest_2026_06_08.txt
+open_imports:
+  - independent audit remains required
+  - continuum/universal distance-law theorem remains out of scope
+next_exact_action: "Re-audit wide_lattice_h2t_distance_law_note with raw rows visible in the restricted packet."
+stop_condition: "Raw-row packet packaged for review PR."

@@ -10,9 +10,77 @@ the ordered 3D `1/L^2` family; independent audit lane sets effective status
 - [`scripts/wide_lattice_h2t_distance_replay.py`](../scripts/wide_lattice_h2t_distance_replay.py)
 - Frozen replay log: [`logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`](../logs/2026-04-05-wide-lattice-h2t-distance-replay.txt)
 - Registered runner cache: [`logs/runner-cache/wide_lattice_h2t_distance_replay.txt`](../logs/runner-cache/wide_lattice_h2t_distance_replay.txt)
+- Raw-row packet manifest: [`scripts/wide_lattice_h2t_raw_row_packet_manifest_2026_06_08.py`](../scripts/wide_lattice_h2t_raw_row_packet_manifest_2026_06_08.py)
+- Raw-row packet cache: [`logs/runner-cache/wide_lattice_h2t_raw_row_packet_manifest_2026_06_08.txt`](../logs/runner-cache/wide_lattice_h2t_raw_row_packet_manifest_2026_06_08.txt)
 
 The registered runner defaults to a verifier for the frozen replay log above;
 use `--recompute` to run the original slow wide-lattice replay.
+
+## 2026-06-08 restricted-packet raw-row exposure
+
+The audit blocker after the verifier repair was not a formula failure.  It was
+packet visibility: a second auditor needed the raw distance and `F~M` rows in
+the restricted packet, or an equivalent recompute artifact, to independently
+check the fits.  This section embeds the frozen raw rows directly and adds a
+manifest runner that verifies these tables match the SHA-pinned frozen log.
+
+Frozen raw replay log SHA-256:
+
+```text
+2faf31bf9b1015df87adaadbfa8393c4a26e100abdc6ccaf6daf70308a30e024
+```
+
+Barrier sanity:
+
+| quantity | value |
+| --- | ---: |
+| Born | `4.82e-15` |
+| `k=0` centroid shift | `+0.000000` |
+
+Distance rows:
+
+| `z` | `delta` | direction |
+| ---: | ---: | --- |
+| 2 | `+0.000188` | TOWARD |
+| 3 | `+0.000232` | TOWARD |
+| 4 | `+0.000245` | TOWARD |
+| 5 | `+0.000220` | TOWARD |
+| 6 | `+0.000183` | TOWARD |
+| 7 | `+0.000159` | TOWARD |
+| 8 | `+0.000142` | TOWARD |
+| 9 | `+0.000124` | TOWARD |
+| 10 | `+0.000108` | TOWARD |
+| 11 | `+0.000093` | TOWARD |
+
+Fit rows recomputed by the verifier from the table above:
+
+| fit | slope | `R^2` | `n` |
+| --- | ---: | ---: | ---: |
+| peak tail from `z >= 4` | `-0.9579` | `0.9801` | 8 |
+| far tail from `z >= 5` | `-1.0578` | `0.9904` | 7 |
+
+`F~M` sweep rows:
+
+| `s` | `delta` | direction |
+| ---: | ---: | --- |
+| `1e-06` | `+4.636762e-06` | TOWARD |
+| `2e-06` | `+9.273526e-06` | TOWARD |
+| `5e-06` | `+2.318384e-05` | TOWARD |
+| `1e-05` | `+4.636775e-05` | TOWARD |
+| `2e-05` | `+9.273579e-05` | TOWARD |
+| `5e-05` | `+2.318416e-04` | TOWARD |
+
+The verifier recomputes the mass-scaling exponent from these six rows:
+
+```text
+alpha = 1.000003, R^2 = 1.000000, n = 6.
+```
+
+The raw-row packet manifest reports:
+
+```text
+RAW_ROW_PACKET PASS=25 FAIL=0
+```
 
 ## 2026-06-07 verifier repair
 

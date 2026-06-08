@@ -1,19 +1,23 @@
 # Gauge-Vacuum Plaquette Source-Sector Reference Perron Solve
 
 **Date:** 2026-04-30; bounded reference-solve boundary repair 2026-05-24;
-one-plaquette/admissibility cleanup 2026-06-08
+one-plaquette/admissibility cleanup 2026-06-08; self-contained Schur
+finite-volume subcheck repair 2026-06-08
 **Type:** bounded_theorem
 **Status:** support — explicit source-sector Perron solves at two
 structural reference choices of the residual environment, plus a bounded no-go
-for three enumerated local-input closure families for `rho_(p,q)(6)`.
+for three enumerated local-input closure families for `rho_(p,q)(6)`, plus a
+self-contained finite all-forward `L_s=2` Schur shortcut diagnostic.
 The runner does NOT compute the physical
 `rho_(p,q)(6)` for the actual 3D spatial Wilson environment; that 3D
 Perron solve is the missing object.
 **Claim boundary:** finite `NMAX = 7`, `MODE_MAX = 200` reference solves with
 `rho` supplied as input (`rho = 1` and `rho = delta`), plus finite parametric
-rho-sensitivity/no-go evidence inside the enumerated families. This note does
-not claim the physical 3D spatial Wilson environment `rho`, the untruncated
-tensor-transfer Perron solve, or canonical `P(6) = 0.5934`.
+rho-sensitivity/no-go evidence inside the enumerated families, plus the finite
+all-forward `L_s=2` PBC Schur shortcut computed directly by the runner. This
+note does not claim the physical 3D spatial Wilson environment `rho`, the
+untruncated tensor-transfer Perron solve, the thermodynamic-limit plaquette, or
+canonical `P(6) = 0.5934`.
 **Status authority:** independent audit lane only.
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py`
 
@@ -243,17 +247,33 @@ derivations** (derivations with no free parameter to fit), which the
 
 In particular, the **Schur cube finite-volume calculation** is a
 0-parameter calculation that uses `c_lambda(6)`, `SU(3)` intertwiners,
-AND the explicit cube graph geometry. It computes:
+AND the explicit cube graph geometry. The present runner now computes this
+finite calculation directly, rather than importing its value from a sibling
+row. In the raw Bessel-coefficient convention of this note it computes:
 
 ```text
-rho_Schur_(p,q)(6) = (c_(p,q)(6) / c_(0,0)(6))^N_plaq × d_(p,q)^(N_components - N_links)
+rho_Schur_(p,q)(6)
+  = ((d_(p,q) c_(p,q)(6) / c_(0,0)(6))^N_plaq)
+    × d_(p,q)^(N_components - N_links)
 ```
 
-with `N_components` from the cyclic-index graph of the cube. For
-the L_s=2 PBC cube under the all-forward convention with N_components = 8,
-this gives the value `P_Schur = 0.4291` (per
-`scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py` and
-[`SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md`](SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md)).
+with `N_components` from the cyclic-index graph of the cube. For the `L_s=2`
+PBC cube under the all-forward convention the runner reconstructs
+`N_plaq = 12`, `N_links = 24`, `N_components = 8`, so after normalization this
+is equivalently
+
+```text
+rho_Schur_(p,q)(6)
+  = (c_(p,q)(6) / c_(0,0)(6))^12 d_(p,q)^(-4).
+```
+
+The self-contained runner subcheck gives
+`rho_Schur_(1,0) = 0.212462403803`,
+`rho_Schur_(1,1) = 0.005587932035`, and
+`P_Schur,L2(6) = 0.429104996947`. The sibling
+`SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md` is now only
+parallel context for the narrow shortcut no-go; it is not a load-bearing source
+of this note's Schur value.
 
 **Schur's `rho_Schur` is not in any of the 3 enumerated families** (it
 has both `c/c_00` factors and `d^(...)` factors; the 3 families have
@@ -265,23 +285,99 @@ title suggests.
 - `rho_(p,q)(6)` is NOT fixed by any 1-parameter family of the 3 forms
   enumerated.
 - `rho_(p,q)(6)` IS computed for the tested all-forward L_s=2 cube
-  surface by the Schur finite-volume calculation using cube graph
+  surface by this runner's Schur finite-volume calculation using cube graph
   topology in addition to `c_lambda` and intertwiners.
 - The Schur calculation gives a SPECIFIC value (P = 0.4291 at L_s=2
   PBC cube), which does NOT match the canonical MC value 0.5934. This
   is a finite-volume candidate value, not a free parameter.
 - For matching MC 0.5934 via L_s=2 cube: requires either an additional
-  framework primitive beyond local data + cube geometry, OR a
+  approved input or derivation beyond local data + cube geometry, OR a
   realization that the L_s=2 cube prediction is genuinely 0.4291 and
   the MC 0.5934 reflects finite-volume / thermodynamic-limit effects.
 - For L_s ≥ 3 cube: the Schur derivation has not been done in this
-  framework; this is a candidate for matching MC if larger-L cubes
-  give different ρ.
+  framework; this is a candidate for matching MC only if larger-L cubes
+  give different rho and that larger-L computation is supplied.
 
 The corrected no-go is therefore: `c_lambda(6)` + `SU(3)` intertwiners
-+ ANY 1-parameter family ansatz ≠ canonical ρ. Adding cube graph
-geometry gives a SPECIFIC all-forward L_s=2 finite-volume ρ but not
-the MC value at L_s=2.
++ any one of the three enumerated 1-parameter family choices does not
+canonically determine rho.
+Adding cube graph geometry gives a SPECIFIC all-forward L_s=2 finite-volume
+rho but not the MC/thermodynamic value.
+
+### No-go discipline gate for the enumerated local-family boundary
+
+Status: PASS for the narrow boundary only: the three enumerated 1-parameter
+local families do not canonically determine `rho_(p,q)(6)`.
+
+**N1 alternative route enumeration.**
+
+| Route | Attempt | Result |
+|---|---|---|
+| Constant reference | Use `rho = 1` as the canonical local closure. | ATTEMPTED: the runner computes a finite reference value, but this is an input choice, not selected by the local data. |
+| Delta reference | Use `rho = delta_{(p,q),(0,0)}` as the canonical local closure. | ATTEMPTED: the runner computes a distinct finite reference value, again as an input choice. |
+| Decay family | Let `rho = exp(-tau(p+q))` and hope the local data select `tau`. | ATTEMPTED: the sweep varies with `tau`; no canonical `tau` is selected. |
+| One-plaquette environment family | Let `rho = c_(p,q)(beta_env)/c_(0,0)(beta_env)` and hope the local data select `beta_env`. | ATTEMPTED: the sweep varies with `beta_env`; no canonical `beta_env` is selected. |
+| Tube-power family | Let `rho = (c_(p,q)(6)/c_(0,0)(6))^k` and hope the local data select `k`. | ATTEMPTED: the sweep varies with `k`; matching a comparator near one `k` is not a derivation of `k`. |
+| Cube-graph Schur route | Add explicit all-forward `L_s=2` cube graph topology. | ATTEMPTED AS OUT-OF-SCOPE ROUTE: the runner now computes a definite finite value, but it is not one of the three local families and does not close the physical 3D/thermodynamic environment. |
+
+**N2 wall independence.** The collapsed wall set is one finite-source-sector
+wall: the enumerated local families do not supply a canonical parameter. The
+physical 3D spatial Wilson environment, larger-`L_s` Schur cubes, and
+thermodynamic-limit interpretation are open residuals, not walls claimed closed
+here.
+
+**N3 hidden-wall scan.** The finite runner uses `beta = 6`, the source-sector
+operator, `MODE_MAX = 200`, `NMAX = 7`, and the all-forward `L_s=2` graph
+definition as explicit finite inputs. The canonical `P(6) = 0.5934` value is a
+comparator only. No axiom, approved primitive, Record readout rule, physical
+3D environment, or thermodynamic limit is smuggled into the finite result.
+
+**N4 residual matching.** The sibling Schur shortcut row is no longer used as
+the source of the finite Schur value; it is parallel context only. The runner
+computes the `L_s=2` graph counts, Schur rho, and Perron value directly.
+
+**N5 rhetoric audit.** Phrases such as "does not close rho" mean only that the
+three enumerated 1-parameter local families fail to canonically determine the
+finite source-sector rho. They do not rule out 0-parameter cube-graph routes,
+larger finite volumes, physical 3D Wilson-environment solves, or
+thermodynamic-limit derivations.
+
+**N6 partial-closure path scan.** The `L_s=2` Schur calculation is the live
+partial-closure path and is now incorporated as a self-contained finite
+subcheck. It partially improves the row by removing an imported value; it does
+not retire the physical 3D/thermodynamic residual.
+
+**N7 steelman.** A hostile reviewer can reasonably say that the right rho may
+come from the uncomputed spatial Wilson environment, from larger-`L_s`
+cube-graph Schur calculations, or from a separate boundary character-measure
+derivation. This note accepts that steelman and therefore keeps the no-go
+limited to the enumerated local families.
+
+**N8 cross-cycle echo.** Earlier wording in this row was already narrowed from
+"closed-form derivation does not exist" to the finite enumerated-family
+boundary. This repair follows that pattern: internalize the finite Schur
+subcheck, preserve the useful obstruction, and leave the broader physical
+environment route open.
+
+### 2026-06-08 repair: Schur shortcut no longer imported
+
+The previous scope-clarification paragraph cited the `L_s=2` Schur shortcut
+value from a sibling SU(3) row whose own note language still carried an
+open-gate caveat. That made this row conditional even though the needed
+calculation is finite and small. The primary runner now performs the complete
+subcheck:
+
+- enumerates the 12 all-forward `L_s=2` PBC plaquettes and 24 directed links;
+- builds the 48-node cyclic-index graph and verifies 48 identifications with 8
+  connected components;
+- computes the raw-coefficient Schur rho formula above from the same
+  `c_(p,q)(6)` Bessel determinants used elsewhere in this note;
+- runs the source-sector Perron solve with that rho and verifies
+  `P_Schur,L2(6) = 0.429104996947`.
+
+This repair does not promote the shortcut to the physical answer. It only
+removes the imported-value dependency for the finite `L_s=2` diagnostic and
+keeps the actual 3D Wilson environment as the missing mathematical object.
 
 ## Theorem 4: NMAX truncation tail bound
 
@@ -467,6 +563,9 @@ supplied as input.
 - bounded no-go (Theorem 3) that `c_lambda(6)` and `SU(3)`
   intertwiners, within three enumerated admissible parametric families,
   do not fix a unique `rho_(p,q)(6)` on the source sector
+- self-contained finite all-forward `L_s=2` Schur shortcut subcheck:
+  graph counts `12/24/48/48/8`, raw-coefficient Schur rho, and
+  `P_Schur,L2(6) = 0.429104996947`
 - scoped identification of the still-missing physical object as the 3D
   spatial Wilson Perron eigenvector, equivalent to the boundary
   character measure of the unmarked spatial environment with
@@ -490,4 +589,4 @@ python3 scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
 
 Expected summary:
 
-- `THEOREM PASS=6 SUPPORT=4 FAIL=0`
+- `THEOREM PASS=9 SUPPORT=4 FAIL=0`

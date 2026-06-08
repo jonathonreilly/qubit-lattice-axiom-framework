@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 746 |
+| **retained_bounded** | 747 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1315 |
+| unaudited | 1314 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1167 |
+| `audited_clean` | 1168 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1626 |
+| `unaudited` | 1625 |
 
 | claim_type | count |
 |---|---:|
@@ -1029,6 +1029,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_tensor_build_memo` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_theta_to_slice_coupling_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `same_family_3d_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `scalar_3plus1_temporal_ratio_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `scalar_kg_rerun_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `schur_covariance_inheritance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14920,6 +14921,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The conclusion follows from the retained Cl(3,0) Pauli realization, omega = iI, permutation parity, and the elementary fact that complex-linear unitary conjugation fixes scalar iI. The note explicitly excludes the downstream physical premise that generation-sector symmetries must be unitary.
 - **rationale:** The runner genuinely computes the Pauli matrix identities, permutation signs, the explicit 3-cycle unitary, and the no-unitary contradiction for transpositions; it does not import fitted values, observational comparators, or hidden helper code. The load-bearing content is a class A algebraic closure over one retained upstream Cl(3,0) authority plus standard finite linear algebra. Because the packet has zero external comparator checks and reduces to a single retained parent claim with standard mathematics, the conservative rubric classifies it as audited_decoration rather than audited_clean.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `same_family_3d_closure_note`
+
+- **Note:** [`SAME_FAMILY_3D_CLOSURE_NOTE.md`](../../docs/SAME_FAMILY_3D_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-lattice closure for the ordered 3D dense valley-linear family S=L(1-f), kernel 1/L^2 with h^2 measure, at h=0.25, W=10 for the stated rows, plus retained W=12 tail companion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-110012-4f129baa3c-same_family_3d_closure_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The repaired primary runner imports the lattice/action implementation and live-recomputes the core finite-lattice propagations, same-h multi-L purity/gravity rows, and W=10 distance-tail fit, while citing the retained W=12 companion.  _(class `C`)_
+- **chain closes:** True — The provided runner source constructs the lattice, field, slits, propagation, decoherence, mutual information, multi-L rows, and power-law fit from helper primitives rather than merely printing constants. The cited upstream authorities are retained_bounded and only support the bounded finite-slice scope claimed here.
+- **rationale:** The primary runner output is consistent with the note and reports PASS=11 FAIL=0, and the included source shows the contested rows are computed through the lattice propagation path before being compared to tolerances. The helper implements the valley-linear action S=L(1-f), 1/L^2 kernel with h^2 measure, slit setup, field construction, purity, and log-log tail fitting without importing the contested values as inputs. Independent arithmetic checks on the displayed node count, multi-L monotonicity/spread, and W=10 post-peak tail fit are consistent with the reported values. The result remains clean only for the bounded finite-lattice certificate, not for a continuum or universal Newtonian theorem.
 - **auditor confidence:** high
 
 ### `scalar_3plus1_temporal_ratio_note`

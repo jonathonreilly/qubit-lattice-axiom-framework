@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_chirality_gate_emergent_time_massive_dirac_keystone.py
+runner_sha256: 5cfa0c9d5675c59da523d20efee436fd197f1eb759e60737aade30f59983568e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+PASS: ALG_clifford_relations {a_i,a_j}=2d, {a_i,beta}=0, beta^2=I
+PASS: ALG_H2_is_p2_plus_m2_positive_energy H^2=(p^2+m^2)I -> spectrum +-1.7748
+PASS: ALG_two_plusE_two_minusE eigs=[-1.775 -1.775  1.775  1.775] (bounded below under CAR)
+PASS: CHI_gamma5_grading gamma_5^2=I, Tr gamma_5=0 (balanced L/R)
+PASS: CHI_gamma5_commutes_massless [gamma_5, alpha_i]=0 -> chirality conserved for massless H=alpha.p
+PASS: CHI_gamma5_anticommutes_mass {gamma_5, beta}=0 -> the mass term flips chirality (chiral Dirac mass)
+PASS: CHI_mass_couples_L_to_R P_L beta P_L=0 (no LL mass), P_L beta P_R!=0 (LR coupling)
+PASS: SEP_Gamma_chi_is_3dim_involution Gamma_chi=(2/3)J-I on R^3 (the narrow no-go's generation grading)
+PASS: SEP_gamma5_is_separate_2dim_LR_factor gamma_5 acts on the L/R (2-dim) Dirac factor -- a DIFFERENT space than the 3-dim generation R^3
+PASS: SEP_standard_factorized_chirality chirality = I_3 (x) sigma_3 on R^3 (x) (H_L+H_R): NOT the hybrid the no-go forbids -> chiral grading RETAINED
+PASS: KEY_algebra_complete_residual_is_field massive-Dirac ALGEBRA complete & retained; residual = emergent-time FIELD realization = #1 s3_time gate
+
+TOTAL: PASS=11 FAIL=0
+VERDICT: the retained Cl(3,0)->Cl(3,1) supplies the COMPLETE massive-Dirac algebra -- positive-energy spectrum H^2=p^2+m^2, the chiral grading gamma_5 on the SEPARATE L/R factor (untouched by the narrow no-go, which forbids only the hybrid gamma_CL=Gamma_chi on one R^3), and the chiral mass term beta coupling L<->R. So the Koide chirality gate, the Q=2/3 chiral-mass mechanism, generation-ID, and the #1 emergent-time gate ALL reduce to ONE keystone: the emergent-time field realizing this doubling as a positive-energy massive Dirac field on Z^3+emergent-time. The algebra is discharged; the residual is purely field-theoretic.
+
+----- stderr -----
+

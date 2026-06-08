@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 746 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 29 |
+| ~~audited_conditional~~ | 30 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1167 |
-| `audited_conditional` | 29 |
+| `audited_conditional` | 30 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1627 |
+| `unaudited` | 1626 |
 
 | claim_type | count |
 |---|---:|
@@ -1318,6 +1318,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `packet_memory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13081,6 +13082,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Then the finite expectation <P>_L(beta) = Z_L(beta)^(-1) integral P_bar(U) exp(-S_W[U; beta]) dU is a unique mathematical number for the selected finite surface.  _(class `A`)_
 - **chain closes:** True — The scoped finite theorem closes from compact finite configuration space, finite continuous Wilson action, positive finite partition function, and bounded P_bar. The canonical 0.5934 number is explicitly outside the claim as an admitted comparison/reuse value, so no physical plaquette certificate is being certified.
 - **rationale:** With the claim boundary enforced, the note is not deriving or certifying 0.5934; that value is explicitly an admitted comparison/reuse number and is outside the audited claim. The bounded finite result follows from the selected compact SU(3) finite lattice surface and the defined Wilson observable/measure, without hidden physical readout or tuned comparator matching. The runner supports implementation and boundary diagnostics only, with no D-class physical comparator and no same-surface MC certificate for the canonical value.
+- **auditor confidence:** high
+
+### `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09`
+
+- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** V=1 single-plaquette SU(3) Wilson integral Picard-Fuchs packet: finite-window annihilation through beta^196, finite-grid lower-order exclusion through degree 30, conditional BSS threshold arithmetic, and Frobenius data at beta=0.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-105914-fce04381f9-plaquette_v1_picard_fuchs_od`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-window depth-200 verification is converted into the all-order identity by applying the Bostan-Salvy-Schost threshold with the asserted all-degree D-finite bounds R = 3 and D = 2.  _(class `A`)_
+- **chain closes:** False — The restricted packet does not close the all-degree R=3,D=2 premise required by the Bostan-Salvy-Schost step. The runner source explicitly preserves this as an open blocker and downgrades T3 to a conditional arithmetic check.
+- **rationale:** The runner computes nontrivial exact finite-window checks, including Bessel-determinant coefficients, finite-grid ansatz ranks, the indicial polynomial, and recurrence regression. However, its own stdout and source state that it does not prove all-degree lower-order exclusion or all-order minimal-annihilator closure. The note’s stronger theorem depends on an external all-degree R=3,D=2 bound or equivalent bridge not supplied by the restricted packet.
+- **open / conditional deps cited:**
+  - `external: Brower-Nauenberg 1981 SU(N) Wilson character holonomic operator / all-degree R=3,D=2 bound`
 - **auditor confidence:** high
 
 ### `plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06`

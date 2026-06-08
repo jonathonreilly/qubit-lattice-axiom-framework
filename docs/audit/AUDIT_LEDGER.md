@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 748 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1305 |
+| unaudited | 1304 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 37 |
+| ~~audited_conditional~~ | 38 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1170 |
-| `audited_conditional` | 37 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1616 |
+| `unaudited` | 1615 |
 
 | claim_type | count |
 |---|---:|
@@ -1313,6 +1313,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_detr_default_full_exercise_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5843,6 +5844,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The restricted conclusion follows from explicit finite matrix identities and support checks in the packet. The note excludes the downstream Dirac-Kahler, generation, Koide, spin-statistics, and flavor-sector bridge claims, so no missing bridge is load-bearing for the narrowed theorem.
 - **rationale:** The runner source actually constructs the Pauli matrices, two-qubit tensor operators, Jordan-Wigner dressed ladders, finite Z2^3 hopping matrix, epsilon parity, and graph Laplacian rather than merely printing constants. An independent formula pass confirms the relevant signs and identities: sigma_+^2=0, bare cross-site ladders commute, the JW pair anticommutes, both generated algebras span dimension 16, c2=Z tensor sigma_- is not of form I tensor B, the Pauli anticommutator cancels cross terms in the supplied symbol square, nearest-neighbor hopping flips epsilon, and L=deg I-hop is symmetric/A2-local while neither commuting nor anticommuting with epsilon. There are no cited non-retained authorities or external comparator imports in the restricted packet. The audited result is bounded finite-algebra support only, not any excluded downstream physics bridge.
 - **auditor confidence:** high
+
+### `flavor_detr_default_full_exercise_note_2026-05-30`
+
+- **Note:** [`FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md`](../../docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-algebra locator for the det_C/equal-block versus det_R/dimension-count fork, with no default/reference-state or physical selector claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-112541-a0e97760c9-flavor_detr_default_full_exe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The tested native structures do not supply det_C/equal-block counting automatically; they only localize r=1/2 (Q=2/3) versus r=1 (Q=1) as an unranked counting fork.  _(class `A`)_
+- **chain closes:** False — The C3 commutator, rephasing quantization, real-character, Gamma_chi, and Q endpoint algebra checks close. The holomorphic-carrier exclusion as written also invokes the CPT sign J_b -> -J_b, but the restricted packet gives no definition, cited derivation, or runner assertion for that sign.
+- **rationale:** The supplied retained-grade authorities support the record-function endpoint algebra and the block-versus-dimension counting localization, and an independent algebra check confirms the displayed Q formula, endpoint ratios, C3 rephasing quantization, commutators, and anticommutator norm. The source note also correctly narrows away the beta=0/default/reference-state claim, so that older bridge is not load-bearing here. However the note's no-holomorphic-carrier sentence explicitly relies on the displayed CPT reflection J_b -> -J_b, which is not established inside the restricted packet and is not actually checked by the runner source. The scoped locator is therefore conditionally supported pending that finite-carrier bridge or a narrower wording that drops the unverified CPT sign.
+- **auditor confidence:** medium
 
 ### `flavor_doublet_metric_default_is_detr_2026-06-02`
 

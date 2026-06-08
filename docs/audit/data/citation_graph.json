@@ -46002,10 +46002,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03"
     },
     {
@@ -46027,6 +46023,10 @@
     {
       "from": "repo.front_door_status",
       "to": "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -88951,16 +88951,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
         "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03",
         "su3_bridge_pr525_flaw_fix_note_2026-05-05",
         "unification_basin_failure_note",
         "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
         "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08",
-        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08"
+        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
+        "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "053ce9063d747ae87fe15c762ebccf0da2a3ee288176e24232842c35b99c5eb6",
+      "note_hash": "24568216a0b906ae87bf84617bf1ee72261ab77260f6d2607d7cbb48d3021dc4",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

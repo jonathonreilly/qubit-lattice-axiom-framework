@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1381 |
-| Retained-grade rows, including boxed decorations | 1244 |
+| Applied audit verdicts | 1382 |
+| Retained-grade rows, including boxed decorations | 1245 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 221 |
-| Retained bounded rows | 764 |
+| Retained bounded rows | 765 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1313 |
+| Unaudited rows | 1312 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 39 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1315 |
-| Ready rows | 9 |
+| Total pending rows | 1314 |
+| Ready rows | 8 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
 | Medium pending | 365 |
-| Leaf pending | 373 |
+| Leaf pending | 372 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03`](../../docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md) - medium; unaudited
 - [`su3_bridge_pr525_flaw_fix_note_2026-05-05`](../../docs/SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md) - medium; unaudited
 - [`unification_basin_failure_note`](../../docs/UNIFICATION_BASIN_FAILURE_NOTE.md) - medium; unaudited
 - [`universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_INDUCED_GRAVITON_W_NATIVE_FINITE_K_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
-- [`universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
+- [`universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`wide_lattice_h2t_skeptic_audit_note`](../../docs/WIDE_LATTICE_H2T_SKEPTIC_AUDIT_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -88,11 +88,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1366 descendants; score 95.417
+- `minimal_axioms` - critical; 1365 descendants; score 95.416
 - `three_generation_observable_theorem_note` - critical; 750 descendants; score 61.053
 - `observable_principle_from_axiom_note` - critical; 843 descendants; score 58.221
-- `graph_first_su3_integration_note` - critical; 1263 descendants; score 50.804
+- `graph_first_su3_integration_note` - critical; 1262 descendants; score 50.803
 - `minimal_axioms_2026-05-03` - critical; 481 descendants; score 47.913
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1185 descendants; score 42.712
-- `key_terminology` - critical; 1001 descendants; score 40.969
+- `key_terminology` - critical; 1000 descendants; score 40.967
 - `anomaly_forces_time_theorem` - critical; 994 descendants; score 40.459

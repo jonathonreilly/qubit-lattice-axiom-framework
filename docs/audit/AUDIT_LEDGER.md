@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 221 |
-| **retained_bounded** | 764 |
+| **retained_bounded** | 765 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1313 |
+| unaudited | 1312 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1195 |
+| `audited_clean` | 1196 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1628 |
+| `unaudited` | 1627 |
 
 | claim_type | count |
 |---|---:|
@@ -100,16 +100,16 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1366 | 95.42 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1365 | 95.42 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 750 | 61.05 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 843 | 58.22 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1263 | 50.80 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1262 | 50.80 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 481 | 47.91 | `unaudited` | meta |
 | 6 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1185 | 42.71 | `audited_renaming` | ~~audited_renaming~~ |
-| 7 | `key_terminology` | meta | critical | 1001 | 40.97 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1000 | 40.97 | `unaudited` | meta |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 994 | 40.46 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 261 | 39.53 | `unaudited` | unaudited |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1232 | 38.77 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1231 | 38.77 | `audited_clean` | **retained** |
 | 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 589 | 38.70 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 793 | 38.63 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 681 | 38.41 | `audited_clean` | **retained_no_go** |
@@ -122,7 +122,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 689 | 32.43 | `unaudited` | unaudited |
 | 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1044 | 32.03 | `audited_conditional` | ~~audited_conditional~~ |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 687 | 31.43 | `unaudited` | unaudited |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 814 | 31.17 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 813 | 31.17 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 319 | 30.32 | `unaudited` | unaudited |
 | 25 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 270 | 29.58 | `unaudited` | unaudited |
 
@@ -1127,6 +1127,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -16770,6 +16771,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The edge-flip rule propagates a basepoint sign along paths, and coordinate-square evenness makes the path parity x_1+x_2+x_3 mod 2, so s(x)=s(0)(-1)^(x_1+x_2+x_3).  _(class `A`)_
 - **chain closes:** True — The controlling step is a graph-parity algebra identity on the nearest-neighbor Z^3 coordinate-edge graph, followed by direct Pauli matrix and diagonal-grading identities. The runner source performs actual finite rank, Pauli pseudoscalar, and edgewise anticommutation checks, and there are no cited open dependencies or external comparator values. The result is clean within the stated narrow bridge scope, but its derivation class is better classified as A than C because it is not a first-principles numerical compute producing a new framework number.
 - **rationale:** The controlling step is a graph-parity algebra identity on the nearest-neighbor Z^3 coordinate-edge graph, followed by direct Pauli matrix and diagonal-grading identities. The runner source performs actual finite rank, Pauli pseudoscalar, and edgewise anticommutation checks, and there are no cited open dependencies or external comparator values. The result is clean within the stated narrow bridge scope, but its derivation class is better classified as A than C because it is not a first-principles numerical compute producing a new framework number.
+- **auditor confidence:** high
+
+### `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03`
+
+- **Note:** [`STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md`](../../docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded sign/phase surface: the chirality-parity bridge supplies the staggered chirality sign field, yielding the nearest-neighbor sign reversal and the displayed 3D Kawamoto-Smit eta phase identities, without claiming the full staggered-Dirac realization, Grassmann/CAR forcing, kinetic-operator selection, or species labels.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-211606-81137b12f8-staggered_dirac_kawamoto_smi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Combining the bridge-derived edge-flip sign field epsilon(x)=(-1)^(x_1+x_2+x_3) with the A1 central pseudoscalar omega_global=sigma_1 sigma_2 sigma_3=iI gives omega(x)=epsilon(x) omega_global.  _(class `A`)_
+- **chain closes:** True — The cited bridge is retained_bounded and proves the unique scalar edge-flip grading on the Z^3 coordinate graph; multiplying by the central Pauli pseudoscalar is an algebraic closure, and the edgewise -1 ratio gives the stated chirality sign reversal. The eta checks are displayed Kawamoto-Smit phase definitions and gauge-cancellation consistency checks, not a derivation of the full kinetic operator.
+- **rationale:** Independent parity-path reasoning confirms that any scalar sign field flipping across every coordinate edge is s(0)(-1)^(x_1+x_2+x_3), and Pauli multiplication gives sigma_1 sigma_2 sigma_3=iI. Since iI is central, omega(x) gamma_mu omega(x+e_mu)^(-1) has the scalar ratio epsilon(x)/epsilon(x+e_mu)=-1, so the bounded chirality relation follows from the retained bridge without an extra H_staggered_chirality premise. The runner's finite GF(2) rank checks support the same edge-flip uniqueness on sample boxes, while its eta checks are algebraic/definitional and do not overclaim beyond the note's bounded scope.
 - **auditor confidence:** high
 
 ### `staggered_dirac_realization_gate_note_2026-05-03`

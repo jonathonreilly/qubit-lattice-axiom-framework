@@ -1,9 +1,9 @@
 # Post-Record Selector/Tangent Readout Weight Prototype
 
 **Date:** 2026-06-06
-**Type:** exact support / supplied selector-tangent-readout weight prototype
-**Claim type:** methodology / supplied-support
-**Status:** exact-support branch-local for supplied finite
+**Type:** open_gate / supplied selector-tangent-readout weight prototype
+**Claim type:** open_gate
+**Status:** bounded-support packet for supplied finite
 selector/tangent/readout weights; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
@@ -43,6 +43,13 @@ does not assert that Record derives those structures, does not turn the
 prototype into selector authority, and does not claim a positive theorem beyond
 the supplied finite packet.
 
+The carrier, readout weights/readout map, metric, and Hessian are not accepted
+framework primitives in this note. They are supplied finite packet data. The
+strongest current-surface reading is therefore bounded supplied-support, not
+`retained`, not a positive theorem over the framework baseline, and not
+selector/tangent/readout authority. In short: not selector/tangent/readout
+authority.
+
 ## Meaning
 
 The prototype can certify finite tangent/readout weights, positive supplied
@@ -54,14 +61,14 @@ physical measure.
 ## Status certificate
 
 ```yaml
-actual_current_surface_status: exact-support
-trace_class: upstream_support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
 reachability_to_target: supports
 conditional_surface_status: "selector/tangent/readout rows get finite supplied weight semantics; selector authority remains open"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "This branch supplies finite readout/tangent weight semantics and does not derive selector authority."
+proposal_allowed_reason: "This packet supplies finite readout/tangent weight semantics and does not derive selector authority."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```

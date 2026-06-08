@@ -57,9 +57,10 @@ def read_rel(path: str) -> str:
 
 def require_text(path: str, needles: list[str]) -> None:
     text = read_rel(path)
-    report(f"{path} exists", True)
+    flat = " ".join(text.split())
+    report(f"{path} exists", (ROOT / path).exists())
     for needle in needles:
-        report(f"{path} contains: {needle}", needle in text)
+        report(f"{path} contains: {needle}", needle in text or needle in flat)
 
 
 def digest(path: Path) -> str:
@@ -96,10 +97,15 @@ def source_anchor_checks() -> None:
         "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
         [
             "selector_tangent_readout_weight",
-            "Claim type:** methodology / supplied-support",
+            "Type:** open_gate",
+            "Claim type:** open_gate",
+            "bounded-support packet",
             "2026-06-08 supplied-support safe-narrow",
             "supplied-support",
             "finite readout/tangent weight certificate",
+            "not a positive theorem over the framework baseline",
+            "not selector/tangent/readout authority",
+            "They are supplied finite packet data.",
             "Does not derive a selector, tangent metric, Hessian",
             "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
         ],
@@ -155,8 +161,16 @@ def certificate_checks() -> None:
     report("quadratic tangent norm is exact", quadratic(metric, (Fraction(1), Fraction(1, 2))) == Fraction(9, 2))
     projection = normalize({"ground": Fraction(1), "excited": Fraction(15)})
     report("projection/readout weights normalize", projection == {"ground": Fraction(1, 16), "excited": Fraction(15, 16)}, str(projection))
-    report("weight certificate without selector stays blocked", selector_authority(True, False) == "blocked_missing_selector")
-    report("selector rule is still needed", selector_authority(True, True) == "conditional_selector_ready")
+    has_weight_certificate = bool(weights)
+    has_selector_rule = False
+    report(
+        "weight certificate without selector stays blocked",
+        selector_authority(has_weight_certificate, has_selector_rule) == "blocked_missing_selector",
+    )
+    report(
+        "selector rule is still needed",
+        selector_authority(has_weight_certificate, not has_selector_rule) == "conditional_selector_ready",
+    )
     try:
         normalize({"bad": Fraction(-1)})
         negative_rejected = False
@@ -192,8 +206,8 @@ def row_checks() -> list[dict]:
     for row in rows:
         print(
             "  "
-            + f"{row.get('claim_id')} | {row.get('audit_status')} | "
-            + f"{row.get('effective_status')} | {row.get('claim_type')} | "
+            + f"{row.get('claim_id')} | "
+            + f"effective {row.get('effective_status')} | {row.get('claim_type')} | "
             + f"{row.get('note_path')}"
         )
     return rows

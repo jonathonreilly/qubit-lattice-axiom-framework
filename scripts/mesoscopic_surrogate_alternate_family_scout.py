@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""Cheap alternate-family scout for the mesoscopic surrogate lane.
+"""Alternate-family planning scout for the mesoscopic surrogate lane.
 
 This is intentionally not a heavy numerical sweep. It reads the already frozen
-notes for the mesoscopic-surrogate lane and answers one narrow question:
+notes for the mesoscopic-surrogate lane and records one narrow planning context:
 
-    Which already-bounded non-Gate-B family is the cheapest plausible next
-    target for a more localized source object?
+    Which already-bounded non-Gate-B family remains a non-load-bearing
+    planning candidate for a more localized source object?
 
 The scout is looking for a family where localization might matter more than on
 the retained 3D h=0.5 family, without re-running a large parameter sweep.
 
-The answer is purely a bounded recommendation, not a new physics claim.
+The answer is a planning recommendation, not an objective ranking theorem or a
+new physics claim.
 """
 
 from __future__ import annotations
@@ -20,6 +21,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
+PASS = 0
+FAIL = 0
 
 
 @dataclass(frozen=True)
@@ -36,6 +39,18 @@ def read_text(rel_path: str) -> str:
 
 def has_all(text: str, needles: tuple[str, ...]) -> bool:
     return all(needle in text for needle in needles)
+
+
+def report(label: str, ok: bool, detail: str = "") -> None:
+    global PASS, FAIL
+    if ok:
+        PASS += 1
+        tag = "PASS"
+    else:
+        FAIL += 1
+        tag = "FAIL"
+    suffix = f" :: {detail}" if detail else ""
+    print(f"{tag} {label}{suffix}")
 
 
 def main() -> None:
@@ -61,24 +76,23 @@ def main() -> None:
         ),
         FamilyRead(
             name="Retained 3D h=0.25 ordered-lattice family",
-            status="recommended",
+            status="planning_candidate",
             why=(
                 "The same-family 3D closure and asymptotic bridge are already frozen at h=0.25, "
                 "with stronger near-Newtonian behavior and a cleaner retained continuum read than h=0.5."
             ),
             next_step=(
-                "If we try a more localized source object at all, this is the cheapest bounded family that "
-                "still plausibly has room for localization to matter: use non-degenerate shapes with an explicit "
-                "support/capture floor."
+                "If we try a more localized source object at all, this bounded family remains a planning "
+                "candidate: use non-degenerate shapes with an explicit support/capture floor."
             ),
         ),
     ]
 
     print("=" * 92)
     print("MESOSCOPIC SURROGATE ALTERNATE-FAMILY SCOUT")
-    print("  Purpose: identify the cheapest already-bounded non-Gate-B family where")
-    print("           a more localized source object might plausibly matter more than")
-    print("           on the retained 3D h=0.5 family.")
+    print("  Purpose: verify frozen negative-evidence markers and record the")
+    print("           non-load-bearing planning candidate for any later localized")
+    print("           source-object attempt.")
     print("=" * 92)
     print()
     print("Frozen evidence check")
@@ -88,16 +102,16 @@ def main() -> None:
     print(f"  3D h=0.25 asymptotic bridge present? {'yes' if 'z>=5: -1.00' in asymptotic else 'no'}")
     print(f"  Persistent-mass readiness still open? {'yes' if 'not yet' in readiness else 'no'}")
     print()
-    print("Candidate ranking")
+    print("Planning ordering (non-load-bearing)")
     for idx, fam in enumerate(families, 1):
         print(f"{idx}. {fam.name} [{fam.status}]")
         print(f"   why: {fam.why}")
         print(f"   next: {fam.next_step}")
     print()
-    print("Recommendation")
+    print("Planning recommendation")
     print(
-        "  The cheapest already-bounded family worth one more localization attempt is the retained "
-        "3D h=0.25 ordered-lattice family. The retained 3D h=0.5 family is already closed as a "
+        "  The already-bounded family worth one more planning attempt is the retained 3D h=0.25 "
+        "ordered-lattice family. The retained 3D h=0.5 family is already closed as a "
         "degenerate-point-source frontier, and the 2D family is closed as 'no sharp threshold'."
     )
     print(
@@ -119,6 +133,22 @@ def main() -> None:
     print(
         "  - 3D h=0.25 ordered-lattice family: already has same-family closure and the strongest retained asymptotic bridge."
     )
+    print()
+    print("Scope scorecard")
+    note = read_text("docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md")
+    note_flat = " ".join(note.split())
+    report("source note is a meta/support planning index", "meta/support planning index" in note)
+    report("source note says no theorem-grade target selection", "must not be used as theorem-grade target-selection authority" in note_flat)
+    report("source note marks priority as editorial judgment", "editorial judgment" in note)
+    report("source note marks planning input as non-load-bearing", "non-load-bearing planning input" in note)
+    report(
+        "runner output has non-load-bearing planning label",
+        any(fam.status == "planning_candidate" for fam in families)
+        and "non-load-bearing planning input" in note,
+    )
+    print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
+    if FAIL:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

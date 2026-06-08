@@ -45998,7 +45998,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06"
+      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
@@ -88950,7 +88950,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
         "fifth_family_radial_boundary_note",
@@ -88960,7 +88960,7 @@
         "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ae75bdbda417a99af126c7c6f6ec5fbb39534f75439c4975f8d518b6ac6a08a4",
+      "note_hash": "e63288a4a77d41e0fa62bb1daed515610f6b5f66adb064fcd508f3ba0eb01662",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

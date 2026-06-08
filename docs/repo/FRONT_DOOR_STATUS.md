@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 746 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
-| Unaudited rows | 1355 |
+| Unaudited rows | 1354 |
 | Retained-pending-chain rows | 11 |
 | Audited conditional rows | 24 |
 | Audited renaming rows | 35 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`axiom_first_lattice_noether_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
+- [`axiom_first_lattice_noether_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) - critical; audit_in_progress
 - [`plaquette_v1_picard_fuchs_ode_note_2026-05-05`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) - critical; unaudited
 - [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - critical; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
@@ -88,7 +88,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1365 descendants; score 95.416
+- `minimal_axioms` - critical; 1366 descendants; score 95.417
 - `three_generation_observable_theorem_note` - critical; 750 descendants; score 61.053
 - `observable_principle_from_axiom_note` - critical; 843 descendants; score 58.221
 - `graph_first_su3_integration_note` - critical; 1262 descendants; score 50.803

@@ -46022,11 +46022,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30"
+      "to": "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
+      "to": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -88956,11 +88956,11 @@
         "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
         "lensing_finite_path_explanation_note",
         "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
-        "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
-        "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
+        "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05",
+        "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "19e185444d559a83bc1580a9655448915d5271fc2b9f311a8f86556e269f70f0",
+      "note_hash": "2dd60584a1420c20f674c5135f6d5d941ac3db50a596680fa232a85becd78b68",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

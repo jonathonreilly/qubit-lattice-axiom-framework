@@ -19,8 +19,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 95.416,
-      "transitive_descendants": 1365
+      "load_bearing_score": 95.417,
+      "transitive_descendants": 1366
     },
     {
       "claim_id": "three_generation_observable_theorem_note",

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py
+runner_sha256: 5d76aecb86c966ec587805e761813f3a8c8fa3b32a5cb8c64bad37f8dd6e865d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
 [PASS] S1 note links companion free-Dirac Poincare representation note
        companion note path is explicit in the restricted source packet
 [PASS] S2 note links companion free-Dirac Poincare runner
@@ -46,3 +54,6 @@ OUTPUT_JSON=outputs/free_dirac_poincare_generators_selfadjointness_2026_05_30.js
 SCORECARD PASS=21 FAIL=0
 VERDICT: the old Nelson/Gaussian route is rejected; the repaired route
 uses the explicit unitary mass-shell action and one-parameter Stone/self-adjointness checks.
+
+----- stderr -----
+

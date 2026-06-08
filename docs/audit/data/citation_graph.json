@@ -46002,10 +46002,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "packet_memory_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17"
     },
     {
@@ -46027,6 +46023,10 @@
     {
       "from": "repo.front_door_status",
       "to": "unification_basin_failure_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -88951,16 +88951,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "packet_memory_note",
         "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
         "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
         "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
         "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03",
         "su3_bridge_pr525_flaw_fix_note_2026-05-05",
-        "unification_basin_failure_note"
+        "unification_basin_failure_note",
+        "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e57ab4b7fd7a78a526f679e265312a828d575d24147fda5192e4bc2d893050ec",
+      "note_hash": "a4de667c83a48811438d7463c761314e7736eae09047745586c96000cea5cfb0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

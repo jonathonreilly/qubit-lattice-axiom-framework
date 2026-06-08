@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-Local Wilson obstruction to first-symmetric retained positive-cone closure on
-the named three-sample plaquette PF seam.
+Local Wilson obstruction to first-symmetric finite-packet positive-cone
+closure on the named three-sample plaquette PF seam.
 """
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import numpy as np
@@ -14,6 +15,7 @@ from scipy.special import iv
 
 
 ROOT = Path(__file__).resolve().parents[1]
+LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 THEOREM_PASS = 0
 SUPPORT_PASS = 0
@@ -41,6 +43,34 @@ def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM")
 
 def read(rel_path: str) -> str:
     return (ROOT / rel_path).read_text()
+
+
+def source_statuses_clean() -> tuple[bool, str]:
+    rows = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+    required = {
+        "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": (
+            "audited_clean",
+            "retained_bounded",
+        ),
+        "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": (
+            "audited_clean",
+            "retained_bounded",
+        ),
+        "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17": (
+            "audited_clean",
+            "retained",
+        ),
+    }
+    got = {
+        claim_id: (
+            rows.get(claim_id, {}).get("audit_status"),
+            rows.get(claim_id, {}).get("effective_status"),
+        )
+        for claim_id in required
+    }
+    ok = all(got[claim_id] == expected for claim_id, expected in required.items())
+    detail = "; ".join(f"{claim_id}={status}" for claim_id, status in got.items())
+    return ok, detail
 
 
 def radical_entries() -> dict[str, sp.Expr]:
@@ -119,6 +149,17 @@ def main() -> int:
     f_mat = sample_matrix(entries)
     f_inv = sp.simplify(f_mat.inv())
     det_abs = abs(float(sp.N(f_mat.det(), 50)))
+    inverse_gap = max_abs_complex(sp.N(f_inv * f_mat - sp.eye(3), 100))
+    cone_signs_ok = (
+        float(sp.N(entries["a"], 50)) < 0.0
+        and float(sp.N(entries["b"], 50)) > 0.0
+        and float(sp.N(entries["c"], 50)) > 0.0
+        and float(sp.N(entries["d"], 50)) > 0.0
+        and float(sp.N(entries["e"], 50)) < 0.0
+    )
+    order_coeff_ba = float(sp.N(entries["b"] - entries["a"], 50))
+    order_coeff_c = float(sp.N(entries["c"], 50))
+    status_ok, status_detail = source_statuses_clean()
 
     z_1plaq, max_mode = su3_partition_sum(BETA)
     z_loc = sp.Matrix(
@@ -137,7 +178,7 @@ def main() -> int:
     repair = -coeff_vals[2]
 
     print("=" * 112)
-    print("GAUGE-VACUUM PLAQUETTE FIRST THREE-SAMPLE LOCAL WILSON RETAINED POSITIVE-CONE OBSTRUCTION")
+    print("GAUGE-VACUUM PLAQUETTE FIRST THREE-SAMPLE LOCAL WILSON FINITE-PACKET CONE OBSTRUCTION")
     print("=" * 112)
     print()
     print("Exact first-symmetric radical sample matrix F")
@@ -149,7 +190,7 @@ def main() -> int:
     print(f"  Z_loc(W_C)                                = {sample_vals[2]:.15f}")
     print(f"  Z_(1plaq)(6)                              = {z_1plaq:.15f}   (mode cutoff m = {max_mode})")
     print()
-    print("Exact reconstructed first-symmetric retained coordinates a_loc = F^(-1) Z_loc")
+    print("Exact reconstructed first-symmetric finite-sector coordinates a_loc = F^(-1) Z_loc")
     print(f"  a_loc_(0,0)                               = {coeff_vals[0]:.15f}")
     print(f"  a_loc_(1,0)                               = {coeff_vals[1]:.15f}")
     print(f"  a_loc_(1,1)                               = {coeff_vals[2]:.15f}")
@@ -166,8 +207,12 @@ def main() -> int:
         bucket="SUPPORT",
     )
     check(
-        "Positive-cone note already fixes cone membership as the exact half-space test F^(-1) Z >= 0",
-        "F^(-1) Z >= 0" in cone_note and "positive cone" in cone_note,
+        "Positive-cone note is bounded to a finite-packet cone theorem and does not identify the actual Wilson environment",
+        "bounded finite-packet positive-cone theorem" in cone_note
+        and "does **not** identify the supplied triple" in cone_note
+        and "negative reconstructed adjoint" in cone_note
+        and status_ok,
+        detail=status_detail,
         bucket="SUPPORT",
     )
     check(
@@ -200,31 +245,40 @@ def main() -> int:
     )
 
     check(
-        "The exact local Wilson sample triple reconstructs uniquely through the radical map",
-        rec_gap < 1.0e-75 and det_abs > 1.0,
-        detail=f"max |F a_loc - Z_loc|={rec_gap:.3e}, |det(F)|={det_abs:.12f}",
+        "The exact radical map is invertible, sign-separated, and reconstructs the local sample triple uniquely",
+        rec_gap < 1.0e-75 and inverse_gap < 1.0e-90 and det_abs > 1.0 and cone_signs_ok,
+        detail=(
+            f"max |F a_loc - Z_loc|={rec_gap:.3e}, "
+            f"||F^(-1)F-I||={inverse_gap:.3e}, |det(F)|={det_abs:.12f}"
+        ),
     )
     check(
-        "The reconstructed local retained coordinates have a strictly negative adjoint component",
+        "The reconstructed local finite-sector coordinates have a strictly negative adjoint component",
         coeff_vals[0] > 1.0e-12 and coeff_vals[1] > 1.0e-12 and coeff_vals[2] < -1.0e-12,
         detail=(
             f"a_loc=( {coeff_vals[0]:.15f}, {coeff_vals[1]:.15f}, {coeff_vals[2]:.15f} )"
         ),
     )
     check(
-        "Therefore the exact local Wilson triple lies outside the first-symmetric retained positive cone",
+        "Therefore the exact local Wilson triple lies outside the first-symmetric finite-packet positive cone",
         coeff_vals[2] < -1.0e-12,
-        detail="cone membership would require all three reconstructed retained coordinates to be nonnegative",
+        detail="cone membership would require all three reconstructed finite-sector coordinates to be nonnegative",
     )
     check(
-        "The obstruction is sharper than the coarse order witness: Z_loc(W_B) > Z_loc(W_A) still holds while the cone test fails",
-        order_gap > 1.0e-12 and coeff_vals[2] < -1.0e-12,
-        detail=f"order gap={order_gap:.15f}, failing coordinate a_loc_(1,1)={coeff_vals[2]:.15f}",
+        "The obstruction is sharper than the bounded order witness: Z_loc(W_B) > Z_loc(W_A) still holds while the cone test fails",
+        order_gap > 1.0e-12
+        and coeff_vals[2] < -1.0e-12
+        and order_coeff_ba > 1.0e-12
+        and order_coeff_c > 1.0e-12,
+        detail=(
+            f"order gap={order_gap:.15f}, b-a={order_coeff_ba:.15f}, "
+            f"c={order_coeff_c:.15f}, failing coordinate a_loc_(1,1)={coeff_vals[2]:.15f}"
+        ),
     )
     check(
-        "Any first-symmetric retained positive-type repair needs a positive adjoint-channel correction of at least -a_loc_(1,1)",
+        "Any first-symmetric finite-packet positive-type repair needs a positive adjoint-channel correction of at least -a_loc_(1,1)",
         repair > 1.0e-12,
-        detail=f"minimal retained-channel repair in the adjoint coordinate={repair:.15f}",
+        detail=f"minimal finite-channel repair in the adjoint coordinate={repair:.15f}",
     )
 
     print()

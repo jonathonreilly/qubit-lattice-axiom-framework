@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py
-runner_sha256: 2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d
+runner_sha256: fc36cc1f7a9f5011dcd28cfe0bea0e0710090b8eb8328b9bfdf8e63b998ed56f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 8.86
+elapsed_sec: 7.12
 status: ok
 ----- stdout -----
 ================================================================================================================
-GAUGE-VACUUM PLAQUETTE FIRST THREE-SAMPLE LOCAL WILSON RETAINED POSITIVE-CONE OBSTRUCTION
+GAUGE-VACUUM PLAQUETTE FIRST THREE-SAMPLE LOCAL WILSON FINITE-PACKET CONE OBSTRUCTION
 ================================================================================================================
 
 Exact first-symmetric radical sample matrix F
@@ -19,7 +19,7 @@ Exact normalized local Wilson one-plaquette sample triple
   Z_loc(W_C)                                = 0.581213946674634
   Z_(1plaq)(6)                              = 3.441440354987778   (mode cutoff m = 8)
 
-Exact reconstructed first-symmetric retained coordinates a_loc = F^(-1) Z_loc
+Exact reconstructed first-symmetric finite-sector coordinates a_loc = F^(-1) Z_loc
   a_loc_(0,0)                               = 0.349606952458405
   a_loc_(1,0)                               = 0.093393849310838
   a_loc_(1,1)                               = -0.031909612770024
@@ -29,21 +29,22 @@ Exact reconstructed first-symmetric retained coordinates a_loc = F^(-1) Z_loc
   minimal adjoint-channel repair            = 0.031909612770024
 
   [PASS] [SUPPORT] Exact radical-map note already fixes the first-symmetric three-sample matrix and inverse reconstruction law
-  [PASS] [SUPPORT] Positive-cone note already fixes cone membership as the exact half-space test F^(-1) Z >= 0
+  [PASS] [SUPPORT] Positive-cone note is bounded to a finite-packet cone theorem and does not identify the actual Wilson environment
+         gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17=('audited_clean', 'retained_bounded'); gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note=('audited_clean', 'retained_bounded'); gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17=('audited_clean', 'retained')
   [PASS] [SUPPORT] Local Wilson partial-evaluation note already fixes the exact normalized local one-plaquette sample triple
   [PASS] [SUPPORT] Full-slice rim-lift note still records that explicit B_6(W) remains open, so any fix must come from the nonlocal completion side
   [PASS] [THEOREM] The Bessel-determinant one-plaquette partition normalization reproduces the displayed local sample triple
          Z_(1plaq)(6)=3.441440354987778, mode cutoff=8, max displayed-sample error=5.551e-16
-  [PASS] [THEOREM] The exact local Wilson sample triple reconstructs uniquely through the radical map
-         max |F a_loc - Z_loc|=1.435e-82, |det(F)|=10.810321693971
-  [PASS] [THEOREM] The reconstructed local retained coordinates have a strictly negative adjoint component
+  [PASS] [THEOREM] The exact radical map is invertible, sign-separated, and reconstructs the local sample triple uniquely
+         max |F a_loc - Z_loc|=1.435e-82, ||F^(-1)F-I||=9.734e-209, |det(F)|=10.810321693971
+  [PASS] [THEOREM] The reconstructed local finite-sector coordinates have a strictly negative adjoint component
          a_loc=( 0.349606952458405, 0.093393849310838, -0.031909612770024 )
-  [PASS] [THEOREM] Therefore the exact local Wilson triple lies outside the first-symmetric retained positive cone
-         cone membership would require all three reconstructed retained coordinates to be nonnegative
-  [PASS] [THEOREM] The obstruction is sharper than the coarse order witness: Z_loc(W_B) > Z_loc(W_A) still holds while the cone test fails
-         order gap=0.181857215938493, failing coordinate a_loc_(1,1)=-0.031909612770024
-  [PASS] [THEOREM] Any first-symmetric retained positive-type repair needs a positive adjoint-channel correction of at least -a_loc_(1,1)
-         minimal retained-channel repair in the adjoint coordinate=0.031909612770024
+  [PASS] [THEOREM] Therefore the exact local Wilson triple lies outside the first-symmetric finite-packet positive cone
+         cone membership would require all three reconstructed finite-sector coordinates to be nonnegative
+  [PASS] [THEOREM] The obstruction is sharper than the bounded order witness: Z_loc(W_B) > Z_loc(W_A) still holds while the cone test fails
+         order gap=0.181857215938493, b-a=2.557423237285636, c=1.785994236888177, failing coordinate a_loc_(1,1)=-0.031909612770024
+  [PASS] [THEOREM] Any first-symmetric finite-packet positive-type repair needs a positive adjoint-channel correction of at least -a_loc_(1,1)
+         minimal finite-channel repair in the adjoint coordinate=0.031909612770024
 
 THEOREM PASS=6 SUPPORT=4 FAIL=0
 

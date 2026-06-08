@@ -1,0 +1,12 @@
+# Review History
+
+Pending review-loop extraction.
+
+Local verification:
+
+```text
+python3 -m py_compile scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py
+python3 scripts/cached_runner_output.py --check-only scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py
+python3 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py
+THEOREM PASS=6 SUPPORT=4 FAIL=0
+```

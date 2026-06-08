@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 758 |
+| **retained_bounded** | 759 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1333 |
+| unaudited | 1332 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1186 |
+| `audited_clean` | 1187 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1648 |
+| `unaudited` | 1647 |
 
 | claim_type | count |
 |---|---:|
@@ -795,6 +795,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11513,6 +11514,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note extends register-not-read to the temporal readout scale and asserts that the bare magnitude exponent is registered at the discrete minimal block, count 2, while using the OS-continuum count is the realist slip.  _(class `F`)_
 - **chain closes:** False — The minimal-block arithmetic and 8 x 2 = 16 count check out within the packet, but the selecting bridge from register-not-read to this temporal readout scale is asserted rather than derived. The source note's correction explicitly demotes that selection as flagged-open.
 - **rationale:** The runner verifies finite arithmetic around eta_1(t)=(-1)^t, Lt=2, and 8 x 2 = 16, but it hard-codes the retained single-step nonpositivity and the principle-extension step. It does not compute or derive the load-bearing readout-scale selection. The restricted packet supplies no closed authority or bridge theorem that licenses applying register-not-read to choose the minimal block over the OS continuum, and the source note itself says that selection is demoted and open.
+- **auditor confidence:** high
+
+### `magnitude_temporal_factor_is_count_not_rate_2026-06-06`
+
+- **Note:** [`MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md`](../../docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded boundary claim that the temporal factor 2 in the magnitude exponent is a transfer-step/mode cardinality in the count-supported zone of the retained clock-rate no-go, not a clock-rate or time-metric derivation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-200917-7bb1872596-magnitude_temporal_factor_is`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The staggered-determinant exponent 8 L_t is the matrix dimension/number of modes, independent of u_0, and at the minimal reflection-positive block L_t = 2 gives the count 8 x 2 = 16 rather than a clock rate.  _(class `A`)_
+- **chain closes:** True — The cited inputs supply the count/rate boundary, the 8 L_t determinant-mode count, and the minimal positive two-step transfer block; the conclusion is the algebraic closure 8 x 2 = 16 as a cardinality. The UV/per-record readout selector and per-mode magnitude value remain explicitly outside this scoped claim.
+- **rationale:** The load-bearing step is not a definition substitution: the packet distinguishes matrix cardinality from eigenvalue/rate dependence, and the cited no-go explicitly permits count-only uses while forbidding rate/metric derivations. Independent algebra checks the factors: spatial count 2^3 = 8, minimal retained two-step temporal block gives L_t = 2, and OS normalization rescales eigenvalues without changing their number. No PDG comparator, tuned scale, or fitted numerical input is used in the audited boundary claim.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

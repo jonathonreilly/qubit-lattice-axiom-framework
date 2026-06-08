@@ -21,7 +21,7 @@ open_imports:
   - no family-wide radial-shell theorem
   - no continuum or physical mass-observable bridge
 trace_gate_classification: direct_blocker_closure
-review_findings: pending
-pr_status: pending
-next_exact_action: commit, push, and open review PR
-stop_condition: PR opened and remaining backlog rescanned
+review_findings: pending reviewer extraction
+pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3280
+next_exact_action: reviewer extraction and independent audit decision
+stop_condition: PR opened; remaining backlog can be rescanned from main

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1315 |
+| unaudited | 1314 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 43 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1175 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1628 |
+| `unaudited` | 1627 |
 
 | claim_type | count |
 |---|---:|
@@ -1338,6 +1338,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `p3_coupling_is_retention_eligible_composition_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `packet_memory_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -12837,6 +12838,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The substitution tadpole-improves the native Coulomb coupling alpha_bare by the native mean-field link u_0 to obtain alpha_LM, with the remaining step that the determinant-to-v map selects physical alpha_LM rather than the bare u_0 or alpha_bare.  _(class `B`)_
 - **chain closes:** False — The algebra alpha_LM=alpha_bare/u_0 and alpha_LM^2=alpha_bare*alpha_s is internally consistent, but the packet supplies no one-hop authorities establishing the retained/native status of alpha_bare, u_0, the tadpole vertex power, or the geometric-mean identity. The physical-vs-bare coupling selection is explicitly left as an open register-not-read bridge.
 - **rationale:** The runner validates only internal algebra and status strings; it does not verify the cited retained rows or ledger statuses. Its numerical check hard-codes alpha_LM=0.09071 and solves u_0 from that value, so the matched-coupling numerics are not an independent derivation of the mean-field link. Section D is a string-level assertion of register-not-read, while the source note itself flags that physical-vs-bare selection as open. With no cited authorities supplied in the restricted packet, the claimed retention-eligible composition cannot be audited cleanly.
+- **auditor confidence:** high
+
+### `packet_memory_note`
+
+- **Note:** [`PACKET_MEMORY_NOTE.md`](../../docs/PACKET_MEMORY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite deterministic scripts/packet_memory.py harness at fixed seed/parameters, covering the listed offsets, NL values, detector widths, centroids, and imposed-field delta_z values.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-160230-7b27cfc452-packet_memory_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite runner shows detector overlaps for separated packets and packet-dependent imposed-field deflections, so detector-readable packet memory carries physical content.  _(class `C`)_
+- **chain closes:** False — The runner computes the displayed finite quantities rather than printing constants, and the derived arithmetic is consistent. The missing step is a retained bridge deriving grow/_prop/_imposed_field, detector normalization, the overlap-to-decoherence readout, and the gravity interpretation from approved primitives.
+- **rationale:** The source and runner agree on the finite table values, and independent arithmetic checks are consistent: 1 - 0.4210 is about 58%, 0.029612 / 0.008522 is about 3.48, and the narrow-vs-medium width residual is about 17%. However, the restricted packet contains no derivation of the growth rule, propagation kernel, imposed-field coupling, detector normalization, or physical gravity readout from retained framework primitives. The note itself states those bridges remain open, so the result is bounded finite-runner support rather than a closed framework theorem.
 - **auditor confidence:** high
 
 ### `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02`

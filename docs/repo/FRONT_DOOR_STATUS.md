@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3015 |
-| Applied audit verdicts | 1385 |
+| Applied audit verdicts | 1384 |
 | Retained-grade rows, including boxed decorations | 1248 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 221 |
 | Retained bounded rows | 768 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1313 |
+| Unaudited rows | 1314 |
 | Retained-pending-chain rows | 12 |
-| Audited conditional rows | 39 |
+| Audited conditional rows | 38 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,17 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1315 |
-| Ready rows | 6 |
+| Total pending rows | 1316 |
+| Ready rows | 7 |
 | Cycle-break targets | 15 |
 | Critical pending | 328 |
 | High pending | 250 |
-| Medium pending | 363 |
+| Medium pending | 364 |
 | Leaf pending | 374 |
 
 Next ready rows by queue order:
 
 - [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - critical; unaudited
+- [`dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
 - [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
 - [`flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
 - [`framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30`](../../docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md) - medium; unaudited
@@ -86,7 +87,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1366 descendants; score 95.917
+- `minimal_axioms` - critical; 1365 descendants; score 95.916
 - `three_generation_observable_theorem_note` - critical; 750 descendants; score 61.053
 - `observable_principle_from_axiom_note` - critical; 843 descendants; score 58.221
 - `graph_first_su3_integration_note` - critical; 1263 descendants; score 50.804

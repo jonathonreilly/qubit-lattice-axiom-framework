@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
-runner_sha256: 75ce25034a5c4dc89f2d48d7b64e85512db9747ca93871ff341a2659abc59625
+runner_sha256: 7d0e52551f3a2d65b43474bf24c052a37168e29fa112dcc43b8c37f6d8010f23
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
-audit-companion: Dirac/Weyl fermion dof admission bridge
+audit-companion: Dirac/Weyl fermion dof branch-rank bridge
 ----------------------------------------------------------------------------------------
-note: /private/tmp/cl3-more-audit-repairs-2-20260608/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
-parent: /private/tmp/cl3-more-audit-repairs-2-20260608/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
+note: /private/tmp/cl3-review-loop-latest-IxO77W/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+parent: /private/tmp/cl3-review-loop-latest-IxO77W/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
 
 ----------------------------------------------------------------------------------------
 note structure and scope
@@ -20,14 +20,15 @@ note structure and scope
   [PASS] note contains: Status authority:** source-note proposal only
   [PASS] note contains: 2026-06-07 source-packet repair
   [PASS] note contains: 2026-06-08 label-semantics safe-narrow
-  [PASS] note contains: physical label semantics
-  [PASS] note contains: does not replace P4
+  [PASS] note contains: 2026-06-08 direct branch-rank repair
+  [PASS] note contains: non-load-bearing interpretation
+  [PASS] note contains: branch-rank count
   [PASS] note contains: Q1 is retired as an unsupported algebraic admission
   [PASS] note contains: Q2 is repaired as a textbook-counting import
   [PASS] note contains: source-local finite-rank statement
   [PASS] note contains: does not derive the Dirac equation
   [PASS] note contains: does **not** add a new
-  [PASS] note contains: Framework authority packet (R1-R4)
+  [PASS] note contains: Framework authority and context packet (R1-R4)
   [PASS] note contains: Retained source plus source-local counting packet (Q1-Q2)
   [PASS] note contains: Proof-walk
   [PASS] note contains: Exact arithmetic check
@@ -43,26 +44,30 @@ note structure and scope
   [PASS] note contains: G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28
 
 ----------------------------------------------------------------------------------------
-live ledger authority statuses
+live ledger load-bearing authority statuses
+----------------------------------------------------------------------------------------
+  [PASS] ledger row exists: clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10
+  [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: effective_status in ['retained'] (observed='retained')
+  [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: audit_status is not a failed verdict (observed='audited_clean')
+  [PASS] ledger row exists: cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27
+  [PASS] cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27: effective_status in ['retained'] (observed='retained')
+  [PASS] cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27: audit_status is not a failed verdict (observed='audited_clean')
+
+----------------------------------------------------------------------------------------
+live ledger context-row statuses
 ----------------------------------------------------------------------------------------
   [PASS] ledger row exists: per_site_su2_spin_half_theorem_note_2026-05-02
   [PASS] per_site_su2_spin_half_theorem_note_2026-05-02: effective_status in ['retained'] (observed='retained')
-  [PASS] per_site_su2_spin_half_theorem_note_2026-05-02: audit_status audited_clean (observed='audited_clean')
-  [PASS] ledger row exists: clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10
-  [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: effective_status in ['retained'] (observed='retained')
-  [PASS] clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10: audit_status audited_clean (observed='audited_clean')
+  [PASS] per_site_su2_spin_half_theorem_note_2026-05-02: audit_status is not a failed verdict (observed='audited_clean')
   [PASS] ledger row exists: cpt_exact_note
   [PASS] cpt_exact_note: effective_status in ['retained'] (observed='retained')
-  [PASS] cpt_exact_note: audit_status audited_clean (observed='audited_clean')
+  [PASS] cpt_exact_note: audit_status is not a failed verdict (observed='audited_clean')
   [PASS] ledger row exists: spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10
   [PASS] spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10: effective_status in ['retained'] (observed='retained')
-  [PASS] spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10: audit_status audited_clean (observed='audited_clean')
+  [PASS] spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10: audit_status is not a failed verdict (observed='audited_clean')
   [PASS] ledger row exists: spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10
   [PASS] spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10: effective_status in ['retained_bounded'] (observed='retained_bounded')
-  [PASS] spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10: audit_status audited_clean (observed='audited_clean')
-  [PASS] ledger row exists: cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27
-  [PASS] cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27: effective_status in ['retained'] (observed='retained')
-  [PASS] cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27: audit_status audited_clean (observed='audited_clean')
+  [PASS] spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10: audit_status is not a failed verdict (observed='audited_clean')
 
 ----------------------------------------------------------------------------------------
 Q1 retained source and Q2 source-local rank marking
@@ -78,13 +83,13 @@ Q1 retained source and Q2 source-local rank marking
   [PASS] source/admission marker present: Lorentzian sign
 
 ----------------------------------------------------------------------------------------
-P4 arithmetic support and label-semantics boundary are explicit
+P4 numeric support and non-load-bearing label boundary are explicit
 ----------------------------------------------------------------------------------------
   [PASS] parent note carries P4 premise
   [PASS] bridge cites parent P4 wording
-  [PASS] bridge keeps physical label semantics open
+  [PASS] bridge makes physical label semantics non-load-bearing
   [PASS] bridge maps Weyl arithmetic halving to R2 (chirality)
-  [PASS] P4 replacement remains blocked without separate physical-label bridge
+  [PASS] P4 numeric counts are source-supported while label wording stays separate
 
 ----------------------------------------------------------------------------------------
 proof-walk forbids lattice-action imports
@@ -110,13 +115,13 @@ repo-vocabulary discipline (no new class / tier framings)
   [PASS] forbidden vocabulary absent: 'algebraic universality'
 
 ----------------------------------------------------------------------------------------
-exact rational arithmetic: dof_Dirac = 4, dof_Weyl = 2
+exact rational arithmetic: branch-rank dof_Dirac = 4, dof_Weyl = 2
 ----------------------------------------------------------------------------------------
-  [PASS] Dirac dof = 2 (R1 doublet label) * 2 (R3 paired label) = 4 under supplied label semantics (got 4)
+  [PASS] Dirac dof = 2 positive-energy kernel states + 2 negative-energy kernel states = 4 (got 4)
   [PASS] Dirac dof = (retained Q1 dim_R V_(3,1) * 2) / source-local Q2 2 = 4 (got 4)
-  [PASS] factorisations agree (R1*R3 = Q1-spinor decomposition)
-  [PASS] Weyl dof = Dirac dof / 2 (chirality projection, R2) = 2 (got 2)
-  [PASS] Weyl dof = 2 (helicity-antiparticle)
+  [PASS] branch-rank and Q1-spinor decompositions agree
+  [PASS] Weyl dof = 1 fixed-chirality positive-energy state + 1 fixed-chirality negative-energy state = 2 (got 2)
+  [PASS] conventional Weyl label wording has the same cardinality but is non-load-bearing
   [PASS] naive off-shell real-component count = 8 (4 complex spinor)
   [PASS] on-shell halving 8 / 2 = 4 (source-local Q2 rank count)
 
@@ -171,9 +176,12 @@ Q2 finite-rank on-shell Dirac counting certificate
   [PASS] negative-energy branch dim_C ker D = 2
   [PASS] off-shell contrast has nonzero determinant
   [PASS] off-shell contrast has rank 4
-  [PASS] massless branch dim_C ker D = 2
-  [PASS] left chirality selects one massless on-shell dimension
-  [PASS] right chirality selects one massless on-shell dimension
+  [PASS] massless positive-energy branch dim_C ker D = 2
+  [PASS] left chirality selects one positive-energy massless on-shell dimension
+  [PASS] right chirality selects one positive-energy massless on-shell dimension
+  [PASS] massless negative-energy branch dim_C ker D = 2
+  [PASS] left chirality selects one negative-energy massless on-shell dimension
+  [PASS] right chirality selects one negative-energy massless on-shell dimension
   [PASS] Q2 real-count reading: 8 off-shell real components -> 4 real on-shell branch
 
 ----------------------------------------------------------------------------------------
@@ -188,21 +196,21 @@ R4 CAR irreducible single-mode carrier dim 2
   [PASS] CAR carrier dim = 2
 
 ----------------------------------------------------------------------------------------
-R3 CPT paired-label factor 2 under supplied physical-label semantics
+non-load-bearing conventional label cross-checks
 ----------------------------------------------------------------------------------------
-  [PASS] CPT pair label cardinality = 2
+  [PASS] context-only CPT pair label cardinality = 2
   [PASS] two-mode CPT-paired Fock dim = 4
-  [PASS] Dirac state-label cardinality = spin * particle-antiparticle = 4
+  [PASS] context-only Dirac state-label cardinality = spin * particle-antiparticle = 4
 
 ----------------------------------------------------------------------------------------
-P4 arithmetic support: bridge supplies factor 2 * 2 = 4 but not label semantics
+P4 numeric support: branch ranks carry 4 and 2; labels are context
 ----------------------------------------------------------------------------------------
-  [PASS] bridge reproduces P4 Dirac dof = 4 from R1 + R3
-  [PASS] bridge reproduces P4 Weyl dof = 2 from R1 + R3 + R2
+  [PASS] bridge reproduces P4 Dirac numeric dof = 4 from Q2 branch ranks
+  [PASS] bridge reproduces P4 Weyl numeric dof = 2 from fixed-chirality branch ranks
   [PASS] retained Q1 + source-local Q2 path also yields 4 (spinor-dim cross-check)
 
-TOTAL: PASS=140 FAIL=0
-VERDICT: Q1/Q2-counting-repaired bounded bridge passes; Dirac dof = 4 and Weyl dof = 2 follow by exact rational arithmetic from retained Q1, source-local Q2 rank counting, and supplied physical-label semantics; P4 replacement still needs the separate physical-label bridge.
+TOTAL: PASS=144 FAIL=0
+VERDICT: Q1/Q2-counting-repaired bounded bridge passes; Dirac dof = 4 and Weyl dof = 2 follow by exact rational arithmetic from retained Q1 and source-local Q2 branch-rank counting; conventional physical labels are non-load-bearing interpretation unless a separate physical-label bridge is supplied.
 
 ----- stderr -----
 

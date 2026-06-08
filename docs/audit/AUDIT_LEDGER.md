@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 749 |
+| **retained_bounded** | 750 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1337 |
+| unaudited | 1336 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1171 |
+| `audited_clean` | 1172 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1650 |
+| `unaudited` | 1649 |
 
 | claim_type | count |
 |---|---:|
@@ -914,6 +914,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_observable_uniqueness_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -13089,6 +13090,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Then the finite expectation <P>_L(beta) = Z_L(beta)^(-1) integral P_bar(U) exp(-S_W[U; beta]) dU is a unique mathematical number for the selected finite surface.  _(class `A`)_
 - **chain closes:** True — The scoped finite theorem closes from compact finite configuration space, finite continuous Wilson action, positive finite partition function, and bounded P_bar. The canonical 0.5934 number is explicitly outside the claim as an admitted comparison/reuse value, so no physical plaquette certificate is being certified.
 - **rationale:** With the claim boundary enforced, the note is not deriving or certifying 0.5934; that value is explicitly an admitted comparison/reuse number and is outside the audited claim. The bounded finite result follows from the selected compact SU(3) finite lattice surface and the defined Wilson observable/measure, without hidden physical readout or tuned comparator matching. The runner supports implementation and boundary diagnostics only, with no D-class physical comparator and no same-surface MC certificate for the canonical value.
+- **auditor confidence:** high
+
+### `plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06`
+
+- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** V=1 SU(3) single-plaquette finite-window Picard-Fuchs packet for the displayed order-3 operator L and beta=6 logarithmic-derivative readout; excludes arbitrary-degree lower-order exclusion, all-order minimality, thermodynamic-limit, multi-plaquette, higher-irrep, or bridge promotion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-145116-f4d402766f-plaquette_v1_picard_fuchs_od`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-window packet verifies Taylor annihilation by L through degree 96, recurrence consistency through N=99, no checked lower-order annihilator for r<=2,d<=30, the (r=3,d=2) kernel matching L, polynomial-multiple consistency through d=12, and the beta=6 companion readout.  _(class `A`)_
+- **chain closes:** True — The chain closes for the stated finite windows: the supplied runner source performs exact finite Taylor/rank computations rather than merely printing expected results. The missing all-degree lower-order exclusion is explicitly outside the audited scope.
+- **rationale:** The primary runner constructs the Bessel-determinant Taylor sequence, builds the ansatz matrices, computes exact ranks, and verifies the primitive-integer signature; the load-bearing content is finite algebraic linear algebra over the provided inputs. Independent checks confirmed the displayed operator gives the stated recurrence and first coefficients, a finite-field rank check gives no failures for r<=2,d<=30 and first checked hit at (3,2), and a direct Bessel-determinant numerical evaluation gives J'(6)/J(6)=0.422531739649983..., matching the printed readout. The cited retained_bounded authorities' open all-order caveats do not block this narrowed finite-window claim because the source note expressly excludes those promotions.
 - **auditor confidence:** high
 
 ### `plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06`

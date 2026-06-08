@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 328,
     "high": 249,
-    "leaf": 378,
+    "leaf": 377,
     "medium": 357
   },
   "cycle_break_target_count": 13,
@@ -28726,31 +28726,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dm_neutrino_readout_det_uniqueness_inapplicable_no_go_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
-        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_neutrino_readout_det_uniqueness_inapplicable.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39827,6 +39802,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 16,
-  "total_pending": 1312
+  "ready_count": 15,
+  "total_pending": 1311
 }

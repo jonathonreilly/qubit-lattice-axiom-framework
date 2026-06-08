@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 207 |
-| **retained_no_go** | 215 |
+| **retained_no_go** | 216 |
 | **retained_bounded** | 748 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1310 |
+| unaudited | 1309 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1169 |
+| `audited_clean` | 1170 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1621 |
+| `unaudited` | 1620 |
 
 | claim_type | count |
 |---|---:|
@@ -357,6 +357,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_operator_selection_obstruction_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `dm_neutrino_readout_det_uniqueness_inapplicable_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4872,6 +4873,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner establishes that Gamma_1 and Xi_5 are genuinely different operator surfaces: Gamma_1 is chiral off-diagonal, single-hop, and follows the adjacent-Hamming cascade, while Xi_5 is chiral diagonal, four-hop, and pairs opposite sectors.  _(class `C`)_
 - **chain closes:** True — The runner source and current output close the exact inequivalence claims with 10 passing matrix/rank/hop checks. The later audited-clean Dirac bridge changes the live physics interpretation but does not invalidate the older bounded obstruction fact that the two surfaces are inequivalent.
 - **rationale:** The audited scope is the exact obstruction: Gamma_1 and Xi_5 are not the same operator under chirality behavior, hop order, and orbit action. That chain closes from the supplied runner source and zero-fail live output, with the later audited-clean bridge only resolving which local chiral surface wins rather than erasing the inequivalence result. No hidden bridge is needed for the bounded obstruction statement itself.
+- **auditor confidence:** high
+
+### `dm_neutrino_readout_det_uniqueness_inapplicable_no_go_note_2026-06-07`
+
+- **Note:** [`DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md`](../../docs/DM_NEUTRINO_READOUT_DET_UNIQUENESS_INAPPLICABLE_NO_GO_NOTE_2026-06-07.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Scoped route no-go: on the stipulated staggered Z^3 hw=1 generation-corner sector, the retained real-D det-uniqueness theorem cannot license the neutrino readout via D_kin; scalar-baseline determinant identities remain diagnostics only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-2c5f1e6cd9-dm_neutrino_readout_det_uniq`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The kinetic staggered operator D_kin vanishes on the hw=1 generation corners, so the projected generation-sector D block is zero/non-invertible and outside the det-uniqueness X1 domain requiring invertible real anti-Hermitian D.  _(class `C`)_
+- **chain closes:** True — The cited det-uniqueness authority applies only to invertible real anti-Hermitian D with real-symmetric source J, while an independent Fourier action check gives D_kin e_k proportional to sin(k_mu) terms that vanish at k_mu in {0, pi}. The bridge authority explicitly firewalles the mI determinant surfaces as scalar-baseline diagnostics, so they do not reopen the det-uniqueness route.
+- **rationale:** The runner source genuinely constructs the finite staggered kinetic operator and checks the corner projection, non-invertibility, off-corner control, and scalar-baseline diagnostics rather than merely printing expected values. The load-bearing corner-vanishing also checks independently from the finite-difference Fourier action using sin(0)=sin(pi)=0. Both cited authorities are retained-grade, and the no-go is properly scoped to the det-uniqueness route, not to all possible future readout derivations.
 - **auditor confidence:** high
 
 ### `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17`

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/rank1_single_source_from_K_J_minus_I_structure_runner.py
+runner_sha256: 31de5c4082ff1c44e6f01b3b21c496b212ac05c4b5b2297f24f043015b9f713b
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+==============================================================================
+A1. the derived C3 coupling K = |K|(J - I): J = 3 P_singlet is RANK-1 (single source)
+==============================================================================
+   J rank = 1 (= 3 P_singlet, the single C3-singlet source): True
+   (J - I) eigenvalues = [-1. -1.  2.] : singlet isolated (+2), doublet degenerate (-1,-1)
+  [PASS] the derived K = |K|(J-I) has a RANK-1 J piece = the single C3-singlet source  | the generation-distinguishing part of K is rank-1 (single source)
+
+==============================================================================
+A2. K gives a distinct SINGLET + a 2-fold DEGENERATE DOUBLET (the rank-1 condition)
+==============================================================================
+   K eigenvalues = [-0.4 -0.4  0.8] : singlet 2|K|=0.8, doublet -|K|=-0.4 (degenerate)
+  [PASS] the C3 coupling K yields a distinct singlet + degenerate doublet (rank-1 singlet dominance)  | the singlet carries the distinct generation coupling; the doublet is degenerate
+
+==============================================================================
+A3. BONUS: a degenerate doublet + C3-breaking => MAXIMAL mixing (theta_23 ~ 45deg, atmospheric)
+==============================================================================
+   degenerate doublet [[m,b],[b,m]] => mixing angle = 45.0deg (maximal)
+   matches the lepton atmospheric angle theta_23 ~ 45deg (observed ~49deg)
+  [PASS] a degenerate doublet (from K) + C3-breaking => maximal mixing theta_23 ~ 45deg  | a bonus: the lepton atmospheric angle from the degenerate C3-doublet
+
+==============================================================================
+A4. the SMALL Cabibbo requires a SPLIT doublet => GST magnitude reduces to the mass hierarchy
+==============================================================================
+   degenerate doublet -> 45.0deg (maximal);  split/hierarchical doublet -> 12.6deg (small, GST)
+   => the SMALL Cabibbo requires a SPLIT (hierarchical) doublet at C3-symmetry; the GST magnitude
+      reduces to the doublet MASS HIERARCHY (m_d << m_s) -> alpha_s. The rank-1 SINGLET structure
+      is framework-native (K's J-I form, derived); the mixing magnitude bottoms out at the hierarchy.
+  [PASS] small Cabibbo needs a split doublet => GST magnitude reduces to the mass hierarchy (rank-1 derived)  | the mixing cascade bottoms out at the mass hierarchy; rank-1 singlet from derived K
+
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 # Fifth Family Radial Boundary Note
 
-**Date:** 2026-04-06 (originally); 2026-05-03 (review-loop runner-import repair via PR #485); 2026-06-08 orientation certificate wiring
+**Date:** 2026-04-06 (originally); 2026-05-03 (review-loop runner-import repair via PR #485); 2026-06-08 orientation certificate wiring; 2026-06-08 live-certificate restricted-packet repair
 **Status:** support - structural or confirmatory support note; runner now executes after PR #485 import repair
 **Claim type:** bounded_theorem
 
@@ -72,6 +72,14 @@ orientation certificate as part of the restricted packet: it checks the
 certificate runner path, cache status, zero exit, SHA freshness,
 `SCORECARD PASS=9 FAIL=0`, exact zero/neutral rows, and the negative
 linear orientation slope before accepting its own boundary assertion.
+
+The 2026-06-08 live-certificate repair removes the cache-only interpretation
+of that validation. `FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py` now invokes
+`fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py` directly
+inside the primary runner and requires the fresh execution to reproduce the
+same `SCORECARD PASS=9 FAIL=0`, exact zero/neutral cancellations, and negative
+linear slope. The SHA-pinned cache remains a freshness artifact, not the only
+evidence for the orientation derivation.
 
 ## Artifact Chain
 

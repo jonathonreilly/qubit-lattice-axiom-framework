@@ -1,14 +1,16 @@
 # PR Backlog
 
-Status: pending PR creation.
+Status: PR created.
 
-Planned title:
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3247
+
+Title:
 
 ```text
 [physics-loop] packet-memory-bridge-boundary bounded-support
 ```
 
-Planned verification:
+Verification:
 
 ```bash
 python3 scripts/packet_memory.py

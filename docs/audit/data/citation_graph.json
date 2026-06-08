@@ -45998,10 +45998,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
     },
     {
@@ -46023,6 +46019,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lensing_finite_path_explanation_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "wigner_mode_low_d_sublattice_theorem_note_2026-05-02"
     },
     {
       "from": "repo.front_door_status",
@@ -88950,17 +88950,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
         "fifth_family_radial_boundary_note",
         "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
         "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
         "lensing_finite_path_explanation_note",
+        "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
         "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "73dcfb8896272c50d02c5306ef6c4abb12cdac0a13815ec5abafe64acb81b8f7",
+      "note_hash": "f7573b950a8f972e39a6509618ce732fdd5171f8d38a8426985446341e8f5d45",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

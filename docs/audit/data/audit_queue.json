@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 334,
     "high": 250,
-    "leaf": 375,
+    "leaf": 374,
     "medium": 360
   },
   "cycle_break_target_count": 20,
@@ -29141,30 +29141,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "newtonian_distance_law_confirmed",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "valley_linear_wide_tail_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "p3_coupling_is_retention_eligible_composition_2026-06-06",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -40117,6 +40093,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 8,
-  "total_pending": 1319
+  "ready_count": 7,
+  "total_pending": 1318
 }

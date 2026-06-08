@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1341 |
+| Applied audit verdicts | 1342 |
 | Retained-grade rows, including boxed decorations | 1222 |
 | Retained positive theorems | 207 |
 | Retained no-go rows | 218 |
 | Retained bounded rows | 748 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
-| Unaudited rows | 1353 |
+| Unaudited rows | 1352 |
 | Retained-pending-chain rows | 11 |
-| Audited conditional rows | 24 |
+| Audited conditional rows | 25 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1355 |
-| Ready rows | 34 |
+| Total pending rows | 1354 |
+| Ready rows | 33 |
 | Cycle-break targets | 15 |
 | Critical pending | 328 |
-| High pending | 251 |
+| High pending | 250 |
 | Medium pending | 374 |
 | Leaf pending | 402 |
 
 Next ready rows by queue order:
 
-- [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - critical; unaudited
-- [`plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md) - high; unaudited
+- [`plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md) - critical; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md) - medium; unaudited
 - [`lensing_finite_path_explanation_note`](../../docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md) - medium; unaudited
 - [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
+- [`su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05`](../../docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3129 |
-| Critical nodes | 523 |
-| High nodes | 446 |
+| Critical nodes | 524 |
+| High nodes | 445 |
 | Medium nodes | 809 |
 | Leaf nodes | 1351 |
 

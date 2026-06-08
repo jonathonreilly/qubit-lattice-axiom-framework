@@ -88960,7 +88960,7 @@
         "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e63288a4a77d41e0fa62bb1daed515610f6b5f66adb064fcd508f3ba0eb01662",
+      "note_hash": "73dcfb8896272c50d02c5306ef6c4abb12cdac0a13815ec5abafe64acb81b8f7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

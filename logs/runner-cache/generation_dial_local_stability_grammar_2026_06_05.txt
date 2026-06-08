@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/generation_dial_local_stability_grammar_2026_06_05.py
+runner_sha256: 1237788e3e1d22979b602fe7050e93d4bc60ee5c062d454c6d146d22a2be2e8c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
 [PASS] S1.1 dial map r(s)=2^(s-1) is positive and has positive derivative
 [PASS] S1.2 inverse coordinate is s(r)=1+log(r)/log(2)
        L(r)=log(r)/log(2) + 1
@@ -21,3 +29,6 @@
 SCORECARD PASS=13 FAIL=0
 FINDING: the positive-ratio dial is a clean stability coordinate;
          local stability is map/flow classification, not value selection.
+
+----- stderr -----
+

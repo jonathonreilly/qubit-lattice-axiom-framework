@@ -1,6 +1,11 @@
-"""Class-A finite runner: the lattice Green function asymptotic G(r) -> 1/(4 pi |r|)
-(existence + value + isotropy = the accepted-premise import P1) is DERIVED framework-
-internally from the A1 graph-Laplacian RESOLVENT via its heat kernel, not imported.
+"""Finite boundary runner for the lattice Green function heat-kernel route.
+
+The runner supports, but does not prove by itself, the lattice Green function
+asymptotic G(r) -> 1/(4 pi |r|). The exact resolvent identity and Bessel
+factorization close, and the numerical axis/diagonal checks support isotropic
+1/r behavior. The remaining proof bridge is a uniform diffusive
+Bessel/local-CLT asymptotic with tail domination allowing the |x| -> infinity
+limit to pass through the heat-kernel integral.
 
 Chain (all framework-internal except standard Bessel/Gaussian asymptotics, reconstructed):
   L = -Delta_lat = the A1 Z^3 6-NN graph Laplacian (eigenvalue lambda(k)=6-2 sum cos k_mu).
@@ -9,13 +14,12 @@ Chain (all framework-internal except standard Bessel/Gaussian asymptotics, recon
       (e^{-tL})_{0x} = prod_mu (e^{-t L_mu})_{0,x_mu} = prod_mu e^{-2t} I_{x_mu}(2t)
   where (e^{-tL_1})_{0n} = e^{-2t} I_n(2t) is the EXACT 1D NN heat kernel (I_n modified Bessel).
   => G(x) = int_0^inf prod_mu e^{-2t} I_{x_mu}(2t) dt   [framework-internal, A1 resolvent].
-  Large-r asymptotic from the large-t CONTINUUM limit of the heat kernel:
+  Large-r asymptotic support from the large-t CONTINUUM limit of the heat kernel:
       e^{-2t} I_n(2t) -> (4 pi t)^{-1/2} e^{-n^2/(4t)}  (large t)  [standard Bessel asymptotic]
    => prod_mu -> (4 pi t)^{-3/2} e^{-|x|^2/(4t)}  (the 3D continuum heat kernel)
    => G(x) -> int_0^inf (4 pi t)^{-3/2} e^{-|x|^2/(4t)} dt = 1/(4 pi |x|).
-  The leading term is ISOTROPIC (depends only on |x|), value 4 pi fixed; lattice corrections
-  are subleading. This SUPPLIES P1 (existence + uniqueness of the isotropic 1/r asymptotic)
-  via the heat-kernel route, retiring the accepted-premise textbook import.
+  The runner checks the continuum identity and finite numerical convergence.
+  It does not supply the uniform theorem required to retire P1.
 
   T1  1D NN heat kernel (e^{-t L_1})_{0n} = e^{-2t} I_n(2t) (exact, vs matrix exp).
   T2  factorization (e^{-tL})_{0x} = prod_mu (e^{-t L_mu})_{0,x_mu} ([L_mu,L_nu]=0).
@@ -29,6 +33,8 @@ Chain (all framework-internal except standard Bessel/Gaussian asymptotics, recon
 prints TOTAL: PASS=N FAIL=0
 """
 
+from pathlib import Path
+
 import numpy as np
 from scipy.linalg import expm
 from scipy.integrate import quad
@@ -37,6 +43,9 @@ from scipy.special import ive, iv
 TOL = 1e-6
 results = []
 def check(name, ok): results.append((name, bool(ok)))
+
+NOTE = Path(__file__).resolve().parents[1] / "docs" / "LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md"
+note_text = NOTE.read_text(encoding="utf-8")
 
 # --- T1: 1D NN heat kernel (e^{-t L_1})_{0n} = e^{-2t} I_n(2t) ---
 M = 41; c = M // 2
@@ -106,6 +115,14 @@ check("T6 int (4 pi t)^{-3/2} e^{-r^2/4t} dt = 1/(4 pi r) (continuum Green from 
 check("CTRL leading term isotropic: |axis - diagonal| 4pi r G -> 0 at r=32",
       abs(ax[32] - 4 * np.pi * (32 * np.sqrt(3)) * G(32, 32, 32)) < 5e-3)
 check("CTRL wrong normalization 1/(2 pi r) is rejected (2pi r G !-> 1)", abs(2 * np.pi * 64 * G(64, 0, 0) - 1) > 0.4)
+
+# --- SOURCE BOUNDARY: the note must not overclaim the missing asymptotic bridge. ---
+check("SOURCE boundary names the 2026-06-08 asymptotic narrow",
+      "2026-06-08 Asymptotic Boundary Narrow" in note_text)
+check("SOURCE boundary preserves uniform local-CLT/tail-domination bridge",
+      "uniform diffusive Bessel/local-CLT tail-domination bridge remains open" in note_text)
+check("SOURCE boundary no longer claims to retire P1 by itself",
+      "no longer claims to retire P1 by itself" in note_text)
 
 n_pass = sum(1 for _, ok in results if ok)
 n_fail = sum(1 for _, ok in results if not ok)

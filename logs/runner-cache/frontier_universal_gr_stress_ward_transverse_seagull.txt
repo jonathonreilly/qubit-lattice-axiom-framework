@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_stress_ward_transverse_seagull.py
+runner_sha256: bea299e99befb560ae8e785c3013a3536900b9353168e66a2c71fc78d4270dec
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 56.47
+status: ok
+----- stdout -----
 PASS T1 native iD elliptic: det=m^2+|sin|^2>0 on ALL BZ modes (valid Z)
 PASS T1b bare-Hermitian sigma.sin sign-indefinite (3304/4096 modes det<=0, invalid Z, #3222 control)
 PASS T2a single-current operator Ward sum_a 2sin(k_a/2)G_a=D(q+k)-D(q) EXACT (err=1.1e-15)
@@ -19,3 +27,6 @@ healthy positive TT graviton sign preserved on the Ward-clean full vertex. BOUND
 lattice artifact (exact-all-k transversality obstructed by an irrelevant O(a^2) operator -- the
 expected conserved-current-on-a-rigid-lattice behavior, vs the EXACTLY-transverse internal U(1)).
 TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 767 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1307 |
+| unaudited | 1306 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 43 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1198 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1622 |
+| `unaudited` | 1621 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 520 |
 | `high` | 444 |
-| `medium` | 772 |
-| `leaf` | 1275 |
+| `medium` | 771 |
+| `leaf` | 1276 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
@@ -1371,6 +1371,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -18756,6 +18757,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The theorem is a self-contained finite-dimensional linear-algebra statement using only R_3^T R_3 = I, spatial trace invariance, Frobenius norm invariance, and weighted orthogonality of the Pi_A1/Pi_perp split under isotropic spatial weights. No cited authority or physical bridge is needed for the scoped conclusion.
 - **rationale:** The load-bearing identities are exact algebra on the given representation and weight, and the isotropic-weight premise is explicitly tested by an anisotropic control. The runner source symbolically verifies T1 and T2, checks the concrete coordinate-movement witness and random generic movement, and does not hard-code a contested physical bridge or numerical comparator. The result is properly scoped as a pure SO(3) representation-theory theorem, not a universal-GR physical closure claim.
 - **auditor confidence:** high
+
+### `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that the specified native 2x2 lattice Dirac operator, velocity×momentum stress vertex, and local seagull yield leading-order transversality and positive TT stiffness in the finite Brillouin-zone computation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-213550-58ee5bb7dd-universal_gr_stress_ward_tra`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With the conserved velocity×momentum stress vertex plus the explicit local seagull S=-B0+B1+B5, the longitudinal residual changes from O(k) to O(k^3) while the positive yz TT stiffness remains positive.  _(class `C`)_
+- **chain closes:** False — The runner substantively computes the stated finite-sum residual scaling and TT sign for the hard-coded V and S. The restricted packet does not derive that these hard-coded V and S are the full metric Hessian/stress seagull of W, nor does it prove the broader irreducible exact-all-k/O(a^2) obstruction over the allowed local seagull class.
+- **rationale:** The runner is not a print-only certificate: it instantiates Pauli matrices, the lattice Dirac operator, vertices, seagull terms, and finite BZ sums, and it gives class-C evidence for the narrower computational statement. Independent formula checks confirm the determinant sign structure and the exact U(1) single-current Ward identity. However, the source note’s stronger identification of the construction as the full W-native diffeomorphism stress/seagull, plus the irreducible exact-all-k obstruction, requires derivations not present in the restricted packet. The clean result therefore does not close for the theorem as written.
+- **auditor confidence:** medium
 
 ### `universal_gr_supermetric_normal_form_note`
 

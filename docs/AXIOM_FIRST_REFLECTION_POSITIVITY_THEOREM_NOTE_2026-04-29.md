@@ -5,7 +5,8 @@
 narrowing); 2026-05-28 (in-repo first-principles 2-step transfer-matrix
 positivity replacing the prior citation-only treatment); 2026-06-07
 (Wilson-plane sign-repair source packet, conditional on independent audit of
-the companion bridge note).
+the companion bridge note); 2026-06-08 (rerouted through the audited-clean
+Wilson temporal-gauge bridge).
 **Type:** bounded_theorem
 **Loop:** `axiom-first-foundations`
 **Status authority:** independent audit lane only.
@@ -156,26 +157,24 @@ gauge-case reduction, plus the single-step no-go runner:
   explicitly disclaims the Wilson-plaquette boundary application; this
   row therefore cites it only for the abstract identity, not for a
   Wilson-plaquette boundary closure.
-- The **Wilson-plane sign and character-kernel source packet** is supplied
-  by
-  `RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md`
+- The **Wilson temporal-gauge bridge for the gauge-half / Wilson-plane
+  application** is supplied by
+  [AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   and
-  [`frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py`](../scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py).
-  It fixes the failed bridge's sign root (`S_0 := -beta Re Tr`, so
-  `exp(-S_0)=exp(+beta Re Tr)`), replaces the finite-grid exactness
-  overclaim by a power-series / tensor-multiplicity character-coefficient
-  proof, and verifies the ferromagnetic integrated Gram factorization
-  `G = W diag(kappa) W^dag` with `kappa >= 0` on the displayed finite
-  surfaces. This dependency is a source-packet candidate for re-audit, not
-  an author-applied retained status. It supports only the **conditional
-  Wilson-plane addendum** (2026-06-07), not the core staggered 2-step
-  transfer-matrix positivity, which is derived in-repo above and depends on
-  none of it. The reference is therefore rendered as a plain (non-link)
-  citation rather than a load-bearing markdown dependency, breaking the
-  spurious `cycle-0001` audit-graph 2-cycle with this later repair note
-  (the genuine direction is repair → builds-on → this theorem); the
-  conditional Wilson-plane claim still travels with that companion note's
-  own independent-audit status.
+  [`audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py`](../scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py).
+  That audited-clean retained-bounded bridge translates the abstract
+  gauge-half Cauchy-Schwarz hypotheses to the Wilson plaquette temporal-gauge
+  boundary setup: it fixes the Wilson sign as
+  `S_W = -B + constant`, proves the reflection split
+  `B = B_+ + B_- + B_0` with `B_- = Theta B_+`, certifies the
+  reflection-plane kernel `exp(B_0)` as a nonnegative character-coefficient
+  Gram kernel on the displayed tractable groups, and verifies the integrated
+  three-factor form `G = W diag(kappa) W^dag` with `kappa >= 0` on the
+  `A_+^(2)` observable basis. This is the current load-bearing route for
+  the Wilson-plane/gauge-half factor. The older
+  `RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06`
+  source packet is historical context only here and is not a load-bearing
+  dependency of this parent row.
 
 The det-positivity and Cauchy-Schwarz authorities are cited only for
 their stated narrow surfaces, each covering one named factor of the
@@ -211,13 +210,16 @@ space `H_phys^(2)`. With vacuum-energy subtraction,
 one has `||T_hat_tilde^2|| = 1` and `H_hat_tilde >= 0`, i.e., the
 2-step-blocked lattice energy spectrum is non-negative.
 
-### 2026-06-07 Wilson-plane sign-repair source packet
+### 2026-06-08 Wilson temporal-gauge bridge reroute
 
 The latest conditional audit of this row names one remaining parent blocker:
 derive the full Wilson-plaquette gauge-half sesquilinear PSD form for the
 non-time-symmetric, `U`-integrated configuration space, or keep the row
-bounded. The companion Wilson-plane sign-repair bridge attacks exactly that
-blocker without adding an axiom.
+bounded. Current `main` now has an audited-clean retained-bounded bridge for
+exactly the Wilson plaquette temporal-gauge / gauge-half application:
+[`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md).
+This row is therefore rerouted through that bridge rather than through the
+unaudited June 6 sign-repair packet.
 
 On the finite factorized `A_+^(2)` surface above, for generators
 
@@ -225,23 +227,25 @@ On the finite factorized `A_+^(2)` surface above, for generators
     F(U,chi) = F_G(U) F_f(chi),
 ```
 
-the proposed re-audit source packet uses the corrected Wilson plane weight
+the audited temporal-gauge bridge uses the corrected Wilson sign convention
 
 ```text
-    exp(-S_0),    S_0 := -beta Re Tr[U_+ U_-^dag],
+    S_W = -B + constant,       exp(-S_W) = constant * exp(B),
 ```
 
-so the actual Boltzmann factor is the ferromagnetic
-`exp(+beta Re Tr[U_+ U_-^dag])`. With the sign fixed, the gauge-half plane
-kernel is expanded in irreducible characters with non-negative coefficients:
-`exp(beta Re chi_F) = exp((beta/2) chi_F) exp((beta/2) chi_Fbar)`, and tensor
-powers/fusion products have non-negative multiplicities. The same runner
-exhibits the exact `Z_N` and `U(1)` coefficient checks, the `SU(2)` tensor
-power reconstruction, the `SU(3)` low-irrep coefficient projections, and the
-finite integrated Gram factorization `G = W diag(kappa) W^dag`.
+so the reflection-plane Boltzmann factor is `exp(B_0)`, not an
+anti-ferromagnetic `exp(-beta Re Tr)` kernel. The bridge proves the reflection
+split `B = B_+ + B_- + B_0`, realizes the Wilson-plane kernel as a
+nonnegative character-coefficient Gram kernel, and verifies the integrated
+three-factor RP form
 
-Under that stacked bridge, the parent reflected form decomposes into the
-product/integral of four non-negative factors:
+```text
+    G = W diag(kappa) W^dag,      kappa >= 0
+```
+
+on the stated `A_+^(2)` observable basis. Under that bridge, the parent
+reflected form decomposes into the product/integral of four non-negative
+factors:
 
 ```text
     <Theta(F) F>
@@ -255,22 +259,23 @@ product/integral of four non-negative factors:
 The signs of the four factors are supplied one hop:
 
 - `K_mixed(U) > 0` from the temporal-gauge mixed-kernel factorization
-  theorem;
+  theorem
+  [GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md);
 - `det(M_KS[U] + m I) > 0` from the staggered determinant positivity
   theorem;
-- the gauge-half norm square / plane-kernel PSD from the sign-repaired
-  Wilson source packet, with the abstract Cauchy-Schwarz note used only for
+- the gauge-half norm square / plane-kernel PSD from the audited Wilson
+  temporal-gauge bridge, with the abstract Cauchy-Schwarz note used only for
   the finite norm-square identity it actually proves;
 - `<vac_U | F_f^dag T_hat^2[U] F_f | vac_U> >= 0` from the fixed-background
   two-step transfer positivity theorem, with the free construction below as
   its explicit specialization.
 
 Finite linear combinations inherit a positive semidefinite Gram form by
-polarization over these same factorized generators. This is a source-packet
-re-audit case only: if the sign-repair bridge is retained by independent audit,
-it supplies the missing Wilson-plane application named in this row's latest
-conditional verdict. This note does not mark that bridge, this parent row, or
-any downstream row retained.
+polarization over these same factorized generators. This reroute supplies the
+missing Wilson-plane application named in this row's latest conditional verdict
+from an already audited-clean retained-bounded source. This note still does not
+mark this parent row or any downstream row retained; independent audit must
+judge the composed parent claim.
 
 ### In-repo first-principles construction and proof (free case)
 
@@ -403,11 +408,11 @@ temporal gauge) is the retained_bounded note
 The positive gauge weight is the retained Case A determinant note
 (`det(M_KS + m I) = prod (m^2 + sigma_i^2) >= m^n > 0`
 config-by-config on every `SU(3)` background). The gauge/bosonic half is
-now routed through the stacked Wilson-plane sign-repair source packet plus
-the abstract gauge-half Cauchy-Schwarz identity, rather than through the
-abstract identity alone. The full interacting `U`-integrated positivity is
-not claimed beyond this explicitly scoped three-factor reduction target and
-the sign-repair bridge remains subject to independent audit.
+now routed through the audited-clean Wilson temporal-gauge bridge plus the
+abstract gauge-half Cauchy-Schwarz identity, rather than through the abstract
+identity alone. The full interacting `U`-integrated positivity is not claimed
+beyond this explicitly scoped three-factor reduction target and remains subject
+to independent audit of this parent row.
 
 This replaces the prior citation-only treatment: the 2-step blocked
 positivity is now the in-repo first-principles result above (free case
@@ -522,8 +527,9 @@ does **not** claim:
   on a non-trivial `SU(3)` background: the explicit construction is the
   free (`U = 1`) case, and the gauge sector enters only through the
   retained positive determinant weight;
-- an author-applied retained status for the Wilson-plane sign-repair bridge
-  or for this parent row; the stacked bridge is a re-audit source packet;
+- an author-applied retained status for this parent row; the Wilson
+  temporal-gauge bridge is cited at its own retained-bounded audited scope, and
+  this row's composed parent claim still requires independent audit;
 - a full staggered + Wilson fermion RP theorem;
 - an unconditional Wilson-sector determinant positivity statement;
 - continuum-limit / OS-reconstruction RP from this lattice setup

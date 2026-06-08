@@ -143,6 +143,7 @@ status verdict.
 """
 from __future__ import annotations
 
+import json
 import math
 from itertools import combinations
 from pathlib import Path
@@ -157,6 +158,7 @@ NOTE_PATH = (
     / "docs"
     / "AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
 )
+LEDGER_PATH = Path(__file__).resolve().parents[1] / "docs" / "audit" / "data" / "audit_ledger.json"
 
 
 # ---------------------------------------------------------------------------
@@ -496,27 +498,62 @@ def r2_os_gram(Ls: int, m: float):
 
 
 def check_three_factor_bridge_source() -> dict[str, object]:
-    """C7: source guard for the 2026-06-06 Wilson-boundary bridge.
+    """C7: source guard for the Wilson temporal-gauge bridge reroute.
 
-    The full gauge integration is owned by the retained source notes named in
-    the parent. This check prevents the parent from regressing to the old
-    missing-bridge wording and verifies the elementary sign composition on a
-    finite product model of the retained factors.
+    The full gauge integration is owned by the retained/bounded source notes
+    named in the parent. This check prevents the parent from regressing to the
+    old missing-bridge or unaudited-sign-packet wording and verifies the
+    elementary sign composition on a finite product model of the retained
+    factors.
     """
     text = NOTE_PATH.read_text(encoding="utf-8")
+    rows = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+    required_statuses = {
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": (
+            "audited_clean",
+            "retained_bounded",
+        ),
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": (
+            "audited_clean",
+            "retained",
+        ),
+        "staggered_only_det_positivity_case_a_note_2026-05-17": (
+            "audited_clean",
+            "retained",
+        ),
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": (
+            "audited_clean",
+            "retained",
+        ),
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": (
+            "audited_clean",
+            "retained_bounded",
+        ),
+    }
+    status_ok = True
+    status_details = []
+    for claim_id, (audit_status, effective_status) in required_statuses.items():
+        row = rows.get(claim_id, {})
+        got = (row.get("audit_status"), row.get("effective_status"))
+        status_details.append((claim_id, got))
+        status_ok = status_ok and got == (audit_status, effective_status)
+
     required = [
-        "2026-06-06 retained Wilson-boundary three-factor bridge",
-        "GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+        "2026-06-08 Wilson temporal-gauge bridge reroute",
+        "AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
         "GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md",
         "STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md",
         "REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md",
         "RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
-        "finite, lattice, two-step, factorized/linear-span reflection-positivity form",
+        "G = W diag(kappa) W^dag",
+        "this row's composed parent claim still requires independent audit",
         "does **not** claim",
     ]
     forbidden = [
         "not for a Wilson-plaquette boundary closure",
         "the full interacting gauge closure remains limited to the named three-factor reduction claim",
+        "the sign-repair bridge remains subject to independent audit",
+        "conditional Wilson-plane claim still travels with that companion note",
     ]
 
     # Finite product sanity check: each factor is representative of a retained
@@ -531,6 +568,8 @@ def check_three_factor_bridge_source() -> dict[str, object]:
     return {
         "required_present": all(s in text for s in required),
         "forbidden_absent": not any(s in text for s in forbidden),
+        "status_ok": status_ok,
+        "status_details": status_details,
         "min_factor": float(
             min(
                 mixed_kernel.min(),
@@ -694,43 +733,43 @@ def main() -> int:
     fails += int(not c6)
     print()
 
-    # ---- C7: source bridge guard for Wilson-boundary three-factor repair ----
+    # ---- C7: source bridge guard for audited Wilson temporal-gauge reroute ----
     print("-" * 78)
-    print("C7  WILSON-BOUNDARY THREE-FACTOR BRIDGE GUARD")
-    print("    source wiring: OS Step 1 + mixed kernel + det positivity + Cauchy-Schwarz + T_hat^2[U]")
+    print("C7  AUDITED WILSON TEMPORAL-GAUGE THREE-FACTOR BRIDGE GUARD")
+    print("    source wiring: Wilson temporal-gauge bridge + mixed kernel + det positivity + T_hat^2[U]")
     print("    finite product sanity: positive factors compose to a non-negative integrand")
     print("-" * 78)
     c7r = check_three_factor_bridge_source()
     c7 = (
         c7r["required_present"]
         and c7r["forbidden_absent"]
+        and c7r["status_ok"]
         and c7r["min_factor"] >= 0.0
         and c7r["min_integrand"] >= 0.0
         and c7r["sum_integrand"] > 0.0
     )
     print(f"    required source bridge phrases present: {'YES' if c7r['required_present'] else 'NO'}")
     print(f"    stale missing-bridge phrases absent    : {'YES' if c7r['forbidden_absent'] else 'NO'}")
+    print(f"    live dependency statuses clean         : {'YES' if c7r['status_ok'] else 'NO'}")
     print(f"    min representative factor              : {c7r['min_factor']:.6e}")
     print(f"    min composed integrand                 : {c7r['min_integrand']:.6e}")
     print(f"    sum composed integrand                 : {c7r['sum_integrand']:.6e}")
-    print(f"    C7 = {'PASS' if c7 else 'FAIL'}  (source bridge wired; composed signs non-negative)")
+    print(f"    C7 = {'PASS' if c7 else 'FAIL'}  (audited bridge wired; composed signs non-negative)")
     passes += int(c7)
     fails += int(not c7)
     print()
 
     # ---- Gauge-case reduction statement ----
     print("-" * 78)
-    print("GAUGE CASE REDUCTION / 2026-06-06 PARENT BRIDGE")
+    print("GAUGE CASE REDUCTION / 2026-06-08 AUDITED WILSON TEMPORAL-GAUGE REROUTE")
     print("-" * 78)
     print("    The parent now wires the finite factorized/linear-span bridge:")
-    print("      (Wilson OS Step 1 boundary + reflection-Hermitian gauge observables)")
+    print("      (Wilson temporal-gauge bridge: plane kernel PSD, G=W diag(kappa) W^dag)")
     print("    x (mixed-kernel positive class-function factorization)")
     print("    x (det(M_KS + m I) >= m^n > 0 config-by-config -- separate source row:")
     print("       STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)")
-    print("    x (gauge-half Cauchy-Schwarz norm-square -- separate source row:")
-    print("       REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)")
     print("    x (fixed-background two-step fermion transfer positivity T_hat^2[U] >= 0)")
-    print("    This runner supplies C1-C6 for the free specialization and C7 as a source/sign guard.")
+    print("    This runner supplies C1-C6 for the free specialization and C7 as a source/status guard.")
     print("    Continuum OS reconstruction, single-step RP, and off-surface physical completion")
     print("    remain out of scope.")
     print()
@@ -748,7 +787,7 @@ def main() -> int:
     print(f"  C4 R2 OS Gram PSD      : {'PASS' if c4 else 'FAIL'}  (2-step OS Gram Hermitian PSD)")
     print(f"  C5 functor identity    : {'PASS' if c5 else 'FAIL'}  (Gamma=B^dag B verified in-repo)")
     print(f"  C6 decaying bridge     : {'PASS' if c6 else 'FAIL'}  (spectral projector -> Fock kernel)")
-    print(f"  C7 bridge guard        : {'PASS' if c7 else 'FAIL'}  (Wilson-boundary three-factor source wiring)")
+    print(f"  C7 bridge guard        : {'PASS' if c7 else 'FAIL'}  (audited Wilson temporal-gauge bridge wiring)")
     print()
     all_ok = (fails == 0)
     print(f"PASS={passes} FAIL={fails}")
@@ -759,8 +798,8 @@ def main() -> int:
         print("  derived from the staggered action and anchored to the exact free staggered")
         print("  dispersion sinh^2 E = m^2 + sin^2 p. The single-step T_hat is non-positive")
         print("  (complex/negative one-step spectrum), consistent with the single-step no-go")
-        print("  runner. The parent source now wires the retained Wilson-boundary")
-        print("  three-factor bridge for finite factorized/linear-span two-step")
+        print("  runner. The parent source now wires the retained-bounded audited")
+        print("  Wilson temporal-gauge bridge for finite factorized/linear-span two-step")
         print("  observables; continuum OS reconstruction and off-surface physical")
         print("  completion remain out of scope.")
     else:

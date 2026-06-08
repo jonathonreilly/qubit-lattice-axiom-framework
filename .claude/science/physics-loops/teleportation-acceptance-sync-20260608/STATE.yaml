@@ -1,0 +1,19 @@
+loop_slug: teleportation-acceptance-sync-20260608
+date: 2026-06-08
+current_goal: Repair the teleportation acceptance-suite documentation/source sync failure.
+target_status: bounded-support
+cycle_count: 1
+active_route: add a sync guard that mechanically compares the note table to the live strict-lane list-probes surface
+hard_residual: The suite remains bounded planning telemetry and does not prove physical preparation/readout/apparatus closure.
+files_touched:
+  - docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md
+  - scripts/frontier_teleportation_acceptance_suite_note_sync_check.py
+  - logs/runner-cache/frontier_teleportation_acceptance_suite_note_sync_check.txt
+  - .claude/science/physics-loops/teleportation-acceptance-sync-20260608/
+open_imports:
+  - Independent audit must re-check whether this closes the stale strict-lane documentation row.
+trace_gate_classification: direct_blocker_closure
+pr_status: pending
+next_exact_action: Refresh cache, verify, commit, and open PR.
+stop_condition: PR opened with no audit file edits.
+

@@ -1,0 +1,21 @@
+loop_slug: fifth-family-radial-live-certificate-20260608
+branch: physics-loop/fifth-family-radial-live-certificate-20260608
+base: origin/main
+target_claim_id: fifth_family_radial_boundary_note
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: live_orientation_certificate_execution
+files_touched:
+  - docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md
+  - scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py
+  - logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt
+open_imports:
+  - wider radial basin
+  - family-wide fifth-family theorem
+  - corrected positive-orientation radial variant
+trace_gate_classification: direct_blocker_closure
+review_findings: pending
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: PR opened and remaining conditional backlog rescanned

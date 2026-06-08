@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import hashlib
 import os
+import subprocess
 import sys
 from pathlib import Path
 
@@ -58,7 +59,7 @@ def _verify_orientation_certificate() -> bool:
     cache_text = ORIENTATION_CACHE.read_text(encoding="utf-8")
     runner_rel = ORIENTATION_RUNNER.relative_to(REPO_ROOT).as_posix()
     sha_fresh = fields.get("runner_sha256") == _sha256(ORIENTATION_RUNNER)
-    ok = (
+    cache_ok = (
         fields.get("runner") == runner_rel
         and fields.get("status") == "ok"
         and fields.get("exit_code") == "0"
@@ -68,10 +69,28 @@ def _verify_orientation_certificate() -> bool:
         and "zero_delta     = +0.000000000000e+00" in cache_text
         and "neutral_delta  = +0.000000000000e+00" in cache_text
     )
+    live = subprocess.run(
+        [sys.executable, str(ORIENTATION_RUNNER)],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        timeout=120,
+        check=False,
+    )
+    live_text = live.stdout + live.stderr
+    live_ok = (
+        live.returncode == 0
+        and "SCORECARD PASS=9 FAIL=0" in live_text
+        and "linear_slope   = -" in live_text
+        and "zero_delta     = +0.000000000000e+00" in live_text
+        and "neutral_delta  = +0.000000000000e+00" in live_text
+    )
+    ok = cache_ok and live_ok
     print(
         f"  runner={fields.get('runner')} status={fields.get('status')} "
         f"exit={fields.get('exit_code')} sha_fresh={sha_fresh}"
     )
+    print(f"  live_certificate_exit={live.returncode} live_derivation={'PASS' if live_ok else 'FAIL'}")
     print("  scorecard=SCORECARD PASS=9 FAIL=0")
     print(f"  certificate={'PASS' if ok else 'FAIL'}")
     return ok

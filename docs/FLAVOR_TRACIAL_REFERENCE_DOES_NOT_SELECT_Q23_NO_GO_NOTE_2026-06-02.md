@@ -1,9 +1,17 @@
-# Flavor Tracial Reference Does Not Select `Q=2/3` No-Go
+---
+claim_id: flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02
+claim_type_author_hint: no_go
+status_authority: independent_audit_lane_only
+direct_effective_status_change_allowed_from_this_note: false
+---
+
+# Flavor Tracial Reference Does Not Select `Q=2/3` Formal No-Go
 
 **Date:** 2026-06-02
 **Claim type:** no_go
 **Claim boundary:** bounded no_go / route-pruning theorem
-**Actual current-surface status:** bounded-support
+**Actual current-surface status:** bounded-support / formal finite-carrier
+route-pruning theorem
 **Trace class:** negative_route_pruning
 **Reachability to target:** prunes the bounded route "on the supplied finite
 generation carrier/readout, the tracial/product/modular reference selects the
@@ -31,6 +39,30 @@ identification, or the physical mass readout from baseline axioms. Those are
 outside the bounded route-pruning claim. This note therefore should not be read
 as an absolute obstruction to `Q=2/3`; it only removes one proposed selector for
 the equal-block value once that finite readout surface has already been supplied.
+
+### 2026-06-08 formal-carrier repair
+
+The audited conditional blocker was not the finite no-go arithmetic. The
+blocker was that the supplied finite generation carrier/readout could be read as
+an unproven physical bridge. This repair states the theorem as a formal
+route-pruning result over explicit finite-carrier hypotheses:
+
+```text
+F1: Work in the finite regular C3 carrier on C^3 with cyclic generator C,
+    C^3=I, central projectors e0=(I+C+C^2)/3 and e1=I-e0, and ranks
+    rank(e0)=1, rank(e1)=2.
+F2: Use the supplied two-sector record-function coordinate
+    Q = 1/3 + (2/3)r, with equal-block weighting giving r=1/2, Q=2/3,
+    and dimension/tracial weighting giving r=1, Q=1.
+F3: Restrict the tested selector route to tracial/product/modular reference
+    states: rho=I_3/3 on the carrier, product traces on finite regions, and
+    trace Tomita flow Delta=1.
+```
+
+Under F1-F3, the tracial/product/modular route selects dimension weighting
+`(1,2)` and therefore `Q=1`, not the equal-block `Q=2/3` point. The theorem
+does not identify F1-F2 with the physical flavor generation carrier, charged
+lepton sector, or measured-mass readout. Those bridges remain open.
 
 ### 2026-06-07 source repair
 
@@ -81,8 +113,8 @@ on dimension weighting, not equal-block weighting.
 
 This is not evidence against `Q=2/3`, and it does not choose the physical
 flavor sector. It says only that the tracial/product/modular route, on the
-supplied finite carrier/readout surface, lands on the dimension read and cannot
-be reused as the selector for the equal-block read.
+formal finite carrier/readout surface F1-F3, lands on the dimension read and
+cannot be reused as the selector for the equal-block read.
 
 The `Q=2/3` route remains open through a chiral sector, non-tracial reference
 state, finite-gap dynamics, or explicit block-measure admission.
@@ -90,7 +122,7 @@ state, finite-gap dynamics, or explicit block-measure admission.
 ## No-Go Discipline Gate
 
 The no-go applies only to deriving the `Q=2/3` equal-block weight from a
-tracial/product/modular reference.
+tracial/product/modular reference on F1-F3.
 
 Alternative routes remain open:
 
@@ -116,3 +148,23 @@ Alternative routes remain open:
   measured-mass readout.
 - No `docs/audit/**` status is updated by this packet.
 - No new axiom is introduced.
+
+## Status boundary
+
+```yaml
+actual_current_surface_status: bounded-support
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+artifact_role: formal_no_go
+load_bearing_claim: "F1-F3 tracial/product/modular reference selects dimension weighting (1,2), hence Q=1, not equal-block Q=2/3"
+formal_finite_carrier_hypotheses:
+  - F1 finite C3 carrier/projectors/ranks
+  - F2 supplied two-sector Q coordinate
+  - F3 tracial/product/modular reference route
+physical_generation_bridge_claimed: false
+physical_flavor_sector_claimed: false
+measured_mass_readout_claimed: false
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+```

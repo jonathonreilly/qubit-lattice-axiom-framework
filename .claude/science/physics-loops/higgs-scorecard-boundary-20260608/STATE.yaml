@@ -1,0 +1,18 @@
+loop_slug: higgs-scorecard-boundary-20260608
+date: 2026-06-08
+branch: physics-loop/higgs-scorecard-boundary-20260608
+goal: "Repair stale Higgs scorecard prose without changing the bounded APBC/mean-field science boundary."
+target_claim_id: higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: source_scorecard_reconciliation
+hard_residual: "Framework-native d=4/Z^4 APBC carrier and mean-field truncation remain open bounded hypotheses."
+files_touched:
+  - docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md
+  - .claude/science/physics-loops/higgs-scorecard-boundary-20260608/
+open_imports:
+  - "framework-native d=4/Z^4 APBC carrier"
+  - "mean-field factorization/truncation as exact physical input"
+next_exact_action: "Re-audit after scorecard reconciliation; do not promote beyond bounded support without the carrier bridge."
+stop_condition: "Only the stale prose scorecard is repaired here."

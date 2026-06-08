@@ -1,0 +1,26 @@
+loop_slug: bare-alpha-formal-identity-boundary-20260608
+target_claim_id: framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30
+target_status: bounded-support
+mode: science-fix
+branch: physics-loop/bare-alpha-formal-identity-boundary-20260608
+base: origin/main
+cycle_count: 1
+active_route: formal_hypothesis_identity_repair
+hard_residual: "No physical EW-normalization bridge is supplied by this row."
+files_touched:
+  - docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md
+  - scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py
+  - logs/runner-cache/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.txt
+open_imports:
+  - "Physical derivation of g_3^2 = 1."
+  - "Physical derivation of g_2^2 = 1/(d+1)."
+  - "Physical derivation of g_Y^2 = 1/(d+2)."
+trace_gate_classification: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_disposition: pass
+pr_status: review-loop-landing
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3266
+next_exact_action: "Independent audit should re-audit the formal assumed-input identity theorem after landing."
+stop_condition: "Narrowed formal identity repair landed; audit remains pending."

@@ -1,29 +1,33 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py
-runner_sha256: 59ddc20369517f0b1b8545cf6eaf20de7d19f4dc081174b812e0461533ac0b6c
+runner_sha256: 9a1b892cde8055ffa1ad1e8e299de17a67fe0d059d769697adb49b89a5c60054
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
-=== Bare alpha_3 / alpha_em conditional bookkeeping lemma ===
+=== Bare alpha_3 / alpha_em formal assumed-input identity theorem ===
 PASS: source file exists: docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md
-PASS: note status is conditional algebra lemma only
-PASS: note declares supplied inputs
+PASS: note status is bounded formal identity theorem only
+PASS: note declares formal hypotheses H1-H4
+PASS: note states exact load-bearing theorem
 PASS: note blocks retained EW-lane authority
 PASS: note blocks minimal-stack promotion
 PASS: note blocks low-energy phenomenology
 PASS: note records current 2026-04-30 source authority
+PASS: status boundary forbids bare retained
 PASS: forbidden overclaim absent: support corollary on a retained EW-normalization surface
 PASS: forbidden overclaim absent: retained EW normalization lane remains the authoritative route
 PASS: forbidden overclaim absent: candidate retained-grade support corollary on the retained EW surface
 PASS: forbidden overclaim absent: Retained derivation theorem on main
 PASS: forbidden overclaim absent: three independent retained inputs
 PASS: forbidden overclaim absent: independent retained structural routes
+PASS: forbidden overclaim absent: **Status:** retained
+PASS: forbidden overclaim absent: physical use is closed by this row
 PASS: input d fixed to 3 :: actual=3, expected=3
-PASS: g3^2 canonical :: actual=1, expected=1
-PASS: g2^2 = 1/(d+1) :: actual=1/4, expected=1/4
-PASS: gY^2 = 1/(d+2) :: actual=1/5, expected=1/5
+PASS: H2 formal hypothesis: g3^2 = 1 :: actual=1, expected=1
+PASS: H3 formal hypothesis: g2^2 = 1/(d+1) :: actual=1/4, expected=1/4
+PASS: H4 formal hypothesis: gY^2 = 1/(d+2) :: actual=1/5, expected=1/5
 PASS: 1/g2^2 = d+1 :: actual=4, expected=4
 PASS: 1/gY^2 = d+2 :: actual=5, expected=5
 PASS: D1 inverse-EM sum = 2d+3 :: actual=9, expected=9
@@ -47,8 +51,8 @@ PASS: dimension fingerprint d=4 :: ratio=11
 PASS: dimension fingerprint d=5 :: ratio=13
 PASS: integer 9 uniquely maps to d=3 in checked range
 PASS: fingerprint sequence odd integers
-TOTAL: PASS=40, FAIL=0
-VERDICT: CONDITIONAL ALGEBRA LEMMA VERIFIED
+TOTAL: PASS=44, FAIL=0
+VERDICT: FORMAL ASSUMED-INPUT IDENTITY THEOREM VERIFIED
 
 ----- stderr -----
 

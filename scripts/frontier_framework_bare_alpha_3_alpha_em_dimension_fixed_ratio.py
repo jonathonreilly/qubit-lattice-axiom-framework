@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Verify the bare alpha_3 / alpha_em dimension-ratio conditional lemma.
+"""Verify the bare alpha_3 / alpha_em formal assumed-input identity theorem.
 
 This runner verifies only the repaired current source packet:
 
-1. the exact bare-coupling algebra under supplied bookkeeping inputs, and
+1. the exact bare-coupling algebra under explicit formal hypotheses H1-H4, and
 2. the source boundary that forbids retained EW-lane, minimal-stack, or
    low-energy phenomenology claims from this current row.
 """
@@ -76,12 +76,19 @@ def audit_scope_boundary(audit: Audit) -> None:
     flat_note = " ".join(note.split())
 
     audit.check(
-        "note status is conditional algebra lemma only",
-        "conditional algebra lemma only" in flat_note and "not a live retained theorem" in flat_note,
+        "note status is bounded formal identity theorem only",
+        "bounded-support / formal assumed-input identity theorem" in flat_note
+        and "not a live retained EW-normalization theorem" in flat_note,
     )
     audit.check(
-        "note declares supplied inputs",
-        "assumed-input algebra" in note and "support-side inputs are assumed" in note,
+        "note declares formal hypotheses H1-H4",
+        all(marker in note for marker in ["H1:", "H2:", "H3:", "H4:"])
+        and "formal hypotheses in this row, not physical authorities" in flat_note,
+    )
+    audit.check(
+        "note states exact load-bearing theorem",
+        "alpha_3(bare) / alpha_em(bare) = 2d + 3" in note
+        and "sin^2(theta_W)(bare) = (d + 1)/(2d + 3)" in note,
     )
     audit.check(
         "note blocks retained EW-lane authority",
@@ -102,6 +109,12 @@ def audit_scope_boundary(audit: Audit) -> None:
         "Date:** 2026-04-30" in note
         and "archive_unlanded/framework-bare-alpha-assumed-input-salvage-2026-04-30/" in note,
     )
+    audit.check(
+        "status boundary forbids bare retained",
+        "actual_current_surface_status: bounded-support" in note
+        and "bare_retained_allowed: false" in note
+        and "proposal_allowed: false" in note,
+    )
 
     forbidden = [
         "support corollary on a retained EW-normalization surface",
@@ -110,6 +123,8 @@ def audit_scope_boundary(audit: Audit) -> None:
         "Retained derivation theorem on main",
         "three independent retained inputs",
         "independent retained structural routes",
+        "**Status:** retained",
+        "physical use is closed by this row",
     ]
     for phrase in forbidden:
         audit.check(f"forbidden overclaim absent: {phrase}", phrase not in note)
@@ -128,9 +143,9 @@ def audit_exact_algebra(audit: Audit) -> None:
     gem_sq = Fraction(1, 1) / inv_gem
 
     frac_eq("input d fixed to 3", audit, Fraction(d, 1), Fraction(3, 1))
-    frac_eq("g3^2 canonical", audit, g3_sq, Fraction(1, 1))
-    frac_eq("g2^2 = 1/(d+1)", audit, g2_sq, Fraction(1, 4))
-    frac_eq("gY^2 = 1/(d+2)", audit, gy_sq, Fraction(1, 5))
+    frac_eq("H2 formal hypothesis: g3^2 = 1", audit, g3_sq, Fraction(1, 1))
+    frac_eq("H3 formal hypothesis: g2^2 = 1/(d+1)", audit, g2_sq, Fraction(1, 4))
+    frac_eq("H4 formal hypothesis: gY^2 = 1/(d+2)", audit, gy_sq, Fraction(1, 5))
     frac_eq("1/g2^2 = d+1", audit, inv_g2, Fraction(4, 1))
     frac_eq("1/gY^2 = d+2", audit, inv_gy, Fraction(5, 1))
 
@@ -181,7 +196,7 @@ def audit_dimension_fingerprint(audit: Audit) -> None:
 
 def main() -> int:
     audit = Audit()
-    print("=== Bare alpha_3 / alpha_em conditional bookkeeping lemma ===")
+    print("=== Bare alpha_3 / alpha_em formal assumed-input identity theorem ===")
     audit_scope_boundary(audit)
     audit_exact_algebra(audit)
     audit_dimension_fingerprint(audit)
@@ -189,7 +204,7 @@ def main() -> int:
     if audit.failed:
         print("VERDICT: FAIL")
         return 1
-    print("VERDICT: CONDITIONAL ALGEBRA LEMMA VERIFIED")
+    print("VERDICT: FORMAL ASSUMED-INPUT IDENTITY THEOREM VERIFIED")
     return 0
 
 

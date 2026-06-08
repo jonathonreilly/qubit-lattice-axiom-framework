@@ -1,0 +1,25 @@
+loop_slug: magnitude-4pi-source-boundary-20260608
+branch: physics-loop/magnitude-4pi-source-boundary-20260608
+base_branch: main
+target_claim_id: magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06
+mode: science-fix
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+stack_dependency: "#3260 landed on main before PR creation"
+files_touched:
+  - docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md
+  - scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py
+  - logs/runner-cache/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.txt
+open_residuals:
+  - I1 static-source readout remains unaudited/import-boundary.
+  - I2 alpha convention remains an unaudited accepted premise.
+  - I3 Cl3 normalization remains an unaudited accepted premise.
+  - P3/per-mode dressing and hierarchy value-gate honesty remain unaudited/open.
+verification:
+  target_runner: "python3 scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py -> TOTAL: PASS=62 FAIL=0"
+  cache: logs/runner-cache/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.txt
+  audit_edits: none
+next_action: "Reviewer should inspect and, if acceptable, extract/land the bounded source-boundary repair on current main."

@@ -1,37 +1,67 @@
-# The Minimum Time Step IS the Planck Time, Fixed by the Framework's Single Already-Accepted Scale Reference — At No Tier Cost (Narrow Theorem)
+# Minimum Time Step Planck-Time Boundary From the Scale Reference and Tick/Edge Tie
 
 **Date:** 2026-06-08
-**Claim type:** positive_theorem (units/minimality closure: the one accepted scale-reference primitive fixes both spatial and temporal minima; the primitive is non-bounding)
+**Claim type:** bounded_theorem
+**Scope:** conditional-support boundary packet. The Planck-time arithmetic
+closes after the tick/edge and `c`-normalization inputs are supplied, but this
+row does not itself derive the record/update tick as the physical time
+coordinate.
 **Status:** unaudited candidate. Graph-visible only so the independent audit lane can decide.
 **Primary runner:** [`scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py`](../scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py)
 **Cached output:** [`logs/runner-cache/min_time_step_is_planck_time_from_scale_reference_primitive_runner.txt`](../logs/runner-cache/min_time_step_is_planck_time_from_scale_reference_primitive_runner.txt)
 
 ## Audit context
 
-The companion tie (one record tick = one nearest-neighbor edge, by causal locality + the no-diagonal
-clause) fixed the **ratio** `a_τ/a_s` and left the **absolute scale** as "a supplied primitive." This
-note records that the framework **already carries exactly that primitive** — the approved
-*scale-reference* primitive (a units ruler, **not** a Tier-A admitted premise) — so the absolute scale is not an
-open gap, and the minimum time step is fully determined as the **Planck time**.
+The independent audit blocker for this row was:
+
+```text
+missing_dependency_edge: include the retained companion one-tick-one-edge authority
+and an explicit emergent-c-to-physical-c normalization certificate, then re-audit
+the algebraic closure and tighten the runner tolerance to match the note.
+```
+
+The current ledger does **not** make the companion tick/edge row a retained
+authority. It is `audited_renaming`: the finite reachability facts check, but
+the identity between update tick, record tick, `a_tau`, and the physical time
+coordinate remains a naming/definition bridge rather than a retained
+derivation. This repair therefore takes the honest path: it exposes the
+companion packet and the `c`-normalization certificate, but it narrows this row
+to conditional/minimality support rather than claiming full positive closure.
+
+The companion tie (one record tick = one nearest-neighbor edge, by causal
+locality + the no-diagonal clause) fixes the **ratio** `a_τ/a_s` only after
+that tick/time identification is accepted. The approved *scale-reference*
+primitive is the framework's single dimensionful ruler, not a Tier-A admitted
+premise. With both inputs supplied, the arithmetic identifies `a_τ = l_P/c =
+t_P`.
 
 ## Safe statement
 
-**Theorem (the one accepted scale reference fixes both minima; the minimum time step is the Planck time).**
+**Conditional boundary theorem (the one accepted scale reference fixes both
+minima once the tick/edge time bridge is supplied).**
 
 1. **The framework accepts one dimensionful scale reference: `a_s = l_P`.** The
    [`SCALE_REFERENCE_PRIMITIVE`](SCALE_REFERENCE_PRIMITIVE_NOTE.md) (owner-approved, registered in
    `docs/audit/data/axiom_premise_nodes.json`) declares the framework's **single** dimensionful
    reference: `a⁻¹ = M_Pl` (the `PLANCK_SCALE_LANE_STATUS` package pin). Hence the lattice spacing
    `a_s` = the **Planck length** `l_P` — *already supplied*, carrying **zero** dimensionless content.
-   Per `AXIOM_MINIMALITY_POLICY` §6 this is an **approved framework primitive** that **chain-satisfies
-   dependencies without bounding downstream status** — unlike a Tier-A admitted premise (which caps
-   downstream at `retained_bounded`). So relying on it does **not** cap this result's tier (Tier note below).
+   Per `AXIOM_MINIMALITY_POLICY` §6 this is an approved framework primitive
+   rather than a new axiom, Tier-A admission, or bounded-status source. The
+   independent audit lane still decides this row's actual status from the
+   remaining tick/time and physical-`c` bridges.
 2. **The one-tick-one-edge tie gives `a_τ = a_s/c`.** One minimum time step (one record tick) spans
-   exactly one nearest-neighbor edge (the companion tie; reproduced here by BFS: one tick → the 6
-   nearest neighbors), with `c` the emergent causal/front speed (one edge per tick).
-3. **Therefore the minimum time step is the Planck time:** `a_τ = l_P/c = t_P` (`5.391×10⁻⁴⁴ s`,
-   verified to a relative `10⁻⁷` — `l_P/c` *is* `t_P`).
-4. **One scale reference, two minima — at no extra cost.** The single approved scale-reference
+   exactly one nearest-neighbor edge in the companion packet
+   [`MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md`](MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md),
+   checked by
+   [`scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py`](../scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py).
+   Current audit status for that companion is `audited_renaming`, not retained.
+3. **The `c` normalization is explicit.** This packet uses the SI value
+   `c = 299792458 m/s` exactly as the physical-unit conversion from one
+   edge/tick to seconds. That is a unit-normalization certificate, not a
+   derivation of the physical light speed from this row.
+4. **Then the minimum time step is the Planck time:** `a_τ = l_P/c = t_P`
+   (`5.391×10^-44 s`, verified by the runner at relative error `< 1e-7`).
+5. **One scale reference, two minima inside the supplied bridge.** The single approved scale-reference
    primitive (`a⁻¹ = M_Pl`) fixes **both** the minimum length (`a_s = l_P`) **and** the
    minimum time step (`a_τ = t_P`), because the one-tick-one-edge tie welds them. This is consistent
    with the clock-rate no-go ([`POST_RECORD_CLOCK_RATE_INTERFACE`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md),
@@ -57,8 +87,12 @@ So the picture completes:
   (a minimality statement), and the minimum time step is *identified* as the Planck time.
 - The scale anchor itself is the accepted (owner-approved) primitive, not a derivation — the framework
   carries one ruler, as the scale-reference primitive states.
-- `c` is the emergent causal/front speed (the cone normalization, one edge per tick); the
-  identification with the physical light speed is the emergent-Lorentz normalization.
+- The tick/edge row is currently `audited_renaming`. This packet is therefore
+  not a retained derivation of physical time unless a later retained bridge
+  derives the record/update tick as the time coordinate.
+- `c` is used here as the physical unit conversion `299792458 m/s`; the
+  runner checks the normalization explicitly. This packet does not derive the
+  emergent-Lorentz-to-physical-`c` bridge.
 
 ## Primitive note (the type matters)
 
@@ -66,10 +100,10 @@ The scale reference is **not** a Tier-A admitted premise; it is an **approved fr
 (`scale_reference_primitive`, registered in `axiom_premise_nodes.json`, owner-approved per
 `AXIOM_MINIMALITY_POLICY` §6). Per that policy, approved primitives **chain-satisfy dependencies
 without bounding downstream status**, whereas Tier-A admitted derivation targets chain-satisfy only at `retained_bounded`.
-So a row whose only non-retained dependency is this scale reference is **retention-eligible at the full
-tier** — relying on the ruler neither blocks nor caps it. This result depends only on the scale
-reference + the retained locality tie, so it carries **no tier-bounding dependency** (the independent
-audit lane still sets the actual status).
+The scale reference is not the blocker in this row. The open blocker is the
+tick/time bridge plus physical-`c` normalization, both now exposed as explicit
+checks. This packet should not be read as bare retained until independent audit
+accepts those bridges.
 
 ## Forbidden premise check
 
@@ -79,21 +113,23 @@ point). Finite, memory-safe arithmetic + a tiny BFS.
 
 ## Runner check breakdown
 
-Class A: (A1) the framework accepts one scale reference, `a_s = l_P`; (A2) one tick = one edge ⟹
-`a_τ = a_s/c`; (A3) `a_τ = l_P/c = t_P` (relative `10⁻⁷`); (A4) one scale reference fixes both minima,
-consistent with the clock-rate no-go. Expected `runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}`.
+Class A/checkable boundary: (A1) the framework scale-reference primitive is
+registered; (A2) the companion tick/edge packet and cache are present and the
+current ledger status is exposed; (A3) the `c` normalization is explicit and
+`l_P/c = t_P` is verified at relative error `< 1e-7`; (A4) the conditional
+minimality conclusion is stated without claiming a retained tick/time bridge.
+Expected `runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}`.
 
 ## Honest auditor read
 
-The framework's registered scale-reference primitive fixes the lattice spacing to the Planck length
-(`a⁻¹ = M_Pl`); the companion one-tick-one-edge tie (reproduced by BFS) gives `a_τ = a_s/c`; so the
-minimum time step is `l_P/c = t_P`, the Planck time (verified to `10⁻⁷`). The single accepted
-dimensionful anchor therefore fixes both the spatial and temporal minima — the minimum time step costs
-no extra primitive — and this is consistent with the records-clock-rate no-go (the records give the
-count, the anchor gives the unit). Because the scale reference is an approved non-bounding primitive
-(not a Tier-A admitted premise), the result carries no tier-bounding dependency. The note adds no dimensionless
-content and no new primitive; it records a units/minimality closure and the identification of the
-minimum time step with the Planck time. Effective status remains `unaudited` (the audit lane decides).
+The framework's registered scale-reference primitive fixes the lattice spacing
+to the Planck length (`a⁻¹ = M_Pl`). If the companion one-tick-one-edge row is
+accepted as the physical time-coordinate bridge, then `a_τ = a_s/c`; with the
+explicit SI `c` normalization this gives `a_τ = l_P/c = t_P`, verified at
+relative error `< 1e-7`. The single accepted dimensionful anchor then fixes
+both the spatial and temporal minima. The note adds no dimensionless content
+and no new primitive, but it does not by itself repair the companion
+`audited_renaming` status. Effective status remains for the audit lane.
 
 ## Runner
 

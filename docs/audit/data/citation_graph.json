@@ -45998,7 +45998,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
+      "to": "plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06"
     },
     {
       "from": "repo.front_door_status",
@@ -46026,7 +46026,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06"
+      "to": "magnitude_temporal_factor_is_count_not_rate_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -88950,17 +88950,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05",
+        "plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06",
         "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
         "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
         "nonlabel_grown_basin_note",
         "wide_lattice_h2t_distance_law_note",
         "generation_dial_local_stability_grammar_2026-06-05",
         "magnitude_reads_minimal_record_block_2026-06-06",
-        "plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06"
+        "magnitude_temporal_factor_is_count_not_rate_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0336baf67ff1f1d400373041991c811466cabd6d6384934d8afecffeae943158",
+      "note_hash": "41a3f98eea6fba5440da0daa51d4833079424664a088ea8b00fa38aa4b86996b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

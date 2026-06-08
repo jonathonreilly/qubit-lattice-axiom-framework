@@ -31,6 +31,24 @@ structures do not make `det_C`/equal-block counting automatic. The packet does
 not choose the physical generation reference state, does not assert a `Q=1`
 default, and does not derive a beta=0 tracial generation reference.
 
+## 2026-06-08 holomorphic-carrier scope repair
+
+The latest conditional audit found that the no-holomorphic-carrier sentence
+leaned on a displayed CPT corner-reflection sign `J_b -> -J_b` that is not
+derived inside this restricted packet and is not checked by the runner.
+
+This source repair keeps the supported finite algebra and narrows that
+sentence:
+
+- load-bearing: the `(Z_2)^3` momentum-corner characters checked here are
+  real (`+/-1`), so this packet does not supply a native complex-line carrier
+  or make `det_C` automatic from the tested finite structures;
+- not load-bearing: the CPT reflection sign is not used as a theorem-grade
+  exclusion in this row;
+- still open: a retained finite-carrier definition/derivation of the CPT
+  corner-reflection sign or another holomorphic/Kahler bridge could be tested
+  separately.
+
 **2026-06-07 scope repair:** the audit requested:
 
 ```text
@@ -53,8 +71,10 @@ as a doublet U(1):
   hw=1 triplet (`[i·I₃, C]=0`); the doublet generator `G_U1=(C−C²)/√3` has **zero** HS-overlap with it.
 - **`C³=I` quantizes** the doublet rephasing `C→e^{iα}C` to `α∈{0, 2π/3, 4π/3}` — the continuous `U(1)_b`
   is forbidden (retained `koide_c3_generator_rephasing_obstruction`).
-- **The `(Z₂)³` momentum corners are `±1` (real)** + a CPT corner-reflection sends `J_b → −J_b`, so there
-  is no holomorphic complex-line carrier either. The generation algebra is honestly real `ℝ[Z₃]`.
+- **The `(Z₂)³` momentum corners checked here are `±1` (real)**, so this packet
+  supplies a real-character obstruction to automatic `det_C` inheritance from
+  the tested finite structures. The CPT reflection sign is not load-bearing in
+  this row. The generation algebra tested here is honestly real `ℝ[Z₃]`.
 
 So `det_C` is not inherited by these tested structures; **`r=1/2` (Q=2/3)
 remains a precisely localized counting/measure input unless another retained
@@ -69,9 +89,10 @@ are algebraically **orthogonal** — the
 campaign's earlier "single shared gate" claim is **unsupported on R³**. (Whether a lifted
 `M₂(ℂ)⊗(Z₂)³` substrate-parent projects onto *both* is untested — the genuine open frontier for unification.)
 
-**Correction #2 — it is NOT a continuous symmetry or a holomorphic measure.** Once `U(1)_b`-as-symmetry
-(forbidden by `C³=I`) and the holomorphic-measure route (forbidden by the real `(Z₂)³` characters + CPT)
-are both excluded, the residual import is solely the **block-vs-dimension counting-measure choice** on
+**Correction #2 — it is NOT a continuous symmetry or a derived holomorphic measure.** Once `U(1)_b`-as-symmetry
+(forbidden by `C³=I`) is excluded, and the checked real `(Z₂)³` characters fail
+to supply a native complex-line carrier, the residual import is solely the
+**block-vs-dimension counting-measure choice** on
 `ℝ[Z₃]=ℝ⊕ℂ`:
 - `(1,1)` idempotent / **center-count** (doublet = 1 complex slot) → `r=1/2` → **Q=2/3**;
 - `(1,2)` **Plancherel / dimension-count** (doublet = 2 real modes) → `r=1` → **Q=1**.
@@ -86,8 +107,8 @@ read corresponds to `Q=2/3`. This packet does not select which read is physical.
 > block/idempotent-count measure on `ℝ[Z₃]=ℝ⊕ℂ` over the `(1,2)`
 > dimension/Plancherel count — a measure choice the trace permits but does not
 > rank, which is **neither** a continuous `U(1)_b` symmetry (forbidden by
-> `C³=I`) **nor** a holomorphic complex-line carrier (forbidden by the
-> `(Z₂)³` real characters and the CPT reflection `J_b→−J_b`), and which is
+> `C³=I`) **nor** a holomorphic complex-line carrier supplied by the checked
+> `(Z₂)³` real characters, and which is
 > **not** the chiral orbit-splitting grading (`G_U1` commutes with `Γ_χ`).
 
 ## Non-claim: physical generation reference state

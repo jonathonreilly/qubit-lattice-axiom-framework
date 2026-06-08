@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/gst_texture_from_rank1_c3_symmetric_mass_runner.py
+runner_sha256: 4a9fd683ce0fecacd9d6fb9e745f3ed16e201e522f393136c252208222d4cf28
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+==============================================================================
+A1. a RANK-1 C3-symmetric mass (singlet only) => light generations MASSLESS at C3-symmetry
+==============================================================================
+   M_sym = m_heavy * P_singlet : rank = 1; eigenvalues = [-0.  0.  5.]
+  [PASS] rank-1 C3-symmetric mass (C3-singlet only) leaves the light generations massless at C3-symmetry  | reduced light/heavy block has no C3-symmetric direct light mass
+
+==============================================================================
+A2. the texture zero (1,1)=0 IS the geometric-mean off-diagonal (det identity)
+==============================================================================
+   [[0,b],[b,a]] with b=0.22: |eigenvalues| = (0.0463, 1.0463); det = -b^2
+   => b = sqrt(m_light * m_heavy) = 0.2200 (the geometric mean): True
+  [PASS] (1,1)=0 <=> off-diagonal b = sqrt(m_light * m_heavy) (geometric mean, from det)  | the GST geometric mean IS the texture zero
+
+==============================================================================
+A3. single-source C3-breaking => m_light = b^2/m_heavy (2nd order) + theta = b/m_heavy (1st)
+==============================================================================
+   b=0.05,0.1,0.2: m_light ~ b^2/m_heavy (see-saw): True; sin theta ~ sqrt(m_l/m_h) (GST): True
+  [PASS] one C3-breaking source gives m_light=b^2/m_heavy AND theta=b/m_heavy => sin theta = sqrt(m_l/m_h)  | the light mass and the mixing share ONE source => GST is forced
+
+==============================================================================
+A4. physical check + candidate shared residual (rank-1 / single-source)
+==============================================================================
+   quark: sin theta_C ~ sqrt(m_d/m_s) = sqrt(0.0505) = 0.2247 vs PDG sin theta_C = 0.2257
+   => the GST magnitude reduces to ONE condition: the rank-1 / single-source C3-symmetric mass
+      (the light gen's mass is purely from C3-breaking) for the small-angle magnitude account.
+   the rank-1 condition <=> the C3-symmetric mass from a SINGLE C3-invariant source (cf. single-Higgs).
+  [PASS] GST magnitude reduces to the single-source (rank-1) C3-symmetric mass; quark sqrt(m_d/m_s)~theta_C  | candidate shared magnitude residual: rank-1 C3-symmetric mass + single-source breaking
+
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 207 |
+| **retained** | 208 |
 | **retained_no_go** | 218 |
 | **retained_bounded** | 749 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1349 |
+| unaudited | 1348 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1172 |
+| `audited_clean` | 1173 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1664 |
+| `unaudited` | 1663 |
 
 | claim_type | count |
 |---|---:|
@@ -102,13 +102,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1366 | 95.42 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 750 | 61.05 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 843 | 58.22 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1262 | 50.80 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1263 | 50.80 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 481 | 47.91 | `unaudited` | meta |
 | 6 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1185 | 42.71 | `audited_renaming` | ~~audited_renaming~~ |
 | 7 | `key_terminology` | meta | critical | 1000 | 40.97 | `unaudited` | meta |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 994 | 40.46 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 261 | 39.53 | `unaudited` | unaudited |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1231 | 38.77 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1232 | 38.77 | `audited_clean` | **retained** |
 | 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 589 | 38.70 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 793 | 38.63 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 681 | 38.41 | `audited_clean` | **retained_no_go** |
@@ -531,6 +531,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7493,6 +7494,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the three explicit marked holonomies W_A, W_B, W_C, the symmetric orbit-evaluation matrix F has det(F) != 0, so a = F^(-1) Z.  _(class `A`)_
 - **chain closes:** True — The cited retained authority reduces this sector to a 3 x 3 symmetric orbit-sampling inversion whenever F is invertible. Independent SU(3) character evaluation with the K-pairing dimension weights gives F_A2 = 0, |det(F)| = 10.8103216939706, and cond(F) = 1.95759880627947, so the stated inversion is valid.
 - **rationale:** The load-bearing step is a finite algebraic character-evaluation check over the retained upstream sampling-reduction theorem, not a new physical premise or numerical fit. The one cited authority is retained-grade in the packet, and the explicit determinant/conditioning values recompute independently from the stated holonomies and orbit basis. No external comparator or open bridge is imported. No runner source or stdout was available, so the verdict rests on the independent algebraic check rather than runner PASS output.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact local SU(3) one-plaquette Wilson sample values and normalized local one-plaquette values at the named holonomies W_A, W_B, W_C for beta=6; no full environment amplitude Z_6^env(W_i) is audited as closed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-191750-0a021c5f3c-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The second sample-matrix column satisfies <K(W), Phi_1> = 3(chi_(1,0)(W)+chi_(0,1)(W)) = 18 J(W), so the radical entries determine J(W_i), hence w_6(W_i)=exp(6J(W_i)) and w_6(W_i)/Z_(1plaq)(6).  _(class `A`)_
+- **chain closes:** True — The local-only chain closes from the supplied radical sample matrix, the local Wilson weight exp[(beta/3) Re Tr W], and the Bessel-determinant one-plaquette normalization. The missing full rim/environment completion is explicitly outside the audited claim scope.
+- **rationale:** The load-bearing calculation is an algebraic closure over retained-grade bounded inputs: the given Weyl-angle samples fix the dimension-weighted second column, which fixes J(W_i), and the Wilson local factor then gives the displayed weights. The runner source computes the one-plaquette partition by a Bessel-determinant mode sum rather than merely printing the contested values; an independent Weyl-torus quadrature check agrees with the displayed Z_(1plaq)(6) and normalized samples to the shown precision. The note does not overclaim explicit B_6(W), K_6^env, or Z_6^env(W_i).
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_framework_point_underdetermination_note`

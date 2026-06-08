@@ -45998,10 +45998,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17"
     },
     {
@@ -46018,6 +46014,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
     },
     {
@@ -46026,7 +46026,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06"
+      "to": "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
     },
     {
       "from": "repo.repo_organization",
@@ -88950,17 +88950,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
         "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
         "lensing_finite_path_explanation_note",
         "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
         "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06",
+        "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
         "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05",
         "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
-        "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06"
+        "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c16c6c91f9f449985fb4ef5dd6d11edf8c29896d0b7d117ae2eaae13904d573a",
+      "note_hash": "a49614cbcacbc2423f4b5c76aa8dd2ada00ecc6211ea6a7ee381d483562b65b6",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

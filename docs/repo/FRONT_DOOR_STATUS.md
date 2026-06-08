@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1345 |
-| Retained-grade rows, including boxed decorations | 1223 |
-| Retained positive theorems | 207 |
+| Applied audit verdicts | 1346 |
+| Retained-grade rows, including boxed decorations | 1224 |
+| Retained positive theorems | 208 |
 | Retained no-go rows | 218 |
 | Retained bounded rows | 749 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
-| Unaudited rows | 1349 |
+| Unaudited rows | 1348 |
 | Retained-pending-chain rows | 11 |
 | Audited conditional rows | 27 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1351 |
-| Ready rows | 33 |
+| Total pending rows | 1350 |
+| Ready rows | 32 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
-| Medium pending | 372 |
+| Medium pending | 371 |
 | Leaf pending | 402 |
 
 Next ready rows by queue order:
 
-- [`gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md) - medium; unaudited
 - [`lensing_finite_path_explanation_note`](../../docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md) - medium; unaudited
 - [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md) - medium; unaudited
 - [`plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md) - medium; unaudited
 - [`su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05`](../../docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md) - medium; unaudited
-- [`free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`ew_current_traceless_generator_selector_no_go_note_2026-05-03`](../../docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md) - medium; unaudited
+- [`free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
+- [`nonlabel_grown_basin_note`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -91,7 +91,7 @@ Top load-bearing rows by graph score:
 - `minimal_axioms` - critical; 1366 descendants; score 95.417
 - `three_generation_observable_theorem_note` - critical; 750 descendants; score 61.053
 - `observable_principle_from_axiom_note` - critical; 843 descendants; score 58.221
-- `graph_first_su3_integration_note` - critical; 1262 descendants; score 50.803
+- `graph_first_su3_integration_note` - critical; 1263 descendants; score 50.804
 - `minimal_axioms_2026-05-03` - critical; 481 descendants; score 47.913
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1185 descendants; score 42.712
 - `key_terminology` - critical; 1000 descendants; score 40.967

@@ -3,7 +3,7 @@
     "critical": 327,
     "high": 250,
     "leaf": 402,
-    "medium": 372
+    "medium": 371
   },
   "cycle_break_target_count": 15,
   "cycle_break_targets": [
@@ -17650,33 +17650,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
-        "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
-        "gauge_vacuum_plaquette_bridge_support_note",
-        "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.807,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
-      "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lensing_finite_path_explanation_note",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17803,6 +17776,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.748,
+      "note_path": "docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_ew_current_traceless_generator_selector_no_go.py",
+      "transitive_descendants": 18
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17823,32 +17822,6 @@
       "ready": true,
       "runner_path": "scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py",
       "transitive_descendants": 18
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_ew_current_traceless_generator_selector_no_go.py",
-      "transitive_descendants": 2
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40907,6 +40880,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 33,
-  "total_pending": 1351
+  "ready_count": 32,
+  "total_pending": 1350
 }

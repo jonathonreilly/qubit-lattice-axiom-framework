@@ -11,15 +11,15 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3014 |
-| Applied audit verdicts | 1384 |
+| Ledger rows | 3015 |
+| Applied audit verdicts | 1385 |
 | Retained-grade rows, including boxed decorations | 1248 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 221 |
 | Retained bounded rows | 768 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1312 |
+| Unaudited rows | 1313 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 39 |
 | Audited renaming rows | 35 |
@@ -34,17 +34,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Metric | Value |
 |---|---:|
 | Total pending rows | 1315 |
-| Ready rows | 7 |
+| Ready rows | 6 |
 | Cycle-break targets | 15 |
 | Critical pending | 328 |
-| High pending | 251 |
+| High pending | 250 |
 | Medium pending | 363 |
-| Leaf pending | 373 |
+| Leaf pending | 374 |
 
 Next ready rows by queue order:
 
 - [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - critical; unaudited
-- [`su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`](../../docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md) - high; audit_in_progress
 - [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
 - [`flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
 - [`framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30`](../../docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md) - medium; unaudited
@@ -79,11 +78,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3132 |
+| Citation-graph nodes | 3133 |
 | Critical nodes | 522 |
 | High nodes | 447 |
 | Medium nodes | 814 |
-| Leaf nodes | 1349 |
+| Leaf nodes | 1350 |
 
 Top load-bearing rows by graph score:
 

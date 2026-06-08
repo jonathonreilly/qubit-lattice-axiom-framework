@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_route2_readout_record_positivity_no_go.py
+runner_sha256: 2acb8c819003bf90aa96aace0d4f8882c03a2fcc04be8eec624de1b0807a3d75
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+PASS: N1_partial_isometry_admits_every_rho_E P P^T=I_2 has a solution for all rho_E on the grid -> fixes |aE|, rho_E FREE
+PASS: N2_registration_idempotency_admits_every_rho_E (P^T P) is a projection for every rho_E (given the norm) -> rho_E FREE
+PASS: N3_positivity_is_only_a_one_sided_bound admissible rho_E = (-6, inf): a BOUND, not a unique value (min=-6.000)
+PASS: N4_I_scalar_colsum_gives_arbitrary_rho_E_1 column-sum 'I-scalar' -> rho_E=1.0 (arbitrary convention; != 21/4=5.25 and != 5.2575)
+PASS: STRUCT_norm_invariant_direction_sweeps_rho_E O(2) rotation: P P^T-norm constant (=1) while rho_E sweeps [-9.9,9.9] -> norm conditions cannot fix the direction
+PASS: NONVAC_color_bridge_fixes_rho_E_to_21_4 c_TE=-R_conn=-8/9 (a CROSS-DOMAIN distinguishing input) -> qE=1.8750000000000002=15/8, rho_E=5.250000000000002=21/4
+PASS: NONVAC_gravity_lane_value_differs_from_21_4 the live gravity-metric lane value rho_E=5.2575 differs from the color-clean 21/4 (numerical-match)
+PASS: GAUGE_carrier_rescale_leaves_rho_E_invariant carrier rescale leaves rho_E invariant (delta_A1=1/6 fixed)
+
+TOTAL: PASS=8 FAIL=0
+VERDICT: no supplied registration-style / positivity / idempotency condition fixes the Route-2 readout rho_E -- they fix the readout NORM (or a one-sided bound), while rho_E is the readout DIRECTION in the (shell, center) plane. Selecting rho_E requires a shell-vs-center DISTINGUISHING input (the gravity-metric response lane -> 5.2575, or the color bridge c_TE=-R_conn -> 21/4), not a generic registration principle. The tested carrier-rescale gauge freedom does not remove rho_E, so the handedness gauge-resolution does not transfer. The readout-selection residual is a distinguishing-input (color/gravity) theorem, not a registration principle.
+
+----- stderr -----
+

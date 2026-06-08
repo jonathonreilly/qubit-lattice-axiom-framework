@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Verify the bare alpha_3 / alpha_em dimension-ratio conditional lemma.
 
-This runner verifies only the repaired archived packet:
+This runner verifies only the repaired current source packet:
 
 1. the exact bare-coupling algebra under supplied bookkeeping inputs, and
 2. the source boundary that forbids retained EW-lane, minimal-stack, or
-   low-energy phenomenology claims from this archived row.
+   low-energy phenomenology claims from this current row.
 """
 
 from __future__ import annotations
@@ -58,7 +58,7 @@ def float_close(label: str, audit: Audit, actual: float, expected: float, tol: f
 
 
 def audit_scope_boundary(audit: Audit) -> None:
-    note_path = "docs/FRAMEWORK_BARE_ALPHA_3_ALPHA_EM_DIMENSION_FIXED_RATIO_SUPPORT_NOTE_2026-04-25.md"
+    note_path = "docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md"
     archive_root = ROOT / "archive_unlanded"
 
     def _authority_exists(rel: str) -> bool:
@@ -73,33 +73,34 @@ def audit_scope_boundary(audit: Audit) -> None:
     audit.check(f"source file exists: {note_path}", _authority_exists(note_path))
 
     note = read(note_path)
+    flat_note = " ".join(note.split())
 
     audit.check(
         "note status is conditional algebra lemma only",
-        "conditional algebra lemma only" in note and "not a live retained theorem" in note,
+        "conditional algebra lemma only" in flat_note and "not a live retained theorem" in flat_note,
     )
     audit.check(
         "note declares supplied inputs",
-        "Conditional assumptions" in note and "These inputs are hypotheses of the lemma" in note,
+        "assumed-input algebra" in note and "support-side inputs are assumed" in note,
     )
     audit.check(
         "note blocks retained EW-lane authority",
         "does not assert that a retained EW-normalization lane exists" in note
-        and "not authority for an" in note,
+        and "does not derive the coupling inputs" in note,
     )
     audit.check(
         "note blocks minimal-stack promotion",
-        "does not promote a Cl(3) -> SM support packet" in note
+        "does not promote a `Cl(3) -> SM` support packet" in flat_note
         and "minimal-input stack" in note,
     )
     audit.check(
         "note blocks low-energy phenomenology",
-        "does not claim direct low-energy" in note
-        and "low-energy observable" in note,
+        "does not claim direct low-energy phenomenology" in flat_note,
     )
     audit.check(
-        "note distinguishes SU(5)",
-        "formal normalization contrast" in note and "5/72" in note,
+        "note records current 2026-04-30 source authority",
+        "Date:** 2026-04-30" in note
+        and "archive_unlanded/framework-bare-alpha-assumed-input-salvage-2026-04-30/" in note,
     )
 
     forbidden = [

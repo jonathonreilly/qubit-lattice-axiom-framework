@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1369 |
-| Retained-grade rows, including boxed decorations | 1239 |
+| Applied audit verdicts | 1370 |
+| Retained-grade rows, including boxed decorations | 1240 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 220 |
-| Retained bounded rows | 760 |
+| Retained bounded rows | 761 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1325 |
+| Unaudited rows | 1324 |
 | Retained-pending-chain rows | 11 |
 | Audited conditional rows | 34 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1327 |
-| Ready rows | 21 |
+| Total pending rows | 1326 |
+| Ready rows | 20 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
 | Medium pending | 365 |
-| Leaf pending | 385 |
+| Leaf pending | 384 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07`](../../docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`lattice_total_momentum_conservation_theorem_note_2026-05-02`](../../docs/LATTICE_TOTAL_MOMENTUM_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`lensing_centroid_multipole_no_go_bounded_theorem_note_2026-06-08`](../../docs/LENSING_CENTROID_MULTIPOLE_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`lepton_phase_modulus_separation_no_go_2026-06-06`](../../docs/LEPTON_PHASE_MODULUS_SEPARATION_NO_GO_2026-06-06.md) - medium; unaudited
 - [`lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06`](../../docs/LORENTZ_NATURALNESS_GAP_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-06.md) - medium; unaudited
-- [`newtonian_distance_law_confirmed`](../../docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md) - leaf; unaudited
+- [`newtonian_distance_law_confirmed`](../../docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md) - medium; unaudited
+- [`nonlabel_grown_drift_basin_note`](../../docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

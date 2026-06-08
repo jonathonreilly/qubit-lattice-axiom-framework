@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-DM neutrino weak-triplet coefficient axiom boundary.
+DM neutrino weak-triplet coefficient framework boundary.
 
 Framework convention for this runner:
-  "axiom" means only the single framework axiom
-
-      Cl(3) on Z^3.
+  the legacy claim id contains "axiom", but the live framework baseline is the
+  named Lattice + Quantum + Record axiom set. This packet uses the Lattice +
+  Quantum algebraic surface, not a new or single axiom.
 
 Question:
-  Does the current single-axiom Cl(3) on Z^3 stack, together with the current
+  Does the current Lattice + Quantum baseline, together with the current
   derived atlas rows, already derive the transfer coefficients c_odd and
   M_even in
 
@@ -81,21 +81,27 @@ def compact(text: str) -> str:
     return "".join(text.split())
 
 
-def part1_axiom_means_only_cl3_on_z3() -> None:
+def part1_framework_baseline_is_named_lattice_quantum_record() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: FRAMEWORK AXIOM MEANS ONLY Cl(3) ON Z^3")
+    print("PART 1: FRAMEWORK BASELINE IS LATTICE + QUANTUM + RECORD")
     print("=" * 88)
 
-    flagship = read("docs/FLAGSHIP_PAPER_CONTRIBUTION_STATEMENT_NOTE.md")
+    minimal = read("docs/MINIMAL_AXIOMS_2026-06-05.md")
     transfer = read("docs/DM_NEUTRINO_WEAK_TRIPLET_TRANSFER_CLASS_THEOREM_NOTE_2026-04-15.md")
 
     check(
-        "The framework sentence states the single physical theory is Cl(3) on Z^3",
-        "We take `Cl(3)` on `Z^3` as the physical theory. Everything else is"
-        in flagship,
+        "The live framework baseline names Lattice, Quantum, and Record",
+        "1. **Lattice**" in minimal
+        and "2. **Quantum**" in minimal
+        and "3. **Record**" in minimal,
     )
     check(
-        "The transfer-class theorem is a derived structural theorem on top of that single axiom",
+        "The Lattice + Quantum surface supplies Z^3 and the one-qubit/Cl(3,0) carrier",
+        "The site set is `Z^3`" in minimal
+        and "`A_x ~= M_2(C)`, equivalently `Cl(3,0)`" in minimal,
+    )
+    check(
+        "The transfer-class theorem is a derived structural theorem on top of the baseline surface",
         "exact transfer-class theorem" in transfer and "coefficient problem" in transfer,
     )
 
@@ -176,20 +182,10 @@ def part3_the_exact_source_carrier_closes_the_even_leg() -> None:
 
 def part4_the_current_single_axiom_boundary_is_exact() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: THE CURRENT SINGLE-AXIOM BOUNDARY IS EXACT")
+    print("PART 4: THE CURRENT FRAMEWORK BOUNDARY IS EXACT")
     print("=" * 88)
 
-    # Stale-path: the boundary note (this runner's own note) was moved to
-    # `archive_unlanded/dm-neutrino-stale-runners-2026-04-30/` because the
-    # broader DM trim retired the runner-as-canonical-claim pairing for this
-    # row. The substring checks below verify the historical note content,
-    # which the archive preserves verbatim. Redirect the read to the archive
-    # location so this runner remains a self-contained verification of its
-    # own load-bearing source-amplitude / benchmark-bounded content.
-    boundary = read(
-        "archive_unlanded/dm-neutrino-stale-runners-2026-04-30/"
-        "DM_NEUTRINO_WEAK_TRIPLET_COEFFICIENT_AXIOM_BOUNDARY_NOTE_2026-04-15.md"
-    )
+    boundary = read("docs/DM_NEUTRINO_WEAK_TRIPLET_COEFFICIENT_AXIOM_BOUNDARY_NOTE_2026-04-15.md")
 
     check(
         "The boundary note records that the live gap is now source amplitudes rather than transfer coefficients",
@@ -205,10 +201,10 @@ def part4_the_current_single_axiom_boundary_is_exact() -> None:
 
 def main() -> int:
     print("=" * 88)
-    print("DM NEUTRINO WEAK-TRIPLET COEFFICIENT AXIOM BOUNDARY")
+    print("DM NEUTRINO WEAK-TRIPLET COEFFICIENT FRAMEWORK BOUNDARY")
     print("=" * 88)
 
-    part1_axiom_means_only_cl3_on_z3()
+    part1_framework_baseline_is_named_lattice_quantum_record()
     part2_c_odd_is_now_fixed_by_bosonic_matching()
     part3_the_exact_source_carrier_closes_the_even_leg()
     part4_the_current_single_axiom_boundary_is_exact()

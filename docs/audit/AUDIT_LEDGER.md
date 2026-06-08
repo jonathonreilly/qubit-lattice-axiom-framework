@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 208 |
 | **retained_no_go** | 219 |
-| **retained_bounded** | 749 |
+| **retained_bounded** | 750 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1347 |
+| unaudited | 1346 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1174 |
+| `audited_clean` | 1175 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1662 |
+| `unaudited` | 1661 |
 
 | claim_type | count |
 |---|---:|
@@ -766,6 +766,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_finite_path_explanation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lensing_long_path_test_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11053,6 +11054,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The bounded table reports a total slope range of about 2.02, from +0.58 to -1.43, across the enumerated kH sweep, so the fitted internal slope is strongly k-dependent on this setup.  _(class `C`)_
 - **chain closes:** True — The current cache is SHA-pinned to the runner, completed with exit_code=0, and its stdout reproduces the source slope table and kH=5.0 fit failures. The runner computes the finite DAG propagation/Kubo values and log-log fits over the enumerated grid rather than importing the reported slopes; closure is only for that bounded internal numerical sweep.
 - **rationale:** The finite numerical artifact closes: the source table matches the completed cache, and the runner source constructs the Fam1 DAGs, sweeps kH/seeds/b, computes Kubo responses, and fits slopes without hard-coding the table values. I count the runner as a C-style bounded computation rather than the mechanical D label because the scoped claim is internal runner output, not an external comparator match. Clean status is granted only under the narrowed scope; the source's mechanism, periodicity, eikonal, and physical gravitational-response language remains outside the audited claim.
+- **auditor confidence:** high
+
+### `lensing_long_path_test_note`
+
+- **Note:** [`LENSING_LONG_PATH_TEST_NOTE.md`](../../docs/LENSING_LONG_PATH_TEST_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Lane L++ check that the centered finite-path Fermat surrogate's short-path regime-transition prediction fails for the kubo_true detector-centroid observable at T_phys=7.5, H=0.25 on b in {3,4,5,6}; the coarse T_phys=45 run is only diagnostic.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-192500-fb864f0a62-lensing_long_path_test_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At H=0.25, the T_phys=7.5 kubo_true fit gives slope -1.4356 on b in {3,4,5,6}, essentially matching the retained T_phys=15 slope near -1.43 while the finite-path formula predicts -1.7336 at T_phys=7.5.  _(class `C`)_
+- **chain closes:** True — The primary runner recomputes the T_phys=7.5 kubo_true values from the DAG/Kubo propagator and the helper source does not hard-code the contested short-path slope. The T_phys=15 comparison slope is supplied by a retained_no_go cited authority, and no open positive layer-weighted bridge is needed to falsify the surrogate prediction.
+- **rationale:** Independent recomputation of the displayed finite-path formula slopes gives -1.7336, -1.4188, and -1.0776 for L_eff=5, 10, and 30, matching the packet. Independently fitting the stdout T_phys=7.5, H=0.25 kubo_true values gives slope -1.4356 with R2=0.9985, also matching the packet. The runner source instantiates the lattice/DAG propagation and first-order Kubo calculation rather than reading the contested value from another note. The audited conclusion is limited to falsifying this finite-path surrogate's regime-transition prediction, not deriving the unknown positive mechanism for the observed slope.
 - **auditor confidence:** high
 
 ### `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26`

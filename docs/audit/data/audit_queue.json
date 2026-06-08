@@ -3,7 +3,7 @@
     "critical": 327,
     "high": 250,
     "leaf": 402,
-    "medium": 370
+    "medium": 369
   },
   "cycle_break_target_count": 15,
   "cycle_break_targets": [
@@ -17650,27 +17650,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lensing_long_path_test_note",
+      "claim_id": "lensing_adjoint_kernel_note",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "lensing_finite_path_explanation_note"
+        "lensing_long_path_test_note",
+        "lensing_beta_sweep_note"
       ],
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/kubo_continuum_limit.py"
       ],
-      "load_bearing_score": 6.728,
-      "note_path": "docs/LENSING_LONG_PATH_TEST_NOTE.md",
+      "load_bearing_score": 6.644,
+      "note_path": "docs/LENSING_ADJOINT_KERNEL_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/lensing_long_path_test.py",
-      "transitive_descendants": 52
+      "runner_path": "scripts/lensing_adjoint_kernel_probe.py",
+      "transitive_descendants": 49
     },
     {
       "audit_independence_required": "any_non_self",
@@ -21664,33 +21665,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_koide_scale_selector_reparameterization_theorem.py",
-      "transitive_descendants": 49
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lensing_adjoint_kernel_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lensing_long_path_test_note",
-        "lensing_beta_sweep_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/kubo_continuum_limit.py"
-      ],
-      "load_bearing_score": 6.644,
-      "note_path": "docs/LENSING_ADJOINT_KERNEL_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/lensing_adjoint_kernel_probe.py",
       "transitive_descendants": 49
     },
     {
@@ -29226,6 +29200,36 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lensing_deflection_note",
+        "lensing_long_path_test_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/kubo_continuum_limit.py",
+        "scripts/lensing_adjoint_kernel_probe.py",
+        "scripts/lensing_adjoint_kernel_reduced_model.py",
+        "scripts/lensing_deflection_sweep.py"
+      ],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_lensing_exponent_is_dipole_crossover.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -32293,36 +32297,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lensing_deflection_note",
-        "lensing_long_path_test_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/kubo_continuum_limit.py",
-        "scripts/lensing_adjoint_kernel_probe.py",
-        "scripts/lensing_adjoint_kernel_reduced_model.py",
-        "scripts/lensing_deflection_sweep.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_lensing_exponent_is_dipole_crossover.py",
       "transitive_descendants": 1
     },
     {
@@ -40855,6 +40829,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 32,
-  "total_pending": 1349
+  "ready_count": 33,
+  "total_pending": 1348
 }

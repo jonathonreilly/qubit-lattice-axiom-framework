@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1347 |
-| Retained-grade rows, including boxed decorations | 1225 |
+| Applied audit verdicts | 1348 |
+| Retained-grade rows, including boxed decorations | 1226 |
 | Retained positive theorems | 208 |
 | Retained no-go rows | 219 |
-| Retained bounded rows | 749 |
+| Retained bounded rows | 750 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
-| Unaudited rows | 1347 |
+| Unaudited rows | 1346 |
 | Retained-pending-chain rows | 11 |
 | Audited conditional rows | 27 |
 | Audited renaming rows | 35 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1349 |
-| Ready rows | 32 |
+| Total pending rows | 1348 |
+| Ready rows | 33 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
-| Medium pending | 370 |
+| Medium pending | 369 |
 | Leaf pending | 402 |
 
 Next ready rows by queue order:
 
-- [`lensing_long_path_test_note`](../../docs/LENSING_LONG_PATH_TEST_NOTE.md) - medium; unaudited
+- [`lensing_adjoint_kernel_note`](../../docs/LENSING_ADJOINT_KERNEL_NOTE.md) - medium; unaudited
 - [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md) - medium; unaudited
 - [`plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md) - medium; unaudited

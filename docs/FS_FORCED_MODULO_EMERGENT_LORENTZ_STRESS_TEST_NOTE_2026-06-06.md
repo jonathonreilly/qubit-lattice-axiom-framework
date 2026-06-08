@@ -34,14 +34,15 @@ emergent-Lorentz continuum.
 | Link | Content | Repo status |
 |---|---|---|
 | **A** | the qubit carries spin-1/2 | **retained** (`per_site_su2_spin_half`); the rotation su(2) `S_i=σ_i/2` *are* the Clifford Spin(3) bivectors (`internal_external_su2_merger`, retained_bounded) |
-| **B** | algebra-3 = spatial-3 | **retained at the discrete level** (`O_h` acts on Cl(3) by the vector rep; qubit = 2D spinor, `2π=−1`; `cl3_oh_cubic_lift`). Continuum upgrade = Link C — **not the residual** |
+| **B** | algebra-3 = spatial-3 | **abstract O_h vector rep: retained** (`O_h` acts on the *abstract* Cl(3) by the vector rep; qubit = 2D spinor, `2π=−1`; `cl3_oh_cubic_lift`). The *algebra-3 = spatial-3 identification* is **CONDITIONAL on the staggered/Kähler-Dirac realization gate (B)** — an admission (see the 2026-06-08 correction); so **B IS part of the residual** (with C) |
 | **C** | emergent Lorentz | framework **target** / bounded-conditional (`emergent_lorentz_invariance` retained_bounded) — **not a new axiom** |
 | **D** | spin-statistics theorem (engine) | **rigorous comparator**: a spin-1/2 field quantized bosonically is inconsistent (energy unbounded below / trivial field; Pauli 1940, Streater–Wightman). So spin-1/2 + Lorentz + positivity ⟹ **fermionic forced**; the hard-core **spin-0** boson is excluded |
 
 Verified in the runner: the spin-1/2 CCR attempt has a `−E` mode (unbounded below),
 while the spin-1/2 CAR spectrum is `≥ 0` — the engine's content.
 
-**The single residual** is the continuum upgrade of Link B (= Link C) plus the
+**The residual** is the *identification* Link B (the staggered/Kähler-Dirac realization-gate
+admission; see the 2026-06-08 correction), its continuum upgrade (= Link C), plus the
 OS→Wightman reconstruction **`R`** (`free_field_os_wightman_reconstruction`,
 unaudited), which must deliver the boost-spinor and the antiparticle sign **without
 presupposing the fermionic branch** (currently circular — see
@@ -77,6 +78,34 @@ remains open), so it should not be invoked prematurely or attributed to Record.
   (and the reflection-positivity that excludes the bosonic branch) without
   presupposing the sign — the live blocker (cf. the prior failed-attempt
   `..._reflection_positivity_wilson_temporal_gauge_bridge`).
+
+## 2026-06-08 Correction — Link B "retained at the discrete level" was an over-read
+
+The Link-B row originally read "retained at the discrete level" for "algebra-3 = spatial-3".
+The cited authority (`cl3_oh_cubic_lift`, with `internal_external_su2_merger`) establishes only
+the **abstract** fact — `O_h` lifts to act on the **abstract `Cl(3)`/Pauli generator triple**
+as the vector rep (inner automorphisms of `M₂(ℂ)`) — **not** the **external identification**
+that the abstract Clifford-3 *is* the spatial `Z³` lattice-3:
+
+- the merger note's **Reading Rule** forbids citing it "to obtain lattice discreteness,
+  translation primitives, cubic Bravais structure," and it "does not identify cubic lattice
+  primitive translation axes";
+- #2559 ruled `M₂(ℂ)=Cl(3,0)=GA(3)` a **matched-pair consistency, not a derivation** (`d=3` is
+  a `Z³` primitive);
+- the double-use resolution
+  (`SU2_DOUBLE_USE_REDUCES_TO_ONE_INDEX_PAIRING_ADMISSION_FORCED_GIVEN_B_BOUNDED_NOTE_2026-06-08`
+  + `PAIRING_B_IS_IRREDUCIBLE_KINETIC_ORDER_SELECTOR_NO_GO_NOTE_2026-06-08`, PRs in flight)
+  shows the identification is the single atom **B** (the γ↔spatial-edge pairing = the
+  staggered/Kähler-Dirac realization gate): **forced GIVEN B, but B is an irreducible
+  admission**, not supplied by {Lattice, Quantum, Record} + permitted dynamics.
+
+**Corrected reading:** the *abstract* O_h vector rep on the Clifford triple is **retained/tight**;
+the *identification* algebra-3 = spatial-3 is **conditional on the realization gate (admission
+B)** — so B is **part of the residual** (with C), and the chain reads
+**FS = forced-modulo {identification B + emergent Lorentz (C) + R}**. Downstream notes must
+cite Link B only for the abstract O_h vector rep, **not** as supplying the external-spacetime
+identification. This re-tags one over-read; it does not overturn the core reclassification (FS
+is not a free-standing new-axiom admission).
 
 ## Honest scope
 

@@ -1,0 +1,33 @@
+loop_slug: dirac-weyl-branch-rank-count-20260608
+target_claim_id: dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28
+mode: science_fix
+base_ref: origin/main
+branch: physics-loop/dirac-weyl-branch-rank-count-20260608
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_status_change: true
+proposal_allowed: false
+files_touched:
+  - docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+  - scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
+blocker_attacked: >-
+  Conditional audit said the finite algebra/rank arithmetic checked out, but
+  the source explicitly imported physical spin/helicity and
+  particle-antiparticle label semantics.
+repair_summary: >-
+  The note now makes the load-bearing count a direct Dirac/Weyl branch-rank
+  theorem: Dirac 2+2=4 across massive energy branches, Weyl 1+1=2 after a
+  fixed chirality projection across massless energy branches. Conventional
+  physical labels are non-load-bearing interpretation.
+checks:
+  - python3 -m py_compile scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
+  - PYTHONPATH=scripts python3 scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
+check_result: "PASS: TOTAL PASS=144 FAIL=0"
+review_loop_disposition: pass
+next_exact_action: >-
+  Reviewer should inspect whether the direct branch-rank surface removes the
+  prior physical-label condition. Independent audit must decide any ledger
+  status change.

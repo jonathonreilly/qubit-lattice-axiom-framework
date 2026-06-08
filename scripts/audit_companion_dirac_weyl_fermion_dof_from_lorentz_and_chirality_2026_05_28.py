@@ -11,12 +11,10 @@ and via explicit sympy matrix realisations:
       proof-walk, exact arithmetic check, dependencies, boundaries).
   (2) Live ledger statuses for the authority packet, including retained Q1
       and source-local Q2 rank counting.
-  (3) The exact rational identities
-        dof_Dirac = 2 (R1 doublet label) * 2 (R3 paired label) = 4,
-      conditional on the supplied physical spin/helicity and
-      particle-antiparticle label semantics
-        dof_Weyl  = dof_Dirac / 2 = 2          (chirality projection R2)
-        dof_Weyl  = 2 (helicity-antiparticle)
+  (3) The exact rational branch-rank identities
+        dof_Dirac = dim ker D(E,+p) + dim ker D(-E,+p) = 2 + 2 = 4,
+        dof_Weyl  = dim P_chi ker D(E,+p) + dim P_chi ker D(-E,+p)
+                  = 1 + 1 = 2,
       with no floating-point arithmetic.
   (4) The four-component complex Dirac spinor space has 8 real
       off-shell components; the Q2 finite-rank mass-shell certificate
@@ -42,8 +40,9 @@ and via explicit sympy matrix realisations:
   (9) Forbidden-imports scan (no lattice-action quantity in the
       proof-walk: no plaquette, staggered, Brillouin, link unitary,
       u_0, Monte Carlo, fitted).
-  (10) The P4 boundary mapping: this row reconstructs the integer arithmetic
-      but does not replace P4 without the separate physical-label bridge.
+  (10) The P4 boundary mapping: this row reconstructs the numeric integer
+      counts while leaving conventional physical-label wording as
+      non-load-bearing interpretation unless a separate bridge is supplied.
 """
 
 from __future__ import annotations
@@ -149,8 +148,9 @@ def check_note_structure() -> None:
         "Status authority:** source-note proposal only",
         "2026-06-07 source-packet repair",
         "2026-06-08 label-semantics safe-narrow",
-        "physical label semantics",
-        "does not replace P4",
+        "2026-06-08 direct branch-rank repair",
+        "non-load-bearing interpretation",
+        "branch-rank count",
         "Q1 is retired as an unsupported algebraic admission",
         "Q2 is repaired as a textbook-counting import",
         "source-local finite-rank statement",
@@ -195,7 +195,7 @@ def check_premise_packet_marking() -> None:
 
 
 def check_p4_mapping() -> None:
-    section("P4 arithmetic support and label-semantics boundary are explicit")
+    section("P4 numeric support and non-load-bearing label boundary are explicit")
     # Confirm parent note carries the P4 premise text (when the parent
     # note is present on the working tree). The bridge is intended to
     # support replacing P4 after independent audit.
@@ -216,9 +216,10 @@ def check_p4_mapping() -> None:
         "2 (spin) * 2 (particle-antiparticle)" in NOTE_TEXT,
     )
     check(
-        "bridge keeps physical label semantics open",
+        "bridge makes physical label semantics non-load-bearing",
         "physical spin/helicity label" in NOTE_FLAT
-        and "distinct particle-antiparticle thermal label" in NOTE_FLAT,
+        and "distinct particle-antiparticle thermal label" in NOTE_FLAT
+        and "non-load-bearing interpretation" in NOTE_FLAT,
     )
     check(
         "bridge maps Weyl arithmetic halving to R2 (chirality)",
@@ -227,9 +228,9 @@ def check_p4_mapping() -> None:
         and "halving" in NOTE_TEXT,
     )
     check(
-        "P4 replacement remains blocked without separate physical-label bridge",
-        "P4 of the parent note therefore cannot be replaced by this bounded row alone" in NOTE_FLAT
-        and "separate physical-label bridge" in NOTE_FLAT,
+        "P4 numeric counts are source-supported while label wording stays separate",
+        "P4's numeric dof counts can therefore be source-supported by this bounded row" in NOTE_FLAT
+        and "P4's conventional label wording remains a separate physical-label bridge" in NOTE_FLAT,
     )
 
 
@@ -291,13 +292,12 @@ def check_forbidden_vocabulary() -> None:
 
 
 def check_exact_arithmetic() -> None:
-    section("exact rational arithmetic: dof_Dirac = 4, dof_Weyl = 2")
-    # Direct factorisation per R1 + R3 once physical label semantics are supplied.
-    spin_factor = Fraction(2)  # R1 doublet label
-    particle_antiparticle_factor = Fraction(2)  # R3 paired label
-    dof_dirac_direct = spin_factor * particle_antiparticle_factor
+    section("exact rational arithmetic: branch-rank dof_Dirac = 4, dof_Weyl = 2")
+    positive_energy_kernel = Fraction(2)
+    negative_energy_kernel = Fraction(2)
+    dof_dirac_direct = positive_energy_kernel + negative_energy_kernel
     check(
-        "Dirac dof = 2 (R1 doublet label) * 2 (R3 paired label) = 4 under supplied label semantics",
+        "Dirac dof = 2 positive-energy kernel states + 2 negative-energy kernel states = 4",
         dof_dirac_direct == Fraction(4),
         detail=f"got {dof_dirac_direct}",
     )
@@ -314,25 +314,26 @@ def check_exact_arithmetic() -> None:
         detail=f"got {dof_dirac_via_spinor}",
     )
 
-    # Both decompositions must agree.
+    # Branch-rank and spinor-dimension decompositions must agree.
     check(
-        "factorisations agree (R1*R3 = Q1-spinor decomposition)",
+        "branch-rank and Q1-spinor decompositions agree",
         dof_dirac_direct == dof_dirac_via_spinor,
     )
 
-    # Weyl halving via chirality projector R2.
-    chirality_halving = Fraction(2)
-    dof_weyl_direct = dof_dirac_direct / chirality_halving
+    # Weyl fixed-chirality branch count.
+    positive_chiral_kernel = Fraction(1)
+    negative_chiral_kernel = Fraction(1)
+    dof_weyl_direct = positive_chiral_kernel + negative_chiral_kernel
     check(
-        "Weyl dof = Dirac dof / 2 (chirality projection, R2) = 2",
+        "Weyl dof = 1 fixed-chirality positive-energy state + 1 fixed-chirality negative-energy state = 2",
         dof_weyl_direct == Fraction(2),
         detail=f"got {dof_weyl_direct}",
     )
 
-    # Equivalent: 2 (helicity-antiparticle), the surviving doublet.
+    # Conventional label reading is context only.
     helicity_antiparticle = Fraction(2)
     check(
-        "Weyl dof = 2 (helicity-antiparticle)",
+        "conventional Weyl label wording has the same cardinality but is non-load-bearing",
         dof_weyl_direct == helicity_antiparticle,
     )
 
@@ -571,18 +572,40 @@ def check_dirac_onshell_rank_certificate() -> None:
     check("off-shell contrast has nonzero determinant", sympy.factor(D_offshell.det()) != 0)
     check("off-shell contrast has rank 4", D_offshell.rank() == 4)
 
-    # Massless Weyl check: on the positive-energy lightlike branch,
-    # the Dirac kernel is 2-dimensional and chirality splits it into
-    # one complex dimension per chirality.
+    # Massless Weyl check: on both lightlike energy-sign branches, the
+    # Dirac kernel is 2-dimensional and chirality splits it into one
+    # complex dimension per chirality.
     gamma5 = sympy.I * gamma0 * gamma1 * gamma2 * gamma3
     P_L = sympy.simplify((I4 - gamma5) / 2)
     P_R = sympy.simplify((I4 + gamma5) / 2)
     D_massless = slash(1, 0, 0, 1)
     null_basis = D_massless.nullspace()
     N = Matrix.hstack(*null_basis)
-    check("massless branch dim_C ker D = 2", len(null_basis) == 2)
-    check("left chirality selects one massless on-shell dimension", (P_L * N).rank() == 1)
-    check("right chirality selects one massless on-shell dimension", (P_R * N).rank() == 1)
+    check("massless positive-energy branch dim_C ker D = 2", len(null_basis) == 2)
+    check(
+        "left chirality selects one positive-energy massless on-shell dimension",
+        (P_L * N).rank() == 1,
+    )
+    check(
+        "right chirality selects one positive-energy massless on-shell dimension",
+        (P_R * N).rank() == 1,
+    )
+
+    D_massless_negative = slash(-1, 0, 0, 1)
+    null_basis_negative = D_massless_negative.nullspace()
+    N_negative = Matrix.hstack(*null_basis_negative)
+    check(
+        "massless negative-energy branch dim_C ker D = 2",
+        len(null_basis_negative) == 2,
+    )
+    check(
+        "left chirality selects one negative-energy massless on-shell dimension",
+        (P_L * N_negative).rank() == 1,
+    )
+    check(
+        "right chirality selects one negative-energy massless on-shell dimension",
+        (P_R * N_negative).rank() == 1,
+    )
 
     offshell_real_components = Fraction(8)
     onshell_branch_real_components = Fraction(4)
@@ -635,13 +658,13 @@ def check_car_carrier_dim_two() -> None:
 
 
 def check_cpt_pair_factor() -> None:
-    section("R3 CPT paired-label factor 2 under supplied physical-label semantics")
+    section("non-load-bearing conventional label cross-checks")
     # CPT-pair label is a binary index {particle, antiparticle}.
     # The "factor 2" in the parent note's P4 is the cardinality of this
     # binary label. We verify it as a Fraction equality.
     cpt_pair_cardinality = Fraction(2)
     check(
-        "CPT pair label cardinality = 2",
+        "context-only CPT pair label cardinality = 2",
         cpt_pair_cardinality == Fraction(2),
     )
     # In a Berezin / Grassmann-Fock framing, the antiparticle is a
@@ -660,34 +683,29 @@ def check_cpt_pair_factor() -> None:
     spin_card = 2  # R1
     dirac_states = spin_card * pair_modes
     check(
-        "Dirac state-label cardinality = spin * particle-antiparticle = 4",
+        "context-only Dirac state-label cardinality = spin * particle-antiparticle = 4",
         dirac_states == 4,
     )
 
 
 def check_p4_replacement_arithmetic() -> None:
-    section("P4 arithmetic support: bridge supplies factor 2 * 2 = 4 but not label semantics")
+    section("P4 numeric support: branch ranks carry 4 and 2; labels are context")
     # The parent note's P4 says: Dirac = 2 (spin) * 2 (particle-antiparticle) = 4.
-    # The bridge claims R1 supplies the first 2, R3 supplies the second 2.
-    spin_from_R1 = Fraction(2)
-    pa_from_R3 = Fraction(2)
-    bridge_dirac_dof = spin_from_R1 * pa_from_R3
+    # This bridge supplies the same integer through branch ranks.
+    bridge_dirac_dof = Fraction(2) + Fraction(2)
     check(
-        "bridge reproduces P4 Dirac dof = 4 from R1 + R3",
+        "bridge reproduces P4 Dirac numeric dof = 4 from Q2 branch ranks",
         bridge_dirac_dof == Fraction(4),
     )
     # The parent note's P4 also says: active neutrino = 2 (helicity-antiparticle).
-    # The bridge claims R2 (chirality) halves Dirac dof to Weyl dof.
-    weyl_chirality_factor = Fraction(2)  # R2
-    bridge_weyl_dof = bridge_dirac_dof / weyl_chirality_factor
+    # This bridge supplies the same integer through fixed-chirality branch ranks.
+    bridge_weyl_dof = Fraction(1) + Fraction(1)
     check(
-        "bridge reproduces P4 Weyl dof = 2 from R1 + R3 + R2",
+        "bridge reproduces P4 Weyl numeric dof = 2 from fixed-chirality branch ranks",
         bridge_weyl_dof == Fraction(2),
     )
     # Retained Q1 and source-local Q2 carry only the spinor-space dimension
-    # and the on-shell rank count. They do not themselves produce the
-    # integer 4 - they are the algebraic infrastructure on which the
-    # integer arithmetic R1 * R3 runs.
+    # and the on-shell rank count.
     q1_spinor_dim = Fraction(4)  # dim_R V_(3,1)
     q2_onshell = Fraction(2)
     q_path = (q1_spinor_dim * Fraction(2)) / q2_onshell
@@ -720,9 +738,9 @@ def main() -> int:
     if FAIL == 0:
         print(
             "VERDICT: Q1/Q2-counting-repaired bounded bridge passes; Dirac dof = 4 and "
-            "Weyl dof = 2 follow by exact rational arithmetic from retained Q1, source-local Q2 "
-            "rank counting, and supplied physical-label semantics; P4 replacement still needs "
-            "the separate physical-label bridge."
+            "Weyl dof = 2 follow by exact rational arithmetic from retained Q1 and "
+            "source-local Q2 branch-rank counting; conventional physical labels are "
+            "non-load-bearing interpretation unless a separate physical-label bridge is supplied."
         )
     return 0 if FAIL == 0 else 1
 

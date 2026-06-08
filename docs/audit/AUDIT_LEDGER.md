@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 755 |
+| **retained_bounded** | 756 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1338 |
+| unaudited | 1337 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1182 |
+| `audited_clean` | 1183 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1653 |
+| `unaudited` | 1652 |
 
 | claim_type | count |
 |---|---:|
@@ -78,10 +78,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 521 |
-| `high` | 443 |
-| `medium` | 772 |
-| `leaf` | 1275 |
+| `critical` | 520 |
+| `high` | 444 |
+| `medium` | 773 |
+| `leaf` | 1274 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 15
@@ -463,6 +463,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | C | - |
 | `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6477,6 +6478,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given CAR quantization, the negative-energy branch can be relabeled as a positive-energy antiparticle branch with H_CAR = sum_{p,s} E(p)(a^dag a + b^dag b), so the finite-mode Fock spectrum is bounded below by 0.  _(class `A`)_
 - **chain closes:** True — The one-hop retained_bounded authority supplies the continuum Euclidean Dirac kernel and scalar denominator. The remaining conclusions are finite-dimensional Clifford, spinor-completeness, pole-continuation, Hamiltonian-spectrum, and CAR occupation algebra identities, and no reconstruction or spin-statistics claim is imported.
 - **rationale:** The runner source performs actual finite matrix and finite Fock occupation checks rather than printing constants or importing a contested fitted value. Independent algebra confirms M(p)S(p)=I from the Euclidean Clifford relation, poles p4=+/-iE Wick-continue to p0=+/-E, H_D^2=E^2 with double degeneracy, the displayed u/v completeness and bilinear signs match the standard Dirac-basis construction for positive mass, and finite CAR occupations make the displayed normal-ordered H_CAR nonnegative. The source note explicitly excludes Wightman reconstruction, microcausality, CAR selection from covariance, and spin-statistics closure, so the audited chain closes only at the bounded free-mode algebra level.
+- **auditor confidence:** high
+
+### `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`
+
+- **Note:** [`FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md`](../../docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-195557-122d5fe85f-free_dirac_poincare_generato`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The displayed mass-shell/Wigner action is a strongly continuous unitary representation, so Stone's theorem supplies the self-adjoint one-parameter generators.  _(class `A`)_
+- **chain closes:** True — The cited companion and bridge authorities are retained_bounded and supply the explicit carrier, invariant mass-shell measure, Wigner SU(2) carrier/cocycle facts, strong continuity, and Stone consequence. The rapidity identities and Gaussian analytic-vector obstruction are standard algebraic checks at the restricted free-field scope.
+- **rationale:** The load-bearing step is a class-A functional-analytic closure over retained_bounded one-hop inputs, not a first-principles lattice derivation. The previously missing Wigner strong-continuity dependency is now explicit and supplies the direct integrability route the parent relies on. The runner mostly verifies source anchors and finite/proxy algebraic checks, but that is adequate because the upstream retained_bounded authorities are included as inputs. The clean scope remains bounded to the supplied continuum free one-particle carrier and does not derive lattice Lorentz symmetry, spin-statistics, or an interacting theory.
 - **auditor confidence:** high
 
 ### `free_dirac_poincare_representation_bounded_note_2026-05-30`

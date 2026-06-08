@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1356 |
-| Retained-grade rows, including boxed decorations | 1233 |
+| Applied audit verdicts | 1357 |
+| Retained-grade rows, including boxed decorations | 1234 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 220 |
-| Retained bounded rows | 755 |
+| Retained bounded rows | 756 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
-| Unaudited rows | 1338 |
+| Unaudited rows | 1337 |
 | Retained-pending-chain rows | 11 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1340 |
-| Ready rows | 28 |
+| Total pending rows | 1339 |
+| Ready rows | 29 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
 | Medium pending | 365 |
-| Leaf pending | 398 |
+| Leaf pending | 397 |
 
 Next ready rows by queue order:
 
-- [`free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`nonlabel_grown_basin_note`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md) - medium; unaudited
 - [`wide_lattice_h2t_distance_law_note`](../../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md) - medium; unaudited
 - [`generation_dial_local_stability_grammar_2026-06-05`](../../docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md) - medium; unaudited
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - medium; unaudited
 - [`magnitude_temporal_factor_is_count_not_rate_2026-06-06`](../../docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md) - medium; unaudited
 - [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
-- [`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
+- [`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
+- [`beta6_plaquette_multicube_resummation_relocation_note_2026-05-31`](../../docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,10 +81,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3129 |
-| Critical nodes | 524 |
-| High nodes | 445 |
-| Medium nodes | 813 |
-| Leaf nodes | 1347 |
+| Critical nodes | 523 |
+| High nodes | 446 |
+| Medium nodes | 814 |
+| Leaf nodes | 1346 |
 
 Top load-bearing rows by graph score:
 

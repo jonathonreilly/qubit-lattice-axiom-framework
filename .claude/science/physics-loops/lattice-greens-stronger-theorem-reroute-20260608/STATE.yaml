@@ -1,0 +1,23 @@
+loop: lattice-greens-stronger-theorem-reroute-20260608
+created: 2026-06-08
+base: origin/main@d9a4a67eb
+branch: physics-loop/lattice-greens-stronger-theorem-reroute-20260608
+target_claim_id: lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07
+mode: science-fix
+actual_current_surface_status: exact-support
+artifact_role: dependency_reroute
+active_route: "Route heat-kernel leading asymptotic through stronger native lattice-correction theorem."
+files_touched:
+  - docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py
+  - logs/runner-cache/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.txt
+open_imports:
+  - "Direct uniform diffusive Bessel/local-CLT proof remains open as an alternate route."
+  - "Physical G_Newton/lattice-to-meter calibration remains excluded."
+verification:
+  - "python3 scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py"
+  - "python3 -m py_compile scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py"
+  - "git diff --name-only -- docs/audit"
+next_exact_action: "Open PR for reviewer extraction."
+stop_condition: "This block is packaged; continue campaign on the next active conditional row."

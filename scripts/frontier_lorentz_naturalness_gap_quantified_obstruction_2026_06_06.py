@@ -138,16 +138,20 @@ def main():
     # =====================================================================
     section("Part D: the residual gap (net delta v|_IR vs the bounds)")
     # =====================================================================
-    worst_gap = 0.0
+    smallest_colored_gap = float("inf")
     for gamma in (0.1, 0.2, 0.3):
         mu = 1.0  # GeV
         dv_IR = dv_UV * (mu / M_PL) ** gamma
         gap_q = np.log10(dv_IR / 1e-12)   # vs quark/gluon (weakest)
         gap_g = np.log10(dv_IR / 1e-20)   # vs photon
-        worst_gap = max(worst_gap, gap_q)
+        smallest_colored_gap = min(smallest_colored_gap, gap_q)
         print(f"     gamma={gamma}: delta v|_IR(1 GeV) ~ {dv_IR:.2e}  | gap vs quark/gluon(1e-12) = {gap_q:.1f} orders; vs photon(1e-20) = {gap_g:.1f}")
     check("(D1) even for the WEAKEST bound and the most-optimistic gamma, a multi-order gap REMAINS",
-          worst_gap > 3.0, detail=f"smallest gap (quark/gluon, gamma=0.3) ~ {worst_gap:.1f} orders; tight bounds 12-16 orders")
+          smallest_colored_gap > 3.0,
+          detail=(
+              "smallest gap (quark/gluon, gamma=0.3) "
+              f"~ {smallest_colored_gap:.1f} orders; tight bounds 12-16 orders"
+          ))
 
     # =====================================================================
     section("Part E: what would close it (and why the framework lacks it)")

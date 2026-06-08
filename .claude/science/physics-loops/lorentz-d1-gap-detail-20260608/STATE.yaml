@@ -1,0 +1,16 @@
+loop: lorentz-d1-gap-detail-20260608
+goal: "Repair the D1 smallest-gap reporting detail in the Lorentz naturalness runner/cache."
+target_status: conditional-support
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+target_claim_id: lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06
+blocker: "also fix the runner D1 smallest-gap reporting detail"
+files_touched:
+  - scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py
+  - logs/runner-cache/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.txt
+open_imports:
+  - "beta=6/g_bare, Collins regeneration coefficient, and physical LV anomalous-dimension bounds remain premise/bridge blockers."
+review_status: pending
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer should confirm this only repairs the arithmetic/reporting detail and does not claim the deeper bridge blockers are closed."
+stop_condition: "PR opened for review."

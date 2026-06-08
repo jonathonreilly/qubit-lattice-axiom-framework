@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py
-runner_sha256: ab6f3cb87d74a056e1cd751b67785c1ecff75b21a0b1df5fad2471ab1db60824
+runner_sha256: 254607600be2b575e6fcba2e242fb1c87389634f243d682477ebd6295b7c4a32
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================================
@@ -41,7 +41,7 @@ Part D: the residual gap (net delta v|_IR vs the bounds)
      gamma=0.1: delta v|_IR(1 GeV) ~ 7.82e-05  | gap vs quark/gluon(1e-12) = 7.9 orders; vs photon(1e-20) = 15.9
      gamma=0.2: delta v|_IR(1 GeV) ~ 9.65e-07  | gap vs quark/gluon(1e-12) = 6.0 orders; vs photon(1e-20) = 14.0
      gamma=0.3: delta v|_IR(1 GeV) ~ 1.19e-08  | gap vs quark/gluon(1e-12) = 4.1 orders; vs photon(1e-20) = 12.1
-  [PASS] (D1) even for the WEAKEST bound and the most-optimistic gamma, a multi-order gap REMAINS  --  smallest gap (quark/gluon, gamma=0.3) ~ 7.9 orders; tight bounds 12-16 orders
+  [PASS] (D1) even for the WEAKEST bound and the most-optimistic gamma, a multi-order gap REMAINS  --  smallest gap (quark/gluon, gamma=0.3) ~ 4.1 orders; tight bounds 12-16 orders
 
 ----------------------------------------------------------------------------------------------
 Part E: what would close it (and why the framework lacks it)

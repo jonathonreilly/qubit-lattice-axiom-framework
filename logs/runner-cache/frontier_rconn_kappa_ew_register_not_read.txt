@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rconn_kappa_ew_register_not_read.py
+runner_sha256: 1e27c88be2d165c336df5185a110b78339e901402492e0b8794fee1174ac79df
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+PASS: FIERZ_S_plus_C_exact_Nc2 ||G||^2=3.4695 = S+C=3.4695
+PASS: FIERZ_S_plus_C_exact_Nc3 ||G||^2=14.9563 = S+C=14.9563
+PASS: FIERZ_S_plus_C_exact_Nc4 ||G||^2=28.4183 = S+C=28.4183
+PASS: FIERZ_S_plus_C_exact_Nc5 ||G||^2=52.0924 = S+C=52.0924
+PASS: S_is_the_I_over_d_trace_reference_component |<G,I/sqrt(Nc)>|^2=0.486609 = S(singlet/disconnected)=0.486609
+PASS: octet_generators_are_traceless_content every t^A is traceless -> the C-channel is the traceless (octet) content
+PASS: KAPPA_octet_only_gives_F_adj_8_9 kappa_EW=0 -> R_conn=F_adj=(Nc^2-1)/Nc^2=0.8889=8/9
+PASS: KAPPA_total_gives_1 kappa_EW=1 -> R_phys=1 (the trace S registered too)
+PASS: REGISTER_traceless_content_fraction_is_F_adj dim(traceless octet)/dim(all) = 8/9 = F_adj = 8/9 -> register-not-read -> kappa_EW=0
+PASS: FAMILY_register_not_read_gives_Nc2m1_over_Nc2 register-not-read selects R_conn=(N_c^2-1)/N_c^2 at every N_c (N_c=3 -> 8/9); not an N_c=3 coincidence
+
+TOTAL: PASS=10 FAIL=0
+VERDICT: the EW-current connected/disconnected matching rule kappa_EW is the framework's register-not-read distinction. In the Fierz operator basis the I/sqrt(N_c)-trace channel S is the I/d reference (unregistered reconstruction) and the traceless octet C is the registered content; register-not-read selects kappa_EW=0 EXACTLY -> R_conn=(N_c^2-1)/N_c^2=8/9 (N_c=3). This supplies the matching-rule selector the prior no-go left free under CMT/OZI. CRUX (named residual): formal extension of register-not-read to the color operator-trace channel.
+
+----- stderr -----
+

@@ -1,4 +1,4 @@
-# Interacting Emergent Lorentz: the Velocity Anisotropy is an Attractive IR Fixed Point, and the Naturalness Gate Reduces to One Number
+# Interacting Emergent Lorentz Conditional Algebra: Supplied One-Loop Velocity Attractor and One-Scalar Gate Boundary
 
 **Date:** 2026-06-06
 **Claim type:** bounded_theorem
@@ -35,8 +35,8 @@ bridges are supplied and independently audited.
 
 ## Role
 
-This note is a standalone bounded packet for the emergent-Lorentz lane's
-**interacting radiative-naturalness problem**. It treats spatial `Z^3`,
+This note is a standalone conditional-algebra packet for the emergent-Lorentz
+lane's **interacting radiative-naturalness problem**. It treats spatial `Z^3`,
 continuous time, and supplied gauge/Yukawa dynamics as the context under test;
 it does not rely on any unlanded tree-level packet as a load-bearing dependency.
 Collins–Perez–Sudarsky–Urrutia–Vucetich (*PRL* **93** (2004) 191301) argue that

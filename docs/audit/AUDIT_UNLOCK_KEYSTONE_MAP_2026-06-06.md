@@ -71,17 +71,31 @@ why their fanout is enormous.
    blocker-fanout tiebreaker** to `compute_audit_queue.py` / `compute_audit_dispatch_queue.py`
    (currently ready-first + criticality; fanout is the missing signal). The runner here
    computes that fanout and can seed it.
-2. **Iterate.** After each keystone is audited (its deps become retained-grade for the
+2. **BREAK THE KEYSTONE CYCLES FIRST (prerequisite for #1).** Three of the top
+   keystones are **trapped in mutual-dependency 2-cycles**, so they can **never become
+   `ready`** (each waits on the other) and the dispatch will *never* reach them via the
+   ready-DAG — the keystone unlock in #1 is blocked until the cycle is cut:
+
+   | keystone 2-cycle (mutual dep `A ↔ B`) | max fanout | break |
+   |---|---:|---|
+   | `axiom_first_reflection_positivity_theorem` ↔ `rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair` | **949** | the `_repair` legitimately depends on the theorem; the theorem→repair back-edge is the spurious one (a 04-29 theorem cannot depend on its own later repair) |
+   | `observable_principle_from_axiom_note` ↔ `observable_principle_positive_source_cone_p2_elimination` | **765** | the `_p2_elimination` extends the parent; the parent→elimination back-edge is the spurious one |
+   | `staggered_dirac_kawamoto_smit_conditional_realization` ↔ `staggered_dirac_chirality_parity_bridge` | **256** | break per the `cycle_break_targets` rule (one is the base) |
+
+   Cutting these three back-edges (a `missing_dependency_edge` re-pointing or removing the
+   anachronistic citation) makes the RP, observable-principle, and staggered-Dirac
+   keystones `ready` — directly enabling the ~949 / ~765 / ~256 cascades.
+3. **Iterate.** After each keystone is audited (its deps become retained-grade for the
    layer below), re-run this runner — the next layer of keystones surfaces. The DAG
    drains in ~log-depth waves rather than one-at-a-time.
 
 ## Secondary unlocks
 
-- **20 dependency back-edges (cycles).** Chains inside a cycle never become `ready`
-  (circular dep). The `cycle_break_targets` mechanism in `compute_audit_queue.py`
-  already surfaces these; breaking the 20 (via `missing_dependency_edge` naming or a
-  `retained_pending_chain` closure) unlocks the circular-blocked rows. Secondary to
-  the keystones but a clean, bounded fix.
+- **The remaining 12 (minor) cyclic SCCs** (max-fanout ≤ 28: the Born/Lüders record
+  cluster, the beta6-plaquette clusters, the qubit-foundations cluster). Lower leverage
+  than the three keystone cycles above; break via `cycle_break_targets`
+  (`missing_dependency_edge` naming or a `retained_pending_chain` closure) as the DAG
+  drains toward them.
 - **160 gated/dropped sources** (`stats.dropped_gated_sources`; cf.
   `never_gate_source_paths.txt`). These are excluded from the audit entirely. Reviewing
   which are gated for a stale reason and ungating the eligible ones recovers them.

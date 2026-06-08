@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_unlock_keystone_map_2026_06_06.py
-runner_sha256: 9d31d2ff361fe07949711cc0e18c1ad73d45d728bb9ef538dacb72405ab4e752
+runner_sha256: 633773351bddf4b46a0c179d4702471193e1929730bb57e6978dd56ccd6ab125
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 --- A: the bottleneck is DAG-drain (not blockers / broken edges) ---
@@ -35,13 +35,22 @@ PASS: the overwhelming majority of not-ready rows wait SOLELY on unaudited deps 
 PASS: a top ready keystone exists that unlocks >= 500 downstream blocked rows
 PASS: the top-5 ready keystones together gate a large majority (>= 60%) of the blocked backlog
 PASS: the top ready keystones are critical-criticality (foundational)
---- D: secondary unlocks (cycles + gated sources) ---
-  dependency back-edges (cycle indicators; never become 'ready' until broken)=20
+--- D: dependency cycles (Tarjan SCCs) -- KEYSTONE cycles block the top keystones ---
+  cyclic SCCs (mutual-dependency clusters; NONE become 'ready' until broken)=15
+    [KEYSTONE, max-fanout  949, size 2] rp_wilson_temporal_gauge_bridge_ <-> axiom_first_reflection_positivit
+    [KEYSTONE, max-fanout  765, size 2] observable_principle_positive_so <-> observable_principle_from_axiom_
+    [KEYSTONE, max-fanout  256, size 2] staggered_dirac_kawamoto_smit_co <-> staggered_dirac_chirality_parity
+    [minor, max-fanout   28, size 4] pre_record_reference_state_maxim <-> record_instrument_kernel_interfa <-> luders_rule_from_composition_con...
+    [minor, max-fanout   12, size 2] beta6_plaquette_connected_beta6_ <-> beta6_plaquette_d7_coefficient_a
+    [minor, max-fanout   10, size 5] beta6_plaquette_d8_coefficient_a <-> beta6_plaquette_d9_coefficient_b <-> beta6_plaquette_twocube_closed_f...
+PASS: cyclic SCCs exist (mutual-dep clusters that never become 'ready' until broken)
+PASS: at least one KEYSTONE cycle exists (a top keystone trapped in a cycle => break-first)
+PASS: the highest-fanout keystones are TRAPPED in cycles (RP / observable-principle / staggered) -> breaking these cycles is the PREREQUISITE for the keystone unlock
+--- D2: gated sources (secondary) ---
   gated/dropped sources (excluded from audit; review for ungating)=160
-PASS: dependency cycles exist and are a (secondary) unlock target (break them)
 PASS: gated sources exist and are a (secondary) unlock target (review for ungating)
 
-TOTAL: PASS=10 FAIL=0
+TOTAL: PASS=12 FAIL=0
 
 ----- stderr -----
 

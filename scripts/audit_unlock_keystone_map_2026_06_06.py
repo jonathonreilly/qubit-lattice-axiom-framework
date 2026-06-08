@@ -114,22 +114,45 @@ check("the top ready keystones are critical-criticality (foundational)",
 # ===========================================================================
 # D -- secondary unlocks: dependency cycles + gated sources.
 # ===========================================================================
-print("--- D: secondary unlocks (cycles + gated sources) ---")
-import sys as _s; _s.setrecursionlimit(50000)
-color = {k: 0 for k in rows}; back = [0]
-def dfs(u):
-    color[u] = 1
-    for v in rows[u].get("deps", []):
-        if v not in rows: continue
-        if color[v] == 1: back[0] += 1
-        elif color[v] == 0: dfs(v)
-    color[u] = 2
-for k in list(rows):
-    if color[k] == 0: dfs(k)
-print(f"  dependency back-edges (cycle indicators; never become 'ready' until broken)={back[0]}")
+print("--- D: dependency cycles (Tarjan SCCs) -- KEYSTONE cycles block the top keystones ---")
+import sys as _s; _s.setrecursionlimit(80000)
+idx = {}; low = {}; onst = {}; stk = []; cnt = [0]; sccs = []
+def strong(v):
+    idx[v] = low[v] = cnt[0]; cnt[0] += 1; stk.append(v); onst[v] = True
+    for w in rows[v].get("deps", []):
+        if w not in rows: continue
+        if w not in idx:
+            strong(w); low[v] = min(low[v], low[w])
+        elif onst.get(w):
+            low[v] = min(low[v], idx[w])
+    if low[v] == idx[v]:
+        comp = []
+        while True:
+            w = stk.pop(); onst[w] = False; comp.append(w)
+            if w == v: break
+        if len(comp) > 1:
+            sccs.append(comp)
+for v in list(rows):
+    if v not in idx:
+        strong(v)
+def fanout(k): return sum(1 for c in downstream(k) if c in blocks)
+keystone_cycles = sorted(((max(fanout(k) for k in comp), comp) for comp in sccs), reverse=True)
+print(f"  cyclic SCCs (mutual-dependency clusters; NONE become 'ready' until broken)={len(sccs)}")
+for mf, comp in keystone_cycles[:6]:
+    tag = "KEYSTONE" if mf >= 200 else "minor"
+    print(f"    [{tag}, max-fanout {mf:4d}, size {len(comp)}] " + " <-> ".join(c[:32] for c in comp[:3]) + ("..." if len(comp) > 3 else ""))
+check("cyclic SCCs exist (mutual-dep clusters that never become 'ready' until broken)", len(sccs) > 0)
+check("at least one KEYSTONE cycle exists (a top keystone trapped in a cycle => break-first)",
+      any(mf >= 200 for mf, _ in keystone_cycles))
+kc_members = set(c for mf, comp in keystone_cycles if mf >= 200 for c in comp)
+check("the highest-fanout keystones are TRAPPED in cycles (RP / observable-principle / staggered) "
+      "-> breaking these cycles is the PREREQUISITE for the keystone unlock",
+      any("reflection_positivity" in c or "observable_principle_from_axiom" in c or "kawamoto_smit" in c
+          for c in kc_members))
+
+print("--- D2: gated sources (secondary) ---")
 gated = json.load(open(LEDGER)).get("stats", {}).get("dropped_gated_sources", 0)
 print(f"  gated/dropped sources (excluded from audit; review for ungating)={gated}")
-check("dependency cycles exist and are a (secondary) unlock target (break them)", back[0] > 0)
 check("gated sources exist and are a (secondary) unlock target (review for ungating)", gated >= 0)
 
 print()

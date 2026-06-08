@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py
+runner_sha256: f1e7dd9f17457f993a8840bd95eb44418b53d0b123955a8c033d3b58b6dda502
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+--- Section A: magnitude exponent = mode COUNT (not rate) ---
+PASS: mode count = matrix dim = 8 * L_t (L_s^3=8 spatial x L_t temporal)
+PASS: the count scales LINEARLY with L_t (a count, dim(L_t=2)/dim(L_t=1)=2)
+PASS: mode COUNT is INDEPENDENT of the hopping rate u_0 (count, not rate)
+PASS: the per-mode VALUE (eigenvalues) DOES depend on u_0 -> that is the rate (alpha_LM/DELTA0), a SEPARATE gate, not the count
+--- Section B: counts are in the no-go's supported zone, rates are not ---
+PASS: the magnitude exponent is a transfer-step/mode COUNT
+PASS: a transfer-step COUNT is in the no-go's SUPPORTED zone (records may supply it)
+PASS: the no-go forbids RATE/METRIC, which the exponent is NOT (exponent != per-mode value)
+--- Section C: minimal temporal block = 2 (period-2 phase + 2-step positivity) ---
+PASS: staggered temporal phase eta_1(t)=(-1)^t has minimal period 2 -> minimal temporal block = 2
+PASS: 2-step contraction e^{-2E} in (0,1] (positive, forward channel) for all p
+PASS: single-step phase alternates (period 2) so the minimal positive unit is the 2-step block
+--- Section D: count survives the normalization that divides the rate-2 out ---
+PASS: OS normalization divides the ENERGY by 2 (rate-2 dissolves): H_wrong/H = 2 exactly
+PASS: the mode COUNT (number of eigenvalues) is INVARIANT under the energy rescaling
+PASS: count-2 (cardinality) and rate-2 (energy spacing) are DIFFERENT objects
+--- Section E: minimal block L_t=2 -> exponent 16 ---
+PASS: minimal reflection-positive block L_t=2 -> mode count = 8 x 2 = 16
+PASS: one minimal 2-step block = one record's temporal unit (per-record/UV readout, not continuum)
+
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

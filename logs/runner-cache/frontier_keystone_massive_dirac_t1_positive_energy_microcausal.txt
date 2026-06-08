@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_keystone_massive_dirac_t1_positive_energy_microcausal.py
+runner_sha256: 9de9ca8818975559da51bea9da747f815c022d88abdee94a37cfbf381d6e3ee4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+PASS: MODE_massive_dirac_pm_E spectrum +-E=1.118: 2 particle (u) + 2 antiparticle (v) modes -- both chiralities supplied
+PASS: T1_CAR_positive_energy CAR H_hat=E(a^dag a+b^dag b): eigs [0. 1. 1. 2.] >= 0 (POSITIVE)
+PASS: T1_Bose_unbounded_below Bose H_hat=E(a^dag a-b^dag b): min=-8 -> -inf as Fock grows (UNBOUNDED)
+PASS: T1_signflip_engine CAR b b^dag=1-b^dag b (+E b^dag b); Bose b b^dag=1+b^dag b (-E b^dag b): statistics fixes the sign
+PASS: CAUS_spinor_completeness_gives_canonical_CAR sum_s(u u^dag + v v^dag)=I_4 -> {psi_a,psi^dag_b}=delta_ab (CAR microcausal)
+PASS: CAUS_Bose_combination_is_non_canonical u u^dag - v v^dag != I -> the Bose commutator is non-canonical (acausal)
+PASS: BOOST_mass_is_lorentz_scalar S^-1 (m I) S = m I: the mass is boost-invariant -> massive field boost-covariant
+PASS: CLOSE_positive_energy_and_microcausality chirality supplied (#3317) -> T1 fires -> massive Dirac field is positive-energy + microcausal + boost-covariant; residual narrows to the OS->Wightman field delivery
+
+TOTAL: PASS=8 FAIL=0
+VERDICT: with the partner chirality supplied (companion #3317), the spin-statistics engine T1 fires for the framework's massive Dirac field: CAR forces a bounded-below H_hat=E(a^dag a+b^dag b) (positive energy) -- Bose is unbounded below; spinor completeness gives the canonical microcausal CAR anticommutator; and the Lorentz-scalar mass keeps it boost-covariant. The keystone's positive-energy / microcausality piece CLOSES. The single remaining residual of the program's deepest object is now the OS->Wightman FIELD DELIVERY (the reconstruction on the emergent-time Hilbert space) -- chirality, positive energy, microcausality, and boost covariance are all in hand.
+
+----- stderr -----
+

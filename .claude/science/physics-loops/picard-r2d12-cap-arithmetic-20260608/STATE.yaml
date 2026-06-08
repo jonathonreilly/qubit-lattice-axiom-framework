@@ -1,0 +1,16 @@
+loop_slug: picard-r2d12-cap-arithmetic-20260608
+mode: run
+target_claim_id: plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17
+target_status: best-honest-status
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: correct_nonloadbearing_order52_cap_arithmetic
+files_touched:
+  - docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md
+open_imports: []
+checks:
+  - python3 scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py
+  - python3 scripts/cached_runner_output.py --check-only scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py
+next_exact_action: Submit this arithmetic-drift fix for review/audit re-run.
+stop_condition: Coherent PR block complete; continue campaign by selecting the next conditional row.

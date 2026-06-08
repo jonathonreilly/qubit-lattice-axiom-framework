@@ -98,7 +98,7 @@ with `p_{k,m} in Q` that annihilates the truncated Taylor series of
 `L_2 = 0` (i.e. `p_{k,m} = 0` for all `(k, m)`).
 
 **(T2) Stability under depth.** Repeating the same construction at
-`ORDER = 52` (cap `num_eqs = min(47, 47) = 47 > 39`), with the
+`ORDER = 52` (cap `num_eqs = min(47, 48) = 47 > 39`), with the
 re-computed Taylor coefficients `a_0, ..., a_52`, the matching matrix
 of size `47 x 39` again has
 

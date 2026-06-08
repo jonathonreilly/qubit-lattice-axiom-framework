@@ -1,6 +1,8 @@
 # PR Backlog
 
-Status: pending PR creation.
+Status: PR created.
+
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3239
 
 Planned title:
 
@@ -16,4 +18,3 @@ python3 scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py
 git diff --check
 git diff --name-only -- docs/audit
 ```
-

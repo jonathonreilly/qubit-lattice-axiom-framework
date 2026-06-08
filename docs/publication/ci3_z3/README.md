@@ -1,4 +1,4 @@
-# Qubit-Lattice Axiom Framework Publication Package
+# Lattice-Quantum-Record Framework Publication Package
 
 This directory is the public scientific package for the current `main` branch.
 
@@ -18,18 +18,21 @@ clean, read legacy `retained` / `promoted` wording as proposed package status.
 
 ## Read In This Order
 
-1. [Public arXiv draft](./ARXIV_DRAFT.md)
-2. [Prediction surface](./PREDICTION_SURFACE_2026-04-15.md)
-3. [Quantitative summary table](./QUANTITATIVE_SUMMARY_TABLE.md)
-4. [Reproduce guide](./REPRODUCE.md)
-5. [Manuscript claims surface](./CLAIMS_TABLE.md)
-6. [Science map by domain](./SCIENCE_MAP.md)
-7. [Inputs and qualifiers](./INPUTS_AND_QUALIFIERS_NOTE.md)
-8. [What this paper does not claim](./WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)
-9. [Derivation / validation map](./DERIVATION_VALIDATION_MAP.md)
-10. [Results index](./RESULTS_INDEX.md)
-11. [Derivation atlas](./DERIVATION_ATLAS.md)
-12. [Full claim ledger](./FULL_CLAIM_LEDGER.md)
+1. [Generated front-door status snapshot](../../repo/FRONT_DOOR_STATUS.md)
+2. [Minimal Lattice/Quantum/Record axiom memo](../../MINIMAL_AXIOMS_2026-06-05.md)
+3. [Public arXiv draft](./ARXIV_DRAFT.md)
+4. [Current falsifiable predictions](./FALSIFIABLE_PREDICTIONS_2026-06-08.md)
+5. [Prediction surface](./PREDICTION_SURFACE_2026-04-15.md)
+6. [Quantitative summary table with audit badges](./QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md)
+7. [Reproduce guide](./REPRODUCE.md)
+8. [Manuscript claims with audit badges](./CLAIMS_TABLE_EFFECTIVE_STATUS.md)
+9. [Science map by domain](./SCIENCE_MAP.md)
+10. [Inputs and qualifiers](./INPUTS_AND_QUALIFIERS_NOTE.md)
+11. [What this paper does not claim](./WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)
+12. [Derivation / validation map with audit badges](./DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md)
+13. [Results index with audit badges](./RESULTS_INDEX_EFFECTIVE_STATUS.md)
+14. [Derivation atlas with audit badges](./DERIVATION_ATLAS_EFFECTIVE_STATUS.md)
+15. [Full claim ledger with audit badges](./FULL_CLAIM_LEDGER_EFFECTIVE_STATUS.md)
 
 For the full package-capture inventory, use:
 
@@ -38,8 +41,9 @@ For the full package-capture inventory, use:
 ## Current Package State
 
 - exact framework/backbone:
-  qubit-at-every-`Z^3`-site axioms with the equivalent `Cl(3,0)` local-algebra
-  reading, anomaly-forced `3+1`, exact native `SU(2)`, graph-first
+  the named Lattice, Quantum, and Record axiom surface with the equivalent
+  `Cl(3,0)` local-algebra reading for the one-site Quantum axiom,
+  anomaly-forced `3+1`, exact native `SU(2)`, graph-first
   structural `SU(3)`, exact discrete `3+1` GR, and the chosen continuum/QG
   identification chain
 - retained quantitative package:
@@ -215,7 +219,7 @@ same thing as the current active package state:
 ## Package Boundaries
 
 - framework/input boundary:
-  [MINIMAL_AXIOMS_2026-05-20.md](../../MINIMAL_AXIOMS_2026-05-20.md)
+  [MINIMAL_AXIOMS_2026-06-05.md](../../MINIMAL_AXIOMS_2026-06-05.md)
 - explicit package qualifiers:
   [INPUTS_AND_QUALIFIERS_NOTE.md](./INPUTS_AND_QUALIFIERS_NOTE.md)
 - explicit non-claims:

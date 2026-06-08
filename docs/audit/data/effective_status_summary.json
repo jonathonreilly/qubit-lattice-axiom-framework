@@ -1,25 +1,13 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1377,
+    "bounded_theorem": 1383,
     "decoration": 53,
-    "meta": 322,
-    "no_go": 331,
-    "open_gate": 137,
+    "meta": 323,
+    "no_go": 337,
+    "open_gate": 136,
     "positive_theorem": 773
   },
   "cycle_examples": [
-    [
-      "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06"
-    ],
-    [
-      "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-      "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03"
-    ],
-    [
-      "observable_principle_from_axiom_note",
-      "observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06"
-    ],
     [
       "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
       "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
@@ -27,11 +15,29 @@
     [
       "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
       "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+    ],
+    [
+      "beta6_delta_analytic_class_frontier_note_2026-05-30",
+      "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+      "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04"
+    ],
+    [
+      "beta6_delta_analytic_class_frontier_note_2026-05-30",
+      "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+      "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+      "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30"
+    ],
+    [
+      "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+      "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+      "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+      "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30"
     ]
   ],
-  "cycles_detected": 20,
+  "cycles_detected": 17,
   "effective_status_counts": {
-    "audited_conditional": 44,
+    "audited_conditional": 34,
     "audited_numerical_match": 15,
     "audited_renaming": 35,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
@@ -61,13 +67,13 @@
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 313,
-    "open_gate": 37,
-    "retained": 208,
-    "retained_bounded": 754,
+    "meta": 314,
+    "open_gate": 36,
+    "retained": 207,
+    "retained_bounded": 745,
     "retained_no_go": 218,
     "retained_pending_chain": 10,
-    "unaudited": 1310
+    "unaudited": 1342
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

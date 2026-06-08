@@ -1,119 +1,8 @@
 {
-  "cycle_count": 20,
+  "cycle_count": 17,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
-      "decision": null,
-      "edges": [
-        {
-          "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-          "to": "rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06"
-        },
-        {
-          "from": "rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06",
-          "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 1041,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
-          "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation",
-          "transitive_descendants": 1041
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md",
-          "title": "Reflection Positivity \u2014 Wilson Plaquette Temporal-Gauge Bridge: Sign Repair + a Manifestly-Positive Character-Coefficient Theorem (Repairs the `audited_failed` Bridge)",
-          "transitive_descendants": 1041
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0002",
-      "decision": null,
-      "edges": [
-        {
-          "from": "observable_principle_from_axiom_note",
-          "to": "observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06"
-        },
-        {
-          "from": "observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06",
-          "to": "observable_principle_from_axiom_note"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 843,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "observable_principle_from_axiom_note",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-          "title": "Observable Principle From Axiom Note",
-          "transitive_descendants": 843
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md",
-          "title": "Observable Principle Positive Source Cone P2 Elimination Narrow Theorem Note",
-          "transitive_descendants": 843
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0003",
-      "decision": null,
-      "edges": [
-        {
-          "from": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-          "to": "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03"
-        },
-        {
-          "from": "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03",
-          "to": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 316,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
-          "title": "Staggered-Dirac Chirality-Parity Bridge Narrow Theorem Note",
-          "transitive_descendants": 316
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md",
-          "title": "Staggered Dirac Kawamoto-Smit Conditional Realization Rescoping Companion",
-          "transitive_descendants": 316
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0004",
       "decision": null,
       "edges": [
         {
@@ -176,7 +65,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0005",
+      "cycle_id": "cycle-0002",
       "decision": null,
       "edges": [
         {
@@ -213,7 +102,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0006",
+      "cycle_id": "cycle-0003",
       "decision": null,
       "edges": [
         {
@@ -250,7 +139,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0007",
+      "cycle_id": "cycle-0004",
       "decision": null,
       "edges": [
         {
@@ -300,7 +189,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0008",
+      "cycle_id": "cycle-0005",
       "decision": null,
       "edges": [
         {
@@ -350,7 +239,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0009",
+      "cycle_id": "cycle-0006",
       "decision": null,
       "edges": [
         {
@@ -413,7 +302,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0010",
+      "cycle_id": "cycle-0007",
       "decision": null,
       "edges": [
         {
@@ -476,7 +365,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0011",
+      "cycle_id": "cycle-0008",
       "decision": null,
       "edges": [
         {
@@ -552,7 +441,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0012",
+      "cycle_id": "cycle-0009",
       "decision": null,
       "edges": [
         {
@@ -602,7 +491,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0013",
+      "cycle_id": "cycle-0010",
       "decision": null,
       "edges": [
         {
@@ -639,7 +528,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0014",
+      "cycle_id": "cycle-0011",
       "decision": null,
       "edges": [
         {
@@ -676,7 +565,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0015",
+      "cycle_id": "cycle-0012",
       "decision": null,
       "edges": [
         {
@@ -713,7 +602,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0016",
+      "cycle_id": "cycle-0013",
       "decision": null,
       "edges": [
         {
@@ -750,7 +639,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0017",
+      "cycle_id": "cycle-0014",
       "decision": null,
       "edges": [
         {
@@ -787,7 +676,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0018",
+      "cycle_id": "cycle-0015",
       "decision": null,
       "edges": [
         {
@@ -824,7 +713,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0019",
+      "cycle_id": "cycle-0016",
       "decision": null,
       "edges": [
         {
@@ -861,7 +750,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0020",
+      "cycle_id": "cycle-0017",
       "decision": null,
       "edges": [
         {
@@ -899,7 +788,7 @@
     }
   ],
   "length_counts": {
-    "2": 13,
+    "2": 10,
     "3": 3,
     "4": 3,
     "5": 1

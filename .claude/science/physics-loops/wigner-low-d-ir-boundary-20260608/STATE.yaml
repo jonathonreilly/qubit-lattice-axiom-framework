@@ -1,0 +1,21 @@
+loop_slug: wigner-low-d-ir-boundary-20260608
+branch: physics-loop/wigner-low-d-ir-boundary-20260608
+base: origin/main
+target_claim_id: wigner_mode_low_d_sublattice_theorem_note_2026-05-02
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: finite_ir_charge_boundary_scope_repair
+files_touched:
+  - docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md
+  - scripts/wigner_mode_low_d_sublattice_check.py
+  - logs/runner-cache/wigner_mode_low_d_sublattice_check.txt
+open_imports:
+  - retained finite-temperature continuous-symmetry no-SSB theorem for d <= 2
+  - Ward/order-parameter commutator normalization bridge
+  - retained Noether-current bridge beyond the finite charge-commutation model
+trace_gate_classification: direct_blocker_closure
+review_findings: pending
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: PR opened and remaining conditional backlog rescanned

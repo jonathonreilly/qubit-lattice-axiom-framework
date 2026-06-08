@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/p2_kcpt_orbit_temporal_factor_no_go_2026_06_06.py
+runner_sha256: 4e06b32d100761c0626ecb030064440672cb3b335e295e608466d18eb7e5ecaa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+--- Section S: structural slot (spatial/count-preserving vs temporal/count-doubling) ---
+PASS: native spatial BZ corner count = 2^3 = 8
+PASS: P (inversion) maps the 8 corners ONTO the 8 corners (count preserved)
+PASS: C (sublattice parity) maps the 8 corners ONTO the 8 corners (count preserved)
+PASS: P, C are involutions on the corner set (P^2=C^2=id)
+PASS: K/CPT operation is a PERMUTATION of the 8 spatial corners (cardinality unchanged)
+PASS: adding the temporal corner k4 in {0,pi} gives 2^4 = 16 corners
+PASS: the temporal factor DOUBLES the count: 16 = 8 x 2
+PASS: temporal doubling is a NEW Z2 factor (Cartesian product), not a permutation of the 8
+--- Section L: antiunitary (K/CPT) vs unitary (temporal corner) ---
+PASS: Theta_H is an involution (Theta_H^2 = id), P real orthogonal
+PASS: Theta_H is ANTILINEAR: Theta_H(i v) = -i Theta_H(v)
+PASS: S (temporal corner exchange) is unitary (S^dag S = I) and an involution
+PASS: S is LINEAR: S(i w) = i S(w)
+PASS: antilinear involution (K/CPT) != linear involution (temporal corner) -> distinct Z2
+--- Section C: finite-additivity gives x1 for the realized orbit, not x2 ---
+PASS: readout of the realized orbit as ONE record gives multiplicity 1
+PASS: splitting the orbit into two disjoint records gives multiplicity 2
+PASS: the x2 is NOT free: it requires the finer 2-record partition (= occupancy/weighting)
+PASS: A3 disclaims the occupancy/weighting rule the x2 requires (axiom text)
+--- Section K: real-time (Keldysh) doubling cancels in |det| (Z=1) ---
+PASS: Keldysh contour: |det(fwd) * det(bwd)| = |det * det^{-1}| = 1 (robust over 200 ops)
+PASS: thermofield generator H(x)I - I(x)H~ has a zero mode (thermal vacuum), Tr H_tf = 0
+--- Section E: the Euclidean temporal product DOES supply the factor (not foreclosed) ---
+PASS: Euclidean temporal product |det|^{L_t}: L_t=2 doubles the exponent vs L_t=1
+PASS: Euclidean temporal product changes the magnitude (|det| != 1 generically) -- unlike Keldysh=1
+PASS: Euclidean exponent 8 x L_t : L_t=2 gives the 16 (temporal product, the open P2 route)
+--- Section G: the generation K/CPT '2' is the Frobenius-Schur count, not a temporal corner ---
+PASS: complex conjugation fixes chi_0 (trivial, real)
+PASS: complex conjugation SWAPS chi_1 <-> chi_2 (faithful pair)
+PASS: the generation K/CPT count is 2 = #{K-orbits of C3 characters} = R(+)C (Frobenius-Schur)
+PASS: this '2' lives on the GENERATION (3-character) factor, NOT on a spacetime temporal corner
+
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

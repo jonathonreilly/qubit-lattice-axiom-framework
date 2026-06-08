@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 221 |
-| **retained_bounded** | 763 |
+| **retained_bounded** | 764 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1193 |
+| `audited_clean` | 1194 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1632 |
+| `unaudited` | 1631 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 521 |
 | `high` | 443 |
-| `medium` | 777 |
-| `leaf` | 1270 |
+| `medium` | 779 |
+| `leaf` | 1268 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 15
@@ -889,6 +889,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_packet_reidentification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -12977,6 +12978,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For each seed, the free-stage packet was compressed to its top-5 support bins and relaunched on the same ordered-lattice family, producing high relaunch carry overlaps on the fixed h=0.5, W=8, L=12 harness.  _(class `C`)_
 - **chain closes:** True — The runner instantiates the ordered-lattice propagation, constructs the packets, reidentifies top-k detector support, relaunches the surrogate, and computes the reported overlaps and centroid shifts. The note does not claim persistent mass, family-genericity, or a closed inertial-response theorem.
 - **rationale:** The load-bearing result is a first-principles numerical computation on the fixed retained ordered-lattice harness, not a definition, renaming, external comparator, or hard-coded numerical replay. The primary runner and helper source compute the lattice propagation and reported metrics directly from the stated parameters. The conclusion is appropriately bounded to support/compression control and explicitly denies persistent-mass or family-generic claims.
+- **auditor confidence:** high
+
+### `packet_memory_note`
+
+- **Note:** [`PACKET_MEMORY_NOTE.md`](../../docs/PACKET_MEMORY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite deterministic characterization of scripts/packet_memory.py under its supplied constants, seed, propagation rule, imposed field, detector overlap, centroid, and width readouts.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-205745-10378e1cab-packet_memory_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At NL=30 the finite runner computes detector overlaps below the 0.5 threshold for z-offsets at least 2, packet-dependent imposed-field centroid shifts, and the listed width/centroid diagnostics.  _(class `C`)_
+- **chain closes:** True — The runner source generates the seeded finite graph, propagates amplitudes, and computes overlaps, centroids, sigmas, and imposed-field deltas before comparing expected rounded values. An independent layer-wise recomputation reproduced the displayed offset, NL-sweep, field-response, and width/centroid values, so closure holds only for the explicit finite harness.
+- **rationale:** The note is explicitly narrowed to deterministic-runner characterization and disclaims decoherence, physical gravity, growth-kernel derivation, detector-readout derivation, and the NL -> infinity limit. The runner is not merely printing constants: it computes the finite propagation outputs and then checks them against the note. The displayed ratios and threshold statements also check out within rounding, including 1 - 0.4210 ~= 58% and 0.029612 / 0.008522 ~= 3.48.
 - **auditor confidence:** high
 
 ### `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02`

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/packet_memory.py
+runner_sha256: 9307bb26439d02134edc747ae5ea96764932d1c9d575fbde1cd4542a1ea6322a
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 56.91
+status: ok
+----- stdout -----
 ======================================================================
 PACKET MEMORY HARNESS
 ======================================================================
@@ -56,3 +64,6 @@ PASS: medium width matches deterministic table
 PASS: offset width and centroid match deterministic table
 
 SCORECARD PASS=23 FAIL=0
+
+----- stderr -----
+

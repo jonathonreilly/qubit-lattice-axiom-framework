@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 250,
-    "leaf": 377,
+    "leaf": 376,
     "medium": 365
   },
   "cycle_break_target_count": 15,
@@ -17672,28 +17672,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "packet_memory_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/PACKET_MEMORY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/packet_memory.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17813,6 +17791,36 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": null,
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "unification_basin_failure_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "nonlabel_grown_basin_note",
+        "fixed_field_complex_grown_basin_v2_note",
+        "fixed_field_family_unification_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
+        "scripts/complex_action_grown_companion.py",
+        "scripts/gate_b_grown_joint_package.py"
+      ],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/UNIFICATION_BASIN_FAILURE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py",
       "transitive_descendants": 16
     },
     {
@@ -28987,36 +28995,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "unification_basin_failure_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "nonlabel_grown_basin_note",
-        "fixed_field_complex_grown_basin_v2_note",
-        "fixed_field_family_unification_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
-        "scripts/complex_action_grown_companion.py",
-        "scripts/gate_b_grown_joint_package.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/UNIFICATION_BASIN_FAILURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -40077,6 +40055,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 13,
-  "total_pending": 1319
+  "ready_count": 12,
+  "total_pending": 1318
 }

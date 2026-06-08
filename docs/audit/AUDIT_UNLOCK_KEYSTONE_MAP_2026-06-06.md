@@ -71,20 +71,29 @@ why their fanout is enormous.
    blocker-fanout tiebreaker** to `compute_audit_queue.py` / `compute_audit_dispatch_queue.py`
    (currently ready-first + criticality; fanout is the missing signal). The runner here
    computes that fanout and can seed it.
-2. **BREAK THE KEYSTONE CYCLES FIRST (prerequisite for #1).** Three of the top
-   keystones are **trapped in mutual-dependency 2-cycles**, so they can **never become
-   `ready`** (each waits on the other) and the dispatch will *never* reach them via the
-   ready-DAG — the keystone unlock in #1 is blocked until the cycle is cut:
+2. **RESOLVE THE KEYSTONE CYCLES FIRST (prerequisite for #1).** Three of the top
+   keystones sit in **mutual-dependency 2-cycles**, so they can **never become `ready`**
+   (each waits on the other) — the dispatch never reaches them via the ready-DAG, and the
+   keystone unlock in #1 is blocked until the cycle is resolved. **These are GENUINE
+   mutual dependencies, not spurious edges** — verified 2026-06-06 by reading each note's
+   amendment context (below). In every case the older note was deliberately amended to
+   rest on its newer repair for a load-bearing piece, so **no edge can be cut without
+   deleting a real dependency.**
 
-   | keystone 2-cycle (mutual dep `A ↔ B`) | max fanout | break |
+   | keystone 2-cycle (genuine mutual dep `A ↔ B`) | max fanout | why BOTH edges are real |
    |---|---:|---|
-   | `axiom_first_reflection_positivity_theorem` ↔ `rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair` | **949** | the `_repair` legitimately depends on the theorem; the theorem→repair back-edge is the spurious one (a 04-29 theorem cannot depend on its own later repair) |
-   | `observable_principle_from_axiom_note` ↔ `observable_principle_positive_source_cone_p2_elimination` | **765** | the `_p2_elimination` extends the parent; the parent→elimination back-edge is the spurious one |
-   | `staggered_dirac_kawamoto_smit_conditional_realization` ↔ `staggered_dirac_chirality_parity_bridge` | **256** | break per the `cycle_break_targets` rule (one is the base) |
+   | `axiom_first_reflection_positivity_theorem` ↔ `rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair` | **949** | repair→theorem: the repair fixes the theorem's failed Wilson bridge (sign root `S_0:=-β Re Tr`). theorem→repair: the 04-29 note was amended so its "Wilson-plane sign and character-kernel source packet **is supplied by**" the repair. Both load-bearing. |
+   | `observable_principle_from_axiom_note` ↔ `observable_principle_positive_source_cone_p2_elimination` | **765** | elimination→parent: the bridge narrows the parent principle. parent→elimination: the parent's "**load-bearing** P2 repair **is** the positive-source-cone bridge" (`det(D+J)∈ℝ_{>0}`). Both load-bearing. |
+   | `staggered_dirac_kawamoto_smit_conditional_realization` ↔ `staggered_dirac_chirality_parity_bridge` | **256** | parity→conditional: the bridge extends the conditional. conditional→parity: the 2026-06-06 repair "**replaces that free premise with** the narrow chirality-parity bridge." Both load-bearing. |
 
-   Cutting these three back-edges (a `missing_dependency_edge` re-pointing or removing the
-   anachronistic citation) makes the RP, observable-principle, and staggered-Dirac
-   keystones `ready` — directly enabling the ~949 / ~765 / ~256 cascades.
+   The correct resolution is therefore **joint audit**, not a graph edit: treat each
+   repair-pair as one logical unit and audit it together (closing it as
+   `retained_pending_chain`), which the `cycle_break_targets` machinery already supports.
+   That makes the RP, observable-principle, and staggered-Dirac keystones auditable —
+   directly enabling the ~949 / ~765 / ~256 cascades. **(Correction 2026-06-06: an earlier
+   draft of this note recommended *cutting* the older→newer edge as "anachronistic." That
+   was wrong — reading the notes shows the amendment makes that edge a real dependency.
+   Cutting it would corrupt the graph; joint audit is the right mechanism.)**
 3. **Iterate.** After each keystone is audited (its deps become retained-grade for the
    layer below), re-run this runner — the next layer of keystones surfaces. The DAG
    drains in ~log-depth waves rather than one-at-a-time.
@@ -121,6 +130,7 @@ secondary unlocks).
 ## Reading rule
 
 The audit backlog is a dependency-DAG drain, not a wall. Maximum throughput =
-audit the high-fanout READY keystones first (this map; top-5 → 79% cascade), break
-the 20 dep-cycles, and review the 160 gated sources. Re-run the runner after each
+audit the high-fanout READY keystones first (this map; top-5 → 79% cascade), resolve
+the dep-cycles by JOINT audit (`retained_pending_chain` — they are genuine mutual deps,
+not cuttable edges), and review the 160 gated sources. Re-run the runner after each
 wave for the next priority layer.

@@ -12,7 +12,11 @@ audit outcome.
 ## Scope and honesty
 
 This note isolates the one-dimensional stability grammar used by
-[`GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05`](GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md).
+`GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05` (the **consumer this
+grammar serves** — rendered as a plain reference, not a load-bearing markdown
+dependency, since this reparametrization lemma `r(s) = 2^(s-1)` is self-contained
+and consumes none of that note; the genuine direction is classifier → this
+grammar, so the plain reference breaks the spurious audit-graph 2-cycle).
 
 It proves that the positive ratio coordinate `r` and the dial coordinate `s`
 are smooth monotone reparametrizations:

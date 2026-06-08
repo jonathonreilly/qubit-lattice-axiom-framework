@@ -231,22 +231,22 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-      "claim_scope": null,
+      "claim_scope": "Uniqueness up to global sign of the scalar Z_2 edge-flip grading on the nearest-neighbor Z^3 graph, with the Pauli Cl(3) pseudoscalar giving Omega(x)=epsilon(x)Omega_global and edgewise anticommutation for nearest-neighbor odd stencils.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 9.781,
       "note_path": "docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py",
       "transitive_descendants": 310
@@ -17893,15 +17893,15 @@
         "free_dirac_poincare_representation_bounded_note_2026-05-30",
         "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.748,
       "note_path": "docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py",
-      "transitive_descendants": 2
+      "transitive_descendants": 18
     },
     {
       "audit_independence_required": "any_non_self",

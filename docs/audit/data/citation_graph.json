@@ -45998,10 +45998,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06"
     },
     {
@@ -46027,6 +46023,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lensing_finite_path_explanation_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -88950,17 +88950,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
         "fifth_family_radial_boundary_note",
         "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
         "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
-        "lensing_finite_path_explanation_note"
+        "lensing_finite_path_explanation_note",
+        "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5e9e47594d3fcd0dd5c04b2382b442c031ae25c061064b1c7360cb1b11a18364",
+      "note_hash": "91846ac0841ca0272a3152d11747436aa7f5531e7fc5b1f5ecf94c68057e2776",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

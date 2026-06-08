@@ -1,0 +1,23 @@
+loop_slug: staggered-backreaction-live-packet-20260608
+date: 2026-06-08
+current_goal: Restore live bounded source notes for the six stale staggered-backreaction rows.
+target_status: bounded-support
+cycle_count: 1
+active_route: live note replacements plus a current-cache assertion wrapper
+hard_residual: Universal source-to-field scale and endogenous self-refresh remain open.
+files_touched:
+  - docs/STAGGERED_BACKREACTION_RESULTS_2026-04-10.md
+  - docs/STAGGERED_BACKREACTION_ITERATIVE_NOTE.md
+  - docs/STAGGERED_BACKREACTION_SCALE_CLOSURE_NOTE.md
+  - docs/STAGGERED_BACKREACTION_NONLOCAL_CLOSURE_NOTE.md
+  - docs/STAGGERED_BACKREACTION_GREEN_CLOSURE_NOTE.md
+  - docs/STAGGERED_BACKREACTION_CAPTURE_CLOSURE_NOTE.md
+  - scripts/staggered_backreaction_live_packet.py
+  - logs/runner-cache/staggered_backreaction_live_packet.txt
+open_imports:
+  - Independent audit must decide effective status for the replacement source notes.
+trace_gate_classification: direct_blocker_closure
+pr_status: pending
+next_exact_action: Refresh wrapper cache, verify, commit, and open PR.
+stop_condition: PR opened with no audit edits.
+

@@ -102,3 +102,18 @@ Run:
 ```text
 python3 scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [post_record_directed_certificate_examples_2026-06-06](POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md)
+- [post_record_directed_certificate_kernel_selection_firewall_2026-06-06](POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md)
+- [post_record_supplied_kernel_selection_rule_interface_2026-06-06](POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md)
+- [post_record_selection_rule_target_vector_firewall_2026-06-06](POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md)
+- [post_record_admitted_sample_target_vector_interface_2026-06-06](POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md)
+- [post_record_dynamics_authority_stack_map_2026-06-06](POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md)
+- [post_record_dynamics_campaign_closeout_index_2026-06-06](POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md)
+- [post_record_retained_unbounded_dynamics_gate_2026-06-06](POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md)
+- [post_record_finite_to_unbounded_family_lift_no_go_2026-06-06](POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md)
+- [post_record_supplied_family_lift_certificate_interface_2026-06-06](POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md)

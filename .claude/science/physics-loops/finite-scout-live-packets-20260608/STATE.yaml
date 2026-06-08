@@ -1,0 +1,22 @@
+loop_slug: finite-scout-live-packets-20260608
+branch: physics-loop/finite-scout-live-packets-20260608
+base: origin/main
+target_claim_ids:
+  - lattice_3d_dense_spent_delay_note
+  - critical_exponents_topology_note_2026-04-10
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: restore_live_finite_scout_notes
+files_touched:
+  - docs/LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md
+  - docs/CRITICAL_EXPONENTS_TOPOLOGY_NOTE_2026-04-10.md
+open_imports:
+  - independent audit of restored live notes
+  - no z=6 dense-lattice endpoint
+  - no asymptotic critical-exponent theorem
+trace_gate_classification: direct_blocker_closure
+review_findings: pending
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: PR opened and remaining backlog rescanned

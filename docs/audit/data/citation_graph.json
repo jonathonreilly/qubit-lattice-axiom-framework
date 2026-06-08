@@ -47447,7 +47447,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "60e37f60f84f2e440fafb837a385bd197bce799a8de656bd3219396c95f78082",
+      "note_hash": "a98c292fc1e09af391a549426e36a716f9d081a1464e3056ee70c536df067d8a",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -47459,7 +47459,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "7b659670a6de206e885f770c2d5bdc5c221b12e90363dda00341640b1db41332",
+      "note_hash": "fa9eaff2edaff02168ae4fd1803edd8542de37006f67af8f4ffb53a2d7ecb530",
       "path": "docs/ai_methodology/skills/exercise/SKILL.md",
       "runner_path": null,
       "title": "Exercise"
@@ -47497,7 +47497,7 @@
         "ai_methodology.skills.no-go-discipline.references.case-studies"
       ],
       "helper_runner_paths": [],
-      "note_hash": "605ea82ec4e1b70bb4ec0ddf4ceaf784cd806e253ffa58cc6641514fb582bdaa",
+      "note_hash": "fc7994ce30a33f5b5e0fca1c7e065164452a51da7d80567033ec422a88eec4de",
       "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
       "runner_path": null,
       "title": "No-Go Discipline"
@@ -47509,7 +47509,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "7e3216cd5f844d0bce941e75b702af3ed1f6f4121c0dc87ad35e1d8e0cc53b17",
+      "note_hash": "b3db727cf1de207d2f2043ff4baf19f5a415a59ad7045a47ac8d4aa9f66bbeb3",
       "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
       "runner_path": null,
       "title": "Physics Claim Reviewer"
@@ -47590,10 +47590,22 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9fdaee17e36ece6f57beb6431b63790a92688a11c83a374e1f90f261bc059c5b",
+      "note_hash": "36dbbe4f66345a04378d37e44aa09c59144566cda82a0532d7704979b9f99dbd",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
+    },
+    "ai_methodology.skills.primitive_registry_check": {
+      "claim_id": "ai_methodology.skills.primitive_registry_check",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": null,
+      "claim_type_seed_hint": null,
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "3cc6cb1c17e7bf06646c45e428a248ebf8d4fbdd61257baac6e0ac559d168baf",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "runner_path": null,
+      "title": "Primitive Registry Check"
     },
     "ai_methodology.skills.review-loop.skill": {
       "claim_id": "ai_methodology.skills.review-loop.skill",
@@ -47605,7 +47617,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "25e351be6f0ff436ea56cc9064b794a7608d0c71fe644c5d7c39119e90c75ea5",
+      "note_hash": "e6b128c32b7cc09b7184c0009196c4fc2ce64b2dd3aae224448f1523cd9a085c",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -100008,6 +100020,7 @@
     "ai_methodology.skills.physics-loop.references.literature-bridge-protocol",
     "ai_methodology.skills.physics-loop.references.long-running-execution",
     "ai_methodology.skills.physics-loop.references.route-patterns",
+    "ai_methodology.skills.primitive_registry_check",
     "ai_methodology.skills.reviewer-backpressure-integrator.skill",
     "ai_methodology.skills.skill_freshness_check",
     "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
@@ -100934,7 +100947,7 @@
       "decoration": 1,
       "meta": 273,
       "no_go": 143,
-      "none": 1485,
+      "none": 1486,
       "open_gate": 77,
       "positive_theorem": 196
     },
@@ -100943,14 +100956,14 @@
       "decoration": 1,
       "meta": 273,
       "no_go": 256,
-      "none": 463,
+      "none": 464,
       "open_gate": 152,
       "positive_theorem": 623
     },
     "edge_count": 11436,
-    "leaf_count": 1009,
-    "node_count": 3083,
-    "root_count": 1011,
+    "leaf_count": 1010,
+    "node_count": 3084,
+    "root_count": 1012,
     "runners_with_path": 2670
   }
 }

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 207 |
-| **retained_no_go** | 216 |
+| **retained_no_go** | 217 |
 | **retained_bounded** | 750 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1297 |
+| unaudited | 1296 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1172 |
+| `audited_clean` | 1173 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1608 |
+| `unaudited` | 1607 |
 
 | claim_type | count |
 |---|---:|
@@ -1001,6 +1001,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_axiom_audit_application_map_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -14705,6 +14706,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For each sampled dial distribution pi(s)=(1,s,s^2)/(1+s+s^2) at s=1,2,3, the supplied complete-graph reversible generator Q(s) satisfies Q(s) pi(s)=0 with one zero eigenmode and negative transverse modes.  _(class `A`)_
 - **chain closes:** True — The displayed generator construction algebraically gives nonnegative off-diagonal rates, zero column sums, stationarity of pi, and stable transverse modes for the three sampled dial values. Rate scaling and the two-state semigroup example also close as dimensionless algebraic checks.
 - **rationale:** The claim is explicitly scoped to supplied generators and sampled dial locations, not to a derived physical generator or Record-selected dial value. Independently, Q pi=0 follows because each column j has off-diagonal entries 1/pi_j and diagonal minus their sum, and the reversible symmetric form has one stationary mode with negative transverse modes. The count/probability separation and clock/rate quotient checks are ordinary finite algebra, with no external comparator or tuned numerical input.
+- **auditor confidence:** high
+
+### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`
+
+- **Note:** [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Lattice, Quantum, and Record alone do not unconditionally force record formation; conditional or generic decoherence models remain outside the audited baseline claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-eea6df5c0e-record_formation_not_uncondi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Record excludes measurement/decoherence dynamics and the baseline fixes neither dynamics nor state, so baseline-consistent no-record witnesses such as H=0, decoupled H, and stationary eigenstates defeat unconditional forcing.  _(class `A`)_
+- **chain closes:** True — The cited Minimal Axioms memo is an accepted axiom premise and expressly supplies no dynamics, state, readout-context production, or measurement/decoherence dynamics. One admissible stationary no-record witness is enough to refute unconditional forcing, and the packet supplies several.
+- **rationale:** The load-bearing step is an algebraic/logical counterexample check over accepted axiom content, not a definition or numerical match. Independently of the runner, exp(-i0t)=I and exp(-iHt)|E>=phase*|E> make the H=0 and eigenstate witnesses stationary, so the claimed universal forcing is false at the stated baseline scope. The no-go discipline gate passes because the note blocks only unconditional forcing from Lattice/Quantum/Record and explicitly leaves conditional record-production or decoherence theories open. The runner supports the finite-dimensional witness checks and does not import a disclaimed production-dynamics premise as a conclusion.
 - **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`

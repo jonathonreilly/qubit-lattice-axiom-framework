@@ -1,11 +1,19 @@
 # Mesoscopic Surrogate Alternate-Family Scout Note
 
 **Date:** 2026-04-04  
-**Status:** bounded - bounded or caveated result note
-**Type:** bounded_theorem
+**Status:** meta/support planning index over bounded evidence markers
+**Type:** meta/support planning index, not a bounded theorem
 **Status authority:** independent audit lane only.
 the retained 3D `h=0.25` family
 **Primary runner:** `scripts/mesoscopic_surrogate_alternate_family_scout.py`
+
+## 2026-06-08 Header Scope Narrow
+
+This note is a planning/support index. The runner-verified negative evidence
+markers in the cited upstream rows remain useful, but the positive
+"cheapest plausible next target" recommendation is not theorem-grade without a
+registered objective ranking criterion. This note must not be used as a
+bounded theorem for target selection.
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 

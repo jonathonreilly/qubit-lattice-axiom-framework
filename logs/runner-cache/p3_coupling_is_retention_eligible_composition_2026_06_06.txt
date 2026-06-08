@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/p3_coupling_is_retention_eligible_composition_2026_06_06.py
+runner_sha256: 406f5f38cca063792c6d1d404c5231407eef64ab75a133def44eee4abc91753a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+--- Section A: geometric-mean identity (retained) ---
+PASS: alpha_LM = sqrt(alpha_bare * alpha_s) (geometric mean; retained identity)
+PASS: alpha_bare : alpha_LM : alpha_s is a geometric progression, ratio 1/u_0
+--- Section B: P3 = retention-eligible composition of retained/native pieces ---
+PASS: alpha_bare = g_bare^2/(4 pi) = 1/(4 pi) (native Coulomb; g_bare=1 retained)
+PASS: u_0 ~ 0.877 (native mean-field link, sub-decade; plaquette VEV^{1/4})
+PASS: alpha_LM = alpha_bare/u_0 ~ 0.0907, 1/alpha_LM ~ 11.0 (the matched per-mode coupling)
+PASS: alpha_LM is the geometric mean of native Coulomb alpha_bare and strong alpha_s
+--- Section C: the substitution is tadpole improvement (retained), not free ---
+PASS: tadpole improvement (vertex power 1, retained): alpha_bare/u_0^1 = alpha_LM
+PASS: every QUANTITY in the substitution is retained/native or branch-local native (not a free knob)
+--- Section D: the single open step = physical-not-bare coupling (register-not-read, 5th) ---
+PASS: the open step is a SELECTION: physical alpha_LM vs bare u_0 (they differ)
+PASS: the selection is register-not-read (registered=physical, not bare); the 5th application -> FLAGGED for the audit lane (genuine extension vs over-application)
+PASS: NET: P3 = retention-eligible composition (all quantities retained/native or branch-local native) + ONE register-not-read selection step (not a free substitution)
+
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

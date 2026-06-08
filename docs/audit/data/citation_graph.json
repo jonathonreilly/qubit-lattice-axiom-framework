@@ -13137,6 +13137,10 @@
       "to": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "gst_texture_reduces_to_rank1_c3_symmetric_mass_light_mass_from_breaking_narrow_theorem_note_2026-06-08",
+      "to": "lepton_single_higgs_pmns_triviality_note"
+    },
+    {
       "from": "gw_echo_null_result_note",
       "to": "evanescent_barrier_amplitude_suppression_theorem_note"
     },
@@ -31463,6 +31467,22 @@
     {
       "from": "theta13_is_the_c3_doublet_breaking_measure_sqrt2_derived_theta_e_the_residual_narrow_theorem_note_2026-06-08",
       "to": "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+    },
+    {
+      "from": "the_small_mixing_angles_theta_c_and_theta_13_are_c3_breaking_order_parameters_unification_narrow_theorem_note_2026-06-08",
+      "to": "ckm_from_mass_hierarchy_note"
+    },
+    {
+      "from": "the_small_mixing_angles_theta_c_and_theta_13_are_c3_breaking_order_parameters_unification_narrow_theorem_note_2026-06-08",
+      "to": "down_type_mass_ratio_ckm_dual_note"
+    },
+    {
+      "from": "the_small_mixing_angles_theta_c_and_theta_13_are_c3_breaking_order_parameters_unification_narrow_theorem_note_2026-06-08",
+      "to": "quark_c3_circulant_source_law_boundary_note_2026-04-28"
+    },
+    {
+      "from": "the_small_mixing_angles_theta_c_and_theta_13_are_c3_breaking_order_parameters_unification_narrow_theorem_note_2026-06-08",
+      "to": "theta13_is_the_c3_doublet_breaking_measure_sqrt2_derived_theta_e_the_residual_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "third_grown_family_complex_boundary_note",
@@ -59398,7 +59418,7 @@
         "dm_neutrino_dirac_bridge_theorem_note_2026-04-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "30de4cd8a76727b0581f57e835c683bfafb5e23e4c091c3893c3f0b9808c8065",
+      "note_hash": "f0e4edb1a45e411219e69853510d26871a569c929f08bf2050736cd3d1a5fbe8",
       "path": "docs/DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md",
       "runner_path": "scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py",
       "title": "The V_sel Axis-Selector Does Not Transport from the Taste Cube to the Dirac Higgs Family (No-Go)"
@@ -62462,7 +62482,7 @@
         "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8acdc99ed76979baf8e263011b1501b233a3302f51f247e68bc6aba6f2d7c1a5",
+      "note_hash": "8ba7f8a9b9f01d1aed7cf9b4b108065b896b857234fde2372bd8b560942f4419",
       "path": "docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_detR_default_full_exercise_2026_05_30.py",
       "title": "Flavor \u2014 det_R/det_C counting fork bounded locator: finite algebra confirmed, no default/reference-state claim"
@@ -64200,7 +64220,7 @@
         "gate_b_no_restore_joint_package_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e08b6db58d7df9314a7bfff6986461f2e1236793ec5d12a483e4d2b0940d2471",
+      "note_hash": "99e45dd98af534f8197bd26de74f75847e59c629f4c0836a10a5726f3cce4e57",
       "path": "docs/GATE_B_DYNAMICS_NOTE.md",
       "runner_path": "scripts/gate_b_connectivity_tolerance.py",
       "title": "Gate B: Evolving Network Dynamics \u2014 Current Status"
@@ -67150,6 +67170,20 @@
       "path": "docs/GROWN_WAVEFIELD_FAILURE_DIAGNOSIS_NOTE.md",
       "runner_path": "scripts/gate_b_grown_wavefield_companion.py",
       "title": "Grown Wavefield Failure Diagnosis Note"
+    },
+    "gst_texture_reduces_to_rank1_c3_symmetric_mass_light_mass_from_breaking_narrow_theorem_note_2026-06-08": {
+      "claim_id": "gst_texture_reduces_to_rank1_c3_symmetric_mass_light_mass_from_breaking_narrow_theorem_note_2026-06-08",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (reduces the GST magnitude texture to the rank-1 / single-source C\u2083-symmetric-mass condition; derives `sin \u03b8 = \u221a(mass-ratio)` from it)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "lepton_single_higgs_pmns_triviality_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "de3e0765b41b4cae46acdc06d270db7e0ba580b7a6d98064671445250cfba9b9",
+      "path": "docs/GST_TEXTURE_REDUCES_TO_RANK1_C3_SYMMETRIC_MASS_LIGHT_MASS_FROM_BREAKING_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/gst_texture_from_rank1_c3_symmetric_mass_runner.py",
+      "title": "The GST Texture (\u221a(mass-ratio) Mixing) Reduces to a Rank-1 C\u2083-Symmetric Mass: the Light Generation's Mass is Purely from C\u2083-Breaking \u2014 Narrow Theorem"
     },
     "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": {
       "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
@@ -74565,14 +74599,14 @@
       "claim_id": "lanes.ordered-lattice.readme",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_seed_hint": null,
       "deps": [
         "continuum_bridge_note",
         "structured_chokepoint_bridge_note",
         "same_family_3d_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fa27a50e8cc9a7f317f78df3fa5d8a4e4d5cf0bb7322167306bfcd67163a9a4d",
+      "note_hash": "edecbf24291b6802381d668d9f9022cd81890ef43a7c768a6a23a8cf700ea6c6",
       "path": "docs/lanes/ordered-lattice/README.md",
       "runner_path": "scripts/lattice_3d_dense_10prop.py",
       "title": "Ordered-Lattice Lane"
@@ -76473,8 +76507,8 @@
     },
     "mesoscopic_surrogate_alternate_family_scout_note": {
       "claim_id": "mesoscopic_surrogate_alternate_family_scout_note",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "meta/support planning index, not a bounded theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "mesoscopic_surrogate_localization_frontier_note",
@@ -76485,7 +76519,7 @@
         "persistent_inertial_response_readiness_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2745afa5e31163de0648a694bd22d37648afcb1fd62cdd5bf424947a3dd7610f",
+      "note_hash": "ad4c500d25323d92e2606cbc605ee925403e500cc1fe927e1fc15fa6a894c310",
       "path": "docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md",
       "runner_path": "scripts/mesoscopic_surrogate_alternate_family_scout.py",
       "title": "Mesoscopic Surrogate Alternate-Family Scout Note"
@@ -78832,12 +78866,10 @@
       "deps": [
         "valley_linear_wide_tail_note"
       ],
-      "helper_runner_paths": [
-        "scripts/valley_linear_same_harness_compare.py"
-      ],
-      "note_hash": "82061dd9c294133607c9df73e819f6eab9f6f6757f5e9e2ef1cb78f301aa6678",
+      "helper_runner_paths": [],
+      "note_hash": "d7e779035ffbb7502efb50abba5a65de9f17a20aa98c5f4464d328075520f0ab",
       "path": "docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md",
-      "runner_path": "scripts/valley_linear_wide_tail_replay.py",
+      "runner_path": null,
       "title": "Historical Headline Note: Newtonian Distance Law"
     },
     "next_chunk_recommendation": {
@@ -80074,6 +80106,18 @@
       "path": "docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md",
       "runner_path": "scripts/p2_wick_rotation_sign_epsilon_closure_runner_2026_05_27.py",
       "title": "P2 Wick-Rotation Sign-`\u03b5` Closure Narrow Theorem"
+    },
+    "p3_coupling_is_retention_eligible_composition_2026-06-06": {
+      "claim_id": "p3_coupling_is_retention_eligible_composition_2026-06-06",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "coupling-side capstone / open-primitive reduction",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "6ccb4d6ce29d876486d7e71d94bb3a51790bdb46798261d30f61bad068b26437",
+      "path": "docs/P3_COUPLING_IS_RETENTION_ELIGIBLE_COMPOSITION_2026-06-06.md",
+      "runner_path": "scripts/p3_coupling_is_retention_eligible_composition_2026_06_06.py",
+      "title": "P3 (u_0 \u2192 \u03b1_LM) is Retention-Eligible Composition + One register-not-read Selection"
     },
     "p_lh_order_one_staggered_dirac_open_gate_note_2026-05-10_pplh_order_one": {
       "claim_id": "p_lh_order_one_staggered_dirac_open_gate_note_2026-05-10_pplh_order_one",
@@ -94521,6 +94565,23 @@
       "runner_path": "scripts/frontier_thales_right_angle_narrow.py",
       "title": "Thales Right-Angle Narrow Theorem"
     },
+    "the_small_mixing_angles_theta_c_and_theta_13_are_c3_breaking_order_parameters_unification_narrow_theorem_note_2026-06-08": {
+      "claim_id": "the_small_mixing_angles_theta_c_and_theta_13_are_c3_breaking_order_parameters_unification_narrow_theorem_note_2026-06-08",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (structural unification: both small mixing angles are C\u2083-breaking order parameters; the \u221a(mass-ratio) magnitude is the GST residual)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "ckm_from_mass_hierarchy_note",
+        "down_type_mass_ratio_ckm_dual_note",
+        "quark_c3_circulant_source_law_boundary_note_2026-04-28",
+        "theta13_is_the_c3_doublet_breaking_measure_sqrt2_derived_theta_e_the_residual_narrow_theorem_note_2026-06-08"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "7b50fb8fcad43603de2903feb389a94b2565427663b28a6cab9683d80a660d54",
+      "path": "docs/THE_SMALL_MIXING_ANGLES_THETA_C_AND_THETA_13_ARE_C3_BREAKING_ORDER_PARAMETERS_UNIFICATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/mixing_angles_are_c3_breaking_order_parameters_runner.py",
+      "title": "The Small Mixing Angles \u03b8_C and \u03b8\u2081\u2083 Are C\u2083-Breaking Order Parameters \u2014 a Quark/Lepton Unification (Narrow Theorem)"
+    },
     "theorem_bae_newton_girard_unified_obstruction_note_2026-05-10_t2bae": {
       "claim_id": "theorem_bae_newton_girard_unified_obstruction_note_2026-05-10_t2bae",
       "claim_type_author_hint": "no_go",
@@ -101123,6 +101184,7 @@
     "open_koide_flavor_cluster_consolidation_map_2026-06-02",
     "ordered_lattice_quasi_persistent_relaunch_2d_note",
     "p2_euclidean_vs_lorentzian_fork_2026-06-05",
+    "p3_coupling_is_retention_eligible_composition_2026-06-06",
     "packet_memory_note",
     "paper_outline_2026-04-12",
     "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
@@ -101495,27 +101557,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 915,
+      "bounded_theorem": 916,
       "decoration": 1,
       "meta": 274,
       "no_go": 146,
-      "none": 1492,
+      "none": 1494,
       "open_gate": 77,
       "positive_theorem": 198
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1327,
+      "bounded_theorem": 1329,
       "decoration": 1,
       "meta": 274,
       "no_go": 260,
-      "none": 465,
-      "open_gate": 151,
-      "positive_theorem": 625
+      "none": 466,
+      "open_gate": 152,
+      "positive_theorem": 624
     },
-    "edge_count": 11496,
-    "leaf_count": 1019,
-    "node_count": 3103,
-    "root_count": 1016,
-    "runners_with_path": 2689
+    "edge_count": 11501,
+    "leaf_count": 1021,
+    "node_count": 3106,
+    "root_count": 1017,
+    "runners_with_path": 2691
   }
 }

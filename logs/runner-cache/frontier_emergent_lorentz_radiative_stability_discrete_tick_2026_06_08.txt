@@ -1,0 +1,51 @@
+==============================================================================================
+POSITIVE bounded theorem: emergent Lorentz is RADIATIVELY STABLE on the discrete-record-tick
+(Z^4 hypercubic) surface -- B_4 forbids the marginal velocity anisotropy to ALL orders
+==============================================================================================
+
+----------------------------------------------------------------------------------------------
+Part 1: B_4 forbids the marginal dim-4 velocity anisotropy (c_t != c_s is NOT B_4-invariant)
+----------------------------------------------------------------------------------------------
+  [PASS] (1.1) under O_h (spatial only) the diagonal quadratic kinetic form has a 2-DIM invariant space (c_t, c_s FREE)  --  dim = 2: temporal c_t + spatial-isotropic c_s -> the marginal anisotropy c_t - c_s is ALLOWED
+  [PASS] (1.2) under the 4D hypercubic B_4 it is 1-DIM (c_t = c_s FORCED) -> B_4 FORBIDS the marginal anisotropy operator  --  dim = 1: the t<->s axis swap relates c_t and c_s (cf. retained SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO)
+
+----------------------------------------------------------------------------------------------
+Part 2: ALL-ORDERS selection rule -- on the Z^4 action Sigma_t = Sigma_s (rep-blind), so delta_v = 0
+----------------------------------------------------------------------------------------------
+      Nk=8: |Sigma_t - Sigma_s| = 4.34e-19
+      Nk=10: |Sigma_t - Sigma_s| = 4.34e-19
+      Nk=12: |Sigma_t - Sigma_s| = 0.00e+00
+      Nk=14: |Sigma_t - Sigma_s| = 3.04e-18
+  [PASS] (2.1) Sigma_t = Sigma_s to MACHINE ZERO at every resolution (the t<->s swap is a finite relabel of a B_4-invariant integral)  --  max |Sigma_t - Sigma_s| = 3.0e-18 -> delta_v = 0 (not a perturbative cancellation: a selection rule)
+  [PASS] (2.2) REP-BLIND: delta_v(rep) = g^2 C_2(rep) x [machine-zero] = 0 for every rep -> the species DIFFERENCE (the observable) is 0 too  --  max species-difference |（C2_i - C2_j) x diff| = 1.0e-17 (fund 4/3, adj 3, sym2 10/3, singlet 0)
+  [PASS] (2.3) ALL ORDERS: the marginal dim-4 anisotropy is not in the B_4-invariant ring (Part 1) -> forbidden as a SELECTION RULE at every loop order  --  every n-loop self-energy is a B_4-symmetric integral; power counting forbids regenerating a dim-4 anisotropy from the dim-6 residual
+
+----------------------------------------------------------------------------------------------
+Part 3: the framework's CANONICAL staggered action supplies the isotropy (not a special choice)
+----------------------------------------------------------------------------------------------
+  [PASS] (3.1) every ISOTROPIC (hypercubic-symmetric) action gives delta_v = 0; only a deliberate r_t != r_s breaks it  --  naive r=0:2e-18, Wilson r_t=r_s:4e-19; broken r_t=2:3.1e-04
+  [PASS] (3.2) the framework's canonical staggered action (SO(4) note: isotropic eta_mu, c_4=-1/3 in all 4 dirs) IS isotropic -> the theorem applies to the ACTUAL fermion  --  LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4; modulo the symmetric-staggered (central-difference) realization rider
+
+----------------------------------------------------------------------------------------------
+Part 4: the residual LV is the Planck-suppressed dimension-6 operator (harmless)
+----------------------------------------------------------------------------------------------
+  [PASS] (4.1) the leading B_4-allowed LV is dim-6: E^2 = k^2 - (a^2/3) k^4 (the retained EMERGENT_LORENTZ result, now 4D-cubic)  --  coeff k^4 = -a**2/3; B_4 forbids dim-4 (Part 1), so this dim-6 is the FIRST surviving LV
+  [PASS] (4.2) with a = 1/M_Pl, |dE^2/E^2| ~ (1/3)(E/M_Pl)^2 ~ 4e-39 at 1 GeV -- BELOW every SME/UHECR/GRB/clock comparator bound  --  |dE^2/E^2|(1 GeV) = 2.2e-39 vs bounds 1e-12 (quark/gluon) .. 1e-27 (nucleon): safe by >>15 orders
+  [PASS] (4.3) POSITIVE prediction: the surviving LV is the unique cubic-harmonic (ell=4) dim-6 fingerprint (E/M_Pl)^2, not a marginal coefficient  --  emergent Lorentz holds to dim-6; if LV is ever seen at (E/M_Pl)^2 the ell=4 angular pattern identifies the cubic lattice (retained EMERGENT_LORENTZ note)
+
+----------------------------------------------------------------------------------------------
+Part 5: scope -- POSITIVE + BOUNDED on the discrete-tick admission (NOT 'no bound', NOT a closure)
+----------------------------------------------------------------------------------------------
+  [PASS] (5.1) the temporal structure is an ADMISSION, not derived: {Lattice(spatial Z^3), Quantum, Record} has NO time (Record timeless; Lattice supplies no dynamics/causal cone)  --  time is an admitted dynamics gate (the framework's 2026-06-07 diagnostic note); so delta_v is unavoidably CONDITIONAL on a temporal admission
+  [PASS] (5.2) PREMISE (the single bound): physical UV time is the discrete record-tick (the Z^4/xi=1 surface) -- the owner's foundational choice; the complementary continuous-time admission gives the companion obstruction  --  POSITIVE: emergent Lorentz is radiatively stable on this surface (Parts 1-4, all-orders). NOT 'no bound' (rests on the admission); NOT a closure of the lever
+
+==============================================================================================
+THEOREM (positive, bounded on the discrete-record-tick admission): on the Z^4 hypercubic surface
+B_4 forbids the marginal velocity anisotropy to ALL orders and rep-blindly (species difference = 0),
+so emergent Lorentz is RADIATIVELY STABLE; the only residual LV is the Planck-suppressed dim-6
+operator (~4e-39 at 1 GeV), below every comparator bound. The single premise -- discrete-tick UV
+time -- is a dynamics-gate ADMISSION (the owner's foundational choice), NOT derived: this is POSITIVE
++ BOUNDED, not 'no bound'. The continuous-time admission gives the companion computed obstruction.
+==============================================================================================
+TOTAL: PASS=12 FAIL=0
+==============================================================================================

@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/audit_unlock_keystone_map_2026_06_06.py
+runner_sha256: 9d31d2ff361fe07949711cc0e18c1ad73d45d728bb9ef538dacb72405ab4e752
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+--- A: the bottleneck is DAG-drain (not blockers / broken edges) ---
+  total rows=2993  need-audit=1643  blocking(unaud & non-ready-eff)=1330
+  missing dep edges (broken wiring)=0   rows with a recorded blocker=2
+PASS: a large unaudited backlog exists (need-audit > 1000)
+PASS: NO broken dependency edges (the backlog is not a wiring bug)
+PASS: almost no rows carry a recorded blocker (backlog is DAG-drain, not blocked-by-physics)
+--- B: ready-now vs waiting-on-deps ---
+  READY-now (deps all retained-grade, auditable immediately)=93
+  waiting SOLELY on unaudited deps (unlock as DAG drains)=1213
+PASS: only a minority of blocked rows are ready-now (most wait on the DAG)
+PASS: the overwhelming majority of not-ready rows wait SOLELY on unaudited deps (=> draining the DAG in keystone order unlocks them)
+--- C: keystone priority (audit these READY rows first for max cascade) ---
+  TOP READY KEYSTONES (downstream blocked rows unlocked | criticality | id):
+      942  critical   staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05
+      761  critical   alpha_s_derived_note
+      709  critical   yt_ward_identity_dependencies_registered_bound_narrow_theo
+      614  critical   cl3_taste_generation_theorem
+      526  critical   higgs_channel_effective_ntaste_boundary_bounded_note_2026-
+      435  critical   pmns_twisted_flux_transfer_holonomy_boundary_note
+      301  critical   quark_projector_ray_phase_completion_note_2026-04-18
+      276  critical   koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20
+      237  critical   g_bare_constraint_vs_convention_restatement_note_2026-05-0
+      226  critical   koide_full_lattice_schur_inheritance_note_2026-04-18
+      221  critical   koide_taste_cube_cyclic_source_descent_note_2026-04-18
+      187  high       higgs_mass_from_axiom_status_correction_audit_note_2026-05
+  => the TOP-5 ready keystones together gate 1050 distinct blocked rows (79% of the backlog)
+PASS: a top ready keystone exists that unlocks >= 500 downstream blocked rows
+PASS: the top-5 ready keystones together gate a large majority (>= 60%) of the blocked backlog
+PASS: the top ready keystones are critical-criticality (foundational)
+--- D: secondary unlocks (cycles + gated sources) ---
+  dependency back-edges (cycle indicators; never become 'ready' until broken)=20
+  gated/dropped sources (excluded from audit; review for ungating)=160
+PASS: dependency cycles exist and are a (secondary) unlock target (break them)
+PASS: gated sources exist and are a (secondary) unlock target (review for ungating)
+
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

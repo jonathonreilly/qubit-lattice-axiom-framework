@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 335,
+    "critical": 334,
     "high": 250,
     "leaf": 390,
     "medium": 370
@@ -301,31 +301,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02",
-      "claim_scope": "Audited that the stretch note is an open-gate obstruction packet, not a positive observable-bridge theorem for `<P>_full = R_O(beta_eff)`.",
-      "claim_type": "open_gate",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-        "gauge_scalar_temporal_completion_theorem_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "open_gate",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.983,
-      "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py",
-      "transitive_descendants": 252
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -25528,7 +25503,7 @@
       "claim_id": "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -40797,6 +40772,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 31,
-  "total_pending": 1345
+  "ready_count": 30,
+  "total_pending": 1344
 }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1321 |
+| unaudited | 1320 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 37 |
+| ~~audited_conditional~~ | 38 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1175 |
-| `audited_conditional` | 37 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1634 |
+| `unaudited` | 1633 |
 
 | claim_type | count |
 |---|---:|
@@ -1332,6 +1332,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11531,6 +11532,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **open / conditional deps cited:**
   - `record_outcome_observable_principle_canonical_proposal_note_2026-06-05`
   - `MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06`
+- **auditor confidence:** high
+
+### `magnitude_temporal_factor_is_count_not_rate_2026-06-06`
+
+- **Note:** [`MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md`](../../docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the claim that the temporal factor 2 in the magnitude exponent can be treated as a transfer-step/mode count, distinct from rate normalization, and therefore outside the clock-rate no-go's forbidden zone.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-154545-96f173c0f4-magnitude_temporal_factor_is`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The staggered-determinant exponent 8 L_t is identified with the number of modes, so at the minimal reflection-positive block L_t=2 the magnitude exponent 16 is a transfer-step count rather than a clock rate.  _(class `F`)_
+- **chain closes:** False — The finite algebra checks support site/mode cardinality and invariance of counts under energy rescaling, but the restricted packet does not provide the retained no-go authority, the hierarchy exponent authority, or the two-step reflection-positivity authority in full. The source also explicitly admits that the per-record/UV L_t=2 readout selection is not derived.
+- **rationale:** The runner computes the toy staggered matrix dimension 8 L_t, checks eta_1(t)=(-1)^t has period 2, and verifies that rescaling eigenvalues does not change their count. However, the decisive identification of the magnitude exponent with a transfer-step count is asserted rather than derived from supplied upstream authorities, and the no-go supported/forbidden zones are hard-coded in the runner. The final L_t=2 per-record readout is explicitly named as an admission, so retained closure does not propagate through this packet.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 760 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1327 |
+| unaudited | 1326 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1189 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1642 |
+| `unaudited` | 1641 |
 
 | claim_type | count |
 |---|---:|
@@ -1331,6 +1331,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5777,6 +5778,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In the real group-element basis {e,g,g^2} with normalized trace pairing, J-I=g+g^2 has coefficient vector (0,1,1), hence two nonzero real-basis components.  _(class `A`)_
 - **chain closes:** True — The finite algebra closes directly: I+g+g^2=J, and the normalized trace pairing makes the group-element basis orthonormal, giving coefficients (0,1,1). The comparator checks are arithmetic on supplied external inputs and are explicitly not used as framework-native derivations.
 - **rationale:** Independent inspection confirms the load-bearing support count without relying on the runner implementation. The runner source genuinely computes the Gram matrix, coefficient projection, finite order-three phase restriction, and signed-Q identity rather than merely printing constants. The mass, neutrino, and CKM checks are class-D external comparator arithmetic, but the source note scopes them as stress tests and leaves source-certification bridges open rather than claiming native derivation.
+- **auditor confidence:** high
+
+### `flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Full bounded claim that absolute flavor handedness is gauge and that the surviving physical flavor data are the magnitude |delta|=2/9 and inter-sector relative orientation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-202957-8a6315341f-flavor_absolute_handedness_i`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because R maps the realized record to an equal-mass relabeling and R is an unbroken S3 transposition, sign(Delta) is odd under an unbroken symmetry and therefore is not gauge-invariant.  _(class `A`)_
+- **chain closes:** False — The narrow absolute-handedness gauge classification closes algebraically from retained S3 unbrokenness plus the sign-representation transformation of Delta. The broader physical-survivor claim does not close because the packet does not supply the physical readout bridge for 2/9 or the multi-sector bridge identifying the relative orientation with the physical CP/mixing observable.
+- **rationale:** Independent algebra checks confirm the core signs and factors: a transposition flips the Vandermonde sign, all A3 elements preserve it, +delta and -delta are relabeled mass multisets, Q=2/3 follows from the cosine sums, and L3(1,2)=2/9 follows from (omega-1)(omega^2-1)=3. The runner is substantive for these finite checks, with the PDG comparison isolated as non-load-bearing. However, the cited Koide fixed-locus authority explicitly leaves the physical single-summand readout open, so it cannot by itself support the statement that 2/9 is the physical magnitude. The relative-orientation-as-physical-CP statement is likewise an invariant-candidate statement unless a retained multi-sector/shared-axis readout bridge is supplied.
+- **open / conditional deps cited:**
+  - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `flavor_asymmetry_2over9_forced_weight_2026-05-31`

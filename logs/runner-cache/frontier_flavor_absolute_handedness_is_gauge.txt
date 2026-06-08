@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_flavor_absolute_handedness_is_gauge.py
+runner_sha256: 8809c256b0959c9797a7e18507581a9e0b8133a49475c4d7b62324b308887358
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.37
+status: ok
+----- stdout -----
 PASS: M_same_mass_multiset_at_plus_minus_delta sorted masses identical: True
 PASS: M_sqrt_m_minus_delta_is_relabeled_plus_delta sqrt m_k(-d) = sqrt m_{-k}(+d) (R-relabeling)
 PASS: S_S3_has_3_reflections_3_rotations |transpositions|=3 (sgn -1), |A_3|=3 (sgn +1)
@@ -16,3 +24,6 @@ PASS: C_comparator_delta_pdg delta_PDG=0.222230
 
 TOTAL: PASS=15 FAIL=0
 VERDICT: the ABSOLUTE flavor handedness sign(Delta) is GAUGE -- it is odd under the orientation-reversing transposition R, an UNBROKEN physical symmetry of the staggered kinematics (retained full S_3), and +delta/-delta are the same masses R-relabeled. The physical S_3-invariant flavor data is the magnitude |delta|=2/9=L_3(1,2) (derived) and the inter-sector RELATIVE orientation (the mixing/CP phase). The handedness residual is RESOLVED (gauge, no derivation needed); the number 3 and the r=1/2 cone are separate/untouched.
+
+----- stderr -----
+

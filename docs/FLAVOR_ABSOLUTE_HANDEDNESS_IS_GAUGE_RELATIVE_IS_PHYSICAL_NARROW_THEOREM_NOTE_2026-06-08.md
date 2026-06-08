@@ -1,4 +1,4 @@
-# The Absolute Flavor Handedness Is Gauge — Only the Magnitude and Inter-Sector Relative Orientations Are Physical
+# Absolute Flavor Handedness Is Gauge; Magnitude and Relative-Orientation Readouts Remain Open
 
 **Date:** 2026-06-08
 **Claim type:** bounded_theorem (a gauge classification / residual resolution)
@@ -9,7 +9,7 @@ independent audit and dependency closure.
 [`scripts/frontier_flavor_absolute_handedness_is_gauge.py`](../scripts/frontier_flavor_absolute_handedness_is_gauge.py)
 **Cached log:**
 [`logs/runner-cache/frontier_flavor_absolute_handedness_is_gauge.txt`](../logs/runner-cache/frontier_flavor_absolute_handedness_is_gauge.txt)
-(TOTAL: PASS=15 FAIL=0)
+(TOTAL: PASS=17 FAIL=0)
 
 ## 0. The residual, and its resolution
 
@@ -34,9 +34,12 @@ physical symmetry**. Two consequences pin the result:
 
 An observable odd under an **unbroken** physical symmetry is **not gauge-invariant**.
 Therefore **the absolute flavor handedness is gauge** — a labeling convention, not a missing
-derivation. The physical, `S_3`-invariant flavor data is the **magnitude** `|Δ|` (a function
-of `|δ| = 2/9 = L_3(1,2)`, derived) and the **inter-sector relative orientation**
-`sign(Δ_1)·sign(Δ_2)` (`R`-invariant — the mixing / CP phase). This answers the standing open
+derivation. This note closes only that gauge classification. It also records two
+`S_3`-invariant survivors that remain available for later physics bridges:
+the magnitude `|Δ|` (with the operator-side identity `|δ| = 2/9 = L_3(1,2)`) and the
+inter-sector relative sign `sign(Δ_1)·sign(Δ_2)`. This packet does **not** derive a physical
+single-summand readout for `2/9` and does **not** identify the relative sign with a CKM/PMNS
+CP or mixing observable. This answers the standing open
 question of the
 [`POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23`](POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md)
 ("does the framework force a global handedness?") in the **negative**: it does not, and need
@@ -48,8 +51,8 @@ not — the handedness is gauge.
 |---|---|---|---|
 | staggered `η`-axis-ordering is `Z_2` gauge; physical axis-symmetry on the `hw=1` triplet is the full unbroken `S_3` | [`STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23`](STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md) | `retained_bounded` | **load-bearing**: `R` is unbroken |
 | the orientation `S_3` sign-rep = `Cl(3)` pseudoscalar; `+1` level set `= A_3 = C_3` | [`POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23`](POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md), [`POSITIVITY_ORIENTATION_SELECTS_C3_NARROW_THEOREM_NOTE_2026-05-23`](POSITIVITY_ORIENTATION_SELECTS_C3_NARROW_THEOREM_NOTE_2026-05-23.md) | `retained_bounded` | the orientation object resolved here |
-| the magnitude `2/9 = L_3(1,2)` (C₃ fixed-point density) | [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) | `retained_bounded` | the physical magnitude |
-| the generation count (number 3 = triplet dimension) | [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) | `retained` (corollary) | separate physical fact, untouched |
+| the operator-side identity `2/9 = L_3(1,2)` (C₃ fixed-point density) | [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) | `retained_bounded` | invariant magnitude context; not a closed physical single-summand readout here |
+| the generation count (number 3 = triplet dimension) | [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) | `retained` (corollary) | separate context, untouched |
 
 No PDG value is load-bearing; PDG enters only the Section 4 comparator. No new axiom, import,
 or vocabulary.
@@ -76,17 +79,17 @@ the realized record to an equal-mass relabeling and `R` is an **unbroken** symme
 orientations are physically equivalent: `sign(Δ)` is **not** a gauge-invariant observable.
 The absolute handedness is a **labeling convention**, not a derivable physical quantity.
 
-**(P) The physical content is `S_3`-invariant.** What survives:
-- the **magnitude** `|Δ|` — a function of `|δ|`, with `|δ| = 2/9 = L_3(1,2)` the
-  retained-bounded `C_3` fixed-point density (the physical, derived flavor number);
-- the **inter-sector relative orientation** `sign(Δ_1)·sign(Δ_2)` — `R`-invariant, since `R`
-  acts on the **shared** spatial axes of both sectors and flips both signs together (runner
-  `P_relative_orientation_R_invariant`). This is where the physical **mixing / CP phase**
-  lives.
+**(P) The closed survivors are invariant candidates, not readout theorems.** What the
+runner checks after the gauge classification:
+- the **magnitude** `|Δ|` is invariant under `δ -> -δ`, and the separate operator-side
+  identity `|δ| = 2/9 = L_3(1,2)` remains available as context;
+- the **inter-sector relative orientation** `sign(Δ_1)·sign(Δ_2)` is `R`-invariant if a
+  later multi-sector bridge supplies shared axes and a physical readout.
 
-So the absolute CP/handedness of a single sector is gauge; the relative (CKM/PMNS-type)
-orientation is physical — **consistent with CP violation being a relative, not an absolute,
-phenomenon.**
+Those two facts are useful because they isolate the possible gauge-invariant data left after
+absolute handedness is removed. They are not, in this note, a derivation that `2/9` is a
+physical charged-lepton magnitude or that the relative sign is a CKM/PMNS CP or mixing
+observable.
 
 ## 3. Scope — what this resolves and what it leaves
 
@@ -97,12 +100,13 @@ phenomenon.**
   it need not — the orientation is a gauge labeling.
 
 **Leaves (separate, untouched):**
-- The **magnitude** `|δ| = 2/9 = L_3(1,2)` (the physical flavor number; derived, retained-bounded).
+- The physical single-summand readout of **magnitude** `|δ| = 2/9 = L_3(1,2)`. The
+  operator-side identity is retained-bounded context; this note does not close the physical
+  readout bridge.
 - The **number of generations** (3 = triplet dimension): a separate physical/derived fact,
   **not** the gauge orientation — this note does not touch the count of generations.
-- The **inter-sector relative orientations** (mixing / CP phases): the physical, `S_3`-invariant
-  flavor data not addressed here — the genuine open flavor target now that the absolute
-  handedness is resolved as gauge.
+- The **inter-sector relative orientations**: `R`-invariant candidates. Their identification
+  with physical mixing / CP phases remains a multi-sector shared-axis/readout bridge target.
 - The **`r = 1/2` cone** (`Q = 2/3`): firewalled, held fixed for all `δ`.
 
 ## 4. Honest verdict
@@ -110,18 +114,18 @@ phenomenon.**
 Going after the `R`-breaking that would supply the flavor handedness resolved the residual
 the other way: the staggered axis-ordering is **gauge** (retained `S_3` unbroken), so `R` is an
 unbroken physical symmetry, and `sign(Δ)` — odd under `R` with the two orientations carrying
-identical masses — is **not a physical observable**. The "single deepest input" the companion
-arc had located is therefore **not a missing derivation at all**: the absolute flavor
-handedness is a gauge convention. The physical flavor content reduces cleanly to (i) the
-firewalled cone `r = 1/2`, (ii) the derived magnitude `|δ| = 2/9 = L_3(1,2)`, (iii) the
-generation number 3, and (iv) the inter-sector relative orientations (mixing / CP) — the last
-being the genuine remaining open target, and exactly the data CP violation is built from.
+identical masses — is **not a gauge-invariant observable**. The "single deepest input" the
+companion arc had located is therefore **not a missing derivation at all**: the absolute
+flavor handedness is a gauge convention. The remaining work is not to choose an absolute
+handedness, but to supply separate readout bridges for the invariant magnitude and for any
+multi-sector relative orientation that is to become a physical CP/mixing observable.
 
 ## 5. No-Go Discipline Gate
 
 **Status:** PASS for this bounded gauge classification. It says the **absolute** handedness is
-gauge; it does **not** claim the relative orientations (mixing/CP) are gauge, that `|δ|` is
-unphysical, or that the number 3 is gauge.
+gauge; it does **not** close the relative orientations as mixing/CP observables, does **not**
+close `|δ| = 2/9` as a physical single-summand readout, and does **not** say the number 3 is
+gauge.
 
 **N1 — Alternative-route enumeration.**
 
@@ -130,25 +134,26 @@ unphysical, or that the number 3 is gauge.
 | staggered `η` axis-ordering as `R`-breaker | RULED OUT | pure `Z_2` gauge; `S_3` unbroken (retained) |
 | time-arrow as `R`-breaker | RULED OUT (companion) | breaks only `T`; handedness `RK`-even |
 | absolute `sign(Δ)` as a physical observable | RULED OUT | odd under unbroken `R` ⇒ gauge |
-| magnitude `|Δ|` / `|δ| = 2/9` | PHYSICAL | `S_3`-invariant; `L_3(1,2)` (separate) |
-| inter-sector relative orientation | PHYSICAL / OPEN | `R`-invariant; the mixing/CP phase |
+| magnitude `|Δ|` / `|δ| = 2/9` | OPEN READOUT | `S_3`-invariant / operator-side context; physical single-summand bridge not closed here |
+| inter-sector relative orientation | OPEN BRIDGE | `R`-invariant candidate; physical mixing/CP identification not closed here |
 
-**N2 — Wall-independence.** Absolute orientation (gauge, this note), magnitude `2/9`, the
-number 3, the relative orientations, and the `r=1/2` cone are independent objects; this note
-resolves only the first.
+**N2 — Wall-independence.** Absolute orientation (gauge, this note), operator-side magnitude
+`2/9`, the number 3, the relative orientations, and the `r=1/2` cone are independent objects;
+this note resolves only the first.
 
 **N3 — Hidden-wall scan.** The classification uses only the retained `S_3`-unbrokenness, the
 `R`-relabeling of equal masses, and the `S_3` sign rep — no hidden chirality premise.
 
-**N4 — Residual matching.** The object resolved is exactly the absolute handedness `sign(Δ)`;
-the named open residual moves to the **relative** orientations (mixing/CP).
+**N4 — Residual matching.** The object resolved is exactly the absolute handedness `sign(Δ)`.
+The named open residual moves to readout bridges for invariant magnitudes and relative
+orientations.
 
 **N5 — Rhetoric audit.** The claim is gauge-ness of the **absolute** orientation, proven by
 odd-under-unbroken-`R`; it is not a claim about relative orientations or the magnitude.
 
-**N6 — Partial-closure path scan.** The genuine next target is the inter-sector relative
-orientations (mixing/CP phases), now isolated as the physical flavor data. No new axiom
-requested.
+**N6 — Partial-closure path scan.** The genuine next targets are the physical
+single-summand readout for the `2/9` magnitude and the multi-sector bridge that could
+identify a relative orientation with a CP/mixing observable. No new axiom requested.
 
 **N7 — Steelman.** A reviewer may argue some *other* framework structure (beyond the staggered
 kinematics) breaks `R` and makes the absolute handedness physical. The candidate pseudoscalar
@@ -177,8 +182,9 @@ prose.
 python3 scripts/frontier_flavor_absolute_handedness_is_gauge.py
 ```
 
-Expected: `TOTAL: PASS=15 FAIL=0`. numpy + stdlib, deterministic, 3-vectors throughout
+Expected: `TOTAL: PASS=17 FAIL=0`. numpy + stdlib, deterministic, 3-vectors throughout
 (memory-safe). The runner verifies the equal-mass `R`-relabeling, the `S_3` sign-rep character
-of `sign(Δ)`, the gauge verdict (odd under unbroken `R`), the `S_3`-invariant magnitude and
-`R`-invariant inter-sector relative orientation, the separate `L_3(1,2)` magnitude, the
-separate number 3, and the phase-blind `Q = 2/3` cone.
+of `sign(Δ)`, the gauge verdict (odd under unbroken `R`), the invariant-candidate status of
+`|Δ|` and `sign(Δ_1)sign(Δ_2)`, the separate `L_3(1,2)` identity, the separate number 3, the
+phase-blind `Q = 2/3` cone, and source-boundary text that leaves the physical readout bridges
+open.

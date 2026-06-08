@@ -1,0 +1,20 @@
+loop_slug: flavor-absolute-handedness-gauge-only-20260608
+mode: run
+target_claim_id: flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08
+target_status: best-honest-status
+actual_current_surface_status: demotion
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: narrow_to_absolute_handedness_gauge_classification
+files_touched:
+  - docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md
+  - scripts/frontier_flavor_absolute_handedness_is_gauge.py
+  - logs/runner-cache/frontier_flavor_absolute_handedness_is_gauge.txt
+open_imports:
+  - physical single-summand readout bridge for the 2/9 magnitude
+  - multi-sector shared-axis/readout bridge identifying relative orientation with CP or mixing
+checks:
+  - python3 scripts/frontier_flavor_absolute_handedness_is_gauge.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_flavor_absolute_handedness_is_gauge.py --timeout-sec 120
+next_exact_action: Submit this branch for review/audit re-run; if it passes, pursue the open readout bridges as separate science lanes.
+stop_condition: Coherent PR block complete; continue campaign by selecting the next conditional row.

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1322 |
+| unaudited | 1321 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1175 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1635 |
+| `unaudited` | 1634 |
 
 | claim_type | count |
 |---|---:|
@@ -1331,6 +1331,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `magnitude_reads_minimal_record_block_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11514,6 +11515,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
   - `hierarchy_formula_honest_status.md`
   - `MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md`
   - `MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md`
+- **auditor confidence:** high
+
+### `magnitude_reads_minimal_record_block_2026-06-06`
+
+- **Note:** [`MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited whether the bare magnitude temporal count is selected as L_t=2, giving exponent 16 = 8 x 2, rather than by the OS continuum count.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-154229-3a4f3aa350-magnitude_reads_minimal_reco`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Register-not-read is extended to the temporal readout scale so the magnitude's bare exponent is registered at the discrete minimal block L_t=2 rather than at the OS continuum limit.  _(class `B`)_
+- **chain closes:** False — The arithmetic consequences of choosing L_t=2 check out: (-1)^t has period 2 and 8 x 2 = 16, while 8 L_t diverges as L_t grows. The restricted packet does not derive or supply a retained authority for the bridge that the magnitude exponent's temporal readout is selected by register-not-read at the minimal block.
+- **rationale:** The runner confirms simple arithmetic and finite-count identities after registration_count=2 is assigned. Its load-bearing physical inputs are hard-coded, including single_step_is_nonpositive=True, principle_step=True, and spatial_corners=8, while the packet supplies no upstream authority text for the register-not-read meta principle, its temporal-readout extension, RP two-step premise, or spatial corner count. The prompt's primitive inventory supplies only the scale-reference primitive, which does not grant this readout bridge or dimensionless exponent selection. Therefore the scoped theorem is conditional on an unclosed bridge/dependency rather than a first-principles closure.
+- **open / conditional deps cited:**
+  - `record_outcome_observable_principle_canonical_proposal_note_2026-06-05`
+  - `MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06`
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

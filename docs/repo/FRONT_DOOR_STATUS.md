@@ -11,7 +11,7 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3011 |
+| Ledger rows | 3012 |
 | Applied audit verdicts | 1388 |
 | Retained-grade rows, including boxed decorations | 1248 |
 | Retained positive theorems | 210 |
@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 768 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1306 |
+| Unaudited rows | 1307 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 42 |
 | Audited renaming rows | 35 |
@@ -33,13 +33,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1308 |
+| Total pending rows | 1309 |
 | Ready rows | 2 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
 | Medium pending | 360 |
-| Leaf pending | 371 |
+| Leaf pending | 372 |
 
 Next ready rows by queue order:
 
@@ -74,11 +74,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3129 |
+| Citation-graph nodes | 3130 |
 | Critical nodes | 523 |
 | High nodes | 446 |
 | Medium nodes | 810 |
-| Leaf nodes | 1350 |
+| Leaf nodes | 1351 |
 
 Top load-bearing rows by graph score:
 

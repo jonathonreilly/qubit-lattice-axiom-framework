@@ -184,6 +184,21 @@ def main() -> int:
         bucket="SUPPORT",
     )
 
+    expected_sample_vals = [
+        0.1351652795620484,
+        0.3170224955005416,
+        0.5812139466746343,
+    ]
+    max_sample_err = max(abs(got - exp) for got, exp in zip(sample_vals, expected_sample_vals))
+    check(
+        "The Bessel-determinant one-plaquette partition normalization reproduces the displayed local sample triple",
+        z_1plaq > 0.0 and max_mode < MAX_MODE and max_sample_err < 1.0e-15,
+        detail=(
+            f"Z_(1plaq)(6)={z_1plaq:.15f}, mode cutoff={max_mode}, "
+            f"max displayed-sample error={max_sample_err:.3e}"
+        ),
+    )
+
     check(
         "The exact local Wilson sample triple reconstructs uniquely through the radical map",
         rec_gap < 1.0e-75 and det_abs > 1.0,

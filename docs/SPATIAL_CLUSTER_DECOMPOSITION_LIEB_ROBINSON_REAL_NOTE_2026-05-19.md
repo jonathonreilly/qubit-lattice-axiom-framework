@@ -1,11 +1,11 @@
-# Finite-Λ Lieb-Robinson Bound and Conditional Cluster-Decomposition Support
+# Finite-Λ Lieb-Robinson Bound; Cluster-Decomposition Route Support Only
 
-**Date:** 2026-05-19; 2026-06-06 interaction-graph path-count repair; 2026-06-06 inclusive-branching repair.
+**Date:** 2026-05-19; 2026-06-06 interaction-graph path-count repair; 2026-06-06 inclusive-branching repair; 2026-06-08 LR-only audit-scope repair.
 **Status (source-side label):** bounded_theorem
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py`](../scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py)
 **Cached output:** [`logs/runner-cache/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.txt`](../logs/runner-cache/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.txt)
-**Parent repair target:** `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` (backticked — parent this note supports; not a load-bearing dep), the spatial cluster-decomposition / Lieb-Robinson half identified in the parent's `notes_for_re_audit_if_any`.
+**Parent repair target:** `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` (backticked — parent this note supports; not a load-bearing dep). This row now supplies only the finite-volume Lieb-Robinson half identified in the parent's `notes_for_re_audit_if_any`.
 **Companion (Δ_T > 0 half):** `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` (sibling 2026-05-19 note, landed source-side via salvage commit `8369973af`; audit status remains audit-lane authority — backticked as sibling-evidence, not load-bearing dep).
 **Status authority:** independent audit lane only. The `bounded_theorem` label above is a source-side claim-boundary declaration, not an audit verdict.
 
@@ -15,11 +15,30 @@ The parent row `axiom_first_cluster_decomposition_theorem_note_2026-04-29` is re
 
 > "cheapest repair is a retained proof of Δ_T > 0 PLUS a retained spatial gap-plus-Lieb-Robinson or spatial transfer-matrix cluster-decomposition theorem for the canonical Cl(3)⊗Z³ Hamiltonian."
 
-This note supplies a source-side **finite-Λ Lieb-Robinson theorem** and bounded support for the spatial cluster-decomposition repair path. The companion `Δ_T > 0` half is a separate source theorem note on the pure-Wilson surface via PR #1577 (salvage commit `8369973af`); the staggered+Wilson extension `T_full = T_W · T_F` remains conditional on the separately landed strong-CP/operator-basis surface, `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (sibling 2026-05-19 note, Leg A composition for T_full only; backticked as sibling-only — the LR proof here is bosonic-side and structurally independent of the staggered+Wilson extension).
+This note supplies a source-side **finite-Λ Lieb-Robinson theorem** only. The companion `Δ_T > 0` half is a separate source theorem note on the pure-Wilson surface via PR #1577 (salvage commit `8369973af`); the staggered+Wilson extension `T_full = T_W · T_F` remains conditional on the separately landed strong-CP/operator-basis surface, `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (sibling 2026-05-19 note, Leg A composition for T_full only; backticked as sibling-only — the LR proof here is bosonic-side and structurally independent of the staggered+Wilson extension).
 
 The proof in this note develops the Lieb-Robinson bound from **operator-theoretic primitives** — Duhamel iteration, locality of the local Hamiltonian, triangle inequality on nested commutators, path counting on the interaction graph, factorial control via Stirling. **It does not cite Lieb-Robinson 1972, Hastings 2004, or Nachtergaele-Sims as black-box proof inputs.** Those works are the *technique source* — the inline development here is elementary and self-contained.
 
-The spatial cluster-decomposition portion records the standard finite-volume route from a Lieb-Robinson bound plus a spectral gap to exponential connected-correlator decay. In this note the self-contained theorem is the Lieb-Robinson bound. The cluster-decomposition inequality is carried as conditional support because the filter argument below is an explicit bounded sketch, not a fully audited Paley-Wiener/Hastings filter theorem.
+The spatial cluster-decomposition portion records the standard finite-volume route from a Lieb-Robinson bound plus a spectral gap to exponential connected-correlator decay. It is **not** part of this row's load-bearing theorem after the 2026-06-08 repair. The cluster-decomposition inequality is route support only because the filter argument below is an explicit bounded sketch, not a fully audited Paley-Wiener/Hastings filter theorem.
+
+### 2026-06-08 LR-only audit-scope repair
+
+The latest audit accepted the finite-volume Lieb-Robinson derivation but kept
+the row conditional because the source also carried a spatial clustering route
+without a retained finite-volume filter/Hastings-Koma bridge and retained
+`Δ_T > 0` input. This repair narrows the audited claim surface:
+
+- **load-bearing theorem:** Lemma C, the finite-volume Lieb-Robinson bound
+  derived from locality, Duhamel iteration, inclusive interaction-chain
+  counting, and factorial tail control;
+- **non-load-bearing route support:** the cluster-decomposition sketch in §5
+  and the transfer-gap composition discussion in §6;
+- **not claimed:** a finite-volume cluster-decomposition theorem, a
+  thermodynamic-limit cluster theorem, a Yang-Mills mass gap, or a continuum
+  OS/cluster result.
+
+Independent audit still owns the parent cluster-decomposition row. This row
+does not apply a ledger verdict.
 
 ### Honest scope (read this first)
 
@@ -246,7 +265,7 @@ the exponential form (C.3) after using `N_X <= Z_max |X|`, setting
 
 ---
 
-## §5. Conditional support sketch — spatial clustering from Lemma C + Δ_T > 0
+## §5. Non-load-bearing route support — spatial clustering from Lemma C + Δ_T > 0
 
 Let `Ω` be the unique ground state of `H` with a finite-volume gap `Δ > 0`
 to the first excited state, and let `A`, `B` be local observables with
@@ -259,7 +278,9 @@ finite-volume clustering target is
 ```
 
 This section does **not** claim an independently retained proof of (D.1).
-It records the bounded composition route that the audit lane should inspect:
+It records the bounded composition route that future science and the audit lane
+may inspect. It is not part of the retained-eligible theorem surface of this
+row:
 
 1. Use `P_Ω := |Ω⟩⟨Ω|`, `Q := I - P_Ω`, and
 
@@ -292,8 +313,8 @@ It records the bounded composition route that the audit lane should inspect:
    ```
 
 The landable theorem in this note is Lemma C. The cluster-decomposition
-portion is bounded support for the parent's re-audit path, not a status
-promotion and not a repo-wide axiom.
+portion is route support only: not a finite-volume cluster theorem, not a
+status promotion, and not a repo-wide axiom.
 
 ---
 
@@ -312,11 +333,15 @@ promotion and not a repo-wide axiom.
 
 4. **The Lieb-Robinson half (Lemma C) itself does NOT depend on `Δ_T > 0`.** It is proved unconditionally from primitives in §4.
 
-**Conclusion on the parent row.** Combining:
+**Conclusion on the parent row.** The source-side composition picture is:
 - (i) `Δ_T > 0` half: source-side PR #1577 salvage (Wilson surface; staggered+Wilson conditional on the strong-CP/operator-basis input).
-- (ii) Spatial gap-plus-Lieb-Robinson half: Lemma C here, plus the conditional clustering support route in §5.
+- (ii) Lieb-Robinson half: Lemma C here.
+- (iii) Missing cluster half: a retained finite-volume filter/Hastings-Koma
+  bridge plus retained gap input for the relevant surface.
 
-The parent's `notes_for_re_audit_if_any` instruction is source-side addressed only to this bounded extent. The audit lane will determine whether the remaining filter/composition step is sufficient and will set the effective status.
+This row therefore does **not** close the parent cluster-decomposition row by
+itself. It supplies only the finite-volume LR ingredient and leaves the
+filter/composition step as the next required theorem.
 
 ---
 
@@ -335,7 +360,7 @@ with `v_LR = 2 e J D_I^+ R_0` and `ξ = R_0 / log 2`, where `J`, `D_I^+`, and
 
 **Proof:** §2 (Lemma A) + §3 (Lemma B) + §4 (Lemma C).
 
-**(CD support) Spatial cluster-decomposition route.** Assume `Δ > 0` (the Hamiltonian gap derived from `Δ_T > 0` of the companion note) and a rigorous finite-volume filter lemma with the hypotheses and constants named in §5. For the ground state `|Ω⟩` and all local observables `A`, `B` with `R := dist(supp A, supp B) > 0`, the expected target bound is:
+**(Route support only, not part of this theorem) Spatial cluster-decomposition route.** Assume `Δ > 0` (the Hamiltonian gap derived from `Δ_T > 0` of the companion note) and a rigorous finite-volume filter lemma with the hypotheses and constants named in §5. For the ground state `|Ω⟩` and all local observables `A`, `B` with `R := dist(supp A, supp B) > 0`, the expected target bound is:
 
 ```
 | ⟨Ω | A B | Ω⟩  -  ⟨Ω | A | Ω⟩ ⟨Ω | B | Ω⟩ |
@@ -344,7 +369,7 @@ with `v_LR = 2 e J D_I^+ R_0` and `ξ = R_0 / log 2`, where `J`, `D_I^+`, and
 
 with `ξ_cluster = O(max(ξ, v_LR / Δ))`.
 
-**Disposition:** §5 records the composition route and runner support. This note does not by itself promote (CD) to an independently retained theorem.
+**Disposition:** §5 records non-load-bearing route support. This note does not claim (CD), does not promote it to an independently retained theorem, and does not close the parent cluster-decomposition row.
 
 ---
 
@@ -360,13 +385,13 @@ with `ξ_cluster = O(max(ξ, v_LR / Δ))`.
 
 5. **Open boundary conditions vs. periodic.** The proofs work for either choice. The runner uses open boundary for the spin chain (V1–V5), reflecting the canonical lattice convention; the SU(3) verifications (V6–V8) use a 2-site Λ which is small enough that boundary structure is explicit.
 
-6. **Constants are not optimized.** Both `v_LR` and any downstream `ξ_cluster` have sharper forms in the literature (using `M(s)` reproducing-kernel constructions, weighted Lieb-Robinson, etc.). We use the loose path-counting bound because it is sufficient for the finite-volume LR theorem and for bounded cluster-decomposition support.
+6. **Constants are not optimized.** Both `v_LR` and any downstream route-support `ξ_cluster` have sharper forms in the literature (using `M(s)` reproducing-kernel constructions, weighted Lieb-Robinson, etc.). We use the loose path-counting bound because it is sufficient for the finite-volume LR theorem. The downstream cluster constants are not load-bearing here.
 
 ---
 
 ## §9. Runner
 
-The companion runner [`scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py`](../scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py) exhibits the load-bearing LR claim and bounded cluster-support checks numerically on real small lattice systems:
+The companion runner [`scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py`](../scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py) exhibits the load-bearing LR claim and non-load-bearing cluster-route checks numerically on real small lattice systems:
 
 - **V1–V4: Lieb-Robinson locality, nested-commutator norm, and commutator-spread checks on a 6-site spin-1/2 Heisenberg chain.** Real lattice, exact diagonalization, and explicitly bounded finite-system scope.
 - **V5: finite-N cluster-support fit on the same chain.** This is qualitative support only because the open Heisenberg chain is not a thermodynamic-limit gapped cluster theorem.
@@ -380,8 +405,9 @@ All nine verifications use only NumPy/SciPy and complete in under one minute on 
 
 ## §10. Audit-pipeline crosswalk
 
-- **Repair target:** parent row `axiom_first_cluster_decomposition_theorem_note_2026-04-29` in [`docs/audit/data/audit_ledger.json`](audit/data/audit_ledger.json) (effective status `audited_conditional`, claim type `bounded_theorem`).
-- **Required composition:** (i) Δ_T > 0 (companion note, source-side salvage `8369973af`); (ii) this note's finite-Λ LR theorem plus bounded cluster-decomposition support route.
+- **Repair target:** this row's conditional audit status and the parent row `axiom_first_cluster_decomposition_theorem_note_2026-04-29` in [`docs/audit/data/audit_ledger.json`](audit/data/audit_ledger.json).
+- **This PR's closure target:** finite-Λ Lieb-Robinson theorem only.
+- **Still required for the parent cluster row:** retained Δ_T/gap input plus a retained finite-volume filter/Hastings-Koma bridge or spatial transfer-matrix cluster-decomposition theorem.
 - **Effective-status determination:** belongs to the audit lane after independent review.
 - **No edits to `docs/audit/data/*.json`** are made by this note.
 
@@ -390,8 +416,8 @@ All nine verifications use only NumPy/SciPy and complete in under one minute on 
 ## §11. Cross-references
 
 - Parent row: `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` (backticked — parent this note supports; not a load-bearing dep on this proof's chain).
-- Companion Δ_T > 0 note: `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` (sibling-evidence; the LR bound proved here stands structurally without needing the companion's retained status — they compose downstream, but neither is a load-bearing dep of the other).
-- Mass-gap bridge (retained_bounded, load-bearing one-hop authority for the gap-input dep used in §5/§6): [`docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`](CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+- Companion Δ_T > 0 note: `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` (sibling-evidence for the downstream route only; the LR bound proved here stands structurally without needing the companion's retained status).
+- Mass-gap bridge (retained_bounded, route-support authority for the non-load-bearing gap-input discussion in §5/§6): [`docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`](CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md)
 - Strong-CP/operator-basis input (conditional for staggered+Wilson): `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (sibling 2026-05-19 note; backticked as sibling-only — Leg A composition for T_full only, the LR proof is bosonic-side).
 
 ## Audit dependency repair links

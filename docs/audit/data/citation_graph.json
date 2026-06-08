@@ -46002,10 +46002,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_bridge_pr525_flaw_fix_note_2026-05-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "unification_basin_failure_note"
     },
     {
@@ -88951,7 +88947,6 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "su3_bridge_pr525_flaw_fix_note_2026-05-05",
         "unification_basin_failure_note",
         "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
         "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08",
@@ -88960,7 +88955,7 @@
         "wide_lattice_h2t_skeptic_audit_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6781d397578ff469a39a3f708277efe1f36d6e93739320a5674d7c5853833d9f",
+      "note_hash": "c8339863e7d45f5aeb501bca1055ce0a3e25328a5fdf671693ebf3b8e36f942e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"
@@ -102425,8 +102420,8 @@
       "open_gate": 152,
       "positive_theorem": 621
     },
-    "edge_count": 11609,
-    "leaf_count": 1018,
+    "edge_count": 11608,
+    "leaf_count": 1019,
     "node_count": 3129,
     "root_count": 1019,
     "runners_with_path": 2715

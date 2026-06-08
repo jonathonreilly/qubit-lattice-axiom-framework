@@ -3,7 +3,7 @@
     "critical": 327,
     "high": 250,
     "leaf": 371,
-    "medium": 365
+    "medium": 364
   },
   "cycle_break_target_count": 15,
   "cycle_break_targets": [
@@ -17666,36 +17666,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": null,
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "unification_basin_failure_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "nonlabel_grown_basin_note",
-        "fixed_field_complex_grown_basin_v2_note",
-        "fixed_field_family_unification_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
-        "scripts/complex_action_grown_companion.py",
-        "scripts/gate_b_grown_joint_package.py"
-      ],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/UNIFICATION_BASIN_FAILURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py",
       "transitive_descendants": 16
     },
     {
@@ -39930,6 +39900,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 7,
-  "total_pending": 1313
+  "ready_count": 6,
+  "total_pending": 1312
 }

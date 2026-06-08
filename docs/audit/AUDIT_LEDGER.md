@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 221 |
-| **retained_bounded** | 766 |
+| **retained_bounded** | 767 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1311 |
+| unaudited | 1310 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -60,29 +60,29 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1197 |
+| `audited_clean` | 1198 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1626 |
+| `unaudited` | 1625 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1389 |
+| `bounded_theorem` | 1390 |
 | `decoration` | 53 |
 | `meta` | 323 |
 | `no_go` | 339 |
 | `open_gate` | 137 |
-| `positive_theorem` | 770 |
+| `positive_theorem` | 769 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 520 |
 | `high` | 444 |
-| `medium` | 778 |
-| `leaf` | 1269 |
+| `medium` | 777 |
+| `leaf` | 1270 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
@@ -1241,6 +1241,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `unification_basin_failure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -18533,6 +18534,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The current axiom packet explicitly supplies one qubit as the primitive one-site physical degree of freedom, and the accepted-premise carve-out allows that axiom to support a class C closure. The retained Cl(3) authority supplies the M_2(C) ~= Cl(3,0) identification and two-dimensional faithful-irrep readout; no open staggered-Dirac bridge is needed for this narrow U4 statement.
 - **rationale:** This is not audited_decoration under cl3_complexification_split alone because the load-bearing physical k=1 selection comes from the accepted Quantum axiom's one-qubit-per-site clause, not merely from ordinary algebra applied to the retained Cl(3) parent. It is also not a bare renaming: the note uses the axiom's one-qubit physical carrier plus standard M_2(C) representation theory to close a previously open physical-Hilbert-space identification. The missing runner output is not load-bearing here because the closure is inspectable from the restricted text and cited authorities.
 - **auditor confidence:** high
+
+### `unification_basin_failure_note`
+
+- **Note:** [`UNIFICATION_BASIN_FAILURE_NOTE.md`](../../docs/UNIFICATION_BASIN_FAILURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite audit of the two listed shared rows, drift = 0.20 with restore = 0.60 and 0.70, under the provided fixed-field geometry-sector runner: signed-source gates pass, complex-action crossover does not, and unified survival is 0/2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-212214-0afd84f823-unification_basin_failure_no`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the two shared off-center rows, gamma = 0 remains positive but gamma = 0.2 and gamma = 0.5 are both absorptive, so the TOWARD -> AWAY complex-action crossover is lost while the signed-source gates still pass.  _(class `C`)_
+- **chain closes:** True — The cited upstream authorities are retained-grade or retained_bounded, and the provided runner/helper sources instantiate the grown geometry, geometry-sector adjacency, source fields, propagation, centroid readout, and survivor predicates rather than importing the contested row values. The cached output matches the source table and reports sign-law survivors 2/2, complex-action survivors 0/2, and unified survivors 0/2.
+- **rationale:** The audited statement is bounded to the two listed rows and the supplied fixed-field sector-family computation. The load-bearing negative result is computed directly: zero and neutral sign controls vanish, plus/minus signs are correctly oriented with exponent near one, while delta@0.2 and delta@0.5 are negative on both rows, eliminating the crossover required for unified survival. No cited authority is below retained-grade, and no external comparator, tuned numerical match, or missing bridge is needed for this bounded failure diagnosis.
+- **auditor confidence:** medium
 
 ### `unified_basin_freeze_note`
 

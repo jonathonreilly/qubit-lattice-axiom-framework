@@ -1,0 +1,18 @@
+loop_slug: p3-coupling-authority-packet-20260608
+branch: physics-loop/p3-coupling-authority-packet-20260608
+base: origin/main
+target_claim_id: p3_coupling_is_retention_eligible_composition_2026-06-06
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: one_hop_authority_inventory_and_status_guard
+files_touched:
+  - docs/P3_COUPLING_IS_RETENTION_ELIGIBLE_COMPOSITION_2026-06-06.md
+  - scripts/p3_coupling_is_retention_eligible_composition_2026_06_06.py
+  - logs/runner-cache/p3_coupling_is_retention_eligible_composition_2026_06_06.txt
+open_imports:
+  - physical-vs-bare register-not-read selection
+  - conditional 4pi/I1 native-coupling readout bridge
+  - bounded canonical u0 numerical surface
+next_exact_action: open review PR
+stop_condition: PR opened and remaining fresh conditionals scanned

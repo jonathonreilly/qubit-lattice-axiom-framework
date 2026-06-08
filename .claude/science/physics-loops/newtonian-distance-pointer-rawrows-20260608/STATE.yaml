@@ -1,0 +1,21 @@
+loop_slug: newtonian-distance-pointer-rawrows-20260608
+mode: campaign_block
+branch: physics-loop/newtonian-distance-pointer-rawrows-20260608
+base: origin/main
+base_commit: e98f976b0
+date: 2026-06-08
+target_claim_id: newtonian_distance_law_confirmed
+target_status: bounded-support
+artifact_role: runner_certificate
+active_route: add raw-row inventory to historical pointer packet
+hard_residual: universal Newtonian theorem remains out of scope
+files_touched:
+  - docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md
+  - scripts/newtonian_distance_law_confirmed_pointer_guard_2026_06_08.py
+  - logs/runner-cache/valley_linear_wide_tail_replay.txt
+  - logs/runner-cache/newtonian_distance_law_confirmed_pointer_guard_2026_06_08.txt
+checks:
+  - runner_cache valley_linear_wide_tail_replay: SCORECARD PASS=9 FAIL=0
+  - runner_cache newtonian_distance_law_confirmed_pointer_guard: SCORECARD PASS=20 FAIL=0
+pr_status: pending
+next_exact_action: create PR for reviewer and independent re-audit; do not edit docs/audit

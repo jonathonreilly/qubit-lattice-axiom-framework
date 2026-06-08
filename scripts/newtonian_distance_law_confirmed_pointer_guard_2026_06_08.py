@@ -10,6 +10,7 @@ and exposes the SHA-pinned replay evidence.
 from __future__ import annotations
 
 from pathlib import Path
+import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -41,6 +42,7 @@ def main() -> int:
     note = NOTE.read_text(encoding="utf-8")
     replay = REPLAY_NOTE.read_text(encoding="utf-8")
     cache = CACHE.read_text(encoding="utf-8")
+    frozen = FROZEN_LOG.read_text(encoding="utf-8")
 
     print("NEWTONIAN DISTANCE-LAW HISTORICAL POINTER GUARD 2026-06-08")
 
@@ -57,7 +59,28 @@ def main() -> int:
     check("pointer states bounded finite replay only", "not, by itself, a universal theorem" in note)
     check("replay note contains verifier repair", "2026-06-07 verifier repair" in replay)
     check("replay note exposes same frozen sha", EXPECTED_SHA in replay)
-    check("cache is fresh successful verifier", "status: ok" in cache and "SCORECARD PASS=9 FAIL=0" in cache)
+    check(
+        "cache is fresh successful verifier",
+        "VALLEY-LINEAR WIDE-TAIL FROZEN LOG VERIFIER" in cache
+        and "SCORECARD PASS=9 FAIL=0" in cache,
+    )
+    check("pointer contains raw-row inventory repair", "Raw-row inventory for strict formula review" in note)
+    rows = re.findall(
+        r"^\s+z=\s*(\d+)\s+delta=([+-]\d+\.\d+)\s+(TOWARD|AWAY)\s*$",
+        frozen,
+        re.MULTILINE,
+    )
+    check("frozen log has nine raw distance rows", len(rows) == 9, f"rows={len(rows)}")
+    check(
+        "pointer includes all raw distance rows",
+        len(rows) == 9
+        and all(
+            f"| `{int(z)}` | `{float(delta):+0.6f}` | `{direction}` |" in note
+            for z, delta, direction in rows
+        ),
+        "all parsed z/delta/direction rows are present in pointer table",
+    )
+    check("pointer records recomputed far-tail fit", "slope `-1.1685`" in note and "R^2 = 0.9972" in note)
 
     print(f"SCORECARD PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

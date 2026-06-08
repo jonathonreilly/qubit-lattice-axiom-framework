@@ -296,12 +296,15 @@ single framework-native Lüders theorem.
    pointer-label write give a normalized isometry `W`, projective Kraus
    blocks `K_r=P_r`, a CPTP pointer-dephasing channel, and repeat-readable
    selective branches inside that finite pointer model.
-4. The typed record-instrument kernel interface:
-   [`RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md`](RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md)
+4. The typed record-instrument kernel interface
+   `RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md`
    proves that, once a finite instrument and trace/effect pairing are
    supplied, `mu_r = Tr(K_r rho K_r^dag)` is a normalized kernel over
    possible record atoms and that realized post-record atoms remain distinct
-   from predictive probabilities.
+   from predictive probabilities. (That note is a **later companion**
+   (2026-06-05); this Lüders-rule derivation (2026-05-20) predates it and does
+   not load-bear on it — rendered as a plain (non-link) reference to avoid a
+   spurious audit-graph cycle, the genuine direction being companion → this note.)
 
 **Residual open bridge for this parent:**
 
@@ -345,7 +348,7 @@ SUMMARY: PASS=23 FAIL=0
 - [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) — finite operator-algebra bridge for `M_{P,E}=PEP`, valid-effect bounds, trace-cyclicity algebra, nested compression, and the Jordan-product guard
 - [`LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`](LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md) — canonical finite projective Kraus selection `K_r=P_r` under restricted readout-frame scope
 - [`RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md`](RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md) — finite pointer-record write to projective Kraus isometry bridge under supplied pointer-model premises
-- [`RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md`](RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md) — typed finite kernel interface under supplied instrument and trace/effect pairing
+- `RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md` (later companion, plain reference — see note above) — typed finite kernel interface under supplied instrument and trace/effect pairing
 
 **Runner/cache evidence** (load-bearing for the native bridge):
 

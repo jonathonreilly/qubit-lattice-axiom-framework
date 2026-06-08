@@ -1,0 +1,69 @@
+==============================================================================================
+One-loop velocity anisotropy COMPUTED (gauge-invariant on-shell pole): the Lorentz
+naturalness gap upgrades from order-of-magnitude to a computed obstruction
+==============================================================================================
+
+----------------------------------------------------------------------------------------------
+Part 0: reprove the dim-6 lattice Lorentz-violating dispersion (the source operator)
+----------------------------------------------------------------------------------------------
+  [PASS] (0.1) free staggered/naive fermion E^2 = k^2 - (a^2/3) k^4 + O(a^4): the dim-6 LV operator  --  coeff k^4 = -a**2/3 (CPT-even, P-even)
+  [PASS] (0.2) free boson (Laplacian) E^2 = k^2 - (a^2/12) k^4: dim-6 LV, factor 4 weaker  --  coeff k^4 = -a**2/12
+
+----------------------------------------------------------------------------------------------
+Part A: the BARE OFF-SHELL delta_v is artifact-dominated (reproduce the two validations)
+----------------------------------------------------------------------------------------------
+  [PASS] (A1) naive (r=0): temporal A log-DIVERGES with the BZ grid, spatial B==0 (parity) -> 0.31 spurious  --  A: -0.295->-0.332 (grows); B ~ 2.1e-17 (doubler artifact)
+  [PASS] (A2) Wilson OFF-SHELL B-A is ~5x sensitive to the regulator r (discretization artifact, not physical)  --  B-A over r in [0.3,2]: 0.029..0.160 = 5.5x
+
+----------------------------------------------------------------------------------------------
+Part B: the GAUGE-INVARIANT ON-SHELL pole velocity resolves the artifact; O(alpha_s), nonzero, NOT taste-protected
+----------------------------------------------------------------------------------------------
+  [PASS] (B1) ON-SHELL delta_v r-variation collapses vs off-shell (the Nielsen on-shell prescription removes the artifact)  --  on-shell -0.0161..-0.0107 = 0.66x  vs  off-shell 5.5x
+  [PASS] (B2) |delta_v| ~ 0.01-0.02 per g^2 C_2 = O(0.1-0.2) alpha_s: loop-suppressed but NOT Planck-suppressed (Collins)  --  |delta_v| in [0.0107,0.0161] per g^2 C_2; c_v ~ 2.1 (16pi^2 norm), O(1)
+  [PASS] (B3) sign is v<1 (Sigma_s < Sigma_t) in this Euclidean on-shell extraction (NOT independently certified -- see below)  --  ['-0.0161', '-0.0148', '-0.0131', '-0.0117', '-0.0107']; an independent real-time 2nd-order-PT cross-check confirms magnitude/nonzero/no-protection but CANNOT certify the sign (its temporal renorm is threshold-contaminated)
+  [PASS] (B4) gauge (xi) spread of the rainbow-level value is ~15% (HONEST residual: exact O(1) coeff needs Wilson vertex + tadpole)  --  xi=1,0.5,0: ['-0.0131', '-0.0122', '-0.0113'] -> 14% spread
+  [PASS] (B5) IR-finite: the velocity DIFFERENCE delta_v is stable as the gluon IR mass lam->0  --  lam=0.6..0.2: ['-0.0132', '-0.0134', '-0.0131', '-0.0125']
+  [PASS] (B6) NO TASTE PROTECTION: delta_v is nonzero and comparable for staggered (no Wilson chiral breaking) AND Wilson  --  staggered delta_v=-0.0147, wilson=-0.0131 -- taste does NOT kill the anisotropy
+
+----------------------------------------------------------------------------------------------
+Part C: 4D-SYMMETRIC control -- only SPACETIME hypercubic (B_4), not INTERNAL taste, forces Sigma_t=Sigma_s; the regulator question
+----------------------------------------------------------------------------------------------
+  [PASS] (C1) 4D-symmetric lattice: temporal & spatial self-energy coeffs EQUAL to ~1e-15 (B_4 hypercubic) -> delta_v = 0  --  A_4d=-0.01456  B_4d=-0.01456  diff=-5.2e-18
+  [PASS] (C2) NO INTERNAL protection: taste (internal) commutes with the spacetime gamma index -> cannot relate a temporal to a spatial coeff  --  verified at machine precision in the spin(x)taste rep: only a t<->s-crossing SPACETIME element collapses the 2-param invariant space to 1 (forces Sigma_t=Sigma_s)
+  [PASS] (C3) REGULATOR-CONDITIONAL: B_4 IS a custodial symmetry the framework POSSESSES on its symmetric-Euclidean (RP/SO(4)/single-clock) regulator  --  on R x Z^3 the kinetic form has a 2-dim invariant space (c_t!=c_s ALLOWED); on the symmetric 4D Z^4 lattice it is 1-dim (c_t=c_s FORCED, C1) -> the obstruction (Part E) is conditional on the asymmetric surface being physical
+  [PASS] (C4) 'continuous time breaks B_4' is a regulator CHOICE / admitted dynamics gate, NOT a theorem (framework's own 2026-06-07 diagnostic note)  --  DIRAC_LORENTZ_DIAGNOSTIC: 'continuous time...does not add an independent temporal lattice spacing...the framework must provide or admit the self-adjoint Hamiltonian surface' -> the B_4 escape is the OPEN constructive route, not closed
+
+----------------------------------------------------------------------------------------------
+Part D: the speed-difference operator anomalous dimension gamma = (C_F + C_B N_f) alpha_s
+----------------------------------------------------------------------------------------------
+  [PASS] (D1) SU(3) Casimirs from primitives: C_F=(N^2-1)/(2N)=4/3 (fundamental), T_F=1/2 (Dynkin/vac-pol per flavor)  --  C_F=1.3333, T_F=0.5
+  [PASS] (D2) c_gamma = C_F + T_F*N_f = 4/3 + N_f/2 (difference-mode eigenvalue; C_A drops out of the difference channel)  --  N_f=1 -> 11/6=1.83; N_f=3 -> 17/6=2.83 (central); N_f=6 -> 13/3=4.33
+      N_f=1: c_gamma=1.83 -> gamma = c_gamma*alpha_s = 0.146
+      N_f=3: c_gamma=2.83 -> gamma = c_gamma*alpha_s = 0.225
+      N_f=6: c_gamma=4.33 -> gamma = c_gamma*alpha_s = 0.345
+  [PASS] (D3) ASYMPTOTIC FREEDOM: gamma = c_gamma*alpha_s ~ 0.15-0.34 is WEAK exactly at the UV regeneration scale M_Pl  --  gamma in [0.146, 0.345] (N_f=1..6) at beta=6; closing the gap needs gamma~1 (strong FP), precluded by AF near M_Pl
+
+----------------------------------------------------------------------------------------------
+Part E: RG run M_Pl -> 1 GeV + species residual + VERDICT (conditional on the asymmetric surface)
+----------------------------------------------------------------------------------------------
+  [PASS] (E1) delta_v_UV(fund) ~ 1.7e-2 = 0.2 alpha_s = O(1) x alpha_s/4pi -- the COMPUTED Collins regeneration (finite, NONZERO)  --  delta_v_UV = 0.0173 = 0.22 alpha_s; finite ~alpha/4pi (NOT a literal power divergence -- the a^2 dim-6 op x 1/a^2 spatial loop nets a finite marginal piece)
+  [PASS] (E2) required gamma_crit per sector: quark/gluon 0.54 (WEAKEST), photon 0.96, electron 1.06, nucleon 1.32  --  photon=0.96, electron=1.06, nucleon=1.32, quark/gluon=0.54
+  [PASS] (E3) framework gamma ~ 0.15-0.34 < even the WEAKEST gamma_crit (0.54): asymptotic-freedom suppression is INSUFFICIENT  --  gamma in [0.15,0.34]; gamma is tethered to the weak AF alpha_s (gamma=0.54 would need c_gamma=6.8, a 3-4x inflation, NOT a strong FP available near M_Pl)
+  [PASS] (E4) residual species delta_v(1 GeV) ~ 1e-8..1e-4 EXCEEDS the tight bounds (1e-20..1e-27) by 12-21 orders; weakest (1e-12) by 4-8  --  delta_v_obs in [5.7e-09, 3.6e-05] (gamma band); ALL > the weakest bound 1e-12
+  [PASS] (E5) STEELMAN 'all species share one v*' FAILS: different reps (C_2) flow at different rates -> observable IS the species difference  --  Delta C_2(adj-fund) = 1.67 != 0. CAVEAT: SU(3)-only; color-singlet leptons (C_2=0) get delta_v=0 from gluons -> the photon/electron bounds need the EM/weak sectors (separate couplings) -- an O(1) cross-group accounting beyond this runner
+  [PASS] (E6) ROBUSTNESS asymmetric & honest: TIGHT bounds (photon/electron/nucleon) exceeded in EVERY factor-2 corner (+10..+21);  --  WEAKEST (quark/gluon 1e-12) is at the EDGE: central gap ~+6.0, falls to ~+2.3 at (c_v/2, gamma=0.4) -- still positive, closes only if gamma>=0.54 (needs c_gamma>=6.8, not a factor-2 move)
+  [PASS] (E7) REGULATOR-CONDITIONAL VERDICT: GIVEN the asymmetric (spatial-Z^3 + continuous-time Hamiltonian) surface => COMPUTED LV obstruction;  --  the B_4-symmetric-Euclidean limit (a_tau->0 of the framework's own RP/SO(4) regulator) would give delta_v=0 (Part C). Which surface is physical is the named OPEN regulator-commitment question (the dominant residual).
+  [PASS] (E8) NET: upgrades #3121/#3123 from order-of-magnitude (coeffs estimated) to COMPUTED + closes the INTERNAL (taste) escape;  --  sharpens the open problem to a single regulator choice + the B_4 custodial route (available-but-forgone, NOT absent) + the exact O(1) coeff (full vertex+tadpole). Sign v<1 = Euclidean-method-only, not triangulated.
+
+==============================================================================================
+SUMMARY: on-shell delta_v ~ 0.01-0.02 per g^2 C_2 (O(0.1-0.2) alpha_s), NONZERO, finite ~alpha/4pi,
+r-stable (artifact resolved), NOT INTERNAL(taste)-protected; gamma = (4/3 + N_f/2) alpha_s ~ 0.15-0.34
+<< gamma_crit ~ 0.54-1.32 -> residual species delta_v ~ 1e-8..1e-4 exceeds the tight bounds by 12-21
+orders (robust to factor-2). VERDICT: a COMPUTED but REGULATOR-CONDITIONAL LV obstruction -- holds on
+the framework's asymmetric (spatial-Z^3 + continuous-time) surface; the B_4-symmetric-Euclidean limit
+(the framework's own RP/SO(4) regulator) would give delta_v=0. Upgrades #3121/#3123 to COMPUTED + closes
+the INTERNAL (taste) escape; sharpens the open problem to the regulator choice + B_4 (available-not-absent).
+Honest residuals: exact O(1) coeff (vertex+tadpole); sign v<1 (Euclidean-only); cross-group species.
+==============================================================================================
+TOTAL: PASS=25 FAIL=0
+==============================================================================================

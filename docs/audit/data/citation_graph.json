@@ -18625,6 +18625,26 @@
       "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
     },
     {
+      "from": "koide_kodim_real_structure_route_empty_r_undetermined_bounded_no_go_note_2026-06-08",
+      "to": "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08"
+    },
+    {
+      "from": "koide_kodim_real_structure_route_empty_r_undetermined_bounded_no_go_note_2026-06-08",
+      "to": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17"
+    },
+    {
+      "from": "koide_kodim_real_structure_route_empty_r_undetermined_bounded_no_go_note_2026-06-08",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "koide_kodim_real_structure_route_empty_r_undetermined_bounded_no_go_note_2026-06-08",
+      "to": "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04"
+    },
+    {
+      "from": "koide_kodim_real_structure_route_empty_r_undetermined_bounded_no_go_note_2026-06-08",
+      "to": "koide_doublet_is_frobenius_schur_complex_type_orientation_bounded_note_2026-06-07"
+    },
+    {
       "from": "koide_lane_audit_batch_note_2026-05-02",
       "to": "charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27"
     },
@@ -32059,6 +32079,18 @@
     {
       "from": "universal_gr_positive_background_local_closure_note",
       "to": "universal_gr_isotropic_glue_operator_note"
+    },
+    {
+      "from": "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+      "to": "universal_gr_polarization_frame_bundle_blocker_note"
+    },
+    {
+      "from": "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+      "to": "universal_gr_supermetric_normal_form_note"
+    },
+    {
+      "from": "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+      "to": "universal_gr_invariant_frame_obstruction_note"
     },
     {
       "from": "universal_gr_tensor_action_blocker_note",
@@ -71974,6 +72006,24 @@
       "runner_path": "scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py",
       "title": "Koide kappa Z_d-Action Circulant Character Decomposition Narrow Theorem"
     },
+    "koide_kodim_real_structure_route_empty_r_undetermined_bounded_no_go_note_2026-06-08": {
+      "claim_id": "koide_kodim_real_structure_route_empty_r_undetermined_bounded_no_go_note_2026-06-08",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08",
+        "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+        "minimal_axioms",
+        "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
+        "koide_doublet_is_frobenius_schur_complex_type_orientation_bounded_note_2026-06-07"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "f5fa5c3524ccf1b0389d8d15e92636f92547e7ff2bc5a2b22da0d31c5e60ded1",
+      "path": "docs/KOIDE_KODIM_REAL_STRUCTURE_ROUTE_EMPTY_R_UNDETERMINED_BOUNDED_NO_GO_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_koide_kodim_route_empty_independence_2026_06_08.py",
+      "title": "The KO-Dimension / Real-Structure Route to a Koide Hard No-Go Is Empty (an Inversion); r=1/2 Is J-Allowed, and r Is Undetermined by {Axioms + Real Structure} (Bounded No-Go + Independence Corollary)"
+    },
     "koide_lane_audit_batch_note_2026-05-02": {
       "claim_id": "koide_lane_audit_batch_note_2026-05-02",
       "claim_type_author_hint": null,
@@ -95587,6 +95637,22 @@
       "runner_path": "scripts/universal_gr_positive_background_local_closure.py",
       "title": "Universal GR Positive-Background Local Closure on `PL S^3 x R`"
     },
+    "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": {
+      "claim_id": "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "universal_gr_polarization_frame_bundle_blocker_note",
+        "universal_gr_supermetric_normal_form_note",
+        "universal_gr_invariant_frame_obstruction_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "1df1a9512a380cf7bce7fb9401b4d38a9d8504e7ee88fed134c9edbec9d46f04",
+      "path": "docs/UNIVERSAL_GR_SCALAR_GENERATOR_TT_KERNEL_SHARPENING_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_universal_gr_scalar_generator_tt_kernel_sharpening.py",
+      "title": "The Scalar Observable Generator's Metric-Hessian is Rank-1 Longitudinal; the TT Graviton Block is in its Exact Kernel (Sharpening of the Universal-GR Polarization-Frame Blocker)"
+    },
     "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10": {
       "claim_id": "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -101557,27 +101623,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 916,
+      "bounded_theorem": 917,
       "decoration": 1,
       "meta": 274,
-      "no_go": 146,
+      "no_go": 147,
       "none": 1494,
       "open_gate": 77,
       "positive_theorem": 198
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1329,
+      "bounded_theorem": 1330,
       "decoration": 1,
       "meta": 274,
-      "no_go": 260,
+      "no_go": 261,
       "none": 466,
       "open_gate": 152,
       "positive_theorem": 624
     },
-    "edge_count": 11501,
+    "edge_count": 11509,
     "leaf_count": 1021,
-    "node_count": 3106,
+    "node_count": 3108,
     "root_count": 1017,
-    "runners_with_path": 2691
+    "runners_with_path": 2693
   }
 }

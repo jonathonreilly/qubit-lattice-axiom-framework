@@ -15,7 +15,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 1040,
+      "max_transitive_descendants": 1041,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -24,7 +24,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
           "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation",
-          "transitive_descendants": 1040
+          "transitive_descendants": 1041
         },
         {
           "audit_status": "unaudited",
@@ -33,7 +33,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md",
           "title": "Reflection Positivity \u2014 Wilson Plaquette Temporal-Gauge Bridge: Sign Repair + a Manifestly-Positive Character-Coefficient Theorem (Repairs the `audited_failed` Bridge)",
-          "transitive_descendants": 1040
+          "transitive_descendants": 1041
         }
       ],
       "requires_lemma_extraction": false
@@ -52,7 +52,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 842,
+      "max_transitive_descendants": 843,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -61,7 +61,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
           "title": "Observable Principle From Axiom Note",
-          "transitive_descendants": 842
+          "transitive_descendants": 843
         },
         {
           "audit_status": "unaudited",
@@ -70,7 +70,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md",
           "title": "Observable Principle Positive Source Cone P2 Elimination Narrow Theorem Note",
-          "transitive_descendants": 842
+          "transitive_descendants": 843
         }
       ],
       "requires_lemma_extraction": false
@@ -89,7 +89,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 315,
+      "max_transitive_descendants": 316,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -98,7 +98,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
           "title": "Staggered-Dirac Chirality-Parity Bridge Narrow Theorem Note",
-          "transitive_descendants": 315
+          "transitive_descendants": 316
         },
         {
           "audit_status": "unaudited",
@@ -107,7 +107,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md",
           "title": "Staggered Dirac Kawamoto-Smit Conditional Realization Rescoping Companion",
-          "transitive_descendants": 315
+          "transitive_descendants": 316
         }
       ],
       "requires_lemma_extraction": false

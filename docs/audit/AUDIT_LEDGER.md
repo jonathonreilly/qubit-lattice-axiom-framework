@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 208 |
+| **retained** | 209 |
 | **retained_no_go** | 219 |
 | **retained_bounded** | 750 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1346 |
+| unaudited | 1345 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1175 |
+| `audited_clean` | 1176 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1661 |
+| `unaudited` | 1660 |
 
 | claim_type | count |
 |---|---:|
@@ -761,6 +761,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_symmetry_unification_decision_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_weak_field_mass_scaling_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_weak_field_purity_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `lensing_adjoint_kernel_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_adjoint_kernel_reduced_model_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lensing_beta_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10989,6 +10990,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The retained graph-first SU(3) integration authority supplies the selected-axis weak-fiber/base decomposition and the 6 and 2 block multiplicities. The stated ratio then follows by the displayed tracelessness equation, while the +1/3,-1 normalization and SM-Y labeling are explicitly outside the load-bearing claim.
 - **rationale:** The audited load-bearing content is a class-A algebraic corollary of the graph-first selected-axis commutant decomposition: once the 6-state and 2-state blocks are supplied, tracelessness uniquely fixes the scale-free ratio. The runner substantively verifies the graph-first decomposition and related finite-dimensional algebra, with no external comparator checks. The note does not close a new physical identification beyond the upstream graph-first SU(3) parent and explicitly demotes the absolute hypercharge-like pattern to a convention-fixed, non-load-bearing corollary.
 - **decoration parent:** `graph_first_su3_integration_note`
+- **auditor confidence:** high
+
+### `lensing_adjoint_kernel_note`
+
+- **Note:** [`LENSING_ADJOINT_KERNEL_NOTE.md`](../../docs/LENSING_ADJOINT_KERNEL_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the supplied Fam1 default run T_phys=15, H=0.25, beta=0.8, b ∈ {3,4,5,6}, the code-level first-order lensing observable is the adjoint-weighted edge-sum kernel and its computed |K_l| profile is broad and downstream-skewed rather than a localized mass-plane kick.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-192742-e59198e362-lensing_adjoint_kernel_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained first-order detector-centroid response can be written exactly as K_l = 2 Re Σ_{edges i→j into layer l} λ_j A_i U_ij, and the summed layer kernel reproduces kubo_true while remaining broad and post-mass-skewed over b ∈ {3,4,5,6}.  _(class `C`)_
+- **chain closes:** True — Independently differentiating the forward DAG recurrence gives U_ij = W_ij(-i k L_ij/r_field) and the adjoint recurrence λ_i = c_i + Σ W_ij λ_j, so the detector functional reduces to the stated edge sum. The supplied runner source genuinely computes A, λ, U, K_l, and the default cache verifies equality with true_kubo_at_H and the broad kernel metrics without hard-coded expected values.
+- **rationale:** The load-bearing identity is a valid adjoint/backpropagation rewrite of the same first-order Kubo centroid functional implemented in the helper, and the sign and normalization factors match the derivative of exp(i k L(1-s/r)). The default cached run supports the numerical shape claim across b = 3,4,5,6: exact sums match kubo_ref to roundoff, abs-centers lie downstream of x_src, and widths are O(3.5-3.9), not a narrow mass-plane spike. The cited authorities are retained-grade bounded inputs and are used only to frame the failed ray/finite-path rescues, while the source explicitly does not claim a derivation of the -1.43 exponent.
 - **auditor confidence:** high
 
 ### `lensing_adjoint_kernel_reduced_model_note`

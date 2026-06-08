@@ -3,7 +3,7 @@
     "critical": 327,
     "high": 250,
     "leaf": 402,
-    "medium": 369
+    "medium": 368
   },
   "cycle_break_target_count": 15,
   "cycle_break_targets": [
@@ -17645,33 +17645,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lensing_adjoint_kernel_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lensing_long_path_test_note",
-        "lensing_beta_sweep_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/kubo_continuum_limit.py"
-      ],
-      "load_bearing_score": 6.644,
-      "note_path": "docs/LENSING_ADJOINT_KERNEL_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lensing_adjoint_kernel_probe.py",
-      "transitive_descendants": 49
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40829,6 +40802,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 33,
-  "total_pending": 1348
+  "ready_count": 32,
+  "total_pending": 1347
 }

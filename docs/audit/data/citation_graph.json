@@ -45998,7 +45998,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lensing_long_path_test_note"
+      "to": "lensing_adjoint_kernel_note"
     },
     {
       "from": "repo.front_door_status",
@@ -88950,7 +88950,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "lensing_long_path_test_note",
+        "lensing_adjoint_kernel_note",
         "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
         "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06",
         "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
@@ -88960,7 +88960,7 @@
         "nonlabel_grown_basin_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cccb467f76feefcf16add9590ea71a6e61f5faa25434d9dd0181b62533592c23",
+      "note_hash": "a80fe482bfa0d221a7d7b7b0dc50e2aa04f5324b1a11db49e8a371fac511539b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

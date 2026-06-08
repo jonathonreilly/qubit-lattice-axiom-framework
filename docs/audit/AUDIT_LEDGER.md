@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 760 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1329 |
+| unaudited | 1328 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1189 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1644 |
+| `unaudited` | 1643 |
 
 | claim_type | count |
 |---|---:|
@@ -1323,6 +1323,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -2399,6 +2400,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The bounded local checks are that K = log J gives the listed cumulants, the Euler closed-surface law gives cube and two-cube-box weights 18^{-5} and 18^{-9}, and the first non-K epsilon/baryon channel is only identified as an open beta^10 sector rather than a proved closure.  _(class `A`)_
 - **chain closes:** True — The scoped local identities close algebraically from the supplied SU(3) character/Picard-Fuchs inputs and standard Haar contraction rules, and the independent coefficient/root checks match the stated table. The full beta^9/beta^10 multi-cube classification is explicitly outside the claim scope.
 - **rationale:** The note is carefully scoped as an open gate, not a beta=6 closure, and its load-bearing checked claims are finite algebraic consequences of the supplied recurrence/ODE and SU(3) tensor rules. The runner does not recompute the omitted 48-support or marked-face sector classifications, but the source note explicitly excludes those from the theorem claim. Independent checks reproduce kappa_2 through kappa_5, the Euler weights 18^{-5} and 18^{-9}, the unique singlet in 3x3x3, and the listed nearest-root migration.
+- **auditor confidence:** high
+
+### `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic tree-sector radius threshold and finite compact-deficit obstruction; no all-K-built, full-series, or beta=6 plaquette closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-202155-7cb3961599-beta6_resummation_radius_gro`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For tree-like K-built clusters, the bound is geometric in k with ratio g_tree 18^{-4}|beta|^4, hence R_tree(g_tree)=18/g_tree^{1/4} and R_tree>6 exactly when g_tree<81; compact K-built clusters are not covered because the 2x2x1 block has F=16,n=15 instead of F=18,n=17.  _(class `A`)_
+- **chain closes:** False — The tree-ratio algebra and compact 2x2x1 incidence check are correct on their own terms. The restricted packet does not close the general Euler-weighted tree-cluster majorant or the open growth input g_tree<81, and the source note has a runner scorecard drift: PASS=28 in Section 6 versus PASS=32 in the supplied cache.
+- **rationale:** Independent algebra confirms F=6k-2s, the tree specialization F=4k+2,n=4k+1, the compact 2x2x1 obstruction F=16,n=15, the deficit factor 9 at beta=6, and the threshold g_crit=(18/6)^4=81. However, the runner hard-codes the general Euler-18 cluster-weight form rather than deriving the full tree-sector cluster-expansion majorant from a retained in-packet source. The source also contains a quantitative runner/source mismatch: Section 6 reports SCORECARD PASS=28 while the supplied runner cache reports PASS=32. No registered primitive in the provided registry summary is relevant to this SU(3) cluster statement.
 - **auditor confidence:** high
 
 ### `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`

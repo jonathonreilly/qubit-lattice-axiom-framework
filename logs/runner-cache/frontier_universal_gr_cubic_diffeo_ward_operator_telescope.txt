@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_cubic_diffeo_ward_operator_telescope.py
+runner_sha256: 2392c5c3996b403192e6a85c83e14c1df200f47fe149945a5e8369b042dfcdc3
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 4.13
+status: ok
+----- stdout -----
+PASS T1 native iD elliptic: det=m^2+|sin|^2>0 on ALL 2744 BZ modes (valid Z)
+PASS T1b bare-Hermitian sigma.sin sign-indefinite (2048/2744 modes det<=0, #3222 control)
+PASS T2 gauge op-Ward sum_i 2sin(k_i/2)u_i = D(q+k)-D(q) EXACT (err=1.2e-15)
+PASS T3 STRESS op-WT sum_i 2sin(k_i/2)V_ij = 1/2 sbar_j*dD + 1/2 Ssc*u_j EXACT (err=6.1e-16)
+PASS T4 staggered DD^dag=(m^2+sum sin^2(P/2))I_16 (err=1.8e-15)
+PASS T4b staggered gauge op-Ward sum_mu 2sin(K/2)Vel(P+K/2)=D(P+K)-D(P) EXACT (err=7.1e-16)
+PASS T5 staggered STRESS op-WT sum_mu 2sin(K/2)Vst_munu = 1/2 mom_nu*dD + 1/2 Ssc*Vel_nu EXACT (err=4.4e-16)
+PASS T6 telescoping: contracted cubic triangle = bubble-difference + contact EXACTLY (|diff|=1.1e-16)
+PASS T6b equivalence-principle bubble-difference is NONZERO (|TEL|=0.1093 -- graviton couples to its own stress)
+PASS T7 contact Ssc is O(k) linear (|Ssc|/k-scale = 1.97, 2.05, 2.07, 2.04 ~ const -> seagull-completion channel, cubic analog of #3242 O(a^2) floor)
+PASS T8 contact is NOT subleading: contact/LHS = 0.5001, 0.5002, 0.5001 = 0.5 at all k0 (telescope + contact = the two equal halves of the contracted vertex)
+PASS T8b contact scales at the SAME power as the vertex (k0^0.84 vs k0^0.84) -> the closure requires the seagull completion, NOT a trivial vanishing
+
+The cubic diffeomorphism Ward-Takahashi identity reduces to an EXACT operator-level stress
+Ward-Takahashi identity (verified 1e-16 on BOTH the 2-comp Cl(3) and the staggered
+Kahler-Dirac fermion): the longitudinally-contracted cubic graviton vertex TELESCOPES into a
+2-point bubble-difference -- the W-native induced graviton couples to its own stress tensor
+(equivalence-principle structure), reducing the cubic Ward identity to the (transverse, #3242)
+2-point Ward identity plus a diamagnetic-seagull completion (the O(k) contact term, the cubic
+analog of #3242's O(a^2) floor). Magnitude registered (G3).
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

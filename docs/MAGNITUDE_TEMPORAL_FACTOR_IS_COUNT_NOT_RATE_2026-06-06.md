@@ -3,12 +3,13 @@
 **Date:** 2026-06-06
 **Type:** boundary correction / bounded positive route
 **Claim type:** bounded_theorem
-**Status:** branch-local bounded; the magnitude-count temporal factor is shown to
-sit in the SUPPORTED (count) zone of the retained clock-rate no-go, not its
-forbidden (rate) zone. Sets no audit status; audit lane owns final classification.
-`audit_required_before_effective_retained=true; bare_retained_allowed=false`.
+**Status:** source-side bounded support; the magnitude-count temporal factor is
+shown to sit in the count zone of the retained clock-rate no-go, not its
+forbidden rate/metric zone. Sets no audit status; audit lane owns final
+classification.
+`actual_current_surface_status=bounded-support; audit_required_before_effective_retained=true; bare_retained_allowed=false`.
 **Runner:** [`scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py`](../scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py)
-(`TOTAL: PASS=15 FAIL=0`).
+(`TOTAL: PASS=N FAIL=0`).
 **Cached log:** `logs/runner-cache/magnitude_temporal_factor_is_count_not_rate_2026_06_06.txt`
 
 ## Background
@@ -23,8 +24,34 @@ the retained no-go `POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06`
 
 This note moves that wall. It shows the clock-rate no-go is **scoped to the clock
 RATE / time METRIC**, and that the magnitude's temporal factor of 2 is a
-**transfer-step COUNT**, which that same no-go **explicitly supports**. The wall
-does not reach this route.
+**transfer-step COUNT**. The no-go permits count-only rows to cite record counts,
+while requiring rate-reporting rows to name their clock denominator. The wall
+does not reach a count-only claim.
+
+## 2026-06-08 source-packet repair
+
+The conditional audit asked for full one-hop authorities for the clock-rate
+interface, hierarchy Matsubara count, and RP two-step transfer block. This repair
+makes that packet explicit and executable.
+
+```yaml
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+| role | one-hop authority | current ledger status |
+|---|---|---|
+| count/rate boundary | [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md), cache [`frontier_post_record_clock_rate_interface_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_clock_rate_interface_2026_06_06.txt) | `retained_no_go` |
+| temporal determinant count `8 L_t` | [`HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE`](HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md), cache [`frontier_hierarchy_matsubara_decomposition.txt`](../logs/runner-cache/frontier_hierarchy_matsubara_decomposition.txt) | `retained_bounded` |
+| minimal positive temporal block | [`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28`](AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md), cache [`axiom_first_rp_two_step_transfer_matrix_positivity.txt`](../logs/runner-cache/axiom_first_rp_two_step_transfer_matrix_positivity.txt) | `retained_bounded` |
+| spatial `2^3 = 8` mode count | [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md), cache [`frontier_naive_lattice_fermion_two_power_d_species_count_narrow.txt`](../logs/runner-cache/frontier_naive_lattice_fermion_two_power_d_species_count_narrow.txt) | `retained` |
+| staggered BZ-corner orbit | [`STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md), cache [`audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.txt`](../logs/runner-cache/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.txt) | `retained` |
+| staggered species-reduction bridge | [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16`](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md), cache [`audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.txt`](../logs/runner-cache/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.txt) | `retained_bounded` |
 
 ## The no-go's own scope (quoted)
 
@@ -37,9 +64,11 @@ does not reach this route.
 > an external observation window.
 
 And "Boundaries": it "does not derive a clock, time metric, transition rate,
-Hamiltonian, action, transfer operator". So the no-go forbids records from fixing
-a **rate/metric**; it **supports** records supplying **counts** (and names
-"transfer-step count" and "lattice step" as legitimate denominators).
+Hamiltonian, action, transfer operator". So the no-go forbids records from
+fixing a **rate/metric**. It supports count-only rows citing **counts**, and it
+says any row that reports a rate must name whether its denominator is an event
+count, coordinate time, proper time, lattice step, transfer-step count, or
+observation window. This note uses only the count side.
 
 ## Statement (bounded theorem)
 
@@ -50,11 +79,12 @@ hopping amplitude `u_0`** (the rate-like quantity). The per-mode VALUE (the
 eigenvalue magnitudes, i.e. `alpha_LM`) depends on `u_0` and is the SEPARATE
 `DELTA0` magnitude gate — not what records supply, and not at issue here.
 
-**(T2) The count is in the no-go's SUPPORTED zone.** A transfer-step / lattice-
-step count is exactly what `POST_RECORD_CLOCK_RATE_INTERFACE` permits records to
-supply. The exponent `16` is such a count; the clock-rate no-go therefore does
-**not** block records from carrying it. (The no-go stands; it is scoped to rate
-and simply does not reach the count.)
+**(T2) The count is in the no-go's SUPPORTED zone.** The retained clock-rate
+interface permits count-only rows to cite event order/length/counts, while
+requiring rate rows to identify the denominator. The exponent `16` is such a
+count; the clock-rate no-go therefore does **not** block this count-only use.
+(The no-go stands; it is scoped to rate/metric and simply does not reach the
+count.)
 
 **(T3) The minimal transfer-step count is 2 (native).** The staggered temporal
 phase `eta_1(t) = (-1)^t` has minimal period 2, and the single-step transfer is
@@ -72,10 +102,10 @@ leaves the **NUMBER** of modes (the count) invariant. The dissolved 2 (a rate
 spacing) and the surviving 2 (a mode cardinality) are **different objects**.
 
 **Therefore:** at the minimal reflection-positive block `L_t = 2`, the magnitude
-exponent is the count `8 x 2 = 16`, and this count is a transfer-step count that
-the retained clock-rate no-go explicitly supports records carrying. The route the
-panel parked behind that no-go is **reopened**: the wall is scoped to rate, the
-magnitude needs a count.
+exponent is the count `8 x 2 = 16`, and this row uses that object only as a
+count, not as a clock rate. The route the panel parked behind that no-go is
+**reopened** at the source-boundary level: the wall is scoped to rate, while this
+claim needs a count.
 
 ## Reconciliation with the three prior negatives (all consistent)
 
@@ -125,17 +155,21 @@ What remains open is **not** blocked by the clock-rate no-go:
 ## Load-bearing dependency and context references
 
 - `POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06` (**retained_no_go**) — the wall;
-  its supported (count) vs forbidden (rate) scope is load-bearing for T2.
-- `axiom_first_rp_two_step_transfer_matrix_positivity` (**retained_bounded**) —
-  the minimal reflection-positive temporal block is 2 steps (T3).
-- `naive_lattice_fermion_two_power_d_species_count` (**retained**),
-  `staggered_dirac_substep3_bz_corner_hamming_orbit` (**retained**) — the 8
-  spatial corner count.
+  its count vs rate/metric scope is load-bearing for T2.
+- `hierarchy_matsubara_decomposition_note` (**retained_bounded**) — the exact
+  `8 L_t` determinant exponent on the minimal APBC hypercube.
+- `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
+  (**retained_bounded**) — the minimal reflection-positive temporal block is 2
+  steps (T3).
+- `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`
+  (**retained**), `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`
+  (**retained**), and `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16`
+  (**retained_bounded**) — the spatial corner/species count packet.
 - `P2_NATIVE_LORENTZIAN_MAGNITUDE_TEST_2026-06-05` (meta),
   `P2_KCPT_ORBIT_TEMPORAL_FACTOR_NO_GO_2026-06-06` (no_go) — the target residual
   and the prior negatives, reconciled above; context.
-- `hierarchy_matsubara_decomposition_note` (**retained_bounded**) — the `8 L_t`
-  determinant exponent on the Euclidean side; context for the count.
+- No audit status is set here; the audit lane decides whether this source-packet
+  repair is sufficient.
 
 ## Forbidden imports check
 
@@ -143,15 +177,16 @@ What remains open is **not** blocked by the clock-rate no-go:
   PASS condition).
 - No literature comparators; no fitted selectors; no admitted unit conventions
   load-bearing on retention.
-- No new axiom or mechanism proposed; the records→count identification uses the
-  retained clock-rate no-go's own supported zone.
+- No new axiom or mechanism proposed; the count claim uses the retained
+  clock-rate no-go's count-only side, not its forbidden rate/metric side.
 - All "retained" claims verified on the live ledger (`git show
   origin/main:docs/audit/data/audit_ledger.json`).
 
 ## Validation
 
 `scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py`
-(`PASS=15 FAIL=0`): Section A (exponent = mode count, scales with `L_t`,
+(`PASS=N FAIL=0`): Section 0 (one-hop authority docs/runners/caches/statuses);
+Section A (exponent = mode count, scales with `L_t`,
 `u_0`-independent; per-mode value `u_0`-dependent), Section B (count in the
 no-go's supported zone, rate forbidden), Section C (period-2 staggered phase +
 2-step positivity → minimal block 2), Section D (count survives the energy

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py
+runner_sha256: e2d050546fe4a5e6baa104ab90954efacd65f06a6d7ebd02e8d942003a934019
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
 PASS T1 framework lambda=0: G_trace ~ G_shear sign-equal (degenerate); conformal term vanishes on TT
 PASS T1b GR lambda=1: G_trace=-6/b^4 (neg) vs G_shear=+2/b^4 (pos) -> OPPOSITE (indefinite)
 PASS T2 framework lambda=0 gluing: omega^2_trace and omega^2_TT OPPOSITE-signed; TT tachyonic (omega^2_TT<0)
@@ -10,3 +18,6 @@ GR lambda=1 control: omega^2_trace=0.122  omega^2_TT=0.245 (both healthy)
 DEFECT = missing conformal/indefiniteness term; missing primitive narrows to ONE object:
   a spin-2-coupled two-derivative curvature generator PAIRED with a non-degenerate fiber metric.
 TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 767 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1310 |
+| unaudited | 1309 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1198 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1625 |
+| `unaudited` | 1624 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 520 |
 | `high` | 444 |
-| `medium` | 777 |
-| `leaf` | 1270 |
+| `medium` | 774 |
+| `leaf` | 1273 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
@@ -1368,6 +1368,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -18614,6 +18615,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source performs exact SymPy matrix algebra for the stated 90-degree rotation, A1 projection, moved complement coordinates, and symbolic alpha/beta quadratic-energy tie. The broader exhaustiveness claim is explicitly split off as non-load-bearing and is not counted as audited closure.
 - **rationale:** Within the narrowed bounded scope, the load-bearing step is an algebraic identity check, not a numerical match, renaming, or external comparator. The primary runner source actually constructs the projector, rotation, complement difference, and invariant energy expressions rather than merely printing expected PASS lines. The note explicitly admits that full SO(3) exhaustiveness and all-future-invariant nonexistence are not derived, so the clean verdict applies only to the checked bounded witness and invariant class.
 - **auditor confidence:** medium
+
+### `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional bounded no-go: the retained lambda=0 trace=shear supermetric, when paired with the stated opposite-signed Regge/Lichnerowicz comparator potential and omega^2=V/G, forces opposite-signed trace and TT dispersions.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-7ef9f76bff-universal_gr_degenerate_supe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any degenerate supermetric with G_trace=G_shear, omega^2_trace * omega^2_TT = (V_trace V_TT)/G^2 < 0 because the stated Regge/Lichnerowicz comparator potentials have opposite sign.  _(class `A`)_
+- **chain closes:** False — The sign theorem itself is a valid algebraic closure. The restricted packet does not close the imported Regge/Lichnerowicz channel potential or the dynamical gluing law, and the cited GR authorities explicitly leave Einstein/Regge identification open.
+- **rationale:** The runner verifies the algebraic sign product and the trace/shear degeneracy checks, but it hard-codes the comparator potential signs rather than deriving them from retained inputs. The source note correctly flags the Regge/Lichnerowicz curvature as comparator method-context, not W-derived, and the cited authorities leave the Einstein/Regge gluing identification open. There is also a normalization drift between the b^-2 supermetric weights used in the note summary and the b^-4 GR-control coefficients in T1, which should be reconciled before a clean verdict.
+- **open / conditional deps cited:**
+  - `UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md`
+  - `UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md`
+- **auditor confidence:** high
 
 ### `universal_gr_invariant_frame_obstruction_note`
 

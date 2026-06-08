@@ -1,0 +1,19 @@
+loop_slug: koide-wilson-selected-line-split-20260608
+date: 2026-06-08
+current_goal: Repair the Koide delta Wilson selected-eigenline no-go by splitting out the stale ambient eta-proxy residual.
+target_status: no-go bounded-support
+cycle_count: 1
+active_route: keep the computed rank-two selected-line obstruction and endpoint-lift residual; remove ambient mismatch from the closeout
+hard_residual: This remains a no-go for the selected-eigenline route, not a positive delta derivation.
+files_touched:
+  - docs/KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md
+  - scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py
+  - logs/runner-cache/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.txt
+  - .claude/science/physics-loops/koide-wilson-selected-line-split-20260608/
+open_imports:
+  - Independent audit must decide the effective status after this source repair.
+trace_gate_classification: direct_blocker_closure
+pr_status: pending
+next_exact_action: Refresh caches, verify hostile guard, commit, and open PR.
+stop_condition: PR opened with no audit file edits.
+

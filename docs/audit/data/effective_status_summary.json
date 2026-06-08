@@ -37,7 +37,6 @@
   ],
   "cycles_detected": 15,
   "effective_status_counts": {
-    "audit_in_progress": 1,
     "audited_conditional": 24,
     "audited_numerical_match": 15,
     "audited_renaming": 35,
@@ -73,10 +72,10 @@
     "retained": 207,
     "retained_bounded": 745,
     "retained_no_go": 218,
-    "retained_pending_chain": 10,
+    "retained_pending_chain": 11,
     "unaudited": 1356
   },
-  "retained_pending_chain_count": 10,
+  "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
@@ -87,6 +86,7 @@
     "linear_response_second_order_kubo_note",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
     "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
+    "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
   ]
 }

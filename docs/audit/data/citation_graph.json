@@ -88960,7 +88960,7 @@
         "lensing_finite_path_explanation_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "35268cc3926ad77a76c7ab023e123567204b83110a959ce969d81cbe4c98bbce",
+      "note_hash": "5e9e47594d3fcd0dd5c04b2382b442c031ae25c061064b1c7360cb1b11a18364",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

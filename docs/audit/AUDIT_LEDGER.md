@@ -21,10 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 207 |
 | **retained_no_go** | 218 |
 | **retained_bounded** | 745 |
-| _retained_pending_chain_ | 10 |
+| _retained_pending_chain_ | 11 |
 | open_gate | 36 |
 | unaudited | 1356 |
-| audit_in_progress | 1 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1167 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1168 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
@@ -84,7 +83,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 768 |
 | `leaf` | 1279 |
 
-- **Retained pending chain closure:** 10
+- **Retained pending chain closure:** 11
 - **Citation cycles detected:** 15
 
 ### Runner classification (static heuristic)
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -994,6 +992,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `record_axiom_audit_application_map_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -14371,6 +14370,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of the Hilbert-Schmidt projection onto the identity line is alpha = <I_color, M_color>_HS / <I_color, I_color>_HS = Tr_color M_color / N_c, giving rho_singlet = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].  _(class `A`)_
 - **chain closes:** True — The conclusion follows from ordinary finite-dimensional orthogonal projection and the supplied SU(N_c) generator normalization. The note explicitly does not identify this projection fraction with kappa_EW or any physical matching rule.
 - **rationale:** The load-bearing step is a direct Hilbert-Schmidt projection identity, not a definition, renaming, external comparator, or tuned numerical match. The only cited authority needed for P4 supplies the SU(N_c) normalization convention and is provided as retained-grade decoration under the rubric. The runner source performs exact rational arithmetic for the identity, traceless-generator witnesses, normalization checks, sum rule, trace-zero iff zero-singlet condition, and non-claim boundary, with no helper imports and no hard-coded contested physical coefficient.
+- **auditor confidence:** high
+
+### `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`
+
+- **Note:** [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional real antisymmetric D with positive real diagonal source S has det(S+D)>0; the stated small real-diagonal patch stays positive, and a determinant-only readout on R_{>0} is c log det under the explicit continuity/regularity convention with c=1 conventional.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:key_terminology`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-182921-648ca50319-real_diagonal_source_det_pos`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The determinant positivity follows from S + D = S^(1/2)(I + B)S^(1/2) with B real antisymmetric, so det(I+B)=prod_k(1+lambda_k^2)>0, and determinant multiplicativity plus Record finite additivity and explicit continuity give W=c log det.  _(class `A`)_
+- **chain closes:** True — The L1 and L2 determinant claims close by finite-dimensional real linear algebra: antisymmetric spectral pairing, positive diagonal congruence, Neumann invertibility, and sign constancy. L3 closes only in the scoped sense stated in the note: Record supplies finite additivity, while determinant-only dependence, continuity/regularity, and c=1 are explicit conventions rather than derived axioms.
+- **rationale:** The displayed matrix factorization, spectral product sign, Neumann patch, block determinant identity, and continuous multiplicative-to-additive Cauchy solution all check independently of the runner. The runner performs finite random and structural sanity checks with no hard-coded fitted values or contested external comparators, and its source matches the note's scoped claims. The clean verdict is limited to the bounded theorem as written and does not derive a physical readout context, the continuity convention, or the c=1 normalization from Record.
 - **auditor confidence:** high
 
 ### `record_axiom_audit_application_map_2026-06-06`

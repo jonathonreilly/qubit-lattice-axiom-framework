@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 747 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1314 |
+| unaudited | 1313 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1168 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1625 |
+| `unaudited` | 1624 |
 
 | claim_type | count |
 |---|---:|
@@ -1329,6 +1329,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -18757,6 +18758,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The binding evidence of this note is exactly the fixed/reduced-family h=0.125 bounded negatives already carried by its retained one-hop dependencies.  _(class `B`)_
 - **chain closes:** True — The cited authorities are retained_bounded and support the narrowed conclusion that the h=0.125 rows remain Born-clean with TOWARD gravity but F~M about 0.50 rather than near 1. The source note explicitly excludes the wider phys_w=4 continuation from binding scope, so the missing runner for that wider narrative is not load-bearing.
 - **rationale:** No primary runner source or stdout is present, so the audit falls back to the note text and one-hop cited authorities. Within the narrowed scope, the conclusion follows from retained_bounded dependencies and does not require the out-of-scope wider-family phys_w=4 claims. The load-bearing step is cross-note inheritance rather than a fresh first-principles computation, but the source note does not present it as a new computation.
+- **auditor confidence:** medium
+
+### `wide_lattice_h2t_distance_law_note`
+
+- **Note:** [`WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`](../../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A bounded finite-lattice replay at h=0.25, W=12, L=12 for the ordered 3D 1/L^2 valley-linear h^2+T family, limited to distance-tail attraction and F~M sanity checks.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-110209-a6004d4d3e-wide_lattice_h2t_distance_la`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The verifier parses all ten raw distance rows and all six F~M sweep rows from the SHA-pinned frozen replay log and recomputes the peak-tail fit, far-tail fit, and mass-scaling exponent.  _(class `A`)_
+- **chain closes:** False — The completed runner verifies a frozen log by SHA and performs log-linear checks, but the restricted packet does not include the raw distance and sweep rows needed for an independent fit audit. The missing closure step is raw-row inclusion, or an equivalent completed first-principles recompute artifact.
+- **rationale:** The runner is nontrivial: it checks the frozen log SHA, parses raw rows, and recomputes the reported support, tail fits, and F~M exponent rather than merely printing PASS. However, the cache run is a frozen-log verifier, not the --recompute first-principles path, and the raw rows themselves are absent from the restricted packet. Under the binding independent-formula check, runner PASS alone is insufficient for audited_clean.
 - **auditor confidence:** medium
 
 ### `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08`

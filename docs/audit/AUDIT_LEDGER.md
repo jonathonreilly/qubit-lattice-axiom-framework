@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 749 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1350 |
+| unaudited | 1349 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 26 |
+| ~~audited_conditional~~ | 27 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1172 |
-| `audited_conditional` | 26 |
+| `audited_conditional` | 27 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1665 |
+| `unaudited` | 1664 |
 
 | claim_type | count |
 |---|---:|
@@ -1316,6 +1316,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `i1_static_readout_is_native_field_integration_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7464,6 +7465,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Using the standard pi / 16 half-angle radical identities, the full three-sample matrix on the named first symmetric witness sector is explicit in radicals, and the inverse reconstruction map is an exact algebraic map.  _(class `A`)_
 - **chain closes:** True — Direct SU(3) character evaluation at the three named holonomies gives the displayed F entries, and the adjugate formula gives the displayed inverse with Delta=det(F) nonzero. The note explicitly excludes evaluation of Z_6^env(W_A), Z_6^env(W_B), and Z_6^env(W_C), so the missing beta-side physical evaluation is not part of the audited scope.
 - **rationale:** The load-bearing work is finite algebra over the already named sample holonomies and standard character identities, not a numerical fit or a definitional relabeling. Independent checking of the displayed radicals verifies the entries, c>0, e<0, and the inverse formula with Delta=det(F). The runner source performs substantive finite character and linear-algebra checks, while its text-reading support checks are not needed for the scoped radical reconstruction closure.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Whether the cited radical reconstruction map plus the cited character-measure input justify the stated positive-cone and order witness for the first symmetric retained three-sample sector.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-191457-e1d9b06cac-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If a_(0,0), a_(1,0), a_(1,1) >= 0, then Z = F a_vec lies in Cone(r_0,r_1,r_2), equivalently F^(-1) Z >= 0, and Z_B - Z_A = (b - a) a_(1,0) + c a_(1,1) >= 0.  _(class `A`)_
+- **chain closes:** False — The algebraic cone, inverse half-space, and order-witness math closes conditional on the nonnegative retained coefficient triple. The restricted packet does not close the source note's stronger upstream assertion that the actual Wilson-surface environment coefficient triple is already supplied by an exact nonnegative character-measure expansion; the cited authority is only a bounded finite packet and explicitly leaves that identification open.
+- **rationale:** Independent numerical algebra checks reproduce the radical signs, determinant, inverse half-space coefficients, and the inequalities b - a > 0 and c > 0, so the conditional linear-algebra theorem is sound. The dependency problem is scope, not arithmetic: the character-measure cited authority is retained_bounded finite-packet support and expressly does not identify the actual spatial Wilson environment boundary class function. The primary runner mainly proves a separate local Wilson obstruction and only text-checks the cone note as support, so it does not repair the missing bridge.
+- **open / conditional deps cited:**
+  - `GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17`

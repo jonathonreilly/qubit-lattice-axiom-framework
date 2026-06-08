@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py
+runner_sha256: 2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.86
+status: ok
+----- stdout -----
 ================================================================================================================
 GAUGE-VACUUM PLAQUETTE FIRST THREE-SAMPLE LOCAL WILSON RETAINED POSITIVE-CONE OBSTRUCTION
 ================================================================================================================
@@ -38,3 +46,6 @@ Exact reconstructed first-symmetric retained coordinates a_loc = F^(-1) Z_loc
          minimal retained-channel repair in the adjoint coordinate=0.031909612770024
 
 THEOREM PASS=6 SUPPORT=4 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,18 @@
+loop_slug: grown-transfer-basin-live-note-20260608
+date: 2026-06-08
+current_goal: Restore the live canonical grown_transfer_basin_note source surface after the predicate repair.
+target_status: bounded-support
+cycle_count: 1
+active_route: canonical live note plus assertion wrapper over targeted and sweep caches
+hard_residual: Finite row grid and grown-geometry helper dependency remain for independent audit.
+files_touched:
+  - docs/GROWN_TRANSFER_BASIN_NOTE.md
+  - scripts/grown_transfer_basin_live_packet.py
+  - logs/runner-cache/grown_transfer_basin_live_packet.txt
+open_imports:
+  - Independent audit must decide effective status.
+trace_gate_classification: direct_blocker_closure
+pr_status: pending
+next_exact_action: Refresh wrapper cache, verify, commit, and open PR.
+stop_condition: PR opened with no audit edits.
+

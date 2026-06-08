@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
+runner_sha256: 2e4e96b11e3c4b1aec46e238fbc577d195a112cf6cd669cb0ac6e8c52cd39c03
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.56
+status: ok
+----- stdout -----
 ==============================================================================
 GAUGE-VACUUM PLAQUETTE TENSOR-TRANSFER PERRON SOLVE
 ==============================================================================
@@ -165,3 +173,6 @@ this finite reference-solve packet.
 ==============================================================================
 SUMMARY: THEOREM PASS=6 SUPPORT=4 FAIL=0
 ==============================================================================
+
+----- stderr -----
+

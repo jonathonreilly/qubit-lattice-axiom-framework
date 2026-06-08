@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 748 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1353 |
+| unaudited | 1352 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1171 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1668 |
+| `unaudited` | 1667 |
 
 | claim_type | count |
 |---|---:|
@@ -78,8 +78,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 520 |
-| `high` | 444 |
+| `critical` | 521 |
+| `high` | 443 |
 | `medium` | 768 |
 | `leaf` | 1279 |
 
@@ -1314,6 +1314,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `i1_static_readout_is_native_field_integration_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7787,6 +7788,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Differentiating the retained implicit reduction law P_L(beta)=P_1plaq(beta_eff,L(beta)) gives chi_L(beta)=chi_1plaq(beta_eff,L(beta))*beta_eff,L'(beta), hence beta_eff,L'(beta)=chi_L(beta)/chi_1plaq(beta_eff,L(beta)).  _(class `A`)_
 - **chain closes:** True — The scoped theorem follows by algebraic differentiation and integration of retained inputs plus the susceptibility definitions. The explicit closed form for chi_L(beta) and beta=6 closure are explicitly outside the audited claim scope.
 - **rationale:** The load-bearing step is a genuine algebraic consequence of the retained implicit reduction theorem and the positivity of the one-plaquette susceptibility. The mixed-cumulant authority supplies the retained beta^5 onset coefficient, whose differentiation gives the stated beta^4 susceptibility coefficient. The runner's theorem checks are algebraic/imported-coefficient checks; its canonical plaquette inverse checks use a hard-coded support value but are non-load-bearing for this bounded theorem.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite NMAX=7, MODE_MAX=200 source-sector Perron reference solves for rho=1 and rho=delta, plus finite sensitivity/no-go evidence for the three enumerated rho families; not the physical 3D Wilson environment.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-185600-8256f7c6c2-gauge_vacuum_plaquette_tenso`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given an explicit input residual sequence rho, construct the finite operator T_src(6)=exp(3J) D_6^loc C_(Z_6^env) exp(3J), compute its Perron state and P(6), and sweep three enumerated one-parameter rho families to show the local inputs do not select a unique rho within those families.  _(class `C`)_
+- **chain closes:** False — The finite Perron-solve core closes: the runner genuinely computes the Bessel-determinant coefficients, source recurrence, matrix exponentials, and Perron readouts, and the rank-one rho=delta relation independently checks. The source note as written also asserts a Schur L_s=2 finite-volume rho and P=0.4291, but the provided SU3 authority explicitly disclaims that L_s=2/P-candidate limb as open-gate and non-load-bearing.
+- **rationale:** The primary runner is not a print-only certificate: it computes the Wilson coefficients, finite J, exp(3J), Dloc, rho choices, eigenvectors, P(6), convergence drifts, and rho-family spreads. The two structural reference solves and the three-family bounded sensitivity result are supported on their finite stated surface. However, the note's Theorem 3 scope clarification imports the Schur L_s=2 calculation and P=0.4291 without a supplied retained dependency, while the cited SU3 note says that limb depends on an unaudited open-gate row. That prevents a clean verdict for the source note as written.
+- **open / conditional deps cited:**
+  - `SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`

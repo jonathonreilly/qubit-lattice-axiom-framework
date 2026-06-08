@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 220 |
 | **retained_bounded** | 760 |
 | _retained_pending_chain_ | 11 |
-| open_gate | 36 |
-| unaudited | 1330 |
+| open_gate | 37 |
+| unaudited | 1329 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1188 |
+| `audited_clean` | 1189 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1645 |
+| `unaudited` | 1644 |
 
 | claim_type | count |
 |---|---:|
@@ -191,6 +191,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_entropy_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2385,6 +2386,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The 2 by 2 Hankel determinant d_5 d_7 - d_6^2 equals -29/32134205039616, so the displayed coefficient window is not positive semidefinite.  _(class `A`)_
 - **chain closes:** True — Independently rescaling by 18^n gives m_5=4, m_6=42, m_7=180, and m_5 m_7 - m_6^2 = -1044, hence the original determinant is strictly negative. A positive Hamburger moment window requires the corresponding Hankel matrix to be positive semidefinite, and Stieltjes positivity is stronger.
 - **rationale:** The load-bearing step is a direct algebraic identity over the displayed rational inputs, not a renaming, external comparator, or tuned numerical match. The runner hard-codes the input coefficients but also performs the determinant and integer-witness checks; an independent integer-rescaling calculation gives the same negative sign and reduced fraction. The no-go discipline scope is satisfied only for the stated positive-measure real-axis branch, with non-Stieltjes continuations explicitly left open.
+- **auditor confidence:** high
+
+### `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31`
+
+- **Note:** [`BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md`](../../docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited only the local beta=6 resummation open-gate support: finite K cumulants through kappa_5, Euler weights for F=6 and F=10 genus-0 closed surfaces, the SU(3) 3x3x3 singlet identity, and finite J-truncation root migration; the 48-support beta^9 and marked-face beta^10 classifications remain open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-201905-6365094498-beta6_plaquette_multicube_re`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bounded local checks are that K = log J gives the listed cumulants, the Euler closed-surface law gives cube and two-cube-box weights 18^{-5} and 18^{-9}, and the first non-K epsilon/baryon channel is only identified as an open beta^10 sector rather than a proved closure.  _(class `A`)_
+- **chain closes:** True — The scoped local identities close algebraically from the supplied SU(3) character/Picard-Fuchs inputs and standard Haar contraction rules, and the independent coefficient/root checks match the stated table. The full beta^9/beta^10 multi-cube classification is explicitly outside the claim scope.
+- **rationale:** The note is carefully scoped as an open gate, not a beta=6 closure, and its load-bearing checked claims are finite algebraic consequences of the supplied recurrence/ODE and SU(3) tensor rules. The runner does not recompute the omitted 48-support or marked-face sector classifications, but the source note explicitly excludes those from the theorem claim. Independent checks reproduce kappa_2 through kappa_5, the Euler weights 18^{-5} and 18^{-9}, the unique singlet in 3x3x3, and the listed nearest-root migration.
 - **auditor confidence:** high
 
 ### `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`

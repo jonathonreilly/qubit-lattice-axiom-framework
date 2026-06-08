@@ -66,10 +66,13 @@ CP-odd↔complement channel assignment (the `K_R` note's open gaps #2 and #3).
 | **CKM CP phase** | `cos²δ = 1/n_quark` (this note) | the un-derived `K_R` channel assignment + `n = 6` identification |
 
 In all three the *kinematic* axioms fix the **structure** but not the **value**, because the value rides on a
-**dynamics**/realization the axioms do not supply. The framework's genuine, independent falsifiers — the **sub-σ**
-agreement of `δ_CKM = 65.905°` with the measured unitarity-triangle angle `γ` (direct world average
-`≈ 66.4⁺²·⁷₋₂·₈°`, HFLAV Summer 2025; indirect global CKM fit `≈ 65.6⁺⁰·⁹₋₂·₇°` CKMfitter / `65.8 ± 2.2°` UTfit —
-tightest pull `≈ 0.34σ`), and the third-quadrant PMNS `δ_CP` — accrue **whether or not** these admissions ever close.
+**dynamics**/realization the axioms do not supply. The framework's one piece of independent empirical contact here — the
+**sub-σ** agreement of `δ_CKM = 65.905°` with the world-average unitarity-triangle angle `γ` (HFLAV Summer 2025
+`≈ 66.4⁺²·⁷₋₂·₈°`; CKMfitter `≈ 65.6⁺⁰·⁹₋₂·₇°`; UTfit `≈ 65.8 ± 2.2°`; note the newest *direct* LHCb-2025
+combination sits lower, so the pull is sensitivity-dependent) — is a **postdiction on the admitted bridge**: it
+consistency-checks `cos²δ = 1/n_quark` against data, but it does **not** forward-falsify the axioms, and it accrues as
+such **whether or not** this admission ever closes. (This note makes **no** claim about the leptonic `δ_CP`, whose
+status is a separate, conditional matter on a different, unaudited chain.)
 
 ## Scope — what this is and is not
 

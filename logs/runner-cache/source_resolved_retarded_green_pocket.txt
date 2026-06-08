@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/source_resolved_retarded_green_pocket.py
-runner_sha256: e1244c7181b989b4a744d86390403791dffefdc4c9f8f7d625216d76f5d1262c
+runner_sha256: 32f21b2000052829ff9581847b9083cba9c20082db775658172d211e16d2c7a6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 58.69
+elapsed_sec: 27.90
 status: ok
 ----- stdout -----
 ====================================================================================================
@@ -21,23 +21,25 @@ REDUCTION CHECK
   zero-source same-site shift: +0.000000e+00
   zero-source retarded shift: +0.000000e+00
 
-       s         inst         same          ret   ret/same     ret-same
---------------------------------------------------------------------------------
-  0.0010 +2.050891e-03 +2.412419e-03 +2.475657e-03      1.207 +6.323823e-05
-  0.0020 +4.105409e-03 +4.824993e-03 +4.951595e-03      1.206 +1.266013e-04
-  0.0040 +8.225500e-03 +9.650581e-03 +9.904265e-03      1.204 +2.536839e-04
-  0.0080 +1.651142e-02 +1.930336e-02 +1.981254e-02      1.200 +5.091792e-04
+       s         inst         same          ret   ret/inst   ret/same     ret-same
+--------------------------------------------------------------------------------------------
+  0.0010 +2.050891e-03 +2.412419e-03 +2.475657e-03      1.207      1.026 +6.323823e-05
+  0.0020 +4.105409e-03 +4.824993e-03 +4.951595e-03      1.206      1.026 +1.266013e-04
+  0.0040 +8.225500e-03 +9.650581e-03 +9.904265e-03      1.204      1.026 +2.536839e-04
+  0.0080 +1.651142e-02 +1.930336e-02 +1.981254e-02      1.200      1.026 +5.091792e-04
 
 SUPPORT / SPREAD COMPARISON
   mean (ret support - same support): +0.000e+00
   mean (ret N_eff - same N_eff): +4.493e-02
-  positive means the retarded-like update broadens detector support relative to same-site memory
+  support fraction is unchanged here; N_eff records the slight spread change
 
 SAFE READ
   instantaneous F~M exponent: 1.00
   same-site memory F~M exponent: 1.00
   retarded-like F~M exponent: 1.00
   TOWARD rows: 4/4
+  true ret/same range: 1.026 .. 1.026
+  ASSERTIONS: PASS
   this is a finite-lag pocket, not a full retarded field equation
 
 ----- stderr -----

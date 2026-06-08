@@ -1,0 +1,20 @@
+loop_slug: beta6-resummation-scorecard-boundary-20260608
+date: 2026-06-08
+branch: physics-loop/beta6-resummation-scorecard-boundary-20260608
+goal: "Repair the beta6 resummation source-scorecard mismatch without claiming the open tree-sector majorant."
+target_claim_id: beta6_resummation_radius_growth_rate_bounded_note_2026-05-30
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: source_artifact_reconciliation
+hard_residual: "The general Euler-weighted tree-sector majorant g_tree < 81 remains an open growth input."
+files_touched:
+  - docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md
+  - .claude/science/physics-loops/beta6-resummation-scorecard-boundary-20260608/
+open_imports:
+  - "retained or explicitly admitted g_tree = lambda_tree rho_tree < 81"
+  - "compact K-built face-deficit growth bound"
+  - ">=3-face baryon/epsilon-sector bound"
+review_findings: []
+next_exact_action: "Reviewer can re-audit the row as a bounded source certificate after confirming the note/cache scorecard agreement."
+stop_condition: "No framework-native majorant proof was found in this branch; do not promote beyond bounded-support from this repair alone."

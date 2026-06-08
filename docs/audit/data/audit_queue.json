@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 250,
-    "leaf": 395,
+    "leaf": 394,
     "medium": 365
   },
   "cycle_break_target_count": 15,
@@ -17650,28 +17650,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "generation_dial_local_stability_grammar_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.248,
-      "note_path": "docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/generation_dial_local_stability_grammar_2026_06_05.py",
-      "transitive_descendants": 18
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "magnitude_reads_minimal_record_block_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17823,6 +17801,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+        "minimal_axioms",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "emergent_lorentz_invariance_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py",
       "transitive_descendants": 16
     },
     {
@@ -28992,33 +28997,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
-        "minimal_axioms",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "emergent_lorentz_invariance_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40546,6 +40524,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 30,
-  "total_pending": 1337
+  "ready_count": 29,
+  "total_pending": 1336
 }

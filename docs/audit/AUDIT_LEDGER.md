@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 209 |
+| **retained** | 210 |
 | **retained_no_go** | 220 |
 | **retained_bounded** | 758 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1335 |
+| unaudited | 1334 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1185 |
+| `audited_clean` | 1186 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1650 |
+| `unaudited` | 1649 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 520 |
 | `high` | 444 |
-| `medium` | 775 |
-| `leaf` | 1272 |
+| `medium` | 776 |
+| `leaf` | 1271 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 15
@@ -563,6 +563,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `generation_dial_local_stability_grammar_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7995,6 +7996,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The audited claim closes as standard finite-group representation algebra over the retained S3 and Z2 anchors, with the C3 and trivial rows following directly from subgroup restrictions. The false S3-locus formula identified inside the cited Z2 authority is a real upstream defect, but it is not load-bearing for this note’s Z2 row or minimal-breaking conclusion. The current claim uses the Z2 authority for the five-parameter generically nondegenerate family, not for that displayed S3-locus identity.
 - **rationale:** Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The audited claim closes as standard finite-group representation algebra over the retained S3 and Z2 anchors, with the C3 and trivial rows following directly from subgroup restrictions. The false S3-locus formula identified inside the cited Z2 authority is a real upstream defect, but it is not load-bearing for this note’s Z2 row or minimal-breaking conclusion. The current claim uses the Z2 authority for the five-parameter generically nondegenerate family, not for that displayed S3-locus identity.
 - **auditor confidence:** judicial
+
+### `generation_dial_local_stability_grammar_2026-06-05`
+
+- **Note:** [`GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md`](../../docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For r>0, the log dial s=1+log(r)/log(2) is a smooth monotone coordinate equivalent to r for local one-dimensional map and flow stability; the named maps become s'=2s and s'=s/2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-200442-9e1b90e0a3-generation_dial_local_stabil`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the coordinate conjugacy F(s)=L(G(h(s))), the fixed-point multiplier satisfies F'(s*)=L'(r*)G'(r*)h'(s*)=G'(r*)=alpha, and the same chain-rule cancellation preserves the flow linearization.  _(class `A`)_
+- **chain closes:** True — The identities close by direct calculus from the displayed definitions of h and L, with no cited upstream authority or external comparator. Independent checking confirms the inverse maps, positive derivative, multiplier cancellation, flow linearization cancellation, and the stated factors 2 and 1/2 for the named maps.
+- **rationale:** The claim is a self-contained algebraic/calculus theorem about a smooth positive-coordinate reparametrization. The runner mostly performs symbolic SymPy checks of the relevant identities and uses no external data, fitted constants, or cross-note imported premise; one displayed definition check is tautological but not load-bearing. The source note correctly limits the conclusion to local stability classification and explicitly does not select a physical map, flow, partition, or fixed point.
+- **auditor confidence:** high
 
 ### `generation_periodic_plane_wave_density_kernel_bridge_note_2026-06-07`
 

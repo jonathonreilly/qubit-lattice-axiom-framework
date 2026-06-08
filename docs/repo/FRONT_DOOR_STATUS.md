@@ -11,7 +11,7 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3009 |
+| Ledger rows | 3010 |
 | Applied audit verdicts | 1339 |
 | Retained-grade rows, including boxed decorations | 1219 |
 | Retained positive theorems | 207 |
@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 745 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
-| Unaudited rows | 1353 |
+| Unaudited rows | 1354 |
 | Retained-pending-chain rows | 10 |
 | Audited conditional rows | 26 |
 | Audited renaming rows | 35 |
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1355 |
+| Total pending rows | 1356 |
 | Ready rows | 29 |
 | Cycle-break targets | 15 |
-| Critical pending | 330 |
-| High pending | 253 |
-| Medium pending | 374 |
+| Critical pending | 332 |
+| High pending | 251 |
+| Medium pending | 375 |
 | Leaf pending | 398 |
 
 Next ready rows by queue order:
@@ -47,7 +47,7 @@ Next ready rows by queue order:
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 - [`staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06`](../../docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - critical; unaudited
 - [`plaquette_v1_picard_fuchs_ode_note_2026-05-05`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) - critical; unaudited
-- [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - high; unaudited
+- [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - critical; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md) - medium; unaudited
@@ -61,8 +61,8 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 188 |
-| high | `unaudited` | 145 |
+| critical | `unaudited` | 189 |
+| high | `unaudited` | 144 |
 | medium | `unaudited` | 92 |
 | critical | `audited_renaming` | 3 |
 | critical | `open_gate` | 3 |
@@ -79,19 +79,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3127 |
-| Critical nodes | 520 |
-| High nodes | 446 |
-| Medium nodes | 809 |
+| Citation-graph nodes | 3128 |
+| Critical nodes | 522 |
+| High nodes | 444 |
+| Medium nodes | 810 |
 | Leaf nodes | 1352 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1360 descendants; score 94.410
-- `three_generation_observable_theorem_note` - critical; 746 descendants; score 61.045
-- `observable_principle_from_axiom_note` - critical; 839 descendants; score 58.214
-- `graph_first_su3_integration_note` - critical; 1258 descendants; score 50.798
-- `minimal_axioms_2026-05-03` - critical; 477 descendants; score 47.901
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1181 descendants; score 42.707
-- `key_terminology` - critical; 997 descendants; score 40.463
-- `anomaly_forces_time_theorem` - critical; 990 descendants; score 40.453
+- `minimal_axioms` - critical; 1361 descendants; score 94.912
+- `three_generation_observable_theorem_note` - critical; 747 descendants; score 61.047
+- `observable_principle_from_axiom_note` - critical; 840 descendants; score 58.216
+- `graph_first_su3_integration_note` - critical; 1259 descendants; score 50.799
+- `minimal_axioms_2026-05-03` - critical; 478 descendants; score 47.904
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1182 descendants; score 42.708
+- `key_terminology` - critical; 998 descendants; score 40.964
+- `anomaly_forces_time_theorem` - critical; 991 descendants; score 40.454

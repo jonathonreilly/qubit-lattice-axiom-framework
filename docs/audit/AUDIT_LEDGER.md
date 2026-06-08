@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 747 |
+| **retained_bounded** | 748 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1311 |
+| unaudited | 1310 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1168 |
+| `audited_clean` | 1169 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1622 |
+| `unaudited` | 1621 |
 
 | claim_type | count |
 |---|---:|
@@ -495,6 +495,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_h025_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_h025_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_no_restore_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_distance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_h025_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `gate_b_nonlabel_connectivity_v1_joint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6906,6 +6907,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The note's frozen rows match the SHA-pinned cached runner output for restore=0 across the declared drift rows, two seeds, three far-field z masses, and three-strength F~M probe.  _(class `C`)_
 - **chain closes:** True — The claim closes only at the bounded runner-defined level. The retained-bounded one-hop dependencies supply compatible finite-harness context, and the source does not claim physical Gate B closure or replacement of the restore>0 family.
 - **rationale:** A fresh restricted-input auditor confirmed that the source note is narrowly scoped and that its frozen rows exactly match the cached runner output: drift 0.0 through 0.3 give 6/6 TOWARD with F~M=1.00, and drift 0.5 gives 5/6 TOWARD with F~M=1.00. The runner source genuinely constructs the no-restore grown geometries, propagates the runner-defined field/readout, and computes the counts and slopes; it is not a print-only certificate. The note preserves the finite-row boundary and explicitly avoids treating the no-restore family as a full replacement for restore>0 or as physical Gate B closure.
+- **auditor confidence:** high
+
+### `gate_b_no_restore_joint_package_note`
+
+- **Note:** [`GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md`](../../docs/GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Single-seed bounded replay of the runner-defined exact-grid and restore=0 grown-geometry rows at drift values 0.0, 0.2, and 0.5 for Born I3, d_TV, MI, and CL-bath decoherence.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-110739-a0f830a382-gate_b_no_restore_joint_pack`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The one-seed replay reports the exact-grid row and no-restore drift rows at 0.0, 0.2, and 0.5 with the listed Born, d_TV, MI, and decoherence values, showing exact-grid reproduction at zero drift and sensitivity at nonzero drift.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the finite geometry from fixed parameters and seed, propagates amplitudes, computes the four metrics, and the verifier compares every rounded frozen row against the completed recompute certificate. Independent checks of the displayed table confirm the exact-grid/no-restore-zero identity, the stated tolerances, and the bounded metric ranges.
+- **rationale:** The source is scoped as a bounded one-seed replay, not a general generated-geometry closure. The runner is not a constant printer: its recompute path builds the lattice, applies the propagation rule, and computes the reported metrics without importing a cited contested value or external comparator. The frozen values match the recomputed rows within the stated tolerances, and the safe interpretation is limited to the displayed drift rows.
 - **auditor confidence:** high
 
 ### `gate_b_nonlabel_connectivity_v1_distance_note`

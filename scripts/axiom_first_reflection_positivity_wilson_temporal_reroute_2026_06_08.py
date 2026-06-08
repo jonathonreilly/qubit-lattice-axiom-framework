@@ -1,0 +1,216 @@
+#!/usr/bin/env python3
+"""Parent reroute guard for the axiom-first reflection-positivity note.
+
+This runner intentionally leaves
+`axiom_first_rp_two_step_transfer_matrix_positivity.py` unchanged. That runner
+is the retained free-case two-step construction used by other rows. Here we
+reuse its C1-C6 functions and add only the parent-specific Wilson temporal-gauge
+reroute guard.
+"""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+import sys
+
+import numpy as np
+
+
+ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS_DIR = ROOT / "scripts"
+if str(SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_DIR))
+
+import axiom_first_rp_two_step_transfer_matrix_positivity as base_runner
+
+
+NOTE_PATH = ROOT / "docs" / "AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
+LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+BASE_RUNNER_PATH = ROOT / "scripts" / "axiom_first_rp_two_step_transfer_matrix_positivity.py"
+
+PASS = 0
+FAIL = 0
+
+
+def check(label: str, ok: bool, detail: str = "") -> bool:
+    global PASS, FAIL
+    if ok:
+        PASS += 1
+        tag = "PASS"
+    else:
+        FAIL += 1
+        tag = "FAIL"
+    suffix = f" ({detail})" if detail else ""
+    print(f"  [{tag}] {label}{suffix}")
+    return ok
+
+
+def section(title: str) -> None:
+    print()
+    print("-" * 88)
+    print(title)
+    print("-" * 88)
+
+
+def check_free_two_step_construction(base) -> None:
+    section("C1-C6 free staggered two-step construction reused from retained runner")
+
+    max_res, max_imag, _ = base.check_dispersion_anchor(base.MASS)
+    check(
+        "C1 dispersion anchor",
+        max_res < base.TOL_DISP and max_imag < base.TOL_DISP,
+        detail=f"max_res={max_res:.2e}, max_imag={max_imag:.2e}",
+    )
+
+    complex_min_imag, _, exceptional_ok, _, _ = base.check_single_step_nonpositive(base.MASS)
+    check(
+        "C2 single-step remains non-positive",
+        complex_min_imag > 1e-3 and exceptional_ok,
+        detail=f"min_complex_imag={complex_min_imag:.3f}, exceptional_ok={exceptional_ok}",
+    )
+
+    c3_ok = True
+    c5_ok = True
+    c6_ok = True
+    for ls in (2, 3, 4, 6):
+        r3 = base.build_manybody_T2(ls, base.MASS)
+        c3_ok = c3_ok and (
+            r3["max_imag_kernel"] < base.TOL_PSD
+            and r3["herm_err"] < base.TOL_PSD
+            and r3["min_eig"] > 0.0
+            and r3["BdagB_err"] < base.TOL_PSD
+        )
+
+        r5 = base.check_second_quantization_functor(ls, base.MASS)
+        c5_ok = c5_ok and (
+            r5["intertwiner_err"] < base.TOL_PSD
+            and r5["vac_fix_err"] < base.TOL_PSD
+            and r5["H_offdiag"] < base.TOL_PSD
+            and r5["functor_err"] < base.TOL_PSD
+        )
+
+        r6 = base.check_decaying_gamma_bridge(ls, base.MASS)
+        c6_ok = c6_ok and (
+            r6["max_dec_imag"] < base.TOL_PSD
+            and r6["max_grow_imag"] < base.TOL_PSD
+            and r6["max_projector_idem"] < 1e-9
+            and r6["max_projector_resid"] < 1e-9
+            and r6["max_projector_split"] < 1e-9
+            and r6["max_projector_orth"] < 1e-9
+            and r6["kernel_min"] > 0.0
+            and r6["gamma_tensor_err"] < base.TOL_PSD
+            and r6["gamma_intertwiner_err"] < base.TOL_PSD
+            and r6["gamma_min_eig"] >= -base.TOL_PSD
+            and r6["gamma_bdagb_err"] < base.TOL_PSD
+        )
+
+    check("C3 many-body T_hat^2 positive Hermitian = B^dag B", c3_ok)
+
+    c4_ok = True
+    for ls in (3, 4):
+        r4 = base.r2_os_gram(ls, base.MASS)
+        c4_ok = c4_ok and r4["herm_err"] < base.TOL_PSD and r4["min_eig"] >= -base.TOL_PSD
+    check("C4 two-step OS Gram Hermitian PSD", c4_ok)
+    check("C5 second-quantization functor identity", c5_ok)
+    check("C6 decaying spectral channel gives positive Fock kernel", c6_ok)
+
+
+def check_reroute_guard() -> None:
+    section("C7 retained Wilson temporal-gauge reroute guard")
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    rows = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+
+    required_phrases = [
+        "2026-06-08 Wilson temporal-gauge bridge reroute",
+        "AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+        "GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md",
+        "REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
+        "retained-bounded bridge",
+        "factorized reduction target",
+        "G = W diag(kappa) W^dag",
+        "composed parent claim still requires independent audit",
+        "does **not** claim",
+    ]
+    forbidden_phrases = [
+        "the full interacting gauge closure remains limited to the named three-factor reduction claim",
+        "beyond this explicitly scoped three-factor reduction target",
+        "the sign-repair bridge remains subject to independent audit",
+        "conditional Wilson-plane claim still travels with that companion note",
+        "This dependency is a source-packet candidate for re-audit",
+    ]
+    missing = [phrase for phrase in required_phrases if phrase not in text]
+    stale = [phrase for phrase in forbidden_phrases if phrase in text]
+    check("required reroute phrases present", not missing, detail=", ".join(missing))
+    check("stale Wilson sign-repair phrases absent", not stale, detail=", ".join(stale))
+
+    required_effective_statuses = {
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": {
+            "retained_bounded"
+        },
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": {
+            "retained"
+        },
+        "staggered_only_det_positivity_case_a_note_2026-05-17": {"retained"},
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": {
+            "retained"
+        },
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": {
+            "retained_bounded"
+        },
+    }
+    status_ok = True
+    status_details = []
+    failed_statuses = {"audited_failed", "failed", "rejected"}
+    for claim_id, allowed_effective in required_effective_statuses.items():
+        row = rows.get(claim_id)
+        if row is None:
+            status_ok = False
+            status_details.append(f"{claim_id}:missing")
+            continue
+        got = (row.get("audit_status"), row.get("effective_status"))
+        ok = row.get("effective_status") in allowed_effective and row.get("audit_status") not in failed_statuses
+        status_ok = status_ok and ok
+        status_details.append(f"{claim_id}:{got}")
+    check("live dependency statuses retained-grade", status_ok, detail="; ".join(status_details))
+
+    mixed_kernel = np.array([0.41, 1.0, 2.7, 4.3])
+    determinant_weight = np.array([0.09, 0.8, 1.6, 3.2])
+    gauge_norm_square = np.abs(np.array([0.2 + 0.3j, -1.0 + 0.4j, 0.0 + 0.7j, 2.0])) ** 2
+    fermion_psd_expectation = np.array([0.0, 0.12, 1.4, 5.0])
+    integrand = mixed_kernel * determinant_weight * gauge_norm_square * fermion_psd_expectation
+    factors_nonnegative = min(
+        mixed_kernel.min(),
+        determinant_weight.min(),
+        gauge_norm_square.min(),
+        fermion_psd_expectation.min(),
+    ) >= 0.0
+    check("finite product model has nonnegative factors", factors_nonnegative)
+    check(
+        "finite product model has nonnegative composed integrand",
+        integrand.min() >= 0.0 and integrand.sum() > 0.0,
+        detail=f"min={integrand.min():.3e}, sum={integrand.sum():.3e}",
+    )
+
+
+def main() -> int:
+    print("Axiom-first RP Wilson temporal-gauge reroute guard")
+    print(f"note: {NOTE_PATH}")
+    print(f"base runner: {BASE_RUNNER_PATH}")
+    check_free_two_step_construction(base_runner)
+    check_reroute_guard()
+    print()
+    print(f"PASS={PASS} FAIL={FAIL}")
+    if FAIL == 0:
+        print(
+            "VERDICT: parent reroute guard passes; free two-step construction remains "
+            "unchanged, and the Wilson temporal-gauge application is routed through "
+            "retained-grade dependencies without promoting the parent row."
+        )
+    return 0 if FAIL == 0 else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

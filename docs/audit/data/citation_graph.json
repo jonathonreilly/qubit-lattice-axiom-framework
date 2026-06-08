@@ -45998,10 +45998,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wigner_mode_low_d_sublattice_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06"
     },
     {
@@ -46027,6 +46023,10 @@
     {
       "from": "repo.front_door_status",
       "to": "wide_lattice_h2t_distance_law_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "generation_dial_local_stability_grammar_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -88950,17 +88950,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
         "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06",
         "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
         "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05",
         "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
         "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
         "nonlabel_grown_basin_note",
-        "wide_lattice_h2t_distance_law_note"
+        "wide_lattice_h2t_distance_law_note",
+        "generation_dial_local_stability_grammar_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9de9d87ee8803bca261139ffaad1f5842f7cdc824a083f35d794a680d8cb2d48",
+      "note_hash": "84a8b6ed3b828a833b1ebb343acf6c1afee45723ceea1c87a007ed2baa204786",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py
+runner_sha256: b891de38c905702040223b71c08969a8ad3f0faa11416bba4454eb22e4c7bd46
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.91
+status: ok
+----- stdout -----
 PASS T1 1D NN heat kernel (e^{-tL1})_{0n} = e^{-2t} I_n(2t)
 PASS T2 e^{-tL} factorizes over axes (commuting L_mu)
 PASS T3 axis 4pi r G(r) -> 1 (within 1% by r=16, 0.1% by r=64)
@@ -12,3 +20,6 @@ PASS SOURCE boundary preserves uniform local-CLT/tail-domination bridge
 PASS SOURCE boundary no longer claims to retire P1 by itself
 
 TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

@@ -24,6 +24,7 @@ Part B: the GAUGE-INVARIANT ON-SHELL pole velocity resolves the artifact; O(alph
   [PASS] (B4) gauge (xi) spread of the rainbow-level value is ~15% (HONEST residual: exact O(1) coeff needs Wilson vertex + tadpole)  --  xi=1,0.5,0: ['-0.0131', '-0.0122', '-0.0113'] -> 14% spread
   [PASS] (B5) IR-finite: the velocity DIFFERENCE delta_v is stable as the gluon IR mass lam->0  --  lam=0.6..0.2: ['-0.0132', '-0.0134', '-0.0131', '-0.0125']
   [PASS] (B6) NO TASTE PROTECTION: delta_v is nonzero and comparable for staggered (no Wilson chiral breaking) AND Wilson  --  staggered delta_v=-0.0147, wilson=-0.0131 -- taste does NOT kill the anisotropy
+  [PASS] (B7) the spatial seagull/TADPOLE is definite-sign O(g^2 C_2) and REINFORCES the rainbow (no temporal seagull on continuous time)  --  tadpole delta_v ~ -0.0143 per g^2C2 (basic <A^2>=0.217); same sign+order as rainbow ~ -0.0131 -> rainbow+tadpole ~ -0.027 (reinforce) -> STRONGLY DISFAVORS c_v->0 (not formally ruled out: full vertex+measure uncomputed); corroborates v<1 (2nd diagram, mean-field)
 
 ----------------------------------------------------------------------------------------------
 Part C: 4D-SYMMETRIC control -- only SPACETIME hypercubic (B_4), not INTERNAL taste, forces Sigma_t=Sigma_s; the regulator question
@@ -43,9 +44,10 @@ Part F: delta_v is one coefficient delta_v(xi); B_4 forces delta_v=0 at xi=1, th
       a_tau=0.20  xi= 5.00  delta_v=-0.01433
   [PASS] (F1) delta_v is ONE coefficient delta_v(xi): MINIMAL at xi=1 and growing MONOTONICALLY toward the continuous-time obstruction (xi->inf)  --  |delta_v|: 0.0022 (xi=1, the symmetric point; residual = O(m0) extraction artifact) -> 0.0143 (xi=5) = 6.6x. #3121/#3123/#3277 are this one coeff read at xi->inf
   [PASS] (F2) at xi=1 the marginal delta_v = 0 by B_4 hypercubic SYMMETRY -- EXACT, rep-BLIND, ALL-ORDERS (verified-grade, bridge-INDEPENDENT)  --  Part C1 control gives Sigma_t=Sigma_s to 1e-15 (t<->s is a finite relabel of a B_4-invariant measure); rep-blind so the species DIFFERENCE (C2_i-C2_j)*0=0 too; residual LV at xi=1 = only the Planck-suppressed dim-6 4D-cubic Casimir
-  [PASS] (F3) B_4 needs EQUAL KINETIC FORM (r_t=r_s), not just equal spacing: r_t=r_s -> Sigma_t=Sigma_s (machine 0); r_t!=r_s -> nonzero  --  equal form: |Sigma_t-Sigma_s|=4.3e-19 (B_4 EXACT); broken r_t=2: |Sigma_t-Sigma_s|=3.09e-04 (~7e+14x larger) -- xi=1 (spacing) alone is NOT sufficient; the full isotropic action is required
-  [PASS] (F4) one-tick-one-edge (a_tau=a_s/c) gives xi=1 only as a DEFINITIONAL frame choice (c:=v_front); it supplies the spacing, NOT the form  --  v_front (kinematic front, =1 by graph) != v_LR (renormalized group velocity ~0.935 that delta_v measures); a_tau=a_s/c is a unit choice, not a derived isotropy
-  [PASS] (F5) LEVER OPEN (NOT closed): xi=1 is a CONDITIONAL CANDIDATE horn -- it requires 'record-tick = physical time' which the LIVE LEDGER calls audited_renaming  --  min_time_step_tied... = audited_renaming (a naming bridge, NOT retained); a retained clock-rate no-go (post_record_clock_rate_interface = retained_no_go) says records fix the COUNT not the RATE; the stated native surface (#3121, MINIMAL_AXIOMS) is CONTINUOUS time = the xi->inf OBSTRUCTION horn
+  [PASS] (F3) form-equality is supplied by ANY ISOTROPIC action (naive r=0, Wilson r_t=r_s) -> delta_v=0 to machine 0; only deliberate r_t!=r_s breaks it  --  naive r=0:2e-18, Wilson r_t=r_s=1:4e-19, Wilson r_t=r_s=0.5:4e-18; broken r_t=2:3.1e-04
+  [PASS] (F3b) the framework's CANONICAL staggered action (isotropic eta_mu, the free-staggered SO(4) note) IS isotropic -> form-equality is SUPPLIED by it, not a separate free assumption  --  LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4 uses Z^3 x Z_tau with isotropic eta_mu (all 4 directions via the same sin(p_mu); c_4=-1/3 in all 4) -> the symmetric-staggered lattice is hypercubic; the r_t!=r_s break is a NON-canonical deformation
+  [PASS] (F4) one-tick-one-edge (a_tau=a_s/c) gives xi=1 only as a DEFINITIONAL frame choice (c:=v_front), not a derived isotropy  --  v_front (kinematic front, =1 by graph) != v_LR (renormalized group velocity ~0.935 that delta_v measures)
+  [PASS] (F5) NET: form-equality is NOT a separate gate -- it folds into ONE bridge ('record-tick = physical time'), with a realization RIDER  --  RIDER (genuine): the collapse holds for the canonical SYMMETRIC-staggered (central-difference) tick, NOT a generic forward/Wilson transfer e^{-Ha_tau} (which reintroduces r_t!=r_s) -- the symmetric realization is the framework's STANDING choice but not forced by Stone alone. The bridge is audited_renaming in the LIVE LEDGER (NOT retained) + a retained clock-rate no-go (records fix the COUNT not the RATE); native surface (#3121, MINIMAL_AXIOMS) is CONTINUOUS time = the xi->inf OBSTRUCTION horn. LEVER OPEN -- xi=1 is a CONDITIONAL CANDIDATE, NOT protected/a mechanism
 
 ----------------------------------------------------------------------------------------------
 Part D: the speed-difference operator anomalous dimension gamma = (C_F + C_B N_f) alpha_s
@@ -67,7 +69,7 @@ Part E: RG run M_Pl -> 1 GeV + species residual + VERDICT (conditional on the as
   [PASS] (E5) STEELMAN 'all species share one v*' FAILS: different reps (C_2) flow at different rates -> observable IS the species difference  --  Delta C_2(adj-fund) = 1.67 != 0. CAVEAT: SU(3)-only; color-singlet leptons (C_2=0) get delta_v=0 from gluons -> the photon/electron bounds need the EM/weak sectors (separate couplings) -- an O(1) cross-group accounting beyond this runner
   [PASS] (E6) ROBUSTNESS asymmetric & honest: TIGHT bounds (photon/electron/nucleon) exceeded in EVERY factor-2 corner (+10..+21);  --  WEAKEST (quark/gluon 1e-12) is at the EDGE: central gap ~+6.0, falls to ~+2.3 at (c_v/2, gamma=0.4) -- still positive, closes only if gamma>=0.54 (needs c_gamma>=6.8, not a factor-2 move)
   [PASS] (E7) The obstruction is the xi->inf (CONTINUOUS-time) HORN of one coeff delta_v(xi); B_4 forces delta_v=0 at xi=1 (Part F)  --  this LOCATES (does not overturn) the obstruction; it is the surface assumed by #3121/MINIMAL_AXIOMS (continuous Stone time). xi=1 is the OTHER, B_4-protected horn
-  [PASS] (E8) NET: upgrades #3121/#3123 to COMPUTED, closes the INTERNAL (taste) escape, and SHARPENS the lever to ONE named bridge -- but does NOT close it  --  xi=1 protection is real (B_4, verified-grade) BUT reaching it needs (a) 'record-tick = physical time' = audited_renaming (NOT retained) + a retained clock-rate no-go, AND (b) form-equality r_t=r_s (F3). So xi=1 is a CONDITIONAL CANDIDATE horn, not a custodial mechanism; lever OPEN
+  [PASS] (E8) NET: upgrades #3121/#3123 to COMPUTED, closes the INTERNAL (taste) escape, and SHARPENS the lever to ONE named bridge -- but does NOT close it  --  xi=1 protection is real (B_4, verified-grade); form-equality is NOT a separate gate (it folds into the bridge via the canonical isotropic staggered action, Part F3/F5) -> the SINGLE gate is 'record-tick = physical time' = audited_renaming (NOT retained) + a retained clock-rate no-go (+ the symmetric-staggered realization rider). The tadpole (B7) hardens the v<1 sign + O(1) c_v at the xi->inf horn. xi=1 is a CONDITIONAL CANDIDATE, not a mechanism; lever OPEN
 
 ==============================================================================================
 SUMMARY: the one-loop velocity anisotropy is COMPUTED -- ONE coefficient delta_v(xi) across the spacetime
@@ -77,10 +79,13 @@ at xi>1, and =0 by B_4 hypercubic symmetry (EXACT, rep-blind, all-orders) at xi=
 (gamma=(4/3+N_f/2)alpha_s~0.15-0.34 << gamma_crit~0.54-1.32) -> a COMPUTED obstruction. #3121/#3123/#3277
 are this one coeff read at xi->inf. VERDICT (lever SHARPENED, OPEN -- NOT closed): the naturalness gap is
 the xi->inf horn; B_4 forces delta_v=0 at the OTHER (xi=1) horn. The framework EXHIBITS a one-tick-one-edge
-causal structure that WOULD sit at xi=1 IF (a) 'record-tick = physical time' (LIVE LEDGER: audited_renaming,
-NOT retained; + a retained clock-rate no-go) and (b) form-equality r_t=r_s hold -- a CONDITIONAL CANDIDATE
-horn, NOT a custodial mechanism. Upgrades #3121/#3123 to COMPUTED + closes the internal(taste) escape;
-residuals: which horn is physical (gated on those bridges); exact O(1) coeff (vertex+tadpole); sign (Euclidean).
+causal structure that WOULD sit at xi=1 -- a CONDITIONAL CANDIDATE horn, NOT a custodial mechanism. Open-items
+HARDENED this turn: form-equality is NOT a separate gate (it folds into the bridge -- the canonical isotropic
+staggered action supplies it, F3/F5); the spatial tadpole reinforces (v<1, NO temporal seagull, B7) -> c_v
+stays O(1), a c_v->0 cancellation STRONGLY DISFAVORED (not formally ruled out). SINGLE remaining gate:
+'record-tick = physical time' (audited_renaming, NOT retained; + a retained clock-rate no-go; + the symmetric-
+staggered realization rider). Upgrades #3121/#3123 to COMPUTED + closes the internal(taste) escape. Residuals:
+which horn is physical; exact O(1) c_v (full vertex+measure); sign v<1 (corroborated by a 2nd diagram, not real-time).
 ==============================================================================================
-TOTAL: PASS=30 FAIL=0
+TOTAL: PASS=32 FAIL=0
 ==============================================================================================

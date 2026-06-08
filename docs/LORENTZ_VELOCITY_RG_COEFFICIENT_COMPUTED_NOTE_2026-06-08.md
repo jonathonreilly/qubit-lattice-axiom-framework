@@ -46,14 +46,17 @@ temporal spacing). The decisive structure:
 **continuous-time horn** (`ξ → ∞`). The **other horn `ξ = 1` is B₄-protected**
 (`δv = 0`, residual LV only the Planck-suppressed dim-6 `(E/M_Pl)²` operator). The
 framework **exhibits** a one-tick-one-edge causal structure that **would** sit at
-`ξ = 1` **if** (a) the record tick is the physical time coordinate, and (b) the full
-isotropic action holds. But (a) is classified `audited_renaming` in the live ledger (a
-naming bridge, **not** a retained derivation) against a retained clock-rate no-go, and
-(b) is unproven (form-equality, not just equal spacing, is required). So `ξ = 1` is a
-**conditional candidate** horn, **not** a custodial mechanism. **Net:** this upgrades
-#3121/#3123 from order-of-magnitude to **computed**, **closes the internal (taste)
-escape**, and **sharpens the open problem to a single named bridge** — it does not
-close it. Runner: **30 PASS / 0 FAIL**.
+`ξ = 1` **if** the record tick is the physical time coordinate — which the live ledger
+classifies `audited_renaming` (a naming bridge, **not** a retained derivation) against a
+retained clock-rate no-go. The would-be second condition, form-equality, is **not** a
+separate gate: it is supplied by the framework's canonical isotropic staggered action
+(modulo a symmetric-staggered realization rider), so the conditions **fold into that one
+bridge**. So `ξ = 1` is a **conditional candidate** horn, **not** a custodial mechanism.
+**Net:** this upgrades #3121/#3123 from order-of-magnitude to **computed**, **closes the
+internal (taste) escape**, **hardens the `v < 1` sign and `O(1)` `c_v`** (the spatial
+tadpole reinforces the rainbow; a `c_v → 0` cancellation is strongly disfavored), and
+**sharpens the open problem to a single named bridge** — it does not close it. Runner:
+**32 PASS / 0 FAIL**.
 
 ## The computation
 
@@ -77,7 +80,15 @@ loop- but **not** Planck-suppressed (B2); sign `v < 1` in this Euclidean extract
 (B3) — **not** triangulated (an independent real-time cross-check confirms the
 magnitude, nonzero-ness, and no-protection but cannot certify the sign); IR-finite
 (B5); gauge (`ξ`) spread `~15%` and an exact-O(1) residual needing the full lattice
-vertex + tadpole (B4).
+vertex + tadpole (B4). The **seagull/tadpole** (B7) is **spatial-only** — continuous
+time has no temporal seagull (the covariant derivative is linear in `A₀`), while the
+compact spatial links `U_j = exp(ig a A_j)` carry an `A_j²` seagull — so it is a
+**definite-sign** `O(g²C₂)` contribution (`δv_tad ≈ −0.014` per `g²C₂`, the standard
+anisotropic `u_s < u_t = 1`) that **reinforces** the rainbow (`rainbow ⊕ tadpole ≈
+−0.027`, both `v < 1`). It **strongly disfavors** (does not formally rule out — the full
+cos-vertex + compact-measure terms are uncomputed) a `c_v → 0` cancellation, and
+**corroborates** the `v < 1` sign from a second diagram (Euclidean/mean-field, not a
+real-time certification).
 
 ### (C) No internal protection — only a spacetime symmetry can
 On a **4D-symmetric** Euclidean lattice the temporal and spatial self-energy
@@ -119,13 +130,23 @@ counting forbids regenerating it from the dim-6 residual). The residual LV at `�
 is then only the **B₄-allowed dim-6 4D-cubic operator** `Σ_μ p_μ⁴` — Planck-suppressed
 `~(E/M_Pl)²`, harmless.
 
-**Three honest gaps keep the lever open, not closed:**
+**Form-equality is not a separate gate — it folds into the bridge (F3/F3b/F5).** B₄
+requires the full **isotropic action** (equal kinetic form), not just equal spacing; but
+form-equality is **supplied by the framework's canonical isotropic staggered action**, not
+a separate free assumption. It is a **finite B₄ group-theory fact** (exact, rep-blind,
+all-orders): **any** hypercubic-symmetric action gives `Σ_t = Σ_s` to machine zero —
+naive (`r = 0`): `2×10⁻¹⁸`, Wilson `r_t = r_s = 1`: `4×10⁻¹⁹`, `r_t = r_s = 0.5`:
+`4×10⁻¹⁸` — and only a **deliberate** `r_t ≠ r_s` breaks it (`3×10⁻⁴`, `~10¹⁵×` larger).
+The framework's canonical free-staggered action (the SO(4) note: `Z³ × Z_τ`, isotropic
+`η_μ`, `c₄ = −1/3` in all four directions) **is** isotropic, so form-equality holds on it
+automatically. **Genuine rider:** this holds for the canonical **symmetric-staggered**
+(central-difference) tick, **not** for a generic forward/Wilson transfer step `e^{−Ha_τ}`
+(which reintroduces `r_t ≠ r_s`); the symmetric realization is the framework's standing
+choice but is **not** forced by Stone-discretization alone. So the two `ξ = 1` conditions
+**collapse into one bridge** (plus this realization rider):
 
-- **Form-equality (F3).** B₄ requires the full **isotropic action** (equal kinetic
-  form, `r_t = r_s`), not just equal spacing `a_τ = a_s`: with `r_t = r_s` the control
-  gives `|Σ_t − Σ_s| = 4×10⁻¹⁹` (B₄ exact), but breaking `r_t = 2` gives `3×10⁻⁴`
-  (`~10¹⁵×` larger). One-tick-one-edge supplies the spacing, not the form.
-- **The record-tick bridge (F4–F5).** `ξ = 1` follows from the framework's
+- **The record-tick bridge (F4–F5) — the single primary gate.** `ξ = 1` follows from the
+  framework's
   one-tick-one-edge causal structure (one record tick = one nearest-neighbor edge, by
   the **no-diagonal clause** of the LATTICE axiom + the retained
   [`LATTICE_NN_LIGHT_CONE_NOTE.md`](LATTICE_NN_LIGHT_CONE_NOTE.md)) only via the
@@ -153,11 +174,14 @@ velocity anisotropy is one computed coefficient `δv(ξ)`: **nonzero and not int
 obstruction as the continuous-time horn and exhibits a B₄-protected horn at `ξ = 1`.
 The framework's one-tick-one-edge causal structure **would** sit at `ξ = 1` — a **live,
 attractive candidate** — but reaching it requires the record-tick = physical-time
-bridge (currently `audited_renaming`, against a retained clock-rate no-go) **and** the
-full isotropic action (form-equality, unproven). It is therefore a **conditional
-candidate horn, not a custodial mechanism, and not a closure.** Net: #3121/#3123 are
-upgraded to **computed**, the **internal (taste) escape is closed**, and the open
-problem is **sharpened to a single, named, currently-non-retained bridge**.
+bridge (currently `audited_renaming`, against a retained clock-rate no-go). Form-equality
+is **not** a second independent gate: it is supplied by the framework's canonical isotropic
+staggered action (modulo the symmetric-staggered realization rider), so the conditions fold
+into that one bridge. `ξ = 1` is therefore a **conditional candidate horn, not a custodial
+mechanism, and not a closure.** Net: #3121/#3123 are upgraded to **computed**, the
+**internal (taste) escape is closed**, the `v < 1` sign and `O(1)` `c_v` are hardened by
+the tadpole, and the open problem is **sharpened to a single, named, currently-non-retained
+bridge**.
 
 ## Honest scope (the named residuals)
 
@@ -167,19 +191,25 @@ problem is **sharpened to a single, named, currently-non-retained bridge**.
   retained clock-rate no-go. The framework's stated native surface (continuous time)
   is the obstruction horn. This is a framework-definition/audit question, not a
   calculation; it is **open**.
-- **Form-equality.** B₄ protection needs the full isotropic Z⁴ action (`r_t = r_s`),
-  not just `a_τ = a_s`; breaking the form reintroduces `δv ~ 10⁻⁴` (F3). One-tick-one-
-  edge supplies only the spacing.
+- **Form-equality (folds into the bridge, not a separate gate).** B₄ needs the full
+  isotropic action, but this is **supplied by the framework's canonical isotropic
+  staggered action** (a finite group-theory fact: any hypercubic-symmetric action gives
+  `Σ_t = Σ_s` to machine zero, only deliberate `r_t ≠ r_s` breaks it, F3/F3b). The
+  genuine rider: it holds for the canonical symmetric-staggered (central-difference) tick,
+  not a generic forward/Wilson transfer step — the framework's standing choice, not forced
+  by Stone alone.
 - **`v_front` vs `v_LR`.** `δv` lives on the renormalized group velocity (`~0.935`),
   not the kinematic causal front (`=1`); `a_τ = a_s/c` is a unit choice, not a derived
   isotropy. "All species share `c`" is the emergent-Lorentz attractor question (#3121),
   not delivered by the front speed.
-- **Exact O(1) coefficient `c_v` (~factor-2).** Rainbow-only; the Ward-identity
-  tadpole/seagull, the full Wilson/clover vertex, a consistent lattice gluon action,
-  and continuum matching are not included. Does not move the order-of-magnitude
-  obstruction at `ξ → ∞`.
-- **Sign (`v < 1`).** Euclidean-method-only; not triangulated. The verdict does not
-  depend on it.
+- **Exact O(1) coefficient `c_v` (~factor-2).** Rainbow + the spatial tadpole are
+  definite-sign and reinforce (B7), so a `c_v → 0` cancellation is **strongly disfavored**
+  — but the full Wilson/clover cos-vertex, the compact-measure term, and continuum
+  matching are uncomputed, so it is **not formally ruled out**. Does not move the
+  order-of-magnitude obstruction at `ξ → ∞`.
+- **Sign (`v < 1`).** Corroborated by **two diagrams** (the Euclidean rainbow and the
+  mean-field tadpole, B7), but neither is a real-time certification — so not fully
+  triangulated. The verdict does not depend on it.
 - **Species accounting.** SU(3)-only; color-singlet leptons (`C₂ = 0`) get `δv = 0`
   from gluons; the EM/weak sectors carry separate couplings/runnings — an O(1)
   cross-gauge-group simplification.
@@ -206,8 +236,10 @@ problem is **sharpened to a single, named, currently-non-retained bridge**.
 - **Reproven here** (runner, from Haar/lattice primitives): the dim-6 dispersion
   `a²/3`, `a²/12`; the naive/Wilson off-shell artifacts; the gauge-invariant on-shell
   `δv = Σ_s − Σ_t` (r-stability, magnitude, gauge spread, IR-finiteness, staggered
-  non-protection); the 4D-symmetric B₄ control (`δv = 0` to `10⁻¹⁵`), its rep-blindness,
-  and the **form-equality** test (`r_t ≠ r_s` reintroduces `δv ~ 10⁻⁴`); `C_F = 4/3`,
+  non-protection); the spatial **seagull/tadpole** (`δv_tad ≈ −0.014` per `g²C₂`,
+  definite-sign, no temporal seagull); the 4D-symmetric B₄ control (`δv = 0` to `10⁻¹⁵`),
+  its rep-blindness, and the **form-equality** test (any isotropic action → `Σ_t = Σ_s`
+  to machine zero; only deliberate `r_t ≠ r_s` reintroduces `δv ~ 10⁻⁴`); `C_F = 4/3`,
   `T_F = 1/2`, `γ = (4/3 + N_f/2)α_s`; the `γ_crit` table and species gap; the
   `δv(ξ)` interpolation (minimal at `ξ = 1`, monotone to `ξ → ∞`).
 - **Cited** (comparator/scope only, never a derivation input):
@@ -217,8 +249,10 @@ problem is **sharpened to a single, named, currently-non-retained bridge**.
   same on-shell point); Giuliani–Mastropietro–Porta *Ann. Phys.* **327** (2012) 461
   (attractive emergent-Lorentz flow restored only with a protecting Ward identity);
   Bednik–Pujolàs–Sibiryakov *JHEP* **1311** (2013) 064; Nielsen (gauge-parameter
-  independence of the pole); Reisz (lattice power-counting, *CMP* 1988);
-  Kostelecký–Russell SME data tables (LV comparator bounds).
+  independence of the pole); Reisz (lattice power-counting, *CMP* 1988); Lepage–Mackenzie
+  *PRD* **48** (1993) 2250 and Karsch / Klassen (anisotropic-lattice tadpole improvement,
+  `u_s < u_t = 1`, comparators for B7); Kostelecký–Russell SME data tables (LV
+  comparator bounds).
 
 ## Audit dependency repair links
 

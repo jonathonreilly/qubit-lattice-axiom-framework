@@ -642,8 +642,7 @@
         "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
         "minimal_axioms",
         "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
-        "record_formation_to_kraus_isometry_bridge_2026-06-06",
-        "record_instrument_kernel_interface_2026-06-05"
+        "record_formation_to_kraus_isometry_bridge_2026-06-06"
       ],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",
@@ -1146,9 +1145,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",

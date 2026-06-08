@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 207 |
 | **retained_no_go** | 215 |
 | **retained_bounded** | 746 |
-| _retained_pending_chain_ | 10 |
+| _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1166 |
+| `audited_clean` | 1167 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1628 |
+| `unaudited` | 1627 |
 
 | claim_type | count |
 |---|---:|
@@ -83,7 +83,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 760 |
 | `leaf` | 1258 |
 
-- **Retained pending chain closure:** 10
+- **Retained pending chain closure:** 11
 - **Citation cycles detected:** 13
 
 ### Runner classification (static heuristic)
@@ -191,6 +191,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2342,6 +2343,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The narrow open-gate support is that K = log J gives the checked single-plaquette cumulants, the Euler closed-surface law gives the cube and two-cube weights, the SU(3) epsilon channel exists at a >=3-face junction, and the finite J-truncation roots migrate while the full beta9/beta10 sector classification remains open.  _(class `A`)_
 - **chain closes:** True — Within the stated open-gate scope, the finite algebraic checks close from the retained/retained_bounded inputs plus standard SU(3) tensor algebra. The full 48-support beta9 classification and beta10 marked-face sector weight are explicitly excluded, so they are not hidden requirements for this scoped claim.
 - **rationale:** The displayed kappa values, K' leading coefficient, Euler weights, SU(3) tensor identity, and finite root table independently check out under the note's conventions. The runner source performs substantive finite recurrence, logarithm, arithmetic, and polynomial-root computations rather than merely printing the claimed results; its twelfth PASS is a non-load-bearing scope guard. Both cited authorities are retained-grade for the bounded inputs used here, and the note does not promote the uncomputed beta9/beta10 classification to a theorem.
+- **auditor confidence:** high
+
+### `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional-on-displayed-coefficients arithmetic for the beta=6 SU(3) resummation-ansatz test harness, including activation thresholds, geometric and d-log-Pade predictive comparisons, proxy sanity checks, and forward comparator diagnostics; no derivation of d_6..d_11 or beta=6 closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:beta6_plaquette_closure_note_2026-05-29`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-105439-f9f598bc27-beta6_resummation_ansatz_tes`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the displayed rational values for d_6..d_11, the runner computes the tadpole/geometric and d-log-Pade next-coefficient predictions and classifies the supplied packet as tadpole/geometric FALSIFY and d-log-Pade unstable/no-closure.  _(class `A`)_
+- **chain closes:** True — For the narrowed conditional claim, the arithmetic closes from the displayed coefficient packet plus the retained d_5 and P_1plaq inputs. Independent fraction-series checks reproduce the geometric predictions and the d-log-Pade d_9, d_10, and d_11 predictions, including the FALSIFY/SUPPORT/FALSIFY pattern.
+- **rationale:** The runner source performs actual series arithmetic, Padé re-expansion, proxy checks, and coefficient comparisons rather than merely printing expected statuses. Independent recomputation gives d-log-Pade predictions d_9 = -3715/352638738432, d_10 = -2706727/1306791004944384, and d_11 = -3049790471/166861358456911626240, matching the reported relative errors and instability conclusion. The 0.594 Monte Carlo value is used only as a comparator diagnostic, not as a fit input. This verdict does not retain or derive the supplied d_6..d_11 coefficient packet.
 - **auditor confidence:** high
 
 ### `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`

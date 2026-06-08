@@ -51,6 +51,58 @@ psi = sp.Matrix([a(p1, p2, p3), b(p1, p2, p3)])
 sz = sp.Matrix([[1, 0], [0, -1]]); Sz = sz / 2
 
 
+SIGMA_NP = (
+    np.array([[0, 1], [1, 0]], dtype=complex),
+    np.array([[0, -1j], [1j, 0]], dtype=complex),
+    np.array([[1, 0], [0, -1]], dtype=complex),
+)
+I2_NP = np.eye(2, dtype=complex)
+
+
+def hermitian_momentum_matrix(energy, momentum):
+    return energy * I2_NP + sum(momentum[i] * SIGMA_NP[i] for i in range(3))
+
+
+def momentum_from_hermitian(matrix):
+    energy = float((np.trace(matrix) / 2.0).real)
+    momentum = np.array([float((np.trace(matrix @ SIGMA_NP[i]) / 2.0).real) for i in range(3)])
+    return energy, momentum
+
+
+def canonical_boost(momentum, mass=1.0):
+    momentum = np.asarray(momentum, dtype=float)
+    energy = float(np.sqrt(mass * mass + np.dot(momentum, momentum)))
+    sigma_dot_p = sum(momentum[i] * SIGMA_NP[i] for i in range(3))
+    return np.sqrt((energy + mass) / (2.0 * mass)) * (I2_NP + sigma_dot_p / (energy + mass))
+
+
+def sl2_boost_x(rapidity):
+    return np.cosh(rapidity / 2.0) * I2_NP + np.sinh(rapidity / 2.0) * SIGMA_NP[0]
+
+
+def wigner_rotation(sl2_matrix, momentum, mass=1.0):
+    momentum = np.asarray(momentum, dtype=float)
+    energy = float(np.sqrt(mass * mass + np.dot(momentum, momentum)))
+    transformed = sl2_matrix @ hermitian_momentum_matrix(energy, momentum) @ sl2_matrix.conj().T
+    _, boosted_momentum = momentum_from_hermitian(transformed)
+    return np.linalg.inv(canonical_boost(boosted_momentum, mass)) @ sl2_matrix @ canonical_boost(momentum, mass)
+
+
+def wigner_boost_x_cocycle_derivative_error(samples, mass=1.0, h=1e-6):
+    max_error = 0.0
+    max_norm = 0.0
+    for momentum in samples:
+        plus = wigner_rotation(sl2_boost_x(h), momentum, mass)
+        minus = wigner_rotation(sl2_boost_x(-h), momentum, mass)
+        derivative = (plus - minus) / (2.0 * h)
+        energy = float(np.sqrt(mass * mass + np.dot(momentum, momentum)))
+        expected = 1j * (momentum[1] * SIGMA_NP[2] - momentum[2] * SIGMA_NP[1]) / (2.0 * (energy + mass))
+        spin_multiplier = (momentum[2] * SIGMA_NP[1] - momentum[1] * SIGMA_NP[2]) / (2.0 * (energy + mass))
+        max_error = max(max_error, float(np.linalg.norm(derivative - expected)))
+        max_norm = max(max_norm, float(np.linalg.norm(spin_multiplier, ord=2)))
+    return max_error, max_norm
+
+
 def Lz(F): return -sp.I * (p1 * sp.diff(F, p2) - p2 * sp.diff(F, p1))
 def Jz(v): return sp.Matrix([Lz(v[0]), Lz(v[1])]) + Sz * v
 
@@ -84,6 +136,11 @@ def main():
     orb = sp.diff(a(p1L, p2, p3), t).subs(t, 0)
     chk("(B2) boost orbital: d/dt psi(Lambda_x(-t)p)|_0 = -E d psi/dp1 => K_x^orb = -i E d/dp1 (full-line rapidity momentum)",
         sp.simplify(orb - (-E * sp.diff(a(p1, p2, p3), p1))) == 0)
+    samples = np.array([[0.3, 0.4, 0.2], [0.1, -0.5, 0.7], [-0.6, 0.2, -0.3], [0.8, 0.0, 0.4]])
+    cocycle_err, spin_bound = wigner_boost_x_cocycle_derivative_error(samples)
+    chk("(B2b) boost Wigner-cocycle derivative gives the bounded spin multiplication term (S x p)_x/(E+m)",
+        cocycle_err < 1e-8 and spin_bound < 0.5,
+        d=f"max derivative error={cocycle_err:.2e}; max ||spin multiplier||={spin_bound:.4f}<1/2")
     chk("(B3) translation: U(t)=exp(i t a.p) => generator P_i = p_i (real multiplication, self-adjoint)", True)
 
     sec("C: Poincare algebra spot-checks + Casimir")

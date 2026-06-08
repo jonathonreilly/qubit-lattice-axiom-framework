@@ -1,0 +1,16 @@
+loop_slug: free-dirac-wigner-cocycle-derivative-20260608
+target: free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08
+mode: run
+runtime: current interactive repair pass
+cycle_count: 1
+active_route: Wigner-cocycle derivative certificate for boost spin term
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+files_touched:
+  - docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md
+  - scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py
+  - logs/runner-cache/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.txt
+review_disposition: pass
+next_exact_action: open review PR for independent audit
+stop_condition: coherent derivative repair block packaged
+

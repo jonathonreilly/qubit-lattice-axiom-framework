@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 762 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1320 |
+| unaudited | 1319 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1192 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1635 |
+| `unaudited` | 1634 |
 
 | claim_type | count |
 |---|---:|
@@ -103,13 +103,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1366 | 95.42 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 750 | 61.05 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 843 | 58.22 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1262 | 50.80 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1263 | 50.80 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 481 | 47.91 | `unaudited` | meta |
 | 6 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1185 | 42.71 | `audited_renaming` | ~~audited_renaming~~ |
-| 7 | `key_terminology` | meta | critical | 1000 | 40.97 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1001 | 40.97 | `unaudited` | meta |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 994 | 40.46 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 261 | 39.53 | `unaudited` | unaudited |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1231 | 38.77 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1232 | 38.77 | `audited_clean` | **retained** |
 | 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 589 | 38.70 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 793 | 38.63 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 681 | 38.41 | `audited_clean` | **retained_no_go** |
@@ -122,7 +122,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 689 | 32.43 | `unaudited` | unaudited |
 | 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1044 | 32.03 | `audited_conditional` | ~~audited_conditional~~ |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 687 | 31.43 | `unaudited` | unaudited |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 813 | 31.17 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 814 | 31.17 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 319 | 30.32 | `unaudited` | unaudited |
 | 25 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 270 | 29.58 | `unaudited` | unaudited |
 
@@ -1349,6 +1349,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -11596,6 +11597,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The scoped conclusion follows from the cited retained/retained_bounded H_lat surface plus standard Stone-theorem functional calculus. The directional-family optimization is only a diagnostic lane-separation check and is not needed for the Stone closure.
 - **rationale:** The load-bearing step is a standard mathematical corollary: once H_lat is fixed and self-adjoint, Stone's theorem fixes U(t)=exp(-i t H_lat). The runner source genuinely constructs finite-lattice H_lat and U, checks self-adjointness, unitarity, group law, dispersion recovery, and finite diagnostic non-match claims, with no external comparator checks. Because the audited theorem reduces to one upstream fixed-H_lat parent plus standard mathematics rather than an independent new framework derivation, the appropriate terminal status is decoration rather than audited_clean positive theorem.
 - **decoration parent:** `emergent_lorentz_invariance_note`
+- **auditor confidence:** high
+
+### `lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06`
+
+- **Note:** [`LORENTZ_NATURALNESS_GAP_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-06.md`](../../docs/LORENTZ_NATURALNESS_GAP_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional order-of-magnitude obstruction: assuming beta=6, delta v_UV ~ alpha_s/4pi, gamma = c_gamma alpha_s with c_gamma = O(1-3), and the listed LV bounds, the gauge-flow suppression is too small by several orders of magnitude.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-1de54d4e7e-lorentz_naturalness_gap_quan`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** To suppress delta v_UV below a bound over the Planck-to-observation hierarchy, gamma_crit = log10(delta v_UV / bound) / log10(M_Pl / mu), and the framework's gamma <= 0.24 is below even the weakest gamma_crit ~= 0.51.  _(class `D`)_
+- **chain closes:** False — The numerical inequality checks out conditionally, but the restricted packet does not close the physical UV-regeneration coefficient, the beta=6/g_bare input, or the fixed-point anomalous-dimension bound from retained one-hop authorities. The main cited attractor note explicitly leaves the power-divergent coefficient and physical gamma as open inputs.
+- **rationale:** Independent arithmetic confirms the displayed alpha_s, delta v_UV, gamma_crit, and residual-gap scales, though the runner's D1 detail mislabels the smallest quark/gluon gap as 7.9 orders when the table shows 4.1 orders at gamma=0.3. The load-bearing comparison is a class D check against supplied experimental bounds and supplied order-of-magnitude physics inputs, not a first-principles framework computation. Because the packet imports beta=6, Collins regeneration, and the physical gamma estimate as premises, and because the no-go discipline still leaves hidden custodial/lattice-symmetry escape routes open, the result is conditional rather than a clean closed no-go.
+- **open / conditional deps cited:**
+  - `EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `lorentz_violation_derived_note`

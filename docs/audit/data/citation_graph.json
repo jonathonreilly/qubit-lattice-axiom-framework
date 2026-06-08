@@ -46002,10 +46002,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lepton_phase_modulus_separation_no_go_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06"
     },
     {
@@ -46027,6 +46023,10 @@
     {
       "from": "repo.front_door_status",
       "to": "post_record_selector_tangent_readout_weight_prototype_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -88951,16 +88951,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "lepton_phase_modulus_separation_no_go_2026-06-06",
         "lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06",
         "newtonian_distance_law_confirmed",
         "nonlabel_grown_drift_basin_note",
         "packet_memory_note",
         "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
-        "post_record_selector_tangent_readout_weight_prototype_2026-06-06"
+        "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
+        "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8cc843cf5741684e495ae400f820c567463af95dfd9dc98d3d46c04401ec2dec",
+      "note_hash": "45d68efbb9661de964aabe04a2fb73df69c52077a63cb0a743c8f086b181265a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

@@ -1,0 +1,21 @@
+loop: i1-native-source-normalization-20260608
+target_claim_id: i1_static_readout_is_native_field_integration_2026-06-06
+target_status: bounded-support
+actual_current_surface_status: conditional-support
+branch: physics-loop/i1-native-source-normalization-20260608
+base: origin/main
+started_at: 2026-06-08
+cycle_count: 1
+active_route: native quadratic static-source normalization
+files_touched:
+  - docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md
+  - docs/I1_STATIC_READOUT_IS_NATIVE_FIELD_INTEGRATION_2026-06-06.md
+  - scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py
+  - logs/runner-cache/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.txt
+  - logs/runner-cache/i1_static_readout_is_native_field_integration_2026_06_06.txt
+open_imports:
+  - general energy-readout bridge
+  - Casimir/readout assignments and hierarchy downstream quantities
+claim_state_movement: closes the native quadratic gauge-source action/normalization subgap; leaves general energy readout open
+next_exact_action: independent audit should decide whether the new source-normalization bridge satisfies the I1 conditional blocker in part.
+stop_condition: coherent bridge packet packaged for review PR

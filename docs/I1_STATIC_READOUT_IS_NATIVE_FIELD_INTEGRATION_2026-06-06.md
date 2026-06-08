@@ -67,7 +67,7 @@ rests on (with live-ledger statuses):
 | Kubo leading-order linear response | **retained_bounded** (`linear_response_true_kubo_note`) |
 | energy readout `=` field-integrated energy | **Observable-Principle / register-not-read bridge** (framework-wide non-axiom parent — *substituted for* I1, not eliminated) |
 | Casimir `C` | computable (retained Casimir rows) |
-| quadratic leading order | native expansion of the plaquette/Wilson action |
+| quadratic source normalization | exact support in `I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08` |
 
 So the **standalone** I1 import (the lattice-gauge static-source linear-response
 convention) is **eliminated** — folded into native field-integration + the general
@@ -75,6 +75,34 @@ energy-readout bridge + retained pieces. The residual is the **general** energy
 readout (used framework-wide for masses, not specific to this) + Casimir + leading
 order — not a standalone import. This is a relocation to more-native, framework-
 wide machinery, **not** a from-nothing closure of the readout itself.
+
+## 2026-06-08 Native Quadratic Source-Normalization Bridge
+
+The native field-integration half of this relocation now has a restricted
+finite-lattice bridge:
+
+[`I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md`](I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md)
+
+That bridge proves, on the zero-mean finite periodic lattice, that the leading
+quadratic gauge-source action
+
+```text
+S[phi; J] = (1/(2 g^2)) <d phi, d phi> - <J, phi>
+```
+
+has stationary equation `L phi = g^2 J` and completed-square effective action
+
+```text
+S_eff[J] = -(g^2/2) <J, L^+ J>.
+```
+
+For two static source records this gives the separation-dependent cross term
+`V_cross(r) = -g^2 s_1 s_2 G(r)`, with exact source-amplitude and `g^2`
+scaling. This removes the native quadratic gauge-source action/normalization as
+a standalone convention inside the I1 packet.
+
+The general energy-readout bridge remains open. This update narrows the I1
+residual; it does not promote the row or claim full retained closure.
 
 ## Honest meta-note (for the audit lane)
 

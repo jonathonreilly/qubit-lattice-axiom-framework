@@ -3,7 +3,7 @@ runner: scripts/i1_static_readout_is_native_field_integration_2026_06_06.py
 runner_sha256: 64b4b1249e30ecff7bd437de5ca624500135a02b1855911459a2c10a064a9a4a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 --- Section A: integrate out native quadratic field -> V(r) = -g^2 G(r) ---

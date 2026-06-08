@@ -96,6 +96,9 @@ def source_anchor_checks() -> None:
         "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
         [
             "selector_tangent_readout_weight",
+            "Claim type:** methodology / supplied-support",
+            "2026-06-08 supplied-support safe-narrow",
+            "supplied-support",
             "finite readout/tangent weight certificate",
             "Does not derive a selector, tangent metric, Hessian",
             "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",

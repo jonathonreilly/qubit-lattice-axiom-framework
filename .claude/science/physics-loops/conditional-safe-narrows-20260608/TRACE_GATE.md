@@ -20,3 +20,9 @@ next_trace_action: "Audit the row as exact algebra inside the supplied d=4/Z^4 A
 target_claim_id: dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28
 target_blocker_text: "add a retained bridge deriving the distinct particle-antiparticle thermal label from the retained CPT content, and bridge the retained per-site SU(2) action to the physical spin/helicity label used in the inventory."
 next_trace_action: "Audit the row as finite on-shell rank/chirality arithmetic under supplied physical-label semantics; keep the physical label bridge open."
+
+## Post-Record Selector/Tangent Readout
+
+target_claim_id: post_record_selector_tangent_readout_weight_prototype_2026-06-06
+target_blocker_text: "add a retained bridge deriving or explicitly accepting the selector/tangent/readout carrier, readout weights, and positive tangent metric/Hessian, or keep the row scoped as supplied-support only."
+next_trace_action: "Audit the row as supplied-support finite certificate; keep selector/tangent/readout authority open."

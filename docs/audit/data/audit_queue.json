@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 250,
-    "leaf": 396,
+    "leaf": 395,
     "medium": 365
   },
   "cycle_break_target_count": 15,
@@ -17650,30 +17650,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wide_lattice_h2t_distance_law_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/valley_linear_same_harness_compare.py"
-      ],
-      "load_bearing_score": 5.748,
-      "note_path": "docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/wide_lattice_h2t_distance_replay.py",
-      "transitive_descendants": 18
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "generation_dial_local_stability_grammar_2026-06-05",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17822,6 +17798,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_beta6_multicube_resummation_relocation.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+        "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
       "transitive_descendants": 16
     },
     {
@@ -28996,31 +28997,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -29578,6 +29554,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_universal_gr_stress_ward_transverse_seagull.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wide_lattice_h2t_skeptic_audit_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wide_lattice_h2t_distance_law_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/valley_linear_same_harness_compare.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/WIDE_LATTICE_H2T_SKEPTIC_AUDIT_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wide_lattice_h2t_distance_replay.py",
       "transitive_descendants": 0
     },
     {
@@ -39975,32 +39977,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wide_lattice_h2t_skeptic_audit_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wide_lattice_h2t_distance_law_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/valley_linear_same_harness_compare.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/WIDE_LATTICE_H2T_SKEPTIC_AUDIT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/wide_lattice_h2t_distance_replay.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -40571,5 +40547,5 @@
     }
   ],
   "ready_count": 30,
-  "total_pending": 1338
+  "total_pending": 1337
 }

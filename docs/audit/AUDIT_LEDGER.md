@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 757 |
+| **retained_bounded** | 758 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1336 |
+| unaudited | 1335 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1184 |
+| `audited_clean` | 1185 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1651 |
+| `unaudited` | 1650 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 520 |
 | `high` | 444 |
-| `medium` | 774 |
-| `leaf` | 1273 |
+| `medium` | 775 |
+| `leaf` | 1272 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 15
@@ -1287,6 +1287,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wide_family_h0125_bridge_reopen_audit` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
+| `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -18982,6 +18983,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited authorities are retained_bounded and support the narrowed conclusion that the h=0.125 rows remain Born-clean with TOWARD gravity but F~M about 0.50 rather than near 1. The source note explicitly excludes the wider phys_w=4 continuation from binding scope, so the missing runner for that wider narrative is not load-bearing.
 - **rationale:** No primary runner source or stdout is present, so the audit falls back to the note text and one-hop cited authorities. Within the narrowed scope, the conclusion follows from retained_bounded dependencies and does not require the out-of-scope wider-family phys_w=4 claims. The load-bearing step is cross-note inheritance rather than a fresh first-principles computation, but the source note does not present it as a new computation.
 - **auditor confidence:** medium
+
+### `wide_lattice_h2t_distance_law_note`
+
+- **Note:** [`WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`](../../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-slice replay for the ordered 3D 1/L^2 wide lattice at h=0.25, W=12, L=12, with valley-linear action, showing attractive distance rows, near-Newtonian far tail, and linear source-strength scaling.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-200219-9f2938ffdc-wide_lattice_h2t_distance_la`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Independent wide replay at h = 0.25, W = 12, L = 12 gives 10/10 TOWARD distance support, far-tail slope near -1, and F~M exponent 1.000.  _(class `C`)_
+- **chain closes:** True — The runner source contains a genuine lattice replay path for the stated geometry/action/kernel, and the default verifier SHA-pins the frozen replay log, parses all raw rows, and checks their inclusion in the note. An independent log-log regression from the embedded rows reproduces the advertised peak-tail, far-tail, and F~M exponents.
+- **rationale:** The scoped claim is finite and bounded, not a continuum or universal distance-law theorem. The exposed raw distance and F~M rows support the stated signs and fitted exponents, and the primary/helper runner source does not merely print constants or import the contested conclusion. No cited authority, external comparator, or open bridge is needed for this narrow replay claim.
+- **auditor confidence:** high
 
 ### `wigner_mode_low_d_sublattice_theorem_note_2026-05-02`
 

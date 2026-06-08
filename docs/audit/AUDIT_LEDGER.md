@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 750 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1299 |
+| unaudited | 1298 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 41 |
+| ~~audited_conditional~~ | 42 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1172 |
-| `audited_conditional` | 41 |
+| `audited_conditional` | 42 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1610 |
+| `unaudited` | 1609 |
 
 | claim_type | count |
 |---|---:|
@@ -1333,6 +1333,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `packet_memory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13244,6 +13245,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The scoped claim closes. The retained one-hop dependencies supply the well-defined finite periodic SU(3) Wilson plaquette observable, the accepted 3+1D Wilson surface combinatorics, and the boundary that analytic P(6) and constant-lift closure remain unavailable. The runner source and SHA-pinned cache align on seed 42, beta=6, periodic 4D finite volumes, cold-start SU(3) links, Gell-Mann Metropolis updates, and broad L=2/L=3 plaquette support checks.
 - **rationale:** Clean for the stated bounded theorem. The source note, one-hop retained dependencies, runner source, and cached output align on the same finite-volume 3+1D periodic Wilson plaquette computation. The claim uses 0.5934 only as contextual comparator and does not overclaim analytic P(6), autocorrelation-controlled thermodynamic extrapolation, or infinite-volume closure.
 - **auditor confidence:** medium_high
+
+### `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`
+
+- **Note:** [`PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Runner-local finite-route obstruction over the admitted packet I_PT = (beta=6, w_1..w_16, <P>_MC=0.5934, F2 comparator); provenance of the packet/comparators and non-perturbative routes were not audited as closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-bf1ac76bdb-plaquette_beta6_perturbative`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied beta=6 coefficient packet and comparator, all tested finite truncation, tadpole, Pade, and tadpole-Pade routes remain in the <P>_analytic ~= 0.91 band and far from <P>_MC = 0.5934.  _(class `D`)_
+- **chain closes:** False — The finite arithmetic closes conditionally: independent recomputation gives <P>_PT(N=16)=0.9193305 and the N=8 tadpole fixed point 0.9105504, both about 53-55% above the supplied comparator. The retained chain does not close because the NSPT packet, beta normalization, MC comparator, and F2 scale are admitted external inputs with no retained authority in the restricted packet.
+- **rationale:** The runner does real finite arithmetic over the hard-coded coefficient packet rather than merely printing PASS, and its headline residuals match an independent calculation. But the load-bearing obstruction depends on supplied literature coefficients and external comparator values that are not derived or retained in the packet. The N1-N8 no-go discipline is satisfied only for the narrowed finite weak-coupling/tadpole/Pade method grid; the note correctly leaves strong-coupling, transfer-matrix, Wigner-Racah, Borel-conformal, Monte Carlo, and other non-perturbative routes open.
+- **auditor confidence:** high
 
 ### `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27`
 

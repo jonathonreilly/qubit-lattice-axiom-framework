@@ -1,5 +1,5 @@
-"""Class-A finite runner (memory-safe): the W-native spin-2 graviton from FINITE-MOMENTUM
-induced gravity -- a positive escape from the k=0-only no-gos #3214/#3220.
+"""Finite runner (memory-safe): finite-k yz TT bubble sign diagnostic for the
+native elliptic anti-Hermitian lattice Dirac operator.
 
 #3214 (universal_gr_scalar_generator_tt_kernel_sharpening): the HOMOGENEOUS (k=0) metric
 coupling enters det(D+J) only via the O_h scalar s(q)=g_ij qhat^i qhat^j -> TT graviton in the
@@ -7,25 +7,23 @@ exact kernel. #3220 (universal_gr_degenerate_supermetric_graviton_sign_no_go): t
 supermetric is degenerate (trace=shear), gluing gives an opposite-signed (tachyonic) graviton.
 BOTH are k=0 (homogeneous-metric / ultralocal) statements.
 
-THIS NOTE: the PHYSICAL graviton is an INHOMOGENEOUS metric h_ij(x)=h e^{ikx} at finite k.
-The metric-Hessian of the observable-principle generator W=log|det(D+J)| w.r.t. the FINITE-k
-metric source IS the Dirac stress-tensor 2-point function Pi_ijkl(k) -- the graviton self-energy
-(Sakharov induced gravity), W-NATIVE (literally d^2 W / d g(k) d g(-k)). On the framework's
-NATIVE Dirac generator -- the real ANTI-HERMITIAN lattice Dirac H=iD (det = m^2+|sin q|^2 > 0,
-an elliptic / valid partition function; retained cpt_exact_real_anti_hermitian_d) -- the
-TT-projected k^2 coefficient is POSITIVE, CONVERGENT, and mass-robust => omega^2 = +k^2, a
-HEALTHY spin-2 graviton, with the conformal (trace) mode OPPOSITE-signed (constrained).
+THIS NOTE: the runner checks a FINITE-k yz transverse-traceless channel and a trace-channel
+contrast.  It does not prove that the yz vertex is the complete finite-k metric Hessian of
+W=log|det(D+J)|, nor does it prove the full diffeomorphism Ward identity or spin-2 isotropy
+bridge.  On the framework's NATIVE Dirac generator -- the real ANTI-HERMITIAN lattice Dirac
+H=iD (det = m^2+|sin q|^2 > 0, an elliptic / valid partition function) -- the runner-defined
+yz TT k^2 coefficient is POSITIVE, CONVERGENT, and mass-robust.  The non-elliptic bare-Hermitian
+control is negative and divergent.
 
   T1  native lattice Dirac is anti-Hermitian -> elliptic: det(iD+m)=m^2+|sin q|^2 > 0 on ALL BZ
       modes (valid Sakharov Z); the bare-Hermitian sigma.sin gives m^2-|sin q|^2 (sign-indefinite,
       invalid Z).
   T2  the exact-TT yz channel (k along x) is transverse-traceless by construction (k^i h_ij=0,
-      tr h=0) -- a clean physical graviton self-energy, no Ward enforcement needed.
+      tr h=0) inside this runner-defined channel.
   T3  on the native elliptic iD: TT-projected k^2 slope is POSITIVE and CONVERGENT in BZ size
-      (N=10..22 -> ~+0.0188) => omega^2 = +k^2 (healthy graviton).
+      (N=10..22 -> ~+0.0188) as a finite-BZ sign diagnostic.
   T4  mass-robust: TT slope > 0 for m in {0.5,1.0,1.5,2.0}; channels SPLIT at finite k with TT
-      (propagating, +) OPPOSITE-signed to trace (conformal, -) -- the correct GR structure
-      (escaping the #3220 same-sign degeneracy).
+      (+) OPPOSITE-signed to trace (-) inside this diagnostic.
   T5  CONTROL: the non-elliptic bare-Hermitian sigma.sin (det sign-indefinite, not a valid Z)
       gives a NEGATIVE, N-DIVERGENT slope -- the tachyonic artifact; not the native generator.
 
@@ -78,7 +76,7 @@ def tt_slope(elliptic, mass, Ng):
 
 # --- T2: yz channel is TT by construction (k along x) ---
 # h_yz with k=(kx,0,0): k^i h_ij = kx*h_xj = 0 (h_xy=h_xz=0); trace = 0. Transverse-traceless.
-check("T2 exact-TT yz channel (k along x): k^i h_ij=0 and tr h=0 (transverse-traceless by construction)", True)
+check("T2 yz channel (k along x): k^i h_ij=0 and tr h=0 inside this runner-defined channel", True)
 
 # --- T3: native elliptic TT slope positive + convergent ---
 slopes = [tt_slope(True, 1.0, Ng) for Ng in [10, 14, 18, 22]]
@@ -106,7 +104,7 @@ def trace_slope(mass, Ng=16):
     k1 = 2 * np.pi / Ng
     return ((Pi(k1) - Pi(0.0)) / (2 - 2 * np.cos(k1))).real
 tt = tt_slope(True, 1.0, 16); tr = trace_slope(1.0)
-check("T4b channels split, TT(+%.4f) OPPOSITE-signed to trace(%.4f) -- correct GR (not #3220 same-sign)" % (tt, tr),
+check("T4b diagnostic channels split, yz TT(+%.4f) OPPOSITE-signed to trace(%.4f)" % (tt, tr),
       tt > 0 and tr < 0)
 
 # --- T5: control -- non-elliptic gives negative + N-divergent (artifact) ---
@@ -120,8 +118,8 @@ n_pass = sum(1 for _, ok in results if ok); n_fail = sum(1 for _, ok in results 
 for name, ok in results:
     print(("PASS" if ok else "FAIL"), name)
 print()
-print("native elliptic iD induced TT graviton: omega^2=+k^2 (healthy, W-native, finite-k).")
-print("ESCAPES #3214 (TT-blindness k=0-only) and #3220 (degenerate same-sign k=0-only).")
-print("BOUNDED on: the elliptic-operator pin (iD, retained anti-Herm class); open = full Ward identity,")
-print("E_g/T_2g spin-2 isotropy continuum limit, G_Newton (G3) magnitude, m->0 chiral limit.")
+print("native elliptic iD yz TT finite-k bubble slope is positive, convergent, and mass-robust.")
+print("non-elliptic bare-Hermitian control is negative and N-divergent.")
+print("BOUNDED on: runner-defined yz channel; open = full W metric Hessian/contact terms,")
+print("full Ward identity, E_g/T_2g spin-2 isotropy continuum limit, G_Newton magnitude, chiral limit.")
 print("TOTAL: PASS=%d FAIL=%d" % (n_pass, n_fail))

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 750 |
+| **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1330 |
+| unaudited | 1329 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1173 |
+| `audited_clean` | 1174 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1643 |
+| `unaudited` | 1642 |
 
 | claim_type | count |
 |---|---:|
@@ -418,6 +418,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_detr_default_full_exercise_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5811,6 +5812,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The native two-qubit tensor product leaves the bare qubit ladder frame and Jordan-Wigner CAR frame as the same ungraded M4(C) algebra with different tensor-support bookkeeping, while the graph Laplacian gives an A2-local symmetric non-chiral alternative to the supplied first-order parity-reversing operator.  _(class `A`)_
 - **chain closes:** True — The restricted conclusion follows from explicit finite matrix identities and support checks in the packet. The note excludes the downstream Dirac-Kahler, generation, Koide, spin-statistics, and flavor-sector bridge claims, so no missing bridge is load-bearing for the narrowed theorem.
 - **rationale:** The runner source actually constructs the Pauli matrices, two-qubit tensor operators, Jordan-Wigner dressed ladders, finite Z2^3 hopping matrix, epsilon parity, and graph Laplacian rather than merely printing constants. An independent formula pass confirms the relevant signs and identities: sigma_+^2=0, bare cross-site ladders commute, the JW pair anticommutes, both generated algebras span dimension 16, c2=Z tensor sigma_- is not of form I tensor B, the Pauli anticommutator cancels cross terms in the supplied symbol square, nearest-neighbor hopping flips epsilon, and L=deg I-hop is symmetric/A2-local while neither commuting nor anticommuting with epsilon. There are no cited non-retained authorities or external comparator imports in the restricted packet. The audited result is bounded finite-algebra support only, not any excluded downstream physics bridge.
+- **auditor confidence:** high
+
+### `flavor_detr_default_full_exercise_note_2026-05-30`
+
+- **Note:** [`FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md`](../../docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-algebra locator for the det_C/equal-block versus det_R/dimension-count fork in the supplied C3/R[Z3], substrate-i, (Z2)^3 corner-character, and G_U1/Gamma_chi checks.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-151707-dfab630a9a-flavor_detr_default_full_exe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The tested finite structures do not make det_C/equal-block counting automatic; they localize Q=2/3 versus Q=1 as a block-count versus dimension-count fork while ranking neither read.  _(class `A`)_
+- **chain closes:** True — The finite matrix identities and character checks support only the narrowed locator: iI3 is generation-blind, C^3=I restricts continuous rephasing, the checked (Z2)^3 characters are real, and G_U1 is not the chiral splitter. The r/Q endpoint algebra is supplied by retained-grade cited inputs, and the beta=0 reference-state and holomorphic-carrier bridges are explicitly outside scope.
+- **rationale:** The load-bearing step is an algebraic closure over finite matrices, finite characters, and retained-grade endpoint/counting authorities, not a definition substitution or numerical fit. Independent formula checks confirm the displayed commutators, rephasing quantization, real Z2-character signs, anticommutator norm scale, and Q=1/3+(2/3)r endpoints. The source repairs successfully prevent promotion to a default/reference-state theorem or derived holomorphic measure.
 - **auditor confidence:** high
 
 ### `flavor_doublet_metric_default_is_detr_2026-06-02`

@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_induced_newton_constant_positive.py
+runner_sha256: 802777b40abb6963d6a6ecc4ccf4dcc402a45f9b17f990d415fb68c5dbda2af8
+timeout_sec: 420
+exit_code: 0
+elapsed_sec: 13.14
+status: ok
+----- stdout -----
+PASS T1 induced 1/(16piG)=C_TT POSITIVE + N-convergent (staggered, m=0.7): C_TT(N=6,8,10)=+0.01972, +0.01982, +0.01987 -> continuum +0.01995
+PASS T2 C_TT > 0 and FINITE for all m in {1,0.7,0.5,0.3} (+0.0133, +0.0198, +0.0250, +0.0299) -- lattice-regulated induced G, no pathology
+PASS T3 CONTROL: non-elliptic bare-Hermitian sigma.sin gives NEGATIVE C_TT=-22.0649 (tachyonic/ghost 1/G) -- positive G REQUIRES the elliptic pin
+PASS T4 staggered generator ELLIPTIC: D D^dag = Delta*1, Delta=m^2+sum sin^2(P/2)=1.0816 > 0 (valid Z; healthy branch)
+PASS T5 consistency: 1/(16piG)=C_TT>0 -> finite positive G/a^2=0.9972 (a registered, G3); sign matches attractive scalar Newton (#3184)
+
+The W-native induced Newton constant: C_TT (Ward-clean, isotropic, staggered Kaehler-Dirac TT
+graviton stiffness) = induced 1/(16 pi G) is POSITIVE (attractive, no ghost) and FINITE
+(lattice-regulated), continuum value ~ +0.020 (m=0.7). The positive sign REQUIRES the native
+elliptic generator (control: non-elliptic -> tachyonic). Magnitude registered (G3) via the
+lattice scale a; only the sign / finiteness / structure / W-nativeness is derived. Capstone of
+the W-native healthy (#3222) + Ward-clean (#3242) + isotropic (#3257) induced graviton.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

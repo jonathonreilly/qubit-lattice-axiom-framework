@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 758 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1334 |
+| unaudited | 1333 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_conditional~~ | 29 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1186 |
-| `audited_conditional` | 28 |
+| `audited_conditional` | 29 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1649 |
+| `unaudited` | 1648 |
 
 | claim_type | count |
 |---|---:|
@@ -100,7 +100,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1366 | 95.42 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 750 | 61.05 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 751 | 61.05 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 843 | 58.22 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1262 | 50.80 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 481 | 47.91 | `unaudited` | meta |
@@ -1336,6 +1336,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `i1_static_readout_is_native_field_integration_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `magnitude_reads_minimal_record_block_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11499,6 +11500,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since dim_C(M_2(C))=4 and finite tensor-product dimensions multiply, dim_C(M_2(C)^tensor d)=4^d, so at the bounded parameter d=4 the dimension is 4^4=256 and the reciprocal is 1/256.  _(class `A`)_
 - **chain closes:** True — The theorem closes by basis counting and tensor-product dimension multiplicativity over finite-dimensional complex vector spaces. The only physics-sensitive quantity, d=4, is an explicit bounded parameter rather than an output.
 - **rationale:** The row is a class-A algebraic bookkeeping theorem and does not import PDG values, mass-scale observations, or a physical dimension derivation. The cached runner reports PASS=14, FAIL=0 under SHA f8e6d0d9e6a6b88a48b3cea28cf0b4f73536762df53a0784c240c0dcf71a5e20, including explicit tensor basis/rank checks at d=4. Clean status is bounded by the claim_type: downstream effective status should be retained_bounded, not an unbounded derivation of the lepton scale or d=4.
+- **auditor confidence:** high
+
+### `magnitude_reads_minimal_record_block_2026-06-06`
+
+- **Note:** [`MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the corrected claim that the bare magnitude temporal count is read at Lt=2 rather than the OS continuum via a register-not-read temporal-readout extension; the alpha_LM value gate is outside scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-200624-e5434a0656-magnitude_reads_minimal_reco`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note extends register-not-read to the temporal readout scale and asserts that the bare magnitude exponent is registered at the discrete minimal block, count 2, while using the OS-continuum count is the realist slip.  _(class `F`)_
+- **chain closes:** False — The minimal-block arithmetic and 8 x 2 = 16 count check out within the packet, but the selecting bridge from register-not-read to this temporal readout scale is asserted rather than derived. The source note's correction explicitly demotes that selection as flagged-open.
+- **rationale:** The runner verifies finite arithmetic around eta_1(t)=(-1)^t, Lt=2, and 8 x 2 = 16, but it hard-codes the retained single-step nonpositivity and the principle-extension step. It does not compute or derive the load-bearing readout-scale selection. The restricted packet supplies no closed authority or bridge theorem that licenses applying register-not-read to choose the minimal block over the OS continuum, and the source note itself says that selection is demoted and open.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

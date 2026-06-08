@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 334,
     "high": 250,
-    "leaf": 377,
+    "leaf": 376,
     "medium": 360
   },
   "cycle_break_target_count": 20,
@@ -29141,31 +29141,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "scale_reference_primitive",
-        "post_record_clock_rate_interface_2026-06-06"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -40168,6 +40143,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 10,
-  "total_pending": 1321
+  "ready_count": 9,
+  "total_pending": 1320
 }

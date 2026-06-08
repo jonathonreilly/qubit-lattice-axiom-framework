@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1319 |
+| unaudited | 1318 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1175 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1632 |
+| `unaudited` | 1631 |
 
 | claim_type | count |
 |---|---:|
@@ -1334,6 +1334,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `magnitude_reads_minimal_record_block_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11834,6 +11835,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the retained 2D family, the stage-2 broad surrogate built from the stage-1 sourced response reproduces the stage-1 surrogate rows at printed precision across the tested topN values.  _(class `C`)_
 - **chain closes:** True — The provided runner constructs the 2D lattice, propagates the probe, builds stage-1 and stage-2 compressed surrogate source profiles, and computes the displayed ratios, TV distances, captures, spreads, and overlap. The bounded conclusion is limited to the frozen family and printed-precision two-stage stability.
 - **rationale:** The primary runner does not merely print constants: it generates the lattice, propagates amplitudes under distributed and point-source fields, compresses computed profiles, and compares the second-stage surrogate against the first. The helper source supplies lattice generation and constants used by the computation rather than importing the contested result from another note. The cited authorities are retained_bounded and the note's conclusion stays bounded: mesoscopic two-stage stability, not localized persistent-mass closure.
+- **auditor confidence:** high
+
+### `min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the narrow units/minimality claim that one approved dimensionful scale reference plus a one-tick-one-edge causal tie identifies the minimum time step as the Planck time without adding a second dimensionful primitive.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-155035-a97d22204e-min_time_step_is_the_planck_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With the approved scale reference setting a_s = l_P and the one-tick-one-edge tie giving a_tau = a_s/c, therefore a_tau = l_P/c = t_P.  _(class `A`)_
+- **chain closes:** False — The arithmetic identity l_P/c = t_P checks on the rounded constants, and the scale-reference primitive is an accepted non-bounding premise. The chain still imports the one-tick-one-edge bridge and the emergent-c-to-physical-c normalization without a cited retained authority in the restricted packet.
+- **rationale:** The primitive-registry carve-out applies to SCALE_REFERENCE_PRIMITIVE_NOTE, so the scale reference is not a Tier-A admission or bounded-status source. However, the runner hard-codes c, l_P, and t_P, and its BFS only verifies a chosen 6-nearest-neighbor graph, not the load-bearing record-tick-to-edge theorem. The note's conclusion therefore depends on a missing upstream bridge and normalization not closed by the provided authorities. A second math check also notes that the runner asserts only a loose 1e-3 tolerance while the note advertises relative 1e-7 verification.
 - **auditor confidence:** high
 
 ### `minimal_absorbing_horizon_probe_note`

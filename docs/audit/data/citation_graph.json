@@ -27301,6 +27301,10 @@
       "to": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
     },
     {
+      "from": "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08",
+      "to": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
+    },
+    {
       "from": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
       "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
     },
@@ -87437,6 +87441,20 @@
       "runner_path": "scripts/frontier_radian_unit_convention_reclassification_2026_05_10_radianconv.py",
       "title": "Radian Unit Convention Reclassification (Sharpened) \u2014 P as a Unit Convention Under Conventions Unification"
     },
+    "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08": {
+      "claim_id": "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (structural locator: derived `K=|K|(J\u2212I)` supplies the rank-1 singlet-plus-doublet template; GST magnitudes still require the mass hierarchy)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "961b36e18116a9cb620182540e3f9d26e4a267adba6b0e6bdea626758609f987",
+      "path": "docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md",
+      "runner_path": "scripts/rank1_single_source_from_K_J_minus_I_structure_runner.py",
+      "title": "The Derived C\u2083 Coupling K = |K|(J\u2212I) Supplies a Rank-1 / Single-Source Template; GST Magnitudes Still Reduce to the Hierarchy \u2014 Locator Note"
+    },
     "rconn_derived_note": {
       "claim_id": "rconn_derived_note",
       "claim_type_author_hint": "no_go",
@@ -101623,7 +101641,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 917,
+      "bounded_theorem": 918,
       "decoration": 1,
       "meta": 274,
       "no_go": 147,
@@ -101632,7 +101650,7 @@
       "positive_theorem": 198
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1330,
+      "bounded_theorem": 1331,
       "decoration": 1,
       "meta": 274,
       "no_go": 261,
@@ -101640,10 +101658,10 @@
       "open_gate": 152,
       "positive_theorem": 624
     },
-    "edge_count": 11509,
+    "edge_count": 11510,
     "leaf_count": 1021,
-    "node_count": 3108,
+    "node_count": 3109,
     "root_count": 1017,
-    "runners_with_path": 2693
+    "runners_with_path": 2694
   }
 }

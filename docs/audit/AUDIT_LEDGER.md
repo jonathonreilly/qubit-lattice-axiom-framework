@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 751 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1336 |
+| unaudited | 1337 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
@@ -65,11 +65,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1649 |
+| `unaudited` | 1650 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1377 |
+| `bounded_theorem` | 1378 |
 | `decoration` | 53 |
 | `meta` | 321 |
 | `no_go` | 331 |
@@ -81,16 +81,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 527 |
 | `high` | 438 |
 | `medium` | 760 |
-| `leaf` | 1267 |
+| `leaf` | 1268 |
 
 - **Retained pending chain closure:** 10
 - **Citation cycles detected:** 20
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2585
-- runners with (C) first-principles compute hits: 1302
-- runners with (D) external comparator hits: 757
+- runners classified: 2586
+- runners with (C) first-principles compute hits: 1303
+- runners with (D) external comparator hits: 758
 - decoration candidates (no C, no D): 498
 
 ## Top 25 by load-bearing score (topology only)
@@ -100,7 +100,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1350 | 92.40 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 743 | 60.04 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 744 | 60.04 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 843 | 58.22 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1258 | 50.30 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 479 | 47.91 | `unaudited` | meta |

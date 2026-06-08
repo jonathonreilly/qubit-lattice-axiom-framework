@@ -24096,6 +24096,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_radian_unit_convention_reclassification_2026_05_10_radianconv.py"
     },
+    "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/rank1_single_source_from_K_J_minus_I_structure_runner.py"
+    },
     "rconn_derived_note": {
       "assert_count": 3,
       "counts": {
@@ -68871,6 +68883,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/rank1_single_source_from_K_J_minus_I_structure_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/rconn_matching_rule_nogo_certificate.py": {
       "assert_count": 3,
       "claims": [
@@ -71351,12 +71378,12 @@
     "dominant_class_distribution": {
       "A": 364,
       "B": 428,
-      "C": 976,
+      "C": 977,
       "D": 358,
       "none": 459
     },
-    "runners_classified": 2585,
-    "runners_with_C": 1302,
-    "runners_with_D": 757
+    "runners_classified": 2586,
+    "runners_with_C": 1303,
+    "runners_with_D": 758
   }
 }

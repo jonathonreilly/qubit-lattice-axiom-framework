@@ -1,0 +1,25 @@
+loop_slug: lensing-h025-edge-kernel-20260608
+mode: run
+target_claim_id: lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: streamed_H025_edge_kernel_certificate
+files_touched:
+  - docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_lensing_exponent_is_dipole_crossover.py
+  - scripts/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.py
+  - logs/runner-cache/frontier_lensing_exponent_is_dipole_crossover.txt
+  - logs/runner-cache/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.txt
+  - outputs/lensing_h025_edge_kernel_certificate_2026_06_08.json
+open_imports:
+  - exact continuum signed-tail asymptotic order
+  - geometric ray-deflection readout bridge from this Kubo observable
+checks:
+  - python3 scripts/frontier_lensing_exponent_is_dipole_crossover.py
+  - python3 scripts/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_lensing_exponent_is_dipole_crossover.py --timeout-sec 120
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.py --timeout-sec 1800
+next_exact_action: Submit this bounded fine-H edge certificate for review/audit; do not promote exact dipole asymptotics.
+stop_condition: Coherent PR block complete; continue campaign by scanning next conditional rows.

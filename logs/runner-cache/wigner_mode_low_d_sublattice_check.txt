@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/wigner_mode_low_d_sublattice_check.py
-runner_sha256: e0d5c64040e1116068b17d2863ac64c9d2d853d9c67293f00b876fa50568155a
+runner_sha256: acf7fcbd3231664a57c1c29d02b94b08cfe317dcd9f3b0f0bb3ae7b992b790fc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================
-WIGNER MODE ON 1D/2D SUBLATTICES CHECK
+WIGNER LOW-D SUBLATTICE IR/CHARGE BOUNDARY CHECK
 ========================================================================
 
 ------------------------------------------------------------------------
@@ -24,25 +24,25 @@ TEST 2: Gibbs state of symmetric H commutes with Q
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 3: CMW IR-integral grows in d <= 2
+TEST 3: low-dimensional lattice IR sum grows from L=16 to L=32
 ------------------------------------------------------------------------
   I_1(L=16) = 1.3281; I_1(L=32) = 2.6641
   I_2(L=16) = 0.4899; I_2(L=32) = 0.6003
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 4: Noether current conservation is compatible with no SSB
+TEST 4: finite charge algebra is compatible with, but does not prove, no-SSB
 ------------------------------------------------------------------------
-  Noether's theorem holds whenever there's a continuous symmetry of the action,
-  Noether supplies current conservation for an action symmetry;
-  CMW supplies no finite-temperature SSB in d <= 2 under its hypotheses.
+  Finite charge commutation is a bounded algebraic fact in this model;
+  the low-d IR-sum growth is an obstruction signal;
+  no finite-temperature no-SSB or Ward/order-parameter bridge is claimed here.
   STATUS: PASS
 
 ========================================================================
   Test 1 ([Q, H] = 0 in symmetric H):            PASS
   Test 2 ([Q, rho_beta] = 0):                    PASS
-  Test 3 (CMW IR growth in d<=2):                PASS
-  Test 4 (Noether/CMW compatibility):            PASS
+  Test 3 (low-d lattice IR growth):              PASS
+  Test 4 (compatibility boundary):               PASS
   OVERALL: PASS
 
 ----- stderr -----

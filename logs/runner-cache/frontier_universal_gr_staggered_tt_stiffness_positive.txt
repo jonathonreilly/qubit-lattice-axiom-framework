@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_staggered_tt_stiffness_positive.py
+runner_sha256: 7081f2f4198a989a01e285d1b49b251e294d6eaa15811640a89bcb53e0bc8fcd
+timeout_sec: 420
+exit_code: 0
+elapsed_sec: 12.45
+status: ok
+----- stdout -----
+PASS T1 staggered TT stiffness C_TT is positive and N-stable (m=0.7): C_TT(N=6,8,10)=+0.01972, +0.01982, +0.01987 -> fitted intercept +0.01995
+PASS T2 C_TT > 0 and finite for tested m in {1,0.7,0.5,0.3} (+0.0133, +0.0198, +0.0250, +0.0299)
+PASS T3 control: non-elliptic bare-Hermitian sigma.sin gives negative C_TT=-22.0649, so positive C_TT is not automatic
+PASS T4 staggered generator finite ellipticity check: D D^dag = Delta*1, Delta=m^2+sum sin^2(P/2)=1.0816 > 0
+PASS T5 conditional conversion diagnostic: if 1/(16piG)=C_TT, then G/a^2=0.9972 is positive and finite; no magnitude claim
+
+The implemented staggered Kaehler-Dirac TT stiffness C_TT is positive and finite on
+the tested finite grid, with fitted intercept ~ +0.020 at m=0.7. The non-elliptic
+bare-Hermitian control gives the opposite sign. Any induced-Newton interpretation
+is conditional on a separate bridge; no physical G_Newton magnitude is derived here.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

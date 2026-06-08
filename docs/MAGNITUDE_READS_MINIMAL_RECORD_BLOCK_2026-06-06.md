@@ -1,5 +1,20 @@
 # The Magnitude Reads the Minimal Record Block (Lₜ=2), Not the OS Continuum
 
+> **[2026-06-06 CORRECTION — framing DEMOTED per the internal adversarial-review verdict
+> `REGISTER_NOT_READ_SCOPE_CORRECTION_PANEL_VERDICT_2026-06-06`.]** This note's
+> register-not-read **framing over-reaches** and is hereby demoted. The
+> register-not-read *selection* step here ("reading the OS continuum is the realist
+> slip") rides the LOOSE "registered-physical-X-not-bare-reconstruction" dichotomy,
+> NOT the canonical central-sector partition-map license — and that loose dichotomy
+> is directionless (it would equally force the free Koide `r`-dial; it is the
+> directional inverse of the A4 coupling note #3212). **What STANDS (object-level,
+> unaffected):** the minimal reflection-positive temporal block `Lₜ=2` is
+> retained_bounded (RP two-step), and the UV-exponent-vs-IR-value scale-separation
+> is a real structural fact. **What is DEMOTED:** the claim that register-not-read
+> *selects* the minimal-block readout over the continuum — this is a **flagged-open
+> readout-scale selection** deferred to the audit lane, not a register-not-read
+> entailment. Read the body below with this demotion in force.
+
 **Date:** 2026-06-06
 **Type:** bounded positive route / register-not-read principle-extension
 **Claim type:** bounded_theorem

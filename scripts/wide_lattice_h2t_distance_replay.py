@@ -50,6 +50,7 @@ from scripts.valley_linear_same_harness_compare import (
 
 AUDIT_TIMEOUT_SEC = 120
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+SOURCE_NOTE = REPO_ROOT / "docs" / "WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md"
 FROZEN_LOG = REPO_ROOT / "logs" / "2026-04-05-wide-lattice-h2t-distance-replay.txt"
 FROZEN_LOG_SHA256 = "2faf31bf9b1015df87adaadbfa8393c4a26e100abdc6ccaf6daf70308a30e024"
 
@@ -252,6 +253,7 @@ def verify_frozen_log() -> int:
     frozen_bytes = FROZEN_LOG.read_bytes()
     frozen_sha = hashlib.sha256(frozen_bytes).hexdigest()
     text = frozen_bytes.decode("utf-8", errors="replace")
+    note_text = SOURCE_NOTE.read_text(encoding="utf-8")
     print(f"source_sha256={frozen_sha}")
     checks: list[tuple[str, bool, str]] = []
 
@@ -268,6 +270,14 @@ def verify_frozen_log() -> int:
     add("distance rows", len(rows) == 10, f"rows={len(rows)} expected=10")
     add("distance all toward", len(rows) == 10 and all(float(delta) > 0.0 and direction == "TOWARD" for _, delta, direction in rows),
         f"toward={sum(1 for _, delta, direction in rows if float(delta) > 0.0 and direction == 'TOWARD')}/10")
+    add("source note raw-row repair section", "2026-06-08 raw-row inclusion repair" in note_text,
+        "source note names the raw-row inclusion repair")
+    add("source note contains all raw distance rows",
+        len(rows) == 10 and all(
+            f"| `{int(z)}` | `{float(delta):+0.6f}` | `{direction}` |" in note_text
+            for z, delta, direction in rows
+        ),
+        "all 10 parsed distance rows are present in the note table")
     add("toward support", "TOWARD support: 10/10" in text, "support=10/10")
     parsed = [(int(z), float(delta), direction) for z, delta, direction in rows]
     toward_z = [z for z, delta, direction in parsed if delta > 0.0 and direction == "TOWARD"]
@@ -304,6 +314,12 @@ def verify_frozen_log() -> int:
     add("F~M sweep rows", len(sweep) == 6, f"rows={len(sweep)} expected=6")
     add("F~M all toward", len(sweep) == 6 and all(float(delta) > 0.0 and direction == "TOWARD" for _, delta, direction in sweep),
         f"toward={sum(1 for _, delta, direction in sweep if float(delta) > 0.0 and direction == 'TOWARD')}/6")
+    add("source note contains all raw F~M sweep rows",
+        len(sweep) == 6 and all(
+            f"| `{strength}` | `{float(delta):+0.6e}` | `{direction}` |" in note_text
+            for strength, delta, direction in sweep
+        ),
+        "all 6 parsed F~M rows are present in the note table")
     sweep_parsed = [(float(strength), float(delta), direction) for strength, delta, direction in sweep]
     m_data = [strength for strength, delta, direction in sweep_parsed if delta > 0.0 and direction == "TOWARD"]
     g_data = [delta for _strength, delta, direction in sweep_parsed if delta > 0.0 and direction == "TOWARD"]

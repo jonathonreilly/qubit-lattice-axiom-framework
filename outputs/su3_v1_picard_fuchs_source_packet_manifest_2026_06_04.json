@@ -14,7 +14,7 @@
     "extended_minimality_json": "outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json"
   },
   "summary": {
-    "pass": 52,
+    "pass": 54,
     "fail": 0
   },
   "results": [
@@ -121,7 +121,7 @@
     {
       "name": "source_untruncated:primary_all_order_runner",
       "pass": true,
-      "detail": "scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py has 30945 bytes"
+      "detail": "scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py has 32186 bytes"
     },
     {
       "name": "source_marker:primary_all_order_runner:def certificate_T1_dfiniteness_witness",
@@ -176,7 +176,7 @@
     {
       "name": "source_untruncated:extended_minimality_helper_runner",
       "pass": true,
-      "detail": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py has 30055 bytes"
+      "detail": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py has 30054 bytes"
     },
     {
       "name": "source_marker:extended_minimality_helper_runner:def matrix_for_ansatz",
@@ -211,7 +211,7 @@
     {
       "name": "cache_sha_fresh:all_order_cache",
       "pass": true,
-      "detail": "cache sha c18a7ef288f4ed668f2a4af8ff0ee671c422976b14d83de6cc24de2ecd35710f current sha c18a7ef288f4ed668f2a4af8ff0ee671c422976b14d83de6cc24de2ecd35710f"
+      "detail": "cache sha eb094f27a749820e9d4608f70fc0210350a9c6c1da76f8763f56527703e70f19 current sha eb094f27a749820e9d4608f70fc0210350a9c6c1da76f8763f56527703e70f19"
     },
     {
       "name": "cache_exit_ok:all_order_cache",
@@ -221,7 +221,7 @@
     {
       "name": "cache_summary_present:all_order_cache",
       "pass": true,
-      "detail": "SUMMARY: ALL-ORDER CERTIFICATE PASS=5 FAIL=0"
+      "detail": "SUMMARY: FINITE-WINDOW BOUNDARY PASS=5 FAIL=0"
     },
     {
       "name": "cache_runner_matches:finite_window_cache",
@@ -251,7 +251,7 @@
     {
       "name": "cache_sha_fresh:extended_minimality_cache",
       "pass": true,
-      "detail": "cache sha be9b2d9c265237827b61c68469414ed94591cc1bd475aae37e5bcd2ed62d2595 current sha be9b2d9c265237827b61c68469414ed94591cc1bd475aae37e5bcd2ed62d2595"
+      "detail": "cache sha b375cf8c63694e0fb9eb01644ccb231d97b0fb8440468e27d59cc9f0fe8039f0 current sha b375cf8c63694e0fb9eb01644ccb231d97b0fb8440468e27d59cc9f0fe8039f0"
     },
     {
       "name": "cache_exit_ok:extended_minimality_cache",
@@ -264,9 +264,19 @@
       "detail": "SUMMARY: CERTIFICATE PASS=6 FAIL=0"
     },
     {
-      "name": "all_order_json_passes",
+      "name": "all_order_json_finite_window_boundary_passes",
       "pass": true,
-      "detail": "summary.all_order_certificate_passed is true"
+      "detail": "summary.finite_window_boundary_passed is true"
+    },
+    {
+      "name": "all_order_json_all_order_not_certified",
+      "pass": true,
+      "detail": "summary.all_order_certificate_passed is false"
+    },
+    {
+      "name": "all_order_json_all_degree_minimality_not_certified",
+      "pass": true,
+      "detail": "summary.all_degree_minimality_certified is false"
     },
     {
       "name": "all_order_json_threshold",

@@ -3,7 +3,7 @@ runner: scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_0
 runner_sha256: eb094f27a749820e9d4608f70fc0210350a9c6c1da76f8763f56527703e70f19
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 43.34
+elapsed_sec: 43.14
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -21,16 +21,16 @@ This runner no longer claims to close the all-degree minimality gap:
 ------------------------------------------------------------------------------
 [T1] D-finiteness witness for J via D_0 holonomic-closure ODE:
     D_0 D-finite witness: holonomic-closure ODE annihilator of order 20 constructed and verified to annihilate the closed-form Bessel-determinant Taylor series of D_0 through degree 58. By Stanley 1980 / Lipshitz 1988, D_0 is D-finite. Closure under finite sums (Stanley 1980) and exponentially-convergent sums (Brower-Nauenberg 1981) gives D-finiteness of J(beta) = Sum_k D_k(beta).
-    constructed annihilator order = 20 (in 26.21s)
+    constructed annihilator order = 20 (in 26.07s)
 
 ------------------------------------------------------------------------------
 Building Bessel-determinant Taylor series of J(beta) to depth 200...
-  build+taylor: 6.79s
+  build+taylor: 6.76s
   a_0 = 1, a_1 = 0, a_2 = 1/36, a_3 = 1/648, a_4 = 1/2592
 
 ------------------------------------------------------------------------------
 [T2] Finite-grid annihilator-order exclusion:
-    Finite-grid rank support: ALL (r in {1,2}, d in {0..30}) excluded (62 cells, kernel=0); (r=3,d=2) kernel=1 matches L. This supports the order-3 degree-2 candidate inside the scanned grid, but does not certify all-degree minimality.  (took 8.5s)
+    Finite-grid rank support: ALL (r in {1,2}, d in {0..30}) excluded (62 cells, kernel=0); (r=3,d=2) kernel=1 matches L. This supports the order-3 degree-2 candidate inside the scanned grid, but does not certify all-degree minimality.  (took 8.4s)
 
 ------------------------------------------------------------------------------
 [T5] Deepened regression at depth 200:

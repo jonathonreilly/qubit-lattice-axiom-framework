@@ -21,7 +21,7 @@ bare_retained_allowed: false
 ## Targeted Blocker
 
 The conditional audit of
-[`STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md)
+`STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md`
 identified one load-bearing premise:
 
 ```text
@@ -33,6 +33,14 @@ epsilon(x) = (-1)^(x_1+x_2+x_3).
 This note supplies the narrow bridge for that premise. It does not prove the
 full staggered-Dirac realization gate, the physical species-label bridge, or a
 numerical value.
+
+The companion note above is referenced as the **consumer this bridge serves**,
+not as a proof input: this theorem's `epsilon(x)` uniqueness result is
+self-contained on the `Z^3` coordinate-edge graph and consumes none of that
+note's content. The reference is therefore a plain (non-link) citation, so the
+genuine one-directional dependency (companion → this bridge, which retires the
+companion's free `H_staggered_chirality` premise) does not form a spurious
+audit-graph 2-cycle.
 
 ## Theorem
 

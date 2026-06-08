@@ -1,0 +1,25 @@
+loop_slug: fifth-family-radial-orientation-wire-20260608
+branch: physics-loop/fifth-family-radial-orientation-wire-20260608
+base: origin/main
+mode: physics-loop
+status: ready_for_review
+target_claim_id: fifth_family_radial_boundary_note
+target_status: exact-support
+active_route: make the independent symmetry/orientation certificate load-bearing in the primary radial boundary runner
+hard_residual_attacked: "conditional audit asked for the independent orientation certificate source/cache in the restricted packet"
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md
+  - scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py
+  - logs/runner-cache/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.txt
+  - .claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/
+open_imports:
+  - The result remains bounded to the drift 0.20, seed 0 radial-shell boundary row.
+  - No wider radial basin, family theorem, or corrected positive-orientation variant is claimed.
+review_disposition: local_pre_review_pass_external_review_requested
+audit_edits: none
+runner_status:
+  primary: "ASSERTIONS: PASS"
+  orientation_dependency: "SCORECARD PASS=9 FAIL=0"
+next_exact_action: "Submit PR to Codex reviewer/re-audit; do not edit docs/audit in this branch."

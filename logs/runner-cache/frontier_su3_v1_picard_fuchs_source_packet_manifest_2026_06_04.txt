@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.py
-runner_sha256: 6c980f5580fb3baf18ca183d495d9c22b4f480800681858c3c5b94a65ca781c1
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.04
-status: ok
------ stdout -----
 ==============================================================================
 V=1 SU(3) Wilson Picard-Fuchs: SOURCE PACKET MANIFEST
 ==============================================================================
@@ -29,7 +21,7 @@ V=1 SU(3) Wilson Picard-Fuchs: SOURCE PACKET MANIFEST
 [PASS] note_links_manifest_path:finite_window_json: outputs/su3_v1_picard_fuchs_minimality_2026_05_06.json is linked or named in docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md
 [PASS] manifest_path_exists:extended_minimality_json: outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json
 [PASS] note_links_manifest_path:extended_minimality_json: outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json is linked or named in docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md
-[PASS] source_untruncated:primary_all_order_runner: scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py has 30945 bytes
+[PASS] source_untruncated:primary_all_order_runner: scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py has 32186 bytes
 [PASS] source_marker:primary_all_order_runner:def certificate_T1_dfiniteness_witness: def certificate_T1_dfiniteness_witness present in scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
 [PASS] source_marker:primary_all_order_runner:def certificate_T2_algorithmic_rank_bound: def certificate_T2_algorithmic_rank_bound present in scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
 [PASS] source_marker:primary_all_order_runner:def certificate_T3_bostan_schost_threshold: def certificate_T3_bostan_schost_threshold present in scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
@@ -40,31 +32,30 @@ V=1 SU(3) Wilson Picard-Fuchs: SOURCE PACKET MANIFEST
 [PASS] source_marker:finite_window_helper_runner:def certificate_B: def certificate_B present in scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py
 [PASS] source_marker:finite_window_helper_runner:def certificate_C: def certificate_C present in scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py
 [PASS] source_marker:finite_window_helper_runner:def certificate_E: def certificate_E present in scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py
-[PASS] source_untruncated:extended_minimality_helper_runner: scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py has 30055 bytes
+[PASS] source_untruncated:extended_minimality_helper_runner: scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py has 30054 bytes
 [PASS] source_marker:extended_minimality_helper_runner:def matrix_for_ansatz: def matrix_for_ansatz present in scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py
 [PASS] source_marker:extended_minimality_helper_runner:def _rank_via_numeric: def _rank_via_numeric present in scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py
 [PASS] source_marker:extended_minimality_helper_runner:def certificate_B_extended: def certificate_B_extended present in scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py
 [PASS] source_marker:extended_minimality_helper_runner:def certificate_E_extended: def certificate_E_extended present in scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py
 [PASS] source_marker:extended_minimality_helper_runner:def certificate_S: def certificate_S present in scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py
 [PASS] cache_runner_matches:all_order_cache: scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py == scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
-[PASS] cache_sha_fresh:all_order_cache: cache sha c18a7ef288f4ed668f2a4af8ff0ee671c422976b14d83de6cc24de2ecd35710f current sha c18a7ef288f4ed668f2a4af8ff0ee671c422976b14d83de6cc24de2ecd35710f
+[PASS] cache_sha_fresh:all_order_cache: cache sha eb094f27a749820e9d4608f70fc0210350a9c6c1da76f8763f56527703e70f19 current sha eb094f27a749820e9d4608f70fc0210350a9c6c1da76f8763f56527703e70f19
 [PASS] cache_exit_ok:all_order_cache: exit_code=0 status=ok
-[PASS] cache_summary_present:all_order_cache: SUMMARY: ALL-ORDER CERTIFICATE PASS=5 FAIL=0
+[PASS] cache_summary_present:all_order_cache: SUMMARY: FINITE-WINDOW BOUNDARY PASS=5 FAIL=0
 [PASS] cache_runner_matches:finite_window_cache: scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py == scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py
 [PASS] cache_sha_fresh:finite_window_cache: cache sha 48ac95fca09d98a968eefee0465fb117ae4f76e88ad4aa3b4fe76c03ed64155c current sha 48ac95fca09d98a968eefee0465fb117ae4f76e88ad4aa3b4fe76c03ed64155c
 [PASS] cache_exit_ok:finite_window_cache: exit_code=0 status=ok
 [PASS] cache_summary_present:finite_window_cache: SUMMARY: CERTIFICATE PASS=5 FAIL=0
 [PASS] cache_runner_matches:extended_minimality_cache: scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py == scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py
-[PASS] cache_sha_fresh:extended_minimality_cache: cache sha be9b2d9c265237827b61c68469414ed94591cc1bd475aae37e5bcd2ed62d2595 current sha be9b2d9c265237827b61c68469414ed94591cc1bd475aae37e5bcd2ed62d2595
+[PASS] cache_sha_fresh:extended_minimality_cache: cache sha b375cf8c63694e0fb9eb01644ccb231d97b0fb8440468e27d59cc9f0fe8039f0 current sha b375cf8c63694e0fb9eb01644ccb231d97b0fb8440468e27d59cc9f0fe8039f0
 [PASS] cache_exit_ok:extended_minimality_cache: exit_code=0 status=ok
 [PASS] cache_summary_present:extended_minimality_cache: SUMMARY: CERTIFICATE PASS=6 FAIL=0
-[PASS] all_order_json_passes: summary.all_order_certificate_passed is true
+[PASS] all_order_json_finite_window_boundary_passes: summary.finite_window_boundary_passed is true
+[PASS] all_order_json_all_order_not_certified: summary.all_order_certificate_passed is false
+[PASS] all_order_json_all_degree_minimality_not_certified: summary.all_degree_minimality_certified is false
 [PASS] all_order_json_threshold: T3 Bostan-Salvy-Schost threshold is 17
 [PASS] note_has_2026_06_04_source_packet_section: source packet exposure section present
 ==============================================================================
-SUMMARY: SOURCE PACKET MANIFEST PASS=52 FAIL=0
+SUMMARY: SOURCE PACKET MANIFEST PASS=54 FAIL=0
 ==============================================================================
 Output written: outputs/su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.json
-
------ stderr -----
-

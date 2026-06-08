@@ -1,9 +1,10 @@
 # Free Dirac Poincare Generators: Direct Integrability Repair
 
-**Date:** 2026-05-30; repaired 2026-06-06
+**Date:** 2026-05-30; repaired 2026-06-06; bridge wired 2026-06-08
 **Claim type:** bounded_theorem
 **Actual current-surface status:** bounded-support/direct-integrability source
-repair; independent audit owns any effective status movement.
+repair with explicit Wigner strong-continuity bridge wired into the restricted
+packet; independent audit owns any effective status movement.
 **Primary runner:**
 `scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py`
 (SCORECARD PASS=7 FAIL=0).
@@ -53,9 +54,27 @@ The concrete companion source packet is:
 - cached output:
   [`logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt`](../logs/runner-cache/free_dirac_poincare_representation_2026-05-30.txt).
 
+The functional-analytic bridge requested by the later audit is now an explicit
+dependency of this parent packet:
+
+- bridge note:
+  [`FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md`](FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md);
+- bridge runner:
+  [`scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py`](../scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py);
+- bridge cached output:
+  [`logs/runner-cache/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.txt`](../logs/runner-cache/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.txt)
+  (`SCORECARD PASS=48 FAIL=0`).
+
+This bridge supplies the restricted-packet proof that the displayed
+mass-shell/Wigner action is a strongly continuous unitary representation and
+that Stone's theorem supplies the one-parameter self-adjoint generators. It
+also verifies the companion representation cache as SHA-fresh before running
+its own continuity, Wigner-carrier, semidirect-product, and firewall checks.
+
 The paired runner verifies these source anchors before running the direct
 integrability checks. This source repair exposes the dependency edge for
-independent audit; it does not assert an audit status for the companion row.
+independent audit; it does not assert an audit status for the companion or
+bridge rows.
 
 This repair does not derive the free Dirac carrier from baseline axioms, does
 not prove spin-statistics, and does not claim an interacting theory result.
@@ -90,10 +109,11 @@ The integration step is not Nelson's theorem. It is the direct unitary action:
 ```
 
 The mass-shell measure is invariant, the translation factor has unit modulus,
-and the Wigner carrier is unitary. The companion packet supplies the smooth
-carrier/cocycle checks; this note records the functional-analytic consequence:
-the displayed action is a strongly continuous unitary representation, and
-Stone's theorem supplies the self-adjoint one-parameter generators.
+and the Wigner carrier is unitary. The companion packet supplies the mass-shell
+and carrier/cocycle checks, while the 2026-06-07 Wigner bridge supplies the
+functional-analytic consequence: the displayed action is a strongly continuous
+unitary representation, and Stone's theorem supplies the self-adjoint
+one-parameter generators.
 
 ## What Is Proved Here
 
@@ -120,6 +140,9 @@ Stone's theorem supplies the self-adjoint one-parameter generators.
 
 The paired runner checks:
 
+- `S1`-`S10`: the parent packet cites the companion representation note/cache
+  and the Wigner strong-continuity bridge note/runner/cache, and both caches are
+  present, passing, and SHA-fresh.
 - `D1`: `K_orb=-i d/dzeta` is Hermitian on the full rapidity line.
 - `D2`: the exact identity `E d/dp = d/dzeta` on rapidity test functions.
 - `D3`: the boost flow is a strongly continuous unitary one-parameter group.

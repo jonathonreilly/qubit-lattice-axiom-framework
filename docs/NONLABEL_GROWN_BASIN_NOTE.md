@@ -1,17 +1,18 @@
 # Non-Label Grown Basin Note
 
-**Date:** 2026-04-06
+**Date:** 2026-04-06; live recompute artifact wired 2026-06-08
 **Status:** bounded positive basin around the grown-row signed-source transfer
 
 ## Artifact chain
 
 - [`scripts/NONLABEL_GROWN_BASIN_TARGETED.py`](../scripts/NONLABEL_GROWN_BASIN_TARGETED.py)
-- [`logs/2026-04-06-nonlabel-grown-basin-targeted.txt`](../logs/runner-cache/NONLABEL_GROWN_BASIN_TARGETED.txt)
+- [`logs/runner-cache/NONLABEL_GROWN_BASIN_TARGETED.txt`](../logs/runner-cache/NONLABEL_GROWN_BASIN_TARGETED.txt)
 
 Runner behavior for audit replay:
 
 - default: verify the frozen log row grid, zero/neutral gates, signed response,
-  charge exponent, and `3/3` safe-read count
+  charge exponent, `3/3` safe-read count, and the SHA-fresh live recompute
+  artifact/cache listed below
 - `--recompute`: run the original live targeted replay
 - [`scripts/nonlabel_grown_basin_recompute_audit_2026_06_08.py`](../scripts/nonlabel_grown_basin_recompute_audit_2026_06_08.py):
   SHA-pinned live recompute artifact for the same three restore rows, with
@@ -33,15 +34,20 @@ This note stays intentionally narrow:
 - sign orientation
 - weak charge-scaling estimate
 
-## Frozen Result
+## Live Recompute Result
 
 Seed `0`, geometry-sector candidate:
 
 | restore | zero source | single `+1` | single `-1` | neutral `+1/-1` | double `+2` | charge exponent |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `0.60` | `+0.000000e+00` | `-3.392803e-05` | `+3.391622e-05` | `+0.000000e+00` | `-6.787447e-05` | `1.000000` |
+| `0.60` | `+0.000000e+00` | `-3.392850e-05` | `+3.391821e-05` | `+0.000000e+00` | `-6.786729e-05` | `1.000219` |
 | `0.70` | `+0.000000e+00` | `-3.534838e-05` | `+3.533743e-05` | `+0.000000e+00` | `-7.070770e-05` | `1.000223` |
-| `0.80` | `+0.000000e+00` | `-3.620420e-05` | `+3.619258e-05` | `+0.000000e+00` | `-7.241011e-05` | `1.000000` |
+| `0.80` | `+0.000000e+00` | `-3.620003e-05` | `+3.618856e-05` | `+0.000000e+00` | `-7.241152e-05` | `1.000228` |
+
+These are the exact values printed by the SHA-pinned live recompute cache,
+rounded here to six significant figures for the amplitudes and six decimals
+for the charge exponent. The older frozen replay remains a row-gate regression
+check, but it is not the only completed evidence packet for this row.
 
 ## Safe Read
 
@@ -65,6 +71,10 @@ of the three restore rows or an independent derivation of those row values.
 The paired recompute artifact reruns the live grown geometry-sector
 measurement, then re-checks the zero-source gate, neutral-pair gate, sign
 orientation, double-charge sign, and charge-exponent tolerance.
+The default runner now also verifies that this recompute cache is present,
+SHA-fresh against `scripts/nonlabel_grown_basin_recompute_audit_2026_06_08.py`,
+exits zero, reports `SCORECARD PASS=3 FAIL=0`, and contains the same three
+passing restore rows.
 
 This repair does not widen the theorem beyond the three stated restore rows
 and does not promote the basin to an unbounded family theorem.

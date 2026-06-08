@@ -53,7 +53,7 @@ REQUIRED_SOURCE_MARKERS = {
 }
 
 EXPECTED_CACHE_SUMMARIES = {
-    "all_order_cache": "SUMMARY: ALL-ORDER CERTIFICATE PASS=5 FAIL=0",
+    "all_order_cache": "SUMMARY: FINITE-WINDOW BOUNDARY PASS=5 FAIL=0",
     "finite_window_cache": "SUMMARY: CERTIFICATE PASS=5 FAIL=0",
     "extended_minimality_cache": "SUMMARY: CERTIFICATE PASS=6 FAIL=0",
 }
@@ -162,9 +162,21 @@ def main() -> int:
 
     all_order_json = json.loads(repo_path(MANIFEST["all_order_json"]).read_text())
     check(
-        all_order_json["summary"]["all_order_certificate_passed"] is True,
-        "all_order_json_passes",
-        "summary.all_order_certificate_passed is true",
+        all_order_json["summary"]["finite_window_boundary_passed"] is True,
+        "all_order_json_finite_window_boundary_passes",
+        "summary.finite_window_boundary_passed is true",
+        results,
+    )
+    check(
+        all_order_json["summary"]["all_order_certificate_passed"] is False,
+        "all_order_json_all_order_not_certified",
+        "summary.all_order_certificate_passed is false",
+        results,
+    )
+    check(
+        all_order_json["summary"]["all_degree_minimality_certified"] is False,
+        "all_order_json_all_degree_minimality_not_certified",
+        "summary.all_degree_minimality_certified is false",
         results,
     )
     check(

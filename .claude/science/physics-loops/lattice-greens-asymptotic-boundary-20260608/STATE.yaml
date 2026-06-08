@@ -1,0 +1,19 @@
+loop_slug: lattice-greens-asymptotic-boundary-20260608
+mode: campaign_block
+branch: physics-loop/lattice-greens-asymptotic-boundary-20260608
+base: origin/main
+base_commit: 135c51c2d
+date: 2026-06-08
+target_claim_id: lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07
+target_status: bounded-support
+artifact_role: demotion
+active_route: narrow heat-kernel route from P1 closure to asymptotic support boundary
+hard_residual: uniform diffusive Bessel/local-CLT tail-domination theorem
+files_touched:
+  - docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py
+  - logs/runner-cache/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.txt
+checks:
+  - runner_cache frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent: TOTAL PASS=12 FAIL=0
+pr_status: pending
+next_exact_action: create PR for reviewer and independent re-audit; do not edit docs/audit

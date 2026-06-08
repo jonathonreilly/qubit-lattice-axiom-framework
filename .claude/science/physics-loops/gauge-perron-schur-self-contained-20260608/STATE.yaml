@@ -1,0 +1,33 @@
+loop_slug: gauge-perron-schur-self-contained-20260608
+target_claim_id: gauge_vacuum_plaquette_tensor_transfer_perron_solve_note
+mode: science_fix
+base_ref: origin/main
+branch: physics-loop/gauge-perron-schur-self-contained-20260608
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_status_change: true
+proposal_allowed: false
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
+blocker_attacked: >-
+  Conditional audit said the note imported the Schur L_s=2 calculation and
+  P=0.4291 without a supplied retained dependency, while the cited SU3 note
+  treated that limb as open-gate/unaudited.
+repair_summary: >-
+  The primary gauge runner now reconstructs the finite all-forward L_s=2 PBC
+  cube graph, computes the raw-coefficient Schur rho formula internally, and
+  verifies P_Schur,L2(6)=0.429104996947. The source note now treats sibling
+  SU3 material as parallel context, not as the load-bearing source of the
+  Schur value.
+checks:
+  - python3 -m py_compile scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
+  - python3 scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
+check_result: "PASS: SUMMARY THEOREM PASS=9 SUPPORT=4 FAIL=0"
+review_loop_disposition: pass
+next_exact_action: >-
+  Reviewer should inspect the self-contained Schur subcheck and, if accepted,
+  queue the row for re-audit. Do not apply audit verdicts in this PR.

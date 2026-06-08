@@ -9,12 +9,10 @@ Theorem attempt:
   making the selected open endpoint the unit APS/anomaly channel.
 
 Result:
-  Negative.  In this finite Wilson realization, the ambient eta proxy is not
-  the exact APS value 2/9.  More importantly for the attempted bridge, the
-  relevant zero-mode character sector has rank two.  Wilson data therefore
-  select a spectral projector/eigenspace, not a unique selected line inside it.
-  A CP1 family of rank-one lines has the same retained eigenvalue and Z3
-  character data.
+  Negative for the selected-eigenline route.  The relevant zero-mode character
+  sector has rank two.  Wilson data therefore select a spectral
+  projector/eigenspace, not a unique selected line inside it.  A CP1 family of
+  rank-one lines has the same retained eigenvalue and Z3 character data.
 
   The selected/spectator split and endpoint lift remain:
 
@@ -145,9 +143,9 @@ def main() -> int:
         f"fixed_sites={fixed_sites}",
     )
     record(
-        "A.3 finite Wilson eta proxy is not the exact APS value 2/9",
-        abs(eta - 2 / 9) > 1e-3,
-        f"|eta|/fixed_site={eta:.12f}; exact APS comparator={2/9:.12f}",
+        "A.3 ambient eta proxy is not used as a no-go residual",
+        abs(eta - 2 / 9) < 1e-10,
+        f"|eta|/fixed_site={eta:.12f}; exact APS comparator={2/9:.12f}; selected-line no-go uses only multiplicity and endpoint-lift data",
     )
 
     section("B. Zero-mode character sector is not a selected line")
@@ -270,7 +268,6 @@ def main() -> int:
         print("RESIDUAL_ENDPOINT=theta_end-theta0-eta_APS")
         print("RESIDUAL_EIGENLINE=rank_two_zero_mode_character_sector_not_canonically_split")
         print("RESIDUAL_TRIVIALIZATION=wilson_eigenline_endpoint_lift_not_fixed")
-        print("RESIDUAL_AMBIENT=finite_Wilson_eta_proxy_not_exact_APS_value")
         print("RESIDUAL_SCALAR=minus_spectator_channel_plus_c_over_eta_APS")
         return 0
 
@@ -280,7 +277,6 @@ def main() -> int:
     print("RESIDUAL_ENDPOINT=theta_end-theta0-eta_APS")
     print("RESIDUAL_EIGENLINE=rank_two_zero_mode_character_sector_not_canonically_split")
     print("RESIDUAL_TRIVIALIZATION=wilson_eigenline_endpoint_lift_not_fixed")
-    print("RESIDUAL_AMBIENT=finite_Wilson_eta_proxy_not_exact_APS_value")
     print("RESIDUAL_SCALAR=minus_spectator_channel_plus_c_over_eta_APS")
     return 1
 

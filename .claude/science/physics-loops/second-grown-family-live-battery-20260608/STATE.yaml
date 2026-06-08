@@ -1,0 +1,19 @@
+loop_slug: second-grown-family-live-battery-20260608
+date: 2026-06-08
+current_goal: Restore a live bounded-support source packet for the second_grown_family_note missing-runner blocker.
+target_status: bounded-support
+runtime_mode: focused repair block
+cycle_count: 1
+active_route: source-facing live battery wrapper over current executable evidence slices
+hard_residual: The old broad second-family positive table remains unratified; this block only repairs the missing current battery surface.
+files_touched:
+  - docs/SECOND_GROWN_FAMILY_NOTE.md
+  - .claude/science/physics-loops/second-grown-family-live-battery-20260608/
+open_imports:
+  - Independent audit must decide whether the current sign/distance/complex packet changes the effective ledger status.
+  - A theorem selecting the second grown family from base dynamics is still absent.
+trace_gate_classification: direct_blocker_closure
+pr_status: pending
+next_exact_action: Open review PR after verification passes.
+stop_condition: PR opened and no audit files edited.
+

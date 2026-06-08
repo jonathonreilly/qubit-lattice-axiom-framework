@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py
+runner_sha256: 984e90af3497e46d5fb2299b3ade2f529938e3ab32b8ceaa8c0d2ef791ab9b74
+timeout_sec: 420
+exit_code: 0
+elapsed_sec: 1.74
+status: ok
+----- stdout -----
+/private/tmp/gr-cubic-wt/scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py:11: SyntaxWarning: invalid escape sequence '\_'
+  \____seagull (diamagnetic)_______/      \__triangle (paramagnetic)__/
+PASS T1 paramagnetic triangle <T T T> VANISHES (max over channels+momenta = 2.2e-18) -- 2-comp Cl(3) feature
+PASS T2 full cubic vertex d^3 log|det| NONZERO -> graviton SELF-INTERACTS (seagull): <yz,yz,trace>=0.3215, <trace^3>=0.4069
+PASS T3 STRUCTURE: pure-TT^3 VANISHES (<yz^3>=-4.2e-11, <(yy-zz)^3>=-8.3e-11) but TT^2-conformal NONZERO (<(yy-zz)^2,trace>=0.1328)
+PASS T4 ROBUST: <yz,yz,trace> eps-independent (rel dev 8.9e-04) and Nyz-independent (rel dev 6.3e-04) -- genuine vertex
+
+The W-native CUBIC graviton vertex is NONZERO -- the induced graviton self-interacts at cubic
+order (the nonlinear Einstein-Hilbert feature). The paramagnetic triangle <T T T> vanishes
+(single 2-comp Cl(3) fermion), so the entire coupling is the DIAMAGNETIC SEAGULL, mediated by
+the CONFORMAL (trace) mode: graviton-graviton-conformal and conformal self-coupling are nonzero,
+while pure-TT^3 vanishes. BOUNDED: pure-TT^3 self-coupling needs the (vanishing) triangle -- full
+EH TT^3 would need richer fermion content (staggered tastes); magnitude/cubic-Ward not matched here.
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

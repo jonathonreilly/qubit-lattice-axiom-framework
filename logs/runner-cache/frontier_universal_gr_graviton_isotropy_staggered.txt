@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_graviton_isotropy_staggered.py
+runner_sha256: 8a07c15fcc909ec058d3d1f155e329013d01b6ef61c281f4848cec003fa44429
+timeout_sec: 420
+exit_code: 0
+elapsed_sec: 18.59
+status: ok
+----- stdout -----
 PASS T1 continuum Dirac graviton EXACTLY isotropic: Zener A=0.991 (~1; anisotropy is a lattice effect)
 PASS T2 naive Dirac graviton STRONGLY anisotropic: Zener A=2.099 (>1.7, O(1) wrong-fermion artifact)
 PASS T2b naive anisotropy is LEADING (does not vanish as k0->0): A=2.099@k0=0.52 vs 2.093@k0=0.39 (stable)
@@ -13,3 +21,6 @@ is exactly isotropic, so the residual is a small lattice (l=4 cubic-harmonic / v
 effect, consistent with retained matter-sector SO(4) and the known small cubic lattice-gravity
 anisotropy. BOUNDED on the ~3%% residual (vertex-scheme-dependent / leading lattice l=4).
 TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

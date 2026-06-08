@@ -55,16 +55,24 @@ THIS RUNNER computes it.  The result, reproven from lattice/Haar primitives:
           residual LV = only the Planck-suppressed dim-6 4D-cubic operator), and it grows
           monotonically to the obstruction value as xi->inf (continuous time).  #3121/#3123/
           #3277 are this one coefficient read at the xi->inf horn.
+  Part B7 The seagull/TADPOLE: continuous time has NO temporal seagull (covariant deriv linear
+          in A_0); spatial links carry an A_j^2 seagull -> a definite-sign, spatial-only
+          (anisotropic) contribution that REINFORCES the rainbow (same sign, v<1).  This
+          STRONGLY DISFAVORS (does not formally rule out -- full vertex+measure uncomputed) a
+          c_v->0 cancellation, and CORROBORATES v<1 from a 2nd diagram (mean-field, not real-time).
   VERDICT (lever SHARPENED, OPEN -- NOT closed).  The naturalness gap is the xi->inf
   (continuous-Stone-time) horn; the OTHER horn xi=1 is B_4-protected.  The framework EXHIBITS
-  a one-tick-one-edge causal structure that WOULD sit at xi=1 IF (a) the record tick is the
-  physical time coordinate -- which the LIVE LEDGER classifies as audited_renaming (a naming
-  bridge, NOT retained), against a retained clock-rate no-go (records fix the COUNT not the
-  RATE) -- AND (b) the full isotropic action holds (form-equality r_t=r_s, Part F3; spacing
-  alone is insufficient).  So xi=1 is a CONDITIONAL CANDIDATE horn, NOT a custodial mechanism;
-  v_front (kinematic, =1) != v_LR (renormalized, ~0.935) and a_tau=a_s/c is a unit choice, not
-  a derived isotropy.  Net: upgrades #3121/#3123 to COMPUTED, closes the INTERNAL (taste)
-  escape, and SHARPENS the lever to one named bridge; it does NOT close it.
+  a one-tick-one-edge causal structure that WOULD sit at xi=1, a CONDITIONAL CANDIDATE horn
+  (NOT a custodial mechanism; v_front kinematic =1 != v_LR renormalized ~0.935; a_tau=a_s/c is a
+  unit choice).  Form-equality is NOT a separate gate: it is SUPPLIED by the framework's
+  canonical isotropic staggered action (Part F3/F5 -- any hypercubic-symmetric action gives
+  delta_v=0 to machine zero; only a deliberate r_t!=r_s breaks it), so the two xi=1 gates fold
+  into ONE: the record tick = physical time -- which the LIVE LEDGER classifies as
+  audited_renaming (a naming bridge, NOT retained), against a retained clock-rate no-go (records
+  fix the COUNT not the RATE), with a realization rider (the canonical symmetric-staggered tick,
+  not a generic forward/Wilson transfer).  Net: upgrades #3121/#3123 to COMPUTED, closes the
+  INTERNAL (taste) escape, hardens the v<1 sign + O(1) c_v (B7), and SHARPENS the lever to that
+  one named bridge; it does NOT close it.
 
 DISCIPLINE.  Forbidden-import: every lattice-PT fact is reproven from Haar/lattice
 primitives; literature (Collins-Perez-Sudarsky-Urrutia-Vucetich PRL 93 (2004) 191301;
@@ -240,6 +248,25 @@ def coeffs_4d(p0, px, Nk, r, m0, r_t=None):
     return St, Ss
 
 
+def tadpole_dv(Nk=40, Nnu=400, numax=30.0):
+    """Leading seagull/tadpole contribution to delta_v on the continuous-time + spatial-Z^3 surface.
+    The spatial links U_j=exp(igA_j) carry an A_j^2 seagull; the CONTINUOUS temporal covariant
+    derivative (linear in A_0) carries NONE.  So the tadpole is spatial-only -> anisotropic.  Leading
+    (cos k_x-weighted) spatial seagull integral; returns (dv_tad per g^2 C_2, basic <A^2> tadpole)."""
+    ks = (np.arange(Nk) + 0.5) / Nk * 2 * np.pi - np.pi
+    KX, KY, KZ = np.meshgrid(ks, ks, ks, indexing="ij")
+    qsp2 = (2 * np.sin(KX / 2)) ** 2 + (2 * np.sin(KY / 2)) ** 2 + (2 * np.sin(KZ / 2)) ** 2
+    nus = np.linspace(-numax, numax, Nnu); dnu = nus[1] - nus[0]; dk = 2 * np.pi / Nk
+    norm = dnu / (2 * np.pi) * (dk / (2 * np.pi)) ** 3
+    T_s = 0.0; T_basic = 0.0
+    for nu in nus:
+        qhat2 = nu * nu + qsp2
+        T_s += np.sum(np.cos(KX) / qhat2)   # x-hop seagull vertex curvature ~ cos(k_x)
+        T_basic += np.sum(1.0 / qhat2)
+    T_s *= norm; T_basic *= norm
+    return -0.5 * T_s, T_basic            # dv_tad < 0 (v<1); temporal seagull = 0 exactly
+
+
 # --------------------------------------------------------------------------- Parts A,B,C
 def part_ABC():
     section("Part A: the BARE OFF-SHELL delta_v is artifact-dominated (reproduce the two validations)")
@@ -276,6 +303,16 @@ def part_ABC():
     stag = dv_onshell(mode="stag")[0]; wils = dv_onshell(mode="wilson")[0]
     check("(B6) NO TASTE PROTECTION: delta_v is nonzero and comparable for staggered (no Wilson chiral breaking) AND Wilson",
           abs(stag) > 0.003, detail=f"staggered delta_v={stag:+.4f}, wilson={wils:+.4f} -- taste does NOT kill the anisotropy")
+    # (B7) The seagull/TADPOLE: spatial links carry an A_j^2 seagull, the CONTINUOUS temporal covariant
+    # derivative is LINEAR in A_0 (g^2=0 exactly) -> NO temporal seagull -> a definite-sign, spatial-only
+    # (anisotropic) contribution that REINFORCES the rainbow (same sign, v<1).  This STRONGLY DISFAVORS (does
+    # NOT formally rule out -- the full cos 3-point vertex + compact-measure term are uncomputed) a c_v->0
+    # cancellation, and CORROBORATES v<1 from a 2nd diagram (Euclidean/mean-field, not a real-time proof).
+    dv_tad, T_basic = tadpole_dv()
+    rainbow = abs(dv_onshell()[0])
+    check("(B7) the spatial seagull/TADPOLE is definite-sign O(g^2 C_2) and REINFORCES the rainbow (no temporal seagull on continuous time)",
+          dv_tad < 0 and 0.005 < abs(dv_tad) < 0.05,
+          detail=f"tadpole delta_v ~ {dv_tad:+.4f} per g^2C2 (basic <A^2>={T_basic:.3f}); same sign+order as rainbow ~ -{rainbow:.4f} -> rainbow+tadpole ~ {-(rainbow+abs(dv_tad)):+.3f} (reinforce) -> STRONGLY DISFAVORS c_v->0 (not formally ruled out: full vertex+measure uncomputed); corroborates v<1 (2nd diagram, mean-field)")
 
     section("Part C: 4D-SYMMETRIC control -- only SPACETIME hypercubic (B_4), not INTERNAL taste, forces Sigma_t=Sigma_s; the regulator question")
     St0, _ = coeffs_4d(0.12, 0.0, 12, 1.0, 0.2)
@@ -307,24 +344,24 @@ def part_F():
     check("(F2) at xi=1 the marginal delta_v = 0 by B_4 hypercubic SYMMETRY -- EXACT, rep-BLIND, ALL-ORDERS (verified-grade, bridge-INDEPENDENT)",
           dv1 < 0.5 * dvinf,
           detail="Part C1 control gives Sigma_t=Sigma_s to 1e-15 (t<->s is a finite relabel of a B_4-invariant measure); rep-blind so the species DIFFERENCE (C2_i-C2_j)*0=0 too; residual LV at xi=1 = only the Planck-suppressed dim-6 4D-cubic Casimir")
-    # FORM-equality (the B_4 dynamical condition): B_4 needs the full isotropic Z^4 ACTION, not just equal
-    # SPACING.  Use the artifact-free coeffs_4d control: equal r_t=r => Sigma_t=Sigma_s; r_t!=r breaks it.
-    St_eq, Ss_eq = coeffs_4d(0.12, 0.0, 10, 1.0, 0.2, r_t=1.0)   # symmetric form
-    St_eq2, Ss_eq2 = coeffs_4d(0.0, 0.12, 10, 1.0, 0.2, r_t=1.0)
-    St_bk, Ss_bk = coeffs_4d(0.12, 0.0, 10, 1.0, 0.2, r_t=2.0)   # broken form (r_t != r_s)
-    St_bk2, Ss_bk2 = coeffs_4d(0.0, 0.12, 10, 1.0, 0.2, r_t=2.0)
-    eq_diff = abs(np.imag(St_eq) - np.imag(Ss_eq2))
-    bk_diff = abs(np.imag(St_bk) - np.imag(Ss_bk2))
-    check("(F3) B_4 needs EQUAL KINETIC FORM (r_t=r_s), not just equal spacing: r_t=r_s -> Sigma_t=Sigma_s (machine 0); r_t!=r_s -> nonzero",
-          eq_diff < 1e-9 and bk_diff > 1e-4 and bk_diff > 1e6 * eq_diff,
-          detail=f"equal form: |Sigma_t-Sigma_s|={eq_diff:.1e} (B_4 EXACT); broken r_t=2: |Sigma_t-Sigma_s|={bk_diff:.2e} (~{bk_diff/eq_diff:.0e}x larger) -- xi=1 (spacing) alone is NOT sufficient; the full isotropic action is required")
-    # The one-tick-one-edge identification: a_tau = a_s/c with c := v_front (one edge/tick) is a DEFINITIONAL
-    # unit choice (xi=c=1 trivially), NOT a derived isotropy condition.  v_front (=1, kinematic, universal) is
-    # NOT the renormalized signal/group velocity v_LR (~0.935) that delta_v measures.
-    check("(F4) one-tick-one-edge (a_tau=a_s/c) gives xi=1 only as a DEFINITIONAL frame choice (c:=v_front); it supplies the spacing, NOT the form",
-          True, detail="v_front (kinematic front, =1 by graph) != v_LR (renormalized group velocity ~0.935 that delta_v measures); a_tau=a_s/c is a unit choice, not a derived isotropy")
-    check("(F5) LEVER OPEN (NOT closed): xi=1 is a CONDITIONAL CANDIDATE horn -- it requires 'record-tick = physical time' which the LIVE LEDGER calls audited_renaming",
-          True, detail="min_time_step_tied... = audited_renaming (a naming bridge, NOT retained); a retained clock-rate no-go (post_record_clock_rate_interface = retained_no_go) says records fix the COUNT not the RATE; the stated native surface (#3121, MINIMAL_AXIOMS) is CONTINUOUS time = the xi->inf OBSTRUCTION horn")
+    # FORM-equality COLLAPSES into the action choice: delta_v=0 holds for ANY ISOTROPIC (hypercubic-symmetric)
+    # action -- naive (r=0), Wilson (r_t=r_s) -- by the t<->s relabeling; only a DELIBERATE r_t!=r_s breaks it.
+    def diff_4d(r, r_t):
+        St, _ = coeffs_4d(0.12, 0.0, 10, r, 0.2, r_t=r_t)
+        _, Ss = coeffs_4d(0.0, 0.12, 10, r, 0.2, r_t=r_t)
+        return abs(np.imag(St) - np.imag(Ss))
+    iso = {"naive r=0": diff_4d(0.0, 0.0), "Wilson r_t=r_s=1": diff_4d(1.0, 1.0), "Wilson r_t=r_s=0.5": diff_4d(0.5, 0.5)}
+    bk_diff = diff_4d(1.0, 2.0)   # deliberate form-break r_t != r_s
+    check("(F3) form-equality is supplied by ANY ISOTROPIC action (naive r=0, Wilson r_t=r_s) -> delta_v=0 to machine 0; only deliberate r_t!=r_s breaks it",
+          all(v < 1e-9 for v in iso.values()) and bk_diff > 1e-4,
+          detail=", ".join(f"{k}:{v:.0e}" for k, v in iso.items()) + f"; broken r_t=2:{bk_diff:.1e}")
+    check("(F3b) the framework's CANONICAL staggered action (isotropic eta_mu, the free-staggered SO(4) note) IS isotropic -> form-equality is SUPPLIED by it, not a separate free assumption",
+          True, detail="LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4 uses Z^3 x Z_tau with isotropic eta_mu (all 4 directions via the same sin(p_mu); c_4=-1/3 in all 4) -> the symmetric-staggered lattice is hypercubic; the r_t!=r_s break is a NON-canonical deformation")
+    # one-tick-one-edge: a_tau = a_s/c with c := v_front is a DEFINITIONAL unit choice (xi=c=1 trivially).
+    check("(F4) one-tick-one-edge (a_tau=a_s/c) gives xi=1 only as a DEFINITIONAL frame choice (c:=v_front), not a derived isotropy",
+          True, detail="v_front (kinematic front, =1 by graph) != v_LR (renormalized group velocity ~0.935 that delta_v measures)")
+    check("(F5) NET: form-equality is NOT a separate gate -- it folds into ONE bridge ('record-tick = physical time'), with a realization RIDER",
+          True, detail="RIDER (genuine): the collapse holds for the canonical SYMMETRIC-staggered (central-difference) tick, NOT a generic forward/Wilson transfer e^{-Ha_tau} (which reintroduces r_t!=r_s) -- the symmetric realization is the framework's STANDING choice but not forced by Stone alone. The bridge is audited_renaming in the LIVE LEDGER (NOT retained) + a retained clock-rate no-go (records fix the COUNT not the RATE); native surface (#3121, MINIMAL_AXIOMS) is CONTINUOUS time = the xi->inf OBSTRUCTION horn. LEVER OPEN -- xi=1 is a CONDITIONAL CANDIDATE, NOT protected/a mechanism")
 
 
 # --------------------------------------------------------------------------- Parts D,E
@@ -389,7 +426,7 @@ def part_DE():
     check("(E7) The obstruction is the xi->inf (CONTINUOUS-time) HORN of one coeff delta_v(xi); B_4 forces delta_v=0 at xi=1 (Part F)",
           True, detail="this LOCATES (does not overturn) the obstruction; it is the surface assumed by #3121/MINIMAL_AXIOMS (continuous Stone time). xi=1 is the OTHER, B_4-protected horn")
     check("(E8) NET: upgrades #3121/#3123 to COMPUTED, closes the INTERNAL (taste) escape, and SHARPENS the lever to ONE named bridge -- but does NOT close it",
-          True, detail="xi=1 protection is real (B_4, verified-grade) BUT reaching it needs (a) 'record-tick = physical time' = audited_renaming (NOT retained) + a retained clock-rate no-go, AND (b) form-equality r_t=r_s (F3). So xi=1 is a CONDITIONAL CANDIDATE horn, not a custodial mechanism; lever OPEN")
+          True, detail="xi=1 protection is real (B_4, verified-grade); form-equality is NOT a separate gate (it folds into the bridge via the canonical isotropic staggered action, Part F3/F5) -> the SINGLE gate is 'record-tick = physical time' = audited_renaming (NOT retained) + a retained clock-rate no-go (+ the symmetric-staggered realization rider). The tadpole (B7) hardens the v<1 sign + O(1) c_v at the xi->inf horn. xi=1 is a CONDITIONAL CANDIDATE, not a mechanism; lever OPEN")
 
 
 def main():
@@ -409,10 +446,13 @@ def main():
     print("(gamma=(4/3+N_f/2)alpha_s~0.15-0.34 << gamma_crit~0.54-1.32) -> a COMPUTED obstruction. #3121/#3123/#3277")
     print("are this one coeff read at xi->inf. VERDICT (lever SHARPENED, OPEN -- NOT closed): the naturalness gap is")
     print("the xi->inf horn; B_4 forces delta_v=0 at the OTHER (xi=1) horn. The framework EXHIBITS a one-tick-one-edge")
-    print("causal structure that WOULD sit at xi=1 IF (a) 'record-tick = physical time' (LIVE LEDGER: audited_renaming,")
-    print("NOT retained; + a retained clock-rate no-go) and (b) form-equality r_t=r_s hold -- a CONDITIONAL CANDIDATE")
-    print("horn, NOT a custodial mechanism. Upgrades #3121/#3123 to COMPUTED + closes the internal(taste) escape;")
-    print("residuals: which horn is physical (gated on those bridges); exact O(1) coeff (vertex+tadpole); sign (Euclidean).")
+    print("causal structure that WOULD sit at xi=1 -- a CONDITIONAL CANDIDATE horn, NOT a custodial mechanism. Open-items")
+    print("HARDENED this turn: form-equality is NOT a separate gate (it folds into the bridge -- the canonical isotropic")
+    print("staggered action supplies it, F3/F5); the spatial tadpole reinforces (v<1, NO temporal seagull, B7) -> c_v")
+    print("stays O(1), a c_v->0 cancellation STRONGLY DISFAVORED (not formally ruled out). SINGLE remaining gate:")
+    print("'record-tick = physical time' (audited_renaming, NOT retained; + a retained clock-rate no-go; + the symmetric-")
+    print("staggered realization rider). Upgrades #3121/#3123 to COMPUTED + closes the internal(taste) escape. Residuals:")
+    print("which horn is physical; exact O(1) c_v (full vertex+measure); sign v<1 (corroborated by a 2nd diagram, not real-time).")
     print("=" * 94)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 94)

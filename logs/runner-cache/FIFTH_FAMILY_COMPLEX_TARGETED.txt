@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py
-runner_sha256: 2b46ebc76a6c92ae24a179a1928bed8b388f022f850bf9a1a6a3a1d0dd9f832e
+runner_sha256: f2abd8de9bf49468214bb4533bb66c4ec98333f66cbba024d0c102c9a3e953aa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 91.56
+elapsed_sec: 78.05
 status: ok
 ----- stdout -----
 ==================================================================================================
@@ -26,6 +26,7 @@ SAFE READ
   anchor rows passing exact gamma=0 + Born/F~M gates: 1
   anchor rows with TOWARD -> AWAY crossover: 1
   the radial-shell fifth-family slice carries a narrow complex-action companion
+ASSERTIONS: PASS
 
 ----- stderr -----
 

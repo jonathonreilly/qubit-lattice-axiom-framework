@@ -319,12 +319,23 @@ def main() -> None:
     print("SAFE READ")
     anchors = [r for r in rows if r.anchor_ok]
     companion = [r for r in rows if r.anchor_ok and r.crossover_ok]
+    anchor_keys = {(r.drift, r.seed) for r in anchors}
+    companion_keys = {(r.drift, r.seed) for r in companion}
     print(f"  anchor rows passing exact gamma=0 + Born/F~M gates: {len(anchors)}")
     print(f"  anchor rows with TOWARD -> AWAY crossover: {len(companion)}")
+    assertions_ok = (
+        anchor_keys == {(0.20, 0)}
+        and companion_keys == {(0.20, 0)}
+        and all(abs(r.fm_0 - 1.0) < 0.05 and abs(r.fm_05 - 1.0) < 0.05 for r in companion)
+        and all(r.born is not None and r.born < 1e-12 for r in companion)
+    )
     if companion:
         print("  the radial-shell fifth-family slice carries a narrow complex-action companion")
     else:
         print("  the radial-shell slice does not retain the complex-action companion cleanly")
+    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
+    if not assertions_ok:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 207 |
-| **retained_no_go** | 217 |
+| **retained_no_go** | 218 |
 | **retained_bounded** | 750 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1331 |
+| unaudited | 1330 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1172 |
+| `audited_clean` | 1173 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1644 |
+| `unaudited` | 1643 |
 
 | claim_type | count |
 |---|---:|
@@ -358,6 +358,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_operator_selection_obstruction_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_neutrino_readout_det_uniqueness_inapplicable_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_z3_circulant_mass_basis_no_go_note_2026-04-15` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4887,6 +4888,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The normalized determinants of the explicit matrices satisfy det(m I_3 + j F1)/m^3 = det(m I_2 + j sqrt(3/8) Z_row)/m^2 = 1 - (3/8) j^2/m^2 and det(m I_3 + j F2)/m^3 = det(m I_2 + j (3/sqrt(8)) Z_row)/m^2 = 1 - (9/8) j^2/m^2.  _(class `A`)_
 - **chain closes:** True — The proof and runner operate only on the explicit finite matrices and reduce the spectra, trace pairings, and response identities to exact characteristic-polynomial and determinant identities. No upstream note, physical bridge, external comparator, or selection-rule premise is needed for this narrowed algebraic claim.
 - **rationale:** The runner source is not a print-only certificate: it constructs the six 3 x 3 matrices, F1/F2, and Z_row, then computes the Gram matrix, pairings, characteristic polynomials, determinant polynomials, and normalized determinant ratios exactly in SymPy. The contested downstream v_even coefficient selection is explicitly outside scope and is not imported into the algebraic proof. Since there are no cited dependencies and no external numerical or physical comparator, the bounded finite-dimensional identities close on their own terms.
+- **auditor confidence:** high
+
+### `dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07`
+
+- **Note:** [`DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md`](../../docs/DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the claim that the taste-cube V_sel curvature packet does not transport as a native pure even trace invariant of the stated Dirac Higgs family M(phi)=sum_i phi_i Gamma_i with M^2=|phi|^2 I.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-5303f23e03-dm_neutrino_vsel_curvature_t`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From M^2=|phi|^2 I and d=Tr(I), Tr M^(2n)=d|phi|^(2n), so Tr M^4-(1/8)(Tr M^2)^2=d(1-d/8)|phi|^4 is radial and cannot supply the anisotropic taste-cube selector curvature m_perp=32.  _(class `A`)_
+- **chain closes:** True — The retained graph-shift authority supplies the taste-cube selector, and the retained Dirac bridge supplies M^2=|phi|^2 I. Algebra then forces all pure even Dirac trace invariants to be radial, so recovering the taste-cube anisotropic curvature would require an extra axis-distinguishing import.
+- **rationale:** Independent recomputation via the eight taste-cube sign eigenvalues gives Tr H^2=8|phi|^2, Tr H^4=8(|phi|^4+4 sum phi_i^2 phi_j^2), hence V_sel=32 sum phi_i^2 phi_j^2 and Hessian diag(0,64,64). From M^2=|phi|^2 I, Tr M^(2n)=d|phi|^(2n), and the transported quartic has Hessian diag(12c,4c,4c), c=d(1-d/8), with equal transverse entries. The no-go is clean at the stated scope: native spectral/even trace invariants of the Dirac family cannot produce the taste-cube axis-selector; an externally supplied anisotropy remains outside the audited claim.
 - **auditor confidence:** high
 
 ### `dm_neutrino_weak_matching_obstruction_note_2026-04-15`

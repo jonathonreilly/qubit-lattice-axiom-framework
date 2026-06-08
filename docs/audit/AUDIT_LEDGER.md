@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 221 |
-| **retained_bounded** | 765 |
+| **retained_bounded** | 766 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1312 |
+| unaudited | 1311 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1196 |
+| `audited_clean` | 1197 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1627 |
+| `unaudited` | 1626 |
 
 | claim_type | count |
 |---|---:|
@@ -1167,6 +1167,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structureless_dag_gravity_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17372,6 +17373,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited retained authority supplies the trace-normalized SU(3) Gell-Mann generators and structure constants. Standard adjoint construction, Jacobi identity, Schur's lemma, and the SU(N) Killing-form identity close the algebraic Casimir claim without importing the deferred physical-color bridge.
 - **rationale:** The runner genuinely computes structure constants from Gell-Mann matrices, builds the adjoint generators, and checks hermiticity, closure, trace normalization, scalar Casimir behavior, value 3, and the 9/4 ratio. These are algebraic consistency checks over the single upstream SU(3) parent plus standard Lie-algebra facts, with no external comparator or tuned numerical input. Because the claim adds a standard algebraic corollary of the upstream SU(3) embedding and explicitly carves out physical-gluon/QCD consequences, the conservative tie-break is audited_decoration rather than an independent bounded theorem.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `su3_bridge_pr525_flaw_fix_note_2026-05-05`
+
+- **Note:** [`SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md`](../../docs/SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded methodological correction that PR #525's Casimir-denominator spread is not a test of the proportionality asserted by the stated K-tube ansatz.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-211935-2412671235-su3_bridge_pr525_flaw_fix_no`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Taking logs of the stated K-tube ansatz gives Δ ln ρ_R = (2/π) ln(c_R(6)/c_(0,0)(6)), so the relevant denominator is ln(c_R/c_(0,0)) rather than C_2(R).  _(class `A`)_
+- **chain closes:** True — The algebra follows directly from the displayed power-law ansatz relative to the exponent-12 baseline, and independent arithmetic from the cited c_R(6) values reproduces the table ratios and Δlnρ/ln(c/c_(0,0)) = 2/π to the displayed precision. This does not audit or establish the K-tube ansatz itself or a one-loop Feynman derivation of 2/π.
+- **rationale:** The one-hop cited authority is retained_bounded, which is retained-grade under the rubric. Recomputing from the packet values gives the displayed c_R/c_(0,0) ratios and Δlnρ values, and dividing by ln(c_R/c_(0,0)) returns 0.63661977 = 2/π for each tested irrep. The note explicitly bounds itself to the denominator correction; broader statements about the physical one-loop origin and MC comparison are not established by this audit.
 - **auditor confidence:** high
 
 ### `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`

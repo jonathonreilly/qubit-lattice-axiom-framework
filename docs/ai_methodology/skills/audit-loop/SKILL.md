@@ -91,6 +91,12 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   primitive, not a Tier-A admission or a bounded Planck import. Do not
   recognize, add, or imply any new axiom or new primitive without explicit user
   approval and a reviewed registry/policy update.
+- Before treating any premise as an import, missing dependency, no-go wall,
+  Tier-A admission, or bounded-status source, perform
+  `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. If the only
+  otherwise non-retained dependency is the registered
+  `scale_reference_primitive`, do not bound the row for using the Planck
+  scale reference; audit only the extra content actually claimed.
 - If the author family appears to be Codex and the current auditor is Codex, do not let the current context self-ratify a clean result. Restart the claim in a distinct restricted-input sub-agent when sub-agents are available, and record a clean result only as `independence: fresh_context` with a distinct `auditor` identity if `apply_audit.py` accepts it. If no sub-agent is available, skip clean application and report that a non-Codex, human, or fresh-context agent audit is required.
 - Do not stop after producing an audit JSON unless the user explicitly asks for a dry run, no-apply, or JSON-only result. If the user asks to "return JSON" as part of an audit-loop task, treat that as the required verdict format and still apply, verify, commit, and push the audit result according to this skill.
 

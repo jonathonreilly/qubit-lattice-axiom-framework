@@ -42,7 +42,10 @@ Generate exactly three candidate explanations:
    - Name the specific artifact type (boundary, finite-size, discretization, initialization, numerical precision)
 
 3. **GENUINE** — A real emergent property of the model.
-   - State what mechanism in the model could produce this, using only model primitives.
+   - State what mechanism in the model could produce this, using only approved
+     model axioms and approved primitive registry entries. If the mechanism
+     uses the registered scale-reference primitive, limit that use to Planck
+     scale units conversion only.
 
 ### Phase 3: Discriminate
 Design the MINIMAL test that distinguishes between the three candidates.

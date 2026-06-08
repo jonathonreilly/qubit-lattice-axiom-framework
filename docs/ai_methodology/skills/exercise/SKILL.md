@@ -44,6 +44,8 @@ Minimum refresher surfaces:
 
 - `docs/MINIMAL_AXIOMS_2026-06-05.md` for the current Lattice, Quantum, and
   Record baseline;
+- `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` for how approved
+  primitives enter assumption, import, wall, and bounded-status judgments;
 - `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` for the approved scale-reference
   primitive boundary;
 - `docs/audit/data/axiom_premise_nodes.json` and
@@ -105,6 +107,10 @@ statement.
 Build a complete assumption ledger from first principles to the local blocker.
 Start with only approved repo axioms and approved primitives when the task is
 repo-native, but mark even those as assumptions for purposes of the exercise.
+Enumerate approved primitives from `docs/audit/data/axiom_premise_nodes.json`
+and read their source notes. The scale-reference primitive, including the
+Planck scale reference, is already granted as units conversion only; do not
+treat it as a bounded wall, and do not grant it dimensionless content.
 Then climb layer by layer:
 
 1. axioms and primitives;

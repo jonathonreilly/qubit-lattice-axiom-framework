@@ -95,6 +95,12 @@ The scale-reference primitive is the approved units primitive, not a Tier-A
 admission or a bounded Planck import. New axioms and new primitives both
 require explicit owner approval and a reviewed registry/policy update before
 review-loop may treat them as accepted premises.
+Before naming a changed dependency as an import, wall, Tier-A admission, or
+bounded-status source, perform the primitive registry check in
+`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. In particular, if
+the dependency is only the registered `scale_reference_primitive`, treat the
+Planck scale reference as already granted units conversion and do not mark the
+row `retained_bounded` on that basis.
 
 The framework baseline (per `MINIMAL_AXIOMS_2026-06-05.md`) is the three named
 axioms Lattice, Quantum, and Record. Lattice is the cubic `Z^3` lattice with
@@ -170,6 +176,10 @@ Parse:
    - `docs/repo/CONTROLLED_VOCABULARY.md`
    - `docs/CANONICAL_HARNESS_INDEX.md`
    - `docs/audit/README.md`
+   - `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`
+   - `docs/audit/data/axiom_premise_nodes.json` and the source notes named by
+     relevant primitive nodes
+   - `docs/audit/data/tier_a_admissions.json`
    - `docs/publication/ci3_z3/` when publication-facing files changed
    - `docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md` when
      quantitative or imported-value claims changed

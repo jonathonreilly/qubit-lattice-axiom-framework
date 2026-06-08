@@ -70,7 +70,11 @@ Side channels (run anytime):
 ## Core Principles
 
 1. **Exhaust the Parameter Space** — AI makes sweeps cheap. Run the full scan, not spot checks.
-2. **Import Discipline** — Derive from model primitives when making framework claims; use known physics and literature only as disclosed comparators, bridges, or admitted context.
+2. **Import Discipline** — Derive from approved axioms and approved primitive
+   registry entries when making framework claims; use known physics and
+   literature only as disclosed comparators, bridges, or admitted context.
+   Registered primitives, including the scale-reference primitive, are not
+   bounded imports; unregistered primitives are not granted.
 3. **Nature Decides** — Simulation results are ground truth. When theory and data disagree, investigate the data.
 
 ## Lock Protocol

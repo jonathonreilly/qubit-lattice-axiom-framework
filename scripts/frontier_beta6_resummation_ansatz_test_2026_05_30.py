@@ -40,8 +40,9 @@ This harness does NOT close beta=6 and must not be read as doing so.
     ansatz fixed by the LOW-order supplied coefficients independently reaches it.
 
   * The current connected-coefficient packet in the repo supplies d_6..d_11
-    as rational inputs. These coefficients activate the predictive tests below,
-    but this runner does not derive or audit-retain that coefficient packet.
+    through the paired exact-coefficient source runner/cache. These coefficients
+    activate the predictive tests below, but this runner does not derive or
+    audit-retain that coefficient packet.
     The executable claim is conditional-on-supplied-coefficients harness
     arithmetic. The result is not beta=6 closure: the simple
     tadpole/geometric continuation is falsified, and d-log-Pade is unstable
@@ -66,8 +67,8 @@ Load-bearing inputs and boundaries
   * P_1plaq(beta) = J'(beta)/J(beta); P_1plaq(6) = 0.4225317396 (retained).
   * d_5 = 1/472392 (retained order-beta^5 connected coefficient).
   * Supplied higher connected coefficients d_6..d_11 from the current beta6
-    coefficient packet/cache. This runner consumes those literals; it does not
-    provide a retained one-hop derivation of them.
+    coefficient source packet/cache. This runner imports that source packet; it
+    does not provide a retained one-hop derivation of the packet.
 
 Run:
   python3 scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
@@ -75,8 +76,11 @@ Run:
 
 from __future__ import annotations
 
+import hashlib
+import importlib.util
 from dataclasses import dataclass, field
 from fractions import Fraction
+from pathlib import Path
 from typing import Callable, Optional
 
 import mpmath as mp
@@ -167,14 +171,79 @@ MC_COMPARATOR = mp.mpf("0.594")          # Monte-Carlo comparator (P_inf=0.59400
 MC_SIGMA = mp.mpf("0.00037")
 MC_COMPARATOR_4DP = mp.mpf("0.5934")     # the 4-dp canonical comparator quoted in the research map
 DELTA_TARGET = MC_COMPARATOR - P1_AT_6   # ~0.1715 (comparator-derived, not fitted)
-D5 = Fraction(1, 472392)                 # retained exact order-beta^5 connected coefficient
+ROOT = Path(__file__).resolve().parents[1]
+COEFF_SOURCE_PATH = ROOT / "scripts" / "frontier_beta6_d11_coefficient_2026_06_04.py"
+COEFF_CACHE_PATH = ROOT / "logs" / "runner-cache" / "frontier_beta6_d11_coefficient_2026_06_04.txt"
+
+
+def _load_d11_coefficient_packet() -> dict[int, str]:
+    """Load d_5..d_11 from the paired exact-coefficient source runner."""
+    spec = importlib.util.spec_from_file_location("beta6_d11_coeff_source",
+                                                  COEFF_SOURCE_PATH)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"could not load coefficient source: {COEFF_SOURCE_PATH}")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    packet = {n: str(mod.EXACT_DN[n]) for n in range(5, 11)}
+    d11 = mod.CUBE_11 + mod.W10_11 + mod.W11_11 + mod.W12_11
+    packet[11] = str(d11)
+    return packet
+
+
+def _sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _runner_cache_header(cache_text: str) -> dict[str, str]:
+    header, _, _stdout = cache_text.partition("----- stdout -----")
+    out: dict[str, str] = {}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        out[key.strip()] = value.strip()
+    return out
+
+
+def _coefficient_cache_ok() -> tuple[bool, str]:
+    if not COEFF_SOURCE_PATH.is_file() or not COEFF_CACHE_PATH.is_file():
+        return False, (
+            f"source_exists={COEFF_SOURCE_PATH.is_file()} "
+            f"cache_exists={COEFF_CACHE_PATH.is_file()}"
+        )
+    cache_text = COEFF_CACHE_PATH.read_text(encoding="utf-8", errors="replace")
+    header = _runner_cache_header(cache_text)
+    required_snippets = [
+        "d_5: decomposition 1/472392",
+        "d_10: decomposition -10483/5289581076480",
+        "d_11         = -13/3967185807360",
+        "SCORECARD: PASS=9 FAIL=0",
+    ]
+    source_sha = _sha256(COEFF_SOURCE_PATH)
+    header_ok = (
+        header.get("runner") == "scripts/frontier_beta6_d11_coefficient_2026_06_04.py"
+        and header.get("runner_sha256") == source_sha
+        and header.get("exit_code") == "0"
+        and header.get("status") == "ok"
+    )
+    snippets_ok = all(snippet in cache_text for snippet in required_snippets)
+    return (
+        header_ok and snippets_ok,
+        "runner={runner} sha_fresh={sha_fresh} exit_code={exit_code} "
+        "status={status} snippets_ok={snippets_ok}".format(
+            runner=header.get("runner"),
+            sha_fresh=header.get("runner_sha256") == source_sha,
+            exit_code=header.get("exit_code"),
+            status=header.get("status"),
+            snippets_ok=snippets_ok,
+        ),
+    )
+
+
+COEFFICIENT_PACKET = _load_d11_coefficient_packet()
+D5 = Fraction(COEFFICIENT_PACKET[5])     # retained exact order-beta^5 connected coefficient
 SUPPLIED_HIGHER_COEFFS: dict[int, str] = {
-    6: "7/5668704",
-    7: "5/17006112",
-    8: "5/272097792",
-    9: "-2035/264479053824",
-    10: "-10483/5289581076480",
-    11: "-13/3967185807360",
+    n: COEFFICIENT_PACKET[n] for n in range(6, 12)
 }
 
 
@@ -506,7 +575,29 @@ def proxy_series(order: int, R: mp.mpf, theta: mp.mpf, power: mp.mpf,
 # MAIN
 # ===========================================================================
 def main() -> int:
-    section("0. Baseline (retained primitives, recomputed for self-consistency)")
+    section("0. Coefficient source packet boundary")
+    expected_packet = {
+        5: "1/472392",
+        6: "7/5668704",
+        7: "5/17006112",
+        8: "5/272097792",
+        9: "-2035/264479053824",
+        10: "-10483/5289581076480",
+        11: "-13/3967185807360",
+    }
+    check("d_5..d_11 loaded from the paired exact-coefficient source runner",
+          COEFFICIENT_PACKET == expected_packet,
+          f"source={COEFF_SOURCE_PATH.relative_to(ROOT)} packet={COEFFICIENT_PACKET}")
+    cache_ok, cache_detail = _coefficient_cache_ok()
+    check("paired d_11 coefficient cache is source-SHA fresh and contains the exact packet",
+          cache_ok,
+          cache_detail)
+    check("harness does not own coefficient derivation authority",
+          True,
+          "this runner imports the d11 coefficient source packet and then tests resummation "
+          "ansaetze; coefficient retention and beta=6 closure remain separate audit questions")
+
+    section("1. Baseline (retained primitives, recomputed for self-consistency)")
     check("P_1plaq(6) = 0.4225317396 (retained single-plaquette value)",
           abs(P1_AT_6 - mp.mpf("0.4225317396")) < mp.mpf("1e-9"),
           f"P_1plaq(6) = {mp.nstr(P1_AT_6, 12)}")
@@ -522,8 +613,8 @@ def main() -> int:
           "d_11=-13/3967185807360")
     check("claim boundary is conditional-on-supplied-coefficients harness arithmetic",
           True,
-          "d_6..d_11 are consumed as supplied literals; this runner does not derive "
-          "or retain the coefficient packet, the research map, or beta=6 closure")
+          "d_6..d_11 are consumed from the paired source packet; this runner does not "
+          "audit-retain the coefficient packet, the research map, or beta=6 closure")
     check("Delta(6) target from comparator = 0.594 - P_1plaq(6) ~ 0.1715 (comparator, NOT fitted)",
           abs(DELTA_TARGET - mp.mpf("0.17146826")) < mp.mpf("1e-6"),
           f"Delta_target = {mp.nstr(DELTA_TARGET, 8)} = 0.594(MC comparator) - {mp.nstr(P1_AT_6, 8)}")
@@ -533,7 +624,7 @@ def main() -> int:
           f"(reproduces the research map's recomputed constant; NOT a derivation of the value)")
 
     # -----------------------------------------------------------------------
-    section("1. PROXY validation: the method is sound when the structure cooperates")
+    section("2. PROXY validation: the method is sound when the structure cooperates")
     print("  Controlled complex-pair branch point at |beta_c| ~ 5.7, amplitude tuned")
     print("  so the proxy's Delta(6) = 0.171 (matches the physical Delta(6) ~ 0.1715).")
     print("  This reproduces the research-map claim that d-log-Pade converges to ~1e-3")
@@ -593,7 +684,7 @@ def main() -> int:
           f"(the more contiguous coeffs, the sharper the next-coeff prediction)")
 
     # -----------------------------------------------------------------------
-    section("2. PHYSICAL series -- historical d_5-only null and current d_5..d_11 packet")
+    section("3. PHYSICAL series -- historical d_5-only null and current d_5..d_11 packet")
     phys = ConnectedSeries(lowest_order=5)
     phys.set_coeff(5, mp.mpf(D5.numerator) / mp.mpf(D5.denominator))
     print("  Connected series Delta(beta) = d_5 beta^5 + d_6 beta^6 + d_7 beta^7 + ...")
@@ -634,10 +725,10 @@ def main() -> int:
     print("         new exact coefficient d_6 -- the cheapest decisive falsifier).")
     print("       * d-log-Pade        : 4 coeffs -> {d_5..d_8} predicts d_9 (needs the resummation")
     print("         to see a [>=1/>=1] approximant; activates only after three more orders).")
-    print("     The current d_5..d_11 packet activates both tests in Section 4.")
+    print("     The current d_5..d_11 packet activates both tests in Section 5.")
 
     # -----------------------------------------------------------------------
-    section("3. TADPOLE / boosted-PT self-consistency fixed points (forward test)")
+    section("4. TADPOLE / boosted-PT self-consistency fixed points (forward test)")
     print("  u_0 = <P>^{1/4} self-consistency. Several boosting conventions; report each.\n")
     tp_collapse = tadpole_fixed_point(lambda P: BETA * P, "beta_eff = beta * u_0^4 = beta*<P>")
     tp_overboost = tadpole_fixed_point(lambda P: BETA / P, "beta_eff = beta / <P> (over-boost)", seed=mp.mpf("0.8"))
@@ -661,12 +752,12 @@ def main() -> int:
     print("  => FINDING (tadpole): boosting the single-plaquette series alone either collapses")
     print("     (P=0) or, convention-dependent, lands at the blocked 0.611/0.874 -- it does NOT")
     print("     independently reach 0.594. A tadpole test therefore lives in the connected-")
-    print("     coefficient PATTERN it implies (geometric tail), tested predictively in Section 4.")
+    print("     coefficient PATTERN it implies (geometric tail), tested predictively in Section 5.")
 
     # -----------------------------------------------------------------------
-    section("4. CURRENT exact-coefficient predictive tests")
+    section("5. CURRENT exact-coefficient predictive tests")
     print("  The decisive test is now active: d_6..d_11 are supplied from the")
-    print("  current beta6 coefficient packet. The harness evaluates the ansaetze against")
+    print("  current beta6 coefficient source packet. The harness evaluates the ansaetze against")
     print("  those coefficients without fitting to the 0.594 Monte-Carlo comparator.\n")
 
     exact_series = physical_series_through(11)
@@ -677,7 +768,7 @@ def main() -> int:
           n_known == 7 and highest == 11,
           "the audit-stale PENDING configuration is gone; d_6..d_11 are live inputs")
 
-    print("\n  4a. earliest activation checks (the audit blocker's direct target):")
+    print("\n  5a. earliest activation checks (the audit blocker's direct target):")
     tad_d7_series = physical_series_through(6)
     pred_tad_d7, msg_tad_d7 = tadpole_geometric_predict_next(tad_d7_series)
     verdict_tad_d7 = compare_against_exact(
@@ -696,7 +787,7 @@ def main() -> int:
           verdict_dlog_d9 is False,
           msg_dlog_d9)
 
-    print("\n  4b. latest tadpole/geometric test (through the full current packet):")
+    print("\n  5b. latest tadpole/geometric test (through the full current packet):")
     if n_known >= 2:
         # leave-one-out: predict the HIGHEST supplied coeff from the ones below it, then compare.
         sub = ConnectedSeries(lowest_order=5)
@@ -717,7 +808,7 @@ def main() -> int:
         print("      [PENDING] need >= 2 contiguous exact coeffs (supply d_6) to activate.")
         compare_against_exact(None, None, "tadpole/geometric", "d_6")
 
-    print("\n  4c. latest d-log-Pade stability test (through the full current packet):")
+    print("\n  5c. latest d-log-Pade stability test (through the full current packet):")
     if n_known >= 4:
         sub = ConnectedSeries(lowest_order=5)
         for n, v in exact_series.contiguous()[:-1]:
@@ -745,7 +836,7 @@ def main() -> int:
               "d-log-Pade predictive test inactive.")
         compare_against_exact(None, None, "d-log-Pade", "d_9")
 
-    print("\n  4d. SELF-TEST of the comparison machinery on SYNTHETIC coefficients (CI guard).")
+    print("\n  5d. SELF-TEST of the comparison machinery on SYNTHETIC coefficients (CI guard).")
     print("      Proves the comparison layer fires SUPPORT for a consistent next coeff and FALSIFY")
     print("      for an inconsistent one. The live physical coefficient packet above uses the same path.")
     base5 = mp.mpf(D5.numerator) / mp.mpf(D5.denominator)
@@ -769,7 +860,7 @@ def main() -> int:
           v_falsify is False, "a 50% deviation from the predicted coeff exceeds the 5% support window -> FALSIFY")
 
     # -----------------------------------------------------------------------
-    section("5. SENSITIVITY band: forward <P>(6) vs a hypothetical d_6 (NOT a prediction)")
+    section("6. SENSITIVITY band: forward <P>(6) vs a hypothetical d_6 (NOT a prediction)")
     print("  Pure sensitivity sweep: how the truncated forward <P>(6) MOVES with a trial d_6.")
     print("  This is NOT a claim about d_6's value; it bounds how much the next coefficient")
     print("  matters and shows that no single low-order term reaches 0.594.\n")
@@ -797,7 +888,7 @@ def main() -> int:
           f"<P>(6) span across the d_6 trial band = {mp.nstr(span, 4)}")
 
     # -----------------------------------------------------------------------
-    section("6. Honest test summary")
+    section("7. Honest test summary")
     print("  * The d-log-Pade METHOD is sound on a controlled complex-pair proxy: it localizes")
     print("    the singularity (|beta_c|->5.70, off-axis) and reconstructs Delta(6) to <1e-3 by")
     print("    [10/10], and its predictive next-coefficient call is exact to ~1e-11 on the proxy.")

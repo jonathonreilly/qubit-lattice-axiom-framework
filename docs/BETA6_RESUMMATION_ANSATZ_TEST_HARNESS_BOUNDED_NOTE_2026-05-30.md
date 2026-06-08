@@ -1,7 +1,8 @@
 # Beta=6 SU(3) Wilson Single-Plaquette Resummation-Ansatz Test Harness
 
 **Date:** 2026-05-30; 2026-06-07 current-coefficient refresh; 2026-06-07
-conditional-coefficient scope repair.
+conditional-coefficient scope repair; 2026-06-08 coefficient-source packet
+repair.
 **Claim type:** bounded_theorem (methodology / test harness)
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome for any cited claim_id; all statuses quoted
@@ -22,10 +23,10 @@ The current auditable claim is intentionally narrower than a retained
 coefficient-packet theorem:
 
 - **Claim supported here:** conditional-on-supplied-coefficients harness
-  arithmetic. Given the displayed rational values for `d_6..d_11`, the runner
-  checks the d-log-Pade and tadpole/geometric test mechanics, their
-  FALSIFY/SUPPORT classifications, the proxy-method sanity checks, and the
-  forward comparator diagnostics.
+  arithmetic. Given the exact `d_6..d_11` values supplied by the paired
+  coefficient source packet, the runner checks the d-log-Pade and
+  tadpole/geometric test mechanics, their FALSIFY/SUPPORT classifications, the
+  proxy-method sanity checks, and the forward comparator diagnostics.
 - **Not claimed here:** a retained derivation of the `d_6..d_11` coefficient
   packet, a retained beta=6 value, or a retained closure of the analytic
   continuation route.
@@ -36,6 +37,23 @@ coefficient-packet theorem:
   arithmetic, it must supply a retained-grade one-hop coefficient-packet
   authority for exact `d_6..d_11` or inline a derivation of those coefficients.
 
+### 2026-06-08 coefficient-source packet repair
+
+The audit blocker for this row was not a mathematical sign error in the harness;
+it was that the exact `d_6..d_11` packet was visible to the harness as local
+values rather than as a source-verifiable one-hop packet. This repair wires the
+harness to the exact coefficient runner
+[`scripts/frontier_beta6_d11_coefficient_2026_06_04.py`](../scripts/frontier_beta6_d11_coefficient_2026_06_04.py)
+and checks the paired cache
+[`logs/runner-cache/frontier_beta6_d11_coefficient_2026_06_04.txt`](../logs/runner-cache/frontier_beta6_d11_coefficient_2026_06_04.txt)
+for a fresh source SHA, `SCORECARD: PASS=9 FAIL=0`, and the exact values through
+`d_11`.
+
+This closes the source-packet/provenance defect for the harness. It does not
+turn the harness into a retained coefficient theorem and does not close
+`beta=6`; coefficient retention and beta=6 closure remain separate audit
+questions.
+
 The lane's open object and blocked-route catalog are recorded in the research
 map [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md).
 That note identifies exactly one not-yet-blocked (long-shot) analytic route -
@@ -43,9 +61,8 @@ That note identifies exactly one not-yet-blocked (long-shot) analytic route -
 boosted-PT comparator. The original 2026-05-30 version was pending because no
 connected-coefficient data beyond the retained order-`beta^5` term was wired into
 the harness. The current repo has since supplied rational `d_6..d_11` values in
-the beta6 coefficient packet, so this refresh consumes those supplied
-coefficients and records the live SUPPORT/FALSIFY outcomes conditional on that
-packet.
+the beta6 coefficient source packet, so this refresh consumes that packet and
+records the live SUPPORT/FALSIFY outcomes conditional on it.
 
 This harness is **downstream of but not a replacement for** the exact-coefficient
 computation. It evaluates the connected coefficient series of
@@ -54,8 +71,8 @@ computation. It evaluates the connected coefficient series of
 Delta(beta) = P_full(beta) - P_1plaq(beta),    Delta(beta) = sum_{n>=5} d_n beta^n,
 ```
 
-with `d_5 = 1/472392` retained and supplied `d_6..d_11` values, runs the two
-tests below and reports a clear PASS/FAIL scorecard.
+with `d_5 = 1/472392` retained and `d_6..d_11` loaded from the paired source
+packet, runs the two tests below, and reports a clear PASS/FAIL scorecard.
 
 ### What this note explicitly does NOT claim (honesty, non-negotiable)
 
@@ -69,8 +86,10 @@ tests below and reports a clear PASS/FAIL scorecard.
   `d_5 = 1/472392`, `d_6 = 7/5668704`, `d_7 = 5/17006112`,
   `d_8 = 5/272097792`, `d_9 = -2035/264479053824`,
   `d_10 = -10483/5289581076480`, and
-  `d_11 = -13/3967185807360`. This packet activates the test; this note does
-  not derive the packet or close beta=6.
+  `d_11 = -13/3967185807360`. The harness now loads these values from the
+  paired coefficient source runner and verifies the d11 cache freshness. This
+  packet activates the test; this note does not derive the packet or close
+  beta=6.
 
 ## 1. The two ansaetze under test
 
@@ -233,8 +252,9 @@ coefficients probes inside this conditional harness.
 python3 scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
 ```
 
-The runner prints a per-test PASS/FAIL scorecard (`PASS=27 FAIL=0` after this
-refresh) covering: the recomputed retained constants; the proxy singularity
+The runner prints a per-test PASS/FAIL scorecard (`PASS=30 FAIL=0` after the
+2026-06-08 source-packet repair) covering: coefficient-source/cache provenance;
+the recomputed retained constants; the proxy singularity
 localization and forward convergence; the proxy predictive next-coefficient
 sharpening; the historical single-coefficient null on the physical series; the
 supplied `d_5..d_11` predictive FALSIFY/SUPPORT comparisons; the
@@ -245,7 +265,11 @@ SUPPORT/FALSIFY machinery; and the forward `<P>(6)` sensitivity band.
 ## 7. Key files
 
 - [`scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py`](../scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py)
+- [`logs/runner-cache/frontier_beta6_resummation_ansatz_test_2026_05_30.txt`](../logs/runner-cache/frontier_beta6_resummation_ansatz_test_2026_05_30.txt)
+- [`scripts/frontier_beta6_d11_coefficient_2026_06_04.py`](../scripts/frontier_beta6_d11_coefficient_2026_06_04.py)
+- [`logs/runner-cache/frontier_beta6_d11_coefficient_2026_06_04.txt`](../logs/runner-cache/frontier_beta6_d11_coefficient_2026_06_04.txt)
 - [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md)
+- [`BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md`](BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md)
 - [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
 - [`GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md)
 - [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md)

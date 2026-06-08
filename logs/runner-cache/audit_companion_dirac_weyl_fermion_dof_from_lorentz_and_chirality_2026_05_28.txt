@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
-runner_sha256: 8d861832d803ac01319fc1722df055f6c3ecf1108502eac2186cd9b2f9afb3ba
+runner_sha256: 75ce25034a5c4dc89f2d48d7b64e85512db9747ca93871ff341a2659abc59625
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
 audit-companion: Dirac/Weyl fermion dof admission bridge
 ----------------------------------------------------------------------------------------
-note: /private/tmp/cl3-dirac-weyl-onshell-counting-20260607/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
-parent: /private/tmp/cl3-dirac-weyl-onshell-counting-20260607/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
+note: /private/tmp/cl3-more-audit-repairs-2-20260608/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+parent: /private/tmp/cl3-more-audit-repairs-2-20260608/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
 
 ----------------------------------------------------------------------------------------
 note structure and scope
@@ -19,6 +19,9 @@ note structure and scope
   [PASS] note contains: Claim type:** bounded_theorem
   [PASS] note contains: Status authority:** source-note proposal only
   [PASS] note contains: 2026-06-07 source-packet repair
+  [PASS] note contains: 2026-06-08 label-semantics safe-narrow
+  [PASS] note contains: physical label semantics
+  [PASS] note contains: does not replace P4
   [PASS] note contains: Q1 is retired as an unsupported algebraic admission
   [PASS] note contains: Q2 is repaired as a textbook-counting import
   [PASS] note contains: source-local finite-rank statement
@@ -75,13 +78,13 @@ Q1 retained source and Q2 source-local rank marking
   [PASS] source/admission marker present: Lorentzian sign
 
 ----------------------------------------------------------------------------------------
-P4 audit-conditional replacement mapping is explicit
+P4 arithmetic support and label-semantics boundary are explicit
 ----------------------------------------------------------------------------------------
   [PASS] parent note carries P4 premise
   [PASS] bridge cites parent P4 wording
-  [PASS] bridge maps P4 to R1 + R3 (Dirac)
-  [PASS] bridge maps Weyl halving to R2 (chirality)
-  [PASS] P4 replacement names retained Q1 and source-local Q2 rank counting
+  [PASS] bridge keeps physical label semantics open
+  [PASS] bridge maps Weyl arithmetic halving to R2 (chirality)
+  [PASS] P4 replacement remains blocked without separate physical-label bridge
 
 ----------------------------------------------------------------------------------------
 proof-walk forbids lattice-action imports
@@ -109,7 +112,7 @@ repo-vocabulary discipline (no new class / tier framings)
 ----------------------------------------------------------------------------------------
 exact rational arithmetic: dof_Dirac = 4, dof_Weyl = 2
 ----------------------------------------------------------------------------------------
-  [PASS] Dirac dof = 2 (spin) * 2 (particle-antiparticle) = 4 (got 4)
+  [PASS] Dirac dof = 2 (R1 doublet label) * 2 (R3 paired label) = 4 under supplied label semantics (got 4)
   [PASS] Dirac dof = (retained Q1 dim_R V_(3,1) * 2) / source-local Q2 2 = 4 (got 4)
   [PASS] factorisations agree (R1*R3 = Q1-spinor decomposition)
   [PASS] Weyl dof = Dirac dof / 2 (chirality projection, R2) = 2 (got 2)
@@ -185,21 +188,21 @@ R4 CAR irreducible single-mode carrier dim 2
   [PASS] CAR carrier dim = 2
 
 ----------------------------------------------------------------------------------------
-R3 CPT particle-antiparticle pairing factor 2
+R3 CPT paired-label factor 2 under supplied physical-label semantics
 ----------------------------------------------------------------------------------------
   [PASS] CPT pair label cardinality = 2
   [PASS] two-mode CPT-paired Fock dim = 4
   [PASS] Dirac state-label cardinality = spin * particle-antiparticle = 4
 
 ----------------------------------------------------------------------------------------
-P4 replacement support: bridge supplies the factor 2 * 2 = 4 from R-packet
+P4 arithmetic support: bridge supplies factor 2 * 2 = 4 but not label semantics
 ----------------------------------------------------------------------------------------
   [PASS] bridge reproduces P4 Dirac dof = 4 from R1 + R3
   [PASS] bridge reproduces P4 Weyl dof = 2 from R1 + R3 + R2
   [PASS] retained Q1 + source-local Q2 path also yields 4 (spinor-dim cross-check)
 
-TOTAL: PASS=137 FAIL=0
-VERDICT: Q1/Q2-counting-repaired bounded bridge passes; Dirac dof = 4 and Weyl dof = 2 follow from the framework authority packet R1-R4 plus retained Q1 and source-local Q2 rank counting by exact rational arithmetic.
+TOTAL: PASS=140 FAIL=0
+VERDICT: Q1/Q2-counting-repaired bounded bridge passes; Dirac dof = 4 and Weyl dof = 2 follow by exact rational arithmetic from retained Q1, source-local Q2 rank counting, and supplied physical-label semantics; P4 replacement still needs the separate physical-label bridge.
 
 ----- stderr -----
 

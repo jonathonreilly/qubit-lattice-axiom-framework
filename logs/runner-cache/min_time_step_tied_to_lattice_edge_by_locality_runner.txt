@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py
+runner_sha256: 645c2764d305388a31f8537c259f119e2b6cdb080c3fb0555a448403ab5c32e4
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+==============================================================================
+A1. one TIME STEP (one local update / record tick) reaches exactly ONE EDGE
+==============================================================================
+   6-NN: one tick reaches 6 sites at graph-distance 1 = the nearest neighbors (one edge)
+   max Euclidean reach in one tick = 1.000 edge
+  [PASS] the minimum time step (one update/tick) reaches exactly one lattice edge: one tick == one hop  | a_tau <-> a_s locked by causal locality
+
+==============================================================================
+A2. 'NO DIAGONALS' is LOAD-BEARING: with diagonals the tick decouples from the edge
+==============================================================================
+   26-NN (with diagonals): one tick reaches 26 sites, max Euclidean = 1.732 (sqrt3)
+   so WITH diagonals one tick spans up to sqrt3 edges => the tick no longer = one edge
+  [PASS] the no-diagonal clause locks one-tick-one-edge (diagonals would span sqrt2/sqrt3 per tick)  | the LATTICE axiom's 'no diagonals' is what pins the tie
+
+==============================================================================
+A3. the forward reachability cone advances exactly ONE EDGE PER TICK (v_front = a_s/a_tau)
+==============================================================================
+   6-NN forward cone: max graph-distance after k=5 ticks = 5 -> front = 1 edge/tick
+   group velocity v_LR = max|grad E| = 0.9351 <= 1 (the signal speed inside the cone)
+  [PASS] the reachability front is one edge per tick; v_LR is the <=1 signal speed within it  | the cone speed v_front = a_s/a_tau (records-derived ratio)
+
+==============================================================================
+A4. the RATIO is derived; the ABSOLUTE scale is the clock-rate NO-GO
+==============================================================================
+   DERIVED (the conformal CLASS): a_tau/a_s = 1/v_front = 1 tick per edge -- from causal locality
+     (the retained LATTICE_NN_LIGHT_CONE reachability) + the no-diagonal clause. The lattice minimum
+     connection and the minimum time step are the SAME elementary causal event.
+   NO-GO (the conformal FACTOR): the ABSOLUTE scale (a_s metres, a_tau seconds) is the records'
+     clock-rate no-go (post_record_clock_rate_interface): records give the tick/edge COUNT, not the
+     physical unit -> a supplied Planck/clock-reference primitive sets the absolute a_s, a_tau.
+  [PASS] min-time-step <-> lattice-edge RATIO derived (one tick = one edge); absolute scale = clock-rate no-go  | the tie is causal locality; the common scale needs a Planck primitive
+
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

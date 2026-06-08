@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/theta13_is_c3_doublet_breaking_sqrt2_charged_lepton_runner.py
+runner_sha256: 0f7e39ac75165280d7de925e99caf18d2db2459ad1ede891aa17d7ac0ede5960
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+A1. the C3 structure (singlet + real doublet basis) IS the TBM form (trimaximal 2nd column)
+==============================================================================
+   orthonormal: True; 2nd column trimaximal |U_x2|^2=1/3: True
+   doublet basis = real/imag parts of the C3 doublet eigenvectors (1,w,w^2),(1,w^2,w): True
+  [PASS] the C3 singlet + real doublet basis is the TBM form with the trimaximal 2nd column  | the framework's C3 structure (records-einselected)
+
+==============================================================================
+A2. the C3 doublet is DEGENERATE under C3-invariant einselection => theta_13 unfixed by nu records
+==============================================================================
+   C3-invariant H eigenvalues = [0.9 0.9 2.1] -> doublet 2-fold degenerate: True
+   so the records resolve the singlet (trimaximal column) but NOT the doublet rotation => theta_13 free
+  [PASS] C3-invariant einselection leaves the doublet degenerate => theta_13 (doublet rotation) unfixed  | theta_13 != 0 is a MEASURE of C3-doublet breaking
+
+==============================================================================
+A3. a charged-lepton 1-2 rotation theta_e gives EXACTLY sin(theta_13) = sin(theta_e)/sqrt(2)
+==============================================================================
+   |U_e3| = sin(theta_e)/sqrt(2) for all tested theta_e: True
+   the sqrt(2) is the norm of the C3-doublet imaginary basis vector (0,1,-1)/sqrt2 (column 3)
+  [PASS] the trimaximal geometry forces sin(theta_13) = sin(theta_e)/sqrt(2) (the sqrt2 is DERIVED)  | theta_13 = theta_e/sqrt2 to leading order; theta_e = the charged-lepton residual
+
+==============================================================================
+A4. observed theta_13 => theta_e = 12.16deg ~ Cabibbo (13.04deg): QLC-consistent
+==============================================================================
+   observed sin^2(theta_13) = 0.0222 (theta_13 = 8.57deg)
+   => implied theta_e = arcsin(sqrt2 * sin theta_13) = 12.16deg  (Cabibbo = 13.04deg)
+   forward (theta_e = Cabibbo): predicted sin^2(theta_13) = 0.0255 vs observed 0.0222 (angle 9.18deg vs 8.57deg)
+  [PASS] observed theta_13 implies theta_e ~ Cabibbo (QLC-consistent); sqrt2 derived, theta_e the residual  | theta_13 = theta_e/sqrt2 with theta_e ~ 12.2deg ~ theta_C; the residual is dimensionless
+
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

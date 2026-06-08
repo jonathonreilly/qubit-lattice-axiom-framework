@@ -26,13 +26,28 @@ This repair updates the row accordingly:
 - This is not a ledger retag; independent audit owns any effective-status
   change.
 
+## 2026-06-08 label-semantics safe-narrow
+
+The refreshed audit agrees that the finite algebra checks close, but flags a
+remaining physical-label bridge: CPT exactness does not by itself derive that
+the thermal inventory has a distinct particle-antiparticle species label, and
+the per-site `SU(2)` doublet does not by itself derive the physical
+spin/helicity label used in P4.
+
+This note is therefore narrowed. It proves the finite on-shell rank,
+chirality-halving, and integer label arithmetic **conditional on the supplied
+physical label semantics**. It does not replace P4 of the parent thermal
+inventory by itself. A future retained bridge must still identify the
+framework `SU(2)` doublet with the physical spin/helicity label and the CPT
+pairing with the distinct thermal particle-antiparticle label.
+
 ## Claim
 
 Given the retained Cl(3,1) finite Clifford-algebra source packet (Q1
 below), the source-local on-shell rank certificate (Q2 below), and the
-existing framework authority packet (R1-R4 below), the Standard Model
-fermion thermal degree-of-freedom counts named in premise P4 of the
-parent thermal-inventory proof-walk
+existing framework authority packet (R1-R4 below), the finite label-counting
+arithmetic used by the Standard Model fermion thermal degree-of-freedom counts
+named in premise P4 of the parent thermal-inventory proof-walk
 `G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md`,
 
 ```text
@@ -40,11 +55,12 @@ Dirac thermal dof per flavour-colour state = 2 (spin) * 2 (particle-antiparticle
 Weyl thermal dof per flavour-colour state  = 2 (helicity-antiparticle),
 ```
 
-reduce to exact rational arithmetic on the algebraic content of the named
-inputs. The factor `2` for spin comes from R1 (per-site `j = 1/2`); the
-factor `2` for particle-antiparticle comes from R3 (CPT exact); the
-factor `2` halving from Dirac to Weyl comes from R2 (chirality operator
-`gamma_5` existence at even total Clifford generator count). The
+reduce to exact rational arithmetic once the physical label semantics are
+supplied. The factor `2` for the `SU(2)` doublet is checked from R1
+(per-site `j = 1/2`); the factor `2` for the paired label is checked from R3
+(CPT exact) after a particle/antiparticle thermal-label interpretation is
+supplied; the factor `2` halving from Dirac to Weyl comes from R2 (chirality
+operator `gamma_5` existence at even total Clifford generator count). The
 Cl(3,1) algebra-cell fact supplying the `n = 4` even-generator count is
 now sourced by the retained Q1 authority
 `CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md`.
@@ -62,8 +78,9 @@ selection of the Lorentzian sign. Q2 is retired only as the finite
 linear-algebra count for an already-supplied Dirac mass-shell equation;
 this bridge does **not** derive that equation, the free-field dynamics,
 or the physical thermal inventory itself.
-Parent-note replacement of P4 is audit-conditional, not a status change
-performed by this source note.
+Parent-note replacement of P4 remains blocked on the separate physical-label
+bridge; this source note supplies only the finite algebraic count and
+source-local on-shell rank certificate.
 
 ## Framework authority packet (R1-R4)
 
@@ -72,15 +89,16 @@ algebraic multiplicities consumed by the bridge. Their effective
 statuses are checked by the audit pipeline and are not asserted by this
 source note.
 
-- **R1 Per-site `j = 1/2` SU(2) spin carrier (factor of 2 spin states).**
+- **R1 Per-site `j = 1/2` SU(2) doublet (factor of 2 label states).**
   Supplied by
   [`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md)
   as an existing audit-ledger authority. On every framework site, the
   per-site Hilbert space carries exactly the `j = 1/2` irreducible
   representation of su(2); the diagonal generator `S_3 = sigma_3 / 2`
   has eigenvalues
-  `m in {-1/2, +1/2}`, supplying the `2 (spin)` factor consumed by the
-  proof-walk.
+  `m in {-1/2, +1/2}`, supplying a two-label algebraic doublet. This row does
+  not by itself derive that this doublet is the physical thermal spin/helicity
+  label.
 
 - **R2 Chirality operator `gamma_5` exists iff `n` (total Clifford
   generator count) is even.** Supplied by
@@ -93,12 +111,14 @@ source note.
   `P_L = (I - gamma_5) / 2` and `P_R = (I + gamma_5) / 2`, supplying
   the factor-of-`1/2` chirality halving consumed by the proof-walk.
 
-- **R3 CPT exact preservation (factor of 2 particle-antiparticle).**
+- **R3 CPT exact preservation (paired-label factor of 2 after physical-label
+  interpretation).**
   Supplied by
   [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md)
-  as an existing audit-ledger authority. Exact CPT preservation pairs
-  each particle with a distinct antiparticle state, supplying the
-  `2 (particle-antiparticle)` factor consumed by the proof-walk. The
+  as an existing audit-ledger authority. Exact CPT preservation supplies the
+  pairing symmetry used by the two-label arithmetic once a physical
+  particle-antiparticle thermal-label interpretation is supplied. This row
+  does not derive that distinct thermal species label from CPT alone. The
   mass-equality decoration
   `CPT_PARTICLE_ANTIPARTICLE_MASS_EQUALITY_THEOREM_NOTE_2026-05-02.md`
   is reader context only; it is not load-bearing for this integer
@@ -190,8 +210,8 @@ Monte-Carlo measurement, fitted comparator) enters the proof-walk.
 | (F2) | Volume-element chirality: `gamma_5` exists iff `n` even; with `n = 4`, `gamma_5` exists | R2 + (F1) | no |
 | (F3) | Chirality projectors `P_L = (I - gamma_5)/2`, `P_R = (I + gamma_5)/2` are well-defined orthogonal projectors with `P_L + P_R = I`, `P_L P_R = 0` | R2 | no |
 | (F4) | Faithful real irrep of `Cl(3, 1) ≅ M_4(R)` has real dimension 4 | Q1 | no |
-| (F5) | Spin label per Dirac state: `m_s in {-1/2, +1/2}` gives factor 2 from per-site `j = 1/2` | R1 | no |
-| (F6) | Particle-antiparticle label per Dirac state: CPT pairs `psi <-> psi^c` of equal mass, factor 2 | R3 | no |
+| (F5) | Algebraic `SU(2)` doublet label: `m_s in {-1/2, +1/2}` gives a factor 2; physical spin/helicity interpretation remains a separate bridge | R1 + supplied label semantics | no |
+| (F6) | Paired label per Dirac state: CPT pairs `psi <-> psi^c` of equal mass, factor 2 after the physical particle-antiparticle thermal-label interpretation is supplied | R3 + supplied label semantics | no |
 | (F7) | Naive off-shell real-component count of a four-component complex Dirac spinor: `4 (complex) * 2 (real per complex) = 8` | (F4) + complexification bookkeeping | no |
 | (F8) | On-shell Dirac equation constraint halves naive 8 to 4: `rank(gamma.p - m)=2`, so `dim_C ker=2` per energy branch | Q2 finite-rank certificate | no |
 | (F9) | Equivalent thermal factorisation: Dirac on-shell dof = `2 (spin) * 2 (particle-antiparticle) = 4` | R1 (spin factor) + R3 (particle-antiparticle factor) | no |
@@ -253,8 +273,9 @@ projection, matching the parent note's `2 (helicity-antiparticle)`
 wording.
 
 The runner repeats both factorisations with `fractions.Fraction` (no
-floating-point arithmetic) and checks all twelve substeps against
-the named framework-authority / admitted inputs.
+floating-point arithmetic) and checks all twelve substeps against the named
+framework-authority inputs plus the explicitly supplied physical-label
+semantics.
 
 ## Mapping to the parent note's P4 premise
 
@@ -265,39 +286,40 @@ The parent note's P4 premise reads:
 > Weyl fermion per generation, contributing `2 (helicity-antiparticle)`
 > states.
 
-This bridge supplies the algebraic content of P4 in two parts:
+This bridge supplies the algebraic counting support used by P4 in two parts,
+but it does **not** replace P4 by itself:
 
 - **The two integer factors `2 * 2 = 4` of the Dirac side** are
-  supplied by existing framework authorities (R1 supplies spin = 2,
-  R3 supplies particle-antiparticle = 2). After this bridge is
-  independently audited, the parent note's P4 premise can be restated
-  as:
+  supplied by existing framework authorities plus the still-open physical
+  label semantics (R1 supplies the algebraic doublet, R3 supplies the exact
+  pairing symmetry). After this bridge is independently audited, the parent
+  note's P4 premise still needs a separate physical-label bridge before it can
+  be restated as:
   
   > Each Dirac fermion state contributes `2 (spin, from R1) * 2
   > (particle-antiparticle, from R3) = 4` thermal degrees of freedom,
   > with the source-local on-shell rank count from Q2 and the
   > four-component spinor space from Q1.
   
-  The two `2`s are then no longer unattributed premise content. Q1
+  The two `2`s are then no longer unattributed arithmetic content. Q1
   (finite `Cl(3,1)` algebra cell) is retained-sourced, and Q2's
   textbook on-shell-counting import is replaced by this source-local
-  rank certificate. The residual boundary is narrower: the bridge does
-  not derive the Dirac equation/free-field mass-shell input or the
-  physical thermal-inventory use of that input.
+  rank certificate. The residual boundary is narrower and explicit: the
+  bridge does not derive the Dirac equation/free-field mass-shell input, the
+  physical thermal-inventory use of that input, the physical spin/helicity
+  label, or the distinct particle-antiparticle thermal label.
 
 - **The Weyl `2 (helicity-antiparticle)` factor** is also
   supported on the chirality-halving side: R2 supplies the existence of
   the `gamma_5` projector at the even-`n` Clifford algebra cell, which
   halves the Dirac state count to the Weyl state count. The remaining
-  factor `2` is the surviving helicity-antiparticle doublet after
-  chirality projection, supplied jointly by R1 (helicity replaces spin
-  under chirality projection) and R3 (antiparticle pairing for the
-  single chirality).
+  factor `2` is the surviving doublet after chirality projection,
+  conditional on the physical helicity-antiparticle label bridge that is
+  still open.
 
-P4 of the parent note can therefore be replaced, after independent
-audit of this bounded row, by this explicit bridge plus retained Q1 and
-source-local Q2 rank counting. This is the operational purpose of the
-present bridge note.
+P4 of the parent note therefore cannot be replaced by this bounded row alone.
+The operational purpose of this source note is to retire the textbook
+on-shell-counting import and isolate the remaining physical-label bridge.
 
 ## Dependencies
 
@@ -365,8 +387,12 @@ This bridge does not close:
 - closure of the parent note
   `G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md`
   (the parent inventory note still has P1, P2, P3, P5 as admitted
-  premises; this bridge only supports audit-conditional replacement of
+  premises; this bridge only supports the finite arithmetic component of
   P4);
+- physical derivation that the framework `SU(2)` doublet is the thermal
+  spin/helicity label;
+- physical derivation that CPT exactness supplies the distinct thermal
+  particle-antiparticle species label;
 - any downstream cosmology, leptogenesis, or DM claim;
 - promotion of `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27`
   (the present bridge does not alter the audit status of cited
@@ -376,10 +402,13 @@ This bridge does not close:
 ## What this claims and does not claim
 
 - The bridge **claims** that the four-factor decomposition `dof_Dirac
-  = 2 (spin) * 2 (particle-antiparticle) = 4` follows from R1 + R3 as
-  exact integer arithmetic, given retained Q1 plus the Q2 finite-rank
-  on-shell count, and that the Weyl halving `dof_Weyl = dof_Dirac / 2 = 2`
-  follows from R2 (chirality operator at even `n`).
+  = 2 * 2 = 4` is exact integer arithmetic, given retained Q1 plus the Q2
+  finite-rank on-shell count and the supplied physical-label semantics, and
+  that the Weyl halving `dof_Weyl = dof_Dirac / 2 = 2` follows from R2
+  (chirality operator at even `n`).
+- The bridge **does not claim** that R1 and R3 alone derive the physical
+  spin/helicity and particle-antiparticle thermal labels. Those label
+  semantics remain the open bridge named by the audit.
 - The bridge **does not claim** that the Lorentzian sign is physically
   forced by the framework. The retained Q1 theorem supplies the finite
   algebraic cell; physical sign selection remains outside this bridge.
@@ -394,9 +423,9 @@ This bridge does not close:
   P2 (two transverse polarizations per massless vector), P3 (four
   real scalar dof in complex Higgs doublet), and P5 (temperature
   regime). P4 can only be replaced after this bounded bridge is
-  independently audited, with any separate downstream premise that tries
-  to use Q1 as a physical Wick-rotation/sign-selection theorem kept
-  outside this row.
+  independently audited and the separate physical-label bridge is supplied,
+  with any separate downstream premise that tries to use Q1 as a physical
+  Wick-rotation/sign-selection theorem kept outside this row.
 - The bridge **does not claim** that the framework's per-site Hilbert
   space becomes `R^4`-valued under Wick rotation. The framework's
   per-site site module is `C^2`-valued per
@@ -417,8 +446,7 @@ Expected:
 
 ```text
 TOTAL: PASS=<n> FAIL=0
-VERDICT: bounded admission bridge passes; Dirac dof = 4 and Weyl
-dof = 2 follow from the framework authority packet R1-R4 plus
-retained Q1 plus source-local Q2 rank counting by exact rational
-arithmetic.
+VERDICT: bounded counting bridge passes; Dirac dof = 4 and Weyl
+dof = 2 follow by exact rational arithmetic from retained Q1,
+source-local Q2 rank counting, and the supplied physical-label semantics.
 ```

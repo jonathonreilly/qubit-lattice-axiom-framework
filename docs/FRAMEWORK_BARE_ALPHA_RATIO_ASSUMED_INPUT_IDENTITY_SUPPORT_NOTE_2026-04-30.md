@@ -3,8 +3,9 @@
 **Primary runner:** scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py
 
 **Date:** 2026-04-30
-**Status:** support. Salvage note for algebraic identities preserved after
-the dimension-fixed bare-coupling wrapper failed audit.
+**Status:** support / conditional algebra lemma only; not a live retained
+theorem. Salvage note for algebraic identities preserved after the
+dimension-fixed bare-coupling wrapper failed audit.
 
 ---
 
@@ -35,3 +36,7 @@ The following identities survive as assumed-input algebra:
 This note does not derive the coupling inputs or promote the framework
 bare-coupling packet. It only preserves the algebraic consequences that
 follow after those support-side inputs are assumed.
+
+It does not assert that a retained EW-normalization lane exists, does not
+promote a `Cl(3) -> SM` support packet or minimal-input stack, and does not
+claim direct low-energy phenomenology from the assumed-input identity.

@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py
+runner_sha256: 5084fed89ff3331c6ba44fd69943990836af3022395913a12c78fc907db54821
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+--- Section E1: per-mode factor is the coupling 4 pi, not the Gaussian 2 pi ---
+PASS: (4 pi)^-16 = 2.586e-18 (the magnitude's dominant suppression)
+PASS: (2 pi)^-16 is off from (4 pi)^-16 by EXACTLY 2^16 = 65536
+PASS: with the coupling 4 pi, u_0^-16 needed is sub-decade O(1) (~8.06)
+PASS: with the Gaussian 2 pi, the magnitude would overshoot by 2^16 (excluded)
+--- Section N: 4 pi is the native Z^3 graph-Laplacian solid angle ---
+PASS: native Z^3 graph-Laplacian symbol L(k)=2*sum(1-cos k_mu) -> |k|^2 as k->0 (ratio->1)
+PASS: radial integral int_0^inf sin(u)/u du = pi/2
+PASS: assembled r*G(r) = (4 pi /(2pi)^3) * (pi/2) = 1/(4 pi) = 0.0796 (native solid angle)
+  r*G(r) = 0.07958   target 1/(4pi) = 0.07958   (4 pi = solid angle S^2)
+PASS: d=3 solid angle of S^2 = 4 pi (the coupling normalization origin)
+PASS: Gaussian measure sqrt(2 pi)/mode -> 2 pi (a DIFFERENT object); 4pi/2pi = 2
+--- Section E2: (4 pi)^-16 = (one native 4 pi)^(native count 16) ---
+PASS: one native coupling (4 pi)^-1 raised to the native count 16 = (4 pi)^-16
+PASS: multiplicity 1 (one coupling norm) ^ count 16 == 16 separate factors (same number) -> 'need 16 separate 4 pi' was a false stronger requirement
+--- Section R: the honest residual (not a 2^16 gap, not staggered-Dirac) ---
+PASS: the residual is a readout/convention/dressing chain (I1 import + I2/I3 + P3 + L3a/L3b), NOT a 2^16 numeric gap
+PASS: I1 (static-source readout) is the highest-leverage piece = an ADMITTED IMPORT (candidate for a register-not-read native readout)
+PASS: the 4 pi geometry + g_bare=1 + exponent-count are native/retained (the gate is NOT wall-blocked by a native-2pi gap)
+
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

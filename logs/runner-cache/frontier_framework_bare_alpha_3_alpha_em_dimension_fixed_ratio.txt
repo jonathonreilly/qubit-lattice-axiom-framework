@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py
-runner_sha256: 745d282e55c95f9a99b36e0c3d9d9c631886e82eb1b8a03ee0cf5c925549c900
+runner_sha256: 59ddc20369517f0b1b8545cf6eaf20de7d19f4dc081174b812e0461533ac0b6c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 === Bare alpha_3 / alpha_em conditional bookkeeping lemma ===
-PASS: source file exists: docs/FRAMEWORK_BARE_ALPHA_3_ALPHA_EM_DIMENSION_FIXED_RATIO_SUPPORT_NOTE_2026-04-25.md
+PASS: source file exists: docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md
 PASS: note status is conditional algebra lemma only
 PASS: note declares supplied inputs
 PASS: note blocks retained EW-lane authority
 PASS: note blocks minimal-stack promotion
 PASS: note blocks low-energy phenomenology
-PASS: note distinguishes SU(5)
+PASS: note records current 2026-04-30 source authority
 PASS: forbidden overclaim absent: support corollary on a retained EW-normalization surface
 PASS: forbidden overclaim absent: retained EW normalization lane remains the authoritative route
 PASS: forbidden overclaim absent: candidate retained-grade support corollary on the retained EW surface

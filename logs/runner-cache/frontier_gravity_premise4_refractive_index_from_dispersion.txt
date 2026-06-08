@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py
+runner_sha256: a9aee4b10536ca657d98fa8894ca6c0f8a0ca4753e4711646cc0c505358cdf61
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+PASS T1 dispersion shift: n=k(x)/k0 = sqrt(1-phi/E) (Fermat refractive index)
+PASS T1b first-order: n = 1 - phi/(2E) (refractive index linear in phi)
+PASS T2 Fermat action S = int n dl = L - (1/2E) int phi dl (premise 4 form)
+PASS T2b S is linear in phi (refractive-index response)
+PASS T3 weak-field metric light index n=1-2Phi matches dispersion n=1-phi/2E (Phi=phi/4E)
+PASS T4 geodesic deflection of phi=a/r: alpha(b) = 2a/b (1/b lensing)
+PASS T4b alpha*b -> const (= 2a): confirms 1/b form
+PASS T5 CONTROL: no field coupling (n=1) -> zero deflection (teeth)
+PASS T6 geometric deflection slope = -1 (1/b), distinct from Kubo b^-2 (#3191)
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

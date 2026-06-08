@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/magnitude_reads_minimal_record_block_2026_06_06.py
+runner_sha256: dc58b2f5070fbb1c3e45fe487845dee5f45119c10414829cbe0915ba4d185e18
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+--- Section I: minimal physical temporal block = 2 (irreducible) ---
+PASS: staggered temporal phase eta_1(t)=(-1)^t has minimal period 2
+PASS: a SINGLE time-slice is NOT a translation-invariant cell (operator alternates) -> minimal cell = 2
+PASS: 2-step contraction e^{-2E} in (0,1] (reflection-positive, physical)
+PASS: single-step transfer non-positive (retained) -> minimal registrable block = 2 (not 1)
+--- Section R: registration (finite minimal block) vs reconstruction (continuum) ---
+PASS: registered temporal count at the minimal block = 2 (finite)
+PASS: continuum reconstruction (L_t -> infinity) has UNBOUNDED count (not a finite registration)
+PASS: a finite registration count (2) and a divergent reconstruction limit are DIFFERENT objects
+--- Section S: bare exponent = registration count; value = separate gate ---
+PASS: bare magnitude exponent at the registered minimal block = 8 x 2 = 16
+PASS: the continuum reconstruction would give 8 x L_t -> infinity (the realist slip if used for the bare exponent)
+PASS: the bare exponent (a count) is independent of the per-mode value alpha_LM (the running/DELTA0 gate)
+--- Section C: closure structure (bounded on register-not-read extension) ---
+PASS: mechanical core is retained-grade (minimal block = 2 via RP two-step)
+PASS: the readout-scale selection is a register-not-read PRINCIPLE-EXTENSION step (bounded, flagged)
+PASS: combined: exponent 16 = 8 (spatial, retained) x 2 (temporal, count+minimal-block+register) is native modulo register-not-read; the VALUE alpha_LM (DELTA0) stays open
+
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

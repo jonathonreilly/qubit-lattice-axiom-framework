@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / supplied selector-tangent-readout weight prototype
-**Claim type:** methodology / positive theorem
+**Claim type:** methodology / supplied-support
 **Status:** exact-support branch-local for supplied finite
 selector/tangent/readout weights; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
@@ -30,6 +30,18 @@ supplied finite tangent/readout carrier
 
 The prototype covers all `7` `selector_tangent_readout_weight` rows from the
 measure/weight subdivision.
+
+## 2026-06-08 supplied-support safe-narrow
+
+The audit blocker asks for a retained bridge deriving or explicitly accepting
+the selector/tangent/readout carrier, readout weights, and positive tangent
+metric/Hessian, or else for the row to remain scoped as supplied-support only.
+
+This source note takes the second route. It is a supplied-support finite
+certificate for a prototype carrier, metric/Hessian, and readout weights. It
+does not assert that Record derives those structures, does not turn the
+prototype into selector authority, and does not claim a positive theorem beyond
+the supplied finite packet.
 
 ## Meaning
 

@@ -37,10 +37,42 @@ independent derivation of the zero/neutral exactness or sign-flip from
 retained inputs. This repair restores the executable evidence needed to
 evaluate the bounded empirical observation, not theorem-level closure.
 
+## 2026-06-08 symmetry/orientation repair
+
+The conditional audit later asked for an independent derivation of the
+zero/neutral exactness and radial-shell sign-orientation flip, separate from
+the original replay runner. The paired certificate
+[`scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py`](../scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py)
+does that at the row actually claimed here.
+
+The certificate does not call the old `_measure_family` path. It reconstructs
+the radial row, then uses two source-local facts:
+
+1. The source field is linear in the supplied point charge. Therefore the
+   empty-source field is exactly zero, and the same-point `+1/-1` neutral
+   source field cancels componentwise to exactly zero.
+2. At zero source, the propagation recurrence can be differentiated edge by
+   edge. For an edge transfer
+   `T_ij(q)=exp(i K L_ij (1 + q f_ij)) W_ij`, the derivative is
+   `T'_ij(0)=T_ij(0) i K L_ij f_ij`. Propagating this variational recurrence
+   gives a negative first-order detector-centroid response for the positive
+   source on the `drift=0.20, seed=0` radial row.
+
+Thus the exact zero/neutral controls follow from field linearity and
+deterministic propagation, while the sign flip is certified by a
+first-order orientation coefficient rather than by the old finite replay
+alone.
+
+Boundary: this is still a bounded row certificate. It does not prove a wider
+radial basin, a family-wide theorem, or a corrected positive-orientation
+variant.
+
 ## Artifact Chain
 
 - [`scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py`](../scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py)
+- [`scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py`](../scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py)
 - [`logs/2026-04-06-fifth-family-radial-failure-audit.txt`](../logs/2026-04-06-fifth-family-radial-failure-audit.txt)
+- [`logs/runner-cache/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.txt`](../logs/runner-cache/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.txt)
 - [`archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md`](../archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md)
 
 ## Boundary

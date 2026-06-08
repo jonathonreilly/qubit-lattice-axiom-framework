@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_leading_lattice_correction_cubic_anisotropy.py
+runner_sha256: e168cffdd005d58ec929e51e9122f3766efafc1cee82a86f9502427acece18a5
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.82
+status: ok
+----- stdout -----
+PASS T1 dispersion 2-2cos k = k^2 - k^4/12 + O(k^6) (the -1/12 source)
+PASS T2 residual Delta(r)=G(r)-1/(4pi r) ~ 1/r^3 (power 3) on all directions
+PASS T3 Delta*r^3/K4 direction-independent ([100],[110],[111] agree => c*K4/r^3 structure)
+PASS T4 coefficient c = 5/(32 pi) (extrapolated; c*32pi = 5.0002)
+PASS T5 spherical average of K4 = 0 (=> purely anisotropic, no isotropic 1/r^3)
+PASS CTRL wrong coefficient 1/(8 pi) is rejected
+
+RESULT: G(r) = 1/(4 pi r) + [5/(32 pi)] K4(nhat)/r^3 + O(1/r^5);  c_inf*32pi = 5.0002
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

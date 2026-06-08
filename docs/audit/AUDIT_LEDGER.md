@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 750 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1332 |
+| unaudited | 1331 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1172 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1645 |
+| `unaudited` | 1644 |
 
 | claim_type | count |
 |---|---:|
@@ -1315,6 +1315,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
@@ -6427,6 +6428,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `audit_queue_runner_path_null_for_named_primary_verifier`
   - `retained_EW_bare_coupling_bookkeeping_not_registered_one_hop_dependency`
   - `Cl3_to_SM_dimension_count_d_plus_1_d_plus_2_support_packet_not_registered_one_hop_dependency`
+- **auditor confidence:** high
+
+### `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30`
+
+- **Note:** [`FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md`](../../docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Conditional algebraic consequences of the supplied bare-coupling inputs, including g_em^2 = 1/(2d+3), alpha_3(bare)/alpha_em(bare) = 9 at d=3, and sin^2(theta_W)(bare) = 4/9 at d=3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-151113-7b49ff1c6f-framework_bare_alpha_ratio_a`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If g_3^2 = 1, g_2^2 = 1/(d + 1), and g_Y^2 = 1/(d + 2), then the inverse-EM bookkeeping gives 1/g_em^2 = (d + 1) + (d + 2) = 2d + 3.  _(class `A`)_
+- **chain closes:** True — The rational substitutions close exactly once the supplied coupling inputs and inverse-EM/weak-angle bookkeeping conventions are granted. The restricted packet does not derive those inputs, so the result remains conditional rather than retained-grade clean.
+- **rationale:** Independent recomputation confirms the displayed algebra: the inverse sum gives 2d+3, d=3 gives g_em^2=1/9 and alpha_3/alpha_em=9, and the weak-angle ratio gives 4/9. The runner source performs exact Fraction arithmetic for those substitutions and also checks source-boundary language. However the coupling inputs and bookkeeping normalization are explicitly assumed support-side premises, not derived or closed by cited retained authorities in the restricted packet.
 - **auditor confidence:** high
 
 ### `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`

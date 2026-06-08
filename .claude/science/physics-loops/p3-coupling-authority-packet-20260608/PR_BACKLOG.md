@@ -1,14 +1,16 @@
 # PR Backlog
 
-Status: pending PR creation.
+Status: PR created.
 
-Planned title:
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3246
+
+Title:
 
 ```text
 [physics-loop] p3-coupling-authority-packet open
 ```
 
-Planned verification:
+Verification:
 
 ```bash
 python3 scripts/p3_coupling_is_retention_eligible_composition_2026_06_06.py

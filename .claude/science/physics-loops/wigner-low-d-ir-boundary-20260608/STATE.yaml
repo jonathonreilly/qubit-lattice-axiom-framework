@@ -15,7 +15,7 @@ open_imports:
   - Ward/order-parameter commutator normalization bridge
   - retained Noether-current bridge beyond the finite charge-commutation model
 trace_gate_classification: direct_blocker_closure
-review_findings: pending
-pr_status: pending
-next_exact_action: commit, push, and open review PR
-stop_condition: PR opened and remaining conditional backlog rescanned
+review_findings: pending reviewer extraction
+pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3281
+next_exact_action: reviewer extraction and independent audit decision
+stop_condition: PR opened; remaining conditional backlog can be rescanned from main

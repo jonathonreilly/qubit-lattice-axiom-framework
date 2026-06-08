@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 767 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1309 |
+| unaudited | 1308 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1198 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1624 |
+| `unaudited` | 1623 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 520 |
 | `high` | 444 |
-| `medium` | 774 |
-| `leaf` | 1273 |
+| `medium` | 773 |
+| `leaf` | 1274 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
@@ -1369,6 +1369,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -18630,6 +18631,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md`
   - `UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md`
+- **auditor confidence:** high
+
+### `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Brillouin-zone Zener-anisotropy diagnostic for the implemented naive-Dirac and staggered Kähler-Dirac graviton-stiffness vertices, including the staggered A≈0.97 contrast.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-212709-575ec7f39f-universal_gr_graviton_isotro`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The staggered Kähler-Dirac graviton stiffness computed from the exact 16x16 hypercube block is approximately isotropic, with Zener A≈0.97 and only a few-percent Eg/T2g split, unlike the naive Dirac A≈2.1.  _(class `C`)_
+- **chain closes:** False — The runner source genuinely constructs the lattice operators and computes the finite Zener ratios rather than printing constants, and the cited retained-bounded matter-sector notes support the staggered scalar spectrum/SO(4) continuum context. The restricted packet does not close the bridge identifying the implemented non-conserved, vertex-scheme-dependent staggered stress vertex with the claimed W-native induced-graviton stiffness; the source note itself says the fully conserved staggered stress vertex is not built here.
+- **rationale:** The finite diagnostic closes as a runner-defined computation: T1/T3 are algebraic checks and T2/T4/T5 are first-principles finite sums over explicitly constructed lattice operators. However, the theorem as written reaches beyond that diagnostic by calling the result the W-native induced graviton while relying on a vertex scheme whose conserved staggered stress construction is explicitly open and not supplied as a retained one-hop authority. The clean auditable statement would need either that missing vertex bridge or a narrowed claim limited to the runner-defined approximate vertex.
+- **open / conditional deps cited:**
+  - `universal_gr_stress_ward_transverse_seagull (path not supplied in restricted packet)`
+  - `universal_gr_induced_graviton_w_native_finite_k (path not supplied in restricted packet)`
 - **auditor confidence:** high
 
 ### `universal_gr_invariant_frame_obstruction_note`

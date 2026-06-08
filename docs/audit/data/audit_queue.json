@@ -17619,7 +17619,7 @@
       "claim_id": "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,

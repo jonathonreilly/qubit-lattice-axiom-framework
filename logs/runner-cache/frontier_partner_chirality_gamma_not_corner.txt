@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_partner_chirality_gamma_not_corner.py
+runner_sha256: 6b47e5c59c226ea1988482b157cada21b043cee4d041bbed3284468a46baa91c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+PASS: A_Cl30_spinor_is_2comp_one_chirality Cl(3,0) spinor = 2-component Weyl (one chirality)
+PASS: A_e4_extension_gives_4comp_dirac_partner adjoining e_4 (->Cl(3,1)) gives the 4-comp Dirac bispinor with gamma_5 (partner chirality, balanced L/R)
+PASS: A_spinor_doubled_2_to_4 SPINOR doubling: 2 -> 4 components (a Clifford-ALGEBRA fact, no momentum)
+PASS: B_species_corners_3_spatial_is_8 3 spatial lattice dims -> 2^3 = 8 doubler corners (k_i in {0,pi})
+PASS: B_a_4th_lattice_dim_gives_16 a 4th LATTICE direction -> 2^4 = 16 corners (the magnitude lane's ×2 = the 4th corner)
+PASS: B_two_corners_per_lattice_direction sin(k_mu)=0 at k_mu in {0,pi}: 2 corners per DISCRETE direction
+PASS: DISTINCT_gamma_vs_corner (A) e_4 = a 4x4 Clifford generator (spinor 2->4); (B) 4th lattice dim = a 8->16 momentum-corner count: DIFFERENT doublings
+PASS: CONT_continuous_time_gives_gamma_not_corner continuous emergent time -> gamma^0=e_4 (structure A) PRESENT; k_4 species corner (structure B) ABSENT
+PASS: RESOLVE_partner_available_decoupled_from_magnitude partner chirality needs (A) e_4-gamma -> AVAILABLE from continuous time; magnitude ×2 needs (B) k_4-corner -> absent but NOT needed: DECOUPLED
+
+TOTAL: PASS=9 FAIL=0
+VERDICT: the partner chirality and the magnitude's missing 4th corner are DIFFERENT doublings -- (A) the SPINOR doubling adjoins the 4th Clifford GAMMA e_4 (2->4 components, the chiral grading), a pure algebra fact; (B) the SPECIES doubling adjoins a 4th LATTICE direction (8->16 momentum corners). Continuous emergent time supplies a time DIRECTION -> the gamma e_4 (A), but no discrete time lattice -> no k_4 corner (B). The partner chirality needs only (A) and is therefore AVAILABLE from continuous emergent time; it is NOT blocked by the magnitude lane's missing-4th-corner wall (B). The keystone's chirality DOF is supplied; the remaining residual is the FIELD construction (positive energy + microcausality), not the chirality.
+
+----- stderr -----
+

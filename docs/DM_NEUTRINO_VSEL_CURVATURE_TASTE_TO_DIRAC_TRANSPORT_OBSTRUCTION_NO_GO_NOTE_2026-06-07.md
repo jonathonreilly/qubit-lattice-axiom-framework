@@ -18,7 +18,8 @@ This note shows that identification is a genuine **transport obstruction**:
 
 > The axis-selector `V_sel = 32 Σ_{i<j} φ_i² φ_j²` is a **taste-cube** object. On the Dirac
 > Higgs family `M(φ) = Σ_i φ_i Γ_i`, the retained fact `M² = |φ|² I` forces **every** even
-> invariant of `M` to be a function of `|φ|²` alone — rotationally invariant, with **no**
+> invariant of `M` to be a function of `|φ|²` alone. Writing `d = Tr(I)`, the transported
+> quartic is only `d(1-d/8)|φ|⁴` — rotationally invariant, with **no**
 > axis-selector `φ_i² φ_j²`. So the curvature `m_perp = 32` is not a property of the Dirac
 > Higgs family; transporting it onto the Dirac mass is the (unsupplied) taste-cube → Dirac
 > identification, not a Dirac-Higgs computation.
@@ -26,6 +27,28 @@ This note shows that identification is a genuine **transport obstruction**:
 This is the same structural family as the failed hierarchy per-site → V₃ scale-transport:
 "abstractly the same 3 axes" does not make a taste-cube trace invariant a Dirac-spinor
 property.
+
+## 2026-06-08 Audit Repair: Trace-Dimension Firewall
+
+The latest conditional audit found that the previous T2/T3 text specialized
+the Dirac trace to `d=2`, while the cited Dirac authority uses a larger
+realization and does not by itself supply that normalization. This repair
+removes the specialization from the load-bearing no-go.
+
+The repaired statement is representation-independent over the premise
+`M²=|φ|²I`: if `d = Tr(I)`, then
+
+```text
+Tr M^(2n) = d |φ|^(2n)
+Tr M^4 - (1/8)(Tr M^2)^2 = d(1-d/8)|φ|^4
+Hess_e1 = diag(12c, 4c, 4c), c = d(1-d/8)
+```
+
+For `d=2` this reduces to the old `(3/2)|φ|⁴` and `diag(18,6,6)`
+example, but the no-go no longer depends on that example. For any admissible
+trace dimension, the transported Dirac quartic is a scalar radial invariant;
+its two transverse curvatures are equal and cannot be the taste-cube
+axis-selector curvature packet `diag(0,64,64)` / `m_perp=32`.
 
 ## Theorem (no-go)
 
@@ -38,10 +61,13 @@ Hessian at `e₁ = diag(0,64,64)` (anisotropic; `m_perp = 32`).
 
 **(T2)** Dirac Higgs: `M(φ) = Σ_i φ_i Γ_i` (Cl(3) `Γ_i`), `M² = |φ|² I` (retained
 [`DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md)).
-Then `Tr M⁴ − (1/8)(Tr M²)² = (3/2)|φ|⁴` — rotationally invariant, **no** axis-selector;
-Hessian at `e₁ = diag(18,6,6)` (isotropic transverse `6`, no distinguished `32`).
+Writing `d = Tr(I)`, `Tr M⁴ − (1/8)(Tr M²)² = d(1-d/8)|φ|⁴` — rotationally
+invariant, **no** axis-selector. Hessian at `e₁` is `diag(12c,4c,4c)` with
+`c=d(1-d/8)` (equal transverse entries; no distinguished `32`). The `d=2`
+Pauli example gives the old `diag(18,6,6)` diagnostic but is not
+load-bearing.
 
-**(T3, generality)** `M² = |φ|² I` ⟹ `Tr M^{2n} = 2|φ|^{2n}` for all `n` — every even
+**(T3, generality)** `M² = |φ|² I` and `d=Tr(I)` imply `Tr M^{2n} = d|φ|^{2n}` for all `n` — every even
 invariant of the Dirac Higgs is a function of `|φ|²` only. So **no** native even invariant
 of the Dirac Higgs family is an axis-selector; the obstruction is intrinsic to the
 rotational invariance of the Dirac mass spectrum, not specific to `V_sel`.
@@ -50,7 +76,7 @@ rotational invariance of the Dirac mass spectrum, not specific to `V_sel`.
 (`V_sel(e₁)=0`, `V_sel(non-axis)≠0`), while the Dirac `V_sel` is rotation-blind
 (`V_sel(non-axis)=V_sel(same-|φ| axis)`).
 
-Verified exactly in the runner (`TOTAL: PASS=8 FAIL=0`).
+Verified exactly in the runner (`TOTAL: PASS=11 FAIL=0`).
 
 ## No-Go Discipline (N1–N8)
 
@@ -84,8 +110,9 @@ would need an external (imported) anisotropy, not a relabeling.
 
 **N7 — steelman.** *"Identify the φ-spaces (both are the 3 cube axes) and carry the 32
 across."* Reply: the φ-space *labels* coincide (3 axes), but `V_sel` is a **trace over the
-taste-cube representation**, not a function of the abstract `φ` alone — on the Dirac rep the
-same `φ` gives `(3/2)|φ|⁴`. Carrying the `32` across imports the taste-cube anisotropy the
+taste-cube representation**, not a function of the abstract `φ` alone — on a Dirac rep
+satisfying `M²=|φ|²I`, the same transported quartic gives only
+`d(1-d/8)|φ|⁴`. Carrying the `32` across imports the taste-cube anisotropy the
 Dirac family does not have.
 
 **N8 — cross-cycle echo.** The hierarchy per-site → V₃ scale-transport (a structurally

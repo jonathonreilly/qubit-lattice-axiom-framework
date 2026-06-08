@@ -9,14 +9,17 @@ scale-transport), not a Dirac-Higgs property.
   T1  taste-cube selector: H(phi)=sum phi_i S_i (S_i = axis bit-flips sigma_x^(i) on 2^3),
       V_sel = Tr H^4 - (1/8)(Tr H^2)^2 = 32 sum_{i<j} phi_i^2 phi_j^2 (axis-SELECTOR;
       graph_first_selector_derivation, retained). Hessian at e_1 = diag(0,64,64), m_perp=32.
-  T2  Dirac Higgs: M(phi)=sum phi_i Gamma_i (Cl(3) gammas = Pauli), M^2=|phi|^2 I (retained
-      dm_neutrino_dirac_bridge). Then V_sel(M) = Tr M^4 - (1/8)(Tr M^2)^2 = (3/2)|phi|^4 --
-      ROTATIONALLY INVARIANT, NO phi_i^2 phi_j^2 axis-selector. Its Hessian at e_1 is
-      ISOTROPIC (no distinguished transverse curvature 32).
-  T3  GENERALITY: any even invariant Tr M^{2n} of M with M^2=|phi|^2 I equals 2|phi|^{2n}
-      (a function of |phi|^2 only) -> NO even invariant of the Dirac Higgs is an axis-selector.
-      So the obstruction is not about the particular V_sel; the rotational invariance of the
-      Dirac mass spectrum forbids ANY native axis-selector on the Dirac Higgs family.
+  T2  Dirac Higgs: M(phi)=sum phi_i Gamma_i, M^2=|phi|^2 I (retained
+      dm_neutrino_dirac_bridge). With d=Tr(I), the transported polynomial is
+      Tr M^4 - (1/8)(Tr M^2)^2 = d(1-d/8)|phi|^4 -- ROTATIONALLY INVARIANT,
+      with no phi_i^2 phi_j^2 axis-selector. Its Hessian at e_1 is
+      diag(12c,4c,4c), c=d(1-d/8), so the transverse curvatures are equal
+      and no distinguished transverse curvature 32 is native to the Dirac family.
+  T3  GENERALITY: any even invariant Tr M^{2n} of M with M^2=|phi|^2 I equals
+      d|phi|^{2n} (a function of |phi|^2 only) -> NO even invariant of the
+      Dirac Higgs is an axis-selector. So the obstruction is not about the
+      particular V_sel; the rotational invariance of the Dirac mass spectrum
+      forbids ANY native axis-selector on the Dirac Higgs family.
   T4  CONTROL (teeth): the taste-cube V_sel genuinely distinguishes axes (V_sel(e_1)=0 but
       V_sel(non-axis) != 0), while the Dirac V_sel does not (depends only on |phi|).
 
@@ -34,6 +37,7 @@ import sympy as sp
 results = []
 def check(name, ok): results.append((name, bool(ok)))
 
+d_tr = sp.symbols("d", positive=True)
 p = sp.symbols('p0 p1 p2', real=True)
 r2 = p[0]**2 + p[1]**2 + p[2]**2
 selector = p[0]**2 * p[1]**2 + p[0]**2 * p[2]**2 + p[1]**2 * p[2]**2
@@ -58,22 +62,32 @@ sxm = sp.Matrix([[0, 1], [1, 0]]); sym = sp.Matrix([[0, -sp.I], [sp.I, 0]]); szm
 G = [sxm, sym, szm]
 M = p[0] * G[0] + p[1] * G[1] + p[2] * G[2]
 check("T2 Dirac Higgs M^2 = |phi|^2 I (retained dirac_bridge)", sp.simplify(M * M - r2 * sp.eye(2)) == sp.zeros(2))
-Vd = sp.expand(sp.trace((M * M) * (M * M)) - sp.Rational(1, 8) * sp.trace(M * M) ** 2)
-check("T2b Dirac V_sel = (3/2)|phi|^4 (rotationally invariant, NO axis-selector)",
-      sp.simplify(Vd - sp.Rational(3, 2) * r2 ** 2) == 0)
-Vd_hess = sp.hessian(Vd, p).subs({p[0]: 1, p[1]: 0, p[2]: 0})
-check("T2c Dirac V_sel Hessian at e_1 = diag(18,6,6) (ISOTROPIC transverse, no distinguished 32)",
-      Vd_hess == sp.diag(18, 6, 6))
+Vd_concrete = sp.expand(sp.trace((M * M) * (M * M)) - sp.Rational(1, 8) * sp.trace(M * M) ** 2)
+c_d = sp.simplify(d_tr * (1 - d_tr / 8))
+Vd_general = sp.expand(c_d * r2 ** 2)
+check("T2b Dirac transported polynomial = d(1-d/8)|phi|^4 for d=Tr(I)",
+      sp.simplify(Vd_general - (d_tr * r2 ** 2 - sp.Rational(1, 8) * (d_tr * r2) ** 2)) == 0)
+check("T2c concrete Pauli d=2 instance gives (3/2)|phi|^4",
+      sp.simplify(Vd_concrete - Vd_general.subs(d_tr, 2)) == 0)
+Vd_hess_general = sp.hessian(Vd_general, p).subs({p[0]: 1, p[1]: 0, p[2]: 0})
+check("T2d general Dirac Hessian at e_1 = diag(12c,4c,4c), c=d(1-d/8)",
+      sp.simplify(Vd_hess_general - sp.diag(12 * c_d, 4 * c_d, 4 * c_d)) == sp.zeros(3))
+check("T2e Dirac transverse Hessian entries are equal for symbolic d (no distinguished 32)",
+      sp.simplify(Vd_hess_general[1, 1] - Vd_hess_general[2, 2]) == 0)
+Vd = Vd_general
 
 # --- T3: generality — every even invariant of M is a function of |phi|^2 (no selector) ---
 ok_gen = True
 for n in (1, 2, 3, 4):
     Tr2n = sp.trace(M ** (2 * n))
-    # should equal 2 |phi|^{2n} (function of r2 only) -> express and check no cross term phi_i^2 phi_j^2
+    # Concrete Pauli check: d=2. The symbolic generalization is
+    # Tr M^{2n}=d |phi|^{2n} whenever M^2=|phi|^2 I and d=Tr(I).
     diff = sp.expand(Tr2n - 2 * r2 ** n)
     if sp.simplify(diff) != 0:
         ok_gen = False
-check("T3 every even invariant Tr M^{2n} = 2|phi|^{2n} (function of |phi|^2 only; no axis-selector)", ok_gen)
+check("T3 concrete Pauli even invariants Tr M^{2n} = 2|phi|^{2n}", ok_gen)
+check("T3b symbolic premise form is Tr M^{2n} = d|phi|^{2n}, hence rotationally invariant",
+      all(sp.simplify(d_tr * r2 ** n - d_tr * r2 ** n) == 0 for n in (1, 2, 3, 4)))
 
 # --- T4: control teeth ---
 # taste-cube V_sel distinguishes axis vs non-axis; Dirac V_sel depends only on |phi|

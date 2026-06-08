@@ -1,0 +1,19 @@
+loop_slug: backreaction-live-threshold-wrapper-20260608
+branch: physics-loop/backreaction-live-threshold-wrapper-20260608
+base: origin/main
+target_claim_id: backreaction_note
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: restore_live_threshold_wrapper
+files_touched:
+  - docs/BACKREACTION_NOTE.md
+open_imports:
+  - independent audit of restored live wrapper
+  - no archived G_crit ~= 0.011 threshold
+  - no continuum horizon theorem
+trace_gate_classification: direct_blocker_closure
+review_findings: pending
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: PR opened and remaining backlog rescanned

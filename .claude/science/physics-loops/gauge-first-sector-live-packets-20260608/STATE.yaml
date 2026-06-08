@@ -1,0 +1,22 @@
+loop_slug: gauge-first-sector-live-packets-20260608
+branch: physics-loop/gauge-first-sector-live-packets-20260608
+base: origin/main
+target_claim_ids:
+  - gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19
+  - gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: restore_live_source_notes_for_missing_runner_rows
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_RANK_ONE_FACTORIZED_CLASS_BOUNDARY_NOTE_2026-04-19.md
+  - docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TAIL_UNDERDETERMINATION_THEOREM_NOTE_2026-04-19.md
+open_imports:
+  - independent audit of the restored live source notes
+  - no full Wilson-environment identification
+  - no continuum gauge theorem
+trace_gate_classification: direct_blocker_closure
+review_findings: pending
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: PR opened and remaining backlog rescanned

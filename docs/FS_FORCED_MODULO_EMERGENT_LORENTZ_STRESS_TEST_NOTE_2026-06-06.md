@@ -1,4 +1,4 @@
-# FS Stress-Test: the Fermion Sign is "Forced-Modulo Emergent-Lorentz + R", Not a Free Admission Needing a New Principle
+# FS Stress-Test: the Fermion Sign is Forced-Modulo Realization Gate + Emergent-Lorentz + R
 
 **Date:** 2026-06-06
 **Claim type:** bounded_theorem (exercise stress-test; reclassifies a prior verdict)
@@ -17,16 +17,16 @@ verdict. Reclassifies (does not overturn the static reading of) the same-day
 The repo's `/exercise` skill (5-subagent fan-out + literature) run as a
 **stress-test** of the prior conclusion "FS (the cross-site fermion exchange sign)
 is an irreducible admission," under the owner constraint: **introduce no new
-import/principle/axiom beyond the approved Planck scale-reference primitive** unless
-genuinely forced (and then name the single cheapest one).
+axiom or primitive** unless genuinely forced.
 
 ## Refined verdict (runner SCORECARD 15/15 PASS)
 
-**The current route does not require a new principle beyond Planck.** It reclassifies from
-"irreducible admission" to **"forced-modulo emergent-Lorentz + R"** — conditional on
-a framework **target** (emergent Lorentz) plus a buildable reconstruction `R`, not on
-a new axiom. The static "admission" reading is correct for `{Lattice, Quantum,
-Record}` *alone*, but it abstracts away the spin-1/2-ness of the qubit and the
+**The current route adds no new axiom or primitive.** It reclassifies from
+"irreducible admission" to **forced-modulo realization gate + emergent-Lorentz + R**:
+conditional on the Link-B realization-gate identification, a framework **target**
+(emergent Lorentz), and a buildable reconstruction `R`, not on a new axiom. The
+static "admission" reading is correct for `{Lattice, Quantum, Record}` *alone*, but
+it abstracts away the spin-1/2-ness of the qubit, the realization gate, and the
 emergent-Lorentz continuum.
 
 ### The forcing chain
@@ -34,14 +34,15 @@ emergent-Lorentz continuum.
 | Link | Content | Repo status |
 |---|---|---|
 | **A** | the qubit carries spin-1/2 | **retained** (`per_site_su2_spin_half`); the rotation su(2) `S_i=σ_i/2` *are* the Clifford Spin(3) bivectors (`internal_external_su2_merger`, retained_bounded) |
-| **B** | algebra-3 = spatial-3 | **retained at the discrete level** (`O_h` acts on Cl(3) by the vector rep; qubit = 2D spinor, `2π=−1`; `cl3_oh_cubic_lift`). Continuum upgrade = Link C — **not the residual** |
+| **B** | algebra-3 = spatial-3 | **abstract O_h vector rep: supported** (`O_h` acts on the *abstract* Cl(3) by the vector rep; qubit = 2D spinor, `2π=−1`; `cl3_oh_cubic_lift`). The *algebra-3 = spatial-3 identification* remains **conditional on the staggered/Kähler-Dirac realization gate** (see the 2026-06-08 correction), so the identification is part of the residual with C |
 | **C** | emergent Lorentz | framework **target** / bounded-conditional (`emergent_lorentz_invariance` retained_bounded) — **not a new axiom** |
 | **D** | spin-statistics theorem (engine) | **rigorous comparator**: a spin-1/2 field quantized bosonically is inconsistent (energy unbounded below / trivial field; Pauli 1940, Streater–Wightman). So spin-1/2 + Lorentz + positivity ⟹ **fermionic forced**; the hard-core **spin-0** boson is excluded |
 
 Verified in the runner: the spin-1/2 CCR attempt has a `−E` mode (unbounded below),
 while the spin-1/2 CAR spectrum is `≥ 0` — the engine's content.
 
-**The single residual** is the continuum upgrade of Link B (= Link C) plus the
+**The residual** is the *identification* Link B (the staggered/Kähler-Dirac realization gate;
+see the 2026-06-08 correction), its continuum upgrade (= Link C), plus the
 OS→Wightman reconstruction **`R`** (`free_field_os_wightman_reconstruction`,
 unaudited), which must deliver the boost-spinor and the antiparticle sign **without
 presupposing the fermionic branch** (currently circular — see
@@ -68,15 +69,40 @@ remains open), so it should not be invoked prematurely or attributed to Record.
 
 ## Owner bottom line
 
-- **No new principle beyond Planck is needed on the current route.** FS rides on **emergent Lorentz** (a
-  framework target) + the reconstruction **`R`** (buildable), fed through the standard
-  spin-statistics engine.
-- **Reclassify FS:** *forced-modulo emergent-Lorentz + `R`* — conditional on a target,
-  not a free-standing admission.
+- **No new axiom or primitive is added on the current route.** FS rides on the
+  realization-gate residual + **emergent Lorentz** (a framework target) + the
+  reconstruction **`R`** (buildable), fed through the standard spin-statistics engine.
+- **Reclassify FS:** *forced-modulo realization gate + emergent-Lorentz + `R`* —
+  conditional on residual/target surfaces, not a free-standing new axiom.
 - The genuine next artifact is **`R`**: prove the relativistic spin-1/2 reconstruction
   (and the reflection-positivity that excludes the bosonic branch) without
   presupposing the sign — the live blocker (cf. the prior failed-attempt
   `..._reflection_positivity_wilson_temporal_gauge_bridge`).
+
+## 2026-06-08 Correction — Link B "retained at the discrete level" was an over-read
+
+The Link-B row originally read "retained at the discrete level" for "algebra-3 = spatial-3".
+The cited authority (`cl3_oh_cubic_lift`, with `internal_external_su2_merger`) establishes only
+the **abstract** fact — `O_h` lifts to act on the **abstract `Cl(3)`/Pauli generator triple**
+as the vector rep (inner automorphisms of `M₂(ℂ)`) — **not** the **external identification**
+that the abstract Clifford-3 *is* the spatial `Z³` lattice-3:
+
+- the merger note's **Reading Rule** forbids citing it "to obtain lattice discreteness,
+  translation primitives, cubic Bravais structure," and it "does not identify cubic lattice
+  primitive translation axes";
+- #2559 ruled `M₂(ℂ)=Cl(3,0)=GA(3)` a **matched-pair consistency, not a derivation** (`d=3` is
+  a `Z³` primitive);
+- this note supplies no separate theorem that the Clifford generator index is the spatial
+  lattice-edge index. That identification is exactly the staggered/Kähler-Dirac realization
+  gate left open here, not a consequence of the three baseline axioms by itself.
+
+**Corrected reading:** the *abstract* O_h vector rep on the Clifford triple is **supported/tight**;
+the *identification* algebra-3 = spatial-3 is **conditional on the realization gate** — so Link B
+is **part of the residual** (with C), and the chain reads
+**FS = forced-modulo {identification/realization gate + emergent Lorentz (C) + R}**. Downstream notes must
+cite Link B only for the abstract O_h vector rep, **not** as supplying the external-spacetime
+identification. This re-tags one over-read; it does not overturn the core reclassification (FS
+is not a free-standing new-axiom admission).
 
 ## Honest scope
 

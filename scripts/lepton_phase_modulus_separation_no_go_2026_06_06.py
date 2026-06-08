@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Charged-lepton r (modulus) and delta (phase) live on SEPARATE C3-invariants:
-a real C3-invariant scalar action can fix r but PROVABLY cannot stationarize delta.
+Charged-lepton r (modulus) and delta (phase) live on separate spectral
+invariants, but the original universal scalar-action no-go was too broad.
 
 Narrow no-go (negative_route_pruning), from the delta=2/9 fresh-angle hunt
 (workflow wa0o7fje5, Lens 1). For the Brannen/circulant sqrt-mass spectrum
@@ -12,20 +12,22 @@ with r = |b|^2/a^2 (Koide modulus, r=1/2 <=> Q=2/3) and delta = arg(b) (phase):
         e1 = 3 a                              (scale)
         e2 = 3 a^2 (1 - r)                     (delta-BLIND; carries r => Q=2/3)
         e3 = a^3 (1 - 3 r + 2 r^{3/2} cos 3delta)   (the ONLY carrier of delta, via cos 3delta)
-  (W) any real C3-invariant scalar action W(|z|^2, Re z^3) (z = b/a = sqrt(r) e^{i delta},
-      so |z|^2 = r, Re z^3 = r^{3/2} cos 3delta) has delta-stationarity
-        dW/ddelta  proportional to  sin(3 delta)  =>  3 delta in {0, pi} mod 2pi
-        =>  delta in {0, pi/3, 2pi/3, ...}   (the C3-rational directions).
-  So such an action CAN fix the modulus r (-> r=1/2) but can NEVER stationarize the
-  phase delta at 2/9 (which needs 3 delta = 2/3, NOT a multiple of pi).
+  (W) for the restricted conjugation-even/spectral subclass W(|z|^2, Re z^3),
+      phase stationarity factorizes as W_X * sin(3 delta) = 0.  If W_X is
+      nonzero at the candidate point, stationary phases are only the C3-rational
+      directions delta = n*pi/3, so delta=2/9 is excluded.
+
+  (F) the broader claim "any real C3-invariant scalar action cannot
+      stationarize delta=2/9" is false: a general real C3 invariant may depend
+      on both Re z^3 and Im z^3, and even the conjugation-even subclass can
+      stationarize a supplied target through the degenerate W_X=0 branch.
 
 CONVERGES with this session's partition-map result (register-not-read delivers the
-weight RATIO r, never the within-block PHASE delta): both the variational route and
-the partition route land on the MODULUS; neither touches the phase. Hence delta is
-structurally a PHASE requiring a C3-COVARIANT (eta/holonomy) object -- the SAME
-chirality/orbit-splitting gate as Koide-Q and generation-ID. delta=2/9 is NOT an
-independent target. This PRUNES the scalar/variational/partition route to delta; it
-does NOT close delta=2/9 (the covariant eta/holonomy = chirality route is untouched).
+weight RATIO r, never the within-block PHASE delta): the partition route lands on
+the MODULUS. The phase still needs a genuine selector, covariant route, or
+explicitly supplied target. This packet now prunes only the active nondegenerate
+spectral-scalar branch; it does not claim a universal scalar no-go and does not
+close delta=2/9.
 """
 import sympy as sp
 
@@ -65,11 +67,11 @@ check("d e3/d delta proportional to sin(3 delta) (delta enters only via cos 3del
       sp.simplify(de3 + 6 * a ** 3 * r ** sp.Rational(3, 2) * sp.sin(3 * d)) == 0)
 
 # ===========================================================================
-# SECTION W -- the Wirtinger phase-blindness no-go.
-# Any real C3-invariant scalar W is a function of the C3-invariants; the ONLY
-# delta-bearing invariant is Re z^3 = r^{3/2} cos(3 delta). So dW/ddelta ~ sin(3 delta).
+# SECTION W -- the restricted nondegenerate spectral-scalar no-go.
+# For W(r, X) with X = Re z^3, stationarity factorizes.  The nondegenerate
+# branch W_X != 0 forces sin(3 delta)=0; the W_X=0 branch remains open/degenerate.
 # ===========================================================================
-print("--- Section W: scalar C3-invariant action stationarity forces 3 delta in {0,pi} ---")
+print("--- Section W: nondegenerate conjugation-even/spectral scalar branch ---")
 X = sp.symbols('X', real=True)         # X = Re z^3 = r^{3/2} cos(3 delta)
 W = sp.Function('W')
 # W depends on delta only through X(delta) = r^{3/2} cos(3 delta)
@@ -86,33 +88,61 @@ print(f"  stationary delta in [0,2pi): {stationary}")
 n_for_2_9 = sp.Rational(2, 9) / (sp.pi / 3)
 check("delta=2/9 is NOT a stationary phase (2/9 != n pi/3 for any integer n; n would be 2/(3pi))",
       not n_for_2_9.is_integer)
-check("=> a real C3-invariant scalar action can fix r (modulus) but PROVABLY cannot "
-      "stationarize delta at 2/9 (phase-blindness no-go)", True)
+check("restricted no-go: if W_X != 0 in the spectral/even scalar subclass, delta=2/9 is excluded",
+      True)
 
 # ===========================================================================
-# SECTION C -- convergence with the partition-map result + the two-class conclusion.
+# SECTION F -- the two failure branches that kill the old universal no-go.
 # ===========================================================================
-print("--- Section C: convergence with register-not-read; r=modulus, delta=phase ---")
+print("--- Section F: counter-branches to the old universal scalar no-go ---")
+delta0 = sp.Rational(2, 9)
+Yexpr = r ** sp.Rational(3, 2) * sp.sin(3 * d)
+X0 = r ** sp.Rational(3, 2) * sp.cos(3 * delta0)
+Y0 = r ** sp.Rational(3, 2) * sp.sin(3 * delta0)
+
+check("Re z^3 is C3-invariant under delta -> delta + 2pi/3",
+      sp.simplify(Xexpr.subs(d, d + 2 * sp.pi / 3) - Xexpr) == 0)
+check("Im z^3 is also C3-invariant under delta -> delta + 2pi/3",
+      sp.simplify(Yexpr.subs(d, d + 2 * sp.pi / 3) - Yexpr) == 0)
+
+W_full_targeted = sp.expand((Xexpr - X0) ** 2 + (Yexpr - Y0) ** 2)
+check("general real C3 scalar W(r, Re z^3, Im z^3) can stationarize a supplied delta=2/9 target",
+      sp.simplify(sp.diff(W_full_targeted, d).subs(d, delta0)) == 0)
+check("general real C3 scalar targeted example has its minimum at the supplied phase",
+      sp.simplify(W_full_targeted.subs(d, delta0)) == 0)
+
+W_even_targeted = sp.expand((Xexpr - X0) ** 2)
+even_second = sp.simplify(sp.diff(W_even_targeted, d, 2).subs(d, delta0))
+check("even/spectral W_X=0 branch can also stationarize the supplied delta=2/9 target",
+      sp.simplify(sp.diff(W_even_targeted, d).subs(d, delta0)) == 0)
+check("even/spectral targeted branch is locally nonflat at delta=2/9",
+      sp.simplify(even_second - 18 * r ** 3 * sp.sin(3 * delta0) ** 2) == 0)
+
+# ===========================================================================
+# SECTION C -- convergence with the partition-map result + honest boundary.
+# ===========================================================================
+print("--- Section C: convergence with register-not-read; honest phase boundary ---")
 # register-not-read partition map delivers the weight ratio r (= e2 content), not the phase delta.
 partition_delivers = "r (weight ratio; e2-content; Q=2/3)"
 partition_does_not_deliver = "delta (within-block phase; e3 cos 3delta content)"
 check("register-not-read partition map delivers r, NOT delta (converges with W from the other side)",
       "r" in partition_delivers and "delta" in partition_does_not_deliver)
-# two native classes, no third:
+# record the two data classes without claiming this exhausts future mechanisms:
 classes = {
     "modulus r": "scalar/variational/partition -> r=1/2 (reached natively)",
-    "phase delta": "C3-COVARIANT eta/holonomy ONLY -> the chirality/orbit-splitting gate (= Koide-Q, generation-ID)",
+    "phase delta": "requires a genuine phase selector, covariant route, or supplied target",
 }
-check("the (r,delta) plane has exactly TWO native classes (modulus=scalar, phase=covariant); "
-      "no third native option", len(classes) == 2)
-check("delta=2/9 is therefore NOT an independent target -- it is the chirality gate (same as Koide-Q)",
-      "chirality" in classes["phase delta"])
+check("the register-not-read partition map gives a modulus statement, not a phase selector",
+      len(classes) == 2 and "modulus r" in classes and "phase delta" in classes)
+check("delta=2/9 still requires a genuine phase selector or covariant holonomy route",
+      "phase selector" in classes["phase delta"] and "covariant" in classes["phase delta"])
 
 # ===========================================================================
-# SECTION B -- scope: this PRUNES the scalar route; it does NOT close delta=2/9.
+# SECTION B -- scope: demote the old universal no-go; retain a narrow branch no-go.
 # ===========================================================================
-print("--- Section B: scope (prunes scalar route; delta=2/9 stays open_gate) ---")
-check("does NOT close delta=2/9 (the C3-covariant eta/holonomy = chirality route is untouched/open)", True)
+print("--- Section B: scope (demotion plus narrow branch no-go) ---")
+check("does NOT close delta=2/9 (the C3-covariant eta/holonomy route is untouched/open)", True)
+check("does NOT claim a universal scalar-action no-go; W_X=0 and Im z^3 branches are explicit", True)
 check("the G-signature defect of L(3;1) = exactly -2/9 (distinct N-family (N-1)(N-2)/3N) is the "
       "rare exact hit but is NON-native + APS-eta (avoid-list) + already on main -- NOT re-derived here", True)
 

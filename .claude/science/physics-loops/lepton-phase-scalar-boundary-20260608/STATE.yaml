@@ -1,0 +1,24 @@
+loop: lepton-phase-scalar-boundary-20260608
+created: 2026-06-08
+base: origin/main@d9a4a67eb
+branch: physics-loop/lepton-phase-scalar-boundary-20260608
+target_claim_id: lepton_phase_modulus_separation_no_go_2026-06-06
+mode: science-fix
+actual_current_surface_status: demotion
+artifact_role: demotion_plus_narrow_no_go
+active_route: "Repair overbroad universal C3 scalar-action no-go."
+files_touched:
+  - docs/LEPTON_PHASE_MODULUS_SEPARATION_NO_GO_2026-06-06.md
+  - scripts/lepton_phase_modulus_separation_no_go_2026_06_06.py
+  - logs/runner-cache/lepton_phase_modulus_separation_no_go_2026_06_06.txt
+open_imports:
+  - "A first-principles derivation of delta=2/9 remains open."
+  - "A native rule excluding supplied target extrema is not supplied here."
+  - "A retained phase/covariant selector is not supplied here."
+verification:
+  - "python3 scripts/lepton_phase_modulus_separation_no_go_2026_06_06.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/lepton_phase_modulus_separation_no_go_2026_06_06.py"
+  - "python3 -m py_compile scripts/lepton_phase_modulus_separation_no_go_2026_06_06.py"
+  - "git diff --name-only -- docs/audit"
+next_exact_action: "Open PR for reviewer extraction."
+stop_condition: "This block is packaged; continue campaign on the next active conditional/failed row."

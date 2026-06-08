@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 748 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 37 |
-| unaudited | 1307 |
+| unaudited | 1306 |
 | meta | 311 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1170 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 32 |
-| `unaudited` | 1618 |
+| `unaudited` | 1617 |
 
 | claim_type | count |
 |---|---:|
@@ -1310,6 +1310,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5250,6 +5251,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel majority 3/5 ratified tuple ('first', 'audited_clean', 'bounded_theorem', 'C'). Representative rationale: Under the note's binding narrowed scope, the Planck-pin estimate and broad/full SME coefficient interpretation are explicitly non-load-bearing. The runner source genuinely computes the sin^2 dispersion coefficients, finite-lattice free-H residuals, parity-even dispersion check, and the cubic harmonic identity rather than merely printing constants. The normalization issue is correctly repaired: for normalized Y_lm the K4 coefficient is 4 sqrt(pi)/15, not 4/5, and the runner checks this pointwise and symbolically. The open SME-basis caveats in upstream notes would block a broader SME/operator-basis claim, but not this bounded structural free-lattice theorem.
 - **rationale:** Five-judge panel majority 3/5 ratified tuple ('first', 'audited_clean', 'bounded_theorem', 'C'). Representative rationale: Under the note's binding narrowed scope, the Planck-pin estimate and broad/full SME coefficient interpretation are explicitly non-load-bearing. The runner source genuinely computes the sin^2 dispersion coefficients, finite-lattice free-H residuals, parity-even dispersion check, and the cubic harmonic identity rather than merely printing constants. The normalization issue is correctly repaired: for normalized Y_lm the K4 coefficient is 4 sqrt(pi)/15, not 4/5, and the runner checks this pointwise and symbolically. The open SME-basis caveats in upstream notes would block a broader SME/operator-basis claim, but not this bounded structural free-lattice theorem.
 - **auditor confidence:** judicial_panel_vote
+
+### `emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded assembly that, given retained event order, LR light cone, and (3,1) signature, conformal rigidity yields a Lorentzian conformal class, while retained clock-rate no-go authorities leave the scale unfixed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-112113-85848bf562-emergent_metric_conformal_cl`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained record-time order, Lieb-Robinson light cone, and (3,1) signature supply the causal structure, so Malament rigidity fixes the metric's conformal class while the remaining conformal factor is the post-record clock-rate no-go.  _(class `A`)_
+- **chain closes:** False — The clock-rate boundary follows from the two retained-grade clock/rate authorities, and the conformal rescaling identity is algebraic. The restricted packet does not supply retained-grade one-hop authorities for the event-order/I-axis result, reconstructed-H/Lieb-Robinson cone, or (3,1) signature; the runner illustrates or hard-codes those inputs rather than deriving them.
+- **rationale:** The runner verifies finite group velocity for an asserted dispersion on a grid and checks conformal null invariance, but it does not derive the dispersion, the LR theorem, the record I-axis, or the signature from the provided authorities. The `signature_31` input is hard-coded and the I-order check uses an artificial monotone sequence, so the retained causal-data premise is imported. The result is therefore valid only conditional on retained upstream causal-structure certificates plus a properly stated Malament bridge; the conformal-factor no-go component is supported by the cited clock-rate authorities.
+- **auditor confidence:** high
 
 ### `emergent_product_law_audit_2026-04-11`
 

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/newtonian_distance_law_confirmed_pointer_guard_2026_06_08.py
-runner_sha256: 5f7d729211a4853a802d374d63039eea80584e8f832a27b9bf1e055bfc88b7fa
+runner_sha256: 119d2a62885e24f131ae73e8c80d646b3161d1d24b29966a1dc4652a0e29563b
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -23,7 +23,11 @@ PASS pointer states bounded finite replay only
 PASS replay note contains verifier repair
 PASS replay note exposes same frozen sha
 PASS cache is fresh successful verifier
-SCORECARD PASS=16 FAIL=0
+PASS pointer contains raw-row inventory repair
+PASS frozen log has nine raw distance rows :: rows=9
+PASS pointer includes all raw distance rows :: all parsed z/delta/direction rows are present in pointer table
+PASS pointer records recomputed far-tail fit
+SCORECARD PASS=20 FAIL=0
 
 ----- stderr -----
 

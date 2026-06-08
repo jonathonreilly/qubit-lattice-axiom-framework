@@ -3,7 +3,7 @@ runner: scripts/valley_linear_wide_tail_replay.py
 runner_sha256: 3666095eb79aab58426084bc14eac025ec70eae0fcca055e2ad434447e3f31fd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 ========================================================================================

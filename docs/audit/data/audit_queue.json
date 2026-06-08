@@ -3,7 +3,7 @@
     "critical": 334,
     "high": 250,
     "leaf": 390,
-    "medium": 369
+    "medium": 368
   },
   "cycle_break_target_count": 20,
   "cycle_break_targets": [
@@ -17917,29 +17917,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
+      "claim_id": "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "positive_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-        "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
+        "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
         "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
-        "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
-        "gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06"
+        "gauge_vacuum_plaquette_bridge_support_note",
+        "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17"
       ],
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.307,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md",
+      "load_bearing_score": 6.281,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py",
-      "transitive_descendants": 55
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+      "transitive_descendants": 54
     },
     {
       "audit_independence_required": "any_non_self",
@@ -20539,33 +20538,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_graph_commutant_cycle_value_boundary.py",
-      "transitive_descendants": 54
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
-        "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
-        "gauge_vacuum_plaquette_bridge_support_note",
-        "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.281,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
       "transitive_descendants": 54
     },
     {
@@ -40744,5 +40716,5 @@
     }
   ],
   "ready_count": 29,
-  "total_pending": 1343
+  "total_pending": 1342
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 746 |
+| **retained_bounded** | 747 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 37 |
-| unaudited | 1341 |
+| unaudited | 1340 |
 | meta | 313 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 33 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1168 |
+| `audited_clean` | 1169 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1654 |
+| `unaudited` | 1653 |
 
 | claim_type | count |
 |---|---:|
@@ -532,6 +532,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7467,6 +7468,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The two analytic strictly increasing witnesses share beta_eff(beta)=beta+beta^5/26244+O(beta^6) but differ at beta=6, hence give different P_1plaq values.  _(class `A`)_
 - **chain closes:** True — The explicit witness pair satisfies the scoped hypotheses and has exact delta beta_eff(6)=0.0046656 with positive delta P, so the stated inputs cannot force a unique framework-point value.
 - **rationale:** Clean as a scoped no-go obstruction, not as analytic closure of canonical P(6). The runner confirms 5 theorem checks and 2 support checks with no failures; the load-bearing step is algebraic counterexample construction rather than support-class propagation. The safe conclusion is that the current onset jet plus analyticity/monotonicity does not force beta_eff(6) or analytic P(6).
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Supplied finite SU(3) rim/far plaquette-support partition with product Haar measure and no mixed rim/far plaquette; the audited result is the product-Fubini slice-marginal factorization and the formal class projection P_cls B_beta(W) after the compression boundary is supplied.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-143411-79779a53b1-gauge_vacuum_plaquette_full_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the supplied rim variables and far-environment variables are disjoint Haar variables with separated plaquette support, the slice marginal factors as the rim integral B_beta(W)(U) times a W-independent far transfer factor.  _(class `A`)_
+- **chain closes:** True — Within the supplied-partition scope, the compact finite Haar product space and additive separated Wilson action give the stated factorization by Fubini/Tonelli. The actual physical SU(3) slab support partition, mixed-kernel compression bridge, and beta=6 evaluation remain outside this audited scope.
+- **rationale:** The load-bearing mathematics is an algebraic product-measure factorization, not a new numerical or physical closure claim. The primary runner is only SU(2) toy and string-check support, but the restricted packet also includes a retained-bounded SU(3) product-Fubini authority, and the factorization independently follows from the displayed finite support-separation assumptions. This clean verdict is only for the bounded supplied-packet theorem, not for the actual Wilson slab partition or explicit beta=6 rim data.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10`

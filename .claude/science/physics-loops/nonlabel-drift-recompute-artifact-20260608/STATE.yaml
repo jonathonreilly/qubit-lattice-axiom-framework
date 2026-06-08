@@ -1,0 +1,19 @@
+loop: nonlabel-drift-recompute-artifact-20260608
+goal: "Close the runner_artifact_issue on nonlabel_grown_drift_basin_note by adding a SHA-pinned live recompute packet for the nine drift/seed rows."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+target_claim_id: nonlabel_grown_drift_basin_note
+blocker: "runner_artifact_issue: add a SHA-pinned completed --recompute cache or independent derivation for the nine drift/seed centroid-shift rows, with row gates asserted."
+files_touched:
+  - docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md
+  - scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py
+  - scripts/nonlabel_grown_drift_basin_recompute_audit_2026_06_08.py
+  - logs/runner-cache/nonlabel_grown_drift_basin_recompute_audit_2026_06_08.txt
+  - logs/runner-cache/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.txt
+open_imports:
+  - "The result remains bounded to the stated drift/seed grid and retained upstream nonlabel_grown_basin_note."
+review_status: pending
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer should confirm the cache header is SHA-fresh, row gates are asserted, and docs/audit is untouched."
+stop_condition: "PR opened for review with verification commands recorded."

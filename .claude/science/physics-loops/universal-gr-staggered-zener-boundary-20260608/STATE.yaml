@@ -1,0 +1,22 @@
+loop_slug: universal-gr-staggered-zener-boundary-20260608
+date: 2026-06-08
+branch: physics-loop/universal-gr-staggered-zener-boundary-20260608
+goal: "Repair the universal-GR staggered isotropy row by narrowing it to the finite-BZ Zener diagnostic actually computed."
+target_claim_id: universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: zener_diagnostic_boundary
+hard_residual: "Conserved staggered stress vertex, W metric-Hessian bridge, continuum extrapolation, and physical spin-2 isotropy remain open."
+files_touched:
+  - docs/UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md
+  - scripts/frontier_universal_gr_graviton_isotropy_staggered.py
+  - logs/runner-cache/frontier_universal_gr_graviton_isotropy_staggered.txt
+  - .claude/science/physics-loops/universal-gr-staggered-zener-boundary-20260608/
+open_imports:
+  - "conserved staggered stress vertex"
+  - "W metric-Hessian/contact-term bridge"
+  - "a->0 continuum extrapolation of the residual"
+  - "physical spin-2 isotropy theorem"
+next_exact_action: "Re-audit as bounded finite-BZ Zener diagnostic support."
+stop_condition: "The physical W-native isotropy bridge is left open."

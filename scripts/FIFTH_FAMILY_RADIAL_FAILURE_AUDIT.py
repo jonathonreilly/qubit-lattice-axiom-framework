@@ -3,8 +3,10 @@
 
 from __future__ import annotations
 
+import hashlib
 import os
 import sys
+from pathlib import Path
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
@@ -22,6 +24,57 @@ from gate_b_no_restore_farfield import grow
 
 
 TARGETS = [(0.20, 0), (0.05, 0), (0.30, 1)]
+REPO_ROOT = Path(ROOT)
+ORIENTATION_RUNNER = REPO_ROOT / "scripts" / "fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py"
+ORIENTATION_CACHE = REPO_ROOT / "logs" / "runner-cache" / "fifth_family_radial_symmetry_orientation_certificate_2026_06_08.txt"
+
+
+def _sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _cache_header(cache_path: Path) -> dict[str, str]:
+    header = cache_path.read_text(encoding="utf-8").split("----- stdout -----", 1)[0]
+    fields: dict[str, str] = {}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        fields[key.strip()] = value.strip()
+    return fields
+
+
+def _verify_orientation_certificate() -> bool:
+    print()
+    print("INDEPENDENT ORIENTATION CERTIFICATE")
+    if not ORIENTATION_RUNNER.exists():
+        print("  FAIL missing certificate runner")
+        return False
+    if not ORIENTATION_CACHE.exists():
+        print("  FAIL missing certificate cache")
+        return False
+
+    fields = _cache_header(ORIENTATION_CACHE)
+    cache_text = ORIENTATION_CACHE.read_text(encoding="utf-8")
+    runner_rel = ORIENTATION_RUNNER.relative_to(REPO_ROOT).as_posix()
+    sha_fresh = fields.get("runner_sha256") == _sha256(ORIENTATION_RUNNER)
+    ok = (
+        fields.get("runner") == runner_rel
+        and fields.get("status") == "ok"
+        and fields.get("exit_code") == "0"
+        and sha_fresh
+        and "SCORECARD PASS=9 FAIL=0" in cache_text
+        and "linear_slope   = -" in cache_text
+        and "zero_delta     = +0.000000000000e+00" in cache_text
+        and "neutral_delta  = +0.000000000000e+00" in cache_text
+    )
+    print(
+        f"  runner={fields.get('runner')} status={fields.get('status')} "
+        f"exit={fields.get('exit_code')} sha_fresh={sha_fresh}"
+    )
+    print("  scorecard=SCORECARD PASS=9 FAIL=0")
+    print(f"  certificate={'PASS' if ok else 'FAIL'}")
+    return ok
 
 
 def main() -> None:
@@ -52,13 +105,6 @@ def main() -> None:
     print()
     print("SAFE READ")
     print(f"  failing rows: {len(failing)}")
-    assertions_ok = (
-        len(failing) == 1
-        and abs(failing[0][0] - 0.20) < 1e-12
-        and failing[0][1] == 0
-        and failing[0][2] < 0.0
-        and failing[0][3] > 0.0
-    )
     if failing:
         for drift, seed, plus, minus, exponent in failing[:5]:
             print(
@@ -68,6 +114,15 @@ def main() -> None:
         print("  the miss is a sign-orientation boundary, not a control leak")
     else:
         print("  no boundary failures found in this audit window")
+    orientation_certificate_ok = _verify_orientation_certificate()
+    assertions_ok = (
+        len(failing) == 1
+        and abs(failing[0][0] - 0.20) < 1e-12
+        and failing[0][1] == 0
+        and failing[0][2] < 0.0
+        and failing[0][3] > 0.0
+        and orientation_certificate_ok
+    )
     print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
     if not assertions_ok:
         raise SystemExit(1)

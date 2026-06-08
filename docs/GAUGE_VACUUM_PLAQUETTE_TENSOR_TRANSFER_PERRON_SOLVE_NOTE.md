@@ -1,6 +1,7 @@
 # Gauge-Vacuum Plaquette Source-Sector Reference Perron Solve
 
-**Date:** 2026-04-30; bounded reference-solve boundary repair 2026-05-24
+**Date:** 2026-04-30; bounded reference-solve boundary repair 2026-05-24;
+one-plaquette/admissibility cleanup 2026-06-08
 **Type:** bounded_theorem
 **Status:** support — explicit source-sector Perron solves at two
 structural reference choices of the residual environment, plus a bounded no-go
@@ -190,18 +191,20 @@ class of residual data:
    `tau -> infinity`, recovers the Theorem 2 reference.
 2. **One-plaquette environment family.**
    `rho_(p,q)^(beta_env) = c_(p,q)(beta_env) / c_(0,0)(beta_env)` for
-   `beta_env >= 0`. Each member is one strictly admissible normalized
-   character measure (the one-plaquette Wilson partition function as
-   environment).
+   `beta_env >= 0`. This gives a normalized nonnegative character-measure
+   sequence; it is strictly positive for `beta_env > 0`, while the
+   endpoint `beta_env = 0` degenerates to `rho = delta_{(p,q),(0,0)}`.
 3. **Tube-power family.**
    `rho_k = (c_(p,q)(6) / c_(0,0)(6))^k` for integer `k >= 0`. At
    `k = 0`, recovers Theorem 1; as `k` grows, the rho values grow
    sharply for low `(p,q)` and decay for high `(p,q)`.
 
 Each family uses only `c_lambda` and `SU(3)` intertwiners, plus a
-single exogenous parameter `(tau, beta_env, k)`. Each member of each
-family is strictly admissible (positive, conjugation-symmetric,
-normalized at `(0,0)`). None coincides with either reference solve.
+single exogenous parameter `(tau, beta_env, k)`. The sampled sequences are
+normalized, nonnegative, and conjugation-symmetric; strict positivity is
+reserved for nondegenerate interior samples, not the `beta_env = 0` or
+`rho = delta` endpoints. None of the nondegenerate sampled families is
+canonically selected by the local data alone.
 
 The runner reports the following Perron-value spreads:
 
@@ -211,7 +214,7 @@ The runner reports the following Perron-value spreads:
 - family 3 spread: `0.1638` over `k in [0, 20]` (range `[0.4524, 0.6163]`);
 - combined spread: `>= 0.1937`.
 
-In particular, distinct admissible rho choices, all built from the same
+In particular, distinct normalized rho choices, all built from the same
 `c_lambda(6)` and `SU(3)` intertwiner data, produce strictly different
 values of `P(6)`. **Therefore the tested 1-parameter local closures do
 not fix a unique `rho_(p,q)(6)`.**
@@ -311,6 +314,27 @@ verify the super-polynomial decay claim.
 `|P(MODE_MAX=200) - P(MODE_MAX=160)| = 0` to working precision, again
 consistent with the rapid decay of `I_n(2)` in `n`.
 
+## 2026-06-08 cleanup: one-plaquette diagnostic and endpoint language
+
+The runner's one-plaquette reference diagnostic is now explicitly the
+Haar one-plaquette partition coefficient check
+
+```text
+P_1plaq(beta) = d/d beta log c_(0,0)(beta),
+```
+
+where `c_(0,0)` is computed by the same Bessel-determinant mode sum as the
+local Wilson coefficients. It no longer differentiates a truncated
+identity-evaluation sum over `d_lambda c_lambda`; that sum is not the
+one-plaquette partition function and is not used in this scoped Perron solve.
+
+The admissibility language is also tightened: the sampled rho families are
+normalized nonnegative sequences, with strict positivity only for
+nondegenerate interior samples. The structural `rho = delta` reference and
+the `beta_env = 0` one-plaquette endpoint intentionally have zero
+nontrivial coefficients and are described as degenerate normalized endpoints,
+not strictly positive interior measures.
+
 ## Corollary 1: the missing mathematical object
 
 The remaining object outside this bounded reference-solve packet is one
@@ -372,7 +396,7 @@ matches it:
 It is not used as input, initialization, or fit target anywhere in the
 Perron solve, the parametric sweeps, or the convergence study. The
 parametric sensitivity sweeps explicitly demonstrate that DIFFERENT
-admissible rho choices produce DIFFERENT `P(6)`; the runner does not
+normalized rho choices produce DIFFERENT `P(6)`; the runner does not
 select a particular rho to match the comparator. Specifically, family
 3 reaches `0.5888` at `k = 12` and overshoots to `0.6163` at `k = 20`,
 illustrating that no `k` value is canonically picked out.
@@ -448,7 +472,7 @@ supplied as input.
   character measure of the unmarked spatial environment with
   marked-plaquette boundary
 - explicit hostile-review checks on constant-lift, tuning, renaming,
-  and truncation extrapolation concerns
+  truncation extrapolation, and one-plaquette partition-diagnostic concerns
 
 ## What this does not close
 
@@ -466,4 +490,4 @@ python3 scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py
 
 Expected summary:
 
-- `THEOREM PASS=6 SUPPORT=3 FAIL=0`
+- `THEOREM PASS=6 SUPPORT=4 FAIL=0`

@@ -51,14 +51,14 @@ restricted packet as repo files instead of prose-only excerpts.
 
 **Complete source packet manifest:**
 
-- Primary all-order runner: [`scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py`](../scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py)
+- Primary finite-window boundary runner: [`scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py`](../scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py)
 - Finite-window helper runner: [`scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py`](../scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py)
 - Extended minimality helper runner: [`scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py`](../scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py)
 - Original ODE runner: [`scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py`](../scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py)
-- Primary all-order cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt)
+- Primary finite-window boundary cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt)
 - Finite-window helper cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.txt)
 - Extended helper cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.txt)
-- Primary all-order JSON: [`outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json`](../outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json)
+- Primary finite-window boundary JSON: [`outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json`](../outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json)
 - Finite-window helper JSON: [`outputs/su3_v1_picard_fuchs_minimality_2026_05_06.json`](../outputs/su3_v1_picard_fuchs_minimality_2026_05_06.json)
 - Extended helper JSON: [`outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json`](../outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json)
 

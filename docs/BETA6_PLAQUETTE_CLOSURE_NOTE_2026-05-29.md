@@ -125,11 +125,11 @@ inputs and are recorded here so future cycles cite the live status:
 
 | claim_id | prior synthesis status | live status (2026-05-29) | consequence for the lane |
 |---|---|---|---|
-| `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | audited_conditional | **ledger read-off: retained_bounded / audited_clean** — but only as a purely formal abstract `(S,eta,K)` linear-algebra lemma; physical beta=6 identification explicitly out of scope (needs 4 unsupplied authorities) | The "seam is reduced to matrix-element evaluation" framing holds only abstractly; the physical reduction is itself unsupplied. The open residual is deeper than "just evaluate." |
+| `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | audited_conditional | **ledger read-off: retained_bounded effective status** — but only as a purely formal abstract `(S,eta,K)` linear-algebra lemma; physical beta=6 identification explicitly out of scope (needs 4 unsupplied authorities) | The "seam is reduced to matrix-element evaluation" framing holds only abstractly; the physical reduction is itself unsupplied. The open residual is deeper than "just evaluate." |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | audited_conditional | **audited_renaming** — audit flags the identity rho=kappa/a^4 as a definition/packaging of the stripped residual eigenvalue sequence, NOT an independent derivation of the environment boundary class function | The "(T1') identity" that one surviving-route candidate leaned on is audit-flagged as circular packaging (relevant to Route 4 below). |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | unaudited (no_go) | **audited_conditional (no_go)** — bounded formal warning: one scalar sample insufficient to recover the N-dimensional retained coefficient vector | Strengthens (does not weaken) the open-target framing: scalar reuse cannot replace the vector evaluation. |
 | `su3_wigner_l3_treewidth_infeasible_2026-05-04` | unaudited | **audited_conditional** | The treewidth-29 infeasibility result is now audited; the foreclosure of exact L_s>=3 contraction is on firmer footing. |
-| `su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04` | audited_conditional | **ledger read-off: retained_bounded / audited_clean** | The naive-Haar-MC sign-problem foreclosure is now retained_bounded. |
+| `su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04` | audited_conditional | **ledger read-off: retained_bounded effective status** | The naive-Haar-MC sign-problem foreclosure is now retained_bounded. |
 
 Unaudited author-tier consumers/supports (cite as unaudited, not as
 retained): `alpha_s_derived_note`, `complete_prediction_chain_2026_04_15`,
@@ -161,15 +161,18 @@ read-off.
 4. **M5 weak-coupling 1-loop 1-4/54 = 0.9259.** Not yet asymptotic at beta=6;
    overshoots.
 
-### 3b. V=1 Picard-Fuchs (solved but wrong observable)
+### 3b. V=1 Picard-Fuchs (finite-window support, wrong observable)
 
 5. **V=1 single-plaquette Picard-Fuchs ODE / Frobenius (Lee-Yang) zero
-   localization.** Fully solved (all-order order-3 ODE in Q[[beta]], indicial
-   roots {-4,-3,0}, unique analytic Frobenius branch) but yields only the
+   localization.** Runner-backed finite-window support (exact checks through
+   the verified Taylor window, finite-grid lower-order exclusion, indicial
+   roots {-4,-3,0}, and conditional Bostan-Salvy-Schost arithmetic if an
+   external all-degree R=3,D=2 bridge is supplied), but not standalone
+   all-degree Picard-Fuchs closure. In any case it yields only the
    single-plaquette-in-isolation value 0.4225. Explicitly does NOT close the
    thermodynamic limit, multi-plaquette generalization, or higher-irrep
    extension. Notes: `plaquette_v1_picard_fuchs_ode_note_2026-05-05`
-   (retained_bounded); all-order proof companion unaudited.
+   (retained_bounded); finite-window boundary companion unaudited.
 
 ### 3c. Finite L_s=2 cube (cannot host the correlation length)
 

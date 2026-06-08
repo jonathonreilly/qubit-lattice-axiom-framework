@@ -3,7 +3,7 @@ runner: scripts/lensing_analytical_finite_path.py
 runner_sha256: 32652ffa24633f0fd20106750b9a33ceb056e217796e6786b81634a256ca8092
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 ================================================================================

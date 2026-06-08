@@ -41,8 +41,9 @@ non-perturbative computation. What the runner computes from c_lambda(6)
 and SU(3) intertwiners is the resulting Perron eigenvector psi and the
 expectation value P(6) = <psi, J psi> of the explicit source operator J.
 
-It also computes the one-plaquette reference P_1plaq(6) directly from
-the SU(3) Bessel-determinant character expansion as a sanity check.
+It also computes the one-plaquette reference P_1plaq(6) as
+d/d beta log c_(0,0)(beta), where c_(0,0) is the Haar one-plaquette
+partition coefficient in the SU(3) Bessel-determinant character expansion.
 
 It then performs three parametric sensitivity sweeps over admissible
 rho families to demonstrate the bounded no-go that the enumerated
@@ -193,23 +194,17 @@ def perron_state_and_value(
 
 
 def one_plaquette_partition_function(
-    nmax: int, mode_max: int, beta: float
+    mode_max: int, beta: float
 ) -> float:
     arg = beta / 3.0
-    total = 0.0
-    for p in range(nmax + 1):
-        for q in range(nmax + 1):
-            d = dim_su3(p, q)
-            ck = wilson_character_coefficient(p, q, mode_max, arg)
-            total += d * ck
-    return total
+    return wilson_character_coefficient(0, 0, mode_max, arg)
 
 
 def one_plaquette_expectation(
-    nmax: int, mode_max: int, beta: float, eps: float = 1.0e-3
+    mode_max: int, beta: float, eps: float = 1.0e-3
 ) -> float:
-    z_plus = one_plaquette_partition_function(nmax, mode_max, beta + eps)
-    z_minus = one_plaquette_partition_function(nmax, mode_max, beta - eps)
+    z_plus = one_plaquette_partition_function(mode_max, beta + eps)
+    z_minus = one_plaquette_partition_function(mode_max, beta - eps)
     return (np.log(z_plus) - np.log(z_minus)) / (2.0 * eps)
 
 
@@ -320,7 +315,7 @@ def main() -> int:
     eig_loc, psi_loc, P_loc = perron_state_and_value(transfer_loc, j_op)
     eig_triv, psi_triv, P_triv = perron_state_and_value(transfer_triv, j_op)
 
-    P_1plaq = one_plaquette_expectation(NMAX_DEFAULT, MODE_MAX_DEFAULT, BETA)
+    P_1plaq = one_plaquette_expectation(MODE_MAX_DEFAULT, BETA)
 
     print("Reference solve A (structural choice rho_(p,q) = 1 for every irrep)")
     print("  -> Z_6^env(W) = sum d_(p,q) chi_(p,q)(W) = delta(W, e)")
@@ -341,7 +336,7 @@ def main() -> int:
     print()
 
     print("One-plaquette block reference")
-    print("  P_1plaq(6) = d/d beta log Z_1plaq(6)  (Bessel-determinant FD)")
+    print("  P_1plaq(6) = d/d beta log c_(0,0)(6)  (Bessel-determinant FD)")
     print(f"  P_1plaq(6)                            = {P_1plaq:.12f}")
     print()
 
@@ -565,7 +560,7 @@ def main() -> int:
     check(
         "the source-sector Perron value depends nontrivially on rho_(p,q)(6); "
         "the three tested 1-parameter local-input closures do not fix a unique "
-        "rho (bounded no-go: distinct admissible rho choices give distinct P(6))",
+        "rho (bounded no-go: distinct normalized rho choices give distinct P(6))",
         sens_range > 1.0e-3 and one_plaq_range > 1.0e-3 and tube_range > 1.0e-2,
         detail=(
             f"family-1 spread = {sens_range:.6f}, family-2 spread = {one_plaq_range:.6f}, "
@@ -619,6 +614,19 @@ def main() -> int:
         bucket="SUPPORT",
     )
 
+    # ----- Check 10: hostile review — one-plaquette reference uses c_(0,0), not
+    # the character expansion evaluated at the identity.
+    check(
+        "the one-plaquette reference differentiates log c_(0,0)(beta), not a "
+        "truncated sum over d_lambda c_lambda evaluated at the group identity",
+        abs(P_1plaq - a_link[index[(1, 0)]]) < 1.0e-6,
+        detail=(
+            f"P_1plaq={P_1plaq:.12f}, a_(1,0)={a_link[index[(1, 0)]]:.12f}; "
+            "this is the Haar partition coefficient diagnostic only"
+        ),
+        bucket="SUPPORT",
+    )
+
     print()
     print("Summary table (structural reference solves only — not the physical answer):")
     print("  reference solve         P(6)            u_0           alpha_s(v)")
@@ -628,11 +636,12 @@ def main() -> int:
     print()
     print("Bounded no-go: the three tested 1-parameter local-input closures do")
     print("not fix a unique rho_(p,q)(6) on the source sector. Three distinct")
-    print("admissible parametric families (decreasing exp(-tau(p+q)),")
+    print("normalized nonnegative parametric families (decreasing exp(-tau(p+q)),")
     print("one-plaquette-environment ansatz")
     print("rho^(beta_env), and tube-power ansatz rho^k) each use only c_lambda(6)")
     print("and SU(3) intertwiners plus a single exogenous parameter (tau, beta_env,")
-    print("k), are each strictly admissible, and yet produce DIFFERENT P(6) values.")
+    print("k), with strict positivity away from degenerate endpoints, and yet")
+    print("produce DIFFERENT P(6) values.")
     print("The canonical comparator value sits inside the admissible-rho span (it")
     print("can be reached, for example, near k = 12 in the tube-power family), but")
     print("no parameter choice is canonically picked out without further input.")

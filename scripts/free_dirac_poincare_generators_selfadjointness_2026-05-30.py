@@ -15,6 +15,7 @@ but it does not claim a Nelson-Laplacian/common-analytic-core proof.
 from __future__ import annotations
 
 import importlib.util
+import hashlib
 import json
 import math
 from pathlib import Path
@@ -29,6 +30,9 @@ NOTE_PATH = REPO_ROOT / "docs" / "FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFA
 COMPANION_NOTE = REPO_ROOT / "docs" / "FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
 COMPANION_RUNNER = REPO_ROOT / "scripts" / "free_dirac_poincare_representation_2026-05-30.py"
 COMPANION_CACHE = REPO_ROOT / "logs" / "runner-cache" / "free_dirac_poincare_representation_2026-05-30.txt"
+BRIDGE_NOTE = REPO_ROOT / "docs" / "FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md"
+BRIDGE_RUNNER = REPO_ROOT / "scripts" / "audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py"
+BRIDGE_CACHE = REPO_ROOT / "logs" / "runner-cache" / "audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.txt"
 OUTPUT_PATH = REPO_ROOT / "outputs" / "free_dirac_poincare_generators_selfadjointness_2026_05_30.json"
 
 
@@ -52,10 +56,41 @@ def load_companion_runner():
     return module
 
 
+def sha256_file(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def cache_header(cache_path: Path) -> dict[str, str]:
+    header = cache_path.read_text(encoding="utf-8").split("----- stdout -----", 1)[0]
+    fields: dict[str, str] = {}
+    for line in header.splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        fields[key.strip()] = value.strip()
+    return fields
+
+
+def cache_is_fresh_and_ok(cache_path: Path, runner_path: Path) -> tuple[bool, str]:
+    fields = cache_header(cache_path)
+    rel_runner = runner_path.relative_to(REPO_ROOT).as_posix()
+    runner_ok = fields.get("runner") == rel_runner
+    status_ok = fields.get("status") == "ok"
+    exit_ok = fields.get("exit_code") == "0"
+    sha_ok = fields.get("runner_sha256") == sha256_file(runner_path)
+    detail = (
+        f"runner={fields.get('runner')} status={fields.get('status')} "
+        f"exit={fields.get('exit_code')} sha_fresh={sha_ok}"
+    )
+    return runner_ok and status_ok and exit_ok and sha_ok, detail
+
+
 def source_anchor_checks(results: list[dict]) -> None:
     note_text = NOTE_PATH.read_text(encoding="utf-8")
     companion_note_text = COMPANION_NOTE.read_text(encoding="utf-8")
     companion_cache_text = COMPANION_CACHE.read_text(encoding="utf-8")
+    bridge_note_text = BRIDGE_NOTE.read_text(encoding="utf-8")
+    bridge_cache_text = BRIDGE_CACHE.read_text(encoding="utf-8")
     companion_module = load_companion_runner()
 
     check(
@@ -77,28 +112,76 @@ def source_anchor_checks(results: list[dict]) -> None:
         results,
     )
     check(
-        "S4 companion note carries the expected claim id",
+        "S4 note links Wigner strong-continuity bridge note",
+        "FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md" in note_text,
+        "bridge note path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S5 note links Wigner strong-continuity bridge runner",
+        "scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py" in note_text,
+        "bridge runner path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S6 note links Wigner strong-continuity bridge cache",
+        "logs/runner-cache/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.txt" in note_text,
+        "bridge cache path is explicit in the restricted source packet",
+        results,
+    )
+    check(
+        "S7 companion note carries the expected claim id",
         "free_dirac_poincare_representation_bounded_note_2026-05-30" in companion_note_text,
         "the linked companion note is the exact packet consumed by this repair",
         results,
     )
     check(
-        "S5 companion runner exposes the Poincare algebra and Wigner checks",
+        "S8 companion runner exposes the Poincare algebra and Wigner checks",
         hasattr(companion_module, "check_poincare_algebra")
         and hasattr(companion_module, "check_mass_shell_and_wigner"),
         "source import exposes finite Poincare closure and mass-shell/Wigner checks",
         results,
     )
     check(
-        "S6 companion runner exposes the invariant-measure check",
+        "S9 companion runner exposes the invariant-measure check",
         hasattr(companion_module, "check_invariant_measure"),
         "source import exposes d^3p/(2E) boost-invariance check",
         results,
     )
     check(
-        "S7 companion cache is a passing representation certificate",
+        "S10 companion cache is a passing representation certificate",
         "SCORECARD PASS=8 FAIL=0" in companion_cache_text,
         "cached companion representation runner output is present and passing",
+        results,
+    )
+    companion_cache_ok, companion_cache_detail = cache_is_fresh_and_ok(COMPANION_CACHE, COMPANION_RUNNER)
+    check(
+        "S11 companion cache is SHA-fresh and exits cleanly",
+        companion_cache_ok,
+        companion_cache_detail,
+        results,
+    )
+    check(
+        "S12 Wigner bridge note carries strong-continuity and Stone content",
+        "strongly continuous" in bridge_note_text
+        and "Stone consequence" in bridge_note_text
+        and "bare_retained_allowed: false" in bridge_note_text,
+        "bridge note is the functional-analytic dependency requested by audit",
+        results,
+    )
+    check(
+        "S13 Wigner bridge cache is a passing continuity certificate",
+        "SCORECARD PASS=48 FAIL=0" in bridge_cache_text
+        and "AUDIT_LEDGER_WRITTEN=FALSE" in bridge_cache_text
+        and "BARE_RETAINED_ALLOWED=FALSE" in bridge_cache_text,
+        "cached bridge runner output is present, passing, and firewall-clean",
+        results,
+    )
+    bridge_cache_ok, bridge_cache_detail = cache_is_fresh_and_ok(BRIDGE_CACHE, BRIDGE_RUNNER)
+    check(
+        "S14 Wigner bridge cache is SHA-fresh and exits cleanly",
+        bridge_cache_ok,
+        bridge_cache_detail,
         results,
     )
 
@@ -268,7 +351,11 @@ def main() -> int:
     fail_count = len(results) - pass_count
     payload = {
         "claim_id": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
-        "repair": "replace false Nelson common-analytic-vector route with direct unitary-action integrability",
+        "repair": (
+            "replace false Nelson common-analytic-vector route with direct "
+            "unitary-action integrability and wire in the Wigner "
+            "strong-continuity bridge as an explicit restricted-packet dependency"
+        ),
         "status_boundary": (
             "bounded-support/direct-integrability repair; no Nelson Laplacian or "
             "common Gaussian analytic-vector claim remains"

@@ -1,6 +1,6 @@
 # Gauge-Vacuum Plaquette First Three-Sample Local Wilson Partial Evaluation
 
-**Date:** 2026-04-17
+**Date:** 2026-04-17; scorecard repair 2026-06-08
 **Status:** exact local sample-side partial-evaluation theorem on the plaquette
 PF lane; the current atlas already fixes the exact local Wilson response at the
 named holonomies `W_A, W_B, W_C`, but it still does **not** evaluate the full
@@ -183,6 +183,15 @@ Therefore the normalized local one-plaquette sample values are exactly
 
 So the current atlas already gives one explicit first sample-side local Wilson
 approximant on the first retained PF seam.
+
+### 2026-06-08 scorecard repair
+
+The paired runner now carries this normalization as an explicit theorem check:
+it recomputes `Z_(1plaq)(6)` by the Bessel-determinant mode sum, verifies the
+mode cutoff, and checks that the three displayed normalized local values are
+reproduced to the audited tolerance. This restores the source note's expected
+`THEOREM PASS=6 SUPPORT=4 FAIL=0` scorecard without changing the local-only
+claim boundary.
 
 ## Corollary 3: this is a partial evaluation only
 

@@ -1,0 +1,20 @@
+--- Section S: e1/e2/e3 separation (r vs delta) ---
+PASS: e1 = 3a (scale)
+PASS: e2 = 3 a^2 (1 - r) -- delta-BLIND (carries r => Q=2/3)
+PASS: e2 has NO delta dependence (diff wrt delta = 0)
+PASS: e3 = a^3 (1 - 3r + 2 r^{3/2} cos 3delta) -- the ONLY delta carrier (via cos 3delta)
+PASS: d e3/d delta proportional to sin(3 delta) (delta enters only via cos 3delta)
+--- Section W: scalar C3-invariant action stationarity forces 3 delta in {0,pi} ---
+PASS: dX/ddelta = -3 r^{3/2} sin(3 delta) (so stationarity needs sin 3delta = 0 unless W_X=0)
+  stationary delta in [0,2pi): {0, pi/3, 2*pi/3, pi, 4*pi/3, 5*pi/3, 2*pi}
+PASS: delta=2/9 is NOT a stationary phase (2/9 != n pi/3 for any integer n; n would be 2/(3pi))
+PASS: => a real C3-invariant scalar action can fix r (modulus) but PROVABLY cannot stationarize delta at 2/9 (phase-blindness no-go)
+--- Section C: convergence with register-not-read; r=modulus, delta=phase ---
+PASS: register-not-read partition map delivers r, NOT delta (converges with W from the other side)
+PASS: the (r,delta) plane has exactly TWO native classes (modulus=scalar, phase=covariant); no third native option
+PASS: delta=2/9 is therefore NOT an independent target -- it is the chirality gate (same as Koide-Q)
+--- Section B: scope (prunes scalar route; delta=2/9 stays open_gate) ---
+PASS: does NOT close delta=2/9 (the C3-covariant eta/holonomy = chirality route is untouched/open)
+PASS: the G-signature defect of L(3;1) = exactly -2/9 (distinct N-family (N-1)(N-2)/3N) is the rare exact hit but is NON-native + APS-eta (avoid-list) + already on main -- NOT re-derived here
+
+TOTAL: PASS=13 FAIL=0

@@ -1,0 +1,26 @@
+loop_slug: free-dirac-wigner-bridge-wireup-20260608
+branch: physics-loop/free-dirac-wigner-bridge-wireup-20260608
+base: origin/main
+mode: physics-loop
+status: ready_for_review
+target_claim_id: free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30
+target_status: exact-support
+active_route: wire already-landed Wigner strong-continuity bridge into the parent free-Dirac generator packet
+hard_residual_attacked: "missing retained-grade proof that the displayed mass-shell/Wigner action is a strongly continuous unitary Poincare representation with self-adjoint infinitesimal generators"
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md
+  - scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py
+  - outputs/free_dirac_poincare_generators_selfadjointness_2026_05_30.json
+  - logs/runner-cache/free_dirac_poincare_generators_selfadjointness_2026-05-30.txt
+  - .claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/
+open_imports:
+  - The free one-particle continuum mass-shell carrier is not derived from baseline lattice axioms in this block.
+  - This block does not prove interacting QFT, spin-statistics, or lattice Lorentz emergence.
+review_disposition: local_pre_review_pass_external_review_requested
+audit_edits: none
+runner_status:
+  parent: "SCORECARD PASS=21 FAIL=0"
+  bridge: "SCORECARD PASS=48 FAIL=0"
+next_exact_action: "Submit PR to Codex reviewer/re-audit; do not edit docs/audit in this branch."

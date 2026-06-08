@@ -1,0 +1,24 @@
+loop_slug: first-three-local-wilson-scorecard-20260608
+branch: physics-loop/first-three-local-wilson-scorecard-20260608
+base: origin/main
+mode: physics-loop
+status: ready_for_review
+target_claim_id: gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17
+target_status: exact-support
+active_route: add the missing theorem check so the completed runner matches the source note scorecard
+hard_residual_attacked: "source note expected six theorem checks, while runner/cache supplied one fewer theorem check"
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md
+  - scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.txt
+  - .claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/
+open_imports:
+  - Full environment amplitudes Z_6^env(W_A), Z_6^env(W_B), and Z_6^env(W_C) remain open.
+  - Full rim lift B_6(W), K_6^env, rho_(p,q)(6), and full plaquette PF closure remain outside scope.
+review_disposition: local_pre_review_pass_external_review_requested
+audit_edits: none
+runner_status:
+  first_three_local_wilson: "THEOREM PASS=6 SUPPORT=4 FAIL=0"
+next_exact_action: "Submit PR to Codex reviewer/re-audit; do not edit docs/audit in this branch."

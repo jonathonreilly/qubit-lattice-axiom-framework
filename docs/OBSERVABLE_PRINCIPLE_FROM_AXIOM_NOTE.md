@@ -396,10 +396,13 @@ phase premise on the consumed finite source surface:
 - The runner `frontier_hierarchy_observable_principle_from_axiom.py`
   verifies the exact-algebra closure for the selected candidate generator on
   the finite staggered source block.
-- The positive-source-cone bridge
-  [`OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md`](OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md)
+- The det-positivity lemma
+  [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
   proves that this finite real source branch has `det(D+J) in R_{>0}` on
-  the positive source cone and local derivative patch.
+  the positive source cone and local derivative patch. (That lemma is the
+  self-contained fact this note consumes; the fuller application is the plain
+  reference `OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md`,
+  cited non-load-bearing to avoid a parent↔application audit-graph cycle.)
 - Therefore the old P2 distinction between phase-blind and phase-sensitive
   scalar generators is vacuous on the branch this note consumes. Global P2
   outside that branch is not claimed.
@@ -441,14 +444,17 @@ framing, or the older P2-conditional framing.
 
 ### 2026-06-06 positive-source-cone bridge
 
-The load-bearing P2 repair is the positive-source-cone bridge:
+The load-bearing P2 repair is the det-positivity lemma (the self-contained
+`det(D+J) in R_{>0}` fact this note consumes):
 
-- Note:
-  [`OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md`](OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md)
-- Runner:
-  [`scripts/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.py`](../scripts/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.py)
-- Cache:
-  [`logs/runner-cache/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.txt`](../logs/runner-cache/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.txt)
+- Lemma (load-bearing):
+  [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
+  and its runner
+  [`scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py`](../scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py).
+- Application (plain reference, **not** a load-bearing dependency, to avoid a
+  parent↔application audit-graph 2-cycle): the fuller positive-source-cone
+  elimination is `OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md`
+  with runner `scripts/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.py`.
 
 It proves and checks that for `D^T=-D` real antisymmetric and real diagonal
 scalar sources, `det(D+J)` is real-positive on the positive source cone and

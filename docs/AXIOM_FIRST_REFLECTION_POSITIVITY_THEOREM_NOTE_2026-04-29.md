@@ -158,7 +158,7 @@ gauge-case reduction, plus the single-step no-go runner:
   Wilson-plaquette boundary closure.
 - The **Wilson-plane sign and character-kernel source packet** is supplied
   by
-  [RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md](RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md)
+  `RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md`
   and
   [`frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py`](../scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py).
   It fixes the failed bridge's sign root (`S_0 := -beta Re Tr`, so
@@ -167,7 +167,15 @@ gauge-case reduction, plus the single-step no-go runner:
   proof, and verifies the ferromagnetic integrated Gram factorization
   `G = W diag(kappa) W^dag` with `kappa >= 0` on the displayed finite
   surfaces. This dependency is a source-packet candidate for re-audit, not
-  an author-applied retained status.
+  an author-applied retained status. It supports only the **conditional
+  Wilson-plane addendum** (2026-06-07), not the core staggered 2-step
+  transfer-matrix positivity, which is derived in-repo above and depends on
+  none of it. The reference is therefore rendered as a plain (non-link)
+  citation rather than a load-bearing markdown dependency, breaking the
+  spurious `cycle-0001` audit-graph 2-cycle with this later repair note
+  (the genuine direction is repair → builds-on → this theorem); the
+  conditional Wilson-plane claim still travels with that companion note's
+  own independent-audit status.
 
 The det-positivity and Cauchy-Schwarz authorities are cited only for
 their stated narrow surfaces, each covering one named factor of the

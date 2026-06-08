@@ -201,6 +201,24 @@ def main() -> int:
         results,
     )
     check(
+        "Centered Finite-Path Surrogate Negative Boundary" in note_text,
+        "note_has_negative_boundary_title",
+        "finite-path note is narrowed to a negative boundary packet",
+        results,
+    )
+    check(
+        "does not claim a positive explanation" in note_text,
+        "note_disclaims_positive_explanation",
+        "finite-path note disclaims positive detector-centroid explanation",
+        results,
+    )
+    check(
+        "claim_type: no_go" in note_text or "**Claim type:** no_go" in note_text,
+        "note_registers_no_go_claim_type",
+        "audit registration records no_go claim type",
+        results,
+    )
+    check(
         "detector-centroid" in note_text and "layer-weighted" in note_text,
         "note_names_remaining_centroid_bridge",
         "note keeps the centroid/layer-weighted bridge visible",

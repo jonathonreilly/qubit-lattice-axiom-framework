@@ -1,14 +1,16 @@
 # PR Backlog
 
-Status: pending PR creation.
+Status: PR created.
 
-Planned title:
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/3249
+
+Title:
 
 ```text
 [physics-loop] post-record-selector-supplied-boundary bounded-support
 ```
 
-Planned verification:
+Verification:
 
 ```bash
 python3 scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py

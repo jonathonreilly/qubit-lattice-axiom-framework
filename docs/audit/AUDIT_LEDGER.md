@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 210 |
 | **retained_no_go** | 221 |
 | **retained_bounded** | 764 |
-| _retained_pending_chain_ | 11 |
+| _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1314 |
+| unaudited | 1313 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1194 |
+| `audited_clean` | 1195 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1629 |
+| `unaudited` | 1628 |
 
 | claim_type | count |
 |---|---:|
@@ -81,10 +81,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 520 |
 | `high` | 444 |
-| `medium` | 779 |
-| `leaf` | 1268 |
+| `medium` | 778 |
+| `leaf` | 1269 |
 
-- **Retained pending chain closure:** 11
+- **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
 
 ### Runner classification (static heuristic)
@@ -1080,6 +1080,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sixth_family_sheared_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
+| `sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `sm_identity_triangulation_convergence_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15938,6 +15939,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The parity-sheared shell sweep passes 12/21 sampled rows, with exact zero-source and neutral controls, sign orientation on the passing subset, drift coverage [0.0, 0.05, 0.1, 0.15, 0.2, 0.3], and mean exponent 0.999895, so the construction is a narrow sixth-family basin rather than a generic theorem.  _(class `B`)_
 - **chain closes:** True — SIXTH_FAMILY_SHEARED_SWEEP.py currently reproduces the note's pass count, drift coverage, exact zero/neutral controls, and mean weak-field exponent. The note's conclusion is bounded and selective, matching the data rather than claiming family-wide closure.
 - **rationale:** The sheared basin note closes at bounded tier: the runner verifies the exact pass/fail structure and the note states the correct narrow interpretation. It neither expands the result into a universal connectivity theorem nor hides the failed rows. Residual risk is only missing ledger runner attachment; the local sweep script is the direct evidence surface.
+- **auditor confidence:** high
+
+### `sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact one-generation SM anomaly arithmetic under retained SU(2)/SU(3), N_c=3, LH doubled-Y charges +1/3 and -1, n_gen=3 for Witten parity, standard anomaly formulae, and the admitted minimal no-nu_R RH completion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:key_terminology`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-211217-ad47ecfa19-sm_anomaly_closure_retained_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the retained LH charges and the admitted no-nu_R minimal RH singlet completion, the SU(3)^2Y, Tr[Y], and Tr[Y^3] anomaly equations force (Y(u_R), Y(d_R), Y(e_R)) = (+4/3, -2/3, -2), after which all six gauge-anomaly conditions cancel.  _(class `A`)_
+- **chain closes:** True — Independently, SU(3)^2Y gives y_u+y_d=2/3, Tr[Y] gives y_e=-2, and Tr[Y^3] gives y_u y_d=-8/9, so the roots are 4/3 and -2/3 up to the stated u_R/d_R convention. Substitution then gives zero perturbative anomalies and even SU(2) doublet parity; the matter-content ansatz and absolute Y scale remain scoped admissions/conventions.
+- **rationale:** The load-bearing work is finite algebra over retained-grade inputs plus explicit bounded admissions, not a renaming or numerical comparator match. The runner uses exact Fraction/integer arithmetic and does not import anomaly_forces_time, PDG values, or fitted constants. The nu_R caveat also checks independently: allowing y4=t gives y_u=4/3+t, y_d=-2/3-t, y_e=-2-t, which preserves the anomaly equations, so the no-nu_R uniqueness statement is correctly bounded.
 - **auditor confidence:** high
 
 ### `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29`

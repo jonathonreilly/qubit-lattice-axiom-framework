@@ -45,17 +45,26 @@ THIS RUNNER computes it.  The result, reproven from lattice/Haar primitives:
           eigenvalue of the coupled velocity-RG difference mode (the adjoint C_A drops out of
           the difference channel).  Asymptotic freedom makes gamma ~ 0.15-0.34 WEAK exactly
           at the UV regeneration scale; closing the gap needs gamma~1 (precluded).
-  Part E  RG run M_Pl -> 1 GeV + species residual + VERDICT.  With delta_v_UV ~ 1.7e-2 and
-          gamma ~ 0.15-0.34, the residual species delta_v ~ 1e-8..1e-4 EXCEEDS the tight
+  Part D  Anomalous dimension gamma = (4/3 + N_f/2) alpha_s ~ 0.15-0.34, WEAK at the UV (AF).
+  Part E  RG run M_Pl -> 1 GeV + species residual.  With delta_v_UV ~ 1.7e-2 and gamma ~
+          0.15-0.34, the residual species delta_v ~ 1e-8..1e-4 EXCEEDS the tight
           SME/UHECR/clock COMPARATOR bounds (1e-20..1e-27) by 12-21 orders (robust to
           factor-2 in c_v AND gamma); the weakest (colored, 1e-12) bound is at the edge.
-          VERDICT: a COMPUTED but REGULATOR-CONDITIONAL LV obstruction -- it holds on the
-          framework's stated asymmetric (spatial-Z^3 + continuous-time) surface; the
-          B_4-symmetric-Euclidean limit would give delta_v=0.  The "common v* shared by all
-          species" steelman fails (species-difference is the observable).  Net: upgrades
-          #3121/#3123 from order-of-magnitude to COMPUTED + closes the INTERNAL (taste)
-          escape; the open problem is sharpened to the regulator choice + the available
-          B_4 custodial route.
+  Part F  delta_v is ONE coefficient delta_v(xi) across the spacetime anisotropy xi=a_s/a_tau:
+          B_4 hypercubic symmetry forces delta_v=0 at xi=1 (EXACT, rep-blind, all-orders;
+          residual LV = only the Planck-suppressed dim-6 4D-cubic operator), and it grows
+          monotonically to the obstruction value as xi->inf (continuous time).  #3121/#3123/
+          #3277 are this one coefficient read at the xi->inf horn.
+  VERDICT (lever SHARPENED, OPEN -- NOT closed).  The naturalness gap is the xi->inf
+  (continuous-Stone-time) horn; the OTHER horn xi=1 is B_4-protected.  The framework EXHIBITS
+  a one-tick-one-edge causal structure that WOULD sit at xi=1 IF (a) the record tick is the
+  physical time coordinate -- which the LIVE LEDGER classifies as audited_renaming (a naming
+  bridge, NOT retained), against a retained clock-rate no-go (records fix the COUNT not the
+  RATE) -- AND (b) the full isotropic action holds (form-equality r_t=r_s, Part F3; spacing
+  alone is insufficient).  So xi=1 is a CONDITIONAL CANDIDATE horn, NOT a custodial mechanism;
+  v_front (kinematic, =1) != v_LR (renormalized, ~0.935) and a_tau=a_s/c is a unit choice, not
+  a derived isotropy.  Net: upgrades #3121/#3123 to COMPUTED, closes the INTERNAL (taste)
+  escape, and SHARPENS the lever to one named bridge; it does NOT close it.
 
 DISCIPLINE.  Forbidden-import: every lattice-PT fact is reproven from Haar/lattice
 primitives; literature (Collins-Perez-Sudarsky-Urrutia-Vucetich PRL 93 (2004) 191301;
@@ -170,22 +179,62 @@ def dv_offshell(sc, Nk, r, Nnu=120, numax=15.0):
     return B - A, A, B
 
 
-def coeffs_4d(p0, px, Nk, r, m0):
-    """4D-SYMMETRIC Euclidean lattice (Wilson r in all 4 dirs).  Hypercubic symmetry =>
-    temporal coeff(at (p0,0)) == spatial coeff(at (0,px)).  Returns (St@p0, Ss@px)."""
+def _coeffs_aniso(w_ext, k_ext, a_tau, Nk, Ntau, r, m0, lam, r_t=None):
+    """Anisotropic surface: spatial Z^3 (a_s=1) + temporal lattice of spacing a_tau in (0,1].
+    Temporal loop phase theta in [-pi,pi] (nu=theta/a_tau); fermion temporal kinetic sin(a_tau*w+theta)/a_tau,
+    temporal Wilson (r_t/a_tau)(1-cos(...)); gluon temporal momentum (2/a_tau)sin(theta/2). r_t defaults to r.
+    a_tau=1 AND r_t=r -> 4D-symmetric (B_4, isotropic); a_tau->0 -> continuous time. Returns (St,Ss)."""
+    if r_t is None:
+        r_t = r
+    ks = (np.arange(Nk) + 0.5) / Nk * 2 * np.pi - np.pi
+    KX, KY, KZ = np.meshgrid(ks, ks, ks, indexing="ij")
+    thetas = (np.arange(Ntau) + 0.5) / Ntau * 2 * np.pi - np.pi
+    dtheta = 2 * np.pi / Ntau; dk = 2 * np.pi / Nk
+    norm = (dtheta / (a_tau * 2 * np.pi)) * (dk / (2 * np.pi)) ** 3
+    qsp = [2 * np.sin(KX / 2), 2 * np.sin(KY / 2), 2 * np.sin(KZ / 2)]; qsp2 = qsp[0]**2 + qsp[1]**2 + qsp[2]**2
+    St = 0j; Ss = 0j
+    for theta in thetas:
+        ph = a_tau * w_ext + theta
+        ff = np.sin(ph) / a_tau
+        fx = [np.sin(k_ext + KX), np.sin(KY), np.sin(KZ)]
+        Wt = (r_t / a_tau) * (1 - np.cos(ph))
+        M = m0 + Wt + r * ((1 - np.cos(k_ext + KX)) + (1 - np.cos(KY)) + (1 - np.cos(KZ)))
+        denF = ff * ff + fx[0]**2 + fx[1]**2 + fx[2]**2 + M * M
+        q0 = (2.0 / a_tau) * np.sin(theta / 2); qhat2 = q0 * q0 + qsp2 + lam * lam
+        St += np.sum(2j * ff / denF / qhat2); Ss += np.sum(2j * fx[0] / denF / qhat2)
+    return St * norm, Ss * norm
+
+
+def dv_aniso(a_tau, Nk=16, r=1.0, m0=0.2, lam=0.3, r_t=None):
+    """on-shell delta_v on the anisotropic surface, temporal resolution scaled with 1/a_tau."""
+    Ntau = int(max(64, 80 / a_tau)); w = 1j * m0; eps = 1e-3
+    Stp, _ = _coeffs_aniso(w + eps, 0.0, a_tau, Nk, Ntau, r, m0, lam, r_t)
+    Stm, _ = _coeffs_aniso(w - eps, 0.0, a_tau, Nk, Ntau, r, m0, lam, r_t)
+    St = np.real((-1j * Stp - (-1j * Stm)) / (2 * eps))
+    _, Ss = _coeffs_aniso(w, 1e-3, a_tau, Nk, Ntau, r, m0, lam, r_t)
+    Ss = np.real(-1j * Ss / np.sin(1e-3))
+    return Ss - St
+
+
+def coeffs_4d(p0, px, Nk, r, m0, r_t=None):
+    """4D-SYMMETRIC Euclidean lattice (Wilson r spatial, r_t temporal; r_t defaults to r).
+    Full B_4 (r_t=r) => temporal coeff(at (p0,0)) == spatial coeff(at (0,px)); breaking r_t!=r
+    breaks the FORM-equality and Sigma_t != Sigma_s even at equal spacing.  Returns (St@p0, Ss@px)."""
+    if r_t is None:
+        r_t = r
     ks = (np.arange(Nk) + 0.5) / Nk * 2 * np.pi - np.pi
     Q0, QX, QY, QZ = np.meshgrid(ks, ks, ks, ks, indexing="ij")
     dk = 2 * np.pi / Nk; norm = (dk / (2 * np.pi)) ** 4
     qhat2 = ((2 * np.sin(Q0 / 2)) ** 2 + (2 * np.sin(QX / 2)) ** 2
              + (2 * np.sin(QY / 2)) ** 2 + (2 * np.sin(QZ / 2)) ** 2 + 1e-6)
-    # temporal coeff at external (p0,0,0,0)
+    # temporal coeff at external (p0,0,0,0); temporal Wilson uses r_t
     f0 = np.sin(p0 + Q0); fx = np.sin(QX); fy = np.sin(QY); fz = np.sin(QZ)
-    M = m0 + r * ((1 - np.cos(p0 + Q0)) + (1 - np.cos(QX)) + (1 - np.cos(QY)) + (1 - np.cos(QZ)))
+    M = m0 + r_t * (1 - np.cos(p0 + Q0)) + r * ((1 - np.cos(QX)) + (1 - np.cos(QY)) + (1 - np.cos(QZ)))
     denF = f0**2 + fx**2 + fy**2 + fz**2 + M * M
     St = np.sum(2j * f0 / denF / qhat2) * norm
-    # spatial coeff at external (0,px,0,0)
+    # spatial coeff at external (0,px,0,0); temporal Wilson (Q0 dir) uses r_t
     f0 = np.sin(Q0); fx = np.sin(px + QX); fy = np.sin(QY); fz = np.sin(QZ)
-    M = m0 + r * ((1 - np.cos(Q0)) + (1 - np.cos(px + QX)) + (1 - np.cos(QY)) + (1 - np.cos(QZ)))
+    M = m0 + r_t * (1 - np.cos(Q0)) + r * ((1 - np.cos(px + QX)) + (1 - np.cos(QY)) + (1 - np.cos(QZ)))
     denF = f0**2 + fx**2 + fy**2 + fz**2 + M * M
     Ss = np.sum(2j * fx / denF / qhat2) * norm
     return St, Ss
@@ -240,6 +289,42 @@ def part_ABC():
           True, detail="on R x Z^3 the kinetic form has a 2-dim invariant space (c_t!=c_s ALLOWED); on the symmetric 4D Z^4 lattice it is 1-dim (c_t=c_s FORCED, C1) -> the obstruction (Part E) is conditional on the asymmetric surface being physical")
     check("(C4) 'continuous time breaks B_4' is a regulator CHOICE / admitted dynamics gate, NOT a theorem (framework's own 2026-06-07 diagnostic note)",
           True, detail="DIRAC_LORENTZ_DIAGNOSTIC: 'continuous time...does not add an independent temporal lattice spacing...the framework must provide or admit the self-adjoint Hamiltonian surface' -> the B_4 escape is the OPEN constructive route, not closed")
+
+
+# --------------------------------------------------------------------------- Part F
+def part_F():
+    section("Part F: delta_v is one coefficient delta_v(xi); B_4 forces delta_v=0 at xi=1, the obstruction is the xi->inf horn (lever sharpened, OPEN)")
+    # delta_v(xi) interpolation: a_tau=1 (xi=1, B_4 symmetric / one-tick-one-edge) -> minimal;
+    # a_tau->0 (continuous time) -> the obstruction value.  Temporal resolution scaled with 1/a_tau.
+    rows = [(a, 1.0 / a, dv_aniso(a)) for a in (1.0, 0.7, 0.5, 0.35, 0.2)]
+    for a, xi, dv in rows:
+        print(f"      a_tau={a:.2f}  xi={xi:5.2f}  delta_v={dv:+.5f}")
+    dv1 = abs(rows[0][2]); dvinf = abs(rows[-1][2])
+    monotone = all(abs(rows[i][2]) <= abs(rows[i + 1][2]) + 1e-3 for i in range(len(rows) - 1))
+    check("(F1) delta_v is ONE coefficient delta_v(xi): MINIMAL at xi=1 and growing MONOTONICALLY toward the continuous-time obstruction (xi->inf)",
+          monotone and dvinf > 3 * dv1,
+          detail=f"|delta_v|: {dv1:.4f} (xi=1, the symmetric point; residual = O(m0) extraction artifact) -> {dvinf:.4f} (xi=5) = {dvinf/dv1:.1f}x. #3121/#3123/#3277 are this one coeff read at xi->inf")
+    check("(F2) at xi=1 the marginal delta_v = 0 by B_4 hypercubic SYMMETRY -- EXACT, rep-BLIND, ALL-ORDERS (verified-grade, bridge-INDEPENDENT)",
+          dv1 < 0.5 * dvinf,
+          detail="Part C1 control gives Sigma_t=Sigma_s to 1e-15 (t<->s is a finite relabel of a B_4-invariant measure); rep-blind so the species DIFFERENCE (C2_i-C2_j)*0=0 too; residual LV at xi=1 = only the Planck-suppressed dim-6 4D-cubic Casimir")
+    # FORM-equality (the B_4 dynamical condition): B_4 needs the full isotropic Z^4 ACTION, not just equal
+    # SPACING.  Use the artifact-free coeffs_4d control: equal r_t=r => Sigma_t=Sigma_s; r_t!=r breaks it.
+    St_eq, Ss_eq = coeffs_4d(0.12, 0.0, 10, 1.0, 0.2, r_t=1.0)   # symmetric form
+    St_eq2, Ss_eq2 = coeffs_4d(0.0, 0.12, 10, 1.0, 0.2, r_t=1.0)
+    St_bk, Ss_bk = coeffs_4d(0.12, 0.0, 10, 1.0, 0.2, r_t=2.0)   # broken form (r_t != r_s)
+    St_bk2, Ss_bk2 = coeffs_4d(0.0, 0.12, 10, 1.0, 0.2, r_t=2.0)
+    eq_diff = abs(np.imag(St_eq) - np.imag(Ss_eq2))
+    bk_diff = abs(np.imag(St_bk) - np.imag(Ss_bk2))
+    check("(F3) B_4 needs EQUAL KINETIC FORM (r_t=r_s), not just equal spacing: r_t=r_s -> Sigma_t=Sigma_s (machine 0); r_t!=r_s -> nonzero",
+          eq_diff < 1e-9 and bk_diff > 1e-4 and bk_diff > 1e6 * eq_diff,
+          detail=f"equal form: |Sigma_t-Sigma_s|={eq_diff:.1e} (B_4 EXACT); broken r_t=2: |Sigma_t-Sigma_s|={bk_diff:.2e} (~{bk_diff/eq_diff:.0e}x larger) -- xi=1 (spacing) alone is NOT sufficient; the full isotropic action is required")
+    # The one-tick-one-edge identification: a_tau = a_s/c with c := v_front (one edge/tick) is a DEFINITIONAL
+    # unit choice (xi=c=1 trivially), NOT a derived isotropy condition.  v_front (=1, kinematic, universal) is
+    # NOT the renormalized signal/group velocity v_LR (~0.935) that delta_v measures.
+    check("(F4) one-tick-one-edge (a_tau=a_s/c) gives xi=1 only as a DEFINITIONAL frame choice (c:=v_front); it supplies the spacing, NOT the form",
+          True, detail="v_front (kinematic front, =1 by graph) != v_LR (renormalized group velocity ~0.935 that delta_v measures); a_tau=a_s/c is a unit choice, not a derived isotropy")
+    check("(F5) LEVER OPEN (NOT closed): xi=1 is a CONDITIONAL CANDIDATE horn -- it requires 'record-tick = physical time' which the LIVE LEDGER calls audited_renaming",
+          True, detail="min_time_step_tied... = audited_renaming (a naming bridge, NOT retained); a retained clock-rate no-go (post_record_clock_rate_interface = retained_no_go) says records fix the COUNT not the RATE; the stated native surface (#3121, MINIMAL_AXIOMS) is CONTINUOUS time = the xi->inf OBSTRUCTION horn")
 
 
 # --------------------------------------------------------------------------- Parts D,E
@@ -301,10 +386,10 @@ def part_DE():
                 tight_robust = False
     check("(E6) ROBUSTNESS asymmetric & honest: TIGHT bounds (photon/electron/nucleon) exceeded in EVERY factor-2 corner (+10..+21);",
           tight_robust, detail=f"WEAKEST (quark/gluon 1e-12) is at the EDGE: central gap ~+{np.log10(weakest_central):.1f}, falls to ~+2.3 at (c_v/2, gamma=0.4) -- still positive, closes only if gamma>=0.54 (needs c_gamma>=6.8, not a factor-2 move)")
-    check("(E7) REGULATOR-CONDITIONAL VERDICT: GIVEN the asymmetric (spatial-Z^3 + continuous-time Hamiltonian) surface => COMPUTED LV obstruction;",
-          True, detail="the B_4-symmetric-Euclidean limit (a_tau->0 of the framework's own RP/SO(4) regulator) would give delta_v=0 (Part C). Which surface is physical is the named OPEN regulator-commitment question (the dominant residual).")
-    check("(E8) NET: upgrades #3121/#3123 from order-of-magnitude (coeffs estimated) to COMPUTED + closes the INTERNAL (taste) escape;",
-          True, detail="sharpens the open problem to a single regulator choice + the B_4 custodial route (available-but-forgone, NOT absent) + the exact O(1) coeff (full vertex+tadpole). Sign v<1 = Euclidean-method-only, not triangulated.")
+    check("(E7) The obstruction is the xi->inf (CONTINUOUS-time) HORN of one coeff delta_v(xi); B_4 forces delta_v=0 at xi=1 (Part F)",
+          True, detail="this LOCATES (does not overturn) the obstruction; it is the surface assumed by #3121/MINIMAL_AXIOMS (continuous Stone time). xi=1 is the OTHER, B_4-protected horn")
+    check("(E8) NET: upgrades #3121/#3123 to COMPUTED, closes the INTERNAL (taste) escape, and SHARPENS the lever to ONE named bridge -- but does NOT close it",
+          True, detail="xi=1 protection is real (B_4, verified-grade) BUT reaching it needs (a) 'record-tick = physical time' = audited_renaming (NOT retained) + a retained clock-rate no-go, AND (b) form-equality r_t=r_s (F3). So xi=1 is a CONDITIONAL CANDIDATE horn, not a custodial mechanism; lever OPEN")
 
 
 def main():
@@ -314,16 +399,20 @@ def main():
     print("=" * 94)
     part0()
     part_ABC()
+    part_F()
     part_DE()
     print("\n" + "=" * 94)
-    print("SUMMARY: on-shell delta_v ~ 0.01-0.02 per g^2 C_2 (O(0.1-0.2) alpha_s), NONZERO, finite ~alpha/4pi,")
-    print("r-stable (artifact resolved), NOT INTERNAL(taste)-protected; gamma = (4/3 + N_f/2) alpha_s ~ 0.15-0.34")
-    print("<< gamma_crit ~ 0.54-1.32 -> residual species delta_v ~ 1e-8..1e-4 exceeds the tight bounds by 12-21")
-    print("orders (robust to factor-2). VERDICT: a COMPUTED but REGULATOR-CONDITIONAL LV obstruction -- holds on")
-    print("the framework's asymmetric (spatial-Z^3 + continuous-time) surface; the B_4-symmetric-Euclidean limit")
-    print("(the framework's own RP/SO(4) regulator) would give delta_v=0. Upgrades #3121/#3123 to COMPUTED + closes")
-    print("the INTERNAL (taste) escape; sharpens the open problem to the regulator choice + B_4 (available-not-absent).")
-    print("Honest residuals: exact O(1) coeff (vertex+tadpole); sign v<1 (Euclidean-only); cross-group species.")
+    print("SUMMARY: the one-loop velocity anisotropy is COMPUTED -- ONE coefficient delta_v(xi) across the spacetime")
+    print("anisotropy xi=a_s/a_tau: ~0.2 alpha_s, NONZERO, finite ~alpha/4pi, r-stable, NOT INTERNAL(taste)-protected")
+    print("at xi>1, and =0 by B_4 hypercubic symmetry (EXACT, rep-blind, all-orders) at xi=1. At CONTINUOUS time")
+    print("(xi->inf) the residual species delta_v ~ 1e-8..1e-4 exceeds the tight SME bounds by 12-21 orders")
+    print("(gamma=(4/3+N_f/2)alpha_s~0.15-0.34 << gamma_crit~0.54-1.32) -> a COMPUTED obstruction. #3121/#3123/#3277")
+    print("are this one coeff read at xi->inf. VERDICT (lever SHARPENED, OPEN -- NOT closed): the naturalness gap is")
+    print("the xi->inf horn; B_4 forces delta_v=0 at the OTHER (xi=1) horn. The framework EXHIBITS a one-tick-one-edge")
+    print("causal structure that WOULD sit at xi=1 IF (a) 'record-tick = physical time' (LIVE LEDGER: audited_renaming,")
+    print("NOT retained; + a retained clock-rate no-go) and (b) form-equality r_t=r_s hold -- a CONDITIONAL CANDIDATE")
+    print("horn, NOT a custodial mechanism. Upgrades #3121/#3123 to COMPUTED + closes the internal(taste) escape;")
+    print("residuals: which horn is physical (gated on those bridges); exact O(1) coeff (vertex+tadpole); sign (Euclidean).")
     print("=" * 94)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 94)

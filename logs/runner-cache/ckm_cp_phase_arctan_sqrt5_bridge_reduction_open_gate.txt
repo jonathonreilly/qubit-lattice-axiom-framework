@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/ckm_cp_phase_arctan_sqrt5_bridge_reduction_open_gate.py
+runner_sha256: 8ef2ee38bdb72ee66d9b4160e7ed6f48764279ef6e2d2965ca6b7764c288bac1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+[PASS] radius cancellation: cos^2(delta)=rho^2/(rho^2+eta^2)=w_sym
+[PASS] democratic projector: one basis-state weight is |<dem|e_i>|^2=1/n
+[PASS] explicit six-state projector: <e_1|P_sym|e_1>=1/6
+[PASS] n_quark=6 choice gives tan(delta)=sqrt(5) and cos(delta)=1/sqrt(6)
+[PASS] delta=65.9051574... degrees for the supplied n_quark=6 bridge
+[PASS] projector split is load-bearing: 1+5, 2+4, and 3+3 give different angles
+[PASS] three-generation democratic count gives 54.736 degrees, not arctan(sqrt5)
+[PASS] inverse-square count identity restates eta=sqrt(5)/6
+[PASS] inverse-square count identity restates the same rho/eta radius
+[PASS] K_R carrier note is open_gate and leaves physical tensor-primitive meaning asserted
+[PASS] K_R carrier note is not an approved axiom/primitive premise node
+[PASS] rho/eta theorem does not derive the 1+5 projector split
+[PASS] CKM atlas supplies n_quark=2x3=6 and delta_source=2*pi/3 as construction inputs
+
+SCORECARD PASS=13 FAIL=0
+
+RESULT: the exact arctan(sqrt5) angle follows once the supplied bridge cos^2(delta)=1/n_quark is granted. The runner verifies the forced projector/trigonometric skeleton and exhibits the open bridge choices; it does not register an admission, no-go, primitive, or audit verdict.
+
+----- stderr -----
+

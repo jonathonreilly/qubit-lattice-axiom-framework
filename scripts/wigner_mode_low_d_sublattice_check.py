@@ -1,4 +1,9 @@
-"""Wigner mode realization on 1D/2D sublattices check (CMW + Noether)."""
+"""Finite Wigner-mode boundary checks on 1D/2D sublattices.
+
+This runner certifies finite charge-commutation algebra and low-dimensional
+lattice IR-sum growth. It deliberately does not prove the missing no-SSB or
+Ward/order-parameter bridge.
+"""
 from __future__ import annotations
 
 import math
@@ -8,7 +13,7 @@ import numpy as np
 
 def main() -> None:
     print("=" * 72)
-    print("WIGNER MODE ON 1D/2D SUBLATTICES CHECK")
+    print("WIGNER LOW-D SUBLATTICE IR/CHARGE BOUNDARY CHECK")
     print("=" * 72)
     print()
 
@@ -54,9 +59,9 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if t2_ok else 'FAIL'}")
     print()
 
-    # ----- Test 3: IR growth of CMW integral I_d for d <= 2 -----
+    # ----- Test 3: IR growth of the low-dimensional lattice sum -----
     print("-" * 72)
-    print("TEST 3: CMW IR-integral grows in d <= 2")
+    print("TEST 3: low-dimensional lattice IR sum grows from L=16 to L=32")
     print("-" * 72)
     def lattice_dispersion(k):
         return 2 * sum(1 - math.cos(km) for km in k)
@@ -85,13 +90,13 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if t3_ok else 'FAIL'}")
     print()
 
-    # ----- Test 4: Noether and no-SSB statements are logically compatible -----
+    # ----- Test 4: finite checks do not imply the missing theorem bridge -----
     print("-" * 72)
-    print("TEST 4: Noether current conservation is compatible with no SSB")
+    print("TEST 4: finite charge algebra is compatible with, but does not prove, no-SSB")
     print("-" * 72)
-    print("  Noether's theorem holds whenever there's a continuous symmetry of the action,")
-    print("  Noether supplies current conservation for an action symmetry;")
-    print("  CMW supplies no finite-temperature SSB in d <= 2 under its hypotheses.")
+    print("  Finite charge commutation is a bounded algebraic fact in this model;")
+    print("  the low-d IR-sum growth is an obstruction signal;")
+    print("  no finite-temperature no-SSB or Ward/order-parameter bridge is claimed here.")
     t4_ok = t1_ok and t2_ok and t3_ok
     print(f"  STATUS: {'PASS' if t4_ok else 'FAIL'}")
     print()
@@ -99,8 +104,8 @@ def main() -> None:
     print("=" * 72)
     print(f"  Test 1 ([Q, H] = 0 in symmetric H):            {'PASS' if t1_ok else 'FAIL'}")
     print(f"  Test 2 ([Q, rho_beta] = 0):                    {'PASS' if t2_ok else 'FAIL'}")
-    print(f"  Test 3 (CMW IR growth in d<=2):                {'PASS' if t3_ok else 'FAIL'}")
-    print(f"  Test 4 (Noether/CMW compatibility):            {'PASS' if t4_ok else 'FAIL'}")
+    print(f"  Test 3 (low-d lattice IR growth):              {'PASS' if t3_ok else 'FAIL'}")
+    print(f"  Test 4 (compatibility boundary):               {'PASS' if t4_ok else 'FAIL'}")
     all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     if not all_ok:

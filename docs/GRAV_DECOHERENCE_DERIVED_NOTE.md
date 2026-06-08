@@ -47,6 +47,42 @@ for this row. It is the external packet whose arithmetic is boundedly checked.
 Any future physical gravitational-decoherence theorem must supply the bridges
 listed below in a separate retained-grade artifact.
 
+## 2026-06-08 Dependency-Split Addendum
+
+This companion now separates the source/readout support already available in
+current source from the bridges that remain fully external to the
+Penrose-Diosi/BMV packet.
+
+**Bounded source/readout support already available:**
+
+- [`G_NEWTON_BORN_AS_SOURCE_POSITIVE_THEOREM_NOTE_2026-05-10_gnewtonG2.md`](G_NEWTON_BORN_AS_SOURCE_POSITIVE_THEOREM_NOTE_2026-05-10_gnewtonG2.md)
+  supplies the density-operator extension of the position Born map:
+  `rho_grav(x)=<x|rho|x> = Tr(rho |x><x|)`, with positivity,
+  normalization, linearity, pure-state reduction, and mixed-state
+  statistical extension. It explicitly does not derive that gravity must use
+  this readout.
+- [`CLOSURE_C_BB_CANONICAL_MASS_COUPLING_NOTE_2026-05-10_cBB.md`](CLOSURE_C_BB_CANONICAL_MASS_COUPLING_NOTE_2026-05-10_cBB.md)
+  supplies bounded support for the mass-linear source form
+  `rho_mass(x;m)=m rho_grav(x)` once the canonical mass term and
+  position-density source map are supplied. It explicitly does not derive the
+  Born/source identification itself.
+- [`G_NEWTON_WEAK_FIELD_RESPONSE_BOUNDED_CLOSURE_NOTE_2026-05-10_gnewtonG3.md`](G_NEWTON_WEAK_FIELD_RESPONSE_BOUNDED_CLOSURE_NOTE_2026-05-10_gnewtonG3.md)
+  supplies bounded conditional support for the leading weak-field response
+  `S=L(1-phi)` under the canonical coupling `V_grav=m phi(x)`. It explicitly
+  leaves the canonical coupling/source premise open.
+
+These links reduce the source/readout side of the audit blocker to a precise
+conditional stack. They do not close the physical gravitational-decoherence
+theorem. The remaining open bridges for this row are still:
+
+- why the physical gravitational field must couple to that position-density
+  source in a superposed matter configuration;
+- the Penrose-Diosi field-distinguishability-to-rate law;
+- SI normalization and the gravitational coupling value;
+- the Planck lattice pin / physical lattice spacing;
+- BMV/NV geometry, wavepacket, and cutoff conventions; and
+- any claim beyond runner-local companion arithmetic.
+
 ## Companion Calculation Chain
 
 Given the following supplied premises:
@@ -151,7 +187,9 @@ decoherence rate.
 
 - source derivation of the closure identity `L^{-1} = G_0` from the minimal
   framework primitives;
-- physical mass-source/readout rule for a superposed matter configuration;
+- physical mass-source/readout rule for a superposed matter configuration
+  beyond the bounded position-density and mass-linearity support linked in the
+  2026-06-08 dependency split;
 - gravitational coupling and SI unit normalization;
 - Penrose-Diosi field-distinguishability-to-rate bridge;
 - BMV/NV geometry, wavepacket, and cutoff conventions;
@@ -176,3 +214,6 @@ promote this note or change the audited claim scope.
 
 - [newton_law_derived_note](NEWTON_LAW_DERIVED_NOTE.md)
 - [gravity_full_self_consistency_note](GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)
+- [g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2](G_NEWTON_BORN_AS_SOURCE_POSITIVE_THEOREM_NOTE_2026-05-10_gnewtonG2.md)
+- [closure_c_bb_canonical_mass_coupling_note_2026-05-10_cbb](CLOSURE_C_BB_CANONICAL_MASS_COUPLING_NOTE_2026-05-10_cBB.md)
+- [g_newton_weak_field_response_bounded_closure_note_2026-05-10_gnewtong3](G_NEWTON_WEAK_FIELD_RESPONSE_BOUNDED_CLOSURE_NOTE_2026-05-10_gnewtonG3.md)

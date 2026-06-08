@@ -1,13 +1,14 @@
-# SU(3) Tensor-Network Engine + L_s=2 Cube Perron Solve (Combined PR)
+# SU(3) Tensor-Network Engine + L_s=2 All-Forward Quotient Encoder Perron Solve
 
 **Date:** 2026-05-03
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only
 **Type:** bounded_theorem — narrowed (per auditor `scope_too_broad`
-verdict) to: PBC geometry on the L_s=2 spatial cube, bipartite
-plaquette adjacency, and trivial-sector Reference B recovery. The
-full `P_cube(6) >= P_trivial(6)` claim is dropped as out-of-scope
-for this note.
+verdict) to: the explicitly defined all-forward L_s=2 quotient encoder,
+bipartite plaquette adjacency for that encoder, and trivial-sector Reference B
+recovery. This note is not a retained Wilson-cube orientation/count theorem.
+The full `P_cube(6) >= P_trivial(6)` claim is dropped as out-of-scope for this
+note.
 **Primary runner:** `scripts/frontier_su3_cube_perron_solve.py`
 **Companion:** [`SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md`](SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md)
 (fusion engine, PR 1, audited by Codex as bounded_theorem)
@@ -19,9 +20,10 @@ cited as load-bearing authority for this narrowed theorem.
 Narrowed (per auditor `scope_too_broad` verdict) to the three items
 the auditor named as in-scope:
 
-1. **L_s=2 PBC spatial cube geometry encoder** (8 sites, 24 directed
-   links, 12 unique unoriented plaquettes; each directed link is in
-   exactly 2 plaquettes, all 48 link-plaquette incidences forward).
+1. **Explicit all-forward L_s=2 quotient encoder** (8 sites, 24 directed
+   links, 12 encoded plaquette loops; each directed link is in exactly 2
+   encoded plaquette loops, all 48 link-plaquette incidences forward by encoder
+   convention).
 2. **Bipartite plaquette adjacency**: the 12-vertex plaquette adjacency
    graph is bipartite with color partition `6 vs 6`, verified by BFS
    2-coloring.
@@ -36,6 +38,21 @@ non-trivial self-conjugate / bipartite-alternating sector
 contributions to `rho_(p,q)(6)` are **out of scope** for this note.
 They depend on explicit SU(3) Wigner intertwiner traces on the cube
 graph that this note does not derive.
+
+## 0.1 2026-06-08 quotient-encoder boundary repair
+
+The 2026-06-08 audit marked the row conditional because the runner shares the
+contested orientation convention rather than independently proving that the
+all-forward 12-unoriented-plaquette encoder is the correct Wilson L_s=2 PBC
+cube geometry.
+
+This source repair takes the honest bounded route: the object verified here is
+an explicitly defined all-forward quotient encoder. It preserves the finite
+combinatorics, bipartite graph, and trivial-sector Perron recovery, but it does
+not claim that this encoder is the Wilson orientation/count theorem. A future
+Wilson cube theorem would need to derive the orientation/count map and the
+mixed forward/reverse representation integrals from Wilson plaquette
+definitions directly.
 
 ## 1. Algorithm
 
@@ -53,7 +70,7 @@ with Schur character formula and Weyl-Vandermonde Haar measure. See
 [`SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md`](SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md)
 for the validation suite.
 
-### 1.2 L_s=2 PBC spatial cube geometry
+### 1.2 L_s=2 all-forward quotient encoder
 
 The V-invariant minimal block has:
 
@@ -66,10 +83,11 @@ The V-invariant minimal block has:
   planes; per (plane, slice) two distinct plaquettes via different
   starting corners due to L=2 PBC).
 
-Each plaquette traverses a 4-link loop. At L_s=2 PBC, the standard
-`+d1 +d2 -d1 -d2` traversal collapses (since `-d_i` from `(..., 1, ...)`
-returns to `(..., 0, ...)` which equals `+d_i` from there), so all 4
-links are FORWARD directed `(+d, start_site)`.
+Each encoded plaquette traverses a 4-link loop. In this quotient encoder, the
+reverse steps of the usual `+d1 +d2 -d1 -d2` square are represented by the same
+forward directed edge after the L=2 PBC site identification. This is the
+encoder convention being tested. It is not a proof that a Wilson-oriented
+plaquette has only forward representation factors.
 
 ### 1.3 Link-orientation analysis
 
@@ -153,15 +171,15 @@ reported here, and no quantitative bound of the form
 
 ## 2. Theorem statement (narrowed)
 
-**Bounded Theorem (narrowed cube structural analysis).** On the
-V-invariant minimal block of the Wilson `3 spatial + 1 derived-time`
-surface at `beta = 6`, in the narrowed scope (PBC geometry +
-bipartite adjacency + trivial-sector Reference B recovery):
+**Bounded Theorem (all-forward quotient-encoder structural analysis).** For
+the explicitly defined all-forward L_s=2 quotient encoder at `beta = 6`, in
+the narrowed scope (encoded geometry + bipartite adjacency + trivial-sector
+Reference B recovery):
 
-1. **PBC geometry.** The L_s=2 PBC spatial cube has exactly 12 unique
-   unoriented spatial plaquettes, 24 directed links, with each link
-   in exactly 2 plaquettes, and all 48 link-plaquette incidences in
-   forward orientation. (verified)
+1. **Encoded geometry.** The L_s=2 all-forward quotient encoder has exactly
+   12 encoded plaquette loops and 24 directed links, with each link in exactly
+   2 encoded loops, and all 48 link-plaquette incidences in forward orientation
+   by construction. (verified)
 2. **Bipartite adjacency.** The plaquette adjacency graph is bipartite
    with color partition `6 vs 6`, verified by BFS 2-coloring.
    (verified)
@@ -183,25 +201,26 @@ The runner verifies:
 
 | Section | Check | Result |
 |---|---|---|
+| 0.1 | Source note declares quotient-encoder boundary | PASS |
 | A | SU(3) fusion engine API loaded | PASS |
-| B | 12 unique unoriented plaquettes constructed | PASS |
+| B | 12 encoded quotient plaquette loops constructed | PASS |
 | C | Each of 24 links in exactly 2 plaquettes | PASS |
-| C | All 48 link-plaquette incidences forward | PASS |
+| C | All 48 link-plaquette incidences forward by encoder convention | PASS |
 | D | Plaquette graph bipartite (color partition 6:6) | SUPPORT (new finding, expands valid configs) |
 | E | Cube partition function structure computed | PASS |
 | F | rho_(p,q)(6) extraction (trivial sector) | PASS |
 | G | Trivial-sector Perron recovers Reference B (0.4225) | PASS |
 | H | Honest verdict: structural skeleton landed | SUPPORT |
 
-`SUMMARY: THEOREM PASS=7 SUPPORT=2 FAIL=0`
+`SUMMARY: THEOREM PASS=8 SUPPORT=2 FAIL=0`
 
 ## 4. Honest scope statement
 
 ### What this narrowed note establishes (in scope)
 
-- **PBC cube geometry** (12 unique unoriented plaquettes, 24 directed
-  links, each link in exactly 2 plaquettes, all 48 incidences forward;
-  exhaustively verified)
+- **All-forward quotient-encoder geometry** (12 encoded loops, 24 directed
+  links, each link in exactly 2 loops, all 48 incidences forward by encoder
+  convention; exhaustively verified)
 - **Bipartite plaquette adjacency** (color partition 6:6, BFS-verified)
 - **Trivial-sector Reference B recovery** (`P_trivial(6) = 0.4225`)
   from framework-internal cube character expansion, matching the
@@ -211,6 +230,7 @@ The runner verifies:
 
 - **Quantitative bound `P_cube(6) >= P_trivial(6)`** — explicitly
   dropped per auditor `scope_too_broad` verdict.
+- **Wilson L_s=2 orientation/count theorem** — explicitly not proven here.
 - **Full `rho_(p,q)(6)`** for non-trivial irreps (requires explicit
   Wigner intertwiner traces; deferred).
 - **Quantitative bypass of any no-go** or **promotion of any parent
@@ -241,15 +261,16 @@ deps:
   - gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note
   - gauge_vacuum_plaquette_tensor_transfer_perron_solve_note
 review_scope_summary: |
-  Narrowed per auditor `scope_too_broad` verdict to exactly the three
-  in-scope items: (i) L_s=2 PBC spatial cube geometry (12 plaquettes,
-  24 directed links, all 48 incidences forward); (ii) bipartite
-  plaquette adjacency (color partition 6:6, BFS-verified); (iii)
-  trivial-sector Reference B recovery (rho = delta_(0,0) arises
-  naturally from the cube character expansion and yields P_trivial(6)
-  = 0.4225, matching the existing Reference B). The quantitative
-  bound `P_cube(6) >= P_trivial(6)` and non-trivial-sector rho_(p,q)
-  contributions are out of scope for this narrowed note.
+  Narrowed to exactly the three source-side items this note actually verifies:
+  (i) explicitly defined all-forward L_s=2 quotient-encoder geometry (12
+  encoded plaquette loops, 24 directed links, all 48 incidences forward by
+  encoder convention); (ii) bipartite plaquette adjacency (color partition
+  6:6, BFS-verified); (iii) trivial-sector Reference B recovery (rho =
+  delta_(0,0) arises naturally inside this encoder and yields P_trivial(6) =
+  0.4225, matching the existing Reference B). This row does not claim a Wilson
+  orientation/count theorem. The quantitative bound `P_cube(6) >=
+  P_trivial(6)` and non-trivial-sector rho_(p,q) contributions are out of
+  scope for this narrowed note.
 ```
 
 ## 7. Cross-references
@@ -268,5 +289,5 @@ python3 scripts/frontier_su3_cube_perron_solve.py
 Expected summary:
 
 ```text
-SUMMARY: THEOREM PASS=7 SUPPORT=2 FAIL=0
+SUMMARY: THEOREM PASS=8 SUPPORT=2 FAIL=0
 ```

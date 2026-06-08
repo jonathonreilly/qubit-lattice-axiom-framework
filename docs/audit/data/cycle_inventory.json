@@ -1,5 +1,5 @@
 {
-  "cycle_count": 13,
+  "cycle_count": 20,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -15,7 +15,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 1028,
+      "max_transitive_descendants": 1038,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -24,7 +24,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
           "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation",
-          "transitive_descendants": 1028
+          "transitive_descendants": 1038
         },
         {
           "audit_status": "unaudited",
@@ -33,7 +33,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md",
           "title": "Reflection Positivity \u2014 Wilson Plaquette Temporal-Gauge Bridge: Sign Repair + a Manifestly-Positive Character-Coefficient Theorem (Repairs the `audited_failed` Bridge)",
-          "transitive_descendants": 1028
+          "transitive_descendants": 1038
         }
       ],
       "requires_lemma_extraction": false
@@ -52,7 +52,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 829,
+      "max_transitive_descendants": 840,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -61,7 +61,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
           "title": "Observable Principle From Axiom Note",
-          "transitive_descendants": 829
+          "transitive_descendants": 840
         },
         {
           "audit_status": "unaudited",
@@ -70,7 +70,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md",
           "title": "Observable Principle Positive Source Cone P2 Elimination Narrow Theorem Note",
-          "transitive_descendants": 829
+          "transitive_descendants": 840
         }
       ],
       "requires_lemma_extraction": false
@@ -89,7 +89,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 299,
+      "max_transitive_descendants": 315,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -98,7 +98,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
           "title": "Staggered-Dirac Chirality-Parity Bridge Narrow Theorem Note",
-          "transitive_descendants": 299
+          "transitive_descendants": 315
         },
         {
           "audit_status": "unaudited",
@@ -107,13 +107,76 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md",
           "title": "Staggered Dirac Kawamoto-Smit Conditional Realization Rescoping Companion",
-          "transitive_descendants": 299
+          "transitive_descendants": 315
         }
       ],
       "requires_lemma_extraction": false
     },
     {
       "cycle_id": "cycle-0004",
+      "decision": null,
+      "edges": [
+        {
+          "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
+          "to": "luders_rule_from_composition_consistency_note_2026-05-20"
+        },
+        {
+          "from": "luders_rule_from_composition_consistency_note_2026-05-20",
+          "to": "record_instrument_kernel_interface_2026-06-05"
+        },
+        {
+          "from": "record_instrument_kernel_interface_2026-06-05",
+          "to": "pre_record_reference_state_maximal_symmetry_open_gate_note_2026-06-05"
+        },
+        {
+          "from": "pre_record_reference_state_maximal_symmetry_open_gate_note_2026-06-05",
+          "to": "born_rule_from_gleason_busch_derivation_note_2026-05-20"
+        }
+      ],
+      "length": 4,
+      "max_transitive_descendants": 33,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
+          "title": "Born Rule From Finite Ideal Records",
+          "transitive_descendants": 33
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
+          "title": "L\u00fcders Rule from Compositional Bayesian Consistency",
+          "transitive_descendants": 33
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_instrument_kernel_interface_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md",
+          "title": "Record Instrument Kernel Interface",
+          "transitive_descendants": 33
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pre_record_reference_state_maximal_symmetry_open_gate_note_2026-06-05",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/PRE_RECORD_REFERENCE_STATE_MAXIMAL_SYMMETRY_OPEN_GATE_NOTE_2026-06-05.md",
+          "title": "Pre-Record Reference State `rho_ref = I/d`: Maximal-Symmetry Open Gate",
+          "transitive_descendants": 33
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0005",
       "decision": null,
       "edges": [
         {
@@ -150,7 +213,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0005",
+      "cycle_id": "cycle-0006",
       "decision": null,
       "edges": [
         {
@@ -163,7 +226,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 10,
+      "max_transitive_descendants": 11,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -172,7 +235,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md",
           "title": "Beta=6 SU(3) Plaquette D7 Coefficient and Geometric-Ratio Verdict",
-          "transitive_descendants": 10
+          "transitive_descendants": 11
         },
         {
           "audit_status": "unaudited",
@@ -181,13 +244,315 @@
           "effective_status": "unaudited",
           "note_path": "docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md",
           "title": "Beta=6 SU(3) Wilson Single-Plaquette \u2014 Exact Order-beta^6 and Order-beta^7 Coefficients",
-          "transitive_descendants": 10
+          "transitive_descendants": 11
         }
       ],
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0006",
+      "cycle_id": "cycle-0007",
+      "decision": null,
+      "edges": [
+        {
+          "from": "beta6_delta_analytic_class_frontier_note_2026-05-30",
+          "to": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30"
+        },
+        {
+          "from": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+          "to": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04"
+        },
+        {
+          "from": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+          "to": "beta6_delta_analytic_class_frontier_note_2026-05-30"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 9,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_delta_analytic_class_frontier_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Wilson Delta(beta) \u2014 Analytic-Continuation Class Frontier Note",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Wilson Single-Plaquette Resummation-Ansatz Test Harness",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md",
+          "title": "Beta=6 SU(3) Plaquette Weight-10 Two-Cube Candidate: Bounded Finite-Order Validation",
+          "transitive_descendants": 9
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0008",
+      "decision": null,
+      "edges": [
+        {
+          "from": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+          "to": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04"
+        },
+        {
+          "from": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+          "to": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04"
+        },
+        {
+          "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+          "to": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 9,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Wilson Single-Plaquette Resummation-Ansatz Test Harness",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md",
+          "title": "Beta=6 SU(3) Plaquette Weight-10 Two-Cube Candidate: Bounded Finite-Order Validation",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md",
+          "title": "Beta=6 SU(3) Plaquette D9 Coefficient and Distinct-Support Reopening",
+          "transitive_descendants": 9
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0009",
+      "decision": null,
+      "edges": [
+        {
+          "from": "beta6_delta_analytic_class_frontier_note_2026-05-30",
+          "to": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30"
+        },
+        {
+          "from": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+          "to": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04"
+        },
+        {
+          "from": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+          "to": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04"
+        },
+        {
+          "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+          "to": "beta6_delta_analytic_class_frontier_note_2026-05-30"
+        }
+      ],
+      "length": 4,
+      "max_transitive_descendants": 9,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_delta_analytic_class_frontier_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Wilson Delta(beta) \u2014 Analytic-Continuation Class Frontier Note",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Wilson Single-Plaquette Resummation-Ansatz Test Harness",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md",
+          "title": "Beta=6 SU(3) Plaquette Weight-10 Two-Cube Candidate: Bounded Finite-Order Validation",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md",
+          "title": "Beta=6 SU(3) Plaquette D9 Coefficient and Distinct-Support Reopening",
+          "transitive_descendants": 9
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0010",
+      "decision": null,
+      "edges": [
+        {
+          "from": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+          "to": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04"
+        },
+        {
+          "from": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+          "to": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04"
+        },
+        {
+          "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+          "to": "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30"
+        },
+        {
+          "from": "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30",
+          "to": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30"
+        }
+      ],
+      "length": 4,
+      "max_transitive_descendants": 9,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Wilson Single-Plaquette Resummation-Ansatz Test Harness",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md",
+          "title": "Beta=6 SU(3) Plaquette Weight-10 Two-Cube Candidate: Bounded Finite-Order Validation",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md",
+          "title": "Beta=6 SU(3) Plaquette D9 Coefficient and Distinct-Support Reopening",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Plaquette D8 Coefficient and Single-Complex-Pair Verdict",
+          "transitive_descendants": 9
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0011",
+      "decision": null,
+      "edges": [
+        {
+          "from": "beta6_delta_analytic_class_frontier_note_2026-05-30",
+          "to": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30"
+        },
+        {
+          "from": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+          "to": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04"
+        },
+        {
+          "from": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+          "to": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04"
+        },
+        {
+          "from": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+          "to": "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30"
+        },
+        {
+          "from": "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30",
+          "to": "beta6_delta_analytic_class_frontier_note_2026-05-30"
+        }
+      ],
+      "length": 5,
+      "max_transitive_descendants": 9,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_delta_analytic_class_frontier_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Wilson Delta(beta) \u2014 Analytic-Continuation Class Frontier Note",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Wilson Single-Plaquette Resummation-Ansatz Test Harness",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md",
+          "title": "Beta=6 SU(3) Plaquette Weight-10 Two-Cube Candidate: Bounded Finite-Order Validation",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md",
+          "title": "Beta=6 SU(3) Plaquette D9 Coefficient and Distinct-Support Reopening",
+          "transitive_descendants": 9
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md",
+          "title": "Beta=6 SU(3) Plaquette D8 Coefficient and Single-Complex-Pair Verdict",
+          "transitive_descendants": 9
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0012",
       "decision": null,
       "edges": [
         {
@@ -237,7 +602,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0007",
+      "cycle_id": "cycle-0013",
       "decision": null,
       "edges": [
         {
@@ -274,7 +639,44 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0008",
+      "cycle_id": "cycle-0014",
+      "decision": null,
+      "edges": [
+        {
+          "from": "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
+          "to": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
+        },
+        {
+          "from": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
+          "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 2,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+          "title": "Dimension Selection Upper-Bound \u2014 Named Non-Derivation Imports",
+          "transitive_descendants": 2
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md",
+          "title": "Dimension Upper-Bound Dependency-Edge Repair Note",
+          "transitive_descendants": 2
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0015",
       "decision": null,
       "edges": [
         {
@@ -311,7 +713,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0009",
+      "cycle_id": "cycle-0016",
       "decision": null,
       "edges": [
         {
@@ -348,7 +750,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0010",
+      "cycle_id": "cycle-0017",
       "decision": null,
       "edges": [
         {
@@ -385,7 +787,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0011",
+      "cycle_id": "cycle-0018",
       "decision": null,
       "edges": [
         {
@@ -422,7 +824,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0012",
+      "cycle_id": "cycle-0019",
       "decision": null,
       "edges": [
         {
@@ -459,7 +861,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0013",
+      "cycle_id": "cycle-0020",
       "decision": null,
       "edges": [
         {
@@ -497,8 +899,10 @@
     }
   ],
   "length_counts": {
-    "2": 12,
-    "3": 1
+    "2": 13,
+    "3": 3,
+    "4": 3,
+    "5": 1
   },
   "sort": [
     "max_transitive_descendants descending",

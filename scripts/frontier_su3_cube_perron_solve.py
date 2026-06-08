@@ -1,18 +1,21 @@
-"""SU(3) tensor-network engine + L_s=2 PBC cube Perron solve (narrowed).
+"""SU(3) tensor-network engine + L_s=2 quotient-encoder Perron solve.
 
-This is the narrowed L_s=2 PBC cube structural runner.  Earlier planning
-called this part of a multi-PR engine roadmap, but the roadmap is
-historical context only and is not a load-bearing authority for this
-bounded theorem.
+This is the narrowed L_s=2 all-forward quotient-encoder structural runner.
+Earlier planning called this part of a multi-PR engine roadmap, but the
+roadmap is historical context only and is not a load-bearing authority for
+this bounded theorem.
 
-It targets explicit computation of rho_(p,q)(6) for the unmarked spatial
-Wilson environment on the V-invariant L_s=2 PBC spatial cube, then plugs
-the result into the framework's source-sector factorization
+It targets an explicitly defined all-forward L_s=2 quotient encoder with 12
+encoded plaquette loops, then plugs its trivial-sector rho_(p,q)(6) into the
+framework's source-sector factorization
 
     T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)
 
 to compute the resulting Perron P(6) and report the no-go bypass verdict
 relative to epsilon_witness ≈ 3e-4 (no-go Lemma 2 separation).
+
+This runner does not claim that the quotient encoder is the Wilson
+orientation/count theorem for the L_s=2 PBC cube.
 
 The runner produces, in order:
 
@@ -20,15 +23,16 @@ Section A: SU(3) fusion engine via Cartan-torus character orthogonality
   (re-bundle of the existing fusion engine; provides API for the cube
   computation).
 
-Section B: L_s=2 PBC spatial cube geometry encoder
+Section B: L_s=2 all-forward quotient encoder
   - 8 sites (2 spatial directions, each with L_s=2)
   - 24 directed link variables (3 directions x 8 starting positions)
-  - 12 unique unoriented spatial plaquettes (xy, xz, yz; 4 each at L=2 PBC)
+  - 12 encoded plaquette loops (xy, xz, yz; 4 each at L=2 PBC)
 
 Section C: Link-orientation analysis
   - Each link is in exactly 2 plaquettes at L_s=2 PBC
-  - Both plaquettes use the link in the SAME forward orientation (proven
-    by exhaustive enumeration of all 24 link-plaquette incidences)
+  - Both encoded loops use the link in the SAME forward orientation by
+    quotient-encoder convention, verified by exhaustive enumeration of all
+    48 link-plaquette incidences
   - Therefore the 2-link Haar integration
 
         integral dU [D^lambda(U)]_ij [D^mu(U)]_kl
@@ -82,6 +86,7 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 from typing import Dict, List, Tuple, FrozenSet
 
 import numpy as np
@@ -98,6 +103,9 @@ N_GRID_DEFAULT = 80
 MODE_MAX_DEFAULT = 200
 
 EPSILON_WITNESS = 3.03e-4   # no-go Lemma 2 separation
+NOTE_PATH = (Path(__file__).resolve().parents[1]
+             / "docs"
+             / "SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md")
 
 
 def dim_su3(p: int, q: int) -> int:
@@ -205,7 +213,7 @@ def fusion_table(weights: List[Tuple[int, int]], chars: np.ndarray,
 
 
 # ===========================================================================
-# Section B. L_s=2 PBC spatial cube geometry encoder.
+# Section B. L_s=2 all-forward quotient encoder.
 # ===========================================================================
 
 # Site coordinates: 8 sites at (x, y, z) with x, y, z in {0, 1}.
@@ -236,7 +244,7 @@ def all_directed_links() -> List[Tuple[int, int, int, int]]:
 
 
 def all_unique_plaquettes() -> List[Tuple[Tuple[int, int, int], int, int]]:
-    """Enumerate all 12 unique unoriented spatial plaquettes.
+    """Enumerate all 12 encoded quotient plaquette loops.
 
     Each plaquette is identified by (start_site, plane_dir1, plane_dir2)
     where the plaquette traverses the loop:
@@ -283,12 +291,12 @@ def all_unique_plaquettes() -> List[Tuple[Tuple[int, int, int], int, int]]:
 
 def plaquette_links(plaq: Tuple[Tuple[int, int, int], int, int]
                     ) -> List[Tuple[int, int, int, int]]:
-    """Return the 4 directed links forming the boundary of a plaquette,
-    traversed in the standard +dir1 +dir2 -dir1 -dir2 order.
+    """Return the 4 directed links forming the encoded plaquette loop.
 
-    At L_s=2 PBC, the -dir1 step from site (..., 1, ...) wraps to
-    (..., 0, ...), which is +dir1 from there. So all 4 links are
-    represented as forward (+dir) directed links.
+    The quotient encoder represents the nominal reverse steps in the
+    +dir1 +dir2 -dir1 -dir2 traversal by the same forward directed edge
+    after L_s=2 site identification. This is an encoder convention, not a
+    proof that a Wilson-oriented plaquette has only forward factors.
     """
     start, d1, d2 = plaq
     site = list(start)
@@ -302,17 +310,12 @@ def plaquette_links(plaq: Tuple[Tuple[int, int, int], int, int]
     links.append((site[0], site[1], site[2], d2))
     site[d2] = (site[d2] + 1) % 2
 
-    # Step 3: "-d1" — but at L=2 PBC, going -d1 from site (..., 1, ...)
-    # reaches (..., 0, ...), which is the same as +d1 from (..., 1, ...).
-    # In LINK terms, the segment from current site to (current with d1 flipped)
-    # in the "backward-going" direction is the inverse of the +d1 link from
-    # (current with d1 flipped) to current. Equivalently, it is the +d1 link
-    # from current to current-with-d1-flipped... which at L=2 PBC IS the same.
-    # So this segment is the +d1 link from the current site (forward direction).
+    # Step 3: quotient-encode nominal "-d1" as the forward d1 edge from the
+    # current site after L=2 PBC site identification.
     links.append((site[0], site[1], site[2], d1))
     site[d1] = (site[d1] + 1) % 2
 
-    # Step 4: "-d2" similarly = +d2 link from current site
+    # Step 4: quotient-encode nominal "-d2" similarly.
     links.append((site[0], site[1], site[2], d2))
     site[d2] = (site[d2] + 1) % 2
 
@@ -409,9 +412,9 @@ def all_directed_link_orientations_in_plaquettes(plaqs: List
     is the NET count of +1 (forward) - (-1) (reverse) usages of this link
     in the plaquette's loop traversal.
 
-    At L_s=2 PBC with the standard +d1 +d2 -d1 -d2 traversal that I've
-    encoded as 4 forward link uses, every link in every plaquette has
-    orientation +1.
+    In the all-forward quotient encoder every nominal reverse step is encoded
+    as a forward link use after L_s=2 site identification, so every link in
+    every encoded plaquette has orientation +1.
     """
     out: Dict[Tuple, Dict[int, int]] = {}
     for p_idx, plaq in enumerate(plaqs):
@@ -626,14 +629,42 @@ def cube_perron_p6(rho: Dict[Tuple[int, int], float],
 
 def driver() -> int:
     print("=" * 78)
-    print("SU(3) Tensor-Network Engine + L_s=2 PBC Cube Perron Solve")
-    print("(narrowed scope: PBC geometry + bipartite adjacency + trivial-sector Reference B recovery)")
+    print("SU(3) Tensor-Network Engine + L_s=2 Quotient-Encoder Perron Solve")
+    print("(narrowed scope: all-forward quotient encoder + bipartite adjacency + trivial-sector Reference B recovery)")
     print("=" * 78)
     print()
 
     pass_count = 0
     support_count = 0
     fail_count = 0
+
+    # ========== Section 0.1: source-boundary guard ==========
+    print("--- Section 0.1: source-boundary guard ---")
+    try:
+        note_text = NOTE_PATH.read_text(encoding="utf-8")
+    except OSError as exc:
+        print(f"  FAIL: could not read source note boundary: {exc}")
+        fail_count += 1
+    else:
+        flat_note = " ".join(note_text.split())
+        required_phrases = [
+            "all-forward quotient encoder",
+            "not claim that this encoder is the Wilson orientation/count theorem",
+            "Wilson L_s=2 orientation/count theorem",
+            "encoder convention",
+            "not a proof that a Wilson-oriented plaquette has only forward representation factors",
+        ]
+        missing = [phrase for phrase in required_phrases
+                   if phrase not in flat_note]
+        if missing:
+            print("  FAIL: source note is missing quotient-encoder boundary phrases:")
+            for phrase in missing:
+                print(f"    - {phrase}")
+            fail_count += 1
+        else:
+            print("  PASS: source note declares the all-forward quotient-encoder boundary.")
+            pass_count += 1
+    print()
 
     # ========== Section A: SU(3) fusion engine sanity ==========
     print("--- Section A: SU(3) fusion engine sanity ---")
@@ -645,8 +676,8 @@ def driver() -> int:
     pass_count += 1
     print()
 
-    # ========== Section B: cube geometry encoder ==========
-    print("--- Section B: L_s=2 PBC spatial cube geometry ---")
+    # ========== Section B: quotient encoder ==========
+    print("--- Section B: L_s=2 all-forward quotient encoder ---")
     plaqs = all_unique_plaquettes()
     n_plaq = len(plaqs)
     print(f"  Total directed links: 24 (3 directions x 8 starting positions)")
@@ -655,7 +686,7 @@ def driver() -> int:
         print(f"  FAIL: expected 12 unique plaquettes, got {n_plaq}.")
         fail_count += 1
     else:
-        print(f"  PASS: 12 unique unoriented spatial plaquettes constructed.")
+        print(f"  PASS: 12 encoded quotient plaquette loops constructed.")
         pass_count += 1
     print()
     # Show first few plaquettes
@@ -688,7 +719,7 @@ def driver() -> int:
                 all_forward = False
                 break
     if all_forward:
-        print(f"  PASS: all 48 link-plaquette incidences are forward orientation.")
+        print(f"  PASS: all 48 link-plaquette incidences are forward by encoder convention.")
         pass_count += 1
     else:
         print(f"  SUPPORT: some link-plaquette incidences are not simple forward;")
@@ -802,10 +833,10 @@ def driver() -> int:
     print("--- Section H: honest summary (narrowed note scope) ---")
     print()
     print("  STRUCTURAL FINDINGS (all PASS):")
-    print("    1. L_s=2 PBC cube has 12 unique unoriented spatial plaquettes,")
+    print("    1. L_s=2 quotient encoder has 12 encoded plaquette loops,")
     print("       24 directed links, 8 sites.")
     print("    2. Each directed link is in exactly 2 plaquettes.")
-    print("    3. All 48 link-plaquette incidences are FORWARD orientation.")
+    print("    3. All 48 link-plaquette incidences are FORWARD by encoder convention.")
     print("    4. The 2-link Haar selection rule forces lambda_B = bar(lambda_A)")
     print("       for adjacent plaquettes.")
     print(f"    5. Plaquette adjacency graph IS BIPARTITE (color partition 6:6).")
@@ -845,8 +876,8 @@ def driver() -> int:
     print("=" * 78)
     print()
     print("Headline:")
-    print(f"  Narrowed SU(3) tensor-network engine + L_s=2 cube structural analysis.")
-    print(f"  Cube geometry: 12 plaquettes, 24 directed links, all forward.")
+    print(f"  Narrowed SU(3) tensor-network engine + L_s=2 quotient-encoder analysis.")
+    print(f"  Encoder geometry: 12 plaquette loops, 24 directed links, all forward by convention.")
     print(f"  Plaquette graph BIPARTITE (NEW finding; admits alternating lambda).")
     print(f"  Trivial-sector P(6) = {P_trivial:.6f} (recovers Reference B).")
     print(f"  Non-trivial-sector P(6) requires intertwiner traces (deferred).")

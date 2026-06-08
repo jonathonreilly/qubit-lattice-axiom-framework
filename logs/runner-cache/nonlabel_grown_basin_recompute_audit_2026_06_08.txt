@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/nonlabel_grown_basin_recompute_audit_2026_06_08.py
+runner_sha256: 342d68833f1cb4d2d8a3bc86bfbd11a81dcf6bd5dd8606e55e8ee3add6c43e67
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 99.71
+status: ok
+----- stdout -----
+==========================================================================================
+NON-LABEL GROWN BASIN LIVE RECOMPUTE AUDIT
+drift=0.20 restores=[0.6, 0.7, 0.8] seed=0 NL=25 source_strength=5.0e-05
+==========================================================================================
+restore=0.60 zero=+0.000000000000e+00 plus=-3.392850377389e-05 minus=+3.391821268520e-05 neutral=+0.000000000000e+00 double=-6.786728601815e-05 exp=1.000218512071 PASS
+restore=0.70 zero=+0.000000000000e+00 plus=-3.534838056581e-05 minus=+3.533742984684e-05 neutral=+0.000000000000e+00 double=-7.070769755103e-05 exp=1.000223160122 PASS
+restore=0.80 zero=+0.000000000000e+00 plus=-3.620003163686e-05 minus=+3.618855546964e-05 neutral=+0.000000000000e+00 double=-7.241152409304e-05 exp=1.000228358345 PASS
+
+SAFE READ: live recompute confirms the three-row bounded basin gates.
+SCORECARD PASS=3 FAIL=0
+
+----- stderr -----
+

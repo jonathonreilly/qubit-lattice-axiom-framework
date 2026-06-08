@@ -12,7 +12,9 @@ and via explicit sympy matrix realisations:
   (2) Live ledger statuses for the authority packet, including retained Q1
       and source-local Q2 rank counting.
   (3) The exact rational identities
-        dof_Dirac = 2 (spin, R1) * 2 (particle-antiparticle, R3) = 4
+        dof_Dirac = 2 (R1 doublet label) * 2 (R3 paired label) = 4,
+      conditional on the supplied physical spin/helicity and
+      particle-antiparticle label semantics
         dof_Weyl  = dof_Dirac / 2 = 2          (chirality projection R2)
         dof_Weyl  = 2 (helicity-antiparticle)
       with no floating-point arithmetic.
@@ -40,10 +42,8 @@ and via explicit sympy matrix realisations:
   (9) Forbidden-imports scan (no lattice-action quantity in the
       proof-walk: no plaquette, staggered, Brillouin, link unitary,
       u_0, Monte Carlo, fitted).
-  (10) The audit-conditional P4 replacement mapping: the parent note's P4 premise
-      content is exactly reconstructed by R1 (spin = 2) * R3
-      (particle-antiparticle = 2) for Dirac, and Dirac / 2 (R2
-      chirality halving) for Weyl.
+  (10) The P4 boundary mapping: this row reconstructs the integer arithmetic
+      but does not replace P4 without the separate physical-label bridge.
 """
 
 from __future__ import annotations
@@ -148,6 +148,9 @@ def check_note_structure() -> None:
         "Claim type:** bounded_theorem",
         "Status authority:** source-note proposal only",
         "2026-06-07 source-packet repair",
+        "2026-06-08 label-semantics safe-narrow",
+        "physical label semantics",
+        "does not replace P4",
         "Q1 is retired as an unsupported algebraic admission",
         "Q2 is repaired as a textbook-counting import",
         "source-local finite-rank statement",
@@ -192,7 +195,7 @@ def check_premise_packet_marking() -> None:
 
 
 def check_p4_mapping() -> None:
-    section("P4 audit-conditional replacement mapping is explicit")
+    section("P4 arithmetic support and label-semantics boundary are explicit")
     # Confirm parent note carries the P4 premise text (when the parent
     # note is present on the working tree). The bridge is intended to
     # support replacing P4 after independent audit.
@@ -213,18 +216,20 @@ def check_p4_mapping() -> None:
         "2 (spin) * 2 (particle-antiparticle)" in NOTE_TEXT,
     )
     check(
-        "bridge maps P4 to R1 + R3 (Dirac)",
-        "R1 supplies spin = 2, R3 supplies" in NOTE_FLAT,
+        "bridge keeps physical label semantics open",
+        "physical spin/helicity label" in NOTE_FLAT
+        and "distinct particle-antiparticle thermal label" in NOTE_FLAT,
     )
     check(
-        "bridge maps Weyl halving to R2 (chirality)",
+        "bridge maps Weyl arithmetic halving to R2 (chirality)",
         "gamma_5" in NOTE_TEXT
         and "chirality" in NOTE_TEXT
         and "halving" in NOTE_TEXT,
     )
     check(
-        "P4 replacement names retained Q1 and source-local Q2 rank counting",
-        "retained Q1" in NOTE_FLAT and "source-local Q2 rank counting" in NOTE_FLAT,
+        "P4 replacement remains blocked without separate physical-label bridge",
+        "P4 of the parent note therefore cannot be replaced by this bounded row alone" in NOTE_FLAT
+        and "separate physical-label bridge" in NOTE_FLAT,
     )
 
 
@@ -287,12 +292,12 @@ def check_forbidden_vocabulary() -> None:
 
 def check_exact_arithmetic() -> None:
     section("exact rational arithmetic: dof_Dirac = 4, dof_Weyl = 2")
-    # Direct factorisation per R1 + R3.
-    spin_factor = Fraction(2)  # R1
-    particle_antiparticle_factor = Fraction(2)  # R3
+    # Direct factorisation per R1 + R3 once physical label semantics are supplied.
+    spin_factor = Fraction(2)  # R1 doublet label
+    particle_antiparticle_factor = Fraction(2)  # R3 paired label
     dof_dirac_direct = spin_factor * particle_antiparticle_factor
     check(
-        "Dirac dof = 2 (spin) * 2 (particle-antiparticle) = 4",
+        "Dirac dof = 2 (R1 doublet label) * 2 (R3 paired label) = 4 under supplied label semantics",
         dof_dirac_direct == Fraction(4),
         detail=f"got {dof_dirac_direct}",
     )
@@ -630,7 +635,7 @@ def check_car_carrier_dim_two() -> None:
 
 
 def check_cpt_pair_factor() -> None:
-    section("R3 CPT particle-antiparticle pairing factor 2")
+    section("R3 CPT paired-label factor 2 under supplied physical-label semantics")
     # CPT-pair label is a binary index {particle, antiparticle}.
     # The "factor 2" in the parent note's P4 is the cardinality of this
     # binary label. We verify it as a Fraction equality.
@@ -661,7 +666,7 @@ def check_cpt_pair_factor() -> None:
 
 
 def check_p4_replacement_arithmetic() -> None:
-    section("P4 replacement support: bridge supplies the factor 2 * 2 = 4 from R-packet")
+    section("P4 arithmetic support: bridge supplies factor 2 * 2 = 4 but not label semantics")
     # The parent note's P4 says: Dirac = 2 (spin) * 2 (particle-antiparticle) = 4.
     # The bridge claims R1 supplies the first 2, R3 supplies the second 2.
     spin_from_R1 = Fraction(2)
@@ -715,9 +720,9 @@ def main() -> int:
     if FAIL == 0:
         print(
             "VERDICT: Q1/Q2-counting-repaired bounded bridge passes; Dirac dof = 4 and "
-            "Weyl dof = 2 follow from the framework authority packet R1-R4 "
-            "plus retained Q1 and source-local Q2 rank counting by exact "
-            "rational arithmetic."
+            "Weyl dof = 2 follow by exact rational arithmetic from retained Q1, source-local Q2 "
+            "rank counting, and supplied physical-label semantics; P4 replacement still needs "
+            "the separate physical-label bridge."
         )
     return 0 if FAIL == 0 else 1
 

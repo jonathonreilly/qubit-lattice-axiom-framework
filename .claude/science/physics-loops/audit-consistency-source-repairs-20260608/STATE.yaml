@@ -1,0 +1,21 @@
+loop: audit-consistency-source-repairs-20260608
+branch: physics-loop/audit-consistency-source-repairs-20260608
+base: origin/main@d78d9dfed
+mode: run
+target_status: best-honest-status
+cycle: 1
+active_route: source-side consistency repairs for audited conditional rows
+files_touched:
+  - docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md
+  - scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py
+  - docs/PACKET_MEMORY_NOTE.md
+  - docs/POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX_2026-06-06.md
+  - outputs/post_record_dynamics_family_lift_closeout_index_2026_06_06_source_packet.json
+open_imports:
+  - packet-memory physical bridges from grow/_prop/_imposed_field to retained framework primitives remain open
+  - bare alpha coupling identities remain assumed-input algebra
+trace_gate_classification: direct_blocker_closure
+review_findings: not_run
+pr_status: pending
+next_exact_action: commit, push, and open review PR
+stop_condition: review PR opened for source-side repair block

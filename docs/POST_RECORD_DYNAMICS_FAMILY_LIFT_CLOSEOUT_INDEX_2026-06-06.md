@@ -85,7 +85,7 @@ The runner verifies:
 - each stack layer has an upstream source note, runner source, SHA-fresh cache,
   and the source note names its primary runner;
 - the extended index consumes the repaired directed-certificate
-  `SUMMARY: PASS=60 FAIL=0`, repaired stack-map `SUMMARY: PASS=47 FAIL=0`,
+  `SUMMARY: PASS=64 FAIL=0`, repaired stack-map `SUMMARY: PASS=52 FAIL=0`,
   and repaired campaign-closeout `SUMMARY: PASS=46 FAIL=0` certificates;
 - the stack has six `exact-support` entries, one `bounded-support` entry, and
   three `no-go` entries;

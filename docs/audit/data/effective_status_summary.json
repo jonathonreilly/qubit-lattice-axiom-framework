@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1363,
+    "bounded_theorem": 1374,
     "decoration": 53,
-    "meta": 320,
-    "no_go": 326,
-    "open_gate": 137,
-    "positive_theorem": 769
+    "meta": 321,
+    "no_go": 330,
+    "open_gate": 136,
+    "positive_theorem": 773
   },
   "cycle_examples": [
     [
@@ -29,9 +29,9 @@
       "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
     ]
   ],
-  "cycles_detected": 13,
+  "cycles_detected": 20,
   "effective_status_counts": {
-    "audited_conditional": 42,
+    "audited_conditional": 30,
     "audited_numerical_match": 15,
     "audited_renaming": 33,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
@@ -61,17 +61,16 @@
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 311,
+    "meta": 312,
     "open_gate": 37,
     "retained": 207,
     "retained_bounded": 751,
     "retained_no_go": 217,
-    "retained_pending_chain": 11,
-    "unaudited": 1295
+    "retained_pending_chain": 10,
+    "unaudited": 1326
   },
-  "retained_pending_chain_count": 11,
+  "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [
-    "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",

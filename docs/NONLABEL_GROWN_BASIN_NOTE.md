@@ -13,6 +13,10 @@ Runner behavior for audit replay:
 - default: verify the frozen log row grid, zero/neutral gates, signed response,
   charge exponent, and `3/3` safe-read count
 - `--recompute`: run the original live targeted replay
+- [`scripts/nonlabel_grown_basin_recompute_audit_2026_06_08.py`](../scripts/nonlabel_grown_basin_recompute_audit_2026_06_08.py):
+  SHA-pinned live recompute artifact for the same three restore rows, with
+  exact row values and row-gate checks in
+  [`logs/runner-cache/nonlabel_grown_basin_recompute_audit_2026_06_08.txt`](../logs/runner-cache/nonlabel_grown_basin_recompute_audit_2026_06_08.txt)
 
 ## Question
 
@@ -53,3 +57,14 @@ retained grown row. It survives the nearest restore neighborhood at fixed
 ## Final Verdict
 
 **bounded positive basin**
+
+## 2026-06-08 recompute-audit repair
+
+The audit runner-artifact blocker asked for either a completed live recompute
+of the three restore rows or an independent derivation of those row values.
+The paired recompute artifact reruns the live grown geometry-sector
+measurement, then re-checks the zero-source gate, neutral-pair gate, sign
+orientation, double-charge sign, and charge-exponent tolerance.
+
+This repair does not widen the theorem beyond the three stated restore rows
+and does not promote the basin to an unbounded family theorem.

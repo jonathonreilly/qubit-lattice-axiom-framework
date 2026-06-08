@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_kahler_dirac_realization_gives_r_one_2026_06_08.py
+runner_sha256: d85e6142925e3e4c87c366689e3433f6b119fd6e5f4900f3ec360fb58f21f759
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.20
+status: ok
+----- stdout -----
+==========================================================================================
+Kähler-Dirac/Cl(3) generation realization -> r=1; index count-once route closed at the realization
+==========================================================================================
+
+------------------------------------------------------------------------------------------
+A: Cl(3) primitive -- gamma algebra, 1-3-3-1 Hamming grading, Euler characteristic
+------------------------------------------------------------------------------------------
+  [PASS] (A1) {gamma_mu, gamma_nu} = -2 delta_munu  (Cl(3,0) geometric algebra of the qubit)
+  [PASS] (A2) Hamming-degree grading dims = (1,3,3,1)  --  [1, 3, 3, 1]
+  [PASS] (A3) chirality (volume element) splits 8 = 4_+ + 4_-
+  [PASS] (A4) Euler characteristic 1-3+3-1 = 0  (the de Rham/Kähler-Dirac index of the FULL complex)  --  the index is a signed mode-count, vanishing here
+
+------------------------------------------------------------------------------------------
+B: generation triplet = a dim-3 'taste' sector; C_3 cyclic; M=aI+bC+conj(b)C^2; reprove Q=(1+2r)/3
+------------------------------------------------------------------------------------------
+  [PASS] (B1) the two dim-3 sectors (Hamming wt 1, 2) are the generation triplets
+  [PASS] (B2) C_3 generation cycle: C^3 = I
+  [PASS] (B3) sum lambda_k = 3a (b-terms cancel); Q = (sum lam^2)/(sum lam)^2 = (1+2r)/3  [SIGNED readout]  --  so Q=2/3 <=> r=1/2 EXACTLY, in the signed-eigenvalue readout
+
+------------------------------------------------------------------------------------------
+C: the two taste-3 sectors = L/R of the generation Dirac fermion -> det D = |det M|^2 (singular)
+------------------------------------------------------------------------------------------
+  [PASS] (C1) wt-1 (odd) and wt-2 (even) are OPPOSITE chirality = the L,R generation triplets  --  taste 1,3,3,1 = the L/R doubling = the qubit (no extra copy factor)
+  [PASS] (C2) det D = |det M|^2  (Dirac determinant is SECOND-ORDER by construction; only a WEYL fermion keeps det M)  --  |det D|=0.00096, |det M|^2=0.00096
+  [PASS] (C3) D^2 spectrum = (singular values of M)^2, each twice -> physical Dirac masses are SINGULAR (sign-blind)  --  singular^2 = [0.0016, 0.2504, 2.433]
+
+------------------------------------------------------------------------------------------
+D: the index 'count-once' route is CLOSED at the realization (answers the meta-note's open question)
+------------------------------------------------------------------------------------------
+  [PASS] (D1) physical L/R grading: Str(eps e^{-tD^2}) = 0 (MM^dag, M^dag M isospectral) -> index gives NO count  --  Str=0.00e+00
+  [PASS] (D2) all 8 C_3-equivariant Z_2 gradings give index in {+-1,+-3}: a signed MODE-COUNT, never an energy 1/2-reweight  --  an index drops paired modes; it cannot weight the doublet ENERGY by 1/2 in BOTH sum m and (sum sqrt m)^2
+  [PASS] (D3) => the realization does NOT deliver the first-order count-once (the meta-note's open question: answered NO)  --  index is the wrong KIND of functional for the Koide mass weighting; (1,1,1) is a static rep-count
+
+------------------------------------------------------------------------------------------
+E: the fluctuation modulus (the energy readout) is non-holomorphic -> rank-2 -> counts TWICE -> r=1
+------------------------------------------------------------------------------------------
+  [PASS] (E1) doublet energy Tr(M^dag M)=3a^2+6|b|^2 has (Re b, Im b) Hessian rank 2 -> BOTH real modes counted -> r=1  --  a holomorphic functional of b alone would see ONE complex mode (r=1/2); the modulus sees |b|^2=b*bbar -> two
+
+------------------------------------------------------------------------------------------
+F: staggered ROOTING cannot help -- taste IS the qubit (no integer copy-factor to root)
+------------------------------------------------------------------------------------------
+  [PASS] (F1) Cl(3) has dim 8 = 2^3; the chiral spinor block is 2-dim = the qubit -> taste = qubit, no rooting count-once  --  rooting removes taste-COPY degeneracy; there is no copy here, so |det M|^2 -> det M is unavailable
+
+------------------------------------------------------------------------------------------
+G: the SOLE residual -- the signed/U(1)_b 1-slot readout, quantized away by C^3=I; static structure measure-neutral
+------------------------------------------------------------------------------------------
+  [PASS] (G1) J_cs=(C-C^2)/sqrt3 has J^2=-P_doublet and [J_cs, M]=0 -> MEASURE-NEUTRAL (cannot select the count)
+  [PASS] (G2) where an eigenvalue<0: SIGNED -> Q=2/3 (r=1/2); SINGULAR (physical Dirac) -> Q != 2/3  --  lam=[1.879, -0.399, 1.52] (#neg=1); Q_signed=0.6667, Q_singular=0.4160
+
+------------------------------------------------------------------------------------------
+H: the theta-link is a shared signed-spectrum CLASS, NOT a theta-forcing of r=1/2 (C_3 blocks it)
+------------------------------------------------------------------------------------------
+  [PASS] (H1) global axial theta acts as a C_3-scalar phase e^{2i a} on M (commutes with C) -> all 3 channels rotate equally  --  a single theta cannot flip ONE eigenvalue's sign relative to the others -> cannot manufacture r=1/2
+  [PASS] (H2) per-eigenvalue signs (the r=1/2 selector) need a FLAVOR-NON-DIAGONAL axial structure, not one theta  --  so signed-sqrt(m) and theta share the signed-spectrum CLASS but theta does NOT force r=1/2 (generation-locking C_3)
+
+------------------------------------------------------------------------------------------
+VERDICT
+------------------------------------------------------------------------------------------
+  [PASS] (V1) the EXPLICIT Kähler-Dirac/Cl(3) realization gives r=1 (det=|det M|^2, D^2=singular, modulus rank-2, taste=qubit)
+  [PASS] (V2) the index count-once route is CLOSED at the realization (index is a signed mode-count, not the energy weighting)
+  [PASS] (V3) BOUNDED: r=1/2 is NOT forbidden -- it is the un-forced signed/U(1)_b 1-slot readout, quantized away by C^3=I; static eps/J_cs/taste/CPT measure-neutral; theta cannot force it (C_3-scalar)
+
+==========================================================================================
+TOTAL: 22 PASS / 0 FAIL
+==========================================================================================
+
+----- stderr -----
+

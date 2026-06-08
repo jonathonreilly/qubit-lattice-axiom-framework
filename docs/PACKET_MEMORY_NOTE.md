@@ -1,7 +1,8 @@
 # Packet Memory: Initial Conditions Survive to Detector
 
 **Date:** 2026-04-06
-**Status:** proposed_retained positive for Tier A (memory), partial for Tier B (shape), Tier C open
+**Status:** bounded finite-runner support for Tier A (memory), partial finite
+support for Tier B (shape), Tier C open; not a retained framework theorem.
 
 ## Artifact chain
 
@@ -19,7 +20,7 @@ Overlap at detector (NL=30) for packets at different initial z-offsets:
 
 | offset | overlap with origin | decoherent? |
 | ---: | ---: | --- |
-| 0 | 0.99 | no |
+| 0 | 1.0000 | no |
 | 1 | 0.83 | no |
 | 2 | 0.42 | YES |
 | 3 | 0.18 | YES |
@@ -36,8 +37,9 @@ Packets separated by ≥ 2 lattice units are distinguishable at the detector.
 | 30 | 0.42 |
 | 40 | 0.56 |
 
-At NL → ∞: overlap → 1 (all memory lost). But at NL=30 there is
-still 58% distinguishability.
+The finite runner shows overlap rising over the checked path-length window.
+The NL -> infinity memory-loss statement remains an open extrapolation rather
+than a retained theorem. At NL=30 there is 58% distinguishability.
 
 ### Gravity depends on packet identity
 
@@ -71,10 +73,19 @@ residual difference at NL=30.
 Not yet tested. Would require applying a uniform field to different
 packets and measuring whether they accelerate differently.
 
+## Audit boundary
+
+This packet is a finite deterministic harness over the explicit
+`grow`/`_prop`/`_imposed_field` implementation in
+[`scripts/packet_memory.py`](../scripts/packet_memory.py). It does not derive
+the growth rule, propagation kernel, imposed-field coupling, detector
+normalization, or NL -> infinity memory-loss limit from retained framework
+primitives. Those bridges remain open frontier work.
+
 ## Honest read
 
-The model supports "detector-readable packet memory" but not
-"persistent localized objects." The centroid is the primary
-surviving information. Width converges over long paths. The
-persistent-object closure stands for sharp localization, but
-the mesoscopic memory lane is open.
+The finite model supports "detector-readable packet memory" but not
+"persistent localized objects." The centroid is the primary surviving
+information. Width converges over the checked finite paths. The
+persistent-object closure stands for sharp localization, but the mesoscopic
+memory lane is open.

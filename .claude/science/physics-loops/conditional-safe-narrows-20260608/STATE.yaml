@@ -1,0 +1,24 @@
+loop: conditional-safe-narrows-20260608
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_ids:
+  - gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17
+  - higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02
+  - dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28
+  - post_record_selector_tangent_readout_weight_prototype_2026-06-06
+blockers:
+  - "gauge_vacuum: provide a retained derivation of the actual SU(3) Wilson slab rim/far support partition and marked/non-marked mixed-kernel compression bridge, or narrow the row to the supplied-partition product-Fubini lemma."
+  - "higgs_lattice: add a retained one-hop authority deriving d_t=1 / total d=4 / Z^4 APBC carrier for this lattice block, or narrow the row to make d=4 an explicit unresolved bounded hypothesis."
+  - "dirac_weyl: add a retained bridge deriving the distinct particle-antiparticle thermal label and physical spin/helicity label, or narrow to finite arithmetic under supplied label semantics."
+  - "post_record_selector: add a retained bridge deriving or accepting selector/tangent/readout carrier, readout weights, and positive metric/Hessian, or keep supplied-support only."
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md
+  - scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py
+  - docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md
+  - scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py
+  - docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+  - scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py
+  - docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md
+  - scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
+stop_condition: packaged_for_review_pr

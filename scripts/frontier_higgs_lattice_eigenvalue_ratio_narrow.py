@@ -2,14 +2,16 @@
 """Verify the narrow Higgs lattice eigenvalue ratio theorem at mean-field.
 
 Claim scope: GIVEN the declared graph_first_su3 surface + retained Wilson
-canonical g_bare=1 convention, the lattice ratio R_lattice =
-4/(u_0² N_taste) = 1/(4 u_0²) at N_taste = 16, in the tadpole mean-field
-truncation. NO physical (m_H/v)² identification.
+canonical g_bare=1 convention + supplied unresolved d=4/Z^4 APBC carrier, the
+lattice ratio R_lattice = 4/(u_0² N_taste) = 1/(4 u_0²) at N_taste = 16, in
+the tadpole mean-field truncation. NO physical (m_H/v)² identification.
 
 No admissions:
 - the Clifford identity D_taste² = d·I (d=4) is DERIVED here by explicit
   Euclidean Cl(4) matrix construction (Part 3), not asserted;
 - N_taste = 16 is DERIVED as the spin⊗taste hypercube dimension 2^d (Part 2);
+  this is inside the supplied d=4/Z^4 APBC carrier packet, not a native
+  carrier theorem;
 - the mean-link u_0 is supplied by the retained one-hop authority
   u0_plaquette_quartic_derivation (u_0 = <P>^{1/4}); the mean-field
   factorization U_ab → u_0 δ_ab is the explicit hypothesis of this formal
@@ -186,6 +188,9 @@ note_text = NOTE_PATH.read_text()
 required = [
     "Higgs Lattice Eigenvalue Ratio (Mean-Field) — Narrow Theorem",
     "Type:** bounded_theorem",
+    "narrow row that makes `d=4/Z^4 APBC` an explicit unresolved bounded",
+    "supplied unresolved `d=4/Z^4` APBC taste-block carrier hypothesis",
+    "framework-native carrier remains an unresolved bounded hypothesis",
     "R_lattice",
     "4 / (u_0² · N_taste)",
     "N_taste = 16",

@@ -1,0 +1,11 @@
+loop: gravity-source-readout-unblock-20260608
+target_claim_id: grav_decoherence_derived_note
+actual_current_surface_status: bounded companion / conditional-support
+trace_class: dependency_split
+reachability_to_target: narrows
+blocker: "missing_bridge_theorem: close the physical mass-source/readout, Penrose-Diosi rate, SI normalization, Planck-pin, BMV cutoff, and L^{-1}=G_0 bridge dependencies in retained-grade artifacts before re-auditing beyond companion arithmetic."
+files_touched:
+  - docs/GRAV_DECOHERENCE_DERIVED_NOTE.md
+  - scripts/frontier_grav_decoherence_derived.py
+  - logs/runner-cache/frontier_grav_decoherence_derived.txt
+stop_condition: packaged_for_review_pr

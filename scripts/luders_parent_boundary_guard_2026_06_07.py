@@ -38,7 +38,11 @@ def main() -> int:
 
     check("parent note exists", PARENT.exists(), str(PARENT.relative_to(ROOT)))
     check("PEP bridge note exists", BRIDGE.exists(), str(BRIDGE.relative_to(ROOT)))
-    check("parent declares conditional bounded theorem candidate", "conditional bounded_theorem candidate" in parent)
+    check(
+        "parent declares conditional Lueders support boundary",
+        "conditional bounded_theorem candidate" in parent
+        or "conditional-support assembly over exact finite subclaims" in parent,
+    )
     check("parent states trace/effect probability is measurement-side premise", "trace/effect probability interpretation" in parent and "measurement-side premise" in parent)
     check("parent states bridge supplies PEP compression algebra", "`P E P` compression" in parent or "`M_{P,E}=PEP` compression" in parent)
     check("parent states bridge does not supply Born/update semantics", "does not by itself supply the Born rule" in parent)

@@ -57,9 +57,10 @@ def read_rel(path: str) -> str:
 
 def require_text(path: str, needles: list[str]) -> None:
     text = read_rel(path)
+    flat = " ".join(text.split())
     report(f"{path} exists", True)
     for needle in needles:
-        report(f"{path} contains: {needle}", needle in text)
+        report(f"{path} contains: {needle}", needle in text or needle in flat)
 
 
 def digest(path: Path) -> str:
@@ -97,9 +98,13 @@ def source_anchor_checks() -> None:
         [
             "selector_tangent_readout_weight",
             "Claim type:** methodology / supplied-support",
+            "bounded-support branch-local",
             "2026-06-08 supplied-support safe-narrow",
             "supplied-support",
             "finite readout/tangent weight certificate",
+            "not a positive theorem over the framework baseline",
+            "not selector/tangent/readout authority",
+            "They are supplied finite packet data.",
             "Does not derive a selector, tangent metric, Hessian",
             "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
         ],

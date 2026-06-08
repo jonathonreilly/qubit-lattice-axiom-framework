@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
-runner_sha256: 07b7d0a68ce7ce42efde8c0b114a558e3ea44dd841d4cef8a4ff09c364d92449
+runner_sha256: d333d27c92368fbe8123d2079ca592100f139de2fec5b961c2ccdeddf382513a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.85
+elapsed_sec: 0.95
 status: ok
 ----- stdout -----
 
@@ -13,9 +13,13 @@ Source-anchor checks
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md exists
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: selector_tangent_readout_weight
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: Claim type:** methodology / supplied-support
+PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: bounded-support branch-local
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: 2026-06-08 supplied-support safe-narrow
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: supplied-support
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: finite readout/tangent weight certificate
+PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: not a positive theorem over the framework baseline
+PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: not selector/tangent/readout authority
+PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: They are supplied finite packet data.
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: Does not derive a selector, tangent metric, Hessian
 PASS docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md contains: scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md exists
@@ -57,7 +61,7 @@ PASS selector/tangent row count is current snapshot :: 7
 PASS representative row present: dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16
 PASS representative row present: teleportation_preparation_readout_probe_note
 PASS representative row present: yt_exact_hessian_selector_uniqueness_note
-PASS audit ledger hash is unchanged :: 920cdf6f047ec5bbd95588badd7413e0c2ed730d29efcdd18830903e27c62e27
+PASS audit ledger hash is unchanged :: 88547e14802a4f4a060903ec387b4611c6ae788009e9e23e044469cc3c9ddb07
 
 Selector/tangent/readout rows:
   dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md
@@ -83,7 +87,7 @@ PASS Record-derived Born law flag is false
 PASS production dynamics derived flag is false
 PASS Record-derived physical arrow flag is false
 
-SUMMARY: PASS=51 FAIL=0
+SUMMARY: PASS=55 FAIL=0
 SELECTOR_TANGENT_READOUT_WEIGHT_ROWS=7
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE

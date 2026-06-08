@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lensing_exponent_is_dipole_crossover.py
+runner_sha256: c3662da75eb8faecfa3651c97ef00b6b7fc2a3ac9f6ee14512ec06b5a5bb8fd4
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 3.44
+status: ok
+----- stdout -----
+PASS T1 monopole cancels: |sum c|/sum|c| < 0.01 (got 0.0001)
+PASS T2 uniform field -> ~0 deflection (|sum c| << typical |alpha|)
+PASS T3 kernel localized near source (support ~3.6 << path span ~13.8)
+PASS T3b asymptotic-fit b-values {3..6} are ~ kernel support (crossover regime)
+PASS T4 crossover: |small-b slope| < |asymptotic slope| (-1.57 vs -2.02)
+PASS T4b asymptotic slope -> -2 (dipole) (got -2.02, within 0.15)
+PASS T4c small-b slope is steeper than -1 but shallower than -2 (crossover, got -1.57)
+PASS T5 CONTROL: non-cancelling kernel |c_e| gives asymptotic -> -1 (1/b) (got -1.00)
+
+mechanism: monopole=0.0001 support=3.61 small_b_slope=-1.57 asym_slope=-2.02 abs_kernel_asym=-1.00
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

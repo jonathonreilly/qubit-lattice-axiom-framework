@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 759 |
+| **retained_bounded** | 760 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 36 |
-| unaudited | 1332 |
+| unaudited | 1331 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1187 |
+| `audited_clean` | 1188 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1647 |
+| `unaudited` | 1646 |
 
 | claim_type | count |
 |---|---:|
@@ -379,6 +379,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `electrostatics_superposition_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `em_gravity_coexistence_2x2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_invariance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `emergent_product_law_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -5209,6 +5210,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On seed 42, the primary runner's matter-coupled growth rule produces a grown graph with higher effective dimension and much higher peak shell-bin density than the uniform-growth control.  _(class `C`)_
 - **chain closes:** True — The included runner source actually constructs both graphs, evolves the matter field for the coupled case, applies the |psi|^2-biased parent selection, and computes the reported shell-volume and density metrics. The cached output supports the narrowed qualitative claim on this seed.
 - **rationale:** The narrowed load-bearing claim is not the broader multi-seed or gravitational-closure story; it is the single-seed primary-runner comparison. The runner does not merely print constants or import the contested conclusion: it computes the grown graph and control from fixed rules and reports d_eff = 1.64 versus 1.55 and peak shell-bin density about 72 versus 11. The broader companion-runner claims are explicitly scoped as support diagnostics and are not needed for this audited claim.
+- **auditor confidence:** high
+
+### `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`
+
+- **Note:** [`EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebra over the supplied one-loop velocity RG, canonical continuous-time normalization, and O_h spatial symmetry: the speed difference is IR-attractive and the spatial gate reduces to one scalar, with physical gamma/coefficient and LV-bound sufficiency excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260608-201150-8b0c0f3d42-emergent_lorentz_interacting`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From the supplied RG equations, Delta = v_F - v_b obeys dDelta/dl = -(C_F + C_B N_f) alpha Delta, so for positive coefficients the speed-difference mode has a negative eigenvalue and eta flows to 1.  _(class `A`)_
+- **chain closes:** True — Within the stated supplied-input scope, the algebra closes: the difference-mode sign, O_h fixed-subspace dimension, CAR/unitarity identity, and damping exponent all check independently. The packet does not close the physical one-loop dynamics, fixed-point anomalous dimension, power-divergent coefficient, or experimental sufficiency, but those are explicitly outside the audited conclusion.
+- **rationale:** The load-bearing step is class A algebra over supplied equations, not a first-principles derivation of the interacting dynamics. Independent checks confirm the displayed sign/factor in dDelta/dl, the one-dimensional O_h-invariant symmetric-tensor subspace, the Stone-unitarity CAR preservation, and the (mu/M_Pl)^gamma form from exponential decay. The runner source performs real finite checks for the algebraic pieces, while its four Part E checks are scope checks rather than physics derivations. All load-bearing cited authorities are retained-grade or accepted premises, and the scale-reference primitive is used only as an approved units reference, not as dimensionless physics.
 - **auditor confidence:** high
 
 ### `emergent_lorentz_invariance_note`

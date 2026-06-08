@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3011 |
-| Applied audit verdicts | 1352 |
-| Retained-grade rows, including boxed decorations | 1229 |
+| Applied audit verdicts | 1353 |
+| Retained-grade rows, including boxed decorations | 1230 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 219 |
-| Retained bounded rows | 752 |
+| Retained bounded rows | 753 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 36 |
-| Unaudited rows | 1342 |
+| Unaudited rows | 1341 |
 | Retained-pending-chain rows | 11 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1344 |
+| Total pending rows | 1343 |
 | Ready rows | 30 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 250 |
-| Medium pending | 367 |
+| Medium pending | 366 |
 | Leaf pending | 400 |
 
 Next ready rows by queue order:
 
-- [`su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05`](../../docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md) - medium; unaudited
+- [`plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md) - medium; unaudited
 - [`ew_current_traceless_generator_selector_no_go_note_2026-05-03`](../../docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md) - medium; unaudited
 - [`free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`nonlabel_grown_basin_note`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md) - medium; unaudited
 - [`wide_lattice_h2t_distance_law_note`](../../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md) - medium; unaudited
 - [`generation_dial_local_stability_grammar_2026-06-05`](../../docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md) - medium; unaudited
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - medium; unaudited
-- [`plaquette_v1_picard_fuchs_ode_bounded_synthesis_note_2026-05-06`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md) - medium; unaudited
+- [`magnitude_temporal_factor_is_count_not_rate_2026-06-06`](../../docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

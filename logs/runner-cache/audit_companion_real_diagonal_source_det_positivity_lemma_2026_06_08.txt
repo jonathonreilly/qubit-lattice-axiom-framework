@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py
+runner_sha256: 18020ff6f76ccf7dc0c37770923ef84a2069302aaf696bf0a5685daabcbe3e99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+REAL-DIAGONAL-SOURCE DET-POSITIVITY + LOG READOUT LEMMA (self-contained)
+==========================================================================
+[PASS] L1: det(S + D) > 0 (real, no phase) for positive-diagonal S + real antisymmetric D (400 random cases; det(I+B)=prod(1+lam^2)>0)
+       min det over 400 cases = 0.3146 > 0
+[PASS] L1-structure: a real antisymmetric matrix has purely imaginary spectrum (Re=0) -> det(I+B)=prod(1+lam^2) >= 1
+       max|Re eig(B)| = 4.6e-16; det(I+B)=73.532
+[PASS] L2: with ||D^{-1}J|| < 1, det(D + tJ) keeps the positive sign of det D on t in [0,1] (Neumann; no zero crossing) -> det(D+J) in R_{>0}
+       200 random invertible patches
+[PASS] L3: det is multiplicative over disjoint blocks; Record finite scalar additivity over disjoint records + continuity on R_{>0} forces the readout to be c*log det (Cauchy), c=1 convention
+       det(A(+)B)=det A*det B: True; log(xy)=log x+log y: True
+
+SCORECARD PASS=4 FAIL=0
+VERDICT: a real-diagonal source on the positive cone added to a real antisymmetric operator has a strictly positive real determinant (no phase), and Record additivity plus explicit continuity on R_{>0} selects c*log det as the readout (c=1 convention). This is the self-contained fact the observable-principle parent needs to make its P2 phase distinction vacuous -- it consumes none of the parent. Audit lane sets the verdict.
+
+----- stderr -----
+

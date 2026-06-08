@@ -45998,10 +45998,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
@@ -46027,6 +46023,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "lensing_finite_path_explanation_note"
     },
     {
       "from": "repo.repo_organization",
@@ -88950,17 +88950,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
         "fifth_family_radial_boundary_note",
         "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
-        "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17"
+        "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
+        "lensing_finite_path_explanation_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a4a63bdfa8e85214a9b7d2fec6be07f221071afe744f911eca7de7c581d82101",
+      "note_hash": "35268cc3926ad77a76c7ab023e123567204b83110a959ce969d81cbe4c98bbce",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

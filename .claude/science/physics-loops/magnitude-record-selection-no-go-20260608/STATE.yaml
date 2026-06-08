@@ -1,0 +1,16 @@
+loop_slug: magnitude-record-selection-no-go-20260608
+target: magnitude_reads_minimal_record_block_2026-06-06
+mode: run
+runtime: current interactive repair pass
+cycle_count: 1
+active_route: Record-selection no-go and conditional arithmetic boundary
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+files_touched:
+  - docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md
+  - scripts/magnitude_reads_minimal_record_block_2026_06_06.py
+  - logs/runner-cache/magnitude_reads_minimal_record_block_2026_06_06.txt
+review_disposition: pass
+next_exact_action: open review PR for independent audit
+stop_condition: coherent no-go repair block packaged
+

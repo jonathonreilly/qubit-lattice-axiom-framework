@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/min_time_step_is_planck_time_from_single_scale_import_runner.py
+runner_sha256: 2bf5ca1e66394d55d2b0e2e955dcc55ae6597a39f0e3d8254977a89533d6d8e5
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+==============================================================================
+A1. the framework imports a^{-1}=M_Pl (scale-reference primitive) => a_s = l_P
+==============================================================================
+   scale-reference primitive: a^-1 = M_Pl  =>  a_s = l_P = 1.6163e-35 m (the imported lattice spacing)
+  [PASS] the framework already imports exactly ONE dimensionful scale (a_s = l_P), owner-approved  | NOT an open gap: the Planck length is the registered primitive
+
+==============================================================================
+A2. the one-tick-one-edge tie (companion): a_tau = a_s / c  (c = front speed = 1 edge/tick)
+==============================================================================
+   one tick reaches 6 nearest neighbors = one edge; a_tau = a_s/c = 5.3912e-44 s
+  [PASS] one tick = one edge (companion tie) => a_tau = a_s / c  | the minimum time step is the spatial edge read along the causal direction
+
+==============================================================================
+A3. therefore a_tau = l_P / c = the Planck time t_P
+==============================================================================
+   a_tau = l_P/c = 5.391246e-44 s  vs  t_P = 5.391247e-44 s   (relative diff 1.2e-07)
+  [PASS] the minimum time step a_tau = l_P/c = the Planck time t_P  | the imported a_s=l_P + the tie => a_tau = t_P (no extra import)
+
+==============================================================================
+A4. ONE import fixes BOTH minimums (minimality); consistent with the clock-rate no-go
+==============================================================================
+   the SINGLE scale-reference primitive (a^-1 = M_Pl) fixes BOTH:
+     minimum length  a_s   = l_P = 1.616e-35 m
+     minimum time    a_tau = t_P = 5.391e-44 s   (via one-tick-one-edge, a_tau=a_s/c)
+   => the minimum time step is NOT a second dimensionful import. The clock-rate no-go
+      (records give the COUNT, not the rate) is consistent: the rate comes from the IMPORTED
+      primitive, not the records. The records supply the tick/edge structure; the one anchor supplies the unit.
+  [PASS] one dimensionful import + the locality tie fix both the minimum length and the minimum time step  | minimality: a single Planck anchor, two minimums; min-time-step is free
+
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

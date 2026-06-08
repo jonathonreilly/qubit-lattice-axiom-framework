@@ -51,6 +51,12 @@ SOURCE_REQUIRED = [
     "external inputs for this companion surface",
     "companion arithmetic",
     "not a load-bearing retained premise",
+    "2026-06-08 Dependency-Split Addendum",
+    "Bounded source/readout support already available",
+    "G_NEWTON_BORN_AS_SOURCE_POSITIVE_THEOREM_NOTE_2026-05-10_gnewtonG2.md",
+    "CLOSURE_C_BB_CANONICAL_MASS_COUPLING_NOTE_2026-05-10_cBB.md",
+    "G_NEWTON_WEAK_FIELD_RESPONSE_BOUNDED_CLOSURE_NOTE_2026-05-10_gnewtonG3.md",
+    "remaining open bridges for this row",
     "Open Inputs Outside This Companion Boundary",
 ]
 SOURCE_BANNED = [

@@ -45998,10 +45998,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
     },
     {
@@ -46027,6 +46023,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lattice_total_momentum_conservation_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "lensing_centroid_multipole_no_go_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -88950,17 +88950,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
         "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
         "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
         "free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
         "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07",
-        "lattice_total_momentum_conservation_theorem_note_2026-05-02"
+        "lattice_total_momentum_conservation_theorem_note_2026-05-02",
+        "lensing_centroid_multipole_no_go_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8a1e000ba252d4c6eeab36eeb83303cd553ef87451cc9622f8f5901f2fd8b81e",
+      "note_hash": "73e05d7c45d16637ae08d4896698d94b89a073857a31c4dfdf9f0d831f22ae3f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

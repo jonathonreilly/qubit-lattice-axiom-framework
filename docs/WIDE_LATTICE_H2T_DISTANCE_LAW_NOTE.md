@@ -32,6 +32,62 @@ raw-row verifier route:
   full-replay printed values;
 - current verifier scorecard: `SCORECARD PASS=12 FAIL=0`.
 
+## 2026-06-08 raw-row inclusion repair
+
+The latest audit pass still treated the restricted packet as missing the raw
+distance and sweep rows. This revision includes those rows directly in the
+source note, while keeping the SHA-pinned frozen log as the authoritative raw
+artifact. The verifier now checks both:
+
+1. the frozen log SHA and recomputed fits; and
+2. presence of these exact raw-row tables in this note.
+
+Frozen replay metadata:
+
+| field | value |
+|---|---:|
+| `h` | `0.25` |
+| `W` | `12` |
+| `L` | `12` |
+| `max_d` | `12` |
+| `Born` | `4.82e-15` |
+| `k=0` | `+0.000000` |
+
+Raw distance rows from `logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`:
+
+| `z` | `delta` | direction |
+|---:|---:|---|
+| `2` | `+0.000188` | `TOWARD` |
+| `3` | `+0.000232` | `TOWARD` |
+| `4` | `+0.000245` | `TOWARD` |
+| `5` | `+0.000220` | `TOWARD` |
+| `6` | `+0.000183` | `TOWARD` |
+| `7` | `+0.000159` | `TOWARD` |
+| `8` | `+0.000142` | `TOWARD` |
+| `9` | `+0.000124` | `TOWARD` |
+| `10` | `+0.000108` | `TOWARD` |
+| `11` | `+0.000093` | `TOWARD` |
+
+Raw `F~M` sweep rows:
+
+| source strength `s` | `delta` | direction |
+|---:|---:|---|
+| `1e-06` | `+4.636762e-06` | `TOWARD` |
+| `2e-06` | `+9.273526e-06` | `TOWARD` |
+| `5e-06` | `+2.318384e-05` | `TOWARD` |
+| `1e-05` | `+4.636775e-05` | `TOWARD` |
+| `2e-05` | `+9.273579e-05` | `TOWARD` |
+| `5e-05` | `+2.318416e-04` | `TOWARD` |
+
+The verifier recomputes:
+
+- peak tail from `z >= 4`: slope `-0.9579`, `R^2 = 0.9801`, `n = 8`,
+  matching the frozen printed `b^(-0.95)`, `R^2 = 0.980`;
+- far tail from `z >= 5`: slope `-1.0578`, `R^2 = 0.9904`, `n = 7`,
+  matching the frozen printed `b^(-1.05)`, `R^2 = 0.990`;
+- mass-scaling exponent: `1.000003`, `R^2 = 1.000000`, `n = 6`,
+  matching the frozen printed `F~M exponent: 1.000`.
+
 ## Question
 
 Does the source-side wide-lattice `h^2+T` distance-law claim survive an

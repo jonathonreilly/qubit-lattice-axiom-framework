@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1347 |
-| Retained-grade rows, including boxed decorations | 1233 |
+| Applied audit verdicts | 1348 |
+| Retained-grade rows, including boxed decorations | 1234 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 203 |
 | Retained bounded rows | 771 |
-| Boxed decorations under retained parents | 49 |
+| Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1380 |
+| Unaudited rows | 1379 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 16 |
 | Audited renaming rows | 35 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1382 |
+| Total pending rows | 1381 |
 | Ready rows | 59 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
-| Medium pending | 369 |
+| Medium pending | 368 |
 | Leaf pending | 434 |
 
 Next ready rows by queue order:
 
-- [`gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md) - medium; unaudited
+- [`gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
 - [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited

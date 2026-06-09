@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 210 |
 | **retained_no_go** | 204 |
 | **retained_bounded** | 777 |
-| _retained_pending_chain_ | 12 |
+| _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1368 |
+| unaudited | 1367 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1210 |
+| `audited_clean` | 1211 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1683 |
+| `unaudited` | 1682 |
 
 | claim_type | count |
 |---|---:|
@@ -82,10 +82,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 784 |
-| `leaf` | 1285 |
+| `medium` | 785 |
+| `leaf` | 1284 |
 
-- **Retained pending chain closure:** 12
+- **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
 
 ### Runner classification (static heuristic)
@@ -646,6 +646,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
+| `i1_native_quadratic_static_source_normalization_bridge_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9018,6 +9019,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Cross-note chain assembly of three explicit inputs: retained/decorative structural ratio, retained/decorative SU(3) representation-to-matter convention, and retained_bounded alpha=1/3 normalization bridge with admitted GMN/electron readout; runner checks the resulting projector algebra and charge table but does not derive the imported inputs internally.  _(class `B`)_
 - **chain closes:** True — The bounded chain closes because every physical or readout convention needed for SM-Y matching is explicitly imported: the ratio is supplied by the LH-doublet traceless-ratio note, the Sym^2/Anti^2 to color triplet/singlet assignment is supplied by the LHCM matter-assignment note under a naming convention, and the absolute scale is supplied by the audited retained_bounded alpha bridge. The current source expressly excludes internal derivations of those inputs, GMN, full-spectrum hypercharge, and anomaly cancellation, so no additional hidden bridge is required for the narrowed claim.
 - **rationale:** Audited clean only as a bounded theorem. Boundary stress check found no unlisted load-bearing admission after narrowing: quark/lepton naming, Anti^2-as-L_L readout, alpha=1/3, GMN, T3(e_L), and Q(e_L) are all named or forwarded to audited dependencies. The source's broader title and SM-Y language are controlled by the retained-scope and not read as a derivation of physical hypercharge from the commutant alone. The decoration dependencies are not promoted to independent physics; they are used only as inherited chain inputs under the retained graph-first SU(3) surface. The stale runner prose saying alpha remains open is non-authoritative under the supplied current ledger metadata and does not break the chain.
+- **auditor confidence:** high
+
+### `i1_native_quadratic_static_source_normalization_bridge_2026-06-08`
+
+- **Note:** [`I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite zero-mode-projected periodic Z^3 complete-square algebra for a supplied source-normalized quadratic static-source action, including the two-source cross term and use of the retained Green-kernel 1/(4 pi r) asymptotic.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:key_terminology`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-121507-a79b159c7b-i1_native_quadratic_static_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given S[phi; J] = (1/(2 g^2)) <d phi, d phi> - <J, phi> and <d phi,d phi>=<phi,L phi>, completing the square gives L phi_* = g^2 J and S_eff[J] = -(g^2/2)<J,L^+J>, hence V_cross(r) = -g^2 s_1 s_2 G(r).  _(class `A`)_
+- **chain closes:** True — The finite-dimensional zero-mean quadratic form has stationary equation (1/g^2)L phi - J = 0, so phi_* = g^2 L^+J and substitution gives -(g^2/2)<J,L^+J>. Expanding J = s_1 delta_a + s_2 delta_b with zero-mode projection gives the separation-dependent off-diagonal term -g^2 s_1 s_2 G(a-b), while the 1/(4 pi r) asymptotic is supplied by the retained_bounded Green-kernel authority.
+- **rationale:** The claimed bridge is explicitly bounded to a supplied quadratic source action and does not claim to derive the physical source normalization or energy readout. The displayed signs and factors check independently: the variation of (1/(2g^2))<phi,Lphi>-<J,phi> gives Lphi=g^2J, and completing the square gives the stated negative effective action with exactly one cross term -g^2 s_1s_2G(r). The only non-axiom cited physics authority needed for the asymptotic coefficient is retained_bounded, and the minimal-axiom citation is an accepted premise for the Z^3 lattice background.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

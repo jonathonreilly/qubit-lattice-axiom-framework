@@ -46610,10 +46610,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "backreaction_note"
     },
     {
       "from": "repo.repo_organization",
@@ -90159,17 +90159,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
         "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02",
         "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
         "post_record_measure_weight_normalization_subdivision_2026-06-06",
-        "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08"
+        "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08",
+        "backreaction_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fe97ed0184dafc4e3a2cca3ff5025ab4cf4f97dadc84b98598388ef0fff60621",
+      "note_hash": "80bf0b41872b6e3ab15bec5fde50da2177ed7db70fbd6a752bed9c51a6c665fa",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"
@@ -103927,7 +103927,7 @@
       "positive_theorem": 618
     },
     "edge_count": 11762,
-    "leaf_count": 1051,
+    "leaf_count": 1050,
     "node_count": 3181,
     "root_count": 1033,
     "runners_with_path": 2766

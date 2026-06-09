@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_einselection_pointer_frame_unistochastic_criterion_2026_06_09.py
+runner_sha256: c30c4e0ccef8b3f6541f76d309347f65d1d6531ff7ae816802c30668fcbdb9a4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+=== C1: Phi maps every state into the B-diagonal subalgebra in one step ===
+[PASS] C1 Phi(rho) is exactly B-diagonal for all states
+[PASS] C1 Phi is trace-preserving and PSD-preserving (CPTP)
+
+=== C2: on the diagonal, Phi = Markov channel of T_U (unistochastic) ===
+[PASS] C2 Phi(diag p) = diag(T_U p) exactly
+
+=== C3: T_U = |U_ij|^2 is doubly stochastic for every unitary ===
+[PASS] C3 row sums = col sums = 1
+[PASS] C3 doubly stochastic also for d=2 (sanity)
+
+=== C4: I3/3 is always a fixed point of Phi ===
+[PASS] C4 Phi(I3/3) = I3/3 for all U
+
+=== C5: commuting limit [U,B]=0 -> T_U=I -> whole simplex fixed, NO depolarization ===
+[PASS] C5 [U,B]=0 gives T_U = identity
+[PASS] C5 every B-diagonal state is fixed (pointer frame B einselected)
+[PASS] C5 generic state stays POLARIZED (P>0, not depolarized)
+[PASS] C5 recovers block-05 single-frame boundary: rinf = diag(rho0)
+
+=== C6: reducible T_U (U block-diagonal) -> multiple pointer states, NO depolarization ===
+[PASS] C6 reducible T_U has >=2 unit eigenvalues (>=2 ergodic classes)
+[PASS] C6 generic state does NOT reach I3/3 (e2 sector survives)
+
+=== C7: irreducible-but-periodic T_U (cyclic permutation U) -> unique fixed pt, oscillation ===
+[PASS] C7 cyclic-permutation T_U is irreducible: unique stationary distribution
+[PASS] C7 periodic: >1 unit-modulus eigenvalue (period 3)
+[PASS] C7 Phi^n oscillates with period 3 (no pointwise relaxation)
+[PASS] C7 Cesaro (period) average IS I3/3
+
+=== C8: Perron-primitive T_U (no zero amplitude in B) -> UNIQUE pointer state I3/3, relaxation ===
+[PASS] C8 Haar U gives strictly positive T_U (Perron-primitive sufficient condition)
+[PASS] C8 Perron-primitive T_U: 1 is the unique unit-modulus eigenvalue
+[PASS] C8 Phi^n(rho) -> I3/3 for every state (depolarization, single frame)
+[PASS] C8 strictly positive T_U has uniform stationary distribution
+
+=== C9: order parameter P = Tr(rho^2)-1/3 contracts in strictly positive witnesses ===
+[PASS] C9 P = ||traceless(rho)||_F^2 (identity), and 0 iff rho=I3/3
+[PASS] C9 P decreases monotonically to 0 in the strictly positive witness
+
+=== C10: GUARD SU(3)-covariance does NOT imply contraction ===
+[PASS] C10 identity channel is SU(3)-covariant
+[PASS] C10 identity channel is inert (no contraction of P)
+[PASS] C10 Phi is frame-fixed (NOT globally SU(3)-covariant): a named-frame admission
+
+=== C11: RELOCATION gate -- single-frame depolarization <=> T_U Perron primitive (open input) ===
+[PASS] C11 only the Perron-primitive (Haar witness) case depolarizes
+[PASS] C11 T_U is invariant under diagonal-phase dressing of U
+[PASS] C11 same T_U => same depolarization verdict (criterion depends on T_U only)
+
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

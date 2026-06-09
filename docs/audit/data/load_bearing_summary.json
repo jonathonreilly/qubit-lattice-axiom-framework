@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 529,
     "high": 452,
-    "leaf": 1371,
-    "medium": 829
+    "leaf": 1372,
+    "medium": 828
   },
   "flagship_signal_used": false,
   "node_count": 3181,
@@ -73,8 +73,8 @@
     {
       "claim_id": "native_gauge_closure_note",
       "criticality": "critical",
-      "load_bearing_score": 39.288,
-      "transitive_descendants": 1249
+      "load_bearing_score": 39.289,
+      "transitive_descendants": 1250
     },
     {
       "claim_id": "cl3_color_automorphism_theorem",

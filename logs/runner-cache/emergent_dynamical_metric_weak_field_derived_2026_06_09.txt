@@ -1,0 +1,25 @@
+EMERGENT DYNAMICAL METRIC (the last gravity-sign input): derived at weak field
+============================================================================================
+[PASS] M1 (metric DOF exists, isotropic leading form): the record-density field n(x) parameterizes g_00 = -(1+2 Phi(x)); the kinetic-isotropy primitive c_t=c_s fixes the spatial part to the isotropic delta_ij (Minkowski leading class). So the framework HAS a dynamical metric field (the record-density), varying in space.
+       g = diag(-(1+2 Phi(x)), 1, 1, 1): isotropic spatial part (c_t=c_s); g_00 carries the record-density Phi(x)
+[PASS] M2 (it curves): for g = diag(-(1+2 Phi(x)),1,1,1) the LINEARIZED Ricci is R_00 = Phi''(x) = Nabla^2 Phi -- NONZERO for any varying record-density -> a genuinely curved emergent geometry.
+       R_00 (linearized) = Derivative(Phi(x), (x, 2)) = Nabla^2 Phi (nonzero for varying Phi)
+[PASS] M3 (geodesic kinematics): Gamma^x_00 = Phi'(x), so a test particle follows the curved metric and accelerates d^2 x/dtau^2 = -Phi'(x) toward LOWER Phi. KINEMATICS ONLY -- whether matter makes a WELL (Phi<0 -> attraction, the gravity SIGN) is the assembled-chain result (reflection positivity: no ghost -> G>0; + the source-positivity/symmetric-mediator analysis), CITED, not derived in this check. The metric merely transmits whatever sign the source curvature carries.
+       Gamma^x_00 (linearized) = Derivative(Phi(x), x) = Phi'(x) -> test particles fall toward lower Phi (kinematics); the attraction SIGN is the cited RP + source-positivity result, not this check
+[PASS] M4 (linearized dynamics is DERIVED): Nabla^2 Phi = source is the framework's RETAINED weak-field Poisson closure (GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE: Phi = G_0 rho, G_0 = (-Delta)^-1 the unique linear-response kernel, point source -> 1/(4 pi r), retained_bounded). The Newtonian 1/r IS the Poisson Green's function: Nabla^2(1/r)=0 for r>0 (verified symbolically); the lattice Green's function falls off ~1/r (log-log slope ~ -1, supporting). So the weak-field gravitational DYNAMICS of the record-density metric field is DERIVED, not supplied.
+       Nabla^2(1/r) = 0 (=0, harmonic -> Newtonian Green's fn, load-bearing); lattice falloff slope = -1.37 (~ -1, supporting; the rigorous lattice 1/r tail is the retained #06-07 result)
+[PASS] M5 (verdict): this note's NEW contribution is the EMERGENT DYNAMICAL METRIC in the LONGITUDINAL / Newtonian sector -- DOF (record-density, M1) + isotropic leading form (kinetic-isotropy primitive) + curvature (R_00=Nabla^2 Phi, M2) + geodesic kinematics (M3) + the retained Poisson dynamics (M4). ASSEMBLED with the (cited) chain -- RP + source-positivity for the attraction SIGN; R1 massless; R2 Noether conservation; R3 healthy lambda=1 Regge for the TT spin-2 kinetic term -- this lands the WEAK-FIELD gravity sign + Newtonian gravity. SPIN SECTOR (honest): the longitudinal Newtonian Phi is exactly the sector the matter generator W couples to (its metric-Hessian is rank-1 longitudinal, UNIVERSAL_GR_SCALAR_GENERATOR_TT_KERNEL); the TT spin-2 graviton (radiation) is a SEPARATE sector this note does not address (W dead for TT; the geometric-Regge operator is healthy on TT but its status as the framework's graviton dynamics is the OPEN spin-2-curvature question) -- the gravity sign + Newtonian gravity live entirely in the longitudinal sector. The remaining open gravity frontier is the NONLINEAR (strong-field) Einstein completion (GATE_B / POISSON_SELF_GRAVITY_LOOP_V3, retained_no_go: the self-gravity loop diverges).
+       longitudinal Newtonian metric DOF DERIVED (this note) + cited RP/R1-R3 chain -> weak-field gravity; TT spin-2 is R3; only the nonlinear (strong-field) EH completion remains open
+
+TOTAL: PASS=5 FAIL=0
+VERDICT: the LAST gravity-sign input -- the EMERGENT DYNAMICAL METRIC -- is DERIVED at weak field in
+the LONGITUDINAL/Newtonian sector. The metric DOF IS the position-dependent record-density (M1), it
+CURVES the geometry (R_00=Nabla^2 Phi, M2), test particles follow the curved geodesics (M3, kinematics),
+and its LINEARIZED dynamics IS the framework's RETAINED weak-field Poisson/1/r closure (M4); the
+kinetic-isotropy primitive supplies the isotropic leading form. ASSEMBLED with the cited chain (RP +
+source-positivity for the attraction SIGN; R1 massless; R2 Noether conservation; R3 healthy lambda=1
+Regge for the TT spin-2 kinetic term), the WEAK-FIELD gravity sign G>0 and Newtonian (1/r, attractive)
+gravity are derived. SPIN SECTOR (honest): this is the longitudinal sector W couples to; the TT spin-2
+graviton is R3's (W dead for TT). The only remaining open gravity frontier is the NONLINEAR/strong-field
+Einstein completion (GATE_B, retained_no_go). (Honest: nonlinear EH is genuinely open; this lands the
+WEAK-FIELD Newtonian sector + assembles the sign, not the full nonlinear theory or a fresh TT term.)

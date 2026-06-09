@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_einstein_hilbert_closure_synthesis.py
+runner_sha256: 85da047c85cdff7372352b4bb2e9c847d5d5899bcaec0658033cd2ed5666c68d
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 70.28
+status: ok
+----- stdout -----
+PASS T0 elliptic pin: native iD det=m^2+|sin|^2>0 on all 2744 BZ modes; bare-Herm sigma.sin sign-indefinite (2048/2744)
+PASS T1 CUBIC (n=3) Ward CLOSES with conserved coupling: resid/amplitude 0.0313@k1.05 -> 0.0232@k0.79 (decreasing -> continuum closure)
+PASS T2 QUARTIC (n=4) Ward CLOSES with conserved coupling: resid/amplitude 0.2034@k1.05 -> 0.1643@k0.79 (decreasing -> continuum closure)
+PASS T3 UNIFIED: at BOTH cubic and quartic order the conserved resid/amplitude is below the naive (cubic 0.023<0.054, quartic 0.164<0.331) and decreases faster -> conserved coupling essential at every order
+
+SYNTHESIS: the W-native induced graviton (metric-Hessian of W=log|det(D+J)| on the native
+elliptic Dirac, Sakharov induced gravity) obeys nonlinear diffeomorphism invariance at kinetic +
+cubic + quartic order with the conserved coupling D(P_eff) + sqrt(g) measure -- the nonlinear
+Einstein-Hilbert structure to the order computed. The n-point Ward identity is the (n-1)-fold
+cross term of dW/deps; it closes (resid/amplitude -> 0, O(a^2) lattice floor) for the conserved
+velocity x momentum coupling at every order, and NOT for the naive coupling. The lattice
+Brillouin zone is the finite, diffeo-controlled UV regulator the momentum-space continuum lacks.
+Magnitude registered (G3). Chain: #3222/#3242/#3257/#3264/#3295/#3314/#3325/#3329/#3342/#3353.
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

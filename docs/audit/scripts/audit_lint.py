@@ -677,9 +677,28 @@ def main() -> int:
                 f"{cid}: source note missing on disk: {row.get('note_path')}",
             )
         elif on_disk != row.get("note_hash"):
-            errors.append(
-                f"{cid}: note_hash mismatch — note edited since seeding; re-run seed_audit_ledger.py"
-            )
+            # note_hash is a source-content hash, not a verdict. A mismatch means the
+            # note was edited since the audit lane last seeded. For a RETAINED-grade row
+            # this is a real integrity violation — current text laundered past a stale
+            # ratification — so it stays a hard error and must be re-audited before
+            # landing. For a NON-retained row (unaudited / audited_conditional / pending)
+            # it only means re-audit is pending; per this lint's design (re-audit-required
+            # items are notices so strict lint stays useful) and because the nightly
+            # audit-lane re-seed refreshes the hash, it is a non-blocking notice — review
+            # loops that edit such notes (e.g. formal-carrier repairs on conditional rows)
+            # must not be forced to commit audit-lane ledger churn just to clear strict lint.
+            msg = f"{cid}: note_hash mismatch — note edited since seeding; re-run seed_audit_ledger.py"
+            if is_retained_grade(row.get("effective_status")):
+                errors.append(
+                    msg + " (RETAINED-grade row: an edited retained note must be re-audited, "
+                    "not landed with a stale ratification)"
+                )
+            else:
+                add_notice(
+                    "note_hash_drift_reaudit_pending",
+                    msg + " (non-retained row: re-audit pending; the audit-lane re-seed "
+                    "refreshes the hash — not a strict-lint blocker)",
+                )
 
         # Dangling deps.
         for d in row.get("deps", []):

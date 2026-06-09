@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta23_scheme_convention_demarcation_2026_06_08.py
+runner_sha256: 0cc48b7e6539106df4dff98a13d878934eb0003299649c1398d7e9a4a8308ca7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.53
+status: ok
+----- stdout -----
+==============================================================================
+Part 0  Derive b_n' under a' = a + c1 a^2 + c2 a^3 + c3 a^4 (exact, symbolic)
+==============================================================================
+  [PASS] inverse series solved exactly: a = a' - c1 a'^2 + (2c1^2 - c2) a'^3 + ...
+==============================================================================
+Part 1  (T1) b0' == b0 and b1' == b1 IDENTICALLY (universality derived, not asserted)
+==============================================================================
+  [PASS] b0' - b0 == 0 identically (no c-dependence at all)
+  [PASS] b1' - b1 == 0 identically (no c-dependence at all)
+==============================================================================
+Part 2  (T2) b2', b3' transformation laws + 't Hooft scheme (b2'=b3'=0) exact solve
+==============================================================================
+  [PASS] b2' = b2 - b1 c1 + b0 (c2 - c1^2) (exact)  (b2' = -b0*c1**2 + b0*c2 - b1*c1 + b2)
+  [PASS] b3' = b3 - 2 b2 c1 + b1 c1^2 + b0 (2 c3 - 6 c1 c2 + 4 c1^3) (exact)
+  [PASS] 't Hooft scheme EXISTS for every c1: c2, c3 solve LINEARLY (b2'=b3'=0)  (c2 = (b0*c1**2 + b1*c1 - b2)/b0)
+  [PASS] (b2', b3') reach ANY prescribed (t2, t3) — the pair carries NO invariant content
+==============================================================================
+Part 3  (T3) solvability denominators are exactly b0 and 2 b0 (AF = solvability)
+==============================================================================
+  [PASS] denominator of the c2 solve is b0; of the c3 solve is 2 b0  (den(c2)=b0, den(c3)=2*b0)
+  [PASS] CONTROL: at b0 = 0 the c2-dependence of b2' vanishes (freedom lost; prescription unreachable unless b2' = b2 - b1 c1 happens to hit the target)
+==============================================================================
+Part 4  (T4) inherited b0 = 7, b1 = 26 (N_f=6, bounded QCD context) = invariant set
+==============================================================================
+  [PASS] b0 = (11 C_A - 4 T_F N_f)/3 = 7 exactly (retained Casimirs, N_f = 6)  (b0 = 7)
+  [PASS] b1 = (34/3)C_A^2 - 4 C_F T_F N_f - (20/3) C_A T_F N_f = 26 exactly  (b1 = 26)
+  [PASS] AF: b0 = 7 > 0 -> the inherited QCD-running context supplies the solvability condition (T3) for its scheme freedom
+  [PASS] at (b0,b1) = (7,26), c1 = 0: c2 = -b2/7 and c3 = -b3/14 — exact rationals in (b2, b3); the scheme reaching (b2',b3') = (0,0) is explicit  (c2 = -b2/7, c3 = -b3/14)
+==============================================================================
+Part 5  (T5) teeth: the demarcation line cannot be moved; rescaling is not a scheme
+==============================================================================
+  [PASS] b1' has ZERO dependence on (c1, c2, c3): d(b1')/dc_i == 0 for all i (the demarcation sits exactly at n >= 2, not movable)
+  [PASS] a leading rescaling a' = lam*a sends b0 -> b0/lam (lam != 1 changes b0): that freedom is the separate g_bare NORMALIZATION convention, NOT a scheme map (normalization-preserving maps fix the leading coefficient = 1)
+==============================================================================
+TOTAL: PASS=15 FAIL=0
+==============================================================================
+SCOPE (demarcation, NOT closure): under normalization-preserving coupling
+  reparametrizations, b0 and b1 are IDENTICALLY invariant (derived) and b2, b3 are
+  FULLY adjustable (any prescribed pair; 't Hooft scheme explicit; solvable iff
+  b0 != 0 = asymptotic freedom).  The inherited bounded QCD-running coefficients
+  (b0, b1) = (7, 26) are exactly the invariant set, so the L3/L4 'MS-bar structural
+  gap' consists of CONVENTION-side coefficients: at fixed physical spacing the
+  native coefficient set carries the invariant running content, and the MS-bar labels
+  are a literature-comparison DICTIONARY (HK->MSbar conversion integrals = the
+  named admission, owned by the closure_c_l1a structural form; NOT computed here).
+  The alpha_s(M_Z) certificate's imports (dictionary, running, thresholds, Sommer)
+  are UNCHANGED; inherited color/g_bare gates are not retired; the sister b_3
+  N_f-dependence lane is untouched.  No new axiom.
+
+----- stderr -----
+

@@ -42,7 +42,7 @@ no lattice-gauge linear-response convention is imported; it is the exact
 consequence of the native quadratic field + native Green's function.
 
 **(T2) The interaction lives in the field, read via register-not-read — not a
-lattice-gauge convention.** A sharp adversarial point: A3's finite-additivity over
+lattice-gauge convention.** A sharp adversarial point: Record finite-additivity over
 **disjoint** records gives `I = I_1 + I_2`, with **no** `r`-dependence — so the
 static potential is *not* a readout-additivity quantity. The runner confirms the
 `r`-dependent `V(r)` cannot be an additive readout of disjoint sources. Instead the
@@ -57,24 +57,52 @@ import.
 
 The reframe trades the **standalone lattice-gauge import** for native
 field-integration **plus the framework's general energy-readout bridge**. What it
-rests on (with live-ledger statuses):
+rests on:
 
 | piece | status |
 |---|---|
-| field-integration `->` `V(r)=-g^2 G(r)` (complete the square) | native (this runner; exact) |
+| supplied leading quadratic source action `->` `V(r)=-g^2 G(r)` (complete the square) | bounded complete-square bridge; source normalization is explicit input |
 | gauge propagator `=` inverse `Z^3` graph-Laplacian `-> 1/(4π r)` | **retained_bounded** (Maradudin framework-applied) |
 | `W~exp(-VT)` large-`T` decay `=` lowest energy | **retained_bounded** (RP two-step transfer matrix) |
 | Kubo leading-order linear response | **retained_bounded** (`linear_response_true_kubo_note`) |
 | energy readout `=` field-integrated energy | **Observable-Principle / register-not-read bridge** (framework-wide non-axiom parent — *substituted for* I1, not eliminated) |
 | Casimir `C` | computable (retained Casimir rows) |
-| quadratic leading order | native expansion of the plaquette/Wilson action |
+| quadratic source normalization | supplied input in `I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08` |
 
 So the **standalone** I1 import (the lattice-gauge static-source linear-response
-convention) is **eliminated** — folded into native field-integration + the general
-energy-readout bridge + retained pieces. The residual is the **general** energy
-readout (used framework-wide for masses, not specific to this) + Casimir + leading
-order — not a standalone import. This is a relocation to more-native, framework-
-wide machinery, **not** a from-nothing closure of the readout itself.
+convention) is narrowed, not erased: the finite complete-square piece is folded
+into supplied leading quadratic field integration, while the general
+energy-readout bridge, source-coupling normalization, Casimir, and leading-order
+surface remain explicit residuals. This is a relocation to more-native,
+framework-wide machinery, **not** a from-nothing closure of the readout itself.
+
+## 2026-06-08 Supplied Quadratic Complete-Square Bridge
+
+The field-integration half of this relocation now has a restricted finite-lattice
+bridge:
+
+[`I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md`](I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md)
+
+That bridge proves, on the zero-mean finite periodic lattice, that given the
+source-normalized leading quadratic action
+
+```text
+S[phi; J] = (1/(2 g^2)) <d phi, d phi> - <J, phi>
+```
+
+has stationary equation `L phi = g^2 J` and completed-square effective action
+
+```text
+S_eff[J] = -(g^2/2) <J, L^+ J>.
+```
+
+For two static source records this gives the separation-dependent cross term
+`V_cross(r) = -g^2 s_1 s_2 G(r)`, with exact source-amplitude and `g^2`
+scaling. This narrows the native field-integration algebra, but it does not
+derive the physical source-coupling normalization or the gauge action itself.
+
+The general energy-readout bridge remains open. This update narrows the I1
+residual; it does not promote the row or claim full retained closure.
 
 ## Honest meta-note (for the audit lane)
 
@@ -94,37 +122,37 @@ relocation as settled.
 
 - Does **not** close the hierarchy magnitude or derive `v`. P3 (per-mode coupling
   dressing), the energy-readout bridge, Casimir, and `u_0` (sub-decade) remain.
-- Does **not** eliminate the energy-readout bridge — it substitutes the framework's
-  general Observable-Principle readout for the standalone lattice-gauge import.
+- Does **not** eliminate the energy-readout bridge or the source-coupling
+  normalization premise.
 - Does **not** assert the native quadratic gauge action beyond its leading-order
   (plaquette-expansion) form; higher orders are not addressed.
 - Sets no audit status.
 
 ## Load-bearing dependency and context references
 
-- `STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE` (**unaudited**, admitted
-  import) — the import this reframes.
-- `lattice_greens_function_maradudin_textbook_import_note` (**retained_bounded**) —
-  the native `Z^3` Green's function `G(r)->1/(4π r)` (the gauge propagator).
-- `axiom_first_rp_two_step_transfer_matrix_positivity` (**retained_bounded**) —
-  the `W~exp(-VT)` large-`T` decay.
-- `linear_response_true_kubo_note` (**retained_bounded**) — Kubo linear response.
-- `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note`
-  (**retained**) — `g_bare=1`.
-- `record_outcome_observable_principle_canonical_proposal_note` (**meta**) — the
-  register-not-read / energy-readout principle (T2, T3).
-- `MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06` (bounded) — names I1
-  the highest-leverage residual; this attacks it.
+- [`STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
+  — the static-source readout bridge this note reframes.
+- [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+  — the native `Z^3` Green's function `G(r)->1/(4π r)` (the gauge propagator).
+- [`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`](AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)
+  — the `W~exp(-VT)` large-`T` decay.
+- [`LINEAR_RESPONSE_TRUE_KUBO_NOTE.md`](LINEAR_RESPONSE_TRUE_KUBO_NOTE.md)
+  — Kubo linear response.
+- [`G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_ABSTRACT_NARROW_THEOREM_NOTE_2026-05-10.md`](G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_ABSTRACT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — `g_bare=1`.
+- [`RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`](RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md)
+  — the register-not-read / energy-readout principle (T2, T3).
+- [`MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md`](MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md)
+  — names I1 the highest-leverage residual; this attacks it.
 
 ## Forbidden imports check
 
 - No PDG observed values consumed (`alpha_bare`/`v` appear only as labelled
   background, in no PASS condition).
-- No NEW import introduced; the result **removes** a standalone import (I1) by
-  folding it into native field-integration + the framework's existing readout
-  bridge. Kubo / RP / Maradudin are the existing retained_bounded pieces.
+- No new fitted input is introduced. The result narrows I1 by separating the
+  finite complete-square algebra from the remaining readout and source-coupling
+  premises. Kubo / RP / Maradudin are existing bounded context pieces.
 - No fitted selectors; no new axiom or mechanism proposed.
-- All cited statuses verified on the live ledger.
 
 ## Validation
 
@@ -142,8 +170,8 @@ energy-readout bridge + native G + RP + Kubo + Casimir + leading order).
 This note is the claim boundary for: I1's static-source readout content is the
 exact native field-integration result (`V(r) = -g^2 G(r) -> -alpha_bare/r`, native
 4π), read via register-not-read as the registered energy of the native
-sourced-field configuration — eliminating the **standalone** lattice-gauge import
-by folding it into native field-integration + the framework's general
-energy-readout bridge. It does **not** close the magnitude (the energy-readout
-bridge, P3, Casimir, `u_0` remain) and flags itself as one of four register-not-
-read applications the audit lane should weigh together.
+sourced-field configuration, conditional on the supplied source-normalized
+quadratic action and the framework's general energy-readout bridge. It does
+**not** close the magnitude (the energy-readout bridge, source-coupling
+normalization, P3, Casimir, `u_0` remain) and flags itself as one of four
+register-not-read applications the audit lane should weigh together.

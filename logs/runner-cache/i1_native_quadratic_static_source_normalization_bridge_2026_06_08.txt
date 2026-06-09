@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py
+runner_sha256: 2f5950919ba75f2326246b970cdb9e750ce2af5ba52a533e445e8727a9b2d01a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+I1 NATIVE QUADRATIC STATIC-SOURCE NORMALIZATION BRIDGE
+--- Section 0: source-boundary text guard ---
+PASS: bridge note contains: source-normalized leading quadratic action
+PASS: bridge note contains: does not derive the physical source-coupling normalization
+PASS: bridge note contains: S_eff[J] = -(g^2/2) <J, L^+ J>
+PASS: bridge note contains: V_cross(r) = -g^2 s_1 s_2 G(r)
+PASS: I1 parent note links the complete-square bridge
+PASS: I1 parent keeps the energy-readout bridge open
+--- Section A: finite-lattice complete square ---
+PASS: stationary equation is L phi = g^2 J on the zero-mean lattice  (max_residual=4.441e-15)
+PASS: completed-square minimum equals -(g^2/2)<J,L^+J>  (actual=-4.454742323034e+01, predicted=-4.454742323034e+01)
+PASS: first variation vanishes at the completed-square solution  (slope=1.421e-09)
+--- Section B: two-source cross term normalization ---
+PASS: separation-dependent cross term is -g^2 s1 s2 G(r)  (cross=-1.339529842601e-02, expected=-1.339529842601e-02)
+PASS: source amplitude scaling is quadratic for lambda=0.5  (ratio=0.250000)
+PASS: source amplitude scaling is quadratic for lambda=2.0  (ratio=4.000000)
+PASS: coupling dependence is exactly g^2 for g=0.6  (ratio=0.434730)
+PASS: coupling dependence is exactly g^2 for g=1.4  (ratio=2.366864)
+--- Section C: graph-Laplacian small-k normalization ---
+PASS: one-axis lattice symbol/k^2 tends to 1 at k=0.04909  (ratio=0.999799219)
+PASS: one-axis lattice symbol/k^2 tends to 1 at k=0.02454  (ratio=0.999949802)
+PASS: one-axis lattice symbol/k^2 tends to 1 at k=0.01227  (ratio=0.999987450)
+PASS: native inverse-Laplacian coefficient is 1/(4 pi)  (coeff=0.079577471545948)
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3019 |
-| Applied audit verdicts | 1354 |
+| Applied audit verdicts | 1353 |
 | Retained-grade rows, including boxed decorations | 1227 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 202 |
 | Retained bounded rows | 766 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1348 |
+| Unaudited rows | 1349 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 29 |
 | Audited renaming rows | 35 |
@@ -33,13 +33,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1350 |
+| Total pending rows | 1351 |
 | Ready rows | 34 |
 | Cycle-break targets | 15 |
 | Critical pending | 329 |
 | High pending | 250 |
 | Medium pending | 367 |
-| Leaf pending | 404 |
+| Leaf pending | 405 |
 
 Next ready rows by queue order:
 
@@ -81,17 +81,17 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3156 |
 | Critical nodes | 526 |
-| High nodes | 447 |
-| Medium nodes | 812 |
+| High nodes | 448 |
+| Medium nodes | 811 |
 | Leaf nodes | 1371 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1368 descendants; score 97.419
-- `three_generation_observable_theorem_note` - critical; 752 descendants; score 61.057
-- `observable_principle_from_axiom_note` - critical; 845 descendants; score 58.225
+- `minimal_axioms` - critical; 1369 descendants; score 97.420
+- `observable_principle_from_axiom_note` - critical; 845 descendants; score 62.225
+- `three_generation_observable_theorem_note` - critical; 753 descendants; score 61.058
 - `graph_first_su3_integration_note` - critical; 1266 descendants; score 51.307
 - `minimal_axioms_2026-05-03` - critical; 482 descendants; score 47.916
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1188 descendants; score 42.716
-- `key_terminology` - critical; 1002 descendants; score 40.970
-- `anomaly_forces_time_theorem` - critical; 997 descendants; score 40.463
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1188 descendants; score 46.716
+- `key_terminology` - critical; 1002 descendants; score 44.970
+- `anomaly_forces_time_theorem` - critical; 997 descendants; score 44.463

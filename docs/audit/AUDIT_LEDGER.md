@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 794 |
+| **retained_bounded** | 795 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1337 |
+| unaudited | 1336 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1233 |
+| `audited_clean` | 1234 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1652 |
+| `unaudited` | 1651 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 786 |
-| `leaf` | 1283 |
+| `medium` | 785 |
+| `leaf` | 1284 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -122,7 +122,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 18 | `cpt_exact_note` | positive_theorem | critical | 1134 | 34.15 | `audited_clean` | **retained** |
 | 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 700 | 32.95 | `unaudited` | unaudited |
 | 20 | `minimal_axioms_2026-04-11` | meta | critical | 1115 | 32.62 | `unaudited` | meta |
-| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1056 | 32.05 | `audited_clean` | **retained_bounded** |
+| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1057 | 32.05 | `audited_clean` | **retained_bounded** |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 697 | 31.45 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 824 | 31.19 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.34 | `unaudited` | unaudited |
@@ -825,6 +825,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_boost_covariance_2d_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `lorentz_boost_covariance_3plus1d_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11723,6 +11724,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** Independent recomputation confirms the displayed values: delta v_UV = 1/(16 pi^2) ~= 6.33e-3, gamma_crit ~= 1.11, 0.90, 1.30, 0.51 for the four listed bounds, and the residual 1 GeV gaps quoted for gamma = 0.1, 0.2, 0.3. However, the runner hard-codes the representative bounds and the c_gamma range and uses always-true checks for the absence of custodial protection; it is a comparator arithmetic runner, not a first-principles derivation of the physical anomalous dimension or regeneration coefficient. The upstream interacting-attractor authority explicitly leaves the power-divergent coefficient and physical fixed-point gamma open. No-go discipline supports only the narrow conditional statement that the supplied asymptotically-free gauge-flow estimate is insufficient, not an absolute closure of all possible custodial or hidden-symmetry routes.
 - **open / conditional deps cited:**
   - `EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md`
+- **auditor confidence:** high
+
+### `lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08`
+
+- **Note:** [`LORENTZ_VIOLATION_ANGULAR_FINGERPRINT_AC_PHI_LAMBDA_INDEPENDENCE_BOUNDED_NOTE_2026-06-08.md`](../../docs/LORENTZ_VIOLATION_ANGULAR_FINGERPRINT_AC_PHI_LAMBDA_INDEPENDENCE_BOUNDED_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the two cited nearest-neighbor dispersion surfaces, the coefficient-normalized quartic Lorentz-violation angular shape is p_x^4 + p_y^4 + p_z^4 for both carriers, with [100]/[111] ratio 3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-134412-6df7815215-lorentz_violation_angular_fi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Solving each supplied quartic correction against A(p^2)^2 + B sum_i p_i^4 gives A = 0 with B = -1/12 for the bosonic carrier and B = -1/3 for the staggered carrier, so normalizing by B gives the same operator sum_i p_i^4.  _(class `A`)_
+- **chain closes:** True — The two retained_bounded authorities supply the bosonic and staggered dispersion surfaces, and elementary Taylor expansion gives the stated quartic coefficients with no odd powers. Dividing out the nonzero carrier coefficient leaves the same angular polynomial, and the axis/body-diagonal ratio follows directly from evaluating sum_i n_i^4 on unit directions.
+- **rationale:** The load-bearing step is an algebraic closure over the two supplied retained-grade dispersion inputs, not a new first-principles derivation of either surface. Independent Taylor expansion confirms 2(1-cos(pa))/a^2 = p^2 - a^2 p^4/12 + O(a^4 p^6) and sin^2(pa)/a^2 = p^2 - a^2 p^4/3 + O(a^4 p^6), so scalar normalization yields the same sum_i p_i^4 shape. The note explicitly excludes magnitude, scale conversion, experimental reach, and parent-status promotion, so no open Planck-pin or scale-reference premise is imported into the audited claim.
 - **auditor confidence:** high
 
 ### `lorentz_violation_derived_note`

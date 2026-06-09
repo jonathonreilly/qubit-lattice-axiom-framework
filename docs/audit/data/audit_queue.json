@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 328,
+    "critical": 327,
     "high": 254,
     "leaf": 434,
     "medium": 375
@@ -229,36 +229,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-      "claim_scope": "Finite NMAX=7, MODE_MAX=200 source-sector Perron solves for the structural input choices rho=1 and rho=delta, finite sensitivity/no-go evidence for the three enumerated one-parameter rho families, and the finite all-forward L_s=2 Schur diagnostic; no physical 3D residual environment or thermodynamic plaquette value is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-        "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
-        "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
-        "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-        "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
-        "gauge_vacuum_plaquette_constant_lift_obstruction_note"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.028,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
-      "transitive_descendants": 260
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -30706,6 +30676,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_fusion_engine_pr1_theorem_note_2026-05-03",
+        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_cube_perron_solve.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -40728,33 +40725,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_fusion_engine_pr1_theorem_note_2026-05-03",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_cube_perron_solve.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su5_decomposition_proof_walk_lattice_independence_bounded_note_2026-05-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -42013,5 +41983,5 @@
     }
   ],
   "ready_count": 62,
-  "total_pending": 1391
+  "total_pending": 1390
 }

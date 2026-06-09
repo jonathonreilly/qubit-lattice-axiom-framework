@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 809 |
+| **retained_bounded** | 810 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1314 |
+| unaudited | 1313 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1248 |
+| `audited_clean` | 1249 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1629 |
+| `unaudited` | 1628 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 782 |
-| `leaf` | 1287 |
+| `medium` | 779 |
+| `leaf` | 1290 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -1302,6 +1302,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | A | - |
 | `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_supermetric_normal_form_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universality_classifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -19025,6 +19026,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Since the SO(3)-trivial block is pointwise fixed and the weighted norm is additive across Pi_A1 ⊕ Pi_perp, ||Pi_perp(h')||^2_d = ||h'||^2_d - ||Pi_A1(h')||^2_d = ||h||^2_d - ||Pi_A1(h)||^2_d = ||Pi_perp(h)||^2_d.  _(class `A`)_
 - **chain closes:** True — The theorem is a self-contained finite-dimensional linear-algebra statement using only R_3^T R_3 = I, spatial trace invariance, Frobenius norm invariance, and weighted orthogonality of the Pi_A1/Pi_perp split under isotropic spatial weights. No cited authority or physical bridge is needed for the scoped conclusion.
 - **rationale:** The load-bearing identities are exact algebra on the given representation and weight, and the isotropic-weight premise is explicitly tested by an anisotropic control. The runner source symbolically verifies T1 and T2, checks the concrete coordinate-movement witness and random generic movement, and does not hard-code a contested physical bridge or numerical comparator. The result is properly scoped as a pure SO(3) representation-theory theorem, not a universal-GR physical closure claim.
+- **auditor confidence:** high
+
+### `universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_STAGGERED_TT_STIFFNESS_POSITIVE_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_STAGGERED_TT_STIFFNESS_POSITIVE_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite-BZ runner-defined staggered TT stiffness positivity, tested mass/grid stability, negative control, scalar ellipticity check, and conditional sign-only G/a^2 conversion; no physical Einstein-Hilbert or Newton-constant bridge was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-145459-30cbefe555-universal_gr_staggered_tt_st`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite runner-defined staggered Kaehler-Dirac TT computation gives positive, finite, N-stable C_TT on the tested grids and masses, with a negative non-elliptic bare-Hermitian control.  _(class `C`)_
+- **chain closes:** True — The runner source directly constructs the 16x16 staggered operator, TT vertex, propagators, and finite Brillouin-zone sums without importing fitted constants or external comparators. An independent recomputation reproduced the reported C_TT values, mass-grid signs, control sign, intercept, conversion sign, and D Ddag scalar check.
+- **rationale:** The load-bearing result is a genuine finite first-principles computation inside the supplied framework implementation, not a definition, renaming, or tuned numerical match. The cached stdout is consistent with the runner code, and an independent implementation route reproduced the displayed numerical identities. The cited retained-bounded GR-context rows contain open physical-bridge language, but this source explicitly excludes that stronger identification from the audited claim scope.
 - **auditor confidence:** high
 
 ### `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08`

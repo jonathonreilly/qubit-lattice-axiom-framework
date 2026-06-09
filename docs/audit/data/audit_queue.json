@@ -3,7 +3,7 @@
     "critical": 327,
     "high": 252,
     "leaf": 377,
-    "medium": 360
+    "medium": 359
   },
   "cycle_break_target_count": 15,
   "cycle_break_targets": [
@@ -17737,33 +17737,6 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
-        "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
-        "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/UNIVERSAL_GR_STAGGERED_TT_STIFFNESS_POSITIVE_BOUNDED_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_universal_gr_staggered_tt_stiffness_positive.py",
-      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40002,6 +39975,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 2,
-  "total_pending": 1316
+  "ready_count": 1,
+  "total_pending": 1315
 }

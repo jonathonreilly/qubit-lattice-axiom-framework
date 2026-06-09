@@ -1,0 +1,46 @@
+========================================================================================
+OCCUPANCY NON-EXCLUSIVITY: MIXTURE BOUND + PER-CONTEXT REALIZATION
+========================================================================================
+
+----------------------------------------------------------------------------------------
+X1: the mixture algebra (linearity assumption FLAGGED)
+----------------------------------------------------------------------------------------
+  [PASS] variance-linear mixture: r_eff = p*(1/2) + (1-p)*1 => Q(p) = 2/3 + (1-p)/3 (any sector admixture pushes Q UP, linearly)  --  Q(p) = 1 - p/3
+  [PASS] FLAG: linear mixing of the variance ratio is an assumption (mixtures of Gaussian weights mix second moments linearly; other aggregation rules would change the coefficient, not the SIGN of the push)
+
+----------------------------------------------------------------------------------------
+X2: the data bound -- exclusivity within the charged-lepton context is EMPIRICAL
+----------------------------------------------------------------------------------------
+  Q_PDG = 0.6666605;  Q - 2/3 = -6.16e-06;  sigma(Q) from m_tau +/- 0.12 MeV = 6.77e-06
+  [PASS] SIGN: the central value sits BELOW 2/3 (Q - 2/3 = -6.2e-6) while any r=1 admixture pushes UP => the best-fit sector admixture is exactly ZERO (boundary)  --  Q - 2/3 = -6.16e-06
+  [PASS] 2-sigma upper bound on the sector admixture in the charged-lepton context: (1 - p) < ~5e-5 (i.e. < 0.005% of the record statistics)  --  (1-p) < 2.22e-05
+  [PASS] => 'recorded frequently alongside' is EXCLUDED within this context -- exclusivity there is an empirical fact at the 1e-5 level, not an axiom
+
+----------------------------------------------------------------------------------------
+X3: ACROSS contexts -- both cells ARE realized (the owner's instinct, confirmed)
+----------------------------------------------------------------------------------------
+  [PASS] the occupancy rule is PER-READOUT-CONTEXT: the independence result (PR #3400) shows the axioms fix no global rule, so different contexts MAY differ -- global exclusivity was never the claim
+  [PASS] the sector cell (r=1) IS physically realized: rung 0 of the neutrino program FORCES K-fixed (Majorana) multiplets onto it -- the orbit cell is structurally UNAVAILABLE there (no K-invariant complex structure on the K-fixed locus)
+  [PASS] the orbit cell (r=1/2) is empirically realized in the charged-lepton (Dirac) context (X2, to 1e-5)
+  [PASS] => BOTH cells are valid, realized outcomes of the SAME framework -- non-exclusive across contexts, empirically exclusive within each
+
+----------------------------------------------------------------------------------------
+X4: the availability-preference formulation ('preferred outcome', made precise)
+----------------------------------------------------------------------------------------
+  charged leptons (Dirac: orbit cell AVAILABLE): principle predicts orbit cell -> r=0.5, Q=0.6667
+  K-fixed / Majorana multiplet (orbit cell UNAVAILABLE): principle predicts sector cell -> r=1.0, Q=1.0000
+  [PASS] ONE principle covers every realized case: 'the orbit (coarser) cell is realized wherever available; the sector cell where it is structurally unavailable' -- reproduces the rung-0 dichotomy with no per-context freedom
+  [PASS] predictivity preserved: the principle leaves NO free choice per context (availability is a structural fact, decided by K-fixedness) -- unlike 'each context picks freely', which would be unfalsifiable
+  [PASS] named derivation target (= the Tier-A retirement route): derive the PREFERENCE for the coarser cell from record dynamics (coarser outcome <-> more durable registration) -- the measurement/record-production gates; flagged as open, NOT derived here
+
+----------------------------------------------------------------------------------------
+X5: honesty
+----------------------------------------------------------------------------------------
+  [PASS] X4 is a REWORDING of the same single admission (the panel's Tier-A verdict stands; arguably X4 is the better abstract wording for the Tier-A entry: 'coarse-cell preference' instead of a bare binary)
+  [PASS] the X1 linearity assumption is flagged; the SIGN conclusion (any admixture pushes up) is aggregation-independent
+  [PASS] within-context exclusivity is empirical (1e-5), not axiomatically forbidden -- a future context could in principle show a genuine mixture; that would be a DISCOVERY about its record statistics, not a contradiction
+  [PASS] no comparator is a derivation input; sets no audit status
+
+========================================================================================
+SUMMARY: PASS=16 FAIL=0
+========================================================================================

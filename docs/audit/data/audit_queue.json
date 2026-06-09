@@ -231,15 +231,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-      "claim_scope": null,
+      "claim_scope": "Finite NMAX=7, MODE_MAX=200 source-sector Perron solves for the structural input choices rho=1 and rho=delta, finite sensitivity/no-go evidence for the three enumerated one-parameter rho families, and the finite all-forward L_s=2 Schur diagnostic; no physical 3D residual environment or thermodynamic plaquette value is audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
         "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
@@ -250,11 +250,11 @@
         "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 11.028,
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
       "transitive_descendants": 260
@@ -17923,15 +17923,15 @@
         "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 4.17,
+      "load_bearing_score": 6.144,
       "note_path": "docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
-      "transitive_descendants": 8
+      "transitive_descendants": 24
     },
     {
       "audit_independence_required": "any_non_self",

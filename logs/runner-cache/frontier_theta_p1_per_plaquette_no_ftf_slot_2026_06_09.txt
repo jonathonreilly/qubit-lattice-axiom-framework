@@ -1,0 +1,43 @@
+========================================================================================
+THETA P1 VIA THE ACTION-FORM LANE: NO FtildeF SLOT IN THE PER-PLAQUETTE CLASS
+========================================================================================
+
+----------------------------------------------------------------------------------------
+T1: the combinatorial kill -- cross-plane coefficients vanish for ANY f
+----------------------------------------------------------------------------------------
+  [PASS] the coefficient of the cross-plane monomial F_01*F_23 in ANY per-plaquette action is d^2/dF01 dF23 [sum of single-plane f's] = 0 IDENTICALLY (no reality/evenness/parity assumption anywhere)  --  mixed derivative = 0
+  [PASS] ALL three eps-pairings (01|23, 02|13, 03|12) have identically zero cross-plane coefficients => the full FtildeF contraction has coefficient 0 in the per-plaquette class, for ANY f -- the theta slot does not exist there
+
+----------------------------------------------------------------------------------------
+T2: direction counting -- a plaquette cannot feed eps^{mu nu rho sigma}
+----------------------------------------------------------------------------------------
+  [PASS] injective assignments of 4 DISTINCT eps indices from a plaquette's 2 directions: ZERO (computed) -- every tensor in a single-plaquette expansion (F_{mu nu}, D_mu F, D_nu F, ...) carries indices in {mu, nu} only  --  assignments = 0
+
+----------------------------------------------------------------------------------------
+T3: consistency with the landed boundaries (grep-verified, sources read)
+----------------------------------------------------------------------------------------
+  [PASS] the single-plaquette note's own result: the Im-part flows to the SINGLE-PLANE tr F^3 (a 2-direction object), with 'no F tilde F coupling encodable by single-plaquette f(U_P)' -- consistent with T1/T2
+  [PASS] the multiplaquette note's boundary respected verbatim: the clover slot is multi-plane and 'only a single-plaquette / minimality admission removes the FtildeF slot' -- T1 IS that removal, now a theorem of the class
+
+----------------------------------------------------------------------------------------
+T4: the action lane's entire candidate class is per-plaquette
+----------------------------------------------------------------------------------------
+  [PASS] the uniqueness no-go's own candidate listing (Wilson / heat-kernel / Manton) located -- all are single-plaquette functionals f(U_P) => EVERY live candidate yields theta_bare = 0 automatically; the lane need not pick a winner for theta to die  --  candidates found in the note: ['Wilson', 'heat-kernel', 'Manton']
+
+----------------------------------------------------------------------------------------
+T5: the discharge -- theta's surviving content is one structural class statement
+----------------------------------------------------------------------------------------
+  [PASS] support read live: the record-preservation gauge-invariant-local class theorem's ledger status recorded (the class P1 discharges into)  --  {'dynamics_form_from_record_preservation_gauge_invariant_local_class_bounded_theorem_note_2026-06-05': 'unaudited'}
+  [PASS] with P2 already discharged (K-orbit multiplicative lemma), the theta admission's surviving content = 'the gauge action is per-plaquette (minimal-loop) class' -- the gauge-sector sibling of the Lattice axiom's nearest-neighbor/no-diagonal minimality: structural, NO number, null-consequence profile (forbids a slot, supplies no value)
+  [PASS] grade (structural premise now vs future derivation from record-preservation + minimality) = owner/audit-lane decision; EITHER way, no numeric or CP-specific content survives in the theta admission
+
+----------------------------------------------------------------------------------------
+T6: honest scope
+----------------------------------------------------------------------------------------
+  [PASS] per-plaquette is NOT derived here: the lane's selection problem (which f, couplings) remains open for its own purposes -- only the THETA question is f-independent within the class
+  [PASS] the RP no-go is untouched (no RP argument used anywhere)
+  [PASS] FALSIFIER: a framework derivation FORCING multi-plaquette action terms would reopen the slot; the theta = pi remnant question is moot in this route (no slot exists to take any value)
+
+========================================================================================
+SUMMARY: PASS=12 FAIL=0
+========================================================================================

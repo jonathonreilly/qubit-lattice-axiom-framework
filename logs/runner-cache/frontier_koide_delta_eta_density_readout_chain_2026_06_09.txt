@@ -49,6 +49,14 @@ E7: honest conditionality and falsifiers
   [PASS] FALSIFIER: a tighter m_tau measurement pulling the fitted phase away from 2/9 (current residual 2e-7 absolute; the chain dies if it grows with precision)
   [PASS] the Callan-Harvey 2/N^2 = 2/9 is a DISTINCT object (proven distinct in-repo; coincides only at d = 3) -- recorded as consistency, not consumed
 
+----------------------------------------------------------------------------------------
+E8: THE PERIOD-FORK DISSOLUTION -- period-1 is the unique zero-import reading
+----------------------------------------------------------------------------------------
+  [PASS] the pi of the standard packaging is the det-sign mechanism: arg det = pi * n_minus (mod 2pi) for a real spectrum (computed witness)  --  n_minus=2, arg det = -0.000000 = pi*n_minus mod 2pi
+  [PASS] the det-phase door is CLOSED in this framework (multiplicative lemma re-verified): K-invariance forces the phase character k = 0, so NO registrable det-class functional carries the pi*n_minus phase  --  the standard justification for the pi-packaging is structurally void here
+  [PASS] import accounting: period-1 (delta = L) consumes ZERO imports; the pi-packaging (delta = pi*L) consumes ONE unexplained dimensionless constant whose standard mechanism is closed by (b) => the fork DISSOLVES at the level of known mechanisms: period-1 is the unique zero-import reading  --  bounded claim: 'no known registrable pi-source', not 'provably none'
+  [PASS] counterfactual strengthened: had the masses matched the pi-row, the framework would have been FALSIFIED, not re-packaged -- the chain could not have absorbed the other branch (no registrable carrier)  --  the 1e-5 agreement is corroboration of a forced reading
+
 ========================================================================================
-SUMMARY: PASS=17 FAIL=0
+SUMMARY: PASS=21 FAIL=0
 ========================================================================================

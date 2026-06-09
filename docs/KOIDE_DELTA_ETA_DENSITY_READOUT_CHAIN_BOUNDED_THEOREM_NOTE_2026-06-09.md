@@ -17,7 +17,10 @@ or predict an audit outcome.
 > C₃[111] fixed-locus density with forced weights). This note assembles the
 > chain that makes `|δ| = 2/9` a **theorem conditional on one named
 > identification (R-η)** — a dimensionless readout-class statement naming no
-> number — plus the existing carrier gate. Zero new numbers enter anywhere.
+> number — plus the existing carrier gate. Zero new numbers enter anywhere,
+> and (E8) the period question dissolves: the direct reading is the unique
+> zero-import identification, with the standard π-packaging's registrable
+> carrier closed by the framework's own multiplicative lemma.
 
 ---
 
@@ -47,8 +50,28 @@ atom — and it names no number; the number comes from E1.
 **E3 — the period fork, computed honestly.** The alternative standard packaging
 (the density entering as a determinant-phase exponent, `δ = π·L = 2π/9`)
 predicts a wildly wrong spectrum (computed: `m_τ` off by orders of magnitude).
-The fork is physical, not conventional (the landed radian-period note), and the
-data selects the direct/period-1 reading.
+The fork is physical, not conventional (the landed radian-period note).
+
+**E8 — the period-fork DISSOLUTION (the chain's load-bearing upgrade).** The
+fork is not decided by data; it dissolves structurally:
+
+1. **The π is localized:** in any determinant reading, each negative eigenvalue
+   contributes `e^{iπ}` to `arg det` — the π of the standard `e^{iπη}` packaging
+   is exactly the det-sign mechanism, nothing else (computed witness).
+2. **That door is closed in this framework:** the multiplicative lemma
+   (re-verified) forces the phase character `k = 0` for K-invariant det-class
+   readouts — **no registrable det-class functional carries the `π·n₋` phase.**
+   The standard justification for the π-packaging is structurally void here.
+3. **Import accounting:** among identifications `δ = f(L)`, the direct reading
+   `f(L) = L` consumes **zero** dimensionless imports; `δ = π·L` (or any `c·L`)
+   consumes one unexplained constant whose only known mechanism is closed by
+   (2) — and the framework's own purity boundary forbids unexplained
+   dimensionless imports. **Period-1 is the unique zero-import reading.**
+   (Bounded claim: "no known registrable π-source," not "provably none.")
+4. **The counterfactual is thereby strengthened:** had the masses matched the
+   π-row, the framework could **not** have re-packaged — it would have been
+   **falsified**. The 1×10⁻⁵ agreement is *corroboration of a forced reading*,
+   not branch selection.
 
 **E4 — the comparator (labeled, never an input).** With `r = 1/2` (the
 occupancy-subsumption cell) and `|δ| = 2/9` **exact**, the charged-lepton

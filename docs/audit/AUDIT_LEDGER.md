@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 205 |
 | **retained_bounded** | 784 |
 | _retained_pending_chain_ | 13 |
-| open_gate | 37 |
-| unaudited | 1356 |
+| open_gate | 38 |
+| unaudited | 1355 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1220 |
+| `audited_clean` | 1221 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1671 |
+| `unaudited` | 1670 |
 
 | claim_type | count |
 |---|---:|
@@ -324,6 +324,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_field_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_v4_convergence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4284,6 +4285,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the finite m0 = 0.10 scan grid, the Gaussian profile has 5/5 TOWARD offset biases with an offset-law fit alpha = 3.053 and R^2 = 0.8098, while all profiles fail N-monotonicity.  _(class `C`)_
 - **chain closes:** True — The runner source explicitly constructs the 4-component Dirac walk, mass-field kernels, density readout, N sweep, offset sweep, and power-law fit rather than printing hard-coded contested constants. The note's in-scope numerical statements match the completed runner output.
 - **rationale:** The narrowed binding claim is only the finite m0 = 0.10 runner-output statement, not nearby-mass robustness or physical-readout interpretation. Within that scope, the completed runner computes the quoted biases, TOWARD counts, monotonicity failures, and Gaussian offset-law fit from the implemented Dirac-walk dynamics. The source note's in-scope numbers agree with stdout, and no cited authority or missing helper source is needed for the finite computational claim.
+- **auditor confidence:** high
+
+### `dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`
+
+- **Note:** [`DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Diagnostic boundary: the rejected common-Gaussian analytic-vector repair fails for H, and the Lorentz anisotropy count distinguishes native continuous-time Z^3 from Euclidean Z^3 x Z_tau without claiming Nelson, Poincare, or interacting Lorentz closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-124429-1b24cff4b0-dirac_lorentz_diagnostic_bou`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The rapidity-Gaussian common-vector route fails because ||H^n psi||/n! has a superfactorial lower bound, while signed-permutation orbit counting gives one native spatial quadratic coefficient, two coefficients on Z^3 x Z_tau, and one under 4D hypercubic symmetry.  _(class `A`)_
+- **chain closes:** True — The analytic lower bound for H, Fourier-side Gaussian analyticity for K, coordinate-orbit invariant counts, and sin^2 p Taylor expansion close as standard algebra/calculus over the cited retained-grade inputs. No extra dynamics, normalization, or interacting-naturalness premise is used.
+- **rationale:** Independent checking confirms the lower-bound exponent n^2/(2a)-a/2 and its divergence after division by n!, while K analyticity follows from Gaussian exponential moments in Fourier space. The invariant dimensions are just coordinate-orbit counts: {x,y,z}, {tau},{x,y,z}, and {tau,x,y,z}; the group sizes 48, 96, and 384 also match. The dispersion claim matches sin^2 p = p^2 - p^4/3 + O(p^6), and the source scope explicitly avoids the broader Nelson, unitary-representation, and interacting Lorentz claims.
 - **auditor confidence:** high
 
 ### `dirac_observable_panel_note`

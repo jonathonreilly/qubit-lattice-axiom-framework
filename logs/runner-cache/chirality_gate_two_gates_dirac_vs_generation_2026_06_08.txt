@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/chirality_gate_two_gates_dirac_vs_generation_2026_06_08.py
-runner_sha256: 219d36226a205ec462fd5979f818a191dffe852dbb937e3336cf71ae9b3c5602
+runner_sha256: c8bf5ed98b3147974eb2836a2cf6814cdbf9e124ac5543c69eeed6de04c6f5e7
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.14
@@ -18,13 +18,18 @@ status: ok
   PASS  gamma_5 commutes with every generation op G (x) I_2  (R, Gamma_chi, random)
   PASS  the Dirac mass beta ALSO commutes with the generation grading
 == Koide/generation chirality is NOT supplied: it needs a C3-BREAKING M_gen ==
-  PASS  retained no-go: every circulant M_gen anticommuting Gamma_chi is M_gen=0
+  PASS  finite algebra: no nonzero symmetric M_gen both commutes with C3 and anticommutes Gamma_chi
   PASS  a C3-BREAKING M_gen exists that anticommutes Gamma_chi (null space nonempty)
   PASS  ...and every such M_gen genuinely breaks C3: [M_break, R] != 0
 == Conclusion: independent chirality requirements ==
   PASS  Dirac/spinor chirality is independent of Koide/generation chirality
+== Scope guard: conditional tensor-product separation only ==
+  PASS  source note states conditional tensor-product separation only
+  PASS  source note does not derive gamma_5 from Cl(3,1)
+  PASS  source note does not prove spin-statistics use
+  PASS  source note does not claim retained Cl(3,1) supplies this theorem
 
-TOTAL: PASS=12 FAIL=0
+TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----
 

@@ -18897,6 +18897,26 @@
       "to": "koide_z3_qubit_radian_bridge_no_go_note_2026-04-20"
     },
     {
+      "from": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+      "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+      "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+    },
+    {
+      "from": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+      "to": "koide_delta_radian_period_physical_not_vacuous_narrow_theorem_note_2026-06-04"
+    },
+    {
+      "from": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+      "to": "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04"
+    },
+    {
       "from": "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
       "to": "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16"
     },
@@ -47226,6 +47246,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "fifth_family_radial_boundary_note"
     },
     {
@@ -47235,10 +47259,6 @@
     {
       "from": "repo.front_door_status",
       "to": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "fifth_family_complex_boundary_note"
     },
     {
       "from": "repo.repo_organization",
@@ -49639,7 +49659,7 @@
         "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2e8e91fc9c185b332c77328872ee22af7ec1520c59ecef6e831557c00c9a0f28",
+      "note_hash": "2da666c54ee7bfbb8cc440e66d0b3e721a96b5d18eef2a0f404c6636cad608ef",
       "path": "docs/ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
       "runner_path": "scripts/alpha_convention_i2_accepted_premise_runner.py",
       "title": "\u03b1 := g_bare\u00b2/(4\u03c0) Convention I2 Accepted-Premise Bridge"
@@ -73830,6 +73850,24 @@
       "runner_path": "scripts/frontier_koide_delta_dimensionless_closure_via_v8.py",
       "title": "Koide \u03b4 Dimensionless Closure via V8 Theorem (V1)"
     },
+    "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09": {
+      "claim_id": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (a conditional theorem chain; the single conditional input is a named, proposed identification \u2014 no new number, no new primitive)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "koide_delta_radian_period_physical_not_vacuous_narrow_theorem_note_2026-06-04",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "f230f24e8b7bcc706ebef20291209f831c0d7131dc6c86c77c3652c9bd8e7e5d",
+      "path": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "runner_path": "scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py",
+      "title": "The |\u03b4| = 2/9 Theorem Chain: Retained Fixed-Locus Arithmetic + One Named Readout Identification"
+    },
     "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": {
       "claim_id": "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
       "claim_type_author_hint": null,
@@ -91247,13 +91285,13 @@
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
         "yt_ew_matching_rule_m_note_2026-05-02",
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "fifth_family_radial_boundary_note",
         "plaquette_bootstrap_framework_integration_note_2026-05-03",
-        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
-        "fifth_family_complex_boundary_note"
+        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "721a70973f1bfc99aa653563d66efd06820003e317f1468ec9b402cbccd0b4cf",
+      "note_hash": "ee403466a3023041b5327b992d3ab3b7aa415f23d5f19ef7f6ec8c954a9a703a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"
@@ -105221,7 +105259,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 991,
+      "bounded_theorem": 992,
       "decoration": 1,
       "meta": 278,
       "no_go": 161,
@@ -105230,7 +105268,7 @@
       "positive_theorem": 195
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1410,
+      "bounded_theorem": 1411,
       "decoration": 1,
       "meta": 278,
       "no_go": 277,
@@ -105238,10 +105276,10 @@
       "open_gate": 159,
       "positive_theorem": 619
     },
-    "edge_count": 11912,
+    "edge_count": 11917,
     "leaf_count": 1063,
-    "node_count": 3223,
+    "node_count": 3224,
     "root_count": 1039,
-    "runners_with_path": 2807
+    "runners_with_path": 2808
   }
 }

@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 534,
     "high": 455,
-    "leaf": 1403,
+    "leaf": 1404,
     "medium": 831
   },
   "flagship_signal_used": false,
-  "node_count": 3223,
+  "node_count": 3224,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,14 +19,14 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 107.982,
-      "transitive_descendants": 1429
+      "load_bearing_score": 107.983,
+      "transitive_descendants": 1430
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
       "criticality": "critical",
-      "load_bearing_score": 61.091,
-      "transitive_descendants": 770
+      "load_bearing_score": 61.092,
+      "transitive_descendants": 771
     },
     {
       "claim_id": "observable_principle_from_axiom_note",
@@ -49,14 +49,14 @@
     {
       "claim_id": "key_terminology",
       "criticality": "critical",
-      "load_bearing_score": 47.02,
-      "transitive_descendants": 1037
+      "load_bearing_score": 47.021,
+      "transitive_descendants": 1038
     },
     {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
       "criticality": "critical",
-      "load_bearing_score": 43.24,
-      "transitive_descendants": 1208
+      "load_bearing_score": 43.741,
+      "transitive_descendants": 1209
     },
     {
       "claim_id": "anomaly_forces_time_theorem",
@@ -121,8 +121,8 @@
     {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
-      "load_bearing_score": 34.675,
-      "transitive_descendants": 1155
+      "load_bearing_score": 34.676,
+      "transitive_descendants": 1156
     },
     {
       "claim_id": "koide_circulant_character_derivation_note_2026-04-18",
@@ -163,8 +163,8 @@
     {
       "claim_id": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
       "criticality": "critical",
-      "load_bearing_score": 30.229,
-      "transitive_descendants": 149
+      "load_bearing_score": 30.238,
+      "transitive_descendants": 150
     }
   ]
 }

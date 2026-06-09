@@ -15648,6 +15648,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_koide_delta_dimensionless_closure_via_v8.py"
     },
+    "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09": {
+      "assert_count": 1,
+      "counts": {
+        "A": 9,
+        "B": 2,
+        "C": 0,
+        "D": 18
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py"
+    },
     "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": {
       "assert_count": 0,
       "counts": {
@@ -53478,6 +53490,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 2,
+        "C": 0,
+        "D": 18
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py": {
       "assert_count": 0,
       "claims": [
@@ -73863,11 +73890,11 @@
       "A": 381,
       "B": 445,
       "C": 1021,
-      "D": 375,
+      "D": 376,
       "none": 456
     },
-    "runners_classified": 2678,
+    "runners_classified": 2679,
     "runners_with_C": 1368,
-    "runners_with_D": 798
+    "runners_with_D": 799
   }
 }

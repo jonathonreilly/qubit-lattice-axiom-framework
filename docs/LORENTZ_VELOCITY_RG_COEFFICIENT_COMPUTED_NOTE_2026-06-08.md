@@ -172,6 +172,14 @@ velocity anisotropy is one computed coefficient `δv(ξ)`: **nonzero and not int
 **Collins-type obstruction** (computed `δv|_UV ≈ 0.2 α_s`, `γ ≈ 0.15–0.34 ≪ γ_crit`,
 12–21 orders over the tight SME bounds) as `ξ → ∞`. This **locates** the #3123/#3277
 obstruction as the continuous-time horn and exhibits a B₄-protected horn at `ξ = 1`.
+**The continuous-time (`ξ → ∞`) horn is the framework's *derived* surface:** the
+single-clock codimension-1 theorem reconstructs continuous Stone time `U(t)=exp(−itH)`
+on the spatial `Z³` slice (its Step-1 physical output), and the retained
+`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY` leaves `a_τ` removable — so this obstruction
+surface is *not* a mere `a_τ→0` artifact, it is the derived-time output; the
+complementary `ξ = 1` reading (`δv = 0`) rests on a separate non-retained finite-`a_τ`
+symmetric-tick realization premise (see the companion boundary note). Both horns of the
+one coefficient `δv(ξ)` remain live.
 The framework's one-tick-one-edge causal structure **would** sit at `ξ = 1` — a **live,
 attractive candidate** — but reaching it requires the record-tick = physical-time
 bridge (currently `audited_renaming`, against a retained clock-rate no-go). Form-equality

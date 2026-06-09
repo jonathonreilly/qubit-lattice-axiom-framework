@@ -13,17 +13,18 @@ CONTEXT.  The companion no_go note
 (LORENTZ_VELOCITY_RG_COEFFICIENT_COMPUTED_NOTE_2026-06-08, PR #3277) computed the one-loop
 velocity anisotropy as ONE coefficient delta_v(xi) of the spacetime anisotropy xi=a_s/a_tau:
 delta_v != 0 (the obstruction) at the CONTINUOUS-time horn xi->inf, and delta_v = 0 by B_4
-hypercubic symmetry at xi=1.  Because the TEMPORAL structure is NOT in the framework axioms
-({Lattice (spatial Z^3), Quantum, Record} -- Record is timeless, Lattice supplies no dynamics
-/ causal cone; time is an ADMITTED dynamics gate, the framework's own 2026-06-07 diagnostic
-note), delta_v is unavoidably CONDITIONAL on a temporal admission: it is 0 on the discrete-
-record-tick admission and the obstruction on the continuous-time admission.
+hypercubic symmetry at xi=1.  Time IS DERIVED (the single-clock codimension-1 evolution theorem,
+UNAUDITED, on retained RP-temporal-bridge/spectrum/cluster/Cl(3)/arrow) -- but its PHYSICAL output
+is CONTINUOUS Stone time U(t)=exp(-itH) on the spatial Z^3 slice (Step 1: analytic continuation of
+T^n), which is the xi->inf OBSTRUCTION surface; and the retained SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY
+no-go leaves a_tau removable (T fixes only a_tau*H).  So delta_v is the same coefficient read at two
+surfaces: the derived continuous-time surface (obstruction) and the xi=1 surface this note treats.
 
-THIS NOTE states the POSITIVE horn affirmatively, as a bounded theorem.
+THIS NOTE states the POSITIVE (xi=1) horn affirmatively, as a bounded theorem.
 
-PREMISE (the single bound, an admission -- the owner's foundational choice, NOT derived and
-NOT "no bound"):  physical time at the UV scale is the discrete record-tick, so spacetime is
-the Z^4 hypercubic causal graph (spatial Z^3 x temporal Z_tau, with matched nearest-neighbor /
+PREMISE (the single bound, a non-retained REALIZATION premise -- NOT delivered by the derived-time
+chain, NOT "no bound"):  physical UV time is a finite-a_tau, SYMMETRIC central-difference tick, so
+spacetime is the Z^4 hypercubic causal graph (spatial Z^3 x temporal Z_tau, with matched nearest-neighbor /
 no-diagonal adjacency -- the LATTICE-axiom no-diagonal clause + the retained finite-graph
 reachability LATTICE_NN_LIGHT_CONE, read as the symmetric-staggered xi=1 surface).
 
@@ -46,10 +47,11 @@ THEOREM (verified-grade, bridge-independent):
           dimension-6 4D-cubic operator sum_mu p_mu^4 (E^2 = k^2 - (a^2/3) sum k_i^4, the
           retained EMERGENT_LORENTZ result), Planck-suppressed: |dE^2/E^2| ~ (1/3)(E/M_Pl)^2
           ~ 4e-39 at 1 GeV -- far below every SME/UHECR/GRB/clock comparator bound.
-  Part 5  SCOPE.  This is POSITIVE + BOUNDED on the discrete-tick admission (the owner's
-          foundational choice).  It is NOT "no bound" (the temporal structure is an admission,
-          not derived) and NOT a closure of the naturalness lever; the complementary
-          continuous-time admission gives the companion obstruction.  Sets NO audit status.
+  Part 5  SCOPE.  This is POSITIVE + BOUNDED on a non-retained finite-a_tau symmetric-tick
+          REALIZATION premise.  Time IS derived, but as continuous Stone time (the obstruction
+          surface); the xi=1 surface here needs a premise the derived-time chain does NOT supply
+          (forward transfer; a_tau removable; SO(4) isotropy a->0-only) -- NOT "no bound", NOT a
+          closure; BOTH horns of delta_v(xi) remain live.  Sets NO audit status.
 
 No new axiom / primitive / repo vocabulary; literature (Collins et al PRL 93 (2004) 191301;
 Kostelecky-Russell SME data tables) is comparator only.  Forbidden-import respected.
@@ -200,19 +202,20 @@ def main():
           True, detail="emergent Lorentz holds to dim-6; if LV is ever seen at (E/M_Pl)^2 the ell=4 angular pattern identifies the cubic lattice (retained EMERGENT_LORENTZ note)")
 
     # ============================================================ Part 5
-    section("Part 5: scope -- POSITIVE + BOUNDED on the discrete-tick admission (NOT 'no bound', NOT a closure)")
-    check("(5.1) the temporal structure is an ADMISSION, not derived: {Lattice(spatial Z^3), Quantum, Record} has NO time (Record timeless; Lattice supplies no dynamics/causal cone)",
-          True, detail="time is an admitted dynamics gate (the framework's 2026-06-07 diagnostic note); so delta_v is unavoidably CONDITIONAL on a temporal admission")
-    check("(5.2) PREMISE (the single bound): physical UV time is the discrete record-tick (the Z^4/xi=1 surface) -- the owner's foundational choice; the complementary continuous-time admission gives the companion obstruction",
-          True, detail="POSITIVE: emergent Lorentz is radiatively stable on this surface (Parts 1-4, all-orders). NOT 'no bound' (rests on the admission); NOT a closure of the lever")
+    section("Part 5: scope -- POSITIVE + BOUNDED on a non-retained finite-a_tau symmetric-tick realization premise (NOT 'no bound', NOT a closure)")
+    check("(5.1) time IS DERIVED (single-clock codimension-1 theorem, UNAUDITED) -- but as CONTINUOUS Stone time on Z^3 = the xi->inf OBSTRUCTION surface (Step 1; retained scope-boundary: a_tau removable)",
+          True, detail="so 'no time / temporal structure not derivable' is FALSE; but the derived-time output is the obstruction horn, NOT this xi=1 surface")
+    check("(5.2) PREMISE (the single bound): a finite physical a_tau + the SYMMETRIC central-difference tick (the Z^4/xi=1 surface) -- a SEPARATE realization premise the single-clock chain does NOT supply and partly CONTRADICTS",
+          True, detail="POSITIVE: emergent Lorentz is radiatively stable on this surface (Parts 1-4, all-orders). NOT 'no bound' (the chain uses the FORWARD transfer + leaves a_tau removable; the SO(4) isotropy authority is a->0-only); NOT a closure -- BOTH horns of delta_v(xi) remain live")
 
     print("\n" + "=" * 94)
-    print("THEOREM (positive, bounded on the discrete-record-tick admission): on the Z^4 hypercubic surface")
-    print("B_4 forbids the marginal velocity anisotropy to ALL orders and rep-blindly (species difference = 0),")
-    print("so emergent Lorentz is RADIATIVELY STABLE; the only residual LV is the Planck-suppressed dim-6")
-    print("operator (~4e-39 at 1 GeV), below every comparator bound. The single premise -- discrete-tick UV")
-    print("time -- is a dynamics-gate ADMISSION (the owner's foundational choice), NOT derived: this is POSITIVE")
-    print("+ BOUNDED, not 'no bound'. The continuous-time admission gives the companion computed obstruction.")
+    print("THEOREM (positive, bounded on a non-retained finite-a_tau symmetric-tick realization premise): on the")
+    print("Z^4 hypercubic surface B_4 forbids the marginal velocity anisotropy to ALL orders and rep-blindly")
+    print("(species difference = 0), so emergent Lorentz is RADIATIVELY STABLE; the only residual LV is the")
+    print("Planck-suppressed dim-6 operator (~4e-39 at 1 GeV). Time IS derived (single-clock theorem), but as")
+    print("CONTINUOUS Stone time = the obstruction surface; this xi=1 surface needs a SEPARATE realization premise")
+    print("the derived-time chain does NOT supply (forward transfer; a_tau removable; SO(4) isotropy a->0-only).")
+    print("POSITIVE + BOUNDED, NOT 'no bound', NOT a closure -- BOTH horns of delta_v(xi) remain live.")
     print("=" * 94)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 94)

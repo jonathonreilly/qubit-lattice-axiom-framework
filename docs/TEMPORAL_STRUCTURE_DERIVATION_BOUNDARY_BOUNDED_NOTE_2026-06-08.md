@@ -1,7 +1,7 @@
-# The Temporal Structure Is Not Derivable from {Lattice, Quantum, Record}: the Emergent-Lorentz Positive Horn Rests on a Two-Layer Dynamics-Gate Admission — Boundary Note
+# Time IS Derived (the Single-Clock Codimension-1 Theorem) — but as Continuous Stone Time, the Obstruction Surface; the Emergent-Lorentz Positive Horn Rests on a Separate Non-Retained Tick-Realization Premise — Boundary Note
 
-**Date:** 2026-06-08
-**Claim type:** no_go (derivation boundary; ratifies + sharpens a landed bounded theorem)
+**Date:** 2026-06-08 (corrected 2026-06-08, owner-prompted, adversarially verified)
+**Claim type:** no_go (derivation boundary; maps the open seams of both horns)
 **Type:** no_go
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome. The label is a source-side claim-boundary
@@ -13,110 +13,119 @@ declaration, not an audit verdict.
 
 ---
 
+## Correction notice
+
+An earlier version of this note claimed *"the axioms contain no time; the temporal
+structure is not derivable; the positive horn rests on a two-layer admission."*
+**That is false** and is retracted here. The framework **does** derive temporal
+structure: the **single-clock codimension-1 evolution theorem**
+([`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md),
+live-ledger **unaudited**) derives, from `A_min` plus the **retained**
+RP-temporal-bridge / spectrum / cluster / Cl(3) / arrow support theorems, that the
+dynamics is a **unique single-clock codimension-1 unitary evolution**. The corrected
+analysis, however, **also** refutes the opposite over-correction ("derived time ⇒
+finite-`a_τ` Z⁴ ⇒ positive horn"): the derived time's physical output is **continuous
+Stone time**, which is the **obstruction** surface. **Both horns remain live.**
+
 ## Role
 
-The landed positive bounded theorem
-[`EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md`](EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md)
-states that on the discrete-record-tick (Z⁴ hypercubic, `ξ = 1`) surface, B₄ forbids
-the marginal velocity anisotropy to all orders, so emergent Lorentz is radiatively
-stable — explicitly **"bounded on the discrete-tick admission, not 'no bound'."** The
-natural next question is whether that admission can be **removed by derivation** — i.e.
-whether the temporal structure is forced by `{Lattice (spatial Z³), Quantum, Record}` +
-the scale primitive + retained results, making the positive horn unconditional.
-
-**It cannot.** This note records the derivation boundary: the temporal structure is an
-**intrinsic admission**, with **two graded layers**, neither records-derivable nor
-retained. It **ratifies and sharpens** the landed theorem; it does not modify or demote
-it. Runner: **11 PASS / 0 FAIL**.
+The velocity-RG analysis (PR #3277) computes the one-loop anisotropy as **one
+coefficient `δv(ξ)`** of the spacetime anisotropy `ξ = a_s/a_τ`: an obstruction at
+the continuous-time horn `ξ → ∞`, and `δv = 0` by B₄ at `ξ = 1`. This note maps which
+horn the framework's **derived time** selects, and what each horn's residual is.
 
 ## The boundary
 
-### (1) The axioms contain no time
-Record is a **timeless** noun supplying **no time metric**; the Lattice axiom is
-**spatial** `Z³` and disclaims a dynamics / causal cone (its "no continuum" stance is
-about the *spatial* lattice); Quantum is a **static** one-site algebra. So a temporal
-structure is **admitted** — a dynamics gate — not derived (consistent with the
-framework's own
-[`DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md`](DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md)).
-Extending spatial discreteness to a discrete *time* axis is exactly the separate
-"record-tick = physical time" identification — `audited_renaming` in the live ledger,
-**not** retained.
+### (1) Time IS derived — as continuous Stone time on the spatial slice
+The single-clock theorem reconstructs a transfer matrix `T` (positive Hermitian, by
+the **retained** RP-under-temporal-reflection bridge
+[`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)),
+defines `H = −(1/a_τ) log T` (self-adjoint, by the retained spectrum condition), and —
+**Step 1** — produces `U(t) = exp(−itH)` as the **analytic continuation** of the
+discrete iteration `T^n` on the same finite-dimensional `H_phys`. The physical output
+is therefore **continuous Stone time on the spatial `Z³` slice** — the spatial-`Z³` +
+continuous-time surface, i.e. the `ξ → ∞` **obstruction** surface (also the stated
+native surface of the landed attractor #3121). The staggered axis is the **unique**
+clock (Step 4: `η_t(θx) = −η_t(x)`), so time and its arrow
+([`ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`](ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md),
+retained) are genuinely derived — but as a continuous-time Hamiltonian, not a finite
+discrete tick (runner Part 1).
 
-### (2) What IS derived, given the admission
-Granting that time is a lattice direction, the **dimensionless conformal ratio**
-`a_τ/a_s = 1/v_front = 1` follows from one-tick-one-edge (the no-diagonal LATTICE clause
-+ the retained finite-graph reachability
-[`LATTICE_NN_LIGHT_CONE_NOTE.md`](LATTICE_NN_LIGHT_CONE_NOTE.md)). This is the
-dimensionless **class**, genuinely **outside** the retained clock-rate no-go (which
-prunes only the absolute **rate**) — so the positive theorem's "does not depend on the
-absolute clock rate" is correct (runner Part 2).
+### (2) The physical time spacing `a_τ` is not fixed by the derivation
+The **retained no-go**
+[`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`](SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md)
+proves that `T` fixes only the **product** `a_τ·H`, **not** `a_τ` itself: *"a time-unit
+or blocked-time-spacing bridge is an extra premise."* So `a_τ` is **transfer-relative
+and removable** — the claim "the derived time keeps `a_τ` finite" is **unsupported**.
+Pinning a finite physical `a_τ` (the time coordinate `δv` reads) is an extra
+identification — the `audited_renaming` record-tick bridge — standing against the
+retained clock-rate no-go
+[`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md)
+(records fix the count, not the rate); and the conformal ratio `a_τ/a_s = 1` uses the
+kinematic front speed `v_front = 1`, **not** the renormalized group velocity
+`v_LR ≈ 0.935` that `δv` measures (runner Part 2).
 
-### (3) Layer 2 is not discharged by Layer 1 — the temporal *form* is a separate admission
-Even granting a discrete time lattice, the **isotropy** (`c_t = c_s`, the symmetric
-temporal kinetic *form*) is an added premise:
+### (3) The positive horn's realization premise — the symmetric tick, not the forward transfer
+Even granting a discrete time axis, `δv = 0` needs the **isotropic** form, which is an
+added premise: under spatial `O_h` + time-parity the diagonal kinetic form has **two**
+invariants (`c_t ≠ c_s` *allowed*; the retained
+[`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`](SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md)),
+and only the 4D-hypercubic B₄ collapses it to **one** (`c_t = c_s`). RP supplies only
+time-reflection, not the `t↔s` crossing. Decisively, the single-clock chain
+reconstructs `H` via the **forward** transfer `T = e^{−Ha_τ}`, which at `ξ = 1`
+**breaks** B₄ (`Σ_t ≠ Σ_s` to `~5×10⁻⁴`); the symmetric central-difference tick that
+gives `δv = 0` (`~5×10⁻¹⁸`) is a **separate** choice the chain does not make. And the
+only authority that proves the isotropic SO(4)/B₄ form
+([`LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md`](LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md),
+retained) proves it **only in the continuum limit `a → 0`** — i.e. on the `ξ → ∞`
+surface, not at finite `a_τ` (runner Part 3).
 
-- Under spatial `O_h` **+ time-parity** the diagonal kinetic form has **two** invariants
-  (`c_t ≠ c_s` *allowed*); only the **4D-hypercubic B₄** collapses it to **one**
-  (`c_t = c_s` *forced*) — the retained
-  [`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`](SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md)
-  (runner 3.1–3.2).
-- **Reflection positivity does not supply the isotropy.** RP forces only
-  **time-reflection** symmetry, which is strictly weaker than the `t↔s` crossing B₄
-  needs. Decisively, the framework's **own** RP construction defines `H` by the
-  **forward** transfer step `e^{−Ha_τ}` — the **B₄-breaking** kernel: at `ξ = 1` it
-  breaks `Σ_t = Σ_s` to `~5×10⁻⁴`, versus `~5×10⁻¹⁸` for the θ-symmetric central tick
-  (runner 3.3). So RP is **satisfied by the obstruction-side tick**; it does not deliver
-  the positive horn. (This corrects a tempting "RP ⟹ central ⟹ positive" closure: RP is
-  conditional on already granting a time lattice **and** insufficient for isotropy.)
-
-### (4) Given both layers, the positive theorem holds (conditionally)
-Granting both — a discrete time lattice (Layer 1) **and** the isotropic 4D-hypercubic
-form (Layer 2) — B₄ forbids the marginal dim-4 anisotropy to all orders, rep-blindly
-(`Σ_t = Σ_s` to machine zero, species difference `= 0`), so `δv = 0` and the only
-residual LV is the Planck-suppressed dim-6 operator (`|δE²/E²| ≈ 2×10⁻³⁹` at 1 GeV;
-runner Part 4). This is the landed positive theorem — **conditional on Layers 1 + 2**.
+### (4) Given the realization premise, the positive theorem holds (conditionally)
+Granting both a finite physical `a_τ` and the symmetric isotropic tick (`ξ = 1`), B₄
+forbids the marginal dim-4 anisotropy to all orders, rep-blindly (`Σ_t = Σ_s` to
+machine zero, species difference `= 0`), so `δv = 0` and the residual LV is the
+Planck-suppressed dim-6 operator (`|δE²/E²| ≈ 2×10⁻³⁹` at 1 GeV; runner Part 4). This
+is the landed positive bounded theorem — **conditional on the realization premise of
+(2)+(3)**.
 
 ## Verdict
 
-**The temporal structure is not derivable.** From `{Lattice, Quantum, Record}` + the
-scale primitive + retained results, neither layer of the temporal admission is forced:
-**Layer 1** (physical UV time is a discrete lattice direction with finite `a_τ`, vs the
-continuous Stone parameter `ξ → ∞` — the framework's stated native surface and the
-surface its companion obstruction was computed on) is a bare dynamics-gate bit, not
-records-derivable (the retained
-[`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md):
-count not rate) and routed through the `audited_renaming` record-tick bridge;
-**Layer 2** (the isotropic temporal kinetic form `c_t = c_s`) is a separate added
-premise that RP does not supply and the framework's own forward-transfer construction
-violates. What **is** derived is the conformal ratio (`= 1`, a counting fact) and —
-given both layers — the all-orders B₄ selection rule. So the positive horn is a
-**conditional candidate, bounded on a two-layer admission**: a clean negative (the
-admission is intrinsic), not a closure. The landed positive bounded theorem is
-**ratified and sharpened**, not changed.
+**Both horns of `δv(ξ)` remain live.** Time **is** derived (single-clock theorem,
+unaudited, on retained RP/spectrum/cluster/Cl(3)/arrow), correcting the earlier "no
+time" under-claim — **but** as **continuous Stone time** on `Z³`, which is the `ξ → ∞`
+**obstruction** surface (Step 1 output; ratified by the retained scope-boundary no-go
+that `a_τ` is removable; the attractor's native surface). The **positive** (`ξ = 1`,
+`δv = 0`) horn rests on a realization premise that **no retained item supplies and the
+single-clock chain partly contradicts**: a finite physical `a_τ` (over the removable
+regulator) **plus** the symmetric central-difference tick (over the forward transfer
+Step 1 uses; the SO(4) isotropy authority is `a → 0`-only). So the lever is **not
+closed**, and it is **not** a bare foundational admission either — it is the audit
+status of the derived-time chain plus a named, non-retained realization premise.
 
 ## What this note does NOT claim
 
-- It does **not** claim the framework's emergent Lorentz fails or is inconsistent — the
-  positive horn is genuine **given** its admission, and the obstruction is its
-  complement.
-- It does **not** derive, force, or make unconditional the positive horn; it records
-  that **no derivation closes it** with current axioms + retained results.
-- It does **not** demote the landed positive theorem — that note already states
-  "bounded on the discrete-tick admission, not 'no bound'." This is a clean negative
-  landing (the admission is intrinsic), not a status change.
-- It does **not** rest on the absolute clock rate; the conformal **class** (`= 1`) is
-  outside the retained clock-rate no-go — only the temporal **form** (Layer 2) is the
-  added premise.
+- It does **not** claim "the axioms contain no time" or "the temporal structure is not
+  derivable" — both are **retracted**; time is derived (single-clock theorem).
+- It does **not** claim the derived time delivers the **positive** horn; the
+  derivation's physical output is continuous Stone time (the obstruction surface), and
+  the positive horn needs a separate non-retained realization premise.
+- It does **not** claim the derived time is **retained/unconditional** — the
+  single-clock assembly and microcausality are unaudited and base-RP is
+  `audited_conditional`; every **retained** item in the lane (the anisotropy-gate
+  no-go, the scope-boundary no-go, the clock-rate no-go, the `a → 0`-only SO(4)
+  isotropy) cuts **against** an unconditional positive horn.
+- It does **not** demote the landed positive bounded theorem; that theorem's `δv = 0`
+  math is exactly the `ξ = 1` surface and is unchanged — only its *premise framing*
+  (derived-as-Stone-time vs the separate realization premise) is corrected.
 - **No** new axiom, primitive, repo vocabulary, or class tag; literature is comparator
   only. It sets **no** audit status.
 
 ## Reprove-and-cite ledger
 
 - **Reproven here** (runner, from lattice/group primitives): the `O_h` + time-parity
-  (2-dim) vs B₄ (1-dim) invariant count of the diagonal kinetic form; the conformal
-  ratio `a_τ/a_s = 1`; the forward-step-at-`ξ=1` B₄-breaking counterexample (`~5×10⁻⁴`
-  vs `~5×10⁻¹⁸` central); the all-orders B₄ `Σ_t = Σ_s` machine zero; the dim-6
-  `a²/3` residual and `(E/M_Pl)² ≈ 2×10⁻³⁹` at 1 GeV.
+  (2-dim) vs B₄ (1-dim) invariant count; the conformal ratio `a_τ/a_s = 1`; the
+  forward-transfer-at-`ξ=1` B₄-breaking (`~5×10⁻⁴`) vs the symmetric tick (`~5×10⁻¹⁸`);
+  the all-orders B₄ `Σ_t = Σ_s` machine zero; the dim-6 `(E/M_Pl)² ≈ 2×10⁻³⁹` residual.
 - **Cited** (comparator/scope only): Collins–Perez–Sudarsky–Urrutia–Vucetich *PRL* **93**
   (2004) 191301; Kostelecký–Russell SME data tables (LV comparator bounds).
 
@@ -126,29 +135,33 @@ This section records explicit dependency links for the audit citation graph. It 
 not promote this note or change any audited claim scope. The cited ledger statuses are
 recorded verbatim as of 2026-06-08 (the audit lane is the only status authority).
 
-- [EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md](EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md)
-- [LORENTZ_VELOCITY_RG_COEFFICIENT_COMPUTED_NOTE_2026-06-08.md](LORENTZ_VELOCITY_RG_COEFFICIENT_COMPUTED_NOTE_2026-06-08.md)
+- [AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) (`unaudited`)
+- [SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md](SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md) (`retained_no_go`)
+- [AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) (`retained_bounded`)
+- [ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md](ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md) (`retained_bounded`)
 - [SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md](SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md) (`retained_no_go`)
 - [POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md) (`retained_no_go`)
-- [LATTICE_NN_LIGHT_CONE_NOTE.md](LATTICE_NN_LIGHT_CONE_NOTE.md)
-- [DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md](DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md)
+- [LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md](LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md) (`retained_bounded`)
+- [EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md](EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- [LORENTZ_VELOCITY_RG_COEFFICIENT_COMPUTED_NOTE_2026-06-08.md](LORENTZ_VELOCITY_RG_COEFFICIENT_COMPUTED_NOTE_2026-06-08.md)
 - [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)
 
 ### Source-note boundary
 
-**Hypothesis set:** (1) the three axioms + the approved scale primitive `a⁻¹ = M_Pl`;
-(2) the retained results that touch time (finite-graph reachability; reflection
-positivity / transfer matrix; the canonical free-staggered SO(4) action); (3) the
-SME bounds as comparators. The result is a derivation-boundary no-go: the temporal
-structure is not derivable; the positive horn is bounded on a two-layer admission
-(Layer 1 discreteness, Layer 2 isotropic form), neither retained.
+**Hypothesis set:** (1) the three axioms + the scale primitive; (2) the framework's
+retained results that touch time (single-clock codimension-1 evolution; RP-temporal
+bridge; spectrum; cluster; Cl(3); arrow; the SO(4) staggered isotropy; the
+scope-boundary, anisotropy-gate, and clock-rate no-gos); (3) SME bounds as
+comparators. The result is a derivation-boundary mapping: time is derived as continuous
+Stone time (the obstruction horn); the positive horn rests on a separate non-retained
+realization premise; both horns remain live.
 
 **Forbidden-imports check:** no new axiom, primitive, repo vocabulary, or class tag;
-only standard terms (hypercubic / O_h group, invariant ring, reflection positivity,
-transfer matrix, time-parity, conformal class, selection rule). No fitted/PDG/lattice-MC
-value consumed; the LV bounds are comparators.
+only standard terms (transfer matrix, Stone's theorem, reflection positivity,
+time-parity, hypercubic group, conformal class). No fitted/PDG/lattice-MC value
+consumed; the LV bounds are comparators.
 
 **No-promotion statement:** this note does **not** promote, demote, or set the audit
-status of the positive bounded theorem, the companion obstruction note, the
-anisotropy-gate / clock-rate no-gos, the reachability/staggered notes, or any upstream
-row. The independent audit lane is the only status authority.
+status of the single-clock theorem, the positive bounded theorem, the obstruction note,
+the no-gos, or any upstream row. The independent audit lane is the only status
+authority.

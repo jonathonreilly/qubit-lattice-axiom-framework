@@ -34,18 +34,19 @@ Part 4: the residual LV is the Planck-suppressed dimension-6 operator (harmless)
   [PASS] (4.3) POSITIVE prediction: the surviving LV is the unique cubic-harmonic (ell=4) dim-6 fingerprint (E/M_Pl)^2, not a marginal coefficient  --  emergent Lorentz holds to dim-6; if LV is ever seen at (E/M_Pl)^2 the ell=4 angular pattern identifies the cubic lattice (retained EMERGENT_LORENTZ note)
 
 ----------------------------------------------------------------------------------------------
-Part 5: scope -- POSITIVE + BOUNDED on the discrete-tick admission (NOT 'no bound', NOT a closure)
+Part 5: scope -- POSITIVE + BOUNDED on a non-retained finite-a_tau symmetric-tick realization premise (NOT 'no bound', NOT a closure)
 ----------------------------------------------------------------------------------------------
-  [PASS] (5.1) the temporal structure is an ADMISSION, not derived: {Lattice(spatial Z^3), Quantum, Record} has NO time (Record timeless; Lattice supplies no dynamics/causal cone)  --  time is an admitted dynamics gate (the framework's 2026-06-07 diagnostic note); so delta_v is unavoidably CONDITIONAL on a temporal admission
-  [PASS] (5.2) PREMISE (the single bound): physical UV time is the discrete record-tick (the Z^4/xi=1 surface) -- the owner's foundational choice; the complementary continuous-time admission gives the companion obstruction  --  POSITIVE: emergent Lorentz is radiatively stable on this surface (Parts 1-4, all-orders). NOT 'no bound' (rests on the admission); NOT a closure of the lever
+  [PASS] (5.1) time IS DERIVED (single-clock codimension-1 theorem, UNAUDITED) -- but as CONTINUOUS Stone time on Z^3 = the xi->inf OBSTRUCTION surface (Step 1; retained scope-boundary: a_tau removable)  --  so 'no time / temporal structure not derivable' is FALSE; but the derived-time output is the obstruction horn, NOT this xi=1 surface
+  [PASS] (5.2) PREMISE (the single bound): a finite physical a_tau + the SYMMETRIC central-difference tick (the Z^4/xi=1 surface) -- a SEPARATE realization premise the single-clock chain does NOT supply and partly CONTRADICTS  --  POSITIVE: emergent Lorentz is radiatively stable on this surface (Parts 1-4, all-orders). NOT 'no bound' (the chain uses the FORWARD transfer + leaves a_tau removable; the SO(4) isotropy authority is a->0-only); NOT a closure -- BOTH horns of delta_v(xi) remain live
 
 ==============================================================================================
-THEOREM (positive, bounded on the discrete-record-tick admission): on the Z^4 hypercubic surface
-B_4 forbids the marginal velocity anisotropy to ALL orders and rep-blindly (species difference = 0),
-so emergent Lorentz is RADIATIVELY STABLE; the only residual LV is the Planck-suppressed dim-6
-operator (~4e-39 at 1 GeV), below every comparator bound. The single premise -- discrete-tick UV
-time -- is a dynamics-gate ADMISSION (the owner's foundational choice), NOT derived: this is POSITIVE
-+ BOUNDED, not 'no bound'. The continuous-time admission gives the companion computed obstruction.
+THEOREM (positive, bounded on a non-retained finite-a_tau symmetric-tick realization premise): on the
+Z^4 hypercubic surface B_4 forbids the marginal velocity anisotropy to ALL orders and rep-blindly
+(species difference = 0), so emergent Lorentz is RADIATIVELY STABLE; the only residual LV is the
+Planck-suppressed dim-6 operator (~4e-39 at 1 GeV). Time IS derived (single-clock theorem), but as
+CONTINUOUS Stone time = the obstruction surface; this xi=1 surface needs a SEPARATE realization premise
+the derived-time chain does NOT supply (forward transfer; a_tau removable; SO(4) isotropy a->0-only).
+POSITIVE + BOUNDED, NOT 'no bound', NOT a closure -- BOTH horns of delta_v(xi) remain live.
 ==============================================================================================
 TOTAL: PASS=12 FAIL=0
 ==============================================================================================

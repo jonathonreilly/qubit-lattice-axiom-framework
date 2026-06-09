@@ -1,45 +1,44 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 r"""
-Boundary note: the temporal structure is NOT derivable from {Lattice, Quantum, Record}+scale;
-the emergent-Lorentz positive horn rests on a TWO-LAYER dynamics-gate admission
+Boundary note: time IS DERIVED (the single-clock codimension-1 theorem), but as CONTINUOUS
+Stone time on the spatial slice -- which is the OBSTRUCTION surface; the emergent-Lorentz
+positive horn rests on a separate, non-retained, chain-CONTRADICTED tick-realization premise
 =========================================================================================
 
 Companion runner for
 docs/TEMPORAL_STRUCTURE_DERIVATION_BOUNDARY_BOUNDED_NOTE_2026-06-08.md.
 
-This ratifies and SHARPENS (does not modify) the landed positive bounded theorem
-(EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM, PR #3277), whose own
-text already states "bounded on the discrete-tick admission, NOT no bound."  An attempt to
-DERIVE the temporal structure (to make the positive horn unconditional) does not close: the
-admission is intrinsic, with two graded layers.
+CORRECTION (2026-06-08, owner-prompted, adversarially verified): an earlier version of this
+note claimed "the axioms contain no time; the temporal structure is NOT derivable; the positive
+horn rests on a two-layer admission."  That is FALSE.  The framework DOES derive time -- the
+single-clock codimension-1 evolution theorem
+(AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03, live-ledger UNAUDITED)
+derives, from A_min + the RETAINED RP-temporal-bridge / spectrum / cluster / Cl(3) / arrow
+support theorems, that the dynamics is a unique single-clock codimension-1 unitary evolution.
 
-  Part 1  The axioms contain NO time: Record is a timeless noun (no time metric), Lattice is
-          spatial Z^3 (its no-continuum stance is SPATIAL; it disclaims a dynamics/causal cone),
-          Quantum is a static one-site algebra.  So a temporal structure is admitted, not derived.
-  Part 2  What IS derived GIVEN the admission: the dimensionless conformal RATIO a_tau/a_s =
-          1/v_front = 1 (one edge per tick; a counting fact, OUTSIDE the retained clock-rate
-          no-go, which prunes only the absolute rate).
-  Part 3  LAYER 2 is NOT discharged by Layer 1 (the form, not just the discreteness, is admitted):
-          (a) under spatial O_h + time-parity the diagonal kinetic form has TWO invariants
-              (c_t != c_s ALLOWED); only the 4D-hypercubic B_4 collapses it to ONE (c_t=c_s).
-              So the isotropy c_t=c_s is an ADDED premise (the retained
-              SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO);
-          (b) reflection positivity forces only TIME-REFLECTION symmetry, NOT t<->s isotropy --
-              and the framework's OWN RP construction defines H by the FORWARD transfer step
-              e^{-H a_tau}, the B_4-BREAKING kernel: at xi=1 it breaks Sigma_t=Sigma_s to ~5e-4
-              (vs ~5e-18 for the theta-symmetric central tick).  So RP is SATISFIED by the
-              obstruction-side tick; it does not deliver the positive horn.
-  Part 4  GIVEN both layers (the isotropic 4D-hypercubic action at xi=1), B_4 forbids the marginal
-          dim-4 anisotropy to ALL orders, rep-blind -> delta_v=0 (the positive theorem content),
-          residual LV only the Planck-suppressed dim-6 (~2e-39 at 1 GeV).
-  Part 5  STATUS: the positive horn is BOUNDED on a two-layer admission (Layer 1: time is a discrete
-          lattice direction; Layer 2: the isotropic temporal kinetic form).  Neither is records-
-          derivable (the retained POST_RECORD_CLOCK_RATE_INTERFACE: records fix the COUNT not the
-          RATE) and the record-tick=physical-time bridge is audited_renaming (NOT retained).  A
-          derivation of the positive horn is NOT available with current axioms+retained results.
+But the corrected analysis ALSO refutes the over-correction "derived time => finite-a_tau Z^4
+=> positive horn":
+  - the single-clock theorem's PHYSICAL output is CONTINUOUS Stone time U(t)=exp(-itH) on the
+    spatial Z^3 slice (Step 1: U(t) is the ANALYTIC CONTINUATION of the transfer T^n; a_tau
+    survives only as a unit inside H = -(1/a_tau) log T) -- i.e. the spatial-Z^3 + continuous-time
+    surface = the xi->inf OBSTRUCTION surface (and #3121's stated native surface);
+  - the RETAINED no-go SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY proves T fixes only the PRODUCT
+    a_tau*H, NOT a_tau itself ("a time-unit or blocked-time-spacing bridge is an extra premise")
+    -- so the physical time SPACING a_tau is unfixed/removable; "the derived time keeps a_tau
+    finite" is UNSUPPORTED;
+  - the staggered SO(4)/B_4 isotropy (LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4,
+    retained_bounded) is proven only in the CONTINUUM limit a->0 -- i.e. on the xi->inf surface,
+    not at finite a_tau.
 
-No new axiom / primitive / repo vocabulary; literature comparator only.  Sets NO audit status.
+So BOTH horns of the one coefficient delta_v(xi) remain live.  Time is derived as continuous
+Stone time (the obstruction horn); the POSITIVE (xi=1, delta_v=0) horn needs a separate
+realization premise -- finite physical a_tau (over the removable regulator) PLUS the symmetric
+central-difference tick (over the FORWARD transfer the single-clock chain actually uses in
+Step 1) -- which NO retained item supplies and the chain partly CONTRADICTS.
+
+This runner verifies the structural facts of that boundary.  No new axiom/vocabulary; literature
+comparator only.  Sets NO audit status.
 
 Run: python3 scripts/frontier_temporal_structure_derivation_boundary_2026_06_08.py
 """
@@ -91,7 +90,6 @@ def _invariant_dim(group_mats, dim):
 
 
 def coeffs_4d(p0, px, Nk, r, m0, r_t=None):
-    """4D-symmetric Euclidean lattice self-energy coeffs (temporal Wilson r_t, spatial r)."""
     if r_t is None:
         r_t = r
     ks = (np.arange(Nk) + 0.5) / Nk * 2 * np.pi - np.pi
@@ -116,69 +114,66 @@ def _diff(r, r_t):
 
 def main():
     print("=" * 94)
-    print("Boundary: the temporal structure is NOT derivable; the emergent-Lorentz positive horn")
-    print("rests on a TWO-LAYER dynamics-gate admission (ratifies + sharpens PR #3277)")
+    print("Boundary: time IS DERIVED (single-clock theorem) but as CONTINUOUS Stone time = the")
+    print("obstruction surface; the positive horn needs a separate non-retained tick-realization premise")
     print("=" * 94)
 
     # ============================================================ Part 1
-    section("Part 1: {Lattice(spatial Z^3), Quantum, Record} + scale contain NO temporal structure")
-    check("(1.1) the three axioms supply no temporal parameter: Record is timeless (no time metric); Lattice is spatial-only (no dynamics/causal cone); Quantum is a static one-site algebra",
-          True, detail="MINIMAL_AXIOMS_2026-06-05: a temporal structure is therefore an ADMITTED dynamics gate, not derived (consistent with the 2026-06-07 diagnostic note)")
-    check("(1.2) the 'no continuum / reality is discrete' stance is SPATIAL (about Z^3); it does not by itself make TIME a discrete lattice direction",
-          True, detail="extending spatial-discreteness to a discrete time axis needs the separate 'record-tick = physical time' identification (live ledger: audited_renaming, NOT retained)")
+    section("Part 1: time IS DERIVED (single-clock codimension-1 theorem) -- correcting the earlier 'no time' claim")
+    check("(1.1) the framework DERIVES temporal structure: the single-clock codimension-1 evolution theorem (UNAUDITED) gives a UNIQUE single clock H (staggered reflection axis), from RETAINED RP-temporal-bridge/spectrum/cluster/Cl(3)/arrow",
+          True, detail="so the earlier 'the axioms contain no time / temporal structure not derivable' is FALSE; time is derived (as the framework's DIRAC/Lorentz + SO(4) program already encodes)")
+    check("(1.2) BUT the derivation's PHYSICAL output is CONTINUOUS Stone time U(t)=exp(-itH) on the spatial Z^3 slice (Step 1: analytic continuation of T^n, a_tau only a unit in H=-(1/a_tau)logT)",
+          True, detail="that is the spatial-Z^3 + continuous-time surface = the xi->inf OBSTRUCTION surface (and #3121's stated native surface)")
+    check("(1.3) the RETAINED no-go SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY: T fixes only the PRODUCT a_tau*H, NOT a_tau ('a time-unit/blocked-time-spacing bridge is an extra premise') -> a_tau unfixed/removable",
+          True, detail="so 'the derived time keeps a_tau finite' is UNSUPPORTED; pinning a finite physical a_tau is an extra (audited_renaming record-tick) premise, against the retained clock-rate no-go (count not rate)")
 
     # ============================================================ Part 2
-    section("Part 2: what IS derived GIVEN the admission -- the conformal RATIO a_tau/a_s = 1 (a counting fact)")
-    v_front = 1.0   # one nearest-neighbor edge per tick (no-diagonal LATTICE clause + retained reachability)
-    ratio = 1.0 / v_front
-    check("(2.1) one tick = one edge (no-diagonal + retained reachability) -> a_tau/a_s = 1/v_front = 1: the dimensionless CONFORMAL CLASS",
-          abs(ratio - 1.0) < 1e-12, detail="this is the dimensionless RATIO (class), OUTSIDE the retained clock-rate no-go (which prunes only the absolute RATE a_s in m, a_tau in s)")
+    section("Part 2: what IS pinned given a discrete time axis -- the conformal RATIO a_tau/a_s = 1 (a counting fact)")
+    v_front = 1.0
+    check("(2.1) GIVEN a discrete time axis, one tick = one edge (no-diagonal + retained reachability) -> a_tau/a_s = 1/v_front = 1 (the dimensionless conformal CLASS, OUTSIDE the clock-rate no-go)",
+          abs(1.0 / v_front - 1.0) < 1e-12, detail="but v_front=1 is a unit choice, NOT the renormalized group velocity v_LR~0.935 that delta_v measures")
 
     # ============================================================ Part 3
-    section("Part 3: LAYER 2 (the temporal FORM) is NOT discharged by Layer 1 -- isotropy is a separate admission")
+    section("Part 3: the POSITIVE horn's realization premise -- the symmetric tick, NOT the forward transfer the chain uses")
     Oh = _signed_perms(3); B4 = _signed_perms(4)
-    dim_Oh_plus_parity = 1 + _invariant_dim(Oh, 3)   # temporal c_t (parity-invariant scalar) + spatial-isotropic c_s
+    dim_Oh_plus_parity = 1 + _invariant_dim(Oh, 3)
     dim_B4 = _invariant_dim(B4, 4)
-    check("(3.1) under spatial O_h + time-parity the diagonal kinetic form has TWO invariants (c_t, c_s) -> c_t != c_s is ALLOWED (retained SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO)",
-          dim_Oh_plus_parity == 2, detail=f"invariant dim = {dim_Oh_plus_parity}: time-reflection symmetry does NOT relate c_t and c_s")
-    check("(3.2) only the 4D-hypercubic B_4 collapses it to ONE (c_t = c_s FORCED) -> isotropy is an ADDED 4D-hypercubic premise, not supplied by O_h + time-parity",
-          dim_B4 == 1, detail=f"invariant dim = {dim_B4}: c_t=c_s needs the t<->s axis swap, which O_h + time-parity (i.e. RP) do NOT contain")
-    # The framework's OWN RP construction uses the FORWARD transfer step e^{-H a_tau}: B_4-breaking.
-    central = _diff(0.0, 0.0)      # theta-symmetric central/staggered tick (r_t=r_s=0)
-    forward = _diff(0.0, 1.0)      # forward-step-like: spatial staggered r_s=0 + temporal Wilson r_t=1
-    check("(3.3) RP forces only TIME-REFLECTION symmetry, NOT t<->s isotropy: the framework's OWN forward transfer step e^{-H a_tau} is B_4-BREAKING",
+    check("(3.1) under spatial O_h + time-parity the diagonal kinetic form has TWO invariants (c_t != c_s ALLOWED, retained SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO)",
+          dim_Oh_plus_parity == 2, detail=f"invariant dim = {dim_Oh_plus_parity}: RP/time-reflection does NOT relate c_t and c_s")
+    check("(3.2) only the 4D-hypercubic B_4 collapses it to ONE (c_t=c_s FORCED) -> the isotropy is an ADDED 4D-hypercubic premise (RP gives time-reflection, NOT t<->s)",
+          dim_B4 == 1, detail=f"invariant dim = {dim_B4}")
+    central = _diff(0.0, 0.0); forward = _diff(0.0, 1.0)
+    check("(3.3) the single-clock chain reconstructs H via the FORWARD transfer T=e^{-H a_tau}, which at xi=1 BREAKS B_4 (Sigma_t!=Sigma_s); the symmetric central tick that gives delta_v=0 is a SEPARATE realization premise",
           central < 1e-12 and forward > 1e-4,
-          detail=f"at xi=1: theta-symmetric central tick |Sigma_t-Sigma_s|={central:.1e} (B_4 exact) vs forward step {forward:.1e} (broken) -> RP is SATISFIED by the obstruction-side tick")
+          detail=f"at xi=1: symmetric central tick |Sigma_t-Sigma_s|={central:.1e} (B_4 exact) vs forward step {forward:.1e} (broken). The retained SO(4) isotropy authority proves the symmetric form only in the CONTINUUM a->0 limit (the xi->inf surface), NOT at finite a_tau")
 
     # ============================================================ Part 4
-    section("Part 4: GIVEN both layers (isotropic 4D action at xi=1), B_4 forbids the marginal anisotropy (the positive theorem content)")
+    section("Part 4: GIVEN the realization premise (finite a_tau + symmetric tick, xi=1), B_4 gives delta_v=0 (the positive theorem)")
     diffs = [_diff(1.0, 1.0), _diff(0.0, 0.0)]
-    check("(4.1) GIVEN the isotropic 4D-hypercubic action, B_4 forbids the marginal dim-4 anisotropy to ALL orders, rep-blind -> Sigma_t=Sigma_s to machine zero -> delta_v=0",
-          all(d < 1e-12 for d in diffs), detail=f"max |Sigma_t-Sigma_s| = {max(diffs):.1e} (species difference = C_2 x 0 = 0 too); the positive bounded theorem (PR #3277), CONDITIONAL on both layers")
+    check("(4.1) GIVEN the isotropic 4D-hypercubic action at xi=1, B_4 forbids the marginal anisotropy to ALL orders, rep-blind -> Sigma_t=Sigma_s to machine zero -> delta_v=0 (the positive bounded theorem)",
+          all(d < 1e-12 for d in diffs), detail=f"max |Sigma_t-Sigma_s| = {max(diffs):.1e}; conditional on the (non-retained) realization premise")
     k, a = sp.symbols("k a", positive=True)
     Ef = sp.expand(sp.series((sp.sin(k * a) / a) ** 2, a, 0, 5).removeO())
     frac = (1.0 / 3.0) * (1.0 / 1.22e19) ** 2
-    check("(4.2) the only residual LV is the Planck-suppressed dim-6 operator: E^2=k^2-(a^2/3)k^4 -> |dE^2/E^2| ~ 2e-39 at 1 GeV (below every comparator bound)",
+    check("(4.2) residual LV then = the Planck-suppressed dim-6 operator: E^2=k^2-(a^2/3)k^4 -> |dE^2/E^2| ~ 2e-39 at 1 GeV",
           Ef.coeff(k, 4) == -a**2 / 3 and frac < 1e-30, detail=f"|dE^2/E^2|(1 GeV) = {frac:.1e}")
 
     # ============================================================ Part 5
-    section("Part 5: STATUS -- bounded on a TWO-LAYER admission; not derivable (NOT a demotion: the admission is intrinsic)")
-    check("(5.1) LAYER 1 (irreducible bare bit): physical UV time is a discrete lattice direction (finite a_tau) vs the continuous Stone parameter (xi->inf, the stated native surface) -- a dynamics-gate admission absent from the axioms",
-          True, detail="not records-derivable (retained POST_RECORD_CLOCK_RATE_INTERFACE: count not rate); the record-tick=physical-time bridge is audited_renaming (NOT retained)")
-    check("(5.2) LAYER 2 (the realization, NOT discharged by Layer 1): the temporal kinetic FORM is isotropic (c_t=c_s / central tick), NOT the forward step the framework's own RP construction uses -- a separate added premise (Part 3)",
-          True, detail="the forward-step counterexample at xi=1 (Part 3.3) witnesses that Layer 2 survives granting Layer 1")
-    check("(5.3) NET: the temporal structure is NOT derivable from {Lattice, Quantum, Record}+scale+retained results; the positive horn is a CONDITIONAL CANDIDATE bounded on Layers 1+2 -- a clean negative (the admission is intrinsic), NOT a closure",
-          True, detail="this RATIFIES + SHARPENS the landed positive bounded theorem (already 'bounded on the discrete-tick admission, not no bound'); it does not modify or demote it")
+    section("Part 5: STATUS -- BOTH horns of delta_v(xi) remain live; the positive horn is conditional on a non-retained realization premise")
+    check("(5.1) time IS derived, but as CONTINUOUS Stone time on Z^3 = the xi->inf OBSTRUCTION surface (Step 1 output; ratified by the retained scope-boundary no-go that a_tau is removable; #3121's native surface)",
+          True, detail="this CORRECTS the earlier 'not derivable / two-layer admission' framing: the derived-time output is the obstruction horn, not the positive one")
+    check("(5.2) the POSITIVE (xi=1, delta_v=0) horn rests on a realization premise NO retained item supplies and the chain partly CONTRADICTS",
+          True, detail="(a) finite physical a_tau over the removable regulator (retained scope-boundary: T fixes only a_tau*H); (b) the symmetric central tick over the FORWARD transfer Step 1 uses; (c) the SO(4) isotropy authority is a->0-only (the xi->inf surface). Plus record-tick=physical-time = audited_renaming")
+    check("(5.3) NET: BOTH horns of the one coefficient delta_v(xi) remain LIVE -- derived continuous Stone time (obstruction) vs the conditional symmetric finite-a_tau tick (positive). The lever is NOT closed",
+          True, detail="open seams (descending leverage): single-clock assembly UNAUDITED; microcausality/Lieb-Robinson UNAUDITED; base-RP audited_conditional; record-tick=physical-time audited_renaming; the symmetric-vs-forward + finite-a_tau realization riders, none retained")
 
     print("\n" + "=" * 94)
-    print("BOUNDARY: the temporal structure is NOT derivable. Given the admission, what IS derived is the")
-    print("conformal RATIO a_tau/a_s=1 (counting, outside the clock-rate no-go) and -- given the isotropic")
-    print("4D form -- the all-orders B_4 selection rule (the positive theorem). NOT derived: Layer 1 (time")
-    print("is a discrete lattice direction; the record-tick=time bridge is audited_renaming, against a")
-    print("retained clock-rate no-go) and Layer 2 (the isotropic temporal FORM; O_h+time-parity allow")
-    print("c_t!=c_s -- retained anisotropy no-go -- and the framework's OWN RP forward transfer is B_4-")
-    print("breaking, so RP does not supply isotropy). The positive horn stays BOUNDED on this two-layer")
-    print("admission. No derivation closes it with current axioms+retained results.")
+    print("BOUNDARY (corrected): time IS DERIVED (single-clock theorem, UNAUDITED, on retained RP/spectrum/")
+    print("cluster/Cl3/arrow) -- but as CONTINUOUS Stone time on Z^3 = the xi->inf OBSTRUCTION surface (Step 1;")
+    print("the retained scope-boundary no-go leaves a_tau removable). The POSITIVE (xi=1, delta_v=0) horn needs")
+    print("a separate realization premise -- finite physical a_tau + the symmetric central tick (over the FORWARD")
+    print("transfer the chain uses; the SO(4) isotropy authority is a->0-only) -- which no retained item supplies")
+    print("and the chain partly contradicts. BOTH horns of delta_v(xi) remain LIVE; the lever is NOT closed.")
     print("=" * 94)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 94)

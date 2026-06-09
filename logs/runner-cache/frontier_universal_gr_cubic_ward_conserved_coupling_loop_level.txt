@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_cubic_ward_conserved_coupling_loop_level.py
+runner_sha256: 4e41defc0766c5d762a9e263d7a8a5baa32036f7c04f9a54ae5b5e39d903d316
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 2.30
+status: ok
+----- stdout -----
+PASS T1 conserved coupling D(P_eff) vertex = V_cons EXACTLY (err=7.1e-12) -- the conserved all-orders completion
+PASS T2 naive vielbein-on-hops shear vertex = V_naive(C1) EXACTLY (err=2.0e-11), distinct from V_cons (|Vc-Vn|=0.78) -- the non-conserved determinant route
+PASS T3 operator-tower R1 FAILS: seagull contraction / (vertex difference) ratio is NON-constant across q (spread=0.44) -> cubic Ward is intrinsically LOOP-level (O(a^2) continuum-only), NOT a clean operator identity
+
+The conserved all-orders metric coupling is the momentum-reparametrization D(P_eff) (vertex =
+V_cons exactly; the naive vielbein-on-hops determinant route is the NON-conserved C1 vertex that
+cannot close the Ward). The cubic diffeomorphism Ward identity is intrinsically a LOOP-level,
+O(a^2) continuum-only statement: it does NOT promote to a clean operator-tower identity (the
+seagull's longitudinal contraction is not proportional to the vertex difference), unlike the
+exact operator-level vertex Ward identity R0 (the cubic_diffeo_ward_operator_telescope backbone).
+Magnitude registered (G3).
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

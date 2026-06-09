@@ -74,15 +74,16 @@
     "retained": 210,
     "retained_bounded": 777,
     "retained_no_go": 204,
-    "retained_pending_chain": 12,
-    "unaudited": 1368
+    "retained_pending_chain": 13,
+    "unaudited": 1367
   },
-  "retained_pending_chain_count": 12,
+  "retained_pending_chain_count": 13,
   "retained_pending_chain_examples": [
     "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
     "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
+    "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
     "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
     "lattice_3d_nyquist_diffraction_note",
     "linear_response_second_order_kubo_note",

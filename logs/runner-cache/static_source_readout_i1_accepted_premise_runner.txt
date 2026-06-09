@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/static_source_readout_i1_accepted_premise_runner.py
-runner_sha256: b7f27bcad9c8eb60df0b76cd4ffe745cfe45ae1c5f0190de04126b416bb71241
+runner_sha256: 595fa31ae3da14b5cdb724add0aff53e89d0d747e8d12fb904f7e247ccf41603
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.66
+elapsed_sec: 0.84
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -12,20 +12,27 @@ Section 0: source-boundary firewall
   PASS [EXACT]  (S-required) source contains accepted-premise packet entry
   PASS [EXACT]  (S-required) source contains not derived boundary
   PASS [EXACT]  (S-required) source contains no new repo-wide axiom
-  PASS [EXACT]  (S-required) source contains maradudin sibling bridge dependency
+  PASS [EXACT]  (S-required) source contains framework-local green dependency
+  PASS [EXACT]  (S-required) source contains green certificate runner dependency
   PASS [EXACT]  (S-required) source contains i2 sibling bridge dependency
   PASS [EXACT]  (S-required) source contains g bare sibling bridge dependency
+  PASS [EXACT]  (S-required) source contains current minimal axioms memo
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: audited_conditional
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: effective_status
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: retained_bounded
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: No new admissions
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: MINIMAL_AXIOMS_2026-05-03
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: MINIMAL_AXIOMS_2026-05-20
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: canonical Cl(3) connection normalization
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: `Cl(3)` on `Z^3` axioms
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: spatial substrate
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: substrate-internal
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: sibling Maradudin bridge
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: named Maradudin asymptotic through the sibling accepted-premise bridge
 ==============================================================================
 Section A: Exact symbolic substitution chain (B1)-(B4)
 ==============================================================================
@@ -92,12 +99,12 @@ Section G: vocabulary audit + no-go honor
 ==============================================================================
 Summary
 ==============================================================================
-EXACT   : PASS = 41, FAIL = 0
+EXACT   : PASS = 48, FAIL = 0
 BOUNDED : PASS = 11, FAIL = 0
-TOTAL   : PASS = 52, FAIL = 0
+TOTAL   : PASS = 59, FAIL = 0
 
 VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from
-  accepted-premise packet (P1) + Maradudin bridge + sibling I2/g_bare
+  accepted-premise packet (P1) + framework-local Green theorem + sibling I2/g_bare
   bridges by exact symbolic substitution arithmetic.
 
 ----- stderr -----

@@ -1,0 +1,28 @@
+loop: kraus-choi-native-reroute-20260609
+goal: "Remove stale standard-theorem import language from retained Kraus-Choi source notes by routing through the framework-local reconciled proof."
+mode: science_block
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+target_claim_id: kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20
+active_route: "source-language and dependency-surface reroute"
+files_touched:
+  - docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+  - docs/KRAUS_CHOI_REPRESENTATION_DEPS_CHANGED_HYGIENE_COMPANION_NOTE_2026-06-04.md
+closed_imports:
+  - "Parent/deps-hygiene prose no longer presents finite-region Kraus/Choi as a bare standard theorem import."
+open_imports:
+  - "Thermodynamic-limit arbitrary-channel representation remains outside this finite-region source row."
+audit_boundary:
+  - "No audit ledger or verdict files are edited."
+  - "No row is promoted or retagged."
+verification:
+  - "python3 scripts/kraus_choi_normalization_convention_check_2026_06_05.py -> TOTAL PASS=16 FAIL=0"
+  - "python3 scripts/audit_companion_kraus_choi_representation_deps_changed_hygiene_2026_06_04.py -> SUMMARY PASS=35 FAIL=0"
+  - "python3 scripts/audit_companion_kraus_choi_normalization_reconciled_2026_06_05.py -> TOTAL 26 PASS / 0 FAIL"
+  - "git diff --check -> clean"
+  - "git diff --name-only -- docs/audit -> empty"
+  - "targeted stale import phrase rg in edited docs -> empty"
+next_exact_action: "Open PR."
+stop_condition: "Review PR opened."

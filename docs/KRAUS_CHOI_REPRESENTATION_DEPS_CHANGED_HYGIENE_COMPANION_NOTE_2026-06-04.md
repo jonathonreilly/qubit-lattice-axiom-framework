@@ -25,8 +25,10 @@ and not independent audit work.
 
 ## Claim Boundary
 
-The parent theorem applies standard finite-dimensional Kraus and Choi
-representation results to a finite qubit-lattice operator algebra:
+The parent theorem now routes finite-dimensional Kraus and Choi
+representation content through the framework-local normalization-reconciled
+Kraus/Choi correspondence note and runner, applied to a finite qubit-lattice
+operator algebra:
 
 ```text
 A_Lambda = tensor_{x in Lambda} M_2(C) ~= M_d(C),
@@ -37,8 +39,8 @@ That load-bearing chain uses:
 
 - the Quantum axiom's per-site one-qubit algebra `M_2(C)`;
 - the Lattice axiom's finite `Z^3` region `Lambda`;
-- standard finite-dimensional matrix algebra;
-- standard Kraus and Choi representation theorems.
+- finite-dimensional matrix algebra on the explicit `M_d(C)` surface;
+- the framework-local reconciled Kraus/Choi correspondence and proof runner.
 
 It does not use the Record axiom's additive finite scalar readout statement.
 The current dependency rewire from the older dated axiom memo to the stable
@@ -56,9 +58,9 @@ The companion runner checks four surfaces:
    not load-bearing dependencies;
 3. the 2026-06-04 axiom memo preserves the Lattice + Quantum content needed
    by the parent and adds Record as a separate finite scalar readout axiom;
-4. direct finite-dimensional matrix checks reproduce the standard Kraus
-   operator-sum, trace-preservation, Choi positivity, and non-CP transpose-map
-   boundaries.
+4. direct finite-dimensional matrix checks reproduce the Kraus operator-sum,
+   trace-preservation, Choi positivity, and non-CP transpose-map boundaries on
+   the framework matrix surface.
 
 These checks support only the narrow dependency-surface statement above. They
 do not set any audit verdict and do not decide whether the parent should be
@@ -70,8 +72,9 @@ reprocessed by the independent audit workflow.
 - It does not promote the parent or this companion.
 - It does not edit the parent note, the axiom memo, or the audit registry.
 - It does not claim the Record axiom is content-free in general.
-- It does not rederive Kraus 1971 or Choi 1975; those remain standard-math
-  imports.
+- It does not claim a thermodynamic-limit Kraus/Choi theorem for arbitrary
+  maps on the full quasi-local algebra; Kraus 1971 and Choi 1975 are now
+  parallel references for the finite-region correspondence.
 - It does not close infinite-volume channel questions, thermodynamic-limit
   questions, or record-formation dynamics.
 

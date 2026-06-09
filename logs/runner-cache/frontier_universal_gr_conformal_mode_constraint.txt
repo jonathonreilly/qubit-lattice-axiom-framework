@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_conformal_mode_constraint.py
+runner_sha256: dda5b3430bfd49024f284c9a9f4a5361e28b6edde164055e1cc1ddad0048666c
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 3.73
+status: ok
+----- stdout -----
+PASS T1 naive gauge-contaminated trace probe: <trace|M|trace> = +0.0295 POSITIVE (the trap -- would naively read as a propagating scalar / scalar-tensor; it mixes the longitudinal gauge mode)
+PASS T2 PROPER 10x10 diagonalization: exactly 1 negative eigenvalue (ev=-0.0099), |overlap with trace/conformal|=0.49, |overlap with TT-yz|=0.000 -- the GR opposite-signed (DeWitt) conformal mode, NOT a positive propagating scalar
+PASS T3 conformal eigenvalue SHRINKS toward zero with refinement (N=4:-0.0496 -> N=6:-0.0099, constraint-like) and the transverse (gauge-projected) 6x6 sector is ALL positive ([0.042 0.045 0.045 0.045 0.046 0.046]) -> the conformal sector is the GR CONSTRAINT sector, not a scalar-tensor scalar
+
+The W-native induced graviton's conformal (trace) mode is the GR-type OPPOSITE-SIGNED constraint
+mode -- the single negative eigenvalue of the kinetic matrix, with conformal/trace character and
+zero TT overlap, shrinking toward a continuum zero mode -- NOT a healthy positive propagating
+scalar. So the framework is GR-structured (2 DOF, the conformal mode is constrained), NOT
+scalar-tensor; the naive gauge-contaminated positive trace kinetic is the trap. The cosmological
+constant thus couples to a CONSTRAINED conformal mode (a genuine constraint-Lambda, consistent
+with the induced-CC note), not a dynamical scalar. BOUNDED on the continuum 2-DOF separation
+(lattice diffeo-breaking gives gauge modes spurious O(a^2) stiffness at accessible 4D sizes).
+Magnitude registered (G3).
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

@@ -323,7 +323,7 @@ degree 30; peak RSS `~65 MB`; no enumeration of cluster topologies):
   `g_crit=81`; if an external `lambda_tree <= 7` bound is supplied later, the
   corresponding `rho_crit = 81/7 = 11.5714`.
 
-**SCORECARD: PASS = 28, FAIL = 0.**
+**SCORECARD: PASS = 32, FAIL = 0.**
 
 ## See also
 

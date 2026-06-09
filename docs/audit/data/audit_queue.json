@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 252,
-    "leaf": 399,
+    "leaf": 398,
     "medium": 365
   },
   "cycle_break_target_count": 15,
@@ -17742,28 +17742,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/KOIDE_R_HALF_DYNAMICAL_DETERMINANT_ROUTE_PRUNING_NO_GO_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/koide_corner_dirac_determinant_2026_06_08.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lattice_3d_dense_spent_delay_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17885,6 +17863,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "nonlabel_grown_drift_basin_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "nonlabel_grown_basin_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/gate_b_grown_joint_package.py"
+      ],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py",
       "transitive_descendants": 16
     },
     {
@@ -29070,32 +29074,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "nonlabel_grown_drift_basin_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "nonlabel_grown_basin_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/gate_b_grown_joint_package.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40699,6 +40677,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 29,
-  "total_pending": 1343
+  "ready_count": 28,
+  "total_pending": 1342
 }

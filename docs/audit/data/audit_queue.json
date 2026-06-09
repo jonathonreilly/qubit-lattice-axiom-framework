@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 252,
-    "leaf": 428,
+    "leaf": 427,
     "medium": 366
   },
   "cycle_break_target_count": 15,
@@ -17720,35 +17720,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "magnitude_reads_minimal_record_block_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
-        "scale_reference_primitive",
-        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.322,
-      "note_path": "docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/magnitude_reads_minimal_record_block_2026_06_06.py",
-      "transitive_descendants": 19
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "fifth_family_radial_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17897,6 +17868,58 @@
       "ready": true,
       "runner_path": "scripts/frontier_lensing_exponent_is_dipole_crossover.py",
       "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "post_record_measure_weight_normalization_subdivision_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
+      ],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+        "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+        "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
+        "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+        "magnitude_reads_minimal_record_block_2026-06-06"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py",
+      "transitive_descendants": 2
     },
     {
       "audit_independence_required": "any_non_self",
@@ -28773,34 +28796,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-        "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
-        "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
-        "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
-        "magnitude_reads_minimal_record_block_2026-06-06"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "primitive_p_heavyq_species_proposal_note_2026-05-10_ppheavyq",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -29109,30 +29104,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "post_record_measure_weight_normalization_subdivision_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -41519,5 +41490,5 @@
     }
   ],
   "ready_count": 54,
-  "total_pending": 1373
+  "total_pending": 1372
 }

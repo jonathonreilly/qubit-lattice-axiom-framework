@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 210 |
-| **retained_no_go** | 203 |
+| **retained_no_go** | 204 |
 | **retained_bounded** | 776 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1371 |
+| unaudited | 1370 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1208 |
+| `audited_clean` | 1209 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1686 |
+| `unaudited` | 1685 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 782 |
-| `leaf` | 1287 |
+| `medium` | 783 |
+| `leaf` | 1286 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
@@ -808,6 +808,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `magnitude_reads_minimal_record_block_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -11366,6 +11367,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since dim_C(M_2(C))=4 and finite tensor-product dimensions multiply, dim_C(M_2(C)^tensor d)=4^d, so at the bounded parameter d=4 the dimension is 4^4=256 and the reciprocal is 1/256.  _(class `A`)_
 - **chain closes:** True — The theorem closes by basis counting and tensor-product dimension multiplicativity over finite-dimensional complex vector spaces. The only physics-sensitive quantity, d=4, is an explicit bounded parameter rather than an output.
 - **rationale:** The row is a class-A algebraic bookkeeping theorem and does not import PDG values, mass-scale observations, or a physical dimension derivation. The cached runner reports PASS=14, FAIL=0 under SHA f8e6d0d9e6a6b88a48b3cea28cf0b4f73536762df53a0784c240c0dcf71a5e20, including explicit tensor basis/rank checks at d=4. Clean status is bounded by the claim_type: downstream effective status should be retained_bounded, not an unbounded derivation of the lepton scale or d=4.
+- **auditor confidence:** high
+
+### `magnitude_reads_minimal_record_block_2026-06-06`
+
+- **Note:** [`MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-specific no-go: Record axiom + RP two-step positivity fails to force the magnitude readout scale to the minimal positive temporal block L_t=2 rather than the OS-continuum reconstruction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-368ed40bad-magnitude_reads_minimal_reco`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Record supplies no readout context, weighting, normalization, time metric, occupancy rule, or other readout-scale selector, while RP two-step supplies only a minimal positive transfer block; therefore Record plus RP two-step does not select L_t=2 over L_t -> infinity.  _(class `A`)_
+- **chain closes:** True — The restricted packet supplies the Record axiom's explicit selector exclusions and the RP authority's minimal positive two-step block. Their conjunction gives a hostable finite readout if a context is supplied, but no rule choosing L_t=2 over the OS continuum.
+- **rationale:** The accepted Record axiom is correctly used as a boundary premise: it explicitly withholds the selector data needed to choose a readout scale. RP two-step positivity supplies a native minimal positive transfer object, not a magnitude readout rule, and the conditional 8 x 2 = 16 arithmetic is not asserted unconditionally. The no-go discipline gate passes only for the narrowed route; future UV/minimal-block bridge routes remain open and are not ruled out.
 - **auditor confidence:** high
 
 ### `magnitude_temporal_factor_is_count_not_rate_2026-06-06`

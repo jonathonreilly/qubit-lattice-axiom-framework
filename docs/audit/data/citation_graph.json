@@ -46610,10 +46610,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "magnitude_reads_minimal_record_block_2026-06-06"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "post_record_measure_weight_normalization_subdivision_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -90159,17 +90159,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
         "magnitude_reads_minimal_record_block_2026-06-06",
         "fifth_family_radial_note",
         "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
         "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02",
         "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07"
+        "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
+        "post_record_measure_weight_normalization_subdivision_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9cd961a0237b4f560c9acc09d6804f06d3557e065affe510b367b643ac031852",
+      "note_hash": "de27559206e1cfaf2d7c71663a18a8d8be44afa960a1b675e42b12ff9344c96d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

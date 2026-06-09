@@ -1,0 +1,60 @@
+================================================================================================
+xi=1 (c_t=c_s) is INDEPENDENT of {Lattice,Quantum,Record}+emergent-time+RP -- a two-model witness
+================================================================================================
+
+------------------------------------------------------------------------------------------------
+Part A: RP / the positive self-adjoint transfer does NOT force xi=1 (holds for every c_t/c_s)
+------------------------------------------------------------------------------------------------
+  [PASS] (A.0.5) c_t/c_s=0.5: transfer positive (e^-E in (0,1)), H=E/a_tau self-adjoint >=0 for all modes -- RP/spectrum hold  --  E in [0.291,2.300]>0, e^-E in [0.100,0.748] subset (0,1)
+  [PASS] (A.1.0) c_t/c_s=1.0: transfer positive (e^-E in (0,1)), H=E/a_tau self-adjoint >=0 for all modes -- RP/spectrum hold  --  E in [0.206,1.769]>0, e^-E in [0.170,0.814] subset (0,1)
+  [PASS] (A.2.0) c_t/c_s=2.0: transfer positive (e^-E in (0,1)), H=E/a_tau self-adjoint >=0 for all modes -- RP/spectrum hold  --  E in [0.146,1.322]>0, e^-E in [0.267,0.864] subset (0,1)
+  [PASS] (A.5.0) c_t/c_s=5.0: transfer positive (e^-E in (0,1)), H=E/a_tau self-adjoint >=0 for all modes -- RP/spectrum hold  --  E in [0.092,0.871]>0, e^-E in [0.419,0.912] subset (0,1)
+   ... OS1 (reflection positivity) + the spectrum condition H>=0 are INVARIANT under c_t/c_s: they pin the
+   ... FORM (positive self-adjoint transfer, bounded-below H), NOT the dimensionless ratio xi. c_t=c_s is OS0
+   ... (full Euclidean SO(4)/B_4 invariance) = the Lorentz OUTPUT being sought -- invoking it would be circular.
+
+------------------------------------------------------------------------------------------------
+Part B: xi is a DIFFERENT object from the single-clock a_tau (clock=constant ratio; xi=p-dependent)
+------------------------------------------------------------------------------------------------
+  [PASS] (B1) clock rescale a_tau->2 a_tau gives a CONSTANT E(p)-ratio across all modes (spread ~ 0) -- a pure overall conformal factor  --  E-ratio spread under clock rescale = 0.0e+00 (=0); single-clock fixes only the product a_tau*H
+  [PASS] (B2) c_t->2 c_t gives a p-DEPENDENT E(p)-ratio (spread >> 0) -- a genuine reshape of the dispersion, NOT a constant rescale  --  E-ratio spread under xi change = 0.040 >> 0; provably a different object from the clock-rate freedom
+   ... => the a_tau-removable no-go (single_clock_uniqueness_scope_boundary, only a_tau*H fixed) is structurally
+   ... blind to xi: it removes a CONSTANT scale, while xi is a p-DEPENDENT shape. They are different freedoms.
+
+------------------------------------------------------------------------------------------------
+Part C: the 6-NN NO-diagonal causal order is L1 taxicab -- no round L2 cone matches (admits a xi-family)
+------------------------------------------------------------------------------------------------
+  [PASS] (C1) the taxicab front speed differs by direction: axis 1.0, face-diag 0.707, body-diag 0.577 -- NOT a single round (L2) cone  --  axis=1.000, face-diag=0.707, body-diag=0.577; spread=0.423
+  [PASS] (C2) a round L2 cone through the diamond-boundary points demands c_t = 1.0, 1.414, 1.732 simultaneously -- impossible  --  axis=1.000, face-diag=1.414, body-diag=1.732 -> no faithful round-cone embedding
+   ... => the combinatorial 1-tick-1-edge order fixes the reachability-cone SHAPE (the conformal class up to the
+   ... L1 diamond), but admits a 1-parameter xi stretch of the time-vs-space coordinate embedding: it does NOT
+   ... fix the dynamical aperture xi=c_t/c_s. The MIN_TIME_STEP 'conformal class derived' is audited_renaming.
+
+------------------------------------------------------------------------------------------------
+Part D: the INDEPENDENCE WITNESS -- two axiom-faithful models differ ONLY on xi=1
+------------------------------------------------------------------------------------------------
+  [PASS] (D1) BOTH M1(xi=1) and M2(xi=2.5) satisfy every shared retained structure: positive transfer/RP, spectrum H>=0, single-clock a_tau*H, 1-tick-1-edge reachability  --  M1 rp/sc/rc=True/True/True; M2 rp/sc/rc=True/True/True
+  [PASS] (D2) they DIFFER only on xi=1: M1 has c_t=c_s (round cone, v^2=1) and M2 has c_t!=c_s (v^2=0.4!=1) -- M2 violates ONLY the matter-Lorentz output, not any axiom  --  M1 xi=1.00 v^2=1.00; M2 xi=2.50 v^2=0.40
+  [PASS] (D3) INDEPENDENCE (Robinson/Vaught): two faithful models of Sigma satisfy/falsify the sentence 'xi=1' -> neither Sigma|-xi=1 nor Sigma|-not(xi=1) -> xi=1 is INDEPENDENT of the axiom theory  --  the only premise that excludes M2 is c_t=c_s itself (the Lorentz OUTPUT) -> circular -> xi=1 is an irreducible admission
+
+------------------------------------------------------------------------------------------------
+Verdict and honest scope (narration -- not tests)
+------------------------------------------------------------------------------------------------
+   ... VERDICT: xi=1 (c_t=c_s) is INDEPENDENT of {Lattice, Quantum, Record}+emergent-time+RP. It is an
+   ... irreducible Euclidean-kinetic-normalization (OS0) admission, parallel to but NOT derivable from OS1/RP.
+   ... The missing primitive is precisely OS0 (the temporal kinetic coefficient on the same footing as space);
+   ... no axiom supplies it (Lattice gives no metric/cone/4th-axis; Quantum/Record give no dynamics/time-metric;
+   ... the scale primitive has zero dimensionless content; RP and the single-clock product a_tau*H are xi-blind).
+   ... SCOPE: a POSITIVE independence theorem; sharpens the retained anisotropy-gate (which names the premise).
+   ... On the canonical symmetric Z^4 (eta_0=1) surface where the premise holds, |delta_v|<6e-18 is rep-blind/
+   ... all-orders (precomputed) -- so the CONDITIONAL positive result is strong; only this one admission remains.
+   ... Does NOT demote any row, is NOT a framework inconsistency, and does NOT make delta_v=0 unconditional.
+
+================================================================================================
+xi=1 is independence-PROVEN to be an irreducible Euclidean-kinetic-normalization (OS0) admission:
+RP/spectrum/single-clock/causal-order all hold for a whole xi-family (two faithful models M1,M2 differ
+only on xi=1). The realistic landing is positive.retained CONDITIONAL on this named admission, NOT an
+unbounded derivation. Sharpens spatial_cubic_time_anisotropy_gate. Sets no audit status.
+================================================================================================
+TOTAL: PASS=11 FAIL=0
+================================================================================================

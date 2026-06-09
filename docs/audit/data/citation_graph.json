@@ -90169,7 +90169,7 @@
         "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7f1730884bcb57e6b79b3afdb8ce536aa47429b43ca724dd7e3d27da0a7820ed",
+      "note_hash": "54ebbbd81f45615d1bd31719165d686a647f83f50458af8b1eb16992fb131e37",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 786 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1352 |
+| unaudited | 1351 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1224 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1667 |
+| `unaudited` | 1666 |
 
 | claim_type | count |
 |---|---:|
@@ -1366,6 +1366,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_complex_boundary_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5771,6 +5772,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The retained grown row preserves a bounded signed-source response in the fixed-field scout while zero-source and neutral same-point controls reduce to printed zero and the +2 source is approximately linear in the +1 source.  _(class `C`)_
 - **chain closes:** True — The supplied runner actually constructs fields from sources, propagates amplitudes on the grown graph, computes detector centroids, and reproduces the frozen sign, zero-control, and linearity outputs. The cited grown-geometry companion is retained_bounded and is used only to support the narrow retained-row context, not to broaden the result.
 - **rationale:** The load-bearing result is a live numerical computation over the runner-defined grown row, not a printed constant, renaming, or imported external comparator. The zero-source and neutral same-point cancellations are algebraic/numerical controls, while the signed single-source, pair, dipole, and double-source cases are computed by the propagation code. The claim is narrow enough to match the evidence: it does not assert geometry-generic electromagnetism or continuum closure.
+- **auditor confidence:** high
+
+### `fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08`
+
+- **Note:** [`FIXED_GBARE_INTERACTING_EXISTENCE_IR_TARGET_REFRAMING_BOUNDED_NOTE_2026-06-08.md`](../../docs/FIXED_GBARE_INTERACTING_EXISTENCE_IR_TARGET_REFRAMING_BOUNDED_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded reframing from fixed `g_bare=1` / `beta=6` and standard RG endpoint diagnostics to a fixed-lattice IR gap/clustering target, not an existence theorem or continuum-limit proof.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-125601-87f07a5257-fixed_gbare_interacting_exis`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the framework keeps `g_bare=1` fixed and nonzero, it is not taking the standard `g_bare -> 0`, `a -> 0` endpoint, so the live target is fixed-lattice IR gap/clustering at `beta=6` with `Delta_gauge(beta=6)>0` still open.  _(class `A`)_
+- **chain closes:** False — The algebraic reframing closes if fixed `g_bare=1`, `beta=6`, and the standard RG scaling formulas are accepted. In the restricted packet, the `g_bare` authority explicitly leaves a parent re-audit gate open, and the note imports standard two-loop/asymptotic RG methodology rather than closing it internally.
+- **rationale:** The core arithmetic checks independently: `b0=(33-12)/3=7`, `b1=102-16-60=26`, `beta=2*3/1^2=6`, and fixed nonzero `g_bare` is not the `g_bare -> 0` endpoint. However, `G_BARE_DERIVATION_NOTE.md` contains explicit open-parent-gate language, so the fixed-`g_bare` input is not closed by the restricted packet despite the retained-bounded header. The runner's `O(0.3)` two-loop/one-loop ratio diagnostic also appears to omit the conventional `4pi` factor for the standard alpha beta-function normalization; this is diagnostic rather than the main reframing step, but it blocks a clean verdict as written.
+- **open / conditional deps cited:**
+  - `G_BARE_DERIVATION_NOTE.md`
+  - `INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`
 - **auditor confidence:** high
 
 ### `flavor_a1prime_debt_and_data_note_2026-05-30`

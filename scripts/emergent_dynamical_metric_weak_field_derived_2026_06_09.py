@@ -1,44 +1,42 @@
-"""Go after the LAST gravity-sign input: the EMERGENT DYNAMICAL METRIC. With the kinetic-isotropy primitive
-(c_t=c_s) granting the leading-order Lorentz isotropy, the gravity sign G>0 rested on one remaining input:
-does the framework's emergent metric become a DYNAMICAL field (whose fluctuation is the graviton)?
+"""Examine the LAST gravity-sign input: the EMERGENT DYNAMICAL METRIC, at weak field. This runner VERIFIES
+the longitudinal-sector GR structure and REDUCES the weak-field sign to its named links -- it does NOT
+claim an unconditional derivation. (Adversarially reviewed + ledger-checked; over-claims corrected.)
 
-THE KEY INSIGHT: the metric degree of freedom IS the position-dependent record-density. A varying
-record-density n(x) -> a varying local Lieb-Robinson / front speed v_LR(x) -> a varying light cone = a
-curved effective (optical) metric. The kinetic-isotropy primitive c_t=c_s fixes the leading form to be
-isotropic (Minkowski-class); the record-density variation is the curvature. Crucially, the LINEARIZED
-dynamics of this field is the framework's ALREADY-DERIVED weak-field Poisson law (GRAVITY_CLOSURE_FROM_
-WEAK_FIELD_LINEAR_RESPONSE, retained_bounded: L^-1 = G_0 = (-Delta)^-1 -> 1/r).
+THE PICTURE: the framework's emergent-metric program POSITS the metric degree of freedom to be the
+position-dependent record-density n(x): a varying n(x) -> a varying local Lieb-Robinson / front speed
+v_LR(x) -> a varying light cone = a curved effective (optical) metric. The kinetic-isotropy primitive
+c_t=c_s fixes the leading form to be isotropic (Minkowski-class). Given the posit, the differential
+geometry is exact; but the posit itself, the dynamics, and the sign each have a tracked, weaker status.
 
 VERIFIES (exact, sympy + numpy):
-  M1. THE METRIC DOF EXISTS. The record-density field n(x) parameterizes g_00 = -(1+2 Phi(x)) with Phi
-      the weak-field potential (v_LR^2 = 1+2 Phi); with c_t=c_s (primitive) the leading form is the
-      isotropic Minkowski class g = diag(-1,1,1,1). So the framework HAS a dynamical metric field (the
-      record-density), varying in space.
-  M2. IT CURVES. For g = diag(-(1+2 Phi(x)), 1, 1, 1) the linearized Ricci is R_00 = Phi''(x) = (the
-      Laplacian of Phi), NONZERO for any varying record-density -> a genuinely curved geometry. (sympy,
-      exact, linearized in Phi.)
-  M3. GEODESIC DEFLECTION (gravity). The 00-Christoffel Gamma^x_00 = Phi'(x), so a static test particle
-      accelerates d^2 x/dtau^2 = -Phi'(x): toward LOWER Phi (= higher record-density / lower v_LR = the
-      potential well). The record-density curvature gravitates, attractively (consistent with G>0).
-  M4. THE LINEARIZED DYNAMICS IS DERIVED. The field equation R_00 = (source), i.e. Nabla^2 Phi = source,
-      is exactly the framework's RETAINED weak-field Poisson closure (GRAVITY_CLOSURE_FROM_WEAK_FIELD_
-      LINEAR_RESPONSE: the gravitational field is the lattice's linear response, L^-1 = G_0 = (-Delta)^-1,
-      point source -> 1/(4 pi r)). So the weak-field gravitational DYNAMICS of the record-density/metric
-      field is DERIVED, not supplied.
-  M5. VERDICT. At WEAK FIELD -- the regime where the gravity sign and Newtonian gravity live -- the
-      emergent dynamical metric is DERIVED: the DOF (record-density), the isotropic leading form
-      (kinetic-isotropy primitive), the curvature (R_00 = Nabla^2 Phi), and the dynamics (the retained
-      Poisson closure) are all in hand. The single remaining open piece is the FULL NONLINEAR (strong-
-      field) Einstein completion -- the self-gravity loop diverges (GATE_B / POISSON_SELF_GRAVITY_LOOP_V3,
-      retained_no_go) -- a separate, harder, known-open frontier that does NOT affect the weak-field
-      gravity sign or Newtonian gravity.
+  M1. THE POSITED METRIC DOF (not in-hand). The program posits n(x) -> g_00 = -(1+2 Phi(x)) (v_LR^2 =
+      1+2 Phi); c_t=c_s (primitive) fixes the isotropic leading form g = diag(-1,1,1,1). STATUS: the
+      cited EMERGENT_METRIC note is UNAUDITED and states the varying-record-density-curves-geometry step
+      is "named, not built" -- so M1 is the program's POSIT, not a derived input.
+  M2. IT CURVES (verified). For g = diag(-(1+2 Phi(x)), 1, 1, 1) the linearized Ricci is R_00 = Phi''(x)
+      = Nabla^2 Phi, NONZERO for any varying record-density -> a genuinely curved geometry. (Standard GR.)
+  M3. GEODESIC KINEMATICS (verified). Gamma^x_00 = Phi'(x), so a test particle accelerates
+      d^2 x/dtau^2 = -Phi'(x) toward LOWER Phi. KINEMATICS ONLY -- whether matter makes a WELL (Phi<0 ->
+      attraction, the SIGN) is NOT decided here; it is the separate source-positivity + reflection-
+      positivity question (the source-positivity link g_newton_born_as_source_positive is UNAUDITED).
+  M4. THE LINEARIZED DYNAMICS IS THE FRAMEWORK'S WEAK-FIELD POISSON CLOSURE -- CONDITIONALLY. Nabla^2 Phi
+      = source is GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE. STATUS (ledger-checked): audited_renaming,
+      chain_closes=False -- it derives Phi = G_0 rho, G_0=(-Delta)^-1 -> 1/(4 pi r) ONLY AFTER imposing the
+      response identity phi=G_0 rho; the physical source-coupling/response theorem is the flagged residual.
+      The Newtonian 1/r IS the Poisson Green's function (Nabla^2(1/r)=0 for r>0, verified here). So the
+      dynamics is the framework's CONDITIONAL closure, NOT an unconditional derivation.
+  M5. VERDICT (reduction, not closure). In the LONGITUDINAL/Newtonian sector the GR structure is verified
+      (M2, M3); the weak-field gravity sign + Newtonian 1/r REDUCE to the named links {posited DOF M1
+      (unaudited) + conditional closure M4 (audited_renaming) + unaudited source-positivity sign + R1-R3
+      (in review) + kinetic-isotropy primitive}. The TT spin-2 graviton is a SEPARATE sector (W dead for TT;
+      geometric-Regge operator healthy but its dynamics-status open). The NONLINEAR/strong-field Einstein
+      completion is separately open (GATE_B / POISSON_SELF_GRAVITY_LOOP_V3, retained_no_go).
 
-CONCLUSION: the LAST gravity-sign input -- the emergent dynamical metric -- is DERIVED at weak field. So
-the gravity sign G>0 and Newtonian (1/r, attractive) gravity are derived from {R1 massless + R2 Noether
-stress conservation + R3 healthy lambda=1 Regge operator + reflection positivity + kinetic-isotropy
-primitive + the record-density metric DOF + the retained weak-field Poisson dynamics}. The only remaining
-open gravity frontier is the NONLINEAR/strong-field Einstein completion (GATE_B) -- the gravity-sign chain
-is otherwise CLOSED at weak field. No PDG/fitted value.
+CONCLUSION: the LAST gravity-sign input -- the emergent dynamical metric -- is MAPPED at weak field, not
+closed: the longitudinal-sector geometry is standard GR (verified), and the weak-field sign REDUCES to
+exactly the named links above (each individually tracked: M1 posit unaudited, M4 closure audited_renaming,
+sign unaudited, R1-R3 in review) plus the on-main primitive. This is an honest reduction + gap-map, not a
+derivation of the gravity sign. No PDG/fitted value.
 """
 from __future__ import annotations
 import numpy as np
@@ -72,12 +70,13 @@ def main() -> int:
     g = sp.diag(-(1 + 2 * eps * Phi), 1, 1, 1)
     ginv = g.inv()
     leading_isotropic = (g[1, 1] == 1 and g[2, 2] == 1 and g[3, 3] == 1)
-    check("M1 (metric DOF exists, isotropic leading form): the record-density field n(x) parameterizes "
-          "g_00 = -(1+2 Phi(x)); the kinetic-isotropy primitive c_t=c_s fixes the spatial part to the "
-          "isotropic delta_ij (Minkowski leading class). So the framework HAS a dynamical metric field (the "
-          "record-density), varying in space.",
+    check("M1 (POSITED metric DOF, isotropic leading form): the emergent-metric program POSITS the "
+          "record-density field n(x) as the metric DOF (g_00 = -(1+2 Phi(x))); the kinetic-isotropy primitive "
+          "c_t=c_s fixes the spatial part to the isotropic delta_ij (Minkowski leading class). STATUS: the "
+          "cited EMERGENT_METRIC note is UNAUDITED and says the curving step is 'named, not built' -- so this "
+          "is the program's POSIT, not a derived in-hand input. (Checks the metric form is well-posed/isotropic.)",
           leading_isotropic,
-          "g = diag(-(1+2 Phi(x)), 1, 1, 1): isotropic spatial part (c_t=c_s); g_00 carries the record-density Phi(x)")
+          "g = diag(-(1+2 Phi(x)), 1, 1, 1): isotropic spatial part (c_t=c_s); g_00 carries Phi(x). POSIT (unaudited program), not derived")
 
     # ---- M2: it curves -- linearized Ricci R_00 = Phi''(x) ----
     n = 4
@@ -144,47 +143,45 @@ def main() -> int:
     phis = np.array([phi[c + r0, c, c] for r0 in rs])
     slope = float(np.polyfit(np.log(rs.astype(float)), np.log(np.abs(phis)), 1)[0])   # ~ -1 for 1/r
     one_over_r_trend = -1.3 < slope < -0.7
-    check("M4 (linearized dynamics is DERIVED): Nabla^2 Phi = source is the framework's RETAINED weak-field "
-          "Poisson closure (GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE: Phi = G_0 rho, G_0 = (-Delta)^-1 "
-          "the unique linear-response kernel, point source -> 1/(4 pi r), retained_bounded). The Newtonian "
-          "1/r IS the Poisson Green's function: Nabla^2(1/r)=0 for r>0 (verified symbolically); the lattice "
-          "Green's function falls off ~1/r (log-log slope ~ -1, supporting). So the weak-field gravitational "
-          "DYNAMICS of the record-density metric field is DERIVED, not supplied.",
+    check("M4 (linearized dynamics is the CONDITIONAL Poisson closure): Nabla^2 Phi = source is "
+          "GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE. STATUS (ledger-checked): audited_renaming, "
+          "chain_closes=False -- it gives Phi = G_0 rho, G_0=(-Delta)^-1 -> 1/(4 pi r) ONLY AFTER imposing the "
+          "response identity phi=G_0 rho; the physical source-coupling/response theorem is the flagged residual. "
+          "The Newtonian 1/r IS the Poisson Green's function: Nabla^2(1/r)=0 for r>0 (verified symbolically, "
+          "load-bearing here); the lattice Green's function falls off ~1/r (log-log slope ~ -1, supporting). So "
+          "the weak-field dynamics is the framework's CONDITIONAL closure, NOT an unconditional derivation.",
           harmonic,
           f"Nabla^2(1/r) = {lap_inv_r} (=0, harmonic -> Newtonian Green's fn, load-bearing); lattice falloff "
-          f"slope = {slope:.2f} (~ -1, supporting; the rigorous lattice 1/r tail is the retained #06-07 result)")
+          f"slope = {slope:.2f} (~ -1, supporting); #06-07 is audited_renaming/chain_closes=False (conditional)")
 
-    # ---- M5: verdict (this note's NEW piece = the metric DOF; the SIGN/TT are cited/assembled) ----
-    check("M5 (verdict): this note's NEW contribution is the EMERGENT DYNAMICAL METRIC in the LONGITUDINAL / "
-          "Newtonian sector -- DOF (record-density, M1) + isotropic leading form (kinetic-isotropy primitive) + "
-          "curvature (R_00=Nabla^2 Phi, M2) + geodesic kinematics (M3) + the retained Poisson dynamics (M4). "
-          "ASSEMBLED with the (cited) chain -- RP + source-positivity for the attraction SIGN; R1 massless; R2 "
-          "Noether conservation; R3 healthy lambda=1 Regge for the TT spin-2 kinetic term -- this lands the "
-          "WEAK-FIELD gravity sign + Newtonian gravity. SPIN SECTOR (honest): the longitudinal Newtonian Phi "
-          "is exactly the sector the matter generator W couples to (its metric-Hessian is rank-1 longitudinal, "
-          "UNIVERSAL_GR_SCALAR_GENERATOR_TT_KERNEL); the TT spin-2 graviton (radiation) is a SEPARATE sector "
-          "this note does not address (W dead for TT; the geometric-Regge operator is healthy on TT but its "
-          "status as the framework's graviton dynamics is the OPEN spin-2-curvature question) -- the gravity "
-          "sign + Newtonian gravity live entirely in the longitudinal sector. The remaining open gravity "
-          "frontier is the NONLINEAR (strong-field) Einstein completion "
-          "(GATE_B / POISSON_SELF_GRAVITY_LOOP_V3, retained_no_go: the self-gravity loop diverges).",
+    # ---- M5: verdict (reduction + gap-map, not closure) ----
+    check("M5 (verdict -- reduction, not closure): in the LONGITUDINAL/Newtonian sector the GR structure is "
+          "VERIFIED (curvature R_00=Nabla^2 Phi, M2; geodesics M3). The weak-field gravity sign + Newtonian 1/r "
+          "REDUCE to the named links: posited DOF (M1, UNAUDITED program) + conditional Poisson closure (M4, "
+          "audited_renaming) + UNAUDITED source-positivity/RP SIGN + R1-R3 (in review) + kinetic-isotropy "
+          "primitive (on main). SPIN SECTOR: the longitudinal Phi is exactly the sector the matter generator W "
+          "couples to (rank-1 longitudinal Hessian, UNIVERSAL_GR_SCALAR_GENERATOR_TT_KERNEL, audited_clean); the "
+          "TT spin-2 graviton (radiation) is a SEPARATE sector this note does not address (W dead for TT; the "
+          "geometric-Regge operator is healthy on TT but its dynamics-status is the OPEN spin-2-curvature "
+          "question). The NONLINEAR (strong-field) Einstein completion is separately open (GATE_B / "
+          "POISSON_SELF_GRAVITY_LOOP_V3, retained_no_go). This is an honest REDUCTION + gap-map, not a derivation "
+          "of the gravity sign.",
           True,
-          "longitudinal Newtonian metric DOF DERIVED (this note) + cited RP/R1-R3 chain -> weak-field gravity; "
-          "TT spin-2 is R3; only the nonlinear (strong-field) EH completion remains open")
+          "longitudinal GR structure verified; weak-field sign REDUCES to {M1 posit (unaudited) + M4 closure "
+          "(audited_renaming) + unaudited sign + R1-R3 in review + primitive}; TT + nonlinear separately open")
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     print(
-        "VERDICT: the LAST gravity-sign input -- the EMERGENT DYNAMICAL METRIC -- is DERIVED at weak field in\n"
-        "the LONGITUDINAL/Newtonian sector. The metric DOF IS the position-dependent record-density (M1), it\n"
-        "CURVES the geometry (R_00=Nabla^2 Phi, M2), test particles follow the curved geodesics (M3, kinematics),\n"
-        "and its LINEARIZED dynamics IS the framework's RETAINED weak-field Poisson/1/r closure (M4); the\n"
-        "kinetic-isotropy primitive supplies the isotropic leading form. ASSEMBLED with the cited chain (RP +\n"
-        "source-positivity for the attraction SIGN; R1 massless; R2 Noether conservation; R3 healthy lambda=1\n"
-        "Regge for the TT spin-2 kinetic term), the WEAK-FIELD gravity sign G>0 and Newtonian (1/r, attractive)\n"
-        "gravity are derived. SPIN SECTOR (honest): this is the longitudinal sector W couples to; the TT spin-2\n"
-        "graviton is R3's (W dead for TT). The only remaining open gravity frontier is the NONLINEAR/strong-field\n"
-        "Einstein completion (GATE_B, retained_no_go). (Honest: nonlinear EH is genuinely open; this lands the\n"
-        "WEAK-FIELD Newtonian sector + assembles the sign, not the full nonlinear theory or a fresh TT term.)"
+        "VERDICT: the LAST gravity-sign input -- the EMERGENT DYNAMICAL METRIC -- is MAPPED at weak field, not\n"
+        "closed. In the LONGITUDINAL/Newtonian sector the GR structure is VERIFIED: the posited metric DOF (M1)\n"
+        "CURVES the geometry (R_00=Nabla^2 Phi, M2) and test particles follow its geodesics (M3, kinematics).\n"
+        "The weak-field gravity sign + Newtonian 1/r REDUCE to the named links: the POSITED record-density DOF\n"
+        "(M1, UNAUDITED program; curving step 'named not built') + the CONDITIONAL weak-field Poisson closure\n"
+        "(M4, audited_renaming/chain_closes=False) + the UNAUDITED source-positivity/RP SIGN + R1-R3 (in review)\n"
+        "+ the on-main kinetic-isotropy primitive. SPIN SECTOR: this is the longitudinal sector W couples to;\n"
+        "the TT spin-2 graviton is a separate, open sector. The NONLINEAR/strong-field Einstein completion is\n"
+        "separately open (GATE_B, retained_no_go). HONEST: this is a REDUCTION + gap-map (verified GR structure,\n"
+        "each remaining link individually tracked), NOT an unconditional derivation of the gravity sign."
     )
     return 0 if FAIL == 0 else 1
 

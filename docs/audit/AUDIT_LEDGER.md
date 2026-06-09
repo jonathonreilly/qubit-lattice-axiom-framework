@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 798 |
+| **retained_bounded** | 799 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1326 |
+| unaudited | 1325 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1237 |
+| `audited_clean` | 1238 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1641 |
+| `unaudited` | 1640 |
 
 | claim_type | count |
 |---|---:|
@@ -102,17 +102,17 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1386 | 100.44 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 766 | 61.08 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1385 | 100.44 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 765 | 61.08 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 853 | 58.24 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1282 | 52.83 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1281 | 52.82 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 490 | 47.94 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1017 | 44.49 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1198 | 42.73 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1005 | 40.47 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 265 | 39.55 | `unaudited` | unaudited |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1250 | 39.29 | `audited_clean` | **retained** |
-| 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 604 | 39.24 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1249 | 39.29 | `audited_clean` | **retained** |
+| 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 603 | 39.24 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 803 | 38.65 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 694 | 38.44 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 700 | 32.95 | `unaudited` | unaudited |
 | 21 | `minimal_axioms_2026-04-11` | meta | critical | 1115 | 32.62 | `unaudited` | meta |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 697 | 31.45 | `unaudited` | unaudited |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 825 | 31.19 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 824 | 31.19 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.34 | `unaudited` | unaudited |
 | 25 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 274 | 29.60 | `unaudited` | unaudited |
 
@@ -1143,6 +1143,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_propagating_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_radical_geometry_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_retarded_green_corrected_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `source_resolved_retarded_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_self_consistent_generated_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `source_resolved_support_localization_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_transverse_green_corrected_boundary_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -16604,6 +16605,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The corrected live runner directly computes same-site and finite-lag retarded-like centroid shifts on the fixed h=0.25 source-resolved lattice pocket and finds retarded-like shift larger than same-site memory for all four source strengths, with mean ret/same about 1.026.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helpers construct the lattice, fields, propagation, centroid shifts, support metrics, ratios, and exponents directly from code-path computations rather than importing a prior note value or external comparator. The corrected ret/same ratio is computed from ret and same values in the primary runner, so the old helper-main ret/inst label drift is not load-bearing.
 - **rationale:** The supplied runner source genuinely computes the bounded lattice pocket quantities and asserts the finite claims reported in the source note. The quantitative readout is consistent with the displayed rows: ret/same averages to about 1.026, ret-same is positive in all four rows, zero-source fields reduce to free propagation, and the fitted responses are near linear. No cited non-retained authority, external calibrated value, hard-coded contested numerical result, or definition-only substitution is used for the load-bearing step.
+- **auditor confidence:** high
+
+### `source_resolved_retarded_green_pocket_note`
+
+- **Note:** [`SOURCE_RESOLVED_RETARDED_GREEN_POCKET_NOTE.md`](../../docs/SOURCE_RESOLVED_RETARDED_GREEN_POCKET_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed-parameter finite-lag source-resolved Green pocket on the h=0.25, W=3, L=6 exact lattice for the four listed source strengths.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-141800-d9ffea2b8d-source_resolved_retarded_gre`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the compact exact h=0.25, W=3, L=6 lattice with the fixed source cluster and strengths 0.001, 0.002, 0.004, 0.008, the retarded-like finite-lag rule has zero-source reductions, TOWARD retarded rows, approximately linear source-strength exponents, positive ret-same, true ret/same about 1.026, unchanged support fraction, and slightly increased detector N_eff.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helper instantiate the lattice, source cluster, Green fields, same-site memory field, finite-lag retarded-like field, propagation, centroid shifts, and support metrics without importing contested output values. Independent arithmetic from the displayed table confirms the ret/same ratios, ret-same signs, ret/inst ratios, and fitted exponents within the stated rounded bounds.
+- **rationale:** The source claim is narrowly bounded to a fixed compact lattice and fixed update rule, and the runner source genuinely computes the stated quantities rather than printing or matching hard-coded expected rows. The cached stdout is consistent with the runner assertions, and table-level independent checks reproduce ret/same near 1.026, positive ret-same values, and source-strength exponents approximately equal to one. The note does not claim continuum behavior, a full retarded field equation, or support-fraction broadening, so the conclusion follows within the stated bounded scope.
 - **auditor confidence:** high
 
 ### `source_resolved_self_consistent_generated_transfer_note`

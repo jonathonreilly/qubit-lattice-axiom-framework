@@ -37,12 +37,15 @@ reproducible as a finite bounded-support battery:
   exists and runs from current source.
 - [`logs/runner-cache/second_grown_family_battery.txt`](../logs/runner-cache/second_grown_family_battery.txt)
   is fresh and reports
-  `PASS=16 FAIL=0`.
+  `PASS=21 FAIL=0`.
 - The verifier loads fresh ok caches for the sign, distance/impact, and
   complex-action slices listed below.
 - The verifier explicitly checks that each subordinate evidence runner exists
   in current source and that its live SHA matches the SHA pinned in its fresh
   runner cache.
+- The verifier statically imports each subordinate evidence runner module, so
+  the restricted audit packet exposes the current child-runner source rather
+  than only cache text.
 - The verifier explicitly keeps the complex-action support narrow and
   boundary-aware.
 
@@ -56,6 +59,11 @@ Primary packet:
 - [`scripts/second_grown_family_battery.py`](../scripts/second_grown_family_battery.py)
 - [`logs/runner-cache/second_grown_family_battery.txt`](../logs/runner-cache/second_grown_family_battery.txt)
 - [`archive_unlanded/grown-family-missing-artifacts-2026-04-30/SECOND_GROWN_FAMILY_NOTE.md`](../archive_unlanded/grown-family-missing-artifacts-2026-04-30/SECOND_GROWN_FAMILY_NOTE.md)
+
+2026-06-09 source-packet import repair: the primary battery now imports the
+five child runners below and verifies that each imported module path is the
+exact runner whose fresh cache is consumed. The expensive child computations
+remain cache-backed, but the source packet is no longer cache-text-only.
 
 Current evidence slices checked by the battery:
 

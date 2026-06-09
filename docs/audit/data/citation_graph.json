@@ -46614,10 +46614,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_backreaction_iterative_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_backreaction_nonlocal_closure_note"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -90160,16 +90160,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "staggered_backreaction_iterative_note",
         "staggered_backreaction_nonlocal_closure_note",
         "staggered_backreaction_results_2026-04-10",
         "staggered_backreaction_scale_closure_note",
         "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
         "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
-        "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08"
+        "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+        "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dd3f5857f4f8f4fa3fbc8e49eb3f2e006e2be114ae367adba83141b6d2900e80",
+      "note_hash": "499f8600b9129f5fd3547b59226a134d668c1169e6cb2362255054767b85aad8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

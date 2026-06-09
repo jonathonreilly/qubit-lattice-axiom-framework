@@ -1,4 +1,4 @@
-# ADM-2 (Bi-Invariant Gauge-Link Step) Reduces to Global SU(3) Symmetry + an Annealed Regime — Strictly Weaker Than ADM-1
+# ADM-2 Reduces to Global SU(3) Equivariance Plus an Annealed Regime
 
 **Date:** 2026-06-08
 **Type:** narrow theorem (a reduction with a named caveat) — locates ST2's residual
@@ -9,23 +9,31 @@
 are finite-sample SU(3) computations plus the stated compact-group mechanism.
 Authority role: source proposal; audit lane sets status.
 
+> **Correction (2026-06-08, review-loop).** The earlier "ADM-2′ is strictly
+> weaker than ADM-1 / ST2 is more tractable than ST1" reading is withdrawn.
+> It ranked a static symmetry constraint against a dynamical generator premise.
+> The `global ⊂ local` diagnostic below is true as a symmetry comparison, but
+> closure-irrelevant: ADM-2′ still requires an undelivered continuous-time
+> gauge-link dynamics and an annealed mixing regime. The reduction and the
+> quenched/annealed dichotomy stand; the residual ranking does not.
+
 ## Context
 
 PR #3346 (corrected) reduced ST2's gauge **action-form** to **ADM-2** = *the emergent-time
 gauge-link step measure is Ad-invariant (bi-invariant)*, whence the convolution CLT gives
 the heat-kernel action. ADM-2 is a **dynamical** premise, distinct from ST1's **static**
 local-frame-redundancy ADM-1 (which a find-the-escape panel found does not discharge). This
-note asks: does the **retained global SU(3) symmetry** (global `SU(3)` = commutant of the
-observables, `graph_first_su3_integration_note`) reduce ADM-2 to something **weaker and more
-tractable** than ADM-1's **local** gauging?
+note asks what the **retained global SU(3) symmetry** (global `SU(3)` = commutant of the
+observables, `graph_first_su3_integration_note`) reduces in ADM-2, and which dynamical
+residuals remain.
 
 ## Verdict
 
-**Yes — ADM-2 reduces to ADM-2′ (the gauge dynamics is global-SU(3)-equivariant) plus an
-annealed regime, and ADM-2′ is strictly weaker than ADM-1. But this does NOT close ADM-2:**
+ADM-2 reduces to ADM-2′ (the gauge dynamics is global-SU(3)-equivariant) plus an
+annealed regime. This does **not** close ADM-2 and does **not** advance ST2 past ST1:
 in the **quenched** regime (a fixed neighbour background) the single-link step is **not**
-central. So ST2's residual is global-symmetry-shaped (weaker than ST1's) with a named
-timescale caveat — a genuine *reduction*, not a discharge.
+central, and ADM-2′ still requires a supplied continuous-time gauge-link dynamics.
+The result is a genuine *reduction*, not a discharge or residual-ranking theorem.
 
 ## What is shown (exact / computed — runner `PASS=11 FAIL=0`)
 
@@ -53,11 +61,11 @@ timescale caveat — a genuine *reduction*, not a discharge.
    external color field — explicit symmetry breaking) is **not** central even annealed
    (nonscalar-dev `0.34`). So the global symmetry is genuinely required.
 
-5. **ADM-2′ is strictly weaker than ADM-1 (Part 5).** On the hopping contraction `M=δ_ij=I`,
+5. **Global-vs-local diagnostic (Part 5).** On the hopping contraction `M=δ_ij=I`,
    a **global** rotation is invariant (`‖g†Mg−M‖=0`) while a **local** one is not
-   (`‖g_x†Mg_y−M‖≈1.55`). ADM-2′ invokes only the **global** symmetry; ADM-1 needs the
-   **local** one. Since `ADM-1 ⟹ ADM-2′` but not conversely, **ST2's residual (ADM-2′) is
-   strictly weaker than ST1's (ADM-1)** — global ⊂ local.
+   (`‖g_x†Mg_y−M‖≈1.55`). This verifies the symmetry inclusion `global ⊂ local`,
+   but it is **not** a closure ranking between ADM-2′ and ADM-1. ADM-2′ remains a
+   dynamical-generator premise plus an annealed-regime premise.
 
 ## What this reduces to, and what stays open
 
@@ -71,17 +79,21 @@ timescale caveat — a genuine *reduction*, not a discharge.
   background) per-step. Whether the emergent-time gauge dynamics is annealed (neighbours
   fluctuate equivariantly on the step timescale) is a genuine open dynamical question — the
   quenched alternative is a wall.
+- **No residual ranking against ST1 is established.** The surviving ST2 wall is still an
+  undelivered continuous-time gauge-link dynamics, not merely a static global symmetry fact.
 
 ## What this does NOT claim (boundary)
 
 - **Does NOT close ADM-2.** It reduces ADM-2 to ADM-2′ + the annealed regime, both named open.
 - **Does NOT claim the quenched single-link step is central** — it explicitly is not (Part 2).
 - **Does NOT close ADM-1** (the static local-frame gate; the panel's `forced_finding` stands).
+- **Does NOT claim ST2 is ahead of ST1** or that ADM-2′ is a strictly weaker residual in the
+  sense relevant to closure.
 - No new axiom or import: global `SU(3)` = retained commutant; the convolution-CLT
   consequence is PR #3346 / standard math; the staple force and Haar average are standard.
-- The reading "ST2 is more tractable than ST1 because ADM-2′ is weaker" is an
-  interpretation, not a status result. This note establishes only the reduction
-  mechanism plus the quenched/annealed dichotomy.
+- The withdrawn reading "ST2 is more tractable than ST1 because ADM-2′ is weaker" is not a
+  status result. This note establishes only the reduction mechanism plus the
+  quenched/annealed dichotomy.
 
 ## Cross-references
 

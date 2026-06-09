@@ -4,8 +4,9 @@
 This runner directly uses SU(3) fundamental matrices. It checks that a
 global-conjugation-equivariant link drift plus isotropic noise gives a central
 increment in the free and annealed regimes, while a fixed quenched staple or an
-external color field breaks centrality. It also checks that the global symmetry
-condition is weaker than local frame redundancy on the hopping contraction.
+external color field breaks centrality. It also checks the global-vs-local
+symmetry diagnostic on the hopping contraction, without treating that diagnostic
+as a closure ranking.
 
 Scope: finite-dimensional support for the ADM-2 reduction. It does not close the
 open dynamical premise that the physical gauge-link step is annealed/equivariant.
@@ -172,7 +173,7 @@ def main() -> int:
     )
 
     print("=" * 78)
-    print("Part 5  Global symmetry is weaker than local frame redundancy")
+    print("Part 5  Global-vs-local symmetry diagnostic (not a closure ranking)")
     print("=" * 78)
     M = I3
     gA = haar_su3()
@@ -190,9 +191,9 @@ def main() -> int:
         f"{local_dev:.3f}",
     )
     check(
-        "ADM-2' invokes global equivariance only, so it is weaker than ADM-1 local gauging",
+        "global symmetry inclusion holds, but does not rank ADM-2' ahead of ADM-1",
         global_dev < 1e-12 < local_dev,
-        "global condition is a subset of the local-gauge condition",
+        "static global-vs-local comparison only; dynamical premise remains open",
     )
 
     print("=" * 78)
@@ -200,8 +201,8 @@ def main() -> int:
     print("=" * 78)
     print(
         "SCOPE: finite SU(3) support for reducing ADM-2 to global equivariance plus "
-        "an annealed-regime premise. Quenched single-link centrality is false, so "
-        "ADM-2 is not closed here."
+        "an annealed-regime premise. Quenched single-link centrality is false, "
+        "and the global-vs-local diagnostic is not a closure ranking."
     )
     if FAIL:
         raise SystemExit(1)

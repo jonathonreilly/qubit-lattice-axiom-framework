@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_adm2_global_su3_symmetry_reduction_2026_06_08.py
-runner_sha256: f9235e6f20bb444fe48ac54da61368869f94addf12acacd757bfd34416287a8f
+runner_sha256: e74c5ec66f0d899a1a4ebc685c3143da2a05a1f6a90d3785f81eb03f0b836fd1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.07
+elapsed_sec: 1.01
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -30,15 +30,15 @@ Part 4  Non-equivariant dynamics breaks centrality even after annealing
 ==============================================================================
   [PASS] fixed external color field is not central even in the annealed sample  (nonscalar-dev = 0.3384)
 ==============================================================================
-Part 5  Global symmetry is weaker than local frame redundancy
+Part 5  Global-vs-local symmetry diagnostic (not a closure ranking)
 ==============================================================================
   [PASS] global rotation leaves the hopping contraction M=I invariant  (8.88e-16)
   [PASS] independent local rotations do not leave the same contraction invariant  (1.550)
-  [PASS] ADM-2' invokes global equivariance only, so it is weaker than ADM-1 local gauging  (global condition is a subset of the local-gauge condition)
+  [PASS] global symmetry inclusion holds, but does not rank ADM-2' ahead of ADM-1  (static global-vs-local comparison only; dynamical premise remains open)
 ==============================================================================
 TOTAL: PASS=11 FAIL=0
 ==============================================================================
-SCOPE: finite SU(3) support for reducing ADM-2 to global equivariance plus an annealed-regime premise. Quenched single-link centrality is false, so ADM-2 is not closed here.
+SCOPE: finite SU(3) support for reducing ADM-2 to global equivariance plus an annealed-regime premise. Quenched single-link centrality is false, and the global-vs-local diagnostic is not a closure ranking.
 
 ----- stderr -----
 

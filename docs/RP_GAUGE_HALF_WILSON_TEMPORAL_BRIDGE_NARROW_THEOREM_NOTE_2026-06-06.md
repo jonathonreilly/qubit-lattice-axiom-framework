@@ -1,4 +1,4 @@
-# RP Gauge-Half Bridge: Wilson Plaquette Temporal-Gauge Three-Factor Form (Sign-Corrected)
+# RP Gauge-Half Bridge: Abelian Wilson Plaquette Temporal-Gauge Three-Factor Form (Sign-Corrected)
 
 **Date:** 2026-06-06
 **Claim type:** bounded_theorem
@@ -10,7 +10,7 @@ pipeline after independent review.
 
 ## Summary
 
-This supplies an audit-ready **gauge-half (bosonic) Factor 3** packet for the three-factor
+This supplies an audit-ready **abelian gauge-half (bosonic) Factor 3** packet for the three-factor
 reflection-positivity reduction in
 [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 (the parent reflection-positivity row whose intended conditional gap is this
@@ -18,9 +18,19 @@ gauge-half bridge). It instantiates the **retained** abstract gauge-half norm-sq
 identity
 [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md)
 (G1–G3: `⟨Θ(F)·F⟩ = ‖ψ²F‖² ≥ 0`) on the Wilson plaquette in temporal gauge,
-and certifies the finite reflected OS-Gram reduction on the stated tested
-surfaces. It does not change the parent row's audit status; an independent
-audit decides whether this packet discharges the parent conditional gap.
+and certifies the finite reflected OS-Gram reduction on the exact abelian
+`Z_N`/`U(1)` surfaces. It does not change the parent row's audit status; an
+independent audit decides whether this packet discharges the parent conditional
+gap.
+
+The 2026-06-09 repair deliberately removes the earlier nonabelian W2/W3
+load-bearing claim. For nonabelian groups, a class-character coefficient check
+does not reconstruct the plane kernel as
+`χ_a(U_+) conj(χ_a(U_-))`; the correct Peter-Weyl expansion uses matrix
+coefficients, or else one must explicitly project to a class-function kernel and
+audit that normalization. The runner now exposes the SU(2) first-order mismatch
+at `g=h=iσ_x`, so the `SU(2)`/`SU(3)` probes below are kept only as diagnostics
+and future-work boundary data, not as part of W2/W3.
 
 It **corrects and supersedes** the prior
 [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
@@ -52,7 +62,8 @@ coupling is the retained
 the straddling plane coupling, which is reflection-plane-symmetric
 (`Re Tr V = Re Tr V^†`).
 
-**(W2) Positive character kernel on certified surfaces.** The plane weight expands in class
+**(W2) Positive abelian character kernel on certified surfaces.** On the
+abelian `Z_N` and `U(1)` surfaces the plane weight expands in one-dimensional
 characters,
 ```text
 exp((β/N) Re Tr V) = Σ_a c_a(β) · χ_a(U_+) conj(χ_a(U_-)) / d_a ,
@@ -61,14 +72,15 @@ with nonnegative coefficients on the certified surfaces for the standard sign:
 - `Z_N` (N=2,3,4,5): exact discrete-Fourier coefficients of `exp(β cos·)`, all ≥ 0;
 - `U(1)`: `c_n = I_n(β) ≥ 0`, proved from the **manifestly non-negative power
   series** `I_n(β)=Σ_k (β/2)^{2k+n}/(k!(k+n)!)` (no angular grid);
-- `SU(2)`: `c_j = 2(j+1) I_{j+1}(β)/β > 0` (closed form, Peter–Weyl);
+- `SU(2)`: `c_j = 2(j+1) I_{j+1}(β)/β > 0` remains a coefficient
+  diagnostic only; it is **not** used as a W2/W3 reconstruction theorem here;
 - `SU(3)`: Weyl-integration over the maximal torus corroborates `c_λ(β) ≥ 0`
   for the trivial/fundamental/adjoint reps across a β grid. This is a
   non-authority cross-check, not an all-irrep `SU(3)` coefficient theorem.
 
 **(W3) Reflected OS-Gram PSD when the needed coefficients are certified.** For
-a finite positive-half (`A_+^(2)`) basis whose plane coefficients are certified
-nonnegative, the reflected Gram factorizes as
+a finite positive-half (`A_+^(2)`) abelian character basis whose plane
+coefficients are certified nonnegative, the reflected Gram factorizes as
 ```text
 G_{IJ} = ⟨Θ(F_I)·F_J⟩ = (W diag(c) W^†)_{IJ},
 ```
@@ -76,20 +88,26 @@ so `c_a ≥ 0 ⇒ G ⪰ 0`. With the **wrong** sign (`S_0 = +β Re Tr`) the kern
 `c_1 < 0` and `G` is **not** PSD — the explicit control in the runner confirms
 the construction has teeth (it is not a constant-printer).
 
-By G1–G3 applied to `(X, μ, Θ, S_+)` = (Wilson links, Haar, temporal reflection,
-positive-half Wilson action), the gauge-half reflected expectation is
+For nonabelian groups this note makes no W3 claim from product characters.
+The correct closure must supply either the full matrix-coefficient Peter-Weyl
+kernel or an explicitly projected class-function kernel with a reconstruction
+and Gram-normalization check.
+
+By G1–G3 applied to `(X, μ, Θ, S_+)` = (abelian Wilson links, Haar, temporal
+reflection, positive-half Wilson action), the gauge-half reflected expectation is
 `⟨Θ(F)·F⟩ = ‖ψ²F‖² ≥ 0` on the certified surface. This is the proposed missing
 Factor 3 packet; it is ready for independent re-audit, not a status promotion.
 
 ## What this claims / does NOT claim
 
-- **Claims:** W1–W3 on the finite factorized surfaces whose needed plane
-  coefficients are certified nonnegative; exact for `Z_N`, `U(1)`, and `SU(2)`;
-  `SU(3)` trivial/fundamental/adjoint checks are corroborative only.
+- **Claims:** W1–W3 on the finite factorized **abelian** surfaces whose needed
+  plane coefficients are certified nonnegative; exact for `Z_N` and `U(1)`.
+  `SU(2)` and `SU(3)` checks are diagnostic/non-load-bearing boundary data only.
 - **Does NOT claim:** the full fermion+gauge **integrated** RP, the continuum
   Osterwalder reconstruction, or anything beyond the bosonic Factor 3 on the
   finite surface. Does not derive the Wilson action itself (admitted surface).
-  Does not prove all `SU(3)` character coefficients, close the parent row, or
+  Does not claim a nonabelian W2/W3 reconstruction from product characters;
+  does not prove all `SU(3)` character coefficients, close the parent row, or
   force any coupling value. No new axiom/import; no audit-status promotion.
   Osterwalder–Seiler (1978) / Montvay–Münster (1994) are **comparators only**.
 
@@ -114,10 +132,11 @@ Factor 3 packet; it is ready for independent re-audit, not a status promotion.
 
 Runner
 [`scripts/frontier_rp_gauge_half_wilson_temporal_bridge.py`](../scripts/frontier_rp_gauge_half_wilson_temporal_bridge.py)
-(`PASS = 30, FAIL = 0`): reflection split + plane-symmetry of `S_0`; standard
+(`PASS = 31, FAIL = 0`): reflection split + plane-symmetry of `S_0`; standard
 sign `exp(-S_0)=exp(+(β/N)Re Tr)`; `Z_N` (N=2..5) exact `c_a ≥ 0` and Gram PSD;
 `U(1)` `I_n(β) ≥ 0` from the non-negative series + diagonal Gram PSD; `SU(2)`
-`c_j = 2(j+1)I_{j+1}/β > 0` + Gram PSD; `SU(3)` Weyl-quadrature `c_λ ≥ 0`
+coefficient-positivity diagnostic plus the explicit `g=h=iσ_x` first-order
+product-character mismatch guard; `SU(3)` Weyl-quadrature `c_λ ≥ 0`
 (triv/fund/adj across β, corroborative only); **wrong-sign control** (`Z_2`, `U(1)`) gives `c < 0`
 (non-PSD), confirming the construction is genuine.
 

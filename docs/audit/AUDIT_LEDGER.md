@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 209 |
+| **retained** | 210 |
 | **retained_no_go** | 203 |
 | **retained_bounded** | 771 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1381 |
+| unaudited | 1380 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1202 |
+| `audited_clean` | 1203 |
 | `audited_conditional` | 16 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1696 |
+| `unaudited` | 1695 |
 
 | claim_type | count |
 |---|---:|
@@ -114,13 +114,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 803 | 38.65 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 694 | 38.44 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
-| 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 905 | 34.82 | `audited_clean` | **retained_bounded** |
+| 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 904 | 34.82 | `audited_clean` | **retained_bounded** |
 | 16 | `three_generation_structure_note` | bounded_theorem | critical | 867 | 34.76 | `audited_clean` | **retained_bounded** |
 | 17 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 277 | 34.62 | `unaudited` | unaudited |
 | 18 | `cpt_exact_note` | positive_theorem | critical | 1133 | 34.15 | `audited_clean` | **retained** |
 | 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 700 | 32.95 | `unaudited` | unaudited |
 | 20 | `minimal_axioms_2026-04-11` | meta | critical | 1115 | 32.62 | `unaudited` | meta |
-| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1057 | 32.05 | `audited_clean` | **retained_bounded** |
+| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1056 | 32.05 | `audited_clean` | **retained_bounded** |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 697 | 31.45 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 824 | 31.19 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.34 | `unaudited` | unaudited |
@@ -534,6 +534,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -7287,6 +7288,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Using the standard pi / 16 half-angle radical identities, the full three-sample matrix on the named first symmetric witness sector is explicit in radicals, and the inverse reconstruction map is an exact algebraic map.  _(class `A`)_
 - **chain closes:** True — Direct SU(3) character evaluation at the three named holonomies gives the displayed F entries, and the adjugate formula gives the displayed inverse with Delta=det(F) nonzero. The note explicitly excludes evaluation of Z_6^env(W_A), Z_6^env(W_B), and Z_6^env(W_C), so the missing beta-side physical evaluation is not part of the audited scope.
 - **rationale:** The load-bearing work is finite algebra over the already named sample holonomies and standard character identities, not a numerical fit or a definitional relabeling. Independent checking of the displayed radicals verifies the entries, c>0, e<0, and the inverse formula with Delta=det(F). The runner source performs substantive finite character and linear-algebra checks, while its text-reading support checks are not needed for the scoped radical reconstruction closure.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Given the retained parent inputs Z^loc, F, and the first symmetric retained cone C with coordinate test F^(-1)Z >= 0, the adjoint-only one-parameter repair has unique minimum r_min = -a^loc_(1,1), yielding a^min and Z^min on W_A, W_B, W_C; no full beta=6 environment realization is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-113644-60eb53ec2b-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Along a(t) = (a^loc_(0,0), a^loc_(1,0), a^loc_(1,1) + t), cone membership is equivalent to t >= -a^loc_(1,1), so t = -a^loc_(1,1) is the unique minimal adjoint-only positive repair.  _(class `A`)_
+- **chain closes:** True — The cited parent authority is retained_no_go and supplies the required local triple, radical reconstruction map, and cone-membership coordinate test. From those inputs, the half-line inequality and the displayed a^min and Z^min values follow by direct algebra, with no additional physical bridge required at this scope.
+- **rationale:** The load-bearing step is an algebraic closure over retained-grade inputs, not a first-principles recomputation claim. I independently checked the displayed radical matrix route using the cited Z^loc values: it gives a^loc = (0.349606952458405..., 0.09339384931083795..., -0.03190961277002442...), r_min = 0.03190961277002442..., and Z^min = (0.1351652795620484..., 0.3740128800091385..., 0.5438438585441972...). The runner's hard-coded reference comparisons are therefore not the sole support, and its computed signs and half-line scan match the theorem. The source note's caveats about full beta=6 environment/PF closure are outside the audited claim scope.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`

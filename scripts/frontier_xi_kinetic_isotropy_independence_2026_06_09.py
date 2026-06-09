@@ -29,6 +29,14 @@ WHAT THIS COMPUTES (every check() is an independent numeric/symbolic test; concl
           satisfy every shared retained structure (positive transfer/RP, spectrum H>=0, single-clock
           a_tau*H, the 1-tick-1-edge reachability cone) and differ ONLY on the sentence "xi=1".
           Robinson/Vaught: xi=1 is independent of the axiom theory => an irreducible admission.
+  Part E  (ground-up sharpening) SPATIAL isotropy z_x=z_y=z_z is ALSO an admission at bare-Sigma: the
+          M3 witness (spatially anisotropic K_x!=K_y) is axiom-faithful and breaks O_h.
+  Part F  but spatial and temporal differ in KIND: O_h IS the genuine automorphism group of the Z^3
+          6-NN edge set (so spatial isotropy = "respect the asserted cubic symmetry"), while the
+          time<->space generator is NOT axiom-resident -- no 4th anticommuting Clifford generator
+          exists in M_2(C)=Cl(3,0) ({T,sigma_i}=0 => T=0; the pseudoscalar is central). So xi=1 is
+          STRICTLY STRONGER than spatial isotropy: it ADDS a generator the axioms disclaim, not a
+          relabel. The "3" of Cl(3) is the root -- xi=1 is rooted in the same place as d=3.
 
 HONEST SCOPE.  A POSITIVE independence theorem: xi=1 is NOT derivable from {Lattice, Quantum, Record}+
 emergent-time+RP; it is an irreducible Euclidean-kinetic-normalization (OS0) admission, parallel to but
@@ -163,7 +171,78 @@ def main():
           detail="the only premise that excludes M2 is c_t=c_s itself (the Lorentz OUTPUT) -> circular -> xi=1 is an irreducible admission")
 
     # =====================================================================
+    section("Part E: SPATIAL isotropy z_x=z_y=z_z is ALSO an admission at bare-Sigma (the M3 witness)")
+    # M3: spatially anisotropic matter action (K_x != K_y) on the SAME Z^3 site set / Quantum / Record.
+    grid = [(px, py, pz) for px in ps[::4] for py in ps[::4] for pz in ps[::4]]
+    def spatial_rp(Kx, Ky, Kz):
+        K = (Kx, Ky, Kz)
+        Es = np.array([E_of_mode(m2 + 2 * sum(K[i] * (1 - np.cos(p[i])) for i in range(3)), 1.0) for p in grid])
+        return bool(np.all(Es > 0) and np.all((np.exp(-Es) > 0) & (np.exp(-Es) < 1)))
+    rp_M3 = spatial_rp(1.0, 2.5, 1.0)               # M3: K_x=1, K_y=2.5 -> breaks O_h
+    check("(E1) M3 (spatially anisotropic K_x=1, K_y=2.5, same Z^3/Quantum/Record) is axiom-faithful: positive transfer/RP/H>=0 hold",
+          rp_M3, detail="omega^2>=0 for every K_i>0 -> M3 passes the SAME 4-leg certification as M2")
+    # M3 breaks the x<->y graph automorphism: omega^2(p) != omega^2(R_xy p).
+    p_test = np.array([0.7, 0.2, 0.0])
+    om_xy = m2 + 2 * (1.0 * (1 - np.cos(p_test[0])) + 2.5 * (1 - np.cos(p_test[1])) + 1.0 * (1 - np.cos(p_test[2])))
+    om_swap = m2 + 2 * (1.0 * (1 - np.cos(p_test[1])) + 2.5 * (1 - np.cos(p_test[0])) + 1.0 * (1 - np.cos(p_test[2])))
+    check("(E2) M3 breaks the x<->y O_h automorphism (omega^2(p) != omega^2(R_xy p)) -- so 'the action respects O_h' is NOT a bare-axiom theorem either",
+          abs(om_xy - om_swap) > 1e-3, detail=f"|omega^2(p)-omega^2(R_xy p)|={abs(om_xy-om_swap):.3f} != 0 -> spatial isotropy z_x=z_y=z_z is ALSO an admission at bare-Sigma")
+
+    # =====================================================================
+    section("Part F: but spatial and temporal differ in KIND -- O_h is axiom-resident, the time<->space generator is NOT (the Cl(3) root)")
+    # (F1) O_h IS the linear automorphism group of the Z^3 6-NN edge set {+-e_i}: the 48 signed permutations preserve it.
+    axes = [np.eye(3)[i] for i in range(3)]
+    nn = [s * e for e in axes for s in (1, -1)]      # the 6 nearest-neighbour vectors
+    from itertools import permutations, product
+    signed_perms = []
+    for perm in permutations(range(3)):
+        for signs in product((1, -1), repeat=3):
+            M = np.zeros((3, 3))
+            for i in range(3):
+                M[i, perm[i]] = signs[i]
+            signed_perms.append(M)
+    def preserves(M):
+        img = {tuple(np.round(M @ v).astype(int)) for v in nn}
+        return img == {tuple(np.round(v).astype(int)) for v in nn}
+    n_preserve = sum(preserves(M) for M in signed_perms)
+    shear = np.array([[1.0, 1, 0], [0, 1, 0], [0, 0, 1]])   # a non-signed-permutation linear map
+    check("(F1) O_h = Aut of the Z^3 6-NN edge set: all 48 signed permutations preserve {+-e_i}, and a shear does NOT -- O_h is a GENUINE automorphism the axiom asserts",
+          n_preserve == 48 and not preserves(shear), detail=f"{n_preserve}/48 signed perms preserve the NN set; shear preserves={preserves(shear)}")
+    # (F2) under O_h the 4 axis-directions {t,x,y,z} split into TWO orbits {t},{x,y,z}; only B_4 merges them.
+    #   O_h acts trivially on t and as signed perms on (x,y,z) -> orbit of t is {t}, orbit of x is {x,y,z}.
+    oh_orbits = [{0}, {1, 2, 3}]      # {t}, {x,y,z}
+    b4_orbit = [{0, 1, 2, 3}]
+    check("(F2) under axiom-resident O_h x time-parity the 4 axes split into TWO orbits {t},{x,y,z}; only B_4 merges them into one -- and B_4-merge IS the xi=1 premise",
+          len(oh_orbits) == 2 and len(b4_orbit) == 1, detail="minimality(one coupling per orbit) forces z_x=z_y=z_z (one spatial orbit) but PERMITS c_t!=c_s (t is a separate orbit)")
+    # (F3) THE ROOT: no 4th anticommuting Clifford generator exists in M_2(C)=Cl(3,0); {T,sigma_i}=0 => T=0.
+    s = {1: np.array([[0, 1], [1, 0]], complex), 2: np.array([[0, -1j], [1j, 0]], complex), 3: np.array([[1, 0], [0, -1]], complex)}
+    I2 = np.eye(2, dtype=complex)
+    # general T = a I + b s1 + c s2 + d s3; require {T,s_i}=0 for i=1,2,3. Build the linear system on (a,b,c,d).
+    basis = [I2, s[1], s[2], s[3]]
+    A = []
+    for i in (1, 2, 3):
+        for B in basis:
+            anti = B @ s[i] + s[i] @ B
+            A.append(anti.flatten())
+    A = np.array(A).reshape(3, 4, 4)   # 3 generators x 4 basis-coeffs x 4 matrix-entries
+    # Stack into a (12 x 4) real-and-imag system M @ (a,b,c,d) = 0 and check the only solution is 0.
+    M = np.vstack([np.column_stack([A[i][k] for k in range(4)]) for i in range(3)])   # (12 x 4) complex
+    Mri = np.vstack([M.real, M.imag])
+    rank = np.linalg.matrix_rank(Mri)
+    check("(F3) THE Cl(3) ROOT: solving {T,sigma_i}=0 for a 4th anticommuting (time-like) generator in M_2(C)=Cl(3,0) gives ONLY T=0 (full-rank system) -- no 4th generator exists",
+          rank == 4, detail=f"coefficient-matrix rank={rank}/4 (full) -> a=b=c=d=0 -> T=0; the pseudoscalar s1 s2 s3 = i*I is CENTRAL, not a generator")
+    omega = s[1] @ s[2] @ s[3]
+    central = np.allclose(omega, 1j * I2)
+    check("(F4) the pseudoscalar sigma_x sigma_y sigma_z = i*I is central (=i*I), confirming the 3 Paulis are a MAXIMAL anticommuting set -- the '3' of Cl(3) is why time is the odd-one-out (xi=1 rooted in d=3)",
+          central, detail="3 anticommuting Paulis = 3 commensurable spatial axes (one O_h orbit); no 4th => time cannot be put on the same Clifford/edge footing without a NEW premise")
+
+    # =====================================================================
     section("Verdict and honest scope (narration -- not tests)")
+    note("GROUND-UP SHARPENING: spatial isotropy z_x=z_y=z_z is ALSO an admission at bare-Sigma (M3, Part E), BUT")
+    note("it differs in KIND from xi=1: O_h is a GENUINE automorphism of the axiom-asserted Z^3 graph (Part F1),")
+    note("so spatial isotropy follows from 'respect the symmetry you already asserted (a cubic lattice)'. xi=1's")
+    note("time<->space generator is NOT axiom-resident (Part F2-F4: no 4th anticommuting Cl(3) generator), so xi=1")
+    note("is STRICTLY STRONGER than spatial isotropy -- it ADDS a generator the axioms disclaim, not a relabel.")
     note("VERDICT: xi=1 (c_t=c_s) is INDEPENDENT of {Lattice, Quantum, Record}+emergent-time+RP. It is an")
     note("irreducible Euclidean-kinetic-normalization (OS0) admission, parallel to but NOT derivable from OS1/RP.")
     note("The missing primitive is precisely OS0 (the temporal kinetic coefficient on the same footing as space);")

@@ -27,7 +27,7 @@ normalization parallel to but not a consequence of OS1 (reflection positivity).
 
 This sharpens the anisotropy-gate from *"names the premise"* to *"the premise is axiom-independent."*
 
-## The witness (exact scope of the runner, 11/11)
+## The witness (exact scope of the runner, 17/17)
 
 Let `Σ = {Lattice (Z³, 6-NN, no diagonals), Quantum (M₂(ℂ) per site), Record (durable timeless
 scalar)}` + emergent time via a positive self-adjoint transfer `T` (Stone). The free Euclidean
@@ -79,6 +79,40 @@ temporal kinetic coefficient on the same footing as the three spatial ones — e
 bridge that derives the record/update tick as the physical time coordinate (a finite temporal lattice
 with a temporal Brillouin zone), not merely a continuous Stone parameter sampled by `Tⁿ`. The
 independence witness shows this primitive is not a consequence of the current axioms.
+
+## Ground-up sharpening: spatial isotropy is *also* an admission, but ξ=1 is strictly stronger (the Cl(3) root)
+
+A natural objection is that the matter spatial isotropy `z_x = z_y = z_z` is "axiom-derived for
+free," making `c_t = c_s` look like the same kind of structural fact extended to a 4th axis. A
+ground-up re-examination (runner Parts E–F) shows the picture is subtler, and the difference is
+load-bearing:
+
+- **(E) Spatial isotropy is *also* an admission at the bare-axiom level.** The witness **M3** — a
+  spatially anisotropic action (`K_x ≠ K_y`) on the *same* `Z³` / Quantum / Record — is axiom-faithful
+  (positive transfer, spectrum, RP all hold) and breaks O_h. So "the matter action respects O_h" is
+  *not* a theorem of the three bare axioms either; it is a covariance premise, exactly parallel to the
+  ξ=1 admission.
+- **(F) But the two premises differ in *kind*, not just degree.** O_h is the *genuine* automorphism
+  group of the `Z³` 6-NN edge set (all 48 signed permutations preserve `{±e_i}`; a shear does not) — a
+  symmetry the Lattice axiom *asserts* by fixing a **cubic** (not rectangular) lattice. So spatial
+  isotropy follows from "respect the symmetry you already asserted." The ξ=1 generator (the space↔time
+  swap, the B₄ leg beyond O_h) is **not** an automorphism of any axiom object: under axiom-resident
+  O_h × time-parity the four axes split into **two** orbits `{t}` and `{x,y,z}`, and only B₄ merges
+  them — which *is* the ξ=1 premise.
+- **The root (decisive test).** No 4th anticommuting time-like Clifford generator exists in
+  `M₂(ℂ) = Cl(3,0)`: solving `{T, σ_i} = 0` for all three Paulis gives only `T = 0` (the coefficient
+  system is full rank), and the pseudoscalar `σ_x σ_y σ_z = i·I` is **central**, not a generator. The
+  **"3" of Cl(3)** — three anticommuting Paulis = three commensurable spatial axes, one O_h orbit — is
+  exactly why time is structurally the odd-one-out. **ξ=1 is rooted in the same place as the framework's
+  d = 3.**
+
+So `ξ = 1` is **strictly stronger** than spatial isotropy: spatial isotropy *respects* a generator the
+axioms assert (O_h ⊂ Aut(Z³)); ξ=1 *adds* a generator the axioms disclaim (the temporal B₄ leg, absent
+because Cl(3) has no 4th anticommuting generator). Cubic→hypercubic is therefore **not a relabel** — it
+posits a metrically-commensurable temporal axis the substrate does not host. Dimension count: the
+bare-Σ kinetic form has 3 dimensionless ratios; granting axiom-resident O_h covariance removes 2
+(leaving ξ); the temporal B₄ generator removes the last (→ full SO(4)). The lone residual after
+axiom-resident covariance is **exactly one number, ξ**, needing the one generator the axioms lack.
 
 ## Honest scope
 

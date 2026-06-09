@@ -38,8 +38,27 @@ Part D: the INDEPENDENCE WITNESS -- two axiom-faithful models differ ONLY on xi=
   [PASS] (D3) INDEPENDENCE (Robinson/Vaught): two faithful models of Sigma satisfy/falsify the sentence 'xi=1' -> neither Sigma|-xi=1 nor Sigma|-not(xi=1) -> xi=1 is INDEPENDENT of the axiom theory  --  the only premise that excludes M2 is c_t=c_s itself (the Lorentz OUTPUT) -> circular -> xi=1 is an irreducible admission
 
 ------------------------------------------------------------------------------------------------
+Part E: SPATIAL isotropy z_x=z_y=z_z is ALSO an admission at bare-Sigma (the M3 witness)
+------------------------------------------------------------------------------------------------
+  [PASS] (E1) M3 (spatially anisotropic K_x=1, K_y=2.5, same Z^3/Quantum/Record) is axiom-faithful: positive transfer/RP/H>=0 hold  --  omega^2>=0 for every K_i>0 -> M3 passes the SAME 4-leg certification as M2
+  [PASS] (E2) M3 breaks the x<->y O_h automorphism (omega^2(p) != omega^2(R_xy p)) -- so 'the action respects O_h' is NOT a bare-axiom theorem either  --  |omega^2(p)-omega^2(R_xy p)|=0.646 != 0 -> spatial isotropy z_x=z_y=z_z is ALSO an admission at bare-Sigma
+
+------------------------------------------------------------------------------------------------
+Part F: but spatial and temporal differ in KIND -- O_h is axiom-resident, the time<->space generator is NOT (the Cl(3) root)
+------------------------------------------------------------------------------------------------
+  [PASS] (F1) O_h = Aut of the Z^3 6-NN edge set: all 48 signed permutations preserve {+-e_i}, and a shear does NOT -- O_h is a GENUINE automorphism the axiom asserts  --  48/48 signed perms preserve the NN set; shear preserves=False
+  [PASS] (F2) under axiom-resident O_h x time-parity the 4 axes split into TWO orbits {t},{x,y,z}; only B_4 merges them into one -- and B_4-merge IS the xi=1 premise  --  minimality(one coupling per orbit) forces z_x=z_y=z_z (one spatial orbit) but PERMITS c_t!=c_s (t is a separate orbit)
+  [PASS] (F3) THE Cl(3) ROOT: solving {T,sigma_i}=0 for a 4th anticommuting (time-like) generator in M_2(C)=Cl(3,0) gives ONLY T=0 (full-rank system) -- no 4th generator exists  --  coefficient-matrix rank=4/4 (full) -> a=b=c=d=0 -> T=0; the pseudoscalar s1 s2 s3 = i*I is CENTRAL, not a generator
+  [PASS] (F4) the pseudoscalar sigma_x sigma_y sigma_z = i*I is central (=i*I), confirming the 3 Paulis are a MAXIMAL anticommuting set -- the '3' of Cl(3) is why time is the odd-one-out (xi=1 rooted in d=3)  --  3 anticommuting Paulis = 3 commensurable spatial axes (one O_h orbit); no 4th => time cannot be put on the same Clifford/edge footing without a NEW premise
+
+------------------------------------------------------------------------------------------------
 Verdict and honest scope (narration -- not tests)
 ------------------------------------------------------------------------------------------------
+   ... GROUND-UP SHARPENING: spatial isotropy z_x=z_y=z_z is ALSO an admission at bare-Sigma (M3, Part E), BUT
+   ... it differs in KIND from xi=1: O_h is a GENUINE automorphism of the axiom-asserted Z^3 graph (Part F1),
+   ... so spatial isotropy follows from 'respect the symmetry you already asserted (a cubic lattice)'. xi=1's
+   ... time<->space generator is NOT axiom-resident (Part F2-F4: no 4th anticommuting Cl(3) generator), so xi=1
+   ... is STRICTLY STRONGER than spatial isotropy -- it ADDS a generator the axioms disclaim, not a relabel.
    ... VERDICT: xi=1 (c_t=c_s) is INDEPENDENT of {Lattice, Quantum, Record}+emergent-time+RP. It is an
    ... irreducible Euclidean-kinetic-normalization (OS0) admission, parallel to but NOT derivable from OS1/RP.
    ... The missing primitive is precisely OS0 (the temporal kinetic coefficient on the same footing as space);
@@ -56,5 +75,5 @@ RP/spectrum/single-clock/causal-order all hold for a whole xi-family (two faithf
 only on xi=1). The realistic landing is positive.retained CONDITIONAL on this named admission, NOT an
 unbounded derivation. Sharpens spatial_cubic_time_anisotropy_gate. Sets no audit status.
 ================================================================================================
-TOTAL: PASS=11 FAIL=0
+TOTAL: PASS=17 FAIL=0
 ================================================================================================

@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/frontier_continuum_existence_ir_not_uv_fixed_gbare_2026_06_08.py
+runner_sha256: 74177752237658de46a588adbeb2419eea359e7f1acd003cf36259aef2463a88
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  Derived QCD beta coefficients from retained Casimirs (AF: b_0>0)
+==============================================================================
+  [PASS] 1-loop b_0 = (11 C_A - 4 T_F N_f)/3 = 7 (N_f=6), from retained Casimirs  (b_0 = 7.0)
+  [PASS] 2-loop b_1 = (34/3)C_A^2 - 4 C_F T_F N_f - (20/3)C_A T_F N_f = 26 (N_f=6)  (b_1 = 26.0)
+  [PASS] ASYMPTOTIC FREEDOM: b_0 > 0 (coupling weakens toward the UV)
+==============================================================================
+Part 2  Continuum limit a->0 is the g_bare->0 endpoint (small-g scaling)
+==============================================================================
+  [PASS] a(g) -> 0 monotonically as g_bare -> 0 in the asymptotic regime (g<=0.3)  (a(0.05)/a(0.3) = 2.23e-12 (-> 0))
+  [PASS] the continuum is reached ONLY at g_bare=0 (essential singularity exp(-1/2b_0 g^2))  (a(g=1e-3) = 0.0e+00 (-> 0))
+==============================================================================
+Part 3  AF <=> continuum exists: b_0<0 (not AF) gives a->inf (Landau pole)
+==============================================================================
+  [PASS] b_0>0 (AF): a -> 0 as g->0 (continuum exists)  (a_AF(0.03)/a_AF(0.3)=2.6e-34 (-> 0))
+  [PASS] b_0<0 (NOT AF): a -> infinity as g->0 (Landau pole, NO continuum)  (a_noAF(0.03)/a_noAF(0.3)=4.5e+34 (blows up))
+==============================================================================
+Part 4  Framework fixes g_bare=1 (beta=6) != 0: fixed spacing, NOT the limit
+==============================================================================
+  [PASS] retained convention: beta = 2 N_c / g_bare^2 = 6 at g_bare=1 (fixed, nonzero)  (beta = 6.0)
+  [PASS] g_bare = 1 != 0 -> the framework does NOT take g_bare->0 -> fixed spacing a>0
+  [PASS] HONEST: at alpha_bare=1/4pi the 2-loop/1-loop beta ratio is O(0.3) -> beta=6 is the ONSET of scaling (finite physical coupling, not deep AF)  (alpha_bare=0.0796, |b1 alpha_bare|/b0 = 0.30)
+==============================================================================
+Part 5  Dimensional transmutation: finite emergent IR scale (alpha grows to ~1)
+==============================================================================
+  [PASS] coupling GROWS toward IR (1/alpha decreases as mu decreases, b_0>0)
+  [PASS] emergent confinement scale mu_conf is a FINITE fraction of the lattice scale (dimensional transmutation)  (mu_conf/mu_lattice = exp(-10.38) = 3.10e-05)
+  [PASS] the IR/UV scale separation is finite and computable (no continuum needed)  (lattice/confinement scale ratio ~ 3.2e+04)
+==============================================================================
+Part 6  Relocation of the existence question (UV-continuum -> fixed-a IR)
+==============================================================================
+   STANDARD (Clay): construct the a->0 continuum interacting YM (requires g->0).
+   FRAMEWORK: g_bare=1 fixed -> fixed-a theory -> existence = IR (mass gap /
+     clustering at beta=6).  AF's role here is NOT cutoff-removal but: (i) the
+     CONDITION that the standard continuum would exist (b_0>0), and (ii) keeping
+     the fixed UV anchor weakly coupled (alpha_bare=1/4pi) with IR confinement.
+   OPEN (named): the pure-gauge gap Delta_gauge(beta=6)>0 is not proven; only the
+     matter-sector floor is retained (interacting_transfer_matter_gap, retained_
+     bounded).  So existence is RELOCATED and well-posed, not closed.
+  [PASS] relocation is well-posed and honest: UV-continuum (Clay) sidestepped; existence = fixed-a IR with Delta_gauge(beta=6)>0 the named open input  (AF derived = continuum-existence condition; framework does not take it)
+==============================================================================
+TOTAL: PASS=14 FAIL=0
+==============================================================================
+SCOPE: Asymptotic freedom (b_0=7>0, DERIVED from retained Casimirs) is exactly the
+  condition for the standard lattice continuum limit a->0 to exist (as g_bare->0).
+  The framework's retained g_bare=1 != 0 does NOT execute that limit, so it defines
+  a FIXED-spacing interacting theory whose existence is an IR statement (mass gap /
+  clustering at beta=6) -- sidestepping the UV-continuum (Clay) construction --
+  with a finite emergent IR scale from dimensional transmutation.  It does NOT
+  prove the IR theory exists (Delta_gauge(beta=6)>0 open); it RELOCATES existence
+  (UV->IR) and shows AF's role.  No new axiom/import; beta=6 honestly noted as the
+  scaling onset (finite physical coupling).
+
+----- stderr -----
+

@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import hashlib
 import os
-import subprocess
 import sys
 from pathlib import Path
 
@@ -21,6 +20,9 @@ from DISTANCE_LAW_PORTABILITY_COMPARE import (
     _build_radial_shell_connectivity,
 )
 from CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP import _measure_family
+from fifth_family_radial_symmetry_orientation_certificate_2026_06_08 import (
+    compute_certificate,
+)
 from gate_b_no_restore_farfield import grow
 
 
@@ -56,42 +58,32 @@ def _verify_orientation_certificate() -> bool:
         return False
 
     fields = _cache_header(ORIENTATION_CACHE)
-    cache_text = ORIENTATION_CACHE.read_text(encoding="utf-8")
     runner_rel = ORIENTATION_RUNNER.relative_to(REPO_ROOT).as_posix()
-    sha_fresh = fields.get("runner_sha256") == _sha256(ORIENTATION_RUNNER)
+    source_sha = _sha256(ORIENTATION_RUNNER)
+    source_text = ORIENTATION_RUNNER.read_text(encoding="utf-8")
+    sha_fresh = fields.get("runner_sha256") == source_sha
     cache_ok = (
         fields.get("runner") == runner_rel
         and fields.get("status") == "ok"
         and fields.get("exit_code") == "0"
         and sha_fresh
-        and "SCORECARD PASS=9 FAIL=0" in cache_text
-        and "linear_slope   = -" in cache_text
-        and "zero_delta     = +0.000000000000e+00" in cache_text
-        and "neutral_delta  = +0.000000000000e+00" in cache_text
     )
-    live = subprocess.run(
-        [sys.executable, str(ORIENTATION_RUNNER)],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-        timeout=120,
-        check=False,
-    )
-    live_text = live.stdout + live.stderr
-    live_ok = (
-        live.returncode == 0
-        and "SCORECARD PASS=9 FAIL=0" in live_text
-        and "linear_slope   = -" in live_text
-        and "zero_delta     = +0.000000000000e+00" in live_text
-        and "neutral_delta  = +0.000000000000e+00" in live_text
-    )
-    ok = cache_ok and live_ok
+    cert = compute_certificate()
+    direct_ok = cert.assertions_ok
+    ok = cache_ok and direct_ok
     print(
         f"  runner={fields.get('runner')} status={fields.get('status')} "
         f"exit={fields.get('exit_code')} sha_fresh={sha_fresh}"
     )
-    print(f"  live_certificate_exit={live.returncode} live_derivation={'PASS' if live_ok else 'FAIL'}")
-    print("  scorecard=SCORECARD PASS=9 FAIL=0")
+    print(f"  source_sha256={source_sha}")
+    print(f"  source_bytes={len(source_text.encode('utf-8'))}")
+    print(
+        "  direct_certificate="
+        f"{'PASS' if direct_ok else 'FAIL'} "
+        f"zero={cert.zero_delta:+.12e} neutral={cert.neutral_delta:+.12e} "
+        f"plus={cert.plus_delta:+.12e} minus={cert.minus_delta:+.12e} "
+        f"slope={cert.linear_slope:+.12e}"
+    )
     print(f"  certificate={'PASS' if ok else 'FAIL'}")
     return ok
 

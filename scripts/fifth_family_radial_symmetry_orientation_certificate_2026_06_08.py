@@ -12,6 +12,7 @@ from __future__ import annotations
 import math
 import os
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -38,6 +39,36 @@ NOTE = Path(ROOT) / "docs" / "FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md"
 
 PASS = 0
 FAIL = 0
+
+
+@dataclass(frozen=True)
+class OrientationCertificate:
+    source_note_linked: bool
+    zero_field_exact: bool
+    neutral_field_exact: bool
+    zero_delta: float
+    neutral_delta: float
+    plus_delta: float
+    minus_delta: float
+    linear_slope: float
+
+    @property
+    def finite_plus_matches_slope(self) -> bool:
+        return self.plus_delta < 0.0 and self.linear_slope * self.plus_delta > 0.0
+
+    @property
+    def assertions_ok(self) -> bool:
+        return (
+            self.source_note_linked
+            and self.zero_field_exact
+            and self.neutral_field_exact
+            and self.zero_delta == 0.0
+            and self.neutral_delta == 0.0
+            and self.linear_slope < 0.0
+            and self.finite_plus_matches_slope
+            and self.minus_delta > 0.0
+            and self.plus_delta < 0.0 < self.minus_delta
+        )
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -178,28 +209,17 @@ def centroid_derivative(
     return (dweighted * total - weighted * dtotal) / (total * total)
 
 
-def main() -> int:
+def compute_certificate() -> OrientationCertificate:
     note_text = NOTE.read_text(encoding="utf-8")
     pos, adj, layers, _nmap = grow(DRIFT, SEED)
     radial = _build_radial_shell_connectivity(Family(pos, layers, adj))
     field_shape = unit_source_shape(radial.positions, radial.layers)
     det = radial.layers[-1]
 
-    print("=" * 96)
-    print("FIFTH FAMILY RADIAL SYMMETRY/ORIENTATION CERTIFICATE")
-    print("=" * 96)
-    print(f"row: drift={DRIFT:.2f} seed={SEED}")
-    print("method: source-field linearity + zero-field variational recurrence")
-    print()
-
     zero_field = [0.0] * len(field_shape)
     neutral_field = [a - a for a in field_shape]
     plus_field = [a for a in field_shape]
     minus_field = [-a for a in field_shape]
-
-    check("source note links this independent certificate", "symmetry_orientation_certificate_2026_06_08" in note_text)
-    check("empty-source field is exactly zero componentwise", all(v == 0.0 for v in zero_field))
-    check("+1 and -1 same-point source fields cancel exactly", all(v == 0.0 for v in neutral_field))
 
     free = propagate(radial.positions, radial.adj, zero_field)
     neutral = propagate(radial.positions, radial.adj, neutral_field)
@@ -213,22 +233,50 @@ def main() -> int:
 
     amps0, damps0 = propagate_with_derivative(radial.positions, radial.adj, field_shape)
     slope = centroid_derivative(amps0, damps0, radial.positions, det)
-    finite_slope = plus_delta
+
+    return OrientationCertificate(
+        source_note_linked="symmetry_orientation_certificate_2026_06_08" in note_text,
+        zero_field_exact=all(v == 0.0 for v in zero_field),
+        neutral_field_exact=all(v == 0.0 for v in neutral_field),
+        zero_delta=zero_delta,
+        neutral_delta=neutral_delta,
+        plus_delta=plus_delta,
+        minus_delta=minus_delta,
+        linear_slope=slope,
+    )
+
+
+def main() -> int:
+    global PASS, FAIL
+    PASS = 0
+    FAIL = 0
+    cert = compute_certificate()
+
+    print("=" * 96)
+    print("FIFTH FAMILY RADIAL SYMMETRY/ORIENTATION CERTIFICATE")
+    print("=" * 96)
+    print(f"row: drift={DRIFT:.2f} seed={SEED}")
+    print("method: source-field linearity + zero-field variational recurrence")
+    print()
+
+    check("source note links this independent certificate", cert.source_note_linked)
+    check("empty-source field is exactly zero componentwise", cert.zero_field_exact)
+    check("+1 and -1 same-point source fields cancel exactly", cert.neutral_field_exact)
 
     print()
-    print(f"zero_delta     = {zero_delta:+.12e}")
-    print(f"neutral_delta  = {neutral_delta:+.12e}")
-    print(f"plus_delta     = {plus_delta:+.12e}")
-    print(f"minus_delta    = {minus_delta:+.12e}")
-    print(f"linear_slope   = {slope:+.12e}")
+    print(f"zero_delta     = {cert.zero_delta:+.12e}")
+    print(f"neutral_delta  = {cert.neutral_delta:+.12e}")
+    print(f"plus_delta     = {cert.plus_delta:+.12e}")
+    print(f"minus_delta    = {cert.minus_delta:+.12e}")
+    print(f"linear_slope   = {cert.linear_slope:+.12e}")
     print()
 
-    check("zero-source centroid delta is exact", zero_delta == 0.0)
-    check("neutral same-point centroid delta is exact", neutral_delta == 0.0)
-    check("first-order positive-source radial response is negative", slope < 0.0)
-    check("finite +1 source has same negative sign as variational slope", plus_delta < 0.0 and slope * finite_slope > 0.0)
-    check("finite -1 source has opposite positive sign", minus_delta > 0.0)
-    check("plus/minus signs certify orientation boundary, not control leak", plus_delta < 0.0 < minus_delta)
+    check("zero-source centroid delta is exact", cert.zero_delta == 0.0)
+    check("neutral same-point centroid delta is exact", cert.neutral_delta == 0.0)
+    check("first-order positive-source radial response is negative", cert.linear_slope < 0.0)
+    check("finite +1 source has same negative sign as variational slope", cert.finite_plus_matches_slope)
+    check("finite -1 source has opposite positive sign", cert.minus_delta > 0.0)
+    check("plus/minus signs certify orientation boundary, not control leak", cert.plus_delta < 0.0 < cert.minus_delta)
 
     print()
     print(f"SCORECARD PASS={PASS} FAIL={FAIL}")

@@ -1,6 +1,6 @@
 # Fifth Family Radial Boundary Note
 
-**Date:** 2026-04-06 (originally); 2026-05-03 (review-loop runner-import repair via PR #485); 2026-06-08 orientation certificate wiring; 2026-06-08 live-certificate restricted-packet repair
+**Date:** 2026-04-06 (originally); 2026-05-03 (review-loop runner-import repair via PR #485); 2026-06-08 orientation certificate wiring; 2026-06-08 live-certificate restricted-packet repair; 2026-06-09 direct-source certificate repair
 **Status:** support - structural or confirmatory support note; runner now executes after PR #485 import repair
 **Claim type:** bounded_theorem
 
@@ -80,6 +80,15 @@ inside the primary runner and requires the fresh execution to reproduce the
 same `SCORECARD PASS=9 FAIL=0`, exact zero/neutral cancellations, and negative
 linear slope. The SHA-pinned cache remains a freshness artifact, not the only
 evidence for the orientation derivation.
+
+The 2026-06-09 direct-source certificate repair removes the remaining stdout
+substring dependence. The primary failure-audit runner now imports
+`compute_certificate()` from the certificate source, checks the certificate
+source SHA, and asserts the computed
+`zero_delta`, `neutral_delta`, `plus_delta`, `minus_delta`, and
+`linear_slope` values directly. The cache is now only a freshness and packet
+manifest guard; the load-bearing orientation closure is a direct source-level
+numeric derivation.
 
 ## Artifact Chain
 

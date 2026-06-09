@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py
-runner_sha256: db402ba60a2d26f57f6a31a0a3ed54759123f693396842f9a7a05c0822e907b4
+runner_sha256: 31c03bd5abf6a95e4c8b7bae980bd37259a96c83882148b68dfd0aaad6916709
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 52.68
+elapsed_sec: 35.68
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -25,8 +25,9 @@ SAFE READ
 
 INDEPENDENT ORIENTATION CERTIFICATE
   runner=scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py status=ok exit=0 sha_fresh=True
-  live_certificate_exit=0 live_derivation=PASS
-  scorecard=SCORECARD PASS=9 FAIL=0
+  source_sha256=a542e8f2dc6f985310b79cea07b4f0e629b1c6c8b41acf22b599a829a68c6604
+  source_bytes=9706
+  direct_certificate=PASS zero=+0.000000000000e+00 neutral=+0.000000000000e+00 plus=-2.028481894900e-06 minus=+2.028191386616e-06 slope=-2.028336655911e-06
   certificate=PASS
 ASSERTIONS: PASS
 

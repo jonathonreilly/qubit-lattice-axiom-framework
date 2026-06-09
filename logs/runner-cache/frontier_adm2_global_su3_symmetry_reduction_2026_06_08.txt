@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/frontier_adm2_global_su3_symmetry_reduction_2026_06_08.py
+runner_sha256: f9235e6f20bb444fe48ac54da61368869f94addf12acacd757bfd34416287a8f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.07
+status: ok
+----- stdout -----
+==============================================================================
+Part 0  SU(3) staple drift is globally equivariant
+==============================================================================
+  [PASS] staple drift obeys drift(gUg^dag,gSg^dag)=g drift(U,S) g^dag  (max dev 3.78e-16)
+==============================================================================
+Part 1  Free SU(3) link: isotropic increment is central
+==============================================================================
+  [PASS] free-link increment measure is central: <D(V)> is scalar within MC tolerance  (nonscalar-dev = 0.0012)
+==============================================================================
+Part 2  Interacting link: quenched is not central; annealed is central
+==============================================================================
+  [PASS] quenched single-link step with fixed staple is not central  (nonscalar-dev = 0.2380)
+  [PASS] annealed single-link step is central after averaging over equivariant neighbour fluctuations  (nonscalar-dev = 0.0032)
+  [PASS] quenched/annealed dichotomy is numerically large  (quenched 0.238 vs annealed 0.0032)
+==============================================================================
+Part 3  Annealed-central SU(3) step feeds the compact-group CLT
+==============================================================================
+  [PASS] annealed fundamental Fourier coefficient is a real scalar phi with 0<phi<1  (phi = 0.9808)
+  [PASS] ADM-2 action-form reduces to global-SU(3)-equivariance plus the annealed-regime premise  (reduction only; the physical annealing/equivariant dynamics remains open)
+==============================================================================
+Part 4  Non-equivariant dynamics breaks centrality even after annealing
+==============================================================================
+  [PASS] fixed external color field is not central even in the annealed sample  (nonscalar-dev = 0.3384)
+==============================================================================
+Part 5  Global symmetry is weaker than local frame redundancy
+==============================================================================
+  [PASS] global rotation leaves the hopping contraction M=I invariant  (8.88e-16)
+  [PASS] independent local rotations do not leave the same contraction invariant  (1.550)
+  [PASS] ADM-2' invokes global equivariance only, so it is weaker than ADM-1 local gauging  (global condition is a subset of the local-gauge condition)
+==============================================================================
+TOTAL: PASS=11 FAIL=0
+==============================================================================
+SCOPE: finite SU(3) support for reducing ADM-2 to global equivariance plus an annealed-regime premise. Quenched single-link centrality is false, so ADM-2 is not closed here.
+
+----- stderr -----
+

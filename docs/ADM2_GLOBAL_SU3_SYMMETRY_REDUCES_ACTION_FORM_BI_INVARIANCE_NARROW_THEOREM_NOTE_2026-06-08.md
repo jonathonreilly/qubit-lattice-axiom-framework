@@ -6,8 +6,21 @@
 **Script:** `scripts/frontier_adm2_global_su3_symmetry_reduction_2026_06_08.py`
 **Cache:** `logs/runner-cache/frontier_adm2_global_su3_symmetry_reduction_2026_06_08.txt`
 **Status:** source proposal. The reduction and the quenched/annealed dichotomy are
-exact/computed. The "ST2 is more tractable than ST1" reading should be **panel-checked
-before it propagates**. Authority role: source proposal; audit lane sets status.
+exact/computed. Authority role: source proposal; audit lane sets status.
+
+> **Correction (2026-06-08, red-team panel `over_reach_corrected`).** The "ADM-2′ is
+> **strictly weaker than ADM-1** / ST2 more tractable than ST1" reading (in the title,
+> Verdict, and Part 5 — including the runner's Part-5 framing) is a **category error** and is
+> **withdrawn**: it ranks a *static* symmetry constraint (ADM-1) against *dynamical* generator
+> premises — the same global-vs-local indifference that refuted this session's earlier
+> "bi-invariance = ADM-1" claim. The `global ⊂ local` inequality (Part 5) is **true but
+> closure-irrelevant**: it does **not** advance ST2 past ST1, because ADM-2′'s remaining
+> residual (a continuous-time gauge-link generator + a mixing regime) **re-imports the same
+> undelivered dynamics** as ADM-1. **What stands:** the *reduction* "ADM-2 → ADM-2′
+> (FORM-conditional on a supplied dynamics) + annealed regime" and the quenched/annealed
+> dichotomy. **Withdrawn:** the "weaker than ADM-1 / ST2 ahead" ranking. See the capstone
+> `ST1_ST2_SAME_WALL_GAUGE_DYNAMICS_RESIDUAL_CONVERGENCE_NARROW_THEOREM_NOTE_2026-06-08`
+> (PR #3394): ST1 and ST2 sit at the **same** wall.
 
 ## Context
 

@@ -1,0 +1,161 @@
+{
+  "abs_control": {
+    "30.0": 107.35474817373145,
+    "45.0": 72.03203097366553,
+    "60.0": 54.161485231923805,
+    "80.0": 40.68617569602614
+  },
+  "abs_control_fit": {
+    "b": [
+      30.0,
+      45.0,
+      60.0,
+      80.0
+    ],
+    "intercept": 8.041362956993972,
+    "r_squared": 0.9999935154078338,
+    "slope": -0.9891682728347777,
+    "values": [
+      107.35474817373145,
+      72.03203097366553,
+      54.161485231923805,
+      40.68617569602614
+    ]
+  },
+  "checks": [
+    {
+      "detail": "NL=60",
+      "name": "H025_setup_NL60",
+      "passed": true
+    },
+    {
+      "detail": "n_edges=65528627",
+      "name": "H025_streamed_many_edges",
+      "passed": true
+    },
+    {
+      "detail": "exact=+5.986043, source=+5.986043",
+      "name": "exact_edge_matches_fine_slope_certificate_b3",
+      "passed": true
+    },
+    {
+      "detail": "exact=+3.819639, source=+3.819639",
+      "name": "exact_edge_matches_fine_slope_certificate_b4",
+      "passed": true
+    },
+    {
+      "detail": "exact=+2.826383, source=+2.826383",
+      "name": "exact_edge_matches_fine_slope_certificate_b5",
+      "passed": true
+    },
+    {
+      "detail": "exact=+2.211718, source=+2.211718",
+      "name": "exact_edge_matches_fine_slope_certificate_b6",
+      "passed": true
+    },
+    {
+      "detail": "slope=-1.433549, R2=0.998404",
+      "name": "small_window_replays_minus_1p43",
+      "passed": true
+    },
+    {
+      "detail": "|sum c|/sum|c|=0.000282",
+      "name": "monopole_cancels_at_H025",
+      "passed": true
+    },
+    {
+      "detail": "support=3.927, path_span=14.500",
+      "name": "kernel_support_is_finite_and_near_source",
+      "passed": true
+    },
+    {
+      "detail": "slope=-2.358053, R2=0.998226",
+      "name": "large_b_signed_falloff_is_steeper_than_monopole",
+      "passed": true
+    },
+    {
+      "detail": "slope=-0.989168, R2=0.999994",
+      "name": "noncancelling_abs_control_is_monopole_like",
+      "passed": true
+    },
+    {
+      "detail": "small=-1.433549, large=-2.358053",
+      "name": "small_window_is_crossover_not_asymptote",
+      "passed": true
+    }
+  ],
+  "exact_edge": {
+    "3.0": 5.986043447477822,
+    "30.0": 0.1428509984449884,
+    "4.0": 3.8196385246522775,
+    "45.0": 0.05888983525743888,
+    "5.0": 2.8263831041564234,
+    "6.0": 2.2117183394359676,
+    "60.0": 0.029770792038704013,
+    "80.0": 0.014033295338963038
+  },
+  "large_fit": {
+    "b": [
+      30.0,
+      45.0,
+      60.0,
+      80.0
+    ],
+    "intercept": 6.106414481092511,
+    "r_squared": 0.9982255168530351,
+    "slope": -2.3580529856422494,
+    "values": [
+      0.1428509984449884,
+      0.05888983525743888,
+      0.029770792038704013,
+      0.014033295338963038
+    ]
+  },
+  "monopole_ratio": 0.00028178648861764425,
+  "path_span": 14.5,
+  "setup": {
+    "H": 0.25,
+    "NL": 60,
+    "PW": 6.0,
+    "T_phys": 15.0,
+    "beta": 0.8,
+    "cz_free": -0.24965582548274648,
+    "drift": 0.2,
+    "free_detector_probability": 6.427762343193451e+25,
+    "k_phase": 10.0,
+    "n_edges_streamed": 65528627,
+    "n_nodes": 141660,
+    "restore": 0.7,
+    "seed": 0,
+    "x_src": 5.0
+  },
+  "small_fit": {
+    "b": [
+      3.0,
+      4.0,
+      5.0,
+      6.0
+    ],
+    "intercept": 3.350092461249581,
+    "r_squared": 0.9984044356281753,
+    "slope": -1.4335485338851046,
+    "values": [
+      5.986043447477822,
+      3.8196385246522775,
+      2.8263831041564234,
+      2.2117183394359676
+    ]
+  },
+  "summary": {
+    "fail": 0,
+    "open_scope": [
+      "not a continuum theorem",
+      "not a standard 1/b lensing claim",
+      "not an exact dipole-asymptotic theorem",
+      "not a proof for other families or observables"
+    ],
+    "pass": 12,
+    "verdict": "bounded_h025_edge_kernel_certificate"
+  },
+  "support": 3.927213290441738
+}

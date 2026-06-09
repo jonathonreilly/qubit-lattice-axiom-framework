@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.py
+runner_sha256: aa1d459df99e2c12de1255b3a82b5c42f009a147ae9393bf7a0b0b6d304ab8e5
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 153.69
+status: ok
+----- stdout -----
+==============================================================================
+LENSING H=0.25 EDGE-KERNEL CERTIFICATE
+Scope: one retained fine-H setup; exact-edge replay and mechanism checks
+==============================================================================
+PASS H025_setup_NL60: NL=60
+PASS H025_streamed_many_edges: n_edges=65528627
+PASS exact_edge_matches_fine_slope_certificate_b3: exact=+5.986043, source=+5.986043
+PASS exact_edge_matches_fine_slope_certificate_b4: exact=+3.819639, source=+3.819639
+PASS exact_edge_matches_fine_slope_certificate_b5: exact=+2.826383, source=+2.826383
+PASS exact_edge_matches_fine_slope_certificate_b6: exact=+2.211718, source=+2.211718
+PASS small_window_replays_minus_1p43: slope=-1.433549, R2=0.998404
+PASS monopole_cancels_at_H025: |sum c|/sum|c|=0.000282
+PASS kernel_support_is_finite_and_near_source: support=3.927, path_span=14.500
+PASS large_b_signed_falloff_is_steeper_than_monopole: slope=-2.358053, R2=0.998226
+PASS noncancelling_abs_control_is_monopole_like: slope=-0.989168, R2=0.999994
+PASS small_window_is_crossover_not_asymptote: small=-1.433549, large=-2.358053
+
+MECHANISM: mono=0.000282 support=3.927 small_slope=-1.433549 large_slope=-2.358053 abs_control_slope=-0.989168
+CERTIFICATE_WRITTEN: outputs/lensing_h025_edge_kernel_certificate_2026_06_08.json
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 806 |
+| **retained_bounded** | 807 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1318 |
+| unaudited | 1317 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1245 |
+| `audited_clean` | 1246 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1633 |
+| `unaudited` | 1632 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 787 |
-| `leaf` | 1282 |
+| `medium` | 786 |
+| `leaf` | 1283 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -1168,6 +1168,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_nonlocal_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_results_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `staggered_backreaction_scale_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -16937,6 +16938,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The live prototype supports zero-source reduction, two-body additivity, TOWARD force sign, and one-step endogenous TOWARD behavior across the three tested graph families as certified by the current runner cache.  _(class `C`)_
 - **chain closes:** True — The primary runner constructs the three graph families with fixed seeds, solves the screened graph Poisson system, evolves the state, and computes the reported signs, residuals, gaps, and summary counts rather than reading them from another note or printing constants. The conclusion closes only for this current-runner prototype packet and not for self-gravity closure or external-kernel scale agreement.
 - **rationale:** The cache values quoted in the note match the completed runner output, and the runner source performs genuine finite numerical computation of the Poisson solve, Crank-Nicolson evolution, shell force, additivity residuals, and self-update force. Zero-source reduction and Poisson additivity also follow structurally from the zero-density branch and linear screened Poisson solve. The large force-scale gaps and failed all-family linearity are explicitly retained as boundaries, so the audited claim does not overstate those results. No cited upstream authority or external comparator is used.
+- **auditor confidence:** high
+
+### `staggered_backreaction_scale_closure_note`
+
+- **Note:** [`STAGGERED_BACKREACTION_SCALE_CLOSURE_NOTE.md`](../../docs/STAGGERED_BACKREACTION_SCALE_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited scope is the finite current-runner result for the stated staggered backreaction scale-normalization probe on two retained cycle-bearing graph families and one holdout DAG family.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-144108-084328f2e5-staggered_backreaction_scale`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current scale-closure runner supports a material calibrated cycle-bearing gap reduction with best map invheat_b3p00, gain 0.621, calibrated cycle gap 2.053e-01, 4.69x baseline improvement, and holdout gap 7.249e+00, but not universal scale closure.  _(class `C`)_
+- **chain closes:** True — The supplied runner source performs a real finite computation: it constructs the graph families, applies the declared mapping grid, fits one scalar gain on cycle-bearing rows, remeasures calibrated rows, and reports the values used by the note. The closure is only for this bounded calibrated probe and its severe holdout divergence, not for a universal scale law.
+- **rationale:** The primary runner and helper sources do not merely print constants or import the contested conclusion; they compute the Poisson field, staggered evolution, force observable, mapping scan, gain fit, and summaries from the supplied finite setup. The note's asserted values match the completed runner output, and the independent arithmetic check confirms the 4.69x factor as the Gaussian baseline gap 9.618e-01 divided by the best calibrated gap 2.053e-01. The neighboring raw best-map gap 4.314e-01 would imply only about 2.10x, so the note should be read with that baseline-improvement convention, but the bounded conclusion itself closes.
 - **auditor confidence:** high
 
 ### `staggered_backreaction_shell_spectral_note`

@@ -9,6 +9,20 @@
 are finite-sample SU(3) computations plus the stated compact-group mechanism.
 Authority role: source proposal; audit lane sets status.
 
+> **Correction (2026-06-08, red-team panel `over_reach_corrected`).** The "ADM-2′ is
+> **strictly weaker than ADM-1** / ST2 more tractable than ST1" reading (in the title,
+> Verdict, and Part 5) is a **category error** and is **withdrawn**: it ranks a *static*
+> symmetry constraint (ADM-1) against *dynamical* generator premises — the same global-vs-local
+> indifference that refuted this session's earlier "bi-invariance = ADM-1" claim. The
+> `global ⊂ local` inequality (Part 5) is **true but closure-irrelevant**: it does **not**
+> advance ST2 past ST1, because ADM-2′'s remaining residual (a continuous-time gauge-link
+> generator + a mixing regime) **re-imports the same undelivered dynamics** as ADM-1.
+> **What stands:** the *reduction* "ADM-2 → ADM-2′ (FORM-conditional on a supplied dynamics) +
+> annealed regime" and the quenched/annealed dichotomy. **Withdrawn:** the "weaker than ADM-1 /
+> ST2 ahead" ranking. See the capstone
+> `ST1_ST2_SAME_WALL_GAUGE_DYNAMICS_RESIDUAL_CONVERGENCE_NARROW_THEOREM_NOTE_2026-06-08`:
+> ST1 and ST2 sit at the **same** wall (one undelivered continuous-time gauge-link dynamics).
+
 ## Context
 
 PR #3346 (corrected) reduced ST2's gauge **action-form** to **ADM-2** = *the emergent-time

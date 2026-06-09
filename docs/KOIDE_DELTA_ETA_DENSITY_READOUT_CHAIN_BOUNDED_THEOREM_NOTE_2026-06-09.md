@@ -7,7 +7,7 @@
 or predict an audit outcome.
 **Primary runner:**
 [`scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py`](../scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py)
-(SCORECARD: PASS=17, FAIL=0; cached:
+(SCORECARD: PASS=21, FAIL=0; cached:
 [`logs/runner-cache/frontier_koide_delta_eta_density_readout_chain_2026_06_09.txt`](../logs/runner-cache/frontier_koide_delta_eta_density_readout_chain_2026_06_09.txt))
 
 > **What this is.** The no-go validation pass found the |δ| portfolio soft: the

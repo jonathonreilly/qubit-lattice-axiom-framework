@@ -169,8 +169,10 @@ with `g(x) = e^{iθ(x)}I` forces an **abelian (hypercharge-like) connection** fo
   `H_cov` follow from frame independence of nearest-neighbor hopping on the
   retained `U(3)` fibre, using the one-hop local frame-redundancy bridge.
 - A reusable on-surface origin for the gauge field: it is the **bookkeeping of the
-  framework's absent canonical cross-site fibre identification** — the unregistered
-  internal frame — rather than a postulated `U_μ = exp(igaA)`.
+  framework's absent canonical cross-site fibre identification** — the chosen
+  local fibre trivialization on the current registered surface — rather than a
+  postulated `U_μ = exp(igaA)`. This does not rely on loose register-not-read
+  reasoning beyond the explicit current-surface bridge above.
 
 ## What this does NOT close
 

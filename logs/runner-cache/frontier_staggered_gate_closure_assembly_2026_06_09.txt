@@ -1,0 +1,55 @@
+========================================================================================
+STAGGERED-GATE CLOSURE ASSEMBLY: WHAT IS ACTUALLY LEFT OF AC_PHI_LAMBDA
+========================================================================================
+
+----------------------------------------------------------------------------------------
+G1: ledger ground truth (read live, not assumed)
+----------------------------------------------------------------------------------------
+  [PASS] the 4-substep chain's LIVE statuses: substeps 1-2 retained_bounded; substep-3 combinatorics RETAINED; substep-4 diagonalization RETAINED  --  {'grassmann': 'retained_bounded', 'kahler': 'retained_bounded', 'bz': 'retained', 'ac': 'retained'}
+  [PASS] the scheme-forcing note's live status read mechanically (unaudited, runner 20/20 per its own cache) -- ratification is a named remainder  --  status: unaudited
+  [PASS] the species-reading carrier row (three_generation_observable) located and its live status recorded  --  {'three_generation_observable_count_corollary_note_2026-05-03': 'retained', 'three_generation_observable_dep_chain_audit_note_2026-05-02': 'meta', 'three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10': 'retained', 'three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02': 'retained', 'three_generation_observable_theorem_note': 'retained'}
+
+----------------------------------------------------------------------------------------
+G2: the scheme-forcing core, re-verified independently
+----------------------------------------------------------------------------------------
+  [PASS] per-site Fock dimensions: staggered (1 Grassmann/site) = 2 = the qubit dimension -- the UNIQUE match; Wilson/naive = 16 = four qubits/site, violating the one-qubit Quantum axiom  --  Fock dims: {'staggered': 2, 'wilson': 16, 'naive': 16} vs qubit 2
+  [PASS] overlap/domain-wall: the operator is nonlocal at finite spacing (or requires an auxiliary fifth direction) -- excluded by the Lattice axiom's finite-range locality notion (the scheme note's argument, independently re-stated; its 20/20 runner carries the computational detail)  --  staggered = the unique {Quantum, Lattice}-compatible fermionic scheme
+
+----------------------------------------------------------------------------------------
+G3: gate (a) rooting -- does it bind the framework's chain?
+----------------------------------------------------------------------------------------
+  [PASS] the selector note's own framing locates rooting inside ITS import (the single-physical-fermion / Fukaya index framing): 'the single-physical-fermion reduction (rooting)' (grep-verified)
+  [PASS] the framework's |delta| chain consumes the EQUIVARIANT fixed-locus arithmetic (retained_bounded), whose note contains NO rooting step (mechanical: 'rooting' absent from the retained arithmetic note) -- the equivariant localization needs no single-fermion reduction  --  (a) is scoped to the non-equivariant import; the chain does not consume it
+  [PASS] HONEST TRANSFORMATION, not a vacating by fiat: what remains in (a)'s place is the equivariant continuum/global identification the retained arithmetic note itself names open (the PL/ABSS bridge) -- recorded as remainder R2  --  the named open is in the retained note's own text
+
+----------------------------------------------------------------------------------------
+G4: gate (c) edge-as-carrier = the species reading (the gate's EXISTING content)
+----------------------------------------------------------------------------------------
+  [PASS] substep-3's own boundary routes the physical-species reading to the three-generation observable row: 'The physical-species reading of the hw = 1 triplet ... is the substep-4 content carried by THREE_GENERATION_OBSERVABLE_THEOREM_NOTE' (grep-verified)
+  [PASS] => (c) is NOT a new condition introduced by the phase campaign: it is the gate's existing species-reading content, with its own independent ledger row  --  the campaign added ZERO new conditions to the gate
+
+----------------------------------------------------------------------------------------
+G5: the surviving irreducible of the AC_phi_lambda admission
+----------------------------------------------------------------------------------------
+    scheme (which fermionic realization): FORCED by {Quantum, Lattice} -- unaudited note, core re-verified (G2)
+    substeps 1-4 (Grassmann/KD/corners/diagonalization): retained or retained_bounded (G1)
+    orientation / species naming / labeling: conventions (stripped)
+    r = 1/2 and |delta| = 2/9: computed (the campaign; in review)
+    REMAINDER R1 -- the species reading: the hw=1 corner triplet IS the generation triplet (three_generation_observable row)
+    REMAINDER R2 -- the global bridge: PL/ABSS equivariant continuum identification (the retained note's named open)
+    REMAINDER R3 -- ratifications: the in-review package + the scheme-forcing note (audit lane)
+  [PASS] R1a (ALGEBRAIC, RETAINED -- read, not assumed): the hw=1 triplet carries an exact irreducible generation algebra AND no quotient/ROOTING/reduction exists (a retained anti-rooting theorem, strengthening G3: rooting is not merely unconsumed -- it is retained-impossible on the framework surface)
+  [PASS] R1b (PHYSICAL, the true surviving anchor): 'this triplet is the physical charged-lepton generation sector' -- the gate's one semantic matter-content anchor (THREE_GENERATION_STRUCTURE_NOTE surface; naming already convention). It imports NO number, NO phase, NO knob -- it is an identification, the matter analogue of 'the qubit is physical reality'
+  [PASS] the gate's surviving irreducible content is {R1b semantic anchor, R2 global bridge, R3 ratifications} -- NO number, NO phase, NO orientation, NO scheme choice survives as an input
+  [PASS] named next counterfactual (flagged, NOT claimed): why the hw=1 triplet rather than the hw=2 triplet -- a uniqueness question on the retained Hamming grading (1+3+3+1); if answered, R1 reduces further
+
+----------------------------------------------------------------------------------------
+G6: honest scope
+----------------------------------------------------------------------------------------
+  [PASS] this is an ASSEMBLY of live statuses + the campaign's in-review results; the Tier-A registry is audit-lane owned and not edited
+  [PASS] the scheme-forcing note and the selector companion are unaudited (cores re-verified independently here and in the campaign runners); ratification is the lane's call
+  [PASS] complete retirement = R1 + R2 + R3; none is a numeric or phase input -- the admission's DERIVATION-TARGET character is exhausted; what remains is identification + ratification work
+
+========================================================================================
+SUMMARY: PASS=17 FAIL=0
+========================================================================================

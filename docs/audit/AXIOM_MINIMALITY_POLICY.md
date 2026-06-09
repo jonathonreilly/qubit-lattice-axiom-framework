@@ -132,3 +132,32 @@ Recorded explicitly approved primitive:
   - **Scope.** The minimal framework baseline remains fixed. This decision does
     not assert `a/l_P = 1`; the self-consistency that the natural unit equals
     the Planck length remains a separate open gravity derivation.
+
+- **2026-06-09 -- kinetic-isotropy primitive.** The space-time kinetic-form
+  isotropy `c_t = c_s` (OS0 graining isotropy: the emergent tick is grained on
+  the same footing as the spatial edge) is accepted as a framework primitive and
+  registered as `kinetic_isotropy_primitive` with source
+  `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`.
+  - **Why it is admissible.** It is a dimensionless **structural** graining fact
+    about the regulator, the time-direction analogue of the `LATTICE` axiom's
+    spatial cubic adjacency `a_x = a_y = a_z` (a structural premise already
+    accepted at axiom grade). It is irreducible: `c_t = c_s` is independent of
+    `Lattice + Quantum + Record` + emergent-time + reflection positivity (those
+    structures are blind to `c_t/c_s`, and since `c_t = c_s` is itself the
+    emergent-Lorentz output, deriving it from them is circular), just as the
+    dimensionful scale reference is irreducible by dimensional analysis. The
+    adjacent freedoms are already fixed: the absolute scale by
+    `scale_reference_primitive`, the `a_tau/a_s` spacing ratio by the `LATTICE`
+    axiom's no-diagonal clause plus retained reachability.
+  - **No laundering.** The primitive carries no mass ratio, coupling, mixing
+    angle, phase, selector, readout bridge, or empirical fit. It supplies a
+    dimensionless **structural/geometric** normalization (the regulator's
+    space-time isotropy), of the same category as cubic adjacency, **not**
+    dimensionless **dynamical** content. Depending on this primitive cannot
+    supply a physical observable, and the purity guard must keep the source note
+    inside that boundary.
+  - **Scope.** The minimal framework baseline remains the three named axioms.
+    This primitive does not re-axiomatize time: the emergent single-clock
+    evolution remains derived, and only the one graining ratio `c_t/c_s` is
+    fixed. It supplies no dynamics, no fourth spatial dimension, and no
+    dimensionless observable.

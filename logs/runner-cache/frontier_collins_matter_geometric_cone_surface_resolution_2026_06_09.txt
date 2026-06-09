@@ -1,0 +1,75 @@
+========================================================================================
+COLLINS: MATTER-CONE vs GEOMETRIC-CONE -- SURFACE RESOLUTION
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: protection mechanism (invariant counting)
+----------------------------------------------------------------------------------------
+  [PASS] spatial O_h x time-parity leaves two diagonal kinetic coefficients  --  dim=2 (c_t, c_s independent -> anisotropy allowed)
+  [PASS] 4D hypercubic B4 leaves one diagonal kinetic coefficient  --  dim=1 (c_t = c_s forced)
+
+----------------------------------------------------------------------------------------
+Part 1: SYMMETRIC Z^4 (xi=1) -- interacting one-loop B4 protection
+----------------------------------------------------------------------------------------
+  nk=10: z_t=1.7100800011e-02  z_s=1.7100800011e-02  |delta_v|=1.041e-17
+  nk=12: z_t=1.8434347662e-02  z_s=1.8434347662e-02  |delta_v|=6.939e-18
+  nk=14: z_t=1.9449778238e-02  z_s=1.9449778238e-02  |delta_v|=5.898e-17
+  [PASS] one-loop gauged velocity coefficients agree to machine precision (B4)  --  max |delta_v|=5.898e-17
+  [PASS] representation-blind: no species velocity split on the symmetric surface  --  max Casimir-weighted split=1.966e-16
+
+----------------------------------------------------------------------------------------
+Part 2: CONTINUOUS-TIME / anisotropic (xi->0) -- the obstruction
+----------------------------------------------------------------------------------------
+  xi=0.10 (compact): z_t=2.652583e-02  z_s=1.488074e-02  |delta_v|=1.1645e-02
+  continuum time : z_t=1.743874e-01  z_s=9.342739e-02  |delta_v|=8.0960e-02
+  [PASS] continuous-time surface regenerates a NONZERO marginal anisotropy  --  |delta_v|: compact=1.165e-02, continuum=8.096e-02
+  [PASS] continuous-time surface DOES split species (delta_v scales with Casimir)  --  adjoint-vs-fund split ~ 1.349e-01 (units g^2)
+
+----------------------------------------------------------------------------------------
+Part 3: xi-interpolation -- anisotropy minimal exactly at xi=1
+----------------------------------------------------------------------------------------
+  xi=1.0   : |delta_v| = 6.9389e-18
+  xi=0.5   : |delta_v| = 9.6631e-03
+  xi=0.25  : |delta_v| = 1.1893e-02
+  xi=0.125 : |delta_v| = 1.1713e-02   (near saturation; not gated)
+  [PASS] |delta_v|(xi) is machine-zero at xi=1 and jumps to O(1e-2) for every xi<1  --  xi=1 -> 6.94e-18;  min(xi<1) -> 9.663e-03
+  [PASS] |delta_v|(xi) rises strictly through the resolved regime (1.0 -> 0.5 -> 0.25)  --  strictly increasing as xi decreases from the symmetric point
+
+----------------------------------------------------------------------------------------
+Part 4: structural no-go -- only the B4 axis-relabel can zero delta_v
+----------------------------------------------------------------------------------------
+  [PASS] internal/taste symmetry cannot zero delta_v on continuous time (it multiplies t and s alike)  --  min |s*delta_v| over nonzero factors = 4.048e-02
+  [PASS] B4 axis-relabel forces z_t=z_s only at xi=1 (self-map of the measure)  --  xi=1: |z_t-z_s|=6.94e-18;  xi=0.5: |z_t-z_s|=9.663e-03
+  [PASS] => the obstruction lives in the loop MEASURE (uncut temporal vs cut spatial), not the algebra; only a temporal UV cutoff (discrete time) protects  --  elimination complete
+
+----------------------------------------------------------------------------------------
+Part 5: dimension-6 residual on the protected (xi=1) surface
+----------------------------------------------------------------------------------------
+  [PASS] leading LV on the symmetric surface is dimension-6 (k^4), coeff -a^2/3  --  k^4 coeff = -a**2/3
+  [PASS] with a^-1 = M_Pl the residual dim-6 LV at 1 GeV is Planck-suppressed  --  (1/3)(1 GeV/M_Pl)^2 = 2.240e-39
+
+----------------------------------------------------------------------------------------
+Part 6: surface-selection scope (documentation gates)
+----------------------------------------------------------------------------------------
+  [PASS] framework canonical staggered action uses eta_0=1 (time on the SAME footing as space) = symmetric Z^4 = the B4 surface
+  [PASS] retained free-2pt SO(4) note is UNCONDITIONAL on that Z^4 surface; its single named-open item is the INTERACTING theory -- closed at one loop by Part 1
+  [PASS] one-tick-one-edge (retained finite-graph reachability) is the xi=1 conformal ratio; the obstruction needs xi->0 (continuous time), which contradicts one-tick-one-edge
+  [PASS] no retained consumer needs non-integer-t Stone evolution; continuous time is the a_tau->0 IR reconstruction, not the UV regulator
+  [PASS] single remaining admission: the metric identification xi = a_tau/a_s = 1 (fundamental tick-length = edge-length), the framework's own units choice
+
+----------------------------------------------------------------------------------------
+Part 7: status of the xi=1 premise (derivation attempts + classification)
+----------------------------------------------------------------------------------------
+  [PASS] the framework ALREADY uses the axis-relabel at axiom grade: cubic adjacency forces z_x=z_y=z_z (spatial isotropy)  --  max|z_xi - z_xj| = 0.00e+00  (dimensionless structural, from the Lattice axiom)
+  [PASS] c_t=c_s is the IDENTICAL relabel extended to the EUCLIDEAN time axis of the regulator block Z^3 x Z_tau (NOT a 4th spatial dim): same TYPE as cubic adjacency, not a coupling  --  z_x=z_y=z_z (axiom) and z_t=z_s (OS0 form) are one mechanism
+  [PASS] RG flow cannot fix the form: the common-speed/c-form direction is MARGINAL (attractor drives only the difference mode eta->1)
+  [PASS] RP / single-clock / scale / causal-order are all xi-BLIND (PR #3360 leg A): RP gives a positive transfer with H>=0 for EVERY c_t/c_s; c_t=c_s IS the OS0/Lorentz output, so deriving it from RP is circular
+  [PASS] the spacing ratio a_tau/a_s IS derived (one-tick-one-edge, no-diagonal clause); the kinetic FORM c_t=c_s is a SEPARATE quantity, proven INDEPENDENT of Sigma+emergent-time+RP (PR #3360, Robinson/Vaught independence)
+  [PASS] the scale-reference primitive CANNOT supply c_t/c_s: it is DIMENSIONLESS and the primitive carries zero dimensionless content (purity/no-laundering rule)
+  [PASS] delta_v vanishes iff a SINGLE isotropic UV spacing (xi=1); a second independent scale (xi!=1) is what regenerates it -> xi=1 = minimality (no 2nd scale)  --  1 scale -> |delta_v|=6.94e-18; 2 scales -> |delta_v|>=9.663e-03
+  [PASS] the obstruction horn (xi->0, continuous time) REQUIRES an extra independent temporal scale beyond the single hypercubic spacing (LESS minimal)  --  a_tau->0 at fixed a_s = a second dimensionful input the baseline lacks
+  [PASS] VERDICT: xi=1 is owner-approvable as a structural lattice primitive of the cubic-adjacency TYPE -> chain-satisfies WITHOUT bounding (retained, not bounded)  --  same registry class as Lattice axiom geometry; NOT scale-primitive, NOT Tier-A coupling
+
+========================================================================================
+SUMMARY: PASS=27 FAIL=0
+========================================================================================

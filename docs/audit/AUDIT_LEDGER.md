@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 768 |
+| **retained_bounded** | 769 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1387 |
+| unaudited | 1386 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1198 |
+| `audited_clean` | 1199 |
 | `audited_conditional` | 14 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1702 |
+| `unaudited` | 1701 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 526 |
-| `high` | 450 |
-| `medium` | 775 |
+| `high` | 449 |
+| `medium` | 776 |
 | `leaf` | 1293 |
 
 - **Retained pending chain closure:** 12
@@ -1252,6 +1252,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | A | - |
 | `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_supermetric_normal_form_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universality_classifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17992,6 +17993,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Since the SO(3)-trivial block is pointwise fixed and the weighted norm is additive across Pi_A1 ⊕ Pi_perp, ||Pi_perp(h')||^2_d = ||h'||^2_d - ||Pi_A1(h')||^2_d = ||h||^2_d - ||Pi_A1(h)||^2_d = ||Pi_perp(h)||^2_d.  _(class `A`)_
 - **chain closes:** True — The theorem is a self-contained finite-dimensional linear-algebra statement using only R_3^T R_3 = I, spatial trace invariance, Frobenius norm invariance, and weighted orthogonality of the Pi_A1/Pi_perp split under isotropic spatial weights. No cited authority or physical bridge is needed for the scoped conclusion.
 - **rationale:** The load-bearing identities are exact algebra on the given representation and weight, and the isotropic-weight premise is explicitly tested by an anisotropic control. The runner source symbolically verifies T1 and T2, checks the concrete coordinate-movement witness and random generic movement, and does not hard-code a contested physical bridge or numerical comparator. The result is properly scoped as a pure SO(3) representation-theory theorem, not a universal-GR physical closure claim.
+- **auditor confidence:** high
+
+### `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the runner-defined finite-BZ scheme with D(q), V_cons, and S=-B0+B1+B5: leading longitudinal violation is cancelled in the tested channels and the yz TT stiffness remains positive for the tested masses.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-111801-1a43ec6581-universal_gr_stress_ward_tra`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the native elliptic 2x2 lattice Dirac operator and the runner-defined V_cons plus S=-B0+B1+B5 contact term, the finite Brillouin-zone computation removes the leading longitudinal residual to O(k0^3) while preserving positive yz TT stiffness.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the Pauli matrices, Dirac operator, vertices, seagull basis, and finite BZ sums directly, with no helper imports, external comparators, or hard-coded pass constants. The W-native metric-Hessian, exact all-k diffeomorphism Ward identity, and continuum isotropy/GR bridge are explicitly outside the audited claim scope.
+- **rationale:** The clean result is narrow and bounded: it certifies the displayed runner-defined finite lattice scheme, not a physical W-native induced-gravity closure. The provided code genuinely computes the determinant, Ward identities, residual scalings, TT slopes, and contact-basis solve from the displayed matrices and finite sums. Independent spot checks using the analytic inverse of D(q) reproduced the determinant identity, U(1) Ward identity, naive residual, seagulled O(k0^3) scaling, positive TT slopes, and near-integer contact coefficients.
 - **auditor confidence:** high
 
 ### `universal_gr_supermetric_normal_form_note`

@@ -46614,10 +46614,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "backreaction_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -90160,16 +90160,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "backreaction_note",
         "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
         "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08",
         "chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08",
         "clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08",
         "critical_exponents_topology_note_2026-04-10",
-        "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
+        "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "58158997e25253215ab0f5a72086b1382a81f70b5cd9be1447bf793036efe334",
+      "note_hash": "63d34cf06462a1db38c24b0d555ab1cf4293a5b506a12076959c06cddb1d96ae",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

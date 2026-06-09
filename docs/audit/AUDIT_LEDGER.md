@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 780 |
+| **retained_bounded** | 781 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1361 |
+| unaudited | 1360 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1216 |
+| `audited_clean` | 1217 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1676 |
+| `unaudited` | 1675 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 785 |
-| `leaf` | 1284 |
+| `medium` | 784 |
+| `leaf` | 1285 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -196,6 +196,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_entropy_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2393,6 +2394,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The bounded local checks are that K = log J gives the listed cumulants, the Euler closed-surface law gives cube and two-cube-box weights 18^{-5} and 18^{-9}, and the first non-K epsilon/baryon channel is only identified as an open beta^10 sector rather than a proved closure.  _(class `A`)_
 - **chain closes:** True — The scoped local identities close algebraically from the supplied SU(3) character/Picard-Fuchs inputs and standard Haar contraction rules, and the independent coefficient/root checks match the stated table. The full beta^9/beta^10 multi-cube classification is explicitly outside the claim scope.
 - **rationale:** The note is carefully scoped as an open gate, not a beta=6 closure, and its load-bearing checked claims are finite algebraic consequences of the supplied recurrence/ODE and SU(3) tensor rules. The runner does not recompute the omitted 48-support or marked-face sector classifications, but the source note explicitly excludes those from the theorem claim. Independent checks reproduce kappa_2 through kappa_5, the Euler weights 18^{-5} and 18^{-9}, the unique singlet in 3x3x3, and the listed nearest-root migration.
+- **auditor confidence:** high
+
+### `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the conditional tree-sector geometric product threshold R_tree(g_tree)=18/g_tree^(1/4), the beta=6 threshold g_tree<81, and the finite compact K-built 2x2x1 deficit obstruction; no full beta=6 convergence or plaquette value is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-123116-915c3dce8a-beta6_resummation_radius_gro`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the tree-like K-built sector, the contribution is bounded by a geometric k-sum with ratio g_tree |beta|^4 / 18^4, so R_tree(g_tree)=18/g_tree^(1/4) and R_tree>6 exactly when g_tree<81; the 2x2x1 four-cube block has k=4, s=4, F=16, n=15 and refutes the all-K-built fixed-increment bridge.  _(class `A`)_
+- **chain closes:** True — The cubical identities F=6k-2s, tree specialization s=k-1, n=F-1, and geometric-series threshold independently give the stated tree-sector formula and g_crit=81. The compact four-cube block has one excess shared face, giving F=16 and n=15, so the all-K-built extension is correctly blocked rather than claimed.
+- **rationale:** The load-bearing theorem is an algebraic closure over the stated sector definitions and retained-grade upstream recurrence/cumulant inputs, with the actual growth product g_tree left explicit rather than imported. The runner source performs exact rational/symbolic checks and finite cubical incidence enumeration rather than merely printing the threshold; the independent formula check confirms the Euler exponent, threshold 81, and deficit factor 9. The note also preserves the required negative boundary by not promoting the result to all K-built clusters or to the full connected series.
 - **auditor confidence:** high
 
 ### `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`

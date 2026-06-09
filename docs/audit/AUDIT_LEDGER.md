@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 782 |
+| **retained_bounded** | 783 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1358 |
+| unaudited | 1357 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1218 |
+| `audited_clean` | 1219 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1673 |
+| `unaudited` | 1672 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 784 |
-| `leaf` | 1285 |
+| `medium` | 786 |
+| `leaf` | 1283 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -111,7 +111,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1005 | 40.47 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 265 | 39.55 | `unaudited` | unaudited |
 | 10 | `native_gauge_closure_note` | positive_theorem | critical | 1250 | 39.29 | `audited_clean` | **retained** |
-| 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 603 | 39.24 | `audited_clean` | **retained** |
+| 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 604 | 39.24 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 803 | 38.65 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 694 | 38.44 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
@@ -278,6 +278,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -3614,6 +3615,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** A Clifford basis monomial gamma_S anticommutes with every generator only when S is the full generator set and n is even, so A_n={0} for odd n and A_n=span(omega) for even n.  _(class `A`)_
 - **chain closes:** True — The Clifford-basis parity calculation proves the iff statement internally, and over C the even-dimensional volume element can be phase-normalized to square +I. The cited accepted axiom premise supplies only d_s=3 via the Z^3 lattice, so even total dimension gives d_t odd without another dependency.
 - **rationale:** The load-bearing work is a genuine algebraic identity/closure, not a definition, renaming, numerical comparator, or tuned-scale match. The runner source performs finite explicit Clifford-matrix checks and does not import contested values; the general proof in the note supplies the dimension-independent closure. The only upstream authority is flagged as an accepted axiom premise and is used correctly for the Z^3 to d_s=3 specialization.
+- **auditor confidence:** high
+
+### `clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08`
+
+- **Note:** [`CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md`](../../docs/CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the algebra/counting decoupling between the retained Cl(3,1) gamma extension and the retained naive-lattice 2^d species-corner count; no emergent-time gamma supply, massive field realization, or magnitude-wall closure is established.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-124009-7079413f42-clifford_gamma_not_lattice_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A Clifford generator/gamma extension is a matrix-algebra object, while a lattice species corner is a Brillouin-zone zero; the resulting spinor dimension 4 is not the naive-lattice species count 16.  _(class `A`)_
+- **chain closes:** True — The cited retained Clifford authority supplies the gamma/spinor extension, and the cited retained lattice authority supplies the 2^d corner count. The source conclusion only separates these objects and therefore closes within its stated bounded scope.
+- **rationale:** The load-bearing step is a class-A algebraic/counting distinction over retained-grade inputs: a Clifford generator is not a momentum-space corner, and 4 spinor components are not 16 naive species corners. The runner source performs lightweight finite checks of Pauli/Dirac matrix sizes, gamma5 balance, sin(k) zeros, and powers of two; the independent audit route is the cited Clifford and lattice theorems plus the object-type distinction. The source note's guardrails prevent the clean result from being overread as emergent-time field construction or missing-corner wall closure.
 - **auditor confidence:** high
 
 ### `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`

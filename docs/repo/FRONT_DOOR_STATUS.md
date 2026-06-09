@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1392 |
-| Retained-grade rows, including boxed decorations | 1264 |
+| Applied audit verdicts | 1393 |
+| Retained-grade rows, including boxed decorations | 1265 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 795 |
+| Retained bounded rows | 796 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1335 |
+| Unaudited rows | 1334 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1337 |
-| Ready rows | 23 |
+| Total pending rows | 1336 |
+| Ready rows | 22 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 393 |
+| Leaf pending | 392 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`nonlabel_grown_drift_basin_note`](../../docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md) - medium; unaudited
 - [`plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`post_record_selector_tangent_readout_weight_prototype_2026-06-06`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06`](../../docs/RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06`](../../docs/RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md) - medium; unaudited
-- [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - leaf; unaudited
+- [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
+- [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,16 +82,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3181 |
 | Critical nodes | 529 |
 | High nodes | 452 |
-| Medium nodes | 827 |
-| Leaf nodes | 1373 |
+| Medium nodes | 832 |
+| Leaf nodes | 1368 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1386 descendants; score 100.438
-- `three_generation_observable_theorem_note` - critical; 765 descendants; score 61.081
+- `three_generation_observable_theorem_note` - critical; 766 descendants; score 61.083
 - `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
 - `graph_first_su3_integration_note` - critical; 1282 descendants; score 52.825
 - `minimal_axioms_2026-05-03` - critical; 490 descendants; score 47.940
-- `key_terminology` - critical; 1017 descendants; score 44.492
+- `key_terminology` - critical; 1018 descendants; score 44.493
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1198 descendants; score 42.728
 - `anomaly_forces_time_theorem` - critical; 1005 descendants; score 40.474

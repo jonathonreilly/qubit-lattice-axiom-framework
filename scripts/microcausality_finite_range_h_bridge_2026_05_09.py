@@ -6,7 +6,8 @@ Companion to
 The companion note narrows the gap on the parent microcausality note
 `AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`
 by checking bounded action-density support and a conservative local
-J budget from the action coefficients (parent RP note eqs. 1-2). It
+J budget from the symmetric-canonical action coefficients (parent RP
+note eqs. 1-2 plus the retained Wilson-diagonal surface). It
 does not construct the exact reconstructed logarithmic Hamiltonian
 H = -log(T)/a_tau.
 
@@ -19,7 +20,7 @@ This runner provides numerical certificates for:
   F2. Explicit J bound: construct the local Hamiltonian density h_z
       on random SU(3) backgrounds; compare ||h_z||_op against the
       conservative closed-form J_max from action coefficients
-      (|m| + d/2 + r_W * d + 2 * (β/N_c) * d(d-1)/2). Verify
+      (|m| + d/2 + r_W * d + 2 * β * d(d-1)/2). Verify
       ||h_z||_op <= J_max configuration-by-configuration.
 
   F3. Lieb-Robinson velocity: conditional v_LR = 2 e r J computation
@@ -205,10 +206,12 @@ def test_F2_explicit_J_bound() -> bool:
     print(f"  d={d}, r_W={r_W}, m={m}, β={beta}, N_c={N_c}")
 
     # Conservative closed-form J_max bound from the note.
-    # J_max = |m| + d/2 + r_W*d + 2*(β/N_c)*d(d-1)/2.
-    J_max = abs(m) + d / 2 + r_W * d + 2 * (beta / N_c) * d * (d - 1) / 2
-    print(f"  J_max (from action) = |m| + d/2 + r_W·d + 2·(β/N_c)·d(d-1)/2")
-    print(f"                       = {abs(m)} + {d/2} + {r_W * d} + {2 * (beta/N_c) * d*(d-1)/2}")
+    # J_max = |m| + d/2 + r_W*d + 2*β*d(d-1)/2.
+    # The parent Wilson action is β * Re[1 - tr(U_P)/N_c]; the 1/N_c
+    # lives inside the trace average and is not an additional multiplier.
+    J_max = abs(m) + d / 2 + r_W * d + 2 * beta * d * (d - 1) / 2
+    print(f"  J_max (from action) = |m| + d/2 + r_W·d + 2·β·d(d-1)/2")
+    print(f"                       = {abs(m)} + {d/2} + {r_W * d} + {2 * beta * d*(d-1)/2}")
     print(f"                       = {J_max}")
     print()
 
@@ -239,7 +242,7 @@ def test_F2_explicit_J_bound() -> bool:
         wilson_contrib = r_W * d
         # Mass: |m|
         mass_contrib = abs(m)
-        # Plaquette: (β/N_c) * |1 - tr(U_P)/N_c| for each plaquette
+        # Plaquette: β * |1 - tr(U_P)/N_c| for each plaquette
         # On Z^d there are d(d-1)/2 plaquettes per corner (after sharing factor)
         plaq_contrib = 0.0
         n_plaq = d * (d - 1) // 2
@@ -251,9 +254,9 @@ def test_F2_explicit_J_bound() -> bool:
             U4 = random_su3(rng, scale=scale)
             U_P = U1 @ U2 @ U3.conj().T @ U4.conj().T
             tr_factor = abs(1.0 - np.trace(U_P).real / N_c)  # |1 - Re(tr U_P)/N_c| ≤ 2
-            # The plaquette term in h_z is (β/N_c) * Re[1 - tr(U_P)/N_c] (a c-number multiplier),
-            # so its contribution to ||h_z||_op is (β/N_c) * tr_factor
-            plaq_contrib += (beta / N_c) * tr_factor
+            # The plaquette term in h_z is β * Re[1 - tr(U_P)/N_c] (a c-number multiplier),
+            # so its contribution to ||h_z||_op is β * tr_factor
+            plaq_contrib += beta * tr_factor
         # Per-site bound: total is sum of pieces above
         h_z_norm = mass_contrib + hop_contrib + wilson_contrib + plaq_contrib
         max_observed = max(max_observed, h_z_norm)
@@ -295,7 +298,7 @@ def test_F3_v_LR_explicit() -> bool:
     g_bare = 1.0
     N_c = 3
     beta = 2 * N_c / g_bare ** 2
-    J_max = abs(m) + d / 2 + r_W * d + 2 * (beta / N_c) * d * (d - 1) / 2
+    J_max = abs(m) + d / 2 + r_W * d + 2 * beta * d * (d - 1) / 2
     v_LR = 2 * math.e * r * J_max
     print(f"  Conditionally plugging r_action = {r} (F1) and J = {J_max:.4f} (F2):")
     print(f"  v_LR = 2 · e · r · J = 2 · {math.e:.6f} · {r} · {J_max:.4f}")
@@ -462,7 +465,7 @@ def main() -> None:
     print()
     print("Narrows the gap on AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md")
     print("by checking action-density support and a conservative J budget from the")
-    print("canonical staggered + Wilson + plaquette coefficients (parent RP note eqs. 1-2).")
+    print("symmetric-canonical staggered + Wilson-diagonal + plaquette coefficients.")
     print()
     print("References:")
     print("  - Bridge note: docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md")
@@ -492,7 +495,7 @@ def main() -> None:
     print("It does not construct the exact reconstructed logarithmic H. Cited authority chain:")
     print("  - parent RP note (action carriers)")
     print("  - hopping_bilinear_hermiticity (B2, B4 for translation-covariance)")
-    print("  - staggered_wilson_det_positivity_bridge (M_W = r_W d I form)")
+    print("  - staggered_wilson_det_positivity_bridge (retained M_W = r_W d I surface)")
     print()
 
     if not all_ok:

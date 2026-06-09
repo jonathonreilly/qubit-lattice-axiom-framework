@@ -2,16 +2,16 @@
 
 **Date:** 2026-05-09
 **Type:** bounded_theorem
-**Claim scope:** On the canonical staggered + Wilson action-density
-surface read off the parent reflection-positivity note's action
-carriers
+**Claim scope:** On the symmetric-canonical staggered +
+Wilson-diagonal + Wilson-plaquette action-density surface read off
+from the parent reflection-positivity note's action carriers
 ([`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
 eq. (1) for `M = M_KS + M_W + m·I` and eq. (2) for the Wilson plaquette
 gauge action), the leading local action-density pieces have bounded
 site support radius `r_action <= 2` in the lattice `l1` metric
 (nearest-neighbor matter terms plus elementary plaquettes) and a
 conservative gauge-background-independent operator-norm bound
-`J_action <= |m| + 30` at `d = 4`, `r_W = 1`, `β = 6`, `N_c = 3`.
+`J_action <= |m| + 78` at `d = 4`, `r_W = 1`, `β = 6`, `N_c = 3`.
 If an exact reconstructed Hamiltonian decomposition `H = sum_z h_z`
 with compatible finite-range/quasilocal constants is independently
 established, the standard Hastings-Koma / Nachtergaele-Sims estimate
@@ -81,7 +81,9 @@ Adopt the parent reflection-positivity note's action carriers verbatim:
   `M_KS`; on the symmetric-canonical surface
   (`STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`),
   `M_W = r_W · d · I` so its operator-norm contribution is the diagonal
-  bound `r_W · d`.
+  bound `r_W · d`. This note uses that retained symmetric-canonical
+  Wilson surface; it does not separately derive that diagonal surface
+  from the full standard Wilson nearest-neighbor action.
 
 - **Mass term** from parent eq. (1): `m · I`, contributing `|m|` to
   the local-density operator norm.
@@ -131,7 +133,7 @@ operator-norm `J_action = sup_z ‖h_z‖_op`
 satisfies the **explicit gauge-background-independent bound**
 
 ```text
-    J_action  ≤  J_max  :=  (d/2) · 1   +   r_W · d   +   |m|   +   (2β / N_c) · q_face       (5)
+    J_action  ≤  J_max  :=  (d/2) · 1   +   r_W · d   +   |m|   +   2β · q_face               (5)
 ```
 
 where:
@@ -144,15 +146,15 @@ where:
   (per `STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`
   using `M_W = r_W · d · I` with `r_W = 1`);
 - `|m|` is the mass term operator norm;
-- `(2β / N_c) · q_face` is the conservative gauge plaquette
+- `2β · q_face` is the conservative gauge plaquette
   contribution, with `q_face = d(d-1)/2` plaquette orientations
   assigned to the local site. The factor 2 comes from
   `|1 - Re tr(U_P)/N_c| <= 2`, using `|tr U_P| <= N_c` for unitary
   `U_P`.
 
 In particular, on `Z^4` at `g_bare = 1, N_c = 3, β = 6, r_W = 1, m`
-real, plug-in: `J_max = 4/2 + 1·4 + |m| + (2·6/3)·6 =
-2 + 4 + |m| + 24 = 30 + |m|`.
+real, plug-in: `J_max = 4/2 + 1·4 + |m| + (2·6)·6 =
+2 + 4 + |m| + 72 = 78 + |m|`.
 
 `J_max` does NOT depend on the gauge background `{U_μ}`, on the lattice
 volume, or on any spectral data of `T`. It depends only on the fixed
@@ -251,7 +253,7 @@ at `z`:
 ```text
     h_z  =  m · n̂_z   +   (1/2) Σ_{μ} [ η_μ(z) U_μ(z) c̄_z c_{z+e_μ} + h.c. ]
             +  r_W · n̂_z (Wilson diagonal)
-            +  (β / N_c) Σ_{P ∋ z} Re[1 - (1/N_c) tr U_P]                  (10)
+            +  β Σ_{P ∋ z} Re[1 - (1/N_c) tr U_P]                          (10)
 ```
 
 Each summand is bounded in operator norm:
@@ -267,24 +269,24 @@ Each summand is bounded in operator norm:
   value is shared, so the operator-norm bound is `(d/2) · 1 = d/2`.)
 - **Wilson diagonal:** ‖r_W · d · I‖_op = r_W · d (parent §3a
   symmetric-canonical surface).
-- **Plaquette:** ‖(β / N_c) Re[1 - (1/N_c) tr U_P]‖_op
-  ≤ (β / N_c) · |1 - (1/N_c) tr U_P| ≤ (β / N_c) · 2 · 1 = 2β/N_c
+- **Plaquette:** ‖β Re[1 - (1/N_c) tr U_P]‖_op
+  ≤ β · |1 - (1/N_c) tr U_P| ≤ 2β
   per plaquette (using `|tr U_P| ≤ N_c` for unitary U_P, hence
   `|1 - (1/N_c) tr U_P| ≤ 2`). Summing over plaquette orientations
   assigned to `z`, there are `d(d-1)/2` such plaquettes. The
   conservative per-site bound is therefore
-  `(β/N_c) · 2 · d(d-1)/2 = (2β/N_c) · d(d-1)/2`.
+  `2β · d(d-1)/2`.
 
 Triangle inequality on (10):
 
 ```text
-    ‖h_z‖_op  ≤  |m|  +  d/2  +  r_W · d  +  (2β/N_c) · d(d-1)/2          (11)
+    ‖h_z‖_op  ≤  |m|  +  d/2  +  r_W · d  +  2β · d(d-1)/2               (11)
 ```
 
 For `d = 4, r_W = 1, β = 6, N_c = 3`:
 
 ```text
-    J_max  ≤  |m|  +  2  +  4  +  4 · 6  =  |m|  +  30                     (12)
+    J_max  ≤  |m|  +  2  +  4  +  12 · 6  =  |m|  +  78                    (12)
 ```
 
 This is a closed-form bound depending only on the action coefficients,
@@ -315,11 +317,11 @@ Conditionally substituting the leading action-support radius
 `r_action <= 2` and `J ≤ J_max` from F2 into the standard HK/NS bound:
 
 ```text
-    v_LR  ≤  2 · e · 2 · J_max  =  4 · e · (|m| + 30)                      (14)
+    v_LR  ≤  2 · e · 2 · J_max  =  4 · e · (|m| + 78)                      (14)
 ```
 
-For massless / small-mass surfaces (`|m| → 0` continuum limit) this
-gives `v_LR ≤ 120 · e ≈ 326.19` in lattice units, which converts to the
+For massless / small-mass surfaces (`|m| -> 0` continuum limit) this
+gives `v_LR ≤ 312 · e ≈ 848.10` in lattice units, which converts to the
 emergent speed of light `c` via the lattice-spacing ratio
 `v_LR · a_s / a_τ → c < ∞` (parent (M3); see also
 `docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md` for the fixed-slope limit).
@@ -366,8 +368,8 @@ exact non-perturbative finite-range/quasilocal control of
 
 C2. **Explicit conditional numerical v_LR.** On the canonical surface
 (`d = 4, r_W = 1, β = 6, N_c = 3, m_phys`), the action-density bound
-gives `v_LR ≤ 4·e·(|m_phys| + 30) ≈ 120·e ≈ 326.19` lattice units for
-`|m_phys| → 0`, conditional on an exact-H locality bridge preserving
+gives `v_LR ≤ 4·e·(|m_phys| + 78) ≈ 312·e ≈ 848.10` lattice units for
+`|m_phys| -> 0`, conditional on an exact-H locality bridge preserving
 the leading `r_action <= 2` support radius.
 
 C3. **Compatibility with cluster-decomposition note.** The companion
@@ -378,7 +380,7 @@ not a load-bearing dependency of the present action-support result.
 
 C4. **Higher-order Trotter / BCH corrections.** The leading-order
 bounded action-support structure receives BCH corrections of order
-`a_τ · J_max ≈ a_τ · 30`. For sufficiently small `a_τ` (the canonical
+`a_τ · J_max ≈ a_τ · 78`. For sufficiently small `a_τ` (the canonical
 fine-temporal-lattice surface), these corrections are exponentially
 suppressed and preserve the lightcone structure. A separate fully
 non-perturbative bound on the BCH corrections is recorded as the

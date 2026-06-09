@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 776 |
+| **retained_bounded** | 777 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1370 |
+| unaudited | 1369 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1209 |
+| `audited_clean` | 1210 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1685 |
+| `unaudited` | 1684 |
 
 | claim_type | count |
 |---|---:|
@@ -406,6 +406,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `fifth_family_radial_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_repaired_positive_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fine_h_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5506,6 +5507,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The finite replay path is not a trivial printout or hard-coded row: it builds the grown slice, radial-shell connectivity, field, propagation, and detector centroid from framework code. The exact zero and neutral rows are independently explained by the code path because empty sources and same-point +1/-1 sources produce the same zero field used in the baseline replay. However, the source note now relies on an independent orientation certificate, and the packet includes only the parent runner's cache/live-output substring validation for that certificate, not the certificate source. Runner PASS output alone is insufficient for audited_clean under the formula-inventory rule.
 - **open / conditional deps cited:**
   - `scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py`
+- **auditor confidence:** high
+
+### `fifth_family_radial_note`
+
+- **Note:** [`FIFTH_FAMILY_RADIAL_NOTE.md`](../../docs/FIFTH_FAMILY_RADIAL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite sampled radial-shell sweep for targets (0.05,0), (0.20,0), and (0.30,1) in scripts/FIFTH_FAMILY_RADIAL_SWEEP.py.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-120903-e9fa138c12-fifth_family_radial_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the no-restore grown-slice harness, the radial-shell fifth-family connectivity rule has two sampled rows, drift=0.05 seed=0 and drift=0.30 seed=1, satisfying the declared finite gates, with drift=0.20 seed=0 only an orientation boundary.  _(class `C`)_
+- **chain closes:** True — The primary runner and helper sources construct the no-restore grown slice, radial-shell connectivity, source fields, propagation, and centroid readout, then compute the row gates rather than printing constants. Independent table arithmetic confirms two passing rows, drift coverage [0.05, 0.3], and the 0.20/0 boundary sign flip with zero and neutral controls clean.
+- **rationale:** The load-bearing claim is bounded to three sampled rows and is directly supported by the completed cached run with source and transitive helper code present. The helper chain contains fixed harness parameters and target samples, but no external comparator, imported fitted value, or hard-coded contested output; the final assertions depend on computed gate values. The one-hop cited basin authority is marked retained_bounded, which is retained-grade under the rubric, and it is not needed to broaden the audited scope beyond the finite sweep.
 - **auditor confidence:** high
 
 ### `fifth_family_radial_repaired_positive_packet_note_2026-05-29`

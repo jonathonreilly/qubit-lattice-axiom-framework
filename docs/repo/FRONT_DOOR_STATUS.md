@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1357 |
-| Retained-grade rows, including boxed decorations | 1240 |
+| Applied audit verdicts | 1358 |
+| Retained-grade rows, including boxed decorations | 1241 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 204 |
-| Retained bounded rows | 776 |
+| Retained bounded rows | 777 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1370 |
+| Unaudited rows | 1369 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 19 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1372 |
+| Total pending rows | 1371 |
 | Ready rows | 54 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
-| Medium pending | 366 |
+| Medium pending | 365 |
 | Leaf pending | 427 |
 
 Next ready rows by queue order:
 
-- [`fifth_family_radial_note`](../../docs/FIFTH_FAMILY_RADIAL_NOTE.md) - medium; unaudited
+- [`magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md) - medium; unaudited
 - [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - medium; unaudited
 - [`flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
 - [`framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30`](../../docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md) - medium; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`post_record_measure_weight_normalization_subdivision_2026-06-06`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md) - medium; unaudited
-- [`magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md) - medium; unaudited
+- [`universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

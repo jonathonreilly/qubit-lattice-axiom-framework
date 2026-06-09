@@ -1,0 +1,52 @@
+========================================================================================
+PHASE-CONTENT RETIREMENT: |delta| CONDITIONAL ONLY ON THE CARRIER GATE
+========================================================================================
+
+----------------------------------------------------------------------------------------
+P1: the selector, re-verified independently (the no-gos' falsifier doors, entered)
+----------------------------------------------------------------------------------------
+  [PASS] site-parity eps on the three same-parity hw=1 corners is SCALAR (-I): it CANNOT split the rank-2 doublet (the mark-class no-gos' verdict, re-verified)
+  [PASS] Clifford chirality gamma5 = diag(+1,-1) is NON-scalar on the rank-2 sector; P+ = (1+gamma5)/2 has trace 1 and rank 1: a UNIQUE rank-one line is selected
+  [PASS] domain-wall single-summand: the SELECTED (+) line reads the LOCAL fixed-locus density 2/9 while the GLOBAL index vanishes (Nielsen-Ninomiya consistent)
+  [PASS] gamma5 ANTICOMMUTES with the (chirality-odd) massless operator: it is OUTSIDE the scalar Wilson/APS mark algebra {D,U,U^dag,P(D)} -- entering exactly the falsifier doors the retained no-gos name (their scope is respected, not violated)
+
+----------------------------------------------------------------------------------------
+P2: the endpoint gate closed CORRECTLY -- c is open-section GAUGE; the physical cycle is CLOSED (read-the-no-go correction)
+----------------------------------------------------------------------------------------
+  [PASS] the generation cycle is CLOSED: C^3 = identity (no open endpoint exists on the physical cycle)
+  [PASS] the no-go's lift mechanism re-verified: psi -> e^{ist} psi leaves the projector |psi><psi| pointwise UNCHANGED (gauge), while the open-endpoint phase arg<psi(0)|psi(T)> shifts by sT (computed)  --  c = the gauge parameter of an OPEN based section -- the no-go's own text
+  [PASS] CLOSED-loop holonomy around the 3-cycle is invariant under arbitrary per-site rephasing (computed); the OPEN partial product is NOT -- the registrable phase of the closed cycle carries no endpoint freedom  --  gauge-invariant content = the loop holonomy; c lives only on open sections
+  [PASS] => GATE (b) CLOSES at the registrable level: records register gauge/frame-invariant content; the physical C_3 cycle is closed, its lift-invariant phase is the loop holonomy (= the equivariant defect), and the endpoint freedom c is UNREGISTRABLE open-section gauge -- not 'forced to zero' but not physical. This answers the no-go's falsifier door #3 by showing no basepoint theorem is NEEDED for the closed-cycle reading  --  the selector note's caution (parity does not fix the lift) is respected, not violated
+
+----------------------------------------------------------------------------------------
+P3: the unit -- consumed from the chain runner's E8 dissolution
+----------------------------------------------------------------------------------------
+  [PASS] the pi-packaging's registrable carrier remains closed (multiplicative lemma re-verified: phase character k = 0 forced); period-1 = the unique zero-import reading (E8, consumed)
+
+----------------------------------------------------------------------------------------
+P4: the assembly -- |delta| = 2/9 conditional ONLY on carrier-gate content
+----------------------------------------------------------------------------------------
+  [PASS] the retained arithmetic re-verified: L_3(1,2) = 2/9 EXACT
+  [PASS] ASSEMBLY: |delta|_registered = |eta of the chirality-selected line| = L_3(1,2) = 2/9, with (i) the selector native and outside the no-go algebras (P1), (ii) the endpoint forced/stripped (P2), (iii) the unit dissolved (P3), (iv) the sign stripped (orientation result). The ONLY remaining conditions are the carrier gate's own realization statements: (a) the rooting/continuum reduction and (c) the edge-as-physical-carrier prescription -- NEITHER is a phase-specific input  --  no phase-specific admission survives
+
+----------------------------------------------------------------------------------------
+P5: the Tier-A retirement map (mechanical where possible)
+----------------------------------------------------------------------------------------
+  [PASS] the AC_phi_lambda registered statement names exactly {C_3-breaking phase/orientation, sector->species bridge (naming = convention)} (read mechanically from the live registry)
+  [PASS] orientation -> convention (the orientation strip, PR #3420)
+  [PASS] species bridge -> convention (the registry's own strip)
+  [PASS] |delta| -> COMPUTED (this chain: selector + density + forced endpoint + dissolved unit)
+  [PASS] => the entry's surviving content is the REALIZATION SCHEME alone (which staggered operator class) -- the phase input is fully retired from the admission statement, conditional on audit ratification of this chain
+  [PASS] the remaining piece (the scheme itself) has a named in-flight forcing note (staggered_scheme_forced_by_one_qubit_per_site_locality); its CURRENT ledger status is read mechanically and recorded -- not claimed retained  --  ledger: {'staggered_scheme_forced_by_one_qubit_per_site_locality_narrow_theorem_note_2026-06-06': 'unaudited'}
+
+----------------------------------------------------------------------------------------
+P6: honest scope
+----------------------------------------------------------------------------------------
+  [PASS] gates (a) rooting/continuum and (c) edge-as-carrier are NOT closed here: they are the carrier gate's own open content (realization statements)
+  [PASS] the selector companion note is UNAUDITED; its load-bearing math is re-verified independently above (P1), but audit ratification is the lane's call
+  [PASS] falsifiers unchanged and live: m_tau precision pulling delta_fit off 2/9; the #3404 neutrino program kill conditions; the quaternionic factor-4
+  [PASS] this note proposes the retirement map; the Tier-A registry is audit-lane owned and is not edited
+
+========================================================================================
+SUMMARY: PASS=21 FAIL=0
+========================================================================================

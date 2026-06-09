@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_quintic_diffeo_ward_closure.py
+runner_sha256: ffc3cdeec0d3aab09639e7c0ecb29f3b65ec9f3980de7608dab198b8b5c44426
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 174.23
+status: ok
+----- stdout -----
+PASS T1 CONSERVED quintic resid/amplitude FAR below NAIVE at L=6: 0.00397 vs 0.08495 (naive/conserved=21x) -> closure vs non-closure
+PASS T2 ROBUST across amplitude: conserved << naive at amp 0.04 (20x) and 0.09 (33x) -> genuine, not a finite-diff artifact
+PASS T3 CONSERVED quintic resid/amplitude DECREASES L=6->L=8 (0.00397@k1.05 -> 0.00001@k0.79, toward the numerical floor); NAIVE flat (0.0850 -> 0.0907) -> continuum closure
+
+The QUINTIC (n=5) graviton diffeomorphism Ward identity also closes with the conserved coupling
+D(P_eff) + sqrt(g) measure: the residual normalized by the amplitude is robustly ~20-33x below the
+naive (non-conserved) coupling's and decreases with k toward the numerical floor. So the W-native
+induced graviton's nonlinear-diffeomorphism-invariance closure pattern continues BEYOND QUARTIC
+(cubic #3342, quartic #3353, synthesis #3356). The conserved velocity x momentum coupling is
+essential at every order. Magnitude registered (G3).
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

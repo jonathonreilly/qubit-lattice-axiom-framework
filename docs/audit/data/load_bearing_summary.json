@@ -19,8 +19,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 100.438,
-      "transitive_descendants": 1386
+      "load_bearing_score": 100.437,
+      "transitive_descendants": 1385
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
@@ -49,8 +49,8 @@
     {
       "claim_id": "key_terminology",
       "criticality": "critical",
-      "load_bearing_score": 44.493,
-      "transitive_descendants": 1018
+      "load_bearing_score": 44.492,
+      "transitive_descendants": 1017
     },
     {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",

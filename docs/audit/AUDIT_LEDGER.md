@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 210 |
-| **retained_no_go** | 204 |
+| **retained_no_go** | 205 |
 | **retained_bounded** | 777 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1367 |
+| unaudited | 1366 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1211 |
+| `audited_clean` | 1212 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1682 |
+| `unaudited` | 1681 |
 
 | claim_type | count |
 |---|---:|
@@ -101,12 +101,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1386 | 100.44 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1385 | 100.44 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 765 | 61.08 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 853 | 58.24 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1281 | 52.82 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 490 | 47.94 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1018 | 44.49 | `unaudited` | meta |
+| 6 | `key_terminology` | meta | critical | 1017 | 44.49 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1198 | 42.73 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1005 | 40.47 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 265 | 39.55 | `unaudited` | unaudited |
@@ -460,6 +460,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_zdet_fermionic_statistics_admission_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -6239,6 +6240,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the supplied path r(t)=tanh(t)^4, dr/dt=4 tanh(t)^3 sech(t)^2>0 for finite t>0, so r=1/2 is crossed as a transit value rather than selected as an attractor.  _(class `A`)_
 - **chain closes:** True — The retained Koide lightcone authority supplies Q=2/3 iff r=1/2 on the stated positive C3-circulant line, and the map/path claims reduce to direct algebra and calculus. The physical/native arrow-selection bridge is not closed, but the note explicitly excludes that broader claim from scope.
 - **rationale:** The load-bearing math is a genuine algebraic/calculus closure over the supplied maps and path: the inverse identities, fixed points, derivatives, monotonicity, endpoint limits, and r=1/2 crossing all check independently. The runner source performs actual symbolic and numerical checks rather than merely printing pass constants, and it does not import the contested native-beta premise as a derived result. The verdict is clean only for the narrowed bounded route-pruning statement; it does not promote r(t)=tanh(t)^4 to a framework-native beta law or decide the physical arrow.
+- **auditor confidence:** high
+
+### `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`
+
+- **Note:** [`FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the formal F1-F3 route-pruning claim: on the supplied finite C3 carrier and supplied Q coordinate, the tracial/product/modular reference selects dimension weights (1,2), not equal-block weights (1,1).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-f55b5a92d2-flavor_tracial_reference_doe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For rho=I_3/3, Tr(rho e0):Tr(rho e1)=1/3:2/3=1:2, so the tracial/product/modular route gives dimension weighting r=1 and Q=1, not equal-block r=1/2 and Q=2/3.  _(class `A`)_
+- **chain closes:** True — The finite matrix algebra closes: e0 has rank 1, e1 has rank 2, and the normalized trace assigns block masses proportional to those ranks. With the cited retained-grade Q-coordinate algebra, this gives Q=1 rather than Q=2/3 under the tracial route.
+- **rationale:** The load-bearing step is a finite algebraic trace/rank computation over explicit formal hypotheses, not a physical-generation bridge or empirical comparator. The cited authorities are retained-grade for the needed record-function and bounded block-weight algebra, and the source explicitly withholds any claim that F1-F2 are the physical flavor carrier or measured-mass readout. The no-go discipline gate is satisfied only in the narrow sense: this prunes the tracial/product/modular selector route and leaves non-tracial, chiral, finite-gap, and explicit block-measure routes open.
 - **auditor confidence:** high
 
 ### `flavor_value_campaign_capstone_four_channel_2026-05-31`

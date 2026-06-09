@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1360 |
-| Retained-grade rows, including boxed decorations | 1241 |
+| Applied audit verdicts | 1361 |
+| Retained-grade rows, including boxed decorations | 1242 |
 | Retained positive theorems | 210 |
-| Retained no-go rows | 204 |
+| Retained no-go rows | 205 |
 | Retained bounded rows | 777 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1367 |
+| Unaudited rows | 1366 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 20 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1369 |
-| Ready rows | 52 |
+| Total pending rows | 1368 |
+| Ready rows | 51 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 425 |
+| Leaf pending | 424 |
 
 Next ready rows by queue order:
 
-- [`flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
 - [`framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30`](../../docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md) - medium; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`post_record_measure_weight_normalization_subdivision_2026-06-06`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md) - medium; unaudited
 - [`universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`backreaction_note`](../../docs/BACKREACTION_NOTE.md) - medium; unaudited
-- [`beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`](../../docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md) - leaf; unaudited
+- [`beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`](../../docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
+- [`chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08`](../../docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -87,11 +87,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1386 descendants; score 100.438
+- `minimal_axioms` - critical; 1385 descendants; score 100.437
 - `three_generation_observable_theorem_note` - critical; 765 descendants; score 61.081
 - `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
 - `graph_first_su3_integration_note` - critical; 1281 descendants; score 52.824
 - `minimal_axioms_2026-05-03` - critical; 490 descendants; score 47.940
-- `key_terminology` - critical; 1018 descendants; score 44.493
+- `key_terminology` - critical; 1017 descendants; score 44.492
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1198 descendants; score 42.728
 - `anomaly_forces_time_theorem` - critical; 1005 descendants; score 40.474

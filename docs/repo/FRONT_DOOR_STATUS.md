@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3047 |
-| Applied audit verdicts | 1405 |
+| Applied audit verdicts | 1404 |
 | Retained-grade rows, including boxed decorations | 1276 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 808 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 37 |
-| Unaudited rows | 1324 |
+| Unaudited rows | 1325 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 31 |
+| Audited conditional rows | 30 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 16 |
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1326 |
-| Ready rows | 6 |
+| Total pending rows | 1327 |
+| Ready rows | 7 |
 | Cycle-break targets | 16 |
 | Critical pending | 328 |
 | High pending | 253 |
-| Medium pending | 364 |
+| Medium pending | 365 |
 | Leaf pending | 381 |
 
 Next ready rows by queue order:
@@ -49,6 +49,7 @@ Next ready rows by queue order:
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - medium; unaudited
 - [`universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

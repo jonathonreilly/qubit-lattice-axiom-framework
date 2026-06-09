@@ -1,0 +1,58 @@
+========================================================================================
+AC_PHI_LAMBDA COMPENSATION BASIS: CONVENTION-GRADE, WITH CASCADE MECHANICS
+========================================================================================
+
+----------------------------------------------------------------------------------------
+V1: complementation -- a C_3-equivariant bijection between the triplets
+----------------------------------------------------------------------------------------
+  [PASS] b -> 1-b is a bijection hw=1 <-> hw=2 (computed on the corner cube)
+  [PASS] complementation COMMUTES with the C_3[111] rotation on every corner (equivariance, computed) => 'which triplet' is a frame choice
+
+----------------------------------------------------------------------------------------
+V2: identical structure on both triplets -- same 3-cycle, same density
+----------------------------------------------------------------------------------------
+  [PASS] the C_3 acts as a FREE 3-cycle on hw=1 AND on hw=2 (computed)
+  [PASS] the fixed-locus density is the SAME for either assignment (one axis, one rotation, forced weights): L_3(1,2) = 2/9 (re-verified)
+
+----------------------------------------------------------------------------------------
+V3: the registrable mass multiset is assignment-blind (exact)
+----------------------------------------------------------------------------------------
+  [PASS] the determinant identity e3 = a^3 - 3aB^2 + 2B^3 cos(3 delta) holds EXACTLY (so the multiset depends on delta only through cos 3delta -- relabeling and orientation cannot move anything registrable)  --  symmetric functions are slot-permutation invariant by construction
+
+----------------------------------------------------------------------------------------
+V4: naming = order-matching = already-stripped convention (live registry)
+----------------------------------------------------------------------------------------
+  [PASS] the registry's own AC_phi_lambda statement strips naming: 'bare e/mu/tau naming is a convention, not a derivation target' (grep on the live registry)
+
+----------------------------------------------------------------------------------------
+V5: the precedent -- the CONVENTIONS class is non-bounding (live registry)
+----------------------------------------------------------------------------------------
+  [PASS] the registry's CONVENTIONS class exists and holds Y0 and g_bare, each marked 'vacuous ... convention' with a compensation-style basis (Y0: ratios-not-absolute; g_bare: rescaling identity)
+  [PASS] the registry's own description states the bounding rule lives at the CLASS level: derivation targets bound dependents; the basis pattern for entering the conventions class is a compensation theorem (the Y0 route this note follows)  --  class semantics, not per-row flags
+
+----------------------------------------------------------------------------------------
+V6: the proposal (text only; registry NOT edited)
+----------------------------------------------------------------------------------------
+  [PASS] WHEN: upon landing + ratification of the in-review campaign package (subsumption, orientation strip, |delta| chain, phase retirement, assembly)
+  [PASS] WHAT: move the AC_phi_lambda residual from derivation_targets to the CONVENTIONS class, basis = this compensation note (the Y0 pattern)
+  [PASS] THE SURVIVING SENTENCE: 'the matter sector realizes this generation algebra' = naming + reality-anchor (the class of the Quantum axiom's 'reality is a qubit' clause): no alternative assignment changes any observable (V1-V4), so there is NO physics content to bound
+  [PASS] WHO: the registry is audit-lane owned; the move is the owner's/audit lane's action -- this note supplies the basis, exactly as Y0's basis note did
+
+----------------------------------------------------------------------------------------
+V7: cascade mechanics -- NO per-runner repointing required
+----------------------------------------------------------------------------------------
+  [PASS] the gate's inbound-depender count read live from the citation graph (sizes the cascade the reclassification unlocks)  --  inbound edges to the gate: 65
+  [PASS] the bounding rule is applied by the pipeline AT THE REGISTRY-CLASS level (derivation_targets bound; conventions do not) -- flipping the class flips the rule for ALL dependents in one move
+  [PASS] runners are computational artifacts, not citation-graph nodes: their code needs NO repointing; the graph is built from notes' markdown dependency links, which remain valid (they cite the same substep/convention/computed rows)
+  [PASS] the unlock sequence: (i) package lands+ratifies, (ii) ONE registry reclassification, (iii) pipeline re-run recomputes effective statuses through the existing graph -- the audit cascade is automatic from there
+
+----------------------------------------------------------------------------------------
+V8: honest scope
+----------------------------------------------------------------------------------------
+  [PASS] R2 (the PL/ABSS global bridge) is NOT covered: it bounds the |delta| chain's audit path separately and remains the named geometric open
+  [PASS] the compensation is proven at the campaign's surface (orbit structure, fixed-locus arithmetic, circulant multiset); full-dynamics complementation-equivariance is the NAMED CONDITION to demand at gate closure
+  [PASS] retirement TIMING is conditional on ratification -- retiring before the package lands would claim retained-grade for in-review work (not done)
+
+========================================================================================
+SUMMARY: PASS=19 FAIL=0
+========================================================================================

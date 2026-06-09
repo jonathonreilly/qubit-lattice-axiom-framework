@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py
-runner_sha256: b891de38c905702040223b71c08969a8ad3f0faa11416bba4454eb22e4c7bd46
+runner_sha256: fdf3787db2f1e6d296c70f0ce2db7d89f4317a0f0db33e88b21bacac9f6da47d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.91
+elapsed_sec: 0.46
 status: ok
 ----- stdout -----
 PASS T1 1D NN heat kernel (e^{-tL1})_{0n} = e^{-2t} I_n(2t)
@@ -18,8 +18,13 @@ PASS CTRL wrong normalization 1/(2 pi r) is rejected (2pi r G !-> 1)
 PASS SOURCE boundary names the 2026-06-08 asymptotic narrow
 PASS SOURCE boundary preserves uniform local-CLT/tail-domination bridge
 PASS SOURCE boundary no longer claims to retire P1 by itself
+PASS REROUTE note names the 2026-06-08 stronger-theorem reroute
+PASS REROUTE note cites the stronger lattice-correction theorem
+PASS REROUTE stronger theorem uses the same heat-kernel/Bessel Green function
+PASS REROUTE stronger theorem proves the leading 1/(4pi r) asymptotic plus K4/r^3 correction
+PASS REROUTE stronger-theorem cache is fresh and reports PASS=6 FAIL=0
 
-TOTAL: PASS=12 FAIL=0
+TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----
 

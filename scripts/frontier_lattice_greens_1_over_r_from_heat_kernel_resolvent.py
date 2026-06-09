@@ -8,12 +8,12 @@ Bessel/local-CLT asymptotic with tail domination allowing the |x| -> infinity
 limit to pass through the heat-kernel integral.
 
 Chain (all framework-internal except standard Bessel/Gaussian asymptotics, reconstructed):
-  L = -Delta_lat = the A1 Z^3 6-NN graph Laplacian (eigenvalue lambda(k)=6-2 sum cos k_mu).
+  L = -Delta_lat = the Lattice Z^3 6-NN graph Laplacian (eigenvalue lambda(k)=6-2 sum cos k_mu).
   G = L^{-1}, and G(x) = (L^{-1})_{0x} = int_0^inf (e^{-tL})_{0x} dt   [resolvent identity].
   e^{-tL} factorizes over axes (L = sum_mu L_mu, [L_mu,L_nu]=0):
       (e^{-tL})_{0x} = prod_mu (e^{-t L_mu})_{0,x_mu} = prod_mu e^{-2t} I_{x_mu}(2t)
   where (e^{-tL_1})_{0n} = e^{-2t} I_n(2t) is the EXACT 1D NN heat kernel (I_n modified Bessel).
-  => G(x) = int_0^inf prod_mu e^{-2t} I_{x_mu}(2t) dt   [framework-internal, A1 resolvent].
+  => G(x) = int_0^inf prod_mu e^{-2t} I_{x_mu}(2t) dt   [framework-internal Lattice resolvent].
   Large-r asymptotic support from the large-t CONTINUUM limit of the heat kernel:
       e^{-2t} I_n(2t) -> (4 pi t)^{-1/2} e^{-n^2/(4t)}  (large t)  [standard Bessel asymptotic]
    => prod_mu -> (4 pi t)^{-3/2} e^{-|x|^2/(4t)}  (the 3D continuum heat kernel)
@@ -33,6 +33,8 @@ Chain (all framework-internal except standard Bessel/Gaussian asymptotics, recon
 prints TOTAL: PASS=N FAIL=0
 """
 
+import hashlib
+import re
 from pathlib import Path
 
 import numpy as np
@@ -46,6 +48,19 @@ def check(name, ok): results.append((name, bool(ok)))
 
 NOTE = Path(__file__).resolve().parents[1] / "docs" / "LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md"
 note_text = NOTE.read_text(encoding="utf-8")
+ROOT = Path(__file__).resolve().parents[1]
+CORRECTION_NOTE = ROOT / "docs" / "GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md"
+CORRECTION_RUNNER = ROOT / "scripts" / "frontier_gravity_leading_lattice_correction_cubic_anisotropy.py"
+CORRECTION_CACHE = ROOT / "logs" / "runner-cache" / "frontier_gravity_leading_lattice_correction_cubic_anisotropy.txt"
+
+
+def sha256(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def cache_field(text, name):
+    m = re.search(rf"^{re.escape(name)}:\s*(.+)$", text, re.MULTILINE)
+    return m.group(1).strip() if m else None
 
 # --- T1: 1D NN heat kernel (e^{-t L_1})_{0n} = e^{-2t} I_n(2t) ---
 M = 41; c = M // 2
@@ -123,6 +138,23 @@ check("SOURCE boundary preserves uniform local-CLT/tail-domination bridge",
       "uniform diffusive Bessel/local-CLT tail-domination bridge remains open" in note_text)
 check("SOURCE boundary no longer claims to retire P1 by itself",
       "no longer claims to retire P1 by itself" in note_text)
+
+# --- STRONGER-THEOREM REROUTE: the leading term is supplied by a stronger native theorem. ---
+correction_note_text = CORRECTION_NOTE.read_text(encoding="utf-8")
+correction_cache_text = CORRECTION_CACHE.read_text(encoding="utf-8")
+check("REROUTE note names the 2026-06-08 stronger-theorem reroute",
+      "2026-06-08 Stronger-Theorem Reroute" in note_text)
+check("REROUTE note cites the stronger lattice-correction theorem",
+      "GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md" in note_text)
+check("REROUTE stronger theorem uses the same heat-kernel/Bessel Green function",
+      "heat-kernel/Bessel resolvent" in correction_note_text
+      and "G(x) = ∫₀^∞ ∏_μ e^{−2t} I_{x_μ}(2t) dt" in correction_note_text)
+check("REROUTE stronger theorem proves the leading 1/(4pi r) asymptotic plus K4/r^3 correction",
+      "G(r) = 1/(4π r) + [5/(32π)]·K₄(n̂)/r³ + O(1/r⁵)" in correction_note_text)
+check("REROUTE stronger-theorem cache is fresh and reports PASS=6 FAIL=0",
+      cache_field(correction_cache_text, "runner_sha256") == sha256(CORRECTION_RUNNER)
+      and "TOTAL: PASS=6 FAIL=0" in correction_cache_text
+      and "RESULT: G(r) = 1/(4 pi r) + [5/(32 pi)] K4(nhat)/r^3 + O(1/r^5)" in correction_cache_text)
 
 n_pass = sum(1 for _, ok in results if ok)
 n_fail = sum(1 for _, ok in results if not ok)

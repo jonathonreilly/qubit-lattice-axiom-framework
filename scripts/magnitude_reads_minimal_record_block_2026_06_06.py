@@ -1,129 +1,142 @@
 #!/usr/bin/env python3
+"""Record does not select the magnitude minimal block.
+
+This runner repairs the conditional audit blocker for
+MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.  It keeps the finite count
+facts, reads the one-hop RP two-step cache instead of hard-coding its status,
+and checks the approved Record axiom boundary.  The output is a no-go for the
+Record-selection route, plus a conditional arithmetic consequence if a separate
+UV/minimal-block readout bridge is supplied.
 """
-The magnitude reads the minimal record block (L_t=2), not the OS continuum:
-register-not-read closes the readout-scale residual.
 
-Residual R (from MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06): the
-magnitude temporal factor is a COUNT = the temporal mode count at L_t; why is it
-read at the MINIMAL reflection-positive block (L_t=2) rather than the OS continuum
-(L_t -> infinity)?
+from __future__ import annotations
 
-This runner verifies the computable structure behind the register-not-read
-closure (the ontological step itself is in the note prose, flagged as a
-principle-extension):
+from pathlib import Path
 
-  I. IRREDUCIBILITY. The staggered temporal phase eta_1(t)=(-1)^t has minimal
-     period 2, so the minimal translation-invariant temporal cell is 2 sites (a
-     single site is not a cell). The 2-step contraction e^{-2E} in (0,1] is
-     positive. (The single-step transfer is non-positive -- retained_bounded
-     axiom_first_rp_two_step_transfer_matrix_positivity, min eig -0.80 -- so the
-     minimal POSITIVE/registrable temporal block is 2, not 1.)
-
-  R. REGISTRATION vs RECONSTRUCTION. The registered object is the FINITE minimal
-     block (L_t=2, temporal mode count 2). The OS continuum is the LIMIT
-     L_t -> infinity (count -> infinity), an emergent coarse-grained
-     reconstruction of the discrete record stack. A finite registration count and
-     a divergent reconstruction limit are different objects.
-
-  S. REALIST-SLIP RESOLUTION (both directions). The magnitude EXPONENT is a bare /
-     UV / cutoff-scale structural count (scale M_Pl = a^{-1}, the minimal lattice
-     scale) -> registered at the minimal block -> count 2 -> exponent 8x2=16. The
-     measured (IR) mass = this bare structure x the running per-mode value
-     alpha_LM (the SEPARATE DELTA0 gate). Reading the bare exponent at the
-     continuum count (infinity) would be the realist slip (reconstruction used for
-     registration).
-
-Observed values appear in NO PASS condition.
-"""
 import numpy as np
+
+
+ROOT = Path(__file__).resolve().parent.parent
+MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+RP_CACHE = ROOT / "logs" / "runner-cache" / "axiom_first_rp_two_step_transfer_matrix_positivity.txt"
 
 PASS = 0
 FAIL = 0
-def check(name, cond):
+
+
+def check(name: str, cond: bool, detail: str = "") -> None:
     global PASS, FAIL
     ok = bool(cond)
+    PASS += int(ok)
+    FAIL += int(not ok)
     print(("PASS" if ok else "FAIL") + ": " + name)
-    PASS += ok
-    FAIL += (not ok)
+    if detail:
+        print("  " + detail)
 
-# ===========================================================================
-# SECTION I -- IRREDUCIBILITY: minimal physical (reflection-positive) temporal
-# block = 2 (period-2 staggered phase + 2-step positivity; single-step
-# non-positive is cited retained).
-# ===========================================================================
-print("--- Section I: minimal physical temporal block = 2 (irreducible) ---")
-eta1 = [(-1) ** t for t in range(8)]
-def minimal_period(seq):
-    for p in range(1, len(seq)):
-        if len(seq) % p == 0 and all(seq[i] == seq[i % p] for i in range(len(seq))):
-            return p
+
+def minimal_period(seq: list[int]) -> int:
+    for period in range(1, len(seq) + 1):
+        if all(seq[i] == seq[i % period] for i in range(len(seq))):
+            return period
     return len(seq)
-check("staggered temporal phase eta_1(t)=(-1)^t has minimal period 2",
-      minimal_period(eta1) == 2)
-check("a SINGLE time-slice is NOT a translation-invariant cell (operator alternates) "
-      "-> minimal cell = 2", eta1[0] != eta1[1])
-# 2-step forward contraction positive: e^{-2E}, sinh^2 E = m^2 + sin^2 p
-ps = np.linspace(-np.pi, np.pi, 64); m = 0.4
-E = np.arcsinh(np.sqrt(m**2 + np.sin(ps) ** 2))
-two_step = np.exp(-2 * E)
-check("2-step contraction e^{-2E} in (0,1] (reflection-positive, physical)",
-      np.all(two_step > 0) and np.all(two_step <= 1 + 1e-12))
-# single-step non-positivity is retained (rp_two_step, min eig -0.80) -> minimal
-# POSITIVE block is 2, not 1. Encoded as the cited retained fact.
-single_step_is_nonpositive = True   # axiom_first_rp_two_step_transfer_matrix_positivity (retained_bounded)
-check("single-step transfer non-positive (retained) -> minimal registrable block = 2 (not 1)",
-      single_step_is_nonpositive)
 
-# ===========================================================================
-# SECTION R -- REGISTRATION (finite minimal block) vs RECONSTRUCTION (continuum
-# limit). The temporal mode count = L_t.
-# ===========================================================================
-print("--- Section R: registration (finite minimal block) vs reconstruction (continuum) ---")
-def temporal_mode_count(Lt):
-    return Lt
-registration_count = temporal_mode_count(2)        # the minimal block
-check("registered temporal count at the minimal block = 2 (finite)", registration_count == 2)
-# the continuum is the limit L_t -> infinity (count grows without bound)
-counts = [temporal_mode_count(Lt) for Lt in (2, 8, 64, 512)]
-check("continuum reconstruction (L_t -> infinity) has UNBOUNDED count (not a finite registration)",
-      counts == sorted(counts) and counts[-1] >= 512 and counts[0] == 2)
-check("a finite registration count (2) and a divergent reconstruction limit are DIFFERENT objects",
-      registration_count == 2 and counts[-1] != registration_count)
 
-# ===========================================================================
-# SECTION S -- the bare EXPONENT uses the registration count; the VALUE is the
-# separate running gate. Realist slip = using the continuum count for the bare
-# exponent.
-# ===========================================================================
-print("--- Section S: bare exponent = registration count; value = separate gate ---")
-spatial_corners = 8
-exponent_registered = spatial_corners * registration_count   # 8 x 2 = 16 (minimal block)
-check("bare magnitude exponent at the registered minimal block = 8 x 2 = 16", exponent_registered == 16)
-exponent_continuum = [spatial_corners * temporal_mode_count(Lt) for Lt in (8, 64, 512)]
-check("the continuum reconstruction would give 8 x L_t -> infinity (the realist slip if used "
-      "for the bare exponent)", all(e > 16 for e in exponent_continuum) and exponent_continuum[-1] >= 4096)
-# the per-mode VALUE (alpha_LM) is the running / DELTA0 gate, NOT the exponent.
-# model: changing the per-mode value does not change the exponent (the count).
-def exponent(per_mode_value):     # exponent is a count, independent of the per-mode value
-    return spatial_corners * registration_count
-check("the bare exponent (a count) is independent of the per-mode value alpha_LM (the running/DELTA0 gate)",
-      exponent(0.09) == exponent(0.5) == 16)
+def main() -> int:
+    print("Magnitude minimal-block readout boundary")
+    print("=" * 72)
 
-# ===========================================================================
-# SECTION C -- consistency: the closure is bounded on register-not-read
-# (a framework principle, claim_type meta) extended to the temporal readout scale.
-# ===========================================================================
-print("--- Section C: closure structure (bounded on register-not-read extension) ---")
-mechanical_retained = single_step_is_nonpositive and (registration_count == 2)   # RP two-step
-principle_step = True   # register-not-read: registration=discrete record (minimal block); continuum=reconstruction
-check("mechanical core is retained-grade (minimal block = 2 via RP two-step)", mechanical_retained)
-check("the readout-scale selection is a register-not-read PRINCIPLE-EXTENSION step (bounded, flagged)",
-      principle_step)
-check("combined: exponent 16 = 8 (spatial, retained) x 2 (temporal, count+minimal-block+register) is native "
-      "modulo register-not-read; the VALUE alpha_LM (DELTA0) stays open",
-      exponent_registered == 16)
+    print("--- Section I: finite temporal count facts ---")
+    eta1 = [(-1) ** t for t in range(8)]
+    check("eta_1(t)=(-1)^t has minimal period 2", minimal_period(eta1) == 2)
+    check("a single time-slice is not a translation-invariant eta_1 cell", eta1[0] != eta1[1])
 
-print()
-print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
-if FAIL:
-    raise SystemExit(1)
+    ps = np.linspace(-np.pi, np.pi, 64)
+    mass = 0.4
+    energy = np.arcsinh(np.sqrt(mass * mass + np.sin(ps) ** 2))
+    two_step = np.exp(-2 * energy)
+    check(
+        "direct two-step contraction sample lies in (0,1]",
+        np.all(two_step > 0) and np.all(two_step <= 1 + 1e-12),
+    )
+
+    rp_text = RP_CACHE.read_text(encoding="utf-8")
+    rp_supplies_single_step_boundary = (
+        "single-step T_hat NOT a positive operator" in rp_text
+        and "negative eigenvalue => non-positive" in rp_text
+    )
+    rp_supplies_two_step_block = (
+        "T_hat^2 positive Hermitian = B^dag B" in rp_text
+        and "PASS -- the free staggered 2-step blocked transfer matrix" in rp_text
+    )
+    check(
+        "one-hop RP cache supplies single-step non-positivity",
+        rp_supplies_single_step_boundary,
+    )
+    check(
+        "one-hop RP cache supplies two-step positivity",
+        rp_supplies_two_step_block,
+    )
+
+    print("--- Section R: Record axiom boundary ---")
+    axiom_text = MINIMAL_AXIOMS.read_text(encoding="utf-8")
+    required_record_phrases = [
+        "A record is the durable registration of the realized outcome.",
+        "Given a readout context",
+        "scalar readout `I` is finitely additive",
+        "record supplies no readout context",
+        "sector-generation rule",
+        "weighting",
+        "normalization",
+        "time metric",
+        "occupancy rule",
+    ]
+    check(
+        "approved Record axiom boundary is present",
+        all(phrase in axiom_text for phrase in required_record_phrases),
+    )
+
+    record_excludes_selector_inputs = all(
+        phrase in axiom_text
+        for phrase in [
+            "record supplies no readout context",
+            "weighting",
+            "normalization",
+            "time metric",
+            "occupancy rule",
+        ]
+    )
+    check(
+        "Record does not supply a readout-scale selector",
+        record_excludes_selector_inputs,
+        "minimal axioms exclude readout context, time metric, weighting, normalization, and occupancy rule",
+    )
+
+    print("--- Section S: conditional arithmetic only ---")
+    spatial_count = 8
+    temporal_minimal_block = 2
+    conditional_exponent = spatial_count * temporal_minimal_block
+    continuum_counts = [8 * lt for lt in (2, 8, 64, 512)]
+    check("conditional UV/minimal-block exponent would be 8 x 2 = 16", conditional_exponent == 16)
+    check(
+        "OS-continuum count sequence is a different unbounded reconstruction object",
+        continuum_counts == sorted(continuum_counts) and continuum_counts[-1] > conditional_exponent,
+    )
+
+    route_supplies_selector = (
+        rp_supplies_two_step_block
+        and not record_excludes_selector_inputs
+    )
+    check(
+        "no-go: Record plus RP two-step does not select L_t=2 over L_t -> infinity",
+        not route_supplies_selector,
+    )
+
+    print("=" * 72)
+    print("MAGNITUDE_MINIMAL_BLOCK_SELECTED_BY_RECORD=FALSE")
+    print("CONDITIONAL_IF_UV_MINIMAL_BLOCK_READOUT_SUPPLIED=16")
+    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+    return 0 if FAIL == 0 else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

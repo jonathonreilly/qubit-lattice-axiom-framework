@@ -1,4 +1,4 @@
-# Scalar-i and Real Generation Structure Have Different K-Parity
+# Scalar-i and Real J_cs Structure Have Different K-Parity
 
 > **Key terms used in this doc** are indexed A-Z at
 > [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the
@@ -17,21 +17,28 @@ pipeline-derived after independent audit and dependency closure.
 ## Statement
 
 In a supplied readout context with a supplied entrywise conjugation
-`K(X) = conj(X)`, the scalar-`i` sector and the real generation-orientation
-sector have different `K`-parity.
+`K(X) = conj(X)`, the scalar-`i` sector and the real generation complex
+structure `J_cs` have different `K`-parity.
 
 The central scalar `i I_2`, the `K`-odd Pauli generator `sigma_y`, the
 `Cl(3,0)` volume product `sigma_x sigma_y sigma_z = i I_2`, the shared tensor
 central `i`, and the phase of a Hermitian `C_3` circulant are all reversed by
 the supplied conjugation. By contrast, the real generation complex structure
 `J_cs = (C - C^2) / sqrt(3)` is fixed by the same conjugation while satisfying
-`J_cs^2 = -(I - P_triv)`, and the Vandermonde orientation sign is real and
-therefore fixed.
+`J_cs^2 = -(I - P_triv)`.
 
-Therefore scalar-`i` phase data and real generation-orientation data are
-separate `K`-parity sectors. The finite calculation blocks only the strong
-identification that one scalar-`i` phase object is also the real
-generation-orientation lever.
+The labeled generation Vandermonde orientation sign from the cited orientation
+note is not part of that K-even `J_cs` sector. Under the induced
+`delta -> -delta` map it flips sign:
+`Delta(+delta) = +0.04674385`, `Delta(-delta) = -0.04674385` in the runner's
+sample. The sorted-spectrum discriminant is K-even only after erasing labels,
+so it is retained as a multiset control, not as the generation-orientation
+object.
+
+Therefore scalar-`i` phase data and the real `J_cs` complex-structure data are
+separate `K`-parity sectors. The finite calculation no longer claims the
+labeled Vandermonde orientation sign is K-even; it aligns with the
+orientation/chirality residual named by the cited generation-orientation note.
 
 ## What this establishes
 
@@ -43,7 +50,10 @@ generation-orientation lever.
   its spectrum is unchanged as an unordered real multiset.
 - The real generation complex structure `J_cs` is `K`-even and squares to
   `-(I - P_triv)` on the doublet.
-- The Vandermonde orientation sign is a real `Z_2` datum and is `K`-even.
+- The labeled generation Vandermonde orientation sign is real but K-odd under
+  the induced `delta -> -delta` map.
+- The sorted-spectrum discriminant is K-even only as an unordered-multiset
+  control, not as the cited orientation object.
 
 ## What this does not establish
 
@@ -82,4 +92,4 @@ Run:
 python3 scripts/frontier_scalar_i_real_generation_k_parity_separation.py
 ```
 
-Expected: `TOTAL: PASS=8 FAIL=0`.
+Expected: `TOTAL: PASS=9 FAIL=0`.

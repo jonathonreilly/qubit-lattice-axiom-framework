@@ -11,15 +11,15 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3037 |
-| Applied audit verdicts | 1334 |
-| Retained-grade rows, including boxed decorations | 1224 |
+| Ledger rows | 3038 |
+| Applied audit verdicts | 1336 |
+| Retained-grade rows, including boxed decorations | 1226 |
 | Retained positive theorems | 209 |
-| Retained no-go rows | 201 |
-| Retained bounded rows | 765 |
+| Retained no-go rows | 202 |
+| Retained bounded rows | 766 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1386 |
+| Unaudited rows | 1385 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 13 |
 | Audited renaming rows | 35 |
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1388 |
+| Total pending rows | 1387 |
 | Ready rows | 57 |
 | Cycle-break targets | 15 |
 | Critical pending | 330 |
 | High pending | 253 |
-| Medium pending | 376 |
+| Medium pending | 375 |
 | Leaf pending | 429 |
 
 Next ready rows by queue order:
@@ -50,7 +50,7 @@ Next ready rows by queue order:
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md) - medium; unaudited
 - [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
-- [`gate_b_connectivity_tolerance_note`](../../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md) - medium; unaudited
+- [`dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -78,18 +78,18 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3174 |
+| Citation-graph nodes | 3175 |
 | Critical nodes | 528 |
 | High nodes | 452 |
 | Medium nodes | 816 |
-| Leaf nodes | 1378 |
+| Leaf nodes | 1379 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1382 descendants; score 100.434
-- `three_generation_observable_theorem_note` - critical; 761 descendants; score 61.074
+- `three_generation_observable_theorem_note` - critical; 762 descendants; score 61.076
 - `observable_principle_from_axiom_note` - critical; 851 descendants; score 58.235
-- `graph_first_su3_integration_note` - critical; 1276 descendants; score 52.819
+- `graph_first_su3_integration_note` - critical; 1277 descendants; score 52.820
 - `minimal_axioms_2026-05-03` - critical; 488 descendants; score 47.934
 - `key_terminology` - critical; 1014 descendants; score 44.487
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1196 descendants; score 42.725

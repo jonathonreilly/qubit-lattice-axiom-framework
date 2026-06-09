@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_induced_cosmological_constant.py
+runner_sha256: f8e87e33a9cdab67b79eebee99b84733dec1bd8dc3c178f776428a7580517308
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+PASS T1 induced vacuum energy density eps_vac = -0.667, -0.866, -1.068 -- FINITE and O(1) (lattice BZ regulates the UV; physical eps_vac ~ 1/a^4 ~ Planck^4)
+PASS T2 4D vacuum stress tadpole T_mu_nu^vac = rho_vac*delta_mu_nu EXACTLY: diag=[0.8744 0.8744 0.8744 0.8744] (iso-spread 3.8e-16), off-diagonal 6.5e-17 -- SO(4)-isotropic = a genuine LORENTZ-INVARIANT cosmological constant
+PASS T3 rho_vac = 0.8744 ~ O(1) (Planck-scale), NONZERO -> the induced cosmological constant GRAVITATES; NO dynamical suppression at the induced-action level (the CC problem is present, like all Sakharov induced gravity)
+
+The W-native induced gravity inherits the Sakharov cosmological-constant problem: it induces a
+genuine LORENTZ-INVARIANT (SO(4)-isotropic) cosmological constant rho_vac ~ O(1) ~ Planck^4 that
+gravitates, with NO dynamical suppression at the induced-action level. The one clean positive is
+the EXACT Lorentz-invariance of the induced vacuum stress (T_mu_nu ~ delta_mu_nu) -- a genuine CC,
+not a Lorentz-violating vacuum. The framework's CC-problem resolution must come from the
+record-ontology / a sequestering mechanism, NOT realized in the induced action. Magnitude registered (G3).
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

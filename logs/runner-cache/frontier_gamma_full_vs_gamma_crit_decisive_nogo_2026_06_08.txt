@@ -1,0 +1,58 @@
+==============================================================================================
+Route 3 (the unbounded gate): gamma_full << gamma_crit for the tight LV bounds in EVERY amplified
+corner -- the continuous-time obstruction horn's flow-suppression escape is DECISIVELY closed
+==============================================================================================
+
+----------------------------------------------------------------------------------------------
+Part A: c_gamma = C_F + T_F N_f = 4/3 + N_f/2 (difference-mode eigenvalue; C_A drops from the difference channel)
+----------------------------------------------------------------------------------------------
+  [PASS] (A1) SU(3) Casimirs from primitives: C_F=4/3, T_F=1/2, C_A=3  --  C_F=1.3333, T_F=0.5, C_A=3.0
+      N_f=1: c_gamma=C_F+T_F*N_f=1.83 -> gamma=c_gamma*alpha_s=0.146
+      N_f=3: c_gamma=C_F+T_F*N_f=2.83 -> gamma=c_gamma*alpha_s=0.225
+      N_f=6: c_gamma=C_F+T_F*N_f=4.33 -> gamma=c_gamma*alpha_s=0.345
+  [PASS] (A2) gamma = (4/3 + N_f/2) alpha_s ~ 0.15-0.34 at beta=6 (N_f=1..6) -- the physical-fixed-point one-loop value  --  gamma in [0.146, 0.345]
+
+----------------------------------------------------------------------------------------------
+Part B: MAXIMAL c_gamma stress -- even if the full adjoint C_A leaked into the difference channel
+----------------------------------------------------------------------------------------------
+  [PASS] (B1) MAXIMAL c_gamma <= C_F + T_F*N_f(=6) + C_A = 7.33 -> gamma_max ~ 0.58 (an over-estimate: C_A is N_f-independent and a common-mode pull)  --  c_gamma_max=7.33, gamma_max=0.584
+  [PASS] (B2) even gamma_max ~ 0.58 is BELOW the TIGHT gamma_crit (photon 0.96, electron 1.06, nucleon 1.32)  --  gamma_max=0.584 < 0.96 -> the obstruction survives for every tight bound even at the maximal colour leak
+
+----------------------------------------------------------------------------------------------
+Part C: the IR strong-QCD regime cannot rescue it (too few e-folds)
+----------------------------------------------------------------------------------------------
+  [PASS] (C1) the IR strong-QCD regime (alpha_s~1, gamma~1) acts over only ~1 e-fold -> extra suppression ~ e^-1 ~ 0.37, NOT the ~1e-14 needed  --  IR extra factor ~ 0.37 >> needed 1e-14; the AF UV-weakness is where the regeneration happens, and the IR strong regime is too short
+
+----------------------------------------------------------------------------------------------
+Part D: gamma_crit per sector + the decisive gap in EVERY amplified corner
+----------------------------------------------------------------------------------------------
+  [PASS] (D1) gamma_crit: quark/gluon 0.54 (weakest), photon 0.96, electron 1.06, nucleon 1.32  --  photon=0.96, electron=1.06, nucleon=1.32, quark/gluon=0.54
+  [PASS] (D2) DECISIVE: gamma_full (<= 0.58 even maximal) < gamma_crit for ALL tight bounds (photon/electron/nucleon) in EVERY amplified corner  --  gamma_max=0.58 < min tight gamma_crit=0.96 -> residual species delta_v exceeds the tight bounds by 10+ orders, unconditionally
+  [PASS] (D3) residual species delta_v(1 GeV) ~ 1e-7..1e-4 in every factor-2 corner -- exceeds the tight bounds (1e-20..1e-27) by 13-23 orders  --  max residual delta_v_obs ~ 7.1e-05; the attractor flow cannot suppress it below the tight bounds
+  [PASS] (D4) VERDICT: the continuous-time (xi->inf) obstruction horn's flow-suppression escape is CLOSED -- gamma_full < gamma_crit robustly (the asymptotic-freedom trap)  --  so UNCONDITIONAL emergent Lorentz is NOT retainable via flow suppression on the continuous-time horn
+
+----------------------------------------------------------------------------------------------
+Part E: honest scope -- decisive no-go on the obstruction-horn ESCAPE only; both horns remain live
+----------------------------------------------------------------------------------------------
+  [PASS] (E1) this does NOT close the whole lever: on the xi=1 discrete surface B_4 gives delta_v=0 EXACTLY (all orders) -- NO residual, NO gamma needed  --  the residual D / gamma vs gamma_crit is a xi->inf phenomenon; at xi=1 there is no obstruction
+  [PASS] (E2) NET: unconditional (UNBOUNDED) emergent Lorentz is NOT retainable via the continuous-time attractor flow; the only positive route is the (non-retained) discrete-xi=1 realization  --  confirms & sharpens #3123 (audited_conditional) with the full SU(3) colour structure and explicit robustness; both horns of delta_v(xi) remain live
+
+----------------------------------------------------------------------------------------------
+Part F: the ONE honest boundary (what AF forecloses) + the false escape it pre-empts
+----------------------------------------------------------------------------------------------
+  [PASS] (F1) THE TRAP: with asymptotic freedom the RG-integrated exponent S = INT gamma dl ~ 7 (1 GeV->M_Pl), 6-8x BELOW the S~42-58 the tight bounds need  --  S_AF~7.0 vs S_needed~42.0; gamma is tethered to the WEAK UV alpha_s EXACTLY at the regeneration scale -- the heart of the asymptotic-freedom trap
+  [PASS] (F2) THE ONE BOUNDARY (stated explicitly, both directions): a WALKING/near-conformal alpha*~0.3 SUSTAINED over ~44 e-folds WOULD give S~37 and close the gap  --  S_walk~37 -- BUT this is MUTUALLY EXCLUSIVE with the framework's asymptotically-free SU(3) (sustained-strong-gamma XOR asymptotic-freedom); a Banks-Zaks IR fixed point needs N_f~16.5, which destroys QCD
+  [PASS] (F3) => the no-go is conditional on the gauge sector being ASYMPTOTICALLY FREE -- which the framework's SU(3) IS; AF is precisely what forecloses the walking-conformal escape  --  the trap is structural: AF is the property that makes gamma weak at M_Pl AND forbids the sustained-strong-coupling plateau that would be the only escape
+  [PASS] (F4) FALSE-ESCAPE GUARD: the lattice bare alpha~0.08 at M_Pl is NOT the MS-bar continuum value (real alpha_s(M_Pl)~0.019, even SMALLER) -- naively running it to a fake ~1e15-GeV Landau pole to inflate S is UNPHYSICAL  --  alpha_msbar(M_Pl)~0.019 < lattice bare 0.080; the CONSERVATIVE choice (bare) already over-states gamma -- the continuum value makes the no-go STRONGER, not weaker
+  [PASS] (F5) the two gamma_crit tables in this lane (obstruction note 1.11/0.90/1.30 vs this runner 0.96/1.06/1.32) differ only by the dv_UV normalization; BOTH put the tight bounds at gcrit~0.9-1.3 >> gamma_max~0.58  --  the load-bearing fact (gamma_full < tight gcrit by a robust margin) is normalization-independent
+
+==============================================================================================
+VERDICT: gamma_full = (4/3 + N_f/2) alpha_s ~ 0.15-0.34, and even the MAXIMAL colour-leak over-estimate
+(<= 0.58) stays BELOW the tight gamma_crit (0.96-1.32). The IR strong-QCD regime is too short (~1 e-fold).
+So the continuous-time obstruction horn's flow-suppression escape is DECISIVELY closed: the residual
+species delta_v exceeds the tight LV bounds by 13-23 orders in every amplified corner. UNCONDITIONAL
+emergent Lorentz is NOT retainable via flow suppression on the xi->inf horn. HONEST: this is a no-go on
+the obstruction-horn ESCAPE only; on the xi=1 discrete surface B_4 gives delta_v=0 exactly -- both horns live.
+==============================================================================================
+TOTAL: PASS=16 FAIL=0
+==============================================================================================

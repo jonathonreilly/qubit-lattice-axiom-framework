@@ -756,6 +756,24 @@ def random_u1_mat(nc):
     return u1_phase(RNG.uniform(0, 2 * math.pi))
 
 
+def run_companion_controls() -> bool:
+    """Run the source-hash-pinned m=0.01 and link-reflection companion controls."""
+    import frontier_interacting_rp_mass_link_reflection_controls_2026_06_09 as controls
+
+    controls.PASS = 0
+    controls.FAIL = 0
+    print()
+    print("=" * 82)
+    print("COMPANION CONTROLS: MASS SCAN AND LINK-REFLECTION CONVENTION")
+    print("=" * 82)
+    controls.primary_source_guard()
+    controls.source_note_guard()
+    controls.run_mass_scan()
+    controls.run_nonconjugating_control()
+    print(f"\nCOMPANION SCORECARD: PASS={controls.PASS} FAIL={controls.FAIL}")
+    return controls.FAIL == 0
+
+
 def main() -> int:
     print("=" * 82)
     print("FULL POLYNOMIAL HALF-SPACE ALGEBRA OS REFLECTION-POSITIVITY (FIXED a)")
@@ -798,13 +816,16 @@ def main() -> int:
     results.append(ok)
     print()
 
+    companion_ok = run_companion_controls()
+
     print("=" * 82)
     npass = sum(results)
-    print(f"SCORECARD: PASS={npass}/{len(results)} group-sectors")
+    print(f"GROUP SCORECARD: PASS={npass}/{len(results)} group-sectors")
     print("  Each sector: full-algebra OS Gram PSD (CORRECT reflection), non-vacuous")
     print("  meson/baryon diagonals>0, naive op m.e. vacuous, WRONG reflection non-PSD,")
     print("  per-config 2-step transfer PSD (OS-theorem input), gauge-invariant, det>0.")
-    allok = (npass == len(results))
+    print(f"  Companion controls: {'PASS' if companion_ok else 'FAIL'}")
+    allok = (npass == len(results)) and companion_ok
     print(f"  OVERALL: {'PASS' if allok else 'FAIL'}")
     print("=" * 82)
     return 0 if allok else 1

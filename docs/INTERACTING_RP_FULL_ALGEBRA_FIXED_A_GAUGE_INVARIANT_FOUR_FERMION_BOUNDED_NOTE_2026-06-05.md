@@ -170,6 +170,14 @@ reports `TOTAL: PASS=4 FAIL=0`. It source-hash-pins the primary runner, checks t
 source-note/cache linkage, verifies the `m = 0.01` mass scan, and verifies that the
 non-conjugating link-reflection convention fails as a control.
 
+The 2026-06-09 companion-manifest repair also makes these checks part of the
+primary runner's restricted packet. The primary full-algebra runner executes the
+companion control functions after the four group-sector Grams, reports
+`COMPANION SCORECARD: PASS=4 FAIL=0`, and includes the mass-scan and
+non-conjugating-link control stdout in its own cache. This prevents the
+m=0.01/link-reflection claims from living only in note prose or in an
+unreferenced companion artifact.
+
 ## Scope (honest — what is delivered vs open)
 
 **Delivered (finite carrier, fixed `a`).** On the tested staggered carriers in

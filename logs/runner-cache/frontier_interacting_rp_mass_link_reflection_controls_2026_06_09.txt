@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py
-runner_sha256: 17a1ec0bc58a1cdda397b72445cc041914195bda52bd96965ebb0e00a2f3f2d1
+runner_sha256: 05601122963d7c2ecae429fbe98d18e96419a8df25f1e45519b4fbebfc407efe
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.90
+elapsed_sec: 0.95
 status: ok
 ----- stdout -----
 Interacting RP mass/link-reflection companion controls
 ======================================================================================
 [PASS] primary full-algebra runner source hash is pinned
-       expected=47b36c166adbc87af747d3fc48b089135154b55d09d5482ad616b580a1e491f2; actual=47b36c166adbc87af747d3fc48b089135154b55d09d5482ad616b580a1e491f2
+       expected=7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0; actual=7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0
 [PASS] source note names companion controls and cache
        missing=[]
 

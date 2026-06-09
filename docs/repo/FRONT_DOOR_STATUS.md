@@ -38,8 +38,8 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Cycle-break targets | 16 |
 | Critical pending | 328 |
 | High pending | 254 |
-| Medium pending | 368 |
-| Leaf pending | 406 |
+| Medium pending | 367 |
+| Leaf pending | 407 |
 
 Next ready rows by queue order:
 
@@ -82,16 +82,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3200 |
 | Critical nodes | 529 |
 | High nodes | 454 |
-| Medium nodes | 834 |
-| Leaf nodes | 1383 |
+| Medium nodes | 828 |
+| Leaf nodes | 1389 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1404 descendants; score 102.456
-- `three_generation_observable_theorem_note` - critical; 767 descendants; score 61.085
+- `three_generation_observable_theorem_note` - critical; 766 descendants; score 61.083
 - `observable_principle_from_axiom_note` - critical; 855 descendants; score 58.241
 - `graph_first_su3_integration_note` - critical; 1286 descendants; score 53.830
 - `minimal_axioms_2026-05-03` - critical; 491 descendants; score 47.943
-- `key_terminology` - critical; 1022 descendants; score 45.499
+- `key_terminology` - critical; 1021 descendants; score 45.497
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1200 descendants; score 42.730
 - `anomaly_forces_time_theorem` - critical; 1007 descendants; score 40.477

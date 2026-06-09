@@ -1,0 +1,47 @@
+==============================================================================================
+Boundary: time IS DERIVED (single-clock theorem) but as CONTINUOUS Stone time = the
+obstruction surface; the positive horn needs a separate non-retained tick-realization premise
+==============================================================================================
+
+----------------------------------------------------------------------------------------------
+Part 1: time IS DERIVED (single-clock codimension-1 theorem) -- correcting the earlier 'no time' claim
+----------------------------------------------------------------------------------------------
+  [PASS] (1.1) the framework DERIVES temporal structure: the single-clock codimension-1 evolution theorem (UNAUDITED) gives a UNIQUE single clock H (staggered reflection axis), from RETAINED RP-temporal-bridge/spectrum/cluster/Cl(3)/arrow  --  so the earlier 'the axioms contain no time / temporal structure not derivable' is FALSE; time is derived (as the framework's DIRAC/Lorentz + SO(4) program already encodes)
+  [PASS] (1.2) BUT the derivation's PHYSICAL output is CONTINUOUS Stone time U(t)=exp(-itH) on the spatial Z^3 slice (Step 1: analytic continuation of T^n, a_tau only a unit in H=-(1/a_tau)logT)  --  that is the spatial-Z^3 + continuous-time surface = the xi->inf OBSTRUCTION surface (and #3121's stated native surface)
+  [PASS] (1.3) the RETAINED no-go SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY: T fixes only the PRODUCT a_tau*H, NOT a_tau ('a time-unit/blocked-time-spacing bridge is an extra premise') -> a_tau unfixed/removable  --  so 'the derived time keeps a_tau finite' is UNSUPPORTED; pinning a finite physical a_tau is an extra (audited_renaming record-tick) premise, against the retained clock-rate no-go (count not rate)
+
+----------------------------------------------------------------------------------------------
+Part 2: what IS pinned given a discrete time axis -- the conformal RATIO a_tau/a_s = 1 (a counting fact)
+----------------------------------------------------------------------------------------------
+  [PASS] (2.1) GIVEN a discrete time axis, one tick = one edge (no-diagonal + retained reachability) -> a_tau/a_s = 1/v_front = 1 (the dimensionless conformal CLASS, OUTSIDE the clock-rate no-go)  --  but v_front=1 is a unit choice, NOT the renormalized group velocity v_LR~0.935 that delta_v measures
+
+----------------------------------------------------------------------------------------------
+Part 3: the POSITIVE horn's realization premise -- the symmetric tick, NOT the forward transfer the chain uses
+----------------------------------------------------------------------------------------------
+  [PASS] (3.1) under spatial O_h + time-parity the diagonal kinetic form has TWO invariants (c_t != c_s ALLOWED, retained SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO)  --  invariant dim = 2: RP/time-reflection does NOT relate c_t and c_s
+  [PASS] (3.2) only the 4D-hypercubic B_4 collapses it to ONE (c_t=c_s FORCED) -> the isotropy is an ADDED 4D-hypercubic premise (RP gives time-reflection, NOT t<->s)  --  invariant dim = 1
+  [PASS] (3.3) the single-clock chain reconstructs H via the FORWARD transfer T=e^{-H a_tau}, which at xi=1 BREAKS B_4 (Sigma_t!=Sigma_s); the symmetric central tick that gives delta_v=0 is a SEPARATE realization premise  --  at xi=1: symmetric central tick |Sigma_t-Sigma_s|=5.2e-18 (B_4 exact) vs forward step 5.2e-04 (broken). The retained SO(4) isotropy authority proves the symmetric form only in the CONTINUUM a->0 limit (the xi->inf surface), NOT at finite a_tau
+
+----------------------------------------------------------------------------------------------
+Part 4: GIVEN the realization premise (finite a_tau + symmetric tick, xi=1), B_4 gives delta_v=0 (the positive theorem)
+----------------------------------------------------------------------------------------------
+  [PASS] (4.1) GIVEN the isotropic 4D-hypercubic action at xi=1, B_4 forbids the marginal anisotropy to ALL orders, rep-blind -> Sigma_t=Sigma_s to machine zero -> delta_v=0 (the positive bounded theorem)  --  max |Sigma_t-Sigma_s| = 5.2e-18; conditional on the (non-retained) realization premise
+  [PASS] (4.2) residual LV then = the Planck-suppressed dim-6 operator: E^2=k^2-(a^2/3)k^4 -> |dE^2/E^2| ~ 2e-39 at 1 GeV  --  |dE^2/E^2|(1 GeV) = 2.2e-39
+
+----------------------------------------------------------------------------------------------
+Part 5: STATUS -- BOTH horns of delta_v(xi) remain live; the positive horn is conditional on a non-retained realization premise
+----------------------------------------------------------------------------------------------
+  [PASS] (5.1) time IS derived, but as CONTINUOUS Stone time on Z^3 = the xi->inf OBSTRUCTION surface (Step 1 output; ratified by the retained scope-boundary no-go that a_tau is removable; #3121's native surface)  --  this CORRECTS the earlier 'not derivable / two-layer admission' framing: the derived-time output is the obstruction horn, not the positive one
+  [PASS] (5.2) the POSITIVE (xi=1, delta_v=0) horn rests on a realization premise NO retained item supplies and the chain partly CONTRADICTS  --  (a) finite physical a_tau over the removable regulator (retained scope-boundary: T fixes only a_tau*H); (b) the symmetric central tick over the FORWARD transfer Step 1 uses; (c) the SO(4) isotropy authority is a->0-only (the xi->inf surface). Plus record-tick=physical-time = audited_renaming
+  [PASS] (5.3) NET: BOTH horns of the one coefficient delta_v(xi) remain LIVE -- derived continuous Stone time (obstruction) vs the conditional symmetric finite-a_tau tick (positive). The lever is NOT closed  --  open seams (descending leverage): single-clock assembly UNAUDITED; microcausality/Lieb-Robinson UNAUDITED; base-RP audited_conditional; record-tick=physical-time audited_renaming; the symmetric-vs-forward + finite-a_tau realization riders, none retained
+
+==============================================================================================
+BOUNDARY (corrected): time IS DERIVED (single-clock theorem, UNAUDITED, on retained RP/spectrum/
+cluster/Cl3/arrow) -- but as CONTINUOUS Stone time on Z^3 = the xi->inf OBSTRUCTION surface (Step 1;
+the retained scope-boundary no-go leaves a_tau removable). The POSITIVE (xi=1, delta_v=0) horn needs
+a separate realization premise -- finite physical a_tau + the symmetric central tick (over the FORWARD
+transfer the chain uses; the SO(4) isotropy authority is a->0-only) -- which no retained item supplies
+and the chain partly contradicts. BOTH horns of delta_v(xi) remain LIVE; the lever is NOT closed.
+==============================================================================================
+TOTAL: PASS=12 FAIL=0
+==============================================================================================

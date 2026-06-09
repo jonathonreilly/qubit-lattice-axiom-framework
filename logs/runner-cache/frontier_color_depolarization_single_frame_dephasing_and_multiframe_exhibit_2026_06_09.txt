@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_depolarization_single_frame_dephasing_and_multiframe_exhibit_2026_06_09.py
+runner_sha256: d8451292c62dac7c2e1d7d5723fb0f34586f573896ece5d3ef94d51197662f40
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.17
+status: ok
+----- stdout -----
+Color depolarization boundary: single-frame dephasing is insufficient;
+multi-frame averaging is an exact sufficiency exhibit. Exact su(3) algebra.
+
+[D1] I_3/3 is the unique SU(3)-invariant color density
+[PASS] invariant_density_space_is_1_dimensional  ::  dim of [.,X]=0 solution space = 1 (the scalars)
+[PASS] the invariant point is I_3/3 (order param zero)  ::  P(I/3) = 0.00e+00
+[PASS] order_param == Tr(rho^2)-1/3 exact
+[PASS] P>0 for every polarized state, =0 only at I/3
+
+[D2] single-frame dephasing alone cannot depolarize
+[PASS] single dephase lands in the diagonal subalgebra
+[PASS] diagonal states are fixed (fixed-point set = 2-simplex, not a point)
+[PASS] generic fully-dephased state is still polarized (P>0)  ::  P = 0.127 after single-frame dephasing
+[PASS] single-frame fixed set has >1 free population dof (cannot be a point)  ::  diagonal{p1,p2,p3 : sum=1} is a 2-simplex
+
+[D3] a color-blind (scalar-projector) instrument is inert on rho_color
+[PASS] color-blind scalar-projector Lueders = identity on rho_color  ::  registers no color content; contracts nothing
+
+[D4] multi-frame averaging DOES depolarize (exact sufficiency exhibits)
+[PASS] comp & Fourier frames are mutually unbiased (all overlaps = 1/3)
+[PASS] two MUB frames -> EXACTLY I_3/3 in two steps
+[PASS] order parameter non-increasing along the two-frame cycle, hits 0
+[PASS] Heisenberg-Weyl 9-element twirl -> EXACTLY I_3/3 (finite irreducible)
+[PASS] a NON-uniform finite average does NOT reach I_3/3 (weight is load-bearing)  ::  ||E_skew - I/3|| = 0.188
+
+[D5] guards: covariance does not force contraction; reduced purity not conserved
+[PASS] identity channel is covariant yet inert (covariance != contraction)  ::  SU(3)-covariance alone does not single out I/3 as an attractor
+[PASS] generic global unitary changes reduced color purity (no purity-conservation)  ::  dP = 0.061
+[PASS] single unitary does not single out I_3/3 (no attractor)  ::  ||rho_color' - I/3|| = 0.539
+
+[D6] guard: multi-frame is sufficient, not shown necessary
+[PASS] single fixed frame plus mixing matter unitary can also reach I_3/3  ::  multi-frame averaging is a sufficiency exhibit, not a necessity theorem
+[PASS] dephasing-only insufficiency independent of any second frame  ::  D2/D3 reference only one frame / the inert instrument
+[PASS] color polarization is a genuine content condition (echoes block 04 order param)
+
+TOTAL: PASS=20 FAIL=0
+----- stderr -----

@@ -13,6 +13,21 @@ claim-boundary declaration, not an audit verdict.
 
 ---
 
+## 2026-06-09 surface-scope update
+
+Residual D below (the power-divergent UV regeneration of the marginal anisotropy)
+is a property of the **non-isotropic** surface. The approved
+`kinetic_isotropy_primitive`
+([`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md))
+supplies the **isotropic** surface (`c_t = c_s`), on which the marginal anisotropy
+is forbidden to all orders
+([`EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md`](EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md)),
+so residual D is dissolved on the adopted surface (it is not suppressed by the
+flow — it is structurally absent once the regulator is isotropic). The conditional
+one-loop algebra below stands as stated on its own (continuous-time) surface; this
+pointer only records that the framework no longer adopts that surface. No audit
+verdict is changed by this pointer.
+
 ## 2026-06-07 conditional-algebra scope repair
 
 The current auditable claim is narrower than a retained interacting-Lorentz

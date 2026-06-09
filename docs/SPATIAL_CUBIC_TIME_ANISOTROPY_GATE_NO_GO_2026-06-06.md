@@ -8,6 +8,20 @@
 with cached output
 [`logs/runner-cache/frontier_spatial_cubic_time_anisotropy_gate_2026_06_06.txt`](../logs/runner-cache/frontier_spatial_cubic_time_anisotropy_gate_2026_06_06.txt).
 
+## 2026-06-09 premise-supplied update
+
+This note's salvage path — "add an explicit Euclidean kinetic-normalization /
+4D-hypercubic premise" — is now **taken**: that premise is the approved
+`kinetic_isotropy_primitive`
+([`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)),
+which supplies `c_t = c_s`. The no-go below is unchanged as a statement about what
+spatial `O_h` *alone* leaves open (two coefficients); it now records the precise
+premise that closes it, rather than an unmet gap. With the premise supplied, the
+invariant space collapses to one coefficient and the marginal anisotropy is
+forbidden
+([`EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md`](EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md)).
+No audit verdict is changed by this pointer.
+
 ## Targeted Review Gate
 
 This block targets the active review item

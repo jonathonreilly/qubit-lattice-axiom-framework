@@ -13,6 +13,21 @@ declaration, not an audit verdict.
 
 ---
 
+## 2026-06-09 surface-scope update
+
+The obstruction quantified below is computed on the **non-isotropic** surface
+(continuous-time / anisotropic regulator, `c_t != c_s` allowed). As of 2026-06-09
+the framework's adopted matter surface is the **isotropic** one, supplied by the
+approved `kinetic_isotropy_primitive`
+([`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md));
+on that surface the marginal velocity anisotropy is forbidden to all orders,
+representation-blind
+([`EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md`](EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md)),
+so this naturalness gap **does not arise**. The internal content here remains
+valid as a quantified statement *about the non-isotropic surface*: it is the
+reason that surface is declined, not a live obstruction on the adopted one. No
+audit verdict is changed by this pointer.
+
 ## Role
 
 This note **resolves the open residual D** of the interacting emergent-Lorentz

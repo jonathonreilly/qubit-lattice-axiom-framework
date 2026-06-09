@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 252,
-    "leaf": 401,
+    "leaf": 400,
     "medium": 365
   },
   "cycle_break_target_count": 15,
@@ -17742,35 +17742,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
-        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_interacting_rp_full_algebra_2026_06_05.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17895,6 +17866,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "emergent_lorentz_invariance_note",
+        "lorentz_violation_derived_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/LORENTZ_VIOLATION_ANGULAR_FINGERPRINT_AC_PHI_LAMBDA_INDEPENDENCE_BOUNDED_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_lorentz_fingerprint_ac_phi_lambda_independence.py",
       "transitive_descendants": 16
     },
     {
@@ -29080,31 +29076,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_invariance_note",
-        "lorentz_violation_derived_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LORENTZ_VIOLATION_ANGULAR_FINGERPRINT_AC_PHI_LAMBDA_INDEPENDENCE_BOUNDED_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_lorentz_fingerprint_ac_phi_lambda_independence.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40760,6 +40731,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 31,
-  "total_pending": 1345
+  "ready_count": 30,
+  "total_pending": 1344
 }

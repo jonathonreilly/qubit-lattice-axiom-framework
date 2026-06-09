@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-The absolute flavor handedness is gauge; only the magnitude and inter-sector relative
-orientations are physical.
+The absolute flavor handedness is gauge; magnitude and relative-orientation readouts
+remain open.
 
 Class-A finite-dim verifier (3-vectors only, memory-safe). Resolves the flavor-handedness
 residual by a gauge classification:
@@ -19,12 +19,12 @@ residual by a gauge classification:
        gauge-invariant -> the ABSOLUTE handedness is GAUGE. There is no missing
        derivation; the orientation is a labeling convention.
 
-  (P)  The PHYSICAL (S_3-invariant) flavor data is: the magnitude |Delta| (a function of
-       |delta|, with |delta|=2/9=L_3(1,2) derived), and the INTER-SECTOR RELATIVE
-       orientation sign(Delta_1)*sign(Delta_2), which is R-invariant (R acts on the shared
-       axes of both sectors). Absolute CP/handedness of one sector is gauge; the relative
-       (CKM/PMNS-type) orientation is physical -- consistent with CP violation being
-       relative, not absolute.
+  (P)  The closed survivors are invariant candidates, not physical readout theorems:
+       |Delta| is invariant under delta -> -delta, and the relative orientation
+       sign(Delta_1)*sign(Delta_2) is R-invariant if a later bridge supplies shared axes.
+       This verifier does not certify that |delta|=2/9 is a physical charged-lepton
+       single-summand readout, and it does not identify the relative sign with a CKM/PMNS
+       CP or mixing observable.
 
   Resolves the POSITIVITY notes' open "does the framework force a global handedness?" (NO --
   it is gauge, need not be forced) and completes the prior RK-even result (the residual
@@ -34,7 +34,6 @@ residual by a gauge classification:
 
 No PDG value is load-bearing; PDG enters only the (C) comparator.
 """
-import json
 from itertools import permutations
 from pathlib import Path
 
@@ -73,19 +72,9 @@ def perm_sign(sigma):
 
 
 ROOT = Path(__file__).resolve().parents[1]
-LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-RETAINED_GRADES = {"retained", "retained_bounded", "retained_no_go"}
-ledger = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
-
-
-def retained_authority(claim_id, note_path):
-    row = ledger.get(claim_id)
-    ok = bool(row) and row.get("note_path") == note_path and row.get("effective_status") in RETAINED_GRADES
-    detail = "missing" if not row else f"effective status {row.get('effective_status')}"
-    return ok, detail
-
-
+NOTE = ROOT / "docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md"
 two9 = 2.0 / 9.0
+source = NOTE.read_text(encoding="utf-8")
 
 # ===== (M) +delta and -delta are the SAME masses (multiset), R-relabeled =====
 mp = np.sort(lam(two9) ** 2)
@@ -107,13 +96,11 @@ R = (1, 0, 2)
 check("S_transposition_R_flips_sign_Vand",
       np.sign(vand(born(two9)[list(R)])) == -np.sign(vand(born(two9))) != 0,
       f"sign Vand -> {np.sign(vand(born(two9)[list(R)])):+.0f} under R")
-# the staggered eta-ordering is GAUGE in the retained-grade parent authority.
-staggered_ok, staggered_detail = retained_authority(
-    "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-    "docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md",
-)
-check("S_R_unbroken_per_retained_staggered_S3", staggered_ok,
-      f"R in unbroken S_3 parent; {staggered_detail}")
+# the staggered eta-ordering source is cited, but this runner does not read audit results.
+check("S_R_unbroken_parent_source_named",
+      "STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23" in source
+      and "full, unbroken `S_3`" in source,
+      "source note names the staggered S3 parent for unbroken R")
 
 # ===== (G) sign(Vand) odd under the unbroken R => GAUGE =====
 # odd under ALL transpositions (the full sign rep)
@@ -124,7 +111,7 @@ check("G_sign_Vand_is_S3_sign_rep", allodd and alleven,
 check("G_absolute_handedness_is_gauge", allodd,
       "odd under an unbroken physical symmetry (R) => not gauge-invariant => GAUGE")
 
-# ===== (P) physical = S_3-invariants: magnitude + inter-sector relative orientation =====
+# ===== (P) invariant survivors only; physical readout bridges remain open =====
 check("P_magnitude_is_S3_invariant",
       abs(abs(vand(born(two9))) - abs(vand(born(-two9)))) < 1e-12,
       f"|Vand| same at +/-delta: {abs(vand(born(two9))):.6f}")
@@ -133,26 +120,16 @@ d1, d2 = two9, 0.35
 rel = np.sign(vand(born(d1))) * np.sign(vand(born(d2)))
 relR = np.sign(vand(born(d1)[list(R)])) * np.sign(vand(born(d2)[list(R)]))
 check("P_relative_orientation_R_invariant", rel == relR != 0,
-      f"sign(V1)*sign(V2)={rel:+.0f} = under R-on-both {relR:+.0f} (physical: the mixing/CP phase)")
-# magnitude carries |delta|=2/9=L_3(1,2) (derived, separate)
+      f"sign(V1)*sign(V2)={rel:+.0f} = under R-on-both {relR:+.0f} (invariant candidate only)")
+# magnitude carries |delta|=2/9=L_3(1,2) as a separate operator-side identity.
 z = np.exp(2j * pi / 3.0)
 L312 = (1.0 / 3.0) * (1.0 / ((z - 1) * (z ** 2 - 1)) + 1.0 / ((z ** 2 - 1) * (z ** 4 - 1)))
-check("P_magnitude_carries_derived_2_9", abs(L312.real - two9) < 1e-12,
-      f"|delta|=2/9=L_3(1,2)={L312.real:.6f} (derived; the physical magnitude)")
-fixed_locus_ok, fixed_locus_detail = retained_authority(
-    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-    "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-)
-check("P_magnitude_authority_is_retained_grade", fixed_locus_ok, fixed_locus_detail)
+check("P_operator_side_L312_identity_is_2_9", abs(L312.real - two9) < 1e-12,
+      f"L_3(1,2)={L312.real:.6f}; physical readout bridge is not checked here")
 
 # ===== number of generations (3) is separate/physical; cone r=1/2 untouched =====
 check("number_three_is_separate", len(born(two9)) == 3,
-      "the NUMBER 3 = triplet dimension (separate physical/derived fact, not the gauge orientation)")
-generation_ok, generation_detail = retained_authority(
-    "three_generation_observable_theorem_note",
-    "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
-)
-check("number_three_authority_is_retained_grade", generation_ok, generation_detail)
+      "the NUMBER 3 = triplet dimension (separate from the gauge orientation)")
 sweep = np.linspace(-pi, pi, 41)
 maxQ = max(abs(np.sum(lam(x) ** 2) / np.sum(lam(x)) ** 2 - 2.0 / 3.0) for x in sweep)
 check("firewall_cone_Q_two_thirds", maxQ < 1e-12, f"max|Q-2/3|={maxQ:.2e}")
@@ -165,11 +142,33 @@ xs = np.sort(xn)
 errs = np.array([np.sum((np.sort(1 + sqrt(2) * cos(t + 2 * pi * np.arange(3) / 3)) - xs) ** 2) for t in g])
 check("C_comparator_delta_pdg", abs(g[int(np.argmin(errs))] - two9) < 1e-3, f"delta_PDG={g[int(np.argmin(errs))]:.6f}")
 
+# ===== source-boundary guard: do not re-promote the open readout bridges =====
+check("B_note_title_is_gauge_only_boundary",
+      source.startswith("# Absolute Flavor Handedness Is Gauge; Magnitude and Relative-Orientation Readouts Remain Open"),
+      "title records gauge theorem plus open readouts")
+check("B_physical_2_9_readout_left_open",
+      "does **not** derive a physical\nsingle-summand readout for `2/9`" in source
+      and "physical single-summand readout" in source,
+      "2/9 physical readout bridge left open")
+check("B_relative_orientation_CP_bridge_left_open",
+      "does **not** identify the relative sign with a CKM/PMNS\nCP or mixing observable" in source
+      and "multi-sector shared-axis/readout bridge target" in source,
+      "relative orientation CP/mixing bridge left open")
+forbidden = [
+    "Only the Magnitude and Inter-Sector Relative Orientations Are Physical",
+    "This is where the physical **mixing / CP phase** lives",
+    "the physical, derived flavor number",
+    "the relative (CKM/PMNS-type)\norientation is physical",
+]
+check("B_no_stale_physical_survivor_overclaim_phrases",
+      not any(phrase in source for phrase in forbidden),
+      "stale physical-survivor promotion phrases absent")
+
 print()
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("VERDICT: the ABSOLUTE flavor handedness sign(Delta) is GAUGE -- it is odd under the "
       "orientation-reversing transposition R, an UNBROKEN physical symmetry of the staggered "
       "kinematics (retained full S_3), and +delta/-delta are the same masses R-relabeled. The "
-      "physical S_3-invariant flavor data is the magnitude |delta|=2/9=L_3(1,2) (derived) and the "
-      "inter-sector RELATIVE orientation (the mixing/CP phase). The handedness residual is "
-      "RESOLVED (gauge, no derivation needed); the number 3 and the r=1/2 cone are separate/untouched.")
+      "runner also checks invariant survivors -- |Delta| and relative sign -- only as candidates "
+      "whose physical readout bridges remain open. The handedness residual is RESOLVED as gauge; "
+      "the number 3 and the r=1/2 cone are separate/untouched.")

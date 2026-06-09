@@ -1,4 +1,4 @@
-"""Class-A finite runner (memory-safe): approximate spin-2 isotropy support for the W-native induced graviton.
+"""Finite runner (memory-safe): staggered Kaehler-Dirac Zener anisotropy diagnostic.
 
 The cubic Z^3 lattice splits the spin-2 graviton into two irreps; for graviton momentum along a
 cubic axis the two TT polarizations are E_g = (h_yy-h_zz) and T_2g = h_yz, in DIFFERENT little-group
@@ -6,30 +6,30 @@ cubic axis the two TT polarizations are E_g = (h_yy-h_zz) and T_2g = h_yz, in DI
 does. The Zener anisotropy A = 2*C44/(C11-C12) is the diagnostic (A=1 iff isotropic; C11=C_yyyy,
 C12=C_yyzz, C44=C_yzyz the cubic elastic constants of the graviton stiffness tensor).
 
-RESULT (step 2 of the universal-GR tensor closure): the induced graviton's spin-2 isotropy support
-depends decisively on which lattice fermion realizes the framework's matter packet. On the NAIVE Dirac (2^d doublers)
-the graviton is strongly anisotropic (A ~ 2-2.7, an O(1) LEADING-order violation that does NOT vanish
+RESULT: the finite-BZ tensor-channel Zener diagnostic depends decisively on which lattice fermion
+realizes the framework's matter packet. On the NAIVE Dirac (2^d doublers)
+the diagnostic is strongly anisotropic (A ~ 2-2.7, an O(1) LEADING-order violation that does NOT vanish
 as k->0). On the framework's PROPER STAGGERED KAEHLER-DIRAC fermion (1-component, eta-phases, 2^{d/2}
 tastes, matching the retained matter-sector SO(4)
-`lorentz_boost_free_staggered_fermion_2point_so4`) the graviton is APPROXIMATELY ISOTROPIC
+`lorentz_boost_free_staggered_fermion_2point_so4`) the diagnostic is APPROXIMATELY ISOTROPIC
 (A ~ 0.97, a ~40x improvement), with only a small residual consistent with the framework's known
 small cubic lattice-gravity anisotropy (the l=4 K4 cubic harmonic, `universal_gr` leading-correction
-note / #3201). So E_g and T_2g agree to a few percent on the staggered fermion; the naive-Dirac
-O(1) anisotropy is a wrong-fermion artifact.
+note / #3201). This runner does not prove that the implemented vertex is the W-native graviton
+stiffness, nor does it prove exact E_g/T_2g equality or a continuum a->0 extrapolation.
 
-  T1  the continuum (sin q -> q) Dirac graviton is EXACTLY isotropic (A = 1.00, cross=plus analytic):
+  T1  the continuum (sin q -> q) Dirac tensor diagnostic is isotropic (A = 1.00, cross=plus analytic):
       (sig_x q_y+sig_y q_x)^2 = (sig_x q_x-sig_y q_y)^2 = q_x^2+q_y^2. So any anisotropy is a LATTICE
       (regulator) effect, not fundamental.
-  T2  the NAIVE lattice Dirac graviton is strongly anisotropic: Zener A ~ 2.1 (3D), N-converged at
+  T2  the NAIVE lattice Dirac tensor diagnostic is strongly anisotropic: Zener A ~ 2.1 (3D), N-converged at
       FIXED-tied k0; the anisotropy is O(1) LEADING (does not vanish as k0->0) and traced purely to
       the lattice dispersion sigma.sin q (same integration region: continuum 1.00 vs lattice ~1.9).
   T3  the framework's STAGGERED Kaehler-Dirac operator (exact 16x16 hypercube/spin-taste block) has
       the retained scalar spectrum Delta(P) = m^2 + sum_mu sin^2(P_mu/2) with 4-fold taste
       multiplicity (verified: D D^dag = Delta * 1_16).
-  T4  the STAGGERED Kaehler-Dirac graviton is APPROXIMATELY ISOTROPIC: Zener A ~ 0.97, N-converged,
+  T4  the STAGGERED Kaehler-Dirac diagnostic is APPROXIMATELY ISOTROPIC: Zener A ~ 0.97, N-converged,
       MASS-ROBUST (no pathology, unlike naive Dirac whose m->0 limit has C11<0). A ~40x improvement
-      over the naive Dirac -- the proper taste structure restores (approximate) spin-2 isotropy.
-  T5  E_g and T_2g graviton stiffnesses CONVERGE on the staggered fermion (|A-1| ~ 0.03, a few %)
+      over the naive Dirac.
+  T5  E_g and T_2g diagnostic stiffnesses CONVERGE on the staggered fermion (|A-1| ~ 0.03, a few %)
       vs the naive Dirac where they differ by ~165% (|A-1| ~ 1.1). Cross-checks the retained
       matter-sector SO(4) (`lorentz_boost_free_staggered_fermion_2point_so4`, isotropic continuum)
       and `emergent_lorentz_invariance` (matter isotropic at leading order).
@@ -181,7 +181,7 @@ def zenerS(K0, N, m):
 # T1: continuum isotropic
 # ---------------------------------------------------------------------------
 Acont = zener_cont(0.15, 1.0)
-check("T1 continuum Dirac graviton EXACTLY isotropic: Zener A=%.3f (~1; anisotropy is a lattice effect)" % Acont,
+check("T1 continuum Dirac tensor diagnostic isotropic: Zener A=%.3f (~1; anisotropy is a lattice effect)" % Acont,
       abs(Acont - 1.0) < 0.03)
 
 # ---------------------------------------------------------------------------
@@ -189,7 +189,7 @@ check("T1 continuum Dirac graviton EXACTLY isotropic: Zener A=%.3f (~1; anisotro
 # ---------------------------------------------------------------------------
 A3_a = zener3(2 * np.pi / 12, 12, 1.0)
 A3_b = zener3(2 * np.pi / 16, 16, 1.0)   # smaller k0
-check("T2 naive Dirac graviton STRONGLY anisotropic: Zener A=%.3f (>1.7, O(1) wrong-fermion artifact)" % A3_a,
+check("T2 naive Dirac tensor diagnostic STRONGLY anisotropic: Zener A=%.3f (>1.7, O(1) wrong-fermion artifact)" % A3_a,
       A3_a > 1.7)
 check("T2b naive anisotropy is LEADING (does not vanish as k0->0): A=%.3f@k0=0.52 vs %.3f@k0=0.39 (stable)"
       % (A3_a, A3_b), abs(A3_a - A3_b) < 0.15)
@@ -206,11 +206,11 @@ check("T3 staggered op exact scalar spectrum Delta=m^2+sum sin^2(P_mu/2)=%.5f, 4
       % (delta, np.max(np.abs(ev - delta))), np.max(np.abs(ev - delta)) < 1e-9)
 
 # ---------------------------------------------------------------------------
-# T4: staggered Kaehler-Dirac graviton approximately isotropic, mass-robust
+# T4: staggered Kaehler-Dirac diagnostic approximately isotropic, mass-robust
 # ---------------------------------------------------------------------------
 AS_6 = zenerS(2 * np.pi / 6, 6, 0.7)
 AS_8 = zenerS(2 * np.pi / 8, 8, 0.7)
-check("T4 STAGGERED Kaehler-Dirac graviton APPROX ISOTROPIC: Zener A=%.3f (N=6), %.3f (N=8) -- ~40x better than naive"
+check("T4 STAGGERED Kaehler-Dirac diagnostic APPROX ISOTROPIC: Zener A=%.3f (N=6), %.3f (N=8) -- ~40x better than naive"
       % (AS_6, AS_8), abs(AS_6 - 1.0) < 0.10 and abs(AS_8 - 1.0) < 0.10)
 AS_m1 = zenerS(2 * np.pi / 8, 8, 1.0)
 AS_m05 = zenerS(2 * np.pi / 8, 8, 0.5)
@@ -231,10 +231,10 @@ n_fail = sum(1 for _, ok in results if not ok)
 for name, ok in results:
     print(("PASS" if ok else "FAIL"), name)
 print()
-print("Approximate spin-2 isotropy support for the W-native induced graviton: the framework's staggered")
-print("Kaehler-Dirac fermion gives an APPROXIMATELY ISOTROPIC graviton (Zener A~0.97; E_g/T_2g agree to a few %),")
+print("Staggered Kaehler-Dirac finite-BZ tensor diagnostic: the framework's staggered")
+print("Kaehler-Dirac fermion gives an APPROXIMATELY ISOTROPIC Zener readout (A~0.97; E_g/T_2g agree to a few %),")
 print("a ~40x improvement over the naive Dirac (A~2.1-2.7, O(1) wrong-fermion anisotropy). The continuum")
 print("is exactly isotropic, so the residual is a small lattice (l=4 cubic-harmonic / vertex-scheme)")
 print("effect, consistent with retained matter-sector SO(4) and the known small cubic lattice-gravity")
-print("anisotropy. BOUNDED on the ~3%% residual (vertex-scheme-dependent / leading lattice l=4).")
+print("anisotropy. BOUNDED on the ~3%% residual and the open conserved-vertex/W-metric bridge.")
 print("TOTAL: PASS=%d FAIL=%d" % (n_pass, n_fail))

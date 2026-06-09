@@ -79,10 +79,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3181 |
-| Critical nodes | 528 |
+| Critical nodes | 529 |
 | High nodes | 453 |
 | Medium nodes | 817 |
-| Leaf nodes | 1383 |
+| Leaf nodes | 1382 |
 
 Top load-bearing rows by graph score:
 

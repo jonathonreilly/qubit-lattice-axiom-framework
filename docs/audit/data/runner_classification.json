@@ -264,6 +264,18 @@
       "dominant_class": "D",
       "runner": "scripts/action_regularity_crossover.py"
     },
+    "action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_action_form_continuum_removal_scoping_2026_06_08.py"
+    },
     "action_geometry_bridge_note": {
       "assert_count": 0,
       "counts": {
@@ -828,6 +840,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_area_law_quarter_broader_no_go.py"
     },
+    "arrow_cpt_orientation_do_not_source_cp_odd_action_coefficients_no_go_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 6,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/arrow_cpt_orientation_cp_source_no_go_2026_06_08.py"
+    },
     "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05": {
       "assert_count": 1,
       "counts": {
@@ -1264,13 +1288,13 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 20,
+        "B": 2,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py"
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py"
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
       "assert_count": 0,
@@ -1438,7 +1462,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "runner": "scripts/backreaction_poisson.py"
+      "runner": "scripts/backreaction_poisson_live_threshold_check.py"
     },
     "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16": {
       "assert_count": 1,
@@ -2856,6 +2880,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_chiral_bottleneck_card.py"
     },
+    "chiral_content_is_the_epsilon_d_chirality_import_distinct_from_orientation_narrow_theorem_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/chiral_content_distinct_recurring_import_2026_06_08.py"
+    },
     "chiral_layer_oscillation_2026-04-09": {
       "assert_count": 4,
       "counts": {
@@ -2892,6 +2928,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_chiral_3plus1d_decoherence_sweep.py"
     },
+    "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/chirality_gate_two_gates_dirac_vs_generation_2026_06_08.py"
+    },
     "chirality_record_typing_interface_2026-06-05": {
       "assert_count": 1,
       "counts": {
@@ -2903,6 +2951,18 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/frontier_chirality_record_typing_interface_2026_06_05.py"
+    },
+    "chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_chirality_separate_factor_dirac_mass_algebra.py"
     },
     "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25": {
       "assert_count": 1,
@@ -3179,6 +3239,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/frontier_ckm_consecutive_primes_s3_koide_bridge.py"
+    },
+    "ckm_cp_phase_arctan_sqrt5_bridge_reduction_open_gate_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 9,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/ckm_cp_phase_arctan_sqrt5_bridge_reduction_open_gate.py"
     },
     "ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
@@ -3875,6 +3947,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_clifford_chirality_dimension_narrow.py"
+    },
+    "clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/frontier_clifford_gamma_species_corner_decoupling.py"
     },
     "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
@@ -4740,6 +4824,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25_hostile_audit_findings.py"
     },
+    "cte_rconn_spatial_tensor_color_bridge_is_a_cross_domain_coincidence_narrow_no_go_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_cte_rconn_bridge_cross_domain_no_go.py"
+    },
     "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -5188,8 +5284,8 @@
       "assert_count": 1,
       "counts": {
         "A": 26,
-        "B": 5,
-        "C": 2,
+        "B": 7,
+        "C": 0,
         "D": 5
       },
       "decoration_candidate": false,
@@ -8592,6 +8688,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_emergent_lorentz_invariance.py"
     },
+    "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py"
+    },
     "emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06": {
       "assert_count": 1,
       "counts": {
@@ -8868,6 +8976,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_ew_higgs_gauge_mass_diagonalization.py"
     },
+    "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_ew_kappa_self_energy_object_pin.py"
+    },
     "ew_lattice_cos_sq_theta_w_complement_bridge_theorem_note_2026-04-26": {
       "assert_count": 1,
       "counts": {
@@ -8976,6 +9096,18 @@
       "dominant_class": "C",
       "runner": "scripts/fermion_parity_z2_grading_check.py"
     },
+    "fermionic_gaussian_npoint_convergence_from_two_point_bounded_theorem_note_2026-06-08": {
+      "assert_count": 4,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_fermionic_gaussian_npoint_from_two_point.py"
+    },
     "field_equation_derivation_note": {
       "assert_count": 1,
       "counts": {
@@ -9013,7 +9145,7 @@
       "runner": "scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py"
     },
     "fifth_family_radial_boundary_note": {
-      "assert_count": 2,
+      "assert_count": 3,
       "counts": {
         "A": 0,
         "B": 2,
@@ -9143,6 +9275,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/fixed_field_grown_transfer_scout.py"
+    },
+    "fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/fixed_gbare_interacting_existence_ir_target_reframing_2026_06_08.py"
     },
     "flavor_a1prime_debt_and_data_note_2026-05-30": {
       "assert_count": 1,
@@ -9930,7 +10074,7 @@
         "A": 5,
         "B": 1,
         "C": 12,
-        "D": 0
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -10068,6 +10212,18 @@
       "dominant_class": "C",
       "runner": "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py"
     },
+    "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py"
+    },
     "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": {
       "assert_count": 3,
       "counts": {
@@ -10097,10 +10253,10 @@
       "counts": {
         "A": 12,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0
       },
-      "decoration_candidate": true,
+      "decoration_candidate": false,
       "dominant_class": "A",
       "runner": "scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py"
     },
@@ -11064,6 +11220,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_gate_rp_reground_staggered_only_discriminator.py"
     },
+    "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/gauge_algebra_supplied_carrier_2026_06_08.py"
+    },
     "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02": {
       "assert_count": 1,
       "counts": {
@@ -11536,13 +11704,13 @@
       "assert_count": 1,
       "counts": {
         "A": 1,
-        "B": 1,
-        "C": 10,
+        "B": 2,
+        "C": 12,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py"
+      "runner": "scripts/gauge_vacuum_plaquette_three_sample_positive_cone_scope_guard_2026_06_08.py"
     },
     "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17": {
       "assert_count": 1,
@@ -11885,7 +12053,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 26,
+        "C": 58,
         "D": 9
       },
       "decoration_candidate": false,
@@ -12947,6 +13115,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/hard_geometry_local_support_pilot.py"
+    },
+    "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_heat_kernel_unique_diffusion_kernel_2026_06_08.py"
     },
     "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17": {
       "assert_count": 1,
@@ -14039,6 +14219,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/frontier_hypercharge_squared_trace_catalog.py"
+    },
+    "i1_native_quadratic_static_source_normalization_bridge_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py"
     },
     "i1_static_readout_is_native_field_integration_2026-06-06": {
       "assert_count": 1,
@@ -15191,6 +15383,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_koide_delta_azimuth_chirality_necessity.py"
+    },
+    "koide_delta_c3_circulant_spectral_boundary_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 13,
+        "B": 0,
+        "C": 2,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/koide_delta_c3_circulant_spectral_boundary_2026_06_08.py"
     },
     "koide_delta_dimensionless_closure_via_v8_theorem_note_2026-04-29": {
       "assert_count": 0,
@@ -16416,6 +16620,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_qubit_lattice_dim_closure.py"
     },
+    "koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 6,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/koide_corner_dirac_determinant_2026_06_08.py"
+    },
     "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05": {
       "assert_count": 0,
       "counts": {
@@ -17569,10 +17785,10 @@
       "runner": "scripts/audit_companion_lattice_green_function_zero_argument_2026_05_17.py"
     },
     "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07": {
-      "assert_count": 2,
+      "assert_count": 4,
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -18039,7 +18255,7 @@
     "lepton_phase_modulus_separation_no_go_2026-06-06": {
       "assert_count": 1,
       "counts": {
-        "A": 11,
+        "A": 20,
         "B": 0,
         "C": 0,
         "D": 0
@@ -18456,6 +18672,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py"
     },
+    "lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 12,
+        "B": 2,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_lorentz_fingerprint_ac_phi_lambda_independence.py"
+    },
     "lorentz_violation_derived_note": {
       "assert_count": 0,
       "counts": {
@@ -18568,12 +18796,12 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
-        "D": 2
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "D",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/magnitude_reads_minimal_record_block_2026_06_06.py"
     },
     "magnitude_temporal_factor_is_count_not_rate_2026-06-06": {
@@ -18647,6 +18875,18 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/matched_2d_4d_decoherence.py"
+    },
+    "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 16,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py"
     },
     "matter_inertial_closure_note": {
       "assert_count": 0,
@@ -20305,10 +20545,10 @@
       "runner": "scripts/NONLABEL_GROWN_BASIN_TARGETED.py"
     },
     "nonlabel_grown_drift_basin_note": {
-      "assert_count": 2,
+      "assert_count": 4,
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -22056,6 +22296,30 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_pmns_current_bank_value_selection_nogo.py"
     },
+    "pmns_dcp_branch_robustness_resolved_by_measured_theta23_narrow_theorem_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/pmns_dcp_branch_robustness_pressure_test_2026_06_08.py"
+    },
+    "pmns_dcp_forecast_standing_degrades_under_nufit6_bounded_note_2026-06-08": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 10
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_pmns_dcp_nufit6_comparator_refresh_exact.py"
+    },
     "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17": {
       "assert_count": 0,
       "counts": {
@@ -22655,6 +22919,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_pmns_uniform_scalar_deformation_boundary.py"
+    },
+    "pmns_x6_preimage_localization_closed_outer_frame_interval_certificate_narrow_theorem_note_2026-06-08": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/pmns_x6_preimage_localization_outer_frame_certificate_2026_06_08.py"
     },
     "poisson_3d_self_field_note": {
       "assert_count": 0,
@@ -24252,6 +24528,18 @@
       "dominant_class": "A",
       "runner": "scripts/rconn_matching_rule_nogo_certificate.py"
     },
+    "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_rconn_kappa_ew_register_not_read.py"
+    },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
       "assert_count": 1,
       "counts": {
@@ -24996,6 +25284,18 @@
       "dominant_class": "C",
       "runner": "scripts/ring_monodromy_car.py"
     },
+    "route2_readout_record_positivity_does_not_fix_rho_e_narrow_no_go_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_route2_readout_record_positivity_no_go.py"
+    },
     "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06": {
       "assert_count": 1,
       "counts": {
@@ -25319,6 +25619,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/frontier_scalar_harmonic_tower.py"
+    },
+    "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 5,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_scalar_i_real_generation_k_parity_separation.py"
     },
     "scalar_kg_rerun_note_2026-04-10": {
       "assert_count": 0,
@@ -27924,6 +28236,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py"
     },
+    "strong_cp_parity_measure_correction_orientation_gate_no_go_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 14,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/strong_cp_parity_measure_orientation_gate_2026_06_08.py"
+    },
     "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": {
       "assert_count": 2,
       "counts": {
@@ -28547,18 +28871,6 @@
       "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/frontier_teleportation_3d_resource_probe.py"
-    },
-    "teleportation_acceptance_suite_note": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "runner": "scripts/frontier_teleportation_acceptance_suite.py"
     },
     "teleportation_adiabatic_convergence_robustness_note": {
       "assert_count": 0,
@@ -29700,16 +30012,52 @@
       "dominant_class": "A",
       "runner": "scripts/universal_gr_complement_canonical_reaudit.py"
     },
+    "universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_2026_06_08.py"
+    },
+    "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_universal_gr_cubic_diffeo_ward_operator_telescope.py"
+    },
+    "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py"
+    },
     "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08": {
       "assert_count": 2,
       "counts": {
         "A": 3,
         "B": 0,
         "C": 4,
-        "D": 1
+        "D": 7
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "D",
       "runner": "scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py"
     },
     "universal_gr_discrete_global_closure_note": {
@@ -29784,6 +30132,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_universal_gr_isotropic_schur_localization.py"
     },
+    "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08": {
+      "assert_count": 5,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_universal_gr_metric_reparam_operator_lift_boundary.py"
+    },
     "universal_gr_polarization_frame_bundle_attempt": {
       "assert_count": 1,
       "counts": {
@@ -29856,12 +30216,36 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_universal_gr_so3_isotypic_orbit_flat_narrow.py"
     },
+    "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_universal_gr_staggered_tt_graviton_triangle.py"
+    },
+    "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_universal_gr_staggered_tt_stiffness_positive.py"
+    },
     "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08": {
       "assert_count": 2,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
@@ -32947,7 +33331,7 @@
       "exists": true
     },
     "scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py": {
-      "assert_count": 2,
+      "assert_count": 3,
       "claims": [
         "fifth_family_radial_boundary_note"
       ],
@@ -33112,13 +33496,13 @@
       "exists": true
     },
     "scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py": {
-      "assert_count": 2,
+      "assert_count": 4,
       "claims": [
         "nonlabel_grown_drift_basin_note"
       ],
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -33548,6 +33932,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/arrow_cpt_orientation_cp_source_no_go_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "arrow_cpt_orientation_do_not_source_cp_odd_action_coefficients_no_go_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 6,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/asymmetry_persistence_born_calibration.py": {
@@ -34189,8 +34588,8 @@
       ],
       "counts": {
         "A": 26,
-        "B": 5,
-        "C": 2,
+        "B": 7,
+        "C": 0,
         "D": 5
       },
       "decoration_candidate": false,
@@ -35548,6 +35947,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/audit_companion_pmns_dcp_nufit6_comparator_refresh_exact.py": {
+      "assert_count": 0,
+      "claims": [
+        "pmns_dcp_forecast_standing_degrades_under_nufit6_bounded_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 10
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py": {
       "assert_count": 2,
       "claims": [
@@ -36793,10 +37207,24 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py": {
       "assert_count": 1,
       "claims": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
       ],
       "counts": {
@@ -36899,24 +37327,10 @@
       "dominant_class": "C",
       "exists": true
     },
-    "scripts/backreaction_poisson.py": {
-      "assert_count": 0,
-      "claims": [
-        "backreaction_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true
-    },
     "scripts/backreaction_poisson_live_threshold_check.py": {
       "assert_count": 0,
       "claims": [
+        "backreaction_note",
         "poisson_backreaction_live_threshold_packet_note_2026-05-29"
       ],
       "counts": {
@@ -37404,6 +37818,51 @@
       "counts": {
         "A": 15,
         "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/chiral_content_distinct_recurring_import_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "chiral_content_is_the_epsilon_d_chirality_import_distinct_from_orientation_narrow_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/chirality_gate_two_gates_dirac_vs_generation_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/ckm_cp_phase_arctan_sqrt5_bridge_reduction_open_gate.py": {
+      "assert_count": 1,
+      "claims": [
+        "ckm_cp_phase_arctan_sqrt5_bridge_reduction_open_gate_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -40117,6 +40576,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/fixed_gbare_interacting_existence_ir_target_reframing_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/flavor_Q1_default_rests_on_PRR_2026_05_30.py": {
       "assert_count": 1,
       "claims": [
@@ -41086,7 +41560,7 @@
         "A": 5,
         "B": 1,
         "C": 12,
-        "D": 0
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -41360,6 +41834,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/frontier_action_form_continuum_removal_scoping_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_action_normalization.py": {
@@ -42882,6 +43371,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_chirality_separate_factor_dirac_mass_algebra.py": {
+      "assert_count": 1,
+      "claims": [
+        "chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_chronology_operational_no_past_signaling.py": {
       "assert_count": 1,
       "claims": [
@@ -43694,6 +44198,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_clifford_gamma_species_corner_decoupling.py": {
+      "assert_count": 1,
+      "claims": [
+        "clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py": {
       "assert_count": 2,
       "claims": [
@@ -44264,6 +44783,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_cte_rconn_bridge_cross_domain_no_go.py": {
+      "assert_count": 1,
+      "claims": [
+        "cte_rconn_spatial_tensor_color_bridge_is_a_cross_domain_coincidence_narrow_no_go_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_cubic_coxeter_regge_deficit_vanishing_narrow.py": {
@@ -48171,6 +48705,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_emergent_product_law.py": {
       "assert_count": 0,
       "claims": [
@@ -48352,6 +48901,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_ew_kappa_self_energy_object_pin.py": {
+      "assert_count": 1,
+      "claims": [
+        "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_ew_lattice_cos_sq_theta_w_complement_bridge.py": {
       "assert_count": 1,
       "claims": [
@@ -48440,6 +49004,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_fermionic_gaussian_npoint_from_two_point.py": {
+      "assert_count": 4,
+      "claims": [
+        "fermionic_gaussian_npoint_convergence_from_two_point_bounded_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_field_equation_variational_scope_repair.py": {
@@ -48591,6 +49170,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_free_dirac_car_positive_energy_equal_time_support.py": {
+      "assert_count": 1,
+      "claims": [
+        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_frozen_stars_rigorous.py": {
@@ -49412,7 +50006,6 @@
     "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py": {
       "assert_count": 1,
       "claims": [
-        "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
         "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
         "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
       ],
@@ -49766,7 +50359,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 26,
+        "C": 58,
         "D": 9
       },
       "decoration_candidate": false,
@@ -50434,6 +51027,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/frontier_heat_kernel_unique_diffusion_kernel_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_hierarchy_alpha_bare_four_pi_content_attribution.py": {
@@ -53854,13 +54462,13 @@
       "exists": true
     },
     "scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py": {
-      "assert_count": 2,
+      "assert_count": 4,
       "claims": [
         "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
       ],
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -54334,6 +54942,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_lorentz_fingerprint_ac_phi_lambda_independence.py": {
+      "assert_count": 1,
+      "claims": [
+        "lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 12,
+        "B": 2,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_lorentz_kernel_positive_closure.py": {
       "assert_count": 1,
       "claims": [
@@ -54528,6 +55151,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 16,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_monopole_derived.py": {
@@ -58768,6 +59406,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_rconn_kappa_ew_register_not_read.py": {
+      "assert_count": 1,
+      "claims": [
+        "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_record_asymptotic_reset_convergence_ledger_2026_06_05.py": {
       "assert_count": 1,
       "claims": [
@@ -59443,6 +60096,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_route2_readout_record_positivity_no_go.py": {
+      "assert_count": 1,
+      "claims": [
+        "route2_readout_record_positivity_does_not_fix_rho_e_narrow_no_go_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_rp_gauge_half_wilson_temporal_bridge.py": {
       "assert_count": 1,
       "claims": [
@@ -59727,6 +60395,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/frontier_scalar_i_real_generation_k_parity_separation.py": {
+      "assert_count": 1,
+      "claims": [
+        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 5,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_scalar_kg_16card_v2.py": {
@@ -61658,21 +62341,6 @@
       "dominant_class": "B",
       "exists": true
     },
-    "scripts/frontier_teleportation_acceptance_suite.py": {
-      "assert_count": 0,
-      "claims": [
-        "teleportation_acceptance_suite_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true
-    },
     "scripts/frontier_teleportation_adiabatic_convergence_robustness.py": {
       "assert_count": 0,
       "claims": [
@@ -62649,6 +63317,51 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_2026_06_08.py": {
+      "assert_count": 2,
+      "claims": [
+        "universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_universal_gr_cubic_diffeo_ward_operator_telescope.py": {
+      "assert_count": 2,
+      "claims": [
+        "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py": {
+      "assert_count": 2,
+      "claims": [
+        "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py": {
       "assert_count": 2,
       "claims": [
@@ -62658,10 +63371,10 @@
         "A": 3,
         "B": 0,
         "C": 4,
-        "D": 1
+        "D": 7
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_universal_gr_discrete_global_closure.py": {
@@ -62754,6 +63467,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_universal_gr_metric_reparam_operator_lift_boundary.py": {
+      "assert_count": 5,
+      "claims": [
+        "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_universal_gr_polarization_frame_bundle.py": {
       "assert_count": 1,
       "claims": [
@@ -62800,6 +63528,36 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_universal_gr_staggered_tt_graviton_triangle.py": {
+      "assert_count": 1,
+      "claims": [
+        "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_universal_gr_staggered_tt_stiffness_positive.py": {
+      "assert_count": 2,
+      "claims": [
+        "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_universal_gr_stress_ward_transverse_seagull.py": {
       "assert_count": 2,
       "claims": [
@@ -62808,7 +63566,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
@@ -63199,10 +63957,10 @@
       "counts": {
         "A": 12,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0
       },
-      "decoration_candidate": true,
+      "decoration_candidate": false,
       "dominant_class": "A",
       "exists": true
     },
@@ -65659,6 +66417,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/gauge_algebra_supplied_carrier_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py": {
       "assert_count": 1,
       "claims": [
@@ -65698,6 +66471,21 @@
         "A": 0,
         "B": 1,
         "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/gauge_vacuum_plaquette_three_sample_positive_cone_scope_guard_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 2,
+        "C": 12,
         "D": 0
       },
       "decoration_candidate": false,
@@ -66261,6 +67049,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/i1_static_readout_is_native_field_integration_2026_06_06.py": {
       "assert_count": 1,
       "claims": [
@@ -66469,6 +67272,36 @@
         "D": 0
       },
       "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/koide_corner_dirac_determinant_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 6,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/koide_delta_c3_circulant_spectral_boundary_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_delta_c3_circulant_spectral_boundary_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 13,
+        "B": 0,
+        "C": 2,
+        "D": 7
+      },
+      "decoration_candidate": false,
       "dominant_class": "A",
       "exists": true
     },
@@ -67607,7 +68440,7 @@
         "lepton_phase_modulus_separation_no_go_2026-06-06"
       ],
       "counts": {
-        "A": 11,
+        "A": 20,
         "B": 0,
         "C": 0,
         "D": 0
@@ -67743,12 +68576,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
-        "D": 2
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "D",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py": {
@@ -69003,6 +69836,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/pmns_dcp_branch_robustness_pressure_test_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "pmns_dcp_branch_robustness_resolved_by_measured_theta23_narrow_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/pmns_oriented_cycle_two_prong_composition_runner.py": {
       "assert_count": 1,
       "claims": [
@@ -69076,6 +69924,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/pmns_x6_preimage_localization_outer_frame_certificate_2026_06_08.py": {
+      "assert_count": 2,
+      "claims": [
+        "pmns_x6_preimage_localization_closed_outer_frame_interval_certificate_narrow_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/poisson_3d_self_field.py": {
@@ -70704,6 +71567,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/strong_cp_parity_measure_orientation_gate_2026_06_08.py": {
+      "assert_count": 1,
+      "claims": [
+        "strong_cp_parity_measure_correction_orientation_gate_no_go_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 14,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/strong_cp_theta_bar_structured_admission_2026_06_04.py": {
       "assert_count": 1,
       "claims": [
@@ -71873,16 +72751,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 506,
+    "decoration_candidates": 509,
     "dominant_class_distribution": {
-      "A": 366,
-      "B": 436,
-      "C": 984,
-      "D": 362,
-      "none": 456
+      "A": 373,
+      "B": 438,
+      "C": 1000,
+      "D": 369,
+      "none": 457
     },
-    "runners_classified": 2604,
-    "runners_with_C": 1313,
-    "runners_with_D": 769
+    "runners_classified": 2637,
+    "runners_with_C": 1338,
+    "runners_with_D": 783
   }
 }

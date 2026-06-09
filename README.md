@@ -35,8 +35,12 @@ Use these entrypoints in order:
 The repo is in an audit-transition state. Source notes and publication tables
 still contain legacy `retained` / `promoted` wording, but the publication-facing
 authority is the audit-derived `effective_status` in
-[`docs/audit/AUDIT_LEDGER.md`](docs/audit/AUDIT_LEDGER.md). The fastest current
-summary is the generated
+[`docs/audit/AUDIT_LEDGER.md`](docs/audit/AUDIT_LEDGER.md). Retained-grade
+`effective_status` values are `retained`, `retained_no_go`, and
+`retained_bounded`; boxed `decoration_under_*` rows are decorations under a
+retained parent, not independent retained rows. `promoted` is
+publication-capture language, not an audit `effective_status`. The fastest
+current summary is the generated
 [`docs/repo/FRONT_DOOR_STATUS.md`](docs/repo/FRONT_DOOR_STATUS.md), refreshed by
 `bash docs/audit/scripts/run_pipeline.sh`.
 

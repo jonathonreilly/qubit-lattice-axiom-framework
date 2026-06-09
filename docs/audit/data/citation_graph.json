@@ -46614,10 +46614,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -90160,16 +90160,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31",
         "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
         "free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08",
         "gate_b_dynamics_note",
         "gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19",
         "gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19",
-        "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17"
+        "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17",
+        "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6fb2f7647e79f5ce831a4d6fd592231415d0bca9f836364e0e0b04a493f0b7d4",
+      "note_hash": "ef2bbbcaa35cd9989361158f746bd0604b7aa8ddde50429819c43fcdce4d670a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

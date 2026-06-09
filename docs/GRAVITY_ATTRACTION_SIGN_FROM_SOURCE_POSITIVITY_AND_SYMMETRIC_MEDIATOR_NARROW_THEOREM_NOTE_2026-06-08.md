@@ -27,8 +27,26 @@ orientation.
 
 ## Exchange-Sign Algebra
 
-Use signature `eta = diag(-1,+1,+1,+1)` and the conventional static tree-level
-exchange form
+Use signature `eta = diag(-1,+1,+1,+1)`. The runner now derives the static
+exchange sign from a finite quadratic mediator mode rather than importing it
+as a textbook convention. For one bounded static mode with positive kernel
+`K > 0`,
+
+```text
+E(phi) = (1/2) sigma_kin K phi^2 - (J_A + J_B) phi.
+```
+
+Eliminating `phi` gives
+
+```text
+phi_* = (J_A + J_B)/(sigma_kin K),
+E(phi_*) = -(J_A + J_B)^2/(2 sigma_kin K),
+E_AB = - J_A J_B/(sigma_kin K).
+```
+
+Since `sigma_kin = +/-1`, the cross-sign is the same as
+`-sigma_kin J_A J_B` for `K > 0`. With the numerator contraction `N` and
+source product `g_A g_B`, this is the displayed static exchange form
 
 ```text
 V(r) = - sigma_kin g_A g_B N / (4 pi r),
@@ -39,6 +57,10 @@ like positive sources, and `N` is the relevant numerator contracted with the
 static source structure `u^mu=(1,0,0,0)`.
 
 The runner checks:
+
+| derivation item | result |
+|---|---|
+| finite on-shell mediator cross term | `E_AB = -J_A J_B/(sigma_kin K)` |
 
 | mediator | numerator `N` | healthy same-source sign |
 |---|---:|---|
@@ -64,6 +86,15 @@ sign(V) = - sign(sigma_kin) sign(g_A g_B).
 Therefore positive sources and a healthy kinetic sign give attraction; a ghost
 kinetic sign gives repulsion. The attraction sign and the spin-2 kinetic sign
 are the same residual in this exchange model.
+
+## Textbook Reference Boundary
+
+The static tree-level exchange sign agrees with the standard QFT presentation
+of one-mediator exchange, but that textbook statement is not load-bearing here.
+The runner proves the sign on the framework-local finite quadratic exchange
+channel by eliminating the mediator mode. A textbook citation can therefore be
+used only as a parallel cross-check of convention and terminology, not as an
+imported input.
 
 ## Claim Boundary
 
@@ -111,8 +142,9 @@ shipped.
   normalization, metric-mediator class, and healthy spin-2 kinetic sign are
   distinct inputs. Collapsing the Newtonian attraction sign to the kinetic
   sign does not collapse those inputs into one derived theorem.
-- **N3 - Hidden-wall scan.** "Standard exchange," "positive source," "metric
-  mediator," and "healthy kinetic" are explicit premises here, not silent
+- **N3 - Hidden-wall scan.** The exchange-sign algebra is now derived by the
+  finite on-shell quadratic-mode calculation. "Positive source," "metric
+  mediator," and "healthy kinetic" remain explicit premises here, not silent
   consequences of the baseline axioms.
 - **N4 - Residual matching.** The prior residual is the Newtonian attraction
   sign on the Poisson surface. This note matches only the source/action
@@ -141,11 +173,11 @@ shipped.
 - no assertion that Record, the scale-reference primitive, or the
   kinetic-isotropy primitive supplies a gravitational action.
 
-## Import and Support Inventory
+## Support Inventory
 
-- **Standard QFT sign convention:** the tree-level exchange numerator and
-  potential sign form. This is an admitted bounded-theorem input, checked
-  algebraically in the runner.
+- **Derived finite exchange sign:** the tree-level exchange sign follows by
+  completing the square / on-shell elimination for the bounded quadratic
+  mediator mode; standard QFT is parallel reference only.
 - **Framework support:** the retained Poisson surface and reflection-positivity
   total-energy support.
 - **Open input:** the healthy spin-2 kinetic/source-action orientation.

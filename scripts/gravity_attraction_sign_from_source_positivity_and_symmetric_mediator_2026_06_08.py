@@ -1,6 +1,6 @@
 """Bounded exchange-sign reduction for the Newtonian attraction sign.
 
-The runner checks the static tree-level sign algebra used in
+The runner derives and checks the static tree-level sign algebra used in
 GRAVITY_ATTRACTION_SIGN_FROM_SOURCE_POSITIVITY_AND_SYMMETRIC_MEDIATOR_...
 It does not derive the framework's source/action normalization, local energy
 conditions, or healthy spin-2 kinetic sign.
@@ -9,6 +9,8 @@ conditions, or healthy spin-2 kinetic sign.
 from __future__ import annotations
 
 from pathlib import Path
+
+import sympy as sp
 
 PASS = 0
 FAIL = 0
@@ -34,9 +36,27 @@ def potential_sign(numerator: float, kinetic_sign: float = 1.0, source_product: 
     return 0.0
 
 
+def derived_exchange_cross_term() -> sp.Expr:
+    """Derive the static two-source cross term by eliminating one mediator mode."""
+    kinetic_sign, k, j_a, j_b = sp.symbols("sigma K J_A J_B", nonzero=True)
+    phi = sp.symbols("phi")
+    energy = sp.Rational(1, 2) * kinetic_sign * k * phi**2 - (j_a + j_b) * phi
+    stationary_phi = sp.solve(sp.diff(energy, phi), phi)[0]
+    on_shell = sp.expand(energy.subs(phi, stationary_phi))
+    return sp.expand(on_shell).coeff(j_a * j_b)
+
+
 def main() -> int:
     print("GRAVITY ATTRACTION SIGN: bounded source/action exchange reduction")
     print("=" * 78)
+
+    sigma, k = sp.symbols("sigma K", nonzero=True)
+    cross_term = derived_exchange_cross_term()
+    check(
+        "E0 exchange sign derived by finite quadratic on-shell elimination",
+        sp.simplify(cross_term + 1 / (sigma * k)) == 0,
+        f"cross_term={cross_term}; for sigma=+/-1 this has sign -sigma when K>0",
+    )
 
     eta00 = -1.0
     numerator_scalar = 1.0
@@ -98,13 +118,21 @@ def main() -> int:
         all(item in note for item in guardrails),
         "guardrails present for kinetic sign, source/action normalization, local energy, and primitive scope",
     )
+    check(
+        "E5 source note treats textbook QFT only as parallel reference",
+        "Textbook Reference Boundary" in note
+        and "parallel cross-check" in note
+        and "not load-bearing" in note
+        and "admitted bounded-theorem input" not in note,
+    )
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     print(
-        "VERDICT: PASS for the bounded sign reduction only. Positive sources plus the supplied\n"
-        "source/action exchange normalization and a healthy spin-2 kinetic sign give attraction;\n"
-        "flipping the kinetic sign flips the force. The runner does not derive the kinetic sign\n"
-        "or the source/action normalization."
+        "VERDICT: PASS for the bounded sign reduction only. The exchange sign is derived by\n"
+        "finite quadratic on-shell elimination inside the displayed source/action model.\n"
+        "Positive sources plus a healthy spin-2 kinetic sign give attraction; flipping the\n"
+        "kinetic sign flips the force. The runner does not derive the kinetic sign or the\n"
+        "source/action normalization."
     )
     return 0 if FAIL == 0 else 1
 

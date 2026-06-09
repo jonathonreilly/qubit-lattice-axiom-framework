@@ -13,6 +13,20 @@ declaration, not an audit verdict.
 
 ---
 
+## 2026-06-09 surface-scope update
+
+The obstruction quantified below is computed on a **non-isotropic** surface
+(continuous-time / anisotropic regulator, `c_t != c_s` allowed). As of 2026-06-09
+the approved `kinetic_isotropy_primitive`
+([`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md))
+supplies the OS0 kinetic-form premise `c_t = c_s`. Therefore this note remains
+valid as a quantified obstruction to leaving the kinetic form anisotropic; it is
+not, by itself, a live obstruction to the adopted OS0 kinetic-form surface. The
+separate B4 note
+([`EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md`](EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md))
+handles the marginal anisotropy on that OS0 surface. No audit verdict is changed
+by this pointer.
+
 ## Role
 
 This note **resolves the open residual D** of the interacting emergent-Lorentz

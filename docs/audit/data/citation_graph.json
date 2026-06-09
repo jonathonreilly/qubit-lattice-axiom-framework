@@ -46610,7 +46610,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      "to": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
     },
     {
       "from": "repo.front_door_status",
@@ -46634,11 +46634,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wigner_mode_low_d_sublattice_theorem_note_2026-05-02"
+      "to": "plaquette_bootstrap_framework_integration_note_2026-05-03"
     },
     {
       "from": "repo.front_door_status",
-      "to": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
+      "to": "wigner_mode_low_d_sublattice_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -90159,17 +90159,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
         "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
         "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
         "fifth_family_radial_boundary_note",
         "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
-        "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
-        "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
+        "plaquette_bootstrap_framework_integration_note_2026-05-03",
+        "wigner_mode_low_d_sublattice_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a86a2e1267c61d9ff176cbaf1c0f3461c354446e3b23e72334fbfa45bfd60758",
+      "note_hash": "7c737dfffc09f16709b43274c7ecb91806ab56658ed867d268f1b96346cc0e7a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

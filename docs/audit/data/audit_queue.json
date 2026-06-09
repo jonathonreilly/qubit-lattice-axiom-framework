@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 329,
+    "critical": 328,
     "high": 254,
     "leaf": 434,
     "medium": 375
@@ -229,32 +229,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
-        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.528,
-      "note_path": "docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/microcausality_finite_range_h_bridge_2026_05_09.py",
-      "transitive_descendants": 1043
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -17902,15 +17876,15 @@
         "plaquette_self_consistency_note",
         "gauge_vacuum_plaquette_framework_point_underdetermination_note"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.172,
+      "load_bearing_score": 7.7,
       "note_path": "docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_plaquette_bootstrap_framework_integration.py",
-      "transitive_descendants": 50
+      "transitive_descendants": 51
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17949,15 +17923,15 @@
         "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.144,
+      "load_bearing_score": 4.17,
       "note_path": "docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
-      "transitive_descendants": 24
+      "transitive_descendants": 8
     },
     {
       "audit_independence_required": "any_non_self",
@@ -42038,6 +42012,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 63,
-  "total_pending": 1392
+  "ready_count": 62,
+  "total_pending": 1391
 }

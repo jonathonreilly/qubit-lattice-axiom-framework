@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 781 |
+| **retained_bounded** | 782 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1359 |
+| unaudited | 1358 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1217 |
+| `audited_clean` | 1218 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1674 |
+| `unaudited` | 1673 |
 
 | claim_type | count |
 |---|---:|
@@ -256,6 +256,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_layer_oscillation_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_split_mass_gravity_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
+| `chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `chsh_structural_bound_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3203,6 +3204,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Because gamma_5 = I_3 tensor sigma_3 is identity on the generation factor, it commutes with every generation-sector operator G tensor I_2 and cannot supply the generation-sector anticommuting condition {M_gen, Gamma_chi}=0.  _(class `A`)_
 - **chain closes:** False — The algebraic separation closes for a stipulated separate-factor gamma_5 = I_3 tensor sigma_3. The restricted packet does not close the stronger assertion that the retained Cl(3,1) theorem itself supplies that chirality and the spin-statistics use, since the cited Cl(3,1) authority explicitly scopes itself as a Clifford classification rather than a chirality-existence theorem.
 - **rationale:** The runner performs genuine finite matrix checks, and an independent exact check confirms Gamma_chi^2 = I, [Gamma_chi,R] = 0, gamma_5 beta + beta gamma_5 = 0, [gamma_5,G tensor I_2] = 0, and comm(R) intersect anticomm(Gamma_chi) = {0} inside symmetric generation operators. These class-A identities support the two-gate separation once the separate L/R gamma_5 factor is granted. However, the packet does not provide a retained bridge from the Cl(3,1) extension theorem to the asserted gamma_5/spin-statistics supply, so the full source-note scope is conditional rather than clean.
+- **auditor confidence:** high
+
+### `chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08`
+
+- **Note:** [`CHIRALITY_SEPARATE_FACTOR_DIRAC_MASS_ALGEBRA_SUPPORT_BOUNDED_NOTE_2026-06-08.md`](../../docs/CHIRALITY_SEPARATE_FACTOR_DIRAC_MASS_ALGEBRA_SUPPORT_BOUNDED_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional algebra support that a standard 4x4 Dirac chiral mass algebra exists on a separate left/right factor and is not the 3D Koide Gamma_chi generation grading; no massive field construction, Koide closure, or selector derivation is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-123732-03c9910da5-chirality_separate_factor_di`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** gamma_5 commutes with the massless Dirac Hamiltonian and anticommutes with the beta mass term, while this left/right grading is a separate factor from the generation-space Gamma_chi grading targeted by the Koide hybrid no-go.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade inputs scope the Cl(3,1)/Dirac doubling context and the Koide obstruction only to the same-factor Gamma_chi identification. An independent exact chiral-basis check verifies the Dirac/γ5 algebra and the trace/multiplicity distinction between I_3 x sigma_3 and Gamma_chi x I_2, so no open field-theoretic residual is used.
+- **rationale:** The runner source genuinely constructs finite matrices and checks the claimed Clifford, Hamiltonian, chirality, and separate-factor identities; it is not a print-only or comparator runner. The load-bearing step is class-A algebra over retained-grade cited inputs, and the note's guardrails keep the conclusion bounded to algebra support. Context authorities with open residual field-theory content are not imported into the proof of this narrower claim.
 - **auditor confidence:** high
 
 ### `chsh_structural_bound_narrow_theorem_note_2026-05-17`

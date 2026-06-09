@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 327,
     "high": 252,
-    "leaf": 417,
+    "leaf": 416,
     "medium": 365
   },
   "cycle_break_target_count": 15,
@@ -17742,33 +17742,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/CHIRALITY_SEPARATE_FACTOR_DIRAC_MASS_ALGEBRA_SUPPORT_BOUNDED_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_chirality_separate_factor_dirac_mass_algebra.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17893,6 +17866,35 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_ew_kappa_self_energy_object_pin.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "fifth_family_radial_fm_transfer_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "fifth_family_radial_note",
+        "fifth_family_radial_repaired_positive_packet_note_2026-05-29"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
+        "scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py",
+        "scripts/gate_b_no_restore_farfield.py"
+      ],
+      "load_bearing_score": 4.587,
+      "note_path": "docs/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py",
       "transitive_descendants": 16
     },
     {
@@ -29078,35 +29080,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "fifth_family_radial_fm_transfer_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "fifth_family_radial_note",
-        "fifth_family_radial_repaired_positive_packet_note_2026-05-29"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
-        "scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py",
-        "scripts/gate_b_no_restore_farfield.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -41207,6 +41180,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 47,
-  "total_pending": 1361
+  "ready_count": 46,
+  "total_pending": 1360
 }

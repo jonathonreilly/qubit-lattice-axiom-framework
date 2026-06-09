@@ -3,7 +3,7 @@ runner: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
 runner_sha256: 55ba22423e9c8abc6d29b210233dbb0fea7d0e4001b9b0e1aa5bf17cb6b87c7f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.98
 status: ok
 ----- stdout -----
 # Dimension-selection parent lower-bound repair
@@ -35,7 +35,7 @@ status: ok
 [PASS] forbidden overclaim absent: repo-wide framework-baseline rewrite is authorized
 
 # Dimension-selection companion source packet
-[PASS] original_dimension_runner: source=scripts/frontier_dimension_selection.py sha256=f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da cache=logs/runner-cache/frontier_dimension_selection.txt cache_sha256=0769b032579232a63e8ff83cbe5c926fd21b6cb0cadad311afc17776e63262be snippets_ok=True
+[PASS] original_dimension_runner: source=scripts/frontier_dimension_selection.py sha256=48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83 cache=logs/runner-cache/frontier_dimension_selection.txt cache_sha256=bc2677eb46ffdbdfd1fa55fa9ab5eacc3c91d4139867a9ccaa713882b0664df0 snippets_ok=True
 [PASS] finite_k_bridge: source=scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py sha256=a701ba7f7f598324ff1010d00b56e26067568e8e42ee9e3190ccd29d3e1a326e cache=logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt cache_sha256=8621dcc9db7fb593f3aa613ee65fe552251565953cda703f37b4f55e66c2fa4a snippets_ok=True
 [PASS] source_packet_manifest_source_exposed: source=scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py sha256=1cbcc61c68ced08485be8a68cb7f768d0806f26be03b55c96542e10c4673e0c4
 COMPANION_PACKET: PASS

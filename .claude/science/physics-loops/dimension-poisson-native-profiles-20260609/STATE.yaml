@@ -1,0 +1,34 @@
+loop: dimension-poisson-native-profiles-20260609
+goal: "Remove standard d-dimensional Poisson Green textbook import from the dimension lower-bound packet by proving the runner profile family directly."
+mode: science_block
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: dimension_selection_lower_bound_bridge_v2_2026-05-20
+active_route: "runner-native radial profile proof"
+files_touched:
+  - docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md
+  - scripts/frontier_dimension_selection.py
+  - scripts/dimension_selection_poisson_profile_native_proof_2026_06_09.py
+open_imports:
+  - "The finite runner's choice to use this analytic potential family remains a bounded test-surface choice."
+  - "The lower-bound packet remains finite-runner support, not unique dimension selection."
+closed_imports:
+  - "The radial profile identities f_1=r, f_2=log(r), f_d=r^(2-d) are no longer imported from standard Poisson Green textbook authority."
+audit_boundary:
+  - "No audit ledger or generated audit verdict file is edited."
+  - "No row is promoted or retagged."
+verification:
+  - "python3 scripts/dimension_selection_poisson_profile_native_proof_2026_06_09.py -> SUMMARY PASS=37 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/dimension_selection_poisson_profile_native_proof_2026_06_09.py -> status ok"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_dimension_selection.py -> status ok"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_dimension_selection_lower_bound_parent_repair.py -> SUMMARY PASS=27 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py -> PASS=57 FAIL=0"
+  - "python3 -m py_compile scripts/dimension_selection_poisson_profile_native_proof_2026_06_09.py scripts/frontier_dimension_selection.py scripts/frontier_dimension_selection_lower_bound_parent_repair.py scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py -> pass"
+  - "git diff --check -> clean"
+  - "git diff --name-only -- docs/audit -> empty"
+  - "rg stale import phrases in repaired note/parent runner -> empty"
+  - "non-committed pre-landing observation: frontier_d3_lower_bound_source_packet_gate_2026_06_06 now fails two ledger-expectation checks on current audit state; cache not included"
+next_exact_action: "Open a review PR."
+stop_condition: "Review PR opened or blocker recorded."

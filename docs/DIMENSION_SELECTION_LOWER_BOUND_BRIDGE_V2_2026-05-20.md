@@ -6,6 +6,7 @@
 **Primary runner:** [`scripts/frontier_dimension_selection.py`](../scripts/frontier_dimension_selection.py)
 **Retained finite-k sign bridge:** [`DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md`](DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md)
 **Finite-k bridge runner:** `scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py`
+**Radial-profile proof runner:** `scripts/dimension_selection_poisson_profile_native_proof_2026_06_09.py`
 **Scope:** bounded finite-k / analytic sign bridge for the existing runner; not a
 promotion of `DIMENSION_SELECTION_NOTE.md` or of the wider D=3 chain.
 **Closes (proposed):** the named gap on `DIMENSION_SELECTION_NOTE.md`
@@ -78,8 +79,10 @@ This is the bounded finite-runner sign bridge that the lower-bound runner was
 missing. The runner's numerical observation at `d ∈ {1, 2, 3, 4, 5}`
 is now backed by an audited retained finite-runner sign bridge for
 the exact normalized centroid observable. The derivation admits the
-runner's potential family; it does not derive the whole
-dimension-selection theorem.
+choice to use the runner's analytic potential family as the finite
+test surface, but the profile identities themselves are proved below
+on that surface rather than imported from a textbook. It does not
+derive the whole dimension-selection theorem.
 
 ## Setup
 
@@ -106,6 +109,43 @@ when `r > 1`; the runner's regularization permits `r = 0.5`. What
 matters for the sign discussion is the spatial *shape* of `f_d`:
 `f_d` **grows** with `r` for `d = 1, 2` and **decays** with `r` for
 `d ≥ 3`.
+
+## Step 0 — Runner-native radial Green-profile proof
+
+The runner's profile family is not taken as a load-bearing textbook
+import. The companion certificate
+[`scripts/dimension_selection_poisson_profile_native_proof_2026_06_09.py`](../scripts/dimension_selection_poisson_profile_native_proof_2026_06_09.py)
+proves the exact identities used by this finite-runner packet.
+
+For a radial profile `f(r)` in dimension `d`, the away-from-source
+radial operator is
+
+```text
+Delta_d f = f''(r) + ((d - 1)/r) f'(r),  r > 0.
+```
+
+The profile family used by the runner satisfies:
+
+```text
+d = 1:  f_1(r) = r,          Delta_1 f_1 = 0,  r^(d-1) f_1'(r) = 1
+d = 2:  f_2(r) = log(r),     Delta_2 f_2 = 0,  r^(d-1) f_2'(r) = 1
+d >= 3: f_d(r) = r^(2-d),    Delta_d f_d = 0,  r^(d-1) f_d'(r) = 2-d
+```
+
+Thus each profile is harmonic away from the source and has
+radius-independent shell flux on the runner's radial coordinate. The
+derivative sign is also exact:
+
+```text
+f_1'(r) > 0,  f_2'(r) > 0,  f_d'(r) < 0 for d >= 3.
+```
+
+That sign is the profile-orientation input used in Step 2, while the
+retained finite-k bridge remains the load-bearing certificate for the
+actual normalized centroid sign. Maradudin or standard mechanics texts
+may be cited as parallel provenance for the same radial Poisson
+profiles, but the textbook references are parallel provenance, not
+load-bearing inputs for this packet.
 
 The propagator step (line 386–397) accumulates a phase
 
@@ -269,10 +309,10 @@ read as precision matches to the ideal Green-function falloff.
    as the runner's specification.
 2. **Runner's d-dependent potential form (2a–c)** — from
    `scripts/frontier_dimension_selection.py` lines 367–372;
-   admitted as the runner's specification. The d-dependent forms
-   match the standard d-dim Poisson Green's function asymptotics
-   (Maradudin et al. 1971 for `d = 3`; standard textbook for general
-   `d`).
+   admitted only as the finite runner's chosen analytic test surface.
+   The radial profile identities for (2a–c) are proved in this packet
+   by the runner-native radial Green-profile certificate above; textbook
+   references are parallel provenance, not load-bearing inputs.
 3. **Retained finite-k centroid-sign bridge** —
    [`DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md`](DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md),
    audited as `retained_bounded`, supplies the exact normalized
@@ -295,18 +335,21 @@ dimension selection.
 **Upstream framework dependencies** (load-bearing markdown links):
 
 - [`DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md`](DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md) (retained_bounded) — supplies the finite-k normalized centroid-sign bridge for the exact runner geometry and parent finite probe.
-- [`DIMENSIONAL_GRAVITY_TABLE.md`](DIMENSIONAL_GRAVITY_TABLE.md) (retained_bounded) — supplies the d-dim potential form `1/r^(d−2)` for the `d ≥ 3` case; the `d = 1` linear and `d = 2` logarithmic forms come from standard Poisson Green's functions.
+- [`DIMENSIONAL_GRAVITY_TABLE.md`](DIMENSIONAL_GRAVITY_TABLE.md) (retained_bounded) — supplies companion d-dim potential context for the `d ≥ 3` case.
+- [`scripts/dimension_selection_poisson_profile_native_proof_2026_06_09.py`](../scripts/dimension_selection_poisson_profile_native_proof_2026_06_09.py) — proves the runner-native radial profile identities for `d = 1, 2, 3, 4, 5` directly on the analytic family used here.
 
 **Runner/context references** (plain text, not load-bearing graph deps):
 
-- `scripts/frontier_dimension_selection.py` — supplies the runner specification and the observed force-sign / β / α data this bridge connects to the finite-k sign authority.
+- `scripts/frontier_dimension_selection.py` — supplies the finite runner specification and the observed force-sign / β / α data this bridge connects to the finite-k sign authority.
 - `scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py` — support runner for the retained finite-k derivative certificate.
 - `DIMENSION_SELECTION_NOTE.md` — existing note using the runner; this bridge does not promote that note.
 - `D3_RETENTION_CLOSURE_PLAN_2026-05-20.md` — tracking note that identified this gap.
 
-**Upstream standard-math imports** (named non-derivation; not framework rows):
+**Parallel references only** (not load-bearing graph deps):
 
-- Standard d-dimensional Poisson Green's function asymptotics (Maradudin et al. 1971; any classical-mechanics text)
+- Standard d-dimensional Poisson Green's function discussions
+  (Maradudin et al. 1971 for lattice `d = 3`, standard mechanics texts
+  for the continuum radial profiles).
 
 **Plain-text pointer references** (NOT load-bearing deps):
 
@@ -315,7 +358,9 @@ dimension selection.
 
 ## What this file is not
 
-- Not a derivation of the d-dependent potential form (admitted from the runner / `DIMENSIONAL_GRAVITY_TABLE`).
+- Not a derivation that this analytic potential family is the unique
+  possible dimension-selection test surface; it remains the parent
+  runner's chosen finite test family.
 - Not a derivation of the eikonal limit itself; WKB/eikonal reasoning is no longer load-bearing for this packet.
 - Not a derivation of the runner's β / α exponents (separate bridges; out of scope).
 - Not a numerical-prediction change.

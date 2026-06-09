@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 785 |
+| **retained_bounded** | 786 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1353 |
+| unaudited | 1352 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1223 |
+| `audited_clean` | 1224 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1668 |
+| `unaudited` | 1667 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 786 |
-| `leaf` | 1283 |
+| `medium` | 792 |
+| `leaf` | 1277 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -414,6 +414,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `fifth_family_radial_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_repaired_positive_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fine_h_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5640,6 +5641,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The finite replay path is not a trivial printout or hard-coded row: it builds the grown slice, radial-shell connectivity, field, propagation, and detector centroid from framework code. The exact zero and neutral rows are independently explained by the code path because empty sources and same-point +1/-1 sources produce the same zero field used in the baseline replay. However, the source note now relies on an independent orientation certificate, and the packet includes only the parent runner's cache/live-output substring validation for that certificate, not the certificate source. Runner PASS output alone is insufficient for audited_clean under the formula-inventory rule.
 - **open / conditional deps cited:**
   - `scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py`
+- **auditor confidence:** high
+
+### `fifth_family_radial_fm_transfer_note`
+
+- **Note:** [`FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md`](../../docs/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite two-row weak-field source-strength doubling check for the radial-shell fifth-family no-restore grown-slice rows (drift=0.05, seed=0) and (drift=0.30, seed=1).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-125354-bf31ccd960-fifth_family_radial_fm_trans`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the two historically cited positive radial-shell rows, drift=0.05 seed=0 and drift=0.30 seed=1, the live weak-field mass-scaling replay gives near-unit F~M with passed rows 2/2 and mean F~M 0.999439.  _(class `C`)_
+- **chain closes:** True — The runner source builds the no-restore grown slice, applies the radial-shell connectivity helper, propagates the free field and two positive source strengths, and computes the log2 centroid-shift exponent rather than reading the claimed F~M values. The one-hop radial packet is marked retained_bounded, and the note confines the conclusion to the sampled rows.
+- **rationale:** The displayed source-note values match the completed cached runner output, and the provided source code shows an actual finite numerical computation rather than a print-only certificate or cross-note value import. The hard-coded target rows and tolerance define the bounded sampled scope; they do not hard-code the contested F~M results. The cited upstream authorities are retained-grade for audit purposes, and the note explicitly avoids family-wide, continuum, or physical mass-observable claims.
 - **auditor confidence:** high
 
 ### `fifth_family_radial_note`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 798 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1327 |
+| unaudited | 1326 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1237 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1642 |
+| `unaudited` | 1641 |
 
 | claim_type | count |
 |---|---:|
@@ -1400,6 +1400,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `second_grown_family_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -16206,6 +16207,24 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The Yukawa implied by empirical small m_nu is many orders below the Gamma ~ y_nu^2 T versus H thermalization threshold, so light-Dirac nu_R never equilibrates, while a heavy-Majorana nu_R is not a light relativistic dof.  _(class `D`)_
 - **chain closes:** True — The arithmetic and threshold comparison close for the explicitly conditional statement: y_nu = m_nu/<H> with sub-eV m_nu is far below the thermalization threshold, and the heavy-Majorana branch is excluded from the light-dof census by M_R >> T. The chain does not retire the empirical small-m_nu import or the standard cosmology/equilibration premises.
 - **rationale:** The runner performs real finite arithmetic and order-of-magnitude threshold checks rather than merely printing constants, and its output matches the note's core claims. However, the load-bearing step is an external empirical/comparator argument, not a framework first-principles derivation: it imports small observed m_nu, the radiation-era Hubble criterion, and the thermalization-rate ansatz. The note labels those imports honestly and scopes the result as partial resolution, so the conditional chain is coherent but not eligible for audited_clean.
+- **auditor confidence:** high
+
+### `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded reduction of the R-MATTER g_* residual to exact finite multiplicity arithmetic on color/isospin/LH assignment/generation inputs plus explicit unresolved premises for RH inventory, Weyl thermal dof, thermal inventory, nu_R exclusion, and singlet labelling.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-141446-a9c51ec8d9-sm_gstar_r_matter_residual_r`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The thermalized per-generation matter count is 30 = 15 gauge-charged Weyl fermions * 2 dof per Weyl, so N_fermions = 3 * 30 = 90 and g_* = 28 + (7/8) * 90 = 427/4.  _(class `A`)_
+- **chain closes:** False — The arithmetic 6+3+3+2+1=15, 15*2=30, 3*30=90, and g_*=427/4 is correct. The physical chain does not close from retained inputs alone because P_RH_inventory, I12 nu_R thermal exclusion, the Dirac/Weyl thermal-inventory use, and the R-SPIN physical identification remain explicit open bridges.
+- **rationale:** The load-bearing math is a valid class-A arithmetic reduction, and the 106.75 versus 112 fork is computed correctly. The runner verifies the arithmetic and bookkeeping but mostly hard-codes the structural constants and text-scans dependency boundaries; it does not derive the remaining physical bridges. The note is careful not to claim full retirement, but the scoped g_* matter count still depends on explicit unresolved premises and on cited authorities that themselves leave physical-identification language open.
+- **open / conditional deps cited:**
+  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
+  - `ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`
+  - `PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`
 - **auditor confidence:** high
 
 ### `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29`

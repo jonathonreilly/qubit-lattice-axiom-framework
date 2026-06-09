@@ -33,10 +33,13 @@ diffeomorphism invariance**, tying it to a framework theorem.
   `+1` (`λ`-independent), and the **conformal/trace** eigenvalue is `1 − λd`. At the GR value `λ=1`
   (`d=3`): TT `+1`, trace `−2` — **opposite signs**: two positive-norm TT polarizations plus one
   wrong-sign conformal mode that **diffeomorphism makes gauge** (non-propagating). The framework's
-  **natural** field-space metric is **degenerate** (trace = shear; the
-  [`UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM`](UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md) /
-  degenerate-supermetric no-go), i.e. the `λ=1/d` point, **not** the `λ=1` split — so it does **not**
-  by itself supply the clean healthy-TT / gauge-conformal structure.
+  **natural** field-space metric `−Tr(D⁻¹hD⁻¹k)` is **degenerate**: **trace and shear (TT) have the same
+  sign** (both `−b⁻²`), the convention-free statement of "not the `λ=1` split"
+  ([`UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM`](UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md) /
+  degenerate-supermetric no-go). In the `G(λ)` form above this is the **no-conformal-term `λ=0`** case (the
+  no-go runner's label); the alternative loose label `λ=1/d` denotes the point where the trace eigenvalue
+  `1−λd` vanishes — either way it is **not** the healthy `λ=1` (trace/TT opposite-sign) structure, so the
+  natural metric does **not** by itself supply the clean healthy-TT / gauge-conformal split.
 
 - **(H3) The reduction.** Combining H1+H2: **`G>0` (healthy TT) follows from RP** *conditional on* (a) the
   emergent graviton's TT modes being **physical RP excitations**, and (b) **emergent diffeomorphism

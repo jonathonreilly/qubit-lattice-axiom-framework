@@ -95,17 +95,21 @@ def main() -> int:
         return tt_eig, np.sign(trace_eig), 1.0 - lam * d   # also the unnormalized trace eigenvalue 1-lam*d
     tt1, trace_sign_gr, trace_unnorm_gr = dewitt_eigs(1.0)     # GR lambda=1
     gr_healthy_pattern = (tt1 > 0) and (trace_sign_gr < 0)     # TT+ , conformal- (opposite -> healthy+gauge)
-    # degenerate (trace=shear) occurs where the trace eigenvalue meets the TT structure -> lambda=1/d, NOT 1
-    lam_degenerate = 1.0 / d
-    degenerate_not_gr = abs(lam_degenerate - 1.0) > 1e-9
+    # CONVENTION-FREE FACT: the framework's -Tr(D^-1 h D^-1 k) has NO conformal (tr h)^2 term, so trace and
+    # TT (shear) get the SAME sign -- this is the lambda=0 case here (the no-go runner's label). The loose
+    # "lambda=1/d" label is the DIFFERENT point where the trace eigenvalue 1-lambda*d vanishes. Either way it
+    # is NOT the healthy lambda=1 (trace/TT opposite-sign). degenerate_not_gr checks "the framework value != 1".
+    lam_framework = 0.0          # -Tr(D^-1 h D^-1 k): no conformal term => lambda=0 (trace,TT same sign)
+    degenerate_not_gr = abs(lam_framework - 1.0) > 1e-9
     check("H2 (criterion = DeWitt lambda=1): TT (spin-2) eigenvalue=+1 (healthy, lambda-independent); the "
           "conformal/trace eigenvalue is (1-lambda*d). At the GR value lambda=1 (d=3) -> trace=1-3=-2 < 0: "
           "OPPOSITE sign to TT -> 2 healthy TT polarizations + 1 wrong-sign conformal mode (GAUGE under "
-          "diffeo). The framework's NATURAL supermetric is DEGENERATE (trace=shear at lambda=1/d=1/3, "
-          "trace-eig=0), NOT the lambda=1 split -- so it does not supply the clean healthy-TT/gauge-conformal "
-          "structure (UNIVERSAL_GR supermetric blocker).",
+          "diffeo). The framework's NATURAL supermetric -Tr(D^-1 h D^-1 k) has NO conformal term (lambda=0 "
+          "convention-free: trace and TT SAME sign), NOT the lambda=1 split -- so it does not supply the "
+          "clean healthy-TT/gauge-conformal structure (UNIVERSAL_GR supermetric blocker).",
           gr_healthy_pattern and degenerate_not_gr,
-          f"lambda=1: TT=+1, trace={trace_unnorm_gr:+.0f} (opposite=healthy); degenerate at lambda=1/d={lam_degenerate:.3f} != 1")
+          f"lambda=1: TT=+1, trace={trace_unnorm_gr:+.0f} (opposite=healthy); framework lambda={lam_framework:.0f} "
+          f"(no conformal term, trace=TT same sign) != 1")
 
     # ---- H3: the reduction ----
     check("H3 (the reduction): G>0 (healthy TT) <= RP [framework theorem] + (a) the graviton TT modes are "

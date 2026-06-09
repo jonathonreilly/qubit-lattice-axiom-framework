@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py
+runner_sha256: 7b0c7fab4d697da842970e7109df088db0a0c4f7c7e6758c4e91d65f2fd029aa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+========================================================================================
+THETA CROSS-PLANE TERM ABSENT IN A SUPPLIED PER-PLAQUETTE CLASS
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Symbolic mixed-derivative checks
+----------------------------------------------------------------------------------------
+  [PASS] all three FtildeF cross-plane pairings have zero mixed derivative  --  {'01|23': 0, '02|13': 0, '03|12': 0}
+  [PASS] the result is independent of the one-plane function f
+
+----------------------------------------------------------------------------------------
+Direction-counting checks
+----------------------------------------------------------------------------------------
+  [PASS] no single plaquette supplies four distinct epsilon directions  --  {(0, 1): 0, (0, 2): 0, (0, 3): 0, (1, 2): 0, (1, 3): 0, (2, 3): 0}
+  [PASS] each FtildeF pairing is a four-direction cross-plane object
+
+----------------------------------------------------------------------------------------
+Prior-boundary consistency
+----------------------------------------------------------------------------------------
+  [PASS] single-plaquette prior identifies the same one-plaquette theta boundary
+  [PASS] multi-plaquette prior preserves the reopening condition
+
+----------------------------------------------------------------------------------------
+Source-note scope checks
+----------------------------------------------------------------------------------------
+  [PASS] source note contains required boundary: This is a theorem about the supplied action class, not a derivation of that class.
+  [PASS] source note contains required boundary: does not set `theta_QCD = 0` in the full framework
+  [PASS] source note contains required boundary: Multi-plaquette terms, clover products, or any other action term with cross-plane support are outside this theorem
+  [PASS] source note contains required boundary: PASS for the narrowed conditional class theorem
+  [PASS] source note contains required boundary: FAIL for any reading that treats this note as a derivation of per-plaquette support
+  [PASS] source note excludes overclaim phrase: last premise
+  [PASS] source note excludes overclaim phrase: theta admission's surviving content
+  [PASS] source note excludes overclaim phrase: entire live candidate class
+  [PASS] source note excludes overclaim phrase: theta_bare = 0 automatically
+  [PASS] source note excludes overclaim phrase: P2 already discharged
+  [PASS] source note excludes overclaim phrase: no numeric or CP-specific content survives
+  [PASS] source note excludes overclaim phrase: owner/audit lane's call
+
+========================================================================================
+SUMMARY: PASS=18 FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 779 |
+| **retained_bounded** | 780 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1362 |
+| unaudited | 1361 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1215 |
+| `audited_clean` | 1216 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1677 |
+| `unaudited` | 1676 |
 
 | claim_type | count |
 |---|---:|
@@ -118,7 +118,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 904 | 34.82 | `audited_clean` | **retained_bounded** |
 | 16 | `three_generation_structure_note` | bounded_theorem | critical | 867 | 34.76 | `audited_clean` | **retained_bounded** |
 | 17 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 277 | 34.62 | `unaudited` | unaudited |
-| 18 | `cpt_exact_note` | positive_theorem | critical | 1133 | 34.15 | `audited_clean` | **retained** |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 1134 | 34.15 | `audited_clean` | **retained** |
 | 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 700 | 32.95 | `unaudited` | unaudited |
 | 20 | `minimal_axioms_2026-04-11` | meta | critical | 1115 | 32.62 | `unaudited` | meta |
 | 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1056 | 32.05 | `audited_clean` | **retained_bounded** |
@@ -190,6 +190,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
+| `backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -2301,6 +2302,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Although the graph topology is fixed, the effective geometry, as measured by propagator Green's functions, spectral dimension, and connectivity, changes in response to the gravitational field.  _(class `C`)_
 - **chain closes:** True — The runner constructs the Poisson field, weighted lattice Laplacian, Green function column, random-walk transition matrices, and two-mass variants directly from the stated lattice setup. No upstream note or external comparator is imported for the audited numerical claims.
 - **rationale:** The runner source performs substantive first-principles computations rather than printing constants: it solves the lattice Poisson problem, builds position-dependent edge weights and Laplacians, solves Green-function systems, estimates heat-kernel spectral dimension, and compares two-mass configurations. The stdout numbers match the note's qualitative and quantitative support at the level needed for the claim that effective propagator geometry changes while topology remains fixed. The conclusion is limited to this finite lattice model and these definitions of effective geometry, not full physical background independence in a broader continuum-gravity sense.
+- **auditor confidence:** high
+
+### `backreaction_note`
+
+- **Note:** [`BACKREACTION_NOTE.md`](../../docs/BACKREACTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited scope is only the current finite Poisson harness grid: all listed deltas are TOWARD and the first listed escape value below one is at G=0.050, with no continuum threshold, monotone law, or physical Schrodinger-Newton closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-122907-2e5b87e159-backreaction_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the declared finite Poisson self-gravity G grid, the live runner certifies a positive baseline delta, first sub-unit escape at G=0.050, and TOWARD deflection through G=0.100.  _(class `C`)_
+- **chain closes:** True — The primary runner and helper source instantiate the finite lattice, external field, self-field iteration, propagation, escape ratio, and centroid delta rather than printing the contested output constants. An independent read of the displayed table confirms the bounded conclusions: escape remains above one through G=0.020, falls below one at G=0.050, and all listed deltas are positive.
+- **rationale:** The one-hop cited authority is marked retained_bounded, which is retained-grade for this bounded dependency check. The runner does not import or hard-code the stale G_crit ~= 0.011 premise; it computes the finite grid from the exposed Poisson helper and asserts only the live bounded facts. The source note’s displayed summary matches the supplied cache and stays within the stated boundary exclusions, so the chain closes for the bounded finite-grid claim only.
 - **auditor confidence:** high
 
 ### `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28`

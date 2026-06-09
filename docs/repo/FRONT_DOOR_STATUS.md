@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1365 |
-| Retained-grade rows, including boxed decorations | 1245 |
+| Applied audit verdicts | 1366 |
+| Retained-grade rows, including boxed decorations | 1246 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 205 |
-| Retained bounded rows | 779 |
+| Retained bounded rows | 780 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1362 |
+| Unaudited rows | 1361 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 21 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1364 |
-| Ready rows | 50 |
+| Total pending rows | 1363 |
+| Ready rows | 49 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 420 |
+| Leaf pending | 419 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`backreaction_note`](../../docs/BACKREACTION_NOTE.md) - medium; unaudited
 - [`beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`](../../docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08`](../../docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md) - medium; unaudited
 - [`chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08`](../../docs/CHIRALITY_SEPARATE_FACTOR_DIRAC_MASS_ALGEBRA_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08`](../../docs/CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`critical_exponents_topology_note_2026-04-10`](../../docs/CRITICAL_EXPONENTS_TOPOLOGY_NOTE_2026-04-10.md) - medium; unaudited
-- [`dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md) - leaf; unaudited
+- [`dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md) - medium; unaudited
+- [`emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08`](../../docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

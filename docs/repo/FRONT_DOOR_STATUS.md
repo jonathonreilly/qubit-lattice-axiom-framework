@@ -12,19 +12,19 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3046 |
-| Applied audit verdicts | 1412 |
-| Retained-grade rows, including boxed decorations | 1279 |
+| Applied audit verdicts | 1407 |
+| Retained-grade rows, including boxed decorations | 1276 |
 | Retained positive theorems | 211 |
-| Retained no-go rows | 207 |
-| Retained bounded rows | 810 |
+| Retained no-go rows | 206 |
+| Retained bounded rows | 808 |
 | Boxed decorations under retained parents | 51 |
-| Open gates | 38 |
-| Unaudited rows | 1316 |
+| Open gates | 37 |
+| Unaudited rows | 1321 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 32 |
+| Audited conditional rows | 31 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
-| Citation cycles detected | 15 |
+| Citation cycles detected | 16 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -33,19 +33,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1318 |
+| Total pending rows | 1323 |
 | Ready rows | 3 |
-| Cycle-break targets | 15 |
+| Cycle-break targets | 16 |
 | Critical pending | 327 |
-| High pending | 252 |
-| Medium pending | 360 |
-| Leaf pending | 379 |
+| High pending | 253 |
+| Medium pending | 362 |
+| Leaf pending | 381 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
-- [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - leaf; unaudited
+- [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -76,13 +76,13 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3183 |
 | Critical nodes | 529 |
-| High nodes | 452 |
-| Medium nodes | 822 |
-| Leaf nodes | 1380 |
+| High nodes | 453 |
+| Medium nodes | 824 |
+| Leaf nodes | 1377 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1387 descendants; score 101.439
+- `minimal_axioms` - critical; 1388 descendants; score 101.440
 - `three_generation_observable_theorem_note` - critical; 765 descendants; score 61.081
 - `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
 - `graph_first_su3_integration_note` - critical; 1282 descendants; score 52.825

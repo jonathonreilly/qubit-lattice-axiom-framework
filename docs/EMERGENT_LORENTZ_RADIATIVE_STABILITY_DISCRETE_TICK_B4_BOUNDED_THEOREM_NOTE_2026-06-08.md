@@ -1,10 +1,24 @@
-# B4 Hypercubic Velocity-Anisotropy Boundary on a Supplied Z4 Surface
+# B4 Hypercubic Velocity-Anisotropy Boundary on the Kinetic-Isotropy Primitive Surface
 
-**Date:** 2026-06-08
-**Claim type:** bounded_theorem
-**Type:** bounded_theorem
+**Date:** 2026-06-08 (surface-supply update 2026-06-09)
+**Claim type:** positive_theorem
+**Type:** positive_theorem
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome.
+
+## 2026-06-09 surface-supply update
+
+The OS0 kinetic-form surface this theorem was previously written to *assume* is
+now an approved framework primitive: `kinetic_isotropy_primitive`
+([`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md),
+registered in `docs/audit/data/axiom_premise_nodes.json`, owner-approved in
+`docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6). It supplies only the
+matter kinetic-form isotropy `c_t = c_s` (OS0). That removes the old
+"externally supplied kinetic-form surface" premise as a bounded import: the
+surface premise now chain-satisfies as an approved primitive. This note consumes
+that primitive; it does not derive it and does not grant any extra dynamics,
+spacing-ratio theorem, physical-time theorem, Lorentz-closure theorem, or audit
+verdict.
 **Primary runner:**
 [`scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py`](../scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py)
 **Cached runner output:**
@@ -12,32 +26,35 @@ or predict an audit outcome.
 
 ## Role
 
-This is a bounded group-theory and finite-lattice support theorem. It does
-not choose the framework's physical time surface.
+This is a group-theory and finite-lattice theorem about the quadratic kinetic
+form on the OS0 surface. The surface is now supplied by an approved primitive
+(see the surface-supply update above), so it is no longer an unapproved
+externally supplied premise.
 
-If a four-dimensional isotropic hypercubic action is supplied, with a temporal
-axis on the same nearest-neighbor footing as the three spatial axes, then the
-4D hypercubic group `B4` forbids a marginal velocity-anisotropy operator of
-the form
+On the kinetic-form surface supplied by `kinetic_isotropy_primitive`
+(`c_t = c_s`, OS0), the corresponding 4D hypercubic kinetic-form symmetry `B4`
+forbids a marginal velocity-anisotropy operator of the form
 
 ```text
 c_t p_t^2 + c_s (p_x^2 + p_y^2 + p_z^2),  c_t != c_s.
 ```
 
-Equivalently, the diagonal quadratic kinetic form has one invariant
-coefficient under `B4`, while the spatial cubic group alone leaves two
-coefficients. Therefore any Lorentz-violating residue on that supplied surface
-begins at the dimension-6 cubic operator, not at the marginal dimension-4
-velocity coefficient.
+Equivalently, the diagonal quadratic kinetic form has one invariant coefficient
+under `B4`, while the spatial cubic group alone leaves two coefficients. Within
+the checked kinetic-form model, any residue on that surface begins at the
+dimension-6 cubic operator, not at the marginal dimension-4 velocity
+coefficient.
 
 ## Theorem
 
-Assume a supplied isotropic `Z4` hypercubic surface with:
+Assume the OS0 kinetic-form surface supplied by `kinetic_isotropy_primitive`:
 
-- four nearest-neighbor axes and the full signed-permutation symmetry `B4`;
-- a hypercubic-symmetric fermion action, such as the canonical isotropic
-  staggered central-difference action;
-- no deliberate temporal/spatial form breaking such as `r_t != r_s`.
+- the diagonal quadratic kinetic form is invariant under the four-axis
+  signed-permutation symmetry `B4`;
+- the fermion kinetic action is hypercubic-symmetric in form, such as the
+  canonical isotropic staggered central-difference action (`c_t = c_s`);
+- no deliberate temporal/spatial kinetic-form breaking such as `r_t != r_s` is
+  added.
 
 Then:
 
@@ -56,18 +73,19 @@ Then:
 
 ## Boundary
 
-This note does not derive physical UV time, a record tick, a temporal lattice,
-or a causal dynamics from the axioms. The Lattice, Quantum, and Record axiom
-baseline supplies no time metric or dynamics. A future theory note may try to
-connect this supplied `Z4` surface to the framework's physical time; this note
-does not do that.
-
-This note also does not compute or audit a continuous-time Lorentz-velocity
-obstruction, does not set a Standard-Model Extension bound comparison, and
-does not introduce a new Tier-A admission, primitive, or axiom.
+The approved `kinetic_isotropy_primitive` supplies only kinetic-form isotropy
+`c_t = c_s`. It does not supply a spacing-ratio theorem, absolute clock rate,
+dynamics, physical-time theorem, Lorentz-closure theorem, Standard-Model
+Extension bound comparison, or empirical match. Those surfaces remain separate.
+This note also does not compute or audit the continuous-time Lorentz-velocity
+obstruction; it only records that the obstruction belongs to the non-OS0 surface
+not chosen by the primitive.
 
 ## Dependencies
 
+- [KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+  — the approved primitive supplying the kinetic-form premise (`c_t = c_s`);
+  chain-satisfies without bounding.
 - [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md) is cited only
   for the axiom boundary: it does not supply time dynamics.
 - [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md)

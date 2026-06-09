@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 807 |
+| **retained_bounded** | 808 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1246 |
+| `audited_clean` | 1247 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1632 |
+| `unaudited` | 1631 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 786 |
-| `leaf` | 1283 |
+| `medium` | 785 |
+| `leaf` | 1284 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -1211,6 +1211,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structured_mirror_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `structureless_dag_gravity_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17578,6 +17579,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The safe read is that structureless causal DAGs can show TOWARD rows, and when they do the source-strength response stays close to linear on this pocket.  _(class `C`)_
 - **chain closes:** True — The runner directly constructs the stated random DAG pocket, propagates with the stated valley-linear field and kernel, and reports the TOWARD counts, local power-law fits, and no-field controls. No external dependency or graph-universality claim is needed for the narrowed harness-level statement.
 - **rationale:** The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed.
+- **auditor confidence:** high
+
+### `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28`
+
+- **Note:** [`SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md`](../../docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic anchor: given the Wilson convention, the QFT fine-structure convention, the assumed retained_bounded input g_2^2|_lattice = 1/(d+1) at d=3, and SU(2) Wilson N=2, the note derives alpha_2|_lattice = 1/(16 pi), reciprocal 16 pi, beta_W = 16, and stated algebraic corollaries.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-144429-45af019f67-su2_weak_alpha_lattice_one_o`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substitute g_2^2|_lattice = 1/4 into alpha = g^2/(4 pi) and N = 2 into beta_W = 2N/g_bare^2, yielding alpha_2|_lattice = 1/(16 pi), 1/alpha_2 = 16 pi, and beta_W = 16.  _(class `A`)_
+- **chain closes:** True — The restricted packet supplies the coupling value as a retained_bounded formal input, the native SU(2) structure as retained, and the two textbook conventions as named admitted conventions. Independent arithmetic gives (1/4)/(4 pi) = 1/(16 pi), its reciprocal 16 pi, and 2*2/(1/4) = 16; the d and N counterfactuals also match.
+- **rationale:** The derivation is not first-principles physics; it is a bounded algebraic substitution over stated inputs. The primary runner source implements symbolic expressions for g_2^2 = 1/(d+1), alpha = g^2/(4 pi), and beta_W = 2N/g^2 and checks the framework instance and counterfactuals with exact SymPy arithmetic; no PDG comparator or tuned scale enters. The coupling input remains an assumed retained_bounded support premise, so the clean verdict applies only to the narrow conditional anchor scope, not to a derivation of g_2^2 = 1/(d+1).
+- **open / conditional deps cited:**
+  - `FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md`
 - **auditor confidence:** high
 
 ### `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1410 |
-| Retained-grade rows, including boxed decorations | 1276 |
+| Applied audit verdicts | 1411 |
+| Retained-grade rows, including boxed decorations | 1277 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 807 |
+| Retained bounded rows | 808 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1317 |
+| Unaudited rows | 1316 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 33 |
 | Audited renaming rows | 35 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1319 |
-| Ready rows | 5 |
+| Total pending rows | 1318 |
+| Ready rows | 4 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
-| Medium pending | 363 |
+| Medium pending | 362 |
 | Leaf pending | 377 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28`](../../docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
 - [`su3_cube_perron_solve_combined_theorem_note_2026-05-03`](../../docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md) - medium; unaudited
 - [`universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_STAGGERED_TT_STIFFNESS_POSITIVE_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
@@ -79,8 +78,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3181 |
 | Critical nodes | 529 |
 | High nodes | 452 |
-| Medium nodes | 828 |
-| Leaf nodes | 1372 |
+| Medium nodes | 827 |
+| Leaf nodes | 1373 |
 
 Top load-bearing rows by graph score:
 

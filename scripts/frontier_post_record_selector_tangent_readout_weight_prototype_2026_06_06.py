@@ -6,30 +6,17 @@ from __future__ import annotations
 from fractions import Fraction
 from pathlib import Path
 import hashlib
-import importlib.util
 import json
 import sys
 
+import frontier_post_record_measure_weight_normalization_subdivision_2026_06_06 as measure
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
 MEASURE_RUNNER = ROOT / "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
 PASS = 0
 FAIL = 0
-EXPECTED_ROWS = 7
-
-
-def load_module(name: str, path: Path):
-    spec = importlib.util.spec_from_file_location(name, path)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot load {path}")
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[name] = module
-    spec.loader.exec_module(module)
-    return module
-
-
-measure = load_module("measure_weight_subdivision", MEASURE_RUNNER)
+EXPECTED_ROWS = 8
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -113,7 +100,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
-            "`selector_tangent_readout_weight` | 7",
+            "`selector_tangent_readout_weight` | 8",
             "selector/tangent readout-weight rows need a supplied readout/tangent bridge",
         ],
     )

@@ -674,6 +674,22 @@ git diff --check
 The known graph-cycle warning is acceptable. Any strict-lint error blocks a
 review-loop PASS.
 
+**`note_hash` drift is a notice for non-retained rows, an error only for
+retained-grade rows.** `note_hash` is a *source-content* hash, not an audit
+verdict. When a review fix edits a claim note, its `note_hash` drifts from the
+seeded value; `audit_lint.py` reports this drift as a non-blocking
+`note_hash_drift_reaudit_pending` **notice** when the row is not retained-grade
+(`unaudited` / `audited_conditional` / pending), because re-audit is simply
+pending and the audit-lane re-seed refreshes the hash. Such a notice does **not**
+block review-loop PASS and must **not** be "fixed" by committing audit-lane
+ledger churn (that is the forbidden pipeline-output commit). A `note_hash`
+mismatch on a **retained-grade** row (`retained` / `retained_bounded` /
+`retained_no_go`) stays a hard **error**: an edited retained note laundered past
+a stale ratification is a real integrity violation. Resolve it by re-auditing
+(the audit lane re-seeds and archives the prior verdict) or by demoting the edit
+per the audit-hash churn guard — never by refreshing the hash while keeping the
+retained verdict.
+
 7. **Pipeline-output-stripped PASS gate (hard).** After running the pipeline
    for validation, the framework PR must NOT land any pipeline-regenerated
    audit-lane or effective-status surface. The independent audit lane is the
@@ -801,9 +817,15 @@ write `audit_status`, `audited_clean`, or other audit verdicts. If the branch
 introduces retained-grade `claim_type` rows, report those claim IDs in the
 final report as requiring the independent audit worker.
 When a source repair changes a note or runner for a previously audited row,
-the acceptable local result is hash drift plus queue/dispatch visibility for
-independent re-audit. Do not preserve, copy, or author a fresh `previous_audits`
-entry, `audit_status`, or verdict rationale from the PR branch.
+the local result is `note_hash`/runner-hash drift plus queue/dispatch
+visibility for independent re-audit. For a non-retained row this drift is a
+benign `note_hash_drift_reaudit_pending` notice (see the Audit-System
+Compatibility Gate) — it does not block strict lint and must not be repaired by
+committing ledger churn. For a retained-grade row the drift is a strict error
+that must be resolved by re-audit, not laundered. In all cases, do not preserve,
+copy, or author a fresh `previous_audits` entry, `audit_status`, or verdict
+rationale from the PR branch; the independent audit lane (nightly cron +
+`audit:` commits) is the sole channel that refreshes the hash and re-ratifies.
 
 After the pipeline, inspect the changed claim rows in
 `docs/audit/data/audit_ledger.json`:

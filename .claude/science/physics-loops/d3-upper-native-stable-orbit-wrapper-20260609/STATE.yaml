@@ -1,0 +1,41 @@
+loop: d3-upper-native-stable-orbit-wrapper-20260609
+mode: run
+base_commit: 3b987a7cd
+branch: physics-loop/d3-upper-native-stable-orbit-wrapper-20260609
+goal: "Remove the unnecessary textbook-import load from the current D3 upper-bound finite-set composition by routing it through the native stable-circular-orbit support packet."
+target_status: bounded-support
+actual_current_surface_status: exact-support
+status_authority: independent_audit_lane_only
+active_route: native stable-circular-orbit upper edge
+target_blocker_text: "The dimension upper-bound wrapper/gate still treats the decisive d <= 3 upper edge as a Bertrand/textbook import rather than as the native Green-kernel/effective-potential stable-orbit proof already present in the repo."
+source_of_blocker_text: user_goal
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+claim_firewall:
+  bare_retained_allowed: false
+  audit_required_before_effective_retained: true
+  proposal_allowed: false
+files_touched:
+  - docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
+  - docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md
+  - docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md
+  - docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md
+  - docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md
+  - scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py
+  - scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py
+  - logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt
+  - logs/runner-cache/dimension_upper_bound_dependency_edge_repair_2026_06_08.txt
+closed_or_reduced_imports:
+  - "Decisive finite-set upper edge for {3,4,5}: routed through native stable-circular-orbit Green-kernel/effective-potential proof instead of the full Bertrand theorem."
+open_imports:
+  - "Full Bertrand closed-orbit theorem, if a later lane needs the all-bounded-orbits-are-closed statement."
+  - "Full atomic-stability theorem and physical electromagnetic sector."
+  - "Hydrogenic d = 3 spectral theorem, if the Coulomb route is later used as a unique selector."
+  - "Repo-wide D=3 foundation/substrate derivation from A_min."
+verification:
+  - "python3 scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py -> SUMMARY: PASS=35 FAIL=0"
+  - "python3 scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py -> SUMMARY: PASS=47 FAIL=0"
+  - "python3 scripts/bertrand_stable_orbit_green_kernel_bridge.py -> SCORECARD: PASS=8 FAIL=0"
+  - "python3 scripts/frontier_coulomb_stability_scaling_repair.py -> SUMMARY: PASS=53 FAIL=0"
+next_exact_action: "Open the review PR and let the reviewer decide extraction/landing."
+stop_condition: "PR opened and verified."

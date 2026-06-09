@@ -20,23 +20,26 @@ dependency chain is retained-grade.
 ## Landed From PR #1603
 
 Review-loop salvaged the two upper-bound support notes because they preserve
-useful framework-connected calculations while making the imports explicit:
+useful framework-connected calculations while making the scope explicit:
 
 - [`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)
-  records bounded support for the stable-orbit upper-bound route. It uses the
-  framework's cache-backed dimensional-gravity entries plus standard classical
-  mechanics. It does not claim a full framework-internal proof of Bertrand's
+  records bounded support for the stable-orbit upper-bound route. It now
+  derives the continuum Green-kernel potential shape used by the
+  effective-potential calculation, so the current finite-set upper edge no
+  longer needs the full Bertrand theorem as a load-bearing import. It still
+  does not claim a full framework-internal proof of Bertrand's closed-orbit
   theorem.
 - [`COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)
   records bounded support for the higher-dimensional Coulomb/atomic-stability
-  route. It uses the framework's cache-backed dimensional-gravity entries plus
-  standard d-dimensional Schrödinger scaling. It does not claim a full
-  framework-internal derivation of atomic stability.
+  route. It proves the Green-kernel scaling lemma for the stated quadratic
+  form, while the physical electromagnetic sector and full hydrogenic spectrum
+  remain outside scope. It does not claim a full framework-internal derivation
+  of atomic stability.
 
 Both notes are source-side `bounded_theorem` candidates awaiting independent
-audit. They can support the existing named-import wrapper
+audit. They support the current bounded support wrapper
 [`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
-if the audit lane accepts their scoped imports and dependencies.
+if the audit lane accepts their scoped dependencies.
 
 ## Not Landed From PR #1603
 

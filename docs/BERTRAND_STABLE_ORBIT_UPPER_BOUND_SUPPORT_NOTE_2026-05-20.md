@@ -42,7 +42,8 @@ longer a load-bearing extrapolation from that table.
 
 This note records a bounded support argument for the stable-orbit half of the
 D=3 upper-bound route. It does not claim a repo-wide axiom change and it does
-not claim a complete framework-internal proof of Bertrand's theorem.
+not claim a complete framework-internal proof of the full Bertrand
+closed-orbit theorem.
 
 The landable support claim is:
 
@@ -53,10 +54,9 @@ The landable support claim is:
 > circular orbits only for integer `d = 3`; `d = 4` is marginal and
 > `d >= 5` is unstable.
 
-This supports the existing named-import wrapper by making the elementary
-stability part explicit. The all-bounded-orbits-are-closed part of Bertrand's
-theorem remains standard classical mechanics unless separately derived and
-audited.
+This supplies the current wrapper's load-bearing stable-circular-orbit upper
+edge. The all-bounded-orbits-are-closed part of Bertrand's theorem remains
+standard classical mechanics context unless separately derived and audited.
 
 ## Inputs
 
@@ -175,7 +175,7 @@ gaps remain open as described in `D3_RETENTION_CLOSURE_PLAN_2026-05-20.md`.
 
 ## What This Does Not Close
 
-- It does not retire the Bertrand theorem import completely.
+- It does not retire the full Bertrand closed-orbit theorem import.
 - It does not claim an interacting framework gravity derivation or a
   physical-dimensional substrate replacement; it proves the continuum
   Green-kernel shape used by this support note.

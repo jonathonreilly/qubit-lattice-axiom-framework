@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1399 |
+| Applied audit verdicts | 1400 |
 | Retained-grade rows, including boxed decorations | 1267 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 798 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1328 |
+| Unaudited rows | 1327 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 31 |
+| Audited conditional rows | 32 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1330 |
-| Ready rows | 16 |
+| Total pending rows | 1329 |
+| Ready rows | 15 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 386 |
+| Leaf pending | 385 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - medium; unaudited
 - [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - medium; unaudited
 - [`source_resolved_retarded_green_pocket_note`](../../docs/SOURCE_RESOLVED_RETARDED_GREEN_POCKET_NOTE.md) - medium; unaudited
 - [`source_resolved_transverse_propagating_green_note`](../../docs/SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md) - medium; unaudited
 - [`spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19`](../../docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md) - medium; unaudited
 - [`staggered_backreaction_capture_closure_note`](../../docs/STAGGERED_BACKREACTION_CAPTURE_CLOSURE_NOTE.md) - medium; unaudited
-- [`staggered_backreaction_green_closure_note`](../../docs/STAGGERED_BACKREACTION_GREEN_CLOSURE_NOTE.md) - leaf; unaudited
+- [`staggered_backreaction_green_closure_note`](../../docs/STAGGERED_BACKREACTION_GREEN_CLOSURE_NOTE.md) - medium; unaudited
+- [`staggered_backreaction_iterative_note`](../../docs/STAGGERED_BACKREACTION_ITERATIVE_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3181 |
 | Critical nodes | 529 |
 | High nodes | 452 |
-| Medium nodes | 831 |
-| Leaf nodes | 1369 |
+| Medium nodes | 826 |
+| Leaf nodes | 1374 |
 
 Top load-bearing rows by graph score:
 
@@ -92,6 +92,6 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
 - `graph_first_su3_integration_note` - critical; 1282 descendants; score 52.825
 - `minimal_axioms_2026-05-03` - critical; 490 descendants; score 47.940
-- `key_terminology` - critical; 1018 descendants; score 44.493
+- `key_terminology` - critical; 1017 descendants; score 44.492
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1198 descendants; score 42.728
 - `anomaly_forces_time_theorem` - critical; 1005 descendants; score 40.474

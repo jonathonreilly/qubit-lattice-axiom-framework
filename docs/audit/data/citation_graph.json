@@ -46614,10 +46614,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "second_grown_family_note"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "staggered_backreaction_capture_closure_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_backreaction_green_closure_note"
     },
     {
       "from": "repo.repo_organization",
@@ -90160,16 +90160,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
         "second_grown_family_note",
         "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
         "source_resolved_retarded_green_pocket_note",
         "source_resolved_transverse_propagating_green_note",
         "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19",
-        "staggered_backreaction_capture_closure_note"
+        "staggered_backreaction_capture_closure_note",
+        "staggered_backreaction_green_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f4b5c2240138cf86679dae964aaf8840ee29dfae47c1afb6fc6395ad805f01b6",
+      "note_hash": "8e0f0ce386a4bd7fc9c35979cc5c2a51736de209b2ae8a498060f19d2c6bed8a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

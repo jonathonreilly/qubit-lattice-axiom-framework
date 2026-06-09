@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_2026_06_08.py
+runner_sha256: eb843a41f4cd5a64498467b978a9b75126027275851a3afdfd8b76f8656a9f97
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 66.42
+status: ok
+----- stdout -----
+PASS T1 CONSERVED cubic Ward resid/amplitude DECREASES with k: 0.0315@k1.05 > 0.0234@k0.79 > 0.0167@k0.63 (~k^+1.24, positive finite-lattice scaling support)
+PASS T2 NAIVE C1 control does not show decreasing support: 0.0494@k1.05 -> 0.0540@k0.79 (~k^-0.31, flat/growing over tested range)
+PASS T3 conserved resid/amplitude < naive and the gap WIDENS as k decreases (naive/conserved = 1.57@k1.05 -> 2.31@k0.79)
+
+Finite-lattice scaling support: for the supplied conserved coupling D(P_eff) + sqrt(g) measure,
+the cubic Ward residual normalized by the amplitude decreases over L=6,8,10, while the naive
+non-conserved C1 control does not show that trend over the tested range. This supports the
+conserved-coupling continuum-closure route, but does not prove the k->0 limit, an Einstein-Hilbert
+action, G_Newton, or all-order nonlinear diffeomorphism invariance.
+TOTAL: PASS=3 FAIL=0
+runner_check_breakdown = {A: 3, B: 0, C: 0, D: 0, total_pass: 3}
+
+----- stderr -----
+

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 778 |
+| **retained_bounded** | 779 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1363 |
+| unaudited | 1362 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1214 |
+| `audited_clean` | 1215 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1678 |
+| `unaudited` | 1677 |
 
 | claim_type | count |
 |---|---:|
@@ -1259,6 +1259,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_lambda_bypass_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -18210,6 +18211,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md`
   - `UNIVERSAL_GR_INDUCED_GRAVITON_W_NATIVE_FINITE_K_BOUNDED_THEOREM_NOTE_2026-06-08.md`
+- **auditor confidence:** high
+
+### `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-BZ diagnostic comparison showing the implemented staggered Kähler-Dirac block has a few-percent Zener anisotropy residual and is much closer to A=1 than the naive Dirac control under the runner's vertex scheme.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-122645-1dff6b37e1-universal_gr_graviton_isotro`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exact staggered Kähler-Dirac block gives a finite-BZ Zener diagnostic A≈0.97, N-stable and mass-robust, while the naive Dirac control gives A≈2.1 with O(1) anisotropy.  _(class `C`)_
+- **chain closes:** True — The runner source directly constructs the continuum, naive lattice, and staggered hypercube operators and computes the Zener components rather than importing or hard-coding the contested values. Closure is only for the bounded finite-scheme diagnostic, not for the W-native stress vertex, continuum extrapolation, or physical spin-2 isotropy theorem.
+- **rationale:** The scoped claim is deliberately bounded to the finite-BZ diagnostic actually computed in the packet. The source code contains no helper imports, external comparators, or hard-coded expected anisotropy constants; the reported continuum, naive, and staggered A values are produced by explicit operator sums. The displayed Zener normalization is internally consistent with A=1 for isotropic cubic stiffness, and the staggered scalar-spectrum identity follows from the eta-phase Clifford anticommutation in the 16x16 block. The note explicitly excludes the conserved vertex, W metric-Hessian bridge, continuum a->0 limit, and physical spin-2 theorem, so those open items do not block this bounded claim.
 - **auditor confidence:** high
 
 ### `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08`

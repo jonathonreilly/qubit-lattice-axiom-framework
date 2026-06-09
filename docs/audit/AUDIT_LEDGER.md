@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 203 |
-| **retained_bounded** | 774 |
+| **retained_bounded** | 775 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1376 |
+| unaudited | 1375 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1206 |
+| `audited_clean` | 1207 |
 | `audited_conditional` | 16 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1691 |
+| `unaudited` | 1690 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 777 |
-| `leaf` | 1292 |
+| `medium` | 778 |
+| `leaf` | 1291 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 853 | 58.24 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1282 | 52.83 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 490 | 47.94 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1017 | 44.49 | `unaudited` | meta |
+| 6 | `key_terminology` | meta | critical | 1018 | 44.49 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1198 | 42.73 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1005 | 40.47 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 265 | 39.55 | `unaudited` | unaudited |
@@ -323,6 +323,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_v4_convergence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_weak_coupling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `directional_b_density_stencil_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dispersion_high_p_tiebreaker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dispersion_relation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4238,6 +4239,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** "The weaker-coupling sweep does not show a strength-driven rescue of the remaining periodic Dirac gravity failures" because cross-strength sign-stability counts are unchanged and the signed delta-law fit never becomes available.  _(class `A`)_
 - **chain closes:** True — The note's numerical summaries match the supplied completed runner stdout, and the bounded negative conclusion follows directly from the unchanged 6/12 stable-row and 2/12 positive-stable counts across all strengths. The claim does not close as a general physics theorem beyond this scan grid, so the audited scope must remain bounded to the supplied harness and outputs.
 - **rationale:** The load-bearing claim is a bounded arithmetic summary of the completed runner output, not a first-principles derivation or external comparator. The stdout supports the stated cross-strength invariance, absence of signed delta-law fits, and lambda-dependent |bias| fit improvement. Clean status applies only to the reported scan-grid conclusion, not to any broader Dirac-gravity theorem or unsupplied v4 helper implementation.
+- **auditor confidence:** high
+
+### `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`
+
+- **Note:** [`DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite branch-rank arithmetic for the supplied first-order Dirac mass-shell operator on C^4, using retained Cl(3,1) and chirality inputs, yielding the numeric P4 counts 4 for Dirac and 2 for fixed-chirality Weyl without deriving the physical labels or thermal inventory.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-115126-20744346d8-dirac_weyl_fermion_dof_from_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Dirac count is dim_C ker D(E,+p) + dim_C ker D(-E,+p) = 2 + 2 = 4, and the fixed-chirality Weyl count is dim_C P_chi ker D(E,+p) + dim_C P_chi ker D(-E,+p) = 1 + 1 = 2.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, Q1 supplies the n=4 spinor/chirality setting and R2 supplies the chirality projectors; the source-local rank calculation gives nullity 2 on each massive energy branch and rank 1 after fixed chirality on each massless branch. The note explicitly leaves the Dirac equation, physical thermal inventory, and label semantics outside the claim.
+- **rationale:** The load-bearing step is finite Clifford/Dirac linear algebra, not a definition, renaming, tuned numerical match, or external comparator check. The runner source constructs gamma matrices and chirality projectors and verifies the relevant ranks exactly rather than merely printing constants, and the independent algebraic check agrees with the displayed 2+2 and 1+1 branch sums. The clean result is only for the bounded branch-rank count; it does not promote the physical spin, helicity, particle-antiparticle, Wick-rotation, or thermal-inventory bridges.
 - **auditor confidence:** high
 
 ### `directional_b_density_stencil_note`

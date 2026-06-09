@@ -46610,10 +46610,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
     },
     {
@@ -46634,11 +46630,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "magnitude_reads_minimal_record_block_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "fifth_family_radial_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "magnitude_reads_minimal_record_block_2026-06-06"
+      "to": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -90159,17 +90159,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19",
         "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
         "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "fifth_family_complex_boundary_note",
         "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
         "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
+        "magnitude_reads_minimal_record_block_2026-06-06",
         "fifth_family_radial_note",
-        "magnitude_reads_minimal_record_block_2026-06-06"
+        "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4b64c742f8a2126be163ace99a0c3c78c821602389347b021e610d4459a4d1b1",
+      "note_hash": "6bcd2947bf148a4ea6dcf3c1b91ae7a0303898e721caa148e336af7cbccf5915",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

@@ -1,0 +1,21 @@
+== CORE (confirm #3317A + #3320 MODE): Cl(3,1) chirality is genuine ==
+PASS: clifford_3p1_algebra {g^mu,g^nu}=2 eta^{mu nu} -- genuine Cl(3,1)
+PASS: g5_chirality g5^2=I, traceless, {g5,g^mu}=0 -- the partner chirality is real
+== CORE (confirm #3320 T1): CAR positive-energy vs Bose unbounded -- with the vacuum constant kept ==
+PASS: CAR_bounded_below CAR eigs [-1.0, 0.0, 0.0, 1.0] -- BOUNDED below (min=-E, a finite vacuum shift)
+PASS: Bose_unbounded_below Bose min=-12 -> -inf -- UNBOUNDED: statistics (sign of the b-reorder) is the engine
+FLAG: normal_ordering -- PR runner drops the -E vacuum constant (shows {0,E,E,2E}); physically the claim is BOUNDED-below, which holds either way
+== REFUTE #3320 BOOST: the runner's check is vacuous; test the REAL boost property ==
+PASS: boost_check_is_vacuous inv(M)(m I)M = m I holds for a RANDOM non-boost M -> the runner's boost check verifies NOTHING
+PASS: real_boost_test_on_canonical_S the canonical Dirac boost exp(eta/2 g0 g3) DOES satisfy S^dag g0 S=g0 (mass bilinear invariant)
+FLAG: boost_overstated -- runner's S happens to pass the real test too, but the check it RAN (m I central) was vacuous -- boost-covariance is true yet UN-verified by the runner
+== REFUTE #3320 CAUS: completeness is the EQUAL-TIME precursor, not spacelike microcausality ==
+PASS: completeness_equal_time_CAR sum(uu^dag+vv^dag)=I -> canonical EQUAL-TIME {psi,psi^dag}=delta (a NECESSARY precursor)
+FLAG: microcausality_overstated -- equal-time CAR != microcausality. The spacelike statement {psi(x),psi-bar(y)}=0 for (x-y) spacelike needs the Pauli-Jordan mode integral over the mass shell (a field construction) -- NOT verified by the finite-dim single-momentum runner
+== REFUTE #3317 CONT: the decoupling's load-bearing premise is HARDCODED ==
+FLAG: decoupling_premise_assumed -- the runner sets has_k4_corner=False by hand. The Clifford-vs-corner DISTINCTION is sound, but 'continuous emergent time => no k_4 doubler' is the ASSUMED premise (emergent-time continuity), not a derived result
+== #3316 Koide overreach (already bounded by PR #3333) ==
+FLAG: koide_overreach -- Dirac g5=I_3(x)sigma_3 is generation-blind ([g5, Gamma_chi(x)I]=0) -> cannot supply the Koide Q=2/3 generation chirality; #3316's 'one keystone' collapse holds only for the spin-statistics (Dirac) half (see #3333)
+
+TOTAL: PASS=7 FAIL=0  FLAGS=5
+VERDICT: the chain's ALGEBRA is sound and confirmed -- Cl(3,1) supplies a genuine gamma_5 chirality, and CAR uniquely gives a bounded-below H (Bose is unbounded). But the PR runners OVERSTATE three checks: (1) BOOST covariance is verified by a vacuous identity (m I is central; true for any matrix); (2) MICROCAUSALITY is only the equal-time CAR precursor, not the spacelike Pauli-Jordan vanishing; (3) the #3317 DECOUPLING rests on the ASSUMED premise that emergent time is continuous (no k_4 corner). Plus #3316 overreaches on Koide (bounded by #3333). NET: positive-energy + the chiral algebra are solid; microcausality/boost/decoupling are PARTIALLY-supported-pending the admitted residual -- the OS->Wightman field construction on the emergent-time Hilbert space, which is exactly where the spacelike-causality and genuine-boost-covariance checks live.

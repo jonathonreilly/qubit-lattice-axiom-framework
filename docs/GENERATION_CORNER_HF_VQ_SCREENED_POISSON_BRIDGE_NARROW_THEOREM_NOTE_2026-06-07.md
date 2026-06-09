@@ -10,7 +10,7 @@ This source-side note does not write or imply an audit verdict.
 ## Audit target
 
 This note is a one-hop source bridge for
-[`GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06`](GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md).
+`GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md`.
 The current audit blocker asks for a retained-grade authority deriving the periodic
 translation-invariant Hartree-Fock plane-wave mutual-energy readout
 

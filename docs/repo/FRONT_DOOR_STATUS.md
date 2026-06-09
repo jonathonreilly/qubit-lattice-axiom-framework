@@ -11,20 +11,20 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3006 |
-| Applied audit verdicts | 1345 |
-| Retained-grade rows, including boxed decorations | 1219 |
-| Retained positive theorems | 207 |
-| Retained no-go rows | 218 |
-| Retained bounded rows | 745 |
+| Ledger rows | 3096 |
+| Applied audit verdicts | 1377 |
+| Retained-grade rows, including boxed decorations | 1262 |
+| Retained positive theorems | 209 |
+| Retained no-go rows | 206 |
+| Retained bounded rows | 798 |
 | Boxed decorations under retained parents | 49 |
-| Open gates | 36 |
-| Unaudited rows | 1345 |
-| Retained-pending-chain rows | 10 |
-| Audited conditional rows | 32 |
+| Open gates | 37 |
+| Unaudited rows | 1398 |
+| Retained-pending-chain rows | 13 |
+| Audited conditional rows | 20 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
-| Citation cycles detected | 16 |
+| Citation cycles detected | 0 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -33,37 +33,37 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1347 |
-| Ready rows | 24 |
-| Cycle-break targets | 16 |
-| Critical pending | 328 |
-| High pending | 255 |
-| Medium pending | 375 |
-| Leaf pending | 389 |
+| Total pending rows | 1403 |
+| Ready rows | 49 |
+| Cycle-break targets | 0 |
+| Critical pending | 337 |
+| High pending | 248 |
+| Medium pending | 383 |
+| Leaf pending | 435 |
 
 Next ready rows by queue order:
 
-- [`axiom_first_reflection_positivity_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
-- [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
-- [`staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06`](../../docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - critical; unaudited
-- [`plaquette_v1_picard_fuchs_ode_note_2026-05-05`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) - critical; unaudited
-- [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - high; unaudited
+- [`microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) - critical; unaudited
+- [`lattice_greens_function_maradudin_textbook_import_note_2026-05-18`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) - critical; audit_in_progress
+- [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; unaudited
+- [`yt_ew_matching_rule_m_note_2026-05-02`](../../docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md) - critical; audit_in_progress
+- [`su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`](../../docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md) - critical; audit_in_progress
+- [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
+- [`spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md) - high; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **440**.
+- Non-retained-grade cited rows in publication tables: **436**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 188 |
-| high | `unaudited` | 145 |
-| medium | `unaudited` | 92 |
+| critical | `unaudited` | 189 |
+| high | `unaudited` | 144 |
+| medium | `unaudited` | 88 |
 | critical | `audited_renaming` | 3 |
 | critical | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |
@@ -79,19 +79,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3124 |
-| Critical nodes | 518 |
-| High nodes | 448 |
-| Medium nodes | 808 |
-| Leaf nodes | 1350 |
+| Citation-graph nodes | 3233 |
+| Critical nodes | 538 |
+| High nodes | 445 |
+| Medium nodes | 842 |
+| Leaf nodes | 1408 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1359 descendants; score 93.909
-- `three_generation_observable_theorem_note` - critical; 745 descendants; score 61.043
-- `observable_principle_from_axiom_note` - critical; 838 descendants; score 58.213
-- `graph_first_su3_integration_note` - critical; 1257 descendants; score 50.797
-- `minimal_axioms_2026-05-03` - critical; 476 descendants; score 47.898
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1180 descendants; score 42.706
-- `key_terminology` - critical; 996 descendants; score 40.461
-- `anomaly_forces_time_theorem` - critical; 989 descendants; score 40.451
+- `minimal_axioms` - critical; 1435 descendants; score 108.488
+- `three_generation_observable_theorem_note` - critical; 773 descendants; score 61.096
+- `observable_principle_from_axiom_note` - critical; 857 descendants; score 58.245
+- `graph_first_su3_integration_note` - critical; 1299 descendants; score 57.844
+- `minimal_axioms_2026-05-03` - critical; 495 descendants; score 47.954
+- `key_terminology` - critical; 1042 descendants; score 47.027
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1212 descendants; score 44.244
+- `anomaly_forces_time_theorem` - critical; 1012 descendants; score 40.484

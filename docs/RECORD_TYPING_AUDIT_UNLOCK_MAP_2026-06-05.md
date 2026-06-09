@@ -94,7 +94,7 @@ The runner classified these audited-conditional rows as
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | [`KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md`](KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md) |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md) |
 | `observable_principle_from_axiom_note` | [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md) |
-| `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | [`QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md`](QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md) |
+| `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | `QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md` |
 
 The exact typing theorem can help these rows by removing the object-type
 ambiguity, but it does not supply their missing selector/measure law.

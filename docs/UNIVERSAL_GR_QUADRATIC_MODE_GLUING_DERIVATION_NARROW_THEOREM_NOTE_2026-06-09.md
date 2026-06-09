@@ -77,7 +77,7 @@ no new axiom and no Tier-A admission.
 ## Relation to the Degenerate Supermetric Sign Row
 
 For the row
-[`UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md`](UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md),
+`UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md`,
 this note removes one supplied item: the finite quadratic gluing law. The row
 still remains conditional on the supplied opposite-signed comparator pair
 

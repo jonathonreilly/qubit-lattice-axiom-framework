@@ -11,17 +11,17 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3055 |
-| Applied audit verdicts | 1401 |
+| Ledger rows | 3056 |
+| Applied audit verdicts | 1400 |
 | Retained-grade rows, including boxed decorations | 1276 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 808 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 37 |
-| Unaudited rows | 1336 |
+| Unaudited rows | 1338 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 27 |
+| Audited conditional rows | 26 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 16 |
@@ -33,13 +33,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1338 |
-| Ready rows | 15 |
+| Total pending rows | 1340 |
+| Ready rows | 16 |
 | Cycle-break targets | 16 |
 | Critical pending | 328 |
 | High pending | 253 |
 | Medium pending | 367 |
-| Leaf pending | 390 |
+| Leaf pending | 392 |
 
 Next ready rows by queue order:
 
@@ -79,18 +79,18 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3192 |
+| Citation-graph nodes | 3193 |
 | Critical nodes | 529 |
 | High nodes | 454 |
 | Medium nodes | 834 |
-| Leaf nodes | 1375 |
+| Leaf nodes | 1376 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1392 descendants; score 101.444
+- `minimal_axioms` - critical; 1393 descendants; score 101.945
 - `three_generation_observable_theorem_note` - critical; 767 descendants; score 61.085
 - `observable_principle_from_axiom_note` - critical; 854 descendants; score 58.240
-- `graph_first_su3_integration_note` - critical; 1284 descendants; score 53.328
+- `graph_first_su3_integration_note` - critical; 1285 descendants; score 53.829
 - `minimal_axioms_2026-05-03` - critical; 491 descendants; score 47.943
 - `key_terminology` - critical; 1021 descendants; score 45.497
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1199 descendants; score 42.729

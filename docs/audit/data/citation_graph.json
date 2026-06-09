@@ -46610,10 +46610,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "fifth_family_radial_boundary_note"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "fifth_family_complex_boundary_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -90159,17 +90159,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
         "fifth_family_radial_boundary_note",
         "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
         "plaquette_bootstrap_framework_integration_note_2026-05-03",
         "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
         "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
         "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-        "fifth_family_complex_boundary_note"
+        "fifth_family_complex_boundary_note",
+        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f8114407b6f7a8f84a151f46616873908b61d53183d22e492d53817b4beeae34",
+      "note_hash": "3b096cd08831bfab970f813bc4e98bb21598e5c357231768e0f6704e65727e5b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

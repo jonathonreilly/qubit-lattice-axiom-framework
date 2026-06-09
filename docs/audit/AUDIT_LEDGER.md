@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 769 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1386 |
+| unaudited | 1385 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 14 |
+| ~~audited_conditional~~ | 15 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1199 |
-| `audited_conditional` | 14 |
+| `audited_conditional` | 15 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1701 |
+| `unaudited` | 1700 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 526 |
-| `high` | 449 |
-| `medium` | 776 |
+| `high` | 450 |
+| `medium` | 775 |
 | `leaf` | 1293 |
 
 - **Retained pending chain closure:** 12
@@ -1337,6 +1337,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5448,6 +5449,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because L is symmetric, d/dPhi[1/2 Phi^T L Phi]=L Phi, and adding the mass and source derivatives gives grad_Phi S=(L+mu^2 I)Phi-G_c rho.  _(class `A`)_
 - **chain closes:** True — The result is direct quadratic-form calculus on the displayed action: the graph-gradient, mass, and source derivatives have the stated signs and factors. The cited self-consistency note is not load-bearing for this variational identity and is not used to select the action.
 - **rationale:** The load-bearing step is a genuine class A algebraic closure over a stipulated action, not a definition substitution or numerical match. The runner source performs exact rational checks of the Laplacian construction, action gradient, stationary-source witness, constant-mode behavior, positive-mu2 witnesses, and scope firewalls rather than merely printing PASS. Independently, with the standard unordered-edge, nonnegative-weight Laplacian convention, Phi^T L Phi=sum_E w_ij(Phi_i-Phi_j)^2, so the factor 1/2 differentiates to L Phi; the mass and source terms then give the displayed equation. The repaired note explicitly disclaims action selection and operator uniqueness, so no hidden selection theorem is being imported.
+- **auditor confidence:** high
+
+### `fifth_family_radial_boundary_note`
+
+- **Note:** [`FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audit covers only the stated radial-shell boundary row at drift 0.20, seed 0, with its exact zero/neutral controls and negative positive-source orientation; no wider radial basin or family-wide theorem is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-112151-276b8234b4-fifth_family_radial_boundary`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At the radial-shell row drift = 0.20, seed = 0, the zero and neutral controls are exactly zero while the signed response flips orientation with plus < 0 and minus > 0.  _(class `C`)_
+- **chain closes:** False — The primary runner and included helpers genuinely compute the finite row table, and the zero/neutral cancellations follow from the linear field construction plus deterministic replay. The claimed independent variational orientation certificate is load-bearing for the repaired theorem-level closure but its source is not included, so its negative-slope computation cannot be independently checked from this packet.
+- **rationale:** The finite replay path is not a trivial printout or hard-coded row: it builds the grown slice, radial-shell connectivity, field, propagation, and detector centroid from framework code. The exact zero and neutral rows are independently explained by the code path because empty sources and same-point +1/-1 sources produce the same zero field used in the baseline replay. However, the source note now relies on an independent orientation certificate, and the packet includes only the parent runner's cache/live-output substring validation for that certificate, not the certificate source. Runner PASS output alone is insufficient for audited_clean under the formula-inventory rule.
+- **open / conditional deps cited:**
+  - `scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py`
 - **auditor confidence:** high
 
 ### `fifth_family_radial_repaired_positive_packet_note_2026-05-29`

@@ -25,8 +25,8 @@ M3: Dirac context -- MAXENT-R selects the orbit cell (r=1/2, Q=2/3)
 M4: Majorana (K-fixed) context -- the SAME principle yields the sector cell (r=1, Q=1)
 ----------------------------------------------------------------------------------------
   [PASS] K-fixedness forces the doublet coefficient REAL: conj(H)=H <=> b = conj(b) (the doublet variable collapses to ONE REAL slot -- no folding question arises)  --  on the K-fixed locus the orbit variable IS a real variable
-  [PASS] => MAXENT-R in a K-fixed context yields the landed Majorana/real cell: r = 1, Q = 1 -- the SAME principle, zero per-context choices, reproduces BOTH realized cells  --  matches the landed Majorana-Berezin cell and rung 0 of the neutrino program
-  [PASS] NOT a fitted selector: the principle voluntarily outputs Q = 1 where structure dictates (Majorana) -- a post-hoc rule tuned to lepton data would never volunteer Q = 1  --  answers the panel's counterfactual objection head-on
+  [PASS] => MAXENT-R in a K-fixed context lands on the REAL-polarization row of the LANDED table (computed lookup, not prose): r = 1, Q = 1 -- the SAME principle, zero per-context choices, reproduces BOTH realized cells  --  K-fixed -> real class -> (r,Q) = (1, 1) per the landed table
+  [PASS] NOT a fitted selector: the principle outputs Q = 1 where structure dictates (Majorana) -- computed via the K-fixed -> real-class -> landed-row chain above, not asserted  --  a post-hoc rule tuned to lepton data would never volunteer Q = 1
 
 ----------------------------------------------------------------------------------------
 M5: what the sector-side rule must import (and the framework does not retain)

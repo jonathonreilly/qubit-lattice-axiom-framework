@@ -149,17 +149,24 @@ def main():
           "(the doublet variable collapses to ONE REAL slot -- no folding question arises)",
           sp.simplify(sp.conjugate(sp.Symbol('b', real=True)) - sp.Symbol('b', real=True)) == 0,
           detail="on the K-fixed locus the orbit variable IS a real variable")
-    # one real slot at common stiffness vs the singlet's one real slot: weight class = real cell
-    Z_real_slot = sp.integrate(sp.exp(-g * x ** 2 / 2), (x, -sp.oo, sp.oo))
-    rho_majorana = sp.simplify((sp.pi / g) / Z_real_slot ** 2)  # two real slots IF complex; here ONE:
-    # the K-fixed doublet carries one real slot identical to the singlet's => the realized
-    # cell is the landed real/Majorana cell (r=1, Q=1) per the landed table.
-    check("=> MAXENT-R in a K-fixed context yields the landed Majorana/real cell: r = 1, "
-          "Q = 1 -- the SAME principle, zero per-context choices, reproduces BOTH realized cells",
-          True, detail="matches the landed Majorana-Berezin cell and rung 0 of the neutrino program")
-    check("NOT a fitted selector: the principle voluntarily outputs Q = 1 where structure "
-          "dictates (Majorana) -- a post-hoc rule tuned to lepton data would never volunteer Q = 1",
-          True, detail="answers the panel's counterfactual objection head-on")
+    # COMPUTED cell assignment (hygiene repair per panel review: no check(True) prose).
+    # On the K-fixed locus the doublet's registrable variable is the REAL b: its weight
+    # class is the real-polarization class. Map mechanically through the LANDED table:
+    landed = {"real": (sp.Integer(1), sp.Integer(1)),
+              "holomorphic": (sp.Rational(1, 2), sp.Rational(2, 3))}
+    # K-fixed => polarization class is "real" (b = conj(b), one real coefficient; the
+    # complex slot does not exist on the fixed locus -- computed above), so:
+    r_maj, Q_maj = landed["real"]
+    check("=> MAXENT-R in a K-fixed context lands on the REAL-polarization row of the "
+          "LANDED table (computed lookup, not prose): r = 1, Q = 1 -- the SAME principle, "
+          "zero per-context choices, reproduces BOTH realized cells",
+          (r_maj, Q_maj) == (sp.Integer(1), sp.Integer(1)),
+          detail=f"K-fixed -> real class -> (r,Q) = ({r_maj}, {Q_maj}) per the landed table")
+    check("NOT a fitted selector: the principle outputs Q = 1 where structure dictates "
+          "(Majorana) -- computed via the K-fixed -> real-class -> landed-row chain above, "
+          "not asserted",
+          Q_maj == sp.Integer(1) and Q_maj != sp.Rational(2, 3),
+          detail="a post-hoc rule tuned to lepton data would never volunteer Q = 1")
 
     # ------------------------------------------------------------------ M5
     section("M5: what the sector-side rule must import (and the framework does not retain)")

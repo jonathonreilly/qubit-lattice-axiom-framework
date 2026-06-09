@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3047 |
-| Applied audit verdicts | 1407 |
+| Applied audit verdicts | 1406 |
 | Retained-grade rows, including boxed decorations | 1276 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 808 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 37 |
-| Unaudited rows | 1322 |
+| Unaudited rows | 1323 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 31 |
 | Audited renaming rows | 35 |
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1324 |
-| Ready rows | 4 |
+| Total pending rows | 1325 |
+| Ready rows | 5 |
 | Cycle-break targets | 16 |
 | Critical pending | 327 |
 | High pending | 253 |
-| Medium pending | 362 |
+| Medium pending | 363 |
 | Leaf pending | 382 |
 
 Next ready rows by queue order:
@@ -46,7 +46,8 @@ Next ready rows by queue order:
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
 - [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - medium; unaudited
-- [`universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
+- [`universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -78,8 +79,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3184 |
 | Critical nodes | 529 |
 | High nodes | 454 |
-| Medium nodes | 823 |
-| Leaf nodes | 1378 |
+| Medium nodes | 826 |
+| Leaf nodes | 1375 |
 
 Top load-bearing rows by graph score:
 

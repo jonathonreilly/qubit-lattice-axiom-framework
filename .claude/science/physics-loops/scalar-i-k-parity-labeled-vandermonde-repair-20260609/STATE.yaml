@@ -1,0 +1,24 @@
+loop_slug: scalar-i-k-parity-labeled-vandermonde-repair-20260609
+mode: campaign_block
+branch: physics-loop/scalar-i-k-parity-labeled-vandermonde-repair-20260609
+base: origin/main
+base_commit: e208d269f
+date: 2026-06-09
+target_claim_id: scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08
+target_status: bounded-support
+artifact_role: science_correction
+active_route: replace sorted-spectrum Vandermonde parity check with cited labeled generation Vandermonde
+hard_residual: scalar-i versus J_cs separation survives; labeled Vandermonde orientation is K-odd, not K-even
+files_touched:
+  - docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md
+  - scripts/frontier_scalar_i_real_generation_k_parity_separation.py
+  - logs/runner-cache/frontier_scalar_i_real_generation_k_parity_separation.txt
+open_imports: []
+no_go_routes:
+  - old claim that the labeled Vandermonde orientation sign is K-even is false
+  - sorted-spectrum discriminant is only an unordered-multiset control
+checks:
+  - python3 scripts/frontier_scalar_i_real_generation_k_parity_separation.py: TOTAL PASS=9 FAIL=0
+  - python3 scripts/cached_runner_output.py scripts/frontier_scalar_i_real_generation_k_parity_separation.py: status ok
+pr_status: pending
+next_exact_action: create PR for reviewer extraction and independent audit recheck; do not edit docs/audit

@@ -20,6 +20,10 @@ modify any audit ledger entry.
 - Updates the runner source firewall to reject the old admitted-import
   phrasing.
 - Refreshes the runner cache to `TOTAL: PASS=76 FAIL=0`.
+- Cleans the adjacent heat-kernel resolvent note so its summary/audit
+  registration records the stronger native theorem as the load-bearing
+  leading-term route.
+- Refreshes the heat-kernel runner cache to `TOTAL: PASS=20 FAIL=0`.
 
 ## Still Open
 

@@ -7,8 +7,17 @@ target_blocker_text: "source note encoded the cubic-lattice Green asymptotic as 
 source_of_blocker_text: user_goal/source_note
 reachability_to_target: closes
 artifact_role: theorem
-next_trace_action: "Review the native reroute, then re-audit the lattice-Green Maradudin bridge row against the parent framework-local Green-kernel theorem."
+next_trace_action: "Review the native reroute, then re-audit the lattice-Green Maradudin bridge row and adjacent heat-kernel leading-term row against the parent framework-local Green-kernel theorem."
 ```
 
 This PR repairs the dependency shape only. It does not edit audit results and
 does not set an effective retained verdict.
+
+Secondary target:
+
+```yaml
+target_claim_id: lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07
+target_blocker_text: "summary/status language still described the leading Green-kernel asymptotic through accepted-premise textbook-import wording despite the stronger-theorem reroute."
+reachability_to_target: closes
+artifact_role: theorem
+```

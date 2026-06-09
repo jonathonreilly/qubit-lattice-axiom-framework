@@ -2,9 +2,13 @@ loop_id: lattice-greens-maradudin-native-reroute-20260609
 status: packaged_for_review
 created: 2026-06-09
 target_claim_id: lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27
+secondary_target_claim_id: lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07
 source_note: docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md
+secondary_source_note: docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md
 runner: scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py
+secondary_runner: scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py
 runner_cache: logs/runner-cache/lattice_greens_maradudin_asymptotic_accepted_premise_runner.txt
+secondary_runner_cache: logs/runner-cache/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.txt
 prior_blocker: "source note encoded the cubic-lattice Green asymptotic as a supplied textbook/accepted-premise input instead of a framework-applied proof with textbooks as parallel references."
 actual_current_surface_status: exact-support
 trace_class: direct_blocker_closure

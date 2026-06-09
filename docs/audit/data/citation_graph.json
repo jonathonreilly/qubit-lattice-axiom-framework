@@ -77506,7 +77506,7 @@
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "469a100d88b9deb91563263839528910bb6c0e885bb229a9d09a9490ea604d05",
+      "note_hash": "1f9c4718f6e6c5f2d2a3e6ccc30f4499ff6248a909d924b33a250f97cee97540",
       "path": "docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md",
       "runner_path": "scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py",
       "title": "Lattice Green Function 1/(4\u03c0|r|) Heat-Kernel Resolvent: Asymptotic Boundary Packet"

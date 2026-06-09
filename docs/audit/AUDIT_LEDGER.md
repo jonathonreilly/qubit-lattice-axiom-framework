@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 792 |
+| **retained_bounded** | 793 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1340 |
+| unaudited | 1339 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1231 |
+| `audited_clean` | 1232 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1655 |
+| `unaudited` | 1654 |
 
 | claim_type | count |
 |---|---:|
@@ -769,6 +769,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `lattice_3d_dense_spent_delay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_window_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_l2_numpy_h0125_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -10854,6 +10855,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The source note and completed runner agree that h=0.5 has MIXED barrier read, no distance fit, and 0/5 attractive hierarchy-aligned no-barrier rows, while h=1.0 has 5/5 such rows. The cited authority is retained-grade for the imported harness constants, and no extra open dependency is needed for this scoped no-go.
 - **rationale:** The runner constructs the ordered 3D lattice, applies round(coord / h), keeps fixed physical connectivity, propagates with the spent-delay action, and computes the barrier plus no-barrier rows rather than hard-coding the negative verdict. This cleanly supports only the bounded reconciliation/no-go: the older h=0.5 positive-refinement story fails on this harness. It does not audit broader continuum, 4D, action-power, project-ranking, or global canonical-branch claims.
 - **auditor confidence:** high
+
+### `lattice_3d_dense_spent_delay_note`
+
+- **Note:** [`LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md`](../../docs/LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite executable runner-card claim for scripts/lattice_3d_dense_10prop.py at the stated dense 3D spent-delay parameters, including only the z=2,3,4,5 distance window and excluding z=6, asymptotic, continuum, or effective-retained claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-133545-f10859e3a5-lattice_3d_dense_spent_delay`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the canonical dense 3D spent-delay card with L=12, W=6, h=1.0, s=5e-05, the live runner reports the listed 10-property finite card and z=2..5 hierarchy-aligned support.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the finite Z^3 lattice, slit mask, field, propagation rule, controls, and distance fit directly from card parameters and does not import helper data, cited-note values, or hard-coded expected outputs. Independent arithmetic on the displayed distance table gives slope -1.6165 and R²=0.97597, matching the stated b^(-1.62), R²=0.976 support.
+- **rationale:** The note's repaired scope is exactly the finite live runner card, and the included cache output matches that scope with no stale z=6 endpoint. The source code performs actual finite computation rather than printing constants or comparing to external calibrated measurements. The displayed node count, interior edge count, distance signs, hierarchy support count, and distance-law fit check out from the packet values. No cited open authority or hidden helper dependency appears in the restricted packet.
+- **auditor confidence:** medium
 
 ### `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29`
 

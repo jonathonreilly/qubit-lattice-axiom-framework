@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 802 |
+| **retained_bounded** | 803 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1322 |
+| unaudited | 1321 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1241 |
+| `audited_clean` | 1242 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1637 |
+| `unaudited` | 1636 |
 
 | claim_type | count |
 |---|---:|
@@ -1161,6 +1161,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_3d_self_gravity_sign_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_capture_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `staggered_backreaction_green_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_capture_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -16842,6 +16843,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The current capture-closure harness preserves both cycle-bearing 9/9 batteries and improves the cycle and holdout force gaps by about a factor of two.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helpers compute source densities, graph Poisson fields, Crank-Nicolson evolutions, shell forces, external-control gaps, and summary ratios from fixed runner definitions rather than importing or printing the note's asserted numbers. Independent arithmetic checks give 0.9828/0.4734 = 2.076 and 0.9191/0.4559 = 2.016, matching the stated 2.08x and 2.02x.
 - **rationale:** The load-bearing claim is bounded to the current finite runner output, and the runner source performs the closure computation rather than hard-coding the source-note numbers. The closure loop updates gain from capture and does not use the external-kernel force in the load-bearing closure path; the external kernel is used afterward as the fixed gap control. The source note's boundary language correctly excludes the archived near-capture and full self-gravity claims.
+- **auditor confidence:** high
+
+### `staggered_backreaction_green_closure_note`
+
+- **Note:** [`STAGGERED_BACKREACTION_GREEN_CLOSURE_NOTE.md`](../../docs/STAGGERED_BACKREACTION_GREEN_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the supplied deterministic finite graph runner and frozen three-map comparison, `resistance_yukawa` is the promoted holdout-aware Green map and has the stated bounded diagnostics, while calibrated holdout closeout and self-refresh remain open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-143046-30125725fa-staggered_backreaction_green`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The live runner supports `resistance_yukawa` as the best current holdout-aware map in the frozen comparison, with the quoted raw cycle, improvement, raw holdout, and calibrated holdout gaps.  _(class `C`)_
+- **chain closes:** True — The provided runner and helper source generate the graph families, apply the screened Poisson, geodesic Yukawa, and resistance Yukawa maps, evolve the probe state, and compute the displayed gaps and checks. The wrapper numbers match the runner stdout arithmetic, including 9.618e-01 / 3.425e-01 = 2.81x, and the caveats are retained in the audited scope.
+- **rationale:** The load-bearing step is a bounded first-principles finite-runner computation from the supplied graph and evolution definitions, not a cross-note import, renaming, or external comparator match. The runner source does not hard-code the contested output values; it computes them from deterministic graph construction, sparse graph operators, Green kernels, gain fitting, and force diagnostics. The claim is clean only at the stated bounded scope: it supports the frozen runner comparison and explicitly does not close the calibrated holdout or endogenous self-gap.
 - **auditor confidence:** high
 
 ### `staggered_backreaction_live_capture_packet_note_2026-05-29`

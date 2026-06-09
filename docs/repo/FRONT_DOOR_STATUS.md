@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1352 |
+| Applied audit verdicts | 1353 |
 | Retained-grade rows, including boxed decorations | 1238 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 203 |
 | Retained bounded rows | 775 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1375 |
+| Unaudited rows | 1374 |
 | Retained-pending-chain rows | 12 |
-| Audited conditional rows | 16 |
+| Audited conditional rows | 17 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1377 |
-| Ready rows | 57 |
+| Total pending rows | 1376 |
+| Ready rows | 56 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 366 |
-| Leaf pending | 432 |
+| Leaf pending | 431 |
 
 Next ready rows by queue order:
 
-- [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) - medium; unaudited
 - [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
 - [`universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - medium; unaudited
 - [`fifth_family_radial_note`](../../docs/FIFTH_FAMILY_RADIAL_NOTE.md) - medium; unaudited
 - [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - medium; unaudited
-- [`flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md) - leaf; unaudited
+- [`flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
+- [`framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30`](../../docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3181 |
 | Critical nodes | 529 |
 | High nodes | 452 |
-| Medium nodes | 820 |
-| Leaf nodes | 1380 |
+| Medium nodes | 821 |
+| Leaf nodes | 1379 |
 
 Top load-bearing rows by graph score:
 

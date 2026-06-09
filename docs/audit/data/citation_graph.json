@@ -46610,10 +46610,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -90159,17 +90159,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
         "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "fifth_family_complex_boundary_note",
         "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
         "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
         "magnitude_reads_minimal_record_block_2026-06-06",
         "fifth_family_radial_note",
-        "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
+        "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
+        "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6bcd2947bf148a4ea6dcf3c1b91ae7a0303898e721caa148e336af7cbccf5915",
+      "note_hash": "f2c01d50fb6440f7bdeeb1c7b78b952467412bc7db49037f9b1886e8b76798e9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

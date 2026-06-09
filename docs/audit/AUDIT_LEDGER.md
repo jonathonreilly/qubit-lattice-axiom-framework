@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 775 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1375 |
+| unaudited | 1374 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 16 |
+| ~~audited_conditional~~ | 17 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1207 |
-| `audited_conditional` | 16 |
+| `audited_conditional` | 17 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1690 |
+| `unaudited` | 1689 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 778 |
-| `leaf` | 1291 |
+| `medium` | 779 |
+| `leaf` | 1290 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
@@ -1347,6 +1347,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -8662,6 +8663,21 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current Higgs runner shows that the framework has nontrivial quantitative Higgs behavior once the lattice Coleman-Weinberg mechanism is active.  _(class `C`)_
 - **chain closes:** True — For this bounded scope, the note does not claim an exact Higgs-mass derivation; it claims only that the runner exhibits nontrivial CW Higgs behavior and supports bounded studies. The completed runner computes CW potential/SSB scans and ballpark mass-ratio behavior, while its failed exact-coupling/crossing checks are consistent with the note's explicit boundary.
 - **rationale:** The source note is narrowly scoped: it is a support note for bounded Higgs quantitative behavior and explicitly excludes standalone exact m_H authority. The runner is not clean for exact Higgs closure, but that is not the claim under audit; the two completed failures show missing exact coupling/crossing closure and reinforce the boundary. Within the bounded scope, the source note and completed runner evidence close without promoting an exact Higgs-mass derivation.
+- **auditor confidence:** high
+
+### `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure lattice-side mean-field algebra: on the supplied d=4/Z^4 APBC taste-block packet with N_taste = 16, W''(0)/N_tot = R_lattice = 1/(4 u_0^2), with no physical Higgs-mass identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-115427-c051e1e851-higgs_lattice_eigenvalue_rat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At N_taste = 16, R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2), matching the per-mode curvature W''(0)/N_tot.  _(class `A`)_
+- **chain closes:** False — The displayed curvature algebra closes inside the stated finite mean-field packet. Full retained-grade closure does not close because the d=4/Z^4 APBC carrier remains an explicit unresolved bounded hypothesis rather than a retained framework-native derivation.
+- **rationale:** The load-bearing math is a genuine algebraic identity: differentiating W(J) = (N_tot/2) log(J^2 + 4 u_0^2) gives W''(0) = N_tot/(4 u_0^2), and 4/(16 u_0^2) gives the same per-mode value. The runner source performs symbolic Clifford, curvature, ratio, and bridge-cache checks rather than only printing constants. However, the note explicitly keeps the framework-native d=4/Z^4 APBC carrier as unresolved, so the row cannot be audited clean from retained-grade inputs alone.
+- **open / conditional deps cited:**
+  - `supplied d=4/Z^4 APBC taste-block carrier (unresolved bounded hypothesis; no retained source path supplied)`
 - **auditor confidence:** high
 
 ### `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`

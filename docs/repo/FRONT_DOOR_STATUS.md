@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 766 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1391 |
+| Unaudited rows | 1390 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 13 |
 | Audited renaming rows | 35 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`axiom_first_reflection_positivity_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
+- [`axiom_first_reflection_positivity_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) - critical; audit_in_progress
 - [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - critical; unaudited
 - [`dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md) - high; unaudited
 - [`universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md) - high; unaudited
@@ -61,7 +61,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 189 |
+| critical | `unaudited` | 188 |
 | high | `unaudited` | 145 |
 | medium | `unaudited` | 91 |
 | critical | `audited_renaming` | 3 |
@@ -69,6 +69,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| critical | `audit_in_progress` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 

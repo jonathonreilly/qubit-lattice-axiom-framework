@@ -1,0 +1,95 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_exact_h_expansion_route_obstruction_2026_06_09.py
+runner_sha256: ed5e9edc0e8a0c493d85a67ff4c376b48fb52b3a6be608299151ed257a04c42c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 75.59
+status: ok
+----- stdout -----
+
+========================================================================
+EXACT-H BRIDGE: EXPANSION-ROUTE QUANTIFIED OBSTRUCTION RUNNER
+========================================================================
+
+Companion: docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md
+Scopes the exact-H step of AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON (M2):
+norm-convergent expansion constructions of -log(T)/a_tau cannot reach the
+canonical-surface budget; the spectral/analyticity route (free-surface step
+already landed 2026-06-06) is the surviving class.
+
+========================================================================
+TEST O1: minimal-pair BCH series radius (closed form, derived)
+========================================================================
+
+  (a) tr(e^(s sx) e^(s sz))/2 - cosh^2 s = 0
+  [PASS] O1a — closed form tr M/2 = cosh^2 s (exact)
+  (b) |s*| = 1.80117197962;  |cosh^2(s*) + 1| = 4.59e-41
+  [PASS] O1b — cosh^2 s* = -1 at |s*| = 1.8012 (40-digit)
+         |s*| = 1.80117197962
+  (c) root-test radius estimate = 1.8416937  (ratio to |s*|: 1.0225)
+  [PASS] O1c — Taylor root test reproduces the radius (within slow-convergence tol)
+         estimate/predicted = 1.0225
+
+========================================================================
+TEST O2: series behavior at s = 0.3 (inside) vs 2.3 and 78 (canonical scales)
+========================================================================
+
+  inside  s=0.3: |partial - exact| at N=10,25,50: ['1.95e-9', '4.48e-21', '5.45e-41']
+  [PASS] O2a — partial sums converge to the exact log at s = 0.3
+  outside s=2.3: |c_n s^n| growth n=20->60: factor 3213.0
+  outside s=78.0: |c_n s^n| growth n=20->60: factor 5.267e+64
+  [PASS] O2b — series terms diverge at the matter floor (2.3) and full budget (78)
+         the BCH series cannot represent the (existing) exact log at canonical norms
+
+========================================================================
+TEST O3: method fails, object survives (1D layered chain, hop = 1/2)
+========================================================================
+
+  lam= 1.0 (inside): BCH errors order 1..4 = ['3.091e-01', '7.065e-02', '1.255e-02', '3.862e-03']  err4/err1 = 0.012
+  [PASS] O3a — inside (lam=1): order-4 partial sum beats order-1 by > 20x
+         err4/err1 = 0.0125
+  lam=12.0 (beyond): BCH errors order 1..4 = ['2.419e+02', '2.388e+02', '2.272e+02', '2.984e+02']  err4/err1 = 1.234
+  [PASS] O3b — beyond (lam=12): order-4 partial sum is WORSE than order-1
+         err4/err1 = 1.2336; the expansion method has no foothold
+  [PASS] O3c — Bloch symbol strictly positive at lam=1.0 (exact log quasilocal in principle)
+         min eig over 4001 BZ points = 3.678794e-01
+  [PASS] O3c — Bloch symbol strictly positive at lam=12.0 (exact log quasilocal in principle)
+         min eig over 4001 BZ points = 6.144186e-06
+  [PASS] O3d — exact-log tails decay exponentially at lam=1.0
+         fit rate = 1.4625 over k in [4,16], max fit residual = 0.134
+  [PASS] O3d — exact-log tails decay exponentially at lam=4.0
+         fit rate = 0.2943 over k in [10,38], max fit residual = 0.081
+
+========================================================================
+TEST O4: canonical budgets vs expansion thresholds (exact arithmetic)
+========================================================================
+
+  matter floor 2.3 vs BCH ball ln 2: gap factor = 3.3182  (> 3.0)
+  matter floor 2.3 vs pair radius 1.8012: gap factor = 1.27695  (> 1.2)
+  full budget 78 vs BCH ball ln 2: gap factor = 112.53  (> 112.0)
+  full budget 78 vs pair radius 1.8012: gap factor = 43.3051  (> 43.0)
+  [PASS] O4a — every expansion threshold is exceeded on the canonical surface
+         gaps 1.28x (floor/pair) to 112.5x (full/ball)
+  xi needed for expansion guarantees: >= 43.305 (pair radius) to >= 112.53 (BCH ball); canonical surface has xi = 1
+  [PASS] O4b — expansion route requires xi >= 43-113, off the canonical xi = 1 surface
+         the route lives on the continuous-time horn excluded by the surface selection
+
+========================================================================
+SUMMARY
+========================================================================
+  O1 minimal-pair radius derived (1.8012, closed form):   PASS
+  O2 series converges inside / diverges at 2.3 and 78:    PASS
+  O3 method fails while object stays quasilocal (chain):  PASS
+  O4 budget-vs-threshold gaps 1.28x-112.5x + xi-line:     PASS
+
+  PASS=13, FAIL=0
+  OVERALL: PASS
+
+The runner derives every asserted number (radius, gaps, tails) from closed
+forms, exact arithmetic, or explicit matrices. Literature thresholds (BCH
+ln 2 ball, Magnus pi criterion, small-step effective-Hamiltonian bounds)
+are comparator citations in the note, not derivation inputs here.
+
+
+----- stderr -----
+

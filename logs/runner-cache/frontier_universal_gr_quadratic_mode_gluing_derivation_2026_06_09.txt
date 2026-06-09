@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09.py
+runner_sha256: 952ca25e08bbb8e6bd666ec7460aee9d1d314a5cb0aad3bd9abd414c71e4f91b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+========================================================================================
+UNIVERSAL GR QUADRATIC MODE GLUING DERIVATION
+========================================================================================
+  [PASS] Euler-Lagrange equation gives V - G*omega^2 on a normal mode
+         dispersion=-G*omega**2 + V
+  [PASS] normal-mode root is omega^2 = V/G
+         L = 1/2 G qdot^2 - 1/2 V q^2, G != 0
+  [PASS] finite diagonal channel gluing is exact over rational coefficients
+         G=3/2, V=7/4, omega2=7/6, G=5/3, V=-11/6, omega2=-11/10
+  [PASS] degenerate equal-channel G makes the sign product depend only on V_trace*V_TT
+         overall-sign product signs=[-1, -1]
+  [PASS] GR lambda=1 control has both quadratic-mode signs positive for the comparator pair
+         omega_trace^2=49/400, omega_TT^2=49/200
+  [PASS] source note keeps comparator signs and physical GR action outside scope
+  [PASS] source note states no new axiom or Tier-A admission
+
+BOUNDARY
+  Derived: finite quadratic-mode gluing law omega^2 = V/G for diagonal channels.
+  Still open: comparator signs, full geometric action, continuum coefficient, G_Newton.
+
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

@@ -24,8 +24,9 @@ or predict an audit outcome.
 
 ## Role
 
-The orbit-quotient sharpening (`KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md`,
-plain-text context reference, in review as PR #3397) reduced the Koide `r`-gate
+The orbit-quotient sharpening
+([`KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md`](KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md))
+reduced the Koide `r`-gate
 to one residual atom: the slot **degree** — equivalently, at the landed fork's
 bookkeeping level, the per-doublet measure-weight class
 `Z_d ∈ {2π/g, π/g} ⟺ r ∈ {1, 1/2} ⟺ Q ∈ {1, 2/3}`. This note settles the

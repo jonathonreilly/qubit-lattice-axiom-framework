@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/frontier_adm2_global_su3_symmetry_reduction_2026_06_08.py
+runner_sha256: 120f2f0ecf953b20b7e950d6015ddf07d96fe59903e60c822148e426de210cee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.42
+status: ok
+----- stdout -----
+==============================================================================
+Part 0  The staple drift is GLOBAL-SU(3)-equivariant: drift(gUg^dag,gSg^dag)=g drift g^dag
+==============================================================================
+  [PASS] staple drift is equivariant under global conjugation (forces V -> gVg^dag)  (max dev 4.44e-16)
+==============================================================================
+Part 1  FREE link: isotropic (equivariant) increment is CENTRAL -> ADM-2 holds
+==============================================================================
+  [PASS] free-link increment measure is central (Ad-invariant): <D(V)> ~ scalar  (nonscalar-dev = 0.0006)
+==============================================================================
+Part 2  INTERACTING: quenched (fixed staple) NOT central; annealed (equivariant) IS
+==============================================================================
+  [PASS] QUENCHED single-link step (fixed staple) is NOT central -- the neighbour background picks a color direction (the honest single-link wall)  (nonscalar-dev = 0.4730)
+  [PASS] ANNEALED single-link step (staple averaged over its equivariant fluctuation) is CENTRAL -- global symmetry restored  (nonscalar-dev = 0.0007)
+  [PASS] the dichotomy is real: quenched dev >> annealed dev (factor > 20)  (quenched 0.473 vs annealed 0.0007)
+==============================================================================
+Part 3  Reduction: annealed-central step -> CLT (PR #3346) -> heat-kernel action-form
+==============================================================================
+  [PASS] annealed step's fundamental Fourier coeff is a real scalar phi (central) -> the PR #3346 convolution-CLT applies -> heat-kernel attractor  (phi = 0.9669)
+  [PASS] => ADM-2 (action-form) reduces to ADM-2' = global-SU(3)-equivariance + annealed regime  (weaker than ADM-1's LOCAL gauging; named open residual, not closed)
+==============================================================================
+Part 4  Teeth: NON-equivariant dynamics (external color field) breaks ADM-2 even annealed
+==============================================================================
+  [PASS] NON-equivariant dynamics (fixed external color field) is NOT central even ANNEALED -> ADM-2' (global-SU(3)-equivariance) is load-bearing for ADM-2  (nonscalar-dev = 0.3392)
+==============================================================================
+Part 5  ADM-2' (global symmetry) is strictly WEAKER than ADM-1 (local gauging)
+==============================================================================
+  [PASS] GLOBAL rotation leaves the hopping contraction M=I invariant (||g^dag M g - M||=0)  (5.55e-16)
+  [PASS] LOCAL rotation does NOT (||g_x^dag M g_y - M|| != 0) -- ADM-1 needs the LOCAL step  (1.229)
+  [PASS] ADM-2' invokes only the GLOBAL symmetry (Part 0-3); ADM-1 needs the LOCAL one -> ST2's residual (ADM-2') is strictly WEAKER than ST1's (ADM-1)  (global ⊂ local: ADM-2' is the weaker, more-retained gate)
+==============================================================================
+TOTAL: PASS=11 FAIL=0
+==============================================================================
+SCOPE: ADM-2 (the bi-invariant gauge-link step behind PR #3346's heat-kernel action)
+  REDUCES, via the retained GLOBAL SU(3) symmetry, to ADM-2' = the gauge dynamics is
+  global-SU(3)-equivariant + an ANNEALED (fast-equivariant-neighbour) regime.  This is
+  strictly WEAKER than ADM-1's LOCAL gauging (Part 5).  HONEST CAVEAT (Part 2): the
+  QUENCHED single-link step (fixed neighbour staple) is NOT central -- the background
+  picks a color direction -- so ADM-2 holds in the annealed regime, not per-step.  This
+  LOCATES ST2's residual (global-symmetry-shaped, weaker than ADM-1, with a timescale
+  caveat); it does NOT close ADM-2.  ADM-2' is the named open premise.  No new axiom/
+  import (global SU(3) = retained commutant; CLT consequence = PR #3346 / standard math).
+  NOTE: the 'ADM-2 is closer to closed than ADM-1' reading should be panel-checked before
+  it propagates -- this runner establishes only the reduction + the quenched/annealed wall.
+
+----- stderr -----
+

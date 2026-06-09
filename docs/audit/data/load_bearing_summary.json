@@ -19,8 +19,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 100.437,
-      "transitive_descendants": 1385
+      "load_bearing_score": 100.438,
+      "transitive_descendants": 1386
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
@@ -139,7 +139,7 @@
     {
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
       "criticality": "critical",
-      "load_bearing_score": 32.547,
+      "load_bearing_score": 32.047,
       "transitive_descendants": 1057
     },
     {

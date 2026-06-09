@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3037 |
-| Applied audit verdicts | 1337 |
-| Retained-grade rows, including boxed decorations | 1226 |
+| Applied audit verdicts | 1334 |
+| Retained-grade rows, including boxed decorations | 1224 |
 | Retained positive theorems | 209 |
-| Retained no-go rows | 202 |
-| Retained bounded rows | 766 |
+| Retained no-go rows | 201 |
+| Retained bounded rows | 765 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1383 |
+| Unaudited rows | 1386 |
 | Retained-pending-chain rows | 12 |
-| Audited conditional rows | 14 |
+| Audited conditional rows | 13 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,13 +33,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1385 |
-| Ready rows | 56 |
+| Total pending rows | 1388 |
+| Ready rows | 57 |
 | Cycle-break targets | 15 |
 | Critical pending | 330 |
 | High pending | 253 |
-| Medium pending | 375 |
-| Leaf pending | 427 |
+| Medium pending | 376 |
+| Leaf pending | 429 |
 
 Next ready rows by queue order:
 
@@ -50,7 +50,7 @@ Next ready rows by queue order:
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md) - medium; unaudited
 - [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
-- [`dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
+- [`gate_b_connectivity_tolerance_note`](../../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

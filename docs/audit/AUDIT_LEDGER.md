@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 797 |
+| **retained_bounded** | 798 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1330 |
+| unaudited | 1329 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1236 |
+| `audited_clean` | 1237 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1645 |
+| `unaudited` | 1644 |
 
 | claim_type | count |
 |---|---:|
@@ -116,13 +116,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 803 | 38.65 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 694 | 38.44 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
-| 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 904 | 34.82 | `audited_clean` | **retained_bounded** |
-| 16 | `three_generation_structure_note` | bounded_theorem | critical | 867 | 34.76 | `audited_clean` | **retained_bounded** |
-| 17 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 277 | 34.62 | `unaudited` | unaudited |
-| 18 | `cpt_exact_note` | positive_theorem | critical | 1134 | 34.15 | `audited_clean` | **retained** |
-| 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 700 | 32.95 | `unaudited` | unaudited |
-| 20 | `minimal_axioms_2026-04-11` | meta | critical | 1115 | 32.62 | `unaudited` | meta |
-| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1057 | 32.05 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1057 | 35.05 | `audited_clean` | **retained_bounded** |
+| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 904 | 34.82 | `audited_clean` | **retained_bounded** |
+| 17 | `three_generation_structure_note` | bounded_theorem | critical | 867 | 34.76 | `audited_clean` | **retained_bounded** |
+| 18 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 277 | 34.62 | `unaudited` | unaudited |
+| 19 | `cpt_exact_note` | positive_theorem | critical | 1134 | 34.15 | `audited_clean` | **retained** |
+| 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 700 | 32.95 | `unaudited` | unaudited |
+| 21 | `minimal_axioms_2026-04-11` | meta | critical | 1115 | 32.62 | `unaudited` | meta |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 697 | 31.45 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 825 | 31.19 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.34 | `unaudited` | unaudited |
@@ -1076,6 +1076,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_all_r_boundary_link_disk_theorem_note_2026-05-30` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -15492,6 +15493,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited parent, marked retained_bounded, supplies the singular-mode matrix convention. From that input, the determinant, eigenvalue signs, and squared-spectrum conclusion follow by standard 2x2 real-symmetric matrix algebra.
 - **rationale:** The packet closes only as an algebraic tightening over a single retained_bounded parent convention plus standard mathematics. The runner performs finite 2x2 algebra checks at sampled positive masses and does not import external comparators or introduce a new first-principles construction. The source note's own scope excludes the Grassmann/Berezin bridge, gauge extensions, and any lift of the parent status. Under the tie-break rule, this is decoration rather than an independent clean bounded theorem.
 - **decoration parent:** `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
+- **auditor confidence:** high
+
+### `rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06`
+
+- **Note:** [`RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md`](../../docs/RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Correcting the Wilson reflection-plane sign to the ferromagnetic weight exp(+beta Re Tr) gives a nonnegative character-coefficient plane Gram kernel, and the stated pure-gauge temporal-gauge A_+^(2) reflected Gram is PSD on the bounded surfaces claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-140250-16ea0da97a-rp_wilson_temporal_gauge_bri`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For beta >= 0, exp(beta Re chi_F) = exp((beta/2)chi_F) exp((beta/2)chi_Fbar) expands into irreducible characters with nonnegative coefficients because tensor powers and fusion products have nonnegative integer multiplicities.  _(class `A`)_
+- **chain closes:** True — The independent algebraic check closes: uniform convergence of the exponential character series permits termwise character projection, and every coefficient is a nonnegative sum of tensor/fusion multiplicities. Inserting that positive kernel into the reflected integral gives G = W diag(kappa) W^dag with kappa >= 0, so the PSD conclusion follows without external numeric input.
+- **rationale:** The sign repair is mathematically correct: the failed antiferromagnetic exp(-beta Re) coefficient is negative already on Z_2, while the Wilson Boltzmann sign gives +sinh beta. The load-bearing positivity theorem is not the runner's Monte Carlo exhibit; it is the representation-theoretic tensor/fusion argument, which does prove nonnegative character coefficients for exp(beta Re chi_F). The finite runner checks substantively compute the advertised sign, finite Fourier, Gram-factorization, and non-PSD control surfaces, and the cited authorities in the packet are retained-grade.
 - **auditor confidence:** high
 
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`

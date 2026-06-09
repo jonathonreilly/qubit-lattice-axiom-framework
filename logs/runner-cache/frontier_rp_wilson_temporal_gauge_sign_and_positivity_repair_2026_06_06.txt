@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py
+runner_sha256: 7cf9638e41ef5bfadb5920787fc63802e0ed25888684e10e8ebd48bc9a94767d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.54
+status: ok
+----- stdout -----
 ==========================================================================================
 RP Wilson temporal-gauge bridge: SIGN REPAIR + manifestly-positive character theorem
 repairs audited_failed AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_..._2026-06-05
@@ -68,3 +76,6 @@ Summary
 ==========================================================================================
 TOTAL: 17 PASS / 0 FAIL
 ==========================================================================================
+
+----- stderr -----
+

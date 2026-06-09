@@ -46613,10 +46613,6 @@
       "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
-      "from": "repo.front_door_status",
-      "to": "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08"
-    },
-    {
       "from": "repo.repo_organization",
       "to": "key_terminology"
     },
@@ -90135,11 +90131,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08"
+        "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1b50581fe52f4208a6180d51e45660157275bf69bea41c6220e06cadaee60ade",
+      "note_hash": "538c1fdaf9c56df58cf8bf1e46167144b9f320c7e77bb50fd93bfd1cfb9a11f0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"
@@ -103896,8 +103891,8 @@
       "open_gate": 157,
       "positive_theorem": 618
     },
-    "edge_count": 11756,
-    "leaf_count": 1050,
+    "edge_count": 11755,
+    "leaf_count": 1051,
     "node_count": 3181,
     "root_count": 1033,
     "runners_with_path": 2766

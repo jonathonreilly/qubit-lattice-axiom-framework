@@ -156,14 +156,14 @@ bridge notes/runners contain the load-bearing `N_taste = 16`, `W(J) = log det(D
 statements, and that both bridge caches are SHA-fresh and clean-exit:
 
 ```text
-TOTAL: 50 PASS / 0 FAIL
+TOTAL: 53 PASS / 0 FAIL
 TOTAL: 15 PASS / 0 FAIL
 ```
 
 After the parent algebra checks, the primary runner reports:
 
 ```text
-TOTAL: PASS=90, FAIL=0
+TOTAL: PASS=93, FAIL=0
 ```
 
 This is a bridge-packet repair only. It does not identify `R_lattice` with

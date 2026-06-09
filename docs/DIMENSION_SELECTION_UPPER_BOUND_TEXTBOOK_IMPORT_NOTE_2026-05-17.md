@@ -1,33 +1,45 @@
-# Dimension Selection Upper-Bound — Named Non-Derivation Imports
+# Dimension Selection Upper-Bound — Native Stable-Orbit Support Wrapper
 
 **Date:** 2026-05-17
 **Claim type:** bounded_theorem
-**Status:** bounded named-import wrapper for the two textbook results
-that supply the `d <= 3` upper bound complementing the
-`d >= 3` lower-bound result in
-[DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md).
+**Status:** bounded support wrapper for the native stable-circular-orbit
+upper-bound edge and the bounded Coulomb scaling companion edge that
+complement the `d >= 3` lower-bound result in
+[DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md). The legacy
+filename is retained for citation stability.
 **Status authority:** independent audit lane only.
 
 ## Purpose
 
-This wrapper note documents two classical-physics results as named
-non-derivation imports so the
-[DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md) lane can
-register a one-hop dependency for the `d <= 3` upper-bound argument
-rather than carry it as an unattributed textbook reference.
+This wrapper note records the source-side upper-bound support edges consumed by
+the dimension-selection lane. The decisive edge for the current finite
+lower-bound packet is not the full Bertrand closed-orbit theorem: it is the
+native stable-circular-orbit calculation in
+[`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md).
+That note derives the continuum Green-kernel shape
+`V(r) = -k/r^(d-2)` for integer `d >= 3` and the effective-potential sign
+`k(d-2)(4-d)/r_c^d`, so stable circular orbits occur only at integer `d = 3`
+among the current checked set. The full Bertrand theorem remains useful
+classical-mechanics context, but it is not load-bearing for the finite-set
+upper-bound composition recorded here.
 
-## 2026-06-08 dependency-edge source repair
+The companion atomic route remains bounded support: the Coulomb scaling note
+excludes `d >= 5` for the stated Green-kernel quadratic form, leaves `d = 4`
+marginal, and does not by itself select `d = 3` from the current lower-bound
+packet.
+
+## 2026-06-09 native stable-orbit wrapper refresh
 
 The source-side repair note
 [`DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md`](DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md)
-turns the wrapper's textbook/import handle into an auditable dependency edge
-without broadening the science. It wires this wrapper to the current one-hop
-bounded support packets and composition gate:
+now records this wrapper as an auditable dependency edge without relying on the
+full closed-orbit Bertrand theorem. It wires this wrapper to the current
+one-hop bounded support packets and composition gate:
 
 | Role | Source packet | Runner/cache |
 | --- | --- | --- |
-| Bertrand / stable-orbit support | [`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) | [`scripts/bertrand_stable_orbit_green_kernel_bridge.py`](../scripts/bertrand_stable_orbit_green_kernel_bridge.py), [`logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt`](../logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt) |
-| Atomic / Coulomb support | [`COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) | [`scripts/frontier_coulomb_stability_scaling_repair.py`](../scripts/frontier_coulomb_stability_scaling_repair.py), [`logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt`](../logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt) |
+| Native stable-circular-orbit upper edge | [`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) | [`scripts/bertrand_stable_orbit_green_kernel_bridge.py`](../scripts/bertrand_stable_orbit_green_kernel_bridge.py), [`logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt`](../logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt) |
+| Bounded Coulomb scaling companion edge | [`COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) | [`scripts/frontier_coulomb_stability_scaling_repair.py`](../scripts/frontier_coulomb_stability_scaling_repair.py), [`logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt`](../logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt) |
 | Current finite-set composition gate | [`D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md`](D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md) | [`scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py`](../scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py), [`logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt`](../logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt) |
 
 The repair note's paired runner is
@@ -36,94 +48,106 @@ with cache
 [`logs/runner-cache/dimension_upper_bound_dependency_edge_repair_2026_06_08.txt`](../logs/runner-cache/dimension_upper_bound_dependency_edge_repair_2026_06_08.txt).
 
 This dependency repair does not claim a complete framework-internal derivation
-of Bertrand's theorem, atomic stability, or a full dimension-selection theorem.
-It only makes the bounded support edges and finite-set composition visible for
-independent audit.
+of Bertrand's closed-orbit theorem, atomic stability, a physical
+electromagnetic sector, or a full dimension-selection theorem. It only makes
+the bounded support edges and finite-set composition visible for independent
+audit.
 
-## Imports covered
+## Support Edges Covered
 
-### 1. Bertrand's theorem (1873) — orbital-stability upper bound
+### 1. Native stable-circular-orbit edge
 
-Statement: in dimension `d = 3`, the only central force laws producing
-closed stable bounded orbits under classical Newtonian dynamics are
-the inverse-square law `F ~ 1 / r^2` and the harmonic-oscillator law
-`F ~ r`. For an inverse-power gravity law `F ~ 1 / r^{d - 1}` from
-the d-dimensional Poisson equation:
+Load-bearing statement: for integer `d >= 3`, the native support note derives
+the radial Green-kernel potential shape
 
-- `d = 3` gives `F ~ 1 / r^2`, the Bertrand-allowed case.
-- `d >= 4` gives `F ~ 1 / r^{d - 1}` with falloff steeper than
-  `1 / r^2`, for which perturbations of closed orbits grow exponentially
-  (no bound orbits exist; small radial perturbations cause spiral
-  inward or outward).
+```text
+V(r) = -k / r^(d-2),     k > 0,
+```
 
-Therefore stable bounded orbits under gravity require `d <= 3`.
+and then computes the circular-orbit stability sign
 
-Reference: J. Bertrand, "Théorème relatif au mouvement d'un point
-attiré vers un centre fixe," *C. R. Acad. Sci. Paris* **77**, 849
-(1873). Modern textbook treatment: H. Goldstein, *Classical
-Mechanics*, 3rd ed. (Addison-Wesley 2002), §3.6.
+```text
+d^2 V_eff / dr^2 |_(r_c) = k(d-2)(4-d) / r_c^d.
+```
 
-### 2. Atomic stability upper bound (Tangherlini 1963; Ehrenfest 1917)
+For integer `d >= 3`, this sign is positive only for `d = 3`, marginal for
+`d = 4`, and negative for `d >= 5`. Therefore the stable-circular-orbit
+upper edge is `d <= 3` on the current lower-bound candidate set
+`{3,4,5}`.
 
-Statement: hydrogen-like atoms in `d`-dimensional space (with Coulomb
-potential `V ~ -1 / r^{d - 2}` for `d >= 3`) admit normalizable bound
-ground states only for `d <= 4`, and the standard atomic spectrum
-with bound states accumulating at threshold `E -> 0` exists only for
-`d = 3`. For `d >= 5` the Coulomb potential is so singular at the
-origin that the Schrödinger Hamiltonian is not bounded below and no
-stable ground state exists.
+Parallel reference context: Bertrand's theorem says that the inverse-square
+and harmonic-oscillator laws are the central-force laws for which all bounded
+orbits are closed. That full closed-orbit theorem is not consumed by this
+finite-set upper-bound composition and remains a standard classical-mechanics
+reference rather than a load-bearing import.
 
-Modern textbook references:
-- F. R. Tangherlini, "Schwarzschild field in `n` dimensions and the
-  dimensionality of space problem," *Nuovo Cimento* **27**, 636 (1963).
-- P. Ehrenfest, "In what way does it become manifest in the
-  fundamental laws of physics that space has three dimensions?"
-  *Proc. Amsterdam Acad.* **20**, 200 (1917).
-- M. Bures & P. Siegl, "Hydrogen atom in space with a compactified
-  extra dimension and potential defined by Gauss's law," *Annals
-  Phys.* **354**, 316 (2015) — discussion of the bound-state existence
-  threshold for the higher-dimensional Coulomb potential.
+### 2. Bounded Coulomb scaling companion edge
 
-Therefore stable hydrogen-like atoms require `d <= 4`, with the
-canonical infinite-bound-state Coulomb spectrum existing only at
-`d = 3`.
+Load-bearing statement: the companion support note proves the Green-kernel
+scaling lemma for the stated quadratic form
 
-## Upper-bound conclusion
+```text
+Q_d[psi_lambda] = lambda^2 T - lambda^(d-2) U.
+```
 
-Combined with the runner-verified `d >= 3` lower bound from
+This excludes `d >= 5` by ultraviolet collapse, identifies `d = 4` as
+marginal, and leaves `d = 3` not collapsed by this scaling test. Composed with
+the current finite lower-bound packet, it gives `{3,4}` and is therefore
+compatible companion support rather than the decisive unique-dimension
+selector.
+
+Parallel reference context: Tangherlini/Ehrenfest-style dimensional atomic
+stability and the stronger hydrogenic `d = 3` spectral statement remain
+outside this wrapper unless separately derived or explicitly scoped.
+
+## Upper-Bound Conclusion
+
+Combined with the runner-verified finite lower-bound packet from
 self-consistent propagator + gravitational field in
-[DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md), the two
-textbook imports give the matching upper bound `d <= 3` (from
-Bertrand's theorem) and `d <= 4` (from atomic stability), yielding the
-joint conclusion `d = 3`.
+[DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md), the native
+stable-circular-orbit edge gives
 
-## What this note does NOT claim
+```text
+{3,4,5} intersect {d : d <= 3} = {3}.
+```
 
-- This is NOT a re-derivation of Bertrand's theorem.
-- This is NOT a re-derivation of the atomic-stability upper bound.
+The bounded Coulomb scaling companion gives
+
+```text
+{3,4,5} intersect {d : d <= 4} = {3,4}.
+```
+
+Thus the current unique finite-set composition is supplied by the native
+stable-circular-orbit edge, while the Coulomb scaling route remains compatible
+bounded support.
+
+## What This Note Does NOT Claim
+
+- This is NOT a re-derivation of the full Bertrand closed-orbit theorem.
+- This is NOT a re-derivation of the full atomic-stability upper bound,
+  a physical electromagnetic sector, or a hydrogenic spectrum theorem.
 - This is NOT a framework-level derivation of `d = 3` from `Cl(3)` on
   `Z^3` alone — `Cl(3) ⊗ Z^3` has `d = 3` built into the substrate, so
   the framework does not need a separate dimension-selection theorem.
   The DIMENSION_SELECTION_NOTE lane is a complementary self-consistency
   check, not a framework derivation.
-- The bounded scope is the named non-derivation import only.
+- This is NOT a repo-wide promotion, audit verdict, or ledger edit.
 
 ## Downstream usage
 
 This wrapper is consumed by:
 
-- [DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md) — supplies the upper-bound (Bertrand's theorem + atomic-stability) authority complementing the lower-bound (self-consistent gravity / propagator) runner result.
+- [DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md) — supplies the upper-bound native stable-circular-orbit edge and bounded Coulomb companion edge complementing the lower-bound (self-consistent gravity / propagator) runner result.
 
 ## Boundary
 
-This wrapper note is a named-import-only bounded theorem covering two
-textbook physics results. It does not claim:
+This wrapper note is a bounded source-support wrapper. It does not claim:
 
-- a framework derivation of either Bertrand's theorem or atomic
-  stability;
+- a framework derivation of the full Bertrand closed-orbit theorem;
+- a framework derivation of full atomic stability or the hydrogenic spectrum;
 - closure of any downstream dimension-selection theorem.
 
-Its only function is to provide a citeable one-hop authority for the
-two textbook imports so downstream notes register them cleanly
-instead of carrying them as accepted-mathematics-and-physics
-infrastructure without an audit-lane handle.
+Its function is to provide a citeable one-hop authority for the native
+stable-circular-orbit upper edge and the bounded Coulomb scaling companion edge
+so downstream notes register the exact support they consume instead of carrying
+an unnecessary textbook-import dependency.

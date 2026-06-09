@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the dimension upper-bound dependency-edge repair note."""
+"""Verify the dimension upper-bound native-support dependency repair note."""
 
 from __future__ import annotations
 
@@ -105,8 +105,8 @@ def source_anchor_checks() -> None:
         and "bare_retained_allowed: false" in repair,
     )
     report(
-        "wrapper has 2026-06-08 repair section",
-        "2026-06-08 dependency-edge source repair" in wrapper
+        "wrapper has 2026-06-09 native support refresh section",
+        "2026-06-09 native stable-orbit wrapper refresh" in wrapper
         and "one-hop bounded support packets" in flat(wrapper),
     )
     report(
@@ -115,8 +115,9 @@ def source_anchor_checks() -> None:
         and "not a unique-dimension\ntheorem" in lower,
     )
     report(
-        "Bertrand support remains bounded",
-        "does not retire the Bertrand theorem import completely" in bertrand
+        "Bertrand support supplies native edge while preserving full-theorem boundary",
+        "load-bearing stable-circular-orbit upper\nedge" in bertrand
+        and "does not retire the full Bertrand closed-orbit theorem import" in bertrand
         and "not claim a complete framework-internal proof" in bertrand,
     )
     report(
@@ -141,19 +142,19 @@ def source_anchor_checks() -> None:
 def composition_checks() -> None:
     lower_set = {3, 4, 5}
     checked = set(range(1, 9))
-    bertrand_upper = {d for d in checked if d <= 3}
+    native_stable_upper = {d for d in checked if d <= 3}
     atomic_weak_upper = {d for d in checked if d <= 4}
     atomic_strict = {3}
 
     report("lower support set is {3,4,5}", lower_set == {3, 4, 5})
-    report("Bertrand upper set is d<=3", bertrand_upper == {1, 2, 3})
+    report("native stable-orbit upper set is d<=3", native_stable_upper == {1, 2, 3})
     report("weak atomic upper set is d<=4", atomic_weak_upper == {1, 2, 3, 4})
-    report("lower intersect Bertrand is {3}", lower_set & bertrand_upper == {3})
+    report("lower intersect native stable-orbit edge is {3}", lower_set & native_stable_upper == {3})
     report("lower intersect weak atomic is {3,4}", lower_set & atomic_weak_upper == {3, 4})
     report("lower intersect strict atomic spectrum is {3}", lower_set & atomic_strict == {3})
     report(
-        "Bertrand route is decisive under weak atomic scope",
-        (lower_set & bertrand_upper) == {3}
+        "native stable-orbit route is decisive under weak atomic scope",
+        (lower_set & native_stable_upper) == {3}
         and (lower_set & atomic_weak_upper) != {3},
     )
     report("atomic route is compatible with selected d=3", 3 in (lower_set & atomic_weak_upper))

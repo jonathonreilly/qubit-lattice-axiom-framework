@@ -1,9 +1,9 @@
-# D3 Upper-Bound Import Scope Gate
+# D3 Upper-Bound Native Support Scope Gate
 
 **Date:** 2026-06-06
 **Claim type:** bounded_theorem
-**Status:** exact-support branch-local import-scope gate; not an audit
-verdict and not a repo-wide dimension-selection promotion.
+**Status:** exact-support branch-local native-support scope gate; not an
+audit verdict and not a repo-wide dimension-selection promotion.
 **Primary runner:**
 [`scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py`](../scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py)
 **Runner output:**
@@ -18,19 +18,21 @@ selection packet:
    binding result is that the runner criteria fail for `d <= 2` and pass for
    the checked dimensions `d = 3,4,5`.
 2. `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md` is a
-   named non-derivation import wrapper. It supplies external upper-bound
-   mathematics rather than a framework-internal proof.
+   legacy-named bounded support wrapper. Its current load-bearing
+   upper-bound edge is the native stable-circular-orbit calculation, while
+   the bounded Coulomb scaling calculation supplies compatible companion
+   support.
 3. The decisive uniqueness step, on the current packet, is the intersection of
-   the finite lower-bound support `{3,4,5}` with the Bertrand upper bound
-   `d <= 3`, giving `{3}`.
+   the finite lower-bound support `{3,4,5}` with the native stable-circular-
+   orbit upper edge `d <= 3`, giving `{3}`.
 4. The weaker atomic-stability upper bound `d <= 4`, composed with the same
    lower-bound support, gives `{3,4}`. Atomic stability is therefore companion
    support here, not the unique-dimension selector unless the stronger
    `d = 3` spectral statement is separately admitted and scoped.
 
 The gate prevents two overreads: "atomic stability alone selects `d = 3` from
-the current lower-bound packet" and "the framework has internally derived the
-upper-bound side." Neither follows from the current surfaces.
+the current lower-bound packet" and "the framework has internally derived a
+full dimension-selection theorem." Neither follows from the current surfaces.
 
 ## Existing Surfaces
 
@@ -48,26 +50,29 @@ It also says the upper-bound wrapper is separate and not load-bearing for the
 bounded lower-bound claim. Any future attempt to derive `d <= 3` inside the
 framework must be reviewed separately.
 
-### Named upper-bound import wrapper
+### Upper-bound support wrapper
 
-`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md` is titled
-"Named Non-Derivation Imports." Its load-bearing role is to record two named
-external inputs:
+`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md` keeps its
+legacy filename, but its current load-bearing role is to record two bounded
+support edges:
 
-| Import | Wrapper scope | Current composition with `{3,4,5}` |
+| Support edge | Wrapper scope | Current composition with `{3,4,5}` |
 |---|---|---|
-| Bertrand stable-orbit upper bound | Stable bounded gravitational orbits require `d <= 3` | `{3}` |
-| Atomic-stability upper bound | Stable hydrogen-like atoms require `d <= 4`; the canonical infinite-bound-state Coulomb spectrum exists only at `d = 3` | `{3,4}` for the weaker stability bound; `{3}` only if the stronger spectral statement is separately used |
+| Native stable-circular-orbit upper edge | The Green-kernel/effective-potential calculation gives stable circular orbits only at integer `d = 3`; `d = 4` is marginal and `d >= 5` is unstable | `{3}` |
+| Bounded Coulomb scaling companion edge | The Green-kernel quadratic-form scaling excludes `d >= 5`, leaves `d = 4` marginal, and does not prove the physical `d = 3` hydrogen spectrum | `{3,4}` for the weaker scaling/stability bound; `{3}` only if a stronger spectral statement is separately used |
 
-The wrapper explicitly does not re-derive Bertrand's theorem, does not
-re-derive the atomic-stability upper bound, and does not give a
-framework-level derivation of `d = 3` from `Cl(3)` on `Z^3` alone.
+The wrapper explicitly does not claim the full Bertrand closed-orbit theorem,
+does not re-derive full atomic stability or a physical electromagnetic sector,
+and does not give a framework-level derivation of `d = 3` from `Cl(3)` on
+`Z^3` alone.
 
 ### Bounded support notes
 
 `BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md` gives bounded
 support for the elementary Green-kernel/effective-potential part of the
-stable-orbit route. It does not retire the full Bertrand theorem import.
+stable-orbit route. This retires the decisive stable-circular-orbit edge for
+the current finite-set composition, while the full Bertrand closed-orbit
+theorem remains standard context and is not consumed by the gate.
 
 `COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md` gives bounded
 support for a Green-kernel scaling lemma under admitted continuum premises. It
@@ -89,30 +94,32 @@ L_runner intersect {d : d <= 3} = {3}
 L_runner intersect {d : d <= 4} = {3,4}
 ```
 
-So the current unique-`d = 3` composition depends on the Bertrand upper-bound
-import. Atomic stability supplies compatible companion support, but the weaker
-`d <= 4` statement cannot by itself select `d = 3` from the present lower-bound
-runner packet.
+So the current unique-`d = 3` composition depends on the native
+stable-circular-orbit upper-bound edge. Atomic stability supplies compatible
+companion support, but the weaker `d <= 4` statement cannot by itself select
+`d = 3` from the present lower-bound runner packet.
 
 ## What This Unlocks
 
 - A reviewable one-hop gate for later D3 status work: reviewers can ask
-  whether they accept the named Bertrand import, demand a framework-internal
-  replacement for it, or carry the chain as bounded import-supported context.
+  whether the native stable-circular-orbit edge is sufficient for the current
+  finite-set composition, while keeping the full Bertrand theorem as
+  non-load-bearing context.
 - A clean separation between the lower-bound runner packet and the upper-bound
-  named imports.
+  support edges.
 - A guard against using the atomic-stability lane as a silent uniqueness
   selector when only the weaker `d <= 4` stability statement is in scope.
-- A narrow target for future work: retire the Bertrand import if the framework
-  can derive a stable-orbit upper bound internally, or keep the dimension lane
-  explicitly import-supported.
+- A narrow target for future work: derive the full closed-orbit theorem or the
+  stronger hydrogenic `d = 3` spectral statement only if a later lane actually
+  needs those stronger claims.
 
 ## Non-Claims
 
 This note does not claim:
 
-- a framework-internal derivation of Bertrand's theorem;
-- a framework-internal derivation of atomic stability;
+- a framework-internal derivation of the full Bertrand closed-orbit theorem;
+- a framework-internal derivation of full atomic stability or the hydrogenic
+  spectrum;
 - a full dimension-selection theorem from `A_min`;
 - a derivation of a `Z^d` substrate from the current `Z^3` substrate;
 - a repo-wide audit verdict;

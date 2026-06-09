@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/frontier_action_form_continuum_removal_scoping_2026_06_08.py
+runner_sha256: bf15a97c2c8b8448d1dbed558f9ffe0c98e9d5ef8b50260e1a4ab972d6754e17
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+==============================================================================
+Part 0  SU(2) closed forms: Wilson I_2/I_1, HK exp(-3t/8), Manton numeric
+==============================================================================
+  [PASS] SU(2) Wilson <P> = I_2(beta)/I_1(beta) closed form (beta=4)  (<P>_W(4) = 0.658047)
+  [PASS] SU(2) HK series reproduces closed form exp(-3t/8) (t=0.7)  (series=0.769126, exp(-3t/8)=0.769126)
+==============================================================================
+Part 1  (A) Leading order (a->0): the three actions AGREE (matched family)
+==============================================================================
+  [PASS] SU(2) beta=20: all three <P> -> 1 and agree (spread small)  (W=0.9260 HK=0.9277 M=0.9289 spread=0.0029)
+  [PASS] SU(2) beta=40: all three <P> -> 1 and agree (spread small)  (W=0.9627 HK=0.9632 M=0.9635 spread=0.0008)
+  [PASS] SU(2) beta=80: all three <P> -> 1 and agree (spread small)  (W=0.9813 HK=0.9814 M=0.9815 spread=0.0002)
+  [PASS] matched small-field quadratic coefficients equal (c_W=c_HK=c_M)  (c_W=0.7500 c_HK=0.7500 c_M=0.7500)
+==============================================================================
+Part 2  (B) Finite physical beta: the three actions are DISTINCT theories
+==============================================================================
+  [PASS] SU(2) beta=6 matched: Wilson != HK (distinct <P>)  (W=0.76273 HK=0.77880 |diff|=0.01607)
+  [PASS] SU(2) beta=6 matched: three-action spread is O(1e-2..1e-1), >> eps_witness  (spread=0.02692 = 90 x eps_witness)
+==============================================================================
+Part 3  SU(3) physical point: reproduce no-go numbers (Wilson 0.4225, HK e^-2/3)
+==============================================================================
+  [PASS] SU(3) Wilson <P>(beta=6) = 0.4225317396 (reproduces no-go, V=1 PF certified)  (<P>_W = 0.4225317396)
+  [PASS] SU(3) HK <P>(t=1) = exp(-2/3) = 0.5134171190 (C_2(fund)=4/3)  (<P>_HK = 0.5134171190)
+  [PASS] SU(3) Wilson/HK spread ~ 0.091 (21% relative), >> eps_witness  (spread=0.09089 = 303 x eps_witness, rel=21.5%)
+==============================================================================
+Part 4  (C) Teeth: Wilson/HK spread -> 0 as a->0 (beta->inf), O(1) at finite beta
+==============================================================================
+   SU(2) matched-family Wilson/HK spread vs beta:
+     beta=  3.0  spread=0.03861  (    129 x eps_witness)
+     beta=  6.0  spread=0.01607  (     54 x eps_witness)
+     beta= 12.0  spread=0.00465  (     15 x eps_witness)
+     beta= 24.0  spread=0.00123  (      4 x eps_witness)
+     beta= 48.0  spread=0.00032  (      1 x eps_witness)
+     beta= 96.0  spread=0.00008  (      0 x eps_witness)
+  [PASS] spread is monotonically DECREASING in beta (-> 0 as a->0)  (spreads=['0.0386', '0.0161', '0.0046', '0.0012', '0.0003', '0.0001'])
+  [PASS] spread -> 0 in the a->0 (large-beta) limit (regulator reading: actions coincide)  (spread(beta=96)=8.03e-05 < eps_witness)
+  [PASS] spread is O(1) >> eps_witness at finite physical beta (distinct theories)  (spread(beta=6)=0.0161)
+  [PASS] spread vanishes as a positive power of the spacing (~1/beta): slope > 0.9  (log-log slope d ln(spread)/d ln(1/beta) = 1.952)
+==============================================================================
+Part 5  (D) Relocation: distinct => selection well-posed (physical); coincide a->0
+==============================================================================
+  [PASS] a SECOND observable (plaquette variance) also separates Wilson/HK at beta=6 (selection well-posed: candidates observably distinct)  (var_W=0.03689 var_HK=0.02853)
+  [PASS] CONTROL: at a->0 the candidates coincide on <P> AND variance (no-go correct in the regulator frame)  (actions agree as a->0; distinctness is purely a finite-spacing (physical) effect)
+==============================================================================
+TOTAL: PASS=17 FAIL=0
+runner_check_breakdown = {A: 17, B: 0, C: 0, D: 0, total_pass: 17}
+==============================================================================
+SCOPE: This runner SCOPES (does not refute) the action-form uniqueness no-go.
+  Its load-bearing premise -- the three actions coincide via their shared a->0
+  continuum limit -- is shown to be a CONTINUUM-REMOVAL statement: the actions
+  agree only as a->0 (spread -> 0, Part 4) and are DISTINCT theories at the
+  physical evaluation point (Part 3: 21% spread, >> eps_witness).  On the
+  framework's BASELINE physical-lattice semantics (a fixed, not removed),
+  action-selection is therefore a WELL-POSED open question, not a no-go.
+  It does NOT derive that HK is selected (the open follow-on = the no-go's own
+  Step-3b Brownian/heat-semigroup criterion, reinstated as well-posed), claims
+  NO continuum limit, and imports nothing (physical-lattice reading is baseline).
+
+----- stderr -----
+

@@ -1,6 +1,7 @@
 # The Hierarchy Magnitude's 4π Boundary Is Coupling/Geometry, Not Gaussian Measure
 
-**Date:** 2026-06-06; source-boundary repair 2026-06-08
+**Date:** 2026-06-06; source-boundary repair 2026-06-08; runner-marker
+repair 2026-06-09
 **Type:** boundary correction / status relocation
 **Claim type:** bounded_theorem
 **Status:** source-side bounded support. This row repairs the 4π-vs-2π boundary
@@ -33,6 +34,17 @@ bare_retained_allowed: false
 The repair originally stacked on the temporal-count source packet from #3260.
 That packet has now landed on `main`, so this row consumes it as current source
 context while still requiring independent audit for this 4π boundary.
+
+## 2026-06-09 Runner-Marker Repair
+
+The latest audit found that the source-boundary math closed but the completed
+runner/cache still checked three stale minimal-block readout markers from the
+pre-cleanup wording. The minimal-block row is now a route-specific
+`retained_no_go` packet:
+`MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06` proves that Record plus RP
+two-step positivity does not select `L_t=2` over the OS continuum, while
+leaving a future UV/minimal-block readout bridge open. The runner now checks
+that current no-go wording instead of the obsolete demotion strings.
 
 ## Statement
 
@@ -77,8 +89,8 @@ does not prove the physical coupling/readout/dressing chain.
 | `Z^3` Green-kernel 4π geometry | [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md), runner [`lattice_greens_z3_asymptotic_normalization_certificate.py`](../scripts/lattice_greens_z3_asymptotic_normalization_certificate.py), cache [`lattice_greens_z3_asymptotic_normalization_certificate.txt`](../logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt) | `retained_bounded` |
 | native BZ Haar normalization | [`BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26`](BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md), runner [`bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py`](../scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py), cache [`bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.txt`](../logs/runner-cache/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.txt) | `retained_bounded` |
 | `g_bare` constraint/convention restatement | [`G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10`](G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md), runner [`frontier_g_bare_constraint_vs_convention_restatement_abstract_identity_narrow.py`](../scripts/frontier_g_bare_constraint_vs_convention_restatement_abstract_identity_narrow.py), cache [`frontier_g_bare_constraint_vs_convention_restatement_abstract_identity_narrow.txt`](../logs/runner-cache/frontier_g_bare_constraint_vs_convention_restatement_abstract_identity_narrow.txt) | `retained` |
-| exponent count-16 boundary | [`MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06`](MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md), runner [`magnitude_temporal_factor_is_count_not_rate_2026_06_06.py`](../scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py), cache [`magnitude_temporal_factor_is_count_not_rate_2026_06_06.txt`](../logs/runner-cache/magnitude_temporal_factor_is_count_not_rate_2026_06_06.txt) | stacked source-side bounded support; independent audit still required |
-| minimal-block readout selection | [`MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06`](MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md), runner [`magnitude_reads_minimal_record_block_2026_06_06.py`](../scripts/magnitude_reads_minimal_record_block_2026_06_06.py), cache [`magnitude_reads_minimal_record_block_2026_06_06.txt`](../logs/runner-cache/magnitude_reads_minimal_record_block_2026_06_06.txt) | demoted/flagged-open readout selection |
+| exponent count-16 boundary | [`MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06`](MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md), runner [`magnitude_temporal_factor_is_count_not_rate_2026_06_06.py`](../scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py), cache [`magnitude_temporal_factor_is_count_not_rate_2026_06_06.txt`](../logs/runner-cache/magnitude_temporal_factor_is_count_not_rate_2026_06_06.txt) | `retained_bounded` count-not-rate boundary |
+| minimal-block readout selection | [`MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06`](MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md), runner [`magnitude_reads_minimal_record_block_2026_06_06.py`](../scripts/magnitude_reads_minimal_record_block_2026_06_06.py), cache [`magnitude_reads_minimal_record_block_2026_06_06.txt`](../logs/runner-cache/magnitude_reads_minimal_record_block_2026_06_06.txt) | `retained_no_go` route-specific readout-scale boundary |
 
 ## Honest Residual
 

@@ -115,9 +115,9 @@ STACKED_COUNT_PACKET = [
         "runner": "scripts/magnitude_reads_minimal_record_block_2026_06_06.py",
         "cache": "logs/runner-cache/magnitude_reads_minimal_record_block_2026_06_06.txt",
         "markers": [
-            "framing DEMOTED",
-            "readout-scale selection is a **principle-extension**",
-            "flagged-open",
+            "What does **not** follow is the readout-scale selection.",
+            "select the minimal block over the OS continuum.",
+            "Missing bridge:     UV/minimal-block readout selection",
             "readout-scale selection",
         ],
     },

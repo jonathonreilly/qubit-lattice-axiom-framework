@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py
-runner_sha256: 254607600be2b575e6fcba2e242fb1c87389634f243d682477ebd6295b7c4a32
+runner_sha256: 57dbcdc989152e8fb29874e10ac3784ae72fda2af91ce957fd86a064231bc8d7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================================
-Lorentz naturalness: QUANTIFIED OBSTRUCTION (asymptotically-free gamma too small)
+Lorentz naturalness: supplied-parameter comparator estimate
 ==============================================================================================
 
 ----------------------------------------------------------------------------------------------
@@ -44,20 +44,12 @@ Part D: the residual gap (net delta v|_IR vs the bounds)
   [PASS] (D1) even for the WEAKEST bound and the most-optimistic gamma, a multi-order gap REMAINS  --  smallest gap (quark/gluon, gamma=0.3) ~ 4.1 orders; tight bounds 12-16 orders
 
 ----------------------------------------------------------------------------------------------
-Part E: what would close it (and why the framework lacks it)
+Part E: what the supplied comparator would need
 ----------------------------------------------------------------------------------------------
-  [PASS] (E1) closing the gap needs gamma >= gamma_crit ~ 1 -> a STRONG-coupling fixed point  --  but asymptotic freedom makes the coupling WEAK at M_Pl where the regeneration occurs -> precluded
+  [PASS] (E1) closing the supplied-parameter gap needs gamma >= gamma_crit ~ 1  --  this is an arithmetic threshold, not a framework-native exclusion of all mechanisms
   [PASS] (E2) IR strong-QCD (alpha_s~1, gamma~1) acts over too FEW e-folds (~1 near Lambda_QCD) -> negligible  --  extra suppression ~ e^-1 = 0.37, vs the ~10^-14 needed
-  [PASS] (E3) a custodial symmetry (SUSY; Nibbelink-Pospelov) WOULD work but is ABSENT in the framework  --  CPT (even), O_h (permits), gauge-Ward (no c_t-c_s tie) do NOT protect the marginal operator
-  [PASS] (E4) => QUANTIFIED OBSTRUCTION: the framework does NOT close Lorentz naturalness; a custodial mechanism is REQUIRED  --  resolves the attractor-note residual: the attractive flow is real but ~10-15 orders too weak
-
-----------------------------------------------------------------------------------------------
-Part F: no-go discipline + honest scope
-----------------------------------------------------------------------------------------------
-  [PASS] (F1) N2 wall-independence: the gap survives varying gamma (B), the bound/scale (C), and the sector (D)  --  robust to the O(1) coefficient and to which species/observable is used
-  [PASS] (F2) N7 steelman: 'all species share one v* so no LV' fails -- different reps flow at different rates;  --  the OBSERVABLE is the residual species-to-species speed difference = exactly delta v|_IR
-  [PASS] (F3) SCOPE: ORDER-OF-MAGNITUDE result; exact regeneration O(1) coeff + fixed-point gamma are open INPUTS  --  they do NOT change the qualitative no-go (gamma~0.2 vs gamma_crit~1)
-  [PASS] (F4) CONSISTENT with the attractor note and Collins et al (field-wide naturalness); not a contradiction  --  this quantifies the attractor note's open residual as a ~10-15 order gap requiring gamma~1 or a symmetry
+     Scope: a custodial symmetry or hidden framework mechanism is not ruled out here;
+     the runner only quantifies what the supplied gamma range fails to do.
 
 ----------------------------------------------------------------------------------------------
 Summary
@@ -66,12 +58,14 @@ Summary
   B  framework gamma ~ 0.08-0.24 (asymptotic freedom -> weak coupling at the regeneration scale).
   C  required gamma_crit ~ 0.9-1.3 (tight bounds), ~0.5 (weakest); framework gamma is BELOW all.
   D  net delta v|_IR ~ 1e-5..1e-8 -> 4-16 order GAP to the experimental LV bounds.
-  E  closing it needs gamma~1 (strong fixed point, precluded by asymptotic freedom) or SUSY (absent).
-  => QUANTIFIED OBSTRUCTION: the framework's gauge dynamics does NOT solve Lorentz naturalness;
-     a custodial mechanism is REQUIRED (resolves the attractor-note residual; consistent with Collins et al).
+  E  the supplied estimate would need gamma~1 or a separate custodial/protection mechanism.
+  => SUPPLIED-PARAMETER COMPARATOR: under the listed Collins/gamma/bound inputs,
+     gauge-flow suppression is too small. This runner does not derive the
+     regeneration coefficient, the physical gamma range, or absence of all
+     hidden protection mechanisms from framework primitives.
 
 ==============================================================================================
-TOTAL: 14 PASS / 0 FAIL
+TOTAL: 8 PASS / 0 FAIL
 ==============================================================================================
 
 ----- stderr -----

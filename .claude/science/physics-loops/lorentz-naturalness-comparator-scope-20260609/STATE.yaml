@@ -1,0 +1,23 @@
+loop_slug: lorentz-naturalness-comparator-scope-20260609
+date: 2026-06-09
+mode: science_fix
+target_claim_id: lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06
+target_blocker: "missing_bridge_theorem: supply a retained one-hop derivation or authority for the physical power-divergent regeneration coefficient and the fixed-point anomalous-dimension range, or narrow the row to an explicitly supplied-parameter comparator estimate."
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: demotion
+proposal_allowed: false
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+files_touched:
+  - docs/LORENTZ_NATURALNESS_GAP_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-06.md
+  - scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py
+  - logs/runner-cache/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.txt
+verification:
+  - "python3 scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py"
+  - "python3 scripts/cached_runner_output.py scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py --refresh"
+next_exact_action: "Review/audit should verify that the source row is now an explicit supplied-parameter comparator estimate."
+stop_condition: "Coherent source-side Lorentz comparator-scope PR opened."

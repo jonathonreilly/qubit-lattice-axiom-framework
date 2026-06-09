@@ -1,26 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 r"""
-Lorentz naturalness: a QUANTIFIED OBSTRUCTION -- the framework's asymptotically-free
-gauge anomalous dimension is far too small to suppress the regenerated marginal LV
-below the experimental bounds
+Lorentz naturalness: supplied-parameter comparator estimate.
+
+Given a Collins-type regenerated marginal LV coefficient and a supplied
+asymptotically-free anomalous-dimension range, the gauge-flow suppression is far
+too small to bridge representative LV comparator bounds.
 =================================================================================
 
-This resolves the open residual of
+This quantifies the supplied-parameter comparator form of the open residual in
 EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06, which
-left open: does the attractive IR flow + the a^-1=M_Pl hierarchy suppress the
-power-divergent marginal Lorentz violation below the SME/GRB/Fermi-LAT bounds
-WITHOUT a custodial symmetry?
+left open a physical-coefficient question: does the attractive IR flow plus the
+a^-1=M_Pl hierarchy suppress a power-divergent marginal Lorentz-violation
+coefficient below representative SME/GRB/Fermi-LAT comparator bounds?
 
-Answer (orders-of-magnitude scaling; standard one-loop estimates): NO. The
-framework's gauge sector is ASYMPTOTICALLY FREE, so the coupling -- and hence the
-speed-difference operator's anomalous dimension gamma ~ (C_F + C_B N_f) alpha_s --
-is SMALL at the UV regeneration scale (M_Pl). The IR suppression (mu/M_Pl)^gamma is
-then far too weak to bridge the gap from the UV-regenerated O(alpha_s/4pi) marginal
-LV to the experimental bounds. A custodial mechanism (a STRONG-coupling fixed point
-with gamma~1, precluded near M_Pl by asymptotic freedom; or SUSY, absent) is
-REQUIRED. This is the Collins-Perez-Sudarsky-Urrutia-Vucetich (PRL 93 (2004) 191301)
-naturalness problem, made quantitative for the framework.
+Supplied-parameter answer (orders-of-magnitude scaling; standard one-loop
+estimates): NO. If delta v_UV is O(alpha_s/4pi) and gamma = c_gamma alpha_s
+with c_gamma in {1,2,3}, the IR suppression (mu/M_Pl)^gamma is too weak to
+bridge the comparator bounds. This is the Collins-Perez-Sudarsky-Urrutia-
+Vucetich (PRL 93 (2004) 191301) naturalness problem, used here as comparator
+context rather than a framework-native derivation of the coefficient.
 
 Structure (all robust at the ORDER-OF-MAGNITUDE level; O(1) coefficients estimated):
 
@@ -41,16 +40,17 @@ Structure (all robust at the ORDER-OF-MAGNITUDE level; O(1) coefficients estimat
   D  THE GAP.  gamma_framework (~0.1-0.24) << gamma_crit (~0.5-1.3): the net
      delta v|_IR ~ 1e-5..1e-8, leaving a 4-16 order gap to the bounds.
 
-  E  WHAT CLOSES IT.  Only gamma >= gamma_crit ~ 1 (a strong-coupling fixed point --
-     precluded near M_Pl by asymptotic freedom; the IR strong-QCD regime acts over
-     too few e-folds to help) or a custodial symmetry (SUSY; absent).  The framework
-     has neither.
+  E  WHAT THE COMPARATOR WOULD NEED.  The supplied estimate would need
+     gamma >= gamma_crit ~ 1, e.g. an O(1) anomalous dimension over the hierarchy
+     or a separate custodial mechanism. This runner does not derive the absence
+     of every such mechanism from the framework.
 
 No new axiom/primitive/import.  Literature (Collins et al 2004; Chadha-Nielsen 1983;
 Bednik-Pujolas-Sibiryakov 2013; Nibbelink-Pospelov 2005) is comparator/scope only.
 The robust output is the ORDER-OF-MAGNITUDE gap and the gamma_crit threshold; the
-exact O(1) regeneration coefficient and the precise fixed-point gamma are the named
-open inputs (they do not change the qualitative no-go).
+exact O(1) regeneration coefficient and the precise fixed-point gamma are named
+open inputs. This runner is a supplied-parameter comparator, not a first-
+principles no-go.
 
 Run: python3 scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py
 """
@@ -92,7 +92,7 @@ BOUNDS = [
 
 def main():
     print("=" * 94)
-    print("Lorentz naturalness: QUANTIFIED OBSTRUCTION (asymptotically-free gamma too small)")
+    print("Lorentz naturalness: supplied-parameter comparator estimate")
     print("=" * 94)
 
     # =====================================================================
@@ -154,32 +154,18 @@ def main():
           ))
 
     # =====================================================================
-    section("Part E: what would close it (and why the framework lacks it)")
+    section("Part E: what the supplied comparator would need")
     # =====================================================================
-    check("(E1) closing the gap needs gamma >= gamma_crit ~ 1 -> a STRONG-coupling fixed point",
+    check("(E1) closing the supplied-parameter gap needs gamma >= gamma_crit ~ 1",
           gcrits["photon (GRB/Fermi-LAT)"] > 1.0,
-          detail="but asymptotic freedom makes the coupling WEAK at M_Pl where the regeneration occurs -> precluded")
+          detail="this is an arithmetic threshold, not a framework-native exclusion of all mechanisms")
     # the IR strong-QCD regime (alpha_s ~ 1) acts over too few e-folds to help:
     # extra suppression from the last ~1 e-fold near Lambda_QCD with gamma~1: factor ~ e^-1
     extra = np.exp(-1.0)
     check("(E2) IR strong-QCD (alpha_s~1, gamma~1) acts over too FEW e-folds (~1 near Lambda_QCD) -> negligible",
           extra > 0.1, detail=f"extra suppression ~ e^-1 = {extra:.2f}, vs the ~10^-14 needed")
-    check("(E3) a custodial symmetry (SUSY; Nibbelink-Pospelov) WOULD work but is ABSENT in the framework",
-          True, detail="CPT (even), O_h (permits), gauge-Ward (no c_t-c_s tie) do NOT protect the marginal operator")
-    check("(E4) => QUANTIFIED OBSTRUCTION: the framework does NOT close Lorentz naturalness; a custodial mechanism is REQUIRED",
-          True, detail="resolves the attractor-note residual: the attractive flow is real but ~10-15 orders too weak")
-
-    # =====================================================================
-    section("Part F: no-go discipline + honest scope")
-    # =====================================================================
-    check("(F1) N2 wall-independence: the gap survives varying gamma (B), the bound/scale (C), and the sector (D)",
-          True, detail="robust to the O(1) coefficient and to which species/observable is used")
-    check("(F2) N7 steelman: 'all species share one v* so no LV' fails -- different reps flow at different rates;",
-          True, detail="the OBSERVABLE is the residual species-to-species speed difference = exactly delta v|_IR")
-    check("(F3) SCOPE: ORDER-OF-MAGNITUDE result; exact regeneration O(1) coeff + fixed-point gamma are open INPUTS",
-          True, detail="they do NOT change the qualitative no-go (gamma~0.2 vs gamma_crit~1)")
-    check("(F4) CONSISTENT with the attractor note and Collins et al (field-wide naturalness); not a contradiction",
-          True, detail="this quantifies the attractor note's open residual as a ~10-15 order gap requiring gamma~1 or a symmetry")
+    print("     Scope: a custodial symmetry or hidden framework mechanism is not ruled out here;")
+    print("     the runner only quantifies what the supplied gamma range fails to do.")
 
     # =====================================================================
     section("Summary")
@@ -188,9 +174,11 @@ def main():
     print("  B  framework gamma ~ 0.08-0.24 (asymptotic freedom -> weak coupling at the regeneration scale).")
     print("  C  required gamma_crit ~ 0.9-1.3 (tight bounds), ~0.5 (weakest); framework gamma is BELOW all.")
     print("  D  net delta v|_IR ~ 1e-5..1e-8 -> 4-16 order GAP to the experimental LV bounds.")
-    print("  E  closing it needs gamma~1 (strong fixed point, precluded by asymptotic freedom) or SUSY (absent).")
-    print("  => QUANTIFIED OBSTRUCTION: the framework's gauge dynamics does NOT solve Lorentz naturalness;")
-    print("     a custodial mechanism is REQUIRED (resolves the attractor-note residual; consistent with Collins et al).")
+    print("  E  the supplied estimate would need gamma~1 or a separate custodial/protection mechanism.")
+    print("  => SUPPLIED-PARAMETER COMPARATOR: under the listed Collins/gamma/bound inputs,")
+    print("     gauge-flow suppression is too small. This runner does not derive the")
+    print("     regeneration coefficient, the physical gamma range, or absence of all")
+    print("     hidden protection mechanisms from framework primitives.")
     print("\n" + "=" * 94)
     print(f"TOTAL: {PASS} PASS / {FAIL} FAIL")
     print("=" * 94)

@@ -1,22 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py
-runner_sha256: e2d050546fe4a5e6baa104ab90954efacd65f06a6d7ebd02e8d942003a934019
+runner_sha256: fef47430ca79e0f7c5eb99989b233e8bd4a20a751966d90b18e8b44867247857
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.60
+elapsed_sec: 0
 status: ok
 ----- stdout -----
 PASS T1 framework lambda=0: G_trace ~ G_shear sign-equal (degenerate); conformal term vanishes on TT
 PASS T1b GR lambda=1: G_trace=-6/b^4 (neg) vs G_shear=+2/b^4 (pos) -> OPPOSITE (indefinite)
-PASS T2 framework lambda=0 gluing: omega^2_trace and omega^2_TT OPPOSITE-signed; TT tachyonic (omega^2_TT<0)
-PASS T3 GR control lambda=1: omega^2_trace>0 AND omega^2_TT>0 (healthy graviton) -> method sound
+PASS T2 framework lambda=0 comparator gluing: omega^2_trace and omega^2_TT OPPOSITE-signed (omega^2_TT<0 in this convention)
+PASS T3 GR control lambda=1: omega^2_trace>0 AND omega^2_TT>0 inside the same sign convention
 PASS T4 GLOBAL-SIGN THEOREM: degenerate supermetric -> omega^2_trace*omega^2_TT<0 for EVERY overall sign (no heal)
 PASS T5 #3214: W metric-Hessian rank-1 longitudinal; TT graviton in EXACT kernel (no finite-k W origin)
 
-framework lambda=0: omega^2_trace=0.245  omega^2_TT=-0.245 (opposite, TT tachyonic)
-GR lambda=1 control: omega^2_trace=0.122  omega^2_TT=0.245 (both healthy)
-DEFECT = missing conformal/indefiniteness term; missing primitive narrows to ONE object:
-  a spin-2-coupled two-derivative curvature generator PAIRED with a non-degenerate fiber metric.
+framework lambda=0 comparator gluing: omega^2_trace=0.245  omega^2_TT=-0.245 (opposite signs)
+GR lambda=1 control in the same convention: omega^2_trace=0.122  omega^2_TT=0.245 (same positive sign)
+BOUNDARY = conditional sign algebra for supplied comparator signs and simple V/G gluing;
+open = framework-native curvature signs, dynamical gluing law, and finite-k W/stress routes.
 TOTAL: PASS=6 FAIL=0
 
 ----- stderr -----

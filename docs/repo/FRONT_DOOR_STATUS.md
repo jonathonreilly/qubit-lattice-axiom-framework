@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1401 |
-| Retained-grade rows, including boxed decorations | 1267 |
+| Applied audit verdicts | 1402 |
+| Retained-grade rows, including boxed decorations | 1268 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 798 |
+| Retained bounded rows | 799 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1326 |
+| Unaudited rows | 1325 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 33 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1328 |
-| Ready rows | 14 |
+| Total pending rows | 1327 |
+| Ready rows | 13 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 384 |
+| Leaf pending | 383 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`source_resolved_retarded_green_pocket_note`](../../docs/SOURCE_RESOLVED_RETARDED_GREEN_POCKET_NOTE.md) - medium; unaudited
 - [`source_resolved_transverse_propagating_green_note`](../../docs/SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md) - medium; unaudited
 - [`spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19`](../../docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md) - medium; unaudited
 - [`staggered_backreaction_capture_closure_note`](../../docs/STAGGERED_BACKREACTION_CAPTURE_CLOSURE_NOTE.md) - medium; unaudited
 - [`staggered_backreaction_green_closure_note`](../../docs/STAGGERED_BACKREACTION_GREEN_CLOSURE_NOTE.md) - medium; unaudited
 - [`staggered_backreaction_iterative_note`](../../docs/STAGGERED_BACKREACTION_ITERATIVE_NOTE.md) - medium; unaudited
-- [`staggered_backreaction_nonlocal_closure_note`](../../docs/STAGGERED_BACKREACTION_NONLOCAL_CLOSURE_NOTE.md) - leaf; unaudited
+- [`staggered_backreaction_nonlocal_closure_note`](../../docs/STAGGERED_BACKREACTION_NONLOCAL_CLOSURE_NOTE.md) - medium; unaudited
+- [`staggered_backreaction_results_2026-04-10`](../../docs/STAGGERED_BACKREACTION_RESULTS_2026-04-10.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -87,10 +87,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1386 descendants; score 100.438
-- `three_generation_observable_theorem_note` - critical; 766 descendants; score 61.083
+- `minimal_axioms` - critical; 1385 descendants; score 100.437
+- `three_generation_observable_theorem_note` - critical; 765 descendants; score 61.081
 - `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
-- `graph_first_su3_integration_note` - critical; 1282 descendants; score 52.825
+- `graph_first_su3_integration_note` - critical; 1281 descendants; score 52.824
 - `minimal_axioms_2026-05-03` - critical; 490 descendants; score 47.940
 - `key_terminology` - critical; 1017 descendants; score 44.492
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1198 descendants; score 42.728

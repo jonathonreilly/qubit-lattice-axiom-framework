@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py
-runner_sha256: 17793639c5acf56f3d4f95e7fe20c0c377a107d031949ab300dbce3435dcc3e5
+runner_sha256: e6a7991937e4fb86c66eb247d2ea5a5ee12a41624dcc8daa98dd1e551771b93f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -57,14 +57,14 @@ Part 7  U(1) (hypercharge-like) factor obeys the same abelian transporter law
 TOTAL: PASS=23 FAIL=0
 ==============================================================================
 SCOPE: This runner verifies the KINEMATICS of matter-gauge minimal coupling
-  -- given local fibre-frame redundancy, the link connection U_mu(x) and
-  its parallel-transporter gauge law are fixed by frame-independence of the
-  nearest-neighbour hopping on the retained per-site U(3) fibre. The
-  gauge-covariance core (Parts 1-5,7) is unconditional algebra; the physical
-  gauge-redundancy reading rests on the named local fibre-frame redundancy
-  premise. It does NOT derive any gauge ACTION or dynamics
-  for U_mu (the Yang-Mills target), claims NO continuum limit, and defers the
-  identification with physical SU(3)_c per the graph_first_su3 boundary.
+  -- using the current-surface local fibre-frame redundancy bridge, the
+  link connection U_mu(x) and its parallel-transporter gauge law are fixed
+  by frame-independence of nearest-neighbour hopping on the retained
+  per-site U(3) fibre. The gauge-covariance core (Parts 1-5,7) is exact
+  finite algebra. It does NOT derive any gauge ACTION or dynamics for U_mu
+  (the Yang-Mills target), claims NO continuum limit, proves NO future
+  colour-readout exclusion theorem, and defers physical SU(3)_c per the
+  graph_first_su3 boundary.
 
 ----- stderr -----
 

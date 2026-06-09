@@ -1,0 +1,27 @@
+loop_slug: fiber-frame-redundancy-bridge-20260609
+date: 2026-06-09
+mode: science_fix
+target_claim_id: matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08
+target_blocker: "missing_bridge_theorem: supply a retained one-hop theorem proving local U(3) fibre-frame choices are observational redundancies and that the translation bridge's U=I reference is not a canonical physical cross-site frame pinning; a second auditor should also re-check the epsilon normalization in the leading-order minimal-coupling prose."
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+files_touched:
+  - docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md
+  - docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md
+  - scripts/fiber_frame_local_redundancy_bridge_2026_06_09.py
+  - scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py
+  - logs/runner-cache/fiber_frame_local_redundancy_bridge_2026_06_09.txt
+  - logs/runner-cache/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.txt
+verification:
+  - "python3 scripts/fiber_frame_local_redundancy_bridge_2026_06_09.py"
+  - "python3 scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py"
+  - "python3 scripts/cached_runner_output.py scripts/fiber_frame_local_redundancy_bridge_2026_06_09.py --refresh"
+  - "python3 scripts/cached_runner_output.py scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py --refresh"
+next_exact_action: "Review should decide whether the bridge fully satisfies the minimal-coupling conditional blocker; independent audit must own any effective status change."
+stop_condition: "Coherent source-side bridge PR opened."

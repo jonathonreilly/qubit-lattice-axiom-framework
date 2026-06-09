@@ -25,12 +25,16 @@ the **kinematic** level (the connection's existence and gauge law), leaving the 
 
 ## Verdict
 
-**Yes, at the kinematic level, conditional on one named premise.** If local
-fibre-frame choices are a redundancy, then frame-independent nearest-neighbour
-hopping uniquely requires a compensating link transporter with the lattice
-connection law. The covariance identity itself is unconditional finite algebra;
-the physical reading that the framework supplies a gauge connection is bounded
-by the local fibre-frame redundancy premise.
+**Yes, at the kinematic current-surface level.** The one-hop bridge
+[`FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md`](FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md)
+proves that local `U(3)` fibre-frame choices are passive trivialization
+changes for the registered weak/Record-sector data currently present in the
+cited authorities, and that the translation bridge's `U=I` reference is the
+flat cross-site trivialization rather than an invariant physical fibre pinning.
+With that bridge, frame-independent nearest-neighbour hopping uniquely
+requires a compensating link transporter with the lattice connection law. The
+covariance identity itself is unconditional finite algebra; the physical
+reading remains bounded to kinematics and to the current registered surface.
 
 ## Retained foundations exercised
 
@@ -51,40 +55,38 @@ by the local fibre-frame redundancy premise.
    supply a gauge field, gauge action, dynamics, or physical `SU(3)_c`
    identification.
 
-## The named bounded premise
+4. **`fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09`** —
+   current-surface bridge. Local `U(3)` fibre-frame changes are passive
+   trivialization changes for the registered weak/Record-sector data currently
+   present in the cited authorities. The flat `U=I` translation reference is a
+   choice of neighbouring-fibre coordinates, since independent local bases
+   rewrite it as `g(x)g(x+μ)†`; it is not a physical cross-site fibre pinning.
 
-**Local fibre-frame redundancy premise.** A *local* re-choice of internal
-fibre frame `g(x) ∈ U(3)` is a redundancy of description: it registers no
-observable. Equivalently, the framework supplies no canonical *physical*
-cross-site fibre identification beyond the flat reference `U = I`.
+## The discharged current-surface bridge
 
-This premise is **strongly supported but not yet a separate theorem:**
+The bridge note proves the local fibre-frame redundancy needed here at the
+current registered-surface level:
 
-- *Frame rotations are unobservable by construction.* The `SU(3)` fibre is, by
-  `graph_first_su3_integration_note`, the **commutant** of the observable weak-`su(2)`
-  action. Operators in the commutant act *trivially* on the registered (observable)
-  content, so a local fibre rotation changes nothing that is recorded. In the record
-  ontology, the fibre frame is an **unregistered reconstruction**, not registered
-  content — exactly the kind of thing physics must be blind to.
+- *Frame rotations preserve current registered data.* On the graph-first
+  weak/fibre carrier `C²_weak ⊗ C³_fibre`, a local frame change has the form
+  `I_2 ⊗ g(x)`. It commutes with the retained weak `su(2)` generators and
+  fixes the weak central-sector projectors consumed by the Record-sector
+  readout context used in the cited authorities.
 
-- *Locality forbids a canonical global section.* One-qubit-per-site (QUANTUM) plus
-  distinct sites (LATTICE) means each fibre is constructed **intrinsically and
-  independently** per site. There is no framework-given isomorphism `V_x ≅ V_{x+μ}`;
-  any identification used to write a hopping term is a **choice**, made independently
-  at each link. The redundancy is therefore *born local*.
+- *No fibre-colour basis is selected.* The only fibre operator invariant under
+  the full local `U(3)` frame group is a scalar multiple of `I_3`; a rank-one
+  colour/fibre projector would add extra structure not supplied by the current
+  cited authorities.
 
-- *Residual to audit.* The retained translation bridge supplies **one** identification,
-  `T_a a_x T_a† = a_{x+a}` — the **flat reference** `U = I`. The local
-  fibre-frame redundancy premise says this reference is a **gauge choice**
-  (physically non-rigid), not a canonical physical pinning. Were translation
-  to *rigidly* fix a physical frame, `U = I` would be fixed and there would be
-  no gauge field. That the commutant frame is unregistered (point 1) is why
-  the flat reference is plausibly non-rigid, but turning "strongly supported"
-  into "derived" is a distinct audit step.
+- *The retained translation bridge supplies the flat trivialization, not a
+  physical pinning.* Its `T_a a_x T_a† = a_{x+a}` identity is the `U=I`
+  coordinate choice. Under independent neighbouring fibre bases it is
+  represented as `g(x)g(x+μ)†`, so `I` is not a local-frame-invariant
+  cross-site physical object.
 
-Under this premise, the link transporter is forced by frame independence.
-Independently of the premise, the gauge-covariance identities (Parts 1-5, 7)
-are unconditional algebra: they hold for any configuration.
+This bridge does not say that future colour readout contexts are impossible,
+and it does not supply gauge action/dynamics. It only discharges the kinematic
+frame-redundancy premise needed by this note on the current registered surface.
 
 ## The derivation
 
@@ -162,10 +164,10 @@ with `g(x) = e^{iθ(x)}I` forces an **abelian (hypercharge-like) connection** fo
 ## What this closes
 
 - The matter-gauge **minimal-coupling kinematics** are no longer an
-  unstructured postulate once the local fibre-frame redundancy premise is
-  supplied: the link transporter, its gauge law, the covariant derivative, and
-  gauge invariance of `H_cov` follow from frame independence of nearest-neighbor
-  hopping on the retained `U(3)` fibre.
+  unstructured postulate on the current registered surface: the link
+  transporter, its gauge law, the covariant derivative, and gauge invariance of
+  `H_cov` follow from frame independence of nearest-neighbor hopping on the
+  retained `U(3)` fibre, using the one-hop local frame-redundancy bridge.
 - A reusable on-surface origin for the gauge field: it is the **bookkeeping of the
   framework's absent canonical cross-site fibre identification** — the unregistered
   internal frame — rather than a postulated `U_μ = exp(igaA)`.
@@ -180,25 +182,28 @@ with `g(x) = e^{iθ(x)}I` forces an **abelian (hypercharge-like) connection** fo
 - **No physical `SU(3)_c` identification beyond the algebraic fibre** — deferred exactly
   as in `graph_first_su3_integration_note`; the abelian factor remains "hypercharge-like"
   pending the anomaly-complete identification.
-- The local fibre-frame redundancy premise is **named, not discharged**: that
-  the local fibre frame is physically non-rigid is strongly supported by the
-  commutant/record-ontology argument but remains its own audit target.
+- **No theorem about future colour readouts.** The local frame-redundancy
+  bridge covers the registered weak/Record-sector data currently present in
+  the cited authorities. It does not prove that later colour-readout contexts
+  cannot register additional fibre data.
 
 ## Scope and non-claims
 
 The covariance theorem (Steps 3–4) is an exact finite-dimensional identity, verified at
 `(L=2)³` with `C³` fibres; it is representation-independent (depends only on `g†g=I`).
 This note adds no new axiom, primitive, or Tier-A admission. It uses the two
-cited retained theorems plus the Lattice and Quantum axioms, and cites the
-standard fibre-bundle/connection correspondence only as mathematical method.
-The physical connection reading is conditional on the local fibre-frame
-redundancy premise; the algebraic covariance core is not.
+cited retained theorems, the current-surface local frame-redundancy bridge,
+and the Lattice, Quantum, and Record axioms. It cites the standard
+fibre-bundle/connection correspondence only as mathematical method. The
+physical connection reading is kinematic/current-surface only; the algebraic
+covariance core is exact finite operator algebra.
 
 ## Cross-references
 
 - Retained fibre: [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
 - Retained operators/translation: [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
 - Hopping bilinear (decoration): [`HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md`](HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md)
+- Local fibre-frame bridge: [`FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md`](FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md)
 - Downstream gauge-action target: not load-bearing for this note.
 - Standard method (not an import): lattice gauge connection / parallel transport
   (Wilson 1974; Kogut–Susskind 1975); fibre-bundle origin of gauge fields.

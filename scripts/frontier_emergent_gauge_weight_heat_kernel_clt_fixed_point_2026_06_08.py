@@ -3,15 +3,19 @@
 
 Class-A finite-dimensional verification for the source note
 
-    docs/EMERGENT_GAUGE_WEIGHT_HEAT_KERNEL_CLT_FIXED_POINT_UNIFIES_GATES_NARROW_THEOREM_NOTE_2026-06-08.md
+    docs/EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08.md
 
-THE UNIFIED GATE.  The wall-map reduced the interacting-gauge sector's two foundational
-gates to ONE open input -- the emergent-time gauge-link dynamics (PR #3332 ST1 "why is
-color gauged" = ADM-1; PR #3339 ST2 "which action" = is the link a Delta-diffusion).  The
-retained record_classical_semigroup_boundary says Record ALONE supplies no continuous
-generator.  But the framework is DISCRETE in time (emergent time = accumulated record
-STEPS), so the gauge-link evolution is a DISCRETE Markov walk on the group, and its
-emergent-time (fine-resolution, many-step) propagator is governed by the CONVOLUTION CLT.
+ST2's ACTION-FORM, REDUCED TO A DYNAMICAL BI-INVARIANCE PREMISE.  PR #3339 reduced ST2
+("which gauge action?") to: is the gauge link a continuous diffusion with the canonical-
+Laplacian generator.  The retained record_classical_semigroup_boundary says Record ALONE
+supplies no continuous generator.  But the framework is DISCRETE in time (emergent time =
+accumulated record STEPS), so the gauge-link evolution is a DISCRETE Markov walk on the
+group, and its emergent-time (fine-resolution, many-step) propagator is governed by the
+CONVOLUTION CLT.  [2026-06-08 CORRECTION: an earlier version of this note claimed this
+UNIFIES ST1 and ST2 via "bi-invariance = ADM-1".  A find-the-escape panel REFUTED that
+identity -- bi-invariance of the step measure (ADM-2) is a DYNAMICAL premise STRICTLY
+STRONGER than the STATIC fibre-frame redundancy ADM-1, and is NOT implied by it (Part 6).
+The gates are NOT unified; this note now states only the conditional ST2 -> ADM-2.]
 
 THESIS (rigorous core + honest residual):
   For a group-valued degree of freedom (gauge link / plaquette holonomy) evolving by
@@ -22,24 +26,33 @@ THESIS (rigorous core + honest residual):
     (1) the heat-kernel weight is the universal emergent gauge weight; the microscopic
         action-form ambiguity (Wilson/HK/Manton) WASHES OUT under emergent-time
         coarse-graining (they all flow to the same heat kernel);
-    (2) the load-bearing premise is BI-INVARIANCE = no preferred color frame = ADM-1
-        (PR #3332's named premise) -- so the SAME premise that gauges color (ST1) forces
-        the emergent heat-kernel action (ST2).  ONE premise unifies both gates.
+    (2) the load-bearing premise is BI-INVARIANCE of the emergent-time gauge-link STEP
+        MEASURE (Ad-invariance) -- call it ADM-2.  This is a DYNAMICAL premise, STRICTLY
+        STRONGER than and NOT identical to the STATIC fibre-frame redundancy ADM-1 (PR
+        #3332): gauge-covariance U->g(x)U g(x+mu)^dag is INDIFFERENT to whether the step
+        measure is Ad-invariant (Part 6: a drifted, non-bi-invariant step is equally gauge-
+        covariant yet does NOT flow to the heat kernel).  So ST2's action-form reduces to
+        ADM-2; the gates are NOT unified.
 
   Generator uniqueness: on a simple compact group the only Ad-invariant 2nd-order
   generator is c*Delta (Casimir); bi-invariance kills drift -- so the CLT limit is the
   heat semigroup, with only the rate c (= the g_bare/beta scale, retained convention) free.
 
 HONEST RESIDUALS (named, NOT closed):
-  - BI-INVARIANCE itself = ADM-1 = the open color-Record gate (PR #3332). Not derived here.
+  - ADM-2 (bi-invariance of the step measure) itself -- a SEPARATE open DYNAMICAL premise,
+    strictly stronger than the static ADM-1 (PR #3332); per record_classical_semigroup_
+    boundary + record_markov_generator_embeddability_boundary (both retained), Record alone
+    supplies no such continuous generator. Not derived here.
   - The RATE / eps (overall emergent-time scale) = the g_bare=1 / beta=6 convention.
   - The i.i.d. step homogeneity (emergent-time stationarity) is a structural input.
   - SCOPE: this fixes the single group-valued weight (action FORM); the inter-link spatial
     coupling (full Yang-Mills dynamics) is a separate matter.
+  - The gates are NOT unified: ST1 (ADM-1, static) and ST2 (ADM-2, dynamical) are DISTINCT
+    open premises (ADM-1 does NOT imply ADM-2 -- Part 6).
 
 Builds on: PR #3339 (HK = unique convolution SEMIGROUP) -- this adds UNIVERSALITY (HK is
-the unique ATTRACTOR/CLT fixed point) + the ADM-1 unification.  No new axiom/import:
-convolution CLT on compact groups, characters, Casimirs are standard math.
+the unique ATTRACTOR/CLT fixed point).  No new axiom/import: convolution CLT on compact
+groups, characters, Casimirs are standard math.
 
 Run: python3 scripts/frontier_emergent_gauge_weight_heat_kernel_clt_fixed_point_2026_06_08.py
 """
@@ -241,21 +254,32 @@ check("SU(3) emergent fund weight at t=1 reproduces exp(-2/3) (the no-go's <P>_H
 # Part 6.  UNIFICATION + honest residual location (logged + checked).
 # ===========================================================================
 print("=" * 78)
-print("Part 6  Unification: bi-invariance = ADM-1 forces BOTH gates; residuals named")
+print("Part 6  ADM-1 does NOT imply bi-invariance (ADM-2): the gates are NOT unified")
 print("=" * 78)
 
-print("   bi-invariance (no preferred color frame) = ADM-1 (PR #3332's named premise).")
-print("   ADM-1  =>  gauge-link update is bi-invariant  =>  (convolution CLT, Parts 1-5)")
-print("          =>  emergent-time gauge weight is the HEAT KERNEL (ST2 action form).")
-print("   So the SAME premise that gauges color (ST1) forces the emergent action (ST2):")
-print("   ONE open input (ADM-1 = the color-Record gate) gates the whole interacting")
-print("   foundation, instead of two separate admissions.")
-print("   RESIDUALS (named, open): (i) ADM-1 / bi-invariance itself (color-Record gate);")
-print("     (ii) the rate eps = the g_bare=1/beta=6 convention; (iii) i.i.d. step")
-print("     homogeneity; (iv) SCOPE: single group-valued weight, not inter-link coupling.")
-check("unification is sound: ADM-1 => bi-invariant update => emergent heat-kernel weight;"
-      " ADM-1 is also ST1's gate => one premise, both gates",
-      True, "residuals named, not closed; CLT core is rigorous (Parts 1-5)")
+# The gauge-covariance law U -> g(x) U g(x+mu)^dag is a KINEMATIC property of the
+# connection, INDIFFERENT to the dynamical step measure.  The drifted (non-central,
+# non-bi-invariant) step of Part 3 yields an equally gauge-covariant connection, yet does
+# NOT flow to the heat kernel.  So "frame-redundant / gauge-covariant" (the STATIC ADM-1)
+# does NOT entail "bi-invariant step measure" (the DYNAMICAL ADM-2); ADM-2 is STRICTLY
+# STRONGER and the CLT consumes it.  [Corrects an earlier over-reach the find-the-escape
+# panel refuted: the "ADM-1 = bi-invariance => one premise unifies both gates" identity.]
+U_drift_sample = g0 @ su2((1, 1, 0), 0.3)          # a representative drifted-measure link
+gx, gy = su2((0, 0, 1), 0.7), su2((1, 0, 0), 0.4)
+U_gauge = gx @ U_drift_sample @ gy.conj().T         # gauge transform applies, measure-blind
+covariant_valid = np.allclose(U_gauge @ U_gauge.conj().T, np.eye(2), atol=1e-9)
+drift_not_biinv = not np.allclose(muhat_drift, muhat_drift[0, 0] * np.eye(2), atol=1e-6)
+drift_not_heat = not np.allclose(conv_drift, conv_drift[0, 0] * np.eye(2), atol=1e-6)
+check("gauge-covariance is INDIFFERENT to the step measure: a drifted (non-bi-invariant) "
+      "link is equally gauge-covariant-valid (the law U->gUg^dag is measure-blind)",
+      covariant_valid)
+check("the drifted step is NON-bi-invariant AND does NOT flow to the heat kernel (Part 3)",
+      drift_not_biinv and drift_not_heat,
+      f"drift Fourier-dev {np.max(np.abs(muhat_drift - muhat_drift[0,0]*np.eye(2))):.3f}")
+check("=> ADM-1 (static frame redundancy / gauge-covariance) does NOT imply ADM-2 "
+      "(bi-invariant step measure): ADM-2 is STRICTLY STRONGER -- the gates are NOT unified",
+      covariant_valid and drift_not_biinv and drift_not_heat,
+      "ST1 (ADM-1) and ST2 (ADM-2) are DISTINCT open premises")
 
 # ===========================================================================
 print("=" * 78)
@@ -264,10 +288,12 @@ print("=" * 78)
 print("SCOPE: The heat-kernel gauge weight is the UNIVERSAL convolution-CLT fixed point of")
 print("  bi-invariant emergent-time gauge-link dynamics: ANY bi-invariant per-step kernel")
 print("  (Wilson/HK/Manton/...) flows to the SAME heat kernel under emergent-time coarse-")
-print("  graining (the microscopic action-form ambiguity washes out).  Bi-invariance = no")
-print("  preferred color frame = ADM-1, so the SAME premise gauges color (ST1) and forces")
-print("  the emergent heat-kernel action (ST2) -- unifying both gates onto ONE open input.")
-print("  Does NOT derive ADM-1/bi-invariance (the open color-Record gate), does NOT supply")
-print("  the rate (g_bare convention) or the inter-link coupling.  No new axiom/import.")
+print("  graining (the microscopic action-form ambiguity washes out).  So ST2's action-form")
+print("  reduces to ADM-2 = bi-invariance of the step measure -- a DYNAMICAL premise that is")
+print("  STRICTLY STRONGER than, and NOT implied by, the STATIC fibre-frame redundancy ADM-1")
+print("  (Part 6: gauge-covariance is measure-blind).  The gates are NOT unified (an earlier")
+print("  version's 'one premise' claim was refuted by the find-the-escape panel).  Does NOT")
+print("  derive ADM-2 (Record supplies no continuous generator -- retained boundary), the")
+print("  rate (g_bare convention), or the inter-link coupling.  No new axiom/import.")
 if FAIL:
     raise SystemExit(1)

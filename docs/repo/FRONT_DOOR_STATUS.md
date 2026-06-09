@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1405 |
-| Retained-grade rows, including boxed decorations | 1271 |
+| Applied audit verdicts | 1406 |
+| Retained-grade rows, including boxed decorations | 1272 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 802 |
+| Retained bounded rows | 803 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1322 |
+| Unaudited rows | 1321 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 33 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1324 |
-| Ready rows | 10 |
+| Total pending rows | 1323 |
+| Ready rows | 9 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 380 |
+| Leaf pending | 379 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`staggered_backreaction_green_closure_note`](../../docs/STAGGERED_BACKREACTION_GREEN_CLOSURE_NOTE.md) - medium; unaudited
 - [`staggered_backreaction_iterative_note`](../../docs/STAGGERED_BACKREACTION_ITERATIVE_NOTE.md) - medium; unaudited
 - [`staggered_backreaction_nonlocal_closure_note`](../../docs/STAGGERED_BACKREACTION_NONLOCAL_CLOSURE_NOTE.md) - medium; unaudited
 - [`staggered_backreaction_results_2026-04-10`](../../docs/STAGGERED_BACKREACTION_RESULTS_2026-04-10.md) - medium; unaudited
 - [`staggered_backreaction_scale_closure_note`](../../docs/STAGGERED_BACKREACTION_SCALE_CLOSURE_NOTE.md) - medium; unaudited
 - [`su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28`](../../docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
-- [`su3_cube_perron_solve_combined_theorem_note_2026-05-03`](../../docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md) - leaf; unaudited
+- [`su3_cube_perron_solve_combined_theorem_note_2026-05-03`](../../docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md) - medium; unaudited
+- [`universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

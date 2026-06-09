@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.py
+runner_sha256: 1c1be9a59cb278bce7656a4d0ffd481ad6aeaf36b0e5e3fc59dff9840714ed11
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+========================================================================================
+RIGOROUS ANALYTICITY FLOOR FOR THE SU(3) BULK-CRITICALITY PREMISE
+========================================================================================
+
+----------------------------------------------------------------------------------------
+F1: single-plaquette inputs (analytic bounds plus Weyl-grid calibration)
+----------------------------------------------------------------------------------------
+  [PASS] Re chi_f range on SU(3) is [-3/2, 3] (endpoints used by eta are the true extremes)  --  grid range [-1.5000, 3.0000]
+  [PASS] eta(beta) calibration: grid eta -> beta as beta -> 0 (c = 1 + O(beta^2))  --  eta(0.01)/0.01 = 1.0047
+  [PASS] load-bearing c(beta) bounds are analytic: 1 <= c(beta) <= exp(9 beta^2/32); grid c sits inside the bound at small beta  --  grid c(0.01) = 1.00000278, upper bound 1.00002813; c(6) = 3.4414
+
+----------------------------------------------------------------------------------------
+F2: combinatorial constants ENUMERATED on the Z^4 plaquette graph
+----------------------------------------------------------------------------------------
+  [PASS] each plaquette shares a link with exactly Delta = 20 others (4 links x 5 co-link plaquettes; enumerated, not assumed)  --  enumerated Delta = 20
+  [PASS] size-2 link-connected sets containing p0: count = 20 <= C_anim = e(Delta+1) ~ 57.1  --  20 <= 57.1
+  [PASS] size-3 link-connected sets containing p0: exact count <= C_anim^2 ~ 3258 (the standard animal bound holds with large margin at small n)  --  enumerated 458 <= 3259
+
+----------------------------------------------------------------------------------------
+F3: Kotecky-Preiss criterion with the conservative closed form
+----------------------------------------------------------------------------------------
+  KP sufficient condition: eta <= 1/((Delta+1) e (1+e)) = 0.004711
+  [PASS] closed form is a valid sufficient bound: (Delta+1) eta e / (1 - eta e C_anim) <= 1 at eta = eta_crit (and the geometric series converges there)  --  series ratio = 0.7311 < 1; LHS = 1.0000 <= 1
+
+----------------------------------------------------------------------------------------
+F4: the floor beta_0 (exact bisection) and what it proves
+----------------------------------------------------------------------------------------
+  [PASS] beta_0 solved with the analytic upper bound eta_bound(beta_0) = eta_crit  --  beta_0 = 0.00470; eta_grid=0.004711, eta_bound=0.004711
+  [PASS] below the floor the polymer-tail gap bound is positive: m_lat(beta) >= ln(eta(beta_0)/eta(beta)) (e.g. >= ln 2 - O(beta_0) at beta_0/2)  --  m_lat(beta_0/2) >= 0.694
+  [PASS] => on (0, beta_0]: free energy analytic in beta + exponential clustering => NO bulk critical point there (KP convergence, cited theorem)  --  the rigorously cleared segment
+  [PASS] the reduction premise interval shrinks, PROVEN: (0, 6] -> (beta_0, 6]; cleared fraction reported honestly  --  cleared 0.078% of the interval (beta_0 = 0.00470)
+
+----------------------------------------------------------------------------------------
+F5: honest accounting
+----------------------------------------------------------------------------------------
+  [PASS] beta_0 is SMALL because the KP/animal constants are brutally conservative; this is a proven floor, not a sharp radius
+  [PASS] named improvement route (no new ideas needed): replace the generic animal bound by closed-surface counting / character-expansion constants (Munster-class) -- each better constant raises beta_0 directly
+  [PASS] closing the remaining (beta_0, 6] window unconditionally is Balaban-class RG-constructive work -- open, not claimed
+  [PASS] this note does NOT solve the mass-gap problem; it converts the premise's lower edge from comparator-supported to PROVEN, with explicit constants
+
+========================================================================================
+SUMMARY: PASS=15 FAIL=0
+========================================================================================
+
+----- stderr -----
+

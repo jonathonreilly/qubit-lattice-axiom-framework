@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 805 |
+| **retained_bounded** | 806 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1319 |
+| unaudited | 1318 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1244 |
+| `audited_clean` | 1245 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1634 |
+| `unaudited` | 1633 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 788 |
-| `leaf` | 1281 |
+| `medium` | 787 |
+| `leaf` | 1282 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -1167,6 +1167,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_nonlocal_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `staggered_backreaction_results_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -16923,6 +16924,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the three listed retained graph families, the source-generated screened-Poisson Phi run has exact zero-source reduction, R^2 >= 0.983 source response, machine-precision two-body additivity, TOWARD force on all families, one-step endogenous TOWARD response, and norm drift at machine precision.  _(class `C`)_
 - **chain closes:** True — The named prototype runner recomputes the same three-family table shown in the source note and cache. The audited scope is narrowed to that finite numerical readout and explicitly excludes the broader required-control language about modest lattice-size stability and any claim that backreaction/self-gravity is solved.
 - **rationale:** The bounded numerical readout closes because the live runner reproduces the fixed table: zero-source reduction is exact for 3/3 families, source-response R^2 is at least 0.983, two-body residuals are machine precision, force and one-step self-force are TOWARD in every family, and norm drift is machine-scale. The note's broader controls are not silently promoted: no modest lattice-size sweep, full self-gravity closure, cosmology, Hawking, or replacement of the retained staggered card is included in the audited scope. Residual risk is therefore only the narrow finite-prototype scope and the absence of an assertion wrapper, not a missing computation for the scoped table.
+- **auditor confidence:** high
+
+### `staggered_backreaction_results_2026-04-10`
+
+- **Note:** [`STAGGERED_BACKREACTION_RESULTS_2026-04-10.md`](../../docs/STAGGERED_BACKREACTION_RESULTS_2026-04-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed-runner bounded prototype facts for the three generated graph families: zero-source force/norm, Poisson-source additivity, solved/source force sign, one-step self-sourced force sign, and reported force/self-update gaps.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-143840-d5de8ded62-staggered_backreaction_resul`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The live prototype supports zero-source reduction, two-body additivity, TOWARD force sign, and one-step endogenous TOWARD behavior across the three tested graph families as certified by the current runner cache.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the three graph families with fixed seeds, solves the screened graph Poisson system, evolves the state, and computes the reported signs, residuals, gaps, and summary counts rather than reading them from another note or printing constants. The conclusion closes only for this current-runner prototype packet and not for self-gravity closure or external-kernel scale agreement.
+- **rationale:** The cache values quoted in the note match the completed runner output, and the runner source performs genuine finite numerical computation of the Poisson solve, Crank-Nicolson evolution, shell force, additivity residuals, and self-update force. Zero-source reduction and Poisson additivity also follow structurally from the zero-density branch and linear screened Poisson solve. The large force-scale gaps and failed all-family linearity are explicitly retained as boundaries, so the audited claim does not overstate those results. No cited upstream authority or external comparator is used.
 - **auditor confidence:** high
 
 ### `staggered_backreaction_shell_spectral_note`

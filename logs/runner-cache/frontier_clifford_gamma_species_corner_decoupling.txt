@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/frontier_clifford_gamma_species_corner_decoupling.py
+runner_sha256: 74913b653ee238bd8b14d525b5f495f74d503a0d82e5f44d7de063e3d6008d5e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+CLIFFORD GAMMA / LATTICE SPECIES-CORNER DECOUPLING
+========================================================================
+[PASS] A Cl(3) Pauli/Weyl spinor representation is 2-component
+       three Pauli matrices act on C^2
+[PASS] A adjoining the fourth Clifford gamma gives a 4-component Dirac algebra
+       spinor algebra dimension doubles 2 -> 4 and gamma5 is balanced
+[PASS] B one discrete naive-lattice direction has two doubler zeros
+       sin(k)=0 at k=0 and k=pi
+[PASS] B three spatial lattice directions give eight naive species corners
+       2^3=8
+[PASS] B a fourth discrete lattice direction would give sixteen species corners
+       2^4=16
+[PASS] DISTINCT gamma extension and species-corner extension are different counts
+       Clifford spinor dimension 4 is not lattice species count 16
+[PASS] DISTINCT a gamma matrix is not a momentum-space corner
+       matrix generator versus zeros of sin(k)
+
+TOTAL: PASS=7 FAIL=0
+VERDICT: the fourth Clifford gamma / Dirac spinor doubling and the fourth discrete lattice species-corner doubling are distinct structures. A missing k4 lattice corner does not by itself block use of the retained Cl(3,1) gamma algebra, but this runner does not prove that emergent time supplies the gamma or that any massive field is built.
+
+----- stderr -----
+

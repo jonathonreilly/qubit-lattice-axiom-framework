@@ -1,12 +1,14 @@
-"""Class-A finite runner (memory-safe): the framework's degenerate (lambda=0, trace=shear)
-W-supermetric, glued to the linearized Regge/Lichnerowicz curvature potential, CANNOT produce
-a healthy spin-2 graviton -- a global-sign no-go. Sharpens the universal-GR polarization-frame
-blocker (retained_bounded) from "D^2 W unidentified with Einstein/Regge" to a single SIGNED defect:
-the missing conformal/indefiniteness term.
+"""Finite runner (memory-safe): conditional sign algebra for a degenerate trace=shear
+supermetric paired with supplied opposite-signed curvature-comparator signs.
+
+This runner does not derive the Regge/Lichnerowicz potential signs from the framework and does
+not prove the framework-native dynamical gluing law.  It checks the bounded algebraic fact that
+if a degenerate trace=shear supermetric is paired through omega^2 = V/G with opposite-signed
+trace/TT comparator potentials, the two channel signs must be opposite.
 
 Setup (gluing of kinetic + potential halves):
   kinetic   = the supermetric fiber metric G on ADM channels;
-  potential = the linearized Regge/Lichnerowicz curvature V (COMPARATOR method-context, not W-derived):
+  potential = supplied linearized Regge/Lichnerowicz comparator signs (not W-derived here):
               V_trace = -k^2/2, V_shear(TT) = +k^2/2 (opposite-sign O(k^2));
   dispersion omega^2(channel) = V(channel) / G(channel).
 
@@ -16,10 +18,10 @@ Standard GR DeWitt (lambda=1) control:  G_trace = -2/b^2, G_shear = +1/b^2 (inde
 
   T1  framework supermetric is lambda=0 DeWitt: G_trace = G_shear = -1/b^2 (degenerate); GR (lambda=1):
       G_trace=-2/b^2, G_shear=+1/b^2; the difference is the conformal -lambda(tr h)^2 term, which VANISHES on TT.
-  T2  gluing dispersion (framework lambda=0): omega^2_trace and omega^2_TT come out OPPOSITE-signed
-      (omega^2_TT < 0, tachyonic) -- no healthy graviton.
-  T3  GR control (lambda=1): omega^2_trace > 0 AND omega^2_TT > 0 (healthy) -- the ratio method is sound;
-      the failure is SPECIFIC to the degenerate lambda=0 supermetric.
+  T2  comparator gluing diagnostic (framework lambda=0): omega^2_trace and omega^2_TT come out
+      OPPOSITE-signed.
+  T3  GR control (lambda=1): omega^2_trace > 0 AND omega^2_TT > 0 inside the same sign convention;
+      the sign failure is specific to the degenerate lambda=0 supermetric in this model.
   T4  GLOBAL-SIGN THEOREM: for the degenerate (G_trace=G_shear) supermetric, omega^2_trace * omega^2_TT < 0
       for EVERY overall normalization sign -- no normalization heals both physical channels.
   T5  #3214 reproduced: W's per-mode metric-Hessian is rank-1 longitudinal (qhat qhat)(x)(qhat qhat);
@@ -51,10 +53,10 @@ bn = 0.7; k = 1.0
 def disp(Gtr, Gsh): return ((-k * k / 2) / Gtr, (+k * k / 2) / Gsh)
 # framework lambda=0: G_trace = G_shear = -1/b^2 (the retained supermetric normal form's spatial weights)
 wt0, ws0 = disp(-1 / bn ** 2, -1 / bn ** 2)
-check("T2 framework lambda=0 gluing: omega^2_trace and omega^2_TT OPPOSITE-signed; TT tachyonic (omega^2_TT<0)",
+check("T2 framework lambda=0 comparator gluing: omega^2_trace and omega^2_TT OPPOSITE-signed (omega^2_TT<0 in this convention)",
       wt0 * ws0 < 0 and ws0 < 0)
 wt1, ws1 = disp(-2 / bn ** 2, +1 / bn ** 2)   # GR lambda=1 control
-check("T3 GR control lambda=1: omega^2_trace>0 AND omega^2_TT>0 (healthy graviton) -> method sound",
+check("T3 GR control lambda=1: omega^2_trace>0 AND omega^2_TT>0 inside the same sign convention",
       wt1 > 0 and ws1 > 0)
 # global-sign theorem: degenerate G (G_trace=G_shear=g0); omega^2_trace*omega^2_TT = (V_tr V_sh)/g0^2 < 0 always
 gs_ok = True
@@ -88,8 +90,8 @@ n_pass = sum(1 for _, ok in results if ok); n_fail = sum(1 for _, ok in results 
 for name, ok in results:
     print(("PASS" if ok else "FAIL"), name)
 print()
-print("framework lambda=0: omega^2_trace=%.3f  omega^2_TT=%.3f (opposite, TT tachyonic)" % (wt0, ws0))
-print("GR lambda=1 control: omega^2_trace=%.3f  omega^2_TT=%.3f (both healthy)" % (wt1, ws1))
-print("DEFECT = missing conformal/indefiniteness term; missing primitive narrows to ONE object:")
-print("  a spin-2-coupled two-derivative curvature generator PAIRED with a non-degenerate fiber metric.")
+print("framework lambda=0 comparator gluing: omega^2_trace=%.3f  omega^2_TT=%.3f (opposite signs)" % (wt0, ws0))
+print("GR lambda=1 control in the same convention: omega^2_trace=%.3f  omega^2_TT=%.3f (same positive sign)" % (wt1, ws1))
+print("BOUNDARY = conditional sign algebra for supplied comparator signs and simple V/G gluing;")
+print("open = framework-native curvature signs, dynamical gluing law, and finite-k W/stress routes.")
 print("TOTAL: PASS=%d FAIL=%d" % (n_pass, n_fail))

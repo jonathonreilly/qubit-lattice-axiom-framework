@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 803 |
+| **retained_bounded** | 804 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1321 |
+| unaudited | 1320 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1242 |
+| `audited_clean` | 1243 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1636 |
+| `unaudited` | 1635 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 785 |
-| `leaf` | 1284 |
+| `medium` | 787 |
+| `leaf` | 1282 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -1162,6 +1162,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_capture_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_green_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `staggered_backreaction_iterative_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_capture_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -16856,6 +16857,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The live runner supports `resistance_yukawa` as the best current holdout-aware map in the frozen comparison, with the quoted raw cycle, improvement, raw holdout, and calibrated holdout gaps.  _(class `C`)_
 - **chain closes:** True — The provided runner and helper source generate the graph families, apply the screened Poisson, geodesic Yukawa, and resistance Yukawa maps, evolve the probe state, and compute the displayed gaps and checks. The wrapper numbers match the runner stdout arithmetic, including 9.618e-01 / 3.425e-01 = 2.81x, and the caveats are retained in the audited scope.
 - **rationale:** The load-bearing step is a bounded first-principles finite-runner computation from the supplied graph and evolution definitions, not a cross-note import, renaming, or external comparator match. The runner source does not hard-code the contested output values; it computes them from deterministic graph construction, sparse graph operators, Green kernels, gain fitting, and force diagnostics. The claim is clean only at the stated bounded scope: it supports the frozen runner comparison and explicitly does not close the calibrated holdout or endogenous self-gap.
+- **auditor confidence:** high
+
+### `staggered_backreaction_iterative_note`
+
+- **Note:** [`STAGGERED_BACKREACTION_ITERATIVE_NOTE.md`](../../docs/STAGGERED_BACKREACTION_ITERATIVE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite current-runner scan of linear Laplacian-sharpened and inverse-heat source mappings for the included staggered backreaction graph families.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-143242-cf81418aca-staggered_backreaction_itera`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The best current map is `invheat_b3p00`, with best cycle-bearing mean gap `4.314e-01`, improvement factor `2.23x`, and best-map self-gap mean `1.581e+01` while TOWARD and norm-stability remain intact.  _(class `C`)_
+- **chain closes:** True — The primary runner and helper source actually construct the graph families, apply the source maps, solve the screened graph Poisson field, evolve the Hamiltonian, and compute the force/self-gap diagnostics rather than printing hard-coded asserted values. The closure is only for the finite implemented scan, not for a general no-closure theorem over all possible maps.
+- **rationale:** The note is scoped to the current finite runner and explicitly says this is not a closure theorem. The runner source has no load-bearing import of a contested premise or hard-coded expected result; it computes the quantities from the specified graph/source/field/evolution pipeline. Independent arithmetic on the displayed `invheat_b3p00` rows gives cycle-bearing mean gap `4.314e-01`, self-gap mean `1.581e+01`, and improvement factor about `2.23x`, matching the asserted facts. No cited support/open authority is imported.
 - **auditor confidence:** high
 
 ### `staggered_backreaction_live_capture_packet_note_2026-05-29`

@@ -1,6 +1,6 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1457,
+    "bounded_theorem": 1459,
     "decoration": 53,
     "meta": 324,
     "no_go": 328,
@@ -11,6 +11,10 @@
     [
       "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
       "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
+    ],
+    [
+      "g_newton_born_as_source_positive_theorem_note_2026-05-10_gnewtong2",
+      "g_newton_self_consistency_bounded_sharpening_note_2026-05-10_planckp4"
     ],
     [
       "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
@@ -27,15 +31,9 @@
       "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
       "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
       "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30"
-    ],
-    [
-      "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
-      "beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04",
-      "beta6_plaquette_d9_coefficient_bounded_note_2026-06-04",
-      "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30"
     ]
   ],
-  "cycles_detected": 17,
+  "cycles_detected": 18,
   "effective_status_counts": {
     "audited_conditional": 20,
     "audited_numerical_match": 15,
@@ -69,11 +67,11 @@
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 316,
     "open_gate": 37,
-    "retained": 211,
-    "retained_bounded": 804,
+    "retained": 210,
+    "retained_bounded": 802,
     "retained_no_go": 206,
     "retained_pending_chain": 13,
-    "unaudited": 1377
+    "unaudited": 1382
   },
   "retained_pending_chain_count": 13,
   "retained_pending_chain_examples": [

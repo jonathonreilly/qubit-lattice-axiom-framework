@@ -11,20 +11,20 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3083 |
-| Applied audit verdicts | 1388 |
-| Retained-grade rows, including boxed decorations | 1270 |
-| Retained positive theorems | 211 |
+| Ledger rows | 3085 |
+| Applied audit verdicts | 1383 |
+| Retained-grade rows, including boxed decorations | 1267 |
+| Retained positive theorems | 210 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 804 |
+| Retained bounded rows | 802 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1377 |
+| Unaudited rows | 1382 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 20 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
-| Citation cycles detected | 17 |
+| Citation cycles detected | 18 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -33,35 +33,35 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1379 |
-| Ready rows | 33 |
-| Cycle-break targets | 17 |
-| Critical pending | 329 |
+| Total pending rows | 1386 |
+| Ready rows | 34 |
+| Cycle-break targets | 18 |
+| Critical pending | 333 |
 | High pending | 254 |
-| Medium pending | 372 |
-| Leaf pending | 424 |
+| Medium pending | 373 |
+| Leaf pending | 426 |
 
 Next ready rows by queue order:
 
 - [`microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) - critical; unaudited
+- [`lattice_greens_function_maradudin_textbook_import_note_2026-05-18`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) - critical; audit_in_progress
+- [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; unaudited
+- [`yt_ew_matching_rule_m_note_2026-05-02`](../../docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md) - critical; audit_in_progress
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`plaquette_bootstrap_framework_integration_note_2026-05-03`](../../docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md) - medium; unaudited
 - [`free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) - medium; unaudited
-- [`universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
-- [`magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md) - medium; unaudited
-- [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **435**.
+- Non-retained-grade cited rows in publication tables: **436**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 188 |
+| critical | `unaudited` | 189 |
 | high | `unaudited` | 144 |
 | medium | `unaudited` | 88 |
 | critical | `audited_renaming` | 3 |
@@ -79,19 +79,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3220 |
-| Critical nodes | 530 |
-| High nodes | 457 |
-| Medium nodes | 831 |
+| Citation-graph nodes | 3222 |
+| Critical nodes | 533 |
+| High nodes | 455 |
+| Medium nodes | 832 |
 | Leaf nodes | 1402 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1421 descendants; score 106.974
-- `three_generation_observable_theorem_note` - critical; 768 descendants; score 61.087
+- `minimal_axioms` - critical; 1428 descendants; score 107.981
+- `three_generation_observable_theorem_note` - critical; 769 descendants; score 61.089
 - `observable_principle_from_axiom_note` - critical; 856 descendants; score 58.243
-- `graph_first_su3_integration_note` - critical; 1294 descendants; score 55.339
+- `graph_first_su3_integration_note` - critical; 1295 descendants; score 55.840
 - `minimal_axioms_2026-05-03` - critical; 495 descendants; score 47.954
-- `key_terminology` - critical; 1034 descendants; score 47.015
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1205 descendants; score 42.736
+- `key_terminology` - critical; 1036 descendants; score 47.018
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1207 descendants; score 43.238
 - `anomaly_forces_time_theorem` - critical; 1011 descendants; score 40.483

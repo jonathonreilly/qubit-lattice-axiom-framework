@@ -14520,6 +14520,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_index_pairing_not_forced_kinetic_order_selector_2026_06_08.py"
     },
+    "induced_composite_link_trajectory_covariance_increment_law_non_autonomy_bounded_theorem_note_2026-06-08": {
+      "assert_count": 3,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 55,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_induced_composite_link_trajectory_non_autonomy_2026_06_08.py"
+    },
     "industrial_sdp_bootstrap_infrastructure_note_2026-05-03": {
       "assert_count": 1,
       "counts": {
@@ -30083,6 +30095,18 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/frontier_three_generation_structure_narrow_spectrum.py"
+    },
+    "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": {
+      "assert_count": 1,
+      "counts": {
+        "A": 14,
+        "B": 5,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py"
     },
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17": {
       "assert_count": 8,
@@ -52779,6 +52803,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_induced_composite_link_trajectory_non_autonomy_2026_06_08.py": {
+      "assert_count": 3,
+      "claims": [
+        "induced_composite_link_trajectory_covariance_increment_law_non_autonomy_bounded_theorem_note_2026-06-08"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 55,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_industrial_sdp_bootstrap_block01.py": {
       "assert_count": 1,
       "claims": [
@@ -63938,6 +63977,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py": {
+      "assert_count": 1,
+      "claims": [
+        "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+      ],
+      "counts": {
+        "A": 14,
+        "B": 5,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_trYsquared_proof_walk_lattice_independence.py": {
       "assert_count": 1,
       "claims": [
@@ -73779,14 +73833,14 @@
   "stats": {
     "decoration_candidates": 518,
     "dominant_class_distribution": {
-      "A": 380,
+      "A": 381,
       "B": 445,
-      "C": 1019,
+      "C": 1020,
       "D": 375,
       "none": 456
     },
-    "runners_classified": 2675,
-    "runners_with_C": 1365,
-    "runners_with_D": 796
+    "runners_classified": 2677,
+    "runners_with_C": 1367,
+    "runners_with_D": 797
   }
 }

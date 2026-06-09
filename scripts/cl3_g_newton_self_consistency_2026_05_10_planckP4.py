@@ -1,8 +1,8 @@
 """
 G_Newton Self-Consistency — Bounded Sharpening (planckP4 probe).
 
-Investigates whether the retained physical Cl(3) local algebra on the Z^3
-spatial substrate can derive
+Investigates whether the retained one-qubit operator algebra / physical Cl(3)
+real-algebra reading on the Z^3 Lattice can derive
 the G_Newton self-consistency closure of the unaudited gravity-clean chain
 (GRAVITY_CLEAN_DERIVATION_NOTE).
 
@@ -16,9 +16,9 @@ Two-part theorem (this runner verifies both):
 
   (POSITIVE, P1) Dimensional G_Newton form theorem.
   Given the retained physical Cl(3) / Z^3 lattice Green's function asymptotic
-  G(r) -> 1/(4 pi r) (lattice potential theory; Maradudin et al. 1971,
-  external math input) and assuming the three named closure admissions
-  hold, the gravitational coupling on the lattice MUST take the form
+  G(r) -> 1/(4 pi r) from the framework-local Green-kernel theorem (textbook
+  references parallel, not load-bearing) and assuming the three named closure
+  admissions hold, the gravitational coupling on the lattice MUST take the form
 
       G_lat = 1 / (4 pi)        (dimensionless lattice units)
       G_SI  = (a_s^2 / a_tau) * c_LR * G_lat / M_lat
@@ -47,39 +47,38 @@ Two-part theorem (this runner verifies both):
     than (e.g.) the wavefield d'Alembertian skeleton. The
     GRAVITY_FULL_SELF_CONSISTENCY_NOTE explicitly admits this:
     "the load-bearing identification L^{-1} = G_0 is stipulated, not
-    derived from the physical Cl(3) local algebra on the Z^3 spatial
-    substrate."
+    derived from the one-qubit operator algebra / physical Cl(3) real-algebra
+    reading on the Z^3 Lattice."
 
-    Barrier B(b): The Born map rho = |psi|^2 is target-side per
-    Barrier G4 of the prior probe note (KOIDE_A1_PROBE_GRAVITY_PHASE_*).
-    Any derivation of this map as the unique mass-density source would
-    have to come from a retained positive/bounded gravitational-mass-coupling theorem,
-    which is not in the audit ledger.
+    Barrier B(b) refresh: The old "no retained positive/bounded
+    Born-as-gravity-source theorem" check is stale on current main. The
+    runner now discovers named Born-source support rows and treats admission
+    (b) as a dependency-composition gate, not as an absent-support blocker.
 
     Barrier B(c): The weak-field test-mass action S = L(1 - phi) is
     a propagator-level construction (used in DIMENSIONAL_GRAVITY_TABLE
     and STAGGERED_NEWTON_REPRODUCTION_NOTE), not a retained derivation
-    from the physical Cl(3) local algebra plus Z^3 spatial substrate
-    baseline. It is a modeling identification, not a
+    from the one-qubit operator algebra / physical Cl(3) real-algebra reading
+    plus Z^3 Lattice baseline. It is a modeling identification, not a
     forced consequence of retained content.
 
 CONCLUSION (SHARPENED, NOT FULLY CLOSED):
 
   - The dimensional G_Newton form is structurally rigid given the
     three admissions (positive sub-theorem P1).
-  - The three admissions themselves are not derivable from current
-    retained content (negative obstruction P2).
-  - The gravity-clean chain therefore remains
-    audited_conditional / bounded_theorem on three named admissions,
-    but the dimensional structure of the coupling is sharper than
-    a free numerical parameter would suggest.
+  - The parent chain still does not close unconditionally: propagator
+    skeleton selection and weak-field response remain unforced, while the
+    Born-source admission now has a named dependency-composition route.
+  - The gravity-clean chain therefore remains a conditional IF-chain on named
+    dependency gates, but the dimensional structure of the coupling is sharper
+    than a free numerical parameter would suggest.
 
-  Closing the unconditional G_Newton self-consistency requires NEW
-  retained primitives addressing barriers B(a), B(b), B(c) -- they
-  cannot be closed by relabeling existing content. This is consistent
-  with KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08
-  Barrier G2: "the clean-derivation chain is unaudited and explicitly
-  conditional on three named closures, none of which is audit-clean."
+  Closing the unconditional G_Newton self-consistency requires retained
+  derivations for B(a) and B(c), plus explicit composition through the
+  current Born-source dependency for B(b). It cannot be closed by relabeling
+  existing content. This is consistent with
+  KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08 Barrier G2:
+  the clean-derivation chain is conditional on named closure gates.
 
 The runner verifies:
 
@@ -93,9 +92,8 @@ The runner verifies:
   2. Non-derivability obstruction check (P2):
      - Multiple retained propagator skeletons exist; no retained
        theorem forces gravity to use the Hamiltonian skeleton.
-     - Born map rho = |psi|^2 is not a unique consequence of the
-       axiom; alternative source maps (e.g. rho = Tr|psi><psi|) give
-       same answer for pure states but diverge for mixed states.
+     - Born map rho = |psi|^2 has named bounded support rows on current
+       main; admission (b) is no longer checked as absent support.
      - Weak-field test-mass action S = L(1 - phi) is a modeling
        identification, not a forced consequence.
 
@@ -107,13 +105,12 @@ The runner verifies:
 
   4. Frontier identification:
      - To close G_Newton unconditionally would require: a retained
-       propagator-skeleton-selection theorem, a retained Born-map
-       derivation theorem, and a retained weak-field-action
+       propagator-skeleton-selection theorem, explicit composition through
+       the Born-source dependency, and a retained weak-field-action
        derivation theorem.
-     - None of these exists in the audit ledger as of 2026-05-10.
      - This is the explicit frontier identified by the parent note.
 
-Total expected: 23 PASS / 0 FAIL.
+Total expected: 32 PASS / 0 FAIL.
 
 Forbidden imports (per task rules):
   - NO PDG observed values used as derivation input. G_Newton SI is
@@ -167,14 +164,14 @@ def section_header(text):
 
 # ----------------------------------------------------------------------
 # Section 1: Z^3 lattice Green function asymptotic (positive sub-theorem
-# input; external math theorem)
+# input; framework-local Green-kernel theorem)
 # ----------------------------------------------------------------------
 
 def lattice_green_function_z3(r, L=64):
     """Compute the Z^3 lattice Green function G(r, 0) = <r| (-Delta_lat)^-1 |0>.
 
     Uses Fourier integral with discretized BZ. Returns G(r) such that
-    4*pi*r*G(r) -> 1 as r -> infinity (Maradudin et al. 1971).
+    4*pi*r*G(r) -> 1 as r -> infinity for the framework-local Green theorem.
 
     Implementation: discretized 3D Fourier transform on L^3 grid. We
     compute the inverse of the discrete Laplacian eigenvalues
@@ -426,18 +423,18 @@ def section3_obstruction_propagator_skeleton():
 
 
 def section4_obstruction_born_map():
-    """P2 Barrier B(b): Born map rho = |psi|^2 is target-side, not
-    derivable from retained baseline content as the unique mass-density."""
-    section_header("Section 4: Barrier B(b) Born-map non-uniqueness")
+    """P2 Barrier B(b): refresh the Born-source dependency gate."""
+    section_header("Section 4: Barrier B(b) Born-source dependency refresh")
 
-    # The Born map operates AFTER psi is given. It does not constrain
-    # how the wavefunction couples to gravity. Multiple alternative
-    # source maps exist that agree on pure states but differ on mixed:
+    # The Born map operates AFTER psi is given. It does not by itself select
+    # the gravitational skeleton. Multiple source maps agree on pure states but
+    # differ on mixed:
     #   rho = |psi|^2                (Born map, used by gravity-clean)
     #   rho = Tr|psi><psi|           (density-matrix trace; coincides for pure states)
     #   rho = sum_n p_n |psi_n|^2    (mixed-state Born; reduces to Born for p_n = delta_n)
-    # No retained positive/bounded theorem forces gravity to use the pure-state Born map
-    # over the density-matrix trace.
+    # Current main now contains named retained/bounded Born-source support rows.
+    # This changes the old blocker from "no support row exists" to a dependency
+    # composition gate for the parent gravity-clean chain.
 
     import numpy as np
 
@@ -475,10 +472,9 @@ def section4_obstruction_born_map():
         "matches Barrier G4 of KOIDE_A1_PROBE_GRAVITY_PHASE",
     )
 
-    # No retained positive/bounded theorem in the audit ledger derives
-    # rho = |psi|^2 specifically as the gravitational source map (vs as a
-    # probability interpretation of psi). Retained no-go Born rows are
-    # obstruction support, not positive derivation theorems.
+    # Discover retained/bounded source-support rows now present in the audit
+    # ledger. Do not modify the ledger; this check only keeps the source runner
+    # aligned with current main.
     try:
         with open("docs/audit/data/audit_ledger.json") as f:
             ledger = json.load(f)
@@ -500,9 +496,9 @@ def section4_obstruction_born_map():
             ):
                 born_derivation_theorems.append(slug)
         report(
-            "S4.4 no retained positive/bounded Born-as-gravity-source theorem in ledger",
-            len(born_derivation_theorems) == 0,
-            f"found {len(born_derivation_theorems)} matching retained positive/bounded theorems (expected 0)",
+            "S4.4 retained/bounded Born-source support rows are now discoverable",
+            len(born_derivation_theorems) >= 1,
+            f"found {len(born_derivation_theorems)} matching retained positive/bounded theorem(s)",
         )
     except FileNotFoundError:
         report("S4.4 audit ledger present", False, "ledger not found")
@@ -628,16 +624,16 @@ def section7_theorem_statement():
         "G_Newton form rigid given retained Z^3 Green function + dimensional inputs",
     )
 
-    # P2 (negative obstruction) verified by Sections 3-5:
+    # P2 (negative obstruction / dependency refresh) verified by Sections 3-5:
     p2_barrier_a = True  # Section 3
-    p2_barrier_b = True  # Section 4
+    p2_barrier_b = True  # Section 4 now records a dependency-composition gate
     p2_barrier_c = True  # Section 5
     report(
         "S7.2 P2 Barrier B(a) propagator-skeleton non-uniqueness verified",
         p2_barrier_a,
     )
     report(
-        "S7.3 P2 Barrier B(b) Born-map non-uniqueness verified",
+        "S7.3 P2 Barrier B(b) Born-source dependency refresh verified",
         p2_barrier_b,
     )
     report(
@@ -655,9 +651,9 @@ def section7_theorem_statement():
 
     # Frontier identification
     report(
-        "S7.6 closure frontier identified (3 retained primitives needed)",
+        "S7.6 closure frontier identified (2 retained derivations plus Born-source composition)",
         True,
-        "(a) propagator-skeleton selection theorem; (b) Born-as-gravity-source theorem; (c) weak-field-action derivation theorem",
+        "(a) propagator-skeleton selection theorem; (b) compose through Born-source dependency; (c) weak-field-action derivation theorem",
     )
 
 
@@ -693,18 +689,17 @@ def main():
         print("Bounded sharpening verified:")
         print("  - P1 (positive): dimensional G_Newton form is rigid given")
         print("    retained Z^3 Green function + dimensional inputs.")
-        print("  - P2 (negative): three named admissions are not derivable")
-        print("    from retained baseline content alone.")
+        print("  - P2 (negative/refresh): propagator skeleton and")
+        print("    weak-field response remain unforced; Born source now has")
+        print("    named dependency support to compose through.")
         print()
-        print("Status of GRAVITY_CLEAN_DERIVATION_NOTE: remains")
-        print("audited_conditional / bounded_theorem on three named admissions.")
+        print("GRAVITY_CLEAN_DERIVATION_NOTE remains a conditional IF-chain")
+        print("on named dependency gates.")
         print()
-        print("Closing G_Newton unconditionally requires NEW retained primitives:")
+        print("Closing G_Newton unconditionally requires:")
         print("  (a) propagator-skeleton selection theorem")
-        print("  (b) Born-as-gravity-source derivation theorem")
+        print("  (b) explicit composition through the Born-source dependency")
         print("  (c) weak-field-action derivation theorem")
-        print()
-        print("None of these exists in the audit ledger as of 2026-05-10.")
         return 0
     else:
         print()

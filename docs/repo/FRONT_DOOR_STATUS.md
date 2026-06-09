@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3056 |
-| Applied audit verdicts | 1400 |
+| Applied audit verdicts | 1399 |
 | Retained-grade rows, including boxed decorations | 1276 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 808 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 37 |
-| Unaudited rows | 1338 |
+| Unaudited rows | 1339 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 26 |
+| Audited conditional rows | 25 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 16 |
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1340 |
-| Ready rows | 16 |
+| Total pending rows | 1341 |
+| Ready rows | 17 |
 | Cycle-break targets | 16 |
 | Critical pending | 328 |
 | High pending | 253 |
-| Medium pending | 367 |
+| Medium pending | 368 |
 | Leaf pending | 392 |
 
 Next ready rows by queue order:

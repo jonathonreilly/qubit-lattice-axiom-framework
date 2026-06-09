@@ -1,0 +1,14 @@
+loop_id: magnitude-4pi-runner-status-repair-20260609
+status: packaged_for_review
+created: 2026-06-09
+target_claim_id: magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06
+target_prior_audit_status: audited_conditional
+source_note: docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md
+runner: scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py
+runner_cache: logs/runner-cache/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.txt
+audit_blocker: "runner_artifact_issue: update the primary runner/source note/cache so the minimal-block readout demotion markers and advertised PASS/FAIL total match the current retained_no_go packet, then re-run the audit."
+actual_current_surface_status: bounded-support artifact repair
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

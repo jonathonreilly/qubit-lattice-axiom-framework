@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py
-runner_sha256: d0f65d20c4fb3322ae0d062b70c072585ae146fd6f33b469ad09a82253fdbfe1
+runner_sha256: ab5439acc994c14fe7ccb8289f5a9165d04be520b35d0e9a10c932f7020ec5cb
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.58
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
 ----- stdout -----
 --- Status firewall and source packet ---
 PASS: 4pi note contains status/source-boundary marker: actual_current_surface_status=bounded-support
@@ -40,9 +40,9 @@ PASS: minimal-block readout demotion packet doc exists
 PASS: minimal-block readout demotion packet runner exists
 PASS: minimal-block readout demotion packet cache exists
 PASS: minimal-block readout demotion packet cache has passing marker
-FAIL: minimal-block readout demotion packet source marker: framing DEMOTED
-FAIL: minimal-block readout demotion packet source marker: readout-scale selection is a **principle-extension**
-FAIL: minimal-block readout demotion packet source marker: flagged-open
+PASS: minimal-block readout demotion packet source marker: What does **not** follow is the readout-scale selection.
+PASS: minimal-block readout demotion packet source marker: select the minimal block over the OS continuum.
+PASS: minimal-block readout demotion packet source marker: Missing bridge:     UV/minimal-block readout selection
 PASS: minimal-block readout demotion packet source marker: readout-scale selection
 PASS: I1 static-source readout remains unaudited
 PASS: I1 static-source readout note records premise/import boundary
@@ -74,7 +74,7 @@ PASS: all readout/convention/dressing residuals are explicitly not retained
 PASS: bounded result is a source-boundary, not a hierarchy value derivation
 PASS: audit lane remains required before any effective retained status
 
-TOTAL: PASS=59 FAIL=3
+TOTAL: PASS=62 FAIL=0
 
 ----- stderr -----
 

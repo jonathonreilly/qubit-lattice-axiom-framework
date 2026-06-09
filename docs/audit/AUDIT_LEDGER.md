@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 789 |
+| **retained_bounded** | 790 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1346 |
+| unaudited | 1345 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1227 |
+| `audited_clean` | 1228 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1661 |
+| `unaudited` | 1660 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 791 |
-| `leaf` | 1278 |
+| `medium` | 785 |
+| `leaf` | 1284 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -552,6 +552,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -7601,6 +7602,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For these explicit witness families the runner certifies coefficient-order minimality of rho_0 and a positive-semidefinite Loewner increment for both tested tails inside the canonical factorized cone.  _(class `C`)_
 - **chain closes:** True — Within the stated bounded scope, the coefficientwise and tail-functional claims follow directly from nonnegative tails over the retained zero extension, and the displayed tail metrics independently check by SU(3) dimension arithmetic. The PSD Loewner increments are verified for the two named tails by the included factorized-transfer computation; the universal arbitrary-tail theorem remains explicitly outside scope.
 - **rationale:** The source note has been scope-narrowed to finite witness families and explicitly refuses the previously overbroad universal Loewner-minimality claim. The primary runner source computes the retained packet properties, assembles the factorized Wilson transfer, and checks the two named PSD increments rather than merely printing constants or substring-importing prose. The cited authorities are retained-grade for this bounded role, and their remaining framework-point/open-universal language is not imported as part of this claim.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_RANK_ONE_FACTORIZED_CLASS_BOUNDARY_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_RANK_ONE_FACTORIZED_CLASS_BOUNDARY_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the four-weight first-sector finite packet, the explicitly constructed positive rank-one transfer T_min satisfying T_min^3 e_0 = v_min is not representable as exp(3J) D exp(3J) with diagonal conjugation-symmetric D.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-131604-1ba84b11dc-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner forms the unique pullback D_back = M^{-1} T_min M^{-1}; since M is invertible and D_back is not diagonal, the explicit T_min is not in the diagonal subfamily T = M D M.  _(class `C`)_
+- **chain closes:** True — The rank-one propagation identity follows algebraically from T_min = lambda vv^T with lambda^3 v_0 ||v||^4 = 1. Independently recomputing the finite matrices gives det(M)=1, ||offdiag(D_back)||_F=0.250338180104, and reconstruction error at numerical precision, so the diagonal-subfamily exclusion follows.
+- **rationale:** The source and helpers compute the finite objects from the displayed SU(3)/recurrence definitions rather than importing a contested premise or merely printing constants. The load-bearing membership exclusion is stronger than the optimizer residual: invertibility of M makes the pullback unique, and the independently recomputed pullback is plainly non-diagonal. The helper notes contain broader open Wilson-environment language, but the audited claim explicitly stays within the finite diagonal factorized-class packet and does not rely on closing that broader identification.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19`

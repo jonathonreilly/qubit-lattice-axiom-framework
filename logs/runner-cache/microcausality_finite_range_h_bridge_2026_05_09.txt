@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/microcausality_finite_range_h_bridge_2026_05_09.py
-runner_sha256: a84a54f25655932aa12c66302a57050ee5956ee479aeae73272af8b8d30f91b2
+runner_sha256: d031291f08d607a5505d5cee712189b6d64b60e13f15d67caac3c1421f202555
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.90
+elapsed_sec: 0.94
 status: ok
 ----- stdout -----
 
@@ -19,6 +19,12 @@ References:
   - Bridge note: docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md
   - Parent: docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md
   - RP note: docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+
+========================================================================
+TEST F0: note manifest matches corrected Wilson plaquette normalization
+========================================================================
+  [PASS] F0 — note/runner manifest uses corrected Wilson plaquette normalization
+         corrected 2β plaquette slot and no-double-division guard are present
 
 ========================================================================
 TEST F1: finite-range support of h_z (radius r = 1 lattice spacing)
@@ -136,12 +142,13 @@ TEST F4: outside-lightcone exponential decay (operational check)
 ========================================================================
 SUMMARY
 ========================================================================
+  F0 note manifest / Wilson normalization guard:         PASS
   F1 action-density local support:                       PASS
   F2 explicit J_max bound from action coefficients:      PASS
   F3 conditional v_LR = 2erJ LR bound holds on toy H:    PASS
   F4 outside-lightcone exponential decay:                PASS
 
-  PASS=4, FAIL=0
+  PASS=5, FAIL=0
   OVERALL: PASS
 
 The runner checks bounded action-support/J-budget pieces only.

@@ -19,6 +19,13 @@ then gives the corresponding `v_LR <= 2 e r J` bound. This note
 supplies bounded action-support evidence for the parent microcausality
 bridge; it does not prove the exact non-perturbative
 `H = -log(T)/a_tau` finite-range step.
+**Audit repair:** 2026-06-09 J-normalization + Wilson-surface bridge
+repair. The previous draft bounded each Wilson plaquette by
+`2β/N_c`; on the canonical Wilson surface
+`S_W = (β/N_c) sum_P (N_c - Re Tr U_P) =
+β sum_P (1 - Re Tr U_P/N_c)`, the normalized plaquette slot is
+bounded by `2β`. This raises the conservative bound from `|m| + 30`
+to `|m| + 78` and removes the double division by `N_c`.
 **Status authority:** independent audit lane only. This source note is
 a bounded support theorem; it does not set or predict an audit outcome.
 **Primary runner:** `scripts/microcausality_finite_range_h_bridge_2026_05_09.py`
@@ -98,6 +105,11 @@ Adopt the parent reflection-positivity note's action carriers verbatim:
   plaquette `P` couples four sites that span a single elementary
   square; in the time-direction transfer-matrix decomposition each
   plaquette term contributes to `h_z` for `z` at the plaquette corner.
+  Equivalently, on the canonical Wilson surface,
+  `S_G = (β/N_c) · sum_P (N_c - Re Tr U_P)
+       = β · sum_P (1 - Re Tr U_P/N_c)`. The factor `1/N_c`
+  normalizes the trace inside the plaquette slot; after this rewrite
+  the per-plaquette coefficient is `β`, not `β/N_c`.
 
 - **Lattice ℓ¹ graph distance** `d(x, y) = ‖x - y‖_1` on `Z^d`.
 
@@ -272,8 +284,8 @@ Each summand is bounded in operator norm:
 - **Plaquette:** ‖β Re[1 - (1/N_c) tr U_P]‖_op
   ≤ β · |1 - (1/N_c) tr U_P| ≤ 2β
   per plaquette (using `|tr U_P| ≤ N_c` for unitary U_P, hence
-  `|1 - (1/N_c) tr U_P| ≤ 2`). Summing over plaquette orientations
-  assigned to `z`, there are `d(d-1)/2` such plaquettes. The
+  `Re tr(U_P)/N_c ∈ [-1, 1]`). Summing over plaquette orientations
+  assigned to `z`, there are `q_face = d(d-1)/2` such plaquettes. The
   conservative per-site bound is therefore
   `2β · d(d-1)/2`.
 
@@ -352,11 +364,12 @@ The proof uses:
   pure-mathematics theorem (Lieb-Robinson 1972 §III, Nachtergaele-Sims
   2010 §3-4); no further physics input.
 
-No fitted parameters. No observed values. No imports beyond what the
-parent note already cites. F1 and F2 are derived from action
-coefficients, not inferred from RP/spectrum positivity; the exact
-finite-range/quasilocal property of the reconstructed logarithmic
-Hamiltonian is not derived here.
+No fitted parameters. No observed values. The repair only makes the
+Wilson-surface normalization already present in the parent action
+carriers explicit; it is not a new numerical import or a retained-status
+claim. F1 and F2 are derived from action coefficients, not inferred from
+RP/spectrum positivity; the exact finite-range/quasilocal property of
+the reconstructed logarithmic Hamiltonian is not derived here.
 
 ## Corollaries
 

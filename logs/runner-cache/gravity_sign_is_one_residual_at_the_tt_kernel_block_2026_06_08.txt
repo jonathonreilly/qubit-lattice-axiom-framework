@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/gravity_sign_is_one_residual_at_the_tt_kernel_block_2026_06_08.py
+runner_sha256: e7adbe54607675cccf61d7c6bedbca697d4a913d03dd8fa2bfdb0185da448725
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+GRAVITY SIGN: bounded scalar-W TT-kernel residual locator
+==============================================================================
+[PASS] K1 exchange-sign identity under supplied source/action premises
+       kappa=+1: K_TT=+0.50, V=-0.50; kappa=-1: K_TT=-0.50, V=+0.50
+[PASS] K2 scalar-W Hessian annihilates TT spin-2 samples
+       checked=4000, max |qhat qhat : h_TT|=1.11e-15
+[PASS] K3 source note keeps the route boundary explicit
+       guardrails present for bounded scope, scalar-W-only kernel, no-go discipline, and no primitive
+
+TOTAL: PASS=3 FAIL=0
+VERDICT: PASS for the bounded route locator. Under supplied source/action premises,
+the attraction sign tracks the healthy spin-2 kinetic sign. The scalar-W metric
+Hessian is rank-one longitudinal and annihilates TT perturbations, so that route
+cannot determine the spin-2 kinetic sign. Geometric, full stress-response, and
+RP/unitarity routes remain open.
+
+----- stderr -----
+

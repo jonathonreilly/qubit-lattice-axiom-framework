@@ -1,4 +1,4 @@
-# Structure Derived, Couplings Admitted: the Admission Floor Unifies to One Shared Missing Primitive — Manuscript Synthesis
+# Structure Derived, Couplings Admitted: the Admission Floor Unifies to One Shared Missing *Kind* of Input — Manuscript Synthesis
 
 **Date:** 2026-06-08
 **Type:** publication / manuscript-surface synthesis (unifying narrative)
@@ -13,7 +13,8 @@ introduces no new axiom, primitive, or vocabulary; it catalogs already-stated re
 A single backward-looking statement of the paper's honest shape: **what the framework derives
 (the Standard-Model *structure*) versus what it admits (the *couplings*, the *metric scale*,
 and the *arrow*)** — and the observation that the admitted floor is **not a scattered list but
-one shared missing primitive**. This is the narrative; the per-row science lives in the cited
+one shared missing *kind* of input** (the un-derived dynamical couplings/gradings), realized as a
+small set of distinct recurring imports. This is the narrative; the per-row science lives in the cited
 notes and the audit ledger.
 
 ## 1. What the framework derives — the SM *structure*
@@ -51,39 +52,45 @@ are dimensionless **values**, plus universal-floor inputs every theory takes:
   `scale_reference` primitive) and the **arrow / Past Hypothesis** (a low-entropy boundary every
   time-symmetric theory needs).
 
-## 3. The unification — one shared missing primitive
+## 3. The unification — one shared missing *kind* of input
 
 This session's analysis (per-item notes in active review) finds the four dimensionless/structural
-admissions are **not independent** — they trace to the *same* missing object: the **un-derived
-CP-odd / coupling sector of the Record-forced action**, tied to a single **orientation `Z₂`** and
-the **clock-rate / arrow**. Concretely:
+admissions are **not independent** — they trace to the *same kind* of missing input: the
+**un-derived couplings/gradings of the Record-forced action** (plus the metric scale and arrow).
+This is realized as a **small set of distinct recurring imports**, **not** literally a single
+`Z₂` (an earlier loose "one orientation `Z₂`" framing was an over-unification — corrected in
+[`CHIRAL_CONTENT_IS_THE_EPSILON_D_CHIRALITY_IMPORT...`](../../CHIRAL_CONTENT_IS_THE_EPSILON_D_CHIRALITY_IMPORT_DISTINCT_FROM_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md)).
+The recurring imports are genuinely distinct objects in distinct sectors:
 
-| floor item | the shared locus (as characterized) | source (in review) |
+| floor item | the recurring import (as characterized) | source (in review) |
 |---|---|---|
-| `r=1/2` | the holomorphic-vs-real polarization = the orientation `Z₂` (the i-identity gate's K-even real structure) | `I_IDENTITY_AUTOMORPHISM_GATE...`, `KOIDE_R_HALF_DYNAMICAL_DIRAC_GATE...` |
-| `δ` | the CP-odd phase: an un-derived CP-odd coupling + the rational-to-radian bridge | `KOIDE_PHASE_DELTA_SPECTRAL_FUNCTIONAL_NO_GO...` (δ salvaged-narrowed on main) |
-| `θ_gauge` | the `F̃F` coupling to the *same* orientation `Z₂` (color-sector parity not forced) | `STRONG_CP_THETA_GAUGE_PARITY_ROUTE...` |
+| `r=1/2` | the chiral-vs-real polarization, riding the `{ε,D}=0` **staggered chirality gate** (K-even, spatial) | `I_IDENTITY_AUTOMORPHISM_GATE...`, `CARRIER_ATTACHMENT...`, `KOIDE_R_HALF_DYNAMICAL_DIRAC_GATE...` |
+| `δ` | the CP-odd phase: an un-derived CP-odd coupling + the rational-to-radian bridge; its **sign** rides the K-even generation `Vandermonde` | `KOIDE_PHASE_DELTA_SPECTRAL_FUNCTIONAL_NO_GO...` (δ salvaged-narrowed on main) |
+| `θ_gauge` | the `F̃F` coupling to the **K-odd qubit/spacetime pseudoscalar `ω`** (a *distinct* object from the chirality `ε` and the generation Vandermonde) | `STRONG_CP_THETA_GAUGE_PARITY_ROUTE...` |
 | `ξ=1` | the conformal-class ratio is derived; the **scale** is the clock-rate boundary; full isotropy is the RG-naturalness gap | `MIN_TIME_STEP...`, `LORENTZ_NATURALNESS_GAP...` |
 
-The common statement, established structurally this session
+These imports are distinct (different `K`-parity and sector: the staggered `ε` is K-even/spatial,
+the pseudoscalar `ω=i·I` is K-odd/qubit, the generation Vandermonde is K-even/generation). What
+unifies them is a **single theme**, established structurally this session
 ([`NO_AXIOM_NATIVE_CP_SOURCE_RDELTA_THETA...`](../../NO_AXIOM_NATIVE_CP_SOURCE_RDELTA_THETA_UNFORCED_COEFFICIENTS_OF_RECORD_FORCED_ACTION_NO_GO_NOTE_2026-06-08.md), in review):
-**Record forces the action *form-class* (gauge-invariant-local) but not its *coefficients*; the
-CP-odd/coupling coefficients (`r`, `δ`, `θ`) and the metric scale (`ξ`) are exactly the unforced
-data, and there is no axiom-native CP-source** (the arrow is a boundary condition, not a dynamical
-T-violation; CPT is CP-protecting; the only orientation object is one sign-only `Z₂`).
+**Record forces the action *form-class* (gauge-invariant-local) but not its *couplings/gradings*;
+`r`, `δ`, `θ`, and the scale `ξ` are exactly the unforced data, and there is no axiom-native
+CP-source** (the arrow is a boundary condition, not a dynamical T-violation; CPT is CP-protecting).
 
 ## 4. The honest claim
 
 > The framework derives the Standard Model's **structure** — the gauge algebra (given the color
 > carrier), the three-generation pattern, anomaly cancellation, and emergent spatial isotropy —
-> from three minimal kinematic axioms. Its admission floor is **one shared missing primitive**:
-> the un-derived **dynamical-coupling / CP-odd sector** (tied to a single orientation `Z₂` and the
-> clock-rate / arrow), of which `r`, `δ`, `θ`, and `ξ` are four faces. That floor is **on par with,
-> and largely shared with, physics' own open problems** — flavor texture and strong-CP (admitted in
-> the SM too) plus the universal-floor scale and arrow — rather than a framework-specific deficit.
+> from three minimal kinematic axioms. Its admission floor is **one shared missing *kind* of input**:
+> the un-derived **dynamical couplings/gradings** of the Record-forced action (plus the metric scale
+> and arrow), of which `r`, `δ`, `θ`, and `ξ` are four faces — realized as a *small set of distinct
+> recurring imports*, not a single object. That floor is **on par with, and largely shared with,
+> physics' own open problems** — flavor texture and strong-CP (admitted in the SM too) plus the
+> universal-floor scale and arrow — rather than a framework-specific deficit.
 
-This is the strongest *honest* slogan: **structure from three axioms; the residual is one
-primitive, not many, and it is the same primitive the rest of the field also lacks.**
+This is the strongest *honest* slogan: **structure from three axioms; the residual is one *kind* of
+input — the un-derived dynamical couplings/gradings — not a scatter of unrelated admissions, and it
+is the same kind of input the rest of the field also lacks.**
 
 ## 5. What this synthesis does NOT do
 
@@ -91,8 +98,11 @@ primitive, not many, and it is the same primitive the rest of the field also lac
   cited row. Several per-item characterizations (Bridge-1 algebra, the no-axiom-native-CP unification,
   the strong-CP parity route, the i-identity gate) are **proposals in active review**, not landed
   retained results, and are labeled so.
-- It does **not** claim the floor is *derivable* — "one shared missing primitive" is a
+- It does **not** claim the floor is *derivable* — "one shared missing *kind* of input" is a
   *characterization* of the admission, not a derivation of it. The four items remain admitted.
+- It does **not** claim the recurring imports collapse to a single object; they are distinct
+  (the chiral `{ε,D}=0` gate, the K-odd pseudoscalar `ω`, the K-even generation Vandermonde, the
+  scalar `i`, the scale, the arrow), unified only by the form-vs-couplings theme.
 - It does **not** introduce a new axiom, primitive, vocabulary, or claim; it is backward-looking
   narrative over already-stated results, for the manuscript surface only.
 

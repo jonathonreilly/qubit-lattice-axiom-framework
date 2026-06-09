@@ -14,6 +14,7 @@ the boundary honest.
 
 from __future__ import annotations
 
+import hashlib
 import sys
 from pathlib import Path
 
@@ -43,6 +44,15 @@ def check(name: str, condition: bool, detail: str = "") -> None:
 def cache_text(runner: str) -> str:
     status = rc.cache_status(runner)
     cache_path, header, text = rc.load_cache(runner)
+    runner_path = ROOT / runner
+    live_sha = hashlib.sha256(runner_path.read_bytes()).hexdigest() if runner_path.is_file() else None
+    header_sha = str(header.get("runner_sha256")) if header is not None else None
+    source_ok = runner_path.is_file() and live_sha == header_sha
+    check(
+        f"{runner} source exists and matches cache SHA",
+        source_ok,
+        f"source={runner_path.relative_to(ROOT)}, live_sha={live_sha}, cache_sha={header_sha}",
+    )
     ok = (
         status == "fresh"
         and header is not None
@@ -110,7 +120,7 @@ def main() -> int:
     )
     check(
         "Therefore the missing battery path is restored as a current evidence verifier, not as a resurrection of the old broad table",
-        PASS_COUNT == 10 and FAIL_COUNT == 0,
+        PASS_COUNT == 15 and FAIL_COUNT == 0,
         "legacy broad status remains for independent audit to decide",
     )
 

@@ -37,9 +37,12 @@ reproducible as a finite bounded-support battery:
   exists and runs from current source.
 - [`logs/runner-cache/second_grown_family_battery.txt`](../logs/runner-cache/second_grown_family_battery.txt)
   is fresh and reports
-  `PASS=11 FAIL=0`.
+  `PASS=16 FAIL=0`.
 - The verifier loads fresh ok caches for the sign, distance/impact, and
   complex-action slices listed below.
+- The verifier explicitly checks that each subordinate evidence runner exists
+  in current source and that its live SHA matches the SHA pinned in its fresh
+  runner cache.
 - The verifier explicitly keeps the complex-action support narrow and
   boundary-aware.
 

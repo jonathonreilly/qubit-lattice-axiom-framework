@@ -4,10 +4,14 @@ This runner is intentionally narrow.  It assumes a supplied readout context
 with a supplied entrywise conjugation K(X)=conj(X).  It does not claim that the
 Record axiom supplies that context, the central-sector decomposition, or K/CPT.
 
-The finite checks separate two sectors:
+The finite checks separate two sectors and keep the cited generation
+orientation object labeled:
 
 * scalar-i / phase data: K-odd under entrywise conjugation;
-* real generation-orientation data: K-even under the same conjugation.
+* real generation complex-structure data J_cs: K-even under the same
+  conjugation;
+* labeled Vandermonde orientation sign: K-odd under the induced
+  delta -> -delta map, so it is not part of the K-even J_cs sector.
 
 No measured values, fitted selectors, dynamics, or probability rules enter.
 """
@@ -46,6 +50,19 @@ def k_parity(matrix: np.ndarray, tol: float = 1e-12) -> str:
     return "mixed"
 
 
+def born_triple(delta: float) -> np.ndarray:
+    lambdas = np.array(
+        [1.0 + np.sqrt(2.0) * np.cos(delta + 2.0 * np.pi * k / 3.0) for k in range(3)],
+        dtype=float,
+    )
+    weights = lambdas * lambdas
+    return weights / float(np.sum(weights))
+
+
+def labeled_vandermonde(weights: np.ndarray) -> float:
+    return float((weights[0] - weights[1]) * (weights[1] - weights[2]) * (weights[2] - weights[0]))
+
+
 def source_note_guardrail() -> tuple[bool, str]:
     note = Path(
         "docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md"
@@ -69,7 +86,7 @@ def source_note_guardrail() -> tuple[bool, str]:
 
 
 def main() -> int:
-    print("Scalar-i and real generation structure K-parity separation")
+    print("Scalar-i and real J_cs structure K-parity separation")
     print("=" * 72)
 
     I2 = np.eye(2, dtype=complex)
@@ -142,25 +159,37 @@ def main() -> int:
         f"real={jcs_real}; K-parity={k_parity(J_cs)}; square identity={jcs_complex_structure}",
     )
 
-    eigenvalues = np.sort(np.linalg.eigvalsh(M_delta).real)
-    vandermonde = (
-        (eigenvalues[0] - eigenvalues[1])
-        * (eigenvalues[1] - eigenvalues[2])
-        * (eigenvalues[2] - eigenvalues[0])
-    )
-    orientation_sign = float(np.sign(vandermonde))
+    p_delta = born_triple(delta)
+    p_neg_delta = born_triple(-delta)
+    labeled_delta = labeled_vandermonde(p_delta)
+    labeled_neg_delta = labeled_vandermonde(p_neg_delta)
+    labeled_orientation_odd = np.isclose(labeled_neg_delta, -labeled_delta, atol=1e-12)
     check(
-        "Vandermonde orientation sign is a real K-even Z_2 datum",
-        orientation_sign in (-1.0, 1.0) and np.isrealobj(vandermonde),
-        f"Delta={vandermonde:.8f}; sign={int(orientation_sign)}",
+        "labeled generation Vandermonde orientation is K-odd under induced delta -> -delta",
+        labeled_orientation_odd and np.sign(labeled_delta) == -np.sign(labeled_neg_delta),
+        f"Delta(+delta)={labeled_delta:.8f}; Delta(-delta)={labeled_neg_delta:.8f}",
+    )
+
+    sorted_delta = np.sort(np.linalg.eigvalsh(M_delta).real)
+    sorted_neg_delta = np.sort(np.linalg.eigvalsh(M_neg_delta).real)
+    sorted_v_delta = labeled_vandermonde(sorted_delta)
+    sorted_v_neg_delta = labeled_vandermonde(sorted_neg_delta)
+    check(
+        "sorted-spectrum discriminant is a K-even multiset control, not the labeled orientation",
+        np.isclose(sorted_v_delta, sorted_v_neg_delta, atol=1e-12),
+        f"sorted_Delta(+delta)={sorted_v_delta:.8f}; sorted_Delta(-delta)={sorted_v_neg_delta:.8f}",
     )
 
     scalar_i_sector_odd = all(parity == "odd" for parity in parities.values()) and phase_conjugates
-    real_generation_sector_even = jcs_even and orientation_sign in (-1.0, 1.0)
+    real_generation_jcs_sector_even = jcs_even
     check(
-        "scalar-i phase data and real generation-orientation data lie in different K-parity sectors",
-        scalar_i_sector_odd and real_generation_sector_even,
-        f"scalar-i sector K-odd={scalar_i_sector_odd}; real generation sector K-even={real_generation_sector_even}",
+        "scalar-i phase data and real J_cs structure lie in different K-parity sectors",
+        scalar_i_sector_odd and real_generation_jcs_sector_even and labeled_orientation_odd,
+        (
+            f"scalar-i sector K-odd={scalar_i_sector_odd}; "
+            f"J_cs sector K-even={real_generation_jcs_sector_even}; "
+            f"labeled Vandermonde K-odd={labeled_orientation_odd}"
+        ),
     )
 
     guardrail_ok, guardrail_detail = source_note_guardrail()

@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_quartic_diffeo_ward_continuum_closure.py
+runner_sha256: eea7a259e81fd3bba6d988928be9765071239ec26c3cbc1bb07f10d7a73d66a1
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 154.87
+status: ok
+----- stdout -----
+PASS T1 CONSERVED quartic Ward resid/amplitude DECREASES with k: 0.2034@k1.05 > 0.1643@k0.79 > 0.1430@k0.63 (~k^+0.69 over L=6,8,10)
+PASS T2 NAIVE C1 quartic Ward resid/amplitude is nearly FLAT: 0.3478@k1.05 -> 0.3307@k0.79 (~k^+0.18, far slower than conserved -> conserved coupling essential to this diagnostic)
+PASS T3 conserved resid/amplitude < naive at both k (0.2034 vs 0.3478 @k1.05; 0.1643 vs 0.3307 @k0.79) -> conserved trend vs naive control
+
+The QUARTIC graviton diffeomorphism Ward residual shows a conserved-coupling continuum trend:
+with D(P_eff) + the sqrt(g) measure, resid/amplitude decreases as a positive power of k over
+L=6,8,10 = 0.203,0.164,0.143 (~k^0.69). The naive non-conserved coupling is much flatter
+(~k^0.18) and larger. This is a bounded quartic Ward diagnostic, not a full Einstein-Hilbert
+or all-order closure theorem, and it does not derive the G_Newton magnitude.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

@@ -29,6 +29,27 @@ honesty subsection (Section 7) lists every gap as open, not glossed.
 
 ---
 
+## 2026-06-09 OS1 surface-supply update
+
+The OS1 axiom this reconstruction needs — Euclidean SO(4) covariance of the
+2-point — is now backed by an **approved framework primitive**:
+`kinetic_isotropy_primitive`
+([`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md),
+`c_t=c_s` / OS0 hypercubic-symmetric Euclidean surface). This **de-circularizes**
+rung A: SO(4) covariance was previously the emergent-Lorentz *output*, so
+importing it here as a *premise* was circular; OS0 is now a clean approved input
+(chain-satisfies without bounding). With OS0 supplied, gate **G2** (full Poincaré
+covariance of the reconstructed field, the boost sector) reduces to the standard
+OS reconstruction theorem **on the now-approved hypercubic-symmetric surface**
+(see the assembly note
+[`EMERGENT_POINCARE_FREE_SECTOR_FROM_KINETIC_ISOTROPY_PRIMITIVE_BOUNDED_THEOREM_NOTE_2026-06-09.md`](EMERGENT_POINCARE_FREE_SECTOR_FROM_KINETIC_ISOTROPY_PRIMITIVE_BOUNDED_THEOREM_NOTE_2026-06-09.md),
+which verifies the SO(4)→SO(3,1) boost covariance, Poincaré-algebra closure, and
+positive-energy spectrum for the free Gaussian sector). The **load-bearing
+residual is now gate G1** — the lattice-measure → continuum-measure bridge
+(beyond the 2-point) and the `1+1d → 4D` arena bridge — which this primitive does
+**not** supply. No audit verdict is changed by this pointer; OS2 (RP) and rungs
+B/C are unchanged.
+
 ## 0. Admitted context (cited rungs + standard methodology)
 
 This note consumes the following as admitted inputs; it does not re-derive them.

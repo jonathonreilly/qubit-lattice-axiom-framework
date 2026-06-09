@@ -1,0 +1,47 @@
+========================================================================================
+EMERGENT FREE-SECTOR POINCARE COVARIANCE FROM OS0 (kinetic-isotropy primitive)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: OS0/OS1 -- free Euclidean Dirac 2-point is SO(4)-covariant (incl. tau-x boost plane)
+----------------------------------------------------------------------------------------
+  [PASS] Euclidean Clifford algebra {g_mu,g_nu}=2 delta holds
+  [PASS] spinor rotations induce genuine SO(4) vector rotations (R^T R=I, det=1)  --  max ortho residual=2.22e-16
+  [PASS] SO(4) bispinor covariance in a spatial (x-y) plane  --  residual=1.14e-16
+  [PASS] SO(4) bispinor covariance in the tau-x plane (the boost generator OS0 supplies)  --  residual=1.72e-16
+
+----------------------------------------------------------------------------------------
+Part 2: Wick step -- tau-x Euclidean rotation continues to a Minkowski boost (SO(3,1))
+----------------------------------------------------------------------------------------
+  [PASS] Wick-continued tau-x rotation is a metric-preserving SO(3,1) boost (L^T g L = g)  --  residual=2.22e-16
+  [PASS] on-shell invariant p^2=m^2 preserved under the continued boost  --  p^2 before=0.490000, after=0.490000, m^2=0.490000
+
+----------------------------------------------------------------------------------------
+Part 3: the Poincare algebra CLOSES (boost generators K_i = the new OS0 piece)
+----------------------------------------------------------------------------------------
+  [PASS] Lorentz subalgebra [M,M] closes (rotations J_i=M^{jk} + boosts K_i=M^{0i})  --  max residual=0.00e+00
+  [PASS] FULL Poincare algebra closes: every [gen,gen] lies in span{M^{mu nu}, P^mu} (boosts K_i=M^{0i} act consistently on the single-clock H=P^0, P)  --  max span residual over all 100 commutators=2.51e-16
+  [PASS] [P^mu, P^nu] = 0 (translations commute)  --  max=0.00e+00
+
+----------------------------------------------------------------------------------------
+Part 4: spectrum condition is boost-invariant (positive-energy Poincare rep)
+----------------------------------------------------------------------------------------
+  [PASS] forward mass shell p^0=+sqrt(p^2+m^2) stays in the forward cone under all boosts (H>=0 survives)  --  W2 spectrum condition is boost-invariant
+
+----------------------------------------------------------------------------------------
+Part 5: OS-axiom assembly checklist + honest residual
+----------------------------------------------------------------------------------------
+  [PASS] OS0 (Euclidean SO(4)/hypercubic invariance) -- APPROVED PRIMITIVE kinetic_isotropy_primitive [NEW]
+  [PASS] OS1 (SO(4) covariance of the free 2-point) -- retained_bounded, rung A (de-circularized by OS0)
+  [PASS] OS2 (reflection positivity of the free Dirac Gaussian) -- derived in the reconstruction note; RP retained_bounded
+  [PASS] OS3 (cluster, mass gap m) -- retained_bounded (carries the theta=0 Tier-A admission transitively)
+  [PASS] W1-W5 (Hilbert space, U(t), spectrum, microcausality, Cauchy slice) -- single-clock lattice positive_theorem
+  [PASS] boost/rotation generators -- supplied by OS0 + standard OS reconstruction on the approved hypercubic surface
+  -- honest residual (NOT delivered by this assembly):
+  [PASS] residual flagged: G1: lattice-measure -> continuum-measure bridge beyond the 2-point (and 1+1d->4D arena) -- NOT supplied
+  [PASS] residual flagged: interacting continuum-existence (constructive-QFT class) -- NOT supplied; free Gaussian sector only
+  [PASS] residual flagged: RP not newly ratified here (separately retained_bounded); statistics-selection still gated
+
+========================================================================================
+SUMMARY: PASS=19 FAIL=0
+========================================================================================

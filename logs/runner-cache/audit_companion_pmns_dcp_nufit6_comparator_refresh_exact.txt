@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_pmns_dcp_nufit6_comparator_refresh_exact.py
+runner_sha256: 3bd468b1c9439bea83d9563a0d17a428c1deaa8eada3805791b2da7d4c4ca8a5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+PASS - (input-shift v6.0-noSK) consumed inputs barely moved 5.3->6.0: s_12^2 shift 7.0% and s_13^2 shift 4.1% of their 3-sigma widths (s_12^2 ~7.0%, both <= ~10%)
+PASS - (input-shift v6.0-SK) consumed inputs barely moved 5.3->6.0: s_12^2 shift 7.0% and s_13^2 shift 0.8% of their 3-sigma widths (s_12^2 ~7.0%, both <= ~10%)
+PASS - (input-shift v6.1-noSK) current NuFIT-6.1 input rectangle remains nearby: s_12^2 is inside the 5.3 range and s_13^2 upper-edge expansion is 8.0% of the 5.3 width
+PASS - (input-shift v6.1-SK) current NuFIT-6.1 input rectangle remains nearby: s_12^2 is inside the 5.3 range and s_13^2 upper-edge expansion is 7.5% of the 5.3 width
+PASS - (box-image 6.0-noSK) NuFIT-6.0 NO (s_12^2,s_13^2) rectangle lies inside the chamber box-B image region [0.008,0.97]x[0.0005,0.121] (landed Part 4) -> the inputs are in the broad forecast domain
+PASS - (box-image 6.0-SK) NuFIT-6.0 NO (s_12^2,s_13^2) rectangle lies inside the chamber box-B image region [0.008,0.97]x[0.0005,0.121] (landed Part 4) -> the inputs are in the broad forecast domain
+PASS - (box-image 6.1-noSK) NuFIT-6.1 NO (s_12^2,s_13^2) rectangle lies inside the chamber box-B image region [0.008,0.97]x[0.0005,0.121] (landed Part 4) -> the inputs are in the broad forecast domain
+PASS - (box-image 6.1-SK) NuFIT-6.1 NO (s_12^2,s_13^2) rectangle lies inside the chamber box-B image region [0.008,0.97]x[0.0005,0.121] (landed Part 4) -> the inputs are in the broad forecast domain
+PASS - (not-recertified) band-stability under the nearby NuFIT-6.x input shift is EXPECTED but is NOT re-certified here: the landed certificate covers only NuFIT-5.3-image-overlap sub-boxes (5404 of 6400; 996 skipped), not all of box B; a rigorous re-run over the NuFIT-6.1 rectangle is left to a future iteration
+PASS - (delta_CP standing 6.0-noSK) band [251.86,270] is WITHIN the NuFIT NO 3-sigma range [96.0,422.0] (NOT excluded) but the best fit 177.0 deg lies OUTSIDE the band (disfavored, not a match)
+PASS - (delta_CP standing 6.0-SK) band [251.86,270] is WITHIN the NuFIT NO 3-sigma range [124.0,364.0] (NOT excluded) but the best fit 212.0 deg lies OUTSIDE the band (disfavored, not a match)
+PASS - (delta_CP standing 6.1-noSK) band [251.86,270] is WITHIN the NuFIT NO 3-sigma range [114.0,405.0] (NOT excluded) but the best fit 207.0 deg lies OUTSIDE the band (disfavored, not a match)
+PASS - (delta_CP standing 6.1-SK) band [251.86,270] is WITHIN the NuFIT NO 3-sigma range [125.0,365.0] (NOT excluded) but the best fit 212.0 deg lies OUTSIDE the band (disfavored, not a match)
+PASS - (delta_CP contrast) under NuFIT-5.3 the band sat inside [120,369] near the T2K-favored ~230-270 region (a favorable 7.3% sub-region match); under NuFIT-6.1 the current best fits are 207/212 -> standing DEGRADED to disfavored-but-allowed
+PASS - (theta_23 v6.0-noSK) framework predicts s_23^2 > 0.5 (upper octant); NuFIT-6.0 no-SK = 0.561 -> UPPER (agrees)
+PASS - (theta_23 v6.0-SK) NuFIT-6.0 with-SK = 0.470 -> LOWER (disagrees) => the v6.0 octant reading is SK-dependent, not a clean prediction
+PASS - (theta_23 v6.1-current) current NuFIT-6.1 NO best fits are lower-octant in both columns, but the 3-sigma ranges still include upper-octant values
+PASS - (falsifiability) the band's upper edge is 270 = -90 deg (maximal CP), where DUNE/Hyper-K-era data have strong sensitivity (no insensitive-region escape hatch) -> decisively testable, but current NuFIT-6.1 leans AGAINST it
+
+18 PASS, 0 FAIL
+
+	RE-ASSESSMENT (PMNS delta_CP forecast under NuFIT-6.1):
+	 - INPUT-STABLE FORECAST (not re-certified): the forecast consumes (s_12^2, s_13^2) and produces delta_CP; NuFIT-6.0
+	   barely moved from NuFIT-5.3, and current NuFIT-6.1 is still nearby (s_12^2 stricter, s_13^2 upper edge only mildly
+	   expanded) and inside the chamber box-B image region. CAVEAT: this note does NOT re-run the box-Krawczyk certificate
+	   over the NuFIT-6.1 rectangle, so the band is taken AS the landed [251.86, 270].
+	 - DEGRADED STANDING: under NuFIT-5.3 (T2K-driven, ~230-270 favored) the band looked like a tight 7.3% match; under
+	   current NuFIT-6.1 (best fit 207 no-SK / 212 with-SK) the band is WITHIN 3-sigma (not excluded) but the best fit lies
+	   OUTSIDE it -> a forward bet current data DISFAVOR. No likelihood significance is claimed.
+	 - theta_23 OCTANT is current-data disfavored for NO: framework predicts upper (s_23^2 > 0.5); NuFIT-6.1 NO gives
+	   0.470 in both no-SK and with-SK best fits, while 3-sigma still permits upper-octant values.
+	 - DUNE / Hyper-K-era data decisively test the band (it sits at maximal CP, peak sensitivity). The honest framing is
+	   "a sharp forward bet current data lean against, decisively testable by next-generation long-baseline data" -- NOT
+	   the stale NuFIT-5.3 "tight match". NuFIT values are comparators only; the band is the landed forecast taken as
+	   stated (not re-certified).
+	
+
+----- stderr -----
+

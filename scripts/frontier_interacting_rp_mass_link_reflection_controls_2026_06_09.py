@@ -26,7 +26,7 @@ import frontier_interacting_rp_full_algebra_2026_06_05 as rp
 ROOT = Path(__file__).resolve().parent.parent
 PRIMARY = ROOT / "scripts" / "frontier_interacting_rp_full_algebra_2026_06_05.py"
 NOTE = ROOT / "docs" / "INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md"
-EXPECTED_PRIMARY_SHA256 = "47b36c166adbc87af747d3fc48b089135154b55d09d5482ad616b580a1e491f2"
+EXPECTED_PRIMARY_SHA256 = "7b3185987a8b7bf745dec44a6fcdcaa82dfe94fbe8bc3632b870bf150cd587b0"
 TOL = 1e-9
 
 PASS = 0

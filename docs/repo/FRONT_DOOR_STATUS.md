@@ -11,7 +11,7 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3031 |
+| Ledger rows | 3032 |
 | Applied audit verdicts | 1337 |
 | Retained-grade rows, including boxed decorations | 1226 |
 | Retained positive theorems | 209 |
@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 766 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1377 |
+| Unaudited rows | 1378 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 14 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1379 |
+| Total pending rows | 1380 |
 | Ready rows | 54 |
 | Cycle-break targets | 15 |
 | Critical pending | 330 |
-| High pending | 251 |
-| Medium pending | 375 |
-| Leaf pending | 423 |
+| High pending | 252 |
+| Medium pending | 374 |
+| Leaf pending | 424 |
 
 Next ready rows by queue order:
 
 - [`axiom_first_reflection_positivity_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 - [`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md) - critical; unaudited
 - [`dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md) - high; unaudited
+- [`universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md) - high; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md) - medium; unaudited
 - [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
-- [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -78,11 +78,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3168 |
+| Citation-graph nodes | 3169 |
 | Critical nodes | 527 |
-| High nodes | 451 |
-| Medium nodes | 814 |
-| Leaf nodes | 1376 |
+| High nodes | 452 |
+| Medium nodes | 813 |
+| Leaf nodes | 1377 |
 
 Top load-bearing rows by graph score:
 
@@ -90,7 +90,7 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 849 descendants; score 62.231
 - `three_generation_observable_theorem_note` - critical; 758 descendants; score 61.068
 - `graph_first_su3_integration_note` - critical; 1272 descendants; score 51.814
+- `key_terminology` - critical; 1011 descendants; score 47.983
 - `minimal_axioms_2026-05-03` - critical; 486 descendants; score 47.928
-- `key_terminology` - critical; 1010 descendants; score 47.482
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1193 descendants; score 46.722
 - `anomaly_forces_time_theorem` - critical; 1001 descendants; score 44.469

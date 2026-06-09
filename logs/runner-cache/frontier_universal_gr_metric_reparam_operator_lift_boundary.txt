@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_metric_reparam_operator_lift_boundary.py
+runner_sha256: 071dfecf9792b4da5326374f7b0ecf38ab6ab874bd3852f355e1dc7a8c281b97
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 2.01
+status: ok
+----- stdout -----
+PASS conserved momentum-reparametrized first variation matches velocity-times-momentum vertex (err=7.1e-12)
+PASS naive hop-amplitude shear variation matches bare-sigma shear vertex (err=2.0e-11; distance from conserved=0.78)
+PASS selected clean operator-proportionality lift fails: second-variation ratio is non-constant across sampled loop momenta (spread=0.44)
+
+Finite-lattice verdict: the momentum-reparametrized coupling matches the
+conserved stress vertex at first variation; the naive hop-amplitude shear
+matches the bare-sigma shear vertex and differs from the conserved one;
+the tested clean operator-proportionality lift of the cubic contact fails.
+No loop-integrated Ward identity, continuum limit, uniqueness, or
+Einstein-Hilbert normalization is claimed.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

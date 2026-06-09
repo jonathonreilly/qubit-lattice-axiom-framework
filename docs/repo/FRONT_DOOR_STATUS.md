@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1383 |
+| Applied audit verdicts | 1384 |
 | Retained-grade rows, including boxed decorations | 1259 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 791 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1344 |
+| Unaudited rows | 1343 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 24 |
+| Audited conditional rows | 25 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1346 |
-| Ready rows | 32 |
+| Total pending rows | 1345 |
+| Ready rows | 31 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 402 |
+| Leaf pending | 401 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md) - medium; unaudited
 - [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
 - [`koide_pointer_record_degeneracy_d3_note_2026-05-31`](../../docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md) - medium; unaudited
 - [`koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08`](../../docs/KOIDE_R_HALF_DYNAMICAL_DETERMINANT_ROUTE_PRUNING_NO_GO_NOTE_2026-06-08.md) - medium; unaudited
 - [`lattice_3d_dense_spent_delay_note`](../../docs/LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md) - medium; unaudited
 - [`lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07`](../../docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
-- [`lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06`](../../docs/LORENTZ_NATURALNESS_GAP_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-06.md) - leaf; unaudited
+- [`lorentz_naturalness_gap_quantified_obstruction_note_2026-06-06`](../../docs/LORENTZ_NATURALNESS_GAP_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-06.md) - medium; unaudited
+- [`lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08`](../../docs/LORENTZ_VIOLATION_ANGULAR_FINGERPRINT_AC_PHI_LAMBDA_INDEPENDENCE_BOUNDED_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3181 |
 | Critical nodes | 529 |
 | High nodes | 452 |
-| Medium nodes | 828 |
-| Leaf nodes | 1372 |
+| Medium nodes | 829 |
+| Leaf nodes | 1371 |
 
 Top load-bearing rows by graph score:
 

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 791 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1344 |
+| unaudited | 1343 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1229 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1659 |
+| `unaudited` | 1658 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 786 |
-| `leaf` | 1283 |
+| `medium` | 787 |
+| `leaf` | 1282 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -119,7 +119,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 904 | 34.82 | `audited_clean` | **retained_bounded** |
 | 16 | `three_generation_structure_note` | bounded_theorem | critical | 867 | 34.76 | `audited_clean` | **retained_bounded** |
 | 17 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 277 | 34.62 | `unaudited` | unaudited |
-| 18 | `cpt_exact_note` | positive_theorem | critical | 1133 | 34.15 | `audited_clean` | **retained** |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 1134 | 34.15 | `audited_clean` | **retained** |
 | 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 700 | 32.95 | `unaudited` | unaudited |
 | 20 | `minimal_axioms_2026-04-11` | meta | critical | 1115 | 32.62 | `unaudited` | meta |
 | 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1057 | 32.05 | `audited_clean` | **retained_bounded** |
@@ -1374,6 +1374,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7708,6 +7709,23 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the three explicit marked holonomies W_A, W_B, W_C, the symmetric orbit-evaluation matrix F has det(F) != 0, so a = F^(-1) Z.  _(class `A`)_
 - **chain closes:** True — The cited retained authority reduces this sector to a 3 x 3 symmetric orbit-sampling inversion whenever F is invertible. Independent SU(3) character evaluation with the K-pairing dimension weights gives F_A2 = 0, |det(F)| = 10.8103216939706, and cond(F) = 1.95759880627947, so the stated inversion is valid.
 - **rationale:** The load-bearing step is a finite algebraic character-evaluation check over the retained upstream sampling-reduction theorem, not a new physical premise or numerical fit. The one cited authority is retained-grade in the packet, and the explicit determinant/conditioning values recompute independently from the stated holonomies and orbit basis. No external comparator or open bridge is imported. No runner source or stdout was available, so the verdict rests on the independent algebraic check rather than runner PASS output.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Common-vector three-sample factorization plus finite listed-structural-surface underdetermination for the normalized three-sample output.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-0a79426812-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner exhibits two distinct admissible positive conjugation-symmetric beta = 6 environment witnesses on the current exact surface that produce different normalized three-sample triples.  _(class `C`)_
+- **chain closes:** False — The formal factorization and first symmetric sample operator close algebraically, and the runner constructs two distinct finite structural witnesses. The missing step is a retained bridge showing that this finite listed structural surface exhausts the actual beta=6 Wilson/Haar current stack, rather than merely a narrowed witness surface.
+- **rationale:** The runner genuinely checks the radical three-row operator and constructs two finite positive swap-symmetric witnesses whose normalized triples differ. However, the beta6 seam-reduction authority is explicitly a formal conditional lemma with required-but-unsupplied physical Wilson/Haar authorities, and the underdetermination authority is narrowed to the listed structural surface only. The source note's wording overreaches when it promotes that finite structural-surface no-go to the actual current exact beta-side evaluator stack.
+- **open / conditional deps cited:**
+  - `GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md`
+  - `GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`
+  - `GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17`

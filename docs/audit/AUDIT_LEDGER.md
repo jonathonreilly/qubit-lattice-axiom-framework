@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 771 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1382 |
+| unaudited | 1381 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 15 |
+| ~~audited_conditional~~ | 16 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1202 |
-| `audited_conditional` | 15 |
+| `audited_conditional` | 16 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1697 |
+| `unaudited` | 1696 |
 
 | claim_type | count |
 |---|---:|
@@ -1344,6 +1344,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `plaquette_bootstrap_framework_integration_note_2026-05-03` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -13068,6 +13069,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given the explicit coefficient packet and u=1/3, solve the Padé[3/3] matching equations series*Q-P=O(u^7) to obtain P(u)=u-6u^3 and Q(u)=1-6u^2-4u^3, hence Pade[3/3](1/3)=3/5.  _(class `A`)_
 - **chain closes:** True — For the bounded conditional scope, the chain closes by finite rational algebra from the supplied coefficient packet and supplied evaluation point. The coefficient table, beta-to-u identification, and MC comparator are not audited as framework-derived facts.
 - **rationale:** The load-bearing statement is an algebraic identity check on explicit inputs, not a first-principles physics derivation. Independent Padé equations reproduce the [3/3], conformal alpha=2 and alpha=4, c6-rigidity, [4/4], truncated-series residual, and Borel-denominator identities. The runner source genuinely solves Padé systems in exact rational arithmetic and checks the obstruction, while the MC value is used only in non-load-bearing comparator checks.
+- **auditor confidence:** high
+
+### `plaquette_bootstrap_framework_integration_note_2026-05-03`
+
+- **Note:** [`PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md`](../../docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the algebraic framework-integration claim that reflection positivity yields Wilson-loop Gram PSD and the 2x2 reflected-plaquette connected-correlator nonnegativity, not an analytic closure of <P>(beta=6).
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-113352-e7c6dc75cd-plaquette_bootstrap_framewor`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Wilson loops localized in Λ+ are a subset of A+; restricting A11's PSD Hermitian sesquilinear form to this finite subset gives the Wilson-loop Gram matrix G_AB = <Theta(W_A) W_B> >= 0.  _(class `A`)_
+- **chain closes:** False — The PSD restriction argument is valid standard algebra once the Wilson-loop observables are inside the upstream RP algebra. The provided A11 authority is narrower than the note's use: it covers the 2-step blocked A_+^(2) / factorized temporal-gauge surface, while the note states arbitrary localized Wilson loops and a specific single plaquette without proving that bridge; the mixed-cumulant authority used for the beta=6 estimate is also not supplied in full.
+- **rationale:** The runner checks toy 2x2 PSD algebra and arithmetic from stated formulas; it does not instantiate the upstream RP construction or prove membership of the chosen Wilson-loop basis in A11's current 2-step blocked surface. The core BB1/BB1' algebra would close after narrowing to observables actually covered by A11. As written, the source overstates the A11 corollary and relies on an omitted mixed-cumulant authority for the beta=6 estimate.
+- **open / conditional deps cited:**
+  - `GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`
+  - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10`

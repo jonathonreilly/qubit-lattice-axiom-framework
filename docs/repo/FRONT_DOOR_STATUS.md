@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1377 |
-| Retained-grade rows, including boxed decorations | 1254 |
+| Applied audit verdicts | 1378 |
+| Retained-grade rows, including boxed decorations | 1255 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 787 |
+| Retained bounded rows | 788 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1350 |
+| Unaudited rows | 1349 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 23 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1352 |
-| Ready rows | 38 |
+| Total pending rows | 1351 |
+| Ready rows | 37 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 408 |
+| Leaf pending | 407 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31`](../../docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md) - medium; unaudited
 - [`free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08`](../../docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`gate_b_dynamics_note`](../../docs/GATE_B_DYNAMICS_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_RANK_ONE_FACTORIZED_CLASS_BOUNDARY_NOTE_2026-04-19.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TAIL_UNDERDETERMINATION_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
-- [`gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md) - leaf; unaudited
+- [`gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md) - medium; unaudited
+- [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -88,7 +88,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1386 descendants; score 100.438
-- `three_generation_observable_theorem_note` - critical; 766 descendants; score 61.083
+- `three_generation_observable_theorem_note` - critical; 765 descendants; score 61.081
 - `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
 - `graph_first_su3_integration_note` - critical; 1281 descendants; score 52.824
 - `minimal_axioms_2026-05-03` - critical; 490 descendants; score 47.940

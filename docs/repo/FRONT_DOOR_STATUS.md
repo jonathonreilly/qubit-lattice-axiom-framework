@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1363 |
-| Retained-grade rows, including boxed decorations | 1243 |
-| Retained positive theorems | 210 |
+| Applied audit verdicts | 1364 |
+| Retained-grade rows, including boxed decorations | 1244 |
+| Retained positive theorems | 211 |
 | Retained no-go rows | 205 |
 | Retained bounded rows | 778 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1364 |
+| Unaudited rows | 1363 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 21 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1366 |
+| Total pending rows | 1365 |
 | Ready rows | 50 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 422 |
+| Leaf pending | 421 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`post_record_measure_weight_normalization_subdivision_2026-06-06`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md) - medium; unaudited
 - [`universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`backreaction_note`](../../docs/BACKREACTION_NOTE.md) - medium; unaudited
 - [`beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`](../../docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08`](../../docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md) - medium; unaudited
 - [`chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08`](../../docs/CHIRALITY_SEPARATE_FACTOR_DIRAC_MASS_ALGEBRA_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
-- [`clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08`](../../docs/CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md) - leaf; unaudited
+- [`clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08`](../../docs/CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
+- [`critical_exponents_topology_note_2026-04-10`](../../docs/CRITICAL_EXPONENTS_TOPOLOGY_NOTE_2026-04-10.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

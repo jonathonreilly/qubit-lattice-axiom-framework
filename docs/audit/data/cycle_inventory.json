@@ -1,5 +1,5 @@
 {
-  "cycle_count": 15,
+  "cycle_count": 16,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -382,6 +382,43 @@
       "decision": null,
       "edges": [
         {
+          "from": "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+          "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+        },
+        {
+          "from": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "to": "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 6,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md",
+          "title": "Spatial Cubic Time-Anisotropy Gate No-Go",
+          "transitive_descendants": 6
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+          "title": "B4 Hypercubic Velocity-Anisotropy Boundary on the Kinetic-Isotropy Primitive Surface",
+          "transitive_descendants": 6
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0009",
+      "decision": null,
+      "edges": [
+        {
           "from": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
           "to": "record_selector_audit_sidecar_2026-06-05"
         },
@@ -428,7 +465,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0009",
+      "cycle_id": "cycle-0010",
       "decision": null,
       "edges": [
         {
@@ -465,7 +502,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0010",
+      "cycle_id": "cycle-0011",
       "decision": null,
       "edges": [
         {
@@ -502,7 +539,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0011",
+      "cycle_id": "cycle-0012",
       "decision": null,
       "edges": [
         {
@@ -539,7 +576,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0012",
+      "cycle_id": "cycle-0013",
       "decision": null,
       "edges": [
         {
@@ -576,7 +613,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0013",
+      "cycle_id": "cycle-0014",
       "decision": null,
       "edges": [
         {
@@ -613,7 +650,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0014",
+      "cycle_id": "cycle-0015",
       "decision": null,
       "edges": [
         {
@@ -650,7 +687,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0015",
+      "cycle_id": "cycle-0016",
       "decision": null,
       "edges": [
         {
@@ -688,7 +725,7 @@
     }
   ],
   "length_counts": {
-    "2": 9,
+    "2": 10,
     "3": 3,
     "4": 2,
     "5": 1

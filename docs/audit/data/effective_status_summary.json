@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1431,
-    "decoration": 55,
-    "meta": 323,
+    "bounded_theorem": 1453,
+    "decoration": 54,
+    "meta": 324,
     "no_go": 327,
-    "open_gate": 142,
-    "positive_theorem": 766
+    "open_gate": 141,
+    "positive_theorem": 772
   },
   "cycle_examples": [
     [
@@ -35,10 +35,9 @@
       "beta6_plaquette_d8_coefficient_and_single_pair_verdict_bounded_note_2026-05-30"
     ]
   ],
-  "cycles_detected": 15,
+  "cycles_detected": 16,
   "effective_status_counts": {
-    "audited_conditional": 34,
-    "audited_failed": 2,
+    "audited_conditional": 22,
     "audited_numerical_match": 15,
     "audited_renaming": 35,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
@@ -49,7 +48,6 @@
     "decoration_under_cpt_exact_note": 4,
     "decoration_under_emergent_lorentz_invariance_note": 1,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
-    "decoration_under_free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": 1,
     "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": 1,
     "decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
@@ -70,13 +68,13 @@
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 315,
-    "open_gate": 38,
+    "meta": 316,
+    "open_gate": 37,
     "retained": 211,
-    "retained_bounded": 810,
-    "retained_no_go": 207,
+    "retained_bounded": 805,
+    "retained_no_go": 206,
     "retained_pending_chain": 13,
-    "unaudited": 1313
+    "unaudited": 1361
   },
   "retained_pending_chain_count": 13,
   "retained_pending_chain_examples": [

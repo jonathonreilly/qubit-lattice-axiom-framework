@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1339 |
+| Applied audit verdicts | 1340 |
 | Retained-grade rows, including boxed decorations | 1228 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 202 |
 | Retained bounded rows | 768 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1388 |
+| Unaudited rows | 1387 |
 | Retained-pending-chain rows | 12 |
-| Audited conditional rows | 13 |
+| Audited conditional rows | 14 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1390 |
-| Ready rows | 62 |
+| Total pending rows | 1389 |
+| Ready rows | 61 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
-| High pending | 254 |
+| High pending | 253 |
 | Medium pending | 375 |
 | Leaf pending | 434 |
 
 Next ready rows by queue order:
 
-- [`dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md) - high; unaudited
 - [`universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md) - high; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
 - [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,13 +62,14 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 188 |
-| high | `unaudited` | 145 |
+| high | `unaudited` | 144 |
 | medium | `unaudited` | 91 |
 | critical | `audited_renaming` | 3 |
 | critical | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
@@ -86,7 +87,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1385 descendants; score 100.437
+- `minimal_axioms` - critical; 1386 descendants; score 100.438
 - `three_generation_observable_theorem_note` - critical; 765 descendants; score 61.081
 - `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
 - `graph_first_su3_integration_note` - critical; 1282 descendants; score 52.825

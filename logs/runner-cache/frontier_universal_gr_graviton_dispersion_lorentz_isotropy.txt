@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_graviton_dispersion_lorentz_isotropy.py
+runner_sha256: 6c951739ea536ec46961feec765bddb617b98979a1002849b7c04b0ae0ffdae9
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 20.46
+status: ok
+----- stdout -----
+PASS T1 graviton stiffness time-axis = space-axis EXACTLY (C_time=0.08962, C_space=0.08962, |diff|/C=1.6e-14) -- hypercubic axis-symmetry (emergent Lorentz at axis level)
+PASS T2 axis-vs-diagonal anisotropy ~ O((k0 a)^2): 0.0469, 0.0262, 0.0167 at k0=1.05, 0.79, 0.63 (power k0^2.02 ~ 2 -> VANISHES as k->0; LEADING dispersion ISOTROPIC, GR recovered in the IR, anisotropy is dim-6/Planck-suppressed)
+PASS T3 anisotropy coefficient c = (C_diag/C_axis-1)/k0^2 = 0.0428, 0.0425, 0.0424 ~ 0.043 (spread 1%) -- the framework's calculable, falsifiable O((ka)^2) cubic GW-dispersion anisotropy
+
+The W-native induced graviton's dispersion is LORENTZ-ISOTROPIC at leading order -- GR is
+recovered exactly in the IR (graviton stiffness equal along time and space axes; axis-vs-diagonal
+anisotropy ~ O((k0 a)^2), vanishing as k->0). So the framework PASSES the gravitational-wave-speed
+isotropy test (at GW scales (ka)^2 ~ 1e-40 << the GW170817 bound 1e-15), resolving the ~3%
+finite-k0 spatial Zener (#3257) as the O((ka)^2) term. The falsifiable prediction is a calculable
+hypercubic (O_h) anisotropy in GW dispersion with coefficient ~0.043*(ka)^2. Magnitude registered (G3).
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

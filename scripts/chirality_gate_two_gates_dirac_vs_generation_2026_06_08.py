@@ -1,29 +1,34 @@
 #!/usr/bin/env python3
-"""Dirac/spinor chirality does not discharge Koide/generation chirality.
+"""Conditional tensor-product separation of two chirality gates.
 
 Bounds the recent keystone-collapse claim (the massive-Dirac-field "one
-keystone" reduction) to its sound scope: the retained Cl(3,1) supplies the
-Dirac/spinor chirality (needed for spin-statistics), but it is
-generation-blind and therefore does NOT supply the Koide Q=2/3 generation
-chirality (the retained `koide_anticommuting_operator_derivation`
+keystone" reduction) to its sound conditional algebraic scope. Given the finite
+carrier (generation R^3) x (L+R) with gamma_5 = I_3 x sigma_3 and beta =
+I_3 x sigma_1, gamma_5 is generation-blind and therefore does NOT supply the
+Koide Q=2/3 generation chirality (the `koide_anticommuting_operator_derivation`
 requirement). "Not blocked by the narrow no-go" != "supplied".
 
-Grounds in the retained facts (no new axiom/import, no PDG):
+Grounds in the algebraic inputs (no new axiom/import, no PDG):
   - koide_anticommuting_operator_derivation_theorem  (retained):
         Q=2/3  <=>  generation mass operator M_gen anticommutes with
         Gamma_chi = (2/3)J - I.
   - koide_z3_equivariant_anticommuting_no_go          (retained_bounded):
         a C3-equivariant (circulant) M_gen with {M_gen, Gamma_chi}=0 is M_gen=0.
-  - cl3_to_cl31_spinor_extension                      (retained):
-        supplies gamma_5 = I_3 (x) sigma_3 on (gen R^3) (x) (L+R spinor).
+
+This restricted runner does not derive gamma_5 from Cl(3,1) and does not prove
+spin-statistics use of that grading. Those are separate bridge claims.
 
 Exact / finite / memory-safe.
 """
+
+from pathlib import Path
 
 import numpy as np
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md"
 
 
 def check(name, ok):
@@ -134,6 +139,15 @@ two_gates = (
 )
 check("Dirac/spinor chirality is independent of Koide/generation chirality",
       two_gates)
+
+print("== Scope guard: conditional tensor-product separation only ==")
+note_text = NOTE.read_text(encoding="utf-8")
+check("source note states conditional tensor-product separation only",
+      "conditional tensor-product separation only" in note_text)
+check("source note does not derive gamma_5 from Cl(3,1)",
+      "does **not** derive this `γ_5` from the `Cl(3,1)`" in note_text)
+check("source note does not prove spin-statistics use",
+      "does **not** prove the spin-statistics use" in note_text)
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
 raise SystemExit(0 if FAIL == 0 else 1)

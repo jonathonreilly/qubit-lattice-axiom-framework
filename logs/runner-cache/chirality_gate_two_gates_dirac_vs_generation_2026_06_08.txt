@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/chirality_gate_two_gates_dirac_vs_generation_2026_06_08.py
-runner_sha256: 219d36226a205ec462fd5979f818a191dffe852dbb937e3336cf71ae9b3c5602
+runner_sha256: 5faae327ac6bffd731e50c1e9ba4d67d68bca32314fe918f24e3a1eda8f02774
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 == Koide/generation grading Gamma_chi ==
@@ -23,8 +23,12 @@ status: ok
   PASS  ...and every such M_gen genuinely breaks C3: [M_break, R] != 0
 == Conclusion: independent chirality requirements ==
   PASS  Dirac/spinor chirality is independent of Koide/generation chirality
+== Scope guard: conditional tensor-product separation only ==
+  PASS  source note states conditional tensor-product separation only
+  PASS  source note does not derive gamma_5 from Cl(3,1)
+  PASS  source note does not prove spin-statistics use
 
-TOTAL: PASS=12 FAIL=0
+TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----
 

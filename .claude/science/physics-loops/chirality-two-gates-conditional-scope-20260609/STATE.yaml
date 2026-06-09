@@ -1,0 +1,11 @@
+lane: chirality-two-gates-conditional-scope-20260609
+status: ready_for_review
+base: origin/main@5c096b11a
+target_claim: chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08
+repair_class: missing_bridge_theorem
+audit_blocker: "add a retained bridge deriving the separate L/R gamma_5 and spin-statistics use from the Cl(3,1) extension, or narrow the note to the conditional tensor-product separation only."
+repair_choice: "narrowed to conditional tensor-product separation only"
+audit_results_modified: false
+new_axioms: false
+primary_runner: scripts/chirality_gate_two_gates_dirac_vs_generation_2026_06_08.py
+source_note: docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md

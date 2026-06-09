@@ -1,11 +1,11 @@
 """Finite boundary runner for the lattice Green function heat-kernel route.
 
-The runner supports, but does not prove by itself, the lattice Green function
-asymptotic G(r) -> 1/(4 pi |r|). The exact resolvent identity and Bessel
-factorization close, and the numerical axis/diagonal checks support isotropic
-1/r behavior. The remaining proof bridge is a uniform diffusive
-Bessel/local-CLT asymptotic with tail domination allowing the |x| -> infinity
-limit to pass through the heat-kernel integral.
+The runner verifies the exact heat-kernel/resolvent identities and the finite
+normalization checks for the lattice Green function asymptotic
+G(r) -> 1/(4 pi |r|). The direct local-CLT proof route remains open as an
+alternate proof, but the load-bearing leading-term route now goes through the
+stronger framework-native lattice-correction theorem for the same exact Green
+kernel. Textbooks are parallel references, not load-bearing authority.
 
 Chain (all framework-internal except standard Bessel/Gaussian asymptotics, reconstructed):
   L = -Delta_lat = the Lattice Z^3 6-NN graph Laplacian (eigenvalue lambda(k)=6-2 sum cos k_mu).
@@ -19,7 +19,8 @@ Chain (all framework-internal except standard Bessel/Gaussian asymptotics, recon
    => prod_mu -> (4 pi t)^{-3/2} e^{-|x|^2/(4t)}  (the 3D continuum heat kernel)
    => G(x) -> int_0^inf (4 pi t)^{-3/2} e^{-|x|^2/(4t)} dt = 1/(4 pi |x|).
   The runner checks the continuum identity and finite numerical convergence.
-  It does not supply the uniform theorem required to retire P1.
+  The uniform local-CLT route remains open, while the stronger native theorem
+  supplies the closed leading-term route for this row.
 
   T1  1D NN heat kernel (e^{-t L_1})_{0n} = e^{-2t} I_n(2t) (exact, vs matrix exp).
   T2  factorization (e^{-tL})_{0x} = prod_mu (e^{-t L_mu})_{0,x_mu} ([L_mu,L_nu]=0).
@@ -138,6 +139,10 @@ check("SOURCE boundary preserves uniform local-CLT/tail-domination bridge",
       "uniform diffusive Bessel/local-CLT tail-domination bridge remains open" in note_text)
 check("SOURCE boundary no longer claims to retire P1 by itself",
       "no longer claims to retire P1 by itself" in note_text)
+check("SOURCE summary routes Maradudin references as parallel, not load-bearing",
+      "parallel textbook references rather than load-bearing authority" in note_text)
+check("SOURCE removes accepted-premise textbook-import wording",
+      "accepted-premise textbook import" not in note_text)
 
 # --- STRONGER-THEOREM REROUTE: the leading term is supplied by a stronger native theorem. ---
 correction_note_text = CORRECTION_NOTE.read_text(encoding="utf-8")
@@ -155,6 +160,8 @@ check("REROUTE stronger-theorem cache is fresh and reports PASS=6 FAIL=0",
       cache_field(correction_cache_text, "runner_sha256") == sha256(CORRECTION_RUNNER)
       and "TOTAL: PASS=6 FAIL=0" in correction_cache_text
       and "RESULT: G(r) = 1/(4 pi r) + [5/(32 pi)] K4(nhat)/r^3 + O(1/r^5)" in correction_cache_text)
+check("REROUTE audit registration records exact-support leading-term route",
+      "intrinsic_status: exact-support_for_leading_term_via_stronger_theorem" in note_text)
 
 n_pass = sum(1 for _, ok in results if ok)
 n_fail = sum(1 for _, ok in results if not ok)

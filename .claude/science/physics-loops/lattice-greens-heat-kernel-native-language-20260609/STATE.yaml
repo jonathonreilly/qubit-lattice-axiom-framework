@@ -1,0 +1,29 @@
+loop_id: lattice-greens-heat-kernel-native-language-20260609
+branch: physics-loop/lattice-greens-heat-kernel-native-language-20260609
+target_claim_id: lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07
+target_note: docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md
+runner: scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py
+cache: logs/runner-cache/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.txt
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+blocker_closed: "stale accepted-premise textbook-import wording after the native Green-function reroute landed"
+repair_summary: >
+  Reclassifies the heat-kernel row as a framework-native leading-term route
+  through the stronger lattice-correction theorem, with Maradudin/Lawler/Spitzer
+  kept as parallel references instead of load-bearing authority.
+audit_required_before_effective_retained: true
+audit_results_modified: false
+bare_retained_allowed: false
+proposal_allowed: true
+proposal_allowed_reason: >
+  The branch proposes exact support for the leading Green-kernel term, not an
+  effective retained audit status.
+verification:
+  runner: "TOTAL: PASS=20 FAIL=0"
+  py_compile: pass
+  diff_check: pass
+  docs_audit_diff: none
+next_exact_action: "review PR for science extraction; independent audit lane decides any status movement"

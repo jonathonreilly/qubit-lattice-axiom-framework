@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_w_hessian_identification_full_channel_table_2026_06_09.py
+runner_sha256: 8c4bf76adf230f71bca9cfeb9ce45c4abba875a5764142431c2dd058d74ef0d1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.82
+status: ok
+----- stdout -----
+FULL FINITE-k CHANNEL TABLE OF THE W METRIC HESSIAN (Ward-selected scheme), native elliptic Dirac
+====================================================================================================
+[PASS] X0 (convention pin): the declared position-space base operator has symbol i sigma.sin p + m (the native ELLIPTIC operator; a spurious i on the hop would silently build the non-elliptic landed control)
+       plane-wave symbol check exact at p=(2pi/L,0,0), both spin components
+[PASS] X1 (landed pin): native iD elliptic, det = m^2 + |sin q|^2 > 0 on all BZ modes
+       min det factor = 1.000
+[PASS] X2 (IDENTIFICATION, the load-bearing bridge DERIVED): exact second variation of W=log|det D[h]| for the DECLARED local vielbein link coupling (position space; explicit -Tr(GdDGdD) AND an independent log|det| second difference) EQUALS the momentum-space bubble with the midpoint vertex V_H = (i/2) sum H_{alpha nu} sigma_alpha sin(qbar_nu) -- the naive-type vertex IS the exact W metric Hessian of a declared local metric coupling (linear => NO seagull in this scheme)
+       TT_yz: exactTr=+12.014201 logdetFD=+12.014260 momPred=+12.014201; GAU_xy: exactTr=+16.310852 logdetFD=+16.310895 momPred=+16.310852; TT_E: exactTr=+25.445275 logdetFD=+25.445340 momPred=+25.445275
+[PASS] X3 (scheme relation): V_cons - V_naive = local improvement (i/2) sum H sigma_alpha (cos(qbar_alpha)-1) sbar_nu (exact at random (q,k,H)); naive FAILS transversality (landed T3 reproduced); cons+seagull residual is CUBIC in k0 (landed T4 reproduced, absolute spread tolerance 0.002 as landed) -- Ward-selected scheme = declared metric coupling + LOCAL improvement + LOCAL seagull (lattice CCJ improvement)
+       improvement-identity err=1.6e-16; naive residual=0.167; cons+sg res/k0^3: 0.0111, 0.0108, 0.0100 (~const)
+
+  unit-Frobenius-norm channel slopes at k=2pi/16, m=1 (induced action; healthy TT = positive):
+    channel       Ward-selected     naive(metric)
+    TT_yz          +0.006469        +0.009321
+    TT_E           +0.003091        +0.010295
+    GAU_xy         +0.005779        +0.001495
+    GAU_xz         +0.005779        +0.001495
+    GAU_xx         +0.001442        -0.001152
+    TR_S           +0.003091        +0.008361
+    TR_full        +0.002541        -0.001750
+[PASS] X4 (the full finite-k channel table): computed in BOTH schemes; the local seagull is k-independent and cancels EXACTLY in slope differences Pi(k)-Pi(0) (verified), so the slope table is seagull-normalization-independent
+       slope(seagull on) - slope(off) = 0.00e+00
+[PASS] X5a (spin-2 sector beyond the landed yz channel): BOTH unit-norm TT channels positive (Ward-selected scheme)
+       yz=+0.006469, (yy-zz)/sqrt2=+0.003091
+[PASS] X5b (E_g/T_2g spin-2 isotropy, named-open item, MEASURED -- an honest negative): the T_2g(yz)-vs-E_g((yy-zz)) split is k-STABLE (a property of the O(k^2) stiffness constants -- genuine cubic anisotropy of the tested 'elastic' constants, NOT a small finite-k artifact) and PERSISTS (even grows) toward lighter mass at accessible lattice sizes: the tested spin-2 stiffness has O(1) cubic anisotropy -- the induced action does NOT deliver an emergent-SO(3)-isotropic graviton kinetic term by itself. (Deep continuum scaling k << m << 1 with q_min << m is beyond this runner -- bounded statement.)
+       k-scan(m=1): k=0.393: 0.522; k=0.262: 0.523; k=0.196: 0.523 | m-scan: m=1.0: 0.522; m=0.5: 0.561; m=0.25: 0.605
+[PASS] X6 (diffeo direction, MEASURED -- an honest negative): pure-gauge channels {xx,xy,xz} (h=k_(a xi_b), k||x) are NOT suppressed relative to TT in EITHER scheme at the slope level. The Ward selection fixes the longitudinal CONTACT structure of Pi (transversality residual O(k0^3), X3), but the gauge-channel k^2 slopes remain O(TT): this is the measured lattice diffeomorphism-breaking of the induced action at O(k^2) -- the finite-k face of the missing emergent-diffeo bridge, now quantified
+       Ward-selected: max|gauge|/TT = 0.893; naive(metric): 0.160
+[PASS] X7 (the #3220 comparator question ANSWERED, a finite-k SHARPENING of the no-go): the degenerate-supermetric no-go SUPPLIED an opposite-signed pair (V_TT>0, V_trace<0). The induced finite-k table in the Ward-selected scheme gives trace stiffness POSITIVE -- SAME sign as TT. So the k=0 trace=shear same-sign degeneracy persists on the checked finite-k grids: the opposite-signed GR (Lichnerowicz) channel pair is NOT induced by the one-loop W in this tested scheme, and the no-go's supplied comparator remains supplied (the curvature-sign structure must come from elsewhere, e.g. the geometric/Regge route). The naive-scheme full-trace negative is gauge-contaminated (full trace contains the pure-gauge xx at k||x), not a counter-example.
+       Ward-selected: TT=+0.006469, transverse-trace=+0.003091, full-trace=+0.002541 (all same sign); naive full-trace=-0.001750
+[PASS] X7b (transverse trace-vs-shear splitting, the GR-needed structure, MEASURED): in the conserved scheme the splitting is ZERO at MACHINE precision and at a second independent (N,m,k) point -- the k=0 trace=shear DEGENERACY persists on the checked finite-k grids (not just same-sign). Mechanism: the conserved vertex's per-component cos(qbar)*sin(qbar) factor is pi-periodic, so the compatible-grid q_y -> q_y + pi BZ shift flips the cross-term integrand sign and cancels Pi_{yy,zz}; the naive scheme's sin(qbar) factor is not pi-periodic, hence its small nonzero splitting (the contrast confirms the mechanism). In NEITHER scheme does the splitting approach the GR-required large opposite-sign structure.
+       conserved (TR_S - TT_E) = +1.37e-16 at (N16,m1,k=2pi/16) and +8.67e-18 at (N12,m0.7,k=4pi/12) (vs channel +0.003091); naive = -1.93e-03
+[PASS] X8 (mass scan + BZ convergence): Ward-selected TT slope positive for m in {0.5,1,1.5,2}, stable over N in {12,16,20}
+       mass ['+0.01651', '+0.00643', '+0.00257', '+0.00113']; BZ ['+0.00638', '+0.00647', '+0.00651']
+[PASS] X9 (scheme robustness + magnitude): TT sign positive in BOTH the declared-metric and the Ward-selected schemes (sign scheme-robust; gauge/longitudinal channels scheme-sensitive); induced TT stiffness c_TT/a^2 in lattice units (scale-reference primitive a^-1 = M_Pl gives the units bridge; units remark only, no dimensionless physics granted)
+       c_TT(Ward-selected, m=1) = +0.006469; c_TT(naive/metric) = +0.009321
+
+TOTAL: PASS=12 FAIL=0
+VERDICT (three findings, all bounded):
+  (1) IDENTIFICATION BRIDGE DERIVED: the naive-type vertex IS the exact W metric Hessian of a
+      declared local vielbein link coupling (verified against explicit log|det D[h]| in position
+      space, two independent ways); the Ward-selected conserved scheme = that coupling + an
+      exhibited LOCAL improvement term + the local seagull (lattice analogue of stress-tensor
+      improvement). The 'runner-defined vertex' mystery of the landed rows is resolved.
+  (2) SPIN-2 SECTOR EXTENDED, WITH AN HONEST NEGATIVE: both TT channels positive (scheme-robust,
+      mass-robust, BZ-convergent), BUT the E_g/T_2g stiffness anisotropy is O(1), k-STABLE, and
+      PERSISTS toward lighter mass -- the tested stiffness has O(1) cubic anisotropy, not an
+      emergent-isotropic graviton kinetic term.
+  (3) THE #3220 COMPARATOR IS NOT INDUCED (sharpening): the conserved-scheme induced trace
+      stiffness is POSITIVE -- same sign as TT -- and the transverse trace-vs-shear splitting is
+      ZERO at machine precision on checked grids: the k=0 trace=shear DEGENERACY persists in
+      this finite-BZ check. The opposite-signed GR/Lichnerowicz channel pair is not induced by
+      the one-loop W action in this tested scheme; the curvature-sign structure must come from
+      elsewhere, such as a geometric/Regge route, and the gauge channels are NOT suppressed at
+      the slope level in this finite-BZ check.
+  NET: in the tested native one-loop W schemes the induced action is a healthy-positive but
+      ANISOTROPIC, SAME-SIGN, gauge-unsuppressed elastic stiffness -- it does not reproduce the
+      Einstein/Lichnerowicz opposite-sign trace/TT comparator in this tested class.
+Scope: finite-BZ stiffness signs of the induced action for the native elliptic operator; NOT a
+continuum dispersion law; NOT a unique-coupling theorem (local improvement freedom exhibited, not
+eliminated); NOT full GR closure. No PDG/fitted value.
+
+----- stderr -----
+

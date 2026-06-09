@@ -1,6 +1,6 @@
 ---
 claim_id: free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08
-claim_type_author_hint: bounded_theorem
+claim_type: bounded_theorem
 status_authority: independent_audit_lane_only
 direct_effective_status_change_allowed_from_this_note: false
 ---
@@ -8,7 +8,9 @@ direct_effective_status_change_allowed_from_this_note: false
 # Free Dirac Poincaré: Stone Generators Coincide with the Differential Generators on a Common Core
 
 **Date:** 2026-06-08
-**Type:** bounded theorem / direct-support bridge (closes a named audit dependency edge)
+**Type:** bounded_theorem
+**Role:** direct-support bridge (closes a named audit dependency edge)
+**Claim type:** bounded_theorem
 **Primary runner:**
 [`scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py`](../scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py)
 **Cached runner output:**
@@ -33,7 +35,7 @@ generators exist) is already supplied by
 [`FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`](FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md)
 (`retained_bounded`). This note supplies the **remaining** conjunct: the **common-core
 coincidence** — the Stone generators *equal* the differential generators because they agree
-on a common core. Runner **20 PASS / 0 FAIL**.
+on a common core. Runner **21 PASS / 0 FAIL**.
 
 **Bounded scope.** This is the **free one-particle** Wigner representation on the supplied
 continuum positive-mass mass-shell carrier (`m>0`, spin `1/2`). It does **not** derive the
@@ -56,7 +58,7 @@ K_i = -i E d/dp_i           (orbital = full-line momentum in rapidity) + bounded
 
 Common core: `D = C_c^inf(H_m^+; C^2)` (smooth, compactly supported spinor wavefunctions).
 
-## The coincidence theorem (runner 19/19)
+## The coincidence theorem (runner 21/21)
 
 **(A) The measure `d^3p/(2E)` is boost-invariant.** A boost gives `dp'_1/dp_1 = E'/E`, so
 `(dp'_1/dp_1)·(E/E') = 1` (verified symbolically and numerically).
@@ -66,6 +68,14 @@ Common core: `D = C_c^inf(H_m^+; C^2)` (smooth, compactly supported spinor wavef
   full orbital+spin structure** (symbolic).
 - *Boost:* `d/dt ψ(Λ_x(-t)p)|_0 = -E ∂ψ/∂p_1`, i.e. the orbital boost generator is
   `K_x^{orb} = -i E ∂/∂p_1` (the full-line rapidity momentum, `E d/dp = d/dζ`).
+  The Wigner spin multiplier is also checked from the cocycle, not asserted
+  only as a bounded add-on: with the canonical `SL(2,C)` boost
+  `B(p)=sqrt((E+m)/(2m)) (I + p·σ/(E+m))`, differentiating
+  `W(A_x(t),p)=B(A_x(t)p)^(-1) A_x(t) B(p)` gives
+  `dW/dt|_0 = i(p_2 σ_3 - p_3 σ_2)/(2(E+m))`, equivalently the
+  self-adjoint boost spin multiplier `(S × p)_x/(E+m)` under the representation
+  convention. The runner verifies this derivative numerically from the displayed
+  canonical-boost matrices with max error `< 1e-8`.
 - *Translation:* the generator is `P_i = p_i` (real multiplication).
 
 So `D ⊂ D(A_Stone)` and `A_Stone|_D = A_diff` for each of the ten generators.
@@ -85,8 +95,9 @@ reducing it to the full-line momentum operator `-i d/dζ` in rapidity (the paren
 repair; the half-line control leaks norm, so this is a genuine full-line/global fact). Its
 **deficiency indices are `(0,0)`**: the solutions of `(-i d/dζ ∓ i)φ = 0` are `φ = e^{±ζ}`,
 neither in `L²(ℝ)` (the runner exhibits `‖e^{ζ}‖²_{[-L,L]} → ∞`), so by von Neumann/Cayley
-`K^{orb}` is essentially self-adjoint on `D`. The Wigner spin term is a bounded matrix-field
-multiplication of operator norm `‖S‖·|p|/(E+m) ≤ 1/2`, so `K = K^{orb} + (\text{bounded
+`K^{orb}` is essentially self-adjoint on `D`. The cocycle derivative above supplies the
+Wigner spin term, and that term is a bounded matrix-field multiplication of operator norm
+`‖S‖·|p|/(E+m) ≤ 1/2`, so `K = K^{orb} + (\text{bounded
 symmetric})` is essentially self-adjoint on the **same** core `D` by **Kato–Rellich**
 (relative bound `0`). `H, P_i` are real multiplication
 (self-adjoint, `D` a core); `J_i` is orbital + bounded spin.
@@ -113,13 +124,17 @@ dependency edge for the essential-self-adjointness note to re-audit.
 
 ## Reprove-and-cite
 
-All facts reproven from the explicit mass-shell carrier in the runner (sympy + numpy, 19/19):
+All carrier-specific facts are reproven from the explicit mass-shell carrier in
+the runner (sympy + numpy, 21/21):
 boost-invariance of `d^3p/(2E)`; the strong-derivative coincidence for rotations (full
-orbital+spin), boosts, and translations; the algebra spot-checks; `P^2=m^2`; `C_c^inf`
-boost-invariance; the boost `E`-weight cancellation and the `|p|/(E+m)<1` spin bound.
-**Comparators only** (never load-bearing imports): Wigner (1939) and Mackey induced-
-representation theory; Reed–Simon Vol I, Thm VIII.11 (core lemma) and the Kato–Rellich
-theorem. No PDG values.
+orbital+spin), boosts including the Wigner-cocycle derivative, and translations; the
+algebra spot-checks; `P^2=m^2`; `C_c^inf` boost-invariance; the boost `E`-weight
+cancellation and the `|p|/(E+m)<1` spin bound.
+
+Standard functional analysis is used only after those premises are checked:
+Reed-Simon Vol I, Thm VIII.11 supplies the core lemma, and Kato-Rellich supplies
+the bounded-perturbation step. Wigner (1939) and Mackey induced-representation
+theory are context comparators, not empirical inputs. No PDG values.
 
 ## Dependencies
 

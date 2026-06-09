@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py
-runner_sha256: 41cfb4e7fa5620c9596ab9de27f783ea7a628fa44aac43a2025d56ac9bc51dbe
+runner_sha256: 9972fab35d76d93640ecaf176fc783eec0e9b0723f4a8c4258c22a739d8f9bb4
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.66
@@ -22,6 +22,7 @@ B: COINCIDENCE  d/dt U(t)psi|_0 = -i A_diff psi  (the audit gap)
 --------------------------------------------------------------------------------------------
   [PASS] (B1) rotation: d/dt U_Rz(t)psi|_0 = -i J_z psi (orbital + spin) => Stone gen of rotations = differential J_z
   [PASS] (B2) boost orbital: d/dt psi(Lambda_x(-t)p)|_0 = -E d psi/dp1 => K_x^orb = -i E d/dp1 (full-line rapidity momentum)
+  [PASS] (B2b) boost Wigner-cocycle derivative gives the bounded spin multiplication term (S x p)_x/(E+m)  --  max derivative error=2.44e-10; max ||spin multiplier||=0.1852<1/2
   [PASS] (B3) translation: U(t)=exp(i t a.p) => generator P_i = p_i (real multiplication, self-adjoint)
 
 --------------------------------------------------------------------------------------------
@@ -55,7 +56,7 @@ F: Reed-Simon VIII.11 core lemma => common core => Stone gen = differential gen 
   [PASS] (F5) => Stone generators COINCIDE with differential generators (agree on a core => identical self-adjoint closures): GAP CLOSED  --  H,P real mult; J orbital+spin; K full-line momentum + bounded spin (Kato-Rellich); algebra closes on C_c^inf; Casimir P^2=m^2
 
 ============================================================================================
-TOTAL: 20 PASS / 0 FAIL
+TOTAL: 21 PASS / 0 FAIL
 ============================================================================================
 
 ----- stderr -----

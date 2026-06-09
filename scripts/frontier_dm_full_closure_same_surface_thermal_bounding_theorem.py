@@ -82,7 +82,7 @@ def part0_source_scope_boundary() -> None:
     print("=" * 88)
     text = NOTE.read_text(encoding="utf-8")
     required = [
-        "**Claim type:** bounded support note",
+        "**Claim type:** bounded_theorem",
         "**Type:** conditional / support",
         "supplied-premise boundary",
         "This row does not derive",
@@ -93,7 +93,7 @@ def part0_source_scope_boundary() -> None:
         "source-note proposal only",
         "actual_" + "current_surface_status",
         "bare_" + "ret" + "ained",
-        "Claim type:** bounded_theorem",
+        "**Claim type:** bounded support note",
     ]
     for phrase in required:
         check(f"source contains required boundary phrase: {phrase}", phrase in text)

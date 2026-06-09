@@ -1,0 +1,19 @@
+== Gate B: the Koide/generation grading Gamma_chi ==
+  PASS  Gamma_chi eigenvalues are {-1,-1,+1} (signature (1,2))
+  PASS  Gamma_chi is an involution (a grading): Gamma_chi^2 = I
+  PASS  Gamma_chi is C3-equivariant (circulant): [Gamma_chi, R] = 0
+== Gate A: the Dirac/spinor chirality gamma_5 = I_3 (x) sigma_3 ==
+  PASS  gamma_5 is an involution (a grading): gamma_5^2 = I
+  PASS  gamma_5 anticommutes with the Dirac mass beta (REAL chiral mass, L<->R)
+== The separation: gamma_5 is GENERATION-BLIND ==
+  PASS  gamma_5 = I_3 (x) sigma_3: trivial (identity) on the generation factor
+  PASS  gamma_5 commutes with every generation op G (x) I_2  (R, Gamma_chi, random)
+  PASS  the Dirac mass beta ALSO commutes with the generation grading
+== Gate B is NOT supplied: it needs a C3-BREAKING M_gen ==
+  PASS  retained no-go: every circulant M_gen anticommuting Gamma_chi is M_gen=0
+  PASS  a C3-BREAKING M_gen exists that anticommutes Gamma_chi (null space nonempty)
+  PASS  ...and every such M_gen genuinely breaks C3: [M_break, R] != 0
+== Conclusion: two independent gates ==
+  PASS  gate A (Dirac, supplied) is independent of gate B (Koide generation, open)
+
+TOTAL: PASS=12 FAIL=0

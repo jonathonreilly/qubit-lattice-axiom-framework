@@ -58,14 +58,15 @@ fibre frame `g(x) ∈ U(3)` is a redundancy of description: it registers no
 observable. Equivalently, the framework supplies no canonical *physical*
 cross-site fibre identification beyond the flat reference `U = I`.
 
-This premise is **strongly supported but not yet a separate theorem:**
+This premise has clean support from the commutant + locality structure, but one
+tempting support leg is **demoted**; it is not yet a separate theorem:
 
-- *Frame rotations are unobservable by construction.* The `SU(3)` fibre is, by
+- *Commutant (clean — the global redundancy is exact).* The `SU(3)` fibre is, by
   `graph_first_su3_integration_note`, the **commutant** of the observable weak-`su(2)`
-  action. Operators in the commutant act *trivially* on the registered (observable)
-  content, so a local fibre rotation changes nothing that is recorded. In the record
-  ontology, the fibre frame is an **unregistered reconstruction**, not registered
-  content — exactly the kind of thing physics must be blind to.
+  action, so a **global** commutant rotation leaves every observable invariant: global
+  frame redundancy is exact. Whether the *local* (site-dependent) re-choice is likewise a
+  redundancy is the open content of this premise — note the retained Hermitian hopping
+  bilinear is itself frame-dependent, so the local step is not automatic.
 
 - *Locality forbids a canonical global section.* One-qubit-per-site (QUANTUM) plus
   distinct sites (LATTICE) means each fibre is constructed **intrinsically and
@@ -73,14 +74,30 @@ This premise is **strongly supported but not yet a separate theorem:**
   any identification used to write a hopping term is a **choice**, made independently
   at each link. The redundancy is therefore *born local*.
 
+- *Demoted support — do not rely on.* The tempting framing "the fibre frame is an
+  **unregistered reconstruction**, not registered content" is the **loose**
+  register-not-read dichotomy that
+  [`REGISTER_NOT_READ_SCOPE_CORRECTION_PANEL_VERDICT_2026-06-06`](REGISTER_NOT_READ_SCOPE_CORRECTION_PANEL_VERDICT_2026-06-06.md)
+  **demoted**: it carries no central-sector partition `{P_k}`, is the "canonical retrofit
+  signature," and is directionless (the same move would equally force the *free* Koide
+  `r = 1/2` dial). The **genuine** licensed form is the partition map `D(M) = Σ_k P_k M P_k`
+  under guardrail G1 (`{P_k}` derived from algebra+symmetry, never invented), and **G1 does
+  not discharge the local color frame**: color `SU(3)` acts **irreducibly** on the
+  fundamental triplet, so the isotype partition is **trivial** (one block, with the frame
+  *within* it); and the only axiom-derivable cross-site partition — by site/occupation —
+  **annihilates the hopping entirely** (`D(a_x† a_{x+μ}) = 0`, since the hopping is purely
+  off-diagonal in the site basis), so it cannot adjudicate the frame either. The local step
+  is therefore **not** discharged by register-not-read; it stays open (next bullet).
+
 - *Residual to audit.* The retained translation bridge supplies **one** identification,
   `T_a a_x T_a† = a_{x+a}` — the **flat reference** `U = I`. The local
   fibre-frame redundancy premise says this reference is a **gauge choice**
   (physically non-rigid), not a canonical physical pinning. Were translation
   to *rigidly* fix a physical frame, `U = I` would be fixed and there would be
-  no gauge field. That the commutant frame is unregistered (point 1) is why
-  the flat reference is plausibly non-rigid, but turning "strongly supported"
-  into "derived" is a distinct audit step.
+  no gauge field. That there is no canonical global color frame (the commutant +
+  locality legs) is why the flat reference is plausibly non-rigid; but turning
+  "plausibly" into "derived" is a distinct audit step that register-not-read does
+  **not** supply (demoted-support bullet above).
 
 Under this premise, the link transporter is forced by frame independence.
 Independently of the premise, the gauge-covariance identities (Parts 1-5, 7)
@@ -181,8 +198,9 @@ with `g(x) = e^{iθ(x)}I` forces an **abelian (hypercharge-like) connection** fo
   as in `graph_first_su3_integration_note`; the abelian factor remains "hypercharge-like"
   pending the anomaly-complete identification.
 - The local fibre-frame redundancy premise is **named, not discharged**: that
-  the local fibre frame is physically non-rigid is strongly supported by the
-  commutant/record-ontology argument but remains its own audit target.
+  the local fibre frame is physically non-rigid is supported by the commutant +
+  locality argument (the register-not-read leg is **demoted** — see "The named
+  bounded premise") but remains its own audit target.
 
 ## Scope and non-claims
 

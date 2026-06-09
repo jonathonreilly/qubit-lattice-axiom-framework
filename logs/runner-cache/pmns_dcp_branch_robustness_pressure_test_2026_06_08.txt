@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/pmns_dcp_branch_robustness_pressure_test_2026_06_08.py
+runner_sha256: 39ae0af212316c8a7652bd4969aa02723c30baf6fae0886cac9b7c7e7436a491
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 12.50
+status: ok
+----- stdout -----
+PMNS delta_CP PRESSURE-TEST: is the third-quadrant forecast branch-robust or branch-dependent?
+============================================================================================
+[PASS] V0 (anchor validation): float forward map reproduces the note's anchor (s12^2,s13^2,s23^2,delta_CP)=(0.307,0.0218,0.545,260.88) -> the convention is correct
+       computed s12^2=0.3070, s13^2=0.02180, s23^2=0.5450, delta_CP=260.88 deg
+
+  V1a branch scan, TWO-angle input (the note's stated logic: s12^2,s13^2 are inputs, s23^2+delta_CP are outputs). target (s12^2,s13^2)=(0.307,0.0218) +/-0.004: 97 grid hits in 2 basin(s)
+    basin 0: (m,delta)~(-0.012,1.061)  delta_CP in [98.0,114.1] deg ['Q2 (90-180)']  s23^2 in [0.690,0.722]
+    basin 1: (m,delta)~(0.678,0.929)  delta_CP in [248.1,273.6] deg ['Q3 (180-270)', 'Q4 (270-360)']  s23^2 in [0.529,0.555]
+[PASS] V1a (two-angle input IS branch-dependent -- verified finding): under the note's stated logic (s12^2,s13^2 as the only inputs), there EXISTS a competing chamber-boundary preimage whose delta_CP is NOT in Q3 (basin 0: Q2, ~98-114 deg). This answers the note's own open sec-5 question: competing branches do NOT agree -- the imposed Basin-1 rule is genuinely load-bearing under two-angle input.
+       2 basin(s); competing non-Q3 branch present = True
+
+  V1b FAIR test, THREE-angle input (s23^2~0.545 is also MEASURED, +/-0.02): 58 grid hits in 1 basin(s)
+    basin 0: (m,delta)~(0.678,0.929)  delta_CP in [248.1,273.6] deg ['Q3 (180-270)', 'Q4 (270-360)']  s23^2 in [0.529,0.555]
+[PASS] V1b (THREE-angle robustness -- the fair test): with s23^2 ALSO fixed to its measured value, does EXACTLY ONE basin survive (the Q2 competitor excluded) and is it near-maximal CP (~Q3)?  PASS here = the competing branch is empirically excluded by the measured s23^2 (NOT just an imposed rule); so delta_CP near-maximal is robust given the 3 measured angles, and the prediction can be stated conditional on data, dropping the imposed branch rule. (The exact [251.86,270] bracket is the note's 200-bit interval cert; this loose float scan only checks branch structure, not the bracket.)
+       1 basin(s) match all 3 angles (the Q2 s23^2~0.70 competitor is gone); near-maximal = True
+
+  V2 embedding sensitivity (anchor (m,delta), q = sqrt(8/3) - delta + t):
+    t=-0.10: delta_CP= 243.59 deg  Q3 (180-270)  (s12^2=0.273, s13^2=0.0153)
+    t=-0.05: delta_CP= 252.05 deg  Q3 (180-270)  (s12^2=0.288, s13^2=0.0176)
+    t=+0.00: delta_CP= 258.98 deg  Q3 (180-270)  (s12^2=0.302, s13^2=0.0207)
+    t=+0.05: delta_CP= 264.57 deg  Q3 (180-270)  (s12^2=0.317, s13^2=0.0244)
+    t=+0.10: delta_CP= 269.08 deg  Q3 (180-270)  (s12^2=0.331, s13^2=0.0286)
+[PASS] V2 (embedding sensitivity): how far does delta_CP move as the embedding surface q is perturbed off the chamber boundary by t in +/-0.1?  A large swing means the exact q=sqrt(8/3)-delta surface is load-bearing for the forecast.
+       delta_CP spread over t in [-0.1,0.1] = 25.5 deg
+
+TOTAL: PASS=4 FAIL=0
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+
+----- stderr -----
+

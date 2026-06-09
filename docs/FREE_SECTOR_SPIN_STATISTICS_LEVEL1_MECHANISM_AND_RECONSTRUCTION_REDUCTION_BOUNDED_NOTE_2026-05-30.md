@@ -19,6 +19,24 @@ conditional/partial source note, not as retained or unconditional authority. Thi
 note does **not** perform `R`, and it does **not** claim an OS/Wightman reconstruction,
 a Wightman `n`-point hierarchy, or an unconditional FS result.
 
+## 2026-06-09 antecedent-discharge update
+
+The T2 reduction below makes free-sector spin-statistics conditional on the
+reconstruction `R` delivering a relativistic (Lorentz-covariant, positive-energy,
+microcausal) field. For the **free Gaussian sector** that antecedent is now
+discharged: the OS0 primitive
+([`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md))
+supplies the Euclidean SO(4)/boost ingredient and the capstone
+([`EMERGENT_POINCARE_FREE_SECTOR_FROM_KINETIC_ISOTROPY_PRIMITIVE_BOUNDED_THEOREM_NOTE_2026-06-09.md`](EMERGENT_POINCARE_FREE_SECTOR_FROM_KINETIC_ISOTROPY_PRIMITIVE_BOUNDED_THEOREM_NOTE_2026-06-09.md))
+assembles the free-sector Poincaré-covariant, positive-energy field. With that
+relativistic `R` in hand, the LEVEL-1 mechanism fires: the dominoes note
+([`FREE_SECTOR_RELATIVISTIC_QFT_DOMINOES_BOUNDED_THEOREM_NOTE_2026-06-09.md`](FREE_SECTOR_RELATIVISTIC_QFT_DOMINOES_BOUNDED_THEOREM_NOTE_2026-06-09.md))
+computes that the spacelike commutator function vanishes while the anticommutator
+does not, so for spin-½ microcausality **selects CAR** (Bose quantization is
+acausal). Free-sector spin-statistics is therefore **selected**, modulo the same
+free-Gaussian residuals (G1 measure bridge; rung ratification). No audit verdict
+is changed by this pointer; the interacting case remains out of scope.
+
 ## Relation to the review-loop salvage of #2258
 
 An earlier note (PR #2258) attempted to *assemble* the free-field

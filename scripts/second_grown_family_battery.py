@@ -18,6 +18,11 @@ import hashlib
 import sys
 from pathlib import Path
 
+import DISTANCE_LAW_BREAKPOINT_COMPARE as distance_law_source
+import SECOND_GROWN_FAMILY_COMPLEX as complex_full_source
+import SECOND_GROWN_FAMILY_COMPLEX_QUICK as complex_quick_source
+import SECOND_GROWN_FAMILY_SIGN_SWEEP as sign_sweep_source
+import impact_parameter_portability_probe as impact_source
 import runner_cache as rc
 
 
@@ -27,6 +32,15 @@ ROOT = Path(__file__).resolve().parents[1]
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+
+SOURCE_MODULES = {
+    "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py": sign_sweep_source,
+    "scripts/SECOND_GROWN_FAMILY_COMPLEX.py": complex_full_source,
+    "scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py": complex_quick_source,
+    "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py": distance_law_source,
+    "scripts/impact_parameter_portability_probe.py": impact_source,
+}
+EXPECTED_PASS_COUNT_BEFORE_FINAL = len(SOURCE_MODULES) * 3 + 5
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -45,6 +59,13 @@ def cache_text(runner: str) -> str:
     status = rc.cache_status(runner)
     cache_path, header, text = rc.load_cache(runner)
     runner_path = ROOT / runner
+    module = SOURCE_MODULES[runner]
+    module_path = Path(module.__file__).resolve()
+    check(
+        f"{runner} source is imported into this restricted packet",
+        module_path == runner_path.resolve(),
+        f"module={module_path.relative_to(ROOT)}, expected={runner}",
+    )
     live_sha = hashlib.sha256(runner_path.read_bytes()).hexdigest() if runner_path.is_file() else None
     header_sha = str(header.get("runner_sha256")) if header is not None else None
     source_ok = runner_path.is_file() and live_sha == header_sha
@@ -120,8 +141,11 @@ def main() -> int:
     )
     check(
         "Therefore the missing battery path is restored as a current evidence verifier, not as a resurrection of the old broad table",
-        PASS_COUNT == 15 and FAIL_COUNT == 0,
-        "legacy broad status remains for independent audit to decide",
+        PASS_COUNT == EXPECTED_PASS_COUNT_BEFORE_FINAL and FAIL_COUNT == 0,
+        (
+            f"expected {EXPECTED_PASS_COUNT_BEFORE_FINAL} prior checks before final "
+            f"gate; legacy broad status remains for independent audit to decide"
+        ),
     )
 
     print("\n" + "=" * 104)

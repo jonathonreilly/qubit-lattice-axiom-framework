@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_cubic_diffeo_ward_operator_telescope.py
+runner_sha256: 3dea8bc1e2b1ecbdf63438670357a74c6d104e771671f9590c659f8e161f58c7
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 4.10
+status: ok
+----- stdout -----
+PASS T1 native iD elliptic: det=m^2+|sin|^2>0 on ALL 2744 BZ modes (valid Z)
+PASS T1b bare-Hermitian sigma.sin sign-indefinite (2048/2744 modes det<=0, #3222 control)
+PASS T2 gauge op-Ward sum_i 2sin(k_i/2)u_i = D(q+k)-D(q) EXACT (err=1.2e-15)
+PASS T3 STRESS op-WT sum_i 2sin(k_i/2)V_ij = 1/2 sbar_j*dD + 1/2 Ssc*u_j EXACT (err=6.1e-16)
+PASS T4 staggered DD^dag=(m^2+sum sin^2(P/2))I_16 (err=1.8e-15)
+PASS T4b staggered gauge op-Ward sum_mu 2sin(K/2)Vel(P+K/2)=D(P+K)-D(P) EXACT (err=7.1e-16)
+PASS T5 staggered STRESS op-WT sum_mu 2sin(K/2)Vst_munu = 1/2 mom_nu*dD + 1/2 Ssc*Vel_nu EXACT (err=4.4e-16)
+PASS T6 telescoping: contracted cubic triangle = bubble-difference + contact EXACTLY (|diff|=1.1e-16)
+PASS T6b telescoped bubble-difference is NONZERO (|TEL|=0.1093 -- stress-coupling channel present)
+PASS T7 contact Ssc is O(k) linear (|Ssc|/k-scale = 1.97, 2.05, 2.07, 2.04 ~ const -> seagull-completion channel)
+PASS T8 contact is NOT subleading: contact/LHS = 0.5001, 0.5002, 0.5001 = 0.5 at all k0 (telescope + contact = the two equal halves of the contracted vertex)
+PASS T8b contact scales at the SAME power as the vertex (k0^0.84 vs k0^0.84) -> the closure requires the seagull completion, NOT a trivial vanishing
+
+Bounded result: exact stress-vertex operator Ward identities hold to roundoff on BOTH the
+2-comp Cl(3) and staggered Kahler-Dirac finite models. The longitudinally contracted tested
+cubic triangle TELESCOPES into a 2-point bubble-difference plus a same-order contact term.
+The contact is not subleading, so the full cubic Ward/EH closure remains open until the
+conserved cubic seagull and full RHS are constructed.
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

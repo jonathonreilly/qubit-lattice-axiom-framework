@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 771 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1380 |
+| unaudited | 1379 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -38,6 +38,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_emergent_lorentz_invariance_note` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | 1 |
+| `decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
@@ -62,20 +63,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1203 |
 | `audited_conditional` | 16 |
-| `audited_decoration` | 52 |
+| `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1695 |
+| `unaudited` | 1694 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1431 |
-| `decoration` | 53 |
+| `decoration` | 54 |
 | `meta` | 323 |
 | `no_go` | 327 |
 | `open_gate` | 142 |
-| `positive_theorem` | 768 |
+| `positive_theorem` | 767 |
 
 | criticality | count |
 |---|---:|
@@ -1369,6 +1370,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` |
 | `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19` |
+| `gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
 | `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
@@ -7275,6 +7277,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Its only function is to provide a citeable one-hop authority for compressed_local_block_from_line, BOUNDARY_FIRST_WEIGHTS, line normalization / parameterization helpers, and projection-distance helpers.  _(class `E`)_
 - **chain closes:** False — The restricted packet verifies only that the helper names and functions are defined/importable; it does not derive the helper layer from the axiom or retained independent inputs. The missing step is an independent theorem that the boundary-first complement-line frame and selected block-compression layer are canonical consequences rather than registered helper choices.
 - **rationale:** The primary runner source is a helper module with definitions and no executed checks; the cached run has empty stdout and only establishes that imports succeed. The source note's load-bearing move is to name these constants and routines as a citeable authority, while explicitly leaving the complement-line frame, selector, and downstream theorem closure outside scope. That is a definition/registration layer, not a class (C) derivation or class (A) algebraic closure.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic normalization of the retained first-sector completion vector into a conjugation-symmetric nonnegative truncated coefficient packet, with reconstruction of the retained three-sample triple; no full beta=6 environment realization is audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-113938-22a2540dfb-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the completed retained vector v_min, set z00_min = v_min(0,0) and rho_ret = v_min / z00_min, so Z_min = z00_min E_3 rho_ret.  _(class `A`)_
+- **chain closes:** True — The arithmetic closes from the completed retained vector: 0.09339384931083795 / 0.34960695245840506 = 0.2671395653149936, and an independent first-sector SU(3) character evaluation at the three sample angles reproduces the displayed Z_min values. The result is only the truncated retained packet, not an extension to the full environment data.
+- **rationale:** The note does not derive a new framework-point environment object; it repackages the upstream completed first-sector coefficient vector by standard normalization. The primary runner's numerical checks verify the ratio, conjugation symmetry, nonnegativity, and reconstruction, while its cross-note string checks only confirm the naming context. The full beta=6 environment extension remains explicitly outside the audited scope.
+- **decoration parent:** `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17`

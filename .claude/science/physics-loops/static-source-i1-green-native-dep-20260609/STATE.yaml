@@ -1,0 +1,13 @@
+loop_id: static-source-i1-green-native-dep-20260609
+status: packaged_for_review
+created: 2026-06-09
+target_claim_id: static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27
+source_note: docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md
+runner: scripts/static_source_readout_i1_accepted_premise_runner.py
+runner_cache: logs/runner-cache/static_source_readout_i1_accepted_premise_runner.txt
+prior_blocker: "I1 source consumed the Green-kernel asymptotic through the sibling Maradudin accepted-premise bridge instead of the framework-local Green theorem."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

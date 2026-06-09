@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_os_g2_boost_poincare_rederived_on_framework.py
+runner_sha256: 775d7fa533a6540883c274a99457b2b7859ab6ef4a26bd0ba86f974ba8f49180
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS: SO13_rotations_close [J_i,J_j]=eps_ijk J_k
+PASS: SO13_boosts_rotate [J_i,K_j]=eps_ijk K_k
+PASS: SO13_boosts_noncompact [K_i,K_j]=-eps_ijk J_k (so(1,3), noncompact)
+PASS: VECTOR_gamma_is_lorentz_vector [S_munu,gamma_rho]=eta_nurho g_mu - eta_murho g_nu -> gamma^mu p_mu covariant
+PASS: FINITE_spinor_boost_is_lorentz_boost S(chi)^-1 g0 S(chi) = cosh(chi) g0 + sinh(chi) g1 (a genuine Lorentz boost)
+PASS: HERM_rotations_unitary iJ_i Hermitian -> exp(-i theta J) unitary (compact rotations)
+PASS: HERM_boosts_nonunitary_spinor K_i Hermitian, real boost param -> exp(chi K) non-unitary (expected finite-dim spinor boost)
+PASS: POS_single_particle_pm_E H=alpha.p+beta m spectrum +-E=0.933; field H>=0 by CAR/T1 (companion note)
+PASS: NELSON_only_integration_method_is_textbook framework-native: generators (Cl(3,1) bivectors), so(1,3), covariance, finite boost, positive H; textbook: ONLY Nelson's Lie-algebra->group integration -> G2 is a derivation, not an import
+
+TOTAL: PASS=9 FAIL=0
+VERDICT: G2 (the boost sector / Poincare representation) is RE-DERIVED on the framework's surface. The Lorentz generators are the retained Cl(3,1) bivectors (so(1,3) verified); the Dirac operator is a Lorentz vector (covariant); the finite framework boost is a genuine Lorentz boost; rotations are unitary and boosts are the correctly non-unitary spinor boosts; H>=0 (companion T1/CAR). With the retained iso(3,1) translations, the ENTIRE generator content of the Poincare representation is framework-native. The ONLY textbook input is Nelson's theorem -- the standard Lie-algebra->group integration delivering self-adjoint boosts on the reconstructed Hilbert space -- cited as METHOD. Hence G2 is a framework derivation citing textbook methodology, NOT an import; the keystone's last OS residual carries no physics import.
+
+----- stderr -----
+

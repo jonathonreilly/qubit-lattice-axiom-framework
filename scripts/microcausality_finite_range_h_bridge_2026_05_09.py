@@ -35,6 +35,7 @@ Reproducibility: deterministic seeded SU(3) backgrounds.
 from __future__ import annotations
 
 import math
+from pathlib import Path
 
 import numpy as np
 
@@ -55,6 +56,40 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     print(f"  [{status}] {name}")
     if detail:
         print(f"         {detail}")
+
+
+# ---- Manifest sync ---------------------------------------------------------
+
+def test_F0_note_manifest_sync() -> bool:
+    """Guard the note/runner contract for the Wilson normalization repair."""
+    print("=" * 72)
+    print("TEST F0: note manifest matches corrected Wilson plaquette normalization")
+    print("=" * 72)
+
+    note_path = Path("docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md")
+    text = note_path.read_text(encoding="utf-8")
+    required = [
+        "2026-06-09 J-normalization + Wilson-surface bridge",
+        "J_action  ≤  J_max  :=  (d/2) · 1   +   r_W · d   +   |m|   +   2β · q_face",
+        "2 + 4 + |m| + 72 = 78 + |m|",
+        "per-plaquette coefficient is `β`, not `β/N_c`",
+    ]
+    forbidden = [
+        "J_action  ≤  J_max  :=  (d/2) · 1   +   r_W · d   +   |m|   +   (2β / N_c) · q_face",
+        "J_max = 4/2 + 1·4 + |m| + (2·6/3)·6",
+    ]
+
+    missing = [item for item in required if item not in text]
+    stale = [item for item in forbidden if item in text]
+    ok = not missing and not stale
+    detail = "corrected 2β plaquette slot and no-double-division guard are present"
+    if missing:
+        detail = f"missing required note markers: {missing}"
+    if stale:
+        detail = f"stale pre-repair formula still present: {stale}"
+    check("F0 — note/runner manifest uses corrected Wilson plaquette normalization", ok, detail)
+    print()
+    return ok
 
 
 # ---- SU(3) link generation -------------------------------------------------
@@ -473,6 +508,7 @@ def main() -> None:
     print("  - RP note: docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md")
     print()
 
+    f0 = test_F0_note_manifest_sync()
     f1 = test_F1_finite_range_support()
     f2 = test_F2_explicit_J_bound()
     f3 = test_F3_v_LR_explicit()
@@ -482,12 +518,13 @@ def main() -> None:
     print("=" * 72)
     print("SUMMARY")
     print("=" * 72)
+    print(f"  F0 note manifest / Wilson normalization guard:         {'PASS' if f0 else 'FAIL'}")
     print(f"  F1 action-density local support:                       {'PASS' if f1 else 'FAIL'}")
     print(f"  F2 explicit J_max bound from action coefficients:      {'PASS' if f2 else 'FAIL'}")
     print(f"  F3 conditional v_LR = 2erJ LR bound holds on toy H:    {'PASS' if f3 else 'FAIL'}")
     print(f"  F4 outside-lightcone exponential decay:                {'PASS' if f4 else 'FAIL'}")
     print()
-    all_ok = f1 and f2 and f3 and f4
+    all_ok = f0 and f1 and f2 and f3 and f4
     print(f"  PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()

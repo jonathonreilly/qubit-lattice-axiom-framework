@@ -1,25 +1,30 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py
-runner_sha256: 36ca7e249c56cbecdf77a183fe0fa4e2e9635094c2706abc5deb444dcd22fe07
+runner_sha256: 3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
-CUBIC-LATTICE MARADUDIN ASYMPTOTIC ACCEPTED-PREMISE BRIDGE
+CUBIC-LATTICE GREEN ASYMPTOTIC FRAMEWORK-NATIVE REROUTE
 
 == Part 0: source firewall ==
   PASS: source note file exists (docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
-  PASS: source contains required phrase: Accepted Premises Registration
-  PASS: source contains required phrase: (P1)
+  PASS: source contains required phrase: Framework-Native Replacement For The Former Import
+  PASS: source contains required phrase: Textbook Reference Boundary
   PASS: source contains required phrase: Maradudin
   PASS: source contains required phrase: Lawler
   PASS: source contains required phrase: Spitzer
-  PASS: source contains required phrase: accepted-premise packet entry
-  PASS: source contains required phrase: not derived in this bridge
-  PASS: source contains required phrase: MINIMAL_AXIOMS_2026-05-20.md
+  PASS: source contains required phrase: parallel textbook provenance
+  PASS: source contains required phrase: not load-bearing authority
+  PASS: source contains required phrase: framework-local theorem
+  PASS: source contains required phrase: It no longer uses a textbook theorem as a load-bearing premise
+  PASS: source contains required phrase: No new axiom is introduced
+  PASS: source contains required phrase: No new accepted premise is introduced
+  PASS: source contains required phrase: MINIMAL_AXIOMS_2026-06-05.md
   PASS: source contains required phrase: scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py
   PASS: source contains required phrase: LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+  PASS: source contains required phrase: scripts/lattice_greens_z3_asymptotic_normalization_certificate.py
   PASS: source contains required phrase: bounded_theorem
   PASS: source contains required phrase: Status authority
   PASS: source contains required phrase: independent audit lane only
@@ -29,6 +34,12 @@ CUBIC-LATTICE MARADUDIN ASYMPTOTIC ACCEPTED-PREMISE BRIDGE
   PASS: source note excludes forbidden phrase: load-bearing g_bare value
   PASS: source note excludes forbidden phrase: Wilson plaquette load-bearing input
   PASS: source note excludes forbidden phrase: Newton constant G_obs imported
+  PASS: source note excludes forbidden phrase: accepted-premise packet entry
+  PASS: source note excludes forbidden phrase: not derived in this bridge
+  PASS: source note excludes forbidden phrase: admitted named import
+  PASS: source note excludes forbidden phrase: single non-framework input
+  PASS: source note excludes forbidden phrase: named textbook theorem remains
+  PASS: source note excludes forbidden phrase: supplied accepted-premise packet
 
 == Part 1: (B1) symbol normalization (sympy) ==
   PASS: (B1) sympy: lambda(k) at order 2 equals kx^2 + ky^2 + kz^2 (deg2 = kx**2 + ky**2 + kz**2)
@@ -65,16 +76,17 @@ CUBIC-LATTICE MARADUDIN ASYMPTOTIC ACCEPTED-PREMISE BRIDGE
   PASS: (B3) residual decays by ~r^-5 between r and r/2 at r=128 (ratio=32.001)
   PASS: (B3) scaled coefficient stable across r=16..128 (first=0.2788 last=0.2785)
 
-== Part 4: (B4) constant identification under (P1) ==
-  PASS: (B4) sympy: c = 1/(4 pi) under unit point source convention
+== Part 4: (B4) framework constant identification ==
+  PASS: (B4) sympy: c = 1/(4 pi) for the framework unit point-source convention
   PASS: (B4) numerical: target c value 1/(4 pi) computed (c = 0.0795774715459477)
   PASS: (B4) numerical: 4 pi = 12.566370614... (4 pi = 12.566370614359)
 
 == Part 5: dependency status check ==
   PASS: Parent Maradudin wrapper note file exists (docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
-  PASS: Canonical narrow-bridge template file exists (docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+  PASS: parent carries framework-local proof language
   PASS: Parent normalization certificate runner exists (scripts/lattice_greens_z3_asymptotic_normalization_certificate.py)
-  PASS: MINIMAL_AXIOMS_2026-05-20.md exists (docs/MINIMAL_AXIOMS_2026-05-20.md)
+  PASS: Parent normalization certificate cache exists (logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt)
+  PASS: MINIMAL_AXIOMS_2026-06-05.md exists (docs/MINIMAL_AXIOMS_2026-06-05.md)
 
 == Part 6: no forbidden imports ==
   PASS: source note excludes literature comparator: PDG obs value
@@ -87,10 +99,11 @@ CUBIC-LATTICE MARADUDIN ASYMPTOTIC ACCEPTED-PREMISE BRIDGE
 
 == Part 7: no new axioms or vocabulary ==
   PASS: note disclaims new axiom introduction
-  PASS: (P1) declared as existing named-import registration
+  PASS: note disclaims new accepted-premise introduction
+  PASS: legacy row consumes parent framework-local theorem
 
-TOTAL: PASS=63 FAIL=0
-VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from the parent normalization certificate + accepted-premise packet (P1) by substrate-internal arithmetic and finite-precision lattice-harmonic residual evaluation.
+TOTAL: PASS=76 FAIL=0
+VERDICT: framework-native lattice Green asymptotic reroute passes; (B1)-(B4) follow from the parent framework-local Green-kernel theorem plus lattice-internal arithmetic and finite-precision lattice-harmonic residual evaluation. Textbooks are parallel references only.
 
 ----- stderr -----
 

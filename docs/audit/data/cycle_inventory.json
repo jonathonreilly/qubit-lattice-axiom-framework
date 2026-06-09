@@ -1,5 +1,5 @@
 {
-  "cycle_count": 16,
+  "cycle_count": 17,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -391,7 +391,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 6,
+      "max_transitive_descendants": 7,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -400,7 +400,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md",
           "title": "Spatial Cubic Time-Anisotropy Gate No-Go",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         },
         {
           "audit_status": "unaudited",
@@ -409,7 +409,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md",
           "title": "B4 Hypercubic Velocity-Anisotropy Boundary on the Kinetic-Isotropy Primitive Surface",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         }
       ],
       "requires_lemma_extraction": false
@@ -580,6 +580,43 @@
       "decision": null,
       "edges": [
         {
+          "from": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+          "to": "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09"
+        },
+        {
+          "from": "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
+          "to": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 2,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+          "title": "Degenerate Supermetric Sign Algebra Under a Supplied Opposite-Signed Curvature Comparator",
+          "transitive_descendants": 2
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/UNIVERSAL_GR_QUADRATIC_MODE_GLUING_DERIVATION_NARROW_THEOREM_NOTE_2026-06-09.md",
+          "title": "Universal GR Quadratic Mode Gluing Derivation",
+          "transitive_descendants": 2
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0014",
+      "decision": null,
+      "edges": [
+        {
           "from": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
           "to": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
         },
@@ -613,7 +650,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0014",
+      "cycle_id": "cycle-0015",
       "decision": null,
       "edges": [
         {
@@ -650,7 +687,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0015",
+      "cycle_id": "cycle-0016",
       "decision": null,
       "edges": [
         {
@@ -687,7 +724,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0016",
+      "cycle_id": "cycle-0017",
       "decision": null,
       "edges": [
         {
@@ -725,7 +762,7 @@
     }
   ],
   "length_counts": {
-    "2": 10,
+    "2": 11,
     "3": 3,
     "4": 2,
     "5": 1

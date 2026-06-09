@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/microcausality_finite_range_h_bridge_2026_05_09.py
-runner_sha256: 1c4f3940000171ef490092dd12ac176c864e467aa9bdbc274f288fc5ec6ea4e6
+runner_sha256: a84a54f25655932aa12c66302a57050ee5956ee479aeae73272af8b8d30f91b2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.89
+elapsed_sec: 0.90
 status: ok
 ----- stdout -----
 
@@ -13,7 +13,7 @@ MICROCAUSALITY ACTION-SUPPORT J-BOUND RUNNER
 
 Narrows the gap on AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md
 by checking action-density support and a conservative J budget from the
-canonical staggered + Wilson + plaquette coefficients (parent RP note eqs. 1-2).
+symmetric-canonical staggered + Wilson-diagonal + plaquette coefficients.
 
 References:
   - Bridge note: docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md
@@ -50,45 +50,45 @@ TEST F2: J_max bound from action coefficients (gauge-background-independent)
   Compute ||h_z||_op numerically, compare against closed-form J_max.
 
   d=4, r_W=1.0, m=0.3, β=6.0, N_c=3
-  J_max (from action) = |m| + d/2 + r_W·d + 2·(β/N_c)·d(d-1)/2
-                       = 0.3 + 2.0 + 4.0 + 24.0
-                       = 30.3
+  J_max (from action) = |m| + d/2 + r_W·d + 2·β·d(d-1)/2
+                       = 0.3 + 2.0 + 4.0 + 72.0
+                       = 78.3
 
     config     ||h_z||_op (direct)     J_max (closed-form)      OK
   --------  ----------------------  ----------------------  ------
-         0            6.300000e+00            3.030000e+01      OK
-         1            1.860211e+01            3.030000e+01      OK
-         2            1.760672e+01            3.030000e+01      OK
-         3            1.886212e+01            3.030000e+01      OK
-         4            2.031683e+01            3.030000e+01      OK
-         5            1.967726e+01            3.030000e+01      OK
-         6            1.629066e+01            3.030000e+01      OK
-         7            1.726896e+01            3.030000e+01      OK
-         8            1.917484e+01            3.030000e+01      OK
-         9            1.808412e+01            3.030000e+01      OK
-        10            2.027728e+01            3.030000e+01      OK
-        11            1.757491e+01            3.030000e+01      OK
-        12            2.032410e+01            3.030000e+01      OK
-        13            1.687720e+01            3.030000e+01      OK
-        14            1.859192e+01            3.030000e+01      OK
-        15            1.688159e+01            3.030000e+01      OK
-        16            1.720043e+01            3.030000e+01      OK
-        17            1.928535e+01            3.030000e+01      OK
-        18            1.903375e+01            3.030000e+01      OK
-        19            1.852540e+01            3.030000e+01      OK
+         0            6.300000e+00            7.830000e+01      OK
+         1            4.320634e+01            7.830000e+01      OK
+         2            4.022017e+01            7.830000e+01      OK
+         3            4.398637e+01            7.830000e+01      OK
+         4            4.835050e+01            7.830000e+01      OK
+         5            4.643178e+01            7.830000e+01      OK
+         6            3.627197e+01            7.830000e+01      OK
+         7            3.920689e+01            7.830000e+01      OK
+         8            4.492452e+01            7.830000e+01      OK
+         9            4.165235e+01            7.830000e+01      OK
+        10            4.823183e+01            7.830000e+01      OK
+        11            4.012472e+01            7.830000e+01      OK
+        12            4.837231e+01            7.830000e+01      OK
+        13            3.803159e+01            7.830000e+01      OK
+        14            4.317577e+01            7.830000e+01      OK
+        15            3.804478e+01            7.830000e+01      OK
+        16            3.900130e+01            7.830000e+01      OK
+        17            4.525604e+01            7.830000e+01      OK
+        18            4.450125e+01            7.830000e+01      OK
+        19            4.297619e+01            7.830000e+01      OK
 
-  Max observed ||h_z||_op = 2.032410e+01
-  J_max (closed-form) = 3.030000e+01
+  Max observed ||h_z||_op = 4.837231e+01
+  J_max (closed-form) = 7.830000e+01
   [PASS] F2 — closed-form J_max bound holds across all random SU(3) configs
-         max_observed/J_max = 0.6708
+         max_observed/J_max = 0.6178
 
 ========================================================================
 TEST F3: Lieb-Robinson velocity v_LR = 2 e r J from F1 + F2
 ========================================================================
 
-  Conditionally plugging r_action = 2 (F1) and J = 30.3000 (F2):
-  v_LR = 2 · e · r · J = 2 · 2.718282 · 2 · 30.3000
-       = 329.455758 (lattice units)
+  Conditionally plugging r_action = 2 (F1) and J = 78.3000 (F2):
+  v_LR = 2 · e · r · J = 2 · 2.718282 · 2 · 78.3000
+       = 851.365869 (lattice units)
 
   Continuum limit: v_LR · a_s/a_τ → c (parent (M3))
 
@@ -148,7 +148,7 @@ The runner checks bounded action-support/J-budget pieces only.
 It does not construct the exact reconstructed logarithmic H. Cited authority chain:
   - parent RP note (action carriers)
   - hopping_bilinear_hermiticity (B2, B4 for translation-covariance)
-  - staggered_wilson_det_positivity_bridge (M_W = r_W d I form)
+  - staggered_wilson_det_positivity_bridge (retained M_W = r_W d I surface)
 
 
 ----- stderr -----

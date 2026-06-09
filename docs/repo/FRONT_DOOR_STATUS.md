@@ -11,20 +11,20 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3074 |
-| Applied audit verdicts | 1392 |
+| Ledger rows | 3075 |
+| Applied audit verdicts | 1391 |
 | Retained-grade rows, including boxed decorations | 1272 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 805 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1364 |
+| Unaudited rows | 1366 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 22 |
+| Audited conditional rows | 21 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
-| Citation cycles detected | 16 |
+| Citation cycles detected | 17 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -33,13 +33,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1366 |
+| Total pending rows | 1368 |
 | Ready rows | 30 |
-| Cycle-break targets | 16 |
+| Cycle-break targets | 17 |
 | Critical pending | 328 |
 | High pending | 255 |
-| Medium pending | 369 |
-| Leaf pending | 414 |
+| Medium pending | 370 |
+| Leaf pending | 415 |
 
 Next ready rows by queue order:
 
@@ -79,10 +79,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3211 |
+| Citation-graph nodes | 3212 |
 | Critical nodes | 529 |
 | High nodes | 456 |
-| Medium nodes | 832 |
+| Medium nodes | 833 |
 | Leaf nodes | 1394 |
 
 Top load-bearing rows by graph score:

@@ -1,10 +1,12 @@
-"""Finite runner (memory-safe): conditional sign algebra for a degenerate trace=shear
-supermetric paired with supplied opposite-signed curvature-comparator signs.
+"""Finite runner (memory-safe): sign algebra for a degenerate trace=shear
+supermetric paired with supplied opposite-signed curvature-comparator signs and
+the derived finite quadratic-mode gluing law.
 
-This runner does not derive the Regge/Lichnerowicz potential signs from the framework and does
-not prove the framework-native dynamical gluing law.  It checks the bounded algebraic fact that
-if a degenerate trace=shear supermetric is paired through omega^2 = V/G with opposite-signed
-trace/TT comparator potentials, the two channel signs must be opposite.
+This runner does not derive the Regge/Lichnerowicz potential signs from the framework.
+It imports the finite quadratic-mode theorem that derives omega^2 = V/G for diagonal
+bounded channels, then checks the bounded algebraic fact that if a degenerate
+trace=shear supermetric is paired with opposite-signed trace/TT comparator
+potentials, the two channel signs must be opposite.
 
 Setup (gluing of kinetic + potential halves):
   kinetic   = the supermetric fiber metric G on ADM channels;
@@ -33,6 +35,10 @@ prints TOTAL: PASS=N FAIL=0
 import numpy as np
 import sympy as sp
 
+from frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09 import (
+    mode_frequency_squared,
+)
+
 results = []
 def check(name, ok): results.append((name, bool(ok)))
 
@@ -50,7 +56,13 @@ check("T1b GR lambda=1: G_trace=-6/b^4 (neg) vs G_shear=+2/b^4 (pos) -> OPPOSITE
 
 # --- T2/T3/T4: gluing dispersion omega^2 = V/G, V_trace=-k^2/2, V_shear=+k^2/2 ---
 bn = 0.7; k = 1.0
-def disp(Gtr, Gsh): return ((-k * k / 2) / Gtr, (+k * k / 2) / Gsh)
+check("T2a finite quadratic-mode gluing law imported: omega^2=V/G for diagonal channels",
+      abs(mode_frequency_squared(-2.0, -1.0) - 0.5) < 1e-12)
+def disp(Gtr, Gsh):
+    return (
+        mode_frequency_squared(Gtr, -k * k / 2),
+        mode_frequency_squared(Gsh, +k * k / 2),
+    )
 # framework lambda=0: G_trace = G_shear = -1/b^2 (the retained supermetric normal form's spatial weights)
 wt0, ws0 = disp(-1 / bn ** 2, -1 / bn ** 2)
 check("T2 framework lambda=0 comparator gluing: omega^2_trace and omega^2_TT OPPOSITE-signed (omega^2_TT<0 in this convention)",
@@ -92,6 +104,6 @@ for name, ok in results:
 print()
 print("framework lambda=0 comparator gluing: omega^2_trace=%.3f  omega^2_TT=%.3f (opposite signs)" % (wt0, ws0))
 print("GR lambda=1 control in the same convention: omega^2_trace=%.3f  omega^2_TT=%.3f (same positive sign)" % (wt1, ws1))
-print("BOUNDARY = conditional sign algebra for supplied comparator signs and simple V/G gluing;")
-print("open = framework-native curvature signs, dynamical gluing law, and finite-k W/stress routes.")
+print("BOUNDARY = sign algebra for supplied comparator signs plus derived finite quadratic gluing;")
+print("open = framework-native curvature signs and finite-k W/stress routes.")
 print("TOTAL: PASS=%d FAIL=%d" % (n_pass, n_fail))

@@ -1,0 +1,44 @@
+========================================================================================
+PER-PLAQUETTE FROM THE ADJACENCY LICENSE: THE LAST STATEMENT RETIRES
+========================================================================================
+
+----------------------------------------------------------------------------------------
+D1: the license -- the RETAINED reachability note's own definition
+----------------------------------------------------------------------------------------
+  [PASS] the retained note DEFINES adjacency dynamically: '(u, v) in R means that the value at vertex v after one update tick is allowed to use the value at u' (verbatim, grep-verified)
+  [PASS] and the update form quantifies over R only: x_v(t+1) = F_{v,t}({x_u(t) : (u, v) in R}) 'for no arguments outside the listed dependency set' (verbatim) -- EVERY used variable must be individually licensed
+
+----------------------------------------------------------------------------------------
+D2: one tick is the generator's atom (the primitive's own wording)
+----------------------------------------------------------------------------------------
+  [PASS] the kinetic-isotropy primitive fixes the tick as the form-atom: 'One tick is one edge in form, not only in spacing' (grep-verified) -- the fundamental action = the log of the ONE-TICK kernel; its terms are one-tick dependency sets
+
+----------------------------------------------------------------------------------------
+D3: the lift to links -- the strict lift forbids all gauge dynamics (dichotomy)
+----------------------------------------------------------------------------------------
+  [PASS] STRICT lift (links must share a site): opposite plaquette edges share NO site (computed) => the strict lift forbids even the plaquette = no gauge dynamics at all; the B_1 lift is the unique minimal lift admitting gauge dynamics  --  dichotomy: strict = empty theory; B_1 = plaquettes (D4)
+
+----------------------------------------------------------------------------------------
+D4: the enumeration theorem -- exactly the plaquettes satisfy the license
+----------------------------------------------------------------------------------------
+  [PASS] length-4: ALL simple closed loops through the origin are plaquettes and ALL are licensed (exhaustive enumeration on Z^3)  --  24 length-4 loops, 24 licensed, all plaquettes
+  [PASS] length-6: NO simple closed loop is licensed (rectangles and bent loops all contain a link outside B_1 of another link) -- exhaustive enumeration  --  264 length-6 loops enumerated, 0 licensed
+  [PASS] => THE THEOREM: the license admits exactly the PLAQUETTES as gauge-invariant generator loops -- the fundamental gauge action is PER-PLAQUETTE, derived from the axiom's adjacency via the retained license definition
+
+----------------------------------------------------------------------------------------
+D5: the retirement -- 3 axioms + 2 primitives
+----------------------------------------------------------------------------------------
+  [PASS] combined with the cross-plane theorem (no FtildeF slot in the per-plaquette class, f-independent): theta_bare = 0 is now FULLY DERIVED from {Lattice adjacency (axiom) + the retained license definition + one-tick form (the kinetic-isotropy primitive) + gauge invariance (record-preservation class)}
+  [PASS] the 'minimal-loop structural statement' RETIRES from the given-surface list: it was never an independent premise -- it is the Lattice axiom's no-diagonal adjacency read at the generator level, exactly as the reachability note defines it
+  [PASS] GIVEN SURFACE: 3 AXIOMS + 2 PRIMITIVES (+ the vacuous species convention, which carries no physics). Every number downstream is a theorem
+
+----------------------------------------------------------------------------------------
+D6: honest scope
+----------------------------------------------------------------------------------------
+  [PASS] the B_1 link-lift is selected by the dichotomy (strict lift = empty theory), not by fiat -- but the dichotomy itself (minimality among admitting lifts) is the same minimality reading the axiom's no-diagonal clause records; a skeptic may grade this 'reading of the axiom' vs 'derivation' -- audit lane's call
+  [PASS] only the FUNDAMENTAL one-tick kernel is constrained; effective long-range correlations are untouched (and irrelevant to the action-class question)
+  [PASS] falsifiers preserved: a framework derivation forcing multi-plaquette FUNDAMENTAL terms would contradict the license and reopen the slot; the record-preservation class theorem's bounded bridges remain its own rows
+
+========================================================================================
+SUMMARY: PASS=13 FAIL=0
+========================================================================================

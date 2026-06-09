@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/pmns_x6_preimage_localization_outer_frame_certificate_2026_06_08.py
+runner_sha256: 528a6d20941bbf119d4bdb5cf514de8841c2a86bdbc807cdd69c5be3eb2eeb6b
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 33.94
+status: ok
+----- stdout -----
+Closing (X6): outer-frame interval certificate that Basin-1 preimage of the NuFit rect ⊂ B
+============================================================================================
+[PASS] S0 (anchor in rect, on the chamber boundary): the PDG-central preimage maps into the NuFit rectangle under the SAME boundary map F that S1 certifies (q = sqrt(8/3) - delta) -> the anchor genuinely lies in F^{-1}(rect), so the topological lemma's anchoring premise holds and B is the right localization box
+       on-boundary anchor image s12^2=0.30240 in (0.27, 0.341), s13^2=0.02069 in (0.02029, 0.02391)
+
+  outer frame: shell of width W=0.03 around B=[0.625,0.75]x[0.902,0.956]  (chamber boundary q=sqrt(8/3)-delta), tiling ~90x16/strip, bisection depth<=10
+    strip bottom : cells 90x16  certified=2732  failed=0
+    strip top    : cells 90x16  certified=3590  failed=0
+    strip left   : cells 16x90  certified=2847  failed=0
+    strip right  : cells 16x90  certified=2998  failed=0
+[PASS] S1 (outer-frame containment): EVERY shell sub-box's interval image (s12^2,s13^2) is DISJOINT from the NuFit rectangle -> F^{-1}(rect) has no point in the shell -> the Basin-1 component (containing the anchor in B) cannot cross the shell -> Basin-1 preimage ⊂ B. (X6) is CLOSED by interval certificate (modulo the explicit topological separation lemma).
+       shell sub-boxes: certified-disjoint=12167, uncleared=0
+
+TOTAL: PASS=2 FAIL=0
+VERDICT: (X6) preimage-localization is CLOSED -- the outer-frame interval certificate proves the
+Basin-1 chamber-boundary preimage of the entire NuFit rectangle is contained in box B, upgrading
+(X6) from a multistart-fsolve named admission to a 200-bit-rigorous containment. Closing (X6)
+RELOCATES (does not eliminate) the forecast's conditionality. The P1 delta_CP forecast then rests
+on: (i) the chart H(m,delta,q) + the chamber-boundary surface q=sqrt(8/3)-delta; (ii) the
+measured-theta23 filter distinguishing Basin-1 from the disjoint Basin-0 (m~-0.01, J flips sign,
+delta_CP~105 deg, predicted s23^2~0.71), as stated in the branch-robustness note; and (iii) the
+named-external NuFit input bands. (X6) itself is no longer an open preimage-localization admission.
+runner_check_breakdown = {A: 2, B: 0, C: 0, D: 0, total_pass: 2}
+
+----- stderr -----
+

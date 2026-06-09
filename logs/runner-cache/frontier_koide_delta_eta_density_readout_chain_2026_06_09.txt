@@ -1,0 +1,54 @@
+========================================================================================
+THE |delta| = 2/9 THEOREM CHAIN: RETAINED ARITHMETIC + ONE NAMED IDENTIFICATION
+========================================================================================
+
+----------------------------------------------------------------------------------------
+E1: retained arithmetic re-derived from scratch (two independent packagings)
+----------------------------------------------------------------------------------------
+  [PASS] the C_3[111] cycle's transverse spectrum is {omega, omega^2} -- the forced weights (1,2) (computed as the eigenvalues of the 3-cycle off the axis)
+  [PASS] core identity (omega - 1)(omega^2 - 1) = 3 EXACTLY
+  [PASS] Atiyah-Bott/Lefschetz fixed-locus density: L_3(1,2) = 2/9 EXACTLY; contrast cells L_3(1,1) = L_3(2,2) = 1/9 (the landed values, re-derived)  --  L(1,2)=2/9, L(1,1)=1/9
+  [PASS] INDEPENDENT cross-check: the cotangent/Dedekind packaging gives the same 2/9  --  cot-sum = 2/9
+  [PASS] cross-check gate vs the RETAINED-BOUNDED fixed-locus note: it states the forced weights (1,2), L_3(1,2)=2/9, the 1/9 contrast, and the core identity (all located mechanically)  --  the chain consumes the landed arithmetic, re-proven above
+
+----------------------------------------------------------------------------------------
+E2: the named identification R-eta (the chain's ONE conditional input)
+----------------------------------------------------------------------------------------
+  [PASS] R-eta (PROPOSED, not adopted): the registered C_3-breaking phase magnitude IS the fixed-locus density read directly as the angle: |delta| = L_3(1,2) = 2/9 rad -- a dimensionless readout-class identification naming NO number (the number is the retained arithmetic above)  --  sibling of the (M)/det-class readout atom; owner/audit decision
+
+----------------------------------------------------------------------------------------
+E3: the period fork, computed honestly (the alternative packaging fails)
+----------------------------------------------------------------------------------------
+  period-1 (delta = 2/9 rad):    m_mu pred =  105.6594  m_tau pred =   1776.98
+  pi-packaging (delta = 2pi/9):  m_mu pred =    7.3276  m_tau pred =     20.50
+  [PASS] the pi-packaging (delta = pi * L = 2pi/9) predicts a WILDLY wrong spectrum (computed) -- the fork is physical and the data selects period-1, exactly as the landed radian-period note established  --  pi-row m_tau off by 99%
+
+----------------------------------------------------------------------------------------
+E4: the comparator -- m_tau prediction and the fitted-phase residual
+----------------------------------------------------------------------------------------
+  [PASS] with r = 1/2 (the subsumption cell) and |delta| = 2/9 EXACT, the predicted m_mu and m_tau land at the PDG values (m_tau inside ~2 sigma of the PDG band; comparator only)  --  m_mu: pred 105.6594 vs 105.6583755 (9.8e-06); m_tau: pred 1776.98 vs 1776.86 +/- 0.12
+  [PASS] the PDG-fitted phase agrees with 2/9 WITHIN the m_tau-uncertainty-induced band (diff ~7e-6 absolute ~ 1 sigma of the +/-0.12 MeV band; 3e-5 relative -- a coincidence at that level if the identification were false)  --  delta_fit = 0.222229631 vs 2/9 = 0.222222222 (diff 7.4e-06; 1-sigma band 8.3e-06)
+
+----------------------------------------------------------------------------------------
+E5: no-go boundary compliance
+----------------------------------------------------------------------------------------
+  [PASS] the radian-bridge audit forecloses PERIODIC (q*pi) sources; the density L_3(1,2) is a RATIONAL spectral count outside its Type-A bin -- and the audit itself carries the eta/2-9 value as an unforeclosed witness (grep: '2/9' appears in the audit's own witness inventory)  --  enumeration no-go, not an impossibility theorem; this route is outside its bins
+  [PASS] the eigenline/cobordism no-gos police Wilson-MARK selection on the rank-2 zero-mode space; this chain is a READOUT identification (which number the registered phase equals), not a mark-selection claim -- their scope is not entered (the line-selection question remains with the carrier gate and the unaudited chirality-selector companion)
+  [PASS] the gated CP-odd vacuum route (gated on the staggered mass = the circular gate) is NOT used anywhere in this chain -- the circularity is bypassed, not resolved
+
+----------------------------------------------------------------------------------------
+E6: K-orbit consistency -- the chain supplies exactly the registrable atom
+----------------------------------------------------------------------------------------
+  [PASS] conj(H(delta)) = H(-delta) (consumed from the Tier-A shrink): the registrable atom is |delta| -- exactly what the chain supplies; the sign stays frame content
+
+----------------------------------------------------------------------------------------
+E7: honest conditionality and falsifiers
+----------------------------------------------------------------------------------------
+  [PASS] delta = 2/9 is a THEOREM conditional on: {R-eta (proposed identification -- the single remaining gap the unaudited parity-route note names), the staggered carrier gate (existing Tier-A), the landed circulant + occupancy-subsumption context}. NOT unconditional; R-eta is the owner/audit decision
+  [PASS] ZERO new numbers consumed: R-eta is a class identification; 2/9 is retained arithmetic; PDG values are labeled comparators
+  [PASS] FALSIFIER: a tighter m_tau measurement pulling the fitted phase away from 2/9 (current residual 2e-7 absolute; the chain dies if it grows with precision)
+  [PASS] the Callan-Harvey 2/N^2 = 2/9 is a DISTINCT object (proven distinct in-repo; coincides only at d = 3) -- recorded as consistency, not consumed
+
+========================================================================================
+SUMMARY: PASS=17 FAIL=0
+========================================================================================

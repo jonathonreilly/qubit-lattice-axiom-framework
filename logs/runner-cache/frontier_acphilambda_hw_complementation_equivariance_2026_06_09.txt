@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.py
+runner_sha256: bf8e814926ecc632cba510b34f8db6e82612437670788a5181538b910eaba21a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.92
+status: ok
+----- stdout -----
+========================================================================================
+AC_PHI_LAMBDA HW-COMPLEMENTATION EQUIVARIANCE SUPPORT
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Hamming complementation
+----------------------------------------------------------------------------------------
+  [PASS] b -> 1-b maps hw=1 bijectively to hw=2 -- hw1=[(0, 0, 1), (0, 1, 0), (1, 0, 0)], hw2=[(0, 1, 1), (1, 0, 1), (1, 1, 0)]
+  [PASS] complementation is involutive
+  [PASS] complementation commutes with the C3[111] rotation on every corner
+
+----------------------------------------------------------------------------------------
+C3 orbit structure
+----------------------------------------------------------------------------------------
+  [PASS] C3 acts as a free three-cycle on hw=1
+  [PASS] C3 acts as a free three-cycle on hw=2
+
+----------------------------------------------------------------------------------------
+Fixed-locus density and circulant symmetric readout
+----------------------------------------------------------------------------------------
+  [PASS] L_3(1,2) fixed-locus density reduces exactly to 2/9
+  [PASS] circulant determinant identity e3 = a^3 - 3 a B^2 + 2 B^3 cos(3 delta) is exact
+  [PASS] elementary symmetric polynomials are invariant under cyclic slot relabeling
+
+========================================================================================
+SUMMARY: PASS=8 FAIL=0
+========================================================================================
+
+----- stderr -----
+

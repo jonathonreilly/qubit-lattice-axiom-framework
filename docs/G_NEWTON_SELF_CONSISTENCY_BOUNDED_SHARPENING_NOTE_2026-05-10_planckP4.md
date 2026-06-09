@@ -1,6 +1,7 @@
 # G_Newton Self-Consistency — Bounded Sharpening (planckP4 probe)
 
-**Date:** 2026-05-10
+**Date:** 2026-05-10; 2026-06-09 Green-kernel dependency reroute and
+Born-source blocker refresh.
 **Type:** bounded_theorem (sharpened — positive sub-theorem + named obstruction)
 **Claim type:** bounded_theorem
 **Scope:** review-loop source-note proposal — attempts to close the
@@ -10,12 +11,14 @@ bounded-obstruction note
 [`KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe3.md`](KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe3.md).
 **Status:** source-note proposal for a sharpened (partial) closure of the
 G_Newton lane. Verifies that (P1) the dimensional G_Newton form is
-structurally rigid given the three closure admissions, AND (P2) those
-three admissions cannot themselves be derived from retained content
-alone. The status of `GRAVITY_CLEAN_DERIVATION_NOTE` is therefore
-sharpened from "unaudited / conditional" to "explicitly conditional on
-three named retained primitives that do not exist in the current
-ledger." This is structural sharpening, not closure.
+structurally rigid given the named closure admissions, AND (P2) the parent
+chain remains conditional on named dependency gates. The status of
+`GRAVITY_CLEAN_DERIVATION_NOTE` is therefore sharpened from "unaudited /
+conditional" to "explicitly conditional on named dependency gates." As of the
+2026-06-09 refresh, the Green-kernel premise is routed through the
+framework-local `Z^3` Green theorem and the Born-source blocker is no longer
+"no retained support row exists"; it is a dependency-composition gate. This is
+structural sharpening, not closure.
 **Authority role:** source-note proposal — audit verdict and downstream
 status set only by the independent audit lane.
 **Loop:** g-newton-self-consistency-20260510-planckP4
@@ -75,27 +78,27 @@ lane from `audited_conditional` to retained.
   dimensionless ratio of Z³ Green-function constants). This is a
   *rigidity* result: the dimensional structure is not free.
 
-- **(NEGATIVE, P2) Non-derivability obstruction.** Each of the three
-  admissions is independently blocked by retained content:
+- **(NEGATIVE, P2) Non-derivability obstruction / dependency refresh.** The
+  parent chain still does not close unconditionally:
   - **B(a)** Multiple retained propagator skeletons exist
     (Hamiltonian, d'Alembertian, complex-action). No retained
     theorem forces gravity to use the Hamiltonian skeleton.
-  - **B(b)** The Born map `ρ = |ψ|²` is target-side per Barrier G4
-    of [`KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe3.md`](KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe3.md);
-    no retained positive/bounded theorem derives it as the unique
-    gravitational source map. The retained_no_go self-gravity Born
-    hardening row is obstruction support, not a positive derivation.
+  - **B(b)** The old "no retained positive/bounded Born-as-gravity-source
+    theorem" statement is stale on current main. The Born-source admission now
+    has named support rows to compose through; the parent chain is not promoted
+    by this note.
   - **B(c)** The weak-field test-mass action `S = L(1 - φ)` is a
     modeling identification, not a retained derivation theorem;
     alternative `S = L√(1 - φ)` (spent-delay) is also tested in
     `DIMENSIONAL_GRAVITY_TABLE.md` retained_bounded family with
     different Newtonian-recovery profile.
 
-The combined picture: the dimensional structure of G_Newton is rigid
-given the three admissions, but the admissions themselves cannot be
-closed from retained content alone. Closing G_Newton unconditionally
-requires NEW retained primitives addressing each of the three barriers.
-None of these primitives exists in the audit ledger as of 2026-05-10.
+The combined picture: the dimensional structure of G_Newton is rigid given the
+named admissions, but the parent chain still does not close unconditionally.
+The 2026-06-09 refresh changes the shape of the open frontier: the
+Born-source admission now has named bounded support to compose through, while
+the propagator-skeleton and weak-field-response admissions remain unforced by
+the current baseline.
 
 ## Setup
 
@@ -105,7 +108,8 @@ None of these primitives exists in the audit ledger as of 2026-05-10.
 |---|---|---|
 | BASE-CL3 | Physical `Cl(3)` local algebra | repo baseline semantics; see `MINIMAL_AXIOMS_2026-05-03.md` |
 | BASE-Z3 | `Z^3` spatial substrate | repo baseline semantics; same source |
-| GreenZ3 | Z³ lattice Laplacian Green function asymptotic `G(r) → 1/(4π|r|)` (Maradudin et al. 1971) | external math theorem |
+| GreenZ3 | `Z^3` lattice Laplacian Green function asymptotic `G(r) -> 1/(4 pi |r|)` | framework-local theorem: [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md), with textbook references parallel |
+| BornGravSource | bounded position-density source support for admission (b) | dependency row: [`G_NEWTON_BORN_AS_SOURCE_POSITIVE_THEOREM_NOTE_2026-05-10_gnewtonG2.md`](G_NEWTON_BORN_AS_SOURCE_POSITIVE_THEOREM_NOTE_2026-05-10_gnewtonG2.md) |
 | MicroLR | Lieb-Robinson velocity `v_LR` exists; equal-time strict locality from Cl(3) tensor structure | unaudited (positive_theorem): [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) |
 | HSRigid | Hilbert-Schmidt rigidity on `g_conc = su(3) ⊂ End(V)` | unaudited (positive_theorem): [`G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md`](G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md) |
 | PhysLat | Two-invariant rigidity on canonical normalization surface (no-go) | retained_no_go: [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](PHYSICAL_LATTICE_NECESSITY_NOTE.md) |
@@ -161,10 +165,11 @@ The dimensionless coefficient `1/(4π)` is the asymptotic value of
 monotonically to 1 from below as the lattice size grows (Section 1,
 S1.1–S1.3).
 
-**Theorem (P2, negative obstruction).** Under the same retained content
-surface, *none* of the three admissions (a), (b), (c) is derivable.
-Each admission is blocked by a distinct structural barrier verified
-in the runner:
+**Theorem (P2, negative obstruction / dependency refresh).** Under the same
+retained content surface, the parent chain is not unconditionally closed. The
+2026-06-09 refresh leaves two admissions blocked as unforced baseline
+consequences and converts the old Born-source blocker into a dependency
+composition gate:
 
 ```
 B(a) Propagator-skeleton non-uniqueness (Section 3):
@@ -178,16 +183,15 @@ B(a) Propagator-skeleton non-uniqueness (Section 3):
     pattern matching "skeleton selection", "field operator
     selection", or equivalent.
 
-B(b) Born-map non-uniqueness (Section 4):
-  - The pure-state Born map ρ = |ψ|² and the density-matrix trace
-    map ρ = Tr|ψ⟩⟨ψ| agree on pure states but diverge on mixed
-    states. The runner verifies this numerically.
-  - The Born map is target-side: ρ = |ψ|² operates AFTER ψ is given;
-    cannot constrain ψ's flavor decomposition (Barrier G4 of
-    KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08).
-  - The audit ledger contains no retained positive/bounded theorem of the form
-    "Born-as-gravity-source theorem" or "ρ = |ψ|² as gravitational
-    mass-density source theorem".
+B(b) Born-source dependency refresh (Section 4):
+  - The earlier "no retained positive/bounded Born-as-gravity-source theorem"
+    statement is stale on current main.
+  - The runner now discovers the current named Born-source support rows and
+    records admission (b) as a dependency-composition gate, not as an
+    unaddressed no-support blocker.
+  - The parent `GRAVITY_CLEAN_DERIVATION_NOTE` is still not promoted by this
+    refresh; it must explicitly compose any Born-source dependency with the
+    remaining propagator-skeleton and weak-field-response gates.
 
 B(c) Weak-field test-mass action non-derivation (Section 5):
   - The action S = L(1 - φ) is a propagator-level modeling
@@ -203,33 +207,33 @@ B(c) Weak-field test-mass action non-derivation (Section 5):
 ```
 
 **Conclusion.** The status of `GRAVITY_CLEAN_DERIVATION_NOTE` remains
-`audited_conditional` / `bounded_theorem` on three named admissions.
+`audited_conditional` / `bounded_theorem` on named dependency gates.
 What this note adds is:
 
 1. The dimensional STRUCTURE of `G_Newton` is rigid given the
    admissions (P1).
-2. The admissions themselves are NOT derivable from retained
-   content (P2).
-3. Closing G_Newton unconditionally requires three NEW retained
-   primitives, explicitly enumerated (B(a), B(b), B(c) above).
+2. The parent chain still does not close unconditionally (P2).
+3. Closing G_Newton unconditionally now requires the remaining unforced
+   primitives for B(a) and B(c), plus explicit composition through the
+   Born-source dependency for B(b).
 
-This sharpens the open frontier from a single "G_Newton lane is
-unaudited" item to three explicit retained-primitive deliverables.
+This sharpens the open frontier from a single "G_Newton lane is unaudited"
+item to two remaining primitive deliverables plus one Born-source composition
+gate.
 
 ## Proof
 
 ### P1 (positive sub-theorem) — dimensional rigidity
 
-**Step 1.** The Z³ lattice Laplacian `(-Δ_lat)` has Green's function
-`G(r) = ⟨r|(-Δ_lat)^{-1}|0⟩` with asymptotic
-`G(r) → 1/(4π|r|)` as `|r| → ∞` (Maradudin, Montroll, Weiss & Ipatova
-1971; Hughes 1995). This is a result of pure mathematics about the
-discrete Laplacian on Z³, an external theorem-grade input not requiring
-internal repo dependencies. The runner verifies this asymptotic
-behavior numerically by computing the FFT-based Green function on
-periodic L³ tori for `L ∈ {16, 24, 32, 48}` at fixed distance `r = 4`
-and verifying monotonic increase of `4π r G(r)` toward 1 as L grows
-(Section 1, S1.1–S1.3).
+**Step 1.** The `Z^3` lattice Laplacian `(-Delta_lat)` has Green's function
+`G(r) = <r|(-Delta_lat)^(-1)|0>` with asymptotic
+`G(r) -> 1/(4 pi |r|)` as `|r| -> infinity`. The load-bearing route is the
+framework-local Green-kernel theorem applied to the exact `Z^3`
+nearest-neighbor graph-Laplacian stencil, with Maradudin/Lawler/Spitzer kept as
+parallel references. The runner verifies this asymptotic behavior numerically
+by computing the FFT-based Green function on periodic `L^3` tori for
+`L in {16, 24, 32, 48}` at fixed distance `r = 4` and verifying monotonic
+increase of `4 pi r G(r)` toward 1 as `L` grows (Section 1, S1.1-S1.3).
 
 **Step 2.** Given admission (a) `L^{-1} = G_0`, the field equation
 operator `L = G_0^{-1} = -Δ_lat`, and the Poisson equation
@@ -262,8 +266,8 @@ dimensional form is consistent with the empirical
 `G = ħ c / M_Pl² = 6.6743e-11`, matching the CODATA anchor at
 `rel_err ~ 3e-7`. This is **consistency**, not **derivation** (S6.3).
 
-This completes P1: the dimensional structure of `G_Newton` is rigid
-given the three admissions. ∎
+This completes P1: the dimensional structure of `G_Newton` is rigid given the
+named admissions. ∎
 
 ### P2 (negative obstruction) — non-derivability of the admissions
 
@@ -290,19 +294,14 @@ explicitly enumerates at least three propagator skeletons:
 The runner Section 3 (S3.1–S3.4) verifies this enumeration and confirms
 no retained skeleton-selection theorem exists in the audit ledger.
 
-**Barrier B(b).** The pure-state Born map `ρ = |ψ|²` and density-matrix
-trace `ρ = Tr|ψ⟩⟨ψ|` are tested numerically in Section 4. They agree
-on pure states (S4.1) but diverge on mixed states (S4.2). The Born map
-is **target-side** per Barrier G4 of `KOIDE_A1_PROBE_GRAVITY_PHASE_*`
-(S4.3): it operates *after* `ψ` is given, and cannot derive itself
-from a more primitive map.
-
-The audit ledger contains no retained positive/bounded theorem
-identifying the Born map specifically as the unique gravitational
-source map (vs as a probability interpretation of `ψ`). S4.4 confirms
-zero matching retained positive/bounded theorems. The retained_no_go
-self-gravity Born hardening row supports the obstruction rather than
-closing it positively.
+**Barrier B(b), refreshed.** The pure-state Born map `rho = |psi|^2`
+remains target-side in the sense identified by the parent gravity-phase
+obstruction: it operates after the state is supplied. The stale part of the
+original P4 packet was stronger than that: it asserted that no retained
+positive/bounded Born-as-gravity-source support row existed. Current main has
+named support rows for that source-readout problem, so the runner now treats
+B(b) as a dependency-composition gate instead of an absent-support blocker
+(S4.4).
 
 **Barrier B(c).** The valley-linear weak-field action `S = L(1 - φ)`
 is one of at least three forms tested in `DIMENSIONAL_GRAVITY_TABLE.md`
@@ -316,37 +315,39 @@ retained derivation (S5.2).
 The audit ledger contains no retained "weak-field-action derivation
 theorem" (S5.3).
 
-This completes P2: each of the three admissions is non-derivable from
-retained content alone. ∎
+This completes P2: the parent chain remains conditional. Since P1 assumes the
+admissions and P2 leaves B(a) and B(c) unforced while routing B(b) through a
+separate support dependency, the G_Newton lane is sharpened but not fully
+closed. ∎
 
 ## What this closes
 
 - **Sharpens the G_Newton self-consistency status.** Status moves from
   "G_Newton lane is unaudited and conditional" to "G_Newton lane has a
-  positive dimensional sub-theorem (P1) and three explicitly named
-  obstruction barriers (P2 B(a), B(b), B(c))."
-- **Identifies three retained-primitive deliverables.** Closing
-  G_Newton unconditionally requires:
+  positive dimensional sub-theorem (P1), two explicitly named obstruction
+  barriers (P2 B(a), B(c)), and one Born-source dependency-composition gate
+  (P2 B(b))."
+- **Identifies the remaining deliverables.** Closing G_Newton unconditionally
+  requires:
   1. A retained **propagator-skeleton selection theorem** addressing
      B(a) — derive `L = -Delta_lat` (or whichever specific skeleton) from
      the physical `Cl(3)` local algebra plus `Z^3` spatial substrate
      alone.
-  2. A retained **Born-as-gravity-source derivation theorem**
-     addressing B(b) — derive `rho = |psi|^2` as the *unique* gravitational
-     source map from the repo baseline alone.
+  2. An explicit composition through the existing **Born-as-gravity-source
+     dependency** addressing B(b), without promoting the parent chain by
+     implication.
   3. A retained **weak-field-action derivation theorem** addressing
      B(c) — derive `S = L(1 - phi)` (and its valley-linear vs
      spent-delay vs phase-only selection) from the repo baseline.
-- **Confirms the dimensional rigidity result is independent of the
-  three admissions.** P1 says the *structure* of G_Newton is fixed
-  even before P2 confirms the admissions. So progress on any
-  admission individually still benefits from the dimensional-form
-  result.
+- **Confirms the dimensional rigidity result is independent of the named
+  admissions.** P1 says the *structure* of G_Newton is fixed even before P2
+  composes the admissions. So progress on any admission individually still
+  benefits from the dimensional-form result.
 - **Strengthens the parent
   [`KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe3.md`](KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe3.md)
   Barrier G2 finding** that the gravity-clean chain is unaudited and
-  conditional. This note makes the "conditional on three admissions"
-  language explicit and structural at the runner level.
+  conditional. This note makes the named dependency gates explicit and
+  structural at the runner level.
 
 ## What this does NOT close
 
@@ -373,7 +374,7 @@ retained content alone. ∎
 |---|---|
 | Dimensional rigidity (P1) | Demonstrate a different integer-exponent combination of `{a_s, c_LR, M_lat, ħ}` carrying SI units of G_Newton — but the runner search is exhaustive over `[-3, 3]^4`, so any falsifier must identify a NEW retained dimensional input. |
 | Barrier B(a) | Demonstrate a retained "skeleton selection" theorem in the audit ledger that forces gravity to use the Hamiltonian skeleton over alternatives. |
-| Barrier B(b) | Demonstrate a retained "Born-as-gravity-source" theorem deriving `ρ = |ψ|²` as the unique gravitational source map (not just probability interpretation of `ψ`). |
+| Barrier B(b) | Demonstrate that the named Born-source support dependency composes into the gravity-clean parent chain without adding a new admission or narrowing the parent claim beyond recognition. |
 | Barrier B(c) | Demonstrate a retained "weak-field-action derivation" theorem deriving `S = L(1 - phi)` from the physical `Cl(3)` local algebra plus `Z^3` spatial substrate (vs from empirical F~M match). |
 | Numerical anchor (P1 cross-check) | Falsified if `ħ c / M_Pl² ≠ G_Newton SI`. CODATA values give `rel_err ~ 3e-7`, well within anchor precision. Anchor-only; not a derivation input. |
 
@@ -382,23 +383,23 @@ retained content alone. ∎
 This note proposes `claim_type: bounded_theorem` for the independent
 audit lane. The bounded theorem is the sharpened (positive + negative)
 G_Newton self-consistency boundary: the dimensional G_Newton form is
-rigid given three named admissions, and those admissions cannot be
-derived from retained Cl(3)/Z³ content alone.
+rigid given named admissions, while the parent chain remains conditional on
+the named dependency gates.
 
-No new admissions are proposed (the three admissions named in this
-note are NOT new — they are the exact three admissions of the parent
-`GRAVITY_CLEAN_DERIVATION_NOTE.md`, surfaced explicitly here so the
-audit lane can track them as separate retained-primitive deliverables).
+No new admissions are proposed (the admissions named in this note are NOT new
+-- they are the exact admissions of the parent
+`GRAVITY_CLEAN_DERIVATION_NOTE.md`, surfaced explicitly here so the audit lane
+can track them as separate dependency gates).
 The independent audit lane may retag, narrow, or reject this proposal.
 
 ## Promotion-Value Gate (V1-V5)
 
 | # | Question | Answer |
 |---|---|---|
-| V1 | Verdict-identified obstruction closed? | The "G_Newton self-consistency closure" lane is sharpened from "open lane unaudited" to "positive P1 dimensional rigidity + three explicitly named B(a)/B(b)/B(c) obstructions." Status of GRAVITY_CLEAN_DERIVATION_NOTE is unchanged but its conditional structure is now explicit. |
-| V2 | New derivation? | The dimensional rigidity result P1 is new: an exhaustive integer-exponent search over `{a_s, c_LR, M_lat, ħ}` showing only the canonical Planck form survives. The three-barrier obstruction P2 with explicit ledger checks is new content beyond GRAVITY_FULL_SELF_CONSISTENCY_NOTE's stipulation language. |
-| V3 | Audit lane could complete? | Yes — the audit lane can review (i) the Z³ Green-function FFT calculation, (ii) the dimensional integer-exponent search, (iii) each of the three obstruction barriers with their explicit ledger queries, (iv) the consistency-vs-derivation boundary. |
-| V4 | Marginal content non-trivial? | Yes — the dimensional rigidity proof closes the "G_Newton form" question structurally even though the unconditional derivation remains open. The three-barrier obstruction with explicit ledger checks gives an audit-defensible enumeration of the open frontier. |
+| V1 | Verdict-identified obstruction closed? | The "G_Newton self-consistency closure" lane is sharpened from "open lane unaudited" to "positive P1 dimensional rigidity + B(a)/B(c) obstructions + B(b) dependency-composition gate." Status of GRAVITY_CLEAN_DERIVATION_NOTE is unchanged but its conditional structure is now explicit. |
+| V2 | New derivation? | The dimensional rigidity result P1 is new: an exhaustive integer-exponent search over `{a_s, c_LR, M_lat, hbar}` showing only the canonical Planck form survives. The refreshed P2 dependency map is new content beyond GRAVITY_FULL_SELF_CONSISTENCY_NOTE's stipulation language. |
+| V3 | Audit lane could complete? | Yes — the audit lane can review (i) the `Z^3` Green-function FFT calculation, (ii) the dimensional integer-exponent search, (iii) B(a)/B(c) obstruction checks, (iv) B(b) dependency discovery, and (v) the consistency-vs-derivation boundary. |
+| V4 | Marginal content non-trivial? | Yes — the dimensional rigidity proof closes the "G_Newton form" question structurally even though the unconditional derivation remains open. The refreshed dependency map gives an audit-defensible enumeration of the open frontier. |
 | V5 | One-step variant? | No — the positive-sub-theorem-plus-negative-obstruction structure is structurally distinct from the parent KOIDE_A1_PROBE_GRAVITY_PHASE flavor-sector argument and from the GRAVITY_FULL_SELF_CONSISTENCY stipulation note. |
 
 **Source-note V1-V5 screen: pass for bounded-sharpening audit
@@ -412,16 +413,15 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 - Is NOT a relabel of any prior gravity note. The dimensional integer-
   exponent search and the explicit ledger queries for retained
   selection / Born / action theorems are new structural content.
-- Identifies a NEW STRUCTURAL CLASS OF SHARPENING (positive
-  dimensional rigidity + negative three-barrier obstruction) on the
-  G_Newton lane, distinct from the flavor-sector five-barrier
-  obstruction of `KOIDE_A1_PROBE_GRAVITY_PHASE_*`.
-- Provides an explicit retained-primitive deliverable list (B(a),
-  B(b), B(c)) that the audit lane can use to track future closure
-  attempts.
+- Identifies a NEW STRUCTURAL CLASS OF SHARPENING (positive dimensional
+  rigidity plus a refreshed dependency map) on the G_Newton lane, distinct
+  from the flavor-sector five-barrier obstruction of
+  `KOIDE_A1_PROBE_GRAVITY_PHASE_*`.
+- Provides an explicit deliverable list (B(a), B(b), B(c)) that the audit lane
+  can use to track future closure attempts.
 - Sharpens the user-prompt question "can retained content close
   G_Newton self-consistency?" from "open lane" to
-  "positive sub-theorem + three named obstructions."
+  "positive sub-theorem + two named obstructions + one dependency gate."
 
 ## Cross-references
 
@@ -453,12 +453,11 @@ asymptotic via FFT-based numerical extrapolation, (ii) exhaustive
 integer-exponent dimensional search confirming canonical Planck-form
 G ~ ħc/M_Pl² is the unique combination with G_Newton SI dimensions,
 (iii) Planck-anchor cross-check at `rel_err ~ 3e-7`, (iv) Barrier B(a)
-with three retained skeletons enumerated and ledger query for
-selection theorem, (v) Barrier B(b) with pure-vs-mixed Born map
-divergence and ledger query for Born-derivation theorem, (vi) Barrier
-B(c) with valley-linear vs spent-delay action comparison and ledger
-query for action-derivation theorem, (vii) consistency-vs-derivation
-boundary, (viii) bounded-sharpening synthesis.
+with three retained skeletons enumerated and ledger query for selection
+theorem, (v) Barrier B(b) refreshed as a discoverable Born-source dependency
+gate, (vi) Barrier B(c) with valley-linear vs spent-delay action comparison
+and ledger query for action-derivation theorem, (vii)
+consistency-vs-derivation boundary, (viii) bounded-sharpening synthesis.
 Total: 32 PASS / 0 FAIL.
 
 Cached: [`logs/runner-cache/cl3_g_newton_self_consistency_2026_05_10_planckP4.txt`](../logs/runner-cache/cl3_g_newton_self_consistency_2026_05_10_planckP4.txt)
@@ -468,27 +467,26 @@ Cached: [`logs/runner-cache/cl3_g_newton_self_consistency_2026_05_10_planckP4.tx
 - `feedback_consistency_vs_derivation_below_w2.md`: this note
   applies the "consistency equality is not derivation" rule. The
   Planck-anchor cross-check confirms the dimensional form is
-  *consistent* with empirical G_Newton, but consistency is not
-  derivation; the three admissions remain open.
+  *consistent* with empirical G_Newton, but consistency is not derivation; the
+  parent chain remains conditional on named dependency gates.
 - `feedback_hostile_review_semantics.md`: this note stress-tests
   the semantic claim that "retained content closes G_Newton" by
   showing that the action-level identifications (`L^{-1} = G_0`,
-  `ρ = |ψ|²`, `S = L(1 − φ)`) are not derivable — they are imports
-  at the modeling level, not consequences of the repo baseline alone.
+  `rho = |psi|^2`, `S = L(1 - phi)`) require explicit dependency routing
+  rather than silent promotion from the repo baseline alone.
 - `feedback_retained_tier_purity_and_package_wiring.md`: no
   automatic cross-tier promotion. This note is a bounded
   sharpening; the parent `GRAVITY_CLEAN_DERIVATION_NOTE` remains
   at its prior `audited_conditional` / `unaudited` status. No
   retained-tier promotion of any gravity content is implied.
-- `feedback_physics_loop_corollary_churn.md`: the positive-sub-
-  theorem-plus-three-barrier-obstruction structure with explicit
-  dimensional integer-exponent search is substantive new structural
-  content, not a relabel of prior gravity or Koide notes.
+- `feedback_physics_loop_corollary_churn.md`: the positive-sub-theorem plus
+  refreshed dependency-map structure with explicit dimensional integer-exponent
+  search is substantive structural content, not a relabel of prior gravity or
+  Koide notes.
 - `feedback_compute_speed_not_human_timelines.md`: alternative
   routes characterized in terms of WHAT additional retained
   content would be needed (skeleton-selection theorem, Born-source
-  theorem, weak-field-action theorem), not how-long-they-would-
-  take.
+  composition, weak-field-action theorem), not how-long-they-would-take.
 - `feedback_special_forces_seven_agent_pattern.md`: this note
   packages a multi-angle attack (positive dimensional rigidity +
   three independent obstruction barriers, plus consistency-vs-

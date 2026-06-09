@@ -13,7 +13,7 @@ THE CHAIN:
   Step 2  [DEFINITION] G_0 = H^{-1} = (-Delta_lat)^{-1}
   Step 3  [DERIVED]    Self-consistency: L^{-1} = G_0 => L = -Delta  (closure condition)
   Step 4  [DERIVED]    Poisson: (-Delta) phi = rho
-  Step 5  [THEOREM]    G(r) --> 1/(4 pi r)  (Maradudin et al.)
+  Step 5  [THEOREM]    G(r) --> 1/(4 pi r)  (framework-local Green theorem)
   Step 6  [DERIVED]    phi = -G_N M / r
   Step 7  [DERIVED]    F = G_N M / r^2
   Step 8  [DERIVED]    F = G_N M_1 M_2 / r^2  (Poisson linearity)
@@ -29,7 +29,7 @@ CHECKS:
   CHECK 6 [EXACT]  Parametric: M(alpha) uniquely minimized at alpha = 1
   CHECK 7 [EXACT]  Self-consistent iteration converges for Poisson
   CHECK 8 [EXACT]  Converged field is attractive potential well
-  CHECK 9 [THEOREM] 4 pi r G(r) --> 1 on large lattice (Maradudin)
+  CHECK 9 [THEOREM] 4 pi r G(r) --> 1 on large lattice (native Green theorem)
   CHECK 10 [THEOREM] G(r) ratio test: G(r1)/G(r2) ~ r2/r1
   CHECK 11 [DERIVED] Force exponent from gradient: n = -d + 1 = -2
   CHECK 12 [DERIVED] Product law: F_12 proportional to M_1 * M_2
@@ -604,7 +604,7 @@ def check_step3_iteration():
 
 
 # ===========================================================================
-# STEP 5: G(r) --> 1/(4 pi r)  [THEOREM: Maradudin et al.]
+# STEP 5: G(r) --> 1/(4 pi r)  [THEOREM: framework-local Green theorem]
 # ===========================================================================
 
 def check_step5_greens_function_theorem():
@@ -612,18 +612,19 @@ def check_step5_greens_function_theorem():
     STEP 5 [THEOREM]: The lattice Laplacian Green's function on Z^3
     converges to 1/(4 pi r) at large r.
 
-    This is a mathematical theorem (Maradudin et al. 1971, Hughes 1995).
-    We verify it numerically.
+    This is now routed through the framework-local Green-kernel theorem for
+    the exact nearest-neighbor Z^3 graph Laplacian. Maradudin/Lawler/Spitzer
+    remain parallel references. We verify it numerically.
 
     CHECK 9: 4 pi r G(r) approaches 1.0 as lattice size increases
     CHECK 10: G(r1)/G(r2) approaches r2/r1 (1/r behavior)
     """
     print()
     print("=" * 78)
-    print("STEP 5 [THEOREM]: G(r) --> 1/(4 pi r)  (Maradudin et al.)")
+    print("STEP 5 [THEOREM]: G(r) --> 1/(4 pi r)  (framework-local Green theorem)")
     print("=" * 78)
     print()
-    print("  Mathematical theorem: On Z^3, the lattice Laplacian Green's")
+    print("  Framework-local theorem: On Z^3, the graph-Laplacian Green's")
     print("  function satisfies G(r) = 1/(4 pi |r|) + O(1/|r|^3).")
     print("  We verify numerically on finite lattices.")
     print()
@@ -655,7 +656,7 @@ def check_step5_greens_function_theorem():
     dev_best = abs(best - 1.0)
 
     log_check(
-        f"4*pi*r*G(r) converges toward 1.0 (Maradudin theorem)",
+        f"4*pi*r*G(r) converges toward 1.0 (framework-local Green theorem)",
         improving and dev_best < 0.10,
         classification="THEOREM",
         detail=f"best = {best:.4f} at N=48, monotonically improving = {improving}"
@@ -827,7 +828,7 @@ def main():
     print("  Step 2  [DEFINITION] G_0 = H^{-1} = (-Delta)^{-1}")
     print("  Step 3  [DERIVED]    L^{-1} = G_0 => L = -Delta  (closure condition)")
     print("  Step 4  [DERIVED]    (-Delta) phi = rho  (Poisson equation)")
-    print("  Step 5  [THEOREM]    G(r) -> 1/(4 pi r)  (Maradudin et al.)")
+    print("  Step 5  [THEOREM]    G(r) -> 1/(4 pi r)  (framework-local Green theorem)")
     print("  Step 6  [DERIVED]    phi = -G_N M / r")
     print("  Step 7  [DERIVED]    F = G_N M / r^2  (gradient of 1/r)")
     print("  Step 8  [DERIVED]    F = G_N M_1 M_2 / r^2  (linearity)")
@@ -863,7 +864,7 @@ def main():
     print("     Mismatch = 0 for Poisson, > 0 for all 10 alternatives.")
     print("     Parametric family: unique minimum at alpha = 1.0.")
     print("  4. (-Delta) phi = rho (Poisson equation)    [DERIVED:  from Step 3]")
-    print("  5. G(r) -> 1/(4 pi r)                      [THEOREM:  Maradudin et al.]")
+    print("  5. G(r) -> 1/(4 pi r)                      [THEOREM:  framework-local Green theorem]")
     print("     4*pi*r*G(r) converges to 1.0 on finite lattices.")
     print("  6. phi = -G_N M / r                         [DERIVED:  Steps 4+5]")
     print("  7. F = G_N M / r^2                          [DERIVED:  gradient of 1/r]")

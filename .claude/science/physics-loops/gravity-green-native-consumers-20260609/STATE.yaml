@@ -1,0 +1,32 @@
+loop_id: gravity-green-native-consumers-20260609
+branch: physics-loop/gravity-green-native-consumers-20260609
+target_notes:
+  - docs/GRAVITY_CLEAN_DERIVATION_NOTE.md
+  - docs/G_NEWTON_SELF_CONSISTENCY_BOUNDED_SHARPENING_NOTE_2026-05-10_planckP4.md
+target_runners:
+  - scripts/cl3_g_newton_self_consistency_2026_05_10_planckP4.py
+  - scripts/frontier_gravity_clean_derivation.py
+cache:
+  - logs/runner-cache/cl3_g_newton_self_consistency_2026_05_10_planckP4.txt
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+blockers_closed:
+  - "gravity-clean Green-kernel premise still framed as textbook/math import instead of framework-local theorem"
+  - "G_Newton P4 runner stale on current main: expected no retained Born-source support rows"
+remaining_blockers:
+  - "propagator-skeleton selection theorem for L^{-1}=G_0"
+  - "weak-field-action derivation theorem for S=L(1-phi)"
+  - "explicit composition through the Born-source dependency into the parent chain"
+audit_results_modified: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+verification:
+  g_newton_runner: "TOTAL: PASS=32, FAIL=0"
+  gravity_clean_runner: "PASS=13 FAIL=0"
+  py_compile: pass
+  diff_check: pass
+  docs_audit_diff: none
+next_exact_action: "review PR for science extraction; independent audit/review decides any status movement"

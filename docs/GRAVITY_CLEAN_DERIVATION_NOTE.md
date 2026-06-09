@@ -1,6 +1,7 @@
 # Conditional Weak-Field Gravity IF-Chain on `Z^3`
 
-**Date:** 2026-04-13. Scope repair: 2026-05-27.
+**Date:** 2026-04-13. Scope repair: 2026-05-27. Green-kernel dependency
+repair: 2026-06-09.
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome.
@@ -26,8 +27,8 @@ The binding claim is:
 > 3. the source density entering the field equation is the Born/mass-density
 >    readout `rho = |psi|^2`;
 > 4. the weak-field test-mass response is read through `S = L(1 - phi)`;
-> 5. the `Z^3` lattice Green function has the standard large-distance
->    normalization `G(r) ~ 1/(4 pi r)`;
+> 5. the framework-local `Z^3` graph-Laplacian Green theorem supplies the
+>    large-distance normalization `G(r) ~ 1/(4 pi r)`;
 >
 > then the lattice Poisson equation gives a `1/r` potential and an
 > inverse-square force in lattice units.
@@ -51,24 +52,33 @@ The internal premises are made explicit through citation-graph dependencies:
 - [`STAGGERED_FERMION_CARD_2026-04-11.md`](STAGGERED_FERMION_CARD_2026-04-11.md)
   supplies bounded fixed-run support for the staggered/Born-density side of
   the chain, within that card's own scoped finite-run limits.
+- [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+  supplies the framework-applied `Z^3` nearest-neighbor graph-Laplacian
+  normalization `G(r) -> 1/(4 pi |r|)`, with Maradudin/Lawler/Spitzer kept as
+  parallel references rather than load-bearing textbook authority.
+- [`LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
+  records the legacy bridge row rerouted through that framework-local theorem.
 
 These authorities are sufficient only for the bounded IF-chain stated here.
 They do not derive a physical mass-source law, a full gravitational action,
 or physical `G_Newton` in SI units.
 
-## External Mathematical Input
+## Framework-Local Green-Kernel Input
 
-The large-distance Green-function normalization is standard lattice
-potential theory:
+The large-distance Green-function normalization is no longer treated here as
+an imported textbook theorem. It is the framework-local nearest-neighbor
+`Z^3` graph-Laplacian theorem applied to the exact stencil:
 
 ```text
 G(r) = <r|(-Delta_lat)^(-1)|0> = 1/(4 pi |r|) + O(|r|^{-3})
 ```
 
 for `|r| >> 1` on `Z^3`, modulo the usual lattice anisotropy corrections.
-This note uses that result as mathematical background in parallel with the
-framework calculation. It is not a new framework axiom and is not a physical
-gravity bridge.
+The standard Maradudin/Lawler/Spitzer references remain useful parallel
+provenance for the same lattice-potential theorem, but this note's
+load-bearing dependency is the repository's framework-applied Green-kernel
+certificate. It is not a new framework axiom and is not a physical gravity
+bridge.
 
 ## Conditional Chain
 
@@ -127,8 +137,8 @@ In particular:
   derived here as a physical source law.
 - `S = L(1 - phi)` is an input weak-field response, not derived here as a
   full test-mass action theorem.
-- `G(r) ~ 1/(4 pi r)` is used as a standard mathematical theorem about the
-  `Z^3` Laplacian Green function, not as a physical bridge.
+- `G(r) ~ 1/(4 pi r)` is supplied by the framework-local `Z^3` graph-Laplacian
+  Green theorem, not by importing textbook authority as a physical bridge.
 
 ## What This Note Does Not Claim
 
@@ -149,8 +159,8 @@ bridge theorems for:
    identity;
 2. deriving the physical gravitational source map `rho = |psi|^2`;
 3. deriving the weak-field test-mass response `S = L(1 - phi)`;
-4. applying or deriving the `Z^3` Green-function normalization with the exact
-   framework source/readout normalization;
+4. composing the already framework-local `Z^3` Green-function normalization
+   with the exact framework source/readout normalization in the parent chain;
 5. converting lattice units to physical `G_Newton` without importing a fitted
    calibration.
 

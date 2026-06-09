@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 795 |
+| **retained_bounded** | 796 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1335 |
+| unaudited | 1334 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1234 |
+| `audited_clean` | 1235 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1650 |
+| `unaudited` | 1649 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 785 |
-| `leaf` | 1284 |
+| `medium` | 790 |
+| `leaf` | 1279 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -103,11 +103,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1386 | 100.44 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 765 | 61.08 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 766 | 61.08 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 853 | 58.24 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1282 | 52.83 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 490 | 47.94 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1017 | 44.49 | `unaudited` | meta |
+| 6 | `key_terminology` | meta | critical | 1018 | 44.49 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1198 | 42.73 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1005 | 40.47 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 265 | 39.55 | `unaudited` | unaudited |
@@ -119,7 +119,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 904 | 34.82 | `audited_clean` | **retained_bounded** |
 | 16 | `three_generation_structure_note` | bounded_theorem | critical | 867 | 34.76 | `audited_clean` | **retained_bounded** |
 | 17 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 277 | 34.62 | `unaudited` | unaudited |
-| 18 | `cpt_exact_note` | positive_theorem | critical | 1133 | 34.15 | `audited_clean` | **retained** |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 1134 | 34.15 | `audited_clean` | **retained** |
 | 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 700 | 32.95 | `unaudited` | unaudited |
 | 20 | `minimal_axioms_2026-04-11` | meta | critical | 1115 | 32.62 | `unaudited` | meta |
 | 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1057 | 32.05 | `audited_clean` | **retained_bounded** |
@@ -899,6 +899,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12816,6 +12817,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The provided primary runner source contains a genuine recompute path: it builds the grown geometry, constructs geometry-sector adjacency, applies the signed source field, propagates amplitudes, and measures detector centroid shifts. The provided helper's hard-coded replay constants are not used on this load-bearing path.
 - **rationale:** The bounded conclusion follows for exactly the three stated restore rows and does not rely on an external comparator or tuned empirical input. Independent checks of the restricted packet confirm the exact zero-source and same-point neutral cancellations by code identity, and the displayed charge exponents match log2(|double/plus|) for the recompute rows. The runner source's load-bearing computation is not a print-only or hard-coded expected-value path, and the helper's expected replay table is not on the relevant path. No cited non-retained authority or open bridge is present in the restricted packet.
 - **auditor confidence:** medium
+
+### `nonlabel_grown_drift_basin_note`
+
+- **Note:** [`NONLABEL_GROWN_DRIFT_BASIN_NOTE.md`](../../docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite sweep over drift = {0.15, 0.20, 0.25} and seed = {0, 1, 2} at fixed restore = 0.70 for the grown-row geometry-sector non-label signed-source transfer.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-134905-48f224cbbe-nonlabel_grown_drift_basin_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The geometry-sector / non-label architecture survives the nearest drift grid at fixed restore = 0.7 with zero and neutral gates exactly zero, correct single-source sign orientation, negative double-charge response, and charge exponents within tolerance for all nine drift/seed rows.  _(class `C`)_
+- **chain closes:** True — Within the stated finite grid, the included runner source and helper instantiate the grown geometry, sector adjacency, signed source field, propagation, and centroid readout rather than merely printing constants. Independent arithmetic on the displayed rows verifies the zero/neutral gates, sign orientation, double-charge sign, and log2 charge exponents within the stated tolerance.
+- **rationale:** The load-bearing step is a bounded first-principles numerical replay inside the framework, not a renaming or an external comparator match. The cited upstream basin note is retained_bounded, which is retained-grade under the rubric, and the current claim adds a finite drift/seed sweep rather than importing an open bridge. The helper's hard-coded expected replay constants are not on the parent runner's load-bearing path for this claim. The clean verdict applies only to the stated finite grid at restore = 0.70, not to an unbounded drift basin.
+- **auditor confidence:** high
 
 ### `nonlinear_born_gravity_note`
 

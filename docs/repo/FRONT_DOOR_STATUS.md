@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1350 |
-| Retained-grade rows, including boxed decorations | 1236 |
+| Applied audit verdicts | 1351 |
+| Retained-grade rows, including boxed decorations | 1237 |
 | Retained positive theorems | 210 |
 | Retained no-go rows | 203 |
-| Retained bounded rows | 773 |
+| Retained bounded rows | 774 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1377 |
+| Unaudited rows | 1376 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 16 |
 | Audited renaming rows | 35 |
@@ -33,37 +33,37 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1379 |
-| Ready rows | 58 |
+| Total pending rows | 1378 |
+| Ready rows | 57 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 366 |
-| Leaf pending | 434 |
+| Leaf pending | 433 |
 
 Next ready rows by queue order:
 
-- [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md) - medium; unaudited
 - [`dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
 - [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) - medium; unaudited
 - [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
 - [`universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - medium; unaudited
 - [`fifth_family_radial_note`](../../docs/FIFTH_FAMILY_RADIAL_NOTE.md) - medium; unaudited
-- [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - leaf; unaudited
+- [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **436**.
+- Non-retained-grade cited rows in publication tables: **435**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 188 |
 | high | `unaudited` | 144 |
-| medium | `unaudited` | 88 |
+| medium | `unaudited` | 87 |
 | critical | `audited_renaming` | 3 |
 | critical | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3181 |
 | Critical nodes | 529 |
 | High nodes | 452 |
-| Medium nodes | 818 |
-| Leaf nodes | 1382 |
+| Medium nodes | 819 |
+| Leaf nodes | 1381 |
 
 Top load-bearing rows by graph score:
 

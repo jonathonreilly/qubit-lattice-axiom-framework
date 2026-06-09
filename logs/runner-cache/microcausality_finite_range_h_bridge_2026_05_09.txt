@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/microcausality_finite_range_h_bridge_2026_05_09.py
-runner_sha256: 1c4f3940000171ef490092dd12ac176c864e467aa9bdbc274f288fc5ec6ea4e6
+runner_sha256: d37e9557f62de5e51ec724b4f07a5229c8107dcce4e967e91f517120b62b5d13
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.89
+elapsed_sec: 0.73
 status: ok
 ----- stdout -----
 
@@ -19,6 +19,12 @@ References:
   - Bridge note: docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md
   - Parent: docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md
   - RP note: docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+
+========================================================================
+TEST F0: note manifest matches corrected Wilson plaquette normalization
+========================================================================
+  [PASS] F0 — note/runner manifest uses corrected Wilson plaquette normalization
+         corrected 2β plaquette slot and Wilson-source packet are present
 
 ========================================================================
 TEST F1: finite-range support of h_z (radius r = 1 lattice spacing)
@@ -50,45 +56,45 @@ TEST F2: J_max bound from action coefficients (gauge-background-independent)
   Compute ||h_z||_op numerically, compare against closed-form J_max.
 
   d=4, r_W=1.0, m=0.3, β=6.0, N_c=3
-  J_max (from action) = |m| + d/2 + r_W·d + 2·(β/N_c)·d(d-1)/2
-                       = 0.3 + 2.0 + 4.0 + 24.0
-                       = 30.3
+  J_max (from action) = |m| + d/2 + r_W·d + 2·β·d(d-1)/2
+                       = 0.3 + 2.0 + 4.0 + 72.0
+                       = 78.3
 
     config     ||h_z||_op (direct)     J_max (closed-form)      OK
   --------  ----------------------  ----------------------  ------
-         0            6.300000e+00            3.030000e+01      OK
-         1            1.860211e+01            3.030000e+01      OK
-         2            1.760672e+01            3.030000e+01      OK
-         3            1.886212e+01            3.030000e+01      OK
-         4            2.031683e+01            3.030000e+01      OK
-         5            1.967726e+01            3.030000e+01      OK
-         6            1.629066e+01            3.030000e+01      OK
-         7            1.726896e+01            3.030000e+01      OK
-         8            1.917484e+01            3.030000e+01      OK
-         9            1.808412e+01            3.030000e+01      OK
-        10            2.027728e+01            3.030000e+01      OK
-        11            1.757491e+01            3.030000e+01      OK
-        12            2.032410e+01            3.030000e+01      OK
-        13            1.687720e+01            3.030000e+01      OK
-        14            1.859192e+01            3.030000e+01      OK
-        15            1.688159e+01            3.030000e+01      OK
-        16            1.720043e+01            3.030000e+01      OK
-        17            1.928535e+01            3.030000e+01      OK
-        18            1.903375e+01            3.030000e+01      OK
-        19            1.852540e+01            3.030000e+01      OK
+         0            6.300000e+00            7.830000e+01      OK
+         1            4.320634e+01            7.830000e+01      OK
+         2            4.022017e+01            7.830000e+01      OK
+         3            4.398637e+01            7.830000e+01      OK
+         4            4.835050e+01            7.830000e+01      OK
+         5            4.643178e+01            7.830000e+01      OK
+         6            3.627197e+01            7.830000e+01      OK
+         7            3.920689e+01            7.830000e+01      OK
+         8            4.492452e+01            7.830000e+01      OK
+         9            4.165235e+01            7.830000e+01      OK
+        10            4.823183e+01            7.830000e+01      OK
+        11            4.012472e+01            7.830000e+01      OK
+        12            4.837231e+01            7.830000e+01      OK
+        13            3.803159e+01            7.830000e+01      OK
+        14            4.317577e+01            7.830000e+01      OK
+        15            3.804478e+01            7.830000e+01      OK
+        16            3.900130e+01            7.830000e+01      OK
+        17            4.525604e+01            7.830000e+01      OK
+        18            4.450125e+01            7.830000e+01      OK
+        19            4.297619e+01            7.830000e+01      OK
 
-  Max observed ||h_z||_op = 2.032410e+01
-  J_max (closed-form) = 3.030000e+01
+  Max observed ||h_z||_op = 4.837231e+01
+  J_max (closed-form) = 7.830000e+01
   [PASS] F2 — closed-form J_max bound holds across all random SU(3) configs
-         max_observed/J_max = 0.6708
+         max_observed/J_max = 0.6178
 
 ========================================================================
 TEST F3: Lieb-Robinson velocity v_LR = 2 e r J from F1 + F2
 ========================================================================
 
-  Conditionally plugging r_action = 2 (F1) and J = 30.3000 (F2):
-  v_LR = 2 · e · r · J = 2 · 2.718282 · 2 · 30.3000
-       = 329.455758 (lattice units)
+  Conditionally plugging r_action = 2 (F1) and J = 78.3000 (F2):
+  v_LR = 2 · e · r · J = 2 · 2.718282 · 2 · 78.3000
+       = 851.365869 (lattice units)
 
   Continuum limit: v_LR · a_s/a_τ → c (parent (M3))
 
@@ -108,7 +114,7 @@ TEST F3: Lieb-Robinson velocity v_LR = 2 e r J from F1 + F2
     5   0.050            5.102877e-09    1.768524e-02      OK
     5   0.100            1.635341e-07    2.320943e-02      OK
     5   0.200            5.232008e-06    3.997344e-02      OK
-    6   0.050            3.329388e-11    6.506038e-03      OK
+    6   0.050            3.329391e-11    6.506038e-03      OK
     6   0.100            2.132913e-09    8.538274e-03      OK
     6   0.200            1.364303e-07    1.470541e-02      OK
 
@@ -127,8 +133,8 @@ TEST F4: outside-lightcone exponential decay (operational check)
     4       outside    4.070340e-06            -12.411784
     5       outside    6.190648e-08            -16.597641
     6       outside    1.427171e-09            -20.367572
-    7       outside    1.103643e-11            -25.229819
-    8       outside    2.095298e-13            -29.193911
+    7       outside    1.103644e-11            -25.229819
+    8       outside    2.095777e-13            -29.193682
 
   [PASS] F4 — outside-lightcone exponential decay
          log(commutator) decreases monotonically with d (microcausal lightcone)
@@ -136,12 +142,13 @@ TEST F4: outside-lightcone exponential decay (operational check)
 ========================================================================
 SUMMARY
 ========================================================================
+  F0 note/runner Wilson-normalization sync:             PASS
   F1 action-density local support:                       PASS
   F2 explicit J_max bound from action coefficients:      PASS
   F3 conditional v_LR = 2erJ LR bound holds on toy H:    PASS
   F4 outside-lightcone exponential decay:                PASS
 
-  PASS=4, FAIL=0
+  PASS=5, FAIL=0
   OVERALL: PASS
 
 The runner checks bounded action-support/J-budget pieces only.

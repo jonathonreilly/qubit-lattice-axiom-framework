@@ -7,11 +7,13 @@ surface read off the parent reflection-positivity note's action
 carriers
 ([`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
 eq. (1) for `M = M_KS + M_W + m·I` and eq. (2) for the Wilson plaquette
-gauge action), the leading local action-density pieces have bounded
+gauge action, with the Wilson-surface normalization made explicit by
+the bounded source packet cited below), the leading local
+action-density pieces have bounded
 site support radius `r_action <= 2` in the lattice `l1` metric
 (nearest-neighbor matter terms plus elementary plaquettes) and a
 conservative gauge-background-independent operator-norm bound
-`J_action <= |m| + 30` at `d = 4`, `r_W = 1`, `β = 6`, `N_c = 3`.
+`J_action <= |m| + 78` at `d = 4`, `r_W = 1`, `β = 6`, `N_c = 3`.
 If an exact reconstructed Hamiltonian decomposition `H = sum_z h_z`
 with compatible finite-range/quasilocal constants is independently
 established, the standard Hastings-Koma / Nachtergaele-Sims estimate
@@ -19,6 +21,13 @@ then gives the corresponding `v_LR <= 2 e r J` bound. This note
 supplies bounded action-support evidence for the parent microcausality
 bridge; it does not prove the exact non-perturbative
 `H = -log(T)/a_tau` finite-range step.
+**Audit repair:** 2026-06-09 J-normalization + Wilson-surface bridge
+repair. The previous draft bounded each Wilson plaquette by
+`2β/N_c`; on the canonical Wilson surface
+`S_W = (β/N_c) sum_P (N_c - Re Tr U_P) =
+β sum_P (1 - Re Tr U_P/N_c)`, the normalized plaquette slot is instead
+bounded by `2β`. This raises the conservative bound from `|m| + 30` to
+`|m| + 78` and removes the double division by `N_c`.
 **Status authority:** independent audit lane only. This source note is
 a bounded support theorem; it does not set or predict an audit outcome.
 **Primary runner:** `scripts/microcausality_finite_range_h_bridge_2026_05_09.py`
@@ -96,6 +105,11 @@ Adopt the parent reflection-positivity note's action carriers verbatim:
   plaquette `P` couples four sites that span a single elementary
   square; in the time-direction transfer-matrix decomposition each
   plaquette term contributes to `h_z` for `z` at the plaquette corner.
+  Equivalently, on the canonical Wilson surface,
+  `S_G = (β/N_c) · sum_P (N_c - Re Tr U_P)
+       = β · sum_P (1 - Re Tr U_P/N_c)`. The factor `1/N_c`
+  normalizes the trace inside the plaquette slot; after this rewrite
+  the per-plaquette coefficient is `β`, not `β/N_c`.
 
 - **Lattice ℓ¹ graph distance** `d(x, y) = ‖x - y‖_1` on `Z^d`.
 
@@ -107,6 +121,28 @@ the parent. This note does not assume that the exact logarithm is
 finite range; it records the leading action-density support and the
 local norm budget that a later exact-H bridge must preserve or replace
 with a quasilocal LR estimate.
+
+### 2026-06-09 bounded Wilson-surface source packet
+
+The Wilson-surface normalization used in F2 is source-visible through
+the existing bounded/unaudited Wilson packet:
+
+- `WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md`
+  states the canonical surface
+  `S_W[U] = (β/N_c) sum_P (N_c - Re Tr U_P)` and the associated
+  `β = 2N_c/g_0^2` normalization.
+- `WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md`
+  records the same Wilson action surface as the selected real-positive
+  plaquette form.
+- `CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`
+  is the bounded normalization context for the `β`, `g_bare`, and
+  `N_c` conventions used by this row.
+
+This packet supplies explicit row-local source support and fixes the
+plaquette normalization. It is not itself a retained bridge and does
+not promote this row; independent audit still decides whether the
+bounded source packet is sufficient for the parent microcausality
+dependency.
 
 ## Statement
 
@@ -131,7 +167,7 @@ operator-norm `J_action = sup_z ‖h_z‖_op`
 satisfies the **explicit gauge-background-independent bound**
 
 ```text
-    J_action  ≤  J_max  :=  (d/2) · 1   +   r_W · d   +   |m|   +   (2β / N_c) · q_face       (5)
+    J_action  ≤  J_max  :=  (d/2) · 1   +   r_W · d   +   |m|   +   2β · q_face              (5)
 ```
 
 where:
@@ -144,15 +180,16 @@ where:
   (per `STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`
   using `M_W = r_W · d · I` with `r_W = 1`);
 - `|m|` is the mass term operator norm;
-- `(2β / N_c) · q_face` is the conservative gauge plaquette
+- `2β · q_face` is the conservative gauge plaquette
   contribution, with `q_face = d(d-1)/2` plaquette orientations
   assigned to the local site. The factor 2 comes from
   `|1 - Re tr(U_P)/N_c| <= 2`, using `|tr U_P| <= N_c` for unitary
-  `U_P`.
+  `U_P`; the canonical Wilson coefficient multiplying this normalized
+  plaquette slot is `β`.
 
 In particular, on `Z^4` at `g_bare = 1, N_c = 3, β = 6, r_W = 1, m`
-real, plug-in: `J_max = 4/2 + 1·4 + |m| + (2·6/3)·6 =
-2 + 4 + |m| + 24 = 30 + |m|`.
+real, plug-in: `J_max = 4/2 + 1·4 + |m| + (2·6)·6 =
+2 + 4 + |m| + 72 = 78 + |m|`.
 
 `J_max` does NOT depend on the gauge background `{U_μ}`, on the lattice
 volume, or on any spectral data of `T`. It depends only on the fixed
@@ -251,7 +288,7 @@ at `z`:
 ```text
     h_z  =  m · n̂_z   +   (1/2) Σ_{μ} [ η_μ(z) U_μ(z) c̄_z c_{z+e_μ} + h.c. ]
             +  r_W · n̂_z (Wilson diagonal)
-            +  (β / N_c) Σ_{P ∋ z} Re[1 - (1/N_c) tr U_P]                  (10)
+            +  β Σ_{P ∋ z} [1 - Re tr(U_P)/N_c]                            (10)
 ```
 
 Each summand is bounded in operator norm:
@@ -267,24 +304,27 @@ Each summand is bounded in operator norm:
   value is shared, so the operator-norm bound is `(d/2) · 1 = d/2`.)
 - **Wilson diagonal:** ‖r_W · d · I‖_op = r_W · d (parent §3a
   symmetric-canonical surface).
-- **Plaquette:** ‖(β / N_c) Re[1 - (1/N_c) tr U_P]‖_op
-  ≤ (β / N_c) · |1 - (1/N_c) tr U_P| ≤ (β / N_c) · 2 · 1 = 2β/N_c
-  per plaquette (using `|tr U_P| ≤ N_c` for unitary U_P, hence
-  `|1 - (1/N_c) tr U_P| ≤ 2`). Summing over plaquette orientations
-  assigned to `z`, there are `d(d-1)/2` such plaquettes. The
+- **Plaquette:** on the Wilson surface
+  `S_W = (β/N_c) Σ_P (N_c - Re Tr U_P)
+       = β Σ_P (1 - Re Tr U_P/N_c)`. Hence each plaquette contributes
+  at most
+  `β · |1 - Re tr(U_P)/N_c| ≤ β · 2 = 2β`
+  (using `|tr U_P| ≤ N_c` for unitary U_P, hence
+  `Re tr(U_P)/N_c ∈ [-1, 1]`). Summing over plaquette orientations
+  assigned to `z`, there are `q_face = d(d-1)/2` such plaquettes. The
   conservative per-site bound is therefore
-  `(β/N_c) · 2 · d(d-1)/2 = (2β/N_c) · d(d-1)/2`.
+  `2β · d(d-1)/2`.
 
 Triangle inequality on (10):
 
 ```text
-    ‖h_z‖_op  ≤  |m|  +  d/2  +  r_W · d  +  (2β/N_c) · d(d-1)/2          (11)
+    ‖h_z‖_op  ≤  |m|  +  d/2  +  r_W · d  +  2β · d(d-1)/2               (11)
 ```
 
 For `d = 4, r_W = 1, β = 6, N_c = 3`:
 
 ```text
-    J_max  ≤  |m|  +  2  +  4  +  4 · 6  =  |m|  +  30                     (12)
+    J_max  ≤  |m|  +  2  +  4  +  12 · 6  =  |m|  +  78                    (12)
 ```
 
 This is a closed-form bound depending only on the action coefficients,
@@ -315,11 +355,11 @@ Conditionally substituting the leading action-support radius
 `r_action <= 2` and `J ≤ J_max` from F2 into the standard HK/NS bound:
 
 ```text
-    v_LR  ≤  2 · e · 2 · J_max  =  4 · e · (|m| + 30)                      (14)
+    v_LR  ≤  2 · e · 2 · J_max  =  4 · e · (|m| + 78)                      (14)
 ```
 
 For massless / small-mass surfaces (`|m| → 0` continuum limit) this
-gives `v_LR ≤ 120 · e ≈ 326.19` in lattice units, which converts to the
+gives `v_LR ≤ 312 · e ≈ 848.10` in lattice units, which converts to the
 emergent speed of light `c` via the lattice-spacing ratio
 `v_LR · a_s / a_τ → c < ∞` (parent (M3); see also
 `docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md` for the fixed-slope limit).
@@ -343,6 +383,12 @@ The proof uses:
 - **Symmetric-canonical Wilson form** (`STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`,
   Setup §) — `M_W = r_W · d · I`, providing the explicit Wilson
   diagonal contribution to `J`.
+- **Bounded Wilson-surface source packet**
+  (`WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md`,
+  `WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md`,
+  `CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`) —
+  used only to make the canonical Wilson plaquette normalization
+  explicit; these source rows are not promoted here.
 - **SU(3) link unitarity** — `‖U_μ‖_op = 1` always, since
   `U_μ ∈ SU(3)`. Pure group-theoretic fact; no input from physics.
 - **Hastings-Koma / Nachtergaele-Sims combinatorial estimate** —
@@ -350,11 +396,12 @@ The proof uses:
   pure-mathematics theorem (Lieb-Robinson 1972 §III, Nachtergaele-Sims
   2010 §3-4); no further physics input.
 
-No fitted parameters. No observed values. No imports beyond what the
-parent note already cites. F1 and F2 are derived from action
-coefficients, not inferred from RP/spectrum positivity; the exact
-finite-range/quasilocal property of the reconstructed logarithmic
-Hamiltonian is not derived here.
+No fitted parameters. No observed values. The only new support packet
+is internal source-traceability for the Wilson-surface normalization;
+it is not a new numerical import or a retained-status claim. F1 and F2
+are derived from action coefficients, not inferred from RP/spectrum
+positivity; the exact finite-range/quasilocal property of the
+reconstructed logarithmic Hamiltonian is not derived here.
 
 ## Corollaries
 
@@ -366,7 +413,7 @@ exact non-perturbative finite-range/quasilocal control of
 
 C2. **Explicit conditional numerical v_LR.** On the canonical surface
 (`d = 4, r_W = 1, β = 6, N_c = 3, m_phys`), the action-density bound
-gives `v_LR ≤ 4·e·(|m_phys| + 30) ≈ 120·e ≈ 326.19` lattice units for
+gives `v_LR ≤ 4·e·(|m_phys| + 78) ≈ 312·e ≈ 848.10` lattice units for
 `|m_phys| → 0`, conditional on an exact-H locality bridge preserving
 the leading `r_action <= 2` support radius.
 
@@ -378,7 +425,7 @@ not a load-bearing dependency of the present action-support result.
 
 C4. **Higher-order Trotter / BCH corrections.** The leading-order
 bounded action-support structure receives BCH corrections of order
-`a_τ · J_max ≈ a_τ · 30`. For sufficiently small `a_τ` (the canonical
+`a_τ · J_max ≈ a_τ · 78`. For sufficiently small `a_τ` (the canonical
 fine-temporal-lattice surface), these corrections are exponentially
 suppressed and preserve the lightcone structure. A separate fully
 non-perturbative bound on the BCH corrections is recorded as the
@@ -392,6 +439,8 @@ surface.** Statements (F1)–(F3) are derived from:
 - A1, A2 (algebraic core);
 - the canonical action coefficients in parent RP note eqs. (1)–(2);
 - the `r_W · d · I` symmetric-canonical Wilson form (cited bridge);
+- the bounded Wilson-surface source packet for the canonical plaquette
+  normalization, without treating that packet as retained;
 - SU(3) link unitarity;
 - the Hastings-Koma / Nachtergaele-Sims combinatorial Lieb-Robinson
   estimate (admitted-context as a pure-math theorem).
@@ -431,6 +480,10 @@ toy Hamiltonian. It does not construct the exact RP logarithm.
   [`HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md`](HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md)
 - symmetric-canonical Wilson surface:
   [`STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`](STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md)
+- bounded Wilson-surface source packet:
+  [`WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md`](WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md),
+  [`WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md`](WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md),
+  [`CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
 - standard external proofs (theorem-grade, no numerical input):
   Lieb-Robinson 1972; Hastings-Koma 2006; Nachtergaele-Sims 2010 §3-4.
 
@@ -443,3 +496,6 @@ scope.
 - [axiom_first_reflection_positivity_theorem_note_2026-04-29](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 - [hopping_bilinear_hermiticity_theorem_note_2026-05-02](HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md)
 - [staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05](STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md)
+- [wilson_real_positive_measure_bounded_premise_bridge_note_2026-06-03](WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md)
+- [wilson_action_surface_selector_real_positive_theorem_note_2026-05-25](WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md)
+- [cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27](CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)

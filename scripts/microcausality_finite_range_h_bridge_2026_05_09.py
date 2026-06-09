@@ -19,7 +19,7 @@ This runner provides numerical certificates for:
   F2. Explicit J bound: construct the local Hamiltonian density h_z
       on random SU(3) backgrounds; compare ||h_z||_op against the
       conservative closed-form J_max from action coefficients
-      (|m| + d/2 + r_W * d + 2 * (β/N_c) * d(d-1)/2). Verify
+      (|m| + d/2 + r_W * d + 2 * beta * d(d-1)/2). Verify
       ||h_z||_op <= J_max configuration-by-configuration.
 
   F3. Lieb-Robinson velocity: conditional v_LR = 2 e r J computation
@@ -34,6 +34,7 @@ Reproducibility: deterministic seeded SU(3) backgrounds.
 from __future__ import annotations
 
 import math
+from pathlib import Path
 
 import numpy as np
 
@@ -54,6 +55,48 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     print(f"  [{status}] {name}")
     if detail:
         print(f"         {detail}")
+
+
+# ---- Manifest sync ---------------------------------------------------------
+
+
+def test_F0_note_manifest_sync() -> bool:
+    """Guard the note/runner contract for the 2026-06-09 repair."""
+    print("=" * 72)
+    print("TEST F0: note manifest matches corrected Wilson plaquette normalization")
+    print("=" * 72)
+
+    note_path = Path(
+        "docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md"
+    )
+    text = note_path.read_text(encoding="utf-8")
+    required = [
+        "2026-06-09 J-normalization + Wilson-surface bridge",
+        "J_action  ≤  J_max  :=  (d/2) · 1   +   r_W · d   +   |m|   +   2β · q_face",
+        "2 + 4 + |m| + 72 = 78 + |m|",
+        "WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md",
+        "bounded/unaudited Wilson packet",
+    ]
+    forbidden = [
+        "J_action  ≤  J_max  :=  (d/2) · 1   +   r_W · d   +   |m|   +   (2β / N_c) · q_face",
+        "J_max = 4/2 + 1·4 + |m| + (2·6/3)·6",
+    ]
+
+    missing = [item for item in required if item not in text]
+    stale = [item for item in forbidden if item in text]
+    ok = not missing and not stale
+    detail = "corrected 2β plaquette slot and Wilson-source packet are present"
+    if missing:
+        detail = f"missing required note markers: {missing}"
+    if stale:
+        detail = f"stale pre-repair formula still present: {stale}"
+    check(
+        "F0 — note/runner manifest uses corrected Wilson plaquette normalization",
+        ok,
+        detail,
+    )
+    print()
+    return ok
 
 
 # ---- SU(3) link generation -------------------------------------------------
@@ -205,10 +248,12 @@ def test_F2_explicit_J_bound() -> bool:
     print(f"  d={d}, r_W={r_W}, m={m}, β={beta}, N_c={N_c}")
 
     # Conservative closed-form J_max bound from the note.
-    # J_max = |m| + d/2 + r_W*d + 2*(β/N_c)*d(d-1)/2.
-    J_max = abs(m) + d / 2 + r_W * d + 2 * (beta / N_c) * d * (d - 1) / 2
-    print(f"  J_max (from action) = |m| + d/2 + r_W·d + 2·(β/N_c)·d(d-1)/2")
-    print(f"                       = {abs(m)} + {d/2} + {r_W * d} + {2 * (beta/N_c) * d*(d-1)/2}")
+    # The Wilson surface is beta * (1 - Re Tr U_P/N_c), so there is
+    # no extra division by N_c after normalizing the trace.
+    n_plaq = d * (d - 1) // 2
+    J_max = abs(m) + d / 2 + r_W * d + 2 * beta * n_plaq
+    print(f"  J_max (from action) = |m| + d/2 + r_W·d + 2·β·d(d-1)/2")
+    print(f"                       = {abs(m)} + {d/2} + {r_W * d} + {2 * beta * n_plaq}")
     print(f"                       = {J_max}")
     print()
 
@@ -239,10 +284,9 @@ def test_F2_explicit_J_bound() -> bool:
         wilson_contrib = r_W * d
         # Mass: |m|
         mass_contrib = abs(m)
-        # Plaquette: (β/N_c) * |1 - tr(U_P)/N_c| for each plaquette
+        # Plaquette: β * |1 - Re tr(U_P)/N_c| for each plaquette.
         # On Z^d there are d(d-1)/2 plaquettes per corner (after sharing factor)
         plaq_contrib = 0.0
-        n_plaq = d * (d - 1) // 2
         for _ in range(n_plaq):
             # Build a plaquette from 4 random links and compute its contribution
             U1 = random_su3(rng, scale=scale)
@@ -251,9 +295,9 @@ def test_F2_explicit_J_bound() -> bool:
             U4 = random_su3(rng, scale=scale)
             U_P = U1 @ U2 @ U3.conj().T @ U4.conj().T
             tr_factor = abs(1.0 - np.trace(U_P).real / N_c)  # |1 - Re(tr U_P)/N_c| ≤ 2
-            # The plaquette term in h_z is (β/N_c) * Re[1 - tr(U_P)/N_c] (a c-number multiplier),
-            # so its contribution to ||h_z||_op is (β/N_c) * tr_factor
-            plaq_contrib += (beta / N_c) * tr_factor
+            # The plaquette term in h_z is β * (1 - Re tr(U_P)/N_c)
+            # after trace normalization, so its contribution is β * tr_factor.
+            plaq_contrib += beta * tr_factor
         # Per-site bound: total is sum of pieces above
         h_z_norm = mass_contrib + hop_contrib + wilson_contrib + plaq_contrib
         max_observed = max(max_observed, h_z_norm)
@@ -295,7 +339,8 @@ def test_F3_v_LR_explicit() -> bool:
     g_bare = 1.0
     N_c = 3
     beta = 2 * N_c / g_bare ** 2
-    J_max = abs(m) + d / 2 + r_W * d + 2 * (beta / N_c) * d * (d - 1) / 2
+    n_plaq = d * (d - 1) // 2
+    J_max = abs(m) + d / 2 + r_W * d + 2 * beta * n_plaq
     v_LR = 2 * math.e * r * J_max
     print(f"  Conditionally plugging r_action = {r} (F1) and J = {J_max:.4f} (F2):")
     print(f"  v_LR = 2 · e · r · J = 2 · {math.e:.6f} · {r} · {J_max:.4f}")
@@ -470,6 +515,7 @@ def main() -> None:
     print("  - RP note: docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md")
     print()
 
+    f0 = test_F0_note_manifest_sync()
     f1 = test_F1_finite_range_support()
     f2 = test_F2_explicit_J_bound()
     f3 = test_F3_v_LR_explicit()
@@ -479,12 +525,13 @@ def main() -> None:
     print("=" * 72)
     print("SUMMARY")
     print("=" * 72)
+    print(f"  F0 note/runner Wilson-normalization sync:             {'PASS' if f0 else 'FAIL'}")
     print(f"  F1 action-density local support:                       {'PASS' if f1 else 'FAIL'}")
     print(f"  F2 explicit J_max bound from action coefficients:      {'PASS' if f2 else 'FAIL'}")
     print(f"  F3 conditional v_LR = 2erJ LR bound holds on toy H:    {'PASS' if f3 else 'FAIL'}")
     print(f"  F4 outside-lightcone exponential decay:                {'PASS' if f4 else 'FAIL'}")
     print()
-    all_ok = f1 and f2 and f3 and f4
+    all_ok = f0 and f1 and f2 and f3 and f4
     print(f"  PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()

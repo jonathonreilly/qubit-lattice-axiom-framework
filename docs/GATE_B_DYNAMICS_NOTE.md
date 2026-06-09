@@ -3,6 +3,7 @@
 **Date:** 2026-04-04
 **Status:** bounded generated-geometry source index; not a physical-gravity or
 primitive-to-readout bridge
+**Claim type:** open_gate
 **Audit-scope narrow:** 2026-06-08
 
 ## 2026-06-08 Audit-Scope Narrow
@@ -22,6 +23,44 @@ That wording does not promote a framework-native generated-geometry theorem.
 The stronger science target remains open: derive the local growth/connectivity
 rule and the physical gravity/readout semantics from retained framework
 primitives.
+
+## 2026-06-09 Row-Local Source-Packet Manifest
+
+This manifest is the current re-audit target for the Gate B row. It does not
+derive a clean Gate B dynamics theorem. It discloses the supplied ingredients
+of the bounded generated-geometry packet so the row can be audited as a source
+index rather than as an independent primitive-to-physical-gravity bridge.
+
+**Manifest runner:**
+[`scripts/gate_b_source_packet_manifest_2026_06_09.py`](../scripts/gate_b_source_packet_manifest_2026_06_09.py)
+**Cached output:**
+[`logs/runner-cache/gate_b_source_packet_manifest_2026_06_09.txt`](../logs/runner-cache/gate_b_source_packet_manifest_2026_06_09.txt)
+
+| ID | Supplied ingredient | Row-local definition | Status boundary |
+|---|---|---|---|
+| `GB-S1` | valley-linear source/action rule | The runners use the scalar field `f(x) = strength/(r(x, mass)+0.1)` and the forward phase action `S = L(1 - f)` with the declared constants in the paired scripts. | Runner-supplied source/action rule for this packet only; not derived from retained primitives and not a new axiom. |
+| `GB-S2` | propagation/readout semantics | The runners use forward-layer path propagation, a central blocked barrier, detector-window mass gain, `TOWARD` sign, and local `F~M` log-slope readouts. | Runner-supplied operational readout for bounded numerical certificates; not a retained physical-gravity readout bridge. |
+| `GB-S3` | generated-connectivity rule | The positive generated-geometry rows use label/offset-preserving forward connectivity with drift/restore companions; KNN and non-label candidates are recorded as controls or bounded negatives where their sign/`F~M` package weakens. | Supplied generated-family rule for this packet only; not yet derived from a local retained growth primitive. |
+
+The direct source packet is therefore:
+
+```text
+I_GateB = (GB-S1 valley-linear source/action,
+           GB-S2 propagation/readout semantics,
+           GB-S3 generated-connectivity rule,
+           frozen seed/geometry rows recorded in the companion notes).
+```
+
+The load-bearing claim is only conditional on `I_GateB`: the named frozen
+runners compute sign, local `F~M`, distance-law, and non-gravity companion
+readouts for the declared rows. The row does not promote `I_GateB` to a
+repo-wide accepted premise, retained theorem, physical gravity theorem, or
+closed Gate B dynamics theorem.
+
+**Re-audit target.** Audit this note as a bounded generated-geometry source
+index/open gate with a fully visible supplied packet. Re-audit as a clean Gate B
+dynamics theorem only after a separate theorem derives `GB-S1`, `GB-S2`, and
+`GB-S3` from retained primitives.
 
 ## The question
 

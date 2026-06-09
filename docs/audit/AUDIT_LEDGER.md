@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 203 |
-| **retained_bounded** | 775 |
+| **retained_bounded** | 776 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1373 |
+| unaudited | 1372 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1207 |
+| `audited_clean` | 1208 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1688 |
+| `unaudited` | 1687 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 780 |
-| `leaf` | 1289 |
+| `medium` | 781 |
+| `leaf` | 1288 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
@@ -1096,6 +1096,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_driven_field_recovery_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `source_resolved_generated_architecture_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_generated_bridge_failure_audit` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
@@ -15704,6 +15705,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For diagonal matrix units, O_i^dagger O_j = E_ii E_jj = delta_ij E_ii, so Tr(O_i^dagger O_j) = delta_ij, and these six units resolve and span D_6.  _(class `A`)_
 - **chain closes:** True — The conclusion follows directly from finite matrix-unit multiplication and the stated Hilbert-Schmidt pairing. The source note explicitly excludes the physical Y_T/top/W and coupling interpretations, so no missing physical bridge is load-bearing for the audited claim.
 - **rationale:** The displayed matrix identities are elementary consequences of E_ii E_jj = delta_ij E_ij with i=j support, the trace pairing, and the six-dimensional diagonal coordinate basis. The democratic vector has squared norm 6*(1/6)=1, and invariance under adjacent swaps forces all coordinates equal, giving a one-dimensional fixed line. The runner source actually constructs the matrices symbolically and numerically; it does not import contested physical constants or external comparators. The six non-algebraic runner passes are source-boundary checks, not load-bearing derivation steps.
+- **auditor confidence:** high
+
+### `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`
+
+- **Note:** [`SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite RN/Fisher tangent algebra plus the supplied six-diagonal Hilbert-Schmidt democratic-unit normalization, excluding physical Y_T/source semantics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-120018-331468c3fb-source_measure_sharp_record_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained finite Fisher unit tangent and supplied orthonormal six-diagonal response basis imply that a scaled democratic unit has norm lambda^2, so unit normalization gives lambda = 1 and component amplitude 1/sqrt(6).  _(class `A`)_
+- **chain closes:** True — The finite Fisher tangent facts are supplied by a retained authority, and the six-diagonal orthonormal basis facts are supplied by a retained_bounded authority. Independently, the displayed two-outcome and six-component normalizations reduce to direct finite sums with no extra physical bridge needed for the bounded claim.
+- **rationale:** The load-bearing mathematics is algebraic closure over retained-grade finite inputs: E0[epsilon] = 0, E0[epsilon^2] = 1, ||lambda epsilon||_F^2 = lambda^2, and ||lambda (1/sqrt(6)) sum_i O_i||^2 = lambda^2. The source note explicitly confines the result to bounded finite algebra and leaves the physical Y_T/source identification conditional. The runner source performs symbolic finite calculations and boundary checks rather than importing fitted values or external comparators.
 - **auditor confidence:** high
 
 ### `source_resolved_exact_green_pocket_note`

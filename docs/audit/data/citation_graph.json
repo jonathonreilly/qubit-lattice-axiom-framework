@@ -46610,7 +46610,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "fifth_family_radial_note"
+      "to": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
     },
     {
       "from": "repo.front_door_status",
@@ -46638,7 +46638,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
+      "to": "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -90159,17 +90159,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "fifth_family_radial_note",
+        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
         "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02",
         "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
         "post_record_measure_weight_normalization_subdivision_2026-06-06",
-        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
+        "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c987948c490aaf5e72a4f600775be9536ffe239734b18a31f78c2a423ffa1054",
+      "note_hash": "fe97ed0184dafc4e3a2cca3ff5025ab4cf4f97dadc84b98598388ef0fff60621",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

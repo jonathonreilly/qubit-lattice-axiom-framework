@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 203 |
-| **retained_bounded** | 772 |
+| **retained_bounded** | 773 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1378 |
+| unaudited | 1377 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1204 |
+| `audited_clean` | 1205 |
 | `audited_conditional` | 16 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1693 |
+| `unaudited` | 1692 |
 
 | claim_type | count |
 |---|---:|
@@ -1309,6 +1309,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wide_family_h0125_bridge_reopen_audit` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wide_lattice_h2t_skeptic_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -18786,6 +18787,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The replay is genuinely clean on the tested wide slice, which is enough to retain it only as a finite-lattice replay and not as a universal distance law.  _(class `A`)_
 - **chain closes:** True — The raw distance and F~M rows in the retained_bounded cited authority algebraically reproduce the reported signs, counts, far-tail slope, R^2, and mass-scaling exponent. The source note explicitly limits the result to the tested finite-lattice slice.
 - **rationale:** The load-bearing audit math is an algebraic closure over retained-grade packet inputs: row sign counts and independent log-log fits reproduce the displayed numerical claims. The cited upstream note is marked retained_bounded, which is retained-grade under the rubric. The source note does not import the missing continuum, width-independence, detector-window, or geometry-generic controls as conclusions.
+- **auditor confidence:** high
+
+### `wigner_mode_low_d_sublattice_theorem_note_2026-05-02`
+
+- **Note:** [`WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite charge-commutation and Gibbs-state commutation in the generated symmetric Hamiltonian, plus finite L=16 to L=32 IR-sum increase for the stated nearest-neighbor dispersion in d=1 and d=2; no no-SSB or Noether bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-114701-877d26d67a-wigner_mode_low_d_sublattice`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The source-side retained-eligible content is only the finite algebra and finite IR-growth diagnostics that the runner computes directly.  _(class `C`)_
+- **chain closes:** True — For the scoped finite claim, the runner constructs Q diagonal by occupation number and H only within equal-charge blocks, so [Q,H]=0 and exp(-beta H)/Tr exp(-beta H) preserves the same sectors. An independent check using omega=4 sum sin^2(pi n/L) reproduces the quoted IR values and strict growth from L=16 to L=32 in d=1 and d=2.
+- **rationale:** The displayed matrix identities and finite numerical table entries match both the runner source and an independent recomputation: I_1 gives 1.328125 and 2.6640625, and I_2 gives approximately 0.4899245 and 0.6003262. The runner does not hard-code the contested outputs or import a cross-note premise; it constructs the finite symmetric block Hamiltonian and directly computes the Gibbs commutator and lattice sums. The stronger low-dimensional no-SSB and Noether-current bridges are explicitly excluded as non-claims, so the bounded conclusion does not depend on those open bridges.
 - **auditor confidence:** high
 
 ### `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08`

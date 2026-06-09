@@ -11,7 +11,7 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3052 |
+| Ledger rows | 3053 |
 | Applied audit verdicts | 1401 |
 | Retained-grade rows, including boxed decorations | 1276 |
 | Retained positive theorems | 211 |
@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 808 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 37 |
-| Unaudited rows | 1333 |
+| Unaudited rows | 1334 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 27 |
 | Audited renaming rows | 35 |
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1335 |
+| Total pending rows | 1336 |
 | Ready rows | 14 |
 | Cycle-break targets | 16 |
 | Critical pending | 328 |
 | High pending | 253 |
-| Medium pending | 366 |
+| Medium pending | 367 |
 | Leaf pending | 388 |
 
 Next ready rows by queue order:
@@ -79,19 +79,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3189 |
+| Citation-graph nodes | 3190 |
 | Critical nodes | 529 |
 | High nodes | 454 |
-| Medium nodes | 832 |
-| Leaf nodes | 1374 |
+| Medium nodes | 834 |
+| Leaf nodes | 1373 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1390 descendants; score 101.442
-- `three_generation_observable_theorem_note` - critical; 766 descendants; score 61.083
-- `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
-- `graph_first_su3_integration_note` - critical; 1282 descendants; score 52.825
-- `minimal_axioms_2026-05-03` - critical; 490 descendants; score 47.940
-- `key_terminology` - critical; 1020 descendants; score 45.496
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1198 descendants; score 42.728
-- `anomaly_forces_time_theorem` - critical; 1005 descendants; score 40.474
+- `minimal_axioms` - critical; 1391 descendants; score 101.443
+- `three_generation_observable_theorem_note` - critical; 767 descendants; score 61.085
+- `observable_principle_from_axiom_note` - critical; 854 descendants; score 58.240
+- `graph_first_su3_integration_note` - critical; 1283 descendants; score 52.826
+- `minimal_axioms_2026-05-03` - critical; 491 descendants; score 47.943
+- `key_terminology` - critical; 1021 descendants; score 45.497
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1199 descendants; score 42.729
+- `anomaly_forces_time_theorem` - critical; 1006 descendants; score 40.476

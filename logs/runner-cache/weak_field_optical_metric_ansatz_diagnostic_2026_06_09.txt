@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/weak_field_optical_metric_ansatz_diagnostic_2026_06_09.py
+runner_sha256: 3a0acb27a4dc59e734023f42e9618772d5d0fbf337326f0f1d73c895a3dc48ca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+WEAK-FIELD OPTICAL METRIC ANSATZ DIAGNOSTIC
+========================================================================
+[PASS] M1 supplied weak-field ansatz has isotropic spatial part and scalar g_00 perturbation
+       g = diag(-(1 + 2 epsilon Phi(x)), 1, 1, 1)
+[PASS] M2 linearized curvature has R_00 = d^2 Phi / dx^2 in the one-direction model
+       R_00 / epsilon = Derivative(Phi(x), (x, 2))
+[PASS] M3 geodesic kinematics follows the supplied potential gradient
+       Gamma^x_00 = d Phi / dx, so nonrelativistic acceleration is -d Phi / dx
+[PASS] M4 Poisson compatibility: 1/r is harmonic off-source and lattice resolvent trends downward near 1/r
+       Delta(1/r) = 0; finite-lattice log-log slope = -1.37
+[PASS] M5 boundary is explicit
+       No record-density->metric derivation, source/action normalization, gravity sign, TT graviton dynamics, or nonlinear Einstein closure is supplied here.
+
+TOTAL: PASS=5 FAIL=0
+Boundary: ansatz diagnostic only; no gravity-sign or metric-dynamics derivation.
+
+----- stderr -----
+

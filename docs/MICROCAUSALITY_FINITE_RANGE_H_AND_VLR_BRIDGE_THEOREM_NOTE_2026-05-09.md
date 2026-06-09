@@ -12,6 +12,13 @@ site support radius `r_action <= 2` in the lattice `l1` metric
 (nearest-neighbor matter terms plus elementary plaquettes) and a
 conservative gauge-background-independent operator-norm bound
 `J_action <= |m| + 78` at `d = 4`, `r_W = 1`, `β = 6`, `N_c = 3`.
+That value reads the Wilson piece on the supplied diagonal surface
+`M_W = r_W · d · I`. A companion carrier-faithful branch (F2b) bounds
+the displayed standard spatial nearest-neighbor Wilson term of eq. (8)
+directly, giving `J_action <= |m| + 78.5`, and the all-direction
+standard-Wilson envelope gives `J_action <= |m| + 80`; all three
+readings share `r_action <= 2`, so no Wilson-surface bridge is
+load-bearing for the finiteness of the budget.
 If an exact reconstructed Hamiltonian decomposition `H = sum_z h_z`
 with compatible finite-range/quasilocal constants is independently
 established, the standard Hastings-Koma / Nachtergaele-Sims estimate
@@ -67,8 +74,11 @@ explicit `r` and `J` is independently available, the velocity is
 
 Adopt the parent reflection-positivity note's action carriers verbatim:
 
-- **A1 / A2** as in `MINIMAL_AXIOMS_2026-05-03.md` (Cl(3) site algebra
-  on `Z^d` with `d = 4 = 1 + 3` for a `Z^1 × Z^3` block).
+- **Lattice / Quantum baseline** as stated in
+  [`MINIMAL_AXIOMS_2026-06-05`](MINIMAL_AXIOMS_2026-06-05.md), read through
+  the parent RP note's transfer-block convention (`d = 4 = 1 + 3` for a
+  `Z^1 × Z^3` block). The older parent labels `A1`/`A2` are historical
+  aliases for this lattice-plus-one-qubit local algebra content.
 - **Staggered Kogut-Susskind kinetic operator** from parent eq. (1):
 
   ```text
@@ -88,9 +98,14 @@ Adopt the parent reflection-positivity note's action carriers verbatim:
   `M_KS`; on the symmetric-canonical surface
   (`STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`),
   `M_W = r_W · d · I` so its operator-norm contribution is the diagonal
-  bound `r_W · d`. This note uses that retained symmetric-canonical
+  bound `r_W · d`. This note uses that cited symmetric-canonical
   Wilson surface; it does not separately derive that diagonal surface
-  from the full standard Wilson nearest-neighbor action.
+  from the full standard Wilson nearest-neighbor action. The J budget
+  below therefore brackets both readings: (F2) uses this supplied
+  diagonal surface, while (F2b) bounds the displayed nearest-neighbor
+  form in eq. (8) directly, with the all-direction standard-Wilson
+  envelope recorded alongside, so neither reading is load-bearing for
+  the finiteness of the budget.
 
 - **Mass term** from parent eq. (1): `m · I`, contributing `|m|` to
   the local-density operator norm.
@@ -171,6 +186,29 @@ real, plug-in: `J_max = 4/2 + 1·4 + |m| + (2·6)·6 =
 `J_max` does NOT depend on the gauge background `{U_μ}`, on the lattice
 volume, or on any spectral data of `T`. It depends only on the fixed
 action coefficients.
+
+**(F2b) Carrier-faithful Wilson branch.** Reading the Wilson piece
+directly off the displayed carrier (8) (standard spatial
+nearest-neighbor Wilson term, `μ ≠ t`, `d_s = 3` spatial directions)
+instead of the supplied diagonal surface gives the per-site Wilson
+budget `d_s · r_W` (diagonal, `2 · (r_W/2)` per spatial direction)
+plus `d_s · (r_W/2)` (one owned link per spatial direction, pair norm
+`1` by SU(3) unitarity, same convention as the staggered-hop bullet),
+so
+
+```text
+    J_max^carrier  :=  (d/2) · 1  +  d_s · (r_W + r_W/2)  +  |m|  +  2β · q_face            (5b)
+```
+
+with plug-in `J_max^carrier = 2 + 9/2 + |m| + 72 = |m| + 78.5` at the
+same canonical values. The all-direction standard-Wilson envelope
+(`d` directions instead of `d_s`) gives `|m| + 2 + 6 + 72 = |m| + 80`.
+All three readings (supplied surface `78`, displayed carrier `78.5`,
+envelope `80`) are finite, explicit, gauge-background-independent, and
+share the same support radius `r_action <= 2`; the diagonal-surface
+citation is therefore not load-bearing for the finiteness of the
+budget, and the conditional velocity statement below quotes the
+envelope as the reading-independent ceiling.
 
 **(F3) Conditional Lieb-Robinson velocity bound.** If the exact
 reconstructed Hamiltonian has a finite-range/quasilocal decomposition
@@ -254,8 +292,11 @@ reconstructed `H` remains a separate bridge.
 decomposition); explicit lattice operators with NN support: hopping
 bilinear note `HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md`
 (B2, B4 — translation-invariant link-family Hamiltonians);
-spatial substrate: `MINIMAL_AXIOMS_2026-05-03.md` (A2). The argument
-is now traceable to A_min through these source notes, not asserted.
+spatial substrate: the named Lattice baseline in
+[`MINIMAL_AXIOMS_2026-06-05`](MINIMAL_AXIOMS_2026-06-05.md), with the parent
+RP note's `Z^1 × Z^3` transfer-block convention. The argument is now
+traceable to the minimal axiom authority through these source notes, not
+asserted.
 
 ### Step 2 — Explicit J bound (proves F2)
 
@@ -301,6 +342,28 @@ For `d = 4, r_W = 1, β = 6, N_c = 3`:
     J_max  ≤  |m|  +  2  +  4  +  12 · 6  =  |m|  +  78                    (12)
 ```
 
+**Carrier-faithful Wilson branch (proves F2b).** The Wilson term as
+displayed in carrier (8) is the standard spatial nearest-neighbor form
+`Σ_{x, μ ≠ t} (r_W/2) χ̄_x ( U_μ(x) χ_{x+e_μ} - 2 χ_x + U_μ(x-e_μ)^† χ_{x-e_μ} )`.
+Per-site grouping under the same forward-link-ownership convention as
+the staggered hop assigns to `h_z`, per spatial direction: the diagonal
+piece `-2 · (r_W/2) χ̄_z χ_z` of coefficient magnitude `r_W`, and one
+owned-link hop pair of coefficient `r_W/2` and pair norm `1`
+(`‖a†(U b) + h.c.‖_op = ‖U‖_op = 1` for unitary `U`; the runner
+verifies this on explicit one-particle blocks). Triangle inequality
+over `d_s = 3` spatial directions replaces the `r_W · d` surface term
+in (11) by `d_s · (r_W + r_W/2) = 9/2`:
+
+```text
+    J_max^carrier  ≤  |m|  +  2  +  9/2  +  12 · 6  =  |m|  +  78.5         (12b)
+```
+
+Extending the same count to all `d` directions (the all-direction
+standard-Wilson envelope, conservative against any temporal-Wilson
+reading) gives `d · (r_W + r_W/2) = 6` and `J_max ≤ |m| + 80`. Both
+branches read only displayed carrier coefficients; the supplied
+diagonal surface enters only the (12) branch value.
+
 This is a closed-form bound depending only on the action coefficients,
 gauge group rank, lattice dimension, and mass. **No gauge-background
 spectral data is used.**
@@ -332,8 +395,17 @@ Conditionally substituting the leading action-support radius
     v_LR  ≤  2 · e · 2 · J_max  =  4 · e · (|m| + 78)                      (14)
 ```
 
+on the supplied diagonal-surface branch, and the reading-independent
+ceiling from the F2b envelope
+
+```text
+    v_LR  ≤  4 · e · (|m| + 80)                                            (14b)
+```
+
 For massless / small-mass surfaces (`|m| -> 0` continuum limit) this
-gives `v_LR ≤ 312 · e ≈ 848.10` in lattice units, which converts to the
+gives `v_LR ≤ 312 · e ≈ 848.10` (supplied surface), `≤ 314 · e ≈ 853.54`
+(displayed carrier), `≤ 320 · e ≈ 869.85` (envelope ceiling) in lattice
+units, which converts to the
 emergent speed of light `c` via the lattice-spacing ratio
 `v_LR · a_s / a_τ → c < ∞` (parent (M3); see also
 `docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md` for the fixed-slope limit).
@@ -344,9 +416,10 @@ This proves the conditional velocity statement (F3). ∎
 
 The proof uses:
 
-- **A1, A2** (`MINIMAL_AXIOMS_2026-05-03.md`) — Cl(3) site algebra
-  on `Z^d`. Used for per-site operator-norm bound (`|m|`, `n̂_z`)
-  and lattice graph distance.
+- **Lattice / Quantum baseline** ([`MINIMAL_AXIOMS_2026-06-05`](MINIMAL_AXIOMS_2026-06-05.md))
+  with the parent RP transfer-block convention — the one-qubit local algebra
+  and lattice graph distance used for per-site operator-norm bounds (`|m|`,
+  `n̂_z`) and support radius.
 - **Parent RP note action carriers** (`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`,
   eqs. (1)–(2)) — explicit form of `M_KS`, `M_W`, `m·I`, plaquette
   action. Used for finite-range link-support of `h_z` and for the
@@ -355,8 +428,10 @@ The proof uses:
   Statements B2 & B4) — translation-invariant Hermitian Hamiltonian
   built from NN hopping bilinears is a valid framework Hamiltonian.
 - **Symmetric-canonical Wilson form** (`STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`,
-  Setup §) — `M_W = r_W · d · I`, providing the explicit Wilson
-  diagonal contribution to `J`.
+  Setup §) — `M_W = r_W · d · I`, providing the Wilson diagonal value
+  of the (F2) supplied-surface branch only. After the (F2b)
+  carrier-faithful bracket this citation is not load-bearing for the
+  finiteness of the budget or for the (14b) envelope ceiling.
 - **SU(3) link unitarity** — `‖U_μ‖_op = 1` always, since
   `U_μ ∈ SU(3)`. Pure group-theoretic fact; no input from physics.
 - **Hastings-Koma / Nachtergaele-Sims combinatorial estimate** —
@@ -382,7 +457,9 @@ exact non-perturbative finite-range/quasilocal control of
 C2. **Explicit conditional numerical v_LR.** On the canonical surface
 (`d = 4, r_W = 1, β = 6, N_c = 3, m_phys`), the action-density bound
 gives `v_LR ≤ 4·e·(|m_phys| + 78) ≈ 312·e ≈ 848.10` lattice units for
-`|m_phys| -> 0`, conditional on an exact-H locality bridge preserving
+`|m_phys| -> 0` on the supplied diagonal Wilson surface, and the
+reading-independent F2b envelope `v_LR ≤ 4·e·(|m_phys| + 80) ≈ 320·e ≈
+869.85`, conditional on an exact-H locality bridge preserving
 the leading `r_action <= 2` support radius.
 
 C3. **Compatibility with cluster-decomposition note.** The companion
@@ -393,7 +470,8 @@ not a load-bearing dependency of the present action-support result.
 
 C4. **Higher-order Trotter / BCH corrections.** The leading-order
 bounded action-support structure receives BCH corrections of order
-`a_τ · J_max ≈ a_τ · 78`. For sufficiently small `a_τ` (the canonical
+`a_τ · J_max ≈ a_τ · 78` (`a_τ · 80` on the F2b envelope). For
+sufficiently small `a_τ` (the canonical
 fine-temporal-lattice surface), these corrections are exponentially
 suppressed and preserve the lightcone structure. A separate fully
 non-perturbative bound on the BCH corrections is recorded as the
@@ -404,9 +482,13 @@ open frontier of this note.
 **Bounded support theorem on the symmetric-canonical action-density
 surface.** Statements (F1)–(F3) are derived from:
 
-- A1, A2 (algebraic core);
+- Lattice / Quantum baseline (algebraic core; legacy parent `A1`/`A2`
+  labels only);
 - the canonical action coefficients in parent RP note eqs. (1)–(2);
-- the `r_W · d · I` symmetric-canonical Wilson form (cited bridge);
+- the `r_W · d · I` symmetric-canonical Wilson form (cited bridge;
+  supplied-surface branch (F2)/(12) only — the (F2b) carrier branch
+  and the (14b) envelope bound the displayed standard Wilson term
+  without it);
 - SU(3) link unitarity;
 - the Hastings-Koma / Nachtergaele-Sims combinatorial Lieb-Robinson
   estimate (admitted-context as a pure-math theorem).
@@ -414,8 +496,13 @@ surface.** Statements (F1)–(F3) are derived from:
 The runner verifies (F1) on a toy nearest-neighbor action-density
 carrier; (F2) by constructing a local block with random SU(3) gauge
 backgrounds and comparing `‖h_z‖_op` against the conservative
-`J_max`; (F3/F4) by checking the standard LR bound on a finite-range
-toy Hamiltonian. It does not construct the exact RP logarithm.
+`J_max`; (F2b) by checking the unit pair norm
+`‖[[0, U], [U†, 0]]‖_op = 1` on random SU(3) links and the grouped
+spatial-Wilson block norm against the `d_s · (r_W + r_W/2)` budget on
+explicit one-particle matrices, then the exact branch arithmetic
+`78 ≤ 78.5 ≤ 80`; (F3/F4) by checking the standard LR bound on a
+finite-range toy Hamiltonian. It does not construct the exact RP
+logarithm.
 
 **What this rules out.**
 
@@ -435,7 +522,7 @@ toy Hamiltonian. It does not construct the exact RP logarithm.
 
 ## Citations
 
-- A_min: `MINIMAL_AXIOMS_2026-05-03.md`
+- minimal axioms: [`MINIMAL_AXIOMS_2026-06-05`](MINIMAL_AXIOMS_2026-06-05.md)
 - parent microcausality note (context only, not a load-bearing input):
   `AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`
 - parent RP note (action carriers):

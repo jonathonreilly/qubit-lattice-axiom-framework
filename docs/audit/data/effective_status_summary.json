@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1432,
-    "decoration": 54,
+    "bounded_theorem": 1431,
+    "decoration": 55,
     "meta": 323,
     "no_go": 327,
     "open_gate": 142,
@@ -49,6 +49,7 @@
     "decoration_under_cpt_exact_note": 4,
     "decoration_under_emergent_lorentz_invariance_note": 1,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
+    "decoration_under_free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": 1,
     "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": 1,
     "decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
@@ -75,7 +76,7 @@
     "retained_bounded": 788,
     "retained_no_go": 206,
     "retained_pending_chain": 13,
-    "unaudited": 1349
+    "unaudited": 1348
   },
   "retained_pending_chain_count": 13,
   "retained_pending_chain_examples": [

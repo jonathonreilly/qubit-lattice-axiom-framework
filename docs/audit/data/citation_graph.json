@@ -46614,10 +46614,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "post_record_selector_tangent_readout_weight_prototype_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "source_resolved_retarded_green_pocket_note"
     },
     {
       "from": "repo.repo_organization",
@@ -90160,16 +90160,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06",
         "rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06",
         "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
         "second_grown_family_note",
-        "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29"
+        "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
+        "source_resolved_retarded_green_pocket_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e116f1aa0a5b6c4be3e9e559e48b930c1be44ec8a87f7c5d6a811ca36a6c79ea",
+      "note_hash": "40c6d11abd3258717e6a367cf9186f3ea9312a8547decd83cc518c29fe4bb43b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

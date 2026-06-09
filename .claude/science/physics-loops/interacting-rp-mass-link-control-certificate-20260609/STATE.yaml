@@ -1,0 +1,23 @@
+loop_slug: interacting-rp-mass-link-control-certificate-20260609
+mode: campaign_block
+branch: physics-loop/interacting-rp-mass-link-control-certificate-20260609
+base: origin/main
+base_commit: e208d269f
+date: 2026-06-09
+target_claim_id: interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05
+target_status: bounded-support
+artifact_role: runner_artifact_repair
+active_route: add source-hash-pinned companion controls for m=0.01 mass scan and non-conjugating link reflection
+hard_residual: continuum/OS-reconstruction and compact-group Wilson-boundary positivity remain out of scope
+files_touched:
+  - docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md
+  - scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py
+  - logs/runner-cache/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.txt
+open_imports: []
+no_go_routes:
+  - non-conjugating link reflection breaks Hermiticity and PSD
+checks:
+  - python3 scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py: TOTAL PASS=4 FAIL=0
+  - python3 scripts/cached_runner_output.py scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py: status ok
+pr_status: review_loop_landing
+next_exact_action: independent audit recheck; do not edit docs/audit

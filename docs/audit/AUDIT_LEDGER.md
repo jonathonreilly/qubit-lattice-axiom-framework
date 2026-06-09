@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 808 |
+| **retained_bounded** | 809 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1247 |
+| `audited_clean` | 1248 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1631 |
+| `unaudited` | 1630 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 785 |
-| `leaf` | 1284 |
+| `medium` | 783 |
+| `leaf` | 1286 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -105,13 +105,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1385 | 100.44 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 765 | 61.08 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 853 | 58.24 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1282 | 52.83 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1281 | 52.82 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 490 | 47.94 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1017 | 44.49 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1198 | 42.73 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1005 | 40.47 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 265 | 39.55 | `unaudited` | unaudited |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1250 | 39.29 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1249 | 39.29 | `audited_clean` | **retained** |
 | 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 603 | 39.24 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 803 | 38.65 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 694 | 38.44 | `audited_clean` | **retained_no_go** |
@@ -1216,6 +1216,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `su3_cube_perron_solve_combined_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_fusion_engine_pr1_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -17688,6 +17689,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** P_candidate(6)=0.4291049969 and P_target(6)=0.5935306800, so the gap 0.1644256831 is more than five hundred times epsilon_witness and the uniform-pairing shortcut cannot close the bridge target.  _(class `A`)_
 - **chain closes:** True — Given the stated uniform-pairing ansatz and declared target, the runner builds the finite L_s=2 graph, verifies 12 plaquettes, 48 nodes, 48 identifications, 8 components, exponent -16, computes the rho profile and P_candidate=0.4291049969, and checks P_candidate+epsilon_witness < P_target. The source boundary explicitly prevents importing a stronger actual-trace or bridge-parent no-go.
 - **rationale:** The completed cached runner exits 0 with PASS=25 FAIL=0 and verifies the finite shortcut calculation plus the note boundary. The source confines the result to the uniform-pairing shortcut ansatz and expressly disclaims actual SU(3) Wigner/intertwiner trace closure, source-sector bridge-parent closure, gauge-scalar observable-bridge promotion, and any new axiom or audit verdict. No-go discipline passes only for this narrow route: N1 checks graph count, ansatz exponent, rho computation, Perron solve, and target-margin attacks; N2 finds no inflated independent wall set; N3 finds the ansatz and declared target explicit rather than hidden; N4 has no nonmatching residual witness citation; N5 rhetoric is route-scoped; N6 makes no new-axiom claim; N7's steelman that actual traces may differ is outside scope; N8 finds no global cross-cycle wall asserted. This would not be clean as a global no-go for actual SU(3) traces or for the bridge parent, but that broader claim is not made.
+- **auditor confidence:** high
+
+### `su3_cube_perron_solve_combined_theorem_note_2026-05-03`
+
+- **Note:** [`SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_CUBE_PERRON_SOLVE_COMBINED_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Explicit all-forward L_s=2 quotient encoder geometry, its 12-vertex plaquette-adjacency bipartition, and the trivial-sector rho=delta Reference B Perron recovery only; no Wilson orientation/count theorem, full rho, or P_cube bound audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-144831-b967a548d3-su3_cube_perron_solve_combin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the all-trivial plaquette assignment, all link integrations are trivial, so the sector gives Z_singlet = c_(0,0)(6)^12 and normalized rho = delta_(0,0), and plugging that rho into T_src(6) yields P_trivial(6) = 0.4225317396.  _(class `C`)_
+- **chain closes:** True — The finite encoder combinatorics independently reproduce 12 encoded plaquettes, 24 links with two incidences each, 24 adjacency edges, and a 6/6 bipartition. The trivial-sector rank-one Perron calculation independently gives c_(0,0)(6)^12 = 2.759834e6, eigenvalue 3.4414403550, and P = 0.4225317396.
+- **rationale:** The narrowed theorem is explicitly bounded to the quotient encoder and trivial sector, so the deferred Wigner-intertwiner traces and Wilson-orientation identification are not load-bearing. The runner source performs real finite enumeration and a real source-sector Perron computation; the loose 0.4225 constant is used only as a post-computation Reference B comparison. All cited authorities in the restricted packet are retained-grade, and no external comparator or fitted scale is used for the audited conclusion.
 - **auditor confidence:** high
 
 ### `su3_dabc_symmetric_theorem_note_2026-05-02`

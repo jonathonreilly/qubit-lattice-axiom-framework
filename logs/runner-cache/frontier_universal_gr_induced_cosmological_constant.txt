@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_induced_cosmological_constant.py
+runner_sha256: d984dced44da4a6c787d119ef0b265fcee4f6858f3c9a4cd147c6673fa5b4747
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+PASS T1 induced vacuum energy density eps_vac = -0.667, -0.866, -1.068 -- finite and O(1) in lattice units (lattice BZ regulates the UV)
+PASS T2 4D vacuum stress tadpole T_mu_nu^vac = rho_vac*delta_mu_nu: diag=[0.8744 0.8744 0.8744 0.8744] (iso-spread 3.8e-16), off-diagonal 6.5e-17 -- SO(4)-isotropic vacuum stress
+PASS T3 rho_vac = 0.8744 ~ O(1), nonzero -- no cancellation appears inside this computed induced-action term
+
+The checked W-native induced-action sector contains a nonzero SO(4)-isotropic
+vacuum stress tadpole rho_vac ~ O(1) in lattice units. Under ordinary metric
+coupling this has cosmological-constant form, but this runner does not decide
+record-ontology, sequestering, unimodular, counterterm, or full backreaction routes.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

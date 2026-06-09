@@ -1,0 +1,25 @@
+loop: alpha-i2-green-native-context-20260609
+goal: "Remove stale Maradudin accepted-premise wording from the alpha I2 sibling context."
+mode: science_block
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: "source-language cleanup for framework-native Green-kernel dependency"
+files_touched:
+  - docs/ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md
+open_imports:
+  - "The I2 bridge still admits the QFT dimensionless-coupling convention alpha := g_bare^2/(4 pi); this block does not try to derive it."
+closed_imports:
+  - "The non-load-bearing I2 context no longer describes the Green-kernel dependency as a sibling Maradudin accepted-premise import."
+audit_boundary:
+  - "No audit results or ledger files are edited."
+  - "No source-side promotion or ledger retag is claimed."
+verification:
+  - "python3 scripts/alpha_convention_i2_accepted_premise_runner.py -> TOTAL PASS=61 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/alpha_convention_i2_accepted_premise_runner.py -> status ok"
+  - "python3 -m py_compile scripts/alpha_convention_i2_accepted_premise_runner.py -> pass"
+  - "git diff --check -> clean"
+  - "git diff --name-only -- docs/audit -> empty"
+next_exact_action: "Open a review PR."
+stop_condition: "Review PR opened or PR creation failure recorded."

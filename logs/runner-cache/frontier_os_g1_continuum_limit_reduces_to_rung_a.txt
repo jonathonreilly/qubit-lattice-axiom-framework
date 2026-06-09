@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_os_g1_continuum_limit_reduces_to_rung_a.py
+runner_sha256: f05a1c9ab9405a439b3da601f3da35e2ccc34f1ceb715caf8c934b60001b2803
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+PASS: PFAFF_wick_hierarchy_pf2_eq_det every 2n-point = Pf(C); Pf(C)^2=det(C) for 2n in {2,4,6,8} (=E5)
+PASS: CONT_pfaffian_continuous |dPf| shrinks with |dC|: ['1.0e-02', '8.9e-04', '3.3e-06'] (polynomial -> continuous)
+PASS: REDUCE_npoint_converges_with_2point as C_a->C (rung A), |Pf(C_a)-Pf(C)| -> 0 monotonically: ['1.36e+00', '8.14e-01', '3.00e-01', '1.06e-01', '0.00e+00']
+PASS: REDUCE_fermionic_measure_is_correlator_hierarchy fermionic (Berezin) 'measure' = its correlator hierarchy; n-point convergence = measure convergence (no tightness needed)
+PASS: REDUCE_G1_reduces_to_rung_A G1 (measure convergence) <= rung A (2-point convergence) + E5 (Pfaffian hierarchy) + continuity
+PASS: NARROW_continuum_residual_at_retained_bounded rung A is retained_bounded -> G1 closes at retained_bounded; keystone continuum residual discharged
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: the OS reconstruction's open residual G1 (free-field lattice->continuum measure convergence) reduces to rung A (the 2-point SO(4) continuum convergence). For a fermionic (Grassmann/Berezin) theory the 'measure' IS its correlator hierarchy, and every n-point is the Pfaffian of the 2-point (E5) -- a continuous function -- so 2-point convergence (rung A) forces convergence of all correlators, i.e. of the theory. No probability-measure tightness is needed. With rung A now retained_bounded, the keystone's continuum-limit residual closes at the retained-bounded tier; the remaining OS residual is only G2 (the boost sector, resting on the textbook OS reconstruction theorem).
+
+----- stderr -----
+

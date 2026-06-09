@@ -63,10 +63,11 @@ emergent-Lorentz-forces-parity) **unanimously failed to force `θ_gauge = 0`**, 
 one recurring reason:
 
 > **The lattice orientation is a framework-native P-source for `F̃F`.** The Cl(3)
-> volume element `ω = σ₁σ₂σ₃ = i·I` (the i-identity gate's native pseudoscalar =
-> `sign(Vandermonde)` orientation `Z₂`) transforms by `det(R)` under all 48 O_h
-> actions — the **same** det-odd character as `F̃F`. So `F̃F` is **sourced** by the
-> native lattice orientation, not "unsourced."
+> volume element `ω = σ₁σ₂σ₃ = i·I` (the i-identity gate's `K`-odd spatial/qubit
+> pseudoscalar — a *distinct* object from the `K`-even generation `sign(Vandermonde)`;
+> see `CHIRAL_CONTENT_IS_THE_EPSILON_D_CHIRALITY_IMPORT...`) transforms by `det(R)`
+> under all 48 O_h actions — the **same** det-odd character as `F̃F`. So `F̃F` is
+> **sourced** by this native spatial/orientation pseudoscalar, not "unsourced."
 
 Therefore "color has no P-source, so its action is P-even" is the EFT-naturalness
 assumption *"respect substrate symmetry absent a source"* — **not derived** from
@@ -119,8 +120,9 @@ coupling, unifying `θ_gauge` with the i-gate orientation structure).
   source of `F̃F`, the RG-naturalness suppression, and the clock-rate scale are
   independent gates; none follows from another.
 - **N3 — hidden-wall scan.** The hidden wall is that the Cl(3) volume element
-  `ω = σ₁σ₂σ₃ = i·I` (= `sign(Vandermonde)`, the i-identity gate's native `Z₂`) carries
-  the O_h `det(R)` character (T7) — a framework-native P-source for `F̃F`. So the
+  `ω = σ₁σ₂σ₃ = i·I` (the `K`-odd spatial/qubit pseudoscalar — distinct from the
+  `K`-even generation Vandermonde) carries the O_h `det(R)` character (T7) — a
+  framework-native P-source for `F̃F`. So the
   measure-cancellation correction (T2) is not smuggled, and "color has no P-source" is
   explicitly refuted rather than assumed.
 - **N4 — residual matching.** The residual is matched exactly to the un-derived

@@ -194,7 +194,8 @@ def main() -> int:
     # ---- T7: the lattice ORIENTATION is a framework-native P-source for F-tilde-F (why color-parity is NOT forced) ----
     # The Cl(3) volume element omega = sigma1 sigma2 sigma3 = i*I (the i-gate's native pseudoscalar) transforms by
     # det(R) under the spatial O_h action sigma_i -> sum_j R_ij sigma_j: omega -> det(R) omega. So the framework
-    # HAS a native det(R)-odd orientation (= sign(Vandermonde), per the i-gate), which SOURCES the P-odd F-tilde-F.
+    # HAS a native det(R)-odd SPATIAL/qubit pseudoscalar (the K-odd omega; DISTINCT from the K-even generation
+    # Vandermonde -- see chiral_content_distinct_recurring_import), which SOURCES the P-odd F-tilde-F.
     # Hence "color has no P-source" is FALSE -- the orientation is one -- so color-sector parity is an EFT
     # assumption ("respect substrate symmetry absent a source"), NOT derived. theta_gauge is the un-derived
     # color coupling to this orientation Z2 (the same beta=6-class wall, now parity-framed).
@@ -210,7 +211,7 @@ def main() -> int:
         omega_R = sig_R[0] @ sig_R[1] @ sig_R[2]
         omega_det_odd = omega_det_odd and np.allclose(omega_R, np.linalg.det(R) * omega)
     check("T7 (why color-parity is NOT forced): the Cl(3) volume element omega=sigma1 sigma2 sigma3 = i*I (the "
-          "i-gate's native pseudoscalar = sign(Vandermonde) orientation) transforms as omega -> det(R) omega "
+          "K-odd spatial/qubit pseudoscalar; DISTINCT from the generation Vandermonde) transforms as omega -> det(R) omega "
           "under all 48 O_h actions -> the framework HAS a native det(R)-odd orientation that SOURCES the P-odd "
           "F-tilde-F. So 'color has no P-source' is FALSE; color-sector parity is an EFT assumption, not derived.",
           omega_is_native_pseudoscalar and omega_det_odd,

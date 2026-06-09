@@ -1,29 +1,34 @@
 #!/usr/bin/env python3
-"""Dirac/spinor chirality does not discharge Koide/generation chirality.
+"""Conditional tensor-product separation of two chirality gates.
 
 Bounds the recent keystone-collapse claim (the massive-Dirac-field "one
-keystone" reduction) to its sound scope: the retained Cl(3,1) supplies the
-Dirac/spinor chirality (needed for spin-statistics), but it is
-generation-blind and therefore does NOT supply the Koide Q=2/3 generation
-chirality (the retained `koide_anticommuting_operator_derivation`
+keystone" reduction) to its sound conditional algebraic scope. Given the finite
+carrier (generation R^3) x (L+R) with gamma_5 = I_3 x sigma_3 and beta =
+I_3 x sigma_1, gamma_5 is generation-blind and therefore does NOT supply the
+Koide Q=2/3 generation chirality (the `koide_anticommuting_operator_derivation`
 requirement). "Not blocked by the narrow no-go" != "supplied".
 
-Grounds in the retained facts (no new axiom/import, no PDG):
+Grounds in the algebraic inputs (no new axiom/import, no PDG):
   - koide_anticommuting_operator_derivation_theorem  (retained):
         Q=2/3  <=>  generation mass operator M_gen anticommutes with
         Gamma_chi = (2/3)J - I.
   - koide_z3_equivariant_anticommuting_no_go          (retained_bounded):
         a C3-equivariant (circulant) M_gen with {M_gen, Gamma_chi}=0 is M_gen=0.
-  - cl3_to_cl31_spinor_extension                      (retained):
-        supplies gamma_5 = I_3 (x) sigma_3 on (gen R^3) (x) (L+R spinor).
+
+This restricted runner does not derive gamma_5 from Cl(3,1) and does not prove
+spin-statistics use of that grading. Those are separate bridge claims.
 
 Exact / finite / memory-safe.
 """
+
+from pathlib import Path
 
 import numpy as np
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md"
 
 
 def check(name, ok):
@@ -97,16 +102,9 @@ check("the Dirac mass beta ALSO commutes with the generation grading",
 # => neither gamma_5 nor beta contributes anything to {M_gen, Gamma_chi}.
 
 print("== Koide/generation chirality is NOT supplied: it needs a C3-BREAKING M_gen ==")
-# retained no-go: circulant M_gen with {M_gen, Gamma_chi}=0  =>  M_gen = 0
-rng_ok = True
-for (a, b, c) in [(1, 2, 3), (0.5, -1, 2), (3, 3, -1), (-2, 1, 4)]:
-    M = a * I3 + b * R + c * (R @ R)       # a real circulant
-    if np.allclose(comm(M, R), 0) and np.allclose(acomm(M, Gamma_chi), 0):
-        rng_ok = rng_ok and np.allclose(M, 0)
-check("retained no-go: every circulant M_gen anticommuting Gamma_chi is M_gen=0",
-      rng_ok)
-# a NON-circulant M_gen CAN anticommute the (circulant) Gamma_chi: solve the
-# null space of  M -> {M, Gamma_chi}  over real SYMMETRIC 3x3 matrices.
+# Solve the finite symmetric-generation algebra directly. The intersection of
+# {M, Gamma_chi}=0 with [M, R]=0 is zero, while {M, Gamma_chi}=0 alone has
+# nonzero solutions.
 sym_basis = []
 for i in range(3):
     for j in range(i, 3):
@@ -114,6 +112,11 @@ for i in range(3):
         E[i, j] = E[j, i] = 1.0
         sym_basis.append(E)
 L = np.column_stack([(acomm(E, Gamma_chi)).reshape(-1) for E in sym_basis])  # 9 x 6
+L_comm = np.column_stack([(comm(E, R)).reshape(-1) for E in sym_basis])
+intersection_rank = np.linalg.matrix_rank(np.vstack([L, L_comm]))
+c3_equivariant_zero = intersection_rank == len(sym_basis)
+check("finite algebra: no nonzero symmetric M_gen both commutes with C3 and anticommutes Gamma_chi",
+      c3_equivariant_zero)
 _, sv, Vt = np.linalg.svd(L)
 null_dirs = Vt[np.isclose(np.r_[sv, [0] * (len(sym_basis) - len(sv))], 0)]
 M_break = sum(coef * E for coef, E in zip(null_dirs[0], sym_basis))
@@ -121,7 +124,7 @@ check("a C3-BREAKING M_gen exists that anticommutes Gamma_chi (null space nonemp
       null_dirs.shape[0] >= 1 and not np.allclose(M_break, 0)
       and np.allclose(acomm(M_break, Gamma_chi), 0))
 check("...and every such M_gen genuinely breaks C3: [M_break, R] != 0",
-      not np.allclose(comm(M_break, R), 0))
+      c3_equivariant_zero and not np.allclose(comm(M_break, R), 0))
 # the generation chirality lives on the generation R^3 and must break C3 there;
 # a C3-trivial (I_3) spinor grading like gamma_5 cannot produce it.
 
@@ -129,11 +132,22 @@ print("== Conclusion: independent chirality requirements ==")
 two_gates = (
     np.allclose(comm(gamma5, Gchi_x_I), 0)          # A is generation-blind
     and np.allclose(acomm(gamma5, beta), 0)          # A is a real Dirac chirality
-    and rng_ok                                       # B needs to break C3
+    and c3_equivariant_zero                          # B needs to break C3
     and not np.allclose(comm(M_break, R), 0)         # the only working M_gen breaks C3
 )
 check("Dirac/spinor chirality is independent of Koide/generation chirality",
       two_gates)
+
+print("== Scope guard: conditional tensor-product separation only ==")
+note_text = NOTE.read_text(encoding="utf-8")
+check("source note states conditional tensor-product separation only",
+      "conditional tensor-product separation only" in note_text)
+check("source note does not derive gamma_5 from Cl(3,1)",
+      "does **not** derive this `γ_5` from the `Cl(3,1)`" in note_text)
+check("source note does not prove spin-statistics use",
+      "does **not** prove the spin-statistics use" in note_text)
+check("source note does not claim retained Cl(3,1) supplies this theorem",
+      "Cl(3,1)` supplies" not in note_text and "Cl(3,1) supplies" not in note_text)
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
 raise SystemExit(0 if FAIL == 0 else 1)

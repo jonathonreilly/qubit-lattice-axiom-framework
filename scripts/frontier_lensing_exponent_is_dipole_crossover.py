@@ -1,29 +1,32 @@
-"""Class-A finite runner (memory-safe, H=0.6): RESOLVES the unexplained lensing
+"""Class-A finite runner (memory-safe, H=0.6): supports the mechanism behind the lensing
 deflection exponent ~ -1.43. The Kubo deflection observable alpha(b) = sum_e c_e/r_e(b)
 (retained_bounded lensing_deflection_note) is a SIGNED linear-response susceptibility
 whose MONOPOLE CANCELS (sum_e c_e = 0, a translation-invariance sum rule: a uniform field
-produces NO centroid deflection -- only gradients do). Hence the leading 1/b vanishes and
-the TRUE ASYMPTOTIC falloff is the dipole b^{-2}. The measured -1.43 is NOT an asymptotic
-exponent: it is a CROSSOVER slope, measured at impact parameters b in {3,4,5,6} that are
+produces NO centroid deflection -- only gradients do). Hence the leading 1/b term vanishes.
+At coarse H=0.6 the large-b signed falloff is dipole-like; the fine-H companion checks the
+H=0.25 edge kernel directly and leaves the exact asymptotic order open. The measured -1.43
+is NOT an asymptotic exponent: it is a CROSSOVER slope, measured at impact parameters b in
+{3,4,5,6} that are
 COMPARABLE to the near-source kernel support (~3.6), in the transition between the
-cancelled-monopole (-1) and dipole (-2) regimes. The slope drifts steeper with refinement
+cancelled-monopole (-1) and steeper signed-multipole regimes. The slope drifts steeper with refinement
 as the kernel sharpens; it is L-independent because the kernel is localized near the source.
 
 Memory note: the slope value is H-dependent (a crossover slope, not a converged exponent);
-the runner asserts the MECHANISM (monopole cancellation, b^{-2} asymptote, crossover at
-b~support), which is robust, at the memory-safe coarse H=0.6 (~10^4 sites). The flagship
+the runner asserts the MECHANISM (monopole cancellation, coarse-H large-b falloff, crossover at
+b~support), which is robust, at the memory-safe coarse H=0.6 (~10^4 sites). The H=0.25
+edge-kernel companion is the fine-H certificate. The flagship
 G(r)->1/(4pi r) (PR #3184) is the genuine 1/r structure; THIS observable is a distinct,
-dipole-suppressed susceptibility, not the geometric ray deflection.
+monopole-suppressed susceptibility, not the geometric ray deflection.
 
   T1  monopole cancels: |sum_e c_e| / sum_e |c_e| < 0.01 (translation-invariance sum rule).
   T2  uniform-field sum rule: a constant field (1/r_e -> 1) gives deflection = sum_e c_e,
       tiny vs a typical |alpha(b)| -> a uniform field does not deflect the centroid.
   T3  kernel localized near source: |c|-weighted <|mx - x_src|> ~ 3.6 << path span (~15);
-      so the asymptotic b-values {3,4,5,6} are COMPARABLE to the kernel support (crossover).
-  T4  crossover: |slope| at small b (b ~ support) < |slope| at large b; the large-b
-      asymptotic slope -> -2 (the dipole).
+      so the fitted b-values {3,4,5,6} are COMPARABLE to the kernel support (crossover).
+  T4  crossover: |slope| at small b (b ~ support) < |slope| at large b; at H=0.6
+      the large-b signed slope is near -2 (dipole-like).
   T5  CONTROL (decisive): the SAME geometry with a NON-cancelling kernel |c_e| (monopole
-      = sum|c| != 0) gives the asymptotic slope -> -1 (the 1/b of a non-cancelled monopole).
+      = sum|c| != 0) gives the large-b slope -> -1 (the 1/b of a non-cancelled monopole).
       So the steepening is CAUSED by the monopole cancellation, not the geometry.
 
 prints TOTAL: PASS=N FAIL=0
@@ -67,24 +70,24 @@ support = np.sum(np.abs(cs) * np.abs(mx - x_src)) / np.abs(cs).sum()
 path_span = mx.max() - mx.min()
 check("T3 kernel localized near source (support ~%.1f << path span ~%.1f)" % (support, path_span),
       support < 0.4 * path_span)
-check("T3b asymptotic-fit b-values {3..6} are ~ kernel support (crossover regime)",
+check("T3b fitted b-values {3..6} are ~ kernel support (crossover regime)",
       3.0 < support < 6.0)
 
-# --- T4: crossover small-b vs asymptotic -> -2 ---
+# --- T4: crossover small-b vs coarse-H large-b signed falloff ---
 sl_small = log_slope([3., 4., 5., 6.], [exact_edge_sum(edges, x_src, b) for b in [3., 4., 5., 6.]])[0]
 sl_asym = log_slope([30., 45., 60., 80.], [exact_edge_sum(edges, x_src, b) for b in [30., 45., 60., 80.]])[0]
-check("T4 crossover: |small-b slope| < |asymptotic slope| (%.2f vs %.2f)" % (sl_small, sl_asym),
+check("T4 crossover: |small-b slope| < |large-b slope| (%.2f vs %.2f)" % (sl_small, sl_asym),
       abs(sl_small) < abs(sl_asym))
-check("T4b asymptotic slope -> -2 (dipole) (got %.2f, within 0.15)" % sl_asym, abs(sl_asym + 2.0) < 0.15)
+check("T4b coarse-H large-b signed slope is near -2 (got %.2f, within 0.15)" % sl_asym, abs(sl_asym + 2.0) < 0.15)
 check("T4c small-b slope is steeper than -1 but shallower than -2 (crossover, got %.2f)" % sl_small,
       -2.0 < sl_small < -1.0)
 
-# --- T5: CONTROL -- non-cancelling kernel |c_e| gives asymptotic -> -1 (1/b) ---
+# --- T5: CONTROL -- non-cancelling kernel |c_e| gives large-b -> -1 (1/b) ---
 def alpha_abs(b):
     r = np.hypot(mx - x_src, mz - b)
     return np.sum(np.abs(cs) / r)
 sl_abs = log_slope([30., 45., 60., 80.], [alpha_abs(b) for b in [30., 45., 60., 80.]])[0]
-check("T5 CONTROL: non-cancelling kernel |c_e| gives asymptotic -> -1 (1/b) (got %.2f)" % sl_abs,
+check("T5 CONTROL: non-cancelling kernel |c_e| gives large-b -> -1 (1/b) (got %.2f)" % sl_abs,
       abs(sl_abs + 1.0) < 0.1)
 
 n_pass = sum(1 for _, ok in results if ok)

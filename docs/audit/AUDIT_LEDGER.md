@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 210 |
+| **retained** | 211 |
 | **retained_no_go** | 205 |
 | **retained_bounded** | 778 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1364 |
+| unaudited | 1363 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1213 |
+| `audited_clean` | 1214 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1679 |
+| `unaudited` | 1678 |
 
 | claim_type | count |
 |---|---:|
@@ -985,6 +985,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_finite_null_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_target_kernel_stability_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_measure_weight_normalization_subdivision_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_model_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selection_rule_target_vector_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -13989,6 +13990,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** supplied dial domain + supplied flow, score, or thermal rule + supplied stability predicate + exact finite/algebraic check => stable-setting support under that supplied rule  _(class `E`)_
 - **chain closes:** False — The packet closes only by stipulating the supplied stable-setting interface and checking ledger/slice bookkeeping. The missing theorem step is an independent derivation from the Record/framework baseline that the stable-setting support relation follows rather than being a definition.
 - **rationale:** The displayed quantitative inventory is internally consistent: 18+3+4+14+19=58, the helper totals 58+36=94 and 105+94+45+2=246, and the toy score, flow, and thermal examples check algebraically. But the load-bearing implication is the introduction of a certificate semantics: complete supplied evidence is labeled stable-setting support, while selected-dial status is separately blocked. The helper chain performs regex ledger bucketing and compares against hard-coded expected counts; it is cross-note/bookkeeping verification, not first-principles physics computation from the axiom baseline.
+- **auditor confidence:** high
+
+### `post_record_measure_weight_normalization_subdivision_2026-06-06`
+
+- **Note:** [`POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`](../../docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Read-only subdivision of the current 45 measure_weight_normalization rows into the five stated lanes, plus the finite algebraic normalization certificate for supplied weights; no prior, physical weight rule, selector, Born law, or dynamics is derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-122343-1c2a7200ed-post_record_measure_weight_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supplied finite carrier plus nonnegative weights with exact positive total define a normalized measure under that supplied weight rule, while normalization alone is not selector authority.  _(class `A`)_
+- **chain closes:** True — The finite normalization step closes by dividing each supplied nonnegative weight by the positive total, and the displayed lane counts sum to 45. The runner/helper source actually enumerates the ledger split and export consistency rather than merely printing the table, while the physical selector question is explicitly outside scope.
+- **rationale:** Within the narrowed scope, the load-bearing mathematics is an algebraic finite-normalization construction over supplied weights, not a hidden physical derivation. The row subdivision is supported by the included runner and helper code, which compute the bucket split from the ledger and compare it with the bounded export and expected current snapshot counts. No external comparator, tuned numerical input, or selector/measure derivation is used; the note correctly keeps normalized measure distinct from selected dial authority.
 - **auditor confidence:** high
 
 ### `post_record_model_selection_firewall_2026-06-06`

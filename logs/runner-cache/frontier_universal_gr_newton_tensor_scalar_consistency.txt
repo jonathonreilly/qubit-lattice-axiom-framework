@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_newton_tensor_scalar_consistency.py
+runner_sha256: ed35645e5cf5475a74f2608835a2794523704af16dd6e79711367a5200e2c17a
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+PASS T1 SCALAR route: G(0)=0.252731 (Watson 0.252731) and 4 pi r G(r) -> 1 (1.0041, 1.0010, 1.0002) -- the 1/(4 pi r) lattice Green function
+PASS T2 TENSOR route: induced graviton TT stiffness C_TT=+0.02208>0 (elliptic iD) -> G_tensor=1/(16 pi C_TT)=+0.9012>0 (lattice units)
+PASS T3 CONSISTENCY: graviton kinetic Pi_TT(k)-Pi_TT(0)>0 ~ C_TT*(2-2cos k) at small k (ratio +0.02208, +0.01887; O(a^2) correction 15%) -> massless graviton propagates via the SAME inverted lattice Laplacian -> (1/C_TT)*1/(4 pi r) as the scalar route; both register the same G
+
+The W-native induced gravity's scalar Poisson Newton constant (G(r)->1/(4 pi r), #3184) and tensor
+graviton Newton constant (C_TT=1/(16 pi G), #3264) are mutually consistent: both gravity sectors
+propagate via the SAME inverted A1 graph Laplacian (->1/(4 pi r)); the graviton TT self-energy is
+C_TT*(2-2cos k) at small k, so its propagator is (1/C_TT) times the scalar Green function. With
+the standard GR tensor factor the two routes register the SAME observed G -- the framework's
+tensor and scalar gravity are one consistent theory. Both magnitudes registered (G3).
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

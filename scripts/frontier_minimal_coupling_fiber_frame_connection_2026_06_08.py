@@ -8,10 +8,11 @@ Class-A finite-dimensional verification for the source note
 THESIS (kinematics only -- no gauge action / no dynamics claimed):
   Given (i) the framework's retained nearest-neighbour matter hopping bilinear,
   (ii) the retained per-site internal SU(3) (more precisely U(3)) fibre, and
-  (iii) the named premise that local fibre-frame choices are redundancies, the
-  hopping term implicitly chooses an identification of the fibre frame at site x
-  with the frame at the neighbour x+mu. Frame-independent hopping therefore
-  fixes a link variable U_mu(x) in the fibre structure group with the
+  (iii) the current-surface one-hop bridge that local fibre-frame choices are
+  passive trivialization changes for the registered weak/Record-sector data,
+  the hopping term implicitly chooses an identification of the fibre frame at
+  site x with the frame at the neighbour x+mu. Frame-independent hopping
+  therefore fixes a link variable U_mu(x) in the fibre structure group with the
   parallel-transporter law
         U_mu(x)  ->  g(x) U_mu(x) g(x+mu)^dagger,
   i.e. exactly a lattice gauge connection / minimal coupling
@@ -29,20 +30,21 @@ Retained foundations exercised:
     Hermitian, number-conserving NN hopping bilinear a_x^dag a_y + a_y^dag a_x.  (This
     runner works in the single-particle sector, where the hopping bilinear acts as the
     fibre-valued adjacency operator on sites (x) fibre.)
+  - fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09
+                                                  (current-surface bridge):
+    local U(3) fibre-frame changes are passive trivialization changes for the
+    registered weak/Record-sector data currently present in the cited
+    authorities, and U=I is the flat cross-site trivialization rather than a
+    physical fibre-basis pinning.
 
-NAMED BOUNDED PREMISE (the honest boundary -- see verdict at bottom):
-  LOCAL FIBRE-FRAME REDUNDANCY. A local re-choice of internal fibre frame g(x)
-          in U(3) is a redundancy of description (registers no observable), and
-          equivalently the framework supplies no canonical physical cross-site
-          fibre identification beyond the flat reference U=I. This is strongly
-          supported -- the SU(3) fibre is the commutant of the observable action
-          and one-qubit-per-site locality gives site-local fibres -- but whether
-          the retained translation bridge T_a a_x T_a^dag = a_{x+a} rigidly fixes
-          a physical frame is its own audit question. Under this premise the
-          connection law is forced; the algebraic gauge-covariance core
-          (Parts 1-5) is unconditional.
+BRIDGE BOUNDARY:
+  The local fibre-frame redundancy bridge is current-surface and kinematic.
+  It does not prove gauge action/dynamics, physical SU(3)_c identification, or
+  the absence of future colour readout contexts. Under this bridge the
+  connection law is forced; the algebraic gauge-covariance core (Parts 1-5) is
+  exact finite algebra.
 
-WHAT IS DERIVED HERE (unconditional algebra, subject to the bounded premise):
+WHAT IS DERIVED HERE (exact algebra using the current-surface bridge):
   - Free hopping (U=I) IS globally SU(3)-invariant but is NOT locally invariant.
   - Covariant hopping H_cov[U] satisfies the central identity
         G H_cov[U] G^dag = H_cov[U']   with   U'_mu(x) = g(x) U_mu(x) g(x+mu)^dag,
@@ -388,13 +390,13 @@ print("=" * 78)
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("=" * 78)
 print("SCOPE: This runner verifies the KINEMATICS of matter-gauge minimal coupling")
-print("  -- given local fibre-frame redundancy, the link connection U_mu(x) and")
-print("  its parallel-transporter gauge law are fixed by frame-independence of the")
-print("  nearest-neighbour hopping on the retained per-site U(3) fibre. The")
-print("  gauge-covariance core (Parts 1-5,7) is unconditional algebra; the physical")
-print("  gauge-redundancy reading rests on the named local fibre-frame redundancy")
-print("  premise. It does NOT derive any gauge ACTION or dynamics")
-print("  for U_mu (the Yang-Mills target), claims NO continuum limit, and defers the")
-print("  identification with physical SU(3)_c per the graph_first_su3 boundary.")
+print("  -- using the current-surface local fibre-frame redundancy bridge, the")
+print("  link connection U_mu(x) and its parallel-transporter gauge law are fixed")
+print("  by frame-independence of nearest-neighbour hopping on the retained")
+print("  per-site U(3) fibre. The gauge-covariance core (Parts 1-5,7) is exact")
+print("  finite algebra. It does NOT derive any gauge ACTION or dynamics for U_mu")
+print("  (the Yang-Mills target), claims NO continuum limit, proves NO future")
+print("  colour-readout exclusion theorem, and defers physical SU(3)_c per the")
+print("  graph_first_su3 boundary.")
 if FAIL:
     raise SystemExit(1)

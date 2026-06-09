@@ -46614,10 +46614,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gate_b_dynamics_note"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_pointer_record_degeneracy_d3_note_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -90160,16 +90160,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08",
         "gate_b_dynamics_note",
         "gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19",
         "gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19",
         "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17",
         "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
-        "koide_pointer_record_degeneracy_d3_note_2026-05-31"
+        "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+        "koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b006a5d079be9b28c234e0bc70238e4bcdef419317a287002ea035b5c66cd242",
+      "note_hash": "2e9891952c0817e79d73ed608e5cdeed2603000ce409d46285063fc222c51f8a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

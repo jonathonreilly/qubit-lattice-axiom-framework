@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 789 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1347 |
+| unaudited | 1346 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1227 |
-| `audited_conditional` | 23 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1662 |
+| `unaudited` | 1661 |
 
 | claim_type | count |
 |---|---:|
@@ -1371,6 +1371,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_complex_boundary_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6884,6 +6885,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel majority ratified the first audit tuple (audited_clean, bounded_theorem, class C). Vote breakdown: J1: first / audited_clean / bounded_theorem / class C; J2: first / audited_clean / bounded_theorem / class C; J3: first / audited_clean / bounded_theorem / class C; J4: first / audited_clean / bounded_theorem / class C; J5: first / audited_clean / bounded_theorem / class C. Majority rationale: J1: The source claim is explicitly scoped to a finite self-contained replay, not a Gate B dynamics theorem or universal F~M law. The cached runner output matches the note's jitter and architecture tables, and the load-bearing qualitative comparison is bounded to those tables, so no external physical bridge or unaudited dependency is needed at that scope. | J2: The note and cached runner support a narrow self-contained finite replay: the current code reproduces the frozen jitter and architecture tables, and the note explicitly limits the claim to the replay rather than Gate B closure or universal F~M constants. Within that bounded scope no unclosed dependency requires a conditional verdict. | J3: The source note is explicitly scoped to a finite deterministic replay, not a Gate B dynamics theorem or universal F~M claim. The cached runner output matches the frozen tables and supports the bounded connectivity-vs-position-noise comparison under the stated replay definitions, so no unresolved external bridge is load-bearing for this claim. | J4: The restricted packet supports only a bounded finite replay claim, and the cached runner output exactly matches the note's tables and scoped interpretation. The note explicitly confines the result to the fixed valley-linear replay and disclaims Gate B closure, universality, and a dynamics theorem, so no unclosed external physical bridge is load-bearing for this scoped claim. | J5: The restricted packet is a self-contained finite replay: the runner stdout matches the note tables, and the note confines the claim to a connectivity-vs-position-noise comparison while explicitly disclaiming Gate B closure, dynamics universality, and universal F~M constants. No unaudited dependency or unratified physical bridge is needed for that bounded claim.
 - **rationale:** Five-judge panel majority ratified the first audit tuple (audited_clean, bounded_theorem, class C). Vote breakdown: J1: first / audited_clean / bounded_theorem / class C; J2: first / audited_clean / bounded_theorem / class C; J3: first / audited_clean / bounded_theorem / class C; J4: first / audited_clean / bounded_theorem / class C; J5: first / audited_clean / bounded_theorem / class C. Majority rationale: J1: The source claim is explicitly scoped to a finite self-contained replay, not a Gate B dynamics theorem or universal F~M law. The cached runner output matches the note's jitter and architecture tables, and the load-bearing qualitative comparison is bounded to those tables, so no external physical bridge or unaudited dependency is needed at that scope. | J2: The note and cached runner support a narrow self-contained finite replay: the current code reproduces the frozen jitter and architecture tables, and the note explicitly limits the claim to the replay rather than Gate B closure or universal F~M constants. Within that bounded scope no unclosed dependency requires a conditional verdict. | J3: The source note is explicitly scoped to a finite deterministic replay, not a Gate B dynamics theorem or universal F~M claim. The cached runner output matches the frozen tables and supports the bounded connectivity-vs-position-noise comparison under the stated replay definitions, so no unresolved external bridge is load-bearing for this claim. | J4: The restricted packet supports only a bounded finite replay claim, and the cached runner output exactly matches the note's tables and scoped interpretation. The note explicitly confines the result to the fixed valley-linear replay and disclaims Gate B closure, universality, and a dynamics theorem, so no unclosed external physical bridge is load-bearing for this scoped claim. | J5: The restricted packet is a self-contained finite replay: the runner stdout matches the note tables, and the note confines the claim to a connectivity-vs-position-noise comparison while explicitly disclaiming Gate B closure, dynamics universality, and universal F~M constants. No unaudited dependency or unratified physical bridge is needed for that bounded claim.
 - **auditor confidence:** judicial_panel_majority
+
+### `gate_b_dynamics_note`
+
+- **Note:** [`GATE_B_DYNAMICS_NOTE.md`](../../docs/GATE_B_DYNAMICS_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Bounded audit of Gate B as a generated-geometry source index/open gate conditional on the supplied runner packet I_GateB, not as a physical-gravity dynamics theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-131323-959c4e9461-gate_b_dynamics_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The load-bearing claim is only conditional on I_GateB: the named frozen runners compute sign, local F~M, distance-law, and non-gravity companion readouts for the declared rows.  _(class `C`)_
+- **chain closes:** False — The runner-local numerical source index is supported, but the chain does not close as a Gate B dynamics theorem because GB-S1, GB-S2, and GB-S3 are admitted runner ingredients. The missing step is a retained primitive-to-source/action, primitive-to-readout, and primitive-to-generated-connectivity derivation.
+- **rationale:** Issue: the positive numerical rows are conditional on the supplied packet I_GateB rather than derived from retained primitives. Why this blocks: the primary runner genuinely computes the connectivity-tolerance table from those supplied rules, and the cited companions state retained-bounded finite results, but that only supports a bounded generated-geometry source index. Repair target: a separate retained theorem deriving GB-S1, GB-S2, and GB-S3 from approved primitives. Claim boundary until fixed: the row remains an open-gate conditional source-packet index, not a clean Gate B dynamics or physical-gravity theorem.
+- **auditor confidence:** high
 
 ### `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17`
 

@@ -9,6 +9,25 @@ This runner checks only finite algebraic facts:
 * the fixed-locus density arithmetic is the same;
 * the three-slot circulant mass multiset is invariant under slot relabeling.
 
+Rigidity addendum (the classification is exhaustive on this finite surface):
+
+* R-A: all 48 invertible affine-Boolean relabelings of the corner cube
+  (S3 semidirect Z2^3) classify exactly as 3 frame rotations,
+  3 orientation transpositions, 6 triplet swaps (complementation composed
+  with the former), or 36 grading-breaking maps that do not preserve the
+  hw in {1,2} surface at all;
+* R-B: by the Noether degree bound (|C3| = 3) the C3-invariant readout
+  ring is generated in degree <= 3; the degree-by-degree decomposition is
+  symmetric span + one orientation-odd line spanned by u - v, and
+  (u - v)(slots) = -6 sqrt(3) B^3 sin(3 delta) exactly - the
+  orientation-odd readout is the sin(3 delta) class stripped with the
+  orientation convention, while symmetric readouts see only cos(3 delta);
+  non-C3-invariant components are frame-dependent;
+* R-C: the listed per-triplet invariant profiles (cardinality, free-cycle
+  structure, pairwise Hamming distances) are equal elementwise. None of those
+  profiles supplies an unequal triplet weight; a relative triplet weight
+  would be a new dimensionless import, not a surface move.
+
 It does not read or write the Tier-A registry, apply audit status, retire an
 admission, or derive the physical species bridge.
 """
@@ -108,6 +127,148 @@ def main() -> int:
         sp.simplify(e1 - pe1) == 0
         and sp.simplify(e2 - pe2) == 0
         and sp.simplify(e3 - pe3) == 0,
+    )
+
+    section("Rigidity R-A: classification of all 48 affine-Boolean relabelings")
+    perms = list(itertools.permutations(range(3)))
+    cyclic = [(0, 1, 2), (1, 2, 0), (2, 0, 1)]
+    counts = {
+        "frame": 0,
+        "orientation": 0,
+        "swap": 0,
+        "swap_orientation": 0,
+        "nonexistent": 0,
+    }
+    for pi in perms:
+        for f in corners:
+            def g(x, pi=pi, f=f):
+                return tuple(x[pi[i]] ^ f[i] for i in range(3))
+
+            i1, i2 = sorted(g(c) for c in hw1), sorted(g(c) for c in hw2)
+            is_cyclic = pi in cyclic
+            if i1 == sorted(hw1) and i2 == sorted(hw2):
+                counts["frame" if is_cyclic else "orientation"] += 1
+            elif i1 == sorted(hw2) and i2 == sorted(hw1):
+                counts["swap" if is_cyclic else "swap_orientation"] += 1
+            else:
+                counts["nonexistent"] += 1
+    check(
+        "48 cube relabelings classify as 3+3+3+3 grading-preserving + 36 grading-breaking",
+        counts
+        == {
+            "frame": 3,
+            "orientation": 3,
+            "swap": 3,
+            "swap_orientation": 3,
+            "nonexistent": 36,
+        },
+        detail=str(counts),
+    )
+    check(
+        "every grading-preserving relabeling is frame, orientation, or complementation-composed",
+        counts["frame"] + counts["orientation"] + counts["swap"] + counts["swap_orientation"] == 12,
+        detail="the compensated classes exhaust the grading-preserving subgroup (order 12)",
+    )
+    x1, x2, x3 = sp.symbols("x1 x2 x3")
+    xs = [x1, x2, x3]
+    e_polys = [
+        x1 + x2 + x3,
+        x1 * x2 + x1 * x3 + x2 * x3,
+        x1 * x2 * x3,
+    ]
+    full_s3_invariant = all(
+        sp.expand(
+            p.subs({x1: xs[q[0]], x2: xs[q[1]], x3: xs[q[2]]}, simultaneous=True) - p
+        )
+        == 0
+        for p in e_polys
+        for q in perms
+    )
+    check(
+        "elementary symmetric readouts are invariant under the full S3 (orientation included)",
+        full_s3_invariant,
+    )
+
+    section("Rigidity R-B: readout decomposition is exhaustive (Noether degree bound)")
+    u = x1**2 * x2 + x2**2 * x3 + x3**2 * x1
+    v = x1 * x2**2 + x2 * x3**2 + x3 * x1**2
+    rot_sub = {x1: x2, x2: x3, x3: x1}
+    swp_sub = {x1: x2, x2: x1}
+    check(
+        "u and v are C3-invariant and exchanged by a transposition (orientation-odd pair)",
+        sp.expand(u.subs(rot_sub, simultaneous=True) - u) == 0
+        and sp.expand(v.subs(rot_sub, simultaneous=True) - v) == 0
+        and sp.expand(u.subs(swp_sub, simultaneous=True) - v) == 0,
+    )
+
+    def c3_invariant_dim(d):
+        monos = [m for m in itertools.product(range(d + 1), repeat=3) if sum(m) == d]
+        fixed = sum(1 for m in monos if (m[1], m[2], m[0]) == m)
+        return sp.Rational(len(monos) + 2 * fixed, 3)
+
+    def s3_invariant_dim(d):
+        monos = {
+            tuple(sorted(m, reverse=True))
+            for m in itertools.product(range(d + 1), repeat=3)
+            if sum(m) == d
+        }
+        return len(monos)
+
+    dims = [(d, c3_invariant_dim(d), s3_invariant_dim(d)) for d in (1, 2, 3)]
+    check(
+        "degree 1-3 C3-invariant dimensions are 1, 2, 4 vs symmetric 1, 2, 3 (one odd line, degree 3)",
+        [(d, int(c), s) for d, c, s in dims] == [(1, 1, 1), (2, 2, 2), (3, 4, 3)],
+        detail=f"dims (deg, C3, S3) = {[(d, int(c), s) for d, c, s in dims]}; "
+        "Noether bound |C3| = 3 => the invariant ring is generated in degree <= 3",
+    )
+    a2, B2, delta2 = sp.symbols("a2 B2 delta2", positive=True, real=True)
+    slots2 = [a2 + 2 * B2 * sp.cos(delta2 + 2 * sp.pi * k / 3) for k in range(3)]
+    uv_slots = sp.simplify(
+        sp.expand_trig(
+            sp.expand(
+                (u - v).subs(
+                    {x1: slots2[0], x2: slots2[1], x3: slots2[2]}, simultaneous=True
+                )
+            )
+        )
+    )
+    check(
+        "(u - v)(slots) = -6 sqrt(3) B^3 sin(3 delta) exactly (orientation-odd = sin class)",
+        sp.simplify(uv_slots + 6 * sp.sqrt(3) * B2**3 * sp.sin(3 * delta2)) == 0,
+        detail=f"(u - v)(slots) = {uv_slots}",
+    )
+    w = u - v
+    w_squared_s3 = all(
+        sp.expand(
+            (w**2).subs({x1: xs[q[0]], x2: xs[q[1]], x3: xs[q[2]]}, simultaneous=True)
+            - w**2
+        )
+        == 0
+        for q in perms
+    )
+    check("the square of the orientation-odd generator is S3-symmetric", w_squared_s3)
+
+    section("Rigidity R-C: per-triplet invariant profiles are equal elementwise")
+
+    def profile(triplet):
+        free = is_free_three_cycle(triplet)
+        pair_dists = sorted(
+            sum(p ^ q for p, q in zip(c1, c2))
+            for c1, c2 in itertools.combinations(triplet, 2)
+        )
+        return (len(triplet), free, pair_dists)
+
+    check(
+        "cardinality, free-cycle structure, and pairwise Hamming distances coincide",
+        profile(hw1) == profile(hw2),
+        detail=f"profile = {profile(hw1)} for both triplets",
+    )
+    check(
+        "the hw label is the only distinguishing datum in this check and is exchanged by complementation",
+        sorted(complement(c) for c in hw1) == sorted(hw2)
+        and profile(hw1) == profile(hw2),
+        detail="a relative triplet weight is not derivable from equal profiles; "
+        "it would be a new dimensionless import",
     )
 
     print("\n" + "=" * 88)

@@ -403,6 +403,22 @@ statement, which is the load-bearing content.
   function only. The `SU(3)`/`U(1)`-gauged staggered theory introduces
   link variables and loop corrections that require separate treatment
   (standard lattice-QFT renormalisation); none of that is claimed here.
+  - *2026-06-09 update — the marginal part of this interacting item is now
+    closed.* The **marginal** (dimension-4) velocity-anisotropy operator
+    `c_t p_t^2 + c_s (p_x^2+p_y^2+p_z^2)` (the Collins-relevant operator) is
+    forbidden on the OS0 kinetic-form surface supplied by the approved
+    [`kinetic_isotropy_primitive`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md),
+    as recorded in the 2026-06-08 B4 radiative-stability theorem note:
+    the gauged one-loop velocity self-energy gives `z_t = z_s`,
+    representation-blind, all-orders by the exact `B4` temporal↔spatial axis
+    relabel. This closes **only** the marginal sector; the broader interacting
+    items — full `n`-point / OS reconstruction (next bullet), taste-symmetry
+    restoration at finite `a`, and the `a → 0` continuum limit — remain open and
+    are **not** discharged by the primitive (those are continuum/taste bounds,
+    not the `c_t = c_s` kinetic-form bound). The B4 note is intentionally
+    referenced here as plain-text scope context, because that note already cites
+    this SO(4) row and the graph edge remains one-way to avoid a citation cycle.
+    Sets no audit status.
 - **n-point functions and OS reconstruction.** Only the 2-point
   function is treated. No Osterwalder-Schrader reconstruction, no
   continuum-existence (Wightman) claim, and no emergent-Lorentz claim

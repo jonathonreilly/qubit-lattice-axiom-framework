@@ -7,7 +7,7 @@
 or predict an audit outcome.
 **Primary runner:**
 [`scripts/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.py`](../scripts/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.py)
-(SCORECARD: PASS=8, FAIL=0; cached:
+(SCORECARD: PASS=16, FAIL=0; cached:
 [`logs/runner-cache/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.txt`](../logs/runner-cache/frontier_acphilambda_hw_complementation_equivariance_2026_06_09.txt))
 
 ## Boundary
@@ -33,6 +33,47 @@ circulant invariants. It does not prove that the physical matter sector is
 `hw=1`, that the choice is pure convention in the full dynamics, or that any
 registry class should change.
 
+## Rigidity addendum (2026-06-09): the classification is exhaustive on this finite surface
+
+The claim above says the complementation choice is not distinguished by *the
+tested* invariants. This addendum upgrades that to an enumeration: on the
+finite surface itself, every available rescue move is **compensated or
+nonexistent**.
+
+- **(R-A) Relabelings.** The invertible affine-Boolean transformations of the
+  corner cube form `S_3 x| (Z_2)^3` (order 48), and they classify exactly as:
+  3 frame rotations (`C_3`, already quotiented), 3 orientation transpositions
+  (the stripped orientation convention; elementary symmetric readouts are
+  invariant under the full `S_3`), 6 triplet swaps (complementation composed
+  with the former — the equivariance result above), and **36 grading-breaking
+  maps** that fail to preserve the `hw in {1,2}` surface at all. The
+  grading-preserving subgroup (order 12) is exhausted by the compensated
+  classes; the rest are not surface moves.
+- **(R-B) Readout deformations.** By the Noether degree bound (`|C_3| = 3`),
+  the `C_3`-invariant readout ring on the three slots is generated in degree
+  `<= 3`. Degree by degree the invariant dimensions are `1, 2, 4` against
+  symmetric `1, 2, 3`: the single non-symmetric line is the orientation-odd
+  element `u - v` (`u = x1^2 x2 + x2^2 x3 + x3^2 x1`,
+  `v = x1 x2^2 + x2 x3^2 + x3 x1^2`), and on the circulant slots
+  `(u - v)(slots) = -6 sqrt(3) B^3 sin(3 delta)` **exactly** — the
+  orientation-odd readout is precisely the `sin(3 delta)` class stripped with
+  the orientation convention, the odd counterpart of the `cos(3 delta)`
+  determinant identity above. Non-`C_3`-invariant components are
+  frame-dependent. So every polynomial readout is symmetric
+  (assignment-blind), orientation-odd (stripped convention), or
+  frame-dependent (not a registrable rescue).
+- **(R-C) Relative weighting.** The per-triplet invariant profiles
+  (cardinality, free-cycle structure, pairwise Hamming distances, fixed-locus
+  density) are equal elementwise, so no surface-derived functional can weight
+  the two triplets unequally; a relative triplet weight would be a new
+  dimensionless import, not a move available on the surface. The `hw` label
+  itself is the unique distinguishing datum, and it is exchanged by the
+  complementation bijection.
+
+The addendum remains finite-surface support only: full-dynamics
+complementation-equivariance is untouched, and none of the boundary
+statements below are weakened.
+
 ## Runner Checks
 
 - `hw=1` and `hw=2` are exchanged by complementation.
@@ -43,6 +84,17 @@ registry class should change.
 - The circulant determinant identity
   `e3 = a^3 - 3 a B^2 + 2 B^3 cos(3 delta)` is exact.
 - The elementary symmetric polynomials are invariant under slot permutation.
+- Rigidity R-A: the 48 affine-Boolean cube relabelings classify as
+  `3 + 3 + 3 + 3` grading-preserving (frame / orientation /
+  complementation-composed) plus `36` grading-breaking; symmetric readouts
+  are invariant under the full `S_3`.
+- Rigidity R-B: degree `1-3` `C_3`-invariant dimensions are `1, 2, 4` vs
+  symmetric `1, 2, 3` (Noether bound: generators in degree `<= 3`); the one
+  orientation-odd line satisfies
+  `(u - v)(slots) = -6 sqrt(3) B^3 sin(3 delta)` exactly.
+- Rigidity R-C: the per-triplet invariant profiles coincide elementwise; the
+  `hw` label is the only distinguishing surface datum and is exchanged by
+  complementation.
 - No registry, audit, or effective-status field is read or written.
 
 ## What This Does Not Claim

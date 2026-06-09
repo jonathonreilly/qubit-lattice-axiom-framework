@@ -25164,6 +25164,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_record_iid_typicality_firewall_2026_06_06.py"
     },
+    "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09": {
+      "assert_count": 3,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 58,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_record_instrument_composite_link_erasure_slaving_2026_06_09.py"
+    },
     "record_instrument_kernel_interface_2026-06-05": {
       "assert_count": 1,
       "counts": {
@@ -60516,6 +60528,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_record_instrument_composite_link_erasure_slaving_2026_06_09.py": {
+      "assert_count": 3,
+      "claims": [
+        "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 58,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_record_instrument_kernel_interface_2026_06_05.py": {
       "assert_count": 1,
       "claims": [
@@ -73835,12 +73862,12 @@
     "dominant_class_distribution": {
       "A": 381,
       "B": 445,
-      "C": 1020,
+      "C": 1021,
       "D": 375,
       "none": 456
     },
-    "runners_classified": 2677,
-    "runners_with_C": 1367,
-    "runners_with_D": 797
+    "runners_classified": 2678,
+    "runners_with_C": 1368,
+    "runners_with_D": 798
   }
 }

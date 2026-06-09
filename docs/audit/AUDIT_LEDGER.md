@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 210 |
+| **retained** | 209 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 801 |
+| **retained_bounded** | 798 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1383 |
+| unaudited | 1388 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 4 |
-| `audited_clean` | 1235 |
+| `audited_clean` | 1231 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1699 |
+| `unaudited` | 1704 |
 
 | claim_type | count |
 |---|---:|
@@ -74,23 +74,23 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `meta` | 324 |
 | `no_go` | 328 |
 | `open_gate` | 144 |
-| `positive_theorem` | 777 |
+| `positive_theorem` | 778 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 530 |
+| `critical` | 531 |
 | `high` | 452 |
-| `medium` | 788 |
-| `leaf` | 1315 |
+| `medium` | 789 |
+| `leaf` | 1314 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 18
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2677
-- runners with (C) first-principles compute hits: 1367
-- runners with (D) external comparator hits: 797
+- runners classified: 2678
+- runners with (C) first-principles compute hits: 1368
+- runners with (D) external comparator hits: 798
 - decoration candidates (no C, no D): 518
 
 ## Top 25 by load-bearing score (topology only)
@@ -99,31 +99,31 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1428 | 107.98 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 769 | 61.09 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1429 | 107.98 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 770 | 61.09 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 856 | 58.24 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1296 | 55.84 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1297 | 56.34 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 495 | 47.95 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1036 | 47.02 | `unaudited` | meta |
-| 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1207 | 43.24 | `audited_renaming` | ~~audited_renaming~~ |
+| 6 | `key_terminology` | meta | critical | 1037 | 47.02 | `unaudited` | meta |
+| 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1208 | 43.24 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1011 | 40.48 | `unaudited` | unaudited |
-| 9 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 609 | 39.75 | `audited_clean` | **retained** |
+| 9 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 610 | 39.76 | `audited_clean` | **retained** |
 | 10 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 267 | 39.57 | `unaudited` | unaudited |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1262 | 39.30 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1263 | 39.30 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 808 | 38.66 | `unaudited` | unaudited |
-| 13 | `yt_ew_color_projection_theorem` | no_go | critical | 699 | 38.45 | `audited_clean` | **retained_no_go** |
+| 13 | `yt_ew_color_projection_theorem` | no_go | critical | 700 | 38.45 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 854 | 38.24 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1065 | 36.06 | `audited_clean` | **retained_bounded** |
-| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 913 | 34.84 | `audited_clean` | **retained_bounded** |
-| 17 | `three_generation_structure_note` | bounded_theorem | critical | 871 | 34.77 | `audited_clean` | **retained_bounded** |
-| 18 | `cpt_exact_note` | positive_theorem | critical | 1154 | 34.67 | `audited_clean` | **retained** |
+| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 914 | 34.84 | `audited_clean` | **retained_bounded** |
+| 17 | `three_generation_structure_note` | bounded_theorem | critical | 872 | 34.77 | `audited_clean` | **retained_bounded** |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 1155 | 34.67 | `audited_clean` | **retained** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 278 | 34.62 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 702 | 32.96 | `unaudited` | unaudited |
-| 21 | `minimal_axioms_2026-04-11` | meta | critical | 1125 | 32.64 | `unaudited` | meta |
+| 21 | `minimal_axioms_2026-04-11` | meta | critical | 1126 | 32.64 | `unaudited` | meta |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 699 | 31.45 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 826 | 31.19 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 325 | 30.35 | `unaudited` | unaudited |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 148 | 30.22 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 149 | 30.23 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -753,7 +753,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_joint_projector_identity_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -819,7 +818,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -933,7 +931,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `persistent_object_top4_multistage_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_record_matched_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_record_overlap_kernel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_record_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -1046,7 +1043,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -10543,19 +10539,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The note's load-bearing work is normalization reconciliation, not a new empirical or tuned numerical claim. The runner source genuinely computes the symbolic M_2 inverse identity, random Stinespring CPTP checks for d=2 and d=4, named channel checks, and explicit normalized/unnormalized mismatch guards; it does not merely print constants or import a contested premise. The all-d statement is the standard finite-dimensional Kraus-Choi algebra with the unnormalized convention, and the packet's accepted axiom premise correctly supplies the qubit finite-region carrier.
 - **auditor confidence:** high
 
-### `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`
-
-- **Note:** [`KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Finite-region qubit-lattice CPTP maps on A_Lambda = tensor_{x in Lambda} M_2(C) admit standard Kraus operator-sum representations and equivalent positive Choi matrices under the stated unnormalized convention.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260606-112414-12a6c68a8b-kraus_choi_representation_on`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The qubit-lattice algebra A_Lambda = tensor_x M_2(C) is isomorphic to M_d(C) with d = 2^|Lambda|, so Kraus' and Choi's finite-dimensional matrix-algebra theorems apply directly.  _(class `A`)_
-- **chain closes:** True — The accepted Quantum axiom supplies one-site M_2(C), and finite tensor products give M_{2^|Lambda|}(C), matching the hypotheses of the admitted finite-dimensional Kraus and Choi theorems. The note explicitly excludes arbitrary infinite-volume channels and specific record-dynamics CPTP identification, so no broader bridge is needed for the audited scope.
-- **rationale:** The load-bearing step is an algebraic specialization of standard finite-dimensional matrix-algebra theorems to the finite qubit-lattice algebra supplied by the accepted axiom premise. The normalization, inverse Choi formula, Kraus TP condition, and finite-region dimension identities are internally consistent under the unnormalized convention. The runner performs real algebraic checks on an example channel and on the normalization factors, not a mere print-only pass or external comparator check.
-- **auditor confidence:** high
-
 ### `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02`
 
 - **Note:** [`KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md`](../../docs/KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md)
@@ -11523,19 +11506,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For any vector v, <v, PEPv> = <Pv, EPv> >= 0 and P - PEP = P(I - E)P >= 0, while finite-dimensional trace cyclicity gives Tr(rho PEP) = Tr(P rho P E).  _(class `A`)_
 - **chain closes:** True — The positivity/order claims follow from quadratic forms and I-E >= 0; the trace identity follows from finite trace cyclicity; and the nested identity follows from P=P^* and Q=Q^*. No Lüders update, Born rule, or trace-probability bridge is used.
 - **rationale:** The load-bearing content is standard finite-dimensional algebra over the stated projection, effect, and density-matrix hypotheses. The runner source performs symbolic and randomized matrix checks of these identities and includes a guard against confusing PEP compression with Jordan symmetrization; it does not hard-code an imported contested premise. The only cited upstream authority is flagged as an accepted axiom premise and is used only for finite matrix-carrier context, so the accepted-premise carve-out applies. The note's explicit boundary language prevents importing the missing Lüders/Born/probability bridge into this audited claim.
-- **auditor confidence:** high
-
-### `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`
-
-- **Note:** [`LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-region qubit-lattice projective measurements, conditional on the Lüders/canonical-frame instrument selection K_P = P, give M_{P,E}=P E P for any later effect E and the normalized postselected state P sigma P / Tr(P sigma P) when the denominator is nonzero.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260606-113056-ea23ffa7ef-luders_sequential_product_co`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given the LSP premise K_P = P, the joint effect reduces by direct algebra: K_P† E K_P = P† E P = P E P.  _(class `A`)_
-- **chain closes:** True — The conditional theorem closes from the explicit LSP premise plus standard projection identities P†=P and P^2=P. The state-update formula follows from the same Kraus sandwich update and normalization under the stated nonzero-probability condition.
-- **rationale:** The audited claim is the bounded conditional bridge, not an unconditional derivation of LSP or a uniqueness theorem for sequential products. The non-axiom cited authorities in the packet are retained-grade, with the LSP-projective authority retained_bounded, and the minimal-axiom memo is an accepted premise under the carve-out. The runner performs actual symbolic matrix checks and a twisted-Kraus comparison rather than printing constants; independently, the displayed bridge reduces to K_P=P, P†=P, matrix multiplication, and trace cyclicity. Some runner examples are Pauli observables rather than positive effects, but the class-A identity itself is stronger than the effect domain and does not rely on positivity.
 - **auditor confidence:** high
 
 ### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`
@@ -13120,19 +13090,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Because the record basis is orthonormal, W†W = sum_{r,s}(K_r†K_s)<r|s> = sum_r K_r†K_r, so the isometry condition gives the Kraus resolution.  _(class `A`)_
 - **chain closes:** True — The displayed identities close from the stated finite-dimensional isometry premise and orthonormal record basis. The note explicitly excludes deriving W from persistent-record dynamics, so that bridge is not needed for this bounded claim.
 - **rationale:** The load-bearing step is a direct algebraic expansion of an assumed finite isometry in an orthonormal record basis, not a definition substitution or external comparator check. The CP, trace-preservation, and selective-normalization formulas follow from the resulting Kraus resolution in finite dimensions. The runner source genuinely constructs a seeded finite isometry, extracts blocks, and checks the relevant matrix identities and positivity conditions; it does not import or hard-code the contested persistent-record bridge.
-- **auditor confidence:** high
-
-### `persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`
-
-- **Note:** [`PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Given a finite qubit-lattice Hilbert space and any finite Kraus family satisfying Σ_r K_r†K_r = 𝟙, the block-stacked map V is an isometry and preserves norms; physical selection of the persistent-record Kraus family is outside scope.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260606-121528-85e6740967-persistent_record_instrument`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For the block-column matrix V with row blocks K_r, V†V = Σ_r K_r†K_r = 𝟙_sys by direct block-matrix multiplication.  _(class `A`)_
-- **chain closes:** True — The cited Kraus-Choi authority is retained and supplies the finite Kraus-family resolution-of-identity input; the minimal axiom authority is an accepted framework premise for the finite qubit algebra. From those inputs, the V†V computation is ordinary finite-dimensional block-matrix algebra.
-- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs, not a definition, renaming, external comparator, or tuned numerical match. The runner source actually constructs block-stacked matrices, checks Σ_r K_r†K_r = 𝟙 and V†V = 𝟙 symbolically for multiple concrete families, and performs numerical norm checks; it is not merely printing expected PASS lines. The clean verdict is limited to the conditional finite-Kraus construction and does not audit any downstream identification of these record labels with the framework's physical persistent-record process.
 - **auditor confidence:** high
 
 ### `persistent_record_matched_compare_note`
@@ -14888,19 +14845,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The classifier defines separate gates: post-record information, stochastic production kernels, Born/IID probability-origin bridges, Markov generators, clock intervals, and physical rate/unit normalizations.  _(class `E`)_
 - **chain closes:** True — The restricted packet supports the classifier as a definition-level bookkeeping artifact: the code directly defines the premise bundles, levels, missing-premise lists, and blocked-claim lists, and the displayed kernel checks are elementary matrix facts. It does not close a first-principles dynamics derivation, but it does close the stated non-derivational classifier claim.
 - **rationale:** The runner source genuinely computes the displayed stochasticity, determinant, generator, and exp(Qt) checks for the two-state examples, including det(P_lazy)=1/2, det(P_swap)=-1, det(P_reset)=0, Q with off-diagonal log(2)/2, and exp(Q*1)=P_lazy. The actual load-bearing classifier levels and gates are introduced by the code and note as definitions of what premises license which claims. Because the chain is a premise taxonomy rather than a derivation from cited retained inputs or a first-principles framework computation, the appropriate class is E and the verdict is audited_renaming.
-- **auditor confidence:** high
-
-### `record_prerecord_instrument_kernel_gate_2026-06-06`
-
-- **Note:** [`RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the finite one-qubit algebra showing that a supplied Z or X projective instrument maps the displayed rho to probability vectors, and that realized post-record atoms/counts are typed separately from ensemble expectations.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260607-012416-94c3d1329a-record_prerecord_instrument_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** With a supplied projective readout context and cited canonical projective/Lueders authority, the trace pairings Tr(P_r rho) produce the Z and X probability kernels while realized records are one-hot atoms/count increments.  _(class `A`)_
-- **chain closes:** True — The numerical identities close by direct matrix algebra from the displayed rho and projectors plus the retained-bounded projective/Lueders authorities. The source correctly keeps the readout context supplied rather than derived from the Record axiom.
-- **rationale:** The load-bearing computation is an algebraic identity check over independent retained-bounded inputs and an accepted axiom premise. Independently checking the displayed formulas gives Tr(P0 rho)=2/3, Tr(P1 rho)=1/3, X probabilities 1/2 +/- sqrt(2)/3, one-hot realized atoms, and expected count (14/3, 7/3). The runner source performs actual symbolic matrix calculations and citation-string boundary checks rather than merely printing constants, though several boundary checks are necessarily textual or tautological. No open or non-retained dependency is imported beyond the explicitly supplied readout context, which is part of the audited bounded scope.
 - **auditor confidence:** high
 
 ### `record_production_interface_principle_2026-06-06`

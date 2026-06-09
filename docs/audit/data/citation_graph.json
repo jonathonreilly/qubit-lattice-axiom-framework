@@ -21630,6 +21630,10 @@
     },
     {
       "from": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "to": "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
       "to": "minimal_axioms"
     },
     {
@@ -28751,6 +28755,30 @@
     {
       "from": "record_history_order_time_rate_firewall_2026-06-05",
       "to": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+    },
+    {
+      "from": "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09",
+      "to": "induced_composite_link_trajectory_covariance_increment_law_non_autonomy_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09",
+      "to": "color_link_index_routing_via_cross_site_matter_bilinear_unitarization_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09",
+      "to": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
+    },
+    {
+      "from": "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09",
+      "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
+    },
+    {
+      "from": "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09",
+      "to": "color_su3_matter_realization_residual_map_2026-06-05"
+    },
+    {
+      "from": "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09",
+      "to": "graph_first_su3_integration_note"
     },
     {
       "from": "record_instrument_kernel_interface_2026-06-05",
@@ -76762,7 +76790,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3a68941a1f039d5f6f2da8bd3ed6be42fcb8df7e149a6a956a2dd1b6fe7e39ae",
+      "note_hash": "e5dd96b7bb37a70c353ad14880a36b6826759018946920c7c35a9de7bb08aa19",
       "path": "docs/KRAUS_CHOI_REPRESENTATION_DEPS_CHANGED_HYGIENE_COMPANION_NOTE_2026-06-04.md",
       "runner_path": "scripts/audit_companion_kraus_choi_representation_deps_changed_hygiene_2026_06_04.py",
       "title": "Kraus-Choi Representation Deps-Changed Hygiene Companion"
@@ -76787,10 +76815,11 @@
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
+        "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7ed738c0dadd4721194ec926c415ff968a855829595e17b143ac2ccd5a1e46d6",
+      "note_hash": "586eca5586f097f59542a05d6b4fcac07363ca7df42394fcc9c3f27bc2ea7794",
       "path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
       "runner_path": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
       "title": "Kraus\u2013Choi Representation on the Qubit-Lattice CPTP Map Algebra (Narrow)"
@@ -90749,6 +90778,25 @@
       "runner_path": "scripts/frontier_record_iid_typicality_firewall_2026_06_06.py",
       "title": "Record IID/Typicality Firewall"
     },
+    "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09": {
+      "claim_id": "record_instrument_composite_link_pointer_erasure_exact_slaving_bounded_theorem_note_2026-06-09",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "bounded theorem (instrument-conditional pointer/erased characterization + exact slaving structure for the matter-induced composite link under repeated record steps), containing an exact single-edge mode decomposition and an instrument-dependence exhibit",
+      "claim_type_seed_hint": null,
+      "deps": [
+        "induced_composite_link_trajectory_covariance_increment_law_non_autonomy_bounded_theorem_note_2026-06-08",
+        "color_link_index_routing_via_cross_site_matter_bilinear_unitarization_bounded_theorem_note_2026-06-08",
+        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
+        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
+        "color_su3_matter_realization_residual_map_2026-06-05",
+        "graph_first_su3_integration_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5bb5f15f1a5911ce6c9c0530518b7a1cbdea62e8ee7d36d3ac9ea62556b32a0e",
+      "path": "docs/RECORD_INSTRUMENT_COMPOSITE_LINK_POINTER_ERASURE_EXACT_SLAVING_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "runner_path": "scripts/frontier_record_instrument_composite_link_erasure_slaving_2026_06_09.py",
+      "title": "The Composite Link Under Two Named Record Instruments: Pointer/Erased Split, Exact Slaving, and the Instrument Footprint"
+    },
     "record_instrument_kernel_interface_2026-06-05": {
       "claim_id": "record_instrument_kernel_interface_2026-06-05",
       "claim_type_author_hint": null,
@@ -91205,7 +91253,7 @@
         "fifth_family_complex_boundary_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b9ada86db899d84853eb7d1de0240d02207c99f92909235fe4aa83afbd5cefb7",
+      "note_hash": "721a70973f1bfc99aa653563d66efd06820003e317f1468ec9b402cbccd0b4cf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"
@@ -105177,7 +105225,7 @@
       "decoration": 1,
       "meta": 278,
       "no_go": 161,
-      "none": 1511,
+      "none": 1512,
       "open_gate": 85,
       "positive_theorem": 195
     },
@@ -105186,14 +105234,14 @@
       "decoration": 1,
       "meta": 278,
       "no_go": 277,
-      "none": 478,
+      "none": 479,
       "open_gate": 159,
       "positive_theorem": 619
     },
-    "edge_count": 11905,
-    "leaf_count": 1066,
-    "node_count": 3222,
+    "edge_count": 11912,
+    "leaf_count": 1063,
+    "node_count": 3223,
     "root_count": 1039,
-    "runners_with_path": 2806
+    "runners_with_path": 2807
   }
 }

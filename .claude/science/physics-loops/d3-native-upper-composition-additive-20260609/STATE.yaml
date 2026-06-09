@@ -1,0 +1,35 @@
+loop: d3-native-upper-composition-additive-20260609
+mode: run
+base_commit: 51febdda8
+branch: physics-loop/d3-native-upper-composition-additive-20260609
+goal: "Add a review-loop-safe D3 native stable-orbit upper-bound composition wrapper without editing retained/audited source notes."
+target_status: exact-support
+actual_current_surface_status: exact-support
+status_authority: independent_audit_lane_only
+active_route: additive composition note over existing native stable-orbit support
+review_feedback_source: "PR #3430 closed: retained-row source hashes cannot be changed by normal review-loop landing."
+target_blocker_text: "Need a durable source artifact routing the finite-set D3 upper edge through native stable-circular-orbit support without editing retained-row source files."
+source_of_blocker_text: review_loop
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+claim_firewall:
+  bare_retained_allowed: false
+  audit_required_before_effective_retained: true
+  proposal_allowed: false
+files_touched:
+  - docs/D3_NATIVE_STABLE_ORBIT_UPPER_BOUND_COMPOSITION_NOTE_2026-06-09.md
+  - scripts/d3_native_stable_orbit_upper_bound_composition_2026_06_09.py
+  - logs/runner-cache/d3_native_stable_orbit_upper_bound_composition_2026_06_09.txt
+closed_or_reduced_imports:
+  - "For the current finite lower packet {3,4,5}, the decisive d <= 3 edge is routed through the existing native stable-circular-orbit support note."
+open_imports:
+  - "Full Bertrand closed-orbit theorem, if a later claim needs all bounded orbits to be closed."
+  - "Full atomic stability and physical electromagnetic sector."
+  - "Hydrogenic d = 3 spectrum, if Coulomb becomes the unique selector."
+  - "Full D3 substrate/foundation derivation."
+verification:
+  - "python3 scripts/d3_native_stable_orbit_upper_bound_composition_2026_06_09.py -> SUMMARY: PASS=50 FAIL=0"
+  - "python3 -m py_compile scripts/d3_native_stable_orbit_upper_bound_composition_2026_06_09.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/d3_native_stable_orbit_upper_bound_composition_2026_06_09.py"
+next_exact_action: "Open a ready review PR against main."
+stop_condition: "PR opened and verified."

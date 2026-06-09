@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 790 |
+| **retained_bounded** | 791 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1345 |
+| unaudited | 1344 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1228 |
+| `audited_clean` | 1229 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1660 |
+| `unaudited` | 1659 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 785 |
-| `leaf` | 1284 |
+| `medium` | 786 |
+| `leaf` | 1283 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -553,6 +553,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -7615,6 +7616,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner forms the unique pullback D_back = M^{-1} T_min M^{-1}; since M is invertible and D_back is not diagonal, the explicit T_min is not in the diagonal subfamily T = M D M.  _(class `C`)_
 - **chain closes:** True — The rank-one propagation identity follows algebraically from T_min = lambda vv^T with lambda^3 v_0 ||v||^4 = 1. Independently recomputing the finite matrices gives det(M)=1, ||offdiag(D_back)||_F=0.250338180104, and reconstruction error at numerical precision, so the diagonal-subfamily exclusion follows.
 - **rationale:** The source and helpers compute the finite objects from the displayed SU(3)/recurrence definitions rather than importing a contested premise or merely printing constants. The load-bearing membership exclusion is stronger than the optimizer residual: invertibility of M makes the pullback unique, and the independently recomputed pullback is plainly non-diagonal. The helper notes contain broader open Wilson-environment language, but the audited claim explicitly stays within the finite diagonal factorized-class packet and does not rely on closing that broader identification.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TAIL_UNDERDETERMINATION_THEOREM_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TAIL_UNDERDETERMINATION_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite truncated-box certificate that the specified retained first-sector projection and completed three-sample triple do not determine the higher-tail Perron/Jacobi data among the two explicit factorized-class extensions constructed by the runner.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-131921-83d1c97bd2-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner constructs a zero extension and a positive decaying-tail extension that agree on the retained first-sector packet and completed three-sample triple while inducing different Perron/Perron-Jacobi data for the same source operator J.  _(class `C`)_
+- **chain closes:** True — The equality side closes algebraically: the tail is zero on the retained support, and the three-sample check uses only the retained projection. The transfer and Perron/Jacobi side is computed from explicit finite matrices, with no import of the contested underdetermination conclusion.
+- **rationale:** The primary runner is not a print-only certificate: it constructs the two packets, forms the transfer matrices, computes eigenpairs, moments, and Jacobi coefficients, and asserts both equality on retained data and separation in Perron/Jacobi readouts. The load-bearing helper path computes retained packet, sampling, Wilson coefficient, recurrence, and eigen/Jacobi primitives rather than importing the contested conclusion; hard-coded expected values in helper main blocks are not on the parent runner's load-bearing path. The note's boundary is narrow and matches the executable evidence: it claims only finite underdetermination inside the two constructed extensions, not a full Wilson-environment or continuum theorem.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19`

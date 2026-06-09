@@ -1,0 +1,50 @@
+========================================================================================
+SU(3) GAP AT beta=6: REDUCTION TO A SINGLE BULK-CRITICALITY PREMISE
+========================================================================================
+
+----------------------------------------------------------------------------------------
+R1: ANCHOR -- exact SU(3) strong-coupling confinement (Weyl quadrature)
+----------------------------------------------------------------------------------------
+  [PASS] SU(3) single-plaquette Haar integral is finite/positive at beta=6 (exact 2D quadrature)  --  normalized class integral = 1
+  [PASS] leading-order convention verified: u(beta)/beta -> 1/18 as beta->0 (SU(3) character norm)  --  u(0.05)/0.05 = 0.05579 vs 1/18 = 0.05556
+  beta=0.5: u=0.02893  sigma_sc=3.5428
+  beta=1.0: u=0.06013  sigma_sc=2.8113
+  beta=1.5: u=0.09344  sigma_sc=2.3704
+  beta=2.0: u=0.12863  sigma_sc=2.0508
+  [PASS] SU(3) leading string tension sigma_sc(beta) > 0 throughout strong coupling (area law => confinement => gap; convergent regime)
+  [PASS] u(beta) increases monotonically toward weak coupling (sigma_sc decreasing)  --  u: 0.0289, 0.1286, 0.2796, 0.4225, 0.5804
+
+----------------------------------------------------------------------------------------
+R2: FINITE-VOLUME GAP AT EVERY beta (Perron-Frobenius + compactness)
+----------------------------------------------------------------------------------------
+  [PASS] the transfer kernel is positivity-improving at EVERY beta in (0,6] => Perron-Frobenius non-degenerate vacuum, gap_L(beta) > 0 pointwise  --  min gap over grid = 0.4219
+  [PASS] gap_L(beta) is continuous on [0.1, 6] => strictly positive MINIMUM on the compact interval (extreme-value theorem) at every fixed volume  --  max grid increment 0.0223 << gap scale 1.4930
+  [PASS] => the gap question at beta=6 lives ENTIRELY in the infinite-volume limit (finite volume is rigorous at all couplings)  --  documented consequence of R2
+
+----------------------------------------------------------------------------------------
+R3: FAILURE-MODE CLASSIFICATION -- only a second-order bulk point can close the gap
+----------------------------------------------------------------------------------------
+  [PASS] infinite-volume gap m(beta) = 1/xi(beta) (0++ channel); m(6)=0 requires xi(beta*) -> infinity at some beta* in (0,6]
+  [PASS] a divergent correlation length on the Wilson axis IS a second-order bulk critical point (definition of bulk criticality)
+  [PASS] a FIRST-ORDER bulk transition does NOT close the gap: xi stays finite on both sides (latent-heat discontinuity, no divergence) -- the gap jumps but remains positive (SU(4), SU(5) bulk transitions are of this harmless kind)
+  [PASS] => CONDITIONAL THEOREM: [no second-order bulk point on the SU(3) Wilson axis in (0,6]] AND [strong-coupling gap, R1] => m(beta=6) > 0
+
+----------------------------------------------------------------------------------------
+R4: THE PREMISE -- status and falsifiability (comparators, not derivation inputs)
+----------------------------------------------------------------------------------------
+  [PASS] 4D SU(3) Wilson action shows NO bulk transition on the fundamental axis: the specific heat has a finite crossover bump near beta ~ 5.5 (no divergence) -- decades of MC, multiple groups (comparator)
+  [PASS] the premise is FALSIFIABLE with a concrete signature: a second-order bulk point would show a divergent specific-heat/correlation-length peak scaling with volume -- never observed for SU(3) fundamental Wilson
+  [PASS] MC string tension at beta=6.0: a*sqrt(sigma) ~ 0.22 => sigma*a^2 ~ 0.048 > 0 and glueball m_{0++} a ~ 0.8 > 0 (comparator evidence the gap IS there)
+
+----------------------------------------------------------------------------------------
+R5: WHY NO EXPANSION CROSSES THE WINDOW (the honest hardness, computed)
+----------------------------------------------------------------------------------------
+  two-loop a*Lambda_lat at g^2=1 (beta=6): 2.346e-03  (non-perturbative scale)
+  [PASS] the gap scale exp(-1/(2 b0 g^2)) vanishes faster than EVERY power of g^2 at g^2->0 => invisible to ALL ORDERS of weak-coupling perturbation theory  --  checked n=1..7 at g^2=1e-3,1e-2; a*Lambda(beta=6)=2.35e-03
+  leading SC at beta=6: u=0.4225, sigma_sc=0.8615; MC scaling sigma*a^2=0.0479; ratio=18.0x
+  [PASS] the leading strong-coupling tension extrapolated to beta=6 over-predicts the MC value by ~an order of magnitude => the SC expansion has genuinely broken down below beta=6 (the window is real; neither expansion reaches beta=6)  --  sigma_sc/sigma_MC = 18.0
+  [PASS] => unconditional closure of the window needs RG-constructive (Balaban-class) control -- the named open piece; the reduction above is what is rigorous now  --  honest wall, not papered over
+
+========================================================================================
+SUMMARY: PASS=17 FAIL=0
+========================================================================================

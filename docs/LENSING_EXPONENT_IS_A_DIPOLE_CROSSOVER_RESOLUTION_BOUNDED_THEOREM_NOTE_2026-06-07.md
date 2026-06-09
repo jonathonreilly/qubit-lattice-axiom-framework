@@ -13,6 +13,10 @@ with cache
 [`logs/runner-cache/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.txt`](../logs/runner-cache/frontier_lensing_h025_edge_kernel_certificate_2026_06_08.txt)
 and structured output
 [`outputs/lensing_h025_edge_kernel_certificate_2026_06_08.json`](../outputs/lensing_h025_edge_kernel_certificate_2026_06_08.json).
+**Fine-H source-packet manifest:**
+[`scripts/frontier_lensing_h025_source_packet_manifest_2026_06_09.py`](../scripts/frontier_lensing_h025_source_packet_manifest_2026_06_09.py)
+with cache
+[`logs/runner-cache/frontier_lensing_h025_source_packet_manifest_2026_06_09.txt`](../logs/runner-cache/frontier_lensing_h025_source_packet_manifest_2026_06_09.txt).
 
 ## Summary
 
@@ -73,6 +77,9 @@ with `α(b)=Σ_e c_e/r_e(b)`:
 
 Primary coarse-H runner: `TOTAL: PASS=8 FAIL=0`.
 Fine-H edge-kernel companion: `TOTAL: PASS=12 FAIL=0`.
+Fine-H source-packet manifest: `TOTAL: PASS=5 FAIL=0`; it verifies the
+transitive local helper scripts, fresh cache/source SHA, source fine-H slope
+certificate, and structured JSON output for the H=0.25 edge-kernel companion.
 
 (The specific small-b slope is H-dependent — `−1.28 @ H=0.5`, `−1.57 @ H=0.6`,
 `−1.43 @ H=0.25` — precisely because it is a crossover slope, not a converged exponent.

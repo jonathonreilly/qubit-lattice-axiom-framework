@@ -1,0 +1,16 @@
+loop: gate-b-source-packet-boundary-20260609
+goal: "Repair the audited Gate B conditional row by making its supplied source/action/readout/connectivity packet explicit without claiming a clean dynamics theorem."
+target_status: bounded-support/open-gate source packet
+started_from: origin/main
+target_claim_id: gate_b_dynamics_note
+files_touched:
+  - docs/GATE_B_DYNAMICS_NOTE.md
+  - scripts/gate_b_connectivity_tolerance.py
+open_imports:
+  - "GB-S1 valley-linear source/action remains runner-supplied."
+  - "GB-S2 propagation/readout remains runner-supplied."
+  - "GB-S3 generated-connectivity rule remains runner-supplied."
+trace_gate: direct_blocker_closure
+audit_required_before_effective_retained: true
+next_exact_action: "Run the paired runner, refresh its cache if needed, and hand the PR to review/audit."
+stop_condition: "PR opened with source-packet manifest and verification."

@@ -1,11 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_connectivity_tolerance.py
-runner_sha256: 27a8e19ab73cdfb67da846b1ff58634211a3dc69b9ed94ba299b7844e26c6732
+runner_sha256: 6388f26592477b66667813a5acc7ba41fedd05de05b51b437dea9f43cef16edc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 10.71
+elapsed_sec: 3.36
 status: ok
 ----- stdout -----
+Source-packet manifest gate
+[PASS] note declares open_gate source-index claim type
+[PASS] row-local source-packet registration section is present
+[PASS] GB-S1 registers valley-linear source/action as supplied only
+[PASS] GB-S2 registers propagation/readout semantics as supplied only
+[PASS] GB-S3 registers generated-connectivity rule as supplied only
+[PASS] manifest preserves no-new-axiom and no-clean-theorem boundary
+[PASS] note blocks solved/physical-gravity overclaims
+
 ========================================================================================
 GATE B CONNECTIVITY TOLERANCE REPLAY
   Valley-linear gravity on layered 3D graphs
@@ -39,6 +48,8 @@ Interpretation:
   - Once connectivity is recomputed from geometry, the gain becomes mixed.
   - The local F~M fit stays in a non-catastrophic linear-response band.
   - This is a connectivity-vs-noise audit, not a Gate B theorem.
+
+SUMMARY: PASS=7 FAIL=0
 
 ----- stderr -----
 

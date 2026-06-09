@@ -23,8 +23,12 @@ import cmath
 import math
 import random
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Dict, Iterable, List, Sequence, Tuple
 
+
+ROOT = Path(__file__).resolve().parent.parent
+NOTE = ROOT / "docs" / "GATE_B_DYNAMICS_NOTE.md"
 
 BETA = 0.8
 K = 5.0
@@ -36,6 +40,23 @@ SEEDS = (5, 18, 31, 44, 57, 70)
 JITTER_SWEEP = (0.0, 0.1, 0.2, 0.3, 0.4, 0.5)
 MASS_STRENGTHS = (0.75, 1.0, 1.25)
 
+PASS = 0
+FAIL = 0
+
+
+def _check(label: str, ok: bool, detail: str = "") -> bool:
+    global PASS, FAIL
+    if ok:
+        PASS += 1
+        status = "PASS"
+    else:
+        FAIL += 1
+        status = "FAIL"
+    print(f"[{status}] {label}")
+    if detail:
+        print(f"        {detail}")
+    return ok
+
 
 @dataclass
 class GraphFamily:
@@ -43,6 +64,59 @@ class GraphFamily:
     positions: List[Tuple[float, float, float]]
     layers: List[List[int]]
     adj: Dict[int, List[int]]
+
+
+def _source_packet_manifest_gate() -> None:
+    print("Source-packet manifest gate")
+    if not NOTE.exists():
+        _check("Gate B source note exists", False, str(NOTE))
+        return
+
+    body = NOTE.read_text(encoding="utf-8")
+    flat = " ".join(body.split())
+    lower = flat.lower()
+
+    _check(
+        "note declares open_gate source-index claim type",
+        "**Claim type:** open_gate" in body
+        and "bounded generated-geometry source index" in lower,
+    )
+    _check(
+        "row-local source-packet registration section is present",
+        "2026-06-09 Row-Local Source-Packet Registration" in body
+        and "I_GateB" in body,
+    )
+    _check(
+        "GB-S1 registers valley-linear source/action as supplied only",
+        "GB-S1" in body
+        and "valley-linear source/action rule" in body
+        and "not derived from retained primitives" in lower,
+    )
+    _check(
+        "GB-S2 registers propagation/readout semantics as supplied only",
+        "GB-S2" in body
+        and "propagation/readout semantics" in body
+        and "not a retained physical-gravity readout bridge" in lower,
+    )
+    _check(
+        "GB-S3 registers generated-connectivity rule as supplied only",
+        "GB-S3" in body
+        and "generated-connectivity rule" in body
+        and "not yet derived from a local retained growth primitive" in lower,
+    )
+    _check(
+        "manifest preserves no-new-axiom and no-clean-theorem boundary",
+        "not a new axiom" in lower
+        and "not promote `i_gateb`" in lower
+        and "closed gate b dynamics theorem" in lower,
+    )
+    _check(
+        "note blocks solved/physical-gravity overclaims",
+        "gate b is solved" not in lower
+        and "physical gravity theorem" in lower
+        and "primitive-to-physical-gravity bridge" in lower,
+    )
+    print()
 
 
 def _grid_index(layer: int, iy: int, iz: int, half: int) -> int:
@@ -394,7 +468,9 @@ def _architecture_suite() -> List[Tuple[str, GraphFamily, dict]]:
     return rows
 
 
-def main() -> None:
+def main() -> int:
+    _source_packet_manifest_gate()
+
     base = _build_fixed_connectivity(N_LAYERS, HALF)
     print("=" * 88)
     print("GATE B CONNECTIVITY TOLERANCE REPLAY")
@@ -434,7 +510,10 @@ def main() -> None:
     print("  - Once connectivity is recomputed from geometry, the gain becomes mixed.")
     print("  - The local F~M fit stays in a non-catastrophic linear-response band.")
     print("  - This is a connectivity-vs-noise audit, not a Gate B theorem.")
+    print()
+    print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
+    return 0 if FAIL == 0 else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

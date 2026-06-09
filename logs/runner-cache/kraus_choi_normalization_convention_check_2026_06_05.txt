@@ -3,7 +3,7 @@ runner: scripts/kraus_choi_normalization_convention_check_2026_06_05.py
 runner_sha256: 6fd41f2ccc6ab1bf0195aa7518fb521d45fb338ec7e92d9317d807ce0060401b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ========================================================================================

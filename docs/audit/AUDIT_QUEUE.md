@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1387
-**Ready (all deps already at retained-grade or metadata tiers):** 35
+**Total pending:** 1392
+**Ready (all deps already at retained-grade or metadata tiers):** 36
 
 By criticality:
-- `critical`: 333
+- `critical`: 334
 - `high`: 254
-- `medium`: 372
-- `leaf`: 428
+- `medium`: 374
+- `leaf`: 430
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -18,8 +18,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 1 | `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | unaudited | critical | 1052 | 13.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/microcausality_finite_range_h_bridge_2026_05_09.py` |
 | 2 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | audit_in_progress | critical | 284 | 14.65 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_z3_asymptotic_normalization_certificate.py` |
 | 3 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | unaudited | critical | 276 | 9.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
-| 4 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | audit_in_progress | critical | 251 | 9.98 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py` |
-| 5 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 1060 | 20.55 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_kawamoto_smit_phase_forcing.py` |
+| 4 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | audit_in_progress | critical | 252 | 9.98 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py` |
+| 5 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 1061 | 20.55 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_kawamoto_smit_phase_forcing.py` |
 | 6 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | positive_theorem | unaudited | critical | 1048 | 21.04 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_microcausality_check.py` |
 | 7 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | positive_theorem | unaudited | critical | 1045 | 21.53 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_single_clock_codimension1_evolution_check.py` |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1011 | 40.48 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
@@ -39,8 +39,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 22 | `yt_qfp_insensitivity_support_note` | bounded_theorem | unaudited | critical | 721 | 17.50 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_qfp_insensitivity.py` |
 | 23 | `yt_eft_bridge_theorem` | open_gate | unaudited | critical | 710 | 10.47 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_eft_bridge.py` |
 | 24 | `yt_ew_coupling_bridge_note` | bounded_theorem | unaudited | critical | 709 | 11.47 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ew_coupling_derivation.py` |
-| 25 | `yt_interacting_bridge_locality_note` | bounded_theorem | unaudited | critical | 708 | 14.47 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_interacting_bridge_locality.py` |
-| 26 | `cl3_taste_generation_theorem` | bounded_theorem | unaudited | critical | 707 | 20.47 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/verify_cl3_sm_embedding.py` |
+| 25 | `cl3_taste_generation_theorem` | bounded_theorem | unaudited | critical | 708 | 20.47 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/verify_cl3_sm_embedding.py` |
+| 26 | `yt_interacting_bridge_locality_note` | bounded_theorem | unaudited | critical | 708 | 14.47 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_interacting_bridge_locality.py` |
 | 27 | `yt_bridge_operator_closure_note` | bounded_theorem | unaudited | critical | 707 | 10.97 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_bridge_operator_closure.py` |
 | 28 | `yt_constructive_uv_bridge_note` | bounded_theorem | unaudited | critical | 706 | 15.97 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_constructive_uv_bridge.py` |
 | 29 | `yt_bridge_rearrangement_principle_note` | bounded_theorem | unaudited | critical | 704 | 13.46 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_bridge_rearrangement_principle.py` |

@@ -11,15 +11,15 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3085 |
-| Applied audit verdicts | 1382 |
-| Retained-grade rows, including boxed decorations | 1266 |
-| Retained positive theorems | 210 |
+| Ledger rows | 3086 |
+| Applied audit verdicts | 1378 |
+| Retained-grade rows, including boxed decorations | 1262 |
+| Retained positive theorems | 209 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 801 |
+| Retained bounded rows | 798 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1383 |
+| Unaudited rows | 1388 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 20 |
 | Audited renaming rows | 35 |
@@ -33,13 +33,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1387 |
-| Ready rows | 35 |
+| Total pending rows | 1392 |
+| Ready rows | 36 |
 | Cycle-break targets | 18 |
-| Critical pending | 333 |
+| Critical pending | 334 |
 | High pending | 254 |
-| Medium pending | 372 |
-| Leaf pending | 428 |
+| Medium pending | 374 |
+| Leaf pending | 430 |
 
 Next ready rows by queue order:
 
@@ -47,10 +47,10 @@ Next ready rows by queue order:
 - [`lattice_greens_function_maradudin_textbook_import_note_2026-05-18`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) - critical; audit_in_progress
 - [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; unaudited
 - [`yt_ew_matching_rule_m_note_2026-05-02`](../../docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md) - critical; audit_in_progress
+- [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`plaquette_bootstrap_framework_integration_note_2026-05-03`](../../docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md) - medium; unaudited
 - [`free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
-- [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -79,19 +79,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3222 |
-| Critical nodes | 533 |
+| Citation-graph nodes | 3223 |
+| Critical nodes | 534 |
 | High nodes | 455 |
-| Medium nodes | 830 |
-| Leaf nodes | 1404 |
+| Medium nodes | 831 |
+| Leaf nodes | 1403 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1428 descendants; score 107.981
-- `three_generation_observable_theorem_note` - critical; 769 descendants; score 61.089
+- `minimal_axioms` - critical; 1429 descendants; score 107.982
+- `three_generation_observable_theorem_note` - critical; 770 descendants; score 61.091
 - `observable_principle_from_axiom_note` - critical; 856 descendants; score 58.243
-- `graph_first_su3_integration_note` - critical; 1296 descendants; score 55.841
+- `graph_first_su3_integration_note` - critical; 1297 descendants; score 56.342
 - `minimal_axioms_2026-05-03` - critical; 495 descendants; score 47.954
-- `key_terminology` - critical; 1036 descendants; score 47.018
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1207 descendants; score 43.238
+- `key_terminology` - critical; 1037 descendants; score 47.020
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1208 descendants; score 43.240
 - `anomaly_forces_time_theorem` - critical; 1011 descendants; score 40.483

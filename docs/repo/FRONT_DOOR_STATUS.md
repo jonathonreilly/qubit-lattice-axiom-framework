@@ -11,7 +11,7 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3049 |
+| Ledger rows | 3050 |
 | Applied audit verdicts | 1402 |
 | Retained-grade rows, including boxed decorations | 1276 |
 | Retained positive theorems | 211 |
@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 808 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 37 |
-| Unaudited rows | 1329 |
+| Unaudited rows | 1330 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 35 |
@@ -33,13 +33,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1331 |
-| Ready rows | 11 |
+| Total pending rows | 1332 |
+| Ready rows | 12 |
 | Cycle-break targets | 16 |
 | Critical pending | 328 |
 | High pending | 253 |
 | Medium pending | 366 |
-| Leaf pending | 384 |
+| Leaf pending | 385 |
 
 Next ready rows by queue order:
 
@@ -79,11 +79,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3186 |
+| Citation-graph nodes | 3187 |
 | Critical nodes | 529 |
 | High nodes | 454 |
 | Medium nodes | 832 |
-| Leaf nodes | 1371 |
+| Leaf nodes | 1372 |
 
 Top load-bearing rows by graph score:
 
@@ -92,6 +92,6 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
 - `graph_first_su3_integration_note` - critical; 1282 descendants; score 52.825
 - `minimal_axioms_2026-05-03` - critical; 490 descendants; score 47.940
-- `key_terminology` - critical; 1019 descendants; score 44.994
+- `key_terminology` - critical; 1020 descendants; score 45.496
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1198 descendants; score 42.728
 - `anomaly_forces_time_theorem` - critical; 1005 descendants; score 40.474

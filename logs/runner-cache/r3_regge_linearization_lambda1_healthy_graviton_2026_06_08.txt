@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/r3_regge_linearization_lambda1_healthy_graviton_2026_06_08.py
+runner_sha256: cd70b8d2d2deb0bd539c0d33db8254205e0112356a943a046aab4c0e1ca43264
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+R3 target operator: linearized Einstein tensor lambda-one algebra
+============================================================================
+[PASS] R3a gauge modes are zero modes of G_lin
+       max |G_lin(k xi + xi k)| over 500 samples = 3.55e-15
+[PASS] R3b supplied TT sample has nonzero two-derivative response
+       k.h=0.00e+00; trace=0.00e+00; max |G-(1/2 k^2 h)|=0.00e+00; k2=2.890
+[PASS] R3c conformal sample is distinct from the TT response
+       max |G_conf|=2.890e+00; TT-like=False
+[PASS] R3d source note keeps Regge/metric guardrails
+       missing=[]
+
+TOTAL: PASS=4 FAIL=0
+Boundary: target-operator algebra only; no Regge second variation,
+no emergent edge-length metric, and no physical graviton closure.
+
+----- stderr -----
+

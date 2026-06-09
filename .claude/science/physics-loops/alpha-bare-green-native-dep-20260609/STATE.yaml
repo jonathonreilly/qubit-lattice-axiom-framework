@@ -1,0 +1,13 @@
+loop_id: alpha-bare-green-native-dep-20260609
+status: packaged_for_review
+created: 2026-06-09
+target_claim_id: alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26
+source_note: docs/ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+runner: scripts/alpha_bare_four_pi_from_z3_plancherel_bridge_2026_05_26.py
+runner_cache: logs/runner-cache/alpha_bare_four_pi_from_z3_plancherel_bridge_2026_05_26.txt
+prior_blocker: "alpha-bare parent bridge consumed the Green coefficient through a Maradudin accepted-premise bridge instead of the framework-local Green theorem."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

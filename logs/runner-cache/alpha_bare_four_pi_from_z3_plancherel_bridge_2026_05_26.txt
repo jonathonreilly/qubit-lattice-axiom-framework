@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/alpha_bare_four_pi_from_z3_plancherel_bridge_2026_05_26.py
-runner_sha256: 97a8fb5fc7042403c2e135e5d4a1afcd0789b91a67a1f4b68cac8feed8966742
+runner_sha256: 834616477bb1a93de023fe50da9a3dc5eaff2b90e5f3675db00a4ebc55c64d42
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.92
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -12,7 +12,8 @@ Section 0: source-boundary firewall
   PASS [EXACT]  (S-required) source contains bounded theorem
   PASS [EXACT]  (S-required) source contains status authority
   PASS [EXACT]  (S-required) source contains bz dependency
-  PASS [EXACT]  (S-required) source contains maradudin dependency
+  PASS [EXACT]  (S-required) source contains framework-local green dependency
+  PASS [EXACT]  (S-required) source contains green certificate runner dependency
   PASS [EXACT]  (S-required) source contains i1 dependency
   PASS [EXACT]  (S-required) source contains i2 dependency
   PASS [EXACT]  (S-required) source contains i3 dependency
@@ -31,6 +32,8 @@ Section 0: source-boundary firewall
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: Koide A1
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
   PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md)
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: Maradudin accepted-premise bridge
+  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: accepted Maradudin asymptotic
 
 ==============================================================================
 Section A: BZ Haar constants
@@ -39,7 +42,7 @@ Section A: BZ Haar constants
   PASS [EXACT]  (BZ-Vol) vol([-pi,pi]^3) = (2 pi)^3 = 8 pi^3
 
 ==============================================================================
-Section B: Maradudin coefficient constants
+Section B: framework-local Green coefficient constants
 ==============================================================================
   PASS [EXACT]  (B1) int_{S^2} dOmega = 4 pi
   PASS [EXACT]  (B2) int_0^oo sin(k r)/k dk = pi/2 for r > 0
@@ -70,13 +73,13 @@ Section E: no-import / boundary audit
 ==============================================================================
 Summary
 ==============================================================================
-EXACT   : PASS = 33, FAIL = 0
+EXACT   : PASS = 36, FAIL = 0
 BOUNDED : PASS = 4, FAIL = 0
-TOTAL   : PASS = 37, FAIL = 0
+TOTAL   : PASS = 40, FAIL = 0
 
 VERDICT: bounded alpha-bare composition bridge passes.
   The alpha-bare (4 pi) denominator composes with the Z^3
-  Maradudin coefficient through the landed BZ, I1, I2, and I3 rows.
+  framework-local Green coefficient through the landed BZ, I1, I2, and I3 rows.
 
 ----- stderr -----
 

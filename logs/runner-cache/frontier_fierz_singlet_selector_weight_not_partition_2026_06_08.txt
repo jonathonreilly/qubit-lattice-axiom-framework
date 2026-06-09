@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_fierz_singlet_selector_weight_not_partition_2026_06_08.py
+runner_sha256: 0aec75665dcc654156a15671379a075d9f68fd2b0d9dfc482b611cadee2355c5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.12
+status: ok
+----- stdout -----
+==============================================================================
+Part 0  Setup: exact Fierz S+C split; count fraction F_adj = 8/9 (existing algebra)
+==============================================================================
+  [PASS] Fierz completeness: Tr[G G^dag] = S + C exactly (50 random G)  (max dev 7.1e-15)
+  [PASS] channel COUNT fraction (Nc^2-1)/Nc^2 = 8/9 (a dimension count)
+==============================================================================
+Part 1  Twirl-vs-partition: E_sing(M) = (TrM/Nc) I = Haar/depolarizing twirl
+==============================================================================
+  [PASS] E_sing is Ad-invariant: E(g M g^dag) = E(M) = g E(M) g^dag (exact)
+  [PASS] E_sing is idempotent and unital (a conditional expectation onto C·I)
+  [PASS] MC: the Haar twirl int U M U^dag dU converges to E_sing(M) (50k samples)  (max dev 0.0068 ~ 1/sqrt(N))
+==============================================================================
+Part 2  Twirl-vs-partition: E_sing is not a central-sector partition map
+==============================================================================
+  [PASS] a partition map preserves diagonal blocks (D(M)_00 = M_00); the twirl does NOT (E(M)_00 = TrM/3 != M_00 generically)  (M_00=-0.449-0.890j, TrM/3=0.035-0.208j)
+  [PASS] the nontrivial partition's D(M) != E_sing(M) (different maps)
+  [PASS] any nontrivial partition fails central-sector symmetry: its projectors do not commute with the irreducible SU(3) generator basis (Schur: only {0, I} are central)  (commutator dev 0.50)
+  [PASS] the only central-sector symmetry-respecting partition {I} gives D = identity != E_sing (trivial)
+   => the singlet/adjoint CHANNEL split is a CONTINUOUS twirl, not a register-not-
+      read partition map: the genuine central-sector license (D = sum P_k M P_k)
+      does not cover it. Invoking register-not-read here is the demoted loose
+      dichotomy.
+==============================================================================
+Part 3  Weight-leak: kappa_EW = within-channel weight; count 8/9 fixed, weight free
+==============================================================================
+  [PASS] R(kappa=0) = 8/9 and R(kappa=1) = 1: BOTH consistent with the fixed count fraction (the existing retained_no_go: the retained packet does not select kappa)
+  [PASS] formal isomorphism: R(kappa) == two_channel(8, 1, kappa) — the SAME fixed-count/free-weight shape as the Koide r-dial (dims (1,2), w free)
+  [PASS] the count data NEVER moves with the weight: d-fraction 8/9 is w-independent (partition delivers counts; weights are within-sector data)
+   => 'declare the singlet unregistered => kappa_EW = 0' assigns a WEIGHT by fiat —
+      structurally the move that would force the known-free Koide r (the scope-
+      correction's directionless tell).  Weight-leak: route demoted.
+==============================================================================
+Part 4  Category-separation: same-site current trace, not the gauge link
+==============================================================================
+  [PASS] the current's color trace is invariant under a LOCAL rotation at its site (same-site object; observable-content/matching-rule category)
+  [PASS] a gauge-link kernel co-transforms (g_x U g_y^dag != U): a DIFFERENT category — selecting kappa_EW says nothing about ADM-1's link/frame question  (dev 1.22)
+==============================================================================
+TOTAL: PASS=14 FAIL=0
+==============================================================================
+SCOPE (narrow route-demote): the kappa_EW = 0 route VIA register-not-read on the
+  color trace is demoted on three finite-algebra route grounds: the singlet
+  projector is a CONTINUOUS twirl (not a central-sector partition map; the
+  only such partition on the irreducible triplet is trivial), kappa_EW is a
+  WITHIN-CHANNEL WEIGHT (weight-leak, the r-dial move), and the channel
+  lives on the same-site current trace, not the gauge
+  link (category).  The kappa_EW gate itself REMAINS OPEN (other routes are not
+  foreclosed); the exact Fierz algebra is untouched; ADM-1 is untouched; this note
+  sits beside (does not duplicate) the existing retained_no_go family and the rconn
+  open-gate note.  No new axiom/import; no PDG value consumed.
+
+----- stderr -----
+

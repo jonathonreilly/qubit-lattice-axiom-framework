@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 797 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1331 |
+| unaudited | 1330 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1236 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1646 |
+| `unaudited` | 1645 |
 
 | claim_type | count |
 |---|---:|
@@ -1395,6 +1395,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `teleportation_native_transport_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15425,6 +15426,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** No Lattice+Quantum+RP datum tested rejects the HCB ring; RP/T-positivity certifies both HCB and CAR in every parity sector, so selecting CAR requires positing the graded tensor product / FS boundary condition.  _(class `C`)_
 - **chain closes:** True — The HCB ring is an explicit non-CAR countermodel satisfying the audited constraints, while the CAR ring also satisfies them. Therefore the tested positivity/monodromy/local-observable data are nonselective; the graded loop boundary condition remains an extra FS premise.
 - **rationale:** The runner source substantively constructs the finite one-qubit tensor operators, HCB and JW-CAR ring Hamiltonians, parity projectors, transfer matrices, spectra, locality tests, and flux samples; it is not just printing expected constants. The load-bearing result is a first-principles finite-matrix counterexample from the accepted Lattice+Quantum premise plus retained parity/spectral inputs, with no PDG, tuned scale, or external comparator. This is clean only for the packet's scoped finite transfer-matrix T-positivity / monodromy-local-observable selector, not for a broader spin-statistics or full OS reflection-positivity theorem.
+- **auditor confidence:** high
+
+### `rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded bosonic gauge-half Wilson temporal-gauge plane-kernel RP on the certified finite surfaces: exact Z_N and U(1) coefficient positivity, asserted SU(2) Peter-Weyl coefficient positivity, and non-authoritative SU(3) selected-representation corroboration.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-135922-08d5cc582f-rp_gauge_half_wilson_tempora`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note asserts that the Wilson plane weight expands as exp((beta/N) Re Tr V) = sum_a c_a(beta) chi_a(U_+) conj(chi_a(U_-)) / d_a with c_a >= 0, so the reflected Gram factorizes as G = W diag(c) W^dagger and is PSD.  _(class `A`)_
+- **chain closes:** False — The abelian Z_N/U(1) coefficient checks close, but the displayed nonabelian W2 pointwise expansion in products of class characters is not the Peter-Weyl kernel expansion. For SU(2), the needed expansion is in irrep matrix coefficients, or else requires an additional class-function projection/averaging step that is not supplied.
+- **rationale:** The runner genuinely checks the sign repair, abelian Fourier/Bessel positivity, SU(2) coefficient positivity, and wrong-sign controls, but it does not test the nonabelian pointwise reconstruction formula used in W2. An independent SU(2) first-order check contradicts the character-product formula: for g=h=i sigma_x, the beta-linear coefficient of exp((beta/2) Re Tr(g h^dagger)) is 1, while the character-product RHS gives 0. No cited dependency is non-retained-grade; the blocker is an internal nonabelian basis/normalization gap in the claimed W2/W3 bridge.
 - **auditor confidence:** high
 
 ### `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29`

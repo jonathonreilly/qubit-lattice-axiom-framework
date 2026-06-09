@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""RP gauge-half bridge: Wilson plaquette temporal-gauge three-factor form.
+"""RP gauge-half bridge: abelian Wilson plaquette temporal-gauge factor.
 
 Source note:
   docs/RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
@@ -7,8 +7,8 @@ Source note:
 Instantiates the retained abstract gauge-half norm-square identity
 (reflection_positivity_gauge_half_cauchy_schwarz, G1-G3:
  <Theta(F).F> = ||psi^2 F||^2 >= 0) on the Wilson plaquette in temporal
-gauge, certifying the reflected OS-Gram reduction on the finite surfaces
-whose plane coefficients are checked or otherwise supplied as nonnegative.
+gauge, certifying the reflected OS-Gram reduction on the abelian finite
+surfaces whose plane coefficients are checked as nonnegative.
 
 Setup (minimal): two time slices t in {0,1}, periodic spatial direction,
 temporal gauge U_0 = 1. Time reflection theta: t -> 1-t exchanges the
@@ -18,17 +18,20 @@ plane coupling  V_k = U_k(0) U_k(1)^dag,  with reflection-plane weight
 exp(-S_0), S_0 = -(beta/N) Re Tr V  (STANDARD ferromagnetic Wilson sign).
 
 Mechanism (Osterwalder-Seiler, reconstructed in-repo; OS 1978 /
-Montvay-Munster 1994 are COMPARATORS only): the plane weight expands in
-class characters,
+Montvay-Munster 1994 are COMPARATORS only): on the abelian surfaces the
+plane weight expands in one-dimensional characters,
    exp((beta/N) Re Tr V) = sum_a c_a(beta) chi_a(U_+) conj(chi_a(U_-)) / d_a,
 and the reflected OS-Gram of positive-half observables factorizes as
    G = W diag(c) W^dag,   c_a = character coefficient of the plane weight.
-So G is PSD on any finite surface whose needed coefficients satisfy
-c_a >= 0. This holds for the STANDARD sign on the exact Z_N/U(1)/SU(2)
-checks below; the SU(3) trivial/fundamental/adjoint checks are
-corroborative, not an all-irrep theorem. The wrong sign fails the
-control below, which is exactly the sign bug that sank the 2026-06-05
-failed-attempt note.
+So G is PSD on the certified finite abelian surfaces where c_a >= 0.
+
+The nonabelian SU(2)/SU(3) coefficient probes below are diagnostics only.
+They are deliberately non-load-bearing because nonabelian reconstruction
+requires matrix coefficients (or an explicitly projected class-function
+kernel), not the old product-of-characters substitution. Section D exposes
+the SU(2) first-order mismatch so the source note cannot silently re-promote
+that broader claim. The wrong sign fails the control below, which is exactly
+the sign bug that sank the 2026-06-05 failed-attempt note.
 
 CRITICAL (vs the failed attempt): plane weight is exp(+ (beta/N) Re Tr)
 = exp(-S_0); the U(1) coefficients are I_n(beta) verified >= 0 from the
@@ -127,21 +130,37 @@ def u1_exact():
           min(cs) > -1e-15, f"min_eig=min c_n={min(cs):.4f}")
 
 
-# ---------------------------------------------------------------- D: SU(2) exact (Peter-Weyl closed form)
-def su2_exact():
-    section("D. SU(2): reflected Gram PSD by Peter-Weyl, c_j = 2(j+1) I_{j+1}(beta)/beta > 0")
+# ---------------------------------------------------------------- D: nonabelian boundary diagnostics
+def nonabelian_boundary_diagnostics():
+    section("D. Nonabelian boundary: coefficient positivity is diagnostic, not a retained reconstruction")
     for beta in (0.5, 1.5, 4.0):
         cs = []
         for j in range(6):  # j+1 = dimension index
             np1 = j + 1
             c = 2 * np1 * sum(i_n_series_nonneg(np1, beta)) / beta
             cs.append(c)
-        check(f"SU(2) beta={beta}: c_j = 2(j+1)I_(j+1)(beta)/beta > 0, j=0..5",
+        check(f"SU(2) beta={beta}: class-coefficient diagnostic c_j > 0, j=0..5",
               all(c > 0 for c in cs), f"min c_j={min(cs):.4e}")
-    beta = 1.5
-    cs = [2 * (j + 1) * sum(i_n_series_nonneg(j + 1, beta)) / beta for j in range(6)]
-    check("SU(2) reflected OS-Gram (diag c_j, Peter-Weyl orthogonality) PSD",
-          min(cs) > -1e-15, f"min_eig=min c_j={min(cs):.4e}")
+
+    # Auditor-exposed mismatch for the old product-of-characters replacement.
+    # Let g=h=i sigma_x. Then g h^dag = I, so the beta-linear coefficient
+    # of exp((beta/2) Re Tr(g h^dag)) is 1. The old character-product
+    # substitution gives zero at first order because chi_fund(g)=chi_fund(h)=0.
+    sigma_x = np.array([[0, 1], [1, 0]], dtype=complex)
+    g = 1j * sigma_x
+    h = 1j * sigma_x
+    true_linear = 0.5 * np.trace(g @ h.conj().T).real
+    old_product_linear = 0.5 * np.trace(g).real * np.trace(h).real / 2.0
+    check(
+        "SU(2) old product-character reconstruction is not exact (linear mismatch exposed)",
+        abs(true_linear - 1.0) < 1e-12 and abs(old_product_linear) < 1e-12,
+        f"true_linear={true_linear:.1f}, old_product_linear={old_product_linear:.1f}",
+    )
+    check(
+        "SU(2)/SU(3) diagnostics are non-load-bearing for W2/W3 in this runner",
+        True,
+        "nonabelian closure requires matrix coefficients or a projected class-kernel theorem",
+    )
 
 
 # ---------------------------------------------------------------- E: SU(3) corroboration (Weyl quadrature)
@@ -197,18 +216,19 @@ def main():
     reflection_split()
     zn_exact()
     u1_exact()
-    su2_exact()
+    nonabelian_boundary_diagnostics()
     su3_corroboration()
     wrong_sign_control()
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:
-        print("VERDICT: RP gauge-half Wilson temporal-gauge bridge checks FAILED.")
+        print("VERDICT: RP gauge-half abelian Wilson temporal-gauge bridge checks FAILED.")
         return 1
-    print("VERDICT: RP gauge-half Wilson temporal-gauge bridge checks pass.")
+    print("VERDICT: RP gauge-half ABELIAN Wilson temporal-gauge bridge checks pass.")
     print("  Standard Wilson sign -> plane weight exp(+(beta/N)Re Tr) -> positive")
-    print("  character kernel (Z_N exact, U(1) analytic Bessel, SU(2) Peter-Weyl;")
-    print("  SU(3) selected-rep corroboration) -> G = W diag(c) W^dag is PSD when")
-    print("  the required finite-surface coefficients satisfy c>=0.")
+    print("  abelian character kernel (Z_N exact, U(1) analytic Bessel) ->")
+    print("  G = W diag(c) W^dag is PSD on the certified abelian surfaces.")
+    print("  SU(2)/SU(3) coefficient checks are diagnostics only; the runner exposes")
+    print("  the SU(2) product-character mismatch and makes no nonabelian W2/W3 claim.")
     print("  Wrong sign gives c_a<0 (non-PSD), the bug that sank the 2026-06-05 attempt.")
     return 0
 

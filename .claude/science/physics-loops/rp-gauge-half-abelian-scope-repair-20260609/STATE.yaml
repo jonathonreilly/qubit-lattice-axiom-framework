@@ -1,0 +1,11 @@
+lane: rp-gauge-half-abelian-scope-repair-20260609
+status: ready_for_review
+base: origin/main@1738752f7
+target_claim: rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06
+repair_class: scope_too_broad
+audit_blocker: "restrict the retained claim to the abelian Z_N/U(1) surfaces, or replace W2/W3 with the correct nonabelian matrix-coefficient Peter-Weyl or explicitly projected character-kernel derivation and add a reconstruction/Gram check for that normalization."
+repair_choice: "restricted to exact abelian Z_N/U(1) surfaces"
+audit_results_modified: false
+new_axioms: false
+primary_runner: scripts/frontier_rp_gauge_half_wilson_temporal_bridge.py
+source_note: docs/RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md

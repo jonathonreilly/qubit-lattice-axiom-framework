@@ -1,60 +1,52 @@
 ===== runner cache v1 =====
 runner: scripts/fixed_gbare_interacting_existence_ir_target_reframing_2026_06_08.py
-runner_sha256: 703965947fd8ad901b725602cf40d11f39ea3d8c75f25c2db12cec590ee8d34a
+runner_sha256: 0c7ca66674dbc0f44a82c091c4037d66f0b768d2f8a22fc6fd83109feb243f03
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 ==============================================================================
-Part 1  QCD beta coefficients for the full-SM SU(3) instance (b_0>0)
+Part 1  Retained bounded dependencies for the fixed-g_bare surface
 ==============================================================================
-  [PASS] 1-loop b_0 = (11 C_A - 4 T_F N_f)/3 = 7 (N_f=6), matching retained-bounded QCD beta row  (b_0 = 7.0)
-  [PASS] 2-loop b_1 = (34/3)C_A^2 - 4 C_F T_F N_f - (20/3)C_A T_F N_f = 26 (standard RG method input)  (b_1 = 26.0)
-  [PASS] asymptotic-freedom sign diagnostic: b_0 > 0 (coupling weakens toward the UV)
+  [PASS] G_BARE parent is retained_bounded in the current ledger  (effective_status=retained_bounded)
+  [PASS] G_BARE parent is audited as a bounded_theorem, not an unbounded positive theorem  (audit_status=audited_clean, claim_type=bounded_theorem)
+  [PASS] interacting transfer note is retained_bounded for the matter-sector floor dependency  (effective_status=retained_bounded)
 ==============================================================================
-Part 2  Standard asymptotic-scaling endpoint: a(g)->0 as g_bare->0
+Part 2  Fixed Wilson-surface algebra
 ==============================================================================
-  [PASS] a(g) decreases toward 0 as g_bare -> 0 in the asymptotic regime (g<=0.3)  (a(0.05)/a(0.3) = 2.23e-12 (-> 0))
-  [PASS] the asymptotic-scaling endpoint is at g_bare=0 (essential singularity exp(-1/2b_0 g^2))  (a(g=1e-3) = 0.0e+00 (-> 0))
+  [PASS] beta = 2 N_c / g_bare^2 gives beta=6 for N_c=3, g_bare=1  (beta=6.0)
+  [PASS] g_bare=1 is fixed and nonzero
+  [PASS] the zero-coupling endpoint is not taken on this fixed surface
 ==============================================================================
-Part 3  Sign-control diagnostic: b_0<0 runs opposite in the same formula
+Part 3  Source note scope guard
 ==============================================================================
-  [PASS] b_0>0 (AF sign): asymptotic-scaling formula sends a -> 0 as g->0  (a_AF(0.03)/a_AF(0.3)=2.6e-34 (-> 0))
-  [PASS] b_0<0 sign control: same formula runs toward a blow-up as g->0  (a_noAF(0.03)/a_noAF(0.3)=4.5e+34 (blows up))
+  [PASS] source note contains narrowed-scope marker: No standard RG formula
+  [PASS] source note contains narrowed-scope marker: No two-loop coefficient
+  [PASS] source note contains narrowed-scope marker: No asymptotic-scaling formula
+  [PASS] source note contains narrowed-scope marker: Delta_gauge(beta=6)>0
+  [PASS] source note contains narrowed-scope marker: fixed-lattice IR gap/clustering
+  [PASS] source note no longer carries load-bearing RG diagnostic: b_1=26
+  [PASS] source note no longer carries load-bearing RG diagnostic: two-loop/one-loop diagnostic
+  [PASS] source note no longer carries load-bearing RG diagnostic: finite dimensional-transmutation scale
+  [PASS] source note no longer carries load-bearing RG diagnostic: mu_conf/mu_lattice
 ==============================================================================
-Part 4  Framework fixes g_bare=1 (beta=6) != 0: fixed coupling, not the endpoint
+Part 4  Target reframing
 ==============================================================================
-  [PASS] retained convention: beta = 2 N_c / g_bare^2 = 6 at g_bare=1 (fixed, nonzero)  (beta = 6.0)
-  [PASS] g_bare = 1 != 0 -> this surface does not take the g_bare->0 endpoint
-  [PASS] HONEST: at alpha_bare=1/4pi the 2-loop/1-loop beta ratio is O(0.3) -> beta=6 is the ONSET of scaling (finite physical coupling, not deep AF)  (alpha_bare=0.0796, |b1 alpha_bare|/b0 = 0.30)
+   FIXED SURFACE: retained_bounded g_bare=1, beta=6.
+   TARGET: fixed-lattice IR mass gap / clustering at beta=6.
+   OPEN: Delta_gauge(beta=6)>0 and coupled spectral control.
+   REMOVED: two-loop/asymptotic-scaling diagnostic as retained support.
+  [PASS] reframing is bounded and does not assert interacting existence
 ==============================================================================
-Part 5  Dimensional transmutation: finite emergent IR scale (alpha grows to ~1)
+TOTAL: PASS=16 FAIL=0
 ==============================================================================
-  [PASS] coupling GROWS toward IR (1/alpha decreases as mu decreases, b_0>0)
-  [PASS] emergent confinement scale mu_conf is a FINITE fraction of the lattice scale (dimensional transmutation)  (mu_conf/mu_lattice = exp(-10.38) = 3.10e-05)
-  [PASS] the IR/UV scale separation is finite and computable (no continuum needed)  (lattice/confinement scale ratio ~ 3.2e+04)
-==============================================================================
-Part 6  Target reframing (standard UV endpoint -> fixed-lattice IR target)
-==============================================================================
-   STANDARD: the asymptotic-scaling continuum endpoint is g_bare->0, a->0.
-   FRAMEWORK SURFACE: g_bare=1 fixed -> fixed-lattice target -> IR mass gap /
-     clustering at beta=6.  AF's role here is a weak-coupling UV diagnostic and
-     dimensional-transmutation input, not a proof of nonperturbative existence.
-   OPEN (named): the pure-gauge gap Delta_gauge(beta=6)>0 is not proven; only the
-     matter-sector floor is retained-bounded.  So existence is reframed and
-     well-posed, not closed.
-  [PASS] target reframing is honest: this fixed-g_bare surface leaves Delta_gauge(beta=6)>0 open  (b_0 sign and RG scaling are diagnostics; framework surface does not take g_bare->0)
-==============================================================================
-TOTAL: PASS=14 FAIL=0
-==============================================================================
-SCOPE: The retained-bounded g_bare=1 surface is fixed and nonzero, so this note
-  does not take the standard g_bare->0, a->0 endpoint. The interacting-existence
-  target on that surface is fixed-lattice IR control (mass gap / clustering at
-  beta=6), with Delta_gauge(beta=6)>0 still open. The b_0/b_1 arithmetic and
-  dimensional-transmutation estimate are RG diagnostics, not a proof of the
-  continuum theory or the IR gap. No new axiom, primitive, or audit verdict.
-runner_check_breakdown = {A: 14, B: 0, C: 0, D: 0, total_pass: 14}
+SCOPE: This packet is a framework-native fixed-g_bare target clarification.
+  It depends on the retained_bounded G_BARE surface and does not import
+  two-loop RG, asymptotic-scaling, or dimensional-transmutation arithmetic.
+  The open science target remains Delta_gauge(beta=6)>0 plus full coupled
+  IR spectral control. No new axiom, primitive, or audit verdict.
+runner_check_breakdown = {A: 16, B: 0, C: 0, D: 0, total_pass: 16}
 
 ----- stderr -----
 

@@ -1,0 +1,11 @@
+lane: fixed-gbare-ir-target-native-scope-20260609
+status: ready_for_review
+base: origin/main@5c096b11a
+target_claim: fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08
+repair_class: dependency_not_retained
+audit_blocker: "close the G_BARE_DERIVATION_NOTE.md parent re-audit gate and either cite a retained RG/asymptotic-scaling authority or narrow/remove the two-loop ratio diagnostic."
+repair_choice: "use retained_bounded G_BARE parent and remove RG/asymptotic-scaling diagnostics from the load-bearing packet"
+audit_results_modified: false
+new_axioms: false
+primary_runner: scripts/fixed_gbare_interacting_existence_ir_target_reframing_2026_06_08.py
+source_note: docs/FIXED_GBARE_INTERACTING_EXISTENCE_IR_TARGET_REFRAMING_BOUNDED_NOTE_2026-06-08.md

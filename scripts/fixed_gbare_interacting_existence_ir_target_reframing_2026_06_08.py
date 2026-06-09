@@ -1,41 +1,34 @@
 #!/usr/bin/env python3
 """Fixed-g_bare interacting-existence target reframing.
 
-Class-A finite-dimensional verification for the source note
+Source note:
+  docs/FIXED_GBARE_INTERACTING_EXISTENCE_IR_TARGET_REFRAMING_BOUNDED_NOTE_2026-06-08.md
 
-    docs/FIXED_GBARE_INTERACTING_EXISTENCE_IR_TARGET_REFRAMING_BOUNDED_NOTE_2026-06-08.md
+This narrowed runner addresses the 2026-06-09 conditional audit repair target:
+the earlier packet mixed a clean fixed-g_bare target clarification with imported
+standard two-loop/asymptotic-scaling diagnostics. This runner removes those
+diagnostics from the retained surface.
 
-THESIS (bounded target clarification):
-  The retained-bounded framework surface has fixed g_bare=1, beta=6. That is a
-  fixed nonzero bare coupling, not the standard g_bare->0 endpoint used in the
-  perturbative asymptotic-scaling construction of a UV continuum limit.
+Load-bearing statement checked here:
+  * the current ledger records the g_bare derivation row as retained_bounded;
+  * on that scoped Wilson surface, g_bare=1 and N_c=3 give beta=6 by the
+    algebra beta = 2 N_c / g_bare^2;
+  * g_bare=1 is a fixed nonzero coupling, not the zero-coupling endpoint;
+  * the interacting-existence target is therefore the fixed-lattice IR
+    gap/clustering problem at beta=6, with Delta_gauge(beta=6)>0 still open.
 
-   (1) The standard RG formulas give b_0=7 and b_1=26 for the full-SM SU(3)
-       instance at N_f=6, with b_0>0. The one-loop b_0=7 input is backed by the
-       retained-bounded QCD beta row; b_1 and the asymptotic-scaling formula are
-       standard RG method inputs evaluated here.
-
-   (2) In the perturbative asymptotic-scaling diagnostic, a(g)->0 as g_bare->0.
-       A non-asymptotically-free sign control runs the other way. This is a
-       diagnostic of the standard UV-scaling endpoint, not a nonperturbative
-       existence theorem.
-
-   (3) Since g_bare=1 is fixed and nonzero, this repo's interacting-existence
-       target is fixed-lattice IR control: mass gap / clustering at beta=6. The
-       pure-gauge Delta_gauge(beta=6)>0 gap remains open; only the matter-sector
-       floor is retained-bounded elsewhere.
-
-  WHAT IS NOT CLAIMED: this does NOT prove the IR theory exists, solve standard
-  continuum Yang-Mills, or prove a continuum limit from asymptotic freedom. It
-  reframes the target under the fixed-g_bare repo surface and records the open
-  IR gap.
-
-Run: python3 scripts/fixed_gbare_interacting_existence_ir_target_reframing_2026_06_08.py
+No standard RG formula, two-loop coefficient, asymptotic-scaling formula, or
+dimensional-transmutation estimate is load-bearing in this restricted packet.
 """
 
 from __future__ import annotations
 
-import numpy as np
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+NOTE = ROOT / "docs" / "FIXED_GBARE_INTERACTING_EXISTENCE_IR_TARGET_REFRAMING_BOUNDED_NOTE_2026-06-08.md"
 
 PASS = 0
 FAIL = 0
@@ -54,137 +47,87 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     print(line)
 
 
-# ===========================================================================
-# Part 1.  Derived beta-function coefficients from retained Casimirs.
-# ===========================================================================
-print("=" * 78)
-print("Part 1  QCD beta coefficients for the full-SM SU(3) instance (b_0>0)")
-print("=" * 78)
-
-CA, CF, TF, Nf = 3.0, 4.0 / 3.0, 0.5, 6
-b0 = (11 * CA - 4 * TF * Nf) / 3.0
-b1 = (34.0 / 3.0) * CA ** 2 - 4 * CF * TF * Nf - (20.0 / 3.0) * CA * TF * Nf
-check("1-loop b_0 = (11 C_A - 4 T_F N_f)/3 = 7 (N_f=6), matching retained-bounded QCD beta row",
-      abs(b0 - 7.0) < 1e-12, f"b_0 = {b0}")
-check("2-loop b_1 = (34/3)C_A^2 - 4 C_F T_F N_f - (20/3)C_A T_F N_f = 26 (standard RG method input)",
-      abs(b1 - 26.0) < 1e-12, f"b_1 = {b1}")
-check("asymptotic-freedom sign diagnostic: b_0 > 0 (coupling weakens toward the UV)", b0 > 0)
-
-# ===========================================================================
-# Part 2.  Standard lattice continuum limit: a(g) -> 0 as g_bare -> 0.
-#   a(g) ~ exp(-1/(2 b_0 g^2)) (b_0 g^2)^{-b_1/(2 b_0^2)}  (2-loop asymptotic scaling,
-#   valid at small g).  The continuum is the g->0 ENDPOINT.
-# ===========================================================================
-print("=" * 78)
-print("Part 2  Standard asymptotic-scaling endpoint: a(g)->0 as g_bare->0")
-print("=" * 78)
+def row(claim_id: str) -> dict:
+    data = json.loads(LEDGER.read_text(encoding="utf-8"))
+    return data["rows"][claim_id]
 
 
-def a_scaling(g, B0=b0, B1=b1):
-    return np.exp(-1.0 / (2 * B0 * g ** 2)) * (B0 * g ** 2) ** (-B1 / (2 * B0 ** 2))
+def section(title: str) -> None:
+    print("=" * 78)
+    print(title)
+    print("=" * 78)
 
 
-gs = [0.30, 0.20, 0.10, 0.05]
-a_small = [a_scaling(g) for g in gs]
-check("a(g) decreases toward 0 as g_bare -> 0 in the asymptotic regime (g<=0.3)",
-      all(a_small[i] > a_small[i + 1] for i in range(len(a_small) - 1))
-      and a_small[-1] / a_small[0] < 1e-6,
-      f"a(0.05)/a(0.3) = {a_small[-1]/a_small[0]:.2e} (-> 0)")
-check("the asymptotic-scaling endpoint is at g_bare=0 (essential singularity exp(-1/2b_0 g^2))",
-      a_scaling(1e-3) < 1e-100, f"a(g=1e-3) = {a_scaling(1e-3):.1e} (-> 0)")
+section("Part 1  Retained bounded dependencies for the fixed-g_bare surface")
+g_bare_row = row("g_bare_derivation_note")
+gap_row = row("interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30")
 
-# ===========================================================================
-# Part 3.  Sign-control diagnostic: b_0<0 runs opposite in the same formula.
-# ===========================================================================
-print("=" * 78)
-print("Part 3  Sign-control diagnostic: b_0<0 runs opposite in the same formula")
-print("=" * 78)
+check(
+    "G_BARE parent is retained_bounded in the current ledger",
+    g_bare_row.get("effective_status") == "retained_bounded",
+    f"effective_status={g_bare_row.get('effective_status')}",
+)
+check(
+    "G_BARE parent is audited as a bounded_theorem, not an unbounded positive theorem",
+    g_bare_row.get("audit_status") == "audited_clean"
+    and g_bare_row.get("claim_type") == "bounded_theorem",
+    f"audit_status={g_bare_row.get('audit_status')}, claim_type={g_bare_row.get('claim_type')}",
+)
+check(
+    "interacting transfer note is retained_bounded for the matter-sector floor dependency",
+    gap_row.get("effective_status") == "retained_bounded",
+    f"effective_status={gap_row.get('effective_status')}",
+)
 
-a_af = [a_scaling(g, B0=7.0).real for g in (0.3, 0.1, 0.03)]
-a_noaf = [a_scaling(g, B0=-7.0).real for g in (0.3, 0.1, 0.03)]
-check("b_0>0 (AF sign): asymptotic-scaling formula sends a -> 0 as g->0",
-      a_af[-1] < a_af[0] and a_af[-1] / a_af[0] < 1e-6,
-      f"a_AF(0.03)/a_AF(0.3)={a_af[-1]/a_af[0]:.1e} (-> 0)")
-check("b_0<0 sign control: same formula runs toward a blow-up as g->0",
-      a_noaf[-1] > a_noaf[0] and a_noaf[-1] / a_noaf[0] > 1e6,
-      f"a_noAF(0.03)/a_noAF(0.3)={a_noaf[-1]/a_noaf[0]:.1e} (blows up)")
-
-# ===========================================================================
-# Part 4.  The framework is at FIXED g_bare=1 != 0 (beta=6): NOT the a->0 limit.
-#   Honest: beta=6 is the ONSET of scaling -- 2-loop ~ 30% of 1-loop at alpha_bare.
-# ===========================================================================
-print("=" * 78)
-print("Part 4  Framework fixes g_bare=1 (beta=6) != 0: fixed coupling, not the endpoint")
-print("=" * 78)
-
+section("Part 2  Fixed Wilson-surface algebra")
 g_bare = 1.0
-Nc = 3
-beta_lat = 2 * Nc / g_bare ** 2
-check("retained convention: beta = 2 N_c / g_bare^2 = 6 at g_bare=1 (fixed, nonzero)",
-      abs(beta_lat - 6.0) < 1e-12, f"beta = {beta_lat}")
-check("g_bare = 1 != 0 -> this surface does not take the g_bare->0 endpoint",
-      g_bare > 0)
+nc = 3
+beta = 2 * nc / (g_bare * g_bare)
 
-# Honest scaling-onset diagnostic: at the bare coupling, the 2-loop beta term is a
-# sizeable fraction of the 1-loop term -> beta=6 is the ONSET of asymptotic scaling,
-# i.e. a FINITE physical coupling, not an asymptotically-deep point.
-alpha_bare = g_bare ** 2 / (4 * np.pi)
-two_loop_frac = (b1 / b0) * (alpha_bare / (4 * np.pi)) * (4 * np.pi)  # ~ (b1/b0) alpha
-# use the standard ratio (b1 alpha)/(b0 * 4pi) form; report the magnitude
-ratio_2to1 = abs(b1 * alpha_bare) / (b0)
-check("HONEST: at alpha_bare=1/4pi the 2-loop/1-loop beta ratio is O(0.3) "
-      "-> beta=6 is the ONSET of scaling (finite physical coupling, not deep AF)",
-      0.1 < ratio_2to1 < 0.6,
-      f"alpha_bare={alpha_bare:.4f}, |b1 alpha_bare|/b0 = {ratio_2to1:.2f}")
+check("beta = 2 N_c / g_bare^2 gives beta=6 for N_c=3, g_bare=1",
+      abs(beta - 6.0) < 1e-12, f"beta={beta}")
+check("g_bare=1 is fixed and nonzero", g_bare == 1.0 and g_bare != 0.0)
+check("the zero-coupling endpoint is not taken on this fixed surface", abs(g_bare - 0.0) > 1e-12)
 
-# ===========================================================================
-# Part 5.  Dimensional transmutation: a FINITE emergent IR/confinement scale.
-#   1-loop running toward IR from the lattice scale; confinement where alpha_s ~ 1.
-# ===========================================================================
-print("=" * 78)
-print("Part 5  Dimensional transmutation: finite emergent IR scale (alpha grows to ~1)")
-print("=" * 78)
+section("Part 3  Source note scope guard")
+note = NOTE.read_text(encoding="utf-8")
+required = [
+    "No standard RG formula",
+    "No two-loop coefficient",
+    "No asymptotic-scaling formula",
+    "Delta_gauge(beta=6)>0",
+    "fixed-lattice IR gap/clustering",
+]
+for marker in required:
+    check(f"source note contains narrowed-scope marker: {marker}", marker in note)
 
-# 1/alpha(mu) = 1/alpha_bare + (b0/4pi) ln(mu^2/mu_lat^2); confinement at alpha_s=1.
-inv_bare = 1.0 / alpha_bare
-ln_mu2 = (1.0 - inv_bare) / (b0 / (4 * np.pi))     # ln(mu^2/mu_lat^2) where alpha=1
-mu_ratio = np.exp(ln_mu2 / 2.0)                     # mu_conf / mu_lattice
-check("coupling GROWS toward IR (1/alpha decreases as mu decreases, b_0>0)", b0 > 0)
-check("emergent confinement scale mu_conf is a FINITE fraction of the lattice scale "
-      "(dimensional transmutation)",
-      0 < mu_ratio < 1e-2,
-      f"mu_conf/mu_lattice = exp({ln_mu2/2:.2f}) = {mu_ratio:.2e}")
-check("the IR/UV scale separation is finite and computable (no continuum needed)",
-      np.isfinite(1.0 / mu_ratio) and 1.0 / mu_ratio > 100,
-      f"lattice/confinement scale ratio ~ {1.0/mu_ratio:.1e}")
+for forbidden in [
+    "b_1=26",
+    "two-loop/one-loop diagnostic",
+    "finite dimensional-transmutation scale",
+    "mu_conf/mu_lattice",
+]:
+    check(f"source note no longer carries load-bearing RG diagnostic: {forbidden}",
+          forbidden not in note)
 
-# ===========================================================================
-# Part 6.  Relocation: existence is fixed-a IR, not UV-continuum (logged + checked).
-# ===========================================================================
-print("=" * 78)
-print("Part 6  Target reframing (standard UV endpoint -> fixed-lattice IR target)")
-print("=" * 78)
+section("Part 4  Target reframing")
+print("   FIXED SURFACE: retained_bounded g_bare=1, beta=6.")
+print("   TARGET: fixed-lattice IR mass gap / clustering at beta=6.")
+print("   OPEN: Delta_gauge(beta=6)>0 and coupled spectral control.")
+print("   REMOVED: two-loop/asymptotic-scaling diagnostic as retained support.")
+check(
+    "reframing is bounded and does not assert interacting existence",
+    "does not prove" in note and "does not solve" in note and "pure-gauge gap remains open" in note,
+)
 
-print("   STANDARD: the asymptotic-scaling continuum endpoint is g_bare->0, a->0.")
-print("   FRAMEWORK SURFACE: g_bare=1 fixed -> fixed-lattice target -> IR mass gap /")
-print("     clustering at beta=6.  AF's role here is a weak-coupling UV diagnostic and")
-print("     dimensional-transmutation input, not a proof of nonperturbative existence.")
-print("   OPEN (named): the pure-gauge gap Delta_gauge(beta=6)>0 is not proven; only the")
-print("     matter-sector floor is retained-bounded.  So existence is reframed and")
-print("     well-posed, not closed.")
-check("target reframing is honest: this fixed-g_bare surface leaves Delta_gauge(beta=6)>0 open",
-      True, "b_0 sign and RG scaling are diagnostics; framework surface does not take g_bare->0")
-
-# ===========================================================================
 print("=" * 78)
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("=" * 78)
-print("SCOPE: The retained-bounded g_bare=1 surface is fixed and nonzero, so this note")
-print("  does not take the standard g_bare->0, a->0 endpoint. The interacting-existence")
-print("  target on that surface is fixed-lattice IR control (mass gap / clustering at")
-print("  beta=6), with Delta_gauge(beta=6)>0 still open. The b_0/b_1 arithmetic and")
-print("  dimensional-transmutation estimate are RG diagnostics, not a proof of the")
-print("  continuum theory or the IR gap. No new axiom, primitive, or audit verdict.")
+print("SCOPE: This packet is a framework-native fixed-g_bare target clarification.")
+print("  It depends on the retained_bounded G_BARE surface and does not import")
+print("  two-loop RG, asymptotic-scaling, or dimensional-transmutation arithmetic.")
+print("  The open science target remains Delta_gauge(beta=6)>0 plus full coupled")
+print("  IR spectral control. No new axiom, primitive, or audit verdict.")
 print("runner_check_breakdown = {A: %d, B: 0, C: 0, D: 0, total_pass: %d}" % (PASS, PASS))
 if FAIL:
     raise SystemExit(1)

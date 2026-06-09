@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 210 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 777 |
+| **retained_bounded** | 778 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1366 |
+| unaudited | 1365 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1212 |
+| `audited_clean` | 1213 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1681 |
+| `unaudited` | 1680 |
 
 | claim_type | count |
 |---|---:|
@@ -468,6 +468,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | C | - |
+| `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6364,6 +6365,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `audit_queue_runner_path_null_for_named_primary_verifier`
   - `retained_EW_bare_coupling_bookkeeping_not_registered_one_hop_dependency`
   - `Cl3_to_SM_dimension_count_d_plus_1_d_plus_2_support_packet_not_registered_one_hop_dependency`
+- **auditor confidence:** high
+
+### `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30`
+
+- **Note:** [`FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md`](../../docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formal algebra only: assuming d, g_3^2 = 1, g_2^2 = 1/(d + 1), g_Y^2 = 1/(d + 2), and the displayed inverse electromagnetic coupling rule, the bare ratio is 2d + 3 and the bookkeeping weak-angle identity is (d + 1)/(2d + 3), giving 9 and 4/9 at d = 3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-121814-94a7385d60-framework_bare_alpha_ratio_a`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under H1-H4, with 1/g_em^2 = 1/g_2^2 + 1/g_Y^2, one obtains 1/g_em^2 = 2d + 3, g_em^2 = 1/(2d + 3), alpha_3(bare)/alpha_em(bare) = 2d + 3, and sin^2(theta_W)(bare) = (d + 1)/(2d + 3).  _(class `A`)_
+- **chain closes:** True — The inverse-coupling sum gives (d + 1) + (d + 2) = 2d + 3, hence g_em^2 = 1/(2d + 3). With alpha proportional to g^2 and sin^2(theta_W) = g_Y^2/(g_2^2 + g_Y^2), the stated ratio and weak-angle identities follow exactly.
+- **rationale:** The audited claim is explicitly bounded to a formal assumed-input identity and does not claim to derive the coupling inputs or a physical EW-normalization bridge. Independent algebra confirms every displayed load-bearing identity and the d = 3 specializations. The runner source performs exact Fraction arithmetic plus source-boundary checks; its hard-coded expected values verify this formal identity rather than importing a contested physical premise. This clean verdict certifies only the scoped formal theorem, not retained bare-coupling physics.
 - **auditor confidence:** high
 
 ### `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`

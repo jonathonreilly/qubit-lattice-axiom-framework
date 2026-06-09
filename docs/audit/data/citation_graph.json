@@ -46610,10 +46610,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -90159,17 +90159,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02",
         "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
         "post_record_measure_weight_normalization_subdivision_2026-06-06",
         "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08",
         "backreaction_note",
-        "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30"
+        "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
+        "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0052299528449290e369dfcc51aba45f2f515709cb6a6f37c582cc80cfd7df14",
+      "note_hash": "53497d12728931a6eea21f0a2ed990cdb8f0ec3be1b37ed992602fd34caa306b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"
@@ -103927,7 +103927,7 @@
       "positive_theorem": 618
     },
     "edge_count": 11762,
-    "leaf_count": 1049,
+    "leaf_count": 1048,
     "node_count": 3181,
     "root_count": 1033,
     "runners_with_path": 2766

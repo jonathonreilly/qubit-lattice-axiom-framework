@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/frontier_occupancy_nonexclusivity_mixture_bound_2026_06_09.py
+runner_sha256: 79f81d3c586e6af5988362f120d6bcd17e312a0a57ce69cdc28cdc14f30c244d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+========================================================================================
+OCCUPANCY NON-EXCLUSIVITY: MIXTURE BOUND + PER-CONTEXT REALIZATION
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Mixture algebra (linearity assumption flagged)
+----------------------------------------------------------------------------------------
+  [PASS] variance-linear mixture: r_eff = p*(1/2) + (1-p)*1 => Q(p) = 2/3 + (1-p)/3 (any sector admixture pushes Q UP, linearly)  --  Q(p) = 1 - p/3
+  [PASS] FLAG: linear mixing of the variance ratio is an assumption (mixtures of Gaussian weights mix second moments linearly; other aggregation rules would change the coefficient, not the SIGN of the push)
+
+----------------------------------------------------------------------------------------
+Charged-lepton data bound -- within-context exclusivity is empirical
+----------------------------------------------------------------------------------------
+  Q_PDG = 0.6666605;  Q - 2/3 = -6.16e-06;  sigma(Q) from m_tau +/- 0.12 MeV = 6.77e-06
+  [PASS] SIGN: the central value sits BELOW 2/3 (Q - 2/3 = -6.2e-6) while any r=1 admixture pushes UP => the best-fit sector admixture is exactly ZERO (boundary)  --  Q - 2/3 = -6.16e-06
+  [PASS] 2-sigma upper bound on the sector admixture in the charged-lepton context: (1 - p) < ~2.2e-5 (i.e. < 0.0022% of the record statistics)  --  (1-p) < 2.22e-05
+  [PASS] => 'recorded frequently alongside' is EXCLUDED within this context -- exclusivity there is an empirical fact at the 1e-5 level, not an axiom
+
+----------------------------------------------------------------------------------------
+Across contexts -- valid cells are not globally excluded
+----------------------------------------------------------------------------------------
+  [PASS] the charged-lepton bound is context-local: it does not globally exclude the sector cell r=1 in other readout contexts
+  [PASS] the sector cell (r=1) is the direct cell for K-fixed (Majorana) multiplets in the landed neutrino program; the orbit cell is structurally unavailable there (no K-invariant complex structure on the K-fixed locus)
+  [PASS] the orbit cell (r=1/2) is empirically realized in the charged-lepton (Dirac) context to the mixture-bound precision above
+  [PASS] => both cells are valid framework cells; the charged-lepton context is empirically exclusive, while other contexts can have different structural availability
+
+----------------------------------------------------------------------------------------
+Candidate availability-preference formulation
+----------------------------------------------------------------------------------------
+  charged leptons (Dirac: orbit cell AVAILABLE): principle predicts orbit cell -> r=0.5, Q=0.6667
+  K-fixed / Majorana multiplet (orbit cell UNAVAILABLE): principle predicts sector cell -> r=1.0, Q=1.0000
+  [PASS] candidate principle: 'the orbit (coarser) cell is realized wherever available; the sector cell where it is structurally unavailable' -- matches the charged-lepton orbit-cell case and the conditional K-fixed sector-cell case without adding per-context freedom
+  [PASS] predictivity preserved: the principle leaves NO free choice per context (availability is a structural fact, decided by K-fixedness) -- unlike 'each context picks freely', which would be unfalsifiable
+  [PASS] named derivation target: derive the preference for the coarser cell from record dynamics (coarser outcome <-> more durable registration) -- the measurement/record-production gates; flagged as open, NOT derived here
+
+----------------------------------------------------------------------------------------
+Honesty
+----------------------------------------------------------------------------------------
+  [PASS] availability preference is candidate wording for the open program, not an axiom, primitive, admission, or new derivation
+  [PASS] the mixture-linearity assumption is flagged; the sign conclusion (any admixture pushes up) is aggregation-independent
+  [PASS] within-context exclusivity is empirical (1e-5), not axiomatically forbidden -- a future context could in principle show a genuine mixture; that would be a discovery about its record statistics, not a contradiction
+  [PASS] comparators are used only for the charged-lepton empirical bound; sets no audit status
+
+========================================================================================
+SUMMARY: PASS=16 FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 801 |
+| **retained_bounded** | 802 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1323 |
+| unaudited | 1322 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1240 |
+| `audited_clean` | 1241 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1638 |
+| `unaudited` | 1637 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 784 |
-| `leaf` | 1285 |
+| `medium` | 785 |
+| `leaf` | 1284 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -105,13 +105,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1385 | 100.44 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 765 | 61.08 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 853 | 58.24 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1281 | 52.82 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1282 | 52.83 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 490 | 47.94 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1017 | 44.49 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1198 | 42.73 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1005 | 40.47 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 265 | 39.55 | `unaudited` | unaudited |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1249 | 39.29 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1250 | 39.29 | `audited_clean` | **retained** |
 | 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 603 | 39.24 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 803 | 38.65 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 694 | 38.44 | `audited_clean` | **retained_no_go** |
@@ -1160,6 +1160,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `stable_post_record_dial_location_certificate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_3d_self_gravity_sign_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `staggered_backreaction_capture_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_capture_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_green_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -16828,6 +16829,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For each of the six axis orderings σ ∈ S3, there exists a site-local s: Λ → {±1} with η^σ_μ(n) = s(n) η_μ(n) s(n+μ̂).  _(class `C`)_
 - **chain closes:** True — The packet computes the plaquette field strength, Polyakov holonomies, and explicit Z2 coboundary solution for all six axis orderings, with no external comparator or fitted input. Within the stated even-periodic finite-lattice Z2 gauge-field scope, equal invariants plus the explicit gauge solve close the physical S3 symmetry claim.
 - **rationale:** The runner source genuinely constructs the staggered η fields, computes the gauge-invariant plaquette and Polyakov data, and solves the site-local Z2 gauge equations rather than printing or importing the contested conclusion. The only assumptions used are the stated finite even periodic lattice, the standard staggered convention, and standard finite Z2 gauge bookkeeping. The broader positivity-to-C3 bridge is explicitly excluded from the claim scope, so it does not block this bounded theorem.
+- **auditor confidence:** high
+
+### `staggered_backreaction_capture_closure_note`
+
+- **Note:** [`STAGGERED_BACKREACTION_CAPTURE_CLOSURE_NOTE.md`](../../docs/STAGGERED_BACKREACTION_CAPTURE_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the fixed current runner closure lap_selfmix50_capture3o2 on two cycle-bearing graphs and one layered holdout, the audited facts are the stated battery scores and approximately twofold force-gap reductions, not near-capture or full self-gravity closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-142750-7881c49679-staggered_backreaction_captu`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current capture-closure harness preserves both cycle-bearing 9/9 batteries and improves the cycle and holdout force gaps by about a factor of two.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helpers compute source densities, graph Poisson fields, Crank-Nicolson evolutions, shell forces, external-control gaps, and summary ratios from fixed runner definitions rather than importing or printing the note's asserted numbers. Independent arithmetic checks give 0.9828/0.4734 = 2.076 and 0.9191/0.4559 = 2.016, matching the stated 2.08x and 2.02x.
+- **rationale:** The load-bearing claim is bounded to the current finite runner output, and the runner source performs the closure computation rather than hard-coding the source-note numbers. The closure loop updates gain from capture and does not use the external-kernel force in the load-bearing closure path; the external kernel is used afterward as the fixed gap control. The source note's boundary language correctly excludes the archived near-capture and full self-gravity claims.
 - **auditor confidence:** high
 
 ### `staggered_backreaction_live_capture_packet_note_2026-05-29`

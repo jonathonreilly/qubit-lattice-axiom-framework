@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1403 |
-| Retained-grade rows, including boxed decorations | 1269 |
+| Applied audit verdicts | 1404 |
+| Retained-grade rows, including boxed decorations | 1270 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 800 |
+| Retained bounded rows | 801 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1324 |
+| Unaudited rows | 1323 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 33 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1326 |
-| Ready rows | 12 |
+| Total pending rows | 1325 |
+| Ready rows | 11 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 382 |
+| Leaf pending | 381 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19`](../../docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md) - medium; unaudited
 - [`staggered_backreaction_capture_closure_note`](../../docs/STAGGERED_BACKREACTION_CAPTURE_CLOSURE_NOTE.md) - medium; unaudited
 - [`staggered_backreaction_green_closure_note`](../../docs/STAGGERED_BACKREACTION_GREEN_CLOSURE_NOTE.md) - medium; unaudited
 - [`staggered_backreaction_iterative_note`](../../docs/STAGGERED_BACKREACTION_ITERATIVE_NOTE.md) - medium; unaudited
 - [`staggered_backreaction_nonlocal_closure_note`](../../docs/STAGGERED_BACKREACTION_NONLOCAL_CLOSURE_NOTE.md) - medium; unaudited
 - [`staggered_backreaction_results_2026-04-10`](../../docs/STAGGERED_BACKREACTION_RESULTS_2026-04-10.md) - medium; unaudited
-- [`staggered_backreaction_scale_closure_note`](../../docs/STAGGERED_BACKREACTION_SCALE_CLOSURE_NOTE.md) - leaf; unaudited
+- [`staggered_backreaction_scale_closure_note`](../../docs/STAGGERED_BACKREACTION_SCALE_CLOSURE_NOTE.md) - medium; unaudited
+- [`su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28`](../../docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

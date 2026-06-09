@@ -11,6 +11,10 @@ declaration, not an audit verdict.
 [`scripts/frontier_interacting_rp_full_algebra_2026_06_05.py`](../scripts/frontier_interacting_rp_full_algebra_2026_06_05.py)
 **Cached runner output:**
 [`logs/runner-cache/frontier_interacting_rp_full_algebra_2026_06_05.txt`](../logs/runner-cache/frontier_interacting_rp_full_algebra_2026_06_05.txt)
+**Companion control runner:**
+[`scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py`](../scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py)
+**Companion control cache:**
+[`logs/runner-cache/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.txt`](../logs/runner-cache/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.txt)
 
 ## What this note adds
 
@@ -132,17 +136,17 @@ fingerprint. There is no basis-completeness gap on the tested carriers.
   baryon `eps_{abc} chi^a chi^b chi^c` is confirmed a true `SU(3)` color singlet
   (`det g = 1`).
 - **DETPOS** — `det(M[U]) > 0` on every sampled background (Case A); no det-sign
-  sector. The runner additionally confirms `det(M[U])` stays real-positive and the
-  per-config Gram stays PSD down to `m = 0.01` (PSD min eig shrinking toward zero as
-  `m -> 0`, as expected when the mass gap closes), so the baryon introduces no
-  det-sign pathology.
+  sector. The companion control runner source-hash-pins the primary full-algebra
+  runner and confirms `det(M[U])` stays real-positive and the per-config Gram
+  stays PSD down to `m = 0.01`, so the baryon introduces no det-sign pathology.
 
-A separate **link-reflection convention** check (in the runner's design log and
-reproduced in the verification) confirms the four-fermion gauge-link reflection is
-handled correctly: under the antilinear OS reflection the meson link coefficient is
-conjugated, `U(x,y) -> conj(U(x,y))`; this convention yields a Hermitian, PSD
-transported-meson block, whereas the non-conjugating convention breaks Hermiticity
-(`||G - G^dag|| ~ 0.86`) and PSD (min eig `-0.22`). The antilinear conjugation is
+A separate **link-reflection convention** check in the companion control runner
+confirms the four-fermion gauge-link reflection is handled correctly: under the
+antilinear OS reflection the meson link coefficient is conjugated,
+`U(x,y) -> conj(U(x,y))`; this convention yields a Hermitian, PSD transported-meson
+block, whereas the non-conjugating convention breaks Hermiticity and PSD. The
+companion reports worst non-conjugating Hermiticity defect `> 1.4` and a negative
+symmetrized minimum eigenvalue below `-0.28`. The antilinear conjugation is
 load-bearing and correctly implemented.
 
 ## Numerical summary (cached runner)
@@ -159,6 +163,12 @@ Mass `m = 0.5`, `nt = 2` (`L_t = 4`); settled Berezin convention
 `theta(t) = -1-t`, `Theta(chi) = -chibar(-1-t)` (`gamma_0` sign). `SU(2)`/`U(1)` are
 the lighter cross-checks; the `SU(3)` carriers carry the genuine color-mixing and the
 baryon. Peak RSS `~37 MB`; runtime `~2.7 s`.
+
+Companion control cache:
+`logs/runner-cache/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.txt`
+reports `TOTAL: PASS=4 FAIL=0`. It source-hash-pins the primary runner, checks the
+source-note/cache linkage, verifies the `m = 0.01` mass scan, and verifies that the
+non-conjugating link-reflection convention fails as a control.
 
 ## Scope (honest — what is delivered vs open)
 

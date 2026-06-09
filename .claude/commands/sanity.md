@@ -21,6 +21,10 @@ Your job is to catch nonsense before it gets recorded as a finding. You are the 
   as listed in the current repo surfaces, not a stale memory of the model?
 - If it uses the registered `scale_reference_primitive`, is it using only the
   granted Planck scale units conversion and no extra dimensionless content?
+- If it uses the registered `kinetic_isotropy_primitive`, is it using only the
+  granted structural OS0 kinetic-form isotropy `c_t = c_s` and no extra
+  dynamics, Lorentz closure, scale, spacing-ratio theorem, selector, or
+  empirical content?
 - Does it smuggle in assumptions the model doesn't make? (continuous space, point particles, fields)
 - Could you state this result using only network/graph language?
 - **RED FLAG:** Result requires vocabulary not in the model's ontology.

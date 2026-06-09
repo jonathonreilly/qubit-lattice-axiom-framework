@@ -22,6 +22,10 @@ Your job is to catch theoretical inconsistencies BEFORE experiments are run, sav
 - If it uses the registered `scale_reference_primitive`, is it limited to
   Planck scale units conversion and not treated as a bounded import or
   dimensionless physics input?
+- If it uses the registered `kinetic_isotropy_primitive`, is it limited to
+  structural OS0 kinetic-form isotropy `c_t = c_s` and not treated as dynamics,
+  a Lorentz-closure theorem, scale, spacing-ratio theorem, selector, or
+  empirical input?
 - Does it smuggle in external assumptions?
 - Rate: COMPLIANT / PARTIAL / VIOLATING
 

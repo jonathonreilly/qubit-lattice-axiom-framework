@@ -294,15 +294,21 @@ weighting, normalization, probability, measurement/decoherence dynamics, time
 metric, within-sector data, occupancy rule, P2/modulus, log-det,
 source/action, scale, or arbitrary observable identification. The
 scale-reference primitive is the approved units primitive; do not describe it
-as a Tier-A admission or a bounded Planck import.
+as a Tier-A admission or a bounded Planck import. The kinetic-isotropy
+primitive is the approved structural OS0 kinetic-form isotropy `c_t = c_s`;
+do not describe it as a Tier-A admission, a bounded import, a Lorentz-closure
+theorem, a dynamics, an absolute scale, a spacing-ratio theorem, or an
+empirical match.
 Before writing a wall/import/dependency statement in `STATE.yaml`,
 `ASSUMPTIONS_AND_IMPORTS.md`, `TRACE_GATE.md`, `CLAIM_STATUS_CERTIFICATE.md`,
 `HANDOFF.md`, or a source note, perform
 `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. If the only issue is
 use of the registered `scale_reference_primitive`, record it as an approved
-units primitive and keep the actual status judgment focused on any additional
-dimensionless, selector, readout, normalization, probability, dynamics, or
-empirical content.
+units primitive. If the only issue is use of the registered
+`kinetic_isotropy_primitive`, record it as approved structural kinetic-form
+isotropy. Keep the actual status judgment focused on any additional
+dimensionless dynamical quantity, selector, readout, normalization,
+probability, dynamics, closure theorem, or empirical content.
 
 Required status fields for major artifacts:
 

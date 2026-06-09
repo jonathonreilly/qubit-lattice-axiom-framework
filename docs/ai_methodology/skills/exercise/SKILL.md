@@ -110,7 +110,10 @@ repo-native, but mark even those as assumptions for purposes of the exercise.
 Enumerate approved primitives from `docs/audit/data/axiom_premise_nodes.json`
 and read their source notes. The scale-reference primitive, including the
 Planck scale reference, is already granted as units conversion only; do not
-treat it as a bounded wall, and do not grant it dimensionless content.
+treat it as a bounded wall, and do not grant it dimensionless content. The
+kinetic-isotropy primitive grants only structural OS0 kinetic-form isotropy
+`c_t = c_s`; do not let it supply dynamics, a Lorentz-closure theorem, an
+absolute scale, a spacing-ratio theorem, a selector, or empirical content.
 Then climb layer by layer:
 
 1. axioms and primitives;

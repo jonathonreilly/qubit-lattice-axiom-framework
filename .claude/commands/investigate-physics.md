@@ -45,7 +45,9 @@ Generate exactly three candidate explanations:
    - State what mechanism in the model could produce this, using only approved
      model axioms and approved primitive registry entries. If the mechanism
      uses the registered scale-reference primitive, limit that use to Planck
-     scale units conversion only.
+     scale units conversion only. If it uses the registered kinetic-isotropy
+     primitive, limit that use to structural OS0 kinetic-form isotropy
+     `c_t = c_s` only.
 
 ### Phase 3: Discriminate
 Design the MINIMAL test that distinguishes between the three candidates.

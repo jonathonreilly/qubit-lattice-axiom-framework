@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_cubic_ward_o_a2_coefficient.py
+runner_sha256: a361bb5a9e5a07a3ca587167828b614427da2081e25e25170fcd8845d1244ed0
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 264.31
+status: ok
+----- stdout -----
+PASS T1 resid/amplitude/k^2 increases monotonically and CONVERGES (= 0.0288, 0.0379, 0.0424, 0.0447; increments shrink 0.0091, 0.0045, 0.0024) -> the O(a^2) form resid/amp=C*k^2+O(k^4) emerges
+PASS T2 residual SATURATES (res=8.02, 11.30, 13.00, 13.93, increments halve 3.28, 1.70, 0.93 -> R_inf~15) and amplitude*k^2->const (279, 298, 307, 311) -> O(a^2) structure (res->const, amp~1/k^2)
+PASS T3 extrapolated O(a^2) coefficient C ~ 0.050 (Richardson) and ~ 0.047 (geometric) -- both in [0.045,0.052]; the cubic Ward floor is resid/amplitude -> 0.049 * k^2 (L=14 confirms: r/a/k^2=0.0460)
+
+The cubic diffeomorphism Ward floor of the W-native induced graviton has the explicit O(a^2)
+form: resid/amplitude -> C * k^2 as a -> 0, with C ~ 0.048 the O(a^2) lattice-floor coefficient
+(the residual saturates to R_inf~15 while the amplitude grows ~1/k^2; resid/amplitude/k^2 climbs
+0.029->0.038->0.042->0.045->0.046 over L=6,8,10,12,14 with geometrically-halving increments ->
+C~0.048). This pins quantitatively the O(a^2) continuum floor of the cubic Ward closure (#3342).
+Magnitude registered (G3).
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_einstein_hilbert_closure_synthesis.py
+runner_sha256: 94555f08736c95c4a28863aa884cec2dfc1bd6e9db4ff6317f8042913a842691
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 67.35
+status: ok
+----- stdout -----
+PASS T0 elliptic pin: native iD det=m^2+|sin|^2>0 on all 2744 BZ modes; bare-Herm sigma.sin sign-indefinite (2048/2744)
+PASS T1 CUBIC (n=3) Ward diagnostic: conserved resid/amplitude 0.0313@k1.05 -> 0.0232@k0.79 over L=6->8
+PASS T2 QUARTIC (n=4) Ward diagnostic: conserved resid/amplitude 0.2034@k1.05 -> 0.1643@k0.79 over L=6->8
+PASS T3 UNIFIED: at BOTH cubic and quartic order the conserved resid/amplitude is below the naive (cubic 0.023<0.054, quartic 0.164<0.331) and decreases faster -> conserved coupling favored at both tested orders
+PASS T4 source note keeps synthesis diagnostic bounded
+
+SYNTHESIS DIAGNOSTIC: the supplied conserved coupling D(P_eff) + sqrt(g) measure is favored over
+the naive non-conserved control in the runner-defined cubic and quartic finite-lattice Ward
+diagnostics on L=6,8. This consolidates the landed bounded Ward lane without claiming an
+Einstein-Hilbert action identification, all-order nonlinear diffeomorphism invariance, continuum
+coefficients, or G_Newton.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

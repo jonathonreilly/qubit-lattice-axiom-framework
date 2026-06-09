@@ -87,10 +87,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1385 descendants; score 100.437
-- `observable_principle_from_axiom_note` - critical; 853 descendants; score 62.238
 - `three_generation_observable_theorem_note` - critical; 765 descendants; score 61.081
+- `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
 - `graph_first_su3_integration_note` - critical; 1282 descendants; score 52.825
-- `key_terminology` - critical; 1017 descendants; score 48.492
 - `minimal_axioms_2026-05-03` - critical; 490 descendants; score 47.940
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1198 descendants; score 46.728
-- `anomaly_forces_time_theorem` - critical; 1005 descendants; score 44.474
+- `key_terminology` - critical; 1017 descendants; score 44.492
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1198 descendants; score 42.728
+- `anomaly_forces_time_theorem` - critical; 1005 descendants; score 40.474

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1400 |
+| Applied audit verdicts | 1401 |
 | Retained-grade rows, including boxed decorations | 1267 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 798 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1327 |
+| Unaudited rows | 1326 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 32 |
+| Audited conditional rows | 33 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1329 |
-| Ready rows | 15 |
+| Total pending rows | 1328 |
+| Ready rows | 14 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 385 |
+| Leaf pending | 384 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - medium; unaudited
 - [`source_resolved_retarded_green_pocket_note`](../../docs/SOURCE_RESOLVED_RETARDED_GREEN_POCKET_NOTE.md) - medium; unaudited
 - [`source_resolved_transverse_propagating_green_note`](../../docs/SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md) - medium; unaudited
 - [`spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19`](../../docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md) - medium; unaudited
 - [`staggered_backreaction_capture_closure_note`](../../docs/STAGGERED_BACKREACTION_CAPTURE_CLOSURE_NOTE.md) - medium; unaudited
 - [`staggered_backreaction_green_closure_note`](../../docs/STAGGERED_BACKREACTION_GREEN_CLOSURE_NOTE.md) - medium; unaudited
-- [`staggered_backreaction_iterative_note`](../../docs/STAGGERED_BACKREACTION_ITERATIVE_NOTE.md) - leaf; unaudited
+- [`staggered_backreaction_iterative_note`](../../docs/STAGGERED_BACKREACTION_ITERATIVE_NOTE.md) - medium; unaudited
+- [`staggered_backreaction_nonlocal_closure_note`](../../docs/STAGGERED_BACKREACTION_NONLOCAL_CLOSURE_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

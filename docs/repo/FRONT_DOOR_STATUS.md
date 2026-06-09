@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1393 |
-| Retained-grade rows, including boxed decorations | 1265 |
+| Applied audit verdicts | 1394 |
+| Retained-grade rows, including boxed decorations | 1266 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 796 |
+| Retained bounded rows | 797 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1334 |
+| Unaudited rows | 1333 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1336 |
-| Ready rows | 22 |
+| Total pending rows | 1335 |
+| Ready rows | 21 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 392 |
+| Leaf pending | 391 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`post_record_selector_tangent_readout_weight_prototype_2026-06-06`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06`](../../docs/RP_GAUGE_HALF_WILSON_TEMPORAL_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06`](../../docs/RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md) - medium; unaudited
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
-- [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - leaf; unaudited
+- [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - medium; unaudited
+- [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

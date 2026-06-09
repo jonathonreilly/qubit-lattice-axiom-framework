@@ -46614,10 +46614,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "nonlabel_grown_drift_basin_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "second_grown_family_note"
     },
     {
       "from": "repo.repo_organization",
@@ -90160,16 +90160,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "nonlabel_grown_drift_basin_note",
         "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
         "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06",
         "rp_wilson_temporal_gauge_bridge_sign_and_positivity_repair_note_2026-06-06",
-        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
+        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
+        "second_grown_family_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "875bcb3a3761ea81b2be681ca95784168a5d88a9dcf41aa0bab5977dba296568",
+      "note_hash": "66d46bd8dceffa65a370839b01d375ed9e12d6cb2eeacf2467e5b02f9eca138f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

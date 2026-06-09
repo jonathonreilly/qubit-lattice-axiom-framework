@@ -29475,31 +29475,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -29772,6 +29747,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_interacting_rp_full_algebra_2026_06_05.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
       "transitive_descendants": 0
     },
     {
@@ -33782,7 +33782,7 @@
       "cross_confirmation_status": null,
       "deps": [
         "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27",
         "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
         "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27"

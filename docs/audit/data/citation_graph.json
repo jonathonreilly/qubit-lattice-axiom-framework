@@ -730,7 +730,7 @@
     },
     {
       "from": "alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26",
-      "to": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+      "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
     },
     {
       "from": "alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26",
@@ -49526,16 +49526,16 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27",
         "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
         "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5ad29bb9ed1513f64e43a218b510c312578a1e8e8c1465481147f1c2d4ebf9d7",
+      "note_hash": "8828a8a47ad3113469dff04b67fde0d98b1d61188c78577eadcda9ae0f6df6ce",
       "path": "docs/ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "runner_path": "scripts/alpha_bare_four_pi_from_z3_plancherel_bridge_2026_05_26.py",
-      "title": "Alpha Bare `(4 pi)` Z3 Plancherel / Maradudin Composition Bridge"
+      "title": "Alpha Bare `(4 pi)` Z3 Plancherel / Green-Kernel Composition Bridge"
     },
     "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27": {
       "claim_id": "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
@@ -91116,7 +91116,7 @@
         "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b3d8cdb21d3c5578a66f8edc94cfce80498d448a09b1e2a517ee30b78df962a3",
+      "note_hash": "1223fdb2766cf29dad3c941a55e27efe252c2c044fd7ffaac26a40339ee311ec",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"
@@ -105085,7 +105085,7 @@
       "positive_theorem": 619
     },
     "edge_count": 11889,
-    "leaf_count": 1066,
+    "leaf_count": 1067,
     "node_count": 3220,
     "root_count": 1039,
     "runners_with_path": 2804

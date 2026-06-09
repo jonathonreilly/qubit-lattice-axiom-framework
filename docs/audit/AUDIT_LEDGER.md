@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 799 |
+| **retained_bounded** | 800 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1325 |
+| unaudited | 1324 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1238 |
+| `audited_clean` | 1239 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1640 |
+| `unaudited` | 1639 |
 
 | claim_type | count |
 |---|---:|
@@ -1147,6 +1147,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_self_consistent_generated_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `source_resolved_support_localization_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_transverse_green_corrected_boundary_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `source_resolved_transverse_propagating_green_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -16657,6 +16658,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the fixed h=0.25 lattice pocket, the corrected runner finds mean trans/inst about 1.162, corrected mean trans/same about 0.990, negative trans-same centroid shift in every row, unchanged support fraction, slight N_eff broadening, linear exponents, and 4/4 TOWARD rows.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helpers build the fixed lattice fields, propagate amplitudes, compute centroid/support/N_eff observables, and assert the listed finite bounds. No cited authority or external comparator is imported, and the quantitative note claims match the completed runner output and independent arithmetic checks on the displayed table.
 - **rationale:** The runner source genuinely computes the finite rows from lattice propagation, Green fields, same-site memory, and transverse smoothing rather than printing constants or reading a contested premise. The displayed ratios, means, signs, support deltas, N_eff mean, and near-unit exponents are consistent with the runner cache and independent arithmetic over the table. The source note keeps the conclusion bounded to the finite corrected boundary packet and explicitly blocks the stale positive same-site correction headline.
+- **auditor confidence:** high
+
+### `source_resolved_transverse_propagating_green_note`
+
+- **Note:** [`SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md`](../../docs/SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed-runner finite-lattice claim for h=0.25, W=3, L=6, the specified source cluster, source strengths 0.001 through 0.008, same-site memory, and transverse smoothing rule only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-142023-278ac6bae9-source_resolved_transverse_p`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the fixed compact h=0.25, W=3, L=6 lattice and sampled source strengths, trans - same is negative on every sampled row and true trans/same is about 0.990 with all runner assertions passing.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helper instantiate the finite lattice, source fields, propagation rule, same-site memory, transverse smoothing, ratios, exponents, and support metrics directly from supplied constants, with no hard-coded expected table values or external comparator. An independent arithmetic and finite-run recomputation check matches the displayed rows, ratios, exponents, signs, zero-source reduction, and unchanged support fractions.
+- **rationale:** The load-bearing result is a bounded first-principles finite computation from the supplied runner definitions and helper lattice machinery. The code computes the contested quantities rather than importing them or asserting prefilled target values, and the displayed numerical relations are internally and independently checked. The clean verdict applies only to the stated compact sampled pocket, not to continuum behavior, a full propagating field theory, or effective retained status beyond this finite boundary claim.
 - **auditor confidence:** high
 
 ### `source_resolved_wavefield_green_pocket_note`

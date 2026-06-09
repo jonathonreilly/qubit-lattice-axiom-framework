@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_block_spin_cp_compression_color_reemergence_2026_06_08.py
+runner_sha256: 5bf2266ed3cd98f347d0f015d055eca6223926aef9f266b1bfd6ed5024f07f6d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+==============================================================================
+Part 1  (T1) morphism blocking: unital *-hom M_n -> M_m iff n | m; 256 does not divide 2
+==============================================================================
+  [PASS] positive control: M_2 -> M_4 (A -> A (x) I_2) is a unital multiplicative *-hom (2 | 4)
+  [PASS] M_4 -> M_2 impossible: needs 4 mutually-orthogonal nonzero projectors in M_2; rank bound allows at most 2 (4 > 2)  (matrix units e_ii are equivalent => all images nonzero or all zero; all-zero kills unitality)
+  [PASS] the 2x2x2 block algebra is M_256; the axiom block-site algebra is M_2; 256 does not divide 2 -> NO unital *-homomorphism blocking exists
+==============================================================================
+Part 2  (T2) unital block-qubit channels are not morphisms; compression model is not multiplicative
+==============================================================================
+  [PASS] E is unital (E(I_4) = I_2) and *-preserving (E(X^dag) = E(X)^dag)
+  [PASS] E is NOT multiplicative: E(XY) != E(X)E(Y) (explicit exhibit)  (max dev 1.666)
+  [PASS] for EVERY isometry the compression fails multiplicativity (50 random isometries; forced by T1 — a multiplicative E would be the impossible unital *-hom)
+==============================================================================
+Part 3  (T3) su(3) (dim 8, simple) has no faithful action on C^2 (su(2): dim 3)
+==============================================================================
+  [PASS] dim su(3) = 8 > 3 = dim of traceless-Hermitian operators on C^2
+  [PASS] su(3) is simple => any Lie map is faithful or zero; an embedding su(3) -> su(2) is dimensionally impossible (8 > 3) => the block qubit carries NO faithful color  (color does NOT transport through any axiom-preserving blocking)
+==============================================================================
+Part 4  (T4) re-run graph-first SU(3) on the BLOCK-level cube: identical algebra
+==============================================================================
+  [PASS] block-level selected-axis su(2): X^2 = Y^2 = Z^2 = I and [X,Y] = 2iZ (cyclic)
+  [PASS] residual complementary-axis swap commutes with the selected-axis su(2)
+  [PASS] joint commutant dimension = 10 (gl(3) (+) gl(1)) on the BLOCK-level cube (identical to the retained site-level result)  (dim = 10)
+  [PASS] base splits 3 (+) 1 under the residual swap (ranks 3 and 1) -> su(3) at the block scale: the construction is SCALE-BLIND; color re-emerges per scale  (ranks (3,1))
+==============================================================================
+TOTAL: PASS=12 FAIL=0
+==============================================================================
+SCOPE (narrow transport no-go + per-scale corollary): NO unital *-homomorphism
+  blocking exists (256 does not divide 2), so axiom-preserving block-spin cannot be
+  an algebra morphism.  Any unital block-qubit quantum channel is non-multiplicative, and the
+  runner's isometric CP compression model is never multiplicative (forced).  The
+  block qubit carries NO faithful su(3): color is NOT TRANSPORTED through the step.
+  BUT this is not a wall: the blocked lattice satisfies Lattice+Quantum verbatim and
+  the retained graph-first construction is SCALE-BLIND (re-verified at the block
+  level: su(2) relations, commutant dim 10, 3(+)1 split) — color is a PER-SCALE
+  derivation, not an RG-carried quantity.  Standard Kadanoff blocking is likewise a
+  truncating channel (method context, not an import).  The CHOICE of isometry V is
+  an undelivered selection (same family as the open gauge-link-dynamics input) and
+  is NOT supplied here.  Per-scale color (retained) untouched.  No new axiom.
+
+----- stderr -----
+

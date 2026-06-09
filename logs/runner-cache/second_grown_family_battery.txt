@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/second_grown_family_battery.py
-runner_sha256: 2201686da40dc64cc55211c695afb4274ef9ba7227d33a6a69b708896695390d
+runner_sha256: d32694a1b68d0ab184f5c677709559205a2aa5ae5265040f92ec0e596f6dea49
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -14,14 +14,24 @@ Question:
   Does current main contain an auditable replacement battery for the
   archived second-grown-family missing-runner row?
 
+  [PASS] scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py source exists and matches cache SHA
+         source=scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py, live_sha=551c91c17688b785c9bf8d26f05a1bf977e4edd831b00402ad3150b8369c0b9e, cache_sha=551c91c17688b785c9bf8d26f05a1bf977e4edd831b00402ad3150b8369c0b9e
   [PASS] scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py has a fresh ok cache
          cache=logs/runner-cache/SECOND_GROWN_FAMILY_SIGN_SWEEP.txt, status=fresh, header={'runner_path': 'scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py', 'runner_sha256': '551c91c17688b785c9bf8d26f05a1bf977e4edd831b00402ad3150b8369c0b9e', 'status': 'ok', 'exit_code': '0'}
+  [PASS] scripts/SECOND_GROWN_FAMILY_COMPLEX.py source exists and matches cache SHA
+         source=scripts/SECOND_GROWN_FAMILY_COMPLEX.py, live_sha=4ab7a30039285b0b7e45e9cbe2db48d946903547fb93e488f9a456149f52d90e, cache_sha=4ab7a30039285b0b7e45e9cbe2db48d946903547fb93e488f9a456149f52d90e
   [PASS] scripts/SECOND_GROWN_FAMILY_COMPLEX.py has a fresh ok cache
          cache=logs/runner-cache/SECOND_GROWN_FAMILY_COMPLEX.txt, status=fresh, header={'runner_path': 'scripts/SECOND_GROWN_FAMILY_COMPLEX.py', 'runner_sha256': '4ab7a30039285b0b7e45e9cbe2db48d946903547fb93e488f9a456149f52d90e', 'status': 'ok', 'exit_code': '0'}
+  [PASS] scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py source exists and matches cache SHA
+         source=scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py, live_sha=b1889fc22e22539eb491a5e909600716ba8734e782528e52d7e7b7b53915ede5, cache_sha=b1889fc22e22539eb491a5e909600716ba8734e782528e52d7e7b7b53915ede5
   [PASS] scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py has a fresh ok cache
          cache=logs/runner-cache/SECOND_GROWN_FAMILY_COMPLEX_QUICK.txt, status=fresh, header={'runner_path': 'scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py', 'runner_sha256': 'b1889fc22e22539eb491a5e909600716ba8734e782528e52d7e7b7b53915ede5', 'status': 'ok', 'exit_code': '0'}
+  [PASS] scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py source exists and matches cache SHA
+         source=scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py, live_sha=539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091, cache_sha=539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091
   [PASS] scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py has a fresh ok cache
          cache=logs/runner-cache/DISTANCE_LAW_BREAKPOINT_COMPARE.txt, status=fresh, header={'runner_path': 'scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py', 'runner_sha256': '539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091', 'status': 'ok', 'exit_code': '0'}
+  [PASS] scripts/impact_parameter_portability_probe.py source exists and matches cache SHA
+         source=scripts/impact_parameter_portability_probe.py, live_sha=b729e140430cd092335575721f63d4c7303062c8dc1e0d467492168634501269, cache_sha=b729e140430cd092335575721f63d4c7303062c8dc1e0d467492168634501269
   [PASS] scripts/impact_parameter_portability_probe.py has a fresh ok cache
          cache=logs/runner-cache/impact_parameter_portability_probe.txt, status=fresh, header={'runner_path': 'scripts/impact_parameter_portability_probe.py', 'runner_sha256': 'b729e140430cd092335575721f63d4c7303062c8dc1e0d467492168634501269', 'status': 'ok', 'exit_code': '0'}
 
@@ -48,7 +58,7 @@ RESULT
     - it keeps the complex-action result narrow and boundary-aware
     - it does not edit audit results or claim ledger status movement
 
-PASS=11 FAIL=0
+PASS=16 FAIL=0
 
 ----- stderr -----
 

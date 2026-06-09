@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3046 |
-| Applied audit verdicts | 1413 |
+| Applied audit verdicts | 1412 |
 | Retained-grade rows, including boxed decorations | 1279 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 810 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 38 |
-| Unaudited rows | 1315 |
+| Unaudited rows | 1316 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 33 |
+| Audited conditional rows | 32 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 15 |
@@ -33,18 +33,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1317 |
-| Ready rows | 2 |
+| Total pending rows | 1318 |
+| Ready rows | 3 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
-| Medium pending | 359 |
+| Medium pending | 360 |
 | Leaf pending | 379 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - leaf; unaudited
+- [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
+- [`second_grown_family_note`](../../docs/SECOND_GROWN_FAMILY_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -76,15 +77,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3183 |
 | Critical nodes | 529 |
 | High nodes | 452 |
-| Medium nodes | 820 |
-| Leaf nodes | 1382 |
+| Medium nodes | 822 |
+| Leaf nodes | 1380 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1387 descendants; score 101.439
 - `three_generation_observable_theorem_note` - critical; 765 descendants; score 61.081
 - `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
-- `graph_first_su3_integration_note` - critical; 1281 descendants; score 52.824
+- `graph_first_su3_integration_note` - critical; 1282 descendants; score 52.825
 - `minimal_axioms_2026-05-03` - critical; 490 descendants; score 47.940
 - `key_terminology` - critical; 1017 descendants; score 44.492
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1198 descendants; score 42.728

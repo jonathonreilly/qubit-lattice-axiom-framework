@@ -1,14 +1,15 @@
-"""Class-A finite runner (memory-safe): the diffeomorphism Ward identity on the FULL symmetric
-stress vertex of the W-native induced graviton -- the open item of #3222
-(universal_gr_induced_graviton_w_native_finite_k).
+"""Finite runner (memory-safe): a runner-defined conserved stress-vertex scheme
+for the universal-GR finite-BZ graviton diagnostic.
 
-#3222 showed the metric-Hessian of W=log|det(D+J)| is the Dirac stress 2-pt function Pi_ijkl(k)
-(Sakharov induced gravity), and on the NATIVE elliptic anti-Hermitian Dirac iD (det=m^2+|sin q|^2>0)
-the TT-projected k^2 slope is positive (healthy spin-2 graviton). But #3222 only checked the yz
-channel (k along x), which is transverse-traceless BY CONSTRUCTION and so DODGES the full
-diffeomorphism Ward identity. THIS NOTE builds the conserved point-split stress vertex + the
-diamagnetic seagull and tests the FULL transversality k^i Pi_ijkl(k)=0, then confirms the healthy
-TT sign survives the Ward-clean full vertex.
+This script certifies a bounded source packet, not the full W-native
+metric-Hessian bridge.  It constructs the native elliptic anti-Hermitian Dirac
+operator, a conserved velocity x momentum stress vertex, and a local contact
+seagull in the displayed {B0,B1,B5} basis.  It then checks that the scheme
+removes the leading longitudinal violation of the finite-BZ stress two-point
+function and preserves the positive yz TT stiffness.  The later identification
+of this runner-defined vertex/seagull with the complete metric Hessian of W,
+including all contact terms and continuum Ward/isotropy limits, remains a
+separate open bridge.
 
 NATIVE generator: D(q) = 1j*(sx sin qx + sy sin qy + sz sin qz) + m I2   (elliptic; the load-bearing
 #3222 pin). Lattice divergence: k^i -> 2 sin(k_i/2). Induced-action graviton self-energy (Gamma =
@@ -35,11 +36,10 @@ NATIVE generator: D(q) = 1j*(sx sin qx + sy sin qy + sz sin qz) + m I2   (ellipt
       (b) C2 + seagull: residual is O(k0^3) -- the leading O(k0) longitudinal violation is EXACTLY
           removed by the seagull (res/k0^3 -> const); N-INDEPENDENT at fixed k0 (genuine continuum
           quantity); holds OFF-AXIS too.
-      => the diffeomorphism Ward identity holds to leading (physical) order; transversality up to the
-         irrelevant O(a^2) lattice operator (the longitudinal self-energy keeps an O(k0^2)
-         k-dependence a k-independent seagull cannot remove -- the expected conserved-current-on-a-
-         rigid-lattice behavior, contrasting the EXACTLY-transverse internal U(1) of T2).
-  T5  the HEALTHY positive TT (yz) sign SURVIVES the Ward-clean full vertex + seagull (induced-action
+      => in this runner-defined scheme, the leading longitudinal violation is removed and the
+         residual scales as O(k0^3).  This is not a proof of the full metric-Hessian
+         diffeomorphism Ward identity.
+  T5  the HEALTHY positive TT (yz) sign SURVIVES the scheme-clean vertex + seagull (induced-action
       stiffness > 0), mass-robust.
   T6  the seagull tadpole reproduces the k->0 longitudinal contact term to ~1e-12 (it IS the genuine
       diamagnetic term, not a per-channel subtraction).
@@ -253,11 +253,11 @@ def t4_conserved_seagull():
     check("T4e transversality holds OFF-AXIS k=(k0,k0,0) too (residual=%.4f, small)" % off, off < 0.03)
 
 # ---------------------------------------------------------------------------
-# T5: healthy TT sign survives the Ward-clean full vertex + seagull
+# T5: healthy TT sign survives the scheme-clean vertex + seagull
 # ---------------------------------------------------------------------------
 def t5_healthy_tt():
     slopes = [tt_slope(V_cons, N, seagull=True) for N in (10, 14, 18)]
-    check("T5 healthy POSITIVE TT (yz) stiffness survives Ward-clean vertex+seagull (induced-action slope=%s)"
+    check("T5 healthy POSITIVE TT (yz) stiffness survives scheme-clean vertex+seagull (induced-action slope=%s)"
           % ", ".join("%+.5f" % s for s in slopes), all(s > 0 for s in slopes))
     mass = [tt_slope(V_cons, 14, m=mm, seagull=True) for mm in (0.5, 1.0, 1.5)]
     check("T5b mass-robust: TT stiffness > 0 for m in {0.5,1,1.5} (%s)"
@@ -275,9 +275,12 @@ def t6_seagull_is_contact():
     kvec = np.array([k0, 0.0, 0.0])
     chans = [(0, 0, 0), (1, 0, 1), (1, 1, 0), (2, 0, 2), (2, 2, 0), (0, 1, 1), (0, 2, 2)]
     worst = 0.0
+    basis_rows = []
+    target = []
     for (j, k_, l) in chans:
         bub = 0j
         tad = 0j
+        cols = [0j, 0j, 0j]
         for qx in p:
             for qy in p:
                 for qz in p:
@@ -286,11 +289,29 @@ def t6_seagull_is_contact():
                     Gqk = Ginv(q + kvec, m)
                     bub += np.trace(Gq @ V_cons(q, kvec, 0, j) @ Gqk @ V_cons(q + kvec, -kvec, k_, l))
                     tad += np.trace(Gq @ Seagull(q, 0, j, k_, l))
+                    basis = [
+                        PREF * _B0(q, 0, j, k_, l),
+                        PREF * _B1(q, 0, j, k_, l),
+                        PREF * _B5(q, 0, j, k_, l),
+                    ]
+                    for idx, term in enumerate(basis):
+                        cols[idx] += np.trace(Gq @ term)
         bub = (bub / N ** 3).real   # ~ longitudinal contact constant (k0 small)
         tad = (tad / N ** 3).real   # seagull tadpole
         worst = max(worst, abs(bub - tad))   # tadpole must equal the contact term
+        basis_rows.append([(col / N ** 3).real for col in cols])
+        target.append(bub)
     check("T6 seagull tadpole reproduces the k->0 longitudinal contact term in all channels (max|bub-tad|=%.1e)"
           % worst, worst < 5e-3)
+    A = np.array(basis_rows, dtype=float)
+    y = np.array(target, dtype=float)
+    coef, *_ = np.linalg.lstsq(A, y, rcond=None)
+    integer_coef = np.array([-1.0, 1.0, 1.0])
+    integer_err = np.abs(A @ integer_coef - y).max()
+    check("T6b small-k contact-basis solve recovers S=-B0+B1+B5 within finite-k error "
+          "(coef=%+.3f,%+.3f,%+.3f; integer maxerr=%.1e)"
+          % (coef[0], coef[1], coef[2], integer_err),
+          np.abs(coef - integer_coef).max() < 5e-2 and integer_err < 5e-3)
 
 # ---------------------------------------------------------------------------
 t1_ellipticity()
@@ -305,9 +326,8 @@ n_fail = sum(1 for _, ok in results if not ok)
 for name, ok in results:
     print(("PASS" if ok else "FAIL"), name)
 print()
-print("Conserved velocity x momentum stress vertex + diamagnetic seagull -> graviton self-energy")
-print("transverse to leading physical order (residual O(k0^3), leading longitudinal violation removed);")
-print("healthy positive TT graviton sign preserved on the Ward-clean full vertex. BOUNDED on the O(a^2)")
-print("lattice artifact (exact-all-k transversality obstructed by an irrelevant O(a^2) operator -- the")
-print("expected conserved-current-on-a-rigid-lattice behavior, vs the EXACTLY-transverse internal U(1)).")
+print("Runner-defined conserved velocity x momentum stress vertex + local seagull -> finite-BZ")
+print("stress two-point function transverse to leading physical order (residual O(k0^3), leading")
+print("longitudinal violation removed); healthy positive TT sign preserved in this scheme. BOUNDED")
+print("on the open full metric-Hessian/contact-term bridge and the continuum Ward/isotropy limits.")
 print("TOTAL: PASS=%d FAIL=%d" % (n_pass, n_fail))

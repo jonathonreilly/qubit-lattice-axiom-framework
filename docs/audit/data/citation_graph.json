@@ -46614,10 +46614,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08"
     },
     {
@@ -46639,6 +46635,10 @@
     {
       "from": "repo.front_door_status",
       "to": "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -90160,16 +90160,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
         "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
         "fifth_family_radial_fm_transfer_note",
         "fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08",
         "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
         "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31",
-        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08"
+        "free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08",
+        "free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "58a9659c0c7cf4193a5cdaa6b3bf0e304b97d48372a75f46f1cf0b57367ddcce",
+      "note_hash": "bbf701138c4feb63236042f9af2a1c2f04d4a1097e4259f55491b9ee959a1bdf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

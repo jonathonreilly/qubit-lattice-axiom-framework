@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1373 |
-| Retained-grade rows, including boxed decorations | 1251 |
+| Applied audit verdicts | 1374 |
+| Retained-grade rows, including boxed decorations | 1252 |
 | Retained positive theorems | 211 |
-| Retained no-go rows | 205 |
+| Retained no-go rows | 206 |
 | Retained bounded rows | 785 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
-| Unaudited rows | 1354 |
+| Unaudited rows | 1353 |
 | Retained-pending-chain rows | 13 |
 | Audited conditional rows | 22 |
 | Audited renaming rows | 35 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1356 |
-| Ready rows | 42 |
+| Total pending rows | 1355 |
+| Ready rows | 41 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
 | High pending | 252 |
 | Medium pending | 365 |
-| Leaf pending | 412 |
+| Leaf pending | 411 |
 
 Next ready rows by queue order:
 
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08`](../../docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md) - medium; unaudited
 - [`fifth_family_radial_fm_transfer_note`](../../docs/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md) - medium; unaudited
 - [`fixed_gbare_interacting_existence_ir_target_reframing_bounded_note_2026-06-08`](../../docs/FIXED_GBARE_INTERACTING_EXISTENCE_IR_TARGET_REFRAMING_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08`](../../docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31`](../../docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md) - medium; unaudited
 - [`free_dirac_car_positive_energy_equal_time_anticommutator_support_bounded_note_2026-06-08`](../../docs/FREE_DIRAC_CAR_POSITIVE_ENERGY_EQUAL_TIME_ANTICOMMUTATOR_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
-- [`free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08`](../../docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
+- [`free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08`](../../docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`gate_b_dynamics_note`](../../docs/GATE_B_DYNAMICS_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

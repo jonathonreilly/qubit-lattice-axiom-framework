@@ -49,8 +49,12 @@ of the Hamiltonian or of interacting Lorentz invariance.
 The runner verifies:
 
 - `||K^n psi||/n!` decreases for the rapidity Gaussian at the sampled orders,
-  while `||H^n psi||/n!` grows rapidly; the old common-Gaussian analytic-vector
-  bridge is false.
+  while `||H^n psi||/n!` grows rapidly under the corrected `exp(-x^2)`
+  Gaussian quadrature.  The runner also includes an analytic lower bound:
+  on the interval `zeta = n/a + u`, `u in [0, 1]`, the inequality
+  `cosh(zeta) >= exp(zeta)/2` gives
+  `||H^n psi||/n! >= (mass/2)^n exp(n^2/(2a) - a/2)/n!`, which diverges.
+  The old common-Gaussian analytic-vector bridge is therefore false.
 - signed-permutation orbit counting gives one diagonal quadratic invariant for
   spatial `O_h`, two for `O_h x time-parity`, and one for the 4D hypercubic
   group.

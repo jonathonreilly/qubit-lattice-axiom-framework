@@ -18,7 +18,7 @@ import itertools
 from math import factorial, sqrt
 
 import numpy as np
-from numpy.polynomial.hermite_e import hermegauss
+from numpy.polynomial.hermite import hermgauss
 
 
 PASS = 0
@@ -44,7 +44,7 @@ def rapidity_gaussian_ratios(a: float = 0.5, mass: float = 1.0) -> tuple[list[fl
     psi(zeta)=exp(-a zeta^2/2), K=-i d/dzeta, H=mass*cosh(zeta). The K powers
     are obtained by exact polynomial recursion against the Gaussian weight.
     """
-    xg, wg = hermegauss(220)
+    xg, wg = hermgauss(220)
     z = xg / np.sqrt(a)
     jac = 1.0 / np.sqrt(a)
 
@@ -62,6 +62,18 @@ def rapidity_gaussian_ratios(a: float = 0.5, mass: float = 1.0) -> tuple[list[fl
         k_ratios.append(sqrt(max(quad(polys[n](z) ** 2), 0.0)) / factorial(n))
         h_ratios.append(sqrt(quad((hz**n) ** 2)) / factorial(n))
     return k_ratios, h_ratios
+
+
+def h_analytic_lower_bound_ratio(n: int, a: float = 0.5, mass: float = 1.0) -> float:
+    """Lower-bound ||(mass*cosh(zeta))^n psi||/n! for the rapidity Gaussian.
+
+    For zeta >= 0, cosh(zeta) >= exp(zeta)/2.  With zeta = n/a + u and
+    u in [0, 1], 2 n zeta - a zeta^2 = n^2/a - a u^2 >= n^2/a - a.
+    Hence the squared norm has the explicit interval lower bound used here.
+    The bound grows superfactorially, so the Gaussian cannot be an analytic
+    vector for H.
+    """
+    return (mass / 2.0) ** n * np.exp((n * n) / (2.0 * a) - a / 2.0) / factorial(n)
 
 
 def block_signed_perm_group(blocks: list[list[int]]) -> list[np.ndarray]:
@@ -114,6 +126,7 @@ def main() -> int:
     print("=" * 72)
 
     k_ratios, h_ratios = rapidity_gaussian_ratios()
+    h_bounds = [h_analytic_lower_bound_ratio(n) for n in range(1, 9)]
     print("n  ||K^n psi||/n!   ||H^n psi||/n!")
     for n, (kr, hr) in enumerate(zip(k_ratios, h_ratios)):
         print(f"{n:1d}  {kr:.6e}       {hr:.6e}")
@@ -125,8 +138,11 @@ def main() -> int:
     )
     check(
         "rapidity Gaussian is not analytic for H",
-        h_ratios[5] > 1e10 and all(h_ratios[n + 1] > h_ratios[n] for n in range(0, 8)),
-        f"sampled H ratio exceeds 1e10 by n=5: {h_ratios[5]:.3e}",
+        h_ratios[5] > 1e7
+        and h_ratios[8] > 1e20
+        and all(h_ratios[n + 1] > h_ratios[n] for n in range(0, 8))
+        and h_bounds[7] > 1e20,
+        f"corrected quadrature H ratio n=5 {h_ratios[5]:.3e}, analytic lower bound n=8 {h_bounds[7]:.3e}",
     )
 
     g_spatial = block_signed_perm_group([[0, 1, 2]])

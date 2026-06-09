@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 209 |
-| **retained_no_go** | 202 |
+| **retained_no_go** | 203 |
 | **retained_bounded** | 771 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1383 |
+| unaudited | 1382 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1201 |
+| `audited_clean` | 1202 |
 | `audited_conditional` | 15 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1698 |
+| `unaudited` | 1697 |
 
 | claim_type | count |
 |---|---:|
@@ -537,6 +537,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7324,6 +7325,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The second sample-matrix column satisfies <K(W), Phi_1> = 3(chi_(1,0)(W)+chi_(0,1)(W)) = 18 J(W), so the radical entries determine J(W_i), hence w_6(W_i)=exp(6J(W_i)) and w_6(W_i)/Z_(1plaq)(6).  _(class `A`)_
 - **chain closes:** True — The local-only chain closes from the supplied radical sample matrix, the local Wilson weight exp[(beta/3) Re Tr W], and the Bessel-determinant one-plaquette normalization. The missing full rim/environment completion is explicitly outside the audited claim scope.
 - **rationale:** The load-bearing calculation is an algebraic closure over retained-grade bounded inputs: the given Weyl-angle samples fix the dimension-weighted second column, which fixes J(W_i), and the Wilson local factor then gives the displayed weights. The runner source computes the one-plaquette partition by a Bessel-determinant mode sum rather than merely printing the contested values; an independent Weyl-torus quadrature check agrees with the displayed Z_(1plaq)(6) and normalized samples to the shown precision. The note does not overclaim explicit B_6(W), K_6^env, or Z_6^env(W_i).
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the finite first-symmetric retained-sector obstruction: the named local Wilson one-plaquette sample triple lies outside Cone(r_0,r_1,r_2) and therefore cannot itself be a nonnegative first-sector positive-type retained evaluator; the true environment samples remain unevaluated.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-50b0df4894-gauge_vacuum_plaquette_first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Applying the exact inverse map to the normalized local Wilson triple gives a_loc = F^(-1) Z^loc with a^loc_(1,1) = -0.03190961277002443..., so the componentwise cone test F^(-1) Z >= 0 fails.  _(class `A`)_
+- **chain closes:** True — The retained local-evaluation note supplies Z^loc, the retained_bounded radical-map note supplies invertible F, and the retained_bounded cone note supplies the necessary-and-sufficient nonnegative-coordinate cone test. Independent inversion of the displayed numeric F and Z^loc reproduces (0.349606952458405, 0.093393849310838, -0.031909612770025), so the scoped obstruction follows without using the open environment values.
+- **rationale:** The load-bearing result is an algebraic closure over retained-grade inputs, not a definition or a tuned numerical match. The runner source computes the radical matrix, the local normalization, the inverse reconstruction, the negative adjoint coordinate, the order gap, and the minimum coordinate repair; an independent numeric inversion using the displayed matrix and samples confirms the sign and values. The no-go is clean only in the stated finite sense: it rules out the local Wilson triple as a first-symmetric retained positive-cone answer, while leaving nonlocal K_6^env / B_6(W) routes and the actual environment amplitudes open.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_framework_point_underdetermination_note`

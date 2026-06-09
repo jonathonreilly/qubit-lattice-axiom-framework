@@ -46610,7 +46610,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17"
+      "to": "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
     },
     {
       "from": "repo.front_door_status",
@@ -90159,7 +90159,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17",
+        "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17",
         "plaquette_bootstrap_framework_integration_note_2026-05-03",
         "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
         "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
@@ -90169,7 +90169,7 @@
         "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fb74a6440de762549d47bb385bdfc5641af58ea8f83a3987240abb4b20e35764",
+      "note_hash": "9a056efcb00502aab118b6963b526b82c751772905fc949c840c21afc5a2478d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

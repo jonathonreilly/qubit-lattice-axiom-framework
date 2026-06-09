@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/microcausality_finite_range_h_bridge_2026_05_09.py
-runner_sha256: d031291f08d607a5505d5cee712189b6d64b60e13f15d67caac3c1421f202555
+runner_sha256: 8b156f9779116a6e1986e2c2366a2f272ae9fb57b2ff5cca514d1c79ca3145f3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.94
+elapsed_sec: 0.73
 status: ok
 ----- stdout -----
 
@@ -89,6 +89,24 @@ TEST F2: J_max bound from action coefficients (gauge-background-independent)
          max_observed/J_max = 0.6178
 
 ========================================================================
+TEST F2b: carrier-faithful Wilson branch (displayed eq. (8) term)
+========================================================================
+
+  (a) pair norm || [[0,U],[U†,0]] ||_op over 25 SU(3) configs:
+      max |norm - 1| = 8.882e-16
+  [PASS] F2b(a) — unit pair norm for SU(3) hop blocks
+         ‖a†(U b) + h.c.‖_op = ‖U‖_op = 1, grounding coefficient×1 link counting
+
+  (b) grouped spatial-Wilson block over 20 SU(3) configs:
+      max ||h_z^W||_op = 3.232051  <=  d_s·(r_W + r_W/2) = 4.5
+  [PASS] F2b(b) — grouped Wilson block bounded by d_s·(r_W + r_W/2)
+         max observed 3.232051 vs budget 4.5
+
+  (c) exact budgets (above |m|): surface = 78, carrier = 157/2, envelope = 80
+  [PASS] F2b(c) — branch arithmetic 78 <= 78.5 <= 80 exact
+         J_max branches: supplied surface 78, displayed carrier 157/2, envelope 80
+
+========================================================================
 TEST F3: Lieb-Robinson velocity v_LR = 2 e r J from F1 + F2
 ========================================================================
 
@@ -114,7 +132,7 @@ TEST F3: Lieb-Robinson velocity v_LR = 2 e r J from F1 + F2
     5   0.050            5.102877e-09    1.768524e-02      OK
     5   0.100            1.635341e-07    2.320943e-02      OK
     5   0.200            5.232008e-06    3.997344e-02      OK
-    6   0.050            3.329388e-11    6.506038e-03      OK
+    6   0.050            3.329391e-11    6.506038e-03      OK
     6   0.100            2.132913e-09    8.538274e-03      OK
     6   0.200            1.364303e-07    1.470541e-02      OK
 
@@ -133,8 +151,8 @@ TEST F4: outside-lightcone exponential decay (operational check)
     4       outside    4.070340e-06            -12.411784
     5       outside    6.190648e-08            -16.597641
     6       outside    1.427171e-09            -20.367572
-    7       outside    1.103643e-11            -25.229819
-    8       outside    2.095298e-13            -29.193911
+    7       outside    1.103644e-11            -25.229819
+    8       outside    2.095777e-13            -29.193682
 
   [PASS] F4 — outside-lightcone exponential decay
          log(commutator) decreases monotonically with d (microcausal lightcone)
@@ -145,17 +163,19 @@ SUMMARY
   F0 note manifest / Wilson normalization guard:         PASS
   F1 action-density local support:                       PASS
   F2 explicit J_max bound from action coefficients:      PASS
+  F2b carrier-faithful Wilson branch bracket:            PASS
   F3 conditional v_LR = 2erJ LR bound holds on toy H:    PASS
   F4 outside-lightcone exponential decay:                PASS
 
-  PASS=5, FAIL=0
+  PASS=8, FAIL=0
   OVERALL: PASS
 
 The runner checks bounded action-support/J-budget pieces only.
 It does not construct the exact reconstructed logarithmic H. Cited authority chain:
   - parent RP note (action carriers)
   - hopping_bilinear_hermiticity (B2, B4 for translation-covariance)
-  - staggered_wilson_det_positivity_bridge (retained M_W = r_W d I surface)
+  - staggered_wilson_det_positivity_bridge (supplied M_W = r_W d I surface;
+    F2 branch value only — non-load-bearing after the F2b carrier bracket)
 
 
 ----- stderr -----

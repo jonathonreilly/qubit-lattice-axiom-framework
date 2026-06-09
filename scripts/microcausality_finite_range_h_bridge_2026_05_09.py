@@ -23,6 +23,14 @@ This runner provides numerical certificates for:
       (|m| + d/2 + r_W * d + 2 * β * d(d-1)/2). Verify
       ||h_z||_op <= J_max configuration-by-configuration.
 
+  F2b. Carrier-faithful Wilson branch: verify the unit pair norm
+      || [[0, U], [U^dag, 0]] ||_op = 1 on random SU(3) links, the
+      grouped spatial-Wilson one-particle block norm against the
+      d_s * (r_W + r_W/2) budget, and the exact branch arithmetic
+      surface (|m|+78) <= carrier (|m|+78.5) <= envelope (|m|+80),
+      so the diagonal-surface citation is not load-bearing for the
+      finiteness of the budget.
+
   F3. Lieb-Robinson velocity: conditional v_LR = 2 e r J computation
       with r_action <= 2 and J = J_max from F2. The finite-volume toy
       check uses its own nearest-neighbor r = 1 Hamiltonian to verify
@@ -309,6 +317,100 @@ def test_F2_explicit_J_bound() -> bool:
     return all_ok
 
 
+# ---- Test 2b: F2b carrier-faithful Wilson branch ----------------------------
+
+def test_F2b_carrier_faithful_wilson() -> bool:
+    """F2b: carrier-faithful Wilson budget from the displayed eq. (8) term.
+
+    The note's carrier (8) displays the standard spatial NN Wilson term
+    (mu != t). Verify on explicit one-particle color matrices that the
+    per-site grouped Wilson budget d_s * (r_W + r_W/2) = 9/2 bounds the
+    grouped block, that the pair norm underlying the link counting is
+    exactly 1, and that the three branch values are ordered
+    surface <= carrier <= envelope. No diagonal-surface input is used.
+    """
+    print()
+    print("=" * 72)
+    print("TEST F2b: carrier-faithful Wilson branch (displayed eq. (8) term)")
+    print("=" * 72)
+    print()
+
+    from fractions import Fraction
+
+    d = 4
+    d_s = 3  # spatial directions (mu != t in carrier (8))
+    r_W = 1.0
+    m = 0.3
+    g_bare = 1.0
+    N_c = 3
+    beta = 2 * N_c / g_bare ** 2  # = 6
+    rng = np.random.default_rng(SEED + 2)
+
+    # (a) unit pair norm: || [[0,U],[U^dag,0]] ||_op = 1 for unitary U.
+    worst_dev = 0.0
+    n_pair = 25
+    for i in range(n_pair):
+        U = random_su3(rng, scale=0.0 if i == 0 else 2.0)
+        blk = np.block([
+            [np.zeros((3, 3), dtype=complex), U],
+            [U.conj().T, np.zeros((3, 3), dtype=complex)],
+        ])
+        worst_dev = max(worst_dev, abs(float(np.linalg.norm(blk, ord=2)) - 1.0))
+    pair_ok = worst_dev < 1e-12
+    print(f"  (a) pair norm || [[0,U],[U†,0]] ||_op over {n_pair} SU(3) configs:")
+    print(f"      max |norm - 1| = {worst_dev:.3e}")
+    check("F2b(a) — unit pair norm for SU(3) hop blocks", pair_ok,
+          "‖a†(U b) + h.c.‖_op = ‖U‖_op = 1, grounding coefficient×1 link counting")
+
+    # (b) grouped spatial-Wilson one-particle block:
+    #     sites {z, z+e_1, z+e_2, z+e_3}, color C^3 each (dim 12);
+    #     h_z^W = -d_s*r_W*P_z + sum_k (r_W/2) * hop(z, z+e_k; U_k).
+    w_budget = d_s * (r_W + r_W / 2.0)  # = 9/2
+    worst_norm = 0.0
+    n_cfg = 20
+    for cfg in range(n_cfg):
+        scale = 0.0 if cfg == 0 else 2.0
+        h = np.zeros((12, 12), dtype=complex)
+        h[0:3, 0:3] = -d_s * r_W * np.eye(3)  # grouped diagonal at z
+        for k in range(d_s):
+            U = random_su3(rng, scale=scale)
+            s = 3 * (k + 1)
+            h[0:3, s:s + 3] += (r_W / 2.0) * U
+            h[s:s + 3, 0:3] += (r_W / 2.0) * U.conj().T
+        worst_norm = max(worst_norm, float(np.linalg.norm(h, ord=2)))
+    block_ok = worst_norm <= w_budget + 1e-9
+    print()
+    print(f"  (b) grouped spatial-Wilson block over {n_cfg} SU(3) configs:")
+    print(f"      max ||h_z^W||_op = {worst_norm:.6f}  <=  d_s·(r_W + r_W/2) = {w_budget}")
+    check("F2b(b) — grouped Wilson block bounded by d_s·(r_W + r_W/2)", block_ok,
+          f"max observed {worst_norm:.6f} vs budget {w_budget}")
+
+    # (c) exact branch arithmetic with Fractions (no floats).
+    rw = Fraction(1)
+    ks = Fraction(d, 2)                       # 2
+    plaq = 2 * int(beta) * (d * (d - 1) // 2)  # 72
+    w_surface = rw * d                        # 4   (supplied diagonal surface)
+    w_carrier = d_s * rw + d_s * rw / 2       # 9/2 (displayed carrier (8))
+    w_envelope = d * rw + d * rw / 2          # 6   (all-direction envelope)
+    j_surface = ks + w_surface + plaq
+    j_carrier = ks + w_carrier + plaq
+    j_envelope = ks + w_envelope + plaq
+    print()
+    print(f"  (c) exact budgets (above |m|): surface = {j_surface}, "
+          f"carrier = {j_carrier}, envelope = {j_envelope}")
+    arith_ok = (
+        j_surface == 78
+        and j_carrier == Fraction(157, 2)
+        and j_envelope == 80
+        and j_surface <= j_carrier <= j_envelope
+    )
+    check("F2b(c) — branch arithmetic 78 <= 78.5 <= 80 exact", arith_ok,
+          "J_max branches: supplied surface 78, displayed carrier 157/2, envelope 80")
+
+    all_ok = pair_ok and block_ok and arith_ok
+    return all_ok
+
+
 # ---- Test 3: F3 v_LR Lieb-Robinson velocity --------------------------------
 
 def test_F3_v_LR_explicit() -> bool:
@@ -511,6 +613,7 @@ def main() -> None:
     f0 = test_F0_note_manifest_sync()
     f1 = test_F1_finite_range_support()
     f2 = test_F2_explicit_J_bound()
+    f2b = test_F2b_carrier_faithful_wilson()
     f3 = test_F3_v_LR_explicit()
     f4 = test_F4_outside_lightcone_decay()
 
@@ -521,10 +624,11 @@ def main() -> None:
     print(f"  F0 note manifest / Wilson normalization guard:         {'PASS' if f0 else 'FAIL'}")
     print(f"  F1 action-density local support:                       {'PASS' if f1 else 'FAIL'}")
     print(f"  F2 explicit J_max bound from action coefficients:      {'PASS' if f2 else 'FAIL'}")
+    print(f"  F2b carrier-faithful Wilson branch bracket:            {'PASS' if f2b else 'FAIL'}")
     print(f"  F3 conditional v_LR = 2erJ LR bound holds on toy H:    {'PASS' if f3 else 'FAIL'}")
     print(f"  F4 outside-lightcone exponential decay:                {'PASS' if f4 else 'FAIL'}")
     print()
-    all_ok = f0 and f1 and f2 and f3 and f4
+    all_ok = f0 and f1 and f2 and f2b and f3 and f4
     print(f"  PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
@@ -532,7 +636,8 @@ def main() -> None:
     print("It does not construct the exact reconstructed logarithmic H. Cited authority chain:")
     print("  - parent RP note (action carriers)")
     print("  - hopping_bilinear_hermiticity (B2, B4 for translation-covariance)")
-    print("  - staggered_wilson_det_positivity_bridge (retained M_W = r_W d I surface)")
+    print("  - staggered_wilson_det_positivity_bridge (supplied M_W = r_W d I surface;")
+    print("    F2 branch value only — non-load-bearing after the F2b carrier bracket)")
     print()
 
     if not all_ok:

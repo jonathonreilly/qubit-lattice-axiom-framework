@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3044 |
-| Applied audit verdicts | 1342 |
-| Retained-grade rows, including boxed decorations | 1229 |
+| Applied audit verdicts | 1343 |
+| Retained-grade rows, including boxed decorations | 1230 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 202 |
-| Retained bounded rows | 769 |
+| Retained bounded rows | 770 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1385 |
+| Unaudited rows | 1384 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 15 |
 | Audited renaming rows | 35 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1387 |
+| Total pending rows | 1386 |
 | Ready rows | 59 |
 | Cycle-break targets | 15 |
 | Critical pending | 327 |
-| High pending | 253 |
+| High pending | 252 |
 | Medium pending | 373 |
 | Leaf pending | 434 |
 
 Next ready rows by queue order:
 
-- [`universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_INDUCED_GRAVITON_W_NATIVE_FINITE_K_BOUNDED_THEOREM_NOTE_2026-06-08.md) - high; unaudited
 - [`gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md) - medium; unaudited
 - [`plaquette_bootstrap_framework_integration_note_2026-05-03`](../../docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md) - medium; unaudited
 - [`wigner_mode_low_d_sublattice_theorem_note_2026-05-02`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) - medium; unaudited
 - [`source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
+- [`universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

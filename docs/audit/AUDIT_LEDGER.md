@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 769 |
+| **retained_bounded** | 770 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1385 |
+| unaudited | 1384 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1199 |
+| `audited_clean` | 1200 |
 | `audited_conditional` | 15 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1700 |
+| `unaudited` | 1699 |
 
 | claim_type | count |
 |---|---:|
@@ -1245,6 +1245,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_lambda_bypass_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_lorentzian_global_atlas_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17919,6 +17920,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source performs exact SymPy matrix algebra for the stated 90-degree rotation, A1 projection, moved complement coordinates, and symbolic alpha/beta quadratic-energy tie. The broader exhaustiveness claim is explicitly split off as non-load-bearing and is not counted as audited closure.
 - **rationale:** Within the narrowed bounded scope, the load-bearing step is an algebraic identity check, not a numerical match, renaming, or external comparator. The primary runner source actually constructs the projector, rotation, complement difference, and invariant energy expressions rather than merely printing expected PASS lines. The note explicitly admits that full SO(3) exhaustiveness and all-future-invariant nonexistence are not derived, so the clean verdict applies only to the checked bounded witness and invariant class.
 - **auditor confidence:** medium
+
+### `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_INDUCED_GRAVITON_W_NATIVE_FINITE_K_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_INDUCED_GRAVITON_W_NATIVE_FINITE_K_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-BZ runner-defined yz TT bubble sign diagnostic for D(q)=i sigma.sin(q)+mI over the stated N and mass tests, with the bare-Hermitian control comparison.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-112403-e30e83b95f-universal_gr_induced_gravito`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the runner-defined yz TT channel, the native elliptic operator gives a positive, convergent, mass-robust k^2 bubble slope, while the non-elliptic bare-Hermitian control gives a negative, N-divergent slope.  _(class `C`)_
+- **chain closes:** True — Within the bounded runner-defined scope, the operator, vertex, finite-difference normalization, grids, and tested masses are explicit, and the source runner genuinely computes the determinant checks and bubble slopes. An independent Pauli-vector trace calculation reproduces the determinant count, positive native TT slopes, negative trace channel, and negative divergent bare-Hermitian control.
+- **rationale:** The runner does not hard-code the contested slope values or import them from another note; it instantiates Pauli matrices, the finite Brillouin-zone grid, the native and control operators, and computes the finite-k bubble. The determinant identities and TT projection close algebraically, and the numerical sign/convergence claims close by first-principles finite computation. The note explicitly excludes the full metric Hessian, Ward identity, spin-2 isotropy bridge, Newton normalization, and chiral limit, so those open bridges do not overbroaden the audited claim.
+- **auditor confidence:** high
 
 ### `universal_gr_invariant_frame_obstruction_note`
 

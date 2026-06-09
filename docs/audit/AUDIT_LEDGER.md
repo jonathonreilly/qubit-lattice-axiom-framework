@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 781 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1360 |
+| unaudited | 1359 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 21 |
+| ~~audited_conditional~~ | 22 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1217 |
-| `audited_conditional` | 21 |
+| `audited_conditional` | 22 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1675 |
+| `unaudited` | 1674 |
 
 | claim_type | count |
 |---|---:|
@@ -104,13 +104,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1386 | 100.44 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 765 | 61.08 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 853 | 58.24 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1281 | 52.82 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1282 | 52.83 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 490 | 47.94 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1017 | 44.49 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1198 | 42.73 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1005 | 40.47 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 265 | 39.55 | `unaudited` | unaudited |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1249 | 39.29 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1250 | 39.29 | `audited_clean` | **retained** |
 | 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 603 | 39.24 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 803 | 38.65 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 694 | 38.44 | `audited_clean` | **retained_no_go** |
@@ -1352,6 +1352,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3189,6 +3190,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At theta_m = 0.30, k0 = 0.60, strength = 5e-4, sweeping g from 0.0 to 0.5 gives a centroid-shift response linear in g with R^2 approximately 1.0000.  _(class `C`)_
 - **chain closes:** True — The runner source directly constructs the split theta_eff = theta_m * (1 - g * f) walk, evolves wave packets, computes centroid differences, sweeps g, and fits a line. Within the narrowed toy-harness scope, the reported stdout matches a genuine computation rather than a hard-coded verdict.
 - **rationale:** The note no longer claims closure of the earlier theta_m/k residual problems; it claims only an exploratory fixed-theta g-linearity diagnostic. The provided source computes the dispersion, field scaling, k sweep, g sweep, and theta sweep from explicit local-unitary walk operations, with the load-bearing g sweep passing at R^2 = 1.0000. Because the claim is explicitly bounded to that runner-supported observation and does not import an external comparator or upstream open authority, the narrowed chain closes on its own terms.
+- **auditor confidence:** high
+
+### `chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08`
+
+- **Note:** [`CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md`](../../docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional tensor-product separation between separate-factor Dirac chirality gamma_5 and Koide/generation chirality Gamma_chi on R^3, including the C3-equivariant anticommuting disjointness.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-123412-4325005196-chirality_gate_is_two_indepe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because gamma_5 = I_3 tensor sigma_3 is identity on the generation factor, it commutes with every generation-sector operator G tensor I_2 and cannot supply the generation-sector anticommuting condition {M_gen, Gamma_chi}=0.  _(class `A`)_
+- **chain closes:** False — The algebraic separation closes for a stipulated separate-factor gamma_5 = I_3 tensor sigma_3. The restricted packet does not close the stronger assertion that the retained Cl(3,1) theorem itself supplies that chirality and the spin-statistics use, since the cited Cl(3,1) authority explicitly scopes itself as a Clifford classification rather than a chirality-existence theorem.
+- **rationale:** The runner performs genuine finite matrix checks, and an independent exact check confirms Gamma_chi^2 = I, [Gamma_chi,R] = 0, gamma_5 beta + beta gamma_5 = 0, [gamma_5,G tensor I_2] = 0, and comm(R) intersect anticomm(Gamma_chi) = {0} inside symmetric generation operators. These class-A identities support the two-gate separation once the separate L/R gamma_5 factor is granted. However, the packet does not provide a retained bridge from the Cl(3,1) extension theorem to the asserted gamma_5/spin-statistics supply, so the full source-note scope is conditional rather than clean.
 - **auditor confidence:** high
 
 ### `chsh_structural_bound_narrow_theorem_note_2026-05-17`

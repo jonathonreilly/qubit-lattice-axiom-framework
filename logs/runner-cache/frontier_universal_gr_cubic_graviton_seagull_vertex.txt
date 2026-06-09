@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py
+runner_sha256: 53cefbaa74731b04be45a03bba213d3e4525b2fb5bb3e62a956bc22ec1174e63
+timeout_sec: 420
+exit_code: 0
+elapsed_sec: 1.95
+status: ok
+----- stdout -----
+PASS T1 paramagnetic triangle <T T T> VANISHES (max over channels+momenta = 2.2e-18) -- 2-comp Cl(3) feature
+PASS T2 trace-containing full determinant third derivative NONZERO (seagull): <yz,yz,trace>=0.3215, <trace^3>=0.4069
+PASS T3 STRUCTURE: pure-TT^3 VANISHES (<yz^3>=-4.2e-11, <(yy-zz)^3>=-8.3e-11) but TT^2-conformal NONZERO (<(yy-zz)^2,trace>=0.1328)
+PASS T4 ROBUST: <yz,yz,trace> eps-independent (rel dev 8.9e-04) and Nyz-independent (rel dev 6.3e-04) -- genuine vertex
+
+Finite W-native cubic diagnostic: trace-containing full determinant channels are nonzero
+(<yz,yz,trace> and <trace^3>), while the tested paramagnetic triangle and pure-TT^3
+channels vanish for the single two-component Cl(3) fermion. This is a bounded
+seagull/trace-channel result only: no Einstein-Hilbert cubic closure, cubic Ward identity,
+pure-TT cubic vertex, or magnitude normalization is claimed here.
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

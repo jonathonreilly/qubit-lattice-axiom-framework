@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/koide_delta_c3_circulant_spectral_boundary_2026_06_08.py
+runner_sha256: 85bdebab0044a6c711be1cc7bc5aeb7fd93cd96ce2653560ecd8baa56bd8ec58
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.89
+status: ok
+----- stdout -----
+KOIDE delta: C3 circulant spectral boundary
+================================================================
+[PASS] D1: M = aI + bC + b-bar C^2 Hermitian, eigenvalues a + 2|b|cos(delta + 2pi k/3) (real)
+       Hermitian=True; eig(M)=[-0.063685  1.1669    3.996785] == lam=[-0.063685  1.1669    3.996785]
+[PASS] D2: e1=3a, e2=3(a^2-|b|^2) delta-INDEPENDENT; e3=det M = a^3-3a|b|^2 + 2|b|^3 cos(3 delta) (circulant-det identity) -- LINEAR (monotonic) in u=cos(3 delta); eigenvalue-product grid-checked
+       e1=3*a, e2=3*(a - c)*(a + c), e3(circ)=a**3 - 3*a*c**2 + c**3*exp(3*I*delta) + c**3*exp(-3*I*delta); product==closed on 41-pt grid: True
+[PASS] D3: power sums p_n (n=1..6) are functions of u=cos(3 delta) ALONE (invariant under the cos3delta-stabilizer delta->-delta, delta->2pi/3-delta) -> so is every symmetric function (Newton)
+       p1:u-only; p2:u-only; p3:u-only; p4:u-only; p5:u-only; p6:u-only
+[PASS] D4: det M (d/du = 2|b|^3 > 0) and Tr log|M| (d/du = 2|b|^3/det > 0) are MONOTONIC in u -> delta-gradient = -3 sin(3 delta) F'(u) vanishes ONLY at sin(3 delta)=0 (degenerate boundary)
+       d(det)/du=2*c**3; d(Trlog)/du>0:True; |d(Trlog)/ddelta| at 0=3.07e-08, at 2/9=23.548
+[PASS] D5: stationary delta=0,60deg are DEGENERATE; comparator delta=2/9 is NON-degenerate, interior u=cos(2/3)~0.786, sin(3*2/9)!=0 -> not a spectral-stationary point
+       gaps: 0=1.6e-15, 60=1.8e-15, 2/9=0.9178; u_phys=0.7859 interior=True; sin(3*2/9)=0.6184
+[PASS] D6: eigenvalue SET invariant under delta -> -delta (relabel k -> -k) -> masses EVEN in delta: SIGN of delta undetermined by spectrum (Z2 orientation residual); |delta| fixed by u
+       spectrum(+0.41)==spectrum(-0.41): True
+[PASS] D7: u_target=cos(2/3)~0.786 is strictly interior to [-1,1]; det and Tr log have NO interior critical point in u (monotonic), so these canonical spectral functionals do not select delta=2/9
+       u_phys=0.78589 in (-1,1); canonical functionals monotonic (d(det)/du=2*c**3!=0) -> no interior extremum
+[PASS] D8: the squared-Vandermonde discriminant has its interior critical point at u*=0 (delta=30deg), amplitude-INDEPENDENT, a concave MAX; not the comparator u=cos(2/3)~0.786.
+       u* solving dD/du=0 -> [0] (=0); d2D/du2=-216*c**6 (<0, max); argmax_delta==30deg for all amplitudes: True
+
+TOTAL: PASS=8 FAIL=0
+VERDICT: symmetric spectral quantities of the Hermitian C3 circulant collapse to u=cos(3 delta).
+The canonical spectral examples det and Tr log are monotone in u and are stationary only at the
+degenerate delta=k*60deg boundary; the discriminant extremizes at delta=30deg. The runner supports
+this bounded spectral boundary only. It does not close non-spectral, labeled, dynamical, or future
+readout routes to the Koide phase.
+
+----- stderr -----
+

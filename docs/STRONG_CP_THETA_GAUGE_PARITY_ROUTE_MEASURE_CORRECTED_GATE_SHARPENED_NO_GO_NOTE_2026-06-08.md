@@ -102,6 +102,46 @@ coupling, unifying `θ_gauge` with the i-gate orientation structure).
   force color parity (a derived O_h-invariant minimal action would retire it); adds
   no axiom, no fitted value. The `θ = 0` empirical target is not consumed.
 
+## No-Go Discipline (N1–N8)
+
+- **N1 — alternative routes.** Six forcing routes for "color-sector parity (hence
+  `θ_gauge=0`) is forced" were attacked and each **fails**: (1) "no P-source / color
+  vectorlike" → fails (the lattice orientation sources `F̃F`, T7); (2) Vafa-Witten →
+  only blocks *spontaneous* P/CP breaking given bare `θ=0`, does not set the bare `θ`;
+  (3) orientation-coupling → `θ_gauge` IS the un-derived color↔`Z₂` coupling (gated);
+  (4) regeneration-block via K-reality → an ordinary SM fact, not framework-native;
+  (5) the lattice-QCD objection → O_h-invariance of the *substrate* does not force
+  P-invariance of the *action*; (6) emergent-Lorentz → forces only the proper rotation
+  group, not parity. **RULED OUT BY PRIOR:** reality/positivity/CPT/RP do not force
+  `θ_gauge=0` (`STRONG_CP_GAUGE_THETA_NOT_FORCED...`, `STRONG_CP_RP_HALF...`,
+  `retained`/`retained_no_go`).
+- **N2 — wall independence.** The parity-invariance gate, the lattice-orientation
+  source of `F̃F`, the RG-naturalness suppression, and the clock-rate scale are
+  independent gates; none follows from another.
+- **N3 — hidden-wall scan.** The hidden wall is that the Cl(3) volume element
+  `ω = σ₁σ₂σ₃ = i·I` (= `sign(Vandermonde)`, the i-identity gate's native `Z₂`) carries
+  the O_h `det(R)` character (T7) — a framework-native P-source for `F̃F`. So the
+  measure-cancellation correction (T2) is not smuggled, and "color has no P-source" is
+  explicitly refuted rather than assumed.
+- **N4 — residual matching.** The residual is matched exactly to the un-derived
+  color↔orientation-`Z₂` coupling (the `β=6`-class un-derived-couplings wall), not a
+  vaguer "minimality"; the matter side `arg det M_q ∈ {0,π}` (K-reality) is contrasted
+  and not imported to the gauge side.
+- **N5 — rhetoric audit.** "Not forced" is scoped to: color-sector parity is an
+  EFT-naturalness assumption, not derived. It does **not** claim `θ_gauge ≠ 0`, nor
+  that no future O_h-invariant minimal gauge-action derivation can force it.
+- **N6 — partial-closure scan.** The live partial closure is a **derived**
+  O_h-invariant minimal color action (no orientation coupling) → `θ_gauge=0`; if that
+  action class is independently derived, this gate is retired without a new axiom.
+- **N7 — steelman.** The strongest objection — the vectorlike color structure should
+  "naturally" be P-even — is accepted as a *motivation* but shown not to be a
+  *derivation*: `F̃F` is built from the orientation `Z₂` the framework supplies (T7),
+  so a P-odd color term is sourced, not unsourced; parity-invariance must be imposed.
+- **N8 — cross-cycle echo.** This matches the prior strong-CP action-class campaigns
+  (`STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE...`, `..._NOT_FORCED_BY_REALITY_POSITIVITY_OR_CPT`):
+  a clean local principle prunes one route while the action-class/coupling question
+  remains the separate, un-derived residual.
+
 ## Load-bearing inputs
 
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — the cubic `Z³`

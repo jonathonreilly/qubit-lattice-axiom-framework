@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 775 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1374 |
+| unaudited | 1373 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 17 |
+| ~~audited_conditional~~ | 18 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1207 |
-| `audited_conditional` | 17 |
+| `audited_conditional` | 18 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1689 |
+| `unaudited` | 1688 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 779 |
-| `leaf` | 1290 |
+| `medium` | 780 |
+| `leaf` | 1289 |
 
 - **Retained pending chain closure:** 12
 - **Citation cycles detected:** 15
@@ -104,14 +104,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1386 | 100.44 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 765 | 61.08 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 853 | 58.24 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1282 | 52.83 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1281 | 52.82 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 490 | 47.94 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1018 | 44.49 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1198 | 42.73 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1005 | 40.47 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 265 | 39.55 | `unaudited` | unaudited |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1250 | 39.29 | `audited_clean` | **retained** |
-| 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 604 | 39.24 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1249 | 39.29 | `audited_clean` | **retained** |
+| 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 603 | 39.24 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 803 | 38.65 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 694 | 38.44 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
@@ -1346,6 +1346,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `fifth_family_complex_boundary_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5474,6 +5475,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because L is symmetric, d/dPhi[1/2 Phi^T L Phi]=L Phi, and adding the mass and source derivatives gives grad_Phi S=(L+mu^2 I)Phi-G_c rho.  _(class `A`)_
 - **chain closes:** True — The result is direct quadratic-form calculus on the displayed action: the graph-gradient, mass, and source derivatives have the stated signs and factors. The cited self-consistency note is not load-bearing for this variational identity and is not used to select the action.
 - **rationale:** The load-bearing step is a genuine class A algebraic closure over a stipulated action, not a definition substitution or numerical match. The runner source performs exact rational checks of the Laplacian construction, action gradient, stationary-source witness, constant-mode behavior, positive-mu2 witnesses, and scope firewalls rather than merely printing PASS. Independently, with the standard unordered-edge, nonnegative-weight Laplacian convention, Phi^T L Phi=sum_E w_ij(Phi_i-Phi_j)^2, so the factor 1/2 differentiates to L Phi; the mass and source terms then give the displayed equation. The repaired note explicitly disclaims action selection and operator uniqueness, so no hidden selection theorem is being imported.
+- **auditor confidence:** high
+
+### `fifth_family_complex_boundary_note`
+
+- **Note:** [`FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite targeted audit of the radial-shell fifth-family rows in the supplied runner over drifts [0.05, 0.20, 0.30] and seeds [0, 1].
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-115720-d770372974-fifth_family_complex_boundar`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Exactly one anchor row passes the Born/F~M gates and the TOWARD -> AWAY crossover gate: drift = 0.20, seed = 0.  _(class `C`)_
+- **chain closes:** False — The anchor-row computation itself is a genuine finite compute from the supplied geometry, field, and propagation helpers. The singleton selectivity claim does not close because the Born proxy is computed only for (0.20, 0), while anchor_ok requires born is not None; the (0.20, 1) row also shows TOWARD -> AWAY and is excluded from the companion set by this uncomputed Born gate.
+- **rationale:** The runner source does perform nontrivial computation rather than merely printing constants: it grows the lattice, rebuilds radial-shell connectivity, constructs the source field, propagates amplitudes, and computes centroid/probability diagnostics. However, the advertised exact companion row set is not established across the sampled rows because the Born gate is only evaluated for the claimed anchor row. Since stdout shows (0.20, 1) also has the TOWARD -> AWAY crossover and F~M near 1, the restricted packet lacks the missing Born check or scope argument needed to exclude it.
 - **auditor confidence:** high
 
 ### `fifth_family_radial_boundary_note`

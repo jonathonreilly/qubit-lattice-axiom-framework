@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 529,
     "high": 452,
-    "leaf": 1379,
-    "medium": 821
+    "leaf": 1378,
+    "medium": 822
   },
   "flagship_signal_used": false,
   "node_count": 3181,
@@ -37,8 +37,8 @@
     {
       "claim_id": "graph_first_su3_integration_note",
       "criticality": "critical",
-      "load_bearing_score": 52.825,
-      "transitive_descendants": 1282
+      "load_bearing_score": 52.824,
+      "transitive_descendants": 1281
     },
     {
       "claim_id": "minimal_axioms_2026-05-03",
@@ -73,14 +73,14 @@
     {
       "claim_id": "native_gauge_closure_note",
       "criticality": "critical",
-      "load_bearing_score": 39.289,
-      "transitive_descendants": 1250
+      "load_bearing_score": 39.288,
+      "transitive_descendants": 1249
     },
     {
       "claim_id": "cl3_color_automorphism_theorem",
       "criticality": "critical",
-      "load_bearing_score": 39.241,
-      "transitive_descendants": 604
+      "load_bearing_score": 39.238,
+      "transitive_descendants": 603
     },
     {
       "claim_id": "yt_ward_identity_derivation_theorem",

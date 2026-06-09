@@ -18,7 +18,7 @@ admission, or bounded-status source.
    requires explicit owner approval and a reviewed registry/policy update
    before a worker may use it as an accepted premise.
 
-Current approved primitive:
+Current approved primitives:
 
 - `scale_reference_primitive`:
   `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md`. This grants the single
@@ -26,3 +26,11 @@ Current approved primitive:
   It is not a Planck import, not a Tier-A admission, and not a bounded-status
   source. It does not assert `a/l_P = 1` as a derived theorem or supply any
   dimensionless physics.
+- `kinetic_isotropy_primitive`:
+  `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`. This grants only the
+  structural OS0 kinetic-form isotropy `c_t = c_s`: the emergent tick is
+  grained on the same footing as the spatial edge. It is not an axiom, not a
+  Tier-A admission, and not a bounded-status source. It does not supply an
+  absolute scale, spacing-ratio theorem, dynamics, Lorentz-closure theorem,
+  mass ratio, coupling, mixing angle, phase, selector, readout bridge,
+  probability rule, normalization rule, or empirical match.

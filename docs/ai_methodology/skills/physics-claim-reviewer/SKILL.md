@@ -94,8 +94,12 @@ framing in prose:
    registry check in
    `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. The registered
    `scale_reference_primitive` grants the Planck scale reference as units
-   conversion only; it is not a bounded import. For the symmetric check on
-   bounded-theorem candidates, see the
+   conversion only; it is not a bounded import. The registered
+   `kinetic_isotropy_primitive` grants only structural OS0 kinetic-form
+   isotropy `c_t = c_s`; it is not a bounded import and does not supply
+   dynamics, a Lorentz-closure theorem, scale, spacing-ratio theorem, selector,
+   or empirical content. For the symmetric check on bounded-theorem candidates,
+   see the
    `LabelingConventionReviewer` in
    `docs/ai_methodology/skills/review-loop/SKILL.md`.
 4. **Premise-retention check.** No-go theorems depend on premise lists

@@ -92,15 +92,24 @@ derivation. Record is part of the approved `minimal_axioms` node in its narrow
 durable-realized-outcome form, not a Tier-A admission; the older
 `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` parent is not an axiom-premise node.
 The scale-reference primitive is the approved units primitive, not a Tier-A
-admission or a bounded Planck import. New axioms and new primitives both
-require explicit owner approval and a reviewed registry/policy update before
-review-loop may treat them as accepted premises.
+admission or a bounded Planck import. The kinetic-isotropy primitive is the
+approved structural OS0 kinetic-form isotropy `c_t = c_s`, not a Tier-A
+admission or a bounded-status source; it supplies no dynamics, Lorentz-closure
+theorem, absolute scale, spacing-ratio theorem, mass ratio, coupling, mixing
+angle, phase, selector, readout bridge, probability rule, normalization rule,
+or empirical match. New axioms and new primitives both require explicit owner
+approval and a reviewed registry/policy update before review-loop may treat
+them as accepted premises.
 Before naming a changed dependency as an import, wall, Tier-A admission, or
 bounded-status source, perform the primitive registry check in
 `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. In particular, if
 the dependency is only the registered `scale_reference_primitive`, treat the
 Planck scale reference as already granted units conversion and do not mark the
-row `retained_bounded` on that basis.
+row `retained_bounded` on that basis. If the dependency is only the registered
+`kinetic_isotropy_primitive`, treat `c_t = c_s` as already granted structural
+kinetic-form isotropy and do not bound the row on that basis; audit only the
+extra dynamics, closure theorem, observable, or empirical content actually
+claimed.
 
 The framework baseline (per `MINIMAL_AXIOMS_2026-06-05.md`) is the three named
 axioms Lattice, Quantum, and Record. Lattice is the cubic `Z^3` lattice with

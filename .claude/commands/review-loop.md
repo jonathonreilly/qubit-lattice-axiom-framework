@@ -35,6 +35,10 @@ Run the repo-native physics review loop from:
    `docs/audit/data/axiom_premise_nodes.json`, and any relevant primitive
    source note. The registered `scale_reference_primitive` grants the Planck
    scale reference as units conversion only; it is not a bounded Planck import.
+   The registered `kinetic_isotropy_primitive` grants only structural OS0
+   kinetic-form isotropy `c_t = c_s`; it is not a bounded import, Lorentz
+   theorem, dynamics, scale, spacing-ratio theorem, selector, or empirical
+   input.
 9. Re-review only files changed by the fix pass, plus interacting files that
    were already in the original changed-file set.
 10. Before closing or rejecting a non-landable PR, run the skill's salvage pass:
@@ -87,7 +91,11 @@ Run the repo-native physics review loop from:
   chain-satisfy dependencies without making rows `retained_bounded`. Do not
   call the registered `scale_reference_primitive` a Planck import, Tier-A
   admission, missing premise, no-go wall, or bounded-status source. Do not
-  grant it more than `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` declares.
+  grant it more than `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` declares. Do not
+  call the registered `kinetic_isotropy_primitive` a Tier-A admission, missing
+  premise, no-go wall, bounded-status source, Lorentz theorem, dynamics, scale,
+  spacing-ratio theorem, selector, or empirical input; do not grant it more
+  than `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md` declares.
 - `/review-loop` must not apply audit verdicts. It prepares
   audit-compatible review surfaces and reports which proposed claims require
   the independent audit worker.

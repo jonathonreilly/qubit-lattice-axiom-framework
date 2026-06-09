@@ -11,7 +11,7 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3044 |
+| Ledger rows | 3045 |
 | Applied audit verdicts | 1414 |
 | Retained-grade rows, including boxed decorations | 1279 |
 | Retained positive theorems | 211 |
@@ -72,15 +72,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3181 |
+| Citation-graph nodes | 3182 |
 | Critical nodes | 529 |
 | High nodes | 452 |
 | Medium nodes | 819 |
-| Leaf nodes | 1381 |
+| Leaf nodes | 1382 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1385 descendants; score 100.437
+- `minimal_axioms` - critical; 1386 descendants; score 100.938
 - `three_generation_observable_theorem_note` - critical; 765 descendants; score 61.081
 - `observable_principle_from_axiom_note` - critical; 853 descendants; score 58.238
 - `graph_first_su3_integration_note` - critical; 1281 descendants; score 52.824

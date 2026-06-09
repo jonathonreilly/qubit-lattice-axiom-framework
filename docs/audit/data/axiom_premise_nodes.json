@@ -3,7 +3,8 @@
   "description": "Allowlist of canonical axiom and explicitly approved primitive premise nodes. Each entry binds a STABLE un-dated claim_id to the current (possibly dated) source-doc path. build_citation_graph.py canonicalizes the claim_id of any listed path to the stable id, so inbound citation edges and the premise status survive re-dating of the source doc. PR3 attaches the axiom_premise meta-subtype + auditor carve-out to these ids; PR3's structural guard enforces that each listed doc contains only approved premise content (no framework-rule / ratification clauses). These premises chain-satisfy without bounding downstream rows; Tier-A derivation-target admissions live in tier_a_admissions.json and are the only accepted premises that bound otherwise retained rows.",
   "canonical_ids": [
     "minimal_axioms",
-    "scale_reference_primitive"
+    "scale_reference_primitive",
+    "kinetic_isotropy_primitive"
   ],
   "nodes": {
     "minimal_axioms": {
@@ -27,6 +28,14 @@
       ],
       "legacy_claim_ids": [],
       "note": "Explicitly approved framework primitive for the single dimensionful scale reference a^{-1}. Units conversion only: carries no dimensionless content and does not assert a/l_P=1. Dependencies on this primitive chain-satisfy without bounding downstream rows."
+    },
+    "kinetic_isotropy_primitive": {
+      "current_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "aliased_paths": [
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+      ],
+      "legacy_claim_ids": [],
+      "note": "Explicitly approved framework primitive for the space-time kinetic-form isotropy c_t=c_s (OS0 graining isotropy): the emergent tick is grained on the same footing as the spatial edge. A dimensionless STRUCTURAL premise, the time-direction analogue of the Lattice axiom's spatial cubic adjacency; carries no dimensionless DYNAMICAL content (no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or fit) and does not re-axiomatize emergent time. This primitive supplies only the kinetic form ratio, not an absolute scale, spacing-ratio theorem, dynamics, or downstream Lorentz theorem. Dependencies on this primitive chain-satisfy without bounding downstream rows."
     }
   }
 }

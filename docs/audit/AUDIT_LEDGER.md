@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 783 |
+| **retained_bounded** | 784 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 37 |
-| unaudited | 1357 |
+| unaudited | 1356 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1219 |
+| `audited_clean` | 1220 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1672 |
+| `unaudited` | 1671 |
 
 | claim_type | count |
 |---|---:|
@@ -102,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1386 | 100.44 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 765 | 61.08 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 766 | 61.08 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 853 | 58.24 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1282 | 52.83 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 490 | 47.94 | `unaudited` | meta |
@@ -301,6 +301,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cpt_exact_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `critical_exponents_topology_live_scout_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `critical_exponents_topology_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cross_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -3970,6 +3971,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In this finite configured scout, three graph representatives have admissible onset fits with fitted beta values 0.7328, 0.3675, and 0.3348, while three representatives are degenerate; the fitted beta spread is evidence that topology affects this finite-size onset diagnostic.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the six graph representatives, evolves the stated finite diagnostic, fits onset curves from computed arrays, labels rows by finite R^2 criteria, and checks the reported bounded assertions. Independently from the runner assertions, the displayed fit betas have spread 0.7328 - 0.3348 = 0.3980, exceeding 0.35, and the three degenerate rows show non-finite beta and R^2 as claimed.
 - **rationale:** The restricted packet contains the source note, cached output, and full primary runner source, with no missing helper imports or cited upstream dependencies. The code is not a trivial printout: it builds graph families, solves the finite evolution and field equations, performs curve fits, and computes the table values before checking the bounded assertion surface. The hard-coded expected label sets are used as regression assertions against computed rows, not as the source of the fitted beta values. The audited conclusion is limited to topology-dependent finite-size onset behavior in this configured scout, so it closes without importing an asymptotic exponent, universality class, or external comparator.
+- **auditor confidence:** high
+
+### `critical_exponents_topology_note_2026-04-10`
+
+- **Note:** [`CRITICAL_EXPONENTS_TOPOLOGY_NOTE_2026-04-10.md`](../../docs/CRITICAL_EXPONENTS_TOPOLOGY_NOTE_2026-04-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-size scout over the six configured graph families in scripts/frontier_critical_exponents.py, limited to the displayed fitted/degenerate labels, beta spread, R^2 thresholds, and finite saturation readouts.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-124229-7733b4f72b-critical_exponents_topology_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Three nondegenerate fitted rows have different beta values, and three configured rows are degenerate under the runner's criteria.  _(class `C`)_
+- **chain closes:** True — The supplied runner source computes the six graph instances, finite evolution, fitted beta/R^2 values, and row labels rather than importing them from another note. The displayed table predicates also check directly from the packet values, including beta spread 0.7328 - 0.3348 = 0.3980 > 0.35.
+- **rationale:** The claim is correctly bounded to the finite runner scout and expressly disclaims universality-class, asymptotic exponent, continuum-limit, and retained-status conclusions. The runner is not a constant-printing script: it builds the graph families, performs the sparse finite evolution, fits the post-critical order proxy, and then asserts finite predicates matching the note and cache. The quantitative inventory in the restricted packet is internally consistent: six rows, three finite fits with R^2 >= 0.90, three degenerate rows with nonfinite beta/R^2, finite phi_sat values, and beta spread above 0.35. No cited authority or external comparator is needed for this scoped finite-computation claim.
 - **auditor confidence:** high
 
 ### `cross_family_universality_note`

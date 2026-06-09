@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py
-runner_sha256: 86098342360bccf77f3407db6caf4fcd95196c708b38b9853426c78cb343708f
+runner_sha256: a542e8f2dc6f985310b79cea07b4f0e629b1c6c8b41acf22b599a829a68c6604
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.54
+elapsed_sec: 12.92
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -18,8 +18,8 @@ PASS +1 and -1 same-point source fields cancel exactly
 
 zero_delta     = +0.000000000000e+00
 neutral_delta  = +0.000000000000e+00
-plus_delta     = -2.028481894900e-06
-minus_delta    = +2.028191386616e-06
+plus_delta     = -2.028481895566e-06
+minus_delta    = +2.028191385950e-06
 linear_slope   = -2.028336655911e-06
 
 PASS zero-source centroid delta is exact

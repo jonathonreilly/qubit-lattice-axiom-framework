@@ -29,6 +29,22 @@ honesty subsection (Section 7) lists every gap as open, not glossed.
 
 ---
 
+## 2026-06-09 kinetic-isotropy pointer
+
+The approved `kinetic_isotropy_primitive`
+([`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md))
+now supplies the structural `c_t = c_s` kinetic-form premise used by the
+free-continuum reconstruction target. It chain-satisfies as an approved
+primitive and is not a bounded import or Tier-A admission. It also does **not**
+derive SO(4), Lorentz covariance, boost generators, reflection positivity,
+statistics, the lattice-measure bridge, or interacting dynamics.
+
+The 2026-06-09 free-continuum assembly-support note checks the standard
+SO(4) / Wick-continued Poincare algebra target under those conditional
+hypotheses. No audit verdict is changed by this pointer; OS2 (RP), rungs B/C,
+the abstract OS reconstruction theorem, gate G1, and the `1+1d -> 4D` arena
+bridge remain governed by their own rows.
+
 ## 0. Admitted context (cited rungs + standard methodology)
 
 This note consumes the following as admitted inputs; it does not re-derive them.

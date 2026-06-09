@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_cubic_diffeo_ward_continuum_closure.py
+runner_sha256: e9b6fa3ecce35f4c1229ebf9f3f6498b3dc44b2083ae4c9e2131aa81c76c825e
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 74.77
+status: ok
+----- stdout -----
+PASS T1 CONSERVED cubic Ward resid/amplitude DECREASES with k: 0.0315@k1.05 > 0.0234@k0.79 > 0.0167@k0.63 (~k^+1.24, positive -> CLOSURE, O(a^2) floor)
+PASS T2 NAIVE C1 cubic Ward resid/amplitude does NOT close: 0.0494@k1.05 -> 0.0540@k0.79 (~k^-0.31, non-positive -> flat/growing, NO closure)
+PASS T3 conserved resid/amplitude < naive and the gap WIDENS as k->0 (naive/conserved = 1.57@k1.05 -> 2.31@k0.79)
+
+The cubic diffeomorphism Ward identity CLOSES in the continuum limit (O(a^2) lattice floor) with
+the conserved coupling D(P_eff) + the sqrt(g) measure: the residual normalized by the amplitude
+vanishes as a positive power of k. The naive (non-conserved) coupling does NOT close. The lattice
+Brillouin zone provides the finite, diffeo-controlled UV regulator the continuum lacks. Together
+with the operator backbone (#3325) and the conserved-coupling/loop-level reduction (#3329), the
+W-native induced graviton's cubic self-interaction obeys nonlinear diffeomorphism invariance --
+the Einstein-Hilbert pin. Magnitude registered (G3).
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

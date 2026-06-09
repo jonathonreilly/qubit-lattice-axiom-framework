@@ -1,0 +1,67 @@
+========================================================================================
+K/CPT-ORBIT SHRINKS OF THE TIER-A ADMISSIONS
+========================================================================================
+
+----------------------------------------------------------------------------------------
+SHRINK 1 / T1: ground truth -- the landed theta note's two premises (mechanical)
+----------------------------------------------------------------------------------------
+  [PASS] the landed theta note's conditionality is exactly the two selected-surface premises: (P1) no bare theta slot in the action class; (P2) positive-real quark-mass orientation (both located mechanically in the live note)
+
+----------------------------------------------------------------------------------------
+SHRINK 1 / T2: K maps det -> conj(det); the orbit identifies +-arg det
+----------------------------------------------------------------------------------------
+  [PASS] K (conjugation) maps det = z -> conj(z): arg det -> -arg det; the K-orbit of the determinant is {z, conj z} = {(|z|, +phi), (|z|, -phi)}
+
+----------------------------------------------------------------------------------------
+SHRINK 1 / T3: HOSTILE -- orbit-invariance alone gives EVENNESS, not vanishing
+----------------------------------------------------------------------------------------
+  [PASS] cos(arg det) is K-invariant (even in phi): orbit granularity by itself does NOT kill the phase -- the discharge below must (and does) use the readout's MULTIPLICATIVE structure, not the orbit alone  --  prevents the over-claim; consistent with the independence discipline
+
+----------------------------------------------------------------------------------------
+SHRINK 1 / T4: the multiplicative lemma -- K-invariant det-class readouts are phase-free
+----------------------------------------------------------------------------------------
+  [PASS] the det-class (multiplicative) functionals on C^* are exactly the characters |z|^s exp(i k arg z) (phase part verified multiplicative)
+  [PASS] K-invariance f(conj z) = f(z) for ALL z forces the phase character k = 0 EXACTLY: K-invariant multiplicative det-readouts are |det|^s -- PHASE-FREE  --  sin(k phi) = 0 identically => k in [0]; only |det|^s survives
+
+----------------------------------------------------------------------------------------
+SHRINK 1 / T5: the discharge -- (P2) follows from the existing surface
+----------------------------------------------------------------------------------------
+  [PASS] on the registrable (K-invariant multiplicative) mass readout, any determinant value |det| e^{i phi} is readout-EQUIVALENT to its positive-real representative |det| (computed: |z|^s depends on |z| only)  --  the positive-real mass orientation is the canonical registrable representative
+  [PASS] => PREMISE (P2) of the theta note DISCHARGED into existing premises: {Record K/CPT-orbit wording (axiom) + the det-class/multiplicative readout atom (the existing (M)/observable-principle surface)} -- NOTHING NEW ADMITTED; theta_eff = theta_bare + arg det M = theta_bare + 0 on the registrable surface  --  the theta admission's residual is (P1) alone: the action-form slot
+
+----------------------------------------------------------------------------------------
+SHRINK 1 / T6: non-re-walk + non-contradiction guards
+----------------------------------------------------------------------------------------
+  [PASS] theta is NOT identified with arg det (the refuted route stays refuted): theta is the FtildeF coefficient; premise (P1) -- no bare theta slot in the action class -- remains the admission, UNTOUCHED by this discharge
+  [PASS] the RP no-go (strong_cp_rp_half_cannot_forbid_cp_odd_imaginary) is respected: no reflection-positivity argument is used anywhere above
+  [PASS] observed CP violation is NOT contradicted: the lemma is scoped to MULTIPLICATIVE det-class readouts (the mass-surface lane premise (P2) lives in); non-multiplicative K-invariant functionals carry even-phase content (T3), and rate-asymmetry observables are outside the det class entirely
+  [PASS] scope witness: cos(phi) is K-invariant and registrable but NOT multiplicative (cos(t1+t2) != cos t1 * cos t2 generically) -- exhibiting that the lemma kills phases ONLY inside the multiplicative class
+
+----------------------------------------------------------------------------------------
+SHRINK 2 / A1: K maps the generation circulant H(delta) -> H(-delta) exactly
+----------------------------------------------------------------------------------------
+  [PASS] conj(H(delta)) = H(-delta) exactly (the K/CPT action on the gate's C_3-breaking phase is the orientation flip delta -> -delta)
+
+----------------------------------------------------------------------------------------
+SHRINK 2 / A2: the registrable mass MULTISET is orientation-blind (exact)
+----------------------------------------------------------------------------------------
+  [PASS] ALL elementary symmetric polynomials of the spectrum agree at +delta and -delta (exact): the registrable mass multiset determines only the EVEN part of delta (cos 3delta, i.e. |delta| on the fundamental domain)  --  e1, e2, e3 identical under delta -> -delta
+  [PASS] the orientation flip permutes the eigenvalue LABELS by k -> -k, which is exactly the species relabel (e1 <-> e2) the registry ALREADY strips as a naming convention  --  orientation = labeling content, not physics
+
+----------------------------------------------------------------------------------------
+SHRINK 2 / A3-A4: the strip and the honest residual
+----------------------------------------------------------------------------------------
+  [PASS] => the gate's 'phase/orientation' input STRIPS: orientation (sign of delta) is K-frame/labeling convention; the registrable atom is the MAGNITUDE (|delta|, equivalently cos 3delta)  --  AC_phi_lambda: {magnitude, orientation, bridge} -> {magnitude} + conventions
+  [PASS] HONEST RESIDUAL, not attacked: |delta| = 2/9 stays the admission's atom; its irreducibility carries its own audited no-go portfolio (radian-bridge irreducibility; eigenline and cobordism no-gos) -- this runner does not contradict or re-litigate it
+
+----------------------------------------------------------------------------------------
+NET
+----------------------------------------------------------------------------------------
+  [PASS] theta admission:        2 premises -> 1 (mass orientation DISCHARGED into the existing surface; residual = the action-form/FtildeF slot)
+  [PASS] AC_phi_lambda admission: {phase magnitude, orientation, bridge} -> {phase magnitude} (orientation stripped to convention by the K-orbit; bridge already stripped by the registry)
+  [PASS] ZERO new premises consumed beyond the existing surface (Record orbit wording, the (M)/det-class readout atom, the registry's own naming-convention strip)
+  [PASS] registry edits are NOT made here (tier_a_admissions.json is audit-lane owned); this is a source-side proposal for audit-lane handling
+
+========================================================================================
+SUMMARY: PASS=20 FAIL=0
+========================================================================================

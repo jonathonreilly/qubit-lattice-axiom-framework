@@ -31722,7 +31722,7 @@
     },
     {
       "from": "static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27",
-      "to": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+      "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
     },
     {
       "from": "static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27",
@@ -91116,7 +91116,7 @@
         "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a92d04f970baf7604c19a9a6f650f9d76fb5d681c640f7192ef8564632464f08",
+      "note_hash": "b3d8cdb21d3c5578a66f8edc94cfce80498d448a09b1e2a517ee30b78df962a3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"
@@ -95828,12 +95828,12 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
         "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ad79fd15f83d76919f0800afa8ac87938d907c5eb62d14b1209f5e73c2e79a71",
+      "note_hash": "8da33fd87691fdd4319d03b551952f34a64ad34700b8d22e08c9da1427a9fd9c",
       "path": "docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
       "runner_path": "scripts/static_source_readout_i1_accepted_premise_runner.py",
       "title": "Static-Source Readout I1 Accepted-Premise Bridge"

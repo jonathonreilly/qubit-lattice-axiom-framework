@@ -6,8 +6,8 @@
 By criticality:
 - `critical`: 329
 - `high`: 254
-- `medium`: 373
-- `leaf`: 422
+- `medium`: 372
+- `leaf`: 423
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 

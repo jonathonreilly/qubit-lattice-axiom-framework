@@ -1,0 +1,25 @@
+# Trace Gate — block01 (chiral velocity quantization)
+
+```yaml
+trace_class: direct_blocker_closure
+target_claim_id: kinetic_isotropy_primitive
+target_blocker_text: >
+  "A future retained dynamics could derive the same kinetic isotropy and
+  retire the primitive. This would defeat a universal non-derivability claim,
+  so the landed claim is narrowed to the current listed structures."
+  (KINETIC_ISOTROPY_PRIMITIVE_IRREDUCIBILITY_SUPPORT_2026-06-09.md, N7)
+source_of_blocker_text: audit_ledger
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: >
+  (1) close the P4 realization tie: identify the framework's staggered
+  carrier's one-tick winding from the landed staggered surface (next cycle);
+  (2) the 3D strict Weyl enumeration (named open); (3) owner decision on
+  whether the primitive reclassifies once the conditional chain is ratified.
+```
+
+Secondary trace: the `audited_renaming` row on the min-time-step note names
+"Re-audit if a retained bridge theorem derives the record/update tick as the
+time coordinate rather than defining it" — this block's consequence map
+(winding carrier transports one edge per tick in amplitude) is upstream
+support for that door; consequence recorded, no re-audit claimed.

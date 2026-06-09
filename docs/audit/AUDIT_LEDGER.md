@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 791 |
+| **retained_bounded** | 792 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1342 |
+| unaudited | 1341 |
 | meta | 315 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 35 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1229 |
+| `audited_clean` | 1230 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 35 |
-| `unaudited` | 1657 |
+| `unaudited` | 1656 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 526 |
 | `high` | 449 |
-| `medium` | 787 |
-| `leaf` | 1282 |
+| `medium` | 786 |
+| `leaf` | 1283 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 15
@@ -111,8 +111,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1198 | 42.73 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1005 | 40.47 | `unaudited` | unaudited |
 | 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 265 | 39.55 | `unaudited` | unaudited |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1250 | 39.29 | `audited_clean` | **retained** |
-| 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 604 | 39.24 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1249 | 39.29 | `audited_clean` | **retained** |
+| 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 603 | 39.24 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 803 | 38.65 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 694 | 38.44 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 848 | 38.23 | `unaudited` | unaudited |
@@ -122,7 +122,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 18 | `cpt_exact_note` | positive_theorem | critical | 1134 | 34.15 | `audited_clean` | **retained** |
 | 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 700 | 32.95 | `unaudited` | unaudited |
 | 20 | `minimal_axioms_2026-04-11` | meta | critical | 1115 | 32.62 | `unaudited` | meta |
-| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1057 | 32.05 | `audited_clean` | **retained_bounded** |
+| 21 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1056 | 32.05 | `audited_clean` | **retained_bounded** |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 697 | 31.45 | `unaudited` | unaudited |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 824 | 31.19 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 323 | 30.34 | `unaudited` | unaudited |
@@ -733,6 +733,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `koide_pointer_record_degeneracy_d3_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_k0_real_block_equivalence_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -10327,6 +10328,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The retained unpointed tests are invariant along the source, CP1-line, and endpoint torsor fibres while the open charged-lepton readouts change, so origin-free retained data do not force the simultaneous closing representative.  _(class `A`)_
 - **chain closes:** True — The note scopes the result as an atlas no-go, not a positive Koide closure. The algebraic fibre checks exhibit invariant unpointed data together with changed readouts, so the claimed non-forcing result follows within that scoped atlas.
 - **rationale:** The runner completed from cache with 15/15 PASS lines and checks symbolic algebraic invariance/countermodel facts for the three residual freedoms. It does not hard-code a positive Koide closure; it explicitly reports that the dimensionless lane is not closed and that a physical source/boundary-origin law remains the next theorem. No one-hop dependencies are listed, so there is no open dependency chain in the restricted packet. Residual risk is limited to the note's scoped atlas premise, not to the internal no-go once that atlas is taken as the audited object.
+- **auditor confidence:** high
+
+### `koide_pointer_record_degeneracy_d3_note_2026-05-31`
+
+- **Note:** [`KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md`](../../docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C_3 regular-representation algebra: S=C+C^2 has a two-atom spectral algebra with ranks (1,2), A=i(C-C^2) resolves the S-doublet, and atom-count versus rank-weighted comparisons give Q=2/3 versus Q=1 without deriving a physical measure selector.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260609-133004-f143ccb181-koide_pointer_record_degener`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the C_3 regular representation, S=C+C^2=J-I has eigenvalue +2 on the singlet projector and eigenvalue -1 on the rank-2 doublet projector, so a sharp S record has exactly two spectral atoms while the atom measure remains unspecified.  _(class `A`)_
+- **chain closes:** True — The spectral claims follow directly from the C_3 shift matrix: C has characters 1, omega, omega^2, so S has eigenvalues 2,-1,-1 and A has eigenvalues 0,±sqrt(3). The Koide-weight comparison then follows algebraically from Q=(1+2r)/3 with r=1/2 for equal atom count and r=1 for rank/dimension weighting; the note explicitly leaves the measure selector open.
+- **rationale:** The restricted packet contains enough finite linear algebra to verify the load-bearing statement independently of the runner: S=J-I has spectral projectors of ranks 1 and 2, and A is a commuting Hermitian pointer that separates the two nontrivial C_3 characters. The runner source performs direct matrix and symbolic checks rather than importing a contested value or fitting an external comparator. The cited authorities are retained-grade for the bounded algebra/no-go context used here, and the source does not overclaim physical selection of the (1,1) measure.
 - **auditor confidence:** high
 
 ### `koide_q23_block_weight_frontier_bounded_note_2026-05-29`

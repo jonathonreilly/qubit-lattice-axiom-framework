@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1386
-**Ready (all deps already at retained-grade or metadata tiers):** 34
+**Total pending:** 1387
+**Ready (all deps already at retained-grade or metadata tiers):** 35
 
 By criticality:
 - `critical`: 333
 - `high`: 254
-- `medium`: 373
-- `leaf`: 426
+- `medium`: 372
+- `leaf`: 428
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -16,9 +16,9 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | unaudited | critical | 1052 | 13.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/microcausality_finite_range_h_bridge_2026_05_09.py` |
-| 2 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | audit_in_progress | critical | 284 | 18.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_z3_asymptotic_normalization_certificate.py` |
-| 3 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | unaudited | critical | 275 | 12.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
-| 4 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | audit_in_progress | critical | 250 | 9.47 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py` |
+| 2 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | audit_in_progress | critical | 284 | 14.65 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_z3_asymptotic_normalization_certificate.py` |
+| 3 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | unaudited | critical | 276 | 9.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
+| 4 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | audit_in_progress | critical | 251 | 9.98 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py` |
 | 5 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 1060 | 20.55 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_kawamoto_smit_phase_forcing.py` |
 | 6 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | positive_theorem | unaudited | critical | 1048 | 21.04 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_microcausality_check.py` |
 | 7 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | positive_theorem | unaudited | critical | 1045 | 21.53 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_single_clock_codimension1_evolution_check.py` |

@@ -47186,6 +47186,18 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_ew_matching_rule_m_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "fifth_family_radial_boundary_note"
     },
     {
@@ -47199,18 +47211,6 @@
     {
       "from": "repo.front_door_status",
       "to": "fifth_family_complex_boundary_note"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
     },
     {
       "from": "repo.repo_organization",
@@ -57068,7 +57068,7 @@
         "dimensional_gravity_table"
       ],
       "helper_runner_paths": [],
-      "note_hash": "03d89885766fa79a11d55cf0234b5916f1d354e3e857869ce024a5fe03874e8a",
+      "note_hash": "e12e04f8371a29fa903100bf48c720d3c79e7810e6452b658ea306221cb2b9db",
       "path": "docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md",
       "runner_path": "scripts/frontier_dimension_selection.py",
       "title": "Dimension-Selection Lower-Bound Bridge V2 (Runner-Faithful)"
@@ -91196,16 +91196,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+        "yt_ew_matching_rule_m_note_2026-05-02",
         "fifth_family_radial_boundary_note",
         "plaquette_bootstrap_framework_integration_note_2026-05-03",
         "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
-        "fifth_family_complex_boundary_note",
-        "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
-        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04"
+        "fifth_family_complex_boundary_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ba8497a850f8fed5b1104abf64b4e8744b3cd014180c3d4816d52a25c24917c1",
+      "note_hash": "b9ada86db899d84853eb7d1de0240d02207c99f92909235fe4aa83afbd5cefb7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": "scripts/render_front_door_status.py",
       "title": "Front Door Status Snapshot"

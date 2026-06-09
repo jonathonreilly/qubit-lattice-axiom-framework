@@ -129,7 +129,7 @@
     {
       "name": "source_full_length:original_runner",
       "pass": true,
-      "detail": "scripts/frontier_dimension_selection.py has 32383 bytes"
+      "detail": "scripts/frontier_dimension_selection.py has 32564 bytes"
     },
     {
       "name": "source_contains:original_runner:def measure_gravity_2d_with_d_potential",
@@ -224,7 +224,7 @@
     {
       "name": "cache_sha_fresh:original_cache",
       "pass": true,
-      "detail": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da == f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da"
+      "detail": "48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83 == 48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83"
     },
     {
       "name": "cache_exit_ok:original_cache",

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dimension_selection.py
-runner_sha256: f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da
+runner_sha256: 48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 ============================================================================
@@ -32,21 +32,21 @@ PART 2: SELF-CONSISTENCY + GRAVITY PER DIMENSION
     Self-consistent iteration (k=6.0, G=0.5)... converged (15 iters, max_iter_reached_but_stable)
     Gravity measurement (2D prop, d-dim potential)... beta=0.177, alpha=0.419, REPULSIVE
     mass sweep: M=0.002->d=-3.896248 M=0.004->d=-4.013926 M=0.008->d=-2.431008 
-    (0.1s)
+    (0.0s)
 
   d = 2  [2D square 20x20]
   ............................................................
     Self-consistent iteration (k=6.0, G=0.5)... converged (10 iters, converged)
     Gravity measurement (2D prop, d-dim potential)... beta=0.270, alpha=-0.167, REPULSIVE
     mass sweep: M=0.002->d=-1.225868 M=0.004->d=-1.960234 M=0.008->d=-2.333028 
-    (0.1s)
+    (0.0s)
 
   d = 3  [3D cubic 12^3]
   ............................................................
     Self-consistent iteration (k=6.0, G=0.5)... converged (4 iters, converged)
     Gravity measurement (2D prop, d-dim potential)... beta=1.013, alpha=1.321, attractive
     mass sweep: M=0.002->d=+0.282588 M=0.004->d=+0.577128 M=0.008->d=+1.180574 
-    (0.1s)
+    (0.0s)
 
   d = 4  [4D hypercubic 6^4]
   ............................................................
@@ -60,7 +60,7 @@ PART 2: SELF-CONSISTENCY + GRAVITY PER DIMENSION
     Self-consistent iteration (k=6.0, G=0.5)... converged (2 iters, converged)
     Gravity measurement (2D prop, d-dim potential)... beta=1.028, alpha=5.014, attractive
     mass sweep: M=0.002->d=+0.311084 M=0.004->d=+0.653136 M=0.008->d=+1.368340 
-    (0.1s)
+    (0.0s)
 
 ============================================================================
 SUMMARY TABLE
@@ -155,7 +155,7 @@ VERDICT
   Together: d >= 3 (from self-consistency) AND d <= 3 (from
   stability) uniquely gives d = 3.
 
-Total runtime: 0.3s
+Total runtime: 0.1s
 
 ----- stderr -----
 

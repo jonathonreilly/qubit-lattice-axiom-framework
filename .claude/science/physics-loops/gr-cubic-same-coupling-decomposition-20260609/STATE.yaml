@@ -1,0 +1,23 @@
+loop_slug: gr-cubic-same-coupling-decomposition-20260609
+date: 2026-06-09
+mode: science_fix
+target_claim_id: universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08
+target_blocker: "missing_bridge_theorem: add a same-vielbein-coupled dD/d2D/d3D decomposition runner or derivation showing that the checked triangle is the paramagnetic term for the determinant cubic trace channels."
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: demotion
+proposal_allowed: false
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+files_touched:
+  - docs/UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md
+  - scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py
+  - logs/runner-cache/frontier_universal_gr_cubic_graviton_seagull_vertex.txt
+verification:
+  - "python3 scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py"
+  - "python3 scripts/cached_runner_output.py scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py --refresh"
+next_exact_action: "Review/audit should verify that the same-coupling decomposition removes the prior bridge ambiguity by narrowing the source claim away from exclusive seagull localization."
+stop_condition: "Coherent source-side GR cubic repair PR opened."

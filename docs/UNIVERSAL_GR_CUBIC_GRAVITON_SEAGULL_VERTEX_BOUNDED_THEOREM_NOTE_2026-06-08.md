@@ -1,4 +1,4 @@
-# Finite W-Native Cubic Seagull Trace-Channel Boundary (Bounded)
+# Finite W-Native Cubic Trace-Channel Contact Boundary (Bounded)
 
 **Date:** 2026-06-08
 **Claim type:** bounded_theorem
@@ -19,9 +19,12 @@ d^3 W = Tr[G d^3 D] - 3 Tr[G d^2 D G dD] + 2 Tr[G dD G dD G dD],
 
 in a single two-component `Cl(3)` fermion model with a vielbein-coupled Dirac
 operator on a finite x-ring and finite transverse Brillouin-zone sums. The
-runner verifies that the paramagnetic triangle contribution vanishes in the
-tested channels, while trace-containing seagull channels of the full determinant
-third derivative are nonzero and numerically stable.
+runner verifies that trace-containing channels of the full determinant third
+derivative are nonzero and numerically stable. It now also supplies the
+same-vielbein-coupled `dD/d2D/d3D` decomposition requested by audit: on that
+same coupling, the `dD^3` triangle term is **not** zero. The older
+conserved-vertex triangle calculation is kept only as a separate comparator
+and is not used to localize the finite determinant response.
 
 The result is a finite trace-channel boundary. It is not a derivation of the
 universal Einstein-Hilbert cubic vertex, not a cubic diffeomorphism Ward
@@ -33,10 +36,12 @@ Under the runner's bounded conditions (`Lx <= 8`, `N_yz <= 10`, mass `m=1`,
 single two-component `Cl(3)` fermion, finite-difference third derivative of
 `log|det D[h]|` with `e=(I+h)^(1/2)`):
 
-- **T1. Triangle boundary.** The paramagnetic triangle
-  `2 Tr[G dD G dD G dD]` is numerically zero in the tested polarization and
-  momentum channels, with worst absolute value below `1e-6`.
-- **T2. Trace-channel seagull response.** The full determinant third derivative
+- **T1. Conserved-vertex triangle comparator.** The separate momentum-space
+  conserved-vertex triangle comparator is numerically zero in the tested
+  polarization and momentum channels, with worst absolute value below `1e-6`.
+  This is no longer treated as the same-coupling paramagnetic term for the
+  finite determinant response.
+- **T2. Trace-channel full response.** The full determinant third derivative
   has nonzero trace-containing channels. The representative values are
   `<yz,yz,trace> ~= +0.3215` and `<trace,trace,trace> ~= +0.4069`.
 - **T3. Pure-TT absence in this setup.** The tested pure transverse-traceless
@@ -44,18 +49,32 @@ single two-component `Cl(3)` fermion, finite-difference third derivative of
   `<yz,yz,yz> ~= 0` and `<(yy-zz),(yy-zz),(yy-zz)> ~= 0`.
 - **T4. Stability checks.** The nonzero `<yz,yz,trace>` response is stable
   under the finite-difference step and under the tested transverse-grid change.
+- **T5. Same-coupling decomposition.** A same-vielbein-coupled finite
+  `dD/d2D/d3D` decomposition reconstructs the finite-difference `W'''` values
+  to `4.6e-4` absolute accuracy on the tested trace channels:
 
-The runner reports `TOTAL: PASS=4 FAIL=0`.
+  | channel | `Tr[G d3D]` | `d2D*dD` terms | same-coupling `dD^3` triangle | sum | finite-diff `W'''` |
+  |---|---:|---:|---:|---:|---:|
+  | `<yz,yz,trace>` | `+0.570873` | `-0.108760` | `-0.141037` | `+0.321076` | `+0.321455` |
+  | `<trace,trace,trace>` | `+0.570873` | `-0.019474` | `-0.144916` | `+0.406483` | `+0.406937` |
+  | `<(yy-zz),(yy-zz),trace>` | `+0.570873` | `-0.258760` | `-0.179548` | `+0.132565` | `+0.132758` |
+
+The runner reports `TOTAL: PASS=7 FAIL=0`.
 
 ## What This Establishes
 
 The finite single-fermion determinant has a nonzero cubic response in
-trace-containing channels, and the nonzero response is localized to the
-vielbein seagull part rather than to the tested paramagnetic triangle.
+trace-containing channels. The same-coupling decomposition shows that the
+`d3D` contact term is load-bearing and dominant on the tested trace channels,
+but the same-coupling `dD^3` triangle term is also nonzero and contributes with
+opposite sign. Therefore the durable claim is a finite trace-channel/contact
+boundary, not exclusive localization to a triangle-free seagull sector.
 
 This is useful because it separates two facts that should not be conflated:
 trace-containing cubic response is present in this finite W-native diagnostic,
 while pure-TT cubic response is absent for the tested single-fermion carrier.
+It also separates the separate conserved-vertex triangle comparator from the
+same-coupling determinant decomposition.
 
 ## What This Does Not Establish
 
@@ -88,7 +107,9 @@ result above.
 ## Honest-Auditor Read
 
 The durable content is narrow: a finite vielbein-coupled determinant diagnostic
-has stable nonzero trace-containing cubic channels, while the tested triangle
-and pure-TT cubic channels vanish for the single two-component `Cl(3)` fermion.
-That is a useful boundary and a source for later theory work, but it is not yet
-the nonlinear GR cubic vertex.
+has stable nonzero trace-containing cubic channels, and the same-coupling
+decomposition reconstructs those channels from `d3D`, `d2D*dD`, and nonzero
+`dD^3` triangle terms. The separate conserved-vertex triangle comparator and
+the tested pure-TT cubic channels vanish for the single two-component `Cl(3)`
+fermion. That is a useful boundary and a source for later theory work, but it
+is not yet the nonlinear GR cubic vertex.

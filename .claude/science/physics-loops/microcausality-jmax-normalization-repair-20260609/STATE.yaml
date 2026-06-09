@@ -1,0 +1,25 @@
+loop_slug: microcausality-jmax-normalization-repair-20260609
+mode: campaign_block
+branch: physics-loop/microcausality-jmax-normalization-repair-20260609
+base: origin/main
+base_commit: e208d269f
+date: 2026-06-09
+target_claim_id: microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09
+target_status: bounded-support
+artifact_role: science_correction
+active_route: repair Wilson-plaquette normalization in the action-density J_max bridge
+hard_residual: exact reconstructed H locality remains conditional; full standard Wilson-action-to-diagonal-surface derivation remains out of scope
+files_touched:
+  - docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md
+  - scripts/microcausality_finite_range_h_bridge_2026_05_09.py
+  - logs/runner-cache/microcausality_finite_range_h_bridge_2026_05_09.txt
+open_imports:
+  - Hastings-Koma / Nachtergaele-Sims Lieb-Robinson estimate, used conditionally as pure-math context
+no_go_routes:
+  - old |m|+30 bound under parent Wilson action normalization is invalid
+  - exact H = -log(T)/a_tau finite-range closure is not claimed
+checks:
+  - python3 scripts/microcausality_finite_range_h_bridge_2026_05_09.py: PASS=4 FAIL=0
+  - python3 scripts/cached_runner_output.py scripts/microcausality_finite_range_h_bridge_2026_05_09.py: status ok
+pr_status: pending
+next_exact_action: create PR for reviewer extraction and independent audit recheck; do not edit docs/audit

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 806 |
+| **retained_bounded** | 807 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 38 |
-| unaudited | 1397 |
+| unaudited | 1396 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1244 |
+| `audited_clean` | 1245 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1713 |
+| `unaudited` | 1712 |
 
 | claim_type | count |
 |---|---:|
@@ -1296,6 +1296,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_supermetric_normal_form_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -18787,6 +18788,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Since the SO(3)-trivial block is pointwise fixed and the weighted norm is additive across Pi_A1 ⊕ Pi_perp, ||Pi_perp(h')||^2_d = ||h'||^2_d - ||Pi_A1(h')||^2_d = ||h||^2_d - ||Pi_A1(h)||^2_d = ||Pi_perp(h)||^2_d.  _(class `A`)_
 - **chain closes:** True — The theorem is a self-contained finite-dimensional linear-algebra statement using only R_3^T R_3 = I, spatial trace invariance, Frobenius norm invariance, and weighted orthogonality of the Pi_A1/Pi_perp split under isotropic spatial weights. No cited authority or physical bridge is needed for the scoped conclusion.
 - **rationale:** The load-bearing identities are exact algebra on the given representation and weight, and the isotropic-weight premise is explicitly tested by an anisotropic control. The runner source symbolically verifies T1 and T2, checks the concrete coordinate-movement witness and random generic movement, and does not hard-code a contested physical bridge or numerical comparator. The result is properly scoped as a pure SO(3) representation-theory theorem, not a universal-GR physical closure claim.
+- **auditor confidence:** high
+
+### `universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_STAGGERED_TT_PROJECTED_STRESS_TRIANGLE_SUPPORT_BOUNDED_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_STAGGERED_TT_PROJECTED_STRESS_TRIANGLE_SUPPORT_BOUNDED_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Selected finite-lattice, runner-defined staggered Kähler-Dirac TT-projected paramagnetic stress-triangle channels are nonzero on the stated non-collinear kinematics, with selected two-component controls vanishing; no EH cubic match, Ward identity, or helicity-vanishing closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-035013-699a399692-universal_gr_staggered_tt_pr`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-BZ computation finds selected TT-projected staggered mixed stress-triangle channels nonzero at N=6 and N=8, while the same selected TT-projected two-component Cl(3) control channels vanish.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the staggered hypercube operator, TT polarizations, vertices, and finite Brillouin-zone sums rather than reading or printing the contested values. An independent blocked-action recomputation with explicit TT tensors and numerical momentum derivatives reproduces the N=6/N=8 staggered values, the two-component control suppression, and the same-helicity guardrail.
+- **rationale:** The load-bearing step is a first-principles finite-lattice computation within the bounded runner-defined scope, producing numbers not imported from the cited notes. The cited authorities supplied in the packet are retained-grade, and the primitive-registry check does not introduce a relevant non-retained premise for this claim. The source note’s guardrails keep the conclusion at finite TT support and do not import the open Einstein-Hilbert, Ward-identity, normalization, or all-same-helicity claims.
 - **auditor confidence:** high
 
 ### `universal_gr_staggered_tt_stiffness_positive_bounded_theorem_note_2026-06-08`

@@ -3,7 +3,7 @@
     "critical": 338,
     "high": 240,
     "leaf": 442,
-    "medium": 379
+    "medium": 378
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -17455,33 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-        "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
-        "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
-        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.392,
-      "note_path": "docs/UNIVERSAL_GR_STAGGERED_TT_PROJECTED_STRESS_TRIANGLE_SUPPORT_BOUNDED_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_universal_gr_staggered_tt_graviton_triangle.py",
-      "transitive_descendants": 20
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17505,6 +17478,36 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py",
+      "transitive_descendants": 19
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
+        "universal_gr_supermetric_normal_form_note",
+        "universal_gr_polarization_frame_bundle_blocker_note",
+        "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+        "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09.py"
+      ],
+      "load_bearing_score": 6.322,
+      "note_path": "docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py",
       "transitive_descendants": 19
     },
     {
@@ -17618,30 +17621,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+      "claim_id": "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08",
       "claim_scope": null,
-      "claim_type": "no_go",
+      "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
-        "universal_gr_supermetric_normal_form_note",
-        "universal_gr_polarization_frame_bundle_blocker_note",
-        "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
-        "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
+        "key_terminology",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+        "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
+        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
+        "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
+        "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08"
       ],
       "direct_in_degree": 3,
       "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09.py"
-      ],
+      "helper_runner_paths": [],
       "load_bearing_score": 3.5,
-      "note_path": "docs/UNIVERSAL_GR_DEGENERATE_SUPERMETRIC_GRAVITON_SIGN_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "note_path": "docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py",
+      "runner_path": "scripts/frontier_universal_gr_cubic_diffeo_ward_operator_telescope.py",
       "transitive_descendants": 3
     },
     {
@@ -27830,36 +27833,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_quark_generation_equivariant_ward_degeneracy_no_go.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-        "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
-        "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
-        "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
-        "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
-      "note_path": "docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_OPERATOR_TELESCOPE_BOUNDED_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_universal_gr_cubic_diffeo_ward_operator_telescope.py",
       "transitive_descendants": 3
     },
     {
@@ -41978,5 +41951,5 @@
     }
   ],
   "ready_count": 45,
-  "total_pending": 1399
+  "total_pending": 1398
 }

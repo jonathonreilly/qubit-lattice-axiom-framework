@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 817 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 39 |
-| unaudited | 1373 |
+| unaudited | 1372 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1261 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1689 |
+| `unaudited` | 1688 |
 
 | claim_type | count |
 |---|---:|
@@ -116,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1070 | 37.06 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 922 | 35.85 | `audited_clean` | **retained_bounded** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1165 | 35.69 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1166 | 35.69 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 882 | 34.79 | `audited_clean` | **retained_bounded** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 280 | 34.63 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 705 | 32.96 | `unaudited` | unaudited |
@@ -1396,6 +1396,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dimension_selection_upper_bound_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3296,6 +3297,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At theta_m = 0.30, k0 = 0.60, strength = 5e-4, sweeping g from 0.0 to 0.5 gives a centroid-shift response linear in g with R^2 approximately 1.0000.  _(class `C`)_
 - **chain closes:** True — The runner source directly constructs the split theta_eff = theta_m * (1 - g * f) walk, evolves wave packets, computes centroid differences, sweeps g, and fits a line. Within the narrowed toy-harness scope, the reported stdout matches a genuine computation rather than a hard-coded verdict.
 - **rationale:** The note no longer claims closure of the earlier theta_m/k residual problems; it claims only an exploratory fixed-theta g-linearity diagnostic. The provided source computes the dispersion, field scaling, k sweep, g sweep, and theta sweep from explicit local-unitary walk operations, with the load-bearing g sweep passing at R^2 = 1.0000. Because the claim is explicitly bounded to that runner-supported observation and does not import an external comparator or upstream open authority, the narrowed chain closes on its own terms.
+- **auditor confidence:** high
+
+### `chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08`
+
+- **Note:** [`CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md`](../../docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-algebra separation on the supplied carrier `R^3 ⊗ (L⊕R)`: the separate-factor Dirac grading is generation-blind, while the Koide anti-commuting-operator route requires a generation-sector operator.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-045831-aee81490ce-chirality_gate_is_two_indepe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `γ_5 = I_3 ⊗ σ_3` acts as the identity on the generation factor and therefore commutes with every generation-sector operator `G ⊗ I_2`, so it cannot supply a generation operator satisfying `{M_gen, Γ_χ}=0`.  _(class `A`)_
+- **chain closes:** False — The tensor-product separation and C3-equivariant intersection calculation close exactly. The source as written also states `Q=2/3 ⇔ {M_gen, Γ_χ}=0`, but the provided Koide authority proves the anti-commuting-operator mechanism in the sufficient direction for nonzero eigenvectors and explicitly does not claim completeness/converse.
+- **rationale:** The runner genuinely constructs the finite matrices and checks class-A algebraic identities; an independent exact check confirms the involutions, tensor-factor commutations, zero C3-equivariant intersection, and existence of C3-breaking anti-commuting examples. No PDG value, tuned numerical comparator, or external empirical input is used. The non-clean point is the written biconditional tying scalar Koide `Q=2/3` to `{M_gen, Γ_χ}=0`, which is stronger than the retained authority supplied in this packet.
+- **open / conditional deps cited:**
+  - `KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08`

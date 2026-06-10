@@ -299,7 +299,7 @@ dependency chain.
 
 ## Cross-references
 
-- Parent open-gate: [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- Parent open-gate (context only; parent now cites this note): `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - Substep-1 Grassmann narrow theorem:
   [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
 - Historical Block 02 source packet:

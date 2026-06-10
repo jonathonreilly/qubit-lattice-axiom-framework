@@ -315,12 +315,17 @@ by Steps 1–3 above. The runner exhibits the load-bearing facts:
 - A_min: [MINIMAL_AXIOMS_2026-04-11.md](MINIMAL_AXIOMS_2026-04-11.md)
 - per-site Hilbert-space bridge:
   [AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-- canonical normalization carriers:
-  [G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md),
-  [G_BARE_RIGIDITY_THEOREM_NOTE.md](G_BARE_RIGIDITY_THEOREM_NOTE.md),
-  [G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md](G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md)
 - assumption / derivation ledger:
   [ASSUMPTION_DERIVATION_LEDGER.md](ASSUMPTION_DERIVATION_LEDGER.md)
+
+## Non-Load-Bearing Context
+
+- Canonical-normalization carriers fix the historical `g_bare = 1`
+  surface on which the runner exhibits `M`; they are not used in the
+  anticommutation or finite-module obstruction proof:
+  `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`,
+  `G_BARE_RIGIDITY_THEOREM_NOTE.md`,
+  `G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md`
 
 ## Citations into the loop pack
 

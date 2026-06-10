@@ -203,7 +203,7 @@ arithmetic once (P1) is registered.
   — supplies the substep-4 labeling no-go theorem with explicit
   exhaustiveness of (P1)/(P2)/(P3) closure paths (used in step (B2);
   source note `claim_type = no_go`; audit verdict pending).
-- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   — supplies the parent-gate context where `AC_φλ` is already named
   as an admitted-context residual. This bridge does not assume parent
   promotion.

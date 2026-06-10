@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_isotropy_composition_closure_2026_06_09.py
+runner_sha256: f2e292d994c6c6ea973b9fc4f17fdcee7a47d8c0359ba1f467393a19e7027e2d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.33
+status: ok
+----- stdout -----
+
+PART periodicity reduction -- derived from the landed KS breaking pattern
+==============================================================================
+  [PASS] periodicity subgroup: landed {eta, eps} breaks every odd translation (incl. mixed) and preserves all 2-site translations  --  unbroken translation subgroup = (2Z)^3 exactly -- computed on a 4^3 block
+  [PASS] periodicity cell consequence: unbroken subgroup (2Z)^3 gives the uniform 2-site Bloch cell per axis  --  scope wall -> {Lattice translation (axiom) + landed {eta, eps} pattern (KS note, unaudited) + homogeneity reading}
+
+PART composition reduction -- curvature and sub-saturation are composition (dynamics) content
+==============================================================================
+  [PASS] licensed factors: flat exchange cell and saturating shift are licensed unitary single ticks  --  each factor obeys the site-licensed tick dichotomy parent site-license degree table
+  [PASS] composite trace: tr = i sin(theta)(1 + e^{-iK}) is momentum-dependent, so single-tick structure is broken  --  the composite is radius-2 (TWO ticks) -- the license binds the tick, not compositions
+  [PASS] composite band equation: mu^2 - 2 i sin(theta) cos(K/2) mu - 1 = 0 is derived from the composite  --  mu = e^{i nu}: sin(nu) = sin(theta) cos(K/2): a genuinely CURVED massive band
+  [PASS] composite curvature: the band is curved for theta != 0 and the theta -> 0 limit is the saturating cell  --  curvature sample = -3*sqrt(39)/169 != 0; curvature lives in COMPOSITES, never the single tick (the site-licensed tick dichotomy parent)
+  [PASS] velocity bound: |v| <= 1 follows from cos^2(theta) >= 0 and v is theta/K-tunable  --  saturation only at theta = pi/2; sub-saturation and curvature are composition/dynamics quantities
+  [PASS] single-tick contrast: flat-factor bands are constant and shift bands are exactly linear  --  curvature REQUIRES composition: the kinetic form is a single-tick fact, mass/speed are composition facts
+  [PASS] composite-dial witness: shift^2 = e^{-iK} I gives a massless {shift, shift, identity} cone with slope 2/3  --  only the declared single-tick normalization-placement reading excludes composite dials from the OS0 normalization
+
+PART automorphism reduction -- unitary-tick reading sharpened by Skolem-Noether
+==============================================================================
+  [PASS] automorphism consistency exhibit: inner maps Ad_U are C-linear automorphisms; converse is Skolem-Noether, cited not machine-proved  --  premise must say C-LINEAR automorphism: antiunitary (antilinear) ticks are excluded by the premise, named
+  [PASS] anti-automorphism witness: transpose reverses products, so the automorphism premise has content  --  unitary-tick reading residual = 'the tick preserves the algebra structure', not bare unitarity
+
+PART free-sector bridge computation -- Berezin-Wick bridge, free sector
+==============================================================================
+  [PASS] free-kernel linearization: given Berezin-Wick free-sector bridge, the Euclidean kernel expands to partial_tau - i partial_x  --  EQUAL-MAGNITUDE temporal and spatial coefficients: |c_t| = |c_s| = 1 exactly
+  [PASS] conjugate-pair kernel: degree-2 part is omega_E^2 + K^2 with zero mixed term  --  GIVEN the named Berezin-Wick free-sector bridge transfer representation: c_t = c_s exactly at the free level
+  [PASS] free zero-locus: omega_E = i K is an exact zero locus for the saturating cell  --  the light-cone hop is exactly conical at ALL orders -- nothing to renormalize at the free kinetic level
+
+==============================================================================
+SCORECARD: PASS=14 FAIL=0
+==============================================================================
+
+----- stderr -----
+

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 815 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 39 |
-| unaudited | 1376 |
+| unaudited | 1375 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1259 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1692 |
+| `unaudited` | 1691 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1483 |
+| `bounded_theorem` | 1484 |
 | `decoration` | 54 |
 | `meta` | 324 |
 | `no_go` | 329 |
 | `open_gate` | 145 |
-| `positive_theorem` | 777 |
+| `positive_theorem` | 776 |
 
 | criticality | count |
 |---|---:|
@@ -1392,6 +1392,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dimension_selection_upper_bound_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1735,6 +1736,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner and helper source instantiate stochastic DAG generation, distinguishability-weighted placement, propagation, and the reported weak-field observables without hard-coded expected outcomes. The completed cache supports the note's negative conclusion that the tested scout is noisy and not a retained positive.
 - **rationale:** The load-bearing step is a genuine computed scout result, not a definition, renaming, external comparator, or tuned numerical match. The primary runner's load-bearing path calls the included helper for the uniform DAG baseline and then computes placement families, gravity shifts, purity, decoherence, and effective gaps from generated graphs. The runner output is consistent with the source note's bounded no-go: placement alpha does not stabilize the gravity signal and does not justify a retained adaptive-geometry positive. The conclusion is narrow and matches the evidence actually supplied.
 - **auditor confidence:** medium
+
+### `adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`ADM2_GLOBAL_SU3_SYMMETRY_REDUCES_ACTION_FORM_BI_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/ADM2_GLOBAL_SU3_SYMMETRY_REDUCES_ACTION_FORM_BI_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite SU(3) group-theoretic support for the reduction from global-conjugation equivariance plus annealed neighbour averaging to a central link-increment law, with quenched and explicit symmetry-breaking controls checked as noncentral.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-045021-50166b3b0f-adm2_global_su3_symmetry_red`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Averaging an equivariant single-link step over an equivariantly fluctuating neighbour background restores conjugation-invariance, so the annealed step is central/bi-invariant.  _(class `A`)_
+- **chain closes:** False — The restricted packet closes the group-twirling diagnostic: an annealed conjugation-invariant input law gives a central increment, while a fixed quenched staple does not. It does not supply the actual continuous-time gauge-link generator, the physical annealed fast-neighbour regime, or the omitted ADM-2/compact-group CLT parent needed for the full action-form consequence.
+- **rationale:** The load-bearing math is a valid class-A compact-group equivariance/twirling argument, and the runner source performs real finite SU(3) Monte Carlo checks for the central versus noncentral cases. One runner PASS for the overall reduction is hard-coded as true rather than independently deriving the ADM-2 action-form step. The note also explicitly leaves ADM-2' and the annealed regime as open dynamical premises, so the presented chain is a sound conditional reduction but not a closed theorem from the supplied retained authorities alone.
+- **open / conditional deps cited:**
+  - `EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08.md`
+- **auditor confidence:** high
 
 ### `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02`
 

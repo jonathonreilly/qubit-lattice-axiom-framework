@@ -133,13 +133,16 @@ Run:  python3 scripts/frontier_beta6_connected_coefficient_2026_05_30.py [maxord
 """
 from __future__ import annotations
 
+import hashlib
 import itertools
 import functools
 import math
+import re
 import sys
 import time
 from collections import Counter
 from fractions import Fraction
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
@@ -149,6 +152,11 @@ DIMS = 4
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+D7_PACKET_RUNNER = ROOT / "scripts" / "frontier_beta6_d7_maxorder7_packet_2026_06_05.py"
+D7_PACKET_CACHE = ROOT / "logs" / "runner-cache" / "frontier_beta6_d7_maxorder7_packet_2026_06_05.txt"
+
+
 def check(name, cond, detail=""):
     global PASS, FAIL
     tag = "PASS" if cond else "FAIL"
@@ -158,6 +166,67 @@ def check(name, cond, detail=""):
     if detail:
         print(f"         {detail}")
     return cond
+
+
+def rel(path: Path) -> str:
+    return str(path.relative_to(ROOT))
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def cache_header(text: str) -> dict[str, str | None]:
+    def find(pattern: str) -> str | None:
+        m = re.search(pattern, text, re.MULTILINE)
+        return m.group(1).strip() if m else None
+
+    return {
+        "runner": find(r"^runner:\s*(.+)$"),
+        "runner_sha256": find(r"^runner_sha256:\s*([0-9a-f]{64})$"),
+        "exit_code": find(r"^exit_code:\s*(\S+)$"),
+        "status": find(r"^status:\s*(\S+)$"),
+    }
+
+
+def verify_maxorder7_packet_cache() -> None:
+    print("\nV5-cache. maxorder-7 companion cache certificate")
+    if not check("maxorder-7 packet runner exists", D7_PACKET_RUNNER.exists(), rel(D7_PACKET_RUNNER)):
+        return
+    if not check("maxorder-7 packet cache exists", D7_PACKET_CACHE.exists(), rel(D7_PACKET_CACHE)):
+        return
+
+    cache = D7_PACKET_CACHE.read_text(encoding="utf-8")
+    header = cache_header(cache)
+    expected_runner = rel(D7_PACKET_RUNNER)
+    check(
+        "maxorder-7 cache runner path matches packet runner",
+        header["runner"] == expected_runner,
+        f"{header['runner']} == {expected_runner}",
+    )
+    check(
+        "maxorder-7 cache wrapper SHA is fresh",
+        header["runner_sha256"] == sha256(D7_PACKET_RUNNER),
+        f"{header['runner_sha256']} == {sha256(D7_PACKET_RUNNER)}",
+    )
+    check(
+        "maxorder-7 cache completed successfully",
+        header["status"] == "ok" and header["exit_code"] == "0",
+        f"status={header['status']} exit={header['exit_code']}",
+    )
+    primary_sha = sha256(Path(__file__).resolve())
+    snippets = [
+        "delegated_runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
+        "delegated_argv: 7",
+        f"primary_runner_sha256: {primary_sha}",
+        "V5. order-beta^7 coefficient",
+        "no GF(3)-closable distinct support of size 6 or 7 exists",
+        "d_7 exact value = 5/17006112",
+        "d_7/d_6 = 5/21",
+        "SCORECARD: PASS=22 FAIL=0",
+    ]
+    for snippet in snippets:
+        check(f"maxorder-7 cache contains: {snippet}", snippet in cache, snippet)
 
 # ===========================================================================
 # 1. Exact SU(3) single-link Haar integral via invariant-tensor projector.
@@ -1164,6 +1233,9 @@ def main():
         check("Fraction engine reproduces sympy d_6 = 7/5668704 EXACTLY "
               "(SU(3) link-integral formulas validated against the order-6 value)",
               d6f == d6 == sp.Rational(7, 5668704), f"Fraction d_6 = {d6f}")
+
+    if maxorder < 7:
+        verify_maxorder7_packet_cache()
 
     # ----- V5: d_7 (extra order) -- the optimized exact computation -----
     if maxorder >= 7:

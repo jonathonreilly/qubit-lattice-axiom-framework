@@ -98,14 +98,15 @@ argument, while the cache system invokes runners without argv; therefore the
 primary packet runner `scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py`
 delegates to
 `scripts/frontier_beta6_connected_coefficient_2026_05_30.py 7` and pins the
-completed output. The later `frontier_beta6_d9_coefficient_2026_06_04.py`
+completed output, including the primary runner SHA-256 printed inside the
+cache. The later `frontier_beta6_d9_coefficient_2026_06_04.py`
 cache is also linked as an independent cross-certificate: before its order-9
 work, it reproduces `d_7 = 5/17006112` and checks that the cube-sector closed
 form reproduces direct-engine `d_5`, `d_6`, `d_7`, and `d_8`.
 
 The source-packet verifier checks note links, primary-source markers, wrapper
-delegation markers, cache SHA freshness, and the required `d_7` snippets. It
-does not assign an audit verdict.
+delegation markers, wrapper/cache SHA freshness, primary-source SHA pinning,
+and the required `d_7` snippets. It does not assign an audit verdict.
 
 ## Boundary
 

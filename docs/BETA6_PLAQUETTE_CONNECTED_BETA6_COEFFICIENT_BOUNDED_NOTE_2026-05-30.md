@@ -50,7 +50,8 @@ The cache-addressable packet is
 [`logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt`](../logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt).
 It delegates to the full untruncated source runner
 [`scripts/frontier_beta6_connected_coefficient_2026_05_30.py`](../scripts/frontier_beta6_connected_coefficient_2026_05_30.py)
-with argv `7`, and the source-packet verifier
+with argv `7` and prints the current primary-runner SHA-256 into the
+cache, and the source-packet verifier
 [`scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py`](../scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py)
 checks the source markers, cache freshness, and linked evidence. The companion
 bounded note
@@ -297,7 +298,11 @@ Does NOT claim:
 `python3 scripts/frontier_beta6_connected_coefficient_2026_05_30.py [maxorder]`
 (default `maxorder=6`; pass `7` to also compute `d_7` -- the order-7
 multiplicity cumulants are at the per-link `3^(2k)` contraction edge and take
-substantially longer than order 6). The cache-addressable audit packet
+substantially longer than order 6). The default `maxorder=6` run also
+verifies the maxorder-7 cache header, wrapper SHA, primary-runner SHA, and
+`d_7` scorecard snippets so the registered primary runner exposes the
+completed order-7 evidence without rerunning the multi-minute path. The
+cache-addressable audit packet
 [`scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py`](../scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py)
 delegates to the full source runner with argv `7`; its paired cache is
 [`logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt`](../logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt).
@@ -319,7 +324,7 @@ delegates to the full source runner with argv `7`; its paired cache is
 
 All exact-computation checks PASS. The completed maxorder-7 packet cache reports
 `SCORECARD: PASS=22 FAIL=0`, and the source-packet verifier cache reports
-`SUMMARY: BETA6 D7 SOURCE PACKET PASS=52 FAIL=0`.
+`SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0`.
 
 ## 9. Key files / cross-references
 

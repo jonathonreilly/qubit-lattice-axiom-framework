@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py
-runner_sha256: 69f034cd6cda17c9a3e30dd812a2448e8644adcd910b51b796289644ae8b56c1
+runner_sha256: 5b83328efd6c68a6a7145a215f7146425c9075c6b51aa81ab1cadffbe93941ef
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -32,7 +32,7 @@ status: ok
 [PASS] connected_note_marker:completed maxorder-7 packet: completed maxorder-7 packet
 [PASS] connected_note_marker:full untruncated source runner: full untruncated source runner
 [PASS] connected_note_marker:SCORECARD: PASS=22 FAIL=0: SCORECARD: PASS=22 FAIL=0
-[PASS] connected_note_marker:SUMMARY: BETA6 D7 SOURCE PACKET PASS=52 FAIL=0: SUMMARY: BETA6 D7 SOURCE PACKET PASS=52 FAIL=0
+[PASS] connected_note_marker:SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0: SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0
 [PASS] connected_note_marker:beta=6 closure problem remains open: beta=6 closure problem remains open
 [PASS] primary_source_marker:def compute_dn_frac: def compute_dn_frac
 [PASS] primary_source_marker:def cycle_space_certificate: def cycle_space_certificate
@@ -44,12 +44,13 @@ status: ok
 [PASS] maxorder7_wrapper_marker:delegated_argv: 7: delegated_argv: 7
 [PASS] maxorder7_wrapper_marker:frontier_beta6_connected_coefficient_2026_05_30: frontier_beta6_connected_coefficient_2026_05_30
 [PASS] cache_runner_matches:maxorder7_cache: scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py == scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py
-[PASS] cache_sha_fresh:maxorder7_cache: aebfcc8711b77c4f7e170eff9b7002354b519c87b29b0f5daa28f62ac9f5bcf0 == aebfcc8711b77c4f7e170eff9b7002354b519c87b29b0f5daa28f62ac9f5bcf0
+[PASS] cache_sha_fresh:maxorder7_cache: f5e3963c966e76cfe5503a086f966bed8532880f54a179607871f1648ef9d0f0 == f5e3963c966e76cfe5503a086f966bed8532880f54a179607871f1648ef9d0f0
 [PASS] cache_status_ok:maxorder7_cache: status=ok exit=0
 [PASS] cache_runner_matches:d9_cache: scripts/frontier_beta6_d9_coefficient_2026_06_04.py == scripts/frontier_beta6_d9_coefficient_2026_06_04.py
 [PASS] cache_sha_fresh:d9_cache: 52418e78afb23e1a5afe5bfef0534df4404deda3097677bf6c10eaa784e517f4 == 52418e78afb23e1a5afe5bfef0534df4404deda3097677bf6c10eaa784e517f4
 [PASS] cache_status_ok:d9_cache: status=ok exit=0
 [PASS] maxorder7_cache_snippet:delegated_argv: 7: delegated_argv: 7
+[PASS] maxorder7_cache_snippet:primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e: primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e
 [PASS] maxorder7_cache_snippet:V5. order-beta^7 coefficient: V5. order-beta^7 coefficient
 [PASS] maxorder7_cache_snippet:d_7 exact value = 5/17006112: d_7 exact value = 5/17006112
 [PASS] maxorder7_cache_snippet:d_7/d_6 = 5/21: d_7/d_6 = 5/21
@@ -59,7 +60,7 @@ status: ok
 [PASS] d9_cache_snippet:cube-sector closed form 72 K''(K')^5 reproduces the direct-engine d_5, d_6, d_7, d_8 EXACTLY: cube-sector closed form 72 K''(K')^5 reproduces the direct-engine d_5, d_6, d_7, d_8 EXACTLY
 [PASS] d9_cache_snippet:SCORECARD: PASS=33 FAIL=0: SCORECARD: PASS=33 FAIL=0
 ==============================================================================
-SUMMARY: BETA6 D7 SOURCE PACKET PASS=52 FAIL=0
+SUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0
 ==============================================================================
 Output written: outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json
 

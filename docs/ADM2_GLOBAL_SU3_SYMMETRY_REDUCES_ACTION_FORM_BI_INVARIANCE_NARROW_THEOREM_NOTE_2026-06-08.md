@@ -102,3 +102,9 @@ The result is a genuine *reduction*, not a discharge or residual-ranking theorem
 - Global `SU(3)` = commutant (retained): [`GRAPH_FIRST_SU3_INTEGRATION_NOTE`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
 - Record supplies no continuous generator (retained): [`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06`](RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md)
 - Standard method (not imports): heat-bath / Langevin staple force on lattice gauge links; Haar average / depolarizing twirl; convolution CLT on compact groups.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08](EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08.md)

@@ -156,3 +156,9 @@ admission — it shows the three collapse to two.
   block-08 color-neutrality-entanglement, `FIERZ_SINGLET_CHANNEL_SELECTOR_IS_WEIGHT_NOT_PARTITION...`,
   `CONFINEMENT_STRING_TENSION_NOTE` (cited only to state neutrality is not delivered there;
   not consumed).
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [confinement_string_tension_note](CONFINEMENT_STRING_TENSION_NOTE.md)

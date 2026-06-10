@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1447 |
+| Applied audit verdicts | 1444 |
 | Retained-grade rows, including boxed decorations | 1305 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 834 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 40 |
-| Unaudited rows | 1347 |
+| Unaudited rows | 1350 |
 | Retained-pending-chain rows | 17 |
-| Audited conditional rows | 37 |
+| Audited conditional rows | 34 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 0 |
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1349 |
+| Total pending rows | 1352 |
 | Ready rows | 2 |
 | Cycle-break targets | 0 |
-| Critical pending | 338 |
-| High pending | 240 |
-| Medium pending | 370 |
+| Critical pending | 339 |
+| High pending | 239 |
+| Medium pending | 373 |
 | Leaf pending | 401 |
 
 Next ready rows by queue order:
@@ -75,18 +75,18 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3249 |
-| Critical nodes | 548 |
-| High nodes | 439 |
-| Medium nodes | 850 |
-| Leaf nodes | 1412 |
+| Critical nodes | 549 |
+| High nodes | 438 |
+| Medium nodes | 852 |
+| Leaf nodes | 1410 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1446 descendants; score 109.499
-- `three_generation_observable_theorem_note` - critical; 778 descendants; score 61.105
-- `graph_first_su3_integration_note` - critical; 1307 descendants; score 59.353
+- `minimal_axioms` - critical; 1448 descendants; score 109.501
+- `three_generation_observable_theorem_note` - critical; 781 descendants; score 61.111
+- `graph_first_su3_integration_note` - critical; 1308 descendants; score 59.354
 - `observable_principle_from_axiom_note` - critical; 860 descendants; score 58.250
 - `minimal_axioms_2026-05-03` - critical; 497 descendants; score 47.960
-- `key_terminology` - critical; 1049 descendants; score 47.036
-- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1219 descendants; score 44.253
-- `cl3_color_automorphism_theorem` - critical; 616 descendants; score 40.769
+- `key_terminology` - critical; 1051 descendants; score 47.039
+- `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1222 descendants; score 44.256
+- `cl3_color_automorphism_theorem` - critical; 617 descendants; score 40.771

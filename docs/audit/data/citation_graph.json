@@ -653,6 +653,10 @@
       "to": "record_classical_semigroup_boundary_2026-06-06"
     },
     {
+      "from": "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08",
+      "to": "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08"
+    },
+    {
       "from": "ai_methodology_note_2026-04-25",
       "to": "publication.ci3_z3.readme"
     },
@@ -6211,6 +6215,10 @@
     {
       "from": "coarse_grained_exterior_law_helper_note_2026-04-14",
       "to": "finite_rank_gravity_residual_helper_note_2026-04-14"
+    },
+    {
+      "from": "color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09",
+      "to": "confinement_string_tension_note"
     },
     {
       "from": "color_depolarization_single_frame_dephasing_insufficiency_and_multiframe_exhibit_narrow_theorem_note_2026-06-09",
@@ -31373,6 +31381,18 @@
       "to": "record_markov_generator_embeddability_boundary_2026-06-06"
     },
     {
+      "from": "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08",
+      "to": "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08"
+    },
+    {
+      "from": "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08",
+      "to": "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08"
+    },
+    {
+      "from": "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08",
+      "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
+    },
+    {
       "from": "staggered_chirality_selector_enumerator_narrow_theorem_note_2026-06-06",
       "to": "staggered_dirac_exercise_honest_reassessment_note_2026-06-06"
     },
@@ -48649,10 +48669,11 @@
       "claim_type_seed_hint": null,
       "deps": [
         "graph_first_su3_integration_note",
-        "record_classical_semigroup_boundary_2026-06-06"
+        "record_classical_semigroup_boundary_2026-06-06",
+        "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f040f44ed4043f3674efd41bb4b3b9cd2e4a87711a910a8fb7f4468dcfbe31ec",
+      "note_hash": "783fae086492e34a3db8e63a300c3ffdf4bdf9488843b62ae704d289111af171",
       "path": "docs/ADM2_GLOBAL_SU3_SYMMETRY_REDUCES_ACTION_FORM_BI_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-08.md",
       "runner_path": "scripts/frontier_adm2_global_su3_symmetry_reduction_2026_06_08.py",
       "title": "ADM-2 Reduces to Global SU(3) Equivariance Plus an Annealed Regime"
@@ -56037,9 +56058,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [],
+      "deps": [
+        "confinement_string_tension_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "f0b88a25172f5cdfe4be214147424620f80e48b0fa011ba1feb2f8bf9bd01b1c",
+      "note_hash": "b017db719c29919485364cef955e2a7b7ad647d4f94bfeae0c6c0d2b9ef76f13",
       "path": "docs/COLOR_DEPOLARIZATION_ADM2_GATING_ADMISSIONS_COLLAPSE_TO_TWO_NARROW_THEOREM_NOTE_2026-06-09.md",
       "runner_path": "scripts/frontier_color_depolarization_adm2_admission_collapse_2026_06_09.py",
       "title": "Color depolarization (ADM-2): the three mapped mechanisms collapse to two gauge-structure admissions"
@@ -91941,7 +91964,7 @@
         "grown_transfer_basin_targeted_repair_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ed933b279997ed6dbecba47fcae8d47b931eb998e29da8d4b1af76d3f98eeb53",
+      "note_hash": "6a7f7c2bee93daaa24147c250a29165fab91042879295c473e741b79834e050d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -95526,10 +95549,13 @@
         "graph_first_su3_integration_note",
         "cl3_color_automorphism_theorem",
         "record_classical_semigroup_boundary_2026-06-06",
-        "record_markov_generator_embeddability_boundary_2026-06-06"
+        "record_markov_generator_embeddability_boundary_2026-06-06",
+        "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08",
+        "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08",
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "42287eed67eb8eadf0e513bb71895980f982b3c4c54a7942f8766a596363e734",
+      "note_hash": "d2149f2c4d6a8135088e4b8321d2c46667745ebef24c688035031de691c0e532",
       "path": "docs/ST1_ST2_SAME_WALL_GAUGE_DYNAMICS_RESIDUAL_CONVERGENCE_NARROW_THEOREM_NOTE_2026-06-08.md",
       "runner_path": "scripts/frontier_st1_st2_same_wall_gauge_dynamics_residual_2026_06_08.py",
       "title": "ST1 and ST2 Sit at the Same Wall: One Undelivered Continuous-Time Gauge-Link Dynamics"
@@ -105141,7 +105167,6 @@
     "closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2",
     "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
     "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
-    "color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09",
     "complex_action_note",
     "connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10",
     "continuum_bridge_note",
@@ -106000,10 +106025,10 @@
       "open_gate": 160,
       "positive_theorem": 619
     },
-    "edge_count": 11996,
-    "leaf_count": 1082,
+    "edge_count": 12001,
+    "leaf_count": 1080,
     "node_count": 3249,
-    "root_count": 1045,
+    "root_count": 1044,
     "runners_with_path": 2831
   }
 }

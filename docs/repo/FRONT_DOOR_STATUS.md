@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1446 |
-| Retained-grade rows, including boxed decorations | 1304 |
+| Applied audit verdicts | 1447 |
+| Retained-grade rows, including boxed decorations | 1305 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 833 |
+| Retained bounded rows | 834 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 40 |
-| Unaudited rows | 1348 |
+| Unaudited rows | 1347 |
 | Retained-pending-chain rows | 17 |
 | Audited conditional rows | 37 |
 | Audited renaming rows | 34 |
@@ -33,19 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1350 |
-| Ready rows | 3 |
+| Total pending rows | 1349 |
+| Ready rows | 2 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
-| Medium pending | 371 |
+| Medium pending | 370 |
 | Leaf pending | 401 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
-- [`universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_QUINTIC_DIFFEO_WARD_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -78,8 +77,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3249 |
 | Critical nodes | 548 |
 | High nodes | 439 |
-| Medium nodes | 852 |
-| Leaf nodes | 1410 |
+| Medium nodes | 851 |
+| Leaf nodes | 1411 |
 
 Top load-bearing rows by graph score:
 

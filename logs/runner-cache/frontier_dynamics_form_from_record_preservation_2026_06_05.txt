@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dynamics_form_from_record_preservation_2026_06_05.py
+runner_sha256: 50e40a5ce7b138843f773ee85753625e157ff3a8d77ee33362bb0cd3ce89a1c6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 11.27
+status: ok
+----- stdout -----
 ==========================================================================
 FRONTIER: dynamics FORM from record-preservation (gauge-invariant-local / Wilson class)
 composition: #2667 gauge structure  x  #2701 record-formation dynamics class
@@ -112,4 +120,7 @@ PASS S6 firewall present: inside** the gauge-invariant-local class...
 SELF-CHECK SUMMARY
 ==========================================================================
 SUMMARY: PASS=62 FAIL=0
-PEAK_RSS_MB: 113.5
+PEAK_RSS_MB: 144.4
+
+----- stderr -----
+

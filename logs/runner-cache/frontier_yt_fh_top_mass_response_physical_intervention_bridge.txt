@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_fh_top_mass_response_physical_intervention_bridge.py
+runner_sha256: 0c33855e6a9733360a8aa9532fc57cdb27c5da2124897585d3e12980e38fadc0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+============================================================================================
+Y_T FH TOP MASS-RESPONSE PHYSICAL-INTERVENTION BRIDGE
+============================================================================================
+
+Part 1: anchors and authority boundary
+[PASS] docs/YT_FH_TOP_MASS_RESPONSE_PHYSICAL_INTERVENTION_BRIDGE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_PHYSICAL_TOP_INTERVENTION_IDENTIFICATION_CANDIDATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md exists
+[PASS] docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md exists
+[PASS] docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md exists
+[PASS] docs/YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md exists
+[PASS] docs/YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md exists
+[PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Transfer-Matrix FH Readout
+[PASS] note contains required section: Conditional Top Response Contract
+[PASS] note contains required section: Lambda Family Boundary
+[PASS] note contains required section: What This Adds
+[PASS] note contains required section: What Remains Open
+[PASS] note contains required section: Non-Claims
+[PASS] YT source-action support is bounded, not full authority: retained_bounded
+[PASS] EW Higgs mass diagonalization is retained support: retained
+[PASS] source-action gate is not retained authority: unaudited
+[PASS] physical-intervention candidate remains open gate
+[PASS] operational bridge supplies RN action identity
+[PASS] Fisher unit packet supplies lambda=1 branch
+[PASS] FH top/W route supplies response readout
+[PASS] symbolic top row leaves coefficient free
+[PASS] top coefficient no-go remains recorded
+
+Part 2: transfer-matrix FH pole derivative
+[PASS] d[-log(Lambda_t/Lambda_0)/a_t]/dh identity: -(Derivative(Lambda_t(h), h)/Lambda_0(h) - Lambda_t(h)*Derivative(Lambda_0(h), h)/Lambda_0(h)**2)*Lambda_0(h)/(a_t*Lambda_t(h))
+
+Part 3: normalized top source and primitive unit
+[PASS] democratic top source vector has unit norm: 1
+[PASS] single top component is 1/sqrt(6): sqrt(6)/6
+[PASS] scaled physical source family has Fisher norm lambda^2: lambda**2
+[PASS] primitive source unit selects lambda=1 in this branch
+
+Part 4: FH top/W mass-response contract
+[PASS] primitive top response row: sqrt(3)*dv_dh/6
+[PASS] top/W response ratio has predicted value: sqrt(3)/(3*g_2)
+[PASS] FH response readout returns y_33=1/sqrt(6): sqrt(6)/6
+[PASS] lambda-scaled branch returns y_33(lambda)=lambda/sqrt(6): sqrt(6)*lambda/6
+[PASS] same-source coordinate reparameterization cancels: sqrt(3)/(3*g_2)
+
+Part 5: observable contract boundary
+[PASS] strict coefficient-certified top/W FH rows are absent: outputs/yt_fh_top_w_strict_response_rows_2026-05-25.json
+[PASS] physical-intervention premise is not accepted by this runner
+[PASS] current artifact is support, not closure proposal
+
+Part 6: firewalls
+[PASS] firewall/nonclaim phrase present: `H_unit`
+[PASS] firewall/nonclaim phrase present: `yt_ward_identity`
+[PASS] firewall/nonclaim phrase present: `y_t_bare`
+[PASS] firewall/nonclaim phrase present: observed top/W/Z masses
+[PASS] firewall/nonclaim phrase present: PDG values
+[PASS] firewall/nonclaim phrase present: `alpha_LM`
+[PASS] firewall/nonclaim phrase present: plaquette/u0
+[PASS] firewall/nonclaim phrase present: fitted selector
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: author-side retention proposal
+[PASS] forbidden overclaim absent: positive Y_T closure has been obtained
+[PASS] forbidden overclaim absent: the Y_T lane has achieved retained closure
+[PASS] forbidden overclaim absent: baseline alone forces
+
+wrote outputs/yt_fh_top_mass_response_physical_intervention_bridge_2026-05-25.json
+SUMMARY: PASS=52 FAIL=0
+
+----- stderr -----
+

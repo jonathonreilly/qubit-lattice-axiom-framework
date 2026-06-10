@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py
-runner_sha256: 381a140a88ca18ee29ad27eb6fbeaafa90a0eee00a1b5061627a18c92165e796
+runner_sha256: bb19b95d08e66a2c81833fd5e0af68f4dd986bf054d0a4d976bc290f0dc811d1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 ================================================================================
@@ -71,15 +71,16 @@ status: ok
 
 === V7: CP-odd single-plaquette slot explicit construction + rejection ===
 
-  [PASS] V7.1  CP-odd single-plaquette slot S_theta = -theta * sum_P Im Tr U_P generates complex Boltzmann factor  (5/5 configs show |Im BF|/|BF| > 1e-12 (max rel Im = 9.6209e-01))
+  [PASS] V7.1  CP-odd single-plaquette slot S_theta = i theta sum_P Im Tr U_P generates complex Boltzmann factor  (5/5 configs show |Im BF|/|BF| > 1e-12 (max rel Im = 9.6209e-01))
   [PASS] V7.2  Control: theta = 0 gives real Boltzmann factor on ALL configs  (5/5 configs have Im BF = 0 at theta = 0)
   [PASS] V7   Theorem 2.4 verified at lattice level: CP-odd single-plaquette slot rejected  (All theta != 0 configs reject; theta = 0 control passes)
 
 === V8: Composition with Leg A ===
 
-  [PASS] V8.1  Leg A retained primitive: det(D + m I) > 0 real-positive on all sampled configs  (30/30 configs pass.  max|phase| = 2.56e-16)
+  [PASS] V8.1  Leg A determinant input: det(D + m I) > 0 real-positive on all sampled configs  (30/30 configs pass.  max|phase| = 2.56e-16)
   [PASS] V8.2  Complex-mass candidate (M = m e^{i pi/4} I) is rejected by (C-det) on all configs  (30/30 configs reject.  max|phase| = 1.5807)
-  [PASS] V8   Composition Theorem 3.4 + Leg A: real-mass is admissible; complex-mass (alpha=pi/4) is excluded  (Leg A retained primitive holds AND M-complex (alpha=pi/4) is rejected on all 30 SU(3) configs)
+  [PASS] V8.3  Two-flavor mass orientation: arg[det(D+m_u I) det(D+m_d I)] = 0 on real scalar masses  (30/30 configs pass.  max|phase| = 1.16e-15)
+  [PASS] V8   Composition Theorem 3.4 + Leg A: real-mass is admissible; complex-mass (alpha=pi/4) is excluded  (Leg A determinant input holds, M-complex is rejected, and the two-flavor determinant-product phase is zero)
 
 ================================================================================
 GATE SUMMARY (8 verification gates):
@@ -95,7 +96,7 @@ GATE SUMMARY (8 verification gates):
   GATES: PASS = 8, FAIL = 0
 
 SUB-CHECK SUMMARY:
-  PASS = 39, FAIL = 0, runtime = 0.3s
+  PASS = 40, FAIL = 0, runtime = 0.4s
 ================================================================================
 
 ----- stderr -----

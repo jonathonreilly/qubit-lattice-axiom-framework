@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_plaquette_tensor_network_2026_06_04.py
+runner_sha256: 7ab9d0ab48e22de6d581426049de948155d8fb41240d6957312fc982576763c6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 14.89
+status: ok
+----- stdout -----
+==============================================================================
+SU(3) Wilson plaquette <P>(beta=6) via the CHARACTER / IRREP route
+(orthogonal to the order-in-beta strong-coupling series, R~5.4 < 6)
+==============================================================================
+
+[M] Character-coefficient machinery: 3 independent exact engines agree
+  [PASS] singlet a_(0,0) multiplicity-series == framework J(beta) recurrence (c_(0,0) = J, the Haar singlet weight)
+         a_(0,0)[0..6] = ['1', '0', '1/36', '1/648', '1/2592', '1/31104', '13/3359232']
+  [PASS] multiplicity table exact: sum_lambda m_lambda(P,Q) dim_lambda = 3^(P+Q)
+         checked (P,Q) in {(2,0),(1,1),(2,2),(3,3),(4,1),(3,2)}
+  [PASS] add-a-box singlet multiplicity == EXACT SU(3) Haar projector trace N0(P,Q)
+         checked the reference (P,Q) box
+  [PASS] Schur-Weyl Bessel-determinant a_lambda(6) == add-a-box multiplicity series a_lambda(6) (two independent exact Haar routes agree)
+         (0, 0):3.4414e+00; (1, 0):4.3624e+00; (1, 1):4.4673e+00; (2, 2):1.2549e+00; (3, 3):1.4943e-01; (4, 4):9.7876e-03; (2, 1):2.4927e+00
+  [PASS] direct Weyl-torus Haar integration agrees with the Bessel determinant (grid 160; the Haar measure itself, geometry-direct)
+         (0, 0): weyl=3.44144 bessel=3.44144; (1, 1): weyl=4.46726 bessel=4.46726; (2, 2): weyl=1.25488 bessel=1.25488
+
+[Task 1] Character-coefficient finite-cutoff decay with the Casimir at beta=6
+  fitted decay (C2>=5):  a_lambda(6) ~ exp(2.150) * exp(-0.2957 * C2)   => rate kappa = 0.2957 per unit Casimir
+  representative coefficients (C2, (p,q), dim, a_lambda, c=a/a00):
+     C2=  0.00   (0, 0)  dim=   1  a= 3.4414e+00  c=a/a00=1.0000e+00
+     C2=  1.33   (1, 0)  dim=   3  a= 4.3624e+00  c=a/a00=1.2676e+00
+     C2=  3.00   (1, 1)  dim=   8  a= 4.4673e+00  c=a/a00=1.2981e+00
+     C2=  3.33   (2, 0)  dim=   6  a= 2.8074e+00  c=a/a00=8.1577e-01
+     C2=  8.00   (2, 2)  dim=  27  a= 1.2549e+00  c=a/a00=3.6464e-01
+     C2=  9.33   (4, 0)  dim=  15  a= 3.8751e-01  c=a/a00=1.1260e-01
+     C2= 13.33   (0, 5)  dim=  21  a= 9.9028e-02  c=a/a00=2.8775e-02
+     C2= 15.00   (3, 3)  dim=  64  a= 1.4943e-01  c=a/a00=4.3421e-02
+     C2= 23.33   (0, 7)  dim=  36  a= 3.7789e-03  c=a/a00=1.0981e-03
+     C2= 24.00   (4, 4)  dim= 125  a= 9.7876e-03  c=a/a00=2.8440e-03
+     C2= 35.00   (5, 5)  dim= 216  a= 4.0511e-04  c=a/a00=1.1772e-04
+  [PASS] finite sampled a_lambda(6) decays with the Casimir (negative exp rate)
+         decay rate 0.2957/C2; coefficients fall ~7 decades from C2=3 to C2~30
+  [PASS] c_lambda = a_lambda/a_(0,0) drops below 1e-3 (0.1%) at a finite Casimir cutoff (single-link truncation reaches 0.1% by C2~25)
+         largest C2 with c_lambda>=1e-3 is C2=25.33 (so the 0.1% single-link cutoff is C2 ~ 26; #irreps there ~ 41)
+     cutoff C2<= 8: sum a_lambda*dim captured = 57.473% (residual 4.25e-01)
+     cutoff C2<=15: sum a_lambda*dim captured = 89.440% (residual 1.06e-01)
+     cutoff C2<=24: sum a_lambda*dim captured = 98.654% (residual 1.35e-02)
+     cutoff C2<=30: sum a_lambda*dim captured = 99.814% (residual 1.86e-03)
+
+[Task 2] 2D SU(3) lattice gauge plaquette (exactly solvable) -- correctness check
+  <P>_2D(6) = d/dbeta log J(6)          = 0.422532   (framework J recurrence)
+  <P>_2D(6) = a_F / (3 a_(0,0)) [char] = 0.422532   (dual-rep single plaquette)
+  [PASS] 2D plaquette: character single-plaquette value a_F/(3 a_(0,0)) EQUALS the exact 2D bulk d/dbeta log J(beta) (machinery reproduces the known exactly-solvable 2D answer)
+         a_F/(3 a_00) = 0.422532 vs J'/J = 0.422532; |diff| = 1.11e-16 (cross-checked independently by high-statistics SU(3) Haar Monte-Carlo: 0.4231(8))
+
+[Task 3] <P>(beta=6) in D >= 3 -- the controlled-contraction status
+  EXACT 2D / isolated-plaquette character value : 0.4225  (validated 3 ways)
+  Independent 4D Monte-Carlo comparator chain (NOT a character-route output):
+     L=2^4: 0.6271   L=3^4: 0.6042   L=4^4: 0.5956   L->inf: ~0.5934
+     single elementary 3-cube cluster (6 faces, open): 0.4366(13)
+  => recoupling ACROSS shared links RAISES <P> from the 2D 0.4225 toward the
+     4D 0.5934; that recoupling is exactly the 6j-intertwiner contraction that
+     is the treewidth wall. The naive delta-link plaquette-irrep contraction
+     (valid only in 2D) can stabilize in the cutoff to a WRONG value, so it is
+     NOT reported. delta-link plaquette-irrep contraction is exact in 2D only; D>=3 needs 6j intertwiner recoupling at each link (treewidth wall).
+  [PASS] Task 3 reported HONESTLY: exact controlled character value is the 2D 0.4225; the D>=3 exact value requires the 6j-recoupled contraction (treewidth wall) and is NOT over-claimed as converged
+         deliverable = validated machinery + finite-coefficient support + honest wall report
+
+==============================================================================
+SCORECARD: PASS=9  FAIL=0   (14.3s)
+==============================================================================
+Bounded support result. Character coefficients are checked by independent Haar routes, the finite cutoff sample decays with Casimir, and the 2D exactly-solvable plaquette is reproduced. A fully controlled 4D <P>(6) needs the 6j-recoupled D>=3 contraction (treewidth wall); 0.5934 is the Monte-Carlo comparator, never an input.
+
+----- stderr -----
+

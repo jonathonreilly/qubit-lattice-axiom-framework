@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_three_axiom_clean_base_exact.py
+runner_sha256: b4c069928b8e45a63d1c433546f9b42bc5f3f04bfd3ea6c43b3760dc08e23810
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+PASS: Quantum: Pauli generators satisfy the Cl(3,0) anticommutator table
+      {sigma_i, sigma_j} = 2 delta_ij I checked as 2x2 complex matrices
+PASS: Quantum: no nonzero 2x2 complex matrix anticommutes with all three Pauli generators
+      linear coefficient solve gives a=d=0, b+c=0, b-c=0, so M=0
+PASS: Lattice: Z^3 nearest-neighbor adjacency has six graph-distance-one neighbors
+      finite-range locality can be read as finite graph-distance range on this adjacency
+PASS: Record: finite scalar record functional is additive over disjoint collections
+      I(R1 union R2)=I(R1)+I(R2) and I(empty)=0 checked for finite weighted records
+PASS: Record: realized outcome is a K/CPT orbit of a realized central sector
+      conjugate sector labels share one orbit; fixed labels give singleton orbits
+PASS: Record: durable means the recorded outcome is fixed once registered
+      re-reading the stored outcome does not resample, reselect, or change it
+PASS: Boundary: runner imports no context-generation/log-det/P2/measurement/dynamics/scale conclusion
+      script checks only algebraic notation, graph adjacency, finite orbits, durability bookkeeping, and finite additivity
+RESULT: PASS
+
+----- stderr -----
+

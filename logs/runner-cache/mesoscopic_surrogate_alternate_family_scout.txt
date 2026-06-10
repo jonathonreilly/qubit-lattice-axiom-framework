@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/mesoscopic_surrogate_alternate_family_scout.py
+runner_sha256: c3bb48b0d57ae74d9d02a73c8256b945a99924bb993455c8074c5a43fcb737ba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 ============================================================================================
 MESOSCOPIC SURROGATE ALTERNATE-FAMILY SCOUT
   Purpose: verify frozen negative-evidence markers and record the
@@ -40,3 +48,6 @@ PASS source note marks priority as editorial judgment
 PASS source note marks planning input as non-load-bearing
 PASS runner output has non-load-bearing planning label
 SUMMARY: PASS=5 FAIL=0
+
+----- stderr -----
+

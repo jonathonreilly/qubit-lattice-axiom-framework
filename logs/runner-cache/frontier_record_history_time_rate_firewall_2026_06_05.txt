@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_history_time_rate_firewall_2026_06_05.py
+runner_sha256: d6f296fd41867dd4f2019cea671d795ba00cedd319c4b497a6283a65077fdb20
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD HISTORY ORDER / TIME-RATE FIREWALL
 bounded-support / negative-route-pruning runner
@@ -71,3 +79,6 @@ bounded-support / negative-route-pruning runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=40 FAIL=0
+
+----- stderr -----
+

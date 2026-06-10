@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_two_29_routes_distinct_discriminator.py
+runner_sha256: 0c239b86eb03664d445c3e1541e3129466be581b733cb29dbd9a4267581c3777
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+============================================================================
+TWO KOIDE-PHASE 2/9 ROUTES ARE DISTINCT (COINCIDE ONLY AT d=3)
+============================================================================
+
+----------------------------------------------------------------------------
+(1) APS eta-defect(1,d-1;d) = (d^2-1)/(12 d), verified d=2..7
+----------------------------------------------------------------------------
+  [PASS] eta_defect(2) = (d^2-1)/(12d)  (0.125000)
+  [PASS] eta_defect(3) = (d^2-1)/(12d)  (0.222222)
+  [PASS] eta_defect(4) = (d^2-1)/(12d)  (0.312500)
+  [PASS] eta_defect(5) = (d^2-1)/(12d)  (0.400000)
+  [PASS] eta_defect(6) = (d^2-1)/(12d)  (0.486111)
+  [PASS] eta_defect(7) = (d^2-1)/(12d)  (0.571429)
+
+----------------------------------------------------------------------------
+(2) eta-defect vs anomaly 2/d^2: agree at d=3 only
+----------------------------------------------------------------------------
+  [PASS] d=2: eta-defect=0.1250, anomaly=0.5000 -> differ
+  [PASS] d=3: eta-defect=0.2222, anomaly=0.2222 -> AGREE
+  [PASS] d=4: eta-defect=0.3125, anomaly=0.1250 -> differ
+  [PASS] d=5: eta-defect=0.4000, anomaly=0.0800 -> differ
+  [PASS] d=6: eta-defect=0.4861, anomaly=0.0556 -> differ
+  [PASS] d=7: eta-defect=0.5714, anomaly=0.0408 -> differ
+  [PASS] both equal 2/9 exactly at d=3
+
+----------------------------------------------------------------------------
+(3) equality (d^2-1)/(12d) = 2/d^2  <=>  d^3 - d = 24  <=>  d = 3
+----------------------------------------------------------------------------
+  [PASS] d=2: d^3-d = 6  (==24 iff d=3)
+  [PASS] d=3: d^3-d = 24  (==24 iff d=3)
+  [PASS] d=4: d^3-d = 60  (==24 iff d=3)
+  [PASS] d=5: d^3-d = 120  (==24 iff d=3)
+  [PASS] d=6: d^3-d = 210  (==24 iff d=3)
+  [PASS] d=7: d^3-d = 336  (==24 iff d=3)
+  [PASS] d^3 - d - 24 = 0 has unique real root d = 3  (real roots = [np.float64(3.0)])
+
+============================================================================
+VERDICT
+============================================================================
+  THE TWO 2/9 ROUTES ARE DISTINCT -- NOT ONE SHARED OBJECT.
+  * geometric APS eta-defect (rotation order d): (d^2-1)/(12 d);
+  * hypercharge-cubed anomaly (color rank d):     2/d^2.
+  These are different functions of d. They coincide exactly at d=3
+  (= 2/9), and d=3 is the UNIQUE real root of d^3 - d = 24.
+
+  Honest consequences:
+   * PR #1807 (APS-eta) and PR #1805 (Callan-Harvey anomaly) are NOT
+     two views of one index-theory object; they are independent
+     routes, each with its own normalization residual. They must not
+     be treated as mutually-confirming the same 2/9.
+   * their agreement is a consistency at the framework's independently
+     retained d=3 (color rank N_c=3 = rotation order of C_3[111]); it
+     is a coincidence/consistency, NOT a derivation of d=3, and NOT a
+     single shared 2/9.
+   * the delta-closure still needs a normalization coefficient on EACH
+     route separately; getting one does not get the other for free.
+
+============================================================================
+PASS=20 FAIL=0
+
+----- stderr -----
+

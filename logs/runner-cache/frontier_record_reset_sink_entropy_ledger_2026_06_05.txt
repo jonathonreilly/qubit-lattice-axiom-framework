@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_reset_sink_entropy_ledger_2026_06_05.py
+runner_sha256: f086650aabbcc72f0f766ee3199d336491985b2343c4ecef5e74337d6346b496
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD RESET SINK ENTROPY LEDGER
 bounded-support / finite information-accounting runner
@@ -89,3 +97,6 @@ bounded-support / finite information-accounting runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=70 FAIL=0
+
+----- stderr -----
+

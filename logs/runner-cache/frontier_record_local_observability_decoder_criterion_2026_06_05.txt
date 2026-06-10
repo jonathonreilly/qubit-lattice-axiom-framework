@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_local_observability_decoder_criterion_2026_06_05.py
+runner_sha256: 62b3456b7e560c59b30bf7d7cd212108cadcf591a0aa54a2a69e42e101c33a99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD LOCAL-OBSERVABILITY DECODER CRITERION
 bounded-support / exact finite decoder runner
@@ -64,3 +72,6 @@ bounded-support / exact finite decoder runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=37 FAIL=0
+
+----- stderr -----
+

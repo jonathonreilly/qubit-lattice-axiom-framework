@@ -1,0 +1,84 @@
+===== runner cache v1 =====
+runner: scripts/frontier_source_measure_pcal_rn_cocycle.py
+runner_sha256: 2026c4df179b4675b1c5ced19ceeef82020bd22457d568f1d432e6d6218722c7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.64
+status: ok
+----- stdout -----
+========================================================================================
+SOURCE/MEASURE P-CAL RN-COCYCLE THEOREM
+========================================================================================
+
+Part 1: document and status boundary
+[PASS] docs/SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
+[PASS] docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md exists
+[PASS] docs/OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md exists
+[PASS] docs/OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md exists
+[PASS] docs/YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md exists
+[PASS] docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md exists
+[PASS] note contains required phrase: Theorem
+[PASS] note contains required phrase: RN cocycle proof
+[PASS] note contains required phrase: Connection to P-cal
+[PASS] note contains required phrase: Application to Y_T
+[PASS] note contains required phrase: Status boundary
+[PASS] note contains required phrase: Non-claims
+[PASS] note marks actual status as exact-support
+[PASS] note forbids bare retained
+[PASS] note names physical-source identification as residual
+[PASS] parent synthesis names P-cal as residual
+[PASS] parent synthesis records F_p wall
+[PASS] YT no-go exposes lambda family
+[PASS] YT no-go leaves primitive source/action route live
+
+Part 2: sharp projective signed record
+[PASS] P_plus is a projector
+[PASS] P_minus is a projector
+[PASS] projectors resolve identity
+[PASS] projectors are orthogonal
+[PASS] signed readout is sigma_z
+[PASS] signed readout squares to identity
+
+Part 3: RN cocycle forces log normalizer
+[PASS] RN density normalizes exactly: 1
+[PASS] normalizer is log cosh(h): log(exp(h)/2 + exp(-h)/2)
+[PASS] origin score for + record is +1: 1
+[PASS] origin score for - record is -1: -1
+[PASS] primitive Fisher norm is one: 1
+[PASS] sequential RN log-density is additive: e1*h + e2*h - 2*log(exp(h)/2 + exp(-h)/2)
+[PASS] scaled source normalizes exactly
+[PASS] scaled score is lambda epsilon
+[PASS] scaled Fisher norm is lambda^2: lambda**2
+[PASS] primitive Fisher-unit condition selects lambda=1
+[PASS] bare gradient of Z^p at origin is zero for centered record: 0
+[PASS] log-gradient scale of Z^p is p times primitive mean response: 0
+[PASS] second log-gradient of Z^p carries scale p: p
+
+Part 4: Y_T six-component top source application
+[PASS] democratic six-component vector has unit norm: 1
+[PASS] each component is 1/sqrt(6): [sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6]
+[PASS] scaled top-source Fisher norm is lambda^2: lambda**2
+[PASS] unit Fisher source condition selects lambda=1
+[PASS] selected Y_T component is 1/sqrt(6): sqrt(6)/6
+
+Part 5: forbidden-import and overclaim firewall
+[PASS] firewall names forbidden import: H_unit
+[PASS] firewall names forbidden import: yt_ward_identity
+[PASS] firewall names forbidden import: y_t_bare
+[PASS] firewall names forbidden import: observed top
+[PASS] firewall names forbidden import: PDG
+[PASS] firewall names forbidden import: alpha_LM
+[PASS] firewall names forbidden import: plaquette
+[PASS] firewall names forbidden import: fitted selector
+[PASS] forbidden status phrase absent: Status: retained
+[PASS] forbidden status phrase absent: effective retained
+[PASS] forbidden status phrase absent: audit-clean retained
+[PASS] forbidden status phrase absent: unbounded retained Y_T closure is claimed
+
+========================================================================================
+SUMMARY: PASS=56 FAIL=0
+Wrote outputs/source_measure_pcal_rn_cocycle_2026-05-30.json
+
+----- stderr -----
+

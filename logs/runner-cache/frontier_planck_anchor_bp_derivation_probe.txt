@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_planck_anchor_bp_derivation_probe.py
+runner_sha256: b23daf25601a7acc84cf01cd410b6d17d23388f5b32d7f759b815f6a42b2aedd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.17
+status: ok
+----- stdout -----
 Planck-anchor BP derivation probe
 =================================
 Testing whether (BP) -- boundary count IS the BH area-density carrier
@@ -42,3 +50,6 @@ VERDICT: BP-IS-GENUINE-IMPORT.
   ruler -- equivalent to the scale-reference primitive (D,E).
   The conditional implication (BP) => a/l_P = 1 is exact algebra,
   but (BP) itself is a genuine import, not a derived theorem.
+
+----- stderr -----
+

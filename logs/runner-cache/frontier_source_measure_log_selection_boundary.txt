@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/frontier_source_measure_log_selection_boundary.py
+runner_sha256: 5d450f5ef9805571627b61cc1c1f8ff59fa09b3e1be3fdf180c492d93ba227df
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 0.72
+status: nonzero_exit
+----- stdout -----
+========================================================================================
+SOURCE/MEASURE LOG-SELECTION BOUNDARY
+========================================================================================
+
+Part 1: document boundary
+[PASS] docs/SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/SOURCE_MEASURE_RECORD_INTERVENTION_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md exists
+[PASS] docs/YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md exists
+[PASS] docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md exists
+[PASS] docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md exists
+[PASS] note contains required phrase: Theorem
+[PASS] note contains required phrase: Relation to the `F_p` wall
+[PASS] note contains required phrase: Consequence for PR #2373
+[PASS] note contains required phrase: Physical Lattice Assumption
+[PASS] note contains required phrase: Planck Scale Tier-A Anchor
+[PASS] note contains required phrase: Consequence for Y_T
+[PASS] note contains required phrase: Claim Boundary
+[PASS] note contains required phrase: Non-Claims
+[PASS] note marks no-go claim type
+[PASS] note forbids closure from record algebra alone
+[PASS] note names remaining source-unit route
+[PASS] parent P1/P2 synthesis records F_p wall
+[PASS] parent P1/P2 synthesis records P-cal residual
+[FAIL] Tier-A registry records Planck-mass anchor
+
+Part 2: product composition selects log only up to scale
+[PASS] c log is additive on products
+[PASS] F_p is multiplicative for every p
+[PASS] log F_p is p log x
+[PASS] F_p itself is not additive for p != 0 on test values
+
+Part 3: scaled RN families remain valid record interventions
+[PASS] scaled RN density normalizes for symbolic lambda: 1
+[PASS] scaled score for + record is lambda: lambda
+[PASS] scaled score for - record is -lambda: -lambda
+[PASS] scaled Fisher norm is lambda^2: lambda**2
+[PASS] scaled RN log-density adds over independent histories
+[PASS] lambda=1 is selected only after imposing Fisher unit
+[PASS] lambda=2 is also a valid normalized RN intervention before unit selector
+
+Part 4: connected-response condition is log-selection in differential form
+[PASS] log generator has zero mixed derivative for independent blocks: 0
+[PASS] power generator has nonzero mixed derivative on independent blocks: sinh(1/5)*sinh(1/3)
+[PASS] dividing by p recovers primitive gradient for every p
+
+Part 5: physical lattice locality does not select lambda
+[PASS] physical-lattice product source log-density adds over sites for every lambda
+[PASS] lambda=1 local source is site-local
+[PASS] lambda=2 local source is also site-local
+[PASS] locality does not equate the two source scales
+
+Part 6: Planck scale fixes dimensions, not lambda
+[PASS] Planck anchor enters dimensional mass conversion: a_inv*m_lat
+[PASS] dimensionless y33 has no dependence on lattice scale: sqrt(6)*lambda/6
+[PASS] setting a^{-1}=M_Pl leaves lambda symbolic: sqrt(6)*lambda/6
+[PASS] Planck scale would need an extra source-coordinate bridge
+
+Part 7: Y_T lambda boundary
+[PASS] lambda family leaves y33(lambda)=lambda/sqrt(6): sqrt(6)*lambda/6
+[PASS] lambda=1 gives 1/sqrt(6)
+[PASS] lambda=2 gives a different allowed source coefficient absent unit selector
+
+Part 8: forbidden-import firewall
+[PASS] forbidden load-bearing phrase absent: old Ward identity as input
+[PASS] forbidden load-bearing phrase absent: PDG target match
+[PASS] forbidden load-bearing phrase absent: alpha_LM input
+[PASS] forbidden load-bearing phrase absent: plaquette/u0 input
+[PASS] forbidden load-bearing phrase absent: selector fitted from data
+[PASS] note names forbidden route: H_unit
+[PASS] note names forbidden route: yt_ward_identity
+[PASS] note names forbidden route: y_t_bare
+[PASS] note names forbidden route: PDG
+[PASS] note names forbidden route: alpha_LM
+[PASS] note names forbidden route: plaquette/u0
+[PASS] note names forbidden route: fitted selectors
+
+========================================================================================
+SUMMARY: PASS=56 FAIL=1
+Wrote outputs/source_measure_log_selection_boundary_2026-05-30.json
+
+----- stderr -----
+

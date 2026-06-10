@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_source_measure_planck_action_rn_source_unit_bridge.py
+runner_sha256: 402589d5433eb146b39b8a40292562238a5b147ea9f9edd5d34929af6c24056d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+========================================================================================
+SOURCE/MEASURE PLANCK-ACTION RN SOURCE-UNIT BRIDGE
+========================================================================================
+
+Part 1: document and dependency boundary
+[PASS] docs/SOURCE_MEASURE_PLANCK_ACTION_RN_SOURCE_UNIT_BRIDGE_NOTE_2026-05-30.md exists
+[PASS] docs/SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md exists
+[PASS] docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md exists
+[PASS] docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md exists
+[PASS] docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md exists
+[PASS] docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md exists
+[PASS] note contains required section: Theorem
+[PASS] note contains required section: What This Adds To The Boundary
+[PASS] note contains required section: Consequence For Y_T
+[PASS] note contains required section: Remaining Hinge
+[PASS] note contains required section: Claim Boundary
+[PASS] note contains required section: Non-Claims
+[PASS] note marks bounded theorem claim type
+[PASS] note forbids closure without top-source identification
+[PASS] note names top-source hinge
+[PASS] boundary exposes lambda family
+[PASS] Tier-A registry names Planck anchor
+[PASS] Planck source-unit support names lambda=1
+
+Part 2: Planck-action source equals RN natural parameter
+[PASS] one Planck-action source gives log weight h O: h*o
+[PASS] RN score is O: o
+[PASS] lambda Planck-action source gives score lambda O: lambda*o
+[PASS] kappa cancels from dimensionless source coordinate: lambda*o
+
+Part 3: binary signed-record Fisher unit
+[PASS] unit Planck-action source score is signed record: {-1: -1, 1: 1}
+[PASS] unit Planck-action source Fisher norm is one: 1
+[PASS] lambda-scaled Planck-action score is lambda times record
+[PASS] lambda-scaled Fisher norm is lambda^2: lambda**2
+[PASS] Fisher-unit condition selects lambda=1
+
+Part 4: six-component top source consequence
+[PASS] democratic top source has unit norm: 1
+[PASS] all six components are 1/sqrt(6)
+[PASS] lambda-scaled top Planck-action source has Fisher lambda^2: lambda**2
+[PASS] one Planck-action top source selects lambda=1
+[PASS] unit top source component is 1/sqrt(6): sqrt(6)/6
+
+Part 5: firewall and overclaim checks
+[PASS] note names forbidden route: H_unit
+[PASS] note names forbidden route: yt_ward_identity
+[PASS] note names forbidden route: y_t_bare
+[PASS] note names forbidden route: PDG
+[PASS] note names forbidden route: alpha_LM
+[PASS] note names forbidden route: plaquette/u0
+[PASS] note names forbidden route: fitted selectors
+[PASS] forbidden overclaim absent: full Y_T closure is claimed
+[PASS] forbidden overclaim absent: closure_claim_allowed_without_top_source_identification: true
+[PASS] forbidden overclaim absent: old Ward chain is repaired
+[PASS] forbidden overclaim absent: SI decimal Planck scale is derived
+
+========================================================================================
+SUMMARY: PASS=44 FAIL=0
+Wrote outputs/source_measure_planck_action_rn_source_unit_bridge_2026-05-30.json
+
+----- stderr -----
+

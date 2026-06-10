@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_index_pairing_not_forced_kinetic_order_selector_2026_06_08.py
+runner_sha256: cd8947ec9be114fab11aa7ba285783c5aa60a3ef9d56f8498df628a13509929d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
 ============================================================================================
 Index pairing is not forced; residual = kinetic-order selector
 ============================================================================================
@@ -40,3 +48,6 @@ VERDICT
 ============================================================================================
 TOTAL: 11 PASS / 0 FAIL
 ============================================================================================
+
+----- stderr -----
+

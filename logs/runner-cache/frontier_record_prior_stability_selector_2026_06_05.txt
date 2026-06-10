@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_prior_stability_selector_2026_06_05.py
+runner_sha256: fbb4c54dfd9497b6261dcb95da1effae1620e652da1b8143c04369dc997bd1b6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
 [PASS] D1.1 pi_s is normalized on the finite two-atom record alphabet
        pi_s = (1/(2**s + 1), 2**s/(2**s + 1))
 [PASS] D1.2 doublet/singlet prior odds are 2^s
@@ -52,3 +60,6 @@
 [PASS] K5.3 Q(s) is not constant across the stable dial
        The theorem does not force the Koide endpoint.
 SCORECARD PASS=37 FAIL=0
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_mr_carrier_routing_split_2026_06_05.py
+runner_sha256: 6211262ccf2951db8ba52601defc5161339179e4a260808cc966d6cfd026f00f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
 ==============================================================================
 COLOR MR_COLOR CARRIER/ROUTING SPLIT
 meta support-map interface runner
@@ -84,3 +92,6 @@ meta support-map interface runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=53 FAIL=0
+
+----- stderr -----
+

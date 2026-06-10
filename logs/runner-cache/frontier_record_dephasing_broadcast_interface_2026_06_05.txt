@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_dephasing_broadcast_interface_2026_06_05.py
+runner_sha256: 166251e68cf82c41ffe0580ce68095a823c0c3ccdb8feb30e87c721f23d353fa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
 ==============================================================================
 RECORD DEPHASING BROADCAST INTERFACE
 bounded-support / pre-record-post-record split runner
@@ -56,3 +64,6 @@ bounded-support / pre-record-post-record split runner
 SCORECARD
 ------------------------------------------------------------------------------
 SCORECARD PASS=33 FAIL=0
+
+----- stderr -----
+

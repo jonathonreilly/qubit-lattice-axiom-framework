@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_history_monoid_unbounded_retention_2026_06_05.py
+runner_sha256: fc014048c8b7b2788a36754e87f16946875230f1e6395127f8a9f0c0c3729579
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
 [PASS] M1.1 empty word is the two-sided identity
 [PASS] M1.2 concatenation is associative
 [PASS] M1.3 length is additive under concatenation
@@ -29,3 +37,6 @@ Finite record histories form an append-only free monoid; counts form N^O.
 Z^3 gives arbitrarily many distinct sites for any finite N, so no fixed finite cap is imposed by the framework carrier.
 This is unbounded finite retention, not completed infinity and not coherent qubit-state storage.
 SCORECARD PASS=25 FAIL=0
+
+----- stderr -----
+

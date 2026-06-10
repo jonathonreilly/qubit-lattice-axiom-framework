@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
+runner_sha256: 575e77d3686b27da592684fd77915d1335f5922f22b85fa019c0919f94deb231
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
 ==============================================================================
 Record-formation dynamics constraint -- explicit S + E_1..E_n test
 temporal sequel to the timeless gauge-structure corollary (#2667)
@@ -156,3 +164,6 @@ HONEST LIMITS (no over-claim):
 ==============================================================================
 SUMMARY: PASS=40 FAIL=0
 ==============================================================================
+
+----- stderr -----
+

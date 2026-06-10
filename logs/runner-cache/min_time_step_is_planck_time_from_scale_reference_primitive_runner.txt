@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py
+runner_sha256: 57a7542ce7516085e721833021cea4ec864ae612f2ea8a5ce5598b3605f3ba94
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
 
 ========================================================================================
 A1. registered single scale-reference primitive
@@ -36,3 +44,6 @@ A4. conditional minimality boundary
 
 runner_check_breakdown = {A: 14, B: 0, C: 0, D: 0, total_pass: 14}
 TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

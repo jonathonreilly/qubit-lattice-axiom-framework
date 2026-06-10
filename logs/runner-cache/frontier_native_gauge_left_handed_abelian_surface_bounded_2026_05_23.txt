@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py
+runner_sha256: f1f00c0c3806370934cb7087e322aa17b44d62539ecde1d58415f5421261b399
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+============================================================================
+NATIVE GAUGE LEFT-HANDED ABELIAN SURFACE BOUNDED RUNNER
+============================================================================
+Excluded: anomaly-complete U(1)_Y, EW matching, matter labels,
+          electric charge, and downstream phenomenology.
+
+GRAPH-FIRST SELECTED-AXIS DEPENDENCY SURFACE
+  [PASS] graph_first_selector_derivation_note claim_type is positive_theorem (positive_theorem)
+  [PASS] graph_first_selector_derivation_note audit_status is audited_clean (audited_clean)
+  [PASS] graph_first_selector_derivation_note effective_status is retained-grade (retained)
+  [PASS] graph_first_selector_derivation_note runner path registered (scripts/frontier_graph_first_selector_derivation.py)
+  [PASS] graph_first_selector_derivation_note runner exists
+  [PASS] graph_first_su3_integration_note claim_type is positive_theorem (positive_theorem)
+  [PASS] graph_first_su3_integration_note audit_status is audited_clean (audited_clean)
+  [PASS] graph_first_su3_integration_note effective_status is retained-grade (retained)
+  [PASS] graph_first_su3_integration_note runner path registered (scripts/frontier_graph_first_su3_integration.py)
+  [PASS] graph_first_su3_integration_note runner exists
+
+BOUNDED LEFT-HANDED ABELIAN EIGENVALUE SURFACE
+
+Selected axis 1
+  [PASS] tau^2 = I
+  [PASS] Pi_+ is a projector
+  [PASS] Pi_- is a projector
+  [PASS] Pi_+ Pi_- = 0
+  [PASS] rank Pi_+ = 6
+  [PASS] rank Pi_- = 2
+  [PASS] Y_like is Hermitian
+  [PASS] Tr Y_like = 0
+  [PASS] Y_like eigenvalue +1/3 has multiplicity 6
+  [PASS] Y_like eigenvalue -1 has multiplicity 2
+
+Selected axis 2
+  [PASS] tau^2 = I
+  [PASS] Pi_+ is a projector
+  [PASS] Pi_- is a projector
+  [PASS] Pi_+ Pi_- = 0
+  [PASS] rank Pi_+ = 6
+  [PASS] rank Pi_- = 2
+  [PASS] Y_like is Hermitian
+  [PASS] Tr Y_like = 0
+  [PASS] Y_like eigenvalue +1/3 has multiplicity 6
+  [PASS] Y_like eigenvalue -1 has multiplicity 2
+
+Selected axis 3
+  [PASS] tau^2 = I
+  [PASS] Pi_+ is a projector
+  [PASS] Pi_- is a projector
+  [PASS] Pi_+ Pi_- = 0
+  [PASS] rank Pi_+ = 6
+  [PASS] rank Pi_- = 2
+  [PASS] Y_like is Hermitian
+  [PASS] Tr Y_like = 0
+  [PASS] Y_like eigenvalue +1/3 has multiplicity 6
+  [PASS] Y_like eigenvalue -1 has multiplicity 2
+
+SUMMARY
+PASS=40 FAIL=0
+FINAL_TAG: NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_PASS
+
+----- stderr -----
+

@@ -1,52 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_typing_audit_unlock_map_2026_06_05.py
+runner_sha256: 13845fed2112f924d0778636c67a17cd50a9e9243b1f228f99d7da6c6f910a75
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.16
+status: ok
+----- stdout -----
 === Record typing audit-unlock map ===
-ledger_rows=2775
-scoped_bounded_or_conditional_rows=1313
-audited_conditional_rows=90
+ledger_rows=3087
+scoped_bounded_or_conditional_rows=1474
+audited_conditional_rows=20
 
 Category counts over bounded/conditional scope:
   born_record_interface: 9
-  dynamics_split_after_type: 12
-  not_record_relevant: 1130
-  selector_split_after_type: 158
-  type_firewall_reaudit: 4
+  dynamics_split_after_type: 15
+  not_record_relevant: 1232
+  selector_split_after_type: 213
+  type_firewall_reaudit: 5
 
 Category counts over audited_conditional only:
-  not_record_relevant: 67
-  selector_split_after_type: 22
-  type_firewall_reaudit: 1
+  dynamics_split_after_type: 1
+  not_record_relevant: 14
+  selector_split_after_type: 5
 
 Audited-conditional rows touched by the Record typing firewall:
-  selector_split_after_type: axiom_first_cluster_decomposition_theorem_note_2026-04-29 | audited_conditional | audited_conditional | bounded_theorem | docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
-  selector_split_after_type: busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20 | audited_conditional | audited_conditional | positive_theorem | docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
-  selector_split_after_type: flavor_asymmetry_identification_principled_not_forced_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md
-  type_firewall_reaudit: flavor_det_character_selection_audit_ready_2026-06-04 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md
-  selector_split_after_type: flavor_emergent_chirality_no_transport_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md
-  selector_split_after_type: flavor_find_j_round1_jcs_measure_neutral_2026-06-02 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md
-  selector_split_after_type: flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md
-  selector_split_after_type: flavor_kreal_instrument_two_letter_phase_orthogonal_2026-06-02 | audited_conditional | audited_conditional | open_gate | docs/FLAVOR_KREAL_INSTRUMENT_TWO_LETTER_PHASE_ORTHOGONAL_2026-06-02.md
-  selector_split_after_type: flavor_measure_positivity_agnostic_note_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md
-  selector_split_after_type: flavor_missing_axiom_carrier_measure_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
-  selector_split_after_type: flavor_trace_vs_center_dissolves_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_TRACE_VS_CENTER_DISSOLVES_NOTE_2026-05-30.md
-  selector_split_after_type: flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02 | audited_conditional | audited_conditional | no_go | docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md
-  selector_split_after_type: flavor_zdet_fermionic_statistics_admission_2026-06-04 | audited_conditional | audited_conditional | open_gate | docs/FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md
-  selector_split_after_type: inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md
-  selector_split_after_type: koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02 | audited_conditional | audited_conditional | no_go | docs/KOIDE_EMBEDDING_FRAMING_WRITHE_SO2_VS_SPIN_Z2_DECOUPLING_NARROW_NO_GO_NOTE_2026-06-02.md
-  selector_split_after_type: koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10 | audited_conditional | audited_conditional | positive_theorem | docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md
-  selector_split_after_type: koide_tracial_standard_form_carrier_narrow_note_2026-06-02 | audited_conditional | audited_conditional | bounded_theorem | docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md
-  selector_split_after_type: luders_rule_from_composition_consistency_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
-  selector_split_after_type: observable_principle_from_axiom_note | audited_conditional | audited_conditional | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  dynamics_split_after_type: ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07 | audited_conditional | audited_conditional | open_gate | docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md
+  selector_split_after_type: koide_records_objectivity_conditional_note_2026-05-31 | audited_conditional | audited_conditional | bounded_theorem | docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md
+  selector_split_after_type: post_record_selector_tangent_readout_weight_prototype_2026-06-06 | audited_conditional | audited_conditional | open_gate | docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md
   selector_split_after_type: quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26 | audited_conditional | audited_conditional | open_gate | docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md
-  selector_split_after_type: rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20 | audited_conditional | audited_conditional | bounded_theorem | docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md
+  selector_split_after_type: rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08 | audited_conditional | audited_conditional | open_gate | docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md
   selector_split_after_type: sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29 | audited_conditional | audited_conditional | bounded_theorem | docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md
-  selector_split_after_type: source_measure_sharp_record_tangent_space_theorem_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
 
 === Top dispatch rows ===
 
 [type_firewall_reaudit]
-  flavor_det_character_selection_audit_ready_2026-06-04 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md
   flavor_logdet_factor_2_record_readout_realization_narrow_theorem_note_2026-06-04 | unaudited | unaudited | bounded_theorem | docs/FLAVOR_LOGDET_FACTOR_2_RECORD_READOUT_REALIZATION_NARROW_THEOREM_NOTE_2026-06-04.md
   persistent_object_adaptive_readout_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_ADAPTIVE_READOUT_NOTE.md
   persistent_object_readout_localization_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_READOUT_LOCALIZATION_NOTE.md
+  real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08 | audited_clean | retained_pending_chain | bounded_theorem | docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md
+  spin_statistics_fs_admission_located_exercise_note_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md
 
 [born_record_interface]
   born_lane_comparison_note | audited_clean | retained_bounded | bounded_theorem | docs/BORN_LANE_COMPARISON_NOTE.md
@@ -60,22 +52,23 @@ Audited-conditional rows touched by the Record typing firewall:
   pre_record_reference_state_tracial_derivation_note_2026-05-20 | audited_clean | retained_bounded | bounded_theorem | docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md
 
 [selector_split_after_type]
+  action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08 | unaudited | unaudited | bounded_theorem | docs/ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md
+  alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26 | unaudited | unaudited | bounded_theorem | docs/ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md
   architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
-  axiom_first_cluster_decomposition_theorem_note_2026-04-29 | audited_conditional | audited_conditional | bounded_theorem | docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
+  arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md
+  axiom_first_cluster_decomposition_theorem_note_2026-04-29 | audited_clean | retained_bounded | bounded_theorem | docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
   bae_u1b_six_ray_dirac_measure_note_2026-05-17 | unaudited | unaudited | bounded_theorem | docs/BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md
   bell_inequality_derived_note | audited_clean | retained_bounded | bounded_theorem | docs/BELL_INEQUALITY_DERIVED_NOTE.md
   beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04 | unaudited | unaudited | bounded_theorem | docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md
-  busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20 | audited_conditional | audited_conditional | positive_theorem | docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+  busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
   charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md
   charged_lepton_koide_value_full_chain_of_custody_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md
   charged_lepton_mass_hierarchy_review_note_2026-04-17 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md
-  ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25 | unaudited | unaudited | bounded_theorem | docs/CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md
-  cl3_taste_generation_theorem | unaudited | unaudited | bounded_theorem | docs/CL3_TASTE_GENERATION_THEOREM.md
-  closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c | unaudited | unaudited | bounded_theorem | docs/CLOSURE_C_L1_PER_GRAPH_CASIMIR_NOTE_2026-05-10_cL1c.md
 
 [dynamics_split_after_type]
   chiral_3plus1d_boundary_phase_note | audited_clean | retained_bounded | bounded_theorem | docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md
   dirac_decoherence_probe_note | audited_clean | retained_bounded | bounded_theorem | docs/DIRAC_DECOHERENCE_PROBE_NOTE.md
+  ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07 | audited_conditional | audited_conditional | open_gate | docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md
   observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21 | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_PRE_RECORD_TRACIAL_ROUTE_NARROW_NOTE_2026-05-21.md
   persistent_object_blended_readout_transfer_sweep_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_BLENDED_READOUT_TRANSFER_SWEEP_NOTE_2026-04-16.md
   persistent_record_as_kraus_operator_note_2026-05-20 | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md
@@ -84,8 +77,7 @@ Audited-conditional rows touched by the Record typing firewall:
   persistent_record_overlap_kernel_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md
   persistent_record_refinement_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_REFINEMENT_NOTE.md
   persistent_record_sidebit_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md
-  teleportation_measurement_record_note | audited_clean | retained_bounded | bounded_theorem | docs/TELEPORTATION_MEASUREMENT_RECORD_NOTE.md
-  universality_classifier_note | audited_clean | retained_bounded | bounded_theorem | docs/UNIVERSALITY_CLASSIFIER_NOTE.md
+  post_record_supplied_family_lift_certificate_interface_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/POST_RECORD_SUPPLIED_FAMILY_LIFT_CERTIFICATE_INTERFACE_2026-06-06.md
 
 === Must-touch source probes ===
 PASS docs/RECORD_GENERATION_READOUT_TWO_SECTORS_2026-06-05.md -> selector_split_after_type allowed=['selector_split_after_type', 'type_firewall_reaudit']
@@ -109,11 +101,11 @@ SPLIT: selector_split_after_type rows get a clean record alphabet/type, but stil
 SPLIT: dynamics_split_after_type rows get a clean post-record value type, but still need an instrument/decoherence/arrow/stability theorem.
 NO AUTO-PROMOTION: this runner writes no audit data and applies no verdicts.
 [PASS] ledger has substantial audit surface
-       2775
+       3087
 [PASS] every scoped bounded/conditional row is bucketed
-       1313/1313
+       1474/1474
 [PASS] every audited_conditional row is bucketed
-       90/90
+       20/20
 [PASS] has direct type-firewall re-audit candidates
 [PASS] has Born/Record interface candidates
 [PASS] has selector split candidates
@@ -123,3 +115,6 @@ NO AUTO-PROMOTION: this runner writes no audit data and applies no verdicts.
 
 === Scorecard ===
 PASS=8 FAIL=0
+
+----- stderr -----
+

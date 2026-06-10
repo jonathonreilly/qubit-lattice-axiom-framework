@@ -17,8 +17,8 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 189 |
-| high | `unaudited` | 144 |
+| critical | `unaudited` | 190 |
+| high | `unaudited` | 143 |
 | medium | `unaudited` | 88 |
 | critical | `audited_renaming` | 3 |
 | critical | `open_gate` | 3 |
@@ -37,6 +37,7 @@ publication tables phrase it.
 |---|---|---|---|---|
 | critical | `alpha_s_derived_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `anomaly_forces_time_theorem` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
+| critical | `axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `bminusl_anomaly_freedom_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `charged_lepton_koide_cone_algebraic_equivalence_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
 | critical | `charged_lepton_koide_note_2026-04-18` | `open_gate` | `audited_clean` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
@@ -238,7 +239,6 @@ publication tables phrase it.
 | high | `area_law_primitive_car_edge_identification_theorem_note_2026-04-25` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `area_law_primitive_parity_gate_carrier_theorem_note_2026-04-25` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `area_law_quarter_broader_no_go_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| high | `axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `ckm_barred_apex_angle_exact_closed_form_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `ckm_barred_circumradius_exact_closed_form_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |

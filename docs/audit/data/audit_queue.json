@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 338,
     "high": 240,
-    "leaf": 440,
+    "leaf": 439,
     "medium": 376
   },
   "cycle_break_target_count": 0,
@@ -17455,32 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "graph_first_su3_integration_note",
-        "record_classical_semigroup_boundary_2026-06-06",
-        "record_markov_generator_embeddability_boundary_2026-06-06"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.822,
-      "note_path": "docs/MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_matter_color_depolarization_adm2_necessary_2026_06_09.py",
-      "transitive_descendants": 19
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17610,6 +17584,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_two_site_qubit_tensor_carrier_bridge_2026_06_06.py",
+      "transitive_descendants": 18
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "key_terminology",
+        "minimal_axioms",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.248,
+      "note_path": "docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
       "transitive_descendants": 18
     },
     {
@@ -29129,32 +29129,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "minimal_axioms",
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
       "transitive_descendants": 2
     },
     {
@@ -41834,6 +41808,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 42,
-  "total_pending": 1394
+  "ready_count": 41,
+  "total_pending": 1393
 }

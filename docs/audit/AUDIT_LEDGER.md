@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 212 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 808 |
+| **retained_bounded** | 809 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 38 |
-| unaudited | 1392 |
+| unaudited | 1391 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1248 |
+| `audited_clean` | 1249 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1708 |
+| `unaudited` | 1707 |
 
 | claim_type | count |
 |---|---:|
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1308 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1049 | 47.04 | `unaudited` | meta |
+| 6 | `key_terminology` | meta | critical | 1050 | 47.04 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1219 | 44.25 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 616 | 40.77 | `audited_clean` | **retained** |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1016 | 40.49 | `unaudited` | unaudited |
@@ -832,6 +832,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_decay_diagnosis_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -11754,6 +11755,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The matched comparison does not support a clean '4D flattens the ceiling' claim under the pinned 2D/4D generator definitions, degree matching, seeds, k-band, and pur_min metric.  _(class `C`)_
 - **chain closes:** True — The runner constructs both graph families from the named generator routines, computes the matched pur_min and degree table, fits per-seed exponents, and asserts the source note's table within explicit tolerances. The note's claim is bounded to those generator definitions and default arguments, so no outside modular-universality authority is needed.
 - **rationale:** The source note and runner agree on the bounded table, alpha estimates, and conclusion that this matched pocket does not support a dimensional exponent-flattening theorem. The runner computes the graph samples and metrics before checking the pinned values, rather than importing a retained theorem or relying on author prose. Residual risk is limited to the named generator routines, seed count, radius grid, and default harness settings; broader 2D/4D modular universality is explicitly outside the audited scope.
+- **auditor confidence:** high
+
+### `matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the supplied C^3 color carrier and a nonzero SU(3)-equivariant linear matter-current drift into su(3), Ad-invariance of the Lie-algebra increment first moment forces rho_color = I_3/3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-040748-9ca6b439f3-matter_color_depolarization_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** An Ad-invariant increment distribution has an Ad-invariant mean; since su(3) has no nonzero Ad-invariant vector and any nonzero equivariant linear drift has mean proportional to traceless(rho_color), centrality forces traceless(rho_color)=0.  _(class `A`)_
+- **chain closes:** True — The claim follows from standard SU(3) representation algebra: Herm(3)=1+8, Hom_SU(3)(1+8,8) is one-dimensional, the adjoint has no invariant vector, and E[traceless(phi phi^†)] = traceless(rho). The note does not claim to derive the drift channel, a relaxation law, or full gauge-link dynamics.
+- **rationale:** The load-bearing step is algebraic closure, not a numerical fit or renaming. Independent checks confirm the projection identity, the zero invariant vector condition, the order parameter identity ||traceless(rho)||_F^2 = Tr(rho^2)-1/3, and the stated Gaussian covariance anisotropy table. All cited authorities in the restricted packet are retained-grade or retained no-go boundaries, and the source note keeps the dynamics and zero-drift exceptions outside the theorem.
 - **auditor confidence:** high
 
 ### `matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08`

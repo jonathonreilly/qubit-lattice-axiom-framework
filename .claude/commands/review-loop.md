@@ -14,7 +14,9 @@ Run the repo-native physics review loop from:
 2. Review only branch/local changes against `origin/main` or `main`.
 3. Fan out the physics reviewers in parallel when the agent environment allows:
    `CodeRunnerReviewer`, `PhysicsClaimReviewer`, `ImportSupportReviewer`,
-   `NatureRetentionReviewer`, `RepoGovernanceReviewer`, and optionally
+   `NatureRetentionReviewer`, `NoGoDisciplineReviewer` (when negative claims
+   changed), `LabelingConventionReviewer` (when bounded-theorem candidates
+   changed), `RepoGovernanceReviewer`, and optionally
    `MethodologySkillReviewer`.
 4. Fix only verified, narrow findings. Demote overclaims instead of patching
    missing science with prose.

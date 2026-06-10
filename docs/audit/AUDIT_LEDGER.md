@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 798 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1415 |
+| unaudited | 1414 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -44,6 +44,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
+| `decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | 1 |
 | `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
@@ -61,20 +62,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1232 |
 | `audited_conditional` | 21 |
-| `audited_decoration` | 52 |
+| `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1731 |
+| `unaudited` | 1730 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1480 |
-| `decoration` | 53 |
+| `decoration` | 54 |
 | `meta` | 324 |
 | `no_go` | 329 |
 | `open_gate` | 145 |
-| `positive_theorem` | 781 |
+| `positive_theorem` | 780 |
 
 | criticality | count |
 |---|---:|
@@ -101,15 +102,15 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1447 | 109.50 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 778 | 61.10 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1307 | 59.35 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1308 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
 | 6 | `key_terminology` | meta | critical | 1049 | 47.04 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1219 | 44.25 | `audited_renaming` | ~~audited_renaming~~ |
-| 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 616 | 40.77 | `audited_clean` | **retained** |
+| 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 617 | 40.77 | `audited_clean` | **retained** |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1016 | 40.49 | `unaudited` | unaudited |
 | 10 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 270 | 39.58 | `unaudited` | unaudited |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1272 | 39.31 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1273 | 39.31 | `audited_clean` | **retained** |
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 811 | 38.66 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 707 | 38.47 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 858 | 38.25 | `unaudited` | unaudited |
@@ -1409,6 +1410,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
 | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
+| `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | `decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | cross_family | codex-gpt-5.5 | A | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
 | `left_handed_charge_matching_note` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
@@ -10511,6 +10513,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With unnormalized |Omega>=sum_i |i>|i|, C_Phi=sum_ij |i><j| tensor Phi(|i><j|) reconstructs by Phi(rho)=Tr_1[(rho^T tensor I) C_Phi] and yields Kraus operators K_a=sqrt(lambda_a) reshape(v_a)^T with no extra d or sqrt(d) factor.  _(class `A`)_
 - **chain closes:** True — The displayed identities close by direct finite-dimensional index algebra: the partial trace gives sum_ij rho_ij Phi(E_ij)=Phi(rho), and the spectral vectors of a PSD Choi matrix vectorize the Kraus operators with the stated transpose convention. The accepted minimal axiom supplies only the finite qubit matrix algebra substrate; no extra physical bridge is used.
 - **rationale:** The note's load-bearing work is normalization reconciliation, not a new empirical or tuned numerical claim. The runner source genuinely computes the symbolic M_2 inverse identity, random Stinespring CPTP checks for d=2 and d=4, named channel checks, and explicit normalized/unnormalized mismatch guards; it does not merely print constants or import a contested premise. The all-d statement is the standard finite-dimensional Kraus-Choi algebra with the unnormalized convention, and the packet's accepted axiom premise correctly supplies the qubit finite-region carrier.
+- **auditor confidence:** high
+
+### `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Finite-region specialization of the retained single-convention Kraus/Choi correspondence to A_Λ = ⊗_{x∈Λ} M₂(ℂ) ≅ M_{2^|Λ|}(ℂ), including CP iff Choi-positive and TP iff Σ_r K_r†K_r = 𝟙.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-025558-b7829faaee-kraus_choi_representation_on`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The qubit-lattice algebra A_Λ = ⊗_x M₂(ℂ) is a finite-dimensional matrix algebra M_d(ℂ) with d = 2^|Λ|, so the retained finite-matrix Kraus/Choi correspondence applies directly.  _(class `A`)_
+- **chain closes:** True — The retained upstream Kraus/Choi theorem supplies the finite M_d(ℂ) correspondence, and the accepted Quantum/Lattice axiom premise supplies A_Λ ≅ M_{2^|Λ|}(ℂ). The claim remains finite-region only; no thermodynamic-limit channel theorem or record-dynamics CPTP identification is used.
+- **rationale:** The displayed normalization formulas close under an independent index check: the unnormalized inverse has no d factor, the normalized Choi inverse needs d, and TP matches the output partial trace/Kraus condition. The only substantive move in this note is substituting the finite qubit-lattice matrix algebra into the already retained single-convention Kraus/Choi parent. Because the chain reduces to one retained parent plus standard finite-dimensional algebra and contains no external comparator check, this is decoration rather than an independent positive theorem.
+- **decoration parent:** `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`
 - **auditor confidence:** high
 
 ### `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02`

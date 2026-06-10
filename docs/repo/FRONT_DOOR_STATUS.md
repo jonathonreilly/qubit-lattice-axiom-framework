@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1379 |
-| Retained-grade rows, including boxed decorations | 1262 |
+| Applied audit verdicts | 1380 |
+| Retained-grade rows, including boxed decorations | 1263 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 798 |
-| Boxed decorations under retained parents | 49 |
+| Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1415 |
+| Unaudited rows | 1414 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 21 |
 | Audited renaming rows | 34 |
@@ -33,23 +33,23 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1417 |
-| Ready rows | 51 |
+| Total pending rows | 1416 |
+| Ready rows | 52 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
-| High pending | 243 |
+| High pending | 242 |
 | Medium pending | 393 |
 | Leaf pending | 443 |
 
 Next ready rows by queue order:
 
-- [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md) - high; unaudited
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`plaquette_bootstrap_framework_integration_note_2026-05-03`](../../docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md) - medium; unaudited
 - [`free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
+- [`luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`](../../docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 - [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
@@ -90,9 +90,9 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1447 descendants; score 109.500
 - `three_generation_observable_theorem_note` - critical; 778 descendants; score 61.105
-- `graph_first_su3_integration_note` - critical; 1307 descendants; score 59.353
+- `graph_first_su3_integration_note` - critical; 1308 descendants; score 59.354
 - `observable_principle_from_axiom_note` - critical; 860 descendants; score 58.250
 - `minimal_axioms_2026-05-03` - critical; 497 descendants; score 47.960
 - `key_terminology` - critical; 1049 descendants; score 47.036
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1219 descendants; score 44.253
-- `cl3_color_automorphism_theorem` - critical; 616 descendants; score 40.769
+- `cl3_color_automorphism_theorem` - critical; 617 descendants; score 40.771

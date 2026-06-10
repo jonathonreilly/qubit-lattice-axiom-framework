@@ -19,7 +19,7 @@ what spatial `O_h` *alone* leaves open (two coefficients). Downstream notes may
 now cite the primitive as the approved kinetic-form premise; this note itself
 does not set any audit verdict or prove broader Lorentz closure. With that
 premise, the B4 kinetic-form invariant space collapses to one coefficient
-([`EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md`](EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md)).
+(`EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md`).
 No audit verdict is changed by this pointer.
 
 ## Targeted Review Gate

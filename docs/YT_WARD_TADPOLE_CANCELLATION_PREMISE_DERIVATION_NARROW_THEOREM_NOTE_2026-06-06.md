@@ -15,7 +15,7 @@ effective-status change.
 ## Role
 
 Companion to the `audited_conditional` narrow theorem
-[YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md](YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+`YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md`
 (`yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17`). That note
 proves the algebraic cancellation
 
@@ -145,10 +145,16 @@ footing.
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links so the audit
-citation graph can track them. It does not promote this note or change any
-audited claim scope.
+citation graph can track them. The target row is named as a plain label, not as
+a reciprocal source-graph dependency. This section does not promote this note
+or change any audited claim scope.
 
-- [YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md](YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+Target row label:
+
+- `YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md`
+
+Dependency links:
+
 - [U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md](U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md)
 - [YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md](YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md)
 - [ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)

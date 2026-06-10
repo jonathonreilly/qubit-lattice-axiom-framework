@@ -208,7 +208,7 @@ d_8 = 5/272097792     d_9 = -2035/264479053824
 ## Resummation Re-test (the scientific payoff)
 
 Dropping the exact `d_9` into the resummation/d-log-Pade harness
-([`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md))
+(`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`)
 gives (V8f):
 
 - **Tadpole / geometric ansatz: FALSIFIED, and gets the SIGN wrong.** The
@@ -311,7 +311,7 @@ input.
 | cited witness | residual attacked | residual here | match? |
 |---|---|---|---|
 | [`BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md) | `Delta = 4 C_cube` is exact only through `d_8`; the distinct-support side reopens at 2-cycle weight 10 (`d_9` acquires new non-cube supports). | Enumerates that new class exactly (60 weight-10 two-cube supports), supplies its contribution, and assembles `d_9`. | yes |
-| [`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md) | `d_5..d_8` ACTIVATES the `[1/1]` d-log-Pade, which predicts `d_9`. | Supplies the exact `d_9`; the `[1/1]` prediction gets the sign right but the magnitude wrong (still FALSIFIED at the 5% window). | yes |
+| `BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md` | `d_5..d_8` ACTIVATES the `[1/1]` d-log-Pade, which predicts `d_9`. | Supplies the exact `d_9`; the `[1/1]` prediction gets the sign right but the magnitude wrong (still FALSIFIED at the 5% window). | yes |
 | [`BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md`](BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md) | The cube SECTOR `Delta_cube = 72 K''(K')^5` converges at `beta = 6` and reproduces `d_5..d_8` + the `d_9` cube-part. | Uses exactly that closed form for the order-9 cube part, validated against the direct engine through `d_8`. | yes |
 | [`GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md) | No finite truncation closes `<P>(6)`. | Boundary disclaimer: `d_9` does not close beta=6. Not load-bearing for the falsifier. | not load-bearing |
 | [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md) Theorem 4 | Engine-anchored `kappa_5 = 1/18^5`. | Positive arithmetic input (the cube ratios and the new-support value are quoted relative to `kappa_5`). Supports the witness, not the negative logic. | not load-bearing |
@@ -398,7 +398,7 @@ Monte-Carlo or PDG value enters the derivation path.
 - [`BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md)
 - [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md)
 - [`BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md`](BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md)
-- [`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md)
+- `BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`
 - [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
 - [`GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md)
 - [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md)

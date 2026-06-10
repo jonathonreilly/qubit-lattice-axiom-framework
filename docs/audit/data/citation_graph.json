@@ -47574,7 +47574,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08"
+      "to": "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07"
     },
     {
       "from": "repo.front_door_status",
@@ -47598,7 +47598,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07"
+      "to": "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+        "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
         "matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09",
         "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
         "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
-        "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07"
+        "dimension_upper_bound_dependency_edge_repair_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2abb6049ed3a7b5237fa740c12584d255df2d37d1e3b84c61c6ccef50c9da431",
+      "note_hash": "9f982bb91013bc24e2d67ad72a53eb02203d26085b56f3823856a44dd1baa09d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

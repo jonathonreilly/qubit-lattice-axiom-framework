@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 817 |
+| **retained_bounded** | 818 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1388 |
+| unaudited | 1387 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1260 |
+| `audited_clean` | 1261 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1704 |
+| `unaudited` | 1703 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 483 |
 | `high` | 481 |
-| `medium` | 842 |
-| `leaf` | 1322 |
+| `medium` | 840 |
+| `leaf` | 1324 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1473 | 112.03 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 995 | 61.96 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 994 | 61.96 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1341 | 60.89 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 854 | 58.24 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 970 | 48.42 | `unaudited` | meta |
@@ -118,7 +118,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `yt_ew_color_projection_theorem` | no_go | critical | 706 | 38.47 | `audited_clean` | **retained_no_go** |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1248 | 37.79 | `audited_clean` | **retained_bounded** |
 | 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 925 | 36.35 | `audited_clean` | **retained_bounded** |
-| 17 | `three_generation_structure_note` | bounded_theorem | critical | 1057 | 36.05 | `audited_clean` | **retained_bounded** |
+| 17 | `three_generation_structure_note` | bounded_theorem | critical | 1056 | 36.05 | `audited_clean` | **retained_bounded** |
 | 18 | `cpt_exact_note` | positive_theorem | critical | 1310 | 35.86 | `audited_clean` | **retained** |
 | 19 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 269 | 34.58 | `unaudited` | unaudited |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 699 | 32.95 | `unaudited` | unaudited |
@@ -855,6 +855,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_two_stage_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `minimal_absorbing_horizon_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_bidirectional_trapping_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -12220,6 +12221,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the retained 2D family, the stage-2 broad surrogate built from the stage-1 sourced response reproduces the stage-1 surrogate rows at printed precision across the tested topN values.  _(class `C`)_
 - **chain closes:** True — The provided runner constructs the 2D lattice, propagates the probe, builds stage-1 and stage-2 compressed surrogate source profiles, and computes the displayed ratios, TV distances, captures, spreads, and overlap. The bounded conclusion is limited to the frozen family and printed-precision two-stage stability.
 - **rationale:** The primary runner does not merely print constants: it generates the lattice, propagates amplitudes under distributed and point-source fields, compresses computed profiles, and compares the second-stage surrogate against the first. The helper source supplies lattice generation and constants used by the computation rather than importing the contested result from another note. The cited authorities are retained_bounded and the note's conclusion stays bounded: mesoscopic two-stage stability, not localized persistent-mass closure.
+- **auditor confidence:** high
+
+### `microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09`
+
+- **Note:** [`MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md`](../../docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow canonical-surface obstruction to closing the exact-H bridge by one-step norm-convergent BCH/Magnus/cluster/small-step expansion from the retained action-density budget; not a no-go for quasilocal H or spectral/non-one-step routes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-213703-c71d959605-microcausality_exact_h_expan`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the minimal non-commuting pair X=sσx and Y=sσz, the BCH/log series has radius |s*|=1.80117..., while the retained canonical matter floor 2.3 and full budget 78 exceed that radius and the ln 2 sufficient ball, with direct series divergence at those scales.  _(class `C`)_
+- **chain closes:** True — The retained bridge supplies the canonical budget J_max=|m|+78 and matter floor, while the registered kinetic-isotropy primitive supplies only the ξ=1 surface. The load-bearing radius, divergence, matrix-chain separation, and gap arithmetic are derived from explicit Pauli/finite-matrix computations and exact arithmetic rather than imported comparator thresholds.
+- **rationale:** The load-bearing obstruction is a genuine first-principles computation over explicit finite operator algebra plus retained budget inputs, so it is class C. The only non-retained upstream is the registered kinetic-isotropy primitive, which is an accepted premise and is used only to identify ξ=1. The no-go discipline gate passes for the narrowed route claim: the note leaves spectral, resummed, differently factorized, and other non-one-step constructions open.
 - **auditor confidence:** high
 
 ### `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`

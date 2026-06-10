@@ -187,11 +187,26 @@ def extract_title(body: str) -> str | None:
 
 def normalize_runner_path(path: str) -> str | None:
     path = path.strip()
+    if not path:
+        return None
+    candidates: list[str] = []
+    raw_path = Path(path)
     if path.startswith("scripts/"):
-        return path
-    script_path = f"scripts/{path}"
-    if (REPO_ROOT / script_path).exists():
-        return script_path
+        candidates.append(path)
+    elif not raw_path.is_absolute():
+        candidates.extend([path, f"scripts/{path}"])
+    basename = raw_path.name
+    if basename.endswith(".py"):
+        candidates.append(f"scripts/{basename}")
+
+    seen: set[str] = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        candidate_path = REPO_ROOT / candidate
+        if candidate_path.exists():
+            return candidate_path.relative_to(REPO_ROOT).as_posix()
     return None
 
 

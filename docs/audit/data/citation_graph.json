@@ -47578,10 +47578,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "second_grown_family_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08"
     },
     {
@@ -91963,7 +91959,6 @@
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
-        "second_grown_family_note",
         "universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08",
         "universal_gr_graviton_dispersion_lorentz_isotropy_bounded_theorem_note_2026-06-08",
         "universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08",
@@ -91971,7 +91966,7 @@
         "universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "feaf7f168e2156fff4efe559cd43c30e2de120bf49f5c31be3c7448357ac021e",
+      "note_hash": "5ee573966bda3d5db9a33ad4549df1073de46508454a89b11571c7f66945110a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -106030,8 +106025,8 @@
       "open_gate": 160,
       "positive_theorem": 619
     },
-    "edge_count": 12002,
-    "leaf_count": 1076,
+    "edge_count": 12001,
+    "leaf_count": 1077,
     "node_count": 3249,
     "root_count": 1045,
     "runners_with_path": 2831

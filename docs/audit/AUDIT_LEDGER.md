@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 829 |
+| **retained_bounded** | 830 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1352 |
+| unaudited | 1351 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1277 |
+| `audited_clean` | 1278 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1668 |
+| `unaudited` | 1667 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 545 |
 | `high` | 436 |
-| `medium` | 814 |
-| `leaf` | 1317 |
+| `medium` | 813 |
+| `leaf` | 1318 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -1316,6 +1316,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -19244,6 +19245,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** A same-vielbein-coupled finite dD/d2D/d3D decomposition reconstructs the finite-difference W''' values to 4.6e-4 absolute accuracy on the tested trace channels, with a load-bearing d3D contact term and a nonzero same-coupling dD^3 triangle term.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite Dirac matrices, applies the stated sqrt(I+h) vielbein coupling, computes log|det D[h]| finite differences, and independently forms the trace decomposition from finite-differenced D derivatives. Manual differentiation of log det D gives the displayed coefficients Tr[G d3D] - three d2D*dD terms + two ordered dD^3 triangle terms, matching the implemented decomposition after taking the real log-absolute determinant channel.
 - **rationale:** The source note is explicitly bounded and does not claim Einstein-Hilbert cubic closure, Ward closure, pure-TT nonzero response, or magnitude normalization. The runner is not a constant printer: it instantiates the finite operator and computes the determinant response, robustness checks, comparator, and same-coupling decomposition directly. The cited upstream notes are retained-grade or contextual, and the current claim does not rely on their open GR-identification bridges.
+- **auditor confidence:** high
+
+### `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_CUBIC_WARD_FINITE_SCALING_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_CUBIC_WARD_FINITE_SCALING_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite runner-defined cubic Ward residual scaling diagnostic on L=6,8,10,12, including monotone resid/amplitude/k^2 behavior and finite-range candidate C near 0.047..0.050.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-055746-c71665923a-universal_gr_cubic_ward_fini`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner computes the a2*a3 cubic Ward residual cross term for L=6,8,10,12 and finds finite data compatible with resid/amplitude ~ C k^2, with simple extrapolants giving C near 0.047..0.050.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the lattice operators and diffeomorphism variation and computes the residual/amplitude data without importing or hard-coding the contested coefficient. Independent arithmetic from the displayed data confirms the monotonic normalized ratios, shrinking increments, approximately constant amplitude*k^2 spread under 15%, and the stated Richardson/geometric extrapolants.
+- **rationale:** The source note is explicitly bounded to the finite runner-defined diagnostic and does not claim an analytic continuum theorem, physical normalization, irrelevant-operator identification, or all-order Ward closure. The included runner genuinely computes the finite lattice quantities from its defined operators, has no helper imports, and does not just print expected constants. The numerical claims in the table and extrapolants check out up to ordinary rounding, so the bounded finite diagnostic closes on the restricted packet.
 - **auditor confidence:** high
 
 ### `universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08`

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_baryogenesis.py
+runner_sha256: d5d8bb165e3d8f2f9954ac80059bbd18c4f3a73f358ad0b6f04b12a21d2d296d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Cabibbo/Jarlskog historical baryogenesis-route compatibility
+========================================================================
+  [PASS] combined route note is explicitly historical
+  [PASS] legacy runner path remains provenance, not current closure
+  [PASS] current Cabibbo authority is the NNI bounded companion
+  [PASS] current Jarlskog authority is the derived-phase bounded companion
+  [PASS] Cabibbo bounded companion arithmetic is preserved (ratio=1.003566651806)
+  [PASS] Jarlskog bounded companion arithmetic is preserved (relative_offset=0.021103896104)
+SUMMARY: PASS=6 FAIL=0
+
+----- stderr -----
+

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 813 |
+| **retained_bounded** | 814 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 38 |
-| unaudited | 1379 |
+| unaudited | 1378 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1256 |
+| `audited_clean` | 1257 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1695 |
+| `unaudited` | 1694 |
 
 | claim_type | count |
 |---|---:|
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1308 | 59.35 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 860 | 58.25 | `unaudited` | unaudited |
 | 5 | `minimal_axioms_2026-05-03` | meta | critical | 497 | 47.96 | `unaudited` | meta |
-| 6 | `key_terminology` | meta | critical | 1050 | 47.04 | `unaudited` | meta |
+| 6 | `key_terminology` | meta | critical | 1049 | 47.04 | `unaudited` | meta |
 | 7 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1219 | 44.25 | `audited_renaming` | ~~audited_renaming~~ |
 | 8 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 616 | 40.77 | `audited_clean` | **retained** |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1016 | 40.49 | `unaudited` | unaudited |
@@ -1304,6 +1304,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_polarization_frame_bundle_attempt` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | A | - |
 | `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18990,6 +18991,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the finite diagonal quadratic channel L = (1/2) G qdot^2 - (1/2) V q^2, substituting q(t)=exp(i omega t) into G qddot + V q = 0 gives omega^2 = V/G for G != 0.  _(class `A`)_
 - **chain closes:** True — The Euler-Lagrange equation gives d/dt(G qdot) - (-V q) = 0, hence G qddot + V q = 0. For q=exp(i omega t), qddot=-omega^2 q, so (V-G omega^2)q=0 and omega^2=V/G when q is nonzero and G != 0.
 - **rationale:** The load-bearing step is a direct algebraic consequence of the stated finite quadratic Lagrangian and does not import a comparator sign, fitted value, physical Newton constant, or external GR action. Independent checking confirms the displayed rational examples, sign-product consequence for equal kinetic coefficients, and lambda-one control arithmetic. The source note explicitly limits the theorem to the gluing law and keeps the GR comparator-sign packet outside the claimed derivation.
+- **auditor confidence:** high
+
+### `universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_QUARTIC_DIFFEO_WARD_CONTINUUM_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_QUARTIC_DIFFEO_WARD_CONTINUUM_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-lattice quartic diffeomorphism Ward diagnostic for the explicitly defined Dcons operator, with conserved L=6,8,10 monotone scaling and naive C1 controls at L=6,8.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-044227-86596b9e3e-universal_gr_quartic_diffeo_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The conserved D(P_eff)+sqrt(g) quartic Ward residual normalized by the gauge amplitude decreases monotonically over L=6,8,10 (0.203, 0.164, 0.143, about k^0.69), while the naive C1 control is much flatter and larger at the shared momenta.  _(class `C`)_
+- **chain closes:** True — The runner source explicitly builds the finite Z^3 lattice operators, Pauli blocks, densitized-vielbein coupling, lattice diffeomorphism variation, and a2*a3*a4 cross extraction, with no helper imports or upstream numerical inputs. Independent arithmetic checks k=2*pi/L, the reported exponents, monotonicity, and conserved-vs-naive comparisons from the displayed values.
+- **rationale:** The load-bearing result is a first-principles finite-lattice computation from the stated operator definition, not a renaming, external comparator match, or copied upstream value. The runner has hard-coded prose in its final summary, but the PASS checks compute the residual ratios and exponents before testing them. The clean scope is bounded to the runner-supported diagnostic; the naive comparison is established at the two shared momenta reported by the runner, not as an independent all-L naive continuum extrapolation.
 - **auditor confidence:** high
 
 ### `universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08`

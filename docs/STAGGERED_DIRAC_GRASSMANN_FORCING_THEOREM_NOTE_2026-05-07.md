@@ -11,8 +11,8 @@ conditional on the cited primitive chain (per-site Cl(3) dim 2 +
 The load-bearing S2 input remains support-tier/re-audit-dependent on
 current main, so this note does not assert retained-grade closure. It
 repackages the existing spin-statistics S2 forcing argument as explicit
-bounded support under the parent
-[`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md).
+bounded support under the parent gate
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`.
 **Authority role:** source note. Audit verdict and effective status are
 set only by the independent audit lane.
 **Primary runner:** [`scripts/probe_grassmann_forcing_dependency_chain.py`](../scripts/probe_grassmann_forcing_dependency_chain.py)
@@ -140,7 +140,7 @@ chain support any later retained-grade use.
 
 ## Cross-references
 
-- Parent open-gate: [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- Parent open-gate (context only; parent now cites this note): `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - Spin-statistics S2 (load-bearing): [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md)
 - Per-site uniqueness (U2): [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
 - Per-site Hilbert dim (U4): [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 815 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1398 |
+| unaudited | 1397 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1255 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1714 |
+| `unaudited` | 1713 |
 
 | claim_type | count |
 |---|---:|
@@ -81,9 +81,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 483 |
-| `high` | 482 |
-| `medium` | 837 |
-| `leaf` | 1326 |
+| `high` | 481 |
+| `medium` | 839 |
+| `leaf` | 1325 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1407,6 +1407,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -11537,6 +11538,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Embedded operators supported on distinct tensor factors commute because each acts as the identity on the other's factor, so O_x O_y = O_y O_x.  _(class `A`)_
 - **chain closes:** True — The conclusions follow directly from the stipulated tensor-product Hilbert space and disjoint-factor embeddings. No upstream physical bridge, numerical comparator, or dynamical authority is needed for L1-L3.
 - **rationale:** The load-bearing step is a standard algebraic identity over tensor-product operators with disjoint support. The source note explicitly rescopes away the prior physical per-site realization clause, Lieb-Robinson time evolution, continuum microcausality, and fermionic graded tensor-product claims. The provided runner genuinely constructs symbolic and Pauli tensor-product operators and checks the claimed commutators and factorization, with no hard-coded numerical target or external comparator. The ledger visibility check is non-load-bearing and does not affect closure.
+- **auditor confidence:** high
+
+### `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`
+
+- **Note:** [`LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Crank-Nicolson diagnostics for finite nearest-neighbor toy Hamiltonians: Cayley unitarity, Neumann-tail rationale, finite-volume n-step LR-shaped tests with diagnostic v_CN, and O(a_tau^2) convergence; no exact reconstructed-H theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-210814-660ab1445c-light_cone_crank_nicolson_li`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note uses the subcritical Neumann expansion of (I + i a_tau H/2)^(-1) to infer an exponential single-step tail and the n-step LR-shaped bound with v_CN = v_LR(H)/(1 - a_tau J/2).  _(class `A`)_
+- **chain closes:** False — Cayley unitarity and fixed-time O(a_tau^2) convergence close algebraically, and the runner genuinely computes finite matrix examples. The missing step is a derivation that a local density bound J yields a volume-uniform Crank-Nicolson resolvent tail and n-step LR bound with the stated denominator; the runner samples one random chain and hard-codes the velocity formula.
+- **rationale:** The finite diagnostic computations support the runner examples, but they do not establish the stated bounded theorem for finite nearest-neighbor toy Hamiltonians from the cited inputs. The source phrases subcriticality using local J, while the Neumann-series convergence check in the runner uses ||H||, and CN3 inserts v_LR(H)=2erJ and v_CN rather than deriving the Crank-Nicolson LR constant. The retained-bounded upstream LR note supplies Hamiltonian-side finite-range LR machinery, not this Cayley-resolvent/n-step bridge.
 - **auditor confidence:** high
 
 ### `linear_response_derivation_note`

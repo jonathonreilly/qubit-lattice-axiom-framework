@@ -51,15 +51,15 @@
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
         "fermion_parity_z2_grading_theorem_note_2026-05-02"
       ],
-      "direct_in_degree": 25,
+      "direct_in_degree": 26,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 22.749,
+      "load_bearing_score": 23.25,
       "note_path": "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/probe_kawamoto_smit_phase_forcing.py",
-      "transitive_descendants": 1216
+      "transitive_descendants": 1217
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -16979,15 +16979,15 @@
         "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "minimal_axioms"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.524,
+      "load_bearing_score": 4.307,
       "note_path": "docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_persistent_record_instrument_construction.py",
-      "transitive_descendants": 22
+      "transitive_descendants": 6
     },
     {
       "audit_independence_required": "any_non_self",

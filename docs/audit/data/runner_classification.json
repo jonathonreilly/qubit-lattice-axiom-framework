@@ -21169,12 +21169,12 @@
       "runner": "scripts/audit_companion_observable_principle_det_multiplicative_character_form_selection_2026_05_28.py"
     },
     "observable_principle_from_axiom_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 24,
-        "D": 2
+        "C": 37,
+        "D": 4
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -52813,15 +52813,15 @@
       "exists": true
     },
     "scripts/frontier_hierarchy_observable_principle_from_axiom.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "observable_principle_from_axiom_note"
       ],
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 24,
-        "D": 2
+        "C": 37,
+        "D": 4
       },
       "decoration_candidate": false,
       "dominant_class": "C",

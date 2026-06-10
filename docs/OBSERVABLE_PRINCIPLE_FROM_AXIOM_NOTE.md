@@ -1,58 +1,80 @@
-# Observable Principle From Axiom Note
+# Observable Principle Finite Readout-Boundary Note
 
 **Date:** 2026-04-13 (initial); 2026-05-07 scope-narrowed to bounded
 conditional exact-algebra statement per
 `OBSERVABLE_PRINCIPLE_AUDIT_NOTE_2026-05-02` finding;
 2026-05-09 runner-local checks of determinant evenness, finite-block
-regularity, and baseline invariance are retained as candidate
+regularity, and baseline invariance are kept as candidate
 consistency checks, without promoting any cited upstream row;
 2026-05-25 headline narrowed to the **finite-algebra `log|det(D+J)|`
 generator step on the runner block, conditional on the P1 additivity and
 P2 phase-blind scalar-generator selection admissions**, per audit-lane
-verdict that unconditional axiom-to-observable closure is not supported.
+finding that unconditional baseline-to-observable closure is not supported.
 2026-06-04 Record-axiom repair: P1 scalar record additivity is no longer a
 Tier-A admission when the row uses only finite scalar record additivity; it is
-part of the approved `minimal_axioms` node in
-[MINIMAL_AXIOMS_2026-06-04.md](MINIMAL_AXIOMS_2026-06-04.md). 2026-06-06
+part of the approved `minimal_axioms` node (current memo:
+[MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)). 2026-06-06
 positive-source-cone repair: on the finite real source sector this note
 actually consumes, P2 phase-blindness is eliminated rather than admitted.
+2026-06-10 boundary-declaration repair: the readout-identification bridge
+premise is declared as the explicit Boundary, Theorem 1 is restated as a
+five-input chain (T1-a..T1-e), and the runner residual-checks the Theorem-2
+observable map; see Changelog.
 **Type:** bounded_theorem (finite-algebra `log|det(D+J)|` generator on
-the runner block, using Record-backed finite scalar additivity and the
-positive-source-cone P2 elimination on the consumed finite real source surface;
-finite-block regularity, canonical `c = 1` generator normalization, and
-zero-source baseline normalization are explicit conventions/checks, not new
-axioms).
-**Headline (post-2026-06-06 source-cone repair):** *On finite scalar record
+the runner block, using Record-backed finite scalar additivity, the
+positive-source-cone P2 elimination on the consumed finite real source surface,
+and **one declared bridge premise** — the readout-identification Boundary
+below; finite-block regularity, the conventional `c = 1` representative of the
+generator family, and zero-source baseline normalization are explicit
+conventions/checks, not new axioms).
+**Boundary (declared bridge premise, T1-d):** *the scalar record readout `W`
+of the source-deformed block is a continuous function of the Berezin amplitude
+`Z = det(D+J)` alone, defined on all of `R_{>0}` (the lemma's L3 continuity
+hypothesis, not just the attainable block amplitudes), and independent
+disjoint source blocks register as disjoint records.* The axiom memo
+explicitly excludes source/action and physical-observable identification from
+Record content, so this identification is a premise of this note, declared and
+consumed as such — not a consequence of `minimal_axioms`.
+**Headline (post-2026-06-10 boundary declaration):** *On finite scalar record
 readout surfaces, Record supplies P1 additivity over disjoint/independent
 record collections. On the finite real staggered source sector consumed here,
 `det(D+J)` is real-positive on the positive source cone and on the local
 invertible derivative patch, so `log det`, `Re Log det`, and `log|det|`
-coincide. Record additivity plus finite-block continuity therefore fixes the
-additive generator family `W = c log det` on the consumed branch; with
-canonical `c = 1` and zero-source baseline, the runner-block generator is
+coincide. Record additivity plus the declared readout-identification Boundary
+(continuity of `W` in `Z = det(D+J)` on all of `R_{>0}`; disjoint blocks as
+disjoint records) fixes the additive generator family
+`{W_c = c log det : c in R}` on the consumed branch; with the conventional
+`c = 1` representative and zero-source baseline, the runner-block generator is
 `W = log|det(D+J)|`, and its exact local source-derivative algebra is the
 in-scope theorem-grade content of this note.* Global/off-sector
-phase-blindness, arbitrary observable identification, and axiom-to-observable
+phase-blindness, arbitrary observable identification, and baseline-to-observable
 closure outside this finite real source sector are explicitly **out of scope**.
 **Claim scope (post-2026-05-07 scope narrowing; further narrowed
 2026-05-25; Record-repaired 2026-06-04; P2 source-cone-repaired
-2026-06-06):** the load-bearing claim of this note is the **finite
-exact-algebra statement** on the exact minimal hierarchy block, using
-Record-backed P1 additivity and the phase-free positive/local source surface:
+2026-06-06; boundary-declared 2026-06-10):** the load-bearing claim of this
+note is the **finite exact-algebra statement** on the exact minimal hierarchy
+block, using Record-backed P1 additivity, the phase-free positive/local source
+surface, and the declared readout-identification Boundary:
 
 > **Given** Record/P1 finite scalar additivity on disjoint independent
 > record collections, the finite real staggered source block `D^T=-D`,
-> and real diagonal scalar sources in the positive source cone or local
-> invertible derivative patch (so `det(D+J) in R_{>0}`), with canonical
-> `c = 1` generator normalization and zero-source baseline fixed
-> conventionally,
+> real diagonal scalar sources in the positive source cone or local
+> invertible derivative patch (so `det(D+J) in R_{>0}`), **and the declared
+> readout-identification Boundary (`W` is a continuous function of
+> `Z = det(D+J)` alone on all of `R_{>0}`; disjoint independent source
+> blocks register as disjoint records)**, with the conventional `c = 1`
+> representative and zero-source baseline fixed conventionally,
 > the following exact lattice-algebra identities hold on the exact minimal
-> hierarchy block: (1) the unique additive CPT-even scalar generator is
-> `W = log|det(D+J)|`; (2) local scalar observables are exact source
-> derivatives of `W`; (3) the closed-form Matsubara identity matches
-> `W(j)` to the exact hierarchy curvature kernel; (4) that kernel is
-> Klein-four invariant and selects `L_t = 4` as the unique minimal
-> resolved orbit on the APBC temporal circle.
+> hierarchy block: (1) the additive continuous scalar generator family is
+> exactly `{W_c = c log det(D+J) : c in R}`, with `c = 1` the conventional
+> representative `W = log|det(D+J)|`; (2) local scalar observables are exact
+> source derivatives of `W`, with the derivative trace formulas
+> residual-checked by the runner; (3) the closed-form Matsubara identity
+> matches `W(j)` to the exact hierarchy curvature kernel (verified at two
+> couplings, with the exact spectral multiset and pair-product determinant
+> identity); (4) that kernel is Klein-four invariant and selects `L_t = 4`
+> as the unique minimal resolved orbit on the APBC temporal circle, by an
+> exact counting argument valid for all `L_t`, not by scan alone.
 
 As of the 2026-05-07 scope narrowing, all four premises P1-P4 were
 admitted selection premises with the role classifications recorded in
@@ -62,12 +84,17 @@ the runner verifies.
 
 As of the 2026-06-04 Record repair, the P1 part of that older premise set
 is no longer a Tier-A admission when used only as finite scalar record
-additivity: it is supplied by the approved Record axiom in
-[MINIMAL_AXIOMS_2026-06-04.md](MINIMAL_AXIOMS_2026-06-04.md). As of the
+additivity: it is supplied by the approved Record axiom (current memo:
+[MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)). As of the
 2026-06-06 source-cone repair, the separate P2 admission is no longer
 load-bearing on the in-scope consumed source surface: the positive-source-cone
 bridge proves `det(D+J) in R_{>0}` on the relevant finite branch, so there is
-no determinant phase for a scalar generator to retain or discard.
+no determinant phase for a scalar generator to retain or discard. As of the
+2026-06-10 boundary declaration, the remaining bridge content — the
+readout-identification step that turns Record's record additivity into
+generator additivity in `Z = det(D+J)`, including the `R_{>0}` Cauchy domain —
+is stated as the single declared Boundary premise (T1-d) rather than folded
+silently into the axiom citation.
 This note does not set or predict the audit row's status. The narrowed
 Record/P1 plus positive-source-cone surface is for independent re-audit, and
 this repair does **not** promote `CPT_EXACT_NOTE`, `AC_phi_lambda`, or any
@@ -83,9 +110,9 @@ load-bearing claim and enter only as admitted-context comparators (see
 set or predict an audit outcome; later status is generated by the audit
 pipeline after independent review. The `bounded_theorem` label above is
 a source-side claim-boundary declaration, not an audit verdict; the
-2026-05-02 audit verdict on the unconditional framing recorded
-`audited_conditional`, and this scope narrowing implements the named
-conditional repair path (see §"Audit-named conditional scope" below).
+prior independent review found the unconditional framing conditional only,
+and this scope narrowing implements that repair path (see §"Prior conditional
+scope" below).
 **Script:** `scripts/frontier_hierarchy_observable_principle_from_axiom.py`
 
 ## Premise split
@@ -100,10 +127,14 @@ an axiom authority for anything beyond narrow finite scalar record additivity.
 - **Record/P1 (Record-supplied premise in this row's narrow use):** scalar record
   functionals are additive over disjoint finite record collections:
   `I(R_1 sqcup R_2) = I(R_1) + I(R_2)`, with `I(empty)=0` after an explicit
-  additive-baseline convention. On the runner's finite block-diagonal
-  independent-subsystem surface this is the exact P1 additivity used by the
-  proof:
-  `W[J_1 ⊕ J_2] = W[J_1] + W[J_2]`.
+  additive-baseline convention. Turning this record additivity into the
+  generator additivity used by the proof,
+  `W[J_1 ⊕ J_2] = W[J_1] + W[J_2]` on the runner's finite block-diagonal
+  independent-subsystem surface, additionally consumes the declared
+  readout-identification Boundary (T1-d): `W` is a continuous function of
+  `Z = det(D+J)` alone on all of `R_{>0}`, and disjoint independent source
+  blocks register as disjoint records. Record alone does not supply that
+  identification (see "No laundering" below).
 - **No status promotion from axioms:** Record premise support is
   chain-satisfying for this narrow dependency, but it is not `retained`,
   `retained_bounded`, or any other audit verdict. Consumers must not treat an
@@ -114,10 +145,10 @@ an axiom authority for anything beyond narrow finite scalar record additivity.
   source/action identification, measurement, Born weights, dynamics,
   normalization/scale, time arrow, or arbitrary observable identification.
 - **Out-of-scope of this note's load-bearing theorem:** global/off-sector P2
-  scalar-generator selection from retained bridge theorems. The load-bearing
+  scalar-generator selection from independently accepted bridge theorems. The load-bearing
   theorem of this note is the finite-algebra `log|det(D+J)|` generator step
   on the runner block **on the real-positive consumed source surface**; it is
-  not unconditional axiom-to-observable closure for arbitrary source sectors.
+  not unconditional baseline-to-observable closure for arbitrary source sectors.
 - **P2 on the consumed source sector (eliminated, not admitted):** the
   positive-source-cone bridge proves that the finite real staggered block with
   real diagonal scalar sources has `det(D+J) in R_{>0}` on the positive source
@@ -137,20 +168,24 @@ phase-blindness question outside the in-scope consumed source surface.
 
 ## Question
 
-Can the last hierarchy gap be closed by deriving the scalar observable
-principle from the lattice axiom itself, instead of importing the usual QFT
-language about effective actions and order parameters?
+Can the last hierarchy gap be closed on the finite source surface by deriving
+the scalar observable map from the finite Grassmann block, Record additivity,
+and one explicitly declared readout-identification Boundary, instead of
+importing the usual QFT language about effective actions and order parameters?
 
 ## Answer
 
 On the finite real staggered source surface consumed by this note, Record/P1
-finite scalar additivity plus finite-block continuity select the
-`log|det(D+J)|` generator without importing a separate P2 phase-blindness
-premise. The positive-source-cone bridge proves that the relevant source
-branch has `det(D+J) in R_{>0}`, so the possible distinction between
-`log det`, `Re Log det`, and `log|det|` disappears on the in-scope branch.
-Unconditional axiom-to-observable closure outside this finite real source
-sector is **not** claimed by this note and remains out of scope.
+finite scalar additivity, the declared readout-identification Boundary, and
+the lemma's Cauchy-uniqueness fact select the `log|det(D+J)|` generator
+without importing a separate P2 phase-blindness premise. The
+positive-source-cone bridge proves that the relevant source branch has
+`det(D+J) in R_{>0}`, so the possible distinction between `log det`,
+`Re Log det`, and `log|det|` disappears on the in-scope branch. Exactly one
+input of the chain is a declared bridge premise rather than a computed or
+axiom-supplied fact: the Boundary (T1-d). Unconditional baseline-to-observable
+closure outside this finite real source sector is **not** claimed by this
+note and remains out of scope.
 
 The key step is not another determinant fit. It is the additive structure of
 the exact Grassmann Gaussian.
@@ -166,38 +201,58 @@ the exact fermionic partition amplitude is
 That is forced by the finite Grassmann integral. No continuum QFT machinery is
 needed.
 
-## Theorem 1: additivity forces `log|Z|`
+## Theorem 1: the five-input chain selecting `W = log det(D+J)`
 
-For two independent subsystems,
+Theorem 1 is stated as an explicit five-input chain so that each input's
+epistemic character (computed / lemma-recomputed / axiom premise / declared
+bridge premise / lemma fact) is visible rather than folded into a single
+axiom citation:
 
-`D = D_1 ⊕ D_2`,
+- **T1-a (computed: Berezin determinant + block factorization).** The finite
+  Grassmann integral gives `Z[J] = det(D+J)`, and for two independent
+  subsystems `D = D_1 ⊕ D_2`, `J = J_1 ⊕ J_2`, the partition amplitude
+  factorizes exactly: `Z[J_1 ⊕ J_2] = Z_1[J_1] Z_2[J_2]`. (Runner Part 1.)
+- **T1-b (lemma facts L1/L2, runner-recomputed: det positivity on the
+  consumed branch).** On the in-scope source branch, the finite real
+  staggered block has `D^T = -D` and real diagonal scalar sources, and facts
+  L1/L2 of the det-positivity lemma give
+  `Z[J] = det(D+J) in R_{>0}` on the positive source cone and on the local
+  invertible derivative patch. The runner recomputes the L1 mechanism
+  (`B = S^{-1/2} D S^{-1/2}` antisymmetric, `det(I+B) = prod(1+lambda_k^2)
+  >= 1`) and the L2 Neumann hypothesis (`||D^{-1}J|| < 1` for every source
+  magnitude this runner uses) on the actual runner blocks. (Runner Part 8.)
+  Therefore there is no fermionic phase on the branch this note
+  differentiates: `log Z[J] = Re Log Z[J] = log |Z[J]|`.
+- **T1-c (axiom premise: Record finite scalar additivity).** For any finite
+  pairwise-disjoint collection of records, the scalar readout `I` is finitely
+  additive with `I(empty) = 0`
+  ([MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md), Record).
+- **T1-d (declared bridge premise — the Boundary).** The
+  readout-identification bridge: the scalar record readout `W` of the
+  source-deformed block is a continuous function of `Z = det(D+J)` alone,
+  defined on all of `R_{>0}`, and independent disjoint source blocks register
+  as disjoint records. This is exactly where Record's record additivity
+  `I(R_1 ⊔ R_2) = I(R_1) + I(R_2)` becomes generator additivity
+  `W[J_1 ⊕ J_2] = W[J_1] + W[J_2]`, and where the functional equation —
+  justified pointwise only on the attainable block amplitudes — acquires its
+  full `R_{>0} × R_{>0}` Cauchy domain (the L3 continuity hypothesis). The
+  axiom memo explicitly excludes source/action and physical-observable
+  identification from Record content, so this input is **not derivable** from
+  `minimal_axioms`; it is declared and consumed as the single bridge premise
+  of this note.
+- **T1-e (lemma fact L3: Cauchy uniqueness on `R_{>0}`).** By L3 of the
+  det-positivity lemma, with continuity on `R_{>0}` the solutions of the
+  multiplicative-to-additive functional equation
+  `W(r_1 r_2) = W(r_1) + W(r_2)` are exactly the one-parameter family
+  `{W_c(r) = c log r : c in R}`; `c = 1` is the conventional representative.
 
-the partition amplitude factorizes exactly:
-
-`Z[J_1 ⊕ J_2] = Z_1[J_1] Z_2[J_2]`.
-
-Under the Record axiom's finite scalar additivity, the scalar record
-generator for independent disjoint readout collections is **additive**:
-
-`W[J_1 ⊕ J_2] = W[J_1] + W[J_2]`.
-
-On the in-scope source branch, the finite real staggered block has
-`D^T = -D` and real diagonal scalar sources. The positive-source-cone
-bridge proves `Z[J] = det(D+J) in R_{>0}` on the positive source cone and
-on the local invertible derivative patch. Therefore there is no fermionic
-phase on the branch this note differentiates:
-
-`log Z[J] = Re Log Z[J] = log |Z[J]|`.
-
-Therefore, on the Record/P1 plus phase-free finite source surface, `W`
-must solve the multiplicative-to-additive functional equation
-
-`W(r_1 r_2) = W(r_1) + W(r_2)`, with `r_i = Z_i > 0`.
-
-Using finite-block continuity on this real-positive branch, the unique
-solution is
-
-`W(r) = c log r`.
+**Conclusion (chain a→e).** Given T1-a..T1-e, the additive continuous scalar
+generator family on the consumed branch is exactly
+`{W_c[J] = c log det(D+J) : c in R}` (up to baseline convention), which on
+this real-positive branch coincides with `{c log|det(D+J)|}`.
+The theorem fixes this family, not an absolute physical scale. The `c = 0`
+member is the null readout; the source-response and selector statements below
+use the conventional nonzero representative `c = 1`.
 
 A universal additive constant is not part of the exact Cauchy solution:
 `W(r_1 r_2) = W(r_1) + W(r_2)` forces any constant term to vanish. The
@@ -205,17 +260,19 @@ zero-source subtraction used below is instead an explicit extensive baseline
 convention applied to the selected generator,
 `W[J] = c(log det(D+J) - log det D)`, so that `W[0]=0`.
 
-After fixing normalization and subtracting the zero-source baseline, the
-framework-native scalar generator is therefore
+After picking the conventional `c = 1` representative and subtracting the
+zero-source baseline, the framework-native scalar generator is therefore
 
 `W[J] = log |det(D+J)| - log |det D|`.
 
 On the consumed finite source surface, this is not an imported QFT choice
 and does not require a separate P2 premise. It is selected by:
 
-1. exact Grassmann factorization
-2. finite scalar record additivity on independent disjoint subsystems
-3. finite real-positive determinant branch, which eliminates the phase
+1. exact Grassmann factorization (T1-a)
+2. finite real-positive determinant branch, which eliminates the phase (T1-b)
+3. finite scalar record additivity on independent disjoint subsystems (T1-c)
+4. the declared readout-identification Boundary (T1-d)
+5. Cauchy uniqueness on `R_{>0}` (T1-e)
 
 ## Theorem 2: local scalar observables are source derivatives of `W`
 
@@ -242,8 +299,16 @@ So the local scalar curvature is:
 4. **local**: it is generated by local projectors `P_x`
 
 That is the observable-principle map on the real-positive finite source
-surface. Given Record/P1, the real staggered block, and the local invertible
-source patch, it comes from the exact lattice source response.
+surface. Given Record/P1, the real staggered block, the declared Boundary, and
+the local invertible source patch, it comes from the exact lattice source
+response.
+
+These derivative trace formulas are the actual observable-principle map, so
+they are not left citation-only: the runner residual-checks the first,
+mixed-second, and same-site-second source-derivative formulas against central
+finite differences of `W` on a **non-uniform** positive-cone source
+(deterministic fixed seed), with residuals at the `~1e-11` / `~1e-9` level
+(Runner Part 2).
 
 ## Theorem 3: the hierarchy kernel is exactly the bosonic curvature kernel
 
@@ -264,6 +329,14 @@ derived independently:
 
 `A(L_t) = (1 / (2 L_t u_0^2)) sum_omega 1 / (3 + sin^2 omega)`.
 
+The closed form is verified as an identity in the coupling, not a
+single-point coincidence: the runner checks it at `u_0 = 0.9` **and**
+`u_0 = 1.17`, together with the underlying exact spectral multiset
+`spec(D) = {± i u_0 sqrt(3 + sin^2 omega)}` (multiplicity 4 per temporal
+mode) and the pair-product determinant identity
+`log|det(D + jI)| = 4 sum_omega log(j^2 + u_0^2 (3 + sin^2 omega))`
+(Runner Part 3).
+
 This is the crucial closure step:
 
 > under Record/P1 plus the positive-source-cone P2 elimination, the hierarchy
@@ -271,7 +344,7 @@ This is the crucial closure step:
 > is the exact local scalar curvature of the additive real-positive source
 > generator.
 
-## Theorem 4: the selector follows internally
+## Theorem 4: the selector follows for the nonzero representative
 
 The curvature kernel depends only on
 
@@ -288,8 +361,20 @@ bosonic-bilinear selector route. On the APBC temporal circle:
 - `L_t = 4` gives the unique minimal resolved closed orbit
 - `L_t > 4` splits immediately into multiple orbit sectors
 
-So the `L_t = 4` selector is internal to the Record-plus-source response
-on the repaired finite real source surface.
+**Exact counting argument (valid for all `L_t`, not scan-only).** The
+Klein-four group `V = {z, -z, z*, -z*}` has order 4, so every `V`-orbit has
+at most 4 elements. The APBC temporal circle for `L_t` carries exactly `L_t`
+distinct phases `exp(i (2n+1) pi / L_t)`. Hence the number of orbits is at
+least `ceil(L_t / 4)`, and a single-orbit kernel requires `L_t <= 4` for
+**every** `L_t`. `L_t = 2` gives the single orbit `{± i}` of size 2 — the
+unresolved sign pair; `L_t = 4` gives one resolved orbit of size 4; every
+`L_t > 4` has `>= 2` orbits and splits. The runner verifies the group-order
+bound and the counting inequality on the scanned range and records the
+conclusion (Runner Part 4); the argument itself needs no scan cutoff.
+
+So, for the conventional nonzero representative, the `L_t = 4` selector is
+internal to the Record-plus-source response on the repaired finite real source
+surface with the declared readout Boundary.
 
 ## Consequence for `v` (out-of-scope numerical readout — admitted-context only)
 
@@ -297,7 +382,10 @@ on the repaired finite real source surface.
 included as a numerical readout comparator under the explicit
 admitted-context labels below. The status of the underlying canonical
 baseline `M_Pl * alpha_LM^16` is decided by the audit lane on its own
-authority row, not here.
+authority row, not here. In the runner, the hard-coded
+`canonical_plaquette_surface` helper backing this comparator is imported
+locally inside the out-of-scope Part 5 only; the load-bearing Parts 1-4 and
+6-8 are import-free of it, and Part 5 contributes zero PASS gates.
 
 The exact selector correction is
 
@@ -338,7 +426,8 @@ The scalar observable principle is no longer:
 It is now:
 
 > the axiom gives an exact Grassmann partition amplitude;
-> using Record/P1 finite scalar additivity and the fact that the consumed
+> using Record/P1 finite scalar additivity, the declared
+> readout-identification Boundary (T1-d), and the fact that the consumed
 > source branch has `det(D+J) in R_{>0}`, with zero-source baseline
 > normalization fixed conventionally, scalar bosonic observables are the local
 > source-response coefficients of the selected additive amplitude generator.
@@ -349,44 +438,45 @@ supplied by Record only in its narrow finite scalar-additivity use; that
 premise support is not an audit verdict. Global/off-sector P2 is not derived
 here, but it is no longer load-bearing on the in-scope consumed source branch.
 
-## Honest status
+## Honest scope
 
 Under the **repaired finite source scope** (Record/P1 additivity plus the
 real-positive source branch; finite-block regularity and zero-source baseline
 behavior checked on the selected candidate generator — see §"Runner-local
 consistency checks for source regularity and normalization" below),
 the hierarchy closure is as clean as the current framework can make it on
-the in-scope axiom-to-observable map.
+the in-scope finite-source observable map.
 
 The remaining `0.03%` is no longer an open theorem gap in the
 observable-principle algebra under that scope. It sits in the canonical
 same-surface plaquette evaluation and its downstream normalization chain
-rather than in the axiom-to-observable algebra itself.
+rather than in the finite-source observable algebra itself.
 
 The remaining status question is no longer a separate P2 admission on the
-finite source surface. It is whether the reviewer/auditor accepts the
-positive-source-cone bridge as removing the phase premise on the consumed
-branch, while keeping the broader `AC_phi_lambda`/Berezin determinant
-identification and off-sector phase-blindness questions out of scope. The
+finite source surface. It is twofold: whether the reviewer/auditor accepts
+the positive-source-cone bridge as removing the phase premise on the consumed
+branch, and whether the single declared readout-identification Boundary
+(T1-d) is acceptable as the note's one bridge premise — it is genuinely not
+derivable from the axiom memo, which excludes source/action and
+physical-observable identification from Record content. The broader
+`AC_phi_lambda`/Berezin determinant identification and off-sector
+phase-blindness questions stay out of scope. The
 older P1 question is closed only for the narrow finite scalar
 record-additivity use by the Record axiom; it is not a license to import the
 broader old observable-principle parent. This revision does not change audit
 status; the audit lane must still independently decide the row verdict.
 
-## Audit-named conditional scope (2026-05-07 scope narrowing)
+## Prior conditional scope (2026-05-07 scope narrowing)
 
-The 2026-05-02 independent audit recorded verdict
-`audited_conditional` with rationale:
+The 2026-05-02 independent review of the earlier unconditional framing found
+that the theorem needed either upstream derivations of the missing selection
+premises or an explicit conditional scope:
 
-> Issue: the claim is framed as deriving the observable principle from
-> the axiom, but the decisive move to the physical scalar generator
-> imports scalar additivity and CPT-even phase-blindness as selection
-> premises. Why this blocks retained status: the runner verifies the
-> algebra after those premises are chosen; it does not derive why
-> physical scalar observables must select that generator from the axiom
-> alone. Repair target: add and audit a theorem deriving scalar
-> additivity and CPT-even phase-blindness from retained bridge work, **or
-> narrow this row to a conditional theorem given those premises**.
+> The runner verifies the algebra after the scalar-generator premises are
+> chosen; it does not by itself derive why physical scalar observables must
+> select that generator from the baseline axioms alone. Repair target:
+> either add independent upstream derivations of the bridge premises, or
+> narrow this row to a conditional theorem given those premises.
 
 This note originally adopted the verdict's second named alternative
 ("narrow this row to a conditional theorem given those premises"). The
@@ -410,8 +500,9 @@ phase premise on the consumed finite source surface:
 **Current load-bearing statement (this note):**
 
 > Given Record/P1 finite scalar additivity, a finite real staggered source
-> block, and real diagonal scalar sources on the positive source cone or
-> local invertible derivative patch, with zero-source baseline normalization
+> block, real diagonal scalar sources on the positive source cone or
+> local invertible derivative patch, and the declared readout-identification
+> Boundary (T1-d), with zero-source baseline normalization
 > fixed conventionally, the four exact-algebra identities (1-4) in the Claim
 > Scope hold on the exact minimal hierarchy block.
 
@@ -429,7 +520,7 @@ authority or remain conditional.
 Re-audit trigger (per `notes_for_re_audit_if_any` in the audit ledger):
 
 > Re-audit if scalar additivity and CPT-even phase-blindness are
-> accepted as retained-grade upstream theorems, **or if the source is
+> accepted by upstream independent review, **or if the source is
 > narrowed to a conditional exact-algebra statement**.
 
 This note had already implemented the second branch. The 2026-06-04 repair
@@ -462,6 +553,17 @@ on a small local derivative patch around an invertible block. Thus
 `log det`, `Re Log det`, and `log|det|` agree on the branch used by the
 source-response formulas.
 
+As of 2026-06-10 the consumed lemma facts are not citation-only: the runner's
+Part 8 **recomputes** them on the actual runner blocks — L1 cone positivity
+(`slogdet` sign `= +1` on non-uniform positive diagonal sources), the L1
+mechanism (`B = S^{-1/2} D S^{-1/2}` real antisymmetric and
+`det(I+B) = prod(1+lambda_k^2) >= 1`), the L2 Neumann hypothesis
+(`||D^{-1}J|| < 1` for every source magnitude this runner uses), and L2 patch
+positivity for signed sources inside the Neumann patch. The Cauchy-uniqueness
+fact L3 remains cited from the lemma; its continuity-on-`R_{>0}` hypothesis is
+part of the declared readout-identification Boundary (T1-d), matching the
+lemma's L3 hypothesis exactly.
+
 ### Historical 2026-05-09 candidate checks
 
 The 2026-05-07 conditional scope originally admitted four bridge premises
@@ -472,7 +574,7 @@ showed that the selected candidate
 finite-block regularity near zero source, and baseline-shift invariance on
 the registered staggered block. Per later audit feedback, those checks alone
 did **not** derive the broader scalar-generator classification premise P2.
-After the 2026-06-06 repair, they are retained as consistency checks for the
+After the 2026-06-06 repair, they are kept as consistency checks for the
 real-positive source branch rather than as a substitute for a global P2 theorem;
 the runner verifies them as Part 7
 (`test_candidate_consistency_checks`).
@@ -583,17 +685,20 @@ its source-derivative observables, so a naive reading might treat
 above are however **c-equivariant** in the precise sense that their
 algebraic-structural content is invariant under `W -> c W` rescaling:
 
-- **Theorem 1 (selected generator family).** Under Record/P1 on the
-  real-positive source branch, the unique continuous additive solution is a
-  one-parameter family `{W_c = c · log det(D+J) : c > 0}`. Since
+- **Theorem 1 (selected generator family).** Under Record/P1, the declared
+  Boundary, and L3 on the real-positive source branch, the continuous
+  additive solutions form exactly the one-parameter family
+  `{W_c = c · log det(D+J) : c in R}` (the full Cauchy solution family,
+  including the degenerate `c = 0` and negative-`c` members). Since
   `det(D+J)>0` on this branch, this is the same as
-  `{W_c = c · log|det(D+J)| : c > 0}`. The choice `c = 1`
-  picks one representative of that family; any other `c > 0`
+  `{W_c = c · log|det(D+J)| : c in R}`. The choice `c = 1`
+  picks one representative of that family; any other `c`
   representative satisfies the same selection and the same Record/P1
   identities, modulo the same zero-source baseline convention and a global
   scale on source derivatives. Theorem 1
   in §"Claim scope" should therefore be read as fixing the
-  generator class, not the absolute scale.
+  generator family, not a single generator and not the absolute scale:
+  "uniqueness" means uniqueness of the family, with `c = 1` conventional.
 
 - **Theorem 2 (local source derivatives).** With `W_c`, local
   source-derivative observables carry a global `c` prefactor:
@@ -607,14 +712,17 @@ algebraic-structural content is invariant under `W -> c W` rescaling:
 - **Theorem 3 (Matsubara closed-form identity).** The closed-form
   identity is `c`-equivariant: `W_c(j) = c · A(L_t) j^2 + O(j^4)`,
   with `A(L_t)` itself `c`-independent. Both sides scale together
-  under `W -> c W`, so the identity holds for every `c > 0` in
+  under `W -> c W`, so the identity holds for every `c` in
   the family with the same `A(L_t)`.
 
-- **Theorem 4 (Klein-four invariance + `L_t = 4` selector).** The
+- **Theorem 4 (Klein-four invariance + `L_t = 4` selector).** For any
+  nonzero representative, the
   Klein-four group acts on the source `J`, not on the generator
   scale. The orbit-resolution argument that selects `L_t = 4` as
   the minimal resolved APBC orbit is therefore manifestly
-  `c`-independent.
+  independent of the nonzero value of `c`. The degenerate `c = 0`
+  member is the null readout and carries no source-curvature kernel, so it is
+  not the representative used for the selector claim.
 
 In short, the in-scope identities (1)-(4) are statements about the
 algebraic / index / orbit structure of `W_c`, all of which are
@@ -645,7 +753,7 @@ the consuming row.
 
 - **Record/P1 finite scalar additivity** is supplied by Record only in the
   narrow sense stated in
-  [MINIMAL_AXIOMS_2026-06-04.md](MINIMAL_AXIOMS_2026-06-04.md). This axiom
+  [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md). This axiom
   premise support is chain-satisfying for dependency closure, but it is not a
   `retained_bounded` audit status and does not promote downstream rows. The
   older P1 no-go portfolio remains useful history for why this was a genuine
@@ -676,7 +784,7 @@ W_qubit[J] := log Tr_A(e^{-(H + J)}) - log Tr_A(e^{-H})
 automatically satisfies trace-tensor additivity on disjoint qubit regions and
 the phase-positive side of P2 (because `Z[J]` is manifestly real-positive for
 self-adjoint `H + J`). The additivity part is now superseded here by Record in
-the finite scalar record sense. When that note becomes retained-grade,
+the finite scalar record sense. When that note is independently accepted,
 transferring the phase-positive P2 retirement back to this note's
 `W = log|det(D+J)|` formulation remains conditional on the admitted Grassmann /
 Berezin bridge between the qubit-trace and Grassmann-determinant surfaces, per
@@ -687,8 +795,9 @@ either row.
 ### Updated load-bearing statement
 
 > **Given Record/P1 finite scalar additivity, a finite real staggered source
-> block, and real diagonal scalar sources on the positive source cone or local
-> invertible derivative patch**, with canonical `c = 1` generator normalization
+> block, real diagonal scalar sources on the positive source cone or local
+> invertible derivative patch, and the declared readout-identification
+> Boundary (T1-d)**, with the conventional `c = 1` representative
 > and zero-source baseline fixed conventionally, the four exact-algebra
 > identities in §"Claim scope" hold on the exact minimal hierarchy block.
 
@@ -733,8 +842,50 @@ enter this note only as admitted-context:
   on the finite real-positive source branch because `arg det(D+J)=0` there.
 
 In-scope content of this note is the finite real-source observable map:
-Grassmann factorization -> positive determinant source branch -> unique
-additive `W = log|det(D+J)|` -> local source-derivative formulas -> Matsubara
-closed-form identity -> Klein-four invariance and `L_t = 4` selector. The
-physical numerical `v` readout depends on the admitted upstreams named above
-and remains comparator-only here.
+Grassmann factorization -> positive determinant source branch -> declared
+readout-identification Boundary -> additive generator family
+`{c log det(D+J) : c in R}` with conventional representative
+`W = log|det(D+J)|` -> local source-derivative formulas -> Matsubara
+closed-form identity -> Klein-four invariance and `L_t = 4` selector (exact
+counting). The physical numerical `v` readout depends on the admitted
+upstreams named above and remains comparator-only here.
+
+## Changelog
+
+- **2026-04-13** — original note (unconditional baseline-to-observable framing).
+- **2026-05-07 / 2026-05-25** — scope narrowed to the conditional
+  exact-algebra statement per the 2026-05-02 conditional-repair finding;
+  headline narrowed to the finite-algebra `log|det(D+J)|` generator step
+  given the P1/P2 admissions.
+- **2026-06-04 / 2026-06-06** — Record-axiom repair (P1 supplied by
+  `minimal_axioms` in the narrow finite scalar record-additivity sense) and
+  positive-source-cone repair (P2 eliminated on the consumed real source
+  branch via the det-positivity lemma).
+- **2026-06-10** — boundary-declaration repair (this revision):
+  (a) the readout-identification bridge premise — previously consumed
+  silently inside the Record citation — is declared as the single explicit
+  Boundary (header and T1-d): `W` is a continuous function of
+  `Z = det(D+J)` alone on all of `R_{>0}` (the L3 Cauchy-domain content
+  included), and disjoint independent source blocks register as disjoint
+  records; the axiom memo excludes this identification from Record content,
+  so it is a premise, not a consequence;
+  (b) Theorem 1 restated as the five-input chain T1-a..T1-e (computed
+  Berezin factorization; runner-recomputed lemma facts L1/L2; Record
+  additivity as axiom premise; the declared Boundary; lemma fact L3);
+  (c) the uniqueness overclaim fixed: the selected object is the generator
+  family `{c log det(D+J) : c in R}` with `c = 1` conventional (claim
+  scope, headline, c-equivariance section);
+  (d) stale axiom citations updated to the current memo
+  `MINIMAL_AXIOMS_2026-06-05.md` (the ledger's `minimal_axioms` target);
+  (e) runner upgrades: Theorem-2 derivative trace formulas residual-checked
+  against central finite differences on a non-uniform positive-cone source
+  (Part 2); Matsubara closed form, exact spectral multiset, and pair-product
+  determinant identity verified at `u_0 = 0.9` and `1.17` (Part 3); the
+  `L_t = 4` selector backed by the exact counting argument (Part 4); the
+  consumed lemma facts L1/L2 recomputed on the runner blocks, including the
+  `||D^{-1}J|| < 1` Neumann hypothesis for every source magnitude used
+  (new Part 8); the hard-coded `canonical_plaquette_surface` helper now
+  imported locally inside the out-of-scope Part 5 comparator only, which
+  contributes zero PASS gates (comparator numbers unchanged:
+  `v_pred = 246.282818290129 GeV`, `+0.025513%`).
+  SCORECARD: 37 pass, 0 fail out of 37, deterministic (fixed seeds), ~0.1 s.

@@ -47718,11 +47718,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
     },
     {
       "from": "repo.front_door_status",
       "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
@@ -47739,10 +47743,6 @@
     {
       "from": "repo.front_door_status",
       "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
     },
     {
       "from": "repo.repo_organization",
@@ -82939,10 +82939,10 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "599db86c7f927a80c9784e480000cc559a07248c262c32115e3dbe9f464ee227",
+      "note_hash": "2c26c244242d4397e86851b44150ba26c49aae39dc887cea5ddfee1124e92dba",
       "path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
-      "title": "Observable Principle From Axiom Note"
+      "title": "Observable Principle Finite Readout-Boundary Note"
     },
     "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17": {
       "claim_id": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
@@ -92209,16 +92209,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
         "abj_epsilon_index_square_block_no_go_note_2026-05-30",
+        "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
-        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f33677f9a4dafa0b3d64440034109383a6c362ab536df65b70247fd91ec2bdba",
+      "note_hash": "f92a77cc6e794947555ce52b7d38ae15f60a9483e7731eda80308430835e2b96",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

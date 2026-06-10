@@ -17,7 +17,7 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 190 |
+| critical | `unaudited` | 189 |
 | high | `unaudited` | 143 |
 | medium | `unaudited` | 88 |
 | critical | `audited_renaming` | 3 |
@@ -25,6 +25,7 @@ publication tables phrase it.
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| critical | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
@@ -105,7 +106,7 @@ publication tables phrase it.
 | critical | `g_bare_structural_normalization_theorem_note_2026-04-18` | `audited_renaming` | `audited_renaming` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
 | critical | `g_bare_two_ward_closure_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | critical | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
-| critical | `gravity_clean_derivation_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
+| critical | `gravity_clean_derivation_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | critical | `hierarchy_bosonic_bilinear_selector_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `higgs_mass_derived_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `higgs_vacuum_explicit_systematic_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |

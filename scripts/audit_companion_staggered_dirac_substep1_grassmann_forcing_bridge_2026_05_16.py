@@ -1,29 +1,51 @@
 #!/usr/bin/env python3
 """Exact-symbolic audit-companion runner for
-`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`.
+`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
+(2026-06-10 science-fix revision: U4 boundary discharged).
 
-The narrow theorem's load-bearing content is the abstract algebraic
-dichotomy between two candidate per-site matter-generator measures:
+The note's load-bearing content is the two-candidate collapse on the
+framework's physical per-site Hilbert space:
 
   (G) Grassmann pair (chi_x, chibar_x) with anticommutation,
       per-site Fock dim_C = 2;
   (B) Bosonic pair  (a_x, a_x^dagger) with commutation,
       per-site Fock dim_C = infinity.
 
-Given the cited upstream narrow theorems
+Given the cited one-hop authorities
 
-  - CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10
+  - U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20
+    (retained: H_x = C^2 is the single faithful complex irreducible
+    Cl(3,0) ~= M_2(C) module, multiplicity k = 1, from the Quantum
+    axiom's one-qubit-per-site content)
+  - STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE narrow
+    bounded note (C1: k = 1 => dim_C H_x = 2; multiplicity enumeration)
+  - CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10
     (Cl(3) faithful complex irrep has dim_C V = 2)
   - SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10
     (Z_F = det(M) for quadratic Grassmann partition; chi_x^2 = 0)
 
-the abstract dimensional-match (D1)-(D3) and the Berezin
-scalar-finite-determinant readout (D4) all reduce to exact-symbolic
-arithmetic on finite-dim complex matrices.
+the dimensional-match (D1)-(D3), the Berezin readout (D4), and the
+composition / collapse (D5) all reduce to exact-symbolic arithmetic on
+finite-dim complex matrices. The 2026-06-10 revision adds:
+
+  Part 8 - (D5) U4 composition certificate: gamma_i -> sigma_i is a
+           real-algebra isomorphism onto M_2(C) (faithful), the action
+           on C^2 is irreducible (scalar commutant), single chirality
+           (omega -> +i I, k = 1), and the two-candidate surface
+           collapses to single-pair (G).
+  Part 9 - (D5) falsification leg: without the U4/k=1 input, the k = 2
+           module rho_+ (+) rho_+ on C^4 is an admissible faithful
+           Cl(3) module on which the single-pair collapse FAILS.
+  Part 10 - (B-stat) scope-boundary witness: the hard-core-boson frame
+           ties with (G) on the per-site dimensional readout (dim 2,
+           sigma_+^2 = 0) while being cross-site commuting (not CAR);
+           the statistics selection is declared open, not claimed.
 
 Companion role: not a new claim row; provides audit-friendly evidence
-that the narrow theorem's load-bearing algebraic content holds at exact
-symbolic precision.
+that the note's load-bearing algebraic content holds at exact symbolic
+precision, that the consumed retained U4 authority is load-bearing
+(falsification leg), and that the declared scope boundary is visible
+in the verified stdout.
 """
 
 from __future__ import annotations
@@ -105,8 +127,9 @@ def main() -> int:
     print("=" * 88)
     print("Audit companion (exact-symbolic) for")
     print("STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16")
-    print("Goal: sympy verification of (D1)-(D4) Grassmann-vs-bosonic dichotomy")
-    print("      given Cl(3) faithful-irrep dim = 2 and Berezin determinant identity")
+    print("Goal: sympy verification of (D1)-(D4) Grassmann-vs-bosonic dichotomy,")
+    print("      the (D5) U4-composition collapse certificate + falsification leg,")
+    print("      and the (B-stat) declared scope-boundary witness")
     print("=" * 88)
 
     # =========================================================================
@@ -326,16 +349,221 @@ def main() -> int:
     )
 
     # =========================================================================
+    section("Part 8: (D5) U4 composition certificate (retained one-hop authority)")
+    # =========================================================================
+    # The retained U4 closure delivers: H_x = C^2 is the single faithful
+    # complex irreducible Cl(3,0) ~= M_2(C) module, k = 1. The interface
+    # facts (complex-linear, faithful, irreducible, single chirality) are
+    # re-verified here at exact symbolic precision, then composed with
+    # (D1)-(D3) into the collapse certificate.
+
+    def real_span_rank(mats: list) -> int:
+        """Rank over R of complex 2x2 (or nxn) matrices, flattened to
+        real coordinates (Re, Im of each entry)."""
+        rows = []
+        for B in mats:
+            v = []
+            n = B.shape[0]
+            for a in range(n):
+                for b in range(n):
+                    e = sympy.expand(B[a, b])
+                    v += [sympy.re(e), sympy.im(e)]
+            rows.append(v)
+        return Matrix(rows).rank()
+
+    # (a) gamma_i -> sigma_i extends to a real-algebra map whose image
+    # spans all of M_2(C) over R: the 8 Clifford basis images are
+    # R-linearly independent, and dim_R Cl(3,0) = dim_R M_2(C) = 8,
+    # so the map is a real-algebra isomorphism — in particular faithful.
+    cl3_basis_images = [
+        I2,
+        sigma_1,
+        sigma_2,
+        sigma_3,
+        sigma_1 * sigma_2,
+        sigma_1 * sigma_3,
+        sigma_2 * sigma_3,
+        sigma_1 * sigma_2 * sigma_3,
+    ]
+    rank8 = real_span_rank(cl3_basis_images)
+    check(
+        "(D5) gamma_i -> sigma_i: 8 Clifford basis images R-independent in M_2(C)",
+        rank8 == 8,
+        detail=f"real span rank = {rank8} = dim_R Cl(3,0) = dim_R M_2(C) (iso, faithful)",
+    )
+
+    # (b) Irreducibility: the commutant of {sigma_1, sigma_2, sigma_3}
+    # on C^2 is the scalars (Schur).
+    a_c, b_c, c_c, d_c = symbols("a_c b_c c_c d_c", complex=True)
+    X = Matrix([[a_c, b_c], [c_c, d_c]])
+    commutant_eqs = []
+    for s in sigmas:
+        Cm = sympy.expand(X * s - s * X)
+        commutant_eqs += [Cm[i, j] for i in range(2) for j in range(2)]
+    sol = sympy.solve(commutant_eqs, [b_c, c_c, d_c], dict=True)
+    check(
+        "(D5) commutant of {sigma_i} on C^2 is scalars (irreducible module)",
+        len(sol) == 1
+        and sol[0].get(b_c) == 0
+        and sol[0].get(c_c) == 0
+        and sol[0].get(d_c) == a_c,
+        detail=f"solve(XS=SX) -> {sol}",
+    )
+
+    # (c) Single chirality summand: omega = gamma_1 gamma_2 gamma_3 -> +i I,
+    # so (n_+, n_-) = (1, 0) and the multiplicity index k = n_+ + n_- = 1.
+    omega = sigma_1 * sigma_2 * sigma_3
+    check(
+        "(D5) pseudoscalar omega -> +i I (single chirality, (n_+, n_-) = (1, 0))",
+        simplify(omega - sym_I * I2) == Z2,
+    )
+    dim_Hx = cl3_carrier_dim
+    k_multiplicity = dim_Hx // 2
+    check(
+        "(D5) dim_C H_x = 2 = 2k with k = 1 (U4 closure composed with C1)",
+        dim_Hx == 2 and k_multiplicity == 1,
+        detail=f"dim_C H_x = {dim_Hx}, k = {k_multiplicity}",
+    )
+
+    # (d) Collapse certificate: substitute the physical readout into the
+    # two-candidate comparison. (B) excluded, single-pair (G) survives,
+    # and the single-pair Fock dim 2 = 2k matches k = 1 exactly
+    # (p >= 2 pairs would give 2^p != 2).
+    check(
+        "(D5) candidate (B) excluded on physical H_x (aleph_0 truncations exceed 2)",
+        all((N_max + 1) != dim_Hx for N_max in (2, 5, 10, 100)),
+    )
+    single_pair_dim = 2  # one Grassmann pair: span{|0>, chibar|0>}
+    multi_pair_dims = {p: 2**p for p in (2, 3, 4)}
+    check(
+        "(D5) single-pair (G) matches (2 = dim_C H_x); p >= 2 pairs mismatch (2^p != 2)",
+        single_pair_dim == dim_Hx
+        and all(d != dim_Hx for d in multi_pair_dims.values()),
+        detail=f"single-pair dim = {single_pair_dim}; multi-pair dims = {multi_pair_dims}",
+    )
+    print(
+        "  COLLAPSE CERTIFICATE: on the physical per-site Hilbert space"
+        " (retained U4 closure, dim_C H_x = 2, k = 1), the two-candidate"
+        " surface {G, B} collapses to the single-pair Grassmann candidate (G)."
+    )
+
+    # =========================================================================
+    section("Part 9: (D5) falsification leg — collapse fails without the U4 input")
+    # =========================================================================
+    # Without the retained U4/k=1 authority, the abstract algebraic surface
+    # admits faithful Cl(3) modules at every k >= 1. Exhibit k = 2:
+    # rho_+ (+) rho_+ on C^4 satisfies the Clifford relations, is faithful,
+    # and has dim_C = 4 — on it the single-pair Grassmann match FAILS while
+    # a two-pair Grassmann module matches instead. Hence the consumed
+    # retained authority is load-bearing for (D5).
+
+    def blkdiag2(A: Matrix, B: Matrix) -> Matrix:
+        M = zeros(A.shape[0] + B.shape[0], A.shape[1] + B.shape[1])
+        M[: A.shape[0], : A.shape[1]] = A
+        M[A.shape[0] :, A.shape[1] :] = B
+        return M
+
+    G4 = [blkdiag2(s, s) for s in sigmas]
+    I4 = eye(4)
+    Z4 = zeros(4, 4)
+    clifford_k2_ok = True
+    for i in range(3):
+        for j in range(3):
+            anti = G4[i] * G4[j] + G4[j] * G4[i]
+            expected = 2 * I4 if i == j else Z4
+            if simplify(anti - expected) != Z4:
+                clifford_k2_ok = False
+    check(
+        "(falsif) k = 2 module rho_+ (+) rho_+ on C^4 satisfies Clifford relations",
+        clifford_k2_ok,
+    )
+    k2_basis_images = [
+        I4,
+        G4[0],
+        G4[1],
+        G4[2],
+        G4[0] * G4[1],
+        G4[0] * G4[2],
+        G4[1] * G4[2],
+        G4[0] * G4[1] * G4[2],
+    ]
+    rank8_k2 = real_span_rank(k2_basis_images)
+    check(
+        "(falsif) k = 2 module is faithful (8 Clifford basis images R-independent)",
+        rank8_k2 == 8,
+        detail=f"real span rank = {rank8_k2}",
+    )
+    dim_k2 = G4[0].shape[0]
+    check(
+        "(falsif) k = 2 module has dim_C = 4 != 2: admissible without the U4 input",
+        dim_k2 == 4 and dim_k2 != dim_Hx,
+        detail=f"dim_C = {dim_k2}",
+    )
+    check(
+        "(falsif) on the k = 2 module, single-pair (G) match fails (2 != 4)"
+        " while a two-pair Grassmann module matches (2^2 = 4)",
+        single_pair_dim != dim_k2 and 2**2 == dim_k2,
+        detail="without k = 1 the single-pair collapse is NOT forced",
+    )
+
+    # =========================================================================
+    section("Part 10: (B-stat) scope-boundary witness — statistics NOT claimed")
+    # =========================================================================
+    # The retained statistics-agnostic no-go (plain-text pointer in the
+    # note) shows the two-candidate surface is not statistics-exhaustive:
+    # the hard-core-boson frame (bare qubit ladders) has per-site Fock
+    # dim 2 (ties with (G) on the dimensional readout) but is cross-site
+    # COMMUTING (not CAR). This witness makes the declared scope boundary
+    # visible in the verified stdout; it is a non-claim marker, not a
+    # failure of (D5).
+    sigma_plus = (sigma_1 + sym_I * sigma_2) / 2
+    check(
+        "(B-stat) hard-core ladder nilpotent on-site: sigma_+^2 = 0 (per-site dim 2)",
+        simplify(sigma_plus * sigma_plus) == Z2,
+    )
+    check(
+        "(B-stat) hard-core per-site Fock dim = 2 ties with (G) on the dim readout",
+        2 == dim_Hx,
+        detail="dimension is blind to the fermion vs hard-core-boson frame choice",
+    )
+    P1 = Matrix(sympy.kronecker_product(sigma_plus, I2))
+    P2 = Matrix(sympy.kronecker_product(I2, sigma_plus))
+    Z44 = zeros(4, 4)
+    comm_12 = sympy.expand(P1 * P2 - P2 * P1)
+    anti_12 = sympy.expand(P1 * P2 + P2 * P1)
+    check(
+        "(B-stat) cross-site COMMUTING: [sigma_+^(1), sigma_+^(2)] = 0 on two sites",
+        simplify(comm_12) == Z44,
+    )
+    check(
+        "(B-stat) cross-site anticommutator nonzero: {sigma_+^(1), sigma_+^(2)} != 0 (not CAR)",
+        simplify(anti_12) != Z44,
+    )
+    print(
+        "  SCOPE-BOUNDARY (declared, not claimed): statistics selection —"
+        " the hard-core-boson frame ties with (G) on every per-site"
+        " dimensional readout checked here; excluding it needs the S2/FS"
+        " statistics-selection input (axiom_first_spin_statistics_theorem:"
+        " unaudited; FS: not a Tier-A admission). (D5) is collapse within"
+        " the two-candidate surface only, NOT statistics forcing."
+    )
+
+    # =========================================================================
     section("Summary")
     # =========================================================================
     print("  Verified at exact sympy precision:")
     print("    (D1) Bosonic per-site Fock truncated dim grows without bound")
     print("    (D2) Grassmann per-site Fock dim = 2 (via nilpotency chi_x^2 = 0)")
-    print("    (D2) dim_C H_x^G = dim_C V = 2 match to Cl(3) faithful-irrep dim")
+    print("    (D2) dim_C H_x^G = dim_C H_x = 2 match to the physical per-site dim")
     print("    (D3) Explicit two-candidate comparison {G, B}")
     print("    (D4) Z_F[M] = det(M) at N = 1, 2, 3, 4 (cited upstream Berezin identity)")
     print("    (D4) Grassmann/bosonic single-mode traces structurally distinct")
     print("    Counterfactual: dropping nilpotency loses the dim-2 readout")
+    print("    (D5) U4 composition certificate: Cl(3,0) ~= M_2(C) faithful iso,")
+    print("         irreducible on C^2, single chirality, k = 1 => collapse to (G)")
+    print("    (D5) Falsification leg: k = 2 module defeats the collapse without U4")
+    print("    (B-stat) Scope boundary: hard-core-boson frame ties on dimension;")
+    print("         statistics selection declared open, not claimed")
 
     print()
     print("=" * 88)

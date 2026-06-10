@@ -60,8 +60,8 @@ owned by the 2026-06-10 GL(F) conditional discriminator note.
 
 ## 1. Setting
 
-The note refers to the older 2026-04-11 axiom-first lane surface of
-[`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md):
+The note refers to the current framework premise surface of
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md):
 
 - **Quantum/local algebra input.** `Cl(3)` at each lattice site.
 - **Finite Lattice block.** A finite block `Λ ⊂ Z^3` (used only via finiteness).
@@ -182,13 +182,17 @@ obstruction is at the operator/Hilbert-space level, not Gaussian convergence.
 
 ## 4. Cited authorities (one hop, with licenses)
 
+- [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)
+  — **License used here:** the retained physical per-site readout
+  `dim_C H_x = 2` on the framework's Cl(3) x Z^3 substrate, and the finite
+  block tensor-product dimension. This is the load-bearing bridge that lets
+  the finite-dimensional CCR trace obstruction apply to the substep-1 matter
+  surface.
 - [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-  — **License used here:** only the U2/U4
-  dimensional readout — a faithful complex Cl(3) spinor irrep has dimension
-  exactly `2`, in both chirality summands, so the per-site matter space is a
-  finite (dim-2) module. The runner independently recomputes the Clifford
-  relations and dimension for both `ρ_±`. No uniqueness-of-quantisation
-  content is consumed.
+  — **License used here:** only the exact Cl(3) irrep algebra and chirality
+  split inherited by the per-site Hilbert-space theorem. The runner
+  independently recomputes the Clifford relations and dimension for both
+  `ρ_±`. No uniqueness-of-quantisation content is consumed.
 - [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md)
   — **License used here:** the three-candidate
   classification (its (A)–(D)) that corrects old Fact 2.3, and the tie facts
@@ -196,9 +200,9 @@ obstruction is at the operator/Hilbert-space level, not Gaussian convergence.
   it: the exclusion here is exactly the dimensional half branch
   the no-go itself acknowledges (its §1, free-boson exclusion), and the
   forcing reading the no-go defeats is withdrawn here.
-- [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) — lane
-  baseline. **License used here:** the local-algebra, finite-lattice-block,
-  and declared-Grassmann-frame objects of §1 only; the Grassmann choice is
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — current
+  framework premise surface. **License used here:** the Quantum/local-algebra
+  and Lattice/finite-block objects of §1 only; the Grassmann choice is
   consumed as a declared frame hypothesis for
   (S1)/(S3)/(S4), not as a derived fact.
 
@@ -288,9 +292,10 @@ including, among others, the load-bearing lines:
 claim_type_author_hint: bounded_theorem
 claim_scope: "Re-scoped 2026-06-10: under the explicit canonical-CCR hypothesis (eq. 6), the free-boson realization of the substep-1 matter sector is excluded — the CCR has no finite-dimensional realization (trace obstruction) while the cited per-site readout is a dim-2 Cl(3) module (chirality-independent) — killing exactly the CCR branch of the three-candidate classification; the hard-core boson violates the CCR hypothesis on-site ([a,a^+] = 1-2n, defect norm 2, runner falsification leg) and is NOT excluded, so the hard-core-vs-Grassmann/CAR selection is out of scope (the GL(F) predicate, 2026-06-10 conditional discriminator note); (S1)/(S3)/(S4) Grassmann-calculus consequences are conditional on the declared Grassmann frame choice; the former forcing claim and the former false-binary Fact 2.3 are withdrawn."
 upstream_dependencies:
+  - cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02
   - axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29
   - staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25
-  - minimal_axioms_2026-04-11
+  - minimal_axioms_2026-06-05
 admitted_context_inputs:
   - finite-dimensional linear algebra / tensor products (standard)
   - Jordan-Wigner construction (standard methodology, recomputed by the runner)

@@ -1,7 +1,9 @@
 # Sign Portability Invariant Note
 
-**Date:** 2026-04-06 (status line narrowed 2026-04-28 per audit-lane verdict)
-**Status:** bounded conditional comparison invariant across reported sign-law families; the comparison runner is not registered in the audit ledger and the cited family notes are not registered as one-hop dependencies. Not a tier-ratifiable portability theorem or independent order parameter.
+**Date:** 2026-04-06 (status line narrowed 2026-04-28 per audit-lane verdict; finite-gate scope repair 2026-06-10)
+**Status:** bounded finite cached gate comparison across reported sign-law
+families. Not a tier-ratifiable portability theorem, cross-family inheritance
+proof, or independent order parameter.
 
 ## Artifact Chain
 
@@ -26,11 +28,11 @@ the numerical-side companion to the algebraic / leading-order proofs
 in
 [`SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md).
 
-**Block 2 — cross-family corollary check.** As before, the runner
+**Block 2 — finite cross-family gate check.** As before, the runner
 reads the registered per-row outputs of each one-hop family runner
 (the runner-cache files when populated, the dated logs in `logs/` as
 fallback) and asserts the four common thresholds that the note
-proposes as the signed-control fixed point:
+uses as the signed-control fixed-point gate packet:
 
 - G1 zero-source cancellation: `|zero| <= 1e-12` on every row
 - G2 neutral same-point cancellation: `|neutral| <= 1e-12` on every row
@@ -42,16 +44,15 @@ proposes as the signed-control fixed point:
 Rows the family runner rejected for sign orientation are surfaced as
 explicit basin/seed exclusions in the runner output, per family. The
 runner exits 0 only when both blocks pass; otherwise it exits 1. The
-claim scope of this note is unchanged: it remains a bounded
-conditional comparison invariant, not a tier-ratifiable portability
-theorem. The improvement is that the load-bearing step (existence of
-the signed-control fixed point in at least one family) is now backed
-by a derivation rather than by a cross-note comparison.
+claim scope is now narrowed to the finite cached gate certificate: the
+runner verifies these gates in the named logs at the displayed thresholds.
+It is not a tier-ratifiable portability theorem and does not prove that other
+families inherit the gates by a common lower-bound or linear-response theorem.
 
 ## Question
 
-What is the smallest invariant that explains why signed-source transfer now
-survives across the retained structured families?
+What is the smallest finite gate packet that survives in the registered
+signed-source family logs?
 
 ## Comparison
 
@@ -73,7 +74,7 @@ The later fifth-family radial holdout agrees on the same control surface:
 
 ## Safe Read
 
-Across the retained sign-law basins, the thing that survives is not the
+In the registered sign-law basin logs, the thing that survives is not the
 geometry family itself.
 
 What survives is the signed-control fixed point:
@@ -83,34 +84,31 @@ What survives is the signed-control fixed point:
 - plus/minus antisymmetry
 - weak-field response pinned near unit slope
 
-The family construction only changes basin width and selectivity.
+Within this finite cached comparison, the family construction changes basin
+width and selectivity.
 Some families are broad, some are narrow, and some are seed-selective, but the
-sign-law fixed point remains the same.
+signed-control gate packet passes the same thresholds on the retained/passing
+rows surfaced by the family logs.
 
-### Load-bearing step (corollary structure)
+### Load-bearing step (finite cached gate certificate)
 
-The load-bearing claim "across the retained sign-law basins, the
-signed-control fixed point survives" is not a free-standing cross-note
-comparison.  It is now backed by a first-principles derivation within
-ONE retained sign-law family (the second grown family), in
-[`SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md).
+The load-bearing claim is finite and cached: the registered comparison runner
+reads the listed family logs and checks the four displayed gates at the stated
+thresholds. The first-principles derivation within ONE retained sign-law family
+(the second grown family), documented in
+[`SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md),
+is supporting context for that family, not a proof of cross-family inheritance.
 
 That note derives the four gates from the action and the
 source-construction map: G1 and G2 as exact algebraic identities at
 finite source strength, G3 and G4 as leading-order weak-field identities
 with explicit bounded second-order remainders.
 
-The cross-family invariance asserted in the comparison table above is
-then a **corollary**: any other retained sign-law family that shares the
-three structural inputs (linear-in-charge source-to-field map with
-deterministic anchor selection, forward-only DAG propagation with
-`act = L (1 + lf)`, and centroid readout `sum |amps|^2 z / sum |amps|^2`
-over the detector layer) inherits the same four gates by the same proof
-steps, with a family-specific remainder constant `C_F`. The five core
-families and the holdout family in this note all satisfy these
-structural inputs, so the runner's family-by-family threshold check is
-verifying the corollary numerically rather than asserting an unbacked
-cross-note pattern.
+This note no longer claims that the other families inherit the four gates by
+the same proof steps. A family-uniform lower-bound / linear-response bridge,
+especially for G4, remains open. The table above is therefore a finite
+comparison certificate over the registered family logs, not an inherited
+cross-family theorem.
 
 ## Exact Mismatch
 
@@ -122,11 +120,11 @@ cross-note pattern.
 
 ## Final Verdict
 
-**bounded conditional comparison positive:** signed-source transfer is
-portable across the reported structured sign-law families under the
-registered runner thresholds, with the signed-control fixed point as the
-comparison invariant and basin width as the family-dependent variable. This
-does not promote the note to a tier-ratifiable portability theorem.
+**bounded finite cached gate comparison positive:** the registered family logs
+pass the signed-control gate packet under the comparison runner thresholds,
+with basin width as the family-dependent variable. This does not promote the
+note to a tier-ratifiable portability theorem or a cross-family inheritance
+proof.
 
 ## Audit boundary (2026-04-28)
 
@@ -151,6 +149,7 @@ descendants):
 ## What this note does NOT claim
 
 - A tier-ratifiable portability theorem.
+- A cross-family inheritance proof.
 - An independent order parameter beyond the cross-family comparison.
 - That the in-family derivation theorem note is itself fully
   unconditional: per the audit ledger that theorem is

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1393 |
+| Applied audit verdicts | 1394 |
 | Retained-grade rows, including boxed decorations | 1272 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 804 |
 | Boxed decorations under retained parents | 50 |
-| Open gates | 37 |
-| Unaudited rows | 1401 |
+| Open gates | 38 |
+| Unaudited rows | 1400 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 25 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1403 |
-| Ready rows | 47 |
+| Total pending rows | 1402 |
+| Ready rows | 46 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
-| Medium pending | 382 |
+| Medium pending | 381 |
 | Leaf pending | 443 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
-- [`rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`complex_selectivity_predictor_note`](../../docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md) - medium; unaudited
 - [`universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09`](../../docs/UNIVERSAL_GR_QUADRATIC_MODE_GLUING_DERIVATION_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08`](../../docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09`](../../docs/MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09`](../../docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md) - medium; unaudited
+- [`magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

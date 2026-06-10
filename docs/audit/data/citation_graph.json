@@ -47574,6 +47574,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "higgs_from_lattice_note"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
     },
     {
@@ -47586,19 +47590,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
     },
     {
       "from": "repo.front_door_status",
-      "to": "fifth_family_radial_boundary_note"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "plaquette_bootstrap_framework_integration_note_2026-05-03"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+      "to": "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+        "higgs_from_lattice_note",
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
         "yt_ew_matching_rule_m_note_2026-05-02",
+        "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
         "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-        "fifth_family_radial_boundary_note",
-        "plaquette_bootstrap_framework_integration_note_2026-05-03",
-        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2b162994b226f21d16a3a7313b3bc788b3743540dd96284f825bab8b3013375c",
+      "note_hash": "e657e85f55b1384231288837cd636e267284608ed0e12f18bf0260c31da5da7a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

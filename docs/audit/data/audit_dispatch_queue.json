@@ -1243,7 +1243,7 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "audit_in_progress",
       "actual_claim_type": "positive_theorem",
       "actual_effective_status": "retained",
       "allowed_context_paths": [
@@ -1286,7 +1286,7 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "audit_in_progress",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "retained_bounded",
       "allowed_context_paths": [
@@ -1328,9 +1328,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1343,8 +1343,11 @@
       "blocked_by_group_ids": [],
       "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
       "deps": [
+        "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
         "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+        "minimal_axioms"
       ],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",

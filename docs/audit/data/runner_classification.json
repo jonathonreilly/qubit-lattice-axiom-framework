@@ -1405,11 +1405,11 @@
       "runner": "scripts/axiom_first_spectrum_condition_check.py"
     },
     "axiom_first_spin_statistics_theorem_note_2026-04-29": {
-      "assert_count": 0,
+      "assert_count": 2,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 9,
+        "C": 6,
         "D": 0
       },
       "decoration_candidate": false,
@@ -5027,6 +5027,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_cubic_coxeter_regge_linearized_action_selection_2026_06_10.py"
+    },
+    "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 39,
+        "D": 16
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10.py"
     },
     "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": {
       "assert_count": 1,
@@ -19080,6 +19092,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_link_local_first_variation_selector_bridge_narrow.py"
     },
+    "local_frame_orbit_flat_sector_exact_converse_holonomy_frame_unreachable_residual_bounded_theorem_note_2026-06-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_local_frame_orbit_flat_sector_converse_holonomy_residual_2026_06_10.py"
+    },
     "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {
       "assert_count": 0,
       "counts": {
@@ -21420,6 +21444,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_observable_principle_p1_campaign_closure_synthesis_2026_05_18.py"
     },
+    "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10": {
+      "assert_count": 2,
+      "counts": {
+        "A": 49,
+        "B": 0,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/observable_principle_p1_exponent_attack_2026_06_10.py"
+    },
     "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31": {
       "assert_count": 2,
       "counts": {
@@ -21695,6 +21731,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/flavor_open_cluster_consolidation_map_2026_06_02.py"
+    },
+    "open_shell_invariant_locus_conditional_neutrality_no_derived_selector_bounded_theorem_note_2026-06-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 15,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_open_shell_invariant_locus_no_derived_selector_2026_06_10.py"
     },
     "orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09": {
       "assert_count": 1,
@@ -22751,6 +22799,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py"
+    },
+    "plaquette_value_derivation_program_specification_and_bracket_reduction_narrow_theorem_note_2026-06-10": {
+      "assert_count": 4,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 27,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/plaquette_value_derivation_check_2026_06_10.py"
     },
     "pmns_active_four_real_source_from_transport_note": {
       "assert_count": 1,
@@ -25812,6 +25872,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_registration_reinstates_chirality_nogo.py"
     },
+    "relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 18,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_relative_orientation_fusion_state_frame_quotient_2026_06_10.py"
+    },
     "replay_environment_note": {
       "assert_count": 0,
       "counts": {
@@ -28344,6 +28416,18 @@
       "dominant_class": "C",
       "runner": "scripts/probe_kawamoto_smit_phase_forcing.py"
     },
+    "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 31,
+        "B": 0,
+        "C": 21,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py"
+    },
     "staggered_dirac_physical_species_direct_theorem_note_2026-05-07": {
       "assert_count": 1,
       "counts": {
@@ -28371,7 +28455,7 @@
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": {
       "assert_count": 1,
       "counts": {
-        "A": 5,
+        "A": 9,
         "B": 0,
         "C": 0,
         "D": 0
@@ -28403,6 +28487,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py"
+    },
+    "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py"
     },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
       "assert_count": 1,
@@ -30539,6 +30635,18 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/topological_instanton_bounded_certificate.py"
+    },
+    "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py"
     },
     "translation_abelian_composition_theorem_note_2026-05-02": {
       "assert_count": 0,
@@ -37297,7 +37405,7 @@
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "counts": {
-        "A": 5,
+        "A": 9,
         "B": 0,
         "C": 0,
         "D": 0
@@ -38207,14 +38315,14 @@
       "exists": true
     },
     "scripts/axiom_first_spin_statistics_check.py": {
-      "assert_count": 0,
+      "assert_count": 2,
       "claims": [
         "axiom_first_spin_statistics_theorem_note_2026-04-29"
       ],
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 9,
+        "C": 6,
         "D": 0
       },
       "decoration_candidate": false,
@@ -46034,6 +46142,21 @@
         "B": 0,
         "C": 19,
         "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10.py": {
+      "assert_count": 1,
+      "claims": [
+        "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 39,
+        "D": 16
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -56346,6 +56469,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_local_frame_orbit_flat_sector_converse_holonomy_residual_2026_06_10.py": {
+      "assert_count": 1,
+      "claims": [
+        "local_frame_orbit_flat_sector_exact_converse_holonomy_frame_unreachable_residual_bounded_theorem_note_2026-06-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_localized_source_response_sweep_note_hostile_audit_findings.py": {
       "assert_count": 0,
       "claims": [
@@ -58146,6 +58284,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/frontier_open_shell_invariant_locus_no_derived_selector_2026_06_10.py": {
+      "assert_count": 1,
+      "claims": [
+        "open_shell_invariant_locus_conditional_neutrality_no_derived_selector_bounded_theorem_note_2026-06-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 15,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_orbit_occupancy_neutrino_out_of_sample_2026_06_09.py": {
@@ -61629,6 +61782,21 @@
         "A": 0,
         "B": 0,
         "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_relative_orientation_fusion_state_frame_quotient_2026_06_10.py": {
+      "assert_count": 1,
+      "claims": [
+        "relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 18,
         "D": 0
       },
       "decoration_candidate": false,
@@ -71267,6 +71435,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/observable_principle_p1_exponent_attack_2026_06_10.py": {
+      "assert_count": 2,
+      "claims": [
+        "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10"
+      ],
+      "counts": {
+        "A": 49,
+        "B": 0,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/observable_principle_product_character_premise_no_go.py": {
       "assert_count": 1,
       "claims": [
@@ -71820,6 +72003,21 @@
         "B": 0,
         "C": 5,
         "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/plaquette_value_derivation_check_2026_06_10.py": {
+      "assert_count": 4,
+      "claims": [
+        "plaquette_value_derivation_program_specification_and_bracket_reduction_narrow_theorem_note_2026-06-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 27,
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -73511,6 +73709,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      ],
+      "counts": {
+        "A": 31,
+        "B": 0,
+        "C": 21,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py": {
       "assert_count": 2,
       "claims": [
@@ -73521,6 +73734,21 @@
         "B": 0,
         "C": 19,
         "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -73900,6 +74128,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py": {
+      "assert_count": 1,
+      "claims": [
+        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/translation_abelian_composition_check.py": {
@@ -74832,14 +75075,14 @@
   "stats": {
     "decoration_candidates": 522,
     "dominant_class_distribution": {
-      "A": 388,
+      "A": 390,
       "B": 449,
-      "C": 1043,
+      "C": 1050,
       "D": 380,
       "none": 454
     },
-    "runners_classified": 2714,
-    "runners_with_C": 1399,
-    "runners_with_D": 816
+    "runners_classified": 2723,
+    "runners_with_C": 1407,
+    "runners_with_D": 823
   }
 }

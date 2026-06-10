@@ -11,17 +11,17 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3119 |
-| Applied audit verdicts | 1432 |
-| Retained-grade rows, including boxed decorations | 1302 |
-| Retained positive theorems | 213 |
-| Retained no-go rows | 208 |
-| Retained bounded rows | 831 |
+| Ledger rows | 3128 |
+| Applied audit verdicts | 1403 |
+| Retained-grade rows, including boxed decorations | 1280 |
+| Retained positive theorems | 212 |
+| Retained no-go rows | 206 |
+| Retained bounded rows | 812 |
 | Boxed decorations under retained parents | 50 |
-| Open gates | 40 |
-| Unaudited rows | 1368 |
-| Retained-pending-chain rows | 17 |
-| Audited conditional rows | 28 |
+| Open gates | 38 |
+| Unaudited rows | 1403 |
+| Retained-pending-chain rows | 16 |
+| Audited conditional rows | 27 |
 | Audited renaming rows | 33 |
 | Audited numerical-match rows | 14 |
 | Citation cycles detected | 0 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1371 |
-| Ready rows | 13 |
+| Total pending rows | 1409 |
+| Ready rows | 19 |
 | Cycle-break targets | 0 |
-| Critical pending | 286 |
-| High pending | 277 |
-| Medium pending | 398 |
-| Leaf pending | 410 |
+| Critical pending | 292 |
+| High pending | 280 |
+| Medium pending | 407 |
+| Leaf pending | 430 |
 
 Next ready rows by queue order:
 
+- [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; audit_in_progress
+- [`u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md) - critical; audit_in_progress
+- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
 - [`microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) - critical; unaudited
-- [`staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07`](../../docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) - critical; unaudited
 - [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; audit_in_progress
+- [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; audit_in_progress
 - [`axiom_first_spin_statistics_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 - [`qcd_low_energy_running_bridge_note_2026-05-01`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) - critical; unaudited
-- [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
-- [`bertrand_stable_orbit_upper_bound_support_note_2026-05-20`](../../docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) - high; unaudited
-- [`matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08`](../../docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -80,19 +80,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3256 |
-| Critical nodes | 483 |
-| High nodes | 487 |
-| Medium nodes | 873 |
-| Leaf nodes | 1413 |
+| Citation-graph nodes | 3265 |
+| Critical nodes | 486 |
+| High nodes | 486 |
+| Medium nodes | 877 |
+| Leaf nodes | 1416 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1450 descendants; score 110.503
-- `three_generation_observable_theorem_note` - critical; 991 descendants; score 61.954
-- `graph_first_su3_integration_note` - critical; 1337 descendants; score 60.386
-- `observable_principle_from_axiom_note` - critical; 852 descendants; score 57.736
-- `minimal_axioms_2026-05-03` - critical; 967 descendants; score 48.419
-- `key_terminology` - critical; 1182 descendants; score 47.208
-- `cl3_color_automorphism_theorem` - critical; 975 descendants; score 41.431
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 916 descendants; score 41.341
+- `minimal_axioms` - critical; 1473 descendants; score 112.026
+- `three_generation_observable_theorem_note` - critical; 994 descendants; score 61.959
+- `graph_first_su3_integration_note` - critical; 1342 descendants; score 60.891
+- `observable_principle_from_axiom_note` - critical; 854 descendants; score 58.240
+- `minimal_axioms_2026-05-03` - critical; 970 descendants; score 48.423
+- `key_terminology` - critical; 1185 descendants; score 47.212
+- `cl3_color_automorphism_theorem` - critical; 979 descendants; score 41.437
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 919 descendants; score 41.345

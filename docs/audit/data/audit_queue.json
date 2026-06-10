@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 285,
+    "critical": 284,
     "high": 280,
     "leaf": 430,
     "medium": 409
@@ -10,25 +10,31 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
-      "claim_scope": "Bounded transfer-kernel theorem: exact T_1 on D plus a T_2 grid/center certificate under declared continuum RGE, scale, and auxiliary-tuple imports; not an alpha_s(v) boundary-value derivation or PDG match.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "alpha_s_derived_note",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 9,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.247,
-      "note_path": "docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md",
-      "queue_reason": "audit_in_progress",
+      "cross_confirmation_status": null,
+      "deps": [
+        "qcd_low_energy_running_bridge_note_2026-05-01",
+        "plaquette_self_consistency_note",
+        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+      ],
+      "direct_in_degree": 58,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 38.743,
+      "note_path": "docs/ALPHA_S_DERIVED_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_qcd_low_energy_running_bridge.py",
-      "transitive_descendants": 858
+      "runner_path": "scripts/frontier_alpha_s_derived_bounded_chain.py",
+      "transitive_descendants": 856
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -527,34 +533,6 @@
       "ready": false,
       "runner_path": "scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py",
       "transitive_descendants": 911
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "alpha_s_derived_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "qcd_low_energy_running_bridge_note_2026-05-01",
-        "plaquette_self_consistency_note",
-        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-      ],
-      "direct_in_degree": 58,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 38.743,
-      "note_path": "docs/ALPHA_S_DERIVED_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_alpha_s_derived_bounded_chain.py",
-      "transitive_descendants": 856
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -42161,5 +42139,5 @@
     }
   ],
   "ready_count": 16,
-  "total_pending": 1404
+  "total_pending": 1403
 }

@@ -47922,6 +47922,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
     },
     {
@@ -47939,10 +47943,6 @@
     {
       "from": "repo.front_door_status",
       "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
     },
     {
       "from": "repo.repo_organization",
@@ -92536,15 +92536,15 @@
       "deps": [
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
+        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
         "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
-        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
-        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
+        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "04427b7a130f52def957b0132ef7a3100384e644385160f436c257d95ef470d6",
+      "note_hash": "2cbd0ecc00345ce8f82d7dd6d634ffe915366f5ba90212ddb6d6e383c146ef5e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

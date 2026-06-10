@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3128 |
-| Applied audit verdicts | 1408 |
-| Retained-grade rows, including boxed decorations | 1278 |
+| Applied audit verdicts | 1409 |
+| Retained-grade rows, including boxed decorations | 1279 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 205 |
-| Retained bounded rows | 812 |
+| Retained bounded rows | 813 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 38 |
 | Unaudited rows | 1401 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1404 |
+| Total pending rows | 1403 |
 | Ready rows | 16 |
 | Cycle-break targets | 0 |
-| Critical pending | 285 |
+| Critical pending | 284 |
 | High pending | 280 |
 | Medium pending | 409 |
 | Leaf pending | 430 |
 
 Next ready rows by queue order:
 
-- [`qcd_low_energy_running_bridge_note_2026-05-01`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) - critical; audit_in_progress
+- [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; unaudited
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
 - [`bertrand_stable_orbit_upper_bound_support_note_2026-05-20`](../../docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - medium; unaudited

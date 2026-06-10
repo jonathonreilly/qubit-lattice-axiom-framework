@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 812 |
+| **retained_bounded** | 813 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
 | unaudited | 1401 |
-| audit_in_progress | 1 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1252 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1253 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
@@ -135,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1023,6 +1021,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `quantum_horizon_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -14611,6 +14610,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Specializing the admitted Peskin-Schroeder formula with C_2(adj SU(3)) = N_color, T(F) = 1/2, and n_f = N_quark gives b_3 = (11 N_color - 2 N_quark) / 3, then substituting (3,0) and (3,6) gives 11 and 7.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the chain closes by exact rational algebra from the named inputs. The packet does not derive the Peskin-Schroeder formula or the upstream count authorities, but the note explicitly scopes them as admitted or cited inputs rather than conclusions.
 - **rationale:** The load-bearing step is a class A algebraic specialization, not a first-principles framework computation. All cited repo authorities are retained-grade, and the runner source performs exact Sympy simplifications matching the displayed formulas rather than merely printing pass constants. Independent formula inventory found no sign, factor, threshold, ratio, or convention-flip error in the displayed quantitative claims. The clean verdict is bounded to the admitted beta-function formula and input counts, and does not close the broader pure-gauge-to-full-QCD bridge.
+- **auditor confidence:** high
+
+### `qcd_low_energy_running_bridge_note_2026-05-01`
+
+- **Note:** [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded alpha_s(v) -> alpha_s(M_Z) transfer-map kernel under the declared continuum 2-loop SM MSbar RGE, scale, threshold, and auxiliary-EW inputs; no boundary value alpha_s(v) or PDG comparator is load-bearing.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-205637-dedc53de5f-qcd_low_energy_running_bridg`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The exact 1-loop map satisfies 1/T_1(a) = 1/a - L with L = 1.1746670551, and the declared 2-loop matched map T_2 is grid-certified on D = [0.085, 0.130] for well-definedness, monotonicity, expansivity, and the stated center-point checks.  _(class `A`)_
+- **chain closes:** True — Within the bounded scope, the 1-loop formula follows algebraically from the stated b0(6), b0(5) running and the sign is consistent for downward running from v to M_Z. The runner source performs real SU(3), ODE, grid, and appendix computations rather than merely printing passes, and an independent arithmetic/RK4 check reproduces L, the Landau margin, the T_1 Jacobian identity, the T_2 center value, the envelope, and the threshold bracket.
+- **rationale:** The repaired claim is not a first-principles derivation of alpha_s or of the continuum RGE imports; it is a bounded theorem about the transfer map those imports define. The load-bearing work is class A algebraic/numerical closure over the declared map, with no tuned alpha_s(v) value in the theorem surface. The two PDG checks are explicitly quarantined as class D appendix checks and are not needed for K1-K5.
 - **auditor confidence:** high
 
 ### `qnm_control_hardening_note`

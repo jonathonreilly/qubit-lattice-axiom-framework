@@ -47914,10 +47914,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
     },
     {
@@ -47943,6 +47939,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -92534,17 +92534,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
         "abj_epsilon_index_square_block_no_go_note_2026-05-30",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "koide_q23_k0_real_block_equivalence_note_2026-05-30"
+        "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "32259ec39c2eca9b8635233eddd73361033dcd6578653ea184e92ad90369c04c",
+      "note_hash": "d26d9a536cd89ed2b61b9de488da8cac3cbbbd3fc79c81129f5ee82612a1fcc1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -47574,10 +47574,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "complex_selectivity_predictor_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08"
     },
     {
@@ -47599,6 +47595,10 @@
     {
       "from": "repo.front_door_status",
       "to": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -91962,16 +91962,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "complex_selectivity_predictor_note",
         "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08",
         "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
         "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
         "matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09",
         "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
-        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
+        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
+        "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "08c0613fa02df1457865b9d5a01f1633be2417b49850e9f2869d86b3ffa3e96d",
+      "note_hash": "146f818f1a97bd926c13088697a2a58509d41bb7019d2b8181274009bf5dff59",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

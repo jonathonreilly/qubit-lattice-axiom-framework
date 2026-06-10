@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 804 |
+| **retained_bounded** | 805 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 38 |
-| unaudited | 1399 |
+| unaudited | 1398 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1242 |
+| `audited_clean` | 1243 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1715 |
+| `unaudited` | 1714 |
 
 | claim_type | count |
 |---|---:|
@@ -1285,6 +1285,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -18643,6 +18644,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source performs exact SymPy matrix algebra for the stated 90-degree rotation, A1 projection, moved complement coordinates, and symbolic alpha/beta quadratic-energy tie. The broader exhaustiveness claim is explicitly split off as non-load-bearing and is not counted as audited closure.
 - **rationale:** Within the narrowed bounded scope, the load-bearing step is an algebraic identity check, not a numerical match, renaming, or external comparator. The primary runner source actually constructs the projector, rotation, complement difference, and invariant energy expressions rather than merely printing expected PASS lines. The note explicitly admits that full SO(3) exhaustiveness and all-future-invariant nonexistence are not derived, so the clean verdict applies only to the checked bounded witness and invariant class.
 - **auditor confidence:** medium
+
+### `universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite two-component Cl(3) vielbein-coupled determinant diagnostic at Lx<=8, Nyz<=10, m=1, verifying nonzero trace-containing cubic W''' channels, vanishing tested pure-TT channels, robustness checks, and same-coupling trace decomposition.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-034637-2afe0ab70b-universal_gr_cubic_graviton_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A same-vielbein-coupled finite dD/d2D/d3D decomposition reconstructs the finite-difference W''' values to 4.6e-4 absolute accuracy on the tested trace channels, with a load-bearing d3D contact term and a nonzero same-coupling dD^3 triangle term.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the finite Dirac matrices, applies the stated sqrt(I+h) vielbein coupling, computes log|det D[h]| finite differences, and independently forms the trace decomposition from finite-differenced D derivatives. Manual differentiation of log det D gives the displayed coefficients Tr[G d3D] - three d2D*dD terms + two ordered dD^3 triangle terms, matching the implemented decomposition after taking the real log-absolute determinant channel.
+- **rationale:** The source note is explicitly bounded and does not claim Einstein-Hilbert cubic closure, Ward closure, pure-TT nonzero response, or magnitude normalization. The runner is not a constant printer: it instantiates the finite operator and computes the determinant response, robustness checks, comparator, and same-coupling decomposition directly. The cited upstream notes are retained-grade or contextual, and the current claim does not rely on their open GR-identification bridges.
+- **auditor confidence:** high
 
 ### `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08`
 

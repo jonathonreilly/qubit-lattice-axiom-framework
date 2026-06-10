@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 831 |
 | _retained_pending_chain_ | 17 |
 | open_gate | 40 |
-| unaudited | 1366 |
+| unaudited | 1367 |
 | meta | 316 |
-| ~~audited_numerical_match~~ | 15 |
+| ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 33 |
 | ~~audited_conditional~~ | 28 |
 | ~~audited_failed~~ | 1 |
@@ -65,9 +65,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 28 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 26 |
-| `audited_numerical_match` | 15 |
+| `audited_numerical_match` | 14 |
 | `audited_renaming` | 33 |
-| `unaudited` | 1682 |
+| `unaudited` | 1683 |
 
 | claim_type | count |
 |---|---:|
@@ -91,7 +91,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 ### Runner classification (static heuristic)
 
 - runners classified: 2713
-- runners with (C) first-principles compute hits: 1397
+- runners with (C) first-principles compute hits: 1398
 - runners with (D) external comparator hits: 815
 - decoration candidates (no C, no D): 522
 
@@ -1527,7 +1527,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
-| `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -14874,19 +14873,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Specializing the admitted Peskin-Schroeder formula with C_2(adj SU(3)) = N_color, T(F) = 1/2, and n_f = N_quark gives b_3 = (11 N_color - 2 N_quark) / 3, then substituting (3,0) and (3,6) gives 11 and 7.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the chain closes by exact rational algebra from the named inputs. The packet does not derive the Peskin-Schroeder formula or the upstream count authorities, but the note explicitly scopes them as admitted or cited inputs rather than conclusions.
 - **rationale:** The load-bearing step is a class A algebraic specialization, not a first-principles framework computation. All cited repo authorities are retained-grade, and the runner source performs exact Sympy simplifications matching the displayed formulas rather than merely printing pass constants. Independent formula inventory found no sign, factor, threshold, ratio, or convention-flip error in the displayed quantitative claims. The clean verdict is bounded to the admitted beta-function formula and input counts, and does not close the broader pure-gauge-to-full-QCD bridge.
-- **auditor confidence:** high
-
-### `qcd_low_energy_running_bridge_note_2026-05-01`
-
-- **Note:** [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the bounded numerical transfer alpha_s(v)=0.103304 at v=246.282818290129 GeV through the stated 2-loop SM/QCD running kernel and LO top-threshold map to M_Z.
-- **audit_status:** ~~audited_numerical_match~~
-- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T143938Z-16d1e39f-qcd_low_energy_running_b-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given the admitted boundary tuple at v, the standard SM 2-loop RGE with leading-order active-flavor threshold matching across m_t gives alpha_s(M_Z) ≈ 0.1181.  _(class `G`)_
-- **chain closes:** False — The runner does compute the stated RGE transfer from the admitted inputs, but the boundary value alpha_s(v) and the external SM RGE/threshold infrastructure are not derived or supplied as retained authorities in the restricted packet. The result therefore closes only as a conditional numerical transfer, not as an independent derivation.
-- **rationale:** The primary runner is substantive rather than a print-only stub: it integrates the stated RGE system, applies the threshold segmentation, and reproduces the claimed alpha_s(M_Z). However, the load-bearing result depends on the specific admitted value alpha_s(v)=0.103304 and fixed auxiliary boundary inputs, then checks agreement with the PDG comparator. Under the rubric tie-breaker, dependence on a chosen imported numerical boundary value makes this class G rather than a clean first-principles closure.
 - **auditor confidence:** high
 
 ### `qnm_control_hardening_note`

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_alpha_s_derived_bounded_chain.py
-runner_sha256: db5a1757cfab6d574df9f940ef957b4ab0a50c31325f750f56cb250efc9c2d8e
+runner_sha256: 9c44ded9cf1799f069d803cb028ed448973e4121f358138dda85bc03aed88f5b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ============================================================================
@@ -52,8 +52,8 @@ Scope notes for the auditor:
   - C1 uses a self-contained 2-loop SM RGE reimplementation with
     LO top-threshold matching; PDG constants appear only in the
     terminal class-D section and in the C1 threshold/scale inputs.
-  - The M_Z readout inherits the running-bridge note's terminal
-    numerical-match scope; it is a corollary, not part of
+  - The M_Z readout uses the running-bridge note's bounded
+    transfer-kernel scope; it is a corollary, not part of
     the T1 claim surface.
 
 ============================================================================

@@ -47730,6 +47730,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "qcd_low_energy_running_bridge_note_2026-05-01"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
     },
     {
@@ -47739,10 +47743,6 @@
     {
       "from": "repo.front_door_status",
       "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
     },
     {
       "from": "repo.repo_organization",
@@ -50262,7 +50262,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "ffc0384044ffd3f8cbee912c19de16755d36019af3808b6c71fb04bc05c239cd",
+      "note_hash": "6aae6a23af80641fef0b545b3100dcad2bed297763a097984eed637126002886",
       "path": "docs/ALPHA_S_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_alpha_s_derived_bounded_chain.py",
       "title": "`alpha_s(v)` Forward-Computation Theorem over Declared Boundary Inputs, with Bounded `M_Z` Corollary"
@@ -89933,10 +89933,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "f501486e5d21960785faf57b1ace68cf9f4aba67e1565755a9347c3b50e81459",
+      "note_hash": "992b45b1ee9a744e47632df941dd34a8f68e21ddcbe1adc0fca710f932699322",
       "path": "docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md",
       "runner_path": "scripts/frontier_qcd_low_energy_running_bridge.py",
-      "title": "QCD Running-Kernel Bridge: admitted `alpha_s(v) -> alpha_s(M_Z)` Standard-Infrastructure Note"
+      "title": "QCD `v -> M_Z` Running Transfer-Map Kernel Theorem: domain-scoped, boundary-value-free"
     },
     "qnm_control_hardening_note": {
       "claim_id": "qnm_control_hardening_note",
@@ -92212,13 +92212,13 @@
         "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
         "abj_epsilon_index_square_block_no_go_note_2026-05-30",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
+        "qcd_low_energy_running_bridge_note_2026-05-01",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
         "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
-        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8675aecd9394cd6abb51bd4647e54c39e8f59e7915ebd17c55dd5d9d4084f14c",
+      "note_hash": "f92a77cc6e794947555ce52b7d38ae15f60a9483e7731eda80308430835e2b96",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

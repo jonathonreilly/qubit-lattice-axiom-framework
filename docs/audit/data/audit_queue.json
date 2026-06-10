@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 284,
+    "critical": 285,
     "high": 278,
     "leaf": 410,
     "medium": 397
@@ -108,6 +108,28 @@
       "ready": true,
       "runner_path": "scripts/axiom_first_spin_statistics_check.py",
       "transitive_descendants": 948
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 9,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.24,
+      "note_path": "docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_qcd_low_energy_running_bridge.py",
+      "transitive_descendants": 854
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -16957,15 +16979,15 @@
         "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "minimal_axioms"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.524,
+      "load_bearing_score": 4.307,
       "note_path": "docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_persistent_record_instrument_construction.py",
-      "transitive_descendants": 22
+      "transitive_descendants": 6
     },
     {
       "audit_independence_required": "any_non_self",
@@ -41209,6 +41231,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 12,
-  "total_pending": 1369
+  "ready_count": 13,
+  "total_pending": 1370
 }

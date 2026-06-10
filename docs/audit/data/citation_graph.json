@@ -47914,15 +47914,23 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+      "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
     },
     {
       "from": "repo.front_door_status",
-      "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
     },
     {
       "from": "repo.front_door_status",
@@ -47935,14 +47943,6 @@
     {
       "from": "repo.front_door_status",
       "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -92534,17 +92534,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
         "abj_epsilon_index_square_block_no_go_note_2026-05-30",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "qcd_low_energy_running_bridge_note_2026-05-01",
-        "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
+        "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a033e08b211000c78f0a9d8d40b1d8ba4b07533fcf3a040cbb3917d8e9a7403e",
+      "note_hash": "d1269b08d099cc3937d69915f3cf8309b9ba16b344af110c49d7681dbd5ee3ea",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -32,8 +32,10 @@ with the durable realized-outcome boundary stated in
 conditional parent carrying readout/log-det/modulus material beyond Record.
 
 Curated to inputs that are irreducible (no-go portfolio) **and not vacuous**,
-the genuine Tier-A admitted derivation targets are now the **two** rows below
-(AC_φλ and θ). The scale-reference primitive is likewise not counted here: it
+the genuine Tier-A admitted derivation target is now the **one** row below
+(AC_φλ). θ was retired as an admitted derivation target on 2026-06-10 — see
+the "θ retired from Tier A (2026-06-10)" note below for the discharge basis
+and its gates. The scale-reference primitive is likewise not counted here: it
 is the explicitly approved units primitive registered in
 `docs/audit/data/axiom_premise_nodes.json`. Two further rows (Y₀, g₀) are
 **vacuous rescaling conventions** — listed for completeness but, like the
@@ -45,9 +47,29 @@ AC_φλ naming, explicitly **not** counted as admitted inputs (see
 | id | statement | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
 | **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
-| **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1); also unsolved in the Standard Model |
 
 Notes:
+- **θ retired from Tier A (2026-06-10).** The two selected-surface premises of
+  the θ admission are discharged at the bounded tier: (P1, no bare θ/F̃F slot)
+  the per-plaquette action class is licensed from nearest-neighbor adjacency
+  plus the kinetic-isotropy primitive
+  (`per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09`,
+  audited_clean/retained_bounded), and within that class the local cross-plane
+  F̃F slot vanishes identically for arbitrary `f`
+  (`theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`);
+  (P2, positive-real mass orientation) K/CPT-invariant multiplicative
+  determinant characters are phase-free
+  (`tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`)
+  composed with the determinant-readout bridge (the bridge showing the
+  physical `arg det(M_u M_d)` datum is exhausted by the determinant-class
+  registrable readout). Retirement gates: independent audits of the two
+  2026-06-09 notes, a retained-grade determinant-readout bridge, and owner
+  approval recorded per `docs/audit/AXIOM_MINIMALITY_POLICY.md` precedent.
+  The prior no-go portfolio
+  (`strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`)
+  is preserved in the machine registry's `retired_derivation_targets` entry;
+  it ruled out the RP-half route, not the action-class/readout route used by
+  the discharge.
 - **Record retired from Tier A (2026-06-05).** The owner-approved Record axiom
   is durable registration of the realized outcome in a supplied readout
   context; the realized outcome is the `K`/CPT orbit of the realized central
@@ -113,8 +135,9 @@ Notes:
   that unit reference. The primitive carries no dimensionless content and does
   not assert `a/l_P = 1`; the self-consistency that the natural unit equals the
   Planck length remains the separate open gravity derivation.
-- **θ** is admitted here exactly as the Standard Model admits it (the strong-CP
-  problem); not a framework-specific deficit.
+- **θ** was, until 2026-06-10, admitted here exactly as the Standard Model
+  admits it (the strong-CP problem); see the retirement note above for the
+  discharge basis and gates.
 
 ## Conventions — NOT admitted inputs (vacuous rescaling freedoms)
 
@@ -141,21 +164,24 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   `minimal_axioms` node as the narrow durable realized-outcome axiom. This
   retirement does not promote the old `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
   parent, which contains additional non-axiom material.
-- **θ and AC_φλ:** stand as genuine admitted derivation targets (θ shared with
-  the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
+- **AC_φλ:** stands as the genuine admitted derivation target
+  (δ-pattern + species bridge, naming excluded). θ stood here until its
+  2026-06-10 retirement (see above).
 - **Scale reference:** removed from Tier A and registered as the
   explicitly approved `scale_reference_primitive`. It is a units primitive, not a
   derivation-target admission and not a status-bounding dependency.
 - **Y₀, g₀:** vacuous rescaling conventions — **dropped** from the
   admitted-input count (a convention is not an input, just as a name is not).
-- **θ rigor check:** verified NOT derivable from the retained
-  real/anti-Hermitian `D` structure —
+- **θ rigor check:** the retained
   `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go` (retained_no_go)
-  explicitly shows the real/RP-half structure cannot forbid the CP-odd term, so
-  θ=0 remains a genuine admission (shared with the SM).
+  shows the real/RP-half structure cannot forbid the CP-odd term — that route
+  stays closed. The 2026-06-10 retirement discharges θ on a different route
+  (action-class licensing + cross-plane slot vanishing + K/CPT
+  determinant-readout phase erasure), consistent with that no-go.
 
-Net stratified by character: **two dimensionless Tier-A admissions** —
-AC_φλ (framework-specific physics) and θ (an SM-shared problem). Record is
+Net stratified by character: **one dimensionless Tier-A admission** —
+AC_φλ (framework-specific physics); θ (an SM-shared problem) retired
+2026-06-10. Record is
 axiom content only in its narrow durable realized-outcome form. The
 scale-reference primitive is the single scale-setting every physical theory
 takes, orthogonal to all of them, and cannot supply any dimensionless number.

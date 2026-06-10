@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1376 |
+| Applied audit verdicts | 1377 |
 | Retained-grade rows, including boxed decorations | 1262 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 798 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 37 |
-| Unaudited rows | 1416 |
+| Unaudited rows | 1415 |
 | Retained-pending-chain rows | 12 |
-| Audited conditional rows | 20 |
+| Audited conditional rows | 21 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 15 |
 | Citation cycles detected | 0 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1420 |
-| Ready rows | 54 |
+| Total pending rows | 1419 |
+| Ready rows | 53 |
 | Cycle-break targets | 0 |
-| Critical pending | 341 |
+| Critical pending | 340 |
 | High pending | 242 |
 | Medium pending | 394 |
 | Leaf pending | 443 |
 
 Next ready rows by queue order:
 
-- [`gravity_clean_derivation_note`](../../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md) - critical; unaudited
 - [`yt_ew_matching_rule_m_note_2026-05-02`](../../docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md) - critical; audit_in_progress
 - [`su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`](../../docs/SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md) - critical; audit_in_progress
 - [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`fifth_family_radial_boundary_note`](../../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md) - medium; unaudited
 - [`plaquette_bootstrap_framework_integration_note_2026-05-03`](../../docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
+- [`free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -61,7 +61,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 190 |
+| critical | `unaudited` | 189 |
 | high | `unaudited` | 143 |
 | medium | `unaudited` | 88 |
 | critical | `audited_renaming` | 3 |
@@ -69,6 +69,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
+| critical | `audited_conditional` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |

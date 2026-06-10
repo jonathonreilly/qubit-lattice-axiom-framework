@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 798 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 37 |
-| unaudited | 1416 |
+| unaudited | 1415 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 20 |
+| ~~audited_conditional~~ | 21 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 1230 |
-| `audited_conditional` | 20 |
+| `audited_conditional` | 21 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1732 |
+| `unaudited` | 1731 |
 
 | claim_type | count |
 |---|---:|
@@ -1371,6 +1371,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gravity_clean_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8300,6 +8301,23 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Under the configured probe parameters, the mean phase delta from the static v=0 baseline is monotonic in v_z, with small-|v| deltas approximately antisymmetric and the |v|=0.5 antisymmetry failing.  _(class `C`)_
 - **chain closes:** True — The retained bounded claim follows on its own restricted terms: the supplied runner source computes the reported phases from the configured DAG, propagator, imposed source trajectory, and static baseline, and the cached stdout matches the note's table. No GR, Shapiro, or self-consistent moving-source bridge is closed or claimed within the retained scope.
 - **rationale:** For the bounded diagnostic actually retained, the runner is not a constant-printing or hard-coded expected-value script; it constructs the configured grown families, propagates amplitudes, computes phases, and subtracts the v=0 baseline. The output supports monotonic increase in v_z, approximate antisymmetry only at |v|=0.2, and failure of full antisymmetry at |v|=0.5, matching the revised note. The broader gravitomagnetic/Shapiro and self-consistent moving-source claims are explicitly excluded, so they are not part of the audited closure.
+- **auditor confidence:** high
+
+### `gravity_clean_derivation_note`
+
+- **Note:** [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](../../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional weak-field IF-chain on Z^3: assuming the graph Laplacian Poisson operator, L^{-1}=G_0, rho=|psi|^2, S=L(1 - phi), and G(r) ~ 1/(4 pi r), the lattice Poisson solution has a 1/r potential and inverse-square force in lattice units.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-023844-0646ba76e1-gravity_clean_derivation_not`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By the Z^3 Green-function asymptotic, phi(r) ~ M/(4 pi r), and taking the radial gradient gives an inverse-square force law.  _(class `B`)_
+- **chain closes:** False — The Poisson/Green-function calculus closes under the stated antecedents. The restricted packet does not derive the antecedent bridges L^{-1}=G_0, rho=|psi|^2 as gravitational mass density, or S=L(1 - phi) as the weak-field test-mass response.
+- **rationale:** The note is correctly narrowed to an IF-chain and does not overclaim an unconditional Newton-gravity derivation. However, its load-bearing inputs include explicit stipulated/open identifications rather than retained derivations or registered primitives. The Green-kernel normalization supplies the 1/r exponent and the derivative gives the inverse-square law, but the physical source and response bridges remain open in the restricted packet.
+- **open / conditional deps cited:**
+  - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
+  - `STAGGERED_FERMION_CARD_2026-04-11.md`
+  - `SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`
 - **auditor confidence:** high
 
 ### `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07`

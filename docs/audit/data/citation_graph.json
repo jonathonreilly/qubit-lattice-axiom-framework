@@ -47570,7 +47570,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+      "to": "gravity_clean_derivation_note"
     },
     {
       "from": "repo.front_door_status",
@@ -91961,7 +91961,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+        "gravity_clean_derivation_note",
         "yt_ew_matching_rule_m_note_2026-05-02",
         "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
         "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
@@ -91971,7 +91971,7 @@
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6a59cfa8d663e4c917dcae02989c12c6875a8277364e7b812be4b2d7642da4ae",
+      "note_hash": "b125baa5a08150124dde1e446a3c9c374988c4ab5a708d6c6893c376adec855a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

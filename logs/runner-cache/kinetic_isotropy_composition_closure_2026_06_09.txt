@@ -1,0 +1,30 @@
+
+PART L1 -- the periodicity wall: derived from the landed KS breaking pattern
+==============================================================================
+  [PASS] L1a the landed {eta, eps} pattern breaks every odd translation (incl. mixed) and is invariant under ALL 2-site translations  --  unbroken translation subgroup = (2Z)^3 exactly -- computed on a 4^3 block
+  [PASS] L1b the unbroken subgroup is (2Z)^3 => uniform 2-site Bloch cell per axis = the block02 setting  --  scope wall -> {Lattice translation (axiom) + landed {eta, eps} pattern (KS note, unaudited) + homogeneity reading}
+
+PART L2 -- curvature and sub-saturation are composition (dynamics) content
+==============================================================================
+  [PASS] L2a both factors are LICENSED unitary single ticks (flat exchange cell; saturating shift)  --  each factor obeys the block02 site-license degree table
+  [PASS] L2b composite trace is MOMENTUM-DEPENDENT (tr = i sin(theta)(1 + e^{-iK})): single-tick structure broken  --  the composite is radius-2 (TWO ticks) -- the license binds the tick, not compositions
+  [PASS] L2c reduced band equation mu^2 - 2 i sin(theta) cos(K/2) mu - 1 = 0 (DERIVED from the composite)  --  mu = e^{i nu}: sin(nu) = sin(theta) cos(K/2): a genuinely CURVED massive band
+  [PASS] L2d the composite band IS curved (nonzero curvature for theta != 0) and the theta -> 0 limit is the saturating cell  --  curvature sample = -3*sqrt(39)/169 != 0; curvature lives in COMPOSITES, never the single tick (block02)
+  [PASS] L2e |v| <= 1 PROVED symbolically (cos^2(theta) >= 0 identity) and v is theta/K-TUNABLE: dynamics content  --  saturation only at theta = pi/2; sub-saturation and curvature are composition/dynamics quantities
+  [PASS] L2f cross-check: the flat factor's bands are constant AND the shift's bands are exactly linear (both computed)  --  curvature REQUIRES composition: the kinetic form is a single-tick fact, mass/speed are composition facts
+  [PASS] L2g HOSTILE: shift^2 = e^{-iK} I exactly => {shift, shift, identity} is MASSLESS with cone slope 2/3: composite kinetic dials EXIST  --  only the declared placement reading R-P excludes composite dials from the OS0 normalization -- R-P is THE residual
+
+PART L3 -- P2 sharpened: algebra automorphism => unitary (Skolem-Noether)
+==============================================================================
+  [PASS] L3a consistency exhibit: inner maps Ad_U ARE C-linear automorphisms (sampled); the converse is Skolem-Noether (admissible standard math, cited not machine-proved)  --  premise must say C-LINEAR automorphism: antiunitary (antilinear) ticks are excluded by the premise, named
+  [PASS] L3b the transpose map REVERSES products (anti-automorphism): the automorphism premise has content  --  P2's residual = 'the tick preserves the algebra structure', not bare unitarity
+
+PART L4 -- the B-W bridge, free sector, computed
+==============================================================================
+  [PASS] L4a GIVEN B-W-free (named): the Euclidean kinetic operator expands to partial_tau - i partial_x (coefficients 1 and -i computed)  --  EQUAL-MAGNITUDE temporal and spatial coefficients: |c_t| = |c_s| = 1 exactly
+  [PASS] L4b conjugate cell linearizes to partial_tau + i partial_x (computed) and the pair kernel's degree-2 part is omega_E^2 + K^2 + (cross term 1*wE*K... computed)  --  GIVEN the named B-W-free transfer representation: c_t = c_s exactly at the free level
+  [PASS] L4c the exact zero locus is omega_E = i K identically: zero artifact corrections for the saturating cell  --  the light-cone hop is exactly conical at ALL orders -- nothing to renormalize at the free kinetic level
+
+==============================================================================
+SCORECARD: PASS=14 FAIL=0
+==============================================================================

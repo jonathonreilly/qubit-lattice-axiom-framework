@@ -1,0 +1,31 @@
+loop_slug: kinetic-isotropy-derivation
+goal: derive or otherwise retire the kinetic_isotropy_primitive (c_t = c_s); ruler OFF-target
+mode: run
+target: best-honest-status
+started: 2026-06-09
+branch: physics-loop/kinetic-isotropy-derivation-block03-20260609
+worktree: /Users/jonBridger/tp-wt-kinetic-isotropy
+cycle: 3
+active_route: R-A index/winding-quantized saturation (ROUTE_PORTFOLIO.md)
+hard_residual: >
+  P2 (unitary strict-tick reading, not retained) and P4 (realized staggered
+  carrier's band winding identification) are the surviving conditional inputs;
+  3D Weyl-block enumeration named open.
+artifacts:
+  - docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md
+  - scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py (25/25)
+  - logs/runner-cache/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.txt
+open_imports: none (no literature values consumed; comparators not cited)
+no_go_routes: see NO_GO_LEDGER.md (9 entries)
+review: block01 pass; block02 pass; block03 pass (2 BLOCKERS + 5 MAJOR fixed -- story honestly weakened: R-P declared)
+pr_status: >
+  block01 LANDED (d0e7ed7fc, refined); block02 LANDED (93f76c1ba, PR #3447
+  closed, refined: 'landed, audit-pending scheme-forcing' wording);
+  block03 PR pending.
+next_exact_action: >
+  open block03 PR against main. Remaining campaign opens: (a) the 3D
+  simultaneous tick (last structural open), (b) B-W-interacting (loop
+  surface), (c) the four readings' grade calls (site-strictness, C-linear
+  automorphism, homogeneity, R-P placement) -- audit-lane/owner territory,
+  (d) scheme-forcing + KS ratification (audit lane).
+stop_condition: owner session-scoped run; stop after PR + report unless directed onward

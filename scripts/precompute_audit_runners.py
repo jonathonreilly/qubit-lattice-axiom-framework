@@ -70,6 +70,47 @@ CACHE_DIR = rc.CACHE_DIR
 # falling back to a small legacy substring map and finally 120s. This
 # script just calls into it.
 
+def canonical_runner_path(runner_path: str | Path) -> str:
+    """Repair legacy runner references to repo-local `scripts/<basename>.py`.
+
+    Some old rows and triage artifacts carry bare script names or absolute
+    paths from temporary worktrees. Precompute should execute the checked-out
+    repo runner when that basename exists under `scripts/`; truly absent
+    historical runners stay missing.
+    """
+    raw = str(runner_path).strip()
+    if not raw:
+        return raw
+    raw_path = Path(raw)
+    basename = raw_path.name
+
+    candidates: list[str] = []
+    if raw_path.is_absolute():
+        if basename.endswith(".py"):
+            candidates.append(f"scripts/{basename}")
+    elif raw.startswith("scripts/"):
+        candidates.append(raw)
+    else:
+        candidates.extend([raw, f"scripts/{raw}"])
+    if basename.endswith(".py"):
+        candidates.append(f"scripts/{basename}")
+
+    seen: set[str] = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        path = REPO_ROOT / candidate
+        if path.exists():
+            return path.relative_to(REPO_ROOT).as_posix()
+    return raw
+
+
+def runner_file_path(runner_path: str | Path) -> Path:
+    path = Path(canonical_runner_path(runner_path))
+    return path if path.is_absolute() else REPO_ROOT / path
+
+
 def runner_timeout_for(runner_path: str) -> int:
     return rc.runner_timeout_for(runner_path)
 
@@ -80,7 +121,7 @@ def collect_runners_from_queue() -> list[str]:
     for r in q.get("queue", []):
         rp = r.get("runner_path")
         if rp:
-            seen.setdefault(rp, None)
+            seen.setdefault(canonical_runner_path(rp), None)
     return list(seen.keys())
 
 
@@ -90,7 +131,7 @@ def collect_runners_from_ledger() -> list[str]:
     for cid, r in led.get("rows", {}).items():
         rp = r.get("runner_path")
         if rp:
-            seen.setdefault(rp, None)
+            seen.setdefault(canonical_runner_path(rp), None)
     return list(seen.keys())
 
 
@@ -107,7 +148,12 @@ def collect_runners_from_staged() -> list[str]:
     if not staged:
         return []
     known_runners = set(collect_runners_from_ledger())
-    return [p for p in staged if p in known_runners]
+    out: list[str] = []
+    for p in staged:
+        canonical = canonical_runner_path(p)
+        if canonical in known_runners:
+            out.append(canonical)
+    return out
 
 
 # Helpers that, if changed, can invalidate every cache header at once.
@@ -153,7 +199,12 @@ def collect_runners_from_pr_diff(base_ref: str) -> list[str]:
     if not changed:
         return []
     known_runners = set(collect_runners_from_ledger())
-    return [p for p in changed if p in known_runners]
+    out: list[str] = []
+    for p in changed:
+        canonical = canonical_runner_path(p)
+        if canonical in known_runners:
+            out.append(canonical)
+    return out
 
 
 # --- git helpers for direct-to-main commits ---
@@ -318,7 +369,7 @@ def main() -> int:
     else:
         runners = collect_runners_from_queue()
         source = "audit queue"
-    runners = sorted(set(runners))
+    runners = sorted({canonical_runner_path(r) for r in runners})
     print(f"Source: {source}.  Runners under consideration: {len(runners)}")
 
     # Optional orphan cleanup happens BEFORE staleness scan so we don't
@@ -338,7 +389,8 @@ def main() -> int:
     fresh: list[str] = []
     missing_on_disk: list[str] = []
     for rp in runners:
-        if not (REPO_ROOT / rp).exists():
+        rp = canonical_runner_path(rp)
+        if not runner_file_path(rp).exists():
             missing_on_disk.append(rp)
             continue
         s = rc.cache_status(rp)

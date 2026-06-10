@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3112 |
-| Applied audit verdicts | 1390 |
-| Retained-grade rows, including boxed decorations | 1271 |
+| Applied audit verdicts | 1391 |
+| Retained-grade rows, including boxed decorations | 1272 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 803 |
+| Retained bounded rows | 804 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 37 |
-| Unaudited rows | 1404 |
+| Unaudited rows | 1403 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 23 |
 | Audited renaming rows | 34 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1406 |
+| Total pending rows | 1405 |
 | Ready rows | 49 |
 | Cycle-break targets | 0 |
 | Critical pending | 338 |
 | High pending | 240 |
-| Medium pending | 385 |
+| Medium pending | 384 |
 | Leaf pending | 443 |
 
 Next ready rows by queue order:
 
 - [`beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30`](../../docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) - high; unaudited
-- [`fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09`](../../docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 - [`rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`complex_selectivity_predictor_note`](../../docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md) - medium; unaudited
 - [`universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08`](../../docs/UNIVERSAL_GR_CUBIC_GRAVITON_SEAGULL_VERTEX_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09`](../../docs/UNIVERSAL_GR_QUADRATIC_MODE_GLUING_DERIVATION_NARROW_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08`](../../docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08`](../../docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -95,4 +95,4 @@ Top load-bearing rows by graph score:
 - `minimal_axioms_2026-05-03` - critical; 497 descendants; score 47.960
 - `key_terminology` - critical; 1049 descendants; score 47.036
 - `staggered_dirac_realization_gate_note_2026-05-03` - critical; 1219 descendants; score 44.253
-- `cl3_color_automorphism_theorem` - critical; 617 descendants; score 40.771
+- `cl3_color_automorphism_theorem` - critical; 616 descendants; score 40.769

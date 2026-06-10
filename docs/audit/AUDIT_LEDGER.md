@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 816 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 38 |
-| unaudited | 1392 |
+| unaudited | 1391 |
 | meta | 316 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1258 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 34 |
-| `unaudited` | 1708 |
+| `unaudited` | 1707 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 483 |
 | `high` | 481 |
-| `medium` | 844 |
-| `leaf` | 1320 |
+| `medium` | 845 |
+| `leaf` | 1319 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 0
@@ -1412,6 +1412,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11404,6 +11405,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The bounded arithmetic claim closes from the supplied per-b values and runner fit. This does not establish continuum stability, a generated-from-first-principles H=0.25 replay, other families, larger-b asymptotics, or standard 1/b lensing.
 - **rationale:** The runner parses/checks the cached H=0.25 values and performs the log-log slope/R² calculation; the reported slope, R², and non-1/b margin follow arithmetically from those fixed inputs. The runner is not a first-principles recomputation of the fine H=0.25 model values, but the note and selector firewall explicitly restrict the retained claim to the bounded cached slope-fit certificate. Residual risk is confined to any broader reading that treats four selected cached points as a continuum-stable physical law.
 - **auditor confidence:** high
+
+### `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/LENSING_EXPONENT_IS_A_DIPOLE_CROSSOVER_RESOLUTION_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded mechanism claim that the Kubo edge-sum observable is a localized signed susceptibility with cancelled monopole, making the retained H=0.25 slope near -1.43 a crossover diagnostic rather than standard 1/b lensing or a continuum exponent.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260610-212342-6359041727-lensing_exponent_is_a_dipole`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the signed edge coefficients have a numerically cancelled monopole, the leading 1/b term in alpha(b)=sum_e c_e/r_e(b) is absent, so the measured -1.43 window at b={3,4,5,6} is a finite-support crossover while the non-cancelling |c_e| control returns 1/b.  _(class `C`)_
+- **chain closes:** False — The primary runner genuinely computes the coarse-H edge coefficients, monopole cancellation, support, signed large-b slope, and |c| control; an independent large-b expansion confirms that sum_e c_e=0 removes the 1/b term. The full H=0.25 resolution still depends on a companion certificate/cache and JSON whose source and contents are not included in the restricted packet, so the fine-H mechanism is not independently auditable here.
+- **rationale:** The coarse-H mechanism is substantially supported: the runner instantiates the lattice/adjoint machinery, and the monopole-cancellation implication follows from the edge-sum expansion rather than from a naming convention. However, the source conclusion is framed as resolving the retained H=0.25 -1.4335 slope, and the restricted packet exposes only primary-runner cache-presence checks for the fine-H companion rather than the companion runner/source/output itself. The cited retained notes also explicitly left the mechanism and large-b interpretation open, so closure cannot be inherited from them without the missing fine-H artifact chain.
+- **open / conditional deps cited:**
+  - `LENSING_DEFLECTION_NOTE.md`
+  - `LENSING_LONG_PATH_TEST_NOTE.md`
+- **auditor confidence:** medium
 
 ### `lensing_finite_path_explanation_note`
 

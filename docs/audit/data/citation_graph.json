@@ -846,11 +846,11 @@
     },
     {
       "from": "alpha_s_derived_note",
-      "to": "plaquette_self_consistency_note"
+      "to": "qcd_low_energy_running_bridge_note_2026-05-01"
     },
     {
       "from": "alpha_s_derived_note",
-      "to": "qcd_low_energy_running_bridge_note_2026-05-01"
+      "to": "plaquette_self_consistency_note"
     },
     {
       "from": "alpha_s_derived_note",
@@ -47714,6 +47714,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
     },
     {
@@ -47730,7 +47734,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_targeted_repair_note_2026-06-04"
+      "to": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
     },
     {
       "from": "repo.front_door_status",
@@ -47739,10 +47743,6 @@
     {
       "from": "repo.front_door_status",
       "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
     },
     {
       "from": "repo.repo_organization",
@@ -50255,17 +50255,17 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "plaquette_self_consistency_note",
         "qcd_low_energy_running_bridge_note_2026-05-01",
+        "plaquette_self_consistency_note",
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "c423b77660ef2541023c8a686c80bf2276b9c347def02b1bd4e740c2a2eaa4c6",
+      "note_hash": "ffc0384044ffd3f8cbee912c19de16755d36019af3808b6c71fb04bc05c239cd",
       "path": "docs/ALPHA_S_DERIVED_NOTE.md",
-      "runner_path": "scripts/frontier_yt_zero_import_chain.py",
-      "title": "`alpha_s(M_Z)` Same-Surface-Derived Authority (bounded)"
+      "runner_path": "scripts/frontier_alpha_s_derived_bounded_chain.py",
+      "title": "`alpha_s(v)` Forward-Computation Theorem over Declared Boundary Inputs, with Bounded `M_Z` Corollary"
     },
     "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30": {
       "claim_id": "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
@@ -92208,17 +92208,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
         "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
         "abj_epsilon_index_square_block_no_go_note_2026-05-30",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
-        "grown_transfer_basin_targeted_repair_note_2026-06-04",
+        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
         "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
-        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
-        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
+        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a5ba6b548fe975f4196bcabf781a51cb291509693a9a4186360d267874163c95",
+      "note_hash": "8675aecd9394cd6abb51bd4647e54c39e8f59e7915ebd17c55dd5d9d4084f14c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

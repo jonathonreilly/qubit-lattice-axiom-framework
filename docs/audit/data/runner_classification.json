@@ -517,16 +517,16 @@
       "runner": "scripts/audit_companion_alpha_s_tadpole_power_identity.py"
     },
     "alpha_s_derived_note": {
-      "assert_count": 0,
+      "assert_count": 2,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 11,
-        "D": 13
+        "C": 14,
+        "D": 14
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "scripts/frontier_yt_zero_import_chain.py"
+      "dominant_class": "C",
+      "runner": "scripts/frontier_alpha_s_derived_bounded_chain.py"
     },
     "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30": {
       "assert_count": 2,
@@ -42928,6 +42928,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_alpha_s_derived_bounded_chain.py": {
+      "assert_count": 2,
+      "claims": [
+        "alpha_s_derived_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 14,
+        "D": 14
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_alpha_s_direct_wilson_loop.py": {
       "assert_count": 4,
       "claims": [
@@ -67594,21 +67609,6 @@
       "dominant_class": "A",
       "exists": true
     },
-    "scripts/frontier_yt_zero_import_chain.py": {
-      "assert_count": 0,
-      "claims": [
-        "alpha_s_derived_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 11,
-        "D": 13
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true
-    },
     "scripts/frontier_yt_zero_import_ratio_authority.py": {
       "assert_count": 0,
       "claims": [
@@ -74807,8 +74807,8 @@
     "dominant_class_distribution": {
       "A": 389,
       "B": 449,
-      "C": 1040,
-      "D": 381,
+      "C": 1041,
+      "D": 380,
       "none": 454
     },
     "runners_classified": 2713,

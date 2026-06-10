@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 479 |
 | `high` | 484 |
-| `medium` | 832 |
-| `leaf` | 1323 |
+| `medium` | 831 |
+| `leaf` | 1324 |
 
 - **Retained pending chain closure:** 17
 - **Citation cycles detected:** 0
@@ -115,7 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 760 | 38.57 | `unaudited` | unaudited |
 | 13 | `yt_ew_color_projection_theorem` | no_go | critical | 702 | 38.46 | `audited_clean` | **retained_no_go** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 852 | 38.24 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1242 | 37.28 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1243 | 37.28 | `audited_clean` | **retained_bounded** |
 | 16 | `cpt_exact_note` | positive_theorem | critical | 1306 | 35.85 | `audited_clean` | **retained** |
 | 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 920 | 35.85 | `audited_clean` | **retained_bounded** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1052 | 35.04 | `audited_clean` | **retained_bounded** |

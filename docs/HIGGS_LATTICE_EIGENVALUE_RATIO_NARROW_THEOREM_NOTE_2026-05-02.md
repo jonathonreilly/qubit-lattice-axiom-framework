@@ -1,25 +1,35 @@
 # Higgs Lattice Eigenvalue Ratio (Mean-Field) — Narrow Theorem
 
 **Date:** 2026-05-02 (2026-05-28: Clifford identity derived and mean-link
-`u_0` wired to a retained authority; 2026-06-08: framework-native `d=4/Z^4`
-APBC carrier made an explicit unresolved bounded hypothesis).
+`u_0` wired to a retained authority; 2026-06-08: `d=4/Z^4` APBC carrier made
+an explicit bounded hypothesis; 2026-06-10: retained bridge packets wired as
+the one-hop carrier/determinant authority).
 **Type:** bounded_theorem (proposed; audit-lane to ratify)
 **Status authority:** independent audit lane only.
 **Primary runner:** `scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py`
 
-## 2026-06-08 safe-narrow repair
+## 2026-06-10 retained bridge uptake
 
-The current audit blocker asks for a retained one-hop authority deriving
-`d_t = 1`, total `d = 4`, and the `Z^4` APBC carrier for this lattice block,
-or else a narrow row that makes `d=4/Z^4 APBC` an explicit unresolved bounded
-hypothesis.
+The 2026-06-08 safe-narrow made the `d=4/Z^4` APBC taste-block carrier an
+explicit unresolved bounded hypothesis because the parent row did not yet cite a
+retained one-hop bridge for that carrier/determinant surface.
 
-This source note takes the second route. The exact curvature identity remains
-valid inside the supplied `d=4/Z^4` APBC taste-block packet, but this row no
-longer claims that the framework-native carrier theorem has been derived.
-The open science is the retained derivation of that carrier from the baseline
-framework; the algebra below is the bounded packet to be reused once that
-carrier is closed.
+That is no longer the strongest source-side statement available. The bridge
+packet is now graph-visible and audited:
+
+- [`HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+  is audited clean as `retained_bounded` and derives the `d=4` naive
+  taste count `N_taste = 2^4 = 16` plus the mean-field `W(J)` form under the
+  named operator/truncation hypotheses.
+- [`HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md`](HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md)
+  is audited clean as `retained` and supplies the finite APBC/taste determinant
+  bridge `D_mf^dag D_mf = 4 u_0^2 I_48` and `W''(0)/48 = 1/(4 u_0^2)`.
+
+This row therefore consumes those bridge packets as the one-hop authority for
+the finite `d=4/Z^4` APBC taste-count/determinant surface used below. The
+remaining boundary is not the finite carrier count; it is the named tadpole
+mean-field truncation and the excluded physical matching step
+`R_lattice = (m_H/v)^2`.
 
 ## 2026-05-28 Audit Repair (derive + wire retained inside the supplied packet, then formal-lemma the rest)
 
@@ -47,8 +57,7 @@ authority:
    is derived, not asserted. The Clifford generator structure and the even
    spacetime dimension `d = 4` (framework `3+1`) are grounded in
    `clifford_chirality_dimension_narrow_theorem_note_2026-05-10`, which is
-   audited clean but still `retained_pending_chain`; this row therefore remains
-   audit-ready rather than self-promoted.
+   audited clean and retained.
 2. **Mean-link `u_0` — RETAINED authority, not admitted.** The mean-link
    `u_0 = <P>^{1/4}` and the tadpole mean-field scheme are carried by the
    retained-bounded `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17`,
@@ -61,18 +70,18 @@ authority:
    truncation*; it makes no claim that the truncation is the exact theory.
    This is the same formal/conditional category the audit lane accepts, with
    the scale now retained-backed rather than admitted.
-4. **`N_taste = 16` — DERIVED inside the supplied APBC packet.** Given the
-   `d=4/Z^4` APBC taste-block packet, it is the spin⊗taste hypercube
-   dimension `2^d = 2^4 = 16` (equivalently 4 spin × 4 taste components on
-   the unit hypercube), verified in Part 2. This row does not derive the
-   framework-native `d=4/Z^4` carrier itself.
+4. **`N_taste = 16` — DERIVED by the retained APBC/taste bridge.** The retained
+   bridge packet supplies the finite `d=4/Z^4` APBC taste-count/determinant
+   surface: spin⊗taste hypercube dimension `2^d = 2^4 = 16` (equivalently
+   4 spin × 4 taste components on the unit hypercube), verified here in Part 2
+   and by the retained bridge runners.
 
 Net: the packet has no new axiom and no registered admission. The Clifford
-identity and `N_taste` are derived after the `d=4/Z^4` APBC carrier is
-supplied, `u_0` is supplied by a retained one-hop authority, and the
-mean-field factorization is the explicit hypothesis of the formal lemma. The
-framework-native carrier remains an unresolved bounded hypothesis for this
-row, not a retained conclusion.
+identity is derived directly, `N_taste` and the determinant surface are carried
+by the retained APBC/taste bridge packet, `u_0` is supplied by a retained
+one-hop authority, and the mean-field factorization is the explicit hypothesis
+of the formal lemma. This repairs the outdated "unresolved carrier" boundary
+without widening into a physical Higgs-mass claim.
 
 ## Claim scope (proposed)
 
@@ -84,7 +93,8 @@ row, not a retained conclusion.
 > plus the retained constraint-vs-convention disambiguation theorem
 > [`G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`](G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md);
 > historical sister cycle 6 reader pointer: `G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md`),
-> the supplied unresolved `d=4/Z^4` APBC taste-block carrier hypothesis,
+> the retained bridge-backed `d=4/Z^4` APBC taste-block carrier/determinant
+> surface,
 > and the Cl(3) Clifford identity `D_taste² = d · I` at
 > mean-field factorization with `N_taste = 16` taste eigenvalues, the
 > dimensionless lattice generating-functional curvature ratio is
@@ -117,16 +127,17 @@ audit verdict flagged and is excluded here.
 | [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) | retained | removes the `A → A/g` rescaling freedom on the canonical Cl(3) normalization surface |
 | [`G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`](G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md) | retained_bounded | `g_bare = 1` on the canonical-normalization + Wilson-matching + local-`beta = 6` surface |
 | [`U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`](U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md) | retained_bounded | supplies the mean-link `u_0 = <P>^{1/4}` and the tadpole mean-field scheme (replaces the former `u_0` admission) |
-| supplied `d=4/Z^4` APBC taste-block carrier | unresolved bounded hypothesis | supplies the finite carrier on which `N_taste = 2^4 = 16` is derived; native carrier theorem remains open |
-| [`CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) | retained_pending_chain | framework Clifford generator structure used inside the supplied carrier packet |
+| [`HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) | retained_bounded | derives the `d=4` naive/APBC taste count `N_taste = 2^4 = 16` and mean-field `W(J)` form under the named operator/truncation hypotheses |
+| [`HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md`](HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md) | retained | finite APBC/taste determinant carrier: `D_mf^dag D_mf = 4 u_0^2 I_48`, `W''(0)/48 = 1/(4u_0^2)` |
+| [`CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) | retained | framework Clifford generator structure used inside the bridge-backed carrier packet |
 | Clifford identity `D_taste² = d · I` | **DERIVED** (runner Part 3, exact matrix algebra) | Euclidean `Cl(4)`: `Σ_μ γ_μ² = d·I` and `D_taste² = d·I` ⇒ `|λ_k| = √d = 2` per taste |
 | Mean-field factorization `U_{ab} → u_0 δ_{ab}` | **explicit lemma hypothesis** (tadpole mean-field truncation; scale `u_0` retained above) | scales eigenvalues by `u_0` |
 
-The Clifford identity is derived by explicit matrix construction once the
-finite carrier packet is supplied; the mean-link `u_0` is supplied by a
-retained one-hop authority; the mean-field factorization is the explicit
-hypothesis of the formal lemma. The result is an exact algebraic identity
-within those named bounded hypotheses.
+The Clifford identity is derived by explicit matrix construction; the finite
+carrier/determinant surface is supplied by the retained bridge packet; the
+mean-link `u_0` is supplied by a retained one-hop authority; the mean-field
+factorization is the explicit hypothesis of the formal lemma. The result is an
+exact algebraic identity within those named bounded hypotheses.
 
 ## 2026-06-06 Bridge Packet Inlining Repair
 
@@ -174,7 +185,7 @@ This is a bridge-packet repair only. It does not identify `R_lattice` with
 
 ```text
 Cl(3)/Z^4 APBC minimal block (L = 2):
-  N_sites = 2^4 = 16  =  N_taste                                (derived inside supplied d=4/Z^4 APBC packet)
+  N_sites = 2^4 = 16  =  N_taste                                (retained bridge-backed d=4/Z^4 APBC packet)
   N_c = 3                                                       (declared: graph_first_su3)
   N_tot = N_c × N_sites = 48                                    (algebraic)
 
@@ -208,8 +219,8 @@ mean-link u_0, and the truncation hypothesis.
 
 This is class (A) — an exact algebraic identity; the derived Clifford
 identity (Part 3) and the retained mean-link `u_0` carry it, with the
-tadpole mean-field truncation and supplied `d=4/Z^4` APBC carrier as the
-named bounded hypotheses.
+tadpole mean-field truncation and retained bridge-backed `d=4/Z^4` APBC
+carrier/determinant surface as the named bounded hypotheses.
 No physical-side identification, no fitted value.
 
 ## Verification
@@ -235,7 +246,7 @@ Verifies, at exact rational precision via Python `Fraction`:
 ```yaml
 target_claim_type: bounded_theorem
 proposed_claim_scope: |
-  Pure lattice-side algebraic identity at mean-field on supplied Cl(3)/Z^4 APBC:
+  Pure lattice-side algebraic identity at mean-field on bridge-backed Cl(3)/Z^4 APBC:
   R_lattice = 4/(u_0² N_taste) with N_taste = 16 gives R_lattice = 1/(4 u_0²).
   NO physical Higgs mass identification, NO m_H = v/(2 u_0) claim.
 proposed_load_bearing_step_class: A
@@ -264,8 +275,8 @@ the audit lane ratifies this row and its dependency chain.
 - The Higgs mass prediction `m_H = v/(2 u_0)` (separate full theorem).
 - The **numerical** value of `u_0` (its tadpole definition `u_0 = <P>^{1/4}`
   is retained; the number requires the separate plaquette evaluation).
-- The framework-native derivation of the `d=4/Z^4` APBC taste-block carrier
-  from baseline primitives.
+- The physical correctness of the tadpole mean-field truncation as the exact
+  full gauge theory.
 
 ## Cross-references
 

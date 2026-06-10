@@ -2,16 +2,16 @@
 """Verify the narrow Higgs lattice eigenvalue ratio theorem at mean-field.
 
 Claim scope: GIVEN the declared graph_first_su3 surface + retained Wilson
-canonical g_bare=1 convention + supplied unresolved d=4/Z^4 APBC carrier, the
-lattice ratio R_lattice = 4/(u_0² N_taste) = 1/(4 u_0²) at N_taste = 16, in
-the tadpole mean-field truncation. NO physical (m_H/v)² identification.
+canonical g_bare=1 convention + retained bridge-backed d=4/Z^4 APBC
+carrier/determinant surface, the lattice ratio
+R_lattice = 4/(u_0² N_taste) = 1/(4 u_0²) at N_taste = 16, in the tadpole
+mean-field truncation. NO physical (m_H/v)² identification.
 
 No admissions:
 - the Clifford identity D_taste² = d·I (d=4) is DERIVED here by explicit
   Euclidean Cl(4) matrix construction (Part 3), not asserted;
-- N_taste = 16 is DERIVED as the spin⊗taste hypercube dimension 2^d (Part 2);
-  this is inside the supplied d=4/Z^4 APBC carrier packet, not a native
-  carrier theorem;
+- N_taste = 16 is DERIVED as the spin⊗taste hypercube dimension 2^d (Part 2)
+  and is carried by the retained Higgs APBC/taste bridge packet;
 - the mean-link u_0 is supplied by the retained one-hop authority
   u0_plaquette_quartic_derivation (u_0 = <P>^{1/4}); the mean-field
   factorization U_ab → u_0 δ_ab is the explicit hypothesis of this formal
@@ -188,13 +188,15 @@ note_text = NOTE_PATH.read_text()
 required = [
     "Higgs Lattice Eigenvalue Ratio (Mean-Field) — Narrow Theorem",
     "Type:** bounded_theorem",
-    "narrow row that makes `d=4/Z^4 APBC` an explicit unresolved bounded",
-    "supplied unresolved `d=4/Z^4` APBC taste-block carrier hypothesis",
-    "framework-native carrier remains an unresolved bounded hypothesis",
+    "2026-06-10 retained bridge uptake",
+    "retained bridge-backed `d=4/Z^4` APBC taste-block carrier/determinant",
+    "This repairs the outdated \"unresolved carrier\" boundary",
     "R_lattice",
     "4 / (u_0² · N_taste)",
     "N_taste = 16",
     "NO physical Higgs mass identification",
+    "HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md",
     "GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
     "G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md",
     "G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
@@ -210,6 +212,8 @@ forbidden = [
     "m_H = v/(2 u_0) is hereby derived",
     "physical Higgs mass is established",
     "(m_H/v)² is identified with R_lattice (DERIVATION)",
+    "framework-native carrier remains an unresolved bounded hypothesis",
+    "supplied unresolved `d=4/Z^4` APBC taste-block carrier hypothesis",
 ]
 for f in forbidden:
     check(f"narrow scope avoids forbidden physical-matching claim: {f!r}",
@@ -327,12 +331,26 @@ dep_ids = {
     "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
     "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
     "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+    "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+    "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
 }
 for dep_id in sorted(dep_ids):
     dep_row = rows.get(dep_id)
     check(f"{dep_id} exists in audit ledger",
           dep_row is not None,
           detail=f"effective_status={dep_row.get('effective_status') if dep_row else None!r}")
+
+bridge_statuses = {
+    "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+    "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "retained",
+}
+for dep_id, expected_status in bridge_statuses.items():
+    dep_row = rows.get(dep_id)
+    check(
+        f"{dep_id} has retained bridge status",
+        dep_row is not None and dep_row.get("effective_status") == expected_status,
+        detail=f"effective_status={dep_row.get('effective_status') if dep_row else None!r}",
+    )
 
 claim_row = rows.get(CLAIM_ID)
 check(f"{CLAIM_ID} seeded by audit pipeline",

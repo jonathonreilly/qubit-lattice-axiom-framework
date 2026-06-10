@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py
-runner_sha256: 905f886d9c3022d3b641659fbd22d3e6f4f16f8fe26be619714c6a6ed6a28d0c
+runner_sha256: 8f315f6899abf90a4b3f34cb367800ea138e097a99d7546d41b719315f7d3fdd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.46
 status: ok
 ----- stdout -----
 
@@ -12,13 +12,15 @@ Part 1: note structure and scope discipline
 ----------------------------------------------------------------------------------------
   [PASS (A)] contains: 'Higgs Lattice Eigenvalue Ratio (Mean-Field) — Narrow Theorem'  ()
   [PASS (A)] contains: 'Type:** bounded_theorem'  ()
-  [PASS (A)] contains: 'narrow row that makes `d=4/Z^4 APBC` an explicit unresolved bounded'  ()
-  [PASS (A)] contains: 'supplied unresolved `d=4/Z^4` APBC taste-block carrier hypothesis'  ()
-  [PASS (A)] contains: 'framework-native carrier remains an unresolved bounded hypothesis'  ()
+  [PASS (A)] contains: '2026-06-10 retained bridge uptake'  ()
+  [PASS (A)] contains: 'retained bridge-backed `d=4/Z^4` APBC taste-block carrier/determinant'  ()
+  [PASS (A)] contains: 'This repairs the outdated "unresolved carrier" boundary'  ()
   [PASS (A)] contains: 'R_lattice'  ()
   [PASS (A)] contains: '4 / (u_0² · N_taste)'  ()
   [PASS (A)] contains: 'N_taste = 16'  ()
   [PASS (A)] contains: 'NO physical Higgs mass identification'  ()
+  [PASS (A)] contains: 'HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md'  ()
+  [PASS (A)] contains: 'HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md'  ()
   [PASS (A)] contains: 'GRAPH_FIRST_SU3_INTEGRATION_NOTE.md'  ()
   [PASS (A)] contains: 'G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md'  ()
   [PASS (A)] contains: 'G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md'  ()
@@ -28,6 +30,8 @@ Part 1: note structure and scope discipline
   [PASS (A)] narrow scope avoids forbidden physical-matching claim: 'm_H = v/(2 u_0) is hereby derived'  ()
   [PASS (A)] narrow scope avoids forbidden physical-matching claim: 'physical Higgs mass is established'  ()
   [PASS (A)] narrow scope avoids forbidden physical-matching claim: '(m_H/v)² is identified with R_lattice (DERIVATION)'  ()
+  [PASS (A)] narrow scope avoids forbidden physical-matching claim: 'framework-native carrier remains an unresolved bounded hypothesis'  ()
+  [PASS (A)] narrow scope avoids forbidden physical-matching claim: 'supplied unresolved `d=4/Z^4` APBC taste-block carrier hypothesis'  ()
 
 ----------------------------------------------------------------------------------------
 Part 2: structural integers N_c, N_sites, N_taste, N_tot
@@ -65,12 +69,18 @@ Part 6: declared authorities are graph-visible
   [PASS (A)] g_bare_constraint_vs_convention_theorem_note_2026-05-03 exists in audit ledger  (effective_status='retained_bounded')
   [PASS (A)] g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 exists in audit ledger  (effective_status='retained_bounded')
   [PASS (A)] graph_first_su3_integration_note exists in audit ledger  (effective_status='retained')
+  [PASS (A)] higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05 exists in audit ledger  (effective_status='retained_bounded')
+  [PASS (A)] higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06 exists in audit ledger  (effective_status='retained')
   [PASS (A)] u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17 exists in audit ledger  (effective_status='retained_bounded')
+  [PASS (A)] higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05 has retained bridge status  (effective_status='retained_bounded')
+  [PASS (A)] higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06 has retained bridge status  (effective_status='retained')
   [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 seeded by audit pipeline  (run docs/audit/scripts/run_pipeline.sh after editing the note)
   [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records clifford_chirality_dimension_narrow_theorem_note_2026-05-10 as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05', 'higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
   [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records g_bare_constraint_vs_convention_theorem_note_2026-05-03 as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05', 'higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
   [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05', 'higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
   [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records graph_first_su3_integration_note as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05', 'higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
+  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05 as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05', 'higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
+  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06 as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05', 'higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
   [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17 as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05', 'higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
   [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 is not effective-retained before independent audit  (effective_status='audited_conditional')
 
@@ -129,7 +139,7 @@ Part 7: bridge packet source/cache verification for re-audit
   [PASS (A)] bridge cache contains expected marker: logs/runner-cache/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.txt  (per-mode curvature matches R_lattice)
 
 ========================================================================================
-  TOTAL: PASS=93, FAIL=0
+  TOTAL: PASS=103, FAIL=0
 ========================================================================================
 
 ----- stderr -----
